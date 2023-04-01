@@ -31,7 +31,7 @@ Before creating or uploading to a TestFlight, use the [Mac-Xcode Build](../build
 
 ### Archive the Project
 
-Change the build target to from building to a simulated phone to **Loop (Workspace) > Any iOS Device (arm64)** like the image below.
+Change the build target to from building to a simulated phone to **LoopWorkspace > Any iOS Device (arm64)** like the image below.
 
 ![Set build target to Any iOS Device (arm64)](img/tf01.png){width="700"}
     {align="center"}

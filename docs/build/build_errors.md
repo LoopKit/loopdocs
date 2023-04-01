@@ -29,7 +29,8 @@ This can happen sometimes. You just need to force quit Xcode. Sometimes rebootin
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
-1. **Did you forget to select Loop(WorkSpace)?** The first time you build after downloading new code, you must manually select Loop (Workspace) instead of Loop in Xcode.
+1. **For older builds, before 3.2.0, you had to select Loop(WorkSpace)** The first time you build after downloading new code, you had to manually select Loop (Workspace) instead of Loop in Xcode.
+    * Starting with Loop 3.2.0 and newer versions, the target name and xcworkspace file names are now automatically LoopWorkspace - no special action needed when building.
 
 1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
@@ -161,9 +162,9 @@ _The run destination for name's phone is not valid for running the scheme "Loop 
 
 **Solution:**
 
-Follow the link for the [Unpair and Reboot](#unpair-and-reboot) procedure.
+First make sure your Xcode version is new enough to work with your phone iOS version and make sure developer mode is turned on for iOS 16 or newer. If so, then try this procedure:
 
-If you are running iOS 16 or newer on your phone, make sure developer mode is turned on.
+* Follow the link for the [Unpair and Reboot](#unpair-and-reboot) procedure.
 
 ### Package.resolved file corrupted or malformed
 
@@ -351,6 +352,8 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 ### Carthage Error
 
+For older builds only. With Loop 3.2.0 and newer, the default selection is already LoopWorkspace.
+
 You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#initial-xcode-screens) Instructions.
 
 Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
@@ -360,7 +363,7 @@ Or maybe you are trying to build using an old download; some older versions did 
 !!! warning "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
-**Solution:** Download fresh code with [Build Select Script](step14.md#build-select-script) (if you haven't already done so) and select Loop (Workspace) before building with Xcode.
+**Solution:** Download fresh code with [Build Select Script](step14.md#build-select-script).
 
 ### Could Not Locate Device Support Files
 
@@ -538,12 +541,10 @@ If the watch app still fails to install properly, the next section should work.
 
 **Error:** Tapping the Loop app icon on the watch results in flash of the watch screen and then return to the Loop app icon or a brief display of the watch interface and then return to the Loop app icon.
 
-**Solution:** Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..
-
+**Solution:** Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace) (with Loop 3.2.x and newer, LoopWorkspace is the default), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..
 
 ![xcode screen display the selection for direct build of watchapp](img/watchapp-direct-build-from-xcode.svg){width="650"}
 {align="center"}
-
 
 ![additional details for the direct build of watchapp](img/watchapp-direct-build-from-xcode-2.svg){width="650"}
 {align="center"}

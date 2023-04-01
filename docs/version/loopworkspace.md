@@ -133,22 +133,15 @@ For this graphic, the cloned LoopWorkspace is in the home directory.
 
 1. Open Finder and navigate to the location that has LoopWorkspace
 1. Open the LoopWorkspace folder
-1. Search for and double-click on the `Loop.xcworkspace` folder - this automatically opens the Workspace in Xcode
+1. Search for and double-click on the `LoopWorkspace.xcworkspace` folder - this automatically opens the Workspace in Xcode
 
 ![img/workspace-file.png](img/workspace-file.png){width="550"}
 {align="center"}
 
-## Building LoopWorkspace
-
-Once Xcode is opened for the LoopWorkspace, everything is pretty similar to building master. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (Workspace)" in order to build properly.
-
-* New for dev branch of LoopKit/LoopWorkspace
-    * Enter your Apple Developers ID in the LoopConfigOverride.xcconfig file that now appears in the top of the folder list (not shown in this graphic).  
-    * This automatically signs the 5 targets required for the dev branch.
-
-![img/workspace-use.png](img/workspace-use.png){width="750"}
-{align="center"}
-
+* Enter your Apple Developers ID in the LoopConfigOverride.xcconfig file that now appears in the top of the folder list (not shown in this graphic)
+* This automatically signs the 5 targets required for the dev branch
+* Choose your device
+* Tap on the build (play) button to build to your selected device
 
 ## Updating Loop using LoopWorkspace
 
