@@ -982,20 +982,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#package-dependency-error" class="md-nav__link">
-    Package Dependency Error
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fix-for-package-dependency" class="md-nav__link">
-    Fix for Package Dependency
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#start-build" class="md-nav__link">
     Start Build
   </a>
@@ -2604,20 +2590,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#package-dependency-error" class="md-nav__link">
-    Package Dependency Error
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fix-for-package-dependency" class="md-nav__link">
-    Fix for Package Dependency
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#start-build" class="md-nav__link">
     Start Build
   </a>
@@ -3001,7 +2973,7 @@
 <li>Tap on <a href="../build_errors/#new-with-xcode-14">New with <abbr title="program used to build an app">Xcode</abbr> 14</a> for more information</li>
 </ul>
 </div>
-<p>First select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) and confirm your phone is selected. Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below and follow the directions:</p>
+<p>First confirm your phone is selected. Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below (warning, <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> not updated to show LoopWorkspace is selected by default) and follow the directions:</p>
 <ul>
 <li>Frame 1:  <abbr title="program used to build an app">Xcode</abbr> screen opened by the script after a fresh download<ul>
 <li><strong>Fresh Download? Wait for indexing to begin</strong><ul>
@@ -3012,42 +2984,24 @@
 <li>The graphics still show the old selection process</li>
 </ul>
 </li>
-<li>The red rectangle indicates where you will change Loop to Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
+<li>The red rectangle indicates where you used to change Loop to Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>), it now defaults to LoopWorkspace</li>
 <li>The red x in the dashed-blue rectangle region indicates you need to fix a problem before building</li>
 </ul>
 </li>
-<li>Frame 2: Inset shows the action needed to select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>Frame 3: Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) selected but there's a red x in the dashed-blue rectangle region</li>
+<li>Frame 2: Not needed as of <abbr title="Latest release with major updates">Loop 3</abbr>.2.x: Inset shows the action needed to select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
+<li>Frame 3: This error does not happen with <abbr title="program used to build an app">Xcode</abbr> 14.1 or newer versions. There's a red x in the dashed-blue rectangle region</li>
 </ul>
 <p align="center"><img alt="gif showing the initial xcode screens following fresh download" src="../img/xcode-build-loop3-a.gif" width="750" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Most Common Mistake</p>
+<h3 id="start-build">Start Build<a class="headerlink" href="#start-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If there is a red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen you need to click over to the build errors link listed below.</p>
 <ul>
-<li>The most common mistake in this step is:<ul>
-<li>not selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>not selecting your actual phone</li>
-</ul>
-</li>
-</ul>
-</div>
-<h3 id="package-dependency-error">Package Dependency Error<a class="headerlink" href="#package-dependency-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If there is no red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen, skip ahead to <a href="#start-build">Start Build</a> on this page.</p>
-<p>Otherwise, tap on the red x in the dashed-blue rectange region:</p>
-<ul>
-<li>If your screen is similar to the figure below, perform the <a href="#fix-for-package-dependency">Fix for Package Dependency</a> (instructions are repeated on this page for convenience; duplicated on Build Errors page)</li>
+<li>If your screen is similar to the figure below, perform the fix for <a href="../build_errors/#couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency</a></li>
 <li>If you have a different error, search the <a href="../build_errors/">Build Error</a> page</li>
 </ul>
 <p align="center"><img alt="gif showing the xcode screens with dependency error" src="../img/xcode-build-loop3-b.svg" width="750" /></p>
-<h3 id="fix-for-package-dependency">Fix for Package Dependency<a class="headerlink" href="#fix-for-package-dependency" title="Anchor link to this Header on this Page">&para;</a></h3>
-<ol>
-<li>Click on the folder icon (indicated by red square)</li>
-<li>Hold down the Control-Key and click the <code>Package Dependency</code> row to display the dropdown menu (shown in the inset)</li>
-<li>Select Resolve Package Versions from the dropdown menu</li>
-<li>Once that completes, the red x should resolve and you can build as soon as the Indexing message appears</li>
-</ol>
-<p><img alt="package dependency solution" src="../img/xcode-package-dependency-solution.svg" width="600" /></p>
-<h3 id="start-build">Start Build<a class="headerlink" href="#start-build" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word <strong>First-Time</strong>.</p>
+<h4 id="first-time">First Time<a class="headerlink" href="#first-time" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word <strong>First-Time</strong>. Do not get confused when you are asked to enter your password multiple times, see <a href="#codesign--keychain-access">Codesign / Keychain Access</a>. Be sure to enter your Mac login password and select Always Allow.</p>
+<h4 id="all-builds">All Builds<a class="headerlink" href="#all-builds" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below:</p>
 <ul>
 <li>Frame 1: Package Dependency resolved (no red x)<ul>
@@ -3199,8 +3153,9 @@
 </div>
 <p>To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the <a href="../code_customization/">Code Customizations</a> page and then build the app again.</p>
 <h3 id="apple-watch">Apple Watch<a class="headerlink" href="#apple-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Existing Apple Watch users</strong>: Please update your <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> prior to building the Loop app.  The current version of Loop requires <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 4.1 or newer.</p>
+<p><strong>Existing Apple Watch users</strong>: Please update your <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> prior to building the Loop app. The minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> for <abbr title="Latest release with major updates">Loop 3</abbr> is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1, which means <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8.1. When running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16.x, you will need a <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> of 9.x.</p>
 <p><strong>New Apple Watch users</strong>: If you have an Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build.</p>
+<p>For more information, please see <a href="../../operation/features/watch/">Operate: Apple Watch</a></p>
 <h3 id="build-again-with-this-download">Build Again with this Download<a class="headerlink" href="#build-again-with-this-download" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Follow the <a href="../code_customization/#find-my-downloaded-loop-code">Find My Downloaded Loop Code</a> instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the <a href="#start-build">Start Build</a> section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.</p>
 <div class="admonition warning">

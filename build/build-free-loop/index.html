@@ -898,8 +898,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#select-loop-workspace-and-your-phone" class="md-nav__link">
-    Select Loop (Workspace) and Your Phone
+  <a href="#select-your-phone" class="md-nav__link">
+    Select Your Phone
   </a>
   
 </li>
@@ -2309,8 +2309,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#select-loop-workspace-and-your-phone" class="md-nav__link">
-    Select Loop (Workspace) and Your Phone
+  <a href="#select-your-phone" class="md-nav__link">
+    Select Your Phone
   </a>
   
 </li>
@@ -2401,38 +2401,29 @@
 <li>You need to click on the indicated Loop folder icon two times</li>
 </ul>
 </li>
-<li>Frame 2: After the 2 clicks, the middle pane of the <abbr title="program used to build an app">Xcode</abbr> window is populated as shown</li>
+<li>Frame 2: After the 2 clicks, the middle pane of the <abbr title="program used to build an app">Xcode</abbr> window should be similar (for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and newer, the top middle bar will show LoopWorkspace, not Loop)</li>
 </ul>
 <p align="center"><img alt="initial xcode display, click on loop to populate middle pane" src="../img/build-229-01.gif" width="750" /></p>
-<h3 id="select-loop-workspace-and-your-phone">Select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) and Your Phone<a class="headerlink" href="#select-loop-workspace-and-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="select-your-phone">Select Your Phone<a class="headerlink" href="#select-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If this is the <strong>First Time</strong> your phone or watch has been connected to <abbr title="program used to build an app">Xcode</abbr>, you will need to tell the phone and watch to "Trust this Computer".</p>
-<p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows:</p>
+<p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> (not updated for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x) below shows:</p>
 <ul>
 <li>Frame 1: Same as end of previous <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr><ul>
 <li>There's a red rectangle around the dropdown menus</li>
-<li>The menu on the left says "Loop"</li>
+<li>The menu on the left says "LoopWorkspace" for 3.2.x and newer</li>
 </ul>
 </li>
 <li>Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle<ul>
+<li>Ignore Frame 2 and 3 for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and newer which already shows LoopWorkspace</li>
 <li>You can see Loop has a check mark beside it</li>
 <li>Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) is one line below</li>
 <li>Select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
 </ul>
 </li>
 <li>Frame 3: Zoomed inset after selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>Frame 4: Desired result of selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) showing your phone</li>
+<li>Frame 4: Desired result should show LoopWorkspace and your phone</li>
 </ul>
 <p align="center"><img alt="select loop workspace and confirm phone" src="../img/build-229-02.gif" width="600" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Most Common Mistake</p>
-<ul>
-<li>The most common mistake in this step is:<ul>
-<li>not selecting Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>not selecting your actual phone as shown in the screenshot below</li>
-</ul>
-</li>
-</ul>
-</div>
 <p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
 <div class="admonition warning">
 <p class="admonition-title">I don't see my phone</p>
@@ -2450,15 +2441,9 @@
 <li>The <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> simulator you choose does not need to be the same model as your phone</li>
 </ul>
 </li>
-<li>With a simulator, you do not need to sign targets:<ul>
-<li>You must select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) and complete the build:<ul>
-<li>If there is a red x at the top right of your <abbr title="program used to build an app">Xcode</abbr> window, you need to fix the <a href="../step14/#package-dependency-error">Package Dependency Error</a> and continue on to Start Build</li>
-<li>If there is not a red x at the top right of your <abbr title="program used to build an app">Xcode</abbr> window, follow the link to <a href="../step14/#start-build">Start Build</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li>With a simulator, you do not need to sign targets:</li>
 <li>After a successful build, a simulated phone will appear on your computer and you can interact with the app on that simulated phone</li>
+<li>Follow this link to <a href="../step14/#start-build">Start Build</a></li>
 </ul>
 <h3 id="select-signing-capabilities-tab">Select Signing &amp; Capabilities Tab<a class="headerlink" href="#select-signing-capabilities-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition question">
@@ -2499,8 +2484,9 @@
 </li>
 <li>Add the keyword <code>SIRI_DISABLED</code> to the LoopConfigOverride.xcconfig file<ul>
 <li>Click on the filename in the left pane of <abbr title="program used to build an app">Xcode</abbr> and view it in the <abbr title="program used to build an app">Xcode</abbr> editor</li>
-<li>Examine the file and find the line that starts with <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
+<li>Examine the file and find the line that starts with<br> <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
 <li>Insert the new keyword (separated by a space) anywhere after <code>$(inherited)</code> and before the slashes near the end of the line</li>
+<li>When done, that line should be similar to:<br><code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED</code></li>
 </ul>
 </li>
 </ol>
@@ -2520,7 +2506,7 @@
 <li>Proceed to the next target</li>
 </ul>
 <h3 id="end-of-free-account-steps">End of Free Account Steps<a class="headerlink" href="#end-of-free-account-steps" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are <strong>Loop</strong>, <strong>Loop Status Extension</strong>, <strong>Watch App</strong>, and <strong>WatchApp Extension</strong> for Loop 2.2.x with the addition of <strong>Loop Intent Extension</strong> for <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
+<p>Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are <strong>Loop</strong>, <strong>Loop Status Extension</strong>, <strong>Watch App</strong>, and <strong>WatchApp Extension</strong> for Loop 2.2.x, with the addition of <strong>Loop Intent Extension</strong> for <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p align="center"><img alt="Xcode window showing the targets that must be signed" src="../img/success.png" width="750" /></p>
 <p>After signing the targets, click on the Loop icon under the <code>PROJECTS</code> heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)</p>
 <ul>
@@ -2531,11 +2517,7 @@
 </li>
 </ul>
 <h2 id="signing-complete">Signing Complete<a class="headerlink" href="#signing-complete" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Now that you have signed your app, return to the Build Loop page:</p>
-<ul>
-<li>If there is a red x at the top right of your <abbr title="program used to build an app">Xcode</abbr> window, you need to fix the <a href="../step14/#package-dependency-error">Package Dependency Error</a></li>
-<li>If there is not a red x at the top right of your <abbr title="program used to build an app">Xcode</abbr> window, you can return to the <a href="../step14/#start-build">Start Build</a></li>
-</ul>
+<p>Now that you have signed your app, return to the Build Loop page at <a href="../step14/#start-build">Start Build</a>.</p>
 
 
 

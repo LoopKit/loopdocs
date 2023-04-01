@@ -1910,13 +1910,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-loopworkspace" class="md-nav__link">
-    Building LoopWorkspace
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#updating-loop-using-loopworkspace" class="md-nav__link">
     Updating Loop using LoopWorkspace
   </a>
@@ -2438,13 +2431,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-loopworkspace" class="md-nav__link">
-    Building LoopWorkspace
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#updating-loop-using-loopworkspace" class="md-nav__link">
     Updating Loop using LoopWorkspace
   </a>
@@ -2653,19 +2639,15 @@ xed<span class="w"> </span>.
 <ol>
 <li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr> and navigate to the location that has LoopWorkspace</li>
 <li>Open the LoopWorkspace folder</li>
-<li>Search for and double-click on the <code>Loop.xcworkspace</code> folder - this automatically opens the <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> in <abbr title="program used to build an app">Xcode</abbr></li>
+<li>Search for and double-click on the <code>LoopWorkspace.xcworkspace</code> folder - this automatically opens the <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> in <abbr title="program used to build an app">Xcode</abbr></li>
 </ol>
 <p align="center"><img alt="img/workspace-file.png" src="../img/workspace-file.png" width="550" /></p>
-<h2 id="building-loopworkspace">Building LoopWorkspace<a class="headerlink" href="#building-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once <abbr title="program used to build an app">Xcode</abbr> is opened for the LoopWorkspace, everything is pretty similar to building master. You need to click on that blue Loop folder to see the signing targets, and you need to change the build scheme to the left of your phone to "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)" in order to build properly.</p>
 <ul>
-<li>New for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopKit/LoopWorkspace<ul>
-<li>Enter your Apple Developers ID in the LoopConfigOverride.xcconfig file that now appears in the top of the folder list (not shown in this graphic).  </li>
-<li>This automatically signs the 5 targets required for the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</li>
+<li>Enter your Apple Developers ID in the LoopConfigOverride.xcconfig file that now appears in the top of the folder list (not shown in this graphic)</li>
+<li>This automatically signs the 5 targets required for the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Choose your device</li>
+<li>Tap on the build (play) button to build to your selected device</li>
 </ul>
-</li>
-</ul>
-<p align="center"><img alt="img/workspace-use.png" src="../img/workspace-use.png" width="750" /></p>
 <h2 id="updating-loop-using-loopworkspace">Updating Loop using LoopWorkspace<a class="headerlink" href="#updating-loop-using-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.</p>
 <p>Be sure your terminal is in the correct location using <a href="../../build/code_customization/#open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder</a></p>
