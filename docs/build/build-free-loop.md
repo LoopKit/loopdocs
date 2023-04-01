@@ -64,9 +64,8 @@ If you want to build to a simulator, follow the directions in this section and s
 * Simply choose one of the iOS Simulators instead of a phone and build to it
     * The iOS simulator you choose does not need to be the same model as your phone
 * With a simulator, you do not need to sign targets:
-    * If there is a red x at the top right of your Xcode window, you need to perform the fix for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency) and continue on to Start Build
-    * If there is not a red x at the top right of your Xcode window, follow the link to [Start Build](step14.md#start-build)
 * After a successful build, a simulated phone will appear on your computer and you can interact with the app on that simulated phone
+* Follow this link to [Start Build](step14.md#start-build)
 
 ### Select Signing & Capabilities Tab
 
@@ -86,7 +85,6 @@ The graphic below indicates in red the three places you need to click in order t
 
 ![graphic showing Signing & Capabilities tab is highlighted and where to click to sign targets](img/xcode-signing.svg){width="750"}
 {align="center"}
-
 
 ## Sign the Targets
 
