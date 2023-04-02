@@ -166,4 +166,3 @@ Many people use additional apps to assist in following a loved one or to support
 
 For more information, please read the [Loop Follow](https://github.com/jonfawcett/LoopFollow#loop-follow) documentation. You can build Loop Follow using the same [Build Select Script](../../build/step14.md#build-select-script) you used to build the Loop app. (It's one of the options in the menu.)
 
-Please note that Jon Fawcett makes a clear distinction between his DIY (free) support and his business, Custom Type One. However, both are supported with the same Facebook group, [CustomTypeOne Support (Loop Follow, SugarPixel, Loop Patches)](https://www.facebook.com/groups/loopfollow/).
