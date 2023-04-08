@@ -28,7 +28,18 @@ The two most common errors in filling out this section are:
 
 ## Tidepool
 
-With Loop 3.2.x and newer versions, data can be directly uploaded from Loop to Tidepool. However, you might want to wait on turning that on, unless you want to help the developers work through some known issues (with duplicate data). There are more updates coming - keep reading.
+With Loop 3.2.x and newer versions, data can be directly uploaded from Loop to Tidepool.
+
+!!! warning "User Beware"
+    Don't use the Loop Tidepool uploader yet unless you want to help the developers work through some known issues. The Tidepool Mobile app still works to upload some of your Loop data from Health.
+
+    * There is a new authentication framework in Tidepool
+        * Loop developers are working on handling this new authentication protocol
+        * In the meantime, the Loop Tidepool uploader frequently loses track of your Tidepool account ID and stops uploading
+        * You have to delete the Tidepool account in Loop and add it back as a work-around
+    * One other problem is that data uploaded with the Tidepool Mobile uploader from Apple Health shows up as duplicate data
+        * Even if you turn off access of the Tidepool Mobile uploader to Apple Health, there will still be 7-days of overlap with Loop that will display as duplicated data (think 2x carbs, insulin etc in your Tidepool Web display) when you enable Loop Tidepool service as the uploader
+
 
 Please refer to the [LoopTips: Data: Tidepool](https://loopkit.github.io/looptips/data/tidepool/) page for more information about Tidepool. The Tidepool display browser is undergoing some updates; the information on these pages will be updated after changes happen.
 
