@@ -8,16 +8,16 @@ There is an optional method for applying patches. The procedure, developed for t
 * Mac-Xcode: paste the command(s) in the terminal (LoopWorkspace folder) and build again with Xcode
 * GitHub Broswer Build: paste the command(s) in the customization section of the build_loop.yml file and use the Build Loop Action
 
-A few of the specific commits on this page can be copied from the [LnL: Customization: Prepared Patches](https://www.loopandlearn.org/custom-code/) page. Others you create your own commit as described in [LoopDocs: GitHub Customization](../gh-actions/gh-customize.md#prepare-the-patches).
+A few of the specific commits on this page can be copied from the [Loop and Learn: Customization: Prepared Patches](https://www.loopandlearn.org/custom-code#prepared-patches) page. Others you create your own commit as described in [LoopDocs: GitHub Customization](../gh-actions/gh-customize.md#prepare-the-patches).
 
 !!! question "Is it worth making Prepared Patches for Mac-Xcode build?"
     That's a good question - only you can answer it.
 
 ### Mac-Xcode
 
-The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method. The downloaded code on your computer has all the Modules available in Xcode. So you can search for the `Key_Phrase` and it will be found regardless of the Module. 
+The customization instructions on this page were originally written for the [Mac-Xcode Build](../build/overview.md) method. The downloaded code on your computer has all the Modules available in Xcode. So you can search for the `Key_Phrase` and it will be found regardless of the Module. 
 
-### Browser Build
+### GitHub Browser Build
 
 The same `Key_Phrase` concept for finding lines to modify is used for the GitHub Browser Build method, but you need to apply a different procedure for creating the customization if you're just using a browser. The details on found on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
@@ -113,13 +113,25 @@ List of some flags and what they do:
 
 ## Instructions for Finding the Lines
 
-There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-Xcode method. 
+The instructions on this page were originally prepared for the Mac-Xcode method. 
 
-GitHub Browser Build method instructions are similar, but each one is used to create a commit to your fork. You will then save the SHA-1 for the commit, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
+The GitHub Browser Build method instructions are similar, but each one is used to create a commit to your fork. You will then save the SHA-1 for the commit, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
-For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. The first name in the folder structure is the name of the Module.
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. 
 
-**For Mac-Xcode builders, be sure to save the file when you make a change - otherwise the modification does not get built into your app.**
+For Mac-Xcode builders:
+
+* Either [Key_Phrase](#key_phrase) or [Module, Folder, File](#module-folder-file)
+ can be used to find the lines
+* Be sure to save the file when you make a change - otherwise the modification does not get built into your app
+* Some folder icons show different names in Xcode, see [Folders and Icons](#folders-and-icons)
+
+For GitHub Browser builders;
+
+* Some customizations can be copied from the [Loop and Learn: Customization: Prepared Patches](https://www.loopandlearn.org/custom-code#prepared-patches) page
+* Otherwise, create your own commit for the Module identified under [Module, Folder, File](#module-folder-file)
+
+### Key_Phrase
 
 ``` { .txt .copy title="Example of a Key_Phrase" }
 use the copy button at right, paste into search
@@ -127,26 +139,12 @@ The copy button for this exampe is just for practice
 Do not paste the result anywhere
 ```
 
-Example of the Module, Folder, File bullets:
-
-  * Module: Loop
-  * Folder: Loop/subfolder1/subfolder2/etc.
-  * File: filename.swift, line number(s)
-
-There may be a figure illustrating the change.
-
-Below the figure, the original, and in some cases, the modified code will be displayed as text.
-
-* Most customizations show the original line of code that you will be changing
-    * Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
-    * In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
-
 To search using the `Key_Phrase` (see graphic below for clarification):
 
 * A copy button is available when you hover your mouse in the right-hand side of the block below the title `Key_Phrase`;  click on it to copy the phrase
 * In Xcode, tap the Find menu item and select `Find in Workspace`
 * Paste the text into the Find search-box that opens on upper left of Xcode screen and hit enter
-    * **If you don't see the phrase in the box, hit backspace - your system may have copied an extra return**
+    * **If you don't see the phrase in the box, hit backspace - your system copied an extra return**
 * You should see a message `1 result in 1 file` (for most cases)
     * Some customizations will show more than one result, but that will be explained in the directions for that customization
 * The file in which the line is located is reported showing the line in that file containing the `Key_Phrase`
@@ -157,36 +155,36 @@ To search using the `Key_Phrase` (see graphic below for clarification):
 ![graphic showing how to search using the Key_Phrase](img/code-custom-xcode-search.svg){width="750"}
 {align="center"}
 
-<br>
+### Module, Folder, File
 
-### Folders and Icons
+Each customization will also show Module, Folder and File bullet below the key phrase.
 
-The folders listed in the code customization steps below are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in Xcode. Some people prefer to search through the folder icons to find a file instead of using the `Find in Workspace` feature.
+  * Module: Loop
+  * Folder: Loop/subfolder1/subfolder2/etc.
+  * File: filename.swift, line number(s)
 
-In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.
 
-* Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace
-* Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)
+## Customizations:
 
-![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
-{align="center"}
+The customizations below show the original line of code that you will be changing.
 
-These folder icon names are different from the directory names on the computer:
+There may be a figure illustrating the change.
 
-|  Folder Icon Name |  Directory Name | |
-|:--|:--||
-| ShareClient | dexcom-share-client-swift | 
-| RileyLink | rileylink_ios | 
-| Amplitude | Amplitude-iOS | 
+Below the figure, the original, and in some cases, the modified code will be displayed as text.
 
-All other icons and directory names match.
+* Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
+* In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
 
 
 ## Disable Authentication for Bolusing
 
 Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
-!!! warning "Loop 3"
+!!! warning "Safety Measure"
+    If you disable this, you are removing an important safety feature.
+
+    In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
+
     For Loop 3, this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
 
 ``` { .txt .copy title="Key_Phrase" }
@@ -867,3 +865,27 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 ## Limit Loop HUD Update
 
 Loop 3.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD). This was removed after users reported an increase in pod faults. If you are running Loop 3.0 and having frequent pod faults, you should build Loop 3.2. The customization that was here has been removed with the release of 3.2.
+
+
+## Folders and Icons
+
+The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in Xcode. Some people prefer to search through the folder icons to find a file instead of using the `Find in Workspace` feature.
+
+In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.
+
+* Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace
+* Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)
+
+![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
+{align="center"}
+
+These folder icon names are different from the directory names on the computer:
+
+|  Folder Icon Name |  Directory Name | |
+|:--|:--||
+| ShareClient | dexcom-share-client-swift | 
+| RileyLink | rileylink_ios | 
+| Amplitude | Amplitude-iOS | 
+
+All other icons and directory names match.
+
