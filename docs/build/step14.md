@@ -109,7 +109,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
     * Please read each step as if you are a new builder
     * Don't assume you know what you are doing
     * [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
-    * [Loop 3 with Patches](https://www.loopandlearn.org/github-lnl-patches) is provided instead
+    * [Loop 3 with Patches](https://www.loopandlearn.org/main-lnl-patches) is provided instead
 
 These instructions show each step needed to download Loop using the Build-Select script.
 

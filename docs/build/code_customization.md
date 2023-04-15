@@ -3,19 +3,27 @@
 !!! warning "Version 3.2.1"
     With the release of Loop 3.2.1, the location for the Eros pod customizations has moved.
 
+There is an optional method for applying patches. The procedure, developed for the GitHub Browser build method, also works for the Mac-Xcode build method. If the patch you want is prepared as a single commit (or a series of commits), it can be applied using the same command for both methods.
+
+* Mac-Xcode: paste the command(s) in the terminal (LoopWorkspace folder) and build again with Xcode
+* GitHub Broswer Build: paste the command(s) in the customization section of the build_loop.yml file and use the Build Loop Action
+
+A few of the specific commits on this page can be copied from the [LnL: Customization: Prepared Patches](https://www.loopandlearn.org/custom-code/) page. Others you create your own commit as described in [LoopDocs: GitHub Customization](../gh-actions/gh-customize.md#prepare-the-patches).
+
+!!! question "Is it worth making Prepared Patches for Mac-Xcode build?"
+    That's a good question - only you can answer it.
+
 ### Mac-Xcode
 
-The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method.
+The customization instructions on this page were written for the [Mac-Xcode Build](../build/overview.md) method. The downloaded code on your computer has all the Modules available in Xcode. So you can search for the `Key_Phrase` and it will be found regardless of the Module. 
 
 ### Browser Build
 
-The same `Key_Phrase` concept for finding lines to modify is used for the GitHub Browser Build method.
+The same `Key_Phrase` concept for finding lines to modify is used for the GitHub Browser Build method, but you need to apply a different procedure for creating the customization if you're just using a browser. The details on found on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
-* The instructions provided on the [Customize with GitHub](../gh-actions/gh-customize.md) page have you make your own fork for any module you want to modify, commit changes to your fork, and then point your fork of LoopWorkspace to the modified modules in your GitHub account
-    * There are several other ways to do customizations, but this method can be done using just a browser - no cloning of the LoopWorkspace is required
-    * You may want to have this page and the [Customize with GitHub](../gh-actions/gh-customize.md) page open in two windows for easy reference
-* One set of commonly requested customizations is available as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
-    * If you used the LnL patched code - and want to add more customizations with the GitHub build method, you will need to use special instructions for configuring your forks. That document is not available at this time.
+A few commonly requested customizations are available as Prepared Patches that you can copy and paste, as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/prepared-patches).
+
+For GitHub Browser Build, you can skip over the Mac-Xcode specific section and skip ahead to [Build-Time Features](#build-time-features).
 
 ## Build then Customize
 
@@ -29,15 +37,15 @@ Based on Loop users’ experience, there are some common customizations document
 
 Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.
 
-!!! success "Loop to LoopWorkspace in dev"
-    Note that the directory `Loop.xcworkspace` has been renamed to `LoopWorkspace.xcworkspace` in the dev branch. This change makes LoopWorkspace the default target to simplify the build process.
+!!! success "Loop to LoopWorkspace"
+    Note that the directory `Loop.xcworkspace` has been renamed to `LoopWorkspace.xcworkspace` in the released code. For experienced builders - you realize this is good because the build process is easier.
 
-    The words will be updated with the next release. It may take more time for the figures to be updated.
+    The words were updated, but it will take time for the graphics to be updated.
 
 * Open Finder
 * Navigate to Downloads/BuildLoop and look for your download by name and date
 * Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145, and inside that folder open the LoopWorkspace folder
-* Inside the Downloads/BuildLoop/Loop-220803-1145/LoopWorkspace folder, double-click on Loop.xcworkspace
+* Inside the Downloads/BuildLoop/Loop-220803-1145/LoopWorkspace folder, double-click on LoopWorkspace.xcworkspace (graphic not updated yet)
 * Xcode automatically opens to that particular download
 * You can then make the customizations and build to your phone
 
@@ -58,7 +66,7 @@ Be sure to read the [Instructions for Finding the Lines](code_customization.md#i
 
 !!! abstract "Loop 2.2.x vs Loop 3"
 
-    * Loop 3 has been released but there are still many people using older code.
+    * Loop 3 has been released but there are some people using older code.
     * The labels below indicate Loop 2.2.x or Loop 3, if they are different
     * Users of Loop 2.2.9 (or earlier) or FreeAPS should refer to the Loop 2.2.x examples.
     * Some 2.2.x customizations will be removed as time goes on
@@ -107,17 +115,19 @@ List of some flags and what they do:
 
 There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-Xcode method. 
 
-GitHub Browser Build method instructions are similar, but each one is done for your fork of a given the module and then combined into your fork of LoopWorkspace using the instructions on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
+GitHub Browser Build method instructions are similar, but each one is used to create a commit to your fork. You will then save the SHA-1 for the commit, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. The first name in the folder structure is the name of the Module.
 
-**For each change you make in Xcode - be sure to save the file - otherwise the modification does not get built into your app.**
+**For Mac-Xcode builders, be sure to save the file when you make a change - otherwise the modification does not get built into your app.**
 
-``` { .txt .copy title="Key_Phrase" }
+``` { .txt .copy title="Example of a Key_Phrase" }
 use the copy button at right, paste into search
 The copy button for this exampe is just for practice
 Do not paste the result anywhere
 ```
+
+Example of the Module, Folder, File bullets:
 
   * Module: Loop
   * Folder: Loop/subfolder1/subfolder2/etc.
@@ -156,7 +166,7 @@ The folders listed in the code customization steps below are the actual director
 In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.
 
 * Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace
-* Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file
+* Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)
 
 ![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
 {align="center"}
@@ -723,18 +733,12 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 ## Additional Customizations for Loop 3
 
-If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac-Xcode build) or use a prepared fork that already contains them.
+If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method) or use a prepared fork that already contains them.
 
 These customizations are only for Loop 3:
 
-* Some are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
-* You may add one or more yourself
-
-If you want to add one or more of these customizations yourself to Loop 3 or a Loop development branch, then continue with this section for instructions.
-
-* You should be comfortable typing commands in a terminal
-* You will need to open a terminal in the LoopWorkspace folder of the code that you previously downloaded
-    * The next section provides instructions on opening the terminal in the correct place
+* Some are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches)
+* You may add one or more yourself as detailed in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code)
 
 ### Open a Terminal in LoopWorkspace Folder
 
@@ -767,10 +771,7 @@ If you are using a development branch of Loop, you need the dev branch of LoopPa
 
 Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
 
-The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
-
-!!! warning "GitHub Browser Build"
-    Use the single curl line for Loop or LoopKit in the terminal window for Codespaces to apply this customization for a given module.
+The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches).
 
 ### Add Libre App to Loop Phone
 
@@ -792,11 +793,11 @@ These are the Libre iOS app options.
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * Refer to [Modify Loop to use Libre](#modify-loop-to-use-libre)
 
-Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded or use [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
+Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded or use [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches).
 
 ### Modify Loop to use Libre
 
-This is the same method used to prepare the [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches). Both xDrip4iOS and GlucoseDirect clients are added in that customized fork.
+This is the same method used to prepare the [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches). Both xDrip4iOS and GlucoseDirect clients are added in that customized fork.
 
 For your selected app to read the Libre, you must also add a client to Loop 3 to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.
 

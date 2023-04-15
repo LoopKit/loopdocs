@@ -15,7 +15,7 @@
 
 !!! question "FAQs"
 
-    - **"What about Libre sensors?"** A [fork of Loop](https://www.loopandlearn.org/github-lnl-patches) is available with added Libre support
+    - **"What about Libre sensors?"** A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support
     - **"What about Eversense?"** Refer to [CGMs Not Supported in Loop](#cgms-not-supported-in-loop)
 
 
@@ -70,7 +70,7 @@ Loop 3 can use Nightscout as a remote source for CGM data. This requires cell or
 
 Loop does not directly support some CGM such as Libre, Eversense and Medtronic Guardian.
 
-* A [fork of Loop](https://www.loopandlearn.org/github-lnl-patches) is available with added Libre support
+* A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support
     * GitHub Build: Refer to the link above for instructions to build this fork
     * Mac-Xcode Build: Select the Loop with Patches option in the [Build Select Script](step14.md)
 
