@@ -469,6 +469,8 @@ The indenting needs to match, so tab or (shift-tab) to line up the patches.
     * Click on Run workflow on the right side
     * Then click on the green Run Workflow button
 
+After waiting about 2 minutes, to make sure there is no error, return to [Codespaces](https://github.com/codespaces). Scroll to the bottom of the screen and delete any codespaces you created above. (Note codespaces must first be stopped and then deleted.)
+
 In about 1 hour, your customized Loop will be available for installation on your phone via TestFlight.
 
 ## Special Cases
