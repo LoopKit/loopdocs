@@ -513,7 +513,9 @@ What if you already have a fork of one of the modules?
 
 **Your existing fork is from a username other than LoopKit**
 
-If you know this is a fork you do not care about, you can delete the repository. If you need to keep this fork, for some reason, there is a workaround but it won't be published on this page.
+If your fork is from loopnlearn and you want additional customizations, it is easier to delete that fork, make a new one from LoopKit, add the 6 Secrets to the new fork and as part of the changes to build_loop.yml, add the [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches) and your additional customizations.
+
+If you know this is a fork you do not care about, you can delete the repository.
 
 * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 
