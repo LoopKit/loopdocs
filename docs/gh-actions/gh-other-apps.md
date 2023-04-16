@@ -74,7 +74,7 @@ Once all six Secrets are added, you will either continue to add the identifiers 
 
 ## Action: Validate Secrets
 
-When building Loop Follow, the main branch has the new steps that are currently in [Loop dev Actions](gh-update.md#loop-dev-actions) and will be in the next release. The actions will look slightly different than when you built Loop.
+The first action step is to Validate Secrets.
 
 ![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
 {align="left"}

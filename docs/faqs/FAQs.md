@@ -174,7 +174,7 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 Many features people used with FreeAPS can be added to Loop 3 with customization. These customizations are supplied as a new branch, main_lnl_patches, on the loopnlearn GitHub site. This includes Libre support and the CustomTypeOne LoopPatches.
 
-* The customizations are described in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches)
-* For Browser Build, use the GitHub instructions in LoopDocs but fork from loopnlearn GitHub instead of LoopKit as explained [Loop and Learn: GitHub Loop with Patches](https://www.loopandlearn.org/github-lnl-patches/#github)
+* The customizations are described in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches)
+* For Browser Build, follow the direction on the page above
 * For Mac-Xcode build, these customization were incorporated as an option in the [Build Select Script](../build/step14.md).
 

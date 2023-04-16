@@ -109,7 +109,7 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
     * Please read each step as if you are a new builder
     * Don't assume you know what you are doing
     * [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
-    * [Loop 3 with Patches](https://www.loopandlearn.org/github-lnl-patches) is provided instead
+    * [Loop 3 with Patches](https://www.loopandlearn.org/main-lnl-patches) is provided instead
 
 These instructions show each step needed to download Loop using the Build-Select script.
 
@@ -120,8 +120,8 @@ These instructions show each step needed to download Loop using the Build-Select
     
     Consider using Loop 3 as designed. If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the Build Select Script.
  
-     * Information about [Loop Follow](https://github.com/jonfawcett/LoopFollow#readme)
-     * Information about [Loop with Patches](https://www.loopandlearn.org/build-select/)
+     * Information about [Loop Follow](https://www.loopandlearn.org/loop-follow)
+     * Information about [Loop with Patches](https://www.loopandlearn.org/main-lnl-patches/)
         * Warning, the Loop with Patches is updated **after** the main Loop is released. Typically it is updated within a day, but don't assume. Check that link for updates.
  
      You do not need to know about these options to build Loop.
@@ -148,7 +148,7 @@ Next you will see an introduction to the Build-Select script.  Please read this.
 ![choose to build Loop](img/bss-02-menu-message.svg){width="700"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the fork of Loop with added Libre CGM options and CustomTypeOne patches.
+Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the fork of Loop with added Libre CGM options, CustomTypeOne patches and a custom logo.
 
 ![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}

@@ -20,11 +20,9 @@ TestFlight is the only method available for installation to a phone when using t
 
 ### Cons
 
-The customization process is more involved. One set of commonly requested customizations is available, as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/github-lnl-patches).
+The customization process is more tedious to set up but then easy to maintain. One set of commonly requested customizations is available, as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-patches).
 
-* Stick with Mac-Xcode build (for now) if you want to do your own customizations
-    * You can still use [TestFlight with your Mac-Xcode build](../build/testflight-xcode.md)
-* If you still want customizations and don't have a Mac-Xcode system that allows you to customize, there are now instructions at Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md)
+* There are now instructions at Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md)
     * These instructions are for released code
 
 ## Requirements
