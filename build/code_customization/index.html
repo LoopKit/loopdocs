@@ -1794,8 +1794,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#browser-build" class="md-nav__link">
-    Browser Build
+  <a href="#github-browser-build" class="md-nav__link">
+    GitHub Browser Build
   </a>
   
 </li>
@@ -1841,14 +1841,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#folders-and-icons" class="md-nav__link">
-    Folders and Icons
+  <a href="#key_phrase" class="md-nav__link">
+    Key_Phrase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-folder-file" class="md-nav__link">
+    Module, Folder, File
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizations" class="md-nav__link">
+    Customizations:
+  </a>
   
 </li>
       
@@ -2081,6 +2095,13 @@
         <li class="md-nav__item">
   <a href="#limit-loop-hud-update" class="md-nav__link">
     Limit Loop HUD Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folders-and-icons" class="md-nav__link">
+    Folders and Icons
   </a>
   
 </li>
@@ -2535,8 +2556,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#browser-build" class="md-nav__link">
-    Browser Build
+  <a href="#github-browser-build" class="md-nav__link">
+    GitHub Browser Build
   </a>
   
 </li>
@@ -2582,14 +2603,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#folders-and-icons" class="md-nav__link">
-    Folders and Icons
+  <a href="#key_phrase" class="md-nav__link">
+    Key_Phrase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-folder-file" class="md-nav__link">
+    Module, Folder, File
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizations" class="md-nav__link">
+    Customizations:
+  </a>
   
 </li>
       
@@ -2826,6 +2861,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#folders-and-icons" class="md-nav__link">
+    Folders and Icons
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2848,21 +2890,22 @@
 <p class="admonition-title">Version 3.2.1</p>
 <p>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>.2.1, the location for the Eros pod customizations has moved.</p>
 </div>
-<h3 id="mac-xcode">Mac-<abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#mac-xcode" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The customization instructions on this page were written for the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method.</p>
-<h3 id="browser-build">Browser Build<a class="headerlink" href="#browser-build" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The same <code>Key_Phrase</code> concept for finding lines to modify is used for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method.</p>
+<p>There is an optional method for applying patches. The procedure, developed for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method, also works for the Mac-<abbr title="program used to build an app">Xcode</abbr> build method. If the patch you want is prepared as a single <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> (or a series of commits), it can be applied using the same command for both methods.</p>
 <ul>
-<li>The instructions provided on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page have you make your own <abbr title="a copy of code in a github repository other than the original">fork</abbr> for any module you want to modify, <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> changes to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, and then point your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace to the modified modules in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account<ul>
-<li>There are several other ways to do customizations, but this method can be done using just a browser - no cloning of the LoopWorkspace is required</li>
-<li>You may want to have this page and the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page open in two windows for easy reference</li>
+<li>Mac-<abbr title="program used to build an app">Xcode</abbr>: paste the command(s) in the terminal (LoopWorkspace folder) and build again with <abbr title="program used to build an app">Xcode</abbr></li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Broswer Build: paste the command(s) in the customization section of the build_loop.yml file and use the Build Loop Action</li>
 </ul>
-</li>
-<li>One set of commonly requested customizations is available as explained at <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a><ul>
-<li>If you used the LnL patched code - and want to add more customizations with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method, you will need to use special instructions for configuring your forks. That document is not available at this time.</li>
-</ul>
-</li>
-</ul>
+<p>A few of the specific commits on this page can be copied from the <a href="https://www.loopandlearn.org/custom-code#prepared-patches">Loop and Learn: Customization: Prepared Patches</a> page. Others you create your own <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> as described in <a href="../../gh-actions/gh-customize/#prepare-the-patches">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Customization</a>.</p>
+<div class="admonition question">
+<p class="admonition-title">Is it worth making Prepared Patches for Mac-<abbr title="program used to build an app">Xcode</abbr> build?</p>
+<p>That's a good question - only you can answer it.</p>
+</div>
+<h3 id="mac-xcode">Mac-<abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#mac-xcode" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The customization instructions on this page were originally written for the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method. The downloaded code on your computer has all the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> available in <abbr title="program used to build an app">Xcode</abbr>. So you can search for the <code>Key_Phrase</code> and it will be found regardless of the Module. </p>
+<h3 id="github-browser-build"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build<a class="headerlink" href="#github-browser-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The same <code>Key_Phrase</code> concept for finding lines to modify is used for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method, but you need to apply a different procedure for creating the customization if you're just using a browser. The details on found on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
+<p>A few commonly requested customizations are available as Prepared Patches that you can copy and paste, as explained at <a href="https://www.loopandlearn.org/prepared-patches">Loop and Learn: Loop Customization</a>.</p>
+<p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build, you can skip over the Mac-<abbr title="program used to build an app">Xcode</abbr> specific section and skip ahead to <a href="#build-time-features">Build-Time Features</a>.</p>
 <h2 id="build-then-customize">Build then Customize<a class="headerlink" href="#build-then-customize" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For new builders, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using <abbr title="program used to build an app">Xcode</abbr> as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  </p>
 <p>When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.</p>
@@ -2870,15 +2913,15 @@
 <h3 id="find-my-downloaded-loop-code">Find My Downloaded Loop Code<a class="headerlink" href="#find-my-downloaded-loop-code" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.</p>
 <div class="admonition success">
-<p class="admonition-title">Loop to LoopWorkspace in dev</p>
-<p>Note that the directory <code>Loop.xcworkspace</code> has been renamed to <code>LoopWorkspace.xcworkspace</code> in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This change makes LoopWorkspace the default target to simplify the build process.</p>
-<p>The words will be updated with the next release. It may take more time for the figures to be updated.</p>
+<p class="admonition-title">Loop to LoopWorkspace</p>
+<p>Note that the directory <code>Loop.xcworkspace</code> has been renamed to <code>LoopWorkspace.xcworkspace</code> in the released code. For experienced builders - you realize this is good because the build process is easier.</p>
+<p>The words were updated, but it will take time for the graphics to be updated.</p>
 </div>
 <ul>
 <li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr></li>
 <li>Navigate to Downloads/BuildLoop and look for your download by name and date</li>
 <li>Open that folder, for example, Downloads/BuildLoop/Loop-220803-1145, and inside that folder open the LoopWorkspace folder</li>
-<li>Inside the Downloads/BuildLoop/Loop-220803-1145/LoopWorkspace folder, double-click on Loop.xcworkspace</li>
+<li>Inside the Downloads/BuildLoop/Loop-220803-1145/LoopWorkspace folder, double-click on LoopWorkspace.xcworkspace (graphic not updated yet)</li>
 <li><abbr title="program used to build an app">Xcode</abbr> automatically opens to that particular download</li>
 <li>You can then make the customizations and build to your phone</li>
 </ul>
@@ -2903,7 +2946,7 @@
 <div class="admonition abstract">
 <p class="admonition-title">Loop 2.2.x vs <abbr title="Latest release with major updates">Loop 3</abbr></p>
 <ul>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> has been released but there are still many people using older code.</li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr> has been released but there are some people using older code.</li>
 <li>The labels below indicate Loop 2.2.x or <abbr title="Latest release with major updates">Loop 3</abbr>, if they are different</li>
 <li>Users of Loop 2.2.9 (or earlier) or FreeAPS should refer to the Loop 2.2.x examples.</li>
 <li>Some 2.2.x customizations will be removed as time goes on</li>
@@ -2960,34 +3003,32 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 </tbody>
 </table>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are other customizations where the user goes into a particular file and makes a specific change to the code. The instructions on this page are for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. </p>
-<p><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is done for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of a given the module and then combined into your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace using the instructions on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
-<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. Note that the folder is listed with respect to the LoopWorkspace directory. The first name in the folder structure is the name of the Module.</p>
-<p><strong>For each change you make in <abbr title="program used to build an app">Xcode</abbr> - be sure to save the file - otherwise the modification does not get built into your app.</strong></p>
-<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
+<p>The instructions on this page were originally prepared for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. </p>
+<p>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is used to create a <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. You will then save the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
+<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. </p>
+<p>For Mac-<abbr title="program used to build an app">Xcode</abbr> builders:</p>
+<ul>
+<li>Either <a href="#key_phrase">Key_Phrase</a> or <a href="#module-folder-file">Module, Folder, File</a>
+ can be used to find the lines</li>
+<li>Be sure to save the file when you make a change - otherwise the modification does not get built into your app</li>
+<li>Some folder icons show different names in <abbr title="program used to build an app">Xcode</abbr>, see <a href="#folders-and-icons">Folders and Icons</a></li>
+</ul>
+<p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser builders;</p>
+<ul>
+<li>Some customizations can be copied from the <a href="https://www.loopandlearn.org/custom-code#prepared-patches">Loop and Learn: Customization: Prepared Patches</a> page</li>
+<li>Otherwise, create your own <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for the Module identified under <a href="#module-folder-file">Module, Folder, File</a></li>
+</ul>
+<h3 id="key_phrase">Key_Phrase<a class="headerlink" href="#key_phrase" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="copy highlight"><span class="filename">Example of a Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
 The copy button for this exampe is just for practice
 Do not paste the result anywhere
 </code></pre></div>
-<ul>
-<li>Module: Loop</li>
-<li>Folder: Loop/subfolder1/subfolder2/etc.</li>
-<li>File: filename.swift, line number(s)</li>
-</ul>
-<p>There may be a figure illustrating the change.</p>
-<p>Below the figure, the original, and in some cases, the modified code will be displayed as text.</p>
-<ul>
-<li>Most customizations show the original line of code that you will be changing<ul>
-<li>Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs</li>
-<li>In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs</li>
-</ul>
-</li>
-</ul>
 <p>To search using the <code>Key_Phrase</code> (see graphic below for clarification):</p>
 <ul>
 <li>A copy button is available when you hover your mouse in the right-hand side of the block below the title <code>Key_Phrase</code>;  click on it to copy the phrase</li>
 <li>In <abbr title="program used to build an app">Xcode</abbr>, tap the Find menu item and select <code>Find in Workspace</code></li>
 <li>Paste the text into the Find search-box that opens on upper left of <abbr title="program used to build an app">Xcode</abbr> screen and hit enter<ul>
-<li><strong>If you don't see the phrase in the box, hit backspace - your system may have copied an extra return</strong></li>
+<li><strong>If you don't see the phrase in the box, hit backspace - your system copied an extra return</strong></li>
 </ul>
 </li>
 <li>You should see a message <code>1 result in 1 file</code> (for most cases)<ul>
@@ -3002,47 +3043,27 @@ Do not paste the result anywhere
 </li>
 </ul>
 <p align="center"><img alt="graphic showing how to search using the Key_Phrase" src="../img/code-custom-xcode-search.svg" width="750" /></p>
-<p><br></p>
-<h3 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The folders listed in the code customization steps below are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
-<p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
+<h3 id="module-folder-file">Module, Folder, File<a class="headerlink" href="#module-folder-file" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Each customization will also show Module, Folder and File bullet below the key phrase.</p>
 <ul>
-<li>Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace</li>
-<li>Inset 2: User opens folders under <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> icon to open OmniKit, then OmnipodCommon to find the Pod.swift file</li>
+<li>Module: Loop</li>
+<li>Folder: Loop/subfolder1/subfolder2/etc.</li>
+<li>File: filename.swift, line number(s)</li>
 </ul>
-<p align="center"><img alt="graphic showing folder icons vs folder names" src="../img/xcode-folder-names.svg" width="750" /></p>
-<p>These folder icon names are different from the directory names on the computer:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Folder Icon Name</th>
-<th align="left">Directory Name</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">ShareClient</td>
-<td align="left">dexcom-share-client-swift</td>
-<td></td>
-</tr>
-<tr>
-<td align="left"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr></td>
-<td align="left">rileylink_ios</td>
-<td></td>
-</tr>
-<tr>
-<td align="left">Amplitude</td>
-<td align="left">Amplitude-<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>All other icons and directory names match.</p>
+<h2 id="customizations">Customizations:<a class="headerlink" href="#customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The customizations below show the original line of code that you will be changing.</p>
+<p>There may be a figure illustrating the change.</p>
+<p>Below the figure, the original, and in some cases, the modified code will be displayed as text.</p>
+<ul>
+<li>Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs</li>
+<li>In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs</li>
+</ul>
 <h2 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.</p>
 <div class="admonition warning">
-<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr></p>
+<p class="admonition-title">Safety Measure</p>
+<p>If you disable this, you are removing an important safety feature.</p>
+<p>In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.</p>
 <p>For <abbr title="Latest release with major updates">Loop 3</abbr>, this controls the authorization requirement to modify <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> as well as to confirm bolus delivery.</p>
 </div>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>canEvaluatePolicy(.deviceOwnerAuthentication
@@ -3516,19 +3537,11 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than Loop app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
 <p>And now you'll be the proud new owner of a custom Loop icon.</p>
 <h2 id="additional-customizations-for-loop-3">Additional Customizations for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#additional-customizations-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (requires Mac-<abbr title="program used to build an app">Xcode</abbr> build) or use a prepared <abbr title="a copy of code in a github repository other than the original">fork</abbr> that already contains them.</p>
+<p>If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-<abbr title="program used to build an app">Xcode</abbr> or <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> browser build method) or use a prepared <abbr title="a copy of code in a github repository other than the original">fork</abbr> that already contains them.</p>
 <p>These customizations are only for <abbr title="Latest release with major updates">Loop 3</abbr>:</p>
 <ul>
-<li>Some are already added to the released version of Loop in a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace for your convenience, <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a></li>
-<li>You may add one or more yourself</li>
-</ul>
-<p>If you want to add one or more of these customizations yourself to <abbr title="Latest release with major updates">Loop 3</abbr> or a Loop development <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then continue with this section for instructions.</p>
-<ul>
-<li>You should be comfortable typing commands in a terminal</li>
-<li>You will need to open a terminal in the LoopWorkspace folder of the code that you previously downloaded<ul>
-<li>The next section provides instructions on opening the terminal in the correct place</li>
-</ul>
-</li>
+<li>Some are already added to the released version of Loop in a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace for your convenience, <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop with Patches</a></li>
+<li>You may add one or more yourself as detailed in <a href="https://www.loopandlearn.org/custom-code">Loop and Learn: Loop Customization</a></li>
 </ul>
 <h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens <abbr title="program used to build an app">Xcode</abbr>; but to apply customizations, you need to type commands in the terminal.</p>
@@ -3548,11 +3561,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>Several items have been consolidated into a set of patches found at <a href="https://github.com/CustomTypeOne/LoopPatches#readme">CustomTypeOne/LoopPatches</a>. These patches only work with <abbr title="Latest release with major updates">Loop 3</abbr> (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>).</p>
 <p>If you are using a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> of Loop, you need the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopPatches. Note - even the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopPatches takes time to update for some changes to the Loop-dev code. <a href="https://github.com/CustomTypeOne/LoopPatches/tree/dev#readme">CustomTypeOne/LoopPatches for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></p>
 <p>Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
-<p>The CustomTypeOne LoopPatches are included in <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</p>
-<p>Use the single curl line for Loop or LoopKit in the terminal window for Codespaces to apply this customization for a given module.</p>
-</div>
+<p>The CustomTypeOne LoopPatches are included in <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop with Patches</a>.</p>
 <h3 id="add-libre-app-to-loop-phone">Add Libre App to Loop Phone<a class="headerlink" href="#add-libre-app-to-loop-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This method only works for <abbr title="Latest release with major updates">Loop 3</abbr> (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone. This should work for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as well.</p>
 <p>There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.</p>
@@ -3576,9 +3585,9 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ul>
 </li>
 </ul>
-<p>Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the <abbr title="Latest release with major updates">Loop 3</abbr> code that you previously downloaded or use <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
+<p>Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the <abbr title="Latest release with major updates">Loop 3</abbr> code that you previously downloaded or use <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
 <h3 id="modify-loop-to-use-libre">Modify Loop to use Libre<a class="headerlink" href="#modify-loop-to-use-libre" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is the same method used to prepare the <a href="https://www.loopandlearn.org/github-lnl-patches">Loop and Learn: Loop Customization</a>. Both xDrip4iOS and GlucoseDirect clients are added in that customized <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<p>This is the same method used to prepare the <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop Customization</a>. Both xDrip4iOS and GlucoseDirect clients are added in that customized <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
 <p>For your selected app to read the Libre, you must also add a client to <abbr title="Latest release with major updates">Loop 3</abbr> to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>Add a client that interfaces with xDrip4iOS:</p>
 <ul>
@@ -3635,6 +3644,42 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 </code></pre></div>
 <h2 id="limit-loop-hud-update">Limit Loop <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Update<a class="headerlink" href="#limit-loop-hud-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="Latest release with major updates">Loop 3</abbr>.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>). This was removed after users reported an increase in pod faults. If you are running <abbr title="Latest release with major updates">Loop 3</abbr>.0 and having frequent pod faults, you should build <abbr title="Latest release with major updates">Loop 3</abbr>.2. The customization that was here has been removed with the release of 3.2.</p>
+<h2 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
+<p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
+<ul>
+<li>Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace</li>
+<li>Inset 2: User opens folders under <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)</li>
+</ul>
+<p align="center"><img alt="graphic showing folder icons vs folder names" src="../img/xcode-folder-names.svg" width="750" /></p>
+<p>These folder icon names are different from the directory names on the computer:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Folder Icon Name</th>
+<th align="left">Directory Name</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ShareClient</td>
+<td align="left">dexcom-share-client-swift</td>
+<td></td>
+</tr>
+<tr>
+<td align="left"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr></td>
+<td align="left">rileylink_ios</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">Amplitude</td>
+<td align="left">Amplitude-<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All other icons and directory names match.</p>
 
 
 
