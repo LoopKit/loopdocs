@@ -503,7 +503,7 @@ What if you already have a fork of one of the modules?
 
 **Your existing fork is from a username other than LoopKit**
 
-If your fork is from loopnlearn and you want additional customizations, it is easist to delete that fork, make a new one from LoopKit, add the 6 Secrets to the new fork and as part of the changes to build_loop.yml, add the [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches) and you additional customizations.
+If your fork is from loopnlearn and you want additional customizations, it is easier to delete that fork, make a new one from LoopKit, add the 6 Secrets to the new fork and as part of the changes to build_loop.yml, add the [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches) and your additional customizations.
 
 If you know this is a fork you do not care about, you can delete the repository.
 
