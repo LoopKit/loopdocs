@@ -1,22 +1,18 @@
 ## Hot Topics
 
 !!! tip "Pro Tip"
-    You can also use this same method to create a set of personal patches. You can use (and re-use) your patches with Mac-Xcode builds so you don't have to repeat the customization with every update.
+    The method on this page allows you to create a set of personal patches. You can use (and re-use) your patches with Mac-Xcode builds so you don't have to repeat the customization with every update.
 
     * If you are building with Mac-Xcode method, you will use the same lines found in the [Prepare the Patches](#prepare-the-patches) section, but will paste them in your terminal to customize your code
 
-!!! danger "DRAFT"
-    This procedure is in DRAFT mode - only minimal graphics are provided.
+!!! warning "Submodule Instructions"
+    This page has instructions to prepare branches for the Modules associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (commit) the change to prepare your personal patch.
+    
+    * You can often use the same patch for several releases
+    * If a patch that you prepared for an older release says "patch does not apply" when you use it, you'll need to prepare a new one
+    * Please wait for this page to be updated to the current release before generating an updated patch
 
-    The entire procedure may change without warning, so be prepared for updates.
-
-    * 27-March 2023: Method updated and modified
-        * Improvement, you can reuse the customization with each update unless there is a conflict
-        * You will paste the patch into the build_loop.yml file (we'll tell you how)
-
-    WARNING - After a recent release - wait for the release number to be updated on this page before using any of the copy/paste commands.
-
-    This page was updated for Loop 3.2.1 on 22-March-2023.
+    This page is valid for Loop 3.2.1.
 
 ## Overview
 
@@ -113,12 +109,17 @@ curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --dire
 
 where:
 
+* `curl` means copy from URL
 * username is your GitHub username
 * Module is where you made the customization (notice it is in multiple places)
 * SHA-1 is the full identifier for the commit that has the change; there is a copy button to make this easy
-* the `.patch` after the SHA-1 is github magic that formats that code change into a patch
+* the `.patch` after the SHA-1 is GitHub magic that formats that code change into a patch
+
+To view the exact code change associated with that patch, open a browser at the URL of `https://github.com/username/Module/commit/SHA-1`.
 
 ## Create a Fork for Selected Module
+
+### Code Updates
 
 !!! warning "New Release"
     If you have previously used this process for a prior release, use the same Modules you already forked.
@@ -134,7 +135,9 @@ where:
 
     Skip ahead to [Open Module in Codespaces](#open-module-in-codespaces).
 
-If you want a modification that uses a particular module, you must fork that module to your GitHub account. You will repeat the Fork and Modify steps for each module.
+### New Fork
+
+If you want a modification that uses a particular Module, you must fork that module to your GitHub account. You will repeat the Fork and Modify steps for each module.
 
 1. Log into your GitHub account
 1. Right click (or control click) on the URL in the table above
@@ -167,9 +170,9 @@ When you fork a repository, the default branch is the one that is forked. That i
 This page has instructions for applying customizations to released code, main branch of LoopWorkspace. Don't worry that some of the other repositories have dev for the default branch. With the exception of the Loop module, everything you need to create your patches is included in the default branches of the lower level repositories (Modules). For Loop, you will also need a main branch. See [Connect Fork to New Branch](gh-update.md#connect-fork-to-new-branch)
 
 !!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the main_lnl_patches branch. At the current time, this process involves making your LoopWorkspace fork from loopnlearn instead of LoopKit. In the future, you will be able to get the same patches by a different method.
+    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches).
 
-    The process for creating your own customized patch is the same as those using the released code. There will be extra information about modifying the build_loop.yml depending on which LoopWorkspace you choose to fork (LoopKit or loopnlearn). But that documentation is not ready yet.
+    The process for creating your own customized patch is the same as those using the released code.
 
 ## Open Module in Codespaces
 
@@ -348,8 +351,6 @@ For each modification, there is a `Key_Phrase` to help you find the line of code
 
 Click on the codespaces magnifying glass, paste the `Key_Phrase` into the search bar. If you use the copy icon and paste the `Key_Phrase`, you'll need to hit backspace to remove the extra return.
 
-TO DO - put in a GIF showing making changes.
-
 Make the change and save the file.
 
 The source control icon now has a number showing. The number is how many different files in this Module that you have modified. Sometimes, more than one customization is added to a given file.
@@ -380,7 +381,7 @@ You are done with this module.
 Click the Codespaces icon at bottom left.
 Choose Stop Codespace from the menu. Don't worry about the changes won't be saved message - you just saved the changes with the sync command above.
 
-The screen will then show the Codespace is stopped message. You can close the tab.
+The screen will then show the Codespace is stopped message.
 
 Return to your github account and look at the repository for the Module you just changed. It should be similar to the graphic below.
 
@@ -389,9 +390,11 @@ Return to your github account and look at the repository for the Module you just
 
 ## Prepare the Patches
 
-While you have this Module open, go on an prepare the patch lines you will need to add to the build_loop.yml file.
+You will prepare the patches looking at the repository under GitHub.
 
-Add graphic showing several customizations with comments.
+You will need the SHA-1 and the commit comment for each change you made in main_3.2.1_custom.
+
+Add graphic showing GitHub fork with several customizations with comments.
 
 Important: work from older (bottom) to newer (top) commits when creating the patches.
 
@@ -494,7 +497,7 @@ What if you already have a fork of one of the modules?
 
 **Your existing fork is from a username other than LoopKit**
 
-If your fork is from loopnlearn then you need to follow the directions (that are not written yet) on the loopandlearn dot org website.
+If your fork is from loopnlearn and you want additional customizations, it is easist to delete that fork, make a new one from LoopKit, add the 6 Secrets to the new fork and as part of the changes to build_loop.yml, add the [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches) and you additional customizations.
 
 If you know this is a fork you do not care about, you can delete the repository.
 
