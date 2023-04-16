@@ -2620,15 +2620,21 @@
 </ul>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Submodule Instructions</p>
-<p>This page has instructions to prepare branches for the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) the change to <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> to prepare your personal patch. </p>
-<p><strong>Please do not click on boxes that <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> might show you that ask if you want to merge changes from your <abbr title="a copy of code in a github repository other than the original">fork</abbr> back to LoopKit.</strong> These changes are for <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> only. Ignore those prompts.</p>
+<p class="admonition-title"><abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> vs Submodule</p>
+<p>This page has instructions to prepare branches for the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) the change to <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> to prepare your personal patch.</p>
+<p>The technical term for the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> is submodule when you are using <abbr title="a tool for version control">git</abbr> commands. Each Module has its own <abbr title="contains project files and each file's revision history">repository</abbr> and you will be working with <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> of that <abbr title="contains project files and each file's revision history">repository</abbr> at https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/username/Module.</p>
 <ul>
 <li>You can often use the same patch for several releases</li>
 <li>If a patch that you prepared for an older release says "patch does not apply" when you use it, you'll need to prepare a new one</li>
-<li>Please wait for this page to be updated to the current release before generating an updated patch</li>
+<li>Please wait for this page to be updated to the current release before generating a new patch</li>
 </ul>
 <p>This page is valid for <abbr title="Latest release with major updates">Loop 3</abbr>.2.1.</p>
+</div>
+<h4 id="do-not-make-a-pull-request">Do Not Make a <abbr title="formal method to request changes to a repository">Pull Request</abbr><a class="headerlink" href="#do-not-make-a-pull-request" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition danger">
+<p class="admonition-title">Ignore <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="formal method to request changes to a repository">Pull Request</abbr> Prompts</p>
+<p>Please do not click on boxes that <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> might show you that ask if you want to <strong>Compare &amp; <abbr title="formal method to request changes to a repository">Pull Request</abbr>.</strong></p>
+<p>This would be an attempt to merge changes from your <abbr title="a copy of code in a github repository other than the original">fork</abbr> back to LoopKit. These changes are for <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> only. Ignore those prompts.</p>
 </div>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition info">
@@ -2655,11 +2661,11 @@
 <li>If there is an update (new release) and the patches apply with no errors, then you do NOT need to create new patches</li>
 </ul>
 </li>
-<li>LoopDocs: Decide on <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> to modify <a href="../../build/code_customization/">Code Customization</a></li>
+<li>LoopDocs: Decide on <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> to modify using the <a href="../../build/code_customization/">LoopDocs: Code Customization</a> page</li>
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (each Module):<ol>
 <li>Fork Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
 <li>Modify Module (<abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to Codespaces)</li>
-<li>Finish your customizations (Codespaces to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
+<li>Save (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) your customizations (Codespaces to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>)</li>
 <li>Prepare lines needed for each patch and save</li>
 </ol>
 </li>
@@ -2685,13 +2691,74 @@
 <p>There is some background information at the bottom of this page starting at <a href="#loopworkspace">LoopWorkspace</a> if you want to know what you are doing. Otherwise, just follow the steps like a cookbook.</p>
 <h2 id="editing-code">Editing Code<a class="headerlink" href="#editing-code" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You will be using the online tool associated with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> called Codespaces. Any <abbr title="contains project files and each file's revision history">repository</abbr> in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account can be opened with Codespaces.</p>
-<p>You will need a text editor to format a "patch" line for each module you change. Use the same text editor you use for saving your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. You do not want characters like double hypen or quote symbols modified by a smart editor.</p>
+<p>You will need a text editor to format a "patch" line for each module you change. It is fine (perhaps preferred) to use the same text editor you use for saving your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. You do not want characters like double hypen or quote symbols modified by a smart editor.</p>
 <h2 id="decide-which-modules-you-want-to-modify">Decide Which <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> You Want to Modify<a class="headerlink" href="#decide-which-modules-you-want-to-modify" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Decide which <a href="../../build/code_customization/">Code Customization</a> you want to make. Each customization lists a Module name. You will want a <abbr title="a copy of code in a github repository other than the original">fork</abbr> for each Module you wish to modify.</p>
+<p>Decide which <a href="../../build/code_customization/">LoopDocs: Code Customization</a> changes you want to make. Each customization lists a Module name. You will want a <abbr title="a copy of code in a github repository other than the original">fork</abbr> for each Module you wish to modify.</p>
 <ul>
 <li>DASH Pods: Use OmniBLE</li>
 <li>Eros Pods: Use OmniKit</li>
+<li>Other <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> are Loop and LoopKit<ul>
+<li>Do not get confused later: LoopKit is both a username and a Module name</li>
+<li>Refer to the <a href="#fork-table">Fork Table</a> when directed</li>
 </ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Pro Tip</p>
+<p>Open 4 browser tabs or windows so you can click to switch locations.</p>
+<ul>
+<li>This page</li>
+<li><a href="../../build/code_customization/">LoopDocs: Code Customization</a> </li>
+<li>Your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
+<li>A new one that you'll use to open Codespaces</li>
+</ul>
+</div>
+<h2 id="outline-of-what-happens-in-the-module">Outline of What Happens in the Module<a class="headerlink" href="#outline-of-what-happens-in-the-module" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Review Only</p>
+<p>Review this section so you know what to expect. The actual steps will come later, starting with <a href="#create-a-fork-for-selected-module">Create a Fork for Selected Module</a> or <a href="#open-module-in-codespaces">Open Module in Codespaces</a>.</p>
+</div>
+<p>In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. This section tries to explain what you will be doing once you start editing (using Codespaces) with a given Module.</p>
+<ol>
+<li>Prepare your Module so it is at the correct version</li>
+<li>Change the line(s) of code desired for your customization(s)</li>
+<li>Save (<abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>) the change(s) using descriptive <strong>comments</strong></li>
+<li>Repeat until done with this Module</li>
+</ol>
+<p>Once you are finished with the customizations for this Module, you will transfer the changes (commits) back from Codespace to the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> of <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> of this Module.</p>
+<p>Later, you will use information from your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to create your patches. (Suggestion - use same file as your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, or at least keep the patch file in the same folder). Details are found at the <a href="#prepare-the-patches">Prepare the Patches</a> section.</p>
+<h2 id="create-a-fork-for-selected-module">Create a Fork for Selected Module<a class="headerlink" href="#create-a-fork-for-selected-module" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Choose your link:</p>
+<ul>
+<li><a href="#new-fork">New Fork</a>: if you do not have a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of this Module</li>
+<li><a href="#code-updates">Code Updates</a>: if you are returning after a new release (or you are using a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li><a href="#existing-fork-for-module">Existing Fork for Module</a>: if you have a <abbr title="a copy of code in a github repository other than the original">fork</abbr> but need guidance on whether it is the right <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+</ul>
+<h3 id="code-updates">Code Updates<a class="headerlink" href="#code-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">New Release</p>
+<p>If you have previously used this process for a prior release, use the same <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you already forked.</p>
+<p>You can often reuse patches that you created earlier even with a new release. Attempt to use your existing patches before creating new ones.</p>
+<p>If those patches did not work, then</p>
+<ol>
+<li>Go to the <abbr title="version of code within a single repository or workspace repository">branch</abbr> for each Module (dev or main) that is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the <a href="#branch-table">Branch Table</a></li>
+<li>Sync that <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>For the Loop Module, you'll need the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> as well as the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
+<li>See <a href="../gh-update/#connect-fork-to-new-branch">Connect Fork to New Branch</a></li>
+</ul>
+</li>
+</ol>
+<p>Skip ahead to <a href="#open-module-in-codespaces">Open Module in Codespaces</a>.</p>
+</div>
+<h3 id="new-fork">New Fork<a class="headerlink" href="#new-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you want a modification that uses a particular Module, you must <abbr title="a copy of code in a github repository other than the original">fork</abbr> that module to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You will repeat the Fork and Modify steps for each module.</p>
+<ol>
+<li>Log into your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
+<li>Right click (or control click) on the <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the <a href="#fork-table">Fork Table</a></li>
+<li>This opens a new browser tab at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> you need to <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Tap on Fork, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> will show up in the tab</li>
+</ol>
+<h4 id="fork-table">Fork Table<a class="headerlink" href="#fork-table" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This table lists all the modules referred to on the Code Customization page linked above:</p>
 <table>
 <thead>
@@ -2719,76 +2786,12 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Pro Tip</p>
-<p>Open 4 browser tabs or windows so you can click to switch locations.</p>
-<ul>
-<li>This page</li>
-<li><a href="../../build/code_customization/">LoopDocs: Code Customization</a> </li>
-<li>Your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
-<li>A new one that you'll use to open Codespaces</li>
-</ul>
-</div>
-<h2 id="outline-of-what-happens-in-the-module">Outline of What Happens in the Module<a class="headerlink" href="#outline-of-what-happens-in-the-module" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Review Only</p>
-<p>Review this section so you know what to expect. The actual steps will come later.</p>
-</div>
-<p>In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. This section tries to explain what you will be doing once you start editing (using Codespaces) with a given Module.</p>
-<ol>
-<li>Prepare your Module so it is at the correct version</li>
-<li>Change the line(s) of code desired for your customization(s)</li>
-<li>Commit (save) the change(s) using descriptive <strong>comments</strong></li>
-<li>Repeat until done with this Module</li>
-</ol>
-<p>Once you are finished with the customizations for this Module, you will save lines that you will paste into the build_loop.yml file.</p>
-<p>You will be creating instructions to apply the "patches" in a text file (suggestion - use same file as <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>). For each customization:</p>
-<ul>
-<li>Insert a comment or description line (starts with a #)</li>
-<li>Insert the "patch" line (start with <code>curl</code>)</li>
-</ul>
-<div class="copy highlight"><span class="filename">Patch Template:</span><pre><span></span><code><span class="c1"># Module: File: code customization description</span>
-curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patch<span class="w"> </span><span class="p">|</span><span class="w"> </span>git<span class="w"> </span>apply<span class="w"> </span>-v<span class="w"> </span>--directory<span class="o">=</span>Module
-</code></pre></div>
-<p>where:</p>
-<ul>
-<li><code>curl</code> means copy from <abbr title="website address (Uniform Resource Locator)">URL</abbr></li>
-<li>username is your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</li>
-<li>Module is where you made the customization (notice it is in multiple places)</li>
-<li><abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is the full identifier for the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has the change; there is a copy button to make this easy</li>
-<li>the <code>.patch</code> after the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> magic that formats that code change into a patch</li>
-</ul>
-<p>To view the exact code change associated with that patch, open a browser at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of <code>https://github.com/username/Module/commit/SHA-1</code>.</p>
-<h2 id="create-a-fork-for-selected-module">Create a Fork for Selected Module<a class="headerlink" href="#create-a-fork-for-selected-module" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="code-updates">Code Updates<a class="headerlink" href="#code-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">New Release</p>
-<p>If you have previously used this process for a prior release, use the same <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you already forked.</p>
-<p>You can often reuse patches that you created earlier even with a new release. Attempt to use your existing patches before creating new ones.</p>
-<p>If those patches did not work, then</p>
-<ol>
-<li>Go to the <abbr title="version of code within a single repository or workspace repository">branch</abbr> for each Module (dev or main) that is the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the table above.</li>
-<li>Sync that <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>For the Loop Module, you'll need the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> as well as the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
-<li>See <a href="../gh-update/#connect-fork-to-new-branch">Connect Fork to New Branch</a></li>
-</ul>
-</li>
-</ol>
-<p>Skip ahead to <a href="#open-module-in-codespaces">Open Module in Codespaces</a>.</p>
-</div>
-<h3 id="new-fork">New Fork<a class="headerlink" href="#new-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you want a modification that uses a particular Module, you must <abbr title="a copy of code in a github repository other than the original">fork</abbr> that module to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You will repeat the Fork and Modify steps for each module.</p>
-<ol>
-<li>Log into your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
-<li>Right click (or control click) on the <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the table above</li>
-<li>This opens a new browser tab at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> you need to <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
-<li>Tap on Fork, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> will show up in the tab</li>
-</ol>
-<p>Remember - you can only have a single <abbr title="a copy of code in a github repository other than the original">fork</abbr> of a given <abbr title="contains project files and each file's revision history">repository</abbr>. If you already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr>, you don't need another one; but it must be a <abbr title="a copy of code in a github repository other than the original">fork</abbr> from the <abbr title="website address (Uniform Resource Locator)">URL</abbr> listed above.</p>
+<p>Remember - you can only have a single <abbr title="a copy of code in a github repository other than the original">fork</abbr> of a given <abbr title="contains project files and each file's revision history">repository</abbr>. If you already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr>, you don't need another one; but it must be a <abbr title="a copy of code in a github repository other than the original">fork</abbr> from the <abbr title="website address (Uniform Resource Locator)">URL</abbr> listed the <a href="#fork-table">Fork Table</a>.</p>
 <div class="admonition question">
 <p class="admonition-title">I already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr></p>
 <p>Go to <a href="#existing-fork-for-module">Existing Fork for Module</a> and follow the directions there.</p>
 </div>
+<h4 id="branch-table">Branch Table<a class="headerlink" href="#branch-table" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>When you <abbr title="a copy of code in a github repository other than the original">fork</abbr> a <abbr title="contains project files and each file's revision history">repository</abbr>, the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the one that is forked. That is ok. Only include that default <abbr title="version of code within a single repository or workspace repository">branch</abbr> when forking.</p>
 <table>
 <thead>
@@ -2821,8 +2824,8 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </tr>
 </tbody>
 </table>
+<p>WARNING - After a recent release</p>
 <ul>
-<li>WARNING - After a recent release<ul>
 <li>Your existing patches will probably still work<ul>
 <li>If they give an error when building, or if you want to add another customization, then . . .</li>
 </ul>
@@ -2830,39 +2833,39 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 <li>Wait for the release number to be updated on this page before using any of the copy/paste commands</li>
 <li>Check the top of this page for the release message</li>
 </ul>
-</li>
-</ul>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
 <p>If you know you want to change more than one Module, go on and prepare the forks for each <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you want to customize.</p>
 </div>
-<p>This page has instructions for applying customizations to released code, main <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. Don't worry that some of the other repositories have dev for the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. With the exception of the Loop module, everything you need to create your patches is included in the default branches of the lower level repositories (<abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr>). For Loop, you will also need a main <abbr title="version of code within a single repository or workspace repository">branch</abbr>. See <a href="../gh-update/#connect-fork-to-new-branch">Connect Fork to New Branch</a></p>
+<p>This page has instructions for applying customizations to released code, main <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. Don't worry that some of the other repositories have dev for the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. With the exception of the Loop module, everything you need to create your patches is included in the default branches of the lower level repositories (<abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Loop Module</p>
+<p>For the Loop Module, you will also need the main <abbr title="version of code within a single repository or workspace repository">branch</abbr>. It has commits that identify the version number that are not found in <em>dev</em>. After you <abbr title="a copy of code in a github repository other than the original">fork</abbr> the LoopKit/Loop <abbr title="contains project files and each file's revision history">repository</abbr>, follow the steps to get the <em>main</em> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as well as the default <em>dev</em> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. See <a href="../gh-update/#connect-fork-to-new-branch">Connect Fork to New Branch</a>.</p>
+<p>When preparing updates for the Loop module, be sure to update both branches (<em>main</em> and <em>dev</em>) when you do the sync command on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> in <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Loop with LnL Patches</p>
-<p>Some Loop users build with the loopnlearn version of LoopWorkspace using the <a href="https://www.loopandlearn.org/main-lnl-patches">main_lnl_patches</a> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Initially, this process involved making your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> from loopnlearn instead of LoopKit. You have the option of deleting that <abbr title="a copy of code in a github repository other than the original">fork</abbr> and starting over with LoopKit and apply those same patches in the build-loop.yml file of your new <abbr title="a copy of code in a github repository other than the original">fork</abbr>, see <a href="https://www.loopandlearn.org/custom-code/#lnl-patches">Loop and Learn: LnL Patches</a>.</p>
+<p>Some Loop users build with the loopnlearn version of LoopWorkspace using the <a href="https://www.loopandlearn.org/main-lnl-patches">main_lnl_patches</a> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Initially, this process involved making your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> from loopnlearn instead of LoopKit. You have the option of deleting that <abbr title="a copy of code in a github repository other than the original">fork</abbr> and starting over with LoopKit, adding your 6 <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> to your new <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace and apply those same patches in the build-loop.yml file of your new <abbr title="a copy of code in a github repository other than the original">fork</abbr>, see <a href="https://www.loopandlearn.org/custom-code/#lnl-patches">Loop and Learn: LnL Patches</a>.</p>
 <p>The process for creating your own customized patch is the same as those using the released code.</p>
 </div>
 <h2 id="open-module-in-codespaces">Open Module in Codespaces<a class="headerlink" href="#open-module-in-codespaces" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">New Release</p>
-<p>If you have previously used this process for a prior release, use the same <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> you already forked. Make sure you sync each Module to LoopKit.</p>
-<p>You can often reuse patches with a new release. Test first before bothering to create a new patch for a customization you have previously configured.</p>
-<p>You need to repeat this section to create the main_3.2.1 branches for each Module you want to customize.</p>
-</div>
-<p>Now that the selected module <abbr title="a copy of code in a github repository other than the original">fork</abbr> exists in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account, you will open it in Codespaces.</p>
+<p>Open your browser to your https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/username/Module <abbr title="a copy of code in a github repository other than the original">fork</abbr>. Be sure to sync <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> if it shows it is behind the LoopKit <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p>The next step is to use the Codespaces tool provided by <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to make the edits you want.</p>
 <ul>
-<li>If you are returning to change a customization you've already made to version 3.2.1, be sure to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> where you already made the previous customization; <a href="#update-customization">Update Customization</a></li>
-<li>If you are returning to add customization to an updated version of Loop, you must complete this section</li>
+<li>If you are returning to a Module where you've already configured for to version 3.2.1, skip ahead to <a href="#update-customization">Update Customization</a></li>
+<li>If your previous patch failed to apply after an update, you must complete this section</li>
+<li>If you have not done a customization for this module, you must complete this section</li>
 </ul>
 <p>For this portion of the process, work with a single Module until you are done with the customization for that module. Repeat this for all <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> and then move on to updating the build_loop.yml file in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> for LoopWorkspace.</p>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
 <p>The more modular you make your commits, the more likely that the patch will still work after updates.</p>
-<p>For example, make a change to modify <code>Future Carbs Time Interval</code> and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that change with that message. That single change is used to create a patch that you can label <code>change future carb limit to 4 hours</code> in both the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> message and your patch commands you save in your text file.</p>
+<p>For example, make a change to modify <code>Future Carbs Time Interval</code> and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that change with that message. Your patch can be created from that single <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
+<p>In fact, that exact modification is already a <a href="https://www.loopandlearn.org/custom-code/#future-carbs">Prepared Patch: Future Carbs</a> at the loop and learn site that you can just copy into your build_loop.yml in the <a href="#update-loopworkspace">Update LoopWorkspace</a> section.</p>
 <p>If you prefer, you can change all the files in one Module and make one big <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. You'll have fewer lines to add to build_loop.yml, but this patch is more likely to fail in future updates.</p>
 </div>
 <ol>
-<li>Right click (or control click) on <a href="https://github.com/codespaces">Codespaces</a><ul>
+<li>Right click (or control click) on this link: <a href="https://github.com/codespaces">Codespaces</a><ul>
 <li>This opens a new tab in your browser</li>
 <li>Click on the green button on the right that says <code>New Codespace</code></li>
 </ul>
@@ -2871,7 +2874,7 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 <li>Click on Select a <abbr title="contains project files and each file's revision history">repository</abbr> and choose your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username/moduleName for the module you want to modify (you can start typing your username if there are too many choices)</li>
 <li>You will see a message the <code>Codespace usage for this repository is paid for by username</code> - you get 60 free hours per month, so you can ignore this message<ul>
 <li>First time - <strong>main</strong> for Loop or OmniKit; <strong>dev</strong> for LoopKit or OmniBLE</li>
-<li>Subsequent times - select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.2.1_custom</li>
+<li>Subsequent times - select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., <em>main_3.2.1_custom</em></li>
 </ul>
 </li>
 <li>You do not need to modify the region or machine type</li>
@@ -2905,7 +2908,7 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 </li>
 </ol>
-<p>The commands you paste depend on whether this is the first time you've worked with the Module for release 3.2.1 or if you have already started customizing it and thus already have a main_3.2.1_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> created.</p>
+<p>The commands you paste depend on whether this is the first time you've worked with the Module for release 3.2.1 (keep going). If you have already started customizing it and thus already have a <em>main_3.2.1_custom</em> <abbr title="version of code within a single repository or workspace repository">branch</abbr> created, skip ahead to <a href="#update-customization">Update Customization</a>.</p>
 <h3 id="first-time-for-this-module">First Time for this Module<a class="headerlink" href="#first-time-for-this-module" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These commands are used ONLY for released version of Loop and only the first time you work with a given Module for release 3.2.1. This page is configured for released version 3.2.1.</p>
 <p>This process has two steps:</p>
@@ -2923,7 +2926,6 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 <p class="admonition-title">Alerts</p>
 <ul>
 <li>Skip ahead to <a href="#update-customization">Update Customization</a> if you have already made modifications</li>
-<li>Do not use if you built the LnL Patched Version of Loop</li>
 <li>After you paste the Prepare xxx Module command (below), STOP if you get an error</li>
 <li>If you do not get an error, continue to <a href="#create-new-branch">Create New Branch</a> which is the same for all modules.</li>
 </ul>
@@ -2965,18 +2967,18 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <p class="admonition-title">What did those steps accomplish?</p>
 <p>You now have 3 branches in your Codespace (local) and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (remote) versions of your <abbr title="contains project files and each file's revision history">repository</abbr> for this Module:</p>
 <ul>
-<li>dev or main (depending on Module)</li>
-<li>main_3.2.1</li>
-<li>main_3.2.1_custom</li>
+<li><em>dev</em> or <em>main</em> (depending on Module)</li>
+<li><em>main_3.2.1</em></li>
+<li><em>main_3.2.1_custom</em></li>
 </ul>
-<p>Right now main_3.2.1 and main_3.2.1_custom are identical and match the released copy for that Module.</p>
-<p>Next step, you will modify main_3.2.1_custom.</p>
+<p>Right now the branches <em>main_3.2.1</em> and <em>main_3.2.1_custom</em> are identical and match the released copy for that Module.</p>
+<p>Next step, you will modify <em>main_3.2.1_custom</em>.</p>
 </div>
 <p>Skip ahead to <a href="#customize-the-module">Customize the Module</a> and make the changes to this <abbr title="version of code within a single repository or workspace repository">branch</abbr> that you want for your Module.</p>
 <h2 id="update-customization">Update Customization<a class="headerlink" href="#update-customization" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you are returning to change a customization you've already made, follow these directions.</p>
+<p>If you are returning to change a customization you've already made, follow these directions to open Codespaces for your <em>main_3.2.1_custom</em> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, or skip ahead to <a href="#customize-the-module">Customize the Module</a> if you already opened the Codespaces tool.</p>
 <ol>
-<li>Right click (or control click) on <a href="https://github.com/codespaces">Codespaces</a><ul>
+<li>Right click (or control click) on the link: <a href="https://github.com/codespaces">Codespaces</a><ul>
 <li>This opens a new tab in your browser</li>
 </ul>
 </li>
@@ -2985,7 +2987,7 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 <li>If your Codespace for this Module does not exist:<ul>
 <li>Click on the green button on the right that says <code>New Codespace</code></li>
 <li>Click on Select a <abbr title="contains project files and each file's revision history">repository</abbr> and choose your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username/moduleName for the Module you want to modify</li>
-<li>Select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., main_3.2.1_custom</li>
+<li>Select your customized <abbr title="version of code within a single repository or workspace repository">branch</abbr>, e.g., <em>main_3.2.1_custom</em></li>
 <li>You do not need to modify the region or machine type</li>
 <li>Click on the green button at the bottom that says <code>Create codespace</code></li>
 </ul>
@@ -3030,13 +3032,17 @@ git<span class="w"> </span>push<span class="w"> </span>-q<span class="w"> </span
 Choose Stop Codespace from the menu. Don't worry about the changes won't be saved message - you just saved the changes with the sync command above.</p>
 <p>The screen will then show the Codespace is stopped message.</p>
 <p>Return to your github account and look at the <abbr title="contains project files and each file's revision history">repository</abbr> for the Module you just changed. It should be similar to the graphic below.</p>
+<h4 id="do-not-make-a-pull-request_1">Do Not Make a <abbr title="formal method to request changes to a repository">Pull Request</abbr><a class="headerlink" href="#do-not-make-a-pull-request_1" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition danger">
+<p class="admonition-title">Ignore <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="formal method to request changes to a repository">Pull Request</abbr> Prompts</p>
+<p>Please do not click on boxes that <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> might show you that ask if you want to <strong>Compare &amp; <abbr title="formal method to request changes to a repository">Pull Request</abbr>.</strong></p>
+<p>This would be an attempt to merge changes from your <abbr title="a copy of code in a github repository other than the original">fork</abbr> back to LoopKit. These changes are for <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> only. Ignore those prompts.</p>
+</div>
 <p align="center"><img alt="GitHub screen after modifying the custom branch" src="../img/github-custom-branch-loop.png" width="750" /></p>
 <h2 id="prepare-the-patches">Prepare the Patches<a class="headerlink" href="#prepare-the-patches" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You will prepare the patches looking at your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the Submodule <abbr title="contains project files and each file's revision history">repository</abbr> under <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Look at your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your <strong>main_3.2.1_custom</strong> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and click on the clock icon to the right to see the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history. Each <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> has a copy button you can use to copy the full <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>; and a link you can click to see the changes and comments for that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
-<p><strong>Please do not click on boxes that <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> might show you that ask if you want to merge changes from your <abbr title="a copy of code in a github repository other than the original">fork</abbr> back to LoopKit.</strong> These changes are for <strong>your <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong> only. Ignore those prompts.</p>
-<p>You will need the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> and the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> comment for each change you made in main_3.2.1_custom.</p>
-<p>Add graphic showing <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a github repository other than the original">fork</abbr> with several customizations with comments.</p>
-<p>Important: work from older (bottom) to newer (top) commits when creating the patches.</p>
+<p>You will prepare the patches looking at your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the Submodule <abbr title="contains project files and each file's revision history">repository</abbr> under <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Look at your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, your <em>main_3.2.1_custom</em> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and click on the clock icon to the right to see the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history. Each <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> has a copy button you can use to copy the full <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>; and a link you can click to see the changes and comments for that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
+<p>You will need the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> and the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> comment for each change you made in <em>main_3.2.1_custom</em>.</p>
+<p>Important: work from older (bottom) to newer (top) commits that you made to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> on this <abbr title="version of code within a single repository or workspace repository">branch</abbr> when creating the patches.</p>
 <ul>
 <li>If you grouped all changes to a given file into one <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, the order won't matter</li>
 <li>If you applied another change to the same file, the order is important, the older <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> should always come first in the list of patches</li>
@@ -3048,11 +3054,13 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </code></pre></div>
 <p>where:</p>
 <ul>
+<li><code>curl</code> means copy from <abbr title="website address (Uniform Resource Locator)">URL</abbr></li>
 <li>username is your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</li>
-<li>Module is where you made the customization (notice it is in multiple places)</li>
+<li>Module is where you made the customization (Module is in multiple places)</li>
 <li><abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is the full identifier for the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> that has the change; there is a copy button to make this easy</li>
-<li>the <code>.patch</code> after the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is github magic that formats that code change into a patch</li>
+<li>the <code>.patch</code> after the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> magic that formats that code change into a patch</li>
 </ul>
+<p>To view the exact code change associated with that patch, open a browser at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of <code>https://github.com/username/Module/commit/SHA-1</code>.</p>
 <p>Move on to the next module, repeating all these steps from <a href="#open-module-in-codespaces">Open Module in Codespaces</a> through prepare the patches.</p>
 <h2 id="update-loopworkspace">Update LoopWorkspace<a class="headerlink" href="#update-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The final step is to update your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> to apply these patches by adding those patch lines into the build_loop.yml file.</p>
@@ -3094,7 +3102,7 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 </li>
 </ul>
-<p>After waiting about 2 minutes, to make sure there is no error, return to <a href="https://github.com/codespaces">Codespaces</a>. Scroll to the bottom of the screen and delete any codespaces you created above. (Note codespaces must first be stopped and then deleted.)</p>
+<p>After waiting about 2 minutes, to make sure there is no error, return to <a href="https://github.com/codespaces">Codespaces</a>. Scroll to the bottom of the screen and delete any codespaces you created above. (Note codespaces must first be stopped and then deleted.) If you later decide to do more edits, it is quick and easy to open a new Codespace instance for your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. It is far better to delete it now.</p>
 <p>In about 1 hour, your customized Loop will be available for installation on your phone via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h2 id="special-cases">Special Cases<a class="headerlink" href="#special-cases" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="existing-fork-for-module">Existing Fork for Module<a class="headerlink" href="#existing-fork-for-module" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3108,15 +3116,15 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </li>
 <li>Option B: You want to throw away your existing main_#.#_custom <abbr title="version of code within a single repository or workspace repository">branch</abbr> and start over<ul>
 <li>Follow the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Instructions to delete a <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></li>
-<li>Click on Code, make sure you are at the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr> and sync the <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>In <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, at your <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on Code, make sure you are at the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>, and then sync the <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
 <li>Go to <a href="#open-module-in-codespaces">Open Module in Codespaces</a></li>
 </ul>
 </li>
 </ul>
 <h4 id="situation-2">Situation 2<a class="headerlink" href="#situation-2" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p><strong>Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> is from the correct location (LoopKit)</strong></p>
+<p><strong>Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> is from the correct location (username LoopKit)</strong></p>
 <ul>
-<li>Option A: Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
+<li>Option A: Your existing <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows the <em>dev</em> (or <em>main</em>) <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
 <li>Tap on sync <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
 <li>Go to <a href="#open-module-in-codespaces">Open Module in Codespaces</a></li>
 </ul>
@@ -3133,25 +3141,17 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 <p>Once deleted, go to <a href="#create-a-fork-for-selected-module">Create a Fork for Selected Module</a>.</p>
 <h2 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loopworkspace">LoopWorkspace<a class="headerlink" href="#loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> is the umbrella organization holding all the pieces needed to build the Loop app. Part of what LoopWorkspace provides is a list of pointers to a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for each module used in the workspace.</p>
+<p>The LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> is the umbrella organization holding all the pieces needed to build the Loop app. Part of what LoopWorkspace provides is a list of pointers to a specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for each of the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> used in the workspace.</p>
 <ul>
 <li>A <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is a specific version of code in a <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>A workspace is a grouping of several repositories (modules) into a complete package</li>
-<li>The workspace includes a list of the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr> (module)</li>
+<li>A workspace is a grouping of several repositories (<abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr>) into a complete package</li>
+<li>The workspace includes a list of the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
-<p>The steps given earlier on this page modifies the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for the module that you change used by LoopWorkspace when it builds.</p>
-<ul>
-<li>A <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to a module can be made without affecting the workspace</li>
-<li>To update the workspace to use the new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for a module, the list containing the specific <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for that <abbr title="contains project files and each file's revision history">repository</abbr> (module) must also be updated<ul>
-<li>This update is itself a <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to the workspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
-</ul>
-</li>
-</ul>
-<p>This allows a given module, say Loop, to be updated with a new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>; but that <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> doesn't affect the Loop app that you build using LoopWorkspace. Once you change the LoopWorkspace to point to the new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> in Loop, then the Loop app you build </p>
+<p>You will be adding one or more code changes to the released (or dev) <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace using patch commands in the build_loop.yml file. Each patch repeats the small code change associated with each <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> your make to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of a given Module.</p>
 <h3 id="what-are-branches-again">What are branches again?<a class="headerlink" href="#what-are-branches-again" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Branches indicate different version of code - this tutorial is pretty nice.</p>
+<p>Branches indicate different versions of the code.</p>
 <ul>
-<li>The history required for the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> (released code) is also present in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr></li>
+<li>The history required for the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> (released code) is also present in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> for most of the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, with the possible exception of Loop which may have the release version tagged there, and not found in dev.</li>
 <li>The commands listed earlier on this page are to assist you in creating your own <abbr title="version of code within a single repository or workspace repository">branch</abbr> and you will customize that <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li>If you later want to modify your customization, start with the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you already created and edit it</li>
 </ul>
