@@ -150,7 +150,7 @@ Remember - you can only have a single fork of a given repository. If you already
 !!! question "I already have a fork"
     Go to [Existing Fork for Module](#existing-fork-for-module) and follow the directions there.
 
-### Branch Table
+#### Branch Table
 
 When you fork a repository, the default branch is the one that is forked. That is ok. Only include that default branch when forking.
 
@@ -502,9 +502,9 @@ What if you already have a fork of one of the modules?
 
 #### Situation 2
 
-**Your existing fork is from the correct location (LoopKit)**
+**Your existing fork is from the correct location (username LoopKit)**
 
-* Option A: Your existing fork shows the dev (or main) branch as the default branch
+* Option A: Your existing fork shows the _dev_ (or _main_) branch as the default branch
     * Tap on sync fork
     * Go to [Open Module in Codespaces](#open-module-in-codespaces)
 * Option B: You probably know what to do or this would not be your situation - ask for help if you are confused
