@@ -147,4 +147,28 @@ The markdown syntax used by loopdocs is:
 
 ## Copy Button
 
-The copy button is built into the Material theme for every code block.
+The copy-to-clipboard button is built into the Material theme for every code block and displayed on the right side.  
+When clicked it copies the content of the block into the clipboard.  
+However we chose to disable it by default for all code blocks and enable it on a case by case basis.  
+Here is how to enable the copy-to-clipboard button for a "code" block containing regular text.
+
+````
+``` { .txt .copy "title of this code block" }
+Content of the code block here
+```
+````
+
+where:
+- `.txt` denotes the language used in the content of the code block.  
+  For instance  use `.txt` for regular text, `.sh` for a shell script, `.bash` for a Bash script`.  
+  This is a required parameter.  
+  Here is the list of [supported languages](https://pygments.org/languages/) (use one of the `Short Name`s).
+- `.copy` shows the copy-to-clipboard button when present (hidden otherwise)
+- `title=“title of this code block”` adds a title to the code (none by when absent)
+
+Do note that:
+- There is a **space**  **before and  after** the opening curly brace ` { `.
+- There is space before the closing curly brace `}`.
+
+
+[Source](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=copy+clipboard#code-copy-button)
