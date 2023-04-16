@@ -5,16 +5,23 @@
 
     * If you are building with Mac-Xcode method, you will use the same lines found in the [Prepare the Patches](#prepare-the-patches) section, but will paste them in your terminal to customize your code
 
-!!! warning "Submodule Instructions"
-    This page has instructions to prepare branches for the Modules associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (commit) the change to **your fork** to prepare your personal patch. 
-    
-    **Please do not click on boxes that GitHub might show you that ask if you want to merge changes from your fork back to LoopKit.** These changes are for **your fork** only. Ignore those prompts.
+!!! warning "Modules vs Submodule"
+    This page has instructions to prepare branches for the Modules associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (commit) the change to **your fork** to prepare your personal patch.
+
+    The technical term for the Modules is submodule when you are using git commands. Each Module has its own repository and you will be working with **your fork** of that repository at https://github.com/username/Module.
     
     * You can often use the same patch for several releases
     * If a patch that you prepared for an older release says "patch does not apply" when you use it, you'll need to prepare a new one
-    * Please wait for this page to be updated to the current release before generating an updated patch
+    * Please wait for this page to be updated to the current release before generating a new patch
 
     This page is valid for Loop 3.2.1.
+
+#### Do Not Make a Pull Request
+
+!!! danger "Ignore GitHub Pull Request Prompts"
+    Please do not click on boxes that GitHub might show you that ask if you want to **Compare & Pull Request.**
+    
+    This would be an attempt to merge changes from your fork back to LoopKit. These changes are for **your fork** only. Ignore those prompts.
 
 ## Overview
 
@@ -31,11 +38,11 @@
         * If there is an update (new release) and the patches "no longer apply" - you will get a clear error message
             * Just follow the steps on this page again to replace the patch that did not work
         * If there is an update (new release) and the patches apply with no errors, then you do NOT need to create new patches
-    * LoopDocs: Decide on Modules to modify [Code Customization](../build/code_customization.md)
+    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code_customization.md) page
     * GitHub (each Module):
         1. Fork Module (GitHub)
         1. Modify Module (GitHub to Codespaces)
-        1. Finish your customizations (Codespaces to GitHub)
+        1. Save (commit) your customizations (Codespaces to GitHub)
         1. Prepare lines needed for each patch and save
     * GitHub (LoopWorkspace)
         1. You will use the GitHub pencil tool to edit build_loop.yml in your fork
@@ -58,24 +65,17 @@ There is some background information at the bottom of this page starting at [Loo
 
 You will be using the online tool associated with GitHub called Codespaces. Any repository in your GitHub account can be opened with Codespaces.
 
-You will need a text editor to format a "patch" line for each module you change. Use the same text editor you use for saving your Secrets. You do not want characters like double hypen or quote symbols modified by a smart editor.
+You will need a text editor to format a "patch" line for each module you change. It is fine (perhaps preferred) to use the same text editor you use for saving your Secrets. You do not want characters like double hypen or quote symbols modified by a smart editor.
 
 ## Decide Which Modules You Want to Modify
 
-Decide which [Code Customization](../build/code_customization.md) you want to make. Each customization lists a Module name. You will want a fork for each Module you wish to modify.
+Decide which [LoopDocs: Code Customization](../build/code_customization.md) changes you want to make. Each customization lists a Module name. You will want a fork for each Module you wish to modify.
 
 * DASH Pods: Use OmniBLE
 * Eros Pods: Use OmniKit
-
-This table lists all the modules referred to on the Code Customization page linked above:
-
-| Module | Fork From |
-| --- | --- |
-| Loop | [https://github.com/LoopKit/Loop](https://github.com/LoopKit/Loop) |
-| LoopKit | [https://github.com/LoopKit/LoopKit](https://github.com/LoopKit/LoopKit) |
-| OmniBLE | [https://github.com/LoopKit/OmniBLE](https://github.com/LoopKit/OmniBLE) |
-| OmniKit | [https://github.com/LoopKit/OmniKit](https://github.com/LoopKit/OmniKit) |
-
+* Other Modules are Loop and LoopKit
+    * Do not get confused later: LoopKit is both a username and a Module name
+    * Refer to the [Fork Table](#fork-table) when directed
 
 !!! tip "Pro Tip"
     Open 4 browser tabs or windows so you can click to switch locations.
@@ -88,38 +88,26 @@ This table lists all the modules referred to on the Code Customization page link
 ## Outline of What Happens in the Module
 
 !!! warning "Review Only"
-    Review this section so you know what to expect. The actual steps will come later.
+    Review this section so you know what to expect. The actual steps will come later, starting with [Create a Fork for Selected Module](#create-a-fork-for-selected-module) or [Open Module in Codespaces](#open-module-in-codespaces).
 
 In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. This section tries to explain what you will be doing once you start editing (using Codespaces) with a given Module.
 
 1. Prepare your Module so it is at the correct version
 1. Change the line(s) of code desired for your customization(s)
-1. Commit (save) the change(s) using descriptive **comments**
+1. Save (commit) the change(s) using descriptive **comments**
 1. Repeat until done with this Module
 
-Once you are finished with the customizations for this Module, you will save lines that you will paste into the build_loop.yml file.
+Once you are finished with the customizations for this Module, you will transfer the changes (commits) back from Codespace to the GitHub repository of **your fork** of this Module.
 
-You will be creating instructions to apply the "patches" in a text file (suggestion - use same file as Secrets). For each customization:
-
-* Insert a comment or description line (starts with a #)
-* Insert the "patch" line (start with `curl`)
-
-```  { .sh .copy title="Patch Template:" }
-# Module: File: code customization description
-curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --directory=Module
-```
-
-where:
-
-* `curl` means copy from URL
-* username is your GitHub username
-* Module is where you made the customization (notice it is in multiple places)
-* SHA-1 is the full identifier for the commit that has the change; there is a copy button to make this easy
-* the `.patch` after the SHA-1 is GitHub magic that formats that code change into a patch
-
-To view the exact code change associated with that patch, open a browser at the URL of `https://github.com/username/Module/commit/SHA-1`.
+Later, you will use information from your fork to create your patches. (Suggestion - use same file as your Secrets, or at least keep the patch file in the same folder). Details are found at the [Prepare the Patches](#prepare-the-patches) section.
 
 ## Create a Fork for Selected Module
+
+Choose your link:
+
+* [New Fork](#new-fork): if you do not have a fork of this Module
+* [Code Updates](#code-updates): if you are returning after a new release (or you are using a dev branch)
+* [Existing Fork for Module](#existing-fork-for-module): if you have a fork but need guidance on whether it is the right fork
 
 ### Code Updates
 
@@ -130,7 +118,7 @@ To view the exact code change associated with that patch, open a browser at the 
 
     If those patches did not work, then
 
-    1. Go to the branch for each Module (dev or main) that is the default branch in the table above.
+    1. Go to the branch for each Module (dev or main) that is the default branch in the [Branch Table](#branch-table)
     2. Sync that branch
     3. For the Loop Module, you'll need the main branch as well as the dev branch
         * See [Connect Fork to New Branch](gh-update.md#connect-fork-to-new-branch)
@@ -142,14 +130,27 @@ To view the exact code change associated with that patch, open a browser at the 
 If you want a modification that uses a particular Module, you must fork that module to your GitHub account. You will repeat the Fork and Modify steps for each module.
 
 1. Log into your GitHub account
-1. Right click (or control click) on the URL in the table above
+1. Right click (or control click) on the URL in the [Fork Table](#fork-table)
 1. This opens a new browser tab at the URL of the repository you need to fork
 1. Tap on Fork, your fork will show up in the tab
 
-Remember - you can only have a single fork of a given repository. If you already have a fork, you don't need another one; but it must be a fork from the URL listed above.
+#### Fork Table
+
+This table lists all the modules referred to on the Code Customization page linked above:
+
+| Module | Fork From |
+| --- | --- |
+| Loop | [https://github.com/LoopKit/Loop](https://github.com/LoopKit/Loop) |
+| LoopKit | [https://github.com/LoopKit/LoopKit](https://github.com/LoopKit/LoopKit) |
+| OmniBLE | [https://github.com/LoopKit/OmniBLE](https://github.com/LoopKit/OmniBLE) |
+| OmniKit | [https://github.com/LoopKit/OmniKit](https://github.com/LoopKit/OmniKit) |
+
+Remember - you can only have a single fork of a given repository. If you already have a fork, you don't need another one; but it must be a fork from the URL listed the [Fork Table](#fork-table).
 
 !!! question "I already have a fork"
     Go to [Existing Fork for Module](#existing-fork-for-module) and follow the directions there.
+
+### Branch Table
 
 When you fork a repository, the default branch is the one that is forked. That is ok. Only include that default branch when forking.
 
@@ -160,53 +161,57 @@ When you fork a repository, the default branch is the one that is forked. That i
 | LoopKit/OmniBLE | dev | dev |
 | LoopKit/OmniKit | main | main |
 
-* WARNING - After a recent release
-    * Your existing patches will probably still work
-        * If they give an error when building, or if you want to add another customization, then . . .
-    * Wait for the release number to be updated on this page before using any of the copy/paste commands
-    * Check the top of this page for the release message
+WARNING - After a recent release
+
+* Your existing patches will probably still work
+    * If they give an error when building, or if you want to add another customization, then . . .
+* Wait for the release number to be updated on this page before using any of the copy/paste commands
+* Check the top of this page for the release message
 
 !!! tip "Pro Tip"
     If you know you want to change more than one Module, go on and prepare the forks for each Modules you want to customize.
 
-This page has instructions for applying customizations to released code, main branch of LoopWorkspace. Don't worry that some of the other repositories have dev for the default branch. With the exception of the Loop module, everything you need to create your patches is included in the default branches of the lower level repositories (Modules). For Loop, you will also need a main branch. See [Connect Fork to New Branch](gh-update.md#connect-fork-to-new-branch)
+This page has instructions for applying customizations to released code, main branch of LoopWorkspace. Don't worry that some of the other repositories have dev for the default branch. With the exception of the Loop module, everything you need to create your patches is included in the default branches of the lower level repositories (Modules).
+
+!!! warning "Loop Module"
+    For the Loop Module, you will also need the main branch. It has commits that identify the version number that are not found in _dev_. After you fork the LoopKit/Loop repository, follow the steps to get the _main_ branch as well as the default _dev_ branch. See [Connect Fork to New Branch](gh-update.md#connect-fork-to-new-branch).
+
+    When preparing updates for the Loop module, be sure to update both branches (_main_ and _dev_) when you do the sync command on your fork in GitHub.
 
 !!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches).
+    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches).
 
     The process for creating your own customized patch is the same as those using the released code.
 
 ## Open Module in Codespaces
 
-!!! warning "New Release"
-    If you have previously used this process for a prior release, use the same Modules you already forked. Make sure you sync each Module to LoopKit.
+Open your browser to your https://github.com/username/Module fork. Be sure to sync **your fork** if it shows it is behind the LoopKit repository.
 
-    You can often reuse patches with a new release. Test first before bothering to create a new patch for a customization you have previously configured.
+The next step is to use the Codespaces tool provided by GitHub to make the edits you want.
 
-    You need to repeat this section to create the main_3.2.1 branches for each Module you want to customize.
-
-Now that the selected module fork exists in your GitHub account, you will open it in Codespaces.
-
-* If you are returning to change a customization you've already made to version 3.2.1, be sure to select the branch where you already made the previous customization; [Update Customization](#update-customization)
-* If you are returning to add customization to an updated version of Loop, you must complete this section
+* If you are returning to a Module where you've already configured for to version 3.2.1, skip ahead to [Update Customization](#update-customization)
+* If your previous patch failed to apply after an update, you must complete this section
+* If you have not done a customization for this module, you must complete this section
 
 For this portion of the process, work with a single Module until you are done with the customization for that module. Repeat this for all Modules and then move on to updating the build_loop.yml file in your fork for LoopWorkspace.
 
 !!! tip "Pro Tip"
     The more modular you make your commits, the more likely that the patch will still work after updates.
 
-    For example, make a change to modify `Future Carbs Time Interval` and commit that change with that message. That single change is used to create a patch that you can label `change future carb limit to 4 hours` in both the commit message and your patch commands you save in your text file.
+    For example, make a change to modify `Future Carbs Time Interval` and commit that change with that message. Your patch can be created from that single commit.
+
+    In fact, that exact modification is already a [Prepared Patch: Future Carbs](https://www.loopandlearn.org/custom-code/#future-carbs) at the loop and learn site that you can just copy into your build_loop.yml in the [Update LoopWorkspace](#update-loopworkspace) section.
 
     If you prefer, you can change all the files in one Module and make one big commit. You'll have fewer lines to add to build_loop.yml, but this patch is more likely to fail in future updates.
 
-1. Right click (or control click) on [Codespaces](https://github.com/codespaces)
+1. Right click (or control click) on this link: [Codespaces](https://github.com/codespaces)
     * This opens a new tab in your browser
     * Click on the green button on the right that says `New Codespace`
 1. On new screen
     * Click on Select a repository and choose your GitHub username/moduleName for the module you want to modify (you can start typing your username if there are too many choices)
     * You will see a message the `Codespace usage for this repository is paid for by username` - you get 60 free hours per month, so you can ignore this message
         * First time - **main** for Loop or OmniKit; **dev** for LoopKit or OmniBLE
-        * Subsequent times - select your customized branch, e.g., main_3.2.1_custom
+        * Subsequent times - select your customized branch, e.g., _main_3.2.1_custom_
     * You do not need to modify the region or machine type
     * Click on the green button at the bottom that says `Create codespace`
 1. A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that repository
@@ -232,7 +237,7 @@ If you have already made a customization in this module and you are returning fo
     * the branch is the default branch for this Module (dev or main)
     * this is where you will paste the command you're about to copy
 
-The commands you paste depend on whether this is the first time you've worked with the Module for release 3.2.1 or if you have already started customizing it and thus already have a main_3.2.1_custom branch created.
+The commands you paste depend on whether this is the first time you've worked with the Module for release 3.2.1 (keep going). If you have already started customizing it and thus already have a _main_3.2.1_custom_ branch created, skip ahead to [Update Customization](#update-customization).
 
 ### First Time for this Module
 
@@ -250,7 +255,6 @@ After these two steps are completed, then you will continue to [Customize the Mo
 
 !!! danger "Alerts"
     * Skip ahead to [Update Customization](#update-customization) if you have already made modifications
-    * Do not use if you built the LnL Patched Version of Loop
     * After you paste the Prepare xxx Module command (below), STOP if you get an error
     * If you do not get an error, continue to [Create New Branch](#create-new-branch) which is the same for all modules.
 
@@ -315,28 +319,28 @@ You should see the items you pasted in the terminal followed by responses talkin
 !!! success "What did those steps accomplish?"
     You now have 3 branches in your Codespace (local) and your GitHub (remote) versions of your repository for this Module:
 
-    * dev or main (depending on Module)
-    * main_3.2.1
-    * main_3.2.1_custom
+    * _dev_ or _main_ (depending on Module)
+    * _main_3.2.1_
+    * _main_3.2.1_custom_
 
-    Right now main_3.2.1 and main_3.2.1_custom are identical and match the released copy for that Module.
+    Right now the branches _main_3.2.1_ and _main_3.2.1_custom_ are identical and match the released copy for that Module.
     
-    Next step, you will modify main_3.2.1_custom.
+    Next step, you will modify _main_3.2.1_custom_.
 
 Skip ahead to [Customize the Module](#customize-the-module) and make the changes to this branch that you want for your Module.
 
 ## Update Customization
 
-If you are returning to change a customization you've already made, follow these directions.
+If you are returning to change a customization you've already made, follow these directions to open Codespaces for your _main_3.2.1_custom_ branch, or skip ahead to [Customize the Module](#customize-the-module) if you already opened the Codespaces tool.
 
-1. Right click (or control click) on [Codespaces](https://github.com/codespaces)
+1. Right click (or control click) on the link: [Codespaces](https://github.com/codespaces)
     * This opens a new tab in your browser
 1. Click on the Codespace tab at the top center
     1. If your Codespace for this Module already exists (list at bottom of browser window), you just need to open it (click on 3 dots and choose open in browser)
     1. If your Codespace for this Module does not exist:
         * Click on the green button on the right that says `New Codespace`
         * Click on Select a repository and choose your GitHub username/moduleName for the Module you want to modify
-        * Select your customized branch, e.g., main_3.2.1_custom
+        * Select your customized branch, e.g., _main_3.2.1_custom_
         * You do not need to modify the region or machine type
         * Click on the green button at the bottom that says `Create codespace`
 1. A message appears saying setting up your codespace; and then the Codespaces screen appears showing the README.md file (by default) for that repository
@@ -387,20 +391,23 @@ The screen will then show the Codespace is stopped message.
 
 Return to your github account and look at the repository for the Module you just changed. It should be similar to the graphic below.
 
+#### Do Not Make a Pull Request
+
+!!! danger "Ignore GitHub Pull Request Prompts"
+    Please do not click on boxes that GitHub might show you that ask if you want to **Compare & Pull Request.**
+    
+    This would be an attempt to merge changes from your fork back to LoopKit. These changes are for **your fork** only. Ignore those prompts.
+
 ![GitHub screen after modifying the custom branch](img/github-custom-branch-loop.png){width="750"}
 {align="center"}
 
 ## Prepare the Patches
 
-You will prepare the patches looking at your fork of the Submodule repository under GitHub. Look at your fork, your __main_3.2.1_custom__ branch and click on the clock icon to the right to see the commit history. Each commit has a copy button you can use to copy the full SHA-1 for that commit; and a link you can click to see the changes and comments for that commit.
+You will prepare the patches looking at your fork of the Submodule repository under GitHub. Look at your fork, your _main_3.2.1_custom_ branch and click on the clock icon to the right to see the commit history. Each commit has a copy button you can use to copy the full SHA-1 for that commit; and a link you can click to see the changes and comments for that commit.
 
-**Please do not click on boxes that GitHub might show you that ask if you want to merge changes from your fork back to LoopKit.** These changes are for **your fork** only. Ignore those prompts.
+You will need the SHA-1 and the commit comment for each change you made in _main_3.2.1_custom_.
 
-You will need the SHA-1 and the commit comment for each change you made in main_3.2.1_custom.
-
-Add graphic showing GitHub fork with several customizations with comments.
-
-Important: work from older (bottom) to newer (top) commits when creating the patches.
+Important: work from older (bottom) to newer (top) commits that you made to your fork on this branch when creating the patches.
 
 * If you grouped all changes to a given file into one commit, the order won't matter
 * If you applied another change to the same file, the order is important, the older commit should always come first in the list of patches
@@ -416,10 +423,13 @@ curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --dire
 
 where:
 
+* `curl` means copy from URL
 * username is your GitHub username
-* Module is where you made the customization (notice it is in multiple places)
+* Module is where you made the customization (Module is in multiple places)
 * SHA-1 is the full identifier for the commit that has the change; there is a copy button to make this easy
-* the `.patch` after the SHA-1 is github magic that formats that code change into a patch
+* the `.patch` after the SHA-1 is GitHub magic that formats that code change into a patch
+
+To view the exact code change associated with that patch, open a browser at the URL of `https://github.com/username/Module/commit/SHA-1`.
 
 Move on to the next module, repeating all these steps from [Open Module in Codespaces](#open-module-in-codespaces) through prepare the patches.
 
@@ -469,7 +479,7 @@ The indenting needs to match, so tab or (shift-tab) to line up the patches.
     * Click on Run workflow on the right side
     * Then click on the green Run Workflow button
 
-After waiting about 2 minutes, to make sure there is no error, return to [Codespaces](https://github.com/codespaces). Scroll to the bottom of the screen and delete any codespaces you created above. (Note codespaces must first be stopped and then deleted.)
+After waiting about 2 minutes, to make sure there is no error, return to [Codespaces](https://github.com/codespaces). Scroll to the bottom of the screen and delete any codespaces you created above. (Note codespaces must first be stopped and then deleted.) If you later decide to do more edits, it is quick and easy to open a new Codespace instance for your fork. It is far better to delete it now.
 
 In about 1 hour, your customized Loop will be available for installation on your phone via TestFlight.
 
@@ -487,14 +497,14 @@ What if you already have a fork of one of the modules?
     * Go to [Update Customization](#update-customization)
 * Option B: You want to throw away your existing main_#.#_custom branch and start over
     * Follow the [GitHub Instructions to delete a branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
-    * Click on Code, make sure you are at the correct branch and sync the fork
+    * In GitHub, at your fork, click on Code, make sure you are at the correct branch, and then sync the fork
     * Go to [Open Module in Codespaces](#open-module-in-codespaces)
 
 #### Situation 2
 
 **Your existing fork is from the correct location (LoopKit)**
 
-* Option A: Your existing fork shows the dev branch as the default branch
+* Option A: Your existing fork shows the dev (or main) branch as the default branch
     * Tap on sync fork
     * Go to [Open Module in Codespaces](#open-module-in-codespaces)
 * Option B: You probably know what to do or this would not be your situation - ask for help if you are confused
@@ -503,9 +513,7 @@ What if you already have a fork of one of the modules?
 
 **Your existing fork is from a username other than LoopKit**
 
-If your fork is from loopnlearn and you want additional customizations, it is easist to delete that fork, make a new one from LoopKit, add the 6 Secrets to the new fork and as part of the changes to build_loop.yml, add the [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches) and you additional customizations.
-
-If you know this is a fork you do not care about, you can delete the repository.
+If you know this is a fork you do not care about, you can delete the repository. If you need to keep this fork, for some reason, there is a workaround but it won't be published on this page.
 
 * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 
@@ -515,25 +523,19 @@ Once deleted, go to [Create a Fork for Selected Module](#create-a-fork-for-selec
 
 ### LoopWorkspace
 
-The LoopWorkspace repository is the umbrella organization holding all the pieces needed to build the Loop app. Part of what LoopWorkspace provides is a list of pointers to a specific commit for each module used in the workspace.
+The LoopWorkspace repository is the umbrella organization holding all the pieces needed to build the Loop app. Part of what LoopWorkspace provides is a list of pointers to a specific commit for each of the Modules used in the workspace.
 
 * A commit is a specific version of code in a repository
-* A workspace is a grouping of several repositories (modules) into a complete package
-* The workspace includes a list of the specific commit for each repository (module)
+* A workspace is a grouping of several repositories (Modules) into a complete package
+* The workspace includes a list of the specific commit for each repository
 
-The steps given earlier on this page modifies the commit for the module that you change used by LoopWorkspace when it builds.
-
-* A commit to a module can be made without affecting the workspace
-* To update the workspace to use the new commit for a module, the list containing the specific commit for that repository (module) must also be updated
-    * This update is itself a commit to the workspace repository
-
-This allows a given module, say Loop, to be updated with a new commit; but that commit doesn't affect the Loop app that you build using LoopWorkspace. Once you change the LoopWorkspace to point to the new commit in Loop, then the Loop app you build 
+You will be adding one or more code changes to the released (or dev) branch of LoopWorkspace using patch commands in the build_loop.yml file. Each patch repeats the small code change associated with each commit your make to your fork of a given Module.
 
 ### What are branches again?
 
-Branches indicate different version of code - this tutorial is pretty nice.
+Branches indicate different versions of the code.
 
-* The history required for the main branch (released code) is also present in the dev branch for the submodules
+* The history required for the main branch (released code) is also present in the dev branch for most of the submodules, with the possible exception of Loop which may have the release version tagged there, and not found in dev.
 * The commands listed earlier on this page are to assist you in creating your own branch and you will customize that branch
 * If you later want to modify your customization, start with the branch you already created and edit it
 
