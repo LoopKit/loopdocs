@@ -6,7 +6,9 @@
     * If you are building with Mac-Xcode method, you will use the same lines found in the [Prepare the Patches](#prepare-the-patches) section, but will paste them in your terminal to customize your code
 
 !!! warning "Submodule Instructions"
-    This page has instructions to prepare branches for the Modules associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (commit) the change to prepare your personal patch.
+    This page has instructions to prepare branches for the Modules associated with LoopWorkspace that exactly match the current release. You can then edit that code and save (commit) the change to **your fork** to prepare your personal patch. 
+    
+    **Please do not click on boxes that GitHub might show you that ask if you want to merge changes from your fork back to LoopKit.** These changes are for **your fork** only. Ignore those prompts.
     
     * You can often use the same patch for several releases
     * If a patch that you prepared for an older release says "patch does not apply" when you use it, you'll need to prepare a new one
@@ -390,7 +392,9 @@ Return to your github account and look at the repository for the Module you just
 
 ## Prepare the Patches
 
-You will prepare the patches looking at the repository under GitHub.
+You will prepare the patches looking at your fork of the Submodule repository under GitHub. Look at your fork, your __main_3.2.1_custom__ branch and click on the clock icon to the right to see the commit history. Each commit has a copy button you can use to copy the full SHA-1 for that commit; and a link you can click to see the changes and comments for that commit.
+
+**Please do not click on boxes that GitHub might show you that ask if you want to merge changes from your fork back to LoopKit.** These changes are for **your fork** only. Ignore those prompts.
 
 You will need the SHA-1 and the commit comment for each change you made in main_3.2.1_custom.
 
