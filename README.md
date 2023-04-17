@@ -5,9 +5,10 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 ## Contributing
 
 The easy way:
-* To suggest changes, please review Issues.  Add your comment if an Issue is already open, otherwise, add a new Issue.
+
+* To suggest changes, please review [Issues](../../issues).  Add your comment if an Issue is already open, otherwise, add a new Issue.
 * If it is a simple typo or wording change, follow the instructions in this video to submit a pull request the easy way.
-  * [LoopDocs Pull Requests](https://youtu.be/6qSppvgGxpg)
+  * [How to submit a LoopDocs Pull Request?](https://youtu.be/6qSppvgGxpg)
 
 If it is a more substantive change and you want to make a fork and provide pull requests, please keep reading.
 
@@ -17,28 +18,25 @@ To preview your work as you edit you must set up two python packages that are us
 
 Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. MkDocs works with Python 2.7, 3.3-3.6, and pypy.
 
-* Install python modules
-
-```bash
-$ cd <loopdocs project location>
-$ pip install -r requirements.txt
-```
+* Install python modules  
+  ```bash
+  cd <loopdocs project location>
+  pip install -r requirements.txt
+  ```
 
 * Run mkdocs server locally
-
-```bash
-$ cd <loopdocs project location>
-$ mkdocs serve
-```
+  ```bash
+  cd <loopdocs project location>
+  mkdocs serve
+  ```
 
 * Preview docs in browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the mkdocs server.
 * Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
+  ```bash
+  mkdocs gh-deploy
+  ```
 
-```bash
-$ mkdocs gh-deploy
-```
-
-Note that these two branch names: `working-docs` and `master` will automatically be published to your personal repository `gh-pages` by github actions when they are pushed to the github server.
+Note that these two branch names: `working-docs` and `master` will automatically be published to your personal repository `gh-pages` by Github actions when they are pushed to the github server.
 
 ## Conventions
 
@@ -59,57 +57,78 @@ Click here for [When Should You Update?](../faqs/update-faqs.md#when-should-you-
 
 ```
 
-Notice about mkdocs: "Using absolute paths with links is not officially supported. Relative paths are adjusted by MkDocs to ensure they are always relative to the page. Absolute paths are not modified at all. This means that your links using absolute paths might work fine in your local environment but they might break once you deploy them to your production server."
+ℹ️ **Notice about mkdocs**
+
+> Using absolute paths with links is not officially supported.
+> Relative paths are adjusted by MkDocs to ensure they are always relative to the page.
+> Absolute paths are not modified at all.
+> This means that your links using absolute paths might work fine in your local environment but they might break once you deploy them to your production server.
+
 
 ```markdown
-Do NOT use a link starts that with a '/': Click here for [Update FAQs](/faqs/update-faqs.md)
+⛔️ Do NOT use a link that starts with a '/': Click here for [Update FAQs](/faqs/update-faqs.md)
 ```
 
 ### Images
 
 The conventions for linking to images is the same as linking to pages as described above.
 
-New images should be placed in the "img" directory just below the md-file.
+New images should be placed in the `img` directory just below the md-file.
 
-Example of correct link to image is [alt-text](relative path/image-name).
+Example of correct link to image is `[alt-text](relative_path_to/image_name)`.
 
 ```markdown
 ![iPhone](img/phones.png)
 ```
 
-With images it is possible to add extra attributes like 'width' and 'center'.
+With images it is possible to add extra attributes like `width` and `center`.
+
+#### Image Width
 
 ```markdown
 ![iPhone](img/phones.png){width="300"}
+```
 
-This will get rendered to this: <img alt="iPhone" src="img/phones.png" width="300">
+This will get rendered to this: 
+```html
+<img alt="iPhone" src="img/phones.png" width="300">
+```
 
-You can also center a image, by adding '{align="center"}' on a new line
-just below the paragraph you want to center:
+#### Center an Image
 
+You can also center a image, by adding `{align="center"}` **on a new line**
+just **below** the paragraph you want to center:
+
+```markdown
 ![Eros](img/eros.png){width="750"}
 {align="center"}
+```
 
 This will get rendered to this:
+
+```html
 <p align="center">
     <img alt="Eros" src="../img/eros.png" width="750" />
 </p>
 ```
 
-A note about images in tables. Use html on the first line that indicates the table.
-For example, in displays.md there are many icons with descriptions to the right. This format provides appropriate views on both desktop and mobile.
+#### Images in Tables
 
-For no header row, replace `|||` with:
+Use HTML on the first line that indicates the table.
+For example, in [displays_v3.md](https://loopkit.github.io/loopdocs/loop-3/displays_v3/#loop-cycle) there are many icons with descriptions to the right.
+This format provides appropriate views on both desktop and mobile.
+
+For **no header row**, replace `|||` with:
 
 ```markdown
-| <div style="width:72px"></div> ||
-|---|---|
-|![icon alt-text ](img/icon)|text with description|
+| <div style="width:72px"></div> |                        |
+|---                             |---                     |
+| ![icon alt-text](img/icon)     | image description here |
 ```
 
-To add header row, use:
+To **add a header row**, use:
 ```markdown
-| <div style="width:72px">Column 1</div> | Column 2 |
+| <div style="width:72px">Column 1 Header</div> | Column 2 Header |
 ```
 
 ### Admonitions and CSS
