@@ -153,21 +153,21 @@ However we chose to disable it by default for all code blocks and enable it on a
 Here is how to enable the copy-to-clipboard button for a "code" block containing regular text.
 
 ````
-``` { .txt .copy "title of this code block" }
+``` { .txt .copy title="title of this code block" }
 Content of the code block here
 ```
 ````
 
 where:
 - `.txt` denotes the language used in the content of the code block.  
-  For instance  use `.txt` for regular text, `.sh` for a shell script, `.bash` for a Bash script`.  
+  For instance  use `.txt` for regular text, `.sh` for a shell script, `.bash` for a Bash script.  
   This is a required parameter.  
   Here is the list of [supported languages](https://pygments.org/languages/) (use one of the `Short Name`s).
 - `.copy` shows the copy-to-clipboard button when present (hidden otherwise)
-- `title=“title of this code block”` adds a title to the code (none by when absent)
+- `title=“title of this code block”` adds a title to the code (none when absent)
 
 Do note that:
-- There is a **space**  **before and  after** the opening curly brace ` { `.
+- There is a space before **and** after the opening curly brace ` { `.
 - There is space before the closing curly brace `}`.
 
 
