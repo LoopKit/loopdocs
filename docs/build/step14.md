@@ -239,7 +239,7 @@ After hitting return, the user can verify the entry.
 
 ### Review LoopConfigOverride.xcconfig
 
-Once the permanent signing file configured, the review step is the same each time.
+Once the permanent signing file is configured, the review step is the same each time.
 
 * Graphic below:
     - The developer ID stored in the permanent file is displayed for review
@@ -264,7 +264,7 @@ You can now return to the terminal and hit return for the next step.
 
 ### Ensure a Year
 
-The next questions asks if you want to ensure a year with your new app. Unless you have a good reason, you should enter 1 and continue.
+The next question asks if you want to ensure a year with your new app. Unless you have a good reason, you should enter 1 and continue.
 
 ![confirm profile deletion](img/build-dev-b-03b.svg){width="700"}
 {align="center"}
