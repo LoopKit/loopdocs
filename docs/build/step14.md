@@ -20,6 +20,8 @@
 
 The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
 
+If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.
+
 ## GitHub Build Loop
 
 If you previously used [GitHub Build](../gh-actions/gh-overview.md) to install Loop on this phone, you must make sure that automatically install is **disabled** in [TestFlight](../gh-actions/gh-deploy.md#install-testflight), or you will not be able to install on that phone with Xcode.
@@ -76,22 +78,11 @@ This must be configured on the watch itself (not the watch app on the iPhone). T
 
 This page has the detailed steps to run the Build Select Script to download the Loop code, prepare your computer and build Loop.
 
+Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.
+
 ### Open Terminal
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
-
-#### Ensure a Year
-
-!!! danger "Rebuild / Update on Same Computer?"
-    If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with this build.
-
-    If you missed doing the [Updating: Delete Provisioning Profiles](updating.md#delete-provisioning-profiles), do that step now and return to this page.
-
-    or more experienced folks may want to just paste this command into their terminal:
-
-    ``` { .sh .copy title="Copy and Paste to remove Provisioning Profiles" }
-    rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
-    ```
 
 ### Build Select Script
 
@@ -116,13 +107,10 @@ These instructions show each step needed to download Loop using the Build-Select
 !!! note "Optional"
     The Build Select Script can also be used to build a companion app, called Loop Follow, and a fork of Loop, which has selected patches added. Follow these links to different websites for more information about those options.
     
-    For those used to seeing FreeAPS here, it has been removed from the Build Select Script.
-    
-    Consider using Loop 3 as designed. If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the Build Select Script.
+    If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the Build Select Script.
  
      * Information about [Loop Follow](https://www.loopandlearn.org/loop-follow)
      * Information about [Loop with Patches](https://www.loopandlearn.org/main-lnl-patches/)
-        * Warning, the Loop with Patches is updated **after** the main Loop is released. Typically it is updated within a day, but don't assume. Check that link for updates.
  
      You do not need to know about these options to build Loop.
 
@@ -203,7 +191,15 @@ If there are no errors, type 1 in the terminal window to continue. At this point
 !!! tip "Experienced Builders"
     This replaces several of the steps that used to be required to build Loop.
 
-The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer to have a permanent file that contains your Apple Developer ID, this question will not be shown. Skip ahead to [Review LoopConfigOverride.xcconfig](#review-loopconfigoverridexcconfig).
+The first time you use the script, you will be asked how you want to sign the targets.
+
+!!! question "I did not get this question"
+    The script searches for your developer ID for you and skips this question if it finds it.
+    
+    * You have previously built an app on this computer with your developer ID
+    * You have previously run this script
+    
+    Skip ahead to [Review LoopConfigOverride.xcconfig](#review-loopconfigoverridexcconfig).
 
 The next question, as shown in graphic below, is whether you will (1) Sign Automatically or (2) Sign Manually.
 
@@ -243,22 +239,19 @@ After hitting return, the user can verify the entry.
 
 ### Review LoopConfigOverride.xcconfig
 
-!!! note "Use Your Team ID"
-    The ID, 0123456789, shown in the graphic below is for illustration purposes only. Your terminal display shows your Apple Developer ID (the Team ID on the Membership page).
-
-If you previously built with this computer using the script, you already have the file configured. The review step is the same each time.
+Once the permanent signing file configured, the review step is the same each time.
 
 * Graphic below:
     - The developer ID stored in the permanent file is displayed for review
-    - After review, hit return to continue and [Plug in Your Phone](#plug-in-your-phone)
-    - OR - to modify the ID in the file, see [Problem with the ID?](#problem-with-the-id)
+    - After review, enter 1 to continue
+    - OR - enter 2 to modify the ID in the file, see [Problem with the ID?](#problem-with-the-id)
 
 ![review of override file before use](img/build-dev-b-03.svg){width="700"}
 {align="center"}
 
 #### Problem with the ID?
 
-If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message, are repeated here:
+If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message if you select option 2, Editing Instructions, are repeated here:
 
 To edit the LoopConfigOverride.xcconfig file with a different developer ID:
 
@@ -269,7 +262,19 @@ To edit the LoopConfigOverride.xcconfig file with a different developer ID:
 
 You can now return to the terminal and hit return for the next step.
 
+### Ensure a Year
+
+The next questions asks if you want to ensure a year with your new app. Unless you have a good reason, you should enter 1 and continue.
+
+![confirm profile deletion](img/build-dev-b-03b.svg){width="700"}
+{align="center"}
+
 ## Build Loop
+
+!!! tip "Build to Simulator"
+    If you are an experienced builder and plan to build to a simulator on your Mac before building to your phone, you do not need to plug in your phone yet. You will need to select a simulator manually once Xcode opens.
+    
+    For first time builders - go on and build to your phone.
 
 ### Plug in Your Phone
 
@@ -322,13 +327,7 @@ First confirm your phone is selected. Refer to the GIF below (warning, GIF not u
 
 ### Start Build
 
-If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the build errors link listed below.
-
-* If your screen is similar to the figure below, perform the fix for [Couldn't Get Revision for Package Dependency](build_errors.md#couldnt-get-revision-for-package-dependency)
-* If you have a different error, search the [Build Error](build_errors.md) page
-
-![gif showing the xcode screens with dependency error](img/xcode-build-loop3-b.svg){width="750"}
-{align="center"}
+If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the [Build Error](build_errors.md) page
 
 #### First Time
 
@@ -418,6 +417,8 @@ No red error messages? Skip ahead to [Successful Build](#successful-build).
 
     If you see yellow or purple warnings after your build is done...those are not an issue. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.
 
+    NOTE: **purple warnings** are still warnings and can be ignored.
+
     ![img/yellow-warnings.png](img/yellow-warnings.png){width="600"}
     {align="center"}
 
@@ -493,7 +494,7 @@ Even if you don't read all the pages under the Set Up tab now, these links are i
 **New Loop users**: Customizations are not a required part of any Loop build. As you gain experience using your Loop app, you may want to customize some of the features. First time builders are encouraged to build with the standard, default code. You can always update your Loop app to add customizations at a later time, using the same download. Subsequent build time is much faster than the initial build for a given download.
 
 !!! tip "Pro Tip"
-    With a fresh download of code, it's always best to build without customization to ensure the build works without errors.
+    With a fresh download of code, it's always best to build to a simulator without customization to ensure the build works without errors. Then add the customizations and check the build again. Now you are ready to build to your phone to update your existing app.
 
 To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code_customization.md) page and then build the app again.
 
