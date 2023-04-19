@@ -954,6 +954,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ensure-a-year" class="md-nav__link">
+    Ensure a Year
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2562,6 +2569,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ensure-a-year" class="md-nav__link">
+    Ensure a Year
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2720,6 +2734,7 @@
 </div>
 <h2 id="build-video">Build Video<a class="headerlink" href="#build-video" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The Loop and Learn team prepared this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.</p>
+<p>If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.</p>
 <h2 id="github-build-loop"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Loop<a class="headerlink" href="#github-build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you previously used <a href="../../gh-actions/gh-overview/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build</a> to install Loop on this phone, you must make sure that automatically install is <strong>disabled</strong> in <a href="../../gh-actions/gh-deploy/#install-testflight"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a>, or you will not be able to install on that phone with <abbr title="program used to build an app">Xcode</abbr>.</p>
 <h2 id="developer-mode">Developer Mode<a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2770,17 +2785,9 @@
 </ul>
 <h2 id="download-loop">Download Loop<a class="headerlink" href="#download-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page has the detailed steps to run the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> to download the Loop code, prepare your computer and build Loop.</p>
+<p>Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.</p>
 <h3 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. The terminal window is very plain looking when you open it. That is normal.</p>
-<h4 id="ensure-a-year">Ensure a Year<a class="headerlink" href="#ensure-a-year" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="admonition danger">
-<p class="admonition-title">Rebuild / Update on Same Computer?</p>
-<p>If you used this same computer to build Loop previously and you did not delete provisioning profiles - you will not get a full year with this build.</p>
-<p>If you missed doing the <a href="../updating/#delete-provisioning-profiles">Updating: Delete Provisioning Profiles</a>, do that step now and return to this page.</p>
-<p>or more experienced folks may want to just paste this command into their terminal:</p>
-<div class="copy highlight"><span class="filename">Copy and Paste to remove Provisioning Profiles</span><pre><span></span><code>rm<span class="w"> </span>~/Library/MobileDevice/Provisioning<span class="se">\ </span>Profiles/*.mobileprovision
-</code></pre></div>
-</div>
 <h3 id="build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr><a class="headerlink" href="#build-select-script" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition info">
 <p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr>.2 Release</p>
@@ -2805,14 +2812,10 @@
 <div class="admonition note">
 <p class="admonition-title">Optional</p>
 <p>The <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> can also be used to build a companion app, called Loop Follow, and a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop, which has selected patches added. Follow these links to different websites for more information about those options.</p>
-<p>For those used to seeing FreeAPS here, it has been removed from the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
-<p>Consider using <abbr title="Latest release with major updates">Loop 3</abbr> as designed. If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
+<p>If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
 <ul>
 <li>Information about <a href="https://www.loopandlearn.org/loop-follow">Loop Follow</a></li>
-<li>Information about <a href="https://www.loopandlearn.org/main-lnl-patches/">Loop with Patches</a><ul>
-<li>Warning, the Loop with Patches is updated <strong>after</strong> the main Loop is released. Typically it is updated within a day, but don't assume. Check that link for updates.</li>
-</ul>
-</li>
+<li>Information about <a href="https://www.loopandlearn.org/main-lnl-patches/">Loop with Patches</a></li>
 </ul>
 <p>You do not need to know about these options to build Loop.</p>
 </div>
@@ -2871,7 +2874,16 @@
 <p class="admonition-title">Experienced Builders</p>
 <p>This replaces several of the steps that used to be required to build Loop.</p>
 </div>
-<p>The first time you use the script, you will be asked how you want to sign the targets. If you have previously run the script and configured your computer to have a permanent file that contains your Apple Developer ID, this question will not be shown. Skip ahead to <a href="#review-loopconfigoverridexcconfig">Review LoopConfigOverride.xcconfig</a>.</p>
+<p>The first time you use the script, you will be asked how you want to sign the targets.</p>
+<div class="admonition question">
+<p class="admonition-title">I did not get this question</p>
+<p>The script searches for your developer ID for you and skips this question if it finds it.</p>
+<ul>
+<li>You have previously built an app on this computer with your developer ID</li>
+<li>You have previously run this script</li>
+</ul>
+<p>Skip ahead to <a href="#review-loopconfigoverridexcconfig">Review LoopConfigOverride.xcconfig</a>.</p>
+</div>
 <p>The next question, as shown in graphic below, is whether you will (1) Sign Automatically or (2) Sign Manually.</p>
 <ul>
 <li>If you are building with a paid developers account, choose option 1, and continue on this page</li>
@@ -2909,22 +2921,18 @@
 <p align="center"><img alt="entry of developer id" src="../img/build-dev-b-01-b.svg" width="700" /></p>
 <p>After hitting return, the user can verify the entry.</p>
 <h3 id="review-loopconfigoverridexcconfig">Review LoopConfigOverride.xcconfig<a class="headerlink" href="#review-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Use Your Team ID</p>
-<p>The ID, 0123456789, shown in the graphic below is for illustration purposes only. Your terminal display shows your Apple Developer ID (the Team ID on the Membership page).</p>
-</div>
-<p>If you previously built with this computer using the script, you already have the file configured. The review step is the same each time.</p>
+<p>Once the permanent signing file is configured, the review step is the same each time.</p>
 <ul>
 <li>Graphic below:<ul>
 <li>The developer ID stored in the permanent file is displayed for review</li>
-<li>After review, hit return to continue and <a href="#plug-in-your-phone">Plug in Your Phone</a></li>
-<li>OR - to modify the ID in the file, see <a href="#problem-with-the-id">Problem with the ID?</a></li>
+<li>After review, enter 1 to continue</li>
+<li>OR - enter 2 to modify the ID in the file, see <a href="#problem-with-the-id">Problem with the ID?</a></li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="review of override file before use" src="../img/build-dev-b-03.svg" width="700" /></p>
 <h4 id="problem-with-the-id">Problem with the ID?<a class="headerlink" href="#problem-with-the-id" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message, are repeated here:</p>
+<p>If there is a problem with the ID that is stored on your computer, you can modify it before continuing.  The instructions, shown in the terminal message if you select option 2, Editing Instructions, are repeated here:</p>
 <p>To edit the LoopConfigOverride.xcconfig file with a different developer ID:</p>
 <ol>
 <li>Open finder, navigate to Downloads/BuildLoop</li>
@@ -2935,7 +2943,15 @@
 <li>Edit in <abbr title="program used to build an app">Xcode</abbr> and save file</li>
 </ol>
 <p>You can now return to the terminal and hit return for the next step.</p>
+<h3 id="ensure-a-year">Ensure a Year<a class="headerlink" href="#ensure-a-year" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The next question asks if you want to ensure a year with your new app. Unless you have a good reason, you should enter 1 and continue.</p>
+<p align="center"><img alt="confirm profile deletion" src="../img/build-dev-b-03b.svg" width="700" /></p>
 <h2 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Build to Simulator</p>
+<p>If you are an experienced builder and plan to build to a simulator on your Mac before building to your phone, you do not need to plug in your phone yet. You will need to select a simulator manually once <abbr title="program used to build an app">Xcode</abbr> opens.</p>
+<p>For first time builders - go on and build to your phone.</p>
+</div>
 <h3 id="plug-in-your-phone">Plug in Your Phone<a class="headerlink" href="#plug-in-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below. The messages in the terminal instruct you to:</p>
 <ul>
@@ -2993,12 +3009,7 @@
 </ul>
 <p align="center"><img alt="gif showing the initial xcode screens following fresh download" src="../img/xcode-build-loop3-a.gif" width="750" /></p>
 <h3 id="start-build">Start Build<a class="headerlink" href="#start-build" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If there is a red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen you need to click over to the build errors link listed below.</p>
-<ul>
-<li>If your screen is similar to the figure below, perform the fix for <a href="../build_errors/#couldnt-get-revision-for-package-dependency">Couldn't Get Revision for Package Dependency</a></li>
-<li>If you have a different error, search the <a href="../build_errors/">Build Error</a> page</li>
-</ul>
-<p align="center"><img alt="gif showing the xcode screens with dependency error" src="../img/xcode-build-loop3-b.svg" width="750" /></p>
+<p>If there is a red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen you need to click over to the <a href="../build_errors/">Build Error</a> page</p>
 <h4 id="first-time">First Time<a class="headerlink" href="#first-time" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word <strong>First-Time</strong>. Do not get confused when you are asked to enter your password multiple times, see <a href="#codesign--keychain-access">Codesign / Keychain Access</a>. Be sure to enter your Mac login password and select Always Allow.</p>
 <h4 id="all-builds">All Builds<a class="headerlink" href="#all-builds" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -3085,6 +3096,7 @@
 <div class="admonition question">
 <p class="admonition-title">FAQ: But what about those yellow or purple warnings that remain in <abbr title="program used to build an app">Xcode</abbr>? Should I worry about them?</p>
 <p>If you see yellow or purple warnings after your build is done...those are not an issue. Don't try to resolve them or fret about them. They mean nothing to the successful use of your Loop app.</p>
+<p>NOTE: <strong>purple warnings</strong> are still warnings and can be ignored.</p>
 <p align="center"><img alt="img/yellow-warnings.png" src="../img/yellow-warnings.png" width="600" /></p>
 </div>
 <h4 id="clear-the-error-message">Clear the Error Message<a class="headerlink" href="#clear-the-error-message" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -3149,7 +3161,7 @@
 <p><strong>New Loop users</strong>: Customizations are not a required part of any Loop build. As you gain experience using your Loop app, you may want to customize some of the features. First time builders are encouraged to build with the standard, default code. You can always update your Loop app to add customizations at a later time, using the same download. Subsequent build time is much faster than the initial build for a given download.</p>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
-<p>With a fresh download of code, it's always best to build without customization to ensure the build works without errors.</p>
+<p>With a fresh download of code, it's always best to build to a simulator without customization to ensure the build works without errors. Then add the customizations and check the build again. Now you are ready to build to your phone to update your existing app.</p>
 </div>
 <p>To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the <a href="../code_customization/">Code Customizations</a> page and then build the app again.</p>
 <h3 id="apple-watch">Apple Watch<a class="headerlink" href="#apple-watch" title="Anchor link to this Header on this Page">&para;</a></h3>

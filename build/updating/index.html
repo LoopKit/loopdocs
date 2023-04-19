@@ -899,13 +899,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-video" class="md-nav__link">
-    Build Video
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#macos-and-xcode-versions" class="md-nav__link">
     macOS and Xcode Versions
   </a>
@@ -943,26 +936,6 @@
   <a href="#check-your-developer-account" class="md-nav__link">
     Check your Developer Account
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#delete-provisioning-profiles" class="md-nav__link">
-    Delete Provisioning Profiles
-  </a>
-  
-    <nav class="md-nav" aria-label="Delete Provisioning Profiles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#build-select-utilities" class="md-nav__link">
-    Build Select Utilities
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2377,13 +2350,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-video" class="md-nav__link">
-    Build Video
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#macos-and-xcode-versions" class="md-nav__link">
     macOS and Xcode Versions
   </a>
@@ -2421,26 +2387,6 @@
   <a href="#check-your-developer-account" class="md-nav__link">
     Check your Developer Account
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#delete-provisioning-profiles" class="md-nav__link">
-    Delete Provisioning Profiles
-  </a>
-  
-    <nav class="md-nav" aria-label="Delete Provisioning Profiles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#build-select-utilities" class="md-nav__link">
-    Build Select Utilities
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2508,7 +2454,6 @@
 </ul>
 </li>
 <li>Check your Developer Account</li>
-<li>Delete provisioning profiles (ensure a year)</li>
 <li>Download Updated Loop code and Build Loop</li>
 </ul>
 <p>In each of the sections below, follow links to sections of other build pages then hit the back button on your browser to return to this page.</p>
@@ -2541,24 +2486,14 @@
 </div>
 <p><a href="../../version/releases/#loop-releases">Loop Releases</a> provides information about current and previous Loop versions.</p>
 <p>Updating to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 (<abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9) requires enabling <a href="../step14/#developer-mode">Developer Mode</a>. Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is <strong>not</strong> required.</p>
-<div class="admonition warning">
-<p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 Warning - Check Before You Update</p>
-<p>DO NOT INSTALL <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 on your phone without first <a href="#when-to-update-loop">updating</a> Loop if the <abbr title="program used to build an app">Xcode</abbr> version used to build your Loop app is 12D or earlier - the Loop app will stop working and you will have to rebuild Loop.</p>
-<p>Follow this link, <a href="../../faqs/update-faqs/#how-can-i-confirm-xcode-version-i-used"><abbr title="program used to build an app">Xcode</abbr> version</a>, for instructions to determine what version was used when building the Loop app currently on your phone.</p>
-</div>
 <h3 id="loop-is-no-longer-available">"Loop" is No Longer Available<a class="headerlink" href="#loop-is-no-longer-available" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The apps built and signed by you in <abbr title="program used to build an app">Xcode</abbr> with a paid developer account will last for 12 months; then they expire and must be rebuilt. At least once per year you will have to rebuild your app and go through this update process. If you do not update and the "provisioning profile" on your phone expires, you will see the "Loop" is No Longer Available message. You will be given multiple <a href="../../operation/features/notifications/#loop-app-expiration-notification">Loop App Expiration Notifications</a> on the Loop phone, but might miss them if you are a caregiver.</p>
 <p>When you see "Loop" is No Longer Available on your phone, the only solution is to rebuild the app.  All of your settings are still present on your phone, but your "provisioning profile" expired and you need to generate a new one. Once you build Loop on your phone, following the instructions on this page, all your settings will be maintained - assuming you build with the same <a href="../../faqs/FAQs/#what-happens-when-i-switch-apple-developer-id">Apple Developers ID</a> that was used initially.</p>
-<div class="admonition warning">
-<p class="admonition-title">Provisioning Profiles</p>
-<p>Be aware that if you build an app using <abbr title="program used to build an app">Xcode</abbr> without first deleting provisioning profiles, you might not have one year on that app. It is the expiration date of the provisioning profile on your computer that determines when the app expires.</p>
-</div>
-<h2 id="build-video">Build Video<a class="headerlink" href="#build-video" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Loop and Learn team prepared this <a href="https://youtu.be/gddhljzsNkM">YouTube video</a> showing how to prepare for an update and build Loop Master. We recommend reading the written directions below before (and while) watching the video.</p>
 <h2 id="macos-and-xcode-versions"><abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> Versions<a class="headerlink" href="#macos-and-xcode-versions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="determine-required-xcode-and-macos-versions">Determine Required <abbr title="program used to build an app">Xcode</abbr> and <abbr title="operating system for Mac computer">macOS</abbr> Versions<a class="headerlink" href="#determine-required-xcode-and-macos-versions" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum <abbr title="program used to build an app">Xcode</abbr> version required for your phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>, you cannot build on that phone. Sometimes you must also update the <abbr title="operating system for Mac computer">macOS</abbr> version to allow you to use the required <abbr title="program used to build an app">Xcode</abbr> version.</p>
 <p>Based on the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> on your phone, or the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> you plan to install on your phone, determine the required <abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> versions. Click on this  link <a href="../step8/#how-do-all-the-minimum-versions-relate-to-each-other">versions for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>, <abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr></a> to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.</p>
+<p>If you are tired of the <abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> version update requirements, check out the <a href="../../gh-actions/gh-overview/">Browser Build</a> option.</p>
 <div class="admonition warning">
 <p class="admonition-title">First <abbr title="operating system for Mac computer">macOS</abbr> and Then <abbr title="program used to build an app">Xcode</abbr></p>
 <p>Your <abbr title="operating system for Mac computer">macOS</abbr> must meet the minimum requirement for the <abbr title="program used to build an app">Xcode</abbr> version you need to support your current <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> as detailed in that link above.</p>
@@ -2610,43 +2545,6 @@
 <h2 id="check-your-developer-account">Check your Developer Account<a class="headerlink" href="#check-your-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.</p>
 <p><img alt="Screenshot: Account - Apple Developer" src="../img/license.png" /></p>
-<h2 id="delete-provisioning-profiles">Delete Provisioning Profiles<a class="headerlink" href="#delete-provisioning-profiles" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>In order to ensure a full year of use for your Loop app, you need to delete any existing provisioning profile(s) from your computer. It is the expiration date of the provisioning profile on your computer that determines when the app expires.</p>
-<div class="admonition tip">
-<p class="admonition-title">Manual Delete of Provisioning Profiles</p>
-<p>If you are comfortable pasting commands into the terminal, you can delete the provisioning profiles by copying and pasting this command into a terminal window.</p>
-<div class="copy highlight"><span class="filename">Copy and Paste to remove Provisioning Profiles</span><pre><span></span><code>rm<span class="w"> </span>~/Library/MobileDevice/Provisioning<span class="se">\ </span>Profiles/*.mobileprovision
-</code></pre></div>
-<p>If you did the manual delete, skip ahead to <a href="#ready-to-build-loop">Ready To Build Loop</a>.</p>
-</div>
-<h3 id="build-select-utilities">Build Select Utilities<a class="headerlink" href="#build-select-utilities" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can delete the old provisioning profiles with the same <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> you will use to download and build new code.</p>
-<h4 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. The terminal window is very plain looking when you open it. That is normal.</p>
-<h4 id="load-the-paste-buffer">Load the Paste Buffer<a class="headerlink" href="#load-the-paste-buffer" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say <code>Copy to Clipboard</code> when you hover over it). When you click the icon, a message that says <code>Copied to Clipboard</code> will appear on your screen.</p>
-<div class="copy highlight"><span class="filename">Run the Build Select script to Clean Profiles & Derived Data</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span>
-</code></pre></div>
-<p>Paste the line of text into <abbr title="interface for entering commands to the computer">Terminal</abbr>. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>V</kbd></span>; or <span class="keys"><kbd class="key-control">Ctrl</kbd></span> click and select from menu or <code>Edit</code>-<code>Paste</code> at top of Mac screen.) Once the line is pasted, hit return to execute the script.</p>
-<h4 id="utilities">Utilities<a class="headerlink" href="#utilities" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Each graphic below shows the number you are instructed to type to proceed through the script and reach the utility menu. The words on this page also tell you what to type. Note there are several options in Utilities, you only need to use one to delete provisioning profiles. See the <a href="https://www.loopandlearn.org/build-select">Loop and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> webpage for additional information.</p>
-<p>When running this script:</p>
-<ul>
-<li>If you do not have <abbr title="program used to build an app">Xcode</abbr> and <abbr title="program used to build an app">Xcode</abbr> command line tools installed - you will get errors.</li>
-<li>If you have <abbr title="program used to build an app">Xcode</abbr> open, you may get errors.</li>
-</ul>
-<p>Read the screen (shown below).  Type 1 and return if you understand the warning and agree.</p>
-<p align="center"><img alt="paste the script line into terminal" src="../img/bss-01-initial-message.svg" width="700" /></p>
-<ul>
-<li>Please read what is on the screen as you progress.</li>
-<li>Adjust font size as directed if you have difficulty seeing the directions.</li>
-</ul>
-<p>Next you will see an introduction to the Build Select script.  Please read this.  To run the Utilities, you will type 3 (as shown in the graphic below) and return.</p>
-<p align="center"><img alt="choose utilities" src="../img/bss-02-menu-message-select-3.svg" width="700" /></p>
-<p>Next you are asked which Utility option you want to run.  You may need to scroll up to see the entire message shown in the graphic below. Type 3 to select Clean Profiles.</p>
-<p align="center"><img alt="select from utility menus" src="../img/bss-04-utility-menu.svg" width="700" /></p>
-<p>Once this completes, you should see this in your terminal.</p>
-<p align="center"><img alt="clean utility script completed" src="../img/build-select-04.png" width="750" /></p>
 <h2 id="ready-to-build-loop">Ready to Build Loop<a class="headerlink" href="#ready-to-build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>As long as there are no errors, you are now ready to proceed to <a href="../step14/#developer-mode">Build the Loop App: Developer Mode</a></p>
 <p>After building the new app, you may choose to return to this page and follow the instructions to <a href="#delete-old-copies">Delete Old Copies</a>. This is optional, but cleans up space on your computer.</p>
@@ -2668,10 +2566,8 @@
 <li>Deleting derived data across all <abbr title="program used to build an app">Xcode</abbr> workspaces and projects for a brand new download is not required to ensure a year for a given build</li>
 <li>The Clean Derived Data option in the Utilities menu can be required for some special cases, but you probably won't need it</li>
 </ul>
-<h4 id="infrequent-builder-app-expires-soon">Infrequent Builder, App Expires soon<a class="headerlink" href="#infrequent-builder-app-expires-soon" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If your app will expire soon or you build infrequently, then delete provisioning profiles every time you build. Not sure when your app expires? Here are instructions to check your <a href="https://www.loopandlearn.org/loop-expiration-date/">Loop <abbr title="your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date">Expiration Date</abbr></a>.</p>
 <h4 id="frequent-builder">Frequent Builder<a class="headerlink" href="#frequent-builder" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you build frequently, you do not need to delete the profiles every time. One user reported deleting profiles gave a <a href="./#revoke-certificate-issue">Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> message - follow the link to see other reasons why that might happen.</p>
+<p>If you build frequently, you do not have to delete the profiles every time. One user reported deleting profiles gave a <a href="./#revoke-certificate-issue">Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> message - follow the link to see other reasons why that might happen. When the build script asks if you want to "Ensure a Year?", you can skip that step.</p>
 <h4 id="revoke-certificate-issue">Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr><a class="headerlink" href="#revoke-certificate-issue" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>What does it look like if you run into the Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> message? When you prepare to Sign the Targets with <abbr title="program used to build an app">Xcode</abbr>, you'll see the message highlighted in the figure below.</p>
 <p align="center"><br/>
