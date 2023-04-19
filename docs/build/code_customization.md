@@ -823,7 +823,7 @@ Add LibreTransmitter to Loop as a plugin:
 
 ## Limit Loop for Faster CGM
 
-Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates.
+Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
 
 This modification limits the period for Loop cycles to 4.8 minutes or longer.
 
@@ -840,11 +840,13 @@ let timeSinceLastLoop
 ```
 
 * Folder: Loop/Loop/Managers/
-* File: LoopDataManager.swift, Line: 821 (main), 840 (dev)
+* File: LoopDataManager.swift, Line: 841
 
-The Key_Phrase identifies the line where you will insert new code.
+The Key_Phrase gets you near where you will insert new code.
 
 _Code Before Modification_
+
+The line above the Key_Phrase is:
 
 ```
 if let lastLoopCompleted = self.lastLoopCompleted {
@@ -857,7 +859,7 @@ _Code After Modification_
 ``` { .txt .copy }
 // Limit Loop frequency to 4.8 minutes
 if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) < TimeInterval(minutes: 4.8) {
-    self.logger.default("Skipping loop() attempt as last loop completed at %{public}@", String(describing: lastLoopCompleted))
+    self.logger.default("Skipping loop attempt as last loop completed at %{public}@", String(describing: lastLoopCompleted))
     return
 } else if let lastLoopCompleted = self.lastLoopCompleted {
 ```
