@@ -900,13 +900,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#xcode-errors-with-build-select" class="md-nav__link">
-    XCode Errors with Build-Select
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#wait-for-download-to-complete" class="md-nav__link">
     Wait for Download to Complete
   </a>
@@ -1066,6 +1059,13 @@
           <li class="md-nav__item">
   <a href="#build-again-with-this-download" class="md-nav__link">
     Build Again with this Download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xcode-errors-with-build-select" class="md-nav__link">
+    Xcode Errors with Build-Select
   </a>
   
 </li>
@@ -2515,13 +2515,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#xcode-errors-with-build-select" class="md-nav__link">
-    XCode Errors with Build-Select
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#wait-for-download-to-complete" class="md-nav__link">
     Wait for Download to Complete
   </a>
@@ -2685,6 +2678,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#xcode-errors-with-build-select" class="md-nav__link">
+    Xcode Errors with Build-Select
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2834,37 +2834,20 @@
 <p align="center"><img alt="choose to build Loop" src="../img/bss-02-menu-message.svg" width="700" /></p>
 <p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop with added Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> options, CustomTypeOne patches and a custom logo.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/bss-03-choose-fork.svg" width="700" /></p>
-<h3 id="xcode-errors-with-build-select">XCode Errors with Build-Select<a class="headerlink" href="#xcode-errors-with-build-select" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">WARNINGS</p>
-<p>If you see errors like these . . .</p>
-<ul>
-<li><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></li>
-<li><code>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</code></li>
-<li><code>xcode-select: error: tool 'xed' requires Xcode</code></li>
-</ul>
-<p>You missed one of these steps:</p>
-<ul>
-<li><a href="../step8/">Install <abbr title="program used to build an app">Xcode</abbr></a></li>
-<li><a href="../step9/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> command line tools</a></li>
-</ul>
-</div>
 <h3 id="wait-for-download-to-complete">Wait for Download to Complete<a class="headerlink" href="#wait-for-download-to-complete" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages. </p>
+<div class="admonition tip">
+<p class="admonition-title">New Feature</p>
+<p>The Build-Script automatically reports when the download is successful.</p>
+</div>
 <p>The next graphic shows terminal messages for the beginning of a successful download.</p>
-<p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.png" width="700" /></p>
-<p>When the download completes, the "Check for successful download" message is displayed as shown in the graphic below. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download. (Your messages that start with "Submodule path" may differ.)</p>
-<p align="center"><img alt="download complete - search for errors message" src="../img/bss-06-search-for-errors.svg" width="700" /></p>
-<p>If you do not find the word error in your terminal window, continue with <a href="#download-was-successful">Download was Successful</a>.</p>
-<p>If you see the word "error" in your terminal window:</p>
-<ul>
-<li>Read the error message</li>
-<li>Try to figure out the problem</li>
-<li>If you need help, reach out to your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site</li>
-<li>Tap any key other than 1, followed by return to cancel</li>
-</ul>
+<p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.svg" width="700" /></p>
+<p>If the download was successful, you will see the following graphic and should continue with the <a href="#download-was-successful">Download was Successful</a> section.</p>
+<p align="center"><img alt="download successful" src="../img/build-select-download-success.svg" width="700" /></p>
+<p>If you see a failure message, scroll up in the terminal to find the error message(s) and go to <a href="#xcode-errors-with-build-select"><abbr title="program used to build an app">Xcode</abbr> Errors with Build-Select</a>.</p>
+<p align="center"><img alt="download failed" src="../img/build-select-download-failed.svg" width="700" /></p>
 <h3 id="download-was-successful">Download was Successful<a class="headerlink" href="#download-was-successful" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If there are no errors, type 1 in the terminal window to continue. At this point you choose how to sign the targets, so first an explanation.</p>
+<p>If there are no errors, hit return to continue. The next step involves signing the targets.</p>
 <h2 id="sign-targets"><abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr><a class="headerlink" href="#sign-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">What does <abbr title="associate a Developer ID with an app; must sign all targets for a given app">Sign Targets</abbr> Mean?</p>
@@ -3174,6 +3157,28 @@
 <p class="admonition-title">Don't use a really old download</p>
 <p>Do not use a really old download.</p>
 <p>Check the date of your download against the latest <a href="../../version/releases/#current-release">Current Release</a> date and decide whether to get a fresh download instead.</p>
+</div>
+<h3 id="xcode-errors-with-build-select"><abbr title="program used to build an app">Xcode</abbr> Errors with Build-Select<a class="headerlink" href="#xcode-errors-with-build-select" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The errors shown below should be prevented - the script will attempt to correct them automatically - follow the directions in the script.</p>
+<p>If this is not successful, the script told you the download failed and exited. Scroll up in the terminal to find the error message(s):</p>
+<ul>
+<li>Read the error message</li>
+<li>Try to figure out the problem</li>
+<li>If you need help, reach out to your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">WARNINGS</p>
+<p>If you see errors like these . . .</p>
+<ul>
+<li><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></li>
+<li><code>xcode-select: Failed to locate 'git', requesting installation of command line developer tools</code></li>
+<li><code>xcode-select: error: tool 'xed' requires Xcode</code></li>
+</ul>
+<p>You missed one of these steps:</p>
+<ul>
+<li><a href="../step8/">Install <abbr title="program used to build an app">Xcode</abbr></a></li>
+<li><a href="../step9/#command-line-tools"><abbr title="program used to build an app">Xcode</abbr> command line tools</a></li>
+</ul>
 </div>
 
 
