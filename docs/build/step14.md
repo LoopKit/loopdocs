@@ -141,47 +141,31 @@ Next you are asked which version of Loop you would like to build. Type 1 and ret
 ![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}
 
-### XCode Errors with Build-Select
-
-!!! warning "WARNINGS"
-
-    If you see errors like these . . .
-
-    * `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
-    * `xcode-select: Failed to locate 'git', requesting installation of command line developer tools`
-    * `xcode-select: error: tool 'xed' requires Xcode`
-
-    You missed one of these steps:
-
-    * [Install Xcode](step8.md)
-    * [Xcode command line tools](step9.md#command-line-tools)
-
 ### Wait for Download to Complete
 
 This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages. 
 
+!!! tip "New Feature"
+    The Build-Script automatically reports when the download is successful.
+
 The next graphic shows terminal messages for the beginning of a successful download.
 
-![the beginning of the clone for LoopWorkspace ](img/build-select-07.png){width="700"}
+![the beginning of the clone for LoopWorkspace ](img/build-select-07.svg){width="700"}
 {align="center"}
 
-When the download completes, the "Check for successful download" message is displayed as shown in the graphic below. You will need to scroll up in the terminal window to look through all the messages output to the terminal from the beginning of the download. (Your messages that start with "Submodule path" may differ.)
+If the download was successful, you will see the following graphic and should continue with the [Download was Successful](#download-was-successful) section.
 
-![download complete - search for errors message](img/bss-06-search-for-errors.svg){width="700"}
+![download successful](img/build-select-download-success.svg){width="700"}
 {align="center"}
 
-If you do not find the word error in your terminal window, continue with [Download was Successful](#download-was-successful).
+If you see a failure message, scroll up in the terminal to find the error message(s) and go to [Xcode Errors with Build-Select](#xcode-errors-with-build-select).
 
-If you see the word "error" in your terminal window:
-
-* Read the error message
-* Try to figure out the problem
-* If you need help, reach out to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
-* Tap any key other than 1, followed by return to cancel
+![download failed](img/build-select-download-failed.svg){width="700"}
+{align="center"}
 
 ### Download was Successful
 
-If there are no errors, type 1 in the terminal window to continue. At this point you choose how to sign the targets, so first an explanation.
+If there are no errors, hit return to continue. The next step involves signing the targets.
 
 ## Sign Targets
 
@@ -516,3 +500,26 @@ Follow the [Find My Downloaded Loop Code](code_customization.md#find-my-download
 
     Check the date of your download against the latest [Current Release](..//version/releases.md#current-release) date and decide whether to get a fresh download instead.
 
+### Xcode Errors with Build-Select
+
+The errors shown below should be prevented - the script will attempt to correct them automatically - follow the directions in the script.
+
+If this is not successful, the script told you the download failed and exited. Scroll up in the terminal to find the error message(s):
+
+* Read the error message
+* Try to figure out the problem
+* If you need help, reach out to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site
+
+
+!!! warning "WARNINGS"
+
+    If you see errors like these . . .
+
+    * `xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`
+    * `xcode-select: Failed to locate 'git', requesting installation of command line developer tools`
+    * `xcode-select: error: tool 'xed' requires Xcode`
+
+    You missed one of these steps:
+
+    * [Install Xcode](step8.md)
+    * [Xcode command line tools](step9.md#command-line-tools)
