@@ -28,7 +28,7 @@
 *[DIY]: Do it yourself, a common acronym for the open-source software community (and the maker community)
 *[Dosing Strategy]: chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
 *[dynos]: used to reboot a Nightscout Site
-*[EmaLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
+*[EmaLink]: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 *[Event History]: record of pump events (bolus or temp basal) reported and used by Loop
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[fastlane]: used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode
@@ -62,9 +62,9 @@
 *[Modules]: the Loop code uses a number of modules to handle different components of the entire app
 *[Monterey]: operating system for Mac, macOS 12.x
 *[Onboarding]: familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
-*[Omnipod]: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH
+*[Omnipod]: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.
 *[Open Loop]: Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available
-*[OrangeLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
+*[OrangeLink]: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 *[OTP]: one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
 *[Override]: a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both
 *[Package Dependencies]: packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer
@@ -76,7 +76,7 @@
 *[Pull Request]: formal method to request changes to a repository
 *[Quit the Loop App]: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 *[repository]: contains project files and each file's revision history
-*[RileyLink]: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
+*[RileyLink]: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 *[SAGE]: sensor age on Nightscout site
 *[Secrets]: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
 *[SHA-1]: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)

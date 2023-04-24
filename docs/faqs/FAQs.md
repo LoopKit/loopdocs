@@ -118,6 +118,12 @@ Check your app version by tapping on Loop settings and reading it from the top o
 * Version 2.2.x or earlier supports Omnipod Eros pumps and some older Medtronic pumps
 * Version 2.3 or later supports Omnipod Eros and DASH pumps and some older Medtronic pumps
 
+!!! info "Alternative Names for Omnipod Eros Pump and Pods"
+
+    **Eros** pump is also known as **Classic**, or **UST400**, or *Omnipod Insulin Management* **System**.  
+
+    Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods. 
+
 DASH pumps do not require a RileyLink compatible device.
 
 Omnipod 5 is not supported by any version of Loop.
