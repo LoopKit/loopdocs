@@ -3237,7 +3237,7 @@ static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200
 <h2 id="pods-add-extra-insulin-on-insertion">Pods: Add Extra Insulin on Insertion<a class="headerlink" href="#pods-add-extra-insulin-on-insertion" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The default value is 0.0 U of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with Loop - be conservative.</p>
 <p>Note that Loop does not include the amount of insulin in the prime or insertion steps in your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. The pod reports every pulse that it delivers to Loop. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.</p>
-<p>This code change is found in one location for Eros Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> throughout the app) and DASH Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH">Omnipod</abbr> Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
+<p>This code change is found in one location for Eros Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> throughout the app) and DASH Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
@@ -3650,7 +3650,7 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 <p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
 <ul>
 <li>Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace</li>
-<li>Inset 2: User opens folders under <abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr> icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)</li>
+<li>Inset 2: User opens folders under <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)</li>
 </ul>
 <p align="center"><img alt="graphic showing folder icons vs folder names" src="../img/xcode-folder-names.svg" width="750" /></p>
 <p>These folder icon names are different from the directory names on the computer:</p>
@@ -3669,7 +3669,7 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
 <td></td>
 </tr>
 <tr>
-<td align="left"><abbr title="radio-frequency device Loop uses to control Eros pods and older Medtronic pumps">RileyLink</abbr></td>
+<td align="left"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></td>
 <td align="left">rileylink_ios</td>
 <td></td>
 </tr>
