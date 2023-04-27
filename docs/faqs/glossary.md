@@ -67,7 +67,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **dynos**: used to reboot a Nightscout Site
 
-**EmaLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
+**EmaLink**: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
 **Event History**: record of pump events (bolus or temp basal) reported and used by Loop
 
@@ -135,11 +135,11 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Onboarding**: familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
 
-**Omnipod**: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH
+**Omnipod**: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.
 
 **Open Loop**: Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available
 
-**OrangeLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
+**OrangeLink**: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
 **OTP**: one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
 
@@ -163,7 +163,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **repository**: contains project files and each file's revision history
 
-**RileyLink**: radio-frequency device Loop uses to control Eros pods and older Medtronic pumps
+**RileyLink**: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
 **SAGE**: sensor age on Nightscout site
 
