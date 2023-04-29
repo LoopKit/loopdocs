@@ -21,6 +21,7 @@
 *[COB]: Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction
 *[commit]: a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)
 *[Config Vars]: configuration parameters for a Nightscout Site
+*[Correction Factor]: how many points your blood sugar will drop for each unit of insulin; Loop calls this Insulin Sensitivity Factor (ISF)
 *[Correction Range]: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
 *[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
 *[Delivery Limits]: max bolus and max basal rates allowed by your therapy settings
@@ -48,7 +49,7 @@
 *[Identifiers]: names of modules found on your Apple Developer Identifiers page that are required for GitHub build method
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 *[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
-*[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor
+*[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation
 *[JSON]: JavaScript Object Notation; a standard data interchange format that is text-based and human readable
 *[macOS]: operating system for Mac computer
