@@ -241,14 +241,14 @@ Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of car
 
 ### Insulin Sensitivities
 
-Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) is the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be different than the correction factor used with shots or manual pumping. Loop uses your ISF every 5 minutes when calculating predicted glucose levels.
+Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) is the drop in glucose expected from one unit of insulin over the entire duration of insulin activity. It may be a different value than what you used as the Correction Factor with shots or manual pumping. Loop uses your ISF every 5 minutes when calculating predicted glucose levels.
 
 * At least one insulin sensitivity factor (ISF) must be entered
 * A daily schedule with varying ISF can be entered
 
 Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
 
-Incorrectly set ISF is the most common cause of roller coaster glucoses for new Loop users. You may need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#3rd-insulin-sensitivity-factor).
+Incorrectly set ISF is a common cause of roller coaster glucoses for new Loop users. You may need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#3rd-insulin-sensitivity-factor).
 
 
 ### Therapy Settings Review

@@ -176,7 +176,7 @@ Your Carb Ratio is the number of grams of carbohydrates covered by one unit of i
 
 ### Insulin Sensitivities
 
-Your Insulin Sensitivities refer to the drop in glucose expected from one unit of insulin over the full duration of the insulin action time.
+Your Insulin Sensitivities refer to the drop in glucose expected from one unit of insulin over the full duration of the insulin action time. You may have also seen the term Correction Factor or Insulin Sensitivity Factor (ISF). These are all referring to the same setting.
 
 * At least one insulin sensitivity must be entered
     * Use the &plus; sign, picker wheels and then tap "Add"

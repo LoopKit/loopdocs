@@ -53,6 +53,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Config Vars**: configuration parameters for a Nightscout Site
 
+**Correction Factor**: how many points your blood sugar will drop for each unit of insulin; Loop calls this Insulin Sensitivity Factor (ISF)
+
 **Correction Range**: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
 
 **CR**: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
@@ -107,7 +109,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **iOS**: operating system used by Apple Mobile devices (iPhone, iPod)
 
-**ISF**: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor
+**ISF**: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor
 
 **Issue**: On github - a formal method to report a problem, either code behavior or documentation
 
