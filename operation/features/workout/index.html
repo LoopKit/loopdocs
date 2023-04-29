@@ -2503,7 +2503,7 @@
 <li>Medtronic: select <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and use your Medtronic pump temp basal feature</li>
 </ul>
 <h2 id="how-overrides-work">How Overrides Work<a class="headerlink" href="#how-overrides-work" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr>, and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> together. Examples where this can be helpful include hormone cycles, steroid medications and/or exercise.</p>
+<p>Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> together. Examples where this can be helpful include hormone cycles, steroid medications and/or exercise.</p>
 <p><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> presets are (1) optional and (2) can be configured within Loop's workout icon (the little blue heart icon in the Loop toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.</p>
 <p align="center"><img alt="img/toolbar.png" src="../img/toolbar-override.svg" width="450" /></p>
 <h3 id="features-of-an-override">Features of an <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr><a class="headerlink" href="#features-of-an-override" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2523,19 +2523,19 @@
 </ul>
 <p>The <strong>overall insulin needs</strong> is applied to your basal rates, insulin sensitivities and carb ratios for the duration of the override.</p>
 <ul>
-<li>If the insulin needs is left at 100%, no change is made to basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> or <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr></li>
+<li>If the insulin needs is left at 100%, no change is made to basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> or <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr></li>
 <li>If you set an overall insulin needs adjustment <em>below</em> 100%, you are telling Loop you are more insulin sensitive and need a lighter touch.<ul>
 <li>Loop uses basal rates decreased from scheduled rates</li>
-<li>Loop uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers increased from settings</li>
+<li>Loop uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers increased from settings</li>
 </ul>
 </li>
 <li>If you set an overall insulin needs adjustment <em>above</em> 100%, you are telling Loop you are less insulin sensitive and need a heavier touch.<ul>
 <li>Loop uses basal rates increased from scheduled rates</li>
-<li>Loop uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers decreased from settings</li>
+<li>Loop uses <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers decreased from settings</li>
 </ul>
 </li>
-<li>While the override is active, the modified basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> are applied for <strong>every</strong> automated or manual insulin delivery (aside from the modified basal) and meal entry<ul>
-<li>Those <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers are associated with the carbs and/or insulin delivered during the override</li>
+<li>While the override is active, the modified basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> are applied for <strong>every</strong> automated or manual insulin delivery (aside from the modified basal) and meal entry<ul>
+<li>Those <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> numbers are associated with the carbs and/or insulin delivered during the override</li>
 <li>As the carbs and/or insulin "ages" during their absorption-time/duration-of-action, Loop maintains the sensitivity value associate with those during-the-override entries</li>
 </ul>
 </li>
@@ -2567,7 +2567,7 @@
 <p>If you stop Looping (i.e., walk away from your gear or glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr>. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a <a href="../../../loop-3/omnipod/#manual-temp-basal">Manual Temp Basal</a> setting.</p>
 </div>
 <h3 id="avoid-extreme-insulin-needs-setting">Avoid Extreme Insulin Needs Setting<a class="headerlink" href="#avoid-extreme-insulin-needs-setting" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There have been users who select a 10% overall insulin need. This is NOT the same as choosing a 10% temporary basal with the PDM. This changes your basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> by a factor of 10!</p>
+<p>There have been users who select a 10% overall insulin need. This is NOT the same as choosing a 10% temporary basal with the PDM. This changes your basal rates, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> and <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> by a factor of 10!</p>
 <div class="admonition warning">
 <p class="admonition-title">Scenario for 10% Sensitivity</p>
 <ul>
@@ -2575,7 +2575,7 @@
 <li>User doesn't think about the 10% and enters carbs while override is active<ul>
 <li>Loop suggests a tiny bolus and user accepts<ul>
 <li>User goes high because <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> was 10 times higher than Therapy Setting Value</li>
-<li>User stays high because <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called correction factor">ISF</abbr> is also 10 times higher than Therapy Setting Value<ul>
+<li>User stays high because <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is also 10 times higher than Therapy Setting Value<ul>
 <li>Automated corrections are 10% of typical corrections</li>
 <li>Basal supplied is 10% of Therapy Setting value</li>
 </ul>
