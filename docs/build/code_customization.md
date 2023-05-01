@@ -1,37 +1,31 @@
-## Code Customizations
+## Build then Customize
 
-!!! warning "Version 3.2.1"
-    With the release of Loop 3.2.1, the location for the Eros pod customizations has moved.
+For new Loopers, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire and build again.  The second build will be much easier than your first build.
 
-There is an optional method for applying patches. The procedure, developed for the GitHub Browser build method, also works for the Mac-Xcode build method. If the patch you want is prepared as a single commit (or a series of commits), it can be applied using the same command for both methods.
+These customizations require you to build the Loop app onto your iPhone, they cannot be done from within the app itself.
 
-* Mac-Xcode: paste the command(s) in the terminal (LoopWorkspace folder) and build again with Xcode
-* GitHub Broswer Build: paste the command(s) in the customization section of the build_loop.yml file and use the Build Loop Action
+## Customization Options
 
-A few of the specific commits on this page can be copied from the [Loop and Learn: Customization: Prepared Patches](https://www.loopandlearn.org/custom-code#prepared-patches) page. Others you create your own commit as described in [LoopDocs: GitHub Customization](../gh-actions/gh-customize.md#prepare-the-patches).
+Read about the customizations on this page before applying them.
 
-!!! question "Is it worth making Prepared Patches for Mac-Xcode build?"
-    That's a good question - only you can answer it.
+!!! warning "You take responsibility"
+    You are responsible when you decide to use customizations.
 
-### Mac-Xcode
+    Be sure to report what changes you made if you need to ask for assistance with your app.
 
-The customization instructions on this page were originally written for the [Mac-Xcode Build](../build/overview.md) method. The downloaded code on your computer has all the Modules available in Xcode. So you can search for the `Key_Phrase` and it will be found regardless of the Module. 
+Some customizations are the same for everyone and have been prepared for easy use. 
 
-### GitHub Browser Build
+* Mac-Xcode builders can use the [Loop and Learn: Apply Customizations to Loop](https://www.loopandlearn.org/build-select#apply-custom) script
+* GitHub builders can use [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
 
-The same `Key_Phrase` concept for finding lines to modify is used for the GitHub Browser Build method, but you need to apply a different procedure for creating the customization if you're just using a browser. The details on found on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
+Other customizations require that you create your own personalized version.
 
-A few commonly requested customizations are available as Prepared Patches that you can copy and paste, as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/prepared-patches).
+* Mac-Xcode builders: all the information required is on this page
+* GitHub builders: read this page and use [LoopDocs: GitHub Customization](../gh-actions/gh-customize.md#prepare-the-patches)
 
 For GitHub Browser Build, you can skip over the Mac-Xcode specific section and skip ahead to [Build-Time Features](#build-time-features).
 
-## Build then Customize
-
-For new builders, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using Xcode as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  
-
-When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.
-
-Based on Loop users’ experience, there are some common customizations documented on this page.  These customizations require you to build the Loop app onto your iPhone, they cannot be done from within the app itself.
+When applying a customization using Mac-Xcode, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.
 
 ### Find My Downloaded Loop Code
 
@@ -117,7 +111,9 @@ The instructions on this page were originally prepared for the Mac-Xcode method.
 
 The GitHub Browser Build method instructions are similar, but each one is used to create a commit to your fork. You will then save the SHA-1 for the commit, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
-For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number. 
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
+
+Some customizations are the same for all users, and do not require personalization. See [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list).
 
 For Mac-Xcode builders:
 
@@ -128,7 +124,7 @@ For Mac-Xcode builders:
 
 For GitHub Browser builders;
 
-* Some customizations can be copied from the [Loop and Learn: Customization: Prepared Patches](https://www.loopandlearn.org/custom-code#prepared-patches) page
+* Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
 * Otherwise, create your own commit for the Module identified under [Module, Folder, File](#module-folder-file)
 
 ### Key_Phrase
@@ -290,16 +286,16 @@ _Code After Modification to 50% of recommended insulin_
 !!! warning "Do not exceed 1.0"
     This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.
 
-## Modify Override Sensitivity
+## Modify Override Insulin Needs Picker
 
-Some people want finer settings on the override sensitivity picker and may want to limit the overall range for overrides – especially for children.
+Some people want finer settings on the override insulin needs picker (5% instead of 10%) and may want to limit the overall range for overrides – especially for children.
 
 !!! tip "1% Settings Available without Customization"
-    With the advent of Loop 3, the Override Sensitivity values are not limited by the default picker values of 10%.
+    With the advent of Loop 3, the Override Insulin Needs values are not limited by the default picker values of 10%.
 
     * Not available in Loop 2.2.x
     * Not available in FreeAPS (based off Loop 2.2.x)
-    * [Select 1% Sensitivity](../operation/features/workout.md#select-1-sensitivity)
+    * [Select 1% Insulin Needs](../operation/features/workout.md#select-1-insulin-needs)
 
 Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/workout.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
 
