@@ -143,7 +143,7 @@ When you fork a repository, the default branch is the one that is forked. That i
 | LoopKit/OmniKit | main |
 
 !!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: LnL Patches](https://www.loopandlearn.org/custom-code/#lnl-patches).
+    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: GitHub Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code/#add-lnl-patches).
 
     The process for creating your own customizations is the same as those using the released code.
 
@@ -151,7 +151,7 @@ When you fork a repository, the default branch is the one that is forked. That i
 
 Open your browser to your https://github.com/username/Module fork. Be sure to sync **your fork** if it shows it is behind the LoopKit repository.
 
-Navigate to the file you need to modify (using the instructions on the [LoopDocs: Customization Page](../build/code_customization.md))
+Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../build/code_customization.md#instructions-for-finding-the-lines))
 
 !!! tip "Pro Tip"
     Look at the files you want to change - if more than one change is desired for a single file - do them at the same time.

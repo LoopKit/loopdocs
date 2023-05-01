@@ -124,7 +124,7 @@ For Mac-Xcode builders:
 
 For GitHub Browser builders;
 
-* Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
+* Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list)
 * Otherwise, create your own customization for the Module identified under [Module, Folder, File](#module-folder-file) as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page
 
 ### Key_Phrase
@@ -732,7 +732,6 @@ If you want to add these customizations: CustomTypeOne LoopPatches and clients f
 These customizations are only for Loop 3:
 
 * Some are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches)
-* You may add one or more yourself as detailed in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code)
 
 ### Open a Terminal in LoopWorkspace Folder
 
@@ -821,7 +820,7 @@ Add LibreTransmitter to Loop as a plugin:
 
 Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
 
-This modification limits the period for Loop cycles to 4.8 minutes or longer.
+This modification limits the period for Loop cycles to 4.8 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list).
 
 !!! warning "Meant for Libre Users"
     This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.
@@ -859,11 +858,6 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
     return
 } else if let lastLoopCompleted = self.lastLoopCompleted {
 ```
-
-## Limit Loop HUD Update
-
-Loop 3.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (HUD). This was removed after users reported an increase in pod faults. If you are running Loop 3.0 and having frequent pod faults, you should build Loop 3.2. The customization that was here has been removed with the release of 3.2.
-
 
 ## Folders and Icons
 
