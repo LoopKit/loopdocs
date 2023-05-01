@@ -1,7 +1,7 @@
 ## Hot Topics
 
 !!! tip "Pro Tip"
-    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.com/custom-code#prepared-custom-list). You can use (and re-use) your customizations with either GitHub Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
+    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code/#prepared-custom-list). You can use (and re-use) your customizations with either GitHub Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
 
     * If you are building with Mac-Xcode method, you can use the same lines prepared for GitHub Browser method and simply paste them in your terminal at the LoopWorkspace folder to customize your code
 
@@ -36,7 +36,7 @@
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code_customization.md) page
-        * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.com/custom-code#custom-list)
+        * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list)
     * GitHub (each Module):
         1. Fork Module (if needed)
         1. Sync the Module (if needed)
@@ -89,7 +89,7 @@ Later, you will use information from your fork and the patch-# branches to creat
 Choose your link:
 
 * [New Fork](#new-fork): if you do not have a fork of this Module
-* [Code Updates](#code-updates): if you are returning after a new release (or you are using a dev branch)
+* [Code Updates](#code-updates): if you are returning after a new release
 * [Existing Fork for Module](#existing-fork-for-module): if you have a fork but need guidance on whether it is the right fork
 
 ### Code Updates
@@ -123,8 +123,8 @@ This table lists all the modules referred to on the Code Customization page link
 | --- | --- |
 | Loop | [https://github.com/LoopKit/Loop](https://github.com/LoopKit/Loop) |
 | LoopKit | [https://github.com/LoopKit/LoopKit](https://github.com/LoopKit/LoopKit) |
-| OmniBLE | [https://github.com/LoopKit/OmniBLE](https://github.com/LoopKit/OmniBLE) |
-| OmniKit | [https://github.com/LoopKit/OmniKit](https://github.com/LoopKit/OmniKit) |
+| OmniBLE (for DASH) | [https://github.com/LoopKit/OmniBLE](https://github.com/LoopKit/OmniBLE) |
+| OmniKit (for Eros) | [https://github.com/LoopKit/OmniKit](https://github.com/LoopKit/OmniKit) |
 
 Remember - you can only have a single fork of a given repository. If you already have a fork, you don't need another one; but it must be a fork from the URL listed the [Fork Table](#fork-table).
 
@@ -169,6 +169,7 @@ You will be using the "pencil" tool that comes with GitHub in your fork while lo
 * Once you make the change to a given file, tap on Commit changes (upper right)
 * Tap in the Commit message box and replace the default "Update filename" with a comment about what the customization does
 * Click on the "Create a new branch for this commit" option
+    * **Note: when you do the LoopWorkspace modifications, you will not choose this option**
 * Click on the Propose changes button
 * As soon as you do this, a new branch is automatically created with a name like username-patch-#, where the number increments each time
 * The next screen allows you to create a pull request - you do NOT want to do this
@@ -275,7 +276,8 @@ The indenting needs to match, so tab or (shift-tab) to line up the patches.
 * Once you have finished the edits for build_loop.yml
 * Tap on Commit changes (upper right)
 * Tap in the larger box below the "Update build_loop.yml" and indicate a summary of the customizations you added
-* Click on the option to "Commit directly to your branch"
+* Click on the option to "Commit directly to your branch" if it is not already selected
+    * **NOTE: for LoopWorkspace - commit directly to your default branch**
 * Click on Commit changes
 * You can make as many changes to build_loop.yml in your fork as you want
 

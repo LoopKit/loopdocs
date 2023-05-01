@@ -109,7 +109,7 @@ List of some flags and what they do:
 
 The instructions on this page were originally prepared for the Mac-Xcode method. 
 
-The GitHub Browser Build method instructions are similar, but each one is used to create a commit to your fork. You will then save the SHA-1 for the commit, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
+The GitHub Browser Build method instructions are similar, but each one is used to edit your fork of the particular Module in your GitHub account as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
 
@@ -125,7 +125,7 @@ For Mac-Xcode builders:
 For GitHub Browser builders;
 
 * Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
-* Otherwise, create your own commit for the Module identified under [Module, Folder, File](#module-folder-file)
+* Otherwise, create your own customization for the Module identified under [Module, Folder, File](#module-folder-file) as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page
 
 ### Key_Phrase
 
