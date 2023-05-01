@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#code-customizations" class="md-skip">
+        <a href="#build-then-customize" class="md-skip">
           Skip to content
         </a>
       
@@ -1779,38 +1779,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-customizations" class="md-nav__link">
-    Code Customizations
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Customizations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mac-xcode" class="md-nav__link">
-    Mac-Xcode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-browser-build" class="md-nav__link">
-    GitHub Browser Build
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#build-then-customize" class="md-nav__link">
     Build then Customize
   </a>
   
-    <nav class="md-nav" aria-label="Build then Customize">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    Customization Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization Options">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1888,8 +1868,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify-override-sensitivity" class="md-nav__link">
-    Modify Override Sensitivity
+  <a href="#modify-override-insulin-needs-picker" class="md-nav__link">
+    Modify Override Insulin Needs Picker
   </a>
   
 </li>
@@ -2088,13 +2068,6 @@
         <li class="md-nav__item">
   <a href="#limit-loop-for-faster-cgm" class="md-nav__link">
     Limit Loop for Faster CGM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limit-loop-hud-update" class="md-nav__link">
-    Limit Loop HUD Update
   </a>
   
 </li>
@@ -2541,38 +2514,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-customizations" class="md-nav__link">
-    Code Customizations
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Customizations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mac-xcode" class="md-nav__link">
-    Mac-Xcode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-browser-build" class="md-nav__link">
-    GitHub Browser Build
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#build-then-customize" class="md-nav__link">
     Build then Customize
   </a>
   
-    <nav class="md-nav" aria-label="Build then Customize">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    Customization Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization Options">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2650,8 +2603,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify-override-sensitivity" class="md-nav__link">
-    Modify Override Sensitivity
+  <a href="#modify-override-insulin-needs-picker" class="md-nav__link">
+    Modify Override Insulin Needs Picker
   </a>
   
 </li>
@@ -2855,13 +2808,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#limit-loop-hud-update" class="md-nav__link">
-    Limit Loop HUD Update
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#folders-and-icons" class="md-nav__link">
     Folders and Icons
   </a>
@@ -2885,31 +2831,28 @@
 
   <h1>Customize Your Loop</h1>
 
-<h2 id="code-customizations">Code Customizations<a class="headerlink" href="#code-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Version 3.2.1</p>
-<p>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>.2.1, the location for the Eros pod customizations has moved.</p>
-</div>
-<p>There is an optional method for applying patches. The procedure, developed for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method, also works for the Mac-<abbr title="program used to build an app">Xcode</abbr> build method. If the patch you want is prepared as a single <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> (or a series of commits), it can be applied using the same command for both methods.</p>
-<ul>
-<li>Mac-<abbr title="program used to build an app">Xcode</abbr>: paste the command(s) in the terminal (LoopWorkspace folder) and build again with <abbr title="program used to build an app">Xcode</abbr></li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Broswer Build: paste the command(s) in the customization section of the build_loop.yml file and use the Build Loop Action</li>
-</ul>
-<p>A few of the specific commits on this page can be copied from the <a href="https://www.loopandlearn.org/custom-code#prepared-patches">Loop and Learn: Customization: Prepared Patches</a> page. Others you create your own <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> as described in <a href="../../gh-actions/gh-customize/#prepare-the-patches">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Customization</a>.</p>
-<div class="admonition question">
-<p class="admonition-title">Is it worth making Prepared Patches for Mac-<abbr title="program used to build an app">Xcode</abbr> build?</p>
-<p>That's a good question - only you can answer it.</p>
-</div>
-<h3 id="mac-xcode">Mac-<abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#mac-xcode" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The customization instructions on this page were originally written for the <a href="../overview/">Mac-<abbr title="program used to build an app">Xcode</abbr> Build</a> method. The downloaded code on your computer has all the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> available in <abbr title="program used to build an app">Xcode</abbr>. So you can search for the <code>Key_Phrase</code> and it will be found regardless of the Module. </p>
-<h3 id="github-browser-build"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build<a class="headerlink" href="#github-browser-build" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The same <code>Key_Phrase</code> concept for finding lines to modify is used for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method, but you need to apply a different procedure for creating the customization if you're just using a browser. The details on found on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
-<p>A few commonly requested customizations are available as Prepared Patches that you can copy and paste, as explained at <a href="https://www.loopandlearn.org/prepared-patches">Loop and Learn: Loop Customization</a>.</p>
-<p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build, you can skip over the Mac-<abbr title="program used to build an app">Xcode</abbr> specific section and skip ahead to <a href="#build-time-features">Build-Time Features</a>.</p>
 <h2 id="build-then-customize">Build then Customize<a class="headerlink" href="#build-then-customize" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For new builders, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire (using <abbr title="program used to build an app">Xcode</abbr> as your editor) on the same download as the original build and then build again to the phone.  The second build will be much faster than the first build.  </p>
-<p>When applying a customization, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.</p>
-<p>Based on Loop users’ experience, there are some common customizations documented on this page.  These customizations require you to build the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
+<p>For new Loopers, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire and build again.  The second build will be much easier than your first build.</p>
+<p>These customizations require you to build the Loop app onto your iPhone, they cannot be done from within the app itself.</p>
+<h2 id="customization-options">Customization Options<a class="headerlink" href="#customization-options" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Read about the customizations on this page before applying them.</p>
+<div class="admonition warning">
+<p class="admonition-title">You take responsibility</p>
+<p>You are responsible when you decide to use customizations.</p>
+<p>Be sure to report what changes you made if you need to ask for assistance with your app.</p>
+</div>
+<p>Some customizations are the same for everyone and have been prepared for easy use. </p>
+<ul>
+<li>Mac-<abbr title="program used to build an app">Xcode</abbr> builders can use the <a href="https://www.loopandlearn.org/build-select#apply-custom">Loop and Learn: Apply Customizations to Loop</a> script</li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders can use <a href="https://www.loopandlearn.org/custom-code#custom-list">Loop and Learn: Customization: Single Customization List</a></li>
+</ul>
+<p>Other customizations require that you create your own personalized version.</p>
+<ul>
+<li>Mac-<abbr title="program used to build an app">Xcode</abbr> builders: all the information required is on this page</li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders: read this page and use <a href="../../gh-actions/gh-customize/#prepare-the-patches">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Customization</a></li>
+</ul>
+<p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build, you can skip over the Mac-<abbr title="program used to build an app">Xcode</abbr> specific section and skip ahead to <a href="#build-time-features">Build-Time Features</a>.</p>
+<p>When applying a customization using Mac-<abbr title="program used to build an app">Xcode</abbr>, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.</p>
 <h3 id="find-my-downloaded-loop-code">Find My Downloaded Loop Code<a class="headerlink" href="#find-my-downloaded-loop-code" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom.</p>
 <div class="admonition success">
@@ -3004,8 +2947,9 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 </table>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions on this page were originally prepared for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. </p>
-<p>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is used to create a <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. You will then save the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>, create a patch command and then add that patch command to your build_loop.yml file. Detailed instructions are on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
-<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number. </p>
+<p>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is used to edit your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the particular Module in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account as instructed on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
+<p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for (cmd-L #) the line number.</p>
+<p>Some customizations are the same for all users, and do not require personalization. See <a href="https://www.loopandlearn.org/custom-code#custom-list">Loop and Learn: Customization: Single Customization List</a>.</p>
 <p>For Mac-<abbr title="program used to build an app">Xcode</abbr> builders:</p>
 <ul>
 <li>Either <a href="#key_phrase">Key_Phrase</a> or <a href="#module-folder-file">Module, Folder, File</a>
@@ -3015,8 +2959,8 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 </ul>
 <p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser builders;</p>
 <ul>
-<li>Some customizations can be copied from the <a href="https://www.loopandlearn.org/custom-code#prepared-patches">Loop and Learn: Customization: Prepared Patches</a> page</li>
-<li>Otherwise, create your own <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for the Module identified under <a href="#module-folder-file">Module, Folder, File</a></li>
+<li>Some customizations can be copied from the <a href="https://www.loopandlearn.org/custom-code/#custom-list">Loop and Learn: Customization: Single Customization List</a></li>
+<li>Otherwise, create your own customization for the Module identified under <a href="#module-folder-file">Module, Folder, File</a> as instructed on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page</li>
 </ul>
 <h3 id="key_phrase">Key_Phrase<a class="headerlink" href="#key_phrase" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="copy highlight"><span class="filename">Example of a Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
@@ -3156,15 +3100,15 @@ Do not paste the result anywhere
 <p class="admonition-title">Do not exceed 1.0</p>
 <p>This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.</p>
 </div>
-<h2 id="modify-override-sensitivity">Modify <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity<a class="headerlink" href="#modify-override-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Some people want finer settings on the override sensitivity picker and may want to limit the overall range for overrides – especially for children.</p>
+<h2 id="modify-override-insulin-needs-picker">Modify <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Insulin Needs Picker<a class="headerlink" href="#modify-override-insulin-needs-picker" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some people want finer settings on the override insulin needs picker (5% instead of 10%) and may want to limit the overall range for overrides – especially for children.</p>
 <div class="admonition tip">
 <p class="admonition-title">1% Settings Available without Customization</p>
-<p>With the advent of <abbr title="Latest release with major updates">Loop 3</abbr>, the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Sensitivity values are not limited by the default picker values of 10%.</p>
+<p>With the advent of <abbr title="Latest release with major updates">Loop 3</abbr>, the <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Insulin Needs values are not limited by the default picker values of 10%.</p>
 <ul>
 <li>Not available in Loop 2.2.x</li>
 <li>Not available in FreeAPS (based off Loop 2.2.x)</li>
-<li><a href="../../operation/features/workout/#select-1-sensitivity">Select 1% Sensitivity</a></li>
+<li><a href="../../operation/features/workout/#select-1-insulin-needs">Select 1% Insulin Needs</a></li>
 </ul>
 </div>
 <p>Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
@@ -3541,7 +3485,6 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>These customizations are only for <abbr title="Latest release with major updates">Loop 3</abbr>:</p>
 <ul>
 <li>Some are already added to the released version of Loop in a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace for your convenience, <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop with Patches</a></li>
-<li>You may add one or more yourself as detailed in <a href="https://www.loopandlearn.org/custom-code">Loop and Learn: Loop Customization</a></li>
 </ul>
 <h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens <abbr title="program used to build an app">Xcode</abbr>; but to apply customizations, you need to type commands in the terminal.</p>
@@ -3617,7 +3560,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ul>
 <h2 id="limit-loop-for-faster-cgm">Limit Loop for Faster <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#limit-loop-for-faster-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="Latest release with major updates">Loop 3</abbr> enables higher rates of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.</p>
-<p>This modification limits the period for Loop cycles to 4.8 minutes or longer.</p>
+<p>This modification limits the period for Loop cycles to 4.8 minutes or longer. See also <a href="https://www.loopandlearn.org/custom-code/#custom-list">Loop and Learn: Single Customization List</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Meant for Libre Users</p>
 <p>This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.</p>
@@ -3643,8 +3586,6 @@ if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(last
     return
 } else if let lastLoopCompleted = self.lastLoopCompleted {
 </code></pre></div>
-<h2 id="limit-loop-hud-update">Limit Loop <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> Update<a class="headerlink" href="#limit-loop-hud-update" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="Latest release with major updates">Loop 3</abbr>.0 has a refreshTimer for interrogating pod status to display on the Heads-Up-Display (<abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>). This was removed after users reported an increase in pod faults. If you are running <abbr title="Latest release with major updates">Loop 3</abbr>.0 and having frequent pod faults, you should build <abbr title="Latest release with major updates">Loop 3</abbr>.2. The customization that was here has been removed with the release of 3.2.</p>
 <h2 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
 <p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
