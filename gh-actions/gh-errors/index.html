@@ -787,6 +787,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#missing-repository-access" class="md-nav__link">
+    Missing Repository Access
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2418,6 +2425,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#missing-repository-access" class="md-nav__link">
+    Missing Repository Access
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2659,6 +2673,26 @@
 </ul>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the First Time Steps to Create Certificates and then Build Loop and keep going.</p>
+<h3 id="missing-repository-access">Missing Repository Access<a class="headerlink" href="#missing-repository-access" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
+<p><code>Error cloning certificates git repo, please make sure you have access to the repository - see instructions above</code></p>
+<p>or </p>
+<p><code>Error cloning certificates repo, please make sure you have read access to the repository you want to use</code></p>
+<p>If you see this phrase, the <code>fastlane</code> package that is utilized during the <code>3. Create Certificates</code> action cannot access your <abbr title="contains project files and each file's revision history">repository</abbr> to create certificates for your Loop app. This is due to insufficient <abbr title="contains project files and each file's revision history">repository</abbr> access rights that were not granted during the creation of your <code>GH_PAT</code> token.</p>
+<p>To fix this error:</p>
+<ul>
+<li>Open this link: <a href="https://github.com/settings/tokens/">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/</a></li>
+<li>Here you will see your personal access token (<code>Fastlane Access Token</code>) that was created during <a href="../gh-first-time/#create-gh_pat">First Time: Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>: Create GH_PAT</a></li>
+<li>Note that <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr> (classic) is highlighted in the menu on the left</li>
+<li>Click on the token name (should be bold, blue <strong>Fastlane Access Token</strong> ) to open its detail page</li>
+<li>None of the checkboxes under <strong>Select Scopes</strong> will be checked – this is what's causing the issue.</li>
+<li>Add a check beside the <code>repo</code> permission scope (see red circled checkbox in graphic)</li>
+<li>Scroll all the way to the bottom and click <code>Update token</code> (it's a long way, ignore all other settings, do not check anything else)</li>
+</ul>
+<p><img alt="graphic showing missing repo scope with circled checkbox that user must check" src="../img/gh-missing-repo-scope.png" width="700" /></p>
+<p>After you have clicked <code>Update token</code> you should see the token overview again with a message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the X near the upper right side if it appears).</p>
+<h4 id="create-certificates_1">Create Certificates<a class="headerlink" href="#create-certificates_1" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You should be able to continue with the <a href="gh-first-time.md/#create-certificates">First Time Steps to Create Certificates</a> and then proceed from there with Build Loop and keep going.</p>
 <h2 id="action-build-loop-errors">Action: Build Loop Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Run Create Certificates First</p>
