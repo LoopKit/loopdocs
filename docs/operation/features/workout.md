@@ -4,12 +4,12 @@
 
 Many new Loopers interpret Loop Overrides as a one-for-one replacement for manual pump options where a temporary basal was applied for a particular activity. Although Loop Overrides can help in a situation where you previously used a temporary basal rate, overrides are more powerful.
 
-!!! danger "Changing Insulin Sensitivity is NOT like Manual Pump Temp Basal Change"
-    Loop Overrides are **not** the same as adjusting temp basal on a manual pump. The easiest way to restrict basal rates with an automated system is to raise your correction target temporarily. In some cases, you may need to also adjust sensitivity, but begin just by changing that target.
+!!! danger "Changing Overall Insulin Needs is NOT like Manual Pump Temp Basal Change"
+    Loop Overrides are **not** the same as adjusting temp basal on a manual pump. The easiest way to restrict basal rates with an automated system is to raise your correction target temporarily. In some cases, you may need to also adjust insulin needs, but begin just by changing that target.
 
-    When you modify insulin sensitivity, you are affecting **basal rates**, **carb ratios** and **insulin sensitivity factors** for the duration of the override.
+    When you modify insulin needs, you are affecting **basal rates**, **carb ratios** and **insulin sensitivity factors (ISF)** for the duration of the override.
 
-    A common mistake is to think selecting a 10% override is like selecting 10% basal rate with a manual pump. THIS IS NOT TRUE. You have told your automatic control system to modify all your settings by a factor of 10!
+    A common mistake is to think selecting an override with 10% Overall Insulin Needs is like selecting 10% basal rate with a manual pump. **With Loop, that selection modifies all your normal settings by a factor of 10!**ß
 
 ## Manual Temp Basal
 
@@ -55,9 +55,9 @@ The **overall insulin needs** is applied to your basal rates, insulin sensitivit
 * If you set an overall insulin needs adjustment _above_ 100%, you are telling Loop you are less insulin sensitive and need a heavier touch.
     * Loop uses basal rates increased from scheduled rates
     * Loop uses ISF and CR numbers decreased from settings
-* While the override is active, the modified basal rates, ISF and CR are applied for **every** automated or manual insulin delivery (aside from the modified basal) and meal entry
+* While the override is active, the modified basal rates, ISF and CR are applied for **every** automated or manual insulin delivery and affect the calculation for future IOB while the override is active
     * Those ISF and CR numbers are associated with the carbs and/or insulin delivered during the override
-    * As the carbs and/or insulin "ages" during their absorption-time/duration-of-action, Loop maintains the sensitivity value associate with those during-the-override entries
+    * As the carbs and/or insulin "ages" during their absorption-time/duration-of-action, Loop maintains the sensitivity values associated with those during-the-override entries
 
 For an override to be accepted:
 
@@ -77,7 +77,7 @@ Example:
 * At 10 pm, you set an override with a higher correction range target to start the following morning at 6 am
 * At approximately midnight, Loop will begin taking that future target into account in the dosing for each Loop cycle
 * By the time you awaken at 6 am, Loop should have your glucose in that higher target range
-* The sensitivity changes, if any, associated with that override do not affect the Loop prediction until the scheduled start time for the override
+* The insulin needs modification, if any, associated with that override do not affect the Loop prediction until the scheduled start time for the override
 
 ## How Overrides Do NOT Work
 
@@ -91,7 +91,7 @@ Overrides will work while you are Looping. Sounds obvious, right? But, the thing
 
 There have been users who select a 10% overall insulin need. This is NOT the same as choosing a 10% temporary basal with the PDM. This changes your basal rates, ISF and CR by a factor of 10!
 
-!!! warning "Scenario for 10% Sensitivity"
+!!! warning "Scenario for 10% Insulin Need"
 
     * User really wants insulin reduced and chooses 10% insulin need
     * User doesn't think about the 10% and enters carbs while override is active
@@ -109,31 +109,31 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
 
 Instead of selecting 10%, raise your correction range with a moderate needs adjustment. Loop tends to suspend insulin delivery via temp basals with the next CGM reading.
 
-With Loop 3, there is now a warning message in the meal entry screen when an override is active with an insulin sensitivity other than 100%. The user can decide whether to proceed with the meal entry with the override active.
+With Loop 3, there is now a warning message in the meal entry screen when an override is active with an overall insulin needs value other than 100%. The user can decide whether to proceed with the meal entry with the override active.
 
 If you feel the need to immediately halt insulin delivery, consider a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) or suspend command to the pump. If you choose to suspend, be sure to pay attention to the reminder to resume insulin delivery later.
 
 !!! tip "Extreme Athletes"
-    There are athletes who do need those extreme sensitivity changes and know how to use them appropriately. This typically involves extreme or prolonged exercise.
+    There are athletes who do need those extreme overall insulin need changes and know how to use them appropriately. This typically involves extreme or prolonged exercise.
 
 ## Create an Override Preset
 
 To create an override preset, tap on the workout icon. Then click the &plus; sign in the upper right corner to start a new preset entry.
 
-You must select an emoji, name the preset and modify either the sensitivity or target range or both to save your new preset
+You must select an emoji, name the preset and modify either the overall insulin needs or target range or both to save your new preset
 
 * Pick an emoji
 * Enter a name for the preset
 * Optional: change insulin needs
     - Default is 100% - no change to your settings
-    - You may use the picker wheel or [Select 1% Sensitivity](#select-1-sensitivity) increments
+    - You may use the picker wheel or [Select 1% Insulin Needs](#select-1-insulin-needs) increments
 * Optional: enter a target range
     - If you do not enter a target range, Loop will use your existing scheduled target range
 * Select whether you want the override to run indefinitely or for a finite time
 
 When you've made your selections, save the preset using the "Save" button in the upper right corner.
 
-### Select 1% Sensitivity
+### Select 1% Insulin Needs
 
 !!! warning "Not Available in 2.2.x"
     This feature is only available in Loop 3 or later.

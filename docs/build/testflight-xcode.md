@@ -6,8 +6,6 @@ There are several different methods for making use of TestFlight:
 * Use the GitHub [Browser Build](../gh-actions/gh-overview.md) method to build and distribute your own Loop app
 * Use TestFlight as a remote distribution (and backup) for an app you build using Xcode
 
-If you want to add specific customizations, [Customize your Loop](../build/code_customization.md), to your build, that can be more tedious with the GitHub method. There are a few (Prepared Patches) customizations available from [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-patches), but some people prefer additional modifications. These prepared patches, from LnL or those you create yourself, are added to the build_loop.yml file in your LoopWorkspace fork.
-
 This guide can also be followed to install other apps you build with Xcode via TestFlight. Examples include LoopFollow, LoopCaregiver, xDrip4iOS and GlucoseDirect.
 
 Some useful features of using TestFlight to install Loop:
