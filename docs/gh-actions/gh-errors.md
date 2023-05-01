@@ -164,6 +164,40 @@ Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#c
 
 You should be able to continue with the First Time Steps to Create Certificates and then Build Loop and keep going.
 
+
+
+### Missing Repository Access
+
+Copy the words on the line below and paste it into the search function for your text editor.
+
+`Error cloning certificates git repo, please make sure you have access to the repository - see instructions above`
+
+or 
+
+`Error cloning certificates repo, please make sure you have read access to the repository you want to use`
+
+If you see this phrase, the `fastlane` package that is utilized during the `3. Create Certificates` action cannot access your repository to create certificates for your Loop app. This is due to insufficient repository access rights that were not granted during the creation of your `GH_PAT` token.
+
+To fix this error:
+
+- Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup GitHub: Create GH_PAT](gh-first-time.md#create-gh_pat)
+  - Note that Tokens (classic) is highlighted in the menu on the left
+  - Click on the token name (should be bold, blue **Fastlane Access Token** ) to open its detail page
+  - None of the checkboxes under **Select Scopes** will be checked – this is what's causing the issue.
+  - Add a check beside the `repo` permission scope (see red circled checkbox in graphic)
+  - Scroll all the way to the bottom and click `Update token` (it's a long way, ignore all other settings, do not check anything else)
+
+![graphic showing missing repo scope with circled checkbox that user must check](img/gh-missing-repo-scope.png){width=700}
+
+After you have clicked `Update token` you should see the token overview again with a message `Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved. ` (You can dismiss the message using the X near the upper right side if it appears).
+
+#### Create Certificates
+
+You should be able to continue with the [First Time Steps to Create Certificates](gh-first-time.md/#create-certificates) and then proceed from there with Build Loop and keep going.
+
+
+
 ## Action: Build Loop Errors
 
 !!! warning "Run Create Certificates First"
@@ -288,5 +322,5 @@ This is not the first thing to try, but sometimes it is the best approach.
     The directions on the [GitHub First Time](gh-first-time.md) page have been improved.
 
     If you tried this earlier and did not make progress, you can delete the Match-Secrets repository and LoopWorkspace fork in your GitHub account. Make sure your Secrets are all correct and consistent, then start over at [First-Time: Create Match-Secrets](gh-first-time.md#create-match-secrets) and keep going. It will go much faster this time.
-
+    
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
