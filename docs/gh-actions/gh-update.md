@@ -19,15 +19,14 @@ This is only available with Loop 3 and Loop development branch.
 !!! question "FAQs"
     - **Do I need a computer?** No
     - **Can I do this on my phone?** Yes
-    - **Should I regenerate my GitHub Personal Access token every time?** It depends. Getting a new token resets the 90 day clock for when you get your email reminder. That can be a handy reminder that you need to rebuild to avoid TestFlight expiration.
-    - **I built with GitHub before Loop 3 was released, do I need to do anything?** Yes. Please follow this links [GitHub Early Adopters](#github-early-adopters)
+    - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access that never expires. It simplifies the build every 90-day process significantly
+    - **How do I regenerate my GitHub Personal Access token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token)
 
 ## GitHub Update Summary
 
 The brief summary is listed below:
 
 1. Log in to GitHub
-1. Update your GitHub token (if needed)
 1. Go to your LoopWorkspace repository
 1. Update your fork (if needed)
 1. Select Actions: Build Loop
@@ -43,17 +42,15 @@ The brief summary is listed below:
 
 If your GitHub Personal Access Token has not expired and you don't want to regenerate it, skip ahead to [GitHub Build Update](#github-build-update).
 
-If you received an email warning you that your token will expire soon, you can follow the steps shown at [GitHub Token Email](#github-token-email).
+If you want to follow the new recommendation of using a GitHub Personal Access Token that never expires, you can regenerate the new one at any time.
 
 ### Regenerate GitHub Token
 
-You can regenerate your GitHub Personal Access Token at any time.
-
-The graphics and instructions in this section are taken from a computer browser.
-
-If you want to update your token, it's best to make sure you are already signed in to GitHub. If you haven't logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green `Send SMS` button
+You can regenerate your GitHub Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)
 
 * [Link to access your GitHub Personal Access Token](https://github.com/settings/tokens)
+
+If you are not logged in to GitHub and have not logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green `Send SMS` button or entering your password.
 
 ![two-factor authentication for access to tokens](img/gh-sms-access-screen.png){width="300"}
 {align="center"}
@@ -68,46 +65,22 @@ After you click on `FastLane Access Token` your screen should be similar to the 
 ![review of fastlane access token on github](img/gh-token-review.png){width="600"}
 {align="center"}
 
-Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. If your previous token expired in 30 days, be sure to change Expiration to 90 days to match the TestFlight expiration rhythm. Once happy with Expiration selection, click on the green `Regenerate Token` button (red highlight in following graphic).
+Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. 
 
-* You may be asked to choose between Fine-grained and classic (choose classic)
+* Most Loopers will have classic personal access tokens
+    * If you are a developer who needs to use the fine-grained (by repository) option, that's fine
 
-![regenerate fastlane access token on github](img/gh-token-set-90-days.png){width="600"}
+Be sure to change the Expiration from `30 days` to `No Expiration`. At this time a GitHub warning appears. Click on the green `Regenerate Token` button (red highlight in following graphic).
+
+![regenerate fastlane access token on github](img/gh-token-no-expiration.svg){width="600"}
 {align="center"}
 
-Copy the token using the copy icon and save it along with your other secret settings. The next step is to update GH_PAT in your LoopWorkspace Repository Secrets.
+The next screen shows your new token. Copy the token using the copy icon and save it along with your other secret settings.
 
 ![regenerate fastlane access token on github](img/gh-token-updated.png){width="600"}
 {align="center"}
 
-Skip ahead to [Update Secrets](#update-secrets).
-
-### GitHub Token Email
-
-You will get an email from GitHub when your Personal Access token is getting close to expiration.
-
-This token is used as GH_PAT in your repository secrets when you initiate the Build Loop action. You will need to regenerate a new one and update the secret with the new token.
-
-I renewed my GitHub Personal Access token, updated my LoopWorkspace Repository GH_PAT Secret and started the build action for Loop, all on my phone in just a few minutes.
-
-All the graphics in this section are from my phone.
-
-Email warning:
-
-![email warning github token will expire](img/gh-pat-expiring-email.png){width="300"}
-{align="center"}
-
-Click on the "regenerate" link to be taken to your GitHub account (you might need to follow 2-factor authentication to get access). If your Expiration is set at 30 days, as shown, you should select 90 days to match the TestFlight expiration rhythm. That's how often you need to rebuild Loop using GitHub actions. The email acts as a handy reminder. Click on the green Regenerate token button.
-
-As soon as you regenerate, you cannot build again until you [Update Secrets](#update-secrets). Your current app in TestFlight is **not** affected, but might may be close to expiring. So finish the job while you are thinking about it.
-
-![phone screen instructing me to renew](img/regenerate-token-screen.png){width="300"}
-{align="center"}
-
-The next screen appears with your token (mine is not shown for security reasons - it's above the portion displayed). Copy your token by clicking on the copy button.
-
-![phone screen after hitting the regenerate button](img/after-regeneration.png){width="300"}
-{align="center"}
+The next step is to update GH_PAT in your LoopWorkspace Repository Secrets. (If you build other apps with this method - update the GH_PAT for all of them right now - do not forget.)
 
 ### Update Secrets
 
@@ -200,15 +173,22 @@ In the Loop app, once installed on your phone, tap on Settings -> Support -> Iss
 ![graphic indicating build details](img/gh-build-details.png){width="300"}
 {align="center"}
 
-## GitHub Early Adopters
+## GitHub Build for dev
 
-This section was written for people who used the GitHub build method before Loop 3.0.0 was released and want to keep using it. It needs to be updated because there are some useful instructions here.
+You can build any desired branch (available at LoopKit/LoopWorkspace) using the GitHub Browser build method. This section is suitable if you have already built either dev or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
 
-There are two steps
+**No matter the method used to build Loop for any branch other than main, you are testing development code. Please read this link now before continuing.**
 
-1. Connect your LoopWorkspace fork with the main branch
-1. Change your LoopWorkspace fork to have the main branch as the default branch
+* **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
 
+The instructions show using the dev branch. If you want a different branch, just substitute that branch name for dev. You must set that branch in your fork as the default branch.
+
+!!! tip "Overview of what you will do"
+    1. Connect your LoopWorkspace fork with the dev branch, if it is not already connected
+    1. Ensure your LoopWorkspace fork has the dev branch as the default branch
+    1. Run all the Actions again
+        * It might not be necessary, but some underlying changes may require this
+        * Running Action 1: Verify Secrets is not necessary because it is included in the other actions, but it is quick and then you don't have to decide which Actions you need to run
 
 ### Return to Your LoopWorkspace Fork
 
@@ -226,41 +206,47 @@ There are a lot of ways to get to your fork of LoopWorkspace - any method is fin
 
 ### Connect Fork to New Branch
 
-1. Click on the Branches icon to open the branches display as shown in the graphic below
-1. Click on the `New branch` button.
+#### Check Current Branches
 
-![access to branches display](img/early-adopter-01.svg){width="700"}
+1. Click on the Branches icon to open the branches display as shown in the lower half of the graphic below:
+    * If the branch you want is not listed, then continue with Step 2
+    * Otherwise, skip ahead to [Set Default Branch](#set-default-branch)
+1. Click on the `New branch` button
+
+![steps to add a branch](img/add-branch.svg){width="700"}
 {align="center"}
 
+#### Add Branch
 
-If you previously built when dev was the default branch, your initial new branch dialog view will look the top left graphic.
+Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:
 
 1. Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic
-2. Click on the drop down menu labeled 2 in the graphic and choose main
-3. Click on the Branch name box labeled 3 in the graphic and type main
+2. Click on the drop down menu labeled 2 in the graphic and choose dev
+3. Click on the Branch name box labeled 3 in the graphic and type dev
+    * The branch name in your fork should always match the branch name you are adding; check that you type it correctly
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
 
-![access to branches display](img/early-adopter-02.svg){width="700"}
+![steps to add a branch continued](img/add-branch-02.svg){width="700"}
 {align="center"}
 
 ### Set Default Branch
 
-Whenever you tap on Actions: Build Loop, you have the chance to select the desired branch before starting the workflow. But it's really better that the branch you want, typically `main`, be the default. That way you won't forget when you start the workflow (tell GitHub to start building).
+You need to make your new branch the default branch.
 
-If your desired branch is not the default branch, these are the steps to modify the default branch. For this example, we show how to change from a default branch of `dev` to a default branch of `main`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
+If your desired branch is not the default branch, these are the steps to modify the default branch. For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
 
 For the numbered steps below, refer to the graphic found under each group of steps.
 
 1. Click on the Settings Icon near the top right of your LoopWorkspace
-1. On the left side, click the `Branches` tab to open the Default Branch dialog screen
+    * You may need to scroll down to see the Default Branch as shown in the graphic - do not tap on the Branches tab to the left under Code and Automation
 
     ![show default branch](img/gh-settings-branch-01.svg){width="700"}
     {align="center"}
 
 1. To the right of the default branch name there is a pencil and a left-right arrow icon
-    * Tap on the icon to bring up the `Switch default branch to another branch` dialog
-1. Click on the dropdown next to the current default branch, in this example, `dev`
-1. Select the desired default branch, in this example, `main`
+    * Tap on the left-right arrow icon to bring up the `Switch default branch to another branch` dialog
+1. Click on the dropdown next to the current default branch, in this example, `main`
+1. Select the desired default branch, in this example, `dev`
 1. Click on the `Update` button
 
     ![modify default branch](img/gh-settings-branch-02.svg){width="700"}
@@ -275,26 +261,7 @@ For the numbered steps below, refer to the graphic found under each group of ste
 
 Your default branch has been changed.
 
-## GitHub Build for dev
 
-You can build Loop-dev using GitHub build method. This section is suitable if you have already built either dev or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
-
-**No matter the method used to build Loop-dev: GitHub actions or git commands, you are testing development code. Please read this link now before continuing.**
-
-* **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
-
-When building the dev branch, you may need to perform the steps listed in the `Early Adopter` section (linked later), but you will be making sure that your fork has the dev branch as the default branch.
-
-If you are building dev, it is assumed you can figure out the steps without explicit instructions.
-
-There are two steps:
-
-1. Connect your LoopWorkspace fork with the dev branch, if it is not already connected
-1. Ensure your LoopWorkspace fork has the dev branch as the default branch
-
-Skip back to [Return to Your LoopWorkspace Fork](#return-to-your-loopworkspace-fork) and follow the instructions to configure so the dev branch is in sync with LoopKit and the dev branch of your fork is your default branch.
-
-When you go through the steps for building Loop, all the places where the instructions say the branch should be `main`, your fork should show the `dev` branch instead.
 
 ### Loop dev Actions
 
@@ -304,12 +271,3 @@ When you go through the steps for building Loop, all the places where the instru
     * GitHub only shows the actions for the default branch
     * You must set the `dev` branch for your fork to be the default branch or you will not see the updated actions associated with the `dev` branch
 
-A new action was added with Loop 3.1 to provide better error messages if something is wrong with your Secrets. In addition, the Actions are numbered to match the order in which they should be applied.
-
-![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
-{align="left"}
-
-To generate the graphic below, some items were deliberately set to be incorrect in the Secrets list. Representative error messages are shown when running the validate secrets action.
-
-![representative messages with deliberate errors when running validate secrets](img/gh-validate-secrets.png){width="800"}
-{align="center"}
