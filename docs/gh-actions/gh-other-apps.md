@@ -7,7 +7,11 @@ The same technique is used and the same six Secrets are applied to each reposito
 * LoopCaregiver
 * Loop Follow
 
-!!! warning "GH_PAT"
+!!! warning "GH_PAT - NEW RECOMMENDATION"
+    It is now recommended that you use a GitHub Personal Access Token (GH_PAT) that never expires
+
+    - [GitHub Update: Regenerate GitHub Token](gh-update.md#regenerate-github-token)
+
     If you choose a GitHub personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each repository you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.
 
 ### Prerequisites
@@ -50,7 +54,9 @@ After successfully creating your fork of the repository for this app:
 ### Add Existing Secrets
 
 !!! tip "MATCH_PASSWORD"
-    An early version of GitHub First-Time had incorrect information about the need to save MATCH_PASSWORD. If you did not save your MATCH_PASSWORD in your file with all your Secrets, make up a new one, save it and add it to your LoopWorkspace as well as the repository for this new app.
+    An early version of GitHub First-Time had incorrect information about the need to save MATCH_PASSWORD.
+
+    If you did not save your MATCH_PASSWORD in your file with all your Secrets, you will need to delete your Match-Secrets repository, create a new one and then add all your Secrets into all you repositories again and run all the Actions again.
 
 Open the text file in which you maintain a copy of your 6 Secrets so you can copy each value into the Secrets for this repository.
 
