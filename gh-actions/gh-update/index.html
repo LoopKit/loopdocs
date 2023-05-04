@@ -733,13 +733,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#github-token-email" class="md-nav__link">
-    GitHub Token Email
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#update-secrets" class="md-nav__link">
     Update Secrets
   </a>
@@ -766,11 +759,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-early-adopters" class="md-nav__link">
-    GitHub Early Adopters
+  <a href="#github-build-for-dev" class="md-nav__link">
+    GitHub Build for dev
   </a>
   
-    <nav class="md-nav" aria-label="GitHub Early Adopters">
+    <nav class="md-nav" aria-label="GitHub Build for dev">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -790,26 +783,6 @@
           <li class="md-nav__item">
   <a href="#set-default-branch" class="md-nav__link">
     Set Default Branch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github-build-for-dev" class="md-nav__link">
-    GitHub Build for dev
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub Build for dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loop-dev-actions" class="md-nav__link">
-    Loop dev Actions
   </a>
   
 </li>
@@ -2358,13 +2331,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#github-token-email" class="md-nav__link">
-    GitHub Token Email
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#update-secrets" class="md-nav__link">
     Update Secrets
   </a>
@@ -2391,11 +2357,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-early-adopters" class="md-nav__link">
-    GitHub Early Adopters
+  <a href="#github-build-for-dev" class="md-nav__link">
+    GitHub Build for dev
   </a>
   
-    <nav class="md-nav" aria-label="GitHub Early Adopters">
+    <nav class="md-nav" aria-label="GitHub Build for dev">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2415,26 +2381,6 @@
           <li class="md-nav__item">
   <a href="#set-default-branch" class="md-nav__link">
     Set Default Branch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github-build-for-dev" class="md-nav__link">
-    GitHub Build for dev
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub Build for dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loop-dev-actions" class="md-nav__link">
-    Loop dev Actions
   </a>
   
 </li>
@@ -2489,17 +2435,17 @@
 <div class="admonition question">
 <p class="admonition-title">FAQs</p>
 <ul>
-<li><strong>Do I need a computer?</strong> No</li>
-<li><strong>Can I do this on my phone?</strong> Yes</li>
-<li><strong>Should I regenerate my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access token every time?</strong> It depends. Getting a new token resets the 90 day clock for when you get your email reminder. That can be a handy reminder that you need to rebuild to avoid <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration.</li>
-<li><strong>I built with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> before <abbr title="Latest release with major updates">Loop 3</abbr> was released, do I need to do anything?</strong> Yes. Please follow this links <a href="#github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters</a></li>
+<li><strong>Do I need a computer?</strong> No.</li>
+<li><strong>Can I do this on my phone?</strong> Yes, but it is easier on a computer or tablet.</li>
+<li><strong>Did the directions change?</strong> Yes. We now recommend you select a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access that never expires. It simplifies the build every 90-day process significantly.</li>
+<li><strong>How do I regenerate my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access token to never expire?</strong> See this section <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</li>
+<li><strong>What happens to my existing builds when I change my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token?</strong> Nothing. The <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> only affect future builds. Previous build will be available for the full 90 days.</li>
 </ul>
 </div>
 <h2 id="github-update-summary"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Update Summary<a class="headerlink" href="#github-update-summary" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The brief summary is listed below:</p>
 <ol>
 <li>Log in to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></li>
-<li>Update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> token (if needed)</li>
 <li>Go to your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (if needed)</li>
 <li>Select <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: Build Loop</li>
@@ -2516,50 +2462,41 @@
 </ol>
 <h2 id="github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token<a class="headerlink" href="#github-token" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token has not expired and you don't want to regenerate it, skip ahead to <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a>.</p>
-<p>If you received an email warning you that your token will expire soon, you can follow the steps shown at <a href="#github-token-email"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token Email</a>.</p>
+<p>If you want to follow the new recommendation of using a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token that never expires, you can regenerate the new one at any time.</p>
 <h3 id="regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token<a class="headerlink" href="#regenerate-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can regenerate your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token at any time.</p>
-<p>The graphics and instructions in this section are taken from a computer browser.</p>
-<p>If you want to update your token, it's best to make sure you are already signed in to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. If you haven't logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green <code>Send SMS</code> button</p>
+<p>You can regenerate your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)</p>
 <ul>
 <li><a href="https://github.com/settings/tokens">Link to access your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</a></li>
 </ul>
+<p>If you are not logged in to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and have not logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green <code>Send SMS</code> button or entering your password.</p>
 <p align="center"><img alt="two-factor authentication for access to tokens" src="../img/gh-sms-access-screen.png" width="300" /></p>
 <p>Once you are authenticated, your screen should be similar to the graphic below. The <code>FastLane Access Token</code> is a clickable link.</p>
 <p align="center"><img alt="list of personal access tokens on github" src="../img/gh-token-list.png" width="600" /></p>
 <p>After you click on <code>FastLane Access Token</code> your screen should be similar to the graphic below.</p>
 <p align="center"><img alt="review of fastlane access token on github" src="../img/gh-token-review.png" width="600" /></p>
-<p>Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. If your previous token expired in 30 days, be sure to change Expiration to 90 days to match the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration rhythm. Once happy with Expiration selection, click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
+<p>Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. </p>
 <ul>
-<li>You may be asked to choose between Fine-grained and classic (choose classic)</li>
+<li>Most Loopers will have classic personal access tokens<ul>
+<li>If you are a developer who needs to use the fine-grained (by <abbr title="contains project files and each file's revision history">repository</abbr>) option, that's fine</li>
 </ul>
-<p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-set-90-days.png" width="600" /></p>
-<p>Copy the token using the copy icon and save it along with your other secret settings. The next step is to update GH_PAT in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>.</p>
-<p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-updated.png" width="600" /></p>
-<p>Skip ahead to <a href="#update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
-<h3 id="github-token-email"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token Email<a class="headerlink" href="#github-token-email" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You will get an email from <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> when your Personal Access token is getting close to expiration.</p>
-<p>This token is used as GH_PAT in your <abbr title="contains project files and each file's revision history">repository</abbr> secrets when you initiate the Build Loop action. You will need to regenerate a new one and update the secret with the new token.</p>
-<p>I renewed my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access token, updated my LoopWorkspace Repository GH_PAT Secret and started the build action for Loop, all on my phone in just a few minutes.</p>
-<p>All the graphics in this section are from my phone.</p>
-<p>Email warning:</p>
-<p align="center"><img alt="email warning github token will expire" src="../img/gh-pat-expiring-email.png" width="300" /></p>
-<p>Click on the "regenerate" link to be taken to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account (you might need to follow 2-factor authentication to get access). If your Expiration is set at 30 days, as shown, you should select 90 days to match the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration rhythm. That's how often you need to rebuild Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> actions. The email acts as a handy reminder. Click on the green Regenerate token button.</p>
-<p>As soon as you regenerate, you cannot build again until you <a href="#update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. Your current app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is <strong>not</strong> affected, but might may be close to expiring. So finish the job while you are thinking about it.</p>
-<p align="center"><img alt="phone screen instructing me to renew" src="../img/regenerate-token-screen.png" width="300" /></p>
-<p>The next screen appears with your token (mine is not shown for security reasons - it's above the portion displayed). Copy your token by clicking on the copy button.</p>
-<p align="center"><img alt="phone screen after hitting the regenerate button" src="../img/after-regeneration.png" width="300" /></p>
+</li>
+</ul>
+<p>Be sure to change the Expiration from <code>30 days</code> to <code>No Expiration</code>. When you select <code>No Expiration</code> a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> warning appears. Click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
+<p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-no-expiration.svg" width="600" /></p>
+<p>The next screen shows your new token. Copy the token using the copy icon and save it along with your other secret settings.</p>
+<p align="center"><img alt="copy fastlane access token on github" src="../img/gh-token-to-copy.png" width="600" /></p>
+<p>The next step is to update <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. (If you build other apps with this method - update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> for all of them right now - do not forget.)</p>
 <h3 id="update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#update-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This example is for updating GH_PAT in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for your <abbr title="contains project files and each file's revision history">repository</abbr>, but the same method can be applied when changing any Secret.</p>
+<p>This example is for updating <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for your <abbr title="contains project files and each file's revision history">repository</abbr>, but the same method can be applied when changing any Secret.</p>
 <p>This can be done with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a> again.</p>
-<p>The graphics and instructions in this section are using a phone.</p>
+<p>The graphics and instructions in this section are using a phone. This was done just to prove we weren't kidding when we said you can do it all on your phone. Most people use a computer browser.</p>
 <p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
 <p>Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
 <p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach "<abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and variables", open the drop down indicator to see <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
 <p align="center"><img alt="phone screens showing the repository settings, secrets and actions" src="../img/phone-with-settings.gif" width="300" /></p>
 <p>After tapping on Settings -&gt; <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and Variables -&gt; <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
 <p align="center"><img alt="phone screen showing repository secrets list" src="../img/phone-secret-list.gif" width="300" /></p>
-<p>When you see the secret, GH_PAT, tap on the pencil and then scroll down until you see the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
+<p>When you see the secret, <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, tap on the pencil and then scroll down until you see the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
 <p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
 <p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> instructions to start a new build.</p>
 <h2 id="github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update<a class="headerlink" href="#github-build-update" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -2569,7 +2506,7 @@
 <p>Look to see if your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date</p>
 <ul>
 <li>When you go to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to do the update, simply sync the <abbr title="version of code within a single repository or workspace repository">branch</abbr> if it says there are updates and you get the latest release (details below graphic)<ul>
-<li>The dropdown in this graphic shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> (graphic to be updated later)</li>
+<li>The dropdown in this graphic shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li>Yours should show the main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ul>
 </li>
@@ -2579,14 +2516,18 @@
 <li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3</li>
 <li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code></li>
 </ul>
+<div class="admonition question">
+<p class="admonition-title">Building a different <abbr title="version of code within a single repository or workspace repository">branch</abbr></p>
+<p>Do I need to do anything special to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</p>
+<p>Yes: please follow instructions at <a href="#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></p>
+</div>
 </li>
 <li>
 <p>Build Loop - refer to graphic below as you follow the steps</p>
 <ul>
 <li>Click on the '<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>' tab</li>
-<li>Select the 'Build Loop' <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left</li>
+<li>Select the '4. Build Loop' <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left</li>
 <li>Look on the right and click 'Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>'</li>
-<li>Make sure the desired Branch is selected</li>
 <li>Click on the green <code>Run workflow</code> button in the dropdown</li>
 <li>Wait ~25-45 min for the build to complete and be processed by <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
 </ul>
@@ -2635,18 +2576,30 @@
 <li>When you see that sourceRoot, you know this app was installed from <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
 <li>In this case the buildDataString is associated with when the app was built, not when it was installed on your phone</li>
 <li>You can use 90 days from this date, as well as the Expires in ## Days on the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app, to know when you need to rebuild</li>
-<li>If you set your GH_PAT token to expire in 90 days, you'll get an email about a week ahead - that acts as good reminder</li>
+<li>If you set your <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> token to expire in 90 days, you'll get an email about a week ahead - that acts as good reminder</li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="graphic indicating build details" src="../img/gh-build-details.png" width="300" /></p>
-<h2 id="github-early-adopters"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Early Adopters<a class="headerlink" href="#github-early-adopters" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section was written for people who used the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method before <abbr title="Latest release with major updates">Loop 3</abbr>.0.0 was released and want to keep using it. It needs to be updated because there are some useful instructions here.</p>
-<p>There are two steps</p>
+<h2 id="github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You can build any desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> (available at LoopKit/LoopWorkspace) using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
+<p><strong>No matter the method used to build Loop for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than main, you are testing development code. Please read this link now before continuing.</strong></p>
+<ul>
+<li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
+</ul>
+<p>The instructions show using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you want a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, just substitute that <abbr title="version of code within a single repository or workspace repository">branch</abbr> name for dev. You must set that <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Overview of what you will do</p>
 <ol>
-<li>Connect your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> with the main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Change your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> to have the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Connect your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, if it is not already connected</li>
+<li>Ensure your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> has the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Run all the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again<ul>
+<li>It might not be necessary, but some underlying changes may require this</li>
+<li>Running Action 1: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> is not necessary because it is included in the other actions, but it is quick and then you don't have to decide which <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> you need to run</li>
+</ul>
+</li>
 </ol>
+</div>
 <h3 id="return-to-your-loopworkspace-fork">Return to Your LoopWorkspace Fork<a class="headerlink" href="#return-to-your-loopworkspace-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You need to be logged into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
 <p>There are a lot of ways to get to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace - any method is fine. Only one is provided in these docs.</p>
@@ -2659,37 +2612,48 @@
 <li>Click on LoopWorkspace to open that <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
 <h3 id="connect-fork-to-new-branch">Connect Fork to New Branch<a class="headerlink" href="#connect-fork-to-new-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h4 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ol>
-<li>Click on the Branches icon to open the branches display as shown in the graphic below</li>
-<li>Click on the <code>New branch</code> button.</li>
+<li>Click on the Branches icon to open the branches display as shown in the lower half of the graphic below:<ul>
+<li>If the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want is not listed, then continue with Step 2</li>
+<li>Otherwise, skip ahead to <a href="#set-default-branch">Set Default Branch</a></li>
+</ul>
+</li>
+<li>Click on the <code>New branch</code> button</li>
 </ol>
-<p align="center"><img alt="access to branches display" src="../img/early-adopter-01.svg" width="700" /></p>
-<p>If you previously built when dev was the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, your initial new <abbr title="version of code within a single repository or workspace repository">branch</abbr> dialog view will look the top left graphic.</p>
+<p align="center"><img alt="steps to add a branch" src="../img/add-branch-01.svg" width="700" /></p>
+<h4 id="add-branch">Add Branch<a class="headerlink" href="#add-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:</p>
 <ol>
 <li>Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic</li>
-<li>Click on the drop down menu labeled 2 in the graphic and choose main</li>
-<li>Click on the Branch name box labeled 3 in the graphic and type main</li>
+<li>Click on the drop down menu labeled 2 in the graphic and choose dev</li>
+<li>Click on the Branch name box labeled 3 in the graphic and type dev<ul>
+<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding; check that you type it correctly</li>
+</ul>
+</li>
 <li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ol>
-<p align="center"><img alt="access to branches display" src="../img/early-adopter-02.svg" width="700" /></p>
+<p align="center"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700" /></p>
 <h3 id="set-default-branch">Set Default Branch<a class="headerlink" href="#set-default-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Whenever you tap on <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>: Build Loop, you have the chance to select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> before starting the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>. But it's really better that the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want, typically <code>main</code>, be the default. That way you won't forget when you start the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> (tell <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to start building).</p>
-<p>If your desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, these are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
+<p>You need to make your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>If your desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, these are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
 <p>For the numbered steps below, refer to the graphic found under each group of steps.</p>
 <ol>
-<li>Click on the Settings Icon near the top right of your LoopWorkspace</li>
 <li>
-<p>On the left side, click the <code>Branches</code> tab to open the Default Branch dialog screen</p>
+<p>Click on the Settings Icon near the top right of your LoopWorkspace</p>
+<ul>
+<li>You may need to scroll down to see the Default Branch as shown in the graphic - do not tap on the Branches tab to the left under Code and Automation</li>
+</ul>
 <p align="center"><img alt="show default branch" src="../img/gh-settings-branch-01.svg" width="700" /></p>
 </li>
 <li>
 <p>To the right of the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> name there is a pencil and a left-right arrow icon</p>
 <ul>
-<li>Tap on the icon to bring up the <code>Switch default branch to another branch</code> dialog</li>
+<li>Tap on the left-right arrow icon to bring up the <code>Switch default branch to another branch</code> dialog</li>
 </ul>
 </li>
-<li>Click on the dropdown next to the current default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>dev</code></li>
-<li>Select the desired default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>main</code></li>
+<li>Click on the dropdown next to the current default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>main</code></li>
+<li>Select the desired default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>dev</code></li>
 <li>
 <p>Click on the <code>Update</code> button</p>
 <p align="center"><img alt="modify default branch" src="../img/gh-settings-branch-02.svg" width="700" /></p>
@@ -2703,34 +2667,6 @@
 </li>
 </ol>
 <p>Your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been changed.</p>
-<h2 id="github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can build Loop-dev using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
-<p><strong>No matter the method used to build Loop-dev: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> actions or <abbr title="a tool for version control">git</abbr> commands, you are testing development code. Please read this link now before continuing.</strong></p>
-<ul>
-<li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
-</ul>
-<p>When building the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you may need to perform the steps listed in the <code>Early Adopter</code> section (linked later), but you will be making sure that your <abbr title="a copy of code in a github repository other than the original">fork</abbr> has the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>If you are building dev, it is assumed you can figure out the steps without explicit instructions.</p>
-<p>There are two steps:</p>
-<ol>
-<li>Connect your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, if it is not already connected</li>
-<li>Ensure your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> has the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-</ol>
-<p>Skip back to <a href="#return-to-your-loopworkspace-fork">Return to Your LoopWorkspace Fork</a> and follow the instructions to configure so the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is in sync with LoopKit and the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>When you go through the steps for building Loop, all the places where the instructions say the <abbr title="version of code within a single repository or workspace repository">branch</abbr> should be <code>main</code>, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> should show the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> instead.</p>
-<h3 id="loop-dev-actions">Loop dev <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#loop-dev-actions" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr>.1 Update</p>
-<p>The current dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <abbr title="Latest release with major updates">Loop 3</abbr>.1.0, has an updated set of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
-<ul>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> only shows the actions for the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>You must set the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> for your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to be the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> or you will not see the updated actions associated with the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-</ul>
-</div>
-<p>A new action was added with <abbr title="Latest release with major updates">Loop 3</abbr>.1 to provide better error messages if something is wrong with your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
-<p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
-<p>To generate the graphic below, some items were deliberately set to be incorrect in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> list. Representative error messages are shown when running the validate secrets action.</p>
-<p align="center"><img alt="representative messages with deliberate errors when running validate secrets" src="../img/gh-validate-secrets.png" width="800" /></p>
 
 
 

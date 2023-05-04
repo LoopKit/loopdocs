@@ -2495,8 +2495,12 @@
 <li>Loop Follow</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">GH_PAT</p>
-<p>If you choose a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each <abbr title="contains project files and each file's revision history">repository</abbr> you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.</p>
+<p class="admonition-title"><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> - NEW RECOMMENDATION</p>
+<p>It is now recommended that you use a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token (<abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>) that never expires</p>
+<ul>
+<li><a href="../gh-update/#regenerate-github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Update: Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a></li>
+</ul>
+<p>If you choose a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> into the secrets for each <abbr title="contains project files and each file's revision history">repository</abbr> you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.</p>
 </div>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Wait until the <abbr title="contains project files and each file's revision history">repository</abbr> you are interested in adds the capability of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build. Many of the steps for each <abbr title="contains project files and each file's revision history">repository</abbr> are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.</p>
@@ -2563,8 +2567,9 @@
 </ul>
 <h3 id="add-existing-secrets">Add Existing <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#add-existing-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition tip">
-<p class="admonition-title">MATCH_PASSWORD</p>
-<p>An early version of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time had incorrect information about the need to save MATCH_PASSWORD. If you did not save your MATCH_PASSWORD in your file with all your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, make up a new one, save it and add it to your LoopWorkspace as well as the <abbr title="contains project files and each file's revision history">repository</abbr> for this new app.</p>
+<p class="admonition-title"><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></p>
+<p>An early version of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time had incorrect information about the need to save <abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr>.</p>
+<p>If you did not save your <abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr> in your file with all your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, you will need to delete your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr>, create a new one and then add all your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> into all you repositories again and run all the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again.</p>
 </div>
 <p>Open the text file in which you maintain a copy of your 6 <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> so you can copy each value into the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for this <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 <ol>
@@ -2648,7 +2653,7 @@
 </ul>
 <h2 id="review-app-identifier">Review App Identifier<a class="headerlink" href="#review-app-identifier" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the apple developer site.</p>
-<p>After successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see the identifier for your app with a Name and Bundle ID matching that in the table below. You will see your unique TEAMID embedded in the identifier. (If you previously built this App with <abbr title="program used to build an app">Xcode</abbr>, the name may start with XC but the ending should match.)</p>
+<p>After successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see the identifier for your app with a Name and Bundle ID matching that in the table below. You will see your unique <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> embedded in the identifier. (If you previously built this App with <abbr title="program used to build an app">Xcode</abbr>, the name may start with XC but the ending should match.)</p>
 <table>
 <thead>
 <tr>
@@ -2661,12 +2666,12 @@
 <tr>
 <td>LoopCaregiver</td>
 <td>LoopCaregiver</td>
-<td>com.TEAMID.loopkit.LoopCaregiver</td>
+<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.LoopCaregiver</td>
 </tr>
 <tr>
 <td>Loop Follow</td>
 <td>LoopFollow</td>
-<td>com.TEAMID.LoopFollow</td>
+<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.LoopFollow</td>
 </tr>
 </tbody>
 </table>
@@ -2695,11 +2700,11 @@
 <tbody>
 <tr>
 <td>LoopCaregiver</td>
-<td>com.TEAMID.loopkit.LoopCaregiver</td>
+<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.LoopCaregiver</td>
 </tr>
 <tr>
 <td>Loop Follow</td>
-<td>com.TEAMID.LoopFollow</td>
+<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.LoopFollow</td>
 </tr>
 </tbody>
 </table>
