@@ -17,10 +17,11 @@ This is only available with Loop 3 and Loop development branch.
     - Otherwise, start at [GitHub Build Update](#github-build-update)
 
 !!! question "FAQs"
-    - **Do I need a computer?** No
-    - **Can I do this on my phone?** Yes
-    - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access that never expires. It simplifies the build every 90-day process significantly
-    - **How do I regenerate my GitHub Personal Access token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token)
+    - **Do I need a computer?** No.
+    - **Can I do this on my phone?** Yes, but it is easier on a computer or tablet.
+    - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access that never expires. It simplifies the build every 90-day process significantly.
+    - **How do I regenerate my GitHub Personal Access token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token).
+    - **What happens to my existing builds when I change my GitHub Personal Access Token?** Nothing. The GH_PAT only affect future builds. Previous build will be available for the full 90 days.
 
 ## GitHub Update Summary
 
@@ -70,7 +71,7 @@ Click on Regenerate token (red highlight in previous graphic) to see screen simi
 * Most Loopers will have classic personal access tokens
     * If you are a developer who needs to use the fine-grained (by repository) option, that's fine
 
-Be sure to change the Expiration from `30 days` to `No Expiration`. At this time a GitHub warning appears. Click on the green `Regenerate Token` button (red highlight in following graphic).
+Be sure to change the Expiration from `30 days` to `No Expiration`. When you select `No Expiration` a GitHub warning appears. Click on the green `Regenerate Token` button (red highlight in following graphic).
 
 ![regenerate fastlane access token on github](img/gh-token-no-expiration.svg){width="600"}
 {align="center"}
@@ -88,7 +89,7 @@ This example is for updating GH_PAT in the Secrets for your repository, but the 
 
 This can be done with the GitHub Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just [Regenerate GitHub Token](#regenerate-github-token) again.
 
-The graphics and instructions in this section are using a phone.
+The graphics and instructions in this section are using a phone. This was done just to prove we weren't kidding when we said you can do it all on your phone. Most people use a computer browser.
 
 Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace repository and tap on the link.
 
@@ -116,7 +117,7 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 1. Sign in to GitHub and select your LoopWorkspace repository from your repositories list
 1. Look to see if your fork is up to date
     * When you go to your fork to do the update, simply sync the branch if it says there are updates and you get the latest release (details below graphic)
-        * The dropdown in this graphic shows the dev branch (graphic to be updated later)
+        * The dropdown in this graphic shows the dev branch
         * Yours should show the main branch
 
     ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
@@ -125,11 +126,15 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
     * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
     * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
 
+    !!! question "Building a different branch"
+        Do I need to do anything special to build a different branch?
+
+        Yes: please follow instructions at [GitHub Build for dev](#github-build-for-dev)
+
 1. Build Loop - refer to graphic below as you follow the steps
     * Click on the 'Actions' tab
-    * Select the 'Build Loop' workflow on the left
+    * Select the '4. Build Loop' workflow on the left
     * Look on the right and click 'Run workflow'
-    * Make sure the desired Branch is selected
     * Click on the green `Run workflow` button in the dropdown
     * Wait ~25-45 min for the build to complete and be processed by TestFlight
 
@@ -213,7 +218,7 @@ There are a lot of ways to get to your fork of LoopWorkspace - any method is fin
     * Otherwise, skip ahead to [Set Default Branch](#set-default-branch)
 1. Click on the `New branch` button
 
-![steps to add a branch](img/add-branch.svg){width="700"}
+![steps to add a branch](img/add-branch-01.svg){width="700"}
 {align="center"}
 
 #### Add Branch
@@ -260,14 +265,3 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
-
-
-
-### Loop dev Actions
-
-!!! warning "Loop 3.1 Update"
-    The current dev branch, Loop 3.1.0, has an updated set of Actions.
-
-    * GitHub only shows the actions for the default branch
-    * You must set the `dev` branch for your fork to be the default branch or you will not see the updated actions associated with the `dev` branch
-
