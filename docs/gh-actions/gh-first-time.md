@@ -20,13 +20,14 @@ This is only available for Loop 3 and greater versions and for Loop development 
         * Create a Match-Secrets private repository
         * Fork a repository (copy of LoopWorkspace)
         * Add Secrets to your repository
-        * Action: Add Identifiers
+        * Action: 1. Verify Secrets
+        * Action: 2. Add Identifiers
     * Apple:
         * Configure Identifiers for Loop
         * Create your version of Loop in App Store (personal use only, not for distribution)
     * GitHub:
-        * Action: Create Certificates
-        * Action: Build Loop
+        * Action: 3. Create Certificates
+        * Action: 4. Build Loop
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
 
@@ -34,16 +35,14 @@ This is only available for Loop 3 and greater versions and for Loop development 
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
     - **Isn't it hard to build every 90 days?** The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
-    - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explict steps are provided.
+    - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explict steps are provided at [GitHub Deploy: Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
     - **Can I still use my customizations?** Yes. [Customize with GitHub](gh-customize.md)
 
 **You must build Loop every 90 days when you use GitHub build method.**
 
-* You will get an email from GitHub letting you know your GitHub Person Access Token is about to expire
-* You can get a new token and start a new build within a few minutes - even on your phone: [GitHub Update](gh-update.md#github-update-summary)
-
-!!! tip "Expect Updates"
-    Plans are in progress to configure the GitHub action to automatically build every 60 days. Once this is in place, then you won't need to worry about building every 90 days. But these are just plans right now.
+* We recommend you configure your GitHub personal access token to never expire
+    * If you have one that expires, go to [GitHub Update: Regenerate GitHub Token](gh-update.md#regenerate-github-token)
+* Building a new version literally takes seconds once open your browser and go to your GitHub account 
 
 ## Prerequisites
 
@@ -54,9 +53,6 @@ This is only available for Loop 3 and greater versions and for Loop development 
 
     * Check to make sure what you are doing matches the instructions
     * Check to make sure you did not skip a step
-    * Notice - for Loop 3.0, the actions show up alphabetically but they have to be done in A, C, B order
-        * Add Identifiers (and do some more stuff), Create Certificates, Build Loop
-    * Loop 3.2 adds a Verify Secrets step and all the steps are numbered so the order makes more sense. Graphics will be updated later.
 
     Different people approach this differently. Choose your method to achieve success:
 
@@ -88,7 +84,11 @@ For the initial steps, you'll be going back and forth between GitHub and Apple D
 
 There are a number of terms that may seem unfamiliar with the GitHub Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.
 
-Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md). Others need an expanded explanation. If reading about the new terms first is confusing, finish reviewing the whole page and then come back.
+Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md).
+
+* You may find some terms in the Glossary not in alphabetical order. All the Secrets discussed on this page, are listed under Secrets in the Glossary.
+
+Others terms need an expanded explanation. If reading about the new terms first is confusing, finish reviewing the whole page and then come back.
 
 * Modules: You won't see this term but the concept is important when explaining the other terms
     * The Loop code uses modules to handle different components of the entire app
@@ -114,7 +114,7 @@ Some of these terms have ToolTips, so hover your mouse over the item - or review
 * API Key: Application Programming Interface Key
     * This key will be obtained by you from the Apple Developer website to enable your GitHub account to interface with Apple to create your app
 * Actions: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
-    * With Loop 3, actions to Add Identifiers, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer
+    * With Loop 3, actions to Verify Secrets, Add Identifiers, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer
     * The GitHub system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported at [GitHub Status](https://www.githubstatus.com/)
 
 ## Configure to use GitHub Build Actions
@@ -125,20 +125,13 @@ These instructions allow you to build Loop without having access to a Mac. They 
 
 * You can send Loop app updates to those you care for
 * You can access and install the Loop app via TestFlight if you lose or damage your device
-* You do not need to worry about correct Xcode/macOS versions
+* You do not need to worry about correct Xcode or macOS versions
 
 The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your Secrets. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
 
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
 Your app must be updated once every 90 days, at the current time, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
-
-!!! tip "Expect Updates"
-    Plans are in progress to configure the GitHub action to automatically build every 60 days. Once this is in place, then you won't need to worry about building every 90 days. But these are just plans right now.
-
-    In the meantime, configure your GH_PAT to expire every 90 days. This acts as a reminder to rebuild. (You get an email from GitHub about a week ahead of time.)
-
-    Keep checking back, or at least check when your 90-day GH_PAT expires. When the GitHub build process is updated, you can sync your fork, create a new GH_PAT that expires once a year, update it in secrets, create certs and build. But that is for the future.
 
 ### Save Your Information
 
@@ -151,7 +144,7 @@ Your app must be updated once every 90 days, at the current time, but it's simpl
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
 !!! info "A Note about Capitalization and Spaces"
-    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please use these names.
+    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please copy from the docs to use those exact names.
 
     The Secrets that you will add later use names that are capitalized and use underscore instead of spaces. Be precise and careful.
 
@@ -161,6 +154,8 @@ Your app must be updated once every 90 days, at the current time, but it's simpl
     If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.
 
     If even one character is capitalized when it should not be, you will get [GitHub Errors](gh-errors.md).
+
+    If you use a smart editor to store your FASTLANE_KEY, you are likely to get the mysterious `invalid curve name` error.
 
 The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Secrets for your LoopWorkspace fork, so they are listed twice in the list below.
 
@@ -193,10 +188,6 @@ The list below indicates what you need to record (save digitally so you can copy
     * FASTLANE_KEY
     * GH_PAT
     * MATCH_PASSWORD
-
-!!! tip "Note GH_PAT Expiration Date"
-    In your text-only saved secrets file, indicate the day you configured the GH_PAT. Since you update this every 90 days, until further notice, adding a note like: generated on Jan 29, 2023 helps you know whether the GH_PAT stored in your file is current or needs to be updated.
-
 
 ## Apple Developer Account
 
@@ -355,23 +346,26 @@ You must be logged into your GitHub account before starting this step. If you ar
 1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
     * Referring to the graphic
         * Note that Tokens (classic) is highlighted
-        * You may be asked to choose between Fine-grained and classic (choose classic)
-        * Type FastLane Access Token in the Note box
-    * The default Expiration time is 30 days - but you should select 90 days (use the drop down menu to select)
-        * You get an email when this token is close to expiration
-        * Since you must rebuild every 90 days, setting the Expiration time to 90 days acts as a convenient reminder
-        * See [GitHub Token](../gh-actions/gh-update.md#github-token) for instructions on regenerating when doing an update
+        * Most Looper will use the classic Token
+            * If you are a developer who needs to use fine-grained tokens, that is fine
+        * Edit the note box to be `FastLane Access Token`
+    * The default Expiration time is 30 days - but you should select `No Expiration` (use the drop down menu to select)
+        * GitHub will show a yellow warning when you do this
+        * Is is ok to ignore the warning
     * Add a check beside the `repo` permission scope
     * Scroll all the way to the bottom and click "Generate token" (it's a long way, ignore all other settings, do not check anything else)
 
-    ![request a new personal access token](img/gh-access-token.png){width="700"}
+    ![request a new personal access token](img/gh-access-token.svg){width="700"}
     {align="center"}
-
 
 1. A new screen appears showing your access token
     * Copy the token and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
-    * You can [Regenerate GitHub Token](gh-update.md#regenerate-github-token) for `GH_PAT` whenever you need
+    * You can [Regenerate GitHub Token](gh-update.md#regenerate-github-token) for `GH_PAT` if you lose it, but best to keep it safe
+
+    ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
+    {align="center"}
+
 
 ### Create Match-Secrets
 
@@ -452,7 +446,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 ### Configure Secrets
 
-!!! tip "Secrets are Common"
+!!! tip "Secrets can be used for Other Apps"
     * There are 6 Secrets that must be added to your fork of LoopWorkspace
     * These Secrets work for any branch in your fork (main or dev, for example)
     * These same Secrets would be added to your fork of a repository for [Other Apps](gh-other-apps.md)
@@ -541,7 +535,7 @@ Once all six secrets have been added to your LoopWorkspace, you are done with Se
 
 ## Validate Secrets
 
-This step, new with Loop 3.2.x checks that the Secrets you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
+This step checks that the Secrets you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
 This will be updated soon, but for now - follow the instructions under Add Identifiers for Loop, but do the first action: 1 Validate Secrets.
 

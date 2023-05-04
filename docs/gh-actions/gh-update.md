@@ -78,7 +78,7 @@ Be sure to change the Expiration from `30 days` to `No Expiration`. When you sel
 
 The next screen shows your new token. Copy the token using the copy icon and save it along with your other secret settings.
 
-![regenerate fastlane access token on github](img/gh-token-updated.png){width="600"}
+![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
 {align="center"}
 
 The next step is to update GH_PAT in your LoopWorkspace Repository Secrets. (If you build other apps with this method - update the GH_PAT for all of them right now - do not forget.)
