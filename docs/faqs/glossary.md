@@ -89,6 +89,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **github.com**: an online service for storing repositories, accessible from a browser
 
+**GitHub Personal Access Token**: used to enable Browser Build of Loop
+
 **Glucose Chart**: Display of measured and predicted glucose values
 
 **Glucose Safety Limit**: Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold
@@ -170,6 +172,18 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **SAGE**: sensor age on Nightscout site
 
 **Secrets**: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
+
+**TEAMID**: One of 6 Secrets: Apple Developer account member number
+
+**FASTLANE_ISSUER_ID**: One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes
+
+**FASTLANE_KEY_ID**: One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY
+
+**FASTLANE_KEY**: One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together
+
+**GH_PAT**: One of 6 Secrets: Generated with your GitHub account; set it to never expire
+
+**MATCH_PASSWORD**: One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository
 
 **SHA-1**: Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
 
