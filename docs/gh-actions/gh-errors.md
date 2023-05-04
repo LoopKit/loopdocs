@@ -18,12 +18,13 @@ These are some of the most common errors to date.
         * Hint: what should have been a "B", got typed as an "8"
     * The incorrect TEAMID will show up in your identifiers as the Bundle ID but . . .
         * You will not be able to Create Certificates or Build Loop because your TEAMID does not match the Bundle ID
-* Run the Actions in alphabetical order as they appear on the Actions screen instead of Add, Create, Build - the build step will fail if you have not first successfully created the certificates
+* Run the actions out of order or skip one
 
 ## Find Your Error
 
 There is a separate section for each step in the process. First you must follow the [Examine the Error](#examine-the-error) instructions to download the error log file. Then go to the section for the Action you were trying to complete to look for possible error strings that are in your log file.
 
+1. [Action: Verify Secrets](#action-verify-secrets-errors)
 1. [Action: Add Identifiers Errors](#action-add-identifiers-errors)
 1. [Action: Create Certificates Errors](#action-create-certificates-errors)
 1. [Action: Build Loop Errors](#action-build-loop-errors) before successful build
@@ -53,13 +54,26 @@ Click on the top link to view the highlighted display for that failure as shown 
     * Open the zip and look at the file called 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed
 * Once you open the text file with a text editor, search for the string(s) listed below to see if it has been documented
     * If you identify the error, fix it and try again
-    * Sometimes you need to do all 3 Actions again: Add Identifiers, (extra steps), Create Certificates and then Build Loop -> it does not hurt to repeat a step even if it was already successful
+    * Sometimes you need to do all Actions again: Verify Secrets, Add Identifiers, (extra steps), Create Certificates and then Build Loop -> it does not hurt to repeat a step even if it was already successful
     * The extra steps between Add Identifiers and Create Certificate are required in some cases - so go on and review the identifiers to make sure they have the correct App Group with your TEAMID and that the Loop identifier has Time Sensititve Notifications enabled
 * Still stuck?
     * Post the downloaded zip file or txt file on zulipchat along with what you've tried so far
+    * If you can't figure out how to download the zip file, just provide your github username - anyone can look at your repository and view the action logs - that's what "public" means
     * Screen shots for action failures are not helpful
 
 ![graphic with failure details for a GitHub Add Identifier action](img/action-result-failure.svg){width="700"}
+{align="center"}
+
+## Action: Verify Secrets Errors
+
+A new action was added with Loop 3.1 to provide better error messages if something is wrong with your Secrets. In addition, the Actions are numbered to match the order in which they should be applied.
+
+![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
+{align="left"}
+
+To generate the graphic below, some items were deliberately set to be incorrect in the Secrets list. Representative error messages are shown when running the validate secrets action.
+
+![representative messages with deliberate errors when running validate secrets](img/gh-validate-secrets.png){width="800"}
 {align="center"}
 
 
