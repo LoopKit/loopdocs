@@ -15,15 +15,16 @@ TestFlight is the only method available for installation to a phone when using t
 * Mac computer is not required
 * Most recent version of Xcode is not required
     * No more updating macOS then updating Xcode for certain iOS upgrades
-    * The time required for the initial setup for GitHub may take less time than one macOS/Xcode version update
+    * The time required for the initial setup for GitHub may take less time than one macOS and Xcode version update
 * Updates take a few minutes of your time to start and are ready to install on your phone in about an hour
 
 ### Cons
 
-The customization process is more tedious to set up but then easy to maintain. One set of commonly requested customizations is available, as explained at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-patches).
+The customization process can be more tedious to set up but then easy to maintain (for personalized customizations).
 
-* There are now instructions at Browser Build  [Customize with GitHub](../gh-actions/gh-customize.md)
-    * These instructions are for released code
+* Instructions are found at [Customize with GitHub](../gh-actions/gh-customize.md)
+* Frequently used customizations are prepared for you to copy and paste into build_loop.yml
+    * [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
 
 ## Requirements
 
@@ -64,6 +65,9 @@ There are a number of steps that must be completed the first time you use this m
 Try to:
 
 * Scroll back in the directions and see if you missed a paragraph or step.
-* Compare your screen's display with the graphics in LoopDocs. Is something different or does yours have an error message? If you have an error message, does it guide you to the problem and solution?
+* Compare your display with the graphics in LoopDocs.
+    * Is something different or does yours have an error message?
+    * If you have an error message, does it guide you to the problem and solution?
+    * Be aware that GitHub often updates where things are - search for GitHub directions if your display looks different than LoopDocs.
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
