@@ -3,47 +3,129 @@
 This is only available with Loop 3 and Loop development branch.
 
 !!! info "Time Estimate"
-    - If you need or choose to update your GitHub Personal Access token
+    - If you need to update your GitHub Personal Access token
         * 5 minutes to regenerate token
-        * 5 minutes to update one of your Secret Settings
+        * 5 minutes to update the GH_PAT Secret for each of your app repositories
     - Start the Build: 5 minutes
     - Wait for build to complete and appear in TestFlight on your phone
         * 30 to 45 minutes
 
 !!! abstract "Summary"
-    **You must build Loop every 90 days when you use the GitHub build method.**
+    **You must build Loop every 90 days when you use the GitHub build method - this is a TestFlight requirement.**
 
-    - For GitHub token update, start at [GitHub Token](#github-token)
-    - Otherwise, start at [GitHub Build Update](#github-build-update)
+    * The GitHub Personal Access Token expiration is independent of the TestFlight app expiration
+        * LoopDocs used to have you set up your token to expire at the same time as TestFlight but that added an unnecessary burden to the update process
+        * The new recommendation is that your GitHub Personal Access Token be updated to `No Expiration`
+    * To update your GitHub Personal Access Token, start at [GitHub Token](#github-token)
+    * Otherwise, start at [GitHub Build Update](#github-build-update)
 
 !!! question "FAQs"
     - **Do I need a computer?** No.
-    - **Can I do this on my phone?** Yes, but it is easier on a computer or tablet.
-    - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access that never expires. It simplifies the build every 90-day process significantly.
-    - **How do I regenerate my GitHub Personal Access token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token).
+    - **Can I do this on my phone?** Yes, especially after you update your GitHub token to `No Expiration`.
+    - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access Token that never expires. It simplifies the build every 90-day process significantly.
+    - **How do I set my GitHub Personal Access token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token).
     - **What happens to my existing builds when I change my GitHub Personal Access Token?** Nothing. The GH_PAT only affect future builds. Previous build will be available for the full 90 days.
 
-## GitHub Update Summary
+## GitHub Build Update
 
-The brief summary is listed below:
+!!! abstract "Summary of Update Steps"
+    * [Update Fork](#update-fork)
+    * [Build Loop](#build-loop)
+    * [Wait for TestFlight](#wait-for-testflight)
+    * [Install or Confirm Installation](#install-or-confirm-installation)
 
-1. Log in to GitHub
-1. Go to your LoopWorkspace repository
-1. Update your fork (if needed)
-1. Select Actions: Build Loop
-1. After Build completes and is processed by TestFlight (about 30 to 45 minutes)
-    * Loop is automatically updated on the phone when automatic updates are enabled in TestFlight (default) for that phone
+### Update Fork
 
-    or
+Open GitHub in your browser (sign in if needed) and select your LoopWorkspace repository from your repositories list.
 
-    * Open TestFlight on that phone to install new version when automatic updates are disabled
+Look to see if your fork is up to date.
 
+* When you go to your fork to do the update, simply sync the branch if it says there are updates and you get the latest release (details below graphic)
+    * The dropdown in this graphic shows the dev branch
+    * Yours should show the main branch
+
+![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
+{align="center"}
+
+* If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless you are near your 90 day TestFlight expiration date - in which case, proceed to Step 3
+* If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on `Update branch`
+
+!!! question "Building a different branch"
+    Do I need to do anything special to build a different branch?
+
+    Yes: please follow instructions at [GitHub Build for dev](#github-build-for-dev)
+
+### Build Loop
+
+The section continues immediately after the [Update Fork](#update-fork) section. Refer to graphic below as you follow the steps to Build Loop.
+
+* Click on the 'Actions' tab
+* Select the '4. Build Loop' workflow on the left
+* Look on the right and click 'Run workflow' to  see the dropdown
+* Click on the green `Run workflow` button in the dropdown
+* Wait ~25-45 min for the build to complete and be processed by TestFlight
+
+![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
+{align="center"}
+
+### Wait for TestFlight
+
+You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.
+
+* If you get an email that the action failed, then return to your repository and look for Build Action error messages
+    * Click on the most recent Build job with the red x by it
+    * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
+    * Repeat the build (previous step) and it should be fine the next time
+* If you get an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
+    * As long as you get the TestFlight updated app, you can ignore that email
+
+The updated Loop app will show up in your TestFlight app on the Looper's phone.
+
+* Your new app will have "Expires in 90 days"
+    * There may be older builds that are still in TestFlight
+    * It takes time for the update to show up in the TestFlight app
+* You will also see a build number in parentheses, that number increments each build - don't worry about the number
+
+### Install or Confirm Installation
+
+#### Automatic Update Disabled
+
+Option 1: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) disabled for Loop, you choose when to install the app on the phone.
+
+* Open TestFlight on your phone and click `Install` as shown in the GIF below
+* If you are building for a child, follow the [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
+
+![install Loop from TestFlight](img/testflight-install-loop.gif){width="300"}
+{align="center"}
+
+#### Automatic Update Enabled
+
+Option 2: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) enabled for Loop, the updated build will be installed over your existing app.
+
+* In this case, when you look at the TestFlight app on your phone, the app should have installed automatically
+* Refer to the GIF above, the message will say `Open` instead of `Install`
+
+## GitHub Build Details
+
+In the Loop app, once installed on your phone, tap on Settings -> Support -> Issue Report. The graphic below shows an example of the Build Details included in the report.
+
+* The `profileExpiration` listed here is irrelevant - the app expires when the TestFlight expiration indicates - a later version of Loop 3 will probably capture that date and provide a notification in the app; but for now, you must remember
+    * Pro Tip: Add a calender reminder for your next build
+* An app built with GitHub will display a `sourceRoot` that starts with `/Users/runner/work/LoopWorkspace`
+    * The `buildDateString` is when the app was built and transferred to TestFlight, not when it was installed on your phone
+    * You can use 90 days from this date, as well as the Expires in ## Days on the TestFlight app, to know when you need to rebuild
+
+![graphic indicating build details](img/gh-build-details.png){width="300"}
+{align="center"}
 
 ## GitHub Token
 
 If your GitHub Personal Access Token has not expired and you don't want to regenerate it, skip ahead to [GitHub Build Update](#github-build-update).
 
 If you want to follow the new recommendation of using a GitHub Personal Access Token that never expires, you can regenerate the new one at any time.
+
+!!! tip "Update new GH_PAT to Secrets"
+    After you get your new token, immediately add it to your Secrets for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify Secrets for each repository to make sure you did not make a mistake.
 
 ### Regenerate GitHub Token
 
@@ -62,6 +144,11 @@ Once you are authenticated, your screen should be similar to the graphic below. 
 {align="center"}
 
 After you click on `FastLane Access Token` your screen should be similar to the graphic below.
+
+!!! question "Your existing TestFlight builds are fine"
+    The yellow GitHub warning by the `Regenerate Token` button is for new builds you make in the future.
+
+    Previous builds are still available in TestFlight and are not affected by this action.
 
 ![review of fastlane access token on github](img/gh-token-review.png){width="600"}
 {align="center"}
@@ -111,72 +198,6 @@ When you see the secret, GH_PAT, tap on the pencil and then scroll down until yo
 {align="center"}
 
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [GitHub Build Update](#github-build-update) instructions to start a new build.
-
-## GitHub Build Update
-
-1. Sign in to GitHub and select your LoopWorkspace repository from your repositories list
-1. Look to see if your fork is up to date
-    * When you go to your fork to do the update, simply sync the branch if it says there are updates and you get the latest release (details below graphic)
-        * The dropdown in this graphic shows the dev branch
-        * Yours should show the main branch
-
-    ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
-    {align="center"}
-
-    * If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless you are near your 90 day expiration data - in which case, proceed to Step 3
-    * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch`
-
-    !!! question "Building a different branch"
-        Do I need to do anything special to build a different branch?
-
-        Yes: please follow instructions at [GitHub Build for dev](#github-build-for-dev)
-
-1. Build Loop - refer to graphic below as you follow the steps
-    * Click on the 'Actions' tab
-    * Select the '4. Build Loop' workflow on the left
-    * Look on the right and click 'Run workflow'
-    * Click on the green `Run workflow` button in the dropdown
-    * Wait ~25-45 min for the build to complete and be processed by TestFlight
-
-    ![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
-    {align="center"}
-
-
-1. You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.
-    * If you get an email that the action failed, then return to your repository and look for Build Action error messages
-        * Click on the most recent Build job with the red x by it
-        * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
-        * Repeat the build (previous step) and it should be fine the next time
-    * If you get an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
-        * As long as you get the TestFlight updated app, you can ignore that email
-1. The updated Loop app will show up in your TestFlight app
-    * But wait until you see "Expires in 90 days"
-    * The app is in TestFlight from your prior build
-    * It takes time for the update to show up in the TestFlight app
-    * You will also see a build number in parentheses, that will increment each time
-1. If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) enabled for Loop, the updated build will be installed over your existing app.
-1. If you choose to disable automatic updates
-    * Open TestFlight on your phone and click `Install` as shown in the GIF below
-    * If you have automatic updates enabled in TestFlight, the app should have installed automatically, in which case the message should say `Open`.
-
-    ![install Loop from TestFlight](img/testflight-install-loop.gif){width="300"}
-    {align="center"}
-
-1. If you are building for a child, follow the [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
-
-## GitHub Build Details
-
-In the Loop app, once installed on your phone, tap on Settings -> Support -> Issue Report. The graphic below shows an example of the Build Details included in the report.
-
-* Note that the profileExpiration listed here is irrelevant - the app expires when the TestFlight expiration indicates - a later version of Loop 3 will probably capture that date and provide a notification in the app; but for now, you must remember
-* Notice that the sourceRoot starts with `/Users/runner/work/LoopWorkspace`
-    * When you see that sourceRoot, you know this app was installed from GitHub build and TestFlight
-    * In this case the buildDataString is associated with when the app was built, not when it was installed on your phone
-    * You can use 90 days from this date, as well as the Expires in ## Days on the TestFlight app, to know when you need to rebuild
-    * If you set your GH_PAT token to expire in 90 days, you'll get an email about a week ahead - that acts as good reminder
-
-![graphic indicating build details](img/gh-build-details.png){width="300"}
-{align="center"}
 
 ## GitHub Build for dev
 
