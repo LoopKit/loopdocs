@@ -3,12 +3,17 @@
 This is only available with Loop 3 and Loop development branch.
 
 !!! info "Time Estimate"
-    - If you need to update your GitHub Personal Access token
-        * 5 minutes to regenerate token
-        * 5 minutes to update the GH_PAT Secret for each of your app repositories
+    Build Loop
+
     - Start the Build: 5 minutes
     - Wait for build to complete and appear in TestFlight on your phone
-        * 30 to 45 minutes
+        * about an hour
+        * depends on GitHub, Apple and TestFlight
+
+    Optional: If you need to update your GitHub Personal Access token
+
+    * 5 minutes to regenerate token
+    * 5 minutes to update the GH_PAT Secret for each of your app repositories
 
 !!! abstract "Summary"
     **You must build Loop every 90 days when you use the GitHub build method - this is a TestFlight requirement.**
@@ -41,13 +46,13 @@ Open GitHub in your browser (sign in if needed) and select your LoopWorkspace re
 Look to see if your fork is up to date.
 
 * When you go to your fork to do the update, simply sync the branch if it says there are updates and you get the latest release (details below graphic)
-    * The dropdown in this graphic shows the dev branch
+    * This particular graphic shows the dev branch
     * Yours should show the main branch
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
-* If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless you are near your 90 day TestFlight expiration date - in which case, proceed to Step 3
+* If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless you are near your 90 day TestFlight expiration date - in which case, proceed to [Build Loop](#build-loop)
 * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on `Update branch`
 
 !!! question "Building a different branch"
@@ -63,21 +68,21 @@ The section continues immediately after the [Update Fork](#update-fork) section.
 * Select the '4. Build Loop' workflow on the left
 * Look on the right and click 'Run workflow' to  see the dropdown
 * Click on the green `Run workflow` button in the dropdown
-* Wait ~25-45 min for the build to complete and be processed by TestFlight
+* Wait ~25 min for the build to complete successfully
+* It is then processed by Apple and sent to TestFlight (be patient)
 
 ![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
 {align="center"}
 
 ### Wait for TestFlight
 
-You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the (now updated) app is ready to test.
+You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the new app is ready to test.
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
     * Click on the most recent Build job with the red x by it
     * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
-    * Repeat the build (previous step) and it should be fine the next time
-* If you get an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
-    * As long as you get the TestFlight updated app, you can ignore that email
+    * Repeat the build (previous step) and it should be fine the next time - that just means Apple did not reply to GitHub as fast as GitHub expected
+* You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
 
 The updated Loop app will show up in your TestFlight app on the Looper's phone.
 
@@ -85,6 +90,11 @@ The updated Loop app will show up in your TestFlight app on the Looper's phone.
     * There may be older builds that are still in TestFlight
     * It takes time for the update to show up in the TestFlight app
 * You will also see a build number in parentheses, that number increments each build - don't worry about the number
+
+!!! tip "Calendar Reminder"
+    This is a good time to put a calendar reminder in your favorite app.
+
+    Set it up for a few days before the TestFlight app will expire.
 
 ### Install or Confirm Installation
 
@@ -120,7 +130,7 @@ In the Loop app, once installed on your phone, tap on Settings -> Support -> Iss
 
 ## GitHub Token
 
-If your GitHub Personal Access Token has not expired and you don't want to regenerate it, skip ahead to [GitHub Build Update](#github-build-update).
+If your GitHub Personal Access Token has not expired and you don't want to regenerate it, you don't need this section.
 
 If you want to follow the new recommendation of using a GitHub Personal Access Token that never expires, you can regenerate the new one at any time.
 
