@@ -794,28 +794,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#return-to-your-loopworkspace-fork" class="md-nav__link">
-    Return to Your LoopWorkspace Fork
+  <a href="#check-current-branches" class="md-nav__link">
+    Check Current Branches
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#connect-fork-to-new-branch" class="md-nav__link">
-    Connect Fork to New Branch
+  <a href="#add-branch" class="md-nav__link">
+    Add Branch
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-default-branch" class="md-nav__link">
-    Set Default Branch
+  <a href="#update-branch" class="md-nav__link">
+    Update Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-branch" class="md-nav__link">
+    Build Branch
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-default-branch" class="md-nav__link">
+    Change Default Branch
+  </a>
   
 </li>
       
@@ -2419,28 +2433,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#return-to-your-loopworkspace-fork" class="md-nav__link">
-    Return to Your LoopWorkspace Fork
+  <a href="#check-current-branches" class="md-nav__link">
+    Check Current Branches
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#connect-fork-to-new-branch" class="md-nav__link">
-    Connect Fork to New Branch
+  <a href="#add-branch" class="md-nav__link">
+    Add Branch
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-default-branch" class="md-nav__link">
-    Set Default Branch
+  <a href="#update-branch" class="md-nav__link">
+    Update Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-branch" class="md-nav__link">
+    Build Branch
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-default-branch" class="md-nav__link">
+    Change Default Branch
+  </a>
   
 </li>
       
@@ -2553,6 +2581,9 @@
 <li>Repeat the build (previous step) and it should be fine the next time - that just means Apple did not reply to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> as fast as <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> expected</li>
 </ul>
 </li>
+</ul>
+<h4 id="apple-email-to-ignore">Apple Email to Ignore<a class="headerlink" href="#apple-email-to-ignore" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
 <li>You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that</li>
 </ul>
 <p>The updated Loop app will show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app on the Looper's phone.</p>
@@ -2651,42 +2682,29 @@
 <ul>
 <li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
 </ul>
-<p>The instructions show using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you want a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, just substitute that <abbr title="version of code within a single repository or workspace repository">branch</abbr> name for dev. You must set that <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>The graphics show the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you want a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, just substitute that <abbr title="version of code within a single repository or workspace repository">branch</abbr> name for dev.</p>
 <div class="admonition tip">
 <p class="admonition-title">Overview of what you will do</p>
 <ol>
-<li>Connect your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, if it is not already connected</li>
-<li>Ensure your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> has the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Run all the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again<ul>
-<li>It might not be necessary, but some underlying changes may require this</li>
-<li>Running Action 1: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> is not necessary because it is included in the other actions, but it is quick and then you don't have to decide which <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> you need to run</li>
+<li>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> must have the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want<ul>
+<li>You will either add it or make sure it is up to date</li>
 </ul>
 </li>
+<li>Run Action: 4. Build Loop but select your <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the Run Workflow dropdown - see <a href="#build-branch">Build Branch</a></li>
 </ol>
 </div>
-<h3 id="return-to-your-loopworkspace-fork">Return to Your LoopWorkspace Fork<a class="headerlink" href="#return-to-your-loopworkspace-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You need to be logged into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
-<p>There are a lot of ways to get to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace - any method is fine. Only one is provided in these docs.</p>
-<ul>
-<li>Click on your personal icon at upper right to see the drop-down menu and select "Your repositories"</li>
-</ul>
-<p align="center"><img alt="drop-down-menu" src="../img/gh-quick-access.png" width="200" /></p>
-<ul>
-<li>You should see (at least) 2 repositories: <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> and LoopWorkspace</li>
-<li>Click on LoopWorkspace to open that <abbr title="contains project files and each file's revision history">repository</abbr></li>
-</ul>
-<h3 id="connect-fork-to-new-branch">Connect Fork to New Branch<a class="headerlink" href="#connect-fork-to-new-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<h4 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h3 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> is at <code>https://github.com/username/LoopWorkspace</code> where you substitute your actual <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code>. You need to be logged into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Review the graphic below as you go through the steps.</p>
 <ol>
-<li>Click on the Branches icon to open the branches display as shown in the lower half of the graphic below:<ul>
+<li>Click on the Branches icon to display the branches as shown in the lower half of the graphic below:<ul>
 <li>If the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want is not listed, then continue with Step 2</li>
-<li>Otherwise, skip ahead to <a href="#set-default-branch">Set Default Branch</a></li>
+<li>Otherwise, skip ahead to <a href="#update-branch">Update Branch</a></li>
 </ul>
 </li>
-<li>Click on the <code>New branch</code> button</li>
+<li>Click on the <code>New branch</code> button and follow the <a href="#add-branch">Add Branch</a> steps</li>
 </ol>
 <p align="center"><img alt="steps to add a branch" src="../img/add-branch-01.svg" width="700" /></p>
-<h4 id="add-branch">Add Branch<a class="headerlink" href="#add-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h3 id="add-branch">Add Branch<a class="headerlink" href="#add-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:</p>
 <ol>
 <li>Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic</li>
@@ -2698,9 +2716,29 @@
 <li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ol>
 <p align="center"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700" /></p>
-<h3 id="set-default-branch">Set Default Branch<a class="headerlink" href="#set-default-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You need to make your new <abbr title="version of code within a single repository or workspace repository">branch</abbr> the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>If your desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, these are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
+<h3 id="update-branch">Update Branch<a class="headerlink" href="#update-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Tap the <code>Code</code> button (upper left) and ensure this <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date.</p>
+<ul>
+<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>If the message indicates this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is "behind", tap on the sync <abbr title="a copy of code in a github repository other than the original">fork</abbr> button and then the Update <abbr title="version of code within a single repository or workspace repository">branch</abbr> button</li>
+</ul>
+<p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
+<h3 id="build-branch">Build Branch<a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you want a <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be the one you build all the time, you may choose to <a href="#change-default-branch">Change Default Branch</a>. This is not necessary except for special cases.</p>
+<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you Build Loop. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
+<p align="center"><img alt="build loop using github actions" src="../img/action-04-build-loop.svg" width="700" /></p>
+<h2 id="change-default-branch">Change Default Branch<a class="headerlink" href="#change-default-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There can be several reasons why you would change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<ul>
+<li>It can be convenient to have the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you build most be configured as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to build has a different <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> than your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (not typical)<ul>
+<li>In this case, you <strong>must</strong> modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Check the zulipchat conversation about the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are testing to see if it is necessary to make it default</li>
+</ul>
+</li>
+</ul>
+<p>These are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
 <p>For the numbered steps below, refer to the graphic found under each group of steps.</p>
 <ol>
 <li>
