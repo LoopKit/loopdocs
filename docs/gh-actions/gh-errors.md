@@ -2,7 +2,9 @@
 
 This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update LoopDocs to make it easier for the next person to succeed without errors.
 
-If you've been around Loop for a while, you know the mantra about screen shots. Well, for GitHub Build Action Failures, screen shots are close to useless. If you get an error with an Action, you should download the error log and examine it for known diagnosis strings. If you are still stuck then post the zip or the 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed. Please see [Examine the Error](#examine-the-error) for instructions.
+If you've been around Loop for a while, you know the mantra about screen shots. Well, for GitHub Build Action Failures, **screen shots are close to useless**. If you get an error with an Action, you should use the search feature for known diagnosis strings. If you are still stuck then post your request for help along with your **GitHub username**. Mentors can go to your public LoopWorkspace fork - check that your branch is up to date and then view your Action log files directly.
+
+But first - try to diagnose it yourself using this page.
 
 ## Most Common Mistakes
 
@@ -15,14 +17,14 @@ These are some of the most common errors to date.
     * The alpha-numeric values used for GH_PAT, FASTLANE_ISSUER_ID and FASTLANE_KEY contain both upper and lower-case characters and all the values are case-sensitive
 * When entering TEAMID, make a spelling error in the value - please copy and paste instead of typing what you think you see
     * If you type in your TEAMID as 0123498989 when it is really 012349B989, you may not notice
-        * Hint: what should have been a "B", got typed as an "8"
+        * Hint: what should have been the letter "B", got typed as the number "8"
     * The incorrect TEAMID will show up in your identifiers as the Bundle ID but . . .
         * You will not be able to Create Certificates or Build Loop because your TEAMID does not match the Bundle ID
 * Run the actions out of order or skip one
 
 ## Find Your Error
 
-There is a separate section for each step in the process. First you must follow the [Examine the Error](#examine-the-error) instructions to download the error log file. Then go to the section for the Action you were trying to complete to look for possible error strings that are in your log file.
+There is a separate section for each step in the process. First you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 
 1. [Action: Verify Secrets](#action-verify-secrets-errors)
 1. [Action: Add Identifiers Errors](#action-add-identifiers-errors)
@@ -44,25 +46,17 @@ If you click on the action name, it opens a secondary screen as shown below.
 ![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result-secondary.svg){width="500"}
 {align="center"}
 
-Click on the top link to view the highlighted display for that failure as shown in the graphic below. 
-
-* See if you can find your error message on this page
-* The display will show it highlighted in red font as seen below
-* If you find it hard to see the error, then download the log file - see inset in graphic below
-    * Tap on the gear icon
-    * Select `Download log archive`
-    * Open the zip and look at the file called 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed
-* Once you open the text file with a text editor, search for the string(s) listed below to see if it has been documented
-    * If you identify the error, fix it and try again
-    * Sometimes you need to do all Actions again: Verify Secrets, Add Identifiers, (extra steps), Create Certificates and then Build Loop -> it does not hurt to repeat a step even if it was already successful
-    * The extra steps between Add Identifiers and Create Certificate are required in some cases - so go on and review the identifiers to make sure they have the correct App Group with your TEAMID and that the Loop identifier has Time Sensititve Notifications enabled
-* Still stuck?
-    * Post the downloaded zip file or txt file on zulipchat along with what you've tried so far
-    * If you can't figure out how to download the zip file, just provide your github username - anyone can look at your repository and view the action logs - that's what "public" means
-    * Screen shots for action failures are not helpful
+Click on the top link to view the record of the failed action as shown in the graphic below. You will be pasting strings into the search box (highlighted with green rectangle) to look for a documented error. Please read the instructions below the graphic.
 
 ![graphic with failure details for a GitHub Add Identifier action](img/action-result-failure.svg){width="700"}
 {align="center"}
+
+* Paste in a possible error string (copy it exactly); repeat until you find a match
+* If the possible error string is found - follow the directions for that error
+* Still stuck?
+    * Post for help including your GitHub **username**
+    * With that, mentors can diagnose your problem - or at least made a good guess at what you need to try
+    * Please **do not post a screenshot**
 
 ## Action: Verify Secrets Errors
 
