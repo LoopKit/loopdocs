@@ -82,6 +82,9 @@ You'll receive an App Store Connect email confirming that the build has complete
     * Click on the most recent Build job with the red x by it
     * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
     * Repeat the build (previous step) and it should be fine the next time - that just means Apple did not reply to GitHub as fast as GitHub expected
+
+#### Apple Email to Ignore
+
 * You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
 
 The updated Loop app will show up in your TestFlight app on the Looper's phone.
@@ -247,6 +250,16 @@ Each step in the list below matches with the number in the graphic. In the top h
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
 
 ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
+{align="center"}
+
+### Update Branch
+
+Tap the `Code` button (upper left) and ensure this branch in your fork is up to date.
+
+* Select the desired branch in the dropdown menu (this graphic shows dev branch)
+* If the message indicates this branch is "behind", tap on the sync fork button and then the Update branch button
+
+![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
 ### Build Branch
