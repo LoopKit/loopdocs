@@ -217,40 +217,26 @@ You can build any desired branch (available at LoopKit/LoopWorkspace) using the 
 
 * **[What's going on in the dev branch](../version/development.md#whats-going-on-in-the-dev-branch)**
 
-The instructions show using the dev branch. If you want a different branch, just substitute that branch name for dev. You must set that branch in your fork as the default branch.
+The graphics show the dev branch. If you want a different branch, just substitute that branch name for dev.
 
 !!! tip "Overview of what you will do"
-    1. Connect your LoopWorkspace fork with the dev branch, if it is not already connected
-    1. Ensure your LoopWorkspace fork has the dev branch as the default branch
-    1. When you run the [Build Loop](#build-loop) Action you must select your branch as part of the process
+    1. Your LoopWorkspace fork must have the branch you want
+        * You will either add it or make sure it is up to date
+    1. Run Action: 4. Build Loop but select your branch in the Run Workflow dropdown - see [Build Branch](#build-branch)
 
-### Return to Your LoopWorkspace Fork
+### Check Current Branches
 
-You need to be logged into GitHub.
+Your LoopWorkspace fork is at `https://github.com/username/LoopWorkspace` where you substitute your actual GitHub `username`. You need to be logged into GitHub. Review the graphic below as you go through the steps.
 
-There are a lot of ways to get to your fork of LoopWorkspace - any method is fine. Only one is provided in these docs.
-
-* Click on your personal icon at upper right to see the drop-down menu and select "Your repositories"
-
-![drop-down-menu](img/gh-quick-access.png){width="200"}
-{align="center"}
-
-* You should see (at least) 2 repositories: Match-Secrets and LoopWorkspace
-* Click on LoopWorkspace to open that repository
-
-### Connect Fork to New Branch
-
-#### Check Current Branches
-
-1. Click on the Branches icon to open the branches display as shown in the lower half of the graphic below:
+1. Click on the Branches icon to display the branches as shown in the lower half of the graphic below:
     * If the branch you want is not listed, then continue with Step 2
-    * Otherwise, skip ahead to [Set Default Branch](#set-default-branch)
-1. Click on the `New branch` button
+    * Otherwise, skip ahead to [Update Branch](#update-branch)
+1. Click on the `New branch` button and follow the [Add Branch](#add-branch) steps
 
 ![steps to add a branch](img/add-branch-01.svg){width="700"}
 {align="center"}
 
-#### Add Branch
+### Add Branch
 
 Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:
 
@@ -263,9 +249,9 @@ Each step in the list below matches with the number in the graphic. In the top h
 ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
 {align="center"}
 
-### Build new Branch
+### Build Branch
 
-If you want this new branch to be the one you build all the time, you may choose to [Change Default Branch](#change-default-branch). This is not necessary except for special cases.
+If you want a branch to be the one you build all the time, you may choose to [Change Default Branch](#change-default-branch). This is not necessary except for special cases.
 
 If you have one branch as default, for example main, and choose to build a different branch, there is an extra step when you Build Loop. Refer to step 4 in the graphic below. Use the branch dropdown menu to select the branch you want before hitting the green Run workflow button.
 
@@ -274,7 +260,12 @@ If you have one branch as default, for example main, and choose to build a diffe
 
 ## Change Default Branch
 
-If you want a current branch to be the one you build all the time, you may choose to set it as the default branch. This is not a requirement unless there has been a change in the workflow files. Check the zulipchat conversation about the branch you are testing to see if it is necessary.
+There can be several reasons why you would change your default branch.
+
+* It can be convenient to have the branch you build most be configured as the default branch
+* The branch you want to build has a different workflow than your default branch (not typical)
+    * In this case, you **must** modify the default branch
+    * Check the zulipchat conversation about the branch you are testing to see if it is necessary to make it default
 
 These are the steps to modify the default branch.
 
