@@ -24,7 +24,7 @@ These are some of the most common errors to date.
 
 ## Find Your Error
 
-There is a separate section for each step in the process. First you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to type into the search box.
+There is a separate section for each step in the process. First you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 
 1. [Action: Verify Secrets](#action-verify-secrets-errors)
 1. [Action: Add Identifiers Errors](#action-add-identifiers-errors)
