@@ -222,9 +222,7 @@ The instructions show using the dev branch. If you want a different branch, just
 !!! tip "Overview of what you will do"
     1. Connect your LoopWorkspace fork with the dev branch, if it is not already connected
     1. Ensure your LoopWorkspace fork has the dev branch as the default branch
-    1. Run all the Actions again
-        * It might not be necessary, but some underlying changes may require this
-        * Running Action 1: Verify Secrets is not necessary because it is included in the other actions, but it is quick and then you don't have to decide which Actions you need to run
+    1. When you run the [Build Loop](#build-loop) Action you must select your branch as part of the process
 
 ### Return to Your LoopWorkspace Fork
 
@@ -265,11 +263,22 @@ Each step in the list below matches with the number in the graphic. In the top h
 ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
 {align="center"}
 
-### Set Default Branch
+### Build new Branch
 
-You need to make your new branch the default branch.
+If you want this new branch to be the one you build all the time, you may choose to [Change Default Branch](#change-default-branch). This is not necessary except for special cases.
 
-If your desired branch is not the default branch, these are the steps to modify the default branch. For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
+If you have one branch as default, for example main, and choose to build a different branch, there is an extra step when you Build Loop. Refer to step 4 in the graphic below. Use the branch dropdown menu to select the branch you want before hitting the green Run workflow button.
+
+![build loop using github actions](img/action-04-build-loop.svg){width="700"}
+{align="center"}
+
+## Change Default Branch
+
+If you want a current branch to be the one you build all the time, you may choose to set it as the default branch. This is not a requirement unless there has been a change in the workflow files. Check the zulipchat conversation about the branch you are testing to see if it is necessary.
+
+These are the steps to modify the default branch.
+
+For this example, we show how to change from a default branch of `main` to a default branch of `dev`. Note - only the owner of the repository can take this action and they must be logged in. Otherwise the Settings tab does not appear.
 
 For the numbered steps below, refer to the graphic found under each group of steps.
 
