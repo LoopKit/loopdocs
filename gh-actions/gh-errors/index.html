@@ -2531,7 +2531,8 @@
 
 <h2 id="github-build-method-errors"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update LoopDocs to make it easier for the next person to succeed without errors.</p>
-<p>If you've been around Loop for a while, you know the mantra about screen shots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action Failures, screen shots are close to useless. If you get an error with an Action, you should download the error log and examine it for known diagnosis strings. If you are still stuck then post the zip or the 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed. Please see <a href="#examine-the-error">Examine the Error</a> for instructions.</p>
+<p>If you've been around Loop for a while, you know the mantra about screen shots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action Failures, <strong>screen shots are close to useless</strong>. If you get an error with an Action, you should use the search feature for known diagnosis strings. If you are still stuck then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your Action log files directly.</p>
+<p>But first - try to diagnose it yourself using this page.</p>
 <h2 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These are some of the most common errors to date.</p>
 <ul>
@@ -2546,7 +2547,7 @@
 </li>
 <li>When entering <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>, make a spelling error in the value - please copy and paste instead of typing what you think you see<ul>
 <li>If you type in your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> as 0123498989 when it is really 012349B989, you may not notice<ul>
-<li>Hint: what should have been a "B", got typed as an "8"</li>
+<li>Hint: what should have been the letter "B", got typed as the number "8"</li>
 </ul>
 </li>
 <li>The incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> will show up in your identifiers as the Bundle ID but . . .<ul>
@@ -2558,7 +2559,7 @@
 <li>Run the actions out of order or skip one</li>
 </ul>
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is a separate section for each step in the process. First you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to download the error log file. Then go to the section for the Action you were trying to complete to look for possible error strings that are in your log file.</p>
+<p>There is a separate section for each step in the process. First you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.</p>
 <ol>
 <li><a href="#action-verify-secrets-errors">Action: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
 <li><a href="#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a></li>
@@ -2572,30 +2573,18 @@
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <p>If you click on the action name, it opens a secondary screen as shown below.</p>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result-secondary.svg" width="500" /></p>
-<p>Click on the top link to view the highlighted display for that failure as shown in the graphic below. </p>
-<ul>
-<li>See if you can find your error message on this page</li>
-<li>The display will show it highlighted in red font as seen below</li>
-<li>If you find it hard to see the error, then download the log file - see inset in graphic below<ul>
-<li>Tap on the gear icon</li>
-<li>Select <code>Download log archive</code></li>
-<li>Open the zip and look at the file called 1_ACTION.txt file, where ACTION is replaced with "identifiers", "certificates" or "build", depending on which action failed</li>
-</ul>
-</li>
-<li>Once you open the text file with a text editor, search for the string(s) listed below to see if it has been documented<ul>
-<li>If you identify the error, fix it and try again</li>
-<li>Sometimes you need to do all <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, (extra steps), Create Certificates and then Build Loop -&gt; it does not hurt to repeat a step even if it was already successful</li>
-<li>The extra steps between Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Create <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> are required in some cases - so go on and review the identifiers to make sure they have the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> and that the Loop identifier has Time Sensititve Notifications enabled</li>
-</ul>
-</li>
-<li>Still stuck?<ul>
-<li>Post the downloaded zip file or txt file on zulipchat along with what you've tried so far</li>
-<li>If you can't figure out how to download the zip file, just provide your github username - anyone can look at your <abbr title="contains project files and each file's revision history">repository</abbr> and view the action logs - that's what "public" means</li>
-<li>Screen shots for action failures are not helpful</li>
-</ul>
-</li>
-</ul>
+<p>Click on the top link to view the record of the failed action as shown in the graphic below. You will be pasting strings into the search box (highlighted with green rectangle) to look for a documented error. Please read the instructions below the graphic.</p>
 <p align="center"><img alt="graphic with failure details for a GitHub Add Identifier action" src="../img/action-result-failure.svg" width="700" /></p>
+<ul>
+<li>Paste in a possible error string (copy it exactly); repeat until you find a match</li>
+<li>If the possible error string is found - follow the directions for that error</li>
+<li>Still stuck?<ul>
+<li>Post for help including your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <strong>username</strong></li>
+<li>With that, mentors can diagnose your problem - or at least made a good guess at what you need to try</li>
+<li>Please <strong>do not post a screenshot</strong></li>
+</ul>
+</li>
+</ul>
 <h2 id="action-verify-secrets-errors">Action: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Errors<a class="headerlink" href="#action-verify-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>A new action was added with <abbr title="Latest release with major updates">Loop 3</abbr>.1 to provide better error messages if something is wrong with your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
 <p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
