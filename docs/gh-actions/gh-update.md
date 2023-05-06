@@ -74,6 +74,12 @@ The section continues immediately after the [Update Fork](#update-fork) section.
 ![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
 {align="center"}
 
+#### What if the Build Fails
+
+There are some updates where you need to run some actions before build. If a new release is announced, look to see if there are instructions about this. In those cases, you will probably be told to run Action 2: Add Identifiers and Action 3: Create Certificates before Action 4: Build Loop. Those steps are fast and there is no harm in trying them.
+
+Otherwise, head over to [GitHub Errors](gh-errors.md).
+
 ### Wait for TestFlight
 
 You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the new app is ready to test.
