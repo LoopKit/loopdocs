@@ -66,6 +66,7 @@ The section continues immediately after the [Update Fork](#update-fork) section.
 
 * Click on the 'Actions' tab
 * Select the '4. Build Loop' workflow on the left
+    * If using a mobile browser, be sure to use landscape mode to more closely match how GitHub looks on a computer.
 * Look on the right and click 'Run workflow' to  see the dropdown
 * Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
