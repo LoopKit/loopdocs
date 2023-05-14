@@ -44,14 +44,32 @@ To use the Dexcom G5, G6 or ONE:
 ![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
 {align="center"}
 
+#### Where to get the Transmitter ID for Dexcom G6? 
+
+You can find the **transmitter ID** in your Dexcom G6 app or on the back of the transmitter box (please refer to the below screenshots). 
+
+* In your Dexcom G6 app
+  * Tap "⚙️ Settings"
+  * The **transmitter ID** is located under section "CGM" where it says "Transmitter" with a the 6-digit string.
+  * Alternatively, while in Settings, tap on the <kbd>></kbd> in the "Transmitter" row: your **transmitter ID** is the 6-digit identifier next to "SN" (short for serial number). 
+
+![dexcom app settings to retrieve transmitter id](img/dexcom-g6-transmitter-id.svg){width="300"}
+
+* On the back of your transmitter box 
+  * Your transmitter ID is the 6-digit number next to "SN" and the QR code on the back of the carton.
+
+![picture of transmitter box with arrow and marking of transmitter id (sn)](img/dexcom-g6-transmitter-box-sn.svg){width="300"}
+
+
+
 #### Change Dexcom Transmitter
 
 !!! info "FYI: When You Change Dexcom Transmitters"
 
     Before you change Dexcom transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. If you leave the transmitter connected in Loop, you may have trouble pairing your new transmitter. If pairing does work, then Loop will not get CGM data from the Dexcom app on your phone.
-
+    
     Follow the instructions here: [What do I do when I switch Dexcom transmitters?](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-dexcom-transmitters).
-
+    
     The Dexcom G7 is handled differently - Loop automatically detects when a new sensor/transmitter pair is added to the Dexcom G7 app.
 
 
@@ -84,13 +102,13 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
 !!! warning "If you need to use Dexcom Share"
 
     If the dexcom is on another phone, you can use Share if internet / cell coverage is good.
-
+    
     Dexcom Share is not available for Dexcom ONE CGM.
-
+    
     The Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
-
+    
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
-
+    
     ![img/shareclient.jpg](../operation/loop-settings/img/shareclient.jpg){width="300"}
     {align="center"}
 
@@ -105,13 +123,13 @@ In addition to the risks of missing data if the internet is not reliable, you mu
     Just because you can use Nightscout as a CGM source does not mean you should.
 
     If you decide to use Nightscout as a CGM source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.
-
+    
     _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
-
+    
     There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Add Libre App to Loop Phone](../build/code_customization.md#add-libre-app-to-loop-phone) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
-
+    
     It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
-
+    
     The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during warmup of a new sensor (European Libre 2 using direct bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop 3. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a CGM with Loop 3 had serious overdose of insulin because of bad readings with a new sensor. They are both OK but the Loop and xDrip4iOS developers are looking at this event.
 
 
