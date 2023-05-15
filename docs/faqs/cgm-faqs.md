@@ -35,6 +35,7 @@ When you change transmitters (prior to Dexcom G7), you will need to update the t
 * After pairing completes with Dexcom:
     * In Loop, add CGM and select the Dexcom system again
     * Enter the new transmitter ID
+    * If you're unsure where to find your transmitter ID, see [Where to get the Transmitter ID for Dexcom G6?](../loop-3/add-cgm.md#where-to-get-the-transmitter-id-for-dexcom-g6)
 
 ![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
 {align="center"}
