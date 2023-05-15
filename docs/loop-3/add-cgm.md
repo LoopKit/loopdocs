@@ -53,12 +53,14 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
   * The **transmitter ID** is located under section "CGM" where it says "Transmitter" with a the 6-digit string.
   * Alternatively, while in Settings, tap on the <kbd>></kbd> in the "Transmitter" row: your **transmitter ID** is the 6-digit identifier next to "SN" (short for serial number). 
 
-![dexcom app settings to retrieve transmitter id](img/dexcom-g6-transmitter-id.svg){width="300"}
+![dexcom app settings to retrieve transmitter id](img/dexcom-g6-transmitter-id.svg){width="550"}
+{align="center"}
 
 * On the back of your transmitter box 
   * Your transmitter ID is the 6-digit number next to "SN" and the QR code on the back of the carton.
 
-![picture of transmitter box with arrow and marking of transmitter id (sn)](img/dexcom-g6-transmitter-box-sn.svg){width="300"}
+![picture of transmitter box with arrow and marking of transmitter id (sn)](img/dexcom-g6-transmitter-box-sn.svg){width="350"}
+{align="center"}
 
 
 
