@@ -111,7 +111,7 @@ The instructions on this page were originally prepared for the Mac-Xcode method.
 
 The GitHub Browser Build method instructions are similar, but each one is used to edit your fork of the particular Module in your GitHub account as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
 
-For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for (cmd-L #) the line number.
+For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for ( ++cmd+l++ # ) the line number. 
 
 Some customizations are the same for all users, and do not require personalization. See [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list).
 
