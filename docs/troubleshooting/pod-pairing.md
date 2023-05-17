@@ -47,9 +47,9 @@ Hopefully, your pod pairing continues uneventfully at this point. You'll press t
 
 !!! info "Pod pairing failed?"
 
-    Ok, so you've pressed that **Pair** button and received an error message like shown at the top of screen? It's time to start the stepwise process of seeing if we can get it to recover successfully.
+    Ok, so you've pressed that **Pair** button and received an error message like shown at the top of the screen? It's time to start the stepwise process of seeing if we can get it to recover successfully.
 
-The placement of the pod and the RileyLink relative to each other is critical variable because the pod operates in a low power radio mode during pairing which can lead to a number of potential faulty and half-paired pod situations, particularly with earlier versions of Loop.
+The placement of the pod and the RileyLink relative to each other is a critical variable because the pod operates in a low-power radio mode during pairing which can lead to a number of potential faulty and half-paired pod situations, particularly with earlier versions of Loop.
 
 **How close should they be?** Most people assume "the closer the better", but it has been measured that if the RileyLink and pod are *too close together*, the RileyLink may not be able to pick up the pairing response. The current recommendation is for the RileyLink to be placed a few inches to the side of the pod being paired.
 
@@ -84,7 +84,7 @@ Don't fret. None of your Loop settings including the basal schedule and delivery
 ![img/add-pump-list.png](img/add-pump-list.png){width="400"}
 {align="center"}
 
- Verify that the green LED on the RileyLink goes on and off as you touch the switch for RileyLink you are using indicating a successful Bluetooth connection between the RileyLink and your iPhone. Leave the RileyLink enabled with its green LED and slider turned on, and then touch the **Continue** button on the bottom. The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select **Continue** on the bottom of the screen.
+ Verify that the green LED on the RileyLink goes on and off as you touch the switch for RileyLink you are using indicating a successful Bluetooth connection between the RileyLink and your iPhone. Leave the RileyLink enabled with its green LED and slider turned on, and then touch the **Continue** button on the bottom. The Pod Settings screen should have the previous Basal Rates and Delivery Limits in effect from your previous run which can be verified at this time. Once ready, select **`Continue`** at the bottom of the screen.
 
 ![img/pod-settings-delivery-limits.png](img/pod-settings-delivery-limits.png){width="400"}
 {align="center"}
@@ -126,7 +126,7 @@ Press the "Continue" button. The instructions start with "fill a new pod with in
 
 To help fix pairing bugs, some improvements have also been made in our ability to save the communications between the pods and Loop app during the pairing process. So, please help us leverage these new improvements and better squash bugs.
 
-If you run into any pairing problems when running a version of Loop prior to V2.2.4, which required Step 5A or Step 5B to be able to pair, or you had a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether is was the original pod or if a different pod) and then post the resulting "Loop Report" on [Zulipchat here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues) with a short explanation of what happened.
+If you run into any pairing problems when running a version of Loop prior to V2.2.4, which required Step 5A or Step 5B to be able to pair, or you had a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether it was the original pod or if a different pod) and then post the resulting "Loop Report" on [Zulipchat here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues) with a short explanation of what happened.
 
 ## What about other pod start-up failures?
 
