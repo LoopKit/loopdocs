@@ -5,19 +5,34 @@ Have you seen an error message during the pairing process for a new pod? The mos
 ![img/pod-pair-fail.jpg](img/pod-pair-fail.jpg){width="550"}
 {align="center"}
 
-There have been a large number of fixes and improvements to reduce various pairing problems and to automatically recover from them when they do occur. **Make sure you stay on top of Loop updates to take advantage of these code improvements.** It is *strongly* recommended to update to a modern stable version (i.e., the current Loop master release) when running any version of Loop prior to V2.2.4 with an Omnipod. In particular, you should *never* run Loop V2.2.3 with an Omnipod due to a severe UI bug that can result in a partially setup pod where the only possible recovery is an immediate Loop update to be able to complete the pod setup process.
+There have been a large number of fixes and improvements to reduce various pairing problems and to automatically recover from them when they do occur. 
+
+!!! info "Update regularly to take advantage of  improvements"
+
+    **Make sure you stay on top of Loop updates to take advantage of these code improvements.**   
+    It is *strongly* recommended to update to a modern stable version (i.e., the [current Loop release](../../version/releases/#current-release)) when running any version of Loop prior to `v2.2.9`.
+
+!!! bug "Loop v3.0.0 and  Missed Meal Detection"
+
+    You should *never* run Loop `v3.0.0` with a **Medtronic** pump because of an error in this version where Loop would decide that a bolus was not actually delivered and not add it to IOB. This was much more common with Medtronic, but it did happen with pods.  
+    This problem has been fixed since Loop `v3.2.0`.
 
 ## Why do pod pairings fail?
 
-Assuming the RileyLink is ok, the most common cause of a pod pairing failure is that Loop incorrectly partially pairs with the pod due to some problems during the fragile pairing process, perhaps aggravated by the placement of the RileyLink and the pod, wireless communications interference, and/or incorrect handling of some fault and retry conditions in versions of Loop prior to V2.2.4 that can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to recover that pod into good working order.
+Assuming the RileyLink is ok, the most common cause of a pod pairing failure is that Loop incorrectly partially pairs with the pod due to some problems during the fragile pairing process, perhaps aggravated by the placement of the RileyLink and the pod, wireless communications interference that can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to recover that pod into good working order.
 
-!!! info "Move Logically"
+!!! tip "Move Logically"
 
     Let's walk through the pod pairing/replacement process from the very beginning to make sure that we have all the important steps clearly identified even before you attempt to press that **Pair** button.
 
 ## Step 0: Check your Loop version
 
-You can check which version of Loop you are running by pressing the gear (⚙️) in the bottom right-hand corner of the Loop home screen and then looking at the line under the header. If you are running Loop V2.2.3, you should update *immediately* as this is the only way to recover from a number of pairing failure situations. If you are running a version of Loop prior to V2.2.4 (or its equivalent), it is recommended to update to the current Loop master release to prevent pairing difficulties.
+You can check which version of Loop you are running by pressing the gear icon (⚙️) in the bottom right-hand corner of the Loop home screen and then looking at the line under the header. 
+
+!!! info "Upgrade Loop if version prior to v2.2.9" 
+
+    If you are running a version of Loop prior to v2.2.9, it is recommended to update to the [current Loop release](../../version/releases/#current-release) if your configuration meets the [requirements](../../intro/requirements).
+
 
 ## Step 1: Verify the RileyLink
 
@@ -70,7 +85,6 @@ To start we will have to press the **Cancel** button in the upper right corner o
 
 * Step 5A "`Switch from Omnipod Pumps`":  
     You press **`Cancel`** and Loop will send you back to the **Pod Settings** screen to do the "`Switch from Omnipod Pumps`" method
-
 * Step 5B "Deactivate":  
     You press **`Cancel`** and Loop will display a screen giving the option to "`Deactivate`"
 
@@ -128,7 +142,7 @@ Press the "`Continue`" button. The instructions start with "`fill a new pod with
 
 To help fix pairing bugs, some improvements have also been made in our ability to save the communications between the pods and Loop app during the pairing process. So, please help us leverage these new improvements and better squash bugs.
 
-If you run into any pairing problems when running a version of Loop prior to V2.2.4, which required Step 5A or Step 5B to be able to pair, or you had a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether it was the original pod or if a different pod) and then post the resulting "Loop Report" on [Zulipchat here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues) with a short explanation of what happened.
+If you run into any pairing problems, which required Step 5A or Step 5B to be able to pair, or you had a pod that had to be abandoned, it would be helpful to generate an "Issue Report" after you finally get a pod paired (whether it was the original pod or if a different pod) and then post the resulting "Loop Report" on [Zulipchat here](https://loop.zulipchat.com/#narrow/stream/144111-general/topic/Omnipod.20Pairing.20Issues) with a short explanation of what happened.
 
 ## What about other pod start-up failures?
 
