@@ -29,7 +29,7 @@ First, let's make sure everything is ok as far as the RileyLink goes:
 
 ## Step 2: Deactivate old Pod
 
-Make sure you've deactivated your old pod. If you had issues deactivating your pod, you likely may have some RileyLink issues going on...so make sure to see the steps above. If you have a problem with deactivating a pod, go ahead and skip to Step 5 to get a new pod going. You should also remove that old pod (that would not deactivate) from your vicinity. Put it in a microwave or throw it over the fence into the neighbor's backyard (kidding, obviously...but outside trashcan is a good idea).
+Make sure you've deactivated your old pod. If you had issues deactivating your pod, you likely may have some RileyLink issues going on...so make sure to see the steps above. If you have a problem with deactivating a pod, go ahead and skip to [Step 5](#step-5-pod-pairing-recovery) to get a new pod going. You should also remove that old pod (that would not deactivate) from your vicinity. Put it in a microwave or throw it over the fence into the neighbor's backyard (kidding, obviously...but outside trashcan is a good idea).
 
 ## Step 3: Start new pairing process
 
@@ -96,7 +96,7 @@ Finally, you will be back to the `Pod Pairing` screen.
 ![img/pod-pairing.png](img/pod-pairing.png){width="200"}
 {align="center"}
 
-Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occasionally giving reminder beeps. Place the RileyLink a few inches to the side of the pod and press the **`Pair`** button at the bottom of the screen and hopefully, Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
+Instead of filling a new pod with insulin, attempt to pair again using the original pod which was previously filled but unable to complete the pairing process successfully. That pod should still be occasionally giving reminder beeps. Place the RileyLink a few inches to the side of the pod and press the **`Pair`** button at the bottom of the screen and hopefully, Loop will be able to successfully pair this time after starting from a fresh slate. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and [Step 4](#step-4-check-the-rileylink-and-pods-placement) options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in [Step 3](#step-3-start-new-pairing-process)'s colored box so that you don't end up with multiple beeping pods around accidentally.
 
 ### Step 5B "Deactivate pod"
 
@@ -119,7 +119,7 @@ Ok. Have the pod nice and ignorant? Good. Now press the "`Deactivate Pod`" butto
 ![img/deactivate-pod.png](img/deactivate-pod.png){width="600"}
 {align="center"}
 
-Press the "`Continue`" button. The instructions start with "`fill a new pod with insulin`"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and Step 4 options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in Step 3's colored box so that you don't end up with multiple beeping pods around accidentally.
+Press the "`Continue`" button. The instructions start with "`fill a new pod with insulin`"...BUT DO NOT!  Instead, bring that beeping pod back to the hearing range. Turn that RileyLink back on if you turned it off. Once you get the RileyLink on and the pod back in range, you'll just press the **Pair** button and hopefully you'll find success with the process. If this pairing attempt is still unsuccessful, remember to still exhaust repositioning and [Step 4](#step-4-check-the-rileylink-and-pods-placement) options before giving up on that pod. If it really won't pair after all that...then mark that loser pod with a Sharpie-drawn sad face and follow the directions in [Step 3](#step-3-start-new-pairing-process)'s colored box so that you don't end up with multiple beeping pods around accidentally.
 
 ![img/deactivate-pod2.png](img/deactivate-pod2.png){width="600"}
 {align="center"}
