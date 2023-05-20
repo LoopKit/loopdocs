@@ -15,7 +15,9 @@ Read about the customizations on this page before applying them.
 
 Some customizations are the same for everyone and have been prepared for easy use. 
 
-* Mac-Xcode builders can use the [Loop and Learn: Apply Customizations to Loop](https://www.loopandlearn.org/build-select#apply-custom) script
+* Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select#apply-custom) script
+    * This script automatically finds the most recent download and when you are done selecting customizations, opens Xcode to that download
+    * Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download
 * GitHub builders can use [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
 
 Other customizations require that you create your own personalized version.

@@ -84,56 +84,44 @@ Every attempt was made to put messages directly in the script for each step. The
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
-### Build Select Script
+### Build-Select-Script
 
-!!! info "Loop 3.2 Release"
-    The release of Loop 3.2 makes building even easier. The same build script is used. It always points to the latest version (main branch).
+With the release of Loop 3, the build process is different and simpler
 
-    The LoopWorkspace target pops up automatically
+* Please read each step as if you are a new builder
+* Don't assume you know what you are doing
+* [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
+* [Loop 3 with Patches](https://www.loopandlearn.org/main-lnl-patches) is provided instead
+
+These instructions show each step needed to download Loop using the Build-Select-Script.
+
+!!! note "New Menu for Build-Select-Script"
+    The Build-Select-Script has been updated with more menu options. It can do more than just assist in building the Loop app.
     
-    * Wait for Xcode to finish preparing
-    * Choose your phone and hit build
+    Please review [Loop and Learn: Build-Select-Script](https://www.loopandlearn.org/build-select/) for more information.
 
-    Updated graphics will be updated later.
-
-* With the release of Loop 3, the build process is different and simpler
-    * Please read each step as if you are a new builder
-    * Don't assume you know what you are doing
-    * [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
-    * [Loop 3 with Patches](https://www.loopandlearn.org/main-lnl-patches) is provided instead
-
-These instructions show each step needed to download Loop using the Build-Select script.
-
-!!! note "Optional"
-    The Build Select Script can also be used to build a companion app, called Loop Follow, and a fork of Loop, which has selected patches added. Follow these links to different websites for more information about those options.
-    
-    If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the Build Select Script.
- 
-     * Information about [Loop Follow](https://www.loopandlearn.org/loop-follow)
-     * Information about [Loop with Patches](https://www.loopandlearn.org/main-lnl-patches/)
- 
-     You do not need to know about these options to build Loop.
+    You may notice some graphics on this page shows red font to emphasize some items. The script now only shows red font for an error. Bold font is used for emphasis. Not all graphics were updated.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
-``` { .bash .copy title="Copy and Paste to start the BuildLoop.sh script" }
+``` { .bash .copy title="Copy and Paste to start the Build-Select-Script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh)"
+  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
 ```
 
 Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+"V"++ ; or ++control++ click and select from menu or `Edit`-`Paste` at top of Mac screen.)
 
-Read the screen (shown below).  Type `1` and return if you understand the warning and agree.
+* Please read what is on the screen as you progress
+* You can increase font size by holding down ++command++ and hitting &plus;
 
-* Please read what is on the screen as you progress.
-* Adjust font size as directed if you have difficulty seeing the directions.
+You will be informed of the menu options as shown in the graphic below. You will choose Option `1` to Build Loop.
 
-![paste the script line into terminal](img/bss-01-initial-message.svg){width="700"}
+![initial build-select-script menu](img/bss-top-menu.svg){width="700"}
 {align="center"}
 
-Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 and return.
+You will be informed that you are downloading open source software. Type `1` and return if you understand the warning and agree.
 
-![choose to build Loop](img/bss-02-menu-message.svg){width="700"}
+![open-source warning](img/bss-open-source-warning.svg){width="700"}
 {align="center"}
 
 Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the fork of Loop with added Libre CGM options, CustomTypeOne patches and a custom logo.
@@ -153,7 +141,7 @@ The next graphic shows terminal messages for the beginning of a successful downl
 ![the beginning of the clone for LoopWorkspace ](img/build-select-07.svg){width="700"}
 {align="center"}
 
-If the download was successful, you will see the following graphic and should continue with the [Download was Successful](#download-was-successful) section.
+If the download was successful, your terminal will be similar to the following graphic. Continue with the [Download was Successful](#download-was-successful) section.
 
 ![download successful](img/build-select-download-success.svg){width="700"}
 {align="center"}
@@ -175,7 +163,7 @@ If there are no errors, hit return to continue. The next step involves signing t
 !!! tip "Experienced Builders"
     This replaces several of the steps that used to be required to build Loop.
 
-The first time you use the script, you will be asked how you want to sign the targets.
+If you have never built an Xcode app using your developer ID on this computer, then the first time you use the script, you will be asked how you want to sign the targets.
 
 !!! question "I did not get this question"
     The script searches for your developer ID for you and skips this question if it finds it.
@@ -282,31 +270,22 @@ The next action of the script is to
 * Open a browser window displaying this section of LoopDocs
 * Open Xcode
 
-The final script message informs you that you can close the terminal window.
+After Xcode opens, you can exit the script or choose another option.
 
 * Wait until you've successfully built the app before closing the terminal
 
 
 ### Initial Xcode Screens
 
-!!! warning "watchOS Simulators"
-    Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
+Refer to the graphic below. Your intial Xcode screen should be similar.
 
-    *   Tap on [New with Xcode 14](../build/build_errors.md#new-with-xcode-14) for more information
+* Wait for packages to download (see messages upper right - blue dashed rectangle)
+    * You might see the words downloading or copying
+    * Package download is complete when you see the words Indexing or Ready (upper right)
+* Make sure your phone (or simulator if you prefer) is selected in the upper middle
 
-First confirm your phone is selected. Refer to the GIF below (warning, GIF not updated to show LoopWorkspace is selected by default) and follow the directions:
 
-* Frame 1:  Xcode screen opened by the script after a fresh download
-    * **Fresh Download? Wait for indexing to begin**
-        * If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the GIF below just to the left of the dashed-blue rectangle
-    * **With Loop 3.2.x and newer**, you do not need to select Loop (Workspace) - it is now the default and shows up as LoopWorkspace
-        * The graphics still show the old selection process
-    * The red rectangle indicates where you used to change Loop to Loop (Workspace), it now defaults to LoopWorkspace
-    * The red x in the dashed-blue rectangle region indicates you need to fix a problem before building
-* Frame 2: Not needed as of Loop 3.2.x: Inset shows the action needed to select Loop (Workspace)
-* Frame 3: This error does not happen with Xcode 14.1 or newer versions. There's a red x in the dashed-blue rectangle region
-
-![gif showing the initial xcode screens following fresh download](img/xcode-build-loop3-a.gif){width="750"}
+![xcode screen following fresh download](img/xcode-initial-screen.svg){width="750"}
 {align="center"}
 
 ### Start Build
@@ -321,7 +300,7 @@ The first time you build, there will be steps that will not be required for subs
 
 Refer to the GIF below:
 
-* Frame 1: Package Dependency resolved (no red x)
+* Frame 1: Packages are downloaded
     * Xcode is Indexing as seen in dashed-green rectangle region
         * Indexing makes searching faster; it does not need to complete before building
     * Click the "Play" button highlighted by red rectangle to start the build

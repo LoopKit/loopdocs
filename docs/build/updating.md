@@ -134,7 +134,23 @@ After building the new app, you may choose to return to this page and follow the
 
 This step is optional, but if your computer is low on space, it helps to clean up old downloads your are no longer using.
 
-When you update, you no longer need to keep old copies of the code on your computer. If you want to clean up space, you can delete those old folder(s) now if you want.
+There is an easy way to do this. The Build-Select-Script used to download and build Loop provides Maintenance Utilities to help free up disk space.
+    
+Please review [Loop and Learn: Build-Select-Script](https://www.loopandlearn.org/build-select/) for more information.
+
+Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
+
+``` { .bash .copy title="Copy and Paste to start the Build-Select-Script" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
+```
+
+Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+"V"++ ; or ++control++ click and select from menu or `Edit`-`Paste` at top of Mac screen.)
+
+* Please read what is on the screen as you progress
+* Choose Option 3. Run Maintenance Utilities
+
+If you prefer to clean up old downloads yourself, keep reading.
 
 !!! abstract "Where is the old folder?"
 
