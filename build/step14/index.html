@@ -2795,49 +2795,33 @@
 <h3 id="open-terminal">Open <abbr title="interface for entering commands to the computer">Terminal</abbr><a class="headerlink" href="#open-terminal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Go to the <abbr title="graphical folder and file display on Mac">Finder</abbr> app, click on Applications, then open the Utilities folder.  Locate the <abbr title="interface for entering commands to the computer">Terminal</abbr> app and double-click <abbr title="interface for entering commands to the computer">Terminal</abbr> to open a terminal window. The terminal window is very plain looking when you open it. That is normal.</p>
 <h3 id="build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr><a class="headerlink" href="#build-select-script" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title"><abbr title="Latest release with major updates">Loop 3</abbr>.2 Release</p>
-<p>The release of <abbr title="Latest release with major updates">Loop 3</abbr>.2 makes building even easier. The same build script is used. It always points to the latest version (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>).</p>
-<p>The LoopWorkspace target pops up automatically</p>
+<p>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>, the build process is different and simpler</p>
 <ul>
-<li>Wait for <abbr title="program used to build an app">Xcode</abbr> to finish preparing</li>
-<li>Choose your phone and hit build</li>
-</ul>
-<p>Updated graphics will be updated later.</p>
-</div>
-<ul>
-<li>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>, the build process is different and simpler<ul>
 <li>Please read each step as if you are a new builder</li>
 <li>Don't assume you know what you are doing</li>
 <li><a href="https://www.loopandlearn.org/freeapsdoc">FreeAPS</a> is no longer supported by the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></li>
 <li><a href="https://www.loopandlearn.org/main-lnl-patches"><abbr title="Latest release with major updates">Loop 3</abbr> with Patches</a> is provided instead</li>
 </ul>
-</li>
-</ul>
-<p>These instructions show each step needed to download Loop using the Build-Select script.</p>
+<p>These instructions show each step needed to download Loop using the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
 <div class="admonition note">
-<p class="admonition-title">Optional</p>
-<p>The <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> can also be used to build a companion app, called Loop Follow, and a <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop, which has selected patches added. Follow these links to different websites for more information about those options.</p>
-<p>If you need Libre or want the CustomTypeOne patches, those are provided in the Loop with Patches selection in the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr>.</p>
-<ul>
-<li>Information about <a href="https://www.loopandlearn.org/loop-follow">Loop Follow</a></li>
-<li>Information about <a href="https://www.loopandlearn.org/main-lnl-patches/">Loop with Patches</a></li>
-</ul>
-<p>You do not need to know about these options to build Loop.</p>
+<p class="admonition-title">New Menu for <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></p>
+<p>The <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> has been updated with more menu options. It can do more than just assist in building the Loop app.</p>
+<p>Please review <a href="https://www.loopandlearn.org/build-select/">Loop and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> for more information.</p>
+<p>You may notice some graphics on this page shows red font to emphasize some items. The script now only shows red font for an error. Bold font is used for emphasis. Not all graphics were updated.</p>
 </div>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say <code>Copy to Clipboard</code> when you hover over it). When you click the icon, a message that says <code>Copied to Clipboard</code> will appear on your screen.</p>
-<div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoop.sh script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span>
+<div class="copy highlight"><span class="filename">Copy and Paste to start the Build Select Script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
 <p>Paste the line of text into <abbr title="interface for entering commands to the computer">Terminal</abbr>. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>V</kbd></span> ; or <span class="keys"><kbd class="key-control">Ctrl</kbd></span> click and select from menu or <code>Edit</code>-<code>Paste</code> at top of Mac screen.)</p>
-<p>Read the screen (shown below).  Type <code>1</code> and return if you understand the warning and agree.</p>
 <ul>
-<li>Please read what is on the screen as you progress.</li>
-<li>Adjust font size as directed if you have difficulty seeing the directions.</li>
+<li>Please read what is on the screen as you progress</li>
+<li>You can increase font size by holding down <span class="keys"><kbd class="key-command">Cmd</kbd></span> and hitting &plus;</li>
 </ul>
-<p align="center"><img alt="paste the script line into terminal" src="../img/bss-01-initial-message.svg" width="700" /></p>
-<p>Next you will see an introduction to the Build-Select script.  Please read this.  To build Loop, you will select the Build Loop option by typing 1 and return.</p>
-<p align="center"><img alt="choose to build Loop" src="../img/bss-02-menu-message.svg" width="700" /></p>
+<p>You will be informed of the menu options as shown in the graphic below. You will choose Option <code>1</code> to Build Loop.</p>
+<p align="center"><img alt="initial build-select-script menu" src="../img/bss-top-menu.svg" width="700" /></p>
+<p>You will be informed that you are downloading open source software. Type <code>1</code> and return if you understand the warning and agree.</p>
+<p align="center"><img alt="open-source warning" src="../img/bss-open-source-warning.svg" width="700" /></p>
 <p>Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the <abbr title="a copy of code in a github repository other than the original">fork</abbr> of Loop with added Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> options, CustomTypeOne patches and a custom logo.</p>
 <p align="center"><img alt="choose which Loop to build" src="../img/bss-03-choose-fork.svg" width="700" /></p>
 <h3 id="wait-for-download-to-complete">Wait for Download to Complete<a class="headerlink" href="#wait-for-download-to-complete" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2848,7 +2832,7 @@
 </div>
 <p>The next graphic shows terminal messages for the beginning of a successful download.</p>
 <p align="center"><img alt="the beginning of the clone for LoopWorkspace " src="../img/build-select-07.svg" width="700" /></p>
-<p>If the download was successful, you will see the following graphic and should continue with the <a href="#download-was-successful">Download was Successful</a> section.</p>
+<p>If the download was successful, your terminal will be similar to the following graphic. Continue with the <a href="#download-was-successful">Download was Successful</a> section.</p>
 <p align="center"><img alt="download successful" src="../img/build-select-download-success.svg" width="700" /></p>
 <p>If you see a failure message, scroll up in the terminal to find the error message(s) and go to <a href="#xcode-errors-with-build-select"><abbr title="program used to build an app">Xcode</abbr> Errors with Build-Select</a>.</p>
 <p align="center"><img alt="download failed" src="../img/build-select-download-failed.svg" width="700" /></p>
@@ -2863,7 +2847,7 @@
 <p class="admonition-title">Experienced Builders</p>
 <p>This replaces several of the steps that used to be required to build Loop.</p>
 </div>
-<p>The first time you use the script, you will be asked how you want to sign the targets.</p>
+<p>If you have never built an <abbr title="program used to build an app">Xcode</abbr> app using your developer ID on this computer, then the first time you use the script, you will be asked how you want to sign the targets.</p>
 <div class="admonition question">
 <p class="admonition-title">I did not get this question</p>
 <p>The script searches for your developer ID for you and skips this question if it finds it.</p>
@@ -2963,48 +2947,28 @@
 <p align="center"><img alt="script instructions for plugging in phone and trusting computer on phone and watch" src="../img/build-dev-b-04.svg" width="700" /></p>
 <p>The next action of the script is to </p>
 <ul>
-<li>Open a browser window displaying this section of LoopDocs</li>
 <li>Open <abbr title="program used to build an app">Xcode</abbr></li>
 </ul>
-<p>The final script message informs you that you can close the terminal window.</p>
-<ul>
-<li>Wait until you've successfully built the app before closing the terminal</li>
-</ul>
+<p>It is suggested that you wait until you've successfully built the app before closing the terminal.</p>
 <h3 id="initial-xcode-screens">Initial <abbr title="program used to build an app">Xcode</abbr> Screens<a class="headerlink" href="#initial-xcode-screens" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title"><abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> Simulators</p>
-<p>Yes, <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulators are required to build Loop. If <abbr title="program used to build an app">Xcode</abbr> asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.</p>
+<p>Refer to the graphic below. Your intial <abbr title="program used to build an app">Xcode</abbr> screen should be similar.</p>
 <ul>
-<li>Tap on <a href="../build_errors/#new-with-xcode-14">New with <abbr title="program used to build an app">Xcode</abbr> 14</a> for more information</li>
-</ul>
-</div>
-<p>First confirm your phone is selected. Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below (warning, <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> not updated to show LoopWorkspace is selected by default) and follow the directions:</p>
-<ul>
-<li>Frame 1:  <abbr title="program used to build an app">Xcode</abbr> screen opened by the script after a fresh download<ul>
-<li><strong>Fresh Download? Wait for indexing to begin</strong><ul>
-<li>If you see messages about fetching symbols or resolving packages, please wait until you see the Indexing message as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below just to the left of the dashed-blue rectangle</li>
+<li>Wait for packages to download (see messages upper right - blue dashed rectangle)<ul>
+<li>You might see the words downloading or copying</li>
+<li>Package download is complete when you see the words Indexing or Ready (upper right)</li>
 </ul>
 </li>
-<li><strong>With <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and newer</strong>, you do not need to select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) - it is now the default and shows up as LoopWorkspace<ul>
-<li>The graphics still show the old selection process</li>
+<li>Make sure your phone (or simulator if you prefer) is selected in the upper middle</li>
 </ul>
-</li>
-<li>The red rectangle indicates where you used to change Loop to Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>), it now defaults to LoopWorkspace</li>
-<li>The red x in the dashed-blue rectangle region indicates you need to fix a problem before building</li>
-</ul>
-</li>
-<li>Frame 2: Not needed as of <abbr title="Latest release with major updates">Loop 3</abbr>.2.x: Inset shows the action needed to select Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>Frame 3: This error does not happen with <abbr title="program used to build an app">Xcode</abbr> 14.1 or newer versions. There's a red x in the dashed-blue rectangle region</li>
-</ul>
-<p align="center"><img alt="gif showing the initial xcode screens following fresh download" src="../img/xcode-build-loop3-a.gif" width="750" /></p>
+<p align="center"><img alt="xcode screen following fresh download" src="../img/xcode-initial-screen.svg" width="750" /></p>
 <h3 id="start-build">Start Build<a class="headerlink" href="#start-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If there is a red x in the dashed-blue rectange region on your <abbr title="program used to build an app">Xcode</abbr> screen you need to click over to the <a href="../build_errors/">Build Error</a> page</p>
 <h4 id="first-time">First Time<a class="headerlink" href="#first-time" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word <strong>First-Time</strong>. Do not get confused when you are asked to enter your password multiple times, see <a href="#codesign--keychain-access">Codesign / Keychain Access</a>. Be sure to enter your Mac login password and select Always Allow.</p>
+<p>The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word <strong>First-Time</strong>. Do not get confused when you are asked to enter your password multiple times, see <a href="#codesign--keychain-access">Codesign / Keychain Access</a>. Be sure to enter your Mac login password and select <code>Always Allow</code> every time it is requested.</p>
 <h4 id="all-builds">All Builds<a class="headerlink" href="#all-builds" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below:</p>
 <ul>
-<li>Frame 1: Package Dependency resolved (no red x)<ul>
+<li>Frame 1: Packages are downloaded<ul>
 <li><abbr title="program used to build an app">Xcode</abbr> is Indexing as seen in dashed-green rectangle region<ul>
 <li>Indexing makes searching faster; it does not need to complete before building</li>
 </ul>

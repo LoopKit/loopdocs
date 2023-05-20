@@ -2066,6 +2066,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#libretransmitter" class="md-nav__link">
+    LibreTransmitter
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2801,6 +2808,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#libretransmitter" class="md-nav__link">
+    LibreTransmitter
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2849,7 +2863,11 @@
 </div>
 <p>Some customizations are the same for everyone and have been prepared for easy use. </p>
 <ul>
-<li>Mac-<abbr title="program used to build an app">Xcode</abbr> builders can use the <a href="https://www.loopandlearn.org/build-select#apply-custom">Loop and Learn: Apply Customizations to Loop</a> script</li>
+<li>Mac-<abbr title="program used to build an app">Xcode</abbr> builders can use the <a href="https://www.loopandlearn.org/build-select#apply-custom">Loop and Learn: Loop Customizations</a> script<ul>
+<li>This script automatically finds the most recent download and when you are done selecting customizations, opens <abbr title="program used to build an app">Xcode</abbr> to that download</li>
+<li>Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download</li>
+</ul>
+</li>
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders can use <a href="https://www.loopandlearn.org/custom-code#custom-list">Loop and Learn: Customization: Single Customization List</a></li>
 </ul>
 <p>Other customizations require that you create your own personalized version.</p>
@@ -3512,31 +3530,36 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>The CustomTypeOne LoopPatches are included in <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop with Patches</a>.</p>
 <h3 id="add-libre-app-to-loop-phone">Add Libre App to Loop Phone<a class="headerlink" href="#add-libre-app-to-loop-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This method only works for <abbr title="Latest release with major updates">Loop 3</abbr> (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone. This should work for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> as well.</p>
+<p>This method only works for <abbr title="Latest release with major updates">Loop 3</abbr> and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.</p>
 <p>There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.</p>
 <p>These are the Libre <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> app options.</p>
 <ul>
 <li>xDrip4iOS: <a href="https://xdrip4ios.readthedocs.io/en/latest/">Documentation</a><ul>
 <li>Check to see if your sensor is <a href="https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors">compatible</a></li>
-<li>To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop (directions are in the documentation)</li>
-<li>If you use the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> installation method (someone else's apple developer id), you will not be able to use this with Loop (on your phone without needing an internet connection)</li>
-<li>If you build with your Apple Developer ID (Browser build - might not be available yet), then you can install user your own <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> build and it will work without internet</li>
+<li>To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop<ul>
+<li>You can use the <a href="https://www.loopandlearn.org/build-select">Loop and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> and choose Option 2: Build Related Apps and then select xDrip4iOS</li>
+</ul>
+</li>
+<li>If you use the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> installation method with someone else's apple developer id, you will need an internet connection to Loop</li>
 </ul>
 </li>
 <li>GlucoseDirect: <a href="https://github.com/creepymonster/GlucoseDirect#glucose-direct">README file on github <abbr title="contains project files and each file's revision history">repository</abbr></a><ul>
-<li>If you use the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> installation method, you will not be able to use this with Loop</li>
-<li>If you build with your Apple Developer ID (Browser build - might not be available yet), then you can install user your own <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> build and it will work without internet</li>
+<li>To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop<ul>
+<li>You can use the <a href="https://www.loopandlearn.org/build-select">Loop and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> and choose Option 2: Build Related Apps and then select GlucoseDirect</li>
+</ul>
+</li>
+<li>If you use the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> installation method with someone else's apple developer id, you will need an internet connection to Loop</li>
 </ul>
 </li>
 <li>LibreTransmitter for Loop: <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">README file on github <abbr title="contains project files and each file's revision history">repository</abbr></a><ul>
-<li>LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed</li>
-<li>Refer to <a href="#modify-loop-to-use-libre">Modify Loop to use Libre</a></li>
+<li>LibreTransmitter is incorporated into Loop directly, so no separate app is required</li>
+<li>Refer to <a href="#libretransmitter">LibreTransmitter</a></li>
 </ul>
 </li>
 </ul>
 <p>Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the <abbr title="Latest release with major updates">Loop 3</abbr> code that you previously downloaded or use <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop Customization</a>.</p>
 <h3 id="modify-loop-to-use-libre">Modify Loop to use Libre<a class="headerlink" href="#modify-loop-to-use-libre" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is the same method used to prepare the <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop Customization</a>. Both xDrip4iOS and GlucoseDirect clients are added in that customized <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<p>The <a href="https://www.loopandlearn.org/main-lnl-patches">Loop and Learn: Loop with Patches</a> version of Loop has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that <abbr title="a copy of code in a github repository other than the original">fork</abbr>, then follow the steps below.</p>
 <p>For your selected app to read the Libre, you must also add a client to <abbr title="Latest release with major updates">Loop 3</abbr> to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <p>Add a client that interfaces with xDrip4iOS:</p>
 <ul>
@@ -3554,13 +3577,14 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ul>
 </li>
 </ul>
-<p>This method is not included as one of the Loop and Learn Customizations. There is a file that is not included in the <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<h3 id="libretransmitter">LibreTransmitter<a class="headerlink" href="#libretransmitter" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Add LibreTransmitter to Loop as a plugin:</p>
 <ul>
 <li>LibreTransmitter for Loop: <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">README file on github <abbr title="contains project files and each file's revision history">repository</abbr></a><ul>
 <li>LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed</li>
 <li><a href="https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872">zulipchat conversation</a></li>
-<li>The required GetGlucoseFromRaw.swift file is not included in the <abbr title="contains project files and each file's revision history">repository</abbr> due to legal concerns, so you have to get it from elsewhere</li>
+<li>There is a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>, libre, that has this incorporated</li>
+<li>See <a href="../../version/build-dev/#buildloopdev-script">BuildLoopDev Script</a></li>
 </ul>
 </li>
 </ul>
