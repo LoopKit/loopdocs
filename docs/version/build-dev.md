@@ -11,7 +11,7 @@ Several methods to build Loop-dev are mentioned on this page:
 1. For the Mac-Xcode method:
     * [Update Loop-dev: Mac-Xcode Build method](#mac-xcode-build-method)
 
-## Build Loop dev with a Script
+## BuildLoopDev Script
 
 There is a script to assist in building the dev branch. It gives you the option to choose the tip of the dev branch or to build a lightly tested commit. If you have not used the [Build-Select-Script](../build/step14.md#build-select-script) to build Loop previously, you may want to review that page.
 
@@ -21,7 +21,7 @@ There is a script to assist in building the dev branch. It gives you the option 
   https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildLoopDev.sh)"
 ```
 
-To build a specific development branch, other than dev, enter the branch name as shown below for the libre branch. Substitute the branch desired for libre.
+You can use the BuildLoopDev script to build a specific development branch, other than dev. See the example below, that builds the libre branch. Substitute the branch desired for libre. There must be a space after the final quote, followed by a hyphen, another space and then the branch name.
 
 ``` { .bash .copy title="Example for libre branch with the BuildLoopDev script" }
 /bin/bash -c "$(curl -fsSL \

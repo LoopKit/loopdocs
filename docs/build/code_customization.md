@@ -817,6 +817,7 @@ Add LibreTransmitter to Loop as a plugin:
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
     * There is a development branch, libre, that has this incorporated
+    * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script)
 
 ## Limit Loop for Faster CGM
 
