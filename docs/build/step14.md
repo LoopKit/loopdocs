@@ -267,13 +267,9 @@ Refer to the graphic below. The messages in the terminal instruct you to:
 
 The next action of the script is to 
 
-* Open a browser window displaying this section of LoopDocs
 * Open Xcode
 
-After Xcode opens, you can exit the script or choose another option.
-
-* Wait until you've successfully built the app before closing the terminal
-
+It is suggested that you wait until you've successfully built the app before closing the terminal.
 
 ### Initial Xcode Screens
 
@@ -294,7 +290,7 @@ If there is a red x in the dashed-blue rectange region on your Xcode screen you 
 
 #### First Time
 
-The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign--keychain-access). Be sure to enter your Mac login password and select Always Allow.
+The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign--keychain-access). Be sure to enter your Mac login password and select `Always Allow` every time it is requested.
 
 #### All Builds
 
