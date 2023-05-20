@@ -11,14 +11,22 @@ Several methods to build Loop-dev are mentioned on this page:
 1. For the Mac-Xcode method:
     * [Update Loop-dev: Mac-Xcode Build method](#mac-xcode-build-method)
 
-## Build Loop dev with a Script
+## BuildLoopDev Script
 
-!!! danger "No Script for dev"
-    There was interim script that was provided for users in the time just before the release of Loop 3. It helped build a lightly-tested version of the dev branch.
+There is a script to assist in building the dev branch. It gives you the option to choose the tip of the dev branch or to build a lightly tested commit. If you have not used the [Build Select Script](../build/step14.md#build-select-script) to build Loop previously, you may want to review that page.
 
-    * After the release of Loop 3, this script is no longer available
-    * It was provided as a convenience for users who wanted DASH but were not comfortable with the requirements of building a dev branch
-    * People should either be on the released version of Loop or know how to build dev without a script using either the GitHub or Mac-Xcode method
+
+``` { .bash .copy title="Copy and Paste to start the BuildLoopDev script" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildLoopDev.sh)"
+```
+
+You can use the BuildLoopDev script to build a specific development branch, other than dev. See the example below, that builds the libre branch. Substitute the branch desired for libre. There must be a space after the final quote, followed by a hyphen, another space and then the branch name.
+
+``` { .bash .copy title="Example for libre branch with the BuildLoopDev script" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildLoopDev.sh)" - libre
+```
 
 ## Update Loop-dev
 
@@ -28,8 +36,7 @@ While Loop-dev is under active development, you should monitor zulipchat and upd
 
 If you are using the GitHub method, once you have configured your fork to point to the dev branch, just follow the update instructions.
 
-* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): Configure your fork to point to dev branch (one time only)
-* [GitHub Update](../gh-actions/gh-update.md): Instructions are the same as for main, but the Actions are different as described in the first link
+* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev)
 
 ### Mac-Xcode Build Method
 
@@ -41,18 +48,14 @@ When building frequently, it is optional to update your provisioning profile wit
 rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
 ```
 
-
 Checking for updates every week is a good idea. Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 
 You may choose to download fresh each time you update. 
 
 You may prefer to use commands to fetch and pull the latest code without making a new clone.
 
-
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
 * Some are comfortable with the command line git commands described on [here](../version/loopworkspace.md#updating-loop-using-loopworkspace).
-
-
 
 ## Loop-dev Version
 
@@ -68,7 +71,7 @@ For example:
     * If minor updates are required before the next release, they will be numbered Loop 3.0.1, etc.
 * Loop 3.1.0 was the development version before Loop 3.2.0 was released
 * Loop 3.2.0 was the next released version
-* Loop 3.2.1 is a minor release
+* Loop 3.2.1 and 3.2.2 were minor releases
 * Loop 3.3.0 is the current development version
 
 ### Identify Loop-dev Version

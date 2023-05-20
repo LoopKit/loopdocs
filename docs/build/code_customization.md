@@ -15,7 +15,9 @@ Read about the customizations on this page before applying them.
 
 Some customizations are the same for everyone and have been prepared for easy use. 
 
-* Mac-Xcode builders can use the [Loop and Learn: Apply Customizations to Loop](https://www.loopandlearn.org/build-select#apply-custom) script
+* Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select#apply-custom) script
+    * This script automatically finds the most recent download and when you are done selecting customizations, opens Xcode to that download
+    * Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download
 * GitHub builders can use [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
 
 Other customizations require that you create your own personalized version.
@@ -768,7 +770,7 @@ The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop with Patches
 
 ### Add Libre App to Loop Phone
 
-This method only works for Loop 3 (main branch) and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone. This should work for dev branch as well.
+This method only works for Loop 3 and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
 
 There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
 
@@ -776,21 +778,22 @@ These are the Libre iOS app options.
 
 * xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
-    * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop (directions are in the documentation)
-    * If you use the TestFlight installation method (someone else's apple developer id), you will not be able to use this with Loop (on your phone without needing an internet connection)
-    * If you build with your Apple Developer ID (Browser build - might not be available yet), then you can install user your own TestFlight build and it will work without internet
+    * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
+        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) and choose Option 2: Build Related Apps and then select xDrip4iOS
+    * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 * GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
-    * If you use the TestFlight installation method, you will not be able to use this with Loop
-    * If you build with your Apple Developer ID (Browser build - might not be available yet), then you can install user your own TestFlight build and it will work without internet
+    * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
+        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) and choose Option 2: Build Related Apps and then select GlucoseDirect
+    * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-    * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
-    * Refer to [Modify Loop to use Libre](#modify-loop-to-use-libre)
+    * LibreTransmitter is incorporated into Loop directly, so no separate app is required
+    * Refer to [LibreTransmitter](#libretransmitter)
 
 Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded or use [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches).
 
 ### Modify Loop to use Libre
 
-This is the same method used to prepare the [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches). Both xDrip4iOS and GlucoseDirect clients are added in that customized fork.
+The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches) version of Loop has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below.
 
 For your selected app to read the Libre, you must also add a client to Loop 3 to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.
 
@@ -806,15 +809,15 @@ Add a client that interfaces with GlucoseDirect:
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292307629)
     * The instructions are in the video on the GlucoseDirectClient repo page
 
-
-This method is not included as one of the Loop and Learn Customizations. There is a file that is not included in the repository.
+### LibreTransmitter
 
 Add LibreTransmitter to Loop as a plugin:
 
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
-    * The required GetGlucoseFromRaw.swift file is not included in the repository due to legal concerns, so you have to get it from elsewhere
+    * There is a development branch, libre, that has this incorporated
+    * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script)
 
 ## Limit Loop for Faster CGM
 
