@@ -84,7 +84,7 @@ Every attempt was made to put messages directly in the script for each step. The
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
-### Build-Select-Script
+### Build Select Script
 
 With the release of Loop 3, the build process is different and simpler
 
@@ -93,18 +93,18 @@ With the release of Loop 3, the build process is different and simpler
 * [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
 * [Loop 3 with Patches](https://www.loopandlearn.org/main-lnl-patches) is provided instead
 
-These instructions show each step needed to download Loop using the Build-Select-Script.
+These instructions show each step needed to download Loop using the Build Select Script.
 
-!!! note "New Menu for Build-Select-Script"
-    The Build-Select-Script has been updated with more menu options. It can do more than just assist in building the Loop app.
+!!! note "New Menu for Build Select Script"
+    The Build Select Script has been updated with more menu options. It can do more than just assist in building the Loop app.
     
-    Please review [Loop and Learn: Build-Select-Script](https://www.loopandlearn.org/build-select/) for more information.
+    Please review [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) for more information.
 
     You may notice some graphics on this page shows red font to emphasize some items. The script now only shows red font for an error. Bold font is used for emphasis. Not all graphics were updated.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
-``` { .bash .copy title="Copy and Paste to start the Build-Select-Script" }
+``` { .bash .copy title="Copy and Paste to start the Build Select Script" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
 ```
