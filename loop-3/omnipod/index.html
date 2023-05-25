@@ -2767,6 +2767,18 @@
 </ul>
 <p>In other words, you can leave your phone behind and the selected basal rate continues for the selected basal duration. There will be no automated adjustments of delivery for the temp basal duration.<br><br></p>
 <p align="center"><img alt="screens used to configure, track and cancel manual temp basal rate" src="../img/manual-temp-basal.svg" width="600" /></p>
+<h4 id="during-manual-temp-basal">During Manual Temp Basal<a class="headerlink" href="#during-manual-temp-basal" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">This Pod Only</p>
+<p>The manual temp basal command from Loop tells the pod to initiate a temp basal for the designated rate and duration.</p>
+<ul>
+<li>The pod itself takes care of the temp basal with no further interaction with Loop</li>
+<li>Loop will no longer issue commands to the pod without manual intervention from the user until the expected duration ends or user selects <code>Cancel Manual Basal</code></li>
+<li>Loop continues to request and receive status reports from the pod while the pod is within communication range</li>
+</ul>
+<p><strong>Deactivating this pod and pairing a new one interrupts the temp basal.</strong></p>
+<p><strong>If you still need that basal rate, you must initiate it on the new pod.</strong></p>
+</div>
 <p>Once the manual temp basal command is sent to the pod, Loop changes to <abbr title="Loop will not make automated adjustments of insulin delivery but all prediction and recommendation features are available">Open Loop</abbr> mode and updates displays as shown in the graphic above</p>
 <ul>
 <li><a href="#pod-status">Pod Status</a> screen:<ul>
@@ -2786,6 +2798,7 @@
 <p class="admonition-title">Automatic Resumption of Scheduled Basal</p>
 <p>The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding if there is insulin in the reservoir and a pod fault does not occur.</p>
 </div>
+<p>For situations where you need a modification of your insulin needs that is not dependent on a particular pod, review the information on the <a href="../../operation/features/workout/">Overrides</a> page.</p>
 <h3 id="devices">Devices<a class="headerlink" href="#devices" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>, there is a Devices section used to access the <a href="../../operation/loop-settings/rileylink/"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></a> status and commands screen.</p>
 <h3 id="pod-details">Pod Details<a class="headerlink" href="#pod-details" title="Anchor link to this Header on this Page">&para;</a></h3>
