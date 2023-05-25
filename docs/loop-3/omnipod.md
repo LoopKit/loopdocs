@@ -172,6 +172,18 @@ In other words, you can leave your phone behind and the selected basal rate cont
 ![screens used to configure, track and cancel manual temp basal rate](img/manual-temp-basal.svg){width="600"}
 {align="center"}
 
+#### During Manual Temp Basal
+
+!!! warning "This Pod Only"
+    The manual temp basal command from Loop tells the pod to initiate a temp basal for the designated rate and duration.
+
+    * The pod itself takes care of the temp basal with no further interaction with Loop
+    * Loop will no longer issue commands to the pod without manual intervention from the user until the expected duration ends
+    * Loop continues to request and receive status reports from the pod while the pod is within communication range
+
+    **Deactivating this pod and pairing a new one interrupts the temp basal.**
+
+    **If you still need that basal rate, you must initiate it on the new pod.**
 
 Once the manual temp basal command is sent to the pod, Loop changes to Open Loop mode and updates displays as shown in the graphic above
 
