@@ -178,7 +178,7 @@ In other words, you can leave your phone behind and the selected basal rate cont
     The manual temp basal command from Loop tells the pod to initiate a temp basal for the designated rate and duration.
 
     * The pod itself takes care of the temp basal with no further interaction with Loop
-    * Loop will no longer issue commands to the pod without manual intervention from the user until the expected duration ends
+    * Loop will no longer issue commands to the pod without manual intervention from the user until the expected duration ends or user selects `Cancel Manual Basal`
     * Loop continues to request and receive status reports from the pod while the pod is within communication range
 
     **Deactivating this pod and pairing a new one interrupts the temp basal.**
@@ -199,6 +199,8 @@ So long as you were in Closed Loop before requesting the Temp Basal, Loop return
 
 !!! info "Automatic Resumption of Scheduled Basal"
     The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding if there is insulin in the reservoir and a pod fault does not occur.
+
+For situations where you need a modification of your insulin needs that is not dependent on a particular pod, review the information on the [Overrides](../operation/features/workout.md) page.
 
 ### Devices
 
