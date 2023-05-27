@@ -2658,9 +2658,9 @@
 <p align="center"><img alt="setting up Apple Health permissions with Loop 3" src="../img/health-loop-3.svg" width="750" /></p>
 <p>You can review the permissions screen later. <a href="../../faqs/apple-health-faqs/#how-do-i-modify-apple-healthkit-permissions">FAQS: How Do I Modify Apple HealthKit Permissions</a>.</p>
 <h3 id="usage-data-sharing">Usage Data Sharing<a class="headerlink" href="#usage-data-sharing" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15</p>
-<p>If you are running an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15 device, this screen is shown in German regardless of the language you choose for Loop. That is an accident that will be fixed by the next release. The English version is shown below.</p>
+<div class="admonition question">
+<p class="admonition-title">Language?</p>
+<p>If the instructions on this screen are not your preferred language, make sure you built the released code.</p>
 </div>
 <p>Next, you will be asked your preference for Usage Data Sharing, with the default automatically set to <code>Share Version Only</code> as shown in the graphic below:</p>
 <p align="center"><img alt="choose whether to share usage data with Loop developers" src="../img/data-sharing.svg" width="350" /></p>
@@ -2670,6 +2670,16 @@
 <li>Share the Loop version number, phone type and <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version number</li>
 <li>Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is <strong>not</strong> collected</li>
 </ul>
+<h4 id="share-usage-data">Share Usage Data<a class="headerlink" href="#share-usage-data" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you select Share Usage Data you may wonder types of information is available to the Loop Developers.</p>
+<ul>
+<li>Statistics on loop failures can show which devices are causing more issues and which issues are more widespread</li>
+<li>Pod failures show whether particular versions of Loop affect the rate of failure, which helps determine fixes</li>
+<li>Learning how often particular features, like overrides, are used helps with future user interface design and improvements</li>
+<li>Language and location information helps understand the user base so <code>localization</code> (language translations) can be prioritized</li>
+<li>Version information helps quantify risk when a bug is found in a particular version of Loop, giving an indication of how many people may be affected</li>
+</ul>
+<p>The Loop Developers are the only ones with access to this data.</p>
 <h3 id="connect-loop-to-nightscout">Connect Loop to Nightscout<a class="headerlink" href="#connect-loop-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The next screen, shown on the left of the graphic below, enables the user to both connect Loop to Nightscout and to <strong>download existing Loop settings</strong> from Nightscout.</p>
 <div class="admonition question">
