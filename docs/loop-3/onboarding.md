@@ -68,8 +68,8 @@ You can review the permissions screen later. [FAQS: How Do I Modify Apple Health
 
 ### Usage Data Sharing
 
-!!! warning "iOS 15"
-    If you are running an iOS 15 device, this screen is shown in German regardless of the language you choose for Loop. That is an accident that will be fixed by the next release. The English version is shown below.
+!!! question "Language?"
+    If the instructions on this screen are not your preferred language, make sure you built the released code.
 
 Next, you will be asked your preference for Usage Data Sharing, with the default automatically set to `Share Version Only` as shown in the graphic below:
 
@@ -81,6 +81,18 @@ If you choose to share usage data, it is collected anonymously. The choices are:
 * Do not share any usage data
 * Share the Loop version number, phone type and iOS version number
 * Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
+
+#### Share Usage Data
+
+If you select Share Usage Data you may wonder types of information is available to the Loop Developers.
+
+* Statistics on loop failures can show which devices are causing more issues and which issues are more widespread
+* Pod failures show whether particular versions of Loop affect the rate of failure, which helps determine fixes
+* Learning how often particular features, like overrides, are used helps with future user interface design and improvements
+* Language and location information helps understand the user base so `localization` (language translations) can be prioritized
+* Version information helps quantify risk when a bug is found in a particular version of Loop, giving an indication of how many people may be affected
+
+The Loop Developers are the only ones with access to this data.
 
 ### Connect Loop to Nightscout
 
