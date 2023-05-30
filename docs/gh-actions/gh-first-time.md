@@ -283,7 +283,7 @@ The `Keys` screen is seen again with the additional content similar to that show
 ### Do Not Confuse Your Keys
 
 !!! danger "API Key vs APN Key"
-    If you use [Remote Commands with Nightscout](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both purposes are p8 keys, but should not be confused.
+    If you use [Remote Commands with Nightscout](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
     The Secrets for building with GitHub use the API Key.
 
@@ -314,7 +314,7 @@ In summary, from this section, you have found or generated the following, and sa
 
 ## New GitHub Account
 
-If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username and password.
+If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username (`username`) and password.
 
 If you do not already have a GitHub account, you need to create one. Be sure to record the email, password and username for your GitHub account.
 
