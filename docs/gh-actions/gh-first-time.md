@@ -216,7 +216,7 @@ Each step has a link to take you to the specific page you need to do the next st
 1. Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
     * Look at the upper right hand corner of that page
     * The 10-character ID number below your name is your <code>TEAMID</code>
-        * If all you see are icons, click on the Membership Details icon
+        * If all you see are icons, click on the [Membership Details](https://developer.apple.com/account#MembershipDetailsCard) icon
     * Record this for use when you configure your Secrets and when you configure your unique <span class="notranslate">App Group</span>
     * Stop a moment and double check - if you get this wrong, you will have errors later
         * Do not "type" what you think you see; copy and paste from the `Team ID` from the webpage. (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
