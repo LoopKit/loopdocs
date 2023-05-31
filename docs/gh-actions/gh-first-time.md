@@ -425,7 +425,7 @@ You are done with this part of the set up.
 
 After creating the <span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
-* Near the top right, click on the close button (`x`) to dismiss the `Successfully fetched` message
+* Near the top right, click on the close button :octicons-x-16: (`x`) to dismiss the `Successfully fetched` message
 * In the middle, click on the `Dismiss` button to remove the "`Your branch is not protected`" message
 
 ![after creating the fork LoopWorkspace](img/gh-initial-fork-dismiss.png){width="500"}
@@ -435,7 +435,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 * Note that your username is now showing
 * The comment under your username indicates where the <span class="notranslate">fork</span> came from (that is a clickable link)
-* The branch that is selected is `main`
+* The branch that is selected :octicons-git-branch-16: is `main`
 * The message says "`This branch is up to date with LoopKit/LoopWorkspace:main`"
 
 ![after creating the fork LoopWorkspace](img/gh-after-fork.svg){width="700"}
@@ -461,7 +461,7 @@ You need to be logged into GitHub.
 
 1. You should see (at least) 2 repositories: `Match-Secrets` and `LoopWorkspace`
 1. Click on `LoopWorkspace` to open that repository
-1. Click on the Settings Icon near the top right of your `LoopWorkspace`
+1. Click on the Settings Icon near the top right of your LoopWorkspace
     * If you don't see ⚙️ `Settings`, make your browser wider or scroll to the right
     * If you still don't see ⚙️ `Settings`, then you are **not** on your fork or you need to sign in to your GitHub account
     * After you click on ⚙️ `Settings`, your screen should look like the graphic below
@@ -489,7 +489,7 @@ You need to be logged into GitHub.
 
 Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
 
-Take a calming breath. This next part requires care.
+:person_in_lotus_position: Take a calming breath. This next part requires care.
 
 * Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit `Add Secret` to save it
     * You can replace the value for any secret later - you just can't see what you entered before
@@ -531,7 +531,7 @@ Once all six secrets have been added to your `LoopWorkspace`, you are done with 
 {align="center"}
 
 !!! tip "Time for a Break?"
-    This is a good place to pause if you need to. Just note where you are on the page so you can return later.
+    :fontawesome-regular-circle-pause: This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
 ## Validate Secrets
 
@@ -574,8 +574,8 @@ Refer to the graphic below for the numbered steps:
 
 The `Add Identifier` <span class=notranslate>Action</span> should complete (succeed or fail) in a few minutes as shown in the graphic below.
 
-* If you see the green check continue to the next section
-* If you see the red X
+* If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
+* If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }): 
     * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
     * Once you've resolved the error, repeat the Action: [Add Identifiers](#add-identifiers) step
@@ -717,7 +717,7 @@ If have previously used some kind of remote build, like `diawi` or `TestFlight`,
     ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
     {align="center"}
 
-1. Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below
+1. Click the `Add Apps` button or the blue "plus" icon (:material-plus-circle:{: .appstoreconnect } ) and select `New App` as shown in the graphic below
 
     ![choose to add a new app](img/new-app-in-store.png){width="300"}
     {align="center"}
