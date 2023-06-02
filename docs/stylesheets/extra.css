@@ -16,3 +16,15 @@ article ul ul ul {
 .mermaid { 
    --md-mermaid-node-fg-color:  #18A0A0;
 }
+
+.passed {
+    color: teal;
+}
+
+.failed {
+    color: red;
+}
+
+.appstoreconnect {
+    color: #0070C9;
+}
