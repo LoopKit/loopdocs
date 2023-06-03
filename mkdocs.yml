@@ -72,6 +72,11 @@ extra_javascript:
 
 plugins:
     - search
+    - htmlproofer:
+        enabled: !ENV [CHECK_BROKEN_LINKS, False]
+        raise_error_after_finish: true
+
+use_directory_urls: !ENV [CHECK_BROKEN_LINKS, True]
 
 nav:
 - Home: 'index.md'
