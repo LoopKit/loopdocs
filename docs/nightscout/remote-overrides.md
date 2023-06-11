@@ -16,24 +16,24 @@ If you are using Loop 3, then you can also send remote commands to add carbs and
 
     * [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) (new with Loop 3) allows you to build on a browser (no need for a Mac) and send Loop to your phone using TestFlight
     * [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/) allows you to save a build created by Xcode, store it in the cloud and then download and install on your phone later
-
+    
     Both of these remote options require this [Nightscout: Config Var](https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars) to be added to Nightscout:
-
+    
     `LOOP_PUSH_SERVER_ENVIRONMENT` = `production`
-
+    
     Be aware that if you then return to building directly from Xcode, you must disable that config var from Nightscout and restart the server.
-
+    
     Note - this is covered in detail in Step 3 below when you [LoopDocs: Add APN Variables to Nightscout](#add-apn-variables-to-nightscout).
 
 
 !!! abstract "What you will need to do.."
 
     1. Update the Looper's iPhone Settings
-
+    
     2. Create a Key for an Apple Push Notifications service (APNs)
-
+    
     3. Update your Nightscout site and add some "config vars" lines in your Nightscout site settings.
-
+    
     And read this entire page - focus on warnings and caveats.
 
 !!! tip "New Feature in Loop 3"
@@ -43,9 +43,9 @@ If you are using Loop 3, then you can also send remote commands to add carbs and
     * iOS 15.1 or newer
     * Nightscout version 14.2.6 or newer
         * Required to get all the features
-
+    
     Not required and still under development, but users who are testing this separate app are pleased
-
+    
     * [LoopCaregiver](#loopcaregiver) app (iOS 16 or higher) enables the following from the caregiver's phone
         * monitor Loop
         * issue remote commands for carbs, bolus and overrides
@@ -53,7 +53,7 @@ If you are using Loop 3, then you can also send remote commands to add carbs and
         * LoopCaregiver phone iOS 16
         * Loop phone iOS 15.1 running Loop 3
         * Nightscout 14.2.6
-
+    
     The expanded capabilities for remote commands in Loop 3 are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into LoopDocs soon.
 
 ## Step 1: Update the Looper's iPhone settings
@@ -61,7 +61,7 @@ If you are using Loop 3, then you can also send remote commands to add carbs and
 For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.
 
 1. The slider in iPhone -> Settings -> Loop -> Notifications needs to be turned to Allow Notifications
-1. The slider in iPhone -> Settings -> General -> Background App Refresh -> Loop must be enabled
+2. The slider in iPhone -> Settings -> General -> Background App Refresh -> Loop must be enabled
 
 Error messages if Looper's phone is not configured correctly:
 
@@ -70,34 +70,35 @@ Error messages if Looper's phone is not configured correctly:
 
 ## Step 2: Apple Push Notifications
 
-The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it. (Reminder - this only works with the paid Apple Developer ID.)
+The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it. To enable this, you need to create a key and grant it access to the Apple Push Notification Service (APNS). *(Reminder - this only works with the paid Apple Developer ID.)* 
 
-1. Login to your [Apple developer account](https://developer.apple.com/account/) with the Apple ID associated with your developer team that you used to sign your Loop app.
-2. Click on "Certificates, Indentifiers & Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" **OR** the &plus; icon to add a new key.
+1. To get started, go to the "Keys" section under Apple Developer's [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/authkeys/list) and login with the Apple ID associated with your developer team that you used to sign your Loop app.
 
-![img/apns-add-key.png](img/apns-add-key.png)
+2. If not already open in your browser (compare with below screenshot), click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" **OR** the &plus; icon to add a new key.
 
-3. In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.
+    ![img/apns-add-key.png](img/apns-add-key.png)
 
-![img/key-apns.png](img/key-apns.png)
+3. In the form that appears, do the following:
+    - Click the checkbox for enabling "**Apple Push Notifications service (APNs)**" 
+    - Enter a name for the key such as "Nightscout" (you can name it however you want, just make sure you know what the key is for by the name you choose).
+    - Then click the "Continue" button in the upper right of the screen.
+   
+    ![img/key-apns.png](img/key-apns.png)
 
-4. In the screen that follows, click the blue "Register" button.
+4. In the screen that follows, click the blue "**Register**" button.
 
-![img/apns-register.png](img/apns-register.png)
+    ![img/apns-register.png](img/apns-register.png)
 
-5. In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".
+5. In the screen that follows, click the blue "**Download**" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".
 
-![img/apns-download.png](img/apns-download.png)
+    ![img/apns-download.png](img/apns-download.png)
 
 6. Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.
+    ![img/apns-open.png](img/apns-open.png)
+    ![img/apns-textedit.png](img/apns-textedit.png)
+7. When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight **ALL OF THE CONTENTS** of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press `command-a` to highlight all the text and then `command-c` to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.
 
-![img/apns-open.png](img/apns-open.png)
-
-![img/apns-textedit.png](img/apns-textedit.png)
-
-1. When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight **ALL OF THE CONTENTS** of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press `command-a` to highlight all the text and then `command-c` to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.
-
-![img/apns-copy-key.png](img/apns-copy-key.png)
+    ![img/apns-copy-key.png](img/apns-copy-key.png)
 
 ## Step 3: Add APN to Nightscout
 
@@ -147,9 +148,9 @@ When executed properly, you should have something that looks like this for your 
     If you build with the GitHub [Browser Build](../gh-actions/gh-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both purposes are p8 keys, but should not be confused.
 
     The Secrets for building with GitHub use the API Key.
-
+    
     The config vars for Nightscout use the APN Key.
-
+    
     * If you are using remote commands with Nightscout and building with the GitHub build, you must also add the config var of LOOP_PUSH_SERVER_ENVIRONMENT with a value of `production` to your Nightscout site or the remote commands will not work.
     * If you are using the Mac-Xcode build method, do not have a config var of LOOP_PUSH_SERVER_ENVIRONMENT entered - remove it if it is present.
 
@@ -181,7 +182,7 @@ Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). Fo
     We want to highlight a very important risk before you get started.
 
     For safety, always assume a previous remote carb / bolus was delivered. For motivation think of the following example:
-
+    
     * You send a 5 unit remote bolus.
     * The bolus is delivered to the Looper.
     * Nightscout is having a temporary technical issue and doesn't show the bolus was received.
@@ -195,21 +196,21 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
     If you plan to send a carb command remotely and later decide to issue a bolus command - STOP and consider.
 
     There are 2 scenarios of concern that could lead to too much insulin:
-
+    
     * Looper is using Temp Basal Dosing Strategy
         * Loop will initiate a max Temp Basal when it receives the carb remote command
         * Your bolus will be accepted and take place in addition to the high temp basal
     * Looper is using Automatic Bolus Dosing Strategy
         * Loop will initiate 40% of the recommended dose when it receives the carb remote command
         * Your bolus will be accepted and take place in addition to an automatic boluses
-
+    
     Typically, sending a carb command alone is sufficient for Loop to know about the carbs and begin to dose for them.
-
+    
     If you really want to both bolus for carbs and enter carbs, then do it in that order.
-
+    
     * The bolus, when accepted, will cause Loop to issue a 0 Temp Basal (which is "safer")
     * The carbs, when accepted, will cause Loop to respond to the carbs while including the bolus already delivered and included in the Looper's IOB
-
+    
     Remember - you should pause at least 60 sec between remote commands or the One-Time-Password (OTP) will be rejected as having already been used.
 
 ## Using Remote Commands
@@ -230,13 +231,13 @@ The LoopCaregiver app is under development to make remote commands easier to imp
     What does that mean? Sounds scary!
 
     This is an app under development. Sometimes, when improvements are added, you have to start over with a fresh download and enter all your information again to take advantage of the update. The app on your phone keeps working until you are ready to update.
-
+    
     * **The location of the repository has moved**
     * **The ability to build with [GitHub](../gh-actions/gh-other-apps.md) as well as Xcode has been added**
     * **The bundle ID has been modified**
-
+    
     Because the bundle ID has changed:
-
+    
     * If you already have LoopCaregiver running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again
     * If you haven't built LoopCaregiver, the app you download and build today has the new format for the bundle ID
 
