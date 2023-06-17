@@ -100,7 +100,7 @@ git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorks
 
 ### Start Xcode using command line
 
-If you want to start the build from the command line, enter the following 2 lines into the terminal and skip ahead to [Building LoopWorkspace](#building-loopworkspace)
+If you want to start the build from the command line, enter the following 2 lines into the terminal.
 
 ``` { .bash .copy }
 cd LoopWorkspace

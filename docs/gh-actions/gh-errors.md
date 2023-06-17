@@ -202,7 +202,7 @@ After you have clicked `Update token` you should see the token overview again wi
 
 #### Create Certificates
 
-You should be able to continue with the [First Time Steps to Create Certificates](gh-first-time.md/#create-certificates) and then proceed from there with Build Loop and keep going.
+You should be able to continue with the [First Time Steps to Create Certificates](gh-first-time.md#create-certificates) and then proceed from there with Build Loop and keep going.
 
 
 

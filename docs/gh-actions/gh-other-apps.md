@@ -191,7 +191,7 @@ This requires you to provide some information. Examine the table below for the b
     ![choose to add a new app](img/new-app-in-store.png){width="300"}
     {align="center"}
 
-1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [GitHub First-Time: Find My Loop](#find-my-loop), where you'll be finding App Name instead of Loop.
+1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [GitHub First-Time: Find My Loop](gh-first-time.md#find-my-loop), where you'll be finding App Name instead of Loop.
     * Select "iOS".
     * Enter a name: this will have to be unique
         * You could start with "App Name ABC" where ABC are your initials

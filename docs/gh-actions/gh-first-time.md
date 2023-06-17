@@ -248,7 +248,7 @@ Each step has a link to take you to the specific page you need to do the next st
 
 The `Keys` screen is seen again with the additional content similar to that shown in the graphic below; the key information is blanked out for security.
 
-* Review the graphic and then follow directions below to save more parameters you will need to [Configure Secrets](#configure-secret)
+* Review the graphic and then follow directions below to save more parameters you will need to [Configure Secrets](#configure-secrets)
 
     ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
@@ -751,7 +751,7 @@ This section is for people who were not able to follow the instructions in the l
 
 There are two possible reasons:
 
-1. You did not complete [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers) or one of the predecessor steps; review those steps
+1. You did not complete [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers) or one of the predecessor steps; review those steps
 1. Your app is already in *App Store Connect*, but you cannot see it
 
 You may have no memory of ever setting up `Loop` in *App Store Connect*. If you previously used some kind of remote build, like `diawi`, your `Loop` may be there as a *Removed App*.

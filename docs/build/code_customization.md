@@ -15,7 +15,7 @@ Read about the customizations on this page before applying them.
 
 Some customizations are the same for everyone and have been prepared for easy use. 
 
-* Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select#apply-custom) script
+* Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select/#apply-custom) script
     * This script automatically finds the most recent download and when you are done selecting customizations, opens Xcode to that download
     * Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download
 * GitHub builders can use [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
@@ -779,11 +779,11 @@ These are the Libre iOS app options.
 * xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
-        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) and choose Option 2: Build Related Apps and then select xDrip4iOS
+        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select xDrip4iOS
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 * GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
-        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) and choose Option 2: Build Related Apps and then select GlucoseDirect
+        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select GlucoseDirect
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so no separate app is required
