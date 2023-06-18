@@ -290,7 +290,7 @@ If there is a red x in the dashed-blue rectange region on your Xcode screen you 
 
 #### First Time
 
-The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign--keychain-access). Be sure to enter your Mac login password and select `Always Allow` every time it is requested.
+The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign-keychain-access). Be sure to enter your Mac login password and select `Always Allow` every time it is requested.
 
 #### All Builds
 

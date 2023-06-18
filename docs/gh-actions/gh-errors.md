@@ -202,14 +202,14 @@ After you have clicked `Update token` you should see the token overview again wi
 
 #### Create Certificates
 
-You should be able to continue with the [First Time Steps to Create Certificates](gh-first-time.md/#create-certificates) and then proceed from there with Build Loop and keep going.
+You should be able to continue with the [First Time Steps to Create Certificates](gh-first-time.md#create-certificates) and then proceed from there with Build Loop and keep going.
 
 
 
 ## Action: Build Loop Errors
 
 !!! warning "Run Create Certificates First"
-    You must run Action: Create Certificates before attemping to run Action: Build Loop
+    You must run Action: Create Certificates before attempting to run Action: Build Loop
 
 Use [Examine the Error](#examine-the-error)
 
@@ -217,7 +217,7 @@ Use [Examine the Error](#examine-the-error)
 * Open the `1_build.txt` file
 * Search for the phrase below
 
-For each Build Loop Error section below, copy the phrase into the search function of your test editor. If you find it, solve that error. If not, move on to the next one.
+For each Build Loop Error section below, copy the phrase into the search function of your text editor. If you find it, solve that error. If not, move on to the next one.
 
 ### Could not find an app on App Store Connect
 

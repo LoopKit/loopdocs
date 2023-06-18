@@ -182,7 +182,7 @@ Here's some things to check if you have frequent red loops:
 
 ## Posting for Help
 
-Before you post on Looped group for help with a red loop, please make sure you've [reset the RileyLink / Phone](#rileylink-compatible-device).
+Before you post on Looped group for help with a red loop, please make sure you've [reset the RileyLink / Phone](../build/step5.md#rileylink-compatible-devices).
 
 Before you post for help, please also check your Nightscout status including database size. This step is often overlooked and yet solves a lot of problems.
 
