@@ -653,7 +653,7 @@ The `Edit Your App ID Configuration` screen will open. You will be taking two ac
 
 1. Now scroll slowly back up to the top of the page. As you go, confirm that each of these is configured with a check mark; if any are missing, click to enable.
     * `Time Sensitive Notifications`
-    * `SiriKit`
+    * `Siri` (formerly known as `SiriKit`)
     * `Push Notifications`
     * `HealthKit`
     * `App Groups` (enabled with `group.com.TEAMID.loopkit.LoopGroup`)
