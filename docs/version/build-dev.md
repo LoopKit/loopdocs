@@ -18,14 +18,15 @@ There is a script to assist in building the dev branch. It gives you the option 
 
 ``` { .bash .copy title="Copy and Paste to start the BuildLoopDev script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildLoopDev.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)"
 ```
+### BuildLoopDev Script Libre
 
 You can use the BuildLoopDev script to build a specific development branch, other than dev. See the example below, that builds the libre branch. Substitute the branch desired for libre. There must be a space after the final quote, followed by a hyphen, another space and then the branch name.
 
 ``` { .bash .copy title="Example for libre branch with the BuildLoopDev script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildLoopDev.sh)" - libre
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)" - libre
 ```
 
 ## Update Loop-dev

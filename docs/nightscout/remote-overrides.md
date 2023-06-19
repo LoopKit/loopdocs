@@ -270,7 +270,7 @@ A build script is available to assist in building LoopCaregiver. This should be 
 Open a terminal window. Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.
 
 ``` { .bash .copy  title="Copy and Paste to start the BuildLoopCaregiver.sh script" }
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopnlearn/LoopBuildScripts/main/BuildLoopCaregiver.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopCaregiver.sh)"
 ```
 
 Paste the line into the Terminal window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+v++; or ++control+++click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.

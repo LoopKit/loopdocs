@@ -176,11 +176,14 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but a lot a people depended on it. Because of that, the Loop and Learn team kept it on life-support. It has been updated to include DASH, but that is the last expected improvement.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the Loop and Learn team kept it on life-support. It has been updated to include DASH, but that is the last expected improvement.
 
-Many features people used with FreeAPS can be added to Loop 3 with customization. These customizations are supplied as a new branch, main_lnl_patches, on the loopnlearn GitHub site. This includes Libre support and the CustomTypeOne LoopPatches.
+Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. There is a specific fork that can be built with some of these customizations. However, with the exception of libre support, interfacing with xDrip4iOS and GlucoseDirect (separate apps you must build yourself and install on your phone), all the customizations can be added using the Loop and Learn Customization Select script. That script can be run stand-alone (see Code Customization link below) or selected as an option as part of the Build Select Script when doing a Mac-Xcode build.
 
-* The customizations are described in [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches)
-* For Browser Build, follow the direction on the page above
-* For Mac-Xcode build, these customization were incorporated as an option in the [Build Select Script](../build/step14.md).
+Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code_customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/). The special fork mentioned above, with build instructions below, includes a subset of the customizations available with the CustomizationSelect script.
+
+* The customizations included in the fork (mentioned above) are described in [Loop and Learn: Summary of Loop with LnL Patches](https://www.loopandlearn.org/main-lnl-patches)
+    * For Browser Build, follow the direction at [Loop and Learn: GitHub Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code/#add-lnl-patches)
+    * For Mac-Xcode build, these customization were incorporated as an option in the [Build Select Script](../build/step14.md#download-loop).
+
 

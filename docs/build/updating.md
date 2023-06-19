@@ -142,7 +142,7 @@ Copy the line below that starts with `/bin/bash` by hovering the mouse near the 
 
 ``` { .bash .copy title="Copy and Paste to start the Build Select Script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh)"
 ```
 
 Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+"V"++ ; or ++control++ click and select from menu or `Edit`-`Paste` at top of Mac screen.)
