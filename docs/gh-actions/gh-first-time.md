@@ -219,7 +219,9 @@ Each step has a link to take you to the specific page you need to do the next st
         * If all you see are icons, click on the [Membership Details](https://developer.apple.com/account#MembershipDetailsCard) icon
     * Record this for use when you configure your Secrets and when you configure your unique <span class="notranslate">App Group</span>
     * Stop a moment and double check - if you get this wrong, you will have errors later
-        * Do not "type" what you think you see; copy and paste from the `Team ID` from the webpage. (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
+        * !!! tip "Do not "type" what you think you see"
+            **Copy and paste** from the `Team ID` from the webpage.  
+            (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
 1. Open this link: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
     * Click the `Keys` tab
         * If this is your first time here, there will be a dialog for you to follow:
