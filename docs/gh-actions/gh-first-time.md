@@ -499,7 +499,7 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
 * Confirm, one more time, that your `TEAMID` is correct
     * If it is not, all will appear fine until you try to Build Loop and then you will get failures
 
-For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
+For each of the following secrets, follow the directions below - this list is configured with a copy button (:material-content-copy:) when you hover to the right of each word - this helps avoid spelling errors.
 ``` { .text .copy }
 TEAMID
 ```
