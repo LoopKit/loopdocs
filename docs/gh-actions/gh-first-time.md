@@ -198,6 +198,17 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 * LoopDocs has an [Apple Developer Program](../build/step6.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [Apple Developer account](https://developer.apple.com) to sign up
 
+### Find TEAMID
+* Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
+    * Look at the upper right hand corner of that page
+    * The 10-character ID number below your name is your <code>TEAMID</code>
+        * If all you see are icons, click on the [Membership Details](https://developer.apple.com/account#MembershipDetailsCard) icon
+    * Record this for use when you configure your Secrets and when you configure your unique <span class="notranslate">App Group</span>
+    * Stop a moment and double check - if you get this wrong, you will have errors later
+        * !!! tip "Do not "type" what you think you see"
+            **Copy and paste** from the `Team ID` from the webpage.  
+            (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
+
 ### Generate API Key
 !!! info "Need a Paid Apple Developer Account Set Up to Generate the API Key"
     You cannot generate the API Key until you have the paid Apple Developer account set up.  
@@ -215,15 +226,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
     
     Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
 
-1. Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
-    * Look at the upper right hand corner of that page
-    * The 10-character ID number below your name is your <code>TEAMID</code>
-        * If all you see are icons, click on the [Membership Details](https://developer.apple.com/account#MembershipDetailsCard) icon
-    * Record this for use when you configure your Secrets and when you configure your unique <span class="notranslate">App Group</span>
-    * Stop a moment and double check - if you get this wrong, you will have errors later
-        * !!! tip "Do not "type" what you think you see"
-            **Copy and paste** from the `Team ID` from the webpage.  
-            (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
+
 1. Open this link: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
     * Click the `Keys` tab
         * If this is your first time here, there will be a dialog for you to follow:
