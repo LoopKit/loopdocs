@@ -199,8 +199,9 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 * This link takes you straight to [Apple Developer account](https://developer.apple.com) to sign up
 
 ### Generate API Key
-
-You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
+!!! info "Need a Paid Apple Developer Account Set Up to Generate the API Key"
+    You cannot generate the API Key until you have the paid Apple Developer account set up.  
+    If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
 
 This section will walk you through the steps required to gather or create these parameters.
 
