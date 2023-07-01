@@ -1,4 +1,4 @@
-## Loop Services
+ ## Loop Services
 
 Near the bottom of your Loop settings screen is a section called "Services".
 
@@ -35,8 +35,6 @@ With Loop 3.2.x and newer versions, data can be directly uploaded from Loop to T
 
     * There is a new authentication framework in Tidepool
         * Loop developers are working on handling this new authentication protocol
-        * In the meantime, the Loop Tidepool uploader frequently loses track of your Tidepool account ID and stops uploading
-        * You have to delete the Tidepool account in Loop and add it back as a work-around
     * One other problem is that data uploaded with the Tidepool Mobile uploader from Apple Health shows up as duplicate data
         * Even if you turn off access of the Tidepool Mobile uploader to Apple Health, there will still be 7-days of overlap with Loop that will display as duplicated data (think 2x carbs, insulin etc in your Tidepool Web display) when you enable Loop Tidepool service as the uploader
 
@@ -64,6 +62,8 @@ When you add the Tidepool Service to Loop, be sure to disable Tidepool Mobile ab
 * Warning: Even when you turn off the access to Health on the Tidepool Mobile app on the day that you turn on Loop Tidepool service, you will still get 7 days of overlap because Loop stores 7 days of data.
 
 You can still use the note taking feature with Tidepool Mobile when Health is not connected, although you must have internet connectivity for this to work.
+
+Tidepool Support is available to help troubleshoot issues or answer questions about using Tidepool. Contact them via email at support@tidepool.org.
 
 ## Loggly
 
