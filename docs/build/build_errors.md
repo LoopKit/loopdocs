@@ -383,9 +383,10 @@ Or maybe you are trying to build using an old download; some older versions did 
 
 ### Developer License Update (PLA Update)
 
-**Error message:** "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."
+**Error message:** `The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement`.  
+Or you may see `Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account.`
 
-**Solution:** You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
+**Solution:** You'll need to log onto your Apple Developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
 
 ![img/license.png](img/license.png){width="750"}
 {align="center"}
