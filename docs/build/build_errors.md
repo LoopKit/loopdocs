@@ -106,9 +106,12 @@ Choose the Platform tab. If there is a missing watchOS simulator that you think 
 
 ## Posting for help
 
-STOP!!  Read this section! Important!
-
-Before you post in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.
+!!! important "STOP!!  Read this section! Important!"
+    
+    Before you post in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site asking for help with build errors, do your work first.   
+    The build errors listed below (and the checks listed above) will fix most of the problems you may encounter.  
+    
+    ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.
 
 Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.
 
