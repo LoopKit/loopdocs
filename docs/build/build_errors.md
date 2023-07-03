@@ -89,7 +89,7 @@ If the build fails again, look through the list below and see if you can match y
 
 This may change, but for now, the watchOS simulator is not automatically included with the Xcode 14.x download and install. Some version of the watchOS simulator is required to build Loop, independent of whether you use a watch.
 
-You will be asked if you want to download & install.  Make sure watchOS is selected.
+You will be asked if you want to download & install.   ==Make sure `watchOS` is selected.==
 
 ![query about watchOS simulators](img/xcode-14-watchos.svg){width="500"}
 {align=center}
