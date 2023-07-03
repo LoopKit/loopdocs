@@ -1,14 +1,14 @@
 ## Build Errors
 
-**These are only relevant when building with a Mac and Xcode.**
-
-**For GitHub (Browser Build) errors, please see: [GitHub Errors](../gh-actions/gh-errors.md)**
+!!! important
+    **These are only relevant when building with a Mac and Xcode.**  
+    **For GitHub (Browser Build) errors, please see: [GitHub Errors](../gh-actions/gh-errors.md)**
 
 There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the Xcode window.
 
-<font color="orange">**Yellow and Purple warnings**</font> do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. Ignore those. Do not try to do anything to fix those.
+**<font color="orange">:fontawesome-solid-triangle-exclamation: Yellow</font> and <font color="purple">:fontawesome-solid-triangle-exclamation: Purple</font> warnings** do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. **Ignore those**. Do not try to do anything to fix those.
 
-<font color="red">**Red errors** </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.
+**<font color="red">:octicons-x-circle-fill-16: Red errors</font>** will **have to be resolved** before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.
 
 ### Xcode Not Responding
 
@@ -89,7 +89,7 @@ If the build fails again, look through the list below and see if you can match y
 
 This may change, but for now, the watchOS simulator is not automatically included with the Xcode 14.x download and install. Some version of the watchOS simulator is required to build Loop, independent of whether you use a watch.
 
-You will be asked if you want to download & install.  Make sure watchOS is selected.
+You will be asked if you want to download & install.   ==Make sure `watchOS` is selected.==
 
 ![query about watchOS simulators](img/xcode-14-watchos.svg){width="500"}
 {align=center}
@@ -106,9 +106,12 @@ Choose the Platform tab. If there is a missing watchOS simulator that you think 
 
 ## Posting for help
 
-STOP!!  Read this section! Important!
-
-Before you post in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.
+!!! important "STOP!!  Read this section! Important!"
+    
+    Before you post in a [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) site asking for help with build errors, do your work first.   
+    The build errors listed below (and the checks listed above) will fix most of the problems you may encounter.  
+    
+    ***PLEASE READ THIS PAGE***. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.
 
 Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.
 
@@ -147,9 +150,26 @@ Notice the screenshots below have red circles highlighting certain error message
 For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.
 
 ![img/search-errors.png](img/search-errors.png){width="650"}
-{align="center"}
 
 ## Specific Error Messages
+
+### No devices from which to generate a provisioning profile
+
+**Error Message:**  
+This error occurs during the `Build target WatchApp` or `Build target WatchApp Extension`.
+
+> `Communication with Apple failed: Your team has no devices from which to generate a provisioning profile. Connect a device to use or manually add device IDs in Certificates, Identifiers & Profiles. https://developer.apple.com/account/`
+>
+>  `No profiles for 'com.XXX.loopkit. Loop. LoopWatch' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'com.XXX.loopkit.Loop.LoopWatch'.`
+
+![no devices from which to generate a provisioning profile](img/loop-build-error-no_devices_to_generate_provisioning_profile.jpg){width="600"}
+{align=center}
+
+**Solution:**
+
+- Close *Xcode* 
+- Reopen *Xcode*
+- Press the *build* button (`▶️`) again
 
 ### Run Destination is Not Valid; Failed to Prepare the Device
 
@@ -383,9 +403,10 @@ Or maybe you are trying to build using an old download; some older versions did 
 
 ### Developer License Update (PLA Update)
 
-**Error message:** "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."
+**Error message:** `The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement`.  
+Or you may see `Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account.`
 
-**Solution:** You'll need to log onto your developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
+**Solution:** You'll need to log onto your Apple Developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
 
 ![img/license.png](img/license.png){width="750"}
 {align="center"}
