@@ -940,6 +940,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#no-devices-from-which-to-generate-a-provisioning-profile" class="md-nav__link">
+    No devices from which to generate a provisioning profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#run-destination-is-not-valid-failed-to-prepare-the-device" class="md-nav__link">
     Run Destination is Not Valid; Failed to Prepare the Device
   </a>
@@ -2557,6 +2564,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#no-devices-from-which-to-generate-a-provisioning-profile" class="md-nav__link">
+    No devices from which to generate a provisioning profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#run-destination-is-not-valid-failed-to-prepare-the-device" class="md-nav__link">
     Run Destination is Not Valid; Failed to Prepare the Device
   </a>
@@ -2746,11 +2760,14 @@
   <h1>Oh dear! Build errors?</h1>
 
 <h2 id="build-errors">Build Errors<a class="headerlink" href="#build-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><strong>These are only relevant when building with a Mac and <abbr title="program used to build an app">Xcode</abbr>.</strong></p>
-<p><strong>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (Browser Build) errors, please see: <a href="../../gh-actions/gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a></strong></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>These are only relevant when building with a Mac and <abbr title="program used to build an app">Xcode</abbr>.</strong><br />
+<strong>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (Browser Build) errors, please see: <a href="../../gh-actions/gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a></strong></p>
+</div>
 <p>There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the <abbr title="program used to build an app">Xcode</abbr> window.</p>
-<p><font color="orange"><strong>Yellow and Purple warnings</strong></font> do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. Ignore those. Do not try to do anything to fix those.</p>
-<p><font color="red"><strong>Red errors</strong> </font> will have to be resolved before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.</p>
+<p><strong><font color="orange"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg></span> Yellow</font> and <font color="purple"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg></span> Purple</font> warnings</strong> do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. <strong>Ignore those</strong>. Do not try to do anything to fix those.</p>
+<p><strong><font color="red"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span> Red errors</font></strong> will <strong>have to be resolved</strong> before you can successfully build the Loop app. The steps below explain how to resolve them based on the messages you are seeing.</p>
 <h3 id="xcode-not-responding"><abbr title="program used to build an app">Xcode</abbr> Not Responding<a class="headerlink" href="#xcode-not-responding" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Sometimes, <abbr title="program used to build an app">Xcode</abbr> stops responding. You have to fix this before any of the other steps on this page will help.  The signature is that <abbr title="program used to build an app">Xcode</abbr> shows a colorful spinning icon and does not respond to anything you do.</p>
 <p>This can happen sometimes. You just need to force quit <abbr title="program used to build an app">Xcode</abbr>. Sometimes rebooting the Mac may be required, but start with force quit. Then just open up <abbr title="program used to build an app">Xcode</abbr> again and keep going.</p>
@@ -2830,15 +2847,19 @@
 </ul>
 <h2 id="new-with-xcode-14">New with <abbr title="program used to build an app">Xcode</abbr> 14<a class="headerlink" href="#new-with-xcode-14" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This may change, but for now, the <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulator is not automatically included with the <abbr title="program used to build an app">Xcode</abbr> 14.x download and install. Some version of the <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulator is required to build Loop, independent of whether you use a watch.</p>
-<p>You will be asked if you want to download &amp; install.  Make sure <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> is selected.</p>
+<p>You will be asked if you want to download &amp; install.   <mark>Make sure <code>watchOS</code> is selected.</mark></p>
 <p align="center"><img alt="query about watchOS simulators" src="../img/xcode-14-watchos.svg" width="500" /></p>
 <p>If you are getting watch errors or having trouble with your watch, try this:</p>
 <p>Tap on the <abbr title="program used to build an app">Xcode</abbr> name on the menu bar and select Settings (used to be called Preferences).</p>
 <p>Choose the Platform tab. If there is a missing <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> simulator that you think might help, then download it using the <code>GET</code> button. Use the minus icon (bottom left) to remove simulators that are no longer being used. (The <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9.0 is required to build with <abbr title="program used to build an app">Xcode</abbr> 14.0.1. The <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9.1 was downloaded with a release candidate for <abbr title="program used to build an app">Xcode</abbr> 14.1 - your screens may look different.)</p>
 <p align="center"><img alt="look for missing simulators" src="../img/xcode-14-platform.svg" width="750" /></p>
 <h2 id="posting-for-help">Posting for help<a class="headerlink" href="#posting-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>STOP!!  Read this section! Important!</p>
-<p>Before you post in a <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site asking for help with build errors, do your work first. The build errors listed below (and the checks listed above) will fix most of problems you may encounter. <strong><em>PLEASE READ THIS PAGE</em></strong>. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.</p>
+<div class="admonition important">
+<p class="admonition-title">STOP!!  Read this section! Important!</p>
+<p>Before you post in a <a href="../../intro/loopdocs-how-to/#how-to-find-help">Loop Social Media</a> site asking for help with build errors, do your work first. <br />
+The build errors listed below (and the checks listed above) will fix most of the problems you may encounter.  </p>
+<p><strong><em>PLEASE READ THIS PAGE</em></strong>. The volunteers answering questions online would love to spend more time helping people use Loop and less time answering questions that can be addressed by using this page.</p>
+</div>
 <p>Therefore, try to resolve your build error yourself. Then, if you need to post for help, please include enough information with the post so the volunteers know where you are in your troubleshooting attempts.</p>
 <div class="admonition warning">
 <p class="admonition-title">Your Post Must Include:</p>
@@ -2870,8 +2891,22 @@
 </li>
 </ul>
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
-<p align="center"><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
+<p><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="no-devices-from-which-to-generate-a-provisioning-profile">No devices from which to generate a provisioning profile<a class="headerlink" href="#no-devices-from-which-to-generate-a-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Error Message:</strong><br />
+This error occurs during the <code>Build target WatchApp</code> or <code>Build target WatchApp Extension</code>.</p>
+<blockquote>
+<p><code>Communication with Apple failed: Your team has no devices from which to generate a provisioning profile. Connect a device to use or manually add device IDs in Certificates, Identifiers &amp; Profiles. https://developer.apple.com/account/</code></p>
+<p><code>No profiles for 'com.XXX.loopkit. Loop. LoopWatch' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'com.XXX.loopkit.Loop.LoopWatch'.</code></p>
+</blockquote>
+<p align="center"><img alt="no devices from which to generate a provisioning profile" src="../img/loop-build-error-no_devices_to_generate_provisioning_profile.jpg" width="600" /></p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Close <em><abbr title="program used to build an app">Xcode</abbr></em> </li>
+<li>Reopen <em><abbr title="program used to build an app">Xcode</abbr></em></li>
+<li>Press the <em>build</em> button (<code>▶️</code>) again</li>
+</ul>
 <h3 id="run-destination-is-not-valid-failed-to-prepare-the-device">Run Destination is Not Valid; Failed to Prepare the Device<a class="headerlink" href="#run-destination-is-not-valid-failed-to-prepare-the-device" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong></p>
 <p><em>The run destination for name's phone is not valid for running the scheme "Loop (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)"</em></p>
@@ -3040,8 +3075,9 @@ ls<span class="w"> </span>-l<span class="w"> </span>~/Downloads/BuildLoop/LoopCo
 <p><strong>Error Message:</strong> If you see a <strong>Cartfile failure</strong> and several other red errors (in particular saying there is "no such module 'LoopKit'").</p>
 <p><strong>Solution</strong>: Read the <a href="./#carthage-error">Carthage Error</a> section above.</p>
 <h3 id="developer-license-update-pla-update">Developer License Update (PLA Update)<a class="headerlink" href="#developer-license-update-pla-update" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Error message:</strong> "The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement". Or you may see "Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account."</p>
-<p><strong>Solution:</strong> You'll need to log onto your developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.</p>
+<p><strong>Error message:</strong> <code>The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement</code>.<br />
+Or you may see <code>Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account.</code></p>
+<p><strong>Solution:</strong> You'll need to log onto your Apple Developer account at <a href="https://developer.apple.com/account/">developer.apple.com</a> and accept the latest license agreement.</p>
 <p align="center"><img alt="img/license.png" src="../img/license.png" width="750" /></p>
 <h3 id="could-not-get-a-container-directory-url">Could Not Get a Container Directory <abbr title="website address (Uniform Resource Locator)">URL</abbr><a class="headerlink" href="#could-not-get-a-container-directory-url" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error message:</strong> "Could not get a container directory <abbr title="website address (Uniform Resource Locator)">URL</abbr>. Please ensure App Groups are set up correctly in entitlements."</p>
