@@ -150,9 +150,26 @@ Notice the screenshots below have red circles highlighting certain error message
 For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.
 
 ![img/search-errors.png](img/search-errors.png){width="650"}
-{align="center"}
 
 ## Specific Error Messages
+
+### No devices from which to generate a provisioning profile
+
+**Error Message:**  
+This error occurs during the `Build target WatchApp` or `Build target WatchApp Extension`.
+
+> `Communication with Apple failed: Your team has no devices from which to generate a provisioning profile. Connect a device to use or manually add device IDs in Certificates, Identifiers & Profiles. https://developer.apple.com/account/`
+>
+>  `No profiles for 'com.XXX.loopkit. Loop. LoopWatch' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'com.XXX.loopkit.Loop.LoopWatch'.`
+
+![no devices from which to generate a provisioning profile](img/loop-build-error-no_devices_to_generate_provisioning_profile.jpg){width="600"}
+{align=center}
+
+**Solution:**
+
+- Close *Xcode* 
+- Reopen *Xcode*
+- Press the *build* button (`▶️`) again
 
 ### Run Destination is Not Valid; Failed to Prepare the Device
 
