@@ -1,8 +1,8 @@
 ## Build Errors
 
-**These are only relevant when building with a Mac and Xcode.**
-
-**For GitHub (Browser Build) errors, please see: [GitHub Errors](../gh-actions/gh-errors.md)**
+!!! important
+    **These are only relevant when building with a Mac and Xcode.**  
+    **For GitHub (Browser Build) errors, please see: [GitHub Errors](../gh-actions/gh-errors.md)**
 
 There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the Xcode window.
 
