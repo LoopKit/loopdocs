@@ -54,9 +54,24 @@ Click on the top link to view the record of the failed action as shown in the gr
 * Paste in a possible error string (copy it exactly); repeat until you find a match
 * If the possible error string is found - follow the directions for that error
 * Still stuck?
-    * Post for help including your GitHub **`username`**
+    * Post for help including your ==GitHub **username**==
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
-    * Please **do not post a screenshot**
+    * Please **do NOT post a screenshot**
+
+!!! tip "Where to find my GitHub username?"
+    You can find it:
+       
+    -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).  
+       https://github.com/==username==/Loopworkspace
+    - or on the [GitHub website](https://github.com)
+      
+        ![Find your GitHub username step 1](img/github-username-1.svg)
+        ![Find your GitHub username step 2](img/github-username-2.svg){width="200"}
+        {align="right"}
+        
+        ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
+     
+    As your GitHub `username` is case-sensitive, use copy and paste.
 
 ## Action: `Verify Secrets` Errors
 
