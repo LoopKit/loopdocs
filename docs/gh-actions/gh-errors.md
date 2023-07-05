@@ -36,7 +36,7 @@ If you discover a new error, please reach out to help us update the documentatio
 
 ## Examine the Error
 
-It doesn't matter which action you are running; after the action completes, you will either see a green check mark for success or a red x mark for failure. The graphic below shows an example for the Add Identifiers action.
+It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green">:material-checkbox-marked-circle:</font> for **success** or a red x mark <font color="red">:fontawesome-solid-circle-xmark:</font> for **failure**. The graphic below shows an example for the `Add Identifiers` action.
 
 ![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
 {align="center"}
