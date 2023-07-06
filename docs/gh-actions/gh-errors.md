@@ -96,7 +96,9 @@ There are two errors that we are familiar with at this point. Look for text matc
 
 If you see:
 
-> `Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+> ``` { .text .copy }
+> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+> ```
 
 This can be caused by an error in the value (or spelling) of one of these keys:
 
@@ -114,7 +116,9 @@ This can be caused by an error in the value (or spelling) of one of these keys:
 
 If you see:
 
-> `invalid curve name`
+> ``` { .text .copy }
+> invalid curve name
+> ```
 
 This was caused by an error in the format of the value entered for the `FASTLANE_KEY`.
 
@@ -129,7 +133,9 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 Copy the words on the line below and paste them into the search function for your text editor.
 
-> `error: No profile for team '***' matching 'match AppStore`
+> ``` { .text .copy }
+> error: No profile for team '***' matching 'match AppStore
+> ```
 
 If that phrase is found, then:
 
@@ -196,11 +202,15 @@ You should be able to continue with the First Time Steps to `Create Certificates
 
 Copy the words on the line below and paste them into the search function for your text editor.
 
-> `Error cloning certificates git repo, please make sure you have access to the repository - see instructions above`
+> ``` { .text .copy }
+> Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
+> ```
 
 or 
 
-> `Error cloning certificates repo, please make sure you have read access to the repository you want to use`
+> ``` { .text .copy }
+> Error cloning certificates repo, please make sure you have read access to the repository you want to use
+> ```
 
 If you see this phrase, the `fastlane` package that is utilized during the `3. Create Certificates` action cannot access your repository to create certificates for your *Loop* app. This is due to insufficient repository access rights that were not granted during the creation of your `GH_PAT` token.
 
@@ -241,7 +251,9 @@ For each `Build Loop` Error section below, copy the phrase into the search funct
 
 Copy the words on the line below and paste them into the search function for your text editor.
 
-> `Could not find an app on App Store Connect`
+> ``` { .text .copy }
+> Could not find an app on App Store Connect
+> ```
 
 If that phrase is found, then:
 
@@ -265,7 +277,9 @@ If that phrase is found, then:
 
 Copy the words on the line below and paste them into the search function for your text editor.
 
-> `error: Provisioning profile "match AppStore`
+> ``` { .text .copy }
+> error: Provisioning profile "match AppStore
+> ```
 
 If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your *Loop* App Group with one or more identifiers.
 
@@ -293,7 +307,9 @@ You must create certificates again before you can build *Loop*:
 
 Copy the words on the line below and paste them into the search function for your text editor.
 
-> `A new one cannot be created because you enabled`
+> ``` { .text .copy }
+> A new one cannot be created because you enabled
+> ```
 
 If that phrase is found with lines similar to the following:
 
