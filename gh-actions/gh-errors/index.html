@@ -2536,8 +2536,8 @@
   <h1>GitHub Errors</h1>
 
 <h2 id="github-build-method-errors"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update LoopDocs to make it easier for the next person to succeed without errors.</p>
-<p>If you've been around Loop for a while, you know the mantra about screen shots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action Failures, <strong>screen shots are close to useless</strong>. If you get an error with an Action, you should use the search feature for known diagnosis strings. If you are still stuck then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your Action log files directly.</p>
+<p>This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update <em>LoopDocs</em> to make it easier for the next person to succeed without errors.</p>
+<p>If you've been around Loop for a while, you know the mantra about screenshots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action failures, <strong>screenshots are close to useless</strong>. If you get an error with a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action</em>, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your <code>GitHub Action</code> log files directly.</p>
 <p>But first - try to diagnose it yourself using this page.</p>
 <h2 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These are some of the most common errors to date.</p>
@@ -2548,16 +2548,16 @@
 </li>
 <li>Save your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, as directed, but use a smart editor instead of a text-only editor<ul>
 <li>It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day</li>
-<li>The alpha-numeric values used for <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, <abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr> and <abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr> contain both upper and lower-case characters and all the values are case-sensitive</li>
+<li>The alpha-numeric values used for <code>GH_PAT</code>, <code>FASTLANE_ISSUER_ID</code> and <code>FASTLANE_KEY</code> contain both upper and lower-case characters and all the values are case-sensitive</li>
 </ul>
 </li>
-<li>When entering <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>, make a spelling error in the value - please copy and paste instead of typing what you think you see<ul>
-<li>If you type in your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> as 0123498989 when it is really 012349B989, you may not notice<ul>
-<li>Hint: what should have been the letter "B", got typed as the number "8"</li>
+<li>When entering <code>TEAMID</code>, make a spelling error in the value - please copy and paste instead of typing what you think you see<ul>
+<li>If you type in your <code>TEAMID</code> as <code>0123498989</code> when it is really <code>012349B989</code>, you may not notice<ul>
+<li>Hint: what should have been the letter <code>B</code>, got typed as the number <code>8</code></li>
 </ul>
 </li>
-<li>The incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> will show up in your identifiers as the Bundle ID but . . .<ul>
-<li>You will not be able to Create Certificates or Build Loop because your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> does not match the Bundle ID</li>
+<li>The incorrect <code>TEAMID</code> will show up in your identifiers as the <code>Bundle ID</code> but . . .<ul>
+<li>You will not be able to <code>Create Certificates</code> or <code>Build Loop</code> because your <code>TEAMID</code> does not match the <code>Bundle ID</code></li>
 </ul>
 </li>
 </ul>
@@ -2565,154 +2565,184 @@
 <li>Run the actions out of order or skip one</li>
 </ul>
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is a separate section for each step in the process. First you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.</p>
+<p>There is a separate section for each step in the process. First, you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.</p>
 <ol>
-<li><a href="#action-verify-secrets-errors">Action: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
-<li><a href="#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a></li>
-<li><a href="#action-create-certificates-errors">Action: Create Certificates Errors</a></li>
-<li><a href="#action-build-loop-errors">Action: Build Loop Errors</a> before successful build</li>
-<li><a href="#repeat-build-loop-errors">Repeat Build Loop Errors</a> after successful build</li>
+<li><a href="#action-verify-secrets-errors">Action: <code>Verify Secrets</code></a></li>
+<li><a href="#action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors</a></li>
+<li><a href="#action-create-certificates-errors">Action: <code>Create Certificates</code> Errors</a></li>
+<li><a href="#action-build-loop-errors">Action: <code>Build Loop</code> Errors</a> before a successful build</li>
+<li><a href="#repeat-build-loop-errors">Repeat <code>Build Loop</code> Errors</a> after a successful build</li>
 </ol>
 <p>If you discover a new error, please reach out to help us update the documentation.</p>
 <h2 id="examine-the-error">Examine the Error<a class="headerlink" href="#examine-the-error" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>It doesn't matter which action you are running; after the action completes, you will either see a green check mark for success or a red x mark for failure. The graphic below shows an example for the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> action.</p>
+<p>It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></font> for <strong>success</strong> or a red x mark <font color="red"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-81-337c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></span></font> for <strong>failure</strong>. The graphic below shows an example for the <code>Add Identifiers</code> action.</p>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
-<p>If you click on the action name, it opens a secondary screen as shown below.</p>
+<p>If you click on the <em>action</em> name, it opens a secondary screen as shown below.</p>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result-secondary.svg" width="500" /></p>
-<p>Click on the top link to view the record of the failed action as shown in the graphic below. You will be pasting strings into the search box (highlighted with green rectangle) to look for a documented error. Please read the instructions below the graphic.</p>
+<p>Click on the top link to view the record of the failed action as shown in the graphic below. You will be pasting strings into the search box (highlighted with a green rectangle) to look for a documented error. Please read the instructions below the graphic.</p>
 <p align="center"><img alt="graphic with failure details for a GitHub Add Identifier action" src="../img/action-result-failure.svg" width="700" /></p>
 <ul>
 <li>Paste in a possible error string (copy it exactly); repeat until you find a match</li>
 <li>If the possible error string is found - follow the directions for that error</li>
 <li>Still stuck?<ul>
-<li>Post for help including your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <strong>username</strong></li>
-<li>With that, mentors can diagnose your problem - or at least made a good guess at what you need to try</li>
-<li>Please <strong>do not post a screenshot</strong></li>
+<li>Post for help including your <mark><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <strong>username</strong></mark></li>
+<li>With that, mentors can diagnose your problem - or at least make a good guess at what you need to try</li>
+<li>Please <strong>do NOT post a screenshot</strong></li>
 </ul>
 </li>
 </ul>
-<h2 id="action-verify-secrets-errors">Action: Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Errors<a class="headerlink" href="#action-verify-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>A new action was added with <abbr title="Latest release with major updates">Loop 3</abbr>.1 to provide better error messages if something is wrong with your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
+<div class="admonition tip">
+<p class="admonition-title">Where to find my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username?</p>
+<p>You can find it:</p>
+<ul>
+<li>either in the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>Loopworkspace</code>, after <code>github.com</code> in between the forward slashes (<code>/</code>).<br />
+   https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/<mark>username</mark>/Loopworkspace</li>
+<li>
+<p>or on the <a href="https://github.com"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> website</a></p>
+<p align="right"><img alt="Find your GitHub username step 1" src="../img/github-username-1.svg" />
+<img alt="Find your GitHub username step 2" src="../img/github-username-2.svg" width="200" /></p>
+<p><img alt="Find your GitHub username step 3" src="../img/github-username-3.svg" width="400" /></p>
+</li>
+</ul>
+<p>As your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code> is case-sensitive, use copy and paste.</p>
+</div>
+<h2 id="action-verify-secrets-errors">Action: <code>Verify Secrets</code> Errors<a class="headerlink" href="#action-verify-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>A new action was added with <em>Loop</em> 3.1 to provide better error messages if something is wrong with your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
 <p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
-<p>To generate the graphic below, some items were deliberately set to be incorrect in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> list. Representative error messages are shown when running the validate secrets action.</p>
+<p>To generate the graphic below, some items were deliberately set to be incorrect in the <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> list. Representative error messages are shown when running the validate secrets action.</p>
 <p align="center"><img alt="representative messages with deliberate errors when running validate secrets" src="../img/gh-validate-secrets.png" width="800" /></p>
-<h2 id="action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <p>There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.</p>
-<h3 id="authentication-credentials-are-missing-or-invalid">Authentication credentials are missing or invalid<a class="headerlink" href="#authentication-credentials-are-missing-or-invalid" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="authentication-credentials-are-missing-or-invalid"><code>Authentication credentials are missing or invalid</code><a class="headerlink" href="#authentication-credentials-are-missing-or-invalid" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you see:</p>
-<ul>
-<li>Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr> for <abbr title="Application Programming Interface">API</abbr> Requests https://developer.apple.com/go/?id=api-generating-tokens</li>
-</ul>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+</code></pre></div>
+</blockquote>
 <p>This can be caused by an error in the value (or spelling) of one of these keys:</p>
 <ul>
-<li><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></li>
-<li><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></li>
-<li><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></li>
-<li><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></li>
+<li><code>FASTLANE_ISSUER_ID</code></li>
+<li><code>FASTLANE_KEY_ID</code></li>
+<li><code>FASTLANE_KEY</code></li>
+<li><code>GH_PAT</code></li>
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Use a Text-Only Editor</p>
-<p>If you used a "smart" editor when saving your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> in an archive file before pasting into the <abbr title="contains project files and each file's revision history">repository</abbr> <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, it might have changed a lower case letter to an upper case letter.</p>
+<p>If you used a "smart" editor when saving your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> in an archive file before pasting them into the <abbr title="contains project files and each file's revision history">repository</abbr> <code>Secrets</code>, it might have changed a lowercase letter to an uppercase letter.</p>
 <p>If even one character is capitalized when it should not be, you will not succeed at the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> step.</p>
 </div>
-<h3 id="invalid-curve-name">Invalid curve name<a class="headerlink" href="#invalid-curve-name" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="invalid-curve-name"><code>Invalid curve name</code><a class="headerlink" href="#invalid-curve-name" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you see:</p>
-<ul>
-<li>invalid curve name</li>
-</ul>
-<p>This was caused by an error in the format of the value entered for the <abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr>.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>invalid curve name
+</code></pre></div>
+</blockquote>
+<p>This was caused by an error in the format of the value entered for the <code>FASTLANE_KEY</code>.</p>
 <p>Make sure you copy in a text editor from the first hyphen to the last hyphen.</p>
-<h2 id="action-create-certificates-errors">Action: Create Certificates Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="action-create-certificates-errors">Action: <code>Create Certificates</code> Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
-<h3 id="wrong-teamid-in-secrets">Wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#wrong-teamid-in-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
-<p><code>error: No profile for team '***' matching 'match AppStore</code></p>
+<h3 id="wrong-teamid-in-secrets">Wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in <code>Secrets</code><a class="headerlink" href="#wrong-teamid-in-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>error: No profile for team &#39;***&#39; matching &#39;match AppStore
+</code></pre></div>
+</blockquote>
 <p>If that phrase is found, then:</p>
 <ul>
-<li>You probably do not have the correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> entered in your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></li>
+<li>You probably do not have the correct <code>TEAMID</code> entered in your <code>Secrets</code></li>
 <li>The rest of these instructions assume:<ul>
-<li>You have already created a Loop App in the App Store with that incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></li>
-<li>This is true if you completed the steps after running Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and before Action: Create Certificates</li>
+<li>You have already created a <em>Loop</em> App in the <em>App Store</em> with that incorrect <code>TEAMID</code></li>
+<li>This is true if you completed the steps after running Action: <code>Add Identifiers</code> and before Action: <code>Create Certificates</code></li>
 </ul>
 </li>
 </ul>
-<p>Follow these steps - best to open each link below in a separate tab so you can return to this list and keep using the links in each step:</p>
+<p>Follow these steps:</p>
+<div class="admonition tip">
+<p class="admonition-title">Open each link below in a separate tab</p>
+<p>It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.</p>
+</div>
 <ol>
 <li>
-<p>Delete all the identifiers that you can following the steps in <a href="../gh-first-time/#delete-identifiers">First Time: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
+<p>Delete all the identifiers that you can, following the steps in <a href="../gh-first-time/#delete-identifiers">First Time: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
 <ul>
-<li>You will not be able to delete the Loop identifier with the wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>, but don't worry about it</li>
+<li>You will not be able to delete the <em>Loop</em> identifier with the wrong <code>TEAMID</code>, but don't worry about it</li>
 </ul>
 </li>
 <li>
-<p>Enter your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> correctly in the <abbr title="contains project files and each file's revision history">repository</abbr> <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></p>
+<p>Enter your <code>TEAMID</code> correctly in the <abbr title="contains project files and each file's revision history">repository</abbr> <code>Secrets</code></p>
 <ul>
-<li>Make sure you use copy and paste from your <a href="https://developer.apple.com/account/#!/membership">Apple Developer Membership</a> page for that <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.</li>
-<li>Follow the update instructions here (this example is for <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, you'll do the same but for <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>) <a href="../gh-update/#update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
+<li>Make sure you use copy and paste from your <a href="https://developer.apple.com/account/#!/membership">Apple Developer Membership</a> page for that <code>TEAMID</code>.</li>
+<li>Follow the update instructions here (this example is for <code>GH_PAT</code>, you'll do the same but for <code>TEAMID</code>) <a href="../gh-update/#update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
 </ul>
 </li>
 <li>
-<p>Run Action: <a href="../gh-first-time/#add-identifiers">First Time: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> again</p>
+<p>Run Action: <a href="../gh-first-time/#add-identifiers">First Time: <code>Add Identifiers</code></a> again</p>
 </li>
 <li>
-<p>Follow all the steps in this section with the Correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> <a href="../gh-first-time/#configure-identifiers-for-loop">First Time: Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop</a> but when you get to the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create Loop App in App Store Connect</a>, you need to return to this page and follow the instructions below to remove the app and add a new one.</p>
+<p>Follow all the steps in this section with the <strong>correct</strong> <code>TEAMID</code> <a href="../gh-first-time/#configure-identifiers-for-loop">First Time: Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop</a> but when you get to the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create Loop App in App Store Connect</a>, you need to return to this page and follow the instructions below to remove the app and add a new one.</p>
 </li>
 </ol>
-<p>The first time through, you created an app with a <code>Bundle ID</code> that does NOT include your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.</p>
+<p>The first time through, you created an app with a <code>Bundle ID</code> that does NOT include your <code>TEAMID</code>.</p>
 <p>You will remove that app and create a new one.</p>
-<h4 id="remove-app-with-incorrect-teamid">Remove App with Incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr><a class="headerlink" href="#remove-app-with-incorrect-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Go to <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> and follow the numbered steps in the graphic below.</p>
+<h4 id="remove-app-with-incorrect-teamid">Remove App with Incorrect <code>TEAMID</code><a class="headerlink" href="#remove-app-with-incorrect-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Go to <a href="https://appstoreconnect.apple.com/apps"><code>App Store Connect / Apps</code></a> and follow the numbered steps in the graphic below.</p>
 <ol>
-<li>Find the Loop app you created earlier and click on it</li>
-<li>On the left side, under General, click on App Information<ul>
-<li>Confirm that the value listed under Bundle ID is the incorrect one</li>
-<li>The Bundle ID says: com.NOT_YOUR_TEAMID.loopkit.Loop</li>
+<li>Find the <em>Loop</em> app you created earlier and click on it</li>
+<li>On the left side, under <code>General</code>, click on <code>App Information</code><ul>
+<li>Confirm that the value listed under <code>Bundle ID</code> is the incorrect one</li>
+<li>The <code>Bundle ID</code> says: <code>com.NOT_YOUR_TEAMID.loopkit.Loop</code></li>
 </ul>
 </li>
 <li>Scroll to the bottom of the page and tap on <code>Remove App</code></li>
-<li>The dialog box, similar to the one in the graphic below, should appear and you tap Remove<ul>
-<li>After the App is removed, you'll see a very similar screen, where you can tap on <code>Restore App</code></li>
+<li>The dialog box, similar to the one in the graphic below, should appear and you tap <code>Remove</code><ul>
+<li>After the <em>App</em> is removed, you'll see a very similar screen, where you can tap on <code>Restore App</code></li>
 </ul>
 </li>
-<li>But since you want that App removed, tap on Apps at the very top of the screen and proceed to the next step</li>
+<li>But since you want that <em>App</em> removed, tap on <code>Apps</code> at the very top of the screen and proceed to the next step</li>
 </ol>
 <p align="center"><img alt="graphic with steps to remove and app from app store connect" src="../img/delete-app-bad-bundle-id.svg" width="700" /></p>
-<p>That App with the wrong bundle ID remains in the App store but it is hidden so it won't confuse you.</p>
-<h4 id="add-app-with-correct-teamid">Add App with Correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr><a class="headerlink" href="#add-app-with-correct-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Now click on the Add Apps button or the + sign if you have other apps in the store.</p>
+<p>That <em>App</em> with the wrong <code>Bundle ID</code> remains in the <em>App store</em> but it is hidden so it won't confuse you.</p>
+<h4 id="add-app-with-correct-teamid">Add App with Correct <code>TEAMID</code><a class="headerlink" href="#add-app-with-correct-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Now click on the <code>Add Apps</code> button or the <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2795.svg" title=":heavy_plus_sign:" /> (plus sign) if you have other apps in the <em>App Store</em>.</p>
 <p>Follow the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create Loop App in App Store Connect</a> directions with these additions:</p>
 <ul>
-<li>You must come up with a new name for your Loop App</li>
-<li>Triple check that the Bundle ID you choose is for Loop and has your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> embedded, it should look like: com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.Loop</li>
-<li>You must come up with a new SKU for your Loop App (try 1234, if you used 123 before)</li>
+<li>You must come up with a new name for your <em>Loop</em> App</li>
+<li>Triple-check that the <code>Bundle ID</code> you choose is for <em>Loop</em> and contains your <code>TEAMID</code>, it should look like: <code>com.TEAMID.loopkit.Loop</code></li>
+<li>You must come up with a new <code>SKU</code> for your <em>Loop</em> App (try <code>1234</code>, if you used <code>123</code> before)</li>
 </ul>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You should be able to continue with the First Time Steps to Create Certificates and then Build Loop and keep going.</p>
+<p>You should be able to continue with the First Time Steps to <code>Create Certificates</code> and then <code>Build Loop</code> and keep going.</p>
 <h3 id="missing-repository-access">Missing Repository Access<a class="headerlink" href="#missing-repository-access" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
-<p><code>Error cloning certificates git repo, please make sure you have access to the repository - see instructions above</code></p>
+<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
+</code></pre></div>
+</blockquote>
 <p>or </p>
-<p><code>Error cloning certificates repo, please make sure you have read access to the repository you want to use</code></p>
-<p>If you see this phrase, the <code>fastlane</code> package that is utilized during the <code>3. Create Certificates</code> action cannot access your <abbr title="contains project files and each file's revision history">repository</abbr> to create certificates for your Loop app. This is due to insufficient <abbr title="contains project files and each file's revision history">repository</abbr> access rights that were not granted during the creation of your <code>GH_PAT</code> token.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Error cloning certificates repo, please make sure you have read access to the repository you want to use
+</code></pre></div>
+</blockquote>
+<p>If you see this phrase, the <code>fastlane</code> package that is utilized during the <code>3. Create Certificates</code> action cannot access your <abbr title="contains project files and each file's revision history">repository</abbr> to create certificates for your <em>Loop</em> app. This is due to insufficient <abbr title="contains project files and each file's revision history">repository</abbr> access rights that were not granted during the creation of your <code>GH_PAT</code> token.</p>
 <p>To fix this error:</p>
 <ul>
 <li>Open this link: <a href="https://github.com/settings/tokens/">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/</a></li>
 <li>Here you will see your personal access token (<code>Fastlane Access Token</code>) that was created during <a href="../gh-first-time/#create-gh_pat">First Time: Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>: Create <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></a></li>
-<li>Note that <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr> (classic) is highlighted in the menu on the left</li>
-<li>Click on the token name (should be bold, blue <strong>Fastlane Access Token</strong> ) to open its detail page</li>
-<li>None of the checkboxes under <strong>Select Scopes</strong> will be checked – this is what's causing the issue.</li>
-<li>Add a check beside the <code>repo</code> permission scope (see red circled checkbox in graphic)</li>
+<li>Note that <code>Tokens (classic)</code> is highlighted in the menu on the left</li>
+<li>Click on the token name (should be bold, blue <strong><code>Fastlane Access Token</code></strong> ) to open its detail page</li>
+<li>None of the checkboxes under <strong><code>Select Scopes</code></strong> will be checked – this is what's causing the issue.</li>
+<li>Add a check beside the <code>repo</code> permission scope (see the red circled checkbox in the graphic)</li>
 <li>Scroll all the way to the bottom and click <code>Update token</code> (it's a long way, ignore all other settings, do not check anything else)</li>
 </ul>
 <p><img alt="graphic showing missing repo scope with circled checkbox that user must check" src="../img/gh-missing-repo-scope.png" width="700" /></p>
-<p>After you have clicked <code>Update token</code> you should see the token overview again with a message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the X near the upper right side if it appears).</p>
+<p>After you have clicked <code>Update token</code> you should see the token overview again with the message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the <code>X</code> near the upper right side if it appears).</p>
 <h4 id="create-certificates_1">Create Certificates<a class="headerlink" href="#create-certificates_1" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">First Time Steps to Create Certificates</a> and then proceed from there with Build Loop and keep going.</p>
-<h2 id="action-build-loop-errors">Action: Build Loop Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">First Time Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
+<h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Run Create Certificates First</p>
-<p>You must run Action: Create Certificates before attempting to run Action: Build Loop</p>
+<p class="admonition-title">Run <code>Create Certificates</code> First</p>
+<p>You must run Action: <code>Create Certificates</code> before attempting to run Action: <code>Build Loop</code></p>
 </div>
 <p>Use <a href="#examine-the-error">Examine the Error</a></p>
 <ul>
@@ -2720,49 +2750,53 @@
 <li>Open the <code>1_build.txt</code> file</li>
 <li>Search for the phrase below</li>
 </ul>
-<p>For each Build Loop Error section below, copy the phrase into the search function of your text editor. If you find it, solve that error. If not, move on to the next one.</p>
-<h3 id="could-not-find-an-app-on-app-store-connect">Could not find an app on App Store Connect<a class="headerlink" href="#could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
-<p><code>Could not find an app on App Store Connect</code></p>
+<p>For each <code>Build Loop</code> Error section below, copy the phrase into the search function of your text editor. If you find it, solve that error. If not, move on to the next one.</p>
+<h3 id="could-not-find-an-app-on-app-store-connect"><code>Could not find an app on App Store Connect</code><a class="headerlink" href="#could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Could not find an app on App Store Connect
+</code></pre></div>
+</blockquote>
 <p>If that phrase is found, then:</p>
 <ul>
 <li>
 <p>Make sure you completed the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> Step</p>
 <ul>
-<li>Once you've resolved that step, run these <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> again:<ul>
-<li>Create Certificates</li>
-<li>Build Loop</li>
+<li>Once you've resolved that step, run these <em><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em> again:<ul>
+<li><code>Create Certificates</code></li>
+<li><code>Build Loop</code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>This can also be caused if you correctly created the Loop App but entered an incorrect value for the <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.</p>
+<p>This can also be caused if you correctly created the <em>Loop</em> App but entered an incorrect value for the <code>TEAMID</code>.</p>
 <ul>
-<li>If you have the incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>, check this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles</a> for entries with the incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> embedded</li>
-<li>For example, if your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> is 0123456789, but you entered 000123, you may see both of these in your identifiers list<ul>
-<li>com.0123456789.loopkit.Loop</li>
-<li>com.000123.loopkit.Loop</li>
+<li>If you have the incorrect <code>TEAMID</code>, check this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles</a> for entries with the incorrect <code>TEAMID</code> embedded</li>
+<li>For example, if your <code>TEAMID</code> is <code>0123456789</code>, but you entered <code>000123</code>, you may see both of these in your identifiers list<ul>
+<li><code>com.0123456789.loopkit.Loop</code></li>
+<li><code>com.000123.loopkit.Loop</code></li>
 </ul>
 </li>
-<li>Delete the "bogus" identifier version, fix your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> and rerun all three steps:<ul>
-<li>Add Identifier</li>
-<li>Create Certificates</li>
-<li>Build Loop</li>
-</ul>
-</li>
+<li>Delete the "bogus" identifier version, fix your <code>TEAMID</code> and rerun all three steps:<ul>
+<li><code>Add Identifier</code></li>
+<li><code>Create Certificates</code></li>
+<li><code>Build Loop</code></li>
 </ul>
 </li>
 </ul>
-<h3 id="error-provisioning-profile">Error: <abbr title="associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)">Provisioning Profile</abbr><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
-<p><code>error: Provisioning profile "match AppStore</code></p>
-<p>If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
+</li>
+</ul>
+<h3 id="error-provisioning-profile"><code>Error: Provisioning Profile</code><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>error: Provisioning profile &quot;match AppStore
+</code></pre></div>
+</blockquote>
+<p>If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your <em>Loop</em> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
 <p>For example, if you see:</p>
-<ul>
-<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.</code></li>
-</ul>
-<p>Go back to <a href="../gh-first-time/#add-or-review-configuration-for-loop-identifier">First-Time: Add or Review Configuration for Loop Identifier</a> and make sure you enabled the Time-Senstive notification for Loop.</p>
+<p><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.</code></p>
+<p>Go back to <a href="../gh-first-time/#add-or-review-configuration-for-loop-identifier">First-Time: Add or Review Configuration for Loop Identifier</a> and make sure you enabled the <code>Time-Sensitive notification</code> for Loop.</p>
 <p>For example, you might see:</p>
 <ul>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget</code></li>
@@ -2770,14 +2804,17 @@
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
 </ul>
 <p>Return to <a href="https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and fix the missing items.</p>
-<p>You must create certificates again before you can build:</p>
+<p>You must create certificates again before you can build <em>Loop</em>:</p>
 <ul>
-<li>Action: Create Certificates</li>
-<li>Action: Build Loop</li>
+<li>Action: <code>Create Certificates</code></li>
+<li>Action: <code>Build Loop</code></li>
 </ul>
-<h3 id="a-new-one-cannot-be-created-because-you-enabled">A new one cannot be created because you enabled<a class="headerlink" href="#a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste it into the search function for your text editor.</p>
-<p><code>A new one cannot be created because you enabled</code></p>
+<h3 id="a-new-one-cannot-be-created-because-you-enabled"><code>A new one cannot be created because you enabled</code><a class="headerlink" href="#a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>A new one cannot be created because you enabled
+</code></pre></div>
+</blockquote>
 <p>If that phrase is found with lines similar to the following:</p>
 <div class="highlight"><pre><span></span><code>[31mA new one cannot be created because you enabled `readonly`[0m
 [31mProvisioning profiles in your repo for type `appstore`:[0m
@@ -2788,28 +2825,28 @@
 [31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.Loop-Intent-Extension.mobileprovision&#39;[0m
 [31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.watchkitextension.mobileprovision&#39;[0m
 </code></pre></div>
-<p>This tells you, the bundle ID you selected in <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First-Time: Create Loop App in App Store Connect</a> does NOT have your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> embedded in the name.</p>
-<p>Once you've created an app in the App Store that is not based on your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>, you cannot delete it, but you can Remove it, so you don't click on it by accident.</p>
+<p>This tells you, the <code>Bundle ID</code> you selected in <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First-Time: Create Loop App in App Store Connect</a> does NOT have your <code>TEAMID</code> embedded in the name.</p>
+<p>Once you have created an app in the <em>App Store</em> that is not based on your <code>TEAMID</code>, you cannot delete it, but you can Remove it (i.e. hide it so that it is no longer visible on this page and you don't accidentally click on it).</p>
 <ol>
 <li>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed.</li>
-<li>Find the App with the wrong Bundle ID and click on it</li>
-<li>On left hand side, click on App Information (under General)<ul>
-<li>Confirm the Bundle ID listed does not include your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></li>
+<li>Find the App with the wrong <code>Bundle ID</code> and click on it</li>
+<li>On the left-hand side, click on <code>App Information</code> (under <code>General</code>)<ul>
+<li>Confirm the <code>Bundle ID</code> listed does not include your <code>TEAMID</code></li>
 <li>Scroll all the way to the bottom</li>
-<li>Tap on Remove App</li>
-<li>New dialog window appears, select Remove</li>
+<li>Tap on <code>Remove App</code></li>
+<li>New dialog window appears, select <code>Remove</code></li>
 </ul>
 </li>
 </ol>
-<p>At this point, get your correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>, fix your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> file to have the correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> and then return to <a href="../gh-first-time/#configure-secrets">First-Time: Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. This time you will be updating <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in the <abbr title="contains project files and each file's revision history">repository</abbr> secret list.</p>
-<h2 id="repeat-build-loop-errors">Repeat Build Loop Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is only for people who have successfully built using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
+<p>At this point, get your correct <code>TEAMID</code>, fix your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> file to have the correct <code>TEAMID</code> and then return to <a href="../gh-first-time/#configure-secrets">First-Time: Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. This time you will be updating <code>TEAMID</code> in the <abbr title="contains project files and each file's revision history">repository</abbr> secret list.</p>
+<h2 id="repeat-build-loop-errors">Repeat <code>Build Loop</code> Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
-<h3 id="could-not-install-wwdr-certificate">Could not install WWDR certificate<a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Assuming you have successfully built using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method before:</p>
+<h3 id="could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code><a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Assuming you have successfully built using the Browser-Build / <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method before:</p>
 <ul>
-<li>If the details show this message, "Could not install WWDR certificate", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
-<li>Sometimes this is a sign that Apple did not respond to a request, this failure happens in the first few minutes<ul>
+<li>If the details show this message, <code>Could not install WWDR certificate</code>, make sure your <a href="https://developer.apple.com"><em>Apple developer</em> account</a> is in good standing and that there are no agreements that need to be accepted</li>
+<li>Sometimes this is a sign that <em>Apple</em> did not respond to a request, this failure happens in the first few minutes<ul>
 <li>Repeat the build and it should be fine the next time</li>
 </ul>
 </li>
@@ -2820,7 +2857,7 @@
 <div class="admonition danger">
 <p class="admonition-title">Totally Frustrated</p>
 <p>The directions on the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First Time</a> page have been improved.</p>
-<p>If you tried this earlier and did not make progress, you can delete the <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> and LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. Make sure your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are all correct and consistent, then start over at <a href="../gh-first-time/#create-match-secrets">First-Time: Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a> and keep going. It will go much faster this time.</p>
+<p>If you tried this earlier and did not make progress, you can delete the <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> and <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. Make sure your <code>Secrets</code> are all correct and consistent, then start over at <a href="../gh-first-time/#create-match-secrets">First-Time: Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a> and keep going. It will go much faster this time.</p>
 <ul>
 <li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
 </ul>
