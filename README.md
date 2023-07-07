@@ -27,7 +27,8 @@ The easy way:
 * If it is a simple typo or wording change, follow the instructions in this video to submit a *pull request* the easy way.
   * [How to submit a LoopDocs Pull Request?](https://youtu.be/6qSppvgGxpg)
 
-If it is a more substantive change and you want to "[install](#install)" that is make a fork and provide pull requests, please keep reading.
+If it is a more substantive change and you want to [install LoopDocs locally](#install) and provide pull requests, please keep reading.
+
 
 ## Install
 
@@ -63,15 +64,133 @@ To preview your work as you edit:
   mkdocs serve
   ```
     By default, this runs a local web server that hosts the documentation at http://127.0.0.1:8000/ .
-* Preview docs in your Web browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the *mkdocs* server.
+* Preview docs in your Web browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the *mkdocs* server `mkdocs* serve`.
 * Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
   ```bash
   mkdocs gh-deploy
   ```
 
-Note that the `master` branch will automatically be published to your personal repository `gh-pages` by *Github actions* when it is pushed to the *GitHub* server.
+Note that the `master` branch will automatically be published to your personal repository (`gh-pages`) by *Github actions* when it is pushed to the *GitHub* server.
 
 ## Conventions
+
+### Automatic Translation
+We use *Google Translate* to automatically [translate the website](https://loopkit.github.io/loopdocs/translate/) into several foreign languages.  
+For the translation to be as correct as possible we need to give *Google Translate*  as much **context** as possible.  
+*Google Translate*'s automatic translation is not perfect although it does a pretty good job. 
+
+There are still some **issues**, where text is translated whereas it should not, like for instance:
+- **key**, **constant**, **identifier**, **filename**, **folder**
+- user interface element like a **button label**, **field name**, **menu item**...
+- **error message** that should remain in English and not be translated
+- **brand name**, **project/product name**, 
+
+To improve the automatic translation quality, please follow these rules when writing or updating the documentation. This will provide *Google Translate* with more context and enhance translation accuracy.
+#### Rules
+To prevent *Google Translate* from translating specific `text` items, we can mark them accordingly:
+The conditional text transformation rules are expressed in two forms, pseudo-code first followed by a visual diagram.
+
+Here is the **pseudo-code** version of the rules:
+- If `text` is a key, identifier, variable name, filename, folder, UI element (like the label of a button, a menu item), or an error message
+    - If `text` is a glossary item (with a tooltip)
+        - Surround `text` with `<code>` HTML tag, like so: `<code>text</code>`
+    - Else (not a glossary item, ie. no tooltip)
+        - Surround `text` with back-ticks like so: `` `text` ``
+- Else (not an Entity)
+    - If `text` is a product name or project name or brand name
+        - surround it with a single `*` or `_`, like so: `` *text* ``
+    - Else (not a product/project/brand name)
+        - surround it with: `<span translate="no">text</span>`
+    
+    👀 Now the **flowchart diagram** that illustrates the above pseudo-code:
+
+```mermaid
+---
+title: How to prevent Google Translate from automatically translating a text?
+---
+flowchart TD
+    A[Start] --> B{Is Text a Key, Identifier,<br/> Variable, Filename, Folder, <br/>Error Message,<br/> or UI Label?}
+    click A "#entity"
+    B --> |Yes| C{is Text <br/>a Glossary Item?}
+    click C "#entity"
+    C --> |Yes| D["&lt;code&gt;text&lt;/code&gt;"]
+    click D "#entity"
+    C --> |No| E[`text`]
+    click E "#entity"
+    B --> |No| F{Is Text <br/>a Product Name,<br/>a Project Name,<br/>or a Brand Name?}
+    click F "#name"
+    F --> |Yes| G[*text*]
+    click G "#name"
+    F --> |No| H["&lt;span translate=&quot;no&quot;&gt;text&lt;span&gt;"]
+    click H "#generic"
+```
+
+Now let's break down each step.
+#####  Entity
+Enclose each of the following `text` types with a **backtick** `` ` ``:
+- Key
+- Identifier
+- Variable
+- UI Element (button label, menu item...)
+- Filename
+- Folder
+- English-only Error Message
+
+We chose to denote these using the generic term *entity*.
+
+**Examples**:
+
+Text Type     | Markdown Input                  | Rendered Output
+---           |---                              |---
+Key           | Regenerate GitHub Token for `` `GH_PAT` ``<br/><br/> `<code>TEAMID</code>` is a glossary item  | Regenerate GitHub Token for `GH_PAT`<br/><br/> <code>TEAMID</code> is a glossary item 
+Identifier    | `` `com.1234567890.loopkit.Loop` `` | `com.1234567890.loopkit.Loop`
+Variable      | `` `timeSinceLastLoop` ``          | `timeSinceLastLoop` 
+Button Label  | ``Press `Click` ``                | Press `Click`
+Menu item     | ``Select `Dexcom G6` ``            | Select `Dexcom G6`
+Field Name    | Paste it in the `` `Secret` `` field  | Paste it in the `Secret` field
+Filename      |  `` `BolusViewController.swift` ``  |  `BolusViewController.swift`
+Folder        | `` `Loop/View Controllers` ``      | `Loop/View Controllers`
+Error Message | `` `invalid curve name` ``         | `invalid curve name`
+
+⚠️ **Exceptions**: **Do not use single backticks** in the following cases :
+1. If `text` already exists **in a code block** delimited by 3 backticks.
+  ````
+  ```
+  let timeSinceLastLoop
+  ```
+  ````
+2. If `text` is a **glossary item**, using backticks would prevent the glossary tooltip from appearing. 
+    Instead, use emphasis (italic), by surrounding `text` with a star (`*`) or an underscore (`_`), like so: `` `*text*` ``.  
+
+If the `text`  not to be translated is not an [Entity](#entity), then read on.
+
+##### Name
+To prevent a name from being automatically translated, such as a **product** name, **project** name, or **brand** name, use emphasis (aka. italic) by surrounding `name` with a star (`*`) or an underscore (`_`), like so: **`*name*`**.
+
+**Examples**:
+
+Name | Markdown Input | Rendered Output 
+---          |---                               |---
+Project Name | The `*Loop*` pill                 | The *Loop* pill
+Product Name | require a `*RileyLink*` compatible device [...]<br/>Visit `*Nightscout*` documentation [...]<br/> using `*Omnipod DASH*` [...]<br/>the `*Tidepool Mobile*` uploader [...]| require a *RileyLink* compatible device [...]<br/>Visit *Nighscout* documentation [...]<br/>using *Omnipod DASH* [...]<br/>the *Tidepool Mobile* uploader [...]
+Brand Name   | on some `*Medtronic*` pumps          | on some *Medtronic* pumps
+
+If the `text`  not to be translated is neither an [Entity](#entity) nor a [Name](#name), please continue reading.
+
+##### Generic
+To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) from being automatically translated by Google Translate, surround it with a `<span>` with  the `translate` attribute set to `no`, like so:
+
+```markdown
+<span translate="no">text</span>
+```
+
+⚠️ Do not apply this workaround without considering the above options (entity and name) first as it has a drawback. 
+When using the `<span translate="no">` element, make sure to review the translated output to ensure it retains the correct context and formatting.  
+You can also refer to the provided flowchart diagram for a visual representation of the conditional text transformation rules.
+
+ℹ️ The disadvantage is that we split the sentence into 2 parts, one before and one after the ignored text. The automatic translation can sometimes get confused by this and treat them as 2 separate sentences to be translated independently.  
+To fix this, you may have to rewrite the sentence slightly, such as moving the `text` to the right end of the sentence.  
+This process may require some trial and error to find the best approach.
 
 ### Links
 
