@@ -6,7 +6,7 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 
 The easy way:
 
-* To suggest changes, please review [Issues](../../issues).  Add your comment if an Issue is already open, otherwise, add a new Issue.
+* To suggest changes, please review [Issues](https://github.com/LoopKit/loopdocs/issues).  Add your comment if an Issue is already open, otherwise, add a new Issue.
 * If it is a simple typo or wording change, follow the instructions in this video to submit a pull request the easy way.
   * [How to submit a LoopDocs Pull Request?](https://youtu.be/6qSppvgGxpg)
 
