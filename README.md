@@ -27,33 +27,49 @@ The easy way:
 * If it is a simple typo or wording change, follow the instructions in this video to submit a *pull request* the easy way.
   * [How to submit a LoopDocs Pull Request?](https://youtu.be/6qSppvgGxpg)
 
-If it is a more substantive change and you want to make a fork and provide pull requests, please keep reading.
+If it is a more substantive change and you want to "[install](#install)" that is make a fork and provide pull requests, please keep reading.
 
-### Previewing Changes
+## Install
 
-To preview your work as you edit you must set up two Python packages that are used to create this site using [MkDocs](http://www.mkdocs.org/). They are `mkdocs`, and `mkdocs-bootswatch`.
+- [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
+- Install *Python*  3
+  Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting *Python* installed.
+- Install Python Virtual Environment.  
+  In this example, I use [`venv`](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment), but use whichever you prefer.  
+  ```shell
+  cd loopdocs # cd into the folder where you cloned this repository
+  
+  # Creates a virtual environment using Python 3 in the venv folder  
+  python3 -m venv venv 
 
-Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. **MkDocs** works with **Python** `2.7`, `3.3-3.6`, and `pypy`.
-
-* Install Python modules  
-  ```bash
-  cd <loopdocs project location>
-  pip install -r requirements.txt
+  # Activate the virtual environment
+  # Run the next line **each time** you start a new shell window/tab
+  source venv/bin/activate
   ```
+- Install the project's required *Python* packages
+  ```shell
+  cd loopdocs # Make sure you are in the folder where you cloned this repository
 
-* Run mkdocs server locally
-  ```bash
-  cd <loopdocs project location>
+  python -m pip install -r requirements.txt  
+  ```
+## Run
+Once [installed](#install), you can preview the doc locally as you edit.
+### Preview Changes
+To preview your work as you edit:
+
+- Run **`mkdocs serve`** locally and keep it running:
+  ```shell
+  cd loopdocs # the folder where you cloned this repository
   mkdocs serve
   ```
-
-* Preview docs in browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the mkdocs server.
+    By default, this runs a local web server that hosts the documentation at http://127.0.0.1:8000/ .
+* Preview docs in your Web browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the *mkdocs* server.
 * Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
   ```bash
   mkdocs gh-deploy
   ```
 
-Note that these two branch names: `working-docs` and `master` will automatically be published to your personal repository `gh-pages` by Github actions when they are pushed to the github server.
+Note that the `master` branch will automatically be published to your personal repository `gh-pages` by *Github actions* when it is pushed to the *GitHub* server.
 
 ## Conventions
 
