@@ -7,18 +7,18 @@ This is the repo that contains the source files for the [Loop Docs](https://loop
 The easy way:
 
 * To suggest changes, please review [Issues](https://github.com/LoopKit/loopdocs/issues).  Add your comment if an Issue is already open, otherwise, add a new Issue.
-* If it is a simple typo or wording change, follow the instructions in this video to submit a pull request the easy way.
+* If it is a simple typo or wording change, follow the instructions in this video to submit a *pull request* the easy way.
   * [How to submit a LoopDocs Pull Request?](https://youtu.be/6qSppvgGxpg)
 
 If it is a more substantive change and you want to make a fork and provide pull requests, please keep reading.
 
 ### Previewing Changes
 
-To preview your work as you edit you must set up two python packages that are used to create this site using [MkDocs](http://www.mkdocs.org/). They are `mkdocs`, and `mkdocs-bootswatch`.
+To preview your work as you edit you must set up two Python packages that are used to create this site using [MkDocs](http://www.mkdocs.org/). They are `mkdocs`, and `mkdocs-bootswatch`.
 
-Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. MkDocs works with Python 2.7, 3.3-3.6, and pypy.
+Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help getting Python installed. **MkDocs** works with **Python** `2.7`, `3.3-3.6`, and `pypy`.
 
-* Install python modules  
+* Install Python modules  
   ```bash
   cd <loopdocs project location>
   pip install -r requirements.txt
@@ -59,9 +59,9 @@ Click here for [When Should You Update?](../faqs/update-faqs.md#when-should-you-
 
 ℹ️ **Notice about mkdocs**
 
-> Using absolute paths with links is not officially supported.
+> Using absolute paths with links is not officially supported.  
 > Relative paths are adjusted by MkDocs to ensure they are always relative to the page.
-> Absolute paths are not modified at all.
+> Absolute paths are not modified at all.  
 > This means that your links using absolute paths might work fine in your local environment but they might break once you deploy them to your production server.
 
 
@@ -141,15 +141,13 @@ First 3 boxes for Build Pages:
 * `abstract`
 * `question`
 
-To get a warning triangle, use `warning`
-
-To get a red zag icon, use `danger`
-
-To get a pencil icon, use `note`
+To get a warning triangle, use `warning`.  
+To get a red zag icon, use `danger`.  
+To get a pencil icon, use `note`.  
 
 [Admonition](https://python-markdown.github.io/extensions/admonition/) is a markdown extension that enables formatted blocks for visually calling out information.
 
-The markdown syntax used by loopdocs is:
+The Markdown syntax used by *LoopDocs* is:
 
 ```markdown
 !!! keyword ""
@@ -179,8 +177,8 @@ Content of the code block here
 
 where:
 - `.txt` denotes the language used in the content of the code block.  
-  For instance  use `.txt` for regular text, `.sh` for a shell script, `.bash` for a Bash script.  
-  This is a required parameter.  
+  For instance, use `.txt` for regular text, `.sh` for a regular shell script, or `.bash` for a Bash script.  
+  This is a **required** parameter.  
   Here is the list of [supported languages](https://pygments.org/languages/) (use one of the `Short Name`s).
 - `.copy` shows the copy-to-clipboard button when present (hidden otherwise)
 - `title=“title of this code block”` adds a title to the code (none when absent)
