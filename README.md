@@ -121,6 +121,7 @@ With images, it is possible to add extra attributes like `width` and `center`.
 ```markdown
 ![iPhone](img/phones.png){width="300"}
 ```
+ℹ️ Note that there is no space between the closing parenthesis (`)`) of the link and the opening curly brace (`{`).  This way, the width is applied to the element to which it is attached.
 
 This will get rendered to this: 
 ```html
@@ -136,6 +137,7 @@ just **below** the paragraph you want to center:
 ![Eros](img/eros.png){width="750"}
 {align="center"}
 ```
+ℹ️ Note that there is no empty/blank line between the image and `{align="center"}`.
 
 This will get rendered to this:
 
