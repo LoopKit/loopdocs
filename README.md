@@ -1,6 +1,23 @@
 # Loop Docs
 
-This is the repo that contains the source files for the [Loop Docs](https://loopkit.github.io/loopdocs) site.
+## Presentation
+📚You can view the published version of [Loop Docs here](https://loopkit.github.io/loopdocs). 
+
+This repository contains the source files for [Loop's](https://github.com/LoopKit/Loop) documentation.
+
+*LoopDocs* focuses on documenting the latest release and the `dev` branch:
+- [What is Loop?](https://loopkit.github.io/loopdocs/#what-is-loop)
+    > The *Loop* iOS app is a Do-It-Yourself closed-loop algorithm.  
+    > It works together with your CGM, Pump, (and Radio-link device) to manage your insulin delivery by predicting Blood Glucose outcomes.
+- [Overview](https://loopkit.github.io/loopdocs/intro/overview-intro/)
+- [**Requirements**](https://loopkit.github.io/loopdocs/intro/requirements/)
+- [Build Loop](https://loopkit.github.io/loopdocs/intro/requirements/#two-loop-build-methods)
+- [Configuration](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/)
+- [Usage](https://loopkit.github.io/loopdocs/operation/loop/open-loop/)
+- [Troubleshooting](https://loopkit.github.io/loopdocs/troubleshooting/overview/)
+- Remote monitoring and commands with [*Nightscout*](https://loopkit.github.io/loopdocs/nightscout/overview/)
+- [FAQs](https://loopkit.github.io/loopdocs/nightscout/overview/)
+
 
 ## Contributing
 
