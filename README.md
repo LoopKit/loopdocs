@@ -104,17 +104,17 @@ Click here for [When Should You Update?](../faqs/update-faqs.md#when-should-you-
 
 ### Images
 
-The conventions for linking to images is the same as linking to pages as described above.
+The conventions for linking to images are the same as linking to pages as described above.
 
-New images should be placed in the `img` directory just below the md-file.
+New images should be placed in the `img` directory just below the Markdown file.
 
-Example of correct link to image is `[alt-text](relative_path_to/image_name)`.
+An example of a correct link to an image is `[alt-text](relative_path_to/image_name)`.
 
 ```markdown
 ![iPhone](img/phones.png)
 ```
 
-With images it is possible to add extra attributes like `width` and `center`.
+With images, it is possible to add extra attributes like `width` and `center`.
 
 #### Image Width
 
@@ -129,7 +129,7 @@ This will get rendered to this:
 
 #### Center an Image
 
-You can also center a image, by adding `{align="center"}` **on a new line**
+You can also center an image, by adding `{align="center"}` **on a new line**
 just **below** the paragraph you want to center:
 
 ```markdown
@@ -147,7 +147,7 @@ This will get rendered to this:
 
 #### Images in Tables
 
-Use HTML on the first line that indicates the table.
+Use HTML on the first line that indicates the table.  
 For example, in [displays_v3.md](https://loopkit.github.io/loopdocs/loop-3/displays_v3/#loop-cycle) there are many icons with descriptions to the right.
 This format provides appropriate views on both desktop and mobile.
 
