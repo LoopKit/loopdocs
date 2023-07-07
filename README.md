@@ -229,12 +229,14 @@ To remove the title, either remove the title completely or use an empty string w
     If a blank or empty title is provided, no title is applied.
 ```
 
-## Copy Button
+
+### Copy Button
 
 The copy-to-clipboard button is built into the Material theme for every code block and displayed on the right side.  
 When clicked it copies the content of the block into the clipboard.  
-However we chose to disable it by default for all code blocks and enable it on a case by case basis.  
-Here is how to enable the copy-to-clipboard button for a "code" block containing regular text.
+However, we chose to disable it by default for all code blocks and enable it on a case-by-case basis.
+
+Here is how to **enable the copy-to-clipboard button** for a "code" block containing regular text.
 
 ````
 ``` { .txt .copy title="title of this code block" }
