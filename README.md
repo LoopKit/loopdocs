@@ -166,36 +166,68 @@ To **add a header row**, use:
 | <div style="width:72px">Column 1 Header</div> | Column 2 Header |
 ```
 
-### Admonitions and CSS
+### Admonitions
+#### Definition
+> **Admonitions**, also known as _call-outs_, are an excellent choice for including side content without significantly interrupting the document flow.
 
+TLDR; An admonition is a colored box with a specific icon (and a  title) at the top and text content below.
+
+[Admonition](https://python-markdown.github.io/extensions/admonition/) is a markdown extension that enables formatted blocks for visually calling out information.  
+
+#### Admonition Types
 Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and CSS styles that come with the Material theme.
 
-The admonitions in use are:
-First 3 boxes for Build Pages:
-* `info`
-* `abstract`
-* `question`
+The following are the admonition **types** we use:
+- `info`  (blue info icon)
+- `note` (blue pencil icon)
+- `abstract` (blue notepad icon)
+- `tip` (green flame)
+- `success` (a green check mark)
+- `question` (green question mark)
+- `warning` (warning triangle)
+- `danger` (red zag icon)
+- `bug` (red bug icon)
+- `example` (a violet vial icon)
+- `quote` (a gray end quote icon)
+- `important` (red exclamation sign)
 
-To get a warning triangle, use `warning`.  
-To get a red zag icon, use `danger`.  
-To get a pencil icon, use `note`.  
+👁️ Look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) to see what each type of admonition looks like when rendered.
 
-[Admonition](https://python-markdown.github.io/extensions/admonition/) is a markdown extension that enables formatted blocks for visually calling out information.
-
-The Markdown syntax used by *LoopDocs* is:
-
+#### Admonition Syntax
+The **syntax** of an admonition is:
 ```markdown
-!!! keyword ""
-    If a blank title is provided, no title is applied.
-    Every indented line is included in the "box" created by this admonition
+!!! admonition_type "Title here"
+    Content here...
+    Every 4-space indented line is included in the "box" created by this admonition
+```
+where:
+- `!!!` is a marker that denotes the start of the admonition.  
+    It is followed by a space, then the admonition type (see above)
+- `admonition_type` is a placeholder that should be replaced with one of the types listed above.
+- `Title here` represents the title rendered in bold in the header
+- All subsequent lines indented with 4 spaces are considered part of the admonition's body 
 
-!!! keyword "Title String"
+**Example**:  
+```markdown
+!!! info "New Loop Builders"
+    This page contains build error help for people updating their Loop app as well as brand-new Loop app builders.
+```
+
+##### Admonition with Title
+```
+!!! admonition_type_here "Title String"
     If an explicit title string is provided, that is used as the title.
     The displayed title string matches the capitalization provided.
 
     Every indented line is included in the "box" created by this admonition
 ```
 
+##### Admonition without Title
+To remove the title, either remove the title completely or use an empty string within the double quotation marks, like so:
+```markdown
+!!! admonition_type ""
+    If a blank or empty title is provided, no title is applied.
+```
 
 ## Copy Button
 
