@@ -25,7 +25,7 @@ The two most common errors in filling out this section are:
 1. Failure to use `https://`  in the site URL.  If you use `http://` (see how that doesn't have the "s" at the end?), you will get an error message about an App Transport Security policy.
 2. Having a trailing slash on the end of the URL (or an embedded space). If you copy and paste from a web browser, make sure to delete the trailing slash on the URL entry.
 
-!!! tips "More Tips about Nightscout"
+!!! tip "More Tips about Nightscout"
     * One family had an app configured to block some websites for their child's phone and accidentally blocked their Nightscout URL - took them a while to figure out that mistake.
     * If you use T1pal (paid Nightscout Service)
         * Sign in to T1pal

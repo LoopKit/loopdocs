@@ -48,7 +48,7 @@ Refer to the graphic below.  The Downloads folder in Finder is highlighted on th
 ![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
 {align="center"}
 
-!!! tips "Experienced Builders"
+!!! tip "Experienced Builders"
     Experienced builders will often build a fresh download to a simulator for their phone iOS (not their phone) to ensure download is good and is compatible with macOS, Xcode and phone iOS. Once the build is successful, they apply their customizations and build again to the simulator. Last step is to build the customized version to their real phone.
 
 Be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
