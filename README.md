@@ -136,7 +136,7 @@ Enclose each of the following `text` types with a **backtick** `` ` ``:
 - Folder
 - English-only Error Message
 
-We chose to denote these using the generic term *entity*.
+We denote these using the generic term *entity*.
 
 **Examples**:
 
@@ -160,9 +160,9 @@ Error Message | `` `invalid curve name` ``         | `invalid curve name`
   ```
   ````
 2. If `text` is a **glossary item**, using backticks would prevent the glossary tooltip from appearing. 
-    Instead, use emphasis (italic), by surrounding `text` with a star (`*`) or an underscore (`_`), like so: `` `*text*` ``.  
+    Instead, enclose it with a `<code>` tag, like so: `<code>text</code>`.  
 
-If the `text`  not to be translated is not an [Entity](#entity), then read on.
+If the `text` that you do not want to translate is not an [Entity](#entity), read on.
 
 ##### Name
 To prevent a name from being automatically translated, such as a **product** name, **project** name, or **brand** name, use emphasis (aka. italic) by surrounding `name` with a star (`*`) or an underscore (`_`), like so: **`*name*`**.
@@ -175,7 +175,7 @@ Project Name | The `*Loop*` pill                 | The *Loop* pill
 Product Name | require a `*RileyLink*` compatible device [...]<br/>Visit `*Nightscout*` documentation [...]<br/> using `*Omnipod DASH*` [...]<br/>the `*Tidepool Mobile*` uploader [...]| require a *RileyLink* compatible device [...]<br/>Visit *Nighscout* documentation [...]<br/>using *Omnipod DASH* [...]<br/>the *Tidepool Mobile* uploader [...]
 Brand Name   | on some `*Medtronic*` pumps          | on some *Medtronic* pumps
 
-If the `text`  not to be translated is neither an [Entity](#entity) nor a [Name](#name), please continue reading.
+If the `text` you do not want to translate is neither an [Entity](#entity) nor a [Name](#name), read on.
 
 ##### Generic
 To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) from being automatically translated by Google Translate, surround it with a `<span>` with  the `translate` attribute set to `no`, like so:
@@ -297,17 +297,17 @@ TLDR; An admonition is a colored box with a specific icon (and a  title) at the 
 Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and CSS styles that come with the Material theme.
 
 The following are the admonition **types** we use:
-- `info`  (blue info icon)
-- `note` (blue pencil icon)
-- `abstract` (blue notepad icon)
-- `tip` (green flame)
-- `success` (a green check mark)
-- `question` (green question mark)
-- `warning` (warning triangle)
-- `danger` (red zag icon)
-- `bug` (red bug icon)
-- `example` (a violet vial icon)
-- `quote` (a gray end quote icon)
+- [`info`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:info)  (blue info icon)
+- [`note`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:note) (blue pencil icon)
+- [`abstract`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:abstract) (blue notepad icon)
+- [`tip`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:tip) (green flame)
+- [`success`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:success) (a green check mark)
+- [`question`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:question) (green question mark)
+- [`warning`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:warning) (warning triangle)
+- [`danger`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:danger) (red zag icon)
+- [`bug`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:danger) (red bug icon)
+- [`example`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:example) (a violet vial icon)
+- [`quote`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:quote) (a gray end quote icon)
 - `important` (red exclamation sign)
 
 👁️ Look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) to see what each type of admonition looks like when rendered.
