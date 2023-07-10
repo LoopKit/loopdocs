@@ -136,7 +136,7 @@ Enclose each of the following `text` types with a **backtick** `` ` ``:
 - Folder
 - English-only Error Message
 
-We chose to denote these using the generic term *entity*.
+We denote these using the generic term *entity*.
 
 **Examples**:
 
@@ -160,9 +160,9 @@ Error Message | `` `invalid curve name` ``         | `invalid curve name`
   ```
   ````
 2. If `text` is a **glossary item**, using backticks would prevent the glossary tooltip from appearing. 
-    Instead, use emphasis (italic), by surrounding `text` with a star (`*`) or an underscore (`_`), like so: `` `*text*` ``.  
+    Instead, enclose it with a `<code>` tag, like so: `<code>text</code>`.  
 
-If the `text`  not to be translated is not an [Entity](#entity), then read on.
+If the `text` that you do not want to translate is not an [Entity](#entity), read on.
 
 ##### Name
 To prevent a name from being automatically translated, such as a **product** name, **project** name, or **brand** name, use emphasis (aka. italic) by surrounding `name` with a star (`*`) or an underscore (`_`), like so: **`*name*`**.
@@ -175,7 +175,7 @@ Project Name | The `*Loop*` pill                 | The *Loop* pill
 Product Name | require a `*RileyLink*` compatible device [...]<br/>Visit `*Nightscout*` documentation [...]<br/> using `*Omnipod DASH*` [...]<br/>the `*Tidepool Mobile*` uploader [...]| require a *RileyLink* compatible device [...]<br/>Visit *Nighscout* documentation [...]<br/>using *Omnipod DASH* [...]<br/>the *Tidepool Mobile* uploader [...]
 Brand Name   | on some `*Medtronic*` pumps          | on some *Medtronic* pumps
 
-If the `text`  not to be translated is neither an [Entity](#entity) nor a [Name](#name), please continue reading.
+If the `text` you do not want to translate is neither an [Entity](#entity) nor a [Name](#name), read on.
 
 ##### Generic
 To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) from being automatically translated by Google Translate, surround it with a `<span>` with  the `translate` attribute set to `no`, like so:
