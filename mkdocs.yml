@@ -77,6 +77,15 @@ plugins:
     - htmlproofer:
         enabled: !ENV [CHECK_BROKEN_LINKS, False]
         raise_error_after_finish: true
+    - unused_files:
+        enabled: !ENV [CHECK_UNUSED_FILES, False]
+        excluded_files:
+            - stylesheets/extra.css
+            - stylesheets/primary-color.css
+            - .DS_Store
+            - gh-actions/.DS_Store
+            - gh-actions/img/.DS_Store
+            - build/.DS_Store            
 
 use_directory_urls: !ENV [CHECK_BROKEN_LINKS, True]
 
