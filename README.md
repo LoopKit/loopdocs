@@ -1,6 +1,7 @@
 # Loop Docs
 
 ## Presentation
+
 📚You can view the published version of [Loop Docs here](https://loopkit.github.io/loopdocs). 
 
 This repository contains the source files for [Loop's](https://github.com/LoopKit/Loop) documentation.
@@ -53,9 +54,13 @@ If it is a more substantive change and you want to [install LoopDocs locally](#i
 
   python -m pip install -r requirements.txt  
   ```
+
 ## Run
+
 Once [installed](#install), you can preview the doc locally as you edit.
+
 ### Preview Changes
+
 To preview your work as you edit:
 
 - Run **`mkdocs serve`** locally and keep it running:
@@ -81,6 +86,7 @@ CHECK_BROKEN_LINKS=true mkdocs build
 ```
 
 ### Find Unused Files
+
 To find unused (orphaned) files in the project, we use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin:
 
 ```shell
@@ -90,6 +96,7 @@ CHECK_UNUSED_FILES=true mkdocs build
 ## Conventions
 
 ### Automatic Translation
+
 We use *Google Translate* to automatically [translate the website](https://loopkit.github.io/loopdocs/translate/) into several foreign languages.  
 For the translation to be as correct as possible we need to give *Google Translate*  as much **context** as possible.  
 *Google Translate*'s automatic translation is not perfect although it does a pretty good job. 
@@ -193,6 +200,7 @@ Brand Name   | on some `*Medtronic*` pumps          | on some *Medtronic* pumps
 If the `text` you do not want to translate is neither an [Entity](#entity) nor a [Name](#name), read on.
 
 ##### Generic
+
 To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) from being automatically translated by Google Translate, surround it with a `<span>` with  the `translate` attribute set to `no`, like so:
 
 ```markdown
@@ -301,7 +309,9 @@ To **add a header row**, use:
 ```
 
 ### Admonitions
+
 #### Definition
+
 > **Admonitions**, also known as _call-outs_, are an excellent choice for including side content without significantly interrupting the document flow.
 
 TLDR; An admonition is a colored box with a specific icon (and a  title) at the top and text content below.
@@ -309,6 +319,7 @@ TLDR; An admonition is a colored box with a specific icon (and a  title) at the 
 [Admonition](https://python-markdown.github.io/extensions/admonition/) is a markdown extension that enables formatted blocks for visually calling out information.  
 
 #### Admonition Types
+
 Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and CSS styles that come with the Material theme.
 
 The following are the admonition **types** we use:
@@ -328,6 +339,7 @@ The following are the admonition **types** we use:
 👁️ Look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) to see what each type of admonition looks like when rendered.
 
 #### Admonition Syntax
+
 The **syntax** of an admonition is:
 ```markdown
 !!! admonition_type "Title here"
@@ -348,6 +360,7 @@ where:
 ```
 
 ##### Admonition with Title
+
 ```
 !!! admonition_type_here "Title String"
     If an explicit title string is provided, that is used as the title.
@@ -357,6 +370,7 @@ where:
 ```
 
 ##### Admonition without Title
+
 To remove the title, either remove the title completely or use an empty string within the double quotation marks, like so:
 ```markdown
 !!! admonition_type ""
