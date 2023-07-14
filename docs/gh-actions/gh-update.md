@@ -171,7 +171,9 @@ After you click on `FastLane Access Token` your screen should be similar to the 
 
     Previous builds are still available in TestFlight and are not affected by this action.
 
-![review of fastlane access token on github](img/gh-token-review.png){width="600"}
+Note - selecting the `workflow` check box below is new. If yours does not show that selection, add it before you click on Regenerate token (red highlight in graphic below).
+
+![review of fastlane access token on github](img/gh-token-review.svg){width="600"}
 {align="center"}
 
 Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. 
