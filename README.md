@@ -72,6 +72,14 @@ To preview your work as you edit:
 
 Note that the `master` branch will automatically be published to your personal repository (`gh-pages`) by *Github actions* when it is pushed to the *GitHub* server.
 
+
+### Find Unused Files
+To find unused (orphaned) files in the project, we use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin:
+
+```shell
+CHECK_UNUSED_FILES=true mkdocs build
+```
+
 ## Conventions
 
 ### Automatic Translation
