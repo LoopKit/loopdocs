@@ -72,6 +72,13 @@ To preview your work as you edit:
 
 Note that the `master` branch will automatically be published to your personal repository (`gh-pages`) by *Github actions* when it is pushed to the *GitHub* server.
 
+### Find Broken Links
+
+To list broken links, we use the [`mkdocs-htmlproofer-plugin`](https://github.com/manuzhang/mkdocs-htmlproofer-plugin):
+
+```shell
+CHECK_BROKEN_LINKS=true mkdocs build
+```
 
 ### Find Unused Files
 To find unused (orphaned) files in the project, we use the [`mkdocs-unused-files`](https://github.com/wilhelmer/mkdocs-unused-files) plugin:
