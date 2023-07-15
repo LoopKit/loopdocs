@@ -800,6 +800,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#one-time-changes" class="md-nav__link">
+    One-Time Changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#check-current-branches" class="md-nav__link">
     Check Current Branches
   </a>
@@ -2439,6 +2446,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#one-time-changes" class="md-nav__link">
+    One-Time Changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#check-current-branches" class="md-nav__link">
     Check Current Branches
   </a>
@@ -2559,8 +2573,9 @@
 </ul>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <ul>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless you are near your 90 day <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date - in which case, proceed to <a href="#build-loop">Build Loop</a></li>
+<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your Loop app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is about to expire - in which case, proceed to <a href="#build-loop">Build Loop</a></li>
 <li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on <code>Update branch</code></li>
+<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually sync and choose to <code>discard changes</code>; you can always customize again after the update</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">Building a different <abbr title="version of code within a single repository or workspace repository">branch</abbr></p>
@@ -2662,7 +2677,8 @@
 <p>The yellow <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> warning by the <code>Regenerate Token</code> button is for new builds you make in the future.</p>
 <p>Previous builds are still available in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> and are not affected by this action.</p>
 </div>
-<p align="center"><img alt="review of fastlane access token on github" src="../img/gh-token-review.png" width="600" /></p>
+<p>Note - selecting the <code>workflow</code> check box below is new. If yours does not show that selection, add it before you click on Regenerate token (red highlight in graphic below).</p>
+<p align="center"><img alt="review of fastlane access token on github" src="../img/gh-token-review.svg" width="600" /></p>
 <p>Click on Regenerate token (red highlight in previous graphic) to see screen similar to next graphic. </p>
 <ul>
 <li>Most Loopers will have classic personal access tokens<ul>
@@ -2700,10 +2716,49 @@
 <ol>
 <li>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> must have the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want<ul>
 <li>You will either add it or make sure it is up to date</li>
+<li>You cannot just rename your existing <abbr title="version of code within a single repository or workspace repository">branch</abbr> to dev - you must get the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> from LoopKit</li>
 </ul>
 </li>
-<li>Run Action: 4. Build Loop but select your <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the Run Workflow dropdown - see <a href="#build-branch">Build Branch</a></li>
+<li>When you select the action <code>4. Build Loop</code> and then click on the <code>Run Workflow</code> dropdown, you must select <code>dev</code> there before clicking the green <code>Run workflow</code> button - see <a href="#build-branch">Build Branch</a></li>
 </ol>
+</div>
+<h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There were two changes in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that require special, one-time actions.</p>
+<ol>
+<li>Libre support was added to dev (03 July 2023) using the LibreTransmitter code<ul>
+<li>This requires (one-time) that the <code>Actions</code> for <code>2. Add Identifiers</code> and <code>3. Create Certificates</code> be run before attempting <code>4. Build Loop</code></li>
+<li>The LibreTransmitter code requires <code>Near Field Communication</code> and doing these steps adds automatically</li>
+</ul>
+</li>
+<li>Automatic update and automatic monthly build was added to dev (13 July 2023)<ul>
+<li>Once a month, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will attempt to update and build Loop from your <code>default branch</code> using the instructions in the <code>Action: 4. Build Loop</code> (<code>build_loop.yml</code> file) and send the new app to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li>As part of this monthly build, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will check to see if updates are required for your <code>default branch</code></li>
+<li>When updates are not required, it just builds the app</li>
+<li>When updates are required:<ul>
+<li>If it can figure out how to do the <code>sync</code> automatically, it does so</li>
+<li>If it cannot figure out how to do the <code>sync</code> automatically, the <code>Action</code> to <code>4. Build Loop</code> will fail and you will need to take manual steps</li>
+</ul>
+</li>
+<li>You will get an email that the <code>Build</code> either succeeded or failed</li>
+</ul>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Automatic Update Requirements</p>
+<p>To enable the automatic update and rebuild, two steps are required. These are one-time steps.</p>
+<ul>
+<li>The <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> must be updated (not regenerated) to add <code>workflow</code><ul>
+<li>Examine your <a href="https://github.com/settings/tokens"><code>FastLane Access Token</code></a></li>
+<li>If it says <code>repo, workflow</code>, then no further action is needed for your <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></li>
+<li>If it say <code>repo</code> only, then click on the <code>FastLane Access Token</code> link, click to add a check to the <code>workflow</code> box and scroll all the way down to select the green <code>Update token</code> button</li>
+</ul>
+</li>
+<li>A new <abbr title="version of code within a single repository or workspace repository">branch</abbr> called <code>alive</code> must be created from the LoopKit <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
+<li>Follow the directions at <a href="#add-branch">Add Branch</a>, except this time, you will type <code>alive</code> in the empty <abbr title="version of code within a single repository or workspace repository">branch</abbr> name that you connect to <code>LoopKit/LoopWorkspace</code> <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>You will not use the <code>alive</code> for anything directly, but it must exist for the automatic update to function</li>
+</ul>
+</li>
+</ul>
 </div>
 <h3 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> is at <code>https://github.com/username/LoopWorkspace</code> where you substitute your actual <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code>. You need to be logged into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Review the graphic below as you go through the steps.</p>
