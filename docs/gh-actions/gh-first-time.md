@@ -352,7 +352,8 @@ You must be logged into your GitHub account before starting this step. If you ar
     * The default Expiration time is 30 days - but you should select `No expiration` (use the drop down menu to select)
         * GitHub will show a yellow warning when you do this
         * It is ok to ignore the warning
-    * Add a check beside the `repo` permission scope
+    * Add a check beside the `workflow` permission scope
+    * A check will automatically appear in the `repo` scope as well - this is normal
     * Scroll all the way to the bottom and click `Generate token` (it's a long way, ignore all other settings, do not check anything else)
 
     ![request a new personal access token](img/gh-access-token.svg){width="700"}
