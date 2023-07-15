@@ -235,7 +235,35 @@ The graphics show the dev branch. If you want a different branch, just substitut
 !!! tip "Overview of what you will do"
     1. Your LoopWorkspace fork must have the branch you want
         * You will either add it or make sure it is up to date
-    1. Run Action: 4. Build Loop but select your branch in the Run Workflow dropdown - see [Build Branch](#build-branch)
+        * You cannot just rename your existing branch to dev - you must get the dev branch from LoopKit
+    1. When you select the action `4. Build Loop` and then click on the `Run Workflow` dropdown, you must select `dev` there before clicking the green `Run workflow` button - see [Build Branch](#build-branch)
+
+### One-Time Changes
+
+There were two changes in the dev branch that require special, one-time actions.
+
+1. Libre support was added to dev (03 July 2023) using the LibreTransmitter code
+    * This requires (one-time) that the `Actions` for `2. Add Identifiers` and `3. Create Certificates` be run before attempting `4. Build Loop`
+    * The LibreTransmitter code requires `Near Field Communication` and doing these steps adds automatically
+1. Automatic update and automatic monthly build was added to dev (13 July 2023)
+    * Once a month, GitHub will attempt to update and build Loop from your `default branch` using the instructions in the `Action: 4. Build Loop` (`build_loop.yml` file) and send the new app to TestFlight
+    * As part of this monthly build, GitHub will check to see if updates are required for your `default branch`
+    * When updates are not required, it just builds the app
+    * When updates are required:
+        * If it can figure out how to do the `sync` automatically, it does so
+        * If it cannot figure out how to do the `sync` automatically, the `Action` to `4. Build Loop` will fail and you will need to take manual steps
+    * You will get an email that the `Build` either succeeded or failed
+
+!!! info "Automatic Update Requirements"
+    To enable the automatic update and rebuild, two steps are required. These are one-time steps.
+
+    * The GH_PAT must be updated (not regenerated) to add `workflow`
+        * Examine your [`FastLane Access Token`](https://github.com/settings/tokens)
+        * If it says `repo, workflow`, then no further action is needed for your GH_PAT
+        * If it say `repo` only, then click on the `FastLane Access Token` link, click to add a check to the `workflow` box and scroll all the way down to select the green `Update token` button
+    * A new branch called `alive` must be created from the LoopKit `dev` branch
+        * Follow the directions at [Add Branch](#add-branch), except this time, you will type `alive` in the empty branch name that you connect to `LoopKit/LoopWorkspace` `dev` branch
+        * You will not use the `alive` for anything directly, but it must exist for the automatic update to function
 
 ### Check Current Branches
 
