@@ -203,7 +203,7 @@ The retrospective correction effect can be illustrated with an example: if the B
 | 55                              | 9%                                         | -0.9                |
 | 60                              | 0%                                         | 0                   |
 
-Here’s an example below that shows the retrospective correction effect when the BG*vel* over the past 30 minutes was -10mg/dL/5min.
+The example below that shows the retrospective correction effect when the BG*vel* over the past 30 minutes was -10mg/dL/5min.
 
 ![bg retrospective graph example](img/bgrc_graphic.png)
 
