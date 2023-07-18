@@ -174,11 +174,11 @@ $$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} $$
 
 In addition to the modeled effects of insulin and carbohydrates, there are many other factors that affect blood glucose (e.g., exercise, stress, hormones, etc.). Many of these effects are active for a period of time. By observing its own forecast error, Loop can estimate the magnitude of these effects and, by assuming that they will continue for some short period of time, incorporate them into the forecast to improve forecast accuracy.
 
-To do this, Loop calculates a retrospective forecast with a start time of 30 minutes in the past, ending at the current time. Loop compares the retrospective forecast to the actual observed change in blood glucose, and the difference is summed into a blood glucose velocity or rate of difference:
+To do this, Loop calculates a retrospective forecast with a start time of 30 minutes in the past, ending at the current time. Loop compares the retrospective forecast to the actual observed change in blood glucose, and the difference is used to determine a blood glucose velocity or rate of difference:
 
-$$ BG_{vel}=\frac{1}{6} \sum_{t=-30}^{0} BG[t] - RF[t] $$
+$$ BG_{vel}=\frac{1}{6} \times \left(BG[0] - RF[0]\right) $$
 
-where BG*vel* is a velocity term (mg/dL per 5min) that represents the average blood glucose difference between the retrospective forecast (RF) and the actual blood glucose (BG) over the last 30 minutes. This term is applied to the current forecast from the insulin and carb effects with a linear decay over the next hour. For example, the first forecast point (t=5) is approximately 100% of this velocity, the forecast point one-half hour from now is adjusted by 50% of the velocity, and points from one hour or more in the future are not affected by this term.
+where BG*vel* is a velocity term (mg/dL per 5min) that represents the average blood glucose difference between the retrospective forecast (RF) and the actual blood glucose (BG) over the last 30 minutes. This term is applied to the current forecast from the insulin and carb effects with a linear decay over the next hour. For example, the first forecast point (t=5) is 100% of this velocity, the forecast point one-half hour from now is adjusted by approximately 50% of the velocity, and points from one hour or more in the future are not affected by this term.
 
 The retrospective correction effect can be expressed mathematically:
 
