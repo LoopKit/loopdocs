@@ -18,7 +18,7 @@ mkdocs-material==9.1.13
 mkdocs-material-extensions==1.1.1
 mkdocs-unused-files==0.1.7
 packaging==23.0
-Pygments==2.14.0
+Pygments==2.15.0
 pymdown-extensions==10.0.1
 python-dateutil==2.8.2
 PyYAML==6.0
