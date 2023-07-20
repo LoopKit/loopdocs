@@ -79,7 +79,7 @@ There's a LoopDocs page devoted to therapy settings. Click on the link to get to
 #### Add Pump for Therapy Settings
 
 !!! question "But I don't see Therapy Settings!"
-    Therapy Settings is only accessible in the [Settings](#settings) screen when you have a pump connected to Loop.
+    Therapy Settings is only accessible in the [Settings](#loop-settings-screen) screen when you have a pump connected to Loop.
 
     * Loop needs to know the parameters for the pump
     * There are several options presented below

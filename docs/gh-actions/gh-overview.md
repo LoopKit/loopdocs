@@ -1,4 +1,6 @@
 ## Build Loop with a Browser
+!!! info "`Github Build` = `Browser-Build`"
+    In this section, we use `GitHub build` and `Browser build` interchangeably to mean the same thing, i.e. building *Loop* with a Web browser.
 
 The new GitHub build method is available with the release of Loop 3, as well as for development versions.
 

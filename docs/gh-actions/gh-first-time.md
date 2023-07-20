@@ -34,8 +34,8 @@ This is only available for Loop 3 and greater versions and for Loop development 
 !!! question "FAQs"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
-    - **Isn't it hard to build every 90 days?** The initial setup (this page) and deploy (next page) takes a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
-    - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explict steps are provided at [GitHub Deploy: Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
+    - **Isn't it hard to build every 90 days?** The initial setup (this page) and deployment (next page) take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
+    - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explicit steps are provided at [GitHub Deploy: Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
     - **Can I still use my customizations?** Yes. [Customize with GitHub](gh-customize.md)
 
 **You must build Loop every 90 days when you use GitHub build method.**
@@ -102,7 +102,7 @@ Others terms need an expanded explanation. If reading about the new terms first 
     * On the `Identifier` screen, there will be **`NAME`** and **`IDENTIFIER`** columns
         * The items you see under the **`NAME`** column depend on whether you previously built with Xcode and may start with `XC`
         * The items under the **`IDENTIFIER`** column match the table in the documentation
-* `Secrets`: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
+* `Secrets`: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have the access required to build Loop
     * There are 6 Secrets that must be added to your fork of LoopWorkspace
     * These Secrets work for any branch in your fork (`main` or `dev`, for example)
     * These same Secrets are added to your GitHub fork for [Other Apps](gh-other-apps.md) configured with the same GitHub build method
@@ -114,7 +114,7 @@ Others terms need an expanded explanation. If reading about the new terms first 
 * API `Key`: Application Programming Interface Key
     * This key will be obtained by you from the Apple Developer website to enable your GitHub account to interface with Apple to create your app
 * `Actions`: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
-    * With Loop 3, actions to Verify Secrets, Add Identifiers, Create Certificates and Build Loop are provided to enable users to build the Loop app from a browser on any computer
+    * With Loop 3, actions to Verify Secrets, Add Identifiers, Create Certificates, and Build Loop are provided to enable users to build the Loop app from a browser on any computer
     * The GitHub system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported on [GitHub Status](https://www.githubstatus.com/).
 
 ## Configure to use GitHub Build Actions
@@ -125,7 +125,7 @@ These instructions allow you to build Loop without having access to a Mac. They 
 
 * You can send Loop app updates to those you care for
 * You can access and install the Loop app via TestFlight if you lose or damage your device
-* You do not need to worry about correct Xcode or macOS versions
+* You do not need to worry about the correct Xcode or macOS versions
 
 The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your Secrets. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
 
@@ -144,7 +144,7 @@ Your app must be updated once every 90 days, at the current time, but it's simpl
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
 !!! info "A Note about Capitalization and Spaces"
-    In places you will be told to give something a name like: FastLane API Key or FastLane Access Token. Please copy from the docs to use those exact names.
+    In places, you will be told to give something a name like FastLane API Key or FastLane Access Token. Please copy from the docs to use those exact names.
 
     The Secrets that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
 
@@ -241,14 +241,14 @@ Each step has a link to take you to the specific page you need to do the next st
     {align="center"}
 
 
-    * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop down menu
+    * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop-down menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
 
 ### Copy API Key Secrets
 
 The `Keys` screen is seen again with the additional content similar to that shown in the graphic below; the key information is blanked out for security.
 
-* Review the graphic and then follow directions below to save more parameters you will need to [Configure Secrets](#configure-secret)
+* Review the graphic and then follow the directions below to save more parameters you will need to [Configure Secrets](#configure-secrets)
 
     ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
@@ -314,9 +314,9 @@ In summary, from this section, you have found or generated the following, and sa
 
 ## New GitHub Account
 
-If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username (`username`) and password.
+If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username (`username`), and password.
 
-If you do not already have a GitHub account, you need to create one. Be sure to record the email, password and username for your GitHub account.
+If you do not already have a GitHub account, you need to create one. Be sure to record the email, password, and username for your GitHub account.
 
 Decide on a couple of usernames that you will be happy with - this will get embedded into your GitHub URL. Your first choice might not be available, so be prepared with several candidates. Your personal URL will be: `https://github.com/username`.
 
@@ -352,7 +352,8 @@ You must be logged into your GitHub account before starting this step. If you ar
     * The default Expiration time is 30 days - but you should select `No expiration` (use the drop down menu to select)
         * GitHub will show a yellow warning when you do this
         * It is ok to ignore the warning
-    * Add a check beside the `repo` permission scope
+    * Add a check beside the `workflow` permission scope
+    * A check will automatically appear in the `repo` scope as well - this is normal
     * Scroll all the way to the bottom and click `Generate token` (it's a long way, ignore all other settings, do not check anything else)
 
     ![request a new personal access token](img/gh-access-token.svg){width="700"}
@@ -371,7 +372,7 @@ You must be logged into your GitHub account before starting this step. If you ar
 
 Open your github.com URL (this is `https://github.com/username`), where you replace `username` with the name you chose above.
 
-Create a new private repository - you can either click on the link below, or follow the instructions with the first graphic:
+Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
 
 * Click on this link: [(https://github.com/new)](https://github.com/new)
 
@@ -401,16 +402,16 @@ You will then be shown a screen with a lot of options - you will not do anything
 
 You will not be interacting with your `Match-Secrets` repository directly. It needs to exist for other actions to work correctly.
 
-You are done with this part of the set up.
+You are done with this part of the setup.
 
 ### Fork LoopWorkspace
 
 !!! warning "Existing Fork"
-    Some people may already have a fork of `LoopWorkspace`. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do and follow the appropriate link back to these instructions.
+    Some people may already have a fork of `LoopWorkspace`. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do, and follow the appropriate link back to these instructions.
 
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the `LoopWorkspace` repository owned by `LoopKit`.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the `Fork` button is in the same place
-1. At upper right side of the screen, click on the word `Fork`
+1. At the upper right side of the screen, click on the word `Fork`
     * If you already have a fork, it will not allow you to proceed, see [Already Have LoopWorkspace](#already-have-loopworkspace)
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the owner (`Owner`)
@@ -454,7 +455,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 You need to be logged into GitHub.
 
 1. Return to your forked copy of `LoopWorkspace`
-    * Click on your personal icon at upper right to see the drop-down menu and select "`Your repositories`"
+    * Click on your personal icon at the upper right to see the drop-down menu and select "`Your repositories`"
 
     ![drop-down-menu](img/gh-quick-access.png){width="200"}
     {align="center"}
@@ -653,7 +654,7 @@ The `Edit Your App ID Configuration` screen will open. You will be taking two ac
 
 1. Now scroll slowly back up to the top of the page. As you go, confirm that each of these is configured with a check mark; if any are missing, click to enable.
     * `Time Sensitive Notifications`
-    * `SiriKit`
+    * `Siri` (formerly known as `SiriKit`)
     * `Push Notifications`
     * `HealthKit`
     * `App Groups` (enabled with `group.com.TEAMID.loopkit.LoopGroup`)
@@ -751,7 +752,7 @@ This section is for people who were not able to follow the instructions in the l
 
 There are two possible reasons:
 
-1. You did not complete [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers) or one of the predecessor steps; review those steps
+1. You did not complete [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers) or one of the predecessor steps; review those steps
 1. Your app is already in *App Store Connect*, but you cannot see it
 
 You may have no memory of ever setting up `Loop` in *App Store Connect*. If you previously used some kind of remote build, like `diawi`, your `Loop` may be there as a *Removed App*.
@@ -766,7 +767,7 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
     ![find removed apps](img/find-removed-app.png){width="600"}
     {align="center"}
 
-* Ensure this is the app you want by selecting on `App Information`, highlighted on the left side in the graphic below.
+* Ensure this is the app you want by selecting `App Information`, highlighted on the left side in the graphic below.
     * Examine its `Bundle ID` (not in view in this graphic) - confirm it is correct.
     * The format should be: `com.TEAMID.loopkit.Loop` with your *TEAMID* included
 * Then scroll down to the bottom and choose `Restore App`.

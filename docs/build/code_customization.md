@@ -15,7 +15,7 @@ Read about the customizations on this page before applying them.
 
 Some customizations are the same for everyone and have been prepared for easy use. 
 
-* Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select#apply-custom) script
+* Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select/#customization-select) script
     * This script automatically finds the most recent download and when you are done selecting customizations, opens Xcode to that download
     * Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download
 * GitHub builders can use [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
@@ -48,7 +48,7 @@ Refer to the graphic below.  The Downloads folder in Finder is highlighted on th
 ![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
 {align="center"}
 
-!!! tips "Experienced Builders"
+!!! tip "Experienced Builders"
     Experienced builders will often build a fresh download to a simulator for their phone iOS (not their phone) to ensure download is good and is compatible with macOS, Xcode and phone iOS. Once the build is successful, they apply their customizations and build again to the simulator. Last step is to build the customized version to their real phone.
 
 Be sure to read the [Instructions for Finding the Lines](code_customization.md#instructions-for-finding-the-lines).
@@ -760,11 +760,9 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches found at [CustomTypeOne/LoopPatches](https://github.com/CustomTypeOne/LoopPatches#readme). These patches only work with Loop 3 (main branch).
+Several items have been consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/build-select/#utilities-custom).
 
-If you are using a development branch of Loop, you need the dev branch of LoopPatches. Note - even the dev branch of LoopPatches takes time to update for some changes to the Loop-dev code. [CustomTypeOne/LoopPatches for dev branch](https://github.com/CustomTypeOne/LoopPatches/tree/dev#readme)
-
-Please read the LoopPatches documentation, follow the installation directions carefully and then test any patch that you enable - every time you build. These patches don't have the nice guardrails found in Loop 3.
+Please read the documentation and test any patch that you enable. These patches don't have the nice guardrails found in Loop 3 and must be configured at the iOS Settings, Loop interface. They cannot be adjusted inside the Loop app.
 
 The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches).
 
@@ -779,11 +777,11 @@ These are the Libre iOS app options.
 * xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
-        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) and choose Option 2: Build Related Apps and then select xDrip4iOS
+        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select xDrip4iOS
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 * GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
-        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select) and choose Option 2: Build Related Apps and then select GlucoseDirect
+        * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select GlucoseDirect
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so no separate app is required
@@ -817,7 +815,7 @@ Add LibreTransmitter to Loop as a plugin:
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
     * There is a development branch, libre, that has this incorporated
-    * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script)
+    * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script-libre)
 
 ## Limit Loop for Faster CGM
 

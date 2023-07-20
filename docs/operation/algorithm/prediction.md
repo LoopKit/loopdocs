@@ -176,7 +176,7 @@ In addition to the modeled effects of insulin and carbohydrates, there are many 
 
 To do this, Loop calculates a retrospective forecast with a start time of 30 minutes in the past, ending at the current time. Loop compares the retrospective forecast to the actual observed change in blood glucose, and the difference is summed into a blood glucose velocity or rate of difference:
 
-$$ BG_{vel}=\frac{1}{6} \sum_{t=-30}^{0} RF[t] - BG[t] $$
+$$ BG_{vel}=\frac{1}{6} \sum_{t=-30}^{0} BG[t] - RF[t] $$
 
 where BG*vel* is a velocity term (mg/dL per 5min) that represents the average blood glucose difference between the retrospective forecast (RF) and the actual blood glucose (BG) over the last 30 minutes. This term is applied to the current forecast from the insulin and carb effects with a linear decay over the next hour. For example, the first forecast point (t=5) is approximately 100% of this velocity, the forecast point one-half hour from now is adjusted by 50% of the velocity, and points from one hour or more in the future are not affected by this term.
 

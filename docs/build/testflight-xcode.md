@@ -25,7 +25,7 @@ In all cases, except accidental deletion of Loop or loss of phone, the Loop you 
 
 ### Initial Steps
 
-Before creating or uploading to a TestFlight, use the [Mac-Xcode Build](../build/overview.md) guide to [sign your targets](../build/build-free-loop.md/#select-signing-capabilities-tab) and build Loop to a [simulator phone](../build/build-free-loop.md/#build-to-a-simulator) in Xcode. This checks to ensure the app you upload to your TestFlight will work as expected.
+Before creating or uploading to a TestFlight, use the [Mac-Xcode Build](../build/overview.md) guide to [sign your targets](../build/build-free-loop.md#select-signing-capabilities-tab) and build Loop to a [simulator phone](../build/build-free-loop.md#build-to-a-simulator) in Xcode. This checks to ensure the app you upload to your TestFlight will work as expected.
 
 ### Archive the Project
 

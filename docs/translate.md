@@ -1,6 +1,6 @@
 ## Google Translate Links
 
-Click on a language from the list below to turn on Google automatic translation.
+Click on a language from the list below to turn on Google's automatic translation.
 
 * Every LoopDocs page gets automatically translated to the selected language as do links to other websites from LoopDocs
 * The Google Translate Tool will appear at the top of each page

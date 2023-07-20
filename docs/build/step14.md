@@ -106,7 +106,7 @@ Copy the line below that starts with `/bin/bash` by hovering the mouse near the 
 
 ``` { .bash .copy title="Copy and Paste to start the Build Select Script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopnlearn/loopbuildscripts/main/BuildSelectScript.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh)"
 ```
 
 Paste the line of text into Terminal. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: ++command+"V"++ ; or ++control++ click and select from menu or `Edit`-`Paste` at top of Mac screen.)
@@ -290,7 +290,7 @@ If there is a red x in the dashed-blue rectange region on your Xcode screen you 
 
 #### First Time
 
-The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign--keychain-access). Be sure to enter your Mac login password and select `Always Allow` every time it is requested.
+The first time you build, there will be steps that will not be required for subsequent builds. These are clearly marked in the intructions with the word **First-Time**. Do not get confused when you are asked to enter your password multiple times, see [Codesign / Keychain Access](#codesign-keychain-access). Be sure to enter your Mac login password and select `Always Allow` every time it is requested.
 
 #### All Builds
 

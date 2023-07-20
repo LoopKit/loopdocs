@@ -314,7 +314,7 @@ A build script is available to assist in building *LoopCaregiver*. This should b
 
 !!! warning "Not &nbsp;*<span translate="no">Loop</span>*"
     The output you see in the Terminal may look very similar to when you build &nbsp;*<span translate="no">Loop 3</span>*&nbsp; from a script.
-
+    
     It is pulling down a clone from a different location (`LoopKit/LoopCaregiver`). It uses some modules from *Loop*. The target and scheme are automatically selected for *LoopCaregiver* and if you follow directions for a paid Developer account, the signing is automatic.
 
 #### Use *LoopCaregiver*

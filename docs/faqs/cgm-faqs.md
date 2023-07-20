@@ -99,6 +99,8 @@ The older Loop 2.2.x does not read CGM data from Nightscout.
 
 ## What other CGM apps can be used to Loop?
 
+You can add xDrip4iOS and GlucoseDirect as a CGM option to Loop by applying a code customization. This customization is included in Loop with Patches, which is offered as an option in the [Build Select Script](https://www.loopandlearn.org/build-select).
+
 Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions.
 
-These can be used after applying a code customization to Loop 3. These customizations are available as part of the [Build Select Script](https://www.loopandlearn.org/build-select).
+If you are willing to build a development version of Loop, there is a libre branch that incorporates [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md) into the Loop app itself. Please read about [Loop Development](../version/development.md) before building the [libre branch](../version/build-dev.md#buildloopdev-script-libre).
