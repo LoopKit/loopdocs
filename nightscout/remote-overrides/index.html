@@ -2483,32 +2483,32 @@
 
   <h1>Remote Commands</h1>
 
-<h2 id="set-up-remote-for-nightscout">Set Up Remote for Nightscout<a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can use your Nightscout site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's Loop.</p>
-<p>If you are using <abbr title="Latest release with major updates">Loop 3</abbr>, then you can also send remote commands to add carbs and command a bolus.</p>
+<h2 id="set-up-remote-for-nightscout">Set Up Remote for <em>Nightscout</em><a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You can use your <em>Nightscout</em> site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's <em>Loop</em>.</p>
+<p>If you are using &nbsp;<span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span>, then you can also send remote commands to add carbs and command a bolus.</p>
 <div class="admonition warning">
 <p class="admonition-title">Remote Nightscout Interface Caveats</p>
 <ul>
-<li>Requires Apple Push Notifications (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) - not available with a Free account</li>
-<li>When you build Loop, the required <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information is tied to your developer account<ul>
-<li>You add your <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information to your Nightscout site (directions on this page)</li>
-<li>Nightscout sites, in general, allow you to add the required <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> information</li>
+<li>Requires <strong><code>Apple Push Notifications service (APNs)</code></strong> - not available with a Free account</li>
+<li>When you build <em>Loop</em>, the required <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> information is tied to your Apple Developer account<ul>
+<li>You add your <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> information to your <em>Nightscout</em> site (directions on this page)</li>
+<li><em>Nightscout</em> sites, in general, allow you to add the required <strong><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></strong> information</li>
 </ul>
 </li>
-<li>If you use T1Pal for Nightscout and want to use remote commands, contact T1Pal about enabling them for a subscription fee.</li>
+<li>If you use <em>T1Pal</em> for <em>Nightscout</em> and want to use remote commands, contact <em>T1Pal</em> about enabling them for a subscription fee.</li>
 </ul>
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Remote Builds</p>
 <p>There are several methods for building remotely for your family members (or even yourself).</p>
 <ul>
-<li><a href="../../gh-actions/gh-overview/">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> (new with <abbr title="Latest release with major updates">Loop 3</abbr>) allows you to build on a browser (no need for a Mac) and send Loop to your phone using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
-<li><a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a> allows you to save a build created by <abbr title="program used to build an app">Xcode</abbr>, store it in the cloud and then download and install on your phone later</li>
+<li><a href="../../gh-actions/gh-overview/"><em>LoopDocs</em>: <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build</em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> (new with <abbr title="Latest release with major updates">Loop 3</abbr>) allows you to build on a browser (no need for a Mac) and send <em>Loop</em> to your phone using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li><a href="https://www.loopandlearn.org/remote-build/"><em>Loop and Learn</em>: Remote Build with <em>Diawi</em></a> allows you to save a build created by <em><abbr title="program used to build an app">Xcode</abbr></em>, store it in the cloud, and then download and install it on your phone later</li>
 </ul>
-<p>Both of these remote options require this <a href="https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars">Nightscout: Config Var</a> to be added to Nightscout:</p>
-<p><code>LOOP_PUSH_SERVER_ENVIRONMENT</code> = <code>production</code></p>
-<p>Be aware that if you then return to building directly from <abbr title="program used to build an app">Xcode</abbr>, you must disable that config var from Nightscout and restart the server.</p>
-<p>Note - this is covered in detail in Step 3 below when you <a href="#add-apn-variables-to-nightscout">LoopDocs: Add <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Variables to Nightscout</a>.</p>
+<p>Both of these remote options require this <a href="https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars"><em>Nightscout</em>: Config Var</a> to be added to <em>Nightscout</em>:</p>
+<p><code>LOOP_PUSH_SERVER_ENVIRONMENT = production</code></p>
+<p>Be aware that if you then return to building directly from <em><abbr title="program used to build an app">Xcode</abbr></em>, you must disable that config var from <em>Nightscout</em> and restart the server.</p>
+<p>Note - this is covered in detail in step 3 below when you <a href="#add-apn-variables-to-nightscout"><em>LoopDocs</em>: Add <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> Variables to <em>Nightscout</em></a>.</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">What you will need to do..</p>
@@ -2517,232 +2517,292 @@
 <p>Update the Looper's iPhone Settings</p>
 </li>
 <li>
-<p>Create a Key for an Apple Push Notifications service (APNs)</p>
+<p>Create a Key for an <code>Apple Push Notifications service (APNs)</code></p>
 </li>
 <li>
-<p>Update your Nightscout site and add some "config vars" lines in your Nightscout site settings.</p>
+<p>Update your <em>Nightscout</em> site and add some "config vars" lines in your <em>Nightscout</em> site settings.</p>
 </li>
 </ol>
 <p>And read this entire page - focus on warnings and caveats.</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">New Feature in <abbr title="Latest release with major updates">Loop 3</abbr></p>
-<p>Remote bolus and remote carb capability is added with <abbr title="Latest release with major updates">Loop 3</abbr>. In order to support this capability, there are new minimum versions:</p>
+<p class="admonition-title">New Feature in <span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></p>
+<p>Remote bolus and remote carb capability are added with <em>Loop version 3</em>. In order to support this capability, there are new minimum versions:</p>
 <ul>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> or newer</li>
+<li><em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>&nbsp; or newer</li>
 <li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 or newer</li>
-<li>Nightscout version 14.2.6 or newer<ul>
-<li>Required to get all the features</li>
+<li><em>Nightscout</em> version 14.2.6 or newer<br />
+    Required to get all the features</li>
 </ul>
-</li>
-</ul>
-<p>Not required and still under development, but users who are testing this separate app are pleased</p>
+<p>Not required and is still under development, but users who are testing this separate app are pleased</p>
 <ul>
-<li><a href="#loopcaregiver">LoopCaregiver</a> app (<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 or higher) enables the following from the caregiver's phone<ul>
-<li>monitor Loop</li>
-<li>issue remote commands for carbs, bolus and overrides</li>
+<li><a href="#loopcaregiver">LoopCaregiver</a> app (<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 or higher) enables the following from the caregiver's phone:<ul>
+<li>monitor &nbsp;<em><span translate="no">Loop</span></em></li>
+<li>issue remote commands for carbs, bolus, and overrides</li>
 </ul>
 </li>
-<li>To clarify minimum versions for using updated remote features with LoopCaregiver<ul>
-<li>LoopCaregiver phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16</li>
-<li>Loop phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 running <abbr title="Latest release with major updates">Loop 3</abbr></li>
-<li>Nightscout 14.2.6</li>
+<li>To clarify minimum versions for using updated remote features with <em>LoopCaregiver</em><ul>
+<li><em>LoopCaregiver</em> phone: <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16</li>
+<li><em>Loop</em> phone: <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 running <abbr title="Latest release with major updates">Loop 3</abbr></li>
+<li><span translate="no">Nightscout</span>&nbsp; 14.2.6</li>
 </ul>
 </li>
 </ul>
-<p>The expanded capabilities for remote commands in <abbr title="Latest release with major updates">Loop 3</abbr> are currently documented in this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>. That information will be incorporated into LoopDocs soon.</p>
+<p>The expanded capabilities for remote commands in &nbsp;<em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>&nbsp; are currently documented in this <a href="https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM">Remote Carb/Bolus Guide</a>. That information will be incorporated into <em>LoopDocs</em> soon.</p>
 </div>
 <h2 id="step-1-update-the-loopers-iphone-settings">Step 1: Update the Looper's iPhone settings<a class="headerlink" href="#step-1-update-the-loopers-iphone-settings" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.</p>
 <ol>
-<li>The slider in iPhone -&gt; Settings -&gt; Loop -&gt; Notifications needs to be turned to Allow Notifications</li>
-<li>The slider in iPhone -&gt; Settings -&gt; General -&gt; Background App Refresh -&gt; Loop must be enabled</li>
+<li>The slider in <code>iPhone -&gt; Settings -&gt; Loop -&gt; Notifications</code> needs to be turned to <code>Allow Notifications</code></li>
+<li>The slider in <code>iPhone -&gt; Settings -&gt; General -&gt; Background App Refresh -&gt; Loop</code> must be enabled</li>
 </ol>
 <p>Error messages if Looper's phone is not configured correctly:</p>
 <ul>
-<li>Without notifications, the person trying to set a remote override will see a message about "no deviceToken" and no remote override will actually enact</li>
-<li>If Background app refresh is not enabled, the remote overrides will only enact if the Loop app is open and the phone is unlocked.</li>
+<li>Without notifications, the person trying to set a remote override will see a message about <code>"no deviceToken"</code> and no remote override will actually enact</li>
+<li>If Background app refresh is not enabled, the remote overrides will only enact if the <em>Loop</em> app is open and the phone is unlocked.</li>
 </ul>
-<h2 id="step-2-apple-push-notifications">Step 2: Apple Push Notifications<a class="headerlink" href="#step-2-apple-push-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The next part of this will help your Loop app give permissions to your Nightscout site to remotely interact with it. (Reminder - this only works with the paid Apple Developer ID.)</p>
+<h2 id="step-2-apple-push-notifications">Step 2: <em>Apple Push Notifications</em><a class="headerlink" href="#step-2-apple-push-notifications" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The next part of this will help your <em>Loop</em> app give permissions to your <em>Nightscout</em> site to remotely interact with it. To enable this, you need to create a key and grant it access to the <span translate="no">Apple Push Notification Service (APNS)</span>. </p>
+<div class="admonition info">
+<p class="admonition-title">Reminder</p>
+<p>This only works with the <strong>paid</strong> Apple Developer ID.</p>
+</div>
 <ol>
-<li>Login to your <a href="https://developer.apple.com/account/">Apple developer account</a> with the Apple ID associated with your developer team that you used to sign your Loop app.</li>
-<li>Click on "Certificates, Indentifiers &amp; Profiles" and then, on the next page, click on "Keys" (located on the left-hand column). Click on the blue "Create a new key" <strong>OR</strong> the &plus; icon to add a new key.</li>
-</ol>
+<li>To get started, go to the <code>Keys</code> section under Apple Developer's <a href="https://developer.apple.com/account/resources/authkeys/list"><code>Certificates, Identifiers &amp; Profiles</code></a> and login with the <em>Apple ID</em> associated with your developer team that you used to sign your <em>Loop</em> app.</li>
+<li>If not already open in your browser (compare with the below screenshot), <ul>
+<li>Click on <strong><code>Keys</code></strong> (located in the left-hand column). </li>
+<li>Either click on the blue <strong><code>Create a new key</code></strong> button <strong>OR</strong> the plus button (<font color="#2997FF"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></font>)  to add a new key.<blockquote>
 <p><img alt="img/apns-add-key.png" src="../img/apns-add-key.png" /></p>
-<ol>
-<li>In the form that appears, click the checkbox for enabling "Apple Push Notifications service (APNs)" and enter a name for the key such as "Nightscout". Then click the "Continue" button in the upper right of the screen.</li>
-</ol>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>In the form that appears, do the following:<ul>
+<li>Click the checkbox for enabling <strong><code>Apple Push Notifications service (APNs)</code></strong></li>
+<li>Enter a name for the key such as <code>Nightscout</code> (you can name it however you want, just make sure you know what the key is for by the name you choose).</li>
+<li>Then click the <strong><code>Continue</code></strong> button in the upper right of the screen.  <blockquote>
 <p><img alt="img/key-apns.png" src="../img/key-apns.png" /></p>
-<ol>
-<li>In the screen that follows, click the blue "Register" button.</li>
-</ol>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>In the screen that follows, click the blue <strong><code>Register</code></strong> button.  <blockquote>
 <p><img alt="img/apns-register.png" src="../img/apns-register.png" /></p>
-<ol>
-<li>In the screen that follows, click the blue "Download" button. This step will download a file with a name that starts with "AuthKey" and ends with ".p8".</li>
-</ol>
+</blockquote>
+</li>
+<li>In the screen that follows, click the blue <strong><code>Download</code></strong> button.<br />
+    This step will download a file with a name that starts with <code>AuthKey</code> and ends with <code>.p8</code>.  <blockquote>
 <p><img alt="img/apns-download.png" src="../img/apns-download.png" /></p>
-<ol>
-<li>Find your AuthKey download in your downloads folder. Double-click to open it and you will be presented a message asking how you'd like to open it. Click on "Choose Application..." and then select "TextEdit" as your application to open it with.</li>
-</ol>
-<p><img alt="img/apns-open.png" src="../img/apns-open.png" /></p>
-<p><img alt="img/apns-textedit.png" src="../img/apns-textedit.png" /></p>
-<ol>
-<li>When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in Heroku. Yes, allllll of the contents. So, easiest way is to click inside that file and then press <code>command-a</code> to highlight all the text and then <code>command-c</code> to copy it all to the clipboard. You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.</li>
-</ol>
+</blockquote>
+</li>
+<li>Find your <code>AuthKey</code> downloaded file in your downloads folder.<br />
+   Double-click to open it and you will be presented a message asking how you'd like to open it.<br />
+   Click on <code>Choose Application...</code> and then select <em><code>TextEdit</code></em> as your application to open it with.  <blockquote>
+<p><img alt="img/apns-open.png" src="../img/apns-open.png" />
+<img alt="img/apns-textedit.png" src="../img/apns-textedit.png" /></p>
+</blockquote>
+</li>
+<li>
+<p>When the file opens, it will look similar to the screenshot below. In a few minutes, after we do a few other steps first, we will need to highlight <strong>ALL OF THE CONTENTS</strong> of that file and copy it because we will be pasting it in <em>Heroku</em> or whichever <em>Nightscout</em> provider you are using. Yes, <em>allllll</em> of the contents.<br />
+    So, the easiest way is to:</p>
+<ul>
+<li><strong>Click inside that file</strong></li>
+<li>Highlight <strong>all</strong> the text, and then</li>
+<li>Copy <strong>all</strong> the text to the clipboard (Cf. screenshot below).<ul>
+<li>On a <strong>Mac</strong>, press <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>A</kbd></span> to select all, then press <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>C</kbd></span> to copy the selection. </li>
+<li>On a <strong>PC</strong>, press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>A</kbd></span> to select all, then press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>C</kbd></span> to copy the selection.</li>
+</ul>
+</li>
+</ul>
+<p>You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.</p>
+<blockquote>
 <p><img alt="img/apns-copy-key.png" src="../img/apns-copy-key.png" /></p>
-<h2 id="step-3-add-apn-to-nightscout">Step 3: Add <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> to Nightscout<a class="headerlink" href="#step-3-add-apn-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="update-nightscout-site">Update Nightscout Site<a class="headerlink" href="#update-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You'll need to make sure your Nightscout site version is at version 13.0.1 or newer for remote overrides and version 14.2.6 or newer for access to all the remote command features. You can check your version number by looking at the bottom of your NS site's settings (tap on the hamburger menu - three horizontal lines at the upper right), near where the authentication button is located.</p>
-<p>This link should be used if you want to <a href="https://nightscout.github.io/update/update/">Nightscout: Update</a> your Nightscout site.</p>
-<p>Note - for Google Cloud users, the <a href="https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html">Xdrip: Google Cloud Nightscout</a> instructions include information about updating your site. Scroll down to the line (on that page) that says <code>Update Nightscout</code>.</p>
-<h3 id="add-apn-variables-to-nightscout">Add <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Variables to Nightscout<a class="headerlink" href="#add-apn-variables-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your Nightscout Configuration, review <a href="https://nightscout.github.io/nightscout/setup_variables/">Nightscout: Setup Variables</a> and then come back.</p>
-<p>The instructions in this section show Heroku images. If you are using a different method, you should be able to "translate" the steps.</p>
-<p>Go to the <code>Settings</code> tab near the top of the screen on your Heroku app and then click on <code>Reveal Config Vars</code>.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="step-3-add-apn-to-nightscout">Step 3: Add <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> to <em>Nightscout</em><a class="headerlink" href="#step-3-add-apn-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="update-nightscout-site">Update <em>Nightscout</em> Site<a class="headerlink" href="#update-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You'll need to make sure your <em>Nightscout</em> site version is version <code>13.0.1</code> or newer for remote overrides and version <code>14.2.6</code> or newer for access to all the remote command features. </p>
+<div class="admonition info">
+<p class="admonition-title">What is my <em>Nightscout</em> Version Number?</p>
+<p>To find your <em>Nightscout</em> version number:</p>
+<ul>
+<li><strong>Tap</strong> on (<code>☰</code>) the hamburger button (3 horizontal lines stacked on each other) at the upper right, near the authentication button.</li>
+<li>A context menu slides in from below the hamburger.</li>
+<li><strong>Scroll</strong> to the very bottom of this menu.</li>
+<li>The <strong>version</strong> is located in the <strong><code>About</code></strong> section after the <code>Settings</code> section, (below the <code>Save</code> button).</li>
+</ul>
+</div>
+<p>This link should be used if you want to <a href="https://nightscout.github.io/update/update/">Nightscout: Update</a> your <em>Nightscout</em> site.</p>
+<div class="admonition note">
+<p class="admonition-title">Note for <em>Google Cloud</em> Users</p>
+<p>The <a href="https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html"><code>Xdrip</code>: Google Cloud Nightscout</a> instructions include information about updating your site.<br />
+Scroll down to the line (on that page) that says <code>Update Nightscout</code>.</p>
+</div>
+<h3 id="add-apn-variables-to-nightscout">Add <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Variables to <em>Nightscout</em><a class="headerlink" href="#add-apn-variables-to-nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your <em>Nightscout</em> configuration, review <a href="https://nightscout.github.io/nightscout/setup_variables/">Nightscout: Setup Variables</a> and then come back.</p>
+<p>The instructions in this section show <em>Heroku</em> images. If you are using a different method, you should be able to "translate" the steps.</p>
+<p>Go to the <code>Settings</code> tab near the top of the screen on your <em>Heroku</em> app and then click on <code>Reveal Config Vars</code>.</p>
+<blockquote>
 <p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="650" /></p>
-<p>Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
+</blockquote>
+<p>Scroll down the bottom of the <code>Config Vars</code> lines until you find the last blank one.  You are going to add three new rows of config vars for remote overrides as shown below:</p>
+<blockquote>
 <p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="650" /></p>
+</blockquote>
 <table>
 <thead>
 <tr>
-<th>KEY</th>
+<th><div style="width:190px;">KEY</div></th>
 <th>VALUE</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>LOOP_APNS_KEY</td>
-<td>enter ENTIRE contents of the downloaded .p8 file including the BEGIN and END lines. Here's where you can use the <code>command-a</code> and <code>command-c</code> to hightlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating. <img alt="img/apns-copy-key2.png" src="../img/apns-copy-key2.png" /></td>
+<td><code>LOOP_APNS_KEY</code></td>
+<td>Enter the <strong>ENTIRE</strong> contents of the downloaded <code>.p8</code> file including the <code>BEGIN</code> and <code>END</code> lines. Here's where you can use the <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>A</kbd></span> and <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>C</kbd></span> to highlight and copy all the text in that file so you can paste it into Heroku here for this new variable you are creating. <img alt="img/apns-copy-key2.png" src="../img/apns-copy-key2.png" /></td>
 </tr>
 <tr>
-<td>LOOP_APNS_KEY_ID</td>
-<td>string of characters on the .p8 download file immediately following the underscore (  _  ) and not including the file extension ( .p8 ), or you can get it from your saved key in your developer account as shown next step, too <img alt="img/apns-open2.png" src="../img/apns-open2.png" /></td>
+<td><code>LOOP_APNS_KEY_ID</code></td>
+<td>String of characters on the <code>.p8</code> download file immediately following the underscore (<code>_</code>) and not including the file extension (<code>.p8</code>), or you can get it from your saved key in your developer account as shown next step, too. This is a part of the downloaded filename located after the underscore (<code>_</code>) and before the file extension (<code>.p8</code>).    <img alt="img/apns-open2.png" src="../img/apns-open2.png" /></td>
 </tr>
 <tr>
-<td>LOOP_DEVELOPER_TEAM_ID</td>
-<td>get this value from Loop app signing or in your developer account's top right corner under your name <img alt="img/apns-vars.png" src="../img/apns-vars.png" /></td>
+<td><code>LOOP_DEVELOPER_TEAM_ID</code></td>
+<td>Get this value from <em>Loop</em> app signing or in your <em>Apple Developer</em> account's top right corner under your name <img alt="img/apns-vars.png" src="../img/apns-vars.png" /></td>
 </tr>
 <tr>
-<td>LOOP_PUSH_SERVER_ENVIRONMENT</td>
-<td>(optional) Set this to production if you installed Loop remotely such as with <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, Diawi, AppCenter, or an IPA. If you built directly to your phone in XCode with your phone plugged into to your computer, do not include this variable.</td>
+<td><code>LOOP_PUSH_SERVER_ENVIRONMENT</code></td>
+<td>(optional) Set this to <code>production</code> if you installed <em>Loop</em> remotely such as with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, <em>Diawi</em>, <em>AppCenter</em>, or an <em>IPA</em>. <br/>If you built directly to your phone in <em>XCode</em> with your phone plugged into to your computer, do not include this variable.</td>
 </tr>
 </tbody>
 </table>
 <h4 id="remote-build-config-var-requirement">Remote Build Config Var Requirement<a class="headerlink" href="#remote-build-config-var-requirement" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>That last row of the table above is needed if you are using a remote build option such as <a href="../../gh-actions/gh-overview/">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> or downloaded an archived file via <a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a>. If you later return to a direct <abbr title="program used to build an app">Xcode</abbr> build to your phone, you must remove that config var or remote commands will not work.</p>
-<p>When executed properly, you should have something that looks like this for your three new variables that you added:</p>
+<p>That last row of the table above is needed if you are using a remote build option such as <a href="../../gh-actions/gh-overview/">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></a> or downloaded an archived file via <a href="https://www.loopandlearn.org/remote-build/">Loop and Learn: Remote Build with Diawi</a>. If you later return to a direct <em><abbr title="program used to build an app">Xcode</abbr></em> build to your phone, you must remove that config var or remote commands will not work.</p>
+<p>When executed properly, you should have something that looks like this for the three new variables that you added:</p>
+<blockquote>
 <p><img alt="img/override_vars_complete.png" src="../img/override_vars_complete.png" /></p>
+</blockquote>
 <h3 id="do-not-confuse-your-keys">Do Not Confuse Your Keys<a class="headerlink" href="#do-not-confuse-your-keys" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition danger">
 <p class="admonition-title"><abbr title="Application Programming Interface">API</abbr> Key vs <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Key</p>
-<p>If you build with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <a href="../../gh-actions/gh-overview/">Browser Build</a>, you may notice the Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>) key has the same type of format as the Apple Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) key. The keys for both purposes are p8 keys, but should not be confused.</p>
-<p>The <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for building with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> use the <abbr title="Application Programming Interface">API</abbr> Key.</p>
-<p>The config vars for Nightscout use the <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Key.</p>
+<p>If you build with the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <a href="../../gh-actions/gh-overview/">Browser Build</a>, you may notice <span>the <code>Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>)</code> key</span> has the same type of format as <span>the <code>Apple Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>)</code> key</span>. The keys for both purposes are of type <code>p8</code>, but should not be confused.</p>
+<p>The <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for building with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> use the <abbr title="Application Programming Interface">API</abbr> Key.</p>
+<p>The config vars for <em>Nightscout</em> use the <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> Key.</p>
 <ul>
-<li>If you are using remote commands with Nightscout and building with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build, you must also add the config var of LOOP_PUSH_SERVER_ENVIRONMENT with a value of <code>production</code> to your Nightscout site or the remote commands will not work.</li>
-<li>If you are using the Mac-<abbr title="program used to build an app">Xcode</abbr> build method, do not have a config var of LOOP_PUSH_SERVER_ENVIRONMENT entered - remove it if it is present.</li>
+<li>If you are using remote commands with <em>Nightscout</em> and building with the <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build</strong>, you must also add the config var of <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> with a value of <code>production</code> to your <em>Nightscout</em> site or the remote commands will not work.</li>
+<li>If you are using the <strong>Mac-<abbr title="program used to build an app">Xcode</abbr></strong> build method, do not have a config var of <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> entered - remove it if it is present.</li>
 </ul>
 </div>
 <h2 id="faqs-on-remote-overrides">FAQs on Remote Overrides<a class="headerlink" href="#faqs-on-remote-overrides" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Don't forget to read <a href="../../operation/features/workout/">Loopdocs: Overrides</a>. For remote overrides in particular:</p>
 <ol>
 <li>
-<p><strong>Can I set different override in Nighscout than I have programmed into Loop app?</strong> Answer: No. You will only be able to enact override presets already programmed into the Loop app.</p>
+<p><strong>Can I set a different override in <em>Nighscout</em> than I have programmed into <em>Loop</em> app?</strong><br />
+<strong>Answer</strong>: No. You will only be able to enact override presets already programmed into the Loop app.</p>
 </li>
 <li>
-<p><strong>If I didn't start the override in Nightscout (it was started in Loop itself), can I still use Nightscout to cancel it?</strong> Answer: Yes. You can cancel a Loop-set override with a Nightscout-set cancel "temporary override" command in careportal.</p>
+<p><strong>If I didn't start the override in <em>Nightscout</em> (it was started in <em>Loop</em> itself), can I still use <em>Nightscout</em> to cancel it?</strong><br />
+<strong>Answer</strong>: Yes. You can cancel an override set in <em>Loop</em> with a Nightscout-set cancel "temporary override" command in the careportal.</p>
 </li>
 <li>
-<p><strong>Can I override a Loop-set override with a Nightscout-set override?</strong> Answer: Yes.</p>
+<p><strong>Can I replace an override set in <em>Loop</em> with an override set in <em>Nightscout</em>?</strong><br />
+<strong>Answer</strong>: Yes.</p>
 </li>
 <li>
-<p><strong>If I have multiple Nightscout sites because I have multiple kiddos with T1D looping, do I need multiple APNs Keys?</strong> Answer: No. If you have multiple kids looping, you can use the one APNs key in each of their Nightscout sites.</p>
+<p><strong>If I have multiple <em>Nightscout</em> sites because I have multiple kiddos with T1D looping, do I need multiple APNs Keys?</strong><br />
+<strong>Answer</strong>: No. If you have multiple kids using <em>Loop</em>, you can use the one APNs key in each of their <em>Nightscout</em> sites.</p>
 </li>
 <li>
-<p><strong>How can I tell if it worked?</strong> Answer: You should see your override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> in Nightscout, with the NEXT Loop cycle, reflecting that the desired override action took place. If you are near the Loop app, you should see the new override within less than 30 seconds or so.</p>
+<p><strong>How can I tell if it worked?</strong><br />
+<strong>Answer</strong>: You should see your override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> in <em>Nightscout</em>, with <span>the  <strong>NEXT</strong> <em>Loop</em> cycle</span>, reflecting that the desired override action took place. If you are near the <em>Loop</em> app, you should see the new override within less than 30 seconds or so.</p>
 </li>
 <li>
-<p><strong>Can I see on Nightscout when a temporary override has been set using the looper’s phone?</strong> Yes. There will be a grey bar with the name of the override noted and the Loop Pill will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> as your best guide.</p>
+<p><strong>Can I see on <em>Nightscout</em> when a temporary override has been set using the looper’s phone?</strong><br />
+<strong>Answer</strong>: Yes. There will be a grey bar with the name of the override noted and the <span><em>Loop</em> Pill</span> will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> as your best guide.</p>
 </li>
 <li>
-<p><strong>Can a looper cancel a remote override</strong>? Yes. They can tap the heart icon in Loop so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.</p>
+<p><strong>Can a looper cancel a remote override</strong>?<br />
+<strong>Answer</strong>: Yes. They can tap the heart icon <font color="blue"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M228.3 469.1 47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3l42.4-84.9 1.7 3.4c9.5 19 28.9 31 50.1 31h104.5c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8-51-113.9c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1-5.7-16-8.7-33-8.7-50.3v-5.8c0-69.9 50.5-129.5 119.4-141 45.6-7.6 92 7.3 124.6 39.9l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9 68.9 11.5 119.4 71.1 119.4 141v5.8c0 16.9-2.8 33.5-8.3 49.1z"/></svg></span></font> in <em>Loop</em> so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.</p>
 </li>
 <li>
-<p><strong>I set a remote override in Nightscout but the looper tapped the heart symbol in the Loop app, so the override turned off. Will the override get reinstated next time Loop completes with internet access?</strong> No. The <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> is only sent once. You can set the remote override again if need be.</p>
+<p><strong>I set a remote override in <em>Nightscout</em> but the Looper tapped the heart symbol <font color="blue"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M228.3 469.1 47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3l42.4-84.9 1.7 3.4c9.5 19 28.9 31 50.1 31h104.5c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8-51-113.9c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1-5.7-16-8.7-33-8.7-50.3v-5.8c0-69.9 50.5-129.5 119.4-141 45.6-7.6 92 7.3 124.6 39.9l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9 68.9 11.5 119.4 71.1 119.4 141v5.8c0 16.9-2.8 33.5-8.3 49.1z"/></svg></span></font> in the <em>Loop</em> app, so the override turned off. Will the override get reinstated  the next time <em>Loop</em> completes with internet access?</strong><br />
+<strong>Answer</strong>: No. The <em><abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr></em> is only sent once. You can set the remote override again if need be.</p>
 </li>
 <li>
-<p><strong>Can I schedule a remote override ahead of time using Nightscout?</strong> No. When you set a remote override in Nightscout, it will begin immediately and last for whatever duration is programmed for that override in the Loop app. You can set an override for ahead of time using the Looping App only.</p>
+<p><strong>Can I schedule a remote override ahead of time using Nightscout?</strong>  <br />
+<strong>Answer</strong>: No. When you set a remote override in <em>Nightscout</em>, it starts immediately and lasts for the duration programmed for that override in the <em>Loop</em> app. You can only set an override in advance using the <em>Loop</em> app.</p>
 </li>
 </ol>
 <h2 id="warnings-for-remote-commands">Warnings for Remote Commands<a class="headerlink" href="#warnings-for-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title"><strong>Duplicate Delivery Risk</strong></p>
 <p>We want to highlight a very important risk before you get started.</p>
-<p>For safety, always assume a previous remote carb / bolus was delivered. For motivation think of the following example:</p>
+<p>For safety, always assume a previous remote carbs/bolus was delivered. For motivation think of the following example:</p>
 <ul>
-<li>You send a 5 unit remote bolus.</li>
+<li>You send a 5-unit remote bolus.</li>
 <li>The bolus is delivered to the Looper.</li>
-<li>Nightscout is having a temporary technical issue and doesn't show the bolus was received.</li>
-<li>You are watching Nightscout and you don’t see a delivery so you assume it failed.</li>
-<li>You send another remote 5 unit bolus.</li>
-<li>The second 5 unit bolus is delivered to the Looper (10 Units total).</li>
+<li><em>Nightscout</em> is having a temporary technical issue and doesn't show the bolus was received.</li>
+<li>You are watching <em>Nightscout</em> and you don’t see a delivery so you assume it failed.</li>
+<li>You send another remote 5-unit bolus.</li>
+<li>The second 5-unit bolus is delivered to the Looper (10 Units total).</li>
 </ul>
 </div>
-<p>You can see the danger of sending duplicate bolus/carbs so be careful. If a remote bolus/carb entry doesn’t show in Nightscout, use your own judgment on whether enough time has passed to try again.</p>
+<p>You can see the danger of sending duplicate bolus/carbs so be careful. If a remote bolus/carb entry doesn’t show in <em>Nightscout</em>, use your own judgment on whether enough time has passed to try again.</p>
 <div class="admonition warning">
 <p class="admonition-title">If sending both, choose Bolus then Carbs</p>
 <p>If you plan to send a carb command remotely and later decide to issue a bolus command - STOP and consider.</p>
 <p>There are 2 scenarios of concern that could lead to too much insulin:</p>
 <ul>
-<li>Looper is using Temp Basal <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><ul>
-<li>Loop will initiate a max Temp Basal when it receives the carb remote command</li>
-<li>Your bolus will be accepted and take place in addition to the high temp basal</li>
+<li><em>Looper</em> is using the <strong><code>Temp Basal</code></strong> (temporary basal) <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><ul>
+<li><em>Loop</em> will initiate a max <code>Temp Basal</code> when it receives the carbs remote command</li>
+<li>Your bolus will be accepted and take place in addition to the high temporary basal</li>
 </ul>
 </li>
-<li>Looper is using <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><ul>
-<li>Loop will initiate 40% of the recommended dose when it receives the carb remote command</li>
+<li><em>Looper</em> is using <strong><code>Automatic Bolus</code></strong> <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr><ul>
+<li><em>Loop</em> will initiate 40% of the recommended dose when it receives the carbs remote command</li>
 <li>Your bolus will be accepted and take place in addition to an automatic boluses</li>
 </ul>
 </li>
 </ul>
-<p>Typically, sending a carb command alone is sufficient for Loop to know about the carbs and begin to dose for them.</p>
+<p>Typically, sending a carbs command alone is sufficient for <em>Loop</em> to know about the carbs and begin to dose for them.</p>
 <p>If you really want to both bolus for carbs and enter carbs, then do it in that order.</p>
-<ul>
-<li>The bolus, when accepted, will cause Loop to issue a 0 Temp Basal (which is "safer")</li>
-<li>The carbs, when accepted, will cause Loop to respond to the carbs while including the bolus already delivered and included in the Looper's <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></li>
-</ul>
-<p>Remember - you should pause at least 60 sec between remote commands or the One-Time-Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) will be rejected as having already been used.</p>
+<ol>
+<li>The bolus, when accepted, will cause <em>Loop</em> to issue a 0 <code>Temp Basal</code> (temporary basal) (which is "safer")</li>
+<li>The carbs, when accepted, will cause <em>Loop</em> to respond to the carbs while including the bolus already delivered and included in the Looper&#39; <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></li>
+</ol>
+<p>❗️ Remember - you should pause at least 60 seconds between remote commands or the One-Time-Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) will be rejected as having already been used.</p>
 </div>
 <h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are four ways you can trigger your commands remotely; <a href="#loopcaregiver">LoopCaregiver</a> (under development), <a href="#nightscout-careportal">Nightscout Careportal</a>, <a href="#shortcuts">Shortcuts</a>, and <a href="#ifttt">IFTTT</a>.</p>
-<p>Config Var Reminder:</p>
+<div class="admonition important">
+<p class="admonition-title">Config Var Reminder</p>
 <ul>
-<li>If you used a remote method for your build of Loop, don't forget you must add LOOP_PUSH_SERVER_ENVIRONMENT config variable to your Nightcout site or remote commands will not work. <a href="#remote-build-config-var-requirement">LoopDocs: Remote Build Config Var Requirement</a></li>
-<li>If you then return to <abbr title="program used to build an app">Xcode</abbr> build, you must remove the LOOP_PUSH_SERVER_ENVIRONMENT config var.</li>
+<li>If you used a remote method for your build of <em>Loop</em>, don't forget you must add <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> config variable to your <em>Nightcout</em> site or remote commands will not work. <a href="#remote-build-config-var-requirement">LoopDocs: Remote Build Config Var Requirement</a></li>
+<li>If you then return to <em><abbr title="program used to build an app">Xcode</abbr></em> build, you must remove the <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> config var.</li>
 </ul>
-<h3 id="loopcaregiver">LoopCaregiver   <img alt="icon for LoopCaregiver app" src="../img/lcg-icon.jpg" width="50" /><a class="headerlink" href="#loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The LoopCaregiver app is under development to make remote commands easier to implement and monitor.</p>
+</div>
+<h3 id="loopcaregiver"><span translate="no">LoopCaregiver</span>   <img alt="icon for LoopCaregiver app" src="../img/lcg-icon.jpg" width="50" /><a class="headerlink" href="#loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The <em>LoopCaregiver</em> app is under development to make remote commands easier to implement and monitor.</p>
 <div class="admonition danger">
-<p class="admonition-title">Configuration Breaking Change on 2023 January 24</p>
+<p class="admonition-title">Configuration Update with Breaking Change on January 24, 2023</p>
 <p>What does that mean? Sounds scary!</p>
 <p>This is an app under development. Sometimes, when improvements are added, you have to start over with a fresh download and enter all your information again to take advantage of the update. The app on your phone keeps working until you are ready to update.</p>
 <ul>
 <li><strong>The location of the <abbr title="contains project files and each file's revision history">repository</abbr> has moved</strong></li>
-<li><strong>The ability to build with <a href="../../gh-actions/gh-other-apps/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> as well as <abbr title="program used to build an app">Xcode</abbr> has been added</strong></li>
-<li><strong>The bundle ID has been modified</strong></li>
+<li><strong>The ability to build with <a href="../../gh-actions/gh-other-apps/"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></a> as well as <em><abbr title="program used to build an app">Xcode</abbr></em> has been added</strong></li>
+<li><strong>The <code>bundle ID</code> has been modified</strong></li>
 </ul>
-<p>Because the bundle ID has changed:</p>
+<p>Because the <code>bundle ID</code> has changed:</p>
 <ul>
-<li>If you already have LoopCaregiver running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again</li>
-<li>If you haven't built LoopCaregiver, the app you download and build today has the new format for the bundle ID</li>
+<li>If you already have <em>LoopCaregiver</em> running and do a fresh download and build, you will be building a separate app and will need to delete the old one and add your Looper(s) in again</li>
+<li>If you haven't built <em>LoopCaregiver</em>, the app you download and build today has the new format for the <code>bundle ID</code></li>
 </ul>
 </div>
 <ul>
 <li>Minimum Requirements<ul>
-<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 for LoopCaregiver's phone</li>
-<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 with <abbr title="Latest release with major updates">Loop 3</abbr> for Looper's phone</li>
-<li>Nightscout 14.2.6</li>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 16 for LoopCaregiver&#39;s phone</li>
+<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1 with <em>Loop</em> 3 for Looper&#39;s phone</li>
+<li><em><span translate="no">Nightscout</span></em> 14.2.6</li>
 </ul>
 </li>
 <li>Complete all 3 steps:<ul>
@@ -2758,113 +2818,160 @@
 </li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">Older NS Versions</p>
+<p class="admonition-title">Older <em>Nightscout</em> Versions</p>
 <p>If you ignore this minimum version requirement - what happens:</p>
 <ul>
-<li>If you attempt to use the carb entry in the past or future, the caregiver app accepts it but the remote commands accepted by the Loopers phone show up at the current time - not when the caregiver intended to insert carbs</li>
-<li>Please take the time to update your Nightscout site to master</li>
-<li>Nightscout 14.2.6 was released 30-Sep-2022 as Classic Liquorice</li>
+<li>If you attempt to use the carb entry in the past or future, the <em>caregiver</em> app accepts it but the remote commands accepted by the Loopers phone show up at the current time - not when the caregiver intended to insert carbs</li>
+<li>Please take the time to update your <em>Nightscout</em> site to <code>master</code></li>
+<li><em>Nightscout</em> 14.2.6 was released 30-Sep-2022 as <code>Classic Liquorice</code></li>
 </ul>
 </div>
-<p>If you plan to use LoopCaregiver, please join <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
-<p><strong>As with all development code, monitor zulipchat for announcements, report any problems you experience, be prepared to build frequently, and pay attention.</strong></p>
-<h4 id="build-loopcaregiver">Build LoopCaregiver<a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>A build script is available to assist in building LoopCaregiver. This should be straightforward for anyone who has previously built <abbr title="Latest release with major updates">Loop 3</abbr> using the script. You may also choose to build it with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method as documented on the Browser Build: <a href="../../gh-actions/gh-other-apps/">Other Apps</a> page.</p>
-<p>Open a terminal window. Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say Copy to Clipboard when you hover over it). When you click the icon, a message that says “Copied to Clipboard” will appear on your screen.</p>
-<div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopCaregiver.sh<span class="k">)</span><span class="s2">&quot;</span>
-</code></pre></div>
-<p>Paste the line into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window. Be sure to click anywhere in the terminal before trying to paste. (Ways to paste: <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-v">V</kbd></span>; or <span class="keys"><kbd class="key-control">Ctrl</kbd></span>+click and select from menu or Edit-Paste at top of Mac screen.) Once the line is pasted, hit return to execute the script. The directions for downloading and building are contained in the script. Please read carefully.</p>
+<p>If you plan to use <em>LoopCaregiver</em>, please join <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> <em>Zulipchat</em> stream.</p>
+<p><strong>As with all development code, monitor <em>Zulipchat</em> for announcements, report any problems you experience, be prepared to build frequently, and pay attention.</strong></p>
+<h4 id="build-loopcaregiver">Build <em>LoopCaregiver</em><a class="headerlink" href="#build-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>A build script is available to assist in building <em>LoopCaregiver</em>. This should be straightforward for anyone who has previously built &nbsp;<em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>&nbsp; using the script. You may also choose to build it with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method as documented on the Browser Build: <a href="../../gh-actions/gh-other-apps/">Other Apps</a> page.</p>
+<ul>
+<li>Open a terminal window. </li>
+<li>Spot the line below that starts with <code>/bin/bash</code></li>
+<li>Click the gray copy button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1Z"/></svg></span>) located near the bottom right side of that line  (should say <code>Copy to Clipboard</code> when you hover the mouse over it).<br />
+  Once clicked, a confirmation message that says <code>Copied to Clipboard</code> will appear on your screen.
+    <div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoopCaregiver.sh script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopCaregiver.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div></li>
+<li>Important: Click anywhere in the terminal before trying to paste</li>
+<li>Paste the line into the <abbr title="interface for entering commands to the computer">Terminal</abbr> window.  <ul>
+<li>on Mac, you can do this in one of the following ways:<ul>
+<li>Press <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd>V</kbd></span> </li>
+<li>or Press <span class="keys"><kbd class="key-control">Ctrl</kbd></span>+click and select <code>Paste</code> from the menu </li>
+<li>or select <code>Edit =&gt; Paste</code> (i.e. click the <code>Edit</code> menu at the top of the Mac screen then click <code>Paste</code>).</li>
+</ul>
+</li>
+<li>on PC: <ul>
+<li>Press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>V</kbd></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Once the line is pasted, hit Return (<span class="keys"><kbd class="key-enter">Enter</kbd></span>) to execute the script. </li>
+<li>The script displays the directions for downloading and building.  <br />
+    Please read them carefully.</li>
+</ul>
 <div class="admonition warning">
-<p class="admonition-title">Not Loop</p>
-<p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build <abbr title="Latest release with major updates">Loop 3</abbr> from a script.</p>
-<p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (LoopKit/LoopCaregiver). It uses some modules from Loop. The target and scheme are automatically selected for LoopCaregiver and if you follow directions for a paid Developer account, the signing is automatic.</p>
+<p class="admonition-title">Not &nbsp;<em><span translate="no">Loop</span></em></p>
+<p>The output you see in the <abbr title="interface for entering commands to the computer">Terminal</abbr> may look very similar to when you build &nbsp;<em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>&nbsp; from a script.</p>
+<p>It is pulling down a <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> from a different location (<code>LoopKit/LoopCaregiver</code>). It uses some modules from <em>Loop</em>. The target and scheme are automatically selected for <em>LoopCaregiver</em> and if you follow directions for a paid Developer account, the signing is automatic.</p>
 </div>
-<h4 id="use-loopcaregiver">Use LoopCaregiver<a class="headerlink" href="#use-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Some limited directions for using the LoopCaregiver app are provided - please also read the zulipchat stream.</p>
-<h4 id="loopcaregiver-main-screen">LoopCaregiver Main Screen<a class="headerlink" href="#loopcaregiver-main-screen" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>LoopCaregiver uses a lot of features from Loop with some Nightscout-like features in the Timeline.</p>
+<h4 id="use-loopcaregiver">Use <em>LoopCaregiver</em><a class="headerlink" href="#use-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Some limited directions for using the <em>LoopCaregiver</em> app are provided - please also read the <em>Zulipchat</em> stream.</p>
+<h4 id="loopcaregiver-main-screen"><em>LoopCaregiver</em>&nbsp; Main Screen<a class="headerlink" href="#loopcaregiver-main-screen" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><em>LoopCaregiver</em> uses a lot of features from <em>Loop</em> with some Nightscout-like features in the Timeline.</p>
 <p>The Timeline:</p>
 <ul>
 <li>Autoscales the vertical display for glucose reported over the last 24 hours (plus the forecast if that is turned on)<ul>
-<li>The graphic below has <code>Show Prediction</code> turned off for Timeline</li>
+<li><code>Show Prediction</code> for Timeline is turned off in the graphic below.</li>
 </ul>
 </li>
-<li>Horizontal display can be adjusted with spread/pinch and scrolling</li>
-<li>A double-tap on the Timeline provides a factor of 2 expansion horizontally if at default</li>
-<li>A double-tap on the Timeline returns the display to default if expanded</li>
+<li>Horizontal display can be adjusted with spreading/pinching and scrolling.</li>
+<li>A double tap on the Timeline provides a factor of 2 expansion horizontally if at default</li>
+<li>A double tap on the Timeline returns the display to default if expanded</li>
 </ul>
 <p><img alt="main screen of the LoopCaregiver app" src="../img/lcg-main.jpg" width="300" /></p>
-<h4 id="add-a-looper-to-loopcaregiver">Add a Looper to LoopCaregiver<a class="headerlink" href="#add-a-looper-to-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You add each Looper under settings. (LoopCaregiver can monitor more than one Looper).</p>
+<h4 id="add-a-looper-to-loopcaregiver">Add a <em>Looper</em> to <em>LoopCaregiver</em><a class="headerlink" href="#add-a-looper-to-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You add each Looper under settings. (<em>LoopCaregiver</em> can monitor more than one Looper).</p>
 <ul>
-<li>On Looper Phone<ul>
-<li>Tap on Loop-&gt;Settings-&gt;Services-&gt;Nightscout</li>
-<li>Tap on the One-Time-Password row to see the QR code</li>
-<li>Pro-tip - take a screen shot and store it on your computer - you can then add view the QR code in LoopCaregiver without bothering your Looper</li>
-</ul>
-</li>
-<li>On LoopCaregiver Phone<ul>
-<li>Tap on  LoopCaregiver-&gt;Settings</li>
-<li>Tap on <strong>&plus;</strong> to add a Looper</li>
-<li>Enter the name of the Looper, the Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> (use http<strong>s</strong>://) and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr></li>
-<li>Touch the QR code row - this opens the camera - point camera at QR code from Looper's phone</li>
-</ul>
+<li>On the Looper&#39; phone:<ul>
+<li>Tap on <code>Loop -&gt; Settings -&gt; Services -&gt; Nightscout</code></li>
+<li>Tap on the <code>One-Time-Password</code> row to see the QR code  </li>
+<li>
+<div class="admonition tip">
+<p class="admonition-title">Pro-tip</p>
+   Take a screenshot and store it on your computer.<br />
+   You can then add view the QR code in <em>LoopCaregiver</em> without bothering your Looper.</div>
 </li>
 </ul>
-<p>You can also use the LoopCaregiver-&gt;Settings screen to modify:</p>
-<ul>
-<li>Units used for glucose display: mg/dL or mmol/L</li>
-<li>Include the Loop Forecast display on the Timeline chart as well as the Glucose chart of the main display (graphic above has <code>Show Prediction</code> turned off)</li>
+</li>
+<li>On the LoopCaregiver&#39; phone:<ul>
+<li>Tap on <code>LoopCaregiver -&gt; Settings</code></li>
+<li>Tap on the plus sign <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span> to add a Looper</li>
+<li>Enter the name of the Looper, the <em>Nightscout</em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (use <span translate="no"> http<strong>s</strong>://</span>) and <code>API_SECRET</code></li>
+<li>Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone</li>
 </ul>
-<h4 id="issue-remote-commands-with-loopcaregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with LoopCaregiver<a class="headerlink" href="#issue-remote-commands-with-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You issue override, carb and bolus commands using a toolbar similar to the one seen on Loop. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that Adam 6 is a test phone.)</p>
-<p>Carb and bolus commands each require authorization before they are accepted. The authorization (FaceID, Fingerprint or passcode) matches that required to unlock the LoopCaregiver's phone.</p>
-<p>The use of LoopCaregiver makes remote commands much easier and more reliable.</p>
+</li>
+</ul>
+<p>You can also use <span>the <code>LoopCaregiver -&gt; Settings</code> screen</span> to modify:</p>
+<ul>
+<li>Units used for glucose display: <code>mg/dL</code> or <code>mmol/L</code></li>
+<li>Include the &nbsp;<em><span translate="no">Loop</span></em> forecast display on the Timeline chart as well as the Glucose chart of the main display (<code>Show Prediction</code> is turned off in the graphic above)</li>
+</ul>
+<h4 id="issue-remote-commands-with-loopcaregiver"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Remote Commands with &nbsp;<em>LoopCaregiver</em><a class="headerlink" href="#issue-remote-commands-with-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You issue override, carb, and bolus commands using a toolbar similar to the one seen on <em>Loop</em>. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that: <code>Adam 6</code> is a test phone.)</p>
+<p>Carb and bolus commands each require authorization before they are accepted. The authorization (<em>FaceID</em>, Fingerprint, or passcode) matches that required to unlock the LoopCaregiver&#39;s phone.</p>
+<p>The use of <em>LoopCaregiver</em> makes remote commands much easier and more reliable.</p>
 <p>Go back and read the warnings again before using the app. <a href="#warnings-for-remote-commands">Warnings for Remote Commands</a></p>
-<h3 id="nightscout-careportal">Nightscout Careportal<a class="headerlink" href="#nightscout-careportal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>To use remote commands, I'm assuming you've setup your Nightscout site according to the directions <a href="../update_user/">here</a> in Loopdocs. Especially the part about your ENABLE line including each of the words: "override careportal loop" (in addition to other variables you'd be interested in - order of the words in the ENABLE line is not important). You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your careportal is active to send remote overrides. Once authenticated by entering your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, then there will be a &plus; in the upper right corner of your site. That is your careportal. Tap the careportal &plus; and then scroll down in the "event type" menu to find "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>". Within there, you will find all your Loop override presets already loaded for you.</p>
+<h3 id="nightscout-careportal"><em>Nightscout Careportal</em><a class="headerlink" href="#nightscout-careportal" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>To use remote commands, I'm assuming you've set up your <em>Nightscout</em> site according to the directions <a href="../update_user/">here</a> in <em>Loopdocs</em>. Especially the part about your ENABLE line including each of the words: <code>override</code> <code>careportal</code> <code>Loop</code> (in addition to other variables you'd be interested in - the order of the words in the <code>ENABLE</code> line is not important).<br />
+You'll also need to have your <a href="../update_user/#authenticate-site">site authenticated</a> so that your <em>careportal</em> is active to send remote overrides.<br />
+Once authenticated by entering your <code>API_SECRET</code>, then there will be a plus sign (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span>) in the upper right corner of your site. That is your <em>careportal</em>. Tap the <em>careportal</em> plus sign (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 14h-6v6h-4v-6H4v-4h6V4h4v6h6v4Z"/></svg></span>) and then scroll down in the <code>event type</code> menu to find <code>Temporary Override</code>.<br />
+Within there, you will find all your <em><span translate="no">Loop</span></em> override presets already loaded for you.</p>
 <p><img alt="img/careportal-overrides.PNG" src="../img/careportal-overrides.PNG" /></p>
-<p>The Looper will see a banner notification that an remote command has been sent with details about that command and whether it succeeded (or not).</p>
+<p>The Looper will see a banner notification that a remote command has been sent with details about that command and whether it succeeded (or not).</p>
 <p><img alt="img/override_notification.jpg" src="../img/override_notification.jpg" /></p>
-<p>Canceling an override through Nightscout careportal is as simple as selecting the event type "Temporary <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> Cancel" and submitting.</p>
+<p>Canceling an override through <em>Nightscout careportal</em> is as simple as selecting the event type <code>Temporary Override Cancel</code> and submitting.</p>
 <h3 id="shortcuts">Shortcuts<a class="headerlink" href="#shortcuts" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple shortcuts for you that integrate Loop overrides with Nightscout.</p>
-<div class="admonition info">
-<p class="admonition-title">Important note</p>
-<p>Before you click that download below...save some trouble. Download the Shortcuts app if you don't have it yet and choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, just pick one and run it.  THEN go to download the shortcut of your choice below. The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here. But...in lovely <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> glitch...that slider doesn't appear unless you've run a trusted shortcut first. So, run one now. Then you'll have the slider in iPhone Settings, Shortcuts app to turn "Allow Untrusted Shortcuts" on when you will see a message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts."</p>
+<p>If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate &nbsp;<em><span translate="no">Loop</span></em>&nbsp; overrides with <em>Nightscout</em>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important Note</p>
+<p>Before you click on the download file below...save yourself some trouble.</p>
+<ol>
+<li>Download the Shortcuts app if you don't have it yet</li>
+<li>Choose to run any shortcut from the Gallery. It can be the laundry timer...I don't care, <strong>just pick one shortcut and run it</strong>.  </li>
+<li>THEN, go to download the shortcut of your choice below.<br />
+   ℹ️ The shortcuts that aren't run through the Gallery option are called "untrusted". And you need a slider in your iPhone to trust the "untrusted" shortcuts you would be downloading here.<br />
+   But...in a lovely <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> glitch...that slider doesn't appear unless you've run a trusted shortcut first.  So, run one now.</li>
+<li>Then, this slider will now be visible in the iPhone Settings app under the Shortcuts app menu.</li>
+<li>When you will see the message "This shortcut cannot be opened because your Shortcuts security system settings don't allow untrusted shortcuts"</li>
+<li>Open iPhone Settings and scroll down the list and tap the Shortcuts menu to turn on "Allow Untrusted Shortcuts".</li>
+</ol>
 </div>
-<p>Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser in iPhone):</p>
-<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut">Comprehensive Loop Shortcut</a>
+<p>Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser on iPhone):</p>
+<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut">Comprehensive <em>Loop</em> Shortcut</a>
  <em>includes Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr>, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.</em></p>
 <p>And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:</p>
 <p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop Remote Overrides.shortcut">Set Remote <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
-<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut">Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr> only shortcut</a></p>
-<p><strong>A couple notes about these shortcuts:</strong></p>
+<p><a href="https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut"><span>Cancel <abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></span> only shortcut</a></p>
+<div class="admonition note">
+<p class="admonition-title">A couple notes about these shortcuts:</p>
 <ol>
-<li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper's phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.<ul>
-<li>For <abbr title="Latest release with major updates">Loop 3</abbr>, the minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1</li>
+<li>You will need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper&#39;s phone can still be lower than <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13, but your phone as the shortcut user would need <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13.<ul>
+<li>For &nbsp;<em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>, the minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15.1</li>
 </ul>
 </li>
-<li>You need to open those links in the Safari browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked "AA" near your Safari address bar and tap "Downloads" to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>
-<li>When you enter your Nightscout <abbr title="website address (Uniform Resource Locator)">URL</abbr> in the "<abbr title="website address (Uniform Resource Locator)">URL</abbr>" field of the Loop shortcut setup, make sure you don't include a trailing "/" or the <abbr title="Application Programming Interface">API</abbr> calls to Heroku will error out.</li>
-<li>When a remote override is set properly, you'll see an "ok" message displayed. If there is an error, you'll see an error message. Most errors will be that you have an <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> wrong (make sure there isn't a space at the end of you <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> that you don't see) or you failed to do the steps to setup NS and update your Loop app as described in steps 1-3 above.</li>
-<li>You can absolutely customize these bits and pieces within the shortcut. Change the text messages, change the links...totally up to you.</li>
+<li>You need to open those links in the <em>Safari</em> browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked <code>AA</code> near your <em>Safari</em> address bar and tap <code>Downloads</code> (downloads)  to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.</li>
 </ol>
-<h3 id="ifttt">IFTTT<a class="headerlink" href="#ifttt" title="Anchor link to this Header on this Page">&para;</a></h3>
+</div>
+<ol>
+<li>When you enter your <em>Nightscout</em> <abbr title="website address (Uniform Resource Locator)">URL</abbr> in <span>the <code>URL</code> field</span> of the &nbsp;<em><span translate="no">Loop</span></em>&nbsp; shortcut setup, make sure you don't include a <span>trailing <code>/</code></span>, or the <abbr title="Application Programming Interface">API</abbr> calls to <em>Heroku</em> will error out.</li>
+<li>When a remote override is set properly, you'll see an <code>ok</code> message displayed. If there is an error, you'll see an error message. Most errors will be that you have an <code>API_SECRET</code> wrong (make sure there isn't a space at the end of your <code>API_SECRET</code> that you don't see) or you failed to do the steps to setup <em>Nightscout</em> and update your <em>Loop</em> app as described in steps 1-3 above.</li>
+<li>You can absolutely customize these bits and pieces within the shortcut. Change the text messages, and change the links... It is totally up to you.</li>
+</ol>
+<h3 id="ifttt"><em>IFTTT</em><a class="headerlink" href="#ifttt" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by <a href="../ns_crossref/#IFTTT">setting up IFTTT</a>, too.</p>
 <h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Just a brief mention so you are aware:</p>
 <ol>
-<li>The override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> will display information about what override is currently active in the Looper's phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to Loop runs and Nightscout upload events in Loop). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.</li>
-<li>When you add a new override preset in Loop, that preset has to be uploaded to Nightscout before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. that will get the Nightscout upload going.</li>
+<li>The override <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> will display information about what override is currently active in the Looper&#39;s phone. BUT, there can be a slight delay as that information is only transmitted every 5 minutes at best (it is tied to <span><em>Loop</em> runs</span> and <em>Nightscout</em> upload events in <em><span translate="no">Loop</span></em>). So, wait 5 minutes to see that the information has gone through a refresh cycle before assuming the override message failed to enact.</li>
+<li>When you add a new override preset in <em>Loop</em>, that preset has to be uploaded to <em>Nightscout</em> before it will be available as a remote override. To trigger that upload, you can simply enact that new override for a few seconds and turn it off again. That will get the <em>Nightscout</em> upload going.</li>
 </ol>
 <h2 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once you've set up remote overrides, you may encounter errors when trying to run them via Nightscout or <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  Below are the most common and the typical solutions.</p>
+<p>Once you've set up remote overrides, you may encounter errors when trying to run them via <em>Nightscout</em> or <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  Below are the most common and typical solutions.</p>
 <ol>
-<li><strong>Error: Loop notification failed: Could not find deviceToken in loopSettings</strong> You might see this in either Nightscout or Shortcuts.  The error is most commonly caused by Loop not pointing to the right Nightscout instance or you haven't yet run an override locally (with the Loop app) before trying to run one remotely.  <strong>Solution:</strong> confirm the Loop app is pointing to the right Nightscout site (and there are not extra spaces or a slash (/) at the end, and always run an override for a few seconds in the Loop app before you try to run one remotely.</li>
-<li><strong>Error: cannot POST/api/v2/notifications/loop</strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This means Nightscout is not updated correctly and you are running a version of Nightscout that doesn't yet support remote overrides.  <strong>Solution:</strong> Follow the steps above again on how to update to the version of Nightscout that supports remote overrides.</li>
-<li><strong>Error: {“status”:401,”message”:”Unauthorized”,”description”:Invalid\/Missing”}</strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This is caused by having the incorrect <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> in the Shortcut.  <strong>Solution:</strong> Double check the <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> is correct and that there are no spaces at the end.</li>
-<li><strong>Error: APNs delivery failed: InvalidProviderToken</strong> You might see this in either Nightscout or Shortcuts.  This is caused because your LOOP_APNS_KEY_ID and LOOP_DEVELOPER_TEAM_ID are swapped in Heroku.  <strong>Solution:</strong> Double check what's listed in your Apple Developer Account and compare to the config variables in Heroku. Your Team_ID is next to your name in the top right corner.  The other code is your Key_ID. Get the IDs in the correct location in Heroku to resolve the error.</li>
+<li><strong><code>Error: Loop notification failed: Could not find deviceToken in loopSettings</code></strong> You might see this in either <em>Nightscout</em> or Shortcuts.  The error is most commonly caused by <em>Loop</em> not pointing to the right <em>Nightscout</em> instance or you haven't yet run an override locally (with the Loop app) before trying to run one remotely.<br />
+<strong>Solution:</strong> Confirm the <em>Loop</em> app is pointing to the right <em>Nightscout</em> site (and there are no extra spaces or a slash (<code>/</code>) at the end, and always run an override for a few seconds in the <em>Loop</em> app before you try to run one remotely.</li>
+<li><strong><code>Error: cannot POST/api/v2/notifications/loop</code></strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This means <em>Nightscout</em> is not updated correctly and you are running a version of <em>Nightscout</em> that doesn't yet support remote overrides. <br />
+<strong>Solution:</strong> Follow the steps above again on how to update to the version of <em>Nightscout</em> that supports remote overrides.</li>
+<li><strong><code>Error: {“status”:401,”message”:”Unauthorized”,”description”:Invalid\\/Missing”}</code></strong> You might see this in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> Shortcuts.  This is caused by having an incorrect <code>API_SECRET</code> in the shortcut.<br />
+<strong>Solution:</strong> Double check the <code>API_SECRET</code> is correct and that there are no spaces at the end.</li>
+<li><strong><code>Error: APNs delivery failed: InvalidProviderToken</code></strong> You might see this in either <em>Nightscout</em> or Shortcuts.  This is caused because your <code>LOOP_APNS_KEY_ID</code> and <code>LOOP_DEVELOPER_TEAM_ID</code> are swapped in <em>Heroku</em>. <br />
+<strong>Solution:</strong> Double check what's listed in your <em>Apple Developer Account</em> and compare it to the config variables in <em>Heroku</em>. Your <code>Team_ID</code> is next to your name in the top right corner.  The other code is your <code>Key_ID</code>. Get the IDs in the correct location in <em>Heroku</em> to resolve the error.</li>
 </ol>
 
 
