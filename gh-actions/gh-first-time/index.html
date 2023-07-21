@@ -758,6 +758,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#find-teamid" class="md-nav__link">
+    Find TEAMID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#generate-api-key" class="md-nav__link">
     Generate API Key
   </a>
@@ -2609,6 +2616,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#find-teamid" class="md-nav__link">
+    Find TEAMID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#generate-api-key" class="md-nav__link">
     Generate API Key
   </a>
@@ -3083,8 +3097,33 @@
 <li>LoopDocs has an <a href="../../build/step6/">Apple Developer Program</a> page that explains in detail how to sign up for an account</li>
 <li>This link takes you straight to <a href="https://developer.apple.com">Apple Developer account</a> to sign up</li>
 </ul>
+<h3 id="find-teamid">Find <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr><a class="headerlink" href="#find-teamid" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li>Open this link: <a href="https://developer.apple.com/account">Apple developer portal page</a>.</li>
+<li>Click <code>Account</code> in the top menu bar</li>
+<li>Click the <code>Membership Details</code> icon<br />
+<img alt="Apple Developer Account Membership Details" src="../img/apple_dev_account-teamid-001.svg" /></li>
+<li>Next to the <code>Team ID</code> field, you will see a 10-character ID number.<br />
+  This is your <strong>Apple Developer <code>TEAMID</code></strong>.
+    <img alt="Apple Developer TEAMID" src="../img/apple_dev_account-teamid-002.svg" /></li>
+<li>Record this for use when you configure your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> and when you configure your unique <span class="notranslate"><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></span>  </li>
+<li>
+<p>Stop a moment and double-check - if you get this wrong, you will have errors later</p>
+<div class="admonition tip">
+<p class="admonition-title">Do not "type" what you think you see</p>
+<p><strong>Copy and paste</strong> from the <code>Team ID</code> from the webpage.<br />
+(Avoid the wrong number of characters; avoid typing an <code>8</code> when it should be a <code>B</code>.)</p>
+</div>
+</li>
+</ul>
 <h3 id="generate-api-key">Generate <abbr title="Application Programming Interface">API</abbr> Key<a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You cannot generate the <abbr title="Application Programming Interface">API</abbr> Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> steps (see <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> or <a href="#setup-github">Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a>), but you will need to pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Need a Paid Apple Developer Account Set Up to Generate the <abbr title="Application Programming Interface">API</abbr> Key</p>
+<p>You cannot generate the <abbr title="Application Programming Interface">API</abbr> Key until you have the paid Apple Developer account set up.<br />
+If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> steps (see <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> or <a href="#setup-github">Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a>), but you will need to pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
 <p>This section will walk you through the steps required to gather or create these parameters.</p>
 <table>
 <thead>
@@ -3108,25 +3147,13 @@
 </tr>
 <tr>
 <td><code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code></td>
-<td>Copy the full key from the text file you downloaded when generating the <abbr title="Application Programming Interface">API</abbr> key - Filename has <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> value embedded in it.<br>Include everthing in the file from <br><code>-----BEGIN PRIVATE KEY-----</code><br>and ending in <br><code>-----END PRIVATE KEY-----</code><br></td>
+<td>Copy the full key from the text file you downloaded when generating the <abbr title="Application Programming Interface">API</abbr> key - Filename has <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> value embedded in it.<br>Include everything in the file from <br><code>-----BEGIN PRIVATE KEY-----</code><br>and ending in <br><code>-----END PRIVATE KEY-----</code><br></td>
 </tr>
 </tbody>
 </table>
 <p>Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.</p>
+</div>
 <ol>
-<li>Open this link: <a href="https://developer.apple.com/account/resources/certificates/list">Apple developer portal page</a>.<ul>
-<li>Look at the upper right hand corner of that page</li>
-<li>The 10-character ID number below your name is your <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code><ul>
-<li>If all you see are icons, click on the <a href="https://developer.apple.com/account#MembershipDetailsCard">Membership Details</a> icon</li>
-</ul>
-</li>
-<li>Record this for use when you configure your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and when you configure your unique <span class="notranslate"><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></span></li>
-<li>Stop a moment and double check - if you get this wrong, you will have errors later<ul>
-<li>Do not "type" what you think you see; copy and paste from the <code>Team ID</code> from the webpage. (Avoid the wrong number of characters; avoid typing an <code>8</code> when it should be a <code>B</code>.)</li>
-</ul>
-</li>
-</ul>
-</li>
 <li>
 <p>Open this link: <a href="https://appstoreconnect.apple.com/access/api"><code>App Store Connect/Access/API</code></a></p>
 <ul>
@@ -3435,7 +3462,7 @@
 </ul>
 </li>
 </ul>
-<p>For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
+<p>For each of the following secrets, follow the directions below - this list is configured with a copy button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1Z"/></svg></span>) when you hover to the right of each word - this helps avoid spelling errors.
 <div class="copy highlight"><pre><span></span><code>TEAMID
 </code></pre></div>
 <div class="copy highlight"><pre><span></span><code>FASTLANE_ISSUER_ID
