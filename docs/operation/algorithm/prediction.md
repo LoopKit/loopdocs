@@ -10,7 +10,7 @@ Just a note, this whole section is fairly technical. While perhaps not the most 
 
 ## Overview
 
-Before we delve into each of the four individual effects, a general overview figure may be a helpful start. There are four effects summed together to produce Loop's final predicted blood glucose curve. Each individual effect, along with their combined effect, is illustrated in the figure below. Insulin, from boluses and temporary basals, will have a decreasing effect on the prediction. Carbohydrates will have an increasing effect on the prediction. Blood glucose momentum effect can have a positive or negative effect, depending on how blood glucose is trending in the most recent CGM values. As shown in the example below, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a decreasing effect on the prediction, indicating that the recent rise in blood glucose was not as large as had been previously predicted by Loop in the recent past.
+Before we delve into each of the four individual effects, a general overview figure may be a helpful start. There are four effects summed together to produce Loop's final predicted blood glucose curve. Each individual effect, along with their combined effect, is illustrated in the figure below. Insulin, from boluses and temporary basals, will have a decreasing effect on the prediction. Carbohydrates will have an increasing effect on the prediction. Blood glucose momentum effect can have a positive or negative effect, depending on how blood glucose is trending in the most recent CGM values. As shown in the example below, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is lowering the prediction, indicating that the recent rise in blood glucose was not as large as had been predicted by Loop in the recent past.
 
 ![combined effects curve](img/combined_effects.png)
 
@@ -174,11 +174,11 @@ $$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} $$
 
 In addition to the modeled effects of insulin and carbohydrates, there are many other factors that affect blood glucose (e.g., exercise, stress, hormones, etc.). Many of these effects are active for a period of time. By observing its own forecast error, Loop can estimate the magnitude of these effects and, by assuming that they will continue for some short period of time, incorporate them into the forecast to improve forecast accuracy.
 
-To do this, Loop calculates a retrospective forecast with a start time of 30 minutes in the past, ending at the current time. Loop compares the retrospective forecast to the actual observed change in blood glucose, and the difference is summed into a blood glucose velocity or rate of difference:
+To do this, Loop calculates a retrospective forecast with a start time of 30 minutes in the past, ending at the current time. Loop compares the retrospective forecast to the actual observed change in blood glucose, and the difference is used to determine a blood glucose velocity or rate of difference:
 
-$$ BG_{vel}=\frac{1}{6} \sum_{t=-30}^{0} BG[t] - RF[t] $$
+$$ BG_{vel}=\frac{1}{6} \times \left(BG[0] - RF[0]\right) $$
 
-where BG*vel* is a velocity term (mg/dL per 5min) that represents the average blood glucose difference between the retrospective forecast (RF) and the actual blood glucose (BG) over the last 30 minutes. This term is applied to the current forecast from the insulin and carb effects with a linear decay over the next hour. For example, the first forecast point (t=5) is approximately 100% of this velocity, the forecast point one-half hour from now is adjusted by 50% of the velocity, and points from one hour or more in the future are not affected by this term.
+where BG*vel* is a velocity term (mg/dL per 5min) that represents the average blood glucose difference between the retrospective forecast (RF) and the actual blood glucose (BG) over the last 30 minutes. This term is applied to the current forecast from the insulin and carb effects with a linear decay over the next hour. For example, the first forecast point (t=5) is 100% of this velocity, the forecast point one-half hour from now is adjusted by approximately 50% of the velocity, and points from one hour or more in the future are not affected by this term.
 
 The retrospective correction effect can be expressed mathematically:
 
@@ -203,7 +203,7 @@ The retrospective correction effect can be illustrated with an example: if the B
 | 55                              | 9%                                         | -0.9                |
 | 60                              | 0%                                         | 0                   |
 
-Here’s an example below that shows the retrospective correction effect when the BG*vel* over the past 30 minutes was -10mg/dL/5min.
+The example below that shows the retrospective correction effect when the BG*vel* over the past 30 minutes was -3 mg/dL/5min.
 
 ![bg retrospective graph example](img/bgrc_graphic.png)
 
@@ -248,7 +248,7 @@ Lastly, the forecast or predicted blood glucose BG at time *t* is the current bl
 
 $$ \widehat{BG}[t] = BG[t_{o}] + \sum_{i=5}^{t} \Delta BG[t_{o+i}] $$
 
-Each individual effect along with the combined effects are illustrated in the figure below. As shown, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is having a dampening effect on the prediction, indicating that the recent rise in blood glucose was not as great as had been previously predicted in the recent past.
+Each individual effect along with the combined effects are illustrated in the figure below. As shown, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is lowering the current prediction, indicating that the recent rise in blood glucose was not as great as had been predicted in the recent past.
 
 ![combined effects curve](img/combined_effects.png)
 
