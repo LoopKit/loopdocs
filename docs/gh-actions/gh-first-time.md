@@ -198,28 +198,40 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 * LoopDocs has an [Apple Developer Program](../build/step6.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [Apple Developer account](https://developer.apple.com) to sign up
 
+### Find TEAMID
+
+- Open this link: [Apple developer portal page](https://developer.apple.com/account).
+- Click `Account` in the top menu bar
+- Click the `Membership Details` icon  
+    ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg)
+- Next to the `Team ID` field, you will see a 10-character ID number.  
+  This is your **Apple Developer `TEAMID`**.
+    ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg)
+- Record this for use when you configure your *Secrets* and when you configure your unique <span class="notranslate">App Group</span>  
+- Stop a moment and double-check - if you get this wrong, you will have errors later
+
+    !!! tip "Do not "type" what you think you see"
+        **Copy and paste** from the `Team ID` from the webpage.  
+        (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
+
 ### Generate API Key
+!!! info "Need a Paid Apple Developer Account Set Up to Generate the API Key"
+    You cannot generate the API Key until you have the paid Apple Developer account set up.  
+    If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
 
-You cannot generate the API Key until you have the paid Apple Developer account set up. If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
+!!! abstract
+    This section will walk you through the steps required to gather or create these parameters.
 
-This section will walk you through the steps required to gather or create these parameters.
+    |Name|Description|
+    |---------|---------|
+    |<code>TEAMID</code>|This 10-character identifier is associated with your Apple Developer ID and never changes|
+    |<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your Apple Developer ID and never changes|
+    |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an API key in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
+    |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the API key - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
+    
+    Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
 
-|Name|Description|
-|---------|---------|
-|<code>TEAMID</code>|This 10-character identifier is associated with your Apple Developer ID and never changes|
-|<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your Apple Developer ID and never changes|
-|<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an API key in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
-|<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the API key - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everthing in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
 
-Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
-
-1. Open this link: [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
-    * Look at the upper right hand corner of that page
-    * The 10-character ID number below your name is your <code>TEAMID</code>
-        * If all you see are icons, click on the [Membership Details](https://developer.apple.com/account#MembershipDetailsCard) icon
-    * Record this for use when you configure your Secrets and when you configure your unique <span class="notranslate">App Group</span>
-    * Stop a moment and double check - if you get this wrong, you will have errors later
-        * Do not "type" what you think you see; copy and paste from the `Team ID` from the webpage. (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
 1. Open this link: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
     * Click the `Keys` tab
         * If this is your first time here, there will be a dialog for you to follow:
@@ -499,7 +511,7 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
 * Confirm, one more time, that your `TEAMID` is correct
     * If it is not, all will appear fine until you try to Build Loop and then you will get failures
 
-For each of the following secrets, follow the directions below - this list is configured with a copy button when you hover to the right of each word - this helps avoid spelling errors.
+For each of the following secrets, follow the directions below - this list is configured with a copy button (:material-content-copy:) when you hover to the right of each word - this helps avoid spelling errors.
 ``` { .text .copy }
 TEAMID
 ```
