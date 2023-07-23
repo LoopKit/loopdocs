@@ -216,9 +216,44 @@ To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) fro
 When using the `<span translate="no">` element, make sure to review the translated output to ensure it retains the correct context and formatting.  
 You can also refer to the above flowchart diagram for a visual representation of the conditional text transformation rules.
 
-ℹ️ The disadvantage is that using `<span translate="no">` splits the sentence into 2 parts, one before and one after the non translated text. The automatic translation can sometimes get confused by this and treat them as 2 separate sentences to be translated independently.  
-- **Rewrite the sentence** slightly, such as moving the `text` to the left or right end of the sentence. 
-This process may require some trial and error to find the best approach.
+##### When Rules Fail
+
+Using `<span translate="no">text</span>`, backticks (`` `text` ``) and code (`<code>text</code>`) has a-one major drawback.  
+The automatic translation splits the sentence into 2 parts, one before and one after the non translated text, and can sometimes:
+-  get confused by this and treat them as 2 separate sentences to be translated independently.  
+- remove spaces around the `text`, (remember it no longer exists from *Google Translate* point of view)
+
+
+💡Here are some possible **workarounds**:
+
+- **Rewrite the sentence** slightly, such as moving the `text` to the left or right end of the sentence.   
+    > ❌ **Incorrect Translation**:    "The graphic below has ==`Show Prediction`== turned off for Timeline"  
+    > ✅ **Improved Translation**: "==`Show Prediction`== for Timeline is turned off in the graphic below." 
+
+  Moving the untranslated text `Show Prediction` to the beginning of the sentence improves the translation in this case.
+- If the ***text* and surrounding words form a whole** that is not reflected in the automatic translation, wrap them in a `<span>` tag. This will prevent Google Translate from separating them (without preventing the translation).  
+  If the sentence is too short or does not provide enough context, *Google Translate* may get "lost" and decide to move the untranslated text to a place that makes absolutely no sense, such as  the end of the sentence.  
+  This is not a golden rule, of course.
+  ⚠️ Do not apply this blindly and systematically, because all depends on the context, so first look at the translation to apply it only where needed.
+  
+  Here is an **example** where it proved to be useful. We are materializing the fact that the words `loop` and `runs` are related.
+  > ❌ **Incorrect Translation**: `it is tied to ` ==`*Loop* runs`== ` and *Nightscout* upload events`  
+  > ✅ **Improved Translation**: `it is tied to ` ==`<span>*Loop* runs</span>`== ` and *Nightscout* upload events`
+- **Break a complex  sentence into** several **simpler sentences**.  
+  You can use this when the previous approaches did not work.
+- Add a **non-breakable space** (`&nbsp;`) **before and/or after the `text`** to compensate for the spaces missing around the `text` that Google Translates removes from the translation.
+  When the untranslated `text` is preceded and/or followed by other words, these will remove them from the translation. Remember untranslated text as non-existent, really!
+    > ❌ **Incorrect Translation**:  `*<span translate="no">Loop 3</span>* or newer`
+    > ✅ **Improved Translation** `*<span translate="no">Loop 3</span>*&nbsp; or newer`
+
+This process require trial and error to find the best approach: the one that works.
+
+These rules to improve automatic translation with Google Translate comes with pluses and minuses:
+- Drawbacks: 
+    - Markdown is a bit less readable and more sprinkled with *HTML*.
+    - Need to publish the website  to a **public** website so that it is visible to [Google Translate](https://translate.google.com)
+- Pluses: 
+    - One single source and many potential translations
 
 ### Links
 
