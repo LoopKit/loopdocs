@@ -108,7 +108,9 @@ There are still some **issues**, where text is translated whereas it should not,
 - **brand name**, **project/product name**, 
 
 To improve the automatic translation quality, please follow these rules when writing or updating the documentation. This will provide *Google Translate* with more context and enhance translation accuracy.
+
 #### Rules
+
 To prevent *Google Translate* from translating specific `text` items, we can mark them accordingly:
 The conditional text transformation rules are expressed in two forms, pseudo-code first followed by a visual diagram.
 
@@ -148,7 +150,9 @@ flowchart TD
 ```
 
 Now let's break down each step.
+
 #####  Entity
+
 Enclose each of the following `text` types with a **backtick** `` ` ``:
 - Key
 - Identifier
@@ -187,6 +191,7 @@ Error Message | `` `invalid curve name` ``         | `invalid curve name`
 If the `text` that you do not want to translate is not an [Entity](#entity), read on.
 
 ##### Name
+
 To prevent a name from being automatically translated, such as a **product** name, **project** name, or **brand** name, use emphasis (aka. italic) by surrounding `name` with a star (`*`) or an underscore (`_`), like so: **`*name*`**.
 
 **Examples**:
