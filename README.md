@@ -214,10 +214,10 @@ To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) fro
 
 ⚠️ Do not apply this workaround without considering the above options (entity and name) first as it has a drawback. 
 When using the `<span translate="no">` element, make sure to review the translated output to ensure it retains the correct context and formatting.  
-You can also refer to the provided flowchart diagram for a visual representation of the conditional text transformation rules.
+You can also refer to the above flowchart diagram for a visual representation of the conditional text transformation rules.
 
-ℹ️ The disadvantage is that we split the sentence into 2 parts, one before and one after the ignored text. The automatic translation can sometimes get confused by this and treat them as 2 separate sentences to be translated independently.  
-To fix this, you may have to rewrite the sentence slightly, such as moving the `text` to the right end of the sentence.  
+ℹ️ The disadvantage is that using `<span translate="no">` splits the sentence into 2 parts, one before and one after the non translated text. The automatic translation can sometimes get confused by this and treat them as 2 separate sentences to be translated independently.  
+- **Rewrite the sentence** slightly, such as moving the `text` to the left or right end of the sentence. 
 This process may require some trial and error to find the best approach.
 
 ### Links
