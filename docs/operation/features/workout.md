@@ -5,9 +5,9 @@
 Many new Loopers interpret Loop Overrides as a one-for-one replacement for manual pump options where a temporary basal was applied for a particular activity. Although Loop Overrides can help in a situation where you previously used a temporary basal rate, overrides are more powerful.
 
 !!! danger "Changing Overall Insulin Needs is NOT like Manual Pump Temp Basal Change"
-    Loop Overrides are **not** the same as adjusting temp basal on a manual pump. The easiest way to restrict basal rates with an automated system is to raise your correction target temporarily. In some cases, you may need to also adjust insulin needs, but begin just by changing that target.
+    Loop Overrides are **not** the same as adjusting temporary basal on a manual pump. The easiest way to restrict basal rates with an automated system is to raise your correction target temporarily. In some cases, you may need to also adjust insulin needs, but begin just by changing that target.
 
-    When you modify insulin needs, you are affecting **basal rates**, **carb ratios** and **insulin sensitivity factors (ISF)** for the duration of the override.
+    When you modify insulin needs, you are affecting **basal rates**, **carb ratios**, and **insulin sensitivity factors (ISF)** for the duration of the override.
 
     A common mistake is to think selecting an override with 10% Overall Insulin Needs is like selecting 10% basal rate with a manual pump. **With Loop, that selection modifies all your normal settings by a factor of 10!**ß
 
@@ -20,7 +20,7 @@ Sometimes you need to set a manual temp basal and you need it to keep working wh
 
 ## How Overrides Work
 
-Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, ISF, and CR together. Examples where this can be helpful include hormone cycles, steroid medications and/or exercise.
+Overrides let Loop know selected settings are modified for the duration of the override. The override can change either the correction range or the overall insulin needs or both. When you set an override on insulin needs, the override adjusts basal schedule, ISF, and CR together. Examples where this can be helpful include hormone cycles, steroid medications, and/or exercise.
 
 Override presets are (1) optional and (2) can be configured within Loop's workout icon (the little blue heart icon in the Loop toolbar). Once override presets are created, they can be turned on/off by using the workout icon as well.
 
@@ -33,10 +33,10 @@ Overrides allow you to specify:
 
 * an overall insulin needs adjustment
 * a correction target range
-* a duration in 15 minute increments (or indefinite)
+* a duration in 15-minute increments (or indefinite)
 * a start time
 
-The override only works when your Loop gear is with you. For example, if Loop sets a zero temp basal rate based on an override and then you leave your gear behind; at the end of half an hour, your pump will resume scheduled insulin delivery.
+The override only works when your Loop gear is with you. For example, if Loop sets a zero temporary basal rate based on an override and then you leave your gear behind; at the end of half an hour, your pump will resume scheduled insulin delivery.
 
 ![img/override-entry.jpeg](img/override-entry.jpeg){width="300"}
 {align="center"}
@@ -85,7 +85,7 @@ Overrides will work while you are Looping. Sounds obvious, right? But, the thing
 
 !!! warning "If you walk away from iPhone and/or RileyLink..."
 
-    If you stop Looping (i.e., walk away from your gear or glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) setting.
+    If you stop Looping (i.e., walk away from your gear or your glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) setting.
 
 ### Avoid Extreme Insulin Needs Setting
 
@@ -94,14 +94,14 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
 !!! warning "Scenario for 10% Insulin Need"
 
     * User really wants insulin reduced and chooses 10% insulin need
-    * User doesn't think about the 10% and enters carbs while override is active
-        - Loop suggests a tiny bolus and user accepts
+    * User doesn't think about the 10% and enters carbs while the override is active
+        - Loop suggests a tiny bolus and the user accepts
             - User goes high because CR was 10 times higher than Therapy Setting Value
             - User stays high because ISF is also 10 times higher than Therapy Setting Value
                 - Automated corrections are 10% of typical corrections
-                - Basal supplied is 10% of Therapy Setting value
+                - Basal supplied is 10% of the Therapy Setting value
         - OR
-        - Loop suggests a tiny bolus and user manually boluses the amount they know the food needs
+        - Loop suggests a tiny bolus and the user manually boluses the amount they know the food needs
             - User glucose may be normal BUT
                 - Loop predicts a negative eventual glucose (prediction only - this will never happen)
                 - Loop immediately withholds all basal until prediction normalizes
@@ -144,7 +144,7 @@ The selectable Overall Insulin Needs values are not limited by the default picke
 
 * When adjusting Needs, press and hold the "orange" bar, highlighted by the red rectangle in the graphic below
 * Move your finger left and right to adjust by 1%
-* Release to select desired level
+* Release to select the desired level
 
 ![press and hold within the insulin needs bar to make 1% adjustments](img/override-one-percent.svg){width="200"}
 {align="center"}
@@ -194,4 +194,4 @@ This only affects this override during the current period. It is not saved to th
 
 ## Remote Overrides
 
-You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on [this page for how how to set up Remote Overrides in Nightscout](../../nightscout/remote-overrides.md) and you will need to be using a paid Apple developer account. Remote overrides require Apple Push Notifications service, and that is only available on paid accounts.
+You can also use your Nightscout site to activate/deactivate your Loop's override presets. To accomplish this, you will need to do some legwork as outlined on [this page for how to set up Remote Overrides in Nightscout](../../nightscout/remote-overrides.md) and you will need to be using a paid Apple developer account. Remote overrides require Apple Push Notifications service, and that is only available on paid accounts.

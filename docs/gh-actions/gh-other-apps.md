@@ -38,7 +38,7 @@ Many graphics on this page show LoopWorkspace, just remember to use the reposito
 | App | Fork from this Address | Documentation |
 |---|---|---|
 | LoopCaregiver | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) |
-|Loop Follow | [https://github.com/jonfawcett/LoopFollow](https://github.com/jonfawcett/LoopFollow) | [Loop Follow](https://github.com/jonfawcett/LoopFollow#loop-follow)|
+|Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
 
 
 ## Configure Secrets for this App
