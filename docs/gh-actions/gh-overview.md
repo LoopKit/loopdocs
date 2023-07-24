@@ -50,6 +50,7 @@ The requirements for building and using the Loop app with the GitHub Build Actio
 
 There are a number of steps that must be completed the first time you use this method.
 
+* [GitHub Quick-Start](../gh-actions/gh-quick-start.md)
 * [GitHub First-Time](../gh-actions/gh-first-time.md)
 
 ## Deploy and Updates
