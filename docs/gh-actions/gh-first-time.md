@@ -5,7 +5,7 @@ The instructions for building Loop with a Browser using GitHub Actions can appea
 * It can be difficult to see the forest for the trees
 * If you want a shorter list of instructions with fewer details, stick with the [GitHub Quick-Start](../gh-actions/gh-quick-start.md) page
 * If you want all the information in one giant page, keep going on this page
-* You can even flip back and forth by clicking on the `Return to Quick-Start` links when you finish a section on this page
+* You can even flip back and forth by clicking on the `Link to Return to Quick-Start` links when you finish a section on this page
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compa
 
 For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
 
-!!! important "[Return to Quick-Start](../gh-actions/gh-quick-start.md#new-terms-with-github-build)"
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#new-terms-with-github-build)"
 
 ## New Terms with GitHub Build
 
@@ -81,6 +81,8 @@ Others terms need an expanded explanation. If reading about the new terms first 
     * With Loop 3, actions to Verify Secrets, Add Identifiers, Create Certificates, and Build Loop are provided to enable users to build the Loop app from a browser on any computer
     * The GitHub system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported on [GitHub Status](https://www.githubstatus.com/).
 
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#summary-of-browser-build-steps)"
+
 ## Summary of Browser Build Steps
 
 Review the entire process before starting and then go through slowly and carefully.
@@ -97,7 +99,7 @@ TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US
 
 Your app must be updated once every 90 days, at the current time, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
 
-!!! important "[Return to Quick-Start](../gh-actions/gh-quick-start.md#save-your-information)"
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#save-six-secrets)"
 
 ### Save Your Information
 
@@ -155,6 +157,8 @@ The list below indicates what you need to record (save digitally so you can copy
     * <code>GH_PAT</code>
     * <code>MATCH_PASSWORD</code>
 
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#collect-the-four-apple-secrets)"
+
 ## Apple Developer Account
 
 If you have an Apple Developer Account, you should sign in to your account before starting. There will be links to take you to specific pages; if you are not already logged in, you will be required to log in before you can go to that page.
@@ -164,7 +168,7 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 * LoopDocs has an [Apple Developer Program](../build/step6.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [Apple Developer account](https://developer.apple.com) to sign up
 
-!!! important "[Return to Quick-Start](../gh-actions/gh-quick-start.md#save-six-secrets)"
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#save-six-secrets)"
 
 ### Find TEAMID
 
@@ -292,7 +296,7 @@ In summary, from this section, you have found or generated the following, and sa
 
     The <code>FASTLANE_KEY_ID</code> and <code>FASTLANE_KEY</code> must both be updated.
 
-!!! important "[Return to Quick-Start](../gh-actions/gh-quick-start.md#collect-the-two-github-secrets)"
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#collect-the-two-github-secrets)"
 
 ## New GitHub Account
 
@@ -349,6 +353,7 @@ You must be logged into your GitHub account before starting this step. If you ar
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
 
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#make-up-a-password)"
 
 ### Create Match-Secrets
 
@@ -386,7 +391,7 @@ You will not be interacting with your `Match-Secrets` repository directly. It ne
 
 You are done with this part of the setup.
 
-!!! important "[Return to Quick-Start](../gh-actions/gh-quick-start.md#setup-github-loopworkspace-repository)"
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#setup-github-loopworkspace-repository)"
 
 ### Fork LoopWorkspace
 
@@ -428,6 +433,8 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
+
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#configure-secrets)"
 
 ### Configure Secrets
 
@@ -518,13 +525,15 @@ Once all six secrets have been added to your `LoopWorkspace`, you are done with 
 !!! tip "Time for a Break?"
     :fontawesome-regular-circle-pause: This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#validate-secrets)"
+
 ## Validate Secrets
 
 This step checks that the Secrets you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
 This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate Secrets".
 
-!!! important "[Return to Quick-Start](../gh-actions/gh-quick-start.md#add-identifiers-for-loop)"
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#add-identifiers-for-loop)"
 
 ## Add Identifiers for Loop
 
@@ -571,6 +580,8 @@ The `Add Identifier` <span class=notranslate>Action</span> should complete (succ
 {align="center"}
 
 ## Configure Identifiers for Loop
+
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#create-app-group)"
 
 ### Create App Group
 
@@ -657,6 +668,8 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#add-app-group-to-bundle-identifiers)"
+
 ### Add App Group to Other Identifiers
 
 You will now be checking the status for 3 more identifiers to ensure the App Group is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers:
@@ -690,6 +703,8 @@ If you did not need to make changes, the `Save` button will not be active.
 * Tap on the `< All Identifiers` button at the top left
 
 The full list of Identifiers should be displayed again.
+
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#create-loop-app-in-app-store-connect)"
 
 ## Create Loop App in App Store Connect
 
@@ -768,6 +783,8 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 * You are done with this step and ready to Create Certificates
 
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#create-certificates)"
+
 ## Create Certificates
 
 Refer to the graphic below for the numbered steps:
@@ -785,6 +802,8 @@ Refer to the graphic below for the numbered steps:
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
     * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`. (The `Add Identifiers` might not be required but it is fast and should be done as a matter of routine.)
+
+!!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#build-loop)"
 
 ## Build Loop
 
