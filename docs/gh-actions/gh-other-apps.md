@@ -97,7 +97,7 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your LoopWorkspace repository and enable workflows if needed
+1. Click on the "Actions" tab of your `LoopFollow` or `LoopCaregiver`  repository and enable workflows if needed
 1. On the left side, select "1. Validate Secrets".
 1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
