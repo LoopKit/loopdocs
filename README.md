@@ -61,6 +61,8 @@ Once [installed](#install), you can preview the doc locally as you edit.
 
 ### Preview Changes
 
+#### Preview Changes Locally
+
 To preview your work as you edit:
 
 - Run **`mkdocs serve`** locally and keep it running:
@@ -69,13 +71,43 @@ To preview your work as you edit:
   mkdocs serve
   ```
     By default, this runs a local web server that hosts the documentation at http://127.0.0.1:8000/ .
-* Preview docs in your Web browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the *mkdocs* server `mkdocs* serve`.
-* Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
-  ```bash
-  mkdocs gh-deploy
-  ```
+* Preview docs in your Web browser.  
+  Most changes will update automatically as you edit.  
+  Configuration and navigation changes will require restarting `mkdocs serve`.
 
-Note that the `master` branch will automatically be published to your personal repository (`gh-pages`) by *Github actions* when it is pushed to the *GitHub* server.
+#### Preview Changes on a Public Website
+
+Optionally, you can share the preview with others by uploading them to your Github repository's `gh-pages` branch.
+
+- First, you need to configure [[#configure-gh-pages|GitHub Pages]] (once).
+- Then, to deploy the current branch to your personal GitHub website so that others can take a look at:
+```bash
+mkdocs gh-deploy
+```
+
+There is also a [*GitHub Action*](https://github.com/LoopKit/loopdocs/blob/master/.github/workflows/publish.yml) that automatically builds and deploys the doc each time it the `master` branch is pushed to the repository.  
+ℹ️ If you deployed your current branch with `mkdocs gh-deploy`, then pushed  `master` to the repository  afterward, this will automatically deploy `master` and override your previous deployment.
+
+Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
+
+#### Configure GH Pages
+
+The **first** thing you need to do is **configure** your fork of **loopdocs** repository (**once**) so that whenever `gh-pages` is pushed it is automatically deployed to your personal GitHub website. Here is how.
+
+Open **your** fork of **loopdocs** on Github: `https://github.com/YOUR_GITHUB_USERNAME_HERE/loopdocs`
+
+1. Click  the **`"⚙️ Settings"`** tab (last one on the right)
+2. Click **`Pages`** located under the `Code and Automation` section
+3. In the **`Source`** field, select **`Deploy from a Branch`** 
+4. **First** drop-down under the **`Branch`** section: Select  **`gh-pages`**
+5. **Second** drop-down: Select **`"/(root)"`**
+6. Click **`Save`** 
+
+>    ![GitHub Pages Configuration](/img/gh_pages_config.png)
+
+Whenever `gh-pages`branch is pushed to your repository, *GitHub Pages* will automatically deploy it to your personal GitHub website:  
+     `https://YOUR_GITHUB_USERNAME_HERE.github.io/loopdocs`
+
 
 ### Find Broken Links
 
@@ -218,11 +250,10 @@ You can also refer to the above flowchart diagram for a visual representation of
 
 ##### When Rules Fail
 
-Using `<span translate="no">text</span>`, backticks (`` `text` ``) and code (`<code>text</code>`) has a-one major drawback.  
+Using `<span translate="no">text</span>`, backticks (`` `text` ``) and code (`<code>text</code>`) has a drawback and does not work every time.  
 The automatic translation splits the sentence into 2 parts, one before and one after the non translated text, and can sometimes:
 -  get confused by this and treat them as 2 separate sentences to be translated independently.  
-- remove spaces around the `text`, (remember it no longer exists from *Google Translate* point of view)
-
+- remove spaces around the untranslated `text`, (remember it no longer exists from *Google Translate* point of view)
 
 💡Here are some possible **workarounds**:
 
@@ -251,7 +282,7 @@ This process require trial and error to find the best approach: the one that wor
 These rules to improve automatic translation with Google Translate comes with pluses and minuses:
 - Drawbacks: 
     - Markdown is a bit less readable and more sprinkled with *HTML*.
-    - Need to publish the website  to a **public** website so that it is visible to [Google Translate](https://translate.google.com)
+    - Need to publish the website  to a **public** website visible to [Google Translate](https://translate.google.com)
 - Pluses: 
     - One single source and many potential translations
 
