@@ -19,7 +19,7 @@ The instructions for building Loop with a Browser using GitHub Actions can appea
 
     Different people approach this differently. Choose your method to achieve success:
 
-    * Print the summary section above, go through the page sequentially doing each step and check off each step as you go
+    * Print the summary section from the [`Quick-Start page`](../gh-actions/gh-quick-start.md), go through the page sequentially doing each step and check off each step as you go
     * Read this whole page, then review it and read the [GitHub Errors: Most Common Mistakes](gh-errors.md#most-common-mistakes) section, then return to this page and start doing each step
     * Figure out your method and use it
 
