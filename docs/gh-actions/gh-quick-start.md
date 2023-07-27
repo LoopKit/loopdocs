@@ -285,6 +285,6 @@ Click on the link above if you need detailed instructions with graphics to build
 
 Please refer to:
 
-* [LoopDocs: Set Up Users](../gh-actions/gh-first-time/#set-up-users-and-access-testflight)
-* [LoopDocs: Deploy](../gh-actions/gh-deploy/)
+* [LoopDocs: Set Up Users](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight)
+* [LoopDocs: Deploy](../gh-actions/gh-deploy.md)
 
