@@ -38,7 +38,7 @@ The requirements for building and using the Loop app with the GitHub Build Actio
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
-1. Free GitHub account (instructions included in [First-Time with GitHub Actions](../gh-actions/gh-first-time.md))
+1. Free GitHub account (instructions included in [First-Time with GitHub Actions](../gh-actions/gh-first-time.md#new-github-account))
 1. [Apple Developer Membership](../build/step6.md)
     * Must be a paid developer account
     * If building for a family member, review this section:

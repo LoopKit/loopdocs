@@ -9,7 +9,7 @@ The instructions for building Loop with a Browser using GitHub Actions can appea
     - If you have never built Loop (allow up to one week elapsed time)
         * Requesting and getting an Apple Developer Account: 1-2 days
         * Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours
-        * Adding Secrets (requires Apple Developer Account): 1 hour
+        * Adding <code>Secrets</code> (requires Apple Developer Account): 1 hour
         * Performing the Action steps: 30 minutes to 2 hours
     - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 2 hours
@@ -20,17 +20,17 @@ The instructions for building Loop with a Browser using GitHub Actions can appea
     * Apple: Generate an API Key
     * GitHub:
         * Create an access token (GH_PAT)
-        * Create a Match-Secrets private repository
+        * Create a <code>Match-Secrets</code> private repository
         * Fork a repository (copy of LoopWorkspace)
-        * Add Secrets to your repository
-        * Action: 1. Verify Secrets
-        * Action: 2. Add Identifiers
+        * Add <code>Secrets</code> to your repository
+        * `Action: 1. Verify Secrets`
+        * `Action: 2. Add Identifiers`
     * Apple:
         * Configure Identifiers for Loop
         * Create your version of Loop in App Store (personal use only, not for distribution)
     * GitHub:
-        * Action: 3. Create Certificates
-        * Action: 4. Build Loop
+        * `Action: 3. Create Certificates`
+        * `Action: 4. Build Loop`
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
 
@@ -49,11 +49,11 @@ The instructions for building Loop with a Browser using GitHub Actions can appea
 
 ## Quick-Start List
 
-Each link below takes you to a more detailed section for you to review if desired. At the end of each detailed section, there is a `Return to Quick-Start` link to return you to this page.
+Each link below takes you to a more detailed section for you to review if desired. At the end of each detailed section, there is a `Return to Quick-Start` link to return you to the next section on this page.
 
 ### [Prerequisites](gh-first-time.md#prerequisites)
 
-Click the link above to read more detailed information about the prerequisites required to Build, Install and Use the Loop app. 
+Click the link in the header above to read more detailed information about the prerequisites required to Build, Install and Use the Loop app. 
 
 The prerequisites are:
 
@@ -62,30 +62,30 @@ The prerequisites are:
 
 ### [New Terms with GitHub Build](gh-first-time.md#new-terms-with-github-build)
 
-Click the link above to read about some new terms that you may not be familiar with.
+Click the link in the header above to read about some new terms that you may not be familiar with.
 
 ### [Summary of Browser Build Steps](gh-first-time.md#summary-of-browser-build-steps)
 
-Click on the link above if you want to know what you are going to do before you do any of it.
+Click the link in the header above if you want to know what you are going to do before you do any of it.
 
 If you just want to do the steps, keep going.
 
-### [Save Six Secrets](gh-first-time.md#save-your-information)
+### [Save Six <code>Secrets</code>](gh-first-time.md#save-your-information)
 
-Click on the link above if you want more detailed information about the information you will be creating and saving.
+Click the link in the header above if you want more detailed information about the information you will be creating and saving.
 
-You require 6 Secrets (alphanumeric items) to use the GitHub build method and if you use the GitHub method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you will use the same 6 Secrets for each app you build with this method. Each secret is indentified below by `ALL_CAPITAL_LETTER_NAMES`.
+You require 6 <code>Secrets</code> (alphanumeric items) to use the GitHub build method and if you use the GitHub method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you will use the same 6 <code>Secrets</code> for each app you build with this method. Each secret is indentified below by `ALL_CAPITAL_LETTER_NAMES`.
 
-* Four Secrets are from your Apple Account
-* Two Secrets are from your GitHub account
-* Be sure to save the 6 Secrets in a text file using a text editor
-    - Do **NOT** use a smart editor, which might auto-correct and change case, because these Secrets are case sensitive
+* Four <code>Secrets</code> are from your Apple Account
+* Two <code>Secrets</code> are from your GitHub account
+* Be sure to save the 6 <code>Secrets</code> in a text file using a text editor
+    - Do **NOT** use a smart editor, which might auto-correct and change case, because these <code>Secrets</code> are case sensitive
 
-### [Collect the Four Apple Secrets](../gh-actions/gh-first-time.md#generate-api-key)
+### [Collect the Four `Apple Secrets`](../gh-actions/gh-first-time.md#generate-api-key)
 
-Click the link above for detailed instructions for obtaining the four Secrets needed from Apple.
+Click the link in the header above for detailed instructions for obtaining the four <code>Secrets</code> needed from Apple.
 
-This step is common for all GitHub Browser Builds; do this step only once. You will be saving 4 Secrets from your Apple Account in this step.
+This step is common for all repositories that use GitHub Browser Build method; do this step only once. You will be saving 4 <code>Secrets</code> from your Apple Account in this step.
 
 1. Sign in to the [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
 1. Copy the Team ID from the upper right of the screen. Record this as your `TEAMID`.
@@ -94,20 +94,20 @@ This step is common for all GitHub Browser Builds; do this step only once. You w
 1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
 1. Download the API key itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
-### Collect the Two GitHub Secrets
+### Collect the Two `GitHub Secrets`
 
 * Click here for detailed information about creating a [New GitHub Account](../gh-actions/gh-first-time.md#new-github-account)
 
-* Click here for more detailed information on how to [Create GitHub Personal Access Token](../gh-actions/gh-first-time.md#create-github-personal-access-token)
+* Click here for more detailed information on how to [Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-gh_pat)
 
 Otherwise, keep going.
 
-### Create GitHub Personal Access Token
+### Create `GitHub Personal Access Token`
 
-Log into your GitHub account to create a personal access token; this is one of two GitHub secrets needed for your build. (Right click on the link below to open the required webpage.)
+Log into your GitHub account to create a personal access token; this is one of two GitHub <code>Secrets</code> needed for your build.
 
-1. (Right click on link) to create a [new personal access token](https://github.com/settings/tokens/new):
-    * Enter a name for your token, use "FastLane Access Token".
+1. (Right click on link) to create a [new `personal access token`](https://github.com/settings/tokens/new):
+    * Enter a name for your token, use "`FastLane Access Token`".
     * Change the Expiration selection to `No expiration`.
     * Select the `repo` and `workflow` permission scopes.
     * Click "Generate token".
@@ -115,17 +115,17 @@ Log into your GitHub account to create a personal access token; this is one of t
 
 ### Make up a Password
 
-This is the second of two GitHub secrets needed for your build.
+This is the second of two GitHub <code>Secrets</code> needed for your build.
 
-The first time you build with the GitHub Browser Build method for any DIY app, you will make up a password and record it as `MATCH_PASSWORD`. Note, if you later lose `MATCH_PASSWORD`, you will need to delete and make a new Match-Secrets repository (next step).
+The first time you build with the GitHub Browser Build method for any DIY app, you will make up a password and record it as <code>MATCH_PASSWORD</code>. Note, if you later lose <code>MATCH_PASSWORD</code>, you will need to delete and make a new <code>Match-Secrets</code> repository (next step).
 
-### [Setup GitHub Match-Secrets Repository](../gh-actions/gh-first-time.md#create-match-secrets)
+### [Setup GitHub <code>Match-Secrets</code> Repository](../gh-actions/gh-first-time.md#create-match-secrets)
 
-Click on the link above if you need detailed instructions with graphics for creating your Match-Secrets Repository. Otherwise, follow the instructions below.
+Click on the link above if you need detailed instructions with graphics for creating your <code>Match-Secrets</code> Repository. Otherwise, follow the instructions below.
 
-The creation of the Match-Secrets repository is a common step for all GitHub Browser Builds; do this step only once. You must be logged into your GitHub account.
+The creation of the <code>Match-Secrets</code> repository is a common step for all GitHub Browser Builds; do this step only once. You must be logged into your GitHub account.
 
-1. (Right click on link) to create a [new empty repository](https://github.com/new) titled `Match-Secrets`. It should be private.
+1. (Right click on link) to create a [new empty repository](https://github.com/new) titled <code>Match-Secrets</code>. It should be private.
 
 Once created, you will not take any direct actions with this repository; it needs to be there for the GitHub to use as you progress through the steps.
 
@@ -134,13 +134,19 @@ Once created, you will not take any direct actions with this repository; it need
 Click on the link above if you need detailed instructions with graphics for creating your LoopWorkspace Repository. Otherwise, follow the instructions below.
 
 1. Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
-1. In the forked LoopWorkspace repo, go to Settings -> Secrets and variables -> Actions.
+1. In the forked LoopWorkspace repo, go to `Settings` -> `Secrets and variables` -> `Actions`.
 
-### [Configure Secrets](../gh-actions/gh-first-time.md#configure-secrets)
+### [Configure <code>Secrets</code>](../gh-actions/gh-first-time.md#configure-secrets)
 
-Click on the link above if you need detailed instructions with graphics to configure your secrets. These secrets must be added to each repositiory but apply to all branches for a given repositisory. In other words - do this for LoopWorkspace and then you might also repeat this step for LoopCaregiver. You add the same 6 secrets every time.
+Click on the link above if you need detailed instructions with graphics to configure your <code>Secrets</code>. 
 
-For each of the following secrets, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
+!!! tip "<code>Secrets</code> are common"
+    These <code>Secrets</code> are the same for any repository for which you use the GitHub Browser Build method. 
+    
+    * They are added once for a repository and work for all branches of that repository
+    * They must be added to any other repository, such of LoopCaregiver for which you also use the GitHub Browser Build method
+
+For each of the following <code>Secrets</code>, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
 
 * `TEAMID`
 * `FASTLANE_ISSUER_ID`
@@ -149,21 +155,23 @@ For each of the following secrets, tap on "New repository secret", then add the 
 * `GH_PAT`
 * `MATCH_PASSWORD`
 
-### [Validate repository secrets](../gh-actions/gh-first-time.md#validate-secrets)
+### [Validate <code>Secrets</code>](../gh-actions/gh-first-time.md#validate-secrets)
 
 Click on the link above if you need detailed instructions with graphics for running a GitHub Action (all 4 actions use the same procedure). 
 
 Otherwise, follow the instructions below.
 
-This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
+This step validates most of your six <code>Secrets</code> and provides error messages if it detects an issue with one or more.
 
 1. Click on the "Actions" tab of your LoopWorkspace repository and enable workflows if needed
-1. On the left side, select "1. Validate Secrets".
+1. On the left side, select `1. Validate Secrets`.
 1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
-1. The workflow will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.
+1. The workflow will check if the required <code>Secrets</code> are added and that they are correctly formatted. If errors are detected, please check the run log for details.
 
-## Add Identifiers for Loop App
+### [Add Identifiers for Loop](../gh-actions/gh-first-time.md#add-identifiers-for-loop)
+
+Click on the link above if you need detailed instructions with graphics for running a this GitHub Action (all 4 actions use the same procedure). 
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. On the left side, select "2. Add Identifiers".
@@ -181,7 +189,7 @@ If you have already built Loop via Xcode using this Apple ID, you can skip on to
 1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
 1. Click "Continue" and then "Register".
 
-## [Add App Group to Bundle Identifiers](../gh-actions/gh-first-time.md#add-app-group-to-bundle-identifiers)
+### [Add App Group to Bundle Identifiers](../gh-actions/gh-first-time.md#add-app-group-to-bundle-identifiers)
 
 Click on the link above if you need detailed instructions with graphics for add the App Group to the other bundle identifiers, otherwise, follow the instructions below.
 
@@ -232,7 +240,7 @@ If you have created a Loop app in App Store Connect before, you can skip this se
 
 You do not need to fill out the next form. That is for submitting to the app store.
 
-### [Create Certficates](../gh-actions/gh-first-time.md#create-certificates)
+### [Create Certificates](../gh-actions/gh-first-time.md#create-certificates)
 
 Click on the link above if you need detailed instructions with graphics for creating the certificates needed to build the Loop app, otherwise, follow the instructions below.
 
@@ -241,14 +249,14 @@ Click on the link above if you need detailed instructions with graphics for crea
 1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-## Create a branch named "alive"
+### Create a branch named "alive"
 
 !!! tip "For dev only at this time"
     The automatic rebuild only works for the dev branch at this time. Work is in process to automatically create the alive branch if it does not exist.
 
     If you are using main (released) branch, skip ahead to [Build Loop](#build-loop)
 
-TestFlight builds expire after 90 days. This process you are implementing here will update and rebuild Loop periodically, and requires that you create a branch named "alive" so that GitHub will not inactivate the scheduled rebuild if no code updates are made.
+TestFlight builds expire after 90 days. A new process is being developed to update and rebuild Loop periodically. It requires that you create a branch named "alive". This is used to prevent GitHub from disabling actions when no updates occur over 60 days. It allows the periodic rebuild to continue as scheduled.
 
 The "alive" branch will only receive some additional commits to its history, and is not used for building the app.
 
@@ -260,7 +268,7 @@ The "alive" branch will only receive some additional commits to its history, and
 1. Select `dev` in the branch dropdown.
 1. Click the green "Create new branch" button.
 
-## [Build Loop](../gh-actions/gh-first-time.md#build-loop)
+### [Build Loop](../gh-actions/gh-first-time.md#build-loop)
 
 Click on the link above if you need detailed instructions with graphics to build the Loop app, otherwise, follow the instructions below.
 
@@ -277,6 +285,6 @@ Click on the link above if you need detailed instructions with graphics to build
 
 Please refer to:
 
-* [LoopDocs: Set Up Users](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#set-up-users-and-access-testflight)
-* [LoopDocs: Deploy](https://loopkit.github.io/loopdocs/gh-actions/gh-deploy/)
+* [LoopDocs: Set Up Users](../gh-actions/gh-first-time/#set-up-users-and-access-testflight)
+* [LoopDocs: Deploy](../gh-actions/gh-deploy/)
 
