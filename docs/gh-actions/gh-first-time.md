@@ -50,7 +50,7 @@ There are a number of terms that may seem unfamiliar with the GitHub Build. As y
 
 Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md).
 
-* You may find some terms in the Glossary not in alphabetical order. All the Secrets discussed on this page, are listed under Secrets in the Glossary.
+* You may find some terms in the Glossary not in alphabetical order. All the <code>Secrets</code> discussed on this page, are listed under <code>Secrets</code> in the Glossary.
 
 Others terms need an expanded explanation. If reading about the new terms first is confusing, finish reviewing the whole page and then come back.
 
@@ -66,10 +66,10 @@ Others terms need an expanded explanation. If reading about the new terms first 
     * On the `Identifier` screen, there will be **`NAME`** and **`IDENTIFIER`** columns
         * The items you see under the **`NAME`** column depend on whether you previously built with Xcode and may start with `XC`
         * The items under the **`IDENTIFIER`** column match the table in the documentation
-* `Secrets`: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have the access required to build Loop
-    * There are 6 Secrets that must be added to your fork of LoopWorkspace
-    * These Secrets work for any branch in your fork (`main` or `dev`, for example)
-    * These same Secrets are added to your GitHub fork for [Other Apps](gh-other-apps.md) configured with the same GitHub build method
+* <code>Secrets</code>: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have the access required to build Loop
+    * There are 6 <code>Secrets</code> that must be added to your fork of LoopWorkspace
+    * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
+    * These same <code>Secrets</code> are added to your GitHub fork for [Other Apps](gh-other-apps.md) configured with the same GitHub build method
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for Apple Developers to review their apps
     * Once you purchase an *Apple Developer* annual account, you are an Apple Developer and have access to this site
     * Most Loopers will not have an App on their page until using the GitHub build method
@@ -78,7 +78,7 @@ Others terms need an expanded explanation. If reading about the new terms first 
 * API `Key`: Application Programming Interface Key
     * This key will be obtained by you from the Apple Developer website to enable your GitHub account to interface with Apple to create your app
 * `Actions`: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
-    * With Loop 3, actions to Verify Secrets, Add Identifiers, Create Certificates, and Build Loop are provided to enable users to build the Loop app from a browser on any computer
+    * With Loop 3, actions to `Verify Secrets`, `Add Identifiers`, `Create Certificates`, and `Build Loop` are provided to enable users to build the Loop app from a browser on any computer
     * The GitHub system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported on [GitHub Status](https://www.githubstatus.com/).
 
 !!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#summary-of-browser-build-steps)"
@@ -93,7 +93,7 @@ These instructions allow you to build Loop without having access to a Mac. They 
 * You can access and install the Loop app via TestFlight if you lose or damage your device
 * You do not need to worry about the correct Xcode or macOS versions
 
-The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your Secrets. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
+The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your <code>Secrets</code>. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
 
 TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
@@ -114,7 +114,7 @@ Your app must be updated once every 90 days, at the current time, but it's simpl
 !!! info "A Note about Capitalization and Spaces"
     In places, you will be told to give something a name like FastLane API Key or FastLane Access Token. Please copy from the docs to use those exact names.
 
-    The Secrets that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
+    The <code>Secrets</code> that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
 
      The relationship and creation of each item is explained step-by-step on this page.
 
@@ -125,7 +125,7 @@ Your app must be updated once every 90 days, at the current time, but it's simpl
 
     If you use a smart editor to store your FASTLANE_KEY, you are likely to get the mysterious `invalid curve name` error.
 
-The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Secrets for your LoopWorkspace fork, so they are listed twice in the list below.
+The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the <code>Secrets</code> for your LoopWorkspace fork, so they are listed twice in the list below.
 
 **Needed or created at developer.apple.com**
 
@@ -146,10 +146,10 @@ The list below indicates what you need to record (save digitally so you can copy
 * GitHub Personal Access Token (GH_PAT)
 * a password - make one up and save it (<code>MATCH_PASSWORD</code>)
 
-**Needed when you [Configure Secrets](#configure-secrets)**
+**Needed when you [Configure <code>Secrets</code>](#configure-secrets)**
 
 * Save names and values in a text-only editor
-* These same secrets are used for Loop and for [Other Apps](gh-other-apps.md)
+* These same <code>Secrets</code> are used for Loop and for [Other Apps](gh-other-apps.md)
     * <code>TEAMID</code>
     * <code>FASTLANE_ISSUER_ID</code>
     * <code>FASTLANE_KEY_ID</code>
@@ -228,11 +228,11 @@ If you do not already have a paid Apple Developer account, you need to purchase 
     * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop-down menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
 
-### Copy API Key Secrets
+### Copy `API Key Secrets`
 
 The `Keys` screen is seen again with the additional content similar to that shown in the graphic below; the key information is blanked out for security.
 
-* Review the graphic and then follow the directions below to save more parameters you will need to [Configure Secrets](#configure-secrets)
+* Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](#configure-secrets)
 
     ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
@@ -324,7 +324,7 @@ The free level comes with plenty of storage and compute time to build Loop.
 
 Now you will configure a personal access token (<code>GH_PAT</code>), create one new repository and then fork the `LoopWorkspace` repository.
 
-### Create GH_PAT
+### Create `GH_PAT`
 
 You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
 
@@ -347,7 +347,7 @@ You must be logged into your GitHub account before starting this step. If you ar
 
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
-    * You will use this for `GH_PAT` when you set up your Secrets
+    * You will use this for `GH_PAT` when you set up your <code>Secrets</code>
     * You can [Regenerate GitHub Token](gh-update.md#regenerate-github-token) for `GH_PAT` if you lose it, but best to keep it safe
 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
@@ -436,9 +436,9 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 !!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#configure-secrets)"
 
-### Configure Secrets
+### Configure <code>Secrets</code>
 
-!!! tip "Secrets can be used for Other Apps"
+!!! tip "<code>Secrets</code> can be used for Other Apps"
     * There are 6 <span class="notranslate">Secrets</span> that must be added to your fork of `LoopWorkspace`
     * These <span class="notranslate">Secrets</span> work for any branch in your fork (`main` or `dev`, for example)
     * These same <span class="notranslate">Secrets</span> would be added to your <span class="notranslate">fork</span> of a repository for [Other Apps](gh-other-apps.md)
@@ -485,12 +485,12 @@ Refer to the list of parameters found in [Save Your Information](#save-your-info
 
 * Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit `Add Secret` to save it
     * You can replace the value for any secret later - you just can't see what you entered before
-* If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which secrets you need to fix
-* So collect the list of information you've gathered so it's handy and make up a password for the `MATCH_PASSWORD` and save that in your secrets archive file
+* If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which <code>Secrets</code> you need to fix
+* So collect the list of information you've gathered so it's handy and make up a password for the `MATCH_PASSWORD` and save that in your <code>Secrets</code> archive file
 * Confirm, one more time, that your `TEAMID` is correct
     * If it is not, all will appear fine until you try to Build Loop and then you will get failures
 
-For each of the following secrets, follow the directions below - this list is configured with a copy button (:material-content-copy:) when you hover to the right of each word - this helps avoid spelling errors.
+For each of the following <code>Secrets</code>, follow the directions below - this list is configured with a copy button (:material-content-copy:) when you hover to the right of each word - this helps avoid spelling errors.
 ``` { .text .copy }
 TEAMID
 ```
@@ -514,9 +514,9 @@ MATCH_PASSWORD
 * For `MATCH_PASSWORD` value - make up a password for this and save it for later use
     * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
-Once all six secrets have been added to your `LoopWorkspace`, you are done with Settings. Your screen should look similar to the graphic below.
+Once all six <code>Secrets</code> have been added to your `LoopWorkspace`, you are done with Settings. Your screen should look similar to the graphic below.
 
-* Take a moment to be sure all of your secrets are spelled correctly
+* Take a moment to be sure all of your <code>Secrets</code> are spelled correctly
 * If you notice a mistake, just delete the one that is not spelled correctly and add a `New repository secret` with the correct name
 
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
@@ -527,11 +527,11 @@ Once all six secrets have been added to your `LoopWorkspace`, you are done with 
 
 !!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#validate-secrets)"
 
-## Validate Secrets
+## Validate <code>Secrets</code>
 
-This step checks that the Secrets you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
+This step checks that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
-This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate Secrets".
+This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate <code>Secrets</code>".
 
 !!! important "[Link to Return to Quick-Start](../gh-actions/gh-quick-start.md#add-identifiers-for-loop)"
 
@@ -907,7 +907,7 @@ To make it easy when configuring the identifiers, go through and delete as many 
 * It is OK to delete an identifier even if it does have your correct `TEAMID`
     * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
 * Note - this graphic indicates where on this page you can find your `TEAMID`
-    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update Secrets](gh-update.md#update-secrets) with your correct `TEAMID`
+    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
     * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
