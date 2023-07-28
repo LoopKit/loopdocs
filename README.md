@@ -181,6 +181,8 @@ flowchart TD
     click H "#generic"
 ```
 
+If the automatic translation is still incorrect after applying these rules, [read this](#when-rules-fail).
+
 Now let's break down each step.
 
 #####  Entity
@@ -250,7 +252,7 @@ You can also refer to the above flowchart diagram for a visual representation of
 
 ##### When Rules Fail
 
-Using `<span translate="no">text</span>`, backticks (`` `text` ``) and code (`<code>text</code>`) has a drawback and does not work every time.  
+Using `<span translate="no">text</span>`, backticks (`` `text` ``) or code (`<code>text</code>`) has a drawback and does not work every time.  
 The automatic translation splits the sentence into 2 parts, one before and one after the non translated text, and can sometimes:
 -  get confused by this and treat them as 2 separate sentences to be translated independently.  
 - remove spaces around the untranslated `text`, (remember it no longer exists from *Google Translate* point of view)
@@ -258,8 +260,8 @@ The automatic translation splits the sentence into 2 parts, one before and one a
 💡Here are some possible **workarounds**:
 
 - **Rewrite the sentence** slightly, such as moving the `text` to the left or right end of the sentence.   
-    > ❌ **Incorrect Translation**:    "The graphic below has ==`Show Prediction`== turned off for Timeline"  
-    > ✅ **Improved Translation**: "==`Show Prediction`== for Timeline is turned off in the graphic below." 
+    > ❌ **Incorrect Translation**:    "The graphic below has `Show Prediction` turned off for Timeline"  
+    > ✅ **Improved Translation**: "`Show Prediction` for Timeline is turned off in the graphic below." 
 
   Moving the untranslated text `Show Prediction` to the beginning of the sentence improves the translation in this case.
 - If the ***text* and surrounding words form a whole** that is not reflected in the automatic translation, wrap them in a `<span>` tag. This will prevent Google Translate from separating them (without preventing the translation).  
@@ -268,8 +270,8 @@ The automatic translation splits the sentence into 2 parts, one before and one a
   ⚠️ Do not apply this blindly and systematically, because all depends on the context, so first look at the translation to apply it only where needed.
   
   Here is an **example** where it proved to be useful. We are materializing the fact that the words `loop` and `runs` are related.
-  > ❌ **Incorrect Translation**: `it is tied to ` ==`*Loop* runs`== ` and *Nightscout* upload events`  
-  > ✅ **Improved Translation**: `it is tied to ` ==`<span>*Loop* runs</span>`== ` and *Nightscout* upload events`
+  > ❌ **Incorrect Translation**: `it is tied to *Loop* runs and *Nightscout* upload events`  
+  > ✅ **Improved Translation**: `it is tied to <span>*Loop* runs</span>` and *Nightscout* upload events`
 - **Break a complex  sentence into** several **simpler sentences**.  
   You can use this when the previous approaches did not work.
 - Add a **non-breakable space** (`&nbsp;`) **before and/or after the `text`** to compensate for the spaces missing around the `text` that Google Translates removes from the translation.
@@ -277,12 +279,12 @@ The automatic translation splits the sentence into 2 parts, one before and one a
     > ❌ **Incorrect Translation**:  `*<span translate="no">Loop 3</span>* or newer`
     > ✅ **Improved Translation** `*<span translate="no">Loop 3</span>*&nbsp; or newer`
 
-This process require trial and error to find the best approach: the one that works.
+Finding the best approach, the one that works, requires trial and error.
 
 These rules to improve automatic translation with Google Translate comes with pluses and minuses:
 - Drawbacks: 
     - Markdown is a bit less readable and more sprinkled with *HTML*.
-    - Need to publish the website  to a **public** website visible to [Google Translate](https://translate.google.com)
+    - Need to [deploy the branch](#preview-changes-on-a-public-website) to a to a **public** website visible to [Google Translate](https://translate.google.com)
 - Pluses: 
     - One single source and many potential translations
 
