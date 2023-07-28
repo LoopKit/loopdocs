@@ -75,11 +75,11 @@ To preview your work as you edit:
   Most changes will update automatically as you edit.  
   Configuration and navigation changes will require restarting `mkdocs serve`.
 
-#### Preview Changes on a Public Website
+#### Preview Changes with GitHub Pages
 
 Optionally, you can share the preview with others by uploading them to your Github repository's `gh-pages` branch.
 
-- First, you need to configure [[#configure-gh-pages|GitHub Pages]] (once).
+- First, you need to configure [GitHub Pages](#configure-github-pages) (once).
 - Then, to deploy the current branch to your personal GitHub website so that others can take a look at:
 ```bash
 mkdocs gh-deploy
@@ -90,13 +90,13 @@ There is also a [*GitHub Action*](https://github.com/LoopKit/loopdocs/blob/maste
 
 Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
 
-#### Configure GH Pages
+#### Configure GitHub Pages
 
 The **first** thing you need to do is **configure** your fork of **loopdocs** repository (**once**) so that whenever `gh-pages` is pushed it is automatically deployed to your personal GitHub website. Here is how.
 
 Open **your** fork of **loopdocs** on Github: `https://github.com/YOUR_GITHUB_USERNAME_HERE/loopdocs`
 
-1. Click  the **`"⚙️ Settings"`** tab (last one on the right)
+1. Click  the ⚙️ **`"Settings"`** tab (last one on the right)
 2. Click **`Pages`** located under the `Code and Automation` section
 3. In the **`Source`** field, select **`Deploy from a Branch`** 
 4. **First** drop-down under the **`Branch`** section: Select  **`gh-pages`**
@@ -288,7 +288,7 @@ Finding the best approach, the one that works, requires trial and error.
 These rules to improve automatic translation with Google Translate comes with pluses and minuses:
 - Drawbacks: 
     - Markdown is a bit less readable and more sprinkled with *HTML*.
-    - Need to [deploy the branch](#preview-changes-on-a-public-website) to a to a **public** website visible to [Google Translate](https://translate.google.com)
+    - Need to [deploy the branch](#preview-changes-with-github-pages) to a to a **public** website visible to [Google Translate](https://translate.google.com)
 - Pluses: 
     - One single source and many potential translations
 
