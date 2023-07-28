@@ -278,6 +278,10 @@ The automatic translation splits the sentence into 2 parts, one before and one a
   When the untranslated `text` is preceded and/or followed by other words, these will remove them from the translation. Remember untranslated text as non-existent, really!
     > ❌ **Incorrect Translation**:  `*<span translate="no">Loop 3</span>* or newer`
     > ✅ **Improved Translation** `*<span translate="no">Loop 3</span>*&nbsp; or newer`
+- Replace possessive apostrophe (**`'s`**) with the equivalent HTML entity **(`&#39;s`)**.  
+    For instance, to prevent GT from translating `Tidepool` followed by a possessive apostrophe like in this sentence where `Tidepool` won't be translated but the rest of the text will, including the possessive apostrophe.    
+    > ❌ **Incorrect Translation**:  `To use Tidepool's services`
+    > ✅ **Improved Translation** `To use Tidepool&#39;s services`
 
 Finding the best approach, the one that works, requires trial and error.
 
