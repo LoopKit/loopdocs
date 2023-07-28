@@ -46,6 +46,7 @@ markdown_extensions:
     - attr_list
     - pymdownx.arithmatex:
           generic: true
+    - pymdownx.details
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji 
         emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -106,6 +107,7 @@ nav:
     - 'Meet the Community': 'build/step12.md'
 - Browser Build:
     - 'GitHub Build Overview': gh-actions/gh-overview.md
+    - 'GitHub First-Time - Try Stuff': gh-actions/gh-try-stuff.md
     - 'GitHub Quick-Start': gh-actions/gh-quick-start.md
     - 'GitHub First-Time': gh-actions/gh-first-time.md
     - 'GitHub Deploy': gh-actions/gh-deploy.md
