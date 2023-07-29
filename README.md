@@ -265,7 +265,7 @@ To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) fro
 When using the `<span translate="no">` element, make sure to review the translated output to ensure it retains the correct context and formatting.  
 You can also refer to the above flowchart diagram for a visual representation of the conditional text transformation rules.
 
-##### When Rules Fail
+#### When Rules Fail
 
 Using `<span translate="no">text</span>`, backticks (`` `text` ``) or code (`<code>text</code>`) has a drawback and does not work every time.  
 The automatic translation splits the sentence into 2 parts, one before and one after the non translated text, and can sometimes:
@@ -288,14 +288,14 @@ The automatic translation splits the sentence into 2 parts, one before and one a
   > ❌ **Incorrect Translation**: `it is tied to *Loop* runs and *Nightscout* upload events`  
   > ✅ **Improved Translation**: `it is tied to <span>*Loop* runs</span>` and *Nightscout* upload events`
 - **Break a complex  sentence into** several **simpler sentences**.  
-  You can use this when the previous approaches did not work.
-- Add a **non-breakable space** (`&nbsp;`) **before and/or after the `text`** to compensate for the spaces missing around the `text` that Google Translates removes from the translation.
-  When the untranslated `text` is preceded and/or followed by other words, these will remove them from the translation. Remember untranslated text as non-existent, really!
-    > ❌ **Incorrect Translation**:  `*<span translate="no">Loop 3</span>* or newer`
+  You can use this if the previous approaches did not work.
+- Add an **unbreakable space** (`&nbsp;`) **before and/or after the `text`** to compensate for the missing spaces around the `text` that *Google Translate* removes from the translation.
+  If the untranslated `text` is preceded and/or followed by other words, those spaces will be removed them from the translation. Remember, untranslated text is treated as  non-existent!
+    > ❌ **Incorrect Translation**:  `*<span translate="no">Loop 3</span>* or newer`  
     > ✅ **Improved Translation** `*<span translate="no">Loop 3</span>*&nbsp; or newer`
-- Replace possessive apostrophe (**`'s`**) with the equivalent HTML entity **(`&#39;s`)**.  
-    For instance, to prevent GT from translating `Tidepool` followed by a possessive apostrophe like in this sentence where `Tidepool` won't be translated but the rest of the text will, including the possessive apostrophe.    
-    > ❌ **Incorrect Translation**:  `To use Tidepool's services`
+- Replace **possessive apostrophe** (**`'s`**) with the equivalent HTML entity **(`&#39;s`)**.  
+    For example, to prevent the automatic translation of `Tidepool` followed by a possessive apostrophe, as in this sentence, where `Tidepool` is not translated, but the rest of the text, including the possessive apostrophe, is.    
+    > ❌ **Incorrect Translation**:  `To use Tidepool's services`  
     > ✅ **Improved Translation** `To use Tidepool&#39;s services`
 
 Finding the best approach, the one that works, requires trial and error.
