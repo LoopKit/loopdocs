@@ -42,29 +42,33 @@ For any box showing a `>` click on the title row to display or hide the details.
 
 * **This First-Time page is a work in progress; not every Summary of this Section has been filled out - some are blank**
 
-* **It is for playing with ideas and letting folks on Slack throw darts**
-
 The instructions for building Loop with a Browser using GitHub Actions can appear overwhelming when every step is fully detailed including graphics.
 
-There is an automatic table of contents (TOC) for this page (look on the right side of your browser). If your browser doesn't show that, tap on the hamburger menu (upper left) and then this page name to see the TOC for the page.
+For some sections (where appropriate):
 
-## How to Use This Page
+* There is a "Summary for this Section" row visible
+    * If desired, click on the row to view the summary
+    * If the summary is sufficient for you to complete the task, the last item in the summary "box" is a link to move you to the next section on this page
+* Many will want the full details found below the summary
+    * You can choose to open (or close) the summary in any section
 
-There are summary boxes found at appropriate points below. If desired, click on `>` to view the summary of steps detailed in the section. 
+LoopDocs provides an automatic table of contents (TOC) for each page (look on the right side of your browser). If your browser doesn't show the TOC, tap on the hamburger menu (upper left) and then this page name to see the TOC.
 
-If the summary is sufficient for you to complete the task, the last item in the summary "box" is a link to move you to the next section on this page. See the line that begins with Skip ahead to . . .
+If you prefer the sparse instructions without the details, right click on the link below:
+
+* [LoopWorkspace instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
 
 ## Prerequisites
 
 ??? abstract "Summary for this Section"
     The prerequisites are:
 
-    * A [GitHub account](https://github.com/signup)
-        * The free level comes with plenty of storage and free compute time to build loop, multiple times a day
     * A paid [Apple Developer account](https://developer.apple.com)
         * The cost is $99 per year
+    * A [GitHub account](https://github.com/signup)
+        * The free level comes with plenty of storage and free compute time to build loop, multiple times a day
 
-    Skip ahead to [New Terms with GitHub Build](#new-terms-with-github-build)
+    To skip the detailed section, click on [New Terms with GitHub Build](#new-terms-with-github-build)
 
 #### Build Loop
 
@@ -75,7 +79,7 @@ There are only two prerequisites to build Loop with this method.
 
 #### Install Loop
 
-You will need TestFlight, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md). You will install Loop on that phone using the TestFlight app.
+You will need the TestFlight app, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md) in order to install Loop.
 
 #### Use Loop
 
@@ -85,8 +89,9 @@ For the initial steps, you'll be going back and forth between GitHub and Apple D
 
 ## New Terms with GitHub Build
 
-??? abstract "Summary for this Section"
-    There are a lot of new terms - you can read details about what they are (before you start), or just skip ahead to [Save Your Information](#save-your-information)
+A number of **terms** used with GitHub Build may be new and unfamiliar. Many of these terms have tooltips.
+
+ You can read details about them or skip ahead to [Save Your Information](#save-your-information).
 
 There are a number of terms that may seem unfamiliar with the GitHub Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.
 
@@ -136,7 +141,7 @@ There is no summary box here - everyone needs to read this entire section!
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
 !!! info "A Note about Capitalization and Spaces"
-    In places, you will be told to give something a name like FastLane API Key or FastLane Access Token. Please copy from the docs to use those exact names.
+    In places, you will be told to give something a name like "`FastLane API Key`" or "`FastLane Access Token`". Please copy from the docs to use those exact names.
 
     The <code>Secrets</code> that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
 
@@ -159,7 +164,7 @@ There is no summary box here - everyone needs to read this entire section!
     * Be sure to save the 6 <code>Secrets</code> in a text file using a text editor
         - Do **NOT** use a smart editor, which might auto-correct and change case, because these <code>Secrets</code> are case sensitive
     
-    If you already have usernames and passwords saved, you can skip ahead to [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
+    To skip the detailed section, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
 
 The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the <code>Secrets</code> for your LoopWorkspace fork, so they are listed twice in the list below.
 
@@ -200,10 +205,10 @@ The list below indicates what you need to record (save digitally so you can copy
 
     1. Sign in to the [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
     1. Copy the Team ID from the upper right of the screen. Record this as your `TEAMID`.
-    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: "FastLane API Key".
+    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: "`FastLane API Key`".
     1. Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
     1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
-    1. Download the API key itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
+    1. Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
     To skip the detailed section, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
 
@@ -234,10 +239,10 @@ If you do not already have a paid Apple Developer account, you need to purchase 
 
 ### Generate `API Key`
 
-!!! info "Need a Paid Apple Developer Account Set Up to Generate the API Key"
-    You cannot generate the API Key until you have the paid Apple Developer account set up.
+!!! info "Need a Paid Apple Developer Account Set Up to Generate the `API Key`"
+    You cannot generate the `API Key` until you have the paid Apple Developer account set up.
 
-    If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
+    If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) and [Create `GitHub Personal Access Token`](#create-github-personal-access-token)), but you will need to pause at [Configure Secrets](#configure-secrets).
 
 !!! abstract "Generate `API Key` and Collect all Four `Apple Secrets`"
     This section will walk you through the steps required to gather or create these parameters.
@@ -246,13 +251,13 @@ If you do not already have a paid Apple Developer account, you need to purchase 
     |---------|---------|
     |<code>TEAMID</code>|This 10-character identifier is associated with your Apple Developer ID and never changes|
     |<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your Apple Developer ID and never changes|
-    |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an API key in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
-    |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the API key - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
+    |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an `API Key` in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
+    |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the `API Key` - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
     
     Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
 
 
-1. Open this link: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
+1. Right click to open this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
     * Click the `Keys` tab
         * If this is your first time here, there will be a dialog for you to follow:
 
@@ -314,14 +319,15 @@ The `Keys` screen is seen again with the additional content similar to that show
 
 ### Do Not Confuse Your Keys
 
-!!! danger "API Key vs APN Key"
-    If you use [Remote Commands with Nightscout](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
+!!! danger "`API Key` vs `APN Key`"
+    If you use [Remote Commands with `Nightscout`](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
-    The Secrets for building with GitHub use the API Key.
+    The Secrets for building with GitHub use the `API Key`.
 
-    The config vars for Nightscout use the APN Key.
+    The config vars for `Nightscout` use the `APN Key`.
 
-    * If you are using remote commands with Nightscout and building with the GitHub build, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your Nightscout site or the remote commands will not work.
+    * If you are using remote commands with `Nightscout` and building with the GitHub build, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your `Nightscout` site or the remote commands will not work.
+    * This is true for using `Nightscout` directly or using LoopCaregiver.
 
 ### Done with Apple Secrets
 
@@ -372,7 +378,7 @@ The free level comes with plenty of storage and compute time to build Loop.
     * Click "Generate token"
     * Copy the token and record it. It will be used below as `GH_PAT`
 
-    Read the details below or skip ahead to [Make up a Password](#make-up-a-password).
+    To skip the detailed section, click on [Make up a Password](#make-up-a-password).
 
 
 You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
@@ -419,7 +425,7 @@ The first time you build with the GitHub Browser Build method for any DIY app, y
 
     Once created, you will not take any direct actions with this repository; it needs to be there for the GitHub to use as you progress through the steps.
 
-    Read the details below or skip ahead to [Fork LoopWorkspace](#fork-loopworkspace)
+    To skip the detailed section, click on [Fork LoopWorkspace](#fork-loopworkspace)
 
 
 Open your github.com URL (this is `https://github.com/username`), where you replace `username` with the name you chose above.
@@ -461,7 +467,7 @@ You are done with this part of the setup.
 ??? abstract "Summary for this Section"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
 
-    Read the details below or skip ahead to [Configure <code>Secrets</code>](#configure-secrets)
+    To skip the detailed section, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 
 !!! warning "Existing Fork"
@@ -483,6 +489,9 @@ You are done with this part of the setup.
 ### Successful Fork
 
 ??? abstract "Summary for this Section"
+    summary goes here:
+
+    To skip the detailed section, click on ADD LINK HERE
 
 After creating the <span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
@@ -508,6 +517,9 @@ Carefully compare your screen to the graphic below paying attention to the highl
 ## Configure <code>Secrets</code>
 
 ??? abstract "Summary for this Section"
+    summary goes here:
+
+    To skip the detailed section, click on ADD LINK HERE
 
 !!! tip "<code>Secrets</code> can be used for Other Apps"
     * There are 6 <span class="notranslate">Secrets</span> that must be added to your fork of `LoopWorkspace`
@@ -615,9 +627,6 @@ The `workflows` are now displayed: look at the list on the left side as shown in
 
 ## Validate <code>Secrets</code>
 
-??? abstract "Summary for this Section"
-    There are no details for this section yet (hence no summary and no skip ahead).
-
 This step checks that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
 This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate <code>Secrets</code>".
@@ -625,7 +634,9 @@ This will be updated soon, but for now - follow the instructions under "Add Iden
 ## Add Identifiers for Loop
 
 ??? abstract "Summary for this Section"
+    summary goes here:
 
+    To skip the detailed section, click on ADD LINK HERE
 
 Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, there is an <code>Actions</code> tab. If you have used <code>Actions</code> on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
 
@@ -657,6 +668,9 @@ The `Add Identifier` <span class=notranslate>Action</span> should complete (succ
 ## Configure Identifiers for Loop
 
 ??? abstract "Summary for this Section"
+    summary goes here:
+
+    To skip the detailed section, click on ADD LINK HERE
 
 ### Create App Group
 
@@ -780,7 +794,9 @@ The full list of Identifiers should be displayed again.
 ## Create Loop App in App Store Connect
 
 ??? abstract "Summary for this Section"
+    summary goes here:
 
+    To skip the detailed section, click on ADD LINK HERE
 
 If you have created a `Loop app` in *App Store Connect* before, you can skip this section.
 
@@ -860,7 +876,9 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 ## Create Certificates
 
 ??? abstract "Summary for this Section"
+    summary goes here:
 
+    To skip the detailed section, click on ADD LINK HERE
 
 Refer to the graphic below for the numbered steps:
 
@@ -881,6 +899,9 @@ Refer to the graphic below for the numbered steps:
 ## Build Loop
 
 ??? abstract "Summary for this Section"
+    summary goes here:
+
+    To skip the detailed section, click on ADD LINK HERE
 
 Refer to the graphic below for the first four steps:
 

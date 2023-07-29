@@ -7,23 +7,25 @@
 ### Advantages of GitHub Build
 
 * Mac computer is not required
-* Mac computer or PC or tablet are all fine for GitHub build
+* Mac computer or PC or tablet are fine for GitHub build
 * Xcode is not required
     * The time required for the initial setup for GitHub may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
-* Updates take a few minutes of your time to start
+* Starting updates take a few minutes of your time
 
 ### Disadvantages of GitHub Build
 
-* After starting the GitHub Build, it takes about an hour for the app to be built and appear in the TestFlight app on the Loop phone, where it can be installed
-* Code customization can be more tedious to set up but is easy to maintain
+* After you start GitHub Build, the automatic process takes about an hour
+    * You recieve an email indicating success (or failure)
+    * Loop appears in the TestFlight app on the Loop phone, where it can be installed in seconds
+* If you want a personalized code customization (rather than a prepared one), it can be more tedious to set up but is easy to maintain
     * Frequently used customizations are prepared for you to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
     * Personalized customization instructions are documented at [Customize with GitHub](../gh-actions/gh-customize.md)
 
 ## Requirements
 
-**Loop 3 requires iOS 15.1 or higher**
+**Loop 3 requires iOS 15.1 or higher. Nightscout as a CGM only works with iOS 16 and higher.**
 
-The requirements for building and using the Loop app with the GitHub Build Actions method are given below.
+The requirements for building and using the Loop app with the GitHub Build method are given below.
 
 1. [Compatible iPhone/iPod Touch](../build/step2.md)
 1. [Compatible Pump](../build/step3.md)
