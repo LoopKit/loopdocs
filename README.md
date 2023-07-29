@@ -85,7 +85,7 @@ Optionally, you can share the preview with others by uploading them to your Gith
 mkdocs gh-deploy
 ```
 
-There is also a [*GitHub Action*](https://github.com/LoopKit/loopdocs/blob/master/.github/workflows/publish.yml) that automatically builds and deploys the doc each time it the `master` branch is pushed to the repository.  
+There is also a [*GitHub Action*](.github/workflows/publish.yml) that automatically builds and deploys the doc each time it the `master` branch is pushed to the repository.  
 ℹ️ If you deployed your current branch with `mkdocs gh-deploy`, then pushed  `master` to the repository  afterward, this will automatically deploy `master` and override your previous deployment.
 
 Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
