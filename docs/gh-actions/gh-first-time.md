@@ -372,7 +372,7 @@ The free level comes with plenty of storage and compute time to build Loop.
     * Click "Generate token"
     * Copy the token and record it. It will be used below as `GH_PAT`
 
-    Skip ahead to [Make up a Password](#make-up-a-password).
+    Read the details below or skip ahead to [Make up a Password](#make-up-a-password).
 
 
 You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
@@ -413,6 +413,14 @@ The first time you build with the GitHub Browser Build method for any DIY app, y
 ### Create Match-Secrets
 
 ??? abstract "Summary for this Section"
+    The creation of the <code>Match-Secrets</code> repository is a common step for all GitHub Browser Builds; do this step only once. You must be logged into your GitHub account.
+
+    (Right click on link) to create a [new empty repository](https://github.com/new) titled <code>Match-Secrets</code>. It should be private.
+
+    Once created, you will not take any direct actions with this repository; it needs to be there for the GitHub to use as you progress through the steps.
+
+    Read the details below or skip ahead to [Fork LoopWorkspace](#fork-loopworkspace)
+
 
 Open your github.com URL (this is `https://github.com/username`), where you replace `username` with the name you chose above.
 
@@ -451,6 +459,10 @@ You are done with this part of the setup.
 ### Fork LoopWorkspace
 
 ??? abstract "Summary for this Section"
+    Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
+
+    Read the details below or skip ahead to [Configure <code>Secrets</code>](#configure-secrets)
+
 
 !!! warning "Existing Fork"
     Some people may already have a fork of `LoopWorkspace`. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do, and follow the appropriate link back to these instructions.
@@ -584,15 +596,9 @@ Once all six <code>Secrets</code> have been added to your `LoopWorkspace`, you a
 !!! tip "Time for a Break?"
     :fontawesome-regular-circle-pause: This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-## Validate <code>Secrets</code>
-
-??? abstract "Summary for this Section"
-
-This step checks that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
-
-This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate <code>Secrets</code>".
-
 ### First Use of Actions Tab
+
+Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, there is an <code>Actions</code> tab. If you have used <code>Actions</code> on this repository before, skip ahead to [Validate <code>Secrets</code>](#validate-secrets).
 
 Click on the `Actions` tab of your `LoopWorkspace` repository.
 
@@ -606,6 +612,15 @@ The `workflows` are now displayed: look at the list on the left side as shown in
 
 ![workflows displayed](img/gh-workflows-enabled.png){width="700"}
 {align="center"}
+
+## Validate <code>Secrets</code>
+
+??? abstract "Summary for this Section"
+    There are no details for this section yet (hence no summary and no skip ahead).
+
+This step checks that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
+
+This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate <code>Secrets</code>".
 
 ## Add Identifiers for Loop
 
