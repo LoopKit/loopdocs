@@ -61,6 +61,8 @@ Once [installed](#install), you can preview the doc locally as you edit.
 
 ### Preview Changes
 
+#### Preview Changes Locally
+
 To preview your work as you edit:
 
 - Run **`mkdocs serve`** locally and keep it running:
@@ -69,13 +71,58 @@ To preview your work as you edit:
   mkdocs serve
   ```
     By default, this runs a local web server that hosts the documentation at http://127.0.0.1:8000/ .
-* Preview docs in your Web browser. Most changes will update automatically as you edit. Configuration and navigation changes will require restarting the *mkdocs* server `mkdocs* serve`.
-* Optionally, you can share the preview with others by uploading them to your repository's `gh-pages` branch
-  ```bash
-  mkdocs gh-deploy
-  ```
+* Preview docs in your Web browser.  
+  Most changes will update automatically as you edit.  
+  Configuration and navigation changes will require restarting `mkdocs serve`.
 
-Note that the `master` branch will automatically be published to your personal repository (`gh-pages`) by *Github actions* when it is pushed to the *GitHub* server.
+#### Preview Changes with GitHub Pages
+
+In this section we use `deploy` or `publish` interchangeably.
+
+**What** is GitHub Pages?  
+> **GitHub Pages** is a static site hosting service provided by GitHub that allows users to publish web pages directly from their GitHub repositories.
+> It utilizes the repository content to automatically generate and serve web pages.
+
+It is disabled by default and can be enabled per repository.
+
+**How** does it work?  
+> Whenever `gh-pages`branch is pushed to your repository, *GitHub Pages* will automatically deploy it to your personal GitHub website:  
+     `https://YOUR_GITHUB_USERNAME_HERE.github.io/loopdocs`
+
+**Use** GitHub Pages to share a preview of `loopdocs`:   
+You can share the preview with others by building the site from your working branch and uploading the result to the `gh-pages` branch of your GitHub repository. Here is how:
+
+1. Configure [GitHub Pages](#configure-github-pages) **once** (See next section)
+2. Jump on the branch you want to share for preview
+    ```shell
+    git switch my_branch
+    ```
+1. Deploy this branch to your personal GitHub website so that others can take a look at:
+    ```shell
+    mkdocs gh-deploy
+    ```
+
+**Issue:**  
+ℹ️ If you have deployed your current branch with `mkdocs gh-deploy` and then pushed  `master` to the repository, this will automatically deploy `master` and override your previous deployment.
+The reason is simple, *Loopdocs* also has a [*GitHub Action*](.github/workflows/publish.yml) that automatically builds and deploys the documentation every time the `master` branch is pushed to the repository.   
+The workaround is to redeploy your branch for preview with `mkdocs gh-deploy`.
+
+❗️ Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
+
+#### Configure GitHub Pages
+
+Open **your** **`loopdocs` repository** on Github: `https://github.com/YOUR_GITHUB_USERNAME_HERE/loopdocs`
+
+1. Click  the ⚙️ **`"Settings"`** tab (last one on the right)
+2. Click **`Pages`** located under the `Code and Automation` section
+3. In the **`Source`** field, select **`Deploy from a Branch`** 
+4. **First** drop-down under the **`Branch`** section: Select  **`gh-pages`**
+5. **Second** drop-down: Select **`"/(root)"`**
+6. Click **`Save`** 
+
+>    ![GitHub Pages Configuration](/img/gh_pages_config.png)
+
+
 
 ### Find Broken Links
 
@@ -108,7 +155,9 @@ There are still some **issues**, where text is translated whereas it should not,
 - **brand name**, **project/product name**, 
 
 To improve the automatic translation quality, please follow these rules when writing or updating the documentation. This will provide *Google Translate* with more context and enhance translation accuracy.
+
 #### Rules
+
 To prevent *Google Translate* from translating specific `text` items, we can mark them accordingly:
 The conditional text transformation rules are expressed in two forms, pseudo-code first followed by a visual diagram.
 
@@ -147,8 +196,12 @@ flowchart TD
     click H "#generic"
 ```
 
+If the automatic translation is still incorrect after applying these rules, [read this](#when-rules-fail).
+
 Now let's break down each step.
+
 #####  Entity
+
 Enclose each of the following `text` types with a **backtick** `` ` ``:
 - Key
 - Identifier
@@ -187,6 +240,7 @@ Error Message | `` `invalid curve name` ``         | `invalid curve name`
 If the `text` that you do not want to translate is not an [Entity](#entity), read on.
 
 ##### Name
+
 To prevent a name from being automatically translated, such as a **product** name, **project** name, or **brand** name, use emphasis (aka. italic) by surrounding `name` with a star (`*`) or an underscore (`_`), like so: **`*name*`**.
 
 **Examples**:
@@ -209,11 +263,49 @@ To prevent a `text` that is neither an [Entity](#entity) nor a [Name](#name) fro
 
 ⚠️ Do not apply this workaround without considering the above options (entity and name) first as it has a drawback. 
 When using the `<span translate="no">` element, make sure to review the translated output to ensure it retains the correct context and formatting.  
-You can also refer to the provided flowchart diagram for a visual representation of the conditional text transformation rules.
+You can also refer to the above flowchart diagram for a visual representation of the conditional text transformation rules.
 
-ℹ️ The disadvantage is that we split the sentence into 2 parts, one before and one after the ignored text. The automatic translation can sometimes get confused by this and treat them as 2 separate sentences to be translated independently.  
-To fix this, you may have to rewrite the sentence slightly, such as moving the `text` to the right end of the sentence.  
-This process may require some trial and error to find the best approach.
+##### When Rules Fail
+
+Using `<span translate="no">text</span>`, backticks (`` `text` ``) or code (`<code>text</code>`) has a drawback and does not work every time.  
+The automatic translation splits the sentence into 2 parts, one before and one after the non translated text, and can sometimes:
+-  get confused by this and treat them as 2 separate sentences to be translated independently.  
+- remove spaces around the untranslated `text`, (remember it no longer exists from *Google Translate* point of view)
+
+💡Here are some possible **workarounds**:
+
+- **Rewrite the sentence** slightly, such as moving the `text` to the left or right end of the sentence.   
+    > ❌ **Incorrect Translation**:    "The graphic below has `Show Prediction` turned off for Timeline"  
+    > ✅ **Improved Translation**: "`Show Prediction` for Timeline is turned off in the graphic below." 
+
+  Moving the untranslated text `Show Prediction` to the beginning of the sentence improves the translation in this case.
+- If the ***text* and surrounding words form a whole** that is not reflected in the automatic translation, wrap them in a `<span>` tag. This will prevent Google Translate from separating them (without preventing the translation).  
+  If the sentence is too short or does not provide enough context, *Google Translate* may get "lost" and decide to move the untranslated text to a place that makes absolutely no sense, such as  the end of the sentence.  
+  This is not a golden rule, of course.
+  ⚠️ Do not apply this blindly and systematically, because all depends on the context, so first look at the translation to apply it only where needed.
+  
+  Here is an **example** where it proved to be useful. We are materializing the fact that the words `loop` and `runs` are related.
+  > ❌ **Incorrect Translation**: `it is tied to *Loop* runs and *Nightscout* upload events`  
+  > ✅ **Improved Translation**: `it is tied to <span>*Loop* runs</span>` and *Nightscout* upload events`
+- **Break a complex  sentence into** several **simpler sentences**.  
+  You can use this when the previous approaches did not work.
+- Add a **non-breakable space** (`&nbsp;`) **before and/or after the `text`** to compensate for the spaces missing around the `text` that Google Translates removes from the translation.
+  When the untranslated `text` is preceded and/or followed by other words, these will remove them from the translation. Remember untranslated text as non-existent, really!
+    > ❌ **Incorrect Translation**:  `*<span translate="no">Loop 3</span>* or newer`
+    > ✅ **Improved Translation** `*<span translate="no">Loop 3</span>*&nbsp; or newer`
+- Replace possessive apostrophe (**`'s`**) with the equivalent HTML entity **(`&#39;s`)**.  
+    For instance, to prevent GT from translating `Tidepool` followed by a possessive apostrophe like in this sentence where `Tidepool` won't be translated but the rest of the text will, including the possessive apostrophe.    
+    > ❌ **Incorrect Translation**:  `To use Tidepool's services`
+    > ✅ **Improved Translation** `To use Tidepool&#39;s services`
+
+Finding the best approach, the one that works, requires trial and error.
+
+These rules to improve automatic translation with Google Translate comes with pluses and minuses:
+- Drawbacks: 
+    - Markdown is a bit less readable and more sprinkled with *HTML*.
+    - Need to [deploy the branch](#preview-changes-with-github-pages) to a to a **public** website visible to [Google Translate](https://translate.google.com)
+- Pluses: 
+    - One single source and many potential translations
 
 ### Links
 
