@@ -15,7 +15,7 @@
 ### Disadvantages of GitHub Build
 
 * After you start GitHub Build, the automatic process takes about an hour
-    * You recieve an email indicating success (or failure)
+    * You receive an email indicating success (or failure)
     * Loop appears in the TestFlight app on the Loop phone, where it can be installed in seconds
 * If you want a personalized code customization (rather than a prepared one), it can be more tedious to set up but is easy to maintain
     * Frequently used customizations are prepared for you to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
@@ -23,7 +23,8 @@
 
 ## Requirements
 
-**Loop 3 requires iOS 15.1 or higher. Nightscout as a CGM only works with iOS 16 and higher.**
+* **Loop 3 requires iOS 15.1 or higher.**
+* **Temporary: "`Nightscout as a CGM`" only works with iOS 16 and higher for released code (3.2.x); but with iOS 15 and iOS 16 for dev branch.**
 
 The requirements for building and using the Loop app with the GitHub Build method are given below.
 
