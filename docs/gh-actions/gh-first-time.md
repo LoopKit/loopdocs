@@ -48,9 +48,9 @@ For some sections (where appropriate):
 
 * There is a "Summary for this Section" row visible
     * If desired, click on the row to view the summary
-    * Look for the fast forward symbol :material-skip-forward: to skip past a segment of detailed instructions if you do not need them
+    * Sometimes the summary is all you need and you can use the fast forward symbol :material-skip-forward: to skip past that segment of detailed instructions
 * Many will want the full details found below the summary
-    * You can choose to open (or close) the summary in any section
+    * You choose to open (or close) the summary
 
 LoopDocs provides an automatic table of contents (TOC) for each page (look on the right side of your browser). If your browser doesn't show the TOC, tap on the hamburger menu (upper left) and then this page name to see the TOC.
 

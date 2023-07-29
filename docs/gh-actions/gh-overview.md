@@ -10,7 +10,7 @@
 * Mac computer or PC or tablet are fine for GitHub build
 * Xcode is not required
     * The time required for the initial setup for GitHub may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
-* Starting updates take a few minutes of your time
+* Starting an update takes a few minutes of your time
 
 ### Disadvantages of GitHub Build
 
