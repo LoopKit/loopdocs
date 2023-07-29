@@ -107,8 +107,6 @@ nav:
     - 'Meet the Community': 'build/step12.md'
 - Browser Build:
     - 'GitHub Build Overview': gh-actions/gh-overview.md
-    - 'GitHub First-Time - Try Stuff': gh-actions/gh-try-stuff.md
-    - 'GitHub Quick-Start': gh-actions/gh-quick-start.md
     - 'GitHub First-Time': gh-actions/gh-first-time.md
     - 'GitHub Deploy': gh-actions/gh-deploy.md
     - 'GitHub Update': gh-actions/gh-update.md
