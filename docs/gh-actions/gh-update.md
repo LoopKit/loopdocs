@@ -240,7 +240,25 @@ The graphics show the dev branch. If you want a different branch, just substitut
 
 ### One-Time Changes
 
-There were two changes in the dev branch that require special, one-time actions.
+Look in this section for one-time changes to the dev branch that require special, one-time actions. These are in reverse chronological order to make the most recent one easier to find.
+
+**26-July-2023**
+
+The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
+
+The table in LoopDocs (for main) will be updated after the next release.
+
+For those using dev, you must follow these one-time steps:
+
+1. Sync your fork to latest version of dev
+1. Run the Action for Add Identifiers (this adds "`LoopWidgetExtension`" to identifiers)
+    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+    * Click on the "`LoopWidgetExtension`" identifier
+    * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
+1. Run the Action for Create Certificates
+1. Run the Action for Build Loop
+
+**03-July-2023**
 
 1. Libre support was added to dev (03 July 2023) using the LibreTransmitter code
     * This requires (one-time) that the `Actions` for `2. Add Identifiers` and `3. Create Certificates` be run before attempting `4. Build Loop`
