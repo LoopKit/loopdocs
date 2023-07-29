@@ -1,32 +1,23 @@
 ## Build Loop with a Browser
-!!! info "`Github Build` = `Browser-Build`"
-    In this section, we use `GitHub build` and `Browser build` interchangeably to mean the same thing, i.e. building *Loop* with a Web browser.
+!!! info "`Github build` = `Browser `build`"
+    In this section, `GitHub Build` and `Browser Build` mean the same thing, i.e. building *Loop* with a Web browser.
 
-The new GitHub build method is available with the release of Loop 3, as well as for development versions.
-
-* Installation on your phone is via TestFlight
-* This can be used by those who don't own a Mac but want to Loop
-* The GitHub build method can be used even if you do use a Mac - the two methods do not interfere with each other
-
-TestFlight is the only method available for installation to a phone when using the GitHub build method, but it can also be used as a remote build option with the Mac-Xcode build method - see [TestFlight from Xcode](../build/testflight-xcode.md).
-
-## Pros and Cons
+`GitHub build` can be used with Loop 3 and development versions.
 
 ### Advantages of GitHub Build
 
 * Mac computer is not required
-* Most recent version of Xcode is not required
-    * No more updating macOS then updating Xcode for certain iOS upgrades
-    * The time required for the initial setup for GitHub may take less time than one macOS and Xcode version update
-* Updates take a few minutes of your time to start and are ready to install on your phone in about an hour
+* Mac computer or PC or tablet are all fine for GitHub build
+* Xcode is not required
+    * The time required for the initial setup for GitHub may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
+* Updates take a few minutes of your time to start
 
-### Cons
+### Disadvantages of GitHub Build
 
-The customization process can be more tedious to set up but then easy to maintain (for personalized customizations).
-
-* Instructions are found at [Customize with GitHub](../gh-actions/gh-customize.md)
-* Frequently used customizations are prepared for you to copy and paste into build_loop.yml
-    * [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
+* After starting the GitHub Build, it takes about an hour for the app to be built and appear in the TestFlight app on the Loop phone, where it can be installed
+* Code customization can be more tedious to set up but is easy to maintain
+    * Frequently used customizations are prepared for you to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
+    * Personalized customization instructions are documented at [Customize with GitHub](../gh-actions/gh-customize.md)
 
 ## Requirements
 
@@ -38,7 +29,7 @@ The requirements for building and using the Loop app with the GitHub Build Actio
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
-1. Free GitHub account (instructions included in [First-Time with GitHub Actions](../gh-actions/gh-first-time.md#new-github-account))
+1. Free GitHub account (instructions included in [First-Time with GitHub Actions](../gh-actions/gh-first-time.md))
 1. [Apple Developer Membership](../build/step6.md)
     * Must be a paid developer account
     * If building for a family member, review this section:
@@ -50,11 +41,7 @@ The requirements for building and using the Loop app with the GitHub Build Actio
 
 There are a number of steps that must be completed the first time you use this method.
 
-* Shorter Version of Instructions with links to Verbose Sections
-    * [GitHub Quick-Start](../gh-actions/gh-quick-start.md)
-* Verbose Version of Instructions
-    * [GitHub First-Time](../gh-actions/gh-first-time.md)
-    * Each verbose section end with a link to the appropriate shorter version page
+* [GitHub First-Time](../gh-actions/gh-first-time.md)
 
 ## Deploy and Updates
 
