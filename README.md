@@ -77,24 +77,41 @@ To preview your work as you edit:
 
 #### Preview Changes with GitHub Pages
 
-Optionally, you can share the preview with others by uploading them to your Github repository's `gh-pages` branch.
+In this section we use `deploy` or `publish` interchangeably.
 
-- First, you need to configure [GitHub Pages](#configure-github-pages) (once).
-- Then, to deploy the current branch to your personal GitHub website so that others can take a look at:
-```bash
-mkdocs gh-deploy
-```
+**What** is GitHub Pages?  
+> **GitHub Pages** is a static site hosting service provided by GitHub that allows users to publish web pages directly from their GitHub repositories.
+> It utilizes the repository content to automatically generate and serve web pages.
 
-There is also a [*GitHub Action*](.github/workflows/publish.yml) that automatically builds and deploys the doc each time it the `master` branch is pushed to the repository.  
-ℹ️ If you deployed your current branch with `mkdocs gh-deploy`, then pushed  `master` to the repository  afterward, this will automatically deploy `master` and override your previous deployment.
+It is disabled by default and can be enabled per repository.
 
-Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
+**How** does it work?  
+> Whenever `gh-pages`branch is pushed to your repository, *GitHub Pages* will automatically deploy it to your personal GitHub website:  
+     `https://YOUR_GITHUB_USERNAME_HERE.github.io/loopdocs`
+
+**Use** GitHub Pages to share a preview of `loopdocs`:   
+You can share the preview with others by building the site from your working branch and uploading the result to the `gh-pages` branch of your GitHub repository. Here is how:
+
+1. Configure [GitHub Pages](#configure-github-pages) **once** (See next section)
+2. Jump on the branch you want to share for preview
+    ```shell
+    git switch my_branch
+    ```
+1. Deploy this branch to your personal GitHub website so that others can take a look at:
+    ```shell
+    mkdocs gh-deploy
+    ```
+
+**Issue:**  
+ℹ️ If you have deployed your current branch with `mkdocs gh-deploy` and then pushed  `master` to the repository, this will automatically deploy `master` and override your previous deployment.
+The reason is simple, *Loopdocs* also has a [*GitHub Action*](.github/workflows/publish.yml) that automatically builds and deploys the documentation every time the `master` branch is pushed to the repository.   
+The workaround is to redeploy your branch for preview with `mkdocs gh-deploy`.
+
+❗️ Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
 
 #### Configure GitHub Pages
 
-The **first** thing you need to do is **configure** your fork of **loopdocs** repository (**once**) so that whenever `gh-pages` is pushed it is automatically deployed to your personal GitHub website. Here is how.
-
-Open **your** fork of **loopdocs** on Github: `https://github.com/YOUR_GITHUB_USERNAME_HERE/loopdocs`
+Open **your** **`loopdocs` repository** on Github: `https://github.com/YOUR_GITHUB_USERNAME_HERE/loopdocs`
 
 1. Click  the ⚙️ **`"Settings"`** tab (last one on the right)
 2. Click **`Pages`** located under the `Code and Automation` section
@@ -105,8 +122,6 @@ Open **your** fork of **loopdocs** on Github: `https://github.com/YOUR_GITHUB_US
 
 >    ![GitHub Pages Configuration](/img/gh_pages_config.png)
 
-Whenever `gh-pages`branch is pushed to your repository, *GitHub Pages* will automatically deploy it to your personal GitHub website:  
-     `https://YOUR_GITHUB_USERNAME_HERE.github.io/loopdocs`
 
 
 ### Find Broken Links
