@@ -2723,7 +2723,23 @@
 </ol>
 </div>
 <h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There were two changes in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that require special, one-time actions.</p>
+<p>Look in this section for one-time changes to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that require special, one-time actions. These are in reverse chronological order to make the most recent one easier to find.</p>
+<p><strong>26-July-2023</strong></p>
+<p>The <code>bundle ID</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>".</p>
+<p>The table in LoopDocs (for main) will be updated after the next release.</p>
+<p>For those using dev, you must follow these one-time steps:</p>
+<ol>
+<li>Sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to latest version of dev</li>
+<li>Run the Action for Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (this adds "<code>LoopWidgetExtension</code>" to identifiers)<ul>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
+<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
+<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
+</ul>
+</li>
+<li>Run the Action for Create Certificates</li>
+<li>Run the Action for Build Loop</li>
+</ol>
+<p><strong>03-July-2023</strong></p>
 <ol>
 <li>Libre support was added to dev (03 July 2023) using the LibreTransmitter code<ul>
 <li>This requires (one-time) that the <code>Actions</code> for <code>2. Add Identifiers</code> and <code>3. Create Certificates</code> be run before attempting <code>4. Build Loop</code></li>
