@@ -15,7 +15,7 @@ If we assume that it's a "normal" day (basals are close to correct, illness is n
 
 ## Glucose Change Display
 
-Let's take a look at an example day using the screenshot below.  The graph at the top of your ICE page represents that upward pressure Loop expects from the food entries.  The predicted ICE is shown as grey bars.  As a meal is tracked by Loop, you'll see green bars of observed ICE.
+Let's take a look at an example day using the screenshot below.  The graph at the top of your Carbohydrates page represents that upward pressure Loop expects from the food entries.  The predicted ICE is shown as grey bars.  As a meal is tracked by Loop, you'll see green bars of observed ICE.
 
 ![img/ice-3.png](img/ice-3.png){width="700"}
 {align="center"}
@@ -46,6 +46,6 @@ For example, the biggest weakness I had in this (and suspected it even as I did 
 ![img/ice-6.jpg](img/ice-6.jpg){width="700"}
 {align="center"}
 
-So remember to check your ICE page at the end of a meal's absorption.  By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.
+So remember to check your Carbohydrates page at the end of a meal's absorption.  By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.
 
 Side note:  remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that Loop doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed to ICE when they really aren't food-related.  In those cases, address the underlying cause and then use the ICE pages when you've come back to "normal".
