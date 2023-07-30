@@ -13,7 +13,7 @@ As we all know, this list can be long but, on "normal" days FOOD will be the sin
 
 If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), Loop will expect most of the UPWARD pressure on BGs are from food.  Loop is calling that upward pressure Insulin Counteraction Effect (ICE).  This is a pretty reasonable assumption so let's use that for the rest of this discussion.
 
-## ICE display
+## Glucose Change Display
 
 Let's take a look at an example day using the screenshot below.  The graph at the top of your ICE page represents that upward pressure Loop expects from the food entries.  The predicted ICE is shown as grey bars.  As a meal is tracked by Loop, you'll see green bars of observed ICE.
 
@@ -39,7 +39,7 @@ Watching what was going on a little later...BGs were rising at a decent clip and
 ![img/ice-5.png](img/ice-5.png){width="500"}
 {align="center"}
 
-So, how can I use the ICE info to make this meal better?  I can look at the observed ICE information and the observed carb entry Loop has recorded to adjust my insulin bolusing the next time we eat this meal.
+So, how can I use the "Glucose Change" to make this meal better?  I can look at the observed ICE information and the observed carb entry Loop has recorded to adjust my insulin bolusing the next time we eat this meal.
 
 For example, the biggest weakness I had in this (and suspected it even as I did the initial bolus) was that I underestimated the sauce's fast carbs.  I can see this in the observed ICE graph having the early green peaks after the meal, and in the way that the observed carb distribution was more like 7:2 vs my original guess of 8:1 (slow:fast carbs).  Overall, it appears that I guess on overall carb content pretty closely (90g vs. 89g observed).  Next time we have General Tso's chicken, I will likely bolus it as 70g at 5 hours and 20g at 2 hours.
 
