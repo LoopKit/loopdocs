@@ -217,7 +217,7 @@ If you see this phrase, the `fastlane` package that is utilized during the `3. C
 To fix this error:
 
 - Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
-  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup GitHub: Create GH_PAT](gh-first-time.md#create-gh_pat)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup GitHub: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
