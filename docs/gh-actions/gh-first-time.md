@@ -543,11 +543,11 @@ Log into GitHub.
 
 #### Enter Each Secret
 
-Enter each of the <code>Secrets</code> found in [Save Your Information](#save-your-information).
+Enter each of the <code>Secrets</code> found in [Save Your Information](#save-your-information). You will enter the `Name` of each `Secret` and your value for each `Secret`.
 
-* Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit `Add Secret` to save it
-    * You can replace the value for any secret later - you just can't see what you entered before
-* If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which <code>Secrets</code> you need to fix
+* Once you save a secret value, you will not be able to view what you entered, so check carefully before you hit `Add Secret`
+    * You can replace the value for any secret later - but you can't view the saved value
+* If you make a mistake, the actions you take next will fail, but the error messages will identify which <code>Secrets</code> you need to fix
 * Confirm that your `TEAMID` is correct
     * If it is not, the intial Actions will succeed but Build Loop will fail and you will have some clean-up to do
 
