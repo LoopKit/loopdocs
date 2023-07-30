@@ -40,8 +40,6 @@ For any box showing a `>` click on the title row to display or hide the details.
 
 ## Build Loop using GitHub Actions
 
-* **This First-Time page is a work in progress; not every Summary of this Section has been filled out - some are blank**
-
 The instructions for building Loop with a Browser using GitHub Actions can appear overwhelming when every step is fully detailed including graphics.
 
 For some sections (where appropriate):
