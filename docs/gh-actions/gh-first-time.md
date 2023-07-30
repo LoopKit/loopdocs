@@ -1033,7 +1033,7 @@ Suggestions - choose one of these methods:
     * Review the graphic in the [Successful Fork](#successful-fork) section
         * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
     * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
-    * Continue with the [Create GH_PAT](#create-gh_pat) section
+    * Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
 * Delete that repository if it is from somewhere other than `LoopKit` or the fork you wanted to start with (which might have customizations that you want)
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
     * You just need to make sure that a repository called `LoopWorkspace` is no longer in your GitHub account
@@ -1067,8 +1067,8 @@ If coming here from the GitHub Errors page because you enter the wrong `TEAMID` 
 If you were just trying to clean up the identifiers, then follow these steps:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
-* If you did not complete [Find Loop Identifier](#find-loop-identifier) step, do it now
+* If you did not complete [Add or Review Configuration for Loop Identifier](#add-or-review-configuration-for-loop-identifier) step, do it now
 * Complete the [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
-* Continue with [Create Certificates](#create-certificates) and then [Build Loop](#build-loop_1)
+* Continue with [Create Certificates](#create-certificates) and then [Build Loop](#build-loop)
 
