@@ -1,6 +1,6 @@
-For any box showing a `>` click on the title row to display or hide the details.
+## Build Loop using GitHub Actions
 
-??? info "Time Estimate"
+??? info "`Time Estimate` (click to open/close)"
     - If you have never built Loop (allow up to one week elapsed time)
         * Requesting and getting an Apple Developer Account: 1-2 days
         * Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours
@@ -9,7 +9,7 @@ For any box showing a `>` click on the title row to display or hide the details.
     - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 2 hours
 
-??? abstract "Summary"
+??? abstract "`Page Summary` (click to open/close)"
     Once you have Apple Developer and GitHub accounts:
 
     * Apple: 
@@ -30,22 +30,19 @@ For any box showing a `>` click on the title row to display or hide the details.
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
 
-??? question "FAQs"
+??? question "`FAQs` (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
     - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explicit steps are provided at [GitHub Deploy: Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
     - **Can I still use my customizations?** Yes. [Customize with GitHub](gh-customize.md)
 
-
-## Build Loop using GitHub Actions
-
 The instructions for building Loop with a Browser using GitHub Actions can appear overwhelming when every step is fully detailed including graphics.
 
 For some sections (where appropriate):
 
-* There is a "Summary for this Section" row visible
-    * If desired, click on the row to view the summary
+* There is a "`Section Summary` (click to open/close)" row visible
+    * If desired, tap on the row to view the summary
     * Sometimes the summary is all you need and you can use the `skip forward` symbol :material-skip-forward: to skip past that segment of detailed instructions
 * Many will want the full details found below the summary
     * You choose to open (or close) the summary
@@ -144,7 +141,7 @@ Others terms need an expanded explanation. If reading about the new terms first 
 
 ## Save Six Secrets
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     You require 6 <code>Secrets</code> (alphanumeric items) to use the GitHub build method and if you use the GitHub method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you will use the same 6 <code>Secrets</code> for each app you build with this method. Each secret is indentified below by `ALL_CAPITAL_LETTER_NAMES`.
 
     * Four <code>Secrets</code> are from your Apple Account
@@ -188,7 +185,7 @@ The list below indicates what you need to record (save digitally so you can copy
 
 ### Collect the Four `Apple Secrets`
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     This step is common for all repositories that use GitHub Browser Build method; do this step only once. You will be saving 4 <code>Secrets</code> from your Apple Account in this step.
 
     1. Sign in to the [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
@@ -357,7 +354,7 @@ The free level comes with plenty of storage and compute time to build Loop.
 
 ### Create `GitHub Personal Access Token`
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     Log into your GitHub account to create a personal access token; this is one of two GitHub <code>Secrets</code> needed for your build.
 
     (Right click on link) to create a [new `personal access token`](https://github.com/settings/tokens/new):
@@ -408,7 +405,7 @@ The first time you build with the GitHub Browser Build method for any DIY app, y
 
 ### Create Match-Secrets
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     The creation of the <code>Match-Secrets</code> repository is a common step for all GitHub Browser Builds; do this step only once. You must be logged into your GitHub account.
 
     (Right click on link) to create a [new empty repository](https://github.com/new) titled <code>Match-Secrets</code>. It should be private.
@@ -454,7 +451,7 @@ You are done with this part of the setup.
 
 ### Fork LoopWorkspace
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
 
     [:material-skip-forward:](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
@@ -500,7 +497,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 ## Configure <code>Secrets</code>
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`. 
     
     * They are added once for a repository and work for all branches of that repository
@@ -624,7 +621,7 @@ The `workflows` are now displayed: look at the list on the left side as shown in
 
 ## Validate <code>Secrets</code>
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     This step validates most of your six <code>Secrets</code> and provides error messages if it detects an issue with one or more.
 
     1. Click on the "Actions" tab of your LoopWorkspace repository and enable workflows if needed
@@ -646,7 +643,7 @@ This will be updated soon, but for now
 
 ## <code>Add Identifiers</code>
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "2. Add Identifiers".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
@@ -685,7 +682,7 @@ Please read carefully to avoid confusion.
 
 ### Create App Group
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     [:material-skip-forward:](#previous-xcode-builders) If you have already built Loop via Xcode using this Apple ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
     1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
@@ -743,7 +740,7 @@ If you have built Loop using *Xcode*, then at least the Loop identifier will app
 
 ### Add or Review Configuration for Loop Identifier
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. A table was provided above that lists both `Names` and `Identifiers`. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.
 
     Note 2 - Depending on your build history, you may find some of the Identifiers are already configured - and you are just verifying the status; but in other cases, you will need to configure the Identifiers.
@@ -842,7 +839,7 @@ The full list of Identifiers should be displayed again.
 
 ## Create Loop App in App Store Connect
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
 
     1. Right click on the link [apps list](https://appstoreconnect.apple.com/apps) top open App Store Connect and click the blue "plus" icon to create a New App.
@@ -935,7 +932,7 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 ## `Create Certificates`
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
     1. On the left side, select "3. Create Certificates".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
@@ -961,7 +958,7 @@ Refer to the graphic below for the numbered steps:
 
 ## `Build Loop`
 
-??? abstract "Summary for this Section"
+??? abstract "`Section Summary` (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "4. Build Loop".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
