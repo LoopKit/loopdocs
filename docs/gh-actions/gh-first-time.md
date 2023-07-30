@@ -48,42 +48,32 @@ For some sections (where appropriate):
 
 * There is a "Summary for this Section" row visible
     * If desired, click on the row to view the summary
-    * Sometimes the summary is all you need and you can use the fast forward symbol :material-skip-forward: to skip past that segment of detailed instructions
+    * Sometimes the summary is all you need and you can use the `skip forward` symbol :material-skip-forward: to skip past that segment of detailed instructions
 * Many will want the full details found below the summary
     * You choose to open (or close) the summary
 
 LoopDocs provides an automatic table of contents (TOC) for each page (look on the right side of your browser). If your browser doesn't show the TOC, tap on the hamburger menu (upper left) and then this page name to see the TOC.
 
-If you prefer the sparse instructions without the details, right click on the link below:
+If you prefer sparse instructions without the details, right click on the link below:
 
-* [LoopWorkspace instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
+* [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
 
 ## Prerequisites
 
-??? abstract "Summary for this Section"
-    The prerequisites are:
+#### Prerequisites to Build Loop
 
-    * A paid [Apple Developer account](https://developer.apple.com)
-        * The cost is $99 per year
-    * A [GitHub account](https://github.com/signup)
-        * The free level comes with plenty of storage and free compute time to build loop, multiple times a day
+There are two prerequisites to build Loop using GitHub Browser Build.
 
-    :material-skip-forward: To skip the detailed instructions, click on [New Terms with GitHub Build](#new-terms-with-github-build)
-
-#### Build Loop
-
-There are only two prerequisites to build Loop with this method.
-
-1. Paid Apple Developer account
+1. Paid Apple Developer account ($99/year)
 1. Free GitHub account
 
-#### Install Loop
+#### Prerequisites to Install Loop
 
-You will need the TestFlight app, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md) in order to install Loop.
+To install Loop, you need the TestFlight app, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md).
 
-#### Use Loop
+#### Prerequisites to Use Loop
 
-In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+To use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
 
 For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
 
@@ -91,7 +81,7 @@ For the initial steps, you'll be going back and forth between GitHub and Apple D
 
 A number of **terms** used with GitHub Build may be new and unfamiliar. Many of these terms have tooltips.
 
-:material-skip-forward: You can read details about them or skip ahead to [Save Your Information](#save-your-information).
+[:material-skip-forward:](#save-your-information) You can read details about them or skip ahead to [Save Your Information](#save-your-information).
 
 There are a number of terms that may seem unfamiliar with the GitHub Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.
 
@@ -130,7 +120,7 @@ Others terms need an expanded explanation. If reading about the new terms first 
 
 ## Save Your Information
 
-**There is no fast-forward icon - everyone needs to read this section!**
+**Everyone needs to read this section!**
 
 !!! tip "Archive This Information"
     For many of the steps on this page, you will need to have access to usernames, email addresses, passwords, and in some cases, special parameters.
@@ -164,7 +154,7 @@ Others terms need an expanded explanation. If reading about the new terms first 
     * Be sure to save the 6 <code>Secrets</code> in a text file using a text editor
         - Do **NOT** use a smart editor, which might auto-correct and change case, because these <code>Secrets</code> are case sensitive
     
-    :material-skip-forward: To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
+    [:material-skip-forward:](#collect-the-four-apple-secrets) To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
 
 The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the <code>Secrets</code> for your LoopWorkspace fork, so they are listed twice in the list below.
 
@@ -210,11 +200,11 @@ The list below indicates what you need to record (save digitally so you can copy
     1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
     1. Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
-    :material-skip-forward: To skip the detailed instructions, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
+    [:material-skip-forward:](#collect-the-two-github-secrets) To skip the detailed instructions, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
 
 ### New Apple Developer Account
 
-:material-skip-forward: If you have an Apple Developer Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
+[:material-skip-forward:](#find-teamid) If you have an Apple Developer Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
 
 If you do not already have a paid Apple Developer account, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
@@ -345,7 +335,7 @@ In summary, from this section, you have found or generated the following, and sa
 
 ### Collect the Two GitHub Secrets
 
-:material-skip-forward: If you already have a GitHub Account, skip ahead to [Create `GitHub Personal Access Token`](#create-github-personal-access-token).
+[:material-skip-forward:](#create-github-personal-access-token) If you already have a GitHub Account, skip ahead to [Create `GitHub Personal Access Token`](#create-github-personal-access-token).
 
 ### New GitHub Account
 
@@ -380,7 +370,7 @@ The free level comes with plenty of storage and compute time to build Loop.
     * Click "Generate token"
     * Copy the token and record it. It will be used below as `GH_PAT`
 
-    :material-skip-forward: To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
+    [:material-skip-forward:](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
 
 
 You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
@@ -427,7 +417,7 @@ The first time you build with the GitHub Browser Build method for any DIY app, y
 
     Once created, you will not take any direct actions with this repository; it needs to be there for the GitHub to use as you progress through the steps.
 
-    :material-skip-forward: To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
+    [:material-skip-forward:](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
 
 
 Open your github.com URL (this is `https://github.com/username`), where you replace `username` with the name you chose above.
@@ -469,7 +459,7 @@ You are done with this part of the setup.
 ??? abstract "Summary for this Section"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
 
-    :material-skip-forward: To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
+    [:material-skip-forward:](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 !!! warning "Existing Fork"
     Some people may already have a fork of `LoopWorkspace`. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do, and follow the appropriate link back to these instructions.
@@ -487,12 +477,7 @@ You are done with this part of the setup.
     ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.svg){width="700"}
     {align="center"}
 
-### Successful Fork
-
-??? abstract "Summary for this Section"
-    summary goes here:
-
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
+#### Successful Fork
 
 After creating the <span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
@@ -532,7 +517,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * `GH_PAT`
     * `MATCH_PASSWORD`
 
-    :material-skip-forward: To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
+    [:material-skip-forward:](#validate-secrets) To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
 
 !!! tip "<code>Secrets</code> can be used for Other Apps"
     * There are 6 <span class="notranslate">Secrets</span> that must be added to your fork of `LoopWorkspace`
@@ -650,11 +635,11 @@ The `workflows` are now displayed: look at the list on the left side as shown in
     1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
     1. The workflow will check if the required <code>Secrets</code> are added and that they are correctly formatted. If errors are detected, please check the run log for details.
 
-    :material-skip-forward: To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
+    [:material-skip-forward:](#add-identifiers) To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
 
 This step checks that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
-:material-skip-backward: Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, there is an <code>Actions</code> tab. If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what GitHub shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
+[:material-skip-backward:](#first-use-of-actions-tab) Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, there is an <code>Actions</code> tab. If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what GitHub shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
 
 This will be updated soon, but for now
 
@@ -669,7 +654,7 @@ This will be updated soon, but for now
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
     1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-    :material-skip-forward: To skip the detailed instructions, click on [Configure Identifiers for Loop](#configure-identifiers-for-loop).
+    [:material-skip-forward:](#configure-identifiers-for-loop) To skip the detailed instructions, click on [Configure Identifiers for Loop](#configure-identifiers-for-loop).
 
 Refer to the graphic below for the numbered steps:
 
@@ -703,16 +688,16 @@ Please read carefully to avoid confusion.
 ### Create App Group
 
 ??? abstract "Summary for this Section"
-    :material-skip-forward: If you have already built Loop via Xcode using this Apple ID, you can skip ahead to [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers).
+    [:material-skip-forward:](#previous-xcode-builders) If you have already built Loop via Xcode using this Apple ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
     1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
     1. For Description, use "Loop App Group".
     1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
     1. Click "Continue" and then "Register".
 
-    :material-skip-forward: To skip the detailed instructions, click on [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+    [:material-skip-forward:](#add-app-group-to-bundle-identifiers) To skip the detailed instructions, click on [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
 
-The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. If that is the case, skip ahead to [Find Loop Identifier](#find-loop-identifier).
+The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. If that is the case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 If you have never built Loop with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
@@ -723,32 +708,17 @@ If you have never built Loop with *Xcode* using your `TEAMID`, you need to creat
     * A mistake here means you will not be able to build Loop until you fix it
 1. Click `Continue` and then `Register`.
 
-### Find Loop Identifier
+### Add App Group to Bundle Identifiers
 
-??? abstract "Summary for this Section"
-    summary goes here:
-
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
-
-Open this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
+Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
 
 #### New Builders
-
-??? abstract "Summary for this Section"
-    summary goes here:
-
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
 
 If you never built using *Xcode*, then after successfully performing the <code>Add Identifiers</code> *Action*, you will see the six items listed under **`NAME`** in the table below with the associated **`IDENTIFIER`** information, where your `Developer ID` replaces the `TEAMID` in the identifier.
 
 #### Previous Xcode Builders
 
-??? abstract "Summary for this Section"
-    summary goes here:
-
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
-
-If you have built Loop using *Xcode*, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. There may be other differences in the **`NAME`** column, but key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below are of interest when building Loop.
+If you have built Loop using *Xcode*, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. There may be other differences in the **`NAME`** column, do ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below are of interest when building Loop.
 
 #### Table with Name and Identifier for Loop 3
 
@@ -761,6 +731,11 @@ If you have built Loop using *Xcode*, then at least the Loop identifier will app
 | `WatchApp` | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
+!!! warning "Loop dev Builders"
+    The name and identifier for "`Small Status Widget`" has been renamed to the more appropriate "`Loop Widget Extension`". If you are using released code - this won't affect you until the next release. At that time, this table will be updated.
+
+    If you are building with dev branch, follow the directions at [One-Time Changes](../gh-actions/gh-update.md#one-time-changes).
+
 !!! warning "Loop 2 to Loop 3 Builders"
     Several people who built earlier versions of Loop with *Xcode* and are using the GitHub method say they can't find the *identifier names*. You can key off the **`IDENTIFIER`** instead of the **`NAME`** column in the table above.
 
@@ -771,9 +746,27 @@ If you have built Loop using *Xcode*, then at least the Loop identifier will app
 ### Add or Review Configuration for Loop Identifier
 
 ??? abstract "Summary for this Section"
-    summary goes here:
+    Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. A table was provided above that lists both `Names` and `Identifiers`. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.
 
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
+    Note 2 - Depending on your build history, you may find some of the Identifiers are already configured - and you are just verifying the status; but in other cases, you will need to configure the Identifiers.
+
+    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+    1. For each of the following identifier names:
+        * `Loop`
+        * `Loop Intent Extension`
+        * `Loop Status Extension`
+        * `Small Status Widget` (released code) / `Loop Widget Extension` (dev branch)
+    1. Click on the identifier's name.
+    1. On the "App Groups" capabilies, click on the "Configure" button.
+    1. Select the "Loop App Group"
+    1. Click "Continue".
+        * For the `Loop Identifier` only, you must add a check box next to `Time Sensitive Notifications`
+        * This is only required for released code, it is automatically selected for dev branch
+    1. Click "Save".
+    1. Click "Confirm".
+    1. Remember to do this for each of the identifiers above.
+
+    [:material-skip-forward:](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
 Find and click on the row for the Loop identifier on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop. 
 
@@ -817,11 +810,6 @@ The full list of Identifiers should be displayed again.
 
 ### Add App Group to Other Identifiers
 
-??? abstract "Summary for this Section"
-    summary goes here:
-
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
-
 You will now be checking the status for 3 more identifiers to ensure the App Group is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers:
 
 | `NAME` | `IDENTIFIER` |
@@ -857,11 +845,22 @@ The full list of Identifiers should be displayed again.
 ## Create Loop App in App Store Connect
 
 ??? abstract "Summary for this Section"
-    summary goes here:
+    If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
 
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
+    1. Right click on the link [apps list](https://appstoreconnect.apple.com/apps) top open App Store Connect and click the blue "plus" icon to create a New App.
+        * Select "iOS".
+        * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
+        * Select your primary language.
+        * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
+        * SKU can be anything; e.g. "123".
+        * Select "Full Access".
+    1. Click Create
 
-If you have created a `Loop app` in *App Store Connect* before, you can skip this section.
+    You do not need to fill out the next form. That is for submitting to the app store.
+
+    [:material-skip-forward:](#create-certificates) To skip the detailed instructions, click on [Create Certificates](#create-certificates).
+
+If you have created a `Loop app` in *App Store Connect* before, skip ahead to [Create Certificates](#create-certificates).
 
 If have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your Loop in the *App Store* but can't see it. Don't worry - there are instructions for this case.
 
@@ -936,12 +935,15 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 * You are done with this step and ready to Create Certificates
 
-## Create Certificates
+## `Create Certificates`
 
 ??? abstract "Summary for this Section"
-    summary goes here:
+    1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
+    1. On the left side, select "3. Create Certificates".
+    1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+    1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
+    [:material-skip-forward:](#build-loop) To skip the detailed instructions, click on [Build Loop](#build-loop)
 
 Refer to the graphic below for the numbered steps:
 
@@ -959,12 +961,19 @@ Refer to the graphic below for the numbered steps:
     * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
     * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`. (The <code>Add Identifiers</code> might not be required but it is fast and should be done as a matter of routine.)
 
-## Build Loop
+## `Build Loop`
 
 ??? abstract "Summary for this Section"
-    summary goes here:
+    1. Click on the "Actions" tab of your LoopWorkspace repository.
+    1. On the left side, select "4. Build Loop".
+    1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+    1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
+    1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
+    1. For each phone/person you would like to support Loop on:
+        * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
+        * Add them to your TestFlight Internal Testing group.
 
-    :material-skip-forward: To skip the detailed instructions, click on ADD LINK HERE
+    [:material-skip-forward:](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
 
 Refer to the graphic below for the first four steps:
 
