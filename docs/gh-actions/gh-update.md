@@ -262,7 +262,7 @@ For those using dev, you must follow these one-time steps:
 
 1. Libre support was added to dev (03 July 2023) using the LibreTransmitter code
     * This requires (one-time) that the `Actions` for `2. Add Identifiers` and `3. Create Certificates` be run before attempting `4. Build Loop`
-    * The LibreTransmitter code requires `Near Field Communication` and doing these steps adds automatically
+    * The LibreTransmitter code requires `Near Field Communication` and doing these steps automatically adds the required capability
 1. Automatic update and automatic monthly build was added to dev (13 July 2023)
     * Once a month, GitHub will attempt to update and build Loop from your `default branch` using the instructions in the `Action: 4. Build Loop` (`build_loop.yml` file) and send the new app to TestFlight
     * As part of this monthly build, GitHub will check to see if updates are required for your `default branch`
