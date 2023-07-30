@@ -42,7 +42,7 @@ This page contains fully detailed steps including graphics.
 Some sections have a "`Section Summary` (click to open/close)":
 
 * To view the summary, click on the row
-* If the summary is all you need to complete that step, use the `skip forward` symbol :material-skip-forward: to skip to the next instruction
+* If the summary is all you need to complete that step, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
 * Or follow detailed instructions below the summary
 
 An automatic table of contents (TOC) should appear for each page on the right side of your browser (if browser is "wide" enough). If not, tap on the hamburger menu (upper left) and this page name to see the TOC.
@@ -72,7 +72,7 @@ For the initial steps, you'll be going back and forth between GitHub and Apple D
 
 ## New Terms with GitHub Build
 
-[:material-skip-forward:](#save-your-information) You can read details about new terms with GitHub build or skip ahead to [Save Your Information](#save-your-information).
+[<span class="loop-big">:material-skip-forward:</span>](#save-your-information) You can read details about new terms with GitHub build or skip ahead to [Save Your Information](#save-your-information).
 
 The GitHub Build may use new and unfamiliar **terms**.
 
@@ -146,9 +146,9 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * Two <code>Secrets</code> are from your GitHub account
     * Be sure to save the 6 <code>Secrets</code> in a text file using a text editor
         - Do **NOT** use a smart editor, which might auto-correct and change case, because these <code>Secrets</code> are case sensitive
-        - [:material-skip-backward:](#save-your-information) Refer back to [Save Your Information](#save-your-information) for more details about smart vs text editors
+        - [<span class="loop-bigger">:material-skip-backward:</span>](#save-your-information) Refer back to [Save Your Information](#save-your-information) for more details about smart vs text editors
     
-    [:material-skip-forward:](#collect-the-four-apple-secrets) To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-four-apple-secrets) To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
 
 You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure Secrets](#configure-secrets) for how the <code>Secrets</code> are used.
 
@@ -185,11 +185,11 @@ You need to save your information digitally, so you can copy and paste. The info
     1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
     1. Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
-    [:material-skip-forward:](#collect-the-two-github-secrets) To skip the detailed instructions, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-two-github-secrets) To skip the detailed instructions, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
 
 ### New Apple Developer Account
 
-[:material-skip-forward:](#find-teamid) If you have an Apple Developer Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
+[<span class="loop-bigger">:material-skip-forward:</span>](#find-teamid) If you have an Apple Developer Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
 
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
@@ -320,7 +320,7 @@ In summary, from this section, you have found or generated the following, and sa
 
 ### Collect the Two GitHub Secrets
 
-[:material-skip-forward:](#create-github-personal-access-token) If you already have a GitHub Account, skip ahead to [Create `GitHub Personal Access Token`](#create-github-personal-access-token).
+[<span class="loop-bigger">:material-skip-forward:</span>](#create-github-personal-access-token) If you already have a GitHub Account, skip ahead to [Create `GitHub Personal Access Token`](#create-github-personal-access-token).
 
 ### New GitHub Account
 
@@ -355,7 +355,7 @@ The free level comes with plenty of storage and compute time to build Loop.
     * Click "Generate token"
     * Copy the token and record it. It will be used below as `GH_PAT`
 
-    [:material-skip-forward:](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
 
 
 You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
@@ -402,7 +402,7 @@ The first time you build with the GitHub Browser Build method for any DIY app, m
 
     Once created, you will not take any direct actions with this repository; it needs to be there for the GitHub to use as you progress through the steps.
 
-    [:material-skip-forward:](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
 
 
 Open your github.com URL (this is `https://github.com/username`), (`username` is the name you chose above).
@@ -442,7 +442,7 @@ You will not directly interact with your `Match-Secrets` repository.
 ??? abstract "`Section Summary` (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
 
-    [:material-skip-forward:](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 !!! warning "Existing Fork"
     If you already have a fork of `LoopWorkspace`, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
@@ -500,7 +500,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * `GH_PAT`
     * `MATCH_PASSWORD`
 
-    [:material-skip-forward:](#validate-secrets) To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#validate-secrets) To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
 
 !!! tip "<code>Secrets</code> can be used for Other Apps"
     * Six <span class="notranslate">Secrets</span> must be added to your fork of `LoopWorkspace`
@@ -615,9 +615,11 @@ The `workflows` are now displayed on the left side as shown in the graphic below
     1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
     1. The workflow will check if the required <code>Secrets</code> are added and that they are correctly formatted. If errors are detected, please check the run log for details.
 
-    [:material-skip-forward:](#add-identifiers) To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#add-identifiers) To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
 
-[:material-skip-backward:](#first-use-of-actions-tab) Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, there is an <code>Actions</code> tab. If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what GitHub shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
+Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, click on the <code>Actions</code> tab. 
+
+* [<span class="loop-big">:material-skip-backward:</span>](#first-use-of-actions-tab)If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what GitHub shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
 
 Click on `1. Validate Secrets` to check that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
 
@@ -633,7 +635,7 @@ Note - this section is missing detailed instructions (for now):
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
     1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-    [:material-skip-forward:](#configure-identifiers-for-loop) To skip the detailed instructions, click on [Configure Identifiers for Loop](#configure-identifiers-for-loop).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#configure-identifiers-for-loop) To skip the detailed instructions, click on [Configure Identifiers for Loop](#configure-identifiers-for-loop).
 
 Refer to the graphic below for the numbered steps:
 
@@ -667,14 +669,14 @@ Please read carefully to avoid confusion.
 ### Create App Group
 
 ??? abstract "`Section Summary` (click to open/close)"
-    [:material-skip-forward:](#previous-xcode-builders) If you have already built Loop via Xcode using this Apple ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built Loop via Xcode using this Apple ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
     1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
     1. For Description, use "Loop App Group".
     1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
     1. Click "Continue" and then "Register".
 
-    [:material-skip-forward:](#add-app-group-to-bundle-identifiers) To skip the detailed instructions, click on [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#add-app-group-to-bundle-identifiers) To skip the detailed instructions, click on [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
 
 The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
@@ -745,7 +747,7 @@ If you have built Loop using *Xcode*, then at least the Loop identifier will app
     1. Click "Confirm".
     1. Remember to do this for each of the identifiers above.
 
-    [:material-skip-forward:](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
 Find and click on the row for the Loop identifier on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop. 
 
@@ -837,7 +839,7 @@ The full list of Identifiers should be displayed again.
 
     You do not need to fill out the next form. That is for submitting to the app store.
 
-    [:material-skip-forward:](#create-certificates) To skip the detailed instructions, click on [Create Certificates](#create-certificates).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#create-certificates) To skip the detailed instructions, click on [Create Certificates](#create-certificates).
 
 If you have created a `Loop app` in *App Store Connect* before, skip ahead to [Create Certificates](#create-certificates).
 
@@ -922,7 +924,7 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
     1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-    [:material-skip-forward:](#build-loop) To skip the detailed instructions, click on [Build Loop](#build-loop)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#build-loop) To skip the detailed instructions, click on [Build Loop](#build-loop)
 
 Refer to the graphic below for the numbered steps:
 
@@ -952,7 +954,7 @@ Refer to the graphic below for the numbered steps:
         * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
         * Add them to your TestFlight Internal Testing group.
 
-    [:material-skip-forward:](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
 
 Refer to the graphic below for the first four steps:
 
