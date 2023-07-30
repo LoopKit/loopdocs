@@ -52,3 +52,22 @@ article ul ul ul {
   -webkit-mask-image: var(--md-admonition-icon--important);
           mask-image: var(--md-admonition-icon--important);
 }
+
+/* 
+ * Add ability to increase font-size locally
+ *   loop-big, loop-bigger or loop-biggest
+ *  Usage: <span class="loop-bigger">item-goes-here</span>
+ *  This increases the size the item-goes-here
+ */
+
+ .loop-big {
+    font-size: 1.2em;
+}
+
+.loop-bigger {
+    font-size: 1.4em;
+}
+
+.loop-biggest {
+    font-size: 1.6em;
+}

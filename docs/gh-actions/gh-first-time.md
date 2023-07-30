@@ -1,240 +1,242 @@
 ## Build Loop using GitHub Actions
 
-This is only available for Loop 3 and greater versions and for Loop development branches.
-
-!!! info "Time Estimate"
+??? info "`Time Estimate` (click to open/close)"
     - If you have never built Loop (allow up to one week elapsed time)
         * Requesting and getting an Apple Developer Account: 1-2 days
         * Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours
-        * Adding Secrets (requires Apple Developer Account): 1 hour
+        * Adding <code>Secrets</code> (requires Apple Developer Account): 1 hour
         * Performing the Action steps: 30 minutes to 2 hours
     - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 2 hours
 
-!!! abstract "Summary"
-    Once you have Apple Developer and GitHub accounts
+??? abstract "`Page Summary` (click to open/close)"
+    Once you have Apple Developer and GitHub accounts:
 
-    * Apple: Generate an API Key
+    * Apple: 
+        * Generate and save four <code>Secrets</code>
     * GitHub:
-        * Create an access token (GH_PAT)
-        * Create a Match-Secrets private repository
+        * Generate and save two <code>Secrets</code>
+        * Create a <code>Match-Secrets</code> private repository
         * Fork a repository (copy of LoopWorkspace)
-        * Add Secrets to your repository
-        * Action: 1. Verify Secrets
-        * Action: 2. Add Identifiers
+        * Add <code>Secrets</code> to your repository
+        * `Action: 1. Verify Secrets`
+        * `Action: 2. Add Identifiers`
     * Apple:
         * Configure Identifiers for Loop
         * Create your version of Loop in App Store (personal use only, not for distribution)
     * GitHub:
-        * Action: 3. Create Certificates
-        * Action: 4. Build Loop
+        * `Action: 3. Create Certificates`
+        * `Action: 4. Build Loop`
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
 
-!!! question "FAQs"
+??? question "`FAQs` (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
-    - **Isn't it hard to build every 90 days?** The initial setup (this page) and deployment (next page) take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
+    - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explicit steps are provided at [GitHub Deploy: Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
     - **Can I still use my customizations?** Yes. [Customize with GitHub](gh-customize.md)
 
-**You must build Loop every 90 days when you use GitHub build method.**
+This page contains fully detailed steps including graphics.
 
-* We recommend you configure your GitHub personal access token to never expire
-    * If you have one that expires, go to [GitHub Update: Regenerate GitHub Token](gh-update.md#regenerate-github-token)
-* Building a new version literally takes seconds once open your browser and go to your GitHub account 
+Some sections have a "`Section Summary` (click to open/close)":
+
+* To view the summary, click on the row
+* If the summary is all you need to complete that step, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
+* Or follow detailed instructions below the summary
+
+An automatic table of contents (TOC) should appear for each page on the right side of your browser (if browser is "wide" enough). If not, tap on the hamburger menu (upper left) and this page name to see the TOC.
+
+For sparse instructions without the details, right click on the link below:
+
+* [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
 
 ## Prerequisites
 
-!!! tip "Read and Review"
-    Building with GitHub using a browser requires you to do a series of steps in order with no mistakes. But once you've done it once, subsequent builds are trivial.
+#### Prerequisites to Build Loop
 
-    At each point in the process
+There are two prerequisites to build Loop using GitHub Browser Build.
 
-    * Check to make sure what you are doing matches the instructions
-    * Check to make sure you did not skip a step
-
-    Different people approach this differently. Choose your method to achieve success:
-
-    * Print the summary section above, go through the page sequentially doing each step and check off each step as you go
-    * Read this whole page, then review it and read the [GitHub Errors: Most Common Mistakes](gh-errors.md#most-common-mistakes) section, then return to this page and start doing each step
-    * Figure out your method and use it
-
-
-**Loop 3 requires iOS 15.1 or higher, no reason not to update to latest iOS**
-
-### Build Loop
-
-There are only two prerequisites to build Loop with this method.
-
-1. Paid Apple Developer account
+1. Paid Apple Developer account ($99/year)
 1. Free GitHub account
 
-### Install Loop
+#### Prerequisites to Install Loop
 
-You will need TestFlight, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md). You will install Loop on that phone using the TestFlight app.
+To install Loop, you need the TestFlight app, from the Apple App Store, installed on your [Compatible Phone](../build/step2.md).
 
-### Use Loop
+#### Prerequisites to Use Loop
 
-In order to use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+To use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
 
 For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
 
 ## New Terms with GitHub Build
 
-There are a number of terms that may seem unfamiliar with the GitHub Build. As you move through this page, there will be detailed instructions, but it helps to have the overview.
+[<span class="loop-big">:material-skip-forward:</span>](#save-your-information) You can read details about new terms with GitHub build or skip ahead to [Save Your Information](#save-your-information).
 
-Some of these terms have ToolTips, so hover your mouse over the item - or review in the [Glossary](../faqs/glossary.md).
+The GitHub Build may use new and unfamiliar **terms**.
 
-* You may find some terms in the Glossary not in alphabetical order. All the Secrets discussed on this page, are listed under Secrets in the Glossary.
+Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../faqs/glossary.md).
 
-Others terms need an expanded explanation. If reading about the new terms first is confusing, finish reviewing the whole page and then come back.
+* Some terms in the Glossary are not in alphabetical order. All the <code>Secrets</code> discussed on this page, are listed under <code>Secrets</code> in the Glossary.
 
-* `Modules`: You won't see this term but the concept is important when explaining the other terms
-    * The Loop code uses modules to handle different components of the entire app
-    * Some of these modules must be associated with your unique App Group
-    * Others do not have this requirement
-* `Identifiers`: The Identifiers refer to the Modules that must be available to build Loop with GitHub
-    * There are 4 Identifier Names for LoopWorkspace that must be associated with your App Group
+If this summary of terms is confusing, finish reviewing the whole page and then come back.
+
+* `Modules`:
+    * The Loop code uses modules to handle different components of the app
+    * Some modules must be associated with your unique App Group
+* `Identifiers`: The Identifiers are Modules required to build Loop with GitHub
+    * Four Identifier Names must be associated with your App Group
         * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
-    * There are 2 other Identifier Names that must exist but do not require that association
+        * For dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
+    * Two Identifier Names must exist but do not require that association
         * `WatchApp` and `WatchAppExtension`
-    * On the `Identifier` screen, there will be **`NAME`** and **`IDENTIFIER`** columns
-        * The items you see under the **`NAME`** column depend on whether you previously built with Xcode and may start with `XC`
-        * The items under the **`IDENTIFIER`** column match the table in the documentation
-* `Secrets`: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have the access required to build Loop
-    * There are 6 Secrets that must be added to your fork of LoopWorkspace
-    * These Secrets work for any branch in your fork (`main` or `dev`, for example)
-    * These same Secrets are added to your GitHub fork for [Other Apps](gh-other-apps.md) configured with the same GitHub build method
+    * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
+        * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
+        * The items under the **`IDENTIFIER`** column match the table in [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+* <code>Secrets</code>: required to enable GitHub to build Loop using GitHub Actions
+    * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
+    * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
+    * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same GitHub build method
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for Apple Developers to review their apps
     * Once you purchase an *Apple Developer* annual account, you are an Apple Developer and have access to this site
-    * Most Loopers will not have an App on their page until using the GitHub build method
-    * The name of an app must be unique across the entire App Store worldwide
-        * You will need a unique name for your Loop App
+    * Most Loopers will not have an App until using the GitHub build method
+    * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 * API `Key`: Application Programming Interface Key
-    * This key will be obtained by you from the Apple Developer website to enable your GitHub account to interface with Apple to create your app
-* `Actions`: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task
-    * With Loop 3, actions to Verify Secrets, Add Identifiers, Create Certificates, and Build Loop are provided to enable users to build the Loop app from a browser on any computer
-    * The GitHub system is maintained by Microsoft Corporation and they do a good job of keeping it running - however, if there is a problem, it will be reported on [GitHub Status](https://www.githubstatus.com/).
+    * You obtain and save this key from the Apple Developer website
+    * It is required to enable your GitHub account to interface with Apple to create your app
+* `Actions`: available in your GitHub account to build your app (once you follow the instrctions on this page)
+    * With Loop 3, the actions: `Verify Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
+    * If GitHub Actions are not operating as you expect, check [GitHub Status](https://www.githubstatus.com/) to see if it is GitHub problem.
 
-## Configure to use GitHub Build Actions
+## Save Your Information
 
-Review the entire process before starting and then go through slowly and carefully.
+**Everyone needs to read this section!**
 
-These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer.
+!!! tip "Archive Your Information"
+    For many of the steps on this page, you will need your username, email address, password, and in some cases, special parameters for Apple and GitHub.
 
-* You can send Loop app updates to those you care for
-* You can access and install the Loop app via TestFlight if you lose or damage your device
-* You do not need to worry about the correct Xcode or macOS versions
-
-The setup steps are somewhat involved, but nearly all are one-time steps. Subsequent builds are trivial. The initial steps are best done on a computer where you can save and archive information for later use. Use a **text-only editor** for this archive file for your Secrets. People have gotten into difficulties when a lower-case character was "auto-corrected" to upper-case when pasting into their archive file.
-
-TestFlight can be used to deploy Loop to a child's phone (under age 13 in the US) but requires a few extra steps on the phone itself. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
-
-Your app must be updated once every 90 days, at the current time, but it's simple to make a new build and can be done from anywhere, see [Update Loop using GitHub Actions](gh-update.md).
-
-### Save Your Information
-
-!!! tip "Archive This Information"
-    For many of the steps on this page, you will need to have access to usernames, email addresses, passwords, and in some cases, special parameters.
-
-    * Record these in a safe place so you can find them when you need them
-    * A digital copy is best because you will be copying and pasting in different locations
+    * Record these in a safe place where you can find them
+    * A digital copy is best for copying and pasting in different locations
 
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
 !!! info "A Note about Capitalization and Spaces"
-    In places, you will be told to give something a name like FastLane API Key or FastLane Access Token. Please copy from the docs to use those exact names.
+    In places, you will be told to give something a name like "`FastLane API Key`" or "`FastLane Access Token`". Please copy from the docs to use those exact names.
 
-    The Secrets that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
+    The <code>Secrets</code> that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
 
      The relationship and creation of each item is explained step-by-step on this page.
 
-!!! danger "Use a Text-Only Editor"
+!!! important "Use a Text-Only Editor"
+    **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
+
     If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.
 
     If even one character is capitalized when it should not be, you will get [GitHub Errors](gh-errors.md).
 
     If you use a smart editor to store your FASTLANE_KEY, you are likely to get the mysterious `invalid curve name` error.
 
-The list below indicates what you need to record (save digitally so you can copy and paste). Notice that some information is created in one place and used in another. The items in all capital letters will be added to the Secrets for your LoopWorkspace fork, so they are listed twice in the list below.
+## Save Six Secrets
 
-**Needed or created at developer.apple.com**
+??? abstract "`Section Summary` (click to open/close)"
+    You require 6 <code>Secrets</code> (alphanumeric items) to use the GitHub build method and if you use the GitHub method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you will use the same 6 <code>Secrets</code> for each app you build with this method. Each secret is indentified below by `ALL_CAPITAL_LETTER_NAMES`.
+
+    * Four <code>Secrets</code> are from your Apple Account
+    * Two <code>Secrets</code> are from your GitHub account
+    * Be sure to save the 6 <code>Secrets</code> in a text file using a text editor
+        - Do **NOT** use a smart editor, which might auto-correct and change case, because these <code>Secrets</code> are case sensitive
+        - [<span class="loop-bigger">:material-skip-backward:</span>](#save-your-information) Refer back to [Save Your Information](#save-your-information) for more details about smart vs text editors
+    
+    [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-four-apple-secrets) To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
+
+You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure Secrets](#configure-secrets) for how the <code>Secrets</code> are used.
+
+**Created at developer.apple.com**
 
 * Email address (this is your username)
 * password
-* <code>TEAMID</code>
-* <code>FASTLANE_ISSUER_ID</code>
-* <code>FASTLANE_KEY_ID</code>
-* <code>FASTLANE_KEY</code>
+* Four items used as <code>Secrets</code>
+    * <code>TEAMID</code>
+    * <code>FASTLANE_ISSUER_ID</code>
+    * <code>FASTLANE_KEY_ID</code>
+    * <code>FASTLANE_KEY</code>
 
-**Needed or created at github.com**
+**Created at github.com**
 
 * Email address
 * password
 * username
 * Your GitHub repository address will be: `https://github.com/username`
 * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
-* GitHub Personal Access Token (GH_PAT)
-* a password - make one up and save it (<code>MATCH_PASSWORD</code>)
+* Two items used as <code>Secrets</code>
+    * GitHub Personal Access Token (GH_PAT)
+    * a password - make one up and save it (<code>MATCH_PASSWORD</code>)
 
-**Needed when you [Configure Secrets](#configure-secrets)**
+### Collect the Four `Apple Secrets`
 
-* Save names and values in a text-only editor
-* These same secrets are used for Loop and for [Other Apps](gh-other-apps.md)
-    * <code>TEAMID</code>
-    * <code>FASTLANE_ISSUER_ID</code>
-    * <code>FASTLANE_KEY_ID</code>
-    * <code>FASTLANE_KEY</code>
-    * <code>GH_PAT</code>
-    * <code>MATCH_PASSWORD</code>
+??? abstract "`Section Summary` (click to open/close)"
+    You will be saving 4 <code>Secrets</code> from your Apple Account in this step.
 
-## Apple Developer Account
+    1. Sign in to the [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
+    1. Copy the Team ID from the upper right of the screen. Record this as your `TEAMID`.
+    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: "`FastLane API Key`".
+    1. Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
+    1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
+    1. Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
-If you have an Apple Developer Account, you should sign in to your account before starting. There will be links to take you to specific pages; if you are not already logged in, you will be required to log in before you can go to that page.
+    [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-two-github-secrets) To skip the detailed instructions, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
 
-If you do not already have a paid Apple Developer account, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
+### New Apple Developer Account
+
+[<span class="loop-bigger">:material-skip-forward:</span>](#find-teamid) If you have an Apple Developer Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
+
+If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
 * LoopDocs has an [Apple Developer Program](../build/step6.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [Apple Developer account](https://developer.apple.com) to sign up
 
-### Find TEAMID
+### Find <code>TEAMID</code>
+
+Sign in to your account before starting.
 
 - Open this link: [Apple developer portal page](https://developer.apple.com/account).
 - Click `Account` in the top menu bar
 - Click the `Membership Details` icon  
     ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg)
-- Next to the `Team ID` field, you will see a 10-character ID number.  
+- Next to the `Team ID` field, is a 10-character ID number.  
   This is your **Apple Developer `TEAMID`**.
     ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg)
 - Record this for use when you configure your *Secrets* and when you configure your unique <span class="notranslate">App Group</span>  
 - Stop a moment and double-check - if you get this wrong, you will have errors later
 
     !!! tip "Do not "type" what you think you see"
-        **Copy and paste** from the `Team ID` from the webpage.  
+        **Copy and paste** the `Team ID` from the webpage.  
         (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
 
-### Generate API Key
-!!! info "Need a Paid Apple Developer Account Set Up to Generate the API Key"
-    You cannot generate the API Key until you have the paid Apple Developer account set up.  
-    If you are still waiting for Apple to enable your account, you can skip ahead to complete part of the GitHub steps (see [New GitHub Account](#new-github-account) or [Setup GitHub](#setup-github)), but you will need to pause at [Configure Secrets](#configure-secrets).
+### Generate `API Key`
 
-!!! abstract
-    This section will walk you through the steps required to gather or create these parameters.
+!!! info "Need a Paid Apple Developer Account Set Up to Generate the `API Key`"
+    To generate the `API Key`, you must have a paid Apple Developer account.
+
+    If you are waiting for Apple to enable your account, you can skip ahead to create a [New GitHub Account](#new-github-account) and [`GitHub Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure Secrets](#configure-secrets) until your Apple account is active.
+
+!!! abstract "Generate `API Key` and Collect all Four `Apple Secrets`"
+    This section will walk you through the steps required to gather or create these <code>Secrets</code>.
 
     |Name|Description|
     |---------|---------|
     |<code>TEAMID</code>|This 10-character identifier is associated with your Apple Developer ID and never changes|
     |<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your Apple Developer ID and never changes|
-    |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an API key in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
-    |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the API key - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
+    |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an `API Key` in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
+    |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the `API Key` - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
     
-    Each step has a link to take you to the specific page you need to do the next step. It is best if you open each link in a separate tab or window so you can refer back to these instructions as you move along.
+    Each step has a link to the next step. Open each link in a separate tab or window so you can refer back to these instructions as you move along.
 
 
-1. Open this link: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
+1. Right click to open this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
     * Click the `Keys` tab
-        * If this is your first time here, there will be a dialog for you to follow:
+        * If this is your first time here, you will see:
 
             "`Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
 
@@ -256,11 +258,11 @@ If you do not already have a paid Apple Developer account, you need to purchase 
     * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop-down menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
 
-### Copy API Key Secrets
+### Copy `API Key Secrets`
 
-The `Keys` screen is seen again with the additional content similar to that shown in the graphic below; the key information is blanked out for security.
+The `Keys` screen appears again with content similar to the graphic below; the key information is blanked out for security.
 
-* Review the graphic and then follow the directions below to save more parameters you will need to [Configure Secrets](#configure-secrets)
+* Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](#configure-secrets)
 
     ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
     {align="center"}
@@ -294,14 +296,15 @@ The `Keys` screen is seen again with the additional content similar to that show
 
 ### Do Not Confuse Your Keys
 
-!!! danger "API Key vs APN Key"
-    If you use [Remote Commands with Nightscout](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
+!!! important "`API Key` vs `APN Key`"
+    If you use [Remote Commands with `Nightscout`](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
-    The Secrets for building with GitHub use the API Key.
+    The Secrets for building with GitHub use the `API Key`.
 
-    The config vars for Nightscout use the APN Key.
+    The config vars for `Nightscout` use the `APN Key`.
 
-    * If you are using remote commands with Nightscout and building with the GitHub build, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your Nightscout site or the remote commands will not work.
+    * If you are using remote commands with `Nightscout` and building with the GitHub build, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your `Nightscout` site or the remote commands will not work.
+    * This is true for using `Nightscout` directly or using LoopCaregiver.
 
 ### Done with Apple Secrets
 
@@ -315,24 +318,17 @@ In summary, from this section, you have found or generated the following, and sa
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-#### Lost FASTLANE_KEY
+### Collect the Two GitHub Secrets
 
-!!! danger "I can't find my FASTLANE_KEY"
-    If you cannot find where you stored your information, you can get a new key. You cannot recover an old one. Return to [Generate API Key](#generate-api-key), but add this initial step.
+[<span class="loop-bigger">:material-skip-forward:</span>](#create-github-personal-access-token) If you already have a GitHub Account, skip ahead to [Create `GitHub Personal Access Token`](#create-github-personal-access-token).
 
-    When you use the link in the Generate API Key step, you will see an Active key. You must first click Edit by the Active section, revoke your "`FastLane API Key`" and then follow the directions to generate a new one. You will have to update the <code>Secrets</code> for every App repository when you take this step.
-
-    The <code>FASTLANE_KEY_ID</code> and <code>FASTLANE_KEY</code> must both be updated.
-
-## New GitHub Account
-
-If you have a GitHub account, you can skip to [Setup GitHub](#setup-github). Make sure you know your GitHub associated email, username (`username`), and password.
+### New GitHub Account
 
 If you do not already have a GitHub account, you need to create one. Be sure to record the email, password, and username for your GitHub account.
 
 Decide on a couple of usernames that you will be happy with - this will get embedded into your GitHub URL. Your first choice might not be available, so be prepared with several candidates. Your personal URL will be: `https://github.com/username`.
 
-* Click on this link to sign up for a free account: [github account signup](https://github.com/signup)
+* Click on this link to sign up for a free account: [GitHub account signup](https://github.com/signup)
     * You will need to enter the **email** you want associated your GitHub account
     * You will be asked to enter a **password**
     * You will be asked to enter a **username**
@@ -346,11 +342,21 @@ Decide on a couple of usernames that you will be happy with - this will get embe
 
 The free level comes with plenty of storage and compute time to build Loop.
 
-## Setup GitHub
+### Create `GitHub Personal Access Token`
 
-Now you will configure a personal access token (<code>GH_PAT</code>), create one new repository and then fork the `LoopWorkspace` repository.
+??? abstract "`Section Summary` (click to open/close)"
+    Log into your GitHub account to create a personal access token; this is one of two GitHub <code>Secrets</code> needed for your build.
 
-### Create GH_PAT
+    (Right click on link) to create a [new `personal access token`](https://github.com/settings/tokens/new):
+
+    * Enter a name for your token, use "`FastLane Access Token`"
+    * Change the Expiration selection to `No expiration`
+    * Select the `workflow` `permission scope` (`repo` will be automatically selected)
+    * Click "Generate token"
+    * Copy the token and record it. It will be used below as `GH_PAT`
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
+
 
 You must be logged into your GitHub account before starting this step. If you are continuing, you are already logged in.
 
@@ -374,15 +380,32 @@ You must be logged into your GitHub account before starting this step. If you ar
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
-    * You can [Regenerate GitHub Token](gh-update.md#regenerate-github-token) for `GH_PAT` if you lose it, but best to keep it safe
+    * You can [Regenerate GitHub Token](gh-update.md#regenerate-github-token) for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using GitHub Build.
 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
 
+### Make up a Password
+
+This is the second GitHub <code>Secrets</code> needed for your build.
+
+The first time you build with the GitHub Browser Build method for any DIY app, make up a password and record it as <code>MATCH_PASSWORD</code>. Note, if you later lose <code>MATCH_PASSWORD</code>, you will need to delete and make a new <code>Match-Secrets</code> repository (next step).
+
+## Prepare your Repositories
 
 ### Create Match-Secrets
 
-Open your github.com URL (this is `https://github.com/username`), where you replace `username` with the name you chose above.
+??? abstract "`Section Summary` (click to open/close)"
+    The creation of the <code>Match-Secrets</code> repository is a common step for all GitHub Browser Builds; do this step only once. You must be logged into your GitHub account.
+
+    (Right click on link) to create a [new empty repository](https://github.com/new) titled <code>Match-Secrets</code>. It should be private.
+
+    Once created, you will not take any direct actions with this repository; it needs to be there for the GitHub to use as you progress through the steps.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
+
+
+Open your github.com URL (this is `https://github.com/username`), (`username` is the name you chose above).
 
 Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
 
@@ -405,36 +428,39 @@ This shows you a screen similar to the following graphic which has 3 regions hig
 ![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
 {align="center"}
 
-You will then be shown a screen with a lot of options - you will not do anything on this screen except leave it.
+A screen will appear with a lot of options - do **not** do anything on this screen.
 
-* Click on just your username (as indicated by the red rectangle) to return to your main GitHub URL.
+* Click on your username (as indicated by the red rectangle) to return to your main GitHub URL.
 
 ![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
 {align="center"}
 
-You will not be interacting with your `Match-Secrets` repository directly. It needs to exist for other actions to work correctly.
-
-You are done with this part of the setup.
+You will not directly interact with your `Match-Secrets` repository.
 
 ### Fork LoopWorkspace
 
+??? abstract "`Section Summary` (click to open/close)"
+    Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
+
 !!! warning "Existing Fork"
-    Some people may already have a fork of `LoopWorkspace`. Click on [Already Have LoopWorkspace](#already-have-loopworkspace), decide what to do, and follow the appropriate link back to these instructions.
+    If you already have a fork of `LoopWorkspace`, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the `LoopWorkspace` repository owned by `LoopKit`.
-1. Review the highlighted locations of the graphic below (yours won't look quite like this yet), but the `Fork` button is in the same place
+1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
-    * If you already have a fork, it will not allow you to proceed, see [Already Have LoopWorkspace](#already-have-loopworkspace)
+    * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-have-loopworkspace)
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the owner (`Owner`)
-    * `LoopWorkspace` is automatically filled in as the repository name (`Repository Name`)
+    * `LoopWorkspace` is the repository name (`Repository Name`)
     * Leave the selection that says "`Copy the main branch only`" checked
     * Click on the green `Create fork` button
 
     ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.svg){width="700"}
     {align="center"}
 
-### Successful Fork
+#### Successful Fork
 
 After creating the <span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
@@ -457,14 +483,31 @@ Carefully compare your screen to the graphic below paying attention to the highl
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-### Configure Secrets
+## Configure <code>Secrets</code>
 
-!!! tip "Secrets can be used for Other Apps"
-    * There are 6 <span class="notranslate">Secrets</span> that must be added to your fork of `LoopWorkspace`
+??? abstract "`Section Summary` (click to open/close)"
+    These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`. 
+    
+    * They are added once for a repository and work for all branches of that repository
+    * They must be added to any other repository, such of LoopCaregiver, for which you also use `GitHub Browser Build`
+
+    For each of the following <code>Secrets</code>, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
+
+    * `TEAMID`
+    * `FASTLANE_ISSUER_ID`
+    * `FASTLANE_KEY_ID`
+    * `FASTLANE_KEY`
+    * `GH_PAT`
+    * `MATCH_PASSWORD`
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#validate-secrets) To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
+
+!!! tip "<code>Secrets</code> can be used for Other Apps"
+    * Six <span class="notranslate">Secrets</span> must be added to your fork of `LoopWorkspace`
     * These <span class="notranslate">Secrets</span> work for any branch in your fork (`main` or `dev`, for example)
     * These same <span class="notranslate">Secrets</span> would be added to your <span class="notranslate">fork</span> of a repository for [Other Apps](gh-other-apps.md)
 
-You need to be logged into GitHub.
+Log into GitHub.
 
 1. Return to your forked copy of `LoopWorkspace`
     * Click on your personal icon at the upper right to see the drop-down menu and select "`Your repositories`"
@@ -483,14 +526,14 @@ You need to be logged into GitHub.
         {align="center"}
 
 1. On the left side, find the `Secrets and variables` dropdown and choose <code>Actions</code>
-    * After you select on <code>Actions</code>, your screen should look like the graphic below
+    * After you select <code>Actions</code>, your screen should look like the graphic below
 
         ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
         {align="center"}
 
-1. Tap on the green button at the top right of your screen labeled `New repository secret` (refer to the graphic above where the button is highlighted)
+1. Tap on the green button at the top right of your screen labeled `New repository secret` (highlighted above)
     * A new dialog screen appears as shown in the graphic below
-    * Do not do anything yet - first read what you will do in the next section
+    * Do not do anything until reading the sub-bullets and proceeding to the next section
         * In the `Name *`  box where it says `YOUR_SECRET_NAME`, you will click in the box and paste one of the 6 secret names, as directed in [Enter Each Secret](#enter-each-secret)
         * In the `Secret *` box, you will click in the box and paste the value for that secret
         * Once you click on `Add Secret`, the secret will be added
@@ -500,18 +543,15 @@ You need to be logged into GitHub.
 
 #### Enter Each Secret
 
-Refer to the list of parameters found in [Save Your Information](#save-your-information). This is the time you will enter these items.
+Enter each of the <code>Secrets</code> found in [Save Your Information](#save-your-information). You will enter the `Name` of each `Secret` and your value for each `Secret`.
 
-:person_in_lotus_position: Take a calming breath. This next part requires care.
+* Once you save a secret value, you will not be able to view what you entered, so check carefully before you hit `Add Secret`
+    * You can replace the value for any secret later - but you can't view the saved value
+* If you make a mistake, the actions you take next will fail, but the error messages will identify which <code>Secrets</code> you need to fix
+* Confirm that your `TEAMID` is correct
+    * If it is not, the intial Actions will succeed but Build Loop will fail and you will have some clean-up to do
 
-* Once you enter and save a secret value, you will not be able to view what you just entered, so check carefully before you hit `Add Secret` to save it
-    * You can replace the value for any secret later - you just can't see what you entered before
-* If you make a mistake, the actions you take in the next sections will fail, but the error messages help you figure out which secrets you need to fix
-* So collect the list of information you've gathered so it's handy and make up a password for the `MATCH_PASSWORD` and save that in your secrets archive file
-* Confirm, one more time, that your `TEAMID` is correct
-    * If it is not, all will appear fine until you try to Build Loop and then you will get failures
-
-For each of the following secrets, follow the directions below - this list is configured with a copy button (:material-content-copy:) when you hover to the right of each word - this helps avoid spelling errors.
+You can copy the names of the <code>Secrets</code> by hovering to the right of each word below until you see the copy button (:material-content-copy:). Click on the button to copy the `Secret` name and paste it into GitHub where you see `YOUR_SECRET_NAME`. This avoids spelling errors.
 ``` { .text .copy }
 TEAMID
 ```
@@ -535,10 +575,10 @@ MATCH_PASSWORD
 * For `MATCH_PASSWORD` value - make up a password for this and save it for later use
     * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
-Once all six secrets have been added to your `LoopWorkspace`, you are done with Settings. Your screen should look similar to the graphic below.
+Once all six <code>Secrets</code> have been added to your `LoopWorkspace`, your screen should look similar to the graphic below.
 
-* Take a moment to be sure all of your secrets are spelled correctly
-* If you notice a mistake, just delete the one that is not spelled correctly and add a `New repository secret` with the correct name
+* Check that all of your <code>Secrets</code> are spelled correctly
+* If one is misspelled, delete it and add a `New repository secret` with the correct name
 
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
@@ -546,37 +586,61 @@ Once all six secrets have been added to your `LoopWorkspace`, you are done with 
 !!! tip "Time for a Break?"
     :fontawesome-regular-circle-pause: This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-## Validate Secrets
-
-This step checks that the Secrets you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
-
-This will be updated soon, but for now - follow the instructions under "Add Identifiers for Loop", but do the first action: "1 Validate Secrets".
-
-## Add Identifiers for Loop
-
-Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, there is an <code>Actions</code> tab. If you have used <code>Actions</code> on this repository before, skip ahead to [Add Identifiers](#add-identifiers).
-
 ### First Use of Actions Tab
+
+Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span> is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
 
 Click on the `Actions` tab of your `LoopWorkspace` repository.
 
-* The first time you click on `Actions` with this repository you'll be informed that `Workflows aren't being run on this forked repository` as shown in the graphic below
+* Your first time, a message appears saying `Workflows aren't being run on this forked repository` as shown in the graphic below
 * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
 
     ![workflows disabled screen](img/gh-workflows-disabled.png){width="700"}
     {align="center"}
 
-The `workflows` are now displayed: look at the list on the left side as shown in the graphic below. (You can dismiss the `Actions Enabled` message using the `X` near the upper right side if it appears).
+The `workflows` are now displayed on the left side as shown in the graphic below. (Dismiss the `Actions Enabled` message using the `X` near the upper right side if it appears).
 
 ![workflows displayed](img/gh-workflows-enabled.png){width="700"}
 {align="center"}
 
-### Add Identifiers
+
+## Validate <code>Secrets</code>
+
+??? abstract "`Section Summary` (click to open/close)"
+    This step validates most of your six <code>Secrets</code> and provides error messages if it detects an issue with one or more.
+
+    1. Click on the "Actions" tab of your LoopWorkspace repository and enable workflows if needed
+    1. On the left side, select `1. Validate Secrets`.
+    1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+    1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+    1. The workflow will check if the required <code>Secrets</code> are added and that they are correctly formatted. If errors are detected, please check the run log for details.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#add-identifiers) To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
+
+Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, click on the <code>Actions</code> tab. 
+
+* [<span class="loop-big">:material-skip-backward:</span>](#first-use-of-actions-tab)If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what GitHub shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
+
+Click on `1. Validate Secrets` to check that the <code>Secrets</code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.
+
+Note - this section is missing detailed instructions (for now):
+
+* If you need detailed instructions, review [<code>Add Identifiers</code>](#add-identifiers), but select the first action: "1 Validate <code>Secrets</code>"
+
+## <code>Add Identifiers</code>
+
+??? abstract "`Section Summary` (click to open/close)"
+    1. Click on the "Actions" tab of your LoopWorkspace repository.
+    1. On the left side, select "2. Add Identifiers".
+    1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+    1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#configure-identifiers-for-loop) To skip the detailed instructions, click on [Configure Identifiers for Loop](#configure-identifiers-for-loop).
 
 Refer to the graphic below for the numbered steps:
 
 1. Click on the `Actions` tab of your `LoopWorkspace` repository
-1. On the left side, click on 2. `Add Identifiers`
+1. On the left side, click on 2. <code>Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a drop-down menu
     * You will see your default branch (should be `main`)
     * If your default branch is not `main`, review [GitHub Early Adopters](gh-update.md#github-early-adopters)
@@ -585,22 +649,36 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-The `Add Identifier` <span class=notranslate>Action</span> should complete (succeed or fail) in a few minutes as shown in the graphic below.
+The `Add Identifier` <span class=notranslate>Action</span> should succeed or fail in a few minutes.
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }): 
-    * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
-    * Once you've resolved the error, repeat the Action: [Add Identifiers](#add-identifiers) step
+    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 ![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
 {align="center"}
 
 ## Configure Identifiers for Loop
 
+Some steps can be skipped if you previously built Loop with `Mac-Xcode`.
+
+Please read carefully to avoid confusion.
+
 ### Create App Group
 
-The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. If that is the case, skip ahead to [Find Loop Identifier](#find-loop-identifier).
+??? abstract "`Section Summary` (click to open/close)"
+    [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built Loop via Xcode using this Apple ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+
+    1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
+    1. For Description, use "Loop App Group".
+    1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
+    1. Click "Continue" and then "Register".
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#add-app-group-to-bundle-identifiers) To skip the detailed instructions, click on [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+
+The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 If you have never built Loop with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
@@ -611,17 +689,17 @@ If you have never built Loop with *Xcode* using your `TEAMID`, you need to creat
     * A mistake here means you will not be able to build Loop until you fix it
 1. Click `Continue` and then `Register`.
 
-### Find Loop Identifier
+### Add App Group to Bundle Identifiers
 
-Open this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
+Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
 
 #### New Builders
 
-If you never built using *Xcode*, then after successfully performing the `Add Identifiers` *Action*, you will see the six items listed under **`NAME`** in the table below with the associated **`IDENTIFIER`** information, where your `Developer ID` replaces the `TEAMID` in the identifier.
+If you never built using *Xcode*, then after successfully performing the <code>Add Identifiers</code> *Action*, you will see the six items listed under **`NAME`** in the table below with the associated **`IDENTIFIER`** information, where your `Developer ID` replaces the `TEAMID` in the identifier.
 
 #### Previous Xcode Builders
 
-If you have built Loop using *Xcode*, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. There may be other differences in the **`NAME`** column, but key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below are of interest when building Loop.
+If you have built Loop using *Xcode*, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. There may be other differences in the **`NAME`** column, do ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below are of interest when building Loop.
 
 #### Table with Name and Identifier for Loop 3
 
@@ -634,14 +712,42 @@ If you have built Loop using *Xcode*, then at least the Loop identifier will app
 | `WatchApp` | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
+!!! warning "Loop dev Builders"
+    The name and identifier for "`Small Status Widget`" has been renamed to the more appropriate "`Loop Widget Extension`". If you are using released code - this won't affect you until the next release. At that time, this table will be updated.
+
+    If you are building with dev branch, follow the directions at [One-Time Changes](../gh-actions/gh-update.md#one-time-changes).
+
 !!! warning "Loop 2 to Loop 3 Builders"
     Several people who built earlier versions of Loop with *Xcode* and are using the GitHub method say they can't find the *identifier names*. You can key off the **`IDENTIFIER`** instead of the **`NAME`** column in the table above.
 
     Or
 
-    Follow the [`Delete Identifiers`](#delete-identifiers) instructions and then run Action: `Add Identifiers` again. You might not be able to delete the "Loop" identifier, so it will still begin with `XC`, but the others will appear with the short names shown above.
+    Follow the [`Delete Identifiers`](#delete-identifiers) instructions and then run Action: <code>Add Identifiers</code> again. You might not be able to delete the "Loop" identifier, so it will still begin with `XC`, but the others will appear with the short names shown above.
 
 ### Add or Review Configuration for Loop Identifier
+
+??? abstract "`Section Summary` (click to open/close)"
+    Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. A table was provided above that lists both `Names` and `Identifiers`. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.
+
+    Note 2 - Depending on your build history, you may find some of the Identifiers are already configured - and you are just verifying the status; but in other cases, you will need to configure the Identifiers.
+
+    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+    1. For each of the following identifier names:
+        * `Loop`
+        * `Loop Intent Extension`
+        * `Loop Status Extension`
+        * `Small Status Widget` (released code) / `Loop Widget Extension` (dev branch)
+    1. Click on the identifier's name.
+    1. On the "App Groups" capabilies, click on the "Configure" button.
+    1. Select the "Loop App Group"
+    1. Click "Continue".
+        * For the `Loop Identifier` only, you must add a check box next to `Time Sensitive Notifications`
+        * This is only required for released code, it is automatically selected for dev branch
+    1. Click "Save".
+    1. Click "Confirm".
+    1. Remember to do this for each of the identifiers above.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
 Find and click on the row for the Loop identifier on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop. 
 
@@ -719,7 +825,23 @@ The full list of Identifiers should be displayed again.
 
 ## Create Loop App in App Store Connect
 
-If you have created a `Loop app` in *App Store Connect* before, you can skip this section.
+??? abstract "`Section Summary` (click to open/close)"
+    If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
+
+    1. Right click on the link [apps list](https://appstoreconnect.apple.com/apps) top open App Store Connect and click the blue "plus" icon to create a New App.
+        * Select "iOS".
+        * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
+        * Select your primary language.
+        * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
+        * SKU can be anything; e.g. "123".
+        * Select "Full Access".
+    1. Click Create
+
+    You do not need to fill out the next form. That is for submitting to the app store.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#create-certificates) To skip the detailed instructions, click on [Create Certificates](#create-certificates).
+
+If you have created a `Loop app` in *App Store Connect* before, skip ahead to [Create Certificates](#create-certificates).
 
 If have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your Loop in the *App Store* but can't see it. Don't worry - there are instructions for this case.
 
@@ -794,7 +916,15 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 * You are done with this step and ready to Create Certificates
 
-## Create Certificates
+## `Create Certificates`
+
+??? abstract "`Section Summary` (click to open/close)"
+    1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
+    1. On the left side, select "3. Create Certificates".
+    1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+    1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#build-loop) To skip the detailed instructions, click on [Build Loop](#build-loop)
 
 Refer to the graphic below for the numbered steps:
 
@@ -810,9 +940,21 @@ Refer to the graphic below for the numbered steps:
 
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
-    * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`. (The `Add Identifiers` might not be required but it is fast and should be done as a matter of routine.)
+    * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`. (The <code>Add Identifiers</code> might not be required but it is fast and should be done as a matter of routine.)
 
-## Build Loop
+## `Build Loop`
+
+??? abstract "`Section Summary` (click to open/close)"
+    1. Click on the "Actions" tab of your LoopWorkspace repository.
+    1. On the left side, select "4. Build Loop".
+    1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
+    1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
+    1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
+    1. For each phone/person you would like to support Loop on:
+        * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
+        * Add them to your TestFlight Internal Testing group.
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
 
 Refer to the graphic below for the first four steps:
 
@@ -914,7 +1056,7 @@ To make it easy when configuring the identifiers, go through and delete as many 
 * It is OK to delete an identifier even if it does have your correct `TEAMID`
     * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
 * Note - this graphic indicates where on this page you can find your `TEAMID`
-    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update Secrets](gh-update.md#update-secrets) with your correct `TEAMID`
+    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
     * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
