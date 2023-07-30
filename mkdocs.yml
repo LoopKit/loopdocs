@@ -155,7 +155,7 @@ nav:
     - 'Apple Watch': 'operation/features/watch.md'
     - 'Loop Notifications': 'operation/features/notifications.md'
     - 'Pre-Meal Target': 'operation/features/premeal.md'
-    - 'Using ICE Info': 'operation/features/ice.md'
+    - 'Meal Review': 'operation/features/ice.md'
     - 'iPhone Widget': 'operation/features/widget.md'
     - Loop Tips: 'operation/loop/looptips.md'
     - Algorithm:
