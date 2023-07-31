@@ -46,7 +46,9 @@ For example, the biggest weakness I had in this (and suspected it even as I did 
 ![img/ice-6.jpg](img/ice-6.jpg){width="700"}
 {align="center"}
 
-So remember to check your Carbohydrates page at the end of a meal's absorption.  By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.
+!!! tip "Check Carbohydrates Page"
+    Remember to check your Carbohydrates page at the end of a meal's absorption.   
+    By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.
 
 !!! note 
     Remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that Loop doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed to ICE when they really aren't food-related.  In those cases, address the underlying cause and then use the ICE pages when you've come back to "normal".
