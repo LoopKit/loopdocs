@@ -182,10 +182,12 @@ Many features people used with FreeAPS are now included in Loop 3 or can be adde
 
 Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code_customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/). The special fork mentioned above, with build instructions below, includes a subset of the customizations available with the Customization Select script.
 
-For those who need Libre support, there are several options. If you want to use xDrip4iOS or GlucoseDirect, you must add the interface to one of these apps to Loop. The Loop with Patches selection in the Build Select Script uses the fork mentioned above that provides support for those two CGM apps. You will also need to build and install xDrip4iOS or GlucoseDirect on your phone using the same Apple Developer ID as was used for Loop.
+For those who need Libre support, there are several options.
 
-* The customizations included in the fork (mentioned above) are described in [Loop and Learn: Summary of Loop with LnL Patches](https://www.loopandlearn.org/main-lnl-patches)
-    * For Browser Build, follow the direction at [Loop and Learn: GitHub Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code/#add-lnl-patches)
-    * For Mac-Xcode build, choose the Loop with Patches selection in the [Build Select Script](../build/step14.md#download-loop).
+* The [Loop-dev branch](../version/build-dev.md) already includes LibreTransmitter; which means the next release of Loop will have this support
+* For released code, Loop 3.2.x:
+    * If you want to use [xDrip4iOS or GlucoseDirect](../build/code_customization.md#libre-support-for-loop-32x-code), you must add the interface to one of these apps to Loop
+    * The Loop with Patches selection in the [Build Select Script](../build/step14.md#build-select-script) provides support for those two CGM apps
+    * You will also need to build and install xDrip4iOS or GlucoseDirect on your phone using the same Apple Developer ID as was used for Loop
 
 

@@ -15,7 +15,9 @@
 
 !!! question "FAQs"
 
-    - **"What about Libre sensors?"** A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support
+    - **"What about Libre sensors?"**
+        1. Libre support is available in the [Loop-dev branch](../version/build-dev.md) - be sure to read information at that link about running the dev branch
+        1. A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support for released code (Loop 3.2.x)
     - **"What about Eversense?"** Refer to [CGMs Not Supported in Loop](#cgms-not-supported-in-loop)
 
 
