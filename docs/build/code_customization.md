@@ -766,6 +766,13 @@ Please read the documentation and test any patch that you enable. These patches 
 
 The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches).
 
+## Libre Support for Loop 3.2.x Code
+
+!!! tip "Libre included in dev branch"
+    Libre support is now included in dev branch.
+
+    If you are willing to [build Loop-dev](../version/build-dev.md), you do not need any of these customizations to use a compatible Libre sensor.
+
 ### Add Libre App to Loop Phone
 
 This method only works for Loop 3 and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
@@ -786,6 +793,7 @@ These are the Libre iOS app options.
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so no separate app is required
     * Refer to [LibreTransmitter](#libretransmitter)
+    * This is included in Loop-dev: see [LoopDocs: Building Loop dev](../version/build-dev.md)
 
 Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded or use [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches).
 

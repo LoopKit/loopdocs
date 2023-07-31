@@ -126,6 +126,11 @@ You will be informed that you are downloading open source software. Type `1` and
 
 Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the fork of Loop with added Libre CGM options, CustomTypeOne patches and a custom logo.
 
+!!! tip "Libre included in dev branch"
+    Libre support is now included in dev branch.
+
+    If you are willing to [build Loop-dev](../version/build-dev.md), you do not need Loop with Pathes to use a compatible Libre sensor.
+
 ![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}
 
