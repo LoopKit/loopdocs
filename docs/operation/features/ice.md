@@ -1,6 +1,9 @@
+When on *Loop* main page, tapping on the "Active Carbohydrates" graph will open up the "Carbohydrates" details page that tracks your carb entries for the day (since midnight) and how they are absorbed.
+It is helpful to  review your meals.
+
 ## Insulin Counteraction Effects
 
-Tapping on your Active Carbohydrates graph will open up a page that tracks your carb entries for the day (since midnight).  At the top of the page is a useful graphic called Insulin Counteraction Effects (ICE for short).  What is it?  Basically, a graphical representation of ***predicted*** upward-BG effects vs. ***encountered*** upward-BG effects.
+What is *Insulin Counteraction Effects* (*ICE* for short)?
 
 Consider the possible sources of triggers that counteract insulin (in other words, make BGs go up)
 
@@ -9,18 +12,29 @@ Consider the possible sources of triggers that counteract insulin (in other word
 * illness
 * someone sat too close to you
 
-As we all know, this list can be long but, on "normal" days food will be the single strongest "insulin counteracter".  Food will be the most influence on making BGs go up.  There are also other reasons that BGs climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.
+As we all know, this list can be long but, on "normal" days food will be the strongest "insulin counteracter".  Food will be the most influence on making BGs go up.  There are also other reasons that BGs climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.
 
-If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), Loop will expect most of the UPWARD pressure on BGs are from food.  Loop is calling that upward pressure Insulin Counteraction Effect (ICE).  This is a pretty reasonable assumption so let's use that for the rest of this discussion.
+If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), *Loop* will expect most of the upward pressure on BGs are from food.
+
+[*Insulin Counteraction Effect*](#insulin-counteraction-effects) (*ICE*)  is one very important part of carb absorption but also a foundational part of other things, like *Retrospective Correction* (*RC*).
 
 ## Glucose Change Display
 
-Let's take a look at an example day using the screenshot below.  The graph at the top of your Carbohydrates page represents that upward pressure Loop expects from the food entries.  The predicted ICE is shown as grey bars.  As a meal is tracked by Loop, you'll see green bars of observed ICE.
+ The graph at the top of your "Carbohydrates" details page shows how *Loop* expects carbs to effect your BG (gray bars), and also something called [*ICE*](#insulin-counteraction-effects).
+ It shows how *Loop* is thinking about Carbohydrate absorption, modeling for carb effects, and _also_ shows [*ICE*](#insulin-counteraction-effects). 
+
+- ⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that *Loop* is currently modeling.  
+- 🟩: As a meal is tracked by *Loop*, you'll see green bars of observed carb absorption (including [*ICE*](#insulin-counteraction-effects)).
+
+    !!! info "How *Loop* thinks about carbs" 
+        [*ICE*](#insulin-counteraction-effects) is just one important component of how *Loop* thinks about carbs. The other parts are the user entered data (amount of carbs, and absorption speed), and sometimes *Loop* falls back to a default absorption model that isn't based on *ICE* at all, when *ICE* is < minimum absorption rate.  
+ 
+Let's take a look at an **example** day using the screenshot below.  
 
 ![img/ice-3.png](img/ice-3.png){width="700"}
 {align="center"}
 
-When you make a food entry originally, Loop will save your entry as you've made it.  On the line below your original entry, Loop will also start tracking your food entry assuming a 1.5 times longer carb absorption time.  This helps Loop track carbs that may actually be absorbing longer than you expected (part of that whole dynamic carb absorption modeling).  Loop will be updating that value of "observed" carb absorption time as well as absorbed carbs as your meal goes on.
+When you make a food entry originally, *Loop* will save your entry as you've made it.  On the line below your original entry, *Loop* will also start tracking your food entry assuming a 1.5 times longer carb absorption time.  This helps *Loop* track carbs that may actually be absorbing longer than you expected (part of that whole dynamic carb absorption modeling).  *Loop* will be updating that value of "observed" carb absorption time as well as absorbed carbs as your meal goes on.
 
 ## Practical use
 
@@ -39,9 +53,9 @@ Watching what was going on a little later...BGs were rising at a decent clip and
 ![img/ice-5.png](img/ice-5.png){width="500"}
 {align="center"}
 
-So, how can I use the "Glucose Change" to make this meal better?  I can look at the observed ICE information and the observed carb entry Loop has recorded to adjust my insulin bolusing the next time we eat this meal.
+So, how can I use the ["Glucose Change"](#glucose-change-display)  graph to make this meal better?  I can look at the observed carb information and the observed carb entry *Loop* has recorded to adjust my insulin bolusing the next time we eat this meal.
 
-For example, the biggest weakness I had in this (and suspected it even as I did the initial bolus) was that I underestimated the sauce's fast carbs.  I can see this in the observed ICE graph having the early green peaks after the meal, and in the way that the observed carb distribution was more like 7:2 vs my original guess of 8:1 (slow:fast carbs).  Overall, it appears that I guess on overall carb content pretty closely (90g vs. 89g observed).  Next time we have General Tso's chicken, I will likely bolus it as 70g at 5 hours and 20g at 2 hours.
+For example, the biggest weakness I had in this (and suspected it even as I did the initial bolus) was that I underestimated the sauce's fast carbs.  I can see this in the observed carb absorption graph having the early green peaks after the meal, and in the way that the observed carb distribution was more like 7:2 vs my original guess of 8:1 (slow:fast carbs).  Overall, it appears that I guess on overall carb content pretty closely (90g vs. 89g observed).  Next time we have General Tso's chicken, I will likely bolus it as 70g at 5 hours and 20g at 2 hours.
 
 ![img/ice-6.jpg](img/ice-6.jpg){width="700"}
 {align="center"}
@@ -51,4 +65,4 @@ For example, the biggest weakness I had in this (and suspected it even as I did 
     By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.
 
 !!! note 
-    Remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that Loop doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed to ICE when they really aren't food-related.  In those cases, address the underlying cause and then use the ICE pages when you've come back to "normal".
+    Remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that *Loop* doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed in part to [*ICE*](#insulin-counteraction-effects) when they really aren't food-related.  In those cases, address the underlying cause and then use the Carbohydrates page when you've come back to "normal".
