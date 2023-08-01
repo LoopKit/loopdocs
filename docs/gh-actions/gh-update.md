@@ -1,9 +1,9 @@
-## Update Loop using GitHub Actions
+## Update *Loop* using *GitHub Actions*
 
 This is only available with Loop 3 and Loop development branch.
 
 ??? info "Time Estimate (click to open/close)"
-    Build Loop
+    Build *Loop*
 
     - Start the Build: 5 minutes
     - Wait for build to complete and appear in TestFlight on your phone

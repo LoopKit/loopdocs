@@ -125,6 +125,10 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Loop Cycle**: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
 
+**Loop**: With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
+
+**LoopCaregiver**: An app you can build to provide remote commands to *Loop* using *Nightscout*
+
 **Match-Secrets**: a private repository you must create in your github account, stores keys required to build with github Build Actions
 
 **MTB**: Manual Temp Basal: user initiated temporary basal, Omnipod Common feature
@@ -136,6 +140,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Modules**: the Loop code uses a number of modules to handle different components of the entire app
 
 **Monterey**: operating system for Mac, macOS 12.x
+
+**Nightscout**: a personal website used to view your glucose and diabetes management data, *Loop* can upload to Nightscout
 
 **Onboarding**: familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
 

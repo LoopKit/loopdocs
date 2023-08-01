@@ -214,7 +214,7 @@ Sign in to your Apple Developer account at this link: [Apple developer portal pa
     ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg){width="600"}
     {align="center"}
 
-1. Next to the `Team ID` field, is a 10-character ID number.  
+1. Next to the `Team ID` field, is a 10-character ID number.
   This is your **Apple Developer `TEAMID`**.
 
 ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
@@ -227,7 +227,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
     !!! tip "Do not "type" what you think you see"
         **Copy and paste** the `Team ID` from the webpage.  
-        
+
         * <code>TEAMID</code> must be 10 characters
         * Avoid typing an <span class="loop-biggest">`8`</span> when it should be a <span class="loop-biggest">`B`</span>
 
