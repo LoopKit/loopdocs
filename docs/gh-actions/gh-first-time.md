@@ -1,6 +1,6 @@
 ## Build Loop using GitHub Actions
 
-??? info "`Time Estimate` (click to open/close)"
+??? info "Time Estimate (click to open/close)"
     - If you have never built Loop (allow up to one week elapsed time)
         * Requesting and getting an Apple Developer Account: 1-2 days
         * Creating and configuring your GitHub repositories (without Apple Information): 1-2 hours
@@ -9,7 +9,7 @@
     - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 2 hours
 
-??? abstract "`Page Summary` (click to open/close)"
+??? abstract "Page Summary (click to open/close)"
     Once you have Apple Developer and GitHub accounts:
 
     * Apple: 
@@ -30,7 +30,7 @@
     * Apple: Set up Internal TestFlight Group
     * Phone: Install Loop with TestFlight
 
-??? question "`FAQs` (click to open/close)"
+??? question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
     - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
@@ -39,7 +39,7 @@
 
 This page contains fully detailed steps including graphics.
 
-Some sections have a "`Section Summary` (click to open/close)":
+Some sections have a "Section Summary (click to open/close)":
 
 * To view the summary, click on the row
 * If the summary is all you need to complete that step, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
@@ -137,7 +137,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 
 ## Save Six Secrets
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     You require 6 <code>Secrets</code> (alphanumeric items) to use the GitHub build method and if you use the GitHub method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you will use the same 6 <code>Secrets</code> for each app you build with this method. Each secret is indentified below by `ALL_CAPITAL_LETTER_NAMES`.
 
     * Four <code>Secrets</code> are from your Apple Account
@@ -173,17 +173,27 @@ You need to save your information digitally, so you can copy and paste. The info
 
 ### Collect the Four `Apple Secrets`
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     You will be saving 4 <code>Secrets</code> from your Apple Account in this step.
 
     1. Sign in to the [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list).
-    1. Copy the Team ID from the upper right of the screen. Record this as your `TEAMID`.
-    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: "`FastLane API Key`".
-    1. Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
-    1. Record the key id; this will be used for `FASTLANE_KEY_ID`.
-    1. Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
+    1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
+    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
+    1. [Record three more secrets](#copy-api-key-secrets)
+        * Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
+        * Record the key id; this will be used for `FASTLANE_KEY_ID`.
+        * Download the `API Key` itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-two-github-secrets) To skip the detailed instructions, click on [Collect the Two GitHub Secrets](#collect-the-two-github-secrets)
+
+This section provides detailed instructions for the four <code>Secrets</code> associated with your Apple Developer ID.
+
+|Name|Description|
+|---------|---------|
+|<code>TEAMID</code>|This 10-character identifier is associated with your Apple Developer ID and never changes|
+|<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your Apple Developer ID and never changes|
+|<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an `API Key` in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
+|<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the `API Key` - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
 
 ### New Apple Developer Account
 
@@ -196,21 +206,30 @@ If not, you need to purchase one ($99 annual fee). It may take a few days for th
 
 ### Find <code>TEAMID</code>
 
-Sign in to your account before starting.
+Sign in to your Apple Developer account at this link: [Apple developer portal page](https://developer.apple.com/account).
 
-- Open this link: [Apple developer portal page](https://developer.apple.com/account).
-- Click `Account` in the top menu bar
-- Click the `Membership Details` icon  
-    ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg)
-- Next to the `Team ID` field, is a 10-character ID number.  
+1. Click `Account` in the top menu bar
+1. Click the `Membership Details` icon
+
+    ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg){width="600"}
+    {align="center"}
+
+1. Next to the `Team ID` field, is a 10-character ID number.  
   This is your **Apple Developer `TEAMID`**.
-    ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg)
-- Record this for use when you configure your *Secrets* and when you configure your unique <span class="notranslate">App Group</span>  
-- Stop a moment and double-check - if you get this wrong, you will have errors later
+
+![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
+    {align="center"}
+
+Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create <span class="notranslate">App Group</span>](#create-app-group).
+
+- Stop a moment and double-check
+* If you get this wrong, you will have errors at the very end, which require you to delete some items and repeat some steps on this page
 
     !!! tip "Do not "type" what you think you see"
         **Copy and paste** the `Team ID` from the webpage.  
-        (Avoid the wrong number of characters; avoid typing an `8` when it should be a `B`.)
+        
+        * <code>TEAMID</code> must be 10 characters
+        * Avoid typing an <span class="loop-biggest">`8`</span> when it should be a <span class="loop-biggest">`B`</span>
 
 ### Generate `API Key`
 
@@ -218,19 +237,6 @@ Sign in to your account before starting.
     To generate the `API Key`, you must have a paid Apple Developer account.
 
     If you are waiting for Apple to enable your account, you can skip ahead to create a [New GitHub Account](#new-github-account) and [`GitHub Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure Secrets](#configure-secrets) until your Apple account is active.
-
-!!! abstract "Generate `API Key` and Collect all Four `Apple Secrets`"
-    This section will walk you through the steps required to gather or create these <code>Secrets</code>.
-
-    |Name|Description|
-    |---------|---------|
-    |<code>TEAMID</code>|This 10-character identifier is associated with your Apple Developer ID and never changes|
-    |<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your Apple Developer ID and never changes|
-    |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an `API Key` in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
-    |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the `API Key` - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
-    
-    Each step has a link to the next step. Open each link in a separate tab or window so you can refer back to these instructions as you move along.
-
 
 1. Right click to open this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
     * Click the `Keys` tab
@@ -251,7 +257,6 @@ Sign in to your account before starting.
 
     ![generate api key dialog box](img/dev-generate-key.png){width="500"}
     {align="center"}
-
 
     * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop-down menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
@@ -294,15 +299,16 @@ The `Keys` screen appears again with content similar to the graphic below; the k
 
 ### Do Not Confuse Your Keys
 
-!!! important "`API Key` vs `APN Key`"
-    If you use [Remote Commands with `Nightscout`](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
+!!! important "<span class="loop-big">`API Key`</span> vs <span class="loop-big">`APN Key`</span>"
+    If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the Apple Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
-    The Secrets for building with GitHub use the `API Key`.
+    The <code>Secrets</code> for building with GitHub use the <span class="loop-bigger">`API Key`</span>.
 
-    The config vars for `Nightscout` use the `APN Key`.
+    The config vars for `Nightscout` use the <span class="loop-bigger">`APN Key`</span>.
 
-    * If you are using remote commands with `Nightscout` and building with the GitHub build, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your `Nightscout` site or the remote commands will not work.
-    * This is true for using `Nightscout` directly or using LoopCaregiver.
+    * If you are using remote commands with `Nightscout` and building with the GitHub build
+        * [Remote Commands Config Vars](../nightscout/remote-overrides.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
+    * This is true for using `Nightscout` directly or using *LoopCaregiver*
 
 ### Done with Apple Secrets
 
@@ -342,7 +348,7 @@ The free level comes with plenty of storage and compute time to build Loop.
 
 ### Create `GitHub Personal Access Token`
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     Log into your GitHub account to create a personal access token; this is one of two GitHub <code>Secrets</code> needed for your build.
 
     (Right click on link) to create a [new `personal access token`](https://github.com/settings/tokens/new):
@@ -393,7 +399,7 @@ The first time you build with the GitHub Browser Build method for any DIY app, m
 
 ### Create Match-Secrets
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     The creation of the <code>Match-Secrets</code> repository is a common step for all GitHub Browser Builds; do this step only once. You must be logged into your GitHub account.
 
     (Right click on link) to create a [new empty repository](https://github.com/new) titled <code>Match-Secrets</code>. It should be private.
@@ -437,7 +443,7 @@ You will not directly interact with your `Match-Secrets` repository.
 
 ### Fork LoopWorkspace
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
@@ -483,7 +489,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 ## Configure <code>Secrets</code>
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`. 
     
     * They are added once for a repository and work for all branches of that repository
@@ -604,7 +610,7 @@ The `workflows` are now displayed on the left side as shown in the graphic below
 
 ## Validate <code>Secrets</code>
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     This step validates most of your six <code>Secrets</code> and provides error messages if it detects an issue with one or more.
 
     1. Click on the "Actions" tab of your LoopWorkspace repository and enable workflows if needed
@@ -627,7 +633,7 @@ Note - this section is missing detailed instructions (for now):
 
 ## <code>Add Identifiers</code>
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "2. Add Identifiers".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
@@ -666,7 +672,7 @@ Please read carefully to avoid confusion.
 
 ### Create App Group
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built Loop via Xcode using this Apple ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
     1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
@@ -723,7 +729,7 @@ Because you built Loop using *Xcode*, then the **`NAME`** associated with at lea
 
 ### Add or Review Configuration for Loop Identifier
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. A table was provided above that lists both `Names` and `Identifiers`. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.
 
     Note 2 - Depending on your build history, you may find some of the Identifiers are already configured - and you are just verifying the status; but in other cases, you will need to configure the Identifiers.
@@ -822,7 +828,7 @@ The full list of Identifiers should be displayed again.
 
 ## Create Loop App in App Store Connect
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
 
     1. Right click on the link [apps list](https://appstoreconnect.apple.com/apps) top open App Store Connect and click the blue "plus" icon to create a New App.
@@ -915,7 +921,7 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 ## `Create Certificates`
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
     1. On the left side, select "3. Create Certificates".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
@@ -941,7 +947,7 @@ Refer to the graphic below for the numbered steps:
 
 ## `Build Loop`
 
-??? abstract "`Section Summary` (click to open/close)"
+??? abstract "Section Summary (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "4. Build Loop".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.

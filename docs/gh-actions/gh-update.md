@@ -2,7 +2,7 @@
 
 This is only available with Loop 3 and Loop development branch.
 
-??? info "`Time Estimate` (click to open/close)"
+??? info "Time Estimate (click to open/close)"
     Build Loop
 
     - Start the Build: 5 minutes
@@ -15,7 +15,7 @@ This is only available with Loop 3 and Loop development branch.
     * 5 minutes to regenerate token
     * 5 minutes to update the GH_PAT Secret for each of your app repositories
 
-??? abstract "`Page Summary` (click to open/close)"
+??? abstract "Page Summary (click to open/close)"
     **You must build Loop every 90 days when you use the GitHub build method - this is a TestFlight requirement.**
 
     Most users will start at [GitHub Build Update](#github-build-update).
@@ -27,7 +27,7 @@ This is only available with Loop 3 and Loop development branch.
     * You should be following along with zulipchat when using dev
     * Summary build updates can be found under the [One-Time Changes](#one-time-changes) section
 
-??? question "`FAQs` (click to open/close)"
+??? question "FAQs (click to open/close)"
     - **Do I need a computer?** No.
     - **Can I do this on my phone?** Yes, especially after you update your GitHub token to `No Expiration`.
     - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access Token that never expires. It simplifies the build every 90-day process significantly.
