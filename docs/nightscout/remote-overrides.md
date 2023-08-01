@@ -11,7 +11,7 @@ If you are using &nbsp;<span translate="no">Loop 3</span>, then you can also sen
         * *Nightscout* sites, in general, allow you to add the required **APN** information
     * If you use *T1Pal* for *Nightscout* and want to use remote commands, contact *T1Pal* about enabling them for a subscription fee.
 
-!!! danger "Remote Builds"
+!!! important "Remote Builds"
     There are several methods for building remotely for your family members (or even yourself).
 
     * [*LoopDocs*: *GitHub Build* Actions](../gh-actions/gh-overview.md) (new with Loop 3) allows you to build on a browser (no need for a Mac) and send *Loop* to your phone using *TestFlight*
@@ -154,9 +154,9 @@ Scroll down the bottom of the `Config Vars` lines until you find the last blank 
 That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/). If you later return to a direct *Xcode* build to your phone, you must remove that config var or remote commands will not work.
 
 
-When executed properly, you should have something that looks like this for the three new variables that you added:
+When executed properly, you should have something that looks like this for the three (or four) new variables that you added:
 
-> ![img/override_vars_complete.png](img/override_vars_complete.png)
+> ![the 3 or 4 config vars required for Nightscout remote commands to work](img/override_vars_complete.svg)
 
 ### Do Not Confuse Your Keys
 
