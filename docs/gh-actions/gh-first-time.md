@@ -114,7 +114,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 **Everyone needs to read this section!**
 
 !!! tip "Archive Your Information"
-    For many of the steps on this page, you will need your username, email address, password, and in some cases, special parameters for Apple and GitHub.
+    For many of the steps on this page, you will need username, email address,  and password for Apple and GitHub. And you will require six <code>Secrets</code>.
 
     * Record these in a safe place where you can find them
     * A digital copy is best for copying and pasting in different locations
@@ -122,11 +122,9 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
 !!! info "A Note about Capitalization and Spaces"
-    In places, you will be told to give something a name like "`FastLane API Key`" or "`FastLane Access Token`". Please copy from the docs to use those exact names.
+    In places, you will use a name like "`FastLane API Key`" or "`FastLane Access Token`". Please copy from the docs to use those exact names.
 
-    The <code>Secrets</code> that you will add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
-
-     The relationship and creation of each item is explained step-by-step on this page.
+    The <code>Secrets</code> that you add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
 
 !!! important "Use a Text-Only Editor"
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
@@ -216,7 +214,7 @@ Sign in to your account before starting.
 
 ### Generate `API Key`
 
-!!! info "Need a Paid Apple Developer Account Set Up to Generate the `API Key`"
+!!! info "Paid Apple Developer Account is Required"
     To generate the `API Key`, you must have a paid Apple Developer account.
 
     If you are waiting for Apple to enable your account, you can skip ahead to create a [New GitHub Account](#new-github-account) and [`GitHub Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure Secrets](#configure-secrets) until your Apple account is active.
@@ -691,15 +689,21 @@ If you have never built Loop with *Xcode* using your `TEAMID`, you need to creat
 
 ### Add App Group to Bundle Identifiers
 
-Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
+[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built Loop using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 #### New Builders
 
-If you never built using *Xcode*, then after successfully performing the <code>Add Identifiers</code> *Action*, you will see the six items listed under **`NAME`** in the table below with the associated **`IDENTIFIER`** information, where your `Developer ID` replaces the `TEAMID` in the identifier.
+Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
+
+If you never built using *Xcode*, then after the <code>Add Identifiers</code> *Action*, you will see the six items under **`NAME`** in the table below with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the identifier.
+
+[<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for Loop 3](#table-with-name-and-identifier-for-loop-3).
 
 #### Previous Xcode Builders
 
-If you have built Loop using *Xcode*, then at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. There may be other differences in the **`NAME`** column, do ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below are of interest when building Loop.
+Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the Apple developer site.
+
+Because you built Loop using *Xcode*, then the **`NAME`** associated with at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building Loop 3.
 
 #### Table with Name and Identifier for Loop 3
 
@@ -713,16 +717,9 @@ If you have built Loop using *Xcode*, then at least the Loop identifier will app
 | `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
 !!! warning "Loop dev Builders"
-    The name and identifier for "`Small Status Widget`" has been renamed to the more appropriate "`Loop Widget Extension`". If you are using released code - this won't affect you until the next release. At that time, this table will be updated.
+    The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using dev branch until the next release. At that time, this table will be updated.
 
     If you are building with dev branch, follow the directions at [One-Time Changes](../gh-actions/gh-update.md#one-time-changes).
-
-!!! warning "Loop 2 to Loop 3 Builders"
-    Several people who built earlier versions of Loop with *Xcode* and are using the GitHub method say they can't find the *identifier names*. You can key off the **`IDENTIFIER`** instead of the **`NAME`** column in the table above.
-
-    Or
-
-    Follow the [`Delete Identifiers`](#delete-identifiers) instructions and then run Action: <code>Add Identifiers</code> again. You might not be able to delete the "Loop" identifier, so it will still begin with `XC`, but the others will appear with the short names shown above.
 
 ### Add or Review Configuration for Loop Identifier
 
@@ -755,16 +752,16 @@ Find and click on the row for the Loop identifier on the [Certificates, Identifi
 |-------|------------|
 | `Loop` | `com.TEAMID.loopkit.Loop` |
 
-The `Edit Your App ID Configuration` screen will open. You will be taking two actions for the Loop identifier.
+The `Edit Your App ID Configuration` screen will open. Take two actions for the Loop identifier.
 
-1. Looking at the `App Services` column, scroll down to the `App Groups` row
+1. In the `App Services` column, scroll down to the `App Groups` row
     * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
     * (`XC Loop`) - If the word `Edit` shows up under `NOTES`, move on to step 2 below
     * If the word `Configure` shows up, tap on it
         * This opens the `App Group Assignment` screen
         * Check the box by `Loop` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
 1. Continue scrolling down to the **`Time Sensitive Notifications`** row
-    * Check, or confirm the box is checked, next to `Time Sensitive Notifications` as shown in the following graphic
+    * Make sure the box next to `Time Sensitive Notifications` is checked as shown in the following graphic
     * This is only needed for the `Loop` *identifier*
 
     ![time sensitive notification](img/add-time-sensitive-to-loop.png){width="600"}
@@ -801,7 +798,7 @@ You will now be checking the status for 3 more identifiers to ensure the App Gro
 
 Find and click on a given identifier row on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
 
-The `Edit Your App ID Configuration` screen will open. You will be taking one action for each of these three identifiers.
+The `Edit Your App ID Configuration` screen will open. Take one action for each of these three identifiers.
 
 Looking at the `App Services` column, scroll down to the `App Groups` row
 

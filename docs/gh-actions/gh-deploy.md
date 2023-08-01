@@ -19,7 +19,7 @@ In order to install Loop, the TestFlight app must be installed on the phone:
 
 * Open the App Store and Search for TestFlight (see GIF below)
 * Choose TestFlight and Install or Download to that phone
-    * Hint on child's phone, do this while logged in as yourself for Media & Purchase
+    * Hint: On child's phone, do this while logged in as yourself for Media & Purchase
     * Logging in as an adult is explained in [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
 
 ![search for and dowload TestFlight](img/testflight-app-store.gif){width="300"}
