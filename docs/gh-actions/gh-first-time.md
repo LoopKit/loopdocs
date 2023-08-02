@@ -39,17 +39,21 @@
 
 This page contains fully detailed steps including graphics.
 
-Some sections have a "Section Summary (click to open/close)":
+Some sections have a Section Summary:
 
 * To view the summary, click on the row
-* If the summary is all you need to complete that step, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
-* Or follow detailed instructions below the summary
+* If the summary is all you need, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
+* Or follow the detailed instructions below the summary
+
+As you configure for Browser Build, you go back and forth between GitHub and Apple Developer webpages. Use right click to open a new tab or copy a link address, as appropriate, while proceeding.
 
 An automatic table of contents (TOC) should appear for each page on the right side of your browser (if browser is "wide" enough). If not, tap on the hamburger menu (upper left) and this page name to see the TOC.
 
-For sparse instructions without the details, right click on the link below:
+For sparse instructions, right click on the link below:
 
 * [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
+
+
 
 ## Prerequisites
 
@@ -68,8 +72,6 @@ To install Loop, you need the TestFlight app, from the Apple App Store, installe
 
 To use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
 
-For the initial steps, you'll be going back and forth between GitHub and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.
-
 ## New Terms with GitHub Build
 
 [<span class="loop-big">:material-skip-forward:</span>](#save-your-information) You can read details about new terms with GitHub build or skip ahead to [Save Your Information](#save-your-information).
@@ -85,7 +87,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 * `Modules`:
     * The Loop code uses modules to handle different components of the app
     * Some modules must be associated with your unique App Group
-* `Identifiers`: The Identifiers are Modules required to build Loop with GitHub
+* `Identifiers`: are required to build Loop with GitHub
     * Four Identifier Names must be associated with your App Group
         * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
         * For dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
@@ -94,7 +96,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
         * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
         * The items under the **`IDENTIFIER`** column match the table in [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
-* <code>Secrets</code>: required to enable GitHub to build Loop using GitHub Actions
+* <code>Secrets</code>: are required to enable GitHub to build Loop using GitHub Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same GitHub build method
@@ -105,7 +107,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 * API `Key`: Application Programming Interface Key
     * You obtain and save this key from the Apple Developer website
     * It is required to enable your GitHub account to interface with Apple to create your app
-* `Actions`: available in your GitHub account to build your app (once you follow the instrctions on this page)
+* `Actions`: are available in your GitHub account to build your app (once you follow the instructions on this page)
     * With Loop 3, the actions: `Verify Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
     * If GitHub Actions are not operating as you expect, check [GitHub Status](https://www.githubstatus.com/) to see if it is GitHub problem.
 
@@ -114,7 +116,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 **Everyone needs to read this section!**
 
 !!! tip "Archive Your Information"
-    For many of the steps on this page, you will need username, email address,  and password for Apple and GitHub. And you will require six <code>Secrets</code>.
+    For many of the steps on this page, you will need username, email address,  and password for Apple and GitHub. You will require six <code>Secrets</code>.
 
     * Record these in a safe place where you can find them
     * A digital copy is best for copying and pasting in different locations
@@ -122,9 +124,9 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
 !!! info "A Note about Capitalization and Spaces"
-    In places, you will use a name like "`FastLane API Key`" or "`FastLane Access Token`". Please copy from the docs to use those exact names.
+    In places, you use a name like "`FastLane API Key`" or "`FastLane Access Token`". Please copy from the docs to use those exact names.
 
-    The <code>Secrets</code> that you add later use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
+    The <code>Secrets</code> that you add use names that are capitalized and use underscore ++"_"++ instead of spaces. Be precise and careful.
 
 !!! important "Use a Text-Only Editor"
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
@@ -506,10 +508,9 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#validate-secrets) To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
 
-!!! tip "<code>Secrets</code> can be used for Other Apps"
-    * Six <span class="notranslate">Secrets</span> must be added to your fork of `LoopWorkspace`
-    * These <span class="notranslate">Secrets</span> work for any branch in your fork (`main` or `dev`, for example)
-    * These same <span class="notranslate">Secrets</span> would be added to your <span class="notranslate">fork</span> of a repository for [Other Apps](gh-other-apps.md)
+!!! tip "`Branches` and `Repositories`"
+    * These <span class="notranslate">Secrets</span> are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
+    * These <span class="notranslate">Secrets</span> must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
 
 Log into GitHub.
 
@@ -536,24 +537,27 @@ Log into GitHub.
         {align="center"}
 
 1. Tap on the green button at the top right of your screen labeled `New repository secret` (highlighted above)
-    * A new dialog screen appears as shown in the graphic below
-    * Do not do anything until reading the sub-bullets and proceeding to the next section
-        * In the `Name *`  box where it says `YOUR_SECRET_NAME`, you will click in the box and paste one of the 6 secret names, as directed in [Enter Each Secret](#enter-each-secret)
-        * In the `Secret *` box, you will click in the box and paste the value for that secret
+    * A new screen appears as shown in the first graphic below
+    * Do not do anything until reading the sub-bullets, examining the graphics and proceeding to the next section where each `Secret` name is provided for you to copy and paste
+        * Under `Name *`, click on `YOUR_SECRET_NAME` and paste one of the 6 secret names, as directed in [Enter Each Secret](#enter-each-secret)
+        * Click inside the `Secret *` box and paste the value for that secret
         * Once you click on `Add Secret`, the secret will be added
+        * The second graphic below shows `TEAMID` added and ready for save
 
 ![dialog for entering a new secret](img/new-secret-dialog.png){width="700"}
 {align="center"}
 
+![teamid secret ready to be saved](img/teamid-secret-ready-to-save.png){width="700"}
+{align="center"}
+
 #### Enter Each Secret
 
-Enter each of the <code>Secrets</code> found in [Save Your Information](#save-your-information). You will enter the `Name` of each `Secret` and your value for each `Secret`.
+Enter the name of each <code>Secret</code> found in [Save Your Information](#save-your-information) and your value for that `Secret`.
 
 * Once you save a secret value, you will not be able to view what you entered, so check carefully before you hit `Add Secret`
     * You can replace the value for any secret later - but you can't view the saved value
-* If you make a mistake, the actions you take next will fail, but the error messages will identify which <code>Secrets</code> you need to fix
-* Confirm that your `TEAMID` is correct
-    * If it is not, the intial Actions will succeed but Build Loop will fail and you will have some clean-up to do
+* Be especially careful with your `TEAMID`
+    * If `TEAMID` is incorrect, the intial `Actions` will succeed but `Build Loop` will fail and you will have some clean-up to do
 
 You can copy the names of the <code>Secrets</code> by hovering to the right of each word below until you see the copy button (:material-content-copy:). Click on the button to copy the `Secret` name and paste it into GitHub where you see `YOUR_SECRET_NAME`. This avoids spelling errors.
 ``` { .text .copy }
@@ -590,7 +594,7 @@ Once all six <code>Secrets</code> have been added to your `LoopWorkspace`, your 
 !!! tip "Time for a Break?"
     :fontawesome-regular-circle-pause: This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-### First Use of Actions Tab
+## First Use of Actions Tab
 
 Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span> is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
 

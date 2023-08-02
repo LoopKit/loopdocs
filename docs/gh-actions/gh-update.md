@@ -71,10 +71,10 @@ Open your GitHub account and select your LoopWorkspace repository from your repo
 
 Refer to graphic below as you follow the steps to Build Loop.
 
-* Click on the 'Actions' tab
-* Select the '4. Build Loop' workflow on the left
+* Click on the `Actions` tab
+* Select the `4. Build Loop` workflow on the left
     * If using a mobile browser, be sure to use landscape mode to more closely match how GitHub looks on a computer.
-* Look on the right and click 'Run workflow' to  see the dropdown
+* Look on the right and click `Run workflow` to  see the dropdown
 * Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
 * It is then processed by Apple and sent to TestFlight (be patient)
@@ -84,7 +84,7 @@ Refer to graphic below as you follow the steps to Build Loop.
 
 #### What if the Build Fails
 
-If a new release is announced, look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)
+If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)
 
 If you are using the dev branch, head over to [GitHub Build for dev](#github-build-for-dev) for information.
 
@@ -138,7 +138,7 @@ Option 2: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-
 
 ## GitHub Build Details
 
-In the Loop app, once installed on your phone, tap on Settings -> Support -> Issue Report. The graphic below shows an example of the Build Details included in the report.
+In the Loop app, once installed on your phone, tap on `Settings -> Support -> Issue Report`. The graphic below shows an example of the Build Details included in the report.
 
 * The `profileExpiration` listed here is irrelevant - the app expires when the TestFlight expiration indicates
     * Pro Tip: Add a calender reminder for your next build
@@ -297,7 +297,7 @@ For those using dev, you must follow these one-time steps:
 
 Your LoopWorkspace fork is at `https://github.com/username/LoopWorkspace` where you substitute your actual GitHub `username`. You need to be logged into GitHub. Review the graphic below as you go through the steps.
 
-1. Click on the Branches icon to display the branches as shown in the lower half of the graphic below:
+1. Click on the `Branches` icon to display the branches as shown in the lower half of the graphic below:
     * If the branch you want is not listed, then continue with Step 2
     * Otherwise, skip ahead to [Update Branch](#update-branch)
 1. Click on the `New branch` button and follow the [Add Branch](#add-branch) steps
