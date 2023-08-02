@@ -13,21 +13,23 @@
 * Updates are easy
 * Starting an update takes a few minutes of your time; the rest is automatic
 
+
 ### Disadvantages of GitHub Build
 
 * After you start GitHub Build, the automatic process takes about an hour
-    * You receive an email indicating success (or failure)
+    * You will receive an email indicating success (or failure)
     * Loop appears in the TestFlight app on the Loop phone, where it can be installed in seconds
-* If you want a personalized code customization (rather than a prepared one), it can be more tedious to set up but is easy to maintain
-    * Frequently used customizations are prepared for you to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
-    * Personalized customization instructions are documented at [Customize with GitHub](../gh-actions/gh-customize.md)
+* Personalized code customizations are tedious to set up but easy to maintain
+    * Instructions are documented at [Customize with GitHub](../gh-actions/gh-customize.md)
+    * Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#prepared-custom-list)
+
 
 ## Requirements
 
 * **Loop 3 requires iOS 15.1 or higher.**
 * **Temporary: "`Nightscout as a CGM`" only works with iOS 16 and higher for released code (3.2.x); but with iOS 15 and iOS 16 for dev branch.**
 
-The requirements for building and using the Loop app with the GitHub Build method are given below.
+To Loop with the GitHub Build method, you need:
 
 1. [Compatible iPhone/iPod Touch](../build/step2.md)
 1. [Compatible Pump](../build/step3.md)
@@ -43,7 +45,7 @@ The requirements for building and using the Loop app with the GitHub Build metho
 
 ## First-Time GitHub Builder
 
-There are a number of steps that must be completed the first time you use this method.
+Steps that must be completed the first time are found at:
 
 * [GitHub First-Time](../gh-actions/gh-first-time.md)
 
@@ -64,7 +66,7 @@ Try to:
 * Scroll back in the directions and see if you missed a paragraph or step.
 * Compare your display with the graphics in LoopDocs.
     * Is something different or does yours have an error message?
-    * If you have an error message, does it guide you to the problem and solution?
+    * Does the error message guide you to the problem and solution?
     * Be aware that GitHub often updates where things are - search for GitHub directions if your display looks different than LoopDocs.
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 

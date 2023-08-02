@@ -1,9 +1,9 @@
-## Update Loop using GitHub Actions
+## Update *Loop* using *GitHub Actions*
 
 This is only available with Loop 3 and Loop development branch.
 
-!!! info "Time Estimate"
-    Build Loop
+??? info "Time Estimate (click to open/close)"
+    Build *Loop*
 
     - Start the Build: 5 minutes
     - Wait for build to complete and appear in TestFlight on your phone
@@ -15,44 +15,50 @@ This is only available with Loop 3 and Loop development branch.
     * 5 minutes to regenerate token
     * 5 minutes to update the GH_PAT Secret for each of your app repositories
 
-!!! abstract "Summary"
+??? abstract "Page Summary (click to open/close)"
     **You must build Loop every 90 days when you use the GitHub build method - this is a TestFlight requirement.**
 
-    * The GitHub Personal Access Token expiration is independent of the TestFlight app expiration
-        * LoopDocs used to have you set up your token to expire at the same time as TestFlight but that added an unnecessary burden to the update process
-        * The new recommendation is that your GitHub Personal Access Token be updated to `No Expiration`
-    * To update your GitHub Personal Access Token, start at [GitHub Token](#github-token)
-    * Otherwise, start at [GitHub Build Update](#github-build-update)
+    Most users will start at [GitHub Build Update](#github-build-update).
 
-!!! question "FAQs"
+    If your `GitHub Personal Access Token` has expired, we recommend you update it with `No Expiration` as explained at [GitHub Token](#github-token).
+
+    If you are running Loop-dev, be sure to review [GitHub Build for dev](#github-build-for-dev)
+
+    * You should be following along with zulipchat when using dev
+    * Summary build updates can be found under the [One-Time Changes](#one-time-changes) section
+
+??? question "FAQs (click to open/close)"
     - **Do I need a computer?** No.
     - **Can I do this on my phone?** Yes, especially after you update your GitHub token to `No Expiration`.
     - **Did the directions change?** Yes. We now recommend you select a GitHub Personal Access Token that never expires. It simplifies the build every 90-day process significantly.
-    - **How do I set my GitHub Personal Access token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token).
-    - **What happens to my existing builds when I change my GitHub Personal Access Token?** Nothing. The GH_PAT only affect future builds. Previous build will be available for the full 90 days.
+    - **How do I set my `GitHub Personal Access` token to never expire?** See this section [Regenerate GitHub Token](#regenerate-github-token).
+    - **What happens to my existing builds when I change my GitHub Personal Access Token?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build will be available for the full 90 days.
 
 ## GitHub Build Update
 
 !!! abstract "Summary of Update Steps"
+    * [Accept Agreements](#accept-agreements)
     * [Update Fork](#update-fork)
     * [Build Loop](#build-loop)
     * [Wait for TestFlight](#wait-for-testflight)
     * [Install or Confirm Installation](#install-or-confirm-installation)
 
+### Accept Agreements
+
+Sign in to your [Apple Developer account](https://developer.apple.com/account). If there are agreements you have not accepted, you will get errors when you try to Build that indicate your Apple <code>Secrets</code> are incorrect - that is very unlikely.
+
+* For an update, you do not need to modify the <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code>
+* Check you Apple Developer account for agreements, then continue
+
+
 ### Update Fork
 
-Open GitHub in your browser (sign in if needed) and select your LoopWorkspace repository from your repositories list.
-
-Look to see if your fork is up to date.
-
-* When you go to your fork to do the update, simply sync the branch if it says there are updates and you get the latest release (details below graphic)
-    * This particular graphic shows the dev branch
-    * Yours should show the main branch
+Open your GitHub account and select your LoopWorkspace repository from your repositories list.
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
-* If your fork is up to date with LoopKit version for that `{branch}`, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in TestFlight is about to expire - in which case, proceed to [Build Loop](#build-loop)
+* If your fork is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in TestFlight is about to expire - in which case, proceed to [Build Loop](#build-loop)
 * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on `Update branch`
 * If your fork shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually sync and choose to `discard changes`; you can always customize again after the update
 
@@ -63,12 +69,12 @@ Look to see if your fork is up to date.
 
 ### Build Loop
 
-The section continues immediately after the [Update Fork](#update-fork) section. Refer to graphic below as you follow the steps to Build Loop.
+Refer to graphic below as you follow the steps to Build Loop.
 
-* Click on the 'Actions' tab
-* Select the '4. Build Loop' workflow on the left
+* Click on the `Actions` tab
+* Select the `4. Build Loop` workflow on the left
     * If using a mobile browser, be sure to use landscape mode to more closely match how GitHub looks on a computer.
-* Look on the right and click 'Run workflow' to  see the dropdown
+* Look on the right and click `Run workflow` to  see the dropdown
 * Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
 * It is then processed by Apple and sent to TestFlight (be patient)
@@ -78,7 +84,9 @@ The section continues immediately after the [Update Fork](#update-fork) section.
 
 #### What if the Build Fails
 
-There are some updates where you need to run some actions before build. If a new release is announced, look to see if there are instructions about this. In those cases, you will probably be told to run Action 2: Add Identifiers and Action 3: Create Certificates before Action 4: Build Loop. Those steps are fast and there is no harm in trying them.
+If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)
+
+If you are using the dev branch, head over to [GitHub Build for dev](#github-build-for-dev) for information.
 
 Otherwise, head over to [GitHub Errors](gh-errors.md).
 
@@ -88,8 +96,10 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
     * Click on the most recent Build job with the red x by it
-    * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)", make sure your developer account is in good standing and that there are no agreements that need to be accepted
-    * Repeat the build (previous step) and it should be fine the next time - that just means Apple did not reply to GitHub as fast as GitHub expected
+    * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)"
+         * This means Apple did not reply to GitHub as fast as GitHub expected
+         * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
+        * Repeat the build (previous step)
 
 #### Apple Email to Ignore
 
@@ -128,9 +138,9 @@ Option 2: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-
 
 ## GitHub Build Details
 
-In the Loop app, once installed on your phone, tap on Settings -> Support -> Issue Report. The graphic below shows an example of the Build Details included in the report.
+In the Loop app, once installed on your phone, tap on `Settings -> Support -> Issue Report`. The graphic below shows an example of the Build Details included in the report.
 
-* The `profileExpiration` listed here is irrelevant - the app expires when the TestFlight expiration indicates - a later version of Loop 3 will probably capture that date and provide a notification in the app; but for now, you must remember
+* The `profileExpiration` listed here is irrelevant - the app expires when the TestFlight expiration indicates
     * Pro Tip: Add a calender reminder for your next build
 * An app built with GitHub will display a `sourceRoot` that starts with `/Users/runner/work/LoopWorkspace`
     * The `buildDateString` is when the app was built and transferred to TestFlight, not when it was installed on your phone
@@ -287,7 +297,7 @@ For those using dev, you must follow these one-time steps:
 
 Your LoopWorkspace fork is at `https://github.com/username/LoopWorkspace` where you substitute your actual GitHub `username`. You need to be logged into GitHub. Review the graphic below as you go through the steps.
 
-1. Click on the Branches icon to display the branches as shown in the lower half of the graphic below:
+1. Click on the `Branches` icon to display the branches as shown in the lower half of the graphic below:
     * If the branch you want is not listed, then continue with Step 2
     * Otherwise, skip ahead to [Update Branch](#update-branch)
 1. Click on the `New branch` button and follow the [Add Branch](#add-branch) steps
