@@ -127,7 +127,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Loop**: With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
 
-**LoopCaregiver**: An app you can build to provide remote commands to *Loop* using *Nightscout*
+**LoopCaregiver**: An app you can build to provide remote commands to `Loop` using `Nightscout`
 
 **Match-Secrets**: a private repository you must create in your github account, stores keys required to build with github Build Actions
 
@@ -141,7 +141,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Monterey**: operating system for Mac, macOS 12.x
 
-**Nightscout**: a personal website used to view your glucose and diabetes management data, *Loop* can upload to Nightscout
+**Nightscout**: a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`
 
 **Onboarding**: familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
 
