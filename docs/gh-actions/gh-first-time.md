@@ -12,23 +12,23 @@
 ??? abstract "Page Summary (click to open/close)"
     Once you have Apple Developer and GitHub accounts:
 
-    * Apple: 
+    * *Apple*:
         * Generate and save four <code>Secrets</code>
-    * GitHub:
+    * *GitHub*:
         * Generate and save two <code>Secrets</code>
         * Create a <code>Match-Secrets</code> private repository
-        * Fork a repository (copy of LoopWorkspace)
+        * Fork a repository (copy of `LoopWorkspace`)
         * Add <code>Secrets</code> to your repository
         * `Action: 1. Verify Secrets`
         * `Action: 2. Add Identifiers`
-    * Apple:
-        * Configure Identifiers for Loop
-        * Create your version of Loop in App Store (personal use only, not for distribution)
-    * GitHub:
+    * *Apple*:
+        * Configure Identifiers for *Loop*
+        * Create your version of *Loop* in `App Store` (personal use only, not for distribution)
+    * *GitHub*:
         * `Action: 3. Create Certificates`
         * `Action: 4. Build Loop`
-    * Apple: Set up Internal TestFlight Group
-    * Phone: Install Loop with TestFlight
+    * *Apple*: Set up `Internal TestFlight Group`
+    * Phone: Install *Loop* with *TestFlight*
 
 ??? question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
