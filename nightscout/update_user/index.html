@@ -2333,24 +2333,24 @@
 
   <h1>Nightscout with Loop</h1>
 
-<h2 id="adding-loop-to-existing-nightscout-site">Adding Loop to Existing Nightscout Site<a class="headerlink" href="#adding-loop-to-existing-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Many people may already have an existing Nightscout site setup from before adding Loop to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing Nightscout site a bit specifically for Loop. The process is pretty easy and should not take long.</p>
-<p>The graphics on this page are from a Heroku implementation for <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> Nightscout. When you read the Nightscout documents, you'll notice there are a lot more options than just Heroku. When Heroku announced that the "free" tier for Heroku would be disabled in November 2022, the #WeAreNotWaiting community developed a lot of options - both free <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr>, nominal cost <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> and there were already several companies that provide Nightscout as a service. If your site is not with Heroku, you need to translate how to adjust the configuration variables.</p>
+<h2 id="adding-loop-to-existing-nightscout-site">Adding <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to Existing <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Site<a class="headerlink" href="#adding-loop-to-existing-nightscout-site" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Many people may already have an existing <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site setup from before adding <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site a bit specifically for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. The process is pretty easy and should not take long.</p>
+<p>The graphics on this page are from a Heroku implementation for <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>. When you read the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> documents, you'll notice there are a lot more options than just Heroku. When Heroku announced that the "free" tier for Heroku would be disabled in November 2022, the #WeAreNotWaiting community developed a lot of options - both free <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr>, nominal cost <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> and there were already several companies that provide <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> as a service. If your site is not with Heroku, you need to translate how to adjust the configuration variables.</p>
 <h2 id="variables-for-loopers">Variables for Loopers<a class="headerlink" href="#variables-for-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once you have created a Nightscout site, there are some Nightscout <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> specific to Loop.</p>
+<p>Once you have created a <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site, there are some <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> specific to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <ul>
 <li>
-<p>First the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> need to be added to the Nightscout site.</p>
+<p>First the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> need to be added to the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site.</p>
 </li>
 <li>
-<p>For each instance of viewing the Nightscout site (i.e., on broswer or phone app), you can individually select which of those configured items are displayed.  This is on a per-view basis. However, <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> like the <code>SHOW_PLUGINS</code> line allow you to preconfigure what will be shown by default.</p>
+<p>For each instance of viewing the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site (i.e., on broswer or phone app), you can individually select which of those configured items are displayed.  This is on a per-view basis. However, <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> like the <code>SHOW_PLUGINS</code> line allow you to preconfigure what will be shown by default.</p>
 </li>
 </ul>
 <h2 id="editadd-config-vars">Edit/Add <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr><a class="headerlink" href="#editadd-config-vars" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>These instructions are for people using Heroku, because that is the most common choice. If your Nightscout site is not on Heroku, this page provides a guide for the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> used by Loop.</p>
+<p>These instructions are for people using Heroku, because that is the most common choice. If your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site is not on Heroku, this page provides a guide for the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p><a href="https://id.heroku.com/login">Login to your Heroku account</a>, select the <code>Settings</code> tab near the top of the screen on your Heroku app.</p>
 <p align="center"><img alt="img/heroku5.png" src="../img/heroku5.png" width="600" /></p>
-<p>Click on <code>Reveal Config Vars</code>.  Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add several additional lines of config vars for Loop use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make Nightscout more useful when Looping.</p>
+<p>Click on <code>Reveal Config Vars</code>.  Scroll down the bottom of the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> lines until you find the last blank one.  You are going to add several additional lines of config vars for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> use; the DEVICESTATUS_ADVANCED and ENABLE lines are required, the others just make <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> more useful when Looping.</p>
 <p><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Users can skip the <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr> that begin with <code>PUMP_</code>. Those are useful for Medtronic users.</p>
 <p align="center"><img alt="img/add_vars.jpg" src="../img/add_vars.jpg" width="600" /></p>
 <table>
@@ -2428,10 +2428,10 @@
 <p>Click on <code>Open App</code> in the top right corner of your Heroku site.</p>
 <p align="center"><img alt="img/open_app.jpg" src="../img/open_app.jpg" width="600" /></p>
 <h2 id="plugins-selection">Plugins Selection<a class="headerlink" href="#plugins-selection" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once you are viewing an instance of your Nightscout site (browser or app), you can adjust what this instance of the display will show.</p>
+<p>Once you are viewing an instance of your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site (browser or app), you can adjust what this instance of the display will show.</p>
 <p>Click on the "hamburger" menu - those three horizontal lines in the upper right corner of the main NS display.  </p>
 <div class="admonition info">
-<p>Different sets of documentation call the three horizontal lines in the upper right of the Nightscout display different things such as:</p>
+<p>Different sets of documentation call the three horizontal lines in the upper right of the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> display different things such as:</p>
 <ul>
 <li>Settings</li>
 <li><abbr title="three parallel lines that, when tapped, open a new menu">Hamburger Menu</abbr></li>
@@ -2440,21 +2440,21 @@
 </div>
 <p align="center"><img alt="img/example.jpg" src="../img/example.jpg" width="600" /></p>
 <p>The graphic below shows some of the check boxes you can select.  Make sure your basal render is selected to either default or icicle (personal preference for how the temp basals show as blue lines in NS site), adjust alarms (on or off), check the boxes that you’d like display as pills in the SHOW PLUGINS section (usually all of them), and then click save. (You are saving your display preferences, not modifying anything in the NS database.)</p>
-<p>Note - Nightscout has been updated since this figure was generated.</p>
+<p>Note - <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> has been updated since this figure was generated.</p>
 <p align="center"><img alt="img/settings_ns.jpg" src="../img/settings_ns.jpg" width="600" /></p>
 <h2 id="authenticate-site">Authenticate Site<a class="headerlink" href="#authenticate-site" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If the current display of your NS site has been not authenticated, you will not be able to access certain portions of Nightscout such as the careportal, administration tools and remote overrides.  There are two ways to authenticate.</p>
+<p>If the current display of your NS site has been not authenticated, you will not be able to access certain portions of <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> such as the careportal, administration tools and remote overrides.  There are two ways to authenticate.</p>
 <ul>
 <li>
-<p>Use <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> to access all features of Nightscout</p>
+<p>Use <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> to access all features of <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></p>
 </li>
 <li>
 <p>Use <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr> to generate a <abbr title="website address (Uniform Resource Locator)">URL</abbr> that opens with predefined role(s)</p>
 </li>
 </ul>
-<p>The use of tokens is documented at this link to the security page in the Nightscout documentation.</p>
+<p>The use of tokens is documented at this link to the security page in the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> documentation.</p>
 <ul>
-<li>Please see <a href="http://nightscout.github.io/nightscout/security/#create-authentication-tokens-for-users">Nightscout: <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr></a></li>
+<li>Please see <a href="http://nightscout.github.io/nightscout/security/#create-authentication-tokens-for-users"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>: <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr></a></li>
 </ul>
 <p>You can authenticate with your <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr> using either of these methods:</p>
 <ul>
@@ -2466,11 +2466,11 @@
 </li>
 </ul>
 <p>An authenticated site, with careportal plugin enabled, will show a &plus; at upper right of the main display instead of a lock symbol. Tapping on the &plus; gives you access to the careportal.</p>
-<h2 id="nightscout-version-update">Nightscout Version Update<a class="headerlink" href="#nightscout-version-update" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit <a href="https://nightscout.github.io/update/update/">Nightscout: Update Instructions</a> for directions on updating.</p>
+<h2 id="nightscout-version-update"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Version Update<a class="headerlink" href="#nightscout-version-update" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are new to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and haven’t updated your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site for a while, check to see if there's an available update. Visit <a href="https://nightscout.github.io/update/update/"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>: Update Instructions</a> for directions on updating.</p>
 <h2 id="more-variables-for-loopers">More Variables for Loopers<a class="headerlink" href="#more-variables-for-loopers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The list of <a href="#variables-for-loopers">Variables for Loopers</a> above can be expanded if you want your site to automatically open with specific values and alarm settings.</p>
-<p>This <a href="https://www.loopandlearn.org/nightscout-variables/">Loop and Learn: Nightscout Variables</a> page, created for folks using the Google Cloud method to create a Nightscout site, has a convenient, expanded list.</p>
+<p>This <a href="https://www.loopandlearn.org/nightscout-variables/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Variables</a> page, created for folks using the Google Cloud method to create a <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site, has a convenient, expanded list.</p>
 
 
 

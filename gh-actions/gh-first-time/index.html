@@ -831,18 +831,12 @@
     Configure Secrets
   </a>
   
-    <nav class="md-nav" aria-label="Configure Secrets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#first-use-of-actions-tab" class="md-nav__link">
     First Use of Actions Tab
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2663,18 +2657,12 @@
     Configure Secrets
   </a>
   
-    <nav class="md-nav" aria-label="Configure Secrets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#first-use-of-actions-tab" class="md-nav__link">
     First Use of Actions Tab
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2825,88 +2813,88 @@
 
   <h1>GitHub First-Time</h1>
 
-<h2 id="build-loop-using-github-actions">Build Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#build-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="build-loop-using-github-actions">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#build-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="info">
-<summary><code>Time Estimate</code> (click to open/close)</summary>
+<summary>Time Estimate (click to open/close)</summary>
 <ul>
-<li>If you have never built Loop (allow up to one week elapsed time)<ul>
+<li>If you have never built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (allow up to one week elapsed time)<ul>
 <li>Requesting and getting an Apple Developer Account: 1-2 days</li>
 <li>Creating and configuring your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> repositories (without Apple Information): 1-2 hours</li>
 <li>Adding <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> (requires Apple Developer Account): 1 hour</li>
 <li>Performing the Action steps: 30 minutes to 2 hours</li>
 </ul>
 </li>
-<li>If you have previously built Loop with <abbr title="program used to build an app">Xcode</abbr> you have fewer steps and are probably familiar with some of the concepts<ul>
+<li>If you have previously built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="program used to build an app">Xcode</abbr> you have fewer steps and are probably familiar with some of the concepts<ul>
 <li>Expect 1 to 2 hours</li>
 </ul>
 </li>
 </ul>
 </details>
 <details class="abstract">
-<summary><code>Page Summary</code> (click to open/close)</summary>
+<summary>Page Summary (click to open/close)</summary>
 <p>Once you have Apple Developer and <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> accounts:</p>
 <ul>
-<li>Apple: <ul>
+<li><em>Apple</em>:<ul>
 <li>Generate and save four <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
 </ul>
 </li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>:<ul>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
 <li>Generate and save two <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
 <li>Create a <code><abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></code> private <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>Fork a <abbr title="contains project files and each file's revision history">repository</abbr> (copy of LoopWorkspace)</li>
+<li>Fork a <abbr title="contains project files and each file's revision history">repository</abbr> (copy of <code>LoopWorkspace</code>)</li>
 <li>Add <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to your <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li><code>Action: 1. Verify Secrets</code></li>
 <li><code>Action: 2. Add Identifiers</code></li>
 </ul>
 </li>
-<li>Apple:<ul>
-<li>Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop</li>
-<li>Create your version of Loop in App Store (personal use only, not for distribution)</li>
+<li><em>Apple</em>:<ul>
+<li>Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></li>
+<li>Create your version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> in <code>App Store</code> (personal use only, not for distribution)</li>
 </ul>
 </li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>:<ul>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
 <li><code>Action: 3. Create Certificates</code></li>
 <li><code>Action: 4. Build Loop</code></li>
 </ul>
 </li>
-<li>Apple: Set up Internal <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</li>
-<li>Phone: Install Loop with <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li><em>Apple</em>: Set up <code>Internal TestFlight Group</code></li>
+<li>Phone: Install <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 </details>
 <details class="question">
-<summary><code>FAQs</code> (click to open/close)</summary>
+<summary>FAQs (click to open/close)</summary>
 <ul>
 <li><strong>Do I need a Mac computer?</strong> No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.</li>
 <li><strong>Can I do this on my phone?</strong> Yes, but the graphics shown on this page are from a computer browser.</li>
 <li><strong>Isn't it hard to build every 90 days?</strong> The initial setup and deployment take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.</li>
-<li><strong>Can I use this for my child?</strong> You, as the adult, can install using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your child's phone. The explicit steps are provided at <a href="../gh-deploy/#install-testflight-loop-for-child"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deploy: Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</li>
+<li><strong>Can I use this for my child?</strong> You, as the adult, can install using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your child's phone. The explicit steps are provided at <a href="../gh-deploy/#install-testflight-loop-for-child"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deploy: Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a>.</li>
 <li><strong>Can I still use my customizations?</strong> Yes. <a href="../gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a></li>
 </ul>
 </details>
 <p>This page contains fully detailed steps including graphics.</p>
-<p>Some sections have a "<code>Section Summary</code> (click to open/close)":</p>
+<p>Some sections have a Section Summary:</p>
 <ul>
 <li>To view the summary, click on the row</li>
-<li>If the summary is all you need to complete that step, use the <code>skip forward</code> symbol (<span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span>) to skip to the next instruction</li>
-<li>Or follow detailed instructions below the summary</li>
+<li>If the summary is all you need, use the <code>skip forward</code> symbol (<span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span>) to skip to the next instruction</li>
+<li>Or follow the detailed instructions below the summary</li>
 </ul>
+<p>As you configure for Browser Build, you go back and forth between <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and Apple Developer webpages. Use right click to open a new tab or copy a link address, as appropriate, while proceeding.</p>
 <p>An automatic table of contents (TOC) should appear for each page on the right side of your browser (if browser is "wide" enough). If not, tap on the hamburger menu (upper left) and this page name to see the TOC.</p>
-<p>For sparse instructions without the details, right click on the link below:</p>
+<p>For sparse instructions, right click on the link below:</p>
 <ul>
 <li><a href="https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md">LoopWorkspace Build Instructions</a></li>
 </ul>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h4 id="prerequisites-to-build-loop">Prerequisites to Build Loop<a class="headerlink" href="#prerequisites-to-build-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>There are two prerequisites to build Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build.</p>
+<h4 id="prerequisites-to-build-loop">Prerequisites to Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#prerequisites-to-build-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>There are two prerequisites to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build.</p>
 <ol>
 <li>Paid Apple Developer account ($99/year)</li>
 <li>Free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
 </ol>
-<h4 id="prerequisites-to-install-loop">Prerequisites to Install Loop<a class="headerlink" href="#prerequisites-to-install-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>To install Loop, you need the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app, from the Apple App Store, installed on your <a href="../../build/step2/">Compatible Phone</a>.</p>
-<h4 id="prerequisites-to-use-loop">Prerequisites to Use Loop<a class="headerlink" href="#prerequisites-to-use-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>To use Loop, you need a <a href="../../build/step3/">Compatible Pump</a> and <a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>. For pumps other than <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH, you also need a <a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> Compatible Device</a>.</p>
-<p>For the initial steps, you'll be going back and forth between <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and Apple Developer webpages. It is best to open each in a separate window or tab for your browser.</p>
+<h4 id="prerequisites-to-install-loop">Prerequisites to Install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#prerequisites-to-install-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>To install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you need the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app, from the Apple App Store, installed on your <a href="../../build/step2/">Compatible Phone</a>.</p>
+<h4 id="prerequisites-to-use-loop">Prerequisites to Use <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#prerequisites-to-use-loop" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>To use <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you need a <a href="../../build/step3/">Compatible Pump</a> and <a href="../../build/step4/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>. For pumps other than <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH, you also need a <a href="../../build/step5/"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> Compatible Device</a>.</p>
 <h2 id="new-terms-with-github-build">New Terms with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build<a class="headerlink" href="#new-terms-with-github-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="#save-your-information"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> You can read details about new terms with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build or skip ahead to <a href="#save-your-information">Save Your Information</a>.</p>
 <p>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build may use new and unfamiliar <strong>terms</strong>.</p>
@@ -2917,11 +2905,11 @@
 <p>If this summary of terms is confusing, finish reviewing the whole page and then come back.</p>
 <ul>
 <li><code>Modules</code>:<ul>
-<li>The Loop code uses modules to handle different components of the app</li>
+<li>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code uses modules to handle different components of the app</li>
 <li>Some modules must be associated with your unique <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></li>
 </ul>
 </li>
-<li><code>Identifiers</code>: The <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> are <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> required to build Loop with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr><ul>
+<li><code>Identifiers</code>: are required to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr><ul>
 <li>Four Identifier Names must be associated with your <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><ul>
 <li><code>Loop</code>, <code>Loop Intent Extension</code>, <code>Loop Status Extension</code> and <code>Small Status Widget</code></li>
 <li>For dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only: <code>Small Status Widget</code> was renamed <code>Loop Widget Extension</code></li>
@@ -2938,7 +2926,7 @@
 </li>
 </ul>
 </li>
-<li><code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>: required to enable <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to build Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><ul>
+<li><code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>: are required to enable <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><ul>
 <li>Six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> must be added to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace</li>
 <li>These <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> work for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (<code>main</code> or <code>dev</code>, for example)</li>
 <li>These <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> can be added to <a href="../gh-other-apps/">Other Apps</a> configured with the same <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method</li>
@@ -2947,7 +2935,7 @@
 <li><a href="https://appstoreconnect.apple.com"><code>App Store Connect</code></a>: a website available for Apple Developers to review their apps<ul>
 <li>Once you purchase an <em>Apple Developer</em> annual account, you are an Apple Developer and have access to this site</li>
 <li>Most Loopers will not have an App until using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method</li>
-<li>The instructions walk you through creating and naming your app: <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a></li>
+<li>The instructions walk you through creating and naming your app: <a href="#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a></li>
 </ul>
 </li>
 <li><abbr title="Application Programming Interface">API</abbr> <code>Key</code>: Application Programming Interface Key<ul>
@@ -2955,8 +2943,8 @@
 <li>It is required to enable your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account to interface with Apple to create your app</li>
 </ul>
 </li>
-<li><code>Actions</code>: available in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account to build your app (once you follow the instrctions on this page)<ul>
-<li>With <abbr title="Latest release with major updates">Loop 3</abbr>, the actions: <code>Verify Secrets</code>, <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>, <code>Create Certificates</code>, and <code>Build Loop</code> enable users to build the Loop app from a browser on any computer</li>
+<li><code>Actions</code>: are available in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account to build your app (once you follow the instructions on this page)<ul>
+<li>With <abbr title="Latest release with major updates">Loop 3</abbr>, the actions: <code>Verify Secrets</code>, <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code>, <code>Create Certificates</code>, and <code>Build Loop</code> enable users to build the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app from a browser on any computer</li>
 <li>If <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are not operating as you expect, check <a href="https://www.githubstatus.com/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Status</a> to see if it is <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> problem.</li>
 </ul>
 </li>
@@ -2965,7 +2953,7 @@
 <p><strong>Everyone needs to read this section!</strong></p>
 <div class="admonition tip">
 <p class="admonition-title">Archive Your Information</p>
-<p>For many of the steps on this page, you will need your username, email address, password, and in some cases, special parameters for Apple and <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
+<p>For many of the steps on this page, you will need username, email address,  and password for Apple and <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. You will require six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
 <ul>
 <li>Record these in a safe place where you can find them</li>
 <li>A digital copy is best for copying and pasting in different locations</li>
@@ -2974,9 +2962,8 @@
 </div>
 <div class="admonition info">
 <p class="admonition-title">A Note about Capitalization and Spaces</p>
-<p>In places, you will be told to give something a name like "<code>FastLane API Key</code>" or "<code>FastLane Access Token</code>". Please copy from the docs to use those exact names.</p>
-<p>The <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> that you will add later use names that are capitalized and use underscore <span class="keys"><kbd>_</kbd></span> instead of spaces. Be precise and careful.</p>
-<p>The relationship and creation of each item is explained step-by-step on this page.</p>
+<p>In places, you use a name like "<code>FastLane API Key</code>" or "<code>FastLane Access Token</code>". Please copy from the docs to use those exact names.</p>
+<p>The <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> that you add use names that are capitalized and use underscore <span class="keys"><kbd>_</kbd></span> instead of spaces. Be precise and careful.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Use a Text-Only Editor</p>
@@ -2987,8 +2974,8 @@
 </div>
 <h2 id="save-six-secrets">Save Six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#save-six-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
-<p>You require 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> (alphanumeric items) to use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method and if you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you will use the same 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for each app you build with this method. Each secret is indentified below by <code>ALL_CAPITAL_LETTER_NAMES</code>.</p>
+<summary>Section Summary (click to open/close)</summary>
+<p>You require 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> (alphanumeric items) to use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method and if you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method to build more than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, e.g., <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow or <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, you will use the same 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for each app you build with this method. Each secret is indentified below by <code>ALL_CAPITAL_LETTER_NAMES</code>.</p>
 <ul>
 <li>Four <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are from your Apple Account</li>
 <li>Two <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are from your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account</li>
@@ -3028,54 +3015,22 @@
 </ul>
 <h3 id="collect-the-four-apple-secrets">Collect the Four <code>Apple Secrets</code><a class="headerlink" href="#collect-the-four-apple-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>You will be saving 4 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> from your Apple Account in this step.</p>
 <ol>
 <li>Sign in to the <a href="https://developer.apple.com/account/resources/certificates/list">Apple developer portal page</a>.</li>
-<li>Copy the Team ID from the upper right of the screen. Record this as your <code>TEAMID</code>.</li>
-<li>Go to the <a href="https://appstoreconnect.apple.com/access/api">App Store Connect</a> interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: "<code>FastLane API Key</code>".</li>
+<li>Copy the Team ID from the upper right of the screen. <a href="#find-teamid">Record this as your <code>TEAMID</code></a>.</li>
+<li>Go to the <a href="https://appstoreconnect.apple.com/access/api">App Store Connect</a> interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: <a href="#generate-api-key">"<code>FastLane API Key</code>"</a>.</li>
+<li><a href="#copy-api-key-secrets">Record three more secrets</a><ul>
 <li>Record the issuer id; this will be used for <code>FASTLANE_ISSUER_ID</code>.</li>
 <li>Record the key id; this will be used for <code>FASTLANE_KEY_ID</code>.</li>
 <li>Download the <code>API Key</code> itself, and open it in a text editor. The contents of this file will be used for <code>FASTLANE_KEY</code>. Copy the full text, including the "-----BEGIN PRIVATE KEY-----" and "-----END PRIVATE KEY-----" lines.</li>
+</ul>
+</li>
 </ol>
 <p><a href="#collect-the-two-github-secrets"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#collect-the-two-github-secrets">Collect the Two <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
 </details>
-<h3 id="new-apple-developer-account">New Apple Developer Account<a class="headerlink" href="#new-apple-developer-account" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><a href="#find-teamid"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you have an Apple Developer Account, skip ahead to <a href="#find-teamid">Find <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code></a>.</p>
-<p>If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.</p>
-<ul>
-<li>LoopDocs has an <a href="../../build/step6/">Apple Developer Program</a> page that explains in detail how to sign up for an account</li>
-<li>This link takes you straight to <a href="https://developer.apple.com">Apple Developer account</a> to sign up</li>
-</ul>
-<h3 id="find-teamid">Find <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code><a class="headerlink" href="#find-teamid" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Sign in to your account before starting.</p>
-<ul>
-<li>Open this link: <a href="https://developer.apple.com/account">Apple developer portal page</a>.</li>
-<li>Click <code>Account</code> in the top menu bar</li>
-<li>Click the <code>Membership Details</code> icon<br />
-<img alt="Apple Developer Account Membership Details" src="../img/apple_dev_account-teamid-001.svg" /></li>
-<li>Next to the <code>Team ID</code> field, is a 10-character ID number.<br />
-  This is your <strong>Apple Developer <code>TEAMID</code></strong>.
-    <img alt="Apple Developer TEAMID" src="../img/apple_dev_account-teamid-002.svg" /></li>
-<li>Record this for use when you configure your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> and when you configure your unique <span class="notranslate"><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></span>  </li>
-<li>
-<p>Stop a moment and double-check - if you get this wrong, you will have errors later</p>
-<div class="admonition tip">
-<p class="admonition-title">Do not "type" what you think you see</p>
-<p><strong>Copy and paste</strong> the <code>Team ID</code> from the webpage.<br />
-(Avoid the wrong number of characters; avoid typing an <code>8</code> when it should be a <code>B</code>.)</p>
-</div>
-</li>
-</ul>
-<h3 id="generate-api-key">Generate <code>API Key</code><a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Need a Paid Apple Developer Account Set Up to Generate the <code>API Key</code></p>
-<p>To generate the <code>API Key</code>, you must have a paid Apple Developer account.</p>
-<p>If you are waiting for Apple to enable your account, you can skip ahead to create a <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> and <a href="#create-github-personal-access-token"><code>GitHub Personal Access Token</code></a>. You then pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a> until your Apple account is active.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Generate <code>API Key</code> and Collect all Four <code>Apple Secrets</code></p>
-<p>This section will walk you through the steps required to gather or create these <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
+<p>This section provides detailed instructions for the four <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> associated with your Apple Developer ID.</p>
 <table>
 <thead>
 <tr>
@@ -3102,7 +3057,47 @@
 </tr>
 </tbody>
 </table>
-<p>Each step has a link to the next step. Open each link in a separate tab or window so you can refer back to these instructions as you move along.</p>
+<h3 id="new-apple-developer-account">New Apple Developer Account<a class="headerlink" href="#new-apple-developer-account" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><a href="#find-teamid"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you have an Apple Developer Account, skip ahead to <a href="#find-teamid">Find <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code></a>.</p>
+<p>If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.</p>
+<ul>
+<li>LoopDocs has an <a href="../../build/step6/">Apple Developer Program</a> page that explains in detail how to sign up for an account</li>
+<li>This link takes you straight to <a href="https://developer.apple.com">Apple Developer account</a> to sign up</li>
+</ul>
+<h3 id="find-teamid">Find <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code><a class="headerlink" href="#find-teamid" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Sign in to your Apple Developer account at this link: <a href="https://developer.apple.com/account">Apple developer portal page</a>.</p>
+<ol>
+<li>Click <code>Account</code> in the top menu bar</li>
+<li>
+<p>Click the <code>Membership Details</code> icon</p>
+<p align="center"><img alt="Apple Developer Account Membership Details" src="../img/apple_dev_account-teamid-001.svg" width="600" /></p>
+</li>
+<li>
+<p>Next to the <code>Team ID</code> field, is a 10-character ID number.
+  This is your <strong>Apple Developer <code>TEAMID</code></strong>.</p>
+</li>
+</ol>
+<p align="center"><img alt="Apple Developer TEAMID" src="../img/apple_dev_account-teamid-002.svg" width="500" /></p>
+<p>Record this for use as <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code> in your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> file. You will also need it when you <a href="#create-app-group">Create <span class="notranslate"><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></span></a>.</p>
+<ul>
+<li>Stop a moment and double-check</li>
+<li>
+<p>If you get this wrong, you will have errors at the very end, which require you to delete some items and repeat some steps on this page</p>
+<div class="admonition tip">
+<p class="admonition-title">Do not "type" what you think you see</p>
+<p><strong>Copy and paste</strong> the <code>Team ID</code> from the webpage.  </p>
+<ul>
+<li><code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code> must be 10 characters</li>
+<li>Avoid typing an <span class="loop-biggest"><code>8</code></span> when it should be a <span class="loop-biggest"><code>B</code></span></li>
+</ul>
+</div>
+</li>
+</ul>
+<h3 id="generate-api-key">Generate <code>API Key</code><a class="headerlink" href="#generate-api-key" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Paid Apple Developer Account is Required</p>
+<p>To generate the <code>API Key</code>, you must have a paid Apple Developer account.</p>
+<p>If you are waiting for Apple to enable your account, you can skip ahead to create a <a href="#new-github-account">New <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account</a> and <a href="#create-github-personal-access-token"><code>GitHub Personal Access Token</code></a>. You then pause at <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a> until your Apple account is active.</p>
 </div>
 <ol>
 <li>
@@ -3184,13 +3179,16 @@
 </ul>
 <h3 id="do-not-confuse-your-keys">Do Not Confuse Your Keys<a class="headerlink" href="#do-not-confuse-your-keys" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
-<p class="admonition-title"><code>API Key</code> vs <code>APN Key</code></p>
-<p>If you use <a href="../../nightscout/remote-overrides/">Remote Commands with <code>Nightscout</code></a>, you may notice the Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>) key has the same type of format as the Apple Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.</p>
-<p>The <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for building with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> use the <code>API Key</code>.</p>
-<p>The config vars for <code>Nightscout</code> use the <code>APN Key</code>.</p>
+<p class="admonition-title"><span class="loop-big"><code>API Key</code></span> vs <span class="loop-big"><code>APN Key</code></span></p>
+<p>If you use <a href="../../nightscout/remote-overrides/">Remote Commands with <code><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></code></a>, you may notice the Application Programming Interface (<abbr title="Application Programming Interface">API</abbr>) key has the same type of format as the Apple Push Notification (<abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr>) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.</p>
+<p>The <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for building with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> use the <span class="loop-bigger"><code>API Key</code></span>.</p>
+<p>The config vars for <code>Nightscout</code> use the <span class="loop-bigger"><code>APN Key</code></span>.</p>
 <ul>
-<li>If you are using remote commands with <code>Nightscout</code> and building with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build, you must also add the config var of <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> with a value of <code>production</code> to your <code>Nightscout</code> site or the remote commands will not work.</li>
-<li>This is true for using <code>Nightscout</code> directly or using LoopCaregiver.</li>
+<li>If you are using remote commands with <code>Nightscout</code> and building with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build<ul>
+<li><a href="../../nightscout/remote-overrides/#remote-build-config-var-requirement">Remote Commands <abbr title="configuration parameters for a Nightscout Site">Config Vars</abbr></a>: make sure you have a config var of <code>LOOP_PUSH_SERVER_ENVIRONMENT</code> with a value of <code>production</code> or remote commands will not work with <code>Nightscout</code></li>
+</ul>
+</li>
+<li>This is true for using <code>Nightscout</code> directly or using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em></li>
 </ul>
 </div>
 <h3 id="done-with-apple-secrets">Done with Apple <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#done-with-apple-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3227,10 +3225,10 @@
 </ul>
 </li>
 </ul>
-<p>The free level comes with plenty of storage and compute time to build Loop.</p>
+<p>The free level comes with plenty of storage and compute time to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <h3 id="create-github-personal-access-token">Create <code>GitHub Personal Access Token</code><a class="headerlink" href="#create-github-personal-access-token" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>Log into your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account to create a personal access token; this is one of two <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> needed for your build.</p>
 <p>(Right click on link) to create a <a href="https://github.com/settings/tokens/new">new <code>personal access token</code></a>:</p>
 <ul>
@@ -3284,7 +3282,7 @@
 <h2 id="prepare-your-repositories">Prepare your Repositories<a class="headerlink" href="#prepare-your-repositories" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="create-match-secrets">Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr><a class="headerlink" href="#create-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>The creation of the <code><abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></code> <abbr title="contains project files and each file's revision history">repository</abbr> is a common step for all <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Builds; do this step only once. You must be logged into your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
 <p>(Right click on link) to create a <a href="https://github.com/new">new empty <abbr title="contains project files and each file's revision history">repository</abbr></a> titled <code><abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></code>. It should be private.</p>
 <p>Once created, you will not take any direct actions with this <abbr title="contains project files and each file's revision history">repository</abbr>; it needs to be there for the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> to use as you progress through the steps.</p>
@@ -3318,7 +3316,7 @@
 <p>You will not directly interact with your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 <h3 id="fork-loopworkspace">Fork LoopWorkspace<a class="headerlink" href="#fork-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>Fork <a href="https://github.com/LoopKit/LoopWorkspace">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopWorkspace</a> into your account.</p>
 <p><a href="#configure-secrets"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#configure-secrets">Configure <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></p>
 </details>
@@ -3365,11 +3363,11 @@
 </div>
 <h2 id="configure-secrets">Configure <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#configure-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>These <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are the same for any <abbr title="contains project files and each file's revision history">repository</abbr> for which you use <code>GitHub Browser Build</code>. </p>
 <ul>
 <li>They are added once for a <abbr title="contains project files and each file's revision history">repository</abbr> and work for all branches of that <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>They must be added to any other <abbr title="contains project files and each file's revision history">repository</abbr>, such of LoopCaregiver, for which you also use <code>GitHub Browser Build</code></li>
+<li>They must be added to any other <abbr title="contains project files and each file's revision history">repository</abbr>, such of <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, for which you also use <code>GitHub Browser Build</code></li>
 </ul>
 <p>For each of the following <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, tap on "New <abbr title="contains project files and each file's revision history">repository</abbr> secret", then add the name of the secret, along with the value you recorded for it:</p>
 <ul>
@@ -3383,11 +3381,10 @@
 <p><a href="#validate-secrets"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a>.</p>
 </details>
 <div class="admonition tip">
-<p class="admonition-title"><code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> can be used for Other Apps</p>
+<p class="admonition-title"><code>Branches</code> and <code>Repositories</code></p>
 <ul>
-<li>Six <span class="notranslate"><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span> must be added to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>LoopWorkspace</code></li>
-<li>These <span class="notranslate"><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span> work for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (<code>main</code> or <code>dev</code>, for example)</li>
-<li>These same <span class="notranslate"><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span> would be added to your <span class="notranslate"><abbr title="a copy of code in a github repository other than the original">fork</abbr></span> of a <abbr title="contains project files and each file's revision history">repository</abbr> for <a href="../gh-other-apps/">Other Apps</a></li>
+<li>These <span class="notranslate"><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span> are added to your <code>fork of LoopWorkspace</code> and work for any <code>branch</code> (<code>main</code> or <code>dev</code>, for example)</li>
+<li>These <span class="notranslate"><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span> must be added, if desired, for <a href="../gh-other-apps/">Other App</a> <code>repositories</code></li>
 </ul>
 </div>
 <p>Log into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
@@ -3426,27 +3423,28 @@
 <li>
 <p>Tap on the green button at the top right of your screen labeled <code>New repository secret</code> (highlighted above)</p>
 <ul>
-<li>A new dialog screen appears as shown in the graphic below</li>
-<li>Do not do anything until reading the sub-bullets and proceeding to the next section<ul>
-<li>In the <code>Name *</code>  box where it says <code>YOUR_SECRET_NAME</code>, you will click in the box and paste one of the 6 secret names, as directed in <a href="#enter-each-secret">Enter Each Secret</a></li>
-<li>In the <code>Secret *</code> box, you will click in the box and paste the value for that secret</li>
+<li>A new screen appears as shown in the first graphic below</li>
+<li>Do not do anything until reading the sub-bullets, examining the graphics and proceeding to the next section where each <code>Secret</code> name is provided for you to copy and paste<ul>
+<li>Under <code>Name *</code>, click on <code>YOUR_SECRET_NAME</code> and paste one of the 6 secret names, as directed in <a href="#enter-each-secret">Enter Each Secret</a></li>
+<li>Click inside the <code>Secret *</code> box and paste the value for that secret</li>
 <li>Once you click on <code>Add Secret</code>, the secret will be added</li>
+<li>The second graphic below shows <code>TEAMID</code> added and ready for save</li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
 <p align="center"><img alt="dialog for entering a new secret" src="../img/new-secret-dialog.png" width="700" /></p>
+<p align="center"><img alt="teamid secret ready to be saved" src="../img/teamid-secret-ready-to-save.png" width="700" /></p>
 <h4 id="enter-each-secret">Enter Each Secret<a class="headerlink" href="#enter-each-secret" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Enter each of the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> found in <a href="#save-your-information">Save Your Information</a>. You will enter the <code>Name</code> of each <code>Secret</code> and your value for each <code>Secret</code>.</p>
+<p>Enter the name of each <code>Secret</code> found in <a href="#save-your-information">Save Your Information</a> and your value for that <code>Secret</code>.</p>
 <ul>
 <li>Once you save a secret value, you will not be able to view what you entered, so check carefully before you hit <code>Add Secret</code><ul>
 <li>You can replace the value for any secret later - but you can't view the saved value</li>
 </ul>
 </li>
-<li>If you make a mistake, the actions you take next will fail, but the error messages will identify which <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> you need to fix</li>
-<li>Confirm that your <code>TEAMID</code> is correct<ul>
-<li>If it is not, the intial <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> will succeed but Build Loop will fail and you will have some clean-up to do</li>
+<li>Be especially careful with your <code>TEAMID</code><ul>
+<li>If <code>TEAMID</code> is incorrect, the intial <code>Actions</code> will succeed but <code>Build Loop</code> will fail and you will have some clean-up to do</li>
 </ul>
 </li>
 </ul>
@@ -3480,7 +3478,7 @@
 <p class="admonition-title">Time for a Break?</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M464 256a208 208 0 1 0-416 0 208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0zm224-72v144c0 13.3-10.7 24-24 24s-24-10.7-24-24V184c0-13.3 10.7-24 24-24s24 10.7 24 24zm112 0v144c0 13.3-10.7 24-24 24s-24-10.7-24-24V184c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></span> This is a good place to pause if you need to. Just note where you are on the page so you can return later.</p>
 </div>
-<h3 id="first-use-of-actions-tab">First Use of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h2 id="first-use-of-actions-tab">First Use of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Tab<a class="headerlink" href="#first-use-of-actions-tab" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Near the top middle of your <code>LoopWorkspace</code> <span class="notranslate"><abbr title="a copy of code in a github repository other than the original">fork</abbr></span> is an <code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code> tab. This section provides detailed directions to enable <code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code>.</p>
 <p>Click on the <code>Actions</code> tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 <ul>
@@ -3494,7 +3492,7 @@
 <p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
 <h2 id="validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>This step validates most of your six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and provides error messages if it detects an issue with one or more.</p>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and enable workflows if needed</li>
@@ -3516,14 +3514,14 @@
 </ul>
 <h2 id="add-identifiers"><code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>On the left side, select "2. Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>".</li>
 <li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
 <li>Wait, and within a minute or two you should see a green checkmark indicating the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> succeeded.</li>
 </ol>
-<p><a href="#configure-identifiers-for-loop"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop</a>.</p>
+<p><a href="#configure-identifiers-for-loop"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>.</p>
 </details>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
@@ -3550,39 +3548,42 @@
 </li>
 </ul>
 <p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
-<h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop<a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Some steps can be skipped if you previously built Loop with <code>Mac-Xcode</code>.</p>
+<h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some steps can be skipped if you previously built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <code>Mac-Xcode</code>.</p>
 <p>Please read carefully to avoid confusion.</p>
 <h3 id="create-app-group">Create <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><a class="headerlink" href="#create-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
-<p><a href="#previous-xcode-builders"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you have already built Loop via <abbr title="program used to build an app">Xcode</abbr> using this Apple ID, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
+<summary>Section Summary (click to open/close)</summary>
+<p><a href="#previous-xcode-builders"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you have already built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> via <abbr title="program used to build an app">Xcode</abbr> using this Apple ID, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
 <ol>
 <li>Go to <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the apple developer site.</li>
-<li>For Description, use "Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>".</li>
+<li>For Description, use "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>".</li>
 <li>For Identifier, enter "group.com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.LoopGroup", subsituting your team id for <code>TEAMID</code>.</li>
 <li>Click "Continue" and then "Register".</li>
 </ol>
 <p><a href="#add-app-group-to-bundle-identifiers"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#add-app-group-to-bundle-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Bundle <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
 </details>
-<p>The <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> already exists if you previously built Loop using <em><abbr title="program used to build an app">Xcode</abbr></em> with this <em>Apple Developer ID</em>. In that case, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
-<p>If you have never built Loop with <em><abbr title="program used to build an app">Xcode</abbr></em> using your <code>TEAMID</code>, you need to create an <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> associated with your <code>TEAMID</code>.</p>
+<p>The <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> already exists if you previously built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <em><abbr title="program used to build an app">Xcode</abbr></em> with this <em>Apple Developer ID</em>. In that case, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
+<p>If you have never built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <em><abbr title="program used to build an app">Xcode</abbr></em> using your <code>TEAMID</code>, you need to create an <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> associated with your <code>TEAMID</code>.</p>
 <ol>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/"><code>Register an App Group</code></a> on the Apple developer site.</li>
 <li>For <strong><code>Description</code></strong>, use <code>Loop App Group</code>.</li>
 <li>For <strong><code>Identifier</code></strong>, enter <code>group.com.TEAMID.loopkit.LoopGroup</code>, substituting your team id for <code>TEAMID</code>.</li>
 <li>Double-check the spelling - your <code>TEAMID</code> must be correct and the <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> must match the format shown in the previous step<ul>
-<li>A mistake here means you will not be able to build Loop until you fix it</li>
+<li>A mistake here means you will not be able to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> until you fix it</li>
 </ul>
 </li>
 <li>Click <code>Continue</code> and then <code>Register</code>.</li>
 </ol>
 <h3 id="add-app-group-to-bundle-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Bundle <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-bundle-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Right click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the Apple developer site.</p>
+<p><a href="#previous-xcode-builders"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you ever built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using Mac-<abbr title="program used to build an app">Xcode</abbr>, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
 <h4 id="new-builders">New Builders<a class="headerlink" href="#new-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you never built using <em><abbr title="program used to build an app">Xcode</abbr></em>, then after successfully performing the <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> <em>Action</em>, you will see the six items listed under <strong><code>NAME</code></strong> in the table below with the associated <strong><code>IDENTIFIER</code></strong> information, where your <code>Developer ID</code> replaces the <code>TEAMID</code> in the identifier.</p>
+<p>Right click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the Apple developer site.</p>
+<p>If you never built using <em><abbr title="program used to build an app">Xcode</abbr></em>, then after the <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> <em>Action</em>, you will see the six items under <strong><code>NAME</code></strong> in the table below with the associated <strong><code>IDENTIFIER</code></strong> information. Your <code>Developer ID</code> replaces the <code>TEAMID</code> in the identifier.</p>
+<p><a href="#table-with-name-and-identifier-for-loop-3"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> Skip ahead to <a href="#table-with-name-and-identifier-for-loop-3">Table with Name and Identifier for <abbr title="Latest release with major updates">Loop 3</abbr></a>.</p>
 <h4 id="previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#previous-xcode-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you have built Loop using <em><abbr title="program used to build an app">Xcode</abbr></em>, then at least the Loop identifier will appear as <code>XC com.TEAMID.loopkit.Loop</code> under the <strong><code>NAME</code></strong> column. There may be other differences in the <strong><code>NAME</code></strong> column, do ignore the <strong><code>NAME</code></strong> column and key off what you see under the <strong><code>IDENTIFIER</code></strong> column of the table. Only the six listed in the table below are of interest when building Loop.</p>
+<p>Right click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the Apple developer site.</p>
+<p>Because you built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <em><abbr title="program used to build an app">Xcode</abbr></em>, then the <strong><code>NAME</code></strong> associated with at least the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier will appear as <code>XC com.TEAMID.loopkit.Loop</code> under the <strong><code>NAME</code></strong> column. Ignore the <strong><code>NAME</code></strong> column and key off what you see under the <strong><code>IDENTIFIER</code></strong> column of the table. Only the six listed in the table below need to appear when building <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
 <h4 id="table-with-name-and-identifier-for-loop-3">Table with Name and Identifier for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#table-with-name-and-identifier-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
 <table>
 <thead>
@@ -3619,19 +3620,13 @@
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">Loop dev Builders</p>
-<p>The name and identifier for "<code>Small Status Widget</code>" has been renamed to the more appropriate "<code>Loop Widget Extension</code>". If you are using released code - this won't affect you until the next release. At that time, this table will be updated.</p>
+<p class="admonition-title"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev Builders</p>
+<p>The name and identifier for "<code>Small Status Widget</code>" has been renamed to "<code>Loop Widget Extension</code>". This only affects those using dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> until the next release. At that time, this table will be updated.</p>
 <p>If you are building with dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, follow the directions at <a href="../gh-update/#one-time-changes">One-Time Changes</a>.</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Loop 2 to <abbr title="Latest release with major updates">Loop 3</abbr> Builders</p>
-<p>Several people who built earlier versions of Loop with <em><abbr title="program used to build an app">Xcode</abbr></em> and are using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method say they can't find the <em>identifier names</em>. You can key off the <strong><code>IDENTIFIER</code></strong> instead of the <strong><code>NAME</code></strong> column in the table above.</p>
-<p>Or</p>
-<p>Follow the <a href="#delete-identifiers"><code>Delete Identifiers</code></a> instructions and then run Action: <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> again. You might not be able to delete the "Loop" identifier, so it will still begin with <code>XC</code>, but the others will appear with the short names shown above.</p>
-</div>
-<h3 id="add-or-review-configuration-for-loop-identifier">Add or Review Configuration for Loop Identifier<a class="headerlink" href="#add-or-review-configuration-for-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="add-or-review-configuration-for-loop-identifier">Add or Review Configuration for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Identifier<a class="headerlink" href="#add-or-review-configuration-for-loop-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <p>Note 1 - If you previously built with <abbr title="program used to build an app">Xcode</abbr>, the <code>Names</code> listed below may be different, but the <code>Identifiers</code> will match. A table was provided above that lists both <code>Names</code> and <code>Identifiers</code>. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.</p>
 <p>Note 2 - Depending on your build history, you may find some of the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> are already configured - and you are just verifying the status; but in other cases, you will need to configure the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>.</p>
 <ol>
@@ -3645,7 +3640,7 @@
 </li>
 <li>Click on the identifier's name.</li>
 <li>On the "App Groups" capabilies, click on the "Configure" button.</li>
-<li>Select the "Loop <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>"</li>
+<li>Select the "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>"</li>
 <li>Click "Continue".<ul>
 <li>For the <code>Loop Identifier</code> only, you must add a check box next to <code>Time Sensitive Notifications</code></li>
 <li>This is only required for released code, it is automatically selected for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
@@ -3655,9 +3650,9 @@
 <li>Click "Confirm".</li>
 <li>Remember to do this for each of the identifiers above.</li>
 </ol>
-<p><a href="#create-loop-app-in-app-store-connect"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a></p>
+<p><a href="#create-loop-app-in-app-store-connect"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a></p>
 </details>
-<p>Find and click on the row for the Loop identifier on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page. Look in the <strong><code>IDENTIFIER</code></strong> column to find <code>com.TEAMID.loopkit.Loop</code>. The name in the <strong><code>NAME</code></strong> column may be different than Loop. </p>
+<p>Find and click on the row for the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page. Look in the <strong><code>IDENTIFIER</code></strong> column to find <code>com.TEAMID.loopkit.Loop</code>. The name in the <strong><code>NAME</code></strong> column may be different than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. </p>
 <table>
 <thead>
 <tr>
@@ -3672,9 +3667,9 @@
 </tr>
 </tbody>
 </table>
-<p>The <code>Edit Your App ID Configuration</code> screen will open. You will be taking two actions for the Loop identifier.</p>
+<p>The <code>Edit Your App ID Configuration</code> screen will open. Take two actions for the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier.</p>
 <ol>
-<li>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row<ul>
+<li>In the <code>App Services</code> column, scroll down to the <code>App Groups</code> row<ul>
 <li>Ensure the check box (under the <code>Capabilities</code> column) for <code>App Groups</code> is checked</li>
 <li>(<code>XC Loop</code>) - If the word <code>Edit</code> shows up under <code>NOTES</code>, move on to step 2 below</li>
 <li>If the word <code>Configure</code> shows up, tap on it<ul>
@@ -3687,7 +3682,7 @@
 <li>
 <p>Continue scrolling down to the <strong><code>Time Sensitive Notifications</code></strong> row</p>
 <ul>
-<li>Check, or confirm the box is checked, next to <code>Time Sensitive Notifications</code> as shown in the following graphic</li>
+<li>Make sure the box next to <code>Time Sensitive Notifications</code> is checked as shown in the following graphic</li>
 <li>This is only needed for the <code>Loop</code> <em>identifier</em></li>
 </ul>
 <p align="center"><img alt="time sensitive notification" src="../img/add-time-sensitive-to-loop.png" width="600" /></p>
@@ -3739,7 +3734,7 @@
 </tbody>
 </table>
 <p>Find and click on a given identifier row on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
-<p>The <code>Edit Your App ID Configuration</code> screen will open. You will be taking one action for each of these three identifiers.</p>
+<p>The <code>Edit Your App ID Configuration</code> screen will open. Take one action for each of these three identifiers.</p>
 <p>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row</p>
 <ul>
 <li>Ensure the check box (under the <code>Capabilities column</code>) for <code>App Groups</code> is checked</li>
@@ -3761,10 +3756,10 @@
 <li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
-<h2 id="create-loop-app-in-app-store-connect">Create Loop App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
-<p>If you have created a Loop app in App Store Connect before, skip ahead to <a href="#create-certificates">Create Certificates</a>.</p>
+<summary>Section Summary (click to open/close)</summary>
+<p>If you have created a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in App Store Connect before, skip ahead to <a href="#create-certificates">Create Certificates</a>.</p>
 <ol>
 <li>Right click on the link <a href="https://appstoreconnect.apple.com/apps">apps list</a> top open App Store Connect and click the blue "plus" icon to create a New App.<ul>
 <li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>".</li>
@@ -3781,13 +3776,13 @@
 <p><a href="#create-certificates"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#create-certificates">Create Certificates</a>.</p>
 </details>
 <p>If you have created a <code>Loop app</code> in <em>App Store Connect</em> before, skip ahead to <a href="#create-certificates">Create Certificates</a>.</p>
-<p>If have previously used some kind of remote build, like <code>diawi</code> or <code>TestFlight</code>, you may have your Loop in the <em>App Store</em> but can't see it. Don't worry - there are instructions for this case.</p>
+<p>If have previously used some kind of remote build, like <code>diawi</code> or <code>TestFlight</code>, you may have your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> in the <em>App Store</em> but can't see it. Don't worry - there are instructions for this case.</p>
 <ol>
 <li>
 <p>Open this link: <a href="https://appstoreconnect.apple.com/apps"><code>App Store Connect / Apps</code></a> to view your apps; log in if needed.</p>
 <ul>
 <li>If you have never added an app to <em>App Store Connect</em>, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them</li>
-<li>If you have an app that is not shown, you will see a search icon and the <code>All Statuses</code> dropdown. If you get to step 3 and cannot find your <code>com.TEAMID.loopkit.Loop</code> in the <em>Bundle ID</em> drop-down, this means you need to follow <a href="#find-my-loop">Find My Loop</a>.</li>
+<li>If you have an app that is not shown, you will see a search icon and the <code>All Statuses</code> dropdown. If you get to step 3 and cannot find your <code>com.TEAMID.loopkit.Loop</code> in the <em>Bundle ID</em> drop-down, this means you need to follow <a href="#find-my-loop">Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>.</li>
 </ul>
 <p align="center"><img alt="app store connect with deleted apps" src="../img/01-app-store-connect.png" width="600" /></p>
 </li>
@@ -3796,14 +3791,14 @@
 <p align="center"><img alt="choose to add a new app" src="../img/new-app-in-store.png" width="300" /></p>
 </li>
 <li>
-<p>The <code>New App</code> dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your <code>Bundle ID</code> is available in the dropdown menu (it shows as <code>Choose</code> in the graphic below). If you do not see <code>com.TEAMID.loopkit.Loop</code>, with <strong><code>TEAMID</code></strong> matching your <code>TEAMID</code> in the dropdown menu; back out of this screen and follow the directions in <a href="#find-my-loop">Find My Loop</a> instead.</p>
+<p>The <code>New App</code> dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your <code>Bundle ID</code> is available in the dropdown menu (it shows as <code>Choose</code> in the graphic below). If you do not see <code>com.TEAMID.loopkit.Loop</code>, with <strong><code>TEAMID</code></strong> matching your <code>TEAMID</code> in the dropdown menu; back out of this screen and follow the directions in <a href="#find-my-loop">Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> instead.</p>
 <ul>
 <li>Select <code>iOS</code>.</li>
 <li>Enter a name: this will have to be unique<ul>
 <li>You could start with <code>Loop_ABC</code> where <code>ABC</code> are your initials</li>
 <li>If that is already taken, you can add a number, for example, <code>Loop_ABC_123</code></li>
 <li>This name is what you see on the <em>App Store Connect</em> list and in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app</li>
-<li>Once installed on your phone, you will see Loop with the standard Loop Logo</li>
+<li>Once installed on your phone, you will see <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with the standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Logo</li>
 <li>You can <a href="../gh-deploy/#change-the-app-store-connect-name">Change the App Store Connect Name</a> later if you want</li>
 </ul>
 </li>
@@ -3824,7 +3819,7 @@
 <li>Click <code>Create</code> but do not fill out the next form. That is for submitting to the app store and you will not be doing that.</li>
 </ol>
 <p>You are done with this activity and can close the browser tab. It's time to head back to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account and <a href="#create-certificates">Create Certificates</a></p>
-<h3 id="find-my-loop">Find My Loop<a class="headerlink" href="#find-my-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="find-my-loop">Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#find-my-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section is for people who were not able to follow the instructions in the last section because <code>com.TEAMID.loopkit.Loop</code>, with <strong><code>TEAMID</code></strong> matching your <code>TEAMID</code>, was not in the dropdown menu for <code>Bundle ID</code>.</p>
 <p>There are two possible reasons:</p>
 <ol>
@@ -3862,14 +3857,14 @@
 </ul>
 <h2 id="create-certificates"><code>Create Certificates</code><a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <ol>
 <li>Go back to the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> in <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</li>
 <li>On the left side, select "3. Create Certificates".</li>
 <li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
 <li>Wait, and within a minute or two you should see a green checkmark indicating the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> succeeded.</li>
 </ol>
-<p><a href="#build-loop"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#build-loop">Build Loop</a></p>
+<p><a href="#build-loop"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></p>
 </details>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
@@ -3894,14 +3889,14 @@
 </ol>
 <h2 id="build-loop"><code>Build Loop</code><a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
-<summary><code>Section Summary</code> (click to open/close)</summary>
+<summary>Section Summary (click to open/close)</summary>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
-<li>On the left side, select "4. Build Loop".</li>
+<li>On the left side, select "4. Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>".</li>
 <li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
 <li>You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.</li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
-<li>For each phone/person you would like to support Loop on:<ul>
+<li>For each phone/person you would like to support <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on:<ul>
 <li>Add them in <a href="https://appstoreconnect.apple.com/access/users">Users and Access</a> on App Store Connect.</li>
 <li>Add them to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Internal Testing group.</li>
 </ul>
@@ -3925,11 +3920,11 @@
 <li>
 <p>Wait a few minutes to make sure there is not an early failure</p>
 <ul>
-<li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build Loop Errors</a></li>
+<li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Errors</a></li>
 <li>Once you've resolved the error, it's a good idea to repeat all three steps in this order:<ul>
 <li><a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li><a href="#create-certificates">Create Certificates</a></li>
-<li>Build Loop</li>
+<li>Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ul>
 </li>
 </ul>
@@ -3939,7 +3934,7 @@
 </ol>
 <h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once the first build completes, you will be able to configure <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for the app.</p>
-<p>You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the <em>Apple ID</em> email address for each adult installing from your build. When building for a child, you will use your own <em>Apple ID</em>, not theirs. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a>.</p>
+<p>You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the <em>Apple ID</em> email address for each adult installing from your build. When building for a child, you will use your own <em>Apple ID</em>, not theirs. See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a>.</p>
 <ol>
 <li>
 <p>First you need to add the email address(es) to your <em>App Store Connect</em> Access Users list:</p>
@@ -3953,7 +3948,7 @@
 <p align="center"><img alt="add email and role for your users" src="../img/add-users.png" width="700" /></p>
 </li>
 <li>
-<p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed. Then select your Loop app. Click on <code>TestFlight</code> tab and the <code>Internal Testing</code> to add a group.</p>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed. Then select your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app. Click on <code>TestFlight</code> tab and the <code>Internal Testing</code> to add a group.</p>
 <p align="center"><img alt="open TestFlight tab for your app" src="../img/setup-testflight-01.png" width="700" /></p>
 </li>
 <li>
@@ -3970,7 +3965,7 @@
 <li>Click in the box beside each person you want to include</li>
 <li>Each person in this group will get an email each time you update (build again) on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></li>
 <li>Click <code>Add</code> when you are done</li>
-<li>If building for a child, you will send the invitation to yourself because you will install for your child: See <a href="../gh-deploy/#install-testflight-loop-for-child">Install Loop for Child</a></li>
+<li>If building for a child, you will send the invitation to yourself because you will install for your child: See <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a></li>
 </ul>
 <p align="center"><img alt="select your users for the testing group" src="../img/setup-testflight-03.png" width="700" /></p>
 </li>
@@ -4001,12 +3996,12 @@
 </li>
 </ul>
 <h3 id="delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#delete-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>When you have already built Loop with <em><abbr title="program used to build an app">Xcode</abbr></em>, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing <code>Loop</code> identifier will have a name that starts with <code>XC</code> as shown below, where your 10-digit <code>TEAMID</code> is used.</p>
+<p>When you have already built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <em><abbr title="program used to build an app">Xcode</abbr></em>, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing <code>Loop</code> identifier will have a name that starts with <code>XC</code> as shown below, where your 10-digit <code>TEAMID</code> is used.</p>
 <ul>
 <li><code>Name: XC com TEAMID loopkit Loop</code></li>
 <li><code>Identifier: com.TEAMID.loopkit.Loop</code></li>
 </ul>
-<p>The <code>Identifier</code> that is associated with the <code>Loop</code> identifier cannot be deleted if it is already in the <em>App Store</em> but all others can. If you attempt to delete the <code>XC</code> <em>Loop</em> identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a <code>Bundle ID</code> has ever been associated with an app in the <em>App Store</em>, you cannot delete the <code>Identifier</code>.</p>
+<p>The <code>Identifier</code> that is associated with the <code>Loop</code> identifier cannot be deleted if it is already in the <em>App Store</em> but all others can. If you attempt to delete the <code>XC</code> <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a <code>Bundle ID</code> has ever been associated with an app in the <em>App Store</em>, you cannot delete the <code>Identifier</code>.</p>
 <p>To make it easy when configuring the identifiers, go through and delete as many as you can.</p>
 <ul>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the Apple developer site.</li>
@@ -4018,7 +4013,7 @@
 </li>
 <li>Note - this graphic indicates where on this page you can find your <code>TEAMID</code><ul>
 <li>If you notice an identifier with a value embedded in it that does not have your <code>TEAMID</code>, then delete it if you can and <a href="../gh-update/#update-secrets">Update <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a> with your correct <code>TEAMID</code></li>
-<li>If you try to delete a Loop identifier that does not have your <code>TEAMID</code>, but you already added to the <em>App Store</em>, it will refuse, don't worry, just keep going</li>
+<li>If you try to delete a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier that does not have your <code>TEAMID</code>, but you already added to the <em>App Store</em>, it will refuse, don't worry, just keep going</li>
 </ul>
 </li>
 </ul>
@@ -4027,10 +4022,10 @@
 <p>If you were just trying to clean up the identifiers, then follow these steps:</p>
 <ul>
 <li>Run Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> to add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> with the documented short names</li>
-<li>If you did not complete <a href="#add-or-review-configuration-for-loop-identifier">Add or Review Configuration for Loop Identifier</a> step, do it now</li>
+<li>If you did not complete <a href="#add-or-review-configuration-for-loop-identifier">Add or Review Configuration for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Identifier</a> step, do it now</li>
 <li>Complete the <a href="#add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
-<li>If you did not complete the <a href="#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> step, do it now</li>
-<li>Continue with <a href="#create-certificates">Create Certificates</a> and then <a href="#build-loop">Build Loop</a></li>
+<li>If you did not complete the <a href="#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> step, do it now</li>
+<li>Continue with <a href="#create-certificates">Create Certificates</a> and then <a href="#build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></li>
 </ul>
 
 

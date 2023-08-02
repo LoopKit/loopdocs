@@ -2308,17 +2308,17 @@
 <h2 id="omnipod-faults"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Faults<a class="headerlink" href="#omnipod-faults" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Pod faults are shown in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr>:</p>
 <p align="center"><img alt="img/pod-hud-fault.png" src="../img/pod-hud-fault.png" width="250" /></p>
-<p>Loop will put a higher battery load on a pod than the PDM due to its regular and repeated communications. A pod with lower battery level appears to be more likely to fault for conditions like static electricity and occlusions/pump issues that Loop is not directly causing, like internal fault codes 052, 061, 064 and 066. Pods always perform safety checks and if a potential problem is found, the pod will end itself by screaming and stop with the insulin delivery.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will put a higher battery load on a pod than the PDM due to its regular and repeated communications. A pod with lower battery level appears to be more likely to fault for conditions like static electricity and occlusions/pump issues that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is not directly causing, like internal fault codes 052, 061, 064 and 066. Pods always perform safety checks and if a potential problem is found, the pod will end itself by screaming and stop with the insulin delivery.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>During extensive tests after getting all commands working properly, many failures due to one specific safety check were still encountered. This check needed to recover its counter within 30 minutes after a temp basal returning to a normal basal schedule, or else the pod would scream. Eventually, this was resolved by disabling <em>only</em> this particular check. Therefore the 096-106 faults are always ignored in the current configuration of Loop.</p>
+<p>During extensive tests after getting all commands working properly, many failures due to one specific safety check were still encountered. This check needed to recover its counter within 30 minutes after a temp basal returning to a normal basal schedule, or else the pod would scream. Eventually, this was resolved by disabling <em>only</em> this particular check. Therefore the 096-106 faults are always ignored in the current configuration of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 </div>
 <h2 id="known-internal-pod-fault-codes">Known internal pod fault codes<a class="headerlink" href="#known-internal-pod-fault-codes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The currently known pod faults are listed here on the openomni wiki page: <a href="https://github.com/openaps/openomni/wiki/Fault-event-codes">Pod Fault codes</a></p>
 <h2 id="ways-to-reduce-the-possibility-of-a-fault">Ways to reduce the possibility of a fault<a class="headerlink" href="#ways-to-reduce-the-possibility-of-a-fault" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>None of the ways listed here are guaranteed to reduce the possibility of a screaming pod, but they could be worth considering.</p>
 <ul>
-<li>Keep the Loop app up to date; newer versions might include improvements to reduce pod battery load</li>
+<li>Keep the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app up to date; newer versions might include improvements to reduce pod battery load</li>
 <li>Use a 433 Mhz <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> for Eros Pods</li>
 <li>Maintain a wider correction range (10 to 20 mg/dL; 0.5 to 1.1 mmol/L) instead of a single number</li>
 </ul>
@@ -2328,11 +2328,11 @@
 <li>028, Pod expired, (HEX code: 0x1C)</li>
 <li>024, Empty reservoir, (HEX code: 0x18)</li>
 </ul>
-<p>In the unlikely event that Loop issues a command to the pod when the pod is not in the correct state to receive it, the pod will scream and the reported fault is:</p>
+<p>In the unlikely event that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> issues a command to the pod when the pod is not in the correct state to receive it, the pod will scream and the reported fault is:</p>
 <ul>
 <li>049, Incorrect pod state for command, (HEX code: 0x31)</li>
 <li>This is not the type of fault to report to Insulet or ask for a replacement pod</li>
-<li>Instead, capture a <a href="../../loop-3/settings/#issue-report">Loop Report</a> and report it to the developers as soon as possible</li>
+<li>Instead, capture a <a href="../../loop-3/settings/#issue-report"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report</a> and report it to the developers as soon as possible</li>
 </ul>
 <h2 id="replacement-pod-situations">Replacement pod situations<a class="headerlink" href="#replacement-pod-situations" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can always call Insulet tech support if a pod has a clear failure on the pod, such as:</p>
@@ -2343,7 +2343,7 @@
 <li>The adhesive was not working properly when trying to place it on your body.</li>
 <li>The pod begins to scream during pairing or priming or insertion</li>
 </ul>
-<p>If the pod fails during use with Loop, a replacement might still be possible. The software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, calling in failed pods for reasons not in the list above, on the third day of pod life, is a bit of a reach for the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community. There is a grey area here that we should be careful of and acknowledge that Looping may be a contributor in certain faults.</p>
+<p>If the pod fails during use with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, a replacement might still be possible. The software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, calling in failed pods for reasons not in the list above, on the third day of pod life, is a bit of a reach for the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community. There is a grey area here that we should be careful of and acknowledge that Looping may be a contributor in certain faults.</p>
 <p>Insulet is aware that pods are used by the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community. You can be honest about your use and might receive replacement pods. If your pod fails early, it is worth informing Insulet for their troubleshooting records even if you do not get a replacement.</p>
 
 

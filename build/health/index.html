@@ -2280,13 +2280,13 @@
   <h1>Loop 2 Health Permissions</h1>
 
 <h2 id="health-data">Health Data<a class="headerlink" href="#health-data" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The Loop app uses the Health app to record blood glucose, insulin, and carbohydrate data. The blood glucose, insulin, and carbohydrate data stored in the Health app can also be accessed and uploaded by the <a href="https://tidepool.org">Tidepool</a> Mobile app which enables display on of your data on the Tidepool web-based display tool. Please review the settings below to ensure you have the proper settings.</p>
-<h2 id="loop-permissions">Loop Permissions<a class="headerlink" href="#loop-permissions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You need to set up Loop's permissions to read and write some data in the Health app. When you finish building your first Loop app, the Health app screen for Loop permissions automatically appears. (People who have been looping a while should be aware that the permissions are slightly different now.) Do not enable permission for Loop to read carbohydrates from the Apple Health app.</p>
-<p>You can also get to this screen (for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15) by iPhone -&gt; Settings -&gt; Health (heart icon) -&gt; Data Access &amp; Devices -&gt; Loop.</p>
+<p>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app uses the Health app to record blood glucose, insulin, and carbohydrate data. The blood glucose, insulin, and carbohydrate data stored in the Health app can also be accessed and uploaded by the <a href="https://tidepool.org">Tidepool</a> Mobile app which enables display on of your data on the Tidepool web-based display tool. Please review the settings below to ensure you have the proper settings.</p>
+<h2 id="loop-permissions"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Permissions<a class="headerlink" href="#loop-permissions" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You need to set up <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s permissions to read and write some data in the Health app. When you finish building your first <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, the Health app screen for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> permissions automatically appears. (People who have been looping a while should be aware that the permissions are slightly different now.) Do not enable permission for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to read carbohydrates from the Apple Health app.</p>
+<p>You can also get to this screen (for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15) by iPhone -&gt; Settings -&gt; Health (heart icon) -&gt; Data Access &amp; Devices -&gt; <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <div class="admonition warning">
 <p class="admonition-title">New Instructions</p>
-<p>Loop does not need to read carbohydrates from the Health app.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> does not need to read carbohydrates from the Health app.</p>
 <p>The old instructions suggested turning on all switches.  This is NOT necessary for carbohydrates and can be dangerous if</p>
 <ol>
 <li>A different app writes carbohydrates to the Health app</li>
@@ -2296,28 +2296,28 @@
 <p align="center"><img alt="Apple Health app, iOS 14, Loop app permissions screen" src="../img/loop-health-permissions.svg" width="300" /></p>
 <p><strong>Blood Glucose</strong>: Permission to Write and Read</p>
 <ul>
-<li>Loop eavesdrops on the Bluetooth communication of the Dexcom G4/G5/G6 <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and <strong>writes</strong> the values to the Health app for the first 3 hours</li>
-<li>After 3 hours, the Dexcom <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> app allows other apps (including the Health app) access to its <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data, so Loop needs to <strong>read</strong> the older Blood Glucose from the Health app</li>
-<li>During times when there is no <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data, the user can enter a finger stick value into the Health app Blood Glucose (BG) screen and Loop will <strong>read</strong> it, e.g., during sensor warmup</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> eavesdrops on the Bluetooth communication of the Dexcom G4/G5/G6 <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and <strong>writes</strong> the values to the Health app for the first 3 hours</li>
+<li>After 3 hours, the Dexcom <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> app allows other apps (including the Health app) access to its <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data, so <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> needs to <strong>read</strong> the older Blood Glucose from the Health app</li>
+<li>During times when there is no <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data, the user can enter a finger stick value into the Health app Blood Glucose (BG) screen and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will <strong>read</strong> it, e.g., during sensor warmup</li>
 </ul>
 <p><strong>Carbohydrates</strong>: Permission to Write ONLY</p>
 <ul>
-<li>Loop has its own carbohydrate data store and does not need to read carbs from the Health app</li>
-<li>Once Loop records a carbohydrate entry, it will start to dose insulin to accommodate the expected rise in blood glucose from the carbohydrates consumed</li>
-<li>If any other app writes carbohydrates to the Health app, you do not want Loop to add them to what you've already entered into the Loop app (resulting in duplicate entries)</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has its own carbohydrate data store and does not need to read carbs from the Health app</li>
+<li>Once <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> records a carbohydrate entry, it will start to dose insulin to accommodate the expected rise in blood glucose from the carbohydrates consumed</li>
+<li>If any other app writes carbohydrates to the Health app, you do not want <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to add them to what you've already entered into the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app (resulting in duplicate entries)</li>
 </ul>
 <p><strong>Insulin Delivery</strong>: Permission to Write and Read</p>
 <ul>
-<li>Loop <strong>writes</strong> basal and bolus doses to the Health app</li>
-<li>Loop <strong>reads</strong> any manual insulin added to the Health app, e.g., insulin taken by injection</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <strong>writes</strong> basal and bolus doses to the Health app</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <strong>reads</strong> any manual insulin added to the Health app, e.g., insulin taken by injection</li>
 </ul>
 <p><strong>Sleep</strong>: Permission to Read</p>
 <ul>
-<li>Loop uses Sleep information to decide which times of day to use the limited daily allocation from Apple for updates to the Loop watch complication.</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses Sleep information to decide which times of day to use the limited daily allocation from Apple for updates to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> watch complication.</li>
 </ul>
 <h2 id="dexcom-permissions">Dexcom Permissions<a class="headerlink" href="#dexcom-permissions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You also need to enable your Dexcom Mobile app to write to the Health app. The steps shown in the figure below are valid for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 12.</p>
-<p>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13/14, the menu items are: iPhone -&gt; Settings -&gt; Health (heart icon) -&gt; Data Access &amp; Devices -&gt; Dexcom app. Make sure Dexcom has permission to write Blood Glucose (after the 3 hour delay).  If you do not do this, you will have a maximum history of 3 hours displayed in the Loop Glucose screen.</p>
+<p>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 13/14, the menu items are: iPhone -&gt; Settings -&gt; Health (heart icon) -&gt; Data Access &amp; Devices -&gt; Dexcom app. Make sure Dexcom has permission to write Blood Glucose (after the 3 hour delay).  If you do not do this, you will have a maximum history of 3 hours displayed in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Glucose screen.</p>
 <p align="center"><img alt="G5 Dexcom app, iOS 12, instructions for enabling Dexcom to write to Health" src="../img/health_g5.jpg" width="550" /></p>
 
 

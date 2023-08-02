@@ -2537,7 +2537,7 @@
 
 <h2 id="github-build-method-errors"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update <em>LoopDocs</em> to make it easier for the next person to succeed without errors.</p>
-<p>If you've been around Loop for a while, you know the mantra about screenshots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action failures, <strong>screenshots are close to useless</strong>. If you get an error with a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action</em>, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your <code>GitHub Action</code> log files directly.</p>
+<p>If you've been around <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for a while, you know the mantra about screenshots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action failures, <strong>screenshots are close to useless</strong>. If you get an error with a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action</em>, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your <code>GitHub Action</code> log files directly.</p>
 <p>But first - try to diagnose it yourself using this page.</p>
 <h2 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These are some of the most common errors to date.</p>
@@ -2607,7 +2607,7 @@
 <p>As your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code> is case-sensitive, use copy and paste.</p>
 </div>
 <h2 id="action-verify-secrets-errors">Action: <code>Verify Secrets</code> Errors<a class="headerlink" href="#action-verify-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>A new action was added with <em>Loop</em> 3.1 to provide better error messages if something is wrong with your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
+<p>A new action was added with <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 3.1 to provide better error messages if something is wrong with your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
 <p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
 <p>To generate the graphic below, some items were deliberately set to be incorrect in the <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> list. Representative error messages are shown when running the validate secrets action.</p>
 <p align="center"><img alt="representative messages with deliberate errors when running validate secrets" src="../img/gh-validate-secrets.png" width="800" /></p>
@@ -2652,7 +2652,7 @@
 <ul>
 <li>You probably do not have the correct <code>TEAMID</code> entered in your <code>Secrets</code></li>
 <li>The rest of these instructions assume:<ul>
-<li>You have already created a <em>Loop</em> App in the <em>App Store</em> with that incorrect <code>TEAMID</code></li>
+<li>You have already created a <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App in the <em>App Store</em> with that incorrect <code>TEAMID</code></li>
 <li>This is true if you completed the steps after running Action: <code>Add Identifiers</code> and before Action: <code>Create Certificates</code></li>
 </ul>
 </li>
@@ -2666,7 +2666,7 @@
 <li>
 <p>Delete all the identifiers that you can, following the steps in <a href="../gh-first-time/#delete-identifiers">First Time: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
 <ul>
-<li>You will not be able to delete the <em>Loop</em> identifier with the wrong <code>TEAMID</code>, but don't worry about it</li>
+<li>You will not be able to delete the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier with the wrong <code>TEAMID</code>, but don't worry about it</li>
 </ul>
 </li>
 <li>
@@ -2680,7 +2680,7 @@
 <p>Run Action: <a href="../gh-first-time/#add-identifiers">First Time: <code>Add Identifiers</code></a> again</p>
 </li>
 <li>
-<p>Follow all the steps in this section with the <strong>correct</strong> <code>TEAMID</code> <a href="../gh-first-time/#configure-identifiers-for-loop">First Time: Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for Loop</a> but when you get to the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create Loop App in App Store Connect</a>, you need to return to this page and follow the instructions below to remove the app and add a new one.</p>
+<p>Follow all the steps in this section with the <strong>correct</strong> <code>TEAMID</code> <a href="../gh-first-time/#configure-identifiers-for-loop">First Time: Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> but when you get to the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a>, you need to return to this page and follow the instructions below to remove the app and add a new one.</p>
 </li>
 </ol>
 <p>The first time through, you created an app with a <code>Bundle ID</code> that does NOT include your <code>TEAMID</code>.</p>
@@ -2688,7 +2688,7 @@
 <h4 id="remove-app-with-incorrect-teamid">Remove App with Incorrect <code>TEAMID</code><a class="headerlink" href="#remove-app-with-incorrect-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Go to <a href="https://appstoreconnect.apple.com/apps"><code>App Store Connect / Apps</code></a> and follow the numbered steps in the graphic below.</p>
 <ol>
-<li>Find the <em>Loop</em> app you created earlier and click on it</li>
+<li>Find the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app you created earlier and click on it</li>
 <li>On the left side, under <code>General</code>, click on <code>App Information</code><ul>
 <li>Confirm that the value listed under <code>Bundle ID</code> is the incorrect one</li>
 <li>The <code>Bundle ID</code> says: <code>com.NOT_YOUR_TEAMID.loopkit.Loop</code></li>
@@ -2705,11 +2705,11 @@
 <p>That <em>App</em> with the wrong <code>Bundle ID</code> remains in the <em>App store</em> but it is hidden so it won't confuse you.</p>
 <h4 id="add-app-with-correct-teamid">Add App with Correct <code>TEAMID</code><a class="headerlink" href="#add-app-with-correct-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Now click on the <code>Add Apps</code> button or the <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2795.svg" title=":heavy_plus_sign:" /> (plus sign) if you have other apps in the <em>App Store</em>.</p>
-<p>Follow the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create Loop App in App Store Connect</a> directions with these additions:</p>
+<p>Follow the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> directions with these additions:</p>
 <ul>
-<li>You must come up with a new name for your <em>Loop</em> App</li>
-<li>Triple-check that the <code>Bundle ID</code> you choose is for <em>Loop</em> and contains your <code>TEAMID</code>, it should look like: <code>com.TEAMID.loopkit.Loop</code></li>
-<li>You must come up with a new <code>SKU</code> for your <em>Loop</em> App (try <code>1234</code>, if you used <code>123</code> before)</li>
+<li>You must come up with a new name for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</li>
+<li>Triple-check that the <code>Bundle ID</code> you choose is for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and contains your <code>TEAMID</code>, it should look like: <code>com.TEAMID.loopkit.Loop</code></li>
+<li>You must come up with a new <code>SKU</code> for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App (try <code>1234</code>, if you used <code>123</code> before)</li>
 </ul>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the First Time Steps to <code>Create Certificates</code> and then <code>Build Loop</code> and keep going.</p>
@@ -2724,7 +2724,7 @@
 <div class="copy highlight"><pre><span></span><code>Error cloning certificates repo, please make sure you have read access to the repository you want to use
 </code></pre></div>
 </blockquote>
-<p>If you see this phrase, the <code>fastlane</code> package that is utilized during the <code>3. Create Certificates</code> action cannot access your <abbr title="contains project files and each file's revision history">repository</abbr> to create certificates for your <em>Loop</em> app. This is due to insufficient <abbr title="contains project files and each file's revision history">repository</abbr> access rights that were not granted during the creation of your <code>GH_PAT</code> token.</p>
+<p>If you see this phrase, the <code>fastlane</code> package that is utilized during the <code>3. Create Certificates</code> action cannot access your <abbr title="contains project files and each file's revision history">repository</abbr> to create certificates for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. This is due to insufficient <abbr title="contains project files and each file's revision history">repository</abbr> access rights that were not granted during the creation of your <code>GH_PAT</code> token.</p>
 <p>To fix this error:</p>
 <ul>
 <li>Open this link: <a href="https://github.com/settings/tokens/">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/</a></li>
@@ -2760,7 +2760,7 @@
 <p>If that phrase is found, then:</p>
 <ul>
 <li>
-<p>Make sure you completed the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Create Loop App in App Store Connect</a> Step</p>
+<p>Make sure you completed the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> Step</p>
 <ul>
 <li>Once you've resolved that step, run these <em><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em> again:<ul>
 <li><code>Create Certificates</code></li>
@@ -2770,7 +2770,7 @@
 </ul>
 </li>
 <li>
-<p>This can also be caused if you correctly created the <em>Loop</em> App but entered an incorrect value for the <code>TEAMID</code>.</p>
+<p>This can also be caused if you correctly created the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App but entered an incorrect value for the <code>TEAMID</code>.</p>
 <ul>
 <li>If you have the incorrect <code>TEAMID</code>, check this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles</a> for entries with the incorrect <code>TEAMID</code> embedded</li>
 <li>For example, if your <code>TEAMID</code> is <code>0123456789</code>, but you entered <code>000123</code>, you may see both of these in your identifiers list<ul>
@@ -2793,10 +2793,10 @@
 <div class="copy highlight"><pre><span></span><code>error: Provisioning profile &quot;match AppStore
 </code></pre></div>
 </blockquote>
-<p>If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your <em>Loop</em> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
+<p>If that phrase is found one, or more times, it means you missed a step when configuring the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier or missed associating your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
 <p>For example, if you see:</p>
 <p><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.</code></p>
-<p>Go back to <a href="../gh-first-time/#add-or-review-configuration-for-loop-identifier">First-Time: Add or Review Configuration for Loop Identifier</a> and make sure you enabled the <code>Time-Sensitive notification</code> for Loop.</p>
+<p>Go back to <a href="../gh-first-time/#add-or-review-configuration-for-loop-identifier">First-Time: Add or Review Configuration for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Identifier</a> and make sure you enabled the <code>Time-Sensitive notification</code> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p>For example, you might see:</p>
 <ul>
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget</code></li>
@@ -2804,7 +2804,7 @@
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
 </ul>
 <p>Return to <a href="https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers">Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> and fix the missing items.</p>
-<p>You must create certificates again before you can build <em>Loop</em>:</p>
+<p>You must create certificates again before you can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
 <ul>
 <li>Action: <code>Create Certificates</code></li>
 <li>Action: <code>Build Loop</code></li>
@@ -2825,7 +2825,7 @@
 [31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.Loop-Intent-Extension.mobileprovision&#39;[0m
 [31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.watchkitextension.mobileprovision&#39;[0m
 </code></pre></div>
-<p>This tells you, the <code>Bundle ID</code> you selected in <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First-Time: Create Loop App in App Store Connect</a> does NOT have your <code>TEAMID</code> embedded in the name.</p>
+<p>This tells you, the <code>Bundle ID</code> you selected in <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First-Time: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> does NOT have your <code>TEAMID</code> embedded in the name.</p>
 <p>Once you have created an app in the <em>App Store</em> that is not based on your <code>TEAMID</code>, you cannot delete it, but you can Remove it (i.e. hide it so that it is no longer visible on this page and you don't accidentally click on it).</p>
 <ol>
 <li>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed.</li>

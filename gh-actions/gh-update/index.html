@@ -725,6 +725,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#accept-agreements" class="md-nav__link">
+    Accept Agreements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#update-fork" class="md-nav__link">
     Update Fork
   </a>
@@ -2371,6 +2378,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#accept-agreements" class="md-nav__link">
+    Accept Agreements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#update-fork" class="md-nav__link">
     Update Fork
   </a>
@@ -2509,11 +2523,11 @@
 
   <h1>GitHub Update</h1>
 
-<h2 id="update-loop-using-github-actions">Update Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and Loop development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<div class="admonition info">
-<p class="admonition-title">Time Estimate</p>
-<p>Build Loop</p>
+<h2 id="update-loop-using-github-actions">Update <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em><a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<details class="info">
+<summary>Time Estimate (click to open/close)</summary>
+<p>Build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></p>
 <ul>
 <li>Start the Build: 5 minutes</li>
 <li>Wait for build to complete and appear in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone<ul>
@@ -2527,53 +2541,50 @@
 <li>5 minutes to regenerate token</li>
 <li>5 minutes to update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> Secret for each of your app repositories</li>
 </ul>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Summary</p>
-<p><strong>You must build Loop every 90 days when you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method - this is a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> requirement.</strong></p>
+</details>
+<details class="abstract">
+<summary>Page Summary (click to open/close)</summary>
+<p><strong>You must build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> every 90 days when you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method - this is a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> requirement.</strong></p>
+<p>Most users will start at <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a>.</p>
+<p>If your <code>GitHub Personal Access Token</code> has expired, we recommend you update it with <code>No Expiration</code> as explained at <a href="#github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</p>
+<p>If you are running <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev, be sure to review <a href="#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></p>
 <ul>
-<li>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token expiration is independent of the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app expiration<ul>
-<li>LoopDocs used to have you set up your token to expire at the same time as <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> but that added an unnecessary burden to the update process</li>
-<li>The new recommendation is that your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token be updated to <code>No Expiration</code></li>
+<li>You should be following along with zulipchat when using dev</li>
+<li>Summary build updates can be found under the <a href="#one-time-changes">One-Time Changes</a> section</li>
 </ul>
-</li>
-<li>To update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token, start at <a href="#github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a></li>
-<li>Otherwise, start at <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a></li>
-</ul>
-</div>
-<div class="admonition question">
-<p class="admonition-title">FAQs</p>
+</details>
+<details class="question">
+<summary>FAQs (click to open/close)</summary>
 <ul>
 <li><strong>Do I need a computer?</strong> No.</li>
 <li><strong>Can I do this on my phone?</strong> Yes, especially after you update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> token to <code>No Expiration</code>.</li>
 <li><strong>Did the directions change?</strong> Yes. We now recommend you select a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token that never expires. It simplifies the build every 90-day process significantly.</li>
-<li><strong>How do I set my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access token to never expire?</strong> See this section <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</li>
-<li><strong>What happens to my existing builds when I change my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token?</strong> Nothing. The <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> only affect future builds. Previous build will be available for the full 90 days.</li>
+<li><strong>How do I set my <code>GitHub Personal Access</code> token to never expire?</strong> See this section <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</li>
+<li><strong>What happens to my existing builds when I change my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token?</strong> Nothing. The <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> only affect future builds. Previous build will be available for the full 90 days.</li>
 </ul>
-</div>
+</details>
 <h2 id="github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update<a class="headerlink" href="#github-build-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Summary of Update Steps</p>
 <ul>
+<li><a href="#accept-agreements">Accept Agreements</a></li>
 <li><a href="#update-fork">Update Fork</a></li>
-<li><a href="#build-loop">Build Loop</a></li>
+<li><a href="#build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></li>
 <li><a href="#wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a></li>
 <li><a href="#install-or-confirm-installation">Install or Confirm Installation</a></li>
 </ul>
 </div>
-<h3 id="update-fork">Update Fork<a class="headerlink" href="#update-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Open <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> in your browser (sign in if needed) and select your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> from your repositories list.</p>
-<p>Look to see if your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date.</p>
+<h3 id="accept-agreements">Accept Agreements<a class="headerlink" href="#accept-agreements" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Sign in to your <a href="https://developer.apple.com/account">Apple Developer account</a>. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your Apple <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect - that is very unlikely.</p>
 <ul>
-<li>When you go to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to do the update, simply sync the <abbr title="version of code within a single repository or workspace repository">branch</abbr> if it says there are updates and you get the latest release (details below graphic)<ul>
-<li>This particular graphic shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Yours should show the main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>For an update, you do not need to modify the <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code></li>
+<li>Check you Apple Developer account for agreements, then continue</li>
 </ul>
-</li>
-</ul>
+<h3 id="update-fork">Update Fork<a class="headerlink" href="#update-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Open your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account and select your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> from your repositories list.</p>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <ul>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your Loop app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is about to expire - in which case, proceed to <a href="#build-loop">Build Loop</a></li>
+<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is about to expire - in which case, proceed to <a href="#build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></li>
 <li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on <code>Update branch</code></li>
 <li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually sync and choose to <code>discard changes</code>; you can always customize again after the update</li>
 </ul>
@@ -2582,30 +2593,35 @@
 <p>Do I need to do anything special to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</p>
 <p>Yes: please follow instructions at <a href="#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></p>
 </div>
-<h3 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The section continues immediately after the <a href="#update-fork">Update Fork</a> section. Refer to graphic below as you follow the steps to Build Loop.</p>
+<h3 id="build-loop">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Refer to graphic below as you follow the steps to Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <ul>
-<li>Click on the '<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>' tab</li>
-<li>Select the '4. Build Loop' <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left<ul>
+<li>Click on the <code>Actions</code> tab</li>
+<li>Select the <code>4. Build Loop</code> <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left<ul>
 <li>If using a mobile browser, be sure to use landscape mode to more closely match how <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> looks on a computer.</li>
 </ul>
 </li>
-<li>Look on the right and click 'Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>' to  see the dropdown</li>
+<li>Look on the right and click <code>Run workflow</code> to  see the dropdown</li>
 <li>Click on the green <code>Run workflow</code> button in the dropdown</li>
 <li>Wait ~25 min for the build to complete successfully</li>
 <li>It is then processed by Apple and sent to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (be patient)</li>
 </ul>
 <p align="center"><img alt="graphic indicating how to build again" src="../img/github-build-actions-build-again.svg" width="700" /></p>
 <h4 id="what-if-the-build-fails">What if the Build Fails<a class="headerlink" href="#what-if-the-build-fails" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>There are some updates where you need to run some actions before build. If a new release is announced, look to see if there are instructions about this. In those cases, you will probably be told to run Action 2: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Action 3: Create Certificates before Action 4: Build Loop. Those steps are fast and there is no harm in trying them.</p>
+<p>If a new release is announced at <a href="../../version/releases/#current-release">Current Release</a>, look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)</p>
+<p>If you are using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, head over to <a href="#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a> for information.</p>
 <p>Otherwise, head over to <a href="../gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a>.</p>
 <h3 id="wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr><a class="headerlink" href="#wait-for-testflight" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You'll receive an App Store Connect email confirming that the build has completed processing, and a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> email confirming the new app is ready to test.</p>
 <ul>
 <li>If you get an email that the action failed, then return to your <abbr title="contains project files and each file's revision history">repository</abbr> and look for Build Action error messages<ul>
 <li>Click on the most recent Build job with the red x by it</li>
-<li>If the details show this message, "<a href="../gh-errors/#could-not-install-wwdr-certificate">Could not install WWDR certificate</a>", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
-<li>Repeat the build (previous step) and it should be fine the next time - that just means Apple did not reply to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> as fast as <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> expected</li>
+<li>If the details show this message, "<a href="../gh-errors/#could-not-install-wwdr-certificate">Could not install WWDR certificate</a>"<ul>
+<li>This means Apple did not reply to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> as fast as <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> expected</li>
+<li>Make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
+<li>Repeat the build (previous step)</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2613,7 +2629,7 @@
 <ul>
 <li>You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that</li>
 </ul>
-<p>The updated Loop app will show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app on the Looper's phone.</p>
+<p>The updated <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app will show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app on the Looper's phone.</p>
 <ul>
 <li>Your new app will have "Expires in 90 days"<ul>
 <li>There may be older builds that are still in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
@@ -2629,22 +2645,22 @@
 </div>
 <h3 id="install-or-confirm-installation">Install or Confirm Installation<a class="headerlink" href="#install-or-confirm-installation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h4 id="automatic-update-disabled">Automatic Update Disabled<a class="headerlink" href="#automatic-update-disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Option 1: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> disabled for Loop, you choose when to install the app on the phone.</p>
+<p>Option 1: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> disabled for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you choose when to install the app on the phone.</p>
 <ul>
 <li>Open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
-<li>If you are building for a child, follow the <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a> instructions again</li>
+<li>If you are building for a child, follow the <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a> instructions again</li>
 </ul>
 <p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h4 id="automatic-update-enabled">Automatic Update Enabled<a class="headerlink" href="#automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Option 2: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> enabled for Loop, the updated build will be installed over your existing app.</p>
+<p>Option 2: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> enabled for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, the updated build will be installed over your existing app.</p>
 <ul>
 <li>In this case, when you look at the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app on your phone, the app should have installed automatically</li>
 <li>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above, the message will say <code>Open</code> instead of <code>Install</code></li>
 </ul>
 <h2 id="github-build-details"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Details<a class="headerlink" href="#github-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>In the Loop app, once installed on your phone, tap on Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. The graphic below shows an example of the Build Details included in the report.</p>
+<p>In the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, once installed on your phone, tap on <code>Settings -&gt; Support -&gt; Issue Report</code>. The graphic below shows an example of the Build Details included in the report.</p>
 <ul>
-<li>The <code>profileExpiration</code> listed here is irrelevant - the app expires when the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration indicates - a later version of <abbr title="Latest release with major updates">Loop 3</abbr> will probably capture that date and provide a notification in the app; but for now, you must remember<ul>
+<li>The <code>profileExpiration</code> listed here is irrelevant - the app expires when the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration indicates<ul>
 <li>Pro Tip: Add a calender reminder for your next build</li>
 </ul>
 </li>
@@ -2706,7 +2722,7 @@
 <p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> instructions to start a new build.</p>
 <h2 id="github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can build any desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> (available at LoopKit/LoopWorkspace) using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
-<p><strong>No matter the method used to build Loop for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than main, you are testing development code. Please read this link now before continuing.</strong></p>
+<p><strong>No matter the method used to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than main, you are testing development code. Please read this link now before continuing.</strong></p>
 <ul>
 <li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
 </ul>
@@ -2737,7 +2753,7 @@
 </ul>
 </li>
 <li>Run the Action for Create Certificates</li>
-<li>Run the Action for Build Loop</li>
+<li>Run the Action for Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ol>
 <p><strong>03-July-2023</strong></p>
 <ol>
@@ -2747,7 +2763,7 @@
 </ul>
 </li>
 <li>Automatic update and automatic monthly build was added to dev (13 July 2023)<ul>
-<li>Once a month, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will attempt to update and build Loop from your <code>default branch</code> using the instructions in the <code>Action: 4. Build Loop</code> (<code>build_loop.yml</code> file) and send the new app to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li>Once a month, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will attempt to update and build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> from your <code>default branch</code> using the instructions in the <code>Action: 4. Build Loop</code> (<code>build_loop.yml</code> file) and send the new app to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
 <li>As part of this monthly build, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will check to see if updates are required for your <code>default branch</code></li>
 <li>When updates are not required, it just builds the app</li>
 <li>When updates are required:<ul>
@@ -2779,7 +2795,7 @@
 <h3 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> is at <code>https://github.com/username/LoopWorkspace</code> where you substitute your actual <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code>. You need to be logged into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Review the graphic below as you go through the steps.</p>
 <ol>
-<li>Click on the Branches icon to display the branches as shown in the lower half of the graphic below:<ul>
+<li>Click on the <code>Branches</code> icon to display the branches as shown in the lower half of the graphic below:<ul>
 <li>If the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want is not listed, then continue with Step 2</li>
 <li>Otherwise, skip ahead to <a href="#update-branch">Update Branch</a></li>
 </ul>
@@ -2808,7 +2824,7 @@
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <h3 id="build-branch">Build Branch<a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you want a <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be the one you build all the time, you may choose to <a href="#change-default-branch">Change Default Branch</a>. This is not necessary except for special cases.</p>
-<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you Build Loop. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
+<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
 <p align="center"><img alt="build loop using github actions" src="../img/action-04-build-loop.svg" width="700" /></p>
 <h2 id="change-default-branch">Change Default Branch<a class="headerlink" href="#change-default-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There can be several reasons why you would change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>

@@ -2279,12 +2279,12 @@
 
   <h1>Algorithm Overview</h1>
 
-<h2 id="loop-algorithm">Loop Algorithm<a class="headerlink" href="#loop-algorithm" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Loop’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both <a href="../bolus/">bolus recommendations</a> and <a href="../temp-basal/">temporary basal rate adjustments</a> are set based on this <a href="../prediction/">prediction</a>.</p>
+<h2 id="loop-algorithm"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Algorithm<a class="headerlink" href="#loop-algorithm" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both <a href="../bolus/">bolus recommendations</a> and <a href="../temp-basal/">temporary basal rate adjustments</a> are set based on this <a href="../prediction/">prediction</a>.</p>
 <h2 id="algorithm-terminology">Algorithm Terminology<a class="headerlink" href="#algorithm-terminology" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This graph and legend illustrates terms commonly used in discussing Loop's algorithm,
+<p>This graph and legend illustrates terms commonly used in discussing <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s algorithm,
 and shows them in the context of historical and forecasted blood glucose in style similar to the
-status screen of Loop.</p>
+status screen of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p><img alt="Chart illustrating terms" src="../img/terms_graph.png" /></p>
 <table>
 <thead>
@@ -2296,11 +2296,11 @@ status screen of Loop.</p>
 <tbody>
 <tr>
 <td>Insulin activity duration</td>
-<td>The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects blood glucose. The insulin activity duration is 6 hours for Loop's rapid-acting and ultra-rapid insulin models.</td>
+<td>The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects blood glucose. The insulin activity duration is 6 hours for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s rapid-acting and ultra-rapid insulin models.</td>
 </tr>
 <tr>
 <td>Correction range</td>
-<td>The correction range is the blood glucose range Loop uses to determine corrective actions (e.g., between 90 and 120 mg/dL in the figure). NOTE: Loop’s correction range is a user setting and should not be confused with the target range, typically 70-180 mg/dL, used for the purpose of calculating the percent time in range.</td>
+<td>The correction range is the blood glucose range <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses to determine corrective actions (e.g., between 90 and 120 mg/dL in the figure). NOTE: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s correction range is a user setting and should not be confused with the target range, typically 70-180 mg/dL, used for the purpose of calculating the percent time in range.</td>
 </tr>
 <tr>
 <td>Correction minimum</td>
@@ -2316,7 +2316,7 @@ status screen of Loop.</p>
 </tr>
 <tr>
 <td>Predicted blood glucose</td>
-<td>Loop makes a prediction of blood glucose values out for a length of time equal to your insulin action duration. The predicted blood glucose is the basis for how Loop makes its insulin delivery recommendations and actions.</td>
+<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction of blood glucose values out for a length of time equal to your insulin action duration. The predicted blood glucose is the basis for how <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes its insulin delivery recommendations and actions.</td>
 </tr>
 <tr>
 <td>Eventual blood glucose</td>
@@ -2332,7 +2332,7 @@ status screen of Loop.</p>
 </tr>
 <tr>
 <td>Suspend Threshold</td>
-<td>The suspend threshold is a safety feature of the Loop algorithm. If any predicted blood glucose is below this threshold, the Loop algorithm will issue a temporary basal rate of 0</td>
+<td>The suspend threshold is a safety feature of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm. If any predicted blood glucose is below this threshold, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm will issue a temporary basal rate of 0</td>
 </tr>
 <tr>
 <td><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data</td>
@@ -2344,7 +2344,7 @@ status screen of Loop.</p>
 </tr>
 <tr>
 <td>Active insulin</td>
-<td>Active insulin, often referred to as Insulin-on-Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>), is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted blood glucose. The active insulin displayed in Loop's main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, Loop doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
+<td>Active insulin, often referred to as Insulin-on-Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>), is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted blood glucose. The active insulin displayed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
 </tr>
 </tbody>
 </table>

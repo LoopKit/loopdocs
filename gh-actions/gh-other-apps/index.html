@@ -2497,8 +2497,8 @@
 <p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other repositories in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe began to add the same feature.</p>
 <p>The same technique is used and the same six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are applied to each <abbr title="contains project files and each file's revision history">repository</abbr>. Those secrets are tied to your Apple Developer ID and your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. As other apps are updated, they will be added to this page and the list below will be updated.</p>
 <ul>
-<li>LoopCaregiver</li>
-<li>Loop Follow</li>
+<li><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title"><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> - NEW RECOMMENDATION</p>
@@ -2509,7 +2509,7 @@
 <p>If you choose a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> into the secrets for each <abbr title="contains project files and each file's revision history">repository</abbr> you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.</p>
 </div>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Wait until the <abbr title="contains project files and each file's revision history">repository</abbr> you are interested in adds the capability of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build. Many of the steps for each <abbr title="contains project files and each file's revision history">repository</abbr> are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.</p>
+<p>Wait until the <abbr title="contains project files and each file's revision history">repository</abbr> you are interested in adds the capability of <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build. Many of the steps for each <abbr title="contains project files and each file's revision history">repository</abbr> are the same as what you used (or would use) for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.</p>
 <ul>
 <li>
 <p>If you have already built using this <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method, it is easy to build the next <abbr title="contains project files and each file's revision history">repository</abbr>. Skip ahead to <a href="#fork-and-add-secrets">Fork and Add <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
@@ -2549,14 +2549,14 @@
 </thead>
 <tbody>
 <tr>
-<td>LoopCaregiver</td>
-<td><a href="https://github.com/LoopKit/LoopCaregiver">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopCaregiver</a></td>
-<td><a href="../../nightscout/remote-overrides/#loopcaregiver">LoopDocs: LoopCaregiver</a></td>
+<td><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></td>
+<td><a href="https://github.com/LoopKit/LoopCaregiver">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></a></td>
+<td><a href="../../nightscout/remote-overrides/#loopcaregiver">LoopDocs: <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></a></td>
 </tr>
 <tr>
-<td>Loop Follow</td>
+<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow</td>
 <td><a href="https://github.com/loopandlearn/LoopFollow">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/loopandlearn/LoopFollow</a></td>
-<td><a href="https://github.com/loopandlearn/LoopFollow#loop-follow">Loop Follow</a></td>
+<td><a href="https://github.com/loopandlearn/LoopFollow#loop-follow"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow</a></td>
 </tr>
 </tbody>
 </table>
@@ -2564,7 +2564,7 @@
 <p>After successfully creating your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> for this app:</p>
 <ul>
 <li>
-<p>If you have already built Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, skip ahead to <a href="#add-existing-secrets">Add Existing <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
+<p>If you have already built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, skip ahead to <a href="#add-existing-secrets">Add Existing <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></p>
 </li>
 <li>
 <p>If this is the first <abbr title="contains project files and each file's revision history">repository</abbr> you have built with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></p>
@@ -2601,11 +2601,11 @@
 <p align="center"><img alt="dialog for entering a new secret" src="../img/repeat-secret-dialog.png" width="500" /></p>
 </li>
 </ol>
-<p>Once all six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are added, you will either continue to add the identifiers (LoopCaregiver) or use the updated method to first validate your secrets (Loop Follow).</p>
+<p>Once all six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are added, you will either continue to add the identifiers (<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>) or use the updated method to first validate your secrets (<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow).</p>
 <h2 id="action-validate-secrets">Action: Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#action-validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The first action step is to Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>.</p>
 <p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
-<p>When building LoopCaregiver, the new steps are not yet available, so you'll skip ahead to <a href="#action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
+<p>When building <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, the new steps are not yet available, so you'll skip ahead to <a href="#action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
 <p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
 <ul>
 <li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code></li>
@@ -2620,7 +2620,7 @@
 <li>Wait, and within a minute or two you should see a green checkmark indicating the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> succeeded.</li>
 <li>The <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.</li>
 </ol>
-<p>Until LoopCaregiver is also updated, the instructions for the rest of this page won't include the numbers for the successive steps.</p>
+<p>Until <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> is also updated, the instructions for the rest of this page won't include the numbers for the successive steps.</p>
 <h2 id="action-add-identifiers">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#action-add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
 <ul>
@@ -2629,12 +2629,12 @@
 </ul>
 <p>The workflows are now displayed: look at the list on the left side similar to that shown in the graphic below. (You can dismiss the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Enabled message using the X near the upper right side if it appears).</p>
 <ul>
-<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>The graphic below is an example from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
 <p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
 <h3 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
-<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>The graphic below is an example from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
@@ -2673,23 +2673,23 @@
 </thead>
 <tbody>
 <tr>
-<td>LoopCaregiver</td>
-<td>LoopCaregiver</td>
-<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.LoopCaregiver</td>
+<td><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></td>
+<td><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></td>
+<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></td>
 </tr>
 <tr>
-<td>Loop Follow</td>
+<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow</td>
 <td>LoopFollow</td>
 <td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.LoopFollow</td>
 </tr>
 </tbody>
 </table>
-<p>Some apps, like Loop, require updates to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
-<p>Other apps, like LoopCaregiver and Loop Follow, do not require updates to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
+<p>Some apps, like <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, require updates to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
+<p>Other apps, like <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow, do not require updates to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> after they are generated.</p>
 <div class="admonition warning">
-<p class="admonition-title">LoopCaregiver is under development</p>
+<p class="admonition-title"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> is under development</p>
 <p>This app is proving very useful already, but it is still under development. When you <abbr title="a copy of code in a github repository other than the original">fork</abbr> this from the <abbr title="contains project files and each file's revision history">repository</abbr>, you will notice that dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the default.</p>
-<p>Please follow the discussion in the <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App">Loop Caregiver App</a> zulipchat stream.</p>
+<p>Please follow the discussion in the <a href="https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Caregiver App</a> zulipchat stream.</p>
 </div>
 <p>If your app is not listed in the Update Required section, skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a>.</p>
 <h3 id="update-required">Update Required<a class="headerlink" href="#update-required" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -2708,11 +2708,11 @@
 </thead>
 <tbody>
 <tr>
-<td>LoopCaregiver</td>
-<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.LoopCaregiver</td>
+<td><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></td>
+<td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></td>
 </tr>
 <tr>
-<td>Loop Follow</td>
+<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Follow</td>
 <td>com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.LoopFollow</td>
 </tr>
 </tbody>
@@ -2729,7 +2729,7 @@
 <p align="center"><img alt="choose to add a new app" src="../img/new-app-in-store.png" width="300" /></p>
 </li>
 <li>
-<p>The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in <a href="../gh-first-time/#find-my-loop"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Find My Loop</a>, where you'll be finding App Name instead of Loop.</p>
+<p>The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in <a href="../gh-first-time/#find-my-loop"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>, where you'll be finding App Name instead of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <ul>
 <li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr>".</li>
 <li>Enter a name: this will have to be unique<ul>
@@ -2754,7 +2754,7 @@
 <p>You are done with this activity. You can close the browser tab, but before you do, note the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> tab at the top of the page. You'll be using that tab after you complete the next two actions.</p>
 <h2 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
-<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>The graphic below is an example from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
 <p>Refer to the graphic below for the numbered steps:</p>
 <ol>
@@ -2779,7 +2779,7 @@
 </ol>
 <h2 id="build-app">Build App<a class="headerlink" href="#build-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
-<li>The graphic below is an example from Loop, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>The graphic below is an example from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
 <p>Refer to the graphic below for the first four steps:</p>
 <ol>
@@ -2796,11 +2796,11 @@
 <li>
 <p>Wait a few minutes to make sure there is not an early failure</p>
 <ul>
-<li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build Loop Errors</a></li>
+<li>If this action fails, head over to <a href="../gh-errors/#action-build-loop-errors">Action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Errors</a></li>
 <li>Once you've resolved the error, it's a good idea to repeat all three steps in this order:<ul>
 <li><a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li>Create Certificates</li>
-<li>Build Loop</li>
+<li>Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ul>
 </li>
 </ul>
@@ -2809,9 +2809,9 @@
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
 </ol>
 <h2 id="add-users-to-testflight-for-app">Add Users to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for App<a class="headerlink" href="#add-users-to-testflight-for-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once the first build completes, you will be able to configure <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for the app - follow the template for setting up <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for Loop found in <a href="../gh-first-time/#set-up-users-and-access-testflight"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)</a></p>
+<p>Once the first build completes, you will be able to configure <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for the app - follow the template for setting up <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> found in <a href="../gh-first-time/#set-up-users-and-access-testflight"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time: Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)</a></p>
 <h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The <a href="../gh-deploy/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deployment</a> walks you through the steps to deploy to a phone. When going through those steps, replace your App Name for Loop. Everything else is the same.</p>
+<p>The <a href="../gh-deploy/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deployment</a> walks you through the steps to deploy to a phone. When going through those steps, replace your App Name for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. Everything else is the same.</p>
 
 
 
