@@ -48,7 +48,13 @@ This is only available with Loop 3 and Loop development branch.
 Sign in to your [Apple Developer account](https://developer.apple.com/account). If there are agreements you have not accepted, you will get errors when you try to Build that indicate your Apple <code>Secrets</code> are incorrect - that is very unlikely.
 
 * For an update, you do not need to modify the <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code>
-* Check you Apple Developer account for agreements, then continue
+* Check your Apple Developer account for agreements, then continue
+
+If you need detailed instructions, click on the [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement) help page.
+
+* Accept the `Apple Program License Agreement` (only)
+    * You do NOT need to accept anything related to the `Paid Applications Schedule Agreement`
+    * That is only required when you sell an app through the `App Store`
 
 
 ### Update Fork
