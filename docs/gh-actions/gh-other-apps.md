@@ -6,6 +6,8 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 * LoopCaregiver
 * Loop Follow
+* xDrip4iOS
+
 
 !!! warning "GH_PAT - NEW RECOMMENDATION"
     It is now recommended that you use a GitHub Personal Access Token (GH_PAT) that never expires
@@ -28,7 +30,7 @@ Wait until the repository you are interested in adds the capability of GitHub bu
         * Use that table to find the link of the repository you will fork
 
 !!! important "Use the repository for the application you are building"
-    Many graphics on this page show `LoopWorkspace`, just remember to use the repository for the app you want to build, that is either `LoopFollow` or `LoopCaregiver`.
+    Many graphics on this page show `LoopWorkspace`, just remember to use the repository for the app you want to build, that is either `LoopFollow` or `LoopCaregiver` or `xdripswift`
 
 ## Fork and Add Secrets
 
@@ -40,6 +42,7 @@ Wait until the repository you are interested in adds the capability of GitHub bu
 |---|---|---|
 | LoopCaregiver | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) |
 |Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
+|xDrip4iOS | [https://github.com/JohanDegraeve/xdripswift](https://github.com/JohanDegraeve/xdripswift) | [xDrip4iOS](https://xdrip.readthedocs.io)|
 
 
 ## Configure Secrets for this App
@@ -77,7 +80,7 @@ Open the text file in which you maintain a copy of your 6 Secrets so you can cop
     ![dialog for entering a new secret](img/repeat-secret-dialog.png){width="500"}
     {align="center"}
 
-Once all six Secrets are added, you will either continue to add the identifiers (LoopCaregiver) or use the updated method to first validate your secrets (Loop Follow).
+Once all six Secrets are added, you will either continue to add the identifiers (LoopCaregiver) or use the updated method to first validate your secrets (Loop Follow or xDrip4iOS).
 
 ## Action: Validate Secrets
 
@@ -97,7 +100,7 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your `LoopFollow` or `LoopCaregiver`  repository and enable workflows if needed
+1. Click on the "Actions" tab of your `LoopFollow` or `LoopCaregiver` or `xdripswift`  repository and enable workflows if needed
 1. On the left side, select "1. Validate Secrets".
 1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
@@ -153,6 +156,7 @@ After successfully performing the Add Identifiers Action, you will see the ident
 | --- | --- | --- |
 | LoopCaregiver | LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
+| xDrip4iOS | xdripswift | com.TEAMID.xdripswift |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
@@ -183,6 +187,7 @@ This requires you to provide some information. Examine the table below for the b
 | --- | --- |
 | LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | com.TEAMID.LoopFollow |
+| xDrip4iOS | com.TEAMID.xdripswift |
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
 
