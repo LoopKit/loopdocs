@@ -30,7 +30,7 @@ Wait until the repository you are interested in adds the capability of GitHub bu
         * Use that table to find the link of the repository you will fork
 
 !!! important "Use the repository for the application you are building"
-    Many graphics on this page show `LoopWorkspace`, just remember to use the repository for the app you want to build, that is either `LoopFollow` or `LoopCaregiver` or `xdripswift`
+    Many graphics on this page show `LoopWorkspace`, just remember to use the repository for the app you want to build, that is either `LoopFollow` or `LoopCaregiver` or `xdripswift`.
 
 ## Fork and Add Secrets
 
