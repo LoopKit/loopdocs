@@ -2466,22 +2466,28 @@
 </li>
 </ul>
 <p>In both cases, you build the code to install over an existing app on your phone or onto a new device.</p>
+<div class="admonition important">
+<p class="admonition-title">Check <em>Apple</em> Developer Account</p>
+<p>If you have an updated agreement, be sure to accept it before you update or rebuild.</p>
+<ul>
+<li><a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code></a></li>
+</ul>
+</div>
 <ul>
 <li>If you use the Mac-<abbr title="program used to build an app">Xcode</abbr> build method:<ul>
 <li>First make sure your Mac operating system and <abbr title="program used to build an app">Xcode</abbr> version are compatible with your iPhone version, and then</li>
-<li>Easiest method is to use the build select script which automatically downloads the latest released version of the code every time</li>
-<li>See note below if your download speed or your Mac is very slow</li>
+<li>Easiest method is to use the <a href="../../build/step14/#build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> which automatically downloads the latest released version of the code every time</li>
+<li>See note below if your internet speed or your Mac is very slow</li>
 </ul>
 </li>
 <li>If you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method:<ul>
-<li>Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> if needed to get the new released version</li>
-<li>Use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>Follow the steps on <a href="../../gh-actions/gh-update/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Update</a></li>
 <li>Within an hour that new build should be available via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> to install on your phone</li>
 </ul>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Slow Download or Mac?</p>
+<details class="tip">
+<summary>Slow Internet / Slow Mac? (click to open/close)</summary>
 <p>If you have a very slow download speed or if you do a lot of customizations, it may be worth your time to decide if you need a new download.</p>
 <ul>
 <li>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to check the date of your last download by looking in the Downloads/BuildLoop folder</li>
@@ -2492,7 +2498,7 @@
 </ul>
 </li>
 </ul>
-</div>
+</details>
 <h2 id="when-should-i-update">When Should I Update?<a class="headerlink" href="#when-should-i-update" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
 <li><strong>Best Practice</strong><ul>
@@ -2524,16 +2530,16 @@
 </ul>
 </li>
 </ul>
-<h4 id="typical-apple-update-schedule">Typical Apple Update Schedule:<a class="headerlink" href="#typical-apple-update-schedule" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="typical-apple-update-schedule">Typical <em>Apple</em> Update Schedule:<a class="headerlink" href="#typical-apple-update-schedule" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>Each September, Apple releases a major <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version which typically works with the current <abbr title="operating system for Mac computer">macOS</abbr> but requires a new <abbr title="program used to build an app">Xcode</abbr> version</li>
-<li>Each September, Apple releases a major <abbr title="operating system for Mac computer">macOS</abbr> version (but doesn't require you to update your Mac, yet)</li>
+<li>Each September, <em>Apple</em> releases a major <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version which typically works with the current <abbr title="operating system for Mac computer">macOS</abbr> but requires a new <abbr title="program used to build an app">Xcode</abbr> version</li>
+<li>Each September, <em>Apple</em> releases a major <abbr title="operating system for Mac computer">macOS</abbr> version (but doesn't require you to update your Mac, yet)</li>
 <li>Each March, you must update to the current <abbr title="operating system for Mac computer">macOS</abbr> (major version) to continue building applications</li>
 </ul>
 <h2 id="where-should-i-start-when-i-want-to-update-my-loop">Where should I start when I want to update my <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>?<a class="headerlink" href="#where-should-i-start-when-i-want-to-update-my-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="check-your-developer-account">Check your Developer Account<a class="headerlink" href="#check-your-developer-account" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Regardless of build method, always check your Apple Developer Account status.</p>
-<p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<p>Regardless of build method, always check your <em>Apple</em> Developer Account status.</p>
+<p><em>Apple</em> updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p><img alt="Screenshot: Account - Apple Developer" src="../../build/img/license.png" /></p>
 <h4 id="updates-with-the-github-browser-build-method">Updates with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method:<a class="headerlink" href="#updates-with-the-github-browser-build-method" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Go to <a href="../../gh-actions/gh-update/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Update</a> and follow the instructions.</p>
@@ -2588,22 +2594,42 @@
 </ul>
 <h2 id="what-if-im-changing-phones">What if I'm changing phones?<a class="headerlink" href="#what-if-im-changing-phones" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Changing phones is a little different than just <a href="../../build/updating/">updating</a>.</p>
-<div class="admonition abstract">
-<p class="admonition-title">New Phone Checklist</p>
 <ul>
-<li>When you change phones, Apple will force you to the latest <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version</li>
-<li>Make sure you can build to that <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version before trying to transfer <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to the new phone</li>
+<li>When you change phones, <em>Apple</em> will force you to the latest <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version for your new phone</li>
+<li>Update your old phone to the latest <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> the hardware supports - this simplifies the automatic transfer process <em>Apple</em> provides to move all your data and apps from your old phone to your new phone</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">New Phone Checklist for <em>Mac-<abbr title="program used to build an app">Xcode</abbr> Build</em></p>
+<ul>
+<li>Make sure your Mac and <abbr title="program used to build an app">Xcode</abbr> versions are compatible with that <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version</li>
+<li>If your old phone cannot support the latest <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> version, then build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to a simulator that matches the expected <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> for your new phone</li>
+<li>If your Mac will not support the correct version of <abbr title="program used to build an app">Xcode</abbr> needed by your new phone, consider using <a href="../../gh-actions/gh-overview/">Browser Build</a></li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">New Phone Checklist for <em>Browser Build</em></p>
+<ul>
+<li>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app will install from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> onto the most recent <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr></li>
+<li>If a new version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is available, updating before transfer to a new phone is preferred but not required</li>
+</ul>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Transfer to the New Phone</p>
+<ul>
 <li>You can use the old phone as your looping phone until you get the new one ready<ul>
 <li>When turning the old phone in for a rebate, you typically have a week or two before you have to turn it in</li>
 <li>When you transfer information from your old phone to your new phone, all the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings files get copied to the new device including information about the pod (if one is running)</li>
-<li>You then need to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on the new phone and it remembers those settings</li>
+<li>Install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on the new phone (all your settings should be there)<ul>
+<li>Install via <em>Mac-<abbr title="program used to build an app">Xcode</abbr> Build</em> or from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for <em>Browser Build</em></li>
+</ul>
+</li>
 <li>It's a good idea to do this at pod change time, just in case, and to record (or screenshot) all your settings</li>
 </ul>
 </li>
-<li>Once the transfer is completed check <a href="../../operation/overview/">all your settings and all your permissions</a> on the new phone</li>
+<li>Once the transfer is completed check <a href="../../loop-3/settings/">all your settings and all your permissions</a> on the new phone</li>
 </ul>
 </div>
-<p>You can find the instructions written up in this <a href="https://www.loopandlearn.org/new-device">article</a>.</p>
+<p>You can find more detailed instruction in <a href="https://www.loopandlearn.org/new-device"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: New Phone</a>. That article includes Dexcom instructions for the new phone.</p>
 <h2 id="how-long-does-it-take">How long does it take?<a class="headerlink" href="#how-long-does-it-take" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Assuming your <abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> updates are done, then plan on about 30 minutes.</p>
 
