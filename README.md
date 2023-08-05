@@ -103,8 +103,8 @@ You can share the preview with others by building the site from your working bra
     ```
 
 **Issue:**  
-ℹ️ If you have deployed your current branch with `mkdocs gh-deploy` and then pushed  `master` to the repository, this will automatically deploy `master` and override your previous deployment.
-The reason is simple, *Loopdocs* also has a [*GitHub Action*](.github/workflows/publish.yml) that automatically builds and deploys the documentation every time the `master` branch is pushed to the repository.   
+ℹ️ If you have deployed your current branch with `mkdocs gh-deploy` and then pushed  `main` to the repository, this will automatically deploy `main` and override your previous deployment.
+The reason is simple, *Loopdocs* also has a [*GitHub Action*](.github/workflows/publish.yml) that automatically builds and deploys the documentation every time the `main` branch is pushed to the repository.   
 The workaround is to redeploy your branch for preview with `mkdocs gh-deploy`.
 
 ❗️ Remember to disable *GitHub Pages* in your repository settings when you are done sharing.
