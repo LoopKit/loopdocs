@@ -1,5 +1,5 @@
-When on *Loop* main page, tapping on the "Active Carbohydrates" graph will open up the "Carbohydrates" details page that tracks your carb entries for the day (since midnight) and how they are absorbed.
-It is helpful to  review your meals.
+When on *Loop* main page, tapping on the "Active Carbohydrates" graph will open up the "Carbohydrates" details page that tracks your carb entries for the last 12 hours and how they are absorbed.
+It is helpful to review your meals.
 
 ## Insulin Counteraction Effects
 
