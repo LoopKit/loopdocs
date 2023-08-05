@@ -5,22 +5,22 @@ It is helpful to review your meals.
 
 What is *Insulin Counteraction Effects* (*ICE* for short)?
 
-Consider the possible sources of triggers that counteract insulin (in other words, make BGs go up)
+Consider the possible sources of triggers that counteract insulin (in other words, make glucose levels go up)
 
 * food
 * stress
 * illness
 * someone sat too close to you
 
-As we all know, this list can be long but, on "normal" days food will be the strongest "insulin counteracter".  Food will be the most influence on making BGs go up.  There are also other reasons that BGs climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.
+As we all know, this list can be long but, on "normal" days food will be the strongest "insulin counteracter".  Food will be the most influence on making glucose levels go up.  There are also other reasons that glucose levels climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.
 
-If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), *Loop* will expect most of the upward pressure on BGs are from food.
+If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), *Loop* will expect most of the upward pressure on glucose levels are from food.
 
 [*Insulin Counteraction Effect*](#insulin-counteraction-effects) (*ICE*)  is one very important part of carb absorption but also a foundational part of other things, like *Retrospective Correction* (*RC*).
 
 ## Glucose Change Display
 
- The graph at the top of your "Carbohydrates" details page shows how *Loop* expects carbs to effect your BG (gray bars), and also something called [*ICE*](#insulin-counteraction-effects).
+ The graph at the top of your "Carbohydrates" details page shows how *Loop* expects carbs to effect your glucose (gray bars), and also something called [*ICE*](#insulin-counteraction-effects).
  It shows how *Loop* is thinking about Carbohydrate absorption, modeling for carb effects, and _also_ shows [*ICE*](#insulin-counteraction-effects). 
 
 - ⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that *Loop* is currently modeling.  
@@ -48,7 +48,7 @@ It was a busy day and I really didn't want to count carbs.  Ok, even on the slow
 ![img/ice-2.jpg](img/ice-2.jpg){width="700"}
 {align="center"}
 
-Watching what was going on a little later...BGs were rising at a decent clip and I had a feeling I really didn't cover things super well...so I edited the original 70g entry, adding 10g and making it 80g instead.  (That's why there is a 2U bolus around 4:20pm.)  And of course around 5:40pm there was a little bit of nibbling on the leftovers as we put them into the fridge.  We gave 10g for that.  BGs climbed a bit more, not surprising given how we were underestimating fast carbs at this point...but still not so bad at 180 peak BG.  (Anna gave 2 units correction at the peak because there was dessert coming later that night and she wanted to be ready for it without too much pre-bolus.)
+Watching what was going on a little later...glucose levels were rising at a decent clip and I had a feeling I really didn't cover things super well...so I edited the original 70g entry, adding 10g and making it 80g instead.  (That's why there is a 2U bolus around 4:20pm.)  And of course around 5:40pm there was a little bit of nibbling on the leftovers as we put them into the fridge.  We gave 10g for that.  Glucose levels climbed a bit more, not surprising given how we were underestimating fast carbs at this point...but still not so bad at 180 peak glucose.  (Anna gave 2 units correction at the peak because there was dessert coming later that night and she wanted to be ready for it without too much pre-bolus.)
 
 ![img/ice-5.png](img/ice-5.png){width="500"}
 {align="center"}
@@ -65,4 +65,4 @@ For example, the biggest weakness I had in this (and suspected it even as I did 
     By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.
 
 !!! note 
-    Remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that *Loop* doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed in part to [*ICE*](#insulin-counteraction-effects) when they really aren't food-related.  In those cases, address the underlying cause and then use the Carbohydrates page when you've come back to "normal".
+    Remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your glucose levels to swing that *Loop* doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed in part to [*ICE*](#insulin-counteraction-effects) when they really aren't food-related.  In those cases, address the underlying cause and then use the Carbohydrates page when you've come back to "normal".
