@@ -38,7 +38,7 @@ When you make a food entry originally, *Loop* will save your entry as you've mad
 
 ## Practical use
 
-So how can we use this information to make our Looping experience better?  The answer is probably best illustrated using a real-world example.  Chinese food...in fact, This Chinese dish.  General Tso's chicken.  As you can see in the recipe, loads of fast carbs with ingredients like hoisin sauce, brown sugar, and cornstarch.  But also slower carbs like chicken.  Rice can be a difficult one because for us, it acts fast but also seems to have a long tail.
+So how can we use this information to make our Looping experience better?  The answer is probably best illustrated using a real-world example.  Chinese food...in fact, this Chinese dish.  General Tso's chicken.  As you can see in the recipe, loads of fast carbs with ingredients like hoisin sauce, brown sugar, and cornstarch.  But also slower carbs like chicken.  Rice can be a difficult one because for us, it acts fast but also seems to have a long tail.
 
 ![img/ice.jpg](img/ice.jpg){width="500"}
 {align="center"}
