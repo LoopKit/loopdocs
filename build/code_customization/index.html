@@ -1816,6 +1816,19 @@
     Build-Time Features
   </a>
   
+    <nav class="md-nav" aria-label="Build-Time Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-clamp" class="md-nav__link">
+    Chart Clamp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2571,6 +2584,19 @@
     Build-Time Features
   </a>
   
+    <nav class="md-nav" aria-label="Build-Time Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-clamp" class="md-nav__link">
+    Chart Clamp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2894,7 +2920,7 @@
 <li>Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download</li>
 </ul>
 </li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders can use <a href="https://www.loopandlearn.org/custom-code#custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization: Single Customization List</a></li>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders can use <a href="https://www.loopandlearn.org/custom-code#prepared-custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization: Prepared Customizations</a></li>
 </ul>
 <p>Other customizations require that you create your own personalized version.</p>
 <ul>
@@ -2964,6 +2990,11 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FE
 <div class="highlight"><pre><span></span><code>// Features
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
 </code></pre></div>
+<p>For dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only, there is an additional flag that is present</p>
+<p><em>Code Before Modification for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></em></p>
+<div class="highlight"><pre><span></span><code>// Features
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS //DEBUG_FEATURES_ENABLED
+</code></pre></div>
 <p>List of some flags and what they do:</p>
 <table>
 <thead>
@@ -2993,8 +3024,55 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENAB
 <td>SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED</td>
 <td>The Apple Watch screens show current glucose, trend arrow and eventual glucose by default. This flag disables the display of eventual glucose on the watch if you find the display distracting.</td>
 </tr>
+<tr>
+<td>PREDICTED_GLUCOSE_CHART_CLAMP_ENABLED</td>
+<td><a href="#chart-clamp">Chart Clamp</a></td>
+</tr>
+<tr>
+<td>ALLOW_ALGORITHM_EXPERIMENTS</td>
+<td><strong>dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</strong><br><br>This is enabled by default to show Algorithm Experiments below the <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> row. This enables the user to separately enable or disable Glucose Based Partial Application and Integral Retrospective Correction</td>
+</tr>
 </tbody>
 </table>
+<h3 id="chart-clamp">Chart Clamp<a class="headerlink" href="#chart-clamp" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>What the heck is a chart clamp? It means the range displayed will not be smaller than the clamp but it can be bigger.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> automatically scales the glucose charts based on the history shown. Some people don't like to see the vertical axis changing, so they turn on the "clamp".</p>
+<p>When the <code>PREDICTED_GLUCOSE_CHART_CLAMP_ENABLED</code> build time flag is added:</p>
+<ul>
+<li>the range shown is never smaller than <code>glucoseChartDefaultDisplayBoundClamped</code></li>
+<li>80 to 240 mg/dL (4.4 to 13.3 mmol/L)</li>
+</ul>
+<p>When you do not add that build time flag:</p>
+<ul>
+<li>the range shown is never smaller than <code>glucoseChartDefaultDisplayBound</code></li>
+<li>100 to 175 mg/dL (5.6 to 9.7 mmol/L)</li>
+</ul>
+<p>If glucose within the display history is outside of the bound, the graph range expands to include that glucose level. This prevents glucose readings from being "hidden".</p>
+<p>You can customize chart display settings if you want. The original lines of code are shown below. You will need to read the rest of this page to figure out how to modify these to meet what you prefer. If you can't figure this out - reach out for help.</p>
+<ul>
+<li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
+<li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
+<li>File: LoopConstants.swift</li>
+<li>Lines: 32 to 45</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>    // MARK - Display settings
+
+    static let minimumChartWidthPerHour: CGFloat = 50
+
+    static let statusChartMinimumHistoryDisplay: TimeInterval = .hours(1)
+
+    static let glucoseChartDefaultDisplayBound =
+        HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 100)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 175)
+
+    static let glucoseChartDefaultDisplayRangeWide =
+        HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 60)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 200)
+
+    static let glucoseChartDefaultDisplayBoundClamped =
+        HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 80)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 240)
+</code></pre></div>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions on this page were originally prepared for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. </p>
 <p>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is used to edit your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the particular Module in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account as instructed on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
@@ -3531,6 +3609,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
 <p>And now you'll be the proud new owner of a custom <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon.</p>
 <h2 id="additional-customizations-for-loop-3">Additional Customizations for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#additional-customizations-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some customizations on this page add support for Libre sensors. If you are willing to build a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then Libre support is already added to that version. Please read <a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</a>.</p>
 <p>If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-<abbr title="program used to build an app">Xcode</abbr> or <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> browser build method) or use a prepared <abbr title="a copy of code in a github repository other than the original">fork</abbr> that already contains them.</p>
 <p>These customizations are only for <abbr title="Latest release with major updates">Loop 3</abbr>:</p>
 <ul>
@@ -3621,33 +3700,21 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </li>
 </ul>
 <h2 id="limit-loop-for-faster-cgm">Limit <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Faster <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#limit-loop-for-faster-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="Latest release with major updates">Loop 3</abbr> enables higher rates of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. Medtronic pumps are very unhappy with faster <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycles and should not be subjected to this.</p>
-<p>This modification limits the period for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycles to 4.8 minutes or longer. See also <a href="https://www.loopandlearn.org/custom-code/#custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Single Customization List</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Meant for Libre Users</p>
-<p>This customization is suggested for Libre Users who need to limit how frequently <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> modifies dosing commands to preserve pod batteries.</p>
-<p>The <abbr title="Latest release with major updates">Loop 3</abbr> code was modified when adding support for DASH pods. The DASH pods have a 3-minute heartbeat and it was discovered that with Dexcom (5-minute update rate) and DASH, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> could switch to a DASH heartbeat and not be triggered by the next <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> works much better when each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle is triggered by the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
-<p>The preferred solution is to have the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> manager decide when to send updated glucose values to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<p>The released code of <abbr title="Latest release with major updates">Loop 3</abbr> (3.0.0 through 3.2.2) allows <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to run at higher rates of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates. Medtronic pumps are very unhappy with faster <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycles and should not be subjected to this.</p>
+<p>This modification limits the period for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycles to 4.2 minutes or longer. See also <a href="https://www.loopandlearn.org/custom-code/#custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Single Customization List</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">If your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> updates at 1-minute rates, please add this customization</p>
+<p>This code is consistent with the code currently in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>This is only needed for <abbr title="Latest release with major updates">Loop 3</abbr>.2.2 and earlier versions.</p>
 </div>
-<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let timeSinceLastLoop
+<ul>
+<li>When building with Mac-<abbr title="program used to build an app">Xcode</abbr>, copy the command (below), paste into a terminal window on the Mac and choose <code>Limit CGM driven Loop Cycle to 5 minutes</code>:</li>
+</ul>
+<div class="copy highlight"><span class="filename">Customization Select script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)&quot;
 </code></pre></div>
 <ul>
-<li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Managers/</li>
-<li>File: LoopDataManager.swift, Line: 841</li>
+<li>When using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build, please refer to <a href="https://www.loopandlearn.org/custom-code/#prepared-custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Code Customization: Prepared Customizations</a></li>
 </ul>
-<p>The Key_Phrase gets you near where you will insert new code.</p>
-<p><em>Code Before Modification</em></p>
-<p>The line above the Key_Phrase is:</p>
-<div class="highlight"><pre><span></span><code>if let lastLoopCompleted = self.lastLoopCompleted {
-</code></pre></div>
-<p>You can copy the lines below and replace the one line above with this new code.</p>
-<p><em>Code After Modification</em></p>
-<div class="copy highlight"><pre><span></span><code>// Limit Loop frequency to 4.8 minutes
-if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) &lt; TimeInterval(minutes: 4.8) {
-    self.logger.default(&quot;Skipping loop attempt as last loop completed at %{public}@&quot;, String(describing: lastLoopCompleted))
-    return
-} else if let lastLoopCompleted = self.lastLoopCompleted {
-</code></pre></div>
 <h2 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
 <p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
