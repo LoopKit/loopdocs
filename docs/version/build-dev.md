@@ -23,7 +23,7 @@ There is a script to assist in building the dev branch. It gives you the option 
 
 There used to be a section here telling you how to build a special branch that had Libre support included. That is no longer necessary because [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was merged into dev in July 2023.
 
-If you use the Browser Build method to build the dev branch, be sure to [One Time Steps for dev](../gh-actions/gh-update.md#one-time-changes).
+If you use the Browser Build method to build the dev branch, be sure to read about and do the [One Time Steps for dev](../gh-actions/gh-update.md#one-time-changes).
 
 Both the dev branch and the lightly tested branch of dev have Libre support.
 

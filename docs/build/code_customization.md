@@ -892,7 +892,7 @@ This modification limits the period for Loop cycles to 4.2 minutes or longer. Se
 
     This is only needed for Loop 3.2.2 and earlier versions.
 
-* When building with Mac-Xcode, issue this command, paste into a terminal window on the Mac and choose `Limit CGM driven Loop Cycle to 5 minutes`:
+* When building with Mac-Xcode, copy the command (below), paste into a terminal window on the Mac and choose `Limit CGM driven Loop Cycle to 5 minutes`:
 
 ``` { .txt .copy title="Customization Select script" }
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)"
