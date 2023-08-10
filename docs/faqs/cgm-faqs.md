@@ -2,7 +2,12 @@
 
 The next release of Loop and the current [Loop-dev branch](../version/build-dev.md) includes Libre support in addition to the CGM listed below.
 
-Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) can be used which adds support for some Libre sensors.
+Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps.
+
+Libre Support (for some Libre sensors):
+
+* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) 
 
 Loop 2.2.x supports Dexcom G4 with share, G5, G6, Dexcom ONE, Dexcom Share and the Medtronic CGM systems compatible with Looping pumps.
 
@@ -81,11 +86,9 @@ sequenceDiagram
 
 ## Can I use Libre sensors with a reader like Miao Miao?
 
-If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.
+If you use Loop dev code, then any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) can be used with Loop.
 
-With Loop 3, a customization can be used to support some Libre sensor CGM.
-
-Please refer to [Loop and Learn: Loop 3 with Customization](https://www.loopandlearn.org/main-lnl-patches/)
+See [What CGMs does Loop work with?](#what-cgms-does-loop-work-with).
 
 ## Can I use Eversense?
 

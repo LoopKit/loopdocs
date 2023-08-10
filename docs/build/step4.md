@@ -12,6 +12,7 @@
         * Dexcom ONE is available in some countries
     - Dexcom G7
     - Medtronic sensors connected to a Loop-compatible Medtronic pumps
+    - Some Libre sensors: dev branch only
 
 !!! question "FAQs"
 
@@ -44,8 +45,6 @@ If the Dexcom app is on the same device as Loop, Loop can function without an in
 
 Dexcom G7 is supported with Loop 3.
 
-
-
 ## Medtronic CGM ![img/enlite.png](img/enlite.png){width="150"}
 
 The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Loop can read the Medtronic CGM data directly from the pump using a RileyLink compatible device.
@@ -70,15 +69,10 @@ Loop 3 can use Nightscout as a remote source for CGM data. This requires cell or
 
 ## CGMs Not Supported in Loop
 
-Loop does not directly support some CGM such as Libre, Eversense and Medtronic Guardian.
+Libre Support (for some Libre sensors) is available with Loop-dev or by adding customizations.
 
-* A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support
-    * GitHub Build: Refer to the link above for instructions to build this fork
-    * Mac-Xcode Build: Select the Loop with Patches option in the [Build Select Script](step14.md)
-
-With Loop 3.0 and later, any sensor that can be uploaded to Nightscout can be used with Loop if internet service is available.
-
-To use some Libre sensors with Loop 3 without need for internet service, you will need to install the version with patches (option 2 in the Build Select Script) and install your chosen app with the same Apple Developer ID. This uses the Shared App Group to share glucose. Not ideal but it works until Libre support is added to Loop.
+* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) 
 
 Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Loop 3.0 and later allows the use of Nightscout as a CGM source.
 

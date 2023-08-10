@@ -18,7 +18,7 @@ Some customizations are the same for everyone and have been prepared for easy us
 * Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/build-select/#customization-select) script
     * This script automatically finds the most recent download and when you are done selecting customizations, opens Xcode to that download
     * Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download
-* GitHub builders can use [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
+* GitHub builders can use [Loop and Learn: Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list)
 
 Other customizations require that you create your own personalized version.
 
@@ -97,6 +97,15 @@ _Code After Modification_
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
 ```
 
+For dev branch only, there is an additional flag that is present
+
+_Code Before Modification for dev branch_
+
+```
+// Features
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS //DEBUG_FEATURES_ENABLED
+```
+
 List of some flags and what they do:
 
 |FLAG|PURPOSE|
@@ -106,6 +115,51 @@ List of some flags and what they do:
 |REMOTE_OVERRIDES_DISABLED|Remote commands: override, carbs or boluses will not be accepted even if all the [Remote Command](../nightscout/remote-overrides.md) requirements are configured|
 |OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health. Be vigilant if you select this; added carbs lead to added insulin dosing when closed loop is enabled|
 |SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens show current glucose, trend arrow and eventual glucose by default. This flag disables the display of eventual glucose on the watch if you find the display distracting.|
+|PREDICTED_GLUCOSE_CHART_CLAMP_ENABLED|[Chart Clamp](#chart-clamp)|
+|ALLOW_ALGORITHM_EXPERIMENTS|**dev branch only**<br><br>This is enabled by default to show Algorithm Experiments below the Therapy Settings row. This enables the user to separately enable or disable Glucose Based Partial Application and Integral Retrospective Correction|
+
+### Chart Clamp
+
+What the heck is a chart clamp? It means the range displayed will not be smaller than the clamp but it can be bigger.
+
+Loop automatically scales the glucose charts based on the history shown. Some people don't like to see the vertical axis changing, so they turn on the "clamp".
+
+When the `PREDICTED_GLUCOSE_CHART_CLAMP_ENABLED` build time flag is added:
+
+* the range shown is never smaller than `glucoseChartDefaultDisplayBoundClamped`
+* 80 to 240 mg/dL (4.4 to 13.3 mmol/L)
+
+When you do not add that build time flag:
+
+* the range shown is never smaller than `glucoseChartDefaultDisplayBound`
+* 100 to 175 mg/dL (5.6 to 9.7 mmol/L)
+
+If glucose within the display history is outside of the bound, the graph range expands to include that glucose level. This prevents glucose readings from being "hidden".
+
+You can customize chart display settings if you want. The original lines of code are shown below. You will need to read the rest of this page to figure out how to modify these to meet what you prefer. If you can't figure this out - reach out for help.
+
+* Module: Loop
+* Loop 3
+    * Folder: Loop/Models
+    * File: LoopConstants.swift
+    * Lines: 32 to 45
+
+```
+    // MARK - Display settings
+
+    static let minimumChartWidthPerHour: CGFloat = 50
+
+    static let statusChartMinimumHistoryDisplay: TimeInterval = .hours(1)
+
+    static let glucoseChartDefaultDisplayBound =
+        HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 100)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 175)
+
+    static let glucoseChartDefaultDisplayRangeWide =
+        HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 60)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 200)
+
+    static let glucoseChartDefaultDisplayBoundClamped =
+        HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 80)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 240)
+```
 
 ## Instructions for Finding the Lines
 
@@ -729,6 +783,8 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 ## Additional Customizations for Loop 3
 
+Some customizations on this page add support for Libre sensors. If you are willing to build a dev branch, then Libre support is already added to that version. Please read [What's going on in the dev branch?](../version/development.md#whats-going-on-in-the-dev-branch).
+
 If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method) or use a prepared fork that already contains them.
 
 These customizations are only for Loop 3:
@@ -827,46 +883,23 @@ Add LibreTransmitter to Loop as a plugin:
 
 ## Limit Loop for Faster CGM
 
-Loop 3 enables higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
+The released code of Loop 3 (3.0.0 through 3.2.2) allows Loop to run at higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
 
-This modification limits the period for Loop cycles to 4.8 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list).
+This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list).
 
-!!! warning "Meant for Libre Users"
-    This customization is suggested for Libre Users who need to limit how frequently Loop modifies dosing commands to preserve pod batteries.
+!!! important "If your CGM updates at 1-minute rates, please add this customization"
+    This code is consistent with the code currently in the dev branch.
 
-    The Loop 3 code was modified when adding support for DASH pods. The DASH pods have a 3-minute heartbeat and it was discovered that with Dexcom (5-minute update rate) and DASH, the Loop could switch to a DASH heartbeat and not be triggered by the next CGM reading. Loop works much better when each Loop cycle is triggered by the CGM.
+    This is only needed for Loop 3.2.2 and earlier versions.
 
-    The preferred solution is to have the CGM manager decide when to send updated glucose values to Loop.
+* When building with Mac-Xcode, issue this command, paste into a terminal window on the Mac and choose `Limit CGM driven Loop Cycle to 5 minutes`:
 
-
-``` { .txt .copy title="Key_Phrase" }
-let timeSinceLastLoop
+``` { .txt .copy title="Customization Select script" }
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)"
 ```
 
-* Folder: Loop/Loop/Managers/
-* File: LoopDataManager.swift, Line: 841
+* When using GitHub Browser build, please refer to [Loop and Learn: Code Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code/#prepared-custom-list)
 
-The Key_Phrase gets you near where you will insert new code.
-
-_Code Before Modification_
-
-The line above the Key_Phrase is:
-
-```
-if let lastLoopCompleted = self.lastLoopCompleted {
-```
-
-You can copy the lines below and replace the one line above with this new code.
-
-_Code After Modification_
-
-``` { .txt .copy }
-// Limit Loop frequency to 4.8 minutes
-if let lastLoopCompleted = self.lastLoopCompleted, Date().timeIntervalSince(lastLoopCompleted) < TimeInterval(minutes: 4.8) {
-    self.logger.default("Skipping loop attempt as last loop completed at %{public}@", String(describing: lastLoopCompleted))
-    return
-} else if let lastLoopCompleted = self.lastLoopCompleted {
-```
 
 ## Folders and Icons
 

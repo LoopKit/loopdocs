@@ -17,7 +17,7 @@ Loop can be connected to the following CGMs:
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
             * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
-    * Libre: [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) has been added to the dev branch (and thus will be supported in the next release of Loop)
+    * Libre: [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) was added to the dev branch (and thus will be supported in the next release of Loop)
         * Only some Libre sensors are supported; some have encryption that limits DIY use
         * No details for using Libre will show up on this page until the next release - please read [Build Loop-dev](../version/build-dev.md) and follow the links to understand what you are doing if you choose a development branch
 * CGMs that require active internet (WiFi or Cell)
