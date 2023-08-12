@@ -3,7 +3,7 @@ It is helpful to review your meals.
 
 ## Insulin Counteraction Effects
 
-What is *Insulin Counteraction Effects* (*ICE* for short)?
+What are *Insulin Counteraction Effects* (*ICE* for short)?
 
 Consider the possible sources of triggers that counteract insulin (in other words, make glucose levels go up)
 
