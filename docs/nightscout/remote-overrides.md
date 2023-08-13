@@ -2,7 +2,7 @@
 
 You can use your *Nightscout* site to remotely set and cancel your override presets in your Loop app. What?! Yes, really...you can set/cancel an override remotely for your child's *Loop*.
 
-If you are using &nbsp;<span translate="no">Loop 3</span>, then you can also send remote commands to add carbs and command a bolus.
+If you are using &nbsp;<span translate="no">Loop 3</span>, then you can also send remote commands to add carbs and command a bolus. **Remote commands** have a minimum requirement of &nbsp;<span translate="no">**Nightscout 14.2.6**</span>. If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the looper's phone.
 
 !!! warning "Remote Nightscout Interface Caveats"
     * Requires **`Apple Push Notifications service (APNs)`** - not available with a Free account
@@ -202,6 +202,9 @@ Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). Fo
    **Answer**: No. When you set a remote override in *Nightscout*, it starts immediately and lasts for the duration programmed for that override in the *Loop* app. You can only set an override in advance using the *Loop* app.
 
 ## Warnings for Remote Commands
+
+!!! important "Minimum Versions: &nbsp;<span translate="no">Loop 3</span> and &nbsp;<span translate="no">**Nightscout 14.2.6**</span>"
+    If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the looper's phone.
 
 !!! danger "**Duplicate Delivery Risk**"
     We want to highlight a very important risk before you get started.
