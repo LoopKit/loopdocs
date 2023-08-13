@@ -10,6 +10,96 @@ If you choose to use dev, you accept that this code is not released.
 
 Please read this entire page before using any version of Loop other than the released code.
 
+## Updates in dev
+
+This section is an early look at what has been added to dev since Loop 3.2.x and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [Releases](releases.md) page or the appropriate documentation section.
+
+### Support for Libre Sensors
+
+[LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was merged into dev in July 2023.
+
+If you are using the GitHub Browser Build, please review: 
+
+* [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
+
+### Simulators for Pump and CGM
+
+The simulators for the Pump and CGM for dev show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, to modify settings and to delete the simulator, you must press and hold (long-press) on the top of the display. Any where in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to main Loop screen, return to simulator screen and try again.
+
+![use long press example for pump](img/long-press-to-adjust-simulator.jpg){width="500"}
+{align="center"}
+
+### Algorithm Experiments
+
+Two algorithm experiments have been added to dev. These are Glucose Based Partial Application and Integral Retrospective Correction. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+
+![algorithm experiments](img/algorithm-experiments.svg){width="650"}
+{align="center"}
+
+### Glucose Based Partial Application (GBPA):
+
+* Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
+* It is only used when Automatic Bolus (AB) is selected for Dosing Strategy
+* This modification does not affect the recommended dose, only the speed with which the recommended dose is automatically delivered
+
+When AB is selected and GPBA is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without GBPA enabled, AB uses a fixed 40% percentage regardless of glucose level.)
+
+* Partial Application = 20% when glucose level at or below 10 mg/dL (0.6 mmol/L) above the users correction range lower value (including overrides)
+* Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
+* Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)
+
+### Integral Retrospective Correct (IRC):
+
+* Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issue/695)
+    * This was tested in a few forks but not included into dev until recently
+    * Initial merge into dev [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+* Updated with a modification to limit stacking of IRC with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
+* Integral Retrospective Correction, when enabled:
+    * changes the Loop prediction model and thus can affect the recommended dose
+    * applies to both Dosing Strategies: Temp Basal or Automatic Bolus
+
+Refering to the [Algorithm: Prediction](../operation/algorithm/prediction.md) page:
+
+* When IRC is disabled (default), this equation is used to predict glucose (where we have replaced RetrospectiveCorrection with the abbreviation, RC):
+
+$$ BG[t] = Insulin[t] + Carb[t] + RC[t] + Momentum[t] $$
+
+* When IRC is enabled that equation changes to:
+
+$$ BG[t] = Insulin[t] + Carb[t] + RC[t] + IRC[t] + Momentum[t] $$
+
+The IRC term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141). Some of the information in that comment is repeated below. Follow the comment link for equations and plots.
+
+#### Important points about IRC:
+
+1. Known risk factors compared to standard Loop: With IRC turned on, in response to persistent discrepancies between observed and predicted glucose motion, Loop will likely increase insulin corrections, which may increase the risks of hypoglycemia. IRC may also lead to increased oscillations ("roller-coaster") in glucose responses. Both of these risk factors are higher if the user's setting value for Insulin Sensitivity (ISF) is too low. Increasing ISF setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D.
+
+2. Compared to standard RC, IRC is more likely to improve glucose control in the following scenarios:
+    * Glucose remaining high or decreasing slower than expected due to temporarily reduced insulin sensitivity or due to poor site absorption
+    * Glucose trending low faster than expected due to temporarily higher insulin sensitivity
+    * Glucose spikes due to unannounced meals
+    * Glucose remaining high (or trending low) on tail ends of meals where carbs entered were underestimated (or overestimated)
+    * Glucose remaining elevated due to unannounced protein+fat effects
+    * Glucose staying above (or below) the correction range due to too low (or too high) basal rate settings
+
+3. In some scenarios IRC does not differ from standard Loop RC
+
+    * Regardless of the current glucose level, neither RC nor IRC is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.
+    * Neither RC nor IRC effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.
+
+4. Please do not expect immediate or very substantial improvements in blood glucose control. A one-time success after turning IRC on does not really mean that IRC "works" - this could just as well be a temporal coincidence. Some ways to decide if IRC could be safe and effective for you include:
+    * Responses to unannounced meals - spikes should in general be somewhat lower than with standard Loop, but there should also be no follow-up lows
+    * Nighttime responses over a few weeks - highs or lows should be less frequent compared to standard Loop; at the wake-up time blood glucose should in general be closer to the correction range.
+
+### Browser Build Updates
+
+The dev branch has a few updates already merged with a few more planned to make the GitHub Browser Build more automatic.
+
+Only the App Group ID must be added to the Identifiers, which simplifies the First-Time Configure Identifiers step. The other App services are automatically added with dev branch.
+
+* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use GitHub Browser build for dev branch
+* [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
+
 ## What are branches?
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
@@ -89,11 +179,6 @@ Do not confuse this with reporting an issue with Loop.  That is done by logging 
 
 This 6-minute long, classic Katie DiSimone video shows how to [capture debugging logs](https://youtu.be/Ac4MguvUO7M). If you are testing a new branch, this is a valuable skill to assist developers in identifying problems. In addition to showing you how to generate and save the debug text information, the video explains a method in which you create a gist of the debug information using your GitHub account and file an official Issue on the Loop GitHub repository. This may be required in some cases.  But start by chatting directly on [zulipchat](https://loop.zulipchat.com) with the developer. What you are experiencing may already be known. If the developers need a new Issue opened, they will say so on zulipchat.
 
-## What is expected in the future?
-
-The dev branch is where a lot of user interface and setting safety work has been developed with some cross-talk with the open source modifications available from [Tidepool Loop](https://www.tidepool.org/automated-insulin-dosing).
-
-There has been some reorganization of code to make it easier to drop in new pump and CGM modules.  These may not be obvious to the user, but are important for moving forward.
 
 ## Repositories and Code
 
