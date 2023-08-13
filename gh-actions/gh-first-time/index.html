@@ -2825,40 +2825,41 @@
 </ul>
 </li>
 <li>If you have previously built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="program used to build an app">Xcode</abbr> you have fewer steps and are probably familiar with some of the concepts<ul>
-<li>Expect 1 to 2 hours</li>
+<li>Expect 1 to 4 hours</li>
 </ul>
 </li>
 </ul>
 </details>
 <details class="abstract">
-<summary>Page Summary (click to open/close)</summary>
-<p>Once you have Apple Developer and <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> accounts:</p>
+<summary>Page Summary with Links (click to open/close)</summary>
+<p>Please read the introductory information. You can skip some sections but not this one: <a href="#save-your-information">Save Your Information</a>.</p>
+<p>Once you have Apple Developer and <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> accounts, the steps below are a high-level summary. Each step links to the appropriate section of this page of LoopDocs.</p>
 <ul>
 <li><em>Apple</em>:<ul>
-<li>Generate and save four <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
+<li><a href="#collect-the-four-apple-secrets">Generate and save four <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></li>
 </ul>
 </li>
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
-<li>Generate and save two <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
-<li>Create a <code><abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></code> private <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>Fork a <abbr title="contains project files and each file's revision history">repository</abbr> (copy of <code>LoopWorkspace</code>)</li>
-<li>Add <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to your <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li><code>Action: 1. Verify Secrets</code></li>
-<li><code>Action: 2. Add Identifiers</code></li>
+<li><a href="#collect-the-two-github-secrets">Generate and save two <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></li>
+<li><a href="#create-match-secrets">Create a <code><abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></code> private <abbr title="contains project files and each file's revision history">repository</abbr></a></li>
+<li><a href="#fork-loopworkspace">Fork a <abbr title="contains project files and each file's revision history">repository</abbr> (copy of <code>LoopWorkspace</code>)</a></li>
+<li><a href="#configure-secrets">Add <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to your copy of LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></a></li>
+<li><a href="#validate-secrets"><code>Action: 1. Validate Secrets</code></a></li>
+<li><a href="#add-identifiers"><code>Action: 2. Add Identifiers</code></a></li>
 </ul>
 </li>
 <li><em>Apple</em>:<ul>
-<li>Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></li>
-<li>Create your version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> in <code>App Store</code> (personal use only, not for distribution)</li>
+<li><a href="#configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></a></li>
+<li><a href="#create-loop-app-in-app-store-connect">Create your version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> in <code>App Store</code> (personal use only, not for distribution)</a></li>
 </ul>
 </li>
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
-<li><code>Action: 3. Create Certificates</code></li>
-<li><code>Action: 4. Build Loop</code></li>
+<li><a href="#create-certificates"><code>Action: 3. Create Certificates</code></a></li>
+<li><a href="#build-loop"><code>Action: 4. Build Loop</code></a></li>
 </ul>
 </li>
-<li><em>Apple</em>: Set up <code>Internal TestFlight Group</code></li>
-<li>Phone: Install <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li><em>Apple</em>: <a href="#set-up-users-and-access-testflight">Set up <code>Internal TestFlight Group</code></a></li>
+<li>Phone: <a href="../gh-deploy/#deploy-using-testflight">Install <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
 </ul>
 </details>
 <details class="question">
@@ -3895,6 +3896,12 @@
 <li>On the left side, select "4. Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>".</li>
 <li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
 <li>You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.</li>
+<li>You should get several emails<ul>
+<li>one says build succeeded (or failed)</li>
+<li>one says <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is ready (typically half-hour after build succeeds)</li>
+<li>Ignore the one that says you need to fix "issues" in your build. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.</li>
+</ul>
+</li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps">App Store Connect</a>.</li>
 <li>For each phone/person you would like to support <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on:<ul>
 <li>Add them in <a href="https://appstoreconnect.apple.com/access/users">Users and Access</a> on App Store Connect.</li>
@@ -3930,6 +3937,12 @@
 </ul>
 </li>
 <li>If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.</li>
+<li>You should get several emails<ul>
+<li>one says build succeeded (or failed)</li>
+<li>one says <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is ready (typically half-hour after build succeeds)</li>
+<li>Ignore the one that says you need to fix "issues" in your build. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.</li>
+</ul>
+</li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps"><code>App Store Connect</code></a>.</li>
 </ol>
 <h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
