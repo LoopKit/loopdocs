@@ -99,6 +99,10 @@ If you are using the dev branch, head over to [GitHub Build for dev](#github-bui
 
 Otherwise, head over to [GitHub Errors](gh-errors.md).
 
+#### Apple Email to Ignore
+
+* You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
+
 ### Wait for TestFlight
 
 You'll receive an App Store Connect email confirming that the build has completed processing, and a TestFlight email confirming the new app is ready to test.
@@ -109,10 +113,6 @@ You'll receive an App Store Connect email confirming that the build has complete
          * This means Apple did not reply to GitHub as fast as GitHub expected
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
-
-#### Apple Email to Ignore
-
-* You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
 
 The updated Loop app will show up in your TestFlight app on the Looper's phone.
 

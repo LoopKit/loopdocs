@@ -961,7 +961,7 @@ Refer to the graphic below for the numbered steps:
     1. You should get several emails
         * one says build succeeded (or failed)
         * one says TestFlight is ready (typically half-hour after build succeeds)
-        * Ignore the one that says you need to fix "issues" in your build. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+        * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
     1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
     1. For each phone/person you would like to support Loop on:
         * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
@@ -991,7 +991,7 @@ Refer to the graphic below for the first four steps:
 1. You should get several emails
     * one says build succeeded (or failed)
     * one says TestFlight is ready (typically half-hour after build succeeds)
-    * Ignore the one that says you need to fix "issues" in your build. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+    * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
 ## Set Up Users and Access (TestFlight)
