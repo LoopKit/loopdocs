@@ -7,28 +7,30 @@
         * Adding <code>Secrets</code> (requires Apple Developer Account): 1 hour
         * Performing the Action steps: 30 minutes to 2 hours
     - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
-        * Expect 1 to 2 hours
+        * Expect 1 to 4 hours
 
-??? abstract "Page Summary (click to open/close)"
-    Once you have Apple Developer and GitHub accounts:
+??? abstract "Page Summary with Links (click to open/close)"
+    Please read the introductory information. You can skip some sections but not this one: [Save Your Information](#save-your-information).
+
+    Once you have Apple Developer and GitHub accounts, the steps below are a high-level summary. Each step links to the appropriate section of this page of LoopDocs.
 
     * *Apple*:
-        * Generate and save four <code>Secrets</code>
+        * [Generate and save four <code>Secrets</code>](#collect-the-four-apple-secrets)
     * *GitHub*:
-        * Generate and save two <code>Secrets</code>
-        * Create a <code>Match-Secrets</code> private repository
-        * Fork a repository (copy of `LoopWorkspace`)
-        * Add <code>Secrets</code> to your repository
-        * `Action: 1. Verify Secrets`
-        * `Action: 2. Add Identifiers`
+        * [Generate and save two <code>Secrets</code>](#collect-the-two-github-secrets)
+        * [Create a <code>Match-Secrets</code> private repository](#create-match-secrets)
+        * [Fork a repository (copy of `LoopWorkspace`)](#fork-loopworkspace)
+        * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](#configure-secrets)
+        * [`Action: 1. Validate Secrets`](#validate-secrets)
+        * [`Action: 2. Add Identifiers`](#add-identifiers)
     * *Apple*:
-        * Configure Identifiers for *Loop*
-        * Create your version of *Loop* in `App Store` (personal use only, not for distribution)
+        * [Configure Identifiers for *Loop*](#configure-identifiers-for-loop)
+        * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](#create-loop-app-in-app-store-connect)
     * *GitHub*:
-        * `Action: 3. Create Certificates`
-        * `Action: 4. Build Loop`
-    * *Apple*: Set up `Internal TestFlight Group`
-    * Phone: Install *Loop* with *TestFlight*
+        * [`Action: 3. Create Certificates`](#create-certificates)
+        * [`Action: 4. Build Loop`](#build-loop)
+    * *Apple*: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
+    * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
 ??? question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
@@ -956,6 +958,10 @@ Refer to the graphic below for the numbered steps:
     1. On the left side, select "4. Build Loop".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
     1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
+    1. You should get several emails
+        * one says build succeeded (or failed)
+        * one says TestFlight is ready (typically half-hour after build succeeds)
+        * Ignore the one that says you need to fix "issues" in your build. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
     1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
     1. For each phone/person you would like to support Loop on:
         * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
@@ -982,6 +988,10 @@ Refer to the graphic below for the first four steps:
         * [Create Certificates](#create-certificates)
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
+1. You should get several emails
+    * one says build succeeded (or failed)
+    * one says TestFlight is ready (typically half-hour after build succeeds)
+    * Ignore the one that says you need to fix "issues" in your build. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
 ## Set Up Users and Access (TestFlight)

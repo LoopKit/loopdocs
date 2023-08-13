@@ -43,6 +43,9 @@ This is only available with Loop 3 and Loop development branch.
     * [Wait for TestFlight](#wait-for-testflight)
     * [Install or Confirm Installation](#install-or-confirm-installation)
 
+    Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+
+
 ### Accept Agreements
 
 Sign in to your [Apple Developer account](https://developer.apple.com/account). If there are agreements you have not accepted, you will get errors when you try to Build that indicate your Apple <code>Secrets</code> are incorrect - that is very unlikely.
