@@ -48,11 +48,11 @@ When AB is selected and GPBA is enabled, the percentage of the recommended dose 
 * Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
 * Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)
 
-### Integral Retrospective Correct (IRC):
+### Integral Retrospective Correction (IRC):
 
-* Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issue/695)
+* Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
     * This was tested in a few forks but not included into dev until recently
-    * Initial merge into dev [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+    * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
 * Updated with a modification to limit stacking of IRC with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
 * Integral Retrospective Correction, when enabled:
     * changes the Loop prediction model and thus can affect the recommended dose
@@ -72,7 +72,11 @@ The IRC term is described in this (updated) [comment](https://github.com/LoopKit
 
 #### Important points about IRC:
 
-1. Known risk factors compared to standard Loop: With IRC turned on, in response to persistent discrepancies between observed and predicted glucose motion, Loop will likely increase insulin corrections, which may increase the risks of hypoglycemia. IRC may also lead to increased oscillations ("roller-coaster") in glucose responses. Both of these risk factors are higher if the user's setting value for Insulin Sensitivity (ISF) is too low. Increasing ISF setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D.
+1. Known risk factors compared to standard Loop: 
+    * With IRC turned on, Loop will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia
+    * IRC may also lead to increased oscillations ("roller-coaster") in glucose responses
+    * Both of these risk factors are higher if the user's setting value for Insulin Sensitivity (ISF) is too low
+    * Increasing ISF setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D
 
 2. Compared to standard RC, IRC is more likely to improve glucose control in the following scenarios:
     * Glucose remaining high or decreasing slower than expected due to temporarily reduced insulin sensitivity or due to poor site absorption
