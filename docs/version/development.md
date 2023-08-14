@@ -60,15 +60,27 @@ When AB is selected and GPBA is enabled, the percentage of the recommended dose 
 
 Refering to the [Algorithm: Prediction](../operation/algorithm/prediction.md) page:
 
-* When IRC is disabled (default), this equation is used to predict glucose (where we have replaced RetrospectiveCorrection with the abbreviation, RC):
+* When IRC is disabled (default), the equation used to predict glucose continues to be:
 
-$$ BG[t] = Insulin[t] + Carb[t] + RC[t] + Momentum[t] $$
+$$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
 * When IRC is enabled that equation changes to:
 
-$$ BG[t] = Insulin[t] + Carb[t] + RC[t] + IRC[t] + Momentum[t] $$
+$$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] $$
 
-The IRC term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141). Some of the information in that comment is repeated below. Follow the comment link for equations and plots.
+Note that the Momemtum term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
+
+The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays_v3.md#predicted-glucose-chart) is updated when IRC is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the IRC and RC calculations.
+
+![predicted glucose retrospective section with irc disabled and enabled](img/glucose-details-irc.svg){width="400"}
+{align="center"}
+
+The IRC term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [Important points about IRC](#important-points-about-irc).
+
+If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:
+
+* RetrospectiveCorrection code: [StandardRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift)
+* IntegralRetrospectiveCorrection code: [IntegralRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift)
 
 #### Important points about IRC:
 

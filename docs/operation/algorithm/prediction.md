@@ -4,6 +4,8 @@ Loop uses an algorithm to maintain blood glucose in a correction range by predic
 
 $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
+Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
+
 You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
 Just a note, this whole section is fairly technical. While perhaps not the most interesting topic for many readers, if you are seeking the detailed view of the Loop algorithm this discussion is quite useful. If you want a more surface understanding, the overview and temporary basal recommendations sections alone are probably sufficient.
