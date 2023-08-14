@@ -1,42 +1,61 @@
-When on *Loop* main page, tapping on the "Active Carbohydrates" graph will open up the "Carbohydrates" details page that tracks your carb entries for the last 12 hours and how they are absorbed.
-It is helpful to review your meals.
+When on *Loop* main screen, tapping on the "Active Carbohydrates" graph will open up the "Carbohydrates" details page that tracks your carb entries for the last 12 hours and how they are absorbed.
+It can be helpful to review your meals when monitoring settings, troubleshooting past meal entries and planning future meal entries.
 
 ## Insulin Counteraction Effects
 
 What is *Insulin Counteraction Effects* (*ICE* for short)?
 
-Consider the possible sources of triggers that counteract insulin (in other words, make glucose levels go up)
+Consider the possible effects that counteract insulin (in other words, make glucose levels go up):
 
 * food
 * stress
 * illness
+* site failure
+* basal too low
 * someone sat too close to you
 
-As we all know, this list can be long but, on "normal" days food will be the strongest "insulin counteracter".  Food will be the most influence on making glucose levels go up.  There are also other reasons that glucose levels climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.
+As we all know, this list can be long; but on "normal" days, food is the primary reason glucose levels go up. By "normal", we mean basal rates and settings are close to correct, illness is not an issue, and the site is good. We depend on the Loop dynamic carb absorption and other prediction effects to keep glucose in our desired range.
 
-If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), *Loop* will expect most of the upward pressure on glucose levels are from food.
-
-[*Insulin Counteraction Effect*](#insulin-counteraction-effects) (*ICE*)  is one very important part of carb absorption but also a foundational part of other things, like *Retrospective Correction* (*RC*).
+*Insulin Counteraction Effect* (*ICE*) as explained in [Dynamic Carbohydrate Aborption](../algorithm/prediction.md#dynamic-carbohydrate-absorption) is one very important part of carb absorption as well as a foundational part of [Loop Predictions](../algorithm/prediction.md).
 
 ## Glucose Change Display
 
- The graph at the top of your "Carbohydrates" details page shows how *Loop* expects carbs to effect your glucose (gray bars), and also something called [*ICE*](#insulin-counteraction-effects).
- It shows how *Loop* is thinking about Carbohydrate absorption, modeling for carb effects, and _also_ shows [*ICE*](#insulin-counteraction-effects). 
+ The graph at the top of your "Carbohydrates" details page shows the effect *Loop* expects carbs to have on your glucose (gray bars) compared to the actual effect, or [*ICE*](#insulin-counteraction-effects). The units on the graph are mg/dL/5-min or mmol/L/5-min
 
 - ⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that *Loop* is currently modeling.  
 - 🟩: As a meal is tracked by *Loop*, you'll see green bars of observed carb absorption (including [*ICE*](#insulin-counteraction-effects)).
 
     !!! info "How *Loop* thinks about carbs" 
-        [*ICE*](#insulin-counteraction-effects) is just one important component of how *Loop* thinks about carbs. The other parts are the user entered data (amount of carbs, and absorption speed), and sometimes *Loop* falls back to a default absorption model that isn't based on *ICE* at all, when *ICE* is < minimum absorption rate.  
- 
+        [*ICE*](#insulin-counteraction-effects) is just one important component of how *Loop* thinks about carbs. The other parts are the user entered data (amount of carbs, and absorption speed).
+        
+        Sometimes *Loop* falls back to a default absorption model when *ICE* is less than the minimum absorption rate.
+        
+        In the graphic below, early in the meal timeline, the green bars are below the grey bars. _Loop_ uses the minimum absorption instead of estimating absorption from glucose change. For example, if a prebolus was "perfect" leading to a constant glucose after a meal, the ideal grey bars will be used by _Loop_ throughout. 
+
+    ![image of ice screen](img/ice-meal-example.svg){width="500"}
+    {align="center"}
+
+## Practical use
+
+Some practical use of the ICE screen is provided in the [Meal Entries: Review Carb Absorption](carbs.md#review-carb-absorption) section.
+
+!!! tip "Many ways to successfully use Loop"
+    You should choose what works for you.
+
+    * Some people plan ahead and try to get their carbs entries "good enough" to not worry about Loop or glucose after they make the initial entry
+    * Some people enter typical values for themselves for a given meal and let Loop handle the rest
+    * Some people guess and then carb surf if their glucose goes higher than they like
+
+The rest of this page was written by Katie DiSimone before the non-linear carb model was added to Loop in 2019. You may also want to review her blog post from 2017: [Loop: Dynamic Carb Absorption](http://seemycgm.com/2017/07/25/loop-dynamic-carb-absorption/).
+
+A lot of the information is still relevant although some of the Loop carb modeling and prediction details have been updated over the years.
+
 Let's take a look at an **example** day using the screenshot below.  
 
 ![img/ice-3.png](img/ice-3.png){width="700"}
 {align="center"}
 
 When you make a food entry originally, *Loop* will save your entry as you've made it.  On the line below your original entry, *Loop* will also start tracking your food entry assuming a 1.5 times longer carb absorption time.  This helps *Loop* track carbs that may actually be absorbing longer than you expected (part of that whole dynamic carb absorption modeling).  *Loop* will be updating that value of "observed" carb absorption time as well as absorbed carbs as your meal goes on.
-
-## Practical use
 
 So how can we use this information to make our Looping experience better?  The answer is probably best illustrated using a real-world example.  Chinese food...in fact, this Chinese dish.  General Tso's chicken.  As you can see in the recipe, loads of fast carbs with ingredients like hoisin sauce, brown sugar, and cornstarch.  But also slower carbs like chicken.  Rice can be a difficult one because for us, it acts fast but also seems to have a long tail.
 
