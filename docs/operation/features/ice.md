@@ -16,6 +16,11 @@ Consider the possible effects that counteract insulin (in other words, make gluc
 
 As we all know, this list can be long; but on "normal" days, food is the primary reason glucose levels go up. By "normal", we mean basal rates and settings are close to correct, illness is not an issue, and the site is good. We depend on the Loop dynamic carb absorption and other prediction effects to keep glucose in our desired range.
 
+When you have carbs on board, Loop _always_ assigns _ICE_ to carbs, not just on a normal day. 
+This is how _Loop_ looks at it. 
+Keep in mind that in situations where you have other positive _ICE_, like insulin resistance, and carbs on board, _Loop_ will attribute all the positive _ICE_ to carbs until all the entered carbs are considered absorbed. 
+At that point, _ICE_ will start driving _RC_ upward.
+
 *Insulin Counteraction Effect* (*ICE*) as explained in [Dynamic Carbohydrate Aborption](../algorithm/prediction.md#dynamic-carbohydrate-absorption) is one very important part of carb absorption as well as a foundational part of [Loop Predictions](../algorithm/prediction.md).
 
 ## Glucose Change Display
