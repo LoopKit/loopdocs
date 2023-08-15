@@ -35,6 +35,9 @@ As we all know, this list can be long; but on "normal" days, food is the primary
     ![image of ice screen](img/ice-meal-example.svg){width="500"}
     {align="center"}
 
+!!! important "When not to Use Glucose Change Display to Understand Meal Absorption?"
+    If you know that other non-carb effects are affecting your insulin sensitivity significantly (sickness, exercise, etc), all the info about carb absorption should be considered skewed, and not be used for trying to understand meal absorption.
+        
 ## Practical use
 
 Some practical use of the ICE screen is provided in the [Meal Entries: Review Carb Absorption](carbs.md#review-carb-absorption) section.
