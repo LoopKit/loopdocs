@@ -19,7 +19,7 @@
     
     
       
-        <title>Using ICE Info - LoopDocs</title>
+        <title>Meal Review - LoopDocs</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using ICE Info
+              Meal Review
             
           </span>
         </div>
@@ -1433,12 +1433,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Using ICE Info
+          Meal Review
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Using ICE Info
+        Meal Review
       </a>
       
         
@@ -1464,8 +1464,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ice-display" class="md-nav__link">
-    ICE display
+  <a href="#glucose-change-display" class="md-nav__link">
+    Glucose Change Display
   </a>
   
 </li>
@@ -2247,8 +2247,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ice-display" class="md-nav__link">
-    ICE display
+  <a href="#glucose-change-display" class="md-nav__link">
+    Glucose Change Display
   </a>
   
 </li>
@@ -2275,35 +2275,80 @@
                   
 
 
-  <h1>Using ICE Info</h1>
+  <h1>Meal Review</h1>
 
+<p>When on <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> main screen, tapping on the "Active Carbohydrates" graph will open up the "Carbohydrates" details page that tracks your carb entries for the last 12 hours and how they are absorbed.
+It can be helpful to review your meals when monitoring settings, troubleshooting past meal entries, and planning future meal entries.</p>
 <h2 id="insulin-counteraction-effects">Insulin Counteraction Effects<a class="headerlink" href="#insulin-counteraction-effects" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Tapping on your Carbohydrates graph will open up a page that tracks your carb entries for the day (since midnight).  At the top of the page is a useful graphic called Insulin Counteraction Effects (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> for short).  What is it?  Basically, a graphical representation of <strong><em>predicted</em></strong> upward-BG effects vs. <strong><em>encountered</em></strong> upward-BG effects.</p>
-<p>Consider the possible sources of triggers that counteract insulin (in other words, make BGs go up)</p>
+<p>What are <em>Insulin Counteraction Effects</em> (<em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em> for short)?</p>
+<p>Consider the possible effects that counteract insulin (in other words, make glucose levels go up):</p>
 <ul>
 <li>food</li>
 <li>stress</li>
 <li>illness</li>
+<li>site failure</li>
+<li>basal too low</li>
 <li>someone sat too close to you</li>
 </ul>
-<p>As we all know, this list can be long but, on "normal" days FOOD will be the single strongest "insulin counteracter".  Food will be the most influence on making BGs go up.  There are also other reasons that BGs climb when we may have expected them to be steady; basals being set too low, failed infusion site, etc.</p>
-<p>If we assume that it's a "normal" day (basals are close to correct, illness is not an issue, the site is good), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will expect most of the UPWARD pressure on BGs are from food.  <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is calling that upward pressure Insulin Counteraction Effect (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>).  This is a pretty reasonable assumption so let's use that for the rest of this discussion.</p>
-<h2 id="ice-display"><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> display<a class="headerlink" href="#ice-display" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Let's take a look at an example day using the screenshot below.  The graph at the top of your <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> page represents that upward pressure <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> expects from the food entries.  The predicted <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> is shown as grey bars.  As a meal is tracked by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you'll see green bars of observed <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>.</p>
-<p align="center"><img alt="img/ice-3.png" src="../img/ice-3.png" width="700" /></p>
-<p>When you make a food entry originally, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will save your entry as you've made it.  On the line below your original entry, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will also start tracking your food entry assuming a 1.5 times longer carb absorption time.  This helps <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> track carbs that may actually be absorbing longer than you expected (part of that whole dynamic carb absorption modeling).  <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will be updating that value of "observed" carb absorption time as well as absorbed carbs as your meal goes on.</p>
+<p>As we all know, this list can be long; but on "normal" days, food is the primary reason glucose levels go up. By "normal", we mean basal rates and settings are close to correct, illness is not an issue, and the site is good. We depend on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dynamic carb absorption and other prediction effects to keep glucose in our desired range.</p>
+<p>When you have carbs on board, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <em>always</em> assigns <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em> to carbs, not just on a normal day. 
+This is how <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> looks at it. 
+Keep in mind that in situations where you have other positive <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em>, like insulin resistance, and carbs on board, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will attribute all the positive <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em> to carbs until all the entered carbs are considered absorbed. 
+At that point, <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em> will start driving <em>RC</em> upward.</p>
+<p><em>Insulin Counteraction Effect</em> (<em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em>) as explained in <a href="../../algorithm/prediction/#dynamic-carbohydrate-absorption">Dynamic Carbohydrate Aborption</a> is one very important part of carb absorption as well as a foundational part of <a href="../../algorithm/prediction/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Predictions</a>.</p>
+<h2 id="glucose-change-display">Glucose Change Display<a class="headerlink" href="#glucose-change-display" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The graph at the top of your "Carbohydrates" details page shows the effect <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> expects carbs to have on your glucose (gray bars) compared to the actual effect, or <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em>. The units on the graph are mg/dL/5-min or mmol/L/5-min</p>
+<ul>
+<li>⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is currently modeling.  </li>
+<li>
+<p>🟩: As a meal is tracked by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, you'll see green bars of observed carb absorption (including <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em>).</p>
+<div class="admonition info">
+<p class="admonition-title">How <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> thinks about carbs</p>
+<p><a href="#insulin-counteraction-effects"><em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em></a> is just one important component of how <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> thinks about carbs. The other parts are the user-entered data (amount of carbs, and absorption speed).</p>
+<p>Sometimes <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> falls back to a default absorption model when <em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em> is less than the minimum absorption rate.</p>
+<p>In the graphic below, early in the meal timeline, the green bars are below the grey bars. <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> uses the minimum absorption instead of estimating absorption from glucose change. For example, if a pre-bolus was "perfect" leading to a constant glucose after a meal, the ideal grey bars will be used by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> throughout. </p>
+</div>
+<p align="center"><img alt="image of ice screen" src="../img/ice-meal-example.svg" width="500" /></p>
+</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">When not to Use Glucose Change Display to Understand Meal Absorption?</p>
+<p>If you know that other non-carb effects are affecting your insulin sensitivity significantly (sickness, exercise, etc), all the info about carb absorption should be considered skewed, and not be used for trying to understand meal absorption.</p>
+</div>
 <h2 id="practical-use">Practical use<a class="headerlink" href="#practical-use" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>So how can we use this information to make our Looping experience better?  The answer is probably best illustrated using a real-world example.  Chinese food...in fact, THIS Chinese dish.  General Tso's chicken.  As you can see in the recipe, loads of fast carbs with ingredients like hoisin sauce, brown sugar, and cornstarch.  But also slower carbs like chicken.  Rice can be a difficult one because for us, it acts fast but also seems to have a long tail.</p>
+<p>Some practical use of the <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> screen is provided in the <a href="../carbs/#review-carb-absorption">Meal Entries: Review Carb Absorption</a> section.</p>
+<div class="admonition tip">
+<p class="admonition-title">Many ways to successfully use <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></p>
+<p>You should choose what works for you.</p>
+<ul>
+<li>Some people plan ahead and try to get their carbs entries "good enough" to not worry about <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or glucose after they make the initial entry</li>
+<li>Some people enter typical values for themselves for a given meal and let <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> handle the rest</li>
+<li>Some people guess and then carb surf if their glucose goes higher than they like</li>
+</ul>
+</div>
+<p>The rest of this page was written by Katie DiSimone before the non-linear carb model was added to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> in 2019. You may also want to review her blog post from 2017: <a href="http://seemycgm.com/2017/07/25/loop-dynamic-carb-absorption/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>: Dynamic Carb Absorption</a>.</p>
+<p>A lot of the information is still relevant although some of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> carb modeling and prediction details have been updated over the years.</p>
+<p>Let's take a look at an <strong>example</strong> day using the screenshot below.  </p>
+<p align="center"><img alt="img/ice-3.png" src="../img/ice-3.png" width="700" /></p>
+<p>When you make a food entry originally, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will save your entry as you've made it.  On the line below your original entry, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will also start tracking your food entry assuming a 1.5 times longer carb absorption time.  This helps <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> track carbs that may actually be absorbing longer than you expected (part of that whole dynamic carb absorption modeling).  <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will be updating that value of "observed" carb absorption time as well as absorbed carbs as your meal goes on.</p>
+<p>So how can we use this information to make our Looping experience better?  The answer is probably best illustrated using a real-world example.  Chinese food...in fact, this Chinese dish.  General Tso's chicken.  As you can see in the recipe, loads of fast carbs with ingredients like hoisin sauce, brown sugar, and cornstarch.  But also slower carbs like chicken.  Rice can be a difficult one because, for us, it acts fast but also seems to have a long tail.</p>
 <p align="center"><img alt="img/ice.jpg" src="../img/ice.jpg" width="500" /></p>
-<p>It was a busy day and I really didn't want to count carbs.  Ok, even on the slow days I don't want to count carbs.  I just eyeballed the bowl of food and guessed.  As I entered the food in originally, I was still trying to come up with a good guess on the ratio of fast:slow carbs but kid was in a hurry to eat.  My initial guess around 3:30pm was 70g of carbs at 5 hours absorption (note: it gets edited to 80g in a little bit), we bolused for that and she started to eat.  About 10 minutes later, I decided to add 10g of fast-acting carbs at 1-hour absorption to help with the sauce's speedy carbs.</p>
+<p>It was a busy day and I really didn't want to count carbs.  Ok, even on the slow days I don't want to count carbs.  I just eyeballed the bowl of food and guessed.  As I entered the food in originally, I was still trying to come up with a good guess on the ratio of fast:slow carbs but kid was in a hurry to eat.  My initial guess around 3:30 pm was 70g of carbs at 5 hours absorption (note: it gets edited to 80g in a little bit), we bolused for that and she started to eat.  About 10 minutes later, I decided to add 10g of fast-acting carbs at 1-hour absorption to help with the sauce's speedy carbs.</p>
 <p align="center"><img alt="img/ice-2.jpg" src="../img/ice-2.jpg" width="700" /></p>
-<p>Watching what was going on a little later...BGs were rising at a decent clip and I had a feeling I really didn't cover things super well...so I edited the original 70g entry, adding 10g and making it 80g instead.  (That's why there is a 2U bolus around 4:20pm.)  And of course around 5:40pm there was a little bit of nibbling on the leftovers as we put them into the fridge.  We gave 10g for that.  BGs climbed a bit more, not surprising given how we were underestimating fast carbs at this point...but still not so bad at 180 peak BG.  (Anna gave 2 units correction at the peak because there was dessert coming later that night and she wanted to be ready for it without too much pre-bolus.)</p>
+<p>Watching what was going on a little later...glucose levels were rising at a decent clip and I had a feeling I really didn't cover things super well...so I edited the original 70g entry, adding 10g and making it 80g instead.  (That's why there is a 2U bolus around 4:20 pm.)  And of course, around 5:40 pm there was a little bit of nibbling on the leftovers as we put them into the fridge.  We gave 10g for that.  Glucose levels climbed a bit more, not surprising given how we were underestimating fast carbs at this point...but still not so bad at 180 peak glucose.  (Anna gave 2 units of correction at the peak because there was dessert coming later that night and she wanted to be ready for it without too much pre-bolus.)</p>
 <p align="center"><img alt="img/ice-5.png" src="../img/ice-5.png" width="500" /></p>
-<p>So, how can I use the <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> info to make this meal better?  I can look at the observed <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> information and the observed carb entry <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has recorded to adjust my insulin bolusing the next time we eat this meal.</p>
-<p>For example, the biggest weakness I had in this (and suspected it even as I did the initial bolus) was that I underestimated the sauce's fast carbs.  I can see this in the observed <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> graph having the early green peaks after the meal, and in the way that the observed carb distribution was more like 7:2 vs my original guess of 8:1 (slow:fast carbs).  Overall, it appears that I guess on overall carb content pretty closely (90g vs. 89g observed).  Next time we have General Tso's chicken, I will likely bolus it as 70g at 5 hours and 20g at 2 hours.</p>
+<p>So, how can I use the <a href="#glucose-change-display">"Glucose Change"</a>  graph to make this meal better?  I can look at the observed carb information and the observed carb entry <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> has recorded to adjust my insulin bolusing the next time we eat this meal.</p>
+<p>For example, the biggest weakness I had in this (and suspected it even as I did the initial bolus) was that I underestimated the sauce's fast carbs.  I can see this in the observed carb absorption graph having the early green peaks after the meal, and in the way that the observed carb distribution was more like 7:2 vs my original guess of 8:1 (slow:fast carbs).  Overall, it appears that I guess on overall carb content pretty closely (90g vs. 89g observed).  Next time we have General Tso's chicken, I will likely bolus it as 70g at 5 hours and 20g at 2 hours.</p>
 <p align="center"><img alt="img/ice-6.jpg" src="../img/ice-6.jpg" width="700" /></p>
-<p>So remember to check your <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> page at the end of a meal's absorption.  By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.</p>
-<p>Side note:  remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your BGs to swing that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed to <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> when they really aren't food-related.  In those cases, address the underlying cause and then use the <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> pages when you've come back to "normal".</p>
+<div class="admonition tip">
+<p class="admonition-title">Check Carbohydrates Page</p>
+<p>Remember to check your Carbohydrates page at the end of a meal's absorption. <br />
+By checking in on the meal's observed behaviors, you'll have a good starting point to fine-tuning any new or unknown carb breakdown.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember this conversation is assuming you have basals fairly well set and are not sick.  If other factors could be significantly causing your glucose levels to swing that <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> doesn't know about (bad sites, illness, or basal rates that need to be adjusted), they may be attributed in part to <a href="#insulin-counteraction-effects"><em><abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr></em></a> when they really aren't food-related.  In those cases, address the underlying cause and then use the Carbohydrates page when you've come back to "normal".</p>
+</div>
 
 
 
