@@ -20,10 +20,10 @@ As we all know, this list can be long; but on "normal" days, food is the primary
 
 ## Glucose Change Display
 
- The graph at the top of your "Carbohydrates" details page shows the effect *Loop* expects carbs to have on your glucose (gray bars) compared to the actual effect, or [*ICE*](#insulin-counteraction-effects). The units on the graph are mg/dL/5-min or mmol/L/5-min
+ The graph at the top of your "Carbohydrates" details page shows the effect *Loop* expects carbs to have on your glucose (gray bars) compared to the actual effect, or *ICE*. The units on the graph are mg/dL/5-min or mmol/L/5-min
 
 - ⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that *Loop* is currently modeling.  
-- 🟩: As a meal is tracked by *Loop*, you'll see green bars of observed carb absorption (including [*ICE*](#insulin-counteraction-effects)).
+- 🟩: As a meal is tracked by *Loop*, you'll see green bars of observed carb absorption (including *ICE*).
 
     !!! info "How *Loop* thinks about carbs" 
         [*ICE*](#insulin-counteraction-effects) is just one important component of how *Loop* thinks about carbs. The other parts are the user-entered data (amount of carbs, and absorption speed).
