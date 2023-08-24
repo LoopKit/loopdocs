@@ -40,13 +40,72 @@ Two algorithm experiments have been added to dev. These are Glucose Based Partia
 
 * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
 * It is only used when Automatic Bolus (AB) is selected for Dosing Strategy
-* This modification does not affect the recommended dose, only the speed with which the recommended dose is automatically delivered
+* This modification **does not affect the recommended dose**, only the speed with which the recommended dose is automatically delivered
 
 When AB is selected and GPBA is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without GBPA enabled, AB uses a fixed 40% percentage regardless of glucose level.)
 
 * Partial Application = 20% when glucose level at or below 10 mg/dL (0.6 mmol/L) above the users correction range lower value (including overrides)
 * Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
 * Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)
+
+#### Insulin Delivery of Recommended Dose: GPBA
+
+This is an area that confuses a lot of people so we're going to go through Automatic Bolus in some detail. For this section and the next section (on Temp Basal), the recommended dose is unchanged - the different methods only change how soon that recommended dose is delivered.
+
+Loop makes a prediction and decides on a recommended dose based on your settings and your glucose values, IOB and COB. For this example, Loop recommends 1 U. Future glucose values match Loop's prediction perfectly, so for each successive 5-minute update, Loop agrees with the prior prediction.
+
+* **This does not mean Loop keeps recommending 1 U**
+* **Instead, at each CGM value, Loop recommends 1 U minus the amount of "extra" insulin you got the previous cycles**
+
+So let's make a table of what happens over half an hour. For this table we use the pod smallest increment of 0.05 U. The 0 in the Minutes column is when Loop makes that recommendation initially.
+
+The first table shows you the Automatic Bolus amounts delivered (**in this ideal example**) for differing application factors. Notice that boluses in rows for higher application factors start out higher for the first row, but go to zero (indicated by a dash) faster as that factor increases.
+
+_Incremental Dose (amount given in one cycle) for GBPA when initial recommendation is 1 U_
+
+| Minutes | 20% | 40% | 60% | 80% |
+|--:|--:|--:|--:|--:|
+|0|0.20|0.40|0.60|0.80|
+|5|0.15|0.25|0.25|0.15|
+|10|0.15|0.15|0.10|0.05|
+|15|0.10|0.10|0.05|  - |
+|20|0.10|0.05|  - |  - |
+|25|0.05|  - |  - |  - |
+|30|0.05|  - |  - |  - |
+
+The second table adds up the rows from the first table so you can see how long it takes to get that 1 U "extra" dose via automatic bolus with differing application factors. For rows after a column reaches 1 U, a dash is inserted into the table to make it obvious that all the "extra" has been delivered (**for this ideal example**).
+
+_Sum of Dose (extra since time 0) for GBPA when initial recommendation is 1 U_
+
+| Minutes | 20% | 40% | 60% | 80% |
+|--:|--:|--:|--:|--:|
+|0|0.20|0.40|0.60|0.80|
+|5|0.35|0.65|0.85|0.95|
+|10|0.50|0.80|0.95|1.00|
+|15|0.60|0.90|1.00|  - |
+|20|0.70|0.95|  - |  - |
+|25|0.75|0.95|  - |  - |
+|30|0.80|0.95|  - |  - |
+
+But what happened to the 20% and 40% columns - they did not make it to 1 U. That is because pods can only deliver increments of 0.05 U. For application factors (AF) of 40% or smaller, the requested dose of AF * 0.05 U is smaller than a pod will deliver. (The 60% only reaches 1 U because of special treatment in Loop that allows tiny doses down to 0.03 U to be rounded up to 0.05 U.)
+
+#### Insulin Delivery of Recommended Dose: Temp Basal
+
+To finish this discussion, consider the case of Temp Basal. Once again this example uses 1 U of recommended dose. Using Temp Basal, Loop increases the scheduled basal by (2 * 1) U/hr for half an hour. The table below compares Temp Basal and Automatic Bolus using a 20% partial application factor. Note this is an ideal example ignoring some pump details. For example Medtronic delivers Temp Basal a little sooner than Pods. The difference at 0 minutes highlights that Automatic Bolus provides the partial dose as soon a Loop recommends it, whereas Temp Basal spreads it out.
+
+_Sum of Dose (extra since time 0) for Temp Basal and GBPA of 20% when initial recommendation is 1 U_
+
+| Minutes | Temp Basal | GPBA 20% |
+|--:|--:|--:|
+|0|0.00|0.20|
+|5|0.15|0.35|
+|10|0.30|0.50|
+|15|0.50|0.60|
+|20|0.65|0.70|
+|25|0.80|0.75|
+|30|1.00|0.80|
+
+Notice that the GPBA using 20%, which was selected to be similar to Temp Basal for lower glucose values, delivers sooner at first, but by the end of half an hour, the Temp Basal column shows the full 1 U, whereas the GPBA of 20% column does not. This is because the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested. But of course, in real life, the Loop estimate is updated with each new CGM reading, so as updated predictions suggest more insulin, the threshold to deliver it will be reached eventually.
 
 ### Integral Retrospective Correction (IRC):
 
