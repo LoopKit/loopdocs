@@ -54,14 +54,14 @@ New Loopers often have questions on how <code>Automatic Bolus</code> (AB) delive
 
 Loop makes a prediction and recommends an insulin dose based on your settings and your glucose history, IOB and COB. The selected <code>Dosing Strategy</code> (AB with or without <code>GBPA</code> or <code>Temp Basal Only</code>) only changes how quickly that recommended dose is delivered.
 
-For this example, we assume Loop recommends 1 U, and future glucose values match Loop's prediction for each successive 5-minute update. In other words, at the end of about half an hour, Loop provided the user with about 1 U of insulin above that delivered by the scheduled basal rate.
+For this example, we assume Loop recommends 1 U and future glucose values match Loop's prediction for each successive 5-minute update. In other words, at the end of about half an hour, Loop provides the user with about 1 U of insulin above that delivered by the scheduled basal rate.
 
 The tables below show an idealized dosing pattern for half an hour using a minimum bolus increment of 0.05 U. The 0 in the Minutes column is when Loop makes that recommendation initially.
 
 !!! tip "Ideal Illustration"
     * **In real life, Loop updates the prediction** with each new CGM reading and generates a new recommended bolus
 
-The first table shows the Automatic Bolus amounts delivered each Loop cycle (**in this ideal example**) for differing application factors. Notice that boluses for higher application factors start out higher for the first row, but go to zero (indicated by a dash) more quickly as that factor increases.
+The first table shows the <code>Automatic Bolus</code> amounts delivered each Loop cycle (**in this ideal example**) for differing application factors. Notice that boluses for higher application factors start out higher for the first row, but go to zero (indicated by a dash) more quickly as that factor increases.
 
 _Incremental Dose (amount given in one cycle) for <code>GBPA</code> when initial recommendation is 1 U_
 
