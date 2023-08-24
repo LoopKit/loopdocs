@@ -42,13 +42,13 @@ Two algorithm experiments have been added to dev. These are `Glucose Based Parti
 * It is only used when Automatic Bolus (AB) is selected for Dosing Strategy
 * This modification **does not affect the recommended dose**, only the speed with which the recommended dose is automatically delivered
 
-When AB is selected and GPBA is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code>GBPA</code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)
+When AB is selected and <code>GBPA</code> is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code>GBPA</code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)
 
 * Partial Application = 20% when glucose level at or below 10 mg/dL (0.6 mmol/L) above the users correction range lower value (including overrides)
 * Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
 * Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)
 
-#### Insulin Delivery of Recommended Dose: GPBA
+#### Insulin Delivery of Recommended Dose: <code>GBPA</code>
 
 This is an area that confuses a lot of people so we're going to go through Automatic Bolus in some detail. For this section and the next section (on <code>Temp Basal</code>), the recommended dose is unchanged - the different methods only change how soon that recommended dose is delivered.
 
@@ -102,7 +102,7 @@ To finish this discussion, consider the case of <code>Temp Basal</code>. Once ag
 
 _Sum of Dose (extra since time 0) for <code>Temp Basal</code> and <code>GBPA</code> of 20% when initial recommendation is 1 U_
 
-| Minutes | <code>Temp Basal</code> | GPBA 20% |
+| Minutes | <code>Temp Basal</code> | <code>GBPA</code> 20% |
 |--:|--:|--:|
 |0|0.00|0.20|
 |5|0.15|0.35|
@@ -112,7 +112,7 @@ _Sum of Dose (extra since time 0) for <code>Temp Basal</code> and <code>GBPA</co
 |25|0.80|0.75|
 |30|1.00|0.80|
 
-Notice that the GPBA using 20%, which was selected to be similar to <code>Temp Basal</code> for lower glucose values, delivers sooner at first, but by the end of half an hour, the <code>Temp Basal</code> column shows the full 1 U, whereas the GPBA of 20% column does not. This is because the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested.
+Notice that the <code>GBPA</code> using 20%, which was selected to be similar to <code>Temp Basal</code> for lower glucose values, delivers sooner at first, but by the end of half an hour, the <code>Temp Basal</code> column shows the full 1 U, whereas the <code>GBPA</code> of 20% column does not. This is because the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested.
 
 ### `Integral Retrospective Correction` (<code>IRC</code>):
 
