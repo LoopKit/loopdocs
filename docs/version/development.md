@@ -31,66 +31,132 @@ The simulators for the Pump and CGM for dev show a new format when first selecte
 
 ### Algorithm Experiments
 
-Two algorithm experiments have been added to dev. These are Glucose Based Partial Application and Integral Retrospective Correction. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added to dev. These are `Glucose Based Partial Application` and `Integral Retrospective Correction`. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
 
-### Glucose Based Partial Application (GBPA):
+### `Glucose Based Partial Application` (<code>GBPA</code>):
 
 * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
 * It is only used when Automatic Bolus (AB) is selected for Dosing Strategy
-* This modification does not affect the recommended dose, only the speed with which the recommended dose is automatically delivered
+* This modification **does not affect the recommended dose**, only the speed with which the recommended dose is automatically delivered
 
-When AB is selected and GPBA is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without GBPA enabled, AB uses a fixed 40% percentage regardless of glucose level.)
+When AB is selected and <code>GBPA</code> is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code>GBPA</code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)
 
 * Partial Application = 20% when glucose level at or below 10 mg/dL (0.6 mmol/L) above the users correction range lower value (including overrides)
 * Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
 * Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)
 
-### Integral Retrospective Correction (IRC):
+#### Insulin Delivery of Recommended Dose: <code>GBPA</code>
+
+This is an area that confuses a lot of people so we're going to go through Automatic Bolus in some detail. For this section and the next section (on <code>Temp Basal</code>), the recommended dose is unchanged - the different methods only change how soon that recommended dose is delivered.
+
+Loop makes a prediction and decides on a recommended dose based on your settings and your glucose values, IOB and COB. For this example, Loop recommends 1 U. Future glucose values match Loop's prediction perfectly, so for each successive 5-minute update, Loop agrees with the prior prediction.
+
+* **This does not mean Loop keeps recommending 1 U**
+* **Instead, at each CGM value, Loop recommends 1 U minus the amount of "extra" insulin you got the previous cycles**
+
+So let's make a table of what happens over half an hour. For this table we use the pod smallest increment of 0.05 U. The 0 in the Minutes column is when Loop makes that recommendation initially.
+
+!!! tip "Ideal Illustration"
+    * **In real life, Loop updates the prediction** with each new CGM reading and generates a new recommended bolus
+
+The first table shows you the Automatic Bolus amounts delivered (**in this ideal example**) for differing application factors. Notice that boluses in rows for higher application factors start out higher for the first row, but go to zero (indicated by a dash) faster as that factor increases.
+
+_Incremental Dose (amount given in one cycle) for <code>GBPA</code> when initial recommendation is 1 U_
+
+| Minutes | 20% | 40% | 60% | 80% |
+|--:|--:|--:|--:|--:|
+|0|0.20|0.40|0.60|0.80|
+|5|0.15|0.25|0.25|0.15|
+|10|0.15|0.15|0.10|0.05|
+|15|0.10|0.10|0.05|  - |
+|20|0.10|0.05|  - |  - |
+|25|0.05|  - |  - |  - |
+|30|0.05|  - |  - |  - |
+
+The second table adds up the rows from the first table so you can see how long it takes to get that 1 U "extra" dose via automatic bolus with differing application factors. For rows after a column reaches 1 U, a dash is inserted into the table to make it obvious that all the "extra" has been delivered (**for this ideal example**).
+
+_Sum of Dose (extra since time 0) for <code>GBPA</code> when initial recommendation is 1 U_
+
+| Minutes | 20% | 40% | 60% | 80% |
+|--:|--:|--:|--:|--:|
+|0|0.20|0.40|0.60|0.80|
+|5|0.35|0.65|0.85|0.95|
+|10|0.50|0.80|0.95|1.00|
+|15|0.60|0.90|1.00|  - |
+|20|0.70|0.95|  - |  - |
+|25|0.75|0.95|  - |  - |
+|30|0.80|0.95|  - |  - |
+
+But what happened to the 20% and 40% columns - they did not make it to 1 U. That is because pods can only deliver increments of 0.05 U. For application factors (AF) of 40% or smaller, the requested dose of AF * 0.05 U is smaller than a pod will deliver. (The 60% only reaches 1 U because of special treatment in Loop that allows tiny doses down to 0.03 U to be rounded up to 0.05 U.) Don't worry though, in real life, Loop updates the recommendation with every CGM reading and will modify the recommendation as needed.
+
+#### Insulin Delivery of Recommended Dose: <code>Temp Basal</code>
+
+To finish this discussion, consider the case of <code>Temp Basal</code>. Once again this example uses 1 U as the recommended dose. Using <code>Temp Basal</code>, Loop increases the scheduled basal by (2 * 1) U/hr for half an hour. The table below compares <code>Temp Basal</code> and Automatic Bolus using a 20% partial application factor. Note this is an ideal example ignoring some pump details. For example Medtronic delivers <code>Temp Basal</code> a little sooner than Pods. The difference at 0 minutes highlights that Automatic Bolus provides the partial dose when Loop recommends it, whereas <code>Temp Basal</code> spreads it out.
+
+!!! tip "Ideal Illustration"
+    * **In real life, Loop updates the prediction** with each new CGM reading and generates a new recommended bolus
+    * If the recommended bolus is negative, Loop uses <code>Temp Basal</code> to restrict insulin delivery
+
+_Sum of Dose (extra since time 0) for <code>Temp Basal</code> and <code>GBPA</code> of 20% when initial recommendation is 1 U_
+
+| Minutes | <code>Temp Basal</code> | <code>GBPA</code> 20% |
+|--:|--:|--:|
+|0|0.00|0.20|
+|5|0.15|0.35|
+|10|0.30|0.50|
+|15|0.50|0.60|
+|20|0.65|0.70|
+|25|0.80|0.75|
+|30|1.00|0.80|
+
+Notice that the <code>GBPA</code> using 20%, which was selected to be similar to <code>Temp Basal</code> for lower glucose values, delivers sooner at first, but by the end of half an hour, the <code>Temp Basal</code> column shows the full 1 U, whereas the <code>GBPA</code> of 20% column does not. This is because the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested.
+
+### `Integral Retrospective Correction` (<code>IRC</code>):
 
 * Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
     * This was tested in a few forks but not included into dev until recently
     * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
-* Updated with a modification to limit stacking of IRC with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
-* Integral Retrospective Correction, when enabled:
+* Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
+* `Integral Retrospective Correction`, when enabled:
     * changes the Loop prediction model and thus can affect the recommended dose
-    * applies to both Dosing Strategies: Temp Basal or Automatic Bolus
+    * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
 
 Refering to the [Algorithm: Prediction](../operation/algorithm/prediction.md) page:
 
-* When IRC is disabled (default), the equation used to predict glucose continues to be:
+* When <code>IRC</code> is disabled (default), the equation used to predict glucose continues to be:
 
 $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
-* When IRC is enabled that equation changes to:
+* When <code>IRC</code> is enabled that equation changes to:
 
 $$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] $$
 
 Note that the Momemtum term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
 
-The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays_v3.md#predicted-glucose-chart) is updated when IRC is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the IRC and RC calculations.
+The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays_v3.md#predicted-glucose-chart) is updated when <code>IRC</code> is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the <code>IRC</code> and <code>RC</code> calculations.
 
 ![predicted glucose retrospective section with irc disabled and enabled](img/glucose-details-irc.svg){width="400"}
 {align="center"}
 
-The IRC term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [Important points about IRC](#important-points-about-irc).
+The <code>IRC</code> term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [Important points about <code>IRC</code>](#important-points-about-irc).
 
 If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:
 
 * RetrospectiveCorrection code: [StandardRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift)
 * IntegralRetrospectiveCorrection code: [IntegralRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift)
 
-#### Important points about IRC:
+#### Important points about <code>IRC</code>:
 
 1. Known risk factors compared to standard Loop: 
-    * With IRC turned on, Loop will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia
-    * IRC may also lead to increased oscillations ("roller-coaster") in glucose responses
+    * With <code>IRC</code> turned on, Loop will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia
+    * <code>IRC</code> may also lead to increased oscillations ("roller-coaster") in glucose responses
     * Both of these risk factors are higher if the user's setting value for Insulin Sensitivity (ISF) is too low
     * Increasing ISF setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D
 
-2. Compared to standard RC, IRC is more likely to improve glucose control in the following scenarios:
+2. Compared to standard <code>RC</code>, <code>IRC</code> is more likely to improve glucose control in the following scenarios:
     * Glucose remaining high or decreasing slower than expected due to temporarily reduced insulin sensitivity or due to poor site absorption
     * Glucose trending low faster than expected due to temporarily higher insulin sensitivity
     * Glucose spikes due to unannounced meals
@@ -98,12 +164,12 @@ If you want to look at the code, the version (as of 14-Aug-2023) is found in Loo
     * Glucose remaining elevated due to unannounced protein+fat effects
     * Glucose staying above (or below) the correction range due to too low (or too high) basal rate settings
 
-3. In some scenarios IRC does not differ from standard Loop RC
+3. In some scenarios <code>IRC</code> does not differ from standard Loop <code>RC</code>
 
-    * Regardless of the current glucose level, neither RC nor IRC is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.
-    * Neither RC nor IRC effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.
+    * Regardless of the current glucose level, neither <code>RC</code> nor <code>IRC</code> is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.
+    * Neither <code>RC</code> nor <code>IRC</code> effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.
 
-4. Please do not expect immediate or very substantial improvements in blood glucose control. A one-time success after turning IRC on does not really mean that IRC "works" - this could just as well be a temporal coincidence. Some ways to decide if IRC could be safe and effective for you include:
+4. Please do not expect immediate or very substantial improvements in blood glucose control. A one-time success after turning <code>IRC</code> on does not really mean that <code>IRC</code> "works" - this could just as well be a temporal coincidence. Some ways to decide if <code>IRC</code> could be safe and effective for you include:
     * Responses to unannounced meals - spikes should in general be somewhat lower than with standard Loop, but there should also be no follow-up lows
     * Nighttime responses over a few weeks - highs or lows should be less frequent compared to standard Loop; at the wake-up time blood glucose should in general be closer to the correction range.
 
