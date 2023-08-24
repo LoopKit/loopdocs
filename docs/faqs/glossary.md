@@ -81,6 +81,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **fork**: a copy of code in a github repository other than the original
 
+**GBPA**: Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy
+
 **GIF**: Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips
 
 **git**: a tool for version control
@@ -110,6 +112,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **IOB**: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 
 **iOS**: operating system used by Apple Mobile devices (iPhone, iPod)
+
+**IRC**: Integral Retrospective Correction: alternative Loop model that considers actual glucose compared to earlier predictions
 
 **ISF**: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor
 
@@ -175,6 +179,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **RileyLink**: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
+**RC**: Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions
+
 **SAGE**: sensor age on Nightscout site
 
 **Secrets**: a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop
@@ -200,6 +206,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Table of Contents**: (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
 
 **Temp Basal Only**: provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
+
+**Temp Basal**: modify the scheduled basal rate for a pump
 
 **Terminal**: interface for entering commands to the computer
 
