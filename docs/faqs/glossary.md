@@ -113,7 +113,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **iOS**: operating system used by Apple Mobile devices (iPhone, iPod)
 
-**IRC**: Integral Retrospective Correction: alternative Loop model that considers actual glucose compared to earlier predictions
+**IRC**: Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame
 
 **ISF**: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor
 
