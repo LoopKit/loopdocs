@@ -2417,7 +2417,7 @@
 
 <h2 id="calculated-dose">Calculated Dose<a class="headerlink" href="#calculated-dose" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, target range and glucose safety threshold when <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr> operation is enabled.</p>
-<p>The recommended insulin dose (positive or negative) is calculated first, then the Temp Basal or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> to be enacted is modified based on the recommended dose, dosing strategy, maximum Temp Basal and maximum Bolus settings. The automated dosing (increase or decrease) is updated with every <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value - typically every 5 minutes.</p>
+<p>The recommended insulin dose (positive or negative) is calculated first, then the <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> to be enacted is modified based on the recommended dose, dosing strategy, maximum <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> and maximum Bolus settings. The automated dosing (increase or decrease) is updated with every <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value - typically every 5 minutes.</p>
 <p><strong><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>: <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></strong></p>
 <p>All temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates.</p>
 <p><strong><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr>: <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></strong></p>
@@ -2549,7 +2549,7 @@
 <li><a href="../overview/">Algorithm Overview</a><ul>
 <li><a href="../bolus/">Bolus Recommendations</a></li>
 <li><a href="../prediction/">Blood Glucose Prediction</a></li>
-<li><a href="./">Temp Basal Adjustments</a></li>
+<li><a href="./"><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Adjustments</a></li>
 </ul>
 </li>
 </ul>

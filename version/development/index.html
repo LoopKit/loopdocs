@@ -2541,65 +2541,265 @@
 <p>The simulators for the Pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> for dev show a new format when first selected. The initial view is a demonstration screen showing a typical <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or Pump display. In order to view behind the scenes, to modify settings and to delete the simulator, you must press and hold (long-press) on the top of the display. Any where in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> screen, return to simulator screen and try again.</p>
 <p align="center"><img alt="use long press example for pump" src="../img/long-press-to-adjust-simulator.jpg" width="500" /></p>
 <h3 id="algorithm-experiments">Algorithm Experiments<a class="headerlink" href="#algorithm-experiments" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Two algorithm experiments have been added to dev. These are Glucose Based Partial Application and Integral Retrospective Correction. They can be viewed on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen just below <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> and Usage Data Sharing as shown in the graphic below:</p>
+<p>Two algorithm experiments have been added to dev. These are <code>Glucose Based Partial Application</code> and <code>Integral Retrospective Correction</code>. They can be viewed on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen just below <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> and Usage Data Sharing as shown in the graphic below:</p>
 <p align="center"><img alt="algorithm experiments" src="../img/algorithm-experiments.svg" width="650" /></p>
-<h3 id="glucose-based-partial-application-gbpa">Glucose Based Partial Application (GBPA):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="glucose-based-partial-application-gbpa"><code>Glucose Based Partial Application</code> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></li>
 <li>It is only used when <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> (AB) is selected for <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></li>
-<li>This modification does not affect the recommended dose, only the speed with which the recommended dose is automatically delivered</li>
+<li>This modification <strong>does not affect the recommended dose</strong>, only the speed with which the recommended dose is automatically delivered</li>
 </ul>
-<p>When AB is selected and GPBA is enabled, the percentage of the recommended dose delivered per <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without GBPA enabled, AB uses a fixed 40% percentage regardless of glucose level.)</p>
+<p>When AB is selected and <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> is enabled, the percentage of the recommended dose delivered per <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)</p>
 <ul>
 <li>Partial Application = 20% when glucose level at or below 10 mg/dL (0.6 mmol/L) above the users correction range lower value (including overrides)</li>
 <li>Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)</li>
 <li>Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)</li>
 </ul>
-<h3 id="integral-retrospective-correction-irc">Integral Retrospective Correction (IRC):<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h4 id="insulin-delivery-of-recommended-dose-gbpa">Insulin Delivery of Recommended Dose: <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code><a class="headerlink" href="#insulin-delivery-of-recommended-dose-gbpa" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This is an area that confuses a lot of people so we're going to go through <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> in some detail. For this section and the next section (on <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code>), the recommended dose is unchanged - the different methods only change how soon that recommended dose is delivered.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction and decides on a recommended dose based on your settings and your glucose values, <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> and <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr>. For this example, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends 1 U. Future glucose values match <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s prediction perfectly, so for each successive 5-minute update, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> agrees with the prior prediction.</p>
+<ul>
+<li><strong>This does not mean <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> keeps recommending 1 U</strong></li>
+<li><strong>Instead, at each <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends 1 U minus the amount of "extra" insulin you got the previous cycles</strong></li>
+</ul>
+<p>So let's make a table of what happens over half an hour. For this table we use the pod smallest increment of 0.05 U. The 0 in the Minutes column is when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes that recommendation initially.</p>
+<div class="admonition tip">
+<p class="admonition-title">Ideal Illustration</p>
+<ul>
+<li><strong>In real life, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the prediction</strong> with each new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading and generates a new recommended bolus</li>
+</ul>
+</div>
+<p>The first table shows you the <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> amounts delivered (<strong>in this ideal example</strong>) for differing application factors. Notice that boluses in rows for higher application factors start out higher for the first row, but go to zero (indicated by a dash) faster as that factor increases.</p>
+<p><em>Incremental Dose (amount given in one cycle) for <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> when initial recommendation is 1 U</em></p>
+<table>
+<thead>
+<tr>
+<th align="right">Minutes</th>
+<th align="right">20%</th>
+<th align="right">40%</th>
+<th align="right">60%</th>
+<th align="right">80%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">0</td>
+<td align="right">0.20</td>
+<td align="right">0.40</td>
+<td align="right">0.60</td>
+<td align="right">0.80</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">0.15</td>
+<td align="right">0.25</td>
+<td align="right">0.25</td>
+<td align="right">0.15</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">0.15</td>
+<td align="right">0.15</td>
+<td align="right">0.10</td>
+<td align="right">0.05</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">0.10</td>
+<td align="right">0.10</td>
+<td align="right">0.05</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">0.10</td>
+<td align="right">0.05</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">0.05</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">0.05</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+</tbody>
+</table>
+<p>The second table adds up the rows from the first table so you can see how long it takes to get that 1 U "extra" dose via automatic bolus with differing application factors. For rows after a column reaches 1 U, a dash is inserted into the table to make it obvious that all the "extra" has been delivered (<strong>for this ideal example</strong>).</p>
+<p><em>Sum of Dose (extra since time 0) for <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> when initial recommendation is 1 U</em></p>
+<table>
+<thead>
+<tr>
+<th align="right">Minutes</th>
+<th align="right">20%</th>
+<th align="right">40%</th>
+<th align="right">60%</th>
+<th align="right">80%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">0</td>
+<td align="right">0.20</td>
+<td align="right">0.40</td>
+<td align="right">0.60</td>
+<td align="right">0.80</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">0.35</td>
+<td align="right">0.65</td>
+<td align="right">0.85</td>
+<td align="right">0.95</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">0.50</td>
+<td align="right">0.80</td>
+<td align="right">0.95</td>
+<td align="right">1.00</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">0.60</td>
+<td align="right">0.90</td>
+<td align="right">1.00</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">0.70</td>
+<td align="right">0.95</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">0.75</td>
+<td align="right">0.95</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">0.80</td>
+<td align="right">0.95</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+</tbody>
+</table>
+<p>But what happened to the 20% and 40% columns - they did not make it to 1 U. That is because pods can only deliver increments of 0.05 U. For application factors (AF) of 40% or smaller, the requested dose of AF * 0.05 U is smaller than a pod will deliver. (The 60% only reaches 1 U because of special treatment in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> that allows tiny doses down to 0.03 U to be rounded up to 0.05 U.) Don't worry though, in real life, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the recommendation with every <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading and will modify the recommendation as needed.</p>
+<h4 id="insulin-delivery-of-recommended-dose-temp-basal">Insulin Delivery of Recommended Dose: <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code><a class="headerlink" href="#insulin-delivery-of-recommended-dose-temp-basal" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>To finish this discussion, consider the case of <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code>. Once again this example uses 1 U as the recommended dose. Using <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code>, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> increases the scheduled basal by (2 * 1) U/hr for half an hour. The table below compares <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> and <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> using a 20% partial application factor. Note this is an ideal example ignoring some pump details. For example Medtronic delivers <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> a little sooner than Pods. The difference at 0 minutes highlights that <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> provides the partial dose when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends it, whereas <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> spreads it out.</p>
+<div class="admonition tip">
+<p class="admonition-title">Ideal Illustration</p>
+<ul>
+<li><strong>In real life, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the prediction</strong> with each new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading and generates a new recommended bolus</li>
+<li>If the recommended bolus is negative, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> to restrict insulin delivery</li>
+</ul>
+</div>
+<p><em>Sum of Dose (extra since time 0) for <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> and <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> of 20% when initial recommendation is 1 U</em></p>
+<table>
+<thead>
+<tr>
+<th align="right">Minutes</th>
+<th align="right"><code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code></th>
+<th align="right"><code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> 20%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">0</td>
+<td align="right">0.00</td>
+<td align="right">0.20</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">0.15</td>
+<td align="right">0.35</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="right">0.30</td>
+<td align="right">0.50</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="right">0.50</td>
+<td align="right">0.60</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">0.65</td>
+<td align="right">0.70</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td align="right">0.80</td>
+<td align="right">0.75</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">1.00</td>
+<td align="right">0.80</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> using 20%, which was selected to be similar to <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> for lower glucose values, delivers sooner at first, but by the end of half an hour, the <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> column shows the full 1 U, whereas the <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> of 20% column does not. This is because the basal program inside the pump keeps track of how much is delivered to reach the <strong>rate</strong> requested.</p>
+<h3 id="integral-retrospective-correction-irc"><code>Integral Retrospective Correction</code> (<code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>):<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed in <a href="https://github.com/LoopKit/Loop/issues/695"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 695</a><ul>
 <li>This was tested in a few forks but not included into dev until recently</li>
 <li>Initial merge into dev: <a href="https://github.com/LoopKit/Loop/pull/2008"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2008</a></li>
 </ul>
 </li>
-<li>Updated with a modification to limit stacking of IRC with Glucose Momentum: <a href="https://github.com/LoopKit/Loop/pull/2028"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2028</a></li>
-<li>Integral Retrospective Correction, when enabled:<ul>
+<li>Updated with a modification to limit stacking of <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> with Glucose Momentum: <a href="https://github.com/LoopKit/Loop/pull/2028"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2028</a></li>
+<li><code>Integral Retrospective Correction</code>, when enabled:<ul>
 <li>changes the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> prediction model and thus can affect the recommended dose</li>
-<li>applies to both Dosing Strategies: Temp Basal or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></li>
+<li>applies to both Dosing Strategies: <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></li>
 </ul>
 </li>
 </ul>
 <p>Refering to the <a href="../../operation/algorithm/prediction/">Algorithm: Prediction</a> page:</p>
 <ul>
-<li>When IRC is disabled (default), the equation used to predict glucose continues to be:</li>
+<li>When <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is disabled (default), the equation used to predict glucose continues to be:</li>
 </ul>
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] \]</div>
 <ul>
-<li>When IRC is enabled that equation changes to:</li>
+<li>When <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is enabled that equation changes to:</li>
 </ul>
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] \]</div>
 <p>Note that the Momemtum term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).</p>
-<p>The Retrospective Correction section of the <a href="../../loop-3/displays_v3/#predicted-glucose-chart">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></a> is updated when IRC is enabled, as shown in the graphic below. The <code>Integral effect</code>, inside lower blue rectangle, is the difference between the IRC and RC calculations.</p>
+<p>The Retrospective Correction section of the <a href="../../loop-3/displays_v3/#predicted-glucose-chart">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></a> is updated when <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is enabled, as shown in the graphic below. The <code>Integral effect</code>, inside lower blue rectangle, is the difference between the <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> and <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code> calculations.</p>
 <p align="center"><img alt="predicted glucose retrospective section with irc disabled and enabled" src="../img/glucose-details-irc.svg" width="400" /></p>
-<p>The IRC term is described in this (updated) <a href="https://github.com/LoopKit/Loop/issues/695#issue-310265141">comment</a> including plots and equations. Some of the information in that comment is repeated below: <a href="#important-points-about-irc">Important points about IRC</a>.</p>
+<p>The <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> term is described in this (updated) <a href="https://github.com/LoopKit/Loop/issues/695#issue-310265141">comment</a> including plots and equations. Some of the information in that comment is repeated below: <a href="#important-points-about-irc">Important points about <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code></a>.</p>
 <p>If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:</p>
 <ul>
 <li>RetrospectiveCorrection code: <a href="https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift">StandardRetrospectiveCorrection.swift</a></li>
 <li>IntegralRetrospectiveCorrection code: <a href="https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift">IntegralRetrospectiveCorrection.swift</a></li>
 </ul>
-<h4 id="important-points-about-irc">Important points about IRC:<a class="headerlink" href="#important-points-about-irc" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="important-points-about-irc">Important points about <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>:<a class="headerlink" href="#important-points-about-irc" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ol>
 <li>
 <p>Known risk factors compared to standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>: </p>
 <ul>
-<li>With IRC turned on, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia</li>
-<li>IRC may also lead to increased oscillations ("roller-coaster") in glucose responses</li>
+<li>With <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> turned on, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia</li>
+<li><code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> may also lead to increased oscillations ("roller-coaster") in glucose responses</li>
 <li>Both of these risk factors are higher if the user's setting value for Insulin Sensitivity (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>) is too low</li>
 <li>Increasing <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D</li>
 </ul>
 </li>
 <li>
-<p>Compared to standard RC, IRC is more likely to improve glucose control in the following scenarios:</p>
+<p>Compared to standard <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code>, <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is more likely to improve glucose control in the following scenarios:</p>
 <ul>
 <li>Glucose remaining high or decreasing slower than expected due to temporarily reduced insulin sensitivity or due to poor site absorption</li>
 <li>Glucose trending low faster than expected due to temporarily higher insulin sensitivity</li>
@@ -2610,14 +2810,14 @@
 </ul>
 </li>
 <li>
-<p>In some scenarios IRC does not differ from standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> RC</p>
+<p>In some scenarios <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> does not differ from standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code></p>
 <ul>
-<li>Regardless of the current glucose level, neither RC nor IRC is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.</li>
-<li>Neither RC nor IRC effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.</li>
+<li>Regardless of the current glucose level, neither <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code> nor <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.</li>
+<li>Neither <code><abbr title="Retrospective Correction: part of the Loop model that considers actual glucose compared to earlier predictions">RC</abbr></code> nor <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.</li>
 </ul>
 </li>
 <li>
-<p>Please do not expect immediate or very substantial improvements in blood glucose control. A one-time success after turning IRC on does not really mean that IRC "works" - this could just as well be a temporal coincidence. Some ways to decide if IRC could be safe and effective for you include:</p>
+<p>Please do not expect immediate or very substantial improvements in blood glucose control. A one-time success after turning <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> on does not really mean that <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> "works" - this could just as well be a temporal coincidence. Some ways to decide if <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> could be safe and effective for you include:</p>
 <ul>
 <li>Responses to unannounced meals - spikes should in general be somewhat lower than with standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, but there should also be no follow-up lows</li>
 <li>Nighttime responses over a few weeks - highs or lows should be less frequent compared to standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>; at the wake-up time blood glucose should in general be closer to the correction range.</li>
