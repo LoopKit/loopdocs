@@ -50,19 +50,18 @@ When AB is selected and <code>GBPA</code> is enabled, the percentage of the reco
 
 #### Insulin Delivery of Recommended Dose: <code>GBPA</code>
 
-This is an area that confuses a lot of people so we're going to go through Automatic Bolus in some detail. For this section and the next section (on <code>Temp Basal</code>), the recommended dose is unchanged - the different methods only change how soon that recommended dose is delivered.
+New Loopers often have questions on how <code>Automatic Bolus</code> (AB) delivery works, even when using the default 40% Partial Application Factor. When <code>GBPA</code> is enabled, the application factor can change with current glucose level but it's important to remember that the recommended insulin dose does not.
 
-Loop makes a prediction and decides on a recommended dose based on your settings and your glucose values, IOB and COB. For this example, Loop recommends 1 U. Future glucose values match Loop's prediction perfectly, so for each successive 5-minute update, Loop agrees with the prior prediction.
+Loop makes a prediction and recommends an insulin dose based on your settings and your glucose history, IOB and COB. The selected <code>Dosing Strategy</code> (AB with or without <code>GBPA</code> or <code>Temp Basal Only</code>) only changes how quickly that recommended dose is delivered.
 
-* **This does not mean Loop keeps recommending 1 U**
-* **Instead, at each CGM value, Loop recommends 1 U minus the amount of "extra" insulin you got the previous cycles**
+For this example, we assume Loop recommends 1 U and future glucose values match Loop's prediction for each successive 5-minute update. In other words, at the end of about half an hour, Loop provides the user with about 1 U of insulin above that delivered by the scheduled basal rate.
 
-So let's make a table of what happens over half an hour. For this table we use the pod smallest increment of 0.05 U. The 0 in the Minutes column is when Loop makes that recommendation initially.
+The tables below show an idealized dosing pattern for half an hour using a minimum bolus increment of 0.05 U. The 0 in the Minutes column is when Loop makes that recommendation initially.
 
 !!! tip "Ideal Illustration"
     * **In real life, Loop updates the prediction** with each new CGM reading and generates a new recommended bolus
 
-The first table shows you the Automatic Bolus amounts delivered (**in this ideal example**) for differing application factors. Notice that boluses in rows for higher application factors start out higher for the first row, but go to zero (indicated by a dash) faster as that factor increases.
+The first table shows the <code>Automatic Bolus</code> amounts delivered each Loop cycle (**in this ideal example**) for differing application factors. Notice that boluses for higher application factors start out higher for the first row, but go to zero (indicated by a dash) more quickly as that factor increases.
 
 _Incremental Dose (amount given in one cycle) for <code>GBPA</code> when initial recommendation is 1 U_
 
@@ -76,9 +75,9 @@ _Incremental Dose (amount given in one cycle) for <code>GBPA</code> when initial
 |25|0.05|  - |  - |  - |
 |30|0.05|  - |  - |  - |
 
-The second table adds up the rows from the first table so you can see how long it takes to get that 1 U "extra" dose via automatic bolus with differing application factors. For rows after a column reaches 1 U, a dash is inserted into the table to make it obvious that all the "extra" has been delivered (**for this ideal example**).
+The second table shows the cumulative delivery. For rows after a column reaches 1 U, a dash is inserted into the table to make it obvious that the entire recommended dose was delivered. Remember, **this is a simplified example**.
 
-_Sum of Dose (extra since time 0) for <code>GBPA</code> when initial recommendation is 1 U_
+_Cumulative Dose for <code>GBPA</code> when initial recommendation is 1 U_
 
 | Minutes | 20% | 40% | 60% | 80% |
 |--:|--:|--:|--:|--:|
@@ -90,17 +89,17 @@ _Sum of Dose (extra since time 0) for <code>GBPA</code> when initial recommendat
 |25|0.75|0.95|  - |  - |
 |30|0.80|0.95|  - |  - |
 
-But what happened to the 20% and 40% columns - they did not make it to 1 U. That is because pods can only deliver increments of 0.05 U. For application factors (AF) of 40% or smaller, the requested dose of AF * 0.05 U is smaller than a pod will deliver. (The 60% only reaches 1 U because of special treatment in Loop that allows tiny doses down to 0.03 U to be rounded up to 0.05 U.) Don't worry though, in real life, Loop updates the recommendation with every CGM reading and will modify the recommendation as needed.
+But what happened to the 20% and 40% columns - they did not make it to 1 U. That is because we assumed the pump minimum bolus is 0.05 U. For application factors (AF) of 40% or smaller, the requested dose of AF * 0.05 U is smaller than this pump will deliver. (The 60% only reaches 1 U because of special treatment in Loop that allows tiny doses down to 0.03 U to be rounded up to 0.05 U.) Don't worry though, in real life, Loop updates the recommendation with every CGM reading and will modify the recommendation as needed.
 
-#### Insulin Delivery of Recommended Dose: <code>Temp Basal</code>
+#### Insulin Delivery of Recommended Dose: <code>Temp Basal Only</code>
 
-To finish this discussion, consider the case of <code>Temp Basal</code>. Once again this example uses 1 U as the recommended dose. Using <code>Temp Basal</code>, Loop increases the scheduled basal by (2 * 1) U/hr for half an hour. The table below compares <code>Temp Basal</code> and Automatic Bolus using a 20% partial application factor. Note this is an ideal example ignoring some pump details. For example Medtronic delivers <code>Temp Basal</code> a little sooner than Pods. The difference at 0 minutes highlights that Automatic Bolus provides the partial dose when Loop recommends it, whereas <code>Temp Basal</code> spreads it out.
+The table below compares <code>Dosing Strategy</code> of <code>Temp Basal Only</code> with <code>Automatic Bolus</code> using 20% partial application factor. This example uses 1 U as the recommended dose. Loop increases the scheduled basal by (2 * 1) U/hr for half an hour. Note this is an ideal example ignoring some pump details. For example Medtronic delivers <code>Temp Basal</code> a little sooner than Pods. The difference at 0 minutes highlights that <code>Automatic Bolus</code> provides the partial dose when Loop recommends it, whereas <code>Temp Basal</code> spreads it out.
 
 !!! tip "Ideal Illustration"
     * **In real life, Loop updates the prediction** with each new CGM reading and generates a new recommended bolus
     * If the recommended bolus is negative, Loop uses <code>Temp Basal</code> to restrict insulin delivery
 
-_Sum of Dose (extra since time 0) for <code>Temp Basal</code> and <code>GBPA</code> of 20% when initial recommendation is 1 U_
+_Cumulative Dose for <code>Temp Basal</code> and <code>GBPA</code> of 20% when initial recommendation is 1 U_
 
 | Minutes | <code>Temp Basal</code> | <code>GBPA</code> 20% |
 |--:|--:|--:|
@@ -112,7 +111,7 @@ _Sum of Dose (extra since time 0) for <code>Temp Basal</code> and <code>GBPA</co
 |25|0.80|0.75|
 |30|1.00|0.80|
 
-Notice that the <code>GBPA</code> using 20%, which was selected to be similar to <code>Temp Basal</code> for lower glucose values, delivers sooner at first, but by the end of half an hour, the <code>Temp Basal</code> column shows the full 1 U, whereas the <code>GBPA</code> of 20% column does not. This is because the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested.
+The minimum <code>GBPA</code> application factor of 20% was selected to be similar to the <code>Temp Basal Only</code> <code>Dosing Strategy</code> for lower glucose values. Initially, <code>GBPA</code> 20% delivers insulin more quickly but by the end of half an hour, the <code>Temp Basal Only</code> column delivered more insulin. This is because the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested.
 
 ### `Integral Retrospective Correction` (<code>IRC</code>):
 
