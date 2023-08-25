@@ -1,8 +1,8 @@
-## GitHub Build Method Errors
+## *GitHub* Build Method Errors
 
 This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update *LoopDocs* to make it easier for the next person to succeed without errors.
 
-If you've been around Loop for a while, you know the mantra about screenshots. Well, for GitHub Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public `LoopWorkspace` fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
+If you've been around Loop for a while, you know the mantra about screenshots. Well, for *GitHub* Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public `LoopWorkspace` fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
 
 But first - try to diagnose it yourself using this page.
 
@@ -58,7 +58,7 @@ Click on the top link to view the record of the failed action as shown in the gr
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
     * Please **do NOT post a screenshot**
 
-!!! tip "Where to find my GitHub username?"
+!!! tip "Where to find my *GitHub* username?"
     You can find it:
 
     -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).
@@ -71,7 +71,7 @@ Click on the top link to view the record of the failed action as shown in the gr
 
         ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
 
-    As your GitHub `username` is case-sensitive, use copy and paste.
+    As your *GitHub* `username` is case-sensitive, use copy and paste.
 
 ## Action: `Validate Secrets` Errors
 
@@ -217,7 +217,7 @@ If you see this phrase, the `fastlane` package that is utilized during the `3. C
 To fix this error:
 
 - Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
-  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup GitHub: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
@@ -347,7 +347,7 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 ### `Could not install WWDR certificate`
 
-Assuming you have successfully built using the Browser-Build / GitHub method before:
+Assuming you have successfully built using the Browser-Build / *GitHub* method before:
 
 * If the details show this message, `Could not install WWDR certificate`, make sure your [*Apple developer* account](https://developer.apple.com) is in good standing and that there are no agreements that need to be accepted
 * Sometimes this is a sign that *Apple* did not respond to a request, this failure happens in the first few minutes

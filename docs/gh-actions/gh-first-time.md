@@ -38,15 +38,15 @@
     * *GitHub*:
         * [`Action: 3. Create Certificates`](#create-certificates)
         * [`Action: 4. Build Loop`](#build-loop)
-    * *Apple*: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
+    * *Apple*: [Set up `Internal *TestFlight* Group`](#set-up-users-and-access-testflight)
     * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
     - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
-    - **Can I use this for my child?** You, as the adult, can install using TestFlight on your child's phone. The explicit steps are provided at [*GitHub* Deploy: Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
-    - **Can I still use my customizations?** Yes. [Customize with GitHub](gh-customize.md)
+    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [*GitHub* Deploy: Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
+    - **Can I still use my customizations?** Yes. [Customize with *GitHub*](gh-customize.md)
 
 ## Tips and Tricks
 
@@ -77,7 +77,7 @@ There are two prerequisites to build Loop using *GitHub* Browser Build.
 
 #### Prerequisites to Install Loop
 
-To install Loop, you need the TestFlight app, from the *Apple* App Store, installed on your [Compatible Phone](../build/step2.md).
+To install Loop, you need the *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/step2.md).
 
 #### Prerequisites to Use Loop
 
@@ -106,7 +106,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * You obtain and save this key from the *Apple* Developer website
     * Doing this provides 3 of your <code>Secrets</code>
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
-* `Identifiers`: are required to build Loop with GitHub (these are automatically generated for you)
+* `Identifiers`: are required to build Loop with *GitHub* (these are automatically generated for you)
     * Four Identifier Names must be associated with your `App Group`
         * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
         * For dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
@@ -131,7 +131,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 * Many people add other information to the <code>Secrets</code> file for easy reference
 
 !!! tip "Archive Your Information"
-    For many of the steps on this page, you will need username, email address,  and password for *Apple* and GitHub. You will require six <code>Secrets</code>.
+    For many of the steps on this page, you will need username, email address,  and password for *Apple* and *GitHub*. You will require six <code>Secrets</code>.
 
     * Record these in a safe place where you can find them
     * A digital copy is best for copying and pasting in different locations
@@ -531,7 +531,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * These <span class="notranslate">Secrets</span> are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
     * These <span class="notranslate">Secrets</span> must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
 
-Log into GitHub.
+Log into *GitHub*.
 
 1. Return to your forked copy of `LoopWorkspace`
     * Click on your personal icon at the upper right to see the drop-down menu and select "`Your repositories`"
@@ -945,7 +945,7 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 ## `Create Certificates`
 
 ??? abstract "Section Summary (click to open/close)"
-    1. Go back to the "Actions" tab of your LoopWorkspace repository in GitHub.
+    1. Go back to the "Actions" tab of your LoopWorkspace repository in *GitHub*.
     1. On the left side, select "3. Create Certificates".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
     1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
@@ -977,12 +977,12 @@ Refer to the graphic below for the numbered steps:
     1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
     1. You should get several emails
         * one says build succeeded (or failed)
-        * one says TestFlight is ready (typically half-hour after build succeeds)
+        * one says *TestFlight* is ready (typically half-hour after build succeeds)
         * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
     1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
     1. For each phone/person you would like to support Loop on:
         * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
-        * Add them to your TestFlight Internal Testing group.
+        * Add them to your *TestFlight* Internal Testing group.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
 
@@ -1007,7 +1007,7 @@ Refer to the graphic below for the first four steps:
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
 1. You should get several emails
     * one says build succeeded (or failed)
-    * one says TestFlight is ready (typically half-hour after build succeeds)
+    * one says *TestFlight* is ready (typically half-hour after build succeeds)
     * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
@@ -1015,7 +1015,7 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
 
-You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [Install TestFlight Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
+You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
 
 1. First you need to add the email address(es) to your *App Store Connect* Access Users list:
 
@@ -1040,7 +1040,7 @@ You are configuring a private capability for your family using an Internal Testi
 
 1. As soon as you create the group, you'll be asked who should be included
     * Click in the box beside each person you want to include
-    * Each person in this group will get an email each time you update (build again) on GitHub
+    * Each person in this group will get an email each time you update (build again) on *GitHub*
     * Click `Add` when you are done
     * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
 

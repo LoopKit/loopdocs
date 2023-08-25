@@ -1,26 +1,26 @@
-## Using GitHub to Build Other Apps
+## Using *GitHub* to Build Other Apps
 
 Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature.
 
-The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your Apple Developer ID and your GitHub account. As other apps are updated, they will be added to this page and the list below will be updated.
+The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account. As other apps are updated, they will be added to this page and the list below will be updated.
 
 * LoopCaregiver
 * Loop Follow
 
 !!! warning "GH_PAT - NEW RECOMMENDATION"
-    It is now recommended that you use a GitHub Personal Access Token (GH_PAT) that never expires
+    It is now recommended that you use a *GitHub* Personal Access Token (GH_PAT) that never expires
 
-    - [GitHub Update: Regenerate GitHub Token](gh-update.md#regenerate-github-token)
+    - [GitHub Update: Regenerate *GitHub* Token](gh-update.md#regenerate-github-token)
 
-    If you choose a GitHub personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each repository you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.
+    If you choose a *GitHub* personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each repository you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.
 
 ### Prerequisites
 
-Wait until the repository you are interested in adds the capability of GitHub build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
+Wait until the repository you are interested in adds the capability of *GitHub* build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
 
-* If you have already built using this GitHub method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
+* If you have already built using this *GitHub* method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
 
-* If this is the first repository you have built with GitHub, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
+* If this is the first repository you have built with *GitHub*, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
     * You have created your Match-Secrets repository
     * You are told to [GitHub First-Time: Fork LoopWorkspace](../gh-actions/gh-first-time.md#fork-loopworkspace)
         * Review the directions but don't do it
@@ -46,16 +46,16 @@ Wait until the repository you are interested in adds the capability of GitHub bu
 
 After successfully creating your fork of the repository for this app:
 
-* If you have already built Loop using GitHub, skip ahead to [Add Existing Secrets](#add-existing-secrets)
+* If you have already built Loop using *GitHub*, skip ahead to [Add Existing Secrets](#add-existing-secrets)
 
-* If this is the first repository you have built with GitHub
+* If this is the first repository you have built with *GitHub*
     * You should follow the detailed steps at [GitHub First-Time: Configure Secrets](../gh-actions/gh-first-time.md#configure-secrets), except you will apply the Secrets to the repository for the app you are planning to build
     * Once your 6 secrets have been added, return to this page and skip ahead to [Action: Add Identifiers](#action-add-identifiers) on this page.
 
 ### Add Existing Secrets
 
 !!! tip "MATCH_PASSWORD"
-    An early version of GitHub First-Time had incorrect information about the need to save MATCH_PASSWORD.
+    An early version of *GitHub* First-Time had incorrect information about the need to save MATCH_PASSWORD.
 
     If you did not save your MATCH_PASSWORD in your file with all your Secrets, you will need to delete your Match-Secrets repository, create a new one and then add all your Secrets into all you repositories again and run all the Actions again.
 
@@ -197,7 +197,7 @@ This requires you to provide some information. Examine the table below for the b
     * Enter a name: this will have to be unique
         * You could start with "App Name ABC" where ABC are your initials
         * If that is already taken, you can add a number, for example, "App Name ABC 123"
-        * This name is what you see on the App Store Connect list and in the TestFlight app
+        * This name is what you see on the App Store Connect list and in the *TestFlight* app
         * Once installed on your phone, you will see the actual app name
         * You can [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name) later if you want
     * Select your primary language.
@@ -210,7 +210,7 @@ This requires you to provide some information. Examine the table below for the b
 
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
-You are done with this activity. You can close the browser tab, but before you do, note the TestFlight tab at the top of the page. You'll be using that tab after you complete the next two actions.
+You are done with this activity. You can close the browser tab, but before you do, note the *TestFlight* tab at the top of the page. You'll be using that tab after you complete the next two actions.
 
 ## Create Certificates
 
@@ -257,9 +257,9 @@ Refer to the graphic below for the first four steps:
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
-## Add Users to TestFlight for App
+## Add Users to *TestFlight* for App
 
-Once the first build completes, you will be able to configure TestFlight for the app - follow the template for setting up TestFlight for Loop found in [GitHub First-Time: Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight)
+Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [GitHub First-Time: Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight)
 
 ## Deployment
 

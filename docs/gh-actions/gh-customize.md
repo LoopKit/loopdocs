@@ -1,9 +1,9 @@
 ## Hot Topics
 
 !!! tip "Pro Tip"
-    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code/#prepared-custom-list). You can use (and re-use) your customizations with either GitHub Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
+    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code/#prepared-custom-list). You can use (and re-use) your customizations with either *GitHub* Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
 
-    * If you are building with Mac-Xcode method, you can use the same lines prepared for GitHub Browser method and simply paste them in your terminal at the LoopWorkspace folder to customize your code
+    * If you are building with Mac-Xcode method, you can use the same lines prepared for *GitHub* Browser method and simply paste them in your terminal at the LoopWorkspace folder to customize your code
 
 !!! warning "Modules vs Submodule"
     This page has instructions to set up your own fork for the Modules associated with LoopWorkspace that are needed for a selected customization.
@@ -15,8 +15,8 @@
 
 #### Do Not Make a Pull Request
 
-!!! danger "Ignore GitHub Pull Request Prompts"
-    Please do not click on boxes that GitHub might show you that ask if you want to **Compare & Pull Request.**
+!!! danger "Ignore *GitHub* Pull Request Prompts"
+    Please do not click on boxes that *GitHub* might show you that ask if you want to **Compare & Pull Request.**
     
     This would be an attempt to merge changes from your fork back to LoopKit. These changes are for **your fork** only. Ignore those prompts.
 
@@ -27,7 +27,7 @@
         * Typically 1 or 2 Modules
     * Ten minutes to add patch lines to your build_loop.yml file
     * One minute to start the build
-    * An hour before the TestFlight build shows up on your phone
+    * An hour before the *TestFlight* build shows up on your phone
 
 !!! abstract "Summary"
     * Prepare Customization (One Time):
@@ -37,24 +37,24 @@
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code_customization.md) page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list)
-    * GitHub (each Module):
+    * *GitHub* (each Module):
         1. Fork Module (if needed)
         1. Sync the Module (if needed)
-        1. Make the desired modification(s) using the GitHub pencil tool
+        1. Make the desired modification(s) using the *GitHub* pencil tool
         1. Save (commit) your changes to your fork
         1. Prepare lines needed for each customization and save
-    * GitHub (LoopWorkspace)
-        1. You will use the GitHub pencil tool to edit build_loop.yml in your fork
+    * *GitHub* (LoopWorkspace)
+        1. You will use the *GitHub* pencil tool to edit build_loop.yml in your fork
         1. Add customization lines to the file
         1. Save (commit) your changes
         1. Action: Build Loop
-    * Phone: Install Loop with TestFlight
+    * Phone: Install Loop with *TestFlight*
 
 !!! question "FAQs"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer.
     - **Should I build without customizations first?** Yes. Make sure the build process works without customizations. You don't need to install the build on your phone, just make sure it builds without errors before you start modifying.
 
-## How to Customize a GitHub Build
+## How to Customize a *GitHub* Build
 
 You do not need a Mac, you can still do this using any browser on a computer.
 
@@ -73,7 +73,7 @@ Decide which [LoopDocs: Code Customization](../build/code_customization.md) chan
 ## Outline of What Happens in the Module
 
 !!! warning "Review Only"
-    Review this section so you know what to expect. The actual steps will come later, starting with [Create a Fork for Selected Module](#create-a-fork-for-selected-module) or [Edit Module in GitHub](#edit-module-in-github).
+    Review this section so you know what to expect. The actual steps will come later, starting with [Create a Fork for Selected Module](#create-a-fork-for-selected-module) or [Edit Module in *GitHub*](#edit-module-in-github).
 
 In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. This section tries to explain what you will be doing once you start editing with a given Module.
 
@@ -104,13 +104,13 @@ Choose your link:
     1. Go to the branch for each Module (dev or main) that is the default branch in the [Branch Table](#branch-table)
     2. Sync that branch
 
-    Skip ahead to [Edit Module in GitHub](#edit-module-in-github).
+    Skip ahead to [Edit Module in *GitHub*](#edit-module-in-github).
 
 ### New Fork
 
-If you want a modification that uses a particular Module, you must fork that module to your GitHub account. You will repeat the Fork and Modify steps for each module.
+If you want a modification that uses a particular Module, you must fork that module to your *GitHub* account. You will repeat the Fork and Modify steps for each module.
 
-1. Log into your GitHub account
+1. Log into your *GitHub* account
 1. Right click (or control click) on the URL in the [Fork Table](#fork-table)
 1. This opens a new browser tab at the URL of the repository you need to fork
 1. Tap on Fork, your fork will show up in the tab
@@ -143,11 +143,11 @@ When you fork a repository, the default branch is the one that is forked. That i
 | LoopKit/OmniKit | main |
 
 !!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: GitHub Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code#add-lnl-patches).
+    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: *GitHub* Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code#add-lnl-patches).
 
     The process for creating your own customizations is the same as those using the released code.
 
-## Edit Module in GitHub
+## Edit Module in *GitHub*
 
 Open your browser to your https://github.com/username/Module fork. Be sure to sync **your fork** if it shows it is behind the LoopKit repository.
 
@@ -158,10 +158,10 @@ Navigate to the file you need to modify (using the instructions to find the line
 
 This section provides the steps to make a single customization for the Module. If you need more than one, just repeat the process and make additional "patch" branches.
 
-You will be using the "pencil" tool that comes with GitHub in your fork while logged into your username.
+You will be using the "pencil" tool that comes with *GitHub* in your fork while logged into your username.
 
 !!! question "Are there detailed instructions?"
-    For more information about editing with GitHub:
+    For more information about editing with *GitHub*:
 
     * [GitHub Docs: Editing Files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
 
@@ -179,8 +179,8 @@ Once you've tapped on Code, you see there is still an opportunity to "Compare & 
 
 #### Do Not Make a Pull Request
 
-!!! danger "Ignore GitHub Pull Request Prompts"
-    Please do not click on boxes that GitHub might show you that ask if you want to **Compare & Pull Request.**
+!!! danger "Ignore *GitHub* Pull Request Prompts"
+    Please do not click on boxes that *GitHub* might show you that ask if you want to **Compare & Pull Request.**
     
     This would be an attempt to merge changes from your fork back to LoopKit. These changes are for **your fork** only. Ignore those prompts.
 
@@ -204,7 +204,7 @@ For example:
 SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 ```
 
-Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when running the GitHub Build step.
+Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when running the *GitHub* Build step.
 
 Repeat this process until you've done all your customizations for this Module and then move on to the next Module.
 
@@ -224,10 +224,10 @@ curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --dire
 where:
 
 * `curl` means copy from URL
-* username is your GitHub username
+* username is your *GitHub* username
 * Module is where you made the customization (Module is in multiple places)
 * SHA-1 is the full identifier for the commit that has the change; there is a copy button to make this easy
-* the `.patch` after the SHA-1 is GitHub magic that formats that code change into a patch
+* the `.patch` after the SHA-1 is *GitHub* magic that formats that code change into a patch
 
 To view the exact code change associated with that patch, open a browser at the URL of `https://github.com/username/Module/commit/SHA-1`.
 
@@ -235,7 +235,7 @@ To view the exact code change associated with that patch, open a browser at the 
 
 The final step is to update your LoopWorkspace fork to apply these customizations by adding those customization lines into the build_loop.yml file.
 
-Return to your GitHub fork for LoopWorkspace and make sure to sync it if needed.
+Return to your *GitHub* fork for LoopWorkspace and make sure to sync it if needed.
 
 * Find the folder .github/workflows and click on it
 * Find the file build_loop.yml and click on it
@@ -291,7 +291,7 @@ When you are ready, it's time to build Loop with your customizations.
 
 Wait about 2 minutes before walking away to make sure there are no errors. If you get an error, then look for the first "did not apply" error message and fix the customization right before that line.
 
-In about 1 hour, your customized Loop will be available for installation on your phone via TestFlight.
+In about 1 hour, your customized Loop will be available for installation on your phone via *TestFlight*.
 
 ## Special Cases
 
