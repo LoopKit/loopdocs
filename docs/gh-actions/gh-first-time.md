@@ -18,17 +18,16 @@
 
     You can think of the first part as a scavenger hunt where you find or generate and save six <code>Secrets</code>.
 
-    * Make up a password and save it - you can do this at any time before you add your <code>Secrets</code> to your copy of LoopWorkspace repository
-
     * *Apple*:
-        * [Save the four *Apple* <code>Secrets</code>](#collect-the-four-apple-secrets)
+        * [Collect the four *Apple* <code>Secrets</code>](#collect-the-four-apple-secrets)
     * *GitHub*:
-        * [Save the <code>GH_PAT</code> Secret](#collect-the-github-secret)
-        * [Create a <code>Match-Secrets</code> private repository](#create-match-secrets)
+        * [Collect the <code>GH_PAT</code> Secret](#collect-the-gh_pat-secret)
+    * [Make up a Password](#make-up-a-password)
 
     Now it's time to use those <code>Secrets</code> to build the Loop app
 
     * *GitHub*:
+        * [Create a <code>Match-Secrets</code> private repository](#create-match-secrets)
         * [Fork a repository (copy of `LoopWorkspace`)](#fork-loopworkspace)
         * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](#configure-secrets)
         * [`Action: 1. Validate Secrets`](#validate-secrets)
@@ -97,28 +96,29 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 If this summary of terms is confusing, finish reviewing the whole page and then come back.
 
 * `Actions`: available in your *GitHub* account to build your app (once you follow the instructions on this page)
-    * With Loop 3, the actions: `Verify Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
+    * With Loop 3, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
     * If *GitHub* Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/) to see if it is *GitHub* problem.
 * <code>Secrets</code>: are required to enable *GitHub* to build Loop using *GitHub* Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same *GitHub* build method
+* API `Key`:`Application Programming Interface Key`
+    * You obtain and save this key from the *Apple* Developer website
+    * Doing this provides 3 of your <code>Secrets</code>
+    * It is required to enable your *GitHub* account to interface with *Apple* to create your app
 * `Identifiers`: are required to build Loop with GitHub (these are automatically generated for you)
-    * Four Identifier Names must be associated with your App Group
+    * Four Identifier Names must be associated with your `App Group`
         * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
         * For dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
     * Two Identifier Names will exist but do not require that association
         * `WatchApp` and `WatchAppExtension`
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
         * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
-        * The items under the **`IDENTIFIER`** column match the table in [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+        * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple* Developers to review their apps
     * Once you purchase an *Apple Developer* annual account, you are an *Apple* Developer and have access to this site
     * Most Loopers will not have an App until using the *GitHub* build method
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
-* API `Key`:`Application Programming Interface Key`
-    * You obtain and save this key from the *Apple* Developer website
-    * It is required to enable your *GitHub* account to interface with *Apple* to create your app
 
 ## Save Your Information
 
@@ -416,8 +416,6 @@ You must be logged into your *GitHub* account before starting this step. If you 
 
 If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>.
 
-When using the *GitHub* Browser Build method for any DIY app, you must supply this password as one of your <code>Secrets</code>. If you later lose <code>MATCH_PASSWORD</code>, you will need to delete and make a new <code>Match-Secrets</code> repository; instructions at [Reset `Match-Secrets`](gh-errors.md#reset-match-secrets). That process requires you to  delete old certificates and create ones. Make it easy on yourself - save <code>MATCH_PASSWORD</code>.
-
 ## Prepare your Repositories
 
 ### Create Match-Secrets
@@ -695,30 +693,30 @@ Some steps can be skipped if you previously built Loop with `Mac-Xcode`.
 
 Please read carefully to avoid confusion.
 
-### Create App Group
+### Create `App Group`
 
 ??? abstract "Section Summary (click to open/close)"
     [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built Loop via Xcode using this *Apple* ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
-    1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
+    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
     1. For Description, use "Loop App Group".
     1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
     1. Click "Continue" and then "Register".
 
-    [<span class="loop-bigger">:material-skip-forward:</span>](#add-app-group-to-bundle-identifiers) To skip the detailed instructions, click on [Add App Group to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
+    [<span class="loop-bigger">:material-skip-forward:</span>](#add-app-group-to-bundle-identifiers) To skip the detailed instructions, click on [Add `App Group` to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
 
 The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 If you have never built Loop with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
-1. Open this link: [`Register an App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
+1. Open this link: [`Register an `App Group``](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
 1. For **`Description`**, use `Loop App Group`.
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
     * A mistake here means you will not be able to build Loop until you fix it
 1. Click `Continue` and then `Register`.
 
-### Add App Group to Bundle Identifiers
+### Add `App Group` to Bundle Identifiers
 
 [<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built Loop using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
@@ -817,9 +815,9 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
-### Add App Group to Other Identifiers
+### Add `App Group` to Other Identifiers
 
-You will now be checking the status for 3 more identifiers to ensure the App Group is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers:
+You will now be checking the status for 3 more identifiers to ensure the `App Group` is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers:
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -914,7 +912,7 @@ This section is for people who were not able to follow the instructions in the l
 
 There are two possible reasons:
 
-1. You did not complete [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers) or one of the predecessor steps; review those steps
+1. You did not complete [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers) or one of the predecessor steps; review those steps
 1. Your app is already in *App Store Connect*, but you cannot see it
 
 You may have no memory of ever setting up `Loop` in *App Store Connect*. If you previously used some kind of remote build, like `diawi`, your `Loop` may be there as a *Removed App*.
@@ -1104,7 +1102,7 @@ If you were just trying to clean up the identifiers, then follow these steps:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
 * If you did not complete [Add or Review Configuration for Loop Identifier](#add-or-review-configuration-for-loop-identifier) step, do it now
-* Complete the [Add App Group to Other Identifiers](#add-app-group-to-other-identifiers)
+* Complete the [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
 * Continue with [Create Certificates](#create-certificates) and then [Build Loop](#build-loop)
 

@@ -26,7 +26,7 @@ These are some of the most common errors to date.
 
 There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 
-1. [Action: `Verify Secrets`](#action-verify-secrets-errors)
+1. [Action: `Validate Secrets`](#action-validate-secrets-errors)
 1. [Action: `Add Identifiers` Errors](#action-add-identifiers-errors)
 1. [Action: `Create Certificates` Errors](#action-create-certificates-errors)
 1. [Action: `Build Loop` Errors](#action-build-loop-errors) before a successful build
@@ -60,20 +60,20 @@ Click on the top link to view the record of the failed action as shown in the gr
 
 !!! tip "Where to find my GitHub username?"
     You can find it:
-       
-    -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).  
+
+    -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).
        https://github.com/==username==/Loopworkspace
     - or on the [GitHub website](https://github.com)
-      
+
         ![Find your GitHub username step 1](img/github-username-1.svg)
         ![Find your GitHub username step 2](img/github-username-2.svg){width="200"}
         {align="right"}
-        
+
         ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
-     
+
     As your GitHub `username` is case-sensitive, use copy and paste.
 
-## Action: `Verify Secrets` Errors
+## Action: `Validate Secrets` Errors
 
 A new action was added with *Loop* 3.1 to provide better error messages if something is wrong with your *Secrets*. In addition, the Actions are numbered to match the order in which they should be applied.
 
@@ -206,7 +206,7 @@ Copy the words on the line below and paste them into the search function for you
 > Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
 > ```
 
-or 
+or
 
 > ``` { .text .copy }
 > Error cloning certificates repo, please make sure you have read access to the repository you want to use
@@ -369,8 +369,8 @@ There might be several reasons to do this:
 Before you take these steps - ensure all your <code>Secrets</code> are correctly entered. It's worth updating all 6 of them and then trying the 4 actions (validate, add, create and build) one more time before deleting `Match-Secrets`.
 
 !!! question "More than one *GitHub* account"
-    Some people who do a lot of testing have multiple *GitHub* usernames.q
-    
+    Some people who do a lot of testing have multiple *GitHub* usernames.
+
     Record which `Certificate` is associated with your "real" username and then only delete the other `Certificate` when doing testing. You can have a maximum of 2 `Certificates` of each `Type`.
 
 These steps are needed to reset your `Match-Secrets`:
@@ -379,7 +379,7 @@ These steps are needed to reset your `Match-Secrets`:
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 1. Create a new private `Match-Secrets` *Repository*
     * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
-    * dev branch: the Action: Validate Secrets automatically creates a new private `Match-Secrets` repository if you don't have one
+    * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
 1. Delete your old `Distribution Certificates`
     * *Apple* limits you to two `Distribution Certificates`
     * You can no longer use an existing `Distribution Certificate` when you delete your old `Match-Secrets` repository for this *GitHub* username
