@@ -356,13 +356,45 @@ Assuming you have successfully built using the Browser-Build / GitHub method bef
 ![graphic showing failure to install certificate](img/github-error-cert-failed.png){width="500"}
 {align="center"}
 
-## Starting Over
+## Reset `Match-Secrets`
 
 This is not the first thing to try, but sometimes it is the best approach.
 
-!!! danger "Totally Frustrated"
-    The directions on the [GitHub First Time](gh-first-time.md) page have been improved.
+There might be several reasons to do this:
 
-    If you tried this earlier and did not make progress, you can delete the `Match-Secrets` repository and `LoopWorkspace` fork in your GitHub account. Make sure your `Secrets` are all correct and consistent, then start over at [First-Time: Create Match-Secrets](gh-first-time.md#create-match-secrets) and keep going. It will go much faster this time.
+* You tried to build with *GitHub* earlier (before the directions were improved) and were not successful
+* You lost your <code>MATCH_PASSWORD</code>
+* You are a developer who does a lot of testing that requires deleting the `Match-Secrets` *Repository*
+
+Before you take these steps - ensure all your <code>Secrets</code> are correctly entered. It's worth updating all 6 of them and then trying the 4 actions (validate, add, create and build) one more time before deleting `Match-Secrets`.
+
+!!! question "More than one *GitHub* account"
+    Some people who do a lot of testing have multiple *GitHub* usernames.q
     
+    Record which `Certificate` is associated with your "real" username and then only delete the other `Certificate` when doing testing. You can have a maximum of 2 `Certificates` of each `Type`.
+
+These steps are needed to reset your `Match-Secrets`:
+
+1. Delete your `Match-Secrets` Repository
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+1. Create a new private `Match-Secrets` *Repository*
+    * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
+    * dev branch: the Action: Validate Secrets automatically creates a new private `Match-Secrets` repository if you don't have one
+1. Delete your old `Distribution Certificates`
+    * *Apple* limits you to two `Distribution Certificates`
+    * You can no longer use an existing `Distribution Certificate` when you delete your old `Match-Secrets` repository for this *GitHub* username
+    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
+        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
+        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
+    * Click on each `Distribution` `Certificate` and revoke it
+        * You will get an email informing you the certificate was revoked
+1. To create a new `Certificate` the new `Match-Secrets` repository can access
+    * Run the `Action`: `Create Certificates`
+1. You are now ready to run the `Action`: `Build Loop`
+
+!!! important "Other Apps"
+    All DIY iOS apps that have an associated *GitHub* build method require the same 6 <code>Secrets</code>.
+
+    If you add an app to your *GitHub* username (by forking the repository and adding <code>Secrets</code>) and then build it, it uses the same `Match-Secrets` and `Certificates` as the other apps.
+
+    If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build - go ahead and do that now so you don't forget.
