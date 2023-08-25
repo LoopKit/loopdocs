@@ -387,7 +387,7 @@ This is not the first thing to try, but sometimes it is the best approach.
 There might be several reasons to do this:
 
 * You tried to build with *GitHub* earlier (before the directions were improved) and were not successful
-* You lost your <code>MATCH_PASSWORD</code>
+* You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](gh-other-apps.md)
 
 These steps are needed to reset your `Match-Secrets`:
 
@@ -398,12 +398,13 @@ These steps are needed to reset your `Match-Secrets`:
     * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
 1. In your fork of LoopWorkspace:
     * Run the `Action`: `Create Certificates`
-    * If this fails, click on this link and follow those instructions: [Could not create](#could-not-create)
+    * If this fails, click on this link for the most likely error: [Could not create](#could-not-create)
+    * If that doesn't help, check all your <code>Secrets</code> and try again
 1. You are now ready to run the `Action`: `Build Loop`
 
 !!! important "Other Apps"
     All DIY iOS apps that have an associated *GitHub* build method require the same 6 <code>Secrets</code>.
 
-    If you add an app to your *GitHub* username (by forking the repository and adding <code>Secrets</code>) and then build it, it uses the same `Match-Secrets` and `Certificates` as the other apps.
+    If you add an app to your *GitHub* username (by forking the repository and adding <code>Secrets</code>) and then build it, it encrypts your `Certificate` using `MATCH_PASSWORD`.
 
-    If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build - go ahead and do that now so you don't forget.
+    If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
