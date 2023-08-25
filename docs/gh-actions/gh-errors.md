@@ -131,7 +131,7 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 ### Wrong TEAMID in `Secrets`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > error: No profile for team '***' matching 'match AppStore
@@ -196,11 +196,9 @@ Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#c
 
 You should be able to continue with the First Time Steps to `Create Certificates` and then `Build Loop` and keep going.
 
-
-
 ### Missing Repository Access
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
@@ -232,7 +230,32 @@ After you have clicked `Update token` you should see the token overview again wi
 
 You should be able to continue with the [First Time Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
+### `Could not create`
 
+Copy the words on the line below and paste them into the search function for your log file.
+
+> ``` { .text .copy }
+> Could not create another Distribution certificate
+> ```
+
+The full error message includes the phrase `reached the maximum number of available Distribution certificates`.
+
+These steps are needed to make room for a `Certificate`:
+
+1. Delete an old `Distribution Certificate`
+    * *Apple* limits you to two `Distribution Certificates`
+    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
+        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
+        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
+    * Click on the oldest `Distribution` `Certificate` and revoke it
+        * You will get an email informing you the certificate was revoked
+1. To create a new `Certificate`:
+    * Return to *GitHub* and your fork
+    * Run the `Action`: `Create Certificates`
+1. You are now ready to run the `Action`: `Build Loop`
+
+!!! question "But what about *TestFlight* builds?"
+    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
 
 ## Action: `Build Loop` Errors
 
@@ -241,15 +264,16 @@ You should be able to continue with the [First Time Steps to `Create Certificate
 
 Use [Examine the Error](#examine-the-error)
 
-* Download the log archive file and unzip it
-* Open the `1_build.txt` file
-* Search for the phrase below
+* Click on the Action log on GitHub
+* There may be a series of green items followed by a red one
+* Click on the red item to view the error
+* Use the search function in this log to locate your error
 
-For each `Build Loop` Error section below, copy the phrase into the search function of your text editor. If you find it, solve that error. If not, move on to the next one.
+For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
 
 ### `Could not find an app on App Store Connect`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > Could not find an app on App Store Connect
@@ -275,7 +299,7 @@ If that phrase is found, then:
 
 ### `Error: Provisioning Profile`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > error: Provisioning profile "match AppStore
@@ -305,7 +329,7 @@ You must create certificates again before you can build *Loop*:
 
 ### `A new one cannot be created because you enabled`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > A new one cannot be created because you enabled
@@ -364,14 +388,6 @@ There might be several reasons to do this:
 
 * You tried to build with *GitHub* earlier (before the directions were improved) and were not successful
 * You lost your <code>MATCH_PASSWORD</code>
-* You are a developer who does a lot of testing that requires deleting the `Match-Secrets` *Repository*
-
-Before you take these steps - ensure all your <code>Secrets</code> are correctly entered. It's worth updating all 6 of them and then trying the 4 actions (validate, add, create and build) one more time before deleting `Match-Secrets`.
-
-!!! question "More than one *GitHub* account"
-    Some people who do a lot of testing have multiple *GitHub* usernames.
-
-    Record which `Certificate` is associated with your "real" username and then only delete the other `Certificate` when doing testing. You can have a maximum of 2 `Certificates` of each `Type`.
 
 These steps are needed to reset your `Match-Secrets`:
 
@@ -380,16 +396,9 @@ These steps are needed to reset your `Match-Secrets`:
 1. Create a new private `Match-Secrets` *Repository*
     * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
     * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
-1. Delete your old `Distribution Certificates`
-    * *Apple* limits you to two `Distribution Certificates`
-    * You can no longer use an existing `Distribution Certificate` when you delete your old `Match-Secrets` repository for this *GitHub* username
-    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
-        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
-        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
-    * Click on each `Distribution` `Certificate` and revoke it
-        * You will get an email informing you the certificate was revoked
-1. To create a new `Certificate` the new `Match-Secrets` repository can access
+1. In your fork of LoopWorkspace:
     * Run the `Action`: `Create Certificates`
+    * If this fails, click on this link and follow those instructions: [Could not create](#could-not-create)
 1. You are now ready to run the `Action`: `Build Loop`
 
 !!! important "Other Apps"
