@@ -2546,28 +2546,21 @@
 <h3 id="glucose-based-partial-application-gbpa"><code>Glucose Based Partial Application</code> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></li>
-<li>It is only used when <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> (AB) is selected for <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></li>
-<li>This modification <strong>does not affect the recommended dose</strong>, only the speed with which the recommended dose is automatically delivered</li>
+<li>It is only used when <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> (AB) is selected for <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code></li>
+<li>This modification <strong>does not affect the recommended dose</strong>, only how quickly the recommended dose is automatically delivered</li>
 </ul>
 <p>When AB is selected and <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> is enabled, the percentage of the recommended dose delivered per <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)</p>
 <ul>
-<li>Partial Application = 20% when glucose level at or below 10 mg/dL (0.6 mmol/L) above the users correction range lower value (including overrides)</li>
+<li>Partial Application = 20% when glucose is at or below the users correction range lower value (including overrides) plus 10 mg/dL (0.6 mmol/L)</li>
 <li>Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)</li>
 <li>Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)</li>
 </ul>
-<h4 id="insulin-delivery-of-recommended-dose-gbpa">Insulin Delivery of Recommended Dose: <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code><a class="headerlink" href="#insulin-delivery-of-recommended-dose-gbpa" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>New Loopers often have questions on how <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> (AB) delivery works, even when using the default 40% Partial Application Factor. When <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> is enabled, the application factor can change with current glucose level but it's important to remember that the recommended insulin dose does not.</p>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction and recommends an insulin dose based on your settings and your glucose history, <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> and <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr>. The selected <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> (AB with or without <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> or <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code>) only changes how quickly that recommended dose is delivered.</p>
-<p>For this example, we assume <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends 1 U and future glucose values match <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s prediction for each successive 5-minute update. In other words, at the end of about half an hour, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> provides the user with about 1 U of insulin above that delivered by the scheduled basal rate.</p>
-<p>The tables below show an idealized dosing pattern for half an hour using a minimum bolus increment of 0.05 U. The 0 in the Minutes column is when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes that recommendation initially.</p>
-<div class="admonition tip">
-<p class="admonition-title">Ideal Illustration</p>
-<ul>
-<li><strong>In real life, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the prediction</strong> with each new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading and generates a new recommended bolus</li>
-</ul>
-</div>
-<p>The first table shows the <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> amounts delivered each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle (<strong>in this ideal example</strong>) for differing application factors. Notice that boluses for higher application factors start out higher for the first row, but go to zero (indicated by a dash) more quickly as that factor increases.</p>
-<p><em>Incremental Dose (amount given in one cycle) for <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> when initial recommendation is 1 U</em></p>
+<h4 id="insulin-delivery-using-gbpa">Insulin Delivery Using <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code><a class="headerlink" href="#insulin-delivery-using-gbpa" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction and recommends an insulin dose based on your settings and your glucose, insulin and carb history. The selected <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> (<code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> with or without <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> or <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code>) only changes how quickly that recommended dose is delivered.</p>
+<p>This example assumes <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends 1 U (at time 0) and future glucose values match <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s prediction for each successive 5-minute update. In other words, over half an hour, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> provides about 1 U of insulin above that delivered by the scheduled basal rate.</p>
+<p>The tables below show <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> patterns, using a pump minimum bolus increment of 0.05 U, for several application factors. When using <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>, the application factor can vary with glucose, but that is ignored for this <strong>simplified example</strong>.</p>
+<p>The first table shows the bolus delivered each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle for several application factors. Higher application factors start with higher boluses, but go to zero (indicated by a dash) more quickly.</p>
+<p><em>Incremental Dose for several application factors when initial recommendation is 1 U</em></p>
 <table>
 <thead>
 <tr>
@@ -2630,8 +2623,8 @@
 </tr>
 </tbody>
 </table>
-<p>The second table shows the cumulative delivery. For rows after a column reaches 1 U, a dash is inserted into the table to make it obvious that the entire recommended dose was delivered. Remember, <strong>this is a simplified example</strong>.</p>
-<p><em>Cumulative Dose for <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> when initial recommendation is 1 U</em></p>
+<p>The second table shows the cumulative delivery. A dash shows recommended dose was delivered. Remember, <strong>this is a simplified example</strong>.</p>
+<p><em>Cumulative Dose for several application factors when initial recommendation is 1 U</em></p>
 <table>
 <thead>
 <tr>
@@ -2694,64 +2687,8 @@
 </tr>
 </tbody>
 </table>
-<p>But what happened to the 20% and 40% columns - they did not make it to 1 U. That is because we assumed the pump minimum bolus is 0.05 U. For application factors (AF) of 40% or smaller, the requested dose of AF * 0.05 U is smaller than this pump will deliver. (The 60% only reaches 1 U because of special treatment in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> that allows tiny doses down to 0.03 U to be rounded up to 0.05 U.) Don't worry though, in real life, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the recommendation with every <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading and will modify the recommendation as needed.</p>
-<h4 id="insulin-delivery-of-recommended-dose-temp-basal-only">Insulin Delivery of Recommended Dose: <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code><a class="headerlink" href="#insulin-delivery-of-recommended-dose-temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The table below compares <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> of <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> with <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> using 20% partial application factor. This example uses 1 U as the recommended dose. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> increases the scheduled basal by (2 * 1) U/hr for half an hour. Note this is an ideal example ignoring some pump details. For example Medtronic delivers <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> a little sooner than Pods. The difference at 0 minutes highlights that <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> provides the partial dose when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends it, whereas <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> spreads it out.</p>
-<div class="admonition tip">
-<p class="admonition-title">Ideal Illustration</p>
-<ul>
-<li><strong>In real life, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the prediction</strong> with each new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading and generates a new recommended bolus</li>
-<li>If the recommended bolus is negative, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> to restrict insulin delivery</li>
-</ul>
-</div>
-<p><em>Cumulative Dose for <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> and <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> of 20% when initial recommendation is 1 U</em></p>
-<table>
-<thead>
-<tr>
-<th align="right">Minutes</th>
-<th align="right"><code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code></th>
-<th align="right"><code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> 20%</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="right">0</td>
-<td align="right">0.00</td>
-<td align="right">0.20</td>
-</tr>
-<tr>
-<td align="right">5</td>
-<td align="right">0.15</td>
-<td align="right">0.35</td>
-</tr>
-<tr>
-<td align="right">10</td>
-<td align="right">0.30</td>
-<td align="right">0.50</td>
-</tr>
-<tr>
-<td align="right">15</td>
-<td align="right">0.50</td>
-<td align="right">0.60</td>
-</tr>
-<tr>
-<td align="right">20</td>
-<td align="right">0.65</td>
-<td align="right">0.70</td>
-</tr>
-<tr>
-<td align="right">25</td>
-<td align="right">0.80</td>
-<td align="right">0.75</td>
-</tr>
-<tr>
-<td align="right">30</td>
-<td align="right">1.00</td>
-<td align="right">0.80</td>
-</tr>
-</tbody>
-</table>
-<p>The minimum <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> application factor of 20% was selected to be similar to the <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> for lower glucose values. Initially, <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> 20% delivers insulin more quickly but by the end of half an hour, the <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> column delivered more insulin. This is because the basal program inside the pump keeps track of how much is delivered to reach the <strong>rate</strong> requested.</p>
+<p>The 20% and 40% application factor columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The 60% application factor only reached 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.</p>
+<p>The <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the <strong>rate</strong> requested, acheiving the full 1 U (<strong>for this example</strong>).</p>
 <h3 id="integral-retrospective-correction-irc"><code>Integral Retrospective Correction</code> (<code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>):<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed in <a href="https://github.com/LoopKit/Loop/issues/695"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 695</a><ul>
