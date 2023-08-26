@@ -752,8 +752,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#action-verify-secrets-errors" class="md-nav__link">
-    Action: Verify Secrets Errors
+  <a href="#action-validate-secrets-errors" class="md-nav__link">
+    Action: Validate Secrets Errors
   </a>
   
 </li>
@@ -803,6 +803,13 @@
           <li class="md-nav__item">
   <a href="#missing-repository-access" class="md-nav__link">
     Missing Repository Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#could-not-create" class="md-nav__link">
+    Could not create
   </a>
   
 </li>
@@ -867,8 +874,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#starting-over" class="md-nav__link">
-    Starting Over
+  <a href="#reset-match-secrets" class="md-nav__link">
+    Reset Match-Secrets
   </a>
   
 </li>
@@ -2397,8 +2404,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#action-verify-secrets-errors" class="md-nav__link">
-    Action: Verify Secrets Errors
+  <a href="#action-validate-secrets-errors" class="md-nav__link">
+    Action: Validate Secrets Errors
   </a>
   
 </li>
@@ -2448,6 +2455,13 @@
           <li class="md-nav__item">
   <a href="#missing-repository-access" class="md-nav__link">
     Missing Repository Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#could-not-create" class="md-nav__link">
+    Could not create
   </a>
   
 </li>
@@ -2512,8 +2526,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#starting-over" class="md-nav__link">
-    Starting Over
+  <a href="#reset-match-secrets" class="md-nav__link">
+    Reset Match-Secrets
   </a>
   
 </li>
@@ -2535,9 +2549,9 @@
 
   <h1>GitHub Errors</h1>
 
-<h2 id="github-build-method-errors"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="github-build-method-errors"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Build Method Errors<a class="headerlink" href="#github-build-method-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update <em>LoopDocs</em> to make it easier for the next person to succeed without errors.</p>
-<p>If you've been around <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for a while, you know the mantra about screenshots. Well, for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Action failures, <strong>screenshots are close to useless</strong>. If you get an error with a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action</em>, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your <code>GitHub Action</code> log files directly.</p>
+<p>If you've been around <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for a while, you know the mantra about screenshots. Well, for <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Build Action failures, <strong>screenshots are close to useless</strong>. If you get an error with a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Action</em>, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your <strong><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username</strong>. Mentors can go to your public <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> - check that your <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date and then view your <code>GitHub Action</code> log files directly.</p>
 <p>But first - try to diagnose it yourself using this page.</p>
 <h2 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These are some of the most common errors to date.</p>
@@ -2567,7 +2581,7 @@
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a separate section for each step in the process. First, you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.</p>
 <ol>
-<li><a href="#action-verify-secrets-errors">Action: <code>Verify Secrets</code></a></li>
+<li><a href="#action-validate-secrets-errors">Action: <code>Validate Secrets</code></a></li>
 <li><a href="#action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors</a></li>
 <li><a href="#action-create-certificates-errors">Action: <code>Create Certificates</code> Errors</a></li>
 <li><a href="#action-build-loop-errors">Action: <code>Build Loop</code> Errors</a> before a successful build</li>
@@ -2592,10 +2606,10 @@
 </li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Where to find my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username?</p>
+<p class="admonition-title">Where to find my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username?</p>
 <p>You can find it:</p>
 <ul>
-<li>either in the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>Loopworkspace</code>, after <code>github.com</code> in between the forward slashes (<code>/</code>).<br />
+<li>either in the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>Loopworkspace</code>, after <code>github.com</code> in between the forward slashes (<code>/</code>).
    https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/<mark>username</mark>/Loopworkspace</li>
 <li>
 <p>or on the <a href="https://github.com"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> website</a></p>
@@ -2604,9 +2618,9 @@
 <p><img alt="Find your GitHub username step 3" src="../img/github-username-3.svg" width="400" /></p>
 </li>
 </ul>
-<p>As your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code> is case-sensitive, use copy and paste.</p>
+<p>As your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>username</code> is case-sensitive, use copy and paste.</p>
 </div>
-<h2 id="action-verify-secrets-errors">Action: <code>Verify Secrets</code> Errors<a class="headerlink" href="#action-verify-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="action-validate-secrets-errors">Action: <code>Validate Secrets</code> Errors<a class="headerlink" href="#action-validate-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>A new action was added with <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 3.1 to provide better error messages if something is wrong with your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em>. In addition, the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are numbered to match the order in which they should be applied.</p>
 <p align="left"><img alt="actions shown for Loop 3.1 and newer versions" src="../img/gh-actions-3.1.png" width="200" /></p>
 <p>To generate the graphic below, some items were deliberately set to be incorrect in the <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> list. Representative error messages are shown when running the validate secrets action.</p>
@@ -2643,7 +2657,7 @@
 <h2 id="action-create-certificates-errors">Action: <code>Create Certificates</code> Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <h3 id="wrong-teamid-in-secrets">Wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in <code>Secrets</code><a class="headerlink" href="#wrong-teamid-in-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>error: No profile for team &#39;***&#39; matching &#39;match AppStore
 </code></pre></div>
@@ -2714,12 +2728,12 @@
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the First Time Steps to <code>Create Certificates</code> and then <code>Build Loop</code> and keep going.</p>
 <h3 id="missing-repository-access">Missing Repository Access<a class="headerlink" href="#missing-repository-access" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
 </code></pre></div>
 </blockquote>
-<p>or </p>
+<p>or</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>Error cloning certificates repo, please make sure you have read access to the repository you want to use
 </code></pre></div>
@@ -2728,7 +2742,7 @@
 <p>To fix this error:</p>
 <ul>
 <li>Open this link: <a href="https://github.com/settings/tokens/">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/</a></li>
-<li>Here you will see your personal access token (<code>Fastlane Access Token</code>) that was created during <a href="../gh-first-time/#create-github-personal-access-token">First Time: Setup <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>: Create <code>GitHub Personal Access Token</code></a></li>
+<li>Here you will see your personal access token (<code>Fastlane Access Token</code>) that was created during <a href="../gh-first-time/#create-github-personal-access-token">First Time: Setup <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>: Create <code>GitHub Personal Access Token</code></a></li>
 <li>Note that <code>Tokens (classic)</code> is highlighted in the menu on the left</li>
 <li>Click on the token name (should be bold, blue <strong><code>Fastlane Access Token</code></strong> ) to open its detail page</li>
 <li>None of the checkboxes under <strong><code>Select Scopes</code></strong> will be checked – this is what's causing the issue.</li>
@@ -2739,6 +2753,39 @@
 <p>After you have clicked <code>Update token</code> you should see the token overview again with the message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the <code>X</code> near the upper right side if it appears).</p>
 <h4 id="create-certificates_1">Create Certificates<a class="headerlink" href="#create-certificates_1" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">First Time Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
+<h3 id="could-not-create"><code>Could not create</code><a class="headerlink" href="#could-not-create" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your log file.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Could not create another Distribution certificate
+</code></pre></div>
+</blockquote>
+<p>The full error message includes the phrase <code>reached the maximum number of available Distribution certificates</code>.</p>
+<p>These steps are needed to make room for a <code>Certificate</code>:</p>
+<ol>
+<li>Delete an old <code>Distribution Certificate</code><ul>
+<li><em>Apple</em> limits you to two <code>Distribution Certificates</code></li>
+<li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list">Apple Developer Certificates</a><ul>
+<li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a <code>Development</code> <code>Certificate</code></li>
+<li>If you accidentally delete a <code>Development</code> <code>Type</code> certificate associated with an <abbr title="program used to build an app">Xcode</abbr> build for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app - it will stop working and you will be very sad</li>
+</ul>
+</li>
+<li>Click on the oldest <code>Distribution</code> <code>Certificate</code> and revoke it<ul>
+<li>You will get an email informing you the certificate was revoked</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>To create a new <code>Certificate</code>:<ul>
+<li>Return to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and your <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Run the <code>Action</code>: <code>Create Certificates</code></li>
+</ul>
+</li>
+<li>You are now ready to run the <code>Action</code>: <code>Build Loop</code></li>
+</ol>
+<div class="admonition question">
+<p class="admonition-title">But what about <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds?</p>
+<p>Previous builds using this method that are already in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are not affected by deleting the <code>Distribution Certificate</code>.</p>
+</div>
 <h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Run <code>Create Certificates</code> First</p>
@@ -2746,13 +2793,14 @@
 </div>
 <p>Use <a href="#examine-the-error">Examine the Error</a></p>
 <ul>
-<li>Download the log archive file and unzip it</li>
-<li>Open the <code>1_build.txt</code> file</li>
-<li>Search for the phrase below</li>
+<li>Click on the Action log on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></li>
+<li>There may be a series of green items followed by a red one</li>
+<li>Click on the red item to view the error</li>
+<li>Use the search function in this log to locate your error</li>
 </ul>
-<p>For each <code>Build Loop</code> Error section below, copy the phrase into the search function of your text editor. If you find it, solve that error. If not, move on to the next one.</p>
+<p>For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.</p>
 <h3 id="could-not-find-an-app-on-app-store-connect"><code>Could not find an app on App Store Connect</code><a class="headerlink" href="#could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>Could not find an app on App Store Connect
 </code></pre></div>
@@ -2788,7 +2836,7 @@
 </li>
 </ul>
 <h3 id="error-provisioning-profile"><code>Error: Provisioning Profile</code><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>error: Provisioning profile &quot;match AppStore
 </code></pre></div>
@@ -2810,7 +2858,7 @@
 <li>Action: <code>Build Loop</code></li>
 </ul>
 <h3 id="a-new-one-cannot-be-created-because-you-enabled"><code>A new one cannot be created because you enabled</code><a class="headerlink" href="#a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste them into the search function for your text editor.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>A new one cannot be created because you enabled
 </code></pre></div>
@@ -2843,7 +2891,7 @@
 <p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <h3 id="could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code><a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Assuming you have successfully built using the Browser-Build / <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method before:</p>
+<p>Assuming you have successfully built using the Browser-Build / <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> method before:</p>
 <ul>
 <li>If the details show this message, <code>Could not install WWDR certificate</code>, make sure your <a href="https://developer.apple.com"><em>Apple developer</em> account</a> is in good standing and that there are no agreements that need to be accepted</li>
 <li>Sometimes this is a sign that <em>Apple</em> did not respond to a request, this failure happens in the first few minutes<ul>
@@ -2852,15 +2900,37 @@
 </li>
 </ul>
 <p align="center"><img alt="graphic showing failure to install certificate" src="../img/github-error-cert-failed.png" width="500" /></p>
-<h2 id="starting-over">Starting Over<a class="headerlink" href="#starting-over" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h2 id="reset-match-secrets">Reset <code>Match-Secrets</code><a class="headerlink" href="#reset-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is not the first thing to try, but sometimes it is the best approach.</p>
-<div class="admonition danger">
-<p class="admonition-title">Totally Frustrated</p>
-<p>The directions on the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First Time</a> page have been improved.</p>
-<p>If you tried this earlier and did not make progress, you can delete the <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> and <code>LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. Make sure your <code>Secrets</code> are all correct and consistent, then start over at <a href="../gh-first-time/#create-match-secrets">First-Time: Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a> and keep going. It will go much faster this time.</p>
+<p>There might be several reasons to do this:</p>
 <ul>
+<li>You tried to build with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> earlier (before the directions were improved) and were not successful</li>
+<li>You lost your <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> and want to build one of the <a href="../gh-other-apps/">Other Apps</a></li>
+</ul>
+<p>These steps are needed to reset your <code>Match-Secrets</code>:</p>
+<ol>
+<li>Delete your <code>Match-Secrets</code> Repository<ul>
 <li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
 </ul>
+</li>
+<li>Create a new private <code>Match-Secrets</code> <em>Repository</em><ul>
+<li>main <abbr title="version of code within a single repository or workspace repository">branch</abbr>: follow the directions <a href="../gh-first-time/#create-match-secrets">First-Time: Create <code>Match-Secrets</code></a></li>
+<li>dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>: the <code>Action</code>: <code>Validate Secrets</code> automatically creates a new private <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> if you don't have one</li>
+</ul>
+</li>
+<li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
+<li>Run the <code>Action</code>: <code>Create Certificates</code></li>
+<li>If this fails, click on this link for the most likely error: <a href="#could-not-create">Could not create</a></li>
+<li>If that doesn't help, check all your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and try again</li>
+</ul>
+</li>
+<li>You are now ready to run the <code>Action</code>: <code>Build Loop</code></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Other Apps</p>
+<p>All <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> apps that have an associated <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> build method require the same 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
+<p>If you add an app to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username (by forking the <abbr title="contains project files and each file's revision history">repository</abbr> and adding <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>) and then build it, it encrypts your <code>Certificate</code> using <code>MATCH_PASSWORD</code>.</p>
+<p>If you already have the other apps configured and then you delete <code>Match-Secrets</code> and add a new one, you will need to run <code>Create Certificates</code> for each app before the next time you build each app - go ahead and do that now so you don't forget.</p>
 </div>
 
 
