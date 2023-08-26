@@ -767,15 +767,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#authentication-credentials-are-missing-or-invalid" class="md-nav__link">
-    Authentication credentials are missing or invalid
+  <a href="#error-credentials-missing-invalid" class="md-nav__link">
+    Error: credentials missing / invalid
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#invalid-curve-name" class="md-nav__link">
-    Invalid curve name
+  <a href="#error-invalid-curve-name" class="md-nav__link">
+    Error: Invalid curve name
   </a>
   
 </li>
@@ -794,22 +794,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wrong-teamid-in-secrets" class="md-nav__link">
-    Wrong TEAMID in Secrets
+  <a href="#error-wrong-teamid-in-secrets" class="md-nav__link">
+    Error: Wrong TEAMID in Secrets
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#missing-repository-access" class="md-nav__link">
-    Missing Repository Access
+  <a href="#error-missing-repository-access" class="md-nav__link">
+    Error: Missing Repository Access
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#could-not-create" class="md-nav__link">
-    Could not create
+  <a href="#error-could-not-create" class="md-nav__link">
+    Error: Could not create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-could-not-decrypt" class="md-nav__link">
+    Error: Could not decrypt
   </a>
   
 </li>
@@ -2419,15 +2426,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#authentication-credentials-are-missing-or-invalid" class="md-nav__link">
-    Authentication credentials are missing or invalid
+  <a href="#error-credentials-missing-invalid" class="md-nav__link">
+    Error: credentials missing / invalid
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#invalid-curve-name" class="md-nav__link">
-    Invalid curve name
+  <a href="#error-invalid-curve-name" class="md-nav__link">
+    Error: Invalid curve name
   </a>
   
 </li>
@@ -2446,22 +2453,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wrong-teamid-in-secrets" class="md-nav__link">
-    Wrong TEAMID in Secrets
+  <a href="#error-wrong-teamid-in-secrets" class="md-nav__link">
+    Error: Wrong TEAMID in Secrets
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#missing-repository-access" class="md-nav__link">
-    Missing Repository Access
+  <a href="#error-missing-repository-access" class="md-nav__link">
+    Error: Missing Repository Access
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#could-not-create" class="md-nav__link">
-    Could not create
+  <a href="#error-could-not-create" class="md-nav__link">
+    Error: Could not create
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-could-not-decrypt" class="md-nav__link">
+    Error: Could not decrypt
   </a>
   
 </li>
@@ -2628,11 +2642,15 @@
 <h2 id="action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
 <p>There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.</p>
-<h3 id="authentication-credentials-are-missing-or-invalid"><code>Authentication credentials are missing or invalid</code><a class="headerlink" href="#authentication-credentials-are-missing-or-invalid" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you see:</p>
+<h3 id="error-credentials-missing-invalid">Error: credentials missing / invalid<a class="headerlink" href="#error-credentials-missing-invalid" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
-<div class="copy highlight"><pre><span></span><code>Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+<div class="copy highlight"><pre><span></span><code>Authentication credentials are missing or invalid
 </code></pre></div>
+</blockquote>
+<p>The full error looks like this:</p>
+<blockquote>
+<p>Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating <abbr title="on Nightscout, configure access permissions using tokens">Tokens</abbr> for <abbr title="Application Programming Interface">API</abbr> Requests https://developer.apple.com/go/?id=api-generating-tokens`</p>
 </blockquote>
 <p>This can be caused by an error in the value (or spelling) of one of these keys:</p>
 <ul>
@@ -2646,7 +2664,7 @@
 <p>If you used a "smart" editor when saving your <em><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></em> in an archive file before pasting them into the <abbr title="contains project files and each file's revision history">repository</abbr> <code>Secrets</code>, it might have changed a lowercase letter to an uppercase letter.</p>
 <p>If even one character is capitalized when it should not be, you will not succeed at the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> step.</p>
 </div>
-<h3 id="invalid-curve-name"><code>Invalid curve name</code><a class="headerlink" href="#invalid-curve-name" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-invalid-curve-name">Error: <code>Invalid curve name</code><a class="headerlink" href="#error-invalid-curve-name" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you see:</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>invalid curve name
@@ -2656,7 +2674,7 @@
 <p>Make sure you copy in a text editor from the first hyphen to the last hyphen.</p>
 <h2 id="action-create-certificates-errors">Action: <code>Create Certificates</code> Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
-<h3 id="wrong-teamid-in-secrets">Wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in <code>Secrets</code><a class="headerlink" href="#wrong-teamid-in-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-wrong-teamid-in-secrets">Error: Wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in <code>Secrets</code><a class="headerlink" href="#error-wrong-teamid-in-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>error: No profile for team &#39;***&#39; matching &#39;match AppStore
@@ -2680,7 +2698,8 @@
 <li>
 <p>Delete all the identifiers that you can, following the steps in <a href="../gh-first-time/#delete-identifiers">First Time: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
 <ul>
-<li>You will not be able to delete the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier with the wrong <code>TEAMID</code>, but don't worry about it</li>
+<li>Delete all the other identifiers first, then try to delete the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier with the wrong <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code></li>
+<li>It is fine to just ignore identifiers with the wrong <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code>, but do not use them</li>
 </ul>
 </li>
 <li>
@@ -2727,16 +2746,19 @@
 </ul>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the First Time Steps to <code>Create Certificates</code> and then <code>Build Loop</code> and keep going.</p>
-<h3 id="missing-repository-access">Missing Repository Access<a class="headerlink" href="#missing-repository-access" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-missing-repository-access">Error: Missing Repository Access<a class="headerlink" href="#error-missing-repository-access" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
-<div class="copy highlight"><pre><span></span><code>Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
+<div class="copy highlight"><pre><span></span><code>Error cloning certificates
 </code></pre></div>
+</blockquote>
+<p>The full error looks like this:</p>
+<blockquote>
+<p>Error cloning certificates repo, please make sure you have read access to the <abbr title="contains project files and each file's revision history">repository</abbr> you want to use</p>
 </blockquote>
 <p>or</p>
 <blockquote>
-<div class="copy highlight"><pre><span></span><code>Error cloning certificates repo, please make sure you have read access to the repository you want to use
-</code></pre></div>
+<p>Error cloning certificates <abbr title="a tool for version control">git</abbr> repo, please make sure you have access to the <abbr title="contains project files and each file's revision history">repository</abbr> - see instructions above</p>
 </blockquote>
 <p>If you see this phrase, the <code>fastlane</code> package that is utilized during the <code>3. Create Certificates</code> action cannot access your <abbr title="contains project files and each file's revision history">repository</abbr> to create certificates for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. This is due to insufficient <abbr title="contains project files and each file's revision history">repository</abbr> access rights that were not granted during the creation of your <code>GH_PAT</code> token.</p>
 <p>To fix this error:</p>
@@ -2746,20 +2768,24 @@
 <li>Note that <code>Tokens (classic)</code> is highlighted in the menu on the left</li>
 <li>Click on the token name (should be bold, blue <strong><code>Fastlane Access Token</code></strong> ) to open its detail page</li>
 <li>None of the checkboxes under <strong><code>Select Scopes</code></strong> will be checked – this is what's causing the issue.</li>
-<li>Add a check beside the <code>repo</code> permission scope (see the red circled checkbox in the graphic)</li>
+<li>Add a check beside the <code>workflow</code> permission scope (the graphic does not match the words, you want to use <code>workflow</code> to get both <code>repo</code> and <code>workflow</code> scope)</li>
 <li>Scroll all the way to the bottom and click <code>Update token</code> (it's a long way, ignore all other settings, do not check anything else)</li>
 </ul>
 <p><img alt="graphic showing missing repo scope with circled checkbox that user must check" src="../img/gh-missing-repo-scope.png" width="700" /></p>
 <p>After you have clicked <code>Update token</code> you should see the token overview again with the message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the <code>X</code> near the upper right side if it appears).</p>
+<p>NOTE: for next release or if using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> - you want <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> to have <code>repo, workflow</code> scope. So click on the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> scope now and save yourself a step later.</p>
 <h4 id="create-certificates_1">Create Certificates<a class="headerlink" href="#create-certificates_1" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">First Time Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
-<h3 id="could-not-create"><code>Could not create</code><a class="headerlink" href="#could-not-create" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="error-could-not-create">Error: Could not create<a class="headerlink" href="#error-could-not-create" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your log file.</p>
 <blockquote>
 <div class="copy highlight"><pre><span></span><code>Could not create another Distribution certificate
 </code></pre></div>
 </blockquote>
-<p>The full error message includes the phrase <code>reached the maximum number of available Distribution certificates</code>.</p>
+<p>The full error message is:</p>
+<blockquote>
+<p><code>Could not create another Distribution certificate, reached the maximum number of available Distribution certificates</code></p>
+</blockquote>
 <p>These steps are needed to make room for a <code>Certificate</code>:</p>
 <ol>
 <li>Delete an old <code>Distribution Certificate</code><ul>
@@ -2786,6 +2812,18 @@
 <p class="admonition-title">But what about <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds?</p>
 <p>Previous builds using this method that are already in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are not affected by deleting the <code>Distribution Certificate</code>.</p>
 </div>
+<h3 id="error-could-not-decrypt">Error: Could not decrypt<a class="headerlink" href="#error-could-not-decrypt" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your log file.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>decrypt the repo
+</code></pre></div>
+</blockquote>
+<p>The full error message is:</p>
+<blockquote>
+<p><code>Couldn't decrypt the repo, please make sure you enter the right password</code></p>
+</blockquote>
+<p>If you know you entered the incorrect <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> in your <abbr title="contains project files and each file's revision history">repository</abbr> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, go and fix it now and try again.</p>
+<p>Otherwise, you need to follow the steps to <a href="#reset-match-secrets">Reset <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a>.</p>
 <h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Run <code>Create Certificates</code> First</p>
@@ -2906,6 +2944,7 @@
 <ul>
 <li>You tried to build with <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> earlier (before the directions were improved) and were not successful</li>
 <li>You lost your <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> and want to build one of the <a href="../gh-other-apps/">Other Apps</a></li>
+<li>You thought you entered the correct <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> but you are getting <a href="#error-could-not-decrypt">Error: Could not decrypt</a></li>
 </ul>
 <p>These steps are needed to reset your <code>Match-Secrets</code>:</p>
 <ol>
@@ -2920,7 +2959,7 @@
 </li>
 <li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
 <li>Run the <code>Action</code>: <code>Create Certificates</code></li>
-<li>If this fails, click on this link for the most likely error: <a href="#could-not-create">Could not create</a></li>
+<li>If this fails, click on this link for the most likely <a href="#error-could-not-create">Error: Could not create</a></li>
 <li>If that doesn't help, check all your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and try again</li>
 </ul>
 </li>
