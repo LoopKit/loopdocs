@@ -54,11 +54,11 @@ Loop makes a prediction and recommends an insulin dose based on your settings an
 
 This example assumes Loop recommends 1 U (at time 0) and future glucose values match Loop's prediction for each successive 5-minute update. In other words, over half an hour, Loop provides about 1 U of insulin above that delivered by the scheduled basal rate.
 
-The tables below show Automatic Bolus patterns, using a pump minimum bolus increment of 0.05 U.
+The tables below show Automatic Bolus patterns, using a pump minimum bolus increment of 0.05 U, for several application factors. When using <code>GBPA</code>, the application factor can vary with glucose, but that is ignored for this **simplified example**.
 
-The first table shows the bolus delivered each Loop cycle (**in this ideal example**) for several GBPA application factors. Higher application factors start with higher boluses, but go to zero (indicated by a dash) more quickly.
+The first table shows the bolus delivered each Loop cycle for several application factors. Higher application factors start with higher boluses, but go to zero (indicated by a dash) more quickly.
 
-_<code>GBPA</code> Incremental Dose (amount given in one cycle) when initial recommendation is 1 U_
+_Incremental Dose for several application factors when initial recommendation is 1 U_
 
 | Minutes | 20% | 40% | 60% | 80% |
 |--:|--:|--:|--:|--:|
@@ -72,7 +72,7 @@ _<code>GBPA</code> Incremental Dose (amount given in one cycle) when initial rec
 
 The second table shows the cumulative delivery. A dash shows recommended dose was delivered. Remember, **this is a simplified example**.
 
-_<code>GBPA</code> Cumulative Dose when initial recommendation is 1 U_
+_Cumulative Dose for several application factors when initial recommendation is 1 U_
 
 | Minutes | 20% | 40% | 60% | 80% |
 |--:|--:|--:|--:|--:|
