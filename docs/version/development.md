@@ -84,7 +84,7 @@ _Cumulative Dose for several application factors when initial recommendation is 
 |25|0.75|0.95|  - |  - |
 |30|0.80|0.95|  - |  - |
 
-The 20% and 40% columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The <code>GBPA</code> of 60% only reaches 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.
+The 20% and 40% application factor columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The 60% application factor only reached 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.
 
 The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code>GBPA</code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code>Temp Basal Only</code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
 
