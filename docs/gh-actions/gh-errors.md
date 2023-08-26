@@ -92,13 +92,19 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.
 
-### `Authentication credentials are missing or invalid`
+### Error: credentials missing / invalid
 
-If you see:
+Copy the words on the line below and paste them into the search function for your action log.
+
 
 > ``` { .text .copy }
-> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+> Authentication credentials are missing or invalid
 > ```
+
+The full error looks like this:
+
+> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+
 
 This can be caused by an error in the value (or spelling) of one of these keys:
 
@@ -112,7 +118,7 @@ This can be caused by an error in the value (or spelling) of one of these keys:
 
     If even one character is capitalized when it should not be, you will not succeed at the Add Identifiers step.
 
-### `Invalid curve name`
+### Error: `Invalid curve name`
 
 If you see:
 
@@ -129,7 +135,7 @@ Make sure you copy in a text editor from the first hyphen to the last hyphen.
 
 Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
-### Wrong TEAMID in `Secrets`
+### Error: Wrong TEAMID in `Secrets`
 
 Copy the words on the line below and paste them into the search function for your action log.
 
@@ -150,7 +156,8 @@ Follow these steps:
     It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.
 
 1. Delete all the identifiers that you can, following the steps in [First Time: Delete Identifiers](gh-first-time.md#delete-identifiers)
-    - You will not be able to delete the *Loop* identifier with the wrong `TEAMID`, but don't worry about it
+    - Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
+    - It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
 
 1. Enter your `TEAMID` correctly in the repository `Secrets`
     - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership) page for that `TEAMID`.
@@ -196,19 +203,21 @@ Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#c
 
 You should be able to continue with the First Time Steps to `Create Certificates` and then `Build Loop` and keep going.
 
-### Missing Repository Access
+### Error: Missing Repository Access
 
 Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
-> Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
+> Error cloning certificates
 > ```
+
+The full error looks like this:
+
+> Error cloning certificates repo, please make sure you have read access to the repository you want to use
 
 or
 
-> ``` { .text .copy }
-> Error cloning certificates repo, please make sure you have read access to the repository you want to use
-> ```
+> Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
 
 If you see this phrase, the `fastlane` package that is utilized during the `3. Create Certificates` action cannot access your repository to create certificates for your *Loop* app. This is due to insufficient repository access rights that were not granted during the creation of your `GH_PAT` token.
 
@@ -219,18 +228,20 @@ To fix this error:
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
-  - Add a check beside the `repo` permission scope (see the red circled checkbox in the graphic)
+  - Add a check beside the `workflow` permission scope (the graphic does not match the words, you want to use `workflow` to get both `repo` and `workflow` scope)
   - Scroll all the way to the bottom and click `Update token` (it's a long way, ignore all other settings, do not check anything else)
 
 ![graphic showing missing repo scope with circled checkbox that user must check](img/gh-missing-repo-scope.png){width=700}
 
 After you have clicked `Update token` you should see the token overview again with the message `Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved. ` (You can dismiss the message using the `X` near the upper right side if it appears).
 
+NOTE: for next release or if using the dev branch - you want <code>GH_PAT</code> to have `repo, workflow` scope. So click on the workflow scope now and save yourself a step later.
+
 #### Create Certificates
 
 You should be able to continue with the [First Time Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
-### `Could not create`
+### Error: Could not create
 
 Copy the words on the line below and paste them into the search function for your log file.
 
@@ -238,7 +249,9 @@ Copy the words on the line below and paste them into the search function for you
 > Could not create another Distribution certificate
 > ```
 
-The full error message includes the phrase `reached the maximum number of available Distribution certificates`.
+The full error message is:
+
+> `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
 
 These steps are needed to make room for a `Certificate`:
 
@@ -256,6 +269,22 @@ These steps are needed to make room for a `Certificate`:
 
 !!! question "But what about *TestFlight* builds?"
     Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
+
+### Error: Could not decrypt
+
+Copy the words on the line below and paste them into the search function for your log file.
+
+> ``` { .text .copy }
+> decrypt the repo
+> ```
+
+The full error message is:
+
+> `Couldn't decrypt the repo, please make sure you enter the right password`
+
+If you know you entered the incorrect <code>MATCH_PASSWORD</code> in your repository <code>Secrets</code>, go and fix it now and try again.
+
+Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-secrets).
 
 ## Action: `Build Loop` Errors
 
@@ -388,6 +417,7 @@ There might be several reasons to do this:
 
 * You tried to build with *GitHub* earlier (before the directions were improved) and were not successful
 * You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](gh-other-apps.md)
+* You thought you entered the correct <code>MATCH_PASSWORD</code> but you are getting [Error: Could not decrypt](#error-could-not-decrypt)
 
 These steps are needed to reset your `Match-Secrets`:
 
@@ -398,7 +428,7 @@ These steps are needed to reset your `Match-Secrets`:
     * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
 1. In your fork of LoopWorkspace:
     * Run the `Action`: `Create Certificates`
-    * If this fails, click on this link for the most likely error: [Could not create](#could-not-create)
+    * If this fails, click on this link for the most likely [Error: Could not create](#error-could-not-create)
     * If that doesn't help, check all your <code>Secrets</code> and try again
 1. You are now ready to run the `Action`: `Build Loop`
 
