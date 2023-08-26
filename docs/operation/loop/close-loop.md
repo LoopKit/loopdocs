@@ -50,7 +50,7 @@ This is definitely an area where YDMV (your diabetes may vary), so don't expect 
 
 ## Automated Dosing
 
-Loop calculates a predicted glucose curve based on your programmed settings for carb ratio (CR) and insulin sensitivity factor (ISF), using your glucose, insulin and entered carbs history. 
+Loop calculates a predicted glucose curve based on your programmed settings for carb ratio (CR) and insulin sensitivity factor (ISF), using your glucose, insulin and carb history. 
 
 If you enter a bolus without entering carbs, the prediction will be for your glucose to go low. (The Loop model calculates a negative number for recommended bolus.) For this case, Loop issues a Temp Basal to prevent the low, typically 0.0 U/hr but always less than your scheduled basal rate.
 
@@ -65,6 +65,6 @@ If you enter carbs and select `Save without bolusing`, you have COB without asso
     
     It is actually easier to answer when Loop will **not** automatically increase insulin delivery:
     
-    * If at any time in the next 3 hours, Loop predicts glucose below `Glucose Safety Limit`, Temp Basal is immediately set to 0.0 U/hr and recommended bolus is 0 U
+    * If at any time in the next 3 hours, Loop predicts glucose below `Glucose Safety Limit`, Temp Basal is immediately set to 0.0 U/hr and recommended bolus is set 0 U
     * If the eventual glucose (at the end of 6 hours) is greater than your `Correction Range` but the prediction dips below the low-end of your `Correction Range`, there is no automatic delivery
         * The recommended bolus can be positive, which you see if you tap on bolus icon manually
