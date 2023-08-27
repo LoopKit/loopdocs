@@ -1,60 +1,60 @@
-## Loop Development
+## <span translate="no">Loop</span>&nbsp; Development
 
-The early history of Loop was touched on in the introductory [LoopDocs Overview: Development History](../intro/overview-intro.md#development-history) section.
+The early history of *Loop* was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history) section.
 
-The [Loop Releases](../version/releases.md) page lists releases since version 2.0 in reverse chronological order.
+The [*Loop* Releases](../version/releases.md) page lists releases since version 2.0 in reverse chronological order.
 
-The next version of Loop is developed using branch(es), independent of the released Loop version, which is found in the main branch. The dev branch is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor annoucements and provide feedback, and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of Loop is improved.
+The next version of *Loop* is developed using branch(es), independent of the released *Loop* version, which is found in <span>the `main` branch</span>. <span>The `dev` branch</span> is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of *Loop* is improved.
 
-If you choose to use dev, you accept that this code is not released.
+If you choose to use `dev`, you accept that this code is not released.
 
-Please read this entire page before using any version of Loop other than the released code.
+Please read this entire page before using any version of *Loop* other than the released code.
 
 ## Updates in dev
 
-This section is an early look at what has been added to dev since Loop 3.2.x and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [Releases](releases.md) page or the appropriate documentation section.
+This section is an early look at what has been added to `dev` since *&nbsp;<span translate="no">Loop 3.2.x</span>*&nbsp; and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [`Releases`](releases.md) page or the appropriate documentation section.
 
-### Support for Libre Sensors
+### <span>Support for <code>Libre</code> Sensors</span>
 
-[LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was merged into dev in July 2023.
+[LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was <span>merged into the `dev` branch</span> in July 2023.
 
-If you are using the GitHub Browser Build, please review: 
+If you are using the *GitHub* / *Browser Build* method, please review: 
 
 * [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
 ### Simulators for Pump and CGM
 
-The simulators for the Pump and CGM for dev show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, to modify settings and to delete the simulator, you must press and hold (long-press) on the top of the display. Any where in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to main Loop screen, return to simulator screen and try again.
+The simulators for the Pump and CGM, for the `dev` branch show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, modify settings, and delete the simulator, you must press and hold (long-press) on the top of the display. Anywhere in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to Loop&#39;s main screen, go back to the simulator screen, and try again.
 
 ![use long press example for pump](img/long-press-to-adjust-simulator.jpg){width="500"}
 {align="center"}
 
-### Algorithm Experiments
+### <code>Algorithm Experiments</code>
 
-Two algorithm experiments have been added to dev. These are `Glucose Based Partial Application` and `Integral Retrospective Correction`. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added to `dev`. These are `Glucose Based Partial Application` and `Integral Retrospective Correction`. They can be viewed on <span>Loop&#39;s `Settings`</span> screen, just below `Therapy Settings` and `Usage Data Sharing` as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
 
 ### `Glucose Based Partial Application` (<code>GBPA</code>):
 
-* Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
+* Originally proposed in [Pull-Request 1988](https://github.com/LoopKit/Loop/pull/1988) for *Loop*.
 * It is only used when <code>Automatic Bolus</code> (AB) is selected for <code>Dosing Strategy</code>
 * This modification **does not affect the recommended dose**, only how quickly the recommended dose is automatically delivered
 
-When AB is selected and <code>GBPA</code> is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code>GBPA</code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)
+When `AB` is selected and <code>GBPA</code> is enabled, the percentage of the recommended dose delivered per cycle of &nbsp;<span translate="no">Loop</span>&nbsp; ranges from 20% to 80% based on glucose level and user-selected correction range. (Without <code>GBPA</code> enabled, <code>AB</code> uses a fixed 40% percentage regardless of glucose level.)
 
-* Partial Application = 20% when glucose is at or below the users correction range lower value (including overrides) plus 10 mg/dL (0.6 mmol/L)
-* Partial Application increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
-* Partial Application is 80% when glucose level is above 200 mg/dL (11.1 mmol/L)
+* `Partial Application` = 20% when glucose is at or below the users correction range lower value (including overrides) plus 10 mg/dL (0.6 mmol/L)
+* `Partial Application` increases linearly from 20% to 80% up to a glucose level of 200 mg/dL (11.1 mmol/L)
+* `Partial Application` is 80% when the glucose level is above 200 mg/dL (11.1 mmol/L)
 
 #### Insulin Delivery Using <code>GBPA</code>
 
-Loop makes a prediction and recommends an insulin dose based on your settings and your glucose, insulin and carb history. The selected <code>Dosing Strategy</code> (<code>Automatic Bolus</code> with or without <code>GBPA</code> or <code>Temp Basal Only</code>) only changes how quickly that recommended dose is delivered.
+*Loop* makes a prediction and recommends an insulin dose based on your settings and your glucose, insulin and carb history. The selected <code>Dosing Strategy</code> (<code>Automatic Bolus</code> with or without <code>GBPA</code> or <code>Temp Basal Only</code>) only changes how quickly that recommended dose is delivered.
 
-This example assumes Loop recommends 1 U (at time 0) and future glucose values match Loop's prediction for each successive 5-minute update. In other words, over half an hour, Loop provides about 1 U of insulin above that delivered by the scheduled basal rate.
+This example assumes Loop recommends 1 U (at time 0) and future glucose values match Loop&#39;s prediction for each successive 5-minute update. In other words, over half an hour, Loop provides about 1 U of insulin above that delivered by the scheduled basal rate.
 
-The tables below show Automatic Bolus patterns, using a pump minimum bolus increment of 0.05 U, for several application factors. When using <code>GBPA</code>, the application factor can vary with glucose, but that is ignored for this **simplified example**.
+The tables below show `Automatic Bolus` patterns, using a pump minimum bolus increment of 0.05 U, for several application factors. When using <code>GBPA</code>, the application factor can vary with glucose, but that is ignored for this **simplified example**.
 
 The first table shows the bolus delivered each Loop cycle for several application factors. Higher application factors start with higher boluses, but go to zero (indicated by a dash) more quickly.
 
@@ -86,19 +86,19 @@ _Cumulative Dose for several application factors when initial recommendation is 
 
 The 20% and 40% application factor columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The 60% application factor only reached 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.
 
-The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code>GBPA</code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code>Temp Basal Only</code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
+The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code>GBPA</code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code>Temp Basal Only</code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, achieving the full 1 U (**for this example**).
 
-### `Integral Retrospective Correction` (<code>IRC</code>):
+### `Integral Retrospective Correction` (<code>IRC</code>)
 
-* Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
-    * This was tested in a few forks but not included into dev until recently
-    * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
-* Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
-* `Integral Retrospective Correction`, when enabled:
-    * changes the Loop prediction model and thus can affect the recommended dose
-    * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
+* Originally proposed in [*Loop* Issue 695](https://github.com/LoopKit/Loop/issues/695)
+    * This was tested in a few `forks` but not included in the `dev` branch until recently
+    * Initial `merge` into `dev`: [*Loop* PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+* Updated with a modification to limit stacking of <code>IRC</code> with Glucose `Momentum`: [*Loop* PR 2028](https://github.com/LoopKit/Loop/pull/2028)
+* <code>Integral Retrospective Correction</code>, when enabled:
+    * changes the \ Loop\  prediction model and thus can affect the recommended dose
+    * applies to both <code>Dosing Strategies</code>: <code>Temp Basal</code> or <code>Automatic Bolus</code>
 
-Refering to the [Algorithm: Prediction](../operation/algorithm/prediction.md) page:
+Referring to the [`Algorithm: Prediction`](../operation/algorithm/prediction.md) page:
 
 * When <code>IRC</code> is disabled (default), the equation used to predict glucose continues to be:
 
@@ -108,30 +108,30 @@ $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
 $$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] $$
 
-Note that the Momemtum term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
+Note that the Momentum&#8203; term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
 
-The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays_v3.md#predicted-glucose-chart) is updated when <code>IRC</code> is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the <code>IRC</code> and <code>RC</code> calculations.
+<span>The <code>Retrospective Correction</code> section</span> of the [Predicted Glucose Chart](../loop-3/displays_v3.md#predicted-glucose-chart) is updated when <code>IRC</code> is enabled, as shown in the graphic below. <span>The `Integral effect`</span>, inside the lower blue rectangle, is the difference between the <code>IRC</code> and <code>RC</code> calculations.
 
 ![predicted glucose retrospective section with irc disabled and enabled](img/glucose-details-irc.svg){width="400"}
 {align="center"}
 
-The <code>IRC</code> term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [Important points about <code>IRC</code>](#important-points-about-irc).
+<span>The <code>IRC</code> term</span> is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [<span>Important points about <code>IRC</code></span>](#important-points-about-irc).
 
-If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:
+If you want to look at the code, the version (as of 14-Aug-2023) is found in `LoopKit/LoopKit`:
 
-* RetrospectiveCorrection code: [StandardRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift)
-* IntegralRetrospectiveCorrection code: [IntegralRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift)
+* <code>RetrospectiveCorrection</code> code: [`StandardRetrospectiveCorrection.swift`](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift)
+* <code>IntegralRetrospectiveCorrection</code> code: [`IntegralRetrospectiveCorrection.swift`](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift)
 
-#### Important points about <code>IRC</code>:
+#### Important points about <code>IRC</code>
 
-1. Known risk factors compared to standard Loop: 
-    * With <code>IRC</code> turned on, Loop will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia
+1. Known risk factors compared to standard *Loop*: 
+    * With <code>IRC</code> turned on, *Loop* will likely increase insulin corrections in response to persistent discrepancies between observed and predicted glucose motion, which may increase the risks of hypoglycemia
     * <code>IRC</code> may also lead to increased oscillations ("roller-coaster") in glucose responses
     * Both of these risk factors are higher if the user's setting value for Insulin Sensitivity (ISF) is too low
-    * Increasing ISF setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D
+    * Increasing <code>ISF</code> setting value tends to mitigate these risks but it is impossible to offer any guarantees for anything around T1D
 
 2. Compared to standard <code>RC</code>, <code>IRC</code> is more likely to improve glucose control in the following scenarios:
-    * Glucose remaining high or decreasing slower than expected due to temporarily reduced insulin sensitivity or due to poor site absorption
+    * Glucose remaining high or decreasing slower than expected due to temporarily reduced insulin sensitivity or poor site absorption
     * Glucose trending low faster than expected due to temporarily higher insulin sensitivity
     * Glucose spikes due to unannounced meals
     * Glucose remaining high (or trending low) on tail ends of meals where carbs entered were underestimated (or overestimated)
@@ -140,113 +140,121 @@ If you want to look at the code, the version (as of 14-Aug-2023) is found in Loo
 
 3. In some scenarios <code>IRC</code> does not differ from standard Loop <code>RC</code>
 
-    * Regardless of the current glucose level, neither <code>RC</code> nor <code>IRC</code> is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.
-    * Neither <code>RC</code> nor <code>IRC</code> effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.
+    * Regardless of the current glucose level, neither *RC* nor *IRC* is adding to the glucose forecast during the times when the absorption rate of announced carbs is greater than the minimum absorption rate.
+    * Neither *RC* nor *IRC* effects depend on glucose level; both depend on discrepancies between predicted and actual glucose responses.
 
 4. Please do not expect immediate or very substantial improvements in blood glucose control. A one-time success after turning <code>IRC</code> on does not really mean that <code>IRC</code> "works" - this could just as well be a temporal coincidence. Some ways to decide if <code>IRC</code> could be safe and effective for you include:
-    * Responses to unannounced meals - spikes should in general be somewhat lower than with standard Loop, but there should also be no follow-up lows
-    * Nighttime responses over a few weeks - highs or lows should be less frequent compared to standard Loop; at the wake-up time blood glucose should in general be closer to the correction range.
+    * Responses to unannounced meals - spikes should in general be somewhat lower than those with standard *Loop*, but there should also be no follow-up lows
+    * Nighttime responses over a few weeks - highs or lows should be less frequent compared to the standard <code>Loop</code>; at the wake-up time blood glucose should, in general, be closer to the correction range.
 
-### Browser Build Updates
+### `Browser Build` Updates
 
-The dev branch has a few updates already merged with a few more planned to make the GitHub Browser Build more automatic.
+The `dev` branch has a few updates already merged with a few more planned to make the *GitHub Browser Build* method more automatic.
 
-Only the App Group ID must be added to the Identifiers, which simplifies the First-Time Configure Identifiers step. The other App services are automatically added with dev branch.
+Only the `App Group ID` must be added to the Identifiers, which simplifies the First-Time Configure Identifiers step. The other App services are automatically added with the `dev` branch.
 
-* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use GitHub Browser build for dev branch
-* [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
+* [*GitHub* Build for `dev`](../gh-actions/gh-update.md#github-build-for-dev): How to use the <span>(GitHub) `Browser Build`&nbsp; method</span> for the `dev` branch
+* [*GitHub* Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
-## What are branches?
+## What are Git Branches?
 
-There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
+There is a lot of discussion about *branches* with *Loop* but the concept is simple. Basically, they are all slightly different versions of *Loop*...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about Loop's code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when Loop Version 2.0 was newly released. Keep in mind while watching the video that "master" was the old name for the main branch. The information in this video is still generally useful with the last-half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into Loop main branch. Loop has moved on to using only one stable branch (main), with dev recommended for developer/testers.
+To really understand what branches are, we should probably explain a little more about Loop&#39;s code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video that `master` was the old name for the `main` branch. The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` recommended for developers/testers.
 
-### Loop GitHub Information
+### `Loop` GitHub Information
 
-*Loop* developers own an account in *GitHub* called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several <code>repositories</code> that support *Loop* in particular. <span>A <code>repository</code></span> is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are *repositories* for *Loop* itself, *LoopDocs*, and various other supporting "frameworks" that are helper <code>repositories</code> for *Loop* to build correctly. For example, Loop&#39;s repo has a lot of info about the app itself; the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* <code>repository</code> code. But, there's more than just a user interface for Loop. *Loop* has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit`&nbsp; for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), `LoopKit` for the algorithm about carbs and insulin curves, etc.
+*Loop* developers own an account in *GitHub* called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several <code>repositories</code> that support *Loop* in particular. A repository&#8203; is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are `repositories` for Loop&#8203; itself, *LoopDocs*, and various other supporting "frameworks" that are <span>helper &#8203;repositories&#8203; for *Loop*</span> to build correctly. For example, Loop&#39;s &#8203;repository&#8203; has a lot of info about the app itself; the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* <code>repository</code> code. But, there's more than just a user interface for Loop. *Loop* has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit`&nbsp; for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), `LoopKit` for the algorithm about carbs and insulin curves, etc.
 
-When you build Loop, in the background, Loop pulls those other frameworks (7 in total) into the build process using "Carthage".  Carthage is like a personal shopper. You give it a shopping list (the cartfile in Loop code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the "carthage update" fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.
+When you build *Loop*, in the background, *Loop* pulls those other frameworks (7 in total) into the build process using `Carthage`.  `Carthage`&nbsp;  is like a personal shopper. You give it a shopping list (the cart file in *Loop* code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the `carthage update` fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.
 
 ![img/loopkit.png](img/loopkit.png){width="650"}
 {align="center"}
 
-Anyways...so now you know about the general structure of Loop and LoopKit in GitHub. Now we can discuss Loop itself a little deeper.
+Anyways...so now you know about the general structure of *Loop* and *LoopKit* in *GitHub*. Now we can discuss *Loop* itself a little deeper.
 
-So let's imagine Loop as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, documenting improvements. They send the drafts to the editor, who makes suggestions and eventually the cookbook is finalized. There are no grammar issues, no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a "release" and it is the main branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. Main branch is stable and tested.
+So let's imagine *Loop* as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, and documenting improvements. They send the drafts to the editor, who makes suggestions and eventually, the cookbook is finalized. There are no grammar issues, and no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a release&#8203, and it is the `main` branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. The `main` branch is stable and tested.
 
-But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like omnipod support and overrides are new "recipes" that were developed since the last main release, for example.) But, the process for developing a recipe is arduous. Lots of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the [Issues List in GitHub](https://github.com/LoopKit/Loop/issues)). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently, because that's what testing new recipes is all about. These marked-up versions of the cookbook are called "dev" branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes and tweaks.
+But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like Omnipod&#8203; support and the overrides are new "recipes" that were developed since the last `main` release, for example.) But, the process of developing a recipe is arduous. There was a lot of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the [Issues List on GitHub](https://github.com/LoopKit/Loop/issues)). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently because that's what testing new recipes is all about. These marked-up versions of the cookbook are called the `dev` branch. Short for "development" branch. Like the name sounds...this is where new developments are happening, new recipes, and tweaks.
 
-After much testing and tweaking, eventually the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in Loop, Loop's main branch is updated with the new features coming from dev (aka, "dev branch is merged into main branch"). When that happens, main branch gets another "release" version. For that moment, dev and main are exactly the same. They stay the same until the Loop developers start working on the next batch of improvements, could be the next hour even or days later, but the process begins again. The developers will start editing the code again and dropping those edits in dev branch for further development.
+After much testing and tweaking, eventually, the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in *Loop*,  <span>Loop&#39;s `main` branch</span> is updated with the new features coming from `dev` (aka, the `dev` branch is merged into the `main` branch). When that happens, the `main` branch gets another `release` version. At this point, `dev` and `main` are identical. They remain so until the development team for *Loop*&nbsp; starts working on the next batch of improvements, which could be in the next hour or even days later, but then the cycle starts again.  The developers will start editing the code again and dropping those edits in the `dev` branch for further development.
 
 ## What's going on in the dev branch?
 
-The dev branch, currently v3.3.0, is where the next version of Loop is being developed and tested.
+The `dev` branch, currently v3.3.0, is where the next version of *Loop* is being developed and tested.
 
-If you choose to come into a dev branch build, you need to be aware that dev may update code frequently and unannounced in the traditional sense that most users in Looped group or Instagram would see. Developers are not helped by people being in a dev branch if those users are mistakenly thinking of it as a stable main branch with lots of detailed docs to go with it. People should only use a dev branch build if they EDUCATE themselves on the expectations and how to properly manage dev information and updates. People using dev branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
+If you choose to build *Loop* using a `dev` branch, you need to be aware that the `dev` branch may update code frequently and unannounced in the traditional sense that most users in the  *Looped* group or *Instagram* would see. Developers are not helped by people being in a `dev` branch if those users mistakenly think of it as a stable `main` branch with lots of detailed docs to go with it. People should only use a `dev` branch build if they EDUCATE themselves on the expectations and how to properly manage `dev` information and updates. People using the `dev` branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 
-If you choose to use a dev build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy Loopdocs page updated regularly with current "dev updates"...that's just not the way dev branch works (at least normally).
+If you choose to use a `dev` build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy *Loopdocs* page updated regularly with current "`dev` updates"...that's just not the way the `dev` branch works (at least normally).
 
 ### Subscribe to the Zulipchat channels
 
-Use [Zulipchat](https://loop.zulipchat.com) forums for Loop. This forum has several "streams" of conversations depending on interest. I highly recommend following all the streams so you do not miss conversations.  You can select by stream and by topic within a stream to focus on a given conversation. If you are using dev branch, you must be in the #development stream.  If you want to know when LoopDocs gets updated, follow the #documentation stream. Code changes are called "commits" in GitHub. The #github stream will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
+Use [Zulipchat](https://loop.zulipchat.com) forums for *Loop*.  
+This forum has several streams of conversations (`streams`) depending on interest. I highly recommend following all the streams so you do not miss conversations.  You can select by stream and by topic within a stream to focus on a given conversation.  
+
+!!! tip "Zulip Chat Streams"
+    - If you are using the **dev** branch, you **must** be in the **[#development](https://loop.zulipchat.com/#narrow/stream/144182-development)** stream.  
+    - If you want to know when **LoopDocs** gets updated, follow the **[#documentation](https://loop.zulipchat.com/#narrow/stream/270362-documentation)** stream.  
+    - **Code changes** are called commits in GitHub.  
+      The **[#github](https://loop.zulipchat.com/#narrow/stream/144191-github)** stream will have an automated post whenever a new commit is made and it will give a brief line description of the commit.
 
 ![img/zulipchat.png](img/zulipchat.png){width="650"}
 {align="center"}
 
-You can also go directly to the commit history for each of the branches if you'd like.
+You can also go directly to the git commit history for each of the  branches if you'd like.
 
-[Loop main branch commit history](https://github.com/LoopKit/Loop/commits/main)
+- [`Loop` **`main`** branch: git commit history](https://github.com/LoopKit/Loop/commits/main)
+- [`Loop` **`dev`** branch: git commit history](https://github.com/LoopKit/Loop/commits/dev)
 
-[Loop dev branch commit history](https://github.com/LoopKit/Loop/commits/dev)
-
-If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red are the code that is old, in green is the updated code. The line numbers and file names of the edited code are also there to help.
+If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red is the code that is old, and in green is the updated code. The line numbers and file names of the edited code are also there to help.
 
 ![img/commit.png](img/commit.png){width="550"}
 {align="center"}
 
-I don't expect many of you would understand exactly what the edits mean, or how the new code might function...but I bring up the topic of commit history so that you can use that to realize just how often dev is updated. Go ahead and look at the number and frequency of commits in that dev branch...that is why there is no way someone is going to keep a "loopdocs" of dev changes. It's just too much a moving target.
+I don't expect many of you would understand exactly what the edits mean, or how the new code might function. However, I bring up the topic of git commit history so that you can use that to realize just how often the dev branch is updated. Go ahead and look at the number and frequency of commits in that branch.  That's why no one would want to maintain a documentation list of the changes in the dev branch. It's just too much of a moving target.
 
-### Watch the Loop Repo and Issues list
+### Watch the `Loop Repository` and `Issues List`
 
-Subscribe to the *Loop* repo's <span>`Issues` list</span> by "watching" the [*Loop* repo](https://github.com/LoopKit/Loop). You can choose to watch the `repository` so that you get emails when new `Issues` are reported. This is a good way to find out if there are other people reporting odd behavior that you are wondering about. If you use `dev` and wonder about something you are seeing in *Loop*, you can check [`Issues` list](https://github.com/LoopKit/Loop/issues) to see if others are noticing the same. If so, you can help by capturing information and reporting it. Not super helpful to just say "Yeah, me too..." but better if you can attach screenshots, <span>`Issue` Reports</span> from *Loop* settings, and a thorough description of the problem you are seeing. Be a part of the solution by thoughtfully providing information to help debug.
+Open the [`Loop repository`](https://github.com/LoopKit/Loop) and subscribe to the `Issues`. 
+
+You can choose to watch the `repository` so that you get emails when new `Issues` are reported. This is a good way to find out if there are other people reporting odd behavior that you are wondering about. If you use `dev` and wonder about something you are seeing in *Loop*, you can check [`Issues` list](https://github.com/LoopKit/Loop/issues) to see if others are noticing the same. If so, you can help by capturing information and reporting it. Not super helpful to just say "Yeah, me too..." but better if you can attach screenshots, `Issue Reports` from *Loop* settings, and a thorough description of the problem you are seeing. Be a part of the solution by thoughtfully providing information to help debug.
 
 ![img/watching.png](img/watching.png){width="650"}
 {align="center"}
 
-### Keep checking Looped group
+### Keep checking `Looped` group
 
-Keep watching [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup). Major concerns/issues are brought up there...so no harm in scrolling through and seeing what's going on there.
+Keep watching [`The Looped Group`](https://www.facebook.com/groups/TheLoopedGroup) on  *Facebook*. Major concerns/issues are brought up there...so it doesn't hurt to scroll through and see what's going on there.
 
 ### Become familiar with your data sources
 
-Another useful thing if you'll be on dev branches undergoing a lot of active change...know how Loop works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries are stored in Health app.
+Another useful thing if you'll be on dev branches undergoing a lot of active change...know how *Loop* works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries stored in the *Health* app.
 
 ### Generate an Issue Report
 
-Know how to generate an Issue Report when you see a problem so you can provide that if asked. An Issue Report is a log file generated by the Loop app that has a lot of information the developers can parse to figure out what Loop was doing when you were having a problem.
+Know how to generate an `Issue Report` when you see a problem so you can provide that if asked. An `Issue Report` is a log file generated by the *Loop* app that has a lot of information the developers can parse to figure out what *Loop* was doing when you were having a problem.
 
-* Loop v2.2.9 and earlier: Loop Settings -> Issue Report
-* Loop 3 and later: Loop Settings -> Support -> Issue Report
+* *<span translate="no">Loop v2.2.9</span>*&nbsp; and earlier:` Loop Settings -> Issue Report`
+* *<span translate="no">Loop 3</span>*&nbsp; and later: `Loop Settings -> Support -> Issue Report`
 
-Do not confuse this with reporting an issue with Loop.  That is done by logging into GitHub and going to the [Issue page](https://github.com/LoopKit/Loop/issues) to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to GitHub.
+Do not confuse this with reporting an issue with *Loop*.  That is done by logging into *GitHub* and going to the [`Issue` page](https://github.com/LoopKit/Loop/issues) to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to *GitHub*.
 
 ### Create a Debug Report
 
-This 6-minute long, classic Katie DiSimone video shows how to [capture debugging logs](https://youtu.be/Ac4MguvUO7M). If you are testing a new branch, this is a valuable skill to assist developers in identifying problems. In addition to showing you how to generate and save the debug text information, the video explains a method in which you create a <code>gist</code> of the debug information using your *GitHub* account and file an official Issue on the *Loop* *GitHub* <code>repository</code>. This may be required in some cases.  But start by chatting directly on [zulipchat](https://loop.zulipchat.com) with the developer. What you are experiencing may already be known. If the developers need a new Issue opened, they will say so on *Zulipchat*.
+This 6-minute long, classic Katie DiSimone video shows how to [capture debugging logs](https://youtu.be/Ac4MguvUO7M). If you are testing a new branch, this is a valuable skill to assist developers in identifying problems. In addition to showing you how to generate and save the debug text information, the video explains how to create a <code>gist</code> with the debug information using your *GitHub* account and file an official Issue on the *Loop* *GitHub* <code>repository</code>. This may be required in some cases.  But start by chatting directly on [Zulipchat](https://loop.zulipchat.com) with the developer. What you are experiencing may already be known. If the developers need you to open a new `Issue`, they will say so on *Zulipchat*.
 
 
-## Repositories and Code
+## `Repositories` and Code
 
-If you're a developer looking for direct links to the code and documentation in GitHub:
+If you're a developer looking for direct links to the **code and documentation** in *GitHub*:
 
-* [Loop](https://github.com/LoopKit/Loop)
-* [LoopDocs](https://github.com/LoopKit/Loopdocs)
+* [`Loop`](https://github.com/LoopKit/Loop)
+* [`LoopDocs`](https://github.com/LoopKit/Loopdocs)
 
-For more information on how to contribute code to the project, please review:
+For more information on **how to contribute code to the *Loop* project**, please review:
 
   * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
-  * Review the Loop [LICENSE](https://github.com/LoopKit/Loop/blob/main/LICENSE.md)
-  * Review the Loop [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/main/CODE_OF_CONDUCT.md)
+  * the [LICENSE](https://github.com/LoopKit/Loop/blob/main/LICENSE.md)
+  * the  [CODE_OF_CONDUCT](https://github.com/LoopKit/Loop/blob/main/CODE_OF_CONDUCT.md)
 
-If you want to contribute code improvements, please join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app, and learn about what is coming next.
+If you want to contribute **code improvements**, please join [*Loop Zulipchat*](https://loop.zulipchat.com) and be sure to subscribe to all the channels. Meet the developers and testers who make this app, and learn about what is coming next.
