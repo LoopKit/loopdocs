@@ -284,7 +284,7 @@ Final step is to return to Xcode and clean the build folder. Otherwise Xcode rem
 This error is new with Xcode 13.3 (late Sep 2021) which has a new requirement
 
 * For those who care: the new requirement is that for a certain type of instruction file, the line with the `Headers` keyword must be located before the line with the `Sources` keyword
-* There used to be many repositories that did not have lines in that order
+* There used to be many <code>repositories</code> that did not have lines in that order
 * If you are seeing this error, you are building with an older copy and should consider updating
 
 **Error Message:**

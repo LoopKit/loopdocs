@@ -8,7 +8,7 @@
 !!! warning "Modules vs Submodule"
     This page has instructions to set up your own fork for the Modules associated with LoopWorkspace that are needed for a selected customization.
 
-    The technical term for the Modules is submodule when you are using git commands. Each Module has its own repository and you will be working with **your fork** of that repository at https://github.com/username/Module.
+    The technical term for the Modules is submodule when you are using git commands. Each Module has its own <code>repository</code> and you will be working with **your fork** of that <code>repository</code> at https://github.com/username/Module.
     
     * You can often use the same customization for several releases
     * If a customization that you prepared for an older release says "does not apply" when you use it, you'll need to prepare a new one

@@ -842,11 +842,11 @@ These are the Libre iOS app options.
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
         * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select xDrip4iOS
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
-* GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
+* GlucoseDirect: [README file on GitHub <code>repository</code>](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
         * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select GlucoseDirect
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
-* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+* LibreTransmitter for Loop: [README file on GitHub <code>repository</code>](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so no separate app is required
     * Refer to [LibreTransmitter](#libretransmitter)
     * This is included in Loop-dev: see [LoopDocs: Building Loop dev](../version/build-dev.md)
@@ -875,7 +875,7 @@ Add a client that interfaces with GlucoseDirect:
 
 Add LibreTransmitter to Loop as a plugin:
 
-* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+* LibreTransmitter for Loop: [README file on GitHub <code>repository</code>](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
     * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
     * There is a development branch, libre, that has this incorporated

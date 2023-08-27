@@ -260,7 +260,7 @@ The *LoopCaregiver* app is under development to make remote commands easier to i
 
     This is an app under development. Sometimes, when improvements are added, you have to start over with a fresh download and enter all your information again to take advantage of the update. The app on your phone keeps working until you are ready to update.
     
-    * **The location of the repository has moved**
+    * **The location of the `repository` has moved**
     * **The ability to build with [*GitHub*](../gh-actions/gh-other-apps.md) as well as *Xcode* has been added**
     * **The `bundle ID` has been modified**
     
