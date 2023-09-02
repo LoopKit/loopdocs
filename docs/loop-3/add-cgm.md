@@ -93,7 +93,9 @@ Minimal documentation is provided.
 {align="center"}
 
 !!! tip "Don't forget Health Permissions"
-    For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*. The Loop values are removed from *Apple Health* 3 hours after they are written if either the G6 or G7 *Dexcom* apps have write permission.
+    For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*.
+
+    If either the G6 or the G7 has permission to write to *Apple Health*, then *Loop* will delete the *Loop* glucose data in *Apple Health* that is older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
 
 ### Medtronic Enlite CGM
 
