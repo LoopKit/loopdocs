@@ -260,8 +260,10 @@ The font color in the value picker has the following meaning:
 
 #### Guardrails for Maximum Basal Rate
 
-* Top value available on the picker is 6.4 times the highest basal rate in your scheduled basal rates
-
+* Recommended maximum value available on the picker is 6.4 times the highest basal rate in your scheduled basal rates
+    * Values higher than this, if available, are shown in yellow
+* Absolute maximum value is 70 divided by the smallest carb ratio (CR) in your schedule or the maximum rate allowed by your pump, whichever is higher
+    * Depending on your basal rate and CR schedules, the maximum value available on the picker might be more that 6.4 times the highest basal rate
 
 #### Guardrails for Maximum Bolus
 
