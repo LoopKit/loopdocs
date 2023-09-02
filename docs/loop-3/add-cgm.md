@@ -92,6 +92,8 @@ Minimal documentation is provided.
 ![graphic showing Loop searching for G7](img/g7.svg){width="500"}
 {align="center"}
 
+!!! tip "Don't forget Health Permissions"
+    For those switching from Dexcom G6 to Dexcom G7, you might forget to add permission for the G7 app to write to Apple Health. If you want long-term history of those CGM readings to persist in Apple Health, turn on the permission for the Dexcom app. The Loop values are removed from Apple Health 3 hours after they are written if either the G6 or G7 Dexcom apps have write permission.
 
 ### Medtronic Enlite CGM
 
