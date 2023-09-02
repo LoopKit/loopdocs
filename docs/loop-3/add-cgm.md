@@ -21,7 +21,7 @@ Loop can be connected to the following CGMs:
         * Only some Libre sensors are supported; some have encryption that limits DIY use
         * No details for using Libre will show up on this page until the next release - please read [Build Loop-dev](../version/build-dev.md) and follow the links to understand what you are doing if you choose a development branch
 * CGMs that require active internet (WiFi or Cell)
-    * [Dexcom Share](#dexcom-share-as-a-cgm)
+    * [*Dexcom Share*](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
 * CGM Simulator - useful to learn the app interface
 
@@ -77,7 +77,7 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
     The Dexcom G7 is handled differently - Loop automatically detects when a new sensor/transmitter pair is added to the Dexcom G7 app.
 
 
-#### About Dexcom Share credentials
+#### About *Dexcom Share* credentials
 
 You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for CGM data if you forget to update your transmitter ID when you start a new transmitter.
 
@@ -93,7 +93,7 @@ Minimal documentation is provided.
 {align="center"}
 
 !!! tip "Don't forget Health Permissions"
-    For those switching from Dexcom G6 to Dexcom G7, you might forget to add permission for the G7 app to write to Apple Health. If you want long-term history of those CGM readings to persist in Apple Health, turn on the permission for the Dexcom app. The Loop values are removed from Apple Health 3 hours after they are written if either the G6 or G7 Dexcom apps have write permission.
+    For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*. The Loop values are removed from *Apple Health* 3 hours after they are written if either the G6 or G7 *Dexcom* apps have write permission.
 
 ### Medtronic Enlite CGM
 
@@ -103,15 +103,15 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
 * Go through the [Add Pump](add-pump.md) to Loop steps with that Medtronic pump
 * Then do the [Add CGM](add-cgm.md) steps and the sensor should be presented as an option
 
-### Dexcom Share as a CGM
+### *Dexcom Share* as a CGM
 
-!!! warning "If you need to use Dexcom Share"
+!!! warning "If you need to use *Dexcom Share*"
 
     If the dexcom is on another phone, you can use Share if internet / cell coverage is good.
     
-    Dexcom Share is not available for Dexcom ONE CGM.
+    *Dexcom Share* is not available for Dexcom ONE CGM.
     
-    The Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
+    The *Dexcom Share* credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. ***Dexcom Share* account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
     
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
     

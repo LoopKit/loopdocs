@@ -36,15 +36,13 @@ The health app on the *Loop* phone provides useful plots of data since you start
 
 ### Glucose and *Apple* HealthKit
 
-For Dexcom users with the Dexcom app on the *Loop* phone, the Dexcom app writes the value to Health with a 3-hour delay.
+For *Dexcom* users with the *Dexcom* app on the *Loop* phone, the *Dexcom* app writes the value to Health with a 3-hour delay.
 
-*Loop* reads the Dexcom information at the same time the Dexcom app gets the reading from the transmitter. It uses the glucose value to update predictions and stores it in Health.
+*Loop* reads the *Dexcom* information at the same time the *Dexcom* app gets the reading from the transmitter. It uses the glucose value to update predictions and stores it in Health.
 
-If you look at your Health glucose readings, you'll notice the *Loop* icon for the last 3 hours and the Dexcom icon for times earlier than that.
+If you look at your Health glucose readings, you'll notice the *Loop* icon for the last 3 hours and the *Dexcom* icon for times earlier than that.
 
 All other CGM readings are reported with the *Loop* icon and there is no transition after 3 hours.
-
-You may also notice that the Dexcom numbers get smoothed out. For example, the Dexcom readings, when they first are read from the transmitter may bounce up and down a bit. The Dexcom app will retrospectively smooth the numbers, changing what is displayed in their app compared to the original reading. The last 3 hours of data from *Loop* does not show that smoothing - it reports the value sent by the transmitter. If you suspect a sensor is not behaving well, check the *Loop* glucose plots compared to the Dexcom plots to assist in your evaluation. It might be time to confirm glucose with a fingerstick meter as well.
 
 ### Carbohydrates and *Apple* HealthKit
 
@@ -146,36 +144,36 @@ At this point, you can review and modify the settings.
 
 If you choose to, you may add permission for your CGM app to write to *Apple* Health. *Loop* will read glucose from *Apple* Health, but only while the phone is unlocked and the app is open.
 
-Note that if a glucose value is added to *Apple* Health "now", *Loop* will pick up that value and use it for the glucose prediction. This can happen with a finger-stick entry or some Libre third-party apps, but not with Dexcom, which has a 3-hour delay before writing to Health.
+Note that if a glucose value is added to *Apple* Health "now", *Loop* will pick up that value and use it for the glucose prediction. This can happen with a finger-stick entry or some Libre third-party apps, but not with *Dexcom*, which has a 3-hour delay before writing to Health.
 
-#### Dexcom
+#### *Dexcom*
 
-The Dexcom app for both G6 and G7 has a 3-hour delay before writing to the Health app. If you tap Glucose data in Health, scroll to the bottom to select `Show All Data` and then scroll back in time, notice the `Loop` icon is replaced by either the `G6` or `G7` icon starting 3 hours ago.
+The *Dexcom* app for both G6 and G7 has a 3-hour delay before writing to the Health app. If you tap Glucose data in Health, scroll to the bottom to select `Show All Data` and then scroll back in time, notice the `Loop` icon is replaced by either the `G6` or `G7` icon starting 3 hours ago.
 
-If you happen to wear a Dexcom G6 and G7 sensor at the same time, then starting 3 hours in the past, both sensor traces will show up in the `Loop Glucose chart`.
+If you happen to wear a *Dexcom* G6 and G7 sensor at the same time, then starting 3 hours in the past, both sensor traces will show up in the `Loop Glucose chart`.
 
 *Loop* only uses data from the CGM you selected as your CGM for closed-loop insulin delivery, but don't be surprised at the double trace if you want to wear both during the transition from G6 to G7.
 
-!!! tip "Add Permission to Health for Dexcom to Write Glucose"
-    If either the G6 or the G7 has permission to write to health, then Loop will delete the glucose values that it wrote to health 3 hours earlier. That's when the Dexcom app will start writing its glucose values and you only want one to show up in Health history.
+!!! tip "Add Permission to Health for *Dexcom* to Write Glucose"
+    If either the G6 or the G7 has permission to write to health, then Loop will delete the glucose values that it wrote to health 3 hours earlier. That's when the *Dexcom* app will start writing its glucose values and you only want one to show up in Health history.
 
     If you transition from G6 to G7 (or alternate back and forth), be sure that at least the app you are currently using has permission to write to health. (I inadvertently forgot to turn on health permission for G7. By the time I noticed, I had a gap of several days in my Apple Health storage of glucose values.)
 
-#### Libre
+#### *Libre*
 
-There are several choices for reading Libre sensors.
+There are several choices for reading *Libre* sensors.
 
 With `Loop dev` (will be `Loop 3.4.x` after release), [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) is integrated with the `Loop` app.
 
-The frequent updates (1-minute glucose data) provided by Libre did cause some issues with released versions (`Loop 3.x.x` with customizations that use various third-party apps to read the *Libre*). These were fixed initially by modifying the third-party apps to limit how frequently they supplied glucose data.
+The frequent updates (1-minute glucose data) provided by *Libre* did cause some issues with released versions (`Loop 3.0` and `Loop 3.2.x` with customizations that use various third-party apps to read the *Libre*). These were fixed initially by modifying the third-party apps to limit how frequently they supplied glucose data.
 
 With `Loop dev` (will be `Loop 3.4.x` after release), the Loop app only initiates a closed-loop cycle automatically following a new glucose value if it has been more than 4.2 minutes since the last one.
 
-`Loop 3.x.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code/#loop-cycle-time) that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
+`Loop 3.0` and `Loop 3.2.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code/#loop-cycle-time) that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
 
 ##  How Do I Change Glucose Units?
 
-The glucose units (mg/dL or mmol/L) *Loop* uses match what is in *Apple* Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for Dexcom Share and it translates units for you - not sure about other devices.
+The glucose units (mg/dL or mmol/L) *Loop* uses match what is in *Apple* Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for *Dexcom* Share and it translates units for you - not sure about other devices.
 
 * These instructions to change Blood Glucose units are for iOS 15
     * Select the Health app (Heart icon)
