@@ -2208,6 +2208,26 @@
     How Do I Modify Apple HealthKit Permissions
   </a>
   
+    <nav class="md-nav" aria-label="How Do I Modify Apple HealthKit Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-health-permissions" class="md-nav__link">
+    Loop Health Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgm-health-permissions" class="md-nav__link">
+    CGM Health Permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2347,6 +2367,26 @@
     How Do I Modify Apple HealthKit Permissions
   </a>
   
+    <nav class="md-nav" aria-label="How Do I Modify Apple HealthKit Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-health-permissions" class="md-nav__link">
+    Loop Health Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgm-health-permissions" class="md-nav__link">
+    CGM Health Permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2373,12 +2413,15 @@
 
   <h1>Apple Health FAQs</h1>
 
-<h2 id="how-does-loop-use-apple-healthkit">How does <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> use Apple HealthKit?<a class="headerlink" href="#how-does-loop-use-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses Apple HealthKit as long term storage for glucose, insulin and carbohydrates.  But there is more going on than simple storage.</p>
-<p>It is important that permissions for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> be properly configured for the Health app.</p>
+<h2 id="how-does-loop-use-apple-healthkit">How does <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> use <em>Apple</em> HealthKit?<a class="headerlink" href="#how-does-loop-use-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> uses <em>Apple</em> HealthKit as long term storage for glucose, insulin and carbohydrates.  But there is more going on than simple storage.</p>
+<p>It is important that permissions for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> be properly configured for the Health app.</p>
 <ul>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x: See <a href="../../build/health/">Health Permissions</a></li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr>: See <a href="../../loop-3/onboarding/#apple-health-permissions">Apple Health Permissions</a></li>
+<li><code>Loop 3.x.x</code>: See <a href="../../loop-3/onboarding/#apple-health-permissions">Apple Health Permissions</a></li>
+<li><code>Loop 2.2.x</code>: See <a href="../../build/health/">Health Permissions</a><ul>
+<li>If you are still on <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2 (or FreeAPS), consider updating to <a href="../../build/updating/"><em><abbr title="Latest release with major updates">Loop 3</abbr></em></a></li>
+</ul>
+</li>
 </ul>
 <p>To view the list of data stored in Health</p>
 <ul>
@@ -2404,73 +2447,72 @@
 </ul>
 </div>
 <h2 id="healthkit-plots">HealthKit Plots<a class="headerlink" href="#healthkit-plots" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The health app on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> phone provides useful plots of data since you started to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with that Apple ID. Examples for insulin delivery and carbohydrates are shown in the graphic below. New versions of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> modified details of the display with the same or improved capabilities. </p>
+<p>The health app on the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> phone provides useful plots of data since you started to <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with that <em>Apple</em> ID. Examples for insulin delivery and carbohydrates are shown in the graphic below. New versions of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> modified details of the display with the same or improved capabilities. </p>
 <p><img alt="example insulin and carb plots visible with HealthKit" src="../img/health1.jpg" width="600" /></p>
 <h2 id="healthkit-details">HealthKit Details<a class="headerlink" href="#healthkit-details" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="glucose-and-apple-healthkit">Glucose and Apple HealthKit<a class="headerlink" href="#glucose-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For Dexcom users with the Dexcom app on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> phone, the Dexcom app writes the value to Health with a 3-hour delay.</p>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reads the Dexcom information at the same time the Dexcom app gets the reading from the transmitter. It uses the glucose value to update predictions and stores it in Health.</p>
-<p>If you look at your Health glucose readings, you'll notice the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon for the last 3 hours and the Dexcom icon for times earlier than that.</p>
-<p>All other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings are reported with the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon and there is no transition after 3 hours.</p>
-<p>You may also notice that the Dexcom numbers get smoothed out. For example, the Dexcom readings, when they first are read from the transmitter may bounce up and down a bit. The Dexcom app will retrospectively smooth the numbers, changing what is displayed in their app compared to the original reading. The last 3 hours of data from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> does not show that smoothing - it reports the value sent by the transmitter. If you suspect a sensor is not behaving well, check the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> glucose plots compared to the Dexcom plots to assist in your evaluation. It might be time to confirm glucose with a fingerstick meter as well.</p>
-<h3 id="carbohydrates-and-apple-healthkit">Carbohydrates and Apple HealthKit<a class="headerlink" href="#carbohydrates-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x, if you set Apple Health app permissions to allow it, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to write to carbohydrate storage but not read.</p>
-<p>In <abbr title="Latest release with major updates">Loop 3</abbr>, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> read the information and automatically dose with insulin, <a href="../../intro/loopdocs-how-to/#how-to-find-help">ask for help in zulipchat</a>.</p>
-<h3 id="insulin-and-apple-healthkit">Insulin and Apple HealthKit<a class="headerlink" href="#insulin-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The relationship between <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Apple HealthKit is very important to understand if you ever need to do one of these actions:</p>
+<h3 id="glucose-and-apple-healthkit">Glucose and <em>Apple</em> HealthKit<a class="headerlink" href="#glucose-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For <em>Dexcom</em> users with the <em>Dexcom</em> app on the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> phone, the <em>Dexcom</em> app writes the value to Health with a 3-hour delay.</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reads the <em>Dexcom</em> information at the same time the <em>Dexcom</em> app gets the reading from the transmitter. It uses the glucose value to update predictions and stores it in Health.</p>
+<p>If you look at your Health glucose readings, you'll notice the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> icon for the last 3 hours and the <em>Dexcom</em> icon for times earlier than that.</p>
+<p>All other <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings are reported with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> icon and there is no transition after 3 hours.</p>
+<h3 id="carbohydrates-and-apple-healthkit">Carbohydrates and <em>Apple</em> HealthKit<a class="headerlink" href="#carbohydrates-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>In <code>Loop* 2.2.x</code>, if you set <em>Apple</em> Health app permissions to allow it, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to write to carbohydrate storage but not read.</p>
+<p>In <code>Loop 3</code>, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> read the information and automatically dose with insulin, <a href="../../intro/loopdocs-how-to/#how-to-find-help">ask for help in zulipchat</a>.</p>
+<h3 id="insulin-and-apple-healthkit">Insulin and <em>Apple</em> HealthKit<a class="headerlink" href="#insulin-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The relationship between <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and <em>Apple</em> HealthKit is very important to understand if you ever need to do one of these actions:</p>
 <ul>
 <li>Dose insulin from another source (injection, smart pen)</li>
 <li>Remove insulin that wasn't really given (failed site or forgot to reattach a tubed pump)</li>
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Be Cautious</p>
-<p>Allowing users to delete events is fairly risky. If a user deletes a dose accidentally, or does not understand the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> impact while in <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr>, then <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> may start giving insulin that is not needed.</p>
-<p>One method to deal with insulin that wasn't given is to go Open <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for 3 to 6 hours. However, if you take care, you can remove insulin from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<p>Allowing users to delete events is fairly risky. If a user deletes a dose accidentally, or does not understand the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> impact while in closed loop is enabled, then <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> may start giving insulin that is not needed.</p>
+<p>One method to deal with insulin that wasn't given is to go disable closed loop for 3 to 6 hours. However, if you take care, you can remove insulin from <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Developer Notes: Pump Events and Insulin Delivery</p>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> stores Pump Events separately from Insulin Delivery. With permissions set to allow <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to read insulin from Health (recommended), the Insulin Delivery store contains doses entered from Health as well as the subset of pump events that represent doses.</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> stores Pump Events separately from Insulin Delivery. With permissions set to allow <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to read insulin from Health (recommended), the Insulin Delivery store contains doses entered from Health as well as the subset of pump events that represent doses.</p>
 <p>Pump Events are displayed by tapping an insulin chart on the main screen and viewing the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
-<p>When you delete a pump event using the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> interface in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, the associated entry in Insulin Delivery is not deleted.</p>
+<p>When you delete a pump event using the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> interface in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, the associated entry in Insulin Delivery is not deleted.</p>
 </div>
 <h4 id="bolus">Bolus<a class="headerlink" href="#bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>When <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> commands the pump to provide a bolus, either manual or automatic, it is shown in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and in the Health app insulin data list<ul>
-<li>It may take a <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> or two to show up in Health, but it will appear</li>
+<li>When <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> commands the pump to provide a bolus, either manual or automatic, it is shown in the <code>Event History</code> and in the Health app insulin data list<ul>
+<li>It may take a loop cycle or two to show up in Health, but it will appear</li>
 </ul>
 </li>
-<li>When you add insulin, such as from an injection, to the Health app, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reads it and adds it to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr><ul>
+<li>When you add insulin, such as from an injection, to the Health app, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reads it and adds it to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr><ul>
 <li>It will not be added to the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> because this is not a pump event</li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app</li>
+<li><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 3 adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app</li>
 </ul>
 </li>
-<li>If you delete an entry from the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list, but leave that same entry in Health, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reads it back from Health<ul>
+<li>If you delete an entry from the <code>Event History</code> list, but leave that same entry in Health, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reads it back from Health<ul>
 <li>It will not show up in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, but it will still contribute to <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></li>
-<li>You must delete a pump event from both <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health data; it is best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr></li>
-<li>If that dose showed up in <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> but you could not find it in Health, look again after the next <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle</li>
+<li>You must delete a pump event from both <code>Event History</code> and Health data; it is best if you do this within one loop cycle</li>
+<li>If that dose showed up in `<abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>`` but you could not find it in Health, look again after the next loop cycle</li>
 </ul>
 </li>
-<li>If you delete an entry from Health, but leave that same entry in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr>, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reports it to Health again<ul>
-<li>You must delete a pump event from both the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> list and Health data; it is best if you do this within one <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr></li>
+<li>If you delete an entry from Health, but leave that same entry in <code>Event History</code>, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reports it to Health again<ul>
+<li>You must delete a pump event from both the <code>Event History</code> list and Health data; it is best if you do this within one loop cycle</li>
 </ul>
 </li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
 <p>Write on a piece of paper the times and values you think you should delete.</p>
-<p>Look at those values in both <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Health Insulin data list.</p>
-<p>Record what <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is reporting as <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</p>
+<p>Look at those values in both <code>Event History</code> and Health Insulin data list.</p>
+<p>Record what <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is reporting as <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</p>
 <p>Review the values one more time, and then delete those entries in both places. Review <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> again. If you made a mistake, you can refer to that written list and adjust appropriately.</p>
 </div>
 <h4 id="basal">Basal<a class="headerlink" href="#basal" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> keeps track of how much basal is delivered so the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is properly reported. In older versions of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, there may be occasional display glitches, but the <strong>internal</strong> accounting is correct and updates every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> keeps track of how much basal is delivered so the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is properly reported. In older versions of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, there may be occasional display glitches, but the <strong>internal</strong> accounting is correct and updates every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Developer Notes: Scheduled Basal is Not a Pump Event</p>
 <p>Scheduled basal is not a pump event so you will not see it listed in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
 <p>Scheduled basal does not affect <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> when delivered as scheduled.</p>
 <p>The Insulin Delivery store keeps track of the insulin delivered via scheduled basal.</p>
 </div>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the amount of insulin delivered through basal (both scheduled and temporary) to Health at regular intervals - this does not happen every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> when basal rates are not changing. The updates to Health happen:</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> updates the amount of insulin delivered through basal (both scheduled and temporary) to Health at regular intervals - this does not happen every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> when basal rates are not changing. The updates to Health happen:</p>
 <ul>
 <li>At midnight</li>
 <li>When the scheduled basal rate changes</li>
@@ -2497,13 +2539,13 @@
 <td>06:00 AM<br>0.5 U/hr</td>
 <td>---</td>
 <td>06:00 AM<br>Basal<br>2.4 U</td>
-<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reports insulin delivered by basal for the last 6 hours when the scheduled basal rate has a new entry</td>
+<td><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reports insulin delivered by basal for the last 6 hours when the scheduled basal rate has a new entry</td>
 </tr>
 <tr>
 <td>---</td>
 <td>07:15 AM<br>0.0 U/hr</td>
 <td>07:15 AM<br>Basal<br>0.6 U</td>
-<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reports insulin delivered by basal since last report up to time TB starts</td>
+<td><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reports insulin delivered by basal since last report up to time TB starts</td>
 </tr>
 <tr>
 <td>---</td>
@@ -2515,24 +2557,43 @@
 <td>08:00 AM<br>0.4 U/hr</td>
 <td>---</td>
 <td>08:00 AM<br>Basal<br>0.1 U</td>
-<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> reports insulin delivered by basal since last report; the scheduled basal rate has a new entry</td>
+<td><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> reports insulin delivered by basal since last report; the scheduled basal rate has a new entry</td>
 </tr>
 </tbody>
 </table>
-<h3 id="tidepool-and-apple-healthkit">Tidepool and Apple HealthKit<a class="headerlink" href="#tidepool-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you have a <a href="https://tidepool.org">Tidepool</a> account and use the Tidepool uploader on your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> phone, the data in Health is uploaded to your Tidepool database where you can view displays with the <a href="https://loopkit.github.io/looptips/data/tidepool/">Tidepool web browser tool</a>.</p>
-<h2 id="how-do-i-modify-apple-healthkit-permissions">How Do I Modify Apple HealthKit Permissions<a class="headerlink" href="#how-do-i-modify-apple-healthkit-permissions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can review the Apple HealthKit permissions screen at any time.  </p>
-<p>Simply open the Apple Health app (<img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /> icon)</p>
+<h3 id="tidepool-and-apple-healthkit"><em>Tidepool</em> and <em>Apple</em> HealthKit<a class="headerlink" href="#tidepool-and-apple-healthkit" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have a <a href="https://tidepool.org"><em>Tidepool</em></a> account and use the <em>Tidepool</em> uploader on your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> phone, the data in Health is uploaded to your <em>Tidepool</em> database where you can view displays with the <a href="https://loopkit.github.io/looptips/data/tidepool/"><em>Tidepool</em> web browser tool</a>.</p>
+<h2 id="how-do-i-modify-apple-healthkit-permissions">How Do I Modify <em>Apple</em> HealthKit Permissions<a class="headerlink" href="#how-do-i-modify-apple-healthkit-permissions" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-health-permissions"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Health Permissions<a class="headerlink" href="#loop-health-permissions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can review and modify the <em>Apple</em> HealthKit permissions for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>Open the <em>Apple</em> Health app (<img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg" title=":heart:" /> icon)</p>
 <ul>
 <li>Find the toolbar at the bottom that says Sharing</li>
 <li>Scroll to the bottom of Sharing</li>
-<li>Select Apps</li>
-<li>Select <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>Select <em>Apps</em></li>
+<li>Select <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></li>
 </ul>
 <p>At this point, you can review and modify the settings.</p>
+<h3 id="cgm-health-permissions"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Health Permissions<a class="headerlink" href="#cgm-health-permissions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you choose to, you may add permission for your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> app to write to <em>Apple</em> Health. <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will read glucose from <em>Apple</em> Health, but only while the phone is unlocked and the app is open.</p>
+<p>Note that if a glucose value is added to <em>Apple</em> Health "now", <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will pick up that value and use it for the glucose prediction. This can happen with a finger-stick entry or some Libre third-party apps, but not with <em>Dexcom</em>, which has a 3-hour delay before writing to Health.</p>
+<h4 id="dexcom"><em>Dexcom</em><a class="headerlink" href="#dexcom" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The <em>Dexcom</em> app for both G6 and G7 has a 3-hour delay before writing to the Health app. If you tap Glucose data in Health, scroll to the bottom to select <code>Show All Data</code> and then scroll back in time, notice the <code>Loop</code> icon is replaced by either the <code>G6</code> or <code>G7</code> icon starting 3 hours ago.</p>
+<p>If you happen to wear a <em>Dexcom</em> G6 and G7 sensor at the same time, then starting 3 hours in the past, both sensor traces will show up in the <code>Loop Glucose chart</code>.</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> only uses data from the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> you selected as your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> for closed-loop insulin delivery, but don't be surprised at the double trace if you want to wear both during the transition from G6 to G7.</p>
+<div class="admonition tip">
+<p class="admonition-title">Add Permission to Health for <em>Dexcom</em> to Write Glucose</p>
+<p>If either the G6 or the G7 has permission to write to health, then <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will delete the glucose values that it wrote to health 3 hours earlier. That's when the <em>Dexcom</em> app will start writing its glucose values and you only want one to show up in Health history.</p>
+<p>If you transition from G6 to G7 (or alternate back and forth), be sure that at least the app you are currently using has permission to write to health. (I inadvertently forgot to turn on health permission for G7. By the time I noticed, I had a gap of several days in my Apple Health storage of glucose values.)</p>
+</div>
+<h4 id="libre"><em>Libre</em><a class="headerlink" href="#libre" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>There are several choices for reading <em>Libre</em> sensors.</p>
+<p>With <code>Loop dev</code> (will be <code>Loop 3.4.x</code> after release), <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">LibreTransmitter</a> is integrated with the <code>Loop</code> app.</p>
+<p>The frequent updates (1-minute glucose data) provided by <em>Libre</em> did cause some issues with released versions (<code>Loop 3.0</code> and <code>Loop 3.2.x</code> with customizations that use various third-party apps to read the <em>Libre</em>). These were fixed initially by modifying the third-party apps to limit how frequently they supplied glucose data.</p>
+<p>With <code>Loop dev</code> (will be <code>Loop 3.4.x</code> after release), the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app only initiates a closed-loop cycle automatically following a new glucose value if it has been more than 4.2 minutes since the last one.</p>
+<p><code>Loop 3.0</code> and <code>Loop 3.2.x</code> versions do not have that limitation on how frequently <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> responds to a new glucose reading. There is a <a href="https://www.loopandlearn.org/custom-code/#loop-cycle-time">Customization</a> that incorporates the 4.2 minute interval check which can be applied to <abbr title="Latest release with major updates">Loop 3</abbr>.2.2.</p>
 <h2 id="how-do-i-change-glucose-units">How Do I Change Glucose Units?<a class="headerlink" href="#how-do-i-change-glucose-units" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The glucose units (mg/dL or mmol/L) <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses match what is in Apple Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for Dexcom Share and it translates units for you - not sure about other devices.</p>
+<p>The glucose units (mg/dL or mmol/L) <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> uses match what is in <em>Apple</em> Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for <em>Dexcom</em> Share and it translates units for you - not sure about other devices.</p>
 <ul>
 <li>These instructions to change Blood Glucose units are for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod)">iOS</abbr> 15<ul>
 <li>Select the Health app (Heart icon)</li>
