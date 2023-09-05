@@ -161,13 +161,19 @@ If the Dosing Strategy is configured to Temp Basal Only, then the maximum basal 
 
 ### Maximum Bolus
 
-Maximum Bolus is the highest bolus amount that you will allow Loop to recommend at one time to cover carbs or bring down high glucose.
+Maximum Bolus is the highest bolus amount that you will allow Loop to recommend at one time to cover carbs or bring down high glucose. The value the user selects for Maximum Bolus is also used to set a maximum level of IOB for **automated** dosing.
 
-If you manually enter a value in the Bolus screen that is greater than the Maximum Bolus setting, Loop will show a warning message and refuse to bolus that amount.
+1. Maximum Bolus is the largest single bolus that Loop will recommend or allow the user to bolus in a single action
+1. Maximum Automatic IOB is two times the value of Maximum Bolus
+    * The Loop algorithm will not **automatically** dose any value that would cause the user's IOB to exceed Maximum Automatic IOB
+    * The user can exceed Maximum Automatic IOB with a **manual** bolus
+    * The recommended manual bolus amount is limited by Maximum Bolus
+
+If you manually enter a value in the Bolus screen that is greater than the Maximum Bolus setting and press `Deliver`, Loop will show a warning message and refuse to bolus that amount.
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
 
-If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals.
+If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals. Automatic dosing is limited to keep the user's IOB less than two times the Maximum Bolus setting.
 
 [Guardrails for Maximum Bolus](#guardrails-for-maximum-bolus)
 
@@ -254,7 +260,6 @@ The font color in the value picker has the following meaning:
     * Generic Pump rates from 0.05 U/hr to 30 U/hr in steps of 0.05
 * Top value available on the picker is your Maximum Basal Rate (once that is set)
 
-
 #### Guardrails for Maximum Basal Rate
 
 * Recommended maximum value available on the picker is 6.4 times the highest basal rate in your scheduled basal rates
@@ -264,7 +269,9 @@ The font color in the value picker has the following meaning:
 
 #### Guardrails for Maximum Bolus
 
-The maximum bolus is limited by your pump, but it is a good idea to limit it to the maximum you use for a common "big" meal. This only limits the bolus for a single dose.
+The maximum bolus is limited by your pump, but it is a good idea to limit it to the maximum you use for a common "big" meal. This limits the bolus for a single **manual** dose.
+
+This setting also limits how much **automated** dosing is allowed. Loop will not automatically increase the user's IOB above two times the Maximum Bolus. This is true with <code>Dosing Strategy</code> of <code>Temp Basal Only</code> or <code>Automatic Bolus</code>.
 
 #### Guardrails for Carb Ratios
 
