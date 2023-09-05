@@ -1061,6 +1061,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#carb-ratios" class="md-nav__link">
+    Carb Ratios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#basal-rates" class="md-nav__link">
     Basal Rates
   </a>
@@ -1084,13 +1091,6 @@
           <li class="md-nav__item">
   <a href="#maximum-bolus" class="md-nav__link">
     Maximum Bolus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carb-ratios" class="md-nav__link">
-    Carb Ratios
   </a>
   
 </li>
@@ -2359,6 +2359,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#carb-ratios" class="md-nav__link">
+    Carb Ratios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#basal-rates" class="md-nav__link">
     Basal Rates
   </a>
@@ -2382,13 +2389,6 @@
           <li class="md-nav__item">
   <a href="#maximum-bolus" class="md-nav__link">
     Maximum Bolus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#carb-ratios" class="md-nav__link">
-    Carb Ratios
   </a>
   
 </li>
@@ -2523,6 +2523,17 @@
 </ul>
 </div>
 <p><a href="#guardrails-for-pre-meal-range"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for <abbr title="modify the correction range for up to one hour by tapping on an icon in the toolbar">Pre-Meal Range</abbr></a></p>
+<h3 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.</p>
+<ul>
+<li>At least one carb ratio must be entered<ul>
+<li>Use the &plus; sign, picker wheels and then tap "Add"</li>
+<li>The method was described in the <a href="#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> section</li>
+</ul>
+</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> supports 1 to 48 carb ratios per day</li>
+</ul>
+<p><a href="#guardrails-for-carb-ratios"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Carb Ratios</a></p>
 <h3 id="basal-rates">Basal Rates<a class="headerlink" href="#basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your Basal Rate of insulin is the number of units per hour that you want to use to cover your background insulin needs.</p>
 <ul>
@@ -2547,22 +2558,20 @@
 <p>If the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is configured to <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>, then the maximum basal rate can be used to limit how much extra insulin can be supplied automatically.</p>
 <p><a href="#guardrails-for-maximum-basal-rate"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Maximum Basal Rate</a></p>
 <h3 id="maximum-bolus">Maximum Bolus<a class="headerlink" href="#maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Maximum Bolus is the highest bolus amount that you will allow <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to recommend at one time to cover carbs or bring down high glucose.</p>
-<p>If you manually enter a value in the Bolus screen that is greater than the Maximum Bolus setting, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will show a warning message and refuse to bolus that amount.</p>
-<p>For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.</p>
-<p>If the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is configured to <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals.</p>
-<p><a href="#guardrails-for-maximum-bolus"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Maximum Bolus</a></p>
-<h3 id="carb-ratios">Carb Ratios<a class="headerlink" href="#carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.</p>
-<ul>
-<li>At least one carb ratio must be entered<ul>
-<li>Use the &plus; sign, picker wheels and then tap "Add"</li>
-<li>The method was described in the <a href="#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> section</li>
+<p>Maximum Bolus is the highest bolus amount that you will allow <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to recommend at one time to cover carbs or bring down high glucose. The value the user selects for Maximum Bolus is also used to set a maximum level of <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for <strong>automated</strong> dosing.</p>
+<ol>
+<li>Maximum Bolus is the largest single bolus that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will recommend or allow the user to bolus in a single action</li>
+<li>Maximum Automatic <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is two times the value of Maximum Bolus<ul>
+<li>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm will not <strong>automatically</strong> dose any value that would cause the user's <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> to exceed Maximum Automatic <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></li>
+<li>The user can exceed Maximum Automatic <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> with a <strong>manual</strong> bolus</li>
+<li>The recommended manual bolus amount is limited by Maximum Bolus</li>
 </ul>
 </li>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> supports 1 to 48 carb ratios per day</li>
-</ul>
-<p><a href="#guardrails-for-carb-ratios"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Carb Ratios</a></p>
+</ol>
+<p>If you manually enter a value in the Bolus screen that is greater than the Maximum Bolus setting and press <code>Deliver</code>, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will show a warning message and refuse to bolus that amount.</p>
+<p>For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.</p>
+<p>If the <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> is configured to <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals. Automatic dosing is limited to keep the user's <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> less than two times the Maximum Bolus setting.</p>
+<p><a href="#guardrails-for-maximum-bolus"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Maximum Bolus</a></p>
 <h3 id="insulin-sensitivities">Insulin Sensitivities<a class="headerlink" href="#insulin-sensitivities" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Your Insulin Sensitivities refer to the drop in glucose expected from one unit of insulin over the full duration of the insulin action time. You may have also seen the term <abbr title="how many points your blood sugar will drop for each unit of insulin; Loop calls this Insulin Sensitivity Factor (ISF)">Correction Factor</abbr> or Insulin Sensitivity Factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>). These are all referring to the same setting.</p>
 <ul>
@@ -2736,7 +2745,8 @@
 </li>
 </ul>
 <h4 id="guardrails-for-maximum-bolus"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Maximum Bolus<a class="headerlink" href="#guardrails-for-maximum-bolus" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The maximum bolus is limited by your pump, but it is a good idea to limit it to the maximum you use for a common "big" meal. This only limits the bolus for a single dose.</p>
+<p>The maximum bolus is limited by your pump, but it is a good idea to limit it to the maximum you use for a common "big" meal. This limits the bolus for a single <strong>manual</strong> dose.</p>
+<p>This setting also limits how much <strong>automated</strong> dosing is allowed. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will not automatically increase the user's <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> above two times the Maximum Bolus. This is true with <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> of <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> or <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code>.</p>
 <h4 id="guardrails-for-carb-ratios"><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Carb Ratios<a class="headerlink" href="#guardrails-for-carb-ratios" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Remember, <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr> goes in the denominator when calculating insulin dose for carbs. So the min - max values in the table below correspond to stronger - weaker values for <abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>.</p>
 <table>

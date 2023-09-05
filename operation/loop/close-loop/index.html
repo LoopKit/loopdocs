@@ -1405,6 +1405,33 @@
     Automated Dosing
   </a>
   
+    <nav class="md-nav" aria-label="Automated Dosing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bolus-with-no-carbs" class="md-nav__link">
+    Bolus with No Carbs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carbs-with-no-bolus" class="md-nav__link">
+    Carbs with No Bolus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-does-automatic-dosing-happen" class="md-nav__link">
+    When does Automatic Dosing Happen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2314,6 +2341,33 @@
     Automated Dosing
   </a>
   
+    <nav class="md-nav" aria-label="Automated Dosing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bolus-with-no-carbs" class="md-nav__link">
+    Bolus with No Carbs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carbs-with-no-bolus" class="md-nav__link">
+    Carbs with No Bolus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-does-automatic-dosing-happen" class="md-nav__link">
+    When does Automatic Dosing Happen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2377,7 +2431,13 @@
 </ul>
 <p>This is definitely an area where YDMV (your diabetes may vary), so don't expect or accept that what works for others will work for you.  Test, observe, and adjust as needed.</p>
 <h2 id="automated-dosing">Automated Dosing<a class="headerlink" href="#automated-dosing" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> calculates a predicted glucose curve based on your programmed settings for carb ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>) and insulin sensitivity factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>), using your glucose, insulin and carb history. </p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> calculates a predicted glucose curve based on your programmed settings for carb ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>) and insulin sensitivity factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>), using your glucose, insulin and carb history.</p>
+<p>Two scenarios are given below to help illustrate the closed-loop automatic actions of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. A more typical scenario is to enter carbs and then use <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s recommendation for an appropriate bolus.</p>
+<ol>
+<li>Enter a bolus with no carb entry</li>
+<li>Enter a carb entry without a bolus</li>
+</ol>
+<h3 id="bolus-with-no-carbs">Bolus with No Carbs<a class="headerlink" href="#bolus-with-no-carbs" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you enter a bolus without entering carbs, the prediction will be for your glucose to go low. (The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> model calculates a negative number for recommended bolus.) For this case, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> issues a <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> to prevent the low, typically 0.0 U/hr but always less than your scheduled basal rate.</p>
 <div class="admonition tip">
 <p class="admonition-title"><abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></p>
@@ -2386,19 +2446,19 @@
 <li><code><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr></code> is the current active insulin (above or below the scheduled basal rate)</li>
 </ul>
 </div>
-<p>If you enter carbs and select <code>Save without bolusing</code>, you have <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> without associated <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. In that case, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predicts your glucose will start rising and updates the recommended bolus, which includes consideration of your <a href="../../../loop-3/therapy-settings/#glucose-safety-limit"><code>Glucose Safety Limit</code></a>, <a href="../../../loop-3/therapy-settings/#correction-range"><code>Correction Range</code></a> and <a href="../../../loop-3/therapy-settings/#maximum-bolus"><code>Maximum Bolus</code></a> . If that recommended bolus is positive, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> might deliver some part of that bolus automatically - the exact percentage and timing of that delivery depends on your <a href="../../../loop-3/settings/#dosing-strategy"><code>Dosing Strategy</code></a>. At each loop cycle (new glucose reading), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the prediction and calculates a new recommended bolus. When you enter carbs without bolusing, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> may start delivering some insulin, but if your glucose doesn't start rising as <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> expects, it revises the recommended bolus.</p>
-<div class="admonition tip">
-<p class="admonition-title">When does <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> start dosing?</p>
-<p>The glucose prediction is for the next 6 hours (the duration of insulin action), which is why the predicted glucose plot is included on the bolus screen. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> considers glucose prediction with respect to your scheduled <code>Correction Range</code> over the full <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>, weighting closer predictions more than later predictions, when calculating <a href="../../algorithm/bolus/">Recommended Bolus</a>.</p>
-<p>It is actually easier to answer when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will <strong>not</strong> automatically increase insulin delivery:</p>
+<h3 id="carbs-with-no-bolus">Carbs with No Bolus<a class="headerlink" href="#carbs-with-no-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you enter carbs and select <code>Save without bolusing</code>, you have <abbr title="Carbs on Board, affects automated insulin delivery: the g of carbohydrates that Loop expects to be absorbed and uses for glucose prediction">COB</abbr> without associated <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. In that case, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predicts your glucose will start rising and updates the recommended bolus, which includes consideration of your <a href="../../../loop-3/therapy-settings/#glucose-safety-limit"><code>Glucose Safety Limit</code></a>, <a href="../../../loop-3/therapy-settings/#correction-range"><code>Correction Range</code></a> and <a href="../../../loop-3/therapy-settings/#maximum-bolus"><code>Maximum Bolus</code></a> . If that recommended bolus is positive, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> might deliver some part of that bolus automatically - the exact percentage and timing of that delivery depends on your <a href="../../../loop-3/settings/#dosing-strategy"><code>Dosing Strategy</code></a>. At each loop cycle (new glucose reading), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates the prediction and calculates a new recommended bolus. When you enter carbs without bolusing, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> may start delivering some insulin, but if your glucose doesn't start rising as <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> expects, it revises the recommended bolus with each new glucose value.</p>
+<h3 id="when-does-automatic-dosing-happen">When does Automatic Dosing Happen<a class="headerlink" href="#when-does-automatic-dosing-happen" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Automatic dosing only happens when <code><abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr></code> is enabled in the settings screen.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> generates a glucose prediction over the next 6 hours (the duration of insulin action), which is why the predicted glucose plot is included on the bolus screen. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> considers glucose prediction with respect to your scheduled <code><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></code> over the full <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>, weighting closer predictions more than later predictions, when calculating <a href="../../algorithm/bolus/">Recommended Bolus</a>.</p>
+<p>It is actually easier to answer when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will <strong>not</strong> automatically increase insulin delivery.</p>
+<p>In the situations listed below, the prediction at the end of the <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> can be significantly higher than your <code><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></code> but no automatic increase in insulin delivery will occur:</p>
 <ul>
-<li>If at any time in the next 3 hours, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predicts glucose below <code>Glucose Safety Limit</code>, <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> is immediately set to 0.0 U/hr and recommended bolus is set 0 U</li>
-<li>If the eventual glucose (at the end of 6 hours) is greater than your <code>Correction Range</code> but the prediction dips below the low-end of your <code>Correction Range</code>, there is no automatic delivery<ul>
-<li>The recommended bolus can be positive, which you see if you tap on bolus icon manually</li>
+<li>If at any time in the next 3 hours, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predicts glucose below <code><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr></code>, <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> is immediately set to 0.0 U/hr and recommended bolus is set 0 U</li>
+<li>If the prediction dips below the low-end of your <code><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></code>, there is no <strong>automatic</strong> increase over scheduled basal</li>
+<li>If the current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is two times the <code>Maximum Bolus</code> setting, there is no <strong>automatic</strong> increase over scheduled basal</li>
 </ul>
-</li>
-</ul>
-</div>
+<p>Even in cases where <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> does not automatically increase insulin delivery, the recommended bolus might be positive, which you see if you tap on the bolus icon manually.</p>
 
 
 
