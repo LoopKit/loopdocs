@@ -71,15 +71,16 @@ If you enter carbs and select `Save without bolusing`, you have COB without asso
 
 ### When does Automatic Dosing Happen
 
-Automatic dosing only happens when closed-loop is enabled in the settings screen.
+Automatic dosing only happens when <code>Closed Loop</code> is enabled in the settings screen.
 
 Loop generates a glucose prediction over the next 6 hours (the duration of insulin action), which is why the predicted glucose plot is included on the bolus screen. Loop considers glucose prediction with respect to your scheduled <code>Correction Range</code> over the full DIA, weighting closer predictions more than later predictions, when calculating [Recommended Bolus](../algorithm/bolus.md).
 
-It is actually easier to answer when Loop will **not** automatically increase insulin delivery. In these cases, the prediction at the end of the DIA can be significantly higher than your <code>Correction Range</code> but no automatic dosing will happen:
+It is actually easier to answer when Loop will **not** automatically increase insulin delivery.
+
+In the situations listed below, the prediction at the end of the DIA can be significantly higher than your <code>Correction Range</code> but no automatic increase in insulin delivery will occur:
 
 * If at any time in the next 3 hours, Loop predicts glucose below <code>Glucose Safety Limit</code>, <code>Temp Basal</code> is immediately set to 0.0 U/hr and recommended bolus is set 0 U
-* If the prediction dips below the low-end of your <code>Correction Range</code>, there is no **automatic** delivery
-* If the current IOB is two times the <code>Maximum Bolus</code> setting, there is no **automatic** delivery
+* If the prediction dips below the low-end of your <code>Correction Range</code>, there is no **automatic** increase over scheduled basal
+* If the current IOB is two times the <code>Maximum Bolus</code> setting, there is no **automatic** increase over scheduled basal
 
-
-Even in cases where Loop does not automatically dose, the recommended bolus might be positive, which you see if you tap on bolus icon manually.
+Even in cases where Loop does not automatically increase insulin delivery, the recommended bolus might be positive, which you see if you tap on the bolus icon manually.
