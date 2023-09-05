@@ -155,7 +155,7 @@ If you happen to wear a *Dexcom* G6 and G7 sensor at the same time, then startin
 *Loop* only uses data from the CGM you selected as your CGM for closed-loop insulin delivery, but don't be surprised at the double trace if you want to wear both during the transition from G6 to G7.
 
 !!! tip "Add Permission to Health for *Dexcom* to Write Glucose"
-    If either the G6 or the G7 has permission to write to *Apple Health*, then Loop will delete the *Loop* glucose data in *Apple Health* that is older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
+    If either the G6 or the G7 has permission to write to *Apple Health*, then Loop will delete the *Loop* glucose data in *Apple Health* that are older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
 
     If you transition from G6 to G7 (or alternate back and forth), be sure that at least the app you are currently using has permission to write to health. (I inadvertently forgot to turn on health permission for G7. By the time I noticed, I had a gap of several days in my *Apple Health* storage of glucose values.)
 

@@ -8,14 +8,16 @@ Most of the information is the same for Loop 2.2.x and Loop 3.
 
 Loop 2 and 3 differences:
 
+* Loop 3 uses the setting name of Glucose Safety Limit, which has the same meaning as Suspend Threshold in Loop 2
+* With Loop 3.2 and later
+    * Loop automatic delivery of insulin is limited when users IOB is two times the [<code>Maximum Bolus</code>](../../loop-3/therapy-settings.md#maximum-bolus) amount
 * Bolus Row: 
-    * With Loop 3
+    * With Loop 3.0 and later
         * The Recommended Bolus is provided AND the default for the Bolus is the recommended value
         * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
     * With Loop 2.2.x
         * The Recommended Bolus is provided but the default for the Bolus value is 0
         * If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row
-* Loop 3 uses the setting name of Glucose Safety Limit, which has the same meaning as Suspend Threshold in Loop 2
 
 ## Meal Bolus
 

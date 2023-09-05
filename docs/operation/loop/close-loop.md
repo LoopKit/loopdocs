@@ -50,7 +50,14 @@ This is definitely an area where YDMV (your diabetes may vary), so don't expect 
 
 ## Automated Dosing
 
-Loop calculates a predicted glucose curve based on your programmed settings for carb ratio (CR) and insulin sensitivity factor (ISF), using your glucose, insulin and carb history. 
+Loop calculates a predicted glucose curve based on your programmed settings for carb ratio (CR) and insulin sensitivity factor (ISF), using your glucose, insulin and carb history.
+
+Two scenarios are given below to help illustrate the closed-loop automatic actions of Loop. A more typical scenario is to enter carbs and then use Loop's recommendation for an appropriate bolus.
+
+1. Enter a bolus with no carb entry
+1. Enter a carb entry without a bolus
+
+### Bolus with No Carbs
 
 If you enter a bolus without entering carbs, the prediction will be for your glucose to go low. (The Loop model calculates a negative number for recommended bolus.) For this case, Loop issues a Temp Basal to prevent the low, typically 0.0 U/hr but always less than your scheduled basal rate.
 
@@ -58,13 +65,22 @@ If you enter a bolus without entering carbs, the prediction will be for your glu
     * <code>COB</code> is the carbohydrates (g) that Loop expects to be absorbed
     * <code>IOB</code> is the current active insulin (above or below the scheduled basal rate)
 
-If you enter carbs and select `Save without bolusing`, you have COB without associated IOB. In that case, Loop predicts your glucose will start rising and updates the recommended bolus, which includes consideration of your [`Glucose Safety Limit`](../../loop-3/therapy-settings.md#glucose-safety-limit), [`Correction Range`](../../loop-3/therapy-settings.md#correction-range) and [`Maximum Bolus`](../../loop-3/therapy-settings.md#maximum-bolus) . If that recommended bolus is positive, Loop might deliver some part of that bolus automatically - the exact percentage and timing of that delivery depends on your [`Dosing Strategy`](../../loop-3/settings.md#dosing-strategy). At each loop cycle (new glucose reading), Loop updates the prediction and calculates a new recommended bolus. When you enter carbs without bolusing, Loop may start delivering some insulin, but if your glucose doesn't start rising as Loop expects, it revises the recommended bolus.
+### Carbs with No Bolus
 
-!!! tip "When does Loop start dosing?"
-    The glucose prediction is for the next 6 hours (the duration of insulin action), which is why the predicted glucose plot is included on the bolus screen. Loop considers glucose prediction with respect to your scheduled `Correction Range` over the full DIA, weighting closer predictions more than later predictions, when calculating [Recommended Bolus](../algorithm/bolus.md).
-    
-    It is actually easier to answer when Loop will **not** automatically increase insulin delivery:
-    
-    * If at any time in the next 3 hours, Loop predicts glucose below `Glucose Safety Limit`, Temp Basal is immediately set to 0.0 U/hr and recommended bolus is set 0 U
-    * If the eventual glucose (at the end of 6 hours) is greater than your `Correction Range` but the prediction dips below the low-end of your `Correction Range`, there is no automatic delivery
-        * The recommended bolus can be positive, which you see if you tap on bolus icon manually
+If you enter carbs and select `Save without bolusing`, you have COB without associated IOB. In that case, Loop predicts your glucose will start rising and updates the recommended bolus, which includes consideration of your [`Glucose Safety Limit`](../../loop-3/therapy-settings.md#glucose-safety-limit), [`Correction Range`](../../loop-3/therapy-settings.md#correction-range) and [`Maximum Bolus`](../../loop-3/therapy-settings.md#maximum-bolus) . If that recommended bolus is positive, Loop might deliver some part of that bolus automatically - the exact percentage and timing of that delivery depends on your [`Dosing Strategy`](../../loop-3/settings.md#dosing-strategy). At each loop cycle (new glucose reading), Loop updates the prediction and calculates a new recommended bolus. When you enter carbs without bolusing, Loop may start delivering some insulin, but if your glucose doesn't start rising as Loop expects, it revises the recommended bolus with each new glucose value.
+
+### When does Automatic Dosing Happen
+
+Automatic dosing only happens when <code>Closed Loop</code> is enabled in the settings screen.
+
+Loop generates a glucose prediction over the next 6 hours (the duration of insulin action), which is why the predicted glucose plot is included on the bolus screen. Loop considers glucose prediction with respect to your scheduled <code>Correction Range</code> over the full DIA, weighting closer predictions more than later predictions, when calculating [Recommended Bolus](../algorithm/bolus.md).
+
+It is actually easier to answer when Loop will **not** automatically increase insulin delivery.
+
+In the situations listed below, the prediction at the end of the DIA can be significantly higher than your <code>Correction Range</code> but no automatic increase in insulin delivery will occur:
+
+* If at any time in the next 3 hours, Loop predicts glucose below <code>Glucose Safety Limit</code>, <code>Temp Basal</code> is immediately set to 0.0 U/hr and recommended bolus is set 0 U
+* If the prediction dips below the low-end of your <code>Correction Range</code>, there is no **automatic** increase over scheduled basal
+* If the current IOB is two times the <code>Maximum Bolus</code> setting, there is no **automatic** increase over scheduled basal
+
+Even in cases where Loop does not automatically increase insulin delivery, the recommended bolus might be positive, which you see if you tap on the bolus icon manually.

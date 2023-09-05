@@ -32,6 +32,10 @@ To add a CGM, go to the Settings screen ⚙️, tap on `Add CGM`, and tap on you
 ![graphic showing some of the CGMs available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
 {align="center"}
 
+If you later decide to use a different CGM type, you must first delete the CGM and then add CGM to choose the new one.
+
+*   For Dexcom G5, G6 or ONE, you must delete the CGM when you change transmitters (about once every 90 days)
+
 ### Dexcom G5, G6, ONE
 
 To use the Dexcom G5, G6 or ONE:
@@ -66,9 +70,15 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
 {align="center"}
 
 
+#### Change Dexcom Sensor
+
+When you change a Dexcom G5, G6 or ONE sensor, you do this in the Dexcom app. When the sensor completes warmup and CGM values are once again reported in the Dexcom app, Loop picks these values up because you are using the same Dexcom Transmitter.
+
 #### Change Dexcom Transmitter
 
-!!! info "FYI: When You Change Dexcom Transmitters"
+When you change the Dexcom G5, G6 or ONE Transmitter, you need to delete your CGM selection from Loop and then add it back after you complete the pairing with the transmitter in your Dexcom app.
+
+??? info "FYI: When You Change Dexcom Transmitters (click to open)"
 
     Before you change Dexcom transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. If you leave the transmitter connected in Loop, you may have trouble pairing your new transmitter. If pairing does work, then Loop will not get CGM data from the Dexcom app on your phone.
 
@@ -95,7 +105,7 @@ Minimal documentation is provided.
 !!! tip "Don't forget Health Permissions"
     For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*.
 
-    If either the G6 or the G7 has permission to write to *Apple Health*, then *Loop* will delete the *Loop* glucose data in *Apple Health* that is older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
+    If either the G6 or the G7 has permission to write to *Apple Health*, then *Loop* will delete the *Loop* glucose data in *Apple Health* that are older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
 
 ### Medtronic Enlite CGM
 
