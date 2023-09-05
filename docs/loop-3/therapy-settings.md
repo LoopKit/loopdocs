@@ -118,8 +118,18 @@ The GIF below shows three screens from various scenarios. The red box indicates 
     * If you do not add an entry, the pre-meal icon on the toolbar is disabled
     * If you add an entry, the pre-meal icon is activated for 1 hour or until carbs are entered or until the user cancels it
 
-
 [Guardrails for Pre-Meal Range](#guardrails-for-pre-meal-range)
+
+### Carb Ratios
+
+Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.
+
+* At least one carb ratio must be entered
+    * Use the &plus; sign, picker wheels and then tap "Add"
+    * The method was described in the [Correction Range](#correction-range) section
+* Loop supports 1 to 48 carb ratios per day
+
+[Guardrails for Carb Ratios](#guardrails-for-carb-ratios)
 
 ### Basal Rates
 
@@ -160,19 +170,6 @@ For safety, don't set a maximum bolus limit any higher than your typical large m
 If the Dosing Strategy is configured to Automatic Bolus, then the maximum bolus that is automatically supplied is 40% of the maximum bolus, but this can be applied at 5-minute intervals.
 
 [Guardrails for Maximum Bolus](#guardrails-for-maximum-bolus)
-
-
-### Carb Ratios
-
-Your Carb Ratio is the number of grams of carbohydrates covered by one unit of insulin.
-
-* At least one carb ratio must be entered
-    * Use the &plus; sign, picker wheels and then tap "Add"
-    * The method was described in the [Correction Range](#correction-range) section
-* Loop supports 1 to 48 carb ratios per day
-
-[Guardrails for Carb Ratios](#guardrails-for-carb-ratios)
-
 
 ### Insulin Sensitivities
 
