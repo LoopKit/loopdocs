@@ -323,14 +323,14 @@ The `Keys` screen appears again with content similar to the graphic below; the k
 ### Do Not Confuse Your Keys
 
 !!! important "<span class="loop-big">`API Key`</span> vs <span class="loop-big">`APN Key`</span>"
-    If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
+    If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
     The <code>Secrets</code> for building with *GitHub* use the <span class="loop-bigger">`API Key`</span>.
 
     The config vars for `Nightscout` use the <span class="loop-bigger">`APN Key`</span>.
 
     * If you are using remote commands with `Nightscout` and building with <code>*GitHub* Browser Build</code>
-        * [Remote Commands Config Vars](../nightscout/remote-overrides.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
+        * [Remote Commands Config Vars](../nightscout/remote-config.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
     * This is true for using *<code>Nightscout</code>* directly or using *<code>Loop Caregiver</code>*
 
 ### Done with *Apple* Secrets
