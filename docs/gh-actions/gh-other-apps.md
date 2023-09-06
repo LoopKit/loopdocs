@@ -4,8 +4,8 @@ Once Loop 3 was released with the ability to build using a browser, a lot of oth
 
 The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account. As other apps are updated, they will be added to this page and the list below will be updated.
 
-* LoopCaregiver
-* Loop Follow
+* <code>Loop Caregiver</code>
+* <code>Loop Follow</code>
 
 !!! warning "GH_PAT - NEW RECOMMENDATION"
     It is now recommended that you use a *GitHub* Personal Access Token (GH_PAT) that never expires
@@ -28,7 +28,7 @@ Wait until the repository you are interested in adds the capability of *GitHub* 
         * Use that table to find the link of the repository you will fork
 
 !!! important "Use the repository for the application you are building"
-    Many graphics on this page show `LoopWorkspace`, just remember to use the repository for the app you want to build, that is either `LoopFollow` or `LoopCaregiver`.
+    Many graphics on this page show <code>LoopWorkspace</code>, just remember to use the repository for the app you want to build, that is either <code>Loop Follow</code> or <code>Loop Caregiver</code>.
 
 ## Fork and Add Secrets
 
@@ -38,7 +38,7 @@ Wait until the repository you are interested in adds the capability of *GitHub* 
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| LoopCaregiver | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: LoopCaregiver](../nightscout/remote-overrides.md#loopcaregiver) |
+| <code>Loop Caregiver</code> | [https://github.com/LoopKit/<code>Loop Caregiver</code>](https://github.com/LoopKit/<code>Loop Caregiver</code>) | [LoopDocs: <code>Loop Caregiver</code>](../nightscout/remote-overrides.md#loopcaregiver) |
 |Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
 
 
@@ -77,7 +77,7 @@ Open the text file in which you maintain a copy of your 6 Secrets so you can cop
     ![dialog for entering a new secret](img/repeat-secret-dialog.png){width="500"}
     {align="center"}
 
-Once all six Secrets are added, you will either continue to add the identifiers (LoopCaregiver) or use the updated method to first validate your secrets (Loop Follow).
+Once all six Secrets are added, you will either continue to add the identifiers (<code>Loop Caregiver</code>) or use the updated method to first validate your secrets (Loop Follow).
 
 ## Action: Validate Secrets
 
@@ -86,7 +86,7 @@ The first action step is to Validate Secrets.
 ![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
 {align="left"}
 
-When building LoopCaregiver, the new steps are not yet available, so you'll skip ahead to [Action: Add Identifiers](#action-add-identifiers).
+When building <code>Loop Caregiver</code>, the new steps are not yet available, so you'll skip ahead to [Action: Add Identifiers](#action-add-identifiers).
 
 Near the top middle of your Repository fork, click on the "Actions" tab.
 
@@ -97,13 +97,13 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your `LoopFollow` or `LoopCaregiver`  repository and enable workflows if needed
+1. Click on the "Actions" tab of your <code>Loop Follow</code> or <code>Loop Caregiver</code>  repository and enable workflows if needed
 1. On the left side, select "1. Validate Secrets".
 1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 1. The workflow will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.
 
-Until LoopCaregiver is also updated, the instructions for the rest of this page won't include the numbers for the successive steps.
+Until <code>Loop Caregiver</code> is also updated, the instructions for the rest of this page won't include the numbers for the successive steps.
 
 ## Action: Add Identifiers
 
@@ -151,14 +151,14 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
-| LoopCaregiver | LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
+| <code><code>Loop Caregiver</code></code> | <code><code>Loop Caregiver</code></code> | com.TEAMID.loopkit.<code>Loop Caregiver</code> |
 | Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
-Other apps, like LoopCaregiver and Loop Follow, do not require updates to Identifiers after they are generated.
+Other apps, like <code>Loop Caregiver</code> and Loop Follow, do not require updates to Identifiers after they are generated.
 
-!!! warning "LoopCaregiver is under development"
+!!! warning "<code><code>Loop Caregiver</code></code> is under development"
     This app is proving very useful already, but it is still under development. When you fork this from the repository, you will notice that dev branch is the default.
 
     Please follow the discussion in the [Loop Caregiver App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) zulipchat stream.
@@ -181,7 +181,7 @@ This requires you to provide some information. Examine the table below for the b
 
 | App Name | Bundle ID |
 | --- | --- |
-| LoopCaregiver | com.TEAMID.loopkit.LoopCaregiver |
+| <code><code>Loop Caregiver</code></code> | com.TEAMID.loopkit.<code>Loop Caregiver</code> |
 | Loop Follow | com.TEAMID.LoopFollow |
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 

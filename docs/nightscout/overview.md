@@ -13,7 +13,7 @@ For caregivers, Nightscout enables remote monitoring and even the ability to iss
         * Overrides can be enabled and disabled
         * Carbs can be entered
         * Boluses can be commanded
-        * LoopCaregiver app (under development, iOS only) enables the following from the caregiver's phone
+        * <span translate="no">Loop Caregiver</span> app (under development, iOS only) enables the following from the caregiver's phone
             * monitor Loop
             * issue remote commands for carbs, bolus and overrides
 
