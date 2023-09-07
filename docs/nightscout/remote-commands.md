@@ -179,6 +179,8 @@ You'll also need to have your [site authenticated](update_user.md#authenticate-s
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
 Within there, you will find all your <span translate="no">Loop</span> override presets already loaded for you.
 
+#### Start and End Remote Override
+
 ![img/careportal-overrides.PNG](img/careportal-overrides.PNG){width="500"}
 {align="center"}
 
@@ -188,6 +190,24 @@ The Looper will see a banner notification that a remote command has been sent wi
 {align="center"}
 
 Canceling an override through *Nightscout careportal* is as simple as selecting the event type `Temporary Override Cancel` and submitting.
+
+#### Command Remote Bolus or Carb Entry
+
+Open your Nightscout site in a browser or app.
+
+* Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` dropdown menu to find `Remote Carb Entry` or `Remote Bolus Entry`
+* Fill out the treatment log until you get to the OTP row
+    * When using Safari, the OTP code is automatically offered - might need to tap twice
+    * For other authentication apps (Authenticator, 1Password, etc)
+        * Tap on the code in the authentication app and copy to your clipboard
+        * In Nightscout and paste that code into the OTP box
+    * Click “Submit Form”
+
+Note that Loop will honor both the current OTP code and the one that just expired.
+
+f the Looper is with you, you can see the notification on their phone. You can see the entry on the <span translate="no">Loop</span> carbohydrate or the insulin displays to see if it went through.
+
+If the Looper is not with you, you should see the result in the <span translate="no">Nightscout</span> dashboard within 5 minutes.
 
 ### Shortcuts
 
