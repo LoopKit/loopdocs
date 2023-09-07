@@ -7,7 +7,10 @@
 
 ## Requirements
 
-Remote commands require the configuration steps from [Remote Configuration](remote-config.md).
+All remote commands require the configuration steps from [Remote Configuration](remote-config.md).
+
+* Remote Overrides do not require a <span translate="no">One Time Password</span> (OTP)
+* A new <span translate="no">One Time Password</span> (OTP) is required for each remote command that issues a bolus or adds a carb entry
 
 !!! question "Do I have to use <span translate="no">Loop Caregiver</span>?"
     There are a number of methods for using remote commands.
@@ -16,7 +19,18 @@ Remote commands require the configuration steps from [Remote Configuration](remo
 
 ## Remote Overrides
 
-Remote Overrides do not require a <span translate="no">One Time Passcode</span> (OTP). There are some versions of <span translate="no">Nightscout</span> that provide a row for entry of an OTP for <span translate="no">Temporary Override</span> in the <span translate="no">Nightscout Careportal</span>. Leave that row blank.
+Remote Overrides do not require a <span translate="no">One Time Passworde</span> (OTP). There are some versions of <span translate="no">Nightscout</span> that provide a row for entry of an OTP for <span translate="no">Temporary Override</span> in the <span translate="no">Nightscout Careportal</span>. Leave that row blank.
+
+## Set up an Authentication App
+
+After you have set up your Nightscout site and confirmed you can successfully receive remote overrides [Step 4: Make Sure Remote Overrides Work](remote-config.md#step-4-make-sure-remote-override-works), you need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
+
+One of the nice features of <span translate="no">Loop Caregiver</span> is that it handles the <span translate="no">One-Time-Password</span> (OTP) requirements for you.
+
+But even if you choose to use <span translate="no">Loop Caregiver</span>, you might still want to configure an authentication app for cases where you don't have access to your <span translate="no">Loop Caregiver</span> phone.
+
+ Alternatively, build the Caregiver app which will handle the one-time passwords for you. Setup the authentication app on the caregiver’s device, not the Loopers device. There are several authentication apps that support one-time-passwords.
+
 
 ## FAQs on Remote Overrides
 

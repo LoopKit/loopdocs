@@ -1,12 +1,17 @@
 ## Remote Caregivers
 
-With Loop 3, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides and issuing remote bolus commands and adding remote carb entries.
+With <span translate="no">Loop</span> 3, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides, issuing remote bolus commands and adding remote carb entries. With <span translate="no">Loop</span> 2, only overrides can be turned on or off remotely.
 
-Remote Commanding requires:
+Remote commands to the <span translate="no">Loop</span> phone go through their <span translate="no">Nightscout</span> site. For security, any command to deliver a bolus or add a carb entry requires a one-time-password (OTP) to be used with each remote command. These codes are unique to your combined <span translate="no">Loop</span> and <span translate="no">Nightscout</span> configuration. An authentication app needs to be installed on the device sending the remote boluses/carbs, which is paired to Loop. Alternatively, the <span translate="no">Loop Caregiver</span> app can be used which handles these requirements and offers a Loop-like user interface.
 
+### Remote Commanding Requirements:
+
+* <span translate="no">Loop</span> version 3.2.0 or newer
+    * version 3.0 works but is not recommended for other reasons
+* *Apple Push Notifications* (</span>APN</span>) created with the *Apple Developer ID* that built the *Loop* app
 * <span translate="no">Nightscout</span> version 14.2.6 or newer
-* *Apple Push Notifications* (</span>APN</span>) created with the *Apple Developer ID* used to build the *Loop* app
-* Several configuration variables added to your Nightscout site
+    * Several configuration variables must be added
+* Ability to generate a One-Time-Password (OTP)
 
 !!! question "What about Older Versions?"
     Caregivers for those using older versions of Loop can modify `Overrides` remotely but cannot send remote bolus or carb commands.
@@ -18,29 +23,15 @@ Remote Commanding requires:
 
 ## How does this work?
 
-The <span translate="no">Loop</span> code and <span translate="no">Nightscout</span> code work together to provide this capability. However, remote commands and override control requires *Apple Push Notifications* (APN).
+The <span translate="no">Loop</span> code and <span translate="no">Nightscout</span> code work together to provide this capability. However, remote commands and override control requires <span translate="no">Apple Push Notifications</span> (APN).
 
-* The Apple Developer ID used to build the Loop app must be used to set up the push notifications
-    * If you built Nightscout and the Loop app yourself, follow the directions to set up [Remote Configuration](remote-config.md)
-* Some providers who supply `Nightscout as a service` or `Hosted Nightscout` can assist you in getting your APN information added to your Nightscout variables if you need help
+* The <span translate="no">Apple Developer ID</span> used to build the <span translate="no">Loop</span> app must be used to set up the push notifications
+    * If you built <span translate="no">Nightscout</span> and the <span translate="no">Loop</span> app yourself, follow the directions to set up [Remote Configuration](remote-config.md)
+* Most providers who supply `Nightscout as a service` or `Hosted Nightscout` can assist you in getting your APN information added to your <span translate="no">Nightscout</span> variables; one requires an added monthly subscription fee
     * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user)
     * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
         * Warning: examine the `Loop remote carbs/bolus` row
 
-!!! warning "Remote Build"
-    There are several methods for building remotely for your family members (or even yourself).
-
-    * [<span translate="no">LoopDocs</span>: <span translate="no">GitHub Browser Build</span>](../gh-actions/gh-overview.md): build on a browser (no need for a Mac) and send <span translate="no">Loop</span> to your phone using *TestFlight*
-    * [<span translate="no">LoopDocs</span>: *TestFlight* from *Xcode*](../build/testflight-xcode.md): build using Mac-Xcode and then send *Loop* to your phone using *TestFlight*
-    * [<span translate="no">Loop and Learn</span>: Remote Build with *Diawi*](https://www.loopandlearn.org/remote-build/) allows you to save a build created by *Xcode*, store it in the cloud, and then download and install it on your phone later
-    
-    Any remote build method requires the following <span translate="no">Nightscout Config Var</span> be added to <span translate="no">Nightscout</span>:
-    
-    `LOOP_PUSH_SERVER_ENVIRONMENT = production`
-    
-    Be aware that if you return to building directly from *Xcode*, you must disable that config var from <span translate="no">Nightscout</span> and restart the server.
-    
-    Note - this is covered in detail on the [Remote Configuration](remote-config.md) page.
 
 ## Next Steps
 
