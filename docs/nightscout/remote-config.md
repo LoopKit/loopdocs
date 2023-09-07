@@ -139,9 +139,13 @@ When executed properly, you should have something that looks like this for the t
 
 ## Step 4: Make Sure Remote Override Works
 
-If remote overrides aren’t functioning, remote carb/bolus won't either. 
+If remote overrides do not function, remote commands for delivering a bolus or adding a carb entry will not work either.
 
-After you finish setting up your <span translate="no">Nightscout</span> site, use the Looper's phone to set an override. Make sure that override shows up on the <span translate="no">Nightscout</span> site. Then using the <span translate="no">Nightscout Careportal</span>, test that you can turn off that override.
+After you finish setting up your <span translate="no">Nightscout</span> site:
+
+1. Use the Looper's phone to set an override
+1. Make sure that override shows up on the <span translate="no">Nightscout</span> site
+1. Then using the <span translate="no">Nightscout Careportal</span>, test that you can turn off that override
 
 ### Things to Check:
 

@@ -175,6 +175,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Pull Request**: formal method to request changes to a repository
 
+**QR**: a machine-readable code consisting of an array of black and white squares
+
 **Quit the Loop App**: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 
 **repository**: contains project files and each file's revision history

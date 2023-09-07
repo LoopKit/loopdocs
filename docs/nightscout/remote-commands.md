@@ -9,27 +9,90 @@
 
 All remote commands require the configuration steps from [Remote Configuration](remote-config.md).
 
-* Remote Overrides do not require a <span translate="no">One Time Password</span> (OTP)
-* A new <span translate="no">One Time Password</span> (OTP) is required for each remote command that issues a bolus or adds a carb entry
+* A new One-Time Password (OTP) is required for each remote command that issues a bolus or adds a carb entry
+    * The OTP updates every 30 seconds
+    * Both the sending device and the Looper's phone must have automatic time enabled
+* Remote Overrides do not require a One-Time Password (OTP)
+    * There are some versions of <span translate="no">Nightscout</span> that provide a row for entry of an OTP for <span translate="no">Temporary Override</span> in the <span translate="no">Nightscout Careportal</span>
+    * Leave that row blank
 
 !!! question "Do I have to use <span translate="no">Loop Caregiver</span>?"
     There are a number of methods for using remote commands.
 
     Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands. The next page is devoted to using [<span translate="no">Loop Caregiver</span>](loop-caregiver.md).
 
-## Remote Overrides
+## QR Code
 
-Remote Overrides do not require a <span translate="no">One Time Passworde</span> (OTP). There are some versions of <span translate="no">Nightscout</span> that provide a row for entry of an OTP for <span translate="no">Temporary Override</span> in the <span translate="no">Nightscout Careportal</span>. Leave that row blank.
+On the Looper's phone, <span translate="no">Nightscout</span> must be included under the `Loop` -> Settings -> Services section. Navigate to Services and select <span translate="no">Nightscout</span>. Tap on the One-Time Password row to view the QR code.
+
+When you need to configure your authentication method, you can either use a saved QR screenshot or scan the QR on the Looper's phone.
+
+Options:
+
+1. Save a screen shot of the QR code
+    * Keep this secure
+    * Do not share this screen shot when asking for help
+1. Have your Looper (or at least their phone) available
+
+![example screen for nightscout and qr code](img/qr-code-example.png ){width="650"}
+{align="center"}
+
+While you are on the Settings -> Services -> NightScout screen, notice that the 6-digit number on the One-Time Password row updates every 30 seconds.
 
 ## Set up an Authentication App
 
-After you have set up your Nightscout site and confirmed you can successfully receive remote overrides [Step 4: Make Sure Remote Overrides Work](remote-config.md#step-4-make-sure-remote-override-works), you need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
+After you confirmed the Loop phone receives remote overrides as discussed on the previous page: [Step 4: Make Sure Remote Overrides Work](remote-config.md#step-4-make-sure-remote-override-works), you need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
 
 One of the nice features of <span translate="no">Loop Caregiver</span> is that it handles the <span translate="no">One-Time-Password</span> (OTP) requirements for you.
 
 But even if you choose to use <span translate="no">Loop Caregiver</span>, you might still want to configure an authentication app for cases where you don't have access to your <span translate="no">Loop Caregiver</span> phone.
 
- Alternatively, build the Caregiver app which will handle the one-time passwords for you. Setup the authentication app on the caregiver’s device, not the Loopers device. There are several authentication apps that support one-time-passwords.
+There are several authentication apps that support one-time-passwords.
+
+### <span translate="no">Apple Keychain</span>
+
+If you are using a iPhone or Mac to issue remote commands through a browser or <span translate="no">Nightscout</span> app, you can use the <span translate="no">Apple Keychain</span> which has native support to store passwords and generate one-time passwords. 
+
+To setup your <span translate="no">Nightscout</span> credentials in <span translate="no">Apple Keychain</span>:
+
+On the Caregivers device:
+
+* Go to Apple Settings -> Passwords
+* Tap the + Button up top to add a new Password
+
+    ![add password screen for apple keychain](img/add-password-apple-keychain.png ){width="650"}
+    {align="center"}
+
+* You will enter your <span translate="no">Nightscout</span> credentials
+    * Website: <span translate="no">Nightscout</span> URL, without the leading “https://” part
+    * Username: <span translate="no">Nightscout</span> URL as the “username”, like the website including the leading “https://” part
+    * Password: <span translate="no">Nightscout</span> API Secret
+* Tap Done
+
+Next step:
+
+* On a Mac, you are offered a screen that allows you to set up a `Verification Code`
+* On an iPhone:
+    * Go to Apple Settings -> Passwords -> Tap the <span translate="no">Nightscout</span> row
+* Tap “Setup Verification Code”
+    * This is where you can scan your QR code from the Looper's phone or the saved QR screenshot
+* If the Looper's phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the Looper's phone
+* In Apple Settings -> Passwords -> Autofill Passwords
+* Select the `Autofill Passwords` checkbox and check `iCloud Keychain`
+
+Using Safari:
+
+* When you use Safari to view your <span translate="no">Nightscout</span>
+    * The OTP will be offered to you for every row - ignore it when entering Carb amount or Absorption Time, or Bolus Amount
+    * Select it for the OTP row
+
+### Other Authentication Apps
+
+There are other Authentication apps available. Here’s a few options that you can download from your phone’s app store:
+
+* *1Password*
+* *Authenticator*
+* *Authy*
 
 
 ## FAQs on Remote Overrides
