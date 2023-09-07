@@ -1,10 +1,3 @@
-## To Do
-
-!!! note "To Do"
-    Not yet incorporated into *LoopDocs*:
-
-    [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM).
-
 ## Requirements
 
 All remote commands require the configuration steps from [Remote Configuration](remote-config.md).
@@ -27,12 +20,12 @@ On the Looper's phone, <span translate="no">Nightscout</span> must be included u
 
 When you need to configure your authentication method, you can either use a saved QR screenshot or scan the QR on the Looper's phone.
 
-Options:
+Choose one method:
 
-1. Save a screen shot of the QR code
+* Save a screen shot of the QR code
     * Keep this secure
-    * Do not share this screen shot when asking for help
-1. Have your Looper (or at least their phone) available
+    * Do not share your screen shot when asking for help
+* Have your Looper (or at least their phone) available
 
 ![example screen for nightscout and qr code](img/qr-code-example.png ){width="650"}
 {align="center"}
@@ -60,25 +53,24 @@ On the Caregivers device:
 * Go to Apple Settings -> Passwords
 * Tap the + Button up top to add a new Password
 
-    ![add password screen for apple keychain](img/add-password-apple-keychain.png ){width="650"}
+    ![add password screen for apple keychain](img/add-password-apple-keychain.png ){width="500"}
     {align="center"}
 
 * You will enter your <span translate="no">Nightscout</span> credentials
     * Website: <span translate="no">Nightscout</span> URL, without the leading “https://” part
     * Username: <span translate="no">Nightscout</span> URL as the “username”, like the website including the leading “https://” part
     * Password: <span translate="no">Nightscout</span> API Secret
-* Tap Done
-
-Next step:
-
-* On a Mac, you are offered a screen that allows you to set up a `Verification Code`
-* On an iPhone:
-    * Go to Apple Settings -> Passwords -> Tap the <span translate="no">Nightscout</span> row
+    * Tap Done
+* Next, you are offered a screen that allows you to set up a `Verification Code`
+    * If you need to come back later, you can find that screen again
+    * Go to Apple Settings -> Passwords -> Tap the row with your <span translate="no">Nightscout</span> URL
 * Tap “Setup Verification Code”
     * This is where you can scan your QR code from the Looper's phone or the saved QR screenshot
-* If the Looper's phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the Looper's phone
-* In Apple Settings -> Passwords -> Autofill Passwords
-* Select the `Autofill Passwords` checkbox and check `iCloud Keychain`
+    * As soon as the camera reads the QR code, a OTP will begin to appear
+    * If the Looper's phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the Looper's phone
+    * Click Passwords on upper left
+* Select Passwords Options
+    * Enable the `Autofill Passwords` and check `Keychain`
 
 Using Safari:
 
@@ -172,11 +164,6 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
 There are four ways you can trigger your commands remotely; [<span translate="no">Loop Caregiver</span>](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-!!! warning "Config Var Reminder"
-
-    * If you used a remote method for your build of *Loop*, don't forget you must add `LOOP_PUSH_SERVER_ENVIRONMENT` config variable to your *Nightcout* site or remote commands will not work. [LoopDocs: Remote Build Config Var Requirement](remote-config.md#remote-build-config-var-requirement)
-    * If you return to *Xcode* build, you must remove the `LOOP_PUSH_SERVER_ENVIRONMENT` config var.
-
 ### [<span translate="no">Loop Caregiver</span>](loop-caregiver.md)
 
 Click the link above to read more about <span translate="no">Loop Caregiver</span>.
@@ -190,19 +177,21 @@ Pay particular attention to these entries in the `ENABLE` line: `override` `care
 You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your <span translate="no">Careportal</span> is active to send remote overrides . 
 
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
-Within there, you will find all your *<span translate="no">Loop</span>* override presets already loaded for you.
+Within there, you will find all your <span translate="no">Loop</span> override presets already loaded for you.
 
-![img/careportal-overrides.PNG](img/careportal-overrides.PNG)
+![img/careportal-overrides.PNG](img/careportal-overrides.PNG){width="500"}
+{align="center"}
 
 The Looper will see a banner notification that a remote command has been sent with details about that command and whether it succeeded (or not).
 
-![img/override_notification.jpg](img/override_notification.jpg)
+![img/override_notification.jpg](img/override_notification.jpg){width="500"}
+{align="center"}
 
 Canceling an override through *Nightscout careportal* is as simple as selecting the event type `Temporary Override Cancel` and submitting.
 
 ### Shortcuts
 
-If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate &nbsp;*<span translate="no">Loop</span>*&nbsp; overrides with *Nightscout*.
+If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate &nbsp;<span translate="no">Loop</span>&nbsp; overrides with *Nightscout*.
 
 !!! important "Important Note"
     Before you click on the download file below...save yourself some trouble.
@@ -229,9 +218,9 @@ And if you want to save one click to get to these one functions more directly: t
 
 !!! note "A couple notes about these shortcuts:"
     1. You will need iOS 13 at a minimum on the phone you'd like to trigger these shortcuts from. Looper&#39;s phone can still be lower than iOS 13, but your phone as the shortcut user would need iOS 13.
-        * For &nbsp;*<span translate="no">Loop 3</span>*, the minimum iOS is iOS 15.1
+        * For &nbsp;<span translate="no">Loop 3</span>, the minimum iOS is iOS 15.1
     1. You need to open those links in the *Safari* browser on your iPhone. A confirmation will show to initiate the download. After the download finishes, tap the button marked `AA` near your *Safari* address bar and tap `Downloads` (downloads)  to find and open the downloaded Shortcut. Then wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut.
-3. When you enter your *Nightscout* URL in <span>the `URL` field</span> of the &nbsp;*<span translate="no">Loop</span>*&nbsp; shortcut setup, make sure you don't include a <span>trailing `/`</span>, or the API calls to *Heroku* will error out.
+3. When you enter your *Nightscout* URL in <span>the `URL` field</span> of the &nbsp;<span translate="no">Loop</span>&nbsp; shortcut setup, make sure you don't include a <span>trailing `/`</span>, or the API calls to *Heroku* will error out.
 4. When a remote override is set properly, you'll see an `ok` message displayed. If there is an error, you'll see an error message. Most errors will be that you have an `API_SECRET` wrong (make sure there isn't a space at the end of your `API_SECRET` that you don't see) or you failed to do the steps to setup *Nightscout* and update your *Loop* app as described in steps 1-3 above.
 5. You can absolutely customize these bits and pieces within the shortcut. Change the text messages, and change the links... It is totally up to you.
 
