@@ -1,6 +1,26 @@
+## Requirements
+
+Remote commands require the configuration steps from [Remote Configuration](remote-config.md).
+
+!!! question "Do I have to use <span translate="no">Loop Caregiver</span>?"
+    There are a number of methods for using remote commands.
+
+    Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands. The next page is devoted to using [<span translate="no">Loop Caregiver</span>](loop-caregiver.md).
+
+## More Information
+
+Not yet incorporated into *LoopDocs* - need to add:
+
+The expanded capabilities for remote commands in &nbsp;*<span translate="no">Loop 3</span>*&nbsp; are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into *LoopDocs* soon.
+
+
+## Remote Overrides
+
+Remote Overrides do not require a <span translate="no">One Time Passcode</span> (OTP). There are some versions of <span translate="no">Nightscout</span> that provide a row for entry of an OTP for <span translate="no">Temporary Override</span> in the <span translate="no">Nightscout Careportal</span>. Leave that row blank.
+
 ## FAQs on Remote Overrides
 
-Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). For remote overrides in particular:
+Don't forget to read [Loopdocs: Overrides](../operation/features/overrides.md). For remote overrides in particular:
 
 1. **Can I set a different override in *Nighscout* than I have programmed into *Loop* app?**  
    **Answer**: No. You will only be able to enact override presets already programmed into the Loop app.
@@ -29,7 +49,9 @@ Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). Fo
 9. **Can I schedule a remote override ahead of time using Nightscout?**    
    **Answer**: No. When you set a remote override in *Nightscout*, it starts immediately and lasts for the duration programmed for that override in the *Loop* app. You can only set an override in advance using the *Loop* app.
 
-## Warnings for Remote Commands
+## Remote Commands
+
+Remote Commands to deliver a bolus or add a carb entry **require** a <span translate="no">One Time Passcode</span> (OTP).
 
 !!! important "Minimum Versions: &nbsp;<span translate="no">Loop 3</span> and &nbsp;<span translate="no">**Nightscout 14.2.6**</span>"
     If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the looper's phone.
@@ -75,16 +97,22 @@ There are four ways you can trigger your commands remotely; [<span translate="no
 
 !!! warning "Config Var Reminder"
 
-    * If you used a remote method for your build of *Loop*, don't forget you must add `LOOP_PUSH_SERVER_ENVIRONMENT` config variable to your *Nightcout* site or remote commands will not work. [LoopDocs: Remote Build Config Var Requirement](#remote-build-config-var-requirement)
-    * If you then return to *Xcode* build, you must remove the `LOOP_PUSH_SERVER_ENVIRONMENT` config var.
+    * If you used a remote method for your build of *Loop*, don't forget you must add `LOOP_PUSH_SERVER_ENVIRONMENT` config variable to your *Nightcout* site or remote commands will not work. [LoopDocs: Remote Build Config Var Requirement](remote-config.md#remote-build-config-var-requirement)
+    * If you return to *Xcode* build, you must remove the `LOOP_PUSH_SERVER_ENVIRONMENT` config var.
 
-### [<span translate="no">Loop Caregiver</span>](loop-caregiver.md) 
+### [<span translate="no">Loop Caregiver</span>](loop-caregiver.md)
 
-### *Nightscout Careportal*
+Click the link above to read more about <span translate="no">Loop Caregiver</span>.
 
-To use remote commands, I'm assuming you've set up your *Nightscout* site according to the directions [here](update_user.md) in *Loopdocs*. Especially the part about your ENABLE line including each of the words: `override` `careportal` `Loop` (in addition to other variables you'd be interested in - the order of the words in the `ENABLE` line is not important).  
-You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your *careportal* is active to send remote overrides.  
-Once authenticated by entering your `API_SECRET`, then there will be a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *careportal*. Tap the *careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
+### <span translate="no">Nightscout Careportal</span>
+
+To use remote commands in the <span translate="no">Careportal</span>, you must configure <span translate="no">Nightscout</span> site according to the directions [here](update_user.md) in <span translate="no">Loopdocs</span> in addition to setting up the [Remote Configuration](remote-config.md). 
+
+Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`. The order of the words in the `ENABLE` line is not important.
+
+You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your <span translate="no">Careportal</span> is active to send remote overrides . 
+
+Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
 Within there, you will find all your *<span translate="no">Loop</span>* override presets already loaded for you.
 
 ![img/careportal-overrides.PNG](img/careportal-overrides.PNG)
@@ -132,4 +160,9 @@ And if you want to save one click to get to these one functions more directly: t
 
 ### *IFTTT*
 
-If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by [setting up IFTTT](ns_crossref.md#IFTTT), too.
+If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by using If This, Then That (IFTTT) integration. By using IFTTT, you can have single button presses on your phone that will set an override, log a cannula change, log a sensor change and much more.
+
+* Please see
+    * [Nightscout: Configurations: IFTTT Maker](https://nightscout.github.io/nightscout/setup_variables/#ifttt-maker)
+    * [Nightscout: IFTTT](https://nightscout.github.io/nightscout/ifttt/)
+

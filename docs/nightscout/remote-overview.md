@@ -21,30 +21,30 @@ Remote Commanding requires:
 The <span translate="no">Loop</span> code and <span translate="no">Nightscout</span> code work together to provide this capability. However, remote commands and override control requires *Apple Push Notifications* (APN).
 
 * The Apple Developer ID used to build the Loop app must be used to set up the push notifications
-    * If you built Nightscout and the Loop app yourself, follow the directions to set up [Remote Configuration](remote-configuration.md)
+    * If you built Nightscout and the Loop app yourself, follow the directions to set up [Remote Configuration](remote-config.md)
 * Some providers who supply `Nightscout as a service` or `Hosted Nightscout` can assist you in getting your APN information added to your Nightscout variables if you need help
     * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user)
     * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
         * Warning: examine the `Loop remote carbs/bolus` row
 
-!!! important "Remote Build"
+!!! warning "Remote Build"
     There are several methods for building remotely for your family members (or even yourself).
 
-    * [*LoopDocs*: *GitHub Build* Actions](../gh-actions/gh-overview.md) (new with Loop 3) allows you to build on a browser (no need for a Mac) and send *Loop* to your phone using *TestFlight*
-    * [*LoopDocs*: *TestFlight* from *Xcode*](../build/testflight.md) allows you to build using Mac-Xcode and then send *Loop* to your phone using *TestFlight*
-    * [*Loop and Learn*: Remote Build with *Diawi*](https://www.loopandlearn.org/remote-build/) allows you to save a build created by *Xcode*, store it in the cloud, and then download and install it on your phone later
+    * [<span translate="no">LoopDocs</span>: <span translate="no">GitHub Browser Build</span>](../gh-actions/gh-overview.md): build on a browser (no need for a Mac) and send <span translate="no">Loop</span> to your phone using *TestFlight*
+    * [<span translate="no">LoopDocs</span>: *TestFlight* from *Xcode*](../build/testflight-xcode.md): build using Mac-Xcode and then send *Loop* to your phone using *TestFlight*
+    * [<span translate="no">Loop and Learn</span>: Remote Build with *Diawi*](https://www.loopandlearn.org/remote-build/) allows you to save a build created by *Xcode*, store it in the cloud, and then download and install it on your phone later
     
-    Any remote build method requires this [*Nightscout*: Config Var](https://nightscout.github.io/nightscout/setup_variables/#nightscout-config-vars) to be added to *Nightscout*:
+    Any remote build method requires the following <span translate="no">Nightscout Config Var</span> be added to <span translate="no">Nightscout</span>:
     
     `LOOP_PUSH_SERVER_ENVIRONMENT = production`
     
-    Be aware that if you then return to building directly from *Xcode*, you must disable that config var from *Nightscout* and restart the server.
+    Be aware that if you return to building directly from *Xcode*, you must disable that config var from <span translate="no">Nightscout</span> and restart the server.
     
-    Note - this is covered in detail on the next page.
+    Note - this is covered in detail on the [Remote Configuration](remote-config.md) page.
 
 ## Next Steps
 
-There are a number of steps to follow to set this up. Each are now found on separate pages, linked below:
+There are a number of steps to follow to set this up. Each page is linked below:
 
 ### [Set Up Remote for Nightscout](remote-config.md)
 

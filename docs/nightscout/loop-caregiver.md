@@ -6,13 +6,13 @@ The *<span translate="no">Loop Caregiver</span>* app is under development to mak
     * iOS 16 for <span translate="no">Loop Caregiver</span>&#39;s phone
     * iOS 15.1 with *Loop* 3 for Looper&#39;s phone
     * *<span translate="no">Nightscout</span>* 14.2.6
-* Complete all 3 steps:
-    * [Step 1: Update the Looper's iPhone settings](#step-1-update-the-loopers-iphone-settings)
-    * [Step 2: Apple Push Notifications](#step-2-apple-push-notifications)
-    * [Step 3: Add APN to Nightscout](#step-3-add-apn-to-nightscout)
+* Complete all 3 steps on the [Remote Configuration](remote-config.md) page:
+    * [Step 1: Update the Looper's iPhone settings](remote-config.md#step-1-update-the-loopers-iphone-settings)
+    * [Step 2: Apple Push Notifications](remote-config.md#step-2-apple-push-notifications)
+    * [Step 3: Add APN to Nightscout](remote-config.md#step-3-add-apn-to-nightscout)
 * Safety First - Read these 2 sections again
-    * [FAQs on Remote Overrides](#faqs-on-remote-overrides)
-    * [Warnings for Remote Commands](#warnings-for-remote-commands)
+    * [FAQs on Remote Overrides](remote-commands.md#faqs-on-remote-overview)
+    * [Warnings for Remote Commands](remote-commands.md#warnings-for-remote-commands)
 
 !!! warning "Older *Nightscout* Versions"
     If you ignore this minimum version requirement - what happens:
@@ -25,7 +25,7 @@ If you plan to use *<span translate="no">Loop Caregiver</span>*, please join [Lo
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 
-#### Build *<span translate="no">Loop Caregiver</span>*
+## Build *<span translate="no">Loop Caregiver</span>*
 
 A build script is available to assist in building *<span translate="no">Loop Caregiver</span>*. This should be straightforward for anyone who has previously built &nbsp;*<span translate="no">Loop 3</span>*&nbsp; using the script. You may also choose to build it with the GitHub build method as documented on the Browser Build: [Other Apps](../gh-actions/gh-other-apps.md) page.
 
@@ -51,13 +51,13 @@ A build script is available to assist in building *<span translate="no">Loop Car
 !!! warning "Not &nbsp;*<span translate="no">Loop</span>*"
     The output you see in the Terminal may look very similar to when you build &nbsp;*<span translate="no">Loop 3</span>*&nbsp; from a script.
     
-    It is pulling down a clone from a different location (`LoopKit/<span translate="no">Loop Caregiver</span>`). It uses some modules from *Loop*. The target and scheme are automatically selected for *<span translate="no">Loop Caregiver</span>* and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (<span translate="no">LoopKit/Loop Caregiver</span>). It uses some modules from *Loop*. The target and scheme are automatically selected for *<span translate="no">Loop Caregiver</span>* and if you follow directions for a paid Developer account, the signing is automatic.
 
-#### Use *<span translate="no">Loop Caregiver</span>*
+## Use *<span translate="no">Loop Caregiver</span>*
 
 Some limited directions for using the *<span translate="no">Loop Caregiver</span>* app are provided - please also read the *Zulipchat* stream.
 
-#### *<span translate="no">Loop Caregiver</span>*&nbsp; Main Screen
+### *<span translate="no">Loop Caregiver</span>*&nbsp; Main Screen
 
 *<span translate="no">Loop Caregiver</span>* uses a lot of features from *Loop* with some Nightscout-like features in the Timeline.
 
@@ -72,7 +72,7 @@ The Timeline:
 
 ![main screen of the <span translate="no">Loop Caregiver</span> app](img/lcg-main.jpg){width="300"}
 
-#### Add a *Looper* to *<span translate="no">Loop Caregiver</span>*
+### Add a *Looper* to *<span translate="no">Loop Caregiver</span>*
 
 You add each Looper under settings. (*<span translate="no">Loop Caregiver</span>* can monitor more than one Looper).
 
@@ -93,14 +93,14 @@ You can also use <span>the `<span translate="no">Loop Caregiver</span> -> Settin
 * Units used for glucose display: `mg/dL` or `mmol/L`
 * Include the &nbsp;*<span translate="no">Loop</span>* forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
-#### Issue Remote Commands with &nbsp;*<span translate="no">Loop Caregiver</span>*
+### Issue Remote Commands with &nbsp;*<span translate="no">Loop Caregiver</span>*
 
-You issue override, carb, and bolus commands using a toolbar similar to the one seen on *Loop*. In the example graphic above, the carb and bolus entries visible were issued remotely. (Note that: `Adam 6` is a test phone.)
+You issue override, carb, and bolus commands using a toolbar similar to the one seen on *Loop*. In the example graphic above, the carb and bolus entries visible were issued remotely.
 
 Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the <span translate="no">Loop Caregiver</span>&#39;s phone.
 
 The use of *<span translate="no">Loop Caregiver</span>* makes remote commands much easier and more reliable.
 
-Go back and read the warnings again before using the app. [Warnings for Remote Commands](#warnings-for-remote-commands)
+Go back and review the details about [Remote Commands](remote-commands.md) before using the app.
 
 

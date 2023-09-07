@@ -1,18 +1,8 @@
 ## Nightscout Documentation
 
-A number of pages that used to be in LoopDocs have been moved to the Nightscout documentation and are in the process of being integrated into their menu structure. To prevent duplication and inconsistency, those pages have been removed from LoopDocs.  A cross-reference to the Nightscout pages is provided below.
+A number of pages that used to be in LoopDocs have been moved to the Nightscout documentation. To prevent duplication and inconsistency, those pages have been removed from LoopDocs.  A cross-reference to the Nightscout pages is provided below.
 
-* Warning: As of Sep 2021, some of the pages moved from LoopDocs to Nightscout documentation are not yet in the Nightscout menu structure
 * You can always use the search function of [Nightscout: Documentation](https://nightscout.github.io/) to find any topic
-
-
-## IFTTT Integration
-
-If This, Then That (IFTTT) integration is a useful Nightscout capability. By using IFTTT, you can have single button presses on your iPhone that will set an override, log a cannula change, log a sensor change and much more.
-
-* Please see
-    * [Nightscout: Configurations: IFTTT Maker](https://nightscout.github.io/nightscout/setup_variables/#ifttt-maker)
-    * [Nightscout: IFTTT](https://nightscout.github.io/nightscout/ifttt/)
 
 ## Remote Notifications
 
@@ -24,7 +14,7 @@ While the Loop app sends notifications locally on the Loop user's iPhone, parent
 
 ### Loop Follow
 
-Loop Follow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Dexcom Share credentials and/or the Nightscout URL and allows for easy customization of alerts and alarms. Jon has handed over maintenance of this app to the Loop and Learn team.
+Loop Follow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Dexcom Share credentials and/or the Nightscout URL and allows for easy customization of alerts and alarms. Jon handed over maintenance of this app to the Loop and Learn team.
 
 * Please see
     * [Loop and Learn: Loop Follow page](https://www.loopandlearn.org/loop-follow)
