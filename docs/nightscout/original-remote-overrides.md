@@ -172,7 +172,7 @@ When executed properly, you should have something that looks like this for the t
 
 ## FAQs on Remote Overrides
 
-Don't forget to read [Loopdocs: Overrides](../operation/features/workout.md). For remote overrides in particular:
+Don't forget to read [Loopdocs: Overrides](../operation/features/overrides.md). For remote overrides in particular:
 
 1. **Can I set a different override in *Nighscout* than I have programmed into *Loop* app?**  
    **Answer**: No. You will only be able to enact override presets already programmed into the Loop app.

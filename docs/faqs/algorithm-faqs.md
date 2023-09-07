@@ -22,7 +22,7 @@ No in that:
 
 Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings change or make temporary adjustments for short term issues.
 
-The use of [Overrides](../operation/features/workout.md) can be quite helpful for short-term changes.
+The use of [Overrides](../operation/features/overrides.md) can be quite helpful for short-term changes.
 
 ## What does negative Active Insulin mean?
 

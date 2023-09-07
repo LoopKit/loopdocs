@@ -351,9 +351,9 @@ Some people want finer settings on the override insulin needs picker (5% instead
 
     * Not available in Loop 2.2.x
     * Not available in FreeAPS (based off Loop 2.2.x)
-    * [Select 1% Insulin Needs](../operation/features/workout.md#select-1-insulin-needs)
+    * [Select 1% Insulin Needs](../operation/features/overrides.md#select-1-insulin-needs)
 
-Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/workout.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
+Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/overrides.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
 
 !!! danger "A Sensitivity of 0% is NOT Valid"
     Do not set the lower level of the sensitivity range to be 0%.
