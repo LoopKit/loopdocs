@@ -34,7 +34,7 @@ While you are on the Settings -> Services -> NightScout screen, notice that the 
 
 ## Set up an Authentication App
 
-After you confirmed the Loop phone receives remote overrides as discussed on the previous page: [Step 4: Make Sure Remote Overrides Work](remote-config.md#step-4-make-sure-remote-override-works), you need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
+You need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
 
 One of the nice features of <span translate="no">Loop Caregiver</span> is that it handles the <span translate="no">One-Time-Password</span> (OTP) requirements for you.
 
