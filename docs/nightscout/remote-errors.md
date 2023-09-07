@@ -1,3 +1,10 @@
+## To Do
+
+!!! note "To Do"
+    Not yet incorporated into *LoopDocs*:
+
+    [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM).
+
 ## Improper Configuration
 
 Error messages if Looper's phone is not configured correctly:

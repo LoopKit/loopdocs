@@ -1,3 +1,10 @@
+## To Do
+
+!!! note "To Do"
+    Not yet incorporated into *LoopDocs*:
+
+    [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM).
+
 ## <span translate="no">Loop Caregiver</span>   ![icon for <span translate="no">Loop Caregiver</span> app](img/lcg-icon.jpg){width="50"}
 
 The *<span translate="no">Loop Caregiver</span>* app is under development to make remote commands easier to implement and monitor.

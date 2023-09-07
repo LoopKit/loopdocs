@@ -1,3 +1,10 @@
+## To Do
+
+!!! note "To Do"
+    Not yet incorporated into *LoopDocs*:
+
+    [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM).
+
 ## Requirements
 
 Remote commands require the configuration steps from [Remote Configuration](remote-config.md).
@@ -6,13 +13,6 @@ Remote commands require the configuration steps from [Remote Configuration](remo
     There are a number of methods for using remote commands.
 
     Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands. The next page is devoted to using [<span translate="no">Loop Caregiver</span>](loop-caregiver.md).
-
-## More Information
-
-Not yet incorporated into *LoopDocs* - need to add:
-
-The expanded capabilities for remote commands in &nbsp;*<span translate="no">Loop 3</span>*&nbsp; are currently documented in this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM). That information will be incorporated into *LoopDocs* soon.
-
 
 ## Remote Overrides
 
