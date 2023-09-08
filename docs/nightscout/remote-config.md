@@ -2,47 +2,55 @@
 
     1. [Update the Looper's iPhone Settings](#step-1-update-the-loopers-iphone-settings)
     2. [Create a Key for an `Apple Push Notifications service (APNs)`](#step-2-apple-push-notifications)
-    3. [Update your <span translate="no">Nightscout</span> site and add some "config vars" lines in your <span translate="no">Nightscout</span> site settings](#step-3-add-apn-to-nightscout)
+    3. [Update <span translate="no">Nightscout</span> site and add some "config vars" lines in <span translate="no">Nightscout</span> site settings](#step-3-add-apn-to-nightscout)
     4. [Test Remote Overrides](#step-4-test-remote-overrides)
 
 ## Set Up Remote for <span translate="no">Nightscout</span>
 
-You can use your <span translate="no">Nightscout</span> site to remotely set and cancel override presets in your <span translate="no">Loop</span> app.
+You can use the Looper's <span translate="no">Nightscout</span> site to remotely set and cancel override presets in your Looper's <span translate="no">Loop</span> app.
 
-If you are using &nbsp;<span translate="no">Loop 3</span>, then you can also send remote commands to add carbs and command a bolus. **Remote bolus/carb commands** have a minimum requirement of &nbsp;<span translate="no">**Nightscout 14.2.6**</span>. If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the <span translate="no">Loop</span> phone.
+With &nbsp;<span translate="no">Loop 3</span>, you can also send remote commands to add carbs and command a bolus. **Remote bolus/carb commands** have a minimum requirement of &nbsp;<span translate="no">**Nightscout 14.2.6**</span>. If your Looper's <span translate="no">Nightscout</span> version does not meet that minimum requirement, remote commands **might** be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the <span translate="no">Loop</span> phone.
 
 After you complete the configuration, read the entire [Remote Commands](remote-commands.md) page - pay attention to the warnings and caveats. Test this while your Looper is sitting next to you so you can watch their phone.
-
 
 !!! warning "Remote <span translate="no">Nightscout</span> Interface Caveats"
     * Must use a paid <span translate="no">Apple Developer</span> account to build <span translate="no">Loop</span>
         * <span translate="no">Apple Push Notifications</span> (APN) service is not available with a Free account
     * When you build <span translate="no">Loop</span>, the required *APN* information is tied to your Apple Developer account
-        * You add your *APN* information to your <span translate="no">Nightscout</span> site (directions on this page)
-        * <span translate="no">Nightscout</span> sites, in general, allow you to add the required **APN** information
-    * Most providers who supply `Nightscout as a service` or `Hosted Nightscout` can assist you in getting your APN information added to your <span translate="no">Nightscout</span> variables; one requires an added monthly subscription fee
-
+        * You add your *APN* information to your Looper's <span translate="no">Nightscout</span> site
+        * If you support multiple Looper's, you add the same APN variables to each of their <span translate="no">Nightscout</span> sites
+    * There are many choices for building your own or paying someone to build a <span translate="no">Nightscout</span> site
+        * The directions for only one of the options is documented on this page
+        * Use that as a guide for your site
+    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
+        * Warning: examine the `Loop remote carbs/bolus` row
+        * If a green check is missing, it might just be too new for evaluation
 
 ## Step 1: Update the Looper's iPhone settings
 
-For remote commands to successfully deploy to a Looper's iPhone, they will need to have two settings on the iPhone enabled.
+For remote commands to successfully deploy to a Looper's iPhone when the phone is locked, they must have Background App Refresh enabled.
 
-1. The slider in `iPhone -> Settings -> Loop -> Notifications` needs to be turned to `Allow Notifications`
-2. The slider in `iPhone -> Settings -> General -> Background App Refresh -> Loop` must be enabled
+* The slider in `iPhone -> Settings -> General -> Background App Refresh -> Loop` must be enabled
 
-Error messages if Looper's phone is not configured correctly:
+Consequence if Looper's phone is not configured correctly:
 
--  Without notifications, the person trying to set a remote override will see a message about `"no deviceToken"` and no remote override will actually enact
-- If Background app refresh is not enabled, the remote overrides will only enact if the <span translate="no">Loop</span> app is open and the phone is unlocked.
+- If Background app refresh is not enabled, the remote overrides might only enact if the <span translate="no">Loop</span> app is open and the phone is unlocked
+
+!!! warning "Keep Notifications Turned on for Looper's Phone"
+    Typically, the Looper's phone has Notifications enabled for <span translate="no">Loop</span>. In fact, if they don't, a red warning bar is prominently displayed. 
+    
+    There may be times when you really need <span translate="no">Loop</span> to be quiet, so you can turn off Notifications. The remote commands still go through but the Looper does not see a notification that this happened.
+
+    Best practice is to keep <span translate="no">Loop</span> Notifications enabled.
 
 ## Step 2: *Apple Push Notifications*
 
-The next part of this will help your <span translate="no">Loop</span> app give permissions to your <span translate="no">Nightscout</span> site to remotely interact with it. To enable this, you need to create a key and grant it access to the <span translate="no">Apple Push Notification Service (APNS)</span>. 
+The step is required for the <span translate="no">Loop</span> app to give permissions to your <span translate="no">Nightscout</span> site to remotely interact with it. To enable this, you need to create a key and grant it access to the <span translate="no">Apple Push Notification Service (APNS)</span>. 
 
 !!! info "Reminder"
     This only works with the **paid** Apple Developer ID.
 
-1. To get started, go to the `Keys` section under Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list) and login with the *Apple ID* associated with your developer team that you used to sign your <span translate="no">Loop</span> app.
+1. To get started, go to the `Keys` section under Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list) and login with the *Apple ID* associated with your developer team that you used to build the <span translate="no">Loop</span> app.
 2. If not already open in your browser (compare with the below screenshot), 
     - Click on **`Keys`** (located in the left-hand column). 
     - Either click on the blue **`Create a new key`** button **OR** the plus button (<font color="#2997FF">:material-plus-circle:</font>)  to add a new key.
@@ -58,7 +66,7 @@ The next part of this will help your <span translate="no">Loop</span> app give p
     This step will download a file with a name that starts with `AuthKey` and ends with `.p8`.  
 > ![img/apns-download.png](img/apns-download.png)
 6. Find your `AuthKey` downloaded file in your downloads folder.  
-   Double-click to open it and you will be presented a message asking how you'd like to open it.  
+   Double-click to open it and you will be presented a message asking how you'd like to open it. The graphic and instructions below are for a Mac. Make sure your editor does not change any characters in your APN key; use a text-only editor like NotePad (PC) or TextEdit (Mac).
    Click on `Choose Application...` and then select *`TextEdit`* as your application to open it with.  
 > ![img/apns-open.png](img/apns-open.png)
 > ![img/apns-textedit.png](img/apns-textedit.png)
@@ -120,10 +128,16 @@ Scroll down the bottom of the `Config Vars` lines until you find the last blank 
 
 That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/). If you later return to a direct *Xcode* build to your phone, you must remove that config var or remote commands will not work.
 
-
 When executed properly, you should have something that looks like this for the three (or four) new variables that you added:
 
-> ![the 3 or 4 config vars required for Nightscout remote commands to work](img/override_vars_complete.svg)
+> ![the 3 or 4 config vars required for <span translate="no">Nightscout</span> remote commands to work](img/override_vars_complete.svg)
+
+#### BadDeviceToken
+
+When the <span translate="no">Nightscout</span> config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the <span translate="no">Loop</span> app build method; the error message contains the phrase `APNs delivery failed: BadDeviceToken`.
+
+* If <span translate="no">Loop</span> was installed remotely (typically from TestFlight following GitHub Browser Build), you **must** have <span translate="no">Nightscout</span> config var `LOOP_PUSH_SERVER_ENVIRONMENT` set to `production`
+* If <span translate="no">Loop</span> was built using Mac-Xcode, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your <span translate="no">Nightscout</span> config vars
 
 ### Do Not Confuse Your Keys
 
@@ -150,15 +164,15 @@ After you finish setting up your <span translate="no">Nightscout</span> site:
 ### Things to Check:
 
 *    Remote overrides will not start working until after you activate an override in the app at least once
-    * Activating an override from the Loop interface will upload the necessary push notification token to Nightscout which will enable remote commands to work
+    * Activating an override from the <span translate="no">Loop</span> interface will upload the necessary push notification token to <span translate="no">Nightscout</span> which will enable remote commands to work
     * If your Looper gets a new phone - be sure to activate an override from the new phone before trying to use remote commands
-*    Notifications must be allowed in Loop
+*    Notifications must be allowed in <span translate="no">Loop</span>
 *    Give loop access to all health data
 *    Enable Background App Refresh
-*    Double check your Nightscout credentials
+*    Double check your <span translate="no">Nightscout</span> credentials
 *    Low Power Mode may prevent background notifications from working
 *    Some have found that activating the “Focus” and Do-Not-Disturb features on iOS can prevent push notifications from being delivered
     * Turn these off when troubleshooting to eliminate this as a source of problems
 *    iOS 15.3.x: Note there are reports of Remote notifications not being received to the Loopers device for iOS version 15.3 and 15.3.1; this is fixed in iOS version 15.4
-*    If you distribute the app remotely (i.e. TestFlight, Diawi, AppCenter), you must set a special Nightscout variable, LOOP_PUSH_SERVER_ENVIRONMENT to “production”, to enable push notifications
+*    If you distribute the app remotely (i.e. TestFlight, Diawi, AppCenter), you must set a special <span translate="no">Nightscout</span> variable, LOOP_PUSH_SERVER_ENVIRONMENT to “production”, to enable push notifications
     * See [Remote Build Config Var Requirement](#remote-build-config-var-requirement)
