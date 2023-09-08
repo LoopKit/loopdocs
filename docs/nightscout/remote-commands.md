@@ -125,6 +125,8 @@ Remote Commands to deliver a bolus or add a carb entry **require** a <span trans
 !!! important "Minimum Versions: &nbsp;<span translate="no">Loop 3</span> and &nbsp;<span translate="no">**Nightscout 14.2.6**</span>"
     If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the looper's phone.
 
+### Warnings on Remote Commands
+
 !!! danger "**Duplicate Delivery Risk**"
     We want to highlight a very important risk before you get started.
 

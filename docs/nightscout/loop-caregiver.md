@@ -1,10 +1,3 @@
-## To Do
-
-!!! note "To Do"
-    Not yet incorporated into *LoopDocs*:
-
-    [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM).
-
 ## <span translate="no">Loop Caregiver</span>   ![icon for <span translate="no">Loop Caregiver</span> app](img/lcg-icon.jpg){width="50"}
 
 The <span translate="no">Loop Caregiver</span> app is under development to make remote commands easier to implement and monitor.
@@ -20,12 +13,13 @@ The <span translate="no">Loop Caregiver</span> app is under development to make 
 
 ### Prerequisites:
 
-* Complete all 3 steps on the [Remote Configuration](remote-config.md) page:
+* Complete all 4 steps on the [Remote Configuration](remote-config.md) page:
     * [Step 1: Update the Looper's iPhone settings](remote-config.md#step-1-update-the-loopers-iphone-settings)
     * [Step 2: Apple Push Notifications](remote-config.md#step-2-apple-push-notifications)
     * [Step 3: Add APN to Nightscout](remote-config.md#step-3-add-apn-to-nightscout)
-* Safety First - Read these 2 sections again
-    * [FAQs on Remote Overrides](remote-commands.md#faqs-on-remote-overview)
+    * [Step 4: Test Remote Overrides](remote-config.md#step-4-test-remote-overrides)
+* Read the [Remote Commands](remote-commands.md) page and pay special attention to these 2 sections
+    * [FAQs on Remote Overrides](remote-commands.md#faqs-on-remote-overrides)
     * [Warnings for Remote Commands](remote-commands.md#warnings-for-remote-commands)
 
 !!! warning "Older *Nightscout* Versions"
@@ -35,7 +29,7 @@ The <span translate="no">Loop Caregiver</span> app is under development to make 
     * Please take the time to update your *Nightscout* site to `master`
     * *Nightscout* 14.2.6 was released 30-Sep-2022 as `Classic Liquorice`
 
-If you plan to use <span translate="no">Loop Caregiver</span>, please join [<span translate="no">Loop Caregiver App</span>](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
+If you use <span translate="no">Loop Caregiver</span>, please join [<span translate="no">Loop Caregiver App</span>](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 
@@ -81,7 +75,7 @@ A build script is available to assist in building <span translate="no">Loop Care
 !!! warning "Not &nbsp;*<span translate="no">Loop</span>*"
     The output you see in the Terminal may look very similar to when you build &nbsp;*<span translate="no">Loop 3</span>*&nbsp; from a script.
     
-    It is pulling down a clone from a different location (<span translate="no">LoopKit/Loop Caregiver</span>). It uses some modules from *Loop*. The target and scheme are automatically selected for *<span translate="no">Loop Caregiver</span>* and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (<span translate="no">LoopKit/LoopCaregiver</span>). It uses some modules from *Loop*. The target and scheme are automatically selected for *<span translate="no">Loop Caregiver</span>* and if you follow directions for a paid Developer account, the signing is automatic.
 
 ## Use <span translate="no">Loop Caregiver</span>
 
@@ -95,9 +89,8 @@ The Timeline:
 
 * Autoscales the vertical display for glucose reported over the last 24 hours (plus the forecast if that is turned on)
     * `Show Prediction` for Timeline is turned off in the graphic below.
-* Horizontal display can be adjusted with spreading/pinching and scrolling.
-* A double tap on the Timeline provides a factor of 2 expansion horizontally if at default
-* A double tap on the Timeline returns the display to default if expanded
+* Horizontal display can be adjusted using the dropdown hours selector and scrolling left/right.
+* A double tap on the Timeline alternates between 1 and 6 hour display
 
 ![main screen of the <span translate="no">Loop Caregiver</span> app](img/lcg-main.jpg){width="450"}
 {align="center"}
@@ -109,9 +102,14 @@ You add each Looper under settings. (*<span translate="no">Loop Caregiver</span>
 * On the Looper&#39; phone:
     * Tap on `Loop -> Settings -> Services -> Nightscout`
     * Tap on the `One-Time-Password` row to see the QR code  
-    * !!! tip "Pro-tip"
-           Take a screenshot and store it on your computer.  
-           You can then add view the QR code in *<span translate="no">Loop Caregiver</span>* without bothering your Looper.
+    !!! tip "Pro-tip"
+        Take a screenshot of the QR code and store it on your computer.
+        
+        You can then add the QR code to *<span translate="no">Loop Caregiver</span>* without bothering your Looper.
+
+        * Keep the screenshot secure
+        * Do not share the QR screenshot when asking for help
+
 * On the <span translate="no">Loop Caregiver</span>&#39; phone:
     * Tap on `<span translate="no">Loop Caregiver</span> -> Settings`
     * Tap on the plus sign :material-plus-thick: to add a Looper
@@ -133,4 +131,96 @@ The use of *<span translate="no">Loop Caregiver</span>* makes remote commands mu
 
 Go back and review the details about [Remote Commands](remote-commands.md) before using the app.
 
+## Loop Caregiver Troubleshooting
 
+### No Loop Data in Caregiver Display
+
+#### Loop data is not showing in Nightscout
+
+* This isn’t a Caregiver specific issue
+* Check out the [Nightscout Troubleshooting](../nightscout/troubleshoot.md) page
+
+#### Loop data is showing in Nightscout
+
+Your Nightscout URL and API_SECRET must be correct including upper vs lower case, using https, not http. 
+
+If there is any doubt:
+
+* Remove your Looper from Caregiver and add them again
+* You will need access to the Loop QR code
+
+### Incorrect Password (OTP) Error
+
+* The Apple clock should be set to automatic on both the Looper and Caregiver’s phone.
+    * If the clock is incorrect, even slightly, remote commands will fail.
+* Check if One-Time Passwords align between Caregiver and Loop.
+    * In Caregiver: Settings -> Tap on Loopers Name
+    * In Loop: Settings -> Services -> Nightscout
+* If the passwords don't align (change at the same time to the same 6-digit code):
+    * Loop: Settings -> Services -> Nightscout -> One-Time Password -> Tap Reload button
+    * Caregiver: Delete the Looper's profile from Caregiver and add the Looper again by scanning their Looper QR code.
+* Check your Nightscout version is at least version 14.2.6
+
+### Undelivered or Expired Commands
+
+Apple Push Notifications will often not make it to an app, either due to your settings or intentional limitations by Apple. This error can appear in various forms:
+
+* Push notification banner never shows on Looper’s device.
+* Push notification banner shows but nothing happens in Loop (no error or success message afterwards)
+* Error message shows that Password (OTP) is expired
+
+While Loop does not have control over Push Notification timely delivery, there are things that can be done to mitigate these issues. Note that rebuilding Loop, Loop Caregiver or Nightscout is generally not going to help.
+
+Check these settings on the Looper’s device, not the Caregivers. Several of these are related to Apple suppressing notifications.
+
+* Notifications
+    * Settings -> Notifications -> Loop
+    * Turn on “Allow Notifications”
+    * Turn on “Time Sensitive Notifications”
+* Focus Modes
+    * For all focus modes (ex: Do Not Disturb, Sleep), make sure Loop is listed as an app allowing Notifications.
+    * To Adjust
+        * Settings -> Focus
+        * Select the focus mode (ex: Do Not Disturb, Sleep)
+        * Under “Allow Notifications, tap “Apps”
+        * Add “Loop” to the list.               
+        * Turn on “Time Sensitive Notifications”.
+* Background App Refresh
+    * Settings -> General -> Background App Refresh
+    * Select “On” up top
+    * Activate Loop toggle in list
+* Lower Power Mode
+    * Turn off if able
+
+Some other things to try on the Looper’s phone:
+
+* Reboot phone
+    * This sometimes resets Apple’s push notification limit.
+* Try wifi instead of cellular, if able
+    * Apple may not deliver notifications on cellular as often as wifi.
+* Charge the phone
+    * If the battery is low, iOS may not deliver notifications to save battery life.
+* Limit the number of Loop commands you send in a short period. Apple may throttle notifications if too many are received. (i.e. no more than 1 or 2 per hour may help).
+* Consider disabling “spammy” notifications from other apps. This is only a theory, but it is possible that other apps can cause the system to throttle all notifications, including Loop’s.
+* Wait 24 hours or so as it often just takes time for the push notification limits to “reset”.
+* iOS 15.3.x: Note there are reports of Remote notifications not being received to the Loopers device for iOS version 15.3 and 15.3.1. This is fixed in iOS version 15.4.
+
+## General Information Helpful When Requesting Assistance 
+
+This is helpful information to share when requested by helpers.
+
+1. Activate an override _from within Loop_. Does Nightscout show the active override?
+1. Activate an override _from Nightscout_. Does it change the active override in Loop?
+1. Do errors show in Caregiver when you send a remote command?
+    * Share screenshots of error if any
+1. Do errors show in iOS Notifications on the Looper’s device?
+    * Check their Notification history in iOS by swiping down 
+    * Share screenshots of errors if any
+1. What Loop version are you using? Main (Master) or Dev? Approximately when did you update last?
+    * Note only Loop 3.0 will support remote bolus/carbs.
+1. What iOS version is being used on the Looper’s device?
+    * Note that iOS 15.3.x had notification issues - suggest updating to a newer version.
+1. How did you build Loop?
+    * Build with Xcode to device (typical)?
+    * Using AppCenter or Diawai? A special environment variable must be set LOOP_PUSH_SERVER_ENVIRONMENT=production
+1. Mention which troubleshooting sections you have completed so we know whether to ask about these again.

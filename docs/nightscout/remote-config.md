@@ -3,7 +3,7 @@
     1. [Update the Looper's iPhone Settings](#step-1-update-the-loopers-iphone-settings)
     2. [Create a Key for an `Apple Push Notifications service (APNs)`](#step-2-apple-push-notifications)
     3. [Update your <span translate="no">Nightscout</span> site and add some "config vars" lines in your <span translate="no">Nightscout</span> site settings](#step-3-add-apn-to-nightscout)
-    4. [Test to make sure your set up works](#step-4-make-sure-remote-override-works)
+    4. [Test Remote Overrides](#step-4-test-remote-overrides)
 
 ## Set Up Remote for <span translate="no">Nightscout</span>
 
@@ -137,7 +137,7 @@ When executed properly, you should have something that looks like this for the t
     * If you are using remote commands with <span translate="no">Nightscout</span> and building with the **GitHub Browser** build method, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your <span translate="no">Nightscout</span> site or the remote commands will not work.
     * If you are using the **Mac-Xcode** build method, you should not have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` entered - remove it if it is present.
 
-## Step 4: Make Sure Remote Override Works
+## Step 4: Test Remote Overrides
 
 If remote overrides do not function, remote commands for delivering a bolus or adding a carb entry will not work either.
 

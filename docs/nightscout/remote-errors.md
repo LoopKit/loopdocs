@@ -43,3 +43,5 @@ Once you've set up remote overrides, you may encounter errors when trying to run
     **Solution:** Double check the `API_SECRET` is correct and that there are no spaces at the end.
 4. **`Error: APNs delivery failed: InvalidProviderToken`** You might see this in either *Nightscout* or Shortcuts.  This is caused because your `LOOP_APNS_KEY_ID` and `LOOP_DEVELOPER_TEAM_ID` are swapped in *Heroku*.   
    **Solution:** Double check what's listed in your *Apple Developer Account* and compare it to the config variables in *Heroku*. Your `Team_ID` is next to your name in the top right corner.  The other code is your `Key_ID`. Get the IDs in the correct location in *Heroku* to resolve the error.
+
+Review errors on the Loop Caregiver page, especially the [Undelivered or Expired Commands](loop-caregiver.md#undelivered-or-expired-commands) section.
