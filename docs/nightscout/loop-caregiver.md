@@ -138,7 +138,7 @@ Go back and review the details about [Remote Commands](remote-commands.md) befor
 #### Loop data is not showing in Nightscout
 
 * This isn’t a Caregiver specific issue
-* Check out the [Nightscout Troubleshooting](../nightscout/troubleshoot.md) page
+* Check out the [Nightscout Troubleshooting](troubleshoot.md) page
 
 #### Loop data is showing in Nightscout
 

@@ -82,6 +82,7 @@ plugins:
         redirect_maps:
             'nightscout/remote-overrides.md': 'nightscout/remote-overview.md'
             'operation/features/workout.md': 'operation/features/overrides.md'
+            'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -188,14 +189,13 @@ nav:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new_user.md'
     - 'Nightscout with Loop': 'nightscout/update_user.md'
-    - 'Nightscout Troubleshooting': 'nightscout/troublehoot.md'
+    - 'Nightscout Troubleshooting': 'nightscout/troubleshoot.md'
     - 'Nightscout Cross Ref': 'nightscout/ns_crossref.md'
     - 'Remote Overview': 'nightscout/remote-overview.md'
     - 'Remote Configuration': 'nightscout/remote-config.md'
     - 'Remote Commands': 'nightscout/remote-commands.md'
     - 'Remote Errors': 'nightscout/remote-errors.md'
     - 'Loop Caregiver': 'nightscout/loop-caregiver.md'
-    - 'Original remote-override-page for reference': 'nightscout/original-remote-overrides.md'
 - FAQs:
     - 'FAQs Overview': 'faqs/overview-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
