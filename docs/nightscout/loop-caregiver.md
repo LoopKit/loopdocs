@@ -20,7 +20,7 @@ The <span translate="no">Loop Caregiver</span> app is under development to make 
     * [Step 4: Test Remote Overrides](remote-config.md#step-4-test-remote-overrides)
 * Read the [Remote Commands](remote-commands.md) page and pay special attention to these 2 sections
     * [FAQs on Remote Overrides](remote-commands.md#faqs-on-remote-overrides)
-    * [Warnings for Remote Commands](remote-commands.md#warnings-for-remote-commands)
+    * [Warnings on Remote Commands](remote-commands.md#warnings-on-remote-commands)
 
 !!! warning "Older *Nightscout* Versions"
     If you ignore this minimum version requirement - what happens:
@@ -41,14 +41,6 @@ You can build <span translate="no">Loop Caregiver</span> using the <span transla
 
 The <span translate="no">GitHub Browser Build</span> method is documented on the [Other Apps](../gh-actions/gh-other-apps.md) page.
 
-**Warning:**
-
-* The actions for the `LoopCaregiver repository` might not have the numbering that you see on the `LoopWorkspace repository`
-* If the actions don't start with `1. Validate Secrets`, then you must follow this order:
-    * `Add Identifiers`
-    * `Create Certificates`
-    * `Build LoopCaregiver`
-
 ### Mac-Xcode Build:
 
 A build script is available to assist in building <span translate="no">Loop Caregiver</span>. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
@@ -57,8 +49,8 @@ A build script is available to assist in building <span translate="no">Loop Care
 - Spot the line below that starts with `/bin/bash`
 - Click the gray copy button (:material-content-copy:) located near the bottom right side of that line  (should say `Copy to Clipboard` when you hover the mouse over it).  
   Once clicked, a confirmation message that says `Copied to Clipboard` will appear on your screen.
-    ``` { .bash .copy  title="Copy and Paste to start the Build<span translate="no">Loop Caregiver</span>.sh script" }
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/Build<span translate="no">Loop Caregiver</span>.sh)"
+    ``` { .bash .copy  title="Copy and Paste to start the BuildLoopCaregiver script" }
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopCaregiver.sh)"
     ```
 - Important: Click anywhere in the terminal before trying to paste
 - Paste the line into the Terminal window.  
@@ -81,6 +73,31 @@ A build script is available to assist in building <span translate="no">Loop Care
 
 Some limited directions for using the <span translate="no">Loop Caregiver</span> app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of <span translate="no">Loop</span>.
 
+### <span translate="no">Loop Caregiver</span>&nbsp; Add Looper
+
+You must add a Looper to continue with <span translate="no">Loop Caregiver</span> as shown in the graphic below.
+
+![add Looper to Loop Caregiver](img/lcg-add-looper.png){width="300"}
+{align="center"}
+
+* On the Looper&#39;s phone:
+    * Tap on `Loop -> Settings -> Services -> Nightscout`
+    * Tap on the `One-Time-Password` row to see the QR code  
+    !!! tip "Pro-tip"
+        Take a screenshot of the QR code and store it on your computer.
+        
+        You can then add the QR code to *<span translate="no">Loop Caregiver</span>* without bothering your Looper.
+
+        * Keep the screenshot secure
+        * Do not share the QR screenshot when asking for help
+
+* On the <span translate="no">Loop Caregiver</span>&#39;s phone:
+    * Tap on <span translate="no">Loop Caregiver</span> -> `Settings`
+    * Enter the name of the Looper, the *Nightscout* URL (use <span translate="no"> http**s**://</span>) and `API_SECRET`
+    * Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone
+
+You can add additional Looper's under settings. (*<span translate="no">Loop Caregiver</span>* can monitor more than one Looper).
+
 ### <span translate="no">Loop Caregiver</span>&nbsp; Main Screen
 
 *<span translate="no">Loop Caregiver</span>* uses a lot of features from *Loop* with some Nightscout-like features in the Timeline.
@@ -92,36 +109,16 @@ The Timeline:
 * Horizontal display can be adjusted using the dropdown hours selector and scrolling left/right.
 * A double tap on the Timeline alternates between 1 and 6 hour display
 
-![main screen of the <span translate="no">Loop Caregiver</span> app](img/lcg-main.jpg){width="450"}
+![main screen of the <span translate="no">Loop Caregiver</span> app](img/lcg-main.jpg){width="300"}
 {align="center"}
 
-### Add a *Looper* to *<span translate="no">Loop Caregiver</span>*
 
-You add each Looper under settings. (*<span translate="no">Loop Caregiver</span>* can monitor more than one Looper).
-
-* On the Looper&#39; phone:
-    * Tap on `Loop -> Settings -> Services -> Nightscout`
-    * Tap on the `One-Time-Password` row to see the QR code  
-    !!! tip "Pro-tip"
-        Take a screenshot of the QR code and store it on your computer.
-        
-        You can then add the QR code to *<span translate="no">Loop Caregiver</span>* without bothering your Looper.
-
-        * Keep the screenshot secure
-        * Do not share the QR screenshot when asking for help
-
-* On the <span translate="no">Loop Caregiver</span>&#39; phone:
-    * Tap on `<span translate="no">Loop Caregiver</span> -> Settings`
-    * Tap on the plus sign :material-plus-thick: to add a Looper
-    * Enter the name of the Looper, the *Nightscout* URL (use <span translate="no"> http**s**://</span>) and `API_SECRET`
-    * Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone
-
-You can also use <span>the `<span translate="no">Loop Caregiver</span> -> Settings` screen</span> to modify:
+You can also use the <span translate="no">Loop Caregiver</span> -> `Settings` screen to modify:
 
 * Units used for glucose display: `mg/dL` or `mmol/L`
 * Include the &nbsp;*<span translate="no">Loop</span>* forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
-### Issue Remote Commands with &nbsp;*<span translate="no">Loop Caregiver</span>*
+### Issue Remote Commands with &nbsp;<span translate="no">Loop Caregiver</span>
 
 You issue override, carb, and bolus commands using a toolbar similar to the one seen on *Loop*. In the example graphic above, the carb and bolus entries visible were issued remotely.
 
