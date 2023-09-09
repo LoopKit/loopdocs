@@ -112,7 +112,7 @@ List of some flags and what they do:
 |---------|---------|
 |SIRI_DISABLED|Required to build Loop from Xcode with a free developer account|
 |ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED|The choice for Child Model is enabled in Therapy Settings. Please read [Enable Child Model](#enable-child-model).|
-|REMOTE_OVERRIDES_DISABLED|Remote commands: override, carbs or boluses will not be accepted even if all the [Remote Command](../nightscout/remote-overrides.md) requirements are configured|
+|REMOTE_OVERRIDES_DISABLED|Remote commands: override, carbs or boluses will not be accepted even if all the [Remote Command](../nightscout/remote-overview.md) requirements are configured<br><br>If you do configure this and later try to set up remote commands, they will not work and there is **no error** message. [Remote Errors: Loop REMOTE_OVERRIDES_DISABLED](../nightscout/remote-errors.md#loop-remote_overrides_disabled)|
 |OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health. Be vigilant if you select this; added carbs lead to added insulin dosing when closed loop is enabled|
 |SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens show current glucose, trend arrow and eventual glucose by default. This flag disables the display of eventual glucose on the watch if you find the display distracting.|
 |PREDICTED_GLUCOSE_CHART_CLAMP_ENABLED|[Chart Clamp](#chart-clamp)|
@@ -351,9 +351,9 @@ Some people want finer settings on the override insulin needs picker (5% instead
 
     * Not available in Loop 2.2.x
     * Not available in FreeAPS (based off Loop 2.2.x)
-    * [Select 1% Insulin Needs](../operation/features/workout.md#select-1-insulin-needs)
+    * [Select 1% Insulin Needs](../operation/features/overrides.md#select-1-insulin-needs)
 
-Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/workout.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
+Any override more than a factor of 2 from 100% can cause Loop predictions to be wrong – especially if a carb count is entered. (An [override](../operation/features/overrides.md) is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in IOB for the duration of the override.)
 
 !!! danger "A Sensitivity of 0% is NOT Valid"
     Do not set the lower level of the sensitivity range to be 0%.

@@ -1,8 +1,8 @@
-## *GitHub* Build Method Errors
+## <code>*GitHub* Browser Build</code> Errors
 
 This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update *LoopDocs* to make it easier for the next person to succeed without errors.
 
-If you've been around Loop for a while, you know the mantra about screenshots. Well, for *GitHub* Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public `LoopWorkspace` fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
+If you've been around Loop for a while, you know the mantra about screenshots. Well, for *GitHub* Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public <code>LoopWorkspace</code> fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
 
 But first - try to diagnose it yourself using this page.
 
@@ -415,7 +415,7 @@ This is not the first thing to try, but sometimes it is the best approach.
 
 There might be several reasons to do this:
 
-* You tried to build with *GitHub* earlier (before the directions were improved) and were not successful
+* You tried to build with <code>*GitHub* Browser Build</code> earlier (before the directions were improved) and were not successful
 * You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](gh-other-apps.md)
 * You thought you entered the correct <code>MATCH_PASSWORD</code> but you are getting [Error: Could not decrypt](#error-could-not-decrypt)
 
@@ -433,7 +433,7 @@ These steps are needed to reset your `Match-Secrets`:
 1. You are now ready to run the `Action`: `Build Loop`
 
 !!! important "Other Apps"
-    All DIY iOS apps that have an associated *GitHub* build method require the same 6 <code>Secrets</code>.
+    All DIY iOS apps that have an associated <code>*GitHub* Browser Build</code> method require the same 6 <code>Secrets</code>.
 
     If you add an app to your *GitHub* username (by forking the repository and adding <code>Secrets</code>) and then build it, it encrypts your `Certificate` using `MATCH_PASSWORD`.
 

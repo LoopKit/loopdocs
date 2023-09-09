@@ -59,8 +59,9 @@
 *[Lock your Phone]: click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command
 *[Loop 3]: Latest release with major updates
 *[Loop Cycle]: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
+*[Loop Caregiver]: An app you can build to provide remote commands to `Loop` using `Nightscout`
+*[Loop Follow]: An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information
 *[Loop]: With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
-*[LoopCaregiver]: An app you can build to provide remote commands to `Loop` using `Nightscout`
 *[Match-Secrets]: a private repository you must create in your github account, stores keys required to build with github Build Actions
 *[MTB]: Manual Temp Basal: user initiated temporary basal, Omnipod Common feature
 *[MDT]: common abbreviation for Medtronic pumps
@@ -81,6 +82,7 @@
 *[Pre-Meal Range]: modify the correction range for up to one hour by tapping on an icon in the toolbar
 *[Provisioning Profile]: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 *[Pull Request]: formal method to request changes to a repository
+*[QR]: a machine-readable code consisting of an array of black and white squares
 *[Quit the Loop App]: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 *[repository]: contains project files and each file's revision history
 *[RileyLink]: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps

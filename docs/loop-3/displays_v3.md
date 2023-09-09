@@ -44,17 +44,18 @@ The horizontal axis is set to go forward from the current time through your DIA 
 The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.
 
 !!! warning "Negative Glucose Prediction"
-    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/workout.md) with a tiny sensitivity.
+    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md) with a tiny Overall Insulin Needs percentage.
 
     * Do not panic - this is a prediction only; not reality.
 
     Best approach:
 
     * Open the loop until the prediction settles down.
-    * In future, do not choose a tiny sensitivity to force less insulin
-        * Increase the correction range in your override with a moderate change in sensitivity (50% to 90%)
+    * In future, do not choose a tiny Overall Insulin Needs percentage to force less insulin
+        * Increase the correction range in your override
         * Loop will reduce your basal rate at the next cycle (within 5 minutes)
-        * Be cautious adding carbs during an override - make sure you understand the effects first
+        * Most users should limit Overall Insulin Needs settings in the range of 50% to 200% (a factor of 2 in each direction)
+        * Be cautious adding carbs during an override with a change in Overall Insulin Needs - make sure you understand the effects first
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.
 
@@ -153,7 +154,7 @@ From left to right, the icons are:
 
 * **Bolus** - click on this icon to open the [Bolus](../operation/features/bolus.md) tool.
 
-* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/workout.md) or to cancel an override if one is active (heart symbol turns dark blue when active)
+* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/overrides.md) or to cancel an override if one is active (heart symbol turns dark blue when active)
 
 * **Loop Settings** - click on this icon to make changes to any of your [Loop settings](settings.md).
 
@@ -257,7 +258,7 @@ The nominal pump icon displays high-level status information for the pump with t
     * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.25 U
     * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.05 U
     * When scheduled basal is running, the icon displays +0.0 U
-* But what about [Overrides](../operation/features/workout.md)?
+* But what about [Overrides](../operation/features/overrides.md)?
     * Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr
         * That is a value that cannot be set in the pump, but Loop uses it for IOB calculations
             * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U
@@ -344,6 +345,6 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![no recent glucose - tap to add message](img/status-row-glucose-stale.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and the glucose value is stale (more than 15 minutes old), the `No Recent Glucose, Tap to Add` message is displayed. Tapping on the `Status Row` opens the [Manual Bolus](features.md#manual-bolus) screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap `Save Without Bolusing`. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.|
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/workout.md) instructions.|
+|If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/overrides.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>**New with Loop 3:** The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the Pre-Meal and Override icons in the toolbar highlighted.|

@@ -129,9 +129,11 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **Loop Cycle**: typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
 
-**Loop**: With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
+**Loop Caregiver**: An app you can build to provide remote commands to `Loop` using `Nightscout`
 
-**LoopCaregiver**: An app you can build to provide remote commands to `Loop` using `Nightscout`
+**Loop Follow**: An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information
+
+**Loop**: With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
 
 **Match-Secrets**: a private repository you must create in your github account, stores keys required to build with github Build Actions
 
@@ -172,6 +174,8 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 **Provisioning Profile**: associates your app with your Developer ID and limits app lifetime to 1 year (paid) or 1 week (free)
 
 **Pull Request**: formal method to request changes to a repository
+
+**QR**: a machine-readable code consisting of an array of black and white squares
 
 **Quit the Loop App**: quit out of the app - different from closing the app - typically you swipe up in the app switcher
 

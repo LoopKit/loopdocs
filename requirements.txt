@@ -16,6 +16,7 @@ mkdocs==1.4.3
 mkdocs-htmlproofer-plugin==0.13.1
 mkdocs-material==9.1.13
 mkdocs-material-extensions==1.1.1
+mkdocs-redirects==1.2.1
 mkdocs-unused-files==0.1.7
 packaging==23.0
 Pygments==2.15.0

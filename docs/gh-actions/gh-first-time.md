@@ -28,7 +28,7 @@
 
     * *GitHub*:
         * [Create a <code>Match-Secrets</code> private repository](#create-match-secrets)
-        * [Fork a repository (copy of `LoopWorkspace`)](#fork-loopworkspace)
+        * [Fork a repository (copy of <code>LoopWorkspace</code>)](#fork-loopworkspace)
         * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](#configure-secrets)
         * [`Action: 1. Validate Secrets`](#validate-secrets)
         * [`Action: 2. Add Identifiers`](#add-identifiers)
@@ -70,7 +70,7 @@ For sparse instructions, right click on the link below:
 
 #### Prerequisites to Build Loop
 
-There are two prerequisites to build Loop using *GitHub* Browser Build.
+There are two prerequisites to build Loop using <code>*GitHub* Browser Build</code>.
 
 1. Paid *Apple* Developer account ($99/year)
 1. Free *GitHub* account
@@ -83,11 +83,11 @@ To install Loop, you need the *TestFlight* app, from the *Apple* App Store, inst
 
 To use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
 
-## New Terms with *GitHub* Build
+## New Terms with <code>*GitHub* Browser Build</code>
 
 [<span class="loop-big">:material-skip-forward:</span>](#save-your-information) You can read details about new terms with *GitHub* build or skip ahead to [Save Your Information](#save-your-information).
 
-The *GitHub* Build may use new and unfamiliar **terms**.
+The <code>*GitHub* Browser Build</code> may use new and unfamiliar **terms**.
 
 Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../faqs/glossary.md).
 
@@ -97,16 +97,16 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 
 * `Actions`: available in your *GitHub* account to build your app (once you follow the instructions on this page)
     * With Loop 3, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
-    * If *GitHub* Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/) to see if it is *GitHub* problem.
+    * If <code>*GitHub* Browser Build</code> Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/) to see if it is *GitHub* problem.
 * <code>Secrets</code>: are required to enable *GitHub* to build Loop using *GitHub* Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
-    * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same *GitHub* build method
+    * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
 * API `Key`:`Application Programming Interface Key`
     * You obtain and save this key from the *Apple* Developer website
     * Doing this provides 3 of your <code>Secrets</code>
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
-* `Identifiers`: are required to build Loop with *GitHub* (these are automatically generated for you)
+* `Identifiers`: are required to build Loop with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
     * Four Identifier Names must be associated with your `App Group`
         * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
         * For dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
@@ -117,7 +117,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
         * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Bundle Identifiers](#add-app-group-to-bundle-identifiers)
 * [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple* Developers to review their apps
     * Once you purchase an *Apple Developer* annual account, you are an *Apple* Developer and have access to this site
-    * Most Loopers will not have an App until using the *GitHub* build method
+    * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
 ## Save Your Information
@@ -126,7 +126,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 
 You need to keep a digital copy of your 6 <code>Secrets</code>.
 
-* You need to copy and paste those <code>Secrets</code> to configure the *GitHub* Browser Build method
+* You need to copy and paste those <code>Secrets</code> to configure the <code>*GitHub* Browser Build</code> method
 * Make sure your editor does not change any characters in your <code>Secrets</code>; use a text-only editor like NotePad (PC) or TextEdit (Mac)
 * Many people add other information to the <code>Secrets</code> file for easy reference
 
@@ -155,7 +155,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 ## Save Six Secrets
 
 ??? abstract "Section Summary (click to open/close)"
-    You require 6 <code>Secrets</code> (alphanumeric items) to use the *GitHub* build method and if you use the *GitHub* method to build more than Loop, e.g., Loop Follow or LoopCaregiver, you **must** use the same 6 <code>Secrets</code> for each app you build with this method.
+    You require 6 <code>Secrets</code> (alphanumeric items) to use the <code>*GitHub* Browser Build</code> method and if you use the <code>*GitHub* Browser Build</code> method to build more than Loop, e.g., <code>Loop Follow</code> or <code>Loop Caregiver</code>, you **must** use the same 6 <code>Secrets</code> for each app you build with this method.
 
     Each secret is indentified with `ALL_CAPITAL_LETTER_NAMES`.
 
@@ -323,15 +323,15 @@ The `Keys` screen appears again with content similar to the graphic below; the k
 ### Do Not Confuse Your Keys
 
 !!! important "<span class="loop-big">`API Key`</span> vs <span class="loop-big">`APN Key`</span>"
-    If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overrides.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
+    If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
     The <code>Secrets</code> for building with *GitHub* use the <span class="loop-bigger">`API Key`</span>.
 
     The config vars for `Nightscout` use the <span class="loop-bigger">`APN Key`</span>.
 
-    * If you are using remote commands with `Nightscout` and building with the *GitHub* build
-        * [Remote Commands Config Vars](../nightscout/remote-overrides.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
-    * This is true for using `Nightscout` directly or using *LoopCaregiver*
+    * If you are using remote commands with `Nightscout` and building with <code>*GitHub* Browser Build</code>
+        * [Remote Commands Config Vars](../nightscout/remote-config.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
+    * This is true for using *<code>Nightscout</code>* directly or using *<code>Loop Caregiver</code>*
 
 ### Done with *Apple* Secrets
 
@@ -421,11 +421,11 @@ If you have not already made up a password, do it now and record it as <code>MAT
 ### Create Match-Secrets
 
 ??? abstract "Section Summary (click to open/close)"
-    The creation of the <code>Match-Secrets</code> repository is a common step for all *GitHub* Browser Builds; do this step only once. You must be logged into your *GitHub* account.
+    The creation of the <code>Match-Secrets</code> repository is a common step for all <code>*GitHub* Browser Builds</code>; do this step only once. You must be logged into your *GitHub* account.
 
     (Right click on link) to create a [new empty repository](https://github.com/new) titled <code>Match-Secrets</code>. It should be private.
 
-    Once created, you will not take any direct actions with this repository; it needs to be there for the *GitHub* to use as you progress through the steps.
+    Once created, you will not take any direct actions with this repository; it needs to be there for *GitHub* to use as you progress through the steps.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
 
@@ -470,15 +470,15 @@ You will not directly interact with your `Match-Secrets` repository.
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 !!! warning "Existing Fork"
-    If you already have a fork of `LoopWorkspace`, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
+    If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
-1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the `LoopWorkspace` repository owned by `LoopKit`.
+1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
     * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-have-loopworkspace)
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the owner (`Owner`)
-    * `LoopWorkspace` is the repository name (`Repository Name`)
+    * <code>LoopWorkspace</code> is the repository name (`Repository Name`)
     * Leave the selection that says "`Copy the main branch only`" checked
     * Click on the green `Create fork` button
 
@@ -514,7 +514,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
     These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`.
 
     * They are added once for a repository and work for all branches of that repository
-    * They must be added to any other repository, such of LoopCaregiver, for which you also use `GitHub Browser Build`
+    * They must be added to any other repository, such of <code>Loop Caregiver</code>, for which you also use `GitHub Browser Build`
 
     For each of the following <code>Secrets</code>, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
 
@@ -533,14 +533,14 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 Log into *GitHub*.
 
-1. Return to your forked copy of `LoopWorkspace`
+1. Return to your forked copy of <code>LoopWorkspace</code>
     * Click on your personal icon at the upper right to see the drop-down menu and select "`Your repositories`"
 
     ![drop-down-menu](img/gh-quick-access.png){width="200"}
     {align="center"}
 
-1. You should see (at least) 2 repositories: `Match-Secrets` and `LoopWorkspace`
-1. Click on `LoopWorkspace` to open that repository
+1. You should see (at least) 2 repositories: `Match-Secrets` and <code>LoopWorkspace</code>
+1. Click on <code>LoopWorkspace</code> to open that repository
 1. Click on the Settings Icon near the top right of your LoopWorkspace
     * If you don't see ⚙️ `Settings`, make your browser wider or scroll to the right
     * If you still don't see ⚙️ `Settings`, then you are **not** on your fork or you need to sign in to your *GitHub* account
@@ -602,7 +602,7 @@ MATCH_PASSWORD
 * For `MATCH_PASSWORD` value - make up a password for this and save it for later use
     * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
-Once all six <code>Secrets</code> have been added to your `LoopWorkspace`, your screen should look similar to the graphic below.
+Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</code>, your screen should look similar to the graphic below.
 
 * Check that all of your <code>Secrets</code> are spelled correctly
 * If one is misspelled, delete it and add a `New repository secret` with the correct name
@@ -615,9 +615,9 @@ Once all six <code>Secrets</code> have been added to your `LoopWorkspace`, your 
 
 ## First Use of Actions Tab
 
-Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span> is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
+Near the top middle of your <code>LoopWorkspace</code> <span class="notranslate">fork</span> is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
 
-Click on the `Actions` tab of your `LoopWorkspace` repository.
+Click on the `Actions` tab of your <code>LoopWorkspace</code> repository.
 
 * Your first time, a message appears saying `Workflows aren't being run on this forked repository` as shown in the graphic below
 * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
@@ -644,7 +644,7 @@ The `workflows` are now displayed on the left side as shown in the graphic below
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#add-identifiers) To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
 
-Near the top middle of your `LoopWorkspace` <span class="notranslate">fork</span>, click on the <code>Actions</code> tab.
+Near the top middle of your <code>LoopWorkspace</code> <span class="notranslate">fork</span>, click on the <code>Actions</code> tab.
 
 * [<span class="loop-big">:material-skip-backward:</span>](#first-use-of-actions-tab)If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what *GitHub* shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
 
@@ -666,7 +666,7 @@ Note - this section is missing detailed instructions (for now):
 
 Refer to the graphic below for the numbered steps:
 
-1. Click on the `Actions` tab of your `LoopWorkspace` repository
+1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on 2. <code>Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a drop-down menu
     * You will see your default branch (should be `main`)
@@ -954,7 +954,7 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 Refer to the graphic below for the numbered steps:
 
-1. Click on the "<code>Actions</code>" tab of your `LoopWorkspace` repository
+1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on "`Create Certificates`"
 1. On the right side, click "`Run Workflow`" to show a drop-down menu
     * You will see your default branch (should be `main`)
@@ -988,7 +988,7 @@ Refer to the graphic below for the numbered steps:
 
 Refer to the graphic below for the first four steps:
 
-1. Click on the "`Actions`" tab of your `LoopWorkspace` repository.
+1. Click on the "`Actions`" tab of your <code>LoopWorkspace</code> repository.
 1. On the left side, click on "4. `Build Loop`".
 1. On the right side, click "`Run Workflow`" to show a drop-down menu
     * You will see your default branch (should be `main`)
@@ -1040,7 +1040,7 @@ You are configuring a private capability for your family using an Internal Testi
 
 1. As soon as you create the group, you'll be asked who should be included
     * Click in the box beside each person you want to include
-    * Each person in this group will get an email each time you update (build again) on *GitHub*
+    * Each person in this group will get an email each time you update (build again) using the <code>*GitHub* Browser Build</code> method
     * Click `Add` when you are done
     * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
 
@@ -1058,19 +1058,19 @@ Most people won't need the information on the rest of this page.
 
 ### Already Have LoopWorkspace
 
-Some people may already have a fork of `LoopWorkspace`. They might even have one that they forked from somewhere other than `LoopKit`.
+Some people may already have a fork of <code>LoopWorkspace</code>. They might even have one that they forked from somewhere other than `LoopKit`.
 
 Suggestions - choose one of these methods:
 
 * Update the repository if it is forked from `LoopKit`
-    * Open your `LoopWorkspace` repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
+    * Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
     * Review the graphic in the [Successful Fork](#successful-fork) section
         * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
     * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
     * Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
 * Delete that repository if it is from somewhere other than `LoopKit` or the fork you wanted to start with (which might have customizations that you want)
     * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
-    * You just need to make sure that a repository called `LoopWorkspace` is no longer in your *GitHub* account
+    * You just need to make sure that a repository called <code>LoopWorkspace</code> is no longer in your *GitHub* account
     * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
 ### Delete Identifiers

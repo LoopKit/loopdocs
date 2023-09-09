@@ -46,4 +46,4 @@ Once you finish setting up your new Nightscout site, don't forget to enter your 
 
 ## Nightscout Troubleshooting
 
-If your Nightscout site is not showing CGM (and Loop, if you are Looping) data within about 10 minutes of finishing your setup, then please follow the steps on the [Nightscout: Troubleshooting](troublehoot.md) page.
+If your Nightscout site is not showing CGM (and Loop, if you are Looping) data within about 10 minutes of finishing your setup, then please follow the steps on the [Nightscout: Troubleshooting](troubleshoot.md) page.

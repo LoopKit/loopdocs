@@ -78,6 +78,11 @@ plugins:
     - htmlproofer:
         enabled: !ENV [CHECK_BROKEN_LINKS, False]
         raise_error_after_finish: true
+    - redirects:
+        redirect_maps:
+            'nightscout/remote-overrides.md': 'nightscout/remote-overview.md'
+            'operation/features/workout.md': 'operation/features/overrides.md'
+            'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -151,7 +156,7 @@ nav:
     - 'Closed Loop': 'operation/loop/close-loop.md'
     - 'Meal Entries': 'operation/features/carbs.md'
     - 'Bolus': 'operation/features/bolus.md'
-    - 'Overrides': 'operation/features/workout.md'
+    - 'Overrides': 'operation/features/overrides.md'
     - 'Apple Watch': 'operation/features/watch.md'
     - 'Loop Notifications': 'operation/features/notifications.md'
     - 'Pre-Meal Target': 'operation/features/premeal.md'
@@ -184,9 +189,13 @@ nav:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new_user.md'
     - 'Nightscout with Loop': 'nightscout/update_user.md'
-    - 'Nightscout Troubleshooting': 'nightscout/troublehoot.md'
-    - 'Remote Commands': 'nightscout/remote-overrides.md'
+    - 'Nightscout Troubleshooting': 'nightscout/troubleshoot.md'
     - 'Nightscout Cross Ref': 'nightscout/ns_crossref.md'
+    - 'Remote Overview': 'nightscout/remote-overview.md'
+    - 'Remote Configuration': 'nightscout/remote-config.md'
+    - 'Remote Commands': 'nightscout/remote-commands.md'
+    - 'Remote Errors': 'nightscout/remote-errors.md'
+    - 'Loop Caregiver': 'nightscout/loop-caregiver.md'
 - FAQs:
     - 'FAQs Overview': 'faqs/overview-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'

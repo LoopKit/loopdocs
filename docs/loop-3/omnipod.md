@@ -200,7 +200,7 @@ So long as you were in Closed Loop before requesting the Temp Basal, Loop return
 !!! info "Automatic Resumption of Scheduled Basal"
     The phone does not need to be in contact with the pod for insulin delivery to return to scheduled basal at the end of the selected duration. That duration is commanded along with the temporary rate. Once the pod accepts that command, and you'll get an error message if it does not, the pod will resume scheduled basal rate without further commanding if there is insulin in the reservoir and a pod fault does not occur.
 
-For situations where you need a modification of your insulin needs that is not dependent on a particular pod, review the information on the [Overrides](../operation/features/workout.md) page.
+For situations where you need a modification of your insulin needs that is not dependent on a particular pod, review the information on the [Overrides](../operation/features/overrides.md) page.
 
 ### Devices
 
