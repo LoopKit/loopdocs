@@ -1,8 +1,8 @@
 ## Using *GitHub* Browser Build Method to Build Other Apps
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature.
+Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to <span translate="no">Loop</span> are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
 
-The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account. As other apps are updated, they will be added to this page and the list below will be updated.
+The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
 * <span translate="no">Loop Caregiver</span>
 * <span translate="no">Loop Follow</span>
@@ -16,11 +16,9 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 ### Prerequisites
 
-Wait until the repository you are interested in adds the capability of *GitHub* build. Many of the steps for each repository are the same as what you used (or would use) for Loop, but you need to take some unique steps. The directions are structured to minimize the need to jump between the pages.
+* If you have already built using the <span translate="no">GitHub Browser Build</span> method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
 
-* If you have already built using this *GitHub* method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
-
-* If this is the first repository you have built with *GitHub*, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
+* If this is the first repository you have built with the <span translate="no">GitHub Browser Build</span> method, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
     * You have created your Match-Secrets repository
     * You are told to [GitHub First-Time: Fork LoopWorkspace](../gh-actions/gh-first-time.md#fork-loopworkspace)
         * Review the directions but don't do it
@@ -34,7 +32,6 @@ Wait until the repository you are interested in adds the capability of *GitHub* 
 
 * You will return to this page after reviewing (but not doing) this step [GitHub First-Time: Fork LoopWorkspace](../gh-actions/gh-first-time.md#fork-loopworkspace)
     * Use the same method as that section, but fork the repository for the app you plan to build
-    * If there is no row for an app, then wait until one is added - that repository is probably not ready yet
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
@@ -46,11 +43,11 @@ Wait until the repository you are interested in adds the capability of *GitHub* 
 
 After successfully creating your fork of the repository for this app:
 
-* If you have already built Loop using *GitHub*, skip ahead to [Add Existing Secrets](#add-existing-secrets)
+* If you have already built Loop using the <span translate="no">GitHub Browser Build</span> method, skip ahead to [Add Existing Secrets](#add-existing-secrets)
 
 * If this is the first repository you have built with *GitHub*
     * You should follow the detailed steps at [GitHub First-Time: Configure Secrets](../gh-actions/gh-first-time.md#configure-secrets), except you will apply the Secrets to the repository for the app you are planning to build
-    * Once your 6 secrets have been added, return to this page and skip ahead to [Action: Add Identifiers](#action-add-identifiers) on this page.
+    * Once your 6 secrets have been added, return to this page and skip ahead to [Action: Validate Secrets](#action-validate-secrets) on this page.
 
 ### Add Existing Secrets
 
@@ -58,6 +55,8 @@ After successfully creating your fork of the repository for this app:
     An early version of *GitHub* First-Time had incorrect information about the need to save MATCH_PASSWORD.
 
     If you did not save your MATCH_PASSWORD in your file with all your Secrets, you will need to delete your Match-Secrets repository, create a new one and then add all your Secrets into all you repositories again and run all the Actions again.
+
+    Instructions are found at [Reset Match-Secrets](gh-errors.md#reset-match-secrets).
 
 Open the text file in which you maintain a copy of your 6 Secrets so you can copy each value into the Secrets for this repository.
 
@@ -119,13 +118,16 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-The Add Identifier Action should complete (succeed or fail) in a few minutes.
+The `Add Identifier` <span class=notranslate>Action</span> should succeed or fail in a few minutes.
 
-* If you see the green check continue to the next section
-* If you see the red X
-    * [Examine the Error](gh-errors.md#examine-the-error) tells you how to download the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) lets you know what to search for in the downloaded file
-    * Once you've resolved the error, repeat the [Add Identifiers](#add-identifiers) step
+* If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
+* If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
+    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+
+![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
+{align="center"}
 
 ## Review App Identifier
 
@@ -140,22 +142,7 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
-Other apps, like <span translate="no">Loop Caregiver</span> and <span translate="no">Loop Follow</span>, do not require updates to Identifiers after they are generated.
-
-!!! warning "<span translate="no">Loop Caregiver</span> is under development"
-    This app is proving very useful already, but it is still under development. When you fork this from the repository, you will notice that dev branch is the default.
-
-    Please follow the discussion in the [Loop Caregiver App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) zulipchat stream.
-
-If your app is not listed in the Update Required section, skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
-
-### Update Required
-
-This is the list of apps that require you to modify the Identifier(s) before continuing.
-
-#### App Name
-
-There are no apps in this section yet.
+These apps, <span translate="no">Loop Caregiver</span> and <span translate="no">Loop Follow</span>, do not require that extra step.
 
 ## Create App in App Store Connect
 
