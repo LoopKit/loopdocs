@@ -37,6 +37,16 @@ body: APNs delivery failed: BadDeviceToken
 ![site and build method mismatch](img/site-build-mismatch.png){width="300"}
 {align="center"}
 
+### <span translate="no">Loop</span> `REMOTE_OVERRIDES_DISABLED`
+
+You can build Loop with [Build-Time Features](../build/code_customization.md#build-time-features) as part of code customization.
+
+If you added this Build-Time Flag: `REMOTE_OVERRIDES_DISABLED`
+
+You will not see any errors, but nothing will happen when you issue any kind of remote command.
+
+**Solution**: Remove  `REMOTE_OVERRIDES_DISABLED` from  `LoopConfigOverride.xcconfig` file and rebuild the <span translate="no">Loop</span> app.
+
 ### Incorrect Password (OTP) Error
 
 The references to Caregiver below is the person sending the commands. There are specific <span translate="no">Loop Caregiver</span> app insructions that you modify for your authenticator. You must have the <span translate="no">Loop</span> phone with you to troubleshoot this problem.
@@ -56,7 +66,7 @@ The references to Caregiver below is the person sending the commands. There are 
         * Delete the OTP configuration
         * Add the new QR code
 
-### Undelivered or Expired Commands
+## Undelivered or Expired Commands
 
 Apple Push Notifications will often not make it to an app, either due to your settings or intentional limitations by Apple. This error can appear in various forms:
 
