@@ -1525,7 +1525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operation/features/workout/" class="md-nav__link">
+      <a href="../../operation/features/overrides/" class="md-nav__link">
         Overrides
       </a>
     </li>
@@ -2070,22 +2070,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/troublehoot/" class="md-nav__link">
+      <a href="../../nightscout/troubleshoot/" class="md-nav__link">
         Nightscout Troubleshooting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
-        Remote Commands
       </a>
     </li>
   
@@ -2100,6 +2086,76 @@
     <li class="md-nav__item">
       <a href="../../nightscout/ns_crossref/" class="md-nav__link">
         Nightscout Cross Ref
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overview/" class="md-nav__link">
+        Remote Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-config/" class="md-nav__link">
+        Remote Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-commands/" class="md-nav__link">
+        Remote Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-errors/" class="md-nav__link">
+        Remote Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/loop-caregiver/" class="md-nav__link">
+        Loop Caregiver
       </a>
     </li>
   
@@ -2512,17 +2568,18 @@
 <p>The glucose <a href="../therapy-settings/#correction-range"><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></a> is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.</p>
 <div class="admonition warning">
 <p class="admonition-title">Negative Glucose Prediction</p>
-<p>If you have a crazy negative glucose prediction - it is likely that you set an <a href="../../operation/features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> with a tiny sensitivity.</p>
+<p>If you have a crazy negative glucose prediction - it is likely that you set an <a href="../../operation/features/overrides/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> with a tiny Overall Insulin Needs percentage.</p>
 <ul>
 <li>Do not panic - this is a prediction only; not reality.</li>
 </ul>
 <p>Best approach:</p>
 <ul>
 <li>Open the loop until the prediction settles down.</li>
-<li>In future, do not choose a tiny sensitivity to force less insulin<ul>
-<li>Increase the correction range in your override with a moderate change in sensitivity (50% to 90%)</li>
+<li>In future, do not choose a tiny Overall Insulin Needs percentage to force less insulin<ul>
+<li>Increase the correction range in your override</li>
 <li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will reduce your basal rate at the next cycle (within 5 minutes)</li>
-<li>Be cautious adding carbs during an override - make sure you understand the effects first</li>
+<li>Most users should limit Overall Insulin Needs settings in the range of 50% to 200% (a factor of 2 in each direction)</li>
+<li>Be cautious adding carbs during an override with a change in Overall Insulin Needs - make sure you understand the effects first</li>
 </ul>
 </li>
 </ul>
@@ -2600,7 +2657,7 @@
 <p><strong>Bolus</strong> - click on this icon to open the <a href="../../operation/features/bolus/">Bolus</a> tool.</p>
 </li>
 <li>
-<p><strong>Overrides</strong> - click on this icon to select a saved or custom <a href="../../operation/features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> or to cancel an override if one is active (heart symbol turns dark blue when active)</p>
+<p><strong>Overrides</strong> - click on this icon to select a saved or custom <a href="../../operation/features/overrides/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a> or to cancel an override if one is active (heart symbol turns dark blue when active)</p>
 </li>
 <li>
 <p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings</strong> - click on this icon to make changes to any of your <a href="../settings/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings</a>.</p>
@@ -2751,7 +2808,7 @@
 <li>When scheduled basal is running, the icon displays +0.0 U</li>
 </ul>
 </li>
-<li>But what about <a href="../../operation/features/workout/">Overrides</a>?<ul>
+<li>But what about <a href="../../operation/features/overrides/">Overrides</a>?<ul>
 <li>Using scheduled basal of 0.45 U/hr with override set to 70%, the "override basal rate" is 0.315 U/hr<ul>
 <li>That is a value that cannot be set in the pump, but <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses it for <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculations<ul>
 <li>If <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U</li>
@@ -2913,7 +2970,7 @@
 <td><br><br><img alt="override symbol and name with until time stamp message" src="../img/status-row-override.svg" width="350" /></td>
 </tr>
 <tr>
-<td>If a higher priority message is not displayed in the <code>Status Row</code> and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the <code>Status Row</code> opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the <a href="../../operation/features/workout/">Overrides</a> instructions.</td>
+<td>If a higher priority message is not displayed in the <code>Status Row</code> and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the <code>Status Row</code> opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the <a href="../../operation/features/overrides/">Overrides</a> instructions.</td>
 </tr>
 <tr>
 <td><br><br><img alt="Pre-meal Preset message with until time stamp message" src="../img/status-row-pre-meal.svg" width="350" /></td>

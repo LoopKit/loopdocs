@@ -1499,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/workout/" class="md-nav__link">
+      <a href="../../features/overrides/" class="md-nav__link">
         Overrides
       </a>
     </li>
@@ -2044,22 +2044,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nightscout/troublehoot/" class="md-nav__link">
+      <a href="../../../nightscout/troubleshoot/" class="md-nav__link">
         Nightscout Troubleshooting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nightscout/remote-overrides/" class="md-nav__link">
-        Remote Commands
       </a>
     </li>
   
@@ -2074,6 +2060,76 @@
     <li class="md-nav__item">
       <a href="../../../nightscout/ns_crossref/" class="md-nav__link">
         Nightscout Cross Ref
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nightscout/remote-overview/" class="md-nav__link">
+        Remote Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nightscout/remote-config/" class="md-nav__link">
+        Remote Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nightscout/remote-commands/" class="md-nav__link">
+        Remote Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nightscout/remote-errors/" class="md-nav__link">
+        Remote Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nightscout/loop-caregiver/" class="md-nav__link">
+        Loop Caregiver
       </a>
     </li>
   
@@ -2582,7 +2638,7 @@
 <p>The horizontal axis is set to go forward from the current time until your <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> (insulin duration) forward (so you can see what <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> thinks BG will be eventually). It then goes back in time as far as it can, based upon the width in pixels of your screen. Note, if you turn your device to landscape mode you will have more screen real estate and thus will be able to see further back in time.</p>
 <p>The BG correction range is shown as a blue bar on the glucose chart.  Single-value range BG range (such as 100-100 mg/dL), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.</p>
 <div class="admonition warning">
-<p>If you have a crazy negative prediction - it is likely that you set an <a href="../../features/workout/">override</a> with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will reduce your basal rate at the next cycle (within 5 minutes).</p>
+<p>If you have a crazy negative prediction - it is likely that you set an <a href="../../features/overrides/">override</a> with a tiny Overall Insulin Needs setting. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny Overall Insulin Needs setting to force less insulin, simply increase the correction range in your override - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will reduce your basal rate at the next cycle (within 5 minutes).</p>
 </div>
 <p>The eventual BG displayed on the right side of the chart does NOT take into account a recently enacted temp basal.  In other words, if you are above BG range and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> just enacted a high temp basal to help, the eventual BG does not reflect the expected lowering of BGs that would result from that recently enacted temp basal.  <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> waits until the insulin has actually been delivered before it "uses" the insulin in its calculations for BG impacts.  If you suspended your pump or had a "no delivery" alarm shortly after the temp basal was started, you would want that accurately reflected in the insulin on board and associated eventual BG.</p>
 <p>If you tap on the <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr> itself, it will open the Predicted Glucose chart described below.</p>
@@ -2629,7 +2685,7 @@
 <p><strong>Bolus tool</strong> - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen.  But you can click on this icon anytime to manually bolus. During rapidly rising BGs, where <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is recommending a correction bolus to help control the BG spike. Or if you want to trade bolus now for basal later (super bolus), you can enter a bolus greater than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> recommends - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will set zero <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> next cycle. For more information about the Bolus tool features and use, see the <a href="../../features/bolus/">Bolus page</a>.</p>
 </li>
 <li>
-<p><strong>Overrides</strong> - click this tool to set an <a href="../../features/workout/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a>.</p>
+<p><strong>Overrides</strong> - click this tool to set an <a href="../../features/overrides/"><abbr title="a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both">Override</abbr></a>.</p>
 </li>
 <li>
 <p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings</strong> - click on this tool to make changes to any of your <a href="../../overview/#configurations"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings</a>.</p>

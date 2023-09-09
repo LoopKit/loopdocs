@@ -1367,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operation/features/workout/" class="md-nav__link">
+      <a href="../../operation/features/overrides/" class="md-nav__link">
         Overrides
       </a>
     </li>
@@ -2280,22 +2280,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/troublehoot/" class="md-nav__link">
+      <a href="../../nightscout/troubleshoot/" class="md-nav__link">
         Nightscout Troubleshooting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
-        Remote Commands
       </a>
     </li>
   
@@ -2310,6 +2296,76 @@
     <li class="md-nav__item">
       <a href="../../nightscout/ns_crossref/" class="md-nav__link">
         Nightscout Cross Ref
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overview/" class="md-nav__link">
+        Remote Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-config/" class="md-nav__link">
+        Remote Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-commands/" class="md-nav__link">
+        Remote Commands
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-errors/" class="md-nav__link">
+        Remote Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/loop-caregiver/" class="md-nav__link">
+        Loop Caregiver
       </a>
     </li>
   
@@ -3014,7 +3070,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED ALLOW_ALGO
 </tr>
 <tr>
 <td>REMOTE_OVERRIDES_DISABLED</td>
-<td>Remote commands: override, carbs or boluses will not be accepted even if all the <a href="../../nightscout/remote-overrides/">Remote Command</a> requirements are configured</td>
+<td>Remote commands: override, carbs or boluses will not be accepted even if all the <a href="../../nightscout/remote-overview/">Remote Command</a> requirements are configured<br><br>If you do configure this and later try to set up remote commands, they will not work and there is <strong>no error</strong> message. <a href="../../nightscout/remote-errors/#loop-remote_overrides_disabled">Remote Errors: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> REMOTE_OVERRIDES_DISABLED</a></td>
 </tr>
 <tr>
 <td>OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED</td>
@@ -3236,10 +3292,10 @@ Do not paste the result anywhere
 <ul>
 <li>Not available in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x</li>
 <li>Not available in FreeAPS (based off <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x)</li>
-<li><a href="../../operation/features/workout/#select-1-insulin-needs">Select 1% Insulin Needs</a></li>
+<li><a href="../../operation/features/overrides/#select-1-insulin-needs">Select 1% Insulin Needs</a></li>
 </ul>
 </div>
-<p>Any override more than a factor of 2 from 100% can cause <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/workout/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
+<p>Any override more than a factor of 2 from 100% can cause <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predictions to be wrong – especially if a carb count is entered. (An <a href="../../operation/features/overrides/">override</a> is NOT the same as a manual temp basal - it changes insulin sensitivity factor and carb ratio in addition to the basal rate needed for zero change in <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for the duration of the override.)</p>
 <div class="admonition danger">
 <p class="admonition-title">A Sensitivity of 0% is NOT Valid</p>
 <p>Do not set the lower level of the sensitivity range to be 0%.</p>
