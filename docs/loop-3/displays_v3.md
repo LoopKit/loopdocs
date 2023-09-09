@@ -44,17 +44,18 @@ The horizontal axis is set to go forward from the current time through your DIA 
 The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.
 
 !!! warning "Negative Glucose Prediction"
-    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md) with a tiny sensitivity.
+    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md) with a tiny Overall Insulin Needs percentage.
 
     * Do not panic - this is a prediction only; not reality.
 
     Best approach:
 
     * Open the loop until the prediction settles down.
-    * In future, do not choose a tiny sensitivity to force less insulin
-        * Increase the correction range in your override with a moderate change in sensitivity (50% to 90%)
+    * In future, do not choose a tiny Overall Insulin Needs percentage to force less insulin
+        * Increase the correction range in your override
         * Loop will reduce your basal rate at the next cycle (within 5 minutes)
-        * Be cautious adding carbs during an override - make sure you understand the effects first
+        * Most users should limit Overall Insulin Needs settings in the range of 50% to 200% (a factor of 2 in each direction)
+        * Be cautious adding carbs during an override with a change in Overall Insulin Needs - make sure you understand the effects first
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.
 
