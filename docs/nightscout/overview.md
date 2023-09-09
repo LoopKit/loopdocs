@@ -4,7 +4,7 @@
 
 When integrated with <span translate="no">Loop</span>, <span translate="no">Nightscout</span> provides monitoring of <span translate="no">Loop</span> activities such as viewing history of glucose, carbs, boluses, temp basals and overrides; troubleshooting <span translate="no">Loop</span> errors; and provides extensive reports for analyzing data trends and patterns. These reports assist when <span translate="no">Loop Therapy Settings</span> need to be adjusted.
 
-For caregivers, <span translate="no">Nightscout</span> enables remote monitoring and even the ability to issue remote commands through <span translate="no">Nightscout</span> when both <span translate="no">Loop</span> and <span translate="no">Nightscout</span> are properly configured. There are several pages starting at [<span translate="no">LoopDocs</span>: Remote Commands](remote-overview.md). If you are a caregiver, this summary of remote capabilities may encourage you to look into <span translate="no">Nightscout</span>.
+For caregivers, <span translate="no">Nightscout</span> enables remote monitoring and even the ability to issue remote commands through <span translate="no">Nightscout</span> when both <span translate="no">Loop</span> and <span translate="no">Nightscout</span> are properly configured. There are several pages starting at [<span translate="no">LoopDocs</span>: Remote Overview](remote-overview.md) that provide documentation on this feature. If you are a caregiver, this summary of remote capabilities may encourage you to look into <span translate="no">Nightscout</span>.
 
 !!! info "Remote Commands"
     * <span translate="no">Loop</span> 2.2.x
@@ -71,9 +71,9 @@ Step 3: Add <span translate="no">Nightscout</span> URL to <span translate="no">L
 
     There is a big architectural change between <span translate="no">Loop</span> 2 and <span translate="no">Loop</span> 3 for remote data services like <span translate="no">Nightscout</span>.
 
-    It used to be that data would be “held on” to be uploaded, and a non functional service could cause large backlogs. The new system does not allow for this. Uploaders individually keep track of where they are in the upload stream via a lightweight “query handle”, and if the data in <span translate="no">Loop</span> data stores expires before they upload, then they’ll just not be able to upload that data.
+    It used to be that Loop would keep trying to upload data to <span translate="no">Nightscout</span>. If a site could not be reached or would not accept data, that could cause large backlogs. <span translate="no">Loop</span> 2 could slow down by trying to keep uploading the backlog. The new system does not allow for this. Uploaders individually keep track of where they are in the upload stream via a lightweight “query handle”, and if the data in <span translate="no">Loop</span> data store expires before upload, that data will be missing in <span translate="no">Nightscout</span>.
 
-    The default data store for <span translate="no">Loop</span> 3 is 7 days.
+    <span translate="no">Loop</span> 3 saves  7 days of information in the data store.
 
 ## <span translate="no">Nightscout</span> Dashboard
 
