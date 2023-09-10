@@ -83,6 +83,13 @@ plugins:
             'nightscout/remote-overrides.md': 'nightscout/remote-overview.md'
             'operation/features/workout.md': 'operation/features/overrides.md'
             'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
+            'nightscout/new_user.md': 'nightscout/new-user.md'
+            'nightscout/update_user.md': 'nightscout/update-user.md'
+            'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
+            'build/build_errors.md': 'build/build-errors.md'
+            'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
+            'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
+            'build/code_customization.md': 'build/code-customization.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -123,7 +130,7 @@ nav:
     - 'Download Xcode': 'build/step8.md'
     - 'Xcode Preferences': 'build/step9.md'
     - 'Build Loop': 'build/step14.md'
-    - 'Oh dear! Build errors?': 'build/build_errors.md'
+    - 'Oh dear! Build errors?': 'build/build-errors.md'
     - 'Updating/Rebuilding': 'build/updating.md'
     - 'Build Free Loop': 'build/build-free-loop.md'
     - 'TestFlight from Xcode': 'build/testflight-xcode.md'
@@ -135,7 +142,7 @@ nav:
     - 'Settings': loop-3/settings.md
     - 'Therapy Settings': 'loop-3/therapy-settings.md'
     - 'Optional: Services': 'loop-3/services.md'
-    - 'Displays': 'loop-3/displays_v3.md'
+    - 'Displays': 'loop-3/displays-v3.md'
     - 'RileyLink Display': 'operation/loop-settings/rileylink.md'
     - 'Omnipod Pump': loop-3/omnipod.md
     - 'Medtronic Pump': loop-3/medtronic.md
@@ -148,7 +155,7 @@ nav:
             - 'Loop 2 Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
         - 'Loop 2 Add CGM': 'operation/loop-settings/cgm.md'
         - 'Loop 2 Configuration': 'operation/loop-settings/configurations.md'
-        - 'Loop 2 Services': 'operation/loop-settings/services_v2.md'
+        - 'Loop 2 Services': 'operation/loop-settings/services-v2.md'
         - 'Loop 2 Displays': 'operation/loop-settings/displays.md'
         - 'Loop 2 Pump Settings': 'operation/loop-settings/pump-commands.md'
 - Operate:
@@ -179,7 +186,7 @@ nav:
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
-    - 'Customize Your Loop': 'build/code_customization.md'
+    - 'Customize Your Loop': 'build/code-customization.md'
     - 'Customize with GitHub': 'gh-actions/gh-customize.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
@@ -187,10 +194,10 @@ nav:
     - 'LoopWorkspace': 'version/loopworkspace.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
-    - 'New Nightscout': 'nightscout/new_user.md'
-    - 'Nightscout with Loop': 'nightscout/update_user.md'
+    - 'New Nightscout': 'nightscout/new-user.md'
+    - 'Nightscout with Loop': 'nightscout/update-user.md'
     - 'Nightscout Troubleshooting': 'nightscout/troubleshoot.md'
-    - 'Nightscout Cross Ref': 'nightscout/ns_crossref.md'
+    - 'Nightscout Cross Ref': 'nightscout/ns-crossref.md'
     - 'Remote Overview': 'nightscout/remote-overview.md'
     - 'Remote Configuration': 'nightscout/remote-config.md'
     - 'Remote Commands': 'nightscout/remote-commands.md'

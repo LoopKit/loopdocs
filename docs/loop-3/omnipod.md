@@ -76,7 +76,7 @@ If you want to make sure Loop can talk to your pod, click on the sound icon (hig
     * Once you are on the final day, the time remaining until expiration starts to report in Hours and Minutes
     * The solid bar is proportional to pod hours since activation
         * It is blue for the first 48 hours
-        * It is orange for the last 24 hours and also appears in the [HUD Pump Status](displays_v3.md#pump-status-icon) icon
+        * It is orange for the last 24 hours and also appears in the [HUD Pump Status](displays-v3.md#pump-status-icon) icon
         * After expiration, a full-width red bar is shown here and in the HUD Pump Status icon
 * Once the pod officially expires, at 72 hours, there is an 8 hour grace period
     * Insulet does not guarantee the pod will keep working that long, but it often does
@@ -117,18 +117,18 @@ Tapping on `Suspend Delivery` brings up a timed reminder screen. You can choose 
 * 1 hour 30 minutes
 * 2 hours
 
-After you select the reminder time, Loop issues a command to the pod to halt all insulin delivery: basals, temp basals, and boluses in progress. The label on the `Suspend Delivery` row changes to `Suspending` while Loop is communicating with the pump. When the label changes to `Resume Delivery`, all insulin delivery is stopped until the user resumes using the [HUD Status Row](displays_v3.md#hud-status-row) or the [Pod Status](#pod-status) screen.
+After you select the reminder time, Loop issues a command to the pod to halt all insulin delivery: basals, temp basals, and boluses in progress. The label on the `Suspend Delivery` row changes to `Suspending` while Loop is communicating with the pump. When the label changes to `Resume Delivery`, all insulin delivery is stopped until the user resumes using the [HUD Status Row](displays-v3.md#hud-status-row) or the [Pod Status](#pod-status) screen.
 
 As long as the spinning icon is spinning, Loop is trying to execute the Suspend or Resume command. If it fails to complete, a modal alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. For Omnipod, make sure your RileyLink device is powered on and close to the phone and pod.
 
 When the phone is in portrait mode, so the HUD is visible:
 
-* The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays_v3.md#pump-status-icon).
+* The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays-v3.md#pump-status-icon).
 
 ![pump status icon when suspended](img/loop-3-pump-alert-suspended.svg){width="150"}
 {align="center"}
 
-* The [HUD Status Row](displays_v3.md#hud-status-row) message can be tapped to resume delivery.
+* The [HUD Status Row](displays-v3.md#hud-status-row) message can be tapped to resume delivery.
 
 ![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
@@ -191,9 +191,9 @@ Once the manual temp basal command is sent to the pod, Loop changes to Open Loop
     * The [Basal Report](#basal-report) updates with the new rate and label indicates `Insulin Delivery`
     * The row label changes to `Cancel Manual Basal` and reports the time remaining until the temp basal expires
 * Main screen (refer to red rectangle highlights):
-    * The HUD [Loop Status Icon](displays_v3.md#loop-status-icon) changes to an `Open Loop` icon and the HUD [Pump Status Icon](displays_v3.md#pump-status-icon) indicates `Manual Basal`
-    * The [Insulin Delivery](displays_v3.md#insulin-delivery-chart) plot indicates the planned duration of the manual temp basal
-    * The [Glucose Prediction](displays_v3.md#glucose-chart) updates using that assumed change in insulin delivery
+    * The HUD [Loop Status Icon](displays-v3.md#loop-status-icon) changes to an `Open Loop` icon and the HUD [Pump Status Icon](displays-v3.md#pump-status-icon) indicates `Manual Basal`
+    * The [Insulin Delivery](displays-v3.md#insulin-delivery-chart) plot indicates the planned duration of the manual temp basal
+    * The [Glucose Prediction](displays-v3.md#glucose-chart) updates using that assumed change in insulin delivery
 
 So long as you were in Closed Loop before requesting the Temp Basal, Loop returns to Closed Loop automatically when the duration ends or you cancel the temporary basal.
 
@@ -285,7 +285,7 @@ Tap on this row if you switch to a different type of insulin.
 
 ## Pump Time
 
-Click on [Time Zone](displays_v3.md#time-zone) to understand how Loop treats "pump" time for pods.
+Click on [Time Zone](displays-v3.md#time-zone) to understand how Loop treats "pump" time for pods.
 
 When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. 
 

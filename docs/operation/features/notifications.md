@@ -29,7 +29,7 @@ Profile expiration notification was added with Loop 2.2.5.
 
 ### Free (7-day) Loop App Expiration Notification
 
-The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../build/code_customization.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
+The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../build/code-customization.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
 
 
 ## Loop App Expiration Date
@@ -138,7 +138,7 @@ Select your desired notification level for low reservoir
 ![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
 {align="center"}
 
-* Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays_v3.md#pump-status-icon).
+* Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays-v3.md#pump-status-icon).
 
 ![pump alert - red exclamation point with phrase no insulin](../../loop-3/img/loop-3-pump-alert-no-insulin.svg){width="125"}
 {align="center"}

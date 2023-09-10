@@ -107,7 +107,7 @@ It isn't some catastrophic failure if you try to build with an outdated Xcode wi
 
 So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
 
-With Loop 3, you may see another error when the Xcode version does not support the phone iOS. You may see [Package.resolved file corrupted or malformed](build_errors.md#packageresolved-file-corrupted-or-malformed)
+With Loop 3, you may see another error when the Xcode version does not support the phone iOS. You may see [Package.resolved file corrupted or malformed](build-errors.md#packageresolved-file-corrupted-or-malformed)
 
 ## Next Step: Xcode Preferences
 

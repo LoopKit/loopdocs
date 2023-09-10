@@ -25,7 +25,7 @@ This can happen sometimes. You just need to force quit Xcode. Sometimes rebootin
 ## Start with The Obvious Error Causes
 
 !!! info "New Loop Builders"
-    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Review the "obvious" errors causes first. If that doesn't help, then, skim the page until you reach [Find Your Error Message](build_errors.md#find-your-error-messages) or search the page (++command+"F"++) or search LoopDocs for your error. Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build_errors.md#posting-for-help)
+    This page contains build error help for people updating their Loop app as well as brand new Loop app builders. Review the "obvious" errors causes first. If that doesn't help, then, skim the page until you reach [Find Your Error Message](build-errors.md#find-your-error-messages) or search the page (++command+"F"++) or search LoopDocs for your error. Once you've identified your error message, try to resolve it.  Still stuck? Read [Posting for Help](build-errors.md#posting-for-help)
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
@@ -42,7 +42,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 1. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download.
 
-    If you want to build using a recent download, this section tells you how to [Find My Downloaded Loop Code](code_customization.md#find-my-downloaded-loop-code).
+    If you want to build using a recent download, this section tells you how to [Find My Downloaded Loop Code](code-customization.md#find-my-downloaded-loop-code).
 
 1. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in the [Free Account](build-free-loop.md#free-account) link.
 
@@ -399,7 +399,7 @@ Or maybe you are trying to build using an old download; some older versions did 
 
 **Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'").
 
-**Solution**: Read the [Carthage Error](build_errors.md#carthage-error) section above.
+**Solution**: Read the [Carthage Error](build-errors.md#carthage-error) section above.
 
 ### Developer License Update (PLA Update)
 
@@ -460,7 +460,7 @@ The final App Group should now have a blue check box, the name should start with
 
 That should clear the out, problematic profiles and allow a successful build.
 
-If your problem persists after that, then you might need to do total reset of your phone to clear out the pesky problem. Before you do this, you may want to [Post for Help](build_errors.md#posting-for-help) to make sure it is really necessary:
+If your problem persists after that, then you might need to do total reset of your phone to clear out the pesky problem. Before you do this, you may want to [Post for Help](build-errors.md#posting-for-help) to make sure it is really necessary:
 
 1. Wipe the iPhone clean and set it up as a new device
     - FIRST - write down or screenshot all your settings
@@ -525,7 +525,7 @@ You can verify the iOS development certificates are working by clicking on "Mana
 ![img/exit-code-1-cartfile.jpg](img/exit-code-1-cartfile.jpg){width="850"}
 {align="center"}
 
-**Solution:** This is a homebrew / carthage error, so I don't think you'll see this. If you do, download a fresh copy of Loop code and try again. If it repeats, it is time to request assistance. Please read [Posting for Help](build_errors.md#posting-for-help).
+**Solution:** This is a homebrew / carthage error, so I don't think you'll see this. If you do, download a fresh copy of Loop code and try again. If it repeats, it is time to request assistance. Please read [Posting for Help](build-errors.md#posting-for-help).
 
 ### Abort with Payload
 

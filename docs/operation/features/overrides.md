@@ -156,7 +156,7 @@ To enact your override preset, tap on the workout icon toolbar and select an ove
 ![img/override-selection.PNG](img/override-selection.PNG){width="300"}
 {align="center"}
 
-The heart will be highlighted in a blue square while active and the [HUD Status Row](../../loop-3/displays_v3.md#hud-status-row) will indicate the active override name. The Glucose Chart will show a darker blue bar indicating the active target range and duration.
+The heart will be highlighted in a blue square while active and the [HUD Status Row](../../loop-3/displays-v3.md#hud-status-row) will indicate the active override name. The Glucose Chart will show a darker blue bar indicating the active target range and duration.
 
 ![img/override-enacted.PNG](img/override-enacted.PNG){width="300"}
 {align="center"}
@@ -179,7 +179,7 @@ Saved overrides can be turned on and off by tapping on the blue heart icon on yo
 
 ## Editing an Active Override
 
-Tap on the active override in the [HUD Status Row](../../loop-3/displays_v3.md#hud-status-row) with the phone in portrait orientation. This brings up a screen to edit the override currently running.
+Tap on the active override in the [HUD Status Row](../../loop-3/displays-v3.md#hud-status-row) with the phone in portrait orientation. This brings up a screen to edit the override currently running.
 
 This only affects this override during the current period. It is not saved to that named override. For example, you can extend the duration or modify the needs value or target value based on a temporary situation.
 

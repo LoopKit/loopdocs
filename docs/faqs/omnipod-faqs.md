@@ -97,7 +97,7 @@ There is more communication between the pod and the controller (your Loop phone)
     * When phone is unlocked and Loop is in the foreground:
         * Loop 3 updates the pod state every 30 sec (DASH) or 60 sec (Eros) in the foreground, compared to every 3 (DASH) or 5 (Eros) minutes in the background
         * Loop 2.2.x updates the pod state when CGM updates (approximately 5 minutes) - same as when app is in the background
-    * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns_crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
+    * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns-crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
 
 ## What do I do if a pod fails to pair?
 

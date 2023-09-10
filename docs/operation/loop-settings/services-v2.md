@@ -54,6 +54,6 @@ Great job, almost finished! Now that you have completed your services, let's mov
 
 * Loop 2.2.x - click on this link for [Displays](displays.md)
 
-* Loop 3 - click on this link for [Displays](../../loop-3/displays_v3.md). 
+* Loop 3 - click on this link for [Displays](../../loop-3/displays-v3.md). 
 
 Loop displays is a valuable tool for understanding your Loop and a great page to review when troubleshooting.

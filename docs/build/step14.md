@@ -13,7 +13,7 @@
     * Watch in awe as you build your very own Loop app
 
 !!! question "FAQs"
-    * **Why does Xcode show a colorful spinning icon and not respond to me?** Unfortunately, sometimes Xcode gets confused and you need to force quit the application. See [Xcode Not Responding](../build/build_errors.md#xcode-not-responding) for instructions.
+    * **Why does Xcode show a colorful spinning icon and not respond to me?** Unfortunately, sometimes Xcode gets confused and you need to force quit the application. See [Xcode Not Responding](../build/build-errors.md#xcode-not-responding) for instructions.
     * Many more FAQs for building Loop are in-line with the steps that trigger the questions.
 
 ## Build Video
@@ -291,7 +291,7 @@ Refer to the graphic below. Your intial Xcode screen should be similar.
 
 ### Start Build
 
-If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the [Build Error](build_errors.md) page
+If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the [Build Error](build-errors.md) page
 
 #### First Time
 
@@ -373,7 +373,7 @@ No red error messages? Skip ahead to [Successful Build](#successful-build).
 !!! bug "Red Errors"
     If you get a message that your build failed and see **RED ERROR** messages:
 
-    * Go to the [Build Errors](build_errors.md) page to find the steps to fix your build error
+    * Go to the [Build Errors](build-errors.md) page to find the steps to fix your build error
     * (Optional) Follow the [Clear the Error Message](#clear-the-error-message) process
     * Return to [Start Build](#start-build) to try again
 
@@ -460,7 +460,7 @@ Even if you don't read all the pages under the Set Up tab now, these links are i
 !!! tip "Pro Tip"
     With a fresh download of code, it's always best to build to a simulator without customization to ensure the build works without errors. Then add the customizations and check the build again. Now you are ready to build to your phone to update your existing app.
 
-To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code_customization.md) page and then build the app again.
+To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code-customization.md) page and then build the app again.
 
 
 ### Apple Watch
@@ -473,7 +473,7 @@ For more information, please see [Operate: Apple Watch](../operation/features/wa
 
 ### Build Again with this Download
 
-Follow the [Find My Downloaded Loop Code](code_customization.md#find-my-downloaded-loop-code) instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the [Start Build](#start-build) section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.
+Follow the [Find My Downloaded Loop Code](code-customization.md#find-my-downloaded-loop-code) instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the [Start Build](#start-build) section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.
 
 !!! warning "Don't use a really old download"
     Do not use a really old download.

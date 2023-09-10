@@ -30,7 +30,7 @@ Then review the Build pages for the method you have chosen. Read the top three b
 !!! question "FAQs"
 
 
-Next, read pages completely and skim [Oh dear! Build errors?](build_errors.md). Most of the mistakes you can make when building with Xcode and a Mac have already been made. The Build Errors page shows how to fix them.
+Next, read pages completely and skim [Oh dear! Build errors?](build-errors.md). Most of the mistakes you can make when building with Xcode and a Mac have already been made. The Build Errors page shows how to fix them.
 
 When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
