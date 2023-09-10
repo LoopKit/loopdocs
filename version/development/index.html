@@ -1849,8 +1849,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#simulators-for-pump-and-cgm" class="md-nav__link">
-    Simulators for Pump and CGM
+  <a href="#modified-simulator-interface" class="md-nav__link">
+    Modified Simulator Interface
   </a>
   
 </li>
@@ -1877,8 +1877,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#browser-build-updates" class="md-nav__link">
-    Browser Build Updates
+  <a href="#favorite-foods" class="md-nav__link">
+    Favorite Foods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testflight-expiration-warning" class="md-nav__link">
+    TestFlight Expiration Warning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-browser-build-updates" class="md-nav__link">
+    GitHub Browser Build Updates
   </a>
   
 </li>
@@ -2441,8 +2455,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#simulators-for-pump-and-cgm" class="md-nav__link">
-    Simulators for Pump and CGM
+  <a href="#modified-simulator-interface" class="md-nav__link">
+    Modified Simulator Interface
   </a>
   
 </li>
@@ -2469,8 +2483,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#browser-build-updates" class="md-nav__link">
-    Browser Build Updates
+  <a href="#favorite-foods" class="md-nav__link">
+    Favorite Foods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testflight-expiration-warning" class="md-nav__link">
+    TestFlight Expiration Warning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-browser-build-updates" class="md-nav__link">
+    GitHub Browser Build Updates
   </a>
   
 </li>
@@ -2586,20 +2614,32 @@
 <p>If you choose to use dev, you accept that this code is not released.</p>
 <p>Please read this entire page before using any version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in dev<a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is an early look at what has been added to dev since <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and will probably be in the next release. After the release, some of the content and graphics in this section will move to the <a href="../releases/">Releases</a> page or the appropriate documentation section.</p>
+<p>This section is an early look at what has been added to dev since <abbr title="Latest release with major updates">Loop 3</abbr>.2.2 was released and will probably be in the next release. After the release, some of the content and graphics in this section will move to the <a href="../releases/">Releases</a> page or the appropriate documentation section.</p>
+<ul>
+<li><a href="#support-for-libre-sensors">Support for Libre Sensors</a></li>
+<li><a href="#modified-simulator-interface">Modified Simulator Interface</a></li>
+<li><a href="#algorithm-experiments">Algorithm Experiments</a><ul>
+<li><a href="#glucose-based-partial-application-gbpa"><span translate="no">Glucose Based Partial Application</span> Factor</a></li>
+<li><a href="#integral-retrospective-correction-irc"><span translate="no">Integral Retrospective Correction</span></a></li>
+</ul>
+</li>
+<li><a href="#favorite-foods">Favorite Foods</a></li>
+<li><a href="#testflight-expiration-warning"><span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Expiration Warning</span></a></li>
+<li><a href="#github-browser-build-updates"><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> Updates</a></li>
+</ul>
 <h3 id="support-for-libre-sensors">Support for Libre Sensors<a class="headerlink" href="#support-for-libre-sensors" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">LibreTransmitter</a> support was merged into dev in July 2023.</p>
-<p>If you are using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build, please review: </p>
+<p>If you are using the <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span>, please review: </p>
 <ul>
 <li><a href="../../gh-actions/gh-update/#one-time-changes"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build: One-Time Changes</a>: New steps and dates at which the new steps were added</li>
 </ul>
-<h3 id="simulators-for-pump-and-cgm">Simulators for Pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#simulators-for-pump-and-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="modified-simulator-interface">Modified Simulator Interface<a class="headerlink" href="#modified-simulator-interface" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The simulators for the Pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> for dev show a new format when first selected. The initial view is a demonstration screen showing a typical <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or Pump display. In order to view behind the scenes, to modify settings and to delete the simulator, you must press and hold (long-press) on the top of the display. Any where in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> screen, return to simulator screen and try again.</p>
 <p align="center"><img alt="use long press example for pump" src="../img/long-press-to-adjust-simulator.jpg" width="500" /></p>
 <h3 id="algorithm-experiments">Algorithm Experiments<a class="headerlink" href="#algorithm-experiments" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Two algorithm experiments have been added to dev. These are <code>Glucose Based Partial Application</code> and <code>Integral Retrospective Correction</code>. They can be viewed on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen just below <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> and Usage Data Sharing as shown in the graphic below:</p>
+<p>Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and <span translate="no">Integral Retrospective Correction</span>. They can be viewed on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen just below <abbr title="Basal Rates, ISF, CR, correction and safety ranges and delivery limits">Therapy Settings</abbr> and Usage Data Sharing as shown in the graphic below:</p>
 <p align="center"><img alt="algorithm experiments" src="../img/algorithm-experiments.svg" width="650" /></p>
-<h3 id="glucose-based-partial-application-gbpa"><code>Glucose Based Partial Application</code> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="glucose-based-partial-application-gbpa"><span translate="no">Glucose Based Partial Application</span> (<code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code>):<a class="headerlink" href="#glucose-based-partial-application-gbpa" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed as <a href="https://github.com/LoopKit/Loop/pull/1988"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 1988</a></li>
 <li>It is only used when <code><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></code> (AB) is selected for <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code></li>
@@ -2745,7 +2785,7 @@
 </table>
 <p>The 20% and 40% application factor columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The 60% application factor only reached 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.</p>
 <p>The <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code> <code><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code><abbr title="Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy">GBPA</abbr></code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the <strong>rate</strong> requested, acheiving the full 1 U (<strong>for this example</strong>).</p>
-<h3 id="integral-retrospective-correction-irc"><code>Integral Retrospective Correction</code> (<code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>):<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="integral-retrospective-correction-irc"><span translate="no">Integral Retrospective Correction</span> (<code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code>):<a class="headerlink" href="#integral-retrospective-correction-irc" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>Originally proposed in <a href="https://github.com/LoopKit/Loop/issues/695"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 695</a><ul>
 <li>This was tested in a few forks but not included into dev until recently</li>
@@ -2753,7 +2793,7 @@
 </ul>
 </li>
 <li>Updated with a modification to limit stacking of <code><abbr title="Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame">IRC</abbr></code> with Glucose Momentum: <a href="https://github.com/LoopKit/Loop/pull/2028"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2028</a></li>
-<li><code>Integral Retrospective Correction</code>, when enabled:<ul>
+<li><span translate="no">Integral Retrospective Correction</span>, when enabled:<ul>
 <li>changes the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> prediction model and thus can affect the recommended dose</li>
 <li>applies to both Dosing Strategies: <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> or <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></li>
 </ul>
@@ -2814,11 +2854,51 @@
 </ul>
 </li>
 </ol>
-<h3 id="browser-build-updates">Browser Build Updates<a class="headerlink" href="#browser-build-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> has a few updates already merged with a few more planned to make the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build more automatic.</p>
-<p>Only the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> ID must be added to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, which simplifies the First-Time Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> step. The other App services are automatically added with dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h3 id="favorite-foods">Favorite Foods<a class="headerlink" href="#favorite-foods" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This feature allows you to save Favorite Foods.</p>
+<p>A new row on the <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app Settings screen, see graphic below, provides access to create and edit your <span translate="no">Favorite Foods</span>.</p>
+<p align="center"><img alt="favorite foods feature" src="../img/favorite-foods.svg" width="300" /></p>
+<p>In the example meal entry shown below:</p>
+<ol>
+<li>The Favorite Food row (at the bottom) is tapped</li>
+<li>The desired Favorite Food is selected</li>
+</ol>
+<p>At this point the meal can be saved by tapping the Continue button, or the user can modify the time (typical) or any other of the carb entry rows before tapping Continue.</p>
+<p align="center"><img alt="carb entry with favorite foods feature" src="../img/favorite-foods-carb-entry.svg" width="500" /></p>
+<h3 id="testflight-expiration-warning"><span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> Expiration Warning<a class="headerlink" href="#testflight-expiration-warning" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> app has been updated to detect whether the build was uploaded through <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span>, which implies a 90-day limit until the app expires.</p>
+<p>The usual <a href="../../operation/features/notifications/#loop-app-expiration-notification"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> expiration notification system</a> alerts the user when within 20 days of expiration. In addition to that <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.</p>
+<p align="center"><img alt="expiration warning on settings for testflight example" src="../img/expiration-warning-testflight.svg" width="300" /></p>
+<h3 id="github-browser-build-updates"><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> Updates<a class="headerlink" href="#github-browser-build-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> has several updates merged that make it easier to find errors in configuration and that make the <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> automatic.</p>
+<p>Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> for <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> will:</p>
 <ul>
-<li><a href="../../gh-actions/gh-update/#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a>: How to use <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Automatically build a new version once a month, with automatic update included</li>
+<li>Automatically update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace once a week if updates are available</li>
+</ul>
+<p>It is strongly recommended that all users of the released code (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>), maintain this automatic schedule so they are never without a valid and up-to-date <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span> in their <span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></span> app.</p>
+<p>For users of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.</p>
+<ul>
+<li><a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#gh_pat-workflow-permission">Configure <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></a></li>
+<li><a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#modify-scheduled-building-and-synchronization">Modify Scheduled Building and Synchronization</a></li>
+</ul>
+<p>In addition to the easier to read error messages found with these updates, these additional simplification include:</p>
+<ul>
+<li><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are broken into logical components, each of which provides an easy to understand error message if it fails which includes a suggested fix</li>
+<li>A new builder no longer needs to create the <span translate="no"><abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></span><ul>
+<li>If it does not exist, one is created for you</li>
+<li>Only the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> ID must be added to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>; all other App services are    automatically added</li>
+</ul>
+</li>
+<li>For new builders and current 3.2.2 users updating to the next release<ul>
+<li>The <span translate="no">alive</span> <abbr title="version of code within a single repository or workspace repository">branch</abbr> needed to enable automatic building is created automatically</li>
+<li>If their <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> does not have <code>repo, workflow</code> permission, a prominent message is displayed with each Action completed</li>
+</ul>
+</li>
+</ul>
+<p>These sections are still useful for version 3.3.0 dev users:</p>
+<ul>
+<li><a href="../../gh-actions/gh-update/#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a>: How to use <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span> for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li><a href="../../gh-actions/gh-update/#one-time-changes"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build: One-Time Changes</a>: New steps and dates at which the new steps were added</li>
 </ul>
 <h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Anchor link to this Header on this Page">&para;</a></h2>
