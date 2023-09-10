@@ -135,7 +135,7 @@ Click on each of the three remaining targets shown in the red box below, and rep
 After signing the targets, click on the Loop icon under the `PROJECTS` heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)
 
 - If you skip this step, you may get an "Entitlements" Build Error for either Loop or WatchApp
-    - Follow this procedure to fix the error: [Entitlements Error](build_errors.md#entitlements-error)
+    - Follow this procedure to fix the error: [Entitlements Error](build-errors.md#entitlements-error)
     - Much easier to just click on Loop under `Projects`
 
 ## Signing Complete

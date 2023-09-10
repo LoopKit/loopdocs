@@ -2,7 +2,7 @@
 
 This page provides help if your Loop icon is red and Loop is not working or only working sometimes.
 
-With Loop 3 - clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../loop-3/displays_v3.md#pump-status-icon) and the [Glucose Status Icon](../loop-3/displays_v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
+With Loop 3 - clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../loop-3/displays-v3.md#pump-status-icon) and the [Glucose Status Icon](../loop-3/displays-v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
 
 With Loop 2.2.x - clicking on the Loop icon on the main screen provides an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.
 
@@ -128,7 +128,7 @@ If you added your Nightscout URL to Loop and are uploading information to Nights
 1. Check that Nightscout database size isn't full (more details below)
 1. If Red Loops are resolved by removing the Nightscout URL from Loop; you need to figure out if it's the connection or the database or some other issue
 
-If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update_user.md#editadd-config-vars) and cleaning it.
+If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars) and cleaning it.
 
 ### Phone Storage is Full
 

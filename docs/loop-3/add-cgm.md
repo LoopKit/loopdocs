@@ -1,6 +1,6 @@
 ## CGM Choices
 
-A CGM can be added from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
+A CGM can be added from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
 
 The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 
@@ -144,7 +144,7 @@ In addition to the risks of missing data if the internet is not reliable, you mu
     
     _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
     
-    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Libre Support for Loop 3.2.x Code](../build/code_customization.md#libre-support-for-loop-32x-code) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
+    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Libre Support for Loop 3.2.x Code](../build/code-customization.md#libre-support-for-loop-32x-code) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
     
     It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
     

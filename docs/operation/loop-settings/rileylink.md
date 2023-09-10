@@ -12,7 +12,7 @@ If there is a problem communicating with that RileyLink compatible device, tappi
 With Loop 3
 
 * The Pump Devices display will show the signal loss icon instead of reporting dB as shown in the graphic below. 
-* If the problem persists, you'll start to see some [Error Messages](../../loop-3/displays_v3.md#error-messages) as well.
+* If the problem persists, you'll start to see some [Error Messages](../../loop-3/displays-v3.md#error-messages) as well.
 
 ![rileylink display with bad comms](img/pod-rl-comms-bad.svg){width="300"}
 {align="center"}

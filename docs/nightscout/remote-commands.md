@@ -181,11 +181,11 @@ Click the link above to read more about <span translate="no">Loop Caregiver</spa
 
 ### <span translate="no">Nightscout Careportal</span>
 
-To use remote commands in the <span translate="no">Careportal</span>, you must configure <span translate="no">Nightscout</span> site according to the directions [here](update_user.md) in <span translate="no">Loopdocs</span> in addition to setting up the [Remote Configuration](remote-config.md). 
+To use remote commands in the <span translate="no">Careportal</span>, you must configure <span translate="no">Nightscout</span> site according to the directions [here](update-user.md) in <span translate="no">Loopdocs</span> in addition to setting up the [Remote Configuration](remote-config.md). 
 
 Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`. The order of the words in the `ENABLE` line is not important.
 
-You'll also need to have your [site authenticated](update_user.md#authenticate-site) so that your <span translate="no">Careportal</span> is active to send remote overrides . 
+You'll also need to have your [site authenticated](update-user.md#authenticate-site) so that your <span translate="no">Careportal</span> is active to send remote overrides . 
 
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
 Within there, you will find all your <span translate="no">Loop</span> override presets already loaded for you.

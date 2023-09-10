@@ -35,7 +35,7 @@
         * If there is an update (new release) and the customization is no longer valid - you will get a clear error message
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
-    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code_customization.md) page
+    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code-customization.md) page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list)
     * *GitHub* (each Module):
         1. Fork Module (if needed)
@@ -62,7 +62,7 @@ There is some background information at the bottom of this page starting at [Loo
 
 ## Decide Which Modules You Want to Modify
 
-Decide which [LoopDocs: Code Customization](../build/code_customization.md) changes you want to make. Each customization lists a Module name. You will want a fork for each Module you wish to modify.
+Decide which [LoopDocs: Code Customization](../build/code-customization.md) changes you want to make. Each customization lists a Module name. You will want a fork for each Module you wish to modify.
 
 * DASH Pods: Use OmniBLE
 * Eros Pods: Use OmniKit
@@ -151,7 +151,7 @@ When you fork a repository, the default branch is the one that is forked. That i
 
 Open your browser to your https://github.com/username/Module fork. Be sure to sync **your fork** if it shows it is behind the LoopKit repository.
 
-Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../build/code_customization.md#instructions-for-finding-the-lines))
+Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../build/code-customization.md#instructions-for-finding-the-lines))
 
 !!! tip "Pro Tip"
     Look at the files you want to change - if more than one change is desired for a single file - do them at the same time.

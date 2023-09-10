@@ -22,7 +22,7 @@ After you complete the configuration, read the entire [Remote Commands](remote-c
     * There are many choices for building your own or paying someone to build a <span translate="no">Nightscout</span> site
         * The directions for only one of the options is documented on this page
         * Use that as a guide for your site
-    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
+    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new-user/#vendors-comparison-table)
         * Warning: examine the `Loop remote carbs/bolus` row
         * If a green check is missing, it might just be too new for evaluation
 

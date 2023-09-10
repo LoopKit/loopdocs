@@ -209,7 +209,7 @@ For more information on some of the details reported on this screen, review [Dyn
 
 ## Review Carb Absorption
 
-New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be COB on the **Active Carbohydrates Chart** [Loop 3](../../loop-3/displays_v3.md#active-carbohydrates-chart) / [Loop 2](../loop-settings/displays.md#active-carbohydrates-chart) that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
+New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be COB on the **Active Carbohydrates Chart** [Loop 3](../../loop-3/displays-v3.md#active-carbohydrates-chart) / [Loop 2](../loop-settings/displays.md#active-carbohydrates-chart) that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
 
 * Need to adjust value for carbs or account for fat/protein
 * Need to adjust aborption time

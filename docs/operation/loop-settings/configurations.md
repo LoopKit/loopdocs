@@ -112,7 +112,7 @@ There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting 
     Loop 3 drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra.
 
     * Insulin Type is selected when the user adds a pump
-    * The user can choose to customize Loop 3 to [Enable Child Model](../../build/code_customization.md#enable-child-model)
+    * The user can choose to customize Loop 3 to [Enable Child Model](../../build/code-customization.md#enable-child-model)
 
 **We highly recommend selecting one of the exponential insulin models for Loop 2.2.x (in other words, not the Walsh model).**
 
@@ -173,7 +173,7 @@ Incorrectly set ISF is the most common cause of roller coaster glucose for new L
 
 ## Loop 2 Services (Optional)
 
-You are not required to use services, although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to this page when you are ready. This can be added at any time. The same is true for the other services. For more details, click on [Loop 2 Services](services_v2.md).
+You are not required to use services, although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to this page when you are ready. This can be added at any time. The same is true for the other services. For more details, click on [Loop 2 Services](services-v2.md).
 
 ![img/overview-services.jpg](../img/overview-services.jpg){width="250"}
 {align="center"}

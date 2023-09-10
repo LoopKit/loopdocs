@@ -47,7 +47,7 @@ Configure Loop's settings. Within this section, you will be entering many settin
 
 ### Loop 2 Services (Optional)
 
-You are not required to use services although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to the [Services](loop-settings/services_v2.md) page when you are ready. Note that Loop 3 and Loop 2 use the same documentation page for Services. Services can be added at any time.
+You are not required to use services although many Loopers use Nightscout. If you do not yet have Nightscout configured and want to add it later, just return to the [Services](loop-settings/services-v2.md) page when you are ready. Note that Loop 3 and Loop 2 use the same documentation page for Services. Services can be added at any time.
 
 ![img/overview-services.jpg](img/overview-services.jpg){width="250"}
 {align="center"}

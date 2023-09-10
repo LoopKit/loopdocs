@@ -384,7 +384,7 @@ This will get rendered to this:
 #### Images in Tables
 
 Use HTML on the first line that indicates the table.  
-For example, in [displays_v3.md](https://loopkit.github.io/loopdocs/loop-3/displays_v3/#loop-cycle) there are many icons with descriptions to the right.
+For example, in [displays-v3.md](https://loopkit.github.io/loopdocs/loop-3/displays-v3/#loop-cycle) there are many icons with descriptions to the right.
 This format provides appropriate views on both desktop and mobile.
 
 For **no header row**, replace `|||` with:

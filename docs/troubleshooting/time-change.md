@@ -54,7 +54,7 @@ Time Change comments:
     * Most people want to update their pump time immediately after the clocks change
 * With Loop 3 there is a Clock Icon added to the HUD Pump Status display
 
-If you want more information, click on this link: [Time Zone](../loop-3/displays_v3.md#time-zone), which provides detail and connects to the Loop 2.2.x or the Loop 3 version sections.
+If you want more information, click on this link: [Time Zone](../loop-3/displays-v3.md#time-zone), which provides detail and connects to the Loop 2.2.x or the Loop 3 version sections.
 
 !!! warning "Medtronic Users"
 
