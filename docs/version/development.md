@@ -12,17 +12,26 @@ Please read this entire page before using any version of Loop other than the rel
 
 ## Updates in dev
 
-This section is an early look at what has been added to dev since Loop 3.2.x and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [Releases](releases.md) page or the appropriate documentation section.
+This section is an early look at what has been added to dev since Loop 3.2.2 was released and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [Releases](releases.md) page or the appropriate documentation section.
+
+* [Support for Libre Sensors](#support-for-libre-sensors)
+* [Modified Simulator Interface](#modified-simulator-interface)
+* [Algorithm Experiments](#algorithm-experiments)
+    * [<span translate="no">Glucose Based Partial Application</span> Factor](#glucose-based-partial-application-gbpa)
+    * [<span translate="no">Integral Retrospective Correction</span>](#integral-retrospective-correction-irc)
+* [Favorite Foods](#favorite-foods)
+* [<span translate="no">TestFlight Expiration Warning</span>](#testflight-expiration-warning)
+* [<span translate="no">GitHub Browser Build</span> Updates](#github-browser-build-updates)
 
 ### Support for Libre Sensors
 
 [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was merged into dev in July 2023.
 
-If you are using the GitHub Browser Build, please review: 
+If you are using the <span translate="no">GitHub Browser Build</span>, please review: 
 
 * [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
-### Simulators for Pump and CGM
+### Modified Simulator Interface
 
 The simulators for the Pump and CGM for dev show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, to modify settings and to delete the simulator, you must press and hold (long-press) on the top of the display. Any where in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to main Loop screen, return to simulator screen and try again.
 
@@ -31,12 +40,12 @@ The simulators for the Pump and CGM for dev show a new format when first selecte
 
 ### Algorithm Experiments
 
-Two algorithm experiments have been added to dev. These are `Glucose Based Partial Application` and `Integral Retrospective Correction`. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and <span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
 
-### `Glucose Based Partial Application` (<code>GBPA</code>):
+### <span translate="no">Glucose Based Partial Application</span> (<code>GBPA</code>):
 
 * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
 * It is only used when <code>Automatic Bolus</code> (AB) is selected for <code>Dosing Strategy</code>
@@ -88,13 +97,13 @@ The 20% and 40% application factor columns did not reach 1 U in 30 minutes becau
 
 The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code>GBPA</code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code>Temp Basal Only</code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
 
-### `Integral Retrospective Correction` (<code>IRC</code>):
+### <span translate="no">Integral Retrospective Correction</span> (<code>IRC</code>):
 
 * Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
     * This was tested in a few forks but not included into dev until recently
     * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
 * Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
-* `Integral Retrospective Correction`, when enabled:
+* <span translate="no">Integral Retrospective Correction</span>, when enabled:
     * changes the Loop prediction model and thus can affect the recommended dose
     * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
 
@@ -147,13 +156,63 @@ If you want to look at the code, the version (as of 14-Aug-2023) is found in Loo
     * Responses to unannounced meals - spikes should in general be somewhat lower than with standard Loop, but there should also be no follow-up lows
     * Nighttime responses over a few weeks - highs or lows should be less frequent compared to standard Loop; at the wake-up time blood glucose should in general be closer to the correction range.
 
-### Browser Build Updates
+### Favorite Foods
 
-The dev branch has a few updates already merged with a few more planned to make the GitHub Browser Build more automatic.
+This feature allows you to save Favorite Foods.
 
-Only the App Group ID must be added to the Identifiers, which simplifies the First-Time Configure Identifiers step. The other App services are automatically added with dev branch.
+A new row on the <span translate="no">Loop</span> app Settings screen, see graphic below, provides access to create and edit your <span translate="no">Favorite Foods</span>.
 
-* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use GitHub Browser build for dev branch
+![favorite foods feature](img/favorite-foods.svg){width="300"}
+{align="center"}
+
+In the example meal entry shown below:
+
+1. The Favorite Food row (at the bottom) is tapped
+1. The desired Favorite Food is selected
+
+At this point the meal can be saved by tapping the Continue button, or the user can modify the time (typical) or any other of the carb entry rows before tapping Continue.
+
+![carb entry with favorite foods feature](img/favorite-foods-carb-entry.svg){width="500"}
+{align="center"}
+
+### <span translate="no">TestFlight</span> Expiration Warning
+
+The <span translate="no">Loop</span> app has been updated to detect whether the build was uploaded through <span translate="no">TestFlight</span>, which implies a 90-day limit until the app expires.
+
+The usual [<span translate="no">Loop</span> expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
+
+![expiration warning on settings for testflight example](img/expiration-warning-testflight.svg){width="300"}
+{align="center"}
+
+### <span translate="no">GitHub Browser Build</span> Updates
+
+The dev branch has several updates merged that make it easier to find errors in configuration and that make the <span translate="no">GitHub Browser Build</span> automatic.
+
+Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the <span translate="no">GitHub Browser Build</span> for <span translate="no">Loop</span> will:
+
+* Automatically build a new version once a month, with automatic update included
+* Automatically update your fork of LoopWorkspace once a week if updates are available
+
+It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date <span translate="no">Loop</span> in their <span translate="no">TestFlight</span> app.
+
+For users of the dev branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
+
+* [Configure GH_PAT](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#gh_pat-workflow-permission)
+* [Modify Scheduled Building and Synchronization](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#modify-scheduled-building-and-synchronization)
+
+In addition to the easier to read error messages found with these updates, these additional simplification include:
+
+* Actions are broken into logical components, each of which provides an easy to understand error message if it fails which includes a suggested fix
+* A new builder no longer needs to create the <span translate="no">Match-Secrets repository</span>
+    * If it does not exist, one is created for you
+    * Only the App Group ID must be added to the Identifiers; all other App services are    automatically added
+* For new builders and current 3.2.2 users updating to the next release
+    * The <span translate="no">alive</span> branch needed to enable automatic building is created automatically
+    * If their GH_PAT does not have `repo, workflow` permission, a prominent message is displayed with each Action completed
+
+These sections are still useful for version 3.3.0 dev users:
+
+* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use <span translate="no">GitHub Browser Build</span> for dev branch
 * [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
 ## What are branches?
