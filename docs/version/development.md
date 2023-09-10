@@ -40,7 +40,7 @@ The simulators for the Pump and CGM for dev show a new format when first selecte
 
 ### Algorithm Experiments
 
-Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and `<span translate="no">Integral Retrospective Correction</span>`. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and <span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
