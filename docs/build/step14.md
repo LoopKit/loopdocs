@@ -502,4 +502,4 @@ If this is not successful, the script told you the download failed and exited. S
     You missed one of these steps:
 
     * [Install Xcode](xcode-version.md)
-    * [Xcode command line tools](step9.md#command-line-tools)
+    * [Xcode command line tools](xcode-settings.md#command-line-tools)

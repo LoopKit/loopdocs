@@ -88,7 +88,7 @@ The graphic below indicates in red the three places you need to click in order t
 
 ## Sign the Targets
 
-It is time to Sign the Targets with your [Apple ID](step9.md#add-apple-id).
+It is time to Sign the Targets with your [Apple ID](xcode-settings.md#add-apple-id).
 
 If you chose to sign manually but have a paid account, you can skip the Free Account steps below.
 

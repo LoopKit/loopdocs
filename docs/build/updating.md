@@ -86,9 +86,9 @@ Minimum means you need to have at least that version - newer versions build just
 
 ### Verify / Update Xcode
 
-Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
+Click on this link [Check your Xcode Version](xcode-settings.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Install Xcode](xcode-version.md#install-xcode) and continue through [Xcode Preferences](step9.md).
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](xcode-version.md#install-xcode) and continue through [Xcode Preferences](xcode-settings.md).
 
 Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode).
 
@@ -100,13 +100,13 @@ Advanced users: If you are finding installation of Xcode from the App Store incr
 
 #### What about a New Computer?
 
-Make sure your new computer has the macOS and Xcode required by your phone iOS. Be sure Xcode [Command Line Tools](step9.md#command-line-tools) are installed and that you [Add Apple ID](step9.md#add-apple-id) to Xcode.
+Make sure your new computer has the macOS and Xcode required by your phone iOS. Be sure Xcode [Command Line Tools](xcode-settings.md#command-line-tools) are installed and that you [Add Apple ID](xcode-settings.md#add-apple-id) to Xcode.
 
 #### Missing Xcode or Command Line Tools
 
 !!! warning "WARNING"
 
-    If you fail to have [Xcode](xcode-version.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
+    If you fail to have [Xcode](xcode-version.md) or [Xcode Command Line Tools](xcode-settings.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
 
     * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
     * xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
@@ -238,7 +238,7 @@ Here are the different steps you need to follow doing the Direct Download instea
 1. Wait for Download to complete
 1. Expand the file by clicking on it in Finder
 1. Move the Xcode icon to Applications after the expansion completes
-1. Check the [Command Line Tools](step9.md#command-line-tools) setting under Xcode->Preferences
+1. Check the [Command Line Tools](xcode-settings.md#command-line-tools) setting under Xcode->Preferences
     - The selection cannot be blank or Build-Script will fail to open Xcode automatically
     - It should be the same version as your Xcode
 1. Reboot the computer

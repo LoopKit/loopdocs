@@ -111,4 +111,4 @@ With Loop 3, you may see another error when the Xcode version does not support t
 
 ## Next Step: Xcode Preferences
 
-Now you are ready to set up [Xcode Preferences](step9.md).
+Now you are ready to set up [Xcode Preferences](xcode-settings.md).
