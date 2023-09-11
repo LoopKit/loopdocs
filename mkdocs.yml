@@ -83,6 +83,7 @@ plugins:
             'build/build_errors.md': 'build/build-errors.md'
             'build/code_customization.md': 'build/code-customization.md'
             'build/step1.md': 'build/computer.md'
+            'build/step10.md': 'build/test-settings.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -115,7 +116,7 @@ nav:
     - 'Compatible CGM': 'build/step4.md'
     - 'RileyLink': 'build/step5.md'
     - 'Apple Developer Program': 'build/step6.md'
-    - 'Test Settings': 'build/step10.md'
+    - 'Test Settings': 'build/test-settings.md'
     - 'Loop Data': 'build/step11.md'
     - 'Meet the Community': 'build/step12.md'
 - Browser Build:
