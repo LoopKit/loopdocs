@@ -84,4 +84,4 @@ If your compatible pump is Medtronic or Omnipod (not DASH)
 
 If your compatible pump is Omnipod DASH
 
-* Next step is to enroll in the [Apple Developer Program](step6.md).
+* Next step is to enroll in the [Apple Developer Program](apple-developer.md).

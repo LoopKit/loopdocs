@@ -224,7 +224,7 @@ This section provides detailed instructions for the four <code>Secrets</code> as
 
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
-* LoopDocs has an [*Apple* Developer Program](../build/step6.md) page that explains in detail how to sign up for an account
+* LoopDocs has an [*Apple* Developer Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [*Apple* Developer account](https://developer.apple.com) to sign up
 
 ### Find <code>TEAMID</code>

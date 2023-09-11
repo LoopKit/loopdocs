@@ -36,10 +36,10 @@ To Loop with the *GitHub* Build method, you need:
 1. [Compatible CGM](../build/cgm.md)
 1. [RileyLink Compatible Device](../build/rileylink.md) (not needed for Omnipod DASH)
 1. Free *GitHub* account (instructions included in [First-Time with *GitHub* Actions](../gh-actions/gh-first-time.md))
-1. [Apple Developer Membership](../build/step6.md)
+1. [Apple Developer Membership](../build/apple-developer.md)
     * Must be a paid developer account
     * If building for a family member, review this section:
-        * [Loopers Need Their Own *Apple* ID](../build/step6.md#loopers-need-their-own-apple-id)
+        * [Loopers Need Their Own *Apple* ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
     * If building for a child (age depends on the country), review this section:
         * [Install *TestFlight* Loop for Child](../gh-actions/gh-deploy.md#install-testflight-loop-for-child)
 

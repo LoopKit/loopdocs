@@ -12,7 +12,7 @@
 
     If you do not have a Mac, you can build Loop 3 with any computer using a browser. If you want to use that method, review this list and head over to [Browser Build](../gh-actions/gh-overview.md).
 
-    - You need a paid ($99/year) [Apple Developer Account](step6.md)
+    - You need a paid ($99/year) [Apple Developer Account](apple-developer.md)
     - You need an account (free) with [github](https://github.com)
     - You need a [compatible phone](phone.md) to install the app from TestFlight
     - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually Loop (and not just explore the app)
@@ -118,7 +118,7 @@ Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no
 
 ## Next Step:
 
-If you already have an [Apple Developer ID](step6.md) or you are using a free ID, next step is [Download Xcode](step8.md).
+If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Download Xcode](step8.md).
 
 !!! warning "Free ID"
     The free ID method only works when using the Mac-Xcode build method. The [Browser Build](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.
