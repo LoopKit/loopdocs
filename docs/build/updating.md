@@ -42,7 +42,7 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
 
     Follow these "safe Looping" steps for updating your iOS:
 
-    1. Check which [version of macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
+    1. Check which [version of macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
     1. [Update macOS / Xcode if needed](#macos-and-xcode-versions)
     1. Check [Loop: Current Release](../version/releases.md#current-release) status - if there is new code, you should download it
     1. Build app to your iPhone
@@ -64,7 +64,7 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
 Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum Xcode version required for your phone iOS, you cannot build on that phone. Sometimes you must also update the macOS version to allow you to use the required Xcode version.
 
-Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
+Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
 
 If you are tired of the macOS and Xcode version update requirements, check out the [Browser Build](../gh-actions/gh-overview.md) option.
 
@@ -88,7 +88,7 @@ Minimum means you need to have at least that version - newer versions build just
 
 Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preferences](step9.md).
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](xcode-version.md#install-xcode) and continue through [Xcode Preferences](step9.md).
 
 Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode).
 
@@ -106,7 +106,7 @@ Make sure your new computer has the macOS and Xcode required by your phone iOS. 
 
 !!! warning "WARNING"
 
-    If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
+    If you fail to have [Xcode](xcode-version.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
 
     * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
     * xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
@@ -198,7 +198,7 @@ More information is shown in the orange box below.
         * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
     1. Your version of Xcode is way out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
-        * Update [Xcode](step8.md) to the most recent version
+        * Update [Xcode](xcode-version.md) to the most recent version
 
     **If you revoke and keep going:**
 

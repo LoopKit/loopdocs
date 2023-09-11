@@ -53,7 +53,7 @@ If your macOS does not meet the minimum, check to see if you can [update your ma
 
 !!! warning "iOS Dictates Your Computer Needs"
 
-    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop with the Mac-Xcode build method. A new build is required at least once a year. More information on iOS is in [Download Xcode](step8.md#download-xcode).
+    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop with the Mac-Xcode build method. A new build is required at least once a year. More information on iOS is in [Download Xcode](xcode-version.md#download-xcode).
 
 Do not use any of the beta macOS versions. (If you don't know what that means, you aren't using one.)
 
@@ -75,7 +75,7 @@ Apple says upgrading to macOS Monterey or Ventura requires 26 GB of available st
 
 ## Check the Space Available
 
-You need to have 50 GB free space in order to install Xcode in [Download Xcode](step8.md). At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle, or, if running Ventura, tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
+You need to have 50 GB free space in order to install Xcode in [Download Xcode](xcode-version.md). At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle, or, if running Ventura, tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
 
  To free up space, move things like photos to an external drive. The Xcode application cannot be run from an external drive.
 
@@ -118,7 +118,7 @@ Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no
 
 ## Next Step:
 
-If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Download Xcode](step8.md).
+If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Download Xcode](xcode-version.md).
 
 !!! warning "Free ID"
     The free ID method only works when using the Mac-Xcode build method. The [Browser Build](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.

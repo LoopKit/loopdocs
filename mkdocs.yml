@@ -91,6 +91,7 @@ plugins:
             'build/step4.md': 'build/cgm.md'
             'build/step5.md': 'build/rileylink.md'
             'build/step6.md': 'build/apple-developer.md'
+            'build/step8.md': 'build/xcode-version.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -136,7 +137,7 @@ nav:
 - Mac-Xcode Build:
     - 'Mac-Xcode Build Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/computer.md'
-    - 'Download Xcode': 'build/step8.md'
+    - 'Xcode Version': 'build/xcode-version.md'
     - 'Xcode Preferences': 'build/step9.md'
     - 'Build Loop': 'build/step14.md'
     - 'Oh dear! Build errors?': 'build/build-errors.md'

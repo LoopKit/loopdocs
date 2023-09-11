@@ -32,7 +32,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 1. **For older builds, before 3.2.0, you had to select Loop(WorkSpace)** The first time you build after downloading new code, you had to manually select Loop (Workspace) instead of Loop in Xcode.
     * Starting with Loop 3.2.0 and newer versions, the target name and xcworkspace file names are now automatically LoopWorkspace - no special action needed when building.
 
-1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 1. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
@@ -389,7 +389,7 @@ Or maybe you are trying to build using an old download; some older versions did 
 
 **Error Message:** "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 
-**Solution:** Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for [Xcode and macOS](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+**Solution:** Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for [Xcode and macOS](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 ![img/device-support-files.jpg](img/device-support-files.jpg){width="750"}
 {align="center"}

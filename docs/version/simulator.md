@@ -14,7 +14,7 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
     * Compatible CGM
     * Order a RileyLink (not required for Omnipod DASH)
     * Apple Developer Program (can use a free account)
-* Follow [Download Xcode](../build/step8.md)
+* Follow [Download Xcode](../build/xcode-version.md)
 * Follow [Xcode Preferences](../build/step9.md) but can skip the `Add Apple ID` section
 * Follow [Build the Loop App](../build/step14.md) but with the following variation:
     * Skip the section on Developer Mode (that is only when building to a phone)
@@ -76,7 +76,7 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 * Need access to a mac or virtual computer, see [Compatible Computer](../build/computer.md)
 
 * You can use a Free Apple Developer account
-* Follow [Download Xcode](../build/step8.md)
+* Follow [Download Xcode](../build/xcode-version.md)
 * Follow [Xcode Preferences](../build/step9.md)
     * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
     * If you do not have a developer ID, use the [Free Developer Account](../build/step9.md#free-developer-account) instructions in the `Add Apple ID` section
