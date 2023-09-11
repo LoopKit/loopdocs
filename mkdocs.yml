@@ -80,16 +80,16 @@ plugins:
         raise_error_after_finish: true
     - redirects:
         redirect_maps:
-            'nightscout/remote-overrides.md': 'nightscout/remote-overview.md'
-            'operation/features/workout.md': 'operation/features/overrides.md'
-            'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
-            'nightscout/new_user.md': 'nightscout/new-user.md'
-            'nightscout/update_user.md': 'nightscout/update-user.md'
-            'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
             'build/build_errors.md': 'build/build-errors.md'
-            'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
-            'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
             'build/code_customization.md': 'build/code-customization.md'
+            'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
+            'nightscout/new_user.md': 'nightscout/new-user.md'
+            'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
+            'nightscout/remote-overrides.md': 'nightscout/remote-overview.md'
+            'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
+            'nightscout/update_user.md': 'nightscout/update-user.md'
+            'operation/features/workout.md': 'operation/features/overrides.md'
+            'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
