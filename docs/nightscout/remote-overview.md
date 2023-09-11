@@ -30,7 +30,7 @@ Remote commands to the <span translate="no">Loop</span> phone go through their <
 * Most providers who supply `Nightscout as a service` or `Hosted Nightscout` will assist you, if needed, in getting your APN information added to your <span translate="no">Nightscout</span> variables; one provider requires an added monthly subscription fee
     * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user)
     * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
-        * Warning: examine the `Loop remote carbs/bolus` row
+        * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
 
 ## Next Steps
 

@@ -47,7 +47,7 @@ After successfully creating your fork of the repository for this app:
 
 * If this is the first repository you have built with *GitHub*
     * You should follow the detailed steps at [GitHub First-Time: Configure Secrets](../gh-actions/gh-first-time.md#configure-secrets), except you will apply the Secrets to the repository for the app you are planning to build
-    * Once your 6 secrets have been added, return to this page and skip ahead to [Action: Validate Secrets](#action-validate-secrets) on this page.
+    * Once your 6 secrets have been added, return to this page and skip ahead to [Validate Secrets](#validate-secrets) on this page.
 
 ### Add Existing Secrets
 
@@ -78,7 +78,7 @@ Open the text file in which you maintain a copy of your 6 Secrets so you can cop
 
 Once all six Secrets are added, you will either to the first Action to validate your secrets.
 
-## Action: Validate Secrets
+## Validate Secrets
 
 The first action step is to Validate Secrets.
 
@@ -100,7 +100,7 @@ This step validates most of your six Secrets and provides error messages if it d
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 1. The workflow will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.
 
-## Action: Add Identifiers
+## Add Identifiers
 
 Near the top middle of your Repository fork, click on the "Actions" tab.
 
