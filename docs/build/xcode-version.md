@@ -1,4 +1,4 @@
-## Download Xcode
+## Install Required Xcode Version
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.

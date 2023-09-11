@@ -176,7 +176,7 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the Loop and Learn team kept it on life-support. It was updated to include DASH, but that is the last expected improvement. It is strongly recommended the people switch to Loop 3.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the Loop and Learn team kept it on life-support. It was updated to include DASH, but that is the last expected improvement. It is strongly recommended people switch to Loop 3.
 
 Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. The dev branch has Libre support, see [Build Loop Dev](../version/build-dev.md).
 
