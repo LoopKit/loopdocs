@@ -14,7 +14,7 @@ Each requirement in the list is linked to the LoopDocs pages with more informati
 
 ### Mac-Xcode Build Additional Requirements
 
-1. [Compatible Computer](../build/step1.md#macos)
+1. [Compatible Computer](../build/computer.md#macos)
 1. [Xcode](../build/step8.md) (a free Apple application)
 
 If building to a [Simulator](../version/simulator.md) to try things out, the only requirements are a computer and Xcode.

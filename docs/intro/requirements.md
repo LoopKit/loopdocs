@@ -31,7 +31,7 @@ In addition to the paid Apple Developer account, you also need a free GitHub acc
 
 If you plan to build using the Mac-Xcode Build instructions, you also need:
 
-1. [Compatible Computer](../build/step1.md#macos)
+1. [Compatible Computer](../build/computer.md#macos)
 1. [Xcode](../build/step8.md) (a free Apple application)
 
 

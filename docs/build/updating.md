@@ -81,7 +81,7 @@ Minimum means you need to have at least that version - newer versions build just
 
 ### Verify / Update macOS
 
-* Click on this link [Check your macOS Version](step1.md#check-your-macos-version) and follow the instructions on that page if an update is required.
+* Click on this link [Check your macOS Version](computer.md#check-your-macos-version) and follow the instructions on that page if an update is required.
 * After you've reviewed that section, hit the back button on your browser to return here
 
 ### Verify / Update Xcode

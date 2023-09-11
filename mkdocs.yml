@@ -82,6 +82,17 @@ plugins:
         redirect_maps:
             'build/build_errors.md': 'build/build-errors.md'
             'build/code_customization.md': 'build/code-customization.md'
+            'build/step1.md': 'build/computer.md'
+            'build/step10.md': 'build/step10.md'
+            'build/step11.md': 'build/step11.md'
+            'build/step12.md': 'build/step12.md'
+            'build/step2.md': 'build/step2.md'
+            'build/step3.md': 'build/step3.md'
+            'build/step4.md': 'build/step4.md'
+            'build/step5.md': 'build/step5.md'
+            'build/step6.md': 'build/step6.md'
+            'build/step8.md': 'build/step8.md'
+            'build/step9.md': 'build/step9.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -126,7 +137,7 @@ nav:
     - 'Other Apps': gh-actions/gh-other-apps.md
 - Mac-Xcode Build:
     - 'Mac-Xcode Build Overview': 'build/overview.md'
-    - 'Compatible Computer': 'build/step1.md'
+    - 'Compatible Computer': 'build/computer.md'
     - 'Download Xcode': 'build/step8.md'
     - 'Xcode Preferences': 'build/step9.md'
     - 'Build Loop': 'build/step14.md'

@@ -59,7 +59,7 @@ You no longer need to own an Apple computer - see [Browser Build](../gh-actions/
 
 If you chose [Mac-Xcode Build](../build/overview.md), then you still don't **have** to own an Apple computer, but you do need to at least borrow one - or you can build using a virtual Mac if you have a PC with Intel chips (see next section).
 
-If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/step1.md#macos) and [Xcode Version](../build/step8.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
+If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/computer.md#macos) and [Xcode Version](../build/step8.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
 
 ## Can I use a PC or Windows computer to build?
 
