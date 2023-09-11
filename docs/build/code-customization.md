@@ -230,7 +230,7 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 ## Disable Authentication for Bolusing
 
-Depending on your iPhone preferences and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
+Depending on your iPhone Settings and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in Loop.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.
 
 !!! warning "Safety Measure"
     If you disable this, you are removing an important safety feature.

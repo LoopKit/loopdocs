@@ -1,4 +1,4 @@
-## Xcode Preferences (or Settings)
+## Xcode Settings
 
 !!! info "Time Estimate"
     - about 10-15 minutes to install the Command Line Tools
@@ -10,10 +10,10 @@
     * For Xcode 13.x and earlier: Xcode->Preferences
     * For Xcode 14.x and later: Xcode->Settings
 
-    The LoopDocs instructions have been updated to Preferences (or Settings). Choose that one that matches your version of Xcode.
+    The LoopDocs instructions use Settings.
 
-    - Verify that Command Line Tools are installed: Xcode-> Preferences (or Settings) -> choose Locations tab.
-    - Add your Apply ID:  Xcode-> Preferences (or Settings) -> choose Accounts tab.
+    - Verify that Command Line Tools are installed: Xcode-> Settings -> choose Locations tab.
+    - Add your Apply ID:  Xcode-> Settings -> choose Accounts tab.
 
 !!! question "FAQs"
     - **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
@@ -36,9 +36,9 @@ Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to
 The very first time you open Xcode it may install a package of command line tools. Wait patiently until it finishes.  The command line tools may have installed without asking.
 
 * Check that your Command Line Tools installed correctly.
-    - First, open Xcode Preferences (or Settings)
-        * Click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and select `Preferences`  (or `Settings`) in the drop-down menu
-    - Then select the `Locations` tab in the Preferences (or Settings) window to see the dropdown menu for Command Line Tools.  Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
+    - First, open Xcode Settings
+        * Click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and select `Settings` in the drop-down menu
+    - Then select the `Locations` tab in the Settings window to see the dropdown menu for Command Line Tools.  Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
 * If it's blank, use the blue arrows to the right of the Command Line Tools row to select it
 
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="750"}
@@ -47,7 +47,7 @@ The very first time you open Xcode it may install a package of command line tool
 
 ## Add Apple ID
 
-Go to the Xcode Preferences (or Settings) window from above, click on the `Accounts` tab and then press the &plus; in the lower-left corner to add an Apple ID account.
+Go to the Xcode Settings window from above, click on the `Accounts` tab and then press the &plus; in the lower-left corner to add an Apple ID account.
 
 ![img/xcode_account.png](img/xcode_account.png){width="750"}
 {align="center"}
@@ -72,7 +72,7 @@ If you enrolled in the paid account already and have confirmation that your acco
 !!! note "Description"
     The description line is initially empty. You can add your own description or just leave the line blank. Text added to the decription line shows up in two places: To the left, just above the email address and to the right once that Apple ID is selected.
 
-![accounts tab of xcode preferences](img/xcode_apple_id.svg){width="750"}
+![accounts tab of xcode settings](img/xcode_apple_id.svg){width="750"}
 {align="center"}
 
 You are now done setting up Xcode.  Great job!  You will not need to redo the account setup steps on any subsequent builds or updates of your Loop app.  Xcode will remember these settings.

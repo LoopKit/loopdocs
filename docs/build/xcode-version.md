@@ -109,6 +109,6 @@ So, if you see that error message, realize you may have to update your macOS to 
 
 With Loop 3, you may see another error when the Xcode version does not support the phone iOS. You may see [Package.resolved file corrupted or malformed](build-errors.md#packageresolved-file-corrupted-or-malformed)
 
-## Next Step: Xcode Preferences
+## Next Step: Xcode Settings
 
-Now you are ready to set up [Xcode Preferences](xcode-settings.md).
+Now you are ready to set up [Xcode Settings](xcode-settings.md).

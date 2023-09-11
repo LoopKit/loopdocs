@@ -96,7 +96,7 @@ You will be asked if you want to download & install.   ==Make sure `watchOS` is 
 
 If you are getting watch errors or having trouble with your watch, try this:
 
-Tap on the Xcode name on the menu bar and select Settings (used to be called Preferences).
+Tap on the Xcode name on the menu bar and select Settings.
 
 Choose the Platform tab. If there is a missing watchOS simulator that you think might help, then download it using the `GET` button. Use the minus icon (bottom left) to remove simulators that are no longer being used. (The watchOS 9.0 is required to build with Xcode 14.0.1. The watchOS 9.1 was downloaded with a release candidate for Xcode 14.1 - your screens may look different.)
 
@@ -435,7 +435,7 @@ The final App Group should now have a blue check box, the name should start with
 ![img/command-line-error-1.jpg](img/command-line-error-1.jpg){width="550"}
 {align="center"}
 
-**Solution:** Go to your Xcode -> Preferences (or Settings) and under the Locations tab, select your Xcode version (the figure shows 14.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
+**Solution:** Go to your Xcode -> Settings and under the Locations tab, select your Xcode version (the figure shows 14.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
 
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="550"}
 {align="center"}
@@ -483,14 +483,14 @@ If your problem persists after that, then you might need to do total reset of yo
 ![img/revoke1.png](img/revoke1.png){width="750"}
 {align="center"}
 
-After you do that, return to Xcode and open up Xcode -> Preferences (or Settings) and choose the Accounts tab. Highlight your Apple ID and click on the minus sign to delete your Apple ID.
+After you do that, return to Xcode and open up Xcode -> Settings and choose the Accounts tab. Highlight your Apple ID and click on the minus sign to delete your Apple ID.
 
 ![img/account.png](img/account.png){width="650"}
 {align="center"}
 
 Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved as a new certificate will have been issued and a provisioning profile should have been created automatically.
 
-You can verify the iOS development certificates are working by clicking on "Manage Certificates" in Xcode -> Preferences (or Settings), Accounts tab and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
+You can verify the iOS development certificates are working by clicking on "Manage Certificates" in Xcode -> Settings, Accounts tab and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
 
 ![img/verify_cert.png](img/verify_cert.png){width="650"}
 {align="center"}
