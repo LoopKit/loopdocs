@@ -15,7 +15,7 @@
     - You need a paid ($99/year) [Apple Developer Account](step6.md)
     - You need an account (free) with [github](https://github.com)
     - You need a [compatible phone](phone.md) to install the app from TestFlight
-    - You need a [compatible Pump](step3.md) and [CGM](step4.md) if you want to actually Loop (and not just explore the app)
+    - You need a [compatible Pump](pump.md) and [CGM](step4.md) if you want to actually Loop (and not just explore the app)
 
 !!! abstract "Summary"
     Your computer, iPhone and Xcode must have compatible versions to build Loop with the Mac-Xcode method.

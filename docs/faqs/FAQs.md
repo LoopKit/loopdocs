@@ -109,7 +109,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
 You can use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 

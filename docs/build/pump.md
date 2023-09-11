@@ -20,8 +20,8 @@
 
 There are three types of pumps compatible with Loop.
 
-* [Older Medtronic pumps](step3.md#check-medtronic-pump-version)
-* [Omnipod Eros pumps](step3.md#omnipod-pumps)
+* [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
+* [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
 
 ## Check Medtronic Pump Version

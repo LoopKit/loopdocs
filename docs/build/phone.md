@@ -104,4 +104,4 @@ Within a few days, the "All-Clear" or "WAIT there's a problem" will be posted.
 
 ## Next Step: Compatible Pump
 
-Now you are ready to check if you have a [Compatible Insulin Pump](step3.md).
+Now you are ready to check if you have a [Compatible Insulin Pump](pump.md).

@@ -220,7 +220,7 @@ If you will be connecting a Medtronic pump after onboarding:
 
 * The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
 * For those who build Loop 3 over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
-* If you have values in a [Loopable Medtronic pump](../build/step3.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
+* If you have values in a [Loopable Medtronic pump](../build/pump.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
 
 
 ### Delivery Limits
