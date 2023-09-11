@@ -9,7 +9,7 @@ Each requirement in the list is linked to the LoopDocs pages with more informati
 1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/pump.md)
 1. [Compatible CGM](../build/cgm.md)
-1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
+1. [RileyLink Compatible Device](../build/rileylink.md) (not needed for Omnipod DASH)
 1. [Apple Developer Membership](../build/step6.md) (not needed if you rebuild weekly using the Mac-Xcode method)
 
 ### Mac-Xcode Build Additional Requirements

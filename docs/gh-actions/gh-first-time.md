@@ -81,7 +81,7 @@ To install Loop, you need the *TestFlight* app, from the *Apple* App Store, inst
 
 #### Prerequisites to Use Loop
 
-To use Loop, you need a [Compatible Pump](../build/pump.md) and [Compatible CGM](../build/cgm.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+To use Loop, you need a [Compatible Pump](../build/pump.md) and [Compatible CGM](../build/cgm.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/rileylink.md).
 
 ## New Terms with <code>*GitHub* Browser Build</code>
 

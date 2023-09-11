@@ -36,7 +36,7 @@ If you'd rather break it up into several shorter bits of effort, the [`Build App
 
 Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 
-* If you have a pump the requires a [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
+* If you have a pump the requires a [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
 * Most people use a paid Apple Developer Account ($99/year)
     * With a paid developer account, you can build using the [Browser Build](../gh-actions/gh-overview.md); no Mac required
 * If you build on a Mac using Xcode [Mac-Xcode Build](../build/overview.md), you need a Mac or a PC with Intel chips on which you include a virtual Mac
@@ -47,7 +47,7 @@ There are no other costs, ongoing or initial, to use Loop beyond what you alread
 
 This is not required for DASH users.
 
-There are several options for the [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
+There are several options for the [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
 
 ## Free Developer Account Options
 

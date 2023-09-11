@@ -18,7 +18,7 @@ These requirements are independent of how you build the Loop app:
 1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/pump.md)
 1. [Compatible CGM](../build/cgm.md)
-1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
+1. [RileyLink Compatible Device](../build/rileylink.md) (not needed for Omnipod DASH)
 1. [Apple Developer Membership](../build/step6.md)
     * For Browser Build - must be a paid developer account
     * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/step6.md#loopers-need-their-own-apple-id)
