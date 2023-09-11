@@ -16,8 +16,8 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
     * [Add CGM](add-cgm.md)
     * [Add Pump](add-pump.md)
 * Review these pages from the Intro tab of LoopDocs
-    * [Test Settings](../build/step10.md)
-    * [Loop Data](../build/step11.md)
+    * [Test Settings](../build/test-settings.md)
+    * [Loop Data](../build/loop-data.md)
     * [Meet the Community](../build/step12.md)
 
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below. 

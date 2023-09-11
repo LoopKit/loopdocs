@@ -84,6 +84,7 @@ plugins:
             'build/code_customization.md': 'build/code-customization.md'
             'build/step1.md': 'build/computer.md'
             'build/step10.md': 'build/test-settings.md'
+            'build/step11.md': 'build/loop-data.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -117,7 +118,7 @@ nav:
     - 'RileyLink': 'build/step5.md'
     - 'Apple Developer Program': 'build/step6.md'
     - 'Test Settings': 'build/test-settings.md'
-    - 'Loop Data': 'build/step11.md'
+    - 'Loop Data': 'build/loop-data.md'
     - 'Meet the Community': 'build/step12.md'
 - Browser Build:
     - 'GitHub Build Overview': gh-actions/gh-overview.md

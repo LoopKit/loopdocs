@@ -85,6 +85,6 @@ If you choose to use the free account, you don't have to do anything on that web
 
 Take the time to read the next three articles. You will be reminded again when you begin to set up your app.
 
-* [Test Settings](../build/step10.md)
-* [Loop Data](../build/step11.md)
+* [Test Settings](../build/test-settings.md)
+* [Loop Data](../build/loop-data.md)
 * [Meet the Community](../build/step12.md)
