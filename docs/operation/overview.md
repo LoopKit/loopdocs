@@ -33,7 +33,7 @@ Select and configure your insulin pump. There are separate pages for setting up 
 
 ## Loop 2 Add CGM
 
-Follow direction on the [Loop 2 Add CGM](loop-settings/cgm.md) page. If you are wondering which CGMs are supported natively by Loop, check [Compatible CGM](../build/step4.md).
+Follow direction on the [Loop 2 Add CGM](loop-settings/cgm.md) page. If you are wondering which CGMs are supported natively by Loop, check [Compatible CGM](../build/cgm.md).
 
 ![img/add-cgm-main.jpeg](img/add-cgm-main.jpeg){width="250"}
 {align="center"}

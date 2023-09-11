@@ -27,10 +27,10 @@ Remote commands to the <span translate="no">Loop</span> phone go through their <
 
 * The <span translate="no">Apple Developer ID</span> used to build the <span translate="no">Loop</span> app must be configured to enable <span translate="no">Apple Push Notifications</span>
     * If you built <span translate="no">Nightscout</span> and <span translate="no">Loop</span> yourself, follow the directions to set up [Remote Configuration](remote-config.md)
-* Most providers who supply `Nightscout as a service` or `Hosted Nightscout` will assist you, if needed, in getting your APN information added to your <span translate="no">Nightscout</span> variables; one provider requires an added monthly subscription fee
+* Most providers who supply `Nightscout as a service` or `Hosted Nightscout` will assist you, if needed, in getting your APN information added to your <span translate="no">Nightscout</span> variables
     * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user)
     * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
-        * Warning: examine the `Loop remote carbs/bolus` row
+        * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
 
 ## Next Steps
 

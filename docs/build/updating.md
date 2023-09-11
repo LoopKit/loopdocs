@@ -26,7 +26,7 @@
     - **"Do I delete my old Loop app first?"** Definitely **not**! If you keep your Loop app on your phone, your Loop settings (and existing pod) will continue to work the same after the update. Seamless.
     - **"Do I need to start a new pod when I update?"** No. Your existing pod session will continue seamlessly if you are using the same Developer Account to sign the Loop app targets as you did the last time you built.
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built (this includes going from free to paid), then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
-    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode, configuring Xcode preferences, and adding your Developer ID to Xcode: refer to [What about a New Computer?](#what-about-a-new-computer). There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
+    - **"What if it is a new computer but the same developer account?"** No big deal...use the Updating Steps to check that your new computer has the required compatible versions and then build your app. This will include installing Xcode, configuring Xcode Settings, and adding your Developer ID to Xcode: refer to [What about a New Computer?](#what-about-a-new-computer). There is no need to delete provisioning profiles on a brand new computer, but no harm comes from following the instruction.
 
 ## When to Update Loop
 
@@ -42,7 +42,7 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
 
     Follow these "safe Looping" steps for updating your iOS:
 
-    1. Check which [version of macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
+    1. Check which [version of macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) is required for the phone iOS you intend to install.
     1. [Update macOS / Xcode if needed](#macos-and-xcode-versions)
     1. Check [Loop: Current Release](../version/releases.md#current-release) status - if there is new code, you should download it
     1. Build app to your iPhone
@@ -50,7 +50,7 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
 
 [Loop Releases](../version/releases.md#loop-releases) provides information about current and previous Loop versions.
 
-Updating to iOS 16 (watchOS 9) requires enabling [Developer Mode](step14.md#developer-mode). Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is **not** required.
+Updating to iOS 16 (watchOS 9) requires enabling [Developer Mode](build-app.md#developer-mode). Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is **not** required.
 
 ### "Loop" is No Longer Available
 
@@ -64,7 +64,7 @@ When you see "Loop" is No Longer Available on your phone, the only solution is t
 
 Between Loop app builds, there's a high likelihood that Apple has updated one or more of the systems involved in your Loop app. If you don't have the minimum Xcode version required for your phone iOS, you cannot build on that phone. Sometimes you must also update the macOS version to allow you to use the required Xcode version.
 
-Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
+Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
 
 If you are tired of the macOS and Xcode version update requirements, check out the [Browser Build](../gh-actions/gh-overview.md) option.
 
@@ -81,14 +81,14 @@ Minimum means you need to have at least that version - newer versions build just
 
 ### Verify / Update macOS
 
-* Click on this link [Check your macOS Version](step1.md#check-your-macos-version) and follow the instructions on that page if an update is required.
+* Click on this link [Check your macOS Version](computer.md#check-your-macos-version) and follow the instructions on that page if an update is required.
 * After you've reviewed that section, hit the back button on your browser to return here
 
 ### Verify / Update Xcode
 
-Click on this link [Check your Xcode Version](step9.md#xcode-version) to find your Xcode version number.
+Click on this link [Check your Xcode Version](xcode-settings.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Install Xcode](step8.md#install-xcode) and continue through [Xcode Preferences](step9.md).
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](xcode-version.md#install-xcode) and continue through [Xcode Settings](xcode-settings.md).
 
 Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode).
 
@@ -100,13 +100,13 @@ Advanced users: If you are finding installation of Xcode from the App Store incr
 
 #### What about a New Computer?
 
-Make sure your new computer has the macOS and Xcode required by your phone iOS. Be sure Xcode [Command Line Tools](step9.md#command-line-tools) are installed and that you [Add Apple ID](step9.md#add-apple-id) to Xcode.
+Make sure your new computer has the macOS and Xcode required by your phone iOS. Be sure Xcode [Command Line Tools](xcode-settings.md#command-line-tools) are installed and that you [Add Apple ID](xcode-settings.md#add-apple-id) to Xcode.
 
 #### Missing Xcode or Command Line Tools
 
 !!! warning "WARNING"
 
-    If you fail to have [Xcode](step8.md) or [Xcode Command Line Tools](step9.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
+    If you fail to have [Xcode](xcode-version.md) or [Xcode Command Line Tools](xcode-settings.md) installed, you will get one of these errors (or something similar) when you attempt to run the Build Select Script:
 
     * xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
     * xcrun: error: active developer path ("/Applications/Xcode.app/Contents/Developer") does not exist
@@ -114,9 +114,9 @@ Make sure your new computer has the macOS and Xcode required by your phone iOS. 
     * xcode-select: error: tool 'xed' requires Xcode
     * Scripting Bridge could not launch application . . .
 
-!!! abstract "Follow Xcode Preferences page after updating Xcode"
+!!! abstract "Follow Xcode Settings page after updating Xcode"
 
-        Make sure to restart your computer after updating Xcode and follow the instructions on the Xcode Preferences page. There's a known issue that happens often enough to be frustrating if you skip those steps. It's not always required...but this is a good easy ounce of prevention step.
+        Make sure to restart your computer after updating Xcode and follow the instructions on the Xcode Settings page. There's a known issue that happens often enough to be frustrating if you skip those steps. It's not always required...but this is a good easy ounce of prevention step.
 
 ## Check your Developer Account
 
@@ -126,7 +126,7 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 ## Ready to Build Loop
 
-As long as there are no errors, you are now ready to proceed to [Build the Loop App: Developer Mode](step14.md#developer-mode)
+As long as there are no errors, you are now ready to proceed to [Build the Loop App: Developer Mode](build-app.md#developer-mode)
 
 After building the new app, you may choose to return to this page and follow the instructions to [Delete Old Copies](#delete-old-copies). This is optional, but cleans up space on your computer.
 
@@ -198,7 +198,7 @@ More information is shown in the orange box below.
         * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
     1. Your version of Xcode is way out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
-        * Update [Xcode](step8.md) to the most recent version
+        * Update [Xcode](xcode-version.md) to the most recent version
 
     **If you revoke and keep going:**
 
@@ -238,7 +238,7 @@ Here are the different steps you need to follow doing the Direct Download instea
 1. Wait for Download to complete
 1. Expand the file by clicking on it in Finder
 1. Move the Xcode icon to Applications after the expansion completes
-1. Check the [Command Line Tools](step9.md#command-line-tools) setting under Xcode->Preferences
+1. Check the [Command Line Tools](xcode-settings.md#command-line-tools) setting under Xcode->Settings
     - The selection cannot be blank or Build-Script will fail to open Xcode automatically
     - It should be the same version as your Xcode
 1. Reboot the computer

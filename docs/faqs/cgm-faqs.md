@@ -11,7 +11,7 @@ Libre Support (for some Libre sensors):
 
 Loop 2.2.x supports Dexcom G4 with share, G5, G6, Dexcom ONE, Dexcom Share and the Medtronic CGM systems compatible with Looping pumps.
 
-There are more details on the [Compatible CGM](../build/step4.md) page.
+There are more details on the [Compatible CGM](../build/cgm.md) page.
 
 ## Do I need wait for a new sensor session to start Loop?
 

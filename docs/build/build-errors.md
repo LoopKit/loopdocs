@@ -32,13 +32,13 @@ Before you start trying to resolve your red errors, start with the most obvious 
 1. **For older builds, before 3.2.0, you had to select Loop(WorkSpace)** The first time you build after downloading new code, you had to manually select Loop (Workspace) instead of Loop in Xcode.
     * Starting with Loop 3.2.0 and newer versions, the target name and xcworkspace file names are now automatically LoopWorkspace - no special action needed when building.
 
-1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 1. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
-1. **Do you have a new computer, never used to build Loop?** Did you [Add Apple ID](step9.md#add-apple-id) to Xcode?
+1. **Do you have a new computer, never used to build Loop?** Did you [Add Apple ID](xcode-settings.md#add-apple-id) to Xcode?
 
-1. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](step9.md#command-line-tools)
+1. **Did you reboot, i.e., restart, your computer after updating Xcode?** You should reboot following Xcode installation or update and you must make sure your command line tools match the version of Xcode you just installed. [Xcode Command Line Tools](xcode-settings.md#command-line-tools)
 
 1. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download.
 
@@ -96,7 +96,7 @@ You will be asked if you want to download & install.   ==Make sure `watchOS` is 
 
 If you are getting watch errors or having trouble with your watch, try this:
 
-Tap on the Xcode name on the menu bar and select Settings (used to be called Preferences).
+Tap on the Xcode name on the menu bar and select Settings.
 
 Choose the Platform tab. If there is a missing watchOS simulator that you think might help, then download it using the `GET` button. Use the minus icon (bottom left) to remove simulators that are no longer being used. (The watchOS 9.0 is required to build with Xcode 14.0.1. The watchOS 9.1 was downloaded with a release candidate for Xcode 14.1 - your screens may look different.)
 
@@ -374,7 +374,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 For older builds only. With Loop 3.2.0 and newer, the default selection is already LoopWorkspace.
 
-You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#initial-xcode-screens) Instructions.
+You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](build-app.md#initial-xcode-screens) Instructions.
 
 Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
 
@@ -383,13 +383,13 @@ Or maybe you are trying to build using an old download; some older versions did 
 !!! warning "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
-**Solution:** Download fresh code with [Build Select Script](step14.md#build-select-script).
+**Solution:** Download fresh code with [Build Select Script](build-app.md#build-select-script).
 
 ### Could Not Locate Device Support Files
 
 **Error Message:** "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
 
-**Solution:** Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for [Xcode and macOS](step8.md#how-do-all-the-minimum-versions-relate-to-each-other).
+**Solution:** Update your Xcode version; this may also require a macOS update. Please review the phone iOS driven requirements for [Xcode and macOS](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 ![img/device-support-files.jpg](img/device-support-files.jpg){width="750"}
 {align="center"}
@@ -435,7 +435,7 @@ The final App Group should now have a blue check box, the name should start with
 ![img/command-line-error-1.jpg](img/command-line-error-1.jpg){width="550"}
 {align="center"}
 
-**Solution:** Go to your Xcode -> Preferences (or Settings) and under the Locations tab, select your Xcode version (the figure shows 14.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
+**Solution:** Go to your Xcode -> Settings and under the Locations tab, select your Xcode version (the figure shows 14.0.1 - yours should match your Xcode version) in the dropdown menu for Command Line Tools.
 
 ![img/command-line-error-3.png](img/command-line-error-3.png){width="550"}
 {align="center"}
@@ -483,14 +483,14 @@ If your problem persists after that, then you might need to do total reset of yo
 ![img/revoke1.png](img/revoke1.png){width="750"}
 {align="center"}
 
-After you do that, return to Xcode and open up Xcode -> Preferences (or Settings) and choose the Accounts tab. Highlight your Apple ID and click on the minus sign to delete your Apple ID.
+After you do that, return to Xcode and open up Xcode -> Settings and choose the Accounts tab. Highlight your Apple ID and click on the minus sign to delete your Apple ID.
 
 ![img/account.png](img/account.png){width="650"}
 {align="center"}
 
 Re-enter your Apple ID (yes...add that account right back that you literally just deleted), return to your Loop's target signing areas in Xcode and your error message should have resolved as a new certificate will have been issued and a provisioning profile should have been created automatically.
 
-You can verify the iOS development certificates are working by clicking on "Manage Certificates" in Xcode -> Preferences (or Settings), Accounts tab and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
+You can verify the iOS development certificates are working by clicking on "Manage Certificates" in Xcode -> Settings, Accounts tab and viewing the iOS Development Certificates.  You should have one for your account that has a clean status similar to the screenshot below.
 
 ![img/verify_cert.png](img/verify_cert.png){width="650"}
 {align="center"}

@@ -133,7 +133,7 @@ Loop 2.2.9 and FreeAPS is currently supported with all released versions of the 
 
 Loop 3 requires newer versions of the watch and requires watchOS 8 as a minimum.
 
-The compatibility list below is copied from Apple. Note that some version of iOS require specific versions of watchOS. That level of detail is not captured here. Please review [LoopDocs: Wikipedia Chart for Apple Versions](../../build/step8.md#wikipedia-chart-for-apple-versions).
+The compatibility list below is copied from Apple. Note that some version of iOS require specific versions of watchOS. That level of detail is not captured here. Please review [LoopDocs: Wikipedia Chart for Apple Versions](../../build/xcode-version.md#wikipedia-chart-for-apple-versions).
 
 ### watchOS 8 Compatibility:
 

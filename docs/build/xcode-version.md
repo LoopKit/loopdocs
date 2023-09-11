@@ -1,14 +1,14 @@
-## Download Xcode
+## Install Required Xcode Version
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
     - 0 minutes if you decide to use the GitHub [Browser Build](../gh-actions/gh-overview.md) method to build Loop
 
 !!! abstract "Summary"
-    - Check iPhone/iPod iOS version
+    - Check iPhone iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
-        - If necessary, update [macOS](step1.md#check-your-macos-version) first and then return to this step
+        - If necessary, update [macOS](computer.md#check-your-macos-version) first and then return to this step
     - Download (or update) Xcode from your computer's App Store application
 
 !!! question "FAQs"
@@ -18,7 +18,7 @@
         2. Not enough space on your hard drive
             - Xcode is a large download, and needs at least 50GB of space to properly unpack and install itself
             - If you do not have enough space on your hard drive, you will have installation failures
-            - [Check the Space Available](step1.md#check-the-space-available)
+            - [Check the Space Available](computer.md#check-the-space-available)
             - Although the download takes a long time, the good news is you can walk away once the download starts. If your laptop goes to sleep when you close the lid or when the screen saver starts, disable the screen saver and leave the laptop open.
             - After Xcode has finished downloading (looks like the progress bar is almost completed), it takes a long time to unpack and install, be patient
     - **"Can I install Xcode on an external drive?"**
@@ -26,8 +26,8 @@
 
 ## What is Xcode?
 
-Xcode is a free application for Apple computers. You will use Xcode to turn the "raw" Loop source code into an iOS application and install it onto your iPhone/iPod. 
-Which version of Xcode you install on your computer depends on the iOS version you have on the iPhone/iPod you are going to be installing Loop on **and** the [macOS](step1.md#check-your-macos-version) version you have on your computer. 
+Xcode is a free application for Apple computers. You will use Xcode to turn the "raw" Loop source code into an iOS application and install it onto your iPhone. 
+Which version of Xcode you install on your computer depends on the iOS version you have on the iPhone you are going to be installing Loop on **and** the [macOS](computer.md#check-your-macos-version) version you have on your computer. 
 
 Because of the complexity of these dependencies, **please read this entire page.**
 
@@ -35,10 +35,10 @@ Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no
 
 ## Which version of Xcode do I need?
 
-First, choose a version of Xcode appropriate for your iOS device. Then, determine the minimum [macOS](step1.md#check-your-macos-version) version required for that Xcode version. Update to at least that minimum macOS version. Then follow the instructions to download and install Xcode (or update an existing installation):
+First, choose a version of Xcode appropriate for your iOS device. Then, determine the minimum [macOS](computer.md#check-your-macos-version) version required for that Xcode version. Update to at least that minimum macOS version. Then follow the instructions to download and install Xcode (or update an existing installation):
 
 - Open the App Store on your computer and search for "Xcode"
-- If the version number you need is bigger than what is shown in the App Store, you need to first update your [macOS](step1.md#check-your-macos-version)
+- If the version number you need is bigger than what is shown in the App Store, you need to first update your [macOS](computer.md#check-your-macos-version)
     - Do not rely on the version number in this graphic
 
 ![Screenshot: App Store search for Xcode](img/xcode.png){width="750"}
@@ -50,7 +50,7 @@ Have you turned off automatic updates on your iOS device?
 
 !!! info "Loop and iOS Updates"
 
-    **Please Read**: [Turn Off Automatic Updates](step2.md#turn-off-automatic-updates)
+    **Please Read**: [Turn Off Automatic Updates](phone.md#turn-off-automatic-updates)
 
 Before manually accepting an iOS update, be sure you have compatible versions of Xcode and MacOS.  
 
@@ -67,15 +67,15 @@ Before manually accepting an iOS update, be sure you have compatible versions of
 
     Don't be the person who posts for help saying, "I'm trying to update my Loop app but am getting errors." When asked what Xcode version they have and if they've updated, they respond, "I don't have any Xcode updates available in the App Store, so I must be running the most current version."
 
-    Actually, they forgot to check for [macOS](step1.md#check-your-macos-version) updates and therefore cannot see the needed Xcode update yet.
+    Actually, they forgot to check for [macOS](computer.md#check-your-macos-version) updates and therefore cannot see the needed Xcode update yet.
 
 ### After Update - Reboot
 
-After any update of [macOS](step1.md#check-your-macos-version) or Xcode, it is always a good idea to reboot your computer.
+After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it is always a good idea to reboot your computer.
 
 ## How do all the minimum versions relate to each other?
 
-The list below contains the **minimum** versions of [macOS](step1.md#check-your-macos-version) and Xcode you'll need based on your iOS version. The highlighted sections, coordinated by `color` and `linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
+The list below contains the **minimum** versions of [macOS](computer.md#check-your-macos-version) and Xcode you'll need based on your iOS version. The highlighted sections, coordinated by `color` and `linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
 
@@ -109,6 +109,6 @@ So, if you see that error message, realize you may have to update your macOS to 
 
 With Loop 3, you may see another error when the Xcode version does not support the phone iOS. You may see [Package.resolved file corrupted or malformed](build-errors.md#packageresolved-file-corrupted-or-malformed)
 
-## Next Step: Xcode Preferences
+## Next Step: Xcode Settings
 
-Now you are ready to set up [Xcode Preferences](step9.md).
+Now you are ready to set up [Xcode Settings](xcode-settings.md).

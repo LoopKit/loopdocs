@@ -80,8 +80,8 @@ Currently, there are no solutions for Eversense or Guardian CGM to be used direc
 
 If your compatible pump is Medtronic or Omnipod (not DASH)
 
-* Next step is to [Order a RileyLink Compatible Device](step5.md)
+* Next step is to [Order a RileyLink Compatible Device](rileylink.md)
 
 If your compatible pump is Omnipod DASH
 
-* Next step is to enroll in the [Apple Developer Program](step6.md).
+* Next step is to enroll in the [Apple Developer Program](apple-developer.md).

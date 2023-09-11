@@ -6,9 +6,9 @@ This page is not stand-alone. You typically get here after choosing to Sign Manu
 
 Normally this option is chosen by people building the app with the Free option or if you want to build to a simulator on your computer.
 
-If you have a paid developer account and are building Loop 3, you are far better off choosing to configure the permanent override file with your Apple Developer ID. Refer to [Sign Targets](step14.md#sign-targets).
+If you have a paid developer account and are building Loop 3, you are far better off choosing to configure the permanent override file with your Apple Developer ID. Refer to [Sign Targets](build-app.md#sign-targets).
 
-The instructions found on this page are for the first build.  With the Free version, you need to build every week. Refer to [Build Again with this Download](step14.md#build-again-with-this-download).
+The instructions found on this page are for the first build.  With the Free version, you need to build every week. Refer to [Build Again with this Download](build-app.md#build-again-with-this-download).
 
 ### Select the Loop Folder
 
@@ -65,7 +65,7 @@ If you want to build to a simulator, follow the directions in this section and s
     * The iOS simulator you choose does not need to be the same model as your phone
 * With a simulator, you do not need to sign targets:
 * After a successful build, a simulated phone will appear on your computer and you can interact with the app on that simulated phone
-* Follow this link to [Start Build](step14.md#start-build)
+* Follow this link to [Start Build](build-app.md#start-build)
 
 ### Select Signing & Capabilities Tab
 
@@ -88,7 +88,7 @@ The graphic below indicates in red the three places you need to click in order t
 
 ## Sign the Targets
 
-It is time to Sign the Targets with your [Apple ID](step9.md#add-apple-id).
+It is time to Sign the Targets with your [Apple ID](xcode-settings.md#add-apple-id).
 
 If you chose to sign manually but have a paid account, you can skip the Free Account steps below.
 
@@ -140,4 +140,4 @@ After signing the targets, click on the Loop icon under the `PROJECTS` heading. 
 
 ## Signing Complete
 
-Now that you have signed your app, return to the Build Loop page at [Start Build](step14.md#start-build).
+Now that you have signed your app, return to the Build Loop page at [Start Build](build-app.md#start-build).

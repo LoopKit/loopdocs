@@ -13,7 +13,7 @@ Several methods to build Loop-dev are mentioned on this page:
 
 ## BuildLoopDev Script
 
-There is a script to assist in building the dev branch. It gives you the option to choose the tip of the dev branch or to build a lightly tested commit. If you have not used the [Build Select Script](../build/step14.md#build-select-script) to build Loop previously, you may want to review that page.
+There is a script to assist in building the dev branch. It gives you the option to choose the tip of the dev branch or to build a lightly tested commit. If you have not used the [Build Select Script](../build/build-app.md#build-select-script) to build Loop previously, you may want to review that page.
 
 ``` { .bash .copy title="Copy and Paste to start the BuildLoopDev script" }
 /bin/bash -c "$(curl -fsSL \
