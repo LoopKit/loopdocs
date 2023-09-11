@@ -33,7 +33,7 @@ To Loop with the *GitHub* Build method, you need:
 
 1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/pump.md)
-1. [Compatible CGM](../build/step4.md)
+1. [Compatible CGM](../build/cgm.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
 1. Free *GitHub* account (instructions included in [First-Time with *GitHub* Actions](../gh-actions/gh-first-time.md))
 1. [Apple Developer Membership](../build/step6.md)

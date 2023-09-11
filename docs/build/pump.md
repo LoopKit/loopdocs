@@ -184,4 +184,4 @@ Loop does not support Omnipod 5 pods.
 
 ## Next Step: Compatible CGM
 
-Now you are ready to check if you have a [Compatible CGM](step4.md).
+Now you are ready to check if you have a [Compatible CGM](cgm.md).
