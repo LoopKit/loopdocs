@@ -15,13 +15,13 @@ There are some common requirements and then some different requirements for the 
 
 These requirements are independent of how you build the Loop app:
 
-1. [Compatible iPhone/iPod Touch](../build/step2.md)
-1. [Compatible Pump](../build/step3.md)
-1. [Compatible CGM](../build/step4.md)
-1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
-1. [Apple Developer Membership](../build/step6.md)
+1. [Compatible iPhone](../build/phone.md)
+1. [Compatible Pump](../build/pump.md)
+1. [Compatible CGM](../build/cgm.md)
+1. [RileyLink Compatible Device](../build/rileylink.md) (not needed for Omnipod DASH)
+1. [Apple Developer Membership](../build/apple-developer.md)
     * For Browser Build - must be a paid developer account
-    * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/step6.md#loopers-need-their-own-apple-id)
+    * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
 
 ### Added Requirements for Browser Build
 
@@ -31,8 +31,8 @@ In addition to the paid Apple Developer account, you also need a free GitHub acc
 
 If you plan to build using the Mac-Xcode Build instructions, you also need:
 
-1. [Compatible Computer](../build/step1.md#macos)
-1. [Xcode](../build/step8.md) (a free Apple application)
+1. [Compatible Computer](../build/computer.md#macos)
+1. [Xcode](../build/xcode-version.md) (a free Apple application)
 
 
 ## Getting Ready to Build
@@ -56,7 +56,7 @@ After you build Loop on your phone, keep following along in the docs as you [Set
 
 ### Review the Common Requirements
 
-Before you start either build method, review the Common Requirements. First one is [Compatible iPhone/iPod Touch](../build/step2.md). On each page, keep clicking Next (or n) until you've finished with the Intro pages and are ready to Build.
+Before you start either build method, review the Common Requirements. First one is [Compatible iPhone](../build/phone.md). On each page, keep clicking Next (or n) until you've finished with the Intro pages and are ready to Build.
 
 ### Browser Build
 

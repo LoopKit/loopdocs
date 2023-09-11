@@ -58,4 +58,4 @@ If you’re fascinated by this topic, read the book *'Think Like A Pancreas'* by
 
 ## Next Step: Make Plans for Loop Data
 
-Now you are ready to make plans for [Loop Data](step11.md).
+Now you are ready to make plans for [Loop Data](loop-data.md).

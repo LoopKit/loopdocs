@@ -50,7 +50,7 @@
 *[ICE]: Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
 *[Identifiers]: names of modules found on your Apple Developer Identifiers page that are required for GitHub build method
 *[IOB]: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
-*[iOS]: operating system used by Apple Mobile devices (iPhone, iPod)
+*[iOS]: operating system used by Apple Mobile devices (iPhone, iPod, iPad)
 *[IRC]: Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame
 *[ISF]: Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor
 *[Issue]: On github - a formal method to report a problem, either code behavior or documentation

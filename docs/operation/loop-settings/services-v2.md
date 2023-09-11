@@ -27,12 +27,6 @@ The two most common errors in filling out this section are:
 
 !!! tip "More Tips about Nightscout"
     * One family had an app configured to block some websites for their child's phone and accidentally blocked their Nightscout URL - took them a while to figure out that mistake.
-    * If you use T1pal (paid Nightscout Service)
-        * Sign in to T1pal
-        * Select `Configure my Nightscout`
-        * Select `Uploaders`
-        * Use the copy button for URL and paste into Loop
-        * Repeat for API_SECRET
 
 ## Loggly
 

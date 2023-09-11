@@ -23,7 +23,7 @@ After you complete the configuration, read the entire [Remote Commands](remote-c
         * The directions for only one of the options is documented on this page
         * Use that as a guide for your site
     * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
-        * Warning: examine the `Loop remote carbs/bolus` row
+        * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
         * If a green check is missing, it might just be too new for evaluation
 
 ## Step 1: Update the Looper's iPhone settings

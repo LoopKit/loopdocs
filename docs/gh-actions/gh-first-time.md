@@ -77,11 +77,11 @@ There are two prerequisites to build Loop using <code>*GitHub* Browser Build</co
 
 #### Prerequisites to Install Loop
 
-To install Loop, you need the *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/step2.md).
+To install Loop, you need the *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/phone.md).
 
 #### Prerequisites to Use Loop
 
-To use Loop, you need a [Compatible Pump](../build/step3.md) and [Compatible CGM](../build/step4.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/step5.md).
+To use Loop, you need a [Compatible Pump](../build/pump.md) and [Compatible CGM](../build/cgm.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/rileylink.md).
 
 ## New Terms with <code>*GitHub* Browser Build</code>
 
@@ -224,7 +224,7 @@ This section provides detailed instructions for the four <code>Secrets</code> as
 
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
-* LoopDocs has an [*Apple* Developer Program](../build/step6.md) page that explains in detail how to sign up for an account
+* LoopDocs has an [*Apple* Developer Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [*Apple* Developer account](https://developer.apple.com) to sign up
 
 ### Find <code>TEAMID</code>

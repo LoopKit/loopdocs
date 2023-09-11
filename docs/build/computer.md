@@ -12,10 +12,10 @@
 
     If you do not have a Mac, you can build Loop 3 with any computer using a browser. If you want to use that method, review this list and head over to [Browser Build](../gh-actions/gh-overview.md).
 
-    - You need a paid ($99/year) [Apple Developer Account](step6.md)
+    - You need a paid ($99/year) [Apple Developer Account](apple-developer.md)
     - You need an account (free) with [github](https://github.com)
-    - You need a [compatible phone](step2.md) to install the app from TestFlight
-    - You need a [compatible Pump](step3.md) and [CGM](step4.md) if you want to actually Loop (and not just explore the app)
+    - You need a [compatible phone](phone.md) to install the app from TestFlight
+    - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually Loop (and not just explore the app)
 
 !!! abstract "Summary"
     Your computer, iPhone and Xcode must have compatible versions to build Loop with the Mac-Xcode method.
@@ -53,7 +53,9 @@ If your macOS does not meet the minimum, check to see if you can [update your ma
 
 !!! warning "iOS Dictates Your Computer Needs"
 
-    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop with the Mac-Xcode build method. A new build is required at least once a year. More information on iOS is in [Download Xcode](step8.md#download-xcode).
+    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop with the Mac-Xcode build method. A new build is required at least once a year. More information on iOS is on the [Xcode Version](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) page.
+
+    There are important security updates that go along with iOS updates. Please install those iOS updates as soon as you can.
 
 Do not use any of the beta macOS versions. (If you don't know what that means, you aren't using one.)
 
@@ -75,7 +77,7 @@ Apple says upgrading to macOS Monterey or Ventura requires 26 GB of available st
 
 ## Check the Space Available
 
-You need to have 50 GB free space in order to install Xcode in [Download Xcode](step8.md). At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle, or, if running Ventura, tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
+You need to have 50 GB free space in order to install Xcode as directed on the [Xcode Version](xcode-version.md) page. At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle, or, if running Ventura, tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
 
  To free up space, move things like photos to an external drive. The Xcode application cannot be run from an external drive.
 
@@ -118,7 +120,7 @@ Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no
 
 ## Next Step:
 
-If you already have an [Apple Developer ID](step6.md) or you are using a free ID, next step is [Download Xcode](step8.md).
+If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
 
 !!! warning "Free ID"
     The free ID method only works when using the Mac-Xcode build method. The [Browser Build](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.
