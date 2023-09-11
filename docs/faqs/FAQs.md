@@ -170,7 +170,7 @@ Yes, this is technically possible. You can have multiple Loop apps built onto th
 
 ## Will I be able to Loop on a plane? Or in the mountains?
 
-Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on the iPhone, then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
+Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth enabled on the iPhone, then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
 
 One exception - if you've chosen to use a CGM source that does require the internet, you will need to have cell or internet coverage. This ability is provided as a service to folks who cannot get their CGM data any other way. It is also a convenience for people testing the code.
 
