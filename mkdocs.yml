@@ -85,6 +85,7 @@ plugins:
             'build/step1.md': 'build/computer.md'
             'build/step10.md': 'build/test-settings.md'
             'build/step11.md': 'build/loop-data.md'
+            'build/step12.md': 'build/community.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -119,7 +120,7 @@ nav:
     - 'Apple Developer Program': 'build/step6.md'
     - 'Test Settings': 'build/test-settings.md'
     - 'Loop Data': 'build/loop-data.md'
-    - 'Meet the Community': 'build/step12.md'
+    - 'Meet the Community': 'build/community.md'
 - Browser Build:
     - 'GitHub Build Overview': gh-actions/gh-overview.md
     - 'GitHub First-Time': gh-actions/gh-first-time.md

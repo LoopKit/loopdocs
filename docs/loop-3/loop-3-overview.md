@@ -18,7 +18,7 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 * Review these pages from the Intro tab of LoopDocs
     * [Test Settings](../build/test-settings.md)
     * [Loop Data](../build/loop-data.md)
-    * [Meet the Community](../build/step12.md)
+    * [Meet the Community](../build/community.md)
 
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below. 
 

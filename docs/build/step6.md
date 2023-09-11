@@ -87,4 +87,4 @@ Take the time to read the next three articles. You will be reminded again when y
 
 * [Test Settings](../build/test-settings.md)
 * [Loop Data](../build/loop-data.md)
-* [Meet the Community](../build/step12.md)
+* [Meet the Community](../build/community.md)

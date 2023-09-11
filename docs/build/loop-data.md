@@ -44,4 +44,4 @@ Nightscout is the most useful day-to-day for some of its capabilities such as pl
 
 ## Next Step: Meet the Community
 
-Now you are ready to [Meet the Community](step12.md).
+Now you are ready to [Meet the Community](community.md).
