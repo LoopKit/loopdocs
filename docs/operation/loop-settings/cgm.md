@@ -63,7 +63,7 @@ If you switch to Loop 3, there are additional CGM options:
 
 * You can choose to download the Loop with patches option when building with the script.
     * As a prerequisite, you must interface your iPhone to the Libre
-    * Please read [Libre Support for Loop 3.2.x Code](../../build/code_customization.md#libre-support-for-loop-32x-code)
+    * Please read [Libre Support for Loop 3.2.x Code](../../build/code-customization.md#libre-support-for-loop-32x-code)
 
 ## Next Step: Loop 2 Configuration
 

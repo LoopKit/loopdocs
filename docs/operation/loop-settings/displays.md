@@ -1,6 +1,6 @@
 ## Loop Displays
 
-This section of the docs describes the Loop displays available and what information they offer.  Information about Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.) For Loop 3, refer to [Loop 3 Displays](../../loop-3/displays_v3.md).
+This section of the docs describes the Loop displays available and what information they offer.  Information about Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.) For Loop 3, refer to [Loop 3 Displays](../../loop-3/displays-v3.md).
 
 ## Status Screen
 

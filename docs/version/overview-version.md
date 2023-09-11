@@ -7,7 +7,7 @@ Map to this section:
 * [Loop Releases](../version/releases.md)
     - Description of the current released version of Loop including when it was released
     - Reverse chronology of earlier releases
-* [Code Customization](../build/code_customization.md)
+* [Code Customization](../build/code-customization.md)
     - Instructions for customizing your DIY code
     - Think of this as your personalized version
 * [Customize with GitHub](../gh-actions/gh-customize.md)

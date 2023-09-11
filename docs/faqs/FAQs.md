@@ -180,13 +180,13 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. There is a specific fork that can be built with some of these customizations. However, with the exception of libre support, all the customizations can be added using the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/build-select/#customization-select). That script can be run stand-alone or selected as an option as part of the Build Select Script when doing a Mac-Xcode build.
 
-Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code_customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/). The special fork mentioned above, with build instructions below, includes a subset of the customizations available with the Customization Select script.
+Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code-customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/). The special fork mentioned above, with build instructions below, includes a subset of the customizations available with the Customization Select script.
 
 For those who need Libre support, there are several options.
 
 * The [Loop-dev branch](../version/build-dev.md) already includes LibreTransmitter; which means the next release of Loop will have this support
 * For released code, Loop 3.2.x:
-    * If you want to use [xDrip4iOS or GlucoseDirect](../build/code_customization.md#libre-support-for-loop-32x-code), you must add the interface to one of these apps to Loop
+    * If you want to use [xDrip4iOS or GlucoseDirect](../build/code-customization.md#libre-support-for-loop-32x-code), you must add the interface to one of these apps to Loop
     * The Loop with Patches selection in the [Build Select Script](../build/step14.md#build-select-script) provides support for those two CGM apps
     * You will also need to build and install xDrip4iOS or GlucoseDirect on your phone using the same Apple Developer ID as was used for Loop
 

@@ -198,7 +198,7 @@ Loop has guardrails for Therapy Settings.
 * The limits for some settings can be altered by other therapy settings you have selected
 
 !!! tip "Experienced Loopers"
-    The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../build/code_customization.md).
+    The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../build/code-customization.md).
 
 !!! danger "mmol/L"
     People using mmol/L should avoid the red (the min or max end points) glucose values for their settings. They sometimes cause a crash.

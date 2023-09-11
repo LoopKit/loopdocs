@@ -25,7 +25,7 @@ Please visit [Nightscout: Documentation](https://nightscout.github.io) to read a
     * [Nightscout Discord Channel](https://discord.gg/zg7CvCQ)
 
 
-Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to follow the directions on the [LoopDocs: Nightscout with Loop](update_user.md) page.
+Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to follow the directions on the [LoopDocs: Nightscout with Loop](update-user.md) page.
 
 !!! tip "Comments"
     Most of the free DIY methods provide sufficient storage for a single Loop user, but will require you to delete older data after a year or two of use. The one exception is the Google Cloud method which includes multiple GB of storage.
@@ -38,7 +38,7 @@ Once your Nightscout site is operational and you've read the information about u
 
 ## Configure Nightscout to use with Loop
 
-There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the instructions on the [LoopDocs: Nightscout with Loop](update_user.md) page.
+There are a few Loop-specific variables you should configure to get the most out of your Nightscout site. Follow the instructions on the [LoopDocs: Nightscout with Loop](update-user.md) page.
 
 ## Add Nightscout to Loop
 

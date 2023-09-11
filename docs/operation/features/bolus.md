@@ -148,7 +148,7 @@ If an "uncertain" delivery is not resolved:
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
 
-There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../loop-3/displays_v3.md) page.
+There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../loop-3/displays-v3.md) page.
 
 
 ## Loop 2 Bolus Screen
