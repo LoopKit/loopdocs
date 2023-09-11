@@ -31,7 +31,7 @@
 
 To Loop with the *GitHub* Build method, you need:
 
-1. [Compatible iPhone/iPod Touch](../build/step2.md)
+1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)

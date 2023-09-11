@@ -5,7 +5,7 @@
     - 0 minutes if you decide to use the GitHub [Browser Build](../gh-actions/gh-overview.md) method to build Loop
 
 !!! abstract "Summary"
-    - Check iPhone/iPod iOS version
+    - Check iPhone iOS version
         - The iOS version determines minimum Xcode version
         - The minimum Xcode version determines minimum macOS version
         - If necessary, update [macOS](computer.md#check-your-macos-version) first and then return to this step
@@ -26,8 +26,8 @@
 
 ## What is Xcode?
 
-Xcode is a free application for Apple computers. You will use Xcode to turn the "raw" Loop source code into an iOS application and install it onto your iPhone/iPod. 
-Which version of Xcode you install on your computer depends on the iOS version you have on the iPhone/iPod you are going to be installing Loop on **and** the [macOS](computer.md#check-your-macos-version) version you have on your computer. 
+Xcode is a free application for Apple computers. You will use Xcode to turn the "raw" Loop source code into an iOS application and install it onto your iPhone. 
+Which version of Xcode you install on your computer depends on the iOS version you have on the iPhone you are going to be installing Loop on **and** the [macOS](computer.md#check-your-macos-version) version you have on your computer. 
 
 Because of the complexity of these dependencies, **please read this entire page.**
 
@@ -50,7 +50,7 @@ Have you turned off automatic updates on your iOS device?
 
 !!! info "Loop and iOS Updates"
 
-    **Please Read**: [Turn Off Automatic Updates](step2.md#turn-off-automatic-updates)
+    **Please Read**: [Turn Off Automatic Updates](phone.md#turn-off-automatic-updates)
 
 Before manually accepting an iOS update, be sure you have compatible versions of Xcode and MacOS.  
 

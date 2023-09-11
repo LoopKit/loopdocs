@@ -111,7 +111,7 @@ If you hover your mouse or tap on a mobile device, the phrase associated with ea
 
 **IOB**: Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction
 
-**iOS**: operating system used by Apple Mobile devices (iPhone, iPod)
+**iOS**: operating system used by Apple Mobile devices (iPhone, iPod, iPad)
 
 **IRC**: Integral Retrospective Correction: Optional alternative to Retrospective Correction that integrates glucose deviations over a longer time frame
 

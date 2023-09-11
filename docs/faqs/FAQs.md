@@ -12,7 +12,7 @@ If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-
 
 ## Can I use an android phone or iPad for Loop?
 
-No, this is purely iPhone or iPod touch. The iPad does not support Apple Health which is required for Loop.
+Loop is an Apple app. Older iPad do not support Apple Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.
 
 There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
 
@@ -170,7 +170,7 @@ Yes, this is technically possible. You can have multiple Loop apps built onto th
 
 ## Will I be able to Loop on a plane? Or in the mountains?
 
-Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
+Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on the iPhone, then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
 
 One exception - if you've chosen to use a CGM source that does require the internet, you will need to have cell or internet coverage. This ability is provided as a service to folks who cannot get their CGM data any other way. It is also a convenience for people testing the code.
 

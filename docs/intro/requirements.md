@@ -15,7 +15,7 @@ There are some common requirements and then some different requirements for the 
 
 These requirements are independent of how you build the Loop app:
 
-1. [Compatible iPhone/iPod Touch](../build/step2.md)
+1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/step3.md)
 1. [Compatible CGM](../build/step4.md)
 1. [RileyLink Compatible Device](../build/step5.md) (not needed for Omnipod DASH)
@@ -56,7 +56,7 @@ After you build Loop on your phone, keep following along in the docs as you [Set
 
 ### Review the Common Requirements
 
-Before you start either build method, review the Common Requirements. First one is [Compatible iPhone/iPod Touch](../build/step2.md). On each page, keep clicking Next (or n) until you've finished with the Intro pages and are ready to Build.
+Before you start either build method, review the Common Requirements. First one is [Compatible iPhone](../build/phone.md). On each page, keep clicking Next (or n) until you've finished with the Intro pages and are ready to Build.
 
 ### Browser Build
 

@@ -14,7 +14,7 @@
 
     - You need a paid ($99/year) [Apple Developer Account](step6.md)
     - You need an account (free) with [github](https://github.com)
-    - You need a [compatible phone](step2.md) to install the app from TestFlight
+    - You need a [compatible phone](phone.md) to install the app from TestFlight
     - You need a [compatible Pump](step3.md) and [CGM](step4.md) if you want to actually Loop (and not just explore the app)
 
 !!! abstract "Summary"

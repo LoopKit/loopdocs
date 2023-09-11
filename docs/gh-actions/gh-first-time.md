@@ -77,7 +77,7 @@ There are two prerequisites to build Loop using <code>*GitHub* Browser Build</co
 
 #### Prerequisites to Install Loop
 
-To install Loop, you need the *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/step2.md).
+To install Loop, you need the *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/phone.md).
 
 #### Prerequisites to Use Loop
 

@@ -9,7 +9,7 @@ Please, review all the Intro and Build pages, even if you will not complete them
 This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/computer.md)
 
 * Build pages to review, but complete later
-    * Compatible iPhone/iPod
+    * Compatible iPhone
     * Compatible Pump
     * Compatible CGM
     * Order a RileyLink (not required for Omnipod DASH)
@@ -29,7 +29,7 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
 
 ### Common Requirements
 
-This simulator requires a compatible phone, see [Compatible iPhone/iPod](../build/step2.md)
+This simulator requires a compatible phone, see [Compatible iPhone](../build/phone.md)
 
 * Pages to review, but complete later
     * Compatible Pump

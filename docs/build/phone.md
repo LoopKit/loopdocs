@@ -1,13 +1,13 @@
-## Compatible iPhone or iPod touch
+## Compatible iPhone
 
 !!! info "Time Estimate"
     - 5 minutes, to check your device and iOS
     - 20 minutes, if need to update your compatible device to a new iOS
-    - 10 minutes, if you need to order a [compatible device](step2.md#compatible-devices) from Apple website
+    - 10 minutes, if you need to order a [compatible device](phone.md#compatible-devices) from Apple website
     - 0 minutes, if you own an Android and won't buy Apple products; check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/)
 
 !!! abstract "Summary"
-    - Check your iPhone/iPod touch against the device compatibility list
+    - Check your iPhone against the device compatibility list
         * For all devices, the newest iOS is strongly recommended
     - Make sure the phone has good battery life
     - Turn off automatic updates
@@ -20,9 +20,9 @@
 
 ## Which Devices Are Compatible?
 
-Loop requires an iPhone or iPod touch. Loop uses the Apple Health app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. iPads do not have the Apple Health app, so iPads will not work with Loop.
+Loop requires an iPhone. Loop uses the Apple Health app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. iPads do not have the Apple Health app, so iPads will not work with Loop.
 
-You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone or iPod touch. Loop is compatible with iPhone and iPod touch devices with iOS 15.1 or newer.
+You need a minimum version of the mobile operating software, called the phone's "iOS", to be installed on your iPhone. Loop is compatible with iPhone devices with iOS 15.1 or newer.
 
 ### Compatible Devices
 
