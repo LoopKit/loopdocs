@@ -71,7 +71,7 @@ PaidLoop will know nothing about the settings and information you had stored in 
 
 With Loop 3, if you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. 
 
-Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to [Protect that App](step14.md#protect-that-app), reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.
+Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to [Protect that App](build-app.md#protect-that-app), reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.
 
 ## Enrolling
 

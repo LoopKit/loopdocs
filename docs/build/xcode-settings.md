@@ -79,4 +79,4 @@ You are now done setting up Xcode.  Great job!  You will not need to redo the ac
 
 ## Next Step: Build Loop
 
-Now you are ready to [Build Loop](step14.md).
+Now you are ready to [Build Loop](build-app.md).

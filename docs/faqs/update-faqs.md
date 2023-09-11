@@ -15,7 +15,7 @@ In both cases, you build the code to install over an existing app on your phone 
 
 * If you use the Mac-Xcode build method:
     * First make sure your Mac operating system and Xcode version are compatible with your iPhone version, and then
-    * Easiest method is to use the [Build Select Script](../build/step14.md#build-select-script) which automatically downloads the latest released version of the code every time
+    * Easiest method is to use the [Build Select Script](../build/build-app.md#build-select-script) which automatically downloads the latest released version of the code every time
     * See note below if your internet speed or your Mac is very slow
 * If you use the GitHub Browser build method:
     * Follow the steps on [GitHub Update](../gh-actions/gh-update.md)

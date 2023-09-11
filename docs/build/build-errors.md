@@ -374,7 +374,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 
 For older builds only. With Loop 3.2.0 and newer, the default selection is already LoopWorkspace.
 
-You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](step14.md#initial-xcode-screens) Instructions.
+You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](build-app.md#initial-xcode-screens) Instructions.
 
 Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
 
@@ -383,7 +383,7 @@ Or maybe you are trying to build using an old download; some older versions did 
 !!! warning "Wrong Version of Carthage Error"
     Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
 
-**Solution:** Download fresh code with [Build Select Script](step14.md#build-select-script).
+**Solution:** Download fresh code with [Build Select Script](build-app.md#build-select-script).
 
 ### Could Not Locate Device Support Files
 

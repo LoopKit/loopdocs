@@ -187,7 +187,7 @@ For those who need Libre support, there are several options.
 * The [Loop-dev branch](../version/build-dev.md) already includes LibreTransmitter; which means the next release of Loop will have this support
 * For released code, Loop 3.2.x:
     * If you want to use [xDrip4iOS or GlucoseDirect](../build/code-customization.md#libre-support-for-loop-32x-code), you must add the interface to one of these apps to Loop
-    * The Loop with Patches selection in the [Build Select Script](../build/step14.md#build-select-script) provides support for those two CGM apps
+    * The Loop with Patches selection in the [Build Select Script](../build/build-app.md#build-select-script) provides support for those two CGM apps
     * You will also need to build and install xDrip4iOS or GlucoseDirect on your phone using the same Apple Developer ID as was used for Loop
 
 
