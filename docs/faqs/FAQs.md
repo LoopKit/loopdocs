@@ -12,7 +12,7 @@ If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-
 
 ## Can I use an android phone or iPad for Loop?
 
-Loop is an Apple app. Older iPads do not support Apple Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.
+Loop requires an Apple device. Older iPads do not support Apple Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.
 
 There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
 
