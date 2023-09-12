@@ -60,8 +60,8 @@ Before you start either build method, review the Common Requirements. First one 
 
 ### Browser Build
 
-Click here if you want to build with GitHub Build Actions: [Browser Build](../gh-actions/gh-overview.md)
+Click on the link if you are done reviewing the common requirements and you want to skip ahead to [GitHub Browser Build](../gh-actions/gh-overview.md).
 
 ### Mac-Xcode Build:
 
-Click here if you want to build on a Mac using Xcode: [Mac-Xcode Build](../build/overview.md)
+Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Mac-Xcode Build](../build/overview.md)

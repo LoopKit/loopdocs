@@ -26,6 +26,11 @@ You need a minimum version of the mobile operating software, called the phone's 
 
 ### Compatible Devices
 
+Note: 
+
+* iPhone 15 is expected to be compatible
+* iOS 17 is expected to be compatible, but it's a good idea to wait for iOS updates that come out quickly after a new iOS is released before updating your older phone (you won't have that choice if you buy an iPhone 15)
+
 These devices are compatible with iOS 15.1 and newer iOS.
 
 - iPhone 14, all variants
@@ -37,7 +42,7 @@ These devices are compatible with iOS 15.1 and newer iOS.
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
-These devices are compatible with Loop 3, which requires iOS 15.1, but cannot be upgraded to iOS 16.
+These devices are compatible with Loop 3, which requires iOS 15.1, but cannot be upgraded to iOS 16 or newer.
 
 - iPhone 7, all variants
 - iPhone 6s, all variants - but note the "s"
@@ -54,14 +59,14 @@ Do not use any of the beta iOS versions. (Don't worry...if you don't know what t
 
 ### Developer Mode - Mac-Xcode Build Only
 
-With iOS 16 and watchOS 9, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+With iOS 16 or newer and watchOS 9 or newer, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
-When you build Loop on your phone from Xcode directly and then transition to or start with iOS 16, you need to have Developer Mode enabled. This is also a requirement to use the Loop app on a watch paired to your phone running watchOS 9. You will be told to enable it in the [Build Loop App: Prepare your Phone and Watch](build-app.md#prepare-your-phone-and-watch) instructions.
+When you build Loop on your phone from Xcode directly and then transition to or start with iOS 16 or newer, you need to have Developer Mode enabled. This is also a requirement to use the Loop app on a watch paired to your phone running watchOS 9 or newer. You will be told to enable it in the [Build Loop App: Prepare your Phone and Watch](build-app.md#prepare-your-phone-and-watch) instructions.
 
 When you build Loop using the new Browser Build method [GitHub Overview](../gh-actions/gh-overview.md), Developer Mode is not required.
 
-!!! info "Developer Mode with iOS 16, watchOS 9"
-    If you already have Loop, built with Xcode on a Mac, on your phone/watch when you update to iOS 16/watchOS 9, you will be told that Loop requires Developer Mode to run.
+!!! info "Developer Mode with iOS 16 or newer, watchOS 9 or newer"
+    If you already have Loop, built with Xcode on a Mac, on your phone/watch when you update to iOS 16 or newer/watchOS 9 or newer or newer, you will be told that Loop requires Developer Mode to run.
     
     You will not be able to run Loop on your phone (or watch) until you have enabled Developer Mode on the device(s).
 
