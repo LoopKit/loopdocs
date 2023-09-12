@@ -78,7 +78,7 @@ Loop code is updated periodically to include new features and bug fixes. When th
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
 * If using Mac-Xcode build: use this link: [update instructions](../build/updating.md)
-* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update/#github-build-update) 
+* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update.md#github-build-update) 
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 
