@@ -6,19 +6,21 @@
 
 !!! abstract "Summary"
 
-    Loop is compatible with:
+    Loop is compatible (on the same phone) with:
 
-    - Dexcom G4 Share, G5, G6 or ONE CGM systems
-        * Dexcom ONE is available in some countries
-    - Dexcom G7
-    - Medtronic sensors connected to a Loop-compatible Medtronic pumps
-    - Some Libre sensors: dev branch only
+    - Dexcom [G5, G6 or ONE](#dexcom-g5-g6-and-one-cgm) and [G7](#dexcom-g7-cgm)
+    - Some [Libre](#libre-cgm) (Loop 3.4 or newer)
+    - [Medtronic](#medtronic-cgm) Enlite connected to a Loop-compatible Medtronic pumps
+
+    Other methods:
+
+    * Internet connections to Nightscout or Dexcom Share
 
 !!! question "FAQs"
 
-    - **"What about Libre sensors?"**
-        1. Libre support is available in the [Loop-dev branch](../version/build-dev.md) - be sure to read information at that link about running the dev branch
-        1. A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support for released code (Loop 3.2.x)
+    - **"What about other Libre sensors?"**
+        1. Only some Libre sensors have methods to read them directly on an iPhone
+        2. There are more methods for Android
     - **"What about Eversense?"** Refer to [CGMs Not Supported in Loop](#cgms-not-supported-in-loop)
 
 
@@ -27,7 +29,8 @@
 Loop uses your CGM glucose readings, carbohydrate input and therapy settings, to model your current glucose trend, predict future glucose and automatically adjust insulin dosing. A compatible CGM is essential to operation of the Loop app.
 
 
-## Dexcom G5, G6 and ONE CGM ![img/g5.jpg](img/g5.jpg){width="150"}
+## Dexcom G5, G6 and ONE CGM
+![img/g5.jpg](img/g5.jpg){width="150"}
 
 The Dexcom G5, G6 and ONE CGM transmits data directly to the Dexcom app on your iPhone via Bluetooth.
 
@@ -35,17 +38,30 @@ The Dexcom ONE, available in some countries, acts just like the G6 as far as Loo
 
 If the Dexcom app is on the same device as Loop, Loop can function without an internet connection. See Offline Use below.
 
-!!! warning "Dexcom G5 Support"
+!!! warning "Dexcom G5 and G6 Support"
 
     [Dexcom has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence). In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which Dexcom does supply and support G5. The G5 capability will continue to be supported in Loop.
 
-    There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of Loop supported by these documents only works with the Dexcom apps.
+    In the US, Dexcom has announced support for G6 continues for sensors but not receivers. They will continue to supply sensors so long as pump partners require it.
+
+    The version of Loop supported by these documents only works with the Dexcom apps.
 
 ## Dexcom G7 CGM
 
 Dexcom G7 is supported with Loop 3.
 
-## Medtronic CGM ![img/enlite.png](img/enlite.png){width="150"}
+## Libre CGM
+
+With Loop 3.4 and newer versions, some Libre CGM are supported.
+
+* Libre 1 are supported but must use a third-party transmitters (miaomiao and bubble transmitters are supported)
+* European Libre 2 can be used directly or via transmitter
+* American Libre 2 is not supported
+* Libre 3 is not supported
+
+
+## Medtronic CGM
+![img/enlite.png](img/enlite.png){width="150"}
 
 The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. Loop can read the Medtronic CGM data directly from the pump using a RileyLink compatible device.
 
@@ -69,12 +85,7 @@ Loop 3 can use Nightscout as a remote source for CGM data. This requires cell or
 
 ## CGMs Not Supported in Loop
 
-Libre Support (for some Libre sensors) is available with Loop-dev or by adding customizations.
-
-* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) 
-
-Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Loop 3.0 and later allows the use of Nightscout as a CGM source.
+Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Loop 3.0 and later allows the use of Nightscout as a CGM source but this requires internet access for closed-loop.
 
 ## Next Step
 

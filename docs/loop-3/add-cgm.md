@@ -13,13 +13,12 @@ Loop can be connected to the following CGMs:
     * [Dexcom G5](#dexcom-g5-g6-one)
     * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
     * [Dexcom G7](#dexcom-g7) **(Loop 3 only)**
+    * [Libre](#libre) **(Loop 3.4 and later)**
+        * Only some Libre sensors are supported; some have encryption that limits DIY use
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
             * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
-    * Libre: [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) was added to the dev branch (and thus will be supported in the next release of Loop)
-        * Only some Libre sensors are supported; some have encryption that limits DIY use
-        * No details for using Libre will show up on this page until the next release - please read [Build Loop-dev](../version/build-dev.md) and follow the links to understand what you are doing if you choose a development branch
 * CGMs that require active internet (WiFi or Cell)
     * [*Dexcom Share*](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
@@ -107,6 +106,24 @@ Minimal documentation is provided.
 
     If either the G6 or the G7 has permission to write to *Apple Health*, then *Loop* will delete the *Loop* glucose data in *Apple Health* that are older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
 
+### Libre
+
+The Libre plugin for Loop, [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop), connects directly via Near Field Communication (NFC) during pairing (for some sensors) and via Bluetooth (direct to sensor or direct to a transmitter attached to the sensor) for regular readings. No other app is needed.
+
+* Libre 1 are supported but must use a third-party transmitters (miaomiao and bubble transmitters are supported)
+* European Libre 2 can be used directly or via transmitter
+* American Libre 2 is not supported
+* Libre 3 is not supported
+
+!!! tip "Connecting to Libre"
+    First reading for a new sensor will often take 2-4 minutes. This is due to some technicalities on how the Libre sensor announces its presence via bluetooth.
+
+There are solutions for some Libre 3 but they cannot reside on an iPhone. The Android solution can be uploaded to Nightscout, with Loop using Nightscout as a Remote CGM; but this requires internet access to continue closed-loop performance.
+
+Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over bluetooth).
+
+Libre 3 sensors have started appearing as well, but are unsupported. Other Libre sensors that are unsupported: Libre Pro, Libre H, Libre Sense Glucose Sport Biosensors.
+
 ### Medtronic Enlite CGM
 
 The Medtronic Enlite CGM is only available if you have connected it to your compatible Medtronic Pump.
@@ -165,7 +182,7 @@ When using Nightscout Remote CGM, if the user needs to change credentials or swi
 
 ## Change CGM
 
-To change CGMs, delete your existing CGM and then add a new CGM.
+To change CGM Types, you first delete your existing CGM selection and then add a new CGM.
 
 ### Change a Nightscout Remote CGM
 
@@ -179,12 +196,10 @@ Other CGM, you can tap on the CGM from either the Heads-Up Display or tap on `Se
 
 Scroll to the bottom of the screen and select `Delete CGM`.
 
-For some CGM that can be added to Loop 3 with a patch, the words may be different, but the steps are the same.
-
 ### Dexcom G5, G6 and One (not G7)
 
 For older Dexcom sensors, the transmitter is replaced separately about once every three months. In order to enter a new transmitter number, you must first delete the CGM and then add the CGM.
 
 Detailed instructions are found at [CGM FAQs: What do I do when I switch Dexcom transmitters?](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-dexcom-transmitters).
 
-Once the Dexcom G7 has been added to Loop, the user only needs to let the Dexcom G7 app know when to use the new sensor. The Loop app automatically switches to the new sensor with no additional steps required by the Looper.
+With the Dexcom G7, the user only needs to let the Dexcom G7 app know when to use the new sensor. The Loop app automatically switches to the new sensor with no additional steps required by the Looper.
