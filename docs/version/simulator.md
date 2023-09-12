@@ -81,7 +81,7 @@ These CGM and pump options work to provide glucose readings or accept pump comma
     * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
     * If you do not have a developer ID, use the [Free Developer Account](../build/xcode-settings.md#free-developer-account) instructions in the `Add Apple ID` section
 * Follow [Build the Loop App](../build/build-app.md) using the Free Account instructions
-    * If your phone is running iOS 16, you must enable Developer Mode
+    * If your phone is running iOS 16 or newer, you must enable Developer Mode
     * Download the code as directed
     * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
     * Continue with the [Build Free Loop](../build/build-free-loop.md) page

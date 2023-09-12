@@ -87,7 +87,7 @@ The list below contains the **minimum** versions of [macOS](computer.md#check-yo
     * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
     * iOS 16.0 through 16.1.x is supported
 
-When using a Mac-Xcode build and an iOS 16 device, you must turn on developer mode for both the phone, and if paired, the watch.
+When using a Mac-Xcode build and an iOS 16 or newer device, you must turn on developer mode for both the phone, and if paired, the watch.
 
 ### Wikipedia Chart for Apple Versions
 
