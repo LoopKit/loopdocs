@@ -180,7 +180,7 @@ For Mac-Xcode builders:
 
 For GitHub Browser builders;
 
-* Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list)
+* Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
 * Otherwise, create your own customization for the Module identified under [Module, Folder, File](#module-folder-file) as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page
 
 ### Key_Phrase
@@ -816,7 +816,7 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/build-select/#utilities-custom).
+Several items have been consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/build-select#utilities-custom).
 
 Please read the documentation and test any patch that you enable. These patches don't have the nice guardrails found in Loop 3 and must be configured at the iOS Settings, Loop interface. They cannot be adjusted inside the Loop app.
 
@@ -885,7 +885,7 @@ Add LibreTransmitter to Loop as a plugin:
 
 The released code of Loop 3 (3.0.0 through 3.2.2) allows Loop to run at higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
 
-This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list).
+This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list).
 
 !!! important "If your CGM updates at 1-minute rates, please add this customization"
     This code is consistent with the code currently in the dev branch.
@@ -898,7 +898,7 @@ This modification limits the period for Loop cycles to 4.2 minutes or longer. Se
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)"
 ```
 
-* When using GitHub Browser build, please refer to [Loop and Learn: Code Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code/#prepared-custom-list)
+* When using GitHub Browser build, please refer to [Loop and Learn: Code Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list)
 
 
 ## Folders and Icons

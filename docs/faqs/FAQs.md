@@ -78,7 +78,7 @@ Loop code is updated periodically to include new features and bug fixes. When th
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
 * If using Mac-Xcode build: use this link: [update instructions](../build/updating.md)
-* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update/#github-build-update) 
+* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update.md#github-build-update) 
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 
@@ -88,7 +88,7 @@ No. Loop lets you move between different pump types from within the same Loop ap
 
 ## Can I use my Apple Developer account to build for others?
 
-If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: [Loopers Need Their Own Apple ID](../../build/step6/#loopers-need-their-own-apple-id).
+If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id).
 
 If you used the [Browser Build](../gh-actions/gh-overview.md) method, you just add each Looper to your TestFlight test group and they get updates whenever you issue a new Build Action on github.
 

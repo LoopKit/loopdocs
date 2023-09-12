@@ -169,7 +169,7 @@ The frequent updates (1-minute glucose data) provided by *Libre* did cause some 
 
 With `Loop dev` (will be `Loop 3.4.x` after release), the Loop app only initiates a closed-loop cycle automatically following a new glucose value if it has been more than 4.2 minutes since the last one.
 
-`Loop 3.0` and `Loop 3.2.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code/#loop-cycle-time) that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
+`Loop 3.0` and `Loop 3.2.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code#loop-cycle-time) that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
 
 ##  How Do I Change Glucose Units?
 

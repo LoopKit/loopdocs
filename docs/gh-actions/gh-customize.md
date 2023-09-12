@@ -1,7 +1,7 @@
 ## Hot Topics
 
 !!! tip "Pro Tip"
-    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code/#prepared-custom-list). You can use (and re-use) your customizations with either *GitHub* Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
+    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list). You can use (and re-use) your customizations with either *GitHub* Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
 
     * If you are building with Mac-Xcode method, you can use the same lines prepared for *GitHub* Browser method and simply paste them in your terminal at the LoopWorkspace folder to customize your code
 
@@ -36,7 +36,7 @@
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code-customization.md) page
-        * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code/#custom-list)
+        * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
     * *GitHub* (each Module):
         1. Fork Module (if needed)
         1. Sync the Module (if needed)
@@ -143,7 +143,7 @@ When you fork a repository, the default branch is the one that is forked. That i
 | LoopKit/OmniKit | main |
 
 !!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: *GitHub* Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code/#add-lnl-patches).
+    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: *GitHub* Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code#add-lnl-patches).
 
     The process for creating your own customizations is the same as those using the released code.
 
