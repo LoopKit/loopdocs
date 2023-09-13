@@ -106,8 +106,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
 * `Identifiers`: are required to build Loop with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
     * Four Identifier Names must be associated with your `App Group`
-        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
-        * For dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
+        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Loop Widget Extension`
     * Two Identifier Names will exist but do not require that association
         * `WatchApp` and `WatchAppExtension`
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
@@ -168,10 +167,6 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 
 You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure Secrets](#configure-secrets) for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
 
-**Created yourself**
-
-* a password - make one up and save it (<code>MATCH_PASSWORD</code>)
-
 **Created at developer.apple.com**
 
 * Email address (this is your username)
@@ -191,6 +186,10 @@ You need to save your information digitally, so you can copy and paste. The info
 * Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
 * One item used as a Secret
     * *GitHub* Personal Access Token (<code>GH_PAT</code>)
+
+**Created yourself**
+
+* a password - make one up and save it (<code>MATCH_PASSWORD</code>)
 
 ### Collect the Four `Apple Secrets`
 
@@ -286,10 +285,10 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
 The `Keys` screen appears again with content similar to the graphic below; the key information is blanked out for security.
 
-* Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](#configure-secrets)
+Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](#configure-secrets)
 
-    ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
-    {align="center"}
+![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
+{align="center"}
 
 1. A button labeled Copy is always adjacent to the `Issuer ID` above the word Active (this is the same for all keys that you generate with this *Apple* Developer ID)
     * Tap on the `Copy` button - this copies the `Issuer ID` into your paste buffer
@@ -493,7 +492,6 @@ Log into *GitHub*.
     ![drop-down-menu](img/gh-quick-access.png){width="200"}
     {align="center"}
 
-1. You should see (at least) 2 repositories: `Match-Secrets` and <code>LoopWorkspace</code>
 1. Click on <code>LoopWorkspace</code> to open that repository
 1. Click on the Settings Icon near the top right of your LoopWorkspace
     * If you don't see ⚙️ `Settings`, make your browser wider or scroll to the right
@@ -580,6 +578,9 @@ Click on the `Actions` tab of your <code>LoopWorkspace</code> repository.
     {align="center"}
 
 The `workflows` are now displayed on the left side as shown in the graphic below. (Dismiss the `Actions Enabled` message using the `X` near the upper right side if it appears).
+
+!!! note "To Do"
+    Update figure with numbered actions
 
 ![workflows displayed](img/gh-workflows-enabled.png){width="700"}
 {align="center"}
@@ -872,7 +873,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
-    * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`. (The <code>Add Identifiers</code> might not be required but it is fast and should be done as a matter of routine.)
+    * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`.
 
 ## `Build Loop`
 
@@ -886,9 +887,6 @@ Refer to the graphic below for the numbered steps:
         * one says *TestFlight* is ready (typically half-hour after build succeeds)
         * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
     1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
-    1. For each phone/person you would like to support Loop on:
-        * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
-        * Add them to your *TestFlight* Internal Testing group.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
 
@@ -918,6 +916,15 @@ Refer to the graphic below for the first four steps:
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
 ## Set Up Users and Access (TestFlight)
+
+??? abstract "Section Summary (click to open/close)"
+    For each Apple ID (person) who needs access to your TestFlight builds:
+    
+    * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect
+    * Add them to your *TestFlight* Internal Testing group for the Loop app
+    * Note Apple ID is the email associated with the person; it is not the same as your developer ID email
+
+    [<span class="loop-bigger">:material-skip-forward:</span>](gh-deploy.md) To skip the detailed instructions, click on [GitHub Deploy](gh-deploy.md).
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
 
@@ -998,6 +1005,7 @@ To make it easy when configuring the identifiers, go through and delete as many 
 * Note - this graphic indicates where on this page you can find your `TEAMID`
     * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
     * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+    * Delete all the other identifiers first that have the same incorrect `TEAMID` and then try to delete the Loop identifier with the incorrect `TEAMID`
 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
 {align="center"}
