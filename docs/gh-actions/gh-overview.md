@@ -7,12 +7,13 @@
 ### Advantages of <span translate="no">GitHub</span> Build
 
 * Mac computer is not required
-* Mac computer or PC or tablet are fine for <span translate="no">GitHub</span> build
+    * Anything with a browser works: PC, Tablet, Mac or iPad
+    * It could be done with a phone, but the steps may be hard to navigate
 * Xcode is not required
     * The time required for the initial setup for <span translate="no">GitHub</span> may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
 * Updates are easy
-* Starting an update takes a few minutes of your time; the rest is automatic
-* With the release of Loop 3.4, your app is automatically built at least once a month and is checked for updates once a week
+    * Starting an update takes a few minutes of your time; the rest is automatic
+    * With the release of Loop 3.4, your app is automatically built at least once a month and is checked for updates once a week
 
 
 ### Considerations for <span translate="no">GitHub</span> Build
@@ -23,9 +24,9 @@
 * After the <span translate="no">GitHub Build</span> starts, the automatic process takes about an hour to complete
     * You will receive an email indicating success (or failure)
     * Loop appears in the *TestFlight* app on the Loop phone, where it can be installed in seconds
+* Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize with <span translate="no">GitHub</span>](../gh-actions/gh-customize.md)
-    * Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
 
 
 ## Requirements

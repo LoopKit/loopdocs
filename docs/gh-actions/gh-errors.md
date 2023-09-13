@@ -421,12 +421,10 @@ There might be several reasons to do this:
 
 These steps are needed to reset your `Match-Secrets`:
 
-1. Delete your `Match-Secrets` Repository
+1. Delete your `Match-Secrets` `Repository`
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
-1. Create a new private `Match-Secrets` *Repository*
-    * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
-    * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
 1. In your fork of LoopWorkspace:
+    * This will automatically create a new `Match-Secrets` `Repository` for you
     * Run the `Action`: `Create Certificates`
     * If this fails, click on this link for the most likely [Error: Could not create](#error-could-not-create)
     * If that doesn't help, check all your <code>Secrets</code> and try again
@@ -438,3 +436,55 @@ These steps are needed to reset your `Match-Secrets`:
     If you add an app to your *GitHub* username (by forking the repository and adding <code>Secrets</code>) and then build it, it encrypts your `Certificate` using `MATCH_PASSWORD`.
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
+
+
+!!! note "To Do"
+    set up headers that will be added, with graphics, for later use.
+
+## <span translate="no">Annotation</span> Message
+
+### Agreement not signed
+
+placeholder for the example annotation messages from Action failures.
+
+## Old Steps
+
+With the release of Loop 3.4, some manual steps are no longer required.
+
+However, the manual direction are being stashed at the bottom of the errors page. Expect this documentation to be removed over time.
+
+### Create Match-Secrets
+
+**This step is automatically performed for you when you run `Validate Secrets``.**
+
+Open your github.com URL (this is `https://github.com/username`), (`username` is the name you chose above).
+
+Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
+
+* Click on this link: [(https://github.com/new)](https://github.com/new)
+
+or
+
+* At the top right of the screen, click on the &plus; sign and select `New Repository`
+
+    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
+    {align="center"}
+
+This shows you a screen similar to the following graphic which has 3 regions highlighted:
+
+* In `Repository name`, type `Match-Secrets` (use a hyphen between `Match` and `Secrets`)
+* Be sure to check the  box **`Private`**  (red circle) to make the repository **private**
+* **Please confirm you selected `Match-Secrets` repository as private.**
+* Scroll to the bottom of the page and tap on "`Create repository`"
+
+![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
+{align="center"}
+
+A screen will appear with a lot of options - do **not** do anything on this screen.
+
+* Click on your username (as indicated by the red rectangle) to return to your main *GitHub* URL.
+
+![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
+{align="center"}
+
+You will not directly interact with your `Match-Secrets` repository.
