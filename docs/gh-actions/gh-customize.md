@@ -15,7 +15,7 @@
 
 #### Do Not Make a Pull Request
 
-!!! danger "Ignore *GitHub* Pull Request Prompts"
+!!! important "Ignore *GitHub* Pull Request Prompts"
     Please do not click on boxes that *GitHub* might show you that ask if you want to **Compare & Pull Request.**
     
     This would be an attempt to merge changes from your fork back to LoopKit. These changes are for **your fork** only. Ignore those prompts.
@@ -36,7 +36,7 @@
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code-customization.md) page
-        * You only need to create your own customization if what you want is not provided at [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
+        * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list)
     * *GitHub* (each Module):
         1. Fork Module (if needed)
         1. Sync the Module (if needed)
@@ -142,11 +142,6 @@ When you fork a repository, the default branch is the one that is forked. That i
 | LoopKit/OmniBLE | dev |
 | LoopKit/OmniKit | main |
 
-!!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: *GitHub* Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-cod/#add-lnl-patches).
-
-    The process for creating your own customizations is the same as those using the released code.
-
 ## Edit Module in *GitHub*
 
 Open your browser to your https://github.com/username/Module fork. Be sure to sync **your fork** if it shows it is behind the LoopKit repository.
@@ -211,6 +206,12 @@ Repeat this process until you've done all your customizations for this Module an
 ## Prepare the Customizations
 
 Once you prepare the commands, then you will edit the build_loop.yml file of your LoopWorkspace fork.
+
+!!! warning "Ensure your fork is from LoopKit/LoopWorkspace"
+    If your LoopWorkspace fork did not come from LoopKit/LoopWorkspace, then delete your existing fork and make a new one. See [Already Have LoopWorkspace?](gh-first-time.md#already-have-loopworkspace).
+
+    * There was a version of LoopWorkspace that had some customizations already built in
+    * This will **not** be supported for Loop 3.4
 
 For each commit that has a customization you want to include, create a pair of patch lines consisting of the comment (must start with a #) followed by the curl statement pointing to the commit that has the customization.
 
