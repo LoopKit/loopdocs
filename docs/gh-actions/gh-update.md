@@ -1,9 +1,10 @@
 ## Update <span translate="no">Loop</span> using <span translate="no">GitHub Actions</span>
 
 ??? info "Time Estimate (click to open/close)"
-    Build <span translate="no">Loop</span>
-
-    - Start the Build: 5 minutes
+    - Update your configuration for automatic builds: 10 minutes
+    - Update your fork: 5 minutes
+    - Follow the extra instructions to get <span translate="no">Loop</span> ready to build: 10 minutes
+    - Start the Build process: 30 seconds
     - Wait for build to complete and appear in <span translate="no">TestFlight</span> on your phone
         * about an hour
         * depends on <span translate="no">GitHub</span>, <span translate="no">Apple</span> and <span translate="no">TestFlight</span>
@@ -78,7 +79,7 @@ Here is a summary of the extra steps; each step has an associated link. You need
 
 ### Build Loop
 
-If your fork is already up at 3.4, all that is required is to run the action: Build Loop for your fork and skip ahead to [Wait for TestFlight](#wait-for-testflight).
+If you have successfully built Loop 3.4 with automatic build configuration enabled and later decide to manually build Loop, all that is required is to run the action: Build Loop for your fork and skip ahead to [Wait for TestFlight](#wait-for-testflight).
 
 #### Updating from 3.2.x to 3.4
 
@@ -123,11 +124,6 @@ The updated Loop app will show up in your <span translate="no">TestFlight</span>
     * It takes time for the update to show up in the <span translate="no">TestFlight</span> app
 * You will also see a build number in parentheses, that number increments each build - don't worry about the number
 
-!!! tip "Calendar Reminder"
-    This is a good time to put a calendar reminder in your favorite app.
-
-    Set it up for a few days before the <span translate="no">TestFlight</span> app will expire.
-
 ### Install or Confirm Installation
 
 #### Automatic Update Disabled
@@ -148,6 +144,9 @@ Option 2: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
 ## <span translate="no">GitHub</span> Build Details
+
+!!! note "To Do"
+    Update this section know the TestFlight information is displayed on Settings screen.
 
 In the Loop app, once installed on your phone, tap on `Settings -> Support -> Issue Report`. The graphic below shows an example of the Build Details included in the report.
 
@@ -170,12 +169,9 @@ With <span translate="no">Loop</span> 3.4, your <span translate="no">GitHub Pers
 If your token has expired or will expire, the next section helps you to set up a new token and update your <code>Secrets</code>.
 
 If you are not sure about the status of your token, go to 
- has not expired and you don't want to regenerate it, you don't need this section.
 
-If you want to follow the new recommendation of using a <span translate="no">GitHub Personal Access Token</span> that never expires, you can regenerate the new one at any time.
-
-!!! tip "Update new GH_PAT to Secrets"
-    After you get your new token, immediately add it to your Secrets for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify Secrets for each repository to make sure you did not make a mistake.
+!!! note "To Do"
+    Revise this section for how-to review and update (not regenerate)
 
 ### Regenerate <span translate="no">GitHub Token</span>
 
@@ -220,9 +216,15 @@ The next screen shows your new token. Copy the token using the copy icon and sav
 ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
 {align="center"}
 
-The next step is to update GH_PAT in your LoopWorkspace Repository Secrets. (If you build other apps with this method - update the GH_PAT for all of them right now - do not forget.)
+The next step is to update GH_PAT in your LoopWorkspace Repository Secrets.
+
+!!! tip "Update new GH_PAT to Secrets"
+    After you get your new token, immediately add it to your Secrets for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify Secrets for each repository to make sure you did not make a mistake.
 
 ### Update Secrets
+
+!!! note "To Do"
+    Update graphics to use a browser rather than a phone.
 
 This example is for updating GH_PAT in the Secrets for your repository, but the same method can be applied when changing any Secret.
 
@@ -253,6 +255,9 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 
 ## <span translate="no">GitHub</span> Build for dev
 
+!!! note "To Do"
+    Update this section for dev 3.5.0 following 3.4 release.
+
 You can build any desired branch (available at LoopKit/LoopWorkspace) using the <span translate="no">GitHub</span> Browser build method. This section is suitable if you have already built either dev or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
 
 **No matter the method used to build Loop for any branch other than main, you are testing development code. Please read this link now before continuing.**
@@ -269,48 +274,7 @@ The graphics show the dev branch. If you want a different branch, just substitut
 
 ### One-Time Changes
 
-Look in this section for one-time changes to the dev branch that require special, one-time actions. These are in reverse chronological order to make the most recent one easier to find.
-
-**26-July-2023**
-
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
-
-The table in LoopDocs (for main) will be updated after the next release.
-
-For those using dev, you must follow these one-time steps:
-
-1. Sync your fork to latest version of dev
-1. Run the Action for Add Identifiers (this adds "`LoopWidgetExtension`" to identifiers)
-    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
-    * Click on the "`LoopWidgetExtension`" identifier
-    * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
-1. Run the Action for Create Certificates
-1. Run the Action for Build Loop
-
-**03-July-2023**
-
-1. Libre support was added to dev (03 July 2023) using the LibreTransmitter code
-    * This requires (one-time) that the `Actions` for `2. Add Identifiers` and `3. Create Certificates` be run before attempting `4. Build Loop`
-    * The LibreTransmitter code requires `Near Field Communication` and doing these steps automatically adds the required capability
-1. Automatic update and automatic monthly build was added to dev (13 July 2023)
-    * Once a month, <span translate="no">GitHub</span> will attempt to update and build Loop from your `default branch` using the instructions in the `Action: 4. Build Loop` (`build_loop.yml` file) and send the new app to <span translate="no">TestFlight</span>
-    * As part of this monthly build, <span translate="no">GitHub</span> will check to see if updates are required for your `default branch`
-    * When updates are not required, it just builds the app
-    * When updates are required:
-        * If it can figure out how to do the `sync` automatically, it does so
-        * If it cannot figure out how to do the `sync` automatically, the `Action` to `4. Build Loop` will fail and you will need to take manual steps
-    * You will get an email that the `Build` either succeeded or failed
-
-!!! info "Automatic Update Requirements"
-    To enable the automatic update and rebuild, two steps are required. These are one-time steps.
-
-    * The GH_PAT must be updated (not regenerated) to add `workflow`
-        * Examine your [`FastLane Access Token`](https://github.com/settings/tokens)
-        * If it says `repo, workflow`, then no further action is needed for your GH_PAT
-        * If it say `repo` only, then click on the `FastLane Access Token` link, click to add a check to the `workflow` box and scroll all the way down to select the green `Update token` button
-    * A new branch called `alive` must be created from the LoopKit `dev` branch
-        * Follow the directions at [Add Branch](#add-branch), except this time, you will type `alive` in the empty branch name that you connect to `LoopKit/LoopWorkspace` `dev` branch
-        * You will not use the `alive` for anything directly, but it must exist for the automatic update to function
+Look in this section for one-time changes to the dev branch that require special, one-time actions. At the current time, this section is blank.
 
 ### Check Current Branches
 
