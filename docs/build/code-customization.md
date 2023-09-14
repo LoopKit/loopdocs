@@ -481,7 +481,7 @@ The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-se
 
 ### Glucose Guardrails
 
-If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
+If you build Loop 3 over a version of Loop 2.2.x where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
 
 ``` { .txt .copy title="Key_Phrase" }
 Guardrail(absoluteBounds:

@@ -436,7 +436,7 @@ If this is your first build with Loop 3, head to the Set Up tab starting here: [
 Even if you don't read all the pages under the Set Up tab now, these links are important.
 
 * New Looper: [Onboarding](../loop-3/onboarding.md)
-* Building Loop 3 over Loop 2.2.x or FreeAPS: [Experienced Looper Onboarding](../loop-3/onboarding.md#experienced-loopers)
+* Building Loop 3 over Loop 2.2.x: [Experienced Looper Onboarding](../loop-3/onboarding.md#experienced-loopers)
 
 !!! info "Add a Calendar Reminder"
 
