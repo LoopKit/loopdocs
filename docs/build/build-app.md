@@ -129,7 +129,12 @@ Next you are asked which version of Loop you would like to build. Type 1 and ret
 !!! tip "Libre included in dev branch"
     Libre support is now included in dev branch.
 
-    If you are willing to [build Loop-dev](../version/build-dev.md), you do not need Loop with Pathes to use a compatible Libre sensor.
+    If you are willing to [build Loop-dev](../version/build-dev.md), you do not need Loop with Patches to use a compatible Libre sensor.
+
+!!! important "Changes with Loop 3.4"
+    The next release of Loop will be called 3.4. When that release happens, the only option will be to build Loop.
+    
+    Loop with Patches will not be updated and will not appear in the Build Select Script.
 
 ![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
 {align="center"}

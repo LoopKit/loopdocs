@@ -73,19 +73,30 @@ Be sure to read the [Instructions for Finding the Lines](code-customization.md#i
 
 Build-time features are not available with Loop 2.2.x.
 
-With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" to a particular line in the LoopConfigOverride.xcconfig file.
+With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.
 
 If you use the GitHub Build Method, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on GitHub and then commit the change to your fork.
 
 If you use the Mac-Xcode Build Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
 
-These flags are always upper case with underscore separating words for clarity. They are inserted anywhere after the word `$(inherited)` and before the `//`. The `//` indicates the flags to the right are not included. In the line shown below, simulators are enabled but debug features are turned off. Each flag is separated by a space. Do not enter a return between selections - Xcode will word-wrap the line for clarity, but all values need to be on a single line.
+These flags are always upper case with underscore separating words for clarity, for example `MY_EXAMPLE_FLAG`. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. Xcode will automatically word-wrap the line for clarity. All values need to be on a single line.
+
+!!! question "New Instructions"
+    The instructions are more robust than earlier instructions that had you editing a line instead of adding new ones.
+
+Copy the text below, add it to the end of your LoopConfigOverride.xcconfig file and then insert the desired flags in place of `MY_EXAMPLE_FLAG`. If you want more than one flag, separate them by a space.
+
+``` { .txt .copy title="Lines to add to end of file" }
+
+// Add Build-Time features to compilation conditions
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) MY_EXAMPLE_FLAG
+```
 
 _Code Before Modification_
 
 ```
-// Features
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
+// Put your team id here for signing
+//LOOP_DEVELOPMENT_TEAM = UY678SP37Q
 ```
 
 The example below is for someone who is using a Free Developer ID - which does not support Siri.
@@ -93,17 +104,11 @@ The example below is for someone who is using a Free Developer ID - which does n
 _Code After Modification_
 
 ```
-// Features
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED SIMULATORS_ENABLED //DEBUG_FEATURES_ENABLED
-```
+// Put your team id here for signing
+//LOOP_DEVELOPMENT_TEAM = UY678SP37Q
 
-For dev branch only, there is an additional flag that is present
-
-_Code Before Modification for dev branch_
-
-```
-// Features
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS //DEBUG_FEATURES_ENABLED
+// Add Build-Time features to compilation conditions
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIRI_DISABLED
 ```
 
 List of some flags and what they do:
@@ -783,13 +788,9 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 ## Additional Customizations for Loop 3
 
-Some customizations on this page add support for Libre sensors. If you are willing to build a dev branch, then Libre support is already added to that version. Please read [What's going on in the dev branch?](../version/development.md#whats-going-on-in-the-dev-branch).
+Some customizations on this page add support for Libre sensors. If you are willing to build a dev branch, then Libre support is already added to that version. Please read [Support for Libre Sensors](../version/development.md#support-for-libre-sensors).
 
-If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method) or use a prepared fork that already contains them.
-
-These customizations are only for Loop 3:
-
-* Some are already added to the released version of Loop in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches)
+If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method).
 
 ### Open a Terminal in LoopWorkspace Folder
 
@@ -816,26 +817,28 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 ### Custom Type One LoopPatches
 
-Several items have been consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/build-select#utilities-custom).
+**If you do not already use this set of customizations, please do not start.**
+
+Several items were consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#custom). This script can be used with either Mac-Xcode or GitHub Browser build methods.
 
 Please read the documentation and test any patch that you enable. These patches don't have the nice guardrails found in Loop 3 and must be configured at the iOS Settings, Loop interface. They cannot be adjusted inside the Loop app.
 
-The CustomTypeOne LoopPatches are included in [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches).
+Although special versions of Custom Type One LoopPatches are supplied via the Customization Select Script that are compatible with the dev branch and will be compatible with Loop 3.4.x, it is strongly recommended that if you don't already use these patches - do not start. The support for some features has already been replaced with features inside Loop that will be standard with Loop 3.4, and other changes are expected in the future.
 
 ## Libre Support for Loop 3.2.x Code
 
 !!! tip "Libre included in dev branch"
-    Libre support is now included in dev branch.
+    Libre support is now included in dev branch, which will soon be released as Loop 3.4.
 
     If you are willing to [build Loop-dev](../version/build-dev.md), you do not need any of these customizations to use a compatible Libre sensor.
 
 ### Add Libre App to Loop Phone
 
-This method only works for Loop 3 and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
+LibreTransmitter for Loop is already included in the dev branch. [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop). If you [Build Loop-dev](../version/build-dev.md), you do not need to add a Libre app to your phone.
 
-There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
+You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
 
-These are the Libre iOS app options.
+These are Libre iOS app options that work with Loop 3.2.x. In other words, you install one of these CGM apps on your phone **and** modify Loop 3.2.x to interface with the CGM app using a shared App Group.
 
 * xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
@@ -846,22 +849,18 @@ These are the Libre iOS app options.
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
         * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select GlucoseDirect
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
-* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-    * LibreTransmitter is incorporated into Loop directly, so no separate app is required
-    * Refer to [LibreTransmitter](#libretransmitter)
-    * This is included in Loop-dev: see [LoopDocs: Building Loop dev](../version/build-dev.md)
-
-Once you have chosen the desired app, you need to install it on your Loop phone using the same developer ID as was used for the Loop app and then you must modify the Loop 3 code that you previously downloaded or use [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches).
 
 ### Modify Loop to use Libre
 
-The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches) version of Loop has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below.
+These customizations are only for Loop 3.2.x. They do not work for the dev branch, soon to be released as Loop 3.4.
 
-For your selected app to read the Libre, you must also add a client to Loop 3 to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.
+The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches) version of Loop 3.2.2 has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below.
+
+For your selected app to read the Libre, you must also add a client to Loop 3.2.x to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.2.x.
 
 Add a client that interfaces with xDrip4iOS:
 
-* [Add xdrip-client-swift to Loop 3](https://github.com/JohanDegraeve/xdrip-client-swift-1#readme)
+* [Add xdrip-client-swift to Loop 3.2.x](https://github.com/JohanDegraeve/xdrip-client-swift-1#readme)
     * Note - there are extra details visible when you click on the black arrow icons in this file
     * [zulipchat converstation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292280110)
 
@@ -873,22 +872,20 @@ Add a client that interfaces with GlucoseDirect:
 
 ### LibreTransmitter
 
-Add LibreTransmitter to Loop as a plugin:
+LibreTransmitter is included in Loop dev and will be in Loop 3.4 when it is released:
 
 * LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
-    * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/312259-Omnipod-DASH/topic/Libre.20support/near/279078872)
-    * There is a development branch, libre, that has this incorporated
     * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script-libre)
 
 ## Limit Loop for Faster CGM
 
 The released code of Loop 3 (3.0.0 through 3.2.2) allows Loop to run at higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
 
-This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list).
+This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list).
 
 !!! important "If your CGM updates at 1-minute rates, please add this customization"
-    This code is consistent with the code currently in the dev branch.
+    This customization is consistent with the code currently in the dev branch, soon to be released as Loop 3.4.
 
     This is only needed for Loop 3.2.2 and earlier versions.
 

@@ -1056,22 +1056,27 @@ The [*GitHub* Deployment](gh-deploy.md) walks you through the steps to deploy to
 
 Most people won't need the information on the rest of this page.
 
-### Already Have LoopWorkspace
+### Already Have LoopWorkspace?
 
-Some people may already have a fork of <code>LoopWorkspace</code>. They might even have one that they forked from somewhere other than `LoopKit`.
+Some people may already have a fork of <code>LoopWorkspace</code>.
 
-Suggestions - choose one of these methods:
+If your fork is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
 
-* Update the repository if it is forked from `LoopKit`
-    * Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
-    * Review the graphic in the [Successful Fork](#successful-fork) section
-        * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
-    * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
-    * Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
-* Delete that repository if it is from somewhere other than `LoopKit` or the fork you wanted to start with (which might have customizations that you want)
+If your fork is from `LoopKit`:
+
+* Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
+* Review the graphic in the [Successful Fork](#successful-fork) section
+    * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
+* If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
+* Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
+
+#### Delete and Start Fresh
+
+If your fork is not from `LoopKit`:
+
+* Delete your LoopWorkspace repository
     * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
-    * You just need to make sure that a repository called <code>LoopWorkspace</code> is no longer in your *GitHub* account
-    * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
+* Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
 ### Delete Identifiers
 
