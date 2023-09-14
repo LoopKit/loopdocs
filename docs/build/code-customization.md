@@ -790,13 +790,7 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 Some customizations on this page add support for Libre sensors. If you are willing to build a dev branch, then Libre support is already added to that version. Please read [Support for Libre Sensors](../version/development.md#support-for-libre-sensors).
 
-If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method) or use a prepared fork that already contains them.
-
-These customizations are only for Loop 3.2.x:
-
-* Some were added to the released version of Loop 3.2.x in a fork of LoopWorkspace for your convenience, [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches)
-* This will not be available for the next release
-* These are not compatible with the dev branch
+If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method).
 
 ### Open a Terminal in LoopWorkspace Folder
 
@@ -834,17 +828,17 @@ Although special versions of Custom Type One LoopPatches are supplied via the Cu
 ## Libre Support for Loop 3.2.x Code
 
 !!! tip "Libre included in dev branch"
-    Libre support is now included in dev branch.
+    Libre support is now included in dev branch, which will soon be released as Loop 3.4.
 
     If you are willing to [build Loop-dev](../version/build-dev.md), you do not need any of these customizations to use a compatible Libre sensor.
 
 ### Add Libre App to Loop Phone
 
-This method only works for Loop 3.2.x and only for some Libre sensors. The US versions for Libre 2 cannot be read with an iPhone.
+LibreTransmitter for Loop is already included in the dev branch. [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop). If you [Build Loop-dev](../version/build-dev.md), you do not need to add a Libre app to your phone.
 
-There are several options for code that will read the raw Libre values and convert them into glucose readings. You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
+You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
 
-These are the Libre iOS app options.
+These are Libre iOS app options that work with Loop 3.2.x. In other words, you install one of these CGM apps on your phone **and** modify Loop 3.2.x to interface with the CGM app using a shared App Group.
 
 * xDrip4iOS: [Documentation](https://xdrip4ios.readthedocs.io/en/latest/)
     * Check to see if your sensor is [compatible](https://xdrip4ios.readthedocs.io/en/latest/#compatible-sensors)
@@ -855,14 +849,12 @@ These are the Libre iOS app options.
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
         * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select GlucoseDirect
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
-* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-    * LibreTransmitter is incorporated into Loop directly, so no separate app is required
-    * Refer to [LibreTransmitter](#libretransmitter)
-    * This is included in Loop-dev: see [LoopDocs: Building Loop dev](../version/build-dev.md) and will be standard with Loop 3.4 when it is released
 
 ### Modify Loop to use Libre
 
-The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches) version of Loop 3.2.2 has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below. This option will not be available with Loop 3.4 is released.
+These customizations are only for Loop 3.2.x. They do not work for the dev branch, soon to be released as Loop 3.4.
+
+The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches) version of Loop 3.2.2 has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below.
 
 For your selected app to read the Libre, you must also add a client to Loop 3.2.x to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.2.x.
 
@@ -890,10 +882,10 @@ LibreTransmitter is included in Loop dev and will be in Loop 3.4 when it is rele
 
 The released code of Loop 3 (3.0.0 through 3.2.2) allows Loop to run at higher rates of CGM updates. One consequence of this can be increased usage of pump batteries. This can contribute to pod faults with Eros pods or even DASH pods when using a Libre sensor with 1-minute CGM updates. Medtronic pumps are very unhappy with faster Loop cycles and should not be subjected to this.
 
-This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list).
+This modification limits the period for Loop cycles to 4.2 minutes or longer. See also [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list).
 
 !!! important "If your CGM updates at 1-minute rates, please add this customization"
-    This code is consistent with the code currently in the dev branch, soon to be released as Loop 3.4.
+    This customization is consistent with the code currently in the dev branch, soon to be released as Loop 3.4.
 
     This is only needed for Loop 3.2.2 and earlier versions.
 
