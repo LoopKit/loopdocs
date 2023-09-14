@@ -90,8 +90,6 @@ With the release of Loop 3, the build process is different and simpler
 
 * Please read each step as if you are a new builder
 * Don't assume you know what you are doing
-* [FreeAPS](https://www.loopandlearn.org/freeapsdoc) is no longer supported by the Build Select Script
-* [Loop 3 with Patches](https://www.loopandlearn.org/main-lnl-patches) is provided instead
 
 These instructions show each step needed to download Loop using the Build Select Script.
 
@@ -124,19 +122,9 @@ You will be informed that you are downloading open source software. Type `1` and
 ![open-source warning](img/bss-open-source-warning.svg){width="700"}
 {align="center"}
 
-Next you are asked which version of Loop you would like to build. Type 1 and return to build Loop (as shown in the graphic below) or 2 for the fork of Loop with added Libre CGM options, CustomTypeOne patches and a custom logo.
+The next screen informs you of what you will be downloading. Type `1` and return to begin the download or `2` to return to the main menu.
 
-!!! tip "Libre included in dev branch"
-    Libre support is now included in dev branch.
-
-    If you are willing to [build Loop-dev](../version/build-dev.md), you do not need Loop with Patches to use a compatible Libre sensor.
-
-!!! important "Changes with Loop 3.4"
-    The next release of Loop will be called 3.4. When that release happens, the only option will be to build Loop.
-    
-    Loop with Patches will not be updated and will not appear in the Build Select Script.
-
-![choose which Loop to build](img/bss-03-choose-fork.svg){width="700"}
+![agree to the download](img/bss-03-download.svg){width="700"}
 {align="center"}
 
 ### Wait for Download to Complete
