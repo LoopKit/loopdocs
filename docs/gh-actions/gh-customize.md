@@ -142,10 +142,10 @@ When you fork a repository, the default branch is the one that is forked. That i
 | LoopKit/OmniBLE | dev |
 | LoopKit/OmniKit | main |
 
-!!! warning "Loop with LnL Patches"
-    Some Loop users build with the loopnlearn version of LoopWorkspace using the [main_lnl_patches](https://www.loopandlearn.org/main-lnl-patches) branch. Initially, this process involved making your LoopWorkspace fork from loopnlearn instead of LoopKit. You have the option of deleting that fork and starting over with LoopKit, adding your 6 Secrets to your new fork of LoopWorkspace and apply those same patches in the build-loop.yml file of your new fork, see [Loop and Learn: *GitHub* Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code#add-lnl-patches).
-
-    The process for creating your own customizations is the same as those using the released code.
+!!! warning "Your fork should be from LoopKit/LoopWorkspace"
+    There was a different source for LoopWorkspace that had some customizations already built it. Please do not use this.
+    
+    If your LoopWorkspace fork did not come from LoopKit/LoopWorkspace, then delete your existing fork and make a new one. See [Already Have LoopWorkspace](gh-first-time.md#already-have-loopworkspace).
 
 ## Edit Module in *GitHub*
 
