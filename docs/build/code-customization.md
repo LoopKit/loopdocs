@@ -79,17 +79,17 @@ If you use the GitHub Build Method, these build-time features can be added to yo
 
 If you use the Mac-Xcode Build Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
 
-These flags are always upper case with underscore separating words for clarity. If you have more than one flag, they are separated by a space. Do not enter a return between selections - Xcode will word-wrap the line for clarity, but all values need to be on a single line.
+These flags are always upper case with underscore separating words for clarity, for example `MY_EXAMPLE_FLAG`. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. Xcode will automatically word-wrap the line for clarity. All values need to be on a single line.
 
 !!! question "New Instructions"
     The instructions are more robust than earlier instructions that had you editing a line instead of adding new ones.
 
-Copy the text below, add it to the end of your LoopConfigOverride.xcconfig file and then insert the desired flags in place of `{your-features-here}`. If you want more than one flag, separate them by a space.
+Copy the text below, add it to the end of your LoopConfigOverride.xcconfig file and then insert the desired flags in place of `MY_EXAMPLE_FLAG`. If you want more than one flag, separate them by a space.
 
 ``` { .txt .copy title="Lines to add to end of file" }
 
 // Add Build-Time features to compilation conditions
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) {your-features-here}
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) MY_EXAMPLE_FLAG
 ```
 
 _Code Before Modification_
@@ -819,7 +819,7 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 **If you do not already use this set of customizations, please do not start.**
 
-Several items were consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#custom).
+Several items were consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#custom). This script can be used with either Mac-Xcode or GitHub Browser build methods.
 
 Please read the documentation and test any patch that you enable. These patches don't have the nice guardrails found in Loop 3 and must be configured at the iOS Settings, Loop interface. They cannot be adjusted inside the Loop app.
 
