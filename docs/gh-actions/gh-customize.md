@@ -84,6 +84,19 @@ In the next sections, the exact process for making changes will be documented. B
 
 Later, you will use information from your fork and the patch-# branches to create your customizations. (Suggestion - use same file as your Secrets, or at least keep the customization file in the same folder). Details are found at the [Prepare the Customizations](#prepare-the-customizations) section.
 
+### Error Committing Your Changes
+
+What should you do if you see the message:
+
+* `There was an error committing your changes: File could not be edited`
+
+This is fairly rare, but it can happen. A user got this error when editing a file using GitHub:
+
+![GitHub screen with rejected commit](img/gh-email-error.png){width="600"}
+{align="center"}
+
+The solution was to make sure the email address in their GitHub profile was correct. See [GitHub Discussions](https://github.com/orgs/community/discussions/62507) for more information.
+
 ## Create a Fork for Selected Module
 
 Choose your link:
