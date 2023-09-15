@@ -46,6 +46,15 @@
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [*GitHub* Deploy: Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
     - **Can I still use my customizations?** Yes. [Customize with *GitHub*](gh-customize.md)
 
+## Automatic Build of Loop
+
+When you follow the directions on this page, for Loop 3.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main branch is updated.
+
+* What if I want to turn off automatic building?
+    * [Stop Building](gh-update.md#stop-building)
+* What if I want the development version and I want to adjust when it updates and/or builds?
+    * Review [Modify Automatic Building](gh-update.md#modify-automatic-building)
+
 ## Tips and Tricks
 
 This page contains fully detailed steps including graphics, which makes it incredibly long.
@@ -376,6 +385,7 @@ The free level comes with plenty of storage and compute time to build Loop.
     * Enter a name for your token, use "`FastLane Access Token`"
     * Change the Expiration selection to `No expiration`
     * Select the `workflow` `permission scope` (`repo` will be automatically selected)
+        * This step enables automatic building
     * Click "Generate token"
     * Copy the token and record it. It will be used below as `GH_PAT`
 
@@ -400,6 +410,10 @@ You must be logged into your *GitHub* account before starting this step. If you 
 
     ![request a new personal access token](img/gh-access-token.svg){width="700"}
     {align="center"}
+
+    !!! tip "What does `repo` and  `workflow` do?"
+        * `repo`: enables manual build actions
+        * `workflow`: enables `repo` and automatic build actions
 
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
