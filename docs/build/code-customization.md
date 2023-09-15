@@ -854,7 +854,7 @@ These are Libre iOS app options that work with Loop 3.2.x. In other words, you i
 
 These customizations are only for Loop 3.2.x. They do not work for the dev branch, soon to be released as Loop 3.4.
 
-The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches) version of Loop 3.2.2 has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below.
+The [Loop and Learn: Loop with Patches](https://www.loopandlearn.org/main-lnl-patches/) version of Loop 3.2.2 has both xDrip4iOS and GlucoseDirect clients. If you choose to add them yourself and not use that fork, then follow the steps below.
 
 For your selected app to read the Libre, you must also add a client to Loop 3.2.x to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.2.x.
 
