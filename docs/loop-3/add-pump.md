@@ -186,6 +186,14 @@ The final step is to connect your Medtronic pump to Loop.
             - Delete the simulator
         - Try again
 
+#### Bolus in Progress
+
+If you get an error `Bolus in progress` on the pump when trying to connect, you probably need to rewind and load insulin into the reservoir.
+
+If the pump has alerted that it is out of insulin, you cannot pair to Loop as a new pump.
+
+#### Final steps
+
 Once you have successfully connected to the Medtronic pump, click on `Continue`:
 
 - You will then be presented with two more screens, click `Continue` for each
