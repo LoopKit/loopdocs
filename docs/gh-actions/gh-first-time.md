@@ -654,6 +654,7 @@ Refer to the graphic below for the numbered steps:
 1. On the left side, click on 1. <code>Validate Secrets</code>
 1. On the right side, click `Run Workflow` to show a drop-down menu
     * You will see your default branch (typically this is `main`)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says `Run workflow`.
 
     ![add identifiers using github actions](img/action-01-validate-secrets.svg){width="700"}
@@ -666,9 +667,6 @@ The `Validate Secrets` <span class=notranslate>Action</span> should succeed or f
     * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
     * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
-
-![graphic showing a success and a failure for a GitHub Validate Secrets action](img/action-result.svg){width="700"}
-{align="center"}
 
 ## <code>Add Identifiers</code>
 
@@ -685,8 +683,8 @@ Refer to the graphic below for the numbered steps:
 1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on 2. <code>Add Identifiers</code>
 1. On the right side, click `Run Workflow` to show a drop-down menu
-    * You will see your default branch (should be `main`)
-    * If your default branch is not `main`, review [*GitHub* Early Adopters](gh-update.md#github-early-adopters)
+    * You will see your default branch (typically this is `main`)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says `Run workflow`.
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -699,9 +697,6 @@ The `Add Identifier` <span class=notranslate>Action</span> should succeed or fai
     * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
-
-![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
-{align="center"}
 
 ## Configure Identifiers for Loop
 
@@ -973,8 +968,8 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on "`Create Certificates`"
 1. On the right side, click "`Run Workflow`" to show a drop-down menu
-    * You will see your default branch (should be `main`)
-    * If your default branch is not `main`, review [*GitHub* Early Adopters](gh-update.md#github-early-adopters)
+    * You will see your default branch (typically `main`)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "`Run workflow`".
 
     ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
@@ -1007,8 +1002,8 @@ Refer to the graphic below for the first four steps:
 1. Click on the "`Actions`" tab of your <code>LoopWorkspace</code> repository.
 1. On the left side, click on "4. `Build Loop`".
 1. On the right side, click "`Run Workflow`" to show a drop-down menu
-    * You will see your default branch (should be `main`)
-    * If your default branch is not `main`, review [*GitHub* Early Adopters](gh-update.md#github-early-adopters)
+    * You will see your default branch (typically `main`)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "`Run workflow`".
 
     ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
