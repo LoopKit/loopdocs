@@ -216,15 +216,19 @@ The JSON file for each day are zipped into one file for that day and then the zi
 
 The time stamps within the JSON files use UTC.
 
-## App Profile
+## App Profile or TestFlight
 
-The Profile Expiration is reported at the bottom of the Settings display along with the number of days remaining before Loop stops working.
+At the bottom of the Settings display is a section labeled either App Profile or TestFlight. This provides the number of days remaining before Loop stops working along with the date and time at which the `"Loop" is No Longer Available` or `"Loop" Beta has Expired` message appears and Loop refuses to open. (Prior to Loop 3.4, the TestFlight warning was not available.)
 
-The link for `How to update (LoopDocs)` is provided for Mac-Xcode build.
+The link for `How to update (LoopDocs)` is provided for Mac-Xcode build or GitHub build as appropriate.
 
 In fine print, the exact date and time of the expiration is reported in your local time zone.
 
 ![display of profile expiration appropriate for Mac-Xcode build method](img/app-profile.png){width="350"}
 {align="center"}
 
-The Profile Expiration is different for GitHub Browser Build method. A feature request is in place (but not yet added to the code) to report the TestFlight expiration for that build method.
+
+![display of profile expiration appropriate for github build method using testflight](img/testflight-expire.png){width="350"}
+{align="center"}
+
+

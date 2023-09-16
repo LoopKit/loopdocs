@@ -143,20 +143,13 @@ Option 2: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-
 * In this case, when you look at the <span translate="no">TestFlight</span> app on your phone, the app should have installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
-## <span translate="no">GitHub</span> Build Details
+## <span translate="no">TestFlight</span> Expiration Warning
 
-!!! note "To Do"
-    Update this section know the TestFlight information is displayed on Settings screen.
+The app expiration notification was updated to detect whether the build was uploaded through <span translate="no">TestFlight</span>, which implies a 90-day limit until the app expires. This is for <span translate="no">Loop</span> version 3.4 and later.
 
-In the Loop app, once installed on your phone, tap on `Settings -> Support -> Issue Report`. The graphic below shows an example of the Build Details included in the report.
+The usual [<span translate="no">Loop</span> expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
 
-* The `profileExpiration` listed here is irrelevant - the app expires when the <span translate="no">TestFlight</span> expiration indicates
-    * Pro Tip: Add a calender reminder for your next build
-* An app built with <span translate="no">GitHub</span> will display a `sourceRoot` that starts with `/Users/runner/work/LoopWorkspace`
-    * The `buildDateString` is when the app was built and transferred to <span translate="no">TestFlight</span>, not when it was installed on your phone
-    * You can use 90 days from this date, as well as the Expires in ## Days on the <span translate="no">TestFlight</span> app, to know when you need to rebuild
-
-![graphic indicating build details](img/gh-build-details.png){width="300"}
+![expiration warning on settings for testflight example](../version/img/expiration-warning-testflight.svg){width="300"}
 {align="center"}
 
 ## <span translate="no">GitHub Token</span>

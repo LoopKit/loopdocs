@@ -20,12 +20,16 @@ When you tap on the Learn More button, another screen appears. The only option a
 
 Profile expiration notification was added with Loop 2.2.5.
 
+With Loop 3.4 and later, apps installed using GitHub Browser Build method report and alert the user for the TestFlight expiration date. Instead of Profile Expires Soon, the modal alert with say "TestFlight Expires Soon". There is no change to the alert system for apps built with Mac-Xcode method.
+
 ![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="350"}
 {align="center"}
 
-* When fewer than 20 days remain until profile expiration, you'll get a notification when you open the app but no more frequently than every 2 days
+* When fewer than 20 days remain until profile or testflight expiration, you'll get a notification when you open the app but no more frequently than every 2 days
 * When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most
-* Simply tap on the `More Info` button of the notification to go directly to the [LoopDocs Updating](../../build/updating.md) page.
+* Simply tap on the `More Info` button of the notification for more information
+    * Mac-Xcode: [LoopDocs Updating](../../build/updating.md)
+    * GitHub: [LoopDocs GitHub Update](../../gh-actions/gh-update.md)
 
 ### Free (7-day) Loop App Expiration Notification
 
@@ -34,9 +38,15 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Loop App Expiration Date
 
+#### For Loop 3.4 and newer versions
+
+The testflight expiration data is provided, instead of the profile expiration data, when the app was built using GitHub Browser Build method. When the app was built with Mac-Xcode, the date shown continues to be the profile experation date.
+
+See the [App Profile or TestFlight](../../loop-3/settings.md#app-profile-or-testflight) section at the bottom of the Loop Settings screen.
+
 #### For Loop 3.2.x and newer versions
 
-The expiration date is found in the [App Profile](../../loop-3/settings.md#app-profile) section at the bottom of the Loop Settings screen.
+The provisioning profile expiration date is found in the [App Profile](../../loop-3/settings.md#app-profile-or-testflight) section at the bottom of the Loop Settings screen. This is useful for Mac-Xcode built apps, but may be misleading for GitHub Broswer build method.
 
 #### For Loop 2.2.5 through Loop 3.0
 
