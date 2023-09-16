@@ -3578,7 +3578,7 @@
 </li>
 </ul>
 <p>The <code>workflows</code> are now displayed on the left side as shown in the graphic below. (Dismiss the <code>Actions Enabled</code> message using the <code>X</code> near the upper right side if it appears).</p>
-<p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.png" width="700" /></p>
+<p align="center"><img alt="workflows displayed" src="../img/gh-workflows-enabled.svg" width="700" /></p>
 <h2 id="validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>
@@ -3596,10 +3596,29 @@
 <ul>
 <li><a href="#first-use-of-actions-tab"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5v14l-7-7M6 5v14H4V5m9 0v14l-7-7"/></svg></span></span></a>If you have never used <code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code> on this <abbr title="contains project files and each file's revision history">repository</abbr> before, and need instructions (in addition to what <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> shows), please back up to <a href="#first-use-of-actions-tab">First use of <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Tab</a>.</li>
 </ul>
-<p>Click on <code>1. Validate Secrets</code> to check that the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> you added are correct. Some things cannot be validated at this point, but most can and a relatively clear error message is provided.</p>
-<p>Note - this section is missing detailed instructions (for now):</p>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the <code>Actions</code> tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on 1. <code>Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
+<li>On the right side, click <code>Run Workflow</code> to show a drop-down menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says <code>Run workflow</code>.</p>
+<p align="center"><img alt="add identifiers using github actions" src="../img/action-01-validate-secrets.svg" width="700" /></p>
+</li>
+</ol>
+<p>The <code>Validate Secrets</code> <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
 <ul>
-<li>If you need detailed instructions, review <a href="#add-identifiers"><code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></a>, but select the first action: "1 Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>"</li>
+<li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
+<li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
+<li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells how to view the file needed to diagnose your problem.</li>
+<li><a href="../gh-errors/#action-validate-secrets-errors">Action: Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Errors</a> tells you what to search for in the file</li>
+<li>Resolve the error and repeat the Action: <a href="#validate-secrets">Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
+</ul>
+</li>
 </ul>
 <h2 id="add-identifiers"><code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
@@ -3617,8 +3636,8 @@
 <li>Click on the <code>Actions</code> tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on 2. <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
 <li>On the right side, click <code>Run Workflow</code> to show a drop-down menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Early Adopters</a></li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
 <li>
@@ -3626,7 +3645,7 @@
 <p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
 </li>
 </ol>
-<p>The <code>Add Identifier</code> <span class=notranslate>Action</span> should succeed or fail in a few minutes.</p>
+<p>The <code>Add Identifier</code> <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
 <ul>
 <li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
 <li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
@@ -3636,7 +3655,6 @@
 </ul>
 </li>
 </ul>
-<p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some steps can be skipped if you previously built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <code>Mac-Xcode</code>.</p>
 <p>Please read carefully to avoid confusion.</p>
@@ -3960,8 +3978,8 @@
 <li>Click on the "<code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code>" tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "<code>Create Certificates</code>"</li>
 <li>On the right side, click "<code>Run Workflow</code>" to show a drop-down menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Early Adopters</a></li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
 <li>
@@ -4004,8 +4022,8 @@
 <li>Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>On the left side, click on "4. <code>Build Loop</code>".</li>
 <li>On the right side, click "<code>Run Workflow</code>" to show a drop-down menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not <code>main</code>, review <a href="../gh-update/#github-early-adopters"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Early Adopters</a></li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
 <li>

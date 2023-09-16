@@ -2614,14 +2614,31 @@
 <li>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></li>
 </ul>
 <p>The workflows are now displayed: look at the list on the left side similar to that shown in the graphic below. (You can dismiss the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> Enabled message using the X near the upper right side if it appears).</p>
+<ul>
+<li>The graphic below is an example from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></li>
+</ul>
 <p>This step validates most of your six <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and provides error messages if it detects an issue with one or more.</p>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your <span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">Loop Follow</abbr></span> or <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></span> <abbr title="contains project files and each file's revision history">repository</abbr> and enable workflows if needed</li>
-<li>On the left side, select "1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>".</li>
-<li>On the right side, click "Run Workflow", and tap the green <code>Run workflow</code> button.</li>
-<li>Wait, and within a minute or two you should see a green checkmark indicating the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> succeeded.</li>
-<li>The <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.</li>
+<li>On the left side, click on 1. <code>Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
+<li>On the right side, click <code>Run Workflow</code> to show a drop-down menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for LoopFollow, <code>dev</code> for LoopCaregiver)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
+</ul>
+</li>
+<li>Tap the green button that says <code>Run workflow</code>.</li>
 </ol>
+<p align="center"><img alt="add identifiers using github actions" src="../img/action-01-validate-secrets.svg" width="700" /></p>
+<p>The <code>Validate Secrets</code> <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
+<ul>
+<li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
+<li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
+<li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells how to view the file needed to diagnose your problem.</li>
+<li><a href="../gh-errors/#action-validate-secrets-errors">Action: Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Errors</a> tells you what to search for in the file</li>
+<li>Resolve the error and repeat the Action: <a href="#validate-secrets">Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
+</ul>
+</li>
+</ul>
 <h2 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
 <ul>
@@ -2632,8 +2649,8 @@
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for LoopFollow, <code>dev</code> for LoopCaregiver)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
 <li>
@@ -2651,7 +2668,6 @@
 </ul>
 </li>
 </ul>
-<p align="center"><img alt="graphic showing a success and a failure for a GitHub Add Identifiers action" src="../img/action-result.svg" width="700" /></p>
 <h2 id="review-app-identifier">Review App Identifier<a class="headerlink" href="#review-app-identifier" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the apple developer site.</p>
 <p>After successfully performing the Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Action, you will see the identifier for your app with a Name and Bundle ID matching that in the table below. You will see your unique <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> embedded in the identifier. (If you previously built this App with <abbr title="program used to build an app">Xcode</abbr>, the name may start with XC but the ending should match.)</p>
@@ -2743,8 +2759,8 @@
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your Repository <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Create Certificates"</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (should be <code>main</code>)</li>
-<li>If you have additional branches, you can change the <abbr title="version of code within a single repository or workspace repository">branch</abbr>, for example, select <code>dev</code> for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for LoopFollow, <code>dev</code> for LoopCaregiver)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
 <li>
@@ -2768,7 +2784,8 @@
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your Repository <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>On the left side, click on "Build App Name".</li>
 <li>On the right side, click "Run Workflow" to show a drop-down menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> for this app</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for LoopFollow, <code>dev</code> for LoopCaregiver)</li>
+<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
 <li>
