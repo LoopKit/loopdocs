@@ -92,13 +92,27 @@ Near the top middle of your Repository fork, click on the "Actions" tab.
 
 The workflows are now displayed: look at the list on the left side similar to that shown in the graphic below. (You can dismiss the Actions Enabled message using the X near the upper right side if it appears).
 
+* The graphic below is an example from Loop, your screen will show your app and associated repository
+
 This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
 
 1. Click on the "Actions" tab of your <span translate="no">Loop Follow</span> or <span translate="no">Loop Caregiver</span> repository and enable workflows if needed
-1. On the left side, select "1. Validate Secrets".
-1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
-1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
-1. The workflow will check if the required secrets are added and that they are correctly formatted. If errors are detected, please check the run log for details.
+1. On the left side, click on 1. <code>Validate Secrets</code>
+1. On the right side, click `Run Workflow` to show a drop-down menu
+    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
+    * You can select a different branch, but typically, you run the default
+1. Tap the green button that says `Run workflow`.
+
+![add identifiers using github actions](img/action-01-validate-secrets.svg){width="700"}
+{align="center"}
+
+The `Validate Secrets` <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+
+* If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
+* If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
+    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
+    * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
+    * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
 
 ## Add Identifiers
 
@@ -111,8 +125,8 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "Actions" tab of your repository
 1. On the left side, click on "Add Identifiers"
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * You will see your default branch (should be `main`)
-    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
+    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -125,9 +139,6 @@ The `Add Identifier` <span class=notranslate>Action</span> should succeed or fai
     * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
-
-![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
-{align="center"}
 
 ## Review App Identifier
 
@@ -192,8 +203,8 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "Actions" tab of your Repository repository
 1. On the left side, click on "Create Certificates"
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * You will see your default branch (should be `main`)
-    * If you have additional branches, you can change the branch, for example, select `dev` for the development branch
+    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
 
     ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
@@ -213,7 +224,8 @@ Refer to the graphic below for the first four steps:
 1. Click on the "Actions" tab of your Repository repository.
 1. On the left side, click on "Build App Name".
 1. On the right side, click "Run Workflow" to show a drop-down menu
-    * You will see your default branch for this app
+    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
+    * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
 
     ![build loop using github actions](img/action-04-build-loop.svg){width="700"}

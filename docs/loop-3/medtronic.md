@@ -35,7 +35,7 @@ If you request a manual bolus with Loop while the pump is suspended, Loop resume
 
 You select [insulin type](add-pump.md#insulin-type) when connecting to a new Medtronic pump.
 
-If you install Loop 3 over Loop 2 with the pump already configured, be sure to set the Insulin Type on the pump settings screen. If not insulin type is set, you will get red loops.
+If you install Loop 3 over Loop 2 with the pump already configured, be sure to set the Insulin Type on the pump settings screen. If no insulin type is set, you will get red loops.
 
 Use this row if you switch to a different type of insulin.
 
@@ -66,6 +66,10 @@ This allows access to the [RileyLink](../operation/loop-settings/rileylink.md) s
 ### Pump Battery Remaining
 
 Loop uses the Pump Battery Type to estimate Pump Battery Remaining. For information about the method, review [MDT Pump Battery](../operation/features/battery.md).
+
+### Pump Time
+
+Loop keeps the pump time up to date with the phone time automatically. As shown in the graphic in the next section, Loop allows differences in time zone. The user can decide when and if to modify the pump time zone, if different from the phone time zone. If the Pump Time shows as yellow, then the time zones do not match.
 
 ### Change Time Zone
 
