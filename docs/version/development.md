@@ -42,7 +42,7 @@ The simulators for the Pump and CGM for dev show a new format when first selecte
 
 Two algorithm experiments have been added to dev. These are <span translate="no">Glucose Based Partial Application</span> and <span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
-![algorithm experiments](img/algorithm-experiments.svg){width="650"}
+![algorithm experiments](../loop-3/img/algorithm-experiments.svg){width="650"}
 {align="center"}
 
 ### <span translate="no">Glucose Based Partial Application</span> (<code>GBPA</code>):
@@ -121,7 +121,7 @@ Note that the Momemtum term does not just add to the other effects; it is actual
 
 The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays-v3.md#predicted-glucose-chart) is updated when <code>IRC</code> is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the <code>IRC</code> and <code>RC</code> calculations.
 
-![predicted glucose retrospective section with irc disabled and enabled](img/glucose-details-irc.svg){width="400"}
+![predicted glucose retrospective section with irc disabled and enabled](../loop-3/img/glucose-details-irc.svg){width="400"}
 {align="center"}
 
 The <code>IRC</code> term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [Important points about <code>IRC</code>](#important-points-about-irc).
@@ -162,7 +162,7 @@ This feature allows you to save Favorite Foods.
 
 A new row on the <span translate="no">Loop</span> app Settings screen, see graphic below, provides access to create and edit your <span translate="no">Favorite Foods</span>.
 
-![favorite foods feature](img/favorite-foods.svg){width="300"}
+![favorite foods feature](../loop-3/img/favorite-foods.svg){width="300"}
 {align="center"}
 
 In the example meal entry shown below:
@@ -172,7 +172,7 @@ In the example meal entry shown below:
 
 At this point the meal can be saved by tapping the Continue button, or the user can modify the time (typical) or any other of the carb entry rows before tapping Continue.
 
-![carb entry with favorite foods feature](img/favorite-foods-carb-entry.svg){width="500"}
+![carb entry with favorite foods feature](../loop-3/img/favorite-foods-carb-entry.svg){width="500"}
 {align="center"}
 
 ### <span translate="no">TestFlight</span> Expiration Warning
