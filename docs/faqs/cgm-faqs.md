@@ -1,35 +1,36 @@
-## What CGMs does Loop work with?
+## What CGMs can I use with Loop?
 
-The next release of Loop and the current [Loop-dev branch](../version/build-dev.md) includes Libre support in addition to the CGM listed below.
+The following CGM are supported by some or all versions of Loop:
 
-Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps.
+* All Dexcom CGM (Loop 3 and later)
+* Some Libre CGM (Loop 3.4 and later)
+* Medtronic Enlite CGM when used with a compatible pump
+* Remote CGM (requires internet access
+    * Dexcom Share
+    * Nightscout as CGM (Loop 3 and later)
 
-Libre Support (for some Libre sensors):
+See also: [Compatible CGM](../build/cgm.md) page.
 
-* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches/) 
+## Dexcom FAQ
 
-Loop 2.2.x supports Dexcom G4 with share, G5, G6, Dexcom ONE, Dexcom Share and the Medtronic CGM systems compatible with Looping pumps.
+### Do I need wait for a new Dexcom sensor session to start Loop?
 
-There are more details on the [Compatible CGM](../build/cgm.md) page.
+No. There's no need to do anything special with regards to your CGM session when starting or ending use with Loop.
 
-## Do I need wait for a new sensor session to start Loop?
-
-No, you can start Looping mid-sensor session. There's no need to do anything special with regards to your CGM session when starting or ending Loop use.
-
-## What do I do when sensor is in warm-up?
+### What do I do when Dexcom sensor is in warm-up?
 
 Loop will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
 
-* With Loop 3, a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
-
-* With Loop 2.2.x or Loop 3, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly
-
 With no recent glucose readings, your pump returns to the scheduled basal delivery (within 30 min or less).
 
-Loop continues to accept manual bolus commands. With Loop 3 only, [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
+Loop continues to accept manual bolus commands. 
 
-## What do I do when I switch Dexcom transmitters?
+Loop 3 only:
+
+* a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
+* [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can be commanded during warmup if desired
+
+### What do I do when I switch Dexcom transmitters?
 
 When you change transmitters (prior to Dexcom G7), you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:
 
@@ -83,29 +84,20 @@ sequenceDiagram
     deactivate dexcom
 ```
 
+## Libre CGM
 
-## Can I use Libre sensors with a reader like Miao Miao?
+### Can I use Libre sensors with a reader like Miao Miao?
 
-If you use Loop dev code, then any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) can be used with Loop.
+Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop).
 
 See [What CGMs does Loop work with?](#what-cgms-does-loop-work-with).
+
+## Can Loop read CGM data from Nightscout?
+
+Loop 3.0.0 and later can read CGM data from Nightscout. This requires an active internet or cellular connection. After 15 minutes with no connection, the glucose data is marked as stale.
 
 ## Can I use Eversense?
 
 Eversense does not write to Apple Health. The BT communications protocol been not been reverse engineered as was done with Dexcom. There is a method to upload Eversense to Nightscout using an Android phone.
 
-With Loop 3, you can use Nightscout as a CGM to Loop with Eversense, but that requires internet access.
-
-## Can Loop read CGM data from Nightscout?
-
-The released version of Loop can read CGM data from Nightscout.
-
-The older Loop 2.2.x does not read CGM data from Nightscout.
-
-## What other CGM apps can be used to Loop?
-
-If you are willing to build a development version of Loop, the dev branch incorporates [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md) into the Loop app itself. Please read about [Loop Development](../version/development.md) before [building dev](../version/build-dev.md) and using the dev app.
-
-You can add xDrip4iOS and GlucoseDirect as a CGM option to Loop by applying a code customization. This customization is included in Loop with Patches, which is offered as an option in the [Build Select Script](https://www.loopandlearn.org/build-select/).
-
-Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions.
+Loop 3 supports Nightscout as a Remote CGM to Loop with Eversense, but that requires internet access.
