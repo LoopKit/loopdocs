@@ -45,7 +45,7 @@ Two algorithm experiments have been added to dev. These are &nbsp;<span translat
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
 
-###<span translate="no">Glucose Based Partial Application</span>&nbsp; (<code>GBPA</code>):
+### <span translate="no">Glucose Based Partial Application</span>&nbsp; (<code>GBPA</code>):
 
 * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
 * It is only used when <code>Automatic Bolus</code> (AB) is selected for <code>Dosing Strategy</code>
@@ -97,13 +97,13 @@ The 20% and 40% application factor columns did not reach 1 U in 30 minutes becau
 
 The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code>GBPA</code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code>Temp Basal Only</code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
 
-###<span translate="no">Integral Retrospective Correction</span>&nbsp; (<code>IRC</code>):
+### <span translate="no">Integral Retrospective Correction</span>&nbsp; (<code>IRC</code>):
 
 * Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
     * This was tested in a few forks but not included into dev until recently
     * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
 * Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
-* <span translate="no">Integral Retrospective Correction</span>, when enabled:
+* &nbsp;<span translate="no">Integral Retrospective Correction</span>, when enabled:
     * changes the Loop prediction model and thus can affect the recommended dose
     * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
 
@@ -175,7 +175,7 @@ At this point the meal can be saved by tapping the Continue button, or the user 
 ![carb entry with favorite foods feature](img/favorite-foods-carb-entry.svg){width="500"}
 {align="center"}
 
-###<span translate="no">TestFlight</span>&nbsp; Expiration Warning
+### <span translate="no">TestFlight</span>&nbsp; Expiration Warning
 
 The &nbsp;<span translate="no">Loop</span>&nbsp; app has been updated to detect whether the build was uploaded through &nbsp;<span translate="no">TestFlight</span>, which implies a 90-day limit until the app expires.
 
@@ -184,7 +184,7 @@ The usual [<span translate="no">Loop</span>&nbsp; expiration notification system
 ![expiration warning on settings for testflight example](img/expiration-warning-testflight.svg){width="300"}
 {align="center"}
 
-###<span translate="no">GitHub Browser Build</span>&nbsp; Updates
+### <span translate="no">GitHub Browser Build</span>&nbsp; Updates
 
 The dev branch has several updates merged that make it easier to find errors in configuration and that make the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; automatic.
 
