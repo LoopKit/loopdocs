@@ -40,7 +40,11 @@ If you find this confusing, read how to [Think Like a Loop](https://loopkit.gith
 
 ## Dosing Strategy
 
-This row gives you the ability to select Dosing Strategy. The Dosing Strategy only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the Dosing Strategy label. The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.
+This row gives you the ability to select Dosing Strategy. The Dosing Strategy only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the Dosing Strategy label.
+
+### Temp Basal Only
+
+The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.
 
 ![Dosing Strategy selection screen](img/loop-3-setting-dosing-strategy.svg){width="500"}
 {align="center"}
@@ -64,6 +68,8 @@ Regardless of the Dosing Strategy selected, when glucose is below target or pred
 When you first start Loop, we encourage you to leave Dosing Strategy set to Temp Basal Only until you are sure your settings are dialed in.
 
 The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a CGM reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.
+
+With Loop 3.4.0 and later versions, you have the option of using Automatic Bolus with [Glucose Based Partial Application (GBPA)](features.md#glucose-based-partial-application-gbpa). This feature is reached through the [Algorithm Experiments](#algorithm-experiments) row of the Settings screen. It modifies the percentage of the recommended dose that is supplied with each Loop cycle. Instead of being a fixed 40%, it changes from 20% when glucose is near your selected Correction Range and gradually increases to 80% when glucose reaches 200 mg/dL (11.1 mmol/L).
 
 As with all Loop versions, you can manually bolus at any time by pressing the Bolus icon in the center of Loop's Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.
 
@@ -163,7 +169,7 @@ The information about the CGM is found on the [Add or Modify CGM](add-cgm.md) pa
 
 [Favorite Foods](features.md#favorite-foods), new with Loop 3.4, can simplify meal entry if you choose to use it. You can create a Favorite Food here or on the Carb Entry screen. 
 
-Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of those icons. The standard Lollipop, Taco, Pizza icons are not sufficient to enable the Save as Favorite button.
+Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and then choosing a food emoji. The standard Lollipop, Taco, Pizza icons selected from the top level are not sufficient to enable the Save as Favorite button.
 
 ## Services
 

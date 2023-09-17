@@ -1,6 +1,7 @@
 ## New with Loop 3
 
 This page discusses some features new with Loop 3.
+
 ## Remote Carb / Bolus
 
 Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop. This requires the Loop user have a Nightscout site. Please review these pages:
@@ -11,7 +12,7 @@ Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to
 * [Remote Errors](../nightscout/remote-errors.md)
 * [<span translate="no">Loop Caregiver</span> App](../nightscout/loop-caregiver.md)
 
-## New with Loop 3.4.0
+## **New with Loop 3.4.0**
 
 ## Algorithm Experiments
 
@@ -20,10 +21,13 @@ Two algorithm experiments have been added to dev. These are <span translate="no"
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
 
-### <span translate="no">Glucose Based Partial Application</span> (<code>GBPA</code>):
+### <span translate="no">Glucose Based Partial Application</span> (<code>GBPA</code>)
 
-* Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
-* It is only used when <code>Automatic Bolus</code> (AB) is selected for <code>Dosing Strategy</code>
+??? abstract "Do you want to know more? (Click to open/close)"
+    * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
+
+<span translate="no">Glucose Based Partial Application</span> is only used when <code>Automatic Bolus</code> (AB) is selected for <code>Dosing Strategy</code>
+
 * This modification **does not affect the recommended dose**, only how quickly the recommended dose is automatically delivered
 
 When AB is selected and <code>GBPA</code> is enabled, the percentage of the recommended dose delivered per Loop cycle ranges from 20% to 80% based on glucose level and user selected correction range. (Without <code>GBPA</code> enabled, AB uses a fixed 40% percentage regardless of glucose level.)
@@ -72,15 +76,26 @@ The 20% and 40% application factor columns did not reach 1 U in 30 minutes becau
 
 The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17% of the recommended bolus each 5-minute interval. The minimum <code>GBPA</code> application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than <code>Temp Basal Only</code>, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
 
-### <span translate="no">Integral Retrospective Correction</span> (<code>IRC</code>):
+### <span translate="no">Integral Retrospective Correction</span> (<code>IRC</code>)
 
-* Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
-    * This was tested in a few forks but not included into dev until recently
-    * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
-* Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
-* <span translate="no">Integral Retrospective Correction</span>, when enabled:
-    * changes the Loop prediction model and thus can affect the recommended dose
-    * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
+??? abstract "Do you want to know more? (Click to open/close)"
+    * Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
+        * This was tested in a few forks but not included into dev until recently
+        * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+    * Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
+
+    The <code>IRC</code> term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) in Loop Issue 695 which  includes plots and equations. Some of the information in that comment is repeated below: [Important points about <code>IRC</code>](#important-points-about-irc).
+
+    If you want to look at the code for RC and IRC, examine these files found in LoopKit/LoopKit:
+
+    * RetrospectiveCorrection code: [StandardRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift)
+    * IntegralRetrospectiveCorrection code: [IntegralRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift)
+
+
+<span translate="no">Integral Retrospective Correction</span>, when enabled:
+
+* changes the Loop prediction model and thus can affect the recommended dose
+* applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
 
 Refering to the [Algorithm: Prediction](../operation/algorithm/prediction.md) page:
 
@@ -99,12 +114,7 @@ The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/
 ![predicted glucose retrospective section with irc disabled and enabled](img/glucose-details-irc.svg){width="400"}
 {align="center"}
 
-The <code>IRC</code> term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) including plots and equations. Some of the information in that comment is repeated below: [Important points about <code>IRC</code>](#important-points-about-irc).
 
-If you want to look at the code, the version (as of 14-Aug-2023) is found in LoopKit/LoopKit:
-
-* RetrospectiveCorrection code: [StandardRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/StandardRetrospectiveCorrection.swift)
-* IntegralRetrospectiveCorrection code: [IntegralRetrospectiveCorrection.swift](https://github.com/LoopKit/LoopKit/blob/675655b833bcd5aef2391c47562b57a213bfffb4/LoopKit/RetrospectiveCorrection/IntegralRetrospectiveCorrection.swift)
 
 #### Important points about <code>IRC</code>:
 
@@ -150,9 +160,9 @@ At this point the meal can be saved by tapping the Continue button, or the user 
 ![carb entry with favorite foods feature](img/favorite-foods-carb-entry.svg){width="500"}
 {align="center"}
 
-Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons are not sufficient to enable the Save as Favorite button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.
+Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons can be selected at that level, but choosing them at the top level is not sufficient to enable the Save as Favorite button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.
 
-## New with Loop 3.0.0
+## **New with Loop 3.0.0**
 
 ## Loop 3 Screens
 
