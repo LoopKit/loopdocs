@@ -12,7 +12,7 @@ The &nbsp;<span translate="no">LoopDocs</span>&nbsp; website is organized as fol
 * [Operate](../operation/loop/open-loop.md): How to use the &nbsp;<span translate="no">Loop</span>&nbsp; app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the &nbsp;<span translate="no">Loop</span>&nbsp; app
 * [Version](../version/overview-version.md): Information about &nbsp;<span translate="no">Loop</span>&nbsp; versions, code customization and development
-* [<span translate="no">Nightscout</span>](../nightscout/overview.md): &nbsp;<span translate="no">Loop</span>&nbsp;-specific &nbsp;<span translate="no">Nightscout</span>&nbsp; details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/) is an open-source cloud application used by people with diabetes and their caregivers
+* [<span translate="no">Nightscout</span>](../nightscout/overview.md): <span translate="no">Loop</span>&nbsp;-specific &nbsp;<span translate="no">Nightscout</span>&nbsp; details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/) is an open-source cloud application used by people with diabetes and their caregivers
     * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a &nbsp;<span translate="no">Loop</span>&nbsp; app using &nbsp;<span translate="no">Nightscout</span>&nbsp; and Apple Push Notifications
     * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary

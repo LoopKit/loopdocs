@@ -1,8 +1,8 @@
 ## &nbsp;<span translate="no">Loop</span>&nbsp; data is not showing in &nbsp;<span translate="no">Nightscout</span>
 
 * This is a &nbsp;<span translate="no">Loop</span>&nbsp; and/or &nbsp;<span translate="no">Nightscout</span>&nbsp; issue, not related to remote configuration
-    * Review the [LoopDocs: &nbsp;<span translate="no">Nightscout</span>&nbsp; with &nbsp;<span translate="no">Loop</span>](update-user.md) page
-    * Check out links on the [LoopDocs: &nbsp;<span translate="no">Nightscout</span>&nbsp; Troubleshooting](troubleshoot.md) page
+    * Review the [LoopDocs: <span translate="no">Nightscout</span>&nbsp; with &nbsp;<span translate="no">Loop</span>](update-user.md) page
+    * Check out links on the [LoopDocs: <span translate="no">Nightscout</span>&nbsp; Troubleshooting](troubleshoot.md) page
 * Make sure Looper's phone is connected to the internet so it can upload to &nbsp;<span translate="no">Nightscout</span>
 
 ## Improper Configuration
@@ -137,7 +137,7 @@ Mention which troubleshooting steps you have completed so we know whether to ask
 
 Once you've set up remote commands, you may encounter errors when trying to run them via &nbsp;<span translate="no">Nightscout</span>&nbsp; or iOS Shortcuts.  Below are the most common and typical solutions.
 
-1. **`Error: &nbsp;<span translate="no">Loop</span>&nbsp; notification failed: Could not find deviceToken in loopSettings`** You might see this in either &nbsp;<span translate="no">Nightscout</span>&nbsp; or Shortcuts.  The error is most commonly caused by &nbsp;<span translate="no">Loop</span>&nbsp; not pointing to the right &nbsp;<span translate="no">Nightscout</span>&nbsp; instance or you haven't yet run an override locally (with the &nbsp;<span translate="no">Loop</span>&nbsp; app) before trying to run one remotely.  
+1. **`Error: <span translate="no">Loop</span>&nbsp; notification failed: Could not find deviceToken in loopSettings`** You might see this in either &nbsp;<span translate="no">Nightscout</span>&nbsp; or Shortcuts.  The error is most commonly caused by &nbsp;<span translate="no">Loop</span>&nbsp; not pointing to the right &nbsp;<span translate="no">Nightscout</span>&nbsp; instance or you haven't yet run an override locally (with the &nbsp;<span translate="no">Loop</span>&nbsp; app) before trying to run one remotely.  
     **Solution:** Confirm the &nbsp;<span translate="no">Loop</span>&nbsp; app is pointing to the right &nbsp;<span translate="no">Nightscout</span>&nbsp; site (and there are no extra spaces or a slash (`/`) at the end, and always run an override for a few seconds in the &nbsp;<span translate="no">Loop</span>&nbsp; app before you try to run one remotely.
 2. **`Error: cannot POST/api/v2/notifications/loop`** You might see this in iOS Shortcuts.  This means &nbsp;<span translate="no">Nightscout</span>&nbsp; is not updated correctly and you are running a version of &nbsp;<span translate="no">Nightscout</span>&nbsp; that doesn't yet support remote overrides.   
    **Solution:** Follow the [Remote Configuration](remote-config.md) documentation.

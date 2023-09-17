@@ -35,7 +35,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: &nbsp;<span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
+| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
 |Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
 
 
