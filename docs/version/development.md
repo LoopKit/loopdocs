@@ -12,7 +12,13 @@ Please read this entire page before using any version of Loop other than the rel
 
 ## Updates in dev
 
-This section is an early look at what has been added to dev since Loop 3.2.2 was released and will probably be in Loop 3.4. After the release, this content will be moved to the appropriate documentation section with the links below updated to the final location.
+This section is an early look at major features added to dev since Loop 3.4 was released.
+
+Right now it is empty.
+
+## Updates from 3.2.2 to 3.4.0
+
+This section is the old [Updates in dev](development.md#updates-in-dev) repurposed with links to documentation for new features added after Loop 3.2.2 was released that were added to Loop 3.4.
 
 * [Support for Libre Sensors](#support-for-libre-sensors)
 * [Modified Simulator Interface](#modified-simulator-interface)
