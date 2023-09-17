@@ -18,7 +18,7 @@ Remote commands to the &nbsp;<span translate="no">Loop</span>&nbsp; phone go thr
 
     If your &nbsp;<span translate="no">Nightscout</span>&nbsp; site is an older version, you should limit your remote commands to `Overrides`, even with &nbsp;<span translate="no">Loop 3</span>.
 
-!!! tip "&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;"
+!!! tip "&nbsp;<span translate="no">Loop Caregiver</span>"
     There is a new companion app, [<span translate="no">Loop Caregiver</span>](loop-caregiver.md) that makes remote commands and reviewing status of your looper much easier.
 
 ## How does this work?

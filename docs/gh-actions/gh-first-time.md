@@ -322,7 +322,7 @@ The `Keys` screen appears again with content similar to the graphic below; the k
 
 ### Do Not Confuse Your Keys
 
-!!! important "<span class="loop-big">`API Key`</span>&nbsp; vs <span class="loop-big">`APN Key`</span>&nbsp;"
+!!! important "<span class="loop-big">`API Key`</span>&nbsp; vs <span class="loop-big">`APN Key`</span>"
     If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
     The <code>Secrets</code> for building with *GitHub* use the <span class="loop-bigger">`API Key`</span>.
