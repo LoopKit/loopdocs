@@ -15,7 +15,7 @@ After you complete the configuration, read the entire [Remote Commands](remote-c
 
 !!! warning "Remote &nbsp;<span translate="no">Nightscout</span>&nbsp; Interface Caveats"
     * Must use a paid &nbsp;<span translate="no">Apple Developer</span>&nbsp; account to build &nbsp;<span translate="no">Loop</span>
-        * &nbsp;<span translate="no">Apple Push Notifications</span>&nbsp; (APN) service is not available with a Free account
+        * <span translate="no">Apple Push Notifications</span>&nbsp; (APN) service is not available with a Free account
     * When you build &nbsp;<span translate="no">Loop</span>, the required *APN* information is tied to your Apple Developer account
         * You add your *APN* information to your Looper's &nbsp;<span translate="no">Nightscout</span>&nbsp; site
         * If you support multiple Looper's, you add the same APN variables to each of their &nbsp;<span translate="no">Nightscout</span>&nbsp; sites

@@ -4,8 +4,8 @@ Once Loop 3 was released with the ability to build using a browser, a lot of oth
 
 The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
-* &nbsp;<span translate="no">Loop Caregiver</span>
-* &nbsp;<span translate="no">Loop Follow</span>
+* <span translate="no">Loop Caregiver</span>
+* <span translate="no">Loop Follow</span>
 
 !!! warning "GH_PAT - NEW RECOMMENDATION"
     It is now recommended that you use a *GitHub* Personal Access Token (GH_PAT) that never expires

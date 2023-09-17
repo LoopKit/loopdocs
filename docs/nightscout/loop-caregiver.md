@@ -4,12 +4,12 @@ The &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app is under developm
 
 ### Minimum Requirements:
 
-* &nbsp;<span translate="no">Loop</span>&nbsp; version 3.2.0 or newer
+* <span translate="no">Loop</span>&nbsp; version 3.2.0 or newer
     * version 3.0 works but is not recommended for other reasons
     * version 3.3 and higher offers improved feedback to the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; user
 * iOS 16 or newer for &nbsp;<span translate="no">Loop Caregiver</span>&nbsp;&#39;s phone
 * iOS 15.1 with *Loop* 3 for Looper&#39;s phone
-* &nbsp;<span translate="no">Nightscout</span>&nbsp; version 14.2.6
+* <span translate="no">Nightscout</span>&nbsp; version 14.2.6
 
 ### Prerequisites:
 

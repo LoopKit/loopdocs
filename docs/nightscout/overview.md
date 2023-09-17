@@ -7,13 +7,13 @@ When integrated with &nbsp;<span translate="no">Loop</span>, &nbsp;<span transla
 For caregivers, &nbsp;<span translate="no">Nightscout</span>&nbsp; enables remote monitoring and even the ability to issue remote commands through &nbsp;<span translate="no">Nightscout</span>&nbsp; when both &nbsp;<span translate="no">Loop</span>&nbsp; and &nbsp;<span translate="no">Nightscout</span>&nbsp; are properly configured. There are several pages starting at [<span translate="no">LoopDocs</span>: Remote Overview](remote-overview.md) that provide documentation on this feature. If you are a caregiver, this summary of remote capabilities may encourage you to look into &nbsp;<span translate="no">Nightscout</span>.
 
 !!! info "Remote Commands"
-    * &nbsp;<span translate="no">Loop</span>&nbsp; 2.2.x
+    * <span translate="no">Loop</span>&nbsp; 2.2.x
         * Overrides can be enabled and disabled
-    * &nbsp;<span translate="no">Loop</span>&nbsp; 3
+    * <span translate="no">Loop</span>&nbsp; 3
         * Overrides can be enabled and disabled
         * Carbs can be entered
         * Boluses can be commanded
-        * &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app (under development, iOS only) enables the following from the caregiver's phone
+        * <span translate="no">Loop Caregiver</span>&nbsp; app (under development, iOS only) enables the following from the caregiver's phone
             * monitor &nbsp;<span translate="no">Loop</span>
             * issue remote commands for carbs, bolus and overrides
 
@@ -23,9 +23,9 @@ Setting up a &nbsp;<span translate="no">Nightscout</span>&nbsp; site is describe
 
 There are &nbsp;<span translate="no">Nightscout</span>&nbsp; apps in your iPhone App Store that allow you to view the &nbsp;<span translate="no">Nightscout</span>&nbsp; site after you've configured it, or you can use a web browser to view the data. The app alone is not enough - you need to follow the steps to configure your own &nbsp;<span translate="no">Nightscout</span>&nbsp; site and obtain your specific &nbsp;<span translate="no">Nightscout</span>&nbsp; URL.
 
-* &nbsp;<span translate="no">Nightscout</span>&nbsp; is highly recommended for &nbsp;<span translate="no">Loop</span>&nbsp; users, especially those using &nbsp;<span translate="no">Loop</span>&nbsp; as caregivers
-* &nbsp;<span translate="no">Nightscout</span>&nbsp; displays are often the easiest way to troubleshoot &nbsp;<span translate="no">Loop</span>&nbsp; settings if you are having problems and seeking input from others
-* &nbsp;<span translate="no">Nightscout</span>&nbsp; provides reporting features for longer-term review and preparing information for your physician
+* <span translate="no">Nightscout</span>&nbsp; is highly recommended for &nbsp;<span translate="no">Loop</span>&nbsp; users, especially those using &nbsp;<span translate="no">Loop</span>&nbsp; as caregivers
+* <span translate="no">Nightscout</span>&nbsp; displays are often the easiest way to troubleshoot &nbsp;<span translate="no">Loop</span>&nbsp; settings if you are having problems and seeking input from others
+* <span translate="no">Nightscout</span>&nbsp; provides reporting features for longer-term review and preparing information for your physician
 
 ## &nbsp;<span translate="no">Nightscout</span>&nbsp; Documentation
 

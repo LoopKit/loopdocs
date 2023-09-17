@@ -96,7 +96,7 @@ There are other Authentication apps available. Here’s a few options that you c
    **Answer**: No. If you support multiple people using &nbsp;<span translate="no">Loop</span>, you can use the one APNs key in each of their &nbsp;<span translate="no">Nightscout</span>&nbsp; sites.
 
 1. **How can I tell if it worked?**  
-   **Answer**: You should see your override pill in &nbsp;<span translate="no">Nightscout</span>, with &nbsp;<span>the  **NEXT** &nbsp;<span translate="no">Loop</span>&nbsp; cycle</span>, reflecting that the desired remote action took place. If you are near the &nbsp;<span translate="no">Loop</span>&nbsp; app, you should see the new override within less than 30 seconds or so.
+   **Answer**: You should see your override pill in &nbsp;<span translate="no">Nightscout</span>, with &nbsp;<span>the  **NEXT** <span translate="no">Loop</span>&nbsp; cycle</span>, reflecting that the desired remote action took place. If you are near the &nbsp;<span translate="no">Loop</span>&nbsp; app, you should see the new override within less than 30 seconds or so.
 
 ## FAQs on Remote Overrides
 
@@ -141,7 +141,7 @@ Remote Commands to deliver a bolus or add a carb entry **require** a &nbsp;<span
     
     * You send a 5-unit remote bolus.
     * The bolus is delivered to the Looper.
-    * &nbsp;<span translate="no">Nightscout</span>&nbsp; is having a temporary technical issue and doesn't show the bolus was received.
+    * <span translate="no">Nightscout</span>&nbsp; is having a temporary technical issue and doesn't show the bolus was received.
     * You are watching &nbsp;<span translate="no">Nightscout</span>&nbsp; and you don’t see a delivery so you assume it failed.
     * You send another remote 5-unit bolus.
     * The second 5-unit bolus is delivered to the Looper (10 Units total).
@@ -156,10 +156,10 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
     There are 2 scenarios of concern that could lead to too much insulin:
     
     * *Looper* is using the **`Temp Basal`** (temporary basal) Dosing Strategy
-        * &nbsp;<span translate="no">Loop</span>&nbsp; will initiate a max `Temp Basal` when it receives the carbs remote command
+        * <span translate="no">Loop</span>&nbsp; will initiate a max `Temp Basal` when it receives the carbs remote command
         * Your bolus will be accepted and take place in addition to the high temporary basal
     * *Looper* is using **`Automatic Bolus`** Dosing Strategy
-        * &nbsp;<span translate="no">Loop</span>&nbsp; will initiate 40% of the recommended dose when it receives the carbs remote command
+        * <span translate="no">Loop</span>&nbsp; will initiate 40% of the recommended dose when it receives the carbs remote command
         * Your bolus will be accepted and take place in addition to an automatic boluses
     
     Typically, sending a remote carb entry alone is sufficient for &nbsp;<span translate="no">Loop</span>&nbsp; to know about the carbs and begin to dose for them.

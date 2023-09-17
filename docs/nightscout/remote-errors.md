@@ -59,9 +59,9 @@ The references to Caregiver below is the person sending the commands. There are 
     * Observe the 6-digit OTP as they change
 * If the OTP don't match, you can reset it:
     * **Warning**: If there are multiple devices (or people) sending remote commands, this procedure **resets the OTP for all**
-    * &nbsp;<span translate="no">Loop</span>: Settings -> Services -> &nbsp;<span translate="no">Nightscout</span>&nbsp; -> One-Time Password -> Tap Reload button
+    * <span translate="no">Loop</span>: Settings -> Services -> &nbsp;<span translate="no">Nightscout</span>&nbsp; -> One-Time Password -> Tap Reload button
         * The QR code is different as soon as you hit `Reload`
-    * &nbsp;<span translate="no">Loop Caregiver</span>: Delete the Looper's profile from &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; and add the Looper again by scanning their new QR code
+    * <span translate="no">Loop Caregiver</span>: Delete the Looper's profile from &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; and add the Looper again by scanning their new QR code
     * Authenticators for every device used to send remote commands must be updated
         * Delete the OTP configuration
         * Add the new QR code
