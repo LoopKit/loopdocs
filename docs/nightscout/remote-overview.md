@@ -23,7 +23,7 @@ Remote commands to the &nbsp;<span translate="no">Loop</span>&nbsp; phone go thr
 
 ## How does this work?
 
-&nbsp;<span translate="no">Loop</span>&nbsp; and &nbsp;<span translate="no">Nightscout</span>&nbsp; work using &nbsp;<span translate="no">Apple Push Notifications</span>&nbsp; (APN).
+<span translate="no">Loop</span>&nbsp; and &nbsp;<span translate="no">Nightscout</span>&nbsp; work using &nbsp;<span translate="no">Apple Push Notifications</span>&nbsp; (APN).
 
 * The &nbsp;<span translate="no">Apple Developer ID</span>&nbsp; used to build the &nbsp;<span translate="no">Loop</span>&nbsp; app must be configured to enable &nbsp;<span translate="no">Apple Push Notifications</span>
     * If you built &nbsp;<span translate="no">Nightscout</span>&nbsp; and &nbsp;<span translate="no">Loop</span>&nbsp; yourself, follow the directions to set up [Remote Configuration](remote-config.md)

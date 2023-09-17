@@ -23,7 +23,7 @@ This website is updated regularly to keep pace with &nbsp;<span translate="no">L
 
 ## What is &nbsp;<span translate="no">Loop</span>?
 
-&nbsp;<span translate="no">Loop</span>&nbsp; is an app you build and load on an iPhone.
+_<span translate="no">Loop</span>&nbsp;_ is an app you build and load on an iPhone.
 
 After building the &nbsp;<span translate="no">Loop</span>&nbsp; app:
 
@@ -53,7 +53,7 @@ Please consult with your health care professional regarding your diabetes manage
 
 ## Volunteer Community
 
-&nbsp;<span translate="no">Loop</span>&nbsp; has been, and continues to be, developed and supported by volunteers. From the code to this website, you are able to use this app because many volunteers have given their personal and family time.
+_<span translate="no">Loop</span>&nbsp;_ has been, and continues to be, developed and supported by volunteers. From the code to this website, you are able to use this app because many volunteers have given their personal and family time.
 
-Please add your time by reading this website before embarking on your &nbsp;<span translate="no">Loop</span>&nbsp; journey.
+Please add your time by reading this website before embarking on your _&nbsp;<span translate="no">Loop</span>&nbsp;_ journey.
 

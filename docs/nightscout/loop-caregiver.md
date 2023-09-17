@@ -1,4 +1,4 @@
-## &nbsp;<span translate="no">Loop Caregiver</span>&nbsp;   ![icon for &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app](img/lcg-icon.jpg){width="50"}
+## <span translate="no">Loop Caregiver</span>&nbsp;   ![icon for &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app](img/lcg-icon.jpg){width="50"}
 
 The &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app is under development to make remote commands easier to implement and monitor.
 
@@ -73,7 +73,7 @@ A build script is available to assist in building &nbsp;<span translate="no">Loo
 
 Some limited directions for using the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of &nbsp;<span translate="no">Loop</span>.
 
-### &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; Add Looper
+### <span translate="no">Loop Caregiver</span>&nbsp; Add Looper
 
 You must add a Looper to continue with &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; as shown in the graphic below.
 
@@ -98,7 +98,7 @@ You must add a Looper to continue with &nbsp;<span translate="no">Loop Caregiver
 
 You can add additional Looper's under settings. (*&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* can monitor more than one Looper).
 
-### &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; Main Screen
+### <span translate="no">Loop Caregiver</span>&nbsp; Main Screen
 
 *&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* uses a lot of features from *Loop* with some Nightscout-like features in the Timeline.
 

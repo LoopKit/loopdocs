@@ -44,7 +44,7 @@ But even if you choose to use &nbsp;<span translate="no">Loop Caregiver</span>, 
 
 There are several authentication apps that support one-time passwords.
 
-### &nbsp;<span translate="no">Apple Keychain</span>
+### <span translate="no">Apple Keychain</span>
 
 If you are using a iPhone or Mac to issue remote commands through a browser or &nbsp;<span translate="no">Nightscout</span>&nbsp; app, you can use the &nbsp;<span translate="no">Apple Keychain</span>&nbsp; which has native support to store passwords and generate one-time passwords. 
 
@@ -179,7 +179,7 @@ There are four ways you can trigger your commands remotely; [<span translate="no
 
 Click the link above to read more about &nbsp;<span translate="no">Loop Caregiver</span>.
 
-### &nbsp;<span translate="no">Nightscout Careportal</span>
+### <span translate="no">Nightscout Careportal</span>
 
 To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure &nbsp;<span translate="no">Nightscout</span>&nbsp; site according to the directions [here](update-user.md) in &nbsp;<span translate="no">Loopdocs</span>&nbsp; in addition to setting up the [Remote Configuration](remote-config.md). 
 

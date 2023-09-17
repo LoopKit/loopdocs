@@ -1,4 +1,4 @@
-## &nbsp;<span translate="no">Loop</span>&nbsp; data is not showing in &nbsp;<span translate="no">Nightscout</span>
+## <span translate="no">Loop</span>&nbsp; data is not showing in &nbsp;<span translate="no">Nightscout</span>
 
 * This is a &nbsp;<span translate="no">Loop</span>&nbsp; and/or &nbsp;<span translate="no">Nightscout</span>&nbsp; issue, not related to remote configuration
     * Review the [LoopDocs: <span translate="no">Nightscout</span>&nbsp; with &nbsp;<span translate="no">Loop</span>](update-user.md) page
@@ -7,7 +7,7 @@
 
 ## Improper Configuration
 
-### &nbsp;<span translate="no">Nightscout</span>&nbsp; Config and &nbsp;<span translate="no">Loop</span>&nbsp; Build Method
+### <span translate="no">Nightscout</span>&nbsp; Config and &nbsp;<span translate="no">Loop</span>&nbsp; Build Method
 
 Ensure your &nbsp;<span translate="no">Nightscout</span>&nbsp; version is at least version 14.2.6.
 
@@ -37,7 +37,7 @@ body: APNs delivery failed: BadDeviceToken
 ![site and build method mismatch](img/site-build-mismatch.png){width="300"}
 {align="center"}
 
-### &nbsp;<span translate="no">Loop</span>&nbsp; `REMOTE_OVERRIDES_DISABLED`
+### <span translate="no">Loop</span>&nbsp; `REMOTE_OVERRIDES_DISABLED`
 
 You can build Loop with [Build-Time Features](../build/code-customization.md#build-time-features) as part of code customization.
 

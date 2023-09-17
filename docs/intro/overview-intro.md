@@ -1,4 +1,4 @@
-## &nbsp;<span translate="no">LoopDocs</span>&nbsp; Contents
+## <span translate="no">LoopDocs</span>&nbsp; Contents
 
 The &nbsp;<span translate="no">LoopDocs</span>&nbsp; website is organized as follows
 
@@ -64,7 +64,7 @@ Some techniques are specific to &nbsp;<span translate="no">Loop</span>, but the 
 
 ## Development History
 
-&nbsp;<span translate="no">Loop</span>&nbsp; is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their time, so please add your time by reading this website thoroughly before embarking on your &nbsp;<span translate="no">Loop</span>&nbsp; journey.
+<span translate="no">Loop</span>&nbsp; is an open-source, shared project. The entire project has been, and continues to be, done by volunteers. From the code to the website, you're getting all this because dozens of volunteers have given their time, so please add your time by reading this website thoroughly before embarking on your &nbsp;<span translate="no">Loop</span>&nbsp; journey.
 
 Here are development history links to other resources for you to explore.
 

@@ -1,6 +1,6 @@
 ## Overview
 
-&nbsp;<span translate="no">Nightscout</span>&nbsp; is an excellent tool for remotely viewing &nbsp;<span translate="no">Loop</span>&nbsp; actions. &nbsp;<span translate="no">Nightscout</span>&nbsp; can act as a stand-alone tool or be integrated with &nbsp;<span translate="no">Loop</span>. (&nbsp;<span translate="no">Nightscout</span>&nbsp; also integrates with other open-source hybrid closed loop systems such as OpenAPS, AndroidAPS and iAPS. &nbsp;<span translate="no">LoopDocs</span>&nbsp; focuses on &nbsp;<span translate="no">Loop</span>.)
+<span translate="no">Nightscout</span>&nbsp; is an excellent tool for remotely viewing &nbsp;<span translate="no">Loop</span>&nbsp; actions. &nbsp;<span translate="no">Nightscout</span>&nbsp; can act as a stand-alone tool or be integrated with &nbsp;<span translate="no">Loop</span>. (&nbsp;<span translate="no">Nightscout</span>&nbsp; also integrates with other open-source hybrid closed loop systems such as OpenAPS, AndroidAPS and iAPS. &nbsp;<span translate="no">LoopDocs</span>&nbsp; focuses on &nbsp;<span translate="no">Loop</span>.)
 
 When integrated with &nbsp;<span translate="no">Loop</span>, &nbsp;<span translate="no">Nightscout</span>&nbsp; provides monitoring of &nbsp;<span translate="no">Loop</span>&nbsp; activities such as viewing history of glucose, carbs, boluses, temp basals and overrides; troubleshooting &nbsp;<span translate="no">Loop</span>&nbsp; errors; and provides extensive reports for analyzing data trends and patterns. These reports assist when &nbsp;<span translate="no">Loop Therapy Settings</span>&nbsp; need to be adjusted.
 
@@ -17,7 +17,7 @@ For caregivers, &nbsp;<span translate="no">Nightscout</span>&nbsp; enables remot
             * monitor &nbsp;<span translate="no">Loop</span>
             * issue remote commands for carbs, bolus and overrides
 
-&nbsp;<span translate="no">Nightscout</span>&nbsp; is useful for many who use &nbsp;<span translate="no">Loop</span>. Adults who take care of themselves find the reports and analysis methods from the &nbsp;<span translate="no">Nightscout</span>&nbsp; site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores &nbsp;<span translate="no">Loop</span>&nbsp; configurations so they can be reviewed. With &nbsp;<span translate="no">Loop</span>&nbsp; 3, the saved &nbsp;<span translate="no">Nightscout</span>&nbsp; profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.
+<span translate="no">Nightscout</span>&nbsp; is useful for many who use &nbsp;<span translate="no">Loop</span>. Adults who take care of themselves find the reports and analysis methods from the &nbsp;<span translate="no">Nightscout</span>&nbsp; site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores &nbsp;<span translate="no">Loop</span>&nbsp; configurations so they can be reviewed. With &nbsp;<span translate="no">Loop</span>&nbsp; 3, the saved &nbsp;<span translate="no">Nightscout</span>&nbsp; profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.
 
 Setting up a &nbsp;<span translate="no">Nightscout</span>&nbsp; site is described in a separate web site: [<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io).
 
@@ -27,7 +27,7 @@ There are &nbsp;<span translate="no">Nightscout</span>&nbsp; apps in your iPhone
 * <span translate="no">Nightscout</span>&nbsp; displays are often the easiest way to troubleshoot &nbsp;<span translate="no">Loop</span>&nbsp; settings if you are having problems and seeking input from others
 * <span translate="no">Nightscout</span>&nbsp; provides reporting features for longer-term review and preparing information for your physician
 
-## &nbsp;<span translate="no">Nightscout</span>&nbsp; Documentation
+## <span translate="no">Nightscout</span>&nbsp; Documentation
 
 There used to be a lot of &nbsp;<span translate="no">Nightscout</span>&nbsp; information found only in &nbsp;<span translate="no">LoopDocs</span>, but that was transferred and subsequently updated in [<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io). The information that remains in &nbsp;<span translate="no">LoopDocs</span>&nbsp; is &nbsp;<span translate="no">Loop</span>&nbsp; specific. So you may be jumping back and forth between the two sets of documents.
 
@@ -39,11 +39,11 @@ There used to be a lot of &nbsp;<span translate="no">Nightscout</span>&nbsp; inf
     * Suggestion: open the [<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io) in a separate tab or window of your browser for easy access to both websites
 
 
-## &nbsp;<span translate="no">Nightscout</span>&nbsp; with &nbsp;<span translate="no">Loop</span>
+## <span translate="no">Nightscout</span>&nbsp; with &nbsp;<span translate="no">Loop</span>
 
 This page provides general discussion about the &nbsp;<span translate="no">Nightscout</span>&nbsp; display, as well as some &nbsp;<span translate="no">Loop</span>&nbsp;-specific display information. Over time, interactions between &nbsp;<span translate="no">Loop</span>&nbsp; and &nbsp;<span translate="no">Nightscout</span>&nbsp; were improved. The information on this page has been updated for &nbsp;<span translate="no">Loop</span>&nbsp; 3 and &nbsp;<span translate="no">Nightscout</span>&nbsp; version 14.2.6 (or later). Older versions may exhibit some differences in display of &nbsp;<span translate="no">Loop</span>&nbsp; information on the &nbsp;<span translate="no">Nightscout</span>&nbsp; site.
 
-### &nbsp;<span translate="no">Loop</span>&nbsp; Uploads to &nbsp;<span translate="no">Nightscout</span>
+### <span translate="no">Loop</span>&nbsp; Uploads to &nbsp;<span translate="no">Nightscout</span>
 
 The &nbsp;<span translate="no">Nightscout</span>&nbsp; display updates when the &nbsp;<span translate="no">Loop</span>&nbsp; phone is connected to the internet via WiFi or cellular service. When the uploads stop, the &nbsp;<span translate="no">Loop</span>&nbsp; pill becomes "stale" (cannot open it) after 15 minutes.
 
@@ -53,7 +53,7 @@ If upload to &nbsp;<span translate="no">Nightscout</span>&nbsp; is interrupted, 
 
 The Carb pill on the &nbsp;<span translate="no">Nightscout</span>&nbsp; site is populated by &nbsp;<span translate="no">Loop</span>&nbsp; when &nbsp;<span translate="no">Loop</span>&nbsp; is actively uploading to &nbsp;<span translate="no">Nightscout</span>&nbsp; - but it may lag the value displayed in the &nbsp;<span translate="no">Loop</span>&nbsp; pill by one loop cycle and it will display 0 COB within 5 to 10 minutes if upload is interrupted. In other words, if the COB pill shows 0 unexpectedly and &nbsp;<span translate="no">Loop</span>&nbsp; pill is active, you can believe the value shown in the &nbsp;<span translate="no">Loop</span>&nbsp; pill.
 
-### &nbsp;<span translate="no">Loop</span>&nbsp; 2 &nbsp;<span translate="no">Red Loop</span>&nbsp; Warning
+### <span translate="no">Loop</span>&nbsp; 2 &nbsp;<span translate="no">Red Loop</span>&nbsp; Warning
 
 With &nbsp;<span translate="no">Loop</span>&nbsp; 2.2.9 and earlier versions, when &nbsp;<span translate="no">Loop</span>&nbsp; has a &nbsp;<span translate="no">Nightscout</span>&nbsp; site added in &nbsp;<span translate="no">Loop</span>&nbsp; Services AND is unable to upload messages to that site, it can fill up a buffer of stored upload messages. This may lead to sluggish behavior in &nbsp;<span translate="no">Loop</span>&nbsp; or even cause a &nbsp;<span translate="no">Red Loop</span>. This can happen if the &nbsp;<span translate="no">Nightscout</span>&nbsp; site is "down" or if the database is full so it is not accepting messages.
 
@@ -75,7 +75,7 @@ Step 3: Add &nbsp;<span translate="no">Nightscout</span>&nbsp; URL to &nbsp;<spa
 
     &nbsp;<span translate="no">Loop</span>&nbsp; 3 saves  7 days of information in the data store.
 
-## &nbsp;<span translate="no">Nightscout</span>&nbsp; Dashboard
+## <span translate="no">Nightscout</span>&nbsp; Dashboard
 
 ![img/example.jpg](img/example.jpg){width="600"}
 {align="center"}
@@ -109,7 +109,7 @@ Your current basal profile is automatically updated to &nbsp;<span translate="no
 
 The purple line to the right of the BG is &nbsp;<span translate="no">Loop</span>&nbsp; predicted BG. Watching the behavior of that purple line can help you understand why &nbsp;<span translate="no">Loop</span>&nbsp; is making decisions regarding high or low temps. You can read more on that topic in the [<span translate="no">LoopDocs</span>: Algorithm](../operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other &nbsp;<span translate="no">Nightscout</span>&nbsp; and &nbsp;<span translate="no">Loop</span>&nbsp; settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or &nbsp;<span translate="no">Loop</span>&nbsp; prediction. Adjust the check boxes to show just the &nbsp;<span translate="no">Loop</span>&nbsp; prediction.
 
-### &nbsp;<span translate="no">Loop</span>&nbsp; pill
+### <span translate="no">Loop</span>&nbsp; pill
 
 The &nbsp;<span translate="no">Loop</span>&nbsp; pill is the little display box which, when hovered over or clicked, will provide additional information about recent &nbsp;<span translate="no">Loop</span>&nbsp; activities and status. Information included is the last time &nbsp;<span translate="no">Loop</span>&nbsp; ran, the temp basal set, IOB, and COB. Looking at the &nbsp;<span translate="no">Loop</span>&nbsp; pill is a quick method for assessing if your loop is currently active, as well.
 
