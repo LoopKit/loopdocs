@@ -272,7 +272,7 @@ Once these are all entered, the Therapy Settings screen is shown for your review
 ![verify that all therapy settings are correct](img/therapy-setting-review-x2.svg){width="500"}
 
 
-&nbsp;
+
 
 ### Notifications and Bluetooth
 
@@ -284,7 +284,7 @@ Once you save settings, Loop asks to send notifications and use Bluetooth. You m
 
 ![enable notifications and BLE](img/notify-ble-x2.svg){width="500"}
 
-&nbsp;
+
 
 ## CGM and Pump
 

@@ -33,7 +33,7 @@ This section is the old [Updates in dev](development.md#updates-in-dev) repurpos
 
 [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was merged into dev in July 2023.
 
-If you are using the <span translate="no">GitHub Browser Build</span>, please review: 
+If you are using the &nbsp;<span translate="no">GitHub Browser Build</span>, please review: 
 
 * [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
@@ -44,16 +44,16 @@ The simulators for the Pump and CGM for dev show a new format when first selecte
 ![use long press example for pump](img/long-press-to-adjust-simulator.jpg){width="500"}
 {align="center"}
 
-### <span translate="no">GitHub Browser Build</span> Updates
+### <span translate="no">GitHub Browser Build</span>&nbsp; Updates
 
-The dev branch has several updates merged that make it easier to find errors in configuration and that make the <span translate="no">GitHub Browser Build</span> automatic.
+The dev branch has several updates merged that make it easier to find errors in configuration and that make the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; automatic.
 
-Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the <span translate="no">GitHub Browser Build</span> for <span translate="no">Loop</span> will:
+Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for &nbsp;<span translate="no">Loop</span>&nbsp; will:
 
 * Automatically build a new version once a month, with automatic update included
 * Automatically update your fork of LoopWorkspace once a week if updates are available
 
-It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date <span translate="no">Loop</span> in their <span translate="no">TestFlight</span> app.
+It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date &nbsp;<span translate="no">Loop</span>&nbsp; in their &nbsp;<span translate="no">TestFlight</span>&nbsp; app.
 
 For users of the dev branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
 
@@ -63,16 +63,16 @@ For users of the dev branch, it is not uncommon to disable the automatic update 
 In addition to the easier to read error messages found with these updates, these additional simplification include:
 
 * Actions are broken into logical components, each of which provides an easy to understand error message if it fails which includes a suggested fix
-* A new builder no longer needs to create the <span translate="no">Match-Secrets repository</span>
+* A new builder no longer needs to create the &nbsp;<span translate="no">Match-Secrets repository</span>
     * If it does not exist, one is created for you
     * Only the App Group ID must be added to the Identifiers; all other App services are    automatically added
 * For new builders and current 3.2.2 users updating to the next release
-    * The <span translate="no">alive</span> branch needed to enable automatic building is created automatically
+    * The &nbsp;<span translate="no">alive</span>&nbsp; branch needed to enable automatic building is created automatically
     * If their GH_PAT does not have `repo, workflow` permission, a prominent message is displayed with each Action completed
 
 These sections are still useful for version 3.3.0 dev users:
 
-* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use <span translate="no">GitHub Browser Build</span> for dev branch
+* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for dev branch
 * [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
 ## What are branches?

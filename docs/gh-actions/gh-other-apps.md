@@ -1,6 +1,6 @@
 ## Using *GitHub* Browser Build Method to Build Other Apps
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to <span translate="no">Loop</span> are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
+Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to &nbsp;<span translate="no">Loop</span>&nbsp; are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
 
 The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
@@ -16,9 +16,9 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 ### Prerequisites
 
-* If you have already built using the <span translate="no">GitHub Browser Build</span> method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
+* If you have already built using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method, it is easy to build the next repository. Skip ahead to [Fork and Add Secrets](#fork-and-add-secrets)
 
-* If this is the first repository you have built with the <span translate="no">GitHub Browser Build</span> method, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
+* If this is the first repository you have built with the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method, you must first complete the initial steps found on [GitHub First-Time](../gh-actions/gh-first-time.md). When you reach the point where
     * You have created your Match-Secrets repository
     * You are told to [GitHub First-Time: Fork LoopWorkspace](../gh-actions/gh-first-time.md#fork-loopworkspace)
         * Review the directions but don't do it
@@ -26,7 +26,7 @@ The same technique is used and the same six Secrets are applied to each reposito
         * Use that table to find the link of the repository you will fork
 
 !!! important "Use the repository for the application you are building"
-    Many graphics on this page show <span translate="no">LoopWorkspace</span>, just remember to use the repository for the app you want to build, that is either <span translate="no">Loop Follow</span> or <span translate="no">Loop Caregiver</span>.
+    Many graphics on this page show &nbsp;<span translate="no">LoopWorkspace</span>, just remember to use the repository for the app you want to build, that is either &nbsp;<span translate="no">Loop Follow</span>&nbsp; or &nbsp;<span translate="no">Loop Caregiver</span>.
 
 ## Fork and Add Secrets
 
@@ -43,7 +43,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 After successfully creating your fork of the repository for this app:
 
-* If you have already built Loop using the <span translate="no">GitHub Browser Build</span> method, skip ahead to [Add Existing Secrets](#add-existing-secrets)
+* If you have already built Loop using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method, skip ahead to [Add Existing Secrets](#add-existing-secrets)
 
 * If this is the first repository you have built with *GitHub*
     * You should follow the detailed steps at [GitHub First-Time: Configure Secrets](../gh-actions/gh-first-time.md#configure-secrets), except you will apply the Secrets to the repository for the app you are planning to build
@@ -96,7 +96,7 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your <span translate="no">Loop Follow</span> or <span translate="no">Loop Caregiver</span> repository and enable workflows if needed
+1. Click on the "Actions" tab of your &nbsp;<span translate="no">Loop Follow</span>&nbsp; or &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; repository and enable workflows if needed
 1. On the left side, click on 1. <code>Validate Secrets</code>
 1. On the right side, click `Run Workflow` to show a drop-down menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
@@ -106,7 +106,7 @@ This step validates most of your six Secrets and provides error messages if it d
 ![add identifiers using github actions](img/action-01-validate-secrets.svg){width="700"}
 {align="center"}
 
-The `Validate Secrets` <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
@@ -132,7 +132,7 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-The `Add Identifier` <span class=notranslate>Action</span> should succeed or fail in a few minutes.
+The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes.
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
@@ -153,7 +153,7 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
-These apps, <span translate="no">Loop Caregiver</span> and <span translate="no">Loop Follow</span>, do not require that extra step.
+These apps, &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; and &nbsp;<span translate="no">Loop Follow</span>, do not require that extra step.
 
 ## Create App in App Store Connect
 
