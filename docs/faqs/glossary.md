@@ -2,14 +2,16 @@
 
 Each item in the glossary is also a Tooltip.
 
+To assist people using automatic translations, each item is listed twice. The first version is always in English. The second is in the selected language for automatic translation.
+
 A Tooltip is visible as a dashed underline word or phrase.
 
 If you hover your mouse or tap on a mobile device, the phrase associated with each word is displayed.
 
 
-**<span translate="no">Actions</span>**; **<span translate="EN">Actions</span>**: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser
+**Actions**; Actions: a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser
 
-**<span translate="EN">Activated</span>**; **<span translate="no">Activated</span>**: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
+**Activated**; Activated: for Omnipod: time at which insulin was injected into pod and 2 beeps were heard
 
 **Anchor Links**: any header on a LoopDocs page can be used as a link, tap on the paragraph symbol at the end of the header to view the link in the URL
 
