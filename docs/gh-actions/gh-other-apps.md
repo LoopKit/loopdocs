@@ -35,7 +35,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: &nbsp;<span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
+| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: &nbsp;<span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
 |Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
 
 
@@ -148,7 +148,7 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
-| &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; | &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; | com.TEAMID.loopkit.LoopCaregiver |
+| <span translate="no">Loop Caregiver</span> | <span translate="no">Loop Caregiver</span> | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
@@ -163,8 +163,8 @@ This requires you to provide some information. Examine the table below for the b
 
 | App Name | Bundle ID |
 | --- | --- |
-| &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; | com.TEAMID.loopkit.LoopCaregiver |
-| &nbsp;<span translate="no">Loop Follow</span>&nbsp; | com.TEAMID.LoopFollow |
+| <span translate="no">Loop Caregiver</span> | com.TEAMID.loopkit.LoopCaregiver |
+| <span translate="no">Loop Follow</span> | com.TEAMID.LoopFollow |
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
 
