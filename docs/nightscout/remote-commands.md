@@ -14,7 +14,7 @@ All remote commands require the configuration steps from [Remote Configuration](
 
     Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands.
     
-    If you decide on &nbsp;<span translate="no">Loop Caregiver</span>, review both this page and [<span translate="no">Loop Caregiver</span>](loop-caregiver.md) page.
+    If you decide on &nbsp;<span translate="no">Loop Caregiver</span>, review both this page and &nbsp;[<span translate="no">Loop Caregiver</span>](loop-caregiver.md) page.
 
 ## QR Code
 
@@ -173,7 +173,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
 ## Using Remote Commands
 
-There are four ways you can trigger your commands remotely; [<span translate="no">Loop Caregiver</span>](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
+There are four ways you can trigger your commands remotely; &nbsp;[<span translate="no">Loop Caregiver</span>](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
 ### [<span translate="no">Loop Caregiver</span>](loop-caregiver.md)
 

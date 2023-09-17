@@ -4,7 +4,7 @@
 
 When integrated with &nbsp;<span translate="no">Loop</span>, &nbsp;<span translate="no">Nightscout</span>&nbsp; provides monitoring of &nbsp;<span translate="no">Loop</span>&nbsp; activities such as viewing history of glucose, carbs, boluses, temp basals and overrides; troubleshooting &nbsp;<span translate="no">Loop</span>&nbsp; errors; and provides extensive reports for analyzing data trends and patterns. These reports assist when &nbsp;<span translate="no">Loop Therapy Settings</span>&nbsp; need to be adjusted.
 
-For caregivers, &nbsp;<span translate="no">Nightscout</span>&nbsp; enables remote monitoring and even the ability to issue remote commands through &nbsp;<span translate="no">Nightscout</span>&nbsp; when both &nbsp;<span translate="no">Loop</span>&nbsp; and &nbsp;<span translate="no">Nightscout</span>&nbsp; are properly configured. There are several pages starting at [<span translate="no">LoopDocs</span>: Remote Overview](remote-overview.md) that provide documentation on this feature. If you are a caregiver, this summary of remote capabilities may encourage you to look into &nbsp;<span translate="no">Nightscout</span>.
+For caregivers, &nbsp;<span translate="no">Nightscout</span>&nbsp; enables remote monitoring and even the ability to issue remote commands through &nbsp;<span translate="no">Nightscout</span>&nbsp; when both &nbsp;<span translate="no">Loop</span>&nbsp; and &nbsp;<span translate="no">Nightscout</span>&nbsp; are properly configured. There are several pages starting at &nbsp;[<span translate="no">LoopDocs</span>: Remote Overview](remote-overview.md) that provide documentation on this feature. If you are a caregiver, this summary of remote capabilities may encourage you to look into &nbsp;<span translate="no">Nightscout</span>.
 
 !!! info "Remote Commands"
     * <span translate="no">Loop</span>&nbsp; 2.2.x
@@ -19,7 +19,7 @@ For caregivers, &nbsp;<span translate="no">Nightscout</span>&nbsp; enables remot
 
 <span translate="no">Nightscout</span>&nbsp; is useful for many who use &nbsp;<span translate="no">Loop</span>. Adults who take care of themselves find the reports and analysis methods from the &nbsp;<span translate="no">Nightscout</span>&nbsp; site provide effective tools to monitor their settings and provide reports for their health care provider. It also stores &nbsp;<span translate="no">Loop</span>&nbsp; configurations so they can be reviewed. With &nbsp;<span translate="no">Loop</span>&nbsp; 3, the saved &nbsp;<span translate="no">Nightscout</span>&nbsp; profiles can be downloaded to a new app for quick onboarding, should you ever need to start fresh.
 
-Setting up a &nbsp;<span translate="no">Nightscout</span>&nbsp; site is described in a separate web site: [<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io).
+Setting up a &nbsp;<span translate="no">Nightscout</span>&nbsp; site is described in a separate web site: &nbsp;[<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io).
 
 There are &nbsp;<span translate="no">Nightscout</span>&nbsp; apps in your iPhone App Store that allow you to view the &nbsp;<span translate="no">Nightscout</span>&nbsp; site after you've configured it, or you can use a web browser to view the data. The app alone is not enough - you need to follow the steps to configure your own &nbsp;<span translate="no">Nightscout</span>&nbsp; site and obtain your specific &nbsp;<span translate="no">Nightscout</span>&nbsp; URL.
 
@@ -29,14 +29,14 @@ There are &nbsp;<span translate="no">Nightscout</span>&nbsp; apps in your iPhone
 
 ## <span translate="no">Nightscout</span>&nbsp; Documentation
 
-There used to be a lot of &nbsp;<span translate="no">Nightscout</span>&nbsp; information found only in &nbsp;<span translate="no">LoopDocs</span>, but that was transferred and subsequently updated in [<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io). The information that remains in &nbsp;<span translate="no">LoopDocs</span>&nbsp; is &nbsp;<span translate="no">Loop</span>&nbsp; specific. So you may be jumping back and forth between the two sets of documents.
+There used to be a lot of &nbsp;<span translate="no">Nightscout</span>&nbsp; information found only in &nbsp;<span translate="no">LoopDocs</span>, but that was transferred and subsequently updated in &nbsp;[<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io). The information that remains in &nbsp;<span translate="no">LoopDocs</span>&nbsp; is &nbsp;<span translate="no">Loop</span>&nbsp; specific. So you may be jumping back and forth between the two sets of documents.
 
 !!! info ""
 
     * If you see the &nbsp;<span translate="no">Nightscout</span>&nbsp; Owl logo in upper left you are in the &nbsp;<span translate="no">Nightscout</span>&nbsp; website
     * If you see the &nbsp;<span translate="no">LoopDocs</span>&nbsp; green-loop logo in upper left you are in the &nbsp;<span translate="no">LoopDocs</span>&nbsp; website
     * While in the &nbsp;<span translate="no">Nightscout</span>&nbsp; tab of &nbsp;<span translate="no">LoopDocs</span>, most links have a &nbsp;<span translate="no">Nightscout</span>&nbsp; or &nbsp;<span translate="no">LoopDocs</span>&nbsp; in the link name
-    * Suggestion: open the [<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io) in a separate tab or window of your browser for easy access to both websites
+    * Suggestion: open the &nbsp;[<span translate="no">Nightscout</span>: Documentation](https://nightscout.github.io) in a separate tab or window of your browser for easy access to both websites
 
 
 ## <span translate="no">Nightscout</span>&nbsp; with &nbsp;<span translate="no">Loop</span>
@@ -107,7 +107,7 @@ Your current basal profile is automatically updated to &nbsp;<span translate="no
 
 ### Predicted BG
 
-The purple line to the right of the BG is &nbsp;<span translate="no">Loop</span>&nbsp; predicted BG. Watching the behavior of that purple line can help you understand why &nbsp;<span translate="no">Loop</span>&nbsp; is making decisions regarding high or low temps. You can read more on that topic in the [<span translate="no">LoopDocs</span>: Algorithm](../operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other &nbsp;<span translate="no">Nightscout</span>&nbsp; and &nbsp;<span translate="no">Loop</span>&nbsp; settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or &nbsp;<span translate="no">Loop</span>&nbsp; prediction. Adjust the check boxes to show just the &nbsp;<span translate="no">Loop</span>&nbsp; prediction.
+The purple line to the right of the BG is &nbsp;<span translate="no">Loop</span>&nbsp; predicted BG. Watching the behavior of that purple line can help you understand why &nbsp;<span translate="no">Loop</span>&nbsp; is making decisions regarding high or low temps. You can read more on that topic in the &nbsp;[<span translate="no">LoopDocs</span>: Algorithm](../operation/algorithm/overview.md) section of these docs. If you don't see the prediction (and all other &nbsp;<span translate="no">Nightscout</span>&nbsp; and &nbsp;<span translate="no">Loop</span>&nbsp; settings are configured), tap on the 3 dots to the right of the 24 to reveal the choice to display AR2 prediction or &nbsp;<span translate="no">Loop</span>&nbsp; prediction. Adjust the check boxes to show just the &nbsp;<span translate="no">Loop</span>&nbsp; prediction.
 
 ### <span translate="no">Loop</span>&nbsp; pill
 

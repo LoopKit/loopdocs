@@ -29,13 +29,13 @@ The &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app is under developm
     * Please take the time to update your *Nightscout* site to `master`
     * *Nightscout* 14.2.6 was released 30-Sep-2022 as `Classic Liquorice`
 
-If you use &nbsp;<span translate="no">Loop Caregiver</span>, please join [<span translate="no">Loop Caregiver App</span>](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
+If you use &nbsp;<span translate="no">Loop Caregiver</span>, please join &nbsp;[<span translate="no">Loop Caregiver App</span>](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 
 ## Build &nbsp;<span translate="no">Loop Caregiver</span>
 
-You can build &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method or the [<span translate="no">Mac-Xcode Build</span>](#mac-xcode-build) method.
+You can build &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method or the &nbsp;[<span translate="no">Mac-Xcode Build</span>](#mac-xcode-build) method.
 
 ### GitHub Browser Build:
 

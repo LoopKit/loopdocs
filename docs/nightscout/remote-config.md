@@ -98,7 +98,7 @@ You'll need to make sure your &nbsp;<span translate="no">Nightscout</span>&nbsp;
 This link should be used if you want to [Nightscout: Update](https://nightscout.github.io/update/update/) your &nbsp;<span translate="no">Nightscout</span>&nbsp; site.
 
 !!! note "Note for &nbsp;<span translate="no">Google Cloud</span>&nbsp; Users"
-    The [<span translate="no">Xdrip: Google Cloud Nightscout</span>](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html) instructions include information about updating your site.  
+    The &nbsp;[<span translate="no">Xdrip: Google Cloud Nightscout</span>](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html) instructions include information about updating your site.  
     Scroll down to the line (on that page) that says `Update Nightscout`.
 
 ### Add APN Variables to &nbsp;<span translate="no">Nightscout</span>

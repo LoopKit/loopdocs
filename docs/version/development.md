@@ -179,7 +179,7 @@ At this point the meal can be saved by tapping the Continue button, or the user 
 
 The &nbsp;<span translate="no">Loop</span>&nbsp; app has been updated to detect whether the build was uploaded through &nbsp;<span translate="no">TestFlight</span>, which implies a 90-day limit until the app expires.
 
-The usual [<span translate="no">Loop</span>&nbsp; expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
+The usual &nbsp;[<span translate="no">Loop</span>&nbsp; expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
 
 ![expiration warning on settings for testflight example](img/expiration-warning-testflight.svg){width="300"}
 {align="center"}
