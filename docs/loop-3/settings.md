@@ -1,6 +1,6 @@
 ## Loop Settings Screen
 
-The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen).
+The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.4 and later versions.
 
 ![settings screen for loop 3](img/loop-3-settings.svg){width="250"}
 {align="center"}
@@ -67,6 +67,13 @@ The Automatic Bolus selection causes Loop to provide 40% of the recommended dose
 
 As with all Loop versions, you can manually bolus at any time by pressing the Bolus icon in the center of Loop's Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.
 
+## Alert Management
+
+This row enables the user to modify Alert Permissions and to enable Missed Meal Notifications.
+
+### Missed Meal Notifications
+
+Loop detects situations where glucose excursions indicate you may have consumed carbs but did not enter them into Loop. When Missed Meal Notifications are enabled, you will be provided an alert that suggests when the meal was consumed and how many carbs are already absorbed at the time of the alert. You have the option to increase the grams of carbs to match your actual meal.
 
 ## Configuration
 
@@ -126,6 +133,20 @@ If you choose to share usage data, it is collected anonymously. The choices are:
 * Share the Loop version number, phone type and iOS version number
 * Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
 
+### Algorithm Experiments
+
+The Algorithm Experiments are new with Loop 3.4 and we recommend you review the details on the [Features](features.md) new with Loop 3 page. Many people have tested these and like them, but you need to decide whether to enable them.
+
+* [Glucose Based Partial Application (GBPA)](features.md#glucose-based-partial-application-gbpa)
+    * Affects speed of Automatic Bolus delivery when enabled
+    * Provides smaller automatic bolus per cycle when glucose is near target range
+    * Provides larger automatic bolus per cycle when glucose is higher
+    * In all cases, the automatic bolus is always less than the recommended bolus
+* [Integral Retrospective Correction (IRC)](features.md#integral-retrospective-correction-irc)
+    * This changes the Loop model by considering longer-term differences between predicted glucose and actual glucose
+    * The primary reason why people like this feature is it helps with the "stuck on high" phenomenon
+    * It is not uncommon that someone who enables IRC may also need to adjust their ISF (increase the value slightly)
+
 ### Pump
 
 The information about the pump section is detailed on several different pages. Follow the links below:
@@ -137,6 +158,12 @@ The information about the pump section is detailed on several different pages. F
 ### [CGM Settings](add-cgm.md)
 
 The information about the CGM is found on the [Add or Modify CGM](add-cgm.md) page.
+
+## Favorite Foods
+
+[Favorite Foods](features.md#favorite-foods), new with Loop 3.4, can simplify meal entry if you choose to use it. You can create a Favorite Food here or on the Carb Entry screen. 
+
+Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of those icons. The standard Lollipop, Taco, Pizza icons are not sufficient to enable the Save as Favorite button.
 
 ## Services
 

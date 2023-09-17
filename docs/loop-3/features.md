@@ -1,6 +1,6 @@
 ## New with Loop 3
 
-This page discusses updated Loop features in some depth.
+This page discusses some features new with Loop 3.
 
 ## Loop 3 Screens
 
@@ -10,7 +10,6 @@ This page discusses updated Loop features in some depth.
     For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active. The button remains fixed as other portions of the screen are scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action taken if you tap on the button.
     
     There are other screens, like the Onboarding and Therapy Settings screens, where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
-
 
 ## Non-Pump Insulin
 
@@ -288,6 +287,7 @@ At this point the meal can be saved by tapping the Continue button, or the user 
 ![carb entry with favorite foods feature](img/favorite-foods-carb-entry.svg){width="500"}
 {align="center"}
 
+Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons are not sufficient to enable the Save as Favorite button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.
 
 
 
