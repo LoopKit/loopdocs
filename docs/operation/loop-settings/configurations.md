@@ -21,14 +21,14 @@ The user can select closed loop or open loop using this slider. When you first s
 ![img/open_loop.png](img/open_loop.png){width="400"}
 {align="center"}
 
-When the Closed Loop switch is in the (Off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) position, Loop WILL NOT modify insulin dosing automatically.
+When the Closed Loop switch is in the (Off&nbsp;&nbsp;&nbsp;) position, Loop WILL NOT modify insulin dosing automatically.
 
 ### Closed Loop Mode
 
 ![img/closed_loop.png](img/closed_loop.png){width="400"}
 {align="center"}
 
-When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically modify insulin dosing on the configured insulin pump. This is known as **closed loop**. Typically, Loop will show the recommended temp basal or automatic bolus just above the blood glucose graph prior to automatically enacting it. It may take a few seconds for Loop to connect to the pump to enact the modified dose.
+When the Closed Loop switch is in the (&nbsp;&nbsp;&nbsp;   On) position, Loop WILL automatically modify insulin dosing on the configured insulin pump. This is known as **closed loop**. Typically, Loop will show the recommended temp basal or automatic bolus just above the blood glucose graph prior to automatically enacting it. It may take a few seconds for Loop to connect to the pump to enact the modified dose.
 
 ## `Issue Report`
 

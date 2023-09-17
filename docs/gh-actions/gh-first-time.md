@@ -243,7 +243,7 @@ Sign in to your *Apple* Developer account at this link: [*Apple* developer porta
 ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
     {align="center"}
 
-Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create <span class="notranslate">App Group</span>](#create-app-group).
+Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](#create-app-group).
 
 - Stop a moment and double-check
 * If you get this wrong, you will have errors at the very end, which require you to delete some items and repeat some steps on this page
@@ -252,7 +252,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
         **Copy and paste** the `Team ID` from the webpage.
 
         * <code>TEAMID</code> must be 10 characters
-        * Avoid typing an <span class="loop-biggest">`8`</span> when it should be a <span class="loop-biggest">`B`</span>
+        * Avoid typing an <span class="loop-biggest">`8`</span>&nbsp; when it should be a <span class="loop-biggest">`B`</span>
 
 ### Generate `API Key`
 
@@ -322,7 +322,7 @@ The `Keys` screen appears again with content similar to the graphic below; the k
 
 ### Do Not Confuse Your Keys
 
-!!! important "<span class="loop-big">`API Key`</span> vs <span class="loop-big">`APN Key`</span>"
+!!! important "<span class="loop-big">`API Key`</span>&nbsp; vs <span class="loop-big">`APN Key`</span>&nbsp;"
     If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
 
     The <code>Secrets</code> for building with *GitHub* use the <span class="loop-bigger">`API Key`</span>.
@@ -487,7 +487,7 @@ You will not directly interact with your `Match-Secrets` repository.
 
 #### Successful Fork
 
-After creating the <span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
+After creating the &nbsp;<span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
 * Near the top right, click on the close button :octicons-x-16: (`x`) to dismiss the `Successfully fetched` message
 * In the middle, click on the `Dismiss` button to remove the "`Your branch is not protected`" message
@@ -498,7 +498,7 @@ After creating the <span class="notranslate">fork</span>, your screen should be 
 Carefully compare your screen to the graphic below paying attention to the highlighted sections.
 
 * Note that your username is now showing
-* The comment under your username indicates where the <span class="notranslate">fork</span> came from (that is a clickable link)
+* The comment under your username indicates where the &nbsp;<span class="notranslate">fork</span>&nbsp; came from (that is a clickable link)
 * The branch that is selected :octicons-git-branch-16: is `main`
 * The message says "`This branch is up to date with LoopKit/LoopWorkspace:main`"
 
@@ -528,8 +528,8 @@ Carefully compare your screen to the graphic below paying attention to the highl
     [<span class="loop-bigger">:material-skip-forward:</span>](#validate-secrets) To skip the detailed instructions, click on [Validate <code>Secrets</code>](#validate-secrets).
 
 !!! tip "`Branches` and `Repositories`"
-    * These <span class="notranslate">Secrets</span> are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
-    * These <span class="notranslate">Secrets</span> must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
+    * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
+    * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
 
 Log into *GitHub*.
 
@@ -615,7 +615,7 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 
 ## First Use of Actions Tab
 
-Near the top middle of your <code>LoopWorkspace</code> <span class="notranslate">fork</span> is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
+Near the top middle of your <code>LoopWorkspace</code> &nbsp;<span class="notranslate">fork</span>&nbsp; is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
 
 Click on the `Actions` tab of your <code>LoopWorkspace</code> repository.
 
@@ -644,7 +644,7 @@ The `workflows` are now displayed on the left side as shown in the graphic below
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#add-identifiers) To skip the detailed instructions, click on [<code>Add Identifiers</code>](#add-identifiers)
 
-Near the top middle of your <code>LoopWorkspace</code> <span class="notranslate">fork</span>, click on the <code>Actions</code> tab.
+Near the top middle of your <code>LoopWorkspace</code> &nbsp;<span class="notranslate">fork</span>, click on the <code>Actions</code> tab.
 
 * [<span class="loop-big">:material-skip-backward:</span>](#first-use-of-actions-tab)If you have never used <code>Actions</code> on this repository before, and need instructions (in addition to what *GitHub* shows), please back up to [First use of Actions Tab](#first-use-of-actions-tab).
 
@@ -660,7 +660,7 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-01-validate-secrets.svg){width="700"}
     {align="center"}
 
-The `Validate Secrets` <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
@@ -690,7 +690,7 @@ Refer to the graphic below for the numbered steps:
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
 
-The `Add Identifier` <span class=notranslate>Action</span> should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):

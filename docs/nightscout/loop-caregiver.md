@@ -1,15 +1,15 @@
-## <span translate="no">Loop Caregiver</span>   ![icon for <span translate="no">Loop Caregiver</span> app](img/lcg-icon.jpg){width="50"}
+## &nbsp;<span translate="no">Loop Caregiver</span>&nbsp;   ![icon for &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app](img/lcg-icon.jpg){width="50"}
 
-The <span translate="no">Loop Caregiver</span> app is under development to make remote commands easier to implement and monitor.
+The &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app is under development to make remote commands easier to implement and monitor.
 
 ### Minimum Requirements:
 
-* <span translate="no">Loop</span> version 3.2.0 or newer
+* &nbsp;<span translate="no">Loop</span>&nbsp; version 3.2.0 or newer
     * version 3.0 works but is not recommended for other reasons
-    * version 3.3 and higher offers improved feedback to the <span translate="no">Loop Caregiver</span> user
-* iOS 16 or newer for <span translate="no">Loop Caregiver</span>&#39;s phone
+    * version 3.3 and higher offers improved feedback to the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; user
+* iOS 16 or newer for &nbsp;<span translate="no">Loop Caregiver</span>&nbsp;&#39;s phone
 * iOS 15.1 with *Loop* 3 for Looper&#39;s phone
-* <span translate="no">Nightscout</span> version 14.2.6
+* &nbsp;<span translate="no">Nightscout</span>&nbsp; version 14.2.6
 
 ### Prerequisites:
 
@@ -29,21 +29,21 @@ The <span translate="no">Loop Caregiver</span> app is under development to make 
     * Please take the time to update your *Nightscout* site to `master`
     * *Nightscout* 14.2.6 was released 30-Sep-2022 as `Classic Liquorice`
 
-If you use <span translate="no">Loop Caregiver</span>, please join [<span translate="no">Loop Caregiver App</span>](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
+If you use &nbsp;<span translate="no">Loop Caregiver</span>, please join [<span translate="no">Loop Caregiver App</span>](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 
-## Build <span translate="no">Loop Caregiver</span>
+## Build &nbsp;<span translate="no">Loop Caregiver</span>
 
-You can build <span translate="no">Loop Caregiver</span> using the <span translate="no">GitHub Browser Build</span> method or the [<span translate="no">Mac-Xcode Build</span>](#mac-xcode-build) method.
+You can build &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method or the [<span translate="no">Mac-Xcode Build</span>](#mac-xcode-build) method.
 
 ### GitHub Browser Build:
 
-The <span translate="no">GitHub Browser Build</span> method is documented on the [Other Apps](../gh-actions/gh-other-apps.md) page.
+The &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method is documented on the [Other Apps](../gh-actions/gh-other-apps.md) page.
 
 ### Mac-Xcode Build:
 
-A build script is available to assist in building <span translate="no">Loop Caregiver</span>. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
+A build script is available to assist in building &nbsp;<span translate="no">Loop Caregiver</span>. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
 
 - Open a terminal window. 
 - Spot the line below that starts with `/bin/bash`
@@ -64,18 +64,18 @@ A build script is available to assist in building <span translate="no">Loop Care
 - The script displays the directions for downloading and building.    
     Please read them carefully.
 
-!!! warning "Not &nbsp;*<span translate="no">Loop</span>*"
-    The output you see in the Terminal may look very similar to when you build &nbsp;*<span translate="no">Loop 3</span>*&nbsp; from a script.
+!!! warning "Not &nbsp;*&nbsp;<span translate="no">Loop</span>&nbsp;*"
+    The output you see in the Terminal may look very similar to when you build &nbsp;*&nbsp;<span translate="no">Loop 3</span>&nbsp;*&nbsp; from a script.
     
-    It is pulling down a clone from a different location (<span translate="no">LoopKit/LoopCaregiver</span>). It uses some modules from *Loop*. The target and scheme are automatically selected for *<span translate="no">Loop Caregiver</span>* and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (&nbsp;<span translate="no">LoopKit/LoopCaregiver</span>&nbsp;). It uses some modules from *Loop*. The target and scheme are automatically selected for *&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* and if you follow directions for a paid Developer account, the signing is automatic.
 
-## Use <span translate="no">Loop Caregiver</span>
+## Use &nbsp;<span translate="no">Loop Caregiver</span>
 
-Some limited directions for using the <span translate="no">Loop Caregiver</span> app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of <span translate="no">Loop</span>.
+Some limited directions for using the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of &nbsp;<span translate="no">Loop</span>.
 
-### <span translate="no">Loop Caregiver</span>&nbsp; Add Looper
+### &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; Add Looper
 
-You must add a Looper to continue with <span translate="no">Loop Caregiver</span> as shown in the graphic below.
+You must add a Looper to continue with &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; as shown in the graphic below.
 
 ![add Looper to Loop Caregiver](img/lcg-add-looper.png){width="300"}
 {align="center"}
@@ -86,21 +86,21 @@ You must add a Looper to continue with <span translate="no">Loop Caregiver</span
     !!! tip "Pro-tip"
         Take a screenshot of the QR code and store it on your computer.
         
-        You can then add the QR code to *<span translate="no">Loop Caregiver</span>* without bothering your Looper.
+        You can then add the QR code to *&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* without bothering your Looper.
 
         * Keep the screenshot secure
         * Do not share the QR screenshot when asking for help
 
-* On the <span translate="no">Loop Caregiver</span>&#39;s phone:
-    * Tap on <span translate="no">Loop Caregiver</span> -> `Settings`
-    * Enter the name of the Looper, the *Nightscout* URL (use <span translate="no"> http**s**://</span>) and `API_SECRET`
+* On the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp;&#39;s phone:
+    * Tap on &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; -> `Settings`
+    * Enter the name of the Looper, the *Nightscout* URL (use &nbsp;<span translate="no"> http**s**://</span>&nbsp;) and `API_SECRET`
     * Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone
 
-You can add additional Looper's under settings. (*<span translate="no">Loop Caregiver</span>* can monitor more than one Looper).
+You can add additional Looper's under settings. (*&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* can monitor more than one Looper).
 
-### <span translate="no">Loop Caregiver</span>&nbsp; Main Screen
+### &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; Main Screen
 
-*<span translate="no">Loop Caregiver</span>* uses a lot of features from *Loop* with some Nightscout-like features in the Timeline.
+*&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* uses a lot of features from *Loop* with some Nightscout-like features in the Timeline.
 
 The Timeline:
 
@@ -109,22 +109,22 @@ The Timeline:
 * Horizontal display can be adjusted using the dropdown hours selector and scrolling left/right.
 * A double tap on the Timeline alternates between 1 and 6 hour display
 
-![main screen of the <span translate="no">Loop Caregiver</span> app](img/lcg-main.jpg){width="300"}
+![main screen of the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; app](img/lcg-main.jpg){width="300"}
 {align="center"}
 
 
-You can also use the <span translate="no">Loop Caregiver</span> -> `Settings` screen to modify:
+You can also use the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; -> `Settings` screen to modify:
 
 * Units used for glucose display: `mg/dL` or `mmol/L`
-* Include the &nbsp;*<span translate="no">Loop</span>* forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
+* Include the &nbsp;*&nbsp;<span translate="no">Loop</span>&nbsp;* forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
 ### Issue Remote Commands with &nbsp;<span translate="no">Loop Caregiver</span>
 
 You issue override, carb, and bolus commands using a toolbar similar to the one seen on *Loop*. In the example graphic above, the carb and bolus entries visible were issued remotely.
 
-Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the <span translate="no">Loop Caregiver</span>&#39;s phone.
+Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the &nbsp;<span translate="no">Loop Caregiver</span>&nbsp;&#39;s phone.
 
-The use of *<span translate="no">Loop Caregiver</span>* makes remote commands much easier and more reliable.
+The use of *&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* makes remote commands much easier and more reliable.
 
 Go back and review the details about [Remote Commands](remote-commands.md) before using the app.
 
