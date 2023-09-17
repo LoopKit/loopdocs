@@ -64,10 +64,10 @@ A build script is available to assist in building &nbsp;<span translate="no">Loo
 - The script displays the directions for downloading and building.    
     Please read them carefully.
 
-!!! warning "Not &nbsp;*&nbsp;<span translate="no">Loop</span>&nbsp;*"
-    The output you see in the Terminal may look very similar to when you build &nbsp;*&nbsp;<span translate="no">Loop 3</span>&nbsp;*&nbsp; from a script.
+!!! warning "Not &nbsp;_<span translate="no">Loop</span>_"
+    The output you see in the Terminal may look very similar to when you build &nbsp;_<span translate="no">Loop 3</span>_&nbsp; from a script.
     
-    It is pulling down a clone from a different location (&nbsp;<span translate="no">LoopKit/LoopCaregiver</span>&nbsp;). It uses some modules from *Loop*. The target and scheme are automatically selected for *&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (<span translate="no">LoopKit/LoopCaregiver</span>&nbsp;). It uses some modules from *Loop*. The target and scheme are automatically selected for *&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* and if you follow directions for a paid Developer account, the signing is automatic.
 
 ## Use &nbsp;<span translate="no">Loop Caregiver</span>
 
@@ -96,7 +96,7 @@ You must add a Looper to continue with &nbsp;<span translate="no">Loop Caregiver
     * Enter the name of the Looper, the *Nightscout* URL (use &nbsp;<span translate="no"> http**s**://</span>&nbsp;) and `API_SECRET`
     * Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone
 
-You can add additional Looper's under settings. (*&nbsp;<span translate="no">Loop Caregiver</span>&nbsp;* can monitor more than one Looper).
+You can add additional Looper's under settings. (*<span translate="no">Loop Caregiver</span>&nbsp;* can monitor more than one Looper).
 
 ### <span translate="no">Loop Caregiver</span>&nbsp; Main Screen
 
