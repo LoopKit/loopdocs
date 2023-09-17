@@ -103,7 +103,7 @@ The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17%
     * This was tested in a few forks but not included into dev until recently
     * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
 * Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
-* &nbsp;<span translate="no">Integral Retrospective Correction</span>, when enabled:
+* <span translate="no">Integral Retrospective Correction</span>, when enabled:
     * changes the Loop prediction model and thus can affect the recommended dose
     * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
 
