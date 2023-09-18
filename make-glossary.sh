@@ -3,8 +3,5 @@
 # execute this script after making changes to includes/tooltip-list.txt
 # This will make a parallel change to docs/faqs/glossary.md
 #
-cp -p includes/tooltip-list.txt tmp.txt
-sed -i.bak 's/\*\[/\n\*\*/' tmp.txt
-sed -i.bak 's/\]/\*\*/' tmp.txt
-cat glossary_header.txt tmp.txt > docs/faqs/glossary.md
-rm tmp.txt tmp.txt.bak
+cat glossary_header.txt > docs/faqs/glossary.md
+sed -E 's/\*\[([^]]+)\]: (.*)/\n\*\*<span translate="no">\1<\/span>\*\*\&nbsp\; (\1): \2/' includes/tooltip-list.txt >> docs/faqs/glossary.md
