@@ -109,7 +109,10 @@ Bluetooth must be off on the old phone.
 
 It is now time to transfer the CGM to the new phone.
 
-#### Dexcom App
+* [Dexcom CGM](#dexcom-cgm)
+* [Libre CGM](#libre-cgm)
+
+#### Dexcom CGM
 
 The Dexcom app might have transferred successfully, but it’s not a bad idea to install that fresh from the App Store on the new phone. Doing so may be required.
 
@@ -127,7 +130,7 @@ The Dexcom app might have transferred successfully, but it’s not a bad idea to
 * Wait for Dexcom to connect
 * On new phone, add the CGM to Loop
 
-#### Libre
+#### Libre CGM
 
 Placeholder for Libre instructions. Suggested procedures from the community are encouraged.
 
