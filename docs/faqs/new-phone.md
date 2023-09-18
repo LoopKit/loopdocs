@@ -140,11 +140,10 @@ Placeholder for Libre instructions. Suggested procedures from the community are 
 1. Keep closed loop disabled until you complete the full transfer and checkout.
 
     !!! important "Check Every Setting"
-        Make sure all the basal, ISF, CR, Insulin Selection and ranges are correct before enabling closed loop.
-
-        Check permissions and notification settings.
-
-        Check Focus mode settings - make sure Loop and CGM apps have permission for all Focus modes.
+        * Make sure all the basal, ISF, CR, Insulin Selection and ranges are correct
+        * Check Dosing Strategy selection
+        * Check permissions and notification settings
+        * Check Focus mode settings - make sure Loop and CGM apps have permission for all Focus modes
 
 1. Do a manual bolus of the smallest possible amount to make sure Loop and pump are working.
 
