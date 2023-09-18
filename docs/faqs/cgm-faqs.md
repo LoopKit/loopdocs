@@ -79,6 +79,7 @@ sequenceDiagram
     Note over     dexcom:   New sensor warmup... ⏱️
     user     ->>  loop_app: Add CGM
     user     ->>  loop_app: Enter new Transmitter Serial Number
+    user     ->>  loop_app: Enable Remote Upload
     dexcom   -->> user:     New Sensor operational
     deactivate dexcom
 ```

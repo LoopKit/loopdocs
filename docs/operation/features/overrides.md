@@ -135,10 +135,7 @@ When you've made your selections, save the preset using the "Save" button in the
 
 ### Select 1% Insulin Needs
 
-!!! warning "Not Available in 2.2.x"
-    This feature is only available in Loop 3 or later.
-
-    * Not available in Loop 2.2.x
+Available with Loop 3.
 
 The selectable Overall Insulin Needs values are not limited by the default picker values of 10%.
 
