@@ -36,6 +36,19 @@ If you later decide to use a different CGM type, you must first delete the CGM a
 
 *   For Dexcom G5, G6 or ONE, you must delete the CGM when you change transmitters (about once every 90 days)
 
+### Remote Upload from Loop
+
+Loop provides an option to upload CGM values to a remote service like Nightscout or Tidepool. In many cases this can be a preferred solution.
+
+With Loop 3, the data-store on the Loop phone keeps a full week of data. If there is an interruption in the upload, when it is restored, Loop will fill in up to 1-week of CGM data that was not previously uploaded.
+
+Some people use Dexcom Share to feed their remote services. There have been outages with Share. When those occur, the data is not back-filled like it is with Loop.
+
+This is the reason why there's a comment under each CGM below to select Upload Readings.
+
+![graphic showing upload readings selection](img/cgm-upload-readings.jpg){width="350"}
+{align="center"}
+
 ### Dexcom G5, G6, ONE
 
 To use the Dexcom G5, G6 or ONE:
@@ -69,6 +82,7 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
 ![picture of transmitter box with arrow and marking of transmitter id (sn)](img/dexcom-g6-transmitter-box-sn.svg){width="350"}
 {align="center"}
 
+It is recommended that you enable [Remote Upload from Loop](#remote-upload-from-loop).
 
 #### Change Dexcom Sensor
 
@@ -86,6 +100,7 @@ When you change the Dexcom G5, G6 or ONE Transmitter, you need to delete your CG
 
     The Dexcom G7 is handled differently - Loop automatically detects when a new sensor/transmitter pair is added to the Dexcom G7 app.
 
+Your selection to enable [Remote Upload from Loop](#remote-upload-from-loop) must be repeated with each new Transmitter. The default setting is disabled.
 
 #### About *Dexcom Share* credentials
 
@@ -97,7 +112,7 @@ This is only available on Loop 3.
 
 You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.
 
-Minimal documentation is provided.
+It is recommended that you enable [Remote Upload from Loop](#remote-upload-from-loop).
 
 ![graphic showing Loop searching for G7](img/g7.svg){width="500"}
 {align="center"}
