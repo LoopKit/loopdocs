@@ -36,7 +36,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 | App | Fork from this Address | Documentation |
 |---|---|---|
 | <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
-|Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
+| <span translate="no">Loop Follow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [<span translate="no">Loop Follow</span>](https://www.loopandlearn.org/loop-follow)|
 
 
 ## Configure Secrets for this App
@@ -149,7 +149,7 @@ After successfully performing the Add Identifiers Action, you will see the ident
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
 | <span translate="no">Loop Caregiver</span> | <span translate="no">Loop Caregiver</span> | com.TEAMID.loopkit.LoopCaregiver |
-| Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
+| <span translate="no">Loop Follow</span> | <span translate="no">LoopFollow</span> | com.TEAMID.LoopFollow |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 

@@ -441,7 +441,7 @@ These steps are needed to reset your `Match-Secrets`:
 !!! note "To Do"
     set up headers that will be added, with graphics, for later use.
 
-## <span translate="no">Annotation</span> Message
+## <span translate="no">Annotation</span>&nbsp;Message
 
 ### Agreement not signed
 
