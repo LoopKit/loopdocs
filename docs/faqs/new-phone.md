@@ -56,7 +56,7 @@ If you cannot keep the old phone, or it is not available, then skip ahead to the
 * Use WiFi with the old phone and use your new phone as a cellular hot-spot as needed
 * Keep the CGM on the old phone
     * If using Dexcom, use the Dexcom app on the old phone
-    * If using Libre, the Libre is connected to&nbsp;<span translate="no">Loop</span>&nbsp;on the old phone
+    * If using&nbsp;<span translate="no">Libre</span>;, the&nbsp;<span translate="no">Libre</span>&nbsp;is connected to&nbsp;<span translate="no">Loop</span>&nbsp;on the old phone
 
 ## <span translate="no">Loop</span>&nbsp;with the New Phone
 
@@ -91,7 +91,7 @@ On old phone (if available):
 1. <span translate="no">Loop</span>&nbsp;app, turn off the slider for the RileyLink if using Medtronic or Eros Pods
     * Do not delete the pump; if using pods, this cannot be reversed
 1. Phone Settings, Bluetooth
-    * Forget the connections to the CGM (Dexcom or Libre)
+    * Forget the connections to the CGM (Dexcom or&nbsp;<span translate="no">Libre</span>)
     * Do not forget anything that says&nbsp;<span translate="no">TWI_BOARD</span>&nbsp;or&nbsp;<span translate="no">NXP_BLE</span>&nbsp;(this is your&nbsp;<span translate="no">DASH</span>&nbsp;pod)
 1. Phone Settings, Bluetooth: Disable Bluetooth
 
