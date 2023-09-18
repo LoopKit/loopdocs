@@ -79,6 +79,8 @@ The list below contains the **minimum** versions of [macOS](computer.md#check-yo
 
 **Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
 
+* Xcode 15.x (when released) and Ventura (macOS 13.0 or higher) is required for
+    * iOS 17 (when released))
 * Xcode 14.3 or higher and Ventura (macOS 13.0 or higher) is required for
     * iOS 16.4 and newer
 * Xcode 14.2 or higher is required for
