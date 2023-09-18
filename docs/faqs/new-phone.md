@@ -69,7 +69,7 @@ It is easier if you transfer information from the old phone to the new phone bef
     * If this is not possible, you will need to start a new pod with the new phone
     * Medtronic users will have all their information transferred but will only have one phone connected to the RileyLink
 1. Install&nbsp;<span translate="no">Loop</span>&nbsp;on the new phone (all your settings should be there)
-    * Install from [<span translate="no">TestFlight</span>](#install-from-testflight) for <span translate="no">Browser Build</span> or from Xcode for [<span translate="no">Mac-Xcode</span>&nbsp;Build](#build-using-mac-xcode)
+    * Install from&nbsp;[<span translate="no">TestFlight</span>](#install-from-testflight)&nbsp;for&nbsp;<span translate="no">GitHub</span>&nbsp; Build or from Xcode for&nbsp;[<span translate="no">Mac-Xcode</span>&nbsp;Build](#build-using-mac-xcode)
 1.  As soon as you install&nbsp;<span translate="no">Loop</span>&nbsp;on the new phone, go ahead and disable Closed Loop.
     * Keep closed loop disabled until you complete the full transfer and checkout.
 
