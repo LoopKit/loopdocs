@@ -1,8 +1,11 @@
 # Glossary
 
-Each item in the glossary is also a Tooltip.
+Each item in the glossary is also a Tooltip. The word or phrase is repeated in parentheses to assist those using Google Translate.
 
-A Tooltip is visible as a dashed underline word or phrase.
+When Google Translate is selected:
 
-If you hover your mouse or tap on a mobile device, the phrase associated with each word is displayed.
+* Tooltips, indicated by dashed underline, continue to be shown in English
+* On the Glossary page
+    * The first instance (in bold) remains in English
+    * The second instance (in parentheses) is translated to your selected language
 
