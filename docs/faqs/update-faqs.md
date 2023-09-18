@@ -30,6 +30,10 @@ In both cases, you build the code to install over an existing app on your phone 
         * Double click on the Loop.xcworkspace file in that folder
         * This opens Xcode and you can just plug in your phone and build with your existing download
 
+## What if I'm changing phones?
+
+There's a whole page devoted to just this topic: [New Phone](new-phone.md)
+
 ## When Should I Update?
 
 * **Best Practice**
@@ -137,33 +141,6 @@ Does not matter. Changing the branch and even the fork is an "updating Loop" act
 * In this case, the database storage is different between Loop 3 and Loop 2.2.x
 * Loop 3 can read the data stored by Loop 2.2.x, but the reverse is not true
 * If you are downgrading from Loop 3 to FreeAPS, you need to first record settings, delete the old app and then build the desired app, enter your settings and add your pump (new pod required for Omnipod)
-
-## What if I'm changing phones?
-
-Changing phones is a little different than just [updating](../build/updating.md).
-
-* When you change phones, *Apple* will force you to the latest iOS version for your new phone
-* Update your old phone to the latest iOS the hardware supports - this simplifies the automatic transfer process *Apple* provides to move all your data and apps from your old phone to your new phone
-
-!!! abstract "New Phone Checklist for *Mac-Xcode Build*"
-    * Make sure your Mac and Xcode versions are compatible with that iOS version
-    * If your old phone cannot support the latest iOS version, then build Loop to a simulator that matches the expected iOS for your new phone
-    * If your Mac will not support the correct version of Xcode needed by your new phone, consider using [Browser Build](../gh-actions/gh-overview.md)
-
-!!! abstract "New Phone Checklist for *Browser Build*"
-    * The Loop app will install from TestFlight onto the most recent iOS
-    * If a new version of Loop is available, updating before transfer to a new phone is preferred but not required
-
-!!! abstract "Transfer to the New Phone"
-    * You can use the old phone as your looping phone until you get the new one ready
-        * When turning the old phone in for a rebate, you typically have a week or two before you have to turn it in
-        * When you transfer information from your old phone to your new phone, all the Loop settings files get copied to the new device including information about the pod (if one is running)
-        * Install Loop on the new phone (all your settings should be there)
-            * Install via *Mac-Xcode Build* or from *TestFlight* for *Browser Build*
-        * It's a good idea to do this at pod change time, just in case, and to record (or screenshot) all your settings
-    * Once the transfer is completed check [all your settings and all your permissions](../loop-3/settings.md) on the new phone
-
-You can find more detailed instruction in [Loop and Learn: New Phone](https://www.loopandlearn.org/new-device). That article includes Dexcom instructions for the new phone.
 
 ## How long does it take?
 
