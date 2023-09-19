@@ -7,7 +7,7 @@ Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtron
 Libre Support (for some Libre sensors):
 
 * [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) 
+* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code) 
 
 Loop 2.2.x supports Dexcom G4 with share, G5, G6, Dexcom ONE, Dexcom Share and the Medtronic CGM systems compatible with Looping pumps.
 

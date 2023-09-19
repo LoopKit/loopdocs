@@ -18,7 +18,6 @@
 
     - **"What about Libre sensors?"**
         1. Libre support is available in the [Loop-dev branch](../version/build-dev.md) - be sure to read information at that link about running the dev branch
-        1. A [fork of Loop](https://www.loopandlearn.org/main-lnl-patches) is available with added Libre support for released code (Loop 3.2.x)
     - **"What about Eversense?"** Refer to [CGMs Not Supported in Loop](#cgms-not-supported-in-loop)
 
 
@@ -72,7 +71,7 @@ Loop 3 can use Nightscout as a remote source for CGM data. This requires cell or
 Libre Support (for some Libre sensors) is available with Loop-dev or by adding customizations.
 
 * [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) 
+* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code/) 
 
 Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Loop 3.0 and later allows the use of Nightscout as a CGM source.
 
