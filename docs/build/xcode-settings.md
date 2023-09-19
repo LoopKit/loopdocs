@@ -5,13 +5,6 @@
     - 5 minutes to add your Apple ID, assuming you remember your password
 
 !!! abstract "Summary"
-    ALERT: the Xcode menu structure has changed:
-
-    * For Xcode 13.x and earlier: Xcode->Preferences
-    * For Xcode 14.x and later: Xcode->Settings
-
-    The LoopDocs instructions use Settings.
-
     - Verify that Command Line Tools are installed: Xcode-> Settings -> choose Locations tab.
     - Add your Apply ID:  Xcode-> Settings -> choose Accounts tab.
 
