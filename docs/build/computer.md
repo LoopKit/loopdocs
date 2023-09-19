@@ -34,22 +34,24 @@
         * Updating to a newer Loop release
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
-If you have access to a computer with MacOS 13.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+If you have access to a computer with MacOS 13.5 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
 
 ## Compatible Versions
 
 With the [release of Loop 3](../version/releases.md#loop-3-compatibility):
 
+* Mac operating system of Ventura, macOS 13.5 must be used if running on a phone with iOS 17.0 or newer
 * Mac operating system of Ventura, macOS 13.x must be used if running on a phone with iOS 16.4 or newer
 * Minimum Mac operating system is Monterey, macOS 12.5 or higher for phones running iOS 15.x or 16.3.1 or older
 
 The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
 
+* ** iOS 17.0 or newer**, the minimum macOS is Ventura (13.5)
 * ** iOS 16.4 or newer**, the minimum macOS is Ventura (13.0)
 * ** iOS 15.x or 16.3.1 or older**, the minimum macOS is Monterey (12.5)
 * Loop 3, the minimum macOS is Monterey (12.5)
 
-If your macOS does not meet the minimum, check to see if you can [update your macOS](#check-your-macos-version) or consider using the [Browser Build](../gh-actions/gh-overview.md) method, which works on any computer.
+If your macOS does not meet the minimum, use the [Browser Build](../gh-actions/gh-overview.md) method, which works on any computer and supports all the iOS listed above.
 
 !!! warning "iOS Dictates Your Computer Needs"
 
@@ -63,7 +65,9 @@ Do not use any of the beta macOS versions. (If you don't know what that means, y
 
 To find your macOS version, click on the Apple icon in the computer's upper left corner and select `About this Mac`. The graphic below highlights the macOS version with a red rectangle. Your computer can be a MacBook, iMac, macMini, etc. It will work to build Loop if it has the minimum required macOS version and enough storage.
 
-With the Ventura macOS version, the `About this Mac` display changed. The left side of the graphic shows Monterey (or earlier) and the right side shows Ventura. Both styles of display indicate the macOS on this screen (red rectangle). For Ventura, when you tap on the `More Info` icon, it opens the General -> About screen from the System Settings menu. This is very similar to the phone Settings -> General -> About screen.
+With the Ventura macOS version, the `About this Mac` display changed. For Ventura, when you tap on the `More Info` icon, it opens the General -> About screen from the System Settings menu. This is very similar to the phone Settings -> General -> About screen.
+
+Sonoma, macOS 14.0, is expected to be released 26 September 2023.
 
 ![image showing macOS and system details](img/macos-12-13.svg){width="750"}
 
@@ -73,7 +77,7 @@ If you do not have the required minimum macOS version
 * For macOS 13.0 or later, click on the Apple and choose `System Settings`
     * Select `General` and `Software Update`, just like you would on the phone interface
 
-Apple says upgrading to macOS Monterey or Ventura requires 26 GB of available storage.
+Apple says upgrading to macOS Ventura requires 26 GB of available storage.
 
 ## Check the Space Available
 
@@ -97,26 +101,9 @@ Ventura is required for building Loop on a phone running iOS 16.4 or higher with
 * Mac Pro introduced in 2019 or later
 * get the full list from [Apple for Ventura](https://support.apple.com/kb/HT213264)
 
-## Which Macs Are Compatible with macOS Monterey?
-
-Monterey can be used for building Loop with the Mac-Xcode method when building to a phone at iOS 16.3.1 or older. You can install Monterey on the following:
-
-* MacBook Pro, early 2015 or newer
-* MacBook Air, early 2015 or newer
-* MacBook, early 2016 or newer
-* Mac Mini, late 2014 or newer
-* iMac, 2015 or newer
-* iMac Pro, 2017 or newer
-* Mac Pro, late 2013 or newer
-* get the full list from [Apple for Monterey](https://support.apple.com/en-us/HT212551)
-
 ## Older Macs
 
-Several experienced Loopers have reported success using OpenCore-Legacy-Patcher to enable older Macs computers to use new versions of the operating system. Use this link at your own risk. This is not suggested for novice Mac users.
-
-* [OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/)
-
-Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
+Look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required). Works with any computer (PC or Mac or Tablet).
 
 ## Next Step:
 
@@ -124,5 +111,3 @@ If you already have an [Apple Developer ID](apple-developer.md) or you are using
 
 !!! warning "Free ID"
     The free ID method only works when using the Mac-Xcode build method. The [Browser Build](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.
-
-
