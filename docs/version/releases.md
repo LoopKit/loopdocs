@@ -40,9 +40,10 @@ Be aware that updates to LoopDocs may take some time after a new release comes o
 
 *Loop* v3.2.3 was released on September 19, 2023.
 
-This is a minor release to Mac-Xcode build method to work with Xcode 15, required by iOS 17.
+This minor release was required for those who build using the Mac-Xcode method.
 
-There are no changes to app functionality.
+* There are no changes to app functionality
+* Version 3.2.2 cannot be build using Xcode 15
 
 ### Loop v3.2.2
 
