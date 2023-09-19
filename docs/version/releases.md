@@ -43,7 +43,7 @@ Be aware that updates to LoopDocs may take some time after a new release comes o
 This minor release was required for those who build using the Mac-Xcode method.
 
 * There are no changes to app functionality
-* Version 3.2.2 cannot be build using Xcode 15
+* Version 3.2.2 and earlier cannot be built using Xcode 15, see [Cycle Inside Loop](../build/build-errors.md#cycle-inside-loop)
 
 ### Loop v3.2.2
 
