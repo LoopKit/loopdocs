@@ -85,7 +85,7 @@ The graphic below shows the Google Translate Tool when maximized (default) for a
 
 To modify the language choice for the whole site, copy the line below and paste it into the URL and then choose the desired language from the list
 
-```
+``` { .bash .copy title="Copy and Paste in Browser URL to return to original version" }
 https://loopkit.github.io/loopdocs/translate
 ```
 
