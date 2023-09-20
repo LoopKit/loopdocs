@@ -1,21 +1,3 @@
-## Google Translate Links
-
-Click on a language from the list below to turn on Google's automatic translation.
-
-* Every LoopDocs page gets automatically translated to the selected language as do links to other websites from LoopDocs
-* The Google Translate Tool will appear at the top of each page
-    * LoopDocs how-to: [Google Translate Tool Instructions](#google-translate-tool-instructions)
-    * Google how-to: [Google Translate Help Link](https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop)
-
-!!! danger "Automatic Translation"
-    These links connect this site to the Google Translation service.
-
-    * No human has reviewed the translated information for accuracy
-    * Please use the translation with care
-    * Not available in all regions
-    * Some links might not work as expected
-    * Any "code" not protected by blocks may not appear correctly - be sure to click on Original to make sure you a viewing code properly
-
 ## Language List
 
 [عربي](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ar)
@@ -67,6 +49,24 @@ Click on a language from the list below to turn on Google's automatic translatio
 中文（[简体](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-CN))
 
 中文（[繁體](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-TW))
+
+## Google Translate Links
+
+Click on a language from the list below to turn on Google's automatic translation.
+
+* Every LoopDocs page gets automatically translated to the selected language as do links to other websites from LoopDocs
+* The Google Translate Tool will appear at the top of each page
+    * LoopDocs how-to: [Google Translate Tool Instructions](#google-translate-tool-instructions)
+    * Google how-to: [Google Translate Help Link](https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop)
+
+!!! danger "Automatic Translation"
+    These links connect this site to the Google Translation service.
+
+    * No human has reviewed the translated information for accuracy
+    * Please use the translation with care
+    * Not available in all regions
+    * Some links might not work as expected
+    * Any "code" not protected by blocks may not appear correctly - be sure to click on Original to make sure you a viewing code properly
 
 ## Google Translate Tool Instructions
 
