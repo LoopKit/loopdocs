@@ -85,6 +85,19 @@ If the build fails again, look through the list below and see if you can match y
 - WE CANNOT HELP without version numbers and [screenshots](#screenshots)
 - Do not take pictures of your computer screen with your phone, use [screenshots](#screenshots)
 
+## New with Xcode 15
+
+### Cycle inside Loop
+
+If you build any older version of Loop with Xcode 15, you will see this error: `Cycle inside Loop: building could produce unreliable results`.
+
+Solution: Build Loop 3.2.3 or later
+
+!!! tips "What about other forks"
+    Other forks are not being maintained.
+
+    If you are using FreeAPS or Loop with Patches (from the loopnlearn GitHub username), it is time to switch to released code.
+
 ## New with Xcode 14
 
 This may change, but for now, the watchOS simulator is not automatically included with the Xcode 14.x download and install. Some version of the watchOS simulator is required to build Loop, independent of whether you use a watch.

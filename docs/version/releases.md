@@ -19,7 +19,7 @@ Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your 
 
 ## Current Release
 
-The current released version for Loop main is v3.2.2. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for Loop main is v3.2.3. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -35,6 +35,15 @@ Release information is always found on the [GitHub LoopKit/Loop release page](ht
 Be aware that updates to LoopDocs may take some time after a new release comes out.
 
 ## Loop 3 Version History
+
+### Loop v3.2.3
+
+*Loop* v3.2.3 was released on September 19, 2023.
+
+This minor release was required for those who build using the Mac-Xcode method.
+
+* There are no changes to app functionality
+* Version 3.2.2 and earlier cannot be built using Xcode 15, see [Cycle Inside Loop](../build/build-errors.md#cycle-inside-loop)
 
 ### Loop v3.2.2
 
