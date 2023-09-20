@@ -42,7 +42,7 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 ## Procure a New Phone
 
 1. Procure the new phone and keep the old one (if possible)
-    * [<span translate="no">Loop</span>&nbsp;with the old phone](#loop-with-the-old-phone) until it is convenient to switch to the new phone
+    * [<span translate="no">Loop</span>&nbsp;with the old phone](#loopwith-the-old-phone) until it is convenient to switch to the new phone
 1. Transfer your information to your new phone
     * Let the new phone vendor help you
     * Use an [iCloud back-up](https://support.apple.com/en-us/HT210217) for the transfer
@@ -50,7 +50,7 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 
 ### <span translate="no">Loop</span>&nbsp;with the Old Phone
 
-If you cannot keep the old phone, or it is not available, then skip ahead to the [<span translate="no">Loop</span>&nbsp;with the New Phone](#loop-with-the-new-phone).
+If you cannot keep the old phone, or it is not available, then skip ahead to the [<span translate="no">Loop</span>&nbsp;with the New Phone](#loopwith-the-new-phone).
 
 * You can use the old phone to&nbsp;<span translate="no">Loop</span>&nbsp;until you are ready to switch
 * Use WiFi with the old phone and use your new phone as a cellular hot-spot as needed
@@ -69,7 +69,7 @@ It is easier if you transfer information from the old phone to the new phone bef
     * If this is not possible, you will need to start a new pod with the new phone
     * Medtronic users will have all their information transferred but will only have one phone connected to the RileyLink
 1. Install&nbsp;<span translate="no">Loop</span>&nbsp;on the new phone (all your settings should be there)
-    * Install from&nbsp;[<span translate="no">TestFlight</span>](#install-from-testflight)&nbsp;for&nbsp;<span translate="no">GitHub</span>&nbsp; Build or from Xcode for&nbsp;[<span translate="no">Mac-Xcode</span>&nbsp;Build](#build-using-mac-xcode)
+    * Install from&nbsp;[<span translate="no">TestFlight</span>](#install-fromtestflight)&nbsp;for&nbsp;<span translate="no">GitHub</span>&nbsp; Build or from Xcode for&nbsp;[<span translate="no">Mac-Xcode</span>&nbsp;Build](#build-using-mac-xcode)
 1.  As soon as you install&nbsp;<span translate="no">Loop</span>&nbsp;on the new phone, go ahead and disable Closed Loop.
     * Keep closed loop disabled until you complete the full transfer and checkout.
 
@@ -110,7 +110,7 @@ Bluetooth must be off on the old phone.
 It is now time to transfer the CGM to the new phone.
 
 * [Dexcom CGM](#dexcom-cgm)
-* [<span translate="no">Libre</span>&nbsp;CGM](#libre-cgm)
+* [<span translate="no">Libre</span>&nbsp;CGM](#librecgm)
 
 #### Dexcom CGM
 
