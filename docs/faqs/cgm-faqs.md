@@ -91,7 +91,7 @@ sequenceDiagram
 
 Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop).
 
-See [What CGMs does Loop work with?](#what-cgms-does-loop-work-with).
+See [What CGMs can I use with Loop?](#what-cgms-can-i-use-with-loop).
 
 ## Can Loop read CGM data from Nightscout?
 

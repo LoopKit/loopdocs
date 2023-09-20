@@ -12,7 +12,7 @@
 ??? abstract "Page Summary (click to open/close)"
     **You must build Loop every 90 days when you use the &nbsp;<span translate="no">GitHub</span>&nbsp;build method - this is a &nbsp;<span translate="no">TestFlight</span>&nbsp;requirement.**
 
-    Most users will configure for automatic build when they update to Loop 3.4: see [GitHub Build Update](#github-build-update).
+    Most users will configure for automatic build when they update to Loop 3.4: see [GitHub Build Update](#githubbuild-update).
 
     If you are running Loop-dev, be sure to review [GitHub Build for dev](#github-build-for-dev)
 
@@ -244,7 +244,7 @@ When you see the secret, GH_PAT, tap on the pencil and then scroll down until yo
 ![update secret dialog](img/update-secret-dialog.png){width="300"}
 {align="center"}
 
-Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [GitHub Build Update](#github-build-update) instructions to start a new build.
+Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [GitHub Build Update](#githubbuild-update) instructions to start a new build.
 
 ## <span translate="no">GitHub</span> Build for dev
 
