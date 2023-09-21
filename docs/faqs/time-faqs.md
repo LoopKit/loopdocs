@@ -3,18 +3,23 @@
 !!! danger "Loop Phone is a Medical Device"
     There have been several instances where a Looper disabled automatic time to change the time on their Loop phone.
 
+    With Loop 3, this change in time is detected and your app will complain loudly.
+
     One scenario should be enough to convince you not to do this:
 
     * Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)
     * Later you return time to automatic and think nothing of it
     * As soon as automatic time is restored, Loop thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range
-    * Because that future value is "stuck", Loop keeps providing more insulin
+    * Because that future value is "stuck", Loop version 2.2 keeps providing more insulin
+    * Loop 3 detects future glucose and all automatic dosing will stop
 
 ### Force Automatic Time
 
 If the iOS Setting for Screen Time is configured to Lock Screen Time Settings and a passcode is entered, then the iPhone is forced to stay on automatic time.
 
 ### Remove Future Glucose
+
+If you have future glucose from a manual time change or just entering something into Apple Health with the wrong timestamp:
 
 * You **MUST** go into Apple Health and remove any glucose values in the future
 * Loop 2.2.x will use those future readings.
