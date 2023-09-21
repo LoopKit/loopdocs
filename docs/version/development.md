@@ -225,6 +225,10 @@ Fixed with [PR 16: Fix parsing of age field of message](https://github.com/LoopK
 * Most sensors report the time with very little offset between time of arrival and time of sensing
 * If the time discrepancy is large, the error (using one byte instead of two for age of the reading) could cause CGM values to appear as duplicate readings in Loop
 
+#### Remote Services Update
+
+The code that feeds Loop data to remote services like Tidepool and Nightscout have been improved to be more robust.
+
 ## What are branches?
 
 There is a lot of discussion about "branches" with Loop but the concept is simple. Basically, they are all slightly different versions of Loop...kind of like different edits of the same book.
