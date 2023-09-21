@@ -10,6 +10,10 @@
     * As soon as automatic time is restored, Loop thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range
     * Because that future value is "stuck", Loop keeps providing more insulin
 
+### Force Automatic Time
+
+If the iOS Setting for Screen Time is configured to Lock Screen Time Settings and a passcode is entered, then the iPhone is forced to stay on automatic time.
+
 ### Remove Future Glucose
 
 * You **MUST** go into Apple Health and remove any glucose values in the future
@@ -26,7 +30,6 @@ One added improvement with Loop 3 is it very aggressive at warning you if you ma
 
 ![notification displayed when automatic time is disabled on Loop phone](../loop-3/img/loop-3-omnipod-time-change.svg){width="350"}
 {align="center"}
-
 
 The rest of this page is about changing time zones.
 
@@ -59,7 +62,6 @@ If you want more information, click on this link: [Time Zone](../loop-3/displays
 !!! warning "Medtronic Users"
 
     **Do not use the Medtronic pump menus to change your pump's time when Looping.**
-
 
 ## iPhone
 
