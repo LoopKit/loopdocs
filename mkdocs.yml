@@ -102,6 +102,7 @@ plugins:
             'nightscout/update_user.md': 'nightscout/update-user.md'
             'operation/features/workout.md': 'operation/features/overrides.md'
             'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
+            'troubleshooting/yellow-red-loop.md': 'troubleshooting/red-loop.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -190,7 +191,7 @@ nav:
 - Troubleshoot:
     - 'Troubleshooting Overview': 'troubleshooting/overview.md'
     - 'Loop App Crashes': 'troubleshooting/loop-crashing.md'
-    - 'Red Loop': 'troubleshooting/yellow-red-loop.md'
+    - 'Red Loop': 'troubleshooting/red-loop.md'
     - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
