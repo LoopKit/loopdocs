@@ -86,7 +86,7 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 
 ## Use Automatic Time on Loop Phone
 
-If you have modified the Loop time (not changed time zone, but turned off automatic time and manually changed the time), please read: [Loop Phone Must be on Automatic Time](../troubleshooting/time-change.md#loop-phone-must-be-on-automatic-time).
+If you have modified the Loop time (not changed time zone, but turned off automatic time and manually changed the time), please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#loop-phone-must-be-on-automatic-time).
 
 ## Turn Off Automatic Updates
 
