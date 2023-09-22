@@ -7,7 +7,7 @@ The RileyLink (or compatible device) screen is accessed by clicking on the image
 
 ## Signal Loss
 
-If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: Reset Loop-to-Pump Communications](../../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications) for suggestions.
+If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: Reset Loop-to-Pump Communications](../../troubleshooting/red-loop.md#reset-loop-to-pump-communications) for suggestions.
 
 With Loop 3
 
