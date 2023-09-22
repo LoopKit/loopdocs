@@ -84,6 +84,12 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 !!! tip "Low Power Mode"
     With newer iOS (15 and 16), some people have reported Loop continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode.  Otherwise, best practice is to avoid Low Power Mode.
 
+## Use Automatic Time
+
+Be sure to set the phone to automatic time. Do not try to defeat a game by modifying time on the same phone used to control your insulin.
+
+Please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#loop-phone-must-be-on-automatic-time).
+
 ## Turn Off Automatic Updates
 
 Apple provides updates regularly to the iOS.  Often, these updates include critical security patches in addition to improved new features.
