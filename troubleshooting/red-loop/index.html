@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../development/">
+        <link rel="prev" href="../loop-crashing/">
       
       
-        <link rel="next" href="../loopworkspace/">
+        <link rel="next" href="../pod-pairing/">
       
       <link rel="icon" href="../../loop-logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
     
     
       
-        <title>Build Loop Dev - LoopDocs</title>
+        <title>Red Loop - LoopDocs</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-development-code" class="md-skip">
+        <a href="#red-loop-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build Loop Dev
+              Red Loop
             
           </span>
         </div>
@@ -283,13 +283,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../troubleshooting/overview/" class="md-tabs__link">
+      <a href="../overview/" class="md-tabs__link md-tabs__link--active">
         Troubleshoot
       </a>
     </li>
@@ -299,15 +301,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../overview-version/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../version/overview-version/" class="md-tabs__link">
         Version
       </a>
     </li>
@@ -1561,14 +1561,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
       
       
       
@@ -1577,7 +1579,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Troubleshoot
@@ -1590,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         Troubleshooting Overview
       </a>
     </li>
@@ -1604,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
+      <a href="../loop-crashing/" class="md-nav__link">
         Loop App Crashes
       </a>
     </li>
@@ -1616,11 +1618,180 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/red-loop/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Red Loop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Red Loop
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#red-loop-overview" class="md-nav__link">
+    Red Loop Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typical-causes-for-red-loop" class="md-nav__link">
+    Typical Causes for Red Loop
+  </a>
+  
+    <nav class="md-nav" aria-label="Typical Causes for Red Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lost-pod-information" class="md-nav__link">
+    Lost Pod Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-loop-to-pump-communications" class="md-nav__link">
+    Reset Loop-to-Pump Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgm-values-are-not-being-collected-by-loop" class="md-nav__link">
+    CGM Values Are Not Being Collected by Loop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-health" class="md-nav__link">
+    Apple Health
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background-app-refresh" class="md-nav__link">
+    Background App Refresh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nightscout" class="md-nav__link">
+    Nightscout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phone-storage-is-full" class="md-nav__link">
+    Phone Storage is Full
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-reasons-for-red-loop" class="md-nav__link">
+    Other Reasons for Red Loop
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Reasons for Red Loop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pump-is-not-responding" class="md-nav__link">
+    Pump is Not Responding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolving-frequent-red-loops" class="md-nav__link">
+    Resolving Frequent Red Loops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posting-for-help" class="md-nav__link">
+    Posting for Help
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-else" class="md-nav__link">
+    What Else?
+  </a>
+  
+    <nav class="md-nav" aria-label="What Else?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rileylink-is-broken" class="md-nav__link">
+    RileyLink is Broken
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-has-failed" class="md-nav__link">
+    Battery has Failed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orangelink-firmware" class="md-nav__link">
+    OrangeLink Firmware
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1632,7 +1803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
+      <a href="../pod-pairing/" class="md-nav__link">
         Pod Pairing Failures
       </a>
     </li>
@@ -1646,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
+      <a href="../omnipod-faults/" class="md-nav__link">
         Omnipod Faults
       </a>
     </li>
@@ -1660,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
+      <a href="../pump-errors/" class="md-nav__link">
         MDT Pump Errors
       </a>
     </li>
@@ -1694,16 +1865,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
       
       
       
@@ -1712,7 +1881,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           Version
@@ -1725,7 +1894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview-version/" class="md-nav__link">
+      <a href="../../version/overview-version/" class="md-nav__link">
         Version Overview
       </a>
     </li>
@@ -1739,7 +1908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../releases/" class="md-nav__link">
+      <a href="../../version/releases/" class="md-nav__link">
         Loop Releases
       </a>
     </li>
@@ -1781,7 +1950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../simulator/" class="md-nav__link">
+      <a href="../../version/simulator/" class="md-nav__link">
         Simulator Build
       </a>
     </li>
@@ -1795,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../development/" class="md-nav__link">
+      <a href="../../version/development/" class="md-nav__link">
         Loop Development
       </a>
     </li>
@@ -1807,124 +1976,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Build Loop Dev
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../version/build-dev/" class="md-nav__link">
         Build Loop Dev
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Headers on this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#building-development-code" class="md-nav__link">
-    Building Development Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#buildloopdev-script" class="md-nav__link">
-    BuildLoopDev Script
-  </a>
-  
-    <nav class="md-nav" aria-label="BuildLoopDev Script">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildloopdev-script-libre" class="md-nav__link">
-    BuildLoopDev Script Libre
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#buildloopdev-other-branches" class="md-nav__link">
-    BuildLoopDev Other Branches
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-loop-dev" class="md-nav__link">
-    Update Loop-dev
-  </a>
-  
-    <nav class="md-nav" aria-label="Update Loop-dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#github-build-method" class="md-nav__link">
-    GitHub Build Method
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mac-xcode-build-method" class="md-nav__link">
-    Mac-Xcode Build Method
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loop-dev-version" class="md-nav__link">
-    Loop-dev Version
-  </a>
-  
-    <nav class="md-nav" aria-label="Loop-dev Version">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identify-loop-dev-version" class="md-nav__link">
-    Identify Loop-dev Version
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1936,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loopworkspace/" class="md-nav__link">
+      <a href="../../version/loopworkspace/" class="md-nav__link">
         LoopWorkspace
       </a>
     </li>
@@ -2370,30 +2426,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#building-development-code" class="md-nav__link">
-    Building Development Code
+  <a href="#red-loop-overview" class="md-nav__link">
+    Red Loop Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#buildloopdev-script" class="md-nav__link">
-    BuildLoopDev Script
+  <a href="#typical-causes-for-red-loop" class="md-nav__link">
+    Typical Causes for Red Loop
   </a>
   
-    <nav class="md-nav" aria-label="BuildLoopDev Script">
+    <nav class="md-nav" aria-label="Typical Causes for Red Loop">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#buildloopdev-script-libre" class="md-nav__link">
-    BuildLoopDev Script Libre
+  <a href="#lost-pod-information" class="md-nav__link">
+    Lost Pod Information
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#buildloopdev-other-branches" class="md-nav__link">
-    BuildLoopDev Other Branches
+  <a href="#reset-loop-to-pump-communications" class="md-nav__link">
+    Reset Loop-to-Pump Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgm-values-are-not-being-collected-by-loop" class="md-nav__link">
+    CGM Values Are Not Being Collected by Loop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-health" class="md-nav__link">
+    Apple Health
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#background-app-refresh" class="md-nav__link">
+    Background App Refresh
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nightscout" class="md-nav__link">
+    Nightscout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phone-storage-is-full" class="md-nav__link">
+    Phone Storage is Full
   </a>
   
 </li>
@@ -2404,23 +2495,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-loop-dev" class="md-nav__link">
-    Update Loop-dev
+  <a href="#other-reasons-for-red-loop" class="md-nav__link">
+    Other Reasons for Red Loop
   </a>
   
-    <nav class="md-nav" aria-label="Update Loop-dev">
+    <nav class="md-nav" aria-label="Other Reasons for Red Loop">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#github-build-method" class="md-nav__link">
-    GitHub Build Method
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mac-xcode-build-method" class="md-nav__link">
-    Mac-Xcode Build Method
+  <a href="#pump-is-not-responding" class="md-nav__link">
+    Pump is Not Responding
   </a>
   
 </li>
@@ -2431,16 +2515,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loop-dev-version" class="md-nav__link">
-    Loop-dev Version
+  <a href="#resolving-frequent-red-loops" class="md-nav__link">
+    Resolving Frequent Red Loops
   </a>
   
-    <nav class="md-nav" aria-label="Loop-dev Version">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posting-for-help" class="md-nav__link">
+    Posting for Help
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-else" class="md-nav__link">
+    What Else?
+  </a>
+  
+    <nav class="md-nav" aria-label="What Else?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identify-loop-dev-version" class="md-nav__link">
-    Identify Loop-dev Version
+  <a href="#rileylink-is-broken" class="md-nav__link">
+    RileyLink is Broken
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-has-failed" class="md-nav__link">
+    Battery has Failed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orangelink-firmware" class="md-nav__link">
+    OrangeLink Firmware
   </a>
   
 </li>
@@ -2465,75 +2577,185 @@
                   
 
 
-  <h1>Build Loop Dev</h1>
+  <h1>Red Loop</h1>
 
-<h2 id="building-development-code">Building Development Code<a class="headerlink" href="#building-development-code" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><strong>No matter the method used to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> actions or <abbr title="a tool for version control">git</abbr> commands, you are testing development code. Please read this link now before continuing.</strong></p>
+<h2 id="red-loop-overview">Red <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Overview<a class="headerlink" href="#red-loop-overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This page provides help if your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon is red and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is not working or only working sometimes.</p>
+<p>With <abbr title="Latest release with major updates">Loop 3</abbr> - clicking on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon on the main screen tells you the last time <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> completed, but you need to look at the <a href="../../loop-3/displays-v3/#pump-status-icon">Pump Status Icon</a> and the <a href="../../loop-3/displays-v3/#glucose-status-icon">Glucose Status Icon</a> for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.</p>
+<p>With <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x - clicking on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon on the main screen provides an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.</p>
+<div class="admonition warning">
+<p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Users</p>
+<p>Do not pull a pod when there is a red loop. </p>
 <ul>
-<li><strong><a href="../development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
+<li>Usually the problem is with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, not the pod</li>
+<li>A new pod won't fix a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (Bluetooth or <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> communication problem)</li>
 </ul>
-<p>Several methods to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev are mentioned on this page:</p>
+<p>There are a few times when it is the pod - but try all the steps on this page <strong>first</strong>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Medtronic Users</p>
+<p>You must select Insulin Type on your pump settings screen after updating from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2 to <abbr title="Latest release with major updates">Loop 3</abbr> and completing the onboarding. Without an insulin type, closed loop will not work.</p>
+</div>
+<p>A Red <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon means that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below.</p>
+<h2 id="typical-causes-for-red-loop">Typical Causes for Red <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#typical-causes-for-red-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some of the reasons listed below cause <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to go Red and stay Red until you fix it.  Others will cause intermittent Red Loops that come and go.</p>
 <ol>
-<li>For the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method<ul>
-<li><a href="#github-build-method">Update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build method</a></li>
+<li><a href="#reset-loop-to-pump-communications">Reset <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-to-Pump Communications</a></li>
+<li><a href="#cgm-values-are-not-being-collected-by-loop">Continuous Glucose Monitor (<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>)</a></li>
+<li><a href="#apple-health">Apple Health</a></li>
+<li><a href="#background-app-refresh">Background App Refresh</a> is not enabled for Phone, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and/or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
+<li><a href="#nightscout"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a> (optional service)</li>
+<li><a href="#phone-storage-is-full">Phone Storage is Full</a></li>
+<li><a href="#lost-pod-information">Lost Pod Information</a> <strong>If running <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x or FreeAPS, read this section first</strong></li>
+</ol>
+<h3 id="lost-pod-information">Lost Pod Information<a class="headerlink" href="#lost-pod-information" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>We think this was fixed with <abbr title="Latest release with major updates">Loop 3</abbr>. If you are running <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x or FreeAPS:</p>
+<ul>
+<li>Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information as well as the stored pump information.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Be Careful with Phone Reboots with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2 or FreeAPS</p>
+<p>If you are using an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> following the reboot. If this rare event happens to you, please report it, save and post a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report and be prepared to put on a new pod and possibly re-enter your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> information.</p>
+<p>This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> users.</p>
+</div>
+<h3 id="reset-loop-to-pump-communications">Reset <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-to-Pump Communications<a class="headerlink" href="#reset-loop-to-pump-communications" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If the indication is one of these (or something similar), it can probably be fixed by resetting the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-to-Pump communication. For DASH, this is Bluetooth only. For Eros or Medtronic, it is a combination of Bluetooth and the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> compatible device.</p>
+<ul>
+<li>pump history is too old</li>
+<li>no rileylink could be found</li>
+<li>pod cannot be reached</li>
+<li>the <code>Unable to Reach Pump</code> <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> screen is visible</li>
+</ul>
+<p>Do these steps until one of them fixes the issue:</p>
+<ul>
+<li>Turn off Bluetooth on your phone and then turn it right back on again.</li>
+<li>Close your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app (upswiping it in the iPhone's app selector) and reopen it.</li>
+<li>
+<p>Eros or Medtronic: Turn your <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> off/on at its physical power switch located on the side of the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr>.</p>
+<ul>
+<li>If you have a different device, make sure you know how to power-cycle the device.</li>
+<li>For <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> (without wireless charging) use a small pointy object to carefully move the slider away from the charging port and then back up towards the charging port. A paperclip on the keyring can provide the help you need to reach the switch in the recessed case, and double as a <a href="../../faqs/omnipod-faqs/#what-do-you-do-to-stop-a-screaming-pod">screaming pod silencer tool</a>.</li>
+</ul>
+<p align="center"><img alt="img/riley-switch.png" src="../img/riley-switch.png" width="300" /></p>
 </li>
-<li>For the Mac-<abbr title="program used to build an app">Xcode</abbr> method:<ul>
-<li><a href="#mac-xcode-build-method">Update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev: Mac-<abbr title="program used to build an app">Xcode</abbr> Build method</a></li>
+</ul>
+<p>This should restore a green <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> within 5 minutes. If you're impatient and are using pods, you can tap on <a href="../../loop-3/omnipod/#play-beeps">Play Beeps</a>. With Medtronic, you can attempt to suspend/resume the pump. If this is successful, you've established communication again.</p>
+<p>Last thing to try is:</p>
+<h4 id="power-cycle-your-phone">Power cycle your phone.<a class="headerlink" href="#power-cycle-your-phone" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>This suggestion is last because of a rare, intermittent issue (with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15 and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x) in which power cycling the phone does not load the latest version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> information</li>
+<li>This was fixed with <abbr title="Latest release with major updates">Loop 3</abbr></li>
+<li>Click on the <a href="#lost-pod-information">Lost Pod Information</a> link for more information</li>
+</ul>
+<p>If this was not successful, check out the <a href="#pump-is-not-responding">Pump is Not Responding</a> section.</p>
+<h3 id="cgm-values-are-not-being-collected-by-loop"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Values Are Not Being Collected by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#cgm-values-are-not-being-collected-by-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h4 id="new-transmitter">New Transmitter<a class="headerlink" href="#new-transmitter" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you recently changed a transmitter, you need to also update your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings to reflect the new transmitter ID. Go to the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> section of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings and <code>Delete CGM</code> (it's a button on the bottom of that page). Then use the <code>Add CGM</code> in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings to include the new transmitter ID.</p>
+<p>If you fail to update your Transmitter ID in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and you also left Share Credentials in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (not recommended), you will see messages such as: <code>Failed to decode SGV</code> when the Share server cannot be reached. That's your notice to update the Transmitter ID (or if you think you already did - check for typos in data entry).</p>
+<h4 id="delete-share-account">Delete Share Account<a class="headerlink" href="#delete-share-account" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Finally, we see a lot of errors reported because people have problems with their Share server information in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app. <strong>Please delete your Share account information from within <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings.</strong> In other words, the credentials portion of the Share account info, as shown in the screenshot below, should say <code>Tap to Set</code> and not have your account info. It is unnecessary to have this portion filled out as local, non-internet spying of a transmitter is the preferred <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> source anyways. In fact, by leaving this information out, it will help you remember to change your transmitter ID when you change transmitters because <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data won't appear in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. By not including Share account in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you will prevent yourself from accidentally becoming internet dependent.</p>
+<p align="center"><img alt="img/no-share.jpg" src="../img/no-share.jpg" width="450" /></p>
+<h4 id="firefly-style-transmitter">Firefly-style Transmitter<a class="headerlink" href="#firefly-style-transmitter" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Leaving this in for historical interest only. It illustrates the need to keep <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code should be newer.</p>
+<p>In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s code to continue to "spy" on the transmitter. Without that update, your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> can not get <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data unless it is pulling from Share servers (which is not a recommended mode of operation). So, download fresh code for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app if you have a new transmitter type and haven't downloaded since July 2019.</p>
+<h3 id="apple-health">Apple Health<a class="headerlink" href="#apple-health" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Make sure both the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app and the Dexcom app have permission to write to Apple Health by checking the <a href="../../build/health/">Apple Health Permissions</a></p>
+<p>In the early days of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 14, there were problems with the Apple HealthKit.  The consequence is that some people's database was corrupted.  If you tap on the Heart Icon on your phone to go to Apple Health and display data and it is very slow to respond - or never responds, you probably need to get rid of a corrupted database and start fresh.  Be sure to go Open <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> if this is needed. Please get help from your favorite <a href="../../intro/loopdocs-how-to/#how-to-find-help"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Social Media</a> group or from Apple support in this case.</p>
+<h3 id="background-app-refresh">Background App Refresh<a class="headerlink" href="#background-app-refresh" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have not enabled background app refresh on your phone, then <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is likely to stop communicating as soon as the phone is locked.</p>
+<ol>
+<li>Phone Settings -&gt; General -&gt; Background App Refresh -&gt; enable</li>
+<li>Then scroll down until you find <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and make sure the green slider is enabled</li>
+<li>While you are there - check your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> app as well</li>
+</ol>
+<p>For <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15, there is a new feature described by <a href="https://www.dexcom.com/faqs/what-are-the-recommended-iphone-settings">Dexcom</a></p>
+<ol>
+<li>Phone Settings -&gt; Screen Time -&gt; choose Always Allowed -&gt; select an app, tap the plus icon to add to Always Allowed list<ul>
+<li>add Dexcom</li>
+<li>add <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ul>
 </li>
 </ol>
-<h2 id="buildloopdev-script">BuildLoopDev Script<a class="headerlink" href="#buildloopdev-script" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There is a script to assist in building the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. It gives you the option to choose the tip of the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> or to build a lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. If you have not used the <a href="../../build/build-app/#build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> previously, you may want to review that page.</p>
-<div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoopDev script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh<span class="k">)</span><span class="s2">&quot;</span>
-</code></pre></div>
-<h3 id="buildloopdev-script-libre">BuildLoopDev Script Libre<a class="headerlink" href="#buildloopdev-script-libre" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There used to be a section here telling you how to build a special <abbr title="version of code within a single repository or workspace repository">branch</abbr> that had Libre support included. That is no longer necessary because <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">LibreTransmitter</a> support was merged into dev in July 2023.</p>
-<p>If you use the Browser Build method to build the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, be sure to read about and do the <a href="../../gh-actions/gh-update/#one-time-changes">One Time Steps for dev</a>.</p>
-<p>Both the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and the lightly tested <abbr title="version of code within a single repository or workspace repository">branch</abbr> of dev have Libre support.</p>
-<h3 id="buildloopdev-other-branches">BuildLoopDev Other Branches<a class="headerlink" href="#buildloopdev-other-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can use the BuildLoopDev script to build a specific development <abbr title="version of code within a single repository or workspace repository">branch</abbr>, other than dev. See the example below that would build <code>other-branch</code>, if such a <abbr title="version of code within a single repository or workspace repository">branch</abbr> existed. This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. There must be a space after the final quote, followed by a hyphen, another space and then the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name.</p>
-<div class="copy highlight"><span class="filename">Example using <code>other-branch</code> with the BuildLoopDev script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-<span class="w"> </span>other-branch
-</code></pre></div>
-<h2 id="update-loop-dev">Update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>While <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev is under active development, you should monitor zulipchat and update frequently.</p>
-<h3 id="github-build-method"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method<a class="headerlink" href="#github-build-method" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you are using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> method, once you have configured your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to point to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, just follow the update instructions.</p>
+<h3 id="nightscout"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr><a class="headerlink" href="#nightscout" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you added your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and are uploading information to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, make sure the communication is working properly.  For short-term interruptions, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will store information to upload to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> later.  But if too much information builds up, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> can slow down and in some cases have a Red <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<ol>
+<li>Check to see that internet service (WiFi or Cell) is operating</li>
+<li>Check that <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> database size isn't full (more details below)</li>
+<li>If Red Loops are resolved by removing the <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>; you need to figure out if it's the connection or the database or some other issue</li>
+</ol>
+<p>If you opted for the free <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, you will need to clean your database once or twice a year. Follow the <a href="https://nightscout.github.io/troubleshoot/troubleshoot/#database-full"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Database cleanup steps</a>. Make sure you are periodically checking your database size (and that the <strong>dbsize</strong> keyword is in your <a href="../../nightscout/update-user/#editadd-config-vars">ENABLE list</a> and cleaning it.</p>
+<h3 id="phone-storage-is-full">Phone Storage is Full<a class="headerlink" href="#phone-storage-is-full" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This was reported by a user in November 2021. His phone storage was almost full and the reported error messages for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> was:</p>
 <ul>
-<li><a href="../../gh-actions/gh-update/#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></li>
+<li><code>Sqlite Error: A Sqlite Error Occurred: (13) Database or Disk is Full</code></li>
 </ul>
-<h3 id="mac-xcode-build-method">Mac-<abbr title="program used to build an app">Xcode</abbr> Build Method<a class="headerlink" href="#mac-xcode-build-method" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can use <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> with this method if you want the convenience of a remote build. See <a href="../../build/testflight-xcode/"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> with your Mac-<abbr title="program used to build an app">Xcode</abbr> build</a>. With <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, you need to renew the build every 90 days.</p>
-<p>When building frequently, it is optional to update your provisioning profile with every new build. If you want to always ensure one year, copy and paste the following command into the terminal before building. This forces <abbr title="program used to build an app">Xcode</abbr> to create a new provisioning profile instead of reusing one with an older expiration date.</p>
-<div class="highlight"><span class="filename">Copy and Paste to remove Provisioning Profiles</span><pre><span></span><code>rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
-</code></pre></div>
-<p>Checking for updates every week is a good idea. Also - subscribe to all the streams on <a href="https://loop.zulipchat.com"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Zulipchat</a> to make sure you don't miss critical information.</p>
-<p>You may choose to download fresh each time you update. </p>
-<p>You may prefer to use commands to fetch and pull the latest code without making a new <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>.</p>
+<p>The error message from Dexcom was not as helpful.  If you see this, check your phone storage:</p>
 <ul>
-<li>Some users like to use <a href="https://support.gitkraken.com/">GitKraken</a> to assist them (link takes you to a tutorial video).</li>
-<li>Some are comfortable with the command line <abbr title="a tool for version control">git</abbr> commands described on <a href="../loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>
+<li><code>The Dexcom G6 app has stopped working. Please delete the app from your device and redownload it from the App Store</code></li>
 </ul>
-<h2 id="loop-dev-version"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev Version<a class="headerlink" href="#loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The version of code that shows up under the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen does not change when the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> is modified.</p>
-<p>If you need help with your app, the mentors need more information. Please issue a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report when asking for help. Refer to <a href="../../loop-3/settings/#support">Support</a> for how to issue a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report. If you want to keep track yourself, refer to <a href="#identify-loop-dev-version">Identify <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev Version</a></p>
-<p>With the release of <abbr title="Latest release with major updates">Loop 3</abbr>, the numbering for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev has a new pattern of even (released) and odd (dev) numbers for the "x" place in 3.x.m. </p>
-<p>For example:</p>
-<ul>
-<li><abbr title="Latest release with major updates">Loop 3</abbr>.0.0 was the first released version of <abbr title="Latest release with major updates">Loop 3</abbr><ul>
-<li>If minor updates are required before the next release, they will be numbered <abbr title="Latest release with major updates">Loop 3</abbr>.0.1, etc.</li>
+<p>Solution: clear up space on your phone.</p>
+<h2 id="other-reasons-for-red-loop">Other Reasons for Red <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#other-reasons-for-red-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="pump-is-not-responding">Pump is Not Responding<a class="headerlink" href="#pump-is-not-responding" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The first step is to make sure the phone and if needed, the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> compatible device, is not so far away from the pump or pod that they cannot communicate. Assuming you've addressed this, then you can move on to other steps.</p>
+<p><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Loopers</strong>:</p>
+<p>If the pod is screaming, it should still be able to communicate with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, but sometimes you need to restore communication so you can deactivate the pod and quiet it. Follow the steps below, just do it with the added "noise".</p>
+<p>The <a href="#reset-loop-to-pump-communications">Reset <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-to-Pump Communications</a> steps almost always fix the issue. It is possible that the pod really had stopped communicating, but try everything else before burning another pod.</p>
+<p><strong>Medtronic Loopers</strong>: If the pump is not responding with "decoding" errors or various other messages about pump responses. Try the following:</p>
+<ol>
+<li>Change pump battery. Low pump battery will cause radio communications to fail.</li>
+<li>Use the <code>Change Time</code> command in the pump menu to update the pump's clock. If you've accidentally changed the pump's time in the pump itself or if the pump time has drifted, this will get the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app and pump time back in sync.</li>
+<li>If using a x23 or x54 pump, try deleting all the IDs under the "Other Devices" submenu in the pump's "Connect Devices" menu.  Then go to the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> menu and use the MySentry pairing command to get a fresh ID issued. Follow the directions listed in the MySentry pairing command's screen to scan for devices. A fresh ID can help prevent recurring red loops for x23 and x54 users, particularly if they started to occur after a recent <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> update.</li>
+<li>Make sure the following are checked in the pump:<ul>
+<li>Your pump cannot be suspended.  Resume insulin deliveries.</li>
+<li>Temp basal type must be set to unit/hour, not percent, in pump's Basal menu.</li>
 </ul>
 </li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr>.1.0 was the development version before <abbr title="Latest release with major updates">Loop 3</abbr>.2.0 was released</li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr>.2.0 was the next released version</li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr>.2.1 and 3.2.2 were minor releases</li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr>.3.0 is the current development version</li>
+</ol>
+<h2 id="resolving-frequent-red-loops">Resolving Frequent Red Loops<a class="headerlink" href="#resolving-frequent-red-loops" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Here's some things to check if you have frequent red loops:</p>
+<ul>
+<li>
+<p>Try deleting your <a href="#nightscout"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a> account from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings and see if your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> stops having red loops. If it does, then you'll need to assess what's going wrong in your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> site and fix it. Most of the time, your database is getting too big and cleanup is required.</p>
+</li>
+<li>
+<p>Is your <a href="../../build/rileylink/#assemble-rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> battery plugged in all the way</a> on the board? One Looper recently posted that her <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> battery connection needed to be reseated after several years of service.</p>
+</li>
+<li>
+<p>Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging. Try a new charger or cable.</p>
+</li>
+<li>
+<p>Oddly, some people have found that turning off Siri integrations for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Dexcom apps in your iPhone settings has helped. This may be coincidental, but if you're still having trouble, you might want to try it.</p>
+</li>
+<li>
+<p>Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> compatible device.</p>
+</li>
+<li>
+<p>In some cases, you may need to clean out <a href="apple-health">Apple Health</a>, or even reset your phone to factory defaults and reload all your personal information and then rebuild the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app. Before you do this, you may want to Post for Help (next section).</p>
+</li>
 </ul>
-<h3 id="identify-loop-dev-version">Identify <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev Version<a class="headerlink" href="#identify-loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The version of code that shows up under the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen will remain fixed until <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev is released. In order to identify which version of dev you have on your phone, you need the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
-<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report, refer to <a href="../../loop-3/settings/#support">Support</a> for instructions on issuing a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report. After you issue the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report, look at the workspaceGitRevision number near the beginning of the report.</p>
+<h2 id="posting-for-help">Posting for Help<a class="headerlink" href="#posting-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Before you post on Looped group for help with a red loop, please make sure you've <a href="../../build/rileylink/#rileylink-compatible-devices">reset the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> / Phone</a>.</p>
+<p>Before you post for help, please also check your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> status including database size. This step is often overlooked and yet solves a lot of problems.</p>
+<p>When posting for help, include two screenshots of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main screen; one with the red loop's error message and the other just the plain <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> main screen. Include a detailed description of what you have tried doing from the troubleshooting list above. For example, state if you've double checked the transmitter ID, deleted the Share account info from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings so that we can rule out some of the causes of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> issues.</p>
+<h2 id="what-else">What Else?<a class="headerlink" href="#what-else" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There are a few other things to consider:</p>
+<ul>
+<li><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> is broken</li>
+<li>Battery has failed</li>
+<li><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr> has firmware 2.6</li>
+</ul>
+<h3 id="rileylink-is-broken"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> is Broken<a class="headerlink" href="#rileylink-is-broken" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>How can you tell if your <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> has a problem? The answer is mostly within the LED lights that display on the board. Some information is listed below, but also review the <a href="https://getrileylink.org/faq">FAQs at getrileylink.org</a>.</p>
+<p>If you have a different <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> compatible device, please check the appropriate site for troubleshooting help.</p>
+<p><strong>Red light</strong>: comes on during charging and will turn off/on periodically, while still plugged in, after charge is complete.</p>
+<p><strong>Green light</strong>: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr>. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.</p>
+<p><strong>Blue light</strong>: The blue light will flash off/on periodically when the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol <a href="https://youtu.be/s2qNPLpfwww">(unplug the battery first</a>). If you still can't get the blue light off, then contact GetRileyLink for help or check out <a href="../../build/rileylink/#rileylink-compatible-devices"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> Compatible Devices</a> for replacement options.</p>
+<h3 id="battery-has-failed">Battery has Failed<a class="headerlink" href="#battery-has-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Both <a href="https://getrileylink.org/faq"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></a> and <a href="https://github.com/sks01/EmaLink/wiki/Battery-swelling"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">EmaLink</abbr></a> use LiPo batteries.  If they stop holding charge for as long as they used to, or if they swell (often first noticed as bowing of the case), stop using the battery and replace it as soon as possible.</p>
+<p><a href="https://getrileylink.org/faq"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr></a> uses regular batteries, so just change them out.</p>
+<h3 id="orangelink-firmware"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr> Firmware<a class="headerlink" href="#orangelink-firmware" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>One version of the OrangeLine firmware did not communicate well with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (or Android APS).</p>
+<p>If you have FW 2.6 on your <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr> or <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr> Pro, please <a href="../../faqs/rileylink-faqs/#orangelink-firmware">upgrade to FW 3.2</a> as soon as possible.</p>
 
 
 
@@ -2560,7 +2782,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../development/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop Development" rel="prev">
+          <a href="../loop-crashing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loop App Crashes" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -2569,20 +2791,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Loop Development
+                Loop App Crashes
               </div>
             </div>
           </a>
         
         
           
-          <a href="../loopworkspace/" class="md-footer__link md-footer__link--next" aria-label="Next: LoopWorkspace" rel="next">
+          <a href="../pod-pairing/" class="md-footer__link md-footer__link--next" aria-label="Next: Pod Pairing Failures" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                LoopWorkspace
+                Pod Pairing Failures
               </div>
             </div>
             <div class="md-footer__button md-icon">

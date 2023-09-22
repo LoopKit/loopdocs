@@ -1618,7 +1618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/yellow-red-loop/" class="md-nav__link">
+      <a href="../../troubleshooting/red-loop/" class="md-nav__link">
         Red Loop
       </a>
     </li>
@@ -1893,6 +1893,13 @@
           <li class="md-nav__item">
   <a href="#github-browser-build-updates" class="md-nav__link">
     GitHub Browser Build&nbsp; Updates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-code-fixes" class="md-nav__link">
+    Miscellaneous Code Fixes
   </a>
   
 </li>
@@ -2279,8 +2286,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/time-change/" class="md-nav__link">
-        Time Change FAQs
+      <a href="../../faqs/time-faqs/" class="md-nav__link">
+        Time FAQs
       </a>
     </li>
   
@@ -2517,6 +2524,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#miscellaneous-code-fixes" class="md-nav__link">
+    Miscellaneous Code Fixes
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2640,6 +2654,7 @@
 <li><a href="#favorite-foods">Favorite Foods</a></li>
 <li><a href="#testflight-expiration-warning"><span translate="no"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Expiration Warning</span></a></li>
 <li><a href="#github-browser-build-updates"><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span>&nbsp; Updates</a></li>
+<li><a href="#miscellaneous-code-fixes">Miscellaneous Code Fixes</a></li>
 </ul>
 <h3 id="support-for-libre-sensors">Support for Libre Sensors<a class="headerlink" href="#support-for-libre-sensors" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">LibreTransmitter</a> support was merged into dev in July 2023.</p>
@@ -2915,6 +2930,15 @@
 <li><a href="../../gh-actions/gh-update/#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a>: How to use &nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build</span>&nbsp; for dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li><a href="../../gh-actions/gh-update/#one-time-changes"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build: One-Time Changes</a>: New steps and dates at which the new steps were added</li>
 </ul>
+<h3 id="miscellaneous-code-fixes">Miscellaneous Code Fixes<a class="headerlink" href="#miscellaneous-code-fixes" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h4 id="g7-sensors-duplicate-cgm-values">G7 Sensors: Duplicate <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Values<a class="headerlink" href="#g7-sensors-duplicate-cgm-values" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Fixed with <a href="https://github.com/LoopKit/G7SensorKit/pull/16"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 16: Fix parsing of age field of message</a></p>
+<ul>
+<li>Most sensors report the time with very little offset between time of arrival and time of sensing</li>
+<li>If the time discrepancy is large, the error (using one byte instead of two for age of the reading) could cause <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> values to appear as duplicate readings in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+</ul>
+<h4 id="remote-services-update">Remote Services Update<a class="headerlink" href="#remote-services-update" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The code that feeds <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> data to remote services like Tidepool and <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> have been improved to be more robust.</p>
 <h2 id="what-are-branches">What are branches?<a class="headerlink" href="#what-are-branches" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a lot of discussion about "branches" with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> but the concept is simple. Basically, they are all slightly different versions of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>...kind of like different edits of the same book.</p>
 <p>To really understand what branches are, we should probably explain a little more about <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s code and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s">video explanation about branches</a> created when <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Version 2.0 was newly released. Keep in mind while watching the video that "master" was the old name for the main <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The information in this video is still generally useful with the last-half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> main <abbr title="version of code within a single repository or workspace repository">branch</abbr>. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has moved on to using only one stable <abbr title="version of code within a single repository or workspace repository">branch</abbr> (main), with dev recommended for developer/testers.</p>
