@@ -12,7 +12,7 @@ There have been a large number of fixes and improvements to reduce various pairi
 !!! info "Update regularly to take advantage of  improvements"
 
     **Make sure you stay on top of Loop updates to take advantage of these code improvements.**   
-    It is *strongly* recommended to update to a modern stable version (i.e., the [current Loop release](../../version/releases/#current-release)) when running any version of Loop prior to `v2.2.9`.
+    It is *strongly* recommended to update to a modern stable version (i.e., the [current Loop release](../../version/releases/#current-release)).
 
 ## The app crashed after pairing started and before cannula insertion
 
@@ -58,7 +58,7 @@ For Eros pods, let's make sure everything is ok as far as the RileyLink goes:
 
 ## Step 2: Deactivate old Pod
 
-Make sure old pod was deactivated. If you cannot communicate with the old pod in order to deactivate it, try the steps in [Reset Loop to Pump Communications](red-loop.md#reset-loop-to-pump-communications)
+Make sure old pod was deactivated. If you cannot communicate with the old pod in order to deactivate it, try the steps in [Reset Loop to Pump Communications](red-loop.md#reset-loop-to-pump-communications).
 
 If you were not able to deactivate the old pod, you need to Discard the old pod. After several failures to deactivate, Loop offers to Discard the pod. This just tells Loop that the pod is no longer connected to the app.
 
@@ -85,7 +85,7 @@ Hopefully, your pod pairing continues uneventfully at this point. You'll press t
 
 !!! info "Pod pairing failed?"
 
-    Ok, so you've pressed that **Pair** button and received an error message like shown at the top of the screen? It's time to start the stepwise process of seeing if we can get it to recover successfully.
+    Ok, so you've pressed that **Pair** button and received an error message like shown at the top of the web page? It's time to start the stepwise process of seeing if we can get it to recover successfully.
 
 ### DASH
 
