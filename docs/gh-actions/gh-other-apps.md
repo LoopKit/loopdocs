@@ -10,7 +10,7 @@ The same technique is used and the same six Secrets are applied to each reposito
 !!! warning "GH_PAT - NEW RECOMMENDATION"
     It is now recommended that you use a *GitHub* Personal Access Token (GH_PAT) that never expires
 
-    - [GitHub Update: Regenerate *GitHub* Token](gh-update.md#regenerate-github-token)
+    - [Update with Browser: Regenerate *GitHub* Token](gh-update.md#regenerate-github-token)
 
     If you choose a *GitHub* personal access token that expires, you will get an email to renew it about 6 days ahead. You will paste your updated GH_PAT into the secrets for each repository you use and initiate the Build Action for that app. This will ensure continued availability of all your apps that you build with this method.
 

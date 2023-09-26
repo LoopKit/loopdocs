@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a Mac and Xcode.**
 
-**For GitHub (Browser Build) updates, please see: [GitHub Update](../gh-actions/gh-update.md)**
+**For Browser Build updates, please see: [Update with Browser](../gh-actions/gh-update.md)**
 
 !!! info "Time Estimate"
 
