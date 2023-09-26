@@ -97,7 +97,7 @@ There is more communication between the pod and the controller (your Loop phone)
     * When phone is unlocked and Loop is in the foreground:
         * Loop 3 updates the pod state every 30 sec (DASH) or 60 sec (Eros) in the foreground, compared to every 3 (DASH) or 5 (Eros) minutes in the background
         * Loop 2.2.x updates the pod state when CGM updates (approximately 5 minutes) - same as when app is in the background
-    * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns_crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
+    * Use an alternate display method such as [Nightscout](../nightscout/overview.md) or [Loop Follow](../nightscout/ns-crossref.md#loop-follow) instead of keeping the Loopers phone unlocked with Loop app open
 
 ## What do I do if a pod fails to pair?
 
@@ -109,7 +109,7 @@ Screaming pods indicate the pod is out of insulin or out of time (80 hours) or t
 
 The first step is to use your phone to `Deactivate` the pod. You may need to go to the pod settings and tap on the Replace Pod row or the app may take you to the screen with a Deactivate button directly. This only works if the app is able to communicate with the pod.  Sometimes this is not possible. After you attempt to deactivate two times, the app will "discard" the pod as active if communication fails and enable you to pair a new pod. But you still need to make that noise go away.
 
-If you are **not** successful at deactivating a pod and you've tried the steps at [Reset-Loop-to-Pump-Communications](../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications), make sure the old pod is removed from the area before trying to connect a new pod. (Placing it in a microwave temporarily prevents the phone from detecting that pod.) The paperclip trick (next paragraph) only breaks the sound connection, the pod electronics is still active.
+If you are **not** successful at deactivating a pod and you've tried the steps at [Reset-Loop-to-Pump-Communications](../troubleshooting/red-loop.md#reset-loop-to-pump-communications), make sure the old pod is removed from the area before trying to connect a new pod. (Placing it in a microwave temporarily prevents the phone from detecting that pod.) The paperclip trick (next paragraph) only breaks the sound connection, the pod electronics is still active.
 
 Once you have removed the screaming pod, it can be silenced using a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that connects the speaker to the electronics.
 

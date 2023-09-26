@@ -57,10 +57,13 @@ Loop 2 does not natively support Libre CGM.
 
 If you switch to Loop 3, there are additional CGM options:
 
+* If you choose to [build Loop-dev](../../version/build-dev.md), Libre support has been added.
+
 * If you can upload your CGM to Nightscout, Loop 3 offers the option to use Nightscout as a CGM source.
 
 * You can choose to download the Loop with patches option when building with the script.
     * As a prerequisite, you must interface your iPhone to the Libre
+    * Please read [Libre Support for Loop 3.2.x Code](../../build/code-customization.md#libre-support-for-loop-32x-code)
 
 ## Next Step: Loop 2 Configuration
 

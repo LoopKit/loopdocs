@@ -22,7 +22,7 @@ No in that:
 
 Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings change or make temporary adjustments for short term issues.
 
-The use of [Overrides](../operation/features/workout.md) can be quite helpful for short-term changes.
+The use of [Overrides](../operation/features/overrides.md) can be quite helpful for short-term changes.
 
 ## What does negative Active Insulin mean?
 
@@ -42,7 +42,7 @@ When Loop reports negative IOB, it is a sign that Loop has been actively helping
 
 Insulin on board (IOB) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that [insulin is active](../operation/algorithm/prediction.md#insulin-effect) over time. Loop is adding up all the amounts over the full Duration of Insulin Action (DIA). The DIA is 6 hours for most rapid insulin in the models used by Loop.
 
-IOB is plotted on the [Active Insulin Chart](../loop-3/displays_v3.md#active-insulin-chart) in the main Loop display.
+IOB is plotted on the [Active Insulin Chart](../loop-3/displays-v3.md#active-insulin-chart) in the main Loop display.
 
 ## More Algorithm Information
 

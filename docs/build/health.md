@@ -14,7 +14,7 @@ You can also get to this screen (for iOS 15) by iPhone -> Settings -> Health (he
     The old instructions suggested turning on all switches.  This is NOT necessary for carbohydrates and can be dangerous if
 
       1.  A different app writes carbohydrates to the Health app
-      1.  If two Loopers use the same Apple ID - PLEASE - do not do this; [Loopers need their own Apple ID](step6.md#loopers-need-their-own-apple-id)
+      1.  If two Loopers use the same Apple ID - PLEASE - do not do this; [Loopers need their own Apple ID](apple-developer.md#loopers-need-their-own-apple-id)
 
 
 ![Apple Health app, iOS 14, Loop app permissions screen](img/loop-health-permissions.svg){width="300"}

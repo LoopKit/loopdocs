@@ -1,6 +1,6 @@
 ## CGM Choices
 
-A CGM can be added from the Heads-Up-Display ([HUD](displays_v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
+A CGM can be added from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
 
 The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 
@@ -17,8 +17,11 @@ Loop can be connected to the following CGMs:
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
             * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
+    * Libre: [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) was added to the dev branch (and thus will be supported in the next release of Loop)
+        * Only some Libre sensors are supported; some have encryption that limits DIY use
+        * No details for using Libre will show up on this page until the next release - please read [Build Loop-dev](../version/build-dev.md) and follow the links to understand what you are doing if you choose a development branch
 * CGMs that require active internet (WiFi or Cell)
-    * [Dexcom Share](#dexcom-share-as-a-cgm)
+    * [*Dexcom Share*](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
 * CGM Simulator - useful to learn the app interface
 
@@ -27,6 +30,23 @@ Loop can be connected to the following CGMs:
 To add a CGM, go to the Settings screen ⚙️, tap on `Add CGM`, and tap on your CGM.
 
 ![graphic showing some of the CGMs available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
+{align="center"}
+
+If you later decide to use a different CGM type, you must first delete the CGM and then add CGM to choose the new one.
+
+*   For Dexcom G5, G6 or ONE, you must delete the CGM when you change transmitters (about once every 90 days)
+
+### Remote Upload from Loop
+
+Loop provides an option to upload CGM values to a remote service like Nightscout or Tidepool. In many cases this can be a preferred solution.
+
+With Loop 3, the data-store on the Loop phone keeps a full week of data. If there is an interruption in the upload, when it is restored, Loop will fill in up to 1-week of CGM data that was not previously uploaded.
+
+Some people use Dexcom Share to feed their remote services. There have been outages with Share. When those occur, the data is not back-filled like it is with Loop.
+
+This is the reason why there's a comment under each CGM below to select Upload Readings.
+
+![graphic showing upload readings selection](img/cgm-upload-readings.jpg){width="350"}
 {align="center"}
 
 ### Dexcom G5, G6, ONE
@@ -62,10 +82,17 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
 ![picture of transmitter box with arrow and marking of transmitter id (sn)](img/dexcom-g6-transmitter-box-sn.svg){width="350"}
 {align="center"}
 
+It is recommended that you enable [Remote Upload from Loop](#remote-upload-from-loop).
+
+#### Change Dexcom Sensor
+
+When you change a Dexcom G5, G6 or ONE sensor, you do this in the Dexcom app. When the sensor completes warmup and CGM values are once again reported in the Dexcom app, Loop picks these values up because you are using the same Dexcom Transmitter.
 
 #### Change Dexcom Transmitter
 
-!!! info "FYI: When You Change Dexcom Transmitters"
+When you change the Dexcom G5, G6 or ONE Transmitter, you need to delete your CGM selection from Loop and then add it back after you complete the pairing with the transmitter in your Dexcom app.
+
+??? info "FYI: When You Change Dexcom Transmitters (click to open)"
 
     Before you change Dexcom transmitters, select the `Delete CGM` button at the very bottom of the CGM info page in Loop. If you leave the transmitter connected in Loop, you may have trouble pairing your new transmitter. If pairing does work, then Loop will not get CGM data from the Dexcom app on your phone.
 
@@ -73,8 +100,9 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
 
     The Dexcom G7 is handled differently - Loop automatically detects when a new sensor/transmitter pair is added to the Dexcom G7 app.
 
+Your selection to enable [Remote Upload from Loop](#remote-upload-from-loop) must be repeated with each new Transmitter. The default setting is disabled.
 
-#### About Dexcom Share credentials
+#### About *Dexcom Share* credentials
 
 You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for CGM data if you forget to update your transmitter ID when you start a new transmitter.
 
@@ -84,11 +112,15 @@ This is only available on Loop 3.
 
 You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.
 
-Minimal documentation is provided.
+It is recommended that you enable [Remote Upload from Loop](#remote-upload-from-loop).
 
 ![graphic showing Loop searching for G7](img/g7.svg){width="500"}
 {align="center"}
 
+!!! tip "Don't forget Health Permissions"
+    For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*.
+
+    If either the G6 or the G7 has permission to write to *Apple Health*, then *Loop* will delete the *Loop* glucose data in *Apple Health* that are older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
 
 ### Medtronic Enlite CGM
 
@@ -98,15 +130,15 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
 * Go through the [Add Pump](add-pump.md) to Loop steps with that Medtronic pump
 * Then do the [Add CGM](add-cgm.md) steps and the sensor should be presented as an option
 
-### Dexcom Share as a CGM
+### *Dexcom Share* as a CGM
 
-!!! warning "If you need to use Dexcom Share"
+!!! warning "If you need to use *Dexcom Share*"
 
     If the dexcom is on another phone, you can use Share if internet / cell coverage is good.
     
-    Dexcom Share is not available for Dexcom ONE CGM.
+    *Dexcom Share* is not available for Dexcom ONE CGM.
     
-    The Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
+    The *Dexcom Share* credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. ***Dexcom Share* account is not always the same login info as your Dexcom Clarity account.** The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
     
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
     
@@ -120,18 +152,18 @@ If the user is already uploading CGM data to their Nightscout URL, they can sele
 
 In addition to the risks of missing data if the internet is not reliable, you must also make sure the CGM data sent to Nightscout is reliable.
 
-!!! danger "DANGER - Make sure Nightscout CGM Data is Reliable"
+!!! important "DANGER - Make sure Nightscout CGM Data is Reliable"
     Just because you can use Nightscout as a CGM source does not mean you should.
 
     If you decide to use Nightscout as a CGM source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.
     
     _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
     
-    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Add Libre App to Loop Phone](../build/code_customization.md#add-libre-app-to-loop-phone) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
+    There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Libre Support for Loop 3.2.x Code](../build/code-customization.md#libre-support-for-loop-32x-code) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
     
     It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
     
-    The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during warmup of a new sensor (European Libre 2 using direct bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop 3. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a CGM with Loop 3 had serious overdose of insulin because of bad readings with a new sensor. They are both OK but the Loop and xDrip4iOS developers are looking at this event.
+    The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during warmup of a new sensor (European Libre 2 using direct bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop 3. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a CGM with Loop 3 had serious overdose of insulin because of bad readings with a new sensor. The developers of xDrip4iOS fixed their application - so make sure you have the latest version. Those developers have no control over what is provided by Shuggah.
 
 
 ![Nightscout Remote CGM acknowledgement screen](img/nightscout-cgm-acknowledge.svg){width="350"}

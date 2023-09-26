@@ -1,8 +1,8 @@
-## GitHub Build Method Errors
+## <code>*GitHub* Browser Build</code> Errors
 
 This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update *LoopDocs* to make it easier for the next person to succeed without errors.
 
-If you've been around Loop for a while, you know the mantra about screenshots. Well, for GitHub Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public `LoopWorkspace` fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
+If you've been around Loop for a while, you know the mantra about screenshots. Well, for *GitHub* Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public <code>LoopWorkspace</code> fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
 
 But first - try to diagnose it yourself using this page.
 
@@ -26,7 +26,7 @@ These are some of the most common errors to date.
 
 There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 
-1. [Action: `Verify Secrets`](#action-verify-secrets-errors)
+1. [Action: `Validate Secrets`](#action-validate-secrets-errors)
 1. [Action: `Add Identifiers` Errors](#action-add-identifiers-errors)
 1. [Action: `Create Certificates` Errors](#action-create-certificates-errors)
 1. [Action: `Build Loop` Errors](#action-build-loop-errors) before a successful build
@@ -58,22 +58,22 @@ Click on the top link to view the record of the failed action as shown in the gr
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
     * Please **do NOT post a screenshot**
 
-!!! tip "Where to find my GitHub username?"
+!!! tip "Where to find my *GitHub* username?"
     You can find it:
-       
-    -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).  
+
+    -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).
        https://github.com/==username==/Loopworkspace
     - or on the [GitHub website](https://github.com)
-      
+
         ![Find your GitHub username step 1](img/github-username-1.svg)
         ![Find your GitHub username step 2](img/github-username-2.svg){width="200"}
         {align="right"}
-        
-        ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
-     
-    As your GitHub `username` is case-sensitive, use copy and paste.
 
-## Action: `Verify Secrets` Errors
+        ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
+
+    As your *GitHub* `username` is case-sensitive, use copy and paste.
+
+## Action: `Validate Secrets` Errors
 
 A new action was added with *Loop* 3.1 to provide better error messages if something is wrong with your *Secrets*. In addition, the Actions are numbered to match the order in which they should be applied.
 
@@ -92,13 +92,19 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.
 
-### `Authentication credentials are missing or invalid`
+### Error: credentials missing / invalid
 
-If you see:
+Copy the words on the line below and paste them into the search function for your action log.
+
 
 > ``` { .text .copy }
-> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+> Authentication credentials are missing or invalid
 > ```
+
+The full error looks like this:
+
+> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
+
 
 This can be caused by an error in the value (or spelling) of one of these keys:
 
@@ -112,7 +118,7 @@ This can be caused by an error in the value (or spelling) of one of these keys:
 
     If even one character is capitalized when it should not be, you will not succeed at the Add Identifiers step.
 
-### `Invalid curve name`
+### Error: `Invalid curve name`
 
 If you see:
 
@@ -129,9 +135,9 @@ Make sure you copy in a text editor from the first hyphen to the last hyphen.
 
 Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
-### Wrong TEAMID in `Secrets`
+### Error: Wrong TEAMID in `Secrets`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > error: No profile for team '***' matching 'match AppStore
@@ -150,7 +156,8 @@ Follow these steps:
     It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.
 
 1. Delete all the identifiers that you can, following the steps in [First Time: Delete Identifiers](gh-first-time.md#delete-identifiers)
-    - You will not be able to delete the *Loop* identifier with the wrong `TEAMID`, but don't worry about it
+    - Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
+    - It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
 
 1. Enter your `TEAMID` correctly in the repository `Secrets`
     - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership) page for that `TEAMID`.
@@ -196,43 +203,88 @@ Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#c
 
 You should be able to continue with the First Time Steps to `Create Certificates` and then `Build Loop` and keep going.
 
+### Error: Missing Repository Access
 
-
-### Missing Repository Access
-
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
-> Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
+> Error cloning certificates
 > ```
 
-or 
+The full error looks like this:
 
-> ``` { .text .copy }
 > Error cloning certificates repo, please make sure you have read access to the repository you want to use
-> ```
+
+or
+
+> Error cloning certificates git repo, please make sure you have access to the repository - see instructions above
 
 If you see this phrase, the `fastlane` package that is utilized during the `3. Create Certificates` action cannot access your repository to create certificates for your *Loop* app. This is due to insufficient repository access rights that were not granted during the creation of your `GH_PAT` token.
 
 To fix this error:
 
 - Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
-  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup GitHub: Create GH_PAT](gh-first-time.md#create-gh_pat)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
-  - Add a check beside the `repo` permission scope (see the red circled checkbox in the graphic)
+  - Add a check beside the `workflow` permission scope (the graphic does not match the words, you want to use `workflow` to get both `repo` and `workflow` scope)
   - Scroll all the way to the bottom and click `Update token` (it's a long way, ignore all other settings, do not check anything else)
 
 ![graphic showing missing repo scope with circled checkbox that user must check](img/gh-missing-repo-scope.png){width=700}
 
 After you have clicked `Update token` you should see the token overview again with the message `Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved. ` (You can dismiss the message using the `X` near the upper right side if it appears).
 
+NOTE: for next release or if using the dev branch - you want <code>GH_PAT</code> to have `repo, workflow` scope. So click on the workflow scope now and save yourself a step later.
+
 #### Create Certificates
 
 You should be able to continue with the [First Time Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
+### Error: Could not create
 
+Copy the words on the line below and paste them into the search function for your log file.
+
+> ``` { .text .copy }
+> Could not create another Distribution certificate
+> ```
+
+The full error message is:
+
+> `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
+
+These steps are needed to make room for a `Certificate`:
+
+1. Delete an old `Distribution Certificate`
+    * *Apple* limits you to two `Distribution Certificates`
+    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
+        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
+        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
+    * Click on the oldest `Distribution` `Certificate` and revoke it
+        * You will get an email informing you the certificate was revoked
+1. To create a new `Certificate`:
+    * Return to *GitHub* and your fork
+    * Run the `Action`: `Create Certificates`
+1. You are now ready to run the `Action`: `Build Loop`
+
+!!! question "But what about *TestFlight* builds?"
+    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
+
+### Error: Could not decrypt
+
+Copy the words on the line below and paste them into the search function for your log file.
+
+> ``` { .text .copy }
+> decrypt the repo
+> ```
+
+The full error message is:
+
+> `Couldn't decrypt the repo, please make sure you enter the right password`
+
+If you know you entered the incorrect <code>MATCH_PASSWORD</code> in your repository <code>Secrets</code>, go and fix it now and try again.
+
+Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-secrets).
 
 ## Action: `Build Loop` Errors
 
@@ -241,15 +293,16 @@ You should be able to continue with the [First Time Steps to `Create Certificate
 
 Use [Examine the Error](#examine-the-error)
 
-* Download the log archive file and unzip it
-* Open the `1_build.txt` file
-* Search for the phrase below
+* Click on the Action log on GitHub
+* There may be a series of green items followed by a red one
+* Click on the red item to view the error
+* Use the search function in this log to locate your error
 
-For each `Build Loop` Error section below, copy the phrase into the search function of your text editor. If you find it, solve that error. If not, move on to the next one.
+For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
 
 ### `Could not find an app on App Store Connect`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > Could not find an app on App Store Connect
@@ -275,7 +328,7 @@ If that phrase is found, then:
 
 ### `Error: Provisioning Profile`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > error: Provisioning profile "match AppStore
@@ -296,7 +349,7 @@ For example, you might see:
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
 
-Return to [Add App Group to Other Identifiers](https://loopkit.github.io/loopdocs/gh-actions/gh-first-time/#add-app-group-to-other-identifiers) and fix the missing items.
+Return to [Add App Group to Other Identifiers](gh-first-time.md#add-app-group-to-other-identifiers) and fix the missing items.
 
 You must create certificates again before you can build *Loop*:
 
@@ -305,7 +358,7 @@ You must create certificates again before you can build *Loop*:
 
 ### `A new one cannot be created because you enabled`
 
-Copy the words on the line below and paste them into the search function for your text editor.
+Copy the words on the line below and paste them into the search function for your action log.
 
 > ``` { .text .copy }
 > A new one cannot be created because you enabled
@@ -347,7 +400,7 @@ Use the [Examine the Error](#examine-the-error) instructions to find your error 
 
 ### `Could not install WWDR certificate`
 
-Assuming you have successfully built using the Browser-Build / GitHub method before:
+Assuming you have successfully built using the Browser-Build / *GitHub* method before:
 
 * If the details show this message, `Could not install WWDR certificate`, make sure your [*Apple developer* account](https://developer.apple.com) is in good standing and that there are no agreements that need to be accepted
 * Sometimes this is a sign that *Apple* did not respond to a request, this failure happens in the first few minutes
@@ -356,13 +409,32 @@ Assuming you have successfully built using the Browser-Build / GitHub method bef
 ![graphic showing failure to install certificate](img/github-error-cert-failed.png){width="500"}
 {align="center"}
 
-## Starting Over
+## Reset `Match-Secrets`
 
 This is not the first thing to try, but sometimes it is the best approach.
 
-!!! danger "Totally Frustrated"
-    The directions on the [GitHub First Time](gh-first-time.md) page have been improved.
+There might be several reasons to do this:
 
-    If you tried this earlier and did not make progress, you can delete the `Match-Secrets` repository and `LoopWorkspace` fork in your GitHub account. Make sure your `Secrets` are all correct and consistent, then start over at [First-Time: Create Match-Secrets](gh-first-time.md#create-match-secrets) and keep going. It will go much faster this time.
-    
+* You tried to build with <code>*GitHub* Browser Build</code> earlier (before the directions were improved) and were not successful
+* You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](gh-other-apps.md)
+* You thought you entered the correct <code>MATCH_PASSWORD</code> but you are getting [Error: Could not decrypt](#error-could-not-decrypt)
+
+These steps are needed to reset your `Match-Secrets`:
+
+1. Delete your `Match-Secrets` Repository
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+1. Create a new private `Match-Secrets` *Repository*
+    * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
+    * dev branch: the `Action`: `Validate Secrets` automatically creates a new private `Match-Secrets` repository if you don't have one
+1. In your fork of LoopWorkspace:
+    * Run the `Action`: `Create Certificates`
+    * If this fails, click on this link for the most likely [Error: Could not create](#error-could-not-create)
+    * If that doesn't help, check all your <code>Secrets</code> and try again
+1. You are now ready to run the `Action`: `Build Loop`
+
+!!! important "Other Apps"
+    All DIY iOS apps that have an associated <code>*GitHub* Browser Build</code> method require the same 6 <code>Secrets</code>.
+
+    If you add an app to your *GitHub* username (by forking the repository and adding <code>Secrets</code>) and then build it, it encrypts your `Certificate` using `MATCH_PASSWORD`.
+
+    If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.

@@ -11,7 +11,7 @@ With Loop 3, there is a new modal alert that halts all Loop activity until pump 
 
 When you tap on the Learn More button, another screen appears. The only option allowed on the second screen is to give up and discard the pump (or pod) or continue to wait - tap the Back button. The second screen is there if you need to tell Loop you will not be able to restore communication and it should treat the last attempt to send a command as uncertain. Loop will then allow you to add a new pod or new Medtronic pump or switch to a different insulin delivery device. 
 
-**Only do this if bringing your phone and pump into close proximity, waiting a few minutes and then trying the [Reset Loop-to-Pump Communications](../../troubleshooting/yellow-red-loop.md#reset-loop-to-pump-communications) suggestions are not successful.**
+**Only do this if bringing your phone and pump into close proximity, waiting a few minutes and then trying the [Reset Loop-to-Pump Communications](../../troubleshooting/red-loop.md#reset-loop-to-pump-communications) suggestions are not successful.**
 
 !!! info "Why Stop all Activity?"
     When communication is interrupted at a critical moment in the communication cycle, Loop cannot provide a reliable calculation for IOB. When that happens a warning screen similar to the graphic above appears on your device. You cannot do anything but wait for Loop to restore communications or give up on that device.
@@ -29,7 +29,7 @@ Profile expiration notification was added with Loop 2.2.5.
 
 ### Free (7-day) Loop App Expiration Notification
 
-The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../build/code_customization.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
+The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../build/code-customization.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
 
 
 ## Loop App Expiration Date
@@ -138,7 +138,7 @@ Select your desired notification level for low reservoir
 ![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
 {align="center"}
 
-* Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays_v3.md#pump-status-icon).
+* Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays-v3.md#pump-status-icon).
 
 ![pump alert - red exclamation point with phrase no insulin](../../loop-3/img/loop-3-pump-alert-no-insulin.svg){width="125"}
 {align="center"}
@@ -164,4 +164,4 @@ Many people use additional apps to assist in following a loved one or to support
 
 ![loop follow graphic from the README page](img/loop-follow.png)
 
-For more information, please read the [Loop Follow](https://www.loopandlearn.org/loop-follow/) documentation. You can build Loop Follow using the same [Build Select Script](../../build/step14.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../gh-actions/gh-other-apps.md).
+For more information, please read the [Loop Follow](https://www.loopandlearn.org/loop-follow) documentation. You can build Loop Follow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../gh-actions/gh-other-apps.md).

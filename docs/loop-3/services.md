@@ -5,7 +5,7 @@ Near the bottom of your Loop settings screen is a section called "Services".
 !!! question "Sevices are Optional"
     * Loop will work whether you use these or not.
     * Nightscout is highly recommended by experienced Loopers but can be added later - you don't need it to get started.
-    * If you are running Loop 2.2.x, see [Loop 2 Services](../operation/loop-settings/services_v2.md)
+    * If you are running Loop 2.2.x, see [Loop 2 Services](../operation/loop-settings/services-v2.md)
 
 The services are added by tapping on the &plus; sign and choosing the service from the list. Services are shown alphabetically. The most common services are [Nightscout](#nightscout) and [Tidepool](#tidepool).
 
@@ -81,6 +81,6 @@ Tidepool Support is available to help troubleshoot issues or answer questions ab
 
 ## Next Step: Loop Displays
 
-Great job, almost finished! Now that you have completed your services, let's move onto understanding your [Loop Displays](displays_v3.md). 
+Great job, almost finished! Now that you have completed your services, let's move onto understanding your [Loop Displays](displays-v3.md). 
 
 Loop displays is a valuable tool for understanding your Loop and a great page to review when troubleshooting.

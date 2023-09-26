@@ -22,7 +22,7 @@ This error message "battery out of limits" has to do with the internal pump batt
 
 ## Button Error
 
-The Button Error message usually happens from water, moisture, or dust getting under the pump's button pad and causing button(s) to fail.  The fix luckily is quite straight-forward and takes less than 30 minutes.  Check out the fix [here for a YouTube video]('troubleshooting/time-change.md') or [here for photo gallery](https://imgur.com/a/iOXAP)
+The Button Error message usually happens from water, moisture, or dust getting under the pump's button pad and causing button(s) to fail.  The fix luckily is quite straight-forward and takes less than 30 minutes.  Check out the fix [here for a YouTube video](https://www.youtube.com/watch?v=nWRVSHXN5cQ) or [here for photo gallery](https://imgur.com/a/iOXAP). There is also a detailed page in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Resources/Medtronic-Button-Errors.html#medtronic-button-error-troubleshooting).
 
 ![img/button-error.jpg](img/button-error.jpg){width="400"}
 {align="center"}

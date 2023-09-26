@@ -1,10 +1,17 @@
 ## What CGMs does Loop work with?
 
-Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps. [Loop and Learn: Loop Customization](https://www.loopandlearn.org/main-lnl-patches) can be used which adds support for some Libre sensors.
+The next release of Loop and the current [Loop-dev branch](../version/build-dev.md) includes Libre support in addition to the CGM listed below.
+
+Loop 3 supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps.
+
+Libre Support (for some Libre sensors):
+
+* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+* [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code) 
 
 Loop 2.2.x supports Dexcom G4 with share, G5, G6, Dexcom ONE, Dexcom Share and the Medtronic CGM systems compatible with Looping pumps.
 
-There are more details on the [Compatible CGM](../build/step4.md) page.
+There are more details on the [Compatible CGM](../build/cgm.md) page.
 
 ## Do I need wait for a new sensor session to start Loop?
 
@@ -14,9 +21,9 @@ No, you can start Looping mid-sensor session. There's no need to do anything spe
 
 Loop will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
 
-* With Loop 2.2.x or Loop 3, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly
-
 * With Loop 3, a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
+
+* With Loop 2.2.x or Loop 3, enter a fingerstick glucose value in Apple Health to enable Loop to provide updated projections and loop briefly
 
 With no recent glucose readings, your pump returns to the scheduled basal delivery (within 30 min or less).
 
@@ -72,6 +79,7 @@ sequenceDiagram
     Note over     dexcom:   New sensor warmup... ⏱️
     user     ->>  loop_app: Add CGM
     user     ->>  loop_app: Enter new Transmitter Serial Number
+    user     ->>  loop_app: Enable Remote Upload
     dexcom   -->> user:     New Sensor operational
     deactivate dexcom
 ```
@@ -79,11 +87,9 @@ sequenceDiagram
 
 ## Can I use Libre sensors with a reader like Miao Miao?
 
-If you want to use a Libre sensor you will need to modify Loop to accomplish that use. Loop code does not natively support that sensor, nor readers.
+If you use Loop dev code, then any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) can be used with Loop.
 
-With Loop 3, a customization can be used to support some Libre sensor CGM.
-
-Please refer to [Loop and Learn: Loop 3 with Customization](https://www.loopandlearn.org/main-lnl-patches/)
+See [What CGMs does Loop work with?](#what-cgms-does-loop-work-with).
 
 ## Can I use Eversense?
 
@@ -99,8 +105,8 @@ The older Loop 2.2.x does not read CGM data from Nightscout.
 
 ## What other CGM apps can be used to Loop?
 
-You can add xDrip4iOS and GlucoseDirect as a CGM option to Loop by applying a code customization. This customization is included in Loop with Patches, which is offered as an option in the [Build Select Script](https://www.loopandlearn.org/build-select).
+If you are willing to build a development version of Loop, the dev branch incorporates [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md) into the Loop app itself. Please read about [Loop Development](../version/development.md) before [building dev](../version/build-dev.md) and using the dev app.
+
+You can add xDrip4iOS and GlucoseDirect as a CGM option to Loop by applying a code customization.
 
 Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/) and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme). You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions.
-
-If you are willing to build a development version of Loop, there is a libre branch that incorporates [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md) into the Loop app itself. Please read about [Loop Development](../version/development.md) before building the [libre branch](../version/build-dev.md#buildloopdev-script-libre).

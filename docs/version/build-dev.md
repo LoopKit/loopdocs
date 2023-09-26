@@ -13,8 +13,7 @@ Several methods to build Loop-dev are mentioned on this page:
 
 ## BuildLoopDev Script
 
-There is a script to assist in building the dev branch. It gives you the option to choose the tip of the dev branch or to build a lightly tested commit. If you have not used the [Build Select Script](../build/step14.md#build-select-script) to build Loop previously, you may want to review that page.
-
+There is a script to assist in building the dev branch. It gives you the option to choose the tip of the dev branch or to build a lightly tested commit. If you have not used the [Build Select Script](../build/build-app.md#build-select-script) to build Loop previously, you may want to review that page.
 
 ``` { .bash .copy title="Copy and Paste to start the BuildLoopDev script" }
 /bin/bash -c "$(curl -fsSL \
@@ -22,11 +21,19 @@ There is a script to assist in building the dev branch. It gives you the option 
 ```
 ### BuildLoopDev Script Libre
 
-You can use the BuildLoopDev script to build a specific development branch, other than dev. See the example below, that builds the libre branch. Substitute the branch desired for libre. There must be a space after the final quote, followed by a hyphen, another space and then the branch name.
+There used to be a section here telling you how to build a special branch that had Libre support included. That is no longer necessary because [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) support was merged into dev in July 2023.
 
-``` { .bash .copy title="Example for libre branch with the BuildLoopDev script" }
+If you use the Browser Build method to build the dev branch, be sure to read about and do the [One Time Steps for dev](../gh-actions/gh-update.md#one-time-changes).
+
+Both the dev branch and the lightly tested branch of dev have Libre support.
+
+### BuildLoopDev Other Branches
+
+You can use the BuildLoopDev script to build a specific development branch, other than dev. See the example below that would build `other-branch`, if such a branch existed. This is just an example. You need to substitute the branch you desire for `other-branch`. There must be a space after the final quote, followed by a hyphen, another space and then the branch name.
+
+``` { .bash .copy title="Example using <code>other-branch</code> with the BuildLoopDev script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)" - libre
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)" - other-branch
 ```
 
 ## Update Loop-dev

@@ -19,7 +19,7 @@ Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your 
 
 ## Current Release
 
-The current released version for Loop main is v3.2.2. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for Loop main is v3.2.3. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -35,6 +35,15 @@ Release information is always found on the [GitHub LoopKit/Loop release page](ht
 Be aware that updates to LoopDocs may take some time after a new release comes out.
 
 ## Loop 3 Version History
+
+### Loop v3.2.3
+
+*Loop* v3.2.3 was released on September 19, 2023.
+
+This minor release was required for those who build using the Mac-Xcode method.
+
+* There are no changes to app functionality
+* Version 3.2.2 and earlier cannot be built using Xcode 15, see [Cycle Inside Loop](../build/build-errors.md#cycle-inside-loop)
 
 ### Loop v3.2.2
 
@@ -98,7 +107,7 @@ Loop v3.0.0 was released on January 14, 2023.
     * For Browser Build, refer to: [GitHub Overview](../gh-actions/gh-overview.md)
     * For Mac-Xcode Build refer to:
         * [Updating](../build/updating.md)
-        * [Build Loop](../build/step14.md)
+        * [Build Loop](../build/build-app.md)
 
 
 !!! tip "Branch Name Change"
@@ -315,7 +324,7 @@ With a non-linear absorption model, the carb absorption will more closely match 
 
 #### Overrides Introduced
 
-Loop v2.0 marks the first time Loop master branch has overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev branch for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them [here](../operation/features/workout.md).
+Loop v2.0 marks the first time Loop master branch has overrides included. Additionally, this release moves overrides setup from the configurations area of Loop settings to the workout icon in the Loop toolbar. There has also been bug squashing in dev branch for overrides over the recent past, so updating is a good idea even if you already have overrides on your current build. Want to learn more about overrides? Read about them [here](../operation/features/overrides.md).
 
 #### Retrospective Correction always on
 

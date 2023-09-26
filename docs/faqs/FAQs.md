@@ -12,7 +12,7 @@ If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-
 
 ## Can I use an android phone or iPad for Loop?
 
-No, this is purely iPhone or iPod touch. The iPad does not support Apple Health which is required for Loop.
+Loop requires an Apple device. Older iPads do not support Apple Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.
 
 There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
 
@@ -36,7 +36,7 @@ If you'd rather break it up into several shorter bits of effort, the [`Build App
 
 Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 
-* If you have a pump the requires a [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
+* If you have a pump the requires a [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
 * Most people use a paid Apple Developer Account ($99/year)
     * With a paid developer account, you can build using the [Browser Build](../gh-actions/gh-overview.md); no Mac required
 * If you build on a Mac using Xcode [Mac-Xcode Build](../build/overview.md), you need a Mac or a PC with Intel chips on which you include a virtual Mac
@@ -47,7 +47,7 @@ There are no other costs, ongoing or initial, to use Loop beyond what you alread
 
 This is not required for DASH users.
 
-There are several options for the [RileyLink Compatible Devices](../build/step5.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
+There are several options for the [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
 
 ## Free Developer Account Options
 
@@ -59,7 +59,7 @@ You no longer need to own an Apple computer - see [Browser Build](../gh-actions/
 
 If you chose [Mac-Xcode Build](../build/overview.md), then you still don't **have** to own an Apple computer, but you do need to at least borrow one - or you can build using a virtual Mac if you have a PC with Intel chips (see next section).
 
-If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/step1.md#macos) and [Xcode Version](../build/step8.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
+If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/computer.md#macos) and [Xcode Version](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
 
 ## Can I use a PC or Windows computer to build?
 
@@ -78,7 +78,7 @@ Loop code is updated periodically to include new features and bug fixes. When th
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
 * If using Mac-Xcode build: use this link: [update instructions](../build/updating.md)
-* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update/#github-build-update) 
+* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update.md#github-build-update) 
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 
@@ -88,7 +88,7 @@ No. Loop lets you move between different pump types from within the same Loop ap
 
 ## Can I use my Apple Developer account to build for others?
 
-If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: [Loopers Need Their Own Apple ID](../../build/step6/#loopers-need-their-own-apple-id).
+If there is more than one Looper in the family, you only need to have one Apple Developer ID and only one annual payment. The adult who builds can use their Apple Dev ID to put the app on the Looper's phone.  The limit is 99 devices (phone and watch both count).  Unless it's a very large family, you should have no problem supporting everyone in your family. Building Loop on the second phone is much faster than the first one. It's a good idea to let someone else in the family know how to build and have access to your Apple password in case you're out of town. It's also a good idea to build Loop on a backup phone especially for travel. The Apple Developer ID and the Apple ID are two different things. PLEASE read this: [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id).
 
 If you used the [Browser Build](../gh-actions/gh-overview.md) method, you just add each Looper to your TestFlight test group and they get updates whenever you issue a new Build Action on github.
 
@@ -109,7 +109,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 ## How can I find a compatible pump? supplies?
 
-There is a [whole page with detailed information about Medtronic pumps](../build/step3.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
 You can use some Omnipod pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
 
@@ -170,22 +170,16 @@ Yes, this is technically possible. You can have multiple Loop apps built onto th
 
 ## Will I be able to Loop on a plane? Or in the mountains?
 
-Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth turned on on the iPhone (or iPod touch), then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
+Yes. Loop does not require internet or cell coverage to work. So long as the Loop user has Bluetooth enabled on the iPhone, then the Dexcom and RileyLink will still be able to do their work with Loop and your pump/Pod.
 
 One exception - if you've chosen to use a CGM source that does require the internet, you will need to have cell or internet coverage. This ability is provided as a service to folks who cannot get their CGM data any other way. It is also a convenience for people testing the code.
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the Loop and Learn team kept it on life-support. It has been updated to include DASH, but that is the last expected improvement.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the Loop and Learn team kept it on life-support. It was updated to include DASH, but that is the last expected improvement. It is strongly recommended people switch to Loop 3.
 
-Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. There is a specific fork that can be built with some of these customizations. However, with the exception of libre support, all the customizations can be added using the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/build-select/#customization-select). That script can be run stand-alone or selected as an option as part of the Build Select Script when doing a Mac-Xcode build.
+Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. The dev branch has Libre support, see [Build Loop Dev](../version/build-dev.md).
 
-Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code_customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/). The special fork mentioned above, with build instructions below, includes a subset of the customizations available with the Customization Select script.
+The addition of customizations has been simplified with the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code). That script can be run stand-alone, selected as an option as part of the Build Select Script when doing a Mac-Xcode build or incorporated in a [GitHub Browser build customization](../gh-actions/gh-customize.md) by editing the build_loop.yml file.
 
-For those who need Libre support, there are several options. If you want to use xDrip4iOS or GlucoseDirect, you must add the interface to one of these apps to Loop. The Loop with Patches selection in the Build Select Script uses the fork mentioned above that provides support for those two CGM apps. You will also need to build and install xDrip4iOS or GlucoseDirect on your phone using the same Apple Developer ID as was used for Loop.
-
-* The customizations included in the fork (mentioned above) are described in [Loop and Learn: Summary of Loop with LnL Patches](https://www.loopandlearn.org/main-lnl-patches)
-    * For Browser Build, follow the direction at [Loop and Learn: GitHub Browser Build for Loop with Patches](https://www.loopandlearn.org/custom-code/#add-lnl-patches)
-    * For Mac-Xcode build, choose the Loop with Patches selection in the [Build Select Script](../build/step14.md#download-loop).
-
-
+Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code-customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/).

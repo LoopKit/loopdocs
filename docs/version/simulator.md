@@ -6,20 +6,20 @@ Please, review all the Intro and Build pages, even if you will not complete them
 
 ## Mac-Xcode Build to a Simulated iPhone
 
-This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/step1.md)
+This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/computer.md)
 
 * Build pages to review, but complete later
-    * Compatible iPhone/iPod
+    * Compatible iPhone
     * Compatible Pump
     * Compatible CGM
     * Order a RileyLink (not required for Omnipod DASH)
     * Apple Developer Program (can use a free account)
-* Follow [Download Xcode](../build/step8.md)
-* Follow [Xcode Preferences](../build/step9.md) but can skip the `Add Apple ID` section
-* Follow [Build the Loop App](../build/step14.md) but with the following variation:
+* Follow [Xcode Version](../build/xcode-version.md)
+* Follow [Xcode Settings](../build/xcode-settings.md) but can skip the `Add Apple ID` section
+* Follow [Build the Loop App](../build/build-app.md) but with the following variation:
     * Skip the section on Developer Mode (that is only when building to a phone)
     * Download the code as directed
-    * Choose to Sign Manually in the [Signing Targets](../build/step14.md#signing-targets) section
+    * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
     * Continue with the [Build Free Loop](../build/build-free-loop.md) page
     * Select a simulator (not your phone) when told to do so
     * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
@@ -29,7 +29,7 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
 
 ### Common Requirements
 
-This simulator requires a compatible phone, see [Compatible iPhone/iPod](../build/step2.md)
+This simulator requires a compatible phone, see [Compatible iPhone](../build/phone.md)
 
 * Pages to review, but complete later
     * Compatible Pump
@@ -73,17 +73,17 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 
 ### Mac-Xcode Build (Loop 2 or later)
 
-* Need access to a mac or virtual computer, see [Compatible Computer](../build/step1.md)
+* Need access to a mac or virtual computer, see [Compatible Computer](../build/computer.md)
 
 * You can use a Free Apple Developer account
-* Follow [Download Xcode](../build/step8.md)
-* Follow [Xcode Preferences](../build/step9.md)
+* Follow [Xcode Version](../build/xcode-version.md)
+* Follow [Xcode Settings](../build/xcode-settings.md)
     * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
-    * If you do not have a developer ID, use the [Free Developer Account](../build/step9.md#free-developer-account) instructions in the `Add Apple ID` section
-* Follow [Build the Loop App](../build/step14.md) using the Free Account instructions
-    * If your phone is running iOS 16, you must enable Developer Mode
+    * If you do not have a developer ID, use the [Free Developer Account](../build/xcode-settings.md#free-developer-account) instructions in the `Add Apple ID` section
+* Follow [Build the Loop App](../build/build-app.md) using the Free Account instructions
+    * If your phone is running iOS 16 or newer, you must enable Developer Mode
     * Download the code as directed
-    * Choose to Sign Manually in the [Signing Targets](../build/step14.md#signing-targets) section
+    * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
     * Continue with the [Build Free Loop](../build/build-free-loop.md) page
 * Once the App is on your phone
     * Follow the [set up the app](../loop-3/loop-3-overview.md) instructions on your phone but choose a simulated pump

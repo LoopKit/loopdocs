@@ -2,7 +2,7 @@
 
 This page is for the "advanced" user. It is a short introduction for folks interested in testing code before it is released, or contributing to that code.
 
-If you wandered over here meaning to build the latest Loop release, the rest of this page might be interesting but you should not follow any of the steps. Head back over to [Build Loop App](../build/step14.md) when you are ready to build the app.
+If you wandered over here meaning to build the latest Loop release, the rest of this page might be interesting but you should not follow any of the steps. Head back over to [Build Loop App](../build/build-app.md) when you are ready to build the app.
 
 !!! info "LoopWorkspace is now used for all Loop Builds"
 
@@ -10,7 +10,7 @@ If you wandered over here meaning to build the latest Loop release, the rest of 
     * Loop old-timers may remember the zip-download method - it is no longer available
     * For all Loopers who want the latest
         * [Loop Release](../version/releases.md#loop-releases)
-        * Follow the step-by-step instructions found at [Build Loop App](../build/step14.md)
+        * Follow the step-by-step instructions found at [Build Loop App](../build/build-app.md)
 
 The typical user who wants to build Loop does not need to know the level of detail on the rest of this page.
 
@@ -29,7 +29,7 @@ There are several ways to use this to sign the targets automatically.
     * Use a directory structure for clones similar to the example shown in the graphic below where clones were created under ~/Downloads/ManualClones.
     * Make a copy of the `LoopConfigOverride.xcconfig` in the ~/Downloads/ManualClones folder (from any LoopWorkspace folder) and edit that version with your TeamID
     * All future clones created in this directory grouping are then automatically signed
-3. For users of the [Build Select Script](../build/step14.md#build-select-script), the script automatically generates the copy of  `LoopConfigOverride.xcconfig` in the ~/Downloads/BuildLoop folder the first time the script is run, guides the user into adding their TeamID and then, in subsequent downloads, uses that previously created file
+3. For users of the [Build Select Script](../build/build-app.md#build-select-script), the script automatically generates the copy of  `LoopConfigOverride.xcconfig` in the ~/Downloads/BuildLoop folder the first time the script is run, guides the user into adding their TeamID and then, in subsequent downloads, uses that previously created file
 
 
 ![Directory structure for multiple clones using a single LoopConfigOverride file](img/loopconfigoverride-dir.svg){width="750"}
@@ -147,7 +147,7 @@ For this graphic, the cloned LoopWorkspace is in the home directory.
 
 When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.
 
-Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder)
+Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code-customization.md#open-a-terminal-in-loopworkspace-folder)
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }
@@ -172,7 +172,7 @@ If you are testing the LoopKit dev branch, you need to be on [zulipchat](https:/
 
 Sometimes, you know a feature you want was added at a specific commit number; however, you know there are other changes later than that commit which you do not want to test. There is a solution.
 
-Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
+Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code-customization.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }
@@ -209,7 +209,7 @@ Sometimes there is a change to the Workspace scheme in Xcode that interferes wit
 
 1. In Xcode Menu, select Product->Clean Build Folder
 1. In Xcode Menu, select File->Close Workspace and then File->Open Recent and select top line (one you just closed)
-1. Quit Xcode and [delete derived data](#delete-derived-data), then reopen Xcode (you may need to [resolve package versions](../build/build_errors.md#couldnt-get-revision-for-package-dependency) again)
+1. Quit Xcode and [delete derived data](#delete-derived-data), then reopen Xcode (you may need to [resolve package versions](../build/build-errors.md#couldnt-get-revision-for-package-dependency) again)
 
 #### Delete Derived Data
 

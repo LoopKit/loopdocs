@@ -1,6 +1,6 @@
 ## Loop Displays
 
-This section of the docs describes the Loop displays available and what information they offer.  Information about Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.) For Loop 3, refer to [Loop 3 Displays](../../loop-3/displays_v3.md).
+This section of the docs describes the Loop displays available and what information they offer.  Information about Loop's actions (or inactions) can often be found simply by looking at the visuals presented in the app. (Page last updated for Loop v2.2.4.) For Loop 3, refer to [Loop 3 Displays](../../loop-3/displays-v3.md).
 
 ## Status Screen
 
@@ -29,10 +29,10 @@ The Loop Status is the colored circle in the upper left corner of the main Loop 
 
 | <div style="width:55px"></div> ||
 |---|---|
-|![Closed Grey Circle Icon](img/grey_loop.jpg)|A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md)  for tips.|
+|![Closed Grey Circle Icon](img/grey_loop.jpg)|A grey circle indicates the Loop is warming up and hasn’t yet completed its initial loop.  When the Loop is first activated, it may take about 15-20 minutes to complete the first Loop, and the grey circle will be displayed.  It needs CGM data to be gathered, so be patient.  When it finally completes its first loop, the circle will turn green.  If you can't get your grey loop to turn green, please see the [Yellow and Red Loop troubleshooting page](../../troubleshooting/red-loop.md)  for tips.|
 |![Closed Green Circle Icon](img/green_loop.jpg)|A green circle indicates the Loop has been successfully completed within the last 5 minutes.  The time since the loop last completed will be displayed under the circle.|
 |![Closed Yellow Circle Icon](img/yellow_loop.jpg)|A yellow circle indicates the Loop has not completed in the last 5-15 minutes.  It is not unusual to have a few instances of yellow circles throughout a day of looping.  They can be caused by temporarily getting too far away from RileyLink or iPhone (more than about 3-10 feet depending on conditions), CGM failing to read or being in ???, radio frequency “noise” interference, and such.  Generally, most yellow circles will self-resolve without needing any special troubleshooting.|
-|![Closed Red Circle Icon](img/red_loop.jpg)|A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the [Yellow and Red Loop troubleshooting page](../../troubleshooting/yellow-red-loop.md) for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.|
+|![Closed Red Circle Icon](img/red_loop.jpg)|A red circle indicates the Loop has not completed in over 15 minutes.  This is not a typical state, and you should troubleshoot why Loop is not completing.  Please review the [Yellow and Red Loop troubleshooting page](../../troubleshooting/red-loop.md) for tips on how to get your green Loop back.  Clicking on the red circle will also pop-up the last error message to help guide your troubleshooting.|
 |![Green Circle Icon with gap at top denoting open loop](img/open_loop.jpg)|When the circle is notched and not complete, that means the Loop is operating in “open-loop” mode.  When the “closed-loop” setting is turned on, the loop status will show a completed circle.|
 
 !!! info "Fun Fact"
@@ -94,7 +94,7 @@ The horizontal axis is set to go forward from the current time until your DIA (i
 The BG correction range is shown as a blue bar on the glucose chart.  Single-value range BG range (such as 100-100 mg/dL), will have a narrower blue range.  When a temporary override range is enabled, a darker blue bar where the overrides are set will be displayed, as well as the normal correction range in lighter blue.
 
 !!! warning ""
-    If you have a crazy negative prediction - it is likely that you set an [override](../features/workout.md) with a tiny sensitivity. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny sensitivity to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
+    If you have a crazy negative prediction - it is likely that you set an [override](../features/overrides.md) with a tiny Overall Insulin Needs setting. Don't do that again. Best approach: Do not panic - this is a prediction only; not reality. Open the loop until the prediction settles down. In future, do not choose a tiny Overall Insulin Needs setting to force less insulin, simply increase the correction range in your override - Loop will reduce your basal rate at the next cycle (within 5 minutes).
 
 
 The eventual BG displayed on the right side of the chart does NOT take into account a recently enacted temp basal.  In other words, if you are above BG range and Loop just enacted a high temp basal to help, the eventual BG does not reflect the expected lowering of BGs that would result from that recently enacted temp basal.  Loop waits until the insulin has actually been delivered before it "uses" the insulin in its calculations for BG impacts.  If you suspended your pump or had a "no delivery" alarm shortly after the temp basal was started, you would want that accurately reflected in the insulin on board and associated eventual BG.
@@ -166,7 +166,7 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Bolus tool** - click on this tool to bring up the bolus tool.  Normally, this screen will automatically open on its own and function as a bolus wizard when a meal is saved on the carb entry tool screen.  But you can click on this icon anytime to manually bolus. During rapidly rising BGs, where Loop doesn't have an adequate temp basal rate to cover the pace at which BGs are rising, you may try clicking on the bolus tool to see if Loop is recommending a correction bolus to help control the BG spike. Or if you want to trade bolus now for basal later (super bolus), you can enter a bolus greater than Loop recommends - Loop will set zero Temp Basal next cycle. For more information about the Bolus tool features and use, see the [Bolus page](../features/bolus.md).
 
-* **Overrides** - click this tool to set an [Override](../features/workout.md).
+* **Overrides** - click this tool to set an [Override](../features/overrides.md).
 
 * **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md#configurations).
 

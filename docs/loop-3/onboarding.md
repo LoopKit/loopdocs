@@ -138,11 +138,11 @@ The therapy settings are the heart of how Loop makes predictions. If your settin
         * Glucose Safety Limit
         * Correction Range
         * Pre-Meal Range
+        * Carb Ratios
         * Basal Rates
         * Delivery Limits
             * Maximum Basal Rate
             * Maximum Bolus
-        * Carb Ratios
         * Insulin Sensitivites
 
 #### Guardrails While Onboarding
@@ -199,6 +199,13 @@ The [Pre-Meal Range](therapy-settings.md#pre-meal-range), which is optional, giv
 !!! abstract "Example"
     If your normal range is 100-110 mg/dL (5.6-6.1 mmol/L) and pre-meal range is 80-80 mg/d L (4.4 mmol/L), Loop will give you extra insulin to move you towards the lower range number before the meal. This early insulin brings you into the meal with a mini-prebolus. The pre-meal range, when activated by pressing on the [pre-meal icon](../operation/features/premeal.md) in the toolbar, will stay active for one hour, until carbs are entered, or until it is manually cancelled...whichever comes first.
 
+### Carb Ratios
+
+Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
+
+* At least one carb ratio (CR) must be entered
+* A daily schedule with varying CR can be entered
+
 ### Basal Rates
 
 You must provide a [Basal Rate](therapy-settings.md#basal-rates) schedule and the schedule must start at midnight. Loop does not provide the option for having more than one profile saved that you can switch between.
@@ -213,7 +220,7 @@ If you will be connecting a Medtronic pump after onboarding:
 
 * The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
 * For those who build Loop 3 over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
-* If you have values in a [Loopable Medtronic pump](../build/step3.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
+* If you have values in a [Loopable Medtronic pump](../build/pump.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
 
 
 ### Delivery Limits
@@ -244,12 +251,7 @@ Experienced loopers typically set their maximum basal rate around 3-4 times thei
 
 For safety, don't set a maximum bolus limit any higher than your typical large meal bolus. Many people like to set a value less than 10 U, for example, 9 or 9.9 U, to avoid accidentally typing in a bolus of 10 instead of 1.0 U.
 
-### Carb Ratios
-
-Your [Carb Ratio](therapy-settings.md#carb-ratios) is the number of grams of carbohydrates covered by one unit of insulin.
-
-* At least one carb ratio (CR) must be entered
-* A daily schedule with varying CR can be entered
+This setting also limits how much **automated** dosing is allowed. Loop will not automatically increase the user's IOB above two times the Maximum Bolus. This is true with <code>Dosing Strategy</code> of <code>Temp Basal Only</code> or <code>Automatic Bolus</code>.
 
 ### Insulin Sensitivities
 
@@ -270,7 +272,7 @@ Once these are all entered, the Therapy Settings screen is shown for your review
 ![verify that all therapy settings are correct](img/therapy-setting-review-x2.svg){width="500"}
 
 
-&nbsp;
+
 
 ### Notifications and Bluetooth
 
@@ -282,7 +284,7 @@ Once you save settings, Loop asks to send notifications and use Bluetooth. You m
 
 ![enable notifications and BLE](img/notify-ble-x2.svg){width="500"}
 
-&nbsp;
+
 
 ## CGM and Pump
 
@@ -355,6 +357,6 @@ If you used earlier versions of Loop, please be aware that absorption times have
 
 ### Carb Data Source
 
-Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../build/code_customization.md#build-time-features) section.
+Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../build/code-customization.md#build-time-features) section.
 
 Users who build Loop 3 over Loop 2.2.x, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.

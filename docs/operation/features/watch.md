@@ -119,7 +119,7 @@ If you enter carbs on your watch while not connected to the phone, they will app
 
 One feature on the Watch app that can be turned on and off with Loop 3 is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
 
-If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Build Time Features](../../build/code_customization.md#build-time-features).
+If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Build Time Features](../../build/code-customization.md#build-time-features).
 
 ## Adding a Watch to Existing Loop
 
@@ -133,7 +133,7 @@ Loop 2.2.9 and FreeAPS is currently supported with all released versions of the 
 
 Loop 3 requires newer versions of the watch and requires watchOS 8 as a minimum.
 
-The compatibility list below is copied from Apple. Note that some version of iOS require specific versions of watchOS. That level of detail is not captured here. Please review [LoopDocs: Wikipedia Chart for Apple Versions](../../build/step8.md#wikipedia-chart-for-apple-versions).
+The compatibility list below is copied from Apple. Note that some version of iOS require specific versions of watchOS. That level of detail is not captured here. Please review [LoopDocs: Wikipedia Chart for Apple Versions](../../build/xcode-version.md#wikipedia-chart-for-apple-versions).
 
 ### watchOS 8 Compatibility:
 
