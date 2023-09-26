@@ -28,6 +28,7 @@ This section is the old [Updates in dev](development.md#updates-in-dev) repurpos
 * [Favorite Foods](../loop-3/features.md#favorite-foods)
 * [<span translate="no">TestFlight Expiration Warning</span>](../gh-actions/gh-update.md#testflight-expiration-warning)
 * [<span translate="no">GitHub Browser Build</span> Updates](#github-browser-build-updates)
+* [Miscellaneous Code Fixes](#miscellaneous-code-fixes)
 
 ### Support for Libre Sensors
 
@@ -74,6 +75,19 @@ These sections are still useful for version 3.3.0 dev users:
 
 * [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for dev branch
 * [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
+
+### Miscellaneous Code Fixes
+
+#### G7 Sensors: Duplicate CGM Values
+
+Fixed with [PR 16: Fix parsing of age field of message](https://github.com/LoopKit/G7SensorKit/pull/16)
+
+* Most sensors report the time with very little offset between time of arrival and time of sensing
+* If the time discrepancy is large, the error (using one byte instead of two for age of the reading) could cause CGM values to appear as duplicate readings in Loop
+
+#### Remote Services Update
+
+The code that feeds Loop data to remote services like Tidepool and Nightscout have been improved to be more robust.
 
 ## What are branches?
 

@@ -77,7 +77,7 @@ More detail is provided at this [link](../features/bolus.md#manual-or-correction
 
 If you use a RileyLink, determine how far the link can be from your phone and pump, and plan where to carry the link. DASH Omnipod users do not need the RileyLink but should determine how far their phone can be from the pod without communication problems.
 
-Learn to troubleshoot [Red Loops](../../troubleshooting/yellow-red-loop.md) and the cause of potential loop issues. You'll be less frustrated starting on closed loop if you know how to address these issues
+Learn to troubleshoot [Red Loops](../../troubleshooting/red-loop.md) and the cause of potential loop issues. You'll be less frustrated starting on closed loop if you know how to address these issues
 
 Familiarize yourself with the ["Bolus May Have Failed"](../features/bolus.md#bolus-failure-notifications) notifications and how to handle them.  Double-check the displays to verify that the bolus didn't enact before trying to give the bolus again.
 
