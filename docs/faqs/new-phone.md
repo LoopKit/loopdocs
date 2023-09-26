@@ -25,7 +25,7 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 
 !!! abstract "New Phone Checklist for *Browser Build*"
     * The&nbsp;<span translate="no">Loop</span>&nbsp;app will install from&nbsp;<span translate="no">TestFlight</span>&nbsp;onto the most recent iOS
-    * If a new version of&nbsp;<span translate="no">Loop</span>&nbsp;is available, we recommend updating and building to the latest [GitHub Update](../gh-actions/gh-update.md)
+    * If a new version of&nbsp;<span translate="no">Loop</span>&nbsp;is available, we recommend updating and building to the latest [Update with Browser](../gh-actions/gh-update.md)
 
 !!! abstract "New Phone Checklist for <span translate="no">Mac-Xcode</span>&nbsp;Build"
     * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) compatible with the latest iOS version?

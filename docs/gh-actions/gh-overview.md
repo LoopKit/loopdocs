@@ -60,11 +60,11 @@ Steps that must be completed the first time are found at:
 
 * Instructions to deploy and make updates are found at:
     * [GitHub Deploy](../gh-actions/gh-deploy.md)
-    * [GitHub Update](../gh-actions/gh-update.md)
+    * [Update with Browser](../gh-actions/gh-update.md)
 * And of course, there is an errors page:
     * [GitHub Errors](../gh-actions/gh-errors.md)
 * For those testing the development branch who want to use &nbsp;<span translate="no">GitHub</span>&nbsp;build:
-    * [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev)
+    * [Browser Build for dev](../gh-actions/gh-update.md#github-build-for-dev)
 
 ## What if I get stuck?
 

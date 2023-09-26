@@ -418,7 +418,7 @@ You must be logged into your *GitHub* account before starting this step. If you 
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
-    * You can [Regenerate *GitHub* Token](gh-update.md#regenerate-github-token) for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using *GitHub* Build.
+    * You can [Regenerate Personal Access Token](gh-update.md#regenerate-github-token) for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using *GitHub* Build.
 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
