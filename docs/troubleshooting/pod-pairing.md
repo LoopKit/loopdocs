@@ -1,9 +1,11 @@
-## Pod Pairing Failures
+## Pod Not Found
 
-Have you seen an error message during the pairing process for a new pod? The most common messages are `No response from pod` or `Pod sent ack instead of response`, as shown below.
+Have you seen an error message during the pairing process for a new pod? The most common message is `No pods found`, as shown below. Make sure no other active pods are anywhere near the phone. Reposition the pod and the phone and if using one, the RileyLink, and then try again.
 
-![img/pod-pair-fail.jpg](img/pod-pair-fail.jpg){width="550"}
+![No Pods found](img/pod-not-found.jpg){width="300"}
 {align="center"}
+
+The instructions in the graphic say fill with U-100 insulin. That is the strength of your insulin, 100 U per mL of solution. The Insulet directions say to inject between 85 and 200 U of insulin. In other words, between 0.85 and 2.0 mL of fluid.
 
 There have been a large number of fixes and improvements to reduce various pairing problems and to automatically recover from them when they do occur. 
 
@@ -12,14 +14,24 @@ There have been a large number of fixes and improvements to reduce various pairi
     **Make sure you stay on top of Loop updates to take advantage of these code improvements.**   
     It is *strongly* recommended to update to a modern stable version (i.e., the [current Loop release](../../version/releases/#current-release)) when running any version of Loop prior to `v2.2.9`.
 
-!!! bug "Loop v3.0.0 and  Missed Meal Detection"
+## The app crashed after pairing started and before cannula insertion
 
-    You should *never* run Loop `v3.0.0` with a **Medtronic** pump because of an error in this version where Loop would decide that a bolus was not actually delivered and not add it to IOB. This was much more common with Medtronic, but it did happen with pods.  
-    This problem has been fixed since Loop `v3.2.0`.
+Sometimes the app will crash while the pod is priming. This is rare but can happen.
+
+1. Wait for the clicking to stop
+    * It takes a full minute for the pod to finish priming once it starts
+    * If the crash occurs while the pod is still priming - it is best to wait 30 seconds after clicks stop before reopening the app
+1. As soon as you resume the app, it will inform you that you did not complete the process
+    * If you did not wait, you might be given the Insert Cannula screen before the pod is ready
+    * Wait 30 seconds after clicking (priming) stops before attempting to insert the cannula
+1. In most cases, the cannula will insert as expected and you can use the pod
+
 
 ## Why do pod pairings fail?
 
-Assuming the RileyLink is ok, the most common cause of a pod pairing failure is that Loop incorrectly partially pairs with the pod due to some problems during the fragile pairing process, perhaps aggravated by the placement of the RileyLink and the pod, wireless communications interference that can leave the pod in an apparent non-responding state. This page will help you walk through some easy troubleshooting steps to recover that pod into good working order.
+When the pod is paired to a new device, the pod is using low-power mode. That's one reason why placement is important. And you can only have one pod that is not yet paired in the room. Try to get your new pod working before giving up and trying a new one.
+
+Sometimes it is the pod, so if you do need to try a new one, move the one that did not pair far away from your phone.
 
 !!! tip "Move Logically"
 
@@ -29,14 +41,16 @@ Assuming the RileyLink is ok, the most common cause of a pod pairing failure is 
 
 You can check which version of Loop you are running by pressing the gear icon (⚙️) in the bottom right-hand corner of the Loop home screen and then looking at the line under the header. 
 
-!!! info "Upgrade Loop if version prior to v2.2.9" 
+!!! info "Upgrade Loop if version prior to v3.2.x" 
 
-    If you are running a version of Loop prior to v2.2.9, it is recommended to update to the [current Loop release](../../version/releases/#current-release) if your configuration meets the [requirements](../../intro/requirements).
+    If you are running a version of Loop prior to v3.2.x, it is recommended to update to the [current Loop release](../../version/releases/#current-release).
 
 
-## Step 1: Verify the RileyLink
+## Step 1: Verify the RileyLink (Eros Pods Only)
 
-First, let's make sure everything is ok as far as the RileyLink goes:
+For DASH pods, skip ahead to [Deactivate old Pod](#step-2-deactivate-old-pod).
+
+For Eros pods, let's make sure everything is ok as far as the RileyLink goes:
 
 1. RileyLink is charged and nearby, and
 2. RileyLink has a green LED light lit (indicating a Bluetooth connection with your iPhone), and
@@ -44,25 +58,53 @@ First, let's make sure everything is ok as far as the RileyLink goes:
 
 ## Step 2: Deactivate old Pod
 
-Make sure you've deactivated your old pod. If you had issues deactivating your pod, you likely may have some RileyLink issues going on...so make sure to see the steps above. If you have a problem with deactivating a pod, go ahead and skip to [Step 5](#step-5-pod-pairing-recovery) to get a new pod going. You should also remove that old pod (that would not deactivate) from your vicinity. Put it in a microwave or throw it over the fence into the neighbor's backyard (kidding, obviously...but outside trashcan is a good idea).
+Make sure old pod was deactivated. If you cannot communicate with the old pod in order to deactivate it, try the steps in [Reset Loop to Pump Communications](red-loop.md#reset-loop-to-pump-communications)
+
+If you were not able to deactivate the old pod, you need to Discard the old pod. After several failures to deactivate, Loop offers to Discard the pod. This just tells Loop that the pod is no longer connected to the app.
+
+You must still get that pod (that would not deactivate) away from your vicinity. Put it in a microwave or throw it over the fence into the neighbor's backyard (kidding, obviously...but outside trashcan is a good idea).
+
+Eros Pods Only: If you had issues deactivating your pod, review [Step 1](#step-1-verify-the-rileylink-eros-pods-only).
 
 ## Step 3: Start new pairing process
 
 You've deactivated your old pod successfully...great! As the first part of pairing a new pod, Loop will prompt you to fill the new pod with insulin. Once a new pod is powered-up by the insertion of at least 85 units of insulin, the pod will emit reminder beeps every 5 or 10 minutes until the entire pod pairing process has completed. This pairing process must be completed within 60 minutes of beeps starting, or the pod will give up and never pair. These activation reminder beeps do not actually indicate that any pod communication is being attempted, just that the activation has not yet been completed and your 60 minute timer is counting down.
 
+!!! important "Max Pod fill is 200 U"
+    If you put more than 200 U in a pod, you will probably get a pod fault during priming.
+
 Hopefully, your pod pairing continues uneventfully at this point. You'll press the **`Pair`** button and the pod pairs, primes, and the cannula insertion is successful. BUT, if not...you'll want to keep reading Steps 4-5 to find out how to recover.
 
-!!! danger "One beeping pod at a time, please"
+!!! important "One beeping pod at a time, please"
 
     **It is very important to not have two pods giving reminder beeps at the same time** as this can cause even more confusion for you and for Loop. Continue to work with a single pod at a time, retrying the **`Pair`** attempts multiple times if needed as described in Step 4. 
 
     If you cannot get the pairing to complete with the single beeping pod (after trying the procedures described below a few times with multiple **`Pair`** attempts during each try), then you should completely abandon that pod before attempting to use another pod. "Completely abandon" means move that failed-to-pair-no-matter-what-you-tried pod far, far away from you or put it in a not-turned-on-but-door-is-closed microwave. You do not want that beeping-but-not-pairing pod to be able to plague your next pod's communications with Loop during the fresh pairing process.
 
-## Step 4: Check the RileyLink and Pod's Placement
+## Step 4: Check the Pod Placement
 
 !!! info "Pod pairing failed?"
 
     Ok, so you've pressed that **Pair** button and received an error message like shown at the top of the screen? It's time to start the stepwise process of seeing if we can get it to recover successfully.
+
+### DASH
+
+The DASH pod can be left in the tray and placed right next to the phone. If the first attempt to pair shows the "No pods found" message, place the tray on top of the phone or move the pod a little further away from the phone, then try again.
+
+If you see the Pairing exception message as shown in the graphic below, you need to toggle Bluetooth on the phone:
+
+* In your phone settings, turn off Bluetooth
+* Turn on Bluetooth
+* Try again
+
+![bluetooth error](img/pod-error-toggle-bluetooth.png ){width="300"}
+{align="center"}
+
+Still not working, reboot the phone and try again.
+
+If none of those steps work, it may be the pod. But try everything one more time before giving up.
+
+### Eros with RileyLink
 
 The placement of the pod and the RileyLink relative to each other is a critical variable because the pod operates in a low-power radio mode during pairing which can lead to a number of potential faulty and half-paired pod situations, particularly with earlier versions of Loop.
 
@@ -77,9 +119,14 @@ The placement of the pod and the RileyLink relative to each other is a critical 
     * If the pairing is still unsuccessful with multiple repositioning attempts, move yourself, the RileyLink, and the pod to another area/room (preferably away from other radio frequency signals that might be interfering), and try **Pair** again. Again don't be shy to try repositioning the RileyLink and pod's relative position, if needed, in this new area/room too.
     * If you have another available RileyLink, you can also try pairing using that RileyLink instead.
 
-## Step 5: Pod Pairing Recovery
+## Step 5: Eros Pod Pairing Recovery
 
-When you have a pod that continues to appear non-responsive or sending "ack" responses after several retried **Pair** attempts, it may be possible to recover by forcing Loop to start the pairing process from the beginning.
+When you have a pod that continues to appear non-responsive after several retried **Pair** attempts, it may be possible to recover by forcing Loop to start the pairing process from the beginning.
+
+!!! important "This section is for Eros pods"
+    * This section was last updated for Loop version 2.2.x
+    * The error messages may be different and some steps might not be effective
+    * This section remains for reference, with no guarantees.
 
 To start we will have to press the **Cancel** button in the upper right corner of the pairing screen. Depending on which state the pod is stuck at in the pairing process...you'll see one of two screens after you select the **Cancel** button. Follow the directions (Step 5A vs Step 5B) for whichever screen corresponds to what you see after pressing **Cancel**.
 
@@ -146,7 +193,9 @@ If you run into any pairing problems, which required Step 5A or Step 5B to be ab
 
 ## What about other pod start-up failures?
 
-If you have a pod that has already started the priming operation and then has problems either finishing the priming operation or the cannula insertion, then forcing a pod pairing recovery is not possible. If a pod fails during priming or cannula insertion, the pod is no good and it should be deactivated and disposed of properly.
+If you have a pod that has already started the priming operation and then has problems either finishing the priming operation or the cannula insertion, review [the app crashed after pairing started and before cannula insertion](#the-app-crashed-after-pairing-started-and-before-cannula-insertion) to see if you can save the pod.
+
+If a pod begins to alarm (has a fault) during priming or cannula insertion, the pod is no good and it should be deactivated and disposed of properly.
 
 ## What about that insulin?
 
