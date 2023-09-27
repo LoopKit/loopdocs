@@ -160,25 +160,57 @@ In the Loop app, once installed on your phone, tap on `Settings -> Support -> Is
 
 ## *GitHub* Token
 
-If your *GitHub* Personal Access Token has not expired and you don't want to regenerate it, you don't need this section.
+Your &nbsp;<span translate="no">GitHub Personal Access Token</span> should be configured:
 
-If you want to follow the new recommendation of using a *GitHub* Personal Access Token that never expires, you can regenerate the new one at any time.
+* `Never expire`
+* `repo, workflow` permission scope
+
+If you are not logged in to *GitHub* and have not logged in recently, then you may see the authentication screen when doing the steps below.
+
+Authenticate if requested by clicking on the green `Send SMS` button or entering your password.
+
+![two-factor authentication for access to tokens](img/gh-sms-access-screen.png){width="300"}
+{align="center"}
+
+Once you are authenticated, you will have access to view your personal access token.
+
+### Modify Personal Access Token
+
+If your Personal Access Token has not expired but does not have the correct permission, you should modify it. Do not regenerate it.
+
+Click on the link to view your token and compare it to the graphic below.
+
+* [Link to access your Personal Access Token](https://github.com/settings/tokens)
+
+![access token with correct permissions](img/gh-token-correct-permission.png){width="600"}
+{align="center"}
+
+The graphic above has a blue rectangle added to indicate where you should see your token. If yours does not look like this, click on the link (`FastLane Access Token`) to open a new display. Watch the GIF below - there are 4 frames, the last one has the Update token button.
+
+1. Click on the link (`FastLane Access Token`) to open a new display
+1. This example has no workflow or repo checks in it
+1. Add a check to the workflow box
+1. Scroll all the way to the bottom of the screen and click on the green `Update token` button
+
+![configure access token permissions](img/update-personal-access-token.gif ){width="600"}
+{align="center"}
+
+After you click on the `Update token` button, your `FastLane Access Token` should now show `repo, workflow` and look like the earlier graphic above.
+
+The only reason to regenerate a token is if it is set to expire. Do not do the next section unless you have to.
+
+### Regenerate *GitHub* Token
+
+If your Personal Access Token has expired or has an expiration date, you can regenerate the new one at any time.
 
 !!! tip "Update new GH_PAT to Secrets"
     After you get your new token, immediately add it to your Secrets for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify Secrets for each repository to make sure you did not make a mistake.
-
-### Regenerate *GitHub* Token
 
 You can regenerate your *GitHub* Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)
 
 * [Link to access your *GitHub* Personal Access Token](https://github.com/settings/tokens)
 
-If you are not logged in to *GitHub* and have not logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green `Send SMS` button or entering your password.
-
-![two-factor authentication for access to tokens](img/gh-sms-access-screen.png){width="300"}
-{align="center"}
-
-Once you are authenticated, your screen should be similar to the graphic below. The `FastLane Access Token` is a clickable link.
+The `FastLane Access Token` is a clickable link.
 
 ![list of personal access tokens on github](img/gh-token-list.png){width="600"}
 {align="center"}
@@ -216,25 +248,16 @@ The next step is to update GH_PAT in your LoopWorkspace Repository Secrets. (If 
 
 This example is for updating GH_PAT in the Secrets for your repository, but the same method can be applied when changing any Secret.
 
-This can be done with the *GitHub* Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just [Regenerate *GitHub* Token](#regenerate-github-token) again.
+Open the repository for which you will update Secrets. On the far right is a Settings selection. If you don't see Settings (if last item on row is Insights), then you are **not** on your fork or you need to sign in to your *GitHub* account. You should see `username/LoopWorkspace` with forked from `LoopKit/LoopWorkspace` underneath.
 
-The graphics and instructions in this section are using a phone. This was done just to prove we weren't kidding when we said you can do it all on your phone. Most people use a computer browser.
+Refer to the GIF for help. There are 3 frames.
 
-Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace repository and tap on the link.
-
-Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are **not** on your fork or you need to sign in to your *GitHub* account. You should see `username/LoopWorkspace` with forked from `LoopKit/LoopWorkspace` underneath.
-
-Review the GIF below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach "Secrets and variables", open the drop down indicator to see Actions.
-
-![phone screens showing the repository settings, secrets and actions](img/phone-with-settings.gif){width="300"}
+![screen showing repository secrets list](img/update-secret-gh-pat.gif){width="500"}
 {align="center"}
 
-After tapping on Settings -> Secrets and Variables -> Actions, keep scrolling on the same screen, past the Action secrets / New repository secret row, until you see your Repository secrets list as shown in the next GIF.
-
-![phone screen showing repository secrets list](img/phone-secret-list.gif){width="300"}
-{align="center"}
-
-When you see the secret, GH_PAT, tap on the pencil and then scroll down until you see the Actions secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.
+1. Tap on Settings, then scroll down see "Secrets and variables" on the left side and click on the drop down indicator to see Actions.
+1. Keep scrolling on the same screen, past the Action secrets / New repository secret row, until you see your Repository secrets list. 
+1. Click on the GH_PAT, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.
 
 ![update secret dialog](img/update-secret-dialog.png){width="300"}
 {align="center"}
