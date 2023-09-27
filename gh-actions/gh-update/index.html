@@ -19,7 +19,7 @@
     
     
       
-        <title>GitHub Update - LoopDocs</title>
+        <title>Update with Browser - LoopDocs</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub Update
+              Update with Browser
             
           </span>
         </div>
@@ -686,12 +686,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          GitHub Update
+          Update with Browser
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        GitHub Update
+        Update with Browser
       </a>
       
         
@@ -778,6 +778,13 @@
   
     <nav class="md-nav" aria-label="GitHub Token">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modify-personal-access-token" class="md-nav__link">
+    Modify Personal Access Token
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#regenerate-github-token" class="md-nav__link">
@@ -2503,6 +2510,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#modify-personal-access-token" class="md-nav__link">
+    Modify Personal Access Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#regenerate-github-token" class="md-nav__link">
     Regenerate GitHub Token
   </a>
@@ -2591,7 +2605,7 @@
                   
 
 
-  <h1>GitHub Update</h1>
+  <h1>Update with Browser</h1>
 
 <h2 id="update-loop-using-github-actions">Update <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em><a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
@@ -2751,20 +2765,43 @@
 </ul>
 <p align="center"><img alt="graphic indicating build details" src="../img/gh-build-details.png" width="300" /></p>
 <h2 id="github-token"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token<a class="headerlink" href="#github-token" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token has not expired and you don't want to regenerate it, you don't need this section.</p>
-<p>If you want to follow the new recommendation of using a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token that never expires, you can regenerate the new one at any time.</p>
+<p>Your &nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</span> should be configured:</p>
+<ul>
+<li><code>Never expire</code></li>
+<li><code>repo, workflow</code> permission scope</li>
+</ul>
+<p>If you are not logged in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and have not logged in recently, then you may see the authentication screen when doing the steps below.</p>
+<p>Authenticate if requested by clicking on the green <code>Send SMS</code> button or entering your password.</p>
+<p align="center"><img alt="two-factor authentication for access to tokens" src="../img/gh-sms-access-screen.png" width="300" /></p>
+<p>Once you are authenticated, you will have access to view your personal access token.</p>
+<h3 id="modify-personal-access-token">Modify Personal Access Token<a class="headerlink" href="#modify-personal-access-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If your Personal Access Token has not expired but does not have the correct permission, you should modify it. Do not regenerate it.</p>
+<p>Click on the link to view your token and compare it to the graphic below.</p>
+<ul>
+<li><a href="https://github.com/settings/tokens">Link to access your Personal Access Token</a></li>
+</ul>
+<p align="center"><img alt="access token with correct permissions" src="../img/gh-token-correct-permission.png" width="600" /></p>
+<p>The graphic above has a blue rectangle added to indicate where you should see your token. If yours does not look like this, click on the link (<code>FastLane Access Token</code>) to open a new display. Watch the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below - there are 4 frames, the last one has the Update token button.</p>
+<ol>
+<li>Click on the link (<code>FastLane Access Token</code>) to open a new display</li>
+<li>This example has no <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> or repo checks in it</li>
+<li>Add a check to the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> box</li>
+<li>Scroll all the way to the bottom of the screen and click on the green <code>Update token</code> button</li>
+</ol>
+<p align="center"><img alt="configure access token permissions" src="../img/update-personal-access-token.gif" width="600" /></p>
+<p>After you click on the <code>Update token</code> button, your <code>FastLane Access Token</code> should now show <code>repo, workflow</code> and look like the earlier graphic above.</p>
+<p>The only reason to regenerate a token is if it is set to expire. Do not do the next section unless you have to.</p>
+<h3 id="regenerate-github-token">Regenerate <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token<a class="headerlink" href="#regenerate-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If your Personal Access Token has expired or has an expiration date, you can regenerate the new one at any time.</p>
 <div class="admonition tip">
 <p class="admonition-title">Update new <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> to <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></p>
 <p>After you get your new token, immediately add it to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr> to make sure you did not make a mistake.</p>
 </div>
-<h3 id="regenerate-github-token">Regenerate <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token<a class="headerlink" href="#regenerate-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You can regenerate your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)</p>
 <ul>
 <li><a href="https://github.com/settings/tokens">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</a></li>
 </ul>
-<p>If you are not logged in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and have not logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green <code>Send SMS</code> button or entering your password.</p>
-<p align="center"><img alt="two-factor authentication for access to tokens" src="../img/gh-sms-access-screen.png" width="300" /></p>
-<p>Once you are authenticated, your screen should be similar to the graphic below. The <code>FastLane Access Token</code> is a clickable link.</p>
+<p>The <code>FastLane Access Token</code> is a clickable link.</p>
 <p align="center"><img alt="list of personal access tokens on github" src="../img/gh-token-list.png" width="600" /></p>
 <p>After you click on <code>FastLane Access Token</code> your screen should be similar to the graphic below.</p>
 <div class="admonition question">
@@ -2788,16 +2825,14 @@
 <p>The next step is to update <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. (If you build other apps with this method - update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> for all of them right now - do not forget.)</p>
 <h3 id="update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#update-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This example is for updating <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for your <abbr title="contains project files and each file's revision history">repository</abbr>, but the same method can be applied when changing any Secret.</p>
-<p>This can be done with the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just <a href="#regenerate-github-token">Regenerate <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token</a> again.</p>
-<p>The graphics and instructions in this section are using a phone. This was done just to prove we weren't kidding when we said you can do it all on your phone. Most people use a computer browser.</p>
-<p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
-<p>Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
-<p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach "<abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and variables", open the drop down indicator to see <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
-<p align="center"><img alt="phone screens showing the repository settings, secrets and actions" src="../img/phone-with-settings.gif" width="300" /></p>
-<p>After tapping on Settings -&gt; <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and Variables -&gt; <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
-<p align="center"><img alt="phone screen showing repository secrets list" src="../img/phone-secret-list.gif" width="300" /></p>
-<p>When you see the secret, <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, tap on the pencil and then scroll down until you see the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
-<p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
+<p>Open the <abbr title="contains project files and each file's revision history">repository</abbr> for which you will update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. On the far right is a Settings selection. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
+<p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> for help. There are 3 frames.</p>
+<p align="center"><img alt="screen showing repository secrets list" src="../img/update-secret-gh-pat.gif" width="500" /></p>
+<ol>
+<li>Tap on Settings, then scroll down see "<abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and variables" on the left side and click on the drop down indicator to see <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</li>
+<li>Keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list. </li>
+<li>Click on the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.</li>
+</ol>
 <p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> instructions to start a new build.</p>
 <h2 id="github-build-for-dev"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can build any desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> (available at LoopKit/LoopWorkspace) using the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
