@@ -44,7 +44,9 @@ This simulator requires a compatible phone, see [Compatible iPhone](../build/pho
     The app will only work in the background in these special cases:
 
     * Loop is on on the same phone as a Dexcom CGM and you've added that CGM information to Loop
-    * Loop is attached to a pump (Pod or Medtronic) dripping water (instead of being attached to your body)
+        * With versions 3.3.0 and later, a Libre attached to the same phone through Loop will also wake the app
+    * Loop is attached to a pump (Pod or Medtronic)
+        * You can configure the pump to drip water (instead of being attached to your body)
 
     In all other cases, the phone must be open and unlocked for you to test the app.
 
