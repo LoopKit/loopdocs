@@ -30,7 +30,7 @@ This section is an early look at what has been added to dev since Loop 3.2.2 was
 
 If you are using the &nbsp;<span translate="no">GitHub Browser Build</span>, please review: 
 
-* [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
+* [Browser Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
 ### Modified Simulator Interface
 
@@ -213,8 +213,8 @@ In addition to the easier to read error messages found with these updates, these
 
 These sections are still useful for version 3.3.0 dev users:
 
-* [GitHub Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for dev branch
-* [GitHub Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
+* [Browser Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for dev branch
+* [Browser Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
 ### Miscellaneous Code Fixes
 

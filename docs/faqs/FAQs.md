@@ -69,7 +69,7 @@ If you want to use [Mac-Xcode Build](../build/overview.md), there is a hacked wa
 
 ## How often do I need to get on the computer for Loop?
 
-When you use the Browser Build method, you need to access a browser at least once every 90 days to [Update the Browser Build](../gh-actions/gh-update.md). This is simple enough to do that you can do the steps on your phone in just a few minutes. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.
+When you use the Browser Build method, you need to access a browser at least once every 90 days to [Update with Browser](../gh-actions/gh-update.md). This is simple enough to do that you can do the steps on your phone in just a few minutes. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.
 
 When you use Mac-Xcode Build: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
 
@@ -78,7 +78,7 @@ Loop code is updated periodically to include new features and bug fixes. When th
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
 * If using Mac-Xcode build: use this link: [update instructions](../build/updating.md)
-* If using Browser build: use this link: [GitHub Build Update](../gh-actions/gh-update.md#github-build-update) 
+* If using Browser build: use this link: [Update with Browser](../gh-actions/gh-update.md#github-build-update) 
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 

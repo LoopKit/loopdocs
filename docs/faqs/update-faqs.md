@@ -17,8 +17,8 @@ In both cases, you build the code to install over an existing app on your phone 
     * First make sure your Mac operating system and Xcode version are compatible with your iPhone version, and then
     * Easiest method is to use the [Build Select Script](../build/build-app.md#build-select-script) which automatically downloads the latest released version of the code every time
     * See note below if your internet speed or your Mac is very slow
-* If you use the GitHub Browser build method:
-    * Follow the steps on [GitHub Update](../gh-actions/gh-update.md)
+* If you use the Browser build method:
+    * Follow the steps on [Update with Browser](../gh-actions/gh-update.md)
     * Within an hour that new build should be available via TestFlight to install on your phone
 
 ??? tip "Slow Internet / Slow Mac? (click to open/close)"
@@ -75,9 +75,9 @@ Regardless of build method, always check your *Apple* Developer Account status.
 ![Screenshot: Account - Apple Developer](../build/img/license.png)
 
 
-#### Updates with the GitHub Browser build method:
+#### Updates with the Browser build method:
 
-Go to [GitHub Update](../gh-actions/gh-update.md) and follow the instructions.
+Go to [Update with Browser](../gh-actions/gh-update.md) and follow the instructions.
 
 #### Updates with the Mac-Xcode build method:
 
