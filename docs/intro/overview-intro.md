@@ -39,7 +39,7 @@ The process for building the &nbsp;<span translate="no">Loop</span>&nbsp; app is
 
 You can build&nbsp;<span translate="no">Loop</span>&nbsp;and practice with a simulated phone, CGM and/or pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
-Starting with a simulator can help you decide if you want to move forward with purchasing additional items required touse the app. You can:
+Starting with a simulator can help you decide if you want to move forward with purchasing additional items required to use the app. You can:
 
 * Learn the interface
 * Explore glucose predictions and dosing recommendations
