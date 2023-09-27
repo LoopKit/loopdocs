@@ -13,6 +13,8 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 Loopers can choose from 3 pumps and a simulator:
 
 * Minimed 500/700 Series
+    * Note: this label does not mean any 5 or 7 series pump works with the app
+    * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
 * Insulin Pump Simulator
