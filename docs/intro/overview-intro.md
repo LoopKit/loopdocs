@@ -45,7 +45,7 @@ Starting with a simulator can help you decide if you want to move forward with p
 * Explore glucose predictions and dosing recommendations
 
 !!! warning "Locked Phone or App in Background"
-    Do not expect the simulator to work when the phone is locked or the app is in the background. The actual app relies on a real insulin pump or a real CGM to wake up the app when the phone is locked or the app is in the background. The simulator cannot do this.
+    Do not expect the simulator to work when the phone is locked or the app is in the background. The app relies on a real insulin pump or a real CGM to wake up the app when the phone is locked or the app is in the background. The simulator cannot do this.
 
 Please review [Simulator Build](../version/simulator.md) for more information.
 
