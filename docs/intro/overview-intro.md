@@ -37,9 +37,15 @@ The process for building the &nbsp;<span translate="no">Loop</span>&nbsp; app is
 
 ### Using a Simulator
 
-You can build &nbsp;<span translate="no">Loop</span>&nbsp; and practice with a simulated phone, CGM and  pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
+You can build &nbsp;<span translate="no">Loop</span>&nbsp; and practice with a simulated phone, CGM and/or  pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
-Starting with a simulator can help you decide if you want to move forward with purchasing additional items required to &nbsp;<span translate="no">Loop</span>.
+Starting with a simulator can help you decide if you want to move forward with purchasing additional items required to &nbsp;<span translate="no">Loop</span>. You can:
+
+* Learn the interface
+* Explore glucose predictions and dosing recommendations
+
+!!! warning "Locked Phone or App in Background"
+    Do not expect the simulator to work with the phone is locked or the app is in the background. The actual app relies on a real insulin pump or a real CGM to wake up the app when the phone is locked or the app is in the background. The simulator cannot do this.
 
 Please review [Simulator Build](../version/simulator.md) for more information.
 

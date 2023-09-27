@@ -38,14 +38,15 @@ This simulator requires a compatible phone, see [Compatible iPhone](../build/pho
 
 ### What to Expect
 
-Loop will not work in the background without either a real CGM or a real pump to "wake" it up.
+!!! warning "Locked Phone or App in Background"
+    Loop will not work in the background without either a real CGM or a real pump to "wake" it up.
+    
+    The app will only work in the background in these special cases:
 
-The app will only work in the background in these special cases:
+    * Loop is on on the same phone as a Dexcom CGM and you've added that CGM information to Loop
+    * Loop is attached to a pump (Pod or Medtronic) dripping water (instead of being attached to your body)
 
-* Loop is on on the same phone as a Dexcom CGM and you've added that CGM information to Loop
-* Loop is attached to a pump (Pod or Medtronic) dripping water (instead of being attached to your body)
-
-In all other cases, the phone must be open and unlocked for you to test the app.
+    In all other cases, the phone must be open and unlocked for you to test the app.
 
 These CGM and pump options work to provide glucose readings or accept pump commands while the app is open, but will not "wake" the app when in the background or phone is locked:
 
