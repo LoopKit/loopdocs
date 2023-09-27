@@ -259,9 +259,6 @@ Refer to the GIF for help. There are 3 frames.
 1. Keep scrolling on the same screen, past the Action secrets / New repository secret row, until you see your Repository secrets list. 
 1. Click on the GH_PAT, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.
 
-![update secret dialog](img/update-secret-dialog.png){width="300"}
-{align="center"}
-
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [GitHub Build Update](#github-build-update) instructions to start a new build.
 
 ## *GitHub* Build for dev
