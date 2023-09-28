@@ -476,6 +476,6 @@ For example, the graphic below shows a failure of&nbsp;<span translate="no">GitH
 ![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
 {align="center"}
 
-This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not decrypt](#error-could-not-create).
+This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
 
 If you run across an error that does not have a nice message, be sure to post as discussed in [Help with Errors](#help-with-errors). You may be contributing to future improvements for this process.
