@@ -689,7 +689,7 @@ The `Loop` *App Group* already exists if you previously built Loop using *Xcode*
 
 If you have never built Loop with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
-1. Open this link: [`Register an `App Group``](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
+1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
 1. For **`Description`**, use `Loop App Group`.
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step

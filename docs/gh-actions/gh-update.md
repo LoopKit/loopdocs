@@ -274,9 +274,6 @@ The graphics show the dev branch. If you want a different branch, just substitut
         * You cannot just rename your existing branch to dev - you must get the dev branch from LoopKit
     1. When you select the action `4. Build Loop` and then click on the `Run Workflow` dropdown, you must select `dev` there before clicking the green `Run workflow` button - see [Build Branch](#build-branch)
 
-### One-Time Changes
-
-Look in this section for one-time changes to the dev branch that require special, one-time actions. At the current time, this section is blank.
 
 ### Check Current Branches
 
@@ -312,6 +309,12 @@ Tap the `Code` button (upper left) and ensure this branch in your fork is up to 
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
+
+### One-Time Changes
+
+Look in this section for one-time changes for building dev with a browser that require special, one-time actions. After the release of 3.4.0, this section is empty.
+
+Skip ahead to [Build Branch](#build-branch).
 
 ### Build Branch
 
