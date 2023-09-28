@@ -278,7 +278,7 @@ Paste the lines into the terminal. The response to the first line will be someth
 
     --w-------  1 marion  staff  490 Nov  8 04:58 /Users/marion/Downloads/BuildLoop/LoopConfigOverride.xcconfig
 
-There will be no response after the second line - although if an error is reported, please grab a screen shot.
+There will be no response after the second line - although if an error is reported, please grab a screenshot.
 
 The response to the last line will be something like this:
 

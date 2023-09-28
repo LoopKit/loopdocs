@@ -131,7 +131,7 @@ nav:
     - 'Test Settings': 'build/test-settings.md'
     - 'Loop Data': 'build/loop-data.md'
     - 'Meet the Community': 'build/community.md'
-- Browser Build:
+- Build with Browser:
     - 'Build with Browser Overview': gh-actions/gh-overview.md
     - 'Configure to use Browser': gh-actions/gh-first-time.md
     - 'Install on Phone': gh-actions/gh-deploy.md

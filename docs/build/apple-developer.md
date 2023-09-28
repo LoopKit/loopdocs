@@ -65,7 +65,7 @@ You can try a free account first before buying a paid developer account. If you 
 
 The two apps will look identical on your phone and they will both have the name Loop with the same icon, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
 
-Before deleting the FreeLoop, either record all the settings or take screen shots of all the relevant settings screens.
+Before deleting the FreeLoop, either record all the settings or take screenshots of all the relevant settings screens.
 
 PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, ISF, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.
 

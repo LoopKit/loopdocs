@@ -211,7 +211,7 @@ When you tap on the Loop Icon on the main screen, you will see a message similar
 * Closed Loop enabled or disabled
 * How long since the last successful [Loop Cycle](#loop-cycle); <20 minutes, <4 hours, more than 4 hours
 
-On your phone, you should see the green, yellow or red icon in the background - the color is not captured when taking screen shots of the modal message.
+On your phone, you should see the green, yellow or red icon in the background - the color is not captured when taking screenshots of the modal message.
 
 ![example modal messages seen after tapping the loop icon on the main screen](img/loop-icon-modal-messages.jpg){width="750"}
 {align="center"}
