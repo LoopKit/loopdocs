@@ -136,7 +136,7 @@ nav:
     - 'GitHub First-Time': gh-actions/gh-first-time.md
     - 'GitHub Deploy': gh-actions/gh-deploy.md
     - 'Update with Browser': gh-actions/gh-update.md
-    - 'GitHub Errors': gh-actions/gh-errors.md
+    - 'Errors with Browser': gh-actions/gh-errors.md
     - 'Other Apps': gh-actions/gh-other-apps.md
 - Mac-Xcode Build:
     - 'Mac-Xcode Build Overview': 'build/overview.md'

@@ -1,29 +1,26 @@
-## Build &nbsp;<span translate="no">Loop</span>&nbsp;with a Browser
-!!! info "<span translate="no">GitHub Build</span>&nbsp;= &nbsp;<span translate="no">Browser Build</span>"
-    In &nbsp;<span translate="no">LoopDocs</span>, &nbsp;<span translate="no">GitHub Build</span>&nbsp;and &nbsp;<span translate="no">Browser Build</span>&nbsp;mean the same thing, i.e. building your app with a Web browser on the &nbsp;<span translate="no">GitHub</span>&nbsp;site.
+## Build with a Browser
 
-<span translate="no">GitHub Browser Build</span>&nbsp;requires Loop 3.
+* <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
+* The app is then installed remotely on the phone using <span translate="no">TestFlight</span>
 
-### Advantages of &nbsp;<span translate="no">GitHub</span>&nbsp;Build
+### Advantages of Building with a Browser
 
 * Mac computer is not required
     * Anything with a browser works: PC, Tablet, Mac or iPad
-    * It could be done with a phone, but the steps may be hard to navigate
 * Xcode is not required
-    * The time required for the initial setup for &nbsp;<span translate="no">GitHub</span>&nbsp;may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
+    * The time required for the initial setup for&nbsp;<span translate="no">GitHub</span>&nbsp;may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
 * Updates are easy
     * Starting an update takes a few minutes of your time; the rest is automatic
-    * With the release of Loop 3.4, your app is automatically built at least once a month and is checked for updates once a week
+    * Planned for the next release: app will build automatically at least once a month and is checked for updates once a week
 
+### Considerations for Building with a Browser
 
-### Considerations for &nbsp;<span translate="no">GitHub</span>&nbsp;Build
-
-* The app is delivered to your phone via the &nbsp;<span translate="no">TestFlight</span>&nbsp;app
-    * These apps are considered "Beta" by &nbsp;<span translate="no">Apple</span>&nbsp;and expire after 90 days
-    * With Loop 3.4, once you succeed in building, the automatic process starts a build at least every 30 days
-* After the &nbsp;<span translate="no">GitHub Build</span>&nbsp;starts, the automatic process takes about an hour to complete
+* The app is delivered to your phone via&nbsp;<span translate="no">TestFlight</span>
+    * The app is considered "Beta" by &nbsp;<span translate="no">Apple</span>&nbsp;and expires after 90 days
+    * With the next release, with automatic builds, this should not be an issue
+* After the&nbsp;<span translate="no">GitHub Build</span>&nbsp;starts, the process takes about an hour to complete
     * You will receive an email indicating success (or failure)
-    * Loop appears in the *TestFlight* app on the Loop phone, where it can be installed in seconds
+    * The&nbsp;<span translate="no">Loop</span>&nbsp;app appears in the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on the phone, where it can be installed in seconds
 * Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize with &nbsp;<span translate="no">GitHub</span>](../gh-actions/gh-customize.md)
@@ -76,4 +73,3 @@ Try to:
     * Does the error message guide you to the problem and solution?
     * Be aware that &nbsp;<span translate="no">GitHub</span>&nbsp;often updates where things are - search for &nbsp;<span translate="no">GitHub</span>&nbsp;directions if your display looks different than LoopDocs.
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
-
