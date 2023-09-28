@@ -1,10 +1,10 @@
-## Deploy Using *TestFlight*
+## General Installation Information
 
 This is only available with Loop 3 and Loop development branches.
 
 **You must build Loop every 90 days when you use this method.**
 
-After building Loop using [GitHub Build Loop](../gh-actions/gh-first-time.md#build-loop), you are ready to deploy to as many phones as you and your family members need.
+After [building Loop using a browser](../gh-actions/gh-first-time.md#build-loop), you are ready to install on as many phones as you and your family members need.
 
 * If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 

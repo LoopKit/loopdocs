@@ -32,6 +32,9 @@ The same technique is used and the same six Secrets are applied to each reposito
 
 * You will return to this page after reviewing (but not doing) this step [GitHub First-Time: Fork LoopWorkspace](../gh-actions/gh-first-time.md#fork-loopworkspace)
     * Use the same method as that section, but fork the repository for the app you plan to build
+    * <span translate="no">Loop Caregiver</span>, expect the branch to be "dev"
+    * <span translate="no">Loop Follow</span>, expect the branch to be "main"
+
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
