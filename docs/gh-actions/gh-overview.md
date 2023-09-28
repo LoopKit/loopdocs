@@ -23,7 +23,7 @@
     * The&nbsp;<span translate="no">Loop</span>&nbsp;app appears in the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on the phone, where it can be installed in seconds
 * Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
-    * Instructions are documented at [Customize with &nbsp;<span translate="no">GitHub</span>](../gh-actions/gh-customize.md)
+    * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
 
 
 ## Requirements
