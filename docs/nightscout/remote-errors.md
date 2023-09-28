@@ -26,7 +26,7 @@ If you attempt to issue a command from &nbsp;<span translate="no">Nightscout</sp
 Error: APNs delivery failed: BadDeviceToken
 ```
 
-If you attempt to issue a command using &nbsp;<span translate="no">Loop Caregiver</span>; after you authenticate the command, you will see the error message listed below and shown in the screen shot.
+If you attempt to issue a command using &nbsp;<span translate="no">Loop Caregiver</span>; after you authenticate the command, you will see the error message listed below and shown in the screenshot.
 
 ```
 HTTP Error

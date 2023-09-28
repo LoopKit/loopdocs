@@ -25,9 +25,9 @@ When you need to configure your authentication method, you can either use a save
 Options:
 
 * Have your Looper (or at least their phone) available
-* Save a screen shot of their QR code
+* Save a screenshot of their QR code
     * Keep this secure
-    * Do not share the QR screen shot when asking for help
+    * Do not share the QR screenshot when asking for help
 
 ![example screen for nightscout and qr code](img/qr-code-example.png ){width="650"}
 {align="center"}

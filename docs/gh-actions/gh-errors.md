@@ -1,26 +1,34 @@
-## <code>*GitHub* Browser Build</code> Errors
+## Help with Errors
+    
+If you get an error when building with a browser, use this page to figure out what to do.
 
-This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update *LoopDocs* to make it easier for the next person to succeed without errors.
+If you are still unsuccessful, then post your request for help along with your&nbsp;<span translate="no">GitHub</span>&nbsp;**username**. Mentors can go to your public&nbsp;<span translate="no">GitHub repository</span>, check the status and then view your log files directly.
 
-If you've been around Loop for a while, you know the mantra about screenshots. Well, for *GitHub* Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public <code>LoopWorkspace</code> fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
+* Do not copy from the log file and post the words
+* Do not take a screenshot of what you think is an error
+* Just post your username and the name of the app you are trying to build
+
+!!! tip "Username, Not Pictures"
+    If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**. 
 
 But first - try to diagnose it yourself using this page.
 
-## Most Common Mistakes
+### Most Common Mistakes
 
 These are some of the most common errors to date.
 
-* Make a spelling error when adding Secrets
+* Common mistake: you made a spelling error when adding Secrets
     * Each secret must be spelled exactly the way it is presented in the instructions
-* Save your Secrets, as directed, but use a smart editor instead of a text-only editor
+    * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
+* Common mistake: use a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
-* When entering `TEAMID`, make a spelling error in the value - please copy and paste instead of typing what you think you see
-    * If you type in your `TEAMID` as `0123498989` when it is really `012349B989`, you may not notice
-        * Hint: what should have been the letter `B`, got typed as the number `8`
-    * The incorrect `TEAMID` will show up in your identifiers as the `Bundle ID` but . . .
-        * You will not be able to `Create Certificates` or `Build Loop` because your `TEAMID` does not match the `Bundle ID`
-* Run the actions out of order or skip one
+* Common mistake: when saving `TEAMID`, you type what you think you see instead of using copy and paste
+* Common mistake: skip running one of the actions
+
+If you are running development code, skip ahead to [Preview for Version 3.4](#preview-for-version-34).
+
+The next section is valid for Version 3.2.x and earlier.
 
 ## Find Your Error
 
@@ -437,54 +445,35 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
+## Preview for Version 3.4
 
-!!! note "To Do"
-    set up headers that will be added, with graphics, for later use.
+When dev is released as Version 3.4.0, this will be the error finding section in LoopDocs.
 
-## <span translate="no">Annotation</span>&nbsp;Message
+Error annotations are available for Version 3.3.0 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
 
-### Agreement not signed
+## Examine Annotation
 
-placeholder for the example annotation messages from Action failures.
+If a&nbsp;<span translate="no">GitHub Action</span>&nbsp;fails, you will see a clear notification.
 
-## Old Steps
+First consider the following results from the&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>.
 
-With the release of Loop 3.4, some manual steps are no longer required.
+Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.4.0 is released.
 
-However, the manual direction are being stashed at the bottom of the errors page. Expect this documentation to be removed over time.
-
-### Create Match-Secrets
-
-**This step is automatically performed for you when you run `Validate Secrets``.**
-
-Open your github.com URL (this is `https://github.com/username`), (`username` is the name you chose above).
-
-Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
-
-* Click on this link: [(https://github.com/new)](https://github.com/new)
-
-or
-
-* At the top right of the screen, click on the &plus; sign and select `New Repository`
-
-    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
-    {align="center"}
-
-This shows you a screen similar to the following graphic which has 3 regions highlighted:
-
-* In `Repository name`, type `Match-Secrets` (use a hyphen between `Match` and `Secrets`)
-* Be sure to check the  box **`Private`**  (red circle) to make the repository **private**
-* **Please confirm you selected `Match-Secrets` repository as private.**
-* Scroll to the bottom of the page and tap on "`Create repository`"
-
-![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
+![graphic showing failure to validate secrets](img/error-validate-secrets.png){width="500"}
 {align="center"}
 
-A screen will appear with a lot of options - do **not** do anything on this screen.
+But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The GIF below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the GIF shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.
 
-* Click on your username (as indicated by the red rectangle) to return to your main *GitHub* URL.
-
-![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
+![graphic showing validate secret error messages](img/error-annotations-validate-secrets.gif){width="800"}
 {align="center"}
 
-You will not directly interact with your `Match-Secrets` repository.
+Notice that&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.
+
+For example, the graphic below shows a failure of&nbsp;<span translate="no">GitHub Action: 3. Create Certificates</span>&nbsp;.
+
+![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
+{align="center"}
+
+This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
+
+If you run across an error that does not have a nice message, be sure to post as discussed in [Help with Errors](#help-with-errors). You may be contributing to future improvements for this process.
