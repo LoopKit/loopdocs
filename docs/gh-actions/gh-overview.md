@@ -1,18 +1,16 @@
-## Build Loop with a Browser
-!!! info "`Github build` = `Browser `build`"
-    In this section, `GitHub Build` and `Browser Build` mean the same thing, i.e. building *Loop* with a Web browser.
+## Build with a Browser
 
-`GitHub build` can be used with Loop 3 and development versions.
+* <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
+* The app is then installed remotely on the phone using <span translate="no">TestFlight</span>
 
-### Advantages of *GitHub* Build
+### Advantages of Building with a Browser
 
 * Mac computer is not required
-* Mac computer or PC or tablet are fine for *GitHub* build
+* Mac computer or PC or tablet all work
 * Xcode is not required
-    * The time required for the initial setup for *GitHub* may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
-* Updates are easy
-* Starting an update takes a few minutes of your time; the rest is automatic
-
+    * The time required for the initial configuration may take less time than one macOS and Xcode version update for those using [<span translate="no">Mac-Xcode Build</span>](../build/overview.md)
+* Updates are easy and, with version 3.4.0, will be automatic
+* Starting an update takes a few minutes of your time; installation is available in about an hour
 
 ### Disadvantages of *GitHub* Build
 
