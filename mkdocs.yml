@@ -132,12 +132,12 @@ nav:
     - 'Loop Data': 'build/loop-data.md'
     - 'Meet the Community': 'build/community.md'
 - Browser Build:
-    - 'GitHub Build Overview': gh-actions/gh-overview.md
-    - 'GitHub First-Time': gh-actions/gh-first-time.md
-    - 'GitHub Deploy': gh-actions/gh-deploy.md
+    - 'Build with Browser Overview': gh-actions/gh-overview.md
+    - 'Configure to use Browser': gh-actions/gh-first-time.md
+    - 'Install on Phone': gh-actions/gh-deploy.md
     - 'Update with Browser': gh-actions/gh-update.md
     - 'Errors with Browser': gh-actions/gh-errors.md
-    - 'Other Apps': gh-actions/gh-other-apps.md
+    - 'Build Other Apps with Browser': gh-actions/gh-other-apps.md
 - Mac-Xcode Build:
     - 'Mac-Xcode Build Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/computer.md'
@@ -200,8 +200,8 @@ nav:
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
-    - 'Customize Your Loop': 'build/code-customization.md'
-    - 'Customize with GitHub': 'gh-actions/gh-customize.md'
+    - 'Code Customization': 'build/code-customization.md'
+    - 'Customize using Browser': 'gh-actions/gh-customize.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'version/build-dev.md'
