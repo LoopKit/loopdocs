@@ -78,7 +78,7 @@ Loop code is updated periodically to include new features and bug fixes. When th
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
 * If using Mac-Xcode build: use this link: [update instructions](../build/updating.md)
-* If using Browser build: use this link: [Update with Browser](../gh-actions/gh-update.md#github-build-update) 
+* If using Browser build: use this link: [Update with Browser](../gh-actions/gh-update.md#update-with-browser) 
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 
@@ -182,4 +182,4 @@ Many features people used with FreeAPS are now included in Loop 3 or can be adde
 
 The addition of customizations has been simplified with the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code). That script can be run stand-alone, selected as an option as part of the Build Select Script when doing a Mac-Xcode build or incorporated in a [GitHub Browser build customization](../gh-actions/gh-customize.md) by editing the build_loop.yml file.
 
-Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code-customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/).
+Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../build/code-customization.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code).
