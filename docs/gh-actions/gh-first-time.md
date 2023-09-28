@@ -43,6 +43,7 @@
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
+    - **What if I don't want automatic update or automatic build?** See this section [Modify Automatic Building](gh-update.md#modify-automatic-building)
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [*GitHub* Deploy: Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
     - **Can I still use my customizations?** Yes. [Customize with *GitHub*](gh-customize.md)
 
@@ -50,10 +51,10 @@
 
 When you follow the directions on this page, for Loop 3.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main branch is updated.
 
+* What if I want to modify the automatic update and build schedule?
+    * [Modify Automatic Building](gh-update.md#modify-automatic-building)
 * What if I want to turn off automatic building?
     * [Stop Building](gh-update.md#stop-building)
-* What if I want the development version and I want to adjust when it updates and/or builds?
-    * Review [Modify Automatic Building](gh-update.md#modify-automatic-building)
 
 ## Tips and Tricks
 
@@ -391,6 +392,10 @@ The free level comes with plenty of storage and compute time to build Loop.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
 
+!!! tips "Default Instruction"
+    The instructions configure for automatic update and automatic build.
+
+    Refer to [Modify Automatic Building](gh-update.md#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
 
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
