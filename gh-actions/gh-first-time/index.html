@@ -3687,7 +3687,7 @@
 <p>The <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> already exists if you previously built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <em><abbr title="program used to build an app">Xcode</abbr></em> with this <em>Apple Developer ID</em>. In that case, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
 <p>If you have never built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <em><abbr title="program used to build an app">Xcode</abbr></em> using your <code>TEAMID</code>, you need to create an <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> associated with your <code>TEAMID</code>.</p>
 <ol>
-<li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/"><code>Register an</code><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>``</a> on the <em>Apple</em> developer site.</li>
+<li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/applicationGroup/add/">Register an <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></a> on the <em>Apple</em> developer site.</li>
 <li>For <strong><code>Description</code></strong>, use <code>Loop App Group</code>.</li>
 <li>For <strong><code>Identifier</code></strong>, enter <code>group.com.TEAMID.loopkit.LoopGroup</code>, substituting your team id for <code>TEAMID</code>.</li>
 <li>Double-check the spelling - your <code>TEAMID</code> must be correct and the <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> must match the format shown in the previous step<ul>
@@ -3831,7 +3831,7 @@
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
 <h3 id="add-app-group-to-other-identifiers">Add <code>App Group</code> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-other-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You will now be checking the status for 3 more identifiers to ensure the <code>App Group</code> is configured to use the <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em>. You must add or confirm the <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> for these 3 identifiers:</p>
+<p>You will now be checking the status for 3 more identifiers to ensure the <code>App Group</code> is configured to use the <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em>. You must add or confirm the <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> for these 3 identifiers (for released code):</p>
 <table>
 <thead>
 <tr>
@@ -3854,6 +3854,23 @@
 </tr>
 </tbody>
 </table>
+<h4 id="building-dev-branch">Building dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>?<a class="headerlink" href="#building-dev-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>If you are building the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, the <code>Small Status Widget</code> was renamed. Look for it and add the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to it now.</p>
+<table>
+<thead>
+<tr>
+<th><code>NAME</code></th>
+<th><code>IDENTIFIER</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Loop Widget Extension</code></td>
+<td><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="back-to-how-to-instruction-for-main-or-dev">Back to How-to Instruction for main or dev<a class="headerlink" href="#back-to-how-to-instruction-for-main-or-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Find and click on a given identifier row on the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
 <p>The <code>Edit Your App ID Configuration</code> screen will open. Take one action for each of these three identifiers.</p>
 <p>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row</p>
