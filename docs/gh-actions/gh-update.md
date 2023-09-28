@@ -12,7 +12,7 @@
 ??? abstract "Page Summary (click to open/close)"
     **You must build Loop every 90 days when you use the &nbsp;<span translate="no">GitHub</span>&nbsp;build method - this is a &nbsp;<span translate="no">TestFlight</span>&nbsp;requirement.**
 
-    Most users will configure for automatic build when they update to Loop 3.4: see [GitHub Build Update](#githubbuild-update).
+    Most users will configure for automatic build when they update to Loop 3.4: see [GitHub Build Update](#github-build-update).
 
     If you are running Loop-dev, be sure to review [GitHub Build for dev](#github-build-for-dev)
 
@@ -22,7 +22,7 @@
     - **How do I set my `GitHub Personal Access` token to never expire and allow automatic update and build?** See this section [<span translate="no">GitHub Token</span>](#github-token).
     - **What happens to my existing builds when I change my &nbsp;<span translate="no">GitHub Personal Access Token</span>?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build will be available for the full 90 days.
 
-## <span translate="no">GitHub</span>&nbsp;Build Update
+## <span translate="no">GitHub</span>&nbsp; Build Update
 
 !!! abstract "Summary of Update Steps"
     * [Accept Agreements](#accept-agreements)
