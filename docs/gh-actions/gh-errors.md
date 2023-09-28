@@ -1,12 +1,17 @@
-## <code>*GitHub* Browser Build</code> Errors
+## Most Common Mistakes
 
-This method is fairly new so new errors are being captured as people use this method. Each time a new error is discovered, we try to update *LoopDocs* to make it easier for the next person to succeed without errors.
+!!! tip "Username, Not Pictures"
+    If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**. 
+    
+If you get an error when building with a browser, use this page to figure out what to do.
 
-If you've been around Loop for a while, you know the mantra about screenshots. Well, for *GitHub* Build Action failures, **screenshots are close to useless**. If you get an error with a *GitHub Action*, you should use the search feature for known diagnosis strings. If you are still stuck, then post your request for help along with your **GitHub username**. Mentors can go to your public <code>LoopWorkspace</code> fork - check that your branch is up to date and then view your `GitHub Action` log files directly.
+If you are still unsuccessful, then post your request for help along with your&nbsp;<span translate="no">GitHub </span>&nbsp;**username**. Mentors can go to your public&nbsp;<span translate="no">GitHub repository</span>, check the status and then view your log files directly.
+
+* Do not copy from the log file and post the words
+* Do not take a screenshot of what you think is an error
+* Just post your username and the name of the app you are trying to build
 
 But first - try to diagnose it yourself using this page.
-
-## Most Common Mistakes
 
 These are some of the most common errors to date.
 

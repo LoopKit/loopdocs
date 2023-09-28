@@ -163,7 +163,7 @@ Tap on the `Issue Report` row, on the graphic above, to create a Loop Report tex
     * Issue (on github) is used to report code problems
     * `Issue Report` is an action in Loop app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
 
-It's a good idea to use the `Issue Report` button and save it along with a screen shot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+It's a good idea to use the `Issue Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
 !!! tip "Pro Tip"
     The Loop Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named Loop Reports.
