@@ -25,6 +25,7 @@ These are some of the most common errors to date.
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
 * Common mistake: when saving `TEAMID`, you type what you think you see instead of using copy and paste
 * Common mistake: skip running one of the actions
+* Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> 
 
 If you are running development code, skip ahead to [Preview for Version 3.4](#preview-for-version-34).
 
