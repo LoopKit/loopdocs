@@ -828,13 +828,23 @@ The full list of Identifiers should be displayed again.
 
 ### Add `App Group` to Other Identifiers
 
-You will now be checking the status for 3 more identifiers to ensure the `App Group` is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers:
+You will now be checking the status for 3 more identifiers to ensure the `App Group` is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers (for released code):
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
 | `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
+
+#### Building dev branch?
+
+If you are building the dev branch, the `Small Status Widget` was renamed. Look for it and add the App Group to it now.
+
+| `NAME` | `IDENTIFIER` |
+|-------|------------|
+| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
+
+#### Back to main (released code)
 
 Find and click on a given identifier row on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
 
