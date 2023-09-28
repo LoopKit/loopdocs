@@ -1,6 +1,6 @@
-## Update &nbsp;<span translate="no">Loop</span>&nbsp;using &nbsp;<span translate="no">GitHub Actions</span>
+## Overview
 
-??? info "Time Estimate (click to open/close)"
+???+ info "Time Estimate (click to open/close)"
     - Update your configuration for automatic builds: 10 minutes
     - Update your fork: 5 minutes
     - Follow the extra instructions to get &nbsp;<span translate="no">Loop</span>&nbsp;ready to build: 10 minutes
@@ -9,20 +9,22 @@
         * about an hour
         * depends on &nbsp;<span translate="no">GitHub</span>, <span translate="no">Apple</span>&nbsp;and &nbsp;<span translate="no">TestFlight</span>
 
-??? abstract "Page Summary (click to open/close)"
-    **You must build Loop every 90 days when you use the &nbsp;<span translate="no">GitHub</span>&nbsp;build method - this is a &nbsp;<span translate="no">TestFlight</span>&nbsp;requirement.**
+???+ abstract "Page Summary (click to open/close)"
+    **You must build the app every 90 days when you build with a browser - this is a&nbsp;<span translate="no">TestFlight</span>&nbsp;requirement.**
 
-    Most users will configure for automatic build when they update to Loop 3.4: see [GitHub Build Update](#github-build-update).
+    The default settings on these pages configure automatic build as part of the update to Loop 3.4: see [Update with Browser](#update-with-browser).
 
-    If you are running Loop-dev, be sure to review [GitHub Build for dev](#github-build-for-dev)
+    * If you do not want automated builds, review [Modify Automatic Building](#modify-automatic-building)
 
-??? question "FAQs (click to open/close)"
+    If you are running Loop-dev, be sure to review [GitHub Build for dev](#github-build-for-dev).
+
+???+ question "FAQs (click to open/close)"
     - **Do I need a computer?** No.
-    - **Did the directions change?** Yes. With the release of 3.4, you should configure for automatic update and build. You should not need to visit this page again with released code.
-    - **How do I set my `GitHub Personal Access` token to never expire and allow automatic update and build?** See this section [<span translate="no">GitHub Token</span>](#github-token).
-    - **What happens to my existing builds when I change my &nbsp;<span translate="no">GitHub Personal Access Token</span>?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build will be available for the full 90 days.
+    - **Did the directions change?** Yes. With the release of 3.4, we recommend you configure for automatic update and build. You should not need to visit this page again with released code.
+    - **What if I don't want automatic update or automatic build?** See this section [Modify Automatic Building](#modify-automatic-building)
+    - **What happens to my existing builds if I change my&nbsp;<span translate="no">GitHub Personal Access Token</span>?** Nothing. It only affect future builds. Previous build will be available for the full 90 days.
 
-## <span translate="no">GitHub</span>&nbsp; Build Update
+## Update with Browser
 
 !!! abstract "Summary of Update Steps"
     * [Accept Agreements](#accept-agreements)
@@ -32,7 +34,6 @@
     * [Install or Confirm Installation](#install-or-confirm-installation)
 
     Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
-
 
 ### Accept Agreements
 
@@ -52,11 +53,17 @@ Open your &nbsp;<span translate="no">GitHub</span>&nbsp;account and select your 
 
 When updating from&nbsp;<span translate="no">Loop</span>&nbsp;3.2.x to 3.4, you will need to take some extra steps. Once those steps are completed, your &nbsp;<span translate="no">Loop</span>&nbsp;app will be automatically updated and automatically built at least once a month.
 
+!!! question "Can I Opt Out?"
+    Yes - you can opt out of the automatic build.
+
+    * The default instructions configure automatic update and automatic build
+    * The instructions to opt-out of some or all of these automations start at [Modify Automatic Building](#modify-automatic-building)
+
 Here is a summary of the extra steps; each step has an associated link. You need to do all of them.
 
 1. Confirm the status of your &nbsp;<span translate="no">GitHub Personal Access Token</span>
-    * It should be configured with permission scope of `repo, workflow` and to never expire
-    * You can check this using directions at [GitHub Token](#github-token)
+    * Recommended permission scope is `repo, workflow` and set to never expire
+    * You can check this using directions at [<span translate="no">GitHub Personal Access Token</span>](#github-personal-access-token)
 1. Follow the directions for [Manual Update](#manual-update) for your fork
 1. This list is repeated in the [Build Loop](#build-loop) section along with detailed instructions
     * Add and Update New Indentifier
@@ -117,12 +124,12 @@ You'll receive an App Store Connect email confirming that the build has complete
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
 
-The updated Loop app will show up in your &nbsp;<span translate="no">TestFlight</span>&nbsp;app on the Looper's phone.
+The updated app will show up in your&nbsp;<span translate="no">TestFlight</span>&nbsp;app.
 
 * Your new app will have "Expires in 90 days"
-    * There may be older builds that are still in &nbsp;<span translate="no">TestFlight</span>
-    * It takes time for the update to show up in the &nbsp;<span translate="no">TestFlight</span>&nbsp;app
-* You will also see a build number in parentheses, that number increments each build - don't worry about the number
+    * It takes time for the update to show up in the&nbsp;<span translate="no">TestFlight</span>&nbsp;app
+    * There may be older builds that are still in&nbsp;<span translate="no">TestFlight</span>
+* You will also see a build number in parentheses, that number increments each build
 
 ### Install or Confirm Installation
 
@@ -130,8 +137,8 @@ The updated Loop app will show up in your &nbsp;<span translate="no">TestFlight<
 
 Option 1: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) disabled for Loop, you choose when to install the app on the phone.
 
-* Open &nbsp;<span translate="no">TestFlight</span>&nbsp;on your phone and click `Install` as shown in the GIF below
-* If you are building for a child, follow the [Install &nbsp;<span translate="no">TestFlight</span>&nbsp;Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
+* Open&nbsp;<span translate="no">TestFlight</span>&nbsp;on your phone and click `Install` as shown in the GIF below
+* If you are building for a child, follow the [Install&nbsp;<span translate="no">TestFlight</span>&nbsp;Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
 
 ![install Loop from &nbsp;<span translate="no">TestFlight</span>](img/testflight-install-loop.gif){width="300"}
 {align="center"}
@@ -140,24 +147,24 @@ Option 1: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-
 
 Option 2: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) enabled for Loop, the updated build will be installed over your existing app.
 
-* In this case, when you look at the &nbsp;<span translate="no">TestFlight</span>&nbsp;app on your phone, the app should have installed automatically
+* In this case, when you look at the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on your phone, the app should have installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
 ## <span translate="no">TestFlight</span>&nbsp;Expiration Warning
 
-The app expiration notification was updated to detect whether the build was uploaded through &nbsp;<span translate="no">TestFlight</span>, which implies a 90-day limit until the app expires. This is for &nbsp;<span translate="no">Loop</span> version 3.4 and later.
-
-The usual [<span translate="no">Loop</span> expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
+For version 3.3.0 and newer, the usual [<span translate="no">Loop</span> expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when the app is within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
 
 ![expiration warning on settings for testflight example](../version/img/expiration-warning-testflight.svg){width="300"}
 {align="center"}
 
-## *GitHub* Token
+## <span translate="no">GitHub Personal Access Token</span>
 
-Your &nbsp;<span translate="no">GitHub Personal Access Token</span> should be configured:
+To enable automatic building, your&nbsp;<span translate="no">GitHub Personal Access Token</span>&nbsp;should be configured:
 
 * `Never expire`
 * `repo, workflow` permission scope
+
+Refer to [Modify Automatic Building](#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
 
 If you are not logged in to *GitHub* and have not logged in recently, then you may see the authentication screen when doing the steps below.
 
@@ -168,9 +175,9 @@ Authenticate if requested by clicking on the green `Send SMS` button or entering
 
 Once you are authenticated, you will have access to view your personal access token.
 
-### Modify Personal Access Token
+### Modify Token
 
-If your Personal Access Token has not expired but does not have the correct permission, you should modify it. Do not regenerate it.
+If your Token has not expired but does not have the desired permission, you should modify it. Do not regenerate it.
 
 Click on the link to view your token and compare it to the graphic below.
 
@@ -193,16 +200,21 @@ After you click on the `Update token` button, your `FastLane Access Token` shoul
 
 The only reason to regenerate a token is if it is set to expire. Do not do the next section unless you have to.
 
-### Regenerate *GitHub* Token
+### Regenerate Token
 
-If your Personal Access Token has expired or has an expiration date, you can regenerate the new one at any time.
+If your Personal Access Token has expired or has an expiration date, you can regenerate it.
 
 !!! tip "Update new GH_PAT to Secrets"
     After you get your new token, immediately add it to your Secrets for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify Secrets for each repository to make sure you did not make a mistake.
 
-You can regenerate your *GitHub* Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)
+You can regenerate your Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)
 
 * [Link to access your &nbsp;<span translate="no">GitHub Personal Access Token</span>](https://github.com/settings/tokens)
+
+!!! question "Your existing &nbsp;<span translate="no">TestFlight</span> builds are fine"
+    The yellow &nbsp;<span translate="no">GitHub</span> warning by the `Regenerate Token` button is for new builds you make in the future.
+
+    Previous builds are still available in &nbsp;<span translate="no">TestFlight</span> and are not affected by this action.
 
 The `FastLane Access Token` is a clickable link.
 
@@ -210,11 +222,6 @@ The `FastLane Access Token` is a clickable link.
 {align="center"}
 
 After you click on `FastLane Access Token` your screen should be similar to the graphic below.
-
-!!! question "Your existing &nbsp;<span translate="no">TestFlight</span> builds are fine"
-    The yellow &nbsp;<span translate="no">GitHub</span> warning by the `Regenerate Token` button is for new builds you make in the future.
-
-    Previous builds are still available in &nbsp;<span translate="no">TestFlight</span> and are not affected by this action.
 
 Note - selecting the `workflow` check box below is new. If yours does not show that selection, add it before you click on Regenerate token (red highlight in graphic below).
 
@@ -256,7 +263,7 @@ Refer to the GIF for help. There are 3 frames.
 1. Keep scrolling on the same screen, past the Action secrets / New repository secret row, until you see your Repository secrets list. 
 1. Click on the GH_PAT, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.
 
-Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [GitHub Build Update](#github-build-update) instructions to start a new build.
+Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [Update with Browser](#update-with-browser) instructions to start a new build.
 
 ## *GitHub* Build for dev
 
