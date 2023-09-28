@@ -277,50 +277,6 @@ The graphics show the dev branch. If you want a different branch, just substitut
         * You cannot just rename your existing branch to dev - you must get the dev branch from LoopKit
     1. When you select the action `4. Build Loop` and then click on the `Run Workflow` dropdown, you must select `dev` there before clicking the green `Run workflow` button - see [Build Branch](#build-branch)
 
-### One-Time Changes
-
-Look in this section for one-time changes to the dev branch that require special, one-time actions. These are in reverse chronological order to make the most recent one easier to find.
-
-**26-July-2023**
-
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
-
-The table in LoopDocs (for main) will be updated after the next release.
-
-For those using dev, you must follow these one-time steps:
-
-1. Sync your fork to latest version of dev
-1. Run the Action for Add Identifiers (this adds "`LoopWidgetExtension`" to identifiers)
-    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
-    * Click on the "`LoopWidgetExtension`" identifier
-    * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
-1. Run the Action for Create Certificates
-1. Run the Action for Build Loop
-
-**03-July-2023**
-
-1. Libre support was added to dev (03 July 2023) using the LibreTransmitter code
-    * This requires (one-time) that the `Actions` for `2. Add Identifiers` and `3. Create Certificates` be run before attempting `4. Build Loop`
-    * The LibreTransmitter code requires `Near Field Communication` and doing these steps automatically adds the required capability
-1. Automatic update and automatic monthly build was added to dev (13 July 2023)
-    * Once a month, *GitHub* will attempt to update and build Loop from your `default branch` using the instructions in the `Action: 4. Build Loop` (`build_loop.yml` file) and send the new app to *TestFlight*
-    * As part of this monthly build, *GitHub* will check to see if updates are required for your `default branch`
-    * When updates are not required, it just builds the app
-    * When updates are required:
-        * If it can figure out how to do the `sync` automatically, it does so
-        * If it cannot figure out how to do the `sync` automatically, the `Action` to `4. Build Loop` will fail and you will need to take manual steps
-    * You will get an email that the `Build` either succeeded or failed
-
-!!! info "Automatic Update Requirements"
-    To enable the automatic update and rebuild, two steps are required. These are one-time steps.
-
-    * The GH_PAT must be updated (not regenerated) to add `workflow`
-        * Examine your [`FastLane Access Token`](https://github.com/settings/tokens)
-        * If it says `repo, workflow`, then no further action is needed for your GH_PAT
-        * If it say `repo` only, then click on the `FastLane Access Token` link, click to add a check to the `workflow` box and scroll all the way down to select the green `Update token` button
-    * A new branch called `alive` must be created from the LoopKit `dev` branch
-        * Follow the directions at [Add Branch](#add-branch), except this time, you will type `alive` in the empty branch name that you connect to `LoopKit/LoopWorkspace` `dev` branch
-        * You will not use the `alive` for anything directly, but it must exist for the automatic update to function
 
 ### Check Current Branches
 
@@ -356,6 +312,57 @@ Tap the `Code` button (upper left) and ensure this branch in your fork is up to 
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
+
+### One-Time Changes
+
+Look in this section for one-time changes for building dev with a browser that require special, one-time actions. 
+
+If you have already completed the One-Time Changes, skip ahead to [Build Branch](#build-branch).
+
+#### Transition to dev
+
+When updating from&nbsp;<span translate="no">Loop</span>&nbsp;3.2.x to dev, you will need to take some extra steps. 
+
+You have a choice:
+
+* You can change your default branch to dev, see [Change Default Branch](#change-default-branch) and then your &nbsp;<span translate="no">Loop</span>&nbsp;app will be automatically updated and automatically built at least once a month
+    * Be sure to review the [Modify Automatic Building](#modify-automatic-building) section
+* You can leave your default branch at main, but no automated updates will happen
+    * Running each action below requires you to select the dev branch in the drop-down menu
+
+Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your fork and are at the correct branch.
+
+1. Confirm the status of your &nbsp;<span translate="no">GitHub Personal Access Token</span>
+    * It should be configured with permission scope of `repo, workflow` and to never expire
+    * You can check this using directions at [GitHub Token](#github-token)
+1. Next, follow along in this section to perform these steps before you build
+    * Add and Update New Indentifier
+    * Create Certificates
+
+#### Add and Update New Identifier
+
+The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
+
+* You need to run Add Identifier - be sure that you run this for the dev branch
+* Wait for it to succeed
+* Add the `App Group` to this one new Identifier
+
+All other identifiers should be already set up. If they are not, please go through the steps on the [GitHub First Time](gh-first-time.md) page to figure out what you are missing.
+
+| `NAME` | `IDENTIFIER` |
+|-------|------------|
+| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
+
+* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+* Click on the "`LoopWidgetExtension`" identifier
+* Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
+
+#### Create Certificates and Build
+
+You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
+
+1. Run the Action for Create Certificates - be sure that you run this for the dev branch
+1. Run the Action for Build Loop (see [Build Branch](#build-branch))
 
 ### Build Branch
 
@@ -404,3 +411,133 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
+
+
+## Modify Automatic Building
+
+For someone using [development code](#github-build-for-dev) for their own use, they probably want to decide when to update their fork to the most recent commit. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are added to Loop 3.3.0 and later.
+
+You can affect the default behavior:
+
+1. [Modify Automatic Schedule](#modify-automatic-schedule)
+1. [Disable Automatic Actions](#disable-automatic-actions)
+
+### Modify Automatic Schedule
+
+You can modify the automation by creating and using some variables.
+
+To configure the automated build more granularly involves creating up to two environment variables: `SCHEDULED_BUILD` and/or `SCHEDULED_SYNC`. See [How to configure a variable](#how-to-configure-a-variable). 
+
+Note that the weekly and monthly Build Loop actions will continue, but the actions are modified if one or more of these variables is set to false. **A successful Action Log will still appear, even if no automatic activity happens**.
+
+* If you want to manually decide when to update your repository to the latest commit, but you want the monthly builds and keep-alive to continue: set `SCHEDULED_SYNC` to false and either do not create `SCHEDULED_BUILD` or set it to true
+* If you want to only build when an update has been found: set `SCHEDULED_BUILD` to false and either do not create `SCHEDULED_SYNC` or set it to true
+    * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire requiring a manual build
+
+|`SCHEDULED _SYNC`|`SCHEDULED _BUILD`|Automatic Actions|
+|---|---|---|
+| `true` (or NA) | `true` (or NA) | keep-alive, weekly update check (auto update/build), monthly build with auto update|
+| `true` (or NA) | `false` | keep-alive, weekly update check with auto update, only builds if update detected|
+| `false` | `true` (or NA) | keep-alive, monthly build, no auto update |
+| `false` | `false` | no automatic activity, no keep-alive|
+
+### How to configure a variable
+
+1. Go to the "Settings" tab of your LoopWorkspace repository.
+2. Click on `Secrets and Variables`.
+3. Click on `Actions`
+4. You will now see a page titled *Actions secrets and variables*. Click on the `Variables` tab
+5. To disable ONLY scheduled building, do the following:
+    - Click on the green `New repository variable` button (upper right)
+    - Type `SCHEDULED_BUILD` in the "Name" field
+    - Type `false` in the "Value" field
+    - Click the green `Add variable` button to save.
+7. To disable scheduled syncing, add a variable:
+    - Click on the green `New repository variable` button (upper right)
+    - - Type `SCHEDULED_SYNC` in the "Name" field
+    - Type `false` in the "Value" field
+    - Click the green `Add variable` button to save
+  
+Your build will run on the following conditions:
+
+- Default behaviour:
+    - Run weekly, every Wednesday at 08:00 UTC to check for changes; if there are changes, it will update your repository and build
+    - Run monthly, every first of the month at 06:00 UTC, if there are changes, it will update your repository; regardless of changes, it will build
+    - Each time the action runs, it makes a keep-alive commit to the `alive` branch if necessary
+- If you disable any automation (both variables set to `false`), no updates, keep-alive or building happens when Build Loop runs
+- If you disabled just scheduled synchronization (`SCHEDULED_SYNC` set to`false`), it will only run once a month, on the first of the month, no update will happen; keep-alive will run
+- If you disabled just scheduled build (`SCHEDULED_BUILD` set to`false`), it will run once weekly, every Wednesday, to check for changes; if there are changes, it will update and build; keep-alive will run
+
+### Disable Automatic Actions
+
+To enable the scheduled build and sync, the `GH_PAT` must hold the `workflow` permission scopes. This permission serves as the enabler for automatic and scheduled builds with browser build. To disable this, follow these steps:
+
+1. Go to your [FastLane Access Token](https://github.com/settings/tokens)
+1. If it says `repo`, `workflow` next to the `FastLane Access Token` link, then automatic building is enabled
+1. To disable automatic update and build, click on the link to open the token detail view
+    * Click to uncheck the `workflow` box
+    * Click to check the `repo` box
+1. Scroll all the way down to and click the green `Update token` button
+1. Your token now holds only the `repo` permission
+
+If you choose not to have automatic building enabled, be sure the `GH_PAT` has `repo` scope or you won't be able to manually build.
+
+## Stop Building
+
+What if I decide I don't want the automatic building feature?
+
+* If you are using the released version of Loop, please leave automatic building running
+    * Please read [TestFlight Automatic Updates](gh-deploy.md#testflight-automatic-updates) on how to configure TestFlight so you choose when the updated app gets installed on your phone
+    * Otherwise, you may see the dreaded "Loop Beta has expired" message, have a Loop that won't open and not have a version ready to go in TestFlight that you can install within a few seconds
+
+* If you are taking a break from Loop and want to stop monthly Build emails, consider disabling actions for the Build Loop action for your app.
+    * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
+    * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
+
+* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [GitHub First Time](gh-first-time.md) to restore ability to build Loop with GitHub.
+
+## Historical Interest Only
+
+### Historical One-Time Changes
+
+You don't need this - it is left for historical reasons for people who have been following along with dev.
+
+**26-July-2023**
+
+The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
+
+The table in LoopDocs (for main) will be updated after the next release.
+
+For those using dev, you must follow these one-time steps:
+
+1. Sync your fork to latest version of dev
+1. Run the Action for Add Identifiers (this adds "`LoopWidgetExtension`" to identifiers)
+    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+    * Click on the "`LoopWidgetExtension`" identifier
+    * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
+1. Run the Action for Create Certificates
+1. Run the Action for Build Loop
+
+**03-July-2023**
+
+1. Libre support was added to dev (03 July 2023) using the LibreTransmitter code
+    * This requires (one-time) that the `Actions` for `2. Add Identifiers` and `3. Create Certificates` be run before attempting `4. Build Loop`
+    * The LibreTransmitter code requires `Near Field Communication` and doing these steps automatically adds the required capability
+1. Automatic update and automatic monthly build was added to dev (13 July 2023)
+    * Once a month, *GitHub* will attempt to update and build Loop from your `default branch` using the instructions in the `Action: 4. Build Loop` (`build_loop.yml` file) and send the new app to *TestFlight*
+    * As part of this monthly build, *GitHub* will check to see if updates are required for your `default branch`
+    * When updates are not required, it just builds the app
+    * When updates are required:
+        * If it can figure out how to do the `sync` automatically, it does so
+        * If it cannot figure out how to do the `sync` automatically, the `Action` to `4. Build Loop` will fail and you will need to take manual steps
+    * You will get an email that the `Build` either succeeded or failed
+
+!!! info "Automatic Update Requirements"
+    To enable the automatic update and rebuild, two steps are required. These are one-time steps.
+
+    * The GH_PAT must be updated (not regenerated) to add `workflow`
+        * Examine your [`FastLane Access Token`](https://github.com/settings/tokens)
+        * If it says `repo, workflow`, then no further action is needed for your GH_PAT
+        * If it say `repo` only, then click on the `FastLane Access Token` link, click to add a check to the `workflow` box and scroll all the way down to select the green `Update token` button
+    * A new branch called `alive` must be created from the LoopKit `dev` branch
+        * This is now created automatically for you
