@@ -135,10 +135,10 @@ The updated app will show up in your&nbsp;<span translate="no">TestFlight</span>
 
 #### TestFlight Automatic Update Disabled
 
-Option 1: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) disabled for Loop, you choose when to install the app on the phone.
+Option 1: If you chose to [Disable Automatic Install from&nbsp;<span translate="no">TestFlight</span>](../gh-actions/gh-deploy.md#disable-automatic-install-fromtestflight) for Loop, you choose when to install the app on the phone.
 
 * Open&nbsp;<span translate="no">TestFlight</span>&nbsp;on your phone and click `Install` as shown in the GIF below
-* If you are building for a child, follow the [Install&nbsp;<span translate="no">TestFlight</span>&nbsp;Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
+* If you are building for a child, follow the&nbsp;[<span translate="no">TestFlight</span>&nbsp; for Child](gh-deploy.md#testflightfor-child) instructions again
 
 ![install Loop from &nbsp;<span translate="no">TestFlight</span>](img/testflight-install-loop.gif){width="300"}
 {align="center"}

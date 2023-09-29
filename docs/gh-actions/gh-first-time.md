@@ -43,9 +43,9 @@
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
-    - **What if I don't want automatic update or automatic build?** See this section [Modify Automatic Building](gh-update.md#modify-automatic-building)
-    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [*GitHub* Deploy: Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
-    - **Can I still use my customizations?** Yes. [Customize with *GitHub*](gh-customize.md)
+    - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](gh-deploy.md#automatic-update-build-install) for more explanations
+    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflightfor-a-child).
+    - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
 
 ## Automatic Build of Loop
 
@@ -954,7 +954,7 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
 
-You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child).
+You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
 
 1. First you need to add the email address(es) to your *App Store Connect* Access Users list:
 
@@ -981,7 +981,7 @@ You are configuring a private capability for your family using an Internal Testi
     * Click in the box beside each person you want to include
     * Each person in this group will get an email each time you update (build again) using the <code>*GitHub* Browser Build</code> method
     * Click `Add` when you are done
-    * If building for a child, you will send the invitation to yourself because you will install for your child: See [Install Loop for Child](gh-deploy.md#install-testflight-loop-for-child)
+    * If building for a child, you will send the invitation to yourself because you will install for your child: See [TestFlight for a Child](gh-deploy.md#testflightfor-child)
 
     ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
     {align="center"}

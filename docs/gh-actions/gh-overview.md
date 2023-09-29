@@ -38,7 +38,7 @@ To build the&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser, you
     * If building for a family member, review this section:
         * [Loopers Need Their Own *Apple* ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
     * If building for a child (age depends on the country), review this section:
-        * [Install *TestFlight* Loop for Child](../gh-actions/gh-deploy.md#install-testflight-loop-for-child)
+        * [Install *TestFlight* Loop for Child](../gh-actions/gh-deploy.md#testflightfor-child)
 
 Once you have the &nbsp;<span translate="no">Loop</span>&nbsp;app in TestFlight, you need:
 
