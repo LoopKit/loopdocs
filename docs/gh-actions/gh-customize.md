@@ -37,13 +37,13 @@
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code-customization.md) page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list)
-    * <span translate="no">GitHub</span>&nbsp; (each Module):
+    * <span translate="no">GitHub</span>&nbsp;(each Module):
         1. Fork Module (if needed)
         1. Sync the Module (if needed)
         1. Make the desired modification(s) using the pencil tool
         1. Save (commit) your changes to your fork
         1. Prepare lines needed for each customization and save
-    * <span translate="no">GitHub</span>&nbsp; (LoopWorkspace)
+    * <span translate="no">GitHub</span>&nbsp;(LoopWorkspace)
         1. You will use the pencil tool to edit build_loop.yml in your fork
         1. Add customization lines to the file
         1. Save (commit) your changes
