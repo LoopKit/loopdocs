@@ -18,14 +18,14 @@ Some customizations are the same for everyone and have been prepared for easy us
 * Mac-Xcode builders can use the [Loop and Learn: Loop Customizations](https://www.loopandlearn.org/custom-code) script
     * This script automatically finds the most recent download and when you are done selecting customizations, opens Xcode to that download
     * Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download
-* GitHub builders can use [Loop and Learn: Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list)
+* Browser builders can use [Loop and Learn: Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list)
 
 Other customizations require that you create your own personalized version.
 
 * Mac-Xcode builders: all the information required is on this page
-* GitHub builders: read this page and use [LoopDocs: GitHub Customization](../gh-actions/gh-customize.md#prepare-the-patches)
+* Browser builders: read this page and use [LoopDocs: Customization with Browser](../gh-actions/gh-customize.md#prepare-the-patches)
 
-For GitHub Browser Build, you can skip over the Mac-Xcode specific section and skip ahead to [Build-Time Features](#build-time-features).
+For Build with Browser, you can skip over the Mac-Xcode specific section and skip ahead to [Build-Time Features](#build-time-features).
 
 When applying a customization using Mac-Xcode, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.
 
@@ -75,7 +75,7 @@ Build-time features are not available with Loop 2.2.x.
 
 With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.
 
-If you use the GitHub Build Method, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on GitHub and then commit the change to your fork.
+If you use Build with Browser, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on your copy of LoopWorkspace and then commit the change.
 
 If you use the Mac-Xcode Build Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
 
@@ -170,7 +170,7 @@ You can customize chart display settings if you want. The original lines of code
 
 The instructions on this page were originally prepared for the Mac-Xcode method. 
 
-The GitHub Browser Build method instructions are similar, but each one is used to edit your fork of the particular Module in your GitHub account as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page.
+The Build with Browser method instructions are similar, but each one is used edit a file using a browser in your&nbsp;<span translate="no">GitHub</span>&nbsp;account as instructed on the [Customize with Browser](../gh-actions/gh-customize.md) page.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for ( ++cmd+l++ # ) the line number. 
 
@@ -183,10 +183,10 @@ For Mac-Xcode builders:
 * Be sure to save the file when you make a change - otherwise the modification does not get built into your app
 * Some folder icons show different names in Xcode, see [Folders and Icons](#folders-and-icons)
 
-For GitHub Browser builders;
+For Build with Browser:
 
 * Some customizations can be copied from the [Loop and Learn: Customization: Single Customization List](https://www.loopandlearn.org/custom-code#custom-list)
-* Otherwise, create your own customization for the Module identified under [Module, Folder, File](#module-folder-file) as instructed on the [Customize with GitHub](../gh-actions/gh-customize.md) page
+* Otherwise, create your own customization for the Module identified under [Module, Folder, File](#module-folder-file) as instructed on the [Customize with Browser](../gh-actions/gh-customize.md) page
 
 ### Key_Phrase
 
@@ -716,7 +716,7 @@ Each exponential model has 3 parameters that can be adjusted:
 * peakActivity: Peak of insulin activity (minutes)
 * delay: Delay before insulin begins to acts after delivery starts (minutes)
 
-Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this [GitHub Issue Comment](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473).
+Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this [Comment](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473).
 
 If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.
 
@@ -757,7 +757,7 @@ This Loop 3 table of default values is provided for convenience. The times are a
 ## Loop Logo
 
 !!! warning "Mac-Xcode Instructions"
-    This can be done with GitHub but the instructions might need to be adjusted for that case.
+    This can be done with Build with Browser but the instructions might need to be adjusted for that case.
 
 If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
 
@@ -786,13 +786,11 @@ You may see a yellow warning that there are “unassigned children” depending 
 
 And now you'll be the proud new owner of a custom Loop icon.
 
-## Additional Customizations for Loop 3
+## Open a Terminal in LoopWorkspace Folder
 
-Some customizations on this page add support for Libre sensors. If you are willing to build a dev branch, then Libre support is already added to that version. Please read [Support for Libre Sensors](../version/development.md#support-for-libre-sensors).
+If you use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code), it automatically locates your most recent download, makes the customization you select in that download and then opens Xcode for you.
 
-If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-Xcode or GitHub browser build method).
-
-### Open a Terminal in LoopWorkspace Folder
+But sometimes, you need to find your downloaded code and make your own changes in Xcode. This section tells you how to do this.
 
 Refer to the graphic below.  The Downloads folder in Finder is highlighted on the upper left. The full path to Loop.xcworkspace is highlighted along the bottom. Double clicking on that file opens Xcode; but to apply customizations, you need to type commands in the terminal.
 
@@ -814,16 +812,17 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 ![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
 {align="center"}
 
+## Additional Customizations for Loop 3
+
+Some customizations on this page add support for&nbsp;<span translate="no">Libre CGM</span>. If you are willing to build a dev branch, then&nbsp;<span translate="no">Libre CGM</span>&nbsp;support is already added to that version. Please read [Support for Libre Sensors](../version/development.md#support-for-libre-sensors).
 
 ### Custom Type One LoopPatches
 
-**If you do not already use this set of customizations, please do not start.**
+**If you do not already use this set of customizations, please do not start. These will not be available for the next release of code.**
 
-Several items were consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#custom). This script can be used with either Mac-Xcode or GitHub Browser build methods.
+Several items were consolidated into a set of patches known as [CustomTypeOne LoopPatches](https://www.loopandlearn.org/custom-type-one-loop-patches). The easiest way to get CustomTypeOne LoopPatches is to use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#custom). This script can be used with either Mac-Xcode or Build with Browser methods and is compatible up through Loop 3.2.x and dev; but will be not be offered with the next release.
 
 Please read the documentation and test any patch that you enable. These patches don't have the nice guardrails found in Loop 3 and must be configured at the iOS Settings, Loop interface. They cannot be adjusted inside the Loop app.
-
-Although special versions of Custom Type One LoopPatches are supplied via the Customization Select Script that are compatible with the dev branch and will be compatible with Loop 3.4.x, it is strongly recommended that if you don't already use these patches - do not start. The support for some features has already been replaced with features inside Loop that will be standard with Loop 3.4, and other changes are expected in the future.
 
 ## Libre Support for Loop 3.2.x Code
 
@@ -834,7 +833,7 @@ Although special versions of Custom Type One LoopPatches are supplied via the Cu
 
 ### Add Libre App to Loop Phone
 
-LibreTransmitter for Loop is already included in the dev branch. [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop). If you [Build Loop-dev](../version/build-dev.md), you do not need to add a Libre app to your phone.
+LibreTransmitter for Loop is already included in the dev branch. [README file for LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop). If you [Build Loop-dev](../version/build-dev.md), you do not need to add a Libre app to your phone.
 
 You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.
 
@@ -845,36 +844,27 @@ These are Libre iOS app options that work with Loop 3.2.x. In other words, you i
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
         * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select xDrip4iOS
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
-* GlucoseDirect: [README file on github repository](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
+* GlucoseDirect: [README file for GlucoseDirect](https://github.com/creepymonster/GlucoseDirect#glucose-direct)
     * To use this code with Loop, you must "build it yourself" with the same developer ID as you use with Loop
         * You can use the [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) and choose Option 2: Build Related Apps and then select GlucoseDirect
     * If you use the TestFlight installation method with someone else's apple developer id, you will need an internet connection to Loop
 
 ### Modify Loop to use Libre
 
+There are some commands to use with Build with Browser or with Mac-Xcode that add an interface to these CGM inside Loop. But this is valid only up through version 3.2.x.
+
+* [Add CGM Clients: Build with Browser](https://www.loopandlearn.org/custom-code/#add-lnl-patches)
+* [Add CGM Clients: Mac-Xcode](https://www.loopandlearn.org/custom-code/#add-cgm-323)
+
 These customizations are only for Loop 3.2.x. They do not work for the dev branch, soon to be released as Loop 3.4.
-
-For your selected app to read the Libre, you must also add a client to Loop 3.2.x to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with Loop 3.2.x.
-
-Add a client that interfaces with xDrip4iOS:
-
-* [Add xdrip-client-swift to Loop 3.2.x](https://github.com/JohanDegraeve/xdrip-client-swift-1#readme)
-    * Note - there are extra details visible when you click on the black arrow icons in this file
-    * [zulipchat converstation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292280110)
-
-Add a client that interfaces with GlucoseDirect:
-
-* [Add GlucoseDirectClient](https://github.com/creepymonster/GlucoseDirectClient)
-    * [zulipchat conversation](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292307629)
-    * The instructions are in the video on the GlucoseDirectClient repo page
 
 ### LibreTransmitter
 
 LibreTransmitter is included in Loop dev and will be in Loop 3.4 when it is released:
 
-* LibreTransmitter for Loop: [README file on github repository](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
+* LibreTransmitter for Loop: [README file for LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
     * LibreTransmitter is incorporated into Loop directly, so there not a separate app to be installed
-    * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script-libre)
+    * See [BuildLoopDev Script](../version/build-dev.md#buildloopdev-script)
 
 ## Limit Loop for Faster CGM
 
@@ -887,14 +877,13 @@ This modification limits the period for Loop cycles to 4.2 minutes or longer. Se
 
     This is only needed for Loop 3.2.2 and earlier versions.
 
+* When using Build with Browser, please refer to [Loop and Learn: Code Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list)
+
 * When building with Mac-Xcode, copy the command (below), paste into a terminal window on the Mac and choose `Limit CGM driven Loop Cycle to 5 minutes`:
 
 ``` { .txt .copy title="Customization Select script" }
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)"
 ```
-
-* When using GitHub Browser build, please refer to [Loop and Learn: Code Customization: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list)
-
 
 ## Folders and Icons
 
