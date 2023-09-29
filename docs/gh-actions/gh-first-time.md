@@ -392,8 +392,8 @@ The free level comes with plenty of storage and compute time to build Loop.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
 
-!!! tips "Default Instruction"
-    The instructions configure for automatic update and automatic build.
+!!! tip "Default Settings"
+    These instructions are a prerequisite for automatic update and automatic build.
 
     Refer to [Modify Automatic Building](gh-update.md#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
 
