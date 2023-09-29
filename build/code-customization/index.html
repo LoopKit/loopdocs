@@ -2044,19 +2044,19 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
+    Open a Terminal in LoopWorkspace Folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#additional-customizations-for-loop-3" class="md-nav__link">
     Additional Customizations for Loop 3
   </a>
   
     <nav class="md-nav" aria-label="Additional Customizations for Loop 3">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
-    Open a Terminal in LoopWorkspace Folder
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#custom-type-one-looppatches" class="md-nav__link">
@@ -2882,19 +2882,19 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
+    Open a Terminal in LoopWorkspace Folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#additional-customizations-for-loop-3" class="md-nav__link">
     Additional Customizations for Loop 3
   </a>
   
     <nav class="md-nav" aria-label="Additional Customizations for Loop 3">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#open-a-terminal-in-loopworkspace-folder" class="md-nav__link">
-    Open a Terminal in LoopWorkspace Folder
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#custom-type-one-looppatches" class="md-nav__link">
@@ -2990,14 +2990,14 @@
 <li>Even if you don't want to apply customizations, you can use this script as a easy way to find and open your download</li>
 </ul>
 </li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders can use <a href="https://www.loopandlearn.org/custom-code#prepared-custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization: Prepared Customizations</a></li>
+<li>Browser builders can use <a href="https://www.loopandlearn.org/custom-code#prepared-custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization: Prepared Customizations</a></li>
 </ul>
 <p>Other customizations require that you create your own personalized version.</p>
 <ul>
 <li>Mac-<abbr title="program used to build an app">Xcode</abbr> builders: all the information required is on this page</li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> builders: read this page and use <a href="../../gh-actions/gh-customize/#prepare-the-patches">LoopDocs: <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Customization</a></li>
+<li>Browser builders: read this page and use <a href="../../gh-actions/gh-customize/#prepare-the-patches">LoopDocs: Customization with Browser</a></li>
 </ul>
-<p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build, you can skip over the Mac-<abbr title="program used to build an app">Xcode</abbr> specific section and skip ahead to <a href="#build-time-features">Build-Time Features</a>.</p>
+<p>For Build with Browser, you can skip over the Mac-<abbr title="program used to build an app">Xcode</abbr> specific section and skip ahead to <a href="#build-time-features">Build-Time Features</a>.</p>
 <p>When applying a customization using Mac-<abbr title="program used to build an app">Xcode</abbr>, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.</p>
 <h3 id="find-my-downloaded-loop-code">Find My Downloaded <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Code<a class="headerlink" href="#find-my-downloaded-loop-code" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.xcworkspace is highlighted along the bottom.</p>
@@ -3048,7 +3048,7 @@
 <h2 id="build-time-features">Build-Time Features<a class="headerlink" href="#build-time-features" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Build-time features are not available with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x.</p>
 <p>With <abbr title="Latest release with major updates">Loop 3</abbr>, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.</p>
-<p>If you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Method, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and then <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the change to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<p>If you use Build with Browser, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on your copy of LoopWorkspace and then <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the change.</p>
 <p>If you use the Mac-<abbr title="program used to build an app">Xcode</abbr> Build Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
 <p>These flags are always upper case with underscore separating words for clarity, for example <code>MY_EXAMPLE_FLAG</code>. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. <abbr title="program used to build an app">Xcode</abbr> will automatically word-wrap the line for clarity. All values need to be on a single line.</p>
 <div class="admonition question">
@@ -3151,7 +3151,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIR
 </code></pre></div>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions on this page were originally prepared for the Mac-<abbr title="program used to build an app">Xcode</abbr> method. </p>
-<p>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method instructions are similar, but each one is used to edit your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the particular Module in your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account as instructed on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page.</p>
+<p>The Build with Browser method instructions are similar, but each one is used edit a file using a browser in your&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></span>&nbsp;account as instructed on the <a href="../../gh-actions/gh-customize/">Customize with Browser</a> page.</p>
 <p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for ( <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-l">L</kbd></span> # ) the line number. </p>
 <p>Some customizations are the same for all users, and do not require personalization. See <a href="https://www.loopandlearn.org/custom-code#custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization: Single Customization List</a>.</p>
 <p>For Mac-<abbr title="program used to build an app">Xcode</abbr> builders:</p>
@@ -3161,10 +3161,10 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIR
 <li>Be sure to save the file when you make a change - otherwise the modification does not get built into your app</li>
 <li>Some folder icons show different names in <abbr title="program used to build an app">Xcode</abbr>, see <a href="#folders-and-icons">Folders and Icons</a></li>
 </ul>
-<p>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser builders;</p>
+<p>For Build with Browser:</p>
 <ul>
 <li>Some customizations can be copied from the <a href="https://www.loopandlearn.org/custom-code#custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization: Single Customization List</a></li>
-<li>Otherwise, create your own customization for the Module identified under <a href="#module-folder-file">Module, Folder, File</a> as instructed on the <a href="../../gh-actions/gh-customize/">Customize with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a> page</li>
+<li>Otherwise, create your own customization for the Module identified under <a href="#module-folder-file">Module, Folder, File</a> as instructed on the <a href="../../gh-actions/gh-customize/">Customize with Browser</a> page</li>
 </ul>
 <h3 id="key_phrase">Key_Phrase<a class="headerlink" href="#key_phrase" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="copy highlight"><span class="filename">Example of a Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
@@ -3583,7 +3583,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>peakActivity: Peak of insulin activity (minutes)</li>
 <li>delay: Delay before insulin begins to acts after delivery starts (minutes)</li>
 </ul>
-<p>Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Comment</a>.</p>
+<p>Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473">Comment</a>.</p>
 <p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> novices.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
 </code></pre></div>
@@ -3659,7 +3659,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <h2 id="loop-logo"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Logo<a class="headerlink" href="#loop-logo" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Mac-<abbr title="program used to build an app">Xcode</abbr> Instructions</p>
-<p>This can be done with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> but the instructions might need to be adjusted for that case.</p>
+<p>This can be done with Build with Browser but the instructions might need to be adjusted for that case.</p>
 </div>
 <p>If you want an app logo other than the default green circle for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
 <p>Use <abbr title="graphical folder and file display on Mac">Finder</abbr> to Navigate to the LoopWorkspace folder. These instructions assume you used the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> - if your files are in a different folder, make the appropriate adjustment.</p>
@@ -3684,10 +3684,9 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </ol>
 <p>You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
 <p>And now you'll be the proud new owner of a custom <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon.</p>
-<h2 id="additional-customizations-for-loop-3">Additional Customizations for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#additional-customizations-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Some customizations on this page add support for Libre sensors. If you are willing to build a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then Libre support is already added to that version. Please read <a href="../../version/development/#support-for-libre-sensors">Support for Libre Sensors</a>.</p>
-<p>If you want to add these customizations: CustomTypeOne LoopPatches and clients for xDrip4iOS and GlucoseDirect, which assist those using Libre sensors, you can add them yourself (with either Mac-<abbr title="program used to build an app">Xcode</abbr> or <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> browser build method).</p>
-<h3 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h2 id="open-a-terminal-in-loopworkspace-folder">Open a <abbr title="interface for entering commands to the computer">Terminal</abbr> in LoopWorkspace Folder<a class="headerlink" href="#open-a-terminal-in-loopworkspace-folder" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you use the <a href="https://www.loopandlearn.org/custom-code"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization Select Script</a>, it automatically locates your most recent download, makes the customization you select in that download and then opens <abbr title="program used to build an app">Xcode</abbr> for you.</p>
+<p>But sometimes, you need to find your downloaded code and make your own changes in <abbr title="program used to build an app">Xcode</abbr>. This section tells you how to do this.</p>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.xcworkspace is highlighted along the bottom. Double clicking on that file opens <abbr title="program used to build an app">Xcode</abbr>; but to apply customizations, you need to type commands in the terminal.</p>
 <ul>
 <li>Open <abbr title="graphical folder and file display on Mac">Finder</abbr></li>
@@ -3701,11 +3700,12 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>To confirm you are in the correct location, type <code>pwd</code> and return in the terminal. The response must end in LoopWorkspace. For example, using the graphic below, the response to <code>pwd</code> should be similar to:</p>
 <p><code>/Users/marion/Downloads/BuildLoop/Loop-20220803-1145/LoopWorkspace</code></p>
 <p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace.svg" width="750" /></p>
+<h2 id="additional-customizations-for-loop-3">Additional Customizations for <abbr title="Latest release with major updates">Loop 3</abbr><a class="headerlink" href="#additional-customizations-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Some customizations on this page add support for&nbsp;<span translate="no">Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></span>. If you are willing to build a dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, then&nbsp;<span translate="no">Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></span>&nbsp;support is already added to that version. Please read <a href="../../version/development/#support-for-libre-sensors">Support for Libre Sensors</a>.</p>
 <h3 id="custom-type-one-looppatches">Custom Type One LoopPatches<a class="headerlink" href="#custom-type-one-looppatches" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>If you do not already use this set of customizations, please do not start.</strong></p>
-<p>Several items were consolidated into a set of patches known as <a href="https://www.loopandlearn.org/custom-type-one-loop-patches">CustomTypeOne LoopPatches</a>. The easiest way to get CustomTypeOne LoopPatches is to use the <a href="https://www.loopandlearn.org/custom-code#custom"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization Select Script</a>. This script can be used with either Mac-<abbr title="program used to build an app">Xcode</abbr> or <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build methods.</p>
+<p><strong>If you do not already use this set of customizations, please do not start. These will not be available for the next release of code.</strong></p>
+<p>Several items were consolidated into a set of patches known as <a href="https://www.loopandlearn.org/custom-type-one-loop-patches">CustomTypeOne LoopPatches</a>. The easiest way to get CustomTypeOne LoopPatches is to use the <a href="https://www.loopandlearn.org/custom-code#custom"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization Select Script</a>. This script can be used with either Mac-<abbr title="program used to build an app">Xcode</abbr> or Build with Browser methods and is compatible up through <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and dev; but will be not be offered with the next release.</p>
 <p>Please read the documentation and test any patch that you enable. These patches don't have the nice guardrails found in <abbr title="Latest release with major updates">Loop 3</abbr> and must be configured at the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Settings, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> interface. They cannot be adjusted inside the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app.</p>
-<p>Although special versions of Custom Type One LoopPatches are supplied via the Customization Select Script that are compatible with the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and will be compatible with <abbr title="Latest release with major updates">Loop 3</abbr>.4.x, it is strongly recommended that if you don't already use these patches - do not start. The support for some features has already been replaced with features inside <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> that will be standard with <abbr title="Latest release with major updates">Loop 3</abbr>.4, and other changes are expected in the future.</p>
 <h2 id="libre-support-for-loop-32x-code">Libre Support for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x Code<a class="headerlink" href="#libre-support-for-loop-32x-code" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Libre included in dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></p>
@@ -3713,7 +3713,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>If you are willing to <a href="../../version/build-dev/">build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev</a>, you do not need any of these customizations to use a compatible Libre sensor.</p>
 </div>
 <h3 id="add-libre-app-to-loop-phone">Add Libre App to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Phone<a class="headerlink" href="#add-libre-app-to-loop-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>LibreTransmitter for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is already included in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">README file on github <abbr title="contains project files and each file's revision history">repository</abbr></a>. If you <a href="../../version/build-dev/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev</a>, you do not need to add a Libre app to your phone.</p>
+<p>LibreTransmitter for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is already included in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">README file for LibreTransmitter</a>. If you <a href="../../version/build-dev/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev</a>, you do not need to add a Libre app to your phone.</p>
 <p>You must do your own research to decide which code to use. Be aware that you must perform careful calibrations to maintain accurate glucose estimates.</p>
 <p>These are Libre <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> app options that work with <abbr title="Latest release with major updates">Loop 3</abbr>.2.x. In other words, you install one of these <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> apps on your phone <strong>and</strong> modify <abbr title="Latest release with major updates">Loop 3</abbr>.2.x to interface with the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> app using a shared <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>.</p>
 <ul>
@@ -3726,7 +3726,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>If you use the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> installation method with someone else's apple developer id, you will need an internet connection to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ul>
 </li>
-<li>GlucoseDirect: <a href="https://github.com/creepymonster/GlucoseDirect#glucose-direct">README file on github <abbr title="contains project files and each file's revision history">repository</abbr></a><ul>
+<li>GlucoseDirect: <a href="https://github.com/creepymonster/GlucoseDirect#glucose-direct">README file for GlucoseDirect</a><ul>
 <li>To use this code with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you must "build it yourself" with the same developer ID as you use with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><ul>
 <li>You can use the <a href="https://www.loopandlearn.org/build-select/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> and choose Option 2: Build Related Apps and then select GlucoseDirect</li>
 </ul>
@@ -3736,30 +3736,18 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </li>
 </ul>
 <h3 id="modify-loop-to-use-libre">Modify <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to use Libre<a class="headerlink" href="#modify-loop-to-use-libre" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There are some commands to use with Build with Browser or with Mac-<abbr title="program used to build an app">Xcode</abbr> that add an interface to these <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> inside <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. But this is valid only up through version 3.2.x.</p>
+<ul>
+<li><a href="https://www.loopandlearn.org/custom-code/#add-lnl-patches">Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Clients: Build with Browser</a></li>
+<li><a href="https://www.loopandlearn.org/custom-code/#add-cgm-323">Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Clients: Mac-<abbr title="program used to build an app">Xcode</abbr></a></li>
+</ul>
 <p>These customizations are only for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x. They do not work for the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, soon to be released as <abbr title="Latest release with major updates">Loop 3</abbr>.4.</p>
-<p>For your selected app to read the Libre, you must also add a client to <abbr title="Latest release with major updates">Loop 3</abbr>.2.x to interface with the "reader" app. You only need to add the client for the app you've chosen for accessing your Libre sensor. However, you may find watching the video for GlucoseDirectClient and reading the step-by-step instructions for xdrip-client-swift or LibreTransmitter may together give you a better idea how to incorporate your preferred app with <abbr title="Latest release with major updates">Loop 3</abbr>.2.x.</p>
-<p>Add a client that interfaces with xDrip4iOS:</p>
-<ul>
-<li><a href="https://github.com/JohanDegraeve/xdrip-client-swift-1#readme">Add xdrip-client-swift to <abbr title="Latest release with major updates">Loop 3</abbr>.2.x</a><ul>
-<li>Note - there are extra details visible when you click on the black arrow icons in this file</li>
-<li><a href="https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292280110">zulipchat converstation</a></li>
-</ul>
-</li>
-</ul>
-<p>Add a client that interfaces with GlucoseDirect:</p>
-<ul>
-<li><a href="https://github.com/creepymonster/GlucoseDirectClient">Add GlucoseDirectClient</a><ul>
-<li><a href="https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Libre/near/292307629">zulipchat conversation</a></li>
-<li>The instructions are in the video on the GlucoseDirectClient repo page</li>
-</ul>
-</li>
-</ul>
 <h3 id="libretransmitter">LibreTransmitter<a class="headerlink" href="#libretransmitter" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>LibreTransmitter is included in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev and will be in <abbr title="Latest release with major updates">Loop 3</abbr>.4 when it is released:</p>
 <ul>
-<li>LibreTransmitter for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>: <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">README file on github <abbr title="contains project files and each file's revision history">repository</abbr></a><ul>
+<li>LibreTransmitter for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>: <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop">README file for LibreTransmitter</a><ul>
 <li>LibreTransmitter is incorporated into <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> directly, so there not a separate app to be installed</li>
-<li>See <a href="../../version/build-dev/#buildloopdev-script-libre">BuildLoopDev Script</a></li>
+<li>See <a href="../../version/build-dev/#buildloopdev-script">BuildLoopDev Script</a></li>
 </ul>
 </li>
 </ul>
@@ -3772,13 +3760,15 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>This is only needed for <abbr title="Latest release with major updates">Loop 3</abbr>.2.2 and earlier versions.</p>
 </div>
 <ul>
-<li>When building with Mac-<abbr title="program used to build an app">Xcode</abbr>, copy the command (below), paste into a terminal window on the Mac and choose <code>Limit CGM driven Loop Cycle to 5 minutes</code>:</li>
+<li>
+<p>When using Build with Browser, please refer to <a href="https://www.loopandlearn.org/custom-code#prepared-custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Code Customization: Prepared Customizations</a></p>
+</li>
+<li>
+<p>When building with Mac-<abbr title="program used to build an app">Xcode</abbr>, copy the command (below), paste into a terminal window on the Mac and choose <code>Limit CGM driven Loop Cycle to 5 minutes</code>:</p>
+</li>
 </ul>
 <div class="copy highlight"><span class="filename">Customization Select script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)&quot;
 </code></pre></div>
-<ul>
-<li>When using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build, please refer to <a href="https://www.loopandlearn.org/custom-code#prepared-custom-list"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Code Customization: Prepared Customizations</a></li>
-</ul>
 <h2 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
 <p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
