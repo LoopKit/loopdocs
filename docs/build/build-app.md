@@ -24,7 +24,7 @@ If you do watch this video, please note that you no longer are required to delet
 
 ## Build with Browser
 
-If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you must make sure that automatically install is **disabled**, see [Disable Automatic Install from&nbsp;<span translate="no">TestFlight</span>](../gh-actions/gh-deploy.md#disable-automatic-install-fromtestflight), or you will not be able to install on that phone with Xcode.
+If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you must [Disable Automatic Install from&nbsp;<span translate="no">TestFlight</span>](../gh-actions/gh-deploy.md#disable-automatic-install-fromtestflight) or you will not be able to install on that phone with Xcode.
 
 ## Developer Mode
 
