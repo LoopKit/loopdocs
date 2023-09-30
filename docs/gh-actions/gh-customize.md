@@ -159,10 +159,10 @@ When you&nbsp;"<span translate="no">fork a repository"</span> (make a copy), the
 
 | username/Repository | Default |
 | --- | --- |
-| LoopKit/Loop | <span translate="no">dev</span> |
-| LoopKit/LoopKit | <span translate="no">dev</span> |
-| LoopKit/OmniBLE | <span translate="no">dev</span> |
-| LoopKit/OmniKit | <span translate="no">main</span> |
+| <span translate="no">LoopKit/Loop</span> | <span translate="no">dev</span> |
+| <span translate="no">LoopKit/LoopKit</span> | <span translate="no">dev</span> |
+| <span translate="no">LoopKit/OmniBLE</span> | <span translate="no">dev</span> |
+| <span translate="no">LoopKit/OmniKit</span> | <span translate="no">main</span> |
 
 ## Edit Module in Browser
 
@@ -233,7 +233,7 @@ Now your display should look like Frame 4 of the [GIF](#example-gif) above:
 For example:
 
 ```
-# OmniBLE: Pod.swift: Increase insulin at insert by 0.35 U
+# OmniBLE: Increase insulin at insert by 0.35 U
 SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 ```
 
@@ -254,7 +254,7 @@ Once you prepare the commands, then you will edit the build_loop.yml file of you
     * You may have used a different location for Loop 3.2.x
     * This will **not** be supported for Loop 3.4
 
-For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the curl statement pointing to the SHA-1 that has the customization.
+For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the&nbsp;`curl`&nbsp;statement pointing to the SHA-1 that has the customization.
 
 Save the customization lines in your text file for later use in the build_loop.yml file.
 
@@ -265,11 +265,11 @@ curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --dire
 
 where:
 
-* `curl` means copy from URL
+* `curl`&nbsp;means copy from URL
 * username is your&nbsp;<span translate="no">GitHub</span>&nbsp;username
 * Module is where you made the customization (Module is in multiple places)
-* SHA-1 is the full identifier for the commit that has the change; there is a copy button to make this easy
-* the `.patch` after the SHA-1 is&nbsp;<span translate="no">GitHub</span>&nbsp;magic that formats that code change into a patch
+* SHA-1 is the full identifier for the desired change; there is a copy button to make this easy
+* adding&nbsp;`.patch`&nbsp;after the SHA-1 informs&nbsp;<span translate="no">GitHub</span>&nbsp;to format that code change so it can be applied to your copy
 * the final&nbsp;<span translate="no">--directory=Module</span>&nbsp;is critical to apply the code change to the correct Module
 
 To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/username/Module/commit/SHA-1`.
@@ -312,21 +312,23 @@ Open the text file in which you saved the customization lines.
 
 For a given submodule, paste the comment / curl command as indicated in the template above.
 
-The indenting needs to match, so tab or (shift-tab) to line up the patches.
+The indenting needs to match, so tab or (shift-tab) to line up the columns.
 
-**Once you are done with all the edits for build_loop.yml you will commit the changes to your fork directly.**
+**Once you are done with all the edits for build_loop.yml you will commit the changes to your copy directly.**
 
 * Once you have finished the edits for build_loop.yml
-* Click on Commit changes (upper right)
-* Click in the larger box below the "Update build_loop.yml" and indicate a summary of the customizations you added
-* Click on the option to "Commit directly to your branch" if it is not already selected
+* Click on&nbsp;<span translate="no">Commit changes</span> (upper right)
+* Click in the larger box below&nbsp;<span translate="no">"Update build_loop.yml"</span>&nbsp;and summarize the customizations you added
+* Click on the option to&nbsp;<span translate="no">"Commit directly to your branch"</span>
     * **NOTE: for&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;- commit directly to your default branch**
-* Click on Commit changes
+* Click on&nbsp;<span translate="no">Commit changes</span>
 * You can make as many changes to build_loop.yml in your fork as you want
 
-When you are ready, it's time to build Loop with your customizations.
+When you are ready, it's time to build with your customizations.
 
 ## Build with Customizations
+
+At the top of the display, click on&nbsp;<span translate="no">Actions</span>.
 
 * Click on&nbsp;<span translate="no">Action 4: Build Loop</span>
     * Click on Run workflow on the right side
@@ -355,10 +357,10 @@ Once deleted, go to [Create Your Copy for Selected Module](#create-your-copy-for
 
 ### <span translate="no">LoopWorkspace</span>
 
-The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrella organization holding all the pieces needed to build the Loop app. It provides is a list of pointers to a specific commit for each of the Modules used in the workspace.
+The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrella organization holding all the pieces needed to build the&nbsp;<span translate="no">Loop</span>&nbsp;app. It provides a list of pointers to a specific version for each of the Modules used in the workspace.
 
-* A commit is a specific version of code in a repository
-* A workspace is a grouping of several repositories (Modules) into a complete package
-* The workspace includes a list of the specific commit for each repository
+* <span translate="no">commit</span>: a specific change to the code identified by the SHA-1; the most recent one indicates the most recent version of the code
+* <span translate="no">workspace</span>: a grouping of several repositories (Modules) into a complete package
+* <span translate="no">LoopWorkspace</span>: includes a list of the specific SHA-1 for each Module needed for the app
 
-You will be adding one or more code changes your copy of&nbsp;<span translate="no">main (or dev) branch of LoopWorkspace</span>&nbsp;using patch commands in the build_loop.yml file. Each patch repeats the small code change associated with each commit your make to your copy of a given Module.
+You will be adding one or more code changes your copy of&nbsp;<span translate="no">main (or dev) branch of LoopWorkspace</span>&nbsp;using instruction lines you will add to the build_loop.yml file. Each SHA-1 will be used to repeat the small code change you made to your copy of a given Module when the app is built.
