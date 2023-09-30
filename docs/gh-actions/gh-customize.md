@@ -21,10 +21,10 @@
 
     Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell&nbsp;<span translate="no">GitHub</span>&nbsp;a specific change that you want applied. These work for any compatible copy taken from the original&nbsp;<span translate="no">GitHub repository</span>.
     
-### Do Not Make a Pull Request
+### Do Not Make a Pull Request to Original Copy
 
-!!! important "Ignore&nbsp;<span translate="no">Pull Request</span>&nbsp;Prompts"
-    Please do not click on boxes that&nbsp;<span translate="no">GitHub</span>&nbsp;might show you that ask if you want to**&nbsp;<span translate="no">Compare & Pull Request</span>**.
+!!! important "Ignore&nbsp;<span translate="no">Compare & pull request</span>&nbsp;Prompts"
+    Please do not click on boxes that&nbsp;<span translate="no">GitHub</span>&nbsp;might show you that ask if you want to**&nbsp;<span translate="no">Compare & pull request</span>**.
     
     This would be an attempt to merge changes from your copy back to the original version that everyone uses. These changes are for you only. Ignore those prompts.
 
