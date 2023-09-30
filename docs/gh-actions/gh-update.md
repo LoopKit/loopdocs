@@ -133,7 +133,7 @@ The updated Loop app will show up in your *TestFlight* app on the Looper's phone
 Option 1: If you chose to leave [TestFlight Automatic Updates](../gh-actions/gh-deploy.md#testflight-automatic-updates) disabled for Loop, you choose when to install the app on the phone.
 
 * Open *TestFlight* on your phone and click `Install` as shown in the GIF below
-* If you are building for a child, follow the [Install *TestFlight* Loop for Child](gh-deploy.md#install-testflight-loop-for-child) instructions again
+* If you are building for a child, follow the [Install *TestFlight* Loop for Child](gh-deploy.md#testflightfor-child) instructions again
 
 ![install Loop from *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}

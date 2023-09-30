@@ -22,9 +22,9 @@ The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsN
 
 If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.
 
-## GitHub Build Loop
+## Build with Browser
 
-If you previously used [GitHub Build](../gh-actions/gh-overview.md) to install Loop on this phone, you must make sure that automatically install is **disabled** in [TestFlight](../gh-actions/gh-deploy.md#install-testflight), or you will not be able to install on that phone with Xcode.
+If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you must [Disable Automatic Install from&nbsp;<span translate="no">TestFlight</span>](../gh-actions/gh-deploy.md#disable-automatic-install-fromtestflight) or you will not be able to install on that phone with Xcode.
 
 ## Developer Mode
 
