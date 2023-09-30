@@ -143,10 +143,10 @@ This table lists all the modules referred to on the Code Customization page link
 
 | Module | Copy From |
 | --- | --- |
-| Loop | [https://github.com/LoopKit/Loop](https://github.com/LoopKit/Loop) |
-| LoopKit | [https://github.com/LoopKit/LoopKit](https://github.com/LoopKit/LoopKit) |
-| OmniBLE (for DASH) | [https://github.com/LoopKit/OmniBLE](https://github.com/LoopKit/OmniBLE) |
-| OmniKit (for Eros) | [https://github.com/LoopKit/OmniKit](https://github.com/LoopKit/OmniKit) |
+| <span translate="no">Loop</span> | [<span translate="no">https://github.com/LoopKit/Loop</span>](https://github.com/LoopKit/Loop) |
+| <span translate="no">LoopKit</span> | [<span translate="no">https://github.com/LoopKit/LoopKit</span>](https://github.com/LoopKit/LoopKit) |
+| <span translate="no">OmniBLE (for DASH)</span> | [<span translate="no">https://github.com/LoopKit/OmniBLE</span>](https://github.com/LoopKit/OmniBLE) |
+| <span translate="no">OmniKit (for Eros)</span> | [<span translate="no">https://github.com/LoopKit/OmniKit</span>](https://github.com/LoopKit/OmniKit) |
 
 Remember - you can only have a single copy of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a copy, you don't need another one; but it must be a linked to the URL listed the [Module Table](#module-table).
 
