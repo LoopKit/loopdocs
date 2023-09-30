@@ -3,10 +3,10 @@
 !!! tip "Pro Tip"
     The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list). You can use (and re-use) your customizations with either Browser Build or Mac-Xcode builds so you don't have to repeat the customization with every update.
 
-    * If you are building with Mac-Xcode method, you can use the same lines prepared for Build with Browser method and simply paste them in your terminal at the LoopWorkspace folder to customize your code
+    * If you are building with Mac-Xcode method, you can use the same lines prepared for Build with Browser method and simply paste them in your terminal at the&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;folder to customize your code
 
 !!! warning "Modules vs Submodule"
-    This page has instructions to set up your own fork for the Modules associated with LoopWorkspace that are needed for a selected customization.
+    This page has instructions to set up your own fork for the Modules associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.
 
     The technical term for the Modules is submodule when you are using git commands. Each Module has its own repository and you will be working with **your fork** of that repository at https://github.com/username/Module.
     
@@ -177,7 +177,7 @@ You will be using the "pencil" tool in the browser display for your fork in&nbsp
 * Once you make the change to a given file, tap on Commit changes (upper right)
 * Tap in the Commit message box and replace the default "Update filename" with a comment about what the customization does
 * Click on the "Create a new branch for this commit" option
-    * **Note: when you do the LoopWorkspace modifications, you will not choose this option**
+    * **Note: when you do the&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;modifications, you will not choose this option**
 * Click on the Propose changes button
 * As soon as you do this, a new branch is automatically created with a name like username-patch-#, where the number increments each time
 * The next screen allows you to create a pull request - you do NOT want to do this
@@ -218,12 +218,12 @@ Repeat this process until you've done all your customizations for this Module an
 
 ## Prepare the Customizations
 
-Once you prepare the commands, then you will edit the build_loop.yml file of your LoopWorkspace fork.
+Once you prepare the commands, then you will edit the build_loop.yml file of your&nbsp;<span translate="no">LoopWorkspace fork</span>.
 
 !!! warning "Ensure your fork is from LoopKit/LoopWorkspace"
-    If your LoopWorkspace fork did not come from LoopKit/LoopWorkspace, then delete your existing fork and make a new one. See [Already Have LoopWorkspace?](gh-first-time.md#already-have-loopworkspace).
+    If your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;did not come from LoopKit/LoopWorkspace, then delete your existing fork and make a new one. See [Already Have&nbsp;<span translate="no">LoopWorkspace</span>?](gh-first-time.md#already-have-loopworkspace).
 
-    * There was a version of LoopWorkspace that had some customizations already built in
+    * There was a version of&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;that had some customizations already built in
     * This will **not** be supported for Loop 3.4
 
 For each commit that has a customization you want to include, create a pair of patch lines consisting of the comment (must start with a #) followed by the curl statement pointing to the commit that has the customization.
@@ -245,9 +245,9 @@ where:
 
 To view the exact code change associated with that patch, open a browser at the URL of `https://github.com/username/Module/commit/SHA-1`.
 
-## Update LoopWorkspace
+## Update&nbsp;<span translate="no">LoopWorkspace</span>
 
-The final step is to update your LoopWorkspace fork to apply these customizations by adding those customization lines into the build_loop.yml file.
+The final step is to update your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;to apply these customizations by adding those customization lines into the build_loop.yml file.
 
 Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nbsp;and make sure to sync it if needed.
 
@@ -291,7 +291,7 @@ The indenting needs to match, so tab or (shift-tab) to line up the patches.
 * Tap on Commit changes (upper right)
 * Tap in the larger box below the "Update build_loop.yml" and indicate a summary of the customizations you added
 * Click on the option to "Commit directly to your branch" if it is not already selected
-    * **NOTE: for LoopWorkspace - commit directly to your default branch**
+    * **NOTE: for&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;- commit directly to your default branch**
 * Click on Commit changes
 * You can make as many changes to build_loop.yml in your fork as you want
 
@@ -324,12 +324,12 @@ Once deleted, go to [Create a Fork for Selected Module](#create-a-fork-for-selec
 
 ## Background Information
 
-### LoopWorkspace
+### <span translate="no">LoopWorkspace</span>
 
-The LoopWorkspace repository is the umbrella organization holding all the pieces needed to build the Loop app. Part of what LoopWorkspace provides is a list of pointers to a specific commit for each of the Modules used in the workspace.
+The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrella organization holding all the pieces needed to build the Loop app. It provides is a list of pointers to a specific commit for each of the Modules used in the workspace.
 
 * A commit is a specific version of code in a repository
 * A workspace is a grouping of several repositories (Modules) into a complete package
 * The workspace includes a list of the specific commit for each repository
 
-You will be adding one or more code changes to the released (or dev) branch of LoopWorkspace using patch commands in the build_loop.yml file. Each patch repeats the small code change associated with each commit your make to your fork of a given Module.
+You will be adding one or more code changes to the released (or dev) &nbsp;<span translate="no">branch of LoopWorkspace</span>&nbsp;using patch commands in the build_loop.yml file. Each patch repeats the small code change associated with each commit your make to your fork of a given Module.
