@@ -270,7 +270,7 @@ where:
 * Module is where you made the customization (Module is in multiple places)
 * SHA-1 is the full identifier for the desired change; there is a copy button to make this easy
 * adding&nbsp;`.patch`&nbsp;after the SHA-1 informs&nbsp;<span translate="no">GitHub</span>&nbsp;to format that code change so it can be applied to your copy
-* the final&nbsp;<span translate="no">--directory=Module</span>&nbsp;is critical to apply the code change to the correct Module
+* the final&nbsp;<code> --directory=Module</code>&nbsp;is critical to apply the customization to the correct Module
 
 To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/username/Module/commit/SHA-1`.
 
