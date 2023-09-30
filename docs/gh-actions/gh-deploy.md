@@ -57,12 +57,12 @@ If you already have the&nbsp;<span translate="no">Loop</span>&nbsp;app on the ph
 
 ## Automatic Update, Build, Install
 
-Automatic features will be available when version 3.4.0 is released and are available now in 3.3.0 (when dev is the default branch). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for 3.4.0:
+Automatic features will be available when version 3.4.0 is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default branch</span>). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for 3.4.0:
 
-* Update the version of your fork within a week of the change
+* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
 * Build the app at least once a month and upload to&nbsp;<span translate="no">TestFlight</span>
 
-It is already true that, unless you make a change, the default settings:
+It is already true that, unless you make a change, the default setting will:
 
 * Install each new build on phone from&nbsp;<span translate="no">TestFlight</span>
 
@@ -70,8 +70,8 @@ It is already true that, unless you make a change, the default settings:
 
 Recommended settings for 3.4.0 (when it is released) and later:
 
-* Keep the automatic update of your fork
-* Keep the automatic build and upload to&nbsp;<span translate="no">TestFlight</span>
+* Allow automatic update of your&nbsp;<span translate="no">fork</span>
+* Allow automatic build and upload to&nbsp;<span translate="no">TestFlight</span>
 * [Disable automatic installation](#disable-automatic-install-fromtestflight) on phone from&nbsp;<span translate="no">TestFlight</span>
 
 If you are running the development code, you may prefer to turn off the automatic update, but keep the automatic build. To read more about modifying automatic update and build options, please read [Modify Automatic Building](gh-update.md#modify-automatic-building).
@@ -82,7 +82,7 @@ Once the app is installed one time, you can adjust whether it is automatically i
 
 Go back to the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on your phone and tap on your app name in the list to see an expanded screen similar to the graphic below. The row to enable or disable automatic updates is highlighted in the graphic, which shows the feature disabled. This is recommended for all users.
 
-* If you leave automatic update enabled (default), then whenever new build is created and uploaded to&nbsp;<span translate="no">TestFlight</span>&nbsp;, it will be installed immediately.
+* If you leave automatic update enabled (default), then whenever a new build is created and uploaded to&nbsp;<span translate="no">TestFlight</span>&nbsp;, it will be installed immediately.
 * WARNING: If you switch between Building with Browser and Mac-Xcode, you must disable automatic update or Xcode will not be able to install to your phone.
 
 ![enable or disable automatic update for Loop](img/testflight-auto-update.png){width="300"}
