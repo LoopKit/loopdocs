@@ -442,12 +442,12 @@ If you have not already made up a password, do it now and record it as <code>MAT
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 !!! warning "Existing Fork"
-    If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
+    If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-haveloopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
-    * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-have-loopworkspace)
+    * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-haveloopworkspace)
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the owner (`Owner`)
     * <code>LoopWorkspace</code> is the repository name (`Repository Name`)
@@ -995,13 +995,13 @@ The [*GitHub* Deployment](gh-deploy.md) walks you through the steps to deploy to
 
 Most people won't need the information on the rest of this page.
 
-### Already Have LoopWorkspace?
+### Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
 
-Some people may already have a fork of <code>LoopWorkspace</code>.
+Some people may already have a copy of <code>LoopWorkspace</code>.
 
-If your fork is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
+If your copy is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
 
-If your fork is from `LoopKit`:
+If your copy is from `LoopKit`:
 
 * Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
 * Review the graphic in the [Successful Fork](#successful-fork) section
