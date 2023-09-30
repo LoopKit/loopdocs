@@ -363,4 +363,4 @@ The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrel
 * <span translate="no">workspace</span>: a grouping of several repositories (Modules) into a complete package
 * <span translate="no">LoopWorkspace</span>: includes a list of the specific SHA-1 for each Module needed for the app
 
-You will be adding one or more code changes your copy of&nbsp;<span translate="no">main (or dev) branch of LoopWorkspace</span>&nbsp;using instruction lines you will add to the build_loop.yml file. Each SHA-1 will be used to repeat the small code change you made to your copy of a given Module when the app is built.
+You are telling&nbsp;<span translate="no">GitHub</span>&nbsp;to apply specific customizations when it builds your app for you. It makes a fresh copy of all the code needed, applies your specific customizations and then starts the build.
