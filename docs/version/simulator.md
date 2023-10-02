@@ -4,7 +4,23 @@ There are 2 main types of simulators users may want to build. Each of these requ
 
 Please, review all the Intro and Build pages, even if you will not complete them yet.
 
-## Mac-Xcode Build to a Simulated iPhone
+### Simulator using Browser Build:
+
+* No Mac computer required
+* Must have a paid Apple Developer ID ($99/year)
+* Must have a compatible phone
+
+Follow the normal instructions to build with browser, install the app on a compatible phone and explore the app using the Pump Simulator, CGM Simulator or both.
+
+### Simulator using Mac-Xcode Build:
+
+* Must have a Mac computer (or virtual machine, Intel chips only)
+* Can build the simulator with a free Apple Developer ID
+    * Build to Mac (no phone required)<br>
+    or
+    * Build to compatible phone
+
+## Build to a Simulated Phone on Mac Computer
 
 This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/computer.md)
 
@@ -25,7 +41,9 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
     * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
 * Use the simulated iPhone and [set up the app](../loop-3/loop-3-overview.md) as desired
 
-## Build to a Real iPhone
+## Build to a Real Phone
+
+You don't need to do anything special when you build the app using the [Build with Browser](../gh-actions/gh-overview.md) instructions. Simply select the CGM and/or Pump simulator desired. You must have a paid developer account. 
 
 ### Common Requirements
 
@@ -67,14 +85,7 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 
     The Loop app, when open, will be quite aggressive at warning you that you have disabled Notifications, so you can reverse those directions to enable notifications when actually using the app.
 
-### Browser Build (Loop 3)
-
-* Best to configure building using GitHub Actions with a computer or tablet. It does not need to be a Mac.
-
-* Complete the steps in Browser Build tab, starting with [GitHub Build Overview](../gh-actions/gh-overview.md)
-
-
-### Mac-Xcode Build (Loop 2 or later)
+### Mac-Xcode Build to a Real Phone using Free Account
 
 * Need access to a mac or virtual computer, see [Compatible Computer](../build/computer.md)
 
