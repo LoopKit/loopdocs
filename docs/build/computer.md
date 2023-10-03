@@ -46,8 +46,8 @@ The table below lists the **minimum** requirements to build the current release 
 
 Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
 
-| iOS Version | Xcode | macOS | 
-| - | - | - |
+| iOS Version | minimum Xcode | minimum macOS | 
+|:---:|:---:|:---:|
 | 17.0 | 15.0 | 13.5 |
 | 16.4 | 14.3 | 13.0 |
 | 16.2 | 14.2 | 12.5 |
