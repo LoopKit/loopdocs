@@ -4,9 +4,9 @@ If you are running Loop v2.2.x, follow this link: [Loop v2.2.x Displays](../oper
 
 ## Main Loop Screen
 
-The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom.
+The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom. As part of the HUD, important messages will appear in the [Status Row](#hud-status-row) location.
 
-![main loop screen when running nominally with annotation for heads-up-display, charts and toolbar](img/loop-3-main-annotated.svg){width="450"}
+![main loop screen when running nominally with annotation for heads-up-display, charts and toolbar](img/loop-3-main-annotated.png){width="450"}
 {align="center"}
 
 #### Landscape
