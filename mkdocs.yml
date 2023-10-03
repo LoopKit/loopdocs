@@ -122,24 +122,25 @@ nav:
 - Intro:
     - 'LoopDocs Overview': 'intro/overview-intro.md'
     - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
-    - 'Requirements': 'intro/requirements.md'
-    - 'Compatible iPhone': 'build/phone.md'
-    - 'Compatible Pump': 'build/pump.md'
-    - 'Compatible CGM': 'build/cgm.md'
-    - 'RileyLink': 'build/rileylink.md'
-    - 'Apple Developer Program': 'build/apple-developer.md'
-    - 'Test Settings': 'build/test-settings.md'
-    - 'Loop Data': 'build/loop-data.md'
-    - 'Meet the Community': 'build/community.md'
+    - Requirements:
+      - 'Requirements Overview': 'intro/requirements.md'
+      - 'Compatible iPhone': 'build/phone.md'
+      - 'Compatible Pump': 'build/pump.md'
+      - 'Compatible CGM': 'build/cgm.md'
+      - 'RileyLink': 'build/rileylink.md'
+      - 'Apple Developer Program': 'build/apple-developer.md'
+      - 'Test Settings': 'build/test-settings.md'
+      - 'Loop Data': 'build/loop-data.md'
+      - 'Meet the Community': 'build/community.md'
 - Build with Browser:
-    - 'Build with Browser Overview': gh-actions/gh-overview.md
+    - 'Browser Overview': gh-actions/gh-overview.md
     - 'Configure to use Browser': gh-actions/gh-first-time.md
     - 'Install on Phone': gh-actions/gh-deploy.md
     - 'Update with Browser': gh-actions/gh-update.md
     - 'Errors with Browser': gh-actions/gh-errors.md
     - 'Build Other Apps with Browser': gh-actions/gh-other-apps.md
-- Mac-Xcode Build:
-    - 'Mac-Xcode Build Overview': 'build/overview.md'
+- Build with Mac-Xcode:
+    - 'Mac-Xcode Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/computer.md'
     - 'Xcode Version': 'build/xcode-version.md'
     - 'Xcode Preferences': 'build/xcode-settings.md'

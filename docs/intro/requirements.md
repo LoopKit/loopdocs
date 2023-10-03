@@ -1,15 +1,20 @@
-## Two Loop Build Methods
+## Two Ways to Build the App
 
-With the release of Loop 3, there are two Build Methods. If you have never built Loop before, you will probably find the GitHub process (also know as Browser Build) easiest. If you are a long time Looper, either method is fine. You only need to follow one of the Build methods, but you can use both methods if you want.
+With the release of&nbsp;<span translate="no">Loop 3</span>&nbsp;, there are two ways to build the app.
+
+* If you have never built&nbsp;<span translate="no">Loop</span>&nbsp;before, we recommend you use the Build with Browser method.
+* If you use a Mac and keep the operating system up to date all the time, then you may prefer the Mac-Xcode method.
 
 The Build Steps have been split into two tabs:
 
-* [Browser Build](../gh-actions/gh-overview.md)
-    * Build Loop using GitHub Actions (no computer required)
-* [Mac-Xcode Build](../build/overview.md)
-    * Traditional, build Loop on a Mac with Xcode
+* [Build with Browser](../gh-actions/gh-overview.md)
+    * Build with a browser on any computer or tablet
+    * App is installed on the phone using&nbsp;<span translate="no">TestFlight</span>
+* [Build with Mac-Xcode](../build/overview.md)
+    * App is built on a Mac with Xcode connected to the phone
+    * The operating system on the Mac and the version of Xcode must be kept up-to-date
 
-There are some common requirements and then some different requirements for the two methods.
+There are some requirements common to both methods. Some requirements are specific to only one method.
 
 ## Common Requirements
 
@@ -23,11 +28,15 @@ These requirements are independent of how you build the Loop app:
     * For Browser Build - must be a paid developer account
     * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
 
-### Added Requirements for Browser Build
+### Added Requirements to [Build with Browser](../gh-actions/gh-overview.md)
 
-In addition to the paid Apple Developer account, you also need a free GitHub account. The instructions for the GitHub account are included in the [Browser Build](../gh-actions/gh-overview.md) instructions.
+If you plan to build using the Build with Browser instructions, you also need:
 
-### Added Requirements for Mac-Xcode Build
+1.  A free&nbsp;<span translate="no">GitHub</span>&nbsp;account
+
+Detailed instructions are included in the link above.
+
+### Added Requirements to [Build with Mac-Xcode](../build/overview.md)
 
 If you plan to build using the Mac-Xcode Build instructions, you also need:
 
@@ -58,10 +67,10 @@ After you build Loop on your phone, keep following along in the docs as you [Set
 
 Before you start either build method, review the Common Requirements. First one is [Compatible iPhone](../build/phone.md). On each page, keep clicking Next (or n) until you've finished with the Intro pages and are ready to Build.
 
-### Browser Build
+### Build with Browser
 
-Click on the link if you are done reviewing the common requirements and you want to skip ahead to [GitHub Browser Build](../gh-actions/gh-overview.md).
+Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Browser](../gh-actions/gh-overview.md).
 
-### Mac-Xcode Build:
+### Build with Mac-Xcode
 
-Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Mac-Xcode Build](../build/overview.md)
+Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Mac-Xcode](../build/overview.md).

@@ -26,13 +26,9 @@ You need a minimum version of the mobile operating software, called the phone's 
 
 ### Compatible Devices
 
-Note: 
+These devices are compatible.
 
-* iPhone 15 is expected to be compatible
-* iOS 17 is expected to be compatible, but it's a good idea to wait for iOS updates that come out quickly after a new iOS is released before updating your older phone (you won't have that choice if you buy an iPhone 15)
-
-These devices are compatible with iOS 15.1 and newer iOS.
-
+- iPhone 15, all variants
 - iPhone 14, all variants
 - iPhone 13, all variants
 - iPhone 12, all variants
@@ -42,7 +38,7 @@ These devices are compatible with iOS 15.1 and newer iOS.
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
-These devices are compatible with Loop 3, which requires iOS 15.1, but cannot be upgraded to iOS 16 or newer.
+These devices are compatible, but cannot be upgraded to iOS 16 or newer.
 
 - iPhone 7, all variants
 - iPhone 6s, all variants - but note the "s"
