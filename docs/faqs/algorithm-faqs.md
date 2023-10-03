@@ -44,6 +44,58 @@ Insulin on board (IOB) is calculated from the amount of insulin delivered above 
 
 IOB is plotted on the [Active Insulin Chart](../loop-3/displays-v3.md#active-insulin-chart) in the main Loop display.
 
+## How do Delivery Limits Affect Automatic Dosing?
+
+With each cycle, <span translate="no">Loop</span>&nbsp;generates a glucose prediction and a recommended dose (positive or negative) to bring you to your correction range.
+
+* The nearest 3 hours has more influence on the recommendation than the later 3 hours, but the entire 6 hours is considered
+* The automated response to a negative recommended dose is to reduce basal rate, typically to zero
+* The automated response to a positive recommended dose depends on your Dosing Strategy and is adjusted by your Delivery Limits
+
+Let $\mathit{dose}$ be the amount the app thinks you need for this cycle before considering Delivery Limits. The relationship between $\mathit{dose}$, delivery limits: $\mathit{maximumBolus}$ and $\mathit{maximumBasalRate}$, and current IOB: $\mathit{currentIOB}$ are detailed in the following sections:
+
+* [Manual Dose](#manual-dose)
+* [Automatic Dose](#automatic-dose)
+    * [Automatic Bolus: Constant Partial Application Factor](#automatic-bolus-constant-partial-application-factor)
+    * [Automatic Bolus: Glucose Based Partial Application Factor](#automatic-bolus-glucose-based-partial-application-factor)
+    * [Temp Basal Only](#temp-basal-only)
+
+### Manual Dose
+
+In the case where you are manually requesting a bolus recommendation:
+
+* If $\mathit{dose}$ > $\mathit{maximumBolus}$: app recommends $\mathit{maximumBolus}$
+* If $\mathit{dose}$ < $\mathit{maximumBolus}$: app recommends $\mathit{dose}$
+
+### Automatic Dose
+
+Because this will be an automatic dose, the app will not provide a dose that would exceed an IOB of 2 times the $\mathit{maximumBolus}$.
+
+$$ autoDose = minimum (dose, 2*maximumBolus - currentIOB) $$
+
+#### Automatic Bolus: Constant Partial Application Factor
+
+There is a new feature coming with the next release, available now with customization or the development version, called Glucose Based Partial Application Factor. This feature is disabled by default. When disabled, the Partial Application Factor is a constant 40%.
+
+* If $\mathit{autoDose}$ > $\mathit{maximumBolus}$: app boluses 40% of $\mathit{maximumBolus}$
+* If $\mathit{autoDose}$ < $\mathit{maximumBolus}$: app boluses 40% of $\mathit{autoDose}$
+
+#### Automatic Bolus: Glucose Based Partial Application Factor
+
+When Glucose Based Partial Application Factor is enabled, the application factor is modified based on the current glucose level. The value ranges from 20% at lower glucose to 80% at higher glucose. Let $\mathit{gbpa\%}$ represent the application factor, then:
+
+* If $\mathit{autoDose}$ > $\mathit{maximumBolus}$: app boluses $\mathit{gbpa\%}$ of $\mathit{maximumBolus}$
+* If $\mathit{autoDose}$ < $\mathit{maximumBolus}$: app boluses $\mathit{gbpa\%}$ of $\mathit{autoDose}$
+
+#### Temp Basal Only
+
+This automatic method uses both Delivery Limits: $\mathit{maximumBasalRate}$ and $\mathit{maximumBolus}$. As explained above, the $\mathit{maximumBolus}$ is used to calculate [$\mathit{autoDose}$](#automatic-recommendation).
+
+The desired dose, $\mathit{autoDose}$, is multiplied by two (to get an hourly rate) and then added to the scheduled basal rate to determine the desired temporary basal rate ($\mathit{BR_temp}$) with a duration of half-an-hour to provide that amount of insulin. This calculated $\mathit{BR_temp}$ is compared to $\mathit{maximumBasalRate}$.
+
+* If $\mathit{BR_temp}$ > $\mathit{maximumBasalRate}$: app sets rate to $\mathit{maximumBasalRate}$
+* If $\mathit{BR_temp}$ < $\mathit{maximumBasalRate}$: app sets rate to $\mathit{BR_temp}$
+
 ## More Algorithm Information
 
 There is more detail about the Loop Algorithm at the bottom of the Operate tab.
