@@ -75,21 +75,23 @@ After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it i
 
 ## How do all the minimum versions relate to each other?
 
-The list below contains the **minimum** versions of [macOS](computer.md#check-your-macos-version) and Xcode you'll need based on your iOS version. The highlighted sections, coordinated by `color` and `linestyle` in the graphic below, tie together the operating system nomenclature in the following bullets. The graphic is not updated as frequently as the words.
+### Compatible Versions#
 
-**Newer versions of Xcode are always OK and should be used if your computer will accept the upgrade.**
+The current development version and the next release of&nbsp;<span translate="no">Loop</span>&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
 
-* Xcode 15.0 and Ventura (macOS 13.5 or higher) are required for
-    * iOS 17
-* Xcode 14.3 or higher and Ventura (macOS 13.0 or higher) are required for
-    * iOS 16.4 and newer
-* Xcode 14.2 or higher is required for
-    * iOS 16.2 through 16.3.x
-* Xcode 14.1 or higher is required
-    * iOS 15.1 is minimum version for phone but 15.7.1 is better (for older phones)
-    * iOS 16.0 through 16.1.x is supported
+When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 
-When using a Mac-Xcode build and an iOS 16 or newer device, you must turn on developer mode for both the phone, and if paired, the watch.
+The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with Mac-Xcode.
+
+Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
+
+| iOS Version | Xcode | macOS | 
+| - | - | - |
+| 17.0 | 15.0 | 13.5 |
+| 16.4 | 14.3 | 13.0 |
+| 16.2 | 14.2 | 12.5 |
+| 15.1 | 14.1 | 12.5 |
+
 
 ### Wikipedia Chart for Apple Versions
 
@@ -102,14 +104,25 @@ Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll 
 
 ## What happens if you try using too old of Xcode?
 
-It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build that says "Could not locate device support files." With newer versions of Xcode, the message will include words like "Could not prepare the device". That messages is telling you that your iOS on the phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
+It isn't some catastrophic failure if you try to build with an outdated Xcode without realizing it. If the build fails, nothing happens to your phone (or Loop on your phone if you are rebuilding).  Nothing is copied from the computer to the phone until after you see the Build Succeeded message. You'll see a pretty obvious error message during your Loop build. Check [Oh dear! Build errors?](build-errors.md).
 
-![Screenshot: Xcode, error message when Xcode too old for iOS or missing simulators](img/device-support-files.jpg){width="750"}
-{align="center"}
+Some error messages that have shown up in earlier updates:
 
-So, if you see that error message, realize you may have to update your macOS to be able to see the newest Xcode version that you will need. Make sure to check that chart to see what your minimum versions are for the iOS you are running on your iPhone.
+```
+Package.resolved file corrupted or malformed
+```
 
-With Loop 3, you may see another error when the Xcode version does not support the phone iOS. You may see [Package.resolved file corrupted or malformed](build-errors.md#packageresolved-file-corrupted-or-malformed)
+```
+Could not locate device support files
+```
+
+This is for building development code with Xcode 14 instead of Xcode 15:
+
+```
+Loop Widget errors like:
+Command SwiftCompile failed with a nonzero exit code
+Cannot infer contextual base in reference to member 'widget'
+```
 
 ## Next Step: Xcode Settings
 

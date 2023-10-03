@@ -26,13 +26,9 @@ You need a minimum version of the mobile operating software, called the phone's 
 
 ### Compatible Devices
 
-Note: 
-
-* iPhone 15 is expected to be compatible
-* iOS 17 is expected to be compatible, but it's a good idea to wait for iOS updates that come out quickly after a new iOS is released before updating your older phone (you won't have that choice if you buy an iPhone 15)
-
 These devices are compatible with iOS 15.1 and newer iOS.
 
+- iPhone 15, all variants
 - iPhone 14, all variants
 - iPhone 13, all variants
 - iPhone 12, all variants

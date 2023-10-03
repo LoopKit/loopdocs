@@ -3,26 +3,26 @@
 !!! info "Time Estimate"
     **If you are building with a Mac and Xcode:**
 
-    - 5 minutes, if you have a Mac with Ventura (macOS 13.x) or higher
+    - 5 minutes, if you have a Mac with Ventura (macOS 13.5) or higher (Sonoma)
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
 
-!!! danger "New Method (Loop 3):"
+!!! tip "Build with Browser"
 
-    If you do not have a Mac, you can build Loop 3 with any computer using a browser. If you want to use that method, review this list and head over to [Browser Build](../gh-actions/gh-overview.md).
+    If you do not have a Mac, you can build&nbsp;<span translate="no">Loop 3</span>&nbsp;with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../gh-actions/gh-overview.md).
 
-    - You need a paid ($99/year) [Apple Developer Account](apple-developer.md)
-    - You need an account (free) with [github](https://github.com)
-    - You need a [compatible phone](phone.md) to install the app from TestFlight
-    - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually Loop (and not just explore the app)
+    - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md)
+    - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com)
+    - You need a [compatible phone](phone.md) to install the app from&nbsp;<span translate="no">TestFlight</span>
+    - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
 
 !!! abstract "Summary"
-    Your computer, iPhone and Xcode must have compatible versions to build Loop with the Mac-Xcode method.
+    Your computer, iPhone and Xcode must have compatible versions to build Loop using Mac-Xcode.
 
     * A summary list of [Compatible Versions](#compatible-versions) is found on this page with more detail in a later page
 
-	If you are buying a Mac specifically to use the Mac-Xcode build method, chose one with Ventura operating system and at least 256 GB (512 GB is better). The Browser Build method does not have the same requirements.
+	If you are buying a Mac specifically to use the Mac-Xcode build method, chose one with capabably of being updated to the Sonoma (macOS 14) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
 
 
 !!! question "FAQs"
@@ -38,20 +38,20 @@ If you have access to a computer with MacOS 13.5 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-With the [release of Loop 3](../version/releases.md#loop-3-compatibility):
+The current development version and the next release of&nbsp;<span translate="no">Loop</span>&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
 
-* Mac operating system of Ventura, macOS 13.5 must be used if running on a phone with iOS 17.0 or newer
-* Mac operating system of Ventura, macOS 13.x must be used if running on a phone with iOS 16.4 or newer
-* Minimum Mac operating system is Monterey, macOS 12.5 or higher for phones running iOS 15.x or 16.3.1 or older
+When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 
-The [Loop and Learn Version Updates](https://www.loopandlearn.org/version-updates) page posts an update every time a new iOS is released and tested. That page is typically updated faster than LoopDocs and reports changes, if any, to the minimum Xcode or macOS.
+The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with Mac-Xcode.
 
-* ** iOS 17.0 or newer**, the minimum macOS is Ventura (13.5)
-* ** iOS 16.4 or newer**, the minimum macOS is Ventura (13.0)
-* ** iOS 15.x or 16.3.1 or older**, the minimum macOS is Monterey (12.5)
-* Loop 3, the minimum macOS is Monterey (12.5)
+Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
 
-If your macOS does not meet the minimum, use the [Browser Build](../gh-actions/gh-overview.md) method, which works on any computer and supports all the iOS listed above.
+| iOS Version | Xcode | macOS | 
+| - | - | - |
+| 17.0 | 15.0 | 13.5 |
+| 16.4 | 14.3 | 13.0 |
+| 16.2 | 14.2 | 12.5 |
+| 15.1 | 14.1 | 12.5 |
 
 !!! warning "iOS Dictates Your Computer Needs"
 
