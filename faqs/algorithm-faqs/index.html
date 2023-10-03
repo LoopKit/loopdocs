@@ -2260,6 +2260,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-do-delivery-limits-affect-automatic-dosing" class="md-nav__link">
+    How do Delivery Limits Affect Automatic Dosing?
+  </a>
+  
+    <nav class="md-nav" aria-label="How do Delivery Limits Affect Automatic Dosing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-dose" class="md-nav__link">
+    Manual Dose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-dose" class="md-nav__link">
+    Automatic Dose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#more-algorithm-information" class="md-nav__link">
     More Algorithm Information
   </a>
@@ -2372,6 +2399,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-do-delivery-limits-affect-automatic-dosing" class="md-nav__link">
+    How do Delivery Limits Affect Automatic Dosing?
+  </a>
+  
+    <nav class="md-nav" aria-label="How do Delivery Limits Affect Automatic Dosing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-dose" class="md-nav__link">
+    Manual Dose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-dose" class="md-nav__link">
+    Automatic Dose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#more-algorithm-information" class="md-nav__link">
     More Algorithm Information
   </a>
@@ -2436,6 +2490,51 @@
 <h2 id="how-is-iob-calculated">How is <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> calculated?<a class="headerlink" href="#how-is-iob-calculated" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Insulin on board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that <a href="../../operation/algorithm/prediction/#insulin-effect">insulin is active</a> over time. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is adding up all the amounts over the full Duration of Insulin Action (<abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr>). The <abbr title="Duration of Insulin Action, the full time insulin is active including a long, low-level tail">DIA</abbr> is 6 hours for most rapid insulin in the models used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p><abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is plotted on the <a href="../../loop-3/displays-v3/#active-insulin-chart">Active Insulin Chart</a> in the main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> display.</p>
+<h2 id="how-do-delivery-limits-affect-automatic-dosing">How do <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr> Affect Automatic Dosing?<a class="headerlink" href="#how-do-delivery-limits-affect-automatic-dosing" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>With each cycle, <span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span>&nbsp;generates a glucose prediction and a recommended dose (positive or negative) to bring you to your correction range.</p>
+<ul>
+<li>The nearest 3 hours has more influence on the recommendation than the later 3 hours, but the entire 6 hours is considered</li>
+<li>The automated response to a negative recommended dose is to reduce basal rate, typically to zero</li>
+<li>The automated response to a positive recommended dose depends on your <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> and is adjusted by your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr></li>
+</ul>
+<p>Let <span class="arithmatex">\(\mathit{dose}\)</span> be the amount the app thinks you need for this cycle before considering <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>. The relationship between <span class="arithmatex">\(\mathit{dose}\)</span>, delivery limits: <span class="arithmatex">\(\mathit{maximumBolus}\)</span> and <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span>, and current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>: <span class="arithmatex">\(\mathit{currentIOB}\)</span> are detailed in the following sections:</p>
+<ul>
+<li><a href="#manual-dose">Manual Dose</a></li>
+<li><a href="#automatic-dose">Automatic Dose</a><ul>
+<li><a href="#automatic-bolus-constant-partial-application-factor"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>: Constant Partial Application Factor</a></li>
+<li><a href="#automatic-bolus-glucose-based-partial-application-factor"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>: Glucose Based Partial Application Factor</a></li>
+<li><a href="#temp-basal-only"><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr></a></li>
+</ul>
+</li>
+</ul>
+<h3 id="manual-dose">Manual Dose<a class="headerlink" href="#manual-dose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>In the case where you are manually requesting a bolus recommendation:</p>
+<ul>
+<li>If <span class="arithmatex">\(\mathit{dose}\)</span> &gt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app recommends <span class="arithmatex">\(\mathit{maximumBolus}\)</span></li>
+<li>If <span class="arithmatex">\(\mathit{dose}\)</span> &lt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app recommends <span class="arithmatex">\(\mathit{dose}\)</span></li>
+</ul>
+<h3 id="automatic-dose">Automatic Dose<a class="headerlink" href="#automatic-dose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Because this will be an automatic dose, the app will not provide a dose that would exceed an <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> of 2 times the <span class="arithmatex">\(\mathit{maximumBolus}\)</span>.</p>
+<div class="arithmatex">\[ autoDose = minimum (dose, 2*maximumBolus - currentIOB) \]</div>
+<h4 id="automatic-bolus-constant-partial-application-factor"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>: Constant Partial Application Factor<a class="headerlink" href="#automatic-bolus-constant-partial-application-factor" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>There is a new feature coming with the next release, available now with customization or the development version, called Glucose Based Partial Application Factor. This feature is disabled by default. When disabled, the Partial Application Factor is a constant 40%.</p>
+<ul>
+<li>If <span class="arithmatex">\(\mathit{autoDose}\)</span> &gt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app boluses 40% of <span class="arithmatex">\(\mathit{maximumBolus}\)</span></li>
+<li>If <span class="arithmatex">\(\mathit{autoDose}\)</span> &lt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app boluses 40% of <span class="arithmatex">\(\mathit{autoDose}\)</span></li>
+</ul>
+<h4 id="automatic-bolus-glucose-based-partial-application-factor"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>: Glucose Based Partial Application Factor<a class="headerlink" href="#automatic-bolus-glucose-based-partial-application-factor" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>When Glucose Based Partial Application Factor is enabled, the application factor is modified based on the current glucose level. The value ranges from 20% at lower glucose to 80% at higher glucose. Let <span class="arithmatex">\(\mathit{gbpa\%}\)</span> represent the application factor, then:</p>
+<ul>
+<li>If <span class="arithmatex">\(\mathit{autoDose}\)</span> &gt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app boluses <span class="arithmatex">\(\mathit{gbpa\%}\)</span> of <span class="arithmatex">\(\mathit{maximumBolus}\)</span></li>
+<li>If <span class="arithmatex">\(\mathit{autoDose}\)</span> &lt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app boluses <span class="arithmatex">\(\mathit{gbpa\%}\)</span> of <span class="arithmatex">\(\mathit{autoDose}\)</span></li>
+</ul>
+<h4 id="temp-basal-only"><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr><a class="headerlink" href="#temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This automatic method uses both <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>: <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span> and <span class="arithmatex">\(\mathit{maximumBolus}\)</span>. As explained above, the <span class="arithmatex">\(\mathit{maximumBolus}\)</span> is used to calculate <a href="#automatic-recommendation"><span class="arithmatex">\(\mathit{autoDose}\)</span></a>.</p>
+<p>The desired dose, <span class="arithmatex">\(\mathit{autoDose}\)</span>, is multiplied by two (to get an hourly rate) and then added to the scheduled basal rate to determine the desired temporary basal rate (<span class="arithmatex">\(\mathit{BR_temp}\)</span>) with a duration of half-an-hour to provide that amount of insulin. This calculated <span class="arithmatex">\(\mathit{BR_temp}\)</span> is compared to <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span>.</p>
+<ul>
+<li>If <span class="arithmatex">\(\mathit{BR_temp}\)</span> &gt; <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span>: app sets rate to <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span></li>
+<li>If <span class="arithmatex">\(\mathit{BR_temp}\)</span> &lt; <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span>: app sets rate to <span class="arithmatex">\(\mathit{BR_temp}\)</span></li>
+</ul>
 <h2 id="more-algorithm-information">More Algorithm Information<a class="headerlink" href="#more-algorithm-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is more detail about the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Algorithm at the bottom of the Operate tab.</p>
 <ul>
