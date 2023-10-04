@@ -318,6 +318,34 @@ _Code After Modification or default for Loop 3_
 
 Note that if you change from 2 hours to 30 minutes, you must also change the indication before the parentheses.
 
+## Adjust Maximum IOB for Automatic Dosing
+
+With version 3.2.0, a new safety feature was added. This limits automatic dosing so IOB is no more than two times the $\mathit{maximumBolus}$ set in your Delivery Limits. (The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate.) Manual Bolus, where you initiate the bolus yourself, is not subject to this limit. Please read [How do Delivery Limits Affect Automatic Dosing?](../faqs/algorithm-faqs.md#how-do-delivery-limits-affect-automatic-dosing) for detailed information on how this safety feature works.
+
+The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, there are some individuals who might need to limit the size of any single bolus independent from the maximum IOB they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling and the insulin leaks back out along the outside cannula.
+
+``` { .txt .copy title="Key_Phrase" }
+automaticDosingIOBLimit = maxBolus
+```
+
+* Module: Loop
+* Folder: Loop/Managers
+* File: LoopDataManager.swift, line: 1690
+
+The following example is for someone who limits a single bolus to 5 U but frequently needs to acheive an IOB of 15 U for meals. They want that level of IOB to be reached with automatic bolusing. In that case, they may want to modify that factor.
+
+Original Code:
+```
+let automaticDosingIOBLimit = maxBolus! * 2.0
+```
+
+Modified Code Example:
+```
+let automaticDosingIOBLimit = maxBolus! * 3.0
+```
+
+Because the automatic bolus amount is also limited by the partial application factor, it still takes a few cycles to reach the higher IOB of $\mathit{3*maximumBolus}$; but they can get there without manual intervention.
+
 ## Adjust Percent Bolus for Automatic Bolus
 
 If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.
