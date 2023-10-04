@@ -62,7 +62,10 @@ Let $\mathit{dose}$ be the amount the app thinks you need for this cycle before 
 
 ### Manual Dose
 
-In the case where you are manually requesting a bolus recommendation:
+In the case where you are manually requesting a bolus recommendation by using the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen.
+
+![Loop toolbar](../../operation/features/img/toolbar-bolus.svg){width="300"}
+{align="center"}
 
 * If $\mathit{dose}$ > $\mathit{maximumBolus}$: app recommends $\mathit{maximumBolus}$
 * If $\mathit{dose}$ < $\mathit{maximumBolus}$: app recommends $\mathit{dose}$
