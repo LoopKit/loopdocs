@@ -332,7 +332,7 @@ automaticDosingIOBLimit = maxBolus
 * Folder: Loop/Managers
 * File: LoopDataManager.swift, line: 1690 (main), 1796 (dev)
 
-The following example is for someone who limits a single bolus to 5 U but frequently needs to acheive an IOB of 15 U for meals. They want that level of IOB to be reached with automatic bolusing. In that case, they may want to modify the factor used to calculate $\mathit{automaticDosingIOBLimit}$.
+The following example is for someone who limits a single bolus to 5 U but frequently needs to achieve an IOB of 15 U for meals. They want that level of IOB to be reached with automatic bolusing. In that case, they may want to modify the factor used to calculate $\mathit{automaticDosingIOBLimit}$.
 
 Original Code:
 ```

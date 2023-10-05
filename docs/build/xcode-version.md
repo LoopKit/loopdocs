@@ -112,6 +112,8 @@ Some error messages that have shown up in earlier updates:
 Package.resolved file corrupted or malformed
 ```
 
+This is for trying to select an iOS 17 phone when building with Xcode 14:
+
 ```
 Could not locate device support files
 ```
