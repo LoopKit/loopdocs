@@ -158,6 +158,61 @@ To improve the automatic translation quality, please follow these rules when wri
 
 #### Rules
 
+Updates to Eric's comments (from Marion)
+
+Really - just saying the same thing in different words.
+
+Revise the Nav labels (in mkdocs.yml) and the headers on the pages to remove words that require the no-translate tag wherever possible.
+
+When you have to use "proper terminology" like `fork`, be sure to use a no-translate tag. When possible, substitute a word that will translate. For example, make a `copy` of the code. You can use app instead of *Loop* in many instances.
+
+Don't get carried away with putting no-translate tags everywhere. The app itself has translations of strings included. Forcing `Dosing Strategy` to not be translated is not necessary. The google translate might not match what is in the app, but forcing the English is not helpful either.
+
+To prevent translation without modification of the font for the word or phrase use `<span translate="no">` before and `</span>` after the word or phrase that should not be translated. Using `span` is preferred when you do not want to modify the appearance of the word or phrase. If there are spaces before or after the word or phrase, use `&nbsp;` instead of a space. The use of `span` or `code` or italics (by placing an underscore or asterisk before and after the word) prevents translation **and** enables tooltips to still be displayed. The use of back-ticks does not allow tooltips to be displayed.
+
+* span: no font change, tooltips display
+* italics: italic font, tooltips display
+* code: highlighted display, tooltips display
+* backticks: highlighted display, tooltips not seen
+* bold: this does not force a no-translate and can be used in addition to the other marks
+
+New trick for dealing with variables, where appropriate, is to use `$\mathit{variable-name}\$` which displays the variable-name in italics without translation and makes it clear that it is a variable.
+
+When it is desired that the word or phrase stand out as highlighted on the page, then use back ticks or `<code> </code>` instead of `span`. You might want to add the `&nbsp;` see examples below, however, this may be less of an issue because the word or phrase is highlighted on the screen and clearly differentiated from words on either side.
+
+If "jargon" must be used in a header, be sure to use some kind of no-translate tag or it is likely to be translated to something unexpected.
+
+Example usage below for  `&nbsp;`:
+
+```
+<span translate="no">Word or Phrase</span>&nbsp;is in the beginning of this sentence.
+```
+```
+This is in the middle of a sentence that includes&nbsp;<span translate="no">Word or Phrase</span>&nbsp;in it.
+```
+```
+If the word is at the end of a line or has other punctuation, the `&nbsp;` can be skipped:
+
+### All about&nbsp;<span translate="no">Word or Phrase</span>
+
+This ability to build &nbsp;<span translate="no">Loop</span>, from both a browser and with Mac-Xcode, is wonderful.
+```
+
+These words / phrases **do not need** no-translate tags:
+
+* Xcode
+* Mac-Xcode
+* GitHub
+
+These words **do need** no-translate tags (most of the time):
+* Apple
+* Loop
+* LoopKit/Loop
+
+Common words like `Secrets` that will show up on `GitHub` for Building with Browser should be enclosed in `code` so tooltips will work and the word will be highlighted as important.
+
+From Eric (his rules before Marion made comments above)
+
 To prevent *Google Translate* from translating specific `text` items, we can mark them accordingly:
 The conditional text transformation rules are expressed in two forms, pseudo-code first followed by a visual diagram.
 
