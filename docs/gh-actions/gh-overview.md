@@ -15,12 +15,12 @@
 
 ### Considerations for Building with a Browser
 
-* The app is delivered to your phone via&nbsp;<span translate="no">TestFlight</span>
-    * The app is considered "Beta" by &nbsp;<span translate="no">Apple</span>&nbsp;and expires after 90 days
+* The app is delivered to your phone via *TestFlight*
+    * The app is considered "Beta" by  *Apple* and expires after 90 days
     * With the next release, which includes automatic builds, this should not be an issue
 * After the&nbsp;<span translate="no">GitHub Build</span>&nbsp;starts, the process takes about an hour to complete
     * You will receive an email indicating success (or failure)
-    * The&nbsp;<span translate="no">Loop</span>&nbsp;app appears in the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on the phone, where it can be installed in seconds
+    * The *Loop* app appears in the *TestFlight* app on the phone, where it can be installed in seconds
 * Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
@@ -30,17 +30,17 @@
 
 * **Loop 3 requires iOS 15.1 or higher on the phone.**
 
-To build the&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser, you need:
+To build the *Loop* app using a browser, you need:
 
-1. Free&nbsp;<span translate="no">GitHub</span>&nbsp;account (instructions included in [Configure to use Browser](gh-first-time.md))
-1. [<span translate="no">Apple</span>&nbsp;Developer Membership](../build/apple-developer.md)
+1. Free *GitHub* account (instructions included in [Configure to use Browser](gh-first-time.md))
+1. [*Apple* Developer Membership](../build/apple-developer.md)
     * Must be a paid developer account
     * If building for a family member, review this section:
         * [Loopers Need Their Own *Apple* ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
     * If building for a child (age depends on the country), review this section:
         * [Install *TestFlight* Loop for Child](../gh-actions/gh-deploy.md#testflightfor-child)
 
-Once you have the &nbsp;<span translate="no">Loop</span>&nbsp;app in TestFlight, you need:
+Once you have the *Loop* app in TestFlight, you need:
 
 1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/pump.md)
@@ -81,5 +81,5 @@ Try to:
 * Compare your display with the graphics in LoopDocs.
     * Is something different or does yours have an error message?
     * Does the error message guide you to the problem and solution?
-    * Be aware that &nbsp;<span translate="no">GitHub</span>&nbsp;often updates where things are - search for &nbsp;<span translate="no">GitHub</span>&nbsp;directions if your display looks different than LoopDocs.
+    * Be aware that  *GitHub* often updates where things are - search for  *GitHub* directions if your display looks different than LoopDocs.
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).

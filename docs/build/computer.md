@@ -14,7 +14,7 @@
 
     - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md)
     - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com)
-    - You need a [compatible phone](phone.md) to install the app from&nbsp;<span translate="no">TestFlight</span>
+    - You need a [compatible phone](phone.md) to install the app from *TestFlight*
     - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
 
 !!! abstract "Summary"
@@ -38,7 +38,7 @@ If you have access to a computer with MacOS 13.5 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-The current development version and the next release of&nbsp;<span translate="no">Loop</span>&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
+The current development version and the next release of *Loop* will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
 
 When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 

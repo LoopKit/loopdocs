@@ -1,10 +1,10 @@
 ## Using *GitHub* Browser Build Method to Build Other Apps
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to &nbsp;<span translate="no">Loop</span>&nbsp; are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
+Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to *Loop* are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
 
 The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
-* <span translate="no">Loop Caregiver</span>
+* *Loop Caregiver*
 * <span translate="no">Loop Follow</span>
 
 !!! warning "GH_PAT - NEW RECOMMENDATION"
@@ -26,19 +26,20 @@ The same technique is used and the same six Secrets are applied to each reposito
         * Use that table to find the link of the repository you will fork
 
 !!! important "Use the repository for the application you are building"
-    Many graphics on this page show &nbsp;<span translate="no">LoopWorkspace</span>, just remember to use the repository for the app you want to build, that is either &nbsp;<span translate="no">Loop Follow</span>&nbsp; or &nbsp;<span translate="no">Loop Caregiver</span>.
+    Many graphics on this page show &nbsp;<span translate="no">LoopWorkspace</span>, just remember to use the repository for the app you want to build, that is either  *Loop Follow*  or *Loop Caregiver*.
 
 ## Fork and Add Secrets
 
 * You will return to this page after reviewing (but not doing) this step [GitHub First-Time: Fork LoopWorkspace](../gh-actions/gh-first-time.md#fork-loopworkspace)
     * Use the same method as that section, but fork the repository for the app you plan to build
-    * <span translate="no">Loop Caregiver</span>, expect the branch to be "dev"
+    * *Loop Caregiver*, expect the branch to be "dev"
     * <span translate="no">Loop Follow</span>, expect the branch to be "main"
 
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
+| *Loop Caregiver* | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [*LoopDocs*: 
+*Loop Caregiver*](../nightscout/loop-caregiver.md) |
 |Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
 
 
@@ -99,7 +100,7 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six Secrets and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your &nbsp;<span translate="no">Loop Follow</span>&nbsp; or &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; repository and enable workflows if needed
+1. Click on the "Actions" tab of your  *Loop Follow*  or  *Loop Caregiver*repository and enable workflows if needed
 1. On the left side, click on 1. <code>Validate Secrets</code>
 1. On the right side, click `Run Workflow` to show a drop-down menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
@@ -151,12 +152,12 @@ After successfully performing the Add Identifiers Action, you will see the ident
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
-| <span translate="no">Loop Caregiver</span> | <span translate="no">Loop Caregiver</span> | com.TEAMID.loopkit.LoopCaregiver |
+| *Loop Caregiver* | *Loop Caregiver* | com.TEAMID.loopkit.LoopCaregiver |
 | Loop Follow | LoopFollow | com.TEAMID.LoopFollow |
 
 Some apps, like Loop, require updates to the Identifiers after they are generated.
 
-These apps, &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; and &nbsp;<span translate="no">Loop Follow</span>, do not require that extra step.
+These apps,  *Loop Caregiver*and  *Loop Follow*, do not require that extra step.
 
 ## Create App in App Store Connect
 
@@ -166,7 +167,7 @@ This requires you to provide some information. Examine the table below for the b
 
 | App Name | Bundle ID |
 | --- | --- |
-| <span translate="no">Loop Caregiver</span> | com.TEAMID.loopkit.LoopCaregiver |
+| *Loop Caregiver* | com.TEAMID.loopkit.LoopCaregiver |
 | <span translate="no">Loop Follow</span> | com.TEAMID.LoopFollow |
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 

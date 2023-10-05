@@ -77,7 +77,7 @@ After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it i
 
 ### Compatible Versions#
 
-The current development version and the next release of&nbsp;<span translate="no">Loop</span>&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
+The current development version and the next release of *Loop* will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
 
 When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 

@@ -321,11 +321,11 @@ If you have already completed the One-Time Changes, skip ahead to [Build Branch]
 
 #### Transition to dev
 
-When updating from&nbsp;<span translate="no">Loop</span>&nbsp;3.2.x to dev, you will need to take some extra steps. 
+When updating from *Loop* 3.2.x to dev, you will need to take some extra steps. 
 
 You have a choice:
 
-* You can change your default branch to dev, see [Change Default Branch](#change-default-branch) and then your &nbsp;<span translate="no">Loop</span>&nbsp;app will be automatically updated and automatically built at least once a month
+* You can change your default branch to dev, see [Change Default Branch](#change-default-branch) and then your *Loop* app will be automatically updated and automatically built at least once a month
     * Be sure to review the [Modify Automatic Building](#modify-automatic-building) section
 * You can leave your default branch at main, but no automated updates will happen
     * Running each action below requires you to select the dev branch in the drop-down menu
