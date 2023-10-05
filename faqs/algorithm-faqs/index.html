@@ -2508,14 +2508,16 @@
 </li>
 </ul>
 <h3 id="manual-dose">Manual Dose<a class="headerlink" href="#manual-dose" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>In the case where you are manually requesting a bolus recommendation:</p>
+<p>In this case, where you are manually requesting a bolus recommendation by using the double orange triangles (circled below) in the toolbar at the bottom of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> status screen, only the <span class="arithmatex">\(\mathit{maximumBolus}\)</span> Delivery Limit is considered.</p>
+<p align="center"><img alt="Loop toolbar" src="../../operation/features/img/toolbar-bolus.svg" width="300" /></p>
 <ul>
 <li>If <span class="arithmatex">\(\mathit{dose}\)</span> &gt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app recommends <span class="arithmatex">\(\mathit{maximumBolus}\)</span></li>
 <li>If <span class="arithmatex">\(\mathit{dose}\)</span> &lt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app recommends <span class="arithmatex">\(\mathit{dose}\)</span></li>
 </ul>
 <h3 id="automatic-dose">Automatic Dose<a class="headerlink" href="#automatic-dose" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Because this will be an automatic dose, the app will not provide a dose that would exceed an <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> of 2 times the <span class="arithmatex">\(\mathit{maximumBolus}\)</span>.</p>
-<div class="arithmatex">\[ autoDose = minimum (dose, 2*maximumBolus - currentIOB) \]</div>
+<p>Because this will be an automatic dose, the app will not provide a dose that would exceed an <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> of 2 times the <span class="arithmatex">\(\mathit{maximumBolus}\)</span>. The term automatic dose refers to insulin the app automatically delivers above your scheduled basal rate.</p>
+<div class="arithmatex">\[ autoDose = minimum (dose, {2*maximumBolus} - currentIOB) \]</div>
+<p>Note that a manual dose can exceed <span class="arithmatex">\(\mathit{autoDose}\)</span>. There will be no warning if this happens. But no additional automatic dosing will happen until <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is below <span class="arithmatex">\(\mathit{2*maximumBolus}\)</span>. As long as the prediction is above the correction range, scheduled basal continues regardless of <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>.</p>
 <h4 id="automatic-bolus-constant-partial-application-factor"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>: Constant Partial Application Factor<a class="headerlink" href="#automatic-bolus-constant-partial-application-factor" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>There is a new feature coming with the next release, available now with customization or the development version, called Glucose Based Partial Application Factor. This feature is disabled by default. When disabled, the Partial Application Factor is a constant 40%.</p>
 <ul>
