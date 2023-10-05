@@ -64,7 +64,7 @@ Let $\mathit{dose}$ be the amount the app thinks you need for this cycle before 
 
 In this case, where you are manually requesting a bolus recommendation by using the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen, only the $\mathit{maximumBolus}$ Delivery Limit is considered.
 
-![Loop toolbar](../../operation/features/img/toolbar-bolus.svg){width="300"}
+![Loop toolbar](../operation/features/img/toolbar-bolus.svg){width="300"}
 {align="center"}
 
 * If $\mathit{dose}$ > $\mathit{maximumBolus}$: app recommends $\mathit{maximumBolus}$
@@ -94,7 +94,7 @@ When Glucose Based Partial Application Factor is enabled, the application factor
 
 #### Temp Basal Only
 
-This automatic method uses both Delivery Limits: $\mathit{maximumBasalRate}$ and $\mathit{maximumBolus}$. As explained above, the $\mathit{maximumBolus}$ is used to calculate [$\mathit{autoDose}$](#automatic-recommendation).
+This automatic method uses both Delivery Limits: $\mathit{maximumBasalRate}$ and $\mathit{maximumBolus}$. As explained above, the $\mathit{maximumBolus}$ is used to calculate [$\mathit{autoDose}$](#automatic-dose).
 
 The desired dose, $\mathit{autoDose}$, is multiplied by two (to get an hourly rate) and then added to the scheduled basal rate to determine the desired temporary basal rate ($\mathit{BR_temp}$) with a duration of half-an-hour to provide that amount of insulin. This calculated $\mathit{BR_temp}$ is compared to $\mathit{maximumBasalRate}$.
 
