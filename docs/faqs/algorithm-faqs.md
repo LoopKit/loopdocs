@@ -62,16 +62,21 @@ Let $\mathit{dose}$ be the amount the app thinks you need for this cycle before 
 
 ### Manual Dose
 
-In the case where you are manually requesting a bolus recommendation:
+In this case, where you are manually requesting a bolus recommendation by using the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen, only the $\mathit{maximumBolus}$ Delivery Limit is considered.
+
+![Loop toolbar](../../operation/features/img/toolbar-bolus.svg){width="300"}
+{align="center"}
 
 * If $\mathit{dose}$ > $\mathit{maximumBolus}$: app recommends $\mathit{maximumBolus}$
 * If $\mathit{dose}$ < $\mathit{maximumBolus}$: app recommends $\mathit{dose}$
 
 ### Automatic Dose
 
-Because this will be an automatic dose, the app will not provide a dose that would exceed an IOB of 2 times the $\mathit{maximumBolus}$.
+Because this will be an automatic dose, the app will not provide a dose that would exceed an IOB of 2 times the $\mathit{maximumBolus}$. The term automatic dose refers to insulin the app automatically delivers above your scheduled basal rate.
 
-$$ autoDose = minimum (dose, 2*maximumBolus - currentIOB) $$
+$$ autoDose = minimum (dose, {2*maximumBolus} - currentIOB) $$
+
+Note that a manual dose can exceed $\mathit{autoDose}$. There will be no warning if this happens. But no additional automatic dosing will happen until IOB is below $\mathit{2*maximumBolus}$. As long as the prediction is above the correction range, scheduled basal continues regardless of IOB.
 
 #### Automatic Bolus: Constant Partial Application Factor
 
