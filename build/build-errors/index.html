@@ -324,7 +324,7 @@
   
     <li class="md-tabs__item">
       <a href="../../nightscout/overview/" class="md-tabs__link">
-        Nightscout
+        <span translate="no">Nightscout<span>
       </a>
     </li>
   
@@ -2203,14 +2203,14 @@
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-          Nightscout
+          <span translate="no">Nightscout<span>
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Nightscout
+          <span translate="no">Nightscout<span>
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2347,7 +2347,7 @@
   
     <li class="md-nav__item">
       <a href="../../nightscout/loop-caregiver/" class="md-nav__link">
-        Loop Caregiver
+        <span translate="no">Loop Caregiver<span>
       </a>
     </li>
   
@@ -2907,11 +2907,11 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>These are only relevant when building with a Mac and <abbr title="program used to build an app">Xcode</abbr>.</strong><br />
-<strong>For <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (Browser Build) errors, please see: <a href="../../gh-actions/gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a></strong></p>
+<strong>For Building with Browser Build errors, please see: <a href="../../gh-actions/gh-errors/">Errors with Browser</a></strong></p>
 </div>
 <p>There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the <abbr title="program used to build an app">Xcode</abbr> window.</p>
 <p><strong><font color="orange"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg></span> Yellow</font> and <font color="purple"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0z"/></svg></span> Purple</font> warnings</strong> do not cause the build to fail, those are just warnings.  You will often see yellow and purple icons. <strong>Ignore those</strong>. Do not try to do anything to fix those.</p>
-<p><strong><font color="red"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span> Red errors</font></strong> will <strong>have to be resolved</strong> before you can successfully build the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app. The steps below explain how to resolve them based on the messages you are seeing.</p>
+<p><strong><font color="red"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span> Red errors</font></strong> will <strong>have to be resolved</strong> before you can successfully build the app. The steps below explain how to resolve them based on the messages you are seeing.</p>
 <h3 id="xcode-not-responding"><abbr title="program used to build an app">Xcode</abbr> Not Responding<a class="headerlink" href="#xcode-not-responding" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Sometimes, <abbr title="program used to build an app">Xcode</abbr> stops responding. You have to fix this before any of the other steps on this page will help.  The signature is that <abbr title="program used to build an app">Xcode</abbr> shows a colorful spinning icon and does not respond to anything you do.</p>
 <p>This can happen sometimes. You just need to force quit <abbr title="program used to build an app">Xcode</abbr>. Sometimes rebooting the Mac may be required, but start with force quit. Then just open up <abbr title="program used to build an app">Xcode</abbr> again and keep going.</p>

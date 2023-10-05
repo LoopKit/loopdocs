@@ -322,7 +322,7 @@
   
     <li class="md-tabs__item">
       <a href="../../nightscout/overview/" class="md-tabs__link">
-        Nightscout
+        <span translate="no">Nightscout<span>
       </a>
     </li>
   
@@ -1887,14 +1887,14 @@
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-          Nightscout
+          <span translate="no">Nightscout<span>
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Nightscout
+          <span translate="no">Nightscout<span>
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2031,7 +2031,7 @@
   
     <li class="md-nav__item">
       <a href="../../nightscout/loop-caregiver/" class="md-nav__link">
-        Loop Caregiver
+        <span translate="no">Loop Caregiver<span>
       </a>
     </li>
   
@@ -2531,7 +2531,7 @@
 <li>If <span class="arithmatex">\(\mathit{autoDose}\)</span> &lt; <span class="arithmatex">\(\mathit{maximumBolus}\)</span>: app boluses <span class="arithmatex">\(\mathit{gbpa\%}\)</span> of <span class="arithmatex">\(\mathit{autoDose}\)</span></li>
 </ul>
 <h4 id="temp-basal-only"><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr><a class="headerlink" href="#temp-basal-only" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>This automatic method uses both <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>: <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span> and <span class="arithmatex">\(\mathit{maximumBolus}\)</span>. As explained above, the <span class="arithmatex">\(\mathit{maximumBolus}\)</span> is used to calculate <a href="#automatic-recommendation"><span class="arithmatex">\(\mathit{autoDose}\)</span></a>.</p>
+<p>This automatic method uses both <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>: <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span> and <span class="arithmatex">\(\mathit{maximumBolus}\)</span>. As explained above, the <span class="arithmatex">\(\mathit{maximumBolus}\)</span> is used to calculate <a href="#automatic-dose"><span class="arithmatex">\(\mathit{autoDose}\)</span></a>.</p>
 <p>The desired dose, <span class="arithmatex">\(\mathit{autoDose}\)</span>, is multiplied by two (to get an hourly rate) and then added to the scheduled basal rate to determine the desired temporary basal rate (<span class="arithmatex">\(\mathit{BR_temp}\)</span>) with a duration of half-an-hour to provide that amount of insulin. This calculated <span class="arithmatex">\(\mathit{BR_temp}\)</span> is compared to <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span>.</p>
 <ul>
 <li>If <span class="arithmatex">\(\mathit{BR_temp}\)</span> &gt; <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span>: app sets rate to <span class="arithmatex">\(\mathit{maximumBasalRate}\)</span></li>
