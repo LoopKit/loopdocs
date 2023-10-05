@@ -198,11 +198,12 @@ If the word is at the end of a line or has other punctuation, the `&nbsp;` can b
 This ability to build &nbsp;<span translate="no">Loop</span>, from both a browser and with Mac-Xcode, is wonderful.
 ```
 
-These words / phrases **do not need** no-translate tags:
+These words / phrases **do not need** no-translate tags, however, they are typically rendered in italics anyway:
 
 * Xcode
 * Mac-Xcode
 * GitHub
+* TestFlight
 
 These words **do need** no-translate tags (most of the time):
 * Apple
