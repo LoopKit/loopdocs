@@ -9,7 +9,7 @@ The *Loop Caregiver* app is under development to make remote commands easier to 
     * version 3.3 and higher offers improved feedback to the *Loop Caregiver* user
 * iOS 16 or newer for *Loop Caregiver* phone
 * iOS 15.1 with *Loop 3* for *Loop* phone
-* <span translate="no">Nightscout</span>&nbsp; version 14.2.6
+* *Nightscout* version 14.2.6
 
 ### Prerequisites:
 

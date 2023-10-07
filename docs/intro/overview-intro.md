@@ -14,8 +14,8 @@ The *LoopDocs* website is organized as follows
 * [Operate](../operation/loop/open-loop.md): How to use the *Loop* app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the *Loop* app
 * [Version](../version/overview-version.md): Information about *Loop* versions, code customization and development
-* [<span translate="no">Nightscout</span>](../nightscout/overview.md): *Loop*-specific&nbsp;<span translate="no">Nightscout</span>&nbsp;details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/) is an open-source cloud application used by people with diabetes and their caregivers
-    * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a *Loop* app using&nbsp;<span translate="no">Nightscout</span>&nbsp;and Apple Push Notifications
+* [<span translate="no">Nightscout</span>](../nightscout/overview.md): *Loop*-specific *Nightscout* details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/) is an open-source cloud application used by people with diabetes and their caregivers
+    * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a *Loop* app using *Nightscout* and Apple Push Notifications
     * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
 * [Translation](../translate.md): Links to Google Translate provided as a convenience, no guaratees about the quality of the translation

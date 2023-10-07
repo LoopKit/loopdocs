@@ -1,6 +1,6 @@
 ## Overview
 
-Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your *Loop* information is included and the *Loop* icon will appear, but the app will not open until you install *Loop* from either *TestFlight* (*GitHub* Build) or&nbsp;<span translate="no">Xcode</span>&nbsp;(<span translate="no">Mac-Xcode</span>&nbsp;Build).
+Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your *Loop* information is included and the *Loop* icon will appear, but the app will not open until you install *Loop* from either [*TestFlight*](../gh-actions/gh-deploy.md#install-app-with-testflight) or [*Mac-Xcode*](../build/build-app.md).
 
 Some people don't have access to their old phone. There are instructions for handling that on this page. It makes the whole process more stressful, but remember, pods continue to deliver basal rate and Medtronic pumps can be controlled on the pump itself. Use your backup plan until you can get *Loop* running on a new phone.
 
@@ -27,7 +27,7 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
     * The *Loop* app will install from *TestFlight* onto the most recent iOS
     * If a new version of *Loop* is available, we recommend updating and building to the latest [Update with Browser](../gh-actions/gh-update.md)
 
-!!! abstract "New Phone Checklist for <span translate="no">Mac-Xcode</span>&nbsp;Build"
+!!! abstract "New Phone Checklist for <span translate="no">*Mac-Xcode*</span>&nbsp;Build"
     * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) compatible with the latest iOS version?
     * If not, you should configure and build the app with [Browser Build](../gh-actions/gh-overview.md)
 
@@ -69,35 +69,37 @@ It is easier if you transfer information from the old phone to the new phone bef
     * If this is not possible, you will need to start a new pod with the new phone
     * Medtronic users will have all their information transferred but will only have one phone connected to the RileyLink
 1. Install *Loop* on the new phone (all your settings should be there)
-    * Install from&nbsp;[<span translate="no">TestFlight</span>](#install-from-testflight)&nbsp;for *GitHub*  Build or from Xcode for&nbsp;[<span translate="no">Mac-Xcode</span>&nbsp;Build](#build-using-mac-xcode)
-1.  As soon as you install *Loop* on the new phone, go ahead and disable Closed Loop.
-    * Keep closed loop disabled until you complete the full transfer and checkout.
+    * [Install from *TestFlight*](#install-from-testflight)<br>or
+    * [Build using *Mac-Xcode*](#build-using-mac-xcode)
+1.  As soon as you install the *Loop* app on the new phone, go ahead and disable <code>Closed Loop</code>.
+    * Keep <code>Closed Loop</code> disabled until you complete the full transfer and checkout.
 
 #### Install from *TestFlight*
 
 * Open *TestFlight* app on new phone
-* Install *Loop* on your new phone from *TestFlight*
+* Install the app on your new phone from *TestFlight*
+* If necessary, review [*TestFlight* for a Child](../gh-actions/gh-deploy.md#testflight-for-a-child)
 
-#### Build using Mac-Xcode
+#### Build using **Mac-Xcode**
 
-* Open Xcode – use the same build as you used for the old phone
+* Open *Xcode* – use the same build as you used for the old phone
 * Plug in the new phone to the computer (trust phone/computer) and hit build
-* Build *Loop* on the new phone
+* Build the app on the new phone
 
 ### Prepare to Change *Loop* Phones
 
 On old phone (if available):
 
-1. *Loop* app, turn off the slider for the RileyLink if using Medtronic or Eros Pods
+1. *Loop* app, turn off the slider for the *RileyLink* if using *Medtronic* or *Eros Pods*
     * Do not delete the pump; if using pods, this cannot be reversed
-1. Phone Settings, Bluetooth
+1. Phone Settings, *Bluetooth*
     * Forget the connections to the CGM (Dexcom or&nbsp;<span translate="no">Libre</span>)
-    * Do not forget anything that says&nbsp;<span translate="no">TWI_BOARD</span>&nbsp;or&nbsp;<span translate="no">NXP_BLE</span>&nbsp;(this is your&nbsp;<span translate="no">DASH</span>&nbsp;pod)
-1. Phone Settings, Bluetooth: Disable Bluetooth
+    * Do not forget anything that says *TWI_BOARD or *NXP_BLE*(this is your *DASH* pod)
+1. Phone Settings, *Bluetooth*: Disable *Bluetooth*
 
 ### Transfer Pump
 
-Bluetooth must be off on the old phone.
+*Bluetooth* must be off on the old phone.
 
 * On the new phone, examine the pump status
     * If everything transfered, your new phone should be communicating with your pump
@@ -175,8 +177,8 @@ Once you are using *Loop* on your new phone, you can delete the pump from the ol
 
 * On the old phone, in the *Loop* app:
     * Delete the pump
-* If using DASH pods with direct Bluetooth connection to your phone
-    * Go into the old phone Settings -> Bluetooth and turn it back on
+* If using DASH pods with direct *Bluetooth* connection to your phone
+    * Go into the old phone Settings -> *Bluetooth* and turn it back on
     * Forget the pod; it will show up as TWI_BOARD or NXP_BLE
 
 You can either keep the Old Phone as a backup, reset it and turn it in for credit or give it to some deserving individual.

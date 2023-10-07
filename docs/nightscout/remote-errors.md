@@ -1,26 +1,26 @@
-## *Loop* data is not showing in &nbsp;<span translate="no">Nightscout</span>
+## *Loop* data is not showing in *Nightscout*
 
-* This is a *Loop* and/or &nbsp;<span translate="no">Nightscout</span>&nbsp; issue, not related to remote configuration
-    * Review the [LoopDocs: <span translate="no">Nightscout</span>&nbsp; with  *Loop*](update-user.md) page
-    * Check out links on the [LoopDocs: <span translate="no">Nightscout</span>&nbsp; Troubleshooting](troubleshoot.md) page
-* Make sure Looper's phone is connected to the internet so it can upload to &nbsp;<span translate="no">Nightscout</span>
+* This is a *Loop* and/or *Nightscout* issue, not related to remote configuration
+    * Review the [LoopDocs: *Nightscout* with  *Loop*](update-user.md) page
+    * Check out links on the [LoopDocs: *Nightscout* Troubleshooting](troubleshoot.md) page
+* Make sure Looper's phone is connected to the internet so it can upload to *Nightscout*
 
 ## Improper Configuration
 
-### <span translate="no">Nightscout</span>&nbsp; Config and *Loop* Build Method
+### *Nightscout* Config and *Loop* Build Method
 
-Ensure your &nbsp;<span translate="no">Nightscout</span>&nbsp; version is at least version 14.2.6.
+Ensure your *Nightscout* version is at least version 14.2.6.
 
-Verify that you performed all the [Remote Configuration](remote-config.md) steps for the &nbsp;<span translate="no">Nightscout</span>&nbsp; site including sending an override from the *Loop* phone to &nbsp;<span translate="no">Nightscout</span>.
+Verify that you performed all the [Remote Configuration](remote-config.md) steps for the *Nightscout* site including sending an override from the *Loop* phone to *Nightscout*.
 
 #### BadDeviceToken
 
-When the &nbsp;<span translate="no">Nightscout</span>&nbsp; config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the *Loop* app build method; the error message contains the phrase `APNs delivery failed: BadDeviceToken`.
+When the *Nightscout* config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the *Loop* app build method; the error message contains the phrase `APNs delivery failed: BadDeviceToken`.
 
-* If *Loop* was installed remotely (typically from TestFlight following GitHub Browser Build), you **must** have &nbsp;<span translate="no">Nightscout</span>&nbsp; config var `LOOP_PUSH_SERVER_ENVIRONMENT` set to `production`
-* If *Loop* was built using Mac-Xcode, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your &nbsp;<span translate="no">Nightscout</span>&nbsp; config vars
+* If *Loop* was installed remotely (typically from TestFlight following GitHub Browser Build), you **must** have *Nightscout* config var `LOOP_PUSH_SERVER_ENVIRONMENT` set to `production`
+* If *Loop* was built using Mac-Xcode, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
 
-If you attempt to issue a command from &nbsp;<span translate="no">Nightscout</span>&nbsp; Careportal; after you hit submit and then OK, you will see the error message:
+If you attempt to issue a command from *Nightscout* Careportal; after you hit submit and then OK, you will see the error message:
 
 ```
 Error: APNs delivery failed: BadDeviceToken
@@ -54,12 +54,12 @@ The references to Caregiver below is the person sending the commands. There are 
 * The Apple clock should be set to automatic on both the Looper's phone and Caregiver’s device.
     * If the clock is incorrect, even slightly, remote commands will fail.
 * Check if One-Time Passwords (OTP) align between Caregiver and  *Loop*.
-    * In  *Loop*: Settings -> Services -> &nbsp;<span translate="no">Nightscout</span>
+    * In  *Loop*: Settings -> Services -> *Nightscout*
     * In *Loop Caregiver* : Settings -> Tap on Loopers Name
     * Observe the 6-digit OTP as they change
 * If the OTP don't match, you can reset it:
     * **Warning**: If there are multiple devices (or people) sending remote commands, this procedure **resets the OTP for all**
-    * *Loop*: Settings -> Services -> &nbsp;<span translate="no">Nightscout</span>&nbsp; -> One-Time Password -> Tap Reload button
+    * *Loop*: Settings -> Services -> *Nightscout* -> One-Time Password -> Tap Reload button
         * The QR code is different as soon as you hit `Reload`
     * *Loop Caregiver*: Delete the Looper's profile from *Loop Caregiver* and add the Looper again by scanning their new QR code
     * Authenticators for every device used to send remote commands must be updated
@@ -74,7 +74,7 @@ Apple Push Notifications will often not make it to an app, either due to your se
 * Push notification banner shows but nothing happens in *Loop* (no error or success message afterwards)
 * Error message shows that Password (OTP) is expired
 
-While *Loop* does not have control over Push Notification timely delivery, there are things that can be done to mitigate these issues. Note that rebuilding  *Loop*, *Loop Caregiver* or &nbsp;<span translate="no">Nightscout</span>&nbsp; is generally not going to help.
+While *Loop* does not have control over Push Notification timely delivery, there are things that can be done to mitigate these issues. Note that rebuilding  *Loop*, *Loop Caregiver* or *Nightscout* is generally not going to help.
 
 Check these settings on the Looper’s device, not the Caregivers. Several of these are related to Apple suppressing notifications.
 
@@ -112,11 +112,11 @@ Some other things to try on the Looper’s phone:
 
 ## How to Ask for Help
 
-This is helpful information to share when requested by helpers. If you are not using *Loop Caregiver*, review the response seen on the &nbsp;<span translate="no">Nightscout</span>&nbsp; site.
+This is helpful information to share when requested by helpers. If you are not using *Loop Caregiver*, review the response seen on the *Nightscout* site.
 
-1. Activate an override _from within *Loop* _. Does &nbsp;<span translate="no">Nightscout</span>&nbsp; show the active override?
-1. Activate an override _from &nbsp;<span translate="no">Nightscout</span>&nbsp;_. Does it change the active override in  *Loop*?
-1. Do errors show in *Loop Caregiver* or &nbsp;<span translate="no">Nightscout</span>&nbsp; Careportal when you send a remote command?
+1. Activate an override _from within *Loop* _. Does *Nightscout* show the active override?
+1. Activate an override _from  *Nightscout* _. Does it change the active override in  *Loop*?
+1. Do errors show in *Loop Caregiver* or *Nightscout* Careportal when you send a remote command?
     * Share screenshots of error if any
 1. Do errors show in iOS Notifications on the Looper’s device?
     * Check their Notification history in iOS by swiping down 
@@ -135,13 +135,13 @@ Mention which troubleshooting steps you have completed so we know whether to ask
 
 ## Other Errors
 
-Once you've set up remote commands, you may encounter errors when trying to run them via &nbsp;<span translate="no">Nightscout</span>&nbsp; or iOS Shortcuts.  Below are the most common and typical solutions.
+Once you've set up remote commands, you may encounter errors when trying to run them via *Nightscout* or iOS Shortcuts.  Below are the most common and typical solutions.
 
-1. **`Error: *Loop* notification failed: Could not find deviceToken in loopSettings`** You might see this in either &nbsp;<span translate="no">Nightscout</span>&nbsp; or Shortcuts.  The error is most commonly caused by *Loop* not pointing to the right &nbsp;<span translate="no">Nightscout</span>&nbsp; instance or you haven't yet run an override locally (with the *Loop* app) before trying to run one remotely.  
-    **Solution:** Confirm the *Loop* app is pointing to the right &nbsp;<span translate="no">Nightscout</span>&nbsp; site (and there are no extra spaces or a slash (`/`) at the end, and always run an override for a few seconds in the *Loop* app before you try to run one remotely.
-2. **`Error: cannot POST/api/v2/notifications/loop`** You might see this in iOS Shortcuts.  This means &nbsp;<span translate="no">Nightscout</span>&nbsp; is not updated correctly and you are running a version of &nbsp;<span translate="no">Nightscout</span>&nbsp; that doesn't yet support remote overrides.   
+1. **`Error: *Loop* notification failed: Could not find deviceToken in loopSettings`** You might see this in either *Nightscout* or Shortcuts.  The error is most commonly caused by *Loop* not pointing to the right *Nightscout* instance or you haven't yet run an override locally (with the *Loop* app) before trying to run one remotely.  
+    **Solution:** Confirm the *Loop* app is pointing to the right *Nightscout* site (and there are no extra spaces or a slash (`/`) at the end, and always run an override for a few seconds in the *Loop* app before you try to run one remotely.
+2. **`Error: cannot POST/api/v2/notifications/loop`** You might see this in iOS Shortcuts.  This means *Nightscout* is not updated correctly and you are running a version of *Nightscout* that doesn't yet support remote overrides.   
    **Solution:** Follow the [Remote Configuration](remote-config.md) documentation.
 3. **`Error: {“status”:401,”message”:”Unauthorized”,”description”:Invalid\\/Missing”}`** You might see this in iOS Shortcuts.  This is caused by having an incorrect `API_SECRET` in the shortcut.  
     **Solution:** Double check the `API_SECRET` is correct and that there are no spaces at the end.
-4. **`Error: APNs delivery failed: InvalidProviderToken`** You might see this in either &nbsp;<span translate="no">Nightscout</span>&nbsp; or Shortcuts.  This is caused because your `LOOP_APNS_KEY_ID` and `LOOP_DEVELOPER_TEAM_ID` are swapped in *Heroku*.   
+4. **`Error: APNs delivery failed: InvalidProviderToken`** You might see this in either *Nightscout* or Shortcuts.  This is caused because your `LOOP_APNS_KEY_ID` and `LOOP_DEVELOPER_TEAM_ID` are swapped in *Heroku*.   
    **Solution:** Double check what's listed in your *Apple Developer Account* and compare it to the config variables in *Heroku*. Your `Team_ID` is next to your name in the top right corner.  The other code is your `Key_ID`. Get the IDs in the correct location in *Heroku* to resolve the error.

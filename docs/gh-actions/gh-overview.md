@@ -1,7 +1,7 @@
 ## Build with a Browser
 
 * <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
-* The app is then installed remotely on the phone using <span translate="no">TestFlight</span>
+* The app is then installed remotely on the phone using *TestFlight*
 
 ### Advantages of Building with a Browser
 
