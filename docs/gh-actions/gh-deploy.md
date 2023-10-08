@@ -2,9 +2,9 @@
 
 This is only available with&nbsp;<span translate="no">Loop 3</span>.
 
-**You must build *Loop* every 90 days when you use this method.**
+**You must build&nbsp;_<span translate="no">Loop</span>_&nbsp;every 90 days when you use this method.**
 
-After [building *Loop* using a browser](../gh-actions/gh-first-time.md#build-loop), you are ready to install on as many phones as you and your family members need.
+After [building&nbsp;_<span translate="no">Loop</span>_&nbsp;using a browser](../gh-actions/gh-first-time.md#build-loop), you are ready to install on as many phones as you and your family members need.
 
 * If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 
@@ -40,17 +40,17 @@ The first time you use *TestFlight* on any phone associated with a given email, 
 ![redeem the code from email in testflight](img/testflight-redeem-code.gif){width="300"}
 {align="center"}
 
-If you already have the *Loop* app on the phone, you'll see the warning about possible loss of data. Don't worry, all your settings remain. Go ahead with the installation.
+If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the phone, you'll see the warning about possible loss of data. Don't worry, all your settings remain. Go ahead with the installation.
 
 ### Subsequent Times on Phone
 
-* Open *TestFlight* and find the name you used for your *Loop* app in the [Create *Loop* App in App Store Connect](../gh-actions/gh-first-time.md#create-loop-app-in-app-store-connect) step
+* Open *TestFlight* and find the name you used for your&nbsp;_<span translate="no">Loop</span>_&nbsp;app in the [Create *Loop* App in App Store Connect](../gh-actions/gh-first-time.md#create-loop-app-in-app-store-connect) step
 * Tap on Install
-    * If you already have *Loop* installed on this phone, you will be warned that the app already exists on your phone and that you might lose the app's data.
+    * If you already have&nbsp;_<span translate="no">Loop</span>_&nbsp;installed on this phone, you will be warned that the app already exists on your phone and that you might lose the app's data.
     * Click Install again (your pump connection and all your data will be fine)
 * Choose Open
-* Make sure the *Loop* app is operating as expected
-* If you are building *Loop* 3.x over *Loop* 2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
+* Make sure the&nbsp;_<span translate="no">Loop</span>_&nbsp;app is operating as expected
+* If you are building&nbsp;_<span translate="no">Loop</span>_&nbsp;3.x over&nbsp;_<span translate="no">Loop</span>_&nbsp;2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
 
 ![install Loop from TestFlight](img/testflight-install-loop.gif){width="300"}
 {align="center"}
@@ -94,7 +94,7 @@ If you tap on the bottom row that says `Previous Builds`, you can view and choos
 
 ## *TestFlight* for a Child
 
-The adult (Apple Developer Account owner) can log into Media & Purchase (see steps below) without affecting the child *Apple* ID associated with a phone (and thus their health records used by *Loop*). After the adult installs or updates the app using *TestFlight*, they probably should reverse those steps to remove their credentials from Media & Purchase.
+The adult (Apple Developer Account owner) can log into Media & Purchase (see steps below) without affecting the child *Apple* ID associated with a phone (and thus their health records used by&nbsp;_<span translate="no">Loop</span>_). After the adult installs or updates the app using *TestFlight*, they probably should reverse those steps to remove their credentials from Media & Purchase.
 
 Media & Purchase affects access to the App Store, Books, Music and Podcasts.
 
@@ -112,7 +112,7 @@ On the Child phone:
 
 ## Change the App Store Connect Name
 
-Suppose you really don't like the name you picked initially for the *Loop* app that shows up in the *TestFlight* app.
+Suppose you really don't like the name you picked initially for the&nbsp;_<span translate="no">Loop</span>_&nbsp;app that shows up in the *TestFlight* app.
 
 You can change it.
 

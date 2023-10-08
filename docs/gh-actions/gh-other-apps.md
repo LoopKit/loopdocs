@@ -1,6 +1,6 @@
 ## Using *GitHub* Browser Build Method to Build Other Apps
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to *Loop* are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
+Once Loop 3 was released with the ability to build using a browser, a lot of other repositories in the DIY universe began to add the same feature. **Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in that app's repository and open it in a browser. The instruction for that apps should be located in that file.
 
 The same technique is used and the same six Secrets are applied to each repository. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 

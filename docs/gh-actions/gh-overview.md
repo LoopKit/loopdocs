@@ -20,7 +20,7 @@
     * With the next release, which includes automatic builds, this should not be an issue
 * After the&nbsp;<span translate="no">GitHub Build</span>&nbsp;starts, the process takes about an hour to complete
     * You will receive an email indicating success (or failure)
-    * The *Loop* app appears in the *TestFlight* app on the phone, where it can be installed in seconds
+    * The&nbsp;_<span translate="no">Loop</span>_&nbsp;app appears in the *TestFlight* app on the phone, where it can be installed in seconds
 * Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
@@ -30,7 +30,7 @@
 
 * **Loop 3 requires iOS 15.1 or higher on the phone.**
 
-To build the *Loop* app using a browser, you need:
+To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, you need:
 
 1. Free *GitHub* account (instructions included in [Configure to use Browser](gh-first-time.md))
 1. [*Apple* Developer Membership](../build/apple-developer.md)
@@ -40,7 +40,7 @@ To build the *Loop* app using a browser, you need:
     * If building for a child (age depends on the country), review this section:
         * [Install *TestFlight* Loop for Child](../gh-actions/gh-deploy.md#testflightfor-child)
 
-Once you have the *Loop* app in TestFlight, you need:
+Once you have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app in *TestFlight*, you need:
 
 1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/pump.md)

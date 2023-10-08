@@ -63,14 +63,14 @@ A build script is available to assist in building *Loop Caregiver*. This should 
 - The script displays the directions for downloading and building.    
     Please read them carefully.
 
-!!! warning "Not *Loop*"
+!!! warning "Not&nbsp;_<span translate="no">Loop</span>_"
     The output you see in the Terminal may look very similar to when you build *Loop 3* from a script.
     
-    It is pulling down a clone from a different location (*LoopKit/LoopCaregiver*). It uses some modules from *Loop*. The target and scheme are automatically selected for *Loop Caregiver*  and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (*LoopKit/LoopCaregiver*). It uses some modules from&nbsp;_<span translate="no">Loop</span>_. The target and scheme are automatically selected for *Loop Caregiver*  and if you follow directions for a paid Developer account, the signing is automatic.
 
 ## Use *Loop Caregiver*
 
-Some limited directions for using the *Loop Caregiver* app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of  *Loop*.
+Some limited directions for using the *Loop Caregiver* app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of &nbsp;_<span translate="no">Loop</span>_.
 
 ### *Loop Caregiver* Add Looper
 
@@ -79,7 +79,7 @@ You must add a Looper to continue with *Loop Caregiver* as shown in the graphic 
 ![add Looper to Loop Caregiver](img/lcg-add-looper.png){width="300"}
 {align="center"}
 
-* On the *Loop* phone:
+* On the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone:
     * Tap on `Loop -> Settings -> Services -> Nightscout`
     * Tap on the `One-Time-Password` row to see the QR code  
     !!! tip "Pro-tip"
@@ -99,7 +99,7 @@ You can add additional more people under settings. (**Loop Caregiver* * can moni
 
 ### *Loop Caregiver* Main Screen
 
-* *Loop Caregiver* * uses a lot of features from *Loop* with some Nightscout-like features in the Timeline.
+* *Loop Caregiver* * uses a lot of features from&nbsp;_<span translate="no">Loop</span>_&nbsp;with some Nightscout-like features in the Timeline.
 
 The Timeline:
 
@@ -115,11 +115,11 @@ The Timeline:
 You can also use the *Loop Caregiver* -> `Settings` screen to modify:
 
 * Units used for glucose display: `mg/dL` or `mmol/L`
-* Include the *Loop* forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
+* Include the&nbsp;_<span translate="no">Loop</span>_&nbsp;forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
 ### Issue Remote Commands with *Loop Caregiver*
 
-You issue override, carb, and bolus commands using a toolbar similar to the one seen on *Loop*. In the example graphic above, the carb and bolus entries visible were issued remotely.
+You issue override, carb, and bolus commands using a toolbar similar to the one seen on&nbsp;_<span translate="no">Loop</span>_. In the example graphic above, the carb and bolus entries visible were issued remotely.
 
 Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the *Loop Caregiver* &#39;s phone.
 
