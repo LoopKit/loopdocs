@@ -96,7 +96,7 @@ There are other Authentication apps available. Here’s a few options that you c
    **Answer**: No. If you support multiple people, you can use the one APNs key in each of their *Nightscout* sites.
 
 1. **How can I tell if it worked?**  
-   **Answer**: You should see your override pill in *Nightscout*, with the **NEXT** *Loop* cycle, reflecting that the desired remote action took place. If you are near the *Loop* phone, you should see the new override within less than 30 seconds or so.
+   **Answer**: You should see your override pill in *Nightscout*, with the **NEXT**&nbsp;_<span translate="no">Loop</span>_&nbsp;cycle, reflecting that the desired remote action took place. If you are near the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone, you should see the new override within less than 30 seconds or so.
 
 ## FAQs on Remote Overrides
 
@@ -104,22 +104,22 @@ Don't forget to read [*Loopdocs*: Overrides](../operation/features/overrides.md)
 
 For remote overrides in particular:
 
-1. **Can I set a different override in *Nighscout* than I have programmed into *Loop* app?**  
+1. **Can I set a different override in *Nighscout* than I have programmed into&nbsp;_<span translate="no">Loop</span>_&nbsp;app?**  
    **Answer**: No. You will only be able to enact override presets already programmed into the Loop app.
 
-1. **If I didn't start the override in *Nightscout* (it was started in *Loop* itself), can I still use *Nightscout* to cancel it?**  
-   **Answer**: Yes. You can cancel an override set in *Loop* with a Nightscout-set cancel "temporary override" command in the careportal.
+1. **If I didn't start the override in *Nightscout* (it was started in&nbsp;_<span translate="no">Loop</span>_&nbsp;itself), can I still use *Nightscout* to cancel it?**  
+   **Answer**: Yes. You can cancel an override set in&nbsp;_<span translate="no">Loop</span>_&nbsp;with a Nightscout-set cancel "temporary override" command in the careportal.
 
-1. **Can I replace an override set in *Loop* with an override set in *Nightscout*?**  
+1. **Can I replace an override set in&nbsp;_<span translate="no">Loop</span>_&nbsp;with an override set in *Nightscout*?**  
    **Answer**: Yes.
 
 1. **Can I see on *Nightscout* when a temporary override has been set using the looper’s phone?**  
    **Answer**: Yes. There will be a grey bar with the name of the override noted and the *Loop pill* will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the *pill* as your best guide.
 
 1. **Can a looper cancel a remote override**?  
-   **Answer**: Yes. They can tap the heart icon <font color="blue">:fontawesome-solid-heart-pulse:</font> in *Loop* so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.
+   **Answer**: Yes. They can tap the heart icon <font color="blue">:fontawesome-solid-heart-pulse:</font> in&nbsp;_<span translate="no">Loop</span>_&nbsp;so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.
 
-1. **I set a remote override in *Nightscout* but the Looper tapped the heart symbol <font color="blue">:fontawesome-solid-heart-pulse:</font> in the *Loop* app, so the override turned off. Will the override get reinstated  the next time *Loop* completes with internet access?**  
+1. **I set a remote override in *Nightscout* but the Looper tapped the heart symbol <font color="blue">:fontawesome-solid-heart-pulse:</font> in the *Loop* app, so the override turned off. Will the override get reinstated  the next time&nbsp;_<span translate="no">Loop</span>_&nbsp;completes with internet access?**  
    **Answer**: No. The *APN* is only sent once. You can set the remote override again if need be.
 
 1. **Can I schedule a remote override ahead of time using Nightscout?**    
@@ -162,7 +162,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
         * _<span translate="no">Loop</span>_&nbsp;will initiate a percentage of the recommended dose when it receives the carbs remote command
         * Your bolus will be accepted and take place in addition to an automatic boluses or be rejected because a bolus is already in progress
     
-    Typically, sending a remote carb entry alone is sufficient for *Loop* to know about the carbs and begin to dose for them.
+    Typically, sending a remote carb entry alone is sufficient for&nbsp;_<span translate="no">Loop</span>_&nbsp;to know about the carbs and begin to dose for them.
     
     If you really want to both bolus for carbs and enter carbs, then do it in that order.
     
@@ -189,7 +189,7 @@ Pay particular attention to these entries in the `ENABLE` line: `override` `care
 You'll also need to have your [site authenticated](update-user.md#authenticate-site) so that your &nbsp;<span translate="no">Careportal</span>&nbsp; is active to send remote overrides . 
 
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
-Within there, you will find all your *Loop* override presets already loaded for you.
+Within there, you will find all your&nbsp;_<span translate="no">Loop</span>_&nbsp;override presets already loaded for you.
 
 #### Start and End Remote Override
 
@@ -217,13 +217,13 @@ Open your Nightscout site in a browser or app.
 
 Note that Loop will honor both the current OTP code and the one that just expired.
 
-If the Looper is with you, you can see the notification on their phone. You can see the entry on the *Loop* carbohydrate or the insulin displays to see if it went through.
+If the Looper is with you, you can see the notification on their phone. You can see the entry on the&nbsp;_<span translate="no">Loop</span>_&nbsp;carbohydrate or the insulin displays to see if it went through.
 
 If the Looper is not with you, you should see the result in the *Nightscout* dashboard within 5 minutes.
 
 ### Shortcuts
 
-If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate *Loop* overrides with *Nightscout*.
+If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate&nbsp;_<span translate="no">Loop</span>_&nbsp;overrides with *Nightscout*.
 
 !!! important "Important Note"
     Before you click on the download file below...save yourself some trouble.
@@ -239,7 +239,7 @@ If you want to make your life SUPER AMAZING, check out using the iPhone's Shortc
 
 Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser on iPhone):
 
-[Comprehensive *Loop* Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut)
+[Comprehensive&nbsp;_<span translate="no">Loop</span>_&nbsp;Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut)
  *includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.*
 
 And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
@@ -254,8 +254,8 @@ And if you want to save one click to get to these one functions more directly: t
     After the download finishes, tap the button marked `AA` near your *Safari* address bar and tap `Downloads` (downloads)  to find and open the downloaded Shortcut.
     
     Wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut
-3. When you enter your *Nightscout* URL in &nbsp;<span>the `URL` field</span>&nbsp; of the *Loop* shortcut setup, make sure you don't include a &nbsp;<span>trailing `/`</span>, or the API calls to *Heroku* will error out.
-4. When a remote override is set properly, you'll see an `ok` message displayed. If there is an error, you'll see an error message. Most errors will be that you have an `API_SECRET` wrong (make sure there isn't a space at the end of your `API_SECRET` that you don't see) or you failed to do the steps to setup *Nightscout* and update your *Loop* app as described in steps 1-3 above.
+3. When you enter your *Nightscout* URL in &nbsp;<span>the `URL` field</span>&nbsp; of the&nbsp;_<span translate="no">Loop</span>_&nbsp;shortcut setup, make sure you don't include a &nbsp;<span>trailing `/`</span>, or the API calls to *Heroku* will error out.
+4. When a remote override is set properly, you'll see an `ok` message displayed. If there is an error, you'll see an error message. Most errors will be that you have an `API_SECRET` wrong (make sure there isn't a space at the end of your `API_SECRET` that you don't see) or you failed to do the steps to setup *Nightscout* and update your&nbsp;_<span translate="no">Loop</span>_&nbsp;app as described in steps 1-3 above.
 5. You can absolutely customize these bits and pieces within the shortcut. Change the text messages, and change the links... It is totally up to you.
 
 ### *IFTTT*
