@@ -29,7 +29,7 @@ After building the&nbsp;_<span translate="no">Loop</span>_&nbsp;app:
 
 * You enter your personal therapy settings (e.g., carbohydrate ratio, basal rates, insulin sensitivity)
 * You enter the carbs you eat
-*&nbsp;_<span translate="no">Loop</span>_&nbsp;uses this information, your insulin on board (IOB) and glucose data, to determine how much insulin you need to bring your blood glucose within the target range you set
+* &nbsp;_<span translate="no">Loop</span>_&nbsp;uses this information, your insulin on board (IOB) and glucose data, to determine how much insulin you need to bring your blood glucose within the target range you set
 * You can choose to have&nbsp;_<span translate="no">Loop</span>_&nbsp;automatically control insulin dosing (closed-loop mode) or have&nbsp;_<span translate="no">Loop</span>_&nbsp;recommend insulin that you manually accept or modify (open-loop mode)
 
 ![Loop main display on phone](img/phone-loop-3.svg){width="300"}

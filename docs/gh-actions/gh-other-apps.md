@@ -35,13 +35,10 @@ The same technique is used and the same six Secrets are applied to each reposito
     * *Loop Caregiver*, expect the branch to be "dev"
     * <span translate="no">Loop Follow</span>, expect the branch to be "main"
 
-
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| *Loop Caregiver* | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [*LoopDocs*: 
-*Loop Caregiver*](../nightscout/loop-caregiver.md) |
-|Loop Follow | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [Loop Follow](https://github.com/loopandlearn/LoopFollow#loop-follow)|
-
+| *Loop Caregiver* | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [*LoopDocs*: *Loop Caregiver*](../nightscout/loop-caregiver.md) |
+| *Loop Follow* | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [*Loop Follow*](https://github.com/loopandlearn/LoopFollow#loop-follow)|
 
 ## Configure Secrets for this App
 
@@ -248,8 +245,8 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [GitHub First-Time: Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight)
 
-## Deployment
+## Install on Phone
 
-The [GitHub Deployment](gh-deploy.md) walks you through the steps to deploy to a phone. When going through those steps, replace your App Name for Loop. Everything else is the same.
+The [Install on Phone](gh-deploy.md) walks you through the steps to install the app to a phone. When going through those steps, replace your App Name for&nbsp;_<span translate="no">Loop</span>_. Everything else is the same.
 
 

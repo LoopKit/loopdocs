@@ -1,6 +1,6 @@
 ## General Installation Information
 
-This is only available with&nbsp;<span translate="no">Loop 3</span>.
+This is only available with&nbsp;_<span translate="no">Loop 3</span>_.
 
 **You must build&nbsp;_<span translate="no">Loop</span>_&nbsp;every 90 days when you use this method.**
 
