@@ -3,7 +3,7 @@ hide:
     - navigation
 ---
 
-## Welcome to *Loop*
+## Welcome to&nbsp;_<span translate="no">Loop</span>_
 
 Welcome to the *LoopDocs* website where you can learn about&nbsp;_<span translate="no">Loop</span>_.
 
@@ -21,7 +21,7 @@ Once you are using the app, you should regularly follow one or more support foru
 
 This website is updated regularly to keep pace with&nbsp;_<span translate="no">Loop</span>_&nbsp;developments and *Apple* releases.
 
-## What is *Loop*?
+## What is&nbsp;_<span translate="no">Loop</span>_?
 
 _<span translate="no">Loop</span>_&nbsp;is an app you build and load on an iPhone.
 
@@ -35,7 +35,7 @@ After building the&nbsp;_<span translate="no">Loop</span>_&nbsp;app:
 ![Loop main display on phone](img/phone-loop-3.svg){width="300"}
 ![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
 
-### What is *Loop* Video
+### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
 If you have never used&nbsp;_<span translate="no">Loop</span>_, click on links below for an introduction.
 
