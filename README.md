@@ -156,9 +156,9 @@ There are still some **issues**, where text is translated whereas it should not,
 
 To improve the automatic translation quality, please follow these rules when writing or updating the documentation. This will provide *Google Translate* with more context and enhance translation accuracy.
 
-#### Rules
+#### Suggestions
 
-Updates to Eric's comments (from Marion)
+Updates to Eric's suggestions (from Marion)
 
 Really - just saying the same thing in different words.
 
@@ -193,12 +193,20 @@ This is in the middle of a sentence that includes&nbsp;<span translate="no">Word
 ```
 If the word is at the end of a line or has other punctuation, the `&nbsp;` can be skipped:
 
-### All about&nbsp;<span translate="no">Word or Phrase</span>
+### All about&nbsp;<span translate="no">Word</span>
 
-This ability to build &nbsp;<span translate="no">Loop</span>, from both a browser and with Mac-Xcode, is wonderful.
+This ability to build&nbsp;<span translate="no">Loop</span>, from both a browser and with Mac-Xcode, is wonderful.
 ```
 
-These words / phrases **do not need** no-translate tags, however, they are typically rendered in italics anyway:
+Be warned that if `&nbsp;` is part of the text in a header, the automatic link doesn't acknowledge the space. The link above would be `#all-aboutword`, not `#all-about-word`.
+
+If you want italic font with `span`, I choose to use underscore instead of asterick to make the word show up as italic font because I think that helps with clarity (opinion only):
+```
+This ability to build&nbsp;_<span translate="no">Loop</span>_, from both a browser and with Mac-Xcode, is wonderful.
+```
+
+
+These words / phrases **do not need** no-translate tags, however, they are typically rendered in italics (use astericks on either side):
 
 * Xcode
 * Mac-Xcode
@@ -209,6 +217,12 @@ These words **do need** no-translate tags (most of the time):
 * Apple
 * Loop
 * LoopKit/Loop
+
+Look out for Loop showing up as buckle, at least in French and Spanish, in translations. That indicates `span` must be used, with the `&nbsp;` required if there is no punctuation mark. Once again, using underscore instead of asterisk in concert with `span` is a preference:
+
+```
+&nbsp;_<span translate="no">Loop</span>_&nbsp;
+```
 
 Common words like `Secrets` that will show up on `GitHub` for Building with Browser should be enclosed in `code` so tooltips will work and the word will be highlighted as important.
 

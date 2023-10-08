@@ -11,20 +11,20 @@
 !!! warning "Modules vs Submodule"
     This page has instructions to set up your own copy for the Modules, otherwise known as submodules, associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.
 
-    Each Module has its own&nbsp;<span translate="no">GitHub repository</span>&nbsp;and you will be working with your copy of that Module at https://github.com/username/Module, where username is your username.
+    Each Module has its own *GitHub* <code>repository</code>;and you will be working with your copy of that Module at https://github.com/username/Module, where username is your username.
 
 !!! warning "Copy vs&nbsp;<span translate="no">Fork</span>"
-    We use the word "copy" on this page but when you look at&nbsp;<span translate="no">GitHub</span>, you will see the word&nbsp;"<span translate="no">Fork</span>".
+    We use the word "copy" on this page but when you look at *GitHub*, you will see the word&nbsp;"<span translate="no">Fork</span>".
 
 !!! question "What is a SHA-1?"
     SHA-1 means Secure Hash Algorithm 1; which is used to generate an alphanumeric code.
 
-    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell&nbsp;<span translate="no">GitHub</span>&nbsp;a specific change that you want applied. These work for any compatible copy taken from the original&nbsp;<span translate="no">GitHub repository</span>.
+    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied. These work for any compatible copy taken from the original&nbsp;<span translate="no">GitHub repository</span>.
     
 ### Do Not Make a Pull Request to Original Copy
 
 !!! important "Ignore&nbsp;<span translate="no">Compare & pull request</span>&nbsp;Prompts"
-    Please do not click on boxes that&nbsp;<span translate="no">GitHub</span>&nbsp;might show you that ask if you want to**&nbsp;<span translate="no">Compare & pull request</span>**.
+    Please do not click on boxes that *GitHub* might show you that ask if you want to**&nbsp;<span translate="no">Compare & pull request</span>**.
     
     This would be an attempt to merge changes from your copy back to the original version that everyone uses. These changes are for you only. Ignore those prompts.
 
@@ -35,7 +35,7 @@
         * Typically 1 or 2 Modules
     * Ten minutes to add patch lines to your build_loop.yml file
     * One minute to start the build
-    * An hour before the build shows up on your phone in&nbsp;<span translate="no">TestFlight</span>
+    * An hour before the build shows up on your phone in *TestFlight*
 
 !!! abstract "Summary"
     * Prepare Customization (One Time):
@@ -46,7 +46,7 @@
         * It is a good idea to test each customization as soon as you install the new build on your phone
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code-customization.md) page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list)
-    * <span translate="no">GitHub</span>&nbsp;(each Module):
+    * *GitHub* (each Module):
         1. Copy Module (if needed) - this is your copy where you will make changes
         1. Sync the Module (if needed)
         1. Make the desired modification(s) using the pencil tool
@@ -57,7 +57,7 @@
         1. Add customization lines to the file
         1. Save your changes
         1. Action 4: Build Loop
-    * Phone: Install with&nbsp;<span translate="no">TestFlight</span>
+    * Phone: Install with *TestFlight*
 
 !!! question "FAQs"
     - **Do I need a Mac computer?** No. This can be done on any browser.
@@ -130,9 +130,9 @@ Choose your link:
 
 ### New Copy
 
-If you want a modification that uses a particular Module, you must make a copy of that module to your account in&nbsp;<span translate="no">GitHub</span>. You will repeat the Copy and Modify steps for each module.
+If you want a modification that uses a particular Module, you must make a copy of that module to your account in *GitHub*. You will repeat the Copy and Modify steps for each module.
 
-1. Log into your&nbsp;<span translate="no">GitHub</span>&nbsp;account
+1. Log into your *GitHub* account
 1. Right click (or control click) on the URL in the [Module Table](#module-table)
 1. This opens a new browser tab at the URL of the module you need to copy
 1. Click on&nbsp;<span translate="no">Fork</span>, your copy will show up in the browser
@@ -187,9 +187,9 @@ The GIF showing the creation of one customization is shown below. Please review 
 You will be using the "pencil" tool in the browser display for your copy.
 
 !!! question "Are there detailed instructions?"
-    For more information about editing with&nbsp;<span translate="no">GitHub</span>:
+    For more information about editing with *GitHub*:
 
-    * [<span translate="no">GitHub</span>&nbsp;Docs: Editing Files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
+    * [*GitHub* Docs: Editing Files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
 
 The bullets below go with Frame 1 of the [GIF](#example-gif) above:
 
@@ -266,10 +266,10 @@ curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --dire
 where:
 
 * `curl`&nbsp;means copy from URL
-* username is your&nbsp;<span translate="no">GitHub</span>&nbsp;username
+* username is your *GitHub* username
 * Module is where you made the customization (Module is in multiple places)
 * SHA-1 is the full identifier for the desired change; there is a copy button to make this easy
-* adding&nbsp;`.patch`&nbsp;after the SHA-1 informs&nbsp;<span translate="no">GitHub</span>&nbsp;to format that code change so it can be applied to your copy
+* adding&nbsp;`.patch`&nbsp;after the SHA-1 informs *GitHub* to format that code change so it can be applied to your copy
 * the final&nbsp;<code> --directory=Module</code>&nbsp;is critical to apply the customization to the correct Module
 
 To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/username/Module/commit/SHA-1`.
@@ -336,7 +336,7 @@ At the top of the display, click on&nbsp;<span translate="no">Actions</span>.
 
 Wait about 2 minutes before walking away to make sure there are no errors. If you get an error, then look for the first "did not apply" error message and fix the customization right before that line.
 
-In about 1 hour, your customized app will be available for installation on your phone via&nbsp;<span translate="no">TestFlight</span>.
+In about 1 hour, your customized app will be available for installation on your phone via *TestFlight*.
 
 ## Special Cases
 
@@ -349,7 +349,7 @@ What if you already have a copy of one of the modules?
 * If you know this is a copy you do not care about, you can delete the repository.
 * If you care about this copy, you are probably experienced enough to know how to solve the issue.
 
-Instructions to delete a repository are found at&nbsp;[<span translate="no">GitHub</span>&nbsp;Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+Instructions to delete a repository are found at&nbsp;[*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 
 Once deleted, go to [Create Your Copy for Selected Module](#create-your-copy-for-selected-module).
 
@@ -357,10 +357,10 @@ Once deleted, go to [Create Your Copy for Selected Module](#create-your-copy-for
 
 ### <span translate="no">LoopWorkspace</span>
 
-The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrella organization holding all the pieces needed to build the&nbsp;<span translate="no">Loop</span>&nbsp;app. It provides a list of pointers to a specific version for each of the Modules used in the workspace.
+The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrella organization holding all the pieces needed to build the *Loop* app. It provides a list of pointers to a specific version for each of the Modules used in the workspace.
 
 * <span translate="no">commit</span>: a specific change to the code identified by the SHA-1; the most recent one indicates the most recent version of the code
 * <span translate="no">workspace</span>: a grouping of several repositories (Modules) into a complete package
 * <span translate="no">LoopWorkspace</span>: includes a list of the specific SHA-1 for each Module needed for the app
 
-You are telling&nbsp;<span translate="no">GitHub</span>&nbsp;to apply specific customizations when it builds your app for you. It makes a fresh copy of all the code needed, applies your specific customizations and then starts the build.
+You are telling *GitHub* to apply specific customizations when it builds your app for you. It makes a fresh copy of all the code needed, applies your specific customizations and then starts the build.

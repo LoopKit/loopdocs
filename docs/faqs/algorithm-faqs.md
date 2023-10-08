@@ -46,7 +46,7 @@ IOB is plotted on the [Active Insulin Chart](../loop-3/displays-v3.md#active-ins
 
 ## How do Delivery Limits Affect Automatic Dosing?
 
-With each cycle, <span translate="no">Loop</span>&nbsp;generates a glucose prediction and a recommended dose (positive or negative) to bring you to your correction range.
+With each cycle, _<span translate="no">Loop</span>_&nbsp;generates a glucose prediction and a recommended dose (positive or negative) to bring you to your correction range.
 
 * The nearest 3 hours has more influence on the recommendation than the later 3 hours, but the entire 6 hours is considered
 * The automated response to a negative recommended dose is to reduce basal rate, typically to zero

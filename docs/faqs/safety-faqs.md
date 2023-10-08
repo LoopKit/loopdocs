@@ -13,9 +13,9 @@ If you do not understand the components displayed in the graphic below, please s
 
 If you configured the app with closed-loop enabled:
 
-* Once carbohydrates are entered into&nbsp;<span translate="no">Loop</span>, the algorithm will begin to dose insulin to anticipate those carbs
+* Once carbohydrates are entered into&nbsp;_<span translate="no">Loop</span>_, the algorithm will begin to dose insulin to anticipate those carbs
 
-If you entered carbs and then changed your mind on the amount or the time at which they were eaten, use these [instructions](../operation/features/carbs.md#edit-meals) to delete or edit them. This will make&nbsp;<span translate="no">Loop</span>&nbsp;better able to predict blood glucose and adjust insulin delivery appropriately.
+If you entered carbs and then changed your mind on the amount or the time at which they were eaten, use these [instructions](../operation/features/carbs.md#edit-meals) to delete or edit them. This will make&nbsp;_<span translate="no">Loop</span>_&nbsp;better able to predict blood glucose and adjust insulin delivery appropriately.
 
 ## How to Cancel a Bolus
 
@@ -25,7 +25,7 @@ Once a bolus starts, the progress of that bolus appears in the [HUD Status Row](
 
 ## Understand Delivery Limits
 
-With each cycle, <span translate="no">Loop</span>&nbsp;generates a glucose prediction and a recommended dose (positive or negative) to bring you to your correction range.
+With each cycle, _<span translate="no">Loop</span>_&nbsp;generates a glucose prediction and a recommended dose (positive or negative) to bring you to your correction range.
 
 * The automated response to a positive recommended dose depends on your Dosing Strategy and is adjusted by your Delivery Limits
 
@@ -33,9 +33,9 @@ For more information, please read [How do Delivery Limits Affect Automatic Dosin
 
 ## Health app permissions
 
-For older versions of&nbsp;<span translate="no">Loop</span>, or if you customized&nbsp;<span translate="no">Loop 3</span>&nbsp;to read carbohydrates from third-party apps, be aware that you cannot edit those entries inside the&nbsp;<span translate="no">Loop</span>&nbsp;app.
+For older versions of&nbsp;_<span translate="no">Loop</span>_, or if you customized&nbsp;<span translate="no">Loop 3</span>&nbsp;to read carbohydrates from third-party apps, be aware that you cannot edit those entries inside the&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
 
-If you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, <span translate="no">Loop</span>&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
+If you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, _<span translate="no">Loop</span>_&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
 
 * <span translate="no">Loop 3</span>: review [Customization: Build Time Features](../build/code-customization.md#build-time-features)
 * <span translate="no">Loop 2</span>: Check your [Health](../build/health.md#loop-permissions) permissions and review .

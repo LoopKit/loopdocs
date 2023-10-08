@@ -49,12 +49,12 @@ The simulators for the Pump and CGM for dev show a new format when first selecte
 
 The dev branch has several updates merged that make it easier to find errors in configuration and that make the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; automatic.
 
-Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for &nbsp;<span translate="no">Loop</span>&nbsp; will:
+Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for&nbsp;_<span translate="no">Loop</span>_&nbsp;will:
 
 * Automatically build a new version once a month, with automatic update included
 * Automatically update your fork of LoopWorkspace once a week if updates are available
 
-It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date &nbsp;<span translate="no">Loop</span>&nbsp; in their &nbsp;<span translate="no">TestFlight</span>&nbsp; app.
+It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;_<span translate="no">Loop</span>_&nbsp;in their  *TestFlight*  app.
 
 For users of the dev branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
 

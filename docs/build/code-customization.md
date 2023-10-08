@@ -170,7 +170,7 @@ You can customize chart display settings if you want. The original lines of code
 
 The instructions on this page were originally prepared for the Mac-Xcode method. 
 
-The Build with Browser method instructions are similar, but each one is used edit a file using a browser in your&nbsp;<span translate="no">GitHub</span>&nbsp;account as instructed on the [Customize with Browser](../gh-actions/gh-customize.md) page.
+The Build with Browser method instructions are similar, but each one is used edit a file using a browser in your *GitHub* account as instructed on the [Customize with Browser](../gh-actions/gh-customize.md) page.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for ( ++cmd+l++ # ) the line number. 
 

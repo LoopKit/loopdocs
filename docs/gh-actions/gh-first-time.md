@@ -941,10 +941,10 @@ Refer to the graphic below for the first four steps:
     * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
-## Set Up Users and Access (TestFlight)
+## Set Up Users and Access (*TestFlight*)
 
 ??? abstract "Section Summary (click to open/close)"
-    For each Apple ID (person) who needs access to your TestFlight builds:
+    For each Apple ID (person) who needs access to your *TestFlight* builds:
     
     * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect
     * Add them to your *TestFlight* Internal Testing group for the Loop app
