@@ -62,9 +62,9 @@ Let $\mathit{dose}$ be the amount the app thinks you need for this cycle before 
 
 ### Manual Dose
 
-In the case where you are manually requesting a bolus recommendation by using the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen.
+In this case, where you are manually requesting a bolus recommendation by using the double orange triangles (circled below) in the toolbar at the bottom of the Loop status screen, only the $\mathit{maximumBolus}$ Delivery Limit is considered.
 
-![Loop toolbar](../../operation/features/img/toolbar-bolus.svg){width="300"}
+![Loop toolbar](../operation/features/img/toolbar-bolus.svg){width="300"}
 {align="center"}
 
 * If $\mathit{dose}$ > $\mathit{maximumBolus}$: app recommends $\mathit{maximumBolus}$
@@ -72,9 +72,11 @@ In the case where you are manually requesting a bolus recommendation by using th
 
 ### Automatic Dose
 
-Because this will be an automatic dose, the app will not provide a dose that would exceed an IOB of 2 times the $\mathit{maximumBolus}$.
+Because this will be an automatic dose, the app will not provide a dose that would exceed an IOB of 2 times the $\mathit{maximumBolus}$. The term automatic dose refers to insulin the app automatically delivers above your scheduled basal rate.
 
-$$ autoDose = minimum (dose, 2*maximumBolus - currentIOB) $$
+$$ autoDose = minimum (dose, {2*maximumBolus} - currentIOB) $$
+
+Note that a manual dose can exceed $\mathit{autoDose}$. There will be no warning if this happens. But no additional automatic dosing will happen until IOB is below $\mathit{2*maximumBolus}$. As long as the prediction is above the correction range, scheduled basal continues regardless of IOB.
 
 #### Automatic Bolus: Constant Partial Application Factor
 
@@ -92,7 +94,7 @@ When Glucose Based Partial Application Factor is enabled, the application factor
 
 #### Temp Basal Only
 
-This automatic method uses both Delivery Limits: $\mathit{maximumBasalRate}$ and $\mathit{maximumBolus}$. As explained above, the $\mathit{maximumBolus}$ is used to calculate [$\mathit{autoDose}$](#automatic-recommendation).
+This automatic method uses both Delivery Limits: $\mathit{maximumBasalRate}$ and $\mathit{maximumBolus}$. As explained above, the $\mathit{maximumBolus}$ is used to calculate [$\mathit{autoDose}$](#automatic-dose).
 
 The desired dose, $\mathit{autoDose}$, is multiplied by two (to get an hourly rate) and then added to the scheduled basal rate to determine the desired temporary basal rate ($\mathit{BR_temp}$) with a duration of half-an-hour to provide that amount of insulin. This calculated $\mathit{BR_temp}$ is compared to $\mathit{maximumBasalRate}$.
 

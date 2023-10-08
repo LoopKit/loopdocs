@@ -207,7 +207,7 @@ nav:
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'version/build-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
-- Nightscout:
+- '<span translate="no">Nightscout<span>':
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new-user.md'
     - 'Nightscout with Loop': 'nightscout/update-user.md'
@@ -217,7 +217,7 @@ nav:
     - 'Remote Configuration': 'nightscout/remote-config.md'
     - 'Remote Commands': 'nightscout/remote-commands.md'
     - 'Remote Errors': 'nightscout/remote-errors.md'
-    - 'Loop Caregiver': 'nightscout/loop-caregiver.md'
+    - '<span translate="no">Loop Caregiver<span>': 'nightscout/loop-caregiver.md'
 - FAQs:
     - 'FAQs Overview': 'faqs/overview-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
