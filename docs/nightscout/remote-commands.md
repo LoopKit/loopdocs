@@ -4,23 +4,23 @@ All remote commands require the configuration steps from [Remote Configuration](
 
 * A new One-Time Password (OTP) is required for each remote command that issues a bolus or adds a carb entry
     * The OTP updates every 30 seconds
-    * Both the sending device and the Looper's phone must have automatic time enabled
+    * Both the sending device and the Loop phone must have automatic time enabled
 * Remote Overrides do not require a One-Time Password (OTP)
-    * There are some versions of &nbsp;<span translate="no">Nightscout</span>&nbsp; that provide a row for entry of an OTP for &nbsp;<span translate="no">Temporary Override</span>&nbsp; in the &nbsp;<span translate="no">Nightscout Careportal</span>
+    * There are some versions of *Nightscout* that provide a row for entry of an OTP for Temporary Override in the *Nightscout* Careportal
     * Leave that row blank
 
-!!! question "Do I have to use &nbsp;<span translate="no">Loop Caregiver</span>?"
+!!! question "Do I have to use *Loop Caregiver* ?"
     There are a number of methods for using remote commands.
 
     Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands.
     
-    If you decide on &nbsp;<span translate="no">Loop Caregiver</span>, review both this page and &nbsp;[<span translate="no">Loop Caregiver</span>](loop-caregiver.md) page.
+    If you decide on *Loop Caregiver* , review both this page and &nbsp;[*Loop Caregiver*](loop-caregiver.md) page.
 
 ## QR Code
 
-On the Looper's phone, &nbsp;<span translate="no">Nightscout</span>&nbsp; must be included under the `Loop` -> Settings -> Services section. Navigate to Services and select &nbsp;<span translate="no">Nightscout</span>. Tap on the One-Time Password row to view the QR code.
+On the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone, *Nightscout* must be included under the `Loop` -> Settings -> Services section. Navigate to Services and select *Nightscout*. Tap on the One-Time Password row to view the QR code.
 
-When you need to configure your authentication method, you can either use a saved QR screenshot or scan the QR on the Looper's phone.
+When you need to configure your authentication method, you can either use a saved QR screenshot or scan the QR on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone.
 
 Options:
 
@@ -38,17 +38,17 @@ While you are on the Settings -> Services -> NightScout screen, notice that the 
 
 You need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
 
-One of the nice features of &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; is that it handles the one-time password (OTP) requirements for you.
+One of the nice features of *Loop Caregiver* is that it handles the one-time password (OTP) requirements for you.
 
-But even if you choose to use &nbsp;<span translate="no">Loop Caregiver</span>, you should configure an authentication app for cases where you don't have access to your &nbsp;<span translate="no">Loop Caregiver</span>&nbsp; phone.
+But even if you choose to use *Loop Caregiver* , you should configure an authentication app for cases where you don't have access to your *Loop Caregiver* phone.
 
 There are several authentication apps that support one-time passwords.
 
 ### <span translate="no">Apple Keychain</span>
 
-If you are using a iPhone or Mac to issue remote commands through a browser or &nbsp;<span translate="no">Nightscout</span>&nbsp; app, you can use the &nbsp;<span translate="no">Apple Keychain</span>&nbsp; which has native support to store passwords and generate one-time passwords. 
+If you are using a iPhone or Mac to issue remote commands through a browser or *Nightscout* app, you can use the &nbsp;<span translate="no">Apple Keychain</span>&nbsp; which has native support to store passwords and generate one-time passwords. 
 
-To setup your &nbsp;<span translate="no">Nightscout</span>&nbsp; credentials in &nbsp;<span translate="no">Apple Keychain</span>:
+To setup your *Nightscout* credentials in &nbsp;<span translate="no">Apple Keychain</span>:
 
 On the Caregivers device (iPhone or Mac):
 
@@ -58,25 +58,25 @@ On the Caregivers device (iPhone or Mac):
     ![add password screen for apple keychain](img/add-password-apple-keychain.png ){width="500"}
     {align="center"}
 
-* You will enter your &nbsp;<span translate="no">Nightscout</span>&nbsp; credentials
-    * Website: Enter a portion of the &nbsp;<span translate="no">Nightscout</span>&nbsp; URL, without the leading “https://”
-    * Username: Enter the full &nbsp;<span translate="no">Nightscout</span>&nbsp; URL including the leading “https://” part
-    * Password: Enter the API_SECRET for the Looper's &nbsp;<span translate="no">Nightscout</span>&nbsp; site
+* You will enter your *Nightscout* credentials
+    * Website: Enter a portion of the *Nightscout* URL, without the leading “https://”
+    * Username: Enter the full *Nightscout* URL including the leading “https://” part
+    * Password: Enter the API_SECRET for the Looper's *Nightscout* site
     * Tap Done
 * Next, you are offered a screen that allows you to set up a `Verification Code`
     * If you need to come back later, you can find that screen again
-    * Go to Apple Settings -> Passwords -> Tap the row with your &nbsp;<span translate="no">Nightscout</span>&nbsp; URL
+    * Go to Apple Settings -> Passwords -> Tap the row with your *Nightscout* URL
 * Tap “Setup Verification Code”
-    * This is where you can scan your QR code from the Looper's phone or the saved QR screenshot
+    * This is where you can scan your QR code from the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone or the saved QR screenshot
     * As soon as the camera reads the QR code, an OTP will begin to appear
-    * If the Looper's phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the Looper's phone and they update at the same time
+    * If the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone and they update at the same time
     * Click Passwords on upper left to return to the prevous screen
 * Select Passwords Options
     * Enable the `Autofill Passwords` and check `Keychain`
 
 ### Using Safari
 
-* When you use Safari to view your Looper's &nbsp;<span translate="no">Nightscout</span>&nbsp; site and choose the Careportal (:material-plus-thick:)
+* When you use Safari to view your Looper's *Nightscout* site and choose the Careportal (:material-plus-thick:)
     * Choose a remote command from Event Type drop-down menu (remote commands are at the bottom of the list)
     * The OTP will be offered to you for every row - ignore it when entering Carb amount or Absorption Time, or Bolus Amount
     * Select it for the OTP row
@@ -92,45 +92,45 @@ There are other Authentication apps available. Here’s a few options that you c
 
 ## FAQs for all Remote Commands
 
-1. **If I have multiple &nbsp;<span translate="no">Nightscout</span>&nbsp; sites because I support multiple people with T1D looping, do I need multiple APNs Keys?**  
-   **Answer**: No. If you support multiple people using &nbsp;<span translate="no">Loop</span>, you can use the one APNs key in each of their &nbsp;<span translate="no">Nightscout</span>&nbsp; sites.
+1. **If I have multiple *Nightscout* sites because I support multiple people with T1D looping, do I need multiple APNs Keys?**  
+   **Answer**: No. If you support multiple people, you can use the one APNs key in each of their *Nightscout* sites.
 
 1. **How can I tell if it worked?**  
-   **Answer**: You should see your override pill in &nbsp;<span translate="no">Nightscout</span>, with &nbsp;<span>the  **NEXT** <span translate="no">Loop</span>&nbsp; cycle</span>, reflecting that the desired remote action took place. If you are near the &nbsp;<span translate="no">Loop</span>&nbsp; app, you should see the new override within less than 30 seconds or so.
+   **Answer**: You should see your override pill in *Nightscout*, with the **NEXT**&nbsp;_<span translate="no">Loop</span>_&nbsp;cycle, reflecting that the desired remote action took place. If you are near the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone, you should see the new override within less than 30 seconds or so.
 
 ## FAQs on Remote Overrides
 
-Don't forget to read [Loopdocs: Overrides](../operation/features/overrides.md). 
+Don't forget to read [*Loopdocs*: Overrides](../operation/features/overrides.md). 
 
 For remote overrides in particular:
 
-1. **Can I set a different override in *Nighscout* than I have programmed into &nbsp;<span translate="no">Loop</span>&nbsp; app?**  
+1. **Can I set a different override in *Nighscout* than I have programmed into&nbsp;_<span translate="no">Loop</span>_&nbsp;app?**  
    **Answer**: No. You will only be able to enact override presets already programmed into the Loop app.
 
-1. **If I didn't start the override in &nbsp;<span translate="no">Nightscout</span>&nbsp; (it was started in &nbsp;<span translate="no">Loop</span>&nbsp; itself), can I still use &nbsp;<span translate="no">Nightscout</span>&nbsp; to cancel it?**  
-   **Answer**: Yes. You can cancel an override set in &nbsp;<span translate="no">Loop</span>&nbsp; with a Nightscout-set cancel "temporary override" command in the careportal.
+1. **If I didn't start the override in *Nightscout* (it was started in&nbsp;_<span translate="no">Loop</span>_&nbsp;itself), can I still use *Nightscout* to cancel it?**  
+   **Answer**: Yes. You can cancel an override set in&nbsp;_<span translate="no">Loop</span>_&nbsp;with a Nightscout-set cancel "temporary override" command in the careportal.
 
-1. **Can I replace an override set in &nbsp;<span translate="no">Loop</span>&nbsp; with an override set in &nbsp;<span translate="no">Nightscout</span>?**  
+1. **Can I replace an override set in&nbsp;_<span translate="no">Loop</span>_&nbsp;with an override set in *Nightscout*?**  
    **Answer**: Yes.
 
-1. **Can I see on &nbsp;<span translate="no">Nightscout</span>&nbsp; when a temporary override has been set using the looper’s phone?**  
-   **Answer**: Yes. There will be a grey bar with the name of the override noted and the &nbsp;<span>&nbsp;<span translate="no">Loop</span>&nbsp; Pill</span>&nbsp; will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the pill as your best guide.
+1. **Can I see on *Nightscout* when a temporary override has been set using the looper’s phone?**  
+   **Answer**: Yes. There will be a grey bar with the name of the override noted and the *Loop pill* will display the targets and duration. Remember, there is a KNOWN issue with the grey bars, so use the *pill* as your best guide.
 
 1. **Can a looper cancel a remote override**?  
-   **Answer**: Yes. They can tap the heart icon <font color="blue">:fontawesome-solid-heart-pulse:</font> in &nbsp;<span translate="no">Loop</span>&nbsp; so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.
+   **Answer**: Yes. They can tap the heart icon <font color="blue">:fontawesome-solid-heart-pulse:</font> in&nbsp;_<span translate="no">Loop</span>_&nbsp;so that it is no longer highlighted. This turns off the override, regardless of where it was initiated.
 
-1. **I set a remote override in &nbsp;<span translate="no">Nightscout</span>&nbsp; but the Looper tapped the heart symbol <font color="blue">:fontawesome-solid-heart-pulse:</font> in the &nbsp;<span translate="no">Loop</span>&nbsp; app, so the override turned off. Will the override get reinstated  the next time &nbsp;<span translate="no">Loop</span>&nbsp; completes with internet access?**  
+1. **I set a remote override in *Nightscout* but the Looper tapped the heart symbol <font color="blue">:fontawesome-solid-heart-pulse:</font> in the *Loop* app, so the override turned off. Will the override get reinstated  the next time&nbsp;_<span translate="no">Loop</span>_&nbsp;completes with internet access?**  
    **Answer**: No. The *APN* is only sent once. You can set the remote override again if need be.
 
 1. **Can I schedule a remote override ahead of time using Nightscout?**    
-   **Answer**: No. When you set a remote override in &nbsp;<span translate="no">Nightscout</span>, it starts immediately and lasts for the duration programmed for that override in the &nbsp;<span translate="no">Loop</span>&nbsp; app. You can only set an override in advance using the &nbsp;<span translate="no">Loop</span>&nbsp; app.
+   **Answer**: No. When you set a remote override in *Nightscout*, it starts immediately and lasts for the duration programmed for that override in the *Loop* app. You can only set an override in advance using the *Loop* app.
 
 ## Remote Commands
 
 Remote Commands to deliver a bolus or add a carb entry **require** a &nbsp;<span translate="no">One Time Passcode</span>&nbsp; (OTP).
 
 !!! important "Minimum Versions: <span translate="no">Loop 3</span>&nbsp; and &nbsp;<span translate="no">**Nightscout 14.2.6**</span>"
-    If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the looper's phone.
+    If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the&nbsp;_<span translate="no">loop</span>_&nbsp;phone.
 
 ### Warnings on Remote Commands
 
@@ -141,12 +141,12 @@ Remote Commands to deliver a bolus or add a carb entry **require** a &nbsp;<span
     
     * You send a 5-unit remote bolus.
     * The bolus is delivered to the Looper.
-    * <span translate="no">Nightscout</span>&nbsp; is having a temporary technical issue and doesn't show the bolus was received.
-    * You are watching &nbsp;<span translate="no">Nightscout</span>&nbsp; and you don’t see a delivery so you assume it failed.
+    * *Nightscout* is having a temporary technical issue and doesn't show the bolus was received.
+    * You are watching *Nightscout* and you don’t see a delivery so you assume it failed.
     * You send another remote 5-unit bolus.
     * The second 5-unit bolus is delivered to the Looper (10 Units total).
 
-You can see the danger of sending duplicate bolus/carbs so be careful. If a remote bolus/carb entry doesn’t show in &nbsp;<span translate="no">Nightscout</span>, use your own judgment on whether enough time has passed to try again.
+You can see the danger of sending duplicate bolus/carbs so be careful. If a remote bolus/carb entry doesn’t show in *Nightscout*, use your own judgment on whether enough time has passed to try again.
 
 ### Remote Bolus, Then Remote Carb
 
@@ -155,40 +155,41 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
     There are 2 scenarios of concern that could lead to too much insulin:
     
-    * *Looper* is using the **`Temp Basal`** (temporary basal) Dosing Strategy
-        * <span translate="no">Loop</span>&nbsp; will initiate a max `Temp Basal` when it receives the carbs remote command
-        * Your bolus will be accepted and take place in addition to the high temporary basal
-    * *Looper* is using **`Automatic Bolus`** Dosing Strategy
-        * <span translate="no">Loop</span>&nbsp; will initiate 40% of the recommended dose when it receives the carbs remote command
-        * Your bolus will be accepted and take place in addition to an automatic boluses
+    * Dosing Strategy is **Temp Basal Only** (temporary basal)
+        * _<span translate="no">Loop</span>_&nbsp;will initiate a max Temp Basal when it receives the carbs remote command
+        * Your bolus is accepted next and takes place in addition to the high temporary basal
+    * Dosing Strategy is **Automatic Bolus** 
+        * _<span translate="no">Loop</span>_&nbsp;will initiate a percentage of the recommended dose when it receives the carbs remote command
+        * Your bolus will be accepted and take place in addition to an automatic boluses or be rejected because a bolus is already in progress
     
-    Typically, sending a remote carb entry alone is sufficient for &nbsp;<span translate="no">Loop</span>&nbsp; to know about the carbs and begin to dose for them.
+    Typically, sending a remote carb entry alone is sufficient for&nbsp;_<span translate="no">Loop</span>_&nbsp;to know about the carbs and begin to dose for them.
     
     If you really want to both bolus for carbs and enter carbs, then do it in that order.
     
-    1. The bolus, when accepted, will cause &nbsp;<span translate="no">Loop</span>&nbsp; to issue a 0 `Temp Basal` (temporary basal) (which is "safer")
-    2. The carbs, when accepted, will cause &nbsp;<span translate="no">Loop</span>&nbsp; to respond to the carbs while including the bolus already delivered and included in the Looper&#39; IOB
+    1. The bolus, when accepted, may start a zero Temp Basal (temporary basal) (which is "safer")
+    2. The carbs, when accepted, will cause the app to respond to the carbs
+    3. In this case, the prediction includes both carbs and bolus
     
     ❗️ Remember - you should pause at least 60 seconds between remote commands or the One-Time-Password (OTP) will be rejected as having already been used.
 
 ## Using Remote Commands
 
-There are four ways you can trigger your commands remotely; &nbsp;[<span translate="no">Loop Caregiver</span>](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
+There are four ways you can trigger your commands remotely; &nbsp;[*Loop Caregiver*](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-### [<span translate="no">Loop Caregiver</span>](loop-caregiver.md)
+### [*Loop Caregiver*](loop-caregiver.md)
 
-Click the link above to read more about &nbsp;<span translate="no">Loop Caregiver</span>.
+Click the link above to read more about *Loop Caregiver* .
 
-### <span translate="no">Nightscout Careportal</span>
+### *Nightscout* Careportal
 
-To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure &nbsp;<span translate="no">Nightscout</span>&nbsp; site according to the directions [here](update-user.md) in &nbsp;<span translate="no">Loopdocs</span>&nbsp; in addition to setting up the [Remote Configuration](remote-config.md). 
+To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure *Nightscout* site according to the directions [here](update-user.md) in &nbsp;<span translate="no">Loopdocs</span>&nbsp; in addition to setting up the [Remote Configuration](remote-config.md). 
 
 Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`. The order of the words in the `ENABLE` line is not important.
 
 You'll also need to have your [site authenticated](update-user.md#authenticate-site) so that your &nbsp;<span translate="no">Careportal</span>&nbsp; is active to send remote overrides . 
 
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
-Within there, you will find all your &nbsp;<span translate="no">Loop</span>&nbsp; override presets already loaded for you.
+Within there, you will find all your&nbsp;_<span translate="no">Loop</span>_&nbsp;override presets already loaded for you.
 
 #### Start and End Remote Override
 
@@ -216,13 +217,13 @@ Open your Nightscout site in a browser or app.
 
 Note that Loop will honor both the current OTP code and the one that just expired.
 
-If the Looper is with you, you can see the notification on their phone. You can see the entry on the &nbsp;<span translate="no">Loop</span>&nbsp; carbohydrate or the insulin displays to see if it went through.
+If the Looper is with you, you can see the notification on their phone. You can see the entry on the&nbsp;_<span translate="no">Loop</span>_&nbsp;carbohydrate or the insulin displays to see if it went through.
 
-If the Looper is not with you, you should see the result in the &nbsp;<span translate="no">Nightscout</span>&nbsp; dashboard within 5 minutes.
+If the Looper is not with you, you should see the result in the *Nightscout* dashboard within 5 minutes.
 
 ### Shortcuts
 
-If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate &nbsp;<span translate="no">Loop</span>&nbsp; overrides with &nbsp;<span translate="no">Nightscout</span>.
+If you want to make your life SUPER AMAZING, check out using the iPhone's Shortcuts app. The Shortcuts app is for making little automations (like mini apps) that can integrate parts of your life. In this case, we've written a couple of shortcuts for you that integrate&nbsp;_<span translate="no">Loop</span>_&nbsp;overrides with *Nightscout*.
 
 !!! important "Important Note"
     Before you click on the download file below...save yourself some trouble.
@@ -238,7 +239,7 @@ If you want to make your life SUPER AMAZING, check out using the iPhone's Shortc
 
 Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser on iPhone):
 
-[Comprehensive &nbsp;<span translate="no">Loop</span>&nbsp; Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut)
+[Comprehensive&nbsp;_<span translate="no">Loop</span>_&nbsp;Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut)
  *includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.*
 
 And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
@@ -253,8 +254,8 @@ And if you want to save one click to get to these one functions more directly: t
     After the download finishes, tap the button marked `AA` near your *Safari* address bar and tap `Downloads` (downloads)  to find and open the downloaded Shortcut.
     
     Wait a bit, and the shortcut's inner guts will be there...scroll ALL the way down to the bottom to click the button to save the untrusted shortcut
-3. When you enter your &nbsp;<span translate="no">Nightscout</span>&nbsp; URL in &nbsp;<span>the `URL` field</span>&nbsp; of the &nbsp;<span translate="no">Loop</span>&nbsp; shortcut setup, make sure you don't include a &nbsp;<span>trailing `/`</span>, or the API calls to *Heroku* will error out.
-4. When a remote override is set properly, you'll see an `ok` message displayed. If there is an error, you'll see an error message. Most errors will be that you have an `API_SECRET` wrong (make sure there isn't a space at the end of your `API_SECRET` that you don't see) or you failed to do the steps to setup &nbsp;<span translate="no">Nightscout</span>&nbsp; and update your &nbsp;<span translate="no">Loop</span>&nbsp; app as described in steps 1-3 above.
+3. When you enter your *Nightscout* URL in &nbsp;<span>the `URL` field</span>&nbsp; of the&nbsp;_<span translate="no">Loop</span>_&nbsp;shortcut setup, make sure you don't include a &nbsp;<span>trailing `/`</span>, or the API calls to *Heroku* will error out.
+4. When a remote override is set properly, you'll see an `ok` message displayed. If there is an error, you'll see an error message. Most errors will be that you have an `API_SECRET` wrong (make sure there isn't a space at the end of your `API_SECRET` that you don't see) or you failed to do the steps to setup *Nightscout* and update your&nbsp;_<span translate="no">Loop</span>_&nbsp;app as described in steps 1-3 above.
 5. You can absolutely customize these bits and pieces within the shortcut. Change the text messages, and change the links... It is totally up to you.
 
 ### *IFTTT*

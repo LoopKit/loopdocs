@@ -1,15 +1,15 @@
 ## Two Ways to Build the App
 
-With the release of&nbsp;<span translate="no">Loop 3</span>&nbsp;, there are two ways to build the app.
+With the release of&nbsp;_<span translate="no">Loop 3</span>_&nbsp;, there are two ways to build the app.
 
-* If you have never built&nbsp;<span translate="no">Loop</span>&nbsp;before, we recommend you use the Build with Browser method.
+* If you have never built&nbsp;_<span translate="no">Loop</span>_&nbsp;before, we recommend you use the Build with Browser method.
 * If you use a Mac and keep the operating system up to date all the time, then you may prefer the Mac-Xcode method.
 
 The Build Steps have been split into two tabs:
 
 * [Build with Browser](../gh-actions/gh-overview.md)
     * Build with a browser on any computer or tablet
-    * App is installed on the phone using&nbsp;<span translate="no">TestFlight</span>
+    * App is installed on the phone using *TestFlight*
 * [Build with Mac-Xcode](../build/overview.md)
     * App is built on a Mac with Xcode connected to the phone
     * The operating system on the Mac and the version of Xcode must be kept up-to-date
@@ -32,7 +32,7 @@ These requirements are independent of how you build the Loop app:
 
 If you plan to build using the Build with Browser instructions, you also need:
 
-1.  A free&nbsp;<span translate="no">GitHub</span>&nbsp;account
+1.  A free *GitHub* account
 
 Detailed instructions are included in the link above.
 

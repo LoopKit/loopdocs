@@ -2,7 +2,7 @@
     
 If you get an error when building with a browser, use this page to figure out what to do.
 
-If you are still unsuccessful, then post your request for help along with your&nbsp;<span translate="no">GitHub</span>&nbsp;**username**. Mentors can go to your public&nbsp;<span translate="no">GitHub repository</span>, check the status and then view your log files directly.
+If you are still unsuccessful, then post your request for help along with your *GitHub* **username**. Mentors can go to your public&nbsp;<span translate="no">GitHub repository</span>, check the status and then view your log files directly.
 
 * Do not copy from the log file and post the words
 * Do not take a screenshot of what you think is an error
