@@ -4,9 +4,9 @@ All remote commands require the configuration steps from [Remote Configuration](
 
 * A new One-Time Password (OTP) is required for each remote command that issues a bolus or adds a carb entry
     * The OTP updates every 30 seconds
-    * Both the sending device and the Looper's phone must have automatic time enabled
+    * Both the sending device and the Loop phone must have automatic time enabled
 * Remote Overrides do not require a One-Time Password (OTP)
-    * There are some versions of *Nightscout* that provide a row for entry of an OTP for &nbsp;<span translate="no">Temporary Override</span>&nbsp; in the &nbsp;<span translate="no">Nightscout Careportal</span>
+    * There are some versions of *Nightscout* that provide a row for entry of an OTP for Temporary Override in the *Nightscout* Careportal
     * Leave that row blank
 
 !!! question "Do I have to use *Loop Caregiver* ?"
@@ -18,9 +18,9 @@ All remote commands require the configuration steps from [Remote Configuration](
 
 ## QR Code
 
-On the Looper's phone, *Nightscout* must be included under the `Loop` -> Settings -> Services section. Navigate to Services and select *Nightscout*. Tap on the One-Time Password row to view the QR code.
+On the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone, *Nightscout* must be included under the `Loop` -> Settings -> Services section. Navigate to Services and select *Nightscout*. Tap on the One-Time Password row to view the QR code.
 
-When you need to configure your authentication method, you can either use a saved QR screenshot or scan the QR on the Looper's phone.
+When you need to configure your authentication method, you can either use a saved QR screenshot or scan the QR on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone.
 
 Options:
 
@@ -67,9 +67,9 @@ On the Caregivers device (iPhone or Mac):
     * If you need to come back later, you can find that screen again
     * Go to Apple Settings -> Passwords -> Tap the row with your *Nightscout* URL
 * Tap “Setup Verification Code”
-    * This is where you can scan your QR code from the Looper's phone or the saved QR screenshot
+    * This is where you can scan your QR code from the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone or the saved QR screenshot
     * As soon as the camera reads the QR code, an OTP will begin to appear
-    * If the Looper's phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the Looper's phone and they update at the same time
+    * If the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone and they update at the same time
     * Click Passwords on upper left to return to the prevous screen
 * Select Passwords Options
     * Enable the `Autofill Passwords` and check `Keychain`
@@ -93,14 +93,14 @@ There are other Authentication apps available. Here’s a few options that you c
 ## FAQs for all Remote Commands
 
 1. **If I have multiple *Nightscout* sites because I support multiple people with T1D looping, do I need multiple APNs Keys?**  
-   **Answer**: No. If you support multiple people using  *Loop*, you can use the one APNs key in each of their *Nightscout* sites.
+   **Answer**: No. If you support multiple people, you can use the one APNs key in each of their *Nightscout* sites.
 
 1. **How can I tell if it worked?**  
-   **Answer**: You should see your override pill in *Nightscout*, with &nbsp;<span>the  **NEXT** *Loop* cycle</span>, reflecting that the desired remote action took place. If you are near the *Loop* app, you should see the new override within less than 30 seconds or so.
+   **Answer**: You should see your override pill in *Nightscout*, with the **NEXT** *Loop* cycle, reflecting that the desired remote action took place. If you are near the *Loop* phone, you should see the new override within less than 30 seconds or so.
 
 ## FAQs on Remote Overrides
 
-Don't forget to read [Loopdocs: Overrides](../operation/features/overrides.md). 
+Don't forget to read [*Loopdocs*: Overrides](../operation/features/overrides.md). 
 
 For remote overrides in particular:
 
@@ -130,7 +130,7 @@ For remote overrides in particular:
 Remote Commands to deliver a bolus or add a carb entry **require** a &nbsp;<span translate="no">One Time Passcode</span>&nbsp; (OTP).
 
 !!! important "Minimum Versions: <span translate="no">Loop 3</span>&nbsp; and &nbsp;<span translate="no">**Nightscout 14.2.6**</span>"
-    If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the looper's phone.
+    If your Nightscout version does not meet that minimum requirement, remote commands **might** be accepted but if they are, the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the&nbsp;_<span translate="no">loop</span>_&nbsp;phone.
 
 ### Warnings on Remote Commands
 
@@ -155,19 +155,20 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
     There are 2 scenarios of concern that could lead to too much insulin:
     
-    * *Looper* is using the **`Temp Basal`** (temporary basal) Dosing Strategy
-        * *Loop* will initiate a max `Temp Basal` when it receives the carbs remote command
-        * Your bolus will be accepted and take place in addition to the high temporary basal
-    * *Looper* is using **`Automatic Bolus`** Dosing Strategy
-        * *Loop* will initiate 40% of the recommended dose when it receives the carbs remote command
-        * Your bolus will be accepted and take place in addition to an automatic boluses
+    * Dosing Strategy is **Temp Basal Only** (temporary basal)
+        * _<span translate="no">Loop</span>_&nbsp;will initiate a max Temp Basal when it receives the carbs remote command
+        * Your bolus is accepted next and takes place in addition to the high temporary basal
+    * Dosing Strategy is **Automatic Bolus** 
+        * _<span translate="no">Loop</span>_&nbsp;will initiate a percentage of the recommended dose when it receives the carbs remote command
+        * Your bolus will be accepted and take place in addition to an automatic boluses or be rejected because a bolus is already in progress
     
     Typically, sending a remote carb entry alone is sufficient for *Loop* to know about the carbs and begin to dose for them.
     
     If you really want to both bolus for carbs and enter carbs, then do it in that order.
     
-    1. The bolus, when accepted, will cause *Loop* to issue a 0 `Temp Basal` (temporary basal) (which is "safer")
-    2. The carbs, when accepted, will cause *Loop* to respond to the carbs while including the bolus already delivered and included in the Looper&#39; IOB
+    1. The bolus, when accepted, may start a zero Temp Basal (temporary basal) (which is "safer")
+    2. The carbs, when accepted, will cause the app to respond to the carbs
+    3. In this case, the prediction includes both carbs and bolus
     
     ❗️ Remember - you should pause at least 60 seconds between remote commands or the One-Time-Password (OTP) will be rejected as having already been used.
 
@@ -179,7 +180,7 @@ There are four ways you can trigger your commands remotely; &nbsp;[*Loop Caregiv
 
 Click the link above to read more about *Loop Caregiver* .
 
-### <span translate="no">Nightscout Careportal</span>
+### *Nightscout* Careportal
 
 To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure *Nightscout* site according to the directions [here](update-user.md) in &nbsp;<span translate="no">Loopdocs</span>&nbsp; in addition to setting up the [Remote Configuration](remote-config.md). 
 

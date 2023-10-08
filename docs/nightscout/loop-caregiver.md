@@ -4,11 +4,10 @@ The *Loop Caregiver* app is under development to make remote commands easier to 
 
 ### Minimum Requirements:
 
-* *Loop* version 3.2.0 or newer
+* _<span translate="no">Loop</span>_&nbsp;version 3.2.0 or newer
     * version 3.0 works but is not recommended for other reasons
     * version 3.3 and higher offers improved feedback to the *Loop Caregiver* user
 * iOS 16 or newer for *Loop Caregiver* phone
-* iOS 15.1 with *Loop 3* for *Loop* phone
 * *Nightscout* version 14.2.6
 
 ### Prerequisites:
@@ -80,7 +79,7 @@ You must add a Looper to continue with *Loop Caregiver* as shown in the graphic 
 ![add Looper to Loop Caregiver](img/lcg-add-looper.png){width="300"}
 {align="center"}
 
-* On the Looper&#39;s phone:
+* On the *Loop* phone:
     * Tap on `Loop -> Settings -> Services -> Nightscout`
     * Tap on the `One-Time-Password` row to see the QR code  
     !!! tip "Pro-tip"
@@ -91,12 +90,12 @@ You must add a Looper to continue with *Loop Caregiver* as shown in the graphic 
         * Keep the screenshot secure
         * Do not share the QR screenshot when asking for help
 
-* On the *Loop Caregiver* &#39;s phone:
+* On the *Loop Caregiver* phone:
     * Tap on *Loop Caregiver* -> `Settings`
     * Enter the name of the Looper, the *Nightscout* URL (use &nbsp;<span translate="no"> http**s**://</span>&nbsp;) and `API_SECRET`
     * Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone
 
-You can add additional Looper's under settings. (**Loop Caregiver* * can monitor more than one Looper).
+You can add additional more people under settings. (**Loop Caregiver* * can monitor more than one Looper).
 
 ### *Loop Caregiver* Main Screen
 
@@ -116,7 +115,7 @@ The Timeline:
 You can also use the *Loop Caregiver* -> `Settings` screen to modify:
 
 * Units used for glucose display: `mg/dL` or `mmol/L`
-* Include the &nbsp;* *Loop* * forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
+* Include the *Loop* forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
 ### Issue Remote Commands with *Loop Caregiver*
 
@@ -124,7 +123,7 @@ You issue override, carb, and bolus commands using a toolbar similar to the one 
 
 Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the *Loop Caregiver* &#39;s phone.
 
-The use of * *Loop Caregiver* * makes remote commands much easier and more reliable.
+The use of *Loop Caregiver* makes remote commands much easier and more reliable.
 
 Go back and review the details about [Remote Commands](remote-commands.md) before using the app.
 
