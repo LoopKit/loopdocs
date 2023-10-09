@@ -2,14 +2,16 @@
     
 If you get an error when building with a browser, use this page to figure out what to do.
 
-If you are still unsuccessful, then post your request for help along with your *GitHub* **username**. Mentors can go to your public&nbsp;<span translate="no">GitHub repository</span>, check the status and then view your log files directly.
+If you are still unsuccessful, then post your request for help along with your *GitHub* **username**. Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span>_, check the status and then view your log files directly.
 
 * Do not copy from the log file and post the words
 * Do not take a screenshot of what you think is an error
 * Just post your username and the name of the app you are trying to build
 
 !!! tip "Username, Not Pictures"
-    If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**. 
+    If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**.
+
+    All that is needed to assist is your *GitHub* **username**.
 
 But first - try to diagnose it yourself using this page.
 
@@ -17,7 +19,7 @@ But first - try to diagnose it yourself using this page.
 
 These are some of the most common errors to date.
 
-* Common mistake: you made a spelling error when adding Secrets
+* Common mistake: you made a spelling error when adding <code>Secrets</code>
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
 * Common mistake: use a smart editor instead of a text-only editor to save your information
@@ -25,13 +27,26 @@ These are some of the most common errors to date.
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
 * Common mistake: when saving `TEAMID`, you type what you think you see instead of using copy and paste
 * Common mistake: skip running one of the actions
-* Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> 
+* Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> - be sure to read [Misleading Error Message](#misleading-error-message)
 
 If you are running development code, skip ahead to [Preview for Version 3.4](#preview-for-version-34).
 
-The next section is valid for Version 3.2.x and earlier.
+## Misleading Error Message
+
+> For Version 3.2.x and earlier - later versions give better error messages.
+
+If there are *Apple* Developer agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
+
+* The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
+* Check your *Apple* Developer account for agreements first, before trying to fix those
+* If you previously built successfully - it is almost certainly the agreement
+* It can take 15 minutes to an hour after the agreement is signed before it can be used
+
+If you need detailed instructions, click on this [*Apple Program License Agreement* Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
 
 ## Find Your Error
+
+> For Version 3.2.x and earlier - later versions have an improved method for display errors.
 
 There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 

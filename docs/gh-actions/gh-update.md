@@ -59,6 +59,10 @@ If you need detailed instructions, click on the [<code>Apple Program License Agr
     * You do NOT need to accept anything related to the `Paid Applications Schedule Agreement`
     * That is only required when you sell an app through the `App Store`
 
+!!! warning "Wait After You Agree"
+    It typically takes 15 minutes before your updated agreement is available so you can complete your build.
+
+    If your build with browser fails, wait longer. An hour wait was reported by one person.
 
 ### Update Fork
 
