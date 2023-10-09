@@ -42,7 +42,7 @@ If there are *Apple* Developer agreements you have not accepted, you will get er
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
 
-If you need detailed instructions, click on this [*Apple Program License Agreement* Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
+If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
 
 ## Find Your Error
 
