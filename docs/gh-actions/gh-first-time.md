@@ -200,6 +200,8 @@ You need to save your information digitally, so you can copy and paste. The info
     You will be saving 4 <code>Secrets</code> from your *Apple* Account in this step.
 
     1. Sign in to the [*Apple* developer portal page](https://developer.apple.com/account/resources/certificates/list).
+    1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
+        * Need help? Look at this section on the update page: [Accept Agreements](gh-update.md#accept-agreements)
     1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
     1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
     1. [Record three more secrets](#copy-api-key-secrets)
@@ -232,6 +234,8 @@ If not, you need to purchase one ($99 annual fee). It may take a few days for th
 Sign in to your *Apple* Developer account at this link: [*Apple* developer portal page](https://developer.apple.com/account).
 
 1. Click `Account` in the top menu bar
+1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
+    * Need help? Look at this section on the update page: [Accept Agreements](gh-update.md#accept-agreements)
 1. Click the `Membership Details` icon
 
     ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg){width="600"}
