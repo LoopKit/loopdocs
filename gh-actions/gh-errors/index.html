@@ -953,6 +953,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#misleading-error-message" class="md-nav__link">
+    Misleading Error Message
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#find-your-error" class="md-nav__link">
     Find Your Error
   </a>
@@ -3312,6 +3319,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#misleading-error-message" class="md-nav__link">
+    Misleading Error Message
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#find-your-error" class="md-nav__link">
     Find Your Error
   </a>
@@ -3494,7 +3508,7 @@
 
 <h2 id="help-with-errors">Help with Errors<a class="headerlink" href="#help-with-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you get an error when building with a browser, use this page to figure out what to do.</p>
-<p>If you are still unsuccessful, then post your request for help along with your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong>username</strong>. Mentors can go to your public&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></span>, check the status and then view your log files directly.</p>
+<p>If you are still unsuccessful, then post your request for help along with your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong>username</strong>. Mentors can go to your public&nbsp;<em><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></span></em>, check the status and then view your log files directly.</p>
 <ul>
 <li>Do not copy from the log file and post the words</li>
 <li>Do not take a screenshot of what you think is an error</li>
@@ -3502,13 +3516,14 @@
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Username, Not Pictures</p>
-<p>If you've been around the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community for a while, you know the mantra about screenshots. Well, when using a browser to build, <strong>screenshots are close to useless</strong>. </p>
+<p>If you've been around the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community for a while, you know the mantra about screenshots. Well, when using a browser to build, <strong>screenshots are close to useless</strong>.</p>
+<p>All that is needed to assist is your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong>username</strong>.</p>
 </div>
 <p>But first - try to diagnose it yourself using this page.</p>
 <h3 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These are some of the most common errors to date.</p>
 <ul>
-<li>Common mistake: you made a spelling error when adding <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><ul>
+<li>Common mistake: you made a spelling error when adding <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><ul>
 <li>Each secret must be spelled exactly the way it is presented in the instructions</li>
 <li>If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name</li>
 </ul>
@@ -3520,11 +3535,25 @@
 </li>
 <li>Common mistake: when saving <code>TEAMID</code>, you type what you think you see instead of using copy and paste</li>
 <li>Common mistake: skip running one of the actions</li>
-<li>Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> </li>
+<li>Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> - be sure to read <a href="#misleading-error-message">Misleading Error Message</a></li>
 </ul>
 <p>If you are running development code, skip ahead to <a href="#preview-for-version-34">Preview for Version 3.4</a>.</p>
-<p>The next section is valid for Version 3.2.x and earlier.</p>
+<h2 id="misleading-error-message">Misleading Error Message<a class="headerlink" href="#misleading-error-message" title="Anchor link to this Header on this Page">&para;</a></h2>
+<blockquote>
+<p>For Version 3.2.x and earlier - later versions give better error messages.</p>
+</blockquote>
+<p>If there are <em>Apple</em> Developer agreements you have not accepted, you will get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect even if they are not.</p>
+<ul>
+<li>The misleading message tells you that one or more of these: <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code> is not correct</li>
+<li>Check your <em>Apple</em> Developer account for agreements first, before trying to fix those</li>
+<li>If you previously built successfully - it is almost certainly the agreement</li>
+<li>It can take 15 minutes to an hour after the agreement is signed before it can be used</li>
+</ul>
+<p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code> Help Page</a>.</p>
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
+<blockquote>
+<p>For Version 3.2.x and earlier - later versions have an improved method for display errors.</p>
+</blockquote>
 <p>There is a separate section for each step in the process. First, you must follow the <a href="#examine-the-error">Examine the Error</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.</p>
 <ol>
 <li><a href="#action-validate-secrets-errors">Action: <code>Validate Secrets</code></a></li>
