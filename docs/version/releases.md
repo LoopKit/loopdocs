@@ -111,10 +111,10 @@ Loop v3.0.0 was released on January 14, 2023.
 
 
 !!! tip "Branch Name Change"
-    The branch name associated with the latest Loop release is "main".
+    The branch name associated with the latest Loop release is `main`.
 
-    * All new Git repositories on GitHub will be named "main" instead of "master" starting October 1, 2020
-    * GitHub provides tools to assist in modifying existing repositories to use main
+    * All new Git `repositories` on GitHub will be named `main` instead of `master` starting October 1, 2020
+    * GitHub provides tools to assist in modifying existing `repositories` to use `main`.
 
 ## Remove Apps with Shared App Group
 

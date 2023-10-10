@@ -55,11 +55,11 @@ But yes, git commands take awhile to properly use. And they are not plain Englis
 
 There is more information in [Loop Development](../version/development.md#what-are-branches) that is not repeated here.
 
-The important fact for this discussion on LoopWorkspace is that Loop developers own an account in GitHub called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several "repositories" that support Loop in particular. A repository is like a book...let's think of it like a cookbook for now. Within the LoopKit account, there are repositories for Loop itself, LoopDocs, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop's repo has a lot of info about the app itself; the outward-facing things that you interact with. How information is put to you and taken in from you...that's in Loop repository code. But, there's more than just a user interface for Loop. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The Loop app has help from frameworks to do those other parts. CGMBLEkit for some of the transmitter parts of Loop, RileyLink_ios for the pump managers (talking to the pumps and decoding their information), LoopKit for the algorithm about carbs and insulin curves, etc.
+The important fact for this discussion on *LoopWorkspace* is that Loop developers own an account in *GitHub* called [`LoopKit`](https://github.com/LoopKit).  Within that account, the developers have several `repositories` that support *Loop* in particular. A `repository` is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are repositories for *Loop* itself, *LoopDocs*, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop&#39;s repo has a lot of info about the app itself; and the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* `repository` code. But, there's more than just a user interface for *Loop*. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit` for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), *LoopKit* for the algorithm about carbs and insulin curves, etc.
 
-When you build Loop from LoopWorkspace, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading Loop - but it is much faster when you build Loop because all the files are already on your computer.
+When you build *Loop* from `LoopWorkspace`, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading *Loop* - but it is much faster when you build Loop because all the files are already on your computer.
 
-LoopWorkspace uses submodules to define how the frameworks are coordinated for building. The graphic below shows the dev branch at a particular point in time.  The precise version, or commit, of each submodule is defined by 7-character hexadecimal codes (look up SHA-1) with the repository for each submodule defined in a text file called `.gitmodules`.
+`LoopWorkspace` uses submodules to define how the frameworks are coordinated for building. The graphic below shows the dev branch at a particular point in time.  The precise version, or commit, of each submodule is defined by 7-character hexadecimal codes (look up SHA-1) with the repository for each submodule defined in a text file called `.gitmodules`.
 
 !!! info ""
     * Several key `git` and other operating system commands will be provided later to assist you
@@ -72,26 +72,26 @@ The commit identifier for each submodule is important because that repository ca
 !!! info ""
     * Later on there will be information about determining your `git branch` for a given submodule
     * You'll see language: `(HEAD detached at #)`
-    * That # is the commit identifier for the submodule
+    * That `#` is the `commit` identifier for the submodule
 
-The commit for the LoopKit submodule is highlighted by the red rectangle in the graphic below. Advanced users testing the dev branch (or other branches or forks) need to know how to tell if their current download is up-to-date.
+The `commit` for the `LoopKit` submodule is highlighted by the red rectangle in the graphic below. Advanced users testing the dev branch (or other branches or forks) need to know how to tell if their current download is up-to-date.
 
 ![LoopWorkspace repository showing the SHA-1 for each submodule](img/loopworkspace-submodule-sha.svg){width="750"}
 {align="center"}
 
 ## Clone LoopWorkspace
 
-To get that LoopWorkspace code to your computer, first open a terminal. Make sure your current path name does not have any embedded spaces.  If it does, you will get errors on your build.
+To get that `LoopWorkspace` code to your computer, first open a terminal. Make sure your current path name does not have any embedded spaces.  If it does, you will get errors on your build.
 
 If you don't know how to open a terminal and navigate to a directory, reconsider whether you are ready for this page.
 
-You need to use a "git clone" command LIKE THIS (but not exactly the same...you're going to edit the "branch-name" part in there):
+You need to use a `git clone` command LIKE THIS (but not exactly the same...you're going to edit the `branch-name` part in there):
 
 `git clone --branch=branch-name --recurse-submodules https://github.com/LoopKit/LoopWorkspace`
 
-Now...look carefully and notice two things...that command is getting (1) the version of LoopWorkspace found in the LoopKit repository and (2) selects the branch you want to start working with when the clone is done.
+Now...look carefully and notice two things...that command (1) is getting the version of `LoopWorkspace` found in the `LoopKit` repository and (2) selects the branch you want to start working with when the clone is done.
 
-So, you will need to edit that "branch-name" before using the command so that you are getting started with the branch you want. If you want to clone from a different fork, the LoopKit will be replaced with the name of the github site for the fork. For example, to test dev (which is under development and has some cool new architecture and features), you would copy/paste:
+So, you will need to edit that `branch-name` before using the command so that you are getting started with the branch you want. If you want to clone from a different `fork`, the `LoopKit` will be replaced with the name of the GitHub site for the `fork`. For example, to test the `dev` branch (which is under development and has some cool new architecture and features), you would copy/paste:
 
 ``` { .bash .copy }
 git clone --branch=dev --recurse-submodules https://github.com/LoopKit/LoopWorkspace
@@ -107,53 +107,53 @@ cd LoopWorkspace
 xed .
 ```
 
-Remember the warning - if you build dev on your phone from Loop master, it should work fine. Going backwards, please delete the app from you phone and enter all your settings again to return to master.
+Remember the warning - if you build the `dev` branch on your phone from `Loop main`, it should work fine. Going backward, please delete the app from your phone and enter all your settings again to return to `main`.
 
 
 ### Start Xcode using Finder
 
-The cloned version of the LoopWorkspace will go into the current directory in the Terminal app when you executed the command. Terminal app opens in your User account home directory by default when you first open it. Unless you changed to a different directory, check your home directory for the LoopWorkspace folder.
+The cloned version of the `LoopWorkspace` will go into the current directory in the *Terminal* app when you execute the command. *Terminal* app opens in your User account home directory by default when you first open it. Unless you changed to a different directory, check your home directory for the `LoopWorkspace` folder.
 
 How can you find your home directory?
 
-1. In Terminal, if you use `cd` that will take you there automatically.
-2. In Finder, ++shift+command+h++ will open your `home` folder.
+1. In `Terminal`, if you use `cd` that will take you there automatically.
+2. In `Finder`, ++shift+command+h++ will open your home folder.
 
 ![img/root-finder.png](img/root-finder.png){width="750"}
 {align="center"}
 
-There are a lot of cloned things in this home directory that involve Loop. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can also set up a special directory to hold the cloned code - just make sure there are no embedded spaces in the full path name.
+There are a lot of cloned things in this home directory that involve *Loop*. You may have fewer...but be aware, you can always delete and reclone if you are in doubt or confused. You can also set up a special directory to hold the cloned code - just make sure there are no embedded spaces in the full path name.
 
-For this graphic, the cloned LoopWorkspace is in the home directory.
+For this graphic, the cloned `LoopWorkspace` is in the home directory.
 
-!!! success "Loop to LoopWorkspace in dev"
-    Note that the directory `Loop.xcworkspace` has been renamed to `LoopWorkspace.xcworkspace` in the dev branch. This change makes LoopWorkspace the default target to simplify the build process.
+!!! success "*Loop* to `LoopWorkspace` in `dev`"
+    Note that the directory `Loop.xcworkspace` has been renamed to `LoopWorkspace.xcworkspace` in the `dev` branch. This change makes `LoopWorkspace` the default target to simplify the build process.
 
     The words will be updated with the next release. It may take more time for the figures to be updated.
 
-1. Open Finder and navigate to the location that has LoopWorkspace
-1. Open the LoopWorkspace folder
-1. Search for and double-click on the `LoopWorkspace.xcworkspace` folder - this automatically opens the Workspace in Xcode
+1. Open `Finder` and navigate to the location that has `LoopWorkspace`
+1. Open the `LoopWorkspace` folder
+1. Search for and double-click on the `LoopWorkspace.xcworkspace` folder - this automatically opens the Workspace in `Xcode`
 
 ![img/workspace-file.png](img/workspace-file.png){width="550"}
 {align="center"}
 
-* Enter your Apple Developers ID in the LoopConfigOverride.xcconfig file that now appears in the top of the folder list (not shown in this graphic)
-* This automatically signs the 5 targets required for the dev branch
+* Enter your *Apple Developers ID* in the `LoopConfigOverride.xcconfig` file that now appears in the top of the folder list (not shown in this graphic)
+* This automatically signs the 5 targets required for the `dev` branch
 * Choose your device
 * Tap on the build (play) button to build to your selected device
 
-## Updating Loop using LoopWorkspace
+## Updating Loop using `LoopWorkspace`
 
-When it's time to update the copy of LoopWorkspace on your computer - you have choices. You can use the method below or redo the whole cloning process.
+When it's time to update the copy of `LoopWorkspace` on your computer - you have choices. You can use the method below or redo the whole cloning process.
 
-Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code-customization.md#open-a-terminal-in-loopworkspace-folder)
+Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder)
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }
     git branch
     ```
-1. If you are not in the correct branch, for example `dev`, then issue this git command (suitably modified for the desired branch)
+1. If you are not in the correct branch, for example, `dev`, then issue this git command (suitably modified for the desired branch)
     ``` { .bash .copy }
     git checkout dev
     ```
