@@ -19,20 +19,20 @@ Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your 
 
 ## Current Release
 
-The current released version for Loop main is v3.2.3. The dates and contents for Loop releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.2.3. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
-Tap on the Settings icon at the bottom of the Loop app main screen and look at the version information at upper left. This graphic was generated with an older version, Loop 2.2.8.
+Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left. This graphic was generated with an older version.
     
 ![Determine current app version on app settings screen](img/app-version.svg){width="400"}
 {align="center"}
 
 ### Is the Released Version Newer?
 
-Release information is always found on the [GitHub LoopKit/Loop release page](https://github.com/LoopKit/Loop/releases). The information on this LoopDocs page is a summary of that information with a little extra explanation.
+Release information is always found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
 
-Be aware that updates to LoopDocs may take some time after a new release comes out.
+Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
 
 ## Loop 3 Version History
 
@@ -113,8 +113,8 @@ Loop v3.0.0 was released on January 14, 2023.
 !!! tip "Branch Name Change"
     The branch name associated with the latest Loop release is `main`.
 
-    * All new Git `repositories` on GitHub will be named `main` instead of `master` starting October 1, 2020
-    * GitHub provides tools to assist in modifying existing `repositories` to use `main`.
+    * All new Git `repositories` on *GitHub* will be named `main` instead of `master` starting October 1, 2020
+    * GitHub provides tools to assist in modifying existing `repositories` to use main
 
 ## Remove Apps with Shared App Group
 
