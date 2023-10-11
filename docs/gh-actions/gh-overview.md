@@ -5,23 +5,26 @@
 
 ### Advantages of Building with a Browser
 
-* Mac computer is not required
+* Mac computer is not required to build or install the app
     * Anything with a browser works: PC, Tablet, Mac or iPad
 * Xcode is not required
     * The time required for the initial setup for building with a browser may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
-* Updates are easy
+* Updates are automatic
+    * <span translate="no">Loop 3.4.0</span>&nbsp; and later: 
+        * app is automatically built once a month
+        * app is checked for updates once a week, with new build automatically started
+* If desired, manual updates can be configured, instead of using the default automatic setting
     * Starting an update takes a few minutes of your time; the rest is automatic
-    * Planned for the next release: app will build automatically at least once a month and is checked for updates once a week
 
 ### Considerations for Building with a Browser
 
 * The app is delivered to your phone via *TestFlight*
     * The app is considered "Beta" by  *Apple* and expires after 90 days
-    * With the next release, which includes automatic builds, this should not be an issue
-* After the&nbsp;<span translate="no">GitHub Build</span>&nbsp;starts, the process takes about an hour to complete
-    * You will receive an email indicating success (or failure)
+    * <span translate="no">Loop 3.4.0</span>&nbsp; and later versions provide automatic build as the default
+* Once the build with browser starts, the process takes about an hour to complete
+    * You receive an email indicating success (or failure)
     * The&nbsp;_<span translate="no">Loop</span>_&nbsp;app appears in the *TestFlight* app on the phone, where it can be installed in seconds
-* Frequently used customizations are easy to copy and paste as documented at [Loop and Learn: Loop Customization](https://www.loopandlearn.org/custom-code#custom-list)
+* Frequently used customizations are easy to copy and paste as documented at&nbsp;[_<span translate="no">Loop and Learn: Loop Customization</span>_](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
 
@@ -38,7 +41,7 @@ To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, y
     * If building for a family member, review this section:
         * [Loopers Need Their Own *Apple* ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
     * If building for a child (age depends on the country), review this section:
-        * [Install *TestFlight* Loop for Child](../gh-actions/gh-deploy.md#testflightfor-child)
+        * [*TestFlight* for a Child](../gh-actions/gh-deploy.md#testflight-for-a-child)
 
 Once you have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app in *TestFlight*, you need:
 
@@ -55,31 +58,35 @@ Steps that must be completed to configure for building with a browser are found 
 
 ## Install on Phone
 
-* Instructions to install on your phone are found at:
-    * [Install on Phone](gh-deploy.md)
+Instructions to install on your phone are found at:
+
+* [Install on Phone](gh-deploy.md)
 
 ## Update the App
 
-* Instructions to make updates are found at:
-    * [Update with Browser](gh-update.md)
+Instructions to make manual updates are found at:
+
+* [Update with Browser](gh-update.md)
 
 ## Errors while Building
 
-* If you get an error, please consult:
-    * [Errors with Browser](gh-errors.md)
+If you get an error, please consult:
 
-## Building the development version of the app
+* [Errors with Browser](gh-errors.md)
 
-* For who want to build dev using a browser:
-    * [GitHub Build for dev](gh-update.md#github-build-for-dev)
+## Building the Development Version
+
+For experienced and/or advanced users who want to build the development version of the app, there is additional information at the link below. If you have not built using the browser build method before, it is strongly recommended you first build the released version. Once you have a successful build, then follow the steps for the development version. Building the app is independent of installing the app on your phone from *TestFlight*.
+
+* [Build Development Version](gh-update.md#build-development-version)
 
 ## What if I get stuck?
 
 Try to:
 
 * Scroll back in the directions and see if you missed a paragraph or step.
-* Compare your display with the graphics in LoopDocs.
+* Compare your display with the <span>graphics in *LoopDocs*</span>.
     * Is something different or does yours have an error message?
     * Does the error message guide you to the problem and solution?
-    * Be aware that  *GitHub* often updates where things are - search for  *GitHub* directions if your display looks different than LoopDocs.
+    * Be aware that *GitHub* often updates where things are - search for  *GitHub* directions if your display looks different than our documentation.
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
