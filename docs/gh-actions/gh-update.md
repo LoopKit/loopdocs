@@ -37,13 +37,18 @@
 
 ### Accept Agreements
 
-Sign in to your [<span translate="no">Apple Developer</span>&nbsp;account](https://developer.apple.com/account). If there are agreements you have not accepted, your build will fail and you'll see an [<span translate="no">Annotation</span>&nbsp;Message](gh-errors.md#annotation-message) telling you to do this.
+Sign in to your [<span translate="no">Apple Developer</span>&nbsp;account](https://developer.apple.com/account). If there are agreements you have not accepted, your build will fail and you'll see an [<span translate="no">Annotation</span>&nbsp;Message](gh-errors.md#annotation-message) telling you to accept your agreement.
 
 If you need detailed instructions, click on the [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement) help page.
 
 * Accept the `Apple Program License Agreement` (only)
     * You do NOT need to accept anything related to the `Paid Applications Schedule Agreement`
     * That is only required when you sell an app through the `App Store`
+
+!!! warning "Wait After You Agree"
+    It typically takes 15 minutes before your updated agreement is available so you can complete your build.
+
+    If your build with browser fails, wait longer. An hour wait was reported by one person.
 
 ### Update Fork
 
