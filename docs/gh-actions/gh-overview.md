@@ -71,7 +71,7 @@ Steps that must be completed to configure for building with a browser are found 
 ## Building the development version of the app
 
 * For who want to build dev using a browser:
-    * [GitHub Build for dev](gh-update.md#github-build-for-dev)
+    * [Build Development Version](gh-update.md#build-development-version)
 
 ## What if I get stuck?
 
