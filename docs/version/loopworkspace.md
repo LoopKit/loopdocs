@@ -1,6 +1,6 @@
 ## Loop Workspace
 
-This page is for the "advanced" user. It is a short introduction for folks interested in testing code before it is released, or contributing to that code.
+This page is for the advanced user. It is a short introduction for folks interested in testing code before it is released, or contributing to that code.
 
 If you wandered over here meaning to build the latest Loop release, the rest of this page might be interesting but you should not follow any of the steps. Head back over to [Build Loop App](../build/build-app.md) when you are ready to build the app.
 
@@ -53,7 +53,7 @@ But yes, git commands take awhile to properly use. And they are not plain Englis
 
 ## What is LoopWorkspace?
 
-There is more information in [Loop Development](../version/development.md#what-are-branches) that is not repeated here.
+There is more information in [Loop Development](../version/development.md#what-are-git-branches) that is not repeated here.
 
 The important fact for this discussion on *LoopWorkspace* is that Loop developers own an account in *GitHub* called [`LoopKit`](https://github.com/LoopKit).  Within that account, the developers have several `repositories` that support *Loop* in particular. A `repository` is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are repositories for *Loop* itself, *LoopDocs*, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop&#39;s repo has a lot of info about the app itself; and the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* `repository` code. But, there's more than just a user interface for *Loop*. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit` for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), *LoopKit* for the algorithm about carbs and insulin curves, etc.
 
@@ -147,7 +147,7 @@ For this graphic, the cloned `LoopWorkspace` is in the home directory.
 
 When it's time to update the copy of `LoopWorkspace` on your computer - you have choices. You can use the method below or redo the whole cloning process.
 
-Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../build/code_customization.md#open-a-terminal-in-loopworkspace-folder)
+Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../build/code-customization.md#open-a-terminal-in-loopworkspace-folder)
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }
@@ -372,7 +372,7 @@ If you ever get in doubt and can't remember where your code was cloned from, you
 
 So you've got a great idea for a new feature, made those changes to your LoopWorkspace and want to get them into GitHub. Awesome!
 
-To understand how to do this, we'll need to understand a bit more about how git keeps track of changes. In git, developers can have different "branches" (see [What are Branches](../version/development.md#what-are-branches) on the Loop Development page for more details about what a branch is). There are two different types of branches: remote and local. If you were to fork Loop on GitHub, then the branches that you can see on GitHub are "remote" branches - they're hosted on the GitHub server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote branch. You'll need to "commit" your changes to the local branch, then "push" those changes to the remote branch in order to be able to see them in GitHub. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail because there are different ways and everyone has their own preference.
+To understand how to do this, we'll need to understand a bit more about how git keeps track of changes. In git, developers can have different "branches" (see [What are Git Branches?](../version/development.md#what-are-git-branches) on the Loop Development page for more details about what a branch is). There are two different types of branches: remote and local. If you were to fork Loop on GitHub, then the branches that you can see on GitHub are "remote" branches - they're hosted on the GitHub server. On the other hand, you can also create "local" branches that are stored directly on your computer by "checking out" the remote branch. You'll need to "commit" your changes to the local branch, then "push" those changes to the remote branch in order to be able to see them in GitHub. There are specific commands that you can type into the command line to do all of these actions, but I'm not going to go into detail because there are different ways and everyone has their own preference.
 
 It's a little easier to think about this with an analogy. Let's say you're working at a company that's creating a cookbook. There's a centralized, production-ready version of the cookbook on their website that all the employees can view. Think of the website version of this cookbook as being like the remote branch. You're assigned to change the pancake recipe in the cookbook. Since the company doesn't want employees to make changes directly to the version of the cookbook that the customers see, you need to make a copy of it on your computer so you can make your changes to the pancake recipe. When you make the personal copy on your computer, it's like "checking out" the remote branch. Your copy is like the local branch - you can make whatever changes you want without having to worry about customers accidentally seeing them. When you make an important change to the recipe (like adding a photo or changing the ingredients), you might want to make a note in the edit history so that you can go back to that version of the recipe in case you accidentally make unintended changes - those notes you make would be "commits". Once you're happy with the recipe, you'll add it back into the production version of the cookbook on the website, which is similar to what you're doing when you "push" your changes.
 

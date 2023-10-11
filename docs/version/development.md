@@ -1,10 +1,10 @@
 ## <span translate="no">Loop</span>&nbsp; Development
 
-The early history of *Loop* was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history) section.
+The early history of the *Loop* app was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history) section.
 
 The [*Loop* Releases](../version/releases.md) page lists releases since version 2.0 in reverse chronological order.
 
-The next version of *Loop* is developed using branch(es), independent of the released *Loop* version, which is found in <span>the `main` branch</span>. <span>The `dev` branch</span> is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of *Loop* is improved.
+The next version of the *Loop* app is developed using branch(es), independent of the released *Loop* version, which is found in <span>the `main` branch</span>. <span>The `dev` branch</span> is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of *Loop* is improved.
 
 If you choose to use `dev`, you accept that this code is not released.
 
@@ -12,7 +12,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in dev
 
-This section is an early look at what has been added to dev since Loop 3.2.2 was released and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [Releases](releases.md) page or the appropriate documentation section.
+This section is an early look at what has been added to `dev` since*&nbsp;<span translate="no">Loop 3.2.x</span>*&nbsp;and will probably be in the next release. After the release, some of the content and graphics in this section will move to the [Releases](releases.md) page or the appropriate documentation section.
 
 * [Support for Libre Sensors](#support-for-libre-sensors)
 * [Modified Simulator Interface](#modified-simulator-interface)
@@ -34,14 +34,14 @@ If you are using the *GitHub* / *Browser Build* method, please review:
 
 ### Modified Simulator Interface
 
-The simulators for the Pump and CGM, for the `dev` branch show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, modify settings, and delete the simulator, you must press and hold (long-press) on the top of the display. Anywhere in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to Loop&#39;s main screen, go back to the simulator screen, and try again.
+The simulators for the Pump and CGM, for the `dev` branch show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, modify settings, and delete the simulator, you must press and hold (long-press) on the top of the display. Anywhere in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to the main screen, go back to the simulator screen, and try again.
 
 ![use long press example for pump](img/long-press-to-adjust-simulator.jpg){width="500"}
 {align="center"}
 
-### <code>Algorithm Experiments</code>
+### Algorithm Experiments
 
-Two algorithm experiments have been added to dev. These are &nbsp;<span translate="no">Glucose Based Partial Application</span>&nbsp; and &nbsp;<span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added to `dev``. These are &nbsp;<span translate="no">Glucose Based Partial Application</span>&nbsp; and &nbsp;<span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
@@ -100,13 +100,13 @@ The <code>Temp Basal Only</code> <code>Dosing Strategy</code> provides about 17%
 
 ### <span translate="no">Integral Retrospective Correction</span>&nbsp; (<code>IRC</code>):
 
-* Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
-    * This was tested in a few forks but not included into dev until recently
-    * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
-* Updated with a modification to limit stacking of <code>IRC</code> with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
+* Originally proposed in [*Loop* Issue 695](https://github.com/LoopKit/Loop/issues/695)
+    * This was tested in a few `forks` but not included into `dev` until recently
+    * Initial merge into dev: [*Loop* PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+* Updated with a modification to limit stacking of <code>IRC</code> with Glucose `Momentum`: [*Loop* PR 2028](https://github.com/LoopKit/Loop/pull/2028)
 * <span translate="no">Integral Retrospective Correction</span>, when enabled:
-    * changes the Loop prediction model and thus can affect the recommended dose
-    * applies to both Dosing Strategies: <code>Temp Basal</code> or Automatic Bolus
+    * changes the *Loop* app prediction model and thus can affect the recommended dose
+    * applies to both <code>Dosing Strategies</code>: <code>Temp Basal</code> or <code>Automatic Bolus</code>
 
 Referring to the [`Algorithm: Prediction`](../operation/algorithm/prediction.md) page:
 
@@ -120,7 +120,7 @@ $$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[
 
 Note that the Momentum&#8203; term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
 
-The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays-v3.md#predicted-glucose-chart) is updated when <code>IRC</code> is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the <code>IRC</code> and <code>RC</code> calculations.
+<span>The <code>Retrospective Correction</code> section</span> of the [Predicted Glucose Chart](../loop-3/displays-v3.md#predicted-glucose-chart) is updated when <code>IRC</code> is enabled, as shown in the graphic below. <span>The `Integral effect`</span>, inside the lower blue rectangle, is the difference between the <code>IRC</code> and <code>RC</code> calculations.
 
 ![predicted glucose retrospective section with irc disabled and enabled](img/glucose-details-irc.svg){width="400"}
 {align="center"}
@@ -187,7 +187,7 @@ The usual&nbsp;[_<span translate="no">Loop</span>_&nbsp;expiration notification 
 
 ### <span translate="no">GitHub Browser Build</span>&nbsp; Updates
 
-The dev branch has several updates merged that make it easier to find errors in configuration and that make the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; automatic.
+The `dev` branch has several updates merged that make it easier to find errors in configuration and that make the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; automatic.
 
 Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for&nbsp;_<span translate="no">Loop</span>_&nbsp;will:
 
@@ -196,7 +196,7 @@ Note that the automatic build feature is opt-out. In other words, unless you tak
 
 It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;_<span translate="no">Loop</span>_&nbsp;in their  *TestFlight*  app.
 
-For users of the dev branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
+For users of the `dev` branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
 
 * [Configure GH_PAT](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#gh_pat-workflow-permission)
 * [Modify Scheduled Building and Synchronization](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#modify-scheduled-building-and-synchronization)
@@ -211,9 +211,9 @@ In addition to the easier to read error messages found with these updates, these
     * The &nbsp;<span translate="no">alive</span>&nbsp; branch needed to enable automatic building is created automatically
     * If their GH_PAT does not have `repo, workflow` permission, a prominent message is displayed with each Action completed
 
-These sections are still useful for version 3.3.0 dev users:
+These sections are still useful for version 3.3.0 `dev` users:
 
-* [Browser Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for dev branch
+* [Browser Build for dev](../gh-actions/gh-update.md#github-build-for-dev): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for `dev` branch
 * [Browser Build: One-Time Changes](../gh-actions/gh-update.md#one-time-changes): New steps and dates at which the new steps were added
 
 ### Miscellaneous Code Fixes
@@ -233,7 +233,7 @@ The code that feeds Loop data to remote services like Tidepool and Nightscout ha
 
 There is a lot of discussion about *branches* with *Loop* but the concept is simple. Basically, they are all slightly different versions of *Loop*...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about Loop&#39;s code and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video that `master` was the old name for the `main` branch. The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` recommended for developers/testers.
+To really understand what branches are, we should probably explain a little more about the software and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s) created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video that `master` was the old name for the `main` branch. The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` recommended for developers/testers.
 
 ### `Loop` GitHub Information
 
@@ -252,7 +252,7 @@ But then...the chefs/developers go on a trip. They are inspired by new cuisine a
 
 After much testing and tweaking, eventually, the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in *Loop*,  <span>Loop&#39;s `main` branch</span> is updated with the new features coming from `dev` (aka, the `dev` branch is merged into the `main` branch). When that happens, the `main` branch gets another `release` version. At this point, `dev` and `main` are identical. They remain so until the development team for *Loop*&nbsp; starts working on the next batch of improvements, which could be in the next hour or even days later, but then the cycle starts again.  The developers will start editing the code again and dropping those edits in the `dev` branch for further development.
 
-## What's going on in the dev branch?
+## What's going on in the `dev` branch?
 
 The `dev` branch, currently v3.3.0, is where the next version of *Loop* is being developed and tested.
 
@@ -284,7 +284,7 @@ If you click on the commit, you can see exactly what changes to the code were ma
 ![img/commit.png](img/commit.png){width="550"}
 {align="center"}
 
-I don't expect many of you would understand exactly what the edits mean, or how the new code might function. However, I bring up the topic of git commit history so that you can use that to realize just how often the dev branch is updated. Go ahead and look at the number and frequency of commits in that branch.  That's why no one would want to maintain a documentation list of the changes in the dev branch. It's just too much of a moving target.
+I don't expect many of you would understand exactly what the edits mean, or how the new code might function. However, I bring up the topic of git commit history so that you can use that to realize just how often the `dev` branch is updated. Go ahead and look at the number and frequency of commits in that branch.  That's why no one would want to maintain a documentation list of the changes in the `dev` branch. It's just too much of a moving target.
 
 ### Watch the `Loop Repository` and `Issues List`
 
@@ -301,7 +301,7 @@ Keep watching [`The Looped Group`](https://www.facebook.com/groups/TheLoopedGrou
 
 ### Become familiar with your data sources
 
-Another useful thing if you'll be on dev branches undergoing a lot of active change...know how *Loop* works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries stored in the *Health* app.
+Another useful thing if you'll be on `dev` branches undergoing a lot of active change...know how *Loop* works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries stored in the *Health* app.
 
 ### Generate an Issue Report
 
