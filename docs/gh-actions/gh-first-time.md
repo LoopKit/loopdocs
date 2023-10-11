@@ -1,12 +1,12 @@
-## Build Loop using *GitHub* Actions
+## Build the *Loop* App using *GitHub*
 
 ???+ info "Time Estimate (click to open/close)"
-    - If you have never built Loop (allow up to one week elapsed time)
-        * Requesting and getting an *Apple* Developer Account: 1-2 days
-        * Creating and configuring your *GitHub* repositories (without *Apple* Information): 1-2 hours
-        * Adding <code>Secrets</code> (requires *Apple* Developer Account): 1 hour
-        * Performing the Action steps: 30 minutes to 2 hours
-    - If you have previously built Loop with Xcode you have fewer steps and are probably familiar with some of the concepts
+    - If you have never built the *Loop* app (allow up to one week elapsed time)
+        * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
+        * Create and configure your *GitHub* account and `repositories`: 1-2 hours
+        * Add <code>Secrets</code> (requires *Apple Developer* Account): 1 hour
+        * Performing the `Action` steps: 30 minutes to 2 hours
+    - If you have previously built the *Loop* app with *Xcode* you have fewer steps and are probably familiar with some of the concepts
         * Expect 1 to 4 hours
 
 ???+ abstract "Page Summary with Links (click to open/close)"
@@ -14,11 +14,11 @@
 
     * You can skip some sections but please read this one: [Save Your Information](#save-your-information)
 
-    Once you have *Apple* Developer and *GitHub* accounts, the steps below are a high-level summary with links to the detailed section of this LoopDocs page.
+    Once you have *Apple Developer* and *GitHub* accounts, the steps below are a high-level summary with links to the detailed section of this LoopDocs page.
 
     You can think of the first part as a scavenger hunt where you find or generate and save six <code>Secrets</code>.
 
-    * *Apple*:
+    * _<span translate="no">Apple</span>_:
         * [Collect the four *Apple* <code>Secrets</code>](#collect-the-four-apple-secrets)
     * *GitHub*:
         * [Collect the <code>GH_PAT</code> Secret](#collect-the-gh_pat-secret)
@@ -31,13 +31,13 @@
         * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](#configure-secrets)
         * [`Action: 1. Validate Secrets`](#validate-secrets)
         * [`Action: 2. Add Identifiers`](#add-identifiers)
-    * *Apple*:
+    * _<span translate="no">Apple</span>_:
         * [Configure Identifiers for *Loop*](#configure-identifiers-for-loop)
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](#create-loop-app-in-app-store-connect)
     * *GitHub*:
         * [`Action: 3. Create Certificates`](#create-certificates)
         * [`Action: 4. Build Loop`](#build-loop)
-    * *Apple*: [Set up `Internal *TestFlight* Group`](#set-up-users-and-access-testflight)
+    * _<span translate="no">Apple</span>_: [Set up `Internal *TestFlight* Group`](#set-up-users-and-access-testflight)
     * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
 ???+ question "FAQs (click to open/close)"
@@ -66,7 +66,7 @@ Some sections have a Section Summary:
 * If the summary is all you need, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
 * Or follow the detailed instructions below the summary
 
-As you configure for Browser Build, you go back and forth between *GitHub* and *Apple* Developer webpages. Use right click to open a new tab or copy a link address, as appropriate, while proceeding.
+As you configure for Browser Build, you go back and forth between *GitHub* and *Apple Developer* webpages. Use right click to open a new tab or copy a link address, as appropriate, while proceeding.
 
 An automatic table of contents (TOC) should appear for each page on the right side of your browser (if browser is "wide" enough). If not, tap on the hamburger menu (upper left) then this page name to see the TOC.
 
@@ -80,7 +80,7 @@ For sparse instructions, right click on the link below:
 
 There are two prerequisites to build Loop using <code>*GitHub* Browser Build</code>.
 
-1. Paid *Apple* Developer account ($99/year)
+1. Paid *Apple Developer* account ($99/year)
 1. Free *GitHub* account
 
 #### Prerequisites to Install Loop
@@ -111,7 +111,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
 * API `Key`:`Application Programming Interface Key`
-    * You obtain and save this key from the *Apple* Developer website
+    * You obtain and save this key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
 * `Identifiers`: are required to build Loop with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
@@ -122,8 +122,8 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
         * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
         * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
-* [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple* Developers to review their apps
-    * Once you purchase an *Apple Developer* annual account, you are an *Apple* Developer and have access to this site
+* [`App Store Connect`](https://appstoreconnect.apple.com): a website to review apps build with your *Apple Developer* account
+    * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
@@ -206,7 +206,7 @@ You need to save your information digitally, so you can copy and paste. The info
 ??? abstract "Section Summary (click to open/close)"
     You will be saving 4 <code>Secrets</code> from your *Apple* Account in this step.
 
-    1. Sign in to the [*Apple* developer portal page](https://developer.apple.com/account/resources/certificates/list).
+    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account/resources/certificates/list).
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
         * Need help? Look at this section on the update page: [Accept Agreements](gh-update.md#accept-agreements)
     1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
@@ -218,27 +218,27 @@ You need to save your information digitally, so you can copy and paste. The info
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-gh_pat-secret) To skip the detailed instructions, click on [Collect the <code>GH_PAT</code> Secret](#collect-the-gh_pat-secret)
 
-This section provides detailed instructions for the four <code>Secrets</code> associated with your *Apple* Developer ID.
+This section provides detailed instructions for the four <code>Secrets</code> associated with your *Apple Developer* ID.
 
 |Name|Description|
 |---------|---------|
-|<code>TEAMID</code>|This 10-character identifier is associated with your *Apple* Developer ID and never changes|
-|<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your *Apple* Developer ID and never changes|
+|<code>TEAMID</code>|This 10-character identifier is associated with your *Apple Developer* ID and never changes|
+|<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your *Apple Developer* ID and never changes|
 |<code>FASTLANE_KEY_ID</code>|Key ID provided when you create an `API Key` in App Store Connect; it is associated with the <code>FASTLANE_KEY</code>|
 |<code>FASTLANE_KEY</code>|Copy the full key from the text file you downloaded when generating the `API Key` - Filename has <code>FASTLANE_KEY_ID</code> value embedded in it.<br>Include everything in the file from <br>`-----BEGIN PRIVATE KEY-----`<br>and ending in <br>`-----END PRIVATE KEY-----`<br> |
 
-### New *Apple* Developer Account
+### New *Apple Developer* Account
 
-[<span class="loop-bigger">:material-skip-forward:</span>](#find-teamid) If you have an *Apple* Developer Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
+[<span class="loop-bigger">:material-skip-forward:</span>](#find-teamid) If you have an *Apple Developer* Account, skip ahead to [Find <code>TEAMID</code>](#find-teamid).
 
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
-* LoopDocs has an [*Apple* Developer Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
-* This link takes you straight to [*Apple* Developer account](https://developer.apple.com) to sign up
+* LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
+* This link takes you straight to [*Apple Developer* account](https://developer.apple.com) to sign up
 
 ### Find <code>TEAMID</code>
 
-Sign in to your *Apple* Developer account at this link: [*Apple* developer portal page](https://developer.apple.com/account).
+Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account).
 
 1. Click `Account` in the top menu bar
 1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
@@ -249,7 +249,7 @@ Sign in to your *Apple* Developer account at this link: [*Apple* developer porta
     {align="center"}
 
 1. Next to the `Team ID` field, is a 10-character ID number.
-  This is your ***Apple* Developer `TEAMID`**.
+  This is your ***Apple Developer* `TEAMID`**.
 
 ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
     {align="center"}
@@ -267,8 +267,8 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
 ### Generate `API Key`
 
-!!! info "Paid *Apple* Developer Account is Required"
-    To generate the `API Key`, you must have a paid *Apple* Developer account.
+!!! info "Paid *Apple Developer* Account is Required"
+    To generate the `API Key`, you must have a paid *Apple Developer* account.
 
     If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [`*GitHub* Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure Secrets](#configure-secrets) until your *Apple* account is active.
 
@@ -304,7 +304,7 @@ Review the graphic and then follow the directions below to save more parameters 
 ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
 {align="center"}
 
-1. A button labeled Copy is always adjacent to the `Issuer ID` above the word Active (this is the same for all keys that you generate with this *Apple* Developer ID)
+1. A button labeled Copy is always adjacent to the `Issuer ID` above the word Active (this is the same for all keys that you generate with this *Apple Developer* ID)
     * Tap on the `Copy` button - this copies the `Issuer ID` into your paste buffer
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_ISSUER_ID`
 1. Hover to the right of the `Key ID` and the `Copy Key ID` button shows up
@@ -687,7 +687,7 @@ Please read carefully to avoid confusion.
 ??? abstract "Section Summary (click to open/close)"
     [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built Loop via Xcode using this *Apple* ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
-    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
+    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
     1. For Description, use "Loop App Group".
     1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`.
     1. Click "Continue" and then "Register".
@@ -698,7 +698,7 @@ The `Loop` *App Group* already exists if you previously built Loop using *Xcode*
 
 If you have never built Loop with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
-1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple* developer site.
+1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
 1. For **`Description`**, use `Loop App Group`.
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
@@ -707,13 +707,13 @@ If you have never built Loop with *Xcode* using your `TEAMID`, you need to creat
 
 #### New Builders
 
-Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple* developer site.
+Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
 [<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for Loop 3](#table-with-name-and-identifier-for-loop-3).
 
 #### Previous Xcode Builders
 
-Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple* developer site.
+Right click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
 Because you built Loop using *Xcode*, the **`NAME`** associated with at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building Loop 3.
 
@@ -735,7 +735,7 @@ Because you built Loop using *Xcode*, the **`NAME`** associated with at least th
 
     Note 2 - Depending on your build history, you may find some of the Identifiers already have your "App Group" and you are just verifying the status.
 
-    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the *Apple* developer site
+    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site
     1. For each of the following identifier names:
         * `Loop`
         * `Loop Intent Extension`
@@ -1032,7 +1032,7 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 
 To make it easy when configuring the identifiers, go through and delete as many as you can.
 
-* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the *Apple* developer site.
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 * Use the graphic below as a guide to removing identifiers
 * Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
 * It is OK to delete an identifier even if it does have your correct `TEAMID`
