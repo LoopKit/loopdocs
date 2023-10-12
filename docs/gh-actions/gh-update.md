@@ -22,7 +22,7 @@ This is only available with Loop 3 and Loop development branch.
 
     If your `GitHub Personal Access Token` has expired, we recommend you update it with `No Expiration` as explained at [GitHub Token](#github-token).
 
-    If you are running Loop-dev, be sure to review [GitHub Build for dev](#github-build-for-dev)
+    If you are running Loop-dev, be sure to review [Build Development Version](#build-development-version)
 
     * You should be following along with zulipchat when using dev
     * Summary build updates can be found under the [One-Time Changes](#one-time-changes) section
@@ -78,7 +78,7 @@ Open your *GitHub* account and select your LoopWorkspace repository from your re
 !!! question "Building a different branch"
     Do I need to do anything special to build a different branch?
 
-    Yes: please follow instructions at [GitHub Build for dev](#github-build-for-dev)
+    Yes: please follow instructions at [Build Development Version](#build-development-version)
 
 ### Build Loop
 
@@ -99,7 +99,7 @@ Refer to graphic below as you follow the steps to Build Loop.
 
 If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)
 
-If you are using the dev branch, head over to [GitHub Build for dev](#github-build-for-dev) for information.
+If you are using the dev branch, head over to [Build Development Version](#build-development-version) for information.
 
 Otherwise, head over to [GitHub Errors](gh-errors.md).
 
@@ -265,7 +265,7 @@ Refer to the GIF for help. There are 3 frames.
 
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [GitHub Build Update](#github-build-update) instructions to start a new build.
 
-## *GitHub* Build for dev
+## Build Development Version
 
 You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either dev or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
 
@@ -419,7 +419,7 @@ Your default branch has been changed.
 
 ## Modify Automatic Building
 
-For someone using [development code](#github-build-for-dev) for their own use, they probably want to decide when to update their fork to the most recent commit. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are added to Loop 3.3.0 and later.
+For someone using [development code](#build-development-version) for their own use, they probably want to decide when to update their fork to the most recent commit. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are added to Loop 3.3.0 and later.
 
 You can affect the default behavior:
 

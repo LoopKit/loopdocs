@@ -44,7 +44,7 @@ While Loop-dev is under active development, you should monitor zulipchat and upd
 
 If you are using the GitHub method, once you have configured your fork to point to the dev branch, just follow the update instructions.
 
-* [Browser Build for dev](../gh-actions/gh-update.md#github-build-for-dev)
+* [Browser Build for dev](../gh-actions/gh-update.md#build-development-version)
 
 ### Mac-Xcode Build Method
 

@@ -9,7 +9,7 @@ Many new Loopers interpret Loop Overrides as a one-for-one replacement for manua
 
     When you modify insulin needs, you are affecting **basal rates**, **carb ratios**, and **insulin sensitivity factors (ISF)** for the duration of the override.
 
-    A common mistake is to think selecting an override with 10% Overall Insulin Needs is like selecting 10% basal rate with a manual pump. **With Loop, that selection modifies all your normal settings by a factor of 10!**ß
+    A common mistake is to think selecting an override with 10% Overall Insulin Needs is like selecting 10% basal rate with a manual pump. **With Loop, that selection modifies all your normal settings by a factor of 10!**
 
 ## Manual Temp Basal
 
