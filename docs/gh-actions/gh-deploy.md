@@ -4,7 +4,7 @@ This is only available with&nbsp;_<span translate="no">Loop 3</span>_.
 
 **You must build&nbsp;_<span translate="no">Loop</span>_&nbsp;every 90 days when you use this method.**
 
-After [building&nbsp;_<span translate="no">Loop</span>_&nbsp;using a browser](../gh-actions/gh-first-time.md#build-loop), you are ready to install on as many phones as you and your family members need.
+After [building&nbsp;_<span translate="no">Loop</span>_&nbsp;using a browser](../gh-actions/gh-first-time.md#build-the-loop-app), you are ready to install on as many phones as you and your family members need.
 
 * If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 
