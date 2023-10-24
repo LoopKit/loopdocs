@@ -20,12 +20,11 @@
     * The app is considered "Beta" by  *Apple* and expires after 90 days
     * With the next release, which includes automatic builds, this will be even easier than it is now
 * After the&nbsp;<span translate="no">*GitHub* Build</span>&nbsp;starts, the process takes about an hour to complete
-    * You will receive an email indicating success (or failure)
+    * You receive an email indicating success (or failure)
     * The&nbsp;_<span translate="no">Loop</span>_&nbsp;app appears in the *TestFlight* app on the phone, where it can be installed in seconds
 * Frequently used customizations are easy to copy and paste as documented at&nbsp;[_<span translate="no">Loop and Learn: Loop Customization</span>_](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
-
 
 ## Requirements
 
@@ -74,7 +73,7 @@ If you get an error, please consult:
 
 ## Building the development version of the app
 
-For those who want to build dev using a browser:
+For experienced and/or advanced users who want to build the development version of the app, there is additional information at the link below. If you have not built using the browser build method before, it is strongly recommended you first build the released version. Once you have a successful build, then follow the steps for the development version. Building the app is independent of installing the app on your phone from *TestFlight*.
 
 * [Build Development Version](gh-update.md#build-development-version)
 
