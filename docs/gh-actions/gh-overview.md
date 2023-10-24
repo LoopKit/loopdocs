@@ -56,32 +56,36 @@ Steps that must be completed to configure for building with a browser are found 
 
 ## Install on Phone
 
-* Instructions to install on your phone are found at:
-    * [Install on Phone](gh-deploy.md)
+Instructions to install on your phone are found at:
+
+* [Install on Phone](gh-deploy.md)
 
 ## Update the App
 
-* Instructions to make updates are found at:
-    * [Update with Browser](gh-update.md)
+Instructions to make updates are found at:
+
+* [Update with Browser](gh-update.md)
 
 ## Errors while Building
 
-* If you get an error, please consult:
-    * [Errors with Browser](gh-errors.md)
+If you get an error, please consult:
+
+* [Errors with Browser](gh-errors.md)
 
 ## Building the development version of the app
 
-* For who want to build dev using a browser:
-    * [Build Development Version](gh-update.md#build-development-version)
+For those who want to build dev using a browser:
+
+* [Build Development Version](gh-update.md#build-development-version)
 
 ## What if I get stuck?
 
 Try to:
 
 * Scroll back in the directions and see if you missed a paragraph or step
-* Compare your display with the graphics in LoopDocs
+* Compare your display with the <span>graphics in *LoopDocs*</span>
     * Is something different or does yours have an error message?
     * Does the error message guide you to the problem and solution?
-    * Be aware that *GitHub* often updates where things are - search for *GitHub* directions if your display looks different than our graphics
+    * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for *GitHub* directions if your display looks different than our documentation
 * If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
     * Remember - to get help with Browser Build, all we need is your *GitHub* username and a brief description of your problem
