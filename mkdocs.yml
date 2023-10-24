@@ -143,7 +143,7 @@ nav:
     - 'Mac-Xcode Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/computer.md'
     - 'Xcode Version': 'build/xcode-version.md'
-    - 'Xcode Preferences': 'build/xcode-settings.md'
+    - 'Xcode Settings': 'build/xcode-settings.md'
     - 'Build Loop': 'build/build-app.md'
     - 'Oh dear! Build errors?': 'build/build-errors.md'
     - 'Updating/Rebuilding': 'build/updating.md'
