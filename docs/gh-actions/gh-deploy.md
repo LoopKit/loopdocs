@@ -2,7 +2,7 @@
 
 This is only available with&nbsp;_<span translate="no">Loop 3</span>_.
 
-**You must build&nbsp;_<span translate="no">Loop</span>_&nbsp;every 90 days when you use this method.**
+**The *Loop* app must be built at least every 90 days when using a browser to build.**
 
 After [building&nbsp;_<span translate="no">Loop</span>_&nbsp;using a browser](../gh-actions/gh-first-time.md#build-the-loop-app), you are ready to install on as many phones as you and your family members need.
 
@@ -57,7 +57,7 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-Automatic features will be available when version 3.4.0 is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default branch</span>). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for 3.4.0:
+Automatic features will be available when the next version is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default branch</span>). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions when you update to the next release or use `dev`:
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
 * Build the app at least once a month and upload to *TestFlight*
@@ -68,7 +68,7 @@ It is already true that, unless you make a change, the default setting will:
 
 ### Recommendation
 
-Recommended settings for 3.4.0 (when it is released) and later:
+Recommended settings:
 
 * Allow automatic update of your&nbsp;<span translate="no">fork</span>
 * Allow automatic build and upload to *TestFlight*
