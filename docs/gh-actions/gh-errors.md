@@ -101,11 +101,6 @@ Click on the top link to view the record of the failed action as shown in the gr
 
 ## Action: `Validate Secrets` Errors
 
-A new action was added with *Loop* 3.1 to provide better error messages if something is wrong with your *Secrets*. In addition, the Actions are numbered to match the order in which they should be applied.
-
-![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
-{align="left"}
-
 To generate the graphic below, some items were deliberately set to be incorrect in the *Secrets* list. Representative error messages are shown when running the validate secrets action.
 
 ![representative messages with deliberate errors when running validate secrets](img/gh-validate-secrets.png){width="800"}
