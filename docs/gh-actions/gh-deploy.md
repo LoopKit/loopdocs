@@ -90,7 +90,7 @@ Go back to the *TestFlight* app on your phone and tap on your app name in the li
 
 When you are ready to install, just open the *TestFlight* app and click Install to get the most recent build and then click Open when it completes the installation. All your settings and connections to CGM and Pump are maintained.
 
-If you tap on the bottom row that says `Previous Builds`, you can view and choose an older build (as long as it has not expired).
+If you tap on the bottom row that says `Previous Builds`, highlighted by the dashed-green rectangle, you can view and choose an older build (as long as it has not expired).
 
 ## *TestFlight* for a Child
 
