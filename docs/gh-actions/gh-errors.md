@@ -176,7 +176,7 @@ Follow these steps:
 !!! tip "Open each link below in a separate tab"
     It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.
 
-1. Delete all the identifiers that you can, following the steps in [First Time: Delete Identifiers](gh-first-time.md#delete-identifiers)
+1. Delete all the identifiers that you can, following the steps in [Configure to Use Browser: Delete Identifiers](gh-first-time.md#delete-identifiers)
     - Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
     - It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
 
@@ -184,9 +184,9 @@ Follow these steps:
     - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership) page for that `TEAMID`.
     - Follow the update instructions here (this example is for `GH_PAT`, you'll do the same but for `TEAMID`) [Update Secrets](gh-update.md#update-secrets)
 
-1. Run Action: [First Time: `Add Identifiers`](gh-first-time.md#add-identifiers) again
+1. Run Action: [Configure to Use Browser: `Add Identifiers`](gh-first-time.md#add-identifiers) again
 
-1. Follow all the steps in this section with the **correct** `TEAMID` [First Time: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [First Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
+1. Follow all the steps in this section with the **correct** `TEAMID` [Configure to Use Browser: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [Configure to Use Browser: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
 
 The first time through, you created an app with a `Bundle ID` that does NOT include your `TEAMID`.
 
@@ -214,7 +214,7 @@ That *App* with the wrong `Bundle ID` remains in the *App store* but it is hidde
 
 Now click on the `Add Apps` button or the :heavy_plus_sign: (plus sign) if you have other apps in the *App Store*.
 
-Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) directions with these additions:
+Follow the [Configure to Use Browser: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) directions with these additions:
 
 * You must come up with a new name for your *Loop* App
 * Triple-check that the `Bundle ID` you choose is for *Loop* and contains your `TEAMID`, it should look like: `com.TEAMID.loopkit.Loop`
@@ -222,7 +222,7 @@ Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#c
 
 #### Create Certificates
 
-You should be able to continue with the First Time Steps to `Create Certificates` and then `Build Loop` and keep going.
+You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
 ### Error: Missing Repository Access
 
@@ -245,7 +245,7 @@ If you see this phrase, the `fastlane` package that is utilized during the `3. C
 To fix this error:
 
 - Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
-  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [Configure to Use Browser: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
@@ -260,7 +260,7 @@ NOTE: for next release or if using the dev branch - you want <code>GH_PAT</code>
 
 #### Create Certificates
 
-You should be able to continue with the [First Time Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
+You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
 ### Error: Could not create
 
