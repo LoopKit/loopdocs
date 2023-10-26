@@ -3657,7 +3657,7 @@
 </div>
 <ol>
 <li>
-<p>Delete all the identifiers that you can, following the steps in <a href="../gh-first-time/#delete-identifiers">First Time: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
+<p>Delete all the identifiers that you can, following the steps in <a href="../gh-first-time/#delete-identifiers">Configure to Use Browser: Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></p>
 <ul>
 <li>Delete all the other identifiers first, then try to delete the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier with the wrong <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code></li>
 <li>It is fine to just ignore identifiers with the wrong <code><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></code>, but do not use them</li>
@@ -3671,10 +3671,10 @@
 </ul>
 </li>
 <li>
-<p>Run Action: <a href="../gh-first-time/#add-identifiers">First Time: <code>Add Identifiers</code></a> again</p>
+<p>Run Action: <a href="../gh-first-time/#add-identifiers">Configure to Use Browser: <code>Add Identifiers</code></a> again</p>
 </li>
 <li>
-<p>Follow all the steps in this section with the <strong>correct</strong> <code>TEAMID</code> <a href="../gh-first-time/#configure-identifiers-for-loop">First Time: Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> but when you get to the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a>, you need to return to this page and follow the instructions below to remove the app and add a new one.</p>
+<p>Follow all the steps in this section with the <strong>correct</strong> <code>TEAMID</code> <a href="../gh-first-time/#configure-identifiers-for-loop">Configure to Use Browser: Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> but when you get to the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Configure to Use Browser: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a>, you need to return to this page and follow the instructions below to remove the app and add a new one.</p>
 </li>
 </ol>
 <p>The first time through, you created an app with a <code>Bundle ID</code> that does NOT include your <code>TEAMID</code>.</p>
@@ -3699,14 +3699,14 @@
 <p>That <em>App</em> with the wrong <code>Bundle ID</code> remains in the <em>App store</em> but it is hidden so it won't confuse you.</p>
 <h4 id="add-app-with-correct-teamid">Add App with Correct <code>TEAMID</code><a class="headerlink" href="#add-app-with-correct-teamid" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Now click on the <code>Add Apps</code> button or the <img alt="➕" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2795.svg" title=":heavy_plus_sign:" /> (plus sign) if you have other apps in the <em>App Store</em>.</p>
-<p>Follow the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">First Time: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> directions with these additions:</p>
+<p>Follow the <a href="../gh-first-time/#create-loop-app-in-app-store-connect">Configure to Use Browser: Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> directions with these additions:</p>
 <ul>
 <li>You must come up with a new name for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</li>
 <li>Triple-check that the <code>Bundle ID</code> you choose is for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and contains your <code>TEAMID</code>, it should look like: <code>com.TEAMID.loopkit.Loop</code></li>
 <li>You must come up with a new <code>SKU</code> for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App (try <code>1234</code>, if you used <code>123</code> before)</li>
 </ul>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You should be able to continue with the First Time Steps to <code>Create Certificates</code> and then <code>Build Loop</code> and keep going.</p>
+<p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">Configure to Use Browser Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
 <h3 id="error-missing-repository-access">Error: Missing Repository Access<a class="headerlink" href="#error-missing-repository-access" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
@@ -3725,7 +3725,7 @@
 <p>To fix this error:</p>
 <ul>
 <li>Open this link: <a href="https://github.com/settings/tokens/">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/settings/tokens/</a></li>
-<li>Here you will see your personal access token (<code>Fastlane Access Token</code>) that was created during <a href="../gh-first-time/#create-github-personal-access-token">First Time: Setup <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>: Create <code>GitHub Personal Access Token</code></a></li>
+<li>Here you will see your personal access token (<code>Fastlane Access Token</code>) that was created during <a href="../gh-first-time/#create-github-personal-access-token">Configure to Use Browser: Setup <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>: Create <code>GitHub Personal Access Token</code></a></li>
 <li>Note that <code>Tokens (classic)</code> is highlighted in the menu on the left</li>
 <li>Click on the token name (should be bold, blue <strong><code>Fastlane Access Token</code></strong> ) to open its detail page</li>
 <li>None of the checkboxes under <strong><code>Select Scopes</code></strong> will be checked – this is what's causing the issue.</li>
@@ -3736,7 +3736,7 @@
 <p>After you have clicked <code>Update token</code> you should see the token overview again with the message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the <code>X</code> near the upper right side if it appears).</p>
 <p>NOTE: for next release or if using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> - you want <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> to have <code>repo, workflow</code> scope. So click on the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> scope now and save yourself a step later.</p>
 <h4 id="create-certificates_1">Create Certificates<a class="headerlink" href="#create-certificates_1" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">First Time Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
+<p>You should be able to continue with the <a href="../gh-first-time/#create-certificates">Configure to Use Browser Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
 <h3 id="error-could-not-create">Error: Could not create<a class="headerlink" href="#error-could-not-create" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your log file.</p>
 <blockquote>

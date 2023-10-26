@@ -3578,7 +3578,7 @@
 
 <h2 id="update-the-loop-app">Update the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App<a class="headerlink" href="#update-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>This page is only relevant when building with a browser.</strong></p>
-<p><strong>For <em>Mac-<abbr title="program used to build an app">Xcode</abbr></em> updates, please see: <a href="../../build/updating/">Build with <em>Mac-<abbr title="program used to build an app">Xcode</abbr></em></a></strong></p>
+<p><strong>For <em>Mac-<abbr title="program used to build an app">Xcode</abbr></em> updates, please see: <a href="../../build/updating/">Updating/Rebuilding</a></strong></p>
 <details class="info" open="open">
 <summary>Time Estimate (click to open/close)</summary>
 <p>Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
@@ -3692,9 +3692,9 @@
 </ul>
 <p align="center"><img alt="graphic indicating how to build again" src="../img/github-build-actions-build-again.svg" width="700" /></p>
 <h4 id="what-if-the-build-fails">What if the Build Fails<a class="headerlink" href="#what-if-the-build-fails" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If a new release is announced at <a href="../../version/releases/#current-release">Current Release</a>, look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)</p>
+<p>If a new release is announced at <a href="../../version/releases/#current-release">Current Release</a>, look to see if there are instructions about extra steps required with the release. (The release after 3.2.3 will certainly have extra instructions.)</p>
 <p>If you are using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, head over to <a href="#build-development-version">Build Development Version</a> for information.</p>
-<p>Otherwise, head over to <a href="../gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a>.</p>
+<p>Otherwise, head over to <a href="../gh-errors/">Errors with Browser</a>.</p>
 <h4 id="apple-email-to-ignore"><em>Apple</em> Email to Ignore<a class="headerlink" href="#apple-email-to-ignore" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
 <li>You can ignore an email from <em>Apple</em> that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that</li>
@@ -3704,7 +3704,7 @@
 <ul>
 <li>If you get an email that the action failed, then return to your <abbr title="contains project files and each file's revision history">repository</abbr> and look for Build Action error messages<ul>
 <li>Click on the most recent Build job with the red x by it</li>
-<li>If the details show this message, "<a href="../gh-errors/#could-not-install-wwdr-certificate">Could not install WWDR certificate</a>"<ul>
+<li>If the details show this message, <a href="../gh-errors/#could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code></a><ul>
 <li>This means <em>Apple</em> did not reply to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> as fast as <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> expected</li>
 <li>Make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
 <li>Repeat the build (previous step)</li>
@@ -3733,7 +3733,7 @@
 <ul>
 <li><strong>This is the recommended option</strong></li>
 <li>Open <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
-<li>If you are building for a child, follow the <a href="../gh-deploy/#testflightfor-child">Install <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> for Child</a> instructions again</li>
+<li>If you are building for a child, follow the <a href="../gh-deploy/#testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a> instructions again</li>
 </ul>
 <p align="center"><img alt="install Loop from *TestFlight*" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h4 id="automatic-update-enabled">Automatic Update Enabled<a class="headerlink" href="#automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -3919,7 +3919,7 @@
 <li>Wait for it to succeed</li>
 <li>Add the <code>App Group</code> to this one new Identifier</li>
 </ul>
-<p>All other identifiers should be already set up. If they are not, please go through the steps on the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First Time</a> page to figure out what you are missing.</p>
+<p>All other identifiers should be already set up. If they are not, please go through the steps on the <a href="../gh-first-time/">Configure to Use Browser</a> page to figure out what you are missing.</p>
 <table>
 <thead>
 <tr>
@@ -4111,7 +4111,7 @@
 </ul>
 </li>
 <li>
-<p>If you are done with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can delete the whole <abbr title="contains project files and each file's revision history">repository</abbr>; but you should be sure about this because you'll need to start over with <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First Time</a> to restore ability to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
+<p>If you are done with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can delete the whole <abbr title="contains project files and each file's revision history">repository</abbr>; but you should be sure about this because you'll need to start over with <a href="../gh-first-time/">Configure to Use Browser</a> to restore ability to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
 </li>
 </ul>
 <h2 id="historical-interest-only">Historical Interest Only<a class="headerlink" href="#historical-interest-only" title="Anchor link to this Header on this Page">&para;</a></h2>
