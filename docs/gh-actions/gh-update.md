@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode* updates, please see: [Build with *Mac-Xcode*](../build/updating.md)**
+**For *Mac-Xcode* updates, please see: [Updating/Rebuilding](../build/updating.md)**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App
@@ -113,11 +113,11 @@ Refer to graphic below as you follow the steps to build the *Loop* app.
 
 #### What if the Build Fails
 
-If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.2 will certainly have extra instructions.)
+If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.3 will certainly have extra instructions.)
 
 If you are using the dev branch, head over to [Build Development Version](#build-development-version) for information.
 
-Otherwise, head over to [GitHub Errors](gh-errors.md).
+Otherwise, head over to [Errors with Browser](gh-errors.md).
 
 #### *Apple* Email to Ignore
 
@@ -129,7 +129,7 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
     * Click on the most recent Build job with the red x by it
-    * If the details show this message, "[Could not install WWDR certificate](gh-errors.md#could-not-install-wwdr-certificate)"
+    * If the details show this message, [`Could not install WWDR certificate`](gh-errors.md#could-not-install-wwdr-certificate)
          * This means *Apple* did not reply to *GitHub* as fast as *GitHub* expected
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
@@ -154,7 +154,7 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../gh-ac
 
 * **This is the recommended option**
 * Open *TestFlight* on your phone and click `Install` as shown in the GIF below
-* If you are building for a child, follow the [Install *TestFlight* Loop for Child](gh-deploy.md#testflightfor-child) instructions again
+* If you are building for a child, follow the [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child) instructions again
 
 ![install Loop from *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}
@@ -375,7 +375,7 @@ The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the mor
 * Wait for it to succeed
 * Add the `App Group` to this one new Identifier
 
-All other identifiers should be already set up. If they are not, please go through the steps on the [GitHub First Time](gh-first-time.md) page to figure out what you are missing.
+All other identifiers should be already set up. If they are not, please go through the steps on the [Configure to Use Browser](gh-first-time.md) page to figure out what you are missing.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -524,7 +524,7 @@ What if I decide I don't want the automatic building feature?
     * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
-* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [GitHub First Time](gh-first-time.md) to restore ability to build Loop with GitHub.
+* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](gh-first-time.md) to restore ability to build Loop with GitHub.
 
 ## Historical Interest Only
 
