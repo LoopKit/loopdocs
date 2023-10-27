@@ -1,8 +1,8 @@
-## Update the *Loop* App
+## Overview
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode* updates, please see: [Updating/Rebuilding](../build/updating.md)**
+**For *Mac-Xcode*, please see: [Update/Rebuild with *Mac-Xcode*](../build/updating.md)**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App

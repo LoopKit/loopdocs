@@ -1,8 +1,8 @@
-## Updating Loop
+## Overview
 
 **This page is only relevant when building with a Mac and Xcode.**
 
-**For Browser Build updates, please see: [Update with Browser](../gh-actions/gh-update.md)**
+**For Browser Build, please see: [Update/Rebuild with Browser](../gh-actions/gh-update.md)**
 
 !!! info "Time Estimate"
 

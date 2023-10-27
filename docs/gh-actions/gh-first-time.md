@@ -38,13 +38,13 @@
     * *GitHub*:
         * [`Action: 3. Create Certificates`](#create-certificates)
         * [`Action: 4. Build Loop`](#build-the-loop-app)
-    * _<span translate="no">Apple</span>_: [Set up `Internal *TestFlight* Group`](#set-up-users-and-access-testflight)
-    * Phone: [Install *Loop* with *TestFlight*](../gh-actions/gh-deploy.md#deploy-using-testflight)
+    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
+    * Phone: [Install the *Loop* app using the *TestFlight* app](../gh-actions/gh-deploy.md#deploy-using-testflight)
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
-    - **Isn't it hard to build every 90 days?** The initial setup and deployment take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
+    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
     - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
 
@@ -77,7 +77,7 @@ There are two prerequisites to build the *Loop* app using <code>*GitHub* Browser
 
 #### Prerequisites to Install Loop
 
-To install Loop, you need the *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/phone.md).
+To install Loop, you need the free *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/phone.md).
 
 #### Prerequisites to Use Loop
 
@@ -96,7 +96,7 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 If this summary of terms is confusing, finish reviewing the whole page and then come back.
 
 * `Actions`: available in your *GitHub* account to build your app (once you follow the instructions on this page)
-    * With Loop 3, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the Loop app from a browser on any computer
+    * With `Loop 3`, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the *Loop* app from a browser on any computer
     * If <code>*GitHub* Browser Build</code> Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/) to see if it is *GitHub* problem.
 * <code>Secrets</code>: are required to enable *GitHub* to build the *Loop* app using *GitHub* Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
@@ -199,7 +199,7 @@ You need to save your information digitally, so you can copy and paste. The info
 ??? abstract "Section Summary (click to open/close)"
     You will be saving 4 <code>Secrets</code> from your *Apple* Account in this step.
 
-    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account/resources/certificates/list).
+    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account).
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
         * Need help? Look at this section on the update page: [Accept Agreements](gh-update.md#accept-agreements)
     1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
@@ -256,14 +256,14 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
         **Copy and paste** the `Team ID` from the webpage.
 
         * <code>TEAMID</code> must be 10 characters
-        * Avoid typing an&nbsp<span class="loop-biggest">`8`</span>&nbsp; when it should be a&nbsp<span class="loop-biggest">`B`</span>
+        * Avoid typing an&nbsp;<span class="loop-biggest">`8`</span>&nbsp;when it should be a&nbsp;<span class="loop-biggest">`B`</span>
 
 ### Generate `API Key`
 
 !!! info "Paid *Apple Developer* Account is Required"
     To generate the `API Key`, you must have a paid *Apple Developer* account.
 
-    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [`*GitHub* Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](#configure-secrets) until your *Apple* account is active.
+    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](#configure-secrets) until your *Apple* account is active.
 
 1. Right-click to open this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
 
@@ -354,7 +354,7 @@ In summary, from this section, you have found or generated the following and sav
 
 ### Collect the <code>GH_PAT</code> Secret
 
-[<span class="loop-bigger">:material-skip-forward:</span>](#create-github-personal-access-token) If you already have a *GitHub* Account, skip ahead to [Create `*GitHub* Personal Access Token`](#create-github-personal-access-token).
+[<span class="loop-bigger">:material-skip-forward:</span>](#create-github-personal-access-token) If you already have a *GitHub* Account, skip ahead to [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token).
 
 ### New *GitHub* Account
 
@@ -494,7 +494,7 @@ You will not directly interact with your `Match-Secrets` repository.
 
 #### Successful Fork
 
-After creating the &nbsp;<span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of Loop 3. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
+After creating the &nbsp;<span class="notranslate">fork</span>, your screen should be similar to the next graphic - it will say `main` for the branch instead of `dev` because this graphic was prepared before the release of `Loop 3`. You may or may not see the messages you are told to dismiss in the next two bullets. No worries if you don't see them.
 
 * Near the top right, click on the close button :octicons-x-16: (`x`) to dismiss the `Successfully fetched` message
 * In the middle, click on the `Dismiss` button to remove the "`Your branch is not protected`" message
@@ -606,7 +606,7 @@ MATCH_PASSWORD
 ```
 
 * For the `FASTLANE_KEY` value, copy the entire contents from<br>`-----BEGIN PRIVATE KEY-----`<br> through<br>`-----END PRIVATE KEY-----`<br>
-* For `MATCH_PASSWORD` value - make up a password for this and save it for later use
+* For `MATCH_PASSWORD` value - if you did not already make up a password and save it with your other <code>Secrets</code>, do it now
     * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](gh-other-apps.md))
 
 Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</code>, your screen should look similar to the graphic below.
@@ -707,14 +707,14 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 ## Configure Identifiers for Loop
 
-Some steps can be skipped if you previously built Loop with `Mac-Xcode`.
+Some steps can be skipped if you previously built the *Loop* app with `Mac-Xcode`.
 
 Please read carefully to avoid confusion.
 
 ### Create `App Group`
 
 ??? abstract "Section Summary (click to open/close)"
-    [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built Loop via Xcode using this *Apple* ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built the *Loop* app via Xcode using this *Apple* ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
     1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
     1. For Description, use "Loop App Group".
@@ -723,9 +723,9 @@ Please read carefully to avoid confusion.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#add-app-group-to-identifiers) To skip the detailed instructions, click on [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
 
-The `Loop` *App Group* already exists if you previously built Loop using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+The `Loop` *App Group* already exists if you previously built the *Loop* app using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
-If you have never built Loop with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
+If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
 1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
 1. For **`Description`**, use `Loop App Group`.
@@ -736,7 +736,7 @@ If you have never built Loop with *Xcode* using your `TEAMID`, you need to creat
 
 ### Add `App Group` to Identifiers
 
-[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built Loop using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 #### New Builders
 
@@ -744,15 +744,15 @@ Right-click to open this link in a new tab: [`Certificates, Identifiers & Profil
 
 If you never built using *Xcode*, then after the <code>Add Identifiers</code> *Action*, you will see the six items under **`NAME`** in the table below with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the identifier.
 
-[<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for Loop 3](#table-with-name-and-identifier-for-loop-3).
+[<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for `Loop 3`](#table-with-name-and-identifier-for-loop-3).
 
 #### Previous Xcode Builders
 
 Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
-Because you built Loop using *Xcode*, then the **`NAME`** associated with at least the Loop identifier will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building Loop 3.
+Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
 
-#### Table with Name and Identifier for Loop 3
+#### Table with Name and Identifier for `Loop 3`
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -793,13 +793,13 @@ Because you built Loop using *Xcode*, then the **`NAME`** associated with at lea
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
-Find and click on the row for the Loop identifier on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop.
+Find and click on the row for the `Loop identifier` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `Loop` | `com.TEAMID.loopkit.Loop` |
 
-The `Edit Your App ID Configuration` screen will open. Take two actions for the Loop identifier.
+The `Edit Your App ID Configuration` screen will open. Take two actions for the `Loop identifier`.
 
 1. In the `App Services` column, scroll down to the `App Groups` row
     * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
@@ -922,7 +922,7 @@ If have previously used some kind of remote build, like `diawi` or `TestFlight`,
         * You could start with `Loop_ABC` where `ABC` are your initials
         * If that is already taken, you can add a number, for example, `Loop_ABC_123`
         * This name is what you see on the *App Store Connect* list and in the *TestFlight* app
-        * Once installed on your phone, you will see Loop with the standard Loop Logo
+        * Once installed on your phone, you will see the *Loop* app with the standard `Loop Logo`
         * You can [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name) later if you want
     * Select your primary language.
     * Choose the **`Bundle ID`** that matches `com.TEAMID.loopkit.Loop`
@@ -1013,7 +1013,7 @@ Refer to the graphic below for the numbered steps:
         * one says *TestFlight* is ready (typically half-hour after the build succeeds)
         * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
     1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
-    1. For each phone/person you would like to support Loop on:
+    1. For each phone/person you would like to support:
         * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
         * Add them to your *TestFlight* Internal Testing group.
 
@@ -1059,7 +1059,7 @@ You are configuring a private capability for your family using an Internal Testi
     ![add email and role for your users](img/add-users.png){width="700"}
     {align="center"}
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. Then select your Loop app. Click on the `TestFlight` tab then click the blue plus button (<font color="#2997FF">:material-plus-circle:</font>) next to `Internal Testing` to add a group.
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. Then select your *Loop* app. Click on the `TestFlight` tab then click the blue plus button (<font color="#2997FF">:material-plus-circle:</font>) next to `Internal Testing` to add a group.
 
     ![open TestFlight tab for your app](img/setup-testflight-01.png){width="700"}
     {align="center"}
@@ -1075,14 +1075,14 @@ You are configuring a private capability for your family using an Internal Testi
     * Click in the box beside each person you want to include
     * Each person in this group will get an email each time you update (build again) using the <code>*GitHub* Browser Build</code> method
     * Click `Add` when you are done
-    * If building for a child, you will send the invitation to yourself because you will install for your child: See [TestFlight for a Child](gh-deploy.md#testflightfor-child)
+    * If building for a child, you will send the invitation to yourself because you will install for your child: See [TestFlight for a Child](gh-deploy.md#testflight-for-a-child)
 
     ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
     {align="center"}
 
-## Deployment
+## Install on Phone
 
-The [*GitHub* Deployment](gh-deploy.md) walks you through the steps to deploy to a phone.
+The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
 
 
 ## Extra Steps
@@ -1113,7 +1113,7 @@ If your fork is not from `LoopKit`:
 
 ### Delete Identifiers
 
-When you have already built Loop with *Xcode*, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing `Loop` identifier will have a name that starts with `XC` as shown below, where your 10-digit `TEAMID` is used.
+When you have already built the *Loop* app with *Xcode*, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing `Loop` identifier will have a name that starts with `XC` as shown below, where your 10-digit `TEAMID` is used.
 
 * `Name: XC com TEAMID loopkit Loop`
 * `Identifier: com.TEAMID.loopkit.Loop`
@@ -1129,12 +1129,12 @@ To make it easy when configuring the identifiers, go through and delete as many 
     * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
 * Note - this graphic indicates where on this page you can find your `TEAMID`
     * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
-    * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+    * If you try to delete a `Loop identifier` that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
 {align="center"}
 
-If coming here from the *GitHub* Errors page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](gh-errors.md#wrong-teamid-in-secrets).
+If coming here from the Errors with Browser page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](gh-errors.md#error-wrong-teamid-in-secrets).
 
 If you were just trying to clean up the identifiers, then follow these steps:
 
