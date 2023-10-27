@@ -4,7 +4,7 @@
     - 5 minutes, to check your device and *iOS*
     - 20 minutes, if need to update your compatible device to a new *iOS*
     - 10 minutes, if you need to order a [compatible device](phone.md#compatible-devices)
-    - 0 minutes, if you own an Android and will not use Apple products; check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/)
+    - 0 minutes, if you own an Android and will not use *Apple* products; check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/)
 
 !!! abstract "Summary"
     - Check your iPhone against the device compatibility list
@@ -14,9 +14,9 @@
 
 !!! question "FAQs"
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
-    - **"Can I use an iPad?"** No. Older iPads do not support Apple Health which is required for Loop. It may be possible with newer iPads and newer *iOS*, but this has not been tested.
-    - **"Does my iPhone need a cell plan?"** No. The *Loop* app works using communication on your phone with your CGM and your pump; no internet connection required. However, if access to Dexcom Follow or Nightscout monitoring of the *Loop* app is a priority, then a cell plan may be desired.
-    - **What watches work with Loop?** Only Apple watches work with Loop. With `Loop 3`, some of the older Apple watch series are no longer compatible. See: [Watch Hardware and OS Requirements](../operation/features/watch.md#watch-hardware-and-os-requirements)
+    - **"Can I use an iPad?"** No. Older iPads do not support *Apple Health* which is required for the *Loop* app. It may be possible with newer iPads and newer *iOS*, but this has not been tested.
+    - **"Does my iPhone need a cell plan?"** No. The *Loop* app works using communication on your phone with your CGM and your pump; no internet connection required. However, if access to *Dexcom Follow* or <code>Nightscout</code> monitoring of the *Loop* app is a priority, then a cell plan may be desired.
+    - **What watches work with the *Loop* app?** Only *Apple* watches work with the *Loop* app. With `Loop 3`, some of the older *Apple* watch series are no longer compatible. See: [Watch Hardware and OS Requirements](../operation/features/watch.md#watch-hardware-and-os-requirements)
 
 ## Which Devices Are Compatible?
 
@@ -61,12 +61,12 @@ Do not use any of the beta *iOS* versions. (If you are uncertain what that means
 
 > When you build the *Loop* app using [Build with Browser](../gh-actions/gh-overview.md), you are not required to enable Developer Mode on the phone or watch.
 
-With *iOS* 16 or newer and *watchOS* 9 or newer, Apple added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+With *iOS* 16 or newer and *watchOS* 9 or newer, *Apple* added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 When you build the *Loop* app on your phone from *Xcode* directly and then transition to or start with *iOS* 16 or newer, you need to have Developer Mode enabled. This is also a requirement to use the *Loop* app on a watch paired to your phone running *watchOS* 9 or newer. You will be told to enable it in the [Build the *Loop* App: Prepare your Phone and Watch](build-app.md#prepare-your-phone-and-watch) instructions.
 
 !!! info "Developer Mode with *iOS* 16 or newer, *watchOS* 9 or newer"
-    If you already have Loop, built with *Xcode* on a Mac, on your phone/watch when you update to *iOS* 16 or newer/watchOS 9 or newer or newer, you will be told that the *Loop* app requires Developer Mode to run.
+    If you already have the *Loop* app built with *Xcode* on your phone/watch when you update to *iOS* 16 or newer/*watchOS 9* or newer or newer, you will be told that the *Loop* app requires Developer Mode to run.
     
     You will not be able to run the *Loop* app on your phone (or watch) until you have enabled Developer Mode on the device(s).
 
@@ -82,7 +82,7 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 * Consider buying a battery pack, keep it charged and add it to your travel bag
 
 !!! tip "Low Power Mode"
-    With newer *iOS* (15 and 16), some people have reported the *Loop* app continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode.  Otherwise, best practice is to avoid Low Power Mode.
+    With newer *iOS*, some people have reported the *Loop* app continues working in the background (phone locked) even in [Low Power Mode](https://support.apple.com/en-us/HT205234). Others, have reported they still get red loops. You can experiment to determine if your phone/iOS/app is able to maintain green loops in low power mode. Otherwise, best practice is to avoid Low Power Mode.
 
 ## Use Automatic Time
 
@@ -92,11 +92,11 @@ Please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#loop-ph
 
 ## Turn Off Automatic Updates
 
-Apple provides updates regularly to the *iOS*.  Often, these updates include critical security patches in addition to improved new features.
+*Apple* provides updates regularly to the *iOS*.  Often, these updates include critical security patches in addition to improved new features.
 
-**Please be proactive - install updates as soon as the "Loop" all-clear is given.**
+**Please be proactive - install updates as soon as the all-clear is given for using the *Loop* app with that *iOS* update.**
 
-If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, consider using the Browser Build method; start with this link: [Build with Browser](../gh-actions/gh-overview.md).
+If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, consider using [Build with Browser](../gh-actions/gh-overview.md).
 
 
 ### Why Turn off Automatic Updates?
