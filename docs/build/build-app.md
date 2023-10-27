@@ -359,6 +359,16 @@ If you got red error messages, skip ahead to [Build Failed?](#build-failed)
 
     ![untrusted developer on phone](img/trust_device_2.svg){width="200"}
 
+### What if the Automatic Signing Failed?
+
+Sometimes, something goes wrong with the automatic signing. Just the fact that you clicked on a few places in Xcode can change a particular file required to enable automatic signing. It is possible to reset that file, but it is easier to sign manually.
+
+* The instructions to sign manually are found at [Build Free Loop](build-free-loop.md)
+    * As you go through that page, ignore the steps that remove capabilities which require a paid `Apple Developer` account
+    * Make sure you sign all 5 targets
+    * Each signed target shows a `Bundle Identifier` with your 10-digit `Apple Developer Membership ID` embedded after `com.`
+    * If you don't know how to find that number, there are very clear directions in the [Build with Browser: Find `TEAMID`](../gh-actions/gh-first-time.md#find-teamid)
+
 ### Build Failed?
 
 No red error messages? Skip ahead to [Successful Build](#successful-build).
