@@ -1029,6 +1029,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#what-if-the-automatic-signing-failed" class="md-nav__link">
+    What if the Automatic Signing Failed?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#build-failed" class="md-nav__link">
     Build Failed?
   </a>
@@ -2714,6 +2721,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#what-if-the-automatic-signing-failed" class="md-nav__link">
+    What if the Automatic Signing Failed?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#build-failed" class="md-nav__link">
     Build Failed?
   </a>
@@ -3137,6 +3151,17 @@
 <p><img alt="messages shown in Xcode and on the phone for untrusted developer" src="../img/trust_device.svg" width="400" /></p>
 <p><img alt="untrusted developer on phone" src="../img/trust_device_2.svg" width="200" /></p>
 </div>
+<h3 id="what-if-the-automatic-signing-failed">What if the Automatic Signing Failed?<a class="headerlink" href="#what-if-the-automatic-signing-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Sometimes, something goes wrong with the automatic signing. Just the fact that you clicked on a few places in <abbr title="program used to build an app">Xcode</abbr> can change a particular file required to enable automatic signing. It is possible to reset that file, but it is easier to sign manually.</p>
+<ul>
+<li>The instructions to sign manually are found at <a href="../build-free-loop/">Build Free <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a><ul>
+<li>As you go through that page, ignore the steps that remove capabilities which require a paid <code>Apple Developer</code> account</li>
+<li>Make sure you sign all 5 targets</li>
+<li>Each signed target shows a <code>Bundle Identifier</code> with your 10-digit <code>Apple Developer Membership ID</code> embedded after <code>com.</code></li>
+<li>If you don't know how to find that number, there are very clear directions in the <a href="../../gh-actions/gh-first-time/#find-teamid">Build with Browser: Find <code>TEAMID</code></a></li>
+</ul>
+</li>
+</ul>
 <h3 id="build-failed">Build Failed?<a class="headerlink" href="#build-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>No red error messages? Skip ahead to <a href="#successful-build">Successful Build</a>.</p>
 <div class="admonition bug">
