@@ -57,7 +57,7 @@ There's a whole page devoted to just this topic: [New Phone](new-phone.md)
 Updating the *Loop* app is the same idea as what happens to your other apps on your iPhone when you update them from the App Store on the phone. A newer version of the same app appears on the phone, simply updating-in-place the same the *Loop* app you were using with an updated version.
 
 * Do **NOT** delete your current app from your phone - even if it says "Loop is No Longer Available" or "Loop Beta has Expired"
-* There are files stored on your phone that will be read in as soon as the new *Loop* app app is installed
+* There are files stored on your phone that will be read in as soon as the new *Loop* app is installed
 * If you deleted your app, then you have to enter all your settings again
     * This is a good time to configure your phone to avoid accidental deletion
     * Do an internet search like this: "iOS 15.4 prevent app deletion" where you use your current phone iOS version number and follow the instructions
@@ -83,7 +83,7 @@ Regardless of build method, always check your *Apple* Developer Account status.
 
 Go to [Update/Rebuild with Browser](../gh-actions/gh-update.md) and follow the instructions.
 
-#### Updates with the Mac-Xcode build method:
+#### Updates with the *Mac-Xcode* build method:
 
 **ALWAYS start with the [Update/Rebuild with *Mac-Xcode*](../build/updating.md) before any new *Mac-Xcode* build.** That page is important because it will offer information on the updates you may need for your *Mac* and *Xcode* before building.
 
