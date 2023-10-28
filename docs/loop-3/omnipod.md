@@ -36,10 +36,7 @@ Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (rig
 
     It makes sure you are really ready to do the insertion.
 
-    Please watch the video to see the full process before pairing your first pod.
-
-
-A [video is found here for what shows on the Loop app screen when pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming in the video, you may want to skip forward (it takes about a minute to prime).
+    Please watch the [video of the *Loop* app screen when pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing) to see the full process before pairing your first pod. In this video, once the pod starts priming, you may want to skip forward (it takes about a minute to prime).
 
 !!! danger "Keep Gear Close"
     * Make sure phone (and RileyLink if using one) are close to the pod before you tap Pair Pod
@@ -48,12 +45,19 @@ A [video is found here for what shows on the Loop app screen when pairing a DASH
     * Make sure phone (and RileyLink if using one) are close to the pod before you tap `Insert Cannula`
         * Do NOT move devices away from the pod until you see the blue check mark and the `Continue` button on the phone screen
 
+### Insert Cannula Slider
+
+!!! tip "New Insert Cannula Control"
+    For version 3.3.0 and later, (which means the `dev branch` right now), there is a new slider to control insertion of the cannula instead of a button to tap. It looks like the graphic below. You place your finger on the darker blue icon and, while keeping your finger in contact with the screen, drag all the way to the right. After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the pod.
+
+    ![slider to insert cannual for Omnipod or Omnipod DASH pumps](img/omnipod-insert-slider.svg){width="250"}
+    {align="center"}
+
 The Screen that says Setup Complete allows you to change the Scheduled Reminder for this pod if you want a different reminder time (including none) from your usual setting.
 
 * This only changes the reminder for this one pod
 * If you want to change all future reminders, tap on Notifications to modify the Reminder Default
 * In that same location, you can also change notification for the current pod
-
 
 ## Pod Status
 

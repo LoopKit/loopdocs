@@ -20,6 +20,8 @@ This section is an early look at what has been added to `dev` since*&nbsp;<span 
     * [<span translate="no">Glucose Based Partial Application</span>&nbsp; Factor](#glucose-based-partial-application-gbpa)
     * [<span translate="no">Integral Retrospective Correction</span>](#integral-retrospective-correction-irc)
 * [Favorite Foods](#favorite-foods)
+* Updates to Omnipod User Experience
+    * [Insert Cannula Slider](../loop-3/omnipod.md#insert-cannula-slider)
 * [<span translate="no">TestFlight Expiration Warning</span>](#testflight-expiration-warning)
 * [<span translate="no">GitHub Browser Build</span>&nbsp; Updates](#github-browser-build-updates)
 * [Miscellaneous Code Fixes](#miscellaneous-code-fixes)
