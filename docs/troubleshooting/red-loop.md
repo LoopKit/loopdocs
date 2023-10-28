@@ -178,7 +178,7 @@ Here's some things to check if you have frequent red loops:
 
 * Check for sources of wireless interference. If you have a certain environment that seems to have more drops than others, it is likely that there is a source of wireless communication interfering with your Loop. Lots of Medtronic Loopers in a room together will often interfere with each other and get "cross-talk" red loop error messages. If it is a bedroom at night causing problems, try moving other wireless devices such as routers or baby monitors farther away from where you and your RileyLink compatible device.
 
-* In some cases, you may need to clean out [Apple Health](apple-health), or even reset your phone to factory defaults and reload all your personal information and then rebuild the Loop app. Before you do this, you may want to Post for Help (next section).
+* In some cases, you may need to clean out [Apple Health](#apple-health), or even reset your phone to factory defaults and reload all your personal information and then rebuild the Loop app. Before you do this, you may want to Post for Help (next section).
 
 ## Posting for Help
 
