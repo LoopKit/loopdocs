@@ -4,12 +4,11 @@ This is only available with&nbsp;_<span translate="no">Loop 3</span>_.
 
 **The *Loop* app must be built at least every 90 days when using a browser to build.**
 
-After [building&nbsp;_<span translate="no">Loop</span>_&nbsp;using a browser](../gh-actions/gh-first-time.md#build-the-loop-app), you are ready to install on as many phones as you and your family members need.
+After you [Build the *Loop* App](../gh-actions/gh-first-time.md#build-the-loop-app) with a browser and it has automatically uploaded to the *TestFlight* app, you are ready to install on as many phones as you and your family members need.
 
 * If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 
-* Children (under 13 in US, varies by country) cannot use *TestFlight* with their ID. When you use&nbsp;[*TestFlight* for a Child](#testflight-for-a-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the *TestFlight* invitation to the email associated with your ID.
-
+* Children (under 13 in US, varies by country) cannot use *TestFlight* with their ID. When you use [*TestFlight* for a Child](#testflight-for-a-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the *TestFlight* invitation to the email associated with your ID.
 
 ## Install *TestFlight*
 
@@ -24,7 +23,6 @@ To install *TestFlight*, refer to the GIF below:
 
 ![search for and dowload TestFlight](img/testflight-app-store.gif){width="300"}
 {align="center"}
-
 
 ## Install App with *TestFlight*
 
@@ -42,15 +40,16 @@ The first time you use *TestFlight* on any phone associated with a given email, 
 
 If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the phone, you'll see the warning about possible loss of data. Don't worry, all your settings remain. Go ahead with the installation.
 
+* If you are building&nbsp;_<span translate="no">Loop</span>_&nbsp;3.x over&nbsp;_<span translate="no">Loop</span>_&nbsp;2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
+
 ### Subsequent Times on Phone
 
-* Open *TestFlight* and find the name you used for your&nbsp;_<span translate="no">Loop</span>_&nbsp;app in the [Create *Loop* App in App Store Connect](../gh-actions/gh-first-time.md#create-loop-app-in-app-store-connect) step
+* Open the *TestFlight* app and find the name you used for your *Loop* app in the [Create *Loop* App in App Store Connect](../gh-actions/gh-first-time.md#create-loop-app-in-app-store-connect) step
 * Tap on Install
-    * If you already have&nbsp;_<span translate="no">Loop</span>_&nbsp;installed on this phone, you will be warned that the app already exists on your phone and that you might lose the app's data.
+    * If you already have the *Loop* app installed on this phone, you will be warned that the app already exists on your phone and that you might lose data
     * Click Install again (your pump connection and all your data will be fine)
 * Choose Open
-* Make sure the&nbsp;_<span translate="no">Loop</span>_&nbsp;app is operating as expected
-* If you are building&nbsp;_<span translate="no">Loop</span>_&nbsp;3.x over&nbsp;_<span translate="no">Loop</span>_&nbsp;2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
+* Make sure the *Loop* app is operating as expected
 
 ![install Loop from TestFlight](img/testflight-install-loop.gif){width="300"}
 {align="center"}
@@ -90,7 +89,7 @@ Go back to the *TestFlight* app on your phone and tap on your app name in the li
 
 When you are ready to install, just open the *TestFlight* app and click Install to get the most recent build and then click Open when it completes the installation. All your settings and connections to CGM and Pump are maintained.
 
-If you tap on the bottom row that says `Previous Builds`, you can view and choose an older build (as long as it has not expired).
+If you tap on the bottom row that says `Previous Builds`, highlighted by the dashed-green rectangle, you can view and choose an older build (as long as it has not expired).
 
 ## *TestFlight* for a Child
 

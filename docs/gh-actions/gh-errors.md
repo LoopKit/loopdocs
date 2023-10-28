@@ -19,23 +19,25 @@ But first - try to diagnose it yourself using this page.
 
 These are some of the most common errors to date.
 
-* Common mistake: you made a spelling error when adding <code>Secrets</code>
+1. You made a spelling error when adding <code>Secrets</code>
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
-* Common mistake: use a smart editor instead of a text-only editor to save your information
+1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers)
+1. You used a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
-* Common mistake: when saving `TEAMID`, you type what you think you see instead of using copy and paste
-* Common mistake: skip running one of the actions
-* Common mistake: you need to sign a program license agreement at&nbsp;<span translate="no">Apple Developer</span> - be sure to read [Misleading Error Message](#misleading-error-message)
+1. When saving `TEAMID`, you typed what you thought you saw instead of using copy and paste
+1. You skipped running one of the actions
+1. You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span>
+    * Be sure to read [Misleading Error Message](#misleading-error-message)
 
-If you are running development code, skip ahead to [Preview for Version 3.4](#preview-for-version-34).
+If you are running development code, skip ahead to [Preview for Next Version](#preview-for-next-version).
 
 ## Misleading Error Message
 
-> For Version 3.2.x and earlier - later versions give better error messages.
+If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
-If there are *Apple* Developer agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
+You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
 
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
 * Check your *Apple* Developer account for agreements first, before trying to fix those
@@ -46,7 +48,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 ## Find Your Error
 
-> For Version 3.2.x and earlier - later versions have an improved method for display errors.
+> For Version 3.2.3 and earlier - later versions have an improved method for display errors.
 
 There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
 
@@ -78,7 +80,7 @@ Click on the top link to view the record of the failed action as shown in the gr
 * Paste in a possible error string (copy it exactly); repeat until you find a match
 * If the possible error string is found - follow the directions for that error
 * Still stuck?
-    * Post for help including your ==GitHub **username**==
+    * Post for help including your ==*GitHub* **username**==
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
     * Please **do NOT post a screenshot**
 
@@ -87,7 +89,7 @@ Click on the top link to view the record of the failed action as shown in the gr
 
     -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).
        https://github.com/==username==/Loopworkspace
-    - or on the [GitHub website](https://github.com)
+    - or on the [*GitHub* website](https://github.com)
 
         ![Find your GitHub username step 1](img/github-username-1.svg)
         ![Find your GitHub username step 2](img/github-username-2.svg){width="200"}
@@ -98,11 +100,6 @@ Click on the top link to view the record of the failed action as shown in the gr
     As your *GitHub* `username` is case-sensitive, use copy and paste.
 
 ## Action: `Validate Secrets` Errors
-
-A new action was added with *Loop* 3.1 to provide better error messages if something is wrong with your *Secrets*. In addition, the Actions are numbered to match the order in which they should be applied.
-
-![actions shown for Loop 3.1 and newer versions](img/gh-actions-3.1.png){width="200"}
-{align="left"}
 
 To generate the graphic below, some items were deliberately set to be incorrect in the *Secrets* list. Representative error messages are shown when running the validate secrets action.
 
@@ -179,7 +176,7 @@ Follow these steps:
 !!! tip "Open each link below in a separate tab"
     It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.
 
-1. Delete all the identifiers that you can, following the steps in [First Time: Delete Identifiers](gh-first-time.md#delete-identifiers)
+1. Delete all the identifiers that you can, following the steps in [Configure to Use Browser: Delete Identifiers](gh-first-time.md#delete-identifiers)
     - Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
     - It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
 
@@ -187,9 +184,9 @@ Follow these steps:
     - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership) page for that `TEAMID`.
     - Follow the update instructions here (this example is for `GH_PAT`, you'll do the same but for `TEAMID`) [Update Secrets](gh-update.md#update-secrets)
 
-1. Run Action: [First Time: `Add Identifiers`](gh-first-time.md#add-identifiers) again
+1. Run Action: [Configure to Use Browser: `Add Identifiers`](gh-first-time.md#add-identifiers) again
 
-1. Follow all the steps in this section with the **correct** `TEAMID` [First Time: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [First Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
+1. Follow all the steps in this section with the **correct** `TEAMID` [Configure to Use Browser: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [Configure to Use Browser: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
 
 The first time through, you created an app with a `Bundle ID` that does NOT include your `TEAMID`.
 
@@ -217,7 +214,7 @@ That *App* with the wrong `Bundle ID` remains in the *App store* but it is hidde
 
 Now click on the `Add Apps` button or the :heavy_plus_sign: (plus sign) if you have other apps in the *App Store*.
 
-Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) directions with these additions:
+Follow the [Configure to Use Browser: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) directions with these additions:
 
 * You must come up with a new name for your *Loop* App
 * Triple-check that the `Bundle ID` you choose is for *Loop* and contains your `TEAMID`, it should look like: `com.TEAMID.loopkit.Loop`
@@ -225,7 +222,7 @@ Follow the [First Time: Create Loop App in App Store Connect](gh-first-time.md#c
 
 #### Create Certificates
 
-You should be able to continue with the First Time Steps to `Create Certificates` and then `Build Loop` and keep going.
+You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
 ### Error: Missing Repository Access
 
@@ -248,7 +245,7 @@ If you see this phrase, the `fastlane` package that is utilized during the `3. C
 To fix this error:
 
 - Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
-  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [First Time: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [Configure to Use Browser: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
@@ -263,7 +260,7 @@ NOTE: for next release or if using the dev branch - you want <code>GH_PAT</code>
 
 #### Create Certificates
 
-You should be able to continue with the [First Time Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
+You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
 ### Error: Could not create
 
@@ -320,7 +317,7 @@ Use [Examine the Error](#examine-the-error)
 * Click on the Action log on GitHub
 * There may be a series of green items followed by a red one
 * Click on the red item to view the error
-* Use the search function in this log to locate your error
+* Use the search function in this log to locate your error using one of the strings below
 
 For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
 
@@ -461,9 +458,7 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
-## Preview for Version 3.4
-
-When dev is released as Version 3.4.0, this will be the error finding section in LoopDocs.
+## Preview for Next Version
 
 Error annotations are available for Version 3.3.0 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
 

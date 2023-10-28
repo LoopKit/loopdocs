@@ -136,7 +136,7 @@ nav:
     - 'Browser Overview': gh-actions/gh-overview.md
     - 'Configure to use Browser': gh-actions/gh-first-time.md
     - 'Install on Phone': gh-actions/gh-deploy.md
-    - 'Update with Browser': gh-actions/gh-update.md
+    - 'Update/Rebuild with Browser': gh-actions/gh-update.md
     - 'Errors with Browser': gh-actions/gh-errors.md
     - 'Build Other Apps with Browser': gh-actions/gh-other-apps.md
 - Build with Mac-Xcode:
@@ -146,7 +146,7 @@ nav:
     - 'Xcode Settings': 'build/xcode-settings.md'
     - 'Build Loop': 'build/build-app.md'
     - 'Oh dear! Build errors?': 'build/build-errors.md'
-    - 'Updating/Rebuilding': 'build/updating.md'
+    - 'Update/Rebuild with Mac-Xcode': 'build/updating.md'
     - 'Build Free Loop': 'build/build-free-loop.md'
     - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Set Up:

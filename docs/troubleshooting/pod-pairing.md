@@ -12,7 +12,7 @@ There have been a large number of fixes and improvements to reduce various pairi
 !!! info "Update regularly to take advantage of  improvements"
 
     **Make sure you stay on top of Loop updates to take advantage of these code improvements.**   
-    It is *strongly* recommended to update to a modern stable version (i.e., the [current Loop release](../../version/releases/#current-release)).
+    It is *strongly* recommended to update to a modern stable version (i.e., the [current Loop release](../version/releases.md#current-release)).
 
 ## The app crashed after pairing started and before cannula insertion
 
@@ -43,7 +43,7 @@ You can check which version of Loop you are running by pressing the gear icon (â
 
 !!! info "Upgrade Loop if version prior to v3.2.x" 
 
-    If you are running a version of Loop prior to v3.2.x, it is recommended to update to the [current Loop release](../../version/releases/#current-release).
+    If you are running a version of Loop prior to v3.2.x, it is recommended to update to the [current Loop release](../version/releases.md#current-release).
 
 
 ## Step 1: Verify the RileyLink (Eros Pods Only)

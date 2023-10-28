@@ -5,8 +5,9 @@
 
 ### Advantages of Building with a Browser
 
-* Mac computer is not required to build or install the app
-    * Anything with a browser works: PC, Tablet, Mac or iPad
+* *Mac* computer is not required to build or install the app
+    * Anything with a browser works to build the *Loop* app: PC, Tablet, Mac or iPad
+    * The *TestFlight* app is used to install the *Loop* app on your iPhone
 * Xcode is not required
     * The time required for the initial setup for building with a browser may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
 * Updates are automatic
@@ -27,7 +28,6 @@
 * Frequently used customizations are easy to copy and paste as documented at&nbsp;[_<span translate="no">Loop and Learn: Loop Customization</span>_](https://www.loopandlearn.org/custom-code#custom-list)
 * Personalized code customizations are tedious to set up but easy to maintain
     * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
-
 
 ## Requirements
 
@@ -64,7 +64,7 @@ Instructions to install on your phone are found at:
 
 ## Update the App
 
-Instructions to make manual updates are found at:
+Instructions to make updates are found at:
 
 * [Update with Browser](gh-update.md)
 
@@ -74,7 +74,7 @@ If you get an error, please consult:
 
 * [Errors with Browser](gh-errors.md)
 
-## Building the Development Version
+## Building the Development Version of the App
 
 For experienced and/or advanced users who want to build the development version of the app, there is additional information at the link below. If you have not built using the browser build method before, it is strongly recommended you first build the released version. Once you have a successful build, then follow the steps for the development version. Building the app is independent of installing the app on your phone from *TestFlight*.
 
@@ -84,9 +84,10 @@ For experienced and/or advanced users who want to build the development version 
 
 Try to:
 
-* Scroll back in the directions and see if you missed a paragraph or step.
-* Compare your display with the <span>graphics in *LoopDocs*</span>.
+* Scroll back in the directions and see if you missed a paragraph or step
+* Compare your display with the <span>graphics in *LoopDocs*</span>
     * Is something different or does yours have an error message?
     * Does the error message guide you to the problem and solution?
-    * Be aware that *GitHub* often updates where things are - search for  *GitHub* directions if your display looks different than our documentation.
-* If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
+    * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for *GitHub* directions if your display looks different than our documentation
+* If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
+    * Remember - to get help with Browser Build, all we need is your *GitHub* username and a brief description of your problem
