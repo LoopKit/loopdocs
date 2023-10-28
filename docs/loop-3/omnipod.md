@@ -38,6 +38,15 @@ Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (rig
 
     Please watch the video to see the full process before pairing your first pod.
 
+### Insert Cannula Slider
+
+!!! tip "New Insert Cannula Control"
+    For version 3.3.0 and later, (which means the `dev branch` right now), there is a new slider to control insertion of the cannula instead of a button to tap. It looks like the graphic below. You place your finger on the darker blue icon and, while keeping your finger in contact with the screen, drag all the way to the right. After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the pod.
+
+    ![slider to insert cannual for Omnipod or Omnipod DASH pumps](img/omnipod-insert-slider.svg){width="300"}
+    {align="center"}
+
+
 
 A [video is found here for what shows on the Loop app screen when pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing). Once the pod starts priming in the video, you may want to skip forward (it takes about a minute to prime).
 
