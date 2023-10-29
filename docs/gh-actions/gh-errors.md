@@ -17,12 +17,18 @@ But first - try to diagnose it yourself using this page.
 
 ### Most Common Mistakes
 
+!!! warning "Just updated?"
+    If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.
+
+    If you missed this step - go do it now. [Add and Update New Identifier](gh-update.md#add-and-update-new-identifier)
+
 These are some of the most common errors to date.
 
 1. You made a spelling error when adding <code>Secrets</code>
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
 1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers)
+    * See [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for an example of this kind of failure
 1. You used a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
     * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
@@ -31,26 +37,69 @@ These are some of the most common errors to date.
 1. You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span>
     * Be sure to read [Misleading Error Message](#misleading-error-message)
 
-If you are running development code, skip ahead to [Preview for Next Version](#preview-for-next-version).
+## Error Annotations
 
-## Misleading Error Message
+Error annotations are available for the *Loop* app released version 3.4 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
 
-If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
+Not all error messages have an annotation yet. In those cases, you will be required to search for the error string as explained in [Find the Error](#find-the-error).
 
-You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
+## Examine Annotation
 
-* The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
-* Check your *Apple* Developer account for agreements first, before trying to fix those
-* If you previously built successfully - it is almost certainly the agreement
-* It can take 15 minutes to an hour after the agreement is signed before it can be used
+If a&nbsp;<span translate="no">*GitHub* Action</span>&nbsp;fails, you will see a clear notification.
 
-If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
+First consider the following results from the&nbsp;<span translate="no">*GitHub* Action: 1. Validate Secrets</span>.
 
-## Find Your Error
+### Annotation with Clear Message
 
-> For Version 3.2.3 and earlier - later versions have an improved method for display errors.
+Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.4 is released.
 
-There is a separate section for each step in the process. First, you must follow the [Examine the Error](#examine-the-error) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box.
+![graphic showing failure to validate secrets](img/error-validate-secrets.png){width="500"}
+{align="center"}
+
+But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The GIF below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the GIF shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.
+
+![graphic showing validate secret error messages](img/error-annotations-validate-secrets.gif){width="800"}
+{align="center"}
+
+Notice that&nbsp;<span translate="no">*GitHub* Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action.
+
+### Annotation without Clear Message (*Certificates*)
+
+Not all error messages have a clear annotation (yet).
+
+For example, the graphic below shows a failure of&nbsp;<span translate="no">*GitHub* Action: 3. Create Certificates</span>&nbsp;.
+
+![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
+{align="center"}
+
+This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
+
+### Annotation without Clear Message (*Build*)
+
+The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. Build Loop</span>_&nbsp;. The nice messages have not been added to this yet - you will have to follow the [Find the Error](#find-the-error) instructions, but now, you are automatically taken to the correct section so there is less of the log to deal with.
+
+* Frame 1 shows the failure message - click on one of the build links highlighted with the red rectangle (it does not matter which link you click)
+* Frame 2 shows the screen displayed after you click the link - you will see the display automatically move to the first item that failed
+    * The area indicated by the orange rectangle near the top right is where you will paste the strings offered in [Action: `Build Loop` Errors](#action-build-loop-errors)
+* Frame 3 shows what happens when you paste in the correct string
+    * Note that if the string is not found, nothing happens
+    * If the string is found, the display automatically moves to the section of the log with that string
+    * The particular `Identifier`, which does not have the required `App Group` for this example, is the SmallStatusWidget
+
+![graphic showing failure to create certificates](img/missing-app-group.gif){width="800"}
+{align="center"}
+
+
+## Find the Error
+
+This section is required when you need to search for a string to diagnose and error that does not have a clear annotation.
+
+There is a separate section for each step in the process. First, you must follow the [Examine Annotation](#examine-annotation) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.
+
+* Paste in a possible error string (copy it exactly); repeat until you find a match
+* If the possible error string is found - follow the directions for that error
+
+Error annotations are available for the *Loop* app version 3.4 and later for some of the actions. We believe the first two actions have a complete set of error annotations.
 
 1. [Action: `Validate Secrets`](#action-validate-secrets-errors)
 1. [Action: `Add Identifiers` Errors](#action-add-identifiers-errors)
@@ -60,7 +109,7 @@ There is a separate section for each step in the process. First, you must follow
 
 If you discover a new error, please reach out to help us update the documentation.
 
-## Examine the Error
+## Still Stuck?
 
 It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green">:material-checkbox-marked-circle:</font> for **success** or a red x mark <font color="red">:fontawesome-solid-circle-xmark:</font> for **failure**. The graphic below shows an example for the `Add Identifiers` action.
 
@@ -77,8 +126,6 @@ Click on the top link to view the record of the failed action as shown in the gr
 ![graphic with failure details for a GitHub Add Identifier action](img/action-result-failure.svg){width="700"}
 {align="center"}
 
-* Paste in a possible error string (copy it exactly); repeat until you find a match
-* If the possible error string is found - follow the directions for that error
 * Still stuck?
     * Post for help including your ==*GitHub* **username**==
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
@@ -101,60 +148,15 @@ Click on the top link to view the record of the failed action as shown in the gr
 
 ## Action: `Validate Secrets` Errors
 
-To generate the graphic below, some items were deliberately set to be incorrect in the *Secrets* list. Representative error messages are shown when running the validate secrets action.
-
-![representative messages with deliberate errors when running validate secrets](img/gh-validate-secrets.png){width="800"}
-{align="center"}
-
+For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and read the annotation.
 
 ## Action: `Add Identifiers` Errors
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
-
-There are two errors that we are familiar with at this point. Look for text matching what is listed below and view what has caused this error to be seen.
-
-### Error: credentials missing / invalid
-
-Copy the words on the line below and paste them into the search function for your action log.
-
-
-> ``` { .text .copy }
-> Authentication credentials are missing or invalid
-> ```
-
-The full error looks like this:
-
-> Authentication credentials are missing or invalid. - Provide a properly configured and signed bearer token, and make sure that it has not expired. Learn more about Generating Tokens for API Requests https://developer.apple.com/go/?id=api-generating-tokens`
-
-
-This can be caused by an error in the value (or spelling) of one of these keys:
-
-* `FASTLANE_ISSUER_ID`
-* `FASTLANE_KEY_ID`
-* `FASTLANE_KEY`
-* `GH_PAT`
-
-!!! danger "Use a Text-Only Editor"
-    If you used a "smart" editor when saving your *Secrets* in an archive file before pasting them into the repository `Secrets`, it might have changed a lowercase letter to an uppercase letter.
-
-    If even one character is capitalized when it should not be, you will not succeed at the Add Identifiers step.
-
-### Error: `Invalid curve name`
-
-If you see:
-
-> ``` { .text .copy }
-> invalid curve name
-> ```
-
-This was caused by an error in the format of the value entered for the `FASTLANE_KEY`.
-
-Make sure you copy in a text editor from the first hyphen to the last hyphen.
-
+For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and read the annotation.
 
 ## Action: `Create Certificates` Errors
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
+Review [Examine Annotatios](#examine-annotation) for instructions on how to use the error strings.
 
 ### Error: Wrong TEAMID in `Secrets`
 
@@ -312,10 +314,12 @@ Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-se
 !!! warning "Run `Create Certificates` First"
     You must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
 
-Use [Examine the Error](#examine-the-error)
+    If you had to step backward and fix an `Identifier`, you must run `Create Certificates` again.
 
-* Click on the Action log on GitHub
-* There may be a series of green items followed by a red one
+Refer to [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for a detailed example of these steps:
+
+* Click on the Action log on *GitHub*
+* There will be a series of green items followed by a red one
 * Click on the red item to view the error
 * Use the search function in this log to locate your error using one of the strings below
 
@@ -417,7 +421,7 @@ At this point, get your correct `TEAMID`, fix your Secrets file to have the corr
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
+Use the [Find the Error](#find-the-error) instructions to find your error message.
 
 ### `Could not install WWDR certificate`
 
@@ -443,7 +447,7 @@ There might be several reasons to do this:
 These steps are needed to reset your `Match-Secrets`:
 
 1. Delete your `Match-Secrets` `Repository`
-    * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 1. In your fork of LoopWorkspace:
     * This will automatically create a new `Match-Secrets` `Repository` for you
     * Run the `Action`: `Create Certificates`
@@ -458,33 +462,15 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
-## Preview for Next Version
+## Misleading Error Message
 
-Error annotations are available for Version 3.3.0 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
+If there are *Apple Developer* agreements you have not accepted, you will get errors when you try to build the app that indicate your *Apple* <code>Secrets</code> are incorrect.
 
-## Examine Annotation
+You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
 
-If a&nbsp;<span translate="no">GitHub Action</span>&nbsp;fails, you will see a clear notification.
+* The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
+* Check your *Apple* Developer account for agreements first, before trying to fix those
+* If you previously built successfully - it is almost certainly the agreement
+* It can take 15 minutes to an hour after the agreement is signed before it can be used
 
-First consider the following results from the&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>.
-
-Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.4.0 is released.
-
-![graphic showing failure to validate secrets](img/error-validate-secrets.png){width="500"}
-{align="center"}
-
-But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The GIF below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the GIF shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.
-
-![graphic showing validate secret error messages](img/error-annotations-validate-secrets.gif){width="800"}
-{align="center"}
-
-Notice that&nbsp;<span translate="no">GitHub Action: 1. Validate Secrets</span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action, so you will see this a lot.
-
-For example, the graphic below shows a failure of&nbsp;<span translate="no">GitHub Action: 3. Create Certificates</span>&nbsp;.
-
-![graphic showing failure to create certificates](img/error-create-certs.png){width="800"}
-{align="center"}
-
-This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
-
-If you run across an error that does not have a nice message, be sure to post as discussed in [Help with Errors](#help-with-errors). You may be contributing to future improvements for this process.
+If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
