@@ -104,8 +104,7 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Validate <code>Secrets</code> Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
+    * [Errors with Browser](gh-errors.md) tells how to diagnose your problem
     * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
 
 ## Add Identifiers
@@ -130,8 +129,7 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 ## Review App Identifier
