@@ -2,7 +2,7 @@
 
 This is only available with&nbsp;_<span translate="no">Loop 3</span>_.
 
-**The *Loop* app must be built at least every 90 days when using a browser to build.**
+**The *Loop* app must be built at least every 90 days when using a browser to build.** With version 3.4.0 and later, the build is automatic. It is recommended you manually install the new build using *TestFlight* at your convenience.
 
 After you [Build the *Loop* App](../gh-actions/gh-first-time.md#build-the-loop-app) with a browser and it has automatically uploaded to the *TestFlight* app, you are ready to install on as many phones as you and your family members need.
 
@@ -56,14 +56,15 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-Automatic features will be available when the next version is released and are available now in 3.3.0 (when&nbsp;<span translate="no">dev is the default branch</span>). The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions when you update to the next release or use `dev`:
+The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for released versions 3.4.0 and later:
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
+    * When an update to the default `branch`, typically `main`, is detected, a new build is created automatically and uploaded to *TestFlight*
 * Build the app at least once a month and upload to *TestFlight*
 
 It is already true that, unless you make a change, the default setting will:
 
-* Install each new build on phone from *TestFlight*
+* Install each new build from *TestFlight* on the phone as soon as it is detected
 
 ### Recommendation
 
@@ -93,7 +94,7 @@ If you tap on the bottom row that says `Previous Builds`, highlighted by the das
 
 ## *TestFlight* for a Child
 
-The adult (Apple Developer Account owner) can log into Media & Purchase (see steps below) without affecting the child *Apple* ID associated with a phone (and thus their health records used by&nbsp;_<span translate="no">Loop</span>_). After the adult installs or updates the app using *TestFlight*, they probably should reverse those steps to remove their credentials from Media & Purchase.
+The adult (*Apple Developer Account* owner) can log into Media & Purchase (see steps below) without affecting the child *Apple* ID associated with a phone (and thus their health records used by the *Loop* app). After the adult installs or updates the app using *TestFlight*, they probably should reverse those steps to remove their credentials from Media & Purchase.
 
 Media & Purchase affects access to the App Store, Books, Music and Podcasts.
 
@@ -105,7 +106,7 @@ On the Child phone:
     * Tap on Media & Purchases
     * Tap on Sign Out, and confirm
     * Sometimes the phone requires a reboot before you can sign in with a different ID
-* Sign in with the adult (Apple Developer Account owner) *Apple* ID and password
+* Sign in with the adult (*Apple Developer* Account owner) *Apple* ID and password
 * Install or Update the app from *TestFlight* on child phone
 * Repeat the process to sign out the adult and (if needed) sign back in the child
 
