@@ -22,9 +22,10 @@
 ???+ abstract "Page Summary (click to open/close)"
     **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
 
-    Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild).
+    Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild):
 
-    If your *GitHub* `Personal Access Token` has expired, we recommend you update it with `No Expiration` as explained at [GitHub Token](#github-token).
+    * If currently using verion 3.2.3 or earlier, there are extra steps included to update to 3.4
+    * This provides automatic build
 
     If you are running `Loop-dev`, be sure to review [Build Development Version](#build-development-version)
 
@@ -103,9 +104,9 @@ For the update from 3.2.x to 3.4, you must do a few more actions than normal, bu
 
 #### Add and Update New Identifier
 
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`". You need to run Add Identifier, wait for it to succeed and then add the `App Group` to this one new Identifier, shown in the table below.
+The `Identifier` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`". You need to run Add Identifier, wait for it to succeed and then add the `App Group` to this one new Identifier, shown in the table below.
 
-All other identifiers should be already set up. If they are not, please go through the steps on the [GitHub First Time](gh-first-time.md) page to figure out what you are missing.
+All other identifiers should be already set up. If they are not, please go through the steps on the [Configure to use Browser: Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers) to figure out what you are missing.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -122,7 +123,6 @@ You must create certificates again to cover the new Identifier name and to provi
 1. Run the Action for Create Certificates
 1. Run the Action for Build Loop
 
-### Wait for &nbsp;<span translate="no">TestFlight</span>
 Refer to graphic below as you follow the steps to build the *Loop* app.
 
 * Click on the `Actions` tab
