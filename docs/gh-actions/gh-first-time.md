@@ -712,7 +712,7 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 
 Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
-If you never built using *Xcode*, then after the <code>Add Identifiers</code> *Action*, you will see the six items under **`NAME`** in the table below with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the identifier.
+This will display a table similar to that linked below after a successful <code>Add Identifiers</code> *Action*. There are the six items under **`NAME`** with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the `Identifier`.
 
 [<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for Loop 3](#table-with-name-and-identifier-for-loop-3).
 
@@ -720,7 +720,7 @@ If you never built using *Xcode*, then after the <code>Add Identifiers</code> *A
 
 Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple* developer site.
 
-Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
+Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3.4`. There may be other `Identifiers` here that are no longer used with the *Loop* app. Do not worry about those.
 
 #### Table with Name and Identifier for `Loop 3`
 
@@ -775,7 +775,7 @@ The `Edit Your App ID Configuration` screen will open. Take one action for the e
         * This opens the `App Group Assignment` screen
         * Check the box by `Loop` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
 
-If you modified settings for an *identifier*, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
+If you modified settings for an `Identifier`, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
 
 * Tap on `Save`
 * This opens the `Modify App Capabilities` confirmation screen
@@ -787,7 +787,7 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
-Repeat the steps until you have completed all 4 identifiers in the table above.
+Repeat the steps until you have completed all 4 `Identifiers` in the table above. Yes - there are 6 `Identifiers` created, but only 4 need the `AppGroup` added.
 
 ## Create Loop App in App Store Connect
 
