@@ -8,8 +8,8 @@
 * *Mac* computer is not required to build or install the app
     * Anything with a browser works to build the *Loop* app: PC, Tablet, Mac or iPad
     * The *TestFlight* app is used to install the *Loop* app on your iPhone
-* Xcode is not required
-    * The time required for the initial setup for building with a browser may take less time than one macOS and Xcode version update for those using [`Mac-Xcode Build`](../build/overview.md)
+* *Xcode* is not required
+    * The time required for the initial setup for building with a browser may take less time than one *macOS* and *Xcode* version update for those using [`Mac-Xcode Build`](../build/overview.md)
 * Updates are automatic
     * <span translate="no">Loop 3.4.0</span>&nbsp; and later: 
         * app is automatically built once a month
