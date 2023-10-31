@@ -152,11 +152,11 @@ $$ AC[t = 4pm] = 15 \frac{mg/dL}{5min} \times \frac{10 \frac{g}{U}}{50 \frac{mg/
 
 Those 3g of carbohydrates would then be split amongst the meals proportional to their minimum absorption rates:
 
-$$ \text{Proportion to Meal1} = \frac{MAR_{meal1}}{MAR_{meal1} + MAR_{meal2}} = \frac{12}{12+6}=\frac{2}{3} = 66.6\% $$
+$$ \text{Proportion to Meal1} = \frac{MAR_{meal1}}{MAR_{meal1} + MAR_{meal2}} = \frac{12}{12+24}=\frac{1}{3} = 33.3\% $$
 
-$$ \text{Proportion to Meal2} = \frac{MAR_{meal2}}{MAR_{meal1} + MAR_{meal2}} = \frac{6}{12+6}=\frac{1}{3} = 33.3\% $$
+$$ \text{Proportion to Meal2} = \frac{MAR_{meal2}}{MAR_{meal1} + MAR_{meal2}} = \frac{24}{12+24}=\frac{2}{3} = 66.6\% $$
 
-resulting in 2g of absorption being attributed to Meal 1 and 1g attributed to Meal 2.
+resulting in 1g of absorption being attributed to Meal 1 and 2g attributed to Meal 2.
 
 ### Minimum Carbohydrate Absorption Rate
 
