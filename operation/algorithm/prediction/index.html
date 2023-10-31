@@ -3470,7 +3470,7 @@
 <p>where AC is the number of carbohydrates absorbed (g/5min), <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is the insulin sensitivity factor (mg/dL/U) at time <em>t</em>.</p>
 <p>If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.</p>
 <div class="arithmatex">\[ MAR[t = 12pm] = \frac{ 72g }{ 1.5 \times 4hr } = 12 \frac{ g }{ hr } = 1 \frac{ g }{ 5min } \]</div>
-<div class="arithmatex">\[ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 6 \frac{ g }{ hr } = 0.5 \frac{ g }{ 5min } \]</div>
+<div class="arithmatex">\[ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 24 \frac{ g }{ hr } = 2 \frac{ g }{ 5min } \]</div>
 <p>Examining just the simple linear carbohydrate effect of these two meals:</p>
 <p><img alt="combined meal entries" src="../img/mixed_meals.png" /></p>
 <p>If we further expand this example, by assuming the following at 4pm:</p>
