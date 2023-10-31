@@ -134,7 +134,7 @@ If multiple meal entries are active (i.e., still absorbing), the estimated absor
 
 $$ MAR[t = 12pm] = \frac{ 72g }{ 1.5 \times 4hr } = 12 \frac{ g }{ hr } = 1 \frac{ g }{ 5min } $$
 
-$$ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 6 \frac{ g }{ hr } = 0.5 \frac{ g }{ 5min } $$
+$$ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 24 \frac{ g }{ hr } = 2 \frac{ g }{ 5min } $$
 
 Examining just the simple linear carbohydrate effect of these two meals:
 
