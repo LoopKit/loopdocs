@@ -8,7 +8,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 * _<span translate="no">Loop Follow</span>_
 
 !!! warning "_<span translate="no">Loop Caregiver</span>_ Requires an `App Group`"
-    As of dd YYYY mmm, _<span translate="no">Loop Caregiver</span>_ requires the addition of an `AppGroup` to the `Identifiers`.
+    As of dd YYYY mmm, _<span translate="no">Loop Caregiver</span>_ requires the addition of an `App Group` to the `Identifiers`.
     
     * Please refer to [Add `App Group` to `LoopCaregiver`](#add-app-group-to-loopcaregiver)
 
@@ -205,7 +205,7 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
-Continue down the list until every identifier in the table below (same as table above) has the `App Group` added to it.
+Continue down the list until every identifier in the table below has the `App Group` added to it. (TBD - add comment and edit table if some identifiers do not require the `App Group`.)
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
