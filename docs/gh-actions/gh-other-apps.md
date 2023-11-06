@@ -145,7 +145,7 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 
 Some apps, like the *Loop* app, require updates to the `Identifier` after they are generated.
 
-## Add `App Group` to `Identifier`
+## Add `App Group` to `LoopCaregiver`
 
 The *Loop Follow* app does not require this extra step. You can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
 
@@ -162,7 +162,7 @@ If you have never built the *Loop Caregiver* app with *Xcode* after this require
     * A mistake here means you will not be able to build the *LoopCaregive* app until you fix it
 1. Click `Continue` and then `Register`.
 
-### Add `App Group` to `LoopCaregiver`
+### Add `App Group` to `Identifiers`
 
 Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
