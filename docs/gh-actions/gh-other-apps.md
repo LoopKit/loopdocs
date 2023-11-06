@@ -7,10 +7,10 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 * _<span translate="no">Loop Caregiver</span>_
 * _<span translate="no">Loop Follow</span>_
 
-!!! warning "GH_PAT - NEW RECOMMENDATION"
-    It is now recommended that you use a *GitHub* Personal Access Token (GH_PAT) that never expires
-
-    - [Update with Browser: Regenerate Token](gh-update.md#regenerate-token)
+!!! warning "_<span translate="no">Loop Caregiver</span>_ Requires an `App Group`"
+    As of dd YYYY mmm, _<span translate="no">Loop Caregiver</span>_ requires the addition of an `AppGroup` to the `Identifiers`.
+    
+    * Please refer to [Add `App Group` to `LoopCaregiver`](#add-app-group-to-loopcaregiver)
 
 ### Prerequisites
 
@@ -104,8 +104,7 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Validate <code>Secrets</code> Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
+    * [Errors with Browser](gh-errors.md) tells how to diagnose your problem
     * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
 
 ## Add Identifiers
@@ -130,8 +129,7 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 ## Review App Identifier
@@ -147,7 +145,75 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 
 Some apps, like the *Loop* app, require updates to the `Identifier` after they are generated.
 
-The *Loop Caregiver* app and the *Loop Follow* app, do not require that extra step. Although - stay tuned. There may be an update for the *Loop Caregiver* app later that will require modification of the `Identifier`.
+## Add `App Group` to `Identifier`
+
+The *Loop Follow* app does not require this extra step. You can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
+
+The *Loop Caregiver* app requires the `App Group` be added to the identifiers.
+
+### Create `App Group` for  _<span translate="no">Loop Caregiver</span>_
+
+If you have never built the *Loop Caregiver* app with *Xcode* after this requirement was added, you need to create an *App Group* associated with your `TEAMID`. If your `App Group` exists (from an Xcode build), you will not be allowed to register it again.
+
+1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
+1. For **`Description`**, use `LoopCaregiver App Group`.
+1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopCaregiverGroup`, substituting your team id for `TEAMID`.
+1. Double-check the spelling - your `TEAMID` must be correct and the `LoopCaregiverGroup` *App Group* must match the format shown above
+    * A mistake here means you will not be able to build the *LoopCaregive* app until you fix it
+1. Click `Continue` and then `Register`.
+
+### Add `App Group` to `LoopCaregiver`
+
+Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
+
+
+#### Table with Name and Identifier for `LoopCaregiver`
+
+| `NAME` | `IDENTIFIER` |
+|-------|------------|
+| `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` |
+| `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiverWidgetExtension` |
+| `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiverIntentExtension` |
+| `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiverWatchApp` |
+| `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiverWatchAppExtension` |
+
+### Add `LoopCaregiverGroup` to each Identifier
+
+Find and click on the row for the `LoopCaregiver` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.LoopCaregiver`. The name in the **`NAME`** column may be different than `LoopCaregiver`.
+
+| `NAME` | `IDENTIFIER` |
+|-------|------------|
+| `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` |
+
+The `Edit Your App ID Configuration` screen will open.
+
+1. In the `App Services` column, scroll down to the `App Groups` row
+    * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
+    * If the word `Configure` shows up, tap on it
+        * This opens the `App Group Assignment` screen
+        * Check the box by `LoopCaregiver` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopCaregiver` and then `Continue`
+
+If you modified settings for an *identifier*, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
+
+* Tap on `Save`
+* This opens the `Modify App Capabilities` confirmation screen
+* Click on `Confirm`
+
+If you did not need to make changes, the `Save` button will not be active.
+
+* Tap on the `< All Identifiers` button at the top left
+
+The full list of Identifiers should be displayed again.
+
+Continue down the list until every identifier in the table below (same as table above) has the `App Group` added to it.
+
+| `NAME` | `IDENTIFIER` |
+|-------|------------|
+| `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` |
+| `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiverWidgetExtension` |
+| `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiverIntentExtension` |
+| `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiverWatchApp` |
+| `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiverWatchAppExtension` |
 
 ## Create App in App Store Connect
 
@@ -207,7 +273,6 @@ Refer to the graphic below for the numbered steps:
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
     * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
-
 
 ## Build App
 
