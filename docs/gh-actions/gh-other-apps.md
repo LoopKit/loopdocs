@@ -169,17 +169,19 @@ Right-click to open this link in a new tab: [`Certificates, Identifiers & Profil
 
 #### Table with Name and Identifier for `LoopCaregiver`
 
+All five of these identifiers should be found after running the `2. Add Identifier` action on *GitHub*. The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
+
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` |
-| `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiverWidgetExtension` |
-| `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiverIntentExtension` |
-| `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiverWatchApp` |
-| `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiverWatchAppExtension` |
+| `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.WidgetExtension` |
+| `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiver.IntentExtension` |
+| `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiver.WatchApp` |
+| `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiver.WatchAppExtension` |
 
 ### Add `LoopCaregiverGroup` to each Identifier
 
-Find and click on the row for the `LoopCaregiver` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.LoopCaregiver`. The name in the **`NAME`** column may be different than `LoopCaregiver`.
+Find and click on the row for the `LoopCaregiver` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.LoopCaregiver`. The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -205,15 +207,15 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
-Continue down the list until every identifier in the table below has the `App Group` added to it. (TBD - add comment and edit table if some identifiers do not require the `App Group`.)
+Continue down the list until every identifier in the table below has the `App Group` added to it. If you miss any, the *GitHub* action to `3. Create Certificates` will succeed but the *GitHub* action to `4. Build LoopCaregiver` will fail.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` |
-| `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiverWidgetExtension` |
-| `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiverIntentExtension` |
-| `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiverWatchApp` |
-| `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiverWatchAppExtension` |
+| `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.WidgetExtension` |
+| `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiver.IntentExtension` |
+| `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiver.WatchApp` |
+| `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiver.WatchAppExtension` |
 
 ## Create App in App Store Connect
 
