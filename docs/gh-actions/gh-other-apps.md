@@ -69,13 +69,14 @@ Open the text file in which you maintain a copy of your 6 <code>Secrets</code> s
 
 1. Tap on `New repository secret` and add each of the 6 <code>Secrets</code>
     * You will notices the New secret dialog looks a little different
-    * As soon as you click on the Name* Box, the 6 Secret Names show up as a dropdown as shown in the graphic below
+    * As soon as you click on the Name* Box, the 6 Secret Names may show up as a dropdown as shown in the graphic below
     * Select each one in turn and paste the secret value into the Secret* box and hit Add secret
+    * If they do not appear in a dropdown, enter them exactly as shown (suggest copy / paste from your text file)
 
     ![dialog for entering a new secret](img/repeat-secret-dialog.png){width="500"}
     {align="center"}
 
-Once all six <code>Secrets</code> are added, you will either to the first Action to validate your secrets.
+Once all six <code>Secrets</code> are added, you will proceed to the first Action to validate your secrets.
 
 ## Validate <code>Secrets</code>
 
@@ -120,7 +121,7 @@ Refer to the graphic below for the numbered steps:
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
     * You can select a different branch, but typically, you run the default
-1. Tap the green button that says "Run workflow".
+1. Tap the green button that says "Run workflow"
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
     {align="center"}
@@ -254,11 +255,11 @@ This requires you to provide some information. Examine the table below for the b
 
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
-You are done with this activity. You can close the browser tab, but before you do, note the *TestFlight* tab at the top of the page. You'll be using that tab after you complete the next two actions.
+You are done with this activity. Before you close this browser window, note the *TestFlight* tab at the top of the page. You'll be using that tab after you complete the next two actions.
 
 ## Create Certificates
 
-* The graphic below is an example from Loop, your screen will show your app and associated repository
+* The graphic below is an example from Loop. Your screen will show your app and associated repository.
 
 Refer to the graphic below for the numbered steps:
 
@@ -283,7 +284,7 @@ Refer to the graphic below for the numbered steps:
 Refer to the graphic below for the first four steps:
 
 1. Click on the "Actions" tab of your Repository repository.
-1. On the left side, click on "Build App Name".
+1. On the left side, click on "Build *App Name*".
 1. On the right side, click "Run Workflow" to show a drop-down menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
     * You can select a different branch, but typically, you run the default
@@ -303,7 +304,7 @@ Refer to the graphic below for the first four steps:
 
 ## Add Users to *TestFlight* for App
 
-Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [Configure to Use Browser: Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight)
+Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [Configure to Use Browser: Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
 
 ## Install on Phone
 
