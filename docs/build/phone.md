@@ -104,14 +104,14 @@ If a limitation on your *Mac* prevents you from updating your phone to the lates
 * Once you accept an *iOS* phone update, you cannot go backwards
     * Some *iOS* updates require updates to *Xcode* and *macOS* before people can build the *Loop* app on that device again
     * It is rare, but *iOS* updates have caused the *Loop* app to stop working until other updates were made and the *Loop* app was rebuilt on that phone
-* Turn off automatic updates so you can choose when to update your phone and avoid being caught without a working the *Loop* app app
+* Turn off automatic updates so you can choose when to update your phone and avoid being caught your *Loop* app
 * Google the instructions for your device:
     1. Configure your phone to automatically download the updates
     1. Choose to perform the installation of the updates manually
 
 When *iOS* updates are released, the [_<span translate="no">Loop and Learn</span>_ Version Updates](https://www.loopandlearn.org/version-updates) page is typically updated faster than LoopDocs. Check to see if a new update is causing an issue with the *Loop* app or your CGM before accepting the update from *Apple*.
 
-Within a few days, the "All-Clear" or "WAIT there is a problem" will be posted.
+Within a few days, the "All-Clear" or (very rare) the "WAIT there is a problem" message will be posted.
 
 ## Next Step: Compatible Pump
 
