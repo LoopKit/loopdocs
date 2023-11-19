@@ -46,7 +46,7 @@ Dexcom G7 is supported with version 3 or greater of the *Loop* app.
 
 ## Medtronic CGM ![img/enlite.png](img/enlite.png){width="150"}
 
-The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. the *Loop* app can read the Medtronic CGM data directly from the pump using a RileyLink compatible device.
+The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. The *Loop* app can read the Medtronic CGM data directly from the pump using a RileyLink compatible device.
 
 ## Offline Use
 
