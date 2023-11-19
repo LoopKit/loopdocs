@@ -18,7 +18,7 @@ The&nbsp;<span translate="no">LoopDocs</span>&nbsp;website is organized as follo
     * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a&nbsp;<span translate="no">Loop</span>&nbsp;app using&nbsp;<span translate="no">Nightscout</span>&nbsp;and Apple Push Notifications
     * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
-* [Translation](../translate.md): Links to Google Translate provided as a convenience, no guaratees about the quality of the translation
+* [Translation](../translate.md): Links to Google Translate provided as a convenience, no guarantees about the quality of the translation
 
 ## Building&nbsp;<span translate="no">Loop</span>
 
