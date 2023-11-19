@@ -3345,6 +3345,7 @@
 <ul>
 <li>If at any time in the next 3 hours, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> predicts glucose below <code><abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr></code>, <code><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> is immediately set to 0.0 U/hr and recommended bolus is set 0 U</li>
 <li>If the prediction dips below the low-end of your <code><abbr title="Loop recommends changes to basal and / or bolus to bring glucose predictions into this range">Correction Range</abbr></code>, there is no <strong>automatic</strong> increase over scheduled basal</li>
+<li>If the current glucose is less than the correction range, there is no <strong>automatic</strong> increase over scheduled basal</li>
 <li>If the current <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is two times the <code>Maximum Bolus</code> setting, there is no <strong>automatic</strong> increase over scheduled basal</li>
 </ul>
 <p>Even in cases where <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> does not automatically increase insulin delivery, the recommended bolus might be positive, which you see if you tap on the bolus icon manually.</p>

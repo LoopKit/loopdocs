@@ -3544,7 +3544,6 @@
 <p>If you are running development code, skip ahead to <a href="#preview-for-next-version">Preview for Next Version</a>.</p>
 <h2 id="misleading-error-message">Misleading Error Message<a class="headerlink" href="#misleading-error-message" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If there are <em>Apple</em> Developer agreements you have not accepted, you may get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect even if they are not.</p>
-<p>You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.</p>
 <ul>
 <li>The misleading message tells you that one or more of these: <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code> is not correct</li>
 <li>Check your <em>Apple</em> Developer account for agreements first, before trying to fix those</li>
@@ -3552,6 +3551,10 @@
 <li>It can take 15 minutes to an hour after the agreement is signed before it can be used</li>
 </ul>
 <p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code> Help Page</a>.</p>
+<p>You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.</p>
+<blockquote>
+<p>One user reported: The expiration date on the credit card used for auto-renew of my developer account was updated and the value in the Apple account did not match the new one. After updating my account with the new expiration date - Browser Build succeeded again.</p>
+</blockquote>
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
 <blockquote>
 <p>For Version 3.2.3 and earlier - later versions have an improved method for display errors.</p>
