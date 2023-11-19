@@ -81,6 +81,7 @@ In the situations listed below, the prediction at the end of the DIA can be sign
 
 * If at any time in the next 3 hours, Loop predicts glucose below <code>Glucose Safety Limit</code>, <code>Temp Basal</code> is immediately set to 0.0 U/hr and recommended bolus is set 0 U
 * If the prediction dips below the low-end of your <code>Correction Range</code>, there is no **automatic** increase over scheduled basal
+* If the current glucose is less than the correction range, there is no **automatic** increase over scheduled basal
 * If the current IOB is two times the <code>Maximum Bolus</code> setting, there is no **automatic** increase over scheduled basal
 
 Even in cases where Loop does not automatically increase insulin delivery, the recommended bolus might be positive, which you see if you tap on the bolus icon manually.
