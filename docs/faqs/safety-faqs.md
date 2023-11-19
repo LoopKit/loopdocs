@@ -38,7 +38,30 @@ For older versions of&nbsp;_<span translate="no">Loop</span>_, or if you customi
 If you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, _<span translate="no">Loop</span>_&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
 
 * <span translate="no">Loop 3</span>: review [Customization: Build Time Features](../build/code-customization.md#build-time-features)
-* <span translate="no">Loop 2</span>: Check your [Health](../build/health.md#loop-permissions) permissions and review .
+* <span translate="no">Loop 2</span>: Check your [Health](../build/health.md#loop-permissions) permissions and review.
+
+## Glucose Prediction is Scary
+
+Users often reach out if the glucose prediction shown on the *Loop* app screen is very low - negative even.
+
+* The negative glucose prediction will not happen (that's just the way the model works) but the user **must** figure out what is going on
+
+### Scenario 1: Extreme Override
+
+It is pretty common for new users to think a 10% override setting should behave similar to a 10% temporary basal rate setting on a manual pump. This is not true.
+
+Read this section on the override page for information: [Avoid Extreme Insulin Needs Setting](../operation/features/overrides.md#avoid-extreme-insulin-needs-setting)
+
+### Scenario 2: Entry Error into Apple Health
+
+With version 3 of the *Loop* app, it is no longer necessary to enter glucose or insulin manually into the *Apple Health* app for the *Loop* app to read. There are methods within the *Loop* app for entering a fingerstick value or non-pump insulin.
+
+However, some people are used to entering information into *Apple Health* directly - and it still works. The *Loop* app will read entries from *Apple Health*. But if you do this:
+
+* Be very careful that you enter glucose into glucose
+* Be very careful that you enter insulin into insulin
+
+A recent user entered a fingerstick value into the insulin record in *Apple Health*. They use mmol/L glucose units, so it wasn't as obvious as it would have been for someone using mg/dL. At any rate, they could not figure out why their child had such a high IOB and were afraid the pump had delivered 10 U of insulin! Once they deleted the incorrect entry from *Apple Health*, the *Loop* app was able to make the appropriate prediction.
 
 ## Beware the Medtronic Easy Bolus button
 
