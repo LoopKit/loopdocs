@@ -34,7 +34,7 @@ There are several options to pay for a turn-key *Nightscout* service.
     * Most *Nightscout* options allow you full access to your *Nightscout* configuration variables so you can add the required information
 * Please check out [*Nightscout*: New User](https://nightscout.github.io/nightscout/new_user/) for up-to-date information about your *Nightscout* options
     * If you use the wizard, you can see more options when you select No to the question about contributing to research and development
-    * If you do choose *T1Pal* and want to use remote commands, you must also purchase your *Loop* app from them for an additional monthly fee - contact *T1Pal* for details
+    * If you choose *T1Pal* and want to use remote commands, you must also purchase your *Loop* app from them for an additional monthly fee - contact *T1Pal* for details
 
 The rest of this page assumes that you built your *Loop* app and you have full access to the configuration variables for your *Nightscout* site.
 
