@@ -17,6 +17,12 @@ For caregivers, *Nightscout* enables remote monitoring and even the ability to i
             * monitor *Loop*
             * issue remote commands for carbs, bolus and overrides
 
+    If you plan to use remote commanding with *Nightscout*, please read these links with additional information:
+
+    * [Set Up Remote for *Nightscout*](../nightscout/remote-config.md#set-up-remote-for-nightscout)
+        * [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
+
+
 *Nightscout* is useful for many who use *Loop*. Adults who take care of themselves find the reports and analysis methods from *Nightscout* provide effective tools to monitor their settings and provide reports for their health care provider. It also stores *Loop* configurations so they can be reviewed. With *Loop 3*, the saved *Nightscout* profiles can be downloaded to a new *Loop* installation or a new phone for quick onboarding, should you ever need to start fresh.
 
 Setting up a *Nightscout* site is described in a separate web site: [*Nightscout*: Documentation](https://nightscout.github.io).

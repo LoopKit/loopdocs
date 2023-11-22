@@ -47,6 +47,11 @@ Take some time to familiarize yourself with these data options and choose your p
 
 *Nightscout* provides a secure, real-time Dashboard with status of the *Loop* app visible to anyone with access codes and the internet. It is required for remote commanding.
 
+If you plan to use remote commanding with *Nightscout*, please read these links with additional information:
+
+* [Set Up Remote for *Nightscout*](../nightscout/remote-config.md#set-up-remote-for-nightscout)
+    * [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
+
 ## Next Step: Meet the Community
 
 Now you are ready to [Meet the Community](community.md).
