@@ -10,10 +10,10 @@
     - If you use [Omnipod](#omnipod-pumps) - check which kind
 
 !!! question "FAQs"
-    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump)
-    - **"What are the differences between Medtronic pump models?"** This question is also answered in the [Extra Details](#extra-details-on-medtronic) section
-    - **"But what about the other types of pumps?"** No other pumps work with Loop at this time  
-        - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps.
+    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
+    - **"What are the differences between Medtronic pump models?"** This question is answered in the [Extra Details](#extra-details-on-medtronic) section.
+    - **"But what about the other types of pumps?"** No other pumps work with the *Loop* app at this time.
+        - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps
     - **"Can I change the firmware of my Medtronic pump?"** No.
 
 ## Pumps Compatible with Loop
@@ -38,7 +38,7 @@ If you have one of the pumps listed above, you are good to go on Loop! Congrats!
 
 ![insulin pumps](img/pump.png)
 
-There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are Loop compatible.  Compatibility has two requirements: (1) pump model and (2) firmware.
+There are a number of Medtronic insulin pumps manufactured between 2006 – 2012 which are compatible with the *Loop* app.  Compatibility has two requirements: (1) pump model and (2) firmware.
 
 ### Medtronic Pump Model
 
@@ -53,11 +53,11 @@ To determine your pump model, look at the backside of your pump.  There should b
     - NA ---> Pump Region (NA=North America, CA=Canada/Australia, WW=Worldwide)
     - S ---> Pump Color (S=Smoke, L=Clear/Lucite, B=Blue, P=Pink/Purple)
 
-Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-722LNAS.  This does not affect Loop compatibility.
+Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a model number like MMT-722LNAS.  This does not affect compatibility with the *Loop* app.
 
 ### Medtronic Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows Loop to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temp basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure you are getting one with compatible firmware.
 
 !!! note ""
 
@@ -89,14 +89,14 @@ If you are in the position of being able to shop around for different pump model
 
 **x15/x22 vs x23/x54**:  The differences noteworthy between the x15 and x22 pumps versus the x23 and x54 series pumps are:
 
-* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.  **Loop will have the insulin delivery automatically rounded by the pump to the units available in the pump model, and any smaller adjustments (to make up for the rounding) will be made through Loop’s use of temp basals.  If you want the smaller increments of basal rates, you can still enter those values in the Loop app's settings and Loop will use those values for the purposes of insulin delivery calculations.**
+* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.
 
 |Pump Model  |Basal increments  |Bolus increments  |Range  |
 |---------|---------|---------|---------|
 |515/715</br>and</br>522/722     |  0.05</br>0.1       |    0.1</br>0.1     | deliveries of less than 10 units</br>greater than 10 units        |
 |523/723</br>and</br>554/754     |  0.025</br>0.05</br>0.1       |   0.025 </br>0.05 </br>0.1      | between 0.025 to 0.975 units</br>between 1 to 9.95 units</br>greater than 10 units        |
 
-* Additionally, because of the way Loop fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.
+* Additionally, because of the way the *Loop* app fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.
 
 * The x23/x54 series pumps are also faster at delivering boluses greater than 10 units.  On an x23 pump, a 13-unit bolus takes 5:00 minutes to complete.  On an x22 pump, a 13-unit bolus takes 8:40 minutes to complete.
 
@@ -152,7 +152,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 !!! warning "Reminder and Disclaimer"
 
-    The use of Omnipod pumps with Loop is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your Loop build, setup, or operation. You are fully responsible for your use of Loop and do so at your own risk. Please read these documents and familiarize yourself with Loop before using.
+    The use of Omnipod pumps with the *Loop* app is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your *Loop* app build, setup, or operation. You are fully responsible for your use of the *Loop* app and do so at your own risk. Please read these documents and familiarize yourself with the *Loop* app before using.
 
 ### Omnipod Eros
 
@@ -173,7 +173,7 @@ Eros system has a big PDM that does not look like a phone.
 
 Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device. 
 
-Loop 3.0 and later works with DASH pods. If your version of Loop is 2.2.9 or earlier, you cannot use DASH pods.
+Loop 3.0 and later works with DASH pods. If your version of the *Loop* app is 2.2.9 or earlier, you cannot use DASH pods.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}

@@ -93,6 +93,24 @@ The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. 
 ## Find the Error
 
 This section is required when you need to search for a string to diagnose and error that does not have a clear annotation.
+## Misleading Error Message
+
+If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
+
+* The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
+* Check your *Apple* Developer account for agreements first, before trying to fix those
+* If you previously built successfully - it is almost certainly the agreement
+* It can take 15 minutes to an hour after the agreement is signed before it can be used
+
+If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
+
+You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
+
+> One user reported: The expiration date on the credit card used for auto-renew of my developer account was updated and the value in the Apple account did not match the new one. After updating my account with the new expiration date - Browser Build succeeded again.
+
+## Find Your Error
+
+> For Version 3.2.3 and earlier - later versions have an improved method for display errors.
 
 There is a separate section for each step in the process. First, you must follow the [Examine Annotation](#examine-annotation) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.
 
