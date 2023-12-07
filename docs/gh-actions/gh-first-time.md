@@ -14,6 +14,10 @@
 
     * You can skip some sections but please read this one: [Save Your Information](#save-your-information)
 
+    A narrated video is available:
+
+    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+
     Once you have *Apple Developer* and *GitHub* accounts, the steps below are a high-level summary with links to the detailed section of this LoopDocs page.
 
     You can think of the first part as a scavenger hunt where you find or generate and save six <code>Secrets</code>.
@@ -47,6 +51,7 @@
     - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
     - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
+    - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 ## Tips and Tricks
 
@@ -65,6 +70,14 @@ An automatic table of contents (TOC) should appear for each page on the right si
 For sparse instructions, right-click on the link below:
 
 * [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
+
+### How-to Video to Build with a Browser
+
+In addition to this page, there is a narrated video of each step needed to build using a browser.
+
+* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+
+Click in the comments for a full index of topics.  If you have issues with a step, use the index to  advance to the relevant part of the video. Subtitles are  in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
 
 ## Prerequisites
 
@@ -1048,7 +1061,7 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
 
-You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
+You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
 
 1. First you need to add the email address(es) to your *App Store Connect* Access Users list:
 
