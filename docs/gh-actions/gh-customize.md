@@ -322,7 +322,7 @@ The indenting needs to match, so tab or (shift-tab) to line up the columns.
 * Click on the option to&nbsp;<span translate="no">"Commit directly to your branch"</span>
     * **NOTE: for&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;- commit directly to your default branch**
 * Click on&nbsp;<span translate="no">Commit changes</span>
-* You can make as many changes to build_loop.yml in your fork as you want
+* You can make as many changes to build_loop.yml in your <code>fork</code> as you want
 
 When you are ready, it's time to build with your customizations.
 
@@ -338,6 +338,52 @@ Wait about 2 minutes before walking away to make sure there are no errors. If yo
 
 In about 1 hour, your customized app will be available for installation on your phone via *TestFlight*.
 
+### Customization and SHA-1
+
+When you commit your customization to your `branch` of your `fork`, there is a new SHA-1 associated with that step. The SHA-1 for a given branch, typically `main` or `dev` identifies to a mentor exactly which version of code you used for your build.
+
+The SHA-1 for customized code will not be recognized by a developer or mentor. If you are having a problem and need to ask for help you need to identify what the SHA-1 was before you added your customizations.
+
+If you are on `main` branch and it is up-to-date, this is less of an issue. If you are on `dev` branch, that can require some investigation.
+
+### Ask for Help to Identify Your Base Version
+
+The easy method is to provide a mentor with your GitHub username and they can figure out the base version you are using aside from customization. They can also identify the customizations you added.
+
+### Identify Your Base Version
+
+If you want to do this yourself, this section explains the steps.
+
+* Step 1: In your customized `LoopWorkspace fork`: tap on <code>Code</code> at upper left
+    * If your `fork` is behind the `LoopKit` `repository`, consider updating your `fork`
+        * Typically this can be done without changing your customization
+    * Because you added customizations, your `fork` will be ahead of the `LoopKit` `repository`
+    * An example is shown for the `main` branch in the graphic below - it is one <code>commit</code> ahead of <code>LoopKit</code> as indicated by the message highlighted by the red rectangle<br><br>
+
+    ![main branch after applying customization](img/show-fork-main-customized.png){width="600"}
+    {align="center"}
+
+* Step 2: Click on the clock symbol, highlighted by blue rectangle in the previous graphic, to view the <code>commit</code> history - the history is presented in reverse chronological order
+* Step 3: Look at the <code>commit</code> descriptions for your `fork`; several examples are shown below
+    * The last <code>commit</code> made by the developers that is included in your `fork` is the one a mentor will recognize
+    * The first example is for `main` with one customization
+        * The row highlighted in red is the one a mentor will recognize
+        * The 7-digit alpha-numeric identifier for the <code>commit</code> is highlighted in the blue rectangle
+        * If you click on the copy icon beside it, the full SHA-1 is captured in your paste buffer but the first 7 characters are sufficient to identify your base version (before customization) to a mentor<br><br>
+
+        ![main branch after applying customization](img/show-history-main-customized.png){width="600"}
+        {align="center"}
+
+    * The second example is for `dev` where the `fork` was synched both before and after customizations were applied
+        * Red rectangle labeled 1 is the commit a mentor will recognize
+        * Blue dashed rectangle labeled 2 is what GitHub adds when the user successfully syncs the <code>repository</code> - note that the SHA-1 here is specific to this repo and does not help a mentor identify the base version of your build
+        * The row above the red rectangle is a customization made prior to the sync
+        * The top row (above the blue rectangle) is a customizaiton made after the sync
+
+        ![dev branch after applying customization and then sync](img/show-history-dev-customized.png){width="600"}
+        {align="center"}
+
+
 ## Special Cases
 
 ### Existing Copy for Module
@@ -346,10 +392,10 @@ What if you already have a copy of one of the modules?
 
 **Your existing copy is from a username other than LoopKit**
 
-* If you know this is a copy you do not care about, you can delete the repository.
+* If you know this is a copy you do not care about, you can delete the <code>repository</code>.
 * If you care about this copy, you are probably experienced enough to know how to solve the issue.
 
-Instructions to delete a repository are found at&nbsp;[*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+Instructions to delete a <code>repository</code> are found at&nbsp;[*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 
 Once deleted, go to [Create Your Copy for Selected Module](#create-your-copy-for-selected-module).
 
