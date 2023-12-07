@@ -56,7 +56,7 @@ For the convenience of caregivers who use `Loop Follow` to monitor multiple peop
 | <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
 | <span translate="no">Loop Follow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [<span translate="no">Loop Follow</span>](https://www.loopandlearn.org/loop-follow)|
 
-The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper.
+The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that `LoopCaregiver` can follow multiple Loopers; you select the person inside the app.
 
 | Special Case | Fork from this Address |
 |---|---|
@@ -342,7 +342,7 @@ For each repository: you need to fork again
 
 Then, for every build, you will use just the organization account. The original account is maintained to give you access to *GitHub* and holds your *GitHub* personal access token.
 
-> WARNING - If you have `forks` of DIY apps in your original `my-name` account that are configured to build automatically, you want to disable that and have only the `my-name-org` account be configured for automatic building. Refer to [Disable Actions for Personal *GitHub* account](#disable-actions-for-personal-github-account).
+> WARNING - If you have `forks` of DIY apps in your original `my-name` account that are configured to build automatically, you want to disable that and have only the `my-name-org` account be configured for automatic building. Refer to [Disable Building for Personal *GitHub* account](#disable-building-for-personal-github-account).
 
 ### Add <code>Secrets</code> to your *GitHub* Organization
 
@@ -363,16 +363,18 @@ Make sure you are in the organization for *GitHub*:
 ![add secrets at organization level](img/add-secrets-org.png)
 
 * At this point, tap on `New organization secret` and follow the [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets) instructions on the Configure to Use Browser page until all six <code>Secrets</code> are entered
-* The only difference it those instructions show the graphics for a personal repository and indicate the button will says `New repository secret` - you screen will show `New organization secret`
-* These secrets are used by every repository you fork that has this organization as the owner
+* Those instructions show the graphics for a personal repository and indicate the button will says `New repository secret` - you screen will show `New organization secret`
+* Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
 
-The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow the instructions to get or configure a new one.
+The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow [these instructions](gh-first-time.md#create-github-personal-access-token) to get or configure a new one.
 
-### Disable Actions for Personal *GitHub* account
+### Disable Building for Personal *GitHub* account
 
 Once you have your apps building as you expected from the `my-name-org` organization account, you should configure your personal account to stop any automatic building that may be taking place.
 
-Option 1: Delete the DIY repositories from your personal account
+#### Option 1: Delete `repository`
+
+You can delete the DIY repositories from your personal account
 
 * Pro: You can't get confused about where you should be building
 * Cons:
@@ -385,7 +387,10 @@ Option 1: Delete the DIY repositories from your personal account
     * Select the repository you wish to delete and follow these instructions
     * [GitHub Docs: Delete a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 
-Option 2: Disable the build actions from the repositories in your personal account
+
+#### Option 2: Disable Build Action
+
+You can disable the build actions from the repositories in your personal account
 
 * Pro: You leave any work you previously did alone in your personal account
 * Con: You might get confused and try to build in your personal account instead of your organization account
