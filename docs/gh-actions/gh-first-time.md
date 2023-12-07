@@ -552,7 +552,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
     * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
 
-### Prepare to Enter <code>SECRETS</code>
+### Prepare to Enter <code>Secrets</code>
 
 Log into *GitHub*.
 
@@ -578,7 +578,7 @@ Log into *GitHub*.
         ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
         {align="center"}
 
-### Enter the <code>SECRETS</code>
+### Enter the <code>Secrets</code>
 
 1. Tap on the green button at the top right of your screen labeled `New repository secret` (highlighted above)
     * A new screen appears as shown in the first graphic below
