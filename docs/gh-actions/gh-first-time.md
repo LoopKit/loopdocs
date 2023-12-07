@@ -115,6 +115,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
+    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](gh-other-apps.md#use-agithub-organization-account), and have them available for every repository in that organization account
 * API `Key`:`Application Programming Interface Key`
     * You obtain and save this key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
@@ -551,6 +552,8 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
     * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
 
+### Prepare to Enter <code>SECRETS</code>
+
 Log into *GitHub*.
 
 1. Return to your forked copy of <code>LoopWorkspace</code>
@@ -574,6 +577,8 @@ Log into *GitHub*.
 
         ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
         {align="center"}
+
+### Enter the <code>SECRETS</code>
 
 1. Tap on the green button at the top right of your screen labeled `New repository secret` (highlighted above)
     * A new screen appears as shown in the first graphic below
