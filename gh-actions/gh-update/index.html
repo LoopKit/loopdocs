@@ -975,6 +975,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#choose-previous-build" class="md-nav__link">
+    Choose Previous Build
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose Previous Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-test-details" class="md-nav__link">
+    Add Test Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-previous-build" class="md-nav__link">
+    Select a Previous Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-loop-app-build-details" class="md-nav__link">
     The Loop App Build Details
   </a>
@@ -3396,6 +3423,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#choose-previous-build" class="md-nav__link">
+    Choose Previous Build
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose Previous Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-test-details" class="md-nav__link">
+    Add Test Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-previous-build" class="md-nav__link">
+    Select a Previous Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#the-loop-app-build-details" class="md-nav__link">
     The Loop App Build Details
   </a>
@@ -3737,11 +3791,54 @@
 </ul>
 <p align="center"><img alt="install Loop from *TestFlight*" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h4 id="automatic-update-enabled">Automatic Update Enabled<a class="headerlink" href="#automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
+<blockquote>
+<p>We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> for version 3.3 or later.</p>
+</blockquote>
 <p>Option 2: If you chose to enable Automatic Updates from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, the updated build will be installed over your existing app as soon as it uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
 <ul>
 <li>In this case, when you look at the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone, the app should have installed automatically</li>
 <li>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above, the message will say <code>Open</code> instead of <code>Install</code></li>
 </ul>
+<h2 id="choose-previous-build">Choose Previous Build<a class="headerlink" href="#choose-previous-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.</p>
+<p>This section provides detailed instructions if you want to choose a previous build to install on your phone. Typically, the most recent build is selected but there may be special cases:</p>
+<ul>
+<li>You are supporting multiple family members and may build different versions for each</li>
+<li>You want to test a different <code>branch</code> or set of customizations; you can install a previous build once you are done with the test</li>
+</ul>
+<p>This section covers two topics.</p>
+<ol>
+<li>Optional: <a href="#add-test-details">Add Test Details</a> to the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> build</li>
+<li><a href="#select-a-previous-build">Select a Previous Build</a></li>
+</ol>
+<h3 id="add-test-details">Add Test Details<a class="headerlink" href="#add-test-details" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>About half an hour after the build action completes, the new build will appear in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> screen at this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a></p>
+<ul>
+<li>Log in if needed</li>
+<li>Select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+<li>Click on the <code>TestFlight</code> tab to see a screen similar to the graphic below</li>
+</ul>
+<p align="center"><img alt="select a TestFlight build to update" src="../img/testflight-select-build.png" width="700" /></p>
+<p>Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.</p>
+<p align="center"><img alt="add details to your build" src="../img/testflight-test-details.png" width="700" /></p>
+<p>Click inside the box under <strong>Test Details</strong>. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>&lt; <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Builds</code> at upper left.</p>
+<p>In this example, the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".</p>
+<div class="admonition tip">
+<p class="admonition-title">Commit Number</p>
+<p>If your build includes customizations, your <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number will not match what the developer expects to see if you need to ask for help.</p>
+<p>Use this section <a href="../gh-customize/#customization-and-sha-1">Customization and <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr></a> to determine the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> before customization.</p>
+</div>
+<h3 id="select-a-previous-build">Select a Previous Build<a class="headerlink" href="#select-a-previous-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>First open the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone and select the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>Near the bottom of the screen is a row labeled previous builds.</p>
+<ul>
+<li>Tap on the previous builds row</li>
+<li>The available builds are grouped by app version number, choose your desired version</li>
+<li>Typically you choose the most recent build for that version and click Install and then Open after installation completes</li>
+<li>All your settings should remain</li>
+</ul>
+<p>The following graphic shows the view seen in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.</p>
+<p align="center"><img alt="choose build from TestFlight that has test details" src="../img/testflight-select-with-details.png" width="300" /></p>
 <h2 id="the-loop-app-build-details">The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App Build Details<a class="headerlink" href="#the-loop-app-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>In the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, once installed on your phone, tap on <code>Settings -&gt; Support -&gt; Issue Report</code>. The graphic below shows an example of the Build Details included in the report.</p>
 <ul>

@@ -2568,6 +2568,33 @@
     Build with Customizations
   </a>
   
+    <nav class="md-nav" aria-label="Build with Customizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customization-and-sha-1" class="md-nav__link">
+    Customization and SHA-1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ask-for-help-to-identify-your-base-version" class="md-nav__link">
+    Ask for Help to Identify Your Base Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identify-your-base-version" class="md-nav__link">
+    Identify Your Base Version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3417,6 +3444,33 @@
     Build with Customizations
   </a>
   
+    <nav class="md-nav" aria-label="Build with Customizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customization-and-sha-1" class="md-nav__link">
+    Customization and SHA-1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ask-for-help-to-identify-your-base-version" class="md-nav__link">
+    Ask for Help to Identify Your Base Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identify-your-base-version" class="md-nav__link">
+    Identify Your Base Version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3819,7 +3873,7 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 </li>
 <li>Click on&nbsp;<span translate="no">Commit changes</span></li>
-<li>You can make as many changes to build_loop.yml in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> as you want</li>
+<li>You can make as many changes to build_loop.yml in your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> as you want</li>
 </ul>
 <p>When you are ready, it's time to build with your customizations.</p>
 <h2 id="build-with-customizations">Build with Customizations<a class="headerlink" href="#build-with-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3833,15 +3887,65 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 <p>Wait about 2 minutes before walking away to make sure there are no errors. If you get an error, then look for the first "did not apply" error message and fix the customization right before that line.</p>
 <p>In about 1 hour, your customized app will be available for installation on your phone via <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
+<h3 id="customization-and-sha-1">Customization and <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr><a class="headerlink" href="#customization-and-sha-1" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When you <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> your customization to your <code>branch</code> of your <code>fork</code>, there is a new <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> associated with that step. The <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for a given <abbr title="version of code within a single repository or workspace repository">branch</abbr>, typically <code>main</code> or <code>dev</code> identifies to a mentor exactly which version of code you used for your build.</p>
+<p>The <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for customized code will not be recognized by a developer or mentor. If you are having a problem and need to ask for help you need to identify what the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> was before you added your customizations.</p>
+<p>If you are on <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and it is up-to-date, this is less of an issue. If you are on <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, that can require some investigation.</p>
+<h3 id="ask-for-help-to-identify-your-base-version">Ask for Help to Identify Your Base Version<a class="headerlink" href="#ask-for-help-to-identify-your-base-version" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The easy method is to provide a mentor with your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username and they can figure out the base version you are using aside from customization. They can also identify the customizations you added.</p>
+<h3 id="identify-your-base-version">Identify Your Base Version<a class="headerlink" href="#identify-your-base-version" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you want to do this yourself, this section explains the steps.</p>
+<ul>
+<li>
+<p>Step 1: In your customized <code>LoopWorkspace fork</code>: tap on <code>Code</code> at upper left</p>
+<ul>
+<li>If your <code>fork</code> is behind the <code>LoopKit</code> <code>repository</code>, consider updating your <code>fork</code><ul>
+<li>Typically this can be done without changing your customization</li>
+</ul>
+</li>
+<li>Because you added customizations, your <code>fork</code> will be ahead of the <code>LoopKit</code> <code>repository</code></li>
+<li>An example is shown for the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the graphic below - it is one <code><abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr></code> ahead of <code>LoopKit</code> as indicated by the message highlighted by the red rectangle<br><br></li>
+</ul>
+<p align="center"><img alt="main branch after applying customization" src="../img/show-fork-main-customized.png" width="600" /></p>
+</li>
+<li>
+<p>Step 2: Click on the clock symbol, highlighted by blue rectangle in the previous graphic, to view the <code><abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr></code> history - the history is presented in reverse chronological order</p>
+</li>
+<li>
+<p>Step 3: Look at the <code><abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr></code> descriptions for your <code>fork</code>; several examples are shown below</p>
+<ul>
+<li>The last <code><abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr></code> made by the developers that is included in your <code>fork</code> is the one a mentor will recognize</li>
+<li>
+<p>The first example is for <code>main</code> with one customization</p>
+<ul>
+<li>The row highlighted in red is the one a mentor will recognize</li>
+<li>The 7-digit alpha-numeric identifier for the <code><abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr></code> is highlighted in the blue rectangle</li>
+<li>If you click on the copy icon beside it, the full <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is captured in your paste buffer but the first 7 characters are sufficient to identify your base version (before customization) to a mentor<br><br></li>
+</ul>
+<p align="center"><img alt="main branch after applying customization" src="../img/show-history-main-customized.png" width="600" /></p>
+</li>
+<li>
+<p>The second example is for <code>dev</code> where the <code>fork</code> was synched both before and after customizations were applied</p>
+<ul>
+<li>Red rectangle labeled 1 is the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> a mentor will recognize</li>
+<li>Blue dashed rectangle labeled 2 is what <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> adds when the user successfully syncs the <code><abbr title="contains project files and each file's revision history">repository</abbr></code> - note that the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> here is specific to this repo and does not help a mentor identify the base version of your build</li>
+<li>The row above the red rectangle is a customization made prior to the sync</li>
+<li>The top row (above the blue rectangle) is a customizaiton made after the sync</li>
+</ul>
+<p align="center"><img alt="dev branch after applying customization and then sync" src="../img/show-history-dev-customized.png" width="600" /></p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="special-cases">Special Cases<a class="headerlink" href="#special-cases" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="existing-copy-for-module">Existing Copy for Module<a class="headerlink" href="#existing-copy-for-module" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>What if you already have a copy of one of the modules?</p>
 <p><strong>Your existing copy is from a username other than LoopKit</strong></p>
 <ul>
-<li>If you know this is a copy you do not care about, you can delete the <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
+<li>If you know this is a copy you do not care about, you can delete the <code><abbr title="contains project files and each file's revision history">repository</abbr></code>.</li>
 <li>If you care about this copy, you are probably experienced enough to know how to solve the issue.</li>
 </ul>
-<p>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at&nbsp;<a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Docs</a></p>
+<p>Instructions to delete a <code><abbr title="contains project files and each file's revision history">repository</abbr></code> are found at&nbsp;<a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Docs</a></p>
 <p>Once deleted, go to <a href="#create-your-copy-for-selected-module">Create Your Copy for Selected Module</a>.</p>
 <h2 id="background-information">Background Information<a class="headerlink" href="#background-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="loopworkspace"><span translate="no">LoopWorkspace</span><a class="headerlink" href="#loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h3>
