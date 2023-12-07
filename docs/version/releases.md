@@ -34,13 +34,33 @@ Release information is always found on the [*GitHub*&nbsp;_<span translate="no">
 
 Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
 
+### `Loop` Version Numbering
+
+With the release of `Loop 3`, there is a new pattern for identifying the releases as distinct from the development work.
+
+Each release uses 3 numbers: Major.Minor.Patch
+
+* Major is reserved for a significant change in the code, such as occurred going from `Loop 2.2.9` to `Loop 3.0.0`
+* Minor is used when the development branch is released for general use
+* Patch typically indicates a modification to support external events like an Xcode or iOS version update with no feature changes in Loop
+
+To prevent confusion between versions used for development and versions used for release (`main` `branch`), the Minor values are even for released code. The Minor value for the development `branch` (`dev`) is incremented as part of the release process and is always odd.
+
+For example:
+
+* `Loop 3.0.0` was the first released version of `Loop 3`
+    * `Loop 3.1.0` was the development version before `Loop 3.2.0` was released
+* `Loop 3.2.0` was the next released version
+    * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
+    * `Loop 3.3.0` is the current development version
+
 ## Loop 3 Version History
 
 ### Loop v3.2.3
 
 *Loop* v3.2.3 was released on September 19, 2023.
 
-This minor release was required for those who build using the Mac-Xcode method.
+This patch release was required for those who build using the Mac-Xcode method.
 
 * There are no changes to app functionality
 * Version 3.2.2 and earlier cannot be built using Xcode 15, see [Cycle Inside Loop](../build/build-errors.md#cycle-inside-loop)
@@ -49,13 +69,13 @@ This minor release was required for those who build using the Mac-Xcode method.
 
 *Loop* v3.2.2 was released on April 24, 2023.
 
-This is a minor release to fix archiving with Xcode 14.3.
+This is a patch release to fix archiving with Xcode 14.3.
 
 ### Loop v3.2.1
 
 Loop v3.2.1 was released on March 20, 2023.
 
-This is a minor release primarily dealing with localization updates.
+This is a patch release primarily dealing with localization updates.
 
 * G7 Plugin localization fixed: was defaulting to Spanish in some cases.
 * Updated translations from translators on Lokalise.
