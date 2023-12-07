@@ -71,16 +71,7 @@ The version of code that shows up under the Loop Settings screen does not change
 
 If you need help with your app, the mentors need more information. Please issue a Loop Report when asking for help. Refer to [Support](../loop-3/settings.md#support) for how to issue a Loop Report. If you want to keep track yourself, refer to [Identify Loop-dev Version](#identify-loop-dev-version)
 
-With the release of Loop 3, the numbering for Loop-dev has a new pattern of even (released) and odd (dev) numbers for the "x" place in 3.x.m. 
-
-For example:
-
-* Loop 3.0.0 was the first released version of Loop 3
-    * If minor updates are required before the next release, they will be numbered Loop 3.0.1, etc.
-* Loop 3.1.0 was the development version before Loop 3.2.0 was released
-* Loop 3.2.0 was the next released version
-* Loop 3.2.1 and 3.2.2 were minor releases
-* Loop 3.3.0 is the current development version
+* [`Loop` Version Numbering](releases.md#loop-version-numbering)
 
 ### Identify Loop-dev Version
 

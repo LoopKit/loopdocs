@@ -34,6 +34,26 @@ Release information is always found on the [*GitHub*&nbsp;_<span translate="no">
 
 Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
 
+### `Loop` Version Numbering
+
+With the release of `Loop 3`, there is a new pattern for identifying the releases as distinct from the development work.
+
+Each release uses 3 numbers: Major.Minor.Patch
+
+* Major is reserved for a significant change in the code, such as occurred going from `Loop 2.2.9` to `Loop 3.0.0`
+* Minor is used when the development branch is released for general use
+* Patch typically indicates a modification to support external events like an Xcode or iOS version update with no feature changes in Loop
+
+To prevent confusion between versions used for development and versions used for release, the Minor values are even for released code. The development branch version is the next higher number (and thus always odd).
+
+For example:
+
+* `Loop 3.0.0` was the first released version of `Loop 3`
+    * `Loop 3.1.0` was the development version before `Loop 3.2.0` was released
+* `Loop 3.2.0` was the next released version
+    * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
+    * `Loop 3.3.0` is the current development version
+
 ## Loop 3 Version History
 
 ### Loop v3.2.3
