@@ -175,7 +175,7 @@ If you are a typical user who just builds a single version for yourself or your 
 This section provides detailed instructions if you want to choose a previous build to install on your phone. Typically, the most recent build is selected but there may be special cases:
 
 * You are supporting multiple family members and may build different versions for each
-* You want to test a different `branch` or set of customizations, but be able to return to the released version (`main`) or development version (`dev`)
+* You want to test a different `branch` or set of customizations; you can install a previous build once you are done with the test
 
 This section covers two topics.
 
@@ -213,7 +213,6 @@ First open the *TestFlight* app on your phone and select the *Loop* app.
 
 Near the bottom of the screen is a row labeled previous builds.
 
-* View main TestFlight screen and tap on your app
 * Tap on the previous builds row
 * The available builds are grouped by app version number, choose your desired version
 * Typically you choose the most recent build for that version and click Install and then Open after installation completes
