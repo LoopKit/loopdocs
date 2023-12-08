@@ -1,16 +1,23 @@
 ## Build Other Apps using a Browser
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other apps in the DIY universe added the same feature. **Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.** If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instruction for that app should be located in that file.
-
-The same technique is used and the same six <code>Secrets</code> are applied to each `repository`. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
+Once Loop 3 was released with the ability to build using a browser, a lot of other apps in the DIY universe added the same feature. **Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.**
 
 * _<span translate="no">Loop Caregiver</span>_
 * _<span translate="no">Loop Follow</span>_
 
+If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instruction for that app should be located in that file.
+
+The same technique is used and the same six <code>Secrets</code> are applied to each `repository`. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
+
 !!! warning "The *Loop Caregiver* App Requires an `App Group`"
     As of 2023 December 8, the updated version of the *Loop Caregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`.
     
-    * Please refer to the new section [Add `App Group` to `LoopCaregiver`](#add-app-group-to-loopcaregiver)
+    * To update the *Loop Caregiver* App you need to [Update the `Repository`](#update-the-repository)
+    * Then (one time only):
+        * Run the Action to [Add Identifiers](#add-identifiers)
+        * Follow the instructions in [Add `App Group` to `LoopCaregiver`](#add-app-group-to-loopcaregiver)
+        * Continue with [Create Certificates](#create-certificates)
+        * Finish with [Build App](#build-app)
 
 ### Optional Build Method
 
@@ -70,6 +77,21 @@ The two repositories below are only if you need to follow a second or third loop
 | <span translate="no">Loop Follow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second) |
 | <span translate="no">Loop Follow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third) |
 
+## Update the `Repository`
+
+If you just created the `fork`, you can skip this section.
+
+If you are returning to this page to update an app, please follow these steps. Each step has a link to instructions on the Update `LoopWorkspace` page. Follow the `Update Fork` directions for the `repository` of the app you are updating:
+
+1. [Accept Agreements](gh-update.md#accept-agreements) for the *Apple* Developer account
+2. [Update `Fork`](gh-update.md#update-fork)
+
+Then return to this page.
+
+Normally you skip ahead to [Build App](#build-app) after an update.
+
+If you are updating the *LoopCaregiver* app after the 2023 December 8 update, you need to go to [Add Identifiers](#add-identifiers) after updating the `fork`.
+
 ## Configure <code>Secrets</code> for this App
 
 > If you choose to use the optional *GitHub* organization method, you can skip this section:
@@ -114,7 +136,7 @@ Open the text file in which you maintain a copy of your 6 <code>Secrets</code> s
     ![dialog for entering a new secret](img/repeat-secret-dialog.png){width="500"}
     {align="center"}
 
-Once all six <code>Secrets</code> are added, you will proceed to the first Action to validate your secrets.
+Once all six <code>Secrets</code> are added, proceed to the first Action to validate your secrets.
 
 ## Validate <code>Secrets</code>
 
@@ -143,8 +165,10 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Errors with Browser](gh-errors.md) tells how to diagnose your problem
+    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
+    * [Action: Validate <code>Secrets</code> Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
+
 
 ## Add Identifiers
 
@@ -169,6 +193,7 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
     * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 ## Review App Identifier
@@ -184,26 +209,29 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 
 > If you build from a second or third `repository` for `Loop Follow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
 
-Some apps, like the *Loop* app, require updates to the `Identifier` after they are generated.
+The *Loop Caregiver* app requires updates to the `Identifiers` after they are generated.
 
 The *Loop Follow* app does not require this extra step. You can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
 
 ## Add `App Group` to `LoopCaregiver`
 
-As of 2023 December 8, the *Loop Caregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`.
+As of 2023 December 8, the *Loop Caregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`. Follow these steps one time to be able to build the *Loop Caregiver* app after this update.
 
-1. Instructions are provided to create the `App Group`
-2. The expanded list of `Identifiers` is provided to which you must associate that `App Group`
+### Check if `App Group` Exists
+
+Open this link to view your `applicationGroup` `Identifiers`: [`App Group Identifiers`](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
+
+* No action is required if there is already an identifier with the `NAME` of `LoopCaregiver App Group` and the `IDENTIFIER` contains your `TEAMID` in this format: `group.com.TEAMID.loopkit.LoopCaregiverGroup`
+* In that case, you can skip ahead to [Add `App Group` to `Identifiers`](#add-app-group-to-identifiers)
 
 ### Create `App Group` for the *Loop Caregiver* App
 
-If you do not have this `App Group`, you need to create it. If your `App Group` exists, you do not need to create it. It's ok to try if you are not sure; you will not be allowed to register it if it already exists.
+Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
 
-1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
-1. For **`Description`**, use `LoopCaregiver App Group`.
+1. For **`Description`**, use `LoopCaregiver App Group`
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopCaregiverGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `LoopCaregiverGroup` *App Group* must match the format shown above
-    * A mistake here means you will not be able to build the *LoopCaregive* app until you fix it
+    * A mistake here means you will not be able to build the *LoopCaregiver* app until you fix it
 1. Click `Continue` and then `Register`.
 
 ### Add `App Group` to `Identifiers`
@@ -213,7 +241,9 @@ Right-click to open this link in a new tab: [`Certificates, Identifiers & Profil
 
 #### Table with Name and Identifier for `LoopCaregiver`
 
-All five of these identifiers should be found after running the `2. Add Identifier` action on *GitHub*. If you do not see them, please sync your `LoopCaregiver` repository. The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
+All five of these identifiers should be found after running the `2. Add Identifier` action on *GitHub*.
+
+If you do not see them, please sync your `LoopCaregiver` repository and then run the [`2. Add Identifier` action](#add-identifiers). The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
