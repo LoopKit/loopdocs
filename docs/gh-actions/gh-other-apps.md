@@ -1,11 +1,13 @@
 ## Build Other Apps using a Browser
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other apps in the DIY universe added the same feature. **Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.**
+Once Loop 3 was released with the ability to build using a browser, a lot of other apps in the DIY universe added the same feature.
+
+**Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.**
 
 * _<span translate="no">Loop Caregiver</span>_
 * _<span translate="no">Loop Follow</span>_
 
-If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instruction for that app should be located in that file.
+If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instructions for that app should be located in that file.
 
 The same technique is used and the same six <code>Secrets</code> are applied to each `repository`. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
@@ -204,7 +206,7 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
-| <span translate="no">Loop Caregiver</span> | <span translate="no">Loop Caregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
+| <span translate="no">Loop Caregiver</span> | <span translate="no">LoopCaregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
 | <span translate="no">Loop Follow</span> | <span translate="no">LoopFollow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
 
 > If you build from a second or third `repository` for `Loop Follow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
@@ -241,9 +243,9 @@ Right-click to open this link in a new tab: [`Certificates, Identifiers & Profil
 
 #### Table with Name and Identifier for `LoopCaregiver`
 
-All five of these identifiers should be found after running the `2. Add Identifier` action on *GitHub*.
+All five of these identifiers should be found after running the `Add Identifier` action on *GitHub*.
 
-If you do not see them, please sync your `LoopCaregiver` repository and then run the [`2. Add Identifier` action](#add-identifiers). The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
+If you do not see them, please sync your `LoopCaregiver` repository and then run the [`Add Identifier` action](#add-identifiers). The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
