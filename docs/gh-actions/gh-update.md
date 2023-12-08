@@ -179,12 +179,70 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../gh-ac
 ![install Loop from &nbsp;<span translate="no">TestFlight</span>](img/testflight-install-loop.gif){width="300"}
 {align="center"}
 
-#### TestFlight Automatic Update Enabled
+
+#### Automatic Update Enabled
+
+> We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from GitHub for version 3.3 or later.
 
 Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Loop* app, the updated build will be installed over your existing app as soon as it uploaded to *TestFlight*.
 
 * In this case, when you look at the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on your phone, the app should have installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
+
+## Choose Previous Build
+
+If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.
+
+This section provides detailed instructions if you want to choose a previous build to install on your phone. Typically, the most recent build is selected but there may be special cases:
+
+* You are supporting multiple family members and may build different versions for each
+* You want to test a different `branch` or set of customizations; you can install a previous build once you are done with the test
+
+This section covers two topics.
+
+1. Optional: [Add Test Details](#add-test-details) to the TestFlight build
+2. [Select a Previous Build](#select-a-previous-build)
+
+### Add Test Details
+
+About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps)
+
+* Log in if needed
+* Select your *Loop* app
+* Click on the `TestFlight` tab to see a screen similar to the graphic below
+
+![select a TestFlight build to update](img/testflight-select-build.png){width="700"}
+{align="center"}
+
+Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.
+
+![add details to your build](img/testflight-test-details.png){width="700"}
+{align="center"}
+
+Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
+
+In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
+
+!!! tip "Commit Number"
+    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
+
+    Use this section [Customization and SHA-1](gh-customize.md#customization-and-sha-1) to determine the SHA-1 before customization.
+
+### Select a Previous Build
+
+First open the *TestFlight* app on your phone and select the *Loop* app.
+
+Near the bottom of the screen is a row labeled previous builds.
+
+* Tap on the previous builds row
+* The available builds are grouped by app version number, choose your desired version
+* Typically you choose the most recent build for that version and click Install and then Open after installation completes
+* All your settings should remain
+
+The following graphic shows the view seen in the *TestFlight* app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.
+
+![choose build from TestFlight that has test details](img/testflight-select-with-details.png){width="300"}
+{align="center"}
 
 ## <span translate="no">TestFlight</span>&nbsp;Expiration Warning
 

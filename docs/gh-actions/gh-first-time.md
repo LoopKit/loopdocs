@@ -14,6 +14,10 @@
 
     * You can skip some sections but please read this one: [Save Your Information](#save-your-information)
 
+    A narrated video is available:
+
+    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+
     Once you have *Apple Developer* and *GitHub* accounts, the steps below are a high-level summary with links to the detailed section of this LoopDocs page.
 
     You can think of the first part as a scavenger hunt where you find or generate and save six <code>Secrets</code>.
@@ -46,6 +50,7 @@
     - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](gh-deploy.md#automatic-update-build-install) for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
     - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
+    - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 ## Automatic Build of Loop
 
@@ -73,6 +78,14 @@ An automatic table of contents (TOC) should appear for each page on the right si
 For sparse instructions, right-click on the link below:
 
 * [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
+
+### How-to Video to Build with a Browser
+
+In addition to this page, there is a narrated video of each step needed to build using a browser.
+
+* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+
+Click in the comments for a full index of topics.  If you have issues with a step, use the index to  advance to the relevant part of the video. Subtitles are  in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
 
 ## Prerequisites
 
@@ -110,6 +123,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
+    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](gh-other-apps.md#use-agithub-organization-account), and have them available for every repository in that organization account
 * API `Key`:`Application Programming Interface Key`
     * You obtain and save this key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
@@ -510,6 +524,8 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
     * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; must be added, if desired, for [Other App](gh-other-apps.md) `repositories`
 
+### Prepare to Enter <code>Secrets</code>
+
 Log into *GitHub*.
 
 1. Return to your forked copy of <code>LoopWorkspace</code>
@@ -532,6 +548,8 @@ Log into *GitHub*.
 
         ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
         {align="center"}
+
+### Enter the <code>Secrets</code>
 
 1. Tap on the green button at the top right of your screen labeled `New repository secret` (highlighted above)
     * A new screen appears as shown in the first graphic below
@@ -964,7 +982,7 @@ Refer to the graphic below for the first four steps:
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
 
-You are configuring a private capability for your family using an Internal Testing group (max of 100). You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
+You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
 
 1. First you need to add the email address(es) to your *App Store Connect* Access Users list:
 

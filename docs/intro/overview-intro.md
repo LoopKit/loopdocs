@@ -34,7 +34,7 @@ The process for building the&nbsp;<span translate="no">Loop</span>&nbsp;app is d
         * Ask what features, if any, available with DIY loop are not available with their service
         * **These steps are important for your safety**
 
-### Using a Simulator
+### Use a Simulator
 
 You can build&nbsp;<span translate="no">Loop</span>&nbsp;and practice with a simulated phone, CGM and/or pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
