@@ -26,6 +26,18 @@ After you complete the configuration, read the entire [Remote Commands](remote-c
         * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
         * If a green check is missing, it might just be too new for evaluation
 
+### Paid Providers and Remote Configuration
+
+There are several options to pay for a turn-key *Nightscout* service.
+
+* In order to enable remote commanding, your *Nightscout* site must be configured with information associated with the *Apple Developer ID* used to build the *Loop* app
+    * Most *Nightscout* options allow you full access to your *Nightscout* configuration variables so you can add the required information
+* Please check out [*Nightscout*: New User](https://nightscout.github.io/nightscout/new_user/) for up-to-date information about your *Nightscout* options
+    * If you use the wizard, you can see more options when you select No to the question about contributing to research and development
+    * If you choose *T1Pal* and want to use remote commands, you must also purchase your *Loop* app from them for an additional monthly fee - contact *T1Pal* for details
+
+The rest of this page assumes that you built your *Loop* app and you have full access to the configuration variables for your *Nightscout* site.
+
 ## Step 1: Update the Looper's iPhone settings
 
 For remote commands to successfully deploy to a Looper's iPhone when the phone is locked, they must have Background App Refresh enabled.

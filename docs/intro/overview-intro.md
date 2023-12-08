@@ -18,7 +18,7 @@ The&nbsp;<span translate="no">LoopDocs</span>&nbsp;website is organized as follo
     * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a&nbsp;<span translate="no">Loop</span>&nbsp;app using&nbsp;<span translate="no">Nightscout</span>&nbsp;and Apple Push Notifications
     * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
-* [Translation](../translate.md): Links to Google Translate provided as a convenience, no guaratees about the quality of the translation
+* [Translation](../translate.md): Links to Google Translate provided as a convenience, no guarantees about the quality of the translation
 
 ## Building&nbsp;<span translate="no">Loop</span>
 
@@ -34,7 +34,7 @@ The process for building the&nbsp;<span translate="no">Loop</span>&nbsp;app is d
         * Ask what features, if any, available with DIY loop are not available with their service
         * **These steps are important for your safety**
 
-### Using a Simulator
+### Use a Simulator
 
 You can build&nbsp;<span translate="no">Loop</span>&nbsp;and practice with a simulated phone, CGM and/or pump. You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 

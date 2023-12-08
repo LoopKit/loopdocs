@@ -5,6 +5,15 @@
     * Check out links on the [LoopDocs: *Nightscout* Troubleshooting](troubleshoot.md) page
 * Make sure Looper's phone is connected to the internet so it can upload to *Nightscout*
 
+## Remote Commands Stopped Working
+
+This section is for people who were using remote commands and they suddenly stopped working.
+
+If you are using LoopCaregiver, try the remote command directly from Nightscout to see if they work there. If they are not working there as well, check out your account status first before attempting the fixes on the rest of this page.
+
+* Your *Apple Developer* account must be in good standing for the push notifications to work
+* Log in to your [*Apple Developer* account](https://developer.apple.com/account) and see if there are agreements you need to accept
+
 ## Improper Configuration
 
 ### *Nightscout* Config and *Loop* Build Method

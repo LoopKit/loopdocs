@@ -37,14 +37,16 @@ If you are running development code, skip ahead to [Preview for Next Version](#p
 
 If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
-You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
-
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
 * Check your *Apple* Developer account for agreements first, before trying to fix those
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
 
 If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
+
+You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
+
+> One user reported: The expiration date on the credit card used for auto-renew of my developer account was updated and the value in the Apple account did not match the new one. After updating my account with the new expiration date - Browser Build succeeded again.
 
 ## Find Your Error
 

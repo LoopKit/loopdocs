@@ -7,6 +7,26 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 * _<span translate="no">Loop Caregiver</span>_
 * _<span translate="no">Loop Follow</span>_
 
+### Multiple Copies of `Loop Follow`
+
+For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with Mac-Xcode](https://www.loopandlearn.org/loop-follow#lf-script)).
+
+* Build up to three instance of `Loop Follow`
+* Customize the name of the app that appears on your phone
+* Display the custom name in the main `Loop Follow` screen
+
+!!! tip "Optional - Set up a Organization Account"
+    If you are going to be building a lot of different apps, you can choose to set up a free organization account with *GitHub* and use that to build.
+
+    Pros:
+
+    * The 6 <code>Secrets</code> can be added to the organization one-time and apply to every repository
+
+    Cons:
+
+    * The displays for an organization are slightly different than for a personal account but are not hard to navigate if you are computer literate and feel comfortable using a browser
+
+    For more information, see [Use a *GitHub* Organization Account](#use-a-github-organization-account).
 !!! warning "_<span translate="no">Loop Caregiver</span>_ Requires an `App Group`"
     As of dd YYYY mmm, _<span translate="no">Loop Caregiver</span>_ requires the addition of an `App Group` to the `Identifiers`.
     
@@ -15,6 +35,8 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 ### Prerequisites
 
 * If you have already built using the Browser Build method, it is easy to build other apps which use the same method. Skip ahead to [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets)
+
+    * If you decide you want to try the *GitHub* free organization method, review the instructions and then adjust as you work through the step-by-step instructions on this page which show graphics and instructions for using a personal *GitHub* account
 
 * If this is the first repository you have built with the Browser Build method, you must first complete the initial steps found on [Configure to Use Browser](../gh-actions/gh-first-time.md). When you reach the point where
     * You have created your Match-Secrets repository
@@ -38,7 +60,20 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 | <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
 | <span translate="no">Loop Follow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [<span translate="no">Loop Follow</span>](https://www.loopandlearn.org/loop-follow)|
 
+The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that `LoopCaregiver` can follow multiple Loopers; you select the person inside the app.
+
+| Special Case | Fork from this Address |
+|---|---|
+| <span translate="no">Loop Follow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second) |
+| <span translate="no">Loop Follow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third) |
+
 ## Configure <code>Secrets</code> for this App
+
+> If you choose to use the optional *GitHub* organization method, you can skip this section:
+
+> * All `repositories` in your *GitHub* organization use the organization <code>Secrets</code>
+> * Make sure you complete [Add <code>Secrets</code> to your *GitHub* Organization](#add-secrets-to-your-github-organization) instead of this section
+> * Skip ahead to [Validate <code>Secrets</code>](#validate-secrets)
 
 After successfully creating your fork of the repository for this app:
 
@@ -218,6 +253,8 @@ Continue down the list until every identifier in the table below has the `App Gr
 | `LoopCaregiverWatchApp` | `com.TEAMID.loopkit.LoopCaregiver.WatchApp` |
 | `LoopCaregiverWatchAppExtension` | `com.TEAMID.loopkit.LoopCaregiver.WatchAppExtension` |
 
+> If you build from a second or third `repository` for `Loop Follow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
+
 ## Create App in App Store Connect
 
 You will be following the directions below to create an App in App Store Connect if you don't already have one.
@@ -228,6 +265,8 @@ This requires you to provide some information. Examine the table below for the b
 | --- | --- |
 | <span translate="no">Loop Caregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
 | <span translate="no">Loop Follow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
+
+> If you build from a second or third `repository` for `Loop Follow`, the Bundle ID will have `.Second` or `.Third` at the end.
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
 
@@ -281,6 +320,19 @@ Refer to the graphic below for the numbered steps:
 
 * The graphic below is an example from Loop, your screen will show your app and associated repository
 
+### Display Name Customization for `Loop Follow`
+
+> If you build `Loop Follow` for one, two or three loopers, you may choose to customize your `fork` or `forks` to insert a custom display name.
+
+> * Find and click on the file `LoopFollowDisplayNameConfig.xcconfig`
+> * Tap the pencil icon so you can edit the file
+> * The last line says `display_name = LoopFollow` (or `LoopFollow_Second` or `LoopFollow_Third`)
+> * Insert your custom name so the last line says `display_name = LF custom name`
+> * Click on commit changes and chose to commit directly into the `main` branch
+
+> Continue to build as instructed below. After you install the app on your phone, iPad or Mac via *TestFlight*, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom named `Loop Follow` app in the list of apps, but is not required.
+
+
 Refer to the graphic below for the first four steps:
 
 1. Click on the "Actions" tab of your Repository repository.
@@ -310,4 +362,114 @@ Once the first build completes, you will be able to configure *TestFlight* for t
 
 The [Install on Phone](gh-deploy.md) walks you through the steps to install the app to a phone. When going through those steps, replace your App Name for&nbsp;_<span translate="no">Loop</span>_. Everything else is the same.
 
+## Use a *GitHub* Organization Account
 
+This section is optional. It is provided to assist:
+
+* Users who are using *GitHub* for other reasons and want to seggregate their DIY app building from their existing accounts
+* Mentors who want to do a lot of testing of many DIY apps to support people and get tired of entering the 6 <code>Secrets</code> repeatedly
+* Users who are comfortable with the *GitHub* web interface who want the convenience of entering the 6 <code>Secrets</code> just one time instead of entering them for each <code>repository</code> individually
+
+### Set up a Free *GitHub* Organization
+
+Prerequisite: User has a personal *GitHub* account.
+
+In the instructions below, use your *GitHub* username instead of `my-name`.
+
+1. Follow the directions below to create a new *GitHub* organization account with a username of `my-name-org` (of course naming is up to you)
+    * There is documentation at this link, [New *GitHub* Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch), or you can follow the bullets below
+    * Log into `my-name` and click on your icon (at upper right) and choose Settings
+    * On the left side-bar, click on Organizations
+    * In the new view, click on New Organization and choose Free for the plan by clicking on  `Create a free organization`.
+    * In the `Set up your organization` screen:
+        * Enter `my-name-org` into the `Organization name` box
+        * Enter the same email you use for `my-name` account
+        * Select this organization belongs to `My personal account`
+        * Check the box to accept the terms of service
+        * Tap on the next button
+2. You now see a Welcome screen
+    * Unless you plan to collaborate with others, just tap `Complete setup`
+    * You can always add others at a later time
+3. Confirm access by entering the same password as you use for `my-name`
+4. The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it
+
+### Use the Free *GitHub* Organization
+
+There are three steps to using this account moving forward:
+
+1. One-time only: You need to add your 6 <code>Secrets</code> to this organization account (instructions are in next section)
+
+1. One-time only: Create a `Match-Secrets` repository in the `my-name-org` account
+    * Start out at the top-level of your organization (`github.com/my-name-org`)
+    * Click on `Repositories`
+    * Click on `New repository`
+    * Choose `my-name-org` as owner and enter `Match-Secrets` as the name
+    * Make sure to choose `Private` and tap on the `Create` button
+    * Refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
+
+For each repository: you need to fork again
+
+* There will be a drop down menu under Owner for you to choose the Owner
+* Choose the organization account
+
+Then, for every build, you will use just the organization account. The original account is maintained to give you access to *GitHub* and holds your *GitHub* personal access token.
+
+> WARNING - If you have `forks` of DIY apps in your original `my-name` account that are configured to build automatically, you want to disable that and have only the `my-name-org` account be configured for automatic building. Refer to [Disable Building for Personal *GitHub* account](#disable-building-for-personal-github-account).
+
+### Add <code>Secrets</code> to your *GitHub* Organization
+
+Adding the <code>Secrets</code> to an organization is similar to adding them to each <code>repository</code> for a personal *GitHub* account. The difference is you add them at the organization level and then they are available to each <code>repository</code> in that organization.
+
+So first, follow these directions to prepare to add secrets to the organization and then skip to the per-repository directions for more details about each secret.
+
+Make sure you are in the organization for *GitHub*:
+
+* Click on your icon at upper right of *GitHub* browser
+* Select `Your Organizations`
+* In the new screen, select `my-name-org`
+* Make sure the URL is `github.com/my-name-org`
+* Click on Settings (it is optional to fill in the information shown under general)
+* In the left pane, scroll down to find `Secrets and variables` and click on the drop-down symbol and choose `Actions`
+* Your screen should look like the graphic below
+
+![add secrets at organization level](img/add-secrets-org.png)
+
+* At this point, tap on `New organization secret` and follow the [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets) instructions on the Configure to Use Browser page until all six <code>Secrets</code> are entered
+* Those instructions show the graphics for a personal repository and indicate the button will says `New repository secret` - you screen will show `New organization secret`
+* Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
+
+The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow [these instructions](gh-first-time.md#create-github-personal-access-token) to get or configure a new one.
+
+### Disable Building for Personal *GitHub* account
+
+Once you have your apps building as you expected from the `my-name-org` organization account, you should configure your personal account to stop any automatic building that may be taking place.
+
+#### Option 1: Delete `repository`
+
+You can delete the DIY repositories from your personal account
+
+* Pro: You can't get confused about where you should be building
+* Cons:
+    * If you have already generated some customizations there, it is safest to not delete the repository
+    * If you have pull requests open from your personal account, DO NOT DELETE that repository - that would automatically close those open PR
+* Here are the instructions if you decide to delete the repositories
+    * Click on your icon at upper right of *GitHub* browser
+    * Select `Your Repositories`
+    * Notice the github address now says `my-name` instead of `my-name-org`
+    * Select the repository you wish to delete and follow these instructions
+    * [GitHub Docs: Delete a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+
+
+#### Option 2: Disable Build Action
+
+You can disable the build actions from the repositories in your personal account
+
+* Pro: You leave any work you previously did alone in your personal account
+* Con: You might get confused and try to build in your personal account instead of your organization account
+* Here are the instructions to disable the build actions:
+    * Click on your icon at upper right of *GitHub* browser
+    * Select `Your Repositories`
+    * Notice the github address now says `my-name` instead of `my-name-org`
+    * Select the repository you wish to disable build actions for and follow these instructions
+    * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
+    * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
