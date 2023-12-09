@@ -67,6 +67,8 @@ For the convenience of caregivers who use `Loop Follow` to monitor multiple peop
     * _<span translate="no">Loop Caregiver</span>_, expect the `dev branch`
     * _<span translate="no">Loop Follow</span>_, expect the `main branch`
 
+### Table of App `Repositories`
+
 | App | Fork from this Address | Documentation |
 |---|---|---|
 | <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
@@ -409,13 +411,13 @@ The [Install on Phone](gh-deploy.md) walks you through the steps to install the 
 
 This section is optional. It is provided to assist:
 
-* Users who are using *GitHub* for other reasons and want to seggregate their DIY app building from their existing accounts
+* Users who are using *GitHub* for other reasons and want to segregate their DIY app building from their existing accounts
 * Mentors who want to do a lot of testing of many DIY apps to support people and get tired of entering the 6 <code>Secrets</code> repeatedly
 * Users who are comfortable with the *GitHub* web interface who want the convenience of entering the 6 <code>Secrets</code> just one time instead of entering them for each <code>repository</code> individually
 
 ### Set up a Free *GitHub* Organization
 
-Prerequisite: User has a personal *GitHub* account.
+Prerequisite: You need a personal *GitHub* account.
 
 In the instructions below, use your *GitHub* username instead of `my-name`.
 
@@ -434,7 +436,9 @@ In the instructions below, use your *GitHub* username instead of `my-name`.
     * Unless you plan to collaborate with others, just tap `Complete setup`
     * You can always add others at a later time
 3. Confirm access by entering the same password as you use for `my-name`
-4. The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it
+
+???+ tip "GH_PAT comes from personal `my-name` account"
+    The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it.
 
 ### Use the Free *GitHub* Organization
 
@@ -448,12 +452,15 @@ There are three steps to using this account moving forward:
     * Click on `New repository`
     * Choose `my-name-org` as owner and enter `Match-Secrets` as the name
     * Make sure to choose `Private` and tap on the `Create` button
-    * Refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
+    * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
 
-For each repository: you need to fork again
+1. For each repository: you need to `fork` for each app you wish to build to the new `my-name-org` account
 
-* There will be a drop down menu under Owner for you to choose the Owner
-* Choose the organization account
+    * When you do the fork, there will be a drop-down menu under Owner for you to select the account for the `fork`
+    * Choose the organization account
+    * Other than that extra step, follow the standard `fork` directions
+        * This link provides instructions to [`Fork LoopWorkspace`](gh-first-time.md#fork-loopworkspace)
+        * Refer to the [Table of App `Repositories`](#table-of-app-repositories) when building apps other than the *Loop* app
 
 Then, for every build, you will use just the organization account. The original account is maintained to give you access to *GitHub* and holds your *GitHub* personal access token.
 
@@ -463,7 +470,7 @@ Then, for every build, you will use just the organization account. The original 
 
 Adding the <code>Secrets</code> to an organization is similar to adding them to each <code>repository</code> for a personal *GitHub* account. The difference is you add them at the organization level and then they are available to each <code>repository</code> in that organization.
 
-So first, follow these directions to prepare to add secrets to the organization and then skip to the per-repository directions for more details about each secret.
+Follow the directions below to prepare to add secrets to the organization and then skip (when provided the link) to the per-repository directions for more details about adding each secret.
 
 Make sure you are in the organization for *GitHub*:
 
@@ -477,8 +484,10 @@ Make sure you are in the organization for *GitHub*:
 
 ![add secrets at organization level](img/add-secrets-org.png)
 
-* At this point, tap on `New organization secret` and follow the [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets) instructions on the Configure to Use Browser page until all six <code>Secrets</code> are entered
-* Those instructions show the graphics for a personal repository and indicate the button will says `New repository secret` - you screen will show `New organization secret`
+* At this point, tap on `New organization secret`
+    * Refer the instructions at this link, [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets), for adding <code>Secrets</code>
+    * Those instructions show the graphics for a personal `repository` and indicate the button will says `New repository secret` - your screen will show `New organization secret`
+    * Continue until all six <code>Secrets</code> are entered for your organization account `my-name-org`
 * Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
 
 The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow [these instructions](gh-first-time.md#create-github-personal-access-token) to get or configure a new one.
