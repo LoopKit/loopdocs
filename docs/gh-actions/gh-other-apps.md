@@ -485,8 +485,8 @@ Make sure you are in the organization for *GitHub*:
 ![add secrets at organization level](img/add-secrets-org.png)
 
 * At this point, tap on `New organization secret`
-    * Follow the instructions at this link, [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets), for adding <code>Secrets</code> to a `repository` for a personal account
-    * Those instructions show the graphics for a personal repository and indicate the button will says `New repository secret` - your screen will show `New organization secret`
+    * Refer the instructions at this link, [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets), for adding <code>Secrets</code>
+    * Those instructions show the graphics for a personal `repository` and indicate the button will says `New repository secret` - your screen will show `New organization secret`
     * Continue until all six <code>Secrets</code> are entered for your organization account `my-name-org`
 * Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
 
