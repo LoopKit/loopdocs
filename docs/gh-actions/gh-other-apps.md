@@ -11,6 +11,8 @@ If you want to build another DIY app that is not included here, look for the fil
 
 The same technique is used and the same six <code>Secrets</code> are applied to each `repository`. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
+### Update to Build with Browser for the *Loop Caregiver* App
+
 !!! warning "The *Loop Caregiver* App Requires an `App Group`"
     As of 2023 December 8, the updated version of the *Loop Caregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`.
     
@@ -40,7 +42,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 
 For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with Mac-Xcode](https://www.loopandlearn.org/loop-follow#lf-script)).
 
-* Build up to three instance of `Loop Follow`
+* Build up to three instances of `Loop Follow`
 * Customize the name of the app that appears on your phone
 * Display the custom name in the main `Loop Follow` screen
 
