@@ -7,18 +7,18 @@
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App
 
-    - Check *Apple* account status
+    - 5 min: Check *Apple* account status
     - Check if you need to renew certificates (once a year only)
-    - Update version if a new one is available
-    - Start the Build: 5 minutes
+    - 5 min: Update version if a new one is available
+    - 5 min: Start the Build
     - Wait for the build to complete and appear in the *TestFlight* app on your phone
         * about an hour
         * depends on *GitHub*, *Apple* and *TestFlight*
 
     Once a Year [Renew Certificate](#renew-certificate)
 
-    * Clear out expired certificates
-    * Generate new certificates
+    * 5 min: Clear out expired certificates
+    * 5 min: Generate new certificates
 
 ???+ abstract "Page Summary (click to open/close)"
     **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
@@ -95,7 +95,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 * Apps can be installed from TestFlight onto a phone up through the TestFlight expiration date
 * You just cannot build a new app until a new Certificate is generated
 
-??? question "Do you want to know more? Click here"
+??? question "Do you want to know more? (Click to open/close)"
     * Delete all your `Distribution Certificates`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
 
     * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`. Later this will be automated and can be done without deleting your `Match-Secrets repository`, but for now the easiest way to do that is to just delete your current `Match-Secrets repository` and then create a brand new one. (Steps 2 and 3 below.)
@@ -113,7 +113,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 1. Create a new private `Match-Secrets` *Repository*
     * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
     * dev branch:
-        * `Create Certificates` automatically creates a new private `Match-Secrets` repository, if you don't have one, when selecting `dev` branch
+        * `Create Certificates` automatically creates a new private `Match-Secrets` repository if you don't have one
         * Optional: you can skip step 3 and instead, select `dev` branch for `Create Certificates`
 1. In your fork of LoopWorkspace:
     * Run the `Action`: `Create Certificates`
