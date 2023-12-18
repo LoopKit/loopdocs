@@ -942,6 +942,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#renew-certificate" class="md-nav__link">
+    Renew Certificate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-steps-to-renew-your-distribution-certificate" class="md-nav__link">
+    Manual Steps to Renew Your Distribution Certificate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#update-fork" class="md-nav__link">
     Update Fork
   </a>
@@ -3390,6 +3404,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#renew-certificate" class="md-nav__link">
+    Renew Certificate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-steps-to-renew-your-distribution-certificate" class="md-nav__link">
+    Manual Steps to Renew Your Distribution Certificate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#update-fork" class="md-nav__link">
     Update Fork
   </a>
@@ -3637,19 +3665,20 @@
 <summary>Time Estimate (click to open/close)</summary>
 <p>Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
 <ul>
-<li>Check <em>Apple</em> account status</li>
-<li>Update version if a new one is available</li>
-<li>Start the Build: 5 minutes</li>
+<li>5 min: Check <em>Apple</em> account status</li>
+<li>Check if you need to renew certificates (once a year only)</li>
+<li>5 min: Update version if a new one is available</li>
+<li>5 min: Start the Build</li>
 <li>Wait for the build to complete and appear in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone<ul>
 <li>about an hour</li>
 <li>depends on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, <em>Apple</em> and <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 </li>
 </ul>
-<p>Optional: If you need to update your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access token</p>
+<p>Once a Year <a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></p>
 <ul>
-<li>5 minutes to regenerate token</li>
-<li>5 minutes to update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> Secret for each of your app <code>repositories</code></li>
+<li>5 min: Clear out expired certificates</li>
+<li>5 min: Generate new certificates</li>
 </ul>
 </details>
 <details class="abstract" open="open">
@@ -3675,6 +3704,7 @@
 <li><strong>Did the directions change?</strong> Yes. We now recommend you select a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token that never expires and supports automatic update and rebuild when that feature is released. It simplifies the build every 90-day process significantly.</li>
 <li><strong>How do I set my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> to never expire and to support the automatic rebuild feature?</strong> See this section <a href="#regenerate-token">Regenerate Token</a>.</li>
 <li><strong>What happens to my existing builds when I change my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token?</strong> Nothing. The <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> only affect future builds. Previous build are available for the full 90 days.</li>
+<li><strong>Is there anything I have to do once a year?</strong> Yes. Once a year you need to get a new <code>Distribution Certificate</code>. These only last one year. See this section <a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></li>
 </ul>
 </details>
 <h2 id="when-to-update-or-rebuild">When to Update or Rebuild<a class="headerlink" href="#when-to-update-or-rebuild" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3692,6 +3722,7 @@
 <p class="admonition-title">Summary of Update Steps</p>
 <ul>
 <li><a href="#accept-agreements">Accept Agreements</a></li>
+<li><a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> <strong>(once a year)</strong></li>
 <li><a href="#update-fork">Update <code>Fork</code></a></li>
 <li><a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
 <li><a href="#wait-for-testflight">Wait for <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
@@ -3717,6 +3748,66 @@
 <p class="admonition-title">Wait After You Agree</p>
 <p>It typically takes 15 minutes before your updated agreement is available so you can complete your build.</p>
 <p>If your build with browser fails, wait longer. An hour wait was reported by one person.</p>
+</div>
+<h3 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Once a year, you need to renew your <code>Distribution Certificate</code> to continue using the build with browser method.</strong></p>
+<blockquote>
+<p>Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your <code>Distribution Certificate</code> will no longer be valid in 30 days."</p>
+</blockquote>
+<p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> that have not already expired are not affected by revoking the certificate.</strong></p>
+<ul>
+<li>Apps installed on the phone continue to run</li>
+<li>Apps can be installed from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> onto a phone up through the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date</li>
+<li>You just cannot build a new app until a new <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is generated</li>
+</ul>
+<details class="question">
+<summary>Do you want to know more? (Click to open/close)</summary>
+<ul>
+<li>
+<p>Delete all your <code>Distribution Certificates</code>. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)</p>
+</li>
+<li>
+<p>The <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> in question is embedded in your <code>Match-Secrets repository</code>. In order to proceed, you need to remove the old certificate from <code>Match-Secrets</code>. Later this will be automated and can be done without deleting your <code>Match-Secrets repository</code>, but for now the easiest way to do that is to just delete your current <code>Match-Secrets repository</code> and then create a brand new one. (Steps 2 and 3 below.)</p>
+</li>
+<li>
+<p>Finally, for every app that you build with this method, you need to run <code>Create Certificates</code> for that app. (Step 4 below.)</p>
+</li>
+</ul>
+</details>
+<h3 id="manual-steps-to-renew-your-distribution-certificate">Manual Steps to Renew Your <code>Distribution Certificate</code><a class="headerlink" href="#manual-steps-to-renew-your-distribution-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ol>
+<li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list">Apple Developer Certificates</a><ul>
+<li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a <code>Development Certificate</code></li>
+<li>Click each row that has a <code>Distribution Certificate</code> and revoke it</li>
+<li>You will get an email informing you the certificate was revoked</li>
+</ul>
+</li>
+<li>Delete your <code>Match-Secrets</code> Repository<ul>
+<li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
+</ul>
+</li>
+<li>Create a new private <code>Match-Secrets</code> <em>Repository</em><ul>
+<li>main <abbr title="version of code within a single repository or workspace repository">branch</abbr>: follow the directions <a href="../gh-first-time/#create-match-secrets">First-Time: Create <code>Match-Secrets</code></a></li>
+<li>dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>:<ul>
+<li><code>Create Certificates</code> automatically creates a new private <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> if you don't have one</li>
+<li>Optional: you can skip step 3 and instead, select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> for <code>Create Certificates</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
+<li>Run the <code>Action</code>: <code>Create Certificates</code></li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Other Apps</p>
+<p>If you build other apps using the build with browser method, they have just had their certificates revoked.</p>
+<ul>
+<li>The existing apps you installed from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> continue working until their <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date</li>
+<li>You cannot build new versions of the app until you run <code>Create Certificates</code> for that app</li>
+<li>To make sure you don't forget, go ahead and do that for all your other <code>repositories</code> now</li>
+</ul>
 </div>
 <h3 id="update-fork">Update <code>Fork</code><a class="headerlink" href="#update-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Open your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and select your <code>LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></code> from your repositories list.</p>
