@@ -65,8 +65,6 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
     Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 
-    Optional - to make the email stop happening - [Optional Removal of ]
-
 ### Accept Agreements
 
 Sign in to your [Apple Developer account](https://developer.apple.com/account). If there are agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.
@@ -89,7 +87,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 **Once a year, you need to renew your `Distribution Certificate` to continue using the build with browser method.**
 
-> Note that these steps should become more automated, but for now, here's what you need to do if you get an email from Apple informing you that "Your `Distribution Certificate` will no longer be valid in 30 days."
+> Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your `Distribution Certificate` will no longer be valid in 30 days."
 
 **Apps in TestFlight that have not already expired are not affected by revoking the certificate.**
 
@@ -114,7 +112,9 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 1. Create a new private `Match-Secrets` *Repository*
     * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
-    * dev branch: the `Action`: `Create Certificates` automatically creates a new private `Match-Secrets` repository if you don't have one
+    * dev branch:
+        * `Create Certificates` automatically creates a new private `Match-Secrets` repository, if you don't have one, when selecting `dev` branch
+        * Optional: you can skip step 3 and instead, select `dev` branch for `Create Certificates`
 1. In your fork of LoopWorkspace:
     * Run the `Action`: `Create Certificates`
 
