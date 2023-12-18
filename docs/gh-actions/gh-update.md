@@ -8,16 +8,17 @@
     Build the *Loop* App
 
     - Check *Apple* account status
+    - Check if you need to renew certificates (once a year only)
     - Update version if a new one is available
     - Start the Build: 5 minutes
     - Wait for the build to complete and appear in the *TestFlight* app on your phone
         * about an hour
         * depends on *GitHub*, *Apple* and *TestFlight*
 
-    Optional: If you need to update your *GitHub* Personal Access token
+    Once a Year [Renew Certificate](#renew-certificate)
 
-    * 5 minutes to regenerate token
-    * 5 minutes to update the GH_PAT Secret for each of your app <code>repositories</code>
+    * Clear out expired certificates
+    * Generate new certificates
 
 ???+ abstract "Page Summary (click to open/close)"
     **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
@@ -41,6 +42,7 @@
     - **Did the directions change?** Yes. We now recommend you select a *GitHub* Personal Access Token that never expires and supports automatic update and rebuild when that feature is released. It simplifies the build every 90-day process significantly.
     - **How do I set my *GitHub* `Personal Access Token` to never expire and to support the automatic rebuild feature?** See this section [Regenerate Token](#regenerate-token).
     - **What happens to my existing builds when I change my *GitHub* Personal Access Token?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build are available for the full 90 days.
+    - **Is there anything I have to do once a year?** Yes. Once a year you need to get a new `Distribution Certificate`. These only last one year. See this section [Renew Certificate](#renew-certificate)
 
 ## When to Update or Rebuild
 
@@ -55,12 +57,15 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
 !!! abstract "Summary of Update Steps"
     * [Accept Agreements](#accept-agreements)
+    * [Renew Certificate](#renew-certificate) **(once a year)**
     * [Update `Fork`](#update-fork)
     * [Build the *Loop* App](#build-the-loop-app)
     * [Wait for *TestFlight*](#wait-for-testflight)
     * [Install or Confirm Installation](#install-or-confirm-installation)
 
     Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+
+    Optional - to make the email stop happening - [Optional Removal of ]
 
 ### Accept Agreements
 
@@ -79,6 +84,46 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     It typically takes 15 minutes before your updated agreement is available so you can complete your build.
 
     If your build with browser fails, wait longer. An hour wait was reported by one person.
+
+### Renew Certificate
+
+**Once a year, you need to renew your `Distribution Certificate` to continue using the build with browser method.**
+
+> Note that these steps should become more automated, but for now, here's what you need to do if you get an email from Apple informing you that "Your `Distribution Certificate` will no longer be valid in 30 days."
+
+**Apps in TestFlight that have not already expired are not affected by revoking the certificate.**
+
+* Apps installed on the phone continue to run
+* Apps can be installed from TestFlight onto a phone up through the TestFlight expiration date
+* You just cannot build a new app until a new Certificate is generated
+
+??? question "Do you want to know more? Click here"
+    * Delete all your `Distribution Certificates`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
+
+    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`. Later this will be automated and can be done without deleting your `Match-Secrets repository`, but for now the easiest way to do that is to just delete your current `Match-Secrets repository` and then create a brand new one. (Steps 2 and 3 below.)
+
+    * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
+
+### Manual Steps to Renew Your `Distribution Certificate`
+
+1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
+    * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
+    * Click each row that has a `Distribution Certificate` and revoke it
+    * You will get an email informing you the certificate was revoked
+1. Delete your `Match-Secrets` Repository
+    * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+1. Create a new private `Match-Secrets` *Repository*
+    * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
+    * dev branch: the `Action`: `Create Certificates` automatically creates a new private `Match-Secrets` repository if you don't have one
+1. In your fork of LoopWorkspace:
+    * Run the `Action`: `Create Certificates`
+
+!!! warning "Other Apps"
+    If you build other apps using the build with browser method, they have just had their certificates revoked.
+
+    * The existing apps you installed from TestFlight continue working until their TestFlight expiration date
+    * You cannot build new versions of the app until you run `Create Certificates` for that app
+    * To make sure you don't forget, go ahead and do that for all your other `repositories` now
 
 ### Update `Fork`
 
