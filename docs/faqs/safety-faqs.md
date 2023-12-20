@@ -17,7 +17,8 @@ The graphic below has numbered highlights to follow along for configuring Sleep 
 1. Enable Time Sensitive Notifications (disabled by default)
 2. Tap on the &plus; sign to add Apps that are allowed to notify in this mode
 3. Use search feature to find apps of interest
-4. Tap on the radio button to select apps of interest, the check mark means that app will be added 
+4. Tap on the radio button to select apps of interest, the check mark means that app will be added
+    * If you use additional apps to provide alerts, be sure to add them to *Focus* as well
 
 ![configure sleep mode to enable alerts](img/focus-notification.svg){width="450"}
 {align="center"}
