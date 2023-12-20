@@ -2,6 +2,30 @@
 
 Do not enter settings that you are unsure of. For example, if you haven't any idea what your carb ratio is, please don't enter a wild guess. Instead, test your settings and talk to your health care provider about what your appropriate settings should be.
 
+## iOS *Focus* Notifications
+
+iPhones have [*Focus* modes](https://support.apple.com/en-us/108302) to enable maximum flexibility for notifications. These modes must be configured by each user to allow important notifications from your diabetes apps.
+
+**Set up every *Focus* mode you use to allow glucose alerts or you will not get them.**
+
+Critical notifications, for example urgent low from Dexcom, are enabled regardless of your *Focus* settings. But regular low and high glucose notifications might be suppressed. Open source apps, like the *Loop* app, can only be allowed to notify during a *Focus* mode when configured by the user.
+
+Under iOS Settings, select *Focus*, then choose the *Focus* mode you want to adjust.
+
+The graphic below has numbered highlights to follow along for configuring Sleep focus initially:
+
+1. Enable Time Sensitive Notifications (disabled by default)
+2. Tap on the &plus; sign to add Apps that are allowed to notify in this mode
+3. Use search feature to find apps of interest
+4. Tap on the radio button to select apps of interest, the check mark means that app will be added 
+
+![configure sleep mode to enable alerts](img/focus-notification.svg){width="450"}
+{align="center"}
+
+The little clock icon indicates that time-sensitive notifications are enabled. The other icons represent the apps you added to have permission to notify you when in this *Focus* mode.
+
+Be sure to do this for every *Focus* mode you use.
+
 ## Understand the App Displays
 
 If you do not understand the components displayed in the graphic below, please spend time reviewing the information at [Displays](../loop-3/displays-v3.md).

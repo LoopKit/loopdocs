@@ -102,7 +102,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
     * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
 
-### Manual Steps to Renew Your `Distribution Certificate`
+#### Manual Steps to Renew Your `Distribution Certificate`
 
 1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
     * Carefully examine the `Type` column - do **not** delete a `Development Certificate`

@@ -36,6 +36,13 @@ If you later decide to use a different CGM type, you must first delete the CGM a
 
 *   For Dexcom G5, G6 or ONE, you must delete the CGM when you change transmitters (about once every 90 days)
 
+!!! warning "Set up *Focus* Mode"
+    Don't forgot to check your [iOS *Focus* Notifications](../faqs/safety-faqs.md#ios-focus-notifications) when you add or change your CGM.
+
+    * Dexcom CGM must have the app for G6 or G7 added separately
+    * Libre CGM (`dev` branch only) must have Loop notifications turned on to get CGM alerts
+    * Nightscout or other alerts: if you use another app to provide alerts, be sure to add them to *Focus* as well
+
 ### Remote Upload from Loop
 
 Loop provides an option to upload CGM values to a remote service like Nightscout or Tidepool. In many cases this can be a preferred solution.
