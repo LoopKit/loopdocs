@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: LoopDocs
+site_name: LoopDocs  (DRAFT for Nav Reorg)
 
 theme:
     name: material
@@ -135,18 +135,24 @@ nav:
 - Build with Browser:
     - 'Browser Overview': gh-actions/gh-overview.md
     - 'Configure to use Browser': gh-actions/gh-first-time.md
+    - 'Errors with Browser': gh-actions/gh-errors.md
     - 'Install on Phone': gh-actions/gh-deploy.md
     - 'Update/Rebuild with Browser': gh-actions/gh-update.md
-    - 'Errors with Browser': gh-actions/gh-errors.md
+    - 'Automatic Update & Build': gh-actions/automatic.md
+    - 'Customize using Browser': 'gh-actions/custom-browser.md'
+    - 'Personal Edits with Browswer': 'gh-actions/gh-customize.md'
+    - 'Build Loop dev with Browser': gh-actions/build-dev-browser.md
     - 'Build Other Apps with Browser': gh-actions/gh-other-apps.md
-- Build with Mac-Xcode:
-    - 'Mac-Xcode Overview': 'build/overview.md'
+- Build with Mac:
+    - 'Mac Overview': 'build/overview.md'
     - 'Compatible Computer': 'build/computer.md'
     - 'Xcode Version': 'build/xcode-version.md'
     - 'Xcode Settings': 'build/xcode-settings.md'
     - 'Build Loop': 'build/build-app.md'
     - 'Oh dear! Build errors?': 'build/build-errors.md'
+    - 'Customize using Mac': 'build/custom-mac.md'
     - 'Update/Rebuild with Mac-Xcode': 'build/updating.md'
+    - 'Build Loop dev with Mac-Xcode': 'build/build-dev-mac.md'
     - 'Build Free Loop': 'build/build-free-loop.md'
     - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Set Up:
@@ -198,16 +204,16 @@ nav:
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
-- 'Version':
+- Version:
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
-    - 'Code Customization': 'build/code-customization.md'
-    - 'Customize using Browser': 'gh-actions/gh-customize.md'
+    - 'Build-Time Flags': 'version/build-time-flag.md'
+    - 'Personal Edits': 'build/code-customization.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
     - 'Build Loop Dev': 'version/build-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
-- '<span translate="no">Nightscout<span>':
+- Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new-user.md'
     - 'Nightscout with Loop': 'nightscout/update-user.md'

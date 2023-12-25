@@ -4,16 +4,14 @@ The Version tab of LoopDocs contains information about Loop versions, code custo
 
 Map to this section:
 
-* [Loop Releases](../version/releases.md)
+* [Loop Releases](releases.md)
     - Description of the current released version of Loop including when it was released
     - Reverse chronology of earlier releases
-* [Code Customization](../build/code-customization.md)
-    - Instructions for customizing your DIY code
-    - Think of this as your personalized version
-* [Customize with Browser](../gh-actions/gh-customize.md)
-    - Instructions for customizing using a browser
+* Information needed to Personalize (Customize) your app (regardless of build method)
+    * [Build-Time Flags](build-time-flags.md)
+    * [Personal Edits](../build/code-customization.md)
 * [Simulator Build](simulator.md)
-    - Instructions for building to a simulator
+    - Considerations when using a simulator
 * [Loop Development](../version/development.md)
     - Description of the development process for Loop
     - Information you need if you want to participate

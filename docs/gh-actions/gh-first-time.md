@@ -784,7 +784,7 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 !!! warning "Loop dev Builders"
     The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using the dev branch until the next release. At that time, this table will be updated.
 
-    If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/gh-update.md#one-time-changes).
+    If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes).
 
 ### Add or Review Configuration for `Loop Identifier`
 
@@ -1062,9 +1062,33 @@ Refer to the graphic below for the first four steps:
     * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
+## Build Failed?
+
+Did you get a red X? Head over to the [Errors with Browser](gh-errors.md) to page find a solution.
+
+## Successful Build
+
+**Congratulations**
+
+If you get the green check mark, your app successfully built. Just a few more steps.
+
+### One Time Only (per User)
+
+* Add users to your `App Store Connect` Users and Access by following the directions at [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight)
+* Continue following instructions to create an Internal Testing group for *TestFlight* for the *Loop* app
+* Add the Users to the Internal Group and they get an email they must confirm
+
+### Each Time
+
+* Go to the phone for installing the updated app from *TestFlight*
+* If you already set up your users, skip ahead to [Install on Phone](gh-deploy.md)
+
 ## Set Up Users and Access (TestFlight)
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
+
+!!! tip "Add Each Users One Time"
+    Once you add a user to have access to your TestFlight for this app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
 
 You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
 
@@ -1101,64 +1125,3 @@ You are configuring a private capability for your family using an Internal Testi
 ## Install on Phone
 
 The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
-
-
-## Extra Steps
-
-Most people won't need the information on the rest of this page.
-
-### Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
-
-Some people may already have a copy of <code>LoopWorkspace</code>.
-
-If your copy is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
-
-If your copy is from `LoopKit`:
-
-* Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
-* Review the graphic in the [Successful Fork](#successful-fork) section
-    * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
-* If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
-* Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
-
-#### Delete and Start Fresh
-
-If your fork is not from `LoopKit`:
-
-* Delete your LoopWorkspace repository
-    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
-* Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
-
-### Delete Identifiers
-
-When you have already built the *Loop* app with *Xcode*, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing `Loop` identifier will have a name that starts with `XC` as shown below, where your 10-digit `TEAMID` is used.
-
-* `Name: XC com TEAMID loopkit Loop`
-* `Identifier: com.TEAMID.loopkit.Loop`
-
-The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
-
-To make it easy when configuring the identifiers, go through and delete as many as you can.
-
-* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
-* Use the graphic below as a guide to removing identifiers
-* Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
-* It is OK to delete an identifier even if it does have your correct `TEAMID`
-    * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
-* Note - this graphic indicates where on this page you can find your `TEAMID`
-    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
-    * If you try to delete a `Loop identifier` that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
-
-![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
-{align="center"}
-
-If coming here from the Errors with Browser page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](gh-errors.md#error-wrong-teamid-in-secrets).
-
-If you were just trying to clean up the identifiers, then follow these steps:
-
-* Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
-* If you did not complete the [Add or Review Configuration for Loop Identifier](#add-or-review-configuration-for-loop-identifier) step, do it now
-* Complete the [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers)
-* If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
-* Continue with [Create Certificates](#create-certificates) and then [Build the *Loop* App](#build-the-loop-app)
-
