@@ -29,7 +29,7 @@ Profile expiration notification was added with Loop 2.2.5.
 
 ### Free (7-day) Loop App Expiration Notification
 
-The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../build/code-customization.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
+The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../version/code-custom-edits.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
 
 
 ## Loop App Expiration Date

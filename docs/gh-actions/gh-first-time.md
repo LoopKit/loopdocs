@@ -1125,3 +1125,62 @@ You are configuring a private capability for your family using an Internal Testi
 ## Install on Phone
 
 The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
+
+## Extra Steps
+
+Most people won't need the information on the rest of this page.
+
+### Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
+
+Some people may already have a copy of <code>LoopWorkspace</code>.
+
+If your copy is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
+
+If your copy is from `LoopKit`:
+
+* Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
+* Review the graphic in the [Configure: Successful Fork](#successful-fork) section
+    * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
+* If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
+* Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
+
+#### Delete and Start Fresh
+
+If your fork is not from `LoopKit`:
+
+* Delete your LoopWorkspace repository
+    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+* Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
+
+### Delete Identifiers
+
+When you have already built the *Loop* app with *Xcode*, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing `Loop` identifier will have a name that starts with `XC` as shown below, where your 10-digit `TEAMID` is used.
+
+* `Name: XC com TEAMID loopkit Loop`
+* `Identifier: com.TEAMID.loopkit.Loop`
+
+The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
+
+To make it easy when configuring the identifiers, go through and delete as many as you can.
+
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
+* Use the graphic below as a guide to removing identifiers
+* Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
+* It is OK to delete an identifier even if it does have your correct `TEAMID`
+    * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
+* Note - this graphic indicates where on this page you can find your `TEAMID`
+    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
+    * If you try to delete a `Loop identifier` that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+
+![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
+{align="center"}
+
+If coming here from the Errors with Browser page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](gh-errors.md#error-wrong-teamid-in-secrets).
+
+If you were just trying to clean up the identifiers, then follow these steps:
+
+* Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
+* If you did not complete the [Add or Review Configuration for Loop Identifier](#add-or-review-configuration-for-loop-identifier) step, do it now
+* Complete the [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers)
+* If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
+* Continue with [Create Certificates](#create-certificates) and then [Build the *Loop* App](#build-the-loop-app)

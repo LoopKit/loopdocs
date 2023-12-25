@@ -8,15 +8,16 @@ Map to this section:
     - Description of the current released version of Loop including when it was released
     - Reverse chronology of earlier releases
 * Information needed to Personalize (Customize) your app (regardless of build method)
-    * [Build-Time Flags](build-time-flag.md)
-    * [Personal Edits](../build/code-customization.md)
+    * [Custom Edits](../version/code-custom-edits.md)
+    * [Build-Time Flag](build-time-flag.md)
 * [Simulator Build](simulator.md)
     - Considerations when using a simulator
 * [Loop Development](../version/development.md)
     - Description of the development process for Loop
     - Information you need if you want to participate
 * [Build Dev](../version/build-dev.md)
-    - Discussion of methods to build the dev branch
+    - Considerations when using the dev branch
+    - Links to the two build methods
 * [LoopWorkspace](../version/loopworkspace.md)
     - If you are interested in development, this page goes into more detail
     - The primary focus is on techniques for using git

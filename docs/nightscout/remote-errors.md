@@ -48,7 +48,7 @@ body: APNs delivery failed: BadDeviceToken
 
 ### *Loop* `REMOTE_OVERRIDES_DISABLED`
 
-You can build Loop with [Build-Time Features](../build/code-customization.md#build-time-features) as part of code customization.
+You can build Loop with [Build-Time Features](../version/build-time-flag.md) as part of code customization.
 
 If you added this Build-Time Flag: `REMOTE_OVERRIDES_DISABLED`
 

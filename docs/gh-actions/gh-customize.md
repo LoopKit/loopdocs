@@ -44,7 +44,7 @@
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
         * It is a good idea to test each customization as soon as you install the new build on your phone
-    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../build/code-customization.md) page
+    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../version/code-custom-edits.md) page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list)
     * *GitHub* (each Module):
         1. Copy Module (if needed) - this is your copy where you will make changes
@@ -71,7 +71,7 @@ There is some background information at the bottom of this page starting at&nbsp
 
 ## Decide Which Modules You Want to Modify
 
-Decide which [LoopDocs: Code Customization](../build/code-customization.md) changes you want to make. Each customization lists a Module name.
+Decide which [LoopDocs: Code Customization](../version/code-custom-edits.md) changes you want to make. Each customization lists a Module name.
 
 * DASH Pods: Use OmniBLE
 * Eros Pods: Use OmniKit
@@ -168,7 +168,7 @@ When you&nbsp;"<span translate="no">fork a repository"</span> (make a copy), the
 
 Open your browser to your https://github.com/username/Module URL. Be sure to sync your copy if it shows it is behind the&nbsp;<span translate="no">LoopKit repository</span>.
 
-Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../build/code-customization.md#instructions-for-finding-the-lines))
+Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../version/code-custom-edits.md#instructions-for-finding-the-lines))
 
 !!! tip "Pro Tip"
     Look at the files you want to change - if more than one change is desired for a single file - do them at the same time.

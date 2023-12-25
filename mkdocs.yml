@@ -81,7 +81,7 @@ plugins:
     - redirects:
         redirect_maps:
             'build/build_errors.md': 'build/build-errors.md'
-            'build/code_customization.md': 'build/code-customization.md'
+            'build/code_customization.md': 'version/code-custom-edits.md'
             'build/step1.md': 'build/computer.md'
             'build/step10.md': 'build/test-settings.md'
             'build/step11.md': 'build/loop-data.md'
@@ -140,7 +140,7 @@ nav:
     - 'Update/Rebuild with Browser': gh-actions/gh-update.md
     - 'Automatic Update & Build': gh-actions/automatic.md
     - 'Customize using Browser': 'gh-actions/custom-browser.md'
-    - 'Personal Edits with Browser': 'gh-actions/gh-customize.md'
+    - 'Custom Edits with Browser': 'gh-actions/gh-customize.md'
     - 'Build Loop dev with Browser': gh-actions/build-dev-browser.md
     - 'Build Other Apps with Browser': gh-actions/gh-other-apps.md
 - Build with Mac:
@@ -151,8 +151,9 @@ nav:
     - 'Build Loop': 'build/build-app.md'
     - 'Oh dear! Build errors?': 'build/build-errors.md'
     - 'Customize using Mac': 'build/custom-mac.md'
-    - 'Update/Rebuild with Mac-Xcode': 'build/updating.md'
-    - 'Build Loop dev with Mac-Xcode': 'build/build-dev-mac.md'
+    - 'Custom Edits with Mac': 'build/edit-mac.md'
+    - 'Update/Rebuild with Mac': 'build/updating.md'
+    - 'Build Loop dev with Mac': 'build/build-dev-mac.md'
     - 'Build Free Loop': 'build/build-free-loop.md'
     - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Set Up:
@@ -207,11 +208,11 @@ nav:
 - Version:
     - 'Version Overview': 'version/overview-version.md'
     - 'Loop Releases': 'version/releases.md'
-    - 'Build-Time Flags': 'version/build-time-flag.md'
-    - 'Personal Edits': 'build/code-customization.md'
+    - 'Custom Edits': 'version/code-custom-edits.md'
+    - 'Build-Time Flag': 'version/build-time-flag.md'
     - 'Simulator Build': 'version/simulator.md'
     - 'Loop Development': 'version/development.md'
-    - 'Build Loop Dev': 'version/build-dev.md'
+    - 'Build Dev': 'version/build-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'

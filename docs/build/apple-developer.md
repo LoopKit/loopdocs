@@ -29,7 +29,7 @@ The Apple ID is DIFFERENT than the Apple Developer ID.
     Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa.
 
     * The recommendation for Health Permissions for [Loop 2.2.x](health.md#loop-permissions) has changed to no longer provide permission to read Carbohydrates from Apple Health
-    * Loop 3 does not read Carbohydrates from Apple Health by default, but if you need that feature, you can [modify your feature flags](code-customization.md#build-time-features).
+    * Loop 3 does not read Carbohydrates from Apple Health by default, but if you need that feature, you can [modify your feature flags](../version/build-time-flag.md).
 
 ## Developer Account
 

@@ -77,7 +77,7 @@ When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.x to `dev`, 
 You have a choice:
 
 * You can change your default branch to `dev`, see [Change Default `Branch`](#change-default-branch) and then your&nbsp;_<span translate="no">Loop</span>_&nbsp;app will be automatically updated and automatically built at least once a month
-    * Be sure to review the [Modify Automatic Building](#modify-automatic-building) section
+    * Be sure to review the [Modify Automatic Building](automatic.md#modify-automatic-building) section
 * You can leave your default branch at main, but no automated updates will happen
     * Running each action below requires you to select the `dev` branch in the drop-down menu
 
@@ -85,7 +85,7 @@ Here is a summary of the extra steps; each step has an associated link. This ass
 
 1. Confirm the status of your &nbsp;<span translate="no">*GitHub* Personal Access Token</span>
     * It should be configured with permission scope of `repo, workflow` and to never expire
-    * You can check this using directions at [*GitHub* Token](#github-token)
+    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token)
 1. Next, follow along in this section to perform these steps before you build
     * Add and Update `New Indentifier`
     * `Create Certificates`
@@ -95,7 +95,7 @@ Here is a summary of the extra steps; each step has an associated link. This ass
 !!! warning "What about the `alive branch`"
     * Sometimes you get an error about the `alive branch`
     * It should be created for you automatically if you are building with the `dev branch` **and** you have `workflow` permission added to the `scope` for your *GitHub* `Personal Access Token`
-    * Try one more time and if it still fails, you can [Create the `alive branch` Manually](#create-the-alive-branch-manually)
+    * If necessary, delete the `alive branch` and run the `Create Certificates` again
 
 #### Add and Update New `Identifier`
 
