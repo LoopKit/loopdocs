@@ -94,9 +94,11 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 * You just cannot build a new app until a new Certificate is generated
 
 ??? question "Do you want to know more? (Click to open/close)"
+    This is only a summary - please follow the detailed steps below carefully.
+
     * Delete all your `Distribution Certificates`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
 
-    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`. Later this will be automated and can be done without deleting your `Match-Secrets repository`, but for now the easiest way to do that is to just delete your current `Match-Secrets repository` and then create a brand new one. (Steps 2 and 3 below.)
+    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`. Later this will be automated and can be done without modifying your `Match-Secrets repository`, but for now the easiest way to do that is to just delete the `certs/distribution` folder in your current `Match-Secrets repository`.
 
     * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
 
@@ -106,13 +108,16 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
     * Click each row that has a `Distribution Certificate` and revoke it
     * You will get an email informing you the certificate was revoked
-1. Delete your `Match-Secrets` Repository
-    * Instructions to delete a repository are found at [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
-1. Create a new private `Match-Secrets` *Repository*
-    * main branch: follow the directions [First-Time: Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
-    * dev branch:
-        * `Create Certificates` automatically creates a new private `Match-Secrets` repository if you don't have one
-        * Optional: you can skip step 3 and instead, select `dev` branch for `Create Certificates`
+1. Navigate to your `Match-Secrets` Repository
+    * You can do this several ways, but the URL address will be `https://github.com/username/Match-Secrets` where `username` is replaced by your *GitHub* username
+1. Delete the `certs/distribution` folder using these instructions. The GIF below indicates the places to click with numbered red rectangles:
+    * Frame 1: Click 1 on the folder called `certs/distribution`
+    * Frame 2: Click 2 and 3 on the three dots in the upper right and then `Delete directory`
+    * Frame 3: Click 4 and 5 on `Commit changes` in the upper right and then accept the suggested choice by clicking on `Commit changes` in the lower right
+
+    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="700"}
+    {align="center"}
+
 1. In your fork of LoopWorkspace:
     * Run the `Action`: `Create Certificates`
 
