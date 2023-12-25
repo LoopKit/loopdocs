@@ -8,7 +8,7 @@ Map to this section:
     - Description of the current released version of Loop including when it was released
     - Reverse chronology of earlier releases
 * Information needed to Personalize (Customize) your app (regardless of build method)
-    * [Build-Time Flags](build-time-flags.md)
+    * [Build-Time Flags](build-time-flag.md)
     * [Personal Edits](../build/code-customization.md)
 * [Simulator Build](simulator.md)
     - Considerations when using a simulator
