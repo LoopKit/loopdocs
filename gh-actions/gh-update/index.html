@@ -3748,12 +3748,13 @@
 </ul>
 <details class="question">
 <summary>Do you want to know more? (Click to open/close)</summary>
+<p>This is only a summary - please follow the detailed steps below carefully.</p>
 <ul>
 <li>
 <p>Delete all your <code>Distribution Certificates</code>. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)</p>
 </li>
 <li>
-<p>The <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> in question is embedded in your <code>Match-Secrets repository</code>. In order to proceed, you need to remove the old certificate from <code>Match-Secrets</code>. Later this will be automated and can be done without deleting your <code>Match-Secrets repository</code>, but for now the easiest way to do that is to just delete your current <code>Match-Secrets repository</code> and then create a brand new one. (Steps 2 and 3 below.)</p>
+<p>The <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> in question is embedded in your <code>Match-Secrets repository</code>. In order to proceed, you need to remove the old certificate from <code>Match-Secrets</code>. Later this will be automated and can be done without modifying your <code>Match-Secrets repository</code>, but for now the easiest way to do that is to just delete the <code>certs/distribution</code> folder in your current <code>Match-Secrets repository</code>.</p>
 </li>
 <li>
 <p>Finally, for every app that you build with this method, you need to run <code>Create Certificates</code> for that app. (Step 4 below.)</p>
@@ -3768,20 +3769,22 @@
 <li>You will get an email informing you the certificate was revoked</li>
 </ul>
 </li>
-<li>Delete your <code>Match-Secrets</code> Repository<ul>
-<li>Instructions to delete a <abbr title="contains project files and each file's revision history">repository</abbr> are found at <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Docs</a></li>
+<li>Navigate to your <code>Match-Secrets</code> Repository<ul>
+<li>You can do this several ways, but the <abbr title="website address (Uniform Resource Locator)">URL</abbr> address will be <code>https://github.com/username/Match-Secrets</code> where <code>username</code> is replaced by your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username</li>
 </ul>
 </li>
-<li>Create a new private <code>Match-Secrets</code> <em>Repository</em><ul>
-<li>main <abbr title="version of code within a single repository or workspace repository">branch</abbr>: follow the directions <a href="../gh-first-time/#create-match-secrets">First-Time: Create <code>Match-Secrets</code></a></li>
-<li>dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>:<ul>
-<li><code>Create Certificates</code> automatically creates a new private <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> if you don't have one</li>
-<li>Optional: you can skip step 3 and instead, select <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> for <code>Create Certificates</code></li>
+<li>
+<p>Delete the <code>certs/distribution</code> folder using these instructions. The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below indicates the places to click with numbered red rectangles:</p>
+<ul>
+<li>Frame 1: Click 1 on the folder called <code>certs/distribution</code></li>
+<li>Frame 2: Click 2 and 3 on the three dots in the upper right and then <code>Delete directory</code></li>
+<li>Frame 3: Click 4 and 5 on <code>Commit changes</code> in the upper right and then accept the suggested choice by clicking on <code>Commit changes</code> in the lower right</li>
 </ul>
+<p align="center"><img alt="delete the distributon certs folder in your Match-Secrets repository" src="../img/delete-distr-certs-match-secrets.gif" width="700" /></p>
 </li>
-</ul>
-</li>
-<li>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:<ul>
+<li>
+<p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
+<ul>
 <li>Run the <code>Action</code>: <code>Create Certificates</code></li>
 </ul>
 </li>
