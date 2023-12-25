@@ -49,7 +49,9 @@ The information needed to use these customizations is found in the Versions tab 
     * Some items on this page are already done for you and you can choose them using the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#customization-select)
     * Other items require you to make your own edits but guidelines are provided
 
-When preparing these personal edits using a Mac, the edits are done in Xcode prior to starting the build.
+When preparing these personal edits using a browser, there is a whole page explaining how to get these edits into you personal `fork` of `LoopWorkspace` prior to building.
+
+* [Personal Edits with Browser](gh-customize.md)
 
 ## Details at Links
 

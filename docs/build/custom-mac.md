@@ -40,10 +40,12 @@ The information needed to use these customizations is found in the Versions tab 
     * By enabling or disabling features controlled by Build-Time Flags, you are turning on or off features included in the code by the developers that they configured to be off or on by default
     * Please read about these flags on the page linked above
     * When building with a *Mac*, you make the edits inside *Xcode* before building
-* [Custom File Edits](../build/code-customization.md)
-    * This page indicates how you can modify behavior by editing the code within *Xcode*
+* [Personal Edits](../build/code-customization.md)
+    * This page indicates how you can modify behavior by editing the code
     * Some items on this page are already done for you and you can choose them using the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code#customization-select)
     * Other items require you to make your own edits but guidelines are provided
+
+When preparing these personal edits using a Mac, the edits are done in Xcode prior to starting the build.
 
 ## Details at Links
 
