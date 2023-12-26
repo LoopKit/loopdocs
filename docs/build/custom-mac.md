@@ -21,12 +21,12 @@ The *Loop and Learn* team commit to maintaining these prepared customizations an
 
 Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code):
 
-* [List of Customizations Available](https://www.loopandlearn.org/custom-code#custom-list)
-* [Customization Select Script](https://www.loopandlearn.org/custom-code#customization-select)
+* [List of Customizations Available](https://www.loopandlearn.org/custom-code/#custom-list)
+* [Customization Select Script](https://www.loopandlearn.org/custom-code/#customization-select)
 
 ### Add Libre Support to 3.2.3
 
-If you are using `main` branch to build `Loop 3.2.3` and rely on either *xDrip4iOS* or *GlucoseDirect* to read your CGM and transfer the readings to the *Loop* app, you need to review this [section of the *Loop and Learn* customization page](https://www.loopandlearn.org/custom-code#add-cgm-323).
+If you are using `main` branch to build `Loop 3.2.3` and rely on either *xDrip4iOS* or *GlucoseDirect* to read your CGM and transfer the readings to the *Loop* app, you need to review this [section of the *Loop and Learn* customization page](https://www.loopandlearn.org/custom-code/#add-cgm-323).
 
 Alternatively, you can switch to the `dev` branch, which already supports Libre. [Build Loop dev with Mac](build-dev-mac.md)
 
