@@ -155,10 +155,9 @@ let bolusPartialApplicationFactor
 ```
 
 * Module: Loop
-* Loop 3
-    * Folder: Loop/Loop/Models
-    * File: LoopConstants.swift
-    * Line: 53
+* Folder: Loop/Loop/Models
+* File: LoopConstants.swift
+* Line: 53
 
 _Code Before Modification_
 
@@ -171,70 +170,6 @@ _Code After Modification to 50% of recommended insulin_
 !!! warning "Do not exceed 1.0"
     This number should never be bigger than 1 (you’d be getting more than Loop recommends). If you think you need more than 1, consider your settings and meal entries.
 
-
-### Modify Maximum and Warning Carb Entry
-
-### Loop 3 Carb Entry Variables
-
-Loop 3 has both a maxCarbEntryQuantity and a warningCarbEntryQuantity, found adjacent to each other in the code. The warning value is the level at which you are asked if you really meant to enter that amount:
-
-``` { .txt .copy title="Key_Phrase" }
-let maxCarbEntryQuantity =
-```
-
-* Module: Loop
-* Folder: Loop/Loop/Models
-* File: LoopConstants.swift, line 18
-
-_Code Before Modification_
-
-    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value
-
-    static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
-
-This first example might be used by a parent for a child with very small carb entries.
-
-_Code After Modification to enable the warning at lower levels and limit maximum_
-
-    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // cannot exceed this value
-
-    static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 49) // user is warned above this value
-
-This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal.
-
-_Code After Modification to warn if entry is between 201 and 300g_
-
-    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 300) // cannot exceed this value
-
-    static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200) // user is warned above this value
-
-### Loop 2.2.x Max Carb Entry
-
-Users of Loop 2.2.9 and earlier or FreeAPS must use the following method for modifying maximum carb entry:
-
-Some people want to limit the maximum number of carbs that can be entered in one entry – especially for children or folks who eat lower carb. This helps prevent accidental typos, e.g., entry of 115 g instead of 15 g for a meal.
-
-``` { .txt .copy title="Key_Phrase" }
-maxQuantity =
-```
-
-As shown in the graphic below, this phrase shows up in 2 places, only the first one should be modified.
-
-![xcode display showing the key phrase found in 2 places](img/xcode-modify-max-carb-entry.svg){width="700"}
-{align="center"}
-
-
-* Loop 2.2.x
-    * Folder: Loop/Loop/View Controllers
-    * File: CarbEntryViewController.swift, Line 33 (Loop 2.2.x)
-
-_Code Before Modification_
-
-    var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 250)
-
-_Code After Modification to limit carb entry to 99 g_
-
-    var maxQuantity = HKQuantity(unit: .gram(), doubleValue: 99)
 
 ### Pods: Add Extra Insulin on Insertion
 
@@ -562,4 +497,40 @@ _Code Before Modification_
 _Code After Modification to 50% to 200% by steps of 5%_
 
     private let allScaleFactorPercentages = Array(stride(from: 50, through: 200, by: 5))
+
+### Modify Maximum and Warning Carb Entry
+
+Version 3.x of the *Loop* app has both a `maxCarbEntryQuantity` and a `warningCarbEntryQuantity`, found adjacent to each other in the code. The warning value is the level at which you are asked if you really meant to enter that amount:
+
+``` { .txt .copy title="Key_Phrase" }
+let maxCarbEntryQuantity =
+```
+
+* Module: Loop
+* Folder: Loop/Loop/Models
+* File: LoopConstants.swift, line 18
+
+_Code Before Modification_
+
+    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value
+
+    static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
+
+This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"low_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list).
+
+_Code After Modification to enable the warning at lower levels and limit maximum_
+
+    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // cannot exceed this value
+
+    static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 49) // user is warned above this value
+
+#### `"high_carb_limit"`
+
+This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"high_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list).
+
+_Code After Modification to warn if entry is between 201 and 300g_
+
+    static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 300) // cannot exceed this value
+
+    static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 200) // user is warned above this value
 
