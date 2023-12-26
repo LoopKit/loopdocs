@@ -516,6 +516,8 @@ _Code Before Modification_
 
     static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
 
+#### `"low_carb_limit"`
+
 This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"low_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list).
 
 _Code After Modification to enable the warning at lower levels and limit maximum_
