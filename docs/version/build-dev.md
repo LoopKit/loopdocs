@@ -26,9 +26,9 @@ The version of code that shows up under the Loop Settings screen will remain fix
 
 The commit is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to [Support](../loop-3/settings.md#support) for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
 
-## Build Loop `dev`
+## Build `Loop` `dev`
 
-1. For the GitHub Browser Build method
-    * [Build Loop dev with Browser](../gh-actions/build-dev-browser.md)
-1. For the Mac-Xcode method:
-    * [Build Loop dev with *Mac-Xcode*](../build/build-dev-mac.md)
+1. For the Build with Browser method
+    * [Build dev with Browser](../gh-actions/build-dev-browser.md)
+1. For the Build with *Mac* method:
+    * [Build dev with *Mac*](../build/build-dev-mac.md)
