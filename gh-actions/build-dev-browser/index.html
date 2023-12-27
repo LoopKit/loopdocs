@@ -1,0 +1,3681 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../edit-browser/">
+      
+      
+        <link rel="next" href="../gh-other-apps/">
+      
+      
+      <link rel="icon" href="../../loop-logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Build Loop dev with Browser - LoopDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/primary-color.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LoopDocs" class="md-header__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LoopDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Build Loop dev with Browser
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intro/overview-intro/" class="md-tabs__link">
+          
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../gh-overview/" class="md-tabs__link">
+          
+  
+  Build with Browser
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../build/overview/" class="md-tabs__link">
+          
+  
+  Build with Mac
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
+          
+  
+  Set Up
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../operation/loop/open-loop/" class="md-tabs__link">
+          
+  
+  Operate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/overview/" class="md-tabs__link">
+          
+  
+  Troubleshoot
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../version/overview-version/" class="md-tabs__link">
+          
+  
+  Version
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nightscout/overview/" class="md-tabs__link">
+          
+  
+  Nightscout
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../faqs/overview-faqs/" class="md-tabs__link">
+          
+  
+  FAQs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../translate/" class="md-tabs__link">
+        
+  
+    
+  
+  Translation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LoopDocs" class="md-nav__button md-logo" aria-label="LoopDocs" data-md-component="logo">
+      
+  <img src="../../loop-logo.png" alt="logo">
+
+    </a>
+    LoopDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/overview-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LoopDocs Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/loopdocs-how-to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LoopDocs How-to
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Requirements
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requirements Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/phone/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible iPhone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/pump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible Pump
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/cgm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible CGM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/rileylink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RileyLink
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/apple-developer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Developer Program
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/test-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/loop-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/community/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meet the Community
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Build with Browser
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Build with Browser
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browser Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-first-time/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure to use Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errors with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install on Phone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automatic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automatic Update & Build
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-browser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize using Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-browser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Build Loop dev with Browser
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Build Loop dev with Browser
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-development-version" class="md-nav__link">
+    Build Development Version
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Development Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-current-branch" class="md-nav__link">
+    Check Current Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-branch" class="md-nav__link">
+    Add Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-branch" class="md-nav__link">
+    Update Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-time-changes" class="md-nav__link">
+    One-Time Changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-branch" class="md-nav__link">
+    Build Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-default-branch" class="md-nav__link">
+    Change Default Branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-update-build" class="md-nav__link">
+    Automatic Update &amp; Build
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-other-apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Other Apps with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Build with Mac
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Build with Mac
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mac Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible Computer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/xcode-version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcode Version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/xcode-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcode Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oh dear! Build errors?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/updating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/custom-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize using Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/edit-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-dev-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Loop dev with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-free-loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Free Loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/testflight-xcode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TestFlight from Xcode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Set Up
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Set Up
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/onboarding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Onboarding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-cgm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add CGM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/add-pump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add Pump
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/therapy-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Therapy Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optional: Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/displays-v3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Displays
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RileyLink Display
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/omnipod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Omnipod Pump
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/medtronic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Medtronic Pump
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loop-3/features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Loop 2: Set Up App
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_13">
+            <span class="md-nav__icon md-icon"></span>
+            Loop 2: Set Up App
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/health/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Health Permissions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_13_3" id="__nav_5_13_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Loop 2 Add Pump
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_13_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_13_3">
+            <span class="md-nav__icon md-icon"></span>
+            Loop 2 Add Pump
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Add Medtronic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Add Omnipod
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Add CGM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/services-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/displays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Displays
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Pump Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Operate
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Operate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/open-loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/close-loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Closed Loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/carbs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meal Entries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/bolus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bolus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/overrides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overrides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/watch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Watch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/notifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop Notifications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/premeal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-Meal Target
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/ice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meal Review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/widget/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iPhone Widget
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/loop/looptips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algorithm
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_12">
+            <span class="md-nav__icon md-icon"></span>
+            Algorithm
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithm Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/bolus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bolus Recommendations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/prediction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glucose Prediction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automated Adjustments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Troubleshoot
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshoot
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop App Crashes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/red-loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Red Loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pod Pairing Failures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Omnipod Faults
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MDT Pump Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operation/features/battery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MDT Pump Battery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Version
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Version
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/overview-version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Version Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/releases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/code-custom-edits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/build-time-flag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build-Time Flag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/simulator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simulator Build
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/build-dev/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Dev
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/loopworkspace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LoopWorkspace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Nightscout
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Nightscout
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/new-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    New Nightscout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/update-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout with Loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/troubleshoot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/ns-crossref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout Cross Ref
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/loop-caregiver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <span translate="no">Loop Caregiver<span>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/overview-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/safety-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/FAQs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/time-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Omnipod FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/cgm-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CGM FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/update-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild Loop FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/new-phone/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    New Phone Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RileyLink FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithm FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Health FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Headers on this Page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Headers on this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-development-version" class="md-nav__link">
+    Build Development Version
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Development Version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-current-branch" class="md-nav__link">
+    Check Current Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-branch" class="md-nav__link">
+    Add Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-branch" class="md-nav__link">
+    Update Branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-time-changes" class="md-nav__link">
+    One-Time Changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-branch" class="md-nav__link">
+    Build Branch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-default-branch" class="md-nav__link">
+    Change Default Branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-update-build" class="md-nav__link">
+    Automatic Update &amp; Build
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Build Loop dev with Browser</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><strong>This page is only relevant when building the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> with a browser.</strong></p>
+<p><strong>For <em>Mac</em>, please see: <a href="../../build/build-dev-mac/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <code>dev</code> with <em>Mac</em></a></strong></p>
+<p><strong>No matter the method used to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev, you are testing development code. Please read this link now before continuing.</strong></p>
+<ul>
+<li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
+</ul>
+<h2 id="build-development-version">Build Development Version<a class="headerlink" href="#build-development-version" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">For Experienced Builders</p>
+<p>Building the development (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) is not typically used for your first attempt at building the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>The instructions on this page assume you are familiar with building the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using a browser as detailed on <a href="../gh-first-time/">Configure to use Browser</a></p>
+<ul>
+<li>You should be following along with zulipchat when using the <code>dev branch</code></li>
+<li>Summary build updates can be found under the <a href="#one-time-changes">One-Time Changes</a> section</li>
+</ul>
+</div>
+<p>You can build any desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> (available at LoopKit/LoopWorkspace) using the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser build method. This section is suitable if you have already built either <code>dev</code> or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
+<p>The graphics on this page show the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you want a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, just substitute that <abbr title="version of code within a single repository or workspace repository">branch</abbr> name for <code>dev</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Overview of what you will do</p>
+<ol>
+<li>Your <code>LoopWorkspace fork</code> must have the <code>branch</code> you want<ul>
+<li>You will either add it or make sure it is up to date</li>
+<li>You cannot just rename your existing <abbr title="version of code within a single repository or workspace repository">branch</abbr> to <code>dev</code> - you must get the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> from LoopKit</li>
+</ul>
+</li>
+<li>When you select the action <code>4. Build Loop</code> and then click on the <code>Run Workflow</code> dropdown, you must select <code>dev</code> there before clicking the green <code>Run workflow</code> button - see <a href="#build-branch">Build <code>Branch</code></a></li>
+</ol>
+</div>
+<h3 id="check-current-branch">Check Current <code>Branch</code><a class="headerlink" href="#check-current-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Your <code>LoopWorkspace fork</code> is at <code>https://github.com/username/LoopWorkspace</code> where you substitute your actual <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>username</code>. You need to be logged into <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. Review the graphic below as you go through the steps.</p>
+<ol>
+<li>Click on the <code>branch</code> icon to display the <code>branches</code> as shown in the lower half of the graphic below:<ul>
+<li>If the <code>branch</code> you want is not listed, then continue with Step 2</li>
+<li>Otherwise, skip ahead to <a href="#update-branch">Update <code>Branch</code></a></li>
+</ul>
+</li>
+<li>Click on the <code>New branch</code> button and follow the <a href="#add-branch">Add <code>Branch</code></a> steps</li>
+</ol>
+<p align="center"><img alt="steps to add a branch" src="../img/add-branch-01.svg" width="700" /></p>
+<h3 id="add-branch">Add <code>Branch</code><a class="headerlink" href="#add-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:</p>
+<ol>
+<li>Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic</li>
+<li>Click on the drop down menu labeled 2 in the graphic and choose <code>dev</code></li>
+<li>Click on the <code>Branch</code> name box labeled 3 in the graphic and type <code>dev</code><ul>
+<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <code>fork</code> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding; check that you type it correctly</li>
+</ul>
+</li>
+<li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ol>
+<p align="center"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700" /></p>
+<h3 id="update-branch">Update <code>Branch</code><a class="headerlink" href="#update-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Tap the <code>Code</code> button (upper left) and ensure this <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <code>fork</code> is up to date.</p>
+<ul>
+<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
+<li>If the message indicates this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is "behind", tap on the sync <code>fork</code> button and then the Update <abbr title="version of code within a single repository or workspace repository">branch</abbr> button</li>
+</ul>
+<p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
+<h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Look in this section for one-time changes for building <code>dev</code> with a browser that require special, one-time actions. </p>
+<p>If you have already completed the One-Time Changes, skip ahead to <a href="#build-branch">Build <code>Branch</code></a>.</p>
+<h4 id="transition-to-dev">Transition to <code>dev</code><a class="headerlink" href="#transition-to-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>When updating from&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;3.2.x to <code>dev</code>, you will need to take some extra steps. </p>
+<p>You have a choice:</p>
+<ul>
+<li>You can change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to <code>dev</code>, see <a href="#change-default-branch">Change Default <code>Branch</code></a> and then your&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;app will be automatically updated and automatically built at least once a month<ul>
+<li>Be sure to review the <a href="../automatic/#modify-automatic-building">Modify Automatic Building</a> section</li>
+</ul>
+</li>
+<li>You can leave your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> at main, but no automated updates will happen<ul>
+<li>Running each action below requires you to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the drop-down menu</li>
+</ul>
+</li>
+</ul>
+<p>Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your <code>fork</code> and are at the correct <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<ol>
+<li>Confirm the status of your &nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</span><ul>
+<li>It should be configured with permission scope of <code>repo, workflow</code> and to never expire</li>
+<li>You can check this using directions at <a href="../gh-update/#github-token"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token</a></li>
+</ul>
+</li>
+<li>Next, follow along in this section to perform these steps before you build<ul>
+<li>Add and Update <code>New Indentifier</code></li>
+<li><code>Create Certificates</code></li>
+</ul>
+</li>
+</ol>
+<h4 id="automatic-creation-of-alive-branch">Automatic Creation of <code>alive branch</code><a class="headerlink" href="#automatic-creation-of-alive-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">What about the <code>alive branch</code></p>
+<ul>
+<li>Sometimes you get an error about the <code>alive branch</code></li>
+<li>It should be created for you automatically if you are building with the <code>dev branch</code> <strong>and</strong> you have <code>workflow</code> permission added to the <code>scope</code> for your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code></li>
+<li>If necessary, delete the <code>alive branch</code> and run the <code>Create Certificates</code> again</li>
+</ul>
+</div>
+<h4 id="add-and-update-new-identifier">Add and Update New <code>Identifier</code><a class="headerlink" href="#add-and-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The <code>bundle ID</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>".</p>
+<ul>
+<li>You need to run Add Identifier - be sure that you run this for the <code>dev branch</code></li>
+<li>Wait for it to succeed</li>
+<li>Add the <code>App Group</code> to this one new Identifier</li>
+</ul>
+<p>All other identifiers should be already set up. If they are not, please go through the steps on the <a href="../gh-first-time/">Configure to Use Browser</a> page to figure out what you are missing.</p>
+<table>
+<thead>
+<tr>
+<th><code>NAME</code></th>
+<th><code>IDENTIFIER</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Loop Widget Extension</code></td>
+<td><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
+<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
+<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
+</ul>
+<h4 id="create-certificates-and-build">Create Certificates and Build<a class="headerlink" href="#create-certificates-and-build" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> needs permission to have that capability). Once the certificate action succeeds, then run the action to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<ol>
+<li>Run the Action for Create Certificates - be sure that you run this for the <code>dev branch</code></li>
+<li>Run the Action for <code>Build Loop</code> (see <a href="#build-branch">Build <code>Branch</code></a>)</li>
+</ol>
+<h3 id="build-branch">Build <code>Branch</code><a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you want a <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be the one you build all the time, you may choose to <a href="#change-default-branch">Change Default <code>Branch</code></a>. This is not necessary except for special cases.</p>
+<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you <code>Build Loop</code>. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
+<p align="center"><img alt="build loop using github actions" src="../img/action-04-build-loop.svg" width="700" /></p>
+<p>!!! </p>
+<h2 id="change-default-branch">Change Default <code>Branch</code><a class="headerlink" href="#change-default-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There can be several reasons why you would change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<ul>
+<li>It can be convenient to have the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you build most be configured as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to build has a different <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> than your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (not typical)<ul>
+<li>In this case, you <strong>must</strong> modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Check the zulipchat conversation about the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are testing to see if it is necessary to make it default</li>
+</ul>
+</li>
+</ul>
+<p>These are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
+<p>For the numbered steps below, refer to the graphic found under each group of steps.</p>
+<ol>
+<li>
+<p>Click on the Settings Icon near the top right of your LoopWorkspace</p>
+<ul>
+<li>You may need to scroll down to see the <code>Default Branch</code> as shown in the graphic</li>
+<li>Do not tap on the Branches tab to the left under Code and Automation, that is not the correct menu</li>
+</ul>
+<p align="center"><img alt="show default branch" src="../img/gh-settings-branch-01.svg" width="700" /></p>
+</li>
+<li>
+<p>To the right of the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> name there is a pencil and a left-right arrow icon</p>
+<ul>
+<li>Tap on the left-right arrow icon to bring up the <code>Switch default branch to another branch</code> dialog</li>
+</ul>
+</li>
+<li>Click on the dropdown next to the current default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>main</code></li>
+<li>Select the desired default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>dev</code></li>
+<li>
+<p>Click on the <code>Update</code> button</p>
+<p align="center"><img alt="modify default branch" src="../img/gh-settings-branch-02.svg" width="700" /></p>
+</li>
+<li>
+<p>You will be presented with an are-you-sure question.</p>
+<ul>
+<li>Click on the red <code>I understand, update the default branch.</code> button</li>
+</ul>
+<p align="center"><img alt="confirm default branch" src="../img/gh-settings-branch-03.svg" width="400" /></p>
+</li>
+</ol>
+<p>Your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been changed.</p>
+<h2 id="automatic-update-build">Automatic Update &amp; Build<a class="headerlink" href="#automatic-update-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The automatic update and build features of the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> are only available if you set the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Be sure to read the <a href="../automatic/">Automatic Update &amp; Build</a> if you did this.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../edit-browser/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Custom Edits with Browser">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Custom Edits with Browser
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../gh-other-apps/" class="md-footer__link md-footer__link--next" aria-label="Next: Build Other Apps with Browser">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Build Other Apps with Browser
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
