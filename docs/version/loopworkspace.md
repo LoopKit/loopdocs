@@ -147,7 +147,7 @@ For this graphic, the cloned `LoopWorkspace` is in the home directory.
 
 When it's time to update the copy of `LoopWorkspace` on your computer - you have choices. You can use the method below or redo the whole cloning process.
 
-Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../build/code-customization.md#open-a-terminal-in-loopworkspace-folder)
+Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../version/code-custom-edits.md#open-a-terminal-in-loopworkspace-folder)
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }
@@ -172,7 +172,7 @@ If you are testing the LoopKit dev branch, you need to be on [zulipchat](https:/
 
 Sometimes, you know a feature you want was added at a specific commit number; however, you know there are other changes later than that commit which you do not want to test. There is a solution.
 
-Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/code-customization.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
+Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../version/code-custom-edits.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }

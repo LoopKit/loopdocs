@@ -88,7 +88,7 @@ If you get an error, please consult:
 
 For experienced and/or advanced users who want to build the development version of the app, there is additional information at the link below. If you have not built using the browser build method before, it is strongly recommended you first build the released version. Once you have a successful build, then follow the steps for the development version. Building the app is independent of installing the app on your phone from *TestFlight*.
 
-* [Build Development Version](gh-update.md#build-development-version)
+* [Build Development Version](build-dev-browser.md)
 
 ## What if I get stuck?
 

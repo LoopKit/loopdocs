@@ -751,7 +751,12 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 | `WatchApp` | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
-### Add App Group to Identifiers
+!!! warning "Loop dev Builders"
+    The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using the dev branch until the next release. At that time, this table will be updated.
+
+    If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes).
+
+### Add or Review Configuration for `Loop Identifier`
 
 ??? abstract "Section Summary (click to open/close)"
     Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. A table was provided above that lists both `Names` and `Identifiers`. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.
@@ -969,18 +974,33 @@ Refer to the graphic below for the first four steps:
     * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
-## Set Up Users and Access (*TestFlight*)
+## Build Failed?
 
-??? abstract "Section Summary (click to open/close)"
-    For each Apple ID (person) who needs access to your *TestFlight* builds:
-    
-    * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect
-    * Add them to your *TestFlight* Internal Testing group for the Loop app
-    * Note Apple ID is the email associated with the person; it is not the same as your developer ID email
+Did you get a red X? Head over to the [Errors with Browser](gh-errors.md) to page find a solution.
 
-    [<span class="loop-bigger">:material-skip-forward:</span>](gh-deploy.md) To skip the detailed instructions, click on [GitHub Deploy](gh-deploy.md).
+## Successful Build
+
+**Congratulations**
+
+If you get the green check mark, your app successfully built. Just a few more steps.
+
+### One Time Only (per User)
+
+* Add users to your `App Store Connect` Users and Access by following the directions at [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight)
+* Continue following instructions to create an Internal Testing group for *TestFlight* for the *Loop* app
+* Add the Users to the Internal Group and they get an email they must confirm
+
+### Each Time
+
+* Go to the phone for installing the updated app from *TestFlight*
+* If you already set up your users, skip ahead to [Install on Phone](gh-deploy.md)
+
+## Set Up Users and Access (TestFlight)
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
+
+!!! tip "Add Each Users One Time"
+    Once you add a user to have access to your TestFlight for this app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
 
 You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
 
@@ -1018,7 +1038,6 @@ You are configuring a private capability for your family using an Internal Testi
 
 The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
 
-
 ## Extra Steps
 
 Most people won't need the information on the rest of this page.
@@ -1032,7 +1051,7 @@ If your copy is **not** from `LoopKit`, follow the [Delete and Start Fresh](#del
 If your copy is from `LoopKit`:
 
 * Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
-* Review the graphic in the [Successful Fork](#successful-fork) section
+* Review the graphic in the [Configure: Successful Fork](#successful-fork) section
     * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
 * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
 * Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
@@ -1077,4 +1096,3 @@ If you were just trying to clean up the identifiers, then follow these steps:
 * Complete the [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
 * Continue with [Create Certificates](#create-certificates) and then [Build the *Loop* App](#build-the-loop-app)
-

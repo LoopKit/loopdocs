@@ -112,7 +112,7 @@ There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting 
     Loop 3 drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra.
 
     * Insulin Type is selected when the user adds a pump
-    * The user can choose to customize Loop 3 to [Enable Child Model](../../build/code-customization.md#enable-child-model)
+    * The user can choose to customize Loop 3 to [Enable Child Model](../../version/code-custom-edits.md#enable-child-model)
 
 **We highly recommend selecting one of the exponential insulin models for Loop 2.2.x (in other words, not the Walsh model).**
 

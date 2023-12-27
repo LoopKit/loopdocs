@@ -26,7 +26,7 @@ Most traditional pump users and caregivers are already familiar with the concept
 
 Loop 2.x provides users with two different classes of insulin models (i.e., an exponential model and the Walsh model). All of the exponential models have an insulin activity duration of 6 hours, whereas the insulin activity duration is customizable for the Walsh model. The rapid-acting and Fiasp insulin activity curves are modeled as exponential curves that match the shape of the insulin activity curves from insulin labeling, and as observed in both adults and children.
 
-Loop 3 drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra. Loop 3 adds the concept of non-pump insulin to account for injections or inhaled insulin. The Afrezza model is added as a non-pump insulin. The Insulin Type is selected in the Pump Settings screen. All insulin types are modeled by selecting parameters in the exponential model. See also [Exponential Insulin Curve](../../build/code-customization.md#exponential-insulin-curve) on the Code Customization page.
+Loop 3 drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra. Loop 3 adds the concept of non-pump insulin to account for injections or inhaled insulin. The Afrezza model is added as a non-pump insulin. The Insulin Type is selected in the Pump Settings screen. All insulin types are modeled by selecting parameters in the exponential model. See also [Exponential Insulin Curve](../../version/code-custom-edits.md#exponential-insulin-curve) on the Code Customization page.
 
 ![insulin models](img/insulin_models.png)
 
