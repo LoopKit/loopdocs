@@ -150,9 +150,9 @@ nav:
     - 'Xcode Settings': 'build/xcode-settings.md'
     - 'Build Loop': 'build/build-app.md'
     - 'Oh dear! Build errors?': 'build/build-errors.md'
+    - 'Update/Rebuild with Mac': 'build/updating.md'
     - 'Customize using Mac': 'build/custom-mac.md'
     - 'Custom Edits with Mac': 'build/edit-mac.md'
-    - 'Update/Rebuild with Mac': 'build/updating.md'
     - 'Build Loop dev with Mac': 'build/build-dev-mac.md'
     - 'Build Free Loop': 'build/build-free-loop.md'
     - 'TestFlight from Xcode': 'build/testflight-xcode.md'
@@ -205,9 +205,9 @@ nav:
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
-- Version:
+- 'Version':
     - 'Version Overview': 'version/overview-version.md'
-    - 'Loop Releases': 'version/releases.md'
+    - 'Releases': 'version/releases.md'
     - 'Custom Edits': 'version/code-custom-edits.md'
     - 'Build-Time Flag': 'version/build-time-flag.md'
     - 'Simulator Build': 'version/simulator.md'
