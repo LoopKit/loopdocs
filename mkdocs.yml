@@ -82,6 +82,7 @@ plugins:
         redirect_maps:
             'build/build_errors.md': 'build/build-errors.md'
             'build/code_customization.md': 'version/code-custom-edits.md'
+            'build/code-customization.md': 'version/code-custom-edits.md'
             'build/step1.md': 'build/computer.md'
             'build/step10.md': 'build/test-settings.md'
             'build/step11.md': 'build/loop-data.md'
