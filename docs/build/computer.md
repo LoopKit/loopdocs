@@ -18,17 +18,17 @@
     - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
 
 !!! abstract "Summary"
-    Your computer, iPhone and Xcode must have compatible versions to build Loop using Mac-Xcode.
+    Your computer, iPhone and Xcode must have compatible versions to build the *Loop* app using a *Mac*.
 
     * A summary list of [Compatible Versions](#compatible-versions) is found on this page with more detail in a later page
 
-	If you are buying a Mac specifically to use the Mac-Xcode build method, chose one with capabably of being updated to the Sonoma (macOS 14) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
+	If you are buying a Mac specifically to use the build with *Mac* method, chose one with capabably of being updated to the Sonoma (macOS 14) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
 
 
 !!! question "FAQs"
     - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../gh-actions/gh-overview.md) with any browser on any computer.
-    - **"I want to use the Mac-Xcode build method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
-    - **"How often do I need to use the computer if I choose the Mac-Xcode build method?"** Computer access is required when
+    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can but only if your PC uses Intel chips. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
+    - **"How often do I need to use the computer if I choose the build with *Mac* method?"** Computer access is required when
         * Initially installing the Loop app
         * Loop app expires (Annually for a paid account or weekly for a free account)
         * Updating to a newer Loop release
@@ -42,7 +42,7 @@ The current development version and the next release of&nbsp;_<span translate="n
 
 When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 
-The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with Mac-Xcode.
+The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
 
 Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
 
@@ -55,7 +55,7 @@ Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, c
 
 !!! warning "iOS Dictates Your Computer Needs"
 
-    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build Loop with the Mac-Xcode build method. A new build is required at least once a year. More information on iOS is on the [Xcode Version](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) page.
+    The more up-to-date you keep your phone iOS, the more up-to-date your computer and macOS needs to be to build the *Loop* app with the *Mac* build method. A new build is required at least once a year. More information on iOS is on the [Xcode Version](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) page.
 
     There are important security updates that go along with iOS updates. Please install those iOS updates as soon as you can.
 
@@ -89,7 +89,7 @@ If you are evaluating a used computer, it's best to have at least 256 GB total d
 
 ## Which Macs Are Compatible with macOS Ventura?
 
-Ventura is required for building Loop on a phone running iOS 16.4 or higher with the Mac-Xcode method. You can install Ventura on the following:
+Ventura is required for building the *Loop* app on a phone running iOS 16.4 or higher with the *Mac* method. You can install Ventura on the following:
 
 * MacBook Pro introduced in 2017 or later
 * MacBook Air introduced in 2018 or later
@@ -110,4 +110,4 @@ Look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no need
 If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
 
 !!! warning "Free ID"
-    The free ID method only works when using the Mac-Xcode build method. The [Browser Build](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.
+    The free ID method only works when using the build with *Mac* method. The [Build with Browser](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.

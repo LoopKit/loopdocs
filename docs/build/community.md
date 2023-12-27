@@ -80,11 +80,11 @@ Now you are ready to build or continue with setting up the *Loop* app.
 
 If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../loop-3/loop-3-overview.md#brand-new-loopers) section of the Set Up Overview page.
 
-### Browser Build
+### Build with Browser
 
-Click here if you want to build with github build actions: [Browser Build](../gh-actions/gh-overview.md)
+Click here if you want to [Build with Browser](../gh-actions/gh-overview.md).
 
-### Mac-Xcode Build:
+### Build with *Mac*:
 
-Click here if you want to build on a Mac using Xcode: [Mac-Xcode Build](../build/overview.md)
+Click here if you want to [Build with *Mac*](../build/overview.md).
 

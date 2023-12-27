@@ -27,7 +27,7 @@ Verify that you performed all the [Remote Configuration](remote-config.md) steps
 When the *Nightscout* config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the&nbsp;_<span translate="no">Loop</span>_&nbsp;app build method; the error message contains the phrase `APNs delivery failed: BadDeviceToken`.
 
 * If&nbsp;_<span translate="no">Loop</span>_&nbsp;was installed remotely (typically from TestFlight following GitHub Browser Build), you **must** have *Nightscout* config var `LOOP_PUSH_SERVER_ENVIRONMENT` set to `production`
-* If&nbsp;_<span translate="no">Loop</span>_&nbsp;was built using Mac-Xcode, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
+* If&nbsp;_<span translate="no">Loop</span>_&nbsp;was built using *Mac*, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
 
 If you attempt to issue a command from *Nightscout* Careportal; after you hit submit and then OK, you will see the error message:
 
@@ -48,7 +48,7 @@ body: APNs delivery failed: BadDeviceToken
 
 ### *Loop* `REMOTE_OVERRIDES_DISABLED`
 
-You can build Loop with [Build-Time Features](../build/code-customization.md#build-time-features) as part of code customization.
+You can build Loop with [Build-Time Features](../version/build-time-flag.md) as part of code customization.
 
 If you added this Build-Time Flag: `REMOTE_OVERRIDES_DISABLED`
 

@@ -9,7 +9,7 @@ The&nbsp;<span translate="no">LoopDocs</span>&nbsp;website is organized as follo
     * [Requirements](requirements.md): What is needed regardless of build method
 * New with&nbsp;<span translate="no">Loop 3</span>: Two ways to build - you get the same app either way
     * [Build with Browser](../gh-actions/gh-overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser
-    * [Build with Mac-Xcode](../build/overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app with a Mac the first time, or [Update](../build/updating.md) next time
+    * [Build with *Mac*](../build/overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app with a Mac the first time, or [Update](../build/updating.md) next time
 * [Set Up](../loop-3/loop-3-overview.md): How to set up the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Operate](../operation/loop/open-loop.md): How to use the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the&nbsp;<span translate="no">Loop</span>&nbsp;app

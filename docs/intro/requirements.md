@@ -3,16 +3,16 @@
 With the release of&nbsp;_<span translate="no">Loop 3</span>_&nbsp;, there are two ways to build the app.
 
 * If you have never built&nbsp;_<span translate="no">Loop</span>_&nbsp;before, we recommend you use the Build with Browser method.
-* If you use a Mac and keep the operating system up to date all the time, then you may prefer the Mac-Xcode method.
+* If you use a Mac and keep the operating system up to date all the time, then you may prefer the Build with *Mac* method.
 
 The Build Steps have been split into two tabs:
 
 * [Build with Browser](../gh-actions/gh-overview.md)
     * Build with a browser on any computer or tablet
-    * App is installed on the phone using *TestFlight*
-* [Build with Mac-Xcode](../build/overview.md)
-    * App is built on a Mac with Xcode connected to the phone
-    * The operating system on the Mac and the version of Xcode must be kept up-to-date
+    * App is installed on the iPhone using *TestFlight*
+* [Build with *Mac*](../build/overview.md)
+    * App is built on a *Mac* with *Xcode* connected to the iPhone
+    * The operating system on the *Mac* and the version of *Xcode* must be kept up-to-date
 
 There are some requirements common to both methods. Some requirements are specific to only one method.
 
@@ -23,10 +23,13 @@ These requirements are independent of how you build the Loop app:
 1. [Compatible iPhone](../build/phone.md)
 1. [Compatible Pump](../build/pump.md)
 1. [Compatible CGM](../build/cgm.md)
-1. [RileyLink Compatible Device](../build/rileylink.md) (not needed for Omnipod DASH)
+1. [RileyLink Compatible Device](../build/rileylink.md)
+    * Not needed with Omnipod DASH
+    * Required for Medtronic and Omnipod Eros
 1. [Apple Developer Membership](../build/apple-developer.md)
-    * For Browser Build - must be a paid developer account
     * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
+    * Build with Browser - requires a paid developer account
+    * Build with *Mac* - can build a free version with some limitations and must rebuild weekly
 
 ### Added Requirements to [Build with Browser](../gh-actions/gh-overview.md)
 
@@ -36,9 +39,9 @@ If you plan to build using the Build with Browser instructions, you also need:
 
 Detailed instructions are included in the link above.
 
-### Added Requirements to [Build with Mac-Xcode](../build/overview.md)
+### Added Requirements to [Build with *Mac*](../build/overview.md)
 
-If you plan to build using the Mac-Xcode Build instructions, you also need:
+If you plan to build using the Build with *Mac* instructions, you also need:
 
 1. [Compatible Computer](../build/computer.md#macos)
 1. [Xcode](../build/xcode-version.md) (a free Apple application)
@@ -71,6 +74,6 @@ Before you start either build method, review the Common Requirements. First one 
 
 Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Browser](../gh-actions/gh-overview.md).
 
-### Build with Mac-Xcode
+### Build with *Mac*
 
-Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Mac-Xcode](../build/overview.md).
+Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with *Mac*](../build/overview.md).

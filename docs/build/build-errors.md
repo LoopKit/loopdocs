@@ -42,7 +42,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 1. **Did you get a fresh download of Loop code?** If you tried to build with an old download that you used a long time ago, that old version may not be compatible with the new iOS and Xcode versions. Check also, that you are actually using the new download in Xcode.  When you use the Build Select Script, it automatically opens Xcode using the new download.
 
-    If you want to build using a recent download, this section tells you how to [Find My Downloaded Loop Code](code-customization.md#find-my-downloaded-loop-code).
+    If you want to build using a recent download, this section tells you how to [Find My Downloaded Loop Code](custom-mac.md#find-my-downloaded-loop-code).
 
 1. **Are you are using a free developer account?** Make sure you finished the removal of Siri and Push Notification capabilities described in the [Free Account](build-free-loop.md#free-account) link.
 

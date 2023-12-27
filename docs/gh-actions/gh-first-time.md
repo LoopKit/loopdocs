@@ -48,9 +48,9 @@
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
-    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start, then the rest is done automatically.
+    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start the build. The rest is done automatically.
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
-    - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
+    - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md)
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 ## Tips and Tricks
@@ -335,7 +335,7 @@ Review the graphic and then follow the directions below to save more parameters 
 1. The contents of this file will be used for `FASTLANE_KEY`
 
     * Copy the full text, including the "`-----BEGIN PRIVATE KEY-----`" and "`-----END PRIVATE KEY-----`" lines
-        * On a **Mac**, use ++command+"A"++, then ++command+"C"++  to copy all the contents
+        * On a *Mac*, use ++command+"A"++, then ++command+"C"++  to copy all the contents
         * On a **PC**, use ++control+"A"++ , then ++control+"C"++ to copy all the contents
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY`
 
@@ -725,7 +725,7 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 ## Configure Identifiers for Loop
 
-Some steps can be skipped if you previously built the *Loop* app with `Mac-Xcode`.
+Some steps can be skipped if you previously built the *Loop* app with `*Mac*`.
 
 Please read carefully to avoid confusion.
 
@@ -754,7 +754,7 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 
 ### Add `App Group` to Identifiers
 
-[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using *Mac*, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 #### New Builders
 
@@ -784,7 +784,7 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 !!! warning "Loop dev Builders"
     The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using the dev branch until the next release. At that time, this table will be updated.
 
-    If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/gh-update.md#one-time-changes).
+    If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes).
 
 ### Add or Review Configuration for `Loop Identifier`
 
@@ -1062,9 +1062,33 @@ Refer to the graphic below for the first four steps:
     * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
+## Build Failed?
+
+Did you get a red X? Head over to the [Errors with Browser](gh-errors.md) to page find a solution.
+
+## Successful Build
+
+**Congratulations**
+
+If you get the green check mark, your app successfully built. Just a few more steps.
+
+### One Time Only (per User)
+
+* Add users to your `App Store Connect` Users and Access by following the directions at [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight)
+* Continue following instructions to create an Internal Testing group for *TestFlight* for the *Loop* app
+* Add the Users to the Internal Group and they get an email they must confirm
+
+### Each Time
+
+* Go to the phone for installing the updated app from *TestFlight*
+* If you already set up your users, skip ahead to [Install on Phone](gh-deploy.md)
+
 ## Set Up Users and Access (TestFlight)
 
 Once the first build completes, you will be able to configure *TestFlight* for the app.
+
+!!! tip "Add Each Users One Time"
+    Once you add a user to have access to your TestFlight for this app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
 
 You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
 
@@ -1102,6 +1126,10 @@ You are configuring a private capability for your family using an Internal Testi
 
 The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
 
+But wait - there's more.
+
+* Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way
+* When you are done building and installing the *Loop* app, there are instructions to [Build Other Apps with Browser](gh-other-apps.md)
 
 ## Extra Steps
 
@@ -1116,7 +1144,7 @@ If your copy is **not** from `LoopKit`, follow the [Delete and Start Fresh](#del
 If your copy is from `LoopKit`:
 
 * Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
-* Review the graphic in the [Successful Fork](#successful-fork) section
+* Review the graphic in the [Configure: Successful Fork](#successful-fork) section
     * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
 * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
 * Continue with [Create `GitHub Personal Access Token`](#create-github-personal-access-token)
@@ -1161,4 +1189,3 @@ If you were just trying to clean up the identifiers, then follow these steps:
 * Complete the [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
 * Continue with [Create Certificates](#create-certificates) and then [Build the *Loop* App](#build-the-loop-app)
-

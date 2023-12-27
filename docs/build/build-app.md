@@ -412,6 +412,11 @@ The Loop app on your phone closes (but does not quit) when you unplug the phone.
 
 If you plan to build again on a backup phone, or want to try a customization, easiest for you to leave Xcode open. Otherwise, you can quit out of Xcode now.
 
+But wait - there's more.
+
+* Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way
+* When you are done building and installing the *Loop* app, there are instructions on the *Loop and Learn* website to [Download and Build Related Apps](https://www.loopandlearn.org/build-select/#build-other-apps)
+
 ## Protect that App
 
 !!! danger "Protect Against Deletion"
@@ -463,7 +468,7 @@ Even if you don't read all the pages under the Set Up tab now, these links are i
 !!! tip "Pro Tip"
     With a fresh download of code, it's always best to build to a simulator without customization to ensure the build works without errors. Then add the customizations and check the build again. Now you are ready to build to your phone to update your existing app.
 
-To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](code-customization.md) page and then build the app again.
+To add custom configurations to your Loop or Loop Apple Watch apps, follow the step-by-step instructions on the [Code Customizations](custom-mac.md) page and then build the app again.
 
 
 ### Apple Watch
@@ -476,7 +481,7 @@ For more information, please see [Operate: Apple Watch](../operation/features/wa
 
 ### Build Again with this Download
 
-Follow the [Find My Downloaded Loop Code](code-customization.md#find-my-downloaded-loop-code) instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the [Start Build](#start-build) section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.
+Follow the [Find My Downloaded Loop Code](custom-mac.md#find-my-downloaded-loop-code) instructions if you later wish to build with this same dowload. Plug in an unlocked phone and start at the [Start Build](#start-build) section of this page. You may need to select the phone you just plugged in. Everything else should be ready for you the start the build process.
 
 !!! warning "Don't use a really old download"
     Do not use a really old download.

@@ -62,7 +62,7 @@ For older versions of&nbsp;_<span translate="no">Loop</span>_, or if you customi
 
 If you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, _<span translate="no">Loop</span>_&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
 
-* <span translate="no">Loop 3</span>: review [Customization: Build Time Features](../build/code-customization.md#build-time-features)
+* <span translate="no">Loop 3</span>: review [Customization: Build Time Features](../version/build-time-flag.md)
 * <span translate="no">Loop 2</span>: Check your [Health](../build/health.md#loop-permissions) permissions and review.
 
 ## Glucose Prediction is Scary

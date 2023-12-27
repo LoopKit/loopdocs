@@ -87,7 +87,7 @@ The step is required for the *Loop* app to give permissions to your *Nightscout*
       * **Click inside that file**
       * Highlight **all** the text, and then
       * Copy **all** the text to the clipboard (Cf. screenshot below).
-        * On a **Mac**, press ++command+"A"++ to select all, then press ++command+"C"++ to copy the selection. 
+        * On a *Mac*, press ++command+"A"++ to select all, then press ++command+"C"++ to copy the selection. 
         * On a **PC**, press ++control+"A"++ to select all, then press ++control+"C"++ to copy the selection.
      
       You don't have to do it right now...just keep that window open in the background for now until we need it a little further down. Then we will copy all that text.
@@ -149,19 +149,19 @@ When executed properly, you should have something that looks like this for the t
 When the *Nightscout* config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the *Loop* app build method; the error message contains the phrase `APNs delivery failed: BadDeviceToken`.
 
 * If&nbsp;_<span translate="no">Loop</span>_&nbsp;was installed remotely (typically from TestFlight following GitHub Browser Build), you **must** have *Nightscout* config var `LOOP_PUSH_SERVER_ENVIRONMENT` set to `production`
-* If&nbsp;_<span translate="no">Loop</span>_&nbsp;was built using Mac-Xcode, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
+* If&nbsp;_<span translate="no">Loop</span>_&nbsp;was built using *Mac*, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
 
 ### Do Not Confuse Your Keys
 
 !!! danger "API Key vs APN Key"
-    If you build with the *GitHub* [Browser Build](../gh-actions/gh-overview.md), you may notice &nbsp;<span>the &nbsp;<span translate="no">Application Programming Interface (API)</span>&nbsp; key</span>&nbsp; has the same type of format as &nbsp;<span>the &nbsp;<span translate="no">Apple Push Notification (APN)</span>&nbsp; key</span>. The keys for both purposes are of type `p8`, but should not be confused.
+    If you build with the [Build with Browser](../gh-actions/gh-overview.md), you may notice &nbsp;<span>the &nbsp;<span translate="no">Application Programming Interface (API)</span>&nbsp; key</span>&nbsp; has the same type of format as &nbsp;<span>the &nbsp;<span translate="no">Apple Push Notification (APN)</span>&nbsp; key</span>. The keys for both purposes are of type `p8`, but should not be confused.
 
     The Secrets for building with *GitHub* use the API Key.
     
     The config vars for *Nightscout* use the APN Key.
     
     * If you are using remote commands with *Nightscout* and building with the **GitHub Browser** build method, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your *Nightscout* site or the remote commands will not work.
-    * If you are using the **Mac-Xcode** build method, you should not have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` entered - remove it if it is present.
+    * If you are using the *Mac* build method, you should not have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` entered - remove it if it is present.
 
 ## Step 4: Test Remote Overrides
 
