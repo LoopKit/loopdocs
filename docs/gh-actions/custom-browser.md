@@ -48,7 +48,7 @@ The information needed to modify the code to make these customizations is found 
 
 When preparing these personal edits using a browser, there is a page explaining how to get these edits into your personal `fork` of `LoopWorkspace` prior to building.
 
-* [Custom Edits with Browser](gh-customize.md)
+* [Custom Edits with Browser](edit-browser.md)
 
 ## Details at Links
 

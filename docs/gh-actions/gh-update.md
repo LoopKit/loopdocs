@@ -253,7 +253,7 @@ In this example, the branch and commit number are included followed by an indica
 !!! tip "Commit Number"
     If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
 
-    Use this section [Customization and SHA-1](gh-customize.md#customization-and-sha-1) to determine the SHA-1 before customization.
+    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
 
 ### Select a Previous Build
 

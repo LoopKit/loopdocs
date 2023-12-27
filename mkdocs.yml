@@ -94,6 +94,7 @@ plugins:
             'build/step6.md': 'build/apple-developer.md'
             'build/step8.md': 'build/xcode-version.md'
             'build/step9.md': 'build/xcode-settings.md'
+            'gh-actions/gh-customize.md': 'gh-actions/edit-browser.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -140,7 +141,7 @@ nav:
     - 'Update/Rebuild with Browser': gh-actions/gh-update.md
     - 'Automatic Update & Build': gh-actions/automatic.md
     - 'Customize using Browser': 'gh-actions/custom-browser.md'
-    - 'Custom Edits with Browser': 'gh-actions/gh-customize.md'
+    - 'Custom Edits with Browser': 'gh-actions/edit-browser.md'
     - 'Build Loop dev with Browser': gh-actions/build-dev-browser.md
     - 'Build Other Apps with Browser': gh-actions/gh-other-apps.md
 - Build with Mac:

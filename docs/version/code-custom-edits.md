@@ -29,7 +29,7 @@ The instructions on this page identify the module, `Key_Phrase` or file and line
 
 The how-to instructions for making these changes are different for each build method. They are found in the respective build-method tabs:
 
-* [Custom Edits with Browser](../gh-actions/gh-customize.md)
+* [Custom Edits with Browser](../gh-actions/edit-browser.md)
 * [Custom Edits with *Mac*](../build/edit-mac.md)
 
 !!! info "Line numbers may change"
