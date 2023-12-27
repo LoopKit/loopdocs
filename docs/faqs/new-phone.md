@@ -1,6 +1,6 @@
 ## Overview
 
-Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your&nbsp;_<span translate="no">Loop</span>_&nbsp;information is included and the&nbsp;_<span translate="no">Loop</span>_&nbsp;icon will appear, but the app will not open until you install&nbsp;_<span translate="no">Loop</span>_&nbsp;from either [*TestFlight*](../gh-actions/gh-deploy.md#install-app-with-testflight) or [**Mac**](../build/build-app.md).
+Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your&nbsp;_<span translate="no">Loop</span>_&nbsp;information is included and the&nbsp;_<span translate="no">Loop</span>_&nbsp;icon will appear, but the app will not open until you install&nbsp;_<span translate="no">Loop</span>_&nbsp;from either [*TestFlight*](../gh-actions/gh-deploy.md#install-app-with-testflight) or [*Mac* with *Xcode*](../build/build-app.md).
 
 Some people don't have access to their old phone. There are instructions for handling that on this page. It makes the whole process more stressful, but remember, pods continue to deliver basal rate and *Medtronic* pumps can be controlled on the pump itself. Use your backup plan until you can get&nbsp;_<span translate="no">Loop</span>_&nbsp;running on a new phone.
 
@@ -27,7 +27,7 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
     * The *Loop* app will install from *TestFlight* onto the most recent iOS
     * If a new version is available, we recommend updating and building to the latest [Update with Browser](../gh-actions/gh-update.md)
 
-!!! abstract "New Phone Checklist for **Mac** Build"
+!!! abstract "New Phone Checklist for Build with *Mac* Method Build"
     * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) compatible with the latest iOS version?
     * If not, you should configure and build the app with [Build with Browser](../gh-actions/gh-overview.md)
 
@@ -80,7 +80,7 @@ It is easier if you transfer information from the old phone to the new phone bef
 * Install the app on your new phone from *TestFlight*
 * If necessary, review [*TestFlight* for a Child](../gh-actions/gh-deploy.md#testflight-for-a-child)
 
-#### Build using **Mac**
+#### Build using *Mac*
 
 * Open *Xcode* – use the same build as you used for the old phone
 * Plug in the new phone to the computer (trust phone/computer) and hit build

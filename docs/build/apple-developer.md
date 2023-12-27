@@ -10,7 +10,7 @@
 
     - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
     - Free: No action required at this time.
-        * Free requires you to use the build with *Mac* method
+        * Free requires the [Build with *Mac*](overview.md) method
 
 !!! question "FAQs"
     - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account).

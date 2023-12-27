@@ -7,7 +7,7 @@ The new features added with each Loop release (starting with Loop version 2.0) a
 Be aware that Loop 3 is forward compatible:
 
 * You can build Loop 3 over older versions of Loop and maintain therapy settings as well as your configuration for CGM and pump (including a pod)
-* You can build Loop 3 using a browser on any computer (no Mac required) with GitHub [Browser Build](../gh-actions/gh-overview.md)
+* You can build Loop 3 using a browser on any computer (no Mac required) with [Build with Browser](../gh-actions/gh-overview.md)
 * Your phone must be running at least iOS 15.1 (although some people report they needed newer iOS than that when building with GitHub Browser Build)
 
 Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.

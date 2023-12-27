@@ -57,7 +57,7 @@ Your *iOS* version can be found under the phone Settings -> General -> About dis
 
 Do not use any of the beta *iOS* versions. (If you are uncertain what that means, then you are not using one.)
 
-### Developer Mode - **Mac** Build Only
+### Developer Mode - *Mac* Build Only
 
 > When you build the *Loop* app using [Build with Browser](../gh-actions/gh-overview.md), you are not required to enable Developer Mode on the phone or watch.
 

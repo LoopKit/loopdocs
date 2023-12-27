@@ -195,7 +195,7 @@ If the word is at the end of a line or has other punctuation, the `&nbsp;` can b
 
 ### All about&nbsp;<span translate="no">Word</span>
 
-This ability to build&nbsp;<span translate="no">Loop</span>, from both a browser and with *Mac*, is wonderful.
+This ability to build&nbsp;<span translate="no">Loop</span> from either a browser or using a *Mac* is wonderful.
 ```
 
 Be warned that if `&nbsp;` is part of the text in a header, the automatic link doesn't acknowledge the space. The link above would be `#all-aboutword`, not `#all-about-word`.
@@ -210,19 +210,18 @@ These words / phrases **do not need** no-translate tags, however, they are typic
 
 * Xcode
 * *Mac*
-* GitHub
-* TestFlight
-
-These words **do need** no-translate tags (most of the time):
-* Apple
-* Loop
-* LoopKit/Loop
+* *GitHub*
+* *TestFlight*
+* *Apple*
 
 Look out for Loop showing up as buckle, at least in French and Spanish, in translations. That indicates `span` must be used, with the `&nbsp;` required if there is no punctuation mark. Once again, using underscore instead of asterisk in concert with `span` is a preference:
 
 ```
 &nbsp;_<span translate="no">Loop</span>_&nbsp;
 ```
+
+The no-translate tags can be avoided if used in a phrase:
+* the *Loop* app
 
 Common words like `Secrets` that will show up on `GitHub` for Building with Browser should be enclosed in `code` so tooltips will work and the word will be highlighted as important.
 

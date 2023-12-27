@@ -2,7 +2,7 @@
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
-    - 0 minutes if you decide to use the GitHub [Browser Build](../gh-actions/gh-overview.md) method to build Loop
+    - 0 minutes if you decide to use the [Build with Browser](../gh-actions/gh-overview.md) method to build Loop
 
 !!! abstract "Summary"
     - Check iPhone iOS version
