@@ -389,4 +389,4 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 
 ## Build Development Version
 
-The information to build a development (`dev` or any other branch) has been moved to a new page: [Build Loop dev with Browser](build-dev-browser.md)
+The information to build a development (`dev` or any other branch) has been moved to a new page: [Build dev with Browser](build-dev-browser.md)

@@ -3,8 +3,8 @@
 There are several different methods for making use of TestFlight:
 
 * Test an app someone else is developing
-* Use the [Build with Browser](../gh-actions/gh-overview.md) method to build and distribute your own Loop app
-* Use TestFlight as a remote distribution (and backup) for an app you build using Xcode
+* Use the [Build with Browser](../gh-actions/gh-overview.md) method to build and distribute your Loop app to your iPhone or that of a family member
+* Use *TestFlight* as a remote distribution (and backup) for an app you build using *Xcode*
 
 This guide can also be followed to install other apps you build with *Xcode* via *TestFlight*. Examples include <code>Loop Follow</code>, <code>Loop Caregiver</code>, <code>xDrip4iOS</code> and <code>GlucoseDirect</code>.
 
@@ -25,7 +25,7 @@ In all cases, except accidental deletion of Loop or loss of phone, the Loop you 
 
 ### Initial Steps
 
-Before creating or uploading to a TestFlight, use the [Build with *Mac*](../build/overview.md) guide to [sign your targets](../build/build-free-loop.md#select-signing-capabilities-tab) and build Loop to a [simulator phone](../build/build-free-loop.md#build-to-a-simulator) in Xcode. This checks to ensure the app you upload to your TestFlight will work as expected.
+Before creating the app or uploading it to *TestFlight*, use the [Build with *Mac*](../build/overview.md) guide to [sign your targets](../build/build-free-loop.md#select-signing-capabilities-tab) and build Loop to a [simulator phone](../build/build-free-loop.md#build-to-a-simulator) in Xcode. This checks to ensure the app you upload to your TestFlight will work as expected.
 
 ### Archive the Project
 

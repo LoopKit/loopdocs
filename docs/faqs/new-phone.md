@@ -27,9 +27,10 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
     * The *Loop* app will install from *TestFlight* onto the most recent iOS
     * If a new version is available, we recommend updating and building to the latest [Update with Browser](../gh-actions/gh-update.md)
 
-!!! abstract "New Phone Checklist for Build with *Mac* Method Build"
+!!! abstract "New Phone Checklist for Build with *Mac*"
     * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) compatible with the latest iOS version?
-    * If not, you should configure and build the app with [Build with Browser](../gh-actions/gh-overview.md)
+    * If not, you need to install the correct versions on your *Mac*
+    * If you cannot do that, you should consider [Build with Browser](../gh-actions/gh-overview.md)
 
 ### Different Developer ID
 
