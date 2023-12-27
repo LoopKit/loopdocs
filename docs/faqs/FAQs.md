@@ -39,7 +39,7 @@ Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 * If you have a pump the requires a [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
 * Most people use a paid Apple Developer Account ($99/year)
     * With a paid developer account, you can build using the [Browser Build](../gh-actions/gh-overview.md); no Mac required
-* If you build on a Mac using Xcode [Mac-Xcode Build](../build/overview.md), you need a Mac or a PC with Intel chips on which you include a virtual Mac
+* If you build on a Mac using Xcode [Build with *Mac*](../build/overview.md), you need a Mac or a PC with Intel chips on which you include a virtual Mac
 
 There are no other costs, ongoing or initial, to use Loop beyond what you already pay for your CGM, pump supplies and insulin.
 
@@ -51,13 +51,13 @@ There are several options for the [RileyLink Compatible Devices](../build/rileyl
 
 ## Free Developer Account Options
 
-The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days and you must use a computer with Xcode, [Mac-Xcode Build](../build/overview.md). That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
+The Apple Developer License can be done for free, however, you will have to rebuild your Loop app every 7 days and you must use a computer with Xcode, [Build with *Mac*](../build/overview.md). That could get very tedious. The $99 annual Apple Developer program enrollment is an excellent investment.
 
 ## Do I need to own my own Apple computer?
 
 You no longer need to own an Apple computer - see [Browser Build](../gh-actions/gh-overview.md).
 
-If you chose [Mac-Xcode Build](../build/overview.md), then you still don't **have** to own an Apple computer, but you do need to at least borrow one - or you can build using a virtual Mac if you have a PC with Intel chips (see next section).
+If you chose [Build with *Mac*](../build/overview.md), then you still don't **have** to own an Apple computer, but you do need to at least borrow one - or you can build using a virtual Mac if you have a PC with Intel chips (see next section).
 
 If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/computer.md#macos) and [Xcode Version](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
 
@@ -65,19 +65,19 @@ If you are borrowing an Apple computer, look at the required minimum settings as
 
 You can build Loop using just a browser on any device: [Browser Build](../gh-actions/gh-overview.md).
 
-If you want to use [Mac-Xcode Build](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
+If you want to use [Build with *Mac*](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
 When you use the Browser Build method, you need to access a browser at least once every 90 days to [Update with Browser](../gh-actions/gh-update.md). This is simple enough to do that you can do the steps on your phone in just a few minutes. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.
 
-When you use Mac-Xcode Build: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
+When you use Build with *Mac*: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free Apple Developer Account, you will need to get on the computer every 7 days.)
 
 Loop code is updated periodically to include new features and bug fixes. When those updates are released, you'll need access to a browser or an Apple computer again to update your Loop app.  
 
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
-* If using Mac-Xcode build: use this link: [update instructions](../build/updating.md)
+* If using build with *Mac*: use this link: [update instructions](../build/updating.md)
 * If using Browser build: use this link: [Update with Browser](../gh-actions/gh-update.md#how-to-update-or-rebuild) 
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
@@ -180,6 +180,6 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. The dev branch has Libre support, see [Build Loop Dev](../version/build-dev.md).
 
-The addition of customizations has been simplified with the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code). That script can be run stand-alone, selected as an option as part of the Build Select Script when doing a Mac-Xcode build or incorporated in a [GitHub Browser build customization](../gh-actions/gh-customize.md) by editing the build_loop.yml file.
+The addition of customizations has been simplified with the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code). That script can be run stand-alone, selected as an option as part of the Build Select Script when doing a build with *Mac* or incorporated in a [GitHub Browser build customization](../gh-actions/gh-customize.md) by editing the build_loop.yml file.
 
 Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../version/code-custom-edits.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/).

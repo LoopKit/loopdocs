@@ -2,7 +2,7 @@
 
 **This page is only relevant when building the `dev` branch with a browser.**
 
-**For *Mac-Xcode*, please see: [Build Loop `dev` with *Mac-Xcode*](../build/build-dev-mac.md)**
+**For *Mac*, please see: [Build Loop `dev` with *Mac*](../build/build-dev-mac.md)**
 
 **No matter the method used to build Loop-dev, you are testing development code. Please read this link now before continuing.**
 

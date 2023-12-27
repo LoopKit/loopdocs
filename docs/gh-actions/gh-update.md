@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode*, please see: [Update/Rebuild with *Mac-Xcode*](../build/updating.md)**
+**For *Mac*, please see: [Update/Rebuild with *Mac*](../build/updating.md)**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App

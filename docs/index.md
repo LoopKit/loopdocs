@@ -14,7 +14,7 @@ This site shows you step-by-step how to [**build**](intro/requirements.md), [**s
     * Use a [browser](gh-actions/gh-overview.md) on any computer or tablet and install it on your *iPhone* via *TestFlight*
     * Use an up-to-date [*Mac* Computer](build/overview.md) and install it directly on your *iPhone*
 
-In order to become a proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.
+In order to become proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.
 
 * You should test and perhaps adjust your settings to be successful with the *Loop* app (or any hybrid closed-loop system)
 * You will find links as you read to a robust volunteer support community

@@ -725,7 +725,7 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 ## Configure Identifiers for Loop
 
-Some steps can be skipped if you previously built the *Loop* app with `Mac-Xcode`.
+Some steps can be skipped if you previously built the *Loop* app with `*Mac*`.
 
 Please read carefully to avoid confusion.
 
@@ -754,7 +754,7 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 
 ### Add `App Group` to Identifiers
 
-[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using *Mac*, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 #### New Builders
 

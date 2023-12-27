@@ -149,7 +149,7 @@ When executed properly, you should have something that looks like this for the t
 When the *Nightscout* config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the *Loop* app build method; the error message contains the phrase `APNs delivery failed: BadDeviceToken`.
 
 * If&nbsp;_<span translate="no">Loop</span>_&nbsp;was installed remotely (typically from TestFlight following GitHub Browser Build), you **must** have *Nightscout* config var `LOOP_PUSH_SERVER_ENVIRONMENT` set to `production`
-* If&nbsp;_<span translate="no">Loop</span>_&nbsp;was built using Mac-Xcode, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
+* If&nbsp;_<span translate="no">Loop</span>_&nbsp;was built using *Mac*, you **cannot** have `LOOP_PUSH_SERVER_ENVIRONMENT` as one of your *Nightscout* config vars
 
 ### Do Not Confuse Your Keys
 
@@ -161,7 +161,7 @@ When the *Nightscout* config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the
     The config vars for *Nightscout* use the APN Key.
     
     * If you are using remote commands with *Nightscout* and building with the **GitHub Browser** build method, you must also add the config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` to your *Nightscout* site or the remote commands will not work.
-    * If you are using the **Mac-Xcode** build method, you should not have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` entered - remove it if it is present.
+    * If you are using the **Mac** build method, you should not have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` entered - remove it if it is present.
 
 ## Step 4: Test Remote Overrides
 

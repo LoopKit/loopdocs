@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode*, please see: [Customize with *Mac*](../build/custom-mac.md)**
+**For *Mac*, please see: [Customize with *Mac*](../build/custom-mac.md)**
 
 For new Loopers, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface. Later, you can make the customization(s) you desire and build again. The second build will be much easier than your first build.
 

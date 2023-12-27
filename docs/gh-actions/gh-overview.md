@@ -8,23 +8,19 @@
 * *Mac* computer is not required to build or install the app
     * Anything with a browser works to build the *Loop* app: PC, Tablet, Mac or iPad
     * The *TestFlight* app is used to install the *Loop* app on your iPhone
-* Xcode is not required
-    * The time required for the initial setup for building with a browser may take less time than one *macOS* and *Xcode* version update for those using [*Mac-Xcode* Build](../build/overview.md)
+* Compatible version of *Xcode* is provided by *GitHub*
+    * The time required for the initial setup to build with a browser may take less time than one *macOS* and *Xcode* version update for those using [Build with *Mac*](../build/overview.md)
 * Updates are easy
     * Starting an update takes a few minutes of your time; the rest is automatic
     * Planned for the next release: app will build automatically at least once a month and is checked for updates once a week
 
 ### Considerations for Building with a Browser
 
+* After the&nbsp;<span translate="no">*GitHub* Build</span>&nbsp;starts, your app is ready to install on your *iPhone* in about an hour
 * The app is delivered to your phone via *TestFlight*
     * The app is considered "Beta" by  *Apple* and expires after 90 days
     * With the next release, which includes automatic builds, this will be even easier than it is now
-* After the&nbsp;<span translate="no">*GitHub* Build</span>&nbsp;starts, the process takes about an hour to complete
-    * You receive an email indicating success (or failure)
-    * The&nbsp;_<span translate="no">Loop</span>_&nbsp;app appears in the *TestFlight* app on the phone, where it can be installed in seconds
-* Frequently used customizations are easy to copy and paste as documented at&nbsp;[_<span translate="no">Loop and Learn: Loop Customization</span>_](https://www.loopandlearn.org/custom-code#custom-list)
-* Personalized code customizations are tedious to set up but easy to maintain
-    * Instructions are documented at [Customize using Browser](../gh-actions/gh-customize.md)
+* Customization methods are documented at [Customize with Browser](custom-browser.md)
 
 ## Requirements
 

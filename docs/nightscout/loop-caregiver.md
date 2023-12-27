@@ -34,13 +34,13 @@ If you use *Loop Caregiver*, please join [*Loop Caregiver* App](https://loop.zul
 
 ## Build *Loop Caregiver*
 
-You can build *Loop Caregiver* using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method or the &nbsp;[<span translate="no">Mac-Xcode Build</span>](#mac-xcode-build) method.
+You can build *Loop Caregiver* using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method or the &nbsp;[<span translate="no">Build with *Mac*</span>](#mac-xcode-build) method.
 
 ### GitHub Browser Build:
 
 The &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method is documented on the [Other Apps](../gh-actions/gh-other-apps.md) page.
 
-### Mac-Xcode Build:
+### Build with *Mac*:
 
 A build script is available to assist in building *Loop Caregiver*. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
 

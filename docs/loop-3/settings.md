@@ -220,11 +220,11 @@ The time stamps within the JSON files use UTC.
 
 The Profile Expiration is reported at the bottom of the Settings display along with the number of days remaining before Loop stops working.
 
-The link for `How to update (LoopDocs)` is provided for Mac-Xcode build.
+The link for `How to update (LoopDocs)` is provided for build with *Mac*.
 
 In fine print, the exact date and time of the expiration is reported in your local time zone.
 
-![display of profile expiration appropriate for Mac-Xcode build method](img/app-profile.png){width="350"}
+![display of profile expiration appropriate for build with *Mac* method](img/app-profile.png){width="350"}
 {align="center"}
 
 The Profile Expiration is different for GitHub Browser Build method. A feature request is in place (but not yet added to the code) to report the TestFlight expiration for that build method.
