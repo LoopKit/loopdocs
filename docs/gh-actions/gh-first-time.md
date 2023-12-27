@@ -1126,6 +1126,11 @@ You are configuring a private capability for your family using an Internal Testi
 
 The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
 
+But wait - there's more.
+
+* Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way
+* When you are done building and installing the *Loop* app, there are instructions to [Build Other Apps with Browser](gh-other-apps.md)
+
 ## Extra Steps
 
 Most people won't need the information on the rest of this page.

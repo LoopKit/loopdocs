@@ -412,6 +412,11 @@ The Loop app on your phone closes (but does not quit) when you unplug the phone.
 
 If you plan to build again on a backup phone, or want to try a customization, easiest for you to leave Xcode open. Otherwise, you can quit out of Xcode now.
 
+But wait - there's more.
+
+* Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way
+* When you are done building and installing the *Loop* app, there are instructions on the *Loop and Learn* website to [Download and Build Related Apps](https://www.loopandlearn.org/build-select/#build-other-apps)
+
 ## Protect that App
 
 !!! danger "Protect Against Deletion"
