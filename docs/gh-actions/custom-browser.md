@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode*, please see: [Customize with *Mac*](../build/custom-mac.md)**
+**For *Mac*, please see: [Customize with *Mac*](../build/custom-mac.md)**
 
 For new Loopers, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface. Later, you can make the customization(s) you desire and build again. The second build will be much easier than your first build.
 
@@ -48,7 +48,7 @@ The information needed to modify the code to make these customizations is found 
 
 When preparing these personal edits using a browser, there is a page explaining how to get these edits into your personal `fork` of `LoopWorkspace` prior to building.
 
-* [Custom Edits with Browser](gh-customize.md)
+* [Custom Edits with Browser](edit-browser.md)
 
 ## Details at Links
 

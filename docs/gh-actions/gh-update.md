@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac-Xcode*, please see: [Update/Rebuild with *Mac-Xcode*](../build/updating.md)**
+**For *Mac*, please see: [Update/Rebuild with *Mac*](../build/updating.md)**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App
@@ -274,7 +274,7 @@ In this example, the branch and commit number are included followed by an indica
 !!! tip "Commit Number"
     If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
 
-    Use this section [Customization and SHA-1](gh-customize.md#customization-and-sha-1) to determine the SHA-1 before customization.
+    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
 
 ### Select a Previous Build
 
@@ -406,4 +406,4 @@ Scroll all the way to the top of the screen and tap on your LoopWorkspace link. 
 
 ## Build Development Version
 
-The information to build a development (`dev` or any other branch) has been moved to a new page: [Build Loop dev with Browser](build-dev-browser.md)
+The information to build a development (`dev` or any other branch) has been moved to a new page: [Build dev with Browser](build-dev-browser.md)

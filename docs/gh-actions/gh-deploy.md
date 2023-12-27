@@ -83,7 +83,7 @@ Once the app is installed one time, you can adjust whether it is automatically i
 Go back to the *TestFlight* app on your phone and tap on your app name in the list to see an expanded screen similar to the graphic below. The row to enable or disable automatic updates is highlighted in the graphic, which shows the feature disabled. This is recommended for all users.
 
 * If you leave automatic update enabled (default), then whenever a new build is created and uploaded to *TestFlight* , it will be installed immediately.
-* WARNING: If you switch between Building with Browser and Mac-Xcode, you must disable automatic update or Xcode will not be able to install to your phone.
+* WARNING: If you switch between Building with Browser and *Mac*, you must disable automatic update or Xcode will not be able to install to your phone.
 
 ![enable or disable automatic update for Loop](img/testflight-auto-update.png){width="300"}
 {align="center"}

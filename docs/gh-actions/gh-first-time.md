@@ -49,7 +49,7 @@
     - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
     - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](gh-deploy.md#automatic-update-build-install) for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
-    - **Can I still use my customizations?** Yes. [Customize with Browser](gh-customize.md)
+    - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md)
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 ## Automatic Build of Loop
@@ -342,7 +342,7 @@ Review the graphic and then follow the directions below to save more parameters 
 1. The contents of this file will be used for `FASTLANE_KEY`
 
     * Copy the full text, including the "`-----BEGIN PRIVATE KEY-----`" and "`-----END PRIVATE KEY-----`" lines
-        * On a **Mac**, use ++command+"A"++, then ++command+"C"++  to copy all the contents
+        * On a *Mac*, use ++command+"A"++, then ++command+"C"++  to copy all the contents
         * On a **PC**, use ++control+"A"++ , then ++control+"C"++ to copy all the contents
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY`
 
@@ -696,10 +696,7 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 ## Configure Identifiers for Loop
 
-Some steps can be skipped if you previously built Loop with `Mac-Xcode`.
-
-[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built Loop using Mac-Xcode, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
-
+Some steps can be skipped if you previously built the *Loop* app with `*Mac*`.
 
 Please read carefully to avoid confusion.
 
@@ -725,6 +722,10 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
     * A mistake here means you will not be able to build the *Loop* app until you fix it
 1. Click `Continue` and then `Register`.
+
+### Add `App Group` to Identifiers
+
+[<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using *Mac*, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 #### New Builders
 
@@ -1037,6 +1038,11 @@ You are configuring a private capability for your family using an Internal Testi
 ## Install on Phone
 
 The [Install on Phone](gh-deploy.md) page walks you through the steps to use the *TestFlight* app to install the *Loop* app on a phone.
+
+But wait - there's more.
+
+* Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way
+* When you are done building and installing the *Loop* app, there are instructions to [Build Other Apps with Browser](gh-other-apps.md)
 
 ## Extra Steps
 

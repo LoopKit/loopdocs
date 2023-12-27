@@ -1,7 +1,7 @@
 ## Compatible Pump
 
 !!! info "Time Estimate"
-    - Omnipod users: 3 seconds to remember which PDM you've been using.
+    - Omnipod users: 3 seconds to remember which Personal Diabetes Manager (PDM) you've been using.
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
@@ -164,16 +164,18 @@ Eros pods (also known as Gen 3) were launched in 2013 and continue to be sold by
 
     Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods. 
     
-Eros system has a big PDM that does not look like a phone.
+Eros system has a big Personal Diabetes Manager (PDM) that does not look like a phone.
 
 ![img/eros.png](img/eros.png){width="750"}
 {align="center"}
 
 ### Omnipod DASH
 
-Insulet has announced their DASH system as an eventual replacement for the Eros/Omnipod System. The DASH system has the newer, slimmer locked-android PDM and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device. 
+The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device.
 
-Loop 3.0 and later works with DASH pods. If your version of the *Loop* app is 2.2.9 or earlier, you cannot use DASH pods.
+**A RileyLink-compatible device is not required to use DASH wioth the *Loop* app. The communication with your iPhone uses Bluetooth.**
+
+`Loop 3.0` and later works with DASH pods. If your version of the *Loop* app is 2.2.9 or earlier, you cannot use DASH pods.
 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}

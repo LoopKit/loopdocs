@@ -40,7 +40,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 
 ### Multiple Copies of `Loop Follow`
 
-For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with Mac-Xcode](https://www.loopandlearn.org/loop-follow#lf-script)).
+For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script)).
 
 * Build up to three instances of `Loop Follow`
 * Customize the name of the app that appears on your phone

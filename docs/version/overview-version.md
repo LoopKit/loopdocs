@@ -1,11 +1,11 @@
 ## Version Overview
 
-The Version tab of LoopDocs contains information about Loop versions, code customization and development.
+The Version tab of *LoopDocs* contains information about releases (versions), code customization and development.
 
 Map to this section:
 
-* [Loop Releases](releases.md)
-    - Description of the current released version of Loop including when it was released
+* [Releases](releases.md)
+    - Description of the current released version of the *Loop* app including when it was released
     - Reverse chronology of earlier releases
 * Information needed to Personalize (Customize) your app (regardless of build method)
     * [Custom Edits](../version/code-custom-edits.md)

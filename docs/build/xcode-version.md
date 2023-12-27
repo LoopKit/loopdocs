@@ -2,7 +2,7 @@
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
-    - 0 minutes if you decide to use the GitHub [Browser Build](../gh-actions/gh-overview.md) method to build Loop
+    - 0 minutes if you decide to use the [Build with Browser](../gh-actions/gh-overview.md) method to build Loop
 
 !!! abstract "Summary"
     - Check iPhone iOS version
@@ -81,7 +81,7 @@ The current development version and the next release of&nbsp;_<span translate="n
 
 When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 
-The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with Mac-Xcode.
+The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
 
 Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
 

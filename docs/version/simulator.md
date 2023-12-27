@@ -12,7 +12,7 @@ Please, review all the Intro and Build pages, even if you will not complete them
 
 Follow the normal instructions to build with browser, install the app on a compatible phone and explore the app using the Pump Simulator, CGM Simulator or both.
 
-### Simulator using Mac-Xcode Build:
+### Simulator using Build with *Mac*:
 
 * Must have a Mac computer (or virtual machine, Intel chips only)
 * Can build the simulator with a free Apple Developer ID
@@ -85,7 +85,7 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 
     The Loop app, when open, will be quite aggressive at warning you that you have disabled Notifications, so you can reverse those directions to enable notifications when actually using the app.
 
-### Mac-Xcode Build to a Real Phone using Free Account
+### Build with *Mac* to a Real Phone using Free Account
 
 * Need access to a mac or virtual computer, see [Compatible Computer](../build/computer.md)
 

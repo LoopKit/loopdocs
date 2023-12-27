@@ -1,7 +1,7 @@
 ## Overview
 
 
-**This page is only relevant when building the `dev` branch with *Mac-Xcode*.**
+**This page is only relevant when building the `dev` branch with a *Mac*.**
 
 **For *Browser Build*, please see: [Build Loop dev with Browser](../gh-actions/build-dev-browser.md)**
 

@@ -17,8 +17,8 @@ In both cases, you build the code to install over an existing app on your phone 
 * If you use the Browser build method:
     * Follow the steps on [Update/Rebuild with Browser](../gh-actions/gh-update.md)
     * Within an hour that new build should be available via TestFlight to install on your phone
-* If you use the *Mac-Xcode* build method:
-    * Follow the steps on [Update/Rebuild with *Mac-Xcode*](../build/updating.md)
+* If you use the build with *Mac* method:
+    * Follow the steps on [Update/Rebuild with *Mac*](../build/updating.md)
         * First make sure your *Mac* operating system and *Xcode* version are compatible with your *iPhone* version, and then
         * Use the [Build Select Script](../build/build-app.md#build-select-script) to download the latest released version of the code
     * See note below if your internet speed or your *Mac* is very slow
@@ -41,11 +41,11 @@ There's a whole page devoted to just this topic: [New Phone](new-phone.md)
 * **Best Practice**
     * Build if a serious bug-fix is reported
     * Build, two to four times a year so that it becomes easier and you are ready in case of an emergency
-    * Each time you build, the app expiration date is bumped out a full year for Mac-Xcode build method and 90-days for Browser build
+    * Each time you build, the app expiration date is bumped out a full year for build with *Mac* method and 90-days for Browser build
 * **Required**
     * When your expiration date forces you
     * Do not wait until the app expires - it will stop working
-        * For *Mac-Xcode*, you will see [Loop is No Longer Available](../build/updating.md#loop-is-no-longer-available)
+        * For *Mac*, you will see [Loop is No Longer Available](../build/updating.md#loop-is-no-longer-available)
         * For Browser Build, the message is "Loop Beta has expired"
     * Hint - start a few weeks early and take your time
 * **Optional**
@@ -83,9 +83,9 @@ Regardless of build method, always check your *Apple* Developer Account status.
 
 Go to [Update/Rebuild with Browser](../gh-actions/gh-update.md) and follow the instructions.
 
-#### Updates with the *Mac-Xcode* build method:
+#### Updates with the build with *Mac* method:
 
-**ALWAYS start with the [Update/Rebuild with *Mac-Xcode*](../build/updating.md) before any new *Mac-Xcode* build.** That page is important because it will offer information on the updates you may need for your *Mac* and *Xcode* before building.
+**ALWAYS start with the [Update/Rebuild with *Mac*](../build/updating.md) before any new build with *Mac*.** That page is important because it will offer information on the updates you may need for your *Mac* and *Xcode* before building.
 
 Do not simply build with your old downloaded folder from months ago. There is a high likelihood that your original code from awhile ago is outdated and might not build with the current phone iOS. Grab new code and you will get the compatible version that has all the latest and greatest features and bug fixes.
 
