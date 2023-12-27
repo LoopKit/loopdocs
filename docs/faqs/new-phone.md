@@ -70,7 +70,7 @@ It is easier if you transfer information from the old phone to the new phone bef
     * *Medtronic* users will have all their information transferred but will only have one phone connected to the *RileyLink*
 1. Install&nbsp;_<span translate="no">Loop</span>_&nbsp;on the new phone (all your settings should be there)
     * [Install from *TestFlight*](#install-from-testflight)<br>or
-    * [Build using *Mac*](#build-using-mac-xcode)
+    * [Build using *Mac*](#build-using-mac)
 1.  As soon as you install the *Loop* app on the new phone, go ahead and disable <code>Closed Loop</code>.
     * Keep <code>Closed Loop</code> disabled until you complete the full transfer and checkout.
 

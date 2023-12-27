@@ -1,4 +1,4 @@
-## *Loop Caregiver*   ![icon for *Loop Caregiver* app](img/lcg-icon.jpg){width="50"}
+## The *Loop Caregiver* App  ![icon for *Loop Caregiver* app](img/lcg-icon.jpg){width="50"}
 
 The *Loop Caregiver* app is under development to make remote commands easier to implement and monitor.
 
@@ -32,15 +32,15 @@ If you use *Loop Caregiver*, please join [*Loop Caregiver* App](https://loop.zul
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 
-## Build *Loop Caregiver*
+## Build the *Loop Caregiver* App
 
-You can build *Loop Caregiver* using the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method or the &nbsp;[<span translate="no">Build with *Mac*</span>](#mac-xcode-build) method.
+You can build the *Loop Caregiver* app using the [Build with Browser](#build-with-browser) method or the [Build with *Mac*](#build-with-mac) method.
 
-### GitHub Browser Build:
+###  Build with Browser
 
-The &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; method is documented on the [Other Apps](../gh-actions/gh-other-apps.md) page.
+The Build with Browser method is documented on the [Build Other Apps with Browser](../gh-actions/gh-other-apps.md) page.
 
-### Build with *Mac*:
+### Build with *Mac*
 
 A build script is available to assist in building *Loop Caregiver*. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
 
@@ -63,18 +63,18 @@ A build script is available to assist in building *Loop Caregiver*. This should 
 - The script displays the directions for downloading and building.    
     Please read them carefully.
 
-!!! warning "Not&nbsp;_<span translate="no">Loop</span>_"
-    The output you see in the Terminal may look very similar to when you build *Loop 3* from a script.
+!!! warning "Read Carefully"
+    The output you see in the Terminal may look very similar to when you build the *Loop* app from a script.
     
-    It is pulling down a clone from a different location (*LoopKit/LoopCaregiver*). It uses some modules from&nbsp;_<span translate="no">Loop</span>_. The target and scheme are automatically selected for *Loop Caregiver*  and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (`LoopKit/LoopCaregiver`). It uses some modules from `Loop`. The target and scheme are automatically selected for `Loop Caregiver`  and if you follow directions for a paid Developer account, the signing is automatic.
 
-## Use *Loop Caregiver*
+## Use the *Loop Caregiver* App
 
 Some limited directions for using the *Loop Caregiver* app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of &nbsp;_<span translate="no">Loop</span>_.
 
-### *Loop Caregiver* Add Looper
+### Add Looper to the *Loop Caregiver* App
 
-You must add a Looper to continue with *Loop Caregiver* as shown in the graphic below.
+You must add a Looper to continue with the *Loop Caregiver* app as shown in the graphic below.
 
 ![add Looper to Loop Caregiver](img/lcg-add-looper.png){width="300"}
 {align="center"}
@@ -97,9 +97,9 @@ You must add a Looper to continue with *Loop Caregiver* as shown in the graphic 
 
 You can add additional more people under settings. (**Loop Caregiver* * can monitor more than one Looper).
 
-### *Loop Caregiver* Main Screen
+### Main Screen of the *Loop Caregiver* App
 
-* *Loop Caregiver* * uses a lot of features from&nbsp;_<span translate="no">Loop</span>_&nbsp;with some Nightscout-like features in the Timeline.
+* *Loop Caregiver* uses a lot of features from&nbsp;_<span translate="no">Loop</span>_&nbsp;with some Nightscout-like features in the Timeline.
 
 The Timeline:
 
@@ -117,7 +117,7 @@ You can also use the *Loop Caregiver* -> `Settings` screen to modify:
 * Units used for glucose display: `mg/dL` or `mmol/L`
 * Include the&nbsp;_<span translate="no">Loop</span>_&nbsp;forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
-### Issue Remote Commands with *Loop Caregiver*
+### Issue Remote Commands with the *Loop Caregiver* App
 
 You issue override, carb, and bolus commands using a toolbar similar to the one seen on&nbsp;_<span translate="no">Loop</span>_. In the example graphic above, the carb and bolus entries visible were issued remotely.
 
