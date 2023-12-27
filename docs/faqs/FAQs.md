@@ -77,8 +77,8 @@ Loop code is updated periodically to include new features and bug fixes. When th
 
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
-* If using build with *Mac*: use this link: [update instructions](../build/updating.md)
-* If using Browser build: use this link: [Update with Browser](../gh-actions/gh-update.md#how-to-update-or-rebuild) 
+* If using Browser build method: use this link: [Update with Browser](../gh-actions/gh-update.md#how-to-update-or-rebuild) 
+* If using build with *Mac* method: use this link: [update instructions](../build/updating.md)
 
 In general, there are updates to Loop released a few times a year - these can occur more frequently after a major release.
 
@@ -176,10 +176,13 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the Loop and Learn team kept it on life-support. It was updated to include DASH, but that is the last expected improvement. It is strongly recommended people switch to Loop 3.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the *Loop and Learn* team kept it on life-support. It was updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or `iAPS`. Do not use an application without an owner.
 
-Many features people used with FreeAPS are now included in Loop 3 or can be added with customization. The dev branch has Libre support, see [Build Loop Dev](../version/build-dev.md).
+Many features people used with FreeAPS are now included in `Loop 3` or can be added with customization. The `dev` branch has Libre support, see [Build Loop Dev](../version/build-dev.md).
 
-The addition of customizations has been simplified with the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code). That script can be run stand-alone, selected as an option as part of the Build Select Script when doing a build with *Mac* or incorporated in a [GitHub Browser build customization](../gh-actions/gh-customize.md) by editing the build_loop.yml file.
+The addition of customizations has been simplified.
 
-Please do not blindly apply customizations. You should first read [LoopDocs: Customize Your Loop](../version/code-custom-edits.md) and then [Loop and Learn: Code Customization](https://www.loopandlearn.org/custom-code/).
+* If you build with a browser, refer to [Customize with Browser](../gh-actions/custom-browser.md)
+* If you build with a *Mac*, refer to [Customize with *Mac*](../build/custom-mac.md)
+
+Please do not blindly apply customizations. First read the documentation provided at the links above carefully.

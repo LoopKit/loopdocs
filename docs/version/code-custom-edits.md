@@ -15,8 +15,8 @@ Read about the customizations on this page before applying them.
 
 Some customizations are the same for everyone and have been prepared for easy use. Refer to the build method that you use for information about applying these prepared changes - the same set is available for both build methods.
 
-* Browser builders: [Customize with Browser](../gh-actions/custom-browser.md)
-* build with *Mac*ers: [Customize with Mac](../build/custom-mac.md)
+* [Customize with Browser](../gh-actions/custom-browser.md)
+* [Customize with *Mac*](../build/custom-mac.md)
 
 Other customizations require that you create your own personalized version.
 
@@ -29,8 +29,8 @@ The instructions on this page identify the module, `Key_Phrase` or file and line
 
 The how-to instructions for making these changes are different for each build method. They are found in the respective build-method tabs:
 
-* Browser builders: [Custom Edits with Browser](../gh-actions/gh-customize.md)
-* build with *Mac*ers: [Custom Edits with *Mac*](../build/edit-mac.md)
+* [Custom Edits with Browser](../gh-actions/gh-customize.md)
+* [Custom Edits with *Mac*](../build/edit-mac.md)
 
 !!! info "Line numbers may change"
     Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.
