@@ -12,7 +12,7 @@ Open Loop is the best place to start with Loop.
 
     If you use an Omnipod pump, keep reading:
 
-    There may be some features, like extended bolus, that you used with an *Omnipod* Personal Device Manager (PDM) that are not an option as a menu item in the *Loop* app. When users transition from using a PDM, they may want this as an interim feature.
+    There may be a feature, like extended bolus, that you used with an *Omnipod* Personal Device Manager (PDM) that is not in the *Loop* app.
 
     Please refer to [Extended Bolus](#extended-bolus).
 
@@ -109,7 +109,6 @@ First the equations to calcuate the desired rate $(MTB)$ to enter into the <code
 $$ Balance = BolusTotal - PromptAmount $$
 
 $$ MTB = Balance / H + BR $$
-
 
 1. Turn on a [<code>Manual Temp Basal</code>](../../loop-3/omnipod.md#manual-temp-basal) to value of $MTB$ units/hour for $H$ hours
 2. Tap the bolus icon on the main toolbar and enter a bolus for $PromptAmount$ units
