@@ -2,8 +2,19 @@
 
 Open Loop is the best place to start with Loop.
 
-* Become familiar with Loop by watching it operate with Closed Loop disabled.
+* Become familiar with Loop by watching it operate with <code>Closed Loop</code> disabled.
 * Take it slow and safe to become a successful Looper.
+
+??? warning "Menus do not include all Manual Pump Features. (Click to learn more)"
+    The *Loop* app is built around the concept of <code>Closed Loop</code> performance.
+
+    If you use a Medtronic pump and want to use a feature not found in the *Loop* app, simply disable <code>Closed Loop</code> and control delivery with your Medtronic Controller.
+
+    If you use an Omnipod pump, keep reading:
+
+    There may be some features, like extended bolus, that you used with an *Omnipod* Personal Device Manager (PDM) that are not an option as a menu item in the *Loop* app. When users transition from using a PDM, they may want this as an interim feature.
+
+    Please refer to [Extended Bolus](#extended-bolus).
 
 !!! tip "Practice with Simulators"
     You can build Loop without connecting it to any hardware.
@@ -85,17 +96,42 @@ Familiarize yourself with the ["Bolus May Have Failed"](../features/bolus.md#bol
 
 Caregivers for Loopers should learn how to use Loop. Consider giving caregivers an individualized quick info sheet on Loop. School staff or your child need to know how to handle a site change at school. Try to watch Nightscout while you get to know Loop so that you can become better at remote troubleshooting problems you might encounter.
 
+## Extended Bolus
 
-## Loop 2 - Open Loop
+A menu item to set an extended bolus is not a feature provided by the *Loop* app at this time. You can make your own extended bolus using the <code>Manual Temp Basal</code> feature with Omnipod. Note that during the time the <code>Manual Temp Basal</code> command is running, the *Loop* app will make no automated changes to dosing even if the <code>Closed Loop</code> slider is selected as enabled.
 
-!!! warning "Loop 2 SAFETY WARNING"
-    When you are operating in Open Loop mode, Loop 2.2.x offers recommendations for insulin delivery adjustment and displays them on the HUD.
+### Extended Bolus Equations
 
-    * If you tap on the recommendation line, Loop applies that recommendation without asking for confirmation
-    * This is true for temp basal and automatic bolus
-    * To protect against accidental command of increased or decreased insulin dosing, make sure your phone is locked when not in use
+Consider a desired total bolus $(BolusTotal)$ given over an extended time with a prompt amount $(PromptAmount)$ now and the balance $(Balance)$ delivered over the next $(H)$ hours with a current scheduled basal rate $(BR)$.
 
-For safety reasons, these recommendations are no longer supplied with Loop 3. 
+First the equations to calcuate the desired rate $(MTB)$ to enter into the <code>Manual Temp Basal</code> menu and then an example.
 
-* Tap on the bolus icon to see the recommendation if you think insulin is needed
-* Use a Manual Temp Basal to reduce delivery if you see a low prediction
+$$ Balance = BolusTotal - PromptAmount $$
+
+$$ MTB = Balance / H + BR $$
+
+
+1. Turn on a [<code>Manual Temp Basal</code>](../../loop-3/omnipod.md#manual-temp-basal) to value of $MTB$ units/hour for $H$ hours
+2. Tap the bolus icon on the main toolbar and enter a bolus for $PromptAmount$ units
+
+The order is important. Sending the <code>Manual Temp Basal</code> request to the pod is a single command and then the *Loop* app is available for the next command to be entered. The *Loop* app (and pod) will not respond to any pod commands until the bolus finishes delivering; this takes about 40 seconds per unit requested.
+
+### Specific Example
+
+For this example:
+
+* $BolusTotal$ is 3 U
+* $PromptAmount$ is 1 U
+* Time in hours, $H$, is 1.5
+* Scheduled basal rate, $BR$, is 0.5 U/hr
+
+$$ Balance = 3 U - 1 U = 2 U $$
+
+$$ MTB = (2 / 1.5) U/hr + 0.5 U/hr = 1.55 U/hr $$
+
+You have your choice of rounding $MTB$ up or down to the nearest $0.05 U/hr$. For this example, the quantity of $(2/1.5)=1.333$ was rounded up to $1.35 U/hr$.
+
+??? question "Why isn't there a menu item? (Click to see more)"
+    Each item provided by the *Loop* app needs a volunteer to decide it is important and develop a method to provide that item. If a volunteer steps up to do this work, there is a long process of discussion and code review before such a modification is considered for the development branch.
+
+    Most Loopers go to <code>Closed Loop</code> quickly and this feature is not an option at this time.
