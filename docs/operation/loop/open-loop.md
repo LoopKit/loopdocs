@@ -142,7 +142,7 @@ A menu item to set an extended bolus is not a feature provided by the *Loop* app
 
 Consider a desired total bolus $(BolusTotal)$ given over an extended time with a prompt amount $(PromptAmount)$ now and the balance $(Balance)$ delivered over the next $(H)$ hours with a current scheduled basal rate $(BR)$.
 
-First the equations to calcuate the desired rate $(MTB)$ to enter into the <code>Manual Temp Basal</code> menu and then an example.
+First the equations to calculate the desired rate $(MTB)$ to enter into the <code>Manual Temp Basal</code> menu and then an example.
 
 $$ Balance = BolusTotal - PromptAmount $$
 
