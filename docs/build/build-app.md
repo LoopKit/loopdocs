@@ -74,7 +74,7 @@ If you are in the middle of building on a new phone, return to [Initial Xcode Sc
 !!! warning "Build, Enable, Build"
     Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available. So plan to build with Watch paired, and then enable <code>Developer Mode</code> and build again.
 
-This must be configured on the watch itself (not the watch app on the iPhone). To determine if <code>Developer Mode</code> is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy & Security icon. Then scroll to the bottom and tap on <code>Developer Mode</code>.
+This must be configured on the watch itself (not the watch app on the iPhone). To determine if <code>Developer Mode</code> is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy & Security icon. Then scroll to the bottom and tap on <code>Developer Mode</code>. If you don't see the <code>Developer Mode</code> row under Privacy & Security, see the [Extra Watch Instructions](#extra-watch-instructions).
 
 * If <code>Developer Mode</code> is enabled, the slider will be green and no further action is required
 * If <code>Developer Mode</code> is not enabled, the slider will be blank
@@ -83,13 +83,15 @@ This must be configured on the watch itself (not the watch app on the iPhone). T
     * After the reboot, you are asked if you want to turn on Developer mode
     * Tap on the `Turn On` option
 
-With the latest watchOS, there are now options that show up after you enable <code>Developer Mode</code>. Go on and configure those now. Select the Settings icon on the watch, but instead of tapping on Privacy & Security, scoll all the way to the bottom and there is now a Developer row at the very bottom of the watch Settings. If you don't see this row, reboot the watch again.
+With the latest watchOS, there are now options that show up after you enable <code>Developer Mode</code>. Go on and configure those now. Select the Settings icon on the watch, but instead of tapping on Privacy & Security, scroll all the way to the bottom and there is now a Developer row at the very bottom of the watch Settings. If you don't see this row, reboot the watch again.
 
 * Tap on Developer
 * Scroll down to WidgetKit Developer Mode and enable that
 * This might enable faster updates of complications on your watch
 
-There have been a lot of reports of trouble getting the *Loop* app to show up on a new Apple watch. Previously, just having the watch paired to the phone when you build once followed by enabling  <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
+### Extra Watch Instructions
+
+There have been a lot of reports of trouble getting <code>Developer Mode</code> to show up on a new Apple watch and then having further trouble getting the *Loop* app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed by enabling  <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
 
 These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.
 
