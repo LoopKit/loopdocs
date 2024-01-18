@@ -64,6 +64,8 @@ When Google Translate is selected:
 
 **<span translate="no">Delivery Limits</span>**&nbsp; (Delivery Limits): max bolus and max basal rates allowed by your therapy settings
 
+**<span translate="no">Developer Mode</span>**&nbsp; (Developer Mode): Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch
+
 **<span translate="no">DIA</span>**&nbsp; (DIA): Duration of Insulin Action, the full time insulin is active including a long, low-level tail
 
 **<span translate="no">DIY</span>**&nbsp; (DIY): Do it yourself, a common acronym for the open-source software community (and the maker community)
