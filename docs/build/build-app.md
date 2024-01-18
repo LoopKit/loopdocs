@@ -91,7 +91,7 @@ With the latest watchOS, there are now options that show up after you enable <co
 
 ### Extra Watch Instructions
 
-There have been a lot of reports of trouble getting <code>Developer Mode</code> to show up on a new Apple watch and then having further trouble getting the *Loop* app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed by enabling  <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
+There have been a lot of reports of trouble getting <code>Developer Mode</code> to show up on a new Apple watch and then having further trouble getting the *Loop* app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed by enabling <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
 
 These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.
 
