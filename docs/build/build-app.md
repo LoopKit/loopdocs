@@ -54,7 +54,7 @@ When Xcode is open and you plug in your phone, you will not be able to select th
 ![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
 {align="center"}
 
-#### <code>Developer Mode</code> on iPhone
+### <code>Developer Mode</code> on iPhone
 
 Once your phone has been plugged in to the computer while Xcode is opened and you accepted the Trust this Computer option, you will be able to enable <code>Developer Mode</code>.
 
@@ -69,7 +69,7 @@ Once your phone has been plugged in to the computer while Xcode is opened and yo
 
 If you are in the middle of building on a new phone, return to [Initial Xcode Screens](#initial-xcode-screens) to continue.
 
-#### <code>Developer Mode</code> on Watch
+### <code>Developer Mode</code> on Watch
 
 !!! warning "Build, Enable, Build"
     Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available. So plan to build with Watch paired, and then enable <code>Developer Mode</code> and build again.
