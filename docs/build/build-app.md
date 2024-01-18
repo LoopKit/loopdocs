@@ -83,6 +83,8 @@ This must be configured on the watch itself (not the watch app on the iPhone). T
     * After the reboot, you are asked if you want to turn on Developer mode
     * Tap on the `Turn On` option
 
+### Enable Watch WidgetKit <code>Developer Mode</code>
+
 With the latest watchOS, there are now options that show up after you enable <code>Developer Mode</code>. Go on and configure those now. Select the Settings icon on the watch, but instead of tapping on Privacy & Security, scroll all the way to the bottom and there is now a Developer row at the very bottom of the watch Settings. If you don't see this row, reboot the watch again.
 
 * Tap on Developer
