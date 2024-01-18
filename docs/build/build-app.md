@@ -26,53 +26,89 @@ If you do watch this video, please note that you no longer are required to delet
 
 If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you must [Disable Automatic Install from *TestFlight*](../gh-actions/gh-deploy.md#disable-automatic-install-from-testflight) or you will not be able to install on that phone with Xcode.
 
-## Developer Mode
+## <code>Developer Mode</code>
 
-If you are running iOS 15/watchOS 8, you do not have developer mode and can skip ahead to [Download Loop](#download-loop).
+If you are running iOS 15/watchOS 8, you do not have <code>Developer Mode</code> and can skip ahead to [Download Loop](#download-loop).
 
-If you are running iOS 16/watchOS 9 or newer, you must enable Developer Mode to run or build Loop directly from Xcode. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+### Upgrade from iOS 15 to newer version
 
-**Loop will not run until you enable Developer Mode for iOS 16 or newer.**
+**If you upgrade an iOS 15 phone to iOS 16 or 17, the *Loop* app will not open until you enable <code>Developer Mode</code> on that phone.**
+
+You will see a message similar to the next graphic.
+
+![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
+{align="center"}
+
+If you are running iOS 16 or 17 with watchOS 9 or newer, you must enable <code>Developer Mode</code> to run or build Loop directly from Xcode. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about <code>Developer Mode</code>](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 ### Prepare your Phone and Watch
 
-* If you are running Loop and update to iOS 16 or newer and watchOS 9 or newer; Loop will no longer run until you enable Developer Mode and you will see a message similar to the next graphic
+**If you have never built an app with Xcode on a particular phone, <code>Developer Mode</code> will not show up in the iOS Settings, Privacy & Security menu until you connect that phone to Xcode.**
 
-* If you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available.
+* If you are building to a new Apple Watch - you must first pair that watch to the phone, build the app to the phone and then enable <code>Developer Mode</code> on the watch and then **build** to the phone **again** while watch is paired and on your wrist.
 
-    ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
-    {align="center"}
+To keep all the steps in one place, the instructions for configuring phone and watch are kept in this one section. If you have never built with Xcode to this phone, skip ahead to [Download Loop](#download-loop) for now and return at the appropriate part of the script instructions below. A clear message with a link will bring you back here.
 
-* If your device uses iOS 16 or newer (and watchOS 9 or newer); you must enable Developer Mode to build an app on that device using Xcode or it will show up as an "Unavailable Device" under Xcode
+When Xcode is open and you plug in your phone, you will not be able to select the phone until you have enabled <code>Developer Mode</code>. The phone will show up, but be an "Unavailable Device" as shown in the graphic below.
 
-    ![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
-    {align="center"}
+![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
+{align="center"}
 
+#### <code>Developer Mode</code> on iPhone
 
-#### Developer Mode on iPhone
+Once your phone has been plugged in to the computer while Xcode is opened and you accepted the Trust this Computer option, you will be able to enable <code>Developer Mode</code>.
 
-To determine if Developer Mode is enabled for an iPhone running iOS 16 or later, go into your phone settings, choose Privacy & Security, scroll to the bottom of the screen and tap on the Developer Mode row and examine the Developer Mode slider.
+1. Open your phone settings, choose Privacy & Security
+2. Scroll to the bottom of the screen and examine the <code>Developer Mode</code> row
+    * If it says On - no further action is required
+    * If it says Off, then tap on the row
+3. Slide the slider to be green
+4. Choose Restart
+5. After reboot, choose to Turn on <code>Developer Mode</code>
+6. You are now ready to begin building from Xcode onto this phone
 
-* If Developer Mode is enabled, the slider will be green and no further action is required
-* If Developer Mode is not enabled, the slider will be blank
-    * Move the slider so it is green
-    * Reboot the device when asked
-    * After the reboot, you will be asked if you want to turn on Developer mode
-    * Tap on the `Turn On` option
+If you are in the middle of building on a new phone, return to [Initial Xcode Screens](#initial-xcode-screens) to continue.
 
-#### Developer Mode on Watch
+#### <code>Developer Mode</code> on Watch
 
 !!! warning "Build, Enable, Build"
-    Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available. So plan to build with Watch paired, and then enable Developer Mode and build again.
+    Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available. So plan to build with Watch paired, and then enable <code>Developer Mode</code> and build again.
 
-This must be configured on the watch itself (not the watch app on the iPhone). To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy & Security icon. Then scroll to the bottom and tap on Developer Mode.
+This must be configured on the watch itself (not the watch app on the iPhone). To determine if <code>Developer Mode</code> is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy & Security icon. Then scroll to the bottom and tap on <code>Developer Mode</code>. If you don't see the <code>Developer Mode</code> row under Privacy & Security, see the [Extra Watch Instructions](#extra-watch-instructions).
 
-* If Developer Mode is enabled, the slider will be green and no further action is required
-* If Developer Mode is not enabled, the slider will be blank
+* If <code>Developer Mode</code> is enabled, the slider will be green and no further action is required
+* If <code>Developer Mode</code> is not enabled, the slider will be blank
     * Move the slider so it is green
     * Reboot the device when asked
-    * After the reboot, if you are asked if you want to turn on Developer mode
+    * After the reboot, you are asked if you want to turn on Developer mode
     * Tap on the `Turn On` option
+
+### Enable Watch WidgetKit <code>Developer Mode</code>
+
+With the latest watchOS, there are now options that show up after you enable <code>Developer Mode</code>. Go on and configure those now. Select the Settings icon on the watch, but instead of tapping on Privacy & Security, scroll all the way to the bottom and there is now a Developer row at the very bottom of the watch Settings. If you don't see this row, reboot the watch again.
+
+* Tap on Developer
+* Scroll down to WidgetKit Developer Mode and enable that
+* This might enable faster updates of complications on your watch
+
+### Extra Watch Instructions
+
+There have been a lot of reports of trouble getting <code>Developer Mode</code> to show up on a new Apple watch and then having further trouble getting the *Loop* app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed by enabling <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
+
+These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.
+
+1. Restart watch, phone and computer
+2. Go to Privacy & Security on watch and enable developer mode (didn’t see prior to restart)
+3. plugged phone and watch in to computer and opened Xcode
+4. select Window (top menu) and choose Devices & Simulators
+    * The watch should appear as a Disconnected device
+    * Click on the watch and if it connects - you are done
+5. Otherwise manually add the UDID to your Developer Account
+6. Copy UDID (right-click or control-click and choose Copy Identifier)
+7. Go to the [Apple developer website, devices page](https://developer.apple.com/account/resources/devices/list) and manually add the watch (using the UDID)
+8. With phone plugged into computer and watch on wrist, follow these steps on the build errors page: [Apple Watch Loop App not running on Watch](build-errors.md#apple-watch-loop-app-not-running-on-watch) to build the watch app directly.
+
+At this point, be sure to reboot the watch.
 
 ## Download Loop
 
@@ -266,6 +302,8 @@ Refer to the graphic below. The messages in the terminal instruct you to:
 The next action of the script is to 
 
 * Open Xcode
+
+If this is a new phone that has never had an app built from Xcode, return to [Prepare your Phone and Watch](#prepare-your-phone-and-watch). After you get developer mode turned on for the phone continue with the build instructions. If you also want to set up the watch, you'll need to build one time, follow directions in [Developer Mode on Watch](#developer-mode-on-watch) and then build again.
 
 It is suggested that you wait until you've successfully built the app before closing the terminal.
 

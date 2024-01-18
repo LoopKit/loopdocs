@@ -25,6 +25,7 @@
 *[Correction Range]: Loop recommends changes to basal and / or bolus to bring glucose predictions into this range
 *[CR]: Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin
 *[Delivery Limits]: max bolus and max basal rates allowed by your therapy settings
+*[Developer Mode]: Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch
 *[DIA]: Duration of Insulin Action, the full time insulin is active including a long, low-level tail
 *[DIY]: Do it yourself, a common acronym for the open-source software community (and the maker community)
 *[Dosing Strategy]: chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
