@@ -34,7 +34,7 @@ If you are running iOS 15/watchOS 8, you do not have <code>Developer Mode</code>
 
 **If you upgrade an iOS 15 phone to iOS 16 or 17, the *Loop* app will not open until you enable <code>Developer Mode</code> on that phone.**
 
-You will see a message similar to the next graphic
+You will see a message similar to the next graphic.
 
 ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
 {align="center"}
@@ -83,11 +83,15 @@ This must be configured on the watch itself (not the watch app on the iPhone). T
     * After the reboot, you are asked if you want to turn on Developer mode
     * Tap on the `Turn On` option
 
-With the latest watchOS, there are now options that show up after your turn on <code>Developer Mode</code>. Go on and configure those now. Repeat the steps above, but instead of tapping on Privacy & Security, scoll all the way to the bottom and there is now a 
+With the latest watchOS, there are now options that show up after you enable <code>Developer Mode</code>. Go on and configure those now. Select the Settings icon on the watch, but instead of tapping on Privacy & Security, scoll all the way to the bottom and there is now a Developer row at the very bottom of the watch Settings. If you don't see this row, reboot the watch again.
 
-There have been a lot of reports of trouble getting the *Loop* app to show up on a new Apple watch. Previously, just having the watch paired to the phone when you build followed by turning on the Develop Mode on the watch and building again used to be enough. If you have problems, here are extra steps to try.
+* Tap on Developer
+* Scroll down to WidgetKit Developer Mode and enable that
+* This might enable faster updates of complications on your watch
 
-These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary, but extra reboots cost nothing but time.
+There have been a lot of reports of trouble getting the *Loop* app to show up on a new Apple watch. Previously, just having the watch paired to the phone when you build once followed by enabling  <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
+
+These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.
 
 1. Restart watch, phone and computer
 2. Go to Privacy & Security on watch and enable developer mode (didn’t see prior to restart)
@@ -97,13 +101,10 @@ These steps have been reported on Facebook and have not been tested in a control
     * Click on the watch and if it connects - you are done
 5. Otherwise manually add the UDID to your Developer Account
 6. Copy UDID (right-click or control-click and choose Copy Identifier)
-7. Go to the Apple developer website and manually added the device
-8. (Not sure if this is necessary - delete profiles again)
-9. (Not sure why building to the phone with paired watch on wrist by phone is not enough, but next step was reported by the user)
-10. with phone plugged into computer and watch on wrist, follow these steps on the build errors page: [Apple Watch Loop App not running on Watch](build-errors.md#apple-watch-loop-app-not-running-on-watch)
+7. Go to the [Apple developer website, devices page](https://developer.apple.com/account/resources/devices/list) and manually add the watch (using the UDID)
+8. With phone plugged into computer and watch on wrist, follow these steps on the build errors page: [Apple Watch Loop App not running on Watch](build-errors.md#apple-watch-loop-app-not-running-on-watch) to build the watch app directly.
 
 At this point, be sure to reboot the watch.
-
 
 ## Download Loop
 
