@@ -1208,8 +1208,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#upgrade-from-ios-15-to-newer-version" class="md-nav__link">
+    Upgrade from iOS 15 to newer version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prepare-your-phone-and-watch" class="md-nav__link">
     Prepare your Phone and Watch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-watch-widgetkit-developer-mode" class="md-nav__link">
+    Enable Watch WidgetKit Developer Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-watch-instructions" class="md-nav__link">
+    Extra Watch Instructions
   </a>
   
 </li>
@@ -3523,8 +3544,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#upgrade-from-ios-15-to-newer-version" class="md-nav__link">
+    Upgrade from iOS 15 to newer version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prepare-your-phone-and-watch" class="md-nav__link">
     Prepare your Phone and Watch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-watch-widgetkit-developer-mode" class="md-nav__link">
+    Enable Watch WidgetKit Developer Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-watch-instructions" class="md-nav__link">
+    Extra Watch Instructions
   </a>
   
 </li>
@@ -3786,52 +3828,77 @@
 <p>If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.</p>
 <h2 id="build-with-browser">Build with Browser<a class="headerlink" href="#build-with-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you previously used <a href="../../gh-actions/gh-overview/">Build with Browser</a> to install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on this phone, you must <a href="../../gh-actions/gh-deploy/#disable-automatic-install-from-testflight">Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a> or you will not be able to install on that phone with <abbr title="program used to build an app">Xcode</abbr>.</p>
-<h2 id="developer-mode">Developer Mode<a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15/<abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8, you do not have developer mode and can skip ahead to <a href="#download-loop">Download <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>.</p>
-<p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16/<abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9 or newer, you must enable Developer Mode to run or build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> directly from <abbr title="program used to build an app">Xcode</abbr>. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr> directly on your device.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about Developer Mode</a>.</p>
-<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will not run until you enable Developer Mode for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or newer.</strong></p>
-<h3 id="prepare-your-phone-and-watch">Prepare your Phone and Watch<a class="headerlink" href="#prepare-your-phone-and-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<ul>
-<li>
-<p>If you are running <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and update to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or newer and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9 or newer; <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will no longer run until you enable Developer Mode and you will see a message similar to the next graphic</p>
-</li>
-<li>
-<p>If you are building to a new Apple Watch - you must first build the app with <abbr title="program used to build an app">Xcode</abbr> before the developer mode will be available.</p>
+<h2 id="developer-mode"><code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code><a class="headerlink" href="#developer-mode" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15/<abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 8, you do not have <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> and can skip ahead to <a href="#download-loop">Download <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>.</p>
+<h3 id="upgrade-from-ios-15-to-newer-version">Upgrade from <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15 to newer version<a class="headerlink" href="#upgrade-from-ios-15-to-newer-version" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>If you upgrade an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15 phone to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or 17, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app will not open until you enable <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> on that phone.</strong></p>
+<p>You will see a message similar to the next graphic.</p>
 <p align="center"><img alt="phone message if trying to run xcode app without developer mode enabled" src="../img/phone-developer-mode-required.jpeg" width="300" /></p>
-</li>
-<li>
-<p>If your device uses <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or newer (and <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9 or newer); you must enable Developer Mode to build an app on that device using <abbr title="program used to build an app">Xcode</abbr> or it will show up as an "Unavailable Device" under <abbr title="program used to build an app">Xcode</abbr></p>
-<p align="center"><img alt="xcode message for device without developer mode enabled" src="../img/xcode-developer-mode-not-enabled.svg" width="450" /></p>
-</li>
-</ul>
-<h4 id="developer-mode-on-iphone">Developer Mode on iPhone<a class="headerlink" href="#developer-mode-on-iphone" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>To determine if Developer Mode is enabled for an iPhone running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or later, go into your phone settings, choose Privacy &amp; Security, scroll to the bottom of the screen and tap on the Developer Mode row and examine the Developer Mode slider.</p>
+<p>If you are running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or 17 with <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr> 9 or newer, you must enable <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> to run or build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> directly from <abbr title="program used to build an app">Xcode</abbr>. (This is true for any app created by <abbr title="program used to build an app">Xcode</abbr> directly on your device.) If you want to know more, click on this <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">Apple Link about <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code></a>.</p>
+<h3 id="prepare-your-phone-and-watch">Prepare your Phone and Watch<a class="headerlink" href="#prepare-your-phone-and-watch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>If you have never built an app with <abbr title="program used to build an app">Xcode</abbr> on a particular phone, <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> will not show up in the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Settings, Privacy &amp; Security menu until you connect that phone to <abbr title="program used to build an app">Xcode</abbr>.</strong></p>
 <ul>
-<li>If Developer Mode is enabled, the slider will be green and no further action is required</li>
-<li>If Developer Mode is not enabled, the slider will be blank<ul>
-<li>Move the slider so it is green</li>
-<li>Reboot the device when asked</li>
-<li>After the reboot, you will be asked if you want to turn on Developer mode</li>
-<li>Tap on the <code>Turn On</code> option</li>
+<li>If you are building to a new Apple Watch - you must first pair that watch to the phone, build the app to the phone and then enable <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> on the watch and then <strong>build</strong> to the phone <strong>again</strong> while watch is paired and on your wrist.</li>
+</ul>
+<p>To keep all the steps in one place, the instructions for configuring phone and watch are kept in this one section. If you have never built with <abbr title="program used to build an app">Xcode</abbr> to this phone, skip ahead to <a href="#download-loop">Download <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> for now and return at the appropriate part of the script instructions below. A clear message with a link will bring you back here.</p>
+<p>When <abbr title="program used to build an app">Xcode</abbr> is open and you plug in your phone, you will not be able to select the phone until you have enabled <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code>. The phone will show up, but be an "Unavailable Device" as shown in the graphic below.</p>
+<p align="center"><img alt="xcode message for device without developer mode enabled" src="../img/xcode-developer-mode-not-enabled.svg" width="450" /></p>
+<h4 id="developer-mode-on-iphone"><code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> on iPhone<a class="headerlink" href="#developer-mode-on-iphone" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Once your phone has been plugged in to the computer while <abbr title="program used to build an app">Xcode</abbr> is opened and you accepted the Trust this Computer option, you will be able to enable <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code>.</p>
+<ol>
+<li>Open your phone settings, choose Privacy &amp; Security</li>
+<li>Scroll to the bottom of the screen and examine the <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> row<ul>
+<li>If it says On - no further action is required</li>
+<li>If it says Off, then tap on the row</li>
 </ul>
 </li>
-</ul>
-<h4 id="developer-mode-on-watch">Developer Mode on Watch<a class="headerlink" href="#developer-mode-on-watch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<li>Slide the slider to be green</li>
+<li>Choose Restart</li>
+<li>After reboot, choose to Turn on <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code></li>
+<li>You are now ready to begin building from <abbr title="program used to build an app">Xcode</abbr> onto this phone</li>
+</ol>
+<p>If you are in the middle of building on a new phone, return to <a href="#initial-xcode-screens">Initial <abbr title="program used to build an app">Xcode</abbr> Screens</a> to continue.</p>
+<h4 id="developer-mode-on-watch"><code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> on Watch<a class="headerlink" href="#developer-mode-on-watch" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Build, Enable, Build</p>
-<p>Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with <abbr title="program used to build an app">Xcode</abbr> before the developer mode will be available. So plan to build with Watch paired, and then enable Developer Mode and build again.</p>
+<p>Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with <abbr title="program used to build an app">Xcode</abbr> before the developer mode will be available. So plan to build with Watch paired, and then enable <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> and build again.</p>
 </div>
-<p>This must be configured on the watch itself (not the watch app on the iPhone). To determine if Developer Mode is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy &amp; Security icon. Then scroll to the bottom and tap on Developer Mode.</p>
+<p>This must be configured on the watch itself (not the watch app on the iPhone). To determine if <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> is enabled, look at the watch face icons and find the Settings icon. Tap on it and scroll to and tap the Privacy &amp; Security icon. Then scroll to the bottom and tap on <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code>. If you don't see the <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> row under Privacy &amp; Security, see the <a href="#extra-watch-instructions">Extra Watch Instructions</a>.</p>
 <ul>
-<li>If Developer Mode is enabled, the slider will be green and no further action is required</li>
-<li>If Developer Mode is not enabled, the slider will be blank<ul>
+<li>If <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> is enabled, the slider will be green and no further action is required</li>
+<li>If <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> is not enabled, the slider will be blank<ul>
 <li>Move the slider so it is green</li>
 <li>Reboot the device when asked</li>
-<li>After the reboot, if you are asked if you want to turn on Developer mode</li>
+<li>After the reboot, you are asked if you want to turn on Developer mode</li>
 <li>Tap on the <code>Turn On</code> option</li>
 </ul>
 </li>
 </ul>
+<h3 id="enable-watch-widgetkit-developer-mode">Enable Watch WidgetKit <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code><a class="headerlink" href="#enable-watch-widgetkit-developer-mode" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>With the latest <abbr title="Apple watch operating system; must be compatible with phone iOS">watchOS</abbr>, there are now options that show up after you enable <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code>. Go on and configure those now. Select the Settings icon on the watch, but instead of tapping on Privacy &amp; Security, scroll all the way to the bottom and there is now a Developer row at the very bottom of the watch Settings. If you don't see this row, reboot the watch again.</p>
+<ul>
+<li>Tap on Developer</li>
+<li>Scroll down to WidgetKit <abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr> and enable that</li>
+<li>This might enable faster updates of complications on your watch</li>
+</ul>
+<h3 id="extra-watch-instructions">Extra Watch Instructions<a class="headerlink" href="#extra-watch-instructions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There have been a lot of reports of trouble getting <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> to show up on a new Apple watch and then having further trouble getting the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed by enabling <code><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></code> on the watch and building again was enough. If you have problems, here are extra steps to try.</p>
+<p>These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.</p>
+<ol>
+<li>Restart watch, phone and computer</li>
+<li>Go to Privacy &amp; Security on watch and enable developer mode (didn’t see prior to restart)</li>
+<li>plugged phone and watch in to computer and opened <abbr title="program used to build an app">Xcode</abbr></li>
+<li>select Window (top menu) and choose Devices &amp; Simulators<ul>
+<li>The watch should appear as a Disconnected device</li>
+<li>Click on the watch and if it connects - you are done</li>
+</ul>
+</li>
+<li>Otherwise manually add the UDID to your Developer Account</li>
+<li>Copy UDID (right-click or control-click and choose Copy Identifier)</li>
+<li>Go to the <a href="https://developer.apple.com/account/resources/devices/list">Apple developer website, devices page</a> and manually add the watch (using the UDID)</li>
+<li>With phone plugged into computer and watch on wrist, follow these steps on the build errors page: <a href="../build-errors/#apple-watch-loop-app-not-running-on-watch">Apple Watch <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App not running on Watch</a> to build the watch app directly.</li>
+</ol>
+<p>At this point, be sure to reboot the watch.</p>
 <h2 id="download-loop">Download <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#download-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This page has the detailed steps to run the <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> to download the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code, prepare your computer and build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p>Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.</p>
@@ -3990,6 +4057,7 @@
 <ul>
 <li>Open <abbr title="program used to build an app">Xcode</abbr></li>
 </ul>
+<p>If this is a new phone that has never had an app built from <abbr title="program used to build an app">Xcode</abbr>, return to <a href="#prepare-your-phone-and-watch">Prepare your Phone and Watch</a>. After you get developer mode turned on for the phone continue with the build instructions. If you also want to set up the watch, you'll need to build one time, follow directions in <a href="#developer-mode-on-watch"><abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr> on Watch</a> and then build again.</p>
 <p>It is suggested that you wait until you've successfully built the app before closing the terminal.</p>
 <h3 id="initial-xcode-screens">Initial <abbr title="program used to build an app">Xcode</abbr> Screens<a class="headerlink" href="#initial-xcode-screens" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below. Your intial <abbr title="program used to build an app">Xcode</abbr> screen should be similar.</p>
