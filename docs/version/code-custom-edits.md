@@ -45,7 +45,7 @@ This page is broken into two halves:
     * The first half of this page is for customizations that require you to edit your own code.
 
 * [Custom Edits Optional](#custom-edits-optional):
-    * The second half of this page provides instructions for some of the prepared customizations included in the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code). Some people prefer to make all their own edits.
+    * The second half of this page provides instructions for some of the prepared customizations included in the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" }. Some people prefer to make all their own edits.
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for the line number. 
 
@@ -389,7 +389,7 @@ Each exponential model has 3 parameters that can be adjusted:
 * peakActivity: Peak of insulin activity (minutes)
 * delay: Delay before insulin begins to acts after delivery starts (minutes)
 
-Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this [Comment](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473).
+Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this [Comment](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473){: target="_blank" }.
 
 If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for Loop novices.
 
@@ -423,7 +423,7 @@ This Loop 3 table of default values is provided for convenience. The times are a
 !!! warning "*Mac* Instructions"
     This can be done with Build with Browser but the instructions might need to be adjusted for that case.
 
-If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
+If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/){: target="_blank" } or [appicon.co](https://appicon.co/){: target="_blank" } and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
 
 1. Navigate to the LoopWorkspace folder
 1. Open the OverrideAssetsLoop.xcassets folder
@@ -518,7 +518,7 @@ _Code Before Modification_
 
 #### `"low_carb_limit"`
 
-This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"low_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list).
+This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"low_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list){: target="_blank" }.
 
 _Code After Modification to enable the warning at lower levels and limit maximum_
 
@@ -528,7 +528,7 @@ _Code After Modification to enable the warning at lower levels and limit maximum
 
 #### `"high_carb_limit"`
 
-This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"high_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list).
+This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal. It is provided as one of the prepared customizations supplied by the [*Loop and Learn* Customization as `"high_carb_limit`"](https://www.loopandlearn.org/custom-code/#custom-list){: target="_blank" }.
 
 _Code After Modification to warn if entry is between 201 and 300g_
 

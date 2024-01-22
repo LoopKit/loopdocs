@@ -56,7 +56,7 @@ When you finish entering these values, press the blue `Continue` button on the b
     If you overfill the pods, you may get a pod fault right after priming.
 
 !!! info "Pod Filling and Insertion"
-    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.  You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
+    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y){: target="_blank" } and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI){: target="_blank" }, may be useful.  You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
 
 1. Fill the Pod with insulin until it beeps (minimum fill is 80 units)
 1. Place the Pod about 6 inches from the RileyLink compatible device with the phone within a few feet
@@ -76,7 +76,7 @@ When you finish entering these values, press the blue `Continue` button on the b
 3. If the cannula is safely tucked away, apply the Pod to your desired infusion site. If cannula is sticking out, press `cancel` in the upper right corner of the screen and try a new Pod. (Report this issue to Insulet; it is a Pod problem.)
 4. Press the `Insert Cannula` button.
 5. Listen to the clicks filling the cannula, wait for insertion and the progress bar to complete. The number of clicks to insertion is not consistent. The cannula will deploy before the progress bar is completed.
-6. Confirm cannula has deployed: you should feel it and there is a pink slide that can be seen on the outside of the pod as shown in this video: [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI).
+6. Confirm cannula has deployed: you should feel it and there is a pink slide that can be seen on the outside of the pod as shown in this video: [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI){: target="_blank" }.
 7. Proceed to the Expiration Reminder screen to accept or modify the default reminder.
 
 ![img/pod-setup-02-insert.png](img/pod-setup-02-insert.png){width="650"}

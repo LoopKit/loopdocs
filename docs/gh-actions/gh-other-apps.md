@@ -40,7 +40,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 
 ### Multiple Copies of `Loop Follow`
 
-For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script)).
+For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script){: target="_blank" }).
 
 * Build up to three instances of `Loop Follow`
 * Customize the name of the app that appears on your phone
@@ -73,15 +73,15 @@ For the convenience of caregivers who use `Loop Follow` to monitor multiple peop
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
-| <span translate="no">Loop Follow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [<span translate="no">Loop Follow</span>](https://www.loopandlearn.org/loop-follow)|
+| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver){: target="_blank" } | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
+| <span translate="no">Loop Follow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow){: target="_blank" } | [<span translate="no">Loop Follow</span>](https://www.loopandlearn.org/loop-follow){: target="_blank" }|
 
 The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that `LoopCaregiver` can follow multiple Loopers; you select the person inside the app.
 
 | Special Case | Fork from this Address |
 |---|---|
-| <span translate="no">Loop Follow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second) |
-| <span translate="no">Loop Follow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third) |
+| <span translate="no">Loop Follow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second){: target="_blank" } |
+| <span translate="no">Loop Follow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third){: target="_blank" } |
 
 ## Update the `Repository`
 
@@ -204,7 +204,7 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 ## Review App Identifier
 
-Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the apple developer site.
 
 After successfully performing the `Add Identifiers Action`, you will see the identifier for your app with a Name and Bundle ID matching that in the table below. You will see your unique TEAMID embedded in the identifier. (If you previously built this App with Xcode, the name may start with XC but the ending should match.)
 
@@ -225,14 +225,14 @@ As of 2023 December 8, the *Loop Caregiver* app requires the addition of an `App
 
 ### Check if `App Group` Exists
 
-Open this link to view your `applicationGroup` `Identifiers`: [`App Group Identifiers`](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
+Open this link to view your `applicationGroup` `Identifiers`: [`App Group Identifiers`](https://developer.apple.com/account/resources/identifiers/list/applicationGroup){: target="_blank" }
 
 * No action is required if there is already an identifier with the `NAME` of `LoopCaregiver App Group` and the `IDENTIFIER` contains your `TEAMID` in this format: `group.com.TEAMID.loopkit.LoopCaregiverGroup`
 * In that case, you can skip ahead to [Add `App Group` to `Identifiers`](#add-app-group-to-identifiers)
 
 ### Create `App Group` for the *Loop Caregiver* App
 
-Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
+Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
 
 1. For **`Description`**, use `LoopCaregiver App Group`
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopCaregiverGroup`, substituting your team id for `TEAMID`.
@@ -242,7 +242,7 @@ Open this link: [Register an App Group](https://developer.apple.com/account/reso
 
 ### Add `App Group` to `Identifiers`
 
-Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
+Click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
 
 
 #### Table with Name and Identifier for `LoopCaregiver`
@@ -261,7 +261,7 @@ If you do not see them, please sync your `LoopCaregiver` repository and then run
 
 ### Add `LoopCaregiverGroup` to each Identifier
 
-Find and click on the row for the `LoopCaregiver` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.LoopCaregiver`. The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
+Find and click on the row for the `LoopCaregiver` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.LoopCaregiver`. The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -312,7 +312,7 @@ This requires you to provide some information. Examine the table below for the b
 
 > If you build from a second or third `repository` for `Loop Follow`, the Bundle ID will have `.Second` or `.Third` at the end.
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. 
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed. 
 
 1. If this App already exists, you can continue to [Create Certificates](#create-certificates)
 1. Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below
@@ -399,7 +399,7 @@ Refer to the graphic below for the first four steps:
         * Create Certificates
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
-1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
+1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
 
 ## Add Users to *TestFlight* for App
 
@@ -424,7 +424,7 @@ Prerequisite: You need a personal *GitHub* account.
 In the instructions below, use your *GitHub* username instead of `my-name`.
 
 1. Follow the directions below to create a new *GitHub* organization account with a username of `my-name-org` (of course naming is up to you)
-    * There is documentation at this link, [New *GitHub* Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch), or you can follow the bullets below
+    * There is documentation at this link, [New *GitHub* Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch){: target="_blank" }, or you can follow the bullets below
     * Log into `my-name` and click on your icon (at upper right) and choose Settings
     * On the left side-bar, click on Organizations
     * In the new view, click on New Organization and choose Free for the plan by clicking on  `Create a free organization`.
@@ -511,7 +511,7 @@ You can delete the DIY repositories from your personal account
     * Select `Your Repositories`
     * Notice the github address now says `my-name` instead of `my-name-org`
     * Select the repository you wish to delete and follow these instructions
-    * [GitHub Docs: Delete a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+    * [GitHub Docs: Delete a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
 
 
 #### Option 2: Disable Build Action
@@ -525,5 +525,5 @@ You can disable the build actions from the repositories in your personal account
     * Select `Your Repositories`
     * Notice the github address now says `my-name` instead of `my-name-org`
     * Select the repository you wish to disable build actions for and follow these instructions
-    * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
+    * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow){: target="_blank" }
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient

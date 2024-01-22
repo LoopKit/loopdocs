@@ -115,7 +115,7 @@ Suppose you really don't like the name you picked initially for the&nbsp;_<span 
 
 You can change it.
 
-Open this link: [App Store Connect Apps](https://appstoreconnect.apple.com/apps) and log in as needed.
+Open this link: [App Store Connect Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } and log in as needed.
 
 * Click on your app name.
 * Click on App Information on the left side (make browser wider if you don't see this).

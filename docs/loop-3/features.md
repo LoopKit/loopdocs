@@ -148,11 +148,11 @@ The two graphics below are examples of manual bolus screens.
 
 Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.
 
-The author of this feature wrote this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM) documentation. Please read carefully and use with the appropriate level of caution.
+The author of this feature wrote a documentation [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM){: target="_blank" } documentation. Please read carefully and use with the appropriate level of caution.
 
 !!! warning "WARNING"
 
-    You will be using this feature at  your own risk, like any other Loop code you build. It is very important you completely read and re-read the [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM) before getting started. 
+    You will be using this feature at  your own risk, like any other Loop code you build. It is very important you completely read and re-read the [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM){: target="_blank" } before getting started. 
     
     There are validation and troubleshooting steps for each section of the guide. 
     

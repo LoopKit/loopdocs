@@ -16,9 +16,9 @@ Near the bottom of your Loop settings screen is a section called "Services".
 
 ## Nightscout
 
-There is a whole section in LoopDocs about Nightscout. Please follow this link to the [Using Nightscout with Loop](../../nightscout/overview.md) section of LoopDocs. That also has the links you might need to the official [Nightscout Documentation](https://nightscout.github.io/) (different website).
+There is a whole section in LoopDocs about Nightscout. Please follow this link to the [Using Nightscout with Loop](../../nightscout/overview.md) section of LoopDocs. That also has the links you might need to the official [Nightscout Documentation](https://nightscout.github.io/){: target="_blank" } (different website).
 
-If you have an existing Nightscout site, it's still a good idea to review that section, but here's the quick summary of how to add your Site URL and API_SECRET to have your Loop data transmitted to your Nightscout site. If you can’t remember your API_SECRET, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
+If you have an existing Nightscout site, it's still a good idea to review that section, but here's a quick summary of how to add your Site URL and API_SECRET to have your Loop data transmitted to your Nightscout site. If you can’t remember your API_SECRET, it can be found under Settings, Reveal Config Vars for Heroku sites (or Application Settings, Connection Strings for Azure sites).
 
 The two most common errors in filling out this section are:
 
@@ -30,14 +30,14 @@ The two most common errors in filling out this section are:
 
 ## Loggly
 
-[Loggly](https://loggly.com) is a free logging service. If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens. Copy and paste your customer token into your Loop App settings for Loggly.
+[Loggly](https://loggly.com){: target="_blank" } is a free logging service. If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens. Copy and paste your customer token into your Loop App settings for Loggly.
 
 ![img/loggly.png](img/loggly.png){width="500"}
 {align="center"}
 
 ## Amplitude
 
-[Amplitude](https://amplitude.com) is a remote event monitoring service and can be used to quickly identify errors and events with Loop. Amplitude stores the events and allows you to view those events as points in time. To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues. If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.
+[Amplitude](https://amplitude.com){: target="_blank" } is a remote event monitoring service and can be used to quickly identify errors and events with Loop. Amplitude stores the events and allows you to view those events as points in time. To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues. If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have Loop integration setup.
 
 ![img/amplitude.png](img/amplitude.png){width="500"}
 {align="center"}

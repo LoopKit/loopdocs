@@ -128,7 +128,7 @@ At this point - you should hit `Cancel` (upper right of screen) and review the [
 
     If you are not ready to fill and attach a pod with insulin, try filling a pod with water and let it drip into a ziplock bag to test running Loop on the pod. (Be sure the pod is not near anything when you hit "Insert Cannula".)
 
-    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/).
+    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/){: target="_blank" }.
 
 ## Medtronic
 

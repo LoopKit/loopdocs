@@ -13,7 +13,7 @@
     If you do not have a Mac, you can build&nbsp;<span translate="no">Loop 3</span>&nbsp;with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../gh-actions/gh-overview.md).
 
     - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md)
-    - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com)
+    - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com){: target="_blank" }
     - You need a [compatible phone](phone.md) to install the app from *TestFlight*
     - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
 
@@ -99,7 +99,7 @@ Ventura is required for building the *Loop* app on a phone running iOS 16.4 or h
 * iMac Pro
 * Mac Studio
 * Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Ventura](https://support.apple.com/kb/HT213264)
+* get the full list from [Apple for Ventura](https://support.apple.com/kb/HT213264){: target="_blank" }
 
 ## Older Macs
 

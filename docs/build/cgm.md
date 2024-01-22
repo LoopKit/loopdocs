@@ -36,7 +36,7 @@ If the Dexcom app is on the same device as the *Loop* app, your system can funct
 
 !!! warning "Dexcom G5 Support"
 
-    [Dexcom has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence). In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which Dexcom does supply and support G5. The G5 capability will continue to be supported in Loop.
+    [Dexcom has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence){: target="_blank" }. In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which Dexcom does supply and support G5. The G5 capability will continue to be supported in Loop.
 
     There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of the *Loop* app supported by these documents only works with the Dexcom apps.
 
@@ -70,10 +70,10 @@ Version 3 or later of the *Loop* app can use Nightscout as a remote source for C
 
 Libre Support (for some Libre sensors) is available with Loop-dev or by adding customizations.
 
-* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop)
-* [`Loop and Learn: Loop Customization`](https://www.loopandlearn.org/custom-code/) 
+* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }
+* [`Loop and Learn: Loop Customization`](https://www.loopandlearn.org/custom-code/){: target="_blank" } 
 
-Currently, there are no solutions for *Eversense*, *Guardian* or *Libre 3* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
+Currently, there are no solutions for *Eversense*, *Guardian* or *Libre 3* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/){: target="_blank" } to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
 
 ## Next Step
 

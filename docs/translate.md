@@ -1,56 +1,56 @@
 ## Language List
 
-[عربي](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ar)
+[عربي](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ar){: target="_blank" }
 
-[Български](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=bg)
+[Български](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=bg){: target="_blank" }
 
-[Čeština](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=cs)
+[Čeština](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=cs){: target="_blank" }
 
-[Deutsch](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=de)
+[Deutsch](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=de){: target="_blank" }
 
-[Dansk](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=da)
+[Dansk](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=da){: target="_blank" }
 
-[Ελληνικά](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=el)
+[Ελληνικά](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=el){: target="_blank" }
 
-[Español](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=es)
+[Español](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=es){: target="_blank" }
 
-[日本](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ja)
+[日本](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ja){: target="_blank" }
 
-[Suomi](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=fi)
+[Suomi](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=fi){: target="_blank" }
 
-[Français](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=fr)
+[Français](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=fr){: target="_blank" }
 
-[עברית](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=iw)
+[עברית](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=iw){: target="_blank" }
 
-[Hrvatski](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=hr)
+[Hrvatski](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=hr){: target="_blank" }
 
-[हिंदी](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=hi)
+[हिंदी](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=hi){: target="_blank" }
 
-[Italiano](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=it)
+[Italiano](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=it){: target="_blank" }
 
-[한국어](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ko)
+[한국어](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ko){: target="_blank" }
 
-[Norsk](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=no)
+[Norsk](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=no){: target="_blank" }
 
-[Nederlands](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=nl)
+[Nederlands](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=nl){: target="_blank" }
 
-[Polski](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=pl)
+[Polski](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=pl){: target="_blank" }
 
-[Português](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=pt)
+[Português](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=pt){: target="_blank" }
 
-[Română](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ro)
+[Română](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ro){: target="_blank" }
 
-[Русский](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ru)
+[Русский](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ru){: target="_blank" }
 
-[Slovenčina](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=sk)
+[Slovenčina](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=sk){: target="_blank" }
 
-[Svenska](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=sv)
+[Svenska](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=sv){: target="_blank" }
 
-[Turkish](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=tr)
+[Turkish](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=tr){: target="_blank" }
 
-中文（[简体](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-CN))
+中文（[简体](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-CN){: target="_blank" })
 
-中文（[繁體](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-TW))
+中文（[繁體](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-TW){: target="_blank" })
 
 ## Google Translate Links
 
@@ -58,7 +58,7 @@ Click on a language on the list of links above to turn on Google's automatic tra
 
 ## Change Language
 
-To modify the language choice for the whole site, copy the line below and paste it into the URL and then choose the desired language from the list above
+To modify the language choice for the whole site, copy the line below, and paste it into the URL, and then choose the desired language from the list above.
 
 ``` { .bash .copy title="Copy and Paste in Browser URL to return to original version" }
 https://loopkit.github.io/loopdocs/translate
@@ -74,7 +74,7 @@ Use the Google Translation three-dot menu and select `Go to Original URL` while 
 
 * The Google Translate Tool will appear at the top of each page
     * LoopDocs how-to: [Google Translate Tool Instructions](#google-translate-tool-instructions)
-    * Google how-to: [Google Translate Help Link](https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop)
+    * Google how-to: [Google Translate Help Link](https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop){: target="_blank" }
 
 !!! danger "Automatic Translation"
     These links connect this site to the Google Translation service.
@@ -83,7 +83,7 @@ Use the Google Translation three-dot menu and select `Go to Original URL` while 
     * Please use the translation with care
     * Not available in all regions
     * Some links may not work as expected
-    * Any "code" not protected by blocks may not appear correctly - be sure to click on Original to make sure you a viewing code properly
+    * Any "code" not protected by blocks may not appear correctly - be sure to click on Original to make sure you are viewing code properly
 
 ## Google Translate Tool Instructions
 

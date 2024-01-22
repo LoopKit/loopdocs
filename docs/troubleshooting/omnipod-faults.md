@@ -12,7 +12,7 @@ Loop will put a higher battery load on a pod than the PDM due to its regular and
 
 ## Known internal pod fault codes
 
-The currently known pod faults are listed here on the openomni wiki page: [Pod Fault codes](https://github.com/openaps/openomni/wiki/Fault-event-codes)
+The currently known pod faults are listed here on the openomni wiki page: [Pod Fault codes](https://github.com/openaps/openomni/wiki/Fault-event-codes){: target="_blank" }
 
 ## Ways to reduce the possibility of a fault
 

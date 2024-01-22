@@ -23,14 +23,14 @@ Omnipod 5 is not supported by any version of Loop.
 
 ## What about Tidepool Loop?
 
-Tidepool Loop was approved by the FDA in Jan 2023, but at the current time there are no announced pump or CGM partners. What does this mean?
+Tidepool Loop was approved by the FDA in Jan 2023, but at the current time, there are no announced pump or CGM partners. What does this mean?
 
 Tidepool Loop, cleared by the FDA, is the first:
 
 * App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
-* App that originated as a patient-led intiative
+* App that originated as a patient-led initiative
 
-With this approval, there is now an FDA approved pathway for independent selection of an app, a pump and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
+With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop){: target="_blank" }.
 
 ## Do I still need a PDM with Omnipod Loop?
 
