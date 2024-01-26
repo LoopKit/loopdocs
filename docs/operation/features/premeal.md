@@ -30,7 +30,7 @@ Pre-Meal.
 
 ## Assessing the impact of pre-meal
 
-The intent of the pre-meal icon on the toolbar is to [provide an eating-soon mode in Loop](https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/).
+The intent of the pre-meal icon on the toolbar is to [provide an eating-soon mode in Loop](https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/){: target="_blank" }.
 Do not set pre-meal limits to
 any hypoglycemic ranges that may require treatment.
 
@@ -40,4 +40,4 @@ To mitigate the impact of unintentional pre-meal activation:
 * If you are running Loop 2.2.x, you can set the pre-meal range to the same value as your usual correction range
 
 !!! tip "Custom Pre-Meal Overrides"
-Some loopers set up a custom override to use instead of the pre-meal icon.  This allows enabling the override remotely with Nightscout, permits specifying a custom duration, and will keep the override enabled after carbs are announced.
+    Some loopers set up a custom override to use instead of the pre-meal icon.  This allows enabling the override remotely with Nightscout, permits specifying a custom duration, and will keep the override enabled after carbs are announced.

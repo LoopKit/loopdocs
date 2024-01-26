@@ -46,7 +46,7 @@ After building the *Loop* app:
 If you have never used the *Loop* app, click on links below for an introduction.
 
 !!! success "&nbsp;_<span translate="no">Loop</span>_&nbsp;Video"
-    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
+    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE){: target="_blank" } video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf){: target="_blank" } was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
     * Special thanks to Tina and Reese Hammer for the terrific video
     * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
 

@@ -120,7 +120,7 @@ Make sure your new computer has the macOS and Xcode required by your phone iOS. 
 
 ## Check your Developer Account
 
-Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
+Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/){: target="_blank" } to manually check if there is a new agreement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
 
 ![Screenshot: Account - Apple Developer](img/license.png)
 
@@ -136,7 +136,7 @@ This step is optional, but if your computer is low on space, it helps to clean u
 
 There is an easy way to do this. The Build Select Script used to download and build Loop provides Maintenance Utilities to help free up disk space.
     
-Please review [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) for more information.
+Please review [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/){: target="_blank" } for more information.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
@@ -195,7 +195,7 @@ More information is shown in the orange box below.
 
     1. You might get this if you logged in as a different user, have a new computer or if your computer had to undergo a factory reset
         * You can transfer your keychain to your new computer (or just revoke and keep going)
-        * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
+        * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b){: target="_blank" }
     1. Your version of Xcode is way out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
         * Update [Xcode](xcode-version.md) to the most recent version
@@ -211,11 +211,11 @@ More information is shown in the orange box below.
 
 ## Direct Download of Xcode
 
-Many people find updating Xcode from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".
+Many people find updating Xcode from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".
 
 The instructions do not hold your hand.
 
-* Your macOS must be at the minimum verion (or newer) to support the version of Xcode you're about the download
+* Your macOS must be at the minimum version (or newer) to support the version of Xcode you're about the download
 * You need to know how to log into your Apple Developer account and navigate those menus
 * You need to know how to use Finder to navigate to Downloads
 * You need to know how to drag the Xcode icon into your Applications folder (after download and expand completes)
@@ -226,10 +226,10 @@ The instructions do not hold your hand.
         - Install fresh
         - After you use the App Store for a download, then Updates will show in the future
 
-Here are the different steps you need to follow doing the Direct Download instead of the App Store method:
+Here are the different steps you need to follow when doing the Direct Download instead of the App Store method:
 
-1. [Login to your Apple developer account](https://developer.apple.com/account)
-    - Examine the menus (on my computer there are buttons on the left hand side)
+1. [Login to your Apple developer account](https://developer.apple.com/account){: target="_blank" }
+    - Examine the menus (on my computer there are buttons on the left-hand side)
     - Click on Downloads (under Additional Resources)
     - Look at menu items (on my computer there are buttons at the top) that say Beta, Release, Profiles and Logs, and More
     - Click on More

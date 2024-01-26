@@ -13,9 +13,9 @@ For caregivers, *Nightscout* enables remote monitoring and even the ability to i
         * Overrides can be enabled and disabled
         * Carbs can be entered
         * Boluses can be commanded
-        * *Loop Caregiver* app (under development, iOS only) enables the following from the caregiver phone
+        * *Loop Caregiver* app (under development, iOS only) enables the following from the caregiver's phone
             * monitor *Loop*
-            * issue remote commands for carbs, bolus and overrides
+            * issue remote commands for carbs, bolus, and overrides
 
     If you plan to use remote commanding with *Nightscout*, please read these links with additional information:
 
@@ -25,7 +25,7 @@ For caregivers, *Nightscout* enables remote monitoring and even the ability to i
 
 *Nightscout* is useful for many who use *Loop*. Adults who take care of themselves find the reports and analysis methods from *Nightscout* provide effective tools to monitor their settings and provide reports for their health care provider. It also stores *Loop* configurations so they can be reviewed. With *Loop 3*, the saved *Nightscout* profiles can be downloaded to a new *Loop* installation or a new phone for quick onboarding, should you ever need to start fresh.
 
-Setting up a *Nightscout* site is described in a separate web site: [*Nightscout*: Documentation](https://nightscout.github.io).
+Setting up a *Nightscout* site is described in a separate web site: [*Nightscout*: Documentation](https://nightscout.github.io){: target="_blank" }.
 
 There are *Nightscout* apps in your iPhone App Store that allow you to view the *Nightscout* site after you've configured it, or you can use a web browser to view the data. The app alone is not enough - you need to follow the steps to configure your own *Nightscout* site and obtain your specific *Nightscout* URL.
 
@@ -35,29 +35,29 @@ There are *Nightscout* apps in your iPhone App Store that allow you to view the 
 
 ## *Nightscout* Documentation
 
-There used to be a lot of *Nightscout* information found only in *LoopDocs*, but that was transferred and subsequently updated in [*Nightscout*: Documentation](https://nightscout.github.io). The information that remains in *LoopDocs* about *Nightscout* is *Loop* specific. So you may be jumping back and forth between the two sets of documents.
+There used to be a lot of *Nightscout* information found only in *LoopDocs*, but that was transferred and subsequently updated in [*Nightscout*: Documentation](https://nightscout.github.io){: target="_blank" }. The information that remains in *LoopDocs* about *Nightscout* is *Loop* specific. So you may be jumping back and forth between the two sets of documents.
 
 !!! info ""
 
     * If you see the *Nightscout* Owl logo in upper left you are in the *Nightscout* website
     * If you see the *LoopDocs* green-loop logo in upper left you are in the *LoopDocs* website
     * While in the *Nightscout* tab of *LoopDocs*, most links have a *Nightscout* or *LoopDocs* in the link name
-    * Suggestion: open the [*Nightscout*: Documentation](https://nightscout.github.io) in a separate tab or window of your browser for easy access to both websites
+    * Suggestion: open the [*Nightscout*: Documentation](https://nightscout.github.io){: target="_blank" } in a separate tab or window of your browser for easy access to both websites
 
 
 ## *Nightscout* with *Loop*
 
-This page provides general discussion about the *Nightscout* display, as well as some *Loop*-specific display information. Over time, interactions between *Loop* and *Nightscout* were improved. The information on this page has been updated for *Loop 3* and *Nightscout* version 14.2.6 (or later). Older versions may exhibit some differences in display of *Loop* information on the *Nightscout* site.
+This page provides a general discussion about the *Nightscout* display, as well as some *Loop*-specific display information. Over time, interactions between *Loop* and *Nightscout* were improved. The information on this page has been updated for *Loop 3* and *Nightscout* version 14.2.6 (or later). Older versions may exhibit some differences in the display of *Loop* information on the *Nightscout* site.
 
 ### *Loop* Uploads to *Nightscout*
 
 The *Nightscout* display updates when the *Loop* phone is connected to the internet via WiFi or cellular service. When the uploads stop, the *Loop* *pill* becomes "stale" (cannot open it) after 15 minutes.
 
-*Pills* are the little information boxes. They are [*Nightscout*: Plugins](https://nightscout.github.io/nightscout/setup_variables/#plugins) that must be enabled with configuration variables and then the display for each *pill* can be turned on or off within your *Nightscout* site.
+*Pills* are the little information boxes. They are [*Nightscout*: Plugins](https://nightscout.github.io/nightscout/setup_variables/#plugins){: target="_blank" } that must be enabled with configuration variables and then the display for each *pill* can be turned on or off within your *Nightscout* site.
 
 If upload to *Nightscout* is interrupted, *Loop 3* stores up to 7 days of *Nightscout* information in a local buffer on the phone, and will attempt to upload later when access is restored. Once access is restored, a stale *Loop* Pill may require 15 minutes before it will open to display additional *Loop* information.
 
-The Carb *pill* on the *Nightscout* site is populated by *Loop* when *Loop* is actively uploading to *Nightscout* - but it may lag the value displayed in the *Loop* *pill* by one loop cycle and it will display 0 COB within 5 to 10 minutes if upload is interrupted. In other words, if the COB *pill* shows 0 unexpectedly and *Loop* *pill* is active, you can believe the value shown in the *Loop* *pill*.
+The Carb *pill* on the *Nightscout* site is populated by *Loop* when *Loop* is actively uploading to *Nightscout* - but it may lag the value displayed in the *Loop* *pill* by one loop cycle and it will display 0 COB within 5 to 10 minutes if the upload is interrupted. In other words, if the COB *pill* shows 0 unexpectedly and *Loop* *pill* is active, you can believe the value shown in the *Loop* *pill*.
 
 ### *Loop 2* Red *Loop* Warning
 
@@ -67,8 +67,8 @@ Step 1: Remove *Nightscout* URL from *Loop* Services
 
 Step 2: Figure out why the *Nightscout* site is not accepting uploads from *Loop* and fix that problem.
 
-* [*Nightscout*: Troubleshooting](https://nightscout.github.io/troubleshoot/troubleshoot)
-* [*Nightscout*: Database Management](https://nightscout.github.io/nightscout/admin_tools/#database-maintenance)
+* [*Nightscout*: Troubleshooting](https://nightscout.github.io/troubleshoot/troubleshoot){: target="_blank" }
+* [*Nightscout*: Database Management](https://nightscout.github.io/nightscout/admin_tools/#database-maintenance){: target="_blank" }
 
 Step 3: Add *Nightscout* URL to *Loop* Services
 

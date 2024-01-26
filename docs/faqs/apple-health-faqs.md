@@ -123,7 +123,7 @@ A simple example to illustrate this - for a pump with smallest insulin delivery 
 
 ### *Tidepool* and *Apple* HealthKit
 
-If you have a [*Tidepool*](https://tidepool.org) account and use the *Tidepool* uploader on your *Loop* phone, the data in Health is uploaded to your *Tidepool* database where you can view displays with the [*Tidepool* web browser tool](https://loopkit.github.io/looptips/data/tidepool/).
+If you have a [*Tidepool*](https://tidepool.org/){: target="_blank" } account and use the *Tidepool* uploader on your *Loop* phone, the data in Health is uploaded to your *Tidepool* database where you can view displays with the [*Tidepool* web browser tool](https://loopkit.github.io/looptips/data/tidepool/){: target="_blank" }.
 
 ## How Do I Modify *Apple* HealthKit Permissions
 
@@ -163,13 +163,13 @@ If you happen to wear a *Dexcom* G6 and G7 sensor at the same time, then startin
 
 There are several choices for reading *Libre* sensors.
 
-With `Loop dev` (will be `Loop 3.4.x` after release), [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) is integrated with the `Loop` app.
+With `Loop dev` (will be `Loop 3.4.x` after release), [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" } is integrated with the `Loop` app.
 
 The frequent updates (1-minute glucose data) provided by *Libre* did cause some issues with released versions (`Loop 3.0` and `Loop 3.2.x` with customizations that use various third-party apps to read the *Libre*). These were fixed initially by modifying the third-party apps to limit how frequently they supplied glucose data.
 
 With `Loop dev` (will be `Loop 3.4.x` after release), the Loop app only initiates a closed-loop cycle automatically following a new glucose value if it has been more than 4.2 minutes since the last one.
 
-`Loop 3.0` and `Loop 3.2.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code#loop-cycle-time) that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
+`Loop 3.0` and `Loop 3.2.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code#loop-cycle-time){: target="_blank" } that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
 
 ##  How Do I Change Glucose Units?
 

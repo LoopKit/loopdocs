@@ -17,7 +17,7 @@ Loop can be connected to the following CGMs:
         * Medtronic Pump only
         * **You must [add pump](add-pump.md) first**
             * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
-    * Libre: [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop) was added to the dev branch (and thus will be supported in the next release of Loop)
+    * Libre: [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" } was added to the dev branch (and thus will be supported in the next release of Loop)
         * Only some Libre sensors are supported; some have encryption that limits DIY use
         * No details for using Libre will show up on this page until the next release - please read [Build Loop-dev](../version/build-dev.md) and follow the links to understand what you are doing if you choose a development branch
 * CGMs that require active internet (WiFi or Cell)
@@ -164,7 +164,7 @@ In addition to the risks of missing data if the internet is not reliable, you mu
 
     If you decide to use Nightscout as a CGM source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.
     
-    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
+    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/){: target="_blank" }._
     
     There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Libre Support for Loop 3.2.x Code](../version/code-custom-edits.md#libre-support-for-loop-32x-code) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
     
