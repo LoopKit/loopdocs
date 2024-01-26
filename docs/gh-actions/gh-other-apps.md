@@ -321,7 +321,7 @@ This requires you to provide some information. Examine the table below for the b
     {align="center"}
 
 1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [Configure to Use Browser: Find My Loop](gh-first-time.md#find-my-loop), where you'll be finding App Name instead of Loop.
-    * Select "iOS".
+    * Select "iOS". For Loop Follow you can also select "macOS" if you own a Mac with macOS 11 or later.
     * Enter a name: this will have to be unique
         * You could start with "App Name ABC" where ABC are your initials
         * If that is already taken, you can add a number, for example, "App Name ABC 123"
