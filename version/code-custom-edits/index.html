@@ -3700,7 +3700,7 @@
 <li>
 <p><a href="#custom-edits-optional">Custom Edits Optional</a>:</p>
 <ul>
-<li>The second half of this page provides instructions for some of the prepared customizations included in the <a href="https://www.loopandlearn.org/custom-code"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a>. Some people prefer to make all their own edits.</li>
+<li>The second half of this page provides instructions for some of the prepared customizations included in the <a href="https://www.loopandlearn.org/custom-code" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a>. Some people prefer to make all their own edits.</li>
 </ul>
 </li>
 </ul>
@@ -3961,7 +3961,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>peakActivity: Peak of insulin activity (minutes)</li>
 <li>delay: Delay before insulin begins to acts after delivery starts (minutes)</li>
 </ul>
-<p>Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473">Comment</a>.</p>
+<p>Please read the nitty-gritty discussion that went into the development of the "exponential insulin models" in this <a href="https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473" target="_blank">Comment</a>.</p>
 <p>If you wish to customize these values, please make sure you know what you are doing.  This is not a modification recommended for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> novices.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>MARK: - Model generation
 </code></pre></div>
@@ -4027,7 +4027,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p class="admonition-title"><em>Mac</em> Instructions</p>
 <p>This can be done with Build with Browser but the instructions might need to be adjusted for that case.</p>
 </div>
-<p>If you want an app logo other than the default green circle for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
+<p>If you want an app logo other than the default green circle for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/" target="_blank">appicon.build</a> or <a href="https://appicon.co/" target="_blank">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
 <ol>
 <li>Navigate to the LoopWorkspace folder</li>
 <li>Open the OverrideAssetsLoop.xcassets folder</li>
@@ -4103,14 +4103,14 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // user is warned above this value
 </code></pre></div>
 <h4 id="low_carb_limit"><code>"low_carb_limit"</code><a class="headerlink" href="#low_carb_limit" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the <a href="https://www.loopandlearn.org/custom-code/#custom-list"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> Customization as <code>"low_carb_limit</code>"</a>.</p>
+<p>This first example might be used by a parent for a child with very small carb entries. It is provided as one of the prepared customizations supplied by the <a href="https://www.loopandlearn.org/custom-code/#custom-list" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> Customization as <code>"low_carb_limit</code>"</a>.</p>
 <p><em>Code After Modification to enable the warning at lower levels and limit maximum</em></p>
 <div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 99) // cannot exceed this value
 
 static let warningCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 49) // user is warned above this value
 </code></pre></div>
 <h4 id="high_carb_limit"><code>"high_carb_limit"</code><a class="headerlink" href="#high_carb_limit" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal. It is provided as one of the prepared customizations supplied by the <a href="https://www.loopandlearn.org/custom-code/#custom-list"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> Customization as <code>"high_carb_limit</code>"</a>.</p>
+<p>This second example might be used by a person who routinely enters large meals and does not want to be warned with every meal. It is provided as one of the prepared customizations supplied by the <a href="https://www.loopandlearn.org/custom-code/#custom-list" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em> Customization as <code>"high_carb_limit</code>"</a>.</p>
 <p><em>Code After Modification to warn if entry is between 201 and 300g</em></p>
 <div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 300) // cannot exceed this value
 

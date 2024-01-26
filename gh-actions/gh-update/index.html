@@ -3621,12 +3621,12 @@
 <p>Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.</p>
 </div>
 <h3 id="accept-agreements">Accept Agreements<a class="headerlink" href="#accept-agreements" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Sign in to your <a href="https://developer.apple.com/account">Apple Developer account</a>. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.</p>
+<p>Sign in to your <a href="https://developer.apple.com/account" target="_blank">Apple Developer account</a>. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.</p>
 <ul>
 <li>For an update, you do not need to modify the <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code></li>
 <li>Check your <em>Apple</em> Developer account for agreements, then continue</li>
 </ul>
-<p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code> Help Page</a>.</p>
+<p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement" target="_blank"><code>Apple Program License Agreement</code> Help Page</a>.</p>
 <ul>
 <li>Accept the <code>Apple Program License Agreement</code> (only)<ul>
 <li>You do NOT need to accept anything related to the <code>Paid Applications Schedule Agreement</code></li>
@@ -3667,7 +3667,7 @@
 </details>
 <h4 id="manual-steps-to-renew-your-distribution-certificate">Manual Steps to Renew Your <code>Distribution Certificate</code><a class="headerlink" href="#manual-steps-to-renew-your-distribution-certificate" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ol>
-<li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list">Apple Developer Certificates</a><ul>
+<li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list" target="_blank">Apple Developer Certificates</a><ul>
 <li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a <code>Development Certificate</code></li>
 <li>Click each row that has a <code>Distribution Certificate</code> and revoke it</li>
 <li>You will get an email informing you the certificate was revoked</li>
@@ -3796,7 +3796,7 @@
 <li><a href="#select-a-previous-build">Select a Previous Build</a></li>
 </ol>
 <h3 id="add-test-details">Add Test Details<a class="headerlink" href="#add-test-details" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>About half an hour after the build action completes, the new build will appear in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> screen at this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a></p>
+<p>About half an hour after the build action completes, the new build will appear in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> screen at this link: <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect / Apps</a></p>
 <ul>
 <li>Log in if needed</li>
 <li>Select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
@@ -3851,7 +3851,7 @@
 <p>If your <code>Personal Access Token</code> has not expired but does not have the correct permission, you should modify it. Do not regenerate it.</p>
 <p>Click on the link to view your token and compare it to the graphic below.</p>
 <ul>
-<li><a href="https://github.com/settings/tokens">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code></a></li>
+<li><a href="https://github.com/settings/tokens" target="_blank">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code></a></li>
 </ul>
 <p align="center"><img alt="access token with correct permissions" src="../img/gh-token-correct-permission.png" width="600" /></p>
 <p>The graphic above has a blue rectangle added to indicate where you should see your token. If yours does not look like this, click on the link (<code>FastLane Access Token</code>) to open a new display. Watch the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below - there are 4 frames, the last one has the Update token button.</p>
@@ -3870,9 +3870,9 @@
 <p class="admonition-title">Update new <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> to <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></p>
 <p>After you get your new token, immediately add it to your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run <code>Action 1. Validate Secrets</code> for each <abbr title="contains project files and each file's revision history">repository</abbr> to make sure you did not make a mistake.</p>
 </div>
-<p>You can regenerate your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)</p>
+<p>You can regenerate your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> at any time by clicking on the link below. (it will open in a new browser tab.)</p>
 <ul>
-<li><a href="https://github.com/settings/tokens">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</a></li>
+<li><a href="https://github.com/settings/tokens" target="_blank">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</a></li>
 </ul>
 <p>The <code>FastLane Access Token</code> is a clickable link.</p>
 <p align="center"><img alt="list of personal access tokens on github" src="../img/gh-token-list.png" width="600" /></p>

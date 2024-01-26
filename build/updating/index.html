@@ -3578,7 +3578,7 @@
 </p>
 </div>
 <h2 id="check-your-developer-account">Check your Developer Account<a class="headerlink" href="#check-your-developer-account" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/">developer account</a> to manually check if there is a new agreeement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<p>Apple updates its License Agreement for the Developer Program frequently. You need to login to your <a href="https://developer.apple.com/account/" target="_blank">developer account</a> to manually check if there is a new agreement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p><img alt="Screenshot: Account - Apple Developer" src="../img/license.png" /></p>
 <h2 id="ready-to-build-loop">Ready to Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#ready-to-build-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>As long as there are no errors, you are now ready to proceed to <a href="../build-app/#developer-mode">Build the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App: <abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr></a></p>
@@ -3586,7 +3586,7 @@
 <h2 id="delete-old-copies">Delete Old Copies<a class="headerlink" href="#delete-old-copies" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This step is optional, but if your computer is low on space, it helps to clean up old downloads your are no longer using.</p>
 <p>There is an easy way to do this. The <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr> used to download and build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> provides Maintenance Utilities to help free up disk space.</p>
-<p>Please review <a href="https://www.loopandlearn.org/build-select/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> for more information.</p>
+<p>Please review <a href="https://www.loopandlearn.org/build-select/" target="_blank"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: <abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> for more information.</p>
 <p>Copy the line below that starts with <code>/bin/bash</code> by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say <code>Copy to Clipboard</code> when you hover over it). When you click the icon, a message that says <code>Copied to Clipboard</code> will appear on your screen.</p>
 <div class="copy highlight"><span class="filename">Copy and Paste to start the Build Select Script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh<span class="k">)</span><span class="s2">&quot;</span>
@@ -3629,7 +3629,7 @@
 <ol>
 <li>You might get this if you logged in as a different user, have a new computer or if your computer had to undergo a factory reset<ul>
 <li>You can transfer your keychain to your new computer (or just revoke and keep going)</li>
-<li>To transfer your keychain, check this <a href="https://help.apple.com/xcode/mac/current/#/dev8a2822e0b">Apple Documentation Link</a></li>
+<li>To transfer your keychain, check this <a href="https://help.apple.com/xcode/mac/current/#/dev8a2822e0b" target="_blank">Apple Documentation Link</a></li>
 </ul>
 </li>
 <li>Your version of <abbr title="program used to build an app">Xcode</abbr> is way out-of-date<ul>
@@ -3647,10 +3647,10 @@
 <p>Be aware that you will have to rebuild to every device that used the certificate you just revoked and if you have other apps built with this certificate, they will stop working too.</p>
 </div>
 <h2 id="direct-download-of-xcode">Direct Download of <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#direct-download-of-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Many people find updating <abbr title="program used to build an app">Xcode</abbr> from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk, but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".</p>
+<p>Many people find updating <abbr title="program used to build an app">Xcode</abbr> from the App Store to be incredibly slow - especially when a new version has just been released.  This method still takes time and enough space on your disk but is faster than going through the App Store.  Depending on your internet speed, this download can be done in about an hour. Then once it is downloaded, expect another fifteen minutes to several hours (depending on the speed of your computer) for the "xip" file to "expand".</p>
 <p>The instructions do not hold your hand.</p>
 <ul>
-<li>Your <abbr title="operating system for Mac computer">macOS</abbr> must be at the minimum verion (or newer) to support the version of <abbr title="program used to build an app">Xcode</abbr> you're about the download</li>
+<li>Your <abbr title="operating system for Mac computer">macOS</abbr> must be at the minimum version (or newer) to support the version of <abbr title="program used to build an app">Xcode</abbr> you're about the download</li>
 <li>You need to know how to log into your Apple Developer account and navigate those menus</li>
 <li>You need to know how to use <abbr title="graphical folder and file display on Mac">Finder</abbr> to navigate to Downloads</li>
 <li>You need to know how to drag the <abbr title="program used to build an app">Xcode</abbr> icon into your Applications folder (after download and expand completes)</li>
@@ -3665,10 +3665,10 @@
 </ul>
 </li>
 </ul>
-<p>Here are the different steps you need to follow doing the Direct Download instead of the App Store method:</p>
+<p>Here are the different steps you need to follow when doing the Direct Download instead of the App Store method:</p>
 <ol>
-<li><a href="https://developer.apple.com/account">Login to your Apple developer account</a><ul>
-<li>Examine the menus (on my computer there are buttons on the left hand side)</li>
+<li><a href="https://developer.apple.com/account" target="_blank">Login to your Apple developer account</a><ul>
+<li>Examine the menus (on my computer there are buttons on the left-hand side)</li>
 <li>Click on Downloads (under Additional Resources)</li>
 <li>Look at menu items (on my computer there are buttons at the top) that say Beta, Release, Profiles and Logs, and More</li>
 <li>Click on More</li>
