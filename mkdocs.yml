@@ -48,8 +48,8 @@ markdown_extensions:
           generic: true
     - pymdownx.details
     - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji 
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+        emoji_index: !!python/name:material.extensions.emoji.twemoji 
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
     - pymdownx.highlight
     - pymdownx.mark
     - pymdownx.tilde
@@ -110,12 +110,9 @@ plugins:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
             - .DS_Store
-            - build/.DS_Store            
-            - gh-actions/.DS_Store
-            - gh-actions/img/.DS_Store
             - loop-logo.png
-            - stylesheets/extra.css
-            - stylesheets/primary-color.css
+            - extra.css
+            - primary-color.css
 
 use_directory_urls: !ENV [CHECK_BROKEN_LINKS, True]
 
