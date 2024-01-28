@@ -17,12 +17,19 @@ theme:
     logo: loop-logo.png
     favicon: loop-logo.png
     palette:
+
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
           scheme: default
           primary: custom
           toggle:
-            icon: material/brightness-7
+            icon: material/weather-sunny
             name: Switch to dark mode
 
         # Palette toggle for dark mode
@@ -30,8 +37,8 @@ theme:
           scheme: slate
           primary: custom
           toggle:
-            icon: material/brightness-4
-            name: Switch to light mode
+            icon: material/weather-night
+            name: Switch to auto (use System Preferences)
 
 # repo_url: https://github.com/LoopKit/Loop
 
