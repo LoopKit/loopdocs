@@ -34,9 +34,9 @@ With Loop 3, the "old" method still works, but there is a new method for enterin
         * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
         * Note the recommended bolus, but do not actually bolus
         * Back up to the carb entry screen and `Cancel`
-    * Go to the non-pump insulin screen and enter the bolus amount you've decided to take and select the model if a different from your pump
+    * Go to the non-pump insulin screen and enter the bolus amount you've decided to take, and select the model if it's different from your pump
         * Don't forget to actually take the insulin
-        * Add the carb entry and save carbs without bolusing
+        * Add the carb entry and save the carbs without bolusing
 
 1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
     * **Event History** (default) is similar to Loop 2.2.x; however, the event history from a prior pod is not displayed once it is deactivated
@@ -146,13 +146,13 @@ The two graphics below are examples of manual bolus screens.
 
 ## Remote Carb / Bolus
 
-Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.
+Loop 3 includes a feature for remote input of Carbohydrates and Bolus, enabling caregivers who are not physically present to better assist the individual who requires support in managing Loop.
 
-The author of this feature wrote this [Remote Carb/Bolus Guide](../nightscout/remote-overview.md) documentation. Please read carefully and use with the appropriate level of caution.
+The author of this feature wrote this [remote carb/bolus guide](../nightscout/remote-overview.md) documentation. Please read carefully and use with the appropriate level of caution.
 
 !!! warning "WARNING"
 
-    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the [Remote Carb/Bolus Guide](../nightscout/remote-overview.md) before getting started. 
+    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the [remote carb/bolus guide](../nightscout/remote-overview.md) before getting started. 
     
     There are validation and troubleshooting steps for each section of the guide. 
     
@@ -177,7 +177,7 @@ The author of this feature wrote this [Remote Carb/Bolus Guide](../nightscout/re
  * Omnipod Dash compatibility
  * Fingerstick blood glucose prompts when data is stale
  * Non-pump insulin entry within the app
- * Remote Carb/Bolus capability
+ * Remote capability for Carbohydrate/Bolus input
 
 
 
