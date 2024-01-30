@@ -28,7 +28,7 @@ The *Loop Caregiver* app is under development to make remote commands easier to 
     * Please take the time to update your *Nightscout* site to `master`
     * *Nightscout* 14.2.6 was released 30-Sep-2022 as `Classic Liquorice`
 
-If you use *Loop Caregiver*, please join [*Loop Caregiver* App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App) *Zulipchat* stream.
+If you use *Loop Caregiver*, please join [*Loop Caregiver* App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App){: target="_blank" } *Zulipchat* stream.
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 

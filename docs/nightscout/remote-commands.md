@@ -239,14 +239,14 @@ If you want to make your life SUPER AMAZING, check out using the iPhone's Shortc
 
 Click these links on your iPhone and you'll be prompted to download the premade shortcuts (assuming you open the links in Safari browser on iPhone):
 
-[Comprehensive&nbsp;_<span translate="no">Loop</span>_&nbsp;Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut)
+[Comprehensive&nbsp;_<span translate="no">Loop</span>_&nbsp;Shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop.shortcut){: target="_blank" }
  *includes Set Remote Override, Cancel Override, Loop Troubleshooting Tips, Quick Text options, Manual BG entry, Bookmarks to websites, etc.*
 
 And if you want to save one click to get to these one functions more directly: these shortcuts are simplified to offer only one function:
 
-[Set Remote Override only shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop Remote Overrides.shortcut)
+[Set Remote Override only shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Loop Remote Overrides.shortcut){: target="_blank" }
 
-[<span>Cancel Override</span>&nbsp; only shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut)
+[<span>Cancel Override</span>&nbsp; only shortcut](https://github.com/LoopKit/Loop/raw/4699417/Shortcuts/Cancel Override.shortcut){: target="_blank" }
 
 !!! note "A couple notes about these shortcuts:"
     You need to open those links in the *Safari* browser on your iPhone. A confirmation will show to initiate the download.
@@ -263,6 +263,6 @@ And if you want to save one click to get to these one functions more directly: t
 If you want to walk uphill both ways in the snow carrying bags of uneven groceries, you can also set overrides remotely by using If This, Then That (IFTTT) integration. By using IFTTT, you can have single button presses on your phone that will set an override, log a cannula change, log a sensor change and much more.
 
 * Please see
-    * [Nightscout: Configurations: IFTTT Maker](https://nightscout.github.io/nightscout/setup_variables/#ifttt-maker)
-    * [Nightscout: IFTTT](https://nightscout.github.io/nightscout/ifttt/)
+    * [Nightscout: Configurations: IFTTT Maker](https://nightscout.github.io/nightscout/setup_variables/#ifttt-maker){: target="_blank" }
+    * [Nightscout: IFTTT](https://nightscout.github.io/nightscout/ifttt/){: target="_blank" }
 

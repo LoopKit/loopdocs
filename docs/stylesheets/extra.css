@@ -13,8 +13,12 @@ article ul ul ul {
         list-style-type:  square !important;
 }
 
+
 .mermaid { 
-   --md-mermaid-node-fg-color:  #18A0A0;
+  --md-mermaid-sequence-number-bg-color: #18A0A0;
+  --md-mermaid-sequence-actorman-line-color: #18A0A0;
+  --md-mermaid-sequence-node-fg-color: #18A0A0;
+  --md-mermaid-sequence-actor-border-color: #18A0A0;
 }
 
 .passed {
@@ -70,4 +74,15 @@ article ul ul ul {
 
 .loop-biggest {
     font-size: 1.6em;
+}
+
+/*
+ * Materialize links that open in a new window/tab with a right-up arrow icon
+ */
+a[target="_blank"]::after {
+    content:     '↗';
+    display:     inline-block;
+    margin-left: 0.2em;
+    width:       1em;
+    height:      1em;
 }

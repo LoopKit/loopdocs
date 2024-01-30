@@ -17,16 +17,16 @@ These customizations require you to modify the code used to build the *Loop* app
 
 Some customizations are the same for everyone and have been prepared for easy use.
 
-The *Loop and Learn* team commit to maintaining these prepared customizations and provide an easy method to add your selection from these customization to your version of *Loop*.
+The *Loop and Learn* team is committed to maintaining these prepared customizations and provides an easy method to add your selection from these customizations to your version of *Loop*.
 
-Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code):
+Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code){: target="_blank" }:
 
-* [List of Customizations Available](https://www.loopandlearn.org/custom-code/#custom-list)
-* [Customization Select Script](https://www.loopandlearn.org/custom-code/#customization-select)
+* [List of Customizations Available](https://www.loopandlearn.org/custom-code/#custom-list){: target="_blank" }
+* [Customization Select Script](https://www.loopandlearn.org/custom-code/#customization-select){: target="_blank" }
 
 ### Add Libre Support to 3.2.3
 
-If you are using `main` branch to build `Loop 3.2.3` and rely on either *xDrip4iOS* or *GlucoseDirect* to read your CGM and transfer the readings to the *Loop* app, you need to review this [section of the *Loop and Learn* customization page](https://www.loopandlearn.org/custom-code/#add-cgm-323).
+If you are using `main` branch to build `Loop 3.2.3` and rely on either *xDrip4iOS* or *GlucoseDirect* to read your CGM and transfer the readings to the *Loop* app, you need to review this [section of the *Loop and Learn* customization page](https://www.loopandlearn.org/custom-code/#add-cgm-323){: target="_blank" }.
 
 Alternatively, you can switch to the `dev` branch, which already supports Libre. [Build Loop dev with Mac](build-dev-mac.md)
 

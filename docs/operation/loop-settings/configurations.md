@@ -98,7 +98,7 @@ The maximum basal rate and maximum bolus settings are collectively referred to a
 
 ### Maximum Basal Rate
 
-Maximum basal rate will cap the maximum temporary basal rate that the Loop is allowed to enact to meet your correction range. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. If your settings are incorrect in other areas (basal rates, insulin sensitivity, carb ratio, etc), you may need time to identify where settings need to be adjusted. This process is easier if Loop is given less latitude to set high basal rates. Gradually increase your maximum basal rate as your comfort and confidence in Loop increases. If you need help with your settings adjustment, head over to LoopTips for some [initial settings help](https://loopkit.github.io/looptips/settings/settings/)
+Maximum basal rate will cap the maximum temporary basal rate that the Loop is allowed to enact to meet your correction range. Typically, Loop users set their maximum basal rate around 3-4 times their highest scheduled basal rate. When you are first beginning to use Loop, it is wise to start conservative (low) in setting your maximum basal rate. If your settings are incorrect in other areas (basal rates, insulin sensitivity, carb ratio, etc), you may need time to identify where settings need to be adjusted. This process is easier if Loop is given less latitude to set high basal rates. Gradually increase your maximum basal rate as your comfort and confidence in Loop increases. If you need help with your settings adjustment, head over to LoopTips for some [initial settings help](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" }
 
 #### **Maximum Bolus**
 
@@ -106,7 +106,7 @@ Enter your desired single bolus maximum here. For safety, don't set a maximum bo
 
 ## Insulin Model
 
-There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting Adults, Rapid-Acting Children, and Fiasp. If you want to read the nitty-gritty discussion that went into the development of the Rapid-Acting and Fiasp curves (collectively called "exponential insulin models"), you can see that in GitHub [here](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473).
+There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting Adults, Rapid-Acting Children, and Fiasp. If you want to read the nitty-gritty discussion that went into the development of the Rapid-Acting and Fiasp curves (collectively called "exponential insulin models"), you can see that in GitHub [here](https://github.com/LoopKit/Loop/issues/388#issuecomment-317938473){: target="_blank" }.
 
 !!! tip "Loop 3 Insulin Type"
     Loop 3 drops the Walsh model and, by default, does not include the concept of child versus adult for "rapid" acting insulin, i.e., Humalog, Novalog and Apidra.
@@ -116,7 +116,7 @@ There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting 
 
 **We highly recommend selecting one of the exponential insulin models for Loop 2.2.x (in other words, not the Walsh model).**
 
-A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (DIA) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click [here](https://seemycgm.com/2017/08/09/why-dia-matters/) to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your DIA will lead to insulin stacking and less than desired bolusing recommendations.
+A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (DIA) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click [here](https://seemycgm.com/2017/08/09/why-dia-matters/){: target="_blank" } to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your DIA will lead to insulin stacking and less than desired bolusing recommendations.
 
 You can click on each model and see what each model's insulin activity curve looks like, active one selected in blue.
 
@@ -159,7 +159,7 @@ As with all Loop versions, you can manually bolus at any time by pressing the Bo
 
 ## Carb Ratios
 
-Click the &plus; in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your carb ratio settings for accuracy.
+Click the &plus; in the upper right to add carb ratios for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } your carb ratio settings for accuracy.
 
 !!! warning "Beware of other apps writing carbs to Health app"
 
@@ -167,9 +167,9 @@ Click the &plus; in the upper right to add carb ratios for various times of day.
 
 ## Insulin Sensitivities
 
-Insulin Sensitivity Factor (ISF) is the same term as Correction Factor used in some clinics and endocrinology offices. ISF represents the drop in blood glucose levels expected from one unit of insulin. Click the &plus; in the upper right to add insulin sensitivities for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
+Insulin Sensitivity Factor (ISF) is the same term as Correction Factor used in some clinics and endocrinology offices. ISF represents the drop in blood glucose levels expected from one unit of insulin. Click the &plus; in the upper right to add insulin sensitivities for various times of day. Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
 
-Incorrectly set ISF is the most common cause of roller coaster glucose for new Loop users. You will need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#3rd-insulin-sensitivity-factor).
+Incorrectly set ISF is the most common cause of roller coaster glucose for new Loop users. You will need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#3rd-insulin-sensitivity-factor){: target="_blank" }.
 
 ## Loop 2 Services (Optional)
 

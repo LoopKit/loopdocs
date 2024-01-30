@@ -30,7 +30,7 @@ Tap on the Settings icon at the toolbar of the *Loop* app and look at the versio
 
 ### Is the Released Version Newer?
 
-Release information is always found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
+Release information is always found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases){: target="_blank" }.
 
 Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
 
@@ -91,12 +91,12 @@ Pete's announcment:
 
 Loop 3.2 Is released! This contains some very important bug fixes for everyone. If you are running latest dev, you do not need to update, but everyone else running older 3.x versions of Loop should consider upgrading as soon as you can.
 
-[https://github.com/LoopKit/Loop/releases/tag/v3.2.0](https://github.com/LoopKit/Loop/releases/tag/v3.2.0)
+[https://github.com/LoopKit/Loop/releases/tag/v3.2.0](https://github.com/LoopKit/Loop/releases/tag/v3.2.0){: target="_blank" }
 
 Bug Fixes (Please update ASAP):
 
-* Omnipod bolus tracking issue fixed: [link](https://github.com/LoopKit/Loop/issues/1941)
-* Medtronic temp basal tracking issue fixed: [link](https://github.com/ps2/rileylink_ios/pull/775)
+* Omnipod bolus tracking issue fixed: [link](https://github.com/LoopKit/Loop/issues/1941){: target="_blank" }
+* Medtronic temp basal tracking issue fixed: [link](https://github.com/ps2/rileylink_ios/pull/775){: target="_blank" }
 * Crashes caused by large updates from Apple Health fixed
 * Automatic refresh timers for Omnipod (both Dash and Eros) have been removed, to reduce load on pods and reduce frequency of failed pods.
 
@@ -106,9 +106,9 @@ Updates and new Features:
 * Tidepool Service added. This lets you upload your diabetes data from Loop to Tidepool! It is in early stages, so there may be issues. Please report any issues you have with this integration on DIY Loop forums, like Zulip, GitHub, or the Looped group.
 * Translations! Loop now has very good coverage for several languages, including German, Spanish, Italian, French, Danish, Polish, Dutch, Norwegian, Russian, Turkish, and Romanian!
     * Warning - a few items got overwritten by Spanish - if you can't figure it out, try Google translate
-* A new safeguard restricts automatic dosing to keep your IOB below a limit of 2 times your max bolus. Manual dosing can still be delivered to put your IOB above this amount. [link](https://github.com/LoopKit/Loop/pull/1871)
-* Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901)
-* “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76)
+* A new safeguard restricts automatic dosing to keep your IOB below a limit of 2 times your max bolus. Manual dosing can still be delivered to put your IOB above this amount. [link](https://github.com/LoopKit/Loop/pull/1871){: target="_blank" }
+* Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901){: target="_blank" }
+* “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76){: target="_blank" }
 
 
 
@@ -118,7 +118,7 @@ After several years of development and a lot of testing, Loop 3 is here!
 
 Loop v3.0.0 was released on January 14, 2023.
 
-[Link to release notes for Loop 3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0)
+[Link to release notes for Loop 3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0){: target="_blank" }
 
 !!! warning "Use Script not Zip"
     If you follow that link above, there is an `Assets` section with a zip link
@@ -142,7 +142,7 @@ The storage of data with Loop 3 is not backward compatible. In other words, if y
 
 At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
 
-If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date) and then delete the profiles for all the apps by using the - sign. 
+If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date){: target="_blank" } and then delete the profiles for all the apps by using the - sign. 
 
 You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.
 
@@ -220,12 +220,12 @@ Omnipod Code Fixes:
 * Make insertion more robust (LoopKit issue #1369)
 * Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)
 * Prevent 049 pod faults during setup (rileylink_ios issue #627)
-* See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676) for additional details.
+* See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676){: target="_blank" } for additional details.
 
 (REMOVED) Insulin Accounting:
 
 * Reduced occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB
-* See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344) for details
+* See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344){: target="_blank" } for details
 * This modification (in v2.2.5) was removed for v2.2.6
     - It worked as advertised during testing, but . . .
     - If the user's phone had trouble communicating with the Apple HealthKit app, this could cause IOB to be under-reported and cause Loop to provide more insulin than needed

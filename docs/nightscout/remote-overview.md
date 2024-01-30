@@ -19,7 +19,7 @@ Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go thr
     If your *Nightscout* site is an older version, you should limit your remote commands to `Overrides`, even with &nbsp;<span translate="no">Loop 3</span>.
 
 !!! tip "&nbsp;*Loop Caregiver*"
-    There is a new companion app, &nbsp;[*Loop Caregiver*](loop-caregiver.md) that makes remote commands and reviewing status of your looper much easier.
+    There is a new companion app, &nbsp;[*Loop Caregiver*](loop-caregiver.md) that makes remote commands and reviewing the status of your looper much easier.
 
 ## How does this work?
 
@@ -28,13 +28,13 @@ _<span translate="no">Loop</span>_&nbsp;and *Nightscout* work using &nbsp;<span 
 * The &nbsp;<span translate="no">Apple Developer ID</span>&nbsp; used to build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app must be configured to enable &nbsp;<span translate="no">Apple Push Notifications</span>
     * If you built *Nightscout* and&nbsp;_<span translate="no">Loop</span>_&nbsp;yourself, follow the directions to set up [Remote Configuration](remote-config.md)
 * Most providers who supply `Nightscout as a service` or `Hosted Nightscout` will assist you, if needed, in getting your APN information added to your *Nightscout* variables
-    * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user)
-    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
+    * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user){: target="_blank" }
+    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table){: target="_blank" }
         * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
 
 ## Next Steps
 
-There are a number of steps to follow to set this up. Each page is linked below:
+There are several steps to follow to set this up. Each page is linked below:
 
 ### [Set Up Remote for Nightscout](remote-config.md)
 

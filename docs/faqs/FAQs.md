@@ -14,7 +14,7 @@ If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-
 
 Loop requires an Apple device. Older iPads do not support Apple Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.
 
-There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
+There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
 
 ## Do I have to be "tech-smart" to build Loop?
 
@@ -24,7 +24,7 @@ Often times the non-tech people do better than the tech people in building Loop.
 
 ## Is there a cheat sheet for a school nurse to use?
 
-Sure, you can give this one a try. [School nurse's cheat sheet download](https://github.com/Kdisimone/images/raw/master/school_nurse.pdf)
+Sure, you can give this one a try. [School nurse's cheat sheet download](https://github.com/Kdisimone/images/raw/master/school_nurse.pdf){: target="_blank" }
 
 ## How long does it take to build Loop?
 
@@ -47,7 +47,7 @@ There are no other costs, ongoing or initial, to use Loop beyond what you alread
 
 This is not required for DASH users.
 
-There are several options for the [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) offering to sell their RileyLink for a reduced cost.
+There are several options for the [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup. Because some of the newer versions have features some people prefer, you may find posts on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup){: target="_blank" } offering to sell their RileyLink for a reduced cost.
 
 ## Free Developer Account Options
 
@@ -59,13 +59,13 @@ You no longer need to own an Apple computer - see [Build with Browser](../gh-act
 
 If you chose [Build with *Mac*](../build/overview.md), then you still don't **have** to own an Apple computer, but you do need to at least borrow one - or you can build using a virtual Mac if you have a PC with Intel chips (see next section).
 
-If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/computer.md#macos) and [Xcode Version](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have longer term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later, when needed.
+If you are borrowing an Apple computer, look at the required minimum settings associated with your iPhone [Compatible Computer](../build/computer.md#macos) and [Xcode Version](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other). It would be really good to have the longer-term ability to borrow that computer again for [updating Loop](../build/updating.md#when-to-update) later when needed.
 
 ## Can I use a PC or Windows computer to build?
 
 You can build Loop using just a browser on any device: [Build with Browser](../gh-actions/gh-overview.md).
 
-If you want to use [Build with *Mac*](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
+If you want to use [Build with *Mac*](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/){: target="_blank" } provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double-check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup){: target="_blank" } who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
@@ -176,7 +176,7 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc) hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the *Loop and Learn* team kept it on life-support. It was updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or `iAPS`. Do not use an application without an owner.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc){: target="_blank" } hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the *Loop and Learn* team kept it on life-support. It was updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or `iAPS`. Do not use an application without an owner.
 
 Many features people used with FreeAPS are now included in `Loop 3` or can be added with customization. The `dev` branch has Libre support, see [Build Loop Dev](../version/build-dev.md).
 
