@@ -14,7 +14,7 @@ The&nbsp;<span translate="no">LoopDocs</span>&nbsp;website is organized as follo
 * [Operate](../operation/loop/open-loop.md): How to use the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Version](../version/overview-version.md): Information about&nbsp;<span translate="no">Loop</span>&nbsp;versions, code customization and development
-* [<span translate="no">Nightscout</span>](../nightscout/overview.md): <span translate="no">Loop</span>-specific&nbsp;<span translate="no">Nightscout</span>&nbsp;details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/) is an open-source cloud application used by people with diabetes and their caregivers
+* [<span translate="no">Nightscout</span>](../nightscout/overview.md): <span translate="no">Loop</span>-specific&nbsp;<span translate="no">Nightscout</span>&nbsp;details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/){: target="_blank" } is an open-source cloud application used by people with diabetes and their caregivers
     * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a&nbsp;<span translate="no">Loop</span>&nbsp;app using&nbsp;<span translate="no">Nightscout</span>&nbsp;and Apple Push Notifications
     * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
@@ -61,11 +61,11 @@ Some techniques are specific to&nbsp;<span translate="no">Loop</span>, but the g
 Here are development history links to other resources for you to explore.
 
 * The early history of&nbsp;<span translate="no">Loop</span>&nbsp;development:
-    * [History of&nbsp;<span translate="no">Loop</span>&nbsp;and&nbsp;<span translate="no">LoopKit</span>](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Nate Racklyeft
+    * [History of&nbsp;<span translate="no">Loop</span>&nbsp;and&nbsp;<span translate="no">LoopKit</span>](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805){: target="_blank" }, written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Nate Racklyeft
 
 * The early days and the many advances brought about by the `#We Are Not Waiting` diabetes community:
-    * [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org).
+    * [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/){: target="_blank" } written by Dana Lewis and check out her website [DIYPS](https://diyps.org){: target="_blank" }.
 
 * How the Omnipod Eros pods were cracked to work with&nbsp;<span translate="no">Loop</span>:
-    * [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Pete Schwamb
-    * [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
+    * [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2){: target="_blank" } written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Pete Schwamb
+    * [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf){: target="_blank" } by Sergei Skorobogatov

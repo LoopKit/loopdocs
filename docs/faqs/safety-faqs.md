@@ -4,11 +4,11 @@ Do not enter settings that you are unsure of. For example, if you haven't any id
 
 ## iOS *Focus* Notifications
 
-iPhones have [*Focus* modes](https://support.apple.com/en-us/108302) to enable maximum flexibility for notifications. These modes must be configured by each user to allow important notifications from your diabetes apps.
+iPhones have [*Focus* modes](https://support.apple.com/en-us/108302){: target="_blank" } to enable maximum flexibility for notifications. These modes must be configured by each user to allow important notifications from your diabetes apps.
 
 **Set up every *Focus* mode you use to allow glucose alerts or you will not get them.**
 
-Critical notifications, for example urgent low from Dexcom, are enabled regardless of your *Focus* settings. But regular low and high glucose notifications might be suppressed. Open source apps, like the *Loop* app, can only be allowed to notify during a *Focus* mode when configured by the user.
+Critical notifications, for example, urgent low from Dexcom, are enabled regardless of your *Focus* settings. But regular low and high glucose notifications might be suppressed. Open source apps, like the *Loop* app, can only be allowed to notify during a *Focus* mode when configured by the user.
 
 Under iOS Settings, select *Focus*, then choose the *Focus* mode you want to adjust.
 
@@ -16,7 +16,7 @@ The graphic below has numbered highlights to follow along for configuring Sleep 
 
 1. Enable Time Sensitive Notifications (disabled by default)
 2. Tap on the &plus; sign to add Apps that are allowed to notify in this mode
-3. Use search feature to find apps of interest
+3. Use the search feature to find apps of interest
 4. Tap on the radio button to select apps of interest, the check mark means that app will be added
     * If you use additional apps to provide alerts, be sure to add them to *Focus* as well
 
@@ -73,7 +73,7 @@ Users often reach out if the glucose prediction shown on the *Loop* app screen i
 
 ### Scenario 1: Extreme Override
 
-It is pretty common for new users to think a 10% override setting should behave similar to a 10% temporary basal rate setting on a manual pump. This is not true.
+It is pretty common for new users to think a 10% override setting should behave similarly to a 10% temporary basal rate setting on a manual pump. This is not true.
 
 Read this section on the override page for information: [Avoid Extreme Insulin Needs Setting](../operation/features/overrides.md#avoid-extreme-insulin-needs-setting)
 

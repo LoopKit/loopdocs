@@ -16,7 +16,7 @@
 
     A narrated video is available:
 
-    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
     Once you have *Apple Developer* and *GitHub* accounts, the steps below are a high-level summary with links to the detailed section of this LoopDocs page.
 
@@ -50,7 +50,7 @@
     - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](gh-deploy.md#automatic-update-build-install) for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
     - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md)
-    - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+    - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
 ## Automatic Build of Loop
 
@@ -71,19 +71,19 @@ Some sections have a Section Summary:
 * If the summary is all you need, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
 * Or follow the detailed instructions below the summary
 
-As you configure for Browser Build, you go back and forth between *GitHub* and *Apple Developer* webpages. Use right-click to open a new tab or copy a link address, as appropriate, while proceeding.
+As you configure for Browser Build, you go back and forth between *GitHub* and *Apple Developer* webpages. Use click to open a new tab or copy a link address, as appropriate, while proceeding.
 
 An automatic table of contents (TOC) should appear for each page on the right side of your browser (if the browser is "wide" enough). If not, tap on the hamburger menu (upper left) and then this page name to see the TOC.
 
-For sparse instructions, right-click on the link below:
+For sparse instructions, click on the link below:
 
-* [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
+* [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
 
 ### How-to Video to Build with a Browser
 
 In addition to this page, there is a narrated video of each step needed to build using a browser.
 
-* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
 Click in the comments for a full index of topics.  If you have issues with a step, use the index to  advance to the relevant part of the video. Subtitles are  in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
 
@@ -118,7 +118,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
 
 * `Actions`: available in your *GitHub* account to build your app (once you follow the instructions on this page)
     * With `Loop 3`, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the *Loop* app from a browser on any computer
-    * If <code>*GitHub* Browser Build</code> Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/) to see if it is *GitHub* problem.
+    * If <code>*GitHub* Browser Build</code> Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/){: target="_blank" } to see if it is *GitHub* problem.
 * <code>Secrets</code>: are required to enable *GitHub* to build the *Loop* app using *GitHub* Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
@@ -136,7 +136,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
         * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
         * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
-* [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
+* [`App Store Connect`](https://appstoreconnect.apple.com){: target="_blank" }: a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
@@ -220,11 +220,11 @@ You need to save your information digitally, so you can copy and paste. The info
 ??? abstract "Section Summary (click to open/close)"
     You will be saving 4 <code>Secrets</code> from your *Apple* Account in this step.
 
-    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account).
+    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
         * Need help? Look at this section on the update page: [Accept Agreements](gh-update.md#accept-agreements)
     1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
-    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api) interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
+    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api){: target="_blank" } interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
     1. [Record three more secrets](#copy-api-key-secrets)
         * Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
         * Record the key id; this will be used for `FASTLANE_KEY_ID`.
@@ -248,11 +248,11 @@ This section provides detailed instructions for the four <code>Secrets</code> as
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
 * LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
-* This link takes you straight to [*Apple Developer* account](https://developer.apple.com) to sign up
+* This link takes you straight to [*Apple Developer* account](https://developer.apple.com){: target="_blank" } to sign up
 
 ### Find <code>TEAMID</code>
 
-Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account).
+Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
 
 1. Click `Account` in the top menu bar
 1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
@@ -286,7 +286,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
     If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](#configure-secrets) until your *Apple* account is active.
 
-1. Right-click to open this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api)
+1. Click this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api){: target="_blank" }
 
     * The top of the display is shown in the graphic below
 
@@ -383,7 +383,7 @@ If you do not already have a *GitHub* account, you need to create one. Be sure t
 
 Decide on a couple of usernames that you will be happy with - this will get embedded into your *GitHub* URL. Your first choice might not be available, so be prepared with several candidates. Your personal URL will be: `https://github.com/username`.
 
-* Click on this link to sign up for a free account: [*GitHub* account signup](https://github.com/signup)
+* Click on this link to sign up for a free account: [*GitHub* account signup](https://github.com/signup){: target="_blank" }
     * You will need to enter the **email** you want associated your *GitHub* account
     * You will be asked to enter a **password**
     * You will be asked to enter a **username**
@@ -402,7 +402,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
 ??? abstract "Section Summary (click to open/close)"
     Log into your *GitHub* account to create a personal access token, which you will save as <code>GH_PAT</code>.
 
-    (Right-click on link) to create a [new `personal access token`](https://github.com/settings/tokens/new):
+     Click to create a [new `personal access token`](https://github.com/settings/tokens/new){: target="_blank" }:
 
     * Enter a name for your token, use "`FastLane Access Token`"
     * Change the Expiration selection to `No expiration`
@@ -421,7 +421,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
 1. You will be creating a new *GitHub* `Personal Access Token` and giving it the name "`FastLane Access Token`"
-1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new){: target="_blank" }
     * Referring to the graphic
         * Note that `Tokens (classic)` is highlighted
         * Most Looper will use the `classic Token`
@@ -458,14 +458,14 @@ If you have not already made up a password, do it now and record it as <code>MAT
 ### Fork LoopWorkspace
 
 ??? abstract "Section Summary (click to open/close)"
-    Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
+    Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } into your account.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 !!! warning "Existing Fork"
     If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-haveloopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
-1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
+1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
     * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-haveloopworkspace)
@@ -705,7 +705,7 @@ Please read carefully to avoid confusion.
 ??? abstract "Section Summary (click to open/close)"
     [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built the *Loop* app via Xcode using this *Apple* ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
-    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
+    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
     1. For Description, use "Loop App Group".
     1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", substituting your team id for `TEAMID`.
     1. Click "Continue" and then "Register".
@@ -716,7 +716,7 @@ The `Loop` *App Group* already exists if you previously built the *Loop* app usi
 
 If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
-1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
+1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
 1. For **`Description`**, use `Loop App Group`.
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
@@ -729,7 +729,7 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 
 #### New Builders
 
-Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
+Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
 
 This will display a table similar to that linked below after a successful <code>Add Identifiers</code> *Action*. There are the six items under **`NAME`** with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the `Identifier`.
 
@@ -737,7 +737,7 @@ This will display a table similar to that linked below after a successful <code>
 
 #### Previous Xcode Builders
 
-Right-click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple* developer site.
+Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
 
 Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3.4`. There may be other `Identifiers` here that are no longer used with the *Loop* app. Do not worry about those.
 
@@ -764,7 +764,7 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 
     Note 2 - Depending on your build history, you may find some of the Identifiers already have your "App Group" and you are just verifying the status.
 
-    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site
+    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
     1. For each of the following identifier names:
         * `Loop`
         * `Loop Intent Extension`
@@ -781,7 +781,7 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
-Find and click on the row for the `Loop identifier` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop.
+Find and click on the row for the `Loop identifier` on the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page. Look in the **`IDENTIFIER`** column to find `com.TEAMID.loopkit.Loop`. The name in the **`NAME`** column may be different than Loop.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -818,7 +818,7 @@ Repeat the steps until you have completed all 4 `Identifiers` in the table above
 ??? abstract "Section Summary (click to open/close)"
     If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
 
-    1. Right-click on the link [apps list](https://appstoreconnect.apple.com/apps) to open App Store Connect and click the blue "plus" icon to create a New App.
+    1. Click on the link [apps list](https://appstoreconnect.apple.com/apps){: target="_blank" } to open App Store Connect and click the blue "plus" icon to create a New App.
         * Select "iOS".
         * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
         * Select your primary language.
@@ -833,9 +833,9 @@ Repeat the steps until you have completed all 4 `Identifiers` in the table above
 
 If you have created a `Loop app` in *App Store Connect* before, skip ahead to [Create Certificates](#create-certificates).
 
-If have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your Loop in the *App Store* but can't see it. Don't worry - there are instructions for this case.
+If you have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your Loop in the *App Store* but can't see it. Don't worry - there are instructions for this case.
 
-1. Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
+1. Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
     * If you have never added an app to *App Store Connect*, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
     *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the *Bundle ID* drop-down, this means you need to follow [Find My Loop](#find-my-loop).
 
@@ -881,7 +881,7 @@ There are two possible reasons:
 
 You may have no memory of ever setting up `Loop` in *App Store Connect*. If you previously used some kind of remote build, like `diawi`, your `Loop` may be there as a *Removed App*.
 
-* Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps), look for the `All Statuses` dropdown indicator, and select `Removed Apps`
+* Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }, look for the `All Statuses` dropdown indicator, and select `Removed Apps`
 
     ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
     {align="center"}
@@ -943,9 +943,9 @@ Refer to the graphic below for the numbered steps:
         * one says the build succeeded (or failed)
         * one says *TestFlight* is ready (typically half-hour after the build succeeds)
         * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
-    1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
+    1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
     1. For each phone/person you would like to support:
-        * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect.
+        * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users){: target="_blank" } on App Store Connect.
         * Add them to your *TestFlight* Internal Testing group.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight).
@@ -973,7 +973,7 @@ Refer to the graphic below for the first four steps:
     * one says the build succeeded (or failed)
     * one says *TestFlight* is ready (typically half-hour after the build succeeds)
     * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
-1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
+1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps){: target="_blank" }.
 
 ## Build Failed?
 
@@ -1007,14 +1007,14 @@ You are configuring a private capability for your family using an Internal Testi
 
 1. First you need to add the email address(es) to your *App Store Connect* Access Users list:
 
-    * Open this link: [Users and Access](https://appstoreconnect.apple.com/access/users)
+    * Open this link: [Users and Access](https://appstoreconnect.apple.com/access/users){: target="_blank" }
         * You must provide a role for each person - `Customer Support` is a good choice
         * Once you have added them here, you'll be able to select them in the `TestFlight` group for your app
 
     ![add email and role for your users](img/add-users.png){width="700"}
     {align="center"}
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed. Then select your *Loop* app. Click on the `TestFlight` tab then click the blue plus button (<font color="#2997FF">:material-plus-circle:</font>) next to `Internal Testing` to add a group.
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed. Then select your *Loop* app. Click on the `TestFlight` tab then click the blue plus button (<font color="#2997FF">:material-plus-circle:</font>) next to `Internal Testing` to add a group.
 
     ![open TestFlight tab for your app](img/setup-testflight-01.png){width="700"}
     {align="center"}
@@ -1067,7 +1067,7 @@ If your copy is from `LoopKit`:
 If your fork is not from `LoopKit`:
 
 * Delete your LoopWorkspace repository
-    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
 * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
 ### Delete Identifiers
@@ -1081,7 +1081,7 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 
 To make it easy when configuring the identifiers, go through and delete as many as you can.
 
-* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
 * Use the graphic below as a guide to removing identifiers
 * Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
 * It is OK to delete an identifier even if it does have your correct `TEAMID`

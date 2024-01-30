@@ -66,9 +66,12 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
 ### Accept Agreements
 
-Sign in to your [Apple Developer account](https://developer.apple.com/account). If there are agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.
+Sign in to your [Apple Developer account](https://developer.apple.com/account){: target="_blank" }. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.
 
-If you need detailed instructions, click on the [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement) help page.
+* For an update, you do not need to modify the <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code>
+* Check your *Apple* Developer account for agreements, then continue
+
+If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement){: target="_blank" }.
 
 * Accept the `Apple Program License Agreement` (only)
     * You do NOT need to accept anything related to the `Paid Applications Schedule Agreement`
@@ -102,7 +105,7 @@ If you need detailed instructions, click on the [<code>Apple Program License Agr
 
 #### Manual Steps to Renew Your `Distribution Certificate`
 
-1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
+1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
     * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
     * Click each row that has a `Distribution Certificate` and revoke it
     * You will get an email informing you the certificate was revoked
@@ -253,7 +256,7 @@ This section covers two topics.
 
 ### Add Test Details
 
-About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps)
+About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
 
 * Log in if needed
 * Select your *Loop* app
@@ -323,7 +326,7 @@ If your `Personal Access Token` has not expired but does not have the correct pe
 
 Click on the link to view your token and compare it to the graphic below.
 
-* [Link to access your *GitHub* `Personal Access Token`](https://github.com/settings/tokens)
+* [Link to access your *GitHub* `Personal Access Token`](https://github.com/settings/tokens){: target="_blank" }
 
 ![access token with correct permissions](img/gh-token-correct-permission.png){width="600"}
 {align="center"}
@@ -349,14 +352,9 @@ If your `Personal Access Token` has expired or has an expiration date, you can r
 !!! tip "Update new GH_PAT to <code>Secrets</code>"
     After you get your new token, immediately add it to your <code>Secrets</code> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run `Action 1. Validate Secrets` for each repository to make sure you did not make a mistake.
 
-You can regenerate your *GitHub* `Personal Access Token` at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)
+You can regenerate your *GitHub* `Personal Access Token` at any time by clicking on the link below. (it will open in a new browser tab.)
 
-* [Link to access your &nbsp;<span translate="no">GitHub Personal Access Token</span>](https://github.com/settings/tokens)
-
-!!! question "Your existing &nbsp;<span translate="no">TestFlight</span> builds are fine"
-    The yellow &nbsp;<span translate="no">GitHub</span> warning by the `Regenerate Token` button is for new builds you make in the future.
-
-    Previous builds are still available in &nbsp;<span translate="no">TestFlight</span> and are not affected by this action.
+* [Link to access your *GitHub* Personal Access Token](https://github.com/settings/tokens){: target="_blank" }
 
 The `FastLane Access Token` is a clickable link.
 

@@ -111,7 +111,7 @@ All other identifiers should be already set up. If they are not, please go throu
 |-------|------------|
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
 * Click on the "`LoopWidgetExtension`" identifier
 * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
 

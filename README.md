@@ -393,6 +393,16 @@ Click here for [When Should You Update?](../faqs/update-faqs.md#when-should-you-
 
 ```
 
+❗️Make **external links open in a new window** by appending the `{: target="_blank" }` suffix to the markdown link, like this
+
+```markdown
+[LoopTips](https://loopkit.github.io/looptips){: target="_blank" }
+```
+
+ℹ️ Note:
+- There is **no space** in between the link and `{: target="_blank" }`. 
+- An *external link* means a link to another website (i.e. not LoopDocs).
+
 ℹ️ **Notice about mkdocs**
 
 > Using absolute paths with links is not officially supported.  

@@ -300,3 +300,44 @@ The two graphics below are examples of manual bolus screens.
 
 ![manual bolus when bolus is recommended](img/loop-3-manual-bolus-rec.svg){width="350"}
 {align="center"}
+
+
+## Remote Carb / Bolus
+
+Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop.
+
+The author of this feature wrote this [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM){: target="_blank" } documentation. Please read carefully and use with the appropriate level of caution.
+
+!!! warning "WARNING"
+
+    You will be using this feature at  your own risk, like any other Loop code you build. It is very important you completely read and re-read the [Remote Carb/Bolus Guide](https://docs.google.com/document/d/1wPpCljo9NuwllltjhImf7YZReIgqP9yF05PN7E6hphM){: target="_blank" } before getting started. 
+    
+    There are validation and troubleshooting steps for each section of the guide. 
+    
+    Please make sure not to skip sections as this makes it difficult to troubleshoot.
+    
+    Be aware:
+    
+    * Apple limits how many push notifications (used by this feature) can be received on an iOS device
+    * If the system feels too many are being sent, it may begin to throttle notifications
+    * There is not a published limit, but consider limiting it to 1 per hour
+    * When on cellular data, there may be further limitations to protect your data usage
+ 
+## Next Section moved from loop-3-overview.md page
+
+## New with Loop 3
+
+ The Loop 3 app, building off work by Tidepool and DIY contributors, provides a major upgrade in user safety, user experience and user interface with the same great Loop algorithm..
+
+ Here are some highlights:
+
+ * Onboarding protocol with guardrails to help configure settings
+ * Streamlined main screen display and user experience
+ * Better alerts and notifications
+ * Omnipod Dash compatibility
+ * Fingerstick blood glucose prompts when data is stale
+ * Non-pump insulin entry within the app
+ * Remote Carb/Bolus capability
+
+
+

@@ -40,11 +40,11 @@ If the Dexcom app is on the same device as the *Loop* app, your system can funct
 
 !!! warning "Dexcom G5 and G6 Support"
 
-    [Dexcom has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence). In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which Dexcom does supply and support G5. The G5 capability will continue to be supported in Loop.
+    [Dexcom has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence){: target="_blank" }. In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which Dexcom does supply and support G5. The G5 capability will continue to be supported in Loop.
 
     In the US, Dexcom has announced support for G6 continues for sensors but not receivers. They will continue to supply sensors so long as pump partners require it.
 
-    The version of the *Loop* app supported by these documents only works with the Dexcom apps.
+    There are third-party apps, which interface with *Dexcom* G5 and G6 CGM. The version of the *Loop* app supported by these documents does not support those third-party apps. There are customizations that can be applied, but are not recommended.
 
 ## Dexcom G7 CGM
 
@@ -85,7 +85,8 @@ Version 3 or later of the *Loop* app can use Nightscout as a remote source for C
 
 ## CGMs Not Supported in the *Loop* App 
 
-Currently, there are no solutions for Eversense or Guardian CGM to be used directly with Loop, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Loop 3.0 and later allows the use of Nightscout as a CGM source but this requires internet access for closed-loop.
+
+Currently, there are no solutions for *Eversense*, *Guardian* or *Libre 3* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/){: target="_blank" } to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
 
 ## Next Step
 

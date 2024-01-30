@@ -181,7 +181,7 @@ In addition to the risks of missing data if the internet is not reliable, you mu
 
     If you decide to use Nightscout as a CGM source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.
     
-    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
+    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/){: target="_blank" }._
     
     There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Libre Support for Loop 3.2.x Code](../version/code-custom-edits.md#libre-support-for-loop-32x-code) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
     

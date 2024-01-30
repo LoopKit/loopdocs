@@ -41,7 +41,7 @@ Each onboarding step is presented in order on this page. Please follow this docu
 !!! abstract "Settings Help"
     Please stay in Open Loop until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are properly adjusted to work with the Loop algorithm. You may need time to evaluate and perhaps identify settings to adjust.
 
-    If you need help with your settings adjustment, you may find useful tips in the companion website, LoopTips at this link: [LoopTips: Settings](https://loopkit.github.io/looptips/settings/settings/) tab.
+    If you need help with your settings adjustment, you may find useful tips in the companion website, LoopTips at this link: [LoopTips: Settings](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } tab.
 
 ### Welcome to Loop
 
@@ -239,9 +239,9 @@ If you will be connecting a Medtronic pump after onboarding:
 
 #### Maximum Basal Rate
 
-[Maximum Basal Rate](therapy-settings.md#maximum-basal-rate) will cap the the maximum temporary basal rate that Loop issues to meet your correction range when you are in Closed Loop with a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
+[Maximum Basal Rate](therapy-settings.md#maximum-basal-rate) will cap the maximum temporary basal rate that Loop issues to meet your correction range when you are in Closed Loop with a [Dosing Strategy](settings.md#dosing-strategy) of Temp Basal Only.
 
-For safety, new loopers should start with max basal set 2-3 times their highest scheduled basal rate. If you choose 2 times your highest scheduled basal, you may get a message informing you this is "lower than typical." Ignore this to put safety first as a new looper.
+For safety, new loopers should start with a max basal set 2-3 times their highest scheduled basal rate. If you choose 2 times your highest scheduled basal, you may get a message informing you this is "lower than typical." Ignore this to put safety first as a new looper.
 
 Experienced loopers typically set their maximum basal rate around 3-4 times their highest scheduled basal rate. Loop 3 app will not allow you to exceed 6.4 times your highest scheduled rate.
 
@@ -260,9 +260,9 @@ Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) is 
 * At least one insulin sensitivity factor (ISF) must be entered
 * A daily schedule with varying ISF can be entered
 
-Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
+Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
 
-Incorrectly set ISF is a common cause of roller coaster glucoses for new Loop users. You may need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#insulin-sensitivity-factor).
+Incorrectly set ISF is a common cause of roller coaster glucoses for new Loop users. You may need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#insulin-sensitivity-factor){: target="_blank" }.
 
 
 ### Therapy Settings Review
