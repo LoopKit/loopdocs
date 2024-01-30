@@ -23,7 +23,7 @@ With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Healt
 
 With Loop 3, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
 
-#### Enter non-pump insulin before carbs
+### Enter non-pump insulin before carbs
 
 !!! warning "WARNING"
     If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, enter the non-pump insulin first and then add the carbs.
@@ -165,8 +165,6 @@ The author of this feature wrote this [Remote Carb/Bolus Guide](https://docs.goo
     * There is not a published limit, but consider limiting it to 1 per hour
     * When on cellular data, there may be further limitations to protect your data usage
  
-## Next Section moved from loop-3-overview.md page
-
 ## New with Loop 3
 
  The Loop 3 app, building off work by Tidepool and DIY contributors, provides a major upgrade in user safety, user experience and user interface with the same great Loop algorithm..
