@@ -148,11 +148,12 @@ The two graphics below are examples of manual bolus screens.
 
 Loop 3 includes a feature for remote input of Carbohydrates and Bolus, enabling caregivers who are not physically present to better assist the individual who requires support in managing Loop.
 
-The author of this feature wrote this [remote carb/bolus guide](../nightscout/remote-overview.md) documentation. Please read carefully and use with the appropriate level of caution.
+Please read the documentation about this feature carefully to ensure proper configuration and use:
+* [Remote Command Overview](../nightscout/remote-overview.md)
 
 !!! warning "WARNING"
 
-    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the [remote carb/bolus guide](../nightscout/remote-overview.md) before getting started. 
+    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the [Remote Command Overview](../nightscout/remote-overview.md) before getting started.
     
     There are validation and troubleshooting steps for each section of the guide. 
     
