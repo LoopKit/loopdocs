@@ -98,6 +98,7 @@ There have been a lot of reports of trouble getting <code>Developer Mode</code> 
 These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.
 
 1. Restart watch, phone and computer
+1. Watch should be paired to your phone and on your wrist
 2. Go to Privacy & Security on watch and enable developer mode (didn’t see prior to restart)
 3. Plug phone into computer and open Xcode
 4. Select Window (top menu) and choose Devices & Simulators
