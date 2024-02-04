@@ -26,7 +26,7 @@ The first action people want to take is to make that noise stop.
     * The `Replace Pod` row is highlighted in red in the graphic below
     * Once the pod has been dealt with and you have a new one in place, it's time to get the details for the Pod Fault
 
-###  Capture the Fault
+### Capture the Fault
 
 * Tap on the Pod icon and scroll all the way down and tap on the `Previous Pod Information` row, highlighted in dashed-blue in the graphic below
     * If there was a Fault, the information is found at the bottom of the screen
@@ -54,7 +54,7 @@ Faults should be reported to Insulet. They may not give you a replacement, but i
 
     The `0x40` is the hex version of the `-064` decimal value found at the end of the Ref code.
 
-### Report (0x31, 049) to Developers, Not Insulet
+### Report 049 (0x31) to Developers, Not Insulet
 
 The sole exception to reporting to Insulet is if you get a fault ending in `049` in the Ref code or with the notation `Fault Event Code 0x31: Incorrect pod state for command`. That particular fault is only seen if there is a mistake in Loop. This happened rarely in earlier versions but should be fixed by the time version 3.4.0 is released. If you do get an 0x31 (049) fault - report that to the Loop developers and include a Loop Report (Loop, Settings, Support, Issue Report).
 
