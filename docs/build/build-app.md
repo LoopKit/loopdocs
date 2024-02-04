@@ -24,7 +24,7 @@ If you do watch this video, please note that you no longer are required to delet
 
 ## Build with Browser
 
-If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you must [Disable Automatic Install from *TestFlight*](../gh-actions/gh-deploy.md#disable-automatic-install-from-testflight) or you will not be able to install on that phone with Xcode.
+If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you should [Disable Automatic Install from *TestFlight*](../gh-actions/gh-deploy.md#disable-automatic-install-from-testflight) to be sure the version of the app on the phone is the one you build with Xcode.
 
 ## <code>Developer Mode</code>
 
@@ -54,22 +54,22 @@ When Xcode is open and you plug in your phone, you will not be able to select th
 ![xcode message for device without developer mode enabled](img/xcode-developer-mode-not-enabled.svg){width="450"}
 {align="center"}
 
-#### <code>Developer Mode</code> on iPhone
+### <code>Developer Mode</code> on iPhone
 
-Once your phone has been plugged in to the computer while Xcode is opened and you accepted the Trust this Computer option, you will be able to enable <code>Developer Mode</code>.
+Once your phone has been plugged in to the computer while Xcode is opened and you accepted have the Trust this Computer option, you will be able to enable <code>Developer Mode</code>.
 
 1. Open your phone settings, choose Privacy & Security
 2. Scroll to the bottom of the screen and examine the <code>Developer Mode</code> row
     * If it says On - no further action is required
     * If it says Off, then tap on the row
-3. Slide the slider to be green
+3. Slide the slider to the green (enabled) position
 4. Choose Restart
 5. After reboot, choose to Turn on <code>Developer Mode</code>
 6. You are now ready to begin building from Xcode onto this phone
 
 If you are in the middle of building on a new phone, return to [Initial Xcode Screens](#initial-xcode-screens) to continue.
 
-#### <code>Developer Mode</code> on Watch
+### <code>Developer Mode</code> on Watch
 
 !!! warning "Build, Enable, Build"
     Reports from users indicate that when you are building to a new Apple Watch - you must first build the app with Xcode before the developer mode will be available. So plan to build with Watch paired, and then enable <code>Developer Mode</code> and build again.
@@ -93,18 +93,19 @@ With the latest watchOS, there are now options that show up after you enable <co
 
 ### Extra Watch Instructions
 
-There have been a lot of reports of trouble getting <code>Developer Mode</code> to show up on a new Apple watch and then having further trouble getting the *Loop* app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed by enabling <code>Developer Mode</code> on the watch and building again was enough. If you have problems, here are extra steps to try.
+There have been a lot of reports of trouble getting <code>Developer Mode</code> to show up on a new Apple watch and then having further trouble getting the *Loop* app to show up on the watch. Previously, just having the watch paired to the phone when you build once followed, by enabling <code>Developer Mode</code> on the watch and building again, was enough. If you have problems, here are extra steps to try.
 
 These steps have been reported on Facebook and have not been tested in a controlled environment. They may not all be necessary.
 
 1. Restart watch, phone and computer
+1. Watch should be paired to your phone and on your wrist
 2. Go to Privacy & Security on watch and enable developer mode (didn’t see prior to restart)
-3. plugged phone and watch in to computer and opened Xcode
-4. select Window (top menu) and choose Devices & Simulators
+3. Plug phone into computer and open Xcode
+4. Select Window (top menu) and choose Devices & Simulators
     * The watch should appear as a Disconnected device
     * Click on the watch and if it connects - you are done
 5. Otherwise manually add the UDID to your Developer Account
-6. Copy UDID (right-click or control-click and choose Copy Identifier)
+    * Copy UDID (right-click or control-click and choose Copy Identifier)
 7. Go to the [Apple developer website, devices page](https://developer.apple.com/account/resources/devices/list){: target="_blank" } and manually add the watch (using the UDID)
 8. With phone plugged into computer and watch on wrist, follow these steps on the build errors page: [Apple Watch Loop App not running on Watch](build-errors.md#apple-watch-loop-app-not-running-on-watch) to build the watch app directly.
 
@@ -128,13 +129,6 @@ With the release of Loop 3, the build process is different and simpler
 * Don't assume you know what you are doing
 
 These instructions show each step needed to download Loop using the Build Select Script.
-
-!!! note "New Menu for Build Select Script"
-    The Build Select Script has been updated with more menu options. It can do more than just assist in building the Loop app.
-    
-    Please review [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/){: target="_blank" } for more information.
-
-    You may notice some graphics on this page shows red font to emphasize some items. The script now only shows red font for an error. Bold font is used for emphasis. Not all graphics were updated.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
