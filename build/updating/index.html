@@ -1379,6 +1379,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Background Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequent-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequent Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-provisioning-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Provisioning Profiles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-derived-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Derived Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revoke-certificate-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revoke Certificate Issue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3625,6 +3667,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Background Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequent-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequent Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-provisioning-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Provisioning Profiles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-derived-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete Derived Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revoke-certificate-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Revoke Certificate Issue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3796,9 +3880,19 @@
 <li>Deleting derived data across all <abbr title="program used to build an app">Xcode</abbr> workspaces and projects for a brand new download is not required to ensure a year for a given build</li>
 <li>The Clean Derived Data option in the Utilities menu can be required for some special cases, but you probably won't need it</li>
 </ul>
-<h4 id="frequent-builder">Frequent Builder<a class="headerlink" href="#frequent-builder" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you build frequently, you do not have to delete the profiles every time. One user reported deleting profiles gave a <a href="./#revoke-certificate-issue">Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> message - follow the link to see other reasons why that might happen. When the build script asks if you want to "Ensure a Year?", you can skip that step.</p>
-<h4 id="revoke-certificate-issue">Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr><a class="headerlink" href="#revoke-certificate-issue" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h3 id="frequent-builder">Frequent Builder<a class="headerlink" href="#frequent-builder" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you build frequently, you do not have to delete the profiles every time. When the build script asks if you want to "Ensure a Year?", you can skip that step.</p>
+<p>On the other hand, you may need to delete the provisioning profiles or saved <abbr title="program used to build an app">Xcode</abbr> information about a version of LoopWorkspace (or other app) currently on your computer. The maintenance utilities found in the BuildSelectScrip can be run to delete your provisioning profiles or clear derived data. Or you can use the individual commands in the next sections to do the same thing.</p>
+<h3 id="delete-provisioning-profiles">Delete Provisioning Profiles<a class="headerlink" href="#delete-provisioning-profiles" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can delete your provisioning profiles by copying this command and pasting it into any terminal. This does not affect any build you currently have on your phone - this just forces your current computer to generate a new one next time you build with <em><abbr title="program used to build an app">Xcode</abbr></em>.</p>
+<div class="copy highlight"><span class="filename">Copy and Paste to manually remove your Provisioning Profiles on your computer</span><pre><span></span><code>rm<span class="w"> </span>~/Library/MobileDevice/Provisioning<span class="se">\ </span>Profiles/*.mobileprovision
+</code></pre></div>
+<h3 id="delete-derived-data">Delete Derived Data<a class="headerlink" href="#delete-derived-data" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you build using the same <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> on your computer and then update that <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr>, sometimes you want to remove derived information that <em><abbr title="program used to build an app">Xcode</abbr></em> remembers and force it to start fresh.</p>
+<p>First quit out of <em><abbr title="program used to build an app">Xcode</abbr></em>. The following command will delete all derived information for all your clones, so next time you build any app from an existing <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> on your computer, the build will take longer. All dependencies will download again. So wait until you see the "indexing" indication on <em><abbr title="program used to build an app">Xcode</abbr></em> before trying to build.</p>
+<div class="copy highlight"><span class="filename">Copy and Paste to manually force Xcode on your computer to start fresh</span><pre><span></span><code>rm<span class="w"> </span>-rf<span class="w"> </span>~/Library/Developer/Xcode/DerivedData
+</code></pre></div>
+<h3 id="revoke-certificate-issue">Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr><a class="headerlink" href="#revoke-certificate-issue" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>What does it look like if you run into the Revoke <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> message? When you prepare to Sign the Targets with <abbr title="program used to build an app">Xcode</abbr>, you'll see the message highlighted in the figure below.</p>
 <p align="center"><br/>
 <img alt="Screenshot: Xcode showing Revoke Certificate message" src="../img/rejected-cert.svg" width="850" /></p>
