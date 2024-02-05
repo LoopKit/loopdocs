@@ -172,11 +172,31 @@ Experienced Loopers may wonder what happened to deleting derived data.
 * Deleting derived data across all Xcode workspaces and projects for a brand new download is not required to ensure a year for a given build
 * The Clean Derived Data option in the Utilities menu can be required for some special cases, but you probably won't need it
 
-#### Frequent Builder
+### Frequent Builder
 
-If you build frequently, you do not have to delete the profiles every time. One user reported deleting profiles gave a [Revoke Certificate](updating.md#revoke-certificate-issue) message - follow the link to see other reasons why that might happen. When the build script asks if you want to "Ensure a Year?", you can skip that step.
+If you build frequently, you do not have to delete the profiles every time. When the build script asks if you want to "Ensure a Year?", you can skip that step.
 
-#### Revoke Certificate Issue
+On the other hand, you may need to delete the provisioning profiles or saved Xcode information about a version of LoopWorkspace (or other app) currently on your computer. The maintenance utilities found in the BuildSelectScrip can be run to delete your provisioning profiles or clear derived data. Or you can use the individual commands in the next sections to do the same thing.
+
+### Delete Provisioning Profiles
+
+You can delete your provisioning profiles by copying this command and pasting it into any terminal. This does not affect any build you currently have on your phone - this just forces your current computer to generate a new one next time you build with *Xcode*.
+
+``` { .bash .copy title="Copy and Paste to manually remove your Provisioning Profiles on your computer" }
+rm ~/Library/MobileDevice/Provisioning\ Profiles/*.mobileprovision
+```
+
+### Delete Derived Data
+
+If you build using the same clone on your computer and then update that clone, sometimes you want to remove derived information that *Xcode* remembers and force it to start fresh.
+
+First quit out of *Xcode*. The following command will delete all derived information for all your clones, so next time you build any app from an existing clone on your computer, the build will take longer. All dependencies will download again. So wait until you see the "indexing" indication on *Xcode* before trying to build.
+
+``` { .bash .copy title="Copy and Paste to manually force Xcode on your computer to start fresh" }
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
+
+### Revoke Certificate Issue
 
 What does it look like if you run into the Revoke Certificate message? When you prepare to Sign the Targets with Xcode, you'll see the message highlighted in the figure below.
 

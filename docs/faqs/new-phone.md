@@ -1,6 +1,78 @@
 ## Overview
 
-Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your&nbsp;_<span translate="no">Loop</span>_&nbsp;information is included and the&nbsp;_<span translate="no">Loop</span>_&nbsp;icon will appear, but the app will not open until you install&nbsp;_<span translate="no">Loop</span>_&nbsp;from either [*TestFlight*](../gh-actions/gh-deploy.md#install-app-with-testflight) or [*Mac* with *Xcode*](../build/build-app.md).
+!!! info "Time Estimate"
+    At least a few hours.
+
+    You can choose to keep Looping on the old phone and swap later. Most vendors give you more than a week to turn in your old device for credit.
+
+
+!!! abstract "Phone Transition Overview"
+
+    **Don't start right before a meal:**
+    
+    * Choose a time when Loop is stable and won't need much attention
+
+    **Keep your old phone (if you can, connected to WiFi) and use it for the *Loop* app:**
+
+    * Make sure Apple Health from the old phone is uploading to the *iCloud*
+    * If you are using the old phone with your *Loop* app:
+        * Keep the old phone connected to WiFi when convenient
+            * The *Loop* app maintains a 7-day database on the phone and will upload when connected
+        * You want the Apple Health records created by the *Loop* app on the old phone to transfer via the *iCloud* to the new phone
+    
+    **Two methods to transfer your phone information (plan for 1 hour, may be faster):**
+
+    1. Do direct phone-to-phone transfer
+        * You will not be able to use your old or new phone during the transfer
+        * Both phones need to stay close to each other and on the same WiFi network
+    2. Use *iCloud* backup from old phone to transfer information to the new phone
+        * You will not be able to use your new phone during the transfer
+    
+    **What happens after you transfer your phone information:**
+
+    * Use your new phone for everything except the *Loop* app and your CGM app
+    * You can keep using your old phone to control your pump and read your CGM until you are ready to switch to the new phone
+    * The new phone has the Loop records from the time the transfer started
+        * If you change a pod on the old phone after the transfer
+            * Plan to deactivate your pod on the old phone and pair the next pod on the new phone
+        * If you change Dexcom on the old phone after the transfer
+            * On the new phone, you will need to enter the new Transmitter number (G6) or wait for G7 to automatically connect
+        * Glucose, Insulin and Carbohydrate records created on the old phone, after the transfer, will be transferred to the new phone via Apple Health - but this may be slow
+    * Plan to be **Open Loop** when you decide to start using the *Loop* app on the new phone - the Glucose, Insulin and Carbohydrate records found on the old phone that occurred after the transfer begins will not be included in the *Loop* records sent to the new phone
+    
+    **When ready to start using the new phone to control your app:**
+
+    * First turn off Bluetooth on the old phone
+    * Review the IOB, COB and glucose trend on the old phone - that determines how long you need to run **Open Loop** on the new phone
+    * Then build Loop on the new phone
+        * [Browser Build](../gh-actions/gh-deploy.md#subsequent-times-on-phone){: target="_blank" }: Open TestFlight and Install Loop
+            * The TestFlight records were transferred to your new phone
+        * Mac Build: Plug the new phone into your computer
+            * If you recently built to your old phone, you can use the same download - otherwise, you need to [Download Loop](../build/build-app.md#download-loop){: target="_blank" }
+            * Your new phone will have the same name as your old phone - might want to change the display names so the two phones are different so you don't get confused in Xcode
+            * You will have to trust the new phone and register it
+            * You may need to enable [Developer Mode](../build/build-app.md#developer-mode){: target="_blank" } if it is not already on
+            * If you have trouble building, you should try to reboot phone, watch, quit Xcode, restart computer, delete old [provisioning profiles](../build/updating.md#delete-provisioning-profiles){: target="_blank" } and then ask for help
+    
+    **Plan to stay in Open Loop until all Glucose, Insulin and Carbohydrate *Apple Health* records transfer:**
+
+    * This can take hours
+    * Loop will pick up the missing records from Apple Health for insulin and glucose (but not carbohydrates)
+        * If you upload to *Nightscout* or *Tidepool*, the carbohydrates entered with the old phone should be already uploaded so your record will be complete
+    * If you have small IOB and COB and glucose is flat, you can probably enable closed loop on the new phone without waiting for the missing records
+    * If there are carbs entered on old phone that are still active, plan on a longer time open loop when you transition to the new phone
+
+!!! warning "Plan Ahead"
+    * Choose when to change from old phone to new phone
+        * Stable glucose
+        * No meals planned
+    * Plan to use **Open Loop** after the transfer to allow recent Health records to transfer via *iCloud*
+
+## Steps Required
+
+Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your&nbsp;_<span translate="no">Loop</span>_&nbsp;information is included and the&nbsp;_<span translate="no">Loop</span>_&nbsp;icon will appear, but the app will not open until you install&nbsp;_<span translate="no">Loop</span>_&nbsp;from either [*TestFlight*](../gh-actions/gh-deploy.md#install-app-with-testflight) or [*Mac* with *Xcode*](../build/build-app.md). 
+
+The records on the new phone are from the time you started the transfer from the old phone to the new phone. The more recent records are transferred via Apple Health. You may want to adjust carbs after the transfer because those are not read by the *Loop* app. But if you enter them again and you are uploading to Nightscout or Tidepool - they will show up twice. Best to have COB and IOB close to zero when you start using your new phone.
 
 Some people don't have access to their old phone. There are instructions for handling that on this page. It makes the whole process more stressful, but remember, pods continue to deliver basal rate and *Medtronic* pumps can be controlled on the pump itself. Use your backup plan until you can get&nbsp;_<span translate="no">Loop</span>_&nbsp;running on a new phone.
 
@@ -44,10 +116,10 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 
 1. Procure the new phone and keep the old one (if possible)
     * [Use the Old Phone](#use-the-old-phone-until-ready) until it is convenient to switch to the new phone
-1. Transfer your information to your new phone
-    * Let the new phone vendor help you
-    * Use an [iCloud back-up](https://support.apple.com/en-us/HT210217){: target="_blank" } for the transfer
-    * Use both devices with [Quick Start](https://support.apple.com/en-us/HT210216){: target="_blank" } to transfer from the old to the new phone
+1. Transfer your information to your new phone. Your options are:
+    1. Use both devices with [Quick Start](https://support.apple.com/en-us/HT210216){: target="_blank" } to transfer from the old to the new phone
+    1. Use an [iCloud back-up](https://support.apple.com/en-us/HT210217){: target="_blank" } for the transfer
+    1. Let the new phone vendor help you
 
 ### Use the Old Phone until Ready
 
@@ -83,11 +155,25 @@ It is easier if you transfer information from the old phone to the new phone bef
 
 #### Build using *Mac*
 
-* Open *Xcode* – use the same build as you used for the old phone
-* Plug in the new phone to the computer (trust phone/computer) and hit build
+Preparatory steps:
+
+* Your new phone will have the same name as your old phone - might want to change the display names so the two phones are different so you don't get confused in Xcode
+* If the new phone does not have Developer Mode enabled, wait until you plug it in to try to configure it
+
+When building:
+
+* Open *Xcode*
+    * Use the same build as you used for the old phone if you built recently
+    * Otherwise, do a fresh download and let the [BuildSelectScript](../build/build-app.md#download-loop){: target="_blank" }  open *Xcode* for you
+* Plug in the new phone to the computer
+* You will have to trust the computer on the new phone (and watch)
+* There should be a modal pop-up in Xcode asking if you want to register the new phone
+* You may need to enable [Developer Mode](../build/build-app.md#developer-mode){: target="_blank" } if it is not already on
 * Build the app on the new phone
 
-### Prepare to Change Phones
+If you have trouble finding the new phone in *Xcode* or trouble building, you should try to reboot phone, watch, quit Xcode, restart computer, delete old [provisioning profiles](../build/updating.md#delete-provisioning-profiles){: target="_blank" } and then ask for help
+
+### Prepare to Change Phone used for the *Loop* App
 
 On old phone (if available):
 
@@ -143,7 +229,7 @@ Placeholder for&nbsp;<span translate="no">Libre</span>&nbsp;CGM instructions. Su
 
 ### Check out the Transfer
 
-1. Keep closed loop disabled until you complete the full transfer and checkout.
+1. Stay in **Open Loop** (closed loop disabled) until you complete the full transfer and checkout.
 
     !!! important "Check Every Setting"
         * Make sure all the basal, ISF, CR, Insulin Selection and ranges are correct
@@ -155,22 +241,18 @@ Placeholder for&nbsp;<span translate="no">Libre</span>&nbsp;CGM instructions. Su
 
 1. Monitor CGM values to ensure new readings are coming in.
 
-1. Check COB and IOB
+1. Check Glucose, Insulin and Carbohydrate records
 
     !!! important "_<span translate="no">Apple Health</span>_&nbsp;History"
-        Your COB and IOB may not carry over to your new phone.
+        Your Glucose, IOB and COB may not have correct history on your new phone.
 
-        _<span translate="no">Loop</span>_&nbsp; reads from&nbsp;_<span translate="no">Apple Health</span>_&nbsp;and may restore COB and IOB from health – this assumes health is stored on iCloud and synchronized between old and new phone
-
-        If your COB and IOB show up as blank, you can go open loop for 3 to 6 hours.
+        _<span translate="no">Loop</span>_&nbsp; reads from&nbsp;_<span translate="no">Apple Health</span>_&nbsp;and will restore Glucose and Insulin records if health is stored on iCloud and synchronized between old and new phone - but this can take a long time to synchronize
         
-        If you are impatient, you can try this but be cautious:
-        
-        * Add back your insulin via *Apple Health* (on your new phone) to the time that the boluses and positive temp basals were recorded on your old phone: *Apple Health*, Insulin Delivery, Add Data.
-        * Wait about 5 minutes for that insulin to show up in the *Loop* app as Active Insulin
-        * Finally, add the Carbohydrates by entering them in your Add Carb Entry screen and rolling back the Date/Time wheel to the time of the original entry(ies)
+        The *Loop* app does not read Carbohydrates from Apple Health, so stay **Open Loop** if you have high COB from an entry on the old phone
 
-1. Once you are happy with the configuration of&nbsp;_<span translate="no">Loop</span>_&nbsp;on your new phone, go ahead and enable closed loop mode again.
+        Be prepared to spend 3 to 6 hours in **Open Loop**.
+
+1. Once you are happy with the configuration of&nbsp;_<span translate="no">Loop</span>_&nbsp;on your new phone, your glucose is being read and your COB and IOB on the new phone is valid, then you can restore **Closed Loop**.
 
 ### Old Phone
 
