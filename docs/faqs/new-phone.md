@@ -46,11 +46,12 @@
     * Review the IOB, COB and glucose trend on the old phone - that determines how long you need to run **Open Loop** on the new phone
     * Then build Loop on the new phone
         * [Browser Build](../gh-actions/gh-deploy.md#subsequent-times-on-phone){: target="_blank" }: Open TestFlight and Install Loop
-            * The TestFlight records were transferred to your new phone
+            * The TestFlight records were transferred to your new phone so no need to redeem a code
         * Mac Build: Plug the new phone into your computer
             * If you recently built to your old phone, you can use the same download - otherwise, you need to [Download Loop](../build/build-app.md#download-loop){: target="_blank" }
             * Your new phone will have the same name as your old phone - might want to change the display names so the two phones are different so you don't get confused in Xcode
-            * You will have to trust the new phone and register it
+            * You will have to trust the your computer on your new phone (and watch)
+            * You will need to register your new phone (you can do this with *Xcode*)
             * You may need to enable [Developer Mode](../build/build-app.md#developer-mode){: target="_blank" } if it is not already on
             * If you have trouble building, you should try to reboot phone, watch, quit Xcode, restart computer, delete old [provisioning profiles](../build/updating.md#delete-provisioning-profiles){: target="_blank" } and then ask for help
     
