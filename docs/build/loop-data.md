@@ -2,10 +2,10 @@
 
 !!! info "Time Estimate"
     - Apple Health: 0 minutes, already a part of your system
-    - *Tidepool*: 30 minutes to set up an account
-        * option: add *Tidepool* Mobile to your phone
-        * option: add upload to *Tidepool* as a Service in the *Loop* app
-            * if you upload from Loop to *Tidepool* you can still use the Mobile app to take notes but you must disable the Health permission to the Mobile app to avoid getting data uploaded twice
+    - *Tidepool*: 30 minutes to set up an account and then choose how to upload from the *Loop* app to *Tidepool*
+        * option: add *Tidepool* Mobile to your phone and upload via Apple Health data
+        * option: add upload to [*Tidepool* as a Service](../loop-3/services.md#tidepool){: target="_blank" } in the *Loop* app
+            * You can still use the Mobile app to take notes; but you must disable the Mobile app permission to read Health data - otherwise you get data uploaded twice
     - *Nightscout*:
         * 1-2 hours to build it yourself if you've never done it before
         * 1 hour to choose and sign up for a service if you want to pay someone
