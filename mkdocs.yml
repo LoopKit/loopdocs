@@ -103,6 +103,7 @@ plugins:
             'build/step8.md': 'build/xcode-version.md'
             'build/step9.md': 'build/xcode-settings.md'
             'gh-actions/gh-customize.md': 'gh-actions/edit-browser.md'
+            'faqs/FAQS.md': 'faqs/loop-faqs.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -234,7 +235,7 @@ nav:
 - FAQs:
     - 'FAQs Overview': 'faqs/overview-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
-    - 'Loop FAQs': 'faqs/FAQs.md'
+    - 'Loop FAQs': 'faqs/loop-faqs.md'
     - 'Time FAQs': 'faqs/time-faqs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'CGM FAQs': 'faqs/cgm-faqs.md'

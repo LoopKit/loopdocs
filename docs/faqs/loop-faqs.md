@@ -1,6 +1,6 @@
 ## What do I need to Loop?
 
-Please click on the [Requirements](../intro/requirements.md) link.
+Please click on the [Requirements](../intro/requirements.md#common-requirements){: target="_blank" } link.
 
 ## Can I download Loop from the App store?
 
