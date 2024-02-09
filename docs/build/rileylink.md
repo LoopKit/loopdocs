@@ -11,11 +11,11 @@
     - Order your compatible device
 
 !!! question "FAQs"
-    - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. At the current time, RileyLink, OrangeLink, and EmaLink devices are available for purchase and all can be used interchangeably with the *Loop* app.
+    - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. At the current time, OrangeLink and EmaLink devices are available for purchase. There are many used original RileyLink devices, as well as OrangeLink and EmaLink now that many users have switched to DASH.  All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two). **Not needed for DASH**
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to the normal scheduled basal rate
-    - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between RileyLink, OrangeLink, EmaLink, or some future RileyLink compatible device.
-    - **"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"** See [RileyLink Compatible Device Range](../faqs/rileylink-faqs.md#range).
+    - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between compatible devices.
+    - **"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"** See [RileyLink Compatible Device Range](../faqs/rileylink-faqs.md#range){: target="_blank" }.
 
 
 ## What is a RileyLink Compatible Device
@@ -29,7 +29,7 @@ The RileyLink compatible device is required to allow your phone to talk to compa
 
 *Medtronic* and *Omnipod Eros* pumps require a RileyLink compatible device.
 
-![Omnipod or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
+![Omnipod Eros or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
 
 
 ## RileyLink Compatible Devices
@@ -63,17 +63,17 @@ There used to be just one option, the original RileyLink. Now there are more opt
 
 ## More information
 
-There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink-faqs.md).
+There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink-faqs.md){: target="_blank" }.
 
 Sections of interest include:
 
 * [Firmware Update](../faqs/rileylink-faqs.md#orangelink-firmware) information on the OrangeLink
-* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop 2.2.x app screens
+* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop app screens
 
 
 ## Waiting for your RileyLink Compatible Device
 
-While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md) options. After that, unless you are using *Omnipod DASH*, you'll have to wait for your device.
+While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md){: target="_blank" } options. After that, unless you are using *Omnipod DASH*, you'll have to wait for your device.
 
 The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
 

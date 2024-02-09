@@ -56,7 +56,7 @@ Go through the Common Requirements to see what you need to actually Loop.
 
     These simulators are part of the Loop app and are available with either build method you choose.
     
-    Check out the [Simulator](../version/simulator.md) page.
+    Check out the [Simulator](../version/simulator.md){: target="_blank" } page.
 
 Once you have chosen your Build Method, go through the pages for that build method several times before beginning, especially if this is new to you.
 

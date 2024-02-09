@@ -10,10 +10,10 @@
     
     - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/){: target="_blank" } to enroll in an individual account.
     - Free: No action required at this time.
-        * Free requires the [Build with *Mac*](overview.md) method
+        * Free requires the [Build with *Mac*](overview.md){: target="_blank" } method
 
 !!! question "FAQs"
-    - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account).
+    - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account){: target="_blank" }.
     - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program must be associated with an adult. It does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing the *Loop* app on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child.
     - **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account. However, some people have had the process take minutes. One SURE way to make it take longer is to use a different credit card to pay for the Apple Developer account enrollment than is already associated with that Apple ID. When you do that, finishing the enrollment process may be a hassle.
 
@@ -28,8 +28,8 @@ The Apple ID is DIFFERENT than the Apple Developer ID.
 
     Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa.
 
-    * The recommendation for Health Permissions for [Loop 2.2.x](health.md#loop-permissions) has changed to no longer provide permission to read Carbohydrates from Apple Health
-    * Loop 3 does not read Carbohydrates from Apple Health by default, but if you need that feature, you can [modify your feature flags](../version/build-time-flag.md).
+    * Loop 3 does not read Carbohydrates from Apple Health by default, but if you need that feature, you can [modify your feature flags](../version/build-time-flag.md){: target="_blank" }.
+    * The recommendation for Health Permissions for [Loop 2.2.x](health.md#loop-permissions){: target="_blank" } has changed to no longer provide permission to read Carbohydrates from Apple Health
 
 ## Developer Account
 
@@ -44,7 +44,7 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 1. You must use the [Build with *Mac*](../build/overview.md) method to build Loop.
 1. Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.
 2. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](apple-developer.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
-3. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overview.md) through Nightscout.
+3. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overview.md){: target="_blank" } through Nightscout.
 
 ### Paid Developer Account
 
