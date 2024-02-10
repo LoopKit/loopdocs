@@ -129,31 +129,11 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 ## How can I find a compatible pump? supplies?
 
+You can use Omnipod DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
+
 There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
-You can use Omnipod DASH and Eros pumps with Loop. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
-
-!!! info "Alternative Names for Omnipod Pods"
-
-    All three types of pods can be packaged five to a box, don't let the 5-pack indication confuse you. 
-
-    * **Eros** pods are also known as **Classic** or **UST400**
-        * The Reference number on the boxes should be similar to POD-ZXP425
-        * They have a clear needle cap
-        * Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods
-
-    * DASH pods have DASH in the name
-        * The Reference number on the box should be similar to POD-BLE-P1-525
-        * They have a blue needle cap
-
-    * Omnipod 5 pods have 5 in the name
-        * They have a clear needle cap
-
-DASH pumps do not require a RileyLink compatible device.
-
-Omnipod 5 is not supported by any version of Loop.
-
-## Can I pay someone else to do this?
+## Can I pay someone else to do build the app for me?
 
 We do not know whether someone who builds the app for you incurs legal responsibility if something goes wrong while you are using a version they built for you.
 
