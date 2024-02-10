@@ -92,7 +92,7 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 
 Be sure to set the phone to automatic time. Do not try to defeat a game by modifying time on the same phone used to control your insulin.
 
-Please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#loop-phone-must-be-on-automatic-time).
+Please read: [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
 
 ## Turn Off Automatic Updates
 
