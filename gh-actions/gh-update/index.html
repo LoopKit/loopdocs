@@ -991,9 +991,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-or-confirm-installation" class="md-nav__link">
+  <a href="#install-the-loop-app-on-the-phone" class="md-nav__link">
     <span class="md-ellipsis">
-      Install or Confirm Installation
+      Install the Loop app on the phone
     </span>
   </a>
   
@@ -3587,9 +3587,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-or-confirm-installation" class="md-nav__link">
+  <a href="#install-the-loop-app-on-the-phone" class="md-nav__link">
     <span class="md-ellipsis">
-      Install or Confirm Installation
+      Install the Loop app on the phone
     </span>
   </a>
   
@@ -3721,11 +3721,11 @@
 <li>Check if you need to renew certificates (once a year only)</li>
 <li>5 min: Update version if a new one is available</li>
 <li>5 min: Start the Build</li>
-<li>Wait for the build to complete and appear in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone<ul>
-<li>about an hour</li>
+<li>1 hour: Wait for the build to complete and appear in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone<ul>
 <li>depends on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, <em>Apple</em> and <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 </li>
+<li>5 min: Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> onto your phone</li>
 </ul>
 <p>Once a Year <a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></p>
 <ul>
@@ -3768,17 +3768,24 @@
 <h2 id="how-to-update-or-rebuild">How to Update or Rebuild<a class="headerlink" href="#how-to-update-or-rebuild" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Summary of Update Steps</p>
-<ul>
+<ol>
 <li><a href="#accept-agreements">Accept Agreements</a></li>
 <li><a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> <strong>(once a year)</strong></li>
 <li><a href="#update-fork">Update <code>Fork</code></a></li>
 <li><a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
 <li><a href="#wait-for-testflight">Wait for <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
-<li><a href="#install-or-confirm-installation">Install or Confirm Installation</a></li>
-</ul>
+<li><a href="#install-the-loop-app-on-the-phone">Install on Phone</a></li>
+</ol>
 <p>Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.</p>
+<p>There is also a helpful video for updating (it does not include the Renew Certificates step, which is only done once a year):</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0ipTsiqbbrQ" target="_blank">How to Update and Rebuild <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with a Web Browser</a></li>
+</ul>
 </div>
 <h3 id="accept-agreements">Accept Agreements<a class="headerlink" href="#accept-agreements" title="Anchor link to this Header on this Page">&para;</a></h3>
+<blockquote>
+<p>This is Step 1 of 6 - it may not always be necessary, but please check every time.</p>
+</blockquote>
 <p>Sign in to your <a href="https://developer.apple.com/account" target="_blank">Apple Developer account</a>. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.</p>
 <ul>
 <li>For an update, you do not need to modify the <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code></li>
@@ -3798,6 +3805,9 @@
 <p>If your build with browser fails, wait longer. An hour wait was reported by one person.</p>
 </div>
 <h3 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<blockquote>
+<p>This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your <code>Distribution Certificate</code> expires.</p>
+</blockquote>
 <p><strong>Once a year, you need to renew your <code>Distribution Certificate</code> to continue using the build with browser method.</strong></p>
 <blockquote>
 <p>Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your <code>Distribution Certificate</code> will no longer be valid in 30 days."</p>
@@ -3861,6 +3871,9 @@
 </ul>
 </div>
 <h3 id="update-fork">Update <code>Fork</code><a class="headerlink" href="#update-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
+<blockquote>
+<p>This is Step 3 of 6 - it may not always be necessary, but please check every time.</p>
+</blockquote>
 <p>Open your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and select your <code>LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></code> from your repositories list.</p>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <ul>
@@ -3874,6 +3887,9 @@
 <p>Yes: please follow instructions at <a href="#build-development-version">Build Development Version</a></p>
 </div>
 <h3 id="build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App<a class="headerlink" href="#build-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h3>
+<blockquote>
+<p>This is Step 4 of 6 - this is always required.</p>
+</blockquote>
 <p>Refer to graphic below as you follow the steps to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <ul>
 <li>Click on the <code>Actions</code> tab</li>
@@ -3909,11 +3925,17 @@
 </ul>
 </li>
 </ul>
+<h3 id="install-the-loop-app-on-the-phone">Install the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app on the phone<a class="headerlink" href="#install-the-loop-app-on-the-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
+<blockquote>
+<p>This is Step 6 of 6 - once you finish this, you are done and your app will last 90 days.</p>
+</blockquote>
+<p>Open the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the Loopers phone and install the most recent version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. Most Loopers have automatic update disabled on their phones, so this is a manual process. <strong>Don't forget.</strong></p>
 <p>The updated <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app will show up in your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the Looper's phone.</p>
 <ul>
 <li>Your new app will have "Expires in 90 days"<ul>
 <li>There may be older builds that are still in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 <li>It takes time for the update to show up in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app</li>
+<li>Wait for the one that expires in about 90 days</li>
 </ul>
 </li>
 <li>You will also see a build number in parentheses, that number increments each build - don't worry about the number</li>
@@ -3923,7 +3945,6 @@
 <p>This is a good time to put a calendar reminder in your favorite app.</p>
 <p>Set it up for a few days before the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app will expire.</p>
 </div>
-<h3 id="install-or-confirm-installation">Install or Confirm Installation<a class="headerlink" href="#install-or-confirm-installation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h4 id="automatic-update-disabled">Automatic Update Disabled<a class="headerlink" href="#automatic-update-disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Option 1: If you chose to <a href="../gh-deploy/#disable-automatic-install-from-testflight">Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>, you control when to install the app on the phone.</p>
 <ul>
