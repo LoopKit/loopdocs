@@ -5,7 +5,7 @@ The FAQs tab of LoopDocs contains pages with safety tips, frequently asked quest
 Map to this section:
 
 * [Safety Tips](../faqs/safety-faqs.md)
-* [Loop FAQs](../faqs/FAQs.md)
+* [Loop FAQs](../faqs/loop-faqs.md)
 * [Time FAQs](../faqs/time-faqs.md)
 * [Omnipod FAQs](../faqs/omnipod-faqs.md)
 * [CGM FAQs](../faqs/cgm-faqs.md)
