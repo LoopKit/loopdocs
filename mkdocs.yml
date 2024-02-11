@@ -129,16 +129,15 @@ nav:
 - Intro:
     - 'LoopDocs Overview': 'intro/overview-intro.md'
     - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
-    - Requirements:
-      - 'Requirements Overview': 'intro/requirements.md'
-      - 'Compatible iPhone': 'build/phone.md'
-      - 'Compatible Pump': 'build/pump.md'
-      - 'Compatible CGM': 'build/cgm.md'
-      - 'RileyLink': 'build/rileylink.md'
-      - 'Apple Developer Program': 'build/apple-developer.md'
-      - 'Test Settings': 'build/test-settings.md'
-      - 'Loop Data': 'build/loop-data.md'
-      - 'Meet the Community': 'build/community.md'
+    - 'Requirements Overview': 'intro/requirements.md'
+    - 'Compatible iPhone': 'build/phone.md'
+    - 'Compatible Pump': 'build/pump.md'
+    - 'Compatible CGM': 'build/cgm.md'
+    - 'RileyLink': 'build/rileylink.md'
+    - 'Apple Developer Program': 'build/apple-developer.md'
+    - 'Test Settings': 'build/test-settings.md'
+    - 'Loop Data': 'build/loop-data.md'
+    - 'Meet the Community': 'build/community.md'
 - Build with Browser:
     - 'Browser Overview': gh-actions/gh-overview.md
     - 'Configure to use Browser': gh-actions/gh-first-time.md
