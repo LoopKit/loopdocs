@@ -97,7 +97,7 @@ In general, there are updates to the *Loop* app released a few times a year - th
 
 ## Will I need to build a new *Loop* app if I switch between Medtronic and Omnipod?
 
-No. The *Loop* app lets you move between different pump types from within the same *Loop* app.
+No. The *Loop* app lets you move between different pump types from within the same *Loop* app. See [Change Pump Type](../loop-3/add-pump.md#change-pump-type){: target="_blank" }.
 
 ## Can I use my *Apple* Developer account to build for others?
 
@@ -132,6 +132,8 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 You can use Omnipod DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
 
 There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+
+Some Looping equipment can be found on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945){: target="_blank" }. This is a private FB group where you must agree to the rules.
 
 ## Can I pay someone else to do build the app for me?
 

@@ -27,12 +27,13 @@ Loop continues to accept carb entries and manual bolus commands. [Manual Temp Ba
 
 ### Dexcom G7 Warmup
 
-The Dexcom G7 begins warming up as soon as you insert the device. Many Loopers use the combination of this warmup upon insertion and the 12-hour grace period offered by the G7 to have continuous CGM readings with no gap.
+The Dexcom G7 begins warming up as soon as you insert the device and completes in less than half an hour. Many Loopers use the combination of this warmup upon insertion and the 12-hour grace period offered by the G7 to have continuous CGM readings with no gap.
 
 * During the 12-hour grace period, start the next sensor but do not connect it to your G7 app on your Looping phone
 * After waiting for the sensor to settle, stop the old sensor and connect to the new sensor
-    * The G7 app will show both traces (the old sensor you were using with the G7 and the *Loop* apps and the new one that was warming up) as shown the graphic below with about 9 hours of settle time
-    * You cannot see the new sensor until you transition to using it
+    * The G7 app will show both traces as shown in the graphic below with about 9 hours of settle time
+        * The new sensor data is added to the graph along with old sensor readings
+        * You cannot see the new sensor until you transition to using it
 
     ![overlay of 2 g7 sensors after transition to new](img/dexcom-g7-overlay.jpg){width="400"}
     {align="center"}

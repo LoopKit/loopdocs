@@ -13,6 +13,7 @@
 !!! question "FAQs"
     - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. There are many used devices available in the community now that many users have switched to DASH. **Not needed for DASH**
+        * Facebook Group where you may find used items: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/){: target="_blank" }
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to the normal scheduled basal rate
     - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between compatible devices.
     - **"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"** See [RileyLink Compatible Device Range](../faqs/rileylink-faqs.md#range){: target="_blank" }.
@@ -20,7 +21,7 @@
 
 ## What is a RileyLink Compatible Device
 
-The RileyLink compatible device is required to allow your phone to talk to compatible *Medtronic* and *Omnipod Eros* pumps. It is not needed for *Omnipod DASH* pumps.
+The RileyLink compatible device is required to allow your phone to talk to compatible *Medtronic* and *Omnipod Eros* pumps. **It is not needed for *Omnipod DASH* pumps.**
 
 !!! abstract "Details for RileyLink"
     The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by compatible *Medtronic* and *Omnipod Eros* pumps.
@@ -42,8 +43,7 @@ There used to be just one option, the original RileyLink. Now there are more opt
 - RileyLink
     - Designed by Pete Schwamb
     - Rechargeable battery (max 36 hours per charge)
-    - No longer available new, check these Facebook Groups for used ones:
-        * [Loop Resale](https://www.facebook.com/groups/301508128131405/){: target="_blank" }
+    - No longer available new, check this Facebook Group for used ones:
         * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/){: target="_blank" }
 - OrangeLink
     - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org){: target="_blank" }
