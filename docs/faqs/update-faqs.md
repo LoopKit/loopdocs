@@ -93,8 +93,6 @@ Do not simply build with your old downloaded folder from months ago. There is a 
 
 No. Do not delete your old *Loop* app. In fact, that is a bad idea as you will lose your currently paired pod and/or settings if you do that. So, don't delete.
 
-**The exception to the rule is if you build `Loop 3` on your phone and want to return to `Loop 2.2.x` or any `FreeAPS fork`.**
-
 * Refer to [What if I change the branch or fork?](#what-if-i-change-the-branch-or-fork)
 
 ## Does update make a separate, second *Loop* app?
@@ -120,19 +118,21 @@ Yes. So long as you use the same developer ID as you originally built the app wi
 
 The *Loop* app version is given at the top of the *Loop* settings page.
 
-There is more detailed information about how the *Loop* app was built at the top of the Issue Report (Loop -> Settings -> Issue Report) as shown in the graphic in the next section.
+There is more detailed information about how the *Loop* app was built at the top of the Issue Report as shown in the graphic in the next section.
 
-## How can I confirm Xcode version I used?
+## When will my app expire?
 
-The information in the graphic below includes the Xcode version number used for the build. In this case, the major version for Xcode is 12 and the minor version is 5 (E is the 5th letter of the English alphabet).  The main thing to notice for this example is the *Loop* app was built with Xcode version 12.5. If this phone was subsequently upgraded to iOS 15, the *Loop* app would continue to work.
+The information in the graphic below shows the Build Details included at the very beginning of a Loop Report (`Loop, Setting, Support, Issue Report`).
 
-![top of issue report showing loop, xcode and expiration](img/loop-version.svg){width="500"}
+Up through version 3.2.3, the Browser Build versions do not report the correct date in the [Expiration Alert](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }. The date reported is correct with Mac Build or later versions using the Broswer Build.
 
-!!! info "Profile Expiration"
+![top of issue report showing Build Details](img/loop-version.svg){width="500"}
 
-    * The profile expiration will not be shown for `Loop v2.2.4` or earlier.
-    * For this example, the profile expires much sooner than 12 months after the *Loop* app was built
-        * [Updating: Delete Provisioning Profiles](../build/updating.md#delete-provisioning-profiles) provides instructions to delete your old provisioning profile when building your *Loop* app - this gives you a full year after you build
+* A Browser Build can be identified when you see `runner` in the `* sourceRoot` line in the graphic above
+    * If you add 90 days to the `* buildDateString`, that is approximately when the app expires
+    * The best method is to look in the *TestFlight* app because that tells you exactly how many days until expiration
+* A Mac Build expiration date can be read directly from the `* profileExpiration` line in the Build Details
+    * The `* sourceRoot` line will be recognizable as where on your computer the download is located
 
 ## What if I change the branch or fork?
 
@@ -146,4 +146,4 @@ Does not matter. Changing the branch and even the fork is an **update** action. 
 
 ## How long does it take?
 
-Assuming your macOS and Xcode updates are done, then plan on about 30 minutes.
+Assuming your macOS and Xcode updates are done, then plan on about 30 minutes for a Mac build. The Browser build steps are very fast, but then you need to wait about an hour for the build to complete and appear in TestFlight.

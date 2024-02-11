@@ -1,4 +1,4 @@
-## What CGMs can I use with Loop?
+## Which CGMs are supported by the *Loop* app?
 
 The following CGM are supported by some or all versions of Loop:
 
@@ -15,24 +15,36 @@ See also: [Compatible CGM](../build/cgm.md) page.
 
 ### Do I need wait for a new Dexcom sensor session to start Loop?
 
-No. There's no need to do anything special with regards to your CGM session when starting or ending use with Loop.
+No, you can start Looping mid-sensor session. There's no need to do anything special with regards to your CGM session when starting or ending the *Loop* app.
 
 ### What do I do when Dexcom sensor is in warm-up?
 
-Loop will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
+The *Loop* app will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
+
+* A HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
 
 With no recent glucose readings, your pump returns to the scheduled basal delivery (within 30 min or less).
 
-Loop continues to accept manual bolus commands. 
+Loop continues to accept carb entries and manual bolus commands. [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
 
-Loop 3 only:
+### Dexcom G7 Warmup
 
-* a HUD status row message of `No Recent Glucose` is displayed, making it easier to add the fingerstick value directly in Loop, which also saves it in Apple Health
-* [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can be commanded during warmup if desired
+The Dexcom G7 begins warming up as soon as you insert the device and completes in less than half an hour. Many Loopers use the combination of this warmup upon insertion and the 12-hour grace period offered by the G7 to have continuous CGM readings with no gap.
 
-### What do I do when I switch Dexcom transmitters?
+* During the 12-hour grace period, start the next sensor but do not connect it to your G7 app on your Looping phone
+* After waiting for the sensor to settle, stop the old sensor and connect to the new sensor
+    * The G7 app will show both traces as shown in the graphic below with about 9 hours of settle time
+        * The new sensor data is added to the graph along with old sensor readings
+        * You cannot see the new sensor until you transition to using it
 
-When you change transmitters (prior to Dexcom G7), you will need to update the transmitter ID in your Loop settings. The instructions for Dexcom are provided below:
+    ![overlay of 2 g7 sensors after transition to new](img/dexcom-g7-overlay.jpg){width="400"}
+    {align="center"}
+
+    * By looking at the trace overlap, you can decide how much you trust the new sensor
+
+## What do I do when I switch Dexcom transmitters?
+
+When you change transmitters (prior to Dexcom G7), you will need to update the transmitter ID in your *Loop*settings. The instructions for Dexcom are provided below:
 
 * In Loop, select the `Delete CGM` button at the very bottom of the CGM info page
     * You cannot just edit the line with your old transmitter ID
@@ -48,15 +60,15 @@ When you change transmitters (prior to Dexcom G7), you will need to update the t
 ![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
 {align="center"}
 
-If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then Loop uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the BG reading in Loop and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This makes it really obvious that you need to update the CGM settings in Loop at transmitter change time.
+If you don't update your transmitter ID when you change active transmitters, and you included your Dexcom share credentials, then the *Loop* app uses your Dexcom Share server to get your CGM data and will not work without cell or wifi connection. When the *Loop* app is using data from Dexcom Share servers, a small cloud will appear above the BG reading in the *Loop* app and should tip you off that maybe you forgot to update your transmitter ID. It's best not to enter Share Credentials. This makes it really obvious that you need to update the CGM settings in the *Loop* app at transmitter change time.
 
 ### Dexcom G7
 
-With Dexcom G7, Loop automatically picks up the active sensor/transmitter pair from the Dexcom G7 app on the phone. Once Dexcom G7 is added to Loop as the CGM, the Looper does not need to do anything to Loop after selecting the new sensor/transmitter pair in the Dexcom G7 app.
+With Dexcom G7, the *Loop* app automatically picks up the active sensor/transmitter pair from the Dexcom G7 app on the phone. Once Dexcom G7 is added to the *Loop* app as the CGM, the Looper does not need to do anything to the *Loop* app after selecting the new sensor/transmitter pair in the Dexcom G7 app.
 
 ### Dexcom G5, G6 and ONE
 
-The diagram below illustrates the steps needed to **switch transmitters on Dexcom G5, G6, and ONE**. This typically needs to be done every three months when a new transmitter is started.
+The diagram below illustrates the steps needed to **switch transmitters on Dexcom G5, G6, and ONE** (for the version of ONE based on G6). This typically needs to be done every three months when a new transmitter is started.
 
 ```mermaid
 sequenceDiagram
@@ -91,14 +103,22 @@ sequenceDiagram
 
 Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop).
 
-See [What CGMs can I use with Loop?](#what-cgms-can-i-use-with-loop).
-
-## Can Loop read CGM data from Nightscout?
-
-Loop 3.0.0 and later can read CGM data from Nightscout. This requires an active internet or cellular connection. After 15 minutes with no connection, the glucose data is marked as stale.
+See [Which CGMs are supported by the *Loop* app?](#which-cgms-are-supported-by-the-loop-app).
 
 ## Can I use Eversense?
 
-Eversense does not write to Apple Health. The BT communications protocol been not been reverse engineered as was done with Dexcom. There is a method to upload Eversense to Nightscout using an Android phone.
+There is a method to upload Eversense to Nightscout using an Android phone, but there is no method to read an Eversense directly with an iPhone at this time.
 
-Loop 3 supports Nightscout as a Remote CGM to Loop with Eversense, but that requires internet access.
+You can use Nightscout as a CGM with Eversense, but that requires internet access.
+
+## Can the *Loop* app read CGM data from Nightscout?
+
+Yes.
+
+## What other CGM apps can be used with Loop?
+
+It is recommended that Libre users take advantage of the [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md){: target="_blank" } that is incorporated into the *Loop* app itself for version 3.4 and later.
+
+You can add xDrip4iOS and GlucoseDirect as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code){: target="_blank" }. However, this uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach.
+
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/){: target="_blank" } and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme){: target="_blank" }. You must build these apps yourself so they have the same developer ID as your *Loop* app; you cannot use the TestFlight pre-built versions.

@@ -6,7 +6,7 @@
     You can choose to keep Looping on the old phone and swap later. Most vendors give you more than a week to turn in your old device for credit.
 
 
-!!! abstract "Phone Transition Overview"
+!!! abstract "Phone Transition Overview - Detailed steps below"
 
     **Don't start right before a meal:**
     
@@ -32,7 +32,7 @@
 
     * Use your new phone for everything except the *Loop* app and your CGM app
     * You can keep using your old phone to control your pump and read your CGM until you are ready to switch to the new phone
-    * The new phone has the Loop records from the time the transfer started
+    * The new phone has the Loop records up until the time the transfer started
         * If you change a pod on the old phone after the transfer
             * Plan to deactivate your pod on the old phone and pair the next pod on the new phone
         * If you change Dexcom on the old phone after the transfer
@@ -50,7 +50,7 @@
         * Mac Build: Plug the new phone into your computer
             * If you recently built to your old phone, you can use the same download - otherwise, you need to [Download Loop](../build/build-app.md#download-loop){: target="_blank" }
             * Your new phone will have the same name as your old phone - might want to change the display names so the two phones are different so you don't get confused in Xcode
-            * You will have to trust the your computer on your new phone (and watch)
+            * You will have to trust your computer on your new phone (and watch)
             * You will need to register your new phone (you can do this with *Xcode*)
             * You may need to enable [Developer Mode](../build/build-app.md#developer-mode){: target="_blank" } if it is not already on
             * If you have trouble building, you should try to reboot phone, watch, quit Xcode, restart computer, delete old [provisioning profiles](../build/updating.md#delete-provisioning-profiles){: target="_blank" } and then ask for help
@@ -83,7 +83,10 @@ When you change phones, *Apple* will force you to the latest iOS version availab
 
 ### Prepare Before Upgrade
 
-If you are using Dexcom G7, make sure you keep the 4-digit code for your current sensor.
+If you are using Dexcom, record the transmitter or sensor number in case it doesn't transfer
+
+* G6: Record the Transmitter number (found in the G6 and the *Loop* app)
+* G7: Record the 4-digit Sensor number (pairing code) found in the G7 app under Connections, Sensor
 
 If you still have your old phone, you can prepare before switching to the new phone.
 
@@ -98,10 +101,10 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 
 !!! abstract "New Phone Checklist for Build with Browser"
     * The *Loop* app will install from *TestFlight* onto the most recent iOS
-    * If a new version is available, we recommend updating and building to the latest [Update with Browser](../gh-actions/gh-update.md)
+    * If a new version is available, we recommend updating and building to the latest, see [Update with Browser](../gh-actions/gh-update.md){: target="_blank" }
 
 !!! abstract "New Phone Checklist for Build with *Mac*"
-    * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) compatible with the latest iOS version?
+    * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other){: target="_blank" } compatible with the latest iOS version?
     * If not, you need to install the correct versions on your *Mac*
     * If you cannot do that, you should consider [Build with Browser](../gh-actions/gh-overview.md)
 
@@ -139,7 +142,7 @@ If you cannot keep the old phone, or it is not available, then skip ahead to the
 It is easier if you transfer information from the old phone to the new phone before you install and open&nbsp;_<span translate="no">Loop</span>_&nbsp;on the new phone. If this is not possible, then you will do the normal [Onboarding](../loop-3/onboarding.md) for a new&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
 
 1. When you transfer information from your old phone to your new phone, all the&nbsp;_<span translate="no">Loop</span>_&nbsp;settings files get copied to the new device including information about the pod
-    * If the timing works, you can keep the pod if you switch to using the new phone for&nbsp;_<span translate="no">Loop</span>_&nbsp;after the information transfer and before changing pods with the old phone
+    * If the timing works, you can keep the pod when you switch to using the new phone for&nbsp;_<span translate="no">Loop</span>_&nbsp;after the information transfer and before changing pods with the old phone
     * If this is not possible, you will need to start a new pod with the new phone
     * *Medtronic* users will have all their information transferred but will only have one phone connected to the *RileyLink*
 1. Install&nbsp;_<span translate="no">Loop</span>_&nbsp;on the new phone (all your settings should be there)
@@ -206,7 +209,7 @@ It is now time to transfer the CGM to the new phone.
 
 The Dexcom app might have transferred successfully, but it’s not a bad idea to install that fresh from the App Store on the new phone. Doing so may be required.
 
-* You need your Dexcom Transmitter ID or 4-digit code (for G7)
+* You need your Dexcom G6 Transmitter ID or G7 4-digit pairing code (Sensor number)
 * On the new phone, in&nbsp;_<span translate="no">Loop</span>_, delete Dexcom as your CGM so you can pair the new phone to the Dexcom app
 * On the new phone, open the Dexcom app and pair to the transmitter (G5, G6 or One) or enter the four-digit code for G7
     * You can keep using your current sensor session
@@ -214,7 +217,7 @@ The Dexcom app might have transferred successfully, but it’s not a bad idea to
         * G5, G6 or ONE, enter transmitter ID
             * If you enter no code, you will be warned that calibrations are required (don't worry)
             * When the app pairs with the tranmistter, it picks up the current session, and calibrations are not required
-        * G7, enter 4-digit code
+        * G7, enter 4-digit code if asked, otherwise just wait for it to connect
     * Within 5 to 10 minutes, Dexcom app should read the current session and keep going
 
 * Wait for Dexcom to connect

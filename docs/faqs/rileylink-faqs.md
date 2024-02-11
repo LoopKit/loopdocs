@@ -1,6 +1,10 @@
 ## RileyLink Compatible Device FAQs
 
-A RileyLink compatible device is a required part of Loop for Medtronic and Omnipod (Eros not DASH) pumps. The device uses the RileyLink protocol to communicate information to/from your pump by radio communications and to/from your iPhone using Bluetooth. You will need the device within range of your phone and pump so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you..
+A RileyLink compatible device is required to use the *Loop* app with Medtronic pumps or Omnipod Eros pods.
+
+**A rileylink is not required with DASH pods.**
+
+The device uses the RileyLink protocol to communicate information to/from your pump by radio communications and to/from your iPhone using Bluetooth. You will need the device within range of your phone and pump so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you..
 
 Purchase information for these devices is found in [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices)
 

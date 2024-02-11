@@ -1,14 +1,17 @@
-It is totally understandable if the thought of building and operating your own&nbsp;<span translate="no">Loop</span>&nbsp;app feels intimidating. As you learn the information explained in&nbsp;<span translate="no">LoopDocs</span>, this will start feeling more comfortable.
+!!! tip "Take a deep breath"
+    It is totally understandable if the thought of building and operating your own&nbsp;<span translate="no">Loop</span>&nbsp;app feels intimidating.
+    
+    As you learn the information explained in&nbsp;_<span translate="no">LoopDocs</span>_, this will start feeling more comfortable.
 
 ## <span translate="no">LoopDocs</span>&nbsp;Contents
 
-The&nbsp;<span translate="no">LoopDocs</span>&nbsp;website is organized as follows
+The&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;website is organized as follows
 
 * [Home](../index.md): What is&nbsp;<span translate="no">Loop</span>?
 * [Intro](overview-intro.md): Introduction to&nbsp;<span translate="no">LoopDocs</span>
     * [Requirements](requirements.md): What is needed regardless of build method
-* New with&nbsp;<span translate="no">Loop 3</span>: Two ways to build - you get the same app either way
-    * [Build with Browser](../gh-actions/gh-overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser
+* There are two ways to build - you get the same app either way
+    * [Build with Browser](../gh-actions/gh-overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser on any computer or tablet
     * [Build with *Mac*](../build/overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app with a Mac the first time, or [Update](../build/updating.md) next time
 * [Set Up](../loop-3/loop-3-overview.md): How to set up the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Operate](../operation/loop/open-loop.md): How to use the&nbsp;<span translate="no">Loop</span>&nbsp;app
@@ -19,6 +22,23 @@ The&nbsp;<span translate="no">LoopDocs</span>&nbsp;website is organized as follo
     * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
 * [Translation](../translate.md): Links to Google Translate provided as a convenience, no guarantees about the quality of the translation
+
+### Using Links
+
+You will notice many links in the *LoopDocs* pages pointing to detailed information. 
+
+* If you notice an arrow pointing up and to the right beside the link:
+    * This means a new tab or window (depending on your browser configuration) is opened when you click on the link
+    * For example, the [What is Loop?](https://youtu.be/64qhgnmkyAE){: target="_blank" } video is found on *YouTube*
+
+* This link format is used anytime the link will take you to a different website
+* In some cases, it is also used when referring to a different *LoopDocs* page
+
+### Using Tooltips
+
+The *LoopDocs* pages contain words that may be unfamiliar. For a definition of any word with a dashed underline, simply hover your mouse over the word, or tap on the word on a mobile device, to view the definition. For example, Omnipod has a tooltip.
+
+Every tooltip definition is also found in the [Glossary](../faqs/glossary.md) - so head over there if you have trouble reading a tooltip.
 
 ## Building&nbsp;<span translate="no">Loop</span>
 
@@ -46,13 +66,15 @@ Starting with a simulator can help you decide if you want to move forward with p
 !!! warning "Locked Phone or App in Background"
     Do not expect the simulator to work when the phone is locked or the app is in the background. The app relies on a real insulin pump or a real CGM to wake up the app when the phone is locked or the app is in the background. The simulator cannot do this.
 
-Please review [Simulator Build](../version/simulator.md) for more information.
+Please review [Simulator Build](../version/simulator.md){: target="_blank" } for more information.
 
 ## Operating&nbsp;<span translate="no">Loop</span>
 
-A significant amount of content is provided on this website and via link to other sources. Please review these pages when initially setting up and learning to use&nbsp;<span translate="no">Loop</span>.
+A significant amount of content is provided on this website and via link to other sources. 
 
-Some techniques are specific to&nbsp;<span translate="no">Loop</span>, but the general concepts of how man-made insulin works and strategies to test basal, carb ratios and insulin sensitivity apply to all the hybrid closed-loop systems, commercial and open source.
+Please review these pages when initially setting up and learning to use&nbsp;<span translate="no">Loop</span>.
+
+Some techniques are specific to&nbsp;_<span translate="no">Loop</span>_, but the general concepts of how man-made insulin works and strategies to test basal, carb ratios and insulin sensitivity apply to all the hybrid closed-loop systems, commercial and open source.
 
 ## Development History
 

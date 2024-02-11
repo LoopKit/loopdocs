@@ -103,6 +103,7 @@ plugins:
             'build/step8.md': 'build/xcode-version.md'
             'build/step9.md': 'build/xcode-settings.md'
             'gh-actions/gh-customize.md': 'gh-actions/edit-browser.md'
+            'faqs/FAQS.md': 'faqs/loop-faqs.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -128,16 +129,15 @@ nav:
 - Intro:
     - 'LoopDocs Overview': 'intro/overview-intro.md'
     - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
-    - Requirements:
-      - 'Requirements Overview': 'intro/requirements.md'
-      - 'Compatible iPhone': 'build/phone.md'
-      - 'Compatible Pump': 'build/pump.md'
-      - 'Compatible CGM': 'build/cgm.md'
-      - 'RileyLink': 'build/rileylink.md'
-      - 'Apple Developer Program': 'build/apple-developer.md'
-      - 'Test Settings': 'build/test-settings.md'
-      - 'Loop Data': 'build/loop-data.md'
-      - 'Meet the Community': 'build/community.md'
+    - 'Requirements Overview': 'intro/requirements.md'
+    - 'Compatible iPhone': 'build/phone.md'
+    - 'Compatible Pump': 'build/pump.md'
+    - 'Compatible CGM': 'build/cgm.md'
+    - 'RileyLink': 'build/rileylink.md'
+    - 'Apple Developer Program': 'build/apple-developer.md'
+    - 'Test Settings': 'build/test-settings.md'
+    - 'Loop Data': 'build/loop-data.md'
+    - 'Meet the Community': 'build/community.md'
 - Build with Browser:
     - 'Browser Overview': gh-actions/gh-overview.md
     - 'Configure to use Browser': gh-actions/gh-first-time.md
@@ -234,7 +234,7 @@ nav:
 - FAQs:
     - 'FAQs Overview': 'faqs/overview-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'
-    - 'Loop FAQs': 'faqs/FAQs.md'
+    - 'Loop FAQs': 'faqs/loop-faqs.md'
     - 'Time FAQs': 'faqs/time-faqs.md'
     - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'CGM FAQs': 'faqs/cgm-faqs.md'

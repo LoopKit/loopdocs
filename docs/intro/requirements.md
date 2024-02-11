@@ -31,7 +31,7 @@ These requirements are independent of how you build the Loop app:
     * Build with Browser - requires a paid developer account
     * Build with *Mac* - can build a free version with some limitations and must rebuild weekly
 
-### Added Requirements to [Build with Browser](../gh-actions/gh-overview.md)
+### Added Requirements to [Build with Browser](../gh-actions/gh-overview.md){: target="_blank" }
 
 If you plan to build using the Build with Browser instructions, you also need:
 
@@ -39,7 +39,7 @@ If you plan to build using the Build with Browser instructions, you also need:
 
 Detailed instructions are included in the link above.
 
-### Added Requirements to [Build with *Mac*](../build/overview.md)
+### Added Requirements to [Build with *Mac*](../build/overview.md){: target="_blank" }
 
 If you plan to build using the Build with *Mac* instructions, you also need:
 
@@ -56,7 +56,7 @@ Go through the Common Requirements to see what you need to actually Loop.
 
     These simulators are part of the Loop app and are available with either build method you choose.
     
-    Check out the [Simulator](../version/simulator.md) page.
+    Check out the [Simulator](../version/simulator.md){: target="_blank" } page.
 
 Once you have chosen your Build Method, go through the pages for that build method several times before beginning, especially if this is new to you.
 

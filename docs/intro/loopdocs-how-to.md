@@ -1,9 +1,3 @@
-## Tooltips
-
-LoopDocs has words that may be unfamiliar. For a definition of any word with a dashed underline, simply hover your mouse over the word, or tap on the word on a mobile device, to view the definition.
-
-Every tooltip definition is also found in the [Glossary](../faqs/glossary.md) - so head over there if you have trouble reading a tooltip.
-
 ## How to Find Help
 
 Volunteers generously provide support for Loop via online platforms. You have several options for joining conversations on Loop and asking for help.  Links to the main platforms are listed below.  Non-US Loop users in Italy, Australia, and several other countries have also formed Facebook (FB) groups.

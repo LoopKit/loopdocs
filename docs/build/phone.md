@@ -3,11 +3,11 @@
 !!! info "Time Estimate"
     - 5 minutes, to check your device and *iOS*
     - 20 minutes, if need to update your compatible device to a new *iOS*
-    - 10 minutes, if you need to order a [compatible device](phone.md#compatible-devices)
+    - 10 minutes, if you need to order a [Compatible Device](#compatible-device) 
     - 0 minutes, if you own an Android and will not use *Apple* products; check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }
 
 !!! abstract "Summary"
-    - Check your iPhone against the device compatibility list
+    - Check your iPhone against the [Compatible Device](#compatible-device) list
         * For all devices, the newest *iOS* is strongly recommended
     - Make sure the phone has good battery life
     - Turn off automatic updates
@@ -16,15 +16,19 @@
     - **"Can I use an android?"** No. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
     - **"Can I use an iPad?"** No. Older iPads do not support *Apple Health* which is required for the *Loop* app. It may be possible with newer iPads and newer *iOS*, but this has not been tested.
     - **"Does my iPhone need a cell plan?"** No. The *Loop* app works using communication on your phone with your CGM and your pump; no internet connection required. However, if access to *Dexcom Follow* or <code>Nightscout</code> monitoring of the *Loop* app is a priority, then a cell plan may be desired.
-    - **What watches work with the *Loop* app?** Only *Apple* watches work with the *Loop* app. With `Loop 3`, some of the older *Apple* watch series are no longer compatible. See: [Watch Hardware and OS Requirements](../operation/features/watch.md#watch-hardware-and-os-requirements)
+    - **What watches work with the *Loop* app?** Only *Apple* watches work with the *Loop* app. With *iOS 17*, some of the older *Apple* watch series are no longer compatible. See: [Watch Hardware and OS Requirements](../operation/features/watch.md#watch-hardware-and-os-requirements)
 
 ## Which Devices Are Compatible?
 
-The *Loop* app requires an *Apple* device. The *Loop* app uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which is required for the *Loop* app. It may be possible with newer iPads and newer *iOS*, but this has not been tested.
+The *Loop* app requires an *Apple* device and uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which is required for the *Loop* app. It may be possible with newer iPads and newer *iOS*, but this has not been tested.
 
-You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. The *Loop* app is compatible with iPhone devices with *iOS* 15.1 or newer. It is unusual for three different *iOS* to be supported. The developers may limit updates soon that are directed to *iOS* 15. (They try to maintain support for the current and one-level earlier *iOS*.)
+You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. The *Loop* app is compatible with iPhone devices with *iOS* 15.1 or newer. 
 
-### Compatible Devices
+* It is unusual for three different *iOS* to be supported
+* The developers try to maintain support for the current and one-level earlier *iOS*
+    * Be prepared for your *iOS* 15 device to no longer be supported in future releases
+
+### Compatible Device
 
 These devices are compatible.
 
@@ -88,7 +92,7 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 
 Be sure to set the phone to automatic time. Do not try to defeat a game by modifying time on the same phone used to control your insulin.
 
-Please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#loop-phone-must-be-on-automatic-time).
+Please read: [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
 
 ## Turn Off Automatic Updates
 
