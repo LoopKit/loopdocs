@@ -2,7 +2,7 @@ After you have been using Loop for a while, there's a potential that you will ru
 
 ## Use Automatic Time on Loop Phone
 
-If you have modified the Loop time (not changed time zone, but turned off automatic time and manually changed the time), please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#loop-phone-must-be-on-automatic-time).
+If you have modified the Loop time (not changed time zone, but turned off automatic time and manually changed the time), please read: [Loop Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
 
 ## Gather information
 

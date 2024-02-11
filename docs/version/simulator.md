@@ -16,43 +16,51 @@ Follow the normal instructions to build with browser, install the app on a compa
 
 * Must have a Mac computer (or virtual machine, Intel chips only)
 * Can build the simulator with a free Apple Developer ID
-    * Build to Mac (no phone required)<br>
+    * [Build to Mac (no phone required)](#build-to-a-simulated-phone-on-mac-computer)<br>
     or
-    * Build to compatible phone
+    * [Build to compatible phone](#build-with-mac-to-a-real-phone-using-free-account)
 
 ## Build to a Simulated Phone on Mac Computer
 
-This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/computer.md)
+This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/computer.md){: target="_blank" }
 
 * Build pages to review, but complete later
-    * Compatible iPhone
-    * Compatible Pump
-    * Compatible CGM
-    * Order a RileyLink (not required for Omnipod DASH)
-    * Apple Developer Program (can use a free account)
-* Follow [Xcode Version](../build/xcode-version.md)
-* Follow [Xcode Settings](../build/xcode-settings.md) but can skip the `Add Apple ID` section
-* Follow [Build the Loop App](../build/build-app.md) but with the following variation:
+    * [Apple Developer Program](../build/apple-developer.md){: target="_blank" } (can use a free account)
+* Follow [Xcode Version](../build/xcode-version.md){: target="_blank" }
+* Follow [Xcode Settings](../build/xcode-settings.md){: target="_blank" } but can skip the `Add Apple ID` section
+* Follow [Build the Loop App](../build/build-app.md){: target="_blank" } but with the following variation:
     * Skip the section on Developer Mode (that is only when building to a phone)
     * Download the code as directed
     * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
-    * Continue with the [Build Free Loop](../build/build-free-loop.md) page
-    * Select a simulator (not your phone) when told to do so
-    * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
-* Use the simulated iPhone and [set up the app](../loop-3/loop-3-overview.md) as desired
+    * Continue with the [Build Free Loop](../build/build-free-loop.md){: target="_blank" } page
+        * Select a simulator (not your phone) when told to do so
+        * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
+* Use the simulated iPhone that will appear on you *Mac* and [set up the app](../loop-3/loop-3-overview.md) as desired
+* This gives you a feel for the interface, but the simulator on the *Mac* has limitations
 
-## Build to a Real Phone
+## Build to a Compatible Phone
 
-You don't need to do anything special when you build the app using the [Build with Browser](../gh-actions/gh-overview.md) instructions. Simply select the CGM and/or Pump simulator desired. You must have a paid developer account. 
+### Build to a Compatible Phone using Browser Build
 
-### Common Requirements
+You don't need to do anything special when you build the app using the [Build with Browser](../gh-actions/gh-overview.md) instructions. Install the app on your phone from TestFlight. Then select the CGM and/or Pump simulator desired. You must have a paid developer account.
 
-This simulator requires a compatible phone, see [Compatible iPhone](../build/phone.md)
+### Build to a Compatible Phone using *Mac* Build
 
-* Pages to review, but complete later
-    * Compatible Pump
-    * Compatible CGM
-    * Order a RileyLink (not required for Omnipod DASH)
+When building to a real phone using a *Mac*, you must have access to a [Compatible Computer](../build/computer.md){: target="_blank" } and a [Compatible Phone](../build/phone.md){: target="_blank" }.
+
+* You can use a Free Apple Developer account
+* Follow [Xcode Version](../build/xcode-version.md){: target="_blank" }
+* Follow [Xcode Settings](../build/xcode-settings.md){: target="_blank" }
+    * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
+    * If you do not have a developer ID, use the [Free Developer Account](../build/xcode-settings.md#free-developer-account) instructions in the `Add Apple ID` section
+* Follow [Build the Loop App](../build/build-app.md){: target="_blank" } using the Free Account instructions
+    * If your phone is running iOS 16 or newer, you must enable Developer Mode
+    * Download the code as directed
+    * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
+    * Continue with the [Build Free Loop](../build/build-free-loop.md){: target="_blank" } page
+* Once the App is on your phone
+    * Follow the [set up the app](../loop-3/loop-3-overview.md) instructions on your phone but choose a simulated pump
+    * If you have a compatible CGM on this phone, you can select that or you can use the simulated CGM or enter glucose values on the main Loop screen
 
 ### What to Expect
 
@@ -61,8 +69,7 @@ This simulator requires a compatible phone, see [Compatible iPhone](../build/pho
     
     The app will only work in the background in these special cases:
 
-    * Loop is on on the same phone as a Dexcom CGM and you've added that CGM information to Loop
-        * With versions 3.3.0 and later, a Libre attached to the same phone through Loop will also wake the app
+    * Loop is on on the same phone as a CGM and you've added that CGM information to Loop
     * Loop is attached to a pump (Pod or Medtronic)
         * You can configure the pump to drip water (instead of being attached to your body)
 
@@ -85,21 +92,4 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 
     The Loop app, when open, will be quite aggressive at warning you that you have disabled Notifications, so you can reverse those directions to enable notifications when actually using the app.
 
-### Build with *Mac* to a Real Phone using Free Account
-
-* Need access to a mac or virtual computer, see [Compatible Computer](../build/computer.md)
-
-* You can use a Free Apple Developer account
-* Follow [Xcode Version](../build/xcode-version.md)
-* Follow [Xcode Settings](../build/xcode-settings.md)
-    * If you have a developer ID, use it in the `Add Apple ID` step and follow the normal build directions
-    * If you do not have a developer ID, use the [Free Developer Account](../build/xcode-settings.md#free-developer-account) instructions in the `Add Apple ID` section
-* Follow [Build the Loop App](../build/build-app.md) using the Free Account instructions
-    * If your phone is running iOS 16 or newer, you must enable Developer Mode
-    * Download the code as directed
-    * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
-    * Continue with the [Build Free Loop](../build/build-free-loop.md) page
-* Once the App is on your phone
-    * Follow the [set up the app](../loop-3/loop-3-overview.md) instructions on your phone but choose a simulated pump
-    * If you have a Dexcom CGM, you can select Dexcom Follow or Nightscout for the CGM; otherwise, you can enter glucose values in Apple Health and Loop will pick up the values
 
