@@ -11,8 +11,8 @@
     - *Dexcom* G4 Share, G5, G6 or ONE CGM systems
         * *Dexcom* ONE (based off G6 sensor) is available in some countries, but will be discontinued soon
     - *Dexcom* G7
-        * *Dexcom* ONE (based off G7 sensor) is available in some countries
-        * At the current time, this version of *Dexcom* ONE **cannot** be used with Loop but pay attention to social media - an early indication is that a simple patch will allow this to work, but that patch is not available - more testing is needed
+        * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
+        * At the current time, the *Dexcom* ONE+ **cannot** be used with Loop but pay attention to social media - an early indication is that a simple patch will allow this to work, but that patch is not available - more testing is needed
     - Medtronic sensors connected to a Loop-compatible Medtronic pumps
     - Some Libre sensors: dev branch only
 
@@ -34,8 +34,12 @@ The *Dexcom* G5, G6 and ONE CGM transmits data directly to the *Dexcom* app on y
 
 The *Dexcom* ONE, available in some countries, acts just like the G6 as far as the *Loop* app is concerned. The *Dexcom* ONE app does not provide some features, such as *Dexcom* Share, that come with the G6. When you set up the *Loop* app, select *Dexcom* G6 as your CGM to use *Dexcom* ONE CGM with the *Dexcom* ONE app installed on your phone.
 
-!!! warning "G7-like ONE is not compatible"
-    There are reports that *Dexcom* is transitioning the ONE to the G7 platform. These device cannot be used with the *Loop* app at this time.
+!!! warning "Dexcom ONE+ is not yet compatible"
+    There are reports that *Dexcom* is transitioning to the ONE+ based off the G7 platform. These devices cannot be used with the *Loop* app at this time.
+
+    Pay attention to social media - an early indication is that a simple patch will allow this to work, but that patch is not available - more testing is needed.
+
+    Only available in some countries. This link is for Poland [Dexcom ONE+](https://www.dexcom.com/pl-pl/dexcom-one-plus){: target=_blank }
 
 If the *Dexcom* app is on the same device as the *Loop* app, your system can function without an internet connection. See Offline Use below.
 
