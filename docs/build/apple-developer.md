@@ -13,7 +13,7 @@
         * Free requires the [Build with *Mac*](overview.md){: target="_blank" } method
 
 !!! question "FAQs"
-    - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/FAQs.md#can-i-use-someone-elses-apple-developer-account){: target="_blank" }.
+    - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/loop-faqs.md#can-i-use-someone-elses-apple-developer-account){: target="_blank" }.
     - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program must be associated with an adult. It does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing the *Loop* app on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child.
     - **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account. However, some people have had the process take minutes. One SURE way to make it take longer is to use a different credit card to pay for the Apple Developer account enrollment than is already associated with that Apple ID. When you do that, finishing the enrollment process may be a hassle.
 

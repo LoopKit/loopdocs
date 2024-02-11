@@ -27,7 +27,7 @@
 
 !!! question "FAQs"
     - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../gh-actions/gh-overview.md) with any browser on any computer.
-    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can but only if your PC uses Intel chips. Please read this FAQ about using a [Virtual Machine](../faqs/FAQs.md#can-i-use-a-pc-or-windows-computer-to-build).
+    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can but only if your PC uses Intel chips. Please read this FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build).
     - **"How often do I need to use the computer if I choose the build with *Mac* method?"** Computer access is required when
         * Initially installing the Loop app
         * Loop app expires (Annually for a paid account or weekly for a free account)
