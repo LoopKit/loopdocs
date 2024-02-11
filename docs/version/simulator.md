@@ -18,7 +18,7 @@ Follow the normal instructions to build with browser, install the app on a compa
 * Can build the simulator with a free Apple Developer ID
     * [Build to Mac (no phone required)](#build-to-a-simulated-phone-on-mac-computer)<br>
     or
-    * [Build to compatible phone](#build-with-mac-to-a-real-phone-using-free-account)
+    * [Build to a Compatible Phone using *Mac* Build](#build-to-a-compatible-phone-using-mac-build)
 
 ## Build to a Simulated Phone on Mac Computer
 
