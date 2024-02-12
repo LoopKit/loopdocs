@@ -85,7 +85,7 @@ Click in the comments for a full index of topics.  If you have issues with a par
 
 ## :material-triangle: Step 1 of 12
 
-> :material-triangle: Step 1 of 12 steps is Prerequisites, things you must complete before you start.
+> :material-triangle: Step 1 of 12 is Prerequisites, things you must complete before you start.
 
 ## Prerequisites
 
@@ -699,7 +699,7 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 
 ## :material-triangle: Step 5 of 12
 
-> :material-triangle: Step 5 of 12 is to Validate Secrets. This step has 2 :material-dots-triangle: Substeps.
+> :material-triangle: Step 5 of 12 is Validate Secrets. This step has 2 :material-dots-triangle: Substeps.
 
 ## :material-dots-triangle: Substep 5.1 for Step 5
 
