@@ -57,13 +57,17 @@
 
 This page contains fully detailed steps including graphics, which makes it incredibly long.
 
+Responding to a user request, step number indicators were added to this page.
+
+* If you do not understand a step, back up a step or substep and review the material again
+* If you learn better watching a video, you may find this video useful as an accompaniment to your building journey
+    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
+
 Some sections have a Section Summary:
 
 * To view the summary, click on the summary header
 * If the summary is all you need, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
 * Or follow the detailed instructions below the summary
-
-As you configure for Browser Build, you go back and forth between *GitHub* and *Apple Developer* webpages. Use click to open a new tab or copy a link address, as appropriate, while proceeding.
 
 An automatic table of contents (TOC) should appear for each page on the right side of your browser (if the browser is "wide" enough). If not, tap on the hamburger menu (upper left) and then this page name to see the TOC.
 
@@ -77,7 +81,11 @@ In addition to this page, there is a narrated video of each step needed to build
 
 * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
-Click in the comments for a full index of topics.  If you have issues with a step, use the index to  advance to the relevant part of the video. Subtitles are  in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
+Click in the comments for a full index of topics.  If you have issues with a part of this page, use the index to advance to the relevant part of the video. Subtitles are in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
+
+## :material-triangle: Step 1 of 12
+
+> :material-triangle: Step 1 of 12 is Prerequisites, things you must complete before you start.
 
 ## Prerequisites
 
@@ -166,7 +174,13 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 
     If you use a smart editor to store your FASTLANE_KEY, you are likely to get the mysterious `invalid curve name` error.
 
-## Save Six Secrets
+## :material-triangle: Step 2 of 12
+
+> :material-triangle: Step 2 of 12 is Save Six <code>Secrets</code>.
+
+> The creation of accounts at *Apple* and *GitHub*, if you don't already have them, are not numbered. Using those accounts, there are 5 :material-dots-triangle: Substeps for Step 2.
+
+## Save Six <code>Secrets</code>
 
 ??? abstract "Section Summary (click to open/close)"
     You require 6 <code>Secrets</code> (alphanumeric items) to use the <code>*GitHub* Browser Build</code> method and if you use the <code>*GitHub* Browser Build</code> method to build more than Loop, e.g., <code>Loop Follow</code> or <code>Loop Caregiver</code>, you **must** use the same 6 <code>Secrets</code> for each app you build with this method.
@@ -243,6 +257,10 @@ If not, you need to purchase one ($99 annual fee). It may take a few days for th
 * LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [*Apple Developer* account](https://developer.apple.com){: target="_blank" } to sign up
 
+### :material-dots-triangle: Substep 2.1 for Step 2
+
+> Next section, Find <code>TEAMID</code>, is :material-dots-triangle: Substep 1 out of 5 for Step 2.
+
 ### Find <code>TEAMID</code>
 
 Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
@@ -271,6 +289,10 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
         * <code>TEAMID</code> must be 10 characters
         * Avoid typing an&nbsp;<span class="loop-biggest">`8`</span>&nbsp;when it should be a&nbsp;<span class="loop-biggest">`B`</span>
+
+### :material-dots-triangle: Substep 2.2 for Step 2
+
+> Next section, Generate `API Key`, is :material-dots-triangle: Substep 2 out of 5 for Step 2.
 
 ### Generate `API Key`
 
@@ -304,6 +326,10 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
     * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop-down menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
+
+### :material-dots-triangle: Substep 2.3 for Step 2
+
+> Next section, Copy `API Key Secrets`, is :material-dots-triangle: Substep 3 out of 5 for Step 2. In this :material-dots-triangle: Substep you are dealing with 2 of the Apple <code>Secrets</code>.
 
 ### Copy `API Key Secrets`
 
@@ -390,6 +416,10 @@ Decide on a couple of usernames that you will be happy with - this will get embe
 
 The free level comes with plenty of storage and compute time to build the *Loop* app.
 
+### :material-dots-triangle: Substep 2.4 for Step 2
+
+> Next section, Create `GitHub Personal Access Token`, is :material-dots-triangle: Substep 4 out of 5 for Step 2.
+
 ### Create `GitHub Personal Access Token`
 
 ??? abstract "Section Summary (click to open/close)"
@@ -433,11 +463,23 @@ You must be logged into your *GitHub* account before starting this step. If you 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
 
+### :material-dots-triangle: Substep 2.5 for Step 2
+
+> Next section, Make up a Password, is :material-dots-triangle: Substep 5 out of 5 for Step 2.
+
 ### Make up a Password
 
 If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>.
 
+## :material-triangle: Step 3 of 12
+
+> :material-triangle: Step 3 of 12 is Prepare your Repositories. This step has 2 :material-dots-triangle: Substeps.
+
 ## Prepare your Repositories
+
+### :material-dots-triangle: Substep 3.1 for Step 3
+
+> Next section, Create Match-Secrets, is :material-dots-triangle: Substep 1 of 2 for Step 3. This is done only one time for a given GitHub username.
 
 ### Create Match-Secrets
 
@@ -482,6 +524,12 @@ A screen will appear with a lot of options - do **not** do anything on this scre
 {align="center"}
 
 You will not directly interact with your `Match-Secrets` repository.
+
+### :material-dots-triangle: Substep 3.2 for Step 3
+
+> Next section, Fork LoopWorkspace, is :material-dots-triangle: Substep 2 out of 2 for Step 3.
+
+> If you are creating an app other than the *Loop* app, you substitute the appropriate URL for the app you are building.
 
 ### Fork LoopWorkspace
 
@@ -528,6 +576,17 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
+
+## :material-triangle: Step 4 of 12
+
+> :material-triangle: Step 4 of 12 is Configure <code>Secrets</code>. This step does not have :material-dots-triangle: Substeps, however, you must enter all 6 `SECRETS`.
+
+??? abstract "Feeling confident? Planning to build more than one app? Click to see more."
+    If you are already feeling overwhelmed - skip this tip.
+
+    If you plan to build more that one app, you will making a fork of each repository associated with each app, and then you must add the 6 <code>Secrets</code> to each repository. It is not hard but it can get tiresome.
+
+    There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](gh-other-apps.md#use-a-github-organization-account){: target="_blank" }
 
 ## Configure <code>Secrets</code>
 
@@ -638,6 +697,14 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 !!! tip "Time for a Break?"
     :fontawesome-regular-circle-pause: This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
+## :material-triangle: Step 5 of 12
+
+> :material-triangle: Step 5 of 12 is Validate Secrets. This step has 2 :material-dots-triangle: Substeps.
+
+## :material-dots-triangle: Substep 5.1 for Step 5
+
+> Next section, First Use of Actions Tab, is :material-dots-triangle: Substep 1 out of 2 for Step 5. This is done only once for a given repository.
+
 ## First Use of Actions Tab
 
 Near the top middle of your <code>LoopWorkspace</code> &nbsp;<span class="notranslate">fork</span>&nbsp; is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
@@ -655,6 +722,9 @@ The `workflows` are now displayed on the left side as shown in the graphic below
 ![workflows displayed](img/gh-workflows-enabled.svg){width="700"}
 {align="center"}
 
+## :material-dots-triangle: Substep 5.2 for Step 5
+
+> Next section, Validate <code>Secrets</code>, is :material-dots-triangle: Substep 2 out of 2 for Step 5. This should only be needed one time, unless you modify any of your <code>Secrets</code>.
 
 ## Validate <code>Secrets</code>
 
@@ -693,6 +763,14 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
     * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
 
+## :material-triangle: Step 6 of 12
+
+> :material-triangle: Step 6 of 12 is <code>Add Identifiers</code>. This step has no :material-dots-triangle: Substeps.
+
+> This should only be needed one time, unless the developers add or modify an identifier.
+
+> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+
 ## <code>Add Identifiers</code>
 
 ??? abstract "Section Summary (click to open/close)"
@@ -723,11 +801,24 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
     * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
+
+## :material-triangle: Step 7 of 12
+
+> :material-triangle: Step 7 of 12 is Configure Identifiers for Loop. This step has 2 :material-dots-triangle: Substeps, some of which may not be required but are numbered so you can check them off.
+
+> This should only be needed one time, unless the developers add or modify an identifier.
+
+> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+
 ## Configure Identifiers for Loop
 
-Some steps can be skipped if you previously built the *Loop* app with `*Mac*`.
+Some steps can be skipped if you previously built the *Loop* app with a *Mac* using *Xcode*.
 
 Please read carefully to avoid confusion.
+
+### :material-dots-triangle: Substep 7.1 for Step 7
+
+> Next section, Create `App Group`, is :material-dots-triangle: Substep 1 out of 2 for Step 7. This is only required one time and can be skipped if you previously built this app with Xcode.
 
 ### Create `App Group`
 
@@ -752,7 +843,7 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
     * A mistake here means you will not be able to build the *Loop* app until you fix it
 1. Click `Continue` and then `Register`.
 
-### Add `App Group` to Identifiers
+### Identifiers for the *Loop* app (3.2.x and before)
 
 [<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using *Mac*, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
@@ -770,7 +861,7 @@ Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](http
 
 Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
 
-#### Table with Name and Identifier for `Loop 3`
+#### Table with Name and Identifier up through `Loop 3.2.x`
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -785,6 +876,14 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
     The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using the dev branch until the next release. At that time, this table will be updated.
 
     If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes).
+
+### :material-dots-triangle: Substep 7.2 for Step 7
+
+> Next section, Add or Review Configuration for `Loop Identifier`, is :material-dots-triangle: Substep 2 out of 2 for Step 7.
+
+> This should only be needed one time, unless the developers add or modify an identifier.
+
+> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
 
 ### Add or Review Configuration for `Loop Identifier`
 
@@ -861,7 +960,7 @@ You will now be checking the status for 3 more identifiers to ensure the `App Gr
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
 | `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
 
-!!! tip "Double-check when finished with this step"    
+!!! tip "Double-check when finished with this step"
     When you think you have completed this step, double check to make sure all 4 `Identifiers` listed in the table have the `App Group` added.
 
     If not, `Create Certificates` will succeed but `Build Loop` will fail.
@@ -899,6 +998,12 @@ If you did not need to make changes, the `Save` button will not be active.
 * Tap on the `< All Identifiers` button at the top left
 
 The full list of Identifiers should be displayed again.
+
+## :material-triangle: Step 8 of 12
+
+> :material-triangle: Step 8 of 12 is Create Loop App in App Store Connect. This step has no :material-dots-triangle: Substeps. It is only required one time.
+
+> If you are building other apps using this page as a guide, you must complete this step one time for each app.
 
 ## Create Loop App in App Store Connect
 
@@ -993,6 +1098,15 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 * You are done with this step and ready to Create Certificates
 
+## :material-triangle: Step 9 of 12
+
+> :material-triangle: Step 9 of 12 is `Create Certificates`. This step has no :material-dots-triangle: Substeps.
+
+> The next section will be required again in the future for these cases:
+>
+> * When your certificates have expired (after one year) and you need to [Renew Certificates](gh-update.md#renew-certificate){:target="_blank"}
+> * When the developers have modified the Identifiers; this requires Create Certificates to be run after you successfully run Add Identifiers and update the new Identifiers
+
 ## `Create Certificates`
 
 ??? abstract "Section Summary (click to open/close)"
@@ -1018,6 +1132,12 @@ Refer to the graphic below for the numbered steps:
 1. Wait a minute or two for the action to finish
     * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
     * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then `Create Certificates`. (The <code>Add Identifiers</code> might not be required but it is fast and should be done as a matter of routine.)
+
+## :material-triangle: Step 10 of 12
+
+> :material-triangle: Step 10 of 12 is Build the *Loop* App. This step has no :material-dots-triangle: Substeps.
+
+> The next section is repeated every time you need to manually build. With the next release, building can be configured to be automatic, but for now, plan to run this once a month so you always have a fresh build in your *TestFlight* app.
 
 ## Build the *Loop* App
 
@@ -1072,16 +1192,13 @@ Did you get a red X? Head over to the [Errors with Browser](gh-errors.md) to pag
 
 If you get the green check mark, your app successfully built. Just a few more steps.
 
-### One Time Only (per User)
+## :material-triangle: Step 11 of 12
 
-* Add users to your `App Store Connect` Users and Access by following the directions at [Set Up Users and Access (TestFlight)](#set-up-users-and-access-testflight)
-* Continue following instructions to create an Internal Testing group for *TestFlight* for the *Loop* app
-* Add the Users to the Internal Group and they get an email they must confirm
+> :material-triangle: Step 11 of 12 is Set Up Users and Access (TestFlight). This step has no :material-dots-triangle: Substeps.
 
-### Each Time
+> The next section is repeated if you need to add a User to your account. For example, you want to add another adult who can install the app on your child's phone or you want a spouse or friend to have a copy of the app on their phone as backup for a trip.
 
-* Go to the phone for installing the updated app from *TestFlight*
-* If you already set up your users, skip ahead to [Install on Phone](gh-deploy.md)
+> As a developer, you are already included as a user with the Role of Account Holder, Admin.
 
 ## Set Up Users and Access (TestFlight)
 
@@ -1121,6 +1238,12 @@ You are configuring a private capability for your family using an Internal Testi
 
     ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
     {align="center"}
+
+## :material-triangle: Step 12 of 12
+
+> :material-triangle: Step 12 of 12 is Install on Phone. This step has no :material-dots-triangle: Substeps.
+
+> The next section is repeated for every phone that you want to install a given build from *TestFlight*. Because a *TestFlight* app only last 90 days, you should probably build and install at least every 60 days.
 
 ## Install on Phone
 
