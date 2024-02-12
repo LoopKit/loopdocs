@@ -70,6 +70,10 @@ Instructions to make updates are found at:
 
 * [Update with Browser](gh-update.md)
 
+There is also a helpful video for this process:
+
+* [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
+
 ## Errors while Building
 
 If you get an error, please consult:

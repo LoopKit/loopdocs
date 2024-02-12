@@ -11,9 +11,9 @@
     - Check if you need to renew certificates (once a year only)
     - 5 min: Update version if a new one is available
     - 5 min: Start the Build
-    - Wait for the build to complete and appear in the *TestFlight* app on your phone
-        * about an hour
+    - 1 hour: Wait for the build to complete and appear in the *TestFlight* app on your phone
         * depends on *GitHub*, *Apple* and *TestFlight*
+    - 5 min: Install from *TestFlight* onto your phone
 
     Once a Year [Renew Certificate](#renew-certificate)
 
@@ -55,16 +55,22 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 ## How to Update or Rebuild
 
 !!! abstract "Summary of Update Steps"
-    * [Accept Agreements](#accept-agreements)
-    * [Renew Certificate](#renew-certificate) **(once a year)**
-    * [Update `Fork`](#update-fork)
-    * [Build the *Loop* App](#build-the-loop-app)
-    * [Wait for *TestFlight*](#wait-for-testflight)
-    * [Install or Confirm Installation](#install-or-confirm-installation)
+    1. [Accept Agreements](#accept-agreements)
+    2. [Renew Certificate](#renew-certificate) **(once a year)**
+    3. [Update `Fork`](#update-fork)
+    4. [Build the *Loop* App](#build-the-loop-app)
+    5. [Wait for *TestFlight*](#wait-for-testflight)
+    6. [Install on Phone](#install-the-loop-app-on-the-phone)
 
     Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 
+    There is also a helpful video for updating (it does not include the Renew Certificates step, which is only done once a year):
+
+    * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
+
 ### Accept Agreements
+
+> This is Step 1 of 6 - it may not always be necessary, but please check every time.
 
 Sign in to your [Apple Developer account](https://developer.apple.com/account){: target="_blank" }. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.
 
@@ -83,6 +89,8 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     If your build with browser fails, wait longer. An hour wait was reported by one person.
 
 ### Renew Certificate
+
+> This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your `Distribution Certificate` expires.
 
 **Once a year, you need to renew your `Distribution Certificate` to continue using the build with browser method.**
 
@@ -131,6 +139,8 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 ### Update `Fork`
 
+> This is Step 3 of 6 - it may not always be necessary, but please check every time.
+
 Open your *GitHub* account and select your <code>LoopWorkspace repository</code> from your repositories list.
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
@@ -146,6 +156,8 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
     Yes: please follow instructions at [Build Development Version](#build-development-version)
 
 ### Build the *Loop* App
+
+> This is Step 4 of 6 - this is always required.
 
 If you have successfully built Loop 3.4 with automatic build configuration enabled and later decide to manually build Loop, all that is required is to run the action: Build Loop for your fork and skip ahead to [Wait for TestFlight](#wait-for-testflight).
 
@@ -210,14 +222,19 @@ You'll receive an App Store Connect email confirming that the build has complete
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
 
+### Install the *Loop* app on the phone
+
+> This is Step 6 of 6 - once you finish this, you are done and your app will last 90 days.
+
+Open the *TestFlight* app on the Loopers phone and install the most recent version of the *Loop* app. Most Loopers have automatic update disabled on their phones, so this is a manual process. **Don't forget.**
+
 The updated app will show up in your&nbsp;<span translate="no">TestFlight</span>&nbsp;app.
 
 * Your new app will have "Expires in 90 days"
     * It takes time for the update to show up in the&nbsp;<span translate="no">TestFlight</span>&nbsp;app
     * There may be older builds that are still in&nbsp;<span translate="no">TestFlight</span>
+    * Wait for the one that expires in about 90 days
 * You will also see a build number in parentheses, that number increments each build
-
-### Install or Confirm Installation
 
 #### TestFlight Automatic Update Disabled
 
