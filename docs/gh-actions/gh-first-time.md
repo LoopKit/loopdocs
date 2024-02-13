@@ -231,7 +231,7 @@ You need to save your information digitally, so you can copy and paste. The info
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
         * Need help? Look at this section on the update page: [Accept Agreements](gh-update.md#accept-agreements)
     1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
-    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/api){: target="_blank" } interface, click the "Keys" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
+    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" } interface, click the "Integrations" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
     1. [Record three more secrets](#copy-api-key-secrets)
         * Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
         * Record the key id; this will be used for `FASTLANE_KEY_ID`.
@@ -301,14 +301,14 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
     If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](#configure-secrets) until your *Apple* account is active.
 
-1. Click this link in a new tab: [`App Store Connect/Access/API`](https://appstoreconnect.apple.com/access/api){: target="_blank" }
+1. Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" }
 
     * The top of the display is shown in the graphic below
 
     ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
     {align="center"}
 
-    * Click the `Keys` tab as indicated in the graphic above
+    * Click the `Integrations` tab as indicated in the graphic above
         * If this is your first time here, you will see:
 
             "`Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
@@ -333,7 +333,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
 ### Copy `API Key Secrets`
 
-The `Keys` screen appears again with content similar to the graphic below; the key information is blanked out for security.
+The `Integrations` screen appears again with content similar to the graphic below; the key information is blanked out for security.
 
 Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](#configure-secrets)
 
