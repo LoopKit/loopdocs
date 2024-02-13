@@ -43,7 +43,7 @@ The simulators for the Pump and CGM, for the `dev` branch show a new format when
 
 ### Algorithm Experiments
 
-Two algorithm experiments have been added to `dev``. These are &nbsp;<span translate="no">Glucose Based Partial Application</span>&nbsp; and &nbsp;<span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added to `dev`. These are &nbsp;<span translate="no">Glucose Based Partial Application</span>&nbsp; and &nbsp;<span translate="no">Integral Retrospective Correction</span>. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
@@ -196,7 +196,7 @@ Note that the automatic build feature is opt-out. In other words, unless you tak
 * Automatically build a new version once a month, with automatic update included
 * Automatically update your fork of LoopWorkspace once a week if updates are available
 
-It is strongly recommended that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;_<span translate="no">Loop</span>_&nbsp;in their  *TestFlight*  app.
+It is suggested that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;_<span translate="no">Loop</span>_&nbsp;in their  *TestFlight*  app.
 
 For users of the `dev` branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
 
@@ -235,7 +235,7 @@ The code that feeds Loop data to remote services like Tidepool and Nightscout ha
 
 There is a lot of discussion about *branches* with *Loop* but the concept is simple. Basically, they are all slightly different versions of *Loop*...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about the software and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s){: target="_blank" } created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video that `master` was the old name for the `main` branch. The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` recommended for developers/testers.
+To really understand what branches are, we should probably explain a little more about the software and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s){: target="_blank" } created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video that `master` was the old name for the `main` branch. The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` suggested for developers/testers.
 
 ### `Loop` GitHub Information
 
