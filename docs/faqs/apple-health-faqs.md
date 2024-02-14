@@ -80,7 +80,7 @@ The relationship between *Loop* and *Apple* HealthKit is very important to under
 * If you delete an entry from the `Event History` list, but leave that same entry in Health, *Loop* reads it back from Health
     * It will not show up in the Event History, but it will still contribute to IOB
     * You must delete a pump event from both `Event History` and Health data; it is best if you do this within one loop cycle
-    * If that dose showed up in `Event History`` but you could not find it in Health, look again after the next loop cycle
+    * If that dose showed up in `Event History` but you could not find it in Health, look again after the next loop cycle
 * If you delete an entry from Health, but leave that same entry in `Event History`, *Loop* reports it to Health again
     * You must delete a pump event from both the `Event History` list and Health data; it is best if you do this within one loop cycle
 

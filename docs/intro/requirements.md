@@ -2,8 +2,9 @@
 
 With the release of&nbsp;_<span translate="no">Loop 3</span>_&nbsp;, there are two ways to build the app.
 
-* If you have never built&nbsp;_<span translate="no">Loop</span>_&nbsp;before, we recommend you use the Build with Browser method.
-* If you use a Mac and keep the operating system up to date all the time, then you may prefer the Build with *Mac* method.
+* If you have never built&nbsp;_<span translate="no">Loop</span>_&nbsp;before:
+    * If you already own a Mac then you may prefer the Build with Mac method
+    * For all others, you will probably prefer the Build with Browser method
 
 The Build Steps have been split into two tabs:
 
