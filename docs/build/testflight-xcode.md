@@ -14,7 +14,7 @@ Some useful features of using TestFlight to install Loop:
 * You can update Loop on your kid's phone while they're away at college
 * Reinstalling Loop on the fly is quick and easy from your phone, even if you accidentally delete the app, see [Protect that App](build-app.md#protect-that-app), or need to install Loop on a brand new phone
 
-Since apps built with TestFlight expire after 90 days, it is recommended you also setup a build using the [Build with Browser](../gh-actions/gh-overview.md) method even if you don't plan on using it. The GitHub build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:
+Since apps built with TestFlight expire after 90 days, it is suggested you also setup a build using the [Build with Browser](../gh-actions/gh-overview.md) method even if you don't plan on using it. The GitHub build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:
 
 * Your Xcode built Loop in TestFlight expires
 * An urgent update to Loop is released

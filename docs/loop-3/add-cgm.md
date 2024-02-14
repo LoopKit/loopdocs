@@ -89,7 +89,7 @@ You can find the **transmitter ID** in your Dexcom G6 app or on the back of the 
 ![picture of transmitter box with arrow and marking of transmitter id (sn)](img/dexcom-g6-transmitter-box-sn.svg){width="350"}
 {align="center"}
 
-It is recommended that you enable [Remote Upload from Loop](#remote-upload-from-loop).
+It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-loop).
 
 #### Change Dexcom Sensor
 
@@ -119,7 +119,7 @@ This is only available on Loop 3.
 
 You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.
 
-It is recommended that you enable [Remote Upload from Loop](#remote-upload-from-loop).
+It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-loop).
 
 ![graphic showing Loop searching for G7](img/g7.svg){width="500"}
 {align="center"}
@@ -168,7 +168,7 @@ In addition to the risks of missing data if the internet is not reliable, you mu
     
     There are third party apps that bring Libre data to your Loop phone and there are customization instructions starting at [Libre Support for Loop 3.2.x Code](../version/code-custom-edits.md#libre-support-for-loop-32x-code) that explain how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
     
-    It is recommended that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
+    It is suggested that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using direct bluetooth connection.
     
     The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during warmup of a new sensor (European Libre 2 using direct bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop 3. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a CGM with Loop 3 had serious overdose of insulin because of bad readings with a new sensor. The developers of xDrip4iOS fixed their application - so make sure you have the latest version. Those developers have no control over what is provided by Shuggah.
 
