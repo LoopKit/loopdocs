@@ -492,3 +492,41 @@ You can also get this message if the credit card used to purchase the Developer 
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
 
 If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
+
+## Extra Sections
+
+It is unlikely you will need these sections. They are being saved for the transition to version 3.4.x. The Match-Secrets repository is automatically created for you if you don't have one. The instructions below were used when you had to create yours manually.
+
+### Create Match-Secrets
+
+Open your github.com URL (this is `https://github.com/username`), (`username` is your GitHub account name).
+
+Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
+
+* Click on this link: [https://github.com/new](https://github.com/new){: target="_blank" }
+
+or
+
+* At the top right of the screen, click on the &plus; sign and select `New Repository`
+
+    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
+    {align="center"}
+
+This shows you a screen similar to the following graphic which has 3 regions highlighted:
+
+* In `Repository name`, type `Match-Secrets` (use a hyphen between `Match` and `Secrets`)
+* Be sure to check the  box **`Private`**  (red circle) to make the repository **private**
+* **Please confirm you selected the `Match-Secrets` repository as private.**
+* Scroll to the bottom of the page and tap on "`Create repository`"
+
+![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
+{align="center"}
+
+A screen will appear with a lot of options - do **not** do anything on this screen.
+
+* Click on your username (as indicated by the red rectangle) to return to your main *GitHub* URL.
+
+![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
+{align="center"}
+
+You will not directly interact with your `Match-Secrets` repository.
