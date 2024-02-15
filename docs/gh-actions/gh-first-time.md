@@ -489,53 +489,11 @@ If you have not already made up a password, do it now and record it as <code>MAT
 
 ## :material-triangle: Step 3 of 12
 
-> :material-triangle: Step 3 of 12 is Prepare your Repositories. This step has 2 :material-dots-triangle: Substeps.
+> :material-triangle: Step 3 of 12 is Prepare your Repository. This step has no :material-dots-triangle: Substeps.
 
-## Prepare your Repositories
+> Prior to version 3.3, you had to manually create a private Match-Secrets repository - now it is done for you automatically.
 
-### Create Match-Secrets
-
-??? abstract "Section Summary (click to open/close)"
-    The creation of the <code>Match-Secrets</code> repository is a common step for all <code>*GitHub* Browser Builds</code>; do this step only once. You must be logged into your *GitHub* account.
-
-    Click on the link to create a [new empty repository](https://github.com/new){: target="_blank" } titled <code>Match-Secrets</code>. It should be private.
-
-    Once created, you will not take any direct actions with this repository; it needs to be there for *GitHub* to use as you progress through the steps.
-
-    [<span class="loop-bigger">:material-skip-forward:</span>](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
-
-
-Open your github.com URL (this is `https://github.com/username`), (`username` is the name you chose above).
-
-Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
-
-* Click on this link: [https://github.com/new](https://github.com/new){: target="_blank" }
-
-or
-
-* At the top right of the screen, click on the &plus; sign and select `New Repository`
-
-    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
-    {align="center"}
-
-This shows you a screen similar to the following graphic which has 3 regions highlighted:
-
-* In `Repository name`, type `Match-Secrets` (use a hyphen between `Match` and `Secrets`)
-* Be sure to check the  box **`Private`**  (red circle) to make the repository **private**
-* **Please confirm you selected the `Match-Secrets` repository as private.**
-* Scroll to the bottom of the page and tap on "`Create repository`"
-
-![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
-{align="center"}
-
-A screen will appear with a lot of options - do **not** do anything on this screen.
-
-* Click on your username (as indicated by the red rectangle) to return to your main *GitHub* URL.
-
-![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
-{align="center"}
-
-You will not directly interact with your `Match-Secrets` repository.
+## Prepare your Repository
 
 ### Fork LoopWorkspace
 
@@ -547,7 +505,7 @@ You will not directly interact with your `Match-Secrets` repository.
 !!! warning "Existing Fork"
     If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-haveloopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
-1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
+1. Click this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
     * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-haveloopworkspace)
@@ -774,7 +732,12 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 > This should only be needed one time, unless the developers add or modify an identifier.
 
-> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+> For example going from version 3.2.x to version 3.4 requires this to be repeated.
+
+!!! warning "Update to Version 3.4"
+    The name and identifier for "`Small Status Widget`" was renamed to "`Loop Widget Extension`". If you previously built, you will need to run the Add Identifiers as directed on the [update page](gh-update.md#updating-from-32x-to-34){: target="_blank" } to add the renamed Identifier and Create Certificates for it.
+
+    If you previously built the `dev` branch, you already have this identifier.
 
 ## <code>Add Identifiers</code>
 
@@ -811,9 +774,7 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 > :material-triangle: Step 7 of 12 is Configure Identifiers for Loop. This step has 2 :material-dots-triangle: Substeps, some of which may not be required but are numbered so you can check them off.
 
-> This should only be needed one time, unless the developers add or modify an identifier.
-
-> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+> This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.
 
 ## Configure Identifiers for Loop
 
@@ -848,7 +809,7 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
     * A mistake here means you will not be able to build the *Loop* app until you fix it
 1. Click `Continue` and then `Register`.
 
-### Identifiers for the *Loop* app (3.2.x and before)
+### Identifiers for the *Loop* app
 
 [<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using *Mac*, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
@@ -866,7 +827,7 @@ Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](http
 
 Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3.4`. There may be other `Identifiers` here that are no longer used with the *Loop* app. Do not worry about those.
 
-#### Table with Name and Identifier up through `Loop 3.2.x`
+#### Table with Name and Identifier
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -877,23 +838,16 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 | `WatchApp` | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
-!!! warning "Loop dev Builders"
-    The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using the dev branch until the next release. At that time, this table will be updated.
-
-    If you are building with the dev branch, follow the directions at [One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes).
-
 ### :material-dots-triangle: Substep 7.2 for Step 7
 
 > Next section, Add or Review Configuration for `Loop Identifier`, is :material-dots-triangle: Substep 2 out of 2 for Step 7.
 
-> This should only be needed one time, unless the developers add or modify an identifier.
-
-> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+> This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.
 
 ### Add or Review Configuration for `Loop Identifier`
 
 ??? abstract "Section Summary (click to open/close)"
-    Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. A table was provided above that lists both `Names` and `Identifiers`. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step.
+    Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step. A table, provided above, lists both `Names` and `Identifiers` for all 6 if you are interested.
 
     Note 2 - Depending on your build history, you may find some of the Identifiers already have your "App Group" and you are just verifying the status.
 
@@ -926,7 +880,7 @@ Find and click on the row for the `Loop identifier` on the [Certificates, Identi
 The `Edit Your App ID Configuration` screen will open. Take one action for the each identifier listed in this table:
 
 1. In the `App Services` column, scroll down to the `App Groups` row
-    * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
+    * Confirm the check box (under the `Capabilities` column) for `App Groups` is checked
     * (`XC Loop`) - If the word `Edit` shows up under `NOTES`, move on to step 2 below
     * If the word `Configure` shows up, tap on it
         * This opens the `App Group Assignment` screen
@@ -945,6 +899,12 @@ If you did not need to make changes, the `Save` button will not be active.
 The full list of Identifiers should be displayed again.
 
 Repeat the steps until you have completed all 4 `Identifiers` in the table above. Yes - there are 6 `Identifiers` created, but only 4 need the `AppGroup` added.
+
+## :material-triangle: Step 8 of 12
+
+> :material-triangle: Step 8 of 12 is Create Loop App in App Store Connect. This step has no :material-dots-triangle: Substeps. It is only required one time.
+
+> If you are building other apps using this page as a guide, you must complete this step one time for each app.
 
 ## Create Loop App in App Store Connect
 
