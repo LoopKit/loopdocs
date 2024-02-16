@@ -861,7 +861,7 @@ Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](http
 
 Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
 
-#### Table with Name and Identifier up through `Loop 3.2.x`
+#### Table with Name and Identifier for `Loop 3`
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -950,7 +950,7 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
-### Add `App Group` to Other Identifiers
+### Add `App Group` to Identifiers
 
 You will now be checking the status for 3 more identifiers to ensure the `App Group` is configured to use the `Loop` *App Group*. You must add or confirm the *App Group* for these 3 identifiers (for released code):
 
@@ -1068,7 +1068,7 @@ This section is for people who were not able to follow the instructions in the l
 
 There are two possible reasons:
 
-1. You did not complete [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers) or one of the predecessor steps; review those steps
+1. You did not complete [Add `App Group` to Identifiers](#add-app-group-to-identifiers) or one of the predecessor steps; review those steps
 1. Your app is already in *App Store Connect*, but you cannot see it
 
 You may have no memory of ever setting up `Loop` in *App Store Connect*. If you previously used some kind of remote build, like `diawi`, your `Loop` may be there as a *Removed App*.
@@ -1179,8 +1179,15 @@ Refer to the graphic below for the first four steps:
 1. You should get several emails
     * one says the build succeeded (or failed)
     * one says *TestFlight* is ready (typically half-hour after the build succeeds)
-    * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+    * Ignore the one that says you need to fix "issues" in your app
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps){: target="_blank" }.
+
+#### *Apple* Email to Ignore
+
+You can ignore an email from *Apple* that there are things you must fix in your app:
+
+*  There is no action you need to take - the developers will handle any updates that are required before it affects your ability to build the app
+* Other warnings only address issues if you were selling the app in the app store, but it is for your own personal use
 
 ## Build Failed?
 
@@ -1309,6 +1316,6 @@ If you were just trying to clean up the identifiers, then follow these steps:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
 * If you did not complete the [Add or Review Configuration for Loop Identifier](#add-or-review-configuration-for-loop-identifier) step, do it now
-* Complete the [Add `App Group` to Other Identifiers](#add-app-group-to-other-identifiers)
+* Complete the [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
 * Continue with [Create Certificates](#create-certificates) and then [Build the *Loop* App](#build-the-loop-app)
