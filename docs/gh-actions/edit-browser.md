@@ -7,26 +7,22 @@
     * You can often use the same customization for several releases
     * If a customization that you prepared for an older release says "does not apply" when you use it, you'll need to prepare a new one
 
-
 !!! warning "Modules vs Submodule"
-    This page has instructions to set up your own copy for the Modules, otherwise known as submodules, associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.
+    This page has instructions to set up your own <code>fork</code> for the Modules, otherwise known as submodules, associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.
 
-    Each Module has its own *GitHub* <code>repository</code>;and you will be working with your copy of that Module at https://github.com/username/Module, where username is your username.
-
-!!! warning "Copy vs&nbsp;<span translate="no">Fork</span>"
-    We use the word "copy" on this page but when you look at *GitHub*, you will see the word&nbsp;"<span translate="no">Fork</span>".
+    Each Module has its own *GitHub* <code>repository</code>;and you will be working with your <code>fork</code> of that Module at https://github.com/username/Module, where username is your username.
 
 !!! question "What is a SHA-1?"
     SHA-1 means Secure Hash Algorithm 1; which is used to generate an alphanumeric code.
 
-    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied. These work for any compatible copy taken from the original&nbsp;<span translate="no">GitHub repository</span>.
+    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied. These work for any compatible <code>fork</code> taken from the original&nbsp;<span translate="no">GitHub repository</span>.
     
-### Do Not Make a Pull Request to Original Copy
+### Do Not Make a Pull Request to LoopKit GitHub Username
 
 !!! important "Ignore&nbsp;<span translate="no">Compare & pull request</span>&nbsp;Prompts"
     Please do not click on boxes that *GitHub* might show you that ask if you want to**&nbsp;<span translate="no">Compare & pull request</span>**.
     
-    This would be an attempt to merge changes from your copy back to the original version that everyone uses. These changes are for you only. Ignore those prompts.
+    This would be an attempt to merge changes from your <code>fork</code> back to the original version that everyone uses. These changes are for you only. Ignore those prompts.
 
 ## Overview
 
@@ -47,12 +43,12 @@
     * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../version/code-custom-edits.md) page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
     * *GitHub* (each Module):
-        1. Copy Module (if needed) - this is your copy where you will make changes
+        1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
         1. Sync the Module (if needed)
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes
         1. Prepare lines needed for each customization and save
-    * <span translate="no">GitHub (LoopWorkspace)</span> - using your copy where you will make changes
+    * <span translate="no">GitHub (LoopWorkspace)</span> - using your <code>fork</code> where you will make changes
         1. You will use the pencil tool to edit build_loop.yml
         1. Add customization lines to the file
         1. Save your changes
@@ -82,16 +78,16 @@ Decide which [LoopDocs: Code Customization](../version/code-custom-edits.md) cha
 ## Outline of What Happens in the Module
 
 !!! warning "Review Only"
-    Review this section so you know what to expect. The actual steps will come later, starting with [Create your Copy for Selected Module](#create-your-copy-for-selected-module) or [Edit Module in Browser](#edit-module-in-browser).
+    Review this section so you know what to expect. The actual steps will come later, starting with [Create your <code>Fork</code> for Selected Module](#create-your-fork-for-selected-module) or [Edit Module in Browser](#edit-module-in-browser).
 
 In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. This section tries to explain what you will be doing once you start editing with a given Module.
 
-1. Make a copy if you don't have one
+1. Make a <code>fork</code> if you don't have one
 1. Change the line(s) of code desired for your customization(s)
 1. Save the change(s) using descriptive comments
 1. Repeat until done with this Module
 
-Later, you will use information from your copy to create your customizations. (Suggestion - use same file as your Secrets, or at least keep the customization file in the same folder). Details are found at the [Prepare the Customizations](#prepare-the-customizations) section.
+Later, you will use information from your <code>fork</code> to create your customizations. (Suggestion - use same file as your Secrets, or at least keep the customization file in the same folder). Details are found at the [Prepare the Customizations](#prepare-the-customizations) section.
 
 ### Error Committing Your Changes
 
@@ -106,13 +102,13 @@ This is fairly rare, but it can happen. A user got this error when editing a fil
 
 The solution was to make sure the email address in their GitHub profile was correct. See [GitHub Discussions](https://github.com/orgs/community/discussions/62507){: target="_blank" } for more information.
 
-## Create your Copy for Selected Module
+## Create your `Fork` for Selected Module
 
 Choose your link:
 
-* [New Copy](#new-copy): if you do not have a copy of this Module
+* [New `Fork`](#new-fork): if you do not have a <code>fork</code> of this Module
 * [Code Updates](#code-updates): if you are returning after a new release
-* [Existing Copy for Module](#existing-copy-for-module): if you have a copy but need guidance on whether it is the right copy
+* [Existing `Fork` for Module](#existing-fork-for-module): if you have a <code>fork</code> but need guidance on whether it is the right <code>fork</code>
 
 ### Code Updates
 
@@ -123,39 +119,39 @@ Choose your link:
 
     If a customization did not work, then
 
-    1. Go to your copy of each Module
+    1. Go to your <code>fork</code> of each Module
     2. Sync that Module to get the most recent version
 
     Skip ahead to [Edit Module in Browser](#edit-module-in-browser).
 
-### New Copy
+### New `Fork`
 
-If you want a modification that uses a particular Module, you must make a copy of that module to your account in *GitHub*. You will repeat the Copy and Modify steps for each module.
+If you want a modification that uses a particular Module, you must make a <code>fork</code> of that module to your account in *GitHub*. You will repeat the `Fork` and Modify steps for each module.
 
 1. Log into your *GitHub* account
 1. Click the URL in the [Module Table](#module-table)
-1. This opens a new browser tab at the URL of the module you need to copy
-1. Click on&nbsp;<span translate="no">Fork</span>, your copy will show up in the browser
+1. This opens a new browser tab at the URL of the module you need to <code>fork</code>
+1. Click on&nbsp;<span translate="no">Fork</span>, your <code>fork</code> will show up in the browser
 
 #### Module Table
 
 This table lists all the modules referred to on the Code Customization page linked above:
 
-| Module | Copy From |
+| Module | `Fork` From |
 | --- | --- |
 | <span translate="no">Loop</span> | [<span translate="no">https://github.com/LoopKit/Loop</span>](https://github.com/LoopKit/Loop){: target="_blank" } |
 | <span translate="no">LoopKit</span> | [<span translate="no">https://github.com/LoopKit/LoopKit</span>](https://github.com/LoopKit/LoopKit){: target="_blank" } |
 | <span translate="no">OmniBLE (for DASH)</span> | [<span translate="no">https://github.com/LoopKit/OmniBLE</span>](https://github.com/LoopKit/OmniBLE){: target="_blank" } |
 | <span translate="no">OmniKit (for Eros)</span> | [<span translate="no">https://github.com/LoopKit/OmniKit</span>](https://github.com/LoopKit/OmniKit){: target="_blank" } |
 
-Remember - you can only have a single copy of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a copy, you don't need another one; but it must be a linked to the URL listed the [Module Table](#module-table).
+Remember - you can only have a single <code>fork</code> of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a <code>fork</code>, you don't need another one; but it must be a linked to the URL listed the [Module Table](#module-table).
 
-!!! question "I already have a copy"
-    Go to [Existing Copy for Module](#existing-copy-for-module) and follow the directions.
+!!! question "I already have a <code>fork</code>"
+    Go to [Existing `Fork` for Module](#existing-fork-for-module) and follow the directions.
 
 #### Default Table
 
-When you&nbsp;"<span translate="no">fork a repository"</span> (make a copy), the default&nbsp;<span translate="no">branch</span>&nbsp;is the one that should be copied.
+When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;<span translate="no">branch</span>&nbsp;is the one that should be `forked`.
 
 | username/Repository | Default |
 | --- | --- |
@@ -166,7 +162,7 @@ When you&nbsp;"<span translate="no">fork a repository"</span> (make a copy), the
 
 ## Edit Module in Browser
 
-Open your browser to your https://github.com/username/Module URL. Be sure to sync your copy if it shows it is behind the&nbsp;<span translate="no">LoopKit repository</span>.
+Open your browser to your https://github.com/username/Module URL. Be sure to sync your <code>fork</code> if it shows it is behind the&nbsp;<span translate="no">LoopKit repository</span>.
 
 Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../version/code-custom-edits.md#instructions-for-finding-the-lines))
 
@@ -177,14 +173,14 @@ This section provides the steps to make a single customization for the Module. I
 
 ### Example GIF
 
-The GIF showing the creation of one customization is shown below. Please review the 4 frames of the GIF, read the detailed instructions below and then review the GIF again. In case you are concerned by the&nbsp;"<span translate="no">Pull Request</span>&nbsp;shown here; this is to your own copy, not back to the original.
+The GIF showing the creation of one customization is shown below. Please review the 4 frames of the GIF, read the detailed instructions below and then review the GIF again. In case you are concerned by the&nbsp;"<span translate="no">Pull Request</span>&nbsp;shown here; this is to your own <code>fork</code>, not back to the original.
 
 ![GitHub screen while creating a customization](img/browser-customize.gif){width="750"}
 {align="center"}
 
 ### Detailed Instructions
 
-You will be using the "pencil" tool in the browser display for your copy.
+You will be using the "pencil" tool in the browser display for your <code>fork</code>.
 
 !!! question "Are there detailed instructions?"
     For more information about editing with *GitHub*:
@@ -202,7 +198,7 @@ The bullets below go with Frame 1 of the [GIF](#example-gif) above:
 
 The bullets below go with Frame 2 of the [GIF](#example-gif) above:
 
-* You will be shown a screen where you create a pull request to your own copy (this does not go back to the original)
+* You will be shown a screen where you create a pull request to your own <code>fork</code> (this does not go back to the original)
 * First review the changes (shown at the bottom) and then click on the&nbsp;"<span translate="no">Create pull request</span>"&nbsp;button
 
 Between Frame 2 and 3 of the GIF, your display will look similar to the graphic below:
@@ -213,7 +209,7 @@ Between Frame 2 and 3 of the GIF, your display will look similar to the graphic 
 You see there an opportunity to&nbsp;<span translate="no">"Compare & pull request"</span>
 
 * Do **not** click on that
-    * This would be an attempt to merge changes from your copy back to the original
+    * This would be an attempt to merge changes from your <code>fork</code> back to the original
 
 The&nbsp;<span translate="no">branches</span>&nbsp;selection is highlighted with a brown rectangle in the graphic above. 
 
@@ -245,12 +241,12 @@ Repeat this process until you've done all your customizations for this Module an
 
 ## Prepare the Customizations
 
-Once you prepare the commands, then you will edit the build_loop.yml file of your copy of&nbsp;<span translate="no">LoopWorkspace</span>.
+Once you prepare the commands, then you will edit the build_loop.yml file of your <code>fork</code> of&nbsp;<span translate="no">LoopWorkspace</span>.
 
-!!! warning "Ensure your copy is from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>"
-    If your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing copy and make a new one. See [Already Have&nbsp;<span translate="no">LoopWorkspace</span>?](gh-first-time.md#already-haveloopworkspace).
+!!! warning "Ensure your <code>fork</code> is from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>"
+    If your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing <code>fork</code> and make a new one. See [Already Have&nbsp;<span translate="no">LoopWorkspace</span>?](gh-first-time.md#already-haveloopworkspace).
 
-    * Do not use any other location to create your copy
+    * Do not use any other location to create your <code>fork</code>
     * You may have used a different location for Loop 3.2.x
     * This will **not** be supported for Loop 3.4
 
@@ -269,7 +265,7 @@ where:
 * username is your *GitHub* username
 * Module is where you made the customization (Module is in multiple places)
 * SHA-1 is the full identifier for the desired change; there is a copy button to make this easy
-* adding&nbsp;`.patch`&nbsp;after the SHA-1 informs *GitHub* to format that code change so it can be applied to your copy
+* adding&nbsp;`.patch`&nbsp;after the SHA-1 informs *GitHub* to format that code change so it can be applied to your <code>fork</code>
 * the final&nbsp;<code> --directory=Module</code>&nbsp;is critical to apply the customization to the correct Module
 
 To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/username/Module/commit/SHA-1`.
@@ -314,7 +310,7 @@ For a given submodule, paste the comment / curl command as indicated in the temp
 
 The indenting needs to match, so tab or (shift-tab) to line up the columns.
 
-**Once you are done with all the edits for build_loop.yml you will commit the changes to your copy directly.**
+**Once you are done with all the edits for build_loop.yml you will commit the changes to your <code>fork</code> directly.**
 
 * Once you have finished the edits for build_loop.yml
 * Click on&nbsp;<span translate="no">Commit changes</span> (upper right)
@@ -386,18 +382,18 @@ If you want to do this yourself, this section explains the steps.
 
 ## Special Cases
 
-### Existing Copy for Module
+### Existing `Fork` for Module
 
-What if you already have a copy of one of the modules?
+What if you already have a <code>fork</code> of one of the modules?
 
-**Your existing copy is from a username other than LoopKit**
+**Your existing <code>fork</code> is from a username other than LoopKit**
 
-* If you know this is a copy you do not care about, you can delete the <code>repository</code>.
-* If you care about this copy, you are probably experienced enough to know how to solve the issue.
+* If you know this is a <code>fork</code> you do not care about, you can delete the <code>repository</code>.
+* If you care about this <code>fork</code>, you are probably experienced enough to know how to solve the issue.
 
 Instructions to delete a <code>repository</code> are found at&nbsp;[*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
 
-Once deleted, go to [Create Your Copy for Selected Module](#create-your-copy-for-selected-module).
+Once deleted, go to [Create Your `Fork` for Selected Module](#create-your-fork-for-selected-module).
 
 ## Background Information
 
@@ -409,4 +405,4 @@ The&nbsp;<span translate="no">LoopWorkspace repository</span>&nbsp;is the umbrel
 * <span translate="no">workspace</span>: a grouping of several repositories (Modules) into a complete package
 * <span translate="no">LoopWorkspace</span>: includes a list of the specific SHA-1 for each Module needed for the app
 
-You are telling *GitHub* to apply specific customizations when it builds your app for you. It makes a fresh copy of all the code needed, applies your specific customizations and then starts the build.
+You are telling *GitHub* to apply specific customizations when it builds your app for you. It extracts from *GitHub* all the code needed, applies your specific customizations and then starts the build.
