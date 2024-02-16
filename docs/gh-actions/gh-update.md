@@ -209,7 +209,10 @@ Otherwise, head over to [Errors with Browser](gh-errors.md).
 
 #### *Apple* Email to Ignore
 
-* You can ignore an email from *Apple* that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that
+You can ignore an email from *Apple* that there are things you must fix in your app:
+
+*  There is no action you need to take - the developers will handle any updates that are required before it affects your ability to build the app
+* Other warnings only address issues if you were selling the app in the app store, but it is for your own personal use
 
 ### Wait for *TestFlight*
 

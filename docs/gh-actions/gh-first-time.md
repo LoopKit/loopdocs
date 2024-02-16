@@ -1080,8 +1080,15 @@ Refer to the graphic below for the first four steps:
 1. You should get several emails
     * one says the build succeeded (or failed)
     * one says *TestFlight* is ready (typically half-hour after the build succeeds)
-    * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
+    * Ignore the one that says you need to fix "issues" in your app
 1. Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps){: target="_blank" }.
+
+#### *Apple* Email to Ignore
+
+You can ignore an email from *Apple* that there are things you must fix in your app:
+
+*  There is no action you need to take - the developers will handle any updates that are required before it affects your ability to build the app
+* Other warnings only address issues if you were selling the app in the app store, but it is for your own personal use
 
 ## Build Failed?
 
