@@ -1321,9 +1321,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-app-group-to-other-identifiers" class="md-nav__link">
+  <a href="#add-app-group-to-identifiers" class="md-nav__link">
     <span class="md-ellipsis">
-      Add App Group to Other Identifiers
+      Add App Group to Identifiers
     </span>
   </a>
   
@@ -4436,9 +4436,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-app-group-to-other-identifiers" class="md-nav__link">
+  <a href="#add-app-group-to-identifiers" class="md-nav__link">
     <span class="md-ellipsis">
-      Add App Group to Other Identifiers
+      Add App Group to Identifiers
     </span>
   </a>
   
@@ -5538,7 +5538,7 @@
 <h4 id="previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#previous-xcode-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Click this link: <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
 <p>Because you built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using <em><abbr title="program used to build an app">Xcode</abbr></em>, then the <strong><code>NAME</code></strong> associated with at least the <code>Loop identifier</code> will appear as <code>XC com.TEAMID.loopkit.Loop</code> under the <strong><code>NAME</code></strong> column. Ignore the <strong><code>NAME</code></strong> column and key off what you see under the <strong><code>IDENTIFIER</code></strong> column of the table. Only the six listed in the table below need to appear when building <code>Loop 3</code>.</p>
-<h4 id="table-with-name-and-identifier-up-through-loop-32x">Table with Name and Identifier up through <code>Loop 3.2.x</code><a class="headerlink" href="#table-with-name-and-identifier-up-through-loop-32x" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="table-with-name-and-identifier-for-loop-3">Table with Name and Identifier for <code>Loop 3</code><a class="headerlink" href="#table-with-name-and-identifier-for-loop-3" title="Anchor link to this Header on this Page">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -5669,7 +5669,7 @@
 <li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
-<h3 id="add-app-group-to-other-identifiers">Add <code>App Group</code> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-other-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You will now be checking the status for 3 more identifiers to ensure the <code>App Group</code> is configured to use the <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em>. You must add or confirm the <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> for these 3 identifiers (for released code):</p>
 <table>
 <thead>
@@ -5810,7 +5810,7 @@
 <p>This section is for people who were not able to follow the instructions in the last section because <code>com.TEAMID.loopkit.Loop</code>, with <strong><code>TEAMID</code></strong> matching your <code>TEAMID</code>, was not in the dropdown menu for <code>Bundle ID</code>.</p>
 <p>There are two possible reasons:</p>
 <ol>
-<li>You did not complete <a href="#add-app-group-to-other-identifiers">Add <code>App Group</code> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> or one of the predecessor steps; review those steps</li>
+<li>You did not complete <a href="#add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> or one of the predecessor steps; review those steps</li>
 <li>Your app is already in <em>App Store Connect</em>, but you cannot see it</li>
 </ol>
 <p>You may have no memory of ever setting up <code>Loop</code> in <em>App Store Connect</em>. If you previously used some kind of remote build, like <code>diawi</code>, your <code>Loop</code> may be there as a <em>Removed App</em>.</p>
@@ -5940,11 +5940,17 @@
 <li>You should get several emails<ul>
 <li>one says the build succeeded (or failed)</li>
 <li>one says <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is ready (typically half-hour after the build succeeds)</li>
-<li>Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.</li>
+<li>Ignore the one that says you need to fix "issues" in your app</li>
 </ul>
 </li>
 <li>Your app should eventually appear on <a href="https://appstoreconnect.apple.com/apps" target="_blank"><code>App Store Connect</code></a>.</li>
 </ol>
+<h4 id="apple-email-to-ignore"><em>Apple</em> Email to Ignore<a class="headerlink" href="#apple-email-to-ignore" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>You can ignore an email from <em>Apple</em> that there are things you must fix in your app:</p>
+<ul>
+<li>There is no action you need to take - the developers will handle any updates that are required before it affects your ability to build the app</li>
+<li>Other warnings only address issues if you were selling the app in the app store, but it is for your own personal use</li>
+</ul>
 <h2 id="build-failed">Build Failed?<a class="headerlink" href="#build-failed" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Did you get a red X? Head over to the <a href="../gh-errors/">Errors with Browser</a> to page find a solution.</p>
 <h2 id="successful-build">Successful Build<a class="headerlink" href="#successful-build" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -6062,7 +6068,7 @@
 <ul>
 <li>Run Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> to add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> with the documented short names</li>
 <li>If you did not complete the <a href="#add-or-review-configuration-for-loop-identifier">Add or Review Configuration for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Identifier</a> step, do it now</li>
-<li>Complete the <a href="#add-app-group-to-other-identifiers">Add <code>App Group</code> to Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
+<li>Complete the <a href="#add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li>If you did not complete the <a href="#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> step, do it now</li>
 <li>Continue with <a href="#create-certificates">Create Certificates</a> and then <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
 </ul>
