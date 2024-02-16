@@ -372,7 +372,7 @@ For example, you might see:
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
 
-Return to [Add App Group to Other Identifiers](gh-first-time.md#add-app-group-to-other-identifiers) and fix the missing items.
+Return to [Add App Group to Other Identifiers](gh-first-time.md#add-app-group-to-identifiers) and fix the missing items.
 
 You must create certificates again before you can build *Loop*:
 
