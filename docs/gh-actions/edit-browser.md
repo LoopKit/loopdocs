@@ -40,7 +40,7 @@
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
         * It is a good idea to test each customization as soon as you install the new build on your phone
-    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../version/code-custom-edits.md) page
+    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../version/code-custom-edits.md){: target="_blank" } page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
     * *GitHub* (each Module):
         1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
@@ -67,7 +67,7 @@ There is some background information at the bottom of this page starting at&nbsp
 
 ## Decide Which Modules You Want to Modify
 
-Decide which [LoopDocs: Code Customization](../version/code-custom-edits.md) changes you want to make. Each customization lists a Module name.
+Decide which [LoopDocs: Code Customization](../version/code-custom-edits.md){: target="_blank" } changes you want to make. Each customization lists a Module name.
 
 * DASH Pods: Use OmniBLE
 * Eros Pods: Use OmniKit
@@ -247,8 +247,8 @@ Once you prepare the commands, then you will edit the build_loop.yml file of you
     If your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing <code>fork</code> and make a new one. See [Already Have&nbsp;<span translate="no">LoopWorkspace</span>?](gh-first-time.md#already-haveloopworkspace).
 
     * Do not use any other location to create your <code>fork</code>
-    * You may have used a different location for Loop 3.2.x
-    * This will **not** be supported for Loop 3.4
+    * You may have used a different location for Loop 3.2.2
+    * This is **not** supported for Loop 3.2.3 or later
 
 For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the&nbsp;`curl`&nbsp;statement pointing to the SHA-1 that has the customization.
 
@@ -279,6 +279,10 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 * Find the folder .github/workflows and click on it
 * Find the file build_loop.yml and click on it
 * Click on the pencil (so you can edit this file)
+* If you are building dev, or if version 3.4 was just released - the directions are different
+    * Skip the part where you copy and paste the block of text - it's already included
+    * You will [Add Personal Customizations to build_loop.yml](#add-personal-customizations-to-build_loopyml) at or near line 239
+* If you are building main, before version 3.4 was released, keep going
 * Locate line 31, which is just above the words:
     * `# Patch Fastlane Match to not print tables`
 * Paste the contents of the block below so it comes before that section
@@ -303,6 +307,8 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 
 
 ```
+
+### Add Personal Customizations to build_loop.yml
 
 Open the text file in which you saved the customization lines.
 
