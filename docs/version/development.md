@@ -18,25 +18,17 @@ Right now it is empty.
 
 ## Updates from 3.2.2 to 3.4.0
 
-This section is the old [Updates in dev](development.md#updates-in-dev) repurposed with links to documentation for new features added after Loop 3.2.2 was released that were added to Loop 3.4.
+This section is the old [Updates in dev](development.md#updates-in-dev) repurposed with links to documentation for new features added after Loop 3.2.2 was released that were added to Loop 3.4. Most features have been inserted into the appropriate part of Settings and Features (indicated by the link iocn), but some items are still in this section.
 
-* [Support for Libre Sensors](#support-for-libre-sensors)
+* [Support for Libre Sensors](../loop-3/add-cgm.md#libre){: target="_blank" }
 * [Modified Simulator Interface](#modified-simulator-interface)
-* [Algorithm Experiments](../loop-3/features.md#algorithm-experiments)
-    * [<span translate="no">Glucose Based Partial Application</span> Factor](../loop-3/features.md#glucose-based-partial-application-gbpa)
-    * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/features.md#integral-retrospective-correction-irc)
-* [Favorite Foods](../loop-3/features.md#favorite-foods)
-* [<span translate="no">TestFlight Expiration Warning</span>](../gh-actions/gh-update.md#testflight-expiration-warning)
+* [Algorithm Experiments](../loop-3/settings.md#algorithm-experiments){: target="_blank" }
+    * [<span translate="no">Glucose Based Partial Application</span> Factor](../loop-3/settings.md#glucose-based-partial-application-gbpa){: target="_blank" }
+    * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/settings.md#integral-retrospective-correction-irc){: target="_blank" }
+* [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" }
+* [<span translate="no">TestFlight Expiration Warning</span>](../gh-actions/gh-update.md#testflight-expiration-warning){: target="_blank" }
 * [<span translate="no">GitHub Browser Build</span> Updates](#github-browser-build-updates)
 * [Miscellaneous Code Fixes](#miscellaneous-code-fixes)
-
-### <span>Support for <code>Libre</code> Sensors</span>
-
-[LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" } support was <span>merged into the `dev` branch</span> in July 2023.
-
-If you are using the *GitHub* / *Browser Build* method, please review: 
-
-* [Browser Build: One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes): New steps and dates at which the new steps were added
 
 ### Modified Simulator Interface
 
