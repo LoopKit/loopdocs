@@ -3,11 +3,32 @@ hide:
     - navigation
 ---
 
-## The *Loop* App
-
 Welcome to the *LoopDocs* website where you can learn about the *Loop* app.
 
-This site shows you step-by-step how to [**build**](intro/requirements.md), [**set up**](loop-3/loop-3-overview.md) and [**operate**](operation/loop/open-loop.md) the *Loop* app.
+## What is the *Loop* App?
+
+The *Loop* app is an automated insulin delivery application that you build and load on an iPhone.
+
+* You enter your personal therapy settings (e.g., basal rate schedule, carbohydrate ratio, insulin sensitivity)
+* You enter the meals you eat
+* &nbsp;_<span translate="no">Loop</span>_&nbsp;uses this information, your insulin on board (IOB) and glucose data, to determine insulin dosing to bring your blood glucose within the target range you set
+* You can choose to have&nbsp;_<span translate="no">Loop</span>_&nbsp;automatically control insulin dosing (Closed Loop mode) or have&nbsp;_<span translate="no">Loop</span>_&nbsp;recommend insulin that you manually accept or modify (Open Loop mode)
+
+![Loop main display on phone](img/phone-loop-3.svg){width="300"}
+![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
+
+### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
+
+!!! success "&nbsp;_<span translate="no">Loop</span>_&nbsp;Video"
+    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE){: target="_blank" } video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf){: target="_blank" } was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
+    * It is a great introduction, created when Reese was using an earlier version of Loop
+    * Special thanks to 
+        * Tina and Reese Hammer for the terrific video
+        * Matthew Fouse for his beautiful graphics
+
+## What are my next steps?
+
+This site shows you step-by-step how to [**build**](intro/requirements.md){: target="_blank" }, [**set up**](loop-3/loop-3-overview.md){: target="_blank" } and [**operate**](operation/loop/open-loop.md){: target="_blank" } the *Loop* app.
 
 * **You do not need a technical or computer background to do this**
 * **You can choose to build the *Loop* app several ways:**
@@ -26,29 +47,6 @@ There is a common saying in our community:
 Once you are using the app, you should regularly follow one or more support forums for important updates on the *Loop* app. Spending this time is important for success in building and operating the *Loop* app safely.
 
 This website is updated regularly to keep pace with development of the *Loop* app and *Apple* releases.
-
-## What is the *Loop* App?
-
-The *Loop* app is an automated insulin delivery application that you build and load on an iPhone.
-
-After building the *Loop* app:
-
-* You enter your personal therapy settings (e.g., carbohydrate ratio, basal rates, insulin sensitivity)
-* You enter the carbs you eat
-* &nbsp;_<span translate="no">Loop</span>_&nbsp;uses this information, your insulin on board (IOB) and glucose data, to determine how much insulin you need to bring your blood glucose within the target range you set
-* You can choose to have&nbsp;_<span translate="no">Loop</span>_&nbsp;automatically control insulin dosing (closed-loop mode) or have&nbsp;_<span translate="no">Loop</span>_&nbsp;recommend insulin that you manually accept or modify (open-loop mode)
-
-![Loop main display on phone](img/phone-loop-3.svg){width="300"}
-![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
-
-### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
-
-If you have never used the *Loop* app, click on links below for an introduction.
-
-!!! success "&nbsp;_<span translate="no">Loop</span>_&nbsp;Video"
-    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE){: target="_blank" } video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf){: target="_blank" } was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
-    * Special thanks to Tina and Reese Hammer for the terrific video
-    * Special thanks to Matthew Fouse for the generous use of his beautiful graphics
 
 ## Important Disclaimer
 
