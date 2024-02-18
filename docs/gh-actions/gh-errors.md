@@ -438,9 +438,9 @@ This is not the first thing to try, but sometimes it is the best approach.
 
 There might be several reasons to do this:
 
-* You tried to build with <code>*GitHub* Browser Build</code> earlier (before the directions were improved) and were not successful
 * You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](gh-other-apps.md)
 * You thought you entered the correct <code>MATCH_PASSWORD</code> but you are getting [Error: Could not decrypt](#error-could-not-decrypt)
+* You are having trouble renewing your certificates after using Browser Build for a year
 
 These steps are needed to reset your `Match-Secrets`:
 
