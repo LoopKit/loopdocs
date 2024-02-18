@@ -80,7 +80,7 @@ If you choose to share usage data, it is collected anonymously. The choices are:
 
 * Do not share any usage data
 * Share the Loop version number, phone type and iOS version number
-* Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
+* Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs are **not** collected
 
 #### Share Usage Data
 
