@@ -329,7 +329,7 @@ Your *GitHub* `Personal Access Token` should be configured:
 * `Never expire`
 * `repo, workflow` permission scope
 
-Refer to [Modify Automatic Building](#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
+Refer to [Modify Automatic Building](automatic.md#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
 
 If you are not logged in to *GitHub* and have not logged in recently, then you may see the authentication screen when doing the steps below.
 

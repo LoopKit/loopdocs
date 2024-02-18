@@ -123,7 +123,7 @@ A simple example to illustrate this - for a pump with smallest insulin delivery 
 
 ### *Tidepool* and *Apple* HealthKit
 
-If you have a [*Tidepool*](https://tidepool.org/){: target="_blank" } account and use the *Tidepool* uploader on your *Loop* phone, the data in Health is uploaded to your *Tidepool* database where you can view displays with the [*Tidepool* web browser tool](https://loopkit.github.io/looptips/data/tidepool/){: target="_blank" }.
+If you have a [*Tidepool*](https://tidepool.org){: target="_blank" } account and use the *Tidepool* uploader on your *Loop* phone, the data in Health is uploaded to your *Tidepool* database where you can view displays with the [*Tidepool* web browser tool](https://loopkit.github.io/looptips/data/tidepool){: target="_blank" }.
 
 ## How Do I Modify *Apple* HealthKit Permissions
 
