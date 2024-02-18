@@ -74,7 +74,7 @@ Recommended settings:
 * Allow automatic build and upload to *TestFlight*
 * [Disable automatic installation](#disable-automatic-install-from-testflight) on phone from *TestFlight*
 
-If you are running the development code, you may prefer to turn off the automatic update, but keep the automatic build. To read more about modifying automatic update and build options, please read [Modify Automatic Building](gh-update.md#modify-automatic-building).
+If you are running the development code, you may prefer to turn off the automatic update, but keep the automatic build. To read more about modifying automatic update and build options, please read [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }.
 
 ## Disable Automatic Install from *TestFlight*
 

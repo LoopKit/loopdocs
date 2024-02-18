@@ -21,7 +21,7 @@
     - **"What about other Libre sensors?"**
         1. Only some Libre sensors have methods to read them directly on an iPhone
         2. There are more methods for Android
-    - **"What about Eversense?"** Refer to [CGMs Not Supported in Loop](#cgms-not-supported-in-loop)
+    - **"What about Eversense?"** Refer to [CGMs Not Supported in the *Loop* App](#cgms-not-supported-in-the-loop-app)
 
 
 ## Continuous Glucose Monitor (CGM)

@@ -77,7 +77,7 @@ When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.x to `dev`, 
 You have a choice:
 
 * You can change your default branch to `dev`, see [Change Default `Branch`](#change-default-branch) and then your&nbsp;_<span translate="no">Loop</span>_&nbsp;app will be automatically updated and automatically built at least once a month
-    * Be sure to review the [Modify Automatic Building](automatic.md#modify-automatic-building) section
+    * Be sure to review the [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" } section
 * You can leave your default branch at main, but no automated updates will happen
     * Running each action below requires you to select the `dev` branch in the drop-down menu
 
@@ -174,4 +174,4 @@ Your default branch has been changed.
 
 ## Automatic Update & Build
 
-The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.
+The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md){: target="_blank" } if you did this.

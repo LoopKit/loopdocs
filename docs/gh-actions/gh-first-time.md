@@ -57,9 +57,9 @@
 When you follow the directions on this page, for Loop 3.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main branch is updated.
 
 * What if I want to modify the automatic update and build schedule?
-    * [Modify Automatic Building](gh-update.md#modify-automatic-building)
+    * [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }
 * What if I want to turn off automatic building?
-    * [Stop Building](gh-update.md#stop-building)
+    * [Stop Building](automatic.md#stop-building){: target="_blank" }
 
 ## Tips and Tricks
 
@@ -446,7 +446,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
 !!! tip "Default Settings"
     These instructions are a prerequisite for automatic update and automatic build.
 
-    Refer to [Modify Automatic Building](gh-update.md#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
+    Refer to [Modify Automatic Building](automatic.md#modify-automatic-building{: target="_blank" } if you don't want to accept the default recommendation to automatically update and build.
 
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
@@ -819,7 +819,7 @@ Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](http
 
 This will display a table similar to that linked below after a successful <code>Add Identifiers</code> *Action*. There are the six items under **`NAME`** with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the `Identifier`.
 
-[<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier-for-loop-3) Skip ahead to [Table with Name and Identifier for Loop 3](#table-with-name-and-identifier-for-loop-3).
+[<span class="loop-big">:material-skip-forward:</span>](#table-with-name-and-identifier) Skip ahead to [Table with Name and Identifier](#table-with-name-and-identifier).
 
 #### Previous Xcode Builders
 
@@ -844,7 +844,7 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
 
 > This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.
 
-### Add or Review Configuration for `Loop Identifier`
+### Add `App Group` to Identifiers
 
 ??? abstract "Section Summary (click to open/close)"
     Note 1 - If you previously built with Xcode, the `Names` listed below may be different, but the `Identifiers` will match. The Add Identifier Action that you completed above generates 6 identifiers, but only 4 need to be modified as indicated in this step. A table, provided above, lists both `Names` and `Identifiers` for all 6 if you are interested.
@@ -852,12 +852,12 @@ Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated w
     Note 2 - Depending on your build history, you may find some of the Identifiers already have your "App Group" and you are just verifying the status.
 
     1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
-    1. For each of the following identifier names:
+    1. For each of the following identifier names (be sure to look in Identifier column if names do not match):
         * `Loop`
         * `Loop Intent Extension`
         * `Loop Status Extension`
         * `Loop Widget Extension`
-    1. Click on the identifier's name
+    1. Click on the identifier's row
     1. On the "App Groups" capabilies, click on the "Configure" or "Edit" button
     1. If your "Loop App Group" with your TEAMID is not showing, then select it
         * Click "Save"
