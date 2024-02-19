@@ -45,19 +45,21 @@ Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (rig
     * Make sure the phone (and RileyLink if using one) are close to the pod before you tap `Insert Cannula`
         * Do NOT move devices away from the pod until you see the blue check mark and the `Continue` button on the phone screen
 
-### Insert Cannula Slider
+### New Slider
 
-!!! tip "New Insert Cannula Control"
-    For version 3.3.0 and later, (which means the `dev branch` right now), there is a new slider to control insertion of the cannula instead of a button to tap. It looks like the graphic below. You place your finger on the darker blue icon and, while keeping your finger in contact with the screen, drag all the way to the right. After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the pod.
+!!! tip "The Insert Cannula and Deactivate Pod now use a Slider instead of a Button"
+    For version 3.4.x and later there is a new slider to control insertion of the cannula and deactivation of a pod. 
 
-    ![slider to insert cannual for Omnipod or Omnipod DASH pumps](img/omnipod-insert-slider.svg){width="250"}
-    {align="center"}
+    The slider looks like the graphic below. (The Deactivate Pod slider is red.) You place your finger on the dark circular icon and, while keeping your finger in contact with the screen, drag all the way to the other side. (The direction depends on the natural direction for your selected language). After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the pod.
+
+![slider to insert cannual for Omnipod or Omnipod DASH pumps](img/omnipod-insert-slider.svg){width="250"}
+{align="center"}
 
 The Screen that says Setup Complete allows you to change the Scheduled Reminder for this pod if you want a different reminder time (including none) from your usual setting.
 
 * This only changes the reminder for this one pod
 * If you want to change all future reminders, tap on Notifications to modify the Reminder Default
-* In that same location, you can also change notification for the current pod
+* In that same location, you can also change notification for the current pod at any time
 
 ## Pod Status
 
@@ -237,6 +239,8 @@ The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) i
 
 ## Replace Pod
 
+#### TODO - update graphic for 3.4
+
 When you tap on the `Replace Pod` row, the `Deactivate Pod` screen, shown below, is displayed. 
 
 * If you tap `Deactivate Pod` on this screen, insulin delivery stops for this pod and cannot be resumed
@@ -327,8 +331,6 @@ If the previous pod had a fault and you choose to report it to Insulet, this scr
     
     We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.
 
-With Loop 3, do not leave the screen open and unlocked for long periods of time without first reading [Is there an increase in pod failures on Loop?](../faqs/omnipod-faqs.md#is-there-an-increase-in-pod-failures-on-loop)
-
 ### Pod Error Messages
 
 This section presents some of the error message screens you may see specific to pods.
@@ -337,4 +339,4 @@ This section presents some of the error message screens you may see specific to 
 
 You are likely to hear a pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.
 
-Unlock your phone, open Loop, navigate to the Pod Status screen and tap on Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of hitting Deactivate Pod. You can then view the Fault information in the [Previous Pod Information](#previous-pod-information) screen.
+Unlock your phone, open Loop, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the [Previous Pod Information](#previous-pod-information) screen.

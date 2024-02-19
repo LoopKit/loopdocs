@@ -1,7 +1,5 @@
 This page has detailed information about Loop 3 Displays.
 
-If you are running Loop v2.2.x, follow this link: [Loop v2.2.x Displays](../operation/loop-settings/displays.md).
-
 ## Main Loop Screen
 
 The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom. As part of the HUD, important messages will appear in the [Status Row](#hud-status-row) location.
@@ -43,33 +41,42 @@ The horizontal axis is set to go forward from the current time through your DIA 
 
 The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.
 
+!!! question "Why is my Prediction so High?"
+    New Loopers are often concerned when they bolus for a meal and Loop then reduces basal and predicts a high future glucose.
+
+    That prediction is what would happen if Loop took no further action (or if you walked away from your phone). Loop suggests a bolus for that meal that keeps near-term glucose above your Glucose Safety Limit. As the food is absorbed and glucose rises, Loop will provide additional insulin. The automated part of this waits until your actual glucose is above the low-end of your correction range. But you can manually bolus earlier, or set an override for a few hours with a lower correction range.
+
 !!! warning "Negative Glucose Prediction"
-    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md) with a tiny Overall Insulin Needs percentage.
+    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md#avoid-extreme-insulin-needs-setting){: target="_blank" } with a tiny Overall Insulin Needs percentage.
 
-    * Do not panic - this is a prediction only; not reality.
-
-    Best approach:
-
-    * Open the loop until the prediction settles down.
-    * In future, do not choose a tiny Overall Insulin Needs percentage to force less insulin
-        * Increase the correction range in your override
-        * Loop will reduce your basal rate at the next cycle (within 5 minutes)
-        * Most users should limit Overall Insulin Needs settings in the range of 50% to 200% (a factor of 2 in each direction)
-        * Be cautious adding carbs during an override with a change in Overall Insulin Needs - make sure you understand the effects first
+    * Do not panic - this is a prediction only; not reality - follow the link above.
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.
 
 #### Predicted Glucose Chart
+
+#### TODO - update graphic for 3.4
 
 The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual glucose.
 
 ![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](../operation/loop-settings/img/glucose_hidden.svg){width="300"}
 {align="center"}
 
-The graph at the top of this view will match your Glucose Chart. Below this chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value:  Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction. You can tap on any of the entries to see the effects of that component by looking at the dashed lines.
+The graph at the top of this view will match your Glucose Chart. Below this chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value:
+
+* [Carbohydrates](../operation/algorithm/prediction.md#carbohydrate-effect){: target="_blank" }
+* [Insulin](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" }
+* [Glucose Momentum](../operation/algorithm/prediction.md#blood-glucose-momentum-effect){: target="_blank" }
+* [Integral Retrospective Correction](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" } (or [Retrospective Correction](../operation/algorithm/prediction.md#retrospective-correction-effect){: target="_blank" })
+* Suspension of Insulin Delivery
+
+You can tap on any of the entries to see the effects of that component by looking at the dashed lines. The last item, Suspension of Insulin Delivery, is new and was added to assist people wondering how long can they safely delay changing a site or suspending a pump.
 
 !!! note "Display Only"
     These elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.
+
+!!! tip "Algorithm Experiments"
+    Algorithm Experiments is a feature added with version 3.4. One of the items available is Integral Retrospective Correction. When you have this enabled, the Predicted Glucose Chart displays the retrospective and integral retrospective components as shown on the graphic above. When this is disabled, (the default setting), only the retrospective component is calculated and used.
 
 ### Active Insulin Chart
 
@@ -120,7 +127,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
     Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/apple-health-faqs.md#how-does-loop-use-apple-healthkit) in detail.
 
-    Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit) section.
+    Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit){: target="_blank" } section.
 
 
 ### Active Carbohydrates Chart
@@ -128,14 +135,14 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 ![Active carbohydrate chart showing measured rise and fall based on entries and settings](../operation/loop-settings/img/carb_graph.jpg){width="400"}
 {align="center"}
 
-The Carbohydrate chart displays the carbs used by Loop to predict glucose changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Meal Entry](../operation/features/carbs.md) page for more information about entering and editing carb entries.
+The Carbohydrate chart displays the carbs used by Loop to predict glucose changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page for more information about entering and editing carb entries.
 
 #### ICE Chart
 
 ![Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph](../operation/loop-settings/img/carb_edit.png){width="300"}
 {align="center"}
 
-Click this link for even more details about [Insulin Counteraction Effects](../operation/features/ice.md). It's a good idea to read both the Meal Entry and ICE pages - this is an important concept.
+Click this link for even more details about [Insulin Counteraction Effects](../operation/features/ice.md){: target="_blank" }. It's a good idea to read both the Meal Entry and ICE pages - this is an important concept.
 
 ## Toolbar
 
@@ -147,16 +154,16 @@ The toolbar is always found at the bottom of the main Loop screen in both portra
 
 From left to right, the icons are:
 
-* **Meal Entry**- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the [Meal Entry](../operation/features/carbs.md) page.
+* **Meal Entry**- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page.
     * _For those used to entering carbs on a Medtronic pump or coming from non-Loop DIY systems, Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the meal entry tool._
 
-* **Pre-Meal Range** - click on this icon to start the [Pre-Meal Range](../operation/features/premeal.md) for one hour or until carbs are entered. (plate symbol turns dark green when active)
+* **Pre-Meal Range** - click on this icon to start the [Pre-Meal Range](../operation/features/premeal.md){: target="_blank" } for one hour or until carbs are entered. (plate symbol turns dark green when active)
 
-* **Bolus** - click on this icon to open the [Bolus](../operation/features/bolus.md) tool.
+* **Bolus** - click on this icon to open the [Bolus](../operation/features/bolus.md){: target="_blank" } tool.
 
-* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/overrides.md) or to cancel an override if one is active (heart symbol turns dark blue when active)
+* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/overrides.md){: target="_blank" } or to cancel an override if one is active (heart symbol turns dark blue when active)
 
-* **Loop Settings** - click on this icon to make changes to any of your [Loop settings](settings.md).
+* **Loop Settings** - click on this icon to make changes to any of your [Loop settings](settings.md){: target="_blank" }.
 
 ## HUD Details
 
@@ -199,7 +206,7 @@ This table shows examples of Loop Status Icons and what each icon means.
 |![A green circle indicating nominal status for closed loop](img/loop-3-icon-closed-green.svg){width="175"}|A green circle indicates the app is in Closed Loop mode and it completed a [cycle](#loop-cycle) within the last 5 minutes.|
 |![A yellow circle indicating warning status for closed loop](img/loop-3-icon-closed-yellow.svg){width="175"}|A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or RileyLink “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.|
 |![A red circle indicating failure status for closed loop](img/loop-3-icon-closed-red.svg){width="175"}|A red circle indicates the Loop has not completed in over 15 minutes.<br><br>This is not a typical state, and you should [troubleshoot](../troubleshooting/red-loop.md) the problem.<br><br>In this case, either the [Glucose Icon](#glucose-status-icon) or the [Pump Icon](#pump-status-icon) or both will display an `alert` graphic.|
-|![A green open circle with a gap at the top denoting open loop](img/loop-3-icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented in Loop 3 for Omnipod and Omnipod DASH, at the current time._|
+|![A green open circle with a gap at the top denoting open loop](img/loop-3-icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “Open Loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented in Loop 3 for Omnipod and Omnipod DASH, at the current time._|
 
 !!! info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
