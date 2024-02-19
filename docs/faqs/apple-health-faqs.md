@@ -4,9 +4,7 @@
 
 It is important that permissions for *Loop* be properly configured for the Health app.
 
-* `Loop 3.x.x`: See [Apple Health Permissions](../loop-3/onboarding.md#apple-health-permissions)
-* `Loop 2.2.x`: See [Health Permissions](../build/health.md)
-    * If you are still on Loop 2 (or FreeAPS), consider updating to [*Loop 3*](../build/updating.md)
+* See [Apple Health Permissions](../loop-3/onboarding.md#apple-health-permissions){: target="_blank" }
 
 To view the list of data stored in Health
 

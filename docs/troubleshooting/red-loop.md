@@ -101,7 +101,7 @@ In July 2019, we started to see a new style of Dexcom G6 transmitters on the mar
 
 ### Apple Health
 
-Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the [Apple Health Permissions](../build/health.md)
+Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the [Apple Health Permissions](../faqs/apple-health-faqs.md#how-do-i-modify-apple-healthkit-permissions).
 
 In the early days of iOS 14, there were problems with the Apple HealthKit.  The consequence is that some people's database was corrupted.  If you tap on the Heart Icon on your phone to go to Apple Health and display data and it is very slow to respond - or never responds, you probably need to get rid of a corrupted database and start fresh.  Be sure to go Open Loop if this is needed. Please get help from your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) group or from Apple support in this case.
 

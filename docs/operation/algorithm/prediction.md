@@ -221,7 +221,7 @@ When Integral Retrospective Correction (IRC) is enabled in settings under Algori
 
 $$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] $$
 
-The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/displays-v3.md#predicted-glucose-chart) is updated when _<span translate="no">IRC</span>_ is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the _<span translate="no">IRC</span>_ and _<span translate="no">RC</span>_ calculations.
+The Retrospective Correction section of the [Predicted Glucose Chart](../../loop-3/displays-v3.md#predicted-glucose-chart) is updated when _<span translate="no">IRC</span>_ is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the _<span translate="no">IRC</span>_ and _<span translate="no">RC</span>_ calculations.
 
 ![predicted glucose retrospective section with irc disabled and enabled](../../loop-3/img/glucose-details-irc.svg){width="400"}
 {align="center"}

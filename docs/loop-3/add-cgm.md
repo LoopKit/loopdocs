@@ -166,7 +166,7 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
     
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
     
-    ![img/shareclient.jpg](../operation/loop-settings/img/shareclient.jpg){width="300"}
+    ![img/shareclient.jpg](../loop-3/img/shareclient.jpg){width="300"}
     {align="center"}
 
 

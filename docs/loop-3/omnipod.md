@@ -210,7 +210,7 @@ For situations where you need a modification of your insulin needs that is not d
 
 ### Devices
 
-For Omnipod, there is a Devices section used to access the [RileyLink](../operation/loop-settings/rileylink.md) status and commands screen.
+For Omnipod, there is a Devices section used to access the [RileyLink](../loop-3/rileylink.md) status and commands screen.
 
 
 ### Pod Details

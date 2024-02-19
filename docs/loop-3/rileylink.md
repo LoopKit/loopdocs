@@ -7,12 +7,12 @@ The RileyLink (or compatible device) screen is accessed by clicking on the image
 
 ## Signal Loss
 
-If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: Reset Loop-to-Pump Communications](../../troubleshooting/red-loop.md#reset-loop-to-pump-communications) for suggestions.
+If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: Reset Loop-to-Pump Communications](../troubleshooting/red-loop.md#reset-loop-to-pump-communications) for suggestions.
 
 With Loop 3
 
 * The Pump Devices display will show the signal loss icon instead of reporting dB as shown in the graphic below. 
-* If the problem persists, you'll start to see some [Error Messages](../../loop-3/displays-v3.md#error-messages) as well.
+* If the problem persists, you'll start to see some [Error Messages](displays-v3.md#error-messages) as well.
 
 ![rileylink display with bad comms](img/pod-rl-comms-bad.svg){width="300"}
 {align="center"}
@@ -25,18 +25,11 @@ The name at the top center is whatever you [named your RileyLink compatible devi
 
 * The three graphics below match the display for Loop 3. 
 * For Loop 2.2.x - the displays are almost identical when the patch mentioned below the graphic is applied.
-* The [firmware](../../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. 
+* The [firmware](../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. 
 
 
 ![example rileylink screens for riley, ema, orange for loop 3](img/rl-comp-loop-3.svg){width="600"}
 {align="center"}
-
-
-!!! warning "Patch Required for Loop 2.2.x"
-
-    Some devices have features not available with other devices.  With Loop 2.2.6 some features were added to the OrangeLink, but there is a mismatch of reported hardware for some versions of OrangeLink firmware which prevents the Find Device row from showing up for OL Pro. The EmaLink extra features did not make it into the Loop v2.2.6 release.
-
-    * With Loop 2.2.x, to see the displays shown in the graphics below, please follow instructions in the [EmaLink and OrangeLink Feature and Patch sections](../../faqs/rileylink-faqs.md#emalink-and-orangelink-features).
 
 ## Device
 

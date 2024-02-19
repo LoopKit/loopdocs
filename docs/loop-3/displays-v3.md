@@ -27,7 +27,7 @@ There are several charts on the main screen to help you navigate and understand 
 
 ### Glucose Chart
 
-![Graph of Blood Glucose showing measured points and predicted dashed line](../operation/loop-settings/img/glucose_graph.jpg){width="400"}
+![Graph of Blood Glucose showing measured points and predicted dashed line](img/glucose_graph.jpg){width="400"}
 {align="center"}
 
 The Glucose Chart displays glucose values in your preferred units.
@@ -59,7 +59,7 @@ If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart
 
 The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual glucose.
 
-![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](../operation/loop-settings/img/glucose_hidden.svg){width="300"}
+![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](img/glucose_hidden.svg){width="300"}
 {align="center"}
 
 The graph at the top of this view will match your Glucose Chart. Below this chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value:
@@ -80,7 +80,7 @@ You can tap on any of the entries to see the effects of that component by lookin
 
 ### Active Insulin Chart
 
-![Plot of insulin on board (IOB); active amount above or below basal using insulin type](../operation/loop-settings/img/active_insulin.jpg){width="400"}
+![Plot of insulin on board (IOB); active amount above or below basal using insulin type](img/active_insulin.jpg){width="400"}
 {align="center"}
 
 The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.
@@ -99,7 +99,7 @@ There are some times when communication is interrupted at a critical moment in t
 
 ### Insulin Delivery Chart
 
-![Plot of insulin delivery shown as bolus triangles and relative temp basal settings](../operation/loop-settings/img/insulin_delivery.jpg){width="400"}
+![Plot of insulin delivery shown as bolus triangles and relative temp basal settings](img/insulin_delivery.jpg){width="400"}
 {align="center"}
 
 The Insulin Delivery chart displays a history of the temp basals enacted by Loop.  The display is relative to the scheduled basal rates entered in the Loop settings.  So, a rate displayed in this chart as `+0 units` would indicate no temp basal was set, and Loop defaulted to the scheduled basal rate.  Individual boluses are indicated by an orange triangle on the chart (shown in the graphic above, near the left-most time).  The total insulin delivered since midnight, including all basals and boluses **AND (Medtronic Only) priming insulin**, is given in the upper right corner of the graph.
@@ -132,14 +132,14 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
 ### Active Carbohydrates Chart
 
-![Active carbohydrate chart showing measured rise and fall based on entries and settings](../operation/loop-settings/img/carb_graph.jpg){width="400"}
+![Active carbohydrate chart showing measured rise and fall based on entries and settings](img/carb_graph.jpg){width="400"}
 {align="center"}
 
 The Carbohydrate chart displays the carbs used by Loop to predict glucose changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page for more information about entering and editing carb entries.
 
 #### ICE Chart
 
-![Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph](../operation/loop-settings/img/carb_edit.png){width="300"}
+![Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph](img/carb_edit.png){width="300"}
 {align="center"}
 
 Click this link for even more details about [Insulin Counteraction Effects](../operation/features/ice.md){: target="_blank" }. It's a good idea to read both the Meal Entry and ICE pages - this is an important concept.
@@ -147,7 +147,7 @@ Click this link for even more details about [Insulin Counteraction Effects](../o
 ## Toolbar
 
 
-![Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons](../operation/loop-settings/img/toolbar.png){width="400"}
+![Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons](img/toolbar.png){width="400"}
 {align="center"}
 
 The toolbar is always found at the bottom of the main Loop screen in both portrait and landscape orientation. By tapping on one of these icons, you can begin a Meal Entry, start a Pre-Meal Range, initiate a Manual Bolus, select an Override or go to the Loop Settings screen.
@@ -311,11 +311,10 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
         - Omnipod Common: Loop sends your scheduled basal rates to your pod based on phone time
         - Make sure your gear is close together (phone, pump and, if needed, RileyLink)
 
-The display to modify time zone is slightly different for Loop 2.2.x and Loop 3 (links below):
+The display to modify time zone is found on your Pump screen:
 
-* [Loop 3 Omnipod](omnipod.md#pump-time)
-* [Loop 3 Medtronic](medtronic.md#change-time-zone)
-* [Loop 2.2.x](../operation/loop-settings/pump-commands.md#change-time-zone)
+* [Omnipod](omnipod.md#pump-time)
+* [Medtronic](medtronic.md#change-time-zone)
 
 You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.
 

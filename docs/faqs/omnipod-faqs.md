@@ -62,16 +62,6 @@ You can tap on disable Closed-Loop and then immediately tap on enable Closed-Loo
 !!! tip "Bolus in progress"
     Even if a bolus is in progress, you can still switch to Open-Loop and restore scheduled basal. The current bolus continues unless you separately cancel the bolus.
 
-### Cancel Temp Basal with *Loop* v2.2.x
-
-If you are running *Loop* v2.2.x, the method for canceling a temp basal is to [suspend the pump and then resume delivery](../operation/loop-settings/pump-commands.md#suspend-delivery). This also interrupts any bolus that might be in progress.
-
-Be sure to follow the suspend with the resume command. Otherwise, all insulin delivery is stopped and remains stopped until the user either clicks on the "Tap to Resume" command from the main screen or the "resume delivery" command accessed in the pump settings display. The resume insulin delivery command returns insulin delivery to your scheduled basal rate.
-
-If a bolus was interrupted, the bolus will not resume.
-
-As long as you are in closed-loop mode, the *Loop* app will resume automatic insulin delivery adjustments within 5 minutes.
-
 ## Can I set my own temp basal on Loop?
 
 With version 3, the *Loop* app provides a [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) feature.

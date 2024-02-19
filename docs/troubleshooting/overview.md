@@ -16,7 +16,7 @@ Loop docs are updated regularly.  If you built your Loop app awhile ago, chances
 
 ### `Issue Report`
 
-Use the `Issue Report` [Loop 3](../loop-3/settings.md#issue-report) / [Loop 2](../operation/loop-settings/configurations.md#issue-report) command under Loop Settings to generate a Loop Report. This has a lot of detailed information that may help you or a mentor understand your problem.
+Use the [`Issue Report`](../loop-3/settings.md#issue-report){: target="_blank" } command under Loop Settings to generate a Loop Report. This has a lot of detailed information that may help you or a mentor understand your problem.
 
 The Loop Report (a text file) contains important information about actions and status that can be very useful for troubleshooters...particularly with unexplained behaviors.  The upper right corner of the Loop Report includes a button so that you can email the Loop Report to yourself (or others).
 

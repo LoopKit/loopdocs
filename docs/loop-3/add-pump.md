@@ -98,9 +98,9 @@ For Omnipod and Medtronic pumps, you need a RileyLink compatible device to Loop.
 !!! warning ""
     A new RileyLink compatible device is not listed next to its slider until after you connect the device to Loop. Find the little toggle in the device list, switch on that toggle, and the RileyLink will appear after the toggle is green.
 
-    You can [personalize](../operation/loop-settings/rileylink.md#personalize-device) the name once it is connected to Loop.
+    You can [personalize](../loop-3/rileylink.md#personalize-device) the name once it is connected to Loop.
 
-![img/pod-rl.png](../operation/loop-settings/img/pod-rl.png){width="400"}
+![img/pod-rl.png](img/pod-rl.png){width="400"}
 {align="center"}
 
 All RileyLink compatible devices in the nearby area, not already connected to a Loop app, will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen.
@@ -207,7 +207,7 @@ Once you have successfully connected to the Medtronic pump, click on `Continue`:
 !!! info "For x23 and x54 Medtronic pump users only"
     | <div style="width:144px"></div> ||
     |---|---|
-    |![img/pump_broadcasts.png](../operation/loop-settings/img/pump_broadcasts.png){width="550"}|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
+    |![img/pump_broadcasts.png](img/pump_broadcasts.png){width="550"}|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
 
 Now that your pump is paired with Loop, you should select the type of battery you are using and decide whether to use My Sentry:
 
