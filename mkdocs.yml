@@ -114,6 +114,14 @@ plugins:
             'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
             'troubleshooting/time-change.md': 'faqs/time-faqs.md'
             'troubleshooting/yellow-red-loop.md': 'troubleshooting/red-loop.md'
+            'operation/overview.md': 'loop-3/loop-3-overview.md'
+            'build/health.md': 'faqs/apple-health-faqs.md'
+            'operation/loop-settings/mdt-pump.md': 'loop-3/medtronic.md'
+            'operation/loop-settings/omnipod-pump.md': 'loop-3/omnipod.md'
+            'operation/loop-settings/cgm.md': 'loop-3/add-cgm.md'
+            'operation/loop-settings/configurations.md': 'loop-3/settings.md'
+            'operation/loop-settings/services-v2.md': 'loop-3/services.md'
+            'operation/loop-settings/displays.md': 'loop-3/displays-v3.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -175,17 +183,6 @@ nav:
     - 'Omnipod Pump': loop-3/omnipod.md
     - 'Medtronic Pump': loop-3/medtronic.md
     - 'Features': 'loop-3/features.md'
-    - 'Loop 2: Set Up App':
-        - 'Loop 2 Overview': 'operation/overview.md'
-        - 'Loop 2 Health Permissions': 'build/health.md'
-        - 'Loop 2 Add Pump':
-            - 'Loop 2 Add Medtronic': 'operation/loop-settings/mdt-pump.md'
-            - 'Loop 2 Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
-        - 'Loop 2 Add CGM': 'operation/loop-settings/cgm.md'
-        - 'Loop 2 Configuration': 'operation/loop-settings/configurations.md'
-        - 'Loop 2 Services': 'operation/loop-settings/services-v2.md'
-        - 'Loop 2 Displays': 'operation/loop-settings/displays.md'
-        - 'Loop 2 Pump Settings': 'operation/loop-settings/pump-commands.md'
 - Operate:
     - 'Open Loop': 'operation/loop/open-loop.md'
     - 'Closed Loop': 'operation/loop/close-loop.md'
