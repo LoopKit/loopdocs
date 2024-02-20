@@ -239,11 +239,11 @@ The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) i
 
 ## Replace Pod
 
-#### TODO - update graphic for 3.4
-
 When you tap on the `Replace Pod` row, the `Deactivate Pod` screen, shown below, is displayed. 
 
-* If you tap `Deactivate Pod` on this screen, insulin delivery stops for this pod and cannot be resumed
+* Touch the circular icon and maintain contact while you slide your finger all the way across the phone
+    * When you release the slide, the deactivation command is sent to the pod
+    * This action stops insulin delivery for this pod and cannot be resumed
 * If you have changed your mind, tap Back or Cancel to continue using the pod
 
 ![Deactivate pod screen](img/loop-3-omnipod-deactivate.svg){width="300"}
