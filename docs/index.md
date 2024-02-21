@@ -9,13 +9,13 @@ Welcome to the *LoopDocs* website where you can learn about the *Loop* app.
 
 The *Loop* app is an automated insulin delivery application that you build and load on an iPhone.
 
+![Loop main display on phone](img/phone-loop-3.svg){width="300"}
+![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
+
 * You enter your personal therapy settings (e.g., basal rate schedule, carbohydrate ratio, insulin sensitivity)
 * You enter the meals you eat
 * &nbsp;_<span translate="no">Loop</span>_&nbsp;uses this information, your insulin on board (IOB) and glucose data, to determine insulin dosing to bring your blood glucose within the target range you set
 * You can choose to have&nbsp;_<span translate="no">Loop</span>_&nbsp;automatically control insulin dosing (Closed Loop mode) or have&nbsp;_<span translate="no">Loop</span>_&nbsp;recommend insulin that you manually accept or modify (Open Loop mode)
-
-![Loop main display on phone](img/phone-loop-3.svg){width="300"}
-![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
 
 ### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
