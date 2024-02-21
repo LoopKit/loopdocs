@@ -3036,6 +3036,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#use-unique-times-for-remote-carbohydrate-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Unique Times for Remote Carbohydrate Entries
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3601,6 +3610,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#use-unique-times-for-remote-carbohydrate-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Unique Times for Remote Carbohydrate Entries
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3857,6 +3875,54 @@
 </ol>
 <p>❗️ Remember - you should pause at least 60 seconds between remote commands or the One-Time-Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) will be rejected as having already been used.</p>
 </div>
+<h3 id="use-unique-times-for-remote-carbohydrate-entries">Use Unique Times for Remote Carbohydrate Entries<a class="headerlink" href="#use-unique-times-for-remote-carbohydrate-entries" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Use unique times for remote carbohydrate entries</p>
+<p>Instead of adding a second remote carbohydrate entry at an identical time, add one minute to the second entry.</p>
+<p>This ensures that <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> keeps both entries.</p>
+</div>
+<p>Any Caregiver entering remote carbohydrates needs to be aware of how <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> decides what carbohydrates treatments are unique. If two entries have the same hour:minute:second time, <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> keeps only one of the entries.</p>
+<ul>
+<li>It does not affect how the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app handles the remote carbohydrate entries it recieves<ul>
+<li>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app assigns a unique identifier to each entry; it doesn't depend just on the timestamp</li>
+</ul>
+</li>
+<li>It will affect <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> and thus <em>LoopCaregiver</em> displays<ul>
+<li>This might lead to the Caregiver thinking they need to send the remote carbohydrate again</li>
+<li>But <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has both entries</li>
+</ul>
+</li>
+</ul>
+<p>One example scenario:</p>
+<ul>
+<li>A caregiver enters 10 g for lunch with a timestamp of 11:30, then waits for child to eat and glucose to start rising</li>
+<li>They then want to "edit" that entry to 15 g, but that is not possible with remote carbohydrates<ul>
+<li>Instead they can add a new 5 g entry</li>
+<li>They should enter the second entry at 11:31</li>
+</ul>
+</li>
+</ul>
+<p>Second example scenario:</p>
+<ul>
+<li>A caregiver wants to enter two different absorption times using remote carbohydrates<ul>
+<li>The first entry eating time is at 11:30 for 10 g with 2 hour absorption</li>
+<li>The second entry eating time is at 11:31 for 15 g wtih 4 hour absorption</li>
+</ul>
+</li>
+</ul>
+<p>The <em>LoopCaregiver</em> app was recently modified to use the seconds from when the new entry was created, instead of using hour:minute:00. This change makes it less likely that two entries with the same timestamp will collide. (One chance in 60.)</p>
+<p>Any remote carbohydrate entry from the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> careportal using the same hour:minute time, however, will be entered with 0 seconds.</p>
+<ul>
+<li>If a second entry is made from the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> careportal with the same hour:minute selection:<ul>
+<li>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app accepts the second entry and treats it as a unique event</li>
+<li>When the entry is reported to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> from the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app as a carbohydrate event, the new event replaces the previous event in the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> record</li>
+</ul>
+</li>
+</ul>
+<p>For more information, see:</p>
+<ul>
+<li><a href="https://github.com/nightscout/cgm-remote-monitor/issues/8185" target="_blank">Carb treatments disappearing in <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a></li>
+</ul>
 <h2 id="using-remote-commands">Using Remote Commands<a class="headerlink" href="#using-remote-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are four ways you can trigger your commands remotely; &nbsp;<a href="../loop-caregiver/"><em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em></a> (link takes you to a new page), <a href="#nightscout-careportal"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Careportal</a>, <a href="#shortcuts">Shortcuts</a>, and <a href="#ifttt">IFTTT</a>.</p>
 <h3 id="loop-caregiver"><a href="../loop-caregiver/"><em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em></a><a class="headerlink" href="#loop-caregiver" title="Anchor link to this Header on this Page">&para;</a></h3>
