@@ -172,6 +172,46 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
     
     ❗️ Remember - you should pause at least 60 seconds between remote commands or the One-Time-Password (OTP) will be rejected as having already been used.
 
+### Use Unique Times for Remote Carbohydrate Entries
+
+!!! warning "Use unique times for remote carbohydrate entries"
+    Instead of adding a second remote carbohydrate entry at an identical time, add one minute to the second entry.
+
+    This ensures that *Nightscout* keeps both entries.
+
+Any Caregiver entering remote carbohydrates needs to be aware of how Nightscout decides what carbohydrates treatments are unique. If two entries have the same hour:minute:second time, Nightscout keeps only one of the entries.
+
+* It does not affect how the *Loop* app handles the remote carbohydrate entries it recieves
+    * The *Loop* app assigns a unique identifier to each entry; it doesn't depend just on the timestamp
+* It will affect *Nightscout* and thus *LoopCaregiver* displays
+    * This might lead to the Caregiver thinking they need to send the remote carbohydrate again
+    * But Loop has both entries
+
+One example scenario:
+
+* A caregiver enters 10 g for lunch with a timestamp of 11:30, then waits for child to eat and glucose to start rising
+* They then want to "edit" that entry to 15 g, but that is not possible with remote carbohydrates
+    * Instead they can add a new 5 g entry
+    * They should enter the second entry at 11:31
+
+Second example scenario:
+
+* A caregiver wants to enter two different absorption times using remote carbohydrates
+    * The first entry eating time is at 11:30 for 10 g with 2 hour absorption
+    * The second entry eating time is at 11:31 for 15 g wtih 4 hour absorption
+
+The  *LoopCaregiver* app was recently modified to use the seconds from when the new entry was created, instead of using hour:minute:00. This change makes it very unlikely that two entries with the same timestamp will collide. (One chance in 60.)
+
+Any remote carbohydrate entry from the *Nightscout* careportal using the same hour:minute time, however, will be entered with 0 seconds.
+
+* If a second entry is made from the *Nightscout* careportal with the same hour:minute selection:
+    * The *Loop* app accepts the second entry and treats it as a unique event
+    * When the entry is reported to *Nightscout* from the *Loop* app as a carbohydrate event, the new event replaces the previous event in the *Nightscout* record
+
+For more information, see:
+
+* [Carb treatments disappearing in Nightscout](https://github.com/nightscout/cgm-remote-monitor/issues/8185){: target="_blank" }
+
 ## Using Remote Commands
 
 There are four ways you can trigger your commands remotely; &nbsp;[*Loop Caregiver*](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
