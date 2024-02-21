@@ -32,6 +32,18 @@ _<span translate="no">Loop</span>_&nbsp;and *Nightscout* work using &nbsp;<span 
     * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table){: target="_blank" }
         * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
 
+## Warning: *Nightscout* Remote Carbohydrate Entries
+
+!!! warning "Use unique times for remote carbohydrate entries"
+    Instead of adding a second remote carbohydrate entry at an identical time, add one minute to the second entry.
+
+    This ensures that *Nightscout* keeps both entries.
+
+For more information, see:
+
+* [Use Unique Times for Remote Carbohydrate Entries](remote-commands.md#use-unique-times-for-remote-carbohydrate-entries){: target="_blank" }
+
+
 ## Next Steps
 
 There are several steps to follow to set this up. Each page is linked below:
