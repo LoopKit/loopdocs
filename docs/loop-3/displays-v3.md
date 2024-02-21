@@ -55,14 +55,12 @@ If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart
 
 #### Predicted Glucose Chart
 
-#### TODO - update graphic for 3.4
+The predicted glucose view is a great way to gain insight into the various components that are included in the *Loop* glucose prediction. The GIF below illustrates how the graph is changed by turning off one component of the prediction.
 
-The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual glucose.
-
-![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](img/glucose_hidden.svg){width="300"}
+![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](img/glucose_hidden.gif){width="250"}
 {align="center"}
 
-The graph at the top of this view will match your Glucose Chart. Below this chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value:
+Below the chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value. For more information about each effect, click on one of the links below:
 
 * [Carbohydrates](../operation/algorithm/prediction.md#carbohydrate-effect){: target="_blank" }
 * [Insulin](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" }
@@ -76,7 +74,9 @@ You can tap on any of the entries to see the effects of that component by lookin
     These elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.
 
 !!! tip "Algorithm Experiments"
-    Algorithm Experiments is a feature added with version 3.4. One of the items available is Integral Retrospective Correction. When you have this enabled, the Predicted Glucose Chart displays the retrospective and integral retrospective components as shown on the graphic above. When this is disabled, (the default setting), only the retrospective component is calculated and used.
+    Algorithm Experiments is a feature added with version 3.4. One of the items available is Integral Retrospective Correction (IRC). When you have this enabled, the Predicted Glucose Chart displays the retrospective and integral retrospective components as shown on the graphic above. When this is disabled, (the default setting), only the retrospective component is calculated and used.
+
+    The example above illustrates a time when having IRC enabled helped Loop to "put on the breaks" earlier, leading to a soft landing in the target range. IRC is often advertised as helping "stuck on high", but can also assist when glucose is dropping faster than the model (without IRC) would expect.
 
 ### Active Insulin Chart
 
