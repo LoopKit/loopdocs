@@ -10,18 +10,18 @@ If you choose to use `dev`, you accept that this code is not released.
 
 Please read this entire page before using any version of *Loop* other than the released code.
 
-## Updates in dev
+## Updates in `dev`
 
 This section is an early look at major features added to dev since Loop 3.4 was released.
 
 Right now it is empty.
 
-## Updates from 3.2.2 to 3.4.0
+## Updates from 3.2 to 3.4
 
-This section is the old [Updates in dev](development.md#updates-in-dev) repurposed with links to documentation for new features added after Loop 3.2.2 was released that were added to Loop 3.4. Most features have been inserted into the appropriate part of Settings and Features (indicated by the link iocn), but some items are still in this section.
+Most features, originally in the Updates in `dev` section before the release of version 3.4, have been inserted into the appropriate part of the *LoopDocs* website (indicated by the up-right arrow after the link). A few items are still in this section.
 
 * [Support for Libre Sensors](../loop-3/add-cgm.md#libre){: target="_blank" }
-* [Modified Simulator Interface](#modified-simulator-interface)
+* [Simulated Pump or CGM on Phone](simulator.md#simulated-pump-or-cgm-on-phone){: target="_blank" }
 * [Algorithm Experiments](../loop-3/settings.md#algorithm-experiments){: target="_blank" }
     * [<span translate="no">Glucose Based Partial Application</span> Factor](../loop-3/settings.md#glucose-based-partial-application-gbpa){: target="_blank" }
     * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/settings.md#integral-retrospective-correction-irc){: target="_blank" }
@@ -29,13 +29,6 @@ This section is the old [Updates in dev](development.md#updates-in-dev) repurpos
 * [<span translate="no">TestFlight Expiration Warning</span>](../gh-actions/gh-update.md#testflight-expiration-warning){: target="_blank" }
 * [<span translate="no">GitHub Browser Build</span> Updates](#github-browser-build-updates)
 * [Miscellaneous Code Fixes](#miscellaneous-code-fixes)
-
-### Modified Simulator Interface
-
-The simulators for the Pump and CGM, for the `dev` branch show a new format when first selected. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to view behind the scenes, modify settings, and delete the simulator, you must press and hold (long-press) on the top of the display. Anywhere in the top third works for the long-press, but I like to touch the card as shown in the pump example below. If you've counted to 10 and the display has not updated yet, then return to the main screen, go back to the simulator screen, and try again.
-
-![use long press example for pump](img/long-press-to-adjust-simulator.jpg){width="500"}
-{align="center"}
 
 ### <span translate="no">GitHub Browser Build</span>&nbsp; Updates
 

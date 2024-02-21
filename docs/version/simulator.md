@@ -92,4 +92,11 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 
     The Loop app, when open, will be quite aggressive at warning you that you have disabled Notifications, so you can reverse those directions to enable notifications when actually using the app.
 
+### Simulated Pump or CGM on Phone
 
+The simulators for the Pump and CGM, with version 3.3 and later, hide their detailed configuration screen. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to configure the simulator controls or delete the simulator, you must tap on the Simulator Settings row. 
+
+![tap on simulator settings row to get to controls](img/update-simulators.svg){width="500"}
+{align="center"}
+
+If you do not see the Simulator Settings row, you have an older version. You can see the settings by doing a long-press (5 to 10 sec) in the top portion of the simulator screen. If you've counted to 10 and the display has not updated yet, then return to the main screen, go back to the simulator screen, and try again.
