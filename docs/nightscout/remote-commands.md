@@ -200,7 +200,7 @@ Second example scenario:
     * The first entry eating time is at 11:30 for 10 g with 2 hour absorption
     * The second entry eating time is at 11:31 for 15 g wtih 4 hour absorption
 
-The  *LoopCaregiver* app was recently modified to use the seconds from when the new entry was created, instead of using hour:minute:00. This change makes it less likely that two entries with the same timestamp will collide. (One chance in 60.)
+The *LoopCaregiver* app was recently modified to use the seconds from when the new entry was created, instead of using hour:minute:00. This change makes it less likely that two entries with the same timestamp will collide. (One chance in 60.)
 
 Any remote carbohydrate entry from the *Nightscout* careportal using the same hour:minute time, however, will be entered with 0 seconds.
 
