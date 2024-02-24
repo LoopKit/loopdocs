@@ -56,7 +56,7 @@ In addition to the easier to read error messages found with these updates, these
     * The &nbsp;<span translate="no">alive</span>&nbsp; branch needed to enable automatic building is created automatically
     * If their GH_PAT does not have `repo, workflow` permission, a prominent message is displayed with each Action completed
 
-These sections are still useful for version 3.3.0 `dev` users:
+These sections are still useful for version 3.5.0 `dev` users:
 
 * [Browser Build for dev](../gh-actions/build-dev-browser.md): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for `dev` branch
 * [Browser Build: One-Time Changes](../gh-actions/build-dev-browser.md#one-time-changes): New steps and dates at which the new steps were added
@@ -99,7 +99,7 @@ After much testing and tweaking, eventually, the recipes get the flavors right (
 
 ## What's going on in the `dev` branch?
 
-The `dev` branch, currently v3.3.0, is where the next version of *Loop* is being developed and tested.
+The `dev` branch, currently v3.5.0, is where the next version of *Loop* is being developed and tested.
 
 If you choose to build *Loop* using a `dev` branch, you need to be aware that the `dev` branch may update code frequently and unannounced in the traditional sense that most users in the  *Looped* group or *Instagram* would see. Developers are not helped by people being in a `dev` branch if those users mistakenly think of it as a stable `main` branch with lots of detailed docs to go with it. People should only use a `dev` branch build if they EDUCATE themselves on the expectations and how to properly manage `dev` information and updates. People using the `dev` branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 
