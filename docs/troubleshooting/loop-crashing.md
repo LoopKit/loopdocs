@@ -2,60 +2,35 @@
 
 If your Loop app crashes immediately upon opening, you have a problem that needs to be fixed. What do I mean by "crashes"? Your Loop app immediately turns to a white (light mode) or black (dark mode) screen and then shuts itself down, landing you back at your iPhone's main screen. No amount of tapping will let you keep your Loop app open.
 
-* If you built Loop 3.0.0 or just updated the iOS while running Loop 3.0.0
-    * The most likely cause is the "[Apple Health Glitch](#apple-health-glitch)"
-    * This problem was fixed in Loop 3.2.0 so update as soon as possible
-* If you are running Loop 2.2.x:
-    * The most likely cause of this is your [Loop App Expired](#loop-app-expired)
+The most likely reason is [Your *Loop* App Expired](#your-loop-app-expired). But there can be other reasons.
 
-## Apple Health Glitch
+* If you just updated your phone from iOS 16 to iOS 17 (or a similar major phone update), *Apple* spends a lot of time indexing your Apple Health data
+    * Many people report 5 to 30 minutes during which they cannot open the *Loop* app but they also cannot open *Apple Health*
+        * Wait until you can open *Apple Health* and then try to open the *Loop* app again
+* If you still can't stop the crashes, see [Other Reasons](#other-reasons) and be sure to save the crash log
 
-With Loop version 3.0.0, there is a known glitch that is fixed in the development (dev) branch and thus will be fixed in the next Loop release.
+## Your *Loop* App Expired
 
-### Solution
+Your Loop app has an expiration date. The expiration date will depend on the build method and may also depend on the type of developer account that signed the app.
 
-Long term solution, build Loop 3.2.x or newer version.
+* If you build with [Browser Build](#browser-build), your app will expire after 3 months
+* If you build with a [Mac using a paid account](#mac-using-a-paid-account-1-year), your app will expire after 12 months
+* If you build with a [Mac using a free account](#mac-using-personal-team-7-day), your app will expire after 7 days
 
-Short term solution if the Loop app crashes following a update to version 3.0.0 or an iOS update:
+### Browser Build
 
-1. Turn **off** Apple Health permissions for Loop
-    * Tap on iOS Settings
-    * Tap on Health (:heart: icon)
-    * Tap on Data Access & Devices
-    * Tap on Loop
-    * Tap on `Turn Off All`
-1. Return to phone main screen and open Loop
-1. Loop app should now open without issue
-1. Turn **on** Apple Health permissions for Loop
-    * Tap on iOS Settings
-    * Tap on Health (:heart: icon)
-    * Tap on Data Access & Devices
-    * Tap on Loop
-    * Tap on `Turn On All`
+With the current version, 3.2.3, you unfortunately do not get prior warning that the app is about to expire, although you can look in the *TestFlight* app and it will tell you. An in-app warning will be added to the next release.
 
-Loop 3 has a data store that contains all Looping information for 7 full days. So there will be no loss of Loop information stored in Apple Health by taking this action - so long as permissions are restored.
+Please follow these steps to ensure you can build the app again. [How to Update or Rebuild](../gh-actions/gh-update.md#how-to-update-or-rebuild){: target="_blank" }
 
-!!! note "More Details - if you are interested"
-    After an iOS update, the phone goes through a new indexing process, which Apple warns can slow down performance and increase battery usage over the first few hours.
 
-    Starting with iOS 16.2, the Apple Health Glitch with Loop was observed by some users. The anchor that Loop uses to correlate an item in its data store with that same item stored Apple Health was sometimes "lost". The way Loop handled that "took too long" to resolve and the app would be closed by the operating system. The work-around shown above fixes this for Loop 3.0.0.
-
-    Starting with Loop 3.2.0, a modification for handling of anchors was added, so the process is transparent to the user.
-
-## Loop App Expired
-
-Your Loop app has an expiration date. The expiration date will depend on the type of developer account that signed the app.
-
-* If you build with a paid account, your app will expire after 12 months.
-* If you build with a free account, your app will expire after 7 days.
-
-### Paid account (1 year)
+### Mac using a Paid account (1 year)
 
 When your app expires after a year, you need to follow the steps on the [Build Updating](../build/updating.md) page. Your phone will probably have a new iOS that may require an updated version of Xcode that may require an updated Mac operating system.  All this is explained in the link above.  Give yourself time before expiration to prepare yourself.
 
-To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md)
+To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md).
 
-### Personal Team (7 day)
+### Mac using Personal Team (7 day)
 
 When your app expires, you simply need to open Xcode, reopen the project: File->Open Recent, plug your phone back into the computer and select it in Xcode and press the play button on your project again. This will rebuild. If you want to change to a paid signing team before rebuilding, please make sure to double-check which signing team is selected before building again.
 
@@ -75,10 +50,12 @@ Remember that switching from free to paid changes the developer name incorporate
 * The new app issue only happens if you change developer name
 * As long as you stick with the same developer ID, updated Loop apps are built over existing apps and all your settings should be maintained
 
-### Save and Submit your Crash Logs
-If you have continuous crashes, please save the crash logs so the developers can look at it. If you can, log into [Zulipchat](https://loop.zulipchat.com/) and post it directly.
-The crash logs can be found under Settings --> Privacy & Security --> Analytics & Improvements --> Analytics Data. Scroll to find the file Loop_<DateTime>.ips for crash reports.
-
 ## Other reasons
 
 If you experience a crash for any other reason, please gather all the information you can about what was happening before the crash and report it to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) help site - you will need to get some personalized help. Please - choose one site for your post and wait for someone to get back to you.  While you are waiting, search on any of the sites and, if on Facebook, read all the announcements.
+
+### Save and Submit your Crash Logs
+If you have continuous crashes, please save the crash logs so the developers can look at it. If you can, log into [Zulipchat](https://loop.zulipchat.com/) and post it directly.
+
+* The crash logs can be found under Settings --> Privacy & Security --> Analytics & Improvements --> Analytics Data
+* Scroll to find the file Loop_`DateTime`.ips for crash reports
