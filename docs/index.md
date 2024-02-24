@@ -38,7 +38,9 @@ This site shows you step-by-step how to [**build**](intro/requirements.md){: tar
 In order to become proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.
 
 * You should test and perhaps adjust your settings to be successful with the *Loop* app (or any hybrid closed-loop system)
-* You will find links as you read to a robust volunteer support community
+* As you read the documentation, you will find links to a robust volunteer support community
+    * Introduce yourself
+    * Don't be afraid to ask questions, just let us know where in the documentation you got confused so we can make improvements
 
 There is a common saying in our community:
 

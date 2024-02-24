@@ -1,6 +1,6 @@
 ## Build with *Mac* Requirements
 
-The complete requirements for building Loop with a *Mac* and *Xcode* are given in the next two sections. The first list contains the common requirements that are the same regardless of build method. The second list contains the additional requirements for building with a Mac and Xcode.
+The complete requirements for building Loop with a *Mac* and *Xcode* are summarized below. The first list contains the common requirements that are the same regardless of build method. The second list contains the additional requirements for building with a Mac and Xcode.
 
 Each requirement in the list is linked to the LoopDocs pages with more information.
 
