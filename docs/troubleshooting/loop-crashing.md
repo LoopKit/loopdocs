@@ -19,16 +19,16 @@ Your Loop app has an expiration date. The expiration date will depend on the bui
 
 ### Browser Build
 
-With the current version, 3.2.3, you unfortunately do not get prior warning that the app is about to expire. This will be fixed in the next release.
+With the current version, 3.2.3, you unfortunately do not get prior warning that the app is about to expire, although you can look in the *TestFlight* app and it will tell you. An in-app warning will be added to the next release.
 
-Please follow these steps to ensure you can build the app again. [How to Update or Rebuild](gh-actions/gh-update.md#how-to-update-or-rebuild){: target="_blank" }
+Please follow these steps to ensure you can build the app again. [How to Update or Rebuild](../gh-actions/gh-update.md#how-to-update-or-rebuild){: target="_blank" }
 
 
 ### Mac using a Paid account (1 year)
 
 When your app expires after a year, you need to follow the steps on the [Build Updating](../build/updating.md) page. Your phone will probably have a new iOS that may require an updated version of Xcode that may require an updated Mac operating system.  All this is explained in the link above.  Give yourself time before expiration to prepare yourself.
 
-To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md)
+To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md).
 
 ### Mac using Personal Team (7 day)
 
