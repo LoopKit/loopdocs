@@ -114,6 +114,9 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 #### Manual Steps to Renew Your `Distribution Certificate`
 
+!!! warning "Delete and Create"
+    **Do not miss the final step in this section. After you delete certificates, you must run the Action for `Create Certificates` before you can build an app again.**
+
 1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
     * If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
     * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
@@ -132,7 +135,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     {align="center"}
 
 1. In your fork of LoopWorkspace:
-    * Run the `Action`: `Create Certificates`
+    * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
 
 !!! question "Deleting the certs/distribution folder did not work for me"
     Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](gh-errors.md#reset-match-secrets){: target="_blank" }
