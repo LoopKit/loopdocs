@@ -66,61 +66,9 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 ### One-Time Changes
 
-Look in this section for one-time changes for building `dev` with a browser that require special, one-time actions. 
+Look in this section for one-time changes for building `dev` with a browser that require special, one-time actions.
 
-If you have already completed the One-Time Changes, skip ahead to [Build `Branch`](#build-branch).
-
-#### Transition to `dev`
-
-When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.x to `dev`, you will need to take some extra steps. 
-
-You have a choice:
-
-* You can change your default branch to `dev`, see [Change Default `Branch`](#change-default-branch) and then your&nbsp;_<span translate="no">Loop</span>_&nbsp;app will be automatically updated and automatically built at least once a month
-    * Be sure to review the [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" } section
-* You can leave your default branch at main, but no automated updates will happen
-    * Running each action below requires you to select the `dev` branch in the drop-down menu
-
-Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your `fork` and are at the correct branch.
-
-1. Confirm the status of your &nbsp;<span translate="no">*GitHub* Personal Access Token</span>
-    * It should be configured with permission scope of `repo, workflow` and to never expire
-    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token)
-1. Next, follow along in this section to perform these steps before you build
-    * Add and Update `New Indentifier`
-    * `Create Certificates`
-
-#### Automatic Creation of `alive branch`
-
-!!! warning "What about the `alive branch`"
-    * Sometimes you get an error about the `alive branch`
-    * It should be created for you automatically if you are building with the `dev branch` **and** you have `workflow` permission added to the `scope` for your *GitHub* `Personal Access Token`
-    * If necessary, delete the `alive branch` and run the `Create Certificates` again
-
-#### Add and Update New `Identifier`
-
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
-
-* You need to run Add Identifier - be sure that you run this for the `dev branch`
-* Wait for it to succeed
-* Add the `App Group` to this one new Identifier
-
-All other identifiers should be already set up. If they are not, please go through the steps on the [Configure to Use Browser](gh-first-time.md) page to figure out what you are missing.
-
-| `NAME` | `IDENTIFIER` |
-|-------|------------|
-| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
-
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-* Click on the "`LoopWidgetExtension`" identifier
-* Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
-
-#### Create Certificates and Build
-
-You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
-
-1. Run the Action for Create Certificates - be sure that you run this for the `dev branch`
-1. Run the Action for `Build Loop` (see [Build `Branch`](#build-branch))
+With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.
 
 ### Build `Branch`
 
