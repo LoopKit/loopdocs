@@ -115,8 +115,10 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 #### Manual Steps to Renew Your `Distribution Certificate`
 
 1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
+    * If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
     * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
-    * If you do not have any rows that say `Distribution Certificate`, your certicate already expired and was removed by *Apple*; so skip ahead to Step 2
+        * If you do not have any rows that say `Distribution Certificate`, your certificate already expired and was removed by *Apple*; so skip ahead to Step 2
+        * If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to [Update `Fork`](#update-fork)
     * Click each row that has a `Distribution Certificate` and revoke it
     * You will get an email informing you the certificate was revoked
 1. Navigate to your `Match-Secrets` Repository
