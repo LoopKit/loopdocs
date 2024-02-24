@@ -20,14 +20,19 @@ But first - try to diagnose it yourself using this page.
 !!! warning "Just updated?"
     If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.
 
-    If you missed this step - go do it now. [Add and Update New Identifier](gh-update.md#add-and-update-new-identifier)
+    If you missed this step - go do it now. [Updating from 3.2.x to 3.4](gh-update.md#updating-from-32x-to-34){: target="_blank" }
+
+!!! important "Certificate is missing"
+    If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
+
+    * See [Renew Certificates](gh-update.md#renew-certificate){: target="_blank" }
 
 These are some of the most common errors to date.
 
 1. You made a spelling error when adding <code>Secrets</code>
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
-1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers)
+1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
     * See [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for an example of this kind of failure
 1. You used a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
@@ -74,6 +79,17 @@ For example, the graphic below shows a failure of&nbsp;<span translate="no">*Git
 
 This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is [Error: Could not Create](#error-could-not-create).
 
+### Missing Certificates
+
+If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and can not create a new one because you enabled`.
+
+* See [Renew Certificates](gh-update.md#renew-certificate){: target="_blank" }
+
+
+![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
+{align="center"}
+
+
 ### Annotation without Clear Message (*Build*)
 
 The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. Build Loop</span>_&nbsp;. The nice messages have not been added to this yet - you will have to follow the [Find the Error](#find-the-error) instructions, but now, you are automatically taken to the correct section so there is less of the log to deal with.
@@ -85,6 +101,7 @@ The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. 
     * Note that if the string is not found, nothing happens
     * If the string is found, the display automatically moves to the section of the log with that string
     * The particular `Identifier`, which does not have the required `App Group` for this example, is the SmallStatusWidget
+        * Note that with version 3.4, SmallStatusWidget is no longer used - perhaps an unfortunate choice for this GIF
 
 ![graphic showing failure to create certificates](img/missing-app-group.gif){width="800"}
 {align="center"}
@@ -343,7 +360,7 @@ Refer to [Annotation without Clear Message (*Build*)](#annotation-without-clear-
 
 For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
 
-### `Could not find an app on App Store Connect`
+### `Error: Could not find an app on App Store Connect`
 
 Copy the words on the line below and paste them into the search function for your action log.
 
@@ -399,7 +416,7 @@ You must create certificates again before you can build *Loop*:
 * Action: `Create Certificates`
 * Action: `Build Loop`
 
-### `A new one cannot be created because you enabled`
+### `Error: A new one cannot be created because you enabled`
 
 Copy the words on the line below and paste them into the search function for your action log.
 
@@ -434,18 +451,47 @@ Once you have created an app in the *App Store* that is not based on your `TEAMI
 
 At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](gh-first-time.md#configure-secrets). This time you will be updating `TEAMID` in the repository secret list.
 
-
 ## Repeat `Build Loop` Errors
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
 Use the [Find the Error](#find-the-error) instructions to find your error message.
 
-### `Could not install WWDR certificate`
+### `Error: No code signing identity`
+
+Copy the words on the line below and paste them into the search function for your action log.
+
+> ``` { .text .copy }
+> No code signing identity found and can not create a new one because you enabled
+> ```
+
+If that phrase is found, it means your *Apple* `Distribution Certificate` expired or was revoked.
+
+* See [Renew Certificates](gh-update.md#renew-certificate){: target="_blank" }
+
+### `Error: AppStore com.***.loopkit.Loop.LoopWidgetExtension`
+
+This error has a useful Annotation that presents the error. If you want to search for it manually, copy the words on the line below and paste them into the search function for your action log.
+
+> ``` { .text .copy }
+> Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension
+> ```
+
+This means you did not follow the steps here: [Updating from 3.2.x to 3.4](gh-update.md#updating-from-32x-to-34){: target="_blank" }
+
+### `Error: Could not install WWDR certificate`
+
+Copy the words on the line below and paste them into the search function for your action log.
+
+Note - you will get that error in addition to the `No code signing` error if you need to renew your certificates.
+
+> ``` { .text .copy }
+> Could not install WWDR certificate
+> ```
 
 Assuming you have successfully built using the Browser-Build / *GitHub* method before:
 
-* If the details show this message, `Could not install WWDR certificate`, make sure your [*Apple developer* account](https://developer.apple.com){: target="_blank" } is in good standing and that there are no agreements that need to be accepted
+* If the details show this message, `Could not install WWDR certificate`, make sure your [*Apple developer* account](https://developer.apple.com){: target="_blank" } is in good standing and that there are no agreements that need to be accepted and that your `Distribution Certificates` did not expire
 * Sometimes this is a sign that *Apple* did not respond to a request, this failure happens in the first few minutes
     * Repeat the build and it should be fine the next time
 

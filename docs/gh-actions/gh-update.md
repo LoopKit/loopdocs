@@ -94,10 +94,6 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 **Once a year, you need to renew your `Distribution Certificate` to continue using the build with browser method.**
 
-> Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your `Distribution Certificate` will no longer be valid in 30 days."
-
-> Many people report not seeing the email; that is covered in the steps below.
-
 **Apps in TestFlight that have not already expired are not affected by revoking the certificate.**
 
 * Apps installed on the phone continue to run
@@ -171,32 +167,66 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 
 > This is Step 4 of 6 - this is always required.
 
-If you have successfully built Loop 3.4 with automatic build configuration enabled and later decide to manually build Loop, all that is required is to run the action: Build Loop for your fork and skip ahead to [Wait for TestFlight](#wait-for-testflight).
+!!! abstract "Reminder on Actions"
+    1. You select the Actions tab
+    1. You select an action on the left
+    1. You click on the Run workflow button on the right to reveal two new rows
+    1. You click on the green Run workflow button that just appeared to start the action
+    1. Wait for the action to finish before doing anything else (except maybe refresh your browser)
+        * If an action takes longer than you think is reasonable, you can cancel the action (click on the three dots by the action and cancel) and then try again
+
+    When action has finished, a log appears. Do not delete those logs. They are an important record of activity.
 
 #### Updating from 3.2.x to 3.4
 
-For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future.
+For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.
 
-#### Add and Update New Identifier
+> If you have successfully built Loop 3.4 with automatic build configuration enabled and later decide to manually build Loop, you can skip ahead to [4: Build](#4-build).
 
-The `Identifier` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`". You need to run Add Identifier, wait for it to succeed and then add the `App Group` to this one new Identifier, shown in the table below.
+#### Extra Steps
 
-All other identifiers should be already set up. If they are not, please go through the steps on the [Configure to use Browser: Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers) to figure out what you are missing.
+These extra steps are required one time only.
+
+* The `Identifier` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`"
+* The addition of the Libre CGM to the *Loop* app requires new capabilities
+    * All capabilities, except the configuration of the `App Groups`, are now done automatically
+
+You will (1) run `Add Identifiers`, (2) update the new identifier, (3) run `Create Certificates` and then (4) run `Build Loop`.
+
+#### 1: Add Identifiers
+
+In your fork of LoopWorkspace:
+
+* Run the [`Action`: `Add Identifers`](gh-first-time.md#add-identifiers){: target="_blank" }
+
+Wait for it to succeed.
+
+#### 2: Update New Identifier
+
+The next step is to add your `App Group` to this one new Identifier, shown in the table below.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page.
+* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
 * Click on the "`LoopWidgetExtension`" identifier
-* Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
+* These are the steps you need to take:
+    * Scroll down to the `App Groups` row of the Capabilities column
+    * Configure the App Groups to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
+    * Save and Confirm your configuration
+* If you need more explicit directions, review [Configure to use Browser: Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
 
-#### Create Certificates and Build
+#### 3: Create Certificates
 
-You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
+You must create certificates again to add a certificate for the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
 
-1. Run the Action for Create Certificates
-1. Run the Action for Build Loop
+1. In your fork of LoopWorkspace:
+    * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
+
+Wait for this action to succeed.
+
+#### 4: Build
 
 Refer to graphic below as you follow the steps to build the *Loop* app.
 
