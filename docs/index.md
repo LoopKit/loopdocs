@@ -7,15 +7,17 @@ Welcome to the *LoopDocs* website where you can learn about the *Loop* app.
 
 ## What is the *Loop* App?
 
-The *Loop* app is an automated insulin delivery application that you build and load on an iPhone.
+The *Loop* app is an automated insulin delivery application that you build and operate on an iPhone.
 
 ![Loop main display on phone](img/phone-loop-3.svg){width="300"}
 ![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
 
-* You enter your personal therapy settings (e.g., basal rate schedule, carbohydrate ratio, insulin sensitivity)
-* You enter the meals you eat
-* &nbsp;_<span translate="no">Loop</span>_&nbsp;uses this information, your insulin on board (IOB) and glucose data, to determine insulin dosing to bring your blood glucose within the target range you set
-* You can choose to have&nbsp;_<span translate="no">Loop</span>_&nbsp;automatically control insulin dosing (Closed Loop mode) or have&nbsp;_<span translate="no">Loop</span>_&nbsp;recommend insulin that you manually accept or modify (Open Loop mode)
+* The *Loop* app uses your settings, meal entries and glucose data to calculate insulin dosing needed to bring your blood glucose within the correction range you set
+    * You enter your personal therapy settings (e.g., basal rate schedule, carbohydrate ratio, insulin sensitivity)
+    * You indicate your CGM and pump
+* You choose how to operate the *Loop* app:
+    * <code>Closed Loop</code>: Predict, recommend and control insulin dosing
+    * <code>Open Loop</code>: Predict and recommend but you must take action to modify dosing
 
 ### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
@@ -33,13 +35,13 @@ This site shows you step-by-step how to [**build**](intro/requirements.md){: tar
 * **You do not need a technical or computer background to do this**
 * **You can choose to build the *Loop* app several ways:**
     * Use a [browser](gh-actions/gh-overview.md) on any computer or tablet and install it on your *iPhone* via *TestFlight*
-    * Use an up-to-date [*Mac* Computer](build/overview.md) and install it directly on your *iPhone*
+    * Use an **up-to-date** [*Mac* Computer](build/overview.md) and install it directly on your *iPhone*
 
 In order to become proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.
 
 * You should test and perhaps adjust your settings to be successful with the *Loop* app (or any hybrid closed-loop system)
 * As you read the documentation, you will find links to a robust volunteer support community
-    * Introduce yourself
+    * You're invited - come introduce yourself
     * Don't be afraid to ask questions, just let us know where in the documentation you got confused so we can make improvements
 
 There is a common saying in our community:
@@ -59,6 +61,6 @@ Please consult with your health care professional regarding your diabetes manage
 
 ## Volunteer Community
 
-The *Loop* app has been, and continues to be, developed and supported by volunteers. From the code to this website, you are able to use this app because many volunteers have given their personal and family time.
+The *Loop* app has been, and continues to be, developed and supported by volunteers. From the code to this website, you are able to use this app because many volunteers continue to give their personal and family time.
 
-Please add your time by reading this website before embarking on your&nbsp;_<span translate="no">Loop</span>_&nbsp;journey.
+Please add *your* time by reading this website before embarking on your *Loop* journey.
