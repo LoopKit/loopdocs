@@ -124,8 +124,8 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
         * If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to [Update `Fork`](#update-fork)
     * Click each row that has a `Distribution Certificate` and revoke it
     * You will get an email informing you the certificate was revoked
-1. Navigate to your `Match-Secrets` Repository
-    * You can do this several ways, but the URL address will be `https://github.com/username/Match-Secrets` where `username` is replaced by your *GitHub* username
+1. Navigate to your `Match-Secrets` Repository on your Github account.
+    * You can do this several ways, but typically you would open a new browser tab and access your Github.com account. The URL address will be `https://github.com/username/Match-Secrets` where `username` is replaced by your *GitHub* username
 1. Delete the `certs/distribution` folder using these instructions. The GIF below indicates the places to click with numbered red rectangles:
     * Frame 1: Click 1 on the folder called `certs/distribution`
     * Frame 2: Click 2 and 3 on the three dots in the upper right and then `Delete directory`
@@ -134,7 +134,8 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="700"}
     {align="center"}
 
-1. In your fork of LoopWorkspace:
+1. Now still within your Github.com account, switch to your fork of LoopWorkspace. This is done by clicking on the hamburger menu (the icon with the 3 lines on the top left corner of your Github.com screen) and from the menu that pops up, look under Repositories and click on your LoopWorkspace repository (usually listed as <code>your_username/LoopWorkspace</code>).
+    * Once you are on your LoopWorkspace repository, click on the link below and follow the instructions provided to create your certificates.
     * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
 
 !!! question "Deleting the certs/distribution folder did not work for me"
