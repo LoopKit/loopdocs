@@ -113,6 +113,10 @@ Familiarize yourself with the ["Bolus May Have Failed"](../features/bolus.md#bol
 
 Caregivers for Loopers should learn how to use the *Loop* app. Consider giving caregivers an individualized quick info sheet. School staff or your child need to know how to handle a site change at school. Try to watch *Nightscout* while you get to know the *Loop* app so that you can become better at remote troubleshooting problems you might encounter.
 
+## *Apple* Health in <code>Open Loop</code>
+
+If you are using the *Apple* Health app to examine insulin given while in <code>Open Loop</code>, the basal delivery is not updated promptly. You can force an update by suspending the pump and then resuming the pump.
+
 ## Extended Bolus
 
 A menu item to set an extended bolus is not a feature provided by the *Loop* app at this time. You can make your own extended bolus using the <code>Manual Temp Basal</code> feature with Omnipod. Note that during the time the <code>Manual Temp Basal</code> command is running, the *Loop* app will make no automated changes to dosing even if the <code>Closed Loop</code> slider is selected as enabled.
