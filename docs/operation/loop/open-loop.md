@@ -20,7 +20,7 @@
     You can build the *Loop* app without connecting it to any hardware.
 
     * You can use your phone, a partner's phone or a simulated phone on the computer
-    * You can practice with a simulated CGM and / or  a simulated pump.
+    * You can practice with a simulated CGM and / or a simulated pump.
     * You can use Dexcom Share or Nightscout as a CGM to follow your own glucose.
     * You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
@@ -38,7 +38,7 @@ Using an algorithm that updates glucose predictions and adjusts insulin delivery
 
 ### Eventual Glucose
 
-Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)** to understand recommendations for insulin delivery adjustment.  The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose.  Its current decisions are based on actual, predicted and eventual glucose. More weight is given to the next three hours in deciding how much insulin should be recommended or withheld from basal.
+Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)** to understand recommendations for insulin delivery adjustment. The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose. Its current decisions are based on actual, predicted and eventual glucose. More weight is given to the next three hours in deciding how much insulin should be recommended or withheld from basal.
 
 If there is a dip in the predicted glucose below the Glucose Safety Limit, the *Loop* app will not recommend insulin even if the eventual glucose is above your Correction Range.
 
@@ -101,7 +101,7 @@ If you tap on the Bolus button (on the Toolbar), does the app recommend more ins
 * If so, you can choose to accept if it looks reasonable to you
 * If not, look at the prediction plot to understand the decision
 
-Ask if this is the same decision you would make.  This effort  will help smooth the transition to <code>Closed Loop</code>.
+Ask if this is the same decision you would make. This effort will help smooth the transition to <code>Closed Loop</code>.
 
 ## Troubleshooting
 
