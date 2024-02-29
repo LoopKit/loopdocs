@@ -26,7 +26,7 @@
 
 ### Glucose Prediction
 
-Pay attention to the prediction in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart){: target="_blank" } **. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable <code>Closed Loop</code>. You may need to adjust settings or learn more about how the app works. The *Loop* app tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
+Pay attention to the prediction in the [Glucose Chart](../../loop-3/displays-v3.md#glucose-chart){: target="_blank" }. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable <code>Closed Loop</code>. You may need to adjust settings or learn more about how the app works. The *Loop* app tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
 
 There's a lot to learn and understand. New loopers may need to adjust the following Therapy Settings, typically in this order:
 
@@ -56,9 +56,9 @@ If you want to issue a manual temp basal, this is done on the pump for Medtronic
 
 **The suggestions below work for most people. You need to adjust for your own situation.**
 
-Take the time to establish a good basal profile while in <code>Open Loop</code> mode using the pump you plan to use for the *Loop* app . When using an algorithm, your basal rates needs to be neutral; in other words your glucose, in the absence of food and exercise, should be stable. (When you do basal testing, you should aim to stay at a glucose that is steady within 35 mg/dL (2 mmol/L).)
+Take the time to establish a good basal profile while in <code>Open Loop</code> mode using the pump you plan to use for the *Loop* app. When using an algorithm, your basal rates needs to be neutral; in other words your glucose, in the absence of food and exercise, should be stable. (When you do basal testing, you should aim to stay at a glucose that is steady within 35 mg/dL (2 mmol/L).)
 
-If you previously ran a high basal rate during the day to cover meals, you may need to adjust your carb ratio (to a smaller value) after your basal rate is adjusted to be neutral.
+If you previously ran a high basal rate during the day to cover meals, you may need to adjust your CR (to a smaller value) after your basal rate is adjusted to be neutral.
 
 Test your insulin sensitivity factor (ISF) during <code>Open Loop</code> after your basal rates are established. The *Loop* app uses your ISF every 5 minutes to update predictions, so it's worth testing before turning on automated insulin dosing with <code>Closed Loop</code> mode. You may need a different, probably higher value, than what you used as a correction factor with manual pumping or MDI.
 
@@ -90,6 +90,8 @@ Loop uses carb absorption as a component to every meal entry. Most people are su
 
 The [Active Carbohydrate](../../loop-3/displays-v3.md#active-carbohydrates-chart){: target="_blank" } chart displays how the app thinks your meal is being aborbed. This is affected by your basal rates, ISF and CR. If it looks wrong, examine your settings.
 
+Depending on the type of food you eat, you may increase the carb entry to include some protein or fat.
+
 ## Manual (or Correction) Bolus
 
 At any time, you can enter a bolus using the Bolus (double orange triangles) icon in the Toolbar. The *Loop* app offers a recommendation if the glucose prediction supports one. Review the [Eventual Glucose](#eventual-glucose) section above to understand when the app will recommend a bolus. The *Loop* recommendation can be modified by editing the Bolus amount.
@@ -107,7 +109,7 @@ If you use a RileyLink, determine how far the link can be from your phone and pu
 
 Learn to troubleshoot [Red Loops](../../troubleshooting/red-loop.md){: target="_blank" } and the cause of potential loop issues. You'll be less frustrated starting on closed loop if you know how to address these issues
 
-Familiarize yourself with the ["Bolus May Have Failed"](../features/bolus.md#bolus-failure-notifications){: target="_blank" } notifications and how to handle them.  Double-check the displays to verify that the bolus didn't enact before trying to give the bolus again.
+Familiarize yourself with the [Bolus Failure Notifications](../features/bolus.md#bolus-failure-notifications){: target="_blank" } and how to handle them. Double-check the displays to verify figure out the problem before trying to give the bolus again.
 
 ## Caregiver training
 
