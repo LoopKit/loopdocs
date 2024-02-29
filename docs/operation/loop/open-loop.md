@@ -1,11 +1,11 @@
-## Open Loop Introduction
+## <code>Open Loop</code> Introduction
 
-Open Loop is the best place to start with Loop.
+<code>Open Loop</code> is the best place to start with Loop.
 
-* Become familiar with Loop by watching it operate with <code>Closed Loop</code> disabled.
+* Become familiar with the *Loop* app by watching it operate with <code>Closed Loop</code> disabled.
 * Take it slow and safe to become a successful Looper.
 
-??? warning "Menus do not include all Manual Pump Features. (Click to learn more)"
+??? warning "Menus do not include all Manual Pump Features (Click to learn more)"
     The *Loop* app is built around the concept of <code>Closed Loop</code> performance.
 
     If you use a Medtronic pump and want to use a feature not found in the *Loop* app, simply disable <code>Closed Loop</code> and control delivery with your Medtronic Controller.
@@ -16,17 +16,17 @@ Open Loop is the best place to start with Loop.
 
     Please refer to [Extended Bolus](#extended-bolus).
 
-!!! tip "Practice with Simulators"
-    You can build Loop without connecting it to any hardware.
+??? tip "Practice with Simulators (Click to learn more)"
+    You can build the *Loop* app without connecting it to any hardware.
 
     * You can use your phone, a partner's phone or a simulated phone on the computer
-    * You can practice with a simulated CGM and / or  a simulated pump.
+    * You can practice with a simulated CGM and / or a simulated pump.
     * You can use Dexcom Share or Nightscout as a CGM to follow your own glucose.
     * You can "dose" the simulated pump and your real pump at the same time and watch the glucose predictions.
 
 ### Glucose Prediction
 
-Pay attention to the prediction in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)**. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable Closed Loop. You may need to adjust settings or learn more about how the app works. Loop tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
+Pay attention to the prediction in the [Glucose Chart](../../loop-3/displays-v3.md#glucose-chart){: target="_blank" }. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. If you do not understand the predictions or recommendations, do not enable <code>Closed Loop</code>. You may need to adjust settings or learn more about how the app works. The *Loop* app tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
 
 There's a lot to learn and understand. New loopers may need to adjust the following Therapy Settings, typically in this order:
 
@@ -38,23 +38,31 @@ Using an algorithm that updates glucose predictions and adjusts insulin delivery
 
 ### Eventual Glucose
 
-Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)** to understand Loop recommendations for insulin delivery adjustment.  Loop is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose.  Its current decisions are based on predicted, actual and eventual glucose.
+Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)** to understand recommendations for insulin delivery adjustment. The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose. Its current decisions are based on actual, predicted and eventual glucose. More weight is given to the next three hours in deciding how much insulin should be recommended or withheld from basal.
 
-If there is a dip in the predicted glucose below the Glucose Safety Limit, Loop will not recommend insulin even if the eventual glucose is above your Correction Range.
+If there is a dip in the predicted glucose below the Glucose Safety Limit, the *Loop* app will not recommend insulin even if the eventual glucose is above your Correction Range.
 
-* In Closed Loop mode, Loop automatically decreases insulin delivery using a temp basal of 0 U/hr until the predicted glucose exceeds the Glucose Safety Limit
-* When you tap on the Bolus icon in the Toolbar, Loop recommends insulin delivery only after predicted glucose is above Glucose Safety Limit
-* In Closed Loop mode, Loop automatically increases insulin delivery only after predicted glucose is above the bottom of the Correction Range
+* In <code>Closed Loop</code> mode, the *Loop* app automatically decreases insulin delivery using a temp basal of 0 U/hr until the predicted glucose exceeds the Glucose Safety Limit
+* When you tap on the Bolus icon in the Toolbar, the *Loop* app recommends insulin delivery only after predicted glucose is above Glucose Safety Limit
+* In <code>Closed Loop</code> mode, the *Loop* app automatically increases insulin delivery only after predicted glucose is above the bottom of the Correction Range
 
-If the Loop predictions don't match your experience, your settings may need to be adjusted.
+If the *Loop* predictions don't match your experience, your settings may need to be adjusted.
+
+If you want to issue a manual temp basal, this is done on the pump for Medtronic or using the [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal){: target="_blank" } feature for Omnipod.
 
 ### Testing
 
-Open Loop mode shows you glucose trends without the influence of temp-basal or automatic-bolus from Loop. This is particularly helpful if you haven't used Medtronic sites/pumps or Omnipod prior to Loop. You may find that your basal rates and carb ratios can change significantly coming from other brands of pumps or from multiple daily injections (MDI).
+<code>Open Loop</code> mode shows you glucose trends without the influence of temporary basal or automatic bolus. This is particularly helpful if you haven't used Medtronic sites/pumps or Omnipod before. You may find that your basal rates and carb ratios can change significantly coming from other brands of pumps or from multiple daily injections (MDI).
 
-Take the time to establish a good basal profile using the pump you plan to use for Loop while in Open Loop mode.
+**The suggestions below work for most people. You need to adjust for your own situation.**
 
-Test your insulin sensitivity factor (ISF) during Open Loop after your basal rates are established.  Loop uses your ISF every 5 minutes to update predictions, so it's worth testing before turning on automated insulin dosing with Closed Loop mode.
+Take the time to establish a good basal profile while in <code>Open Loop</code> mode using the pump you plan to use for the *Loop* app. When using an algorithm, your basal rates needs to be neutral; in other words your glucose, in the absence of food and exercise, should be stable. (When you do basal testing, you should aim to stay at a glucose that is steady within 35 mg/dL (2 mmol/L).)
+
+If you previously ran a high basal rate during the day to cover meals, you may need to adjust your CR (to a smaller value) after your basal rate is adjusted to be neutral.
+
+Test your insulin sensitivity factor (ISF) during <code>Open Loop</code> after your basal rates are established. The *Loop* app uses your ISF every 5 minutes to update predictions, so it's worth testing before turning on automated insulin dosing with <code>Closed Loop</code> mode. You may need a different, probably higher value, than what you used as a correction factor with manual pumping or MDI.
+
+The algorithm uses the ratio of ISF/CR as part of the prediction while meals are being absorbed. That ratio is approximately how much a single gram of carbohydrate raises your glucose. Examine your ratio, experiment by taking a small fast-acting "low treatment" when stable with no other food or exercise. Your ISF/CR ratio times the grams eaten should be within a factor of two of how much rise you see in glucose.
 
 ## Meal Entry
 
@@ -64,9 +72,9 @@ Test your insulin sensitivity factor (ISF) during Open Loop after your basal rat
 
 * Meal Entry:
     * In the Add Carb Entry screen, you must enter Amount Consumed, defaults are ok for other rows
-    * The meal entry is not saved when you tap continue - Loop takes you to the Meal Bolus screen
-    * In the [Meal Bolus](../features/bolus.md#meal-bolus) screen, you can save the carbs and accept or override the recommended bolus
-    * Review the recommended bolus for the carb entry
+    * The meal entry is not saved when you tap continue - the *Loop* app takes you to the Meal Bolus screen
+    * In the [Meal Bolus](../features/bolus.md#meal-bolus){: target="_blank" } screen, you can save the carbs and accept or override the recommended bolus
+    * Review the recommended bolus for the meal entry
         * Does the recommendation make sense based on your prior experience
         * Pay attention to the glucose prediction chart embedded in the Meal Bolus tool
         * Practice modifying when the carbs are expected and how long they are expected to last
@@ -75,32 +83,49 @@ Test your insulin sensitivity factor (ISF) during Open Loop after your basal rat
 
 ### Carb Absorption
 
-Loop uses carb absorption as a component to every meal entry. Watch your meals and try to estimate how long they impact your glucose for various types of food. Notice when Loop would suspend basal or increase insulin delivery and ask yourself why it would be doing that. Ask if this is the same decision you would make.  This effort  will help smooth the transition to closed loop.
+Loop uses carb absorption as a component to every meal entry. Most people are successful with the default absorption time of 3 hours. Remember the *Loop* app updates the prediction every 5 minutes and will adjust if you get the amount or absorption time wrong, as long as you are close.
 
+* For low-glucose treatment, you can enter using the 30-minute (lollipop) icon
+* For high-fat meals, you can try the 5-hour (pizza) icon
+
+The [Active Carbohydrate](../../loop-3/displays-v3.md#active-carbohydrates-chart){: target="_blank" } chart displays how the app thinks your meal is being aborbed. This is affected by your basal rates, ISF and CR. If it looks wrong, examine your settings.
+
+Depending on the type of food you eat, you may increase the carb entry to include some protein or fat.
 
 ## Manual (or Correction) Bolus
 
-At any time, you can enter a bolus using the Bolus (double orange triangles) icon in the Toolbar. Loop offers a recommendation if the glucose prediction supports one. Review the [Eventual Glucose](#eventual-glucose) section above to understand when Loop will recommend a bolus. The Loop recommendation can be modified by editing the Bolus amount.
+At any time, you can enter a bolus using the Bolus (double orange triangles) icon in the Toolbar. The *Loop* app offers a recommendation if the glucose prediction supports one. Review the [Eventual Glucose](#eventual-glucose) section above to understand when the app will recommend a bolus. The *Loop* recommendation can be modified by editing the Bolus amount.
 
-More detail is provided at this [link](../features/bolus.md#manual-or-correction-bolus).
+If you tap on the Bolus button (on the Toolbar), does the app recommend more insulin? 
+
+* If so, you can choose to accept if it looks reasonable to you
+* If not, look at the prediction plot to understand the decision
+
+Ask if this is the same decision you would make. This effort will help smooth the transition to <code>Closed Loop</code>.
 
 ## Troubleshooting
 
 If you use a RileyLink, determine how far the link can be from your phone and pump, and plan where to carry the link. DASH Omnipod users do not need the RileyLink but should determine how far their phone can be from the pod without communication problems.
 
-Learn to troubleshoot [Red Loops](../../troubleshooting/red-loop.md) and the cause of potential loop issues. You'll be less frustrated starting on closed loop if you know how to address these issues
+Learn to troubleshoot [Red Loops](../../troubleshooting/red-loop.md){: target="_blank" } and the cause of potential loop issues. You'll be less frustrated starting on closed loop if you know how to address these issues
 
-Familiarize yourself with the ["Bolus May Have Failed"](../features/bolus.md#bolus-failure-notifications) notifications and how to handle them.  Double-check the displays to verify that the bolus didn't enact before trying to give the bolus again.
+Familiarize yourself with the [Bolus Failure Notifications](../features/bolus.md#bolus-failure-notifications){: target="_blank" } and how to handle them. Double-check the displays to verify figure out the problem before trying to give the bolus again.
 
 ## Caregiver training
 
-Caregivers for Loopers should learn how to use Loop. Consider giving caregivers an individualized quick info sheet on Loop. School staff or your child need to know how to handle a site change at school. Try to watch Nightscout while you get to know Loop so that you can become better at remote troubleshooting problems you might encounter.
+Caregivers for Loopers should learn how to use the *Loop* app. Consider giving caregivers an individualized quick info sheet. School staff or your child need to know how to handle a site change at school. Try to watch *Nightscout* while you get to know the *Loop* app so that you can become better at remote troubleshooting problems you might encounter.
+
+## *Apple* Health in <code>Open Loop</code>
+
+If you are using the *Apple* Health app to examine insulin given while in <code>Open Loop</code>, the basal delivery is not updated promptly. You can force an update by suspending the pump and then resuming the pump.
 
 ## Extended Bolus
 
 A menu item to set an extended bolus is not a feature provided by the *Loop* app at this time. You can make your own extended bolus using the <code>Manual Temp Basal</code> feature with Omnipod. Note that during the time the <code>Manual Temp Basal</code> command is running, the *Loop* app will make no automated changes to dosing even if the <code>Closed Loop</code> slider is selected as enabled.
 
 ### Extended Bolus Equations
+
+> This section was added at user request. Once you switch to <code>Closed Loop</code> mode, you should not need this. But before you are ready for that step, you may want to use a tested method for a known meal.
 
 Consider a desired total bolus $(BolusTotal)$ given over an extended time with a prompt amount $(PromptAmount)$ now and the balance $(Balance)$ delivered over the next $(H)$ hours with a current scheduled basal rate $(BR)$.
 

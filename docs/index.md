@@ -17,7 +17,7 @@ The *Loop* app is an automated insulin delivery application that you build and o
     * You indicate your CGM and pump
 * You choose how to operate the *Loop* app:
     * <code>Closed Loop</code>: Predict, recommend and control insulin dosing
-    * <code>Open Loop</code>: Predict and recommend but you must take action to modify dosing
+    * <code>Open Loop</code>: Explore interface, test settings, learn to enter meals and dose
 
 ### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
