@@ -38,7 +38,7 @@ Using an algorithm that updates glucose predictions and adjusts insulin delivery
 
 ### Eventual Glucose
 
-Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)** to understand recommendations for insulin delivery adjustment. The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose. Its current decisions are based on actual, predicted and eventual glucose. More weight is given to the first three hours of insulin duration of activity when deciding how much insulin should be recommended or withheld from basal.
+Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../loop-3/displays-v3.md#glucose-chart)** to understand recommendations for insulin delivery adjustment. The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose. Its current decisions are based on actual, predicted and eventual glucose. Predictions for the first three hours of insulin duration of activity are given more emphasis than later predictions when deciding how much insulin should be recommended or withheld from basal.
 
 If there is a dip in the predicted glucose below the Glucose Safety Limit, the *Loop* app will not recommend insulin even if the eventual glucose is above your Correction Range.
 
