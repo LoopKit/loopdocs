@@ -90,11 +90,9 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 ### Renew Certificate
 
-> This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your `Distribution Certificate` expires.
+> This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your `Distribution Certificate` expires. (Don't worry if you did not see the email.)
 
-**Once a year, you need to renew your `Distribution Certificate` to continue using the build with browser method.**
-
-**Apps in TestFlight that have not already expired are not affected by revoking the certificate.**
+**Apps in TestFlight are not affected when a certificate expires or is revoked.**
 
 * Apps installed on the phone continue to run
 * Apps can be installed from TestFlight onto a phone up through the TestFlight expiration date
@@ -122,21 +120,33 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     * Click each row that has a `Distribution Certificate` and revoke it
     * You will get an email informing you the certificate was revoked
 1. Navigate to your `Match-Secrets` Repository
-    * You can do this several ways, but the URL address will be `https://github.com/username/Match-Secrets` where `username` is replaced by your *GitHub* username
-1. Delete the `certs/distribution` folder using these instructions. The GIF below indicates the places to click with numbered red rectangles:
+    * You can do this several ways, but one method is demonstrated by the GIF below
+    * Open the URL for your *GitHub* account (address is `https://github.com/username` where `username` is replaced by your *GitHub* username
+    * Click on the Repositories Tab
+    * Select Match-Secrets
+
+    ![navigate to your Match-Secrets repository](img/match-secrets-nav.gif){width="650"}
+    {align="center"}
+
+1. Delete the `certs/distribution` folder of your `Match-Secrets` `repository` using these instructions. The GIF below indicates the places to click with numbered red rectangles:
     * Frame 1: Click 1 on the folder called `certs/distribution`
     * Frame 2: Click 2 and 3 on the three dots in the upper right and then `Delete directory`
     * Frame 3: Click 4 and 5 on `Commit changes` in the upper right and then accept the suggested choice by clicking on `Commit changes` in the lower right
 
-    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="700"}
+    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="650"}
     {align="center"}
 
-1. In your fork of LoopWorkspace:
+    !!! question "Deleting the certs/distribution folder did not work for me"
+        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](gh-errors.md#reset-match-secrets){: target="_blank" }
+
+1. While still within your *Github* account, navigate to your fork of LoopWorkspace.
+    * You can do this several ways, but one method is demonstrated by the GIF below
+    * Click on your username and then `Repositories` and select `LoopWorkspace`
+    * Once you are on your LoopWorkspace repository, click on the link below and follow the instructions provided to create your certificates.
     * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
 
-!!! question "Deleting the certs/distribution folder did not work for me"
-    Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](gh-errors.md#reset-match-secrets){: target="_blank" }
-
+    ![navigate to your LoopWorkspace repository](img/switch-nav.gif){width="650"}
+    {align="center"}
 
 !!! warning "Other Apps"
     If you build other apps using the build with browser method, they have just had their certificates revoked.
