@@ -3806,14 +3806,9 @@
 </div>
 <h3 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
-<p>This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your <code>Distribution Certificate</code> expires.</p>
+<p>This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your <code>Distribution Certificate</code> expires. (Don't worry if you did not see the email.)</p>
 </blockquote>
-<p><strong>Once a year, you need to renew your <code>Distribution Certificate</code> to continue using the build with browser method.</strong></p>
-<blockquote>
-<p>Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your <code>Distribution Certificate</code> will no longer be valid in 30 days."</p>
-<p>Many people report not seeing the email; that is covered in the steps below.</p>
-</blockquote>
-<p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> that have not already expired are not affected by revoking the certificate.</strong></p>
+<p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> are not affected when a certificate expires or is revoked.</strong></p>
 <ul>
 <li>Apps installed on the phone continue to run</li>
 <li>Apps can be installed from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> onto a phone up through the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date</li>
@@ -3851,30 +3846,40 @@
 <li>You will get an email informing you the certificate was revoked</li>
 </ul>
 </li>
-<li>Navigate to your <code>Match-Secrets</code> Repository<ul>
-<li>You can do this several ways, but the <abbr title="website address (Uniform Resource Locator)">URL</abbr> address will be <code>https://github.com/username/Match-Secrets</code> where <code>username</code> is replaced by your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username</li>
+<li>
+<p>Navigate to your <code>Match-Secrets</code> Repository</p>
+<ul>
+<li>You can do this several ways, but one method is demonstrated by the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
+<li>Open the <abbr title="website address (Uniform Resource Locator)">URL</abbr> for your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account (address is <code>https://github.com/username</code> where <code>username</code> is replaced by your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username</li>
+<li>Click on the Repositories Tab</li>
+<li>Select <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></li>
 </ul>
+<p align="center"><img alt="navigate to your Match-Secrets repository" src="../img/match-secrets-nav.gif" width="650" /></p>
 </li>
 <li>
-<p>Delete the <code>certs/distribution</code> folder using these instructions. The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below indicates the places to click with numbered red rectangles:</p>
+<p>Delete the <code>certs/distribution</code> folder of your <code>Match-Secrets</code> <code>repository</code> using these instructions. The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below indicates the places to click with numbered red rectangles:</p>
 <ul>
 <li>Frame 1: Click 1 on the folder called <code>certs/distribution</code></li>
 <li>Frame 2: Click 2 and 3 on the three dots in the upper right and then <code>Delete directory</code></li>
 <li>Frame 3: Click 4 and 5 on <code>Commit changes</code> in the upper right and then accept the suggested choice by clicking on <code>Commit changes</code> in the lower right</li>
 </ul>
-<p align="center"><img alt="delete the distributon certs folder in your Match-Secrets repository" src="../img/delete-distr-certs-match-secrets.gif" width="700" /></p>
-</li>
-<li>
-<p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
-<ul>
-<li>Run the <a href="../gh-first-time/#create-certificates" target="_blank"><code>Action</code>: <code>Create Certificates</code></a></li>
-</ul>
-</li>
-</ol>
+<p align="center"><img alt="delete the distributon certs folder in your Match-Secrets repository" src="../img/delete-distr-certs-match-secrets.gif" width="650" /></p>
 <div class="admonition question">
 <p class="admonition-title">Deleting the certs/distribution folder did not work for me</p>
 <p>Some people reported trouble with this step. The other option is to delete and create a new <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>: see <a href="../gh-errors/#reset-match-secrets" target="_blank">Reset <code>Match-Secrets</code></a></p>
 </div>
+</li>
+<li>
+<p>While still within your <em>Github</em> account, navigate to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace.</p>
+<ul>
+<li>You can do this several ways, but one method is demonstrated by the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
+<li>Click on your username and then <code>Repositories</code> and select <code>LoopWorkspace</code></li>
+<li>Once you are on your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>, click on the link below and follow the instructions provided to create your certificates.</li>
+<li>Run the <a href="../gh-first-time/#create-certificates" target="_blank"><code>Action</code>: <code>Create Certificates</code></a></li>
+</ul>
+<p align="center"><img alt="navigate to your LoopWorkspace repository" src="../img/switch-nav.gif" width="650" /></p>
+</li>
+</ol>
 <div class="admonition warning">
 <p class="admonition-title">Other Apps</p>
 <p>If you build other apps using the build with browser method, they have just had their certificates revoked.</p>
