@@ -128,7 +128,7 @@ For more reading, there's a whole set of pages on using [*Nightscout* with the *
 
 ## *Apple* Health in <code>Open Loop</code>
 
-If you are using the *Apple* Health app to examine insulin given while in <code>Open Loop</code>, basal delivery is not updated promptly. You can force an update by suspending the pump and then resuming the pump.
+If you are using the *Apple* Health app to examine insulin given while in <code>Open Loop</code>, basal delivery is not recorded in the Health app promptly. You can force an update from the *Loop* app to Health by suspending and then resuming the pump. If you do this, keep watching the app to make sure delivery did resume.
 
 ## Extended Bolus
 

@@ -124,7 +124,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     * Click on the Repositories Tab
     * Select Match-Secrets
 
-    ![navigate to your Match-Secrets repository](img/match-secrets-nav.gif){width="700"}
+    ![navigate to your Match-Secrets repository](img/match-secrets-nav.gif){width="650"}
     {align="center"}
 
 1. Delete the `certs/distribution` folder of your `Match-Secrets` `repository` using these instructions. The GIF below indicates the places to click with numbered red rectangles:
@@ -132,7 +132,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     * Frame 2: Click 2 and 3 on the three dots in the upper right and then `Delete directory`
     * Frame 3: Click 4 and 5 on `Commit changes` in the upper right and then accept the suggested choice by clicking on `Commit changes` in the lower right
 
-    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="700"}
+    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="650"}
     {align="center"}
 
     !!! question "Deleting the certs/distribution folder did not work for me"
@@ -144,7 +144,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
     * Once you are on your LoopWorkspace repository, click on the link below and follow the instructions provided to create your certificates.
     * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
 
-    ![navigate to your LoopWorkspace repository](img/switch-nav.gif){width="700"}
+    ![navigate to your LoopWorkspace repository](img/switch-nav.gif){width="650"}
     {align="center"}
 
 !!! warning "Other Apps"
