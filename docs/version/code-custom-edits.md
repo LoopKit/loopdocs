@@ -298,12 +298,25 @@ static let carbRatio = Guardrail(
 
 ### Adjust Future Carbs Time Interval
 
-Loop 3 limits the future time change allowed to 1 hour.
+Loop 3 limits to 1 hours the amount of time in the future that carbs can be entered.
+
+* The [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" } has a customization that changes this to 4 hours in the future
+* If you want something other than 1 hour or 4 hours, you must create a personal customization
+
+The customization varies depending on whether you are building `dev` or `main`.
 
 * Module: Loop
+* Stable: Changed on 2024 May 29
+
+The `main` branch:
+
 * Folder: Loop/Loop/View Controllers
-* File:CarbEntryViewController.swift, Line 438
-* Stable: 2024 May 29
+* File: CarbEntryViewController.swift, Line 438
+
+The `dev` branch:
+
+* Folder: Loop/Loop/Models
+* File: LoopConstants.swift, Line 28
 
 The changes required for this customization have changed several time for `dev`. The code provided in [Version after Update](#version-after-update_1) is for the latest `dev` code, as of 2023 Aug 20.
 
@@ -330,7 +343,7 @@ The minimumDate is how far back in the past you can modify time.  The default is
 static let maxCarbEntryFutureTime
 ```
 
-Default shown below (for maximum and minimum):
+Default shown below:
 
 _Code Before Modification_
 
