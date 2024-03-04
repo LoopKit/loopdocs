@@ -15,7 +15,7 @@
 !!! question "What is a SHA-1?"
     SHA-1 means Secure Hash Algorithm 1; which is used to generate an alphanumeric code.
 
-    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied. These work for any compatible <code>fork</code> taken from the original&nbsp;<span translate="no">GitHub repository</span>.
+    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> taken from the original&nbsp;<span translate="no">GitHub repository</span>.
     
 ### Do Not Make a Pull Request to LoopKit GitHub Username
 
@@ -40,11 +40,14 @@
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
         * It is a good idea to test each customization as soon as you install the new build on your phone
-    * LoopDocs: Decide on Modules to modify using the [LoopDocs: Code Customization](../version/code-custom-edits.md){: target="_blank" } page
+    * LoopDocs: Decide on Modules to modify using the [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
+        * If there are customization not provided by the Customization List, then you need to make custom edits
+        * This current page explains how to make the edits using a browser
+        * The [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } gives instructions on identifying the Module, finding the file and editing the line(s) 
     * *GitHub* (each Module):
         1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
-        1. Sync the Module (if needed)
+        1. Create a new `branch` for that module (don't worry, we'll tell you how)
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes
         1. Prepare lines needed for each customization and save
@@ -67,7 +70,7 @@ There is some background information at the bottom of this page starting at&nbsp
 
 ## Decide Which Modules You Want to Modify
 
-Decide which [LoopDocs: Code Customization](../version/code-custom-edits.md){: target="_blank" } changes you want to make. Each customization lists a Module name.
+Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } changes you want to make. Each customization lists a Module name.
 
 * DASH Pods: Use OmniBLE
 * Eros Pods: Use OmniKit
@@ -77,13 +80,18 @@ Decide which [LoopDocs: Code Customization](../version/code-custom-edits.md){: t
 
 ## Outline of What Happens in the Module
 
+!!! important "Method Changed"
+    This method changed slightly. This avoids a situation where you are customizing the `main` branch of `LoopWorkspace` but the file you want to change was modified in the `dev` branch.
+
 !!! warning "Review Only"
     Review this section so you know what to expect. The actual steps will come later, starting with [Create your <code>Fork</code> for Selected Module](#create-your-fork-for-selected-module) or [Edit Module in Browser](#edit-module-in-browser).
 
-In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. This section tries to explain what you will be doing once you start editing with a given Module.
+In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. There are no links here because you are supposed to review the steps before taking action in the next section.
 
-1. Make a <code>fork</code> if you don't have one
-1. Change the line(s) of code desired for your customization(s)
+1. First time for this module:
+    * Make a <code>fork</code>
+    * Create a new <code>branch</code> for your <code>fork</code> using the SHA-1 table
+1. Change the line(s) of code desired for your customization(s) in your `branch` of your `fork`
 1. Save the change(s) using descriptive comments
 1. Repeat until done with this Module
 
@@ -107,7 +115,7 @@ The solution was to make sure the email address in their GitHub profile was corr
 Choose your link:
 
 * [New `Fork`](#new-fork): if you do not have a <code>fork</code> of this Module
-* [Code Updates](#code-updates): if you are returning after a new release
+* [Code Updates](#code-updates): if you are returning after a new release and the customization you used before no longer works
 * [Existing `Fork` for Module](#existing-fork-for-module): if you have a <code>fork</code> but need guidance on whether it is the right <code>fork</code>
 
 ### Code Updates
@@ -115,12 +123,15 @@ Choose your link:
 !!! warning "New Release"
     If you have previously used this process for a prior release, use the same Modules you already copied.
 
-    You can often reuse customizations that you created earlier even with a new release. Attempt to use your existing patches before creating new ones.
+    You can often **reuse customizations** that you created earlier even with a new release. **Attempt to use your existing patches before creating new ones.**
 
     If a customization did not work, then
 
     1. Go to your <code>fork</code> of each Module
-    2. Sync that Module to get the most recent version
+    1. Make sure you are on the [Default Branch](#default-table) for that Module
+    1. Sync that Module to get the most recent version
+    1. If you are building released code, use the updated SHA-1 value to create a new `branch` to customize
+        * For dev branch, you always use the most recent version
 
     Skip ahead to [Edit Module in Browser](#edit-module-in-browser).
 
@@ -160,11 +171,47 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
 | <span translate="no">LoopKit/OmniBLE</span> | <span translate="no">dev</span> |
 | <span translate="no">LoopKit/OmniKit</span> | <span translate="no">main</span> |
 
-## Edit Module in Browser
+## Create `branch` if needed
 
-Open your browser to your https://github.com/username/Module URL. Be sure to sync your <code>fork</code> if it shows it is behind the&nbsp;<span translate="no">LoopKit repository</span>.
+Open your browser to your https://github.com/username/Module URL. If you already created the `branch` you need, you do not need to create a new one.
 
-Navigate to the file you need to modify (using the instructions to find the lines from the [LoopDocs: Customization Page](../version/code-custom-edits.md#instructions-for-finding-the-lines))
+If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. Notice the suggested branch name for that table. You will use this in Step 3.3 below.
+
+You should create a `branch` following the numbered steps and watching the GIF. Each Frame in the GIF corresponds to a numbered step below.
+
+1. Click on URL line as indicated by the arrow
+1. Add the text `/tree/SHA-1` where you change SHA-1 to be the value in the table below and hit return
+1. Create a new branch in three steps
+    * 3.1: Click on the dropdown under the `branch` icon
+    * 3.2: Type the suggested new `branch` name in the blank space
+    * 3.3: Click on the create `branch` button
+1. You should see a screen similar to the example below
+    * Do not click on the Create Pull Request button that is marked with a big X
+
+![create branch for version](img/create-branch.gif){width="600"}
+{align="center"}
+
+??? question "Is this necessary? (Click for the answer)"
+    You can live dangerously and just create the customization in the default branch. That works really well if a new version has just been released. But after a while, the `dev` branch may modify the file that you are interested in. This is the only way to ensure the code you are changing matches the version in the `LoopWorkspace` `repository` `branch` that you are building.
+
+### Table of SHA-1
+
+This will be updated with each release. The versions for the `dev` branch are not reported here because they are frequently updated. If customizing dev, use the default branch for each Module and `sync` that branch if needed.
+
+#### Version 3.2.3
+
+Suggested `branch` name is `v-3.2.3`
+
+| <code>Repository</code> | SHA-1 |
+|:--|:-:|
+| `LoopWorkspace` | 81a3d9b03305a4b2a844bd6bac14a14f27626fef |
+| `Loop` | c6b058b4276681600979aaeba518c635f06ac135 |
+| `LoopKit` |9835a29f1bac9f75023f39c376479a2e6a6c8ccd |
+| `OmniBLE` | f21360781c0b8eee26c531d20f1b0aa192a227f2 |
+| `OmniKit` | c1e0d395975c93d15b3f84ac21097e40b7d5d93f |
+
+
+Navigate to the file you need to modify (using the instructions to find the lines from the [Version: Custom Edit](../version/code-custom-edits.md#instructions-for-finding-the-lines){: target="_blank" } page)
 
 !!! tip "Pro Tip"
     Look at the files you want to change - if more than one change is desired for a single file - do them at the same time.
