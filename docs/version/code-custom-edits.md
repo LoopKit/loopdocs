@@ -20,17 +20,18 @@ Some customizations are the same for everyone and have been prepared for easy us
 
 Other customizations require that you create your own personalized version.
 
-* On this page are instructions for what modifications are required to your code to achieve each desired customization
-* On [Version: Build-Time Flag](../version/build-time-flag.md) are details about how to change the default settings for the build-time flags by editing the `LoopConfigOverride.xcconfig` file.
+* On this page are instructions for what modifications are required to your code to achieve a **personalized customization** (regardless of build method)
+* On [Version: Build-Time Flag](../version/build-time-flag.md){: target="_blank" } are details about how to change the default settings for the build-time flags by editing the `LoopConfigOverride.xcconfig` file.
 
 ## Instructions for Finding the Lines
 
 The instructions on this page identify the module, `Key_Phrase` or file and line numbers required to locate the code you need to modify.
 
-The how-to instructions for making these changes are different for each build method. They are found in the respective build-method tabs:
-
-* [Custom Edits with Browser](../gh-actions/edit-browser.md)
-* [Custom Edits with *Mac*](../build/edit-mac.md)
+!!! question "Why do I have to jump between pages?"
+    * The code changes are defined on this page
+    * The method to make code changes depends on build method and are found at:
+        * [Custom Edits with Browser](../gh-actions/edit-browser.md){: target="_blank" }
+        * [Custom Edits with *Mac*](../build/edit-mac.md){: target="_blank" }
 
 !!! info "Line numbers may change"
     Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.
@@ -39,13 +40,16 @@ The how-to instructions for making these changes are different for each build me
 
     * If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help
 
+    * Sometimes there is a bigger change than just line numbers. The git software is really good about finding the "right" code that is just at a different line number. When you see the notation `Stable: Changed on date`, that means you must select the correct version when making your personal customization depending on which version you are modifying.
+
 This page is broken into two halves:
 
 * [Custom Edits Required](#custom-edits-optional):
-    * The first half of this page is for customizations that require you to edit your own code.
+    * The first half of this page is for customizations that require you to edit your own code
 
 * [Custom Edits Optional](#custom-edits-optional):
-    * The second half of this page provides instructions for some of the prepared customizations included in the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" }. Some people prefer to make all their own edits.
+    * The second half of this page provides instructions for some of the prepared customizations included in the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" }
+    * Some people prefer to make all their own edits
 
 For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for the line number. 
 
@@ -66,13 +70,21 @@ of the block below the title `Key_Phrase`;  click on it to copy the phrase into 
 
 ### Module, Folder, File
 
+!!! tip "Stability Information Added"
+    If a customization needs to be modified to work with the `dev` branch, that will be noted. This means a change that is more than a line number. Instead it is a change that requires a new customization.
+
+    For those using the Browser Build method for `main` branch, this means you will need to use [Create `branch` if needed](../gh-actions/edit-browser.md#create-branch-if-needed){: target="_blank" } to create a special branch to prepare a new version of this customization. If you already created a personal customization earlier (before the date noted), you can keep using that customization with `main`.
+
+    For your convenience, see [Not Stable List](#not-stable-list).
+
 Each customization provides the Module, Folder and File bullet below the key phrase.
 
   * Module: Loop
   * Folder: Loop/subfolder1/subfolder2/etc.
   * File: filename.swift, line number(s)
+  * Stable: "Yes" or "Changed on date"
 
-The customizations below show the original line of code that you will be changing.
+The customizations below show the original line of code that you will be changing. 
 
 There may be a figure illustrating the change.
 
@@ -80,6 +92,13 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 * Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
 * In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
+
+#### Not Stable List
+
+This list indicates personalized customization that differ between `main` and `dev`
+
+* 2024 Feb 19: [Glucose Guardrails](#glucose-guardrails)
+* 2023 May 29: [Adjust Future Carbs Time Interval](#adjust-future-carbs-time-interval)
 
 ## Custom Edits Required
 
@@ -101,6 +120,7 @@ defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 * Folder: Loop/LoopCore
 * File: LoopCoreConstants.swift
 * Line: 19
+* Stable: Yes
 
 For example, if you wanted to change `fast` to be slightly longer, the edit would be as follows:
 
@@ -127,6 +147,7 @@ automaticDosingIOBLimit = maxBolus
 * Module: Loop
 * Folder: Loop/Managers
 * File: LoopDataManager.swift, line: 1690 (main), 1796 (dev)
+* Stable: Yes
 
 The following example is for someone who limits a single bolus to 5 U but frequently needs to achieve an IOB of 15 U for meals. They want that level of IOB to be reached with automatic bolusing. In that case, they may want to modify the factor used to calculate $\mathit{automaticDosingIOBLimit}$.
 
@@ -158,6 +179,7 @@ let bolusPartialApplicationFactor
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift
 * Line: 53
+* Stable: Yes
 
 _Code Before Modification_
 
@@ -188,7 +210,7 @@ let cannulaInsertionUnitsExtra
     * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
     * Folder: OmniKit/OmniKit/OmnipodCommon (Eros)
     * File: Pod.swift, Line 82 (DASH); Line 87 (Eros); 
-* Loop 2.2.x: Eros Pod (still configured in rileylink_ios - use Key_Phrase)
+* Stable: Yes
 
 _Code Before Modification_
 
@@ -215,6 +237,9 @@ Guardrail(absoluteBounds:
 * File: Guardrail+Settings.swift
 * Line: 12 for suspendThreshold
 * Line: 26 for correctionRange
+* Stable: Changed on 2024 Feb 19 [Version after Update](#version-after-update)
+
+#### Version before Update
 
 _Code Before Modification_
 
@@ -224,7 +249,25 @@ and
 
     static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 
-Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  Loop automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
+
+Loop automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+
+#### Version after Update
+
+This update, merged into `dev` on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
+
+_Code Before Modification_
+
+    static let suspendThreshold = Guardrail(absoluteBounds: (66.1)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
+
+and
+
+    static let correctionRange = Guardrail(absoluteBounds: (86.1)...(180.5), recommendedBounds: (99.1)...(115.9), unit: .milligramsPerDeciliter, startingSuggestion: 100)
+
+Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
+
+Loop automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
 
 ### Modify Guardrails for Insulin Sensitivity Factor (ISF)
 
@@ -237,6 +280,7 @@ static let insulinSensitivity = Guardrail(
 * Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift, line: 81
+* Stable: Yes
 
 ### Modify Guardrails for Carb Ratio (CR)
 
@@ -249,19 +293,38 @@ static let carbRatio = Guardrail(
 * Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift, line: 88
+* Stable: Yes
 
 
 ### Adjust Future Carbs Time Interval
 
-Loop 3 limits the future time change allowed to 1 hour.
+Loop 3 limits to 1 hours the amount of time in the future that carbs can be entered.
+
+* The [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" } has a customization that changes this to 4 hours in the future
+* If you want something other than 1 hour or 4 hours, you must create a personal customization
+
+The customization varies depending on whether you are building `dev` or `main`.
+
+* Module: Loop
+* Stable: Changed on 2024 May 29
+
+The `main` branch:
+
+* Folder: Loop/Loop/View Controllers
+* File: CarbEntryViewController.swift, Line 438
+
+The `dev` branch:
+
+* Folder: Loop/Loop/Models
+* File: LoopConstants.swift, Line 28
+
+The changes required for this customization have changed several time for `dev`. The code provided in [Version after Update](#version-after-update_1) is for the latest `dev` code, as of 2023 Aug 20.
+
+#### Version before Update
 
 ``` { .txt .copy title="Key_Phrase" }
 cell.datePicker.maximumDate = date.addingTimeInterval
 ```
-
-* Module: Loop
-* Folder: Loop/Loop/View Controllers
-* File:CarbEntryViewController.swift, Line 438
 
 Default shown below (for maximum and minimum):
 
@@ -273,6 +336,20 @@ _Code Before Modification_
 Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
 
 The minimumDate is how far back in the past you can modify time.  The default is 12 hours in the past.
+
+#### Version after Update
+
+``` { .txt .copy title="Key_Phrase" }
+static let maxCarbEntryFutureTime
+```
+
+Default shown below:
+
+_Code Before Modification_
+
+    static let maxCarbEntryFutureTime = TimeInterval(hours: 1)
+
+Change the maxCarbEntryFutureTime to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
 
 ### Adjust the Watch Crown Sensitivity
 
@@ -294,6 +371,7 @@ This key phrase will indicate three different files in the same folder as shown 
 
 * Module: Loop
 * Folder: Loop/WatchApp Extension/Views/Carb Entry & Bolus
+* Stable: Yes
 
 ![use a single Key_Phrase to identify all lines needed to customize sensitivity with loop 3](img/digital-crown-rotation.svg){width="800"}
 {align="center"}
@@ -330,6 +408,7 @@ If you prefer a different notification time and frequency, there are two lines y
 * File: ProfileExpirationAlerter.swift
     * Line 16: modify how long before expiration you get the FIRST notification
     * Line 28: modify how frequently you will be notified
+* Stable: Yes
 
 ``` { .txt .copy title="Key_Phrase" }
 expirationAlertWindow: TimeInterval
@@ -404,6 +483,7 @@ MARK: - Model generation
     * actionDuration (19 to 32)
     * peakActivity (34 to 47)
         * delay (49 to 62)
+* Stable: Yes
 
 ![img/exponential.png](img/exponential.png){width="750"}
 {align="center"}
@@ -455,6 +535,7 @@ canEvaluatePolicy(.deviceOwnerAuthentication
 * Module: LoopKit
 * Folder: LoopKit/LoopKitUI/Extensions/
 * File: Environment+Authenticate.swift, Line 20
+* Stable: Yes
 
 _Code Before Modification_
 
@@ -489,6 +570,7 @@ let allScaleFactorPercentages
 * Module: LoopKit
 * Folder: LoopKit/LoopKitUI/Views
 * File: InsulinSensitivityScalingTableViewCell.swift, Line 19
+* Stable: Yes
 
 _Code Before Modification_
 
@@ -509,6 +591,7 @@ let maxCarbEntryQuantity =
 * Module: Loop
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift, line 18
+* Stable: Yes
 
 _Code Before Modification_
 

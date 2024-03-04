@@ -1,6 +1,6 @@
 ## Overview
 
-When applying a customization using *Mac*, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release), you can skip the download and use the same folder as last time.
+When applying a customization using *Mac*, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the [Current Release](../version/releases.md#current-release){: target="_blank" }, you can skip the download and use the same folder as last time.
 
 ### Find My Downloaded Loop Code
 
@@ -26,7 +26,7 @@ Refer to the graphic below.  The Downloads folder in Finder is highlighted on th
 
 ## Instructions for Finding the Lines
 
-For each customization, you are given landmarks to find the correct location in the code when you review [Version: Custom Edits](../version/code-custom-edits.md). You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for ( ++cmd+l++ # ) the line number. 
+For each customization, you are given landmarks to find the correct location in the code when you review [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" }. You can choose to search using the `Key_Phrase` or navigate to the file in the folder structure and look for ( ++cmd+l++ # ) the line number. 
 
 * Either [Key_Phrase](#key_phrase) or [Module, Folder, File](#module-folder-file)
  can be used to find the lines
@@ -91,12 +91,6 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 ![how to use finder to find the correct download and open xcode](img/finding-loopworkspace.svg){width="750"}
 {align="center"}
 
-## Modify and Save
-
-* Either `Key_Phrase` or `Module, Folder, File` method described on [Version: Custom Code Edits](../version/code-custom-edits.md) can be used to find the lines inside *Xcode* on your *Mac*
-* Be sure to save the file when you make a change - otherwise the modification does not get built into your app
-* Some folder icons show different names in Xcode, see [Folders and Icons](#folders-and-icons)
-
 
 ## Folders and Icons
 
@@ -119,3 +113,11 @@ These folder icon names are different from the directory names on the computer:
 | Amplitude | Amplitude-iOS | 
 
 All other icons and directory names match.
+
+## Modify and Save
+
+* Either `Key_Phrase` or `Module, Folder, File` method described on [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } can be used to find the lines inside *Xcode* on your *Mac*
+* Be sure to save the file when you make a change - otherwise the modification does not get built into your app
+* Some folder icons show different names in Xcode, see [Folders and Icons](#folders-and-icons)
+* When done with all the desired edits, plug in your phone and select it
+    * Click on the "Play" button to build your customized code
