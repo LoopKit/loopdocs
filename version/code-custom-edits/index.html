@@ -3853,16 +3853,22 @@
 </ul>
 <p>Other customizations require that you create your own personalized version.</p>
 <ul>
-<li>On this page are instructions for what modifications are required to your code to achieve each desired customization</li>
-<li>On <a href="../build-time-flag/">Version: Build-Time Flag</a> are details about how to change the default settings for the build-time flags by editing the <code>LoopConfigOverride.xcconfig</code> file.</li>
+<li>On this page are instructions for what modifications are required to your code to achieve a <strong>personalized customization</strong> (regardless of build method)</li>
+<li>On <a href="../build-time-flag/" target="_blank">Version: Build-Time Flag</a> are details about how to change the default settings for the build-time flags by editing the <code>LoopConfigOverride.xcconfig</code> file.</li>
 </ul>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions on this page identify the module, <code>Key_Phrase</code> or file and line numbers required to locate the code you need to modify.</p>
-<p>The how-to instructions for making these changes are different for each build method. They are found in the respective build-method tabs:</p>
+<div class="admonition question">
+<p class="admonition-title">Why do I have to jump between pages?</p>
 <ul>
-<li><a href="../../gh-actions/edit-browser/">Custom Edits with Browser</a></li>
-<li><a href="../../build/edit-mac/">Custom Edits with <em>Mac</em></a></li>
+<li>The code changes are defined on this page</li>
+<li>The method to make code changes depends on build method and are found at:<ul>
+<li><a href="../../gh-actions/edit-browser/" target="_blank">Custom Edits with Browser</a></li>
+<li><a href="../../build/edit-mac/" target="_blank">Custom Edits with <em>Mac</em></a></li>
 </ul>
+</li>
+</ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Line numbers may change</p>
 <p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code.</p>
@@ -3873,6 +3879,9 @@
 <li>
 <p>If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help</p>
 </li>
+<li>
+<p>Sometimes there is a bigger change than just line numbers. The <abbr title="a tool for version control">git</abbr> software is really good about finding the "right" code that is just at a different line number. When you see the notation <code>Stable: Changed on date</code>, that means you must select the correct version when making your personal customization depending on which version you are modifying.</p>
+</li>
 </ul>
 </div>
 <p>This page is broken into two halves:</p>
@@ -3880,13 +3889,14 @@
 <li>
 <p><a href="#custom-edits-optional">Custom Edits Required</a>:</p>
 <ul>
-<li>The first half of this page is for customizations that require you to edit your own code.</li>
+<li>The first half of this page is for customizations that require you to edit your own code</li>
 </ul>
 </li>
 <li>
 <p><a href="#custom-edits-optional">Custom Edits Optional</a>:</p>
 <ul>
-<li>The second half of this page provides instructions for some of the prepared customizations included in the <a href="https://www.loopandlearn.org/custom-code" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a>. Some people prefer to make all their own edits.</li>
+<li>The second half of this page provides instructions for some of the prepared customizations included in the <a href="https://www.loopandlearn.org/custom-code" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a></li>
+<li>Some people prefer to make all their own edits</li>
 </ul>
 </li>
 </ul>
@@ -3904,18 +3914,31 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Alternatively, navigate to the required file using Module, Folder, File and line number</li>
 </ul>
 <h3 id="module-folder-file">Module, Folder, File<a class="headerlink" href="#module-folder-file" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Stability Information Added</p>
+<p>If a customization needs to be modified to work with the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, that will be noted. This means a change that is more than a line number. Instead it is a change that requires a new customization.</p>
+<p>For those using the Browser Build method for <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, this means you will need to use <a href="../../gh-actions/edit-browser/#create-branch-if-needed" target="_blank">Create <code>branch</code> if needed</a> to create a special <abbr title="version of code within a single repository or workspace repository">branch</abbr> to prepare a new version of this customization. If you already created a personal customization earlier (before the date noted), you can keep using that customization with <code>main</code>.</p>
+<p>For your convenience, see <a href="#not-stable-list">Not Stable List</a>.</p>
+</div>
 <p>Each customization provides the Module, Folder and File bullet below the key phrase.</p>
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/subfolder1/subfolder2/etc.</li>
 <li>File: filename.swift, line number(s)</li>
+<li>Stable: "Yes" or "Changed on date"</li>
 </ul>
-<p>The customizations below show the original line of code that you will be changing.</p>
+<p>The customizations below show the original line of code that you will be changing. </p>
 <p>There may be a figure illustrating the change.</p>
 <p>Below the figure, the original, and in some cases, the modified code will be displayed as text.</p>
 <ul>
 <li>Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs</li>
 <li>In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs</li>
+</ul>
+<h4 id="not-stable-list">Not Stable List<a class="headerlink" href="#not-stable-list" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This list indicates personalized customization that differ between <code>main</code> and <code>dev</code></p>
+<ul>
+<li>2024 Feb 19: <a href="#glucose-guardrails">Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></a></li>
+<li>2023 May 29: <a href="#adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval</a></li>
 </ul>
 <h2 id="custom-edits-required">Custom Edits Required<a class="headerlink" href="#custom-edits-required" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3932,6 +3955,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/LoopCore</li>
 <li>File: LoopCoreConstants.swift</li>
 <li>Line: 19</li>
+<li>Stable: Yes</li>
 </ul>
 <p>For example, if you wanted to change <code>fast</code> to be slightly longer, the edit would be as follows:</p>
 <p>_Code Before Modification</p>
@@ -3950,6 +3974,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Managers</li>
 <li>File: LoopDataManager.swift, line: 1690 (main), 1796 (dev)</li>
+<li>Stable: Yes</li>
 </ul>
 <p>The following example is for someone who limits a single bolus to 5 U but frequently needs to achieve an <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> of 15 U for meals. They want that level of <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> to be reached with automatic bolusing. In that case, they may want to modify the factor used to calculate <span class="arithmatex">\(\mathit{automaticDosingIOBLimit}\)</span>.</p>
 <p>Original Code:
@@ -3970,6 +3995,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
 <li>File: LoopConstants.swift</li>
 <li>Line: 53</li>
+<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let bolusPartialApplicationFactor = 0.4
@@ -3995,7 +4021,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>File: Pod.swift, Line 82 (DASH); Line 87 (Eros); </li>
 </ul>
 </li>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x: Eros Pod (still configured in rileylink_ios - use Key_Phrase)</li>
+<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.0 // edit to add a fixed additional amount of insulin during cannula insertion
@@ -4015,14 +4041,27 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>File: Guardrail+Settings.swift</li>
 <li>Line: 12 for suspendThreshold</li>
 <li>Line: 26 for correctionRange</li>
+<li>Stable: Changed on 2024 Feb 19 <a href="#version-after-update">Version after Update</a></li>
 </ul>
+<h4 id="version-before-update">Version before Update<a class="headerlink" href="#version-before-update" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
 </code></pre></div>
 <p>and</p>
 <div class="highlight"><pre><span></span><code>static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 </code></pre></div>
-<p>Modify the 67 for suspendThreshold or 87 for correctionRange to the desired value.  <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> automatically converts from mg/dL. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
+<p>Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
+<h4 id="version-after-update">Version after Update<a class="headerlink" href="#version-after-update" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This update, merged into <code>dev</code> on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.</p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>static let suspendThreshold = Guardrail(absoluteBounds: (66.1)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
+</code></pre></div>
+<p>and</p>
+<div class="highlight"><pre><span></span><code>static let correctionRange = Guardrail(absoluteBounds: (86.1)...(180.5), recommendedBounds: (99.1)...(115.9), unit: .milligramsPerDeciliter, startingSuggestion: 100)
+</code></pre></div>
+<p>Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).</p>
 <h3 id="modify-guardrails-for-insulin-sensitivity-factor-isf">Modify <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Insulin Sensitivity Factor (<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>)<a class="headerlink" href="#modify-guardrails-for-insulin-sensitivity-factor-isf" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Similar to the instructions for glucose guardrails above, but use this <code>Key_Phrase</code> and modify the absoluteBounds row, next line.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let insulinSensitivity = Guardrail(
@@ -4031,6 +4070,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift, line: 81</li>
+<li>Stable: Yes</li>
 </ul>
 <h3 id="modify-guardrails-for-carb-ratio-cr">Modify <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Carb Ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>)<a class="headerlink" href="#modify-guardrails-for-carb-ratio-cr" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Similar to the instructions for glucose guardrails above, but use this <code>Key_Phrase</code> and modify the absoluteBounds row, next line.</p>
@@ -4040,16 +4080,33 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift, line: 88</li>
+<li>Stable: Yes</li>
 </ul>
 <h3 id="adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval<a class="headerlink" href="#adjust-future-carbs-time-interval" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><abbr title="Latest release with major updates">Loop 3</abbr> limits the future time change allowed to 1 hour.</p>
-<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
-</code></pre></div>
+<p><abbr title="Latest release with major updates">Loop 3</abbr> limits to 1 hours the amount of time in the future that carbs can be entered.</p>
+<ul>
+<li>The <a href="https://www.loopandlearn.org/custom-code" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a> has a customization that changes this to 4 hours in the future</li>
+<li>If you want something other than 1 hour or 4 hours, you must create a personal customization</li>
+</ul>
+<p>The customization varies depending on whether you are building <code>dev</code> or <code>main</code>.</p>
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
-<li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/View Controllers</li>
-<li>File:CarbEntryViewController.swift, Line 438</li>
+<li>Stable: Changed on 2024 May 29</li>
 </ul>
+<p>The <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>:</p>
+<ul>
+<li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/View Controllers</li>
+<li>File: CarbEntryViewController.swift, Line 438</li>
+</ul>
+<p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>:</p>
+<ul>
+<li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
+<li>File: LoopConstants.swift, Line 28</li>
+</ul>
+<p>The changes required for this customization have changed several time for <code>dev</code>. The code provided in <a href="#version-after-update_1">Version after Update</a> is for the latest <code>dev</code> code, as of 2023 Aug 20.</p>
+<h4 id="version-before-update_1">Version before Update<a class="headerlink" href="#version-before-update_1" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval
+</code></pre></div>
 <p>Default shown below (for maximum and minimum):</p>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
@@ -4057,6 +4114,14 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 </code></pre></div>
 <p>Change the maximumDate to the number of hours in the future you desire. Remember that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> may increase insulin dosing for future carbs - make sure that they actually arrive. </p>
 <p>The minimumDate is how far back in the past you can modify time.  The default is 12 hours in the past.</p>
+<h4 id="version-after-update_1">Version after Update<a class="headerlink" href="#version-after-update_1" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let maxCarbEntryFutureTime
+</code></pre></div>
+<p>Default shown below:</p>
+<p><em>Code Before Modification</em></p>
+<div class="highlight"><pre><span></span><code>static let maxCarbEntryFutureTime = TimeInterval(hours: 1)
+</code></pre></div>
+<p>Change the maxCarbEntryFutureTime to the number of hours in the future you desire. Remember that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> may increase insulin dosing for future carbs - make sure that they actually arrive. </p>
 <h3 id="adjust-the-watch-crown-sensitivity">Adjust the Watch Crown Sensitivity<a class="headerlink" href="#adjust-the-watch-crown-sensitivity" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The rate of change of the carb and bolus entry pickers when using the digital crown can be altered as can the rotation required to confirm a bolus on the watch. If you are running an older series watch - you may want to make these customizations. When I switched from Series 3 to Series 7 watch - it was amazing. I got a graph on the main watch screen I didn't even know existed and the bolus acceptance was a breeze!</p>
 <ul>
@@ -4071,6 +4136,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/WatchApp Extension/Views/Carb Entry &amp; Bolus</li>
+<li>Stable: Yes</li>
 </ul>
 <p align="center"><img alt="use a single Key_Phrase to identify all lines needed to customize sensitivity with loop 3" src="../img/digital-crown-rotation.svg" width="800" /></p>
 <h4 id="modify-bolus-confirmation-motion">Modify Bolus Confirmation Motion<a class="headerlink" href="#modify-bolus-confirmation-motion" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -4106,6 +4172,7 @@ cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
 <li>Line 28: modify how frequently you will be notified</li>
 </ul>
 </li>
+<li>Stable: Yes</li>
 </ul>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>expirationAlertWindow: TimeInterval
 </code></pre></div>
@@ -4163,6 +4230,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </li>
 </ul>
 </li>
+<li>Stable: Yes</li>
 </ul>
 <p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
 <p>This <abbr title="Latest release with major updates">Loop 3</abbr> table of default values is provided for convenience. The times are all in minutes.</p>
@@ -4238,6 +4306,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/LoopKitUI/Extensions/</li>
 <li>File: Environment+Authenticate.swift, Line 20</li>
+<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &amp;error) {
@@ -4267,6 +4336,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/LoopKitUI/Views</li>
 <li>File: InsulinSensitivityScalingTableViewCell.swift, Line 19</li>
+<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>private let allScaleFactorPercentages = Array(stride(from: 10, through: 200, by: 10))
@@ -4282,6 +4352,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
 <li>File: LoopConstants.swift, line 18</li>
+<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value

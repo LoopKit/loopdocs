@@ -1325,18 +1325,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify-and-save" class="md-nav__link">
+  <a href="#folders-and-icons" class="md-nav__link">
     <span class="md-ellipsis">
-      Modify and Save
+      Folders and Icons
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#folders-and-icons" class="md-nav__link">
+  <a href="#modify-and-save" class="md-nav__link">
     <span class="md-ellipsis">
-      Folders and Icons
+      Modify and Save
     </span>
   </a>
   
@@ -3484,18 +3484,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modify-and-save" class="md-nav__link">
+  <a href="#folders-and-icons" class="md-nav__link">
     <span class="md-ellipsis">
-      Modify and Save
+      Folders and Icons
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#folders-and-icons" class="md-nav__link">
+  <a href="#modify-and-save" class="md-nav__link">
     <span class="md-ellipsis">
-      Folders and Icons
+      Modify and Save
     </span>
   </a>
   
@@ -3519,7 +3519,7 @@
   <h1>Custom Edits with Mac</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>When applying a customization using <em>Mac</em>, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release">Current Release</a>, you can skip the download and use the same folder as last time.</p>
+<p>When applying a customization using <em>Mac</em>, the downloaded code should be fairly recent. If you are not sure, get a fresh download. If you know your downloaded code is the <a href="../../version/releases/#current-release" target="_blank">Current Release</a>, you can skip the download and use the same folder as last time.</p>
 <h3 id="find-my-downloaded-loop-code">Find My Downloaded <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Code<a class="headerlink" href="#find-my-downloaded-loop-code" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below.  The Downloads folder in <abbr title="graphical folder and file display on Mac">Finder</abbr> is highlighted on the upper left. The full path to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.xcworkspace is highlighted along the bottom.</p>
 <div class="admonition success">
@@ -3541,7 +3541,7 @@
 <p>Experienced builders will often build a fresh download to a simulator for their phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> (not their phone) to ensure download is good and is compatible with <abbr title="operating system for Mac computer">macOS</abbr>, <abbr title="program used to build an app">Xcode</abbr> and phone <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>. Once the build is successful, they apply their customizations and build again to the simulator. Last step is to build the customized version to their real phone.</p>
 </div>
 <h2 id="instructions-for-finding-the-lines">Instructions for Finding the Lines<a class="headerlink" href="#instructions-for-finding-the-lines" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For each customization, you are given landmarks to find the correct location in the code when you review <a href="../../version/code-custom-edits/">Version: Custom Edits</a>. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for ( <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-l">L</kbd></span> # ) the line number. </p>
+<p>For each customization, you are given landmarks to find the correct location in the code when you review <a href="../../version/code-custom-edits/" target="_blank">Version: Custom Edits</a>. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for ( <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-l">L</kbd></span> # ) the line number. </p>
 <ul>
 <li>Either <a href="#key_phrase">Key_Phrase</a> or <a href="#module-folder-file">Module, Folder, File</a>
  can be used to find the lines</li>
@@ -3596,12 +3596,6 @@ Do not paste the result anywhere
 <p>To confirm you are in the correct location, type <code>pwd</code> and return in the terminal. The response must end in LoopWorkspace. For example, using the graphic below, the response to <code>pwd</code> should be similar to:</p>
 <p><code>/Users/marion/Downloads/BuildLoop/Loop-20220803-1145/LoopWorkspace</code></p>
 <p align="center"><img alt="how to use finder to find the correct download and open xcode" src="../img/finding-loopworkspace.svg" width="750" /></p>
-<h2 id="modify-and-save">Modify and Save<a class="headerlink" href="#modify-and-save" title="Anchor link to this Header on this Page">&para;</a></h2>
-<ul>
-<li>Either <code>Key_Phrase</code> or <code>Module, Folder, File</code> method described on <a href="../../version/code-custom-edits/">Version: Custom Code Edits</a> can be used to find the lines inside <em><abbr title="program used to build an app">Xcode</abbr></em> on your <em>Mac</em></li>
-<li>Be sure to save the file when you make a change - otherwise the modification does not get built into your app</li>
-<li>Some folder icons show different names in <abbr title="program used to build an app">Xcode</abbr>, see <a href="#folders-and-icons">Folders and Icons</a></li>
-</ul>
 <h2 id="folders-and-icons">Folders and Icons<a class="headerlink" href="#folders-and-icons" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in <abbr title="program used to build an app">Xcode</abbr>. Some people prefer to search through the folder icons to find a file instead of using the <code>Find in Workspace</code> feature.</p>
 <p>In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.</p>
@@ -3638,6 +3632,16 @@ Do not paste the result anywhere
 </tbody>
 </table>
 <p>All other icons and directory names match.</p>
+<h2 id="modify-and-save">Modify and Save<a class="headerlink" href="#modify-and-save" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>Either <code>Key_Phrase</code> or <code>Module, Folder, File</code> method described on <a href="../../version/code-custom-edits/" target="_blank">Version: Custom Edits</a> can be used to find the lines inside <em><abbr title="program used to build an app">Xcode</abbr></em> on your <em>Mac</em></li>
+<li>Be sure to save the file when you make a change - otherwise the modification does not get built into your app</li>
+<li>Some folder icons show different names in <abbr title="program used to build an app">Xcode</abbr>, see <a href="#folders-and-icons">Folders and Icons</a></li>
+<li>When done with all the desired edits, plug in your phone and select it<ul>
+<li>Click on the "Play" button to build your customized code</li>
+</ul>
+</li>
+</ul>
 
 
 
