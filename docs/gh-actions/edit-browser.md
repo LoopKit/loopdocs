@@ -15,7 +15,7 @@
 !!! question "What is a SHA-1?"
     SHA-1 means Secure Hash Algorithm 1; which is used to generate an alphanumeric code.
 
-    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> taken from the original&nbsp;<span translate="no">GitHub repository</span>.
+    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
     
 ### Do Not Make a Pull Request to LoopKit GitHub Username
 
@@ -47,6 +47,7 @@
         * The [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } gives instructions on identifying the Module, finding the file and editing the line(s) 
     * *GitHub* (each Module):
         1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
+        1. `Sync` the Module (if needed)
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes
         1. Prepare lines needed for each customization and save
@@ -76,7 +77,12 @@ Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="
 * Other Modules are Loop and LoopKit
     * Do not get confused later: LoopKit is both a username and a Module name
     * Refer to the [Module Table](#module-table) when directed
+
+Look also at the Stable line for the desired customization:
+
 * Stable: Yes or Changed on date
+* The method for applying that customization differs slightly in the instructions below based on that notation
+* The customizations that are not stable, are summarized in [Not Stable List](../version/code-custom-edits.md#not-stable-list){: target="_blank" }
 
 ## Outline of What Happens in the Module
 

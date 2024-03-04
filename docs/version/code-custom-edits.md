@@ -75,10 +75,7 @@ of the block below the title `Key_Phrase`;  click on it to copy the phrase into 
 
     For those using the Browser Build method for `main` branch, this means you will need to use [Create `branch` if needed](../gh-actions/edit-browser.md#create-branch-if-needed){: target="_blank" } to create a special branch to prepare a new version of this customization. If you already created a personal customization earlier (before the date noted), you can keep using that customization with `main`.
 
-!!! abstract "List of Customizations that are not Stable"
-    This list indicates personalized customization that differ between `main` and `dev`
-
-    * 2024 Feb 19: [Glucose Guardrails](#glucose-guardrails)
+    For your convenience, see [Not Stable List](#not-stable-list).
 
 Each customization provides the Module, Folder and File bullet below the key phrase.
 
@@ -95,6 +92,13 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 * Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
 * In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
+
+#### Not Stable List
+
+This list indicates personalized customization that differ between `main` and `dev`
+
+* 2024 Feb 19: [Glucose Guardrails](#glucose-guardrails)
+* 2023 May 29: [Adjust Future Carbs Time Interval](#adjust-future-carbs-time-interval)
 
 ## Custom Edits Required
 
@@ -296,14 +300,18 @@ static let carbRatio = Guardrail(
 
 Loop 3 limits the future time change allowed to 1 hour.
 
-``` { .txt .copy title="Key_Phrase" }
-cell.datePicker.maximumDate = date.addingTimeInterval
-```
-
 * Module: Loop
 * Folder: Loop/Loop/View Controllers
 * File:CarbEntryViewController.swift, Line 438
-* Stable: Yes
+* Stable: 2024 May 29
+
+The changes required for this customization have changed several time for `dev`. The code provided in [Version after Update](#version-after-update_1) is for the latest `dev` code, as of 2023 Aug 20.
+
+#### Version before Update
+
+``` { .txt .copy title="Key_Phrase" }
+cell.datePicker.maximumDate = date.addingTimeInterval
+```
 
 Default shown below (for maximum and minimum):
 
@@ -315,6 +323,20 @@ _Code Before Modification_
 Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
 
 The minimumDate is how far back in the past you can modify time.  The default is 12 hours in the past.
+
+#### Version after Update
+
+``` { .txt .copy title="Key_Phrase" }
+static let maxCarbEntryFutureTime
+```
+
+Default shown below (for maximum and minimum):
+
+_Code Before Modification_
+
+    static let maxCarbEntryFutureTime = TimeInterval(hours: 1)
+
+Change the maxCarbEntryFutureTime to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
 
 ### Adjust the Watch Crown Sensitivity
 
