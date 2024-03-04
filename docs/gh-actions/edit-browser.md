@@ -42,12 +42,11 @@
         * It is a good idea to test each customization as soon as you install the new build on your phone
     * LoopDocs: Decide on Modules to modify using the [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
-        * If there are customization not provided by the Customization List, then you need to make custom edits
+        * If there are customization not provided by the Customization List, then you need to make presonalized edits
         * This current page explains how to make the edits using a browser
         * The [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } gives instructions on identifying the Module, finding the file and editing the line(s) 
     * *GitHub* (each Module):
         1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
-        1. Create a new `branch` for that module (don't worry, we'll tell you how)
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes
         1. Prepare lines needed for each customization and save
@@ -77,11 +76,9 @@ Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="
 * Other Modules are Loop and LoopKit
     * Do not get confused later: LoopKit is both a username and a Module name
     * Refer to the [Module Table](#module-table) when directed
+* Stable: Yes or Changed on date
 
 ## Outline of What Happens in the Module
-
-!!! important "Method Changed"
-    This method changed slightly. This avoids a situation where you are customizing the `main` branch of `LoopWorkspace` but the file you want to change was modified in the `dev` branch.
 
 !!! warning "Review Only"
     Review this section so you know what to expect. The actual steps will come later, starting with [Create your <code>Fork</code> for Selected Module](#create-your-fork-for-selected-module) or [Edit Module in Browser](#edit-module-in-browser).
@@ -90,8 +87,9 @@ In the next sections, the exact process for making changes will be documented. B
 
 1. First time for this module:
     * Make a <code>fork</code>
-    * Create a new <code>branch</code> for your <code>fork</code> using the SHA-1 table
-1. Change the line(s) of code desired for your customization(s) in your `branch` of your `fork`
+    * If the customization you want is not "Stable" and you are building `main`
+        * Create a new <code>branch</code> for your <code>fork</code> using the SHA-1 table
+1. Change the line(s) of code desired for your customization(s) in your `fork`
 1. Save the change(s) using descriptive comments
 1. Repeat until done with this Module
 
@@ -130,10 +128,8 @@ Choose your link:
     1. Go to your <code>fork</code> of each Module
     1. Make sure you are on the [Default Branch](#default-table) for that Module
     1. Sync that Module to get the most recent version
-    1. If you are building released code, use the updated SHA-1 value to create a new `branch` to customize
-        * For dev branch, you always use the most recent version
 
-    Skip ahead to [Edit Module in Browser](#edit-module-in-browser).
+    Skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module).
 
 ### New `Fork`
 
@@ -173,6 +169,10 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
 
 ## Create `branch` if needed
 
+* If the customization you wish to prepare indicates Stable: Yes, you can skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
+* If you are preparing a customization for the `dev` branch, regardless of the Stable notation, there is no need to create a special `branch`, simply update the default branch to the latest (sync it) and use the current version of the customization when you skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
+* Otherwise, when you a preparing a customization where the file changed sufficiently between `main` and `dev` and you want to build the `main` branch, you need to create a branch for this Module that is consistent with the version you wish to customize.
+
 Open your browser to your https://github.com/username/Module URL. If you already created the `branch` you need, you do not need to create a new one.
 
 If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. Notice the suggested branch name for that table. You will use this in Step 3.3 below.
@@ -191,9 +191,6 @@ You should create a `branch` following the numbered steps and watching the GIF. 
 ![create branch for version](img/create-branch.gif){width="600"}
 {align="center"}
 
-??? question "Is this necessary? (Click for the answer)"
-    You can live dangerously and just create the customization in the default branch. That works really well if a new version has just been released. But after a while, the `dev` branch may modify the file that you are interested in. This is the only way to ensure the code you are changing matches the version in the `LoopWorkspace` `repository` `branch` that you are building.
-
 ### Table of SHA-1
 
 This will be updated with each release. The versions for the `dev` branch are not reported here because they are frequently updated. If customizing dev, use the default branch for each Module and `sync` that branch if needed.
@@ -210,6 +207,7 @@ Suggested `branch` name is `v-3.2.3`
 | `OmniBLE` | f21360781c0b8eee26c531d20f1b0aa192a227f2 |
 | `OmniKit` | c1e0d395975c93d15b3f84ac21097e40b7d5d93f |
 
+## Personalized Customization for this Module
 
 Navigate to the file you need to modify (using the instructions to find the lines from the [Version: Custom Edit](../version/code-custom-edits.md#instructions-for-finding-the-lines){: target="_blank" } page)
 
