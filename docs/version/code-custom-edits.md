@@ -71,18 +71,22 @@ of the block below the title `Key_Phrase`;  click on it to copy the phrase into 
 ### Module, Folder, File
 
 !!! tip "Stability Information Added"
-    If a customization needs to be modified to work with the `dev` branch, that will be noted. This means a change that is more than a line number. Instead it is a change that requires a new customization.
+    Some customizations have not changed for a very long time (stable since 2.2.x days).
 
-    For those using the Browser Build method for `main` branch, this means you will need to use [Create `branch` if needed](../gh-actions/edit-browser.md#create-branch-if-needed){: target="_blank" } to create a special branch to prepare a new version of this customization. If you already created a personal customization earlier (before the date noted), you can keep using that customization with `main`.
+    It was not until version 3.2.3 that we started adding a notation as to when the required customization code changed.
 
-    For your convenience, see [Not Stable List](#not-stable-list).
+    For those using the Browser Build method:
+
+    * If you had a customization working for 3.2.3 it will continue to work with 3.4.0 unless it is one listed in the [Not Stable List](#not-stable-list)
+    * However, because the `build_loop.yml` file is significantly different for version 3.4.0, you will need to save your "customization lines" from the `build_loop.yml` file in the 3.2.3 version of your `fork` and add them to a new location for the 3.4.0 version of `build_loop.yml` in your `fork`
+    * If one of your personalized customizations is in the [Not Stable List](#not-stable-list) you will need to create a new version [Custom Edits with Browser: Code Updates](../gh-actions/edit-browser.md#code-updates){: target="_blank" }
 
 Each customization provides the Module, Folder and File bullet below the key phrase.
 
   * Module: Loop
   * Folder: Loop/subfolder1/subfolder2/etc.
   * File: filename.swift, line number(s)
-  * Stable: "Yes" or "Changed on date"
+  * Stable: "Yes" or "Changed on date: Version #"
 
 The customizations below show the original line of code that you will be changing. 
 
@@ -95,10 +99,10 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 #### Not Stable List
 
-This list indicates personalized customization that differ between `main` and `dev`
+This list indicates personalized customization that differ between 3.2.3 and 3.4.x:
 
-* 2024 Feb 19: [Glucose Guardrails](#glucose-guardrails)
-* 2023 May 29: [Adjust Future Carbs Time Interval](#adjust-future-carbs-time-interval)
+* Changed on 2024 Feb 19: 3.4.0: [Glucose Guardrails](#glucose-guardrails){: target="_blank" }
+* Changed on 2023 May 29: 3.4.0: [Adjust Future Carbs Time Interval](#adjust-future-carbs-time-interval){: target="_blank" }
 
 ## Custom Edits Required
 
@@ -107,7 +111,7 @@ This list indicates personalized customization that differ between `main` and `d
 ![img/carb_screen.png](img/carb_screen.png){width="200"}
 {align="center"}
 
-Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in *Think Like A Pancreas* by Gary Scheiner.  In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `Loop 3` to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values. 
+Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in *Think Like A Pancreas* by Gary Scheiner.  In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `the *Loop* app` to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values. 
 
 ??? question "Do you want to know more? (Click to open/close)"
     The developers did this because they expect fast to only be used for rapid-acting low treatments. The medium and fast values are for moderate and higher-fat or large meals.
@@ -206,7 +210,7 @@ let cannulaInsertionUnitsExtra
 ```
 
 * Module: OmniBLE (DASH) or OmniKit (Eros)
-* DASH or Eros Pod (Loop 3 only)
+* DASH or Eros Pod (the *Loop* app only)
     * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
     * Folder: OmniKit/OmniKit/OmnipodCommon (Eros)
     * File: Pod.swift, Line 82 (DASH); Line 87 (Eros); 
@@ -222,11 +226,9 @@ _Code After Modification to add 0.35 U_
 
 ### Modify the Guardrails
 
-The [Therapy Setting Guardrails](../loop-3/therapy-settings.md#guardrails-for-settings) are for Loop 3 only.
-
 ### Glucose Guardrails
 
-If you build Loop 3 over a version of Loop 2.2.x or FreeAPS where the Correction Range is lower than the default value of 87 mg/dL (4.8 mmol/L), your app requires you to satisfy the new guardrail before you can save that Therapy Setting when you onboard.
+This code limits the absolute and recommended values for the Glucose Safety Limit and the Correction Ranges. The absolute range cannot be exceeded. The recommended range indicates values that show up as black on the picker wheel. Numbers outside the recommended range are yellow. Numbers at the min or max of the absolute range are displayed as red.
 
 ``` { .txt .copy title="Key_Phrase" }
 Guardrail(absoluteBounds:
@@ -237,25 +239,11 @@ Guardrail(absoluteBounds:
 * File: Guardrail+Settings.swift
 * Line: 12 for suspendThreshold
 * Line: 26 for correctionRange
-* Stable: Changed on 2024 Feb 19 [Version after Update](#version-after-update)
+* Stable: Changed on 2024 Feb 19: Version 3.4.0
 
-#### Version before Update
+#### Version 3.4.0
 
-_Code Before Modification_
-
-    static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
-
-and
-
-    static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
-
-Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
-
-Loop automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
-
-#### Version after Update
-
-This update, merged into `dev` on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
+This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
 
 _Code Before Modification_
 
@@ -264,6 +252,20 @@ _Code Before Modification_
 and
 
     static let correctionRange = Guardrail(absoluteBounds: (86.1)...(180.5), recommendedBounds: (99.1)...(115.9), unit: .milligramsPerDeciliter, startingSuggestion: 100)
+
+Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
+
+Loop automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
+
+#### Version from 3.2.3
+
+_Code Before Modification_
+
+    static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
+
+and
+
+    static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 
 Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
 
@@ -298,46 +300,17 @@ static let carbRatio = Guardrail(
 
 ### Adjust Future Carbs Time Interval
 
-Loop 3 limits to 1 hours the amount of time in the future that carbs can be entered.
+The *Loop* app limits to 1 hour the amount of time in the future that carbs can be entered.
 
 * The [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" } has a customization that changes this to 4 hours in the future
 * If you want something other than 1 hour or 4 hours, you must create a personal customization
 
-The customization varies depending on whether you are building `dev` or `main`.
-
 * Module: Loop
-* Stable: Changed on 2023 May 29
-
-The `main` branch:
-
-* Folder: Loop/Loop/View Controllers
-* File: CarbEntryViewController.swift, Line 438
-
-The `dev` branch:
-
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift, Line 28
+* Stable: Changed on 2023 May 29 through 2023 Aug 20: Version 3.4.0
 
-The changes required for this customization have changed several time for `dev`. The code provided in [Version after Update](#version-after-update_1) is for the latest `dev` code, as of 2023 Aug 20.
-
-#### Version before Update
-
-``` { .txt .copy title="Key_Phrase" }
-cell.datePicker.maximumDate = date.addingTimeInterval
-```
-
-Default shown below (for maximum and minimum):
-
-_Code Before Modification_
-
-    cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
-    cell.datePicker.minimumDate = date.addingTimeInterval(.hours(-12))
-
-Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
-
-The minimumDate is how far back in the past you can modify time.  The default is 12 hours in the past.
-
-#### Version after Update
+#### Version 3.4.0
 
 ``` { .txt .copy title="Key_Phrase" }
 static let maxCarbEntryFutureTime
@@ -351,15 +324,30 @@ _Code Before Modification_
 
 Change the maxCarbEntryFutureTime to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
 
+#### Version from 3.2.3
+
+* Folder: Loop/Loop/View Controllers
+* File: CarbEntryViewController.swift, Line 438
+
+``` { .txt .copy title="Key_Phrase" }
+cell.datePicker.maximumDate = date.addingTimeInterval
+```
+
+Default shown below (for maximum and minimum):
+
+_Code Before Modification_
+
+    cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
+
+Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
+
 ### Adjust the Watch Crown Sensitivity
 
 The rate of change of the carb and bolus entry pickers when using the digital crown can be altered as can the rotation required to confirm a bolus on the watch. If you are running an older series watch - you may want to make these customizations. When I switched from Series 3 to Series 7 watch - it was amazing. I got a graph on the main watch screen I didn't even know existed and the bolus acceptance was a breeze!
 
-* The Loop 3 customization is provided from code inspection and one test - use with care.
+* This customization is provided from code inspection and one test - use with care.
 
-### Loop 3 Digital Crown Adjustments
-
-These are new instructions and the user should take care - and please [report back](../intro/loopdocs-how-to.md#how-to-find-help) if you have problems.
+### Digital Crown Adjustments
 
 First - try it with no customization. Then make small changes.
 
@@ -384,7 +372,7 @@ This key phrase will indicate three different files in the same folder as shown 
 
 #### Modify Bolus Picker Sensitivity
 
-* File: BolusInput.swift, line 53
+* File: BolusInput.swift, line 51
 * Initial Value for `rotationsPerIncrement` is 1/24
 * A change to 1/12 increases the change in picker value for a given motion
 
@@ -488,7 +476,7 @@ MARK: - Model generation
 ![img/exponential.png](img/exponential.png){width="750"}
 {align="center"}
 
-This Loop 3 table of default values is provided for convenience. The times are all in minutes.
+This *Loop* table of default values is provided for convenience. The times are all in minutes.
 
 |Model|DIA|Peak|Delay|
 |---------|---------|---------|---------|
@@ -526,7 +514,7 @@ Depending on your iPhone Settings and model, you may have Face ID or Touch ID en
 
     In addition to authenticating every manual bolus, this helps to protect against sleep bolusing and pocket bolusing.
 
-    For Loop 3, this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
+    For the *Loop* app, this controls the authorization requirement to modify Therapy Settings as well as to confirm bolus delivery.
 
 ``` { .txt .copy title="Key_Phrase" }
 canEvaluatePolicy(.deviceOwnerAuthentication
@@ -550,7 +538,7 @@ _Code After Modification_
 Some people want finer settings on the override insulin needs picker (5% instead of 10%) and may want to limit the overall range for overrides – especially for children.
 
 !!! tip "1% Settings Available without Customization"
-    With the advent of Loop 3, the Override Insulin Needs values are not limited by the default picker values of 10%.
+    The Override Insulin Needs values are not limited by the default picker values of 10%.
 
     * [Select 1% Insulin Needs](../operation/features/overrides.md#select-1-insulin-needs)
 
