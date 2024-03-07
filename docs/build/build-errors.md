@@ -166,6 +166,29 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
+### Unable to read included file `LoopConfigOverride.xcconfig`
+
+**Error Message:**  
+This error occurs inside *Xcode* with the build halting at the line that reads the `LoopConfigOverride.xcconfig` file.
+
+![xcode does not have permission to read downloads folder](img/xcode-permission-error.jpg){width="650"}
+{align="center"}
+
+**Solution:**
+
+Modify the permissions for *Xcode* in your macOS.
+
+The graphic below has steps labeled 1 through 4 to guide you to the setting that must be enabled for you to build the app with *Xcode*.
+
+1. Open the macOS settings (*Apple* icon) and navigate to Privacy & Security
+1. Select Files and Folders
+1. Select *Xcode*
+1. Ensure that Downloads Folder is enabled
+
+![check privacy settings for xcode access to downloads folder](img/set-xcode-file-permissions.png){width="750"}
+{align="center"}
+
+
 ### No devices from which to generate a provisioning profile
 
 **Error Message:**  

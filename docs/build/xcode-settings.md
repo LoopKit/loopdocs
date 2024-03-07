@@ -18,6 +18,15 @@ Open Xcode from your Applications folder. If it offers to start a new project wi
 
 Click on the Xcode->About Xcode menu item. The version number is displayed.
 
+## Privacy Settings
+
+This is not typical, but it does happen.
+
+Some people have their macOS privacy settings configured so that *Xcode* does not have permission to access their `~/Downloads` folder. This will cause a lot of grief when trying to use the Build Select Script to build an app with *Xcode*. This will be mentioned on the build errors page, but this is a good time to check. The graphic below has steps labeled 1 through 4 to guide you to the setting that must be enabled for you to build the app with *Xcode*.
+
+![check privacy settings for xcode access to downloads folder](img/set-xcode-file-permissions.png){width="750"}
+{align="center"}
+
 ## watchOS Simulators
 
 Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
