@@ -306,7 +306,7 @@ Loop 3 limits to 1 hours the amount of time in the future that carbs can be ente
 The customization varies depending on whether you are building `dev` or `main`.
 
 * Module: Loop
-* Stable: Changed on 2024 May 29
+* Stable: Changed on 2023 May 29
 
 The `main` branch:
 
