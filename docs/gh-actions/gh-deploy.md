@@ -78,7 +78,7 @@ If you are running the development code, you may prefer to turn off the automati
 
 ## Disable Automatic Install from *TestFlight*
 
-Once the app is installed one time, you can adjust whether it is automatically installed when updated versions are available. We recommend you disable automatic installation so you can choose when to switch to a newer build, which in some cases, may be a newer version.
+Once the app is available in *TestFlight*, you can adjust whether it is automatically installed when updated versions are available. We recommend you disable automatic installation so you can choose when to switch to a newer build, which in some cases, may be a newer version.
 
 Go back to the *TestFlight* app on your phone and tap on your app name in the list to see an expanded screen similar to the graphic below. The row to enable or disable automatic updates is highlighted in the graphic, which shows the feature disabled. This is recommended for all users.
 

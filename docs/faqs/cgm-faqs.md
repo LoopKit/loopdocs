@@ -101,7 +101,7 @@ sequenceDiagram
 
 ### Can I use Libre sensors with a reader like Miao Miao?
 
-Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop).
+Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
 
 See [Which CGMs are supported by the *Loop* app?](#which-cgms-are-supported-by-the-loop-app).
 

@@ -113,17 +113,7 @@ A number of OrangeLink Pro devices were shipped with FW2.6 and for people who al
 !!! warning "Firmware/Hardware Labeling"
     Earlier versions of the OrangeLink firmware did not put the hardware (HW) version and the firmware version (FW) in the "correct" location to hand off to Loop for interpretation. Do not worry if you are running on any FW version 1.x or 2.x and your HW version number doesn't say 1.0 or 1.1. This has been fixed for FW versions 3.x.
 
-## EmaLink and OrangeLink Features
-
-Some of the features of the OrangeLink were added to the [RileyLink Display](../loop-3/rileylink.md) with Loop 2.2.x. However, as mentioned above, the FW and HW information in some OrangeLink firmware was inconsistent in earlier versions. The consequence is that the OrangeLink Pro screen does not show the Find Device feature that many people want to use with the versions of firmware that provide good communication with Loop. The patch listed below fixes this issue.
-
-The EmaLink features were not added with Loop 2.2.x. The patch listed below adds some EmaLink features.
-
-### EmaLink and OrangeLink Patch
-
-A patch was developed to update the RileyLink screen of the Loop app that detects the OrangeLink hardware for all versions of the OrangeLink firmware and adds the battery level reporting and notification to the EmaLink screen. Click on the link below. There are detailed instructions on how to use this patch for Loop 2.2.x.
-
-* [EmaLink and OrangeLink Patch](https://github.com/ps2/rileylink_ios/issues/686){: target="_blank" }
+    Loop 3 is compatible with the OrangeLink.
 
 ## RileyLink Information
 

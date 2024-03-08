@@ -122,4 +122,6 @@ Your default branch has been changed.
 
 ## Automatic Update & Build
 
-The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md){: target="_blank" } if you did this.
+The automatic update and build features are available for both the released (`main`) and development (`dev`) branch.
+
+Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.

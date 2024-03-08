@@ -449,7 +449,7 @@ There are three steps to using this account moving forward:
 1. One-time only: You need to add your 6 <code>Secrets</code> to this organization account (instructions are in next section)
 
 1. One-time only: Create a `Match-Secrets` repository in the `my-name-org` account
-    * Probably not required for version 3.4 or later of the *Loop* app but it may be required for other apps, so leaving this here
+    * Not required for version 3.4 or later of the *Loop* app but it may be required for other apps if you haven't already built the *Loop* app
     * Start out at the top-level of your organization (`github.com/my-name-org`)
     * Click on `Repositories`
     * Click on `New repository`

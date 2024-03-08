@@ -877,7 +877,15 @@ Find and click on the row for the `Loop identifier` on the [Certificates, Identi
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-The `Edit Your App ID Configuration` screen will open. Take one action for the each identifier listed in this table:
+The `Edit Your App ID Configuration` screen will open similar to the graphic below.
+
+TODO Prepare the graphic for 3.4
+
+![edit the App Groups to be your Loop App Group](img/tbd.png){width="600"}
+{align="center"}
+
+
+Take one action for the each identifier listed in the table above:
 
 1. In the `App Services` column, scroll down to the `App Groups` row
     * Confirm the check box (under the `Capabilities` column) for `App Groups` is checked

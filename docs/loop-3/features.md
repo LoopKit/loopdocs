@@ -16,7 +16,7 @@ Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to
 
 ## Algorithm Experiments
 
-Two algorithm experiments have been added to dev. These are _<span translate="no">Glucose Based Partial Application</span>_ and _<span translate="no">Integral Retrospective Correction</span>_. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments have been added with version 3.4.0. These are _<span translate="no">Glucose Based Partial Application</span>_ and _<span translate="no">Integral Retrospective Correction</span>_. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
@@ -25,6 +25,7 @@ Two algorithm experiments have been added to dev. These are _<span translate="no
 
 ??? abstract "Do you want to know more? (Click to open/close)"
     * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
+    * Click on the link to read more details about the decisions that went into this code
 
 _<span translate="no">Glucose Based Partial Application</span>_ is only used when _Automatic Bolus_ (AB) is selected for _Temp Basal Only_ _Dosing Strategy_
 
@@ -74,14 +75,14 @@ _Cumulative Dose for several application factors when initial recommendation is 
 
 The 20% and 40% application factor columns did not reach 1 U in 30 minutes because the requested dose is smaller than this pump will deliver. The 60% application factor only reached 1 U because tiny doses down to 0.03 U were rounded up to 0.05 U.
 
-When _Dosing Strategy_ is set to _Temp Basal Only_ , Loop provides about 17% of the recommended bolus each 5-minute interval. The minimum _<span translate="no">GBPA</span>_ application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than _Temp Basal Only_, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
+When _Dosing Strategy_ is set to _Temp Basal Only_, the *Loop* app provides about 17% of the recommended bolus each 5-minute interval. The minimum _<span translate="no">GBPA</span>_ application factor of 20% was selected to be similar to that rate for lower glucose values. Initially, an application factor of 20% delivers insulin more quickly than _Temp Basal Only_, but by the end of 30 minutes, the basal program inside the pump keeps track of how much is delivered to reach the **rate** requested, acheiving the full 1 U (**for this example**).
 
 ### <span translate="no">Integral Retrospective Correction</span> (_<span translate="no">IRC</span>_)
 
 ??? abstract "Do you want to know more? (Click to open/close)"
     * Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
-        * This was tested in a few forks but not included into dev until recently
-        * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+        * This was tested in a few forks but not formally added until recently
+        * Initial merge: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
     * Updated with a modification to limit stacking of _<span translate="no">IRC</span>_ with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
 
     The _<span translate="no">IRC</span>_ term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) in Loop Issue 695 which  includes plots and equations. Some of the information in that comment is repeated below: [Important points about _<span translate="no">IRC</span>_](#important-points-about-irc).
@@ -161,182 +162,3 @@ At this point the meal can be saved by tapping the Continue button, or the user 
 {align="center"}
 
 Note that to create a _Favorite Food_ on the _Carb Entry_ screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons can be selected at that level, but choosing them at the top level is not sufficient to enable the _Save as Favorite_ button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.
-
-## **New with Loop 3.0.0**
-
-## Loop 3 Screens
-
-!!! info "Loop 3 Screens"
-    One thing you may notice on some screens is the primary button, with associated information message, is always visible at the bottom of even small screens.  You may need to scroll to see intermediate rows. 
-    
-    For example, if the default action on a bolus screen is to deliver the recommended bolus, that button is visible and active. The button remains fixed as other portions of the screen are scrolled up and down. When you make changes to selections, then the information displayed and the button label updates to reflect the action taken if you tap on the button.
-    
-    There are other screens, like the Onboarding and Therapy Settings screens, where you should read all the provided information.  Those screens require you to scroll to the bottom before being able to hit `Continue` or `Save`.
-
-## Non-Pump Insulin
-
-If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop 3.
-
-With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
-
-With Loop 3, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
-
-### Enter non-pump insulin before carbs
-
-!!! warning "WARNING"
-    If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, enter the non-pump insulin first and then add the carbs.
-    
-    To find out what Loop recommends, without actually dosing with Loop:
-    
-    * Wait for a CGM entry (or fingerstick) to appear in the HUD
-        * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
-        * Note the recommended bolus, but do not actually bolus
-        * Back up to the carb entry screen and `Cancel`
-    * Go to the non-pump insulin screen and enter the bolus amount you've decided to take, and select the model if it's different from your pump
-        * Don't forget to actually take the insulin
-        * Add the carb entry and save the carbs without bolusing
-
-1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
-    * **Event History** (default) is similar to Loop 2.2.x; however, the event history from a prior pod is not displayed once it is deactivated
-    * **Reservoir** is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed once it is deactivated
-    * **Non-Pump Insulin** is a new feature with Loop 3
-
-
-2. Select the `Non-Pump Insulin` tab to bring up the graphic shown below
-    * Tap on the &plus; sign (green solid lines)
-    * `Log Dose` screen is displayed showing the current `Glucose` prediction
-    * The default insulin type is that used by the pump
-    * To modify Insulin Type, tap on that row (red dashed lines)
-        * Picker wheel allows other insulin types to be selected
-        * Note that some insulin types, such as Afrezza are only available for non-pump insulin selection
-    * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
-        * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
-        * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
-        * Once the user selects `Done` on the keyboard display, the entered value is displayed on the `Bolus` row and the `Log Dose` button changes from gray to blue
-        * Tap on `Log Dose` to record or `Cancel` to quit
-
-![entering non-pump insulin into Loop](img/non-pump-insulin.svg){width="500"}
-
-
-## Bolus Entry
-
-The bolus following carbs (`Meal Bolus`) and manual bolus (`Bolus`) screens are updated from Loop 2.2.x version. There is still a predicted `Glucose` chart that actively updates as the bolus value is updated and various buttons. 
-
-* With Loop 2.2.x
-    * The Recommended Bolus is provided but the default for the Bolus value is 0
-    * If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row
-* With Loop 3
-    * The Recommended Bolus is provided AND the default for the Bolus is the recommended value
-    * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
-
-!!! info "Blue Means Active"
-    * The blue color indicates an active button, whereas a grey button is inactive.
-    * The value displayed on the `Bolus` row is blue to indicate if you tap on that, you can edit the value
-
-### Meal Bolus
-
-When the `Meal Bolus` screen is entered following a carb entry or edit action, the active button might be `Save and Bolus` or, if no bolus was recommended, `Save without Bolusing`. The `Save` refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen.
-
-
-#### Accept Recommendation
-
-In the graphic below, the user enters carbs and taps continue to display the Meal Bolus screen.
-
-* The left graphic shows a case where a bolus is recommended - tapping on the `Save and Deliver` button saves the carbs and delivers the bolus
-* The right graphic shows a case where no bolus is recommended - tapping on the `Save without Bolusing` saves the carbs
-* Note that these graphics are taken from a small phone - the left graphic shows all the information at once whereas the right graphic has an extra information message that requires the user to scroll to see the `Recommended Bolus` and `Bolus` rows
-* For both graphics
-    * Active Carbs and Active Insulin are displayed above the `Glucose` prediction graph - these are accurate at the time this screen is entered (before carbs or bolus are saved)
-    * The Bolus Summary is presented below the `Glucose` prediction graph with three rows:
-        * `Carb Entry`, the proposed carbs with the time to add the carbs and the absorption time displayed - to modify that information, tap on the `< Carb Entry` button at upper left
-        * `Recommended Bolus` displays what Loop recommends for that proposed `Carb Entry`
-        * `Bolus` default display is what Loop recommends, but user can edit that value
-
-![meal bolus when bolus is recommended on left and not recommended on right](img/loop-3-meal-bolus-rec.svg){width="900"}
-{align="center"}
-
-If a CGM entry arrives while in this screen, a **Bolus Recommendation Updated** [modal message](onboarding.md#what-does-modal-mean) will be displayed and must be acknowledged.
-
-#### Modify Bolus
-
-This section is a continuation of the information presented in the [Accept Recommendation](#accept-recommendation) portion of the `Meal Bolus` section. In the graphic below, the user overrides the recommended bolus.
-
-* The left side shows a modified bolus less than the recommended bolus
-* The right side shows a modified bolus greater than the recommended bolus
-* Note that the `Glucose` prediction graph updates based off the `Bolus` value, giving the user the opportunity to accept or change their proposed value before tapping `Save and Deliver`
-* At the next Loop cycle, the app modifies insulin delivery based on the saved information
-    * For the example with bolus less than the recommended amount:
-        * Loop will **NOT** begin to automatically increase insulin delivery until the current glucose is above the bottom of the `Correction` range
-        * The recommendation to add insulin when the current glucose is below the `Correction Range` is only offered as a manual feature and is limited to an amount predicted to maintain glucose above the `Safety Threshold`
-    * For the example with bolus greater than the recommended amount:
-        * Loop will probably issue an automatic temporary basal of 0 U/hr
-        * This is a common "super-bolus" scenario; in other words, "borrow" basal for the meal bolus to limit post-meal spikes
-* Remember - the `Glucose` prediction is what happens if you `Save and Deliver` and then no further adjustments are made to insulin delivery by Loop
-
-![meal bolus when bolus recommended is decreased on left and increased on right](img/loop-3-meal-bolus-mod-rec.svg){width="900"}
-{align="center"}
-
-
-### Manual Bolus
-
-When the `Bolus` screen is entered directly from the toolbar, the button choices are `Enter Bolus` if none is recommended, `Deliver` if a value is on the `Bolus` row, or `Cancel` using the button on the upper left. The user can also tap on the value on the `Bolus` row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
-
-Other alert messages might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](displays-v3.md) page.
-
-The two graphics below are examples of manual bolus screens. 
-
-* In the first graphic, no bolus was recommended
-    * If you tap on the `Enter Bolus` button at the bottom, it brings up a screen to enable you to type in an amount and then `Deliver` it. 
-    * Alternatively, you can tap the `0` amount in the `Bolus` row and perform the same action as the `Enter Bolus` button
-    * If you do not want to override the recommendation, hit the `Cancel` button at the upper left.
-
-![manual bolus when no bolus recommended](img/loop-3-manual-bolus-no-rec.svg){width="350"}
-{align="center"}
-
-* In the second graphic, a recommended amount is shown
-    * If you tap on `Deliver` that recommended dose is delivered
-    * If you tap on the value on the `Bolus` row, you can override the amount
-    * The amount displayed on the `Bolus` row is modified to 0 U with the first tap - at that point, you may enter a new value or tap `Cancel` using the button at the upper left of the screen
-
-![manual bolus when bolus is recommended](img/loop-3-manual-bolus-rec.svg){width="350"}
-{align="center"}
-
-
-## Remote Carb / Bolus
-
-Loop 3 includes a feature for remote input of Carbohydrates and Bolus, enabling caregivers who are not physically present to better assist the individual who requires support in managing Loop.
-
-Please read the documentation about this feature carefully to ensure proper configuration and use:
-* [Remote Command Overview](../nightscout/remote-overview.md)
-
-!!! warning "WARNING"
-
-    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the [Remote Command Overview](../nightscout/remote-overview.md) before getting started.
-    
-    There are validation and troubleshooting steps for each section of the guide. 
-    
-    Please make sure not to skip sections as this makes it difficult to troubleshoot.
-    
-    Be aware:
-    
-    * Apple limits how many push notifications (used by this feature) can be received on an iOS device
-    * If the system feels too many are being sent, it may begin to throttle notifications
-    * There is no published limit, but consider limiting it to 1 per hour
-    * When on cellular data, there may be further limitations to protect your data usage
- 
-## New with Loop 3
-
- The Loop 3 app, building off work by Tidepool and DIY contributors, provides a major upgrade in user safety, user experience, and user interface with the same great Loop algorithm.
-
- Here are some highlights:
-
- * Onboarding protocol with guardrails to help configure settings
- * Streamlined main screen display and user experience
- * Better alerts and notifications
- * Omnipod Dash compatibility
- * Fingerstick blood glucose prompts when data is stale
- * Non-pump insulin entry within the app
- * Remote capability for Carbohydrate/Bolus input
-
-
-
