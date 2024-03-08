@@ -46,9 +46,9 @@ There are several authentication apps that support one-time passwords.
 
 ### <span translate="no">Apple Keychain</span>
 
-If you are using a iPhone or Mac to issue remote commands through a browser or *Nightscout* app, you can use the &nbsp;<span translate="no">Apple Keychain</span>&nbsp; which has native support to store passwords and generate one-time passwords. 
+If you are using an iPhone or a Mac to issue remote commands through a browser or *Nightscout* app, you can use the &nbsp;<span translate="no">Apple Keychain</span>&nbsp; which has native support to store passwords and generate one-time passwords. 
 
-To setup your *Nightscout* credentials in &nbsp;<span translate="no">Apple Keychain</span>:
+To set up your *Nightscout* credentials in &nbsp;<span translate="no">Apple Keychain</span>:
 
 On the Caregivers device (iPhone or Mac):
 
@@ -70,21 +70,21 @@ On the Caregivers device (iPhone or Mac):
     * This is where you can scan your QR code from the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone or the saved QR screenshot
     * As soon as the camera reads the QR code, an OTP will begin to appear
     * If the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone is handy, wait a cycle or two and ensure the 6-digit OTP on the password screen matches that on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone and they update at the same time
-    * Click Passwords on upper left to return to the prevous screen
+    * Click Passwords on the upper left to return to the previous screen
 * Select Passwords Options
     * Enable the `Autofill Passwords` and check `Keychain`
 
 ### Using Safari
 
 * When you use Safari to view your Looper's *Nightscout* site and choose the Careportal (:material-plus-thick:)
-    * Choose a remote command from Event Type drop-down menu (remote commands are at the bottom of the list)
+    * Choose a remote command from the Event Type drop-down menu (remote commands are at the bottom of the list)
     * The OTP will be offered to you for every row - ignore it when entering Carb amount or Absorption Time, or Bolus Amount
     * Select it for the OTP row
     * Note that OTP is not required for Remote Overrides - leave that row blank
 
 ### Other Authentication Apps
 
-There are other Authentication apps available. Here’s a few options that you can download from your phone’s app store:
+There are other Authentication apps available. Here are a few options that you can download from your phone’s app store:
 
 * *1Password*
 * *Authenticator*
@@ -181,7 +181,7 @@ You can see the danger of sending duplicate bolus/carbs so be careful. If a remo
 
 Any Caregiver entering remote carbohydrates needs to be aware of how Nightscout decides what carbohydrates treatments are unique. If two entries have the same hour:minute:second time, Nightscout keeps only one of the entries.
 
-* It does not affect how the *Loop* app handles the remote carbohydrate entries it recieves
+* It does not affect how the *Loop* app handles the remote carbohydrate entries it receives
     * The *Loop* app assigns a unique identifier to each entry; it doesn't depend just on the timestamp
 * It will affect *Nightscout* and thus *LoopCaregiver* displays
     * This might lead to the Caregiver thinking they need to send the remote carbohydrate again
@@ -251,8 +251,8 @@ Open your Nightscout site in a browser or app.
 * Fill out the treatment log until you get to the OTP row
     * When using Safari, the OTP code is automatically offered - might need to tap twice
     * For other authentication apps (Authenticator, 1Password, etc)
-        * Tap on the code in the authentication app and copy to your clipboard
-        * In Nightscout and paste that code into the OTP box
+        * Tap on the code in the authentication app and copy it to your clipboard
+        * In Nightscout, paste that code into the OTP box
     * Click “Submit Form”
 
 Note that Loop will honor both the current OTP code and the one that just expired.
