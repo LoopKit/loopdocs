@@ -7,10 +7,8 @@ This page was updated with information for Loop 3.
 * [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry
 * [Food Type](#food-type): emoji keyboard
     * Loop 3 initially displays Medium emojis and the association of some emojis with absorption time has been improved
-    * Loop 2.2.x initially displays Fast emojis
 * [Absorption Time](#absorption-time): values for fast, medium and slow
     * Loop 3 uses 30 minutes, 3 hr, 5 hr
-    * Loop 2.2.x uses 2 hr, 3 hr, 4 hr
 * [Meal Bolus](bolus.md#meal-bolus): Loop 3 fills in the Bolus row with Recommended Bolus
 * [Large Meal Warning](#large-meal-warning)
     * The warning limit of 99 g was chosen to assist in catching mistakes such as entering 115 grams instead of 15 grams
@@ -38,7 +36,7 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 
 ### Meal Entry
 
-The steps and graphics in this section are for users of Loop 3. To view the version used by Loop 2.2.x, click on this [link](#loop-2-fast-meal-entry).
+The steps and graphics in this section are for users of Loop 3.
 
 Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 
