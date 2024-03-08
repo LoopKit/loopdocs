@@ -1,3 +1,18 @@
+## Compatibility between Versions 2 and 3
+
+If you are running a much older version of the *Loop* app, be aware:
+
+* You can build Loop 3 over older versions of Loop and maintain therapy settings as well as your configuration for CGM and pump (including a pod)
+* You can build Loop 3 using a browser on any computer (no Mac required) with [Build with Browser](../gh-actions/gh-overview.md)
+* Your phone must be running at least iOS 15.1 (although some people report they needed newer iOS than that when building with GitHub Browser Build)
+
+Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.
+
+* Be prepared to enter all your settings again and start a new pod
+* If you use Loop Follow, you do **not** need to delete Loop Follow
+* When downgrading to an older version of Loop from Loop 3, you have to delete all apps with a shared app group ID
+    * For more information, click on [Remove Apps with Shared App Group](releases.md#remove-apps-with-shared-app-group)
+
 ## Loop 2 Version History
 
 ### Loop v2.2.9

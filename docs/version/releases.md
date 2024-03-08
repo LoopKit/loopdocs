@@ -1,25 +1,12 @@
 ## Loop Releases
 
-The new features added with each Loop release (starting with Loop version 3.0.0) are provided for reference.
+The new features added with each Loop release are provided for reference.
 
-## Loop 3 Compatibility
-
-Be aware that Loop 3 is forward compatible:
-
-* You can build Loop 3 over older versions of Loop and maintain therapy settings as well as your configuration for CGM and pump (including a pod)
-* You can build Loop 3 using a browser on any computer (no Mac required) with [Build with Browser](../gh-actions/gh-overview.md)
-* Your phone must be running at least iOS 15.1 (although some people report they needed newer iOS than that when building with GitHub Browser Build)
-
-Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.
-
-* Be prepared to enter all your settings again and start a new pod
-* If you use Loop Follow, you do **not** need to delete Loop Follow
-* When downgrading to an older version of Loop from Loop 3, you have to delete all apps with a shared app group ID
-    * For more information, click on [Remove Apps with Shared App Group](#remove-apps-with-shared-app-group)
+For information about version 2 releases and compatibility between version 2 and 3, refer to [Older Releases](releases-version2.md){: target="_blank" }.
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.2.3. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.4.0. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -34,27 +21,53 @@ Release information is always found on the [*GitHub*&nbsp;_<span translate="no">
 
 Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
 
-### `Loop` Version Numbering
-
-With the release of `Loop 3`, there is a new pattern for identifying the releases as distinct from the development work.
-
-Each release uses 3 numbers: Major.Minor.Patch
-
-* Major is reserved for a significant change in the code, such as occurred going from `Loop 2.2.9` to `Loop 3.0.0`
-* Minor is used when the development branch is released for general use
-* Patch typically indicates a modification to support external events like an Xcode or iOS version update with no feature changes in Loop
-
-To prevent confusion between versions used for development and versions used for release (`main` `branch`), the Minor values are even for released code. The Minor value for the development `branch` (`dev`) is incremented as part of the release process and is always odd.
-
-For example:
-
-* `Loop 3.0.0` was the first released version of `Loop 3`
-    * `Loop 3.1.0` was the development version before `Loop 3.2.0` was released
-* `Loop 3.2.0` was the next released version
-    * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
-    * `Loop 3.3.0` is the current development version
-
 ## Loop 3 Version History
+
+### Loop v3.4.0
+
+*Loop* v3.4.0 was released on TBD tbd, 2024.
+
+**warning - placeholder for release tag - not available yet**
+
+* [Link to release notes for Loop 3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0){: target="_blank" }
+
+#### Summary of Important New Features
+
+These features are added:
+
+* [*Libre*](../loop-3/add-cgm.md#libre){: target="_blank" }  support in the *Loop* app
+* [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" } for easy entry of common meals
+* [Algorithm Experiments](../loop-3/settings.md#algorithm-experiments){: target="_blank" }:
+    * [Glucose Based Partial Application](../loop-3/settings.md#glucose-based-partial-application-gbpa){: target="_blank" } for Automatic Bolus corrections
+    * [Integral Retrospective Correction](../loop-3/settings.md#integral-retrospective-correction-irc){: target="_blank" }
+* In app warning when a *TestFlight* install build is about to expire
+* Omnipod and Nighscout Users: automatic update of CAGE to Nightscout when pod is changed
+* Dexcom and Nighscout Users: automatic update of SAGE to Nightscout when Dexcom sensor is changed
+* Medtronic and Nighscout Users: automatic update of CAGE to Nightscout when set is changed
+* Omnipod Users:
+    * Cannula Insertion and Pod Deactivate uses a slider to minimize accidentally tap of a button
+    * Pod Set up from Pod Pairing until Cannula is inserted now disables auto-lock of screen
+* Browser Builders:
+    * improved error messages and automatic rebuild of app to *TestFlight*
+    * automatic addition of all services except App Group to the App Service for Identifiers
+
+
+#### Summary of Bug Fixes
+
+* Widgets:
+    * Updated to work with iOS 17
+* Dexcom G7 Users:
+    * fixed how one item was read from the G7, this bug caused a rare time discrepancy
+* Omnipod Users:
+    * prevent unnecessary faults (rare but it could happen)
+    * improve restarts when app is interrupted during pod setup
+    * better detection of communication issues
+    * improve handling of alerts
+* Fixes for mmol/L users
+    * Missed Meal notification calculation is now correct
+    * Glucose limits can now use the min or max value with no restrictions
+* Nightscout as a CGM works again for older iOS versions, it no longer requires iOS 17
+
 
 ### Loop v3.2.3
 
@@ -110,8 +123,6 @@ Updates and new Features:
 * Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901){: target="_blank" }
 * “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76){: target="_blank" }
 
-
-
 ### Loop v3.0.0
 
 After several years of development and a lot of testing, Loop 3 is here!
@@ -136,11 +147,33 @@ Loop v3.0.0 was released on January 14, 2023.
     * All new Git `repositories` on *GitHub* will be named `main` instead of `master` starting October 1, 2020
     * GitHub provides tools to assist in modifying existing `repositories` to use main
 
+## `Loop` Version Numbering
+
+With the release of `Loop 3`, there is a new pattern for identifying the releases as distinct from the development work.
+
+Each release uses 3 numbers: Major.Minor.Patch
+
+* Major is reserved for a significant change in the code, such as occurred going from `Loop 2.2.9` to `Loop 3.0.0`
+* Minor is used when the development branch is released for general use
+* Patch typically indicates a modification to support external events like an Xcode or iOS version update with no feature changes in Loop
+
+To prevent confusion between versions used for development and versions used for release (`main` `branch`), the Minor values are even for released code. The Minor value for the development `branch` (`dev`) is incremented as part of the release process and is always odd.
+
+For example:
+
+* `Loop 3.0.0` was the first released version of `Loop 3`
+    * `Loop 3.1.0` was the development version before `Loop 3.2.0` was released
+* `Loop 3.2.0` was the next released version
+    * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
+    * `Loop 3.3.0` was the development version before `Loop 3.4.0` was released
+* `Loop 3.4.0` is the current version
+    * `Loop 3.5.0` is the current development version
+
 ## Remove Apps with Shared App Group
 
 The storage of data with Loop 3 is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop 3, you will not be able to run that app. You can successfully build the app, which will overwrite Loop 3 on the phone, but the app will crash and you will not be able to Loop.
 
-At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
+At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, iAPS, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
 
 If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date){: target="_blank" } and then delete the profiles for all the apps by using the - sign. 
 
