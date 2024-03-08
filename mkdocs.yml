@@ -111,7 +111,6 @@ plugins:
             'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
             'nightscout/update_user.md': 'nightscout/update-user.md'
             'operation/features/workout.md': 'operation/features/overrides.md'
-            'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
             'troubleshooting/time-change.md': 'faqs/time-faqs.md'
             'troubleshooting/yellow-red-loop.md': 'troubleshooting/red-loop.md'
             'operation/overview.md': 'loop-3/loop-3-overview.md'
