@@ -877,34 +877,21 @@ Find and click on the row for the `Loop identifier` on the [Certificates, Identi
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-The `Edit Your App ID Configuration` screen will open similar to the graphic below.
+The `Edit Your App ID Configuration` screen will open. Repeat the four steps illustrated in the graphic below for each of the identifiers listed above.
 
-TODO Prepare the graphic for 3.4
-
-![edit the App Groups to be your Loop App Group](img/tbd.png){width="600"}
+![edit the App Groups to be your Loop App Group](img/certificate-configuration-app-group.png){width="600"}
 {align="center"}
 
-
-Take one action for the each identifier listed in the table above:
-
 1. In the `App Services` column, scroll down to the `App Groups` row
-    * Confirm the check box (under the `Capabilities` column) for `App Groups` is checked
-    * (`XC Loop`) - If the word `Edit` shows up under `NOTES`, move on to step 2 below
-    * If the word `Configure` shows up, tap on it
-        * This opens the `App Group Assignment` screen
-        * Check the box by `Loop` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
+1. Click on the `Edit` or `Configure` button
+    * for Edit, you need to select the app group
+    * for Configure, just confirm the app group is selected
+1. Click on Continue
+1. If you made a change, you need to click on the `Save` button and confirm the change and you will return to the list of all Identifiers
 
-If you modified settings for an `Identifier`, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
+If no changes were made, the `Save` button will not be active
 
-* Tap on `Save`
-* This opens the `Modify App Capabilities` confirmation screen
-* Click on `Confirm`
-
-If you did not need to make changes, the `Save` button will not be active.
-
-* Tap on the `< All Identifiers` button at the top left
-
-The full list of Identifiers should be displayed again.
+* Tap on the `< All Identifiers` button at the top left to return to the list of all Identifiers
 
 Repeat the steps until you have completed all 4 `Identifiers` in the table above. Yes - there are 6 `Identifiers` created, but only 4 need the `AppGroup` added.
 
