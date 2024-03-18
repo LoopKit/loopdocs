@@ -507,7 +507,7 @@ The following are the admonition **types** we use:
 - [`quote`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:quote) (a gray end quote icon)
 - `important` (red exclamation sign)
 
-👁️ Look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) to see what each type of admonition looks like when rendered.
+👁️ To see what each type of admonition looks like when rendered, take a look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
 
 #### Admonition Syntax
 
@@ -614,7 +614,7 @@ flowchart LR
 
 - Edit the text version of the glossary  [`includes/tooltip-list.txt`](https://github.com/LoopKit/loopdocs/blob/main/includes/tooltip-list.txt) to **add/update/remove glossary entries**
 - **Create** the Markdown version of the glossary (`docs/faqs/glossary.md`).  
-  We have handy script that does this for you:
+  This handy script does this for you:
   ```
   # Transform Glossary from text to Markdown
   ./make-glossary.sh
