@@ -577,3 +577,50 @@ Do note that:
 
 
 [Source](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=copy+clipboard#code-copy-button)
+
+### Glossary
+
+#### Definition
+
+> LoopDocs' **[Glossary](https://loopkit.github.io/loopdocs/faqs/glossary/)** is like a dictionary for the acronyms and technical terms used in the documentation. It explains them in simple terms.
+> It is kind of a personal translator for all the diabetes jargon you will find there.
+
+The glossary is composed of a source file (text) and a generated Markdown file.
+The website uses the Markdown version of the glossary.
+
+#### Update the Glossary
+
+Today creating the glossary in Markdown is a 2-step manual process.
+First we modify the source file (`includes/tooltip-list.txt`) to add/update/remove entries.
+Then we generate the Markdown version of the glossary (`docs/faqs/glossary.md`).
+
+```mermaid
+---
+title: Generate the Glossary
+---
+flowchart LR
+  subgraph Text
+    text_glossary[/ includes/tooltip.txt /]
+  end
+  subgraph Transform Glossary
+    generator{ ./make-glossary.sh }
+  end
+  subgraph Markdown
+    markdown_glossary[/+ docs/faqs/glossary.md /]
+  end
+
+  text_glossary --> generator --> markdown_glossary
+```
+
+- Edit the text version of the glossary  [`includes/tooltip-list.txt`](https://github.com/LoopKit/loopdocs/blob/main/includes/tooltip-list.txt) to **add/update/remove glossary entries**
+- **Create** the Markdown version of the glossary (`docs/faqs/glossary.md`).  
+  We have handy script that does this for you:
+  ```
+  # Transform Glossary from text to Markdown
+  ./make-glossary.sh
+  ```
+- **Commit** both the text and markdown versions of the glossary:
+  ```shell
+  git add includes/tooltip.txt docs/faqs/glossary.md
+  git commit -m "Update Glossary: ..."
+  ```
