@@ -4,7 +4,7 @@ Loop uses an algorithm to maintain blood glucose in a correction range by predic
 
 $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
-Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects; it is actually more complicated (and also more challenging to describe in simple math terms).
+Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects as implied in the simple formular above; it is blended with the other terms as described in more detail in the [Momemtum](#blood-glucose-momentum-effect) section below).
 
 You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
@@ -30,9 +30,9 @@ Loop 3 drops the Walsh model and, by default, does not include the concept of ch
 
 ![insulin models](img/insulin_models.png)
 
-The amount of insulin effect remaining, or percent of remaining active insulin after an insulin bolus is delivered, is modeled mathematically in Loop with an exponential decay curve.
-
 ### Insulin Effect Remaining
+
+The amount of insulin effect remaining, or percent of remaining active insulin after an insulin bolus is delivered, is modeled mathematically in Loop with an exponential decay curve.
 
 ![insulin percent remaining](img/insulin_percent_remaining.png)
 
