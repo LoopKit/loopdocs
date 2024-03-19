@@ -78,6 +78,8 @@ When Google Translate is selected:
 
 **<span translate="no">EmaLink</span>**&nbsp; (EmaLink): radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
+**<span translate="no">EGP</span>**&nbsp; (EGP): Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)
+
 **<span translate="no">Event History</span>**&nbsp; (Event History): record of pump events (bolus or temp basal) reported and used by Loop
 
 **<span translate="no">Expiration Date</span>**&nbsp; (Expiration Date): your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
