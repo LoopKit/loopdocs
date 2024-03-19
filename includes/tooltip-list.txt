@@ -32,7 +32,7 @@
 *[Dosing Strategy]: chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal
 *[dynos]: used to reboot a Nightscout Site
 *[EmaLink]: radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
-*[EGP]: Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glyocogen in the liver)
+*[EGP]: Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)
 *[Event History]: record of pump events (bolus or temp basal) reported and used by Loop
 *[Expiration Date]: your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 *[fastlane]: used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode
