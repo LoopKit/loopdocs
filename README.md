@@ -17,7 +17,7 @@ This repository contains the source files for [Loop's](https://github.com/LoopKi
 - [Usage](https://loopkit.github.io/loopdocs/operation/loop/open-loop/)
 - [Troubleshooting](https://loopkit.github.io/loopdocs/troubleshooting/overview/)
 - Remote monitoring and commands with [*Nightscout*](https://loopkit.github.io/loopdocs/nightscout/overview/)
-- [FAQs](https://loopkit.github.io/loopdocs/nightscout/overview/)
+- [FAQs](https://loopkit.github.io/loopdocs/faqs/overview-faqs/)
 
 
 ## Contributing
@@ -494,20 +494,20 @@ TLDR; An admonition is a colored box with a specific icon (and a  title) at the 
 Now using the standard set of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and CSS styles that come with the Material theme.
 
 The following are the admonition **types** we use:
-- [`info`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:info)  (blue info icon)
-- [`note`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:note) (blue pencil icon)
-- [`abstract`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:abstract) (blue notepad icon)
-- [`tip`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:tip) (green flame)
-- [`success`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:success) (a green check mark)
-- [`question`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:question) (green question mark)
-- [`warning`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:warning) (warning triangle)
-- [`danger`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:danger) (red zag icon)
-- [`bug`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:danger) (red bug icon)
-- [`example`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:example) (a violet vial icon)
-- [`quote`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:quote) (a gray end quote icon)
+- [`info`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:info)  (blue info icon)
+- [`note`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:note) (blue pencil icon)
+- [`abstract`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:abstract) (blue notepad icon)
+- [`tip`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:tip) (green flame)
+- [`success`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:success) (a green check mark)
+- [`question`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:question) (green question mark)
+- [`warning`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:warning) (warning triangle)
+- [`danger`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:danger) (red zag icon)
+- [`bug`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:bug) (red bug icon)
+- [`example`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:example) (a violet vial icon)
+- [`quote`](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#+type:quote) (a gray end quote icon)
 - `important` (red exclamation sign)
 
-👁️ Look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types) to see what each type of admonition looks like when rendered.
+👁️ To see what each type of admonition looks like when rendered, take a look at [this page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
 
 #### Admonition Syntax
 
@@ -614,7 +614,7 @@ flowchart LR
 
 - Edit the text version of the glossary  [`includes/tooltip-list.txt`](https://github.com/LoopKit/loopdocs/blob/main/includes/tooltip-list.txt) to **add/update/remove glossary entries**
 - **Create** the Markdown version of the glossary (`docs/faqs/glossary.md`).  
-  We have handy script that does this for you:
+  This handy script does this for you:
   ```
   # Transform Glossary from text to Markdown
   ./make-glossary.sh
