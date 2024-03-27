@@ -214,9 +214,9 @@ For more information, see:
 
 ## Using Remote Commands
 
-There are four ways you can trigger your commands remotely; &nbsp;[*Loop Caregiver*](loop-caregiver.md) (link takes you to a new page), [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
+There are four ways you can trigger your commands remotely; [*Loop Caregiver*](loop-caregiver.md){: target="_blank" }, [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-### [*Loop Caregiver*](loop-caregiver.md)
+### [*Loop Caregiver*](loop-caregiver.md){: target="_blank" }
 
 Click the link above to read more about *Loop Caregiver* .
 
@@ -234,7 +234,8 @@ Once authenticated by entering your `API_SECRET`, there is a plus sign (:materia
 Please note that there are entries that do not say `remote` at the top of the list.
 
 * You must go all the way to the bottom of the list to see the remote commands
-* Those entries at the top of the list are for caregivers who may be recording manual treatments without access to an automated system; they are not read by the *Loop* app.
+* Those entries at the top of the list are for caregivers who may be recording manual treatments without access to an automated system; they are not read by the *Loop* app
+* For users of systems based on *OpenAPS*, the behavior may be different - check the documentation for your particular app
 
 #### Command Remote Bolus or Carb Entry
 
