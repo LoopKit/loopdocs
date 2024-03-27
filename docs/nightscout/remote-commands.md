@@ -227,7 +227,7 @@ To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you 
 * Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`
     * The order of the words in the `ENABLE` line is not important
 * If you changed your Loop build method (between Mac Build and Browser Build) - don't forget the extra [Config Var](remote-config.md#remote-build-config-var-requirement){: target="_blank" }
-* You [site must be authenticated](update-user.md#authenticate-site) so that your &nbsp;<span translate="no">Careportal</span>&nbsp;is active to send remote overrides from the website
+* You [site must be authenticated](update-user.md#authenticate-site){: target="_blank" } so that your &nbsp;<span translate="no">Careportal</span>&nbsp;is active to send remote overrides from the website
 
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down to the bottom of the `event type` menu. Refer to [Command Remote Bolus or Carb Entry](#command-remote-bolus-or-carb-entry) for more instructions and a graphic.
 
