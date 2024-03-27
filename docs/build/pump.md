@@ -173,7 +173,7 @@ Eros system has a big Personal Diabetes Manager (PDM) that does not look like a 
 
 The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device.
 
-**A RileyLink-compatible device is not required to use DASH wioth the *Loop* app. The communication with your iPhone uses Bluetooth.**
+**A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
 
 `Loop 3.0` and later works with DASH pods. If your version of the *Loop* app is 2.2.9 or earlier, you cannot use DASH pods.
 
