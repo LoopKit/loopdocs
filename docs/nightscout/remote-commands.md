@@ -214,7 +214,7 @@ For more information, see:
 
 ## Using Remote Commands
 
-There are four ways you can trigger your commands remotely; &nbsp;[*Loop Caregiver*](loop-caregiver.md) (link takes you to a new page), [Nightscout Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
+There are four ways you can trigger your commands remotely; &nbsp;[*Loop Caregiver*](loop-caregiver.md) (link takes you to a new page), [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
 ### [*Loop Caregiver*](loop-caregiver.md)
 
@@ -222,32 +222,29 @@ Click the link above to read more about *Loop Caregiver* .
 
 ### *Nightscout* Careportal
 
-To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure *Nightscout* site according to the directions [here](update-user.md) in &nbsp;<span translate="no">Loopdocs</span>&nbsp; in addition to setting up the [Remote Configuration](remote-config.md). 
+To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure your *Nightscout* site according to the directions [here](update-user.md){: target="_blank" } in&nbsp;<span translate="no">Loopdocs</span>&nbsp;in addition to setting up the [Remote Configuration](remote-config.md){: target="_blank" }. 
 
-Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`. The order of the words in the `ENABLE` line is not important.
+* Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`
+    * The order of the words in the `ENABLE` line is not important
+* If you changed your Loop build method (between Mac Build and Browser Build) - don't forget the extra [Config Var](remote-config.md#remote-build-config-var-requirement){: target="_blank" }
+* You [site must be authenticated](update-user.md#authenticate-site) so that your &nbsp;<span translate="no">Careportal</span>&nbsp;is active to send remote overrides from the website
 
-You'll also need to have your [site authenticated](update-user.md#authenticate-site) so that your &nbsp;<span translate="no">Careportal</span>&nbsp; is active to send remote overrides . 
+Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down to the bottom of the `event type` menu. Refer to [Command Remote Bolus or Carb Entry](#command-remote-bolus-or-carb-entry) for more instructions and a graphic.
 
-Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` menu to find `Temporary Override`.  
-Within there, you will find all your&nbsp;_<span translate="no">Loop</span>_&nbsp;override presets already loaded for you.
+Please note that there are entries that do not say `remote` at the top of the list.
 
-#### Start and End Remote Override
-
-![img/careportal-overrides.PNG](img/careportal-overrides.PNG){width="300"}
-{align="center"}
-
-The Looper will see a banner notification that a remote command has been sent with details about that command and whether it succeeded (or not).
-
-![img/override_notification.jpg](img/override_notification.jpg){width="300"}
-{align="center"}
-
-Canceling an override through *Nightscout careportal* is as simple as selecting the event type `Temporary Override Cancel` and submitting.
+* You must go all the way to the bottom of the list to see the remote commands
+* Those entries at the top of the list are for caregivers who may be recording manual treatments without access to an automated system; they are not read by the *Loop* app.
 
 #### Command Remote Bolus or Carb Entry
 
 Open your Nightscout site in a browser or app.
 
-* Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` dropdown menu to find `Remote Carb Entry` or `Remote Bolus Entry`
+* Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down in the `event type` dropdown menu to find `Remote Carb Entry` or `Remote Bolus Entry` as shown in the graphic below<br><br>
+
+    ![after starting the careportal you must go to the bottom of the list to find remote commands](img/careportal-remote-commands.png){width="500"}
+    {align="center"}
+
 * Fill out the treatment log until you get to the OTP row
     * When using Safari, the OTP code is automatically offered - might need to tap twice
     * For other authentication apps (Authenticator, 1Password, etc)
@@ -260,6 +257,20 @@ Note that Loop will honor both the current OTP code and the one that just expire
 If the Looper is with you, you can see the notification on their phone. You can see the entry on the&nbsp;_<span translate="no">Loop</span>_&nbsp;carbohydrate or the insulin displays to see if it went through.
 
 If the Looper is not with you, you should see the result in the *Nightscout* dashboard within 5 minutes.
+
+#### Start and End Remote Override
+
+Starting or ending a remote override does not require a One-Time Password.
+
+![img/careportal-overrides.PNG](img/careportal-overrides.PNG){width="300"}
+{align="center"}
+
+The Looper will see a banner notification that a remote command has been sent with details about that command and whether it succeeded (or not).
+
+![img/override_notification.jpg](img/override_notification.jpg){width="300"}
+{align="center"}
+
+Canceling an override through *Nightscout careportal* is as simple as selecting the event type `Temporary Override Cancel` and submitting.
 
 ### Shortcuts
 
