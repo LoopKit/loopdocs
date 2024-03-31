@@ -20,6 +20,11 @@
     * 5 min: Clear out expired certificates
     * 5 min: Generate new certificates
 
+    One Time: Complete the information for the Digital Service Act Compliance
+
+    * This is a new requirement that must be completed one time
+    * See [Digital Service Act Compliance](gh-first-time.md#digital-service-act-compliance){: target="_blank" } for instructions
+
 ???+ abstract "Page Summary (click to open/close)"
     **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
 
@@ -80,7 +85,14 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 * Accept the `Apple Program License Agreement` (only)
     * You do NOT need to accept anything related to the `Paid Applications Schedule Agreement`
+    * You do not need to provide banking or tax information
     * That is only required when you sell an app through the `App Store`
+
+Digital Service Act Compliance
+
+* Configure yourself as a non-trader
+    * This is a new requirement that must be completed one time
+    * See [Digital Service Act Compliance](gh-first-time.md#digital-service-act-compliance){: target="_blank" } for instructions
 
 !!! warning "Wait After You Agree"
     It typically takes 15 minutes before your updated agreement is available so you can complete your build.
