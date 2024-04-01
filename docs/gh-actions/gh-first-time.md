@@ -897,9 +897,40 @@ Repeat the steps until you have completed all 4 `Identifiers` in the table above
 
 ## :material-triangle: Step 8 of 12
 
-> :material-triangle: Step 8 of 12 is Create Loop App in App Store Connect. This step has no :material-dots-triangle: Substeps. It is only required one time.
+> :material-triangle: Step 8 of 12 is Create Loop App in App Store Connect. This step has two :material-dots-triangle: Substeps.
 
-> If you are building other apps using this page as a guide, you must complete this step one time for each app.
+> Substep 8.1 is required only one time.
+
+> If you are building other apps using this page as a guide, you must complete Substep 8.2 one time for each app.
+
+## :material-dots-triangle: Substep 8.1 for Step 8
+
+## Digital Service Act Compliance
+
+In order to create an app you need to indicate whether you are a trader or a non-trader. You are a non-trader unless you use the same Developer ID to submit apps for sale.
+
+Even if the graphic below does not match what you see exactly, it should assist in guiding you through the steps.
+
+Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps){: target="_blank" }; log in if needed.
+
+If you do not see the banner, shown in the top of the graphic below, asking you to Complete Compliance Requirements, you can skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
+
+If you do see the banner, follow the numbered steps in the graphic below:
+
+1. Click on the link that says "Complete Compliance Requirements" to open a new screen shown in the middle of the graphic below
+
+2. Tap on the "Complete Compliance Requirements for Your Name" link to bring up a pop-up shown in the bottom of the graphic below
+
+3. Select the "This is a non-trader provider account" radio button
+
+4. Click Save
+
+![app store connect digital service act compliance steps](img/not-a-trader.svg){width="800"}
+{align="center"}
+
+You do not need to add a bank account or fill out tax forms if you are only using the App Store to get your own app into TestFlight. You only need to have a paid account with a valid license agreement and have completed this compliance form. Ignore other requests from Apple.
+
+## :material-dots-triangle: Substep 8.2 for Step 8
 
 ## Create Loop App in App Store Connect
 
