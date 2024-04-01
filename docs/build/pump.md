@@ -23,6 +23,7 @@ There are three types of pumps compatible with Loop.
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps)
 
 ## Check Medtronic Pump Version
 
@@ -183,6 +184,29 @@ The DASH system has the newer, slimmer locked-android Personal Diabetes Manager 
 ### Omnipod 5
 
 Loop does not support Omnipod 5 pods.
+
+## Sooil Dana pumps
+
+**Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Loop* app.**
+
+### Dana-i
+
+The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
+
+`Loop 3.4.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+
+![Dana-i](img/dana-i.png){width="250"}
+{align="center"}
+
+### DanaRS-v3
+
+The DanaRS is release in 2002, with firmware version v1. However, firmware version v3 and onwards are supported with the *Loop* app.
+[Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
+
+`Loop 3.4.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+
+![DanaRS-v3](img/danars.png){width="250"}
+{align="center"}
 
 ## Next Step: Compatible CGM
 

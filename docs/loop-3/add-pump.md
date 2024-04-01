@@ -10,13 +10,15 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 !!! question "Switching Pumps?"
     To change the pump connected to Loop go to [Change Pump Type](#change-pump-type).
 
-Loopers can choose from 3 pumps and a simulator:
+Loopers can choose from 4 pumps and a simulator:
 
 * Minimed 500/700 Series
     * Note: this label does not mean any 5 or 7 series pump works with the app
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
+* Dana-i / DanaRS-v3
+    * Note: DanaRS-v1 or any Dana korean versions are not supported (or is untested)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -219,6 +221,85 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 
 The Medtronic status and commands available are shown in the [Pump Setting](medtronic.md) page.
 
+## Dana-i / DanaRS-v3
+
+!!! info "Support for Dana-i"
+    All versions of the Dana-i are supported at the moment!
+
+!!! warning "Check your DanaRS version before starting"
+    Only the DanaRS-v3 is supported, every other version is not supported or is untested (The korean versions are untested for example).
+    To check your DanaRS version, please go to "Analyze" -> "Model information". The version should be at least `xxx-3.0.0`
+
+    ![DanaRS-v3 version menu](img/danars-v3-version.jpeg){width="450"}
+    {align="center"}
+
+When you select the "Dana-i/RS" option, you will be prompted to select your pump model.
+After this selection, you will get a short description on how the pairing process will work.
+Then you will get the following menu's:
+
+1. Select [Insulin Type](#insulin-type)
+2. Select [Delivery speed](#delivery-speed)
+3. Prepare you [Dana-i / DanaRS-v3 pump](#prepare-dana-idanars-v3)
+4. Connect to your [Dana-i pump](#pairing-dana-i) or [DanaRS-v3 pump](#pairing-danars-v3)
+5. (Optional): Enable [silent tones](#optional-enable-silent-tones)
+
+![Full dana flow](img/dana-total.jpg){align="center"}
+
+### Delivery speed
+
+!!! info "IMPORTANT"
+    The delivery speed can always be changed in the pump's settings, but you can only have one delivery speed active
+
+The Dana pumps supports several bolus/delivery speeds.
+This might be interesting to customize if you want to slow down the bolus speed for insulin types that feel like it is burning.
+Dana supports 3 speeds:
+
+* 12 seconds per unit (default)
+* 30 seconds per unit
+* 60 seconds per unit
+
+### Prepare Dana-i/DanaRS-v3
+
+Start by checking the device name at the back of your Dana (or inside the "Model information" menu).
+This is a 10 character code, which is listed behind the SN.
+The example below is from a Dana-i, but is the same for every Dana pump
+
+![Dana-i SN example](img/dana-i-sn.jpg){width="450"}
+{align="center"}
+
+After you have done the [Insulin Type](#insulin-type) and [Delivery speed](#delivery-speed), you will land on the Dana scanning page.
+This page will show all the Dana pumps it could find in your area.
+Once you see your device name in the list, click on it and Loop will try to connect to your Dana-i / DanaRS-v3.
+
+### Pairing Dana-i
+
+Once connected, your Dana-i will prompt you with a question if you want to connect.
+Accept this and you will see a code on your Dana-i.
+Meanwhile, you will see the standard iOS Bluetooth pairing modal.
+Also accept this and fill in the code from your pump into iOS.
+After that is done, Loop is ready to use your Dana-i!
+
+![Dana pairing request example](img/dana-pairing.jpg){width="450"}
+{align="center"}
+
+### Pairing DanaRS-v3
+
+Once you see your device name in the list, click on it and Loop will try to connect to your DanaRS-v3.
+
+Once connected, your DanaRS-v3 will prompt you with a question if you want to connect.
+Accept this and you will see two codes on your DanaRS-v3.
+Meanwhile, you will see a prompt for 2 codes in Loop.
+Fill in the codes from your pump into iOS and Loop is ready to use your DanaRS-v3!
+
+### (Optional) Enable silent tones
+
+Normally, a Dana pump will make a sound or a vibration every time a bolus is completed.
+When Loop is configured with [Automatic bolus](settings.md#dosing-strategy), it might be anoying to have a beep or a vibration for every micro bolus.
+Therefore, we strongly recommend user to enable the silent tones.
+
+Sadly, only the Dana distributors know how to enable this feature at the moment.
+But we do know you need to set your alarm to sound.
+You can do this via: "Settings" -> "User options" -> "4. Alarm"
 
 ## Change Pump Type
 
