@@ -193,7 +193,7 @@ Loop does not support Omnipod 5 pods.
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
 
-`Loop 3.4.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+`Loop 3.5.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
 
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
@@ -203,7 +203,7 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 The DanaRS is release in 2002, with firmware version v1. However, firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
-`Loop 3.4.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+`Loop 3.5.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
