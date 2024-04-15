@@ -225,6 +225,11 @@ The Medtronic status and commands available are shown in the [Pump Setting](medt
 
 ## Dana-i / DanaRS-v3
 
+!!! important "Coming Soon"
+    The Dana pump is not part of the released code yet. But the plug-in feature of Loop makes adding it extremely easy.
+    
+    If you want to test the Dana before it added to Loop, please join the discussion of this pump in zulipchat: [Dana Discussion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }
+
 !!! info "Support for Dana-i"
     All versions of the Dana-i are supported at the moment!
 
