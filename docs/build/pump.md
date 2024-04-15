@@ -16,14 +16,14 @@
         - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html){: target="_blank" } and [OpenAPS](https://openaps.readthedocs.io/en/latest/){: target="_blank" } that support other pumps
     - **"Can I change the firmware of my Medtronic pump?"** No.
 
-## Pumps Compatible with Loop
+## Pumps Compatible with the *Loop* app
 
-There are three types of pumps compatible with Loop.
+These types of pumps are compatible with the *Loop* app.
 
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps)
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) Coming soon
 
 ## Check Medtronic Pump Version
 
@@ -187,23 +187,28 @@ Loop does not support Omnipod 5 pods.
 
 ## Sooil Dana pumps
 
+!!! warning "Future Feature Only"
+    Sorry but the Dana pump has not landed in released code or even dev code at this time. There is a testing fork, so check out [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }.
+
+    The information below is for the convenience of people reading along in zulipchat.
+
 **Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Loop* app.**
 
 ### Dana-i
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
 
-`Loop 3.5.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana-i. If your version of the *Loop* app not from that fork, you cannot use the Dana-i.
 
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
 
 ### DanaRS-v3
 
-The DanaRS is release in 2002, with firmware version v1. However, firmware version v3 and onwards are supported with the *Loop* app.
+The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
-`Loop 3.5.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+The special fork (see [link](#sooil-dana-pumps) for details) works with the DanaRS-v3. If your version of the *Loop* app not from that fork, you cannot use the DanaRS-v3.
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}

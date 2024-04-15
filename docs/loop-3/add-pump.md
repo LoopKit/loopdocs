@@ -17,8 +17,9 @@ Loopers can choose from 4 pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* Dana-i / DanaRS-v3
+* Dana-i / DanaRS-v3 (Coming soon)
     * Note: DanaRS-v1 or any Dana korean versions are not supported (or is untested)
+    * A special fork is required at this time (see [link](../build/pump.md#sooil-dana-pumps) for details)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -52,6 +53,7 @@ Here is an overview of the different steps for adding each pump.  Before changin
 1. [Select RileyLink](#select-rileylink)
 1. [Medtronic](#medtronic)
 
+#### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3) (Coming soon)
 
 ## Add Pump
 
@@ -239,7 +241,7 @@ Then you will get the following menu's:
 
 1. Select [Insulin Type](#insulin-type)
 2. Select [Delivery speed](#delivery-speed)
-3. Prepare you [Dana-i / DanaRS-v3 pump](#prepare-dana-idanars-v3)
+3. Prepare your [Dana-i / DanaRS-v3 pump](#prepare-dana-idanars-v3)
 4. Connect to your [Dana-i pump](#pairing-dana-i) or [DanaRS-v3 pump](#pairing-danars-v3)
 5. (Optional): Enable [silent pump tones](#optional-enable-silent-pump-tones)
 6. (Optional): Enable [background sound](#optional-enable-background-sound)
