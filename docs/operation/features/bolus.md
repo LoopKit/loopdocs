@@ -75,8 +75,6 @@ The Loop app will open to the Bolus screen. This looks similar to the [Meal Bolu
 
 In the graphic below, the current glucose is under the Correction Range. Loop allows you to dip below the correction range but its recommended bolus will be limited by the glucose prediction and the Glucose Safety Limit. Check back once your glucose starts to rise and there will probably be a bigger recommendation.
 
-This screen behaves differently for [Loop 2.2.x](#loop-2-bolus-screen) and Loop 3. The graphics and instructions on this page are for Loop 3 version. Click on the Loop 2.2.x link above to view the Loop 2 version.
-
 When the **Bolus** screen is entered directly from the toolbar, the button choices are **Enter Bolus** if none is recommended, **Deliver** if a value is on the **Bolus** row or **Cancel** using the button on the upper left. The user can also tap on the value on the **Bolus** row to bring up a keyboard to modify that amount. When doing that, the value is automatically set to zero.
 
 The two graphics below are examples of manual bolus screens. 
