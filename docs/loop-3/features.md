@@ -37,6 +37,11 @@ Two algorithm experiments have been added to dev. These are _<span translate="no
 ??? abstract "Do you want to know more? (Click to open/close)"
     * Originally proposed as [Loop PR 1988](https://github.com/LoopKit/Loop/pull/1988)
 
+    * Many people used a customization provided by *CustomTypeOne LoopPatches* informally called the switcher patch. It transitioned from Automatic Bolus at higher glucose values to Temp Basal Only at lower glucose values where the user had to select the threshold for the shift external to the *Loop* app.
+
+        * The "switcher" patch is no longer compatible
+        * The GBPA feature is intended to replace the functionality of that older customization and is controlled completely inside the *Loop* app
+
 _<span translate="no">Glucose Based Partial Application</span>_ is only used when _Automatic Bolus_ (AB) is selected for _Temp Basal Only_ _Dosing Strategy_
 
 * This modification **does not affect the recommended dose**, only how quickly the recommended dose is automatically delivered
@@ -92,7 +97,7 @@ When _Dosing Strategy_ is set to _Temp Basal Only_ , Loop provides about 17% of 
 ??? abstract "Do you want to know more? (Click to open/close)"
     * Originally proposed in [Loop Issue 695](https://github.com/LoopKit/Loop/issues/695)
         * This was tested in a few forks but not included into dev until recently
-        * Initial merge into dev: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
+        * Initial merge into the *Loop* app: [Loop PR 2008](https://github.com/LoopKit/Loop/pull/2008)
     * Updated with a modification to limit stacking of _<span translate="no">IRC</span>_ with Glucose Momentum: [Loop PR 2028](https://github.com/LoopKit/Loop/pull/2028)
 
     The _<span translate="no">IRC</span>_ term is described in this (updated) [comment](https://github.com/LoopKit/Loop/issues/695#issue-310265141) in Loop Issue 695 which  includes plots and equations. Some of the information in that comment is repeated below: [Important points about _<span translate="no">IRC</span>_](#important-points-about-irc).
