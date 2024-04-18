@@ -15,7 +15,27 @@ This page was updated with information for Loop 3.
 * [Override Active Warning](#override-active-warning)
     * A warning is presented when entering carbs while an override with sensitivity other than 100% is active
 
+### New with Version 3.4.x
+
+The [Favorite Foods](../../loop-3/features.md#favorite-foods){: target="_blank" } feature was added with version 3.4.x. This is an even faster way to enter meals than is described in the next section, Meal Entry - Fast Version.
+
+The graphic in the link above was taken from my Favorite Foods screen. Subsequent to that screen shot, I've renamed Medium to Lunch and Large to Dinner. Note this is a personal solution that works for me; you need to modify your settings to work for you.
+
+For each meal I select Lunch or Dinner, save and accept the bolus.
+
+* If I know I will be eating less than usual (not often), I will edit the carb amount before saving
+* If I know I will be eating more than usual, my typical approach is:
+    * Accept the normal amount when I prebolus
+    * When I sit down to eat, I increase the carb amount by multiples of 15 g, depending on the situation
+* I use the fat-protein rise selection but advance the time to 4 hours after dinner
+
+
 ## Meal Entry - Fast Version
+
+!!! tip "Favorite Foods is even faster"
+    With version 3.4.x and later, you have access to the Favorite Foods feature. This can make meal entry even faster than this Fast Version section below.
+
+    * See [New with Version 3.4.x](#new-with-version-34x) section above for an example use of this feature
 
 To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the **Add Carb Entry** screen.
 
