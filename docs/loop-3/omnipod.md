@@ -320,11 +320,16 @@ When would you use Silence Pod:
 * Attending a performance
 * Performing at an event
 * Planning to change your pod in the morning, but you know alerts will happen overnight
+* You will be away from your phone for an activity and want to avoid any Notifications from beeping on the pod
+    * Notifications, unless silenced, alert on the phone and the pod
+    * The pod beeps continue until acknowledged on the phone
+    * If Silence Pod is enabled, the pod beeps will be suppressed
+    * When you return your phone, examine alerts for those notications
 
 Caveats:
 
-* You must remember to disable Silence Pod if you want to hear alerts again
-* The settings you have under Notifications and Confidence Reminders are not changed, they are simply silenced while Silence Pod is Enabled
+* You must remember to disable Silence Pod if you want to hear Notifications and Confidence Reminders as pod beeps in addition to alerts on your phone
+* The settings you have under Notifications and Confidence Reminders are not changed, the pod beeps associated with them are simply silenced while Silence Pod is Enabled
 
 The graphic below shows the Silence Pod control. This is only available for v3.4.x and later.
 
