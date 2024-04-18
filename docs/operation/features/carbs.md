@@ -1,7 +1,5 @@
 ## Meal Entry
 
-This page was updated with information for Loop 3.
-
 ### Loop 3 Updates:
 
 * [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry

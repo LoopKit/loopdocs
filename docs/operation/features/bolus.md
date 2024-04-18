@@ -1,12 +1,4 @@
-## Bolus
-
-This page was updated with information for Loop 3.
-
-### Loop 2 and 3 Differences
-
-Most of the information is the same for Loop 2.2.x and Loop 3. 
-
-Loop 2 and 3 differences:
+## Updates with version 3 and later
 
 * Loop 3 uses the setting name of Glucose Safety Limit, which has the same meaning as Suspend Threshold in Loop 2
 * With Loop 3.2 and later
@@ -149,15 +141,3 @@ If an "uncertain" delivery is not resolved:
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
 
 There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../loop-3/displays-v3.md) page.
-
-
-## Loop 2 Bolus Screen
-
-* Loop 2.2.x shows the recommended bolus but the bolus row is initially set to 0
-    * You can tap on the **Recommended** line and that value will be transferred to the Bolus line
-    * OR 
-    * You can tap on 0.0u on the **Bolus** row and type in your desired bolus amount
-    * As soon as a value is entered on the **Bolus** row, the Deliver button turns blue and can be tapped to deliver that amount via your pump.
-
-    ![Bolus when below correction range](img/below-min.svg){width="300"}
-    {align="center"}
