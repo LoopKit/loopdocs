@@ -63,9 +63,13 @@ The Screen that says Setup Complete allows you to change the Scheduled Reminder 
 
 ## Pod Status
 
-The Pod Status screen is shown in the graphic below. The dashed green outline indicates the `Device` portion that is found only for the Omnipod.  All other features of the screen are common for Omnipod and Omnipod DASH.
+The Pod Status screen is shown in the graphic below. The dashed green outline indicates the `Device` portion that is found only for the Omnipod.  All other features of the screen are common for Omnipod and Omnipod DASH. There are two versions of the screen below.
 
-![consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps](img/loop-3-omnipod-screen.svg){width="250"}
+* If you are running v3.2.x, your screen looks like the graphic on the left
+    * You will not have the Silence Pod or Pod Diagnostics features and the Previous Pod details is at the very bottom of the screen
+* If you are running v3.4 or later, your screen looks like the graphic on the right
+
+![consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps](img/loop-3-omnipod-screen.svg){width="250"} ![consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps for 3.4 or later](img/loop-3-4-omnipod-screen.svg){width="250"}
 {align="center"}
 
 ### Play Beeps
@@ -213,29 +217,47 @@ For situations where you need a modification of your insulin needs that is not d
 For Omnipod, there is a Devices section used to access the [RileyLink](../loop-3/rileylink.md) status and commands screen.
 
 
-### Pod Details
+### Pod Display
 
-The Pod Details table, shown in the graphic below, reports:
+The next section on the Pod screen reports:
 
 * Time at which pod was Activated
 * Time at which pod will Expire
-* Access to Device Details
+* Access to Current Pod Details
+* Access to Previous Pod Details (3.4.x and later)
 
-![section of Pod Status screen with Pod Details](img/pod-status-details.svg){width="300"}
+The graphic below shows version 3.2.3 and earlier on the left with version 3.4 and later on the right.
+
+![section of Pod Status screen with Pod Details](img/pod-status-details.svg){width="600"}
 {align="center"}
 
 
 !!! question "Time Drift"
     The pod will expire when it thinks it has been 80 hours. The pod clock may drift a few seconds with respect to phone time during the pod life. The Expiration time gets updated when the pod reports how long it thinks it has been since it was activated.
 
-#### Device Details
+#### Pod Details
 
-Some additional details from the most recent pod status response message are displayed if you tap the Device Details row, as shown in the graphic below. Most people will not need to view this.
+Some additional details for the most recent pod status response message are displayed if you tap the Device Details row, as shown in the graphic below. Most people will not need to view this.
 
 The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) in the middle and Omnipod DASH (NXP BLE) on the right. Do not worry about the different board styles (Device Name) for DASH. The developers did that for you. If you are asking for help from a mentor - they may request this information.
 
 ![section of Pod Status screen with Pod Details](img/loop-3-omnipod-device-details.svg){width="600"}
 {align="center"}
+
+#### Previous Pod Details
+
+When you tap on the `Previous Pod Details` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. If you are running version 3.2.3 or earlier, this row is at the very bottom of the Omnipod screen.
+
+If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.
+
+![previous pod information screen, both for DASH, left was nominal pod and right had a pod fault](img/loop-3-omnipod-previous.svg){width="600"}
+{align="center"}
+
+!!! bug "Do Not Call Insulet about -049 (0x31) Faults"
+    If you should happen to get a fault where the last 3 digits of the PDM ref code are "-049" (the Hex Designation is fault code 0x31), do **not** report this to Insulet and do **not** ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. 
+    
+    We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.
+
 
 ## Replace Pod
 
@@ -281,6 +303,33 @@ When you tap on the `Confidence Reminder` row, the graphic below is displayed.  
 ![Confidence reminder selection screen, the current selection is enabled as indicated by the blue check mark](img/loop-3-omnipod-confidence.svg){width="300"}
 {align="center"}
 
+### Silence Pod
+
+The Silence Pod feature is new with version 3.4.x. This allows a user to tap on silence pod to prevent any noises from the pod, other than critical faults.
+
+What Silence Pod will not do:
+
+* This feature cannot change the "clicking" noise that comes from insulin delivery
+* This feature will not prevent the constant alarm if the pod fails for any reason such as out-of-time, out-of-insulin, occlusion detected or any other fault
+* If you tap on the sound icon, the beeps will still be heard on the pod
+
+When would you use Silence Pod:
+
+* During a meeting at work
+* During a religious event
+* Attending a performance
+* Performing at an event
+* Planning to change your pod in the morning, but you know alerts will happen overnight
+
+Caveats:
+
+* You must remember to disable Silence Pod if you want to hear alerts again
+* The settings you have under Notifications and Confidence Reminders are not changed, they are simply silenced while Silence Pod is Enabled
+
+The graphic below shows the Silence Pod control. This is only available for v3.4.x and later.
+
+![Silence pod selection screen, this is disabled by default](img/pod-silent-screen.svg){width="600"}
+{align="center"}
 
 ### Insulin Type
 
@@ -317,19 +366,6 @@ Loop 3 will display this warning modal screen if it detects a problem with the P
 ![graphic warning user of a problem with the time on the phone](img/loop-3-omnipod-time-change.svg){width="300"}
 {align="center"}
 
-## Previous Pod Information
-
-When you tap on the `Previous Pod Information` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. 
-
-If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.
-
-![previous pod information screen, both for DASH, left was nominal pod and right had a pod fault](img/loop-3-omnipod-previous.svg){width="600"}
-{align="center"}
-
-!!! bug "Do Not Call Insulet about -049 (0x31) Faults"
-    If you should happen to get a fault where the last 3 digits of the PDM ref code are "-049" (the Hex Designation is fault code 0x31), do **not** report this to Insulet and do **not** ask for a replacement. This means Loop did not ensure the pod was in the correct state to accept a command. In other words, it was a bug in the Loop code. 
-    
-    We believe the code has been updated to prevent these faults. There was a brief period during development in which at least one of these happened - this was fixed July 3, 2022. If this happens to you, report it on zulipchat for the developers, save a Loop Report and rebuild if you have an older version of the development code.
 
 ### Pod Error Messages
 
@@ -339,4 +375,14 @@ This section presents some of the error message screens you may see specific to 
 
 You are likely to hear a pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.
 
-Unlock your phone, open Loop, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the [Previous Pod Information](#previous-pod-information) screen.
+Unlock your phone, open Loop, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the [Previous Pod Details](#previous-pod-details) screen.
+
+#### Updates with Version 3.4.x
+
+The updates included with version 3.4.x make it easier to find the pod fault, should one occur.
+
+The fault will appear on the Omnipod screen and more details will be shown when you tap on Replace Pod to arrive at the Deactivate screen. You can grab a quick screenshot on the Deactivate screen if desired. If there was no pod fault, you will not notice a difference in the version 3.4.x display compared to version 3.2.3.
+
+The fault information can still be found under [Previous Pod Details](#previous-pod-details) if you need to find it after you Deactivate the "screaming" pod.
+
+

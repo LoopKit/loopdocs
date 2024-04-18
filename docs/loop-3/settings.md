@@ -160,6 +160,7 @@ The information about the pump section is detailed on several different pages. F
 * [Add or Modify Pump](add-pump.md)
 * [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
 * [Medtronic](medtronic.md) Status and Commands
+* [Dana Pumps](add-pump.md#dana-i-danars-v3)
 
 ### [CGM Settings](add-cgm.md)
 
@@ -181,7 +182,7 @@ Please refer to the [Optional: Service](services.md) page.
 
 The Support section enables the user to provide output data ([Loop Report](#issue-report) and/or [Critical Logs](#export-critical-event-logs)) about the app. This information can be very helpful to folks trying to assist with problem reports.
 
-The graphic below shows the screen provided when you tap on the Support row at the bottom of the Settings screen.
+The graphic below is similar to what you see when you scroll down to the Support section of the *Loop* Settings screen.
 
 ![settings support screen](img/loop-3-setting-support.svg){width="250"}
 {align="center"}
@@ -194,12 +195,12 @@ Tap on the `Issue Report` row, on the graphic above, to create a Loop Report tex
     Be aware:
     
     * Issue (on github) is used to report code problems
-    * `Issue Report` is an action in Loop app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
+    * `Issue Report` is an action in the *Loop* app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
 
 It's a good idea to use the `Issue Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
 !!! tip "Pro Tip"
-    The Loop Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named Loop Reports.
+    The *Loop* Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named *Loop* Reports.
 
     You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
 
@@ -211,6 +212,8 @@ In either case, the first action should be to add a term or phrase to the search
 
 ![settings support screen when submitting a bug report](img/loop-3-setting-support-bug.svg){width="500"}
 {align="center"}
+
+### When Not to Submit a Bug Report
 
 !!! warning "Not for Build or Settings Help"
     Submit Bug Report should be used when you believe there is an error in the code.
