@@ -5,7 +5,6 @@ Near the bottom of your *Loop* settings screen is a section called "Services".
 !!! question "Sevices are Optional"
     * The *Loop* app will work whether you use these or not.
     * *Nightscout* is highly recommended, but can be added later - you don't need it to get started.
-    * If you are running Loop 2.2.x, see [Loop 2 Services](../operation/loop-settings/services-v2.md)
 
 The services are added by tapping on the &plus; sign and choosing the service from the list. Services are shown alphabetically. The most common services are [*Nightscout*](#nightscout) and [Tidepool](#tidepool).
 
