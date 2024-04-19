@@ -16,7 +16,31 @@ There have been a large number of fixes and improvements to reduce various pairi
 
 ## The app crashed after pairing started and before cannula insertion
 
-Sometimes the app will crash while the pod is priming. This is rare but can happen.
+Sometimes the *Loop* app will crash while a new pod is being setup. This is rare but can happen. There are several parts to the setup process:
+
+1. Pair the pod to the app
+2. Perpare for and start to prime the pod
+3. Insert the cannula
+
+### Updates for Version 3.4
+
+The Omnipod code was upgraded with version 3.4 to be more robust if your *Loop* app quits, a build is installed or the app is swiped up during pod setup.
+
+There are initial **pairing** steps: exchange of encryption keys, assign the pod ID and perform a final connection step that must be completed while the app is in contact with the pod. Once those initial commands happen, then the pod can reconnect to the *Loop* app even if the app quit before priming starts.
+
+* After the restart, if the main screen indicates Finish Setup in the Pump Status icon, you can continue with that pod
+    * Tap on Finish Setup to be taken to the appropriate screen
+* After the restart, if the main screen indicates No Pod in the Pump Status icon then the pod was not fully paired to the app
+    * Tap on No Pod and try to Pair Pod
+    * If the pod pairs, then the interruption happened before pairing started - you got lucky
+    * If you get the message no pod is found, then you are out of luck
+        * In this case, move the first pod far away from the phone; you want to avoid the possibility of interference with the new pod
+        * Fill a new pod and pair the new pod
+        * Once the new pod is operating, be sure to go to the first pod and disable the sound - it will continue beeping until it starts to scream: [What do you do to stop a screaming pod?](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod){: target="_blank" }
+
+### Behavior for Version 3.2.3 and earlier
+
+For version 3.2.3 and earlier, the pod needed to actually begin priming before an interruption occurred or the pod could not be recovered. However, in this case, the user was always directed to the Insert Cannula page whether priming completed or not.
 
 1. Wait for the clicking to stop
     * It takes a full minute for the pod to finish priming once it starts
@@ -80,6 +104,9 @@ Hopefully, your pod pairing continues uneventfully at this point. You'll press t
     **It is very important to not have two pods giving reminder beeps at the same time** as this can cause even more confusion for you and for Loop. Continue to work with a single pod at a time, retrying the **`Pair`** attempts multiple times if needed as described in Step 4. 
 
     If you cannot get the pairing to complete with the single beeping pod (after trying the procedures described below a few times with multiple **`Pair`** attempts during each try), then you should completely abandon that pod before attempting to use another pod. "Completely abandon" means move that failed-to-pair-no-matter-what-you-tried pod far, far away from you or put it in a not-turned-on-but-door-is-closed microwave. You do not want that beeping-but-not-pairing pod to be able to plague your next pod's communications with Loop during the fresh pairing process.
+
+    If you do need to try another pod. Once the new pod is operating, be sure to go to the first pod and disable the sound - it will continue beeping until it starts to scream: [What do you do to stop a screaming pod?](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod){: target="_blank" }
+
 
 ## Step 4: Check the Pod Placement
 

@@ -2,9 +2,7 @@
 
 This page provides help if your Loop icon is red and Loop is not working or only working sometimes.
 
-With Loop 3 - clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../loop-3/displays-v3.md#pump-status-icon) and the [Glucose Status Icon](../loop-3/displays-v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
-
-With Loop 2.2.x - clicking on the Loop icon on the main screen provides an error message. If you understand it, great...that should help you fix the problem. If not, grab a screenshot so you can ask for help from a mentor.
+Clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../loop-3/displays-v3.md#pump-status-icon) and the [Glucose Status Icon](../loop-3/displays-v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
 
 !!! warning "Omnipod Users"
 
@@ -30,15 +28,15 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
 1. [Phone Storage is Full](#phone-storage-is-full)
-1. [Lost Pod Information](#lost-pod-information) **If running Loop 2.2.x or FreeAPS, read this section first**
+1. [Lost Pod Information](#lost-pod-information)
 
 ### Lost Pod Information
 
-We think this was fixed with Loop 3. If you are running Loop 2.2.x or FreeAPS:
+We have not seen this issue since the update of the *Loop* app from version 2 to version 3 when the method for saving data was updated. Some other applications in the open-source sets of codes might still have this issue. (It was reported in iAPS, for example.) The warning below is left in LoopDocs but if you are running *Loop* version 3.x.x, you do not need to worry about reboots.
 
 * Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
 
-!!! warning "Be Careful with Phone Reboots with Loop 2 or FreeAPS"
+!!! warning "Be Careful with Phone Reboots with Loop 2 or iAPS"
 
     If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.
     
@@ -72,7 +70,7 @@ Last thing to try is:
 
 #### Power cycle your phone.
 
-* This suggestion is last because of a rare, intermittent issue (with iOS 15 and Loop 2.2.x) in which power cycling the phone does not load the latest version of Loop information
+* This suggestion is last because of a rare, intermittent issue with an older version of the *Loop* app in which power cycling the phone does not load the latest version of saved information
 * This was fixed with Loop 3
 * Click on the [Lost Pod Information](#lost-pod-information) link for more information
 
@@ -93,12 +91,6 @@ Finally, we see a lot of errors reported because people have problems with their
 ![img/no-share.jpg](img/no-share.jpg){width="450"}
 {align="center"}
 
-#### Firefly-style Transmitter
-
-Leaving this in for historical interest only. It illustrates the need to keep Loop up-to-date.  Who knows what the next hardware change will be. Enough time has passed that everyone's Loop code should be newer.
-
-In July 2019, we started to see a new style of Dexcom G6 transmitters on the market. These new transmitters required a rework of some of the Loop's code to continue to "spy" on the transmitter. Without that update, your Loop can not get CGM data unless it is pulling from Share servers (which is not a recommended mode of operation). So, download fresh code for your Loop app if you have a new transmitter type and haven't downloaded since July 2019.
-
 ### Apple Health
 
 Make sure both the Loop app and the Dexcom app have permission to write to Apple Health by checking the [Apple Health Permissions](../faqs/apple-health-faqs.md#how-do-i-modify-apple-healthkit-permissions).
@@ -114,11 +106,13 @@ If you have not enabled background app refresh on your phone, then Loop is likel
 1. While you are there - check your CGM app as well
 
 
-For iOS 15, there is a new feature described by [Dexcom](https://www.dexcom.com/faqs/what-are-the-recommended-iphone-settings){: target="_blank" }
+For iOS 15 and later, there is a new feature described by [Dexcom](https://www.dexcom.com/faqs/what-are-the-recommended-iphone-settings){: target="_blank" }
 
 1. Phone Settings -> Screen Time -> choose Always Allowed -> select an app, tap the plus icon to add to Always Allowed list
     - add Dexcom
     - add Loop
+
+2. In addition, with the addition of Focus modes (for iOS 15, 16 and 17), you may need to explicitly allow the *Loop* app access for notifications for modes such as Sleep, Personal and Do Not Disturb modes.
 
 ### Nightscout
 
