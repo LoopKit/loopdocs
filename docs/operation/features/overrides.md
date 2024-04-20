@@ -178,7 +178,7 @@ Saved overrides can be turned on and off by tapping on the blue heart icon on yo
 
 Tap on the active override in the [HUD Status Row](../../loop-3/displays-v3.md#hud-status-row) with the phone in portrait orientation. This brings up a screen to edit the override currently running.
 
-This only affects this override during the current period. It is not saved to that named override. For example, you can extend the duration or modify the needs value or target value based on a temporary situation.
+This only affects this override during the current period. It is not saved to that named override. For example, you can extend the duration or modify the needs value or target value based on a temporary situation. Be aware that if you edit Overall Insulin Needs, then the *Loop* app recalculates some effects over the duration of the override and if you also quit and restart the app, it recalculates all effects. See [Recalculate When Needs Change](#recalculate-when-needs-change).) 
 
 !!! info "Higher Priority Messages"
     If the HUD Status Row is displaying a higher priority message, you must wait for that message to complete before you'll be able to edit an active override. If you want to edit an active override, you can choose to cancel an active bolus and edit the override immediately.  The edited override will then be in effect for the next Loop cycle or manual recommendation.
@@ -188,6 +188,32 @@ This only affects this override during the current period. It is not saved to th
     * Bolus starting, in-progress or canceling
     * Pump suspended
     * No recent glucose
+
+### Recalculate When Needs Change
+
+Here's a cool tip for more advanced users. Suppose you have an override running but you realize your overall insulin needs percent wasn't quite right. You can edit the override and the *Loop* app partially recalculates the effect on the insulin given since the beginning of the override.
+
+A change in IOB may show up immediately when you edit the override. If you also quit and restart the app, it fully recalculates from the beginning of the override.
+
+This is demonstrated in the following set of graphics contributed by a user - note the change in the ICE graph for carbohydrates absorbed - this requires you to quit and restart the *Loop* app. These examples are to illustrate what happens - typically the modification of insulin needs would be much smaller.
+
+The first graphic is where the Overall Insulin need value was dramatically decreased (user much more sensitive).
+
+![effect of modifying an override on predictions - decrease needs](img/override-recalculate-1.svg){width="750"}
+{align="center"}
+
+The second graphic is where the Overall Insulin need value was dramatically increased (user much less sensitive).
+
+![effect of modifying an override on predictions - increase needs](img/override-recalculate-2.svg){width="750"}
+{align="center"}
+
+
+!!! tip "Example"
+    I set my biking override to be longer than my expected ride. When I return, I edit the insulin needs from 65% (needed while I'm actively biking) back to 100%. My negative IOB typically doubles at that change. I then disable the override and take the full negative IOB as a bolus. Then prevents a post-exercise high that often accompanies the lower-than usual basal rates during my ride.
+
+    I do not enter any carbs while biking and almost always ride first thing in the morning while fasting, so i just edit the override. I do not quit and restart the app.
+
+
 
 ## Remote Overrides
 
