@@ -51,9 +51,9 @@ There are initial **pairing** steps: exchange of encryption keys, assign the pod
         * Fill a new pod and pair the new pod
         * Once the new pod is operating, be sure to go to the first pod and disable the sound - it will continue beeping until it starts to scream: [What do you do to stop a screaming pod?](../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod){: target="_blank" }
 
-### Behavior for Version 3.2.3 and earlier
+### Behavior for Version 3.2.x and earlier
 
-For version 3.2.3 and earlier, the pod needed to actually begin priming before an interruption occurred or the pod could not be recovered. However, in this case, the user was always directed to the Insert Cannula page whether priming completed or not.
+For version 3.2.x and earlier, the pod needed to actually begin priming before an interruption occurred or the pod could not be recovered. However, in this case, the user was always directed to the Insert Cannula page whether priming completed or not.
 
 1. Wait for the clicking to stop
     * It takes a full minute for the pod to finish priming once it starts
@@ -66,11 +66,11 @@ For version 3.2.3 and earlier, the pod needed to actually begin priming before a
 
 ## Why do pod pairings fail?
 
-When the pod is paired to a new device, the pod is using low-power mode. That's one reason why placement is important. And you can only have one pod that is not yet paired in the room. Try to get your new pod working before giving up and trying a new one.
+When the pod is paired to a new device, the pod is using low-power mode. That's one reason why placement is important. And you can only have one pod that is not yet paired in the room. Try to get your first pod working before giving up and trying a new one.
 
 Sometimes it is the pod, so if you do need to try a new one, move the one that did not pair far away from your phone.
 
-!!! tip "Move Logically"
+!!! warning "Move Logically"
 
     Let's walk through the pod pairing/replacement process from the very beginning to make sure that we have all the important steps clearly identified even before you attempt to press that **Pair** button.
 
@@ -90,11 +90,11 @@ For Eros pods, let's make sure everything is ok as far as the RileyLink goes:
 
 Read this page to understand the information you should see on your phone if your RileyLink Device is working properly:
 
-* [RileyLink Display](loop-3/rileylink.md){: target="_blank" }
+* [RileyLink Display](../loop-3/rileylink.md){: target="_blank" }
 
 ## Step 2: Deactivate old Pod
 
-Make sure old pod was deactivated. If you cannot communicate with the old pod in order to deactivate it, try the steps in [Reset Loop to Pump Communications](red-loop.md#reset-loop-to-pump-communications).
+Make sure old pod was deactivated. If you cannot communicate with the old pod in order to deactivate it, try the steps in [Reset Loop to Pump Communications](red-loop.md#reset-loop-to-pump-communications){: target="_blank" }.
 
 If you were not able to deactivate the old pod, you need to Discard the old pod. After several failures to deactivate, Loop offers to Discard the pod. This just tells Loop that the pod is no longer connected to the app.
 
