@@ -191,9 +191,7 @@ When you **edit Overall Insulin Needs**, then the *Loop* app **recalculates** so
 
 ### Recalculate When Needs Change
 
-Here's a cool tip for more advanced users. Suppose you have an override running but you realize your overall insulin needs percent wasn't quite right. You can edit the override and the *Loop* app partially recalculates the effect on the insulin given since the beginning of the override.
-
-A change in IOB may show up immediately when you edit the override. If you also quit and restart the app, it fully recalculates from the beginning of the override.
+Here's a cool tip for more advanced users. Suppose you have an override running but you realize your overall insulin needs percent wasn't quite right. You can edit the override and force the *Loop* app to recalculate the effect from the beginning of the override. A change in IOB may show up immediately when you edit insulin needs in the override. If you also quit and restart the app, this forces a recalculation from the beginning of the override.
 
 This is demonstrated in the following set of graphics contributed by a user - note the change in the ICE graph for carbohydrates absorbed - this requires you to quit and restart the *Loop* app. These examples are to illustrate what happens - typically the modification of insulin needs would be much smaller.
 
