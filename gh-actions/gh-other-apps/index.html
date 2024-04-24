@@ -4306,30 +4306,42 @@
 </table>
 <p>The <code>Edit Your App ID Configuration</code> screen will open.</p>
 <ol>
-<li>In the <code>App Services</code> column, scroll down to the <code>App Groups</code> row<ul>
+<li>
+<p>In the <code>App Services</code> column, scroll down to the <code>App Groups</code> row</p>
+<ul>
 <li>Ensure the check box (under the <code>Capabilities</code> column) for <code>App Groups</code> is checked</li>
 <li>Tap on the word <code>Edit</code> or <code>Configure</code>, whichever shows up<ul>
 <li>This opens the <code>App Group Assignment</code> screen</li>
 <li>Check the box by <code>LoopCaregiver</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> that uses your <code>TEAMID</code> in <code>group.com.TEAMID.loopkit.LoopCaregiver</code> </li>
 <li>If the box by <code>Loop App Group</code> is checked, you should uncheck it</li>
+<li>Your screen should be similar to the graphic below</li>
 <li>If you made any changes, tap <code>Continue</code>, otherwise, tap <code>Cancel</code></li>
 </ul>
 </li>
 </ul>
+<p align="center"><img alt="select the loopcaregiver app group" src="../img/lcg-app-group.png" width="600" /></p>
 </li>
-</ol>
+<li>
 <p>If you modified settings for an <em>identifier</em>, the <code>Save</code> button at the top right will become active. Click on <code>Save</code> before leaving this page - otherwise, the change does not take effect.</p>
 <ul>
 <li>Tap on <code>Save</code></li>
 <li>This opens the <code>Modify App Capabilities</code> confirmation screen</li>
 <li>Click on <code>Confirm</code></li>
 </ul>
+</li>
+<li>
 <p>If you did not need to make changes, the <code>Save</code> button will not be active.</p>
 <ul>
 <li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
 </ul>
+</li>
+<li>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
+</li>
+<li>
 <p>Continue down the list until every identifier in the table below has the <code>App Group</code> for <code>LoopCaregiver App Group</code> added to it. (DO NOT SELECT the <code>Loop App Group</code>) If you miss any, the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action to <code>3. Create Certificates</code> will succeed but the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action to <code>4. Build LoopCaregiver</code> will fail.</p>
+</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -4361,6 +4373,11 @@
 </tbody>
 </table>
 <h2 id="create-app-in-app-store-connect">Create App in App Store Connect<a class="headerlink" href="#create-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Same procedure as for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</p>
+<p>You will follow the same procedure as you did with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>You will also want to edit your new app once you create it to <a href="../gh-first-time/#remove-apple-vision-pro" target="_blank">Remove Apple Vision Pro</a>.</p>
+</div>
 <p>You will be following the directions below to create an App in App Store Connect if you don't already have one.</p>
 <p>This requires you to provide some information. Examine the table below for the bundle ID associated with your app. </p>
 <table>
@@ -4416,6 +4433,9 @@
 </li>
 <li>
 <p>Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.</p>
+</li>
+<li>
+<p>Edit your new app to <a href="../gh-first-time/#remove-apple-vision-pro" target="_blank">Remove Apple Vision Pro</a></p>
 </li>
 </ol>
 <p>You are done with this activity. Before you close this browser window, note the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> tab at the top of the page. You'll be using that tab after you complete the next two actions.</p>

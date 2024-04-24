@@ -1381,6 +1381,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#remove-apple-vision-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Apple Vision Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#find-my-loop" class="md-nav__link">
     <span class="md-ellipsis">
       Find My Loop
@@ -4523,6 +4532,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#remove-apple-vision-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove Apple Vision Pro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#find-my-loop" class="md-nav__link">
     <span class="md-ellipsis">
       Find My Loop
@@ -5825,7 +5843,7 @@
 <h2 id="create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>
-<p>If you have created a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in App Store Connect before, skip ahead to <a href="#create-certificates">Create Certificates</a>.</p>
+<p>If you have created a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in App Store Connect before, make sure you <a href="#remove-apple-vision-pro">Remove Apple Vision Pro</a> and then skip ahead to <a href="#create-certificates">Create Certificates</a>.</p>
 <ol>
 <li>Click on the link <a href="https://appstoreconnect.apple.com/apps" target="_blank">apps list</a> to open App Store Connect and click the blue "plus" icon to create a New App.<ul>
 <li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>".</li>
@@ -5839,6 +5857,7 @@
 <li>Click Create</li>
 </ol>
 <p>You do not need to fill out the next form. That is for submitting to the app store.</p>
+<p><a href="#remove-apple-vision-pro">Remove Apple Vision Pro</a> from the app you just created.</p>
 <p><a href="#create-certificates"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#create-certificates">Create Certificates</a>.</p>
 </details>
 <p>If you have created a <code>Loop app</code> in <em>App Store Connect</em> before, skip ahead to <a href="#create-certificates">Create Certificates</a>.</p>
@@ -5851,6 +5870,13 @@
 <li>If you have an app that is not shown, you will see a search icon and the <code>All Statuses</code> dropdown. If you get to step 3 and cannot find your <code>com.TEAMID.loopkit.Loop</code> in the <em>Bundle ID</em> drop-down, this means you need to follow <a href="#find-my-loop">Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>.</li>
 </ul>
 <p align="center"><img alt="app store connect with deleted apps" src="../img/01-app-store-connect.png" width="600" /></p>
+</li>
+<li>
+<p>There might be a blue banner present at this time. If not, it will show up after you have at least one app.</p>
+<ul>
+<li>The information banner refers to "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Apps on Apple Vision Pro"</li>
+<li>You must wait until you have an app before you can edit the capabilities for the app - this will happen after the next step</li>
+</ul>
 </li>
 <li>
 <p>Click the <code>Add Apps</code> button or the blue "plus" icon (<span class="twemoji appstoreconnect"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span> ) and select <code>New App</code> as shown in the graphic below</p>
@@ -5884,6 +5910,21 @@
 </li>
 <li>Click <code>Create</code> but do not fill out the next form. That is for submitting to the app store and you will not be doing that.</li>
 </ol>
+<h3 id="remove-apple-vision-pro">Remove Apple Vision Pro<a class="headerlink" href="#remove-apple-vision-pro" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>It is now time to edit the availability of your app on Apple Vision Pro. If you skip this step, you will get an annoying email telling you Apple Vision Pro is not supported by your app.</p>
+<ul>
+<li>
+<p>First click to return to the main <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect</a> and click on "Edit Availability" for <strong><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Apps on Apple Vision Pro</strong>.</p>
+<p align="center"><img alt="Edit Availability for Apple Vision Pro" src="../img/apple-vision-pro.png" width="600" /></p>
+</li>
+<li>
+<p>This opens a new screen. By default, all your apps have Apple Vision Pro selected. Tap on the None button and then save to remove this.</p>
+</li>
+<li>
+<p>If you later create a new app, you will need to perform the same task for the new app<br><br></p>
+<p align="center"><img alt="remove Availability for Apple Vision Pro" src="../img/remove-apple-vision-pro.png" width="600" /></p>
+</li>
+</ul>
 <p>You are done with this activity and can close the browser tab. It's time to head back to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and <a href="#create-certificates">Create Certificates</a></p>
 <h3 id="find-my-loop">Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#find-my-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section is for people who were not able to follow the instructions in the last section because <code>com.TEAMID.loopkit.Loop</code>, with <strong><code>TEAMID</code></strong> matching your <code>TEAMID</code>, was not in the dropdown menu for <code>Bundle ID</code>.</p>
