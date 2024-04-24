@@ -110,7 +110,7 @@ This list indicates personalized customization that differ between `main` and `d
 Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in *Think Like A Pancreas* by Gary Scheiner.  In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `Loop 3` to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values. 
 
 ??? question "Do you want to know more? (Click to open/close)"
-    The developers did this because they expect fast to only be used for rapid-acting low treatments. The medium and fast values are for moderate and higher-fat or large meals.
+    The developers did this because they expect fast to only be used for rapid-acting low treatments. The medium and slow values are for moderate and higher-fat or large meals.
 
 ``` { .txt .copy title="Key_Phrase" }
 defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
