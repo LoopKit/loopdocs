@@ -275,21 +275,25 @@ The `Edit Your App ID Configuration` screen will open.
         * This opens the `App Group Assignment` screen
         * Check the box by `LoopCaregiver` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopCaregiver` 
         * If the box by `Loop App Group` is checked, you should uncheck it
+        * Your screen should be similar to the graphic below
         * If you made any changes, tap `Continue`, otherwise, tap `Cancel`
 
-If you modified settings for an *identifier*, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
+    ![select the loopcaregiver app group](img/lcg-app-group.png){width="600"}
+    {align="center"}
 
-* Tap on `Save`
-* This opens the `Modify App Capabilities` confirmation screen
-* Click on `Confirm`
+2. If you modified settings for an *identifier*, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
 
-If you did not need to make changes, the `Save` button will not be active.
+    * Tap on `Save`
+    * This opens the `Modify App Capabilities` confirmation screen
+    * Click on `Confirm`
 
-* Tap on the `< All Identifiers` button at the top left
+3. If you did not need to make changes, the `Save` button will not be active.
 
-The full list of Identifiers should be displayed again.
+    * Tap on the `< All Identifiers` button at the top left
 
-Continue down the list until every identifier in the table below has the `App Group` for `LoopCaregiver App Group` added to it. (DO NOT SELECT the `Loop App Group`) If you miss any, the *GitHub* action to `3. Create Certificates` will succeed but the *GitHub* action to `4. Build LoopCaregiver` will fail.
+4. The full list of Identifiers should be displayed again.
+
+5. Continue down the list until every identifier in the table below has the `App Group` for `LoopCaregiver App Group` added to it. (DO NOT SELECT the `Loop App Group`) If you miss any, the *GitHub* action to `3. Create Certificates` will succeed but the *GitHub* action to `4. Build LoopCaregiver` will fail.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -300,6 +304,11 @@ Continue down the list until every identifier in the table below has the `App Gr
 | `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.WidgetExtension` |
 
 ## Create App in App Store Connect
+
+!!! abstract "Same procedure as for the *Loop* app"
+    You will follow the same procedure as you did with the *Loop* app.
+
+    You will also want to edit your new app once you create it to [Remove Apple Vision Pro](gh-first-time.md#remove-apple-vision-pro){: target="_blank" }.
 
 You will be following the directions below to create an App in App Store Connect if you don't already have one.
 
@@ -337,6 +346,8 @@ This requires you to provide some information. Examine the table below for the b
     {align="center"}
 
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
+
+1. Edit your new app to [Remove Apple Vision Pro](gh-first-time.md#remove-apple-vision-pro){: target="_blank" }
 
 You are done with this activity. Before you close this browser window, note the *TestFlight* tab at the top of the page. You'll be using that tab after you complete the next two actions.
 
