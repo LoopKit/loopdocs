@@ -935,7 +935,7 @@ You do not need to add a bank account or fill out tax forms if you are only usin
 ## Create Loop App in App Store Connect
 
 ??? abstract "Section Summary (click to open/close)"
-    If you have created a Loop app in App Store Connect before, skip ahead to [Create Certificates](#create-certificates).
+    If you have created a Loop app in App Store Connect before, make sure you [Remove Apple Vision Pro](#remove-apple-vision-pro) and then skip ahead to [Create Certificates](#create-certificates).
 
     1. Click on the link [apps list](https://appstoreconnect.apple.com/apps){: target="_blank" } to open App Store Connect and click the blue "plus" icon to create a New App.
         * Select "iOS".
@@ -947,6 +947,8 @@ You do not need to add a bank account or fill out tax forms if you are only usin
     1. Click Create
 
     You do not need to fill out the next form. That is for submitting to the app store.
+
+    [Remove Apple Vision Pro](#remove-apple-vision-pro) from the app you just created.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#create-certificates) To skip the detailed instructions, click on [Create Certificates](#create-certificates).
 
@@ -960,6 +962,10 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
     ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
     {align="center"}
+
+1. There might be a blue banner present at this time. If not, it will show up after you have at least one app.
+    * The information banner refers to "iOS Apps on Apple Vision Pro"
+    * You must wait until you have an app before you can edit the capabilities for the app - this will happen after the next step
 
 1. Click the `Add Apps` button or the blue "plus" icon (:material-plus-circle:{: .appstoreconnect } ) and select `New App` as shown in the graphic below
 
@@ -986,6 +992,22 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
     * In this case, do **NOT** select `Create`
     * Instead, go back and put the correct value into the `TEAMID`  *Secret*  and follow the steps in [Delete Identifiers](#delete-identifiers)
 1. Click `Create` but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
+
+### Remove Apple Vision Pro
+
+It is now time to edit the availability of your app on Apple Vision Pro. If you skip this step, you will get an annoying email telling you Apple Vision Pro is not supported by your app.
+
+* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" } and click on "Edit Availability" for **iOS Apps on Apple Vision Pro**.
+
+    ![Edit Availability for Apple Vision Pro](img/apple-vision-pro.png){width="600"}
+    {align="center"}
+
+* This opens a new screen. By default, all your apps have Apple Vision Pro selected. Tap on the None button and then save to remove this.
+* If you later create a new app, you will need to perform the same task for the new app<br><br>
+
+    ![remove Availability for Apple Vision Pro](img/remove-apple-vision-pro.png){width="600"}
+    {align="center"}
+
 
 You are done with this activity and can close the browser tab. It's time to head back to your *GitHub* account and [Create Certificates](#create-certificates)
 
