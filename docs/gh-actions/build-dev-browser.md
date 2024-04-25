@@ -95,7 +95,7 @@ Here is a summary of the extra steps; each step has an associated link. This ass
 !!! warning "What about the `alive branch`"
     * Sometimes you get an error about the `alive branch`
     * It should be created for you automatically if you are building with the `dev branch` **and** you have `workflow` permission added to the `scope` for your *GitHub* `Personal Access Token`
-    * If necessary, delete the `alive branch` and run the `Create Certificates` again
+    * If necessary, delete the `alive branch` and run the `Build Loop` action again
 
 #### Add and Update New `Identifier`
 
