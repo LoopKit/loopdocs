@@ -57,7 +57,7 @@ Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a 
 
 ### Medtronic Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basals and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compabible.
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compabible.
 
 !!! note ""
 
@@ -69,7 +69,7 @@ A pump’s firmware is the internal software that runs your pump.  Older Medtron
     + Medtronic Worldwide Veo 554 or 754 --> firmware 2.6A or lower
     + Medtronic Canadian/Australian Veo 554 or 754 --> firmware 2.7A or lower
 
-To find your pump’s firmware you will need to power it on. If the pump has not been powered on for some time (i.e., has been in storage without a battery for a while), it will run through a start-up count and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the screen moves to other information displays.  
+To find your pump’s firmware you will need to power it on. If the pump has not been powered on for some time (i.e., has been in storage without a battery for a while), it will run through a start-up count and the firmware version will appear on the bottom right of the pump’s screen.  Don’t turn away, as the version number will only be displayed for a little while before the pump moves to other information displays.  
 
 If the pump has been active recently or has a reservoir installed, follow these steps:
 
@@ -118,7 +118,7 @@ Finding a compatible Medtronic pump is probably the most difficult part for most
   
 * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/){: target="_blank" }
 
-The most success appears to come from either one-on-one discussions with fellow people with diabetes, your doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
+The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
 
 ![Craigslist](img/craigslist.png)
 
