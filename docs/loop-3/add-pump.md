@@ -214,11 +214,12 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 1. Select your pump's battery type (lithium or alakine)
     * There is a whole page about [Medtronic pump batteries](../operation/features/battery.md)
 2. Leave the Preferred Data Source on Event History
-1. If you have a x23 or x54 pump, choose whether to use My Sentry (saves phone battery) or not (saves OrangeLink battery)
+1. If you have an x23 or x54 pump, choose whether to use My Sentry (saves phone battery) or not (saves OrangeLink battery)
     - For other Medtronic pumps, adjusting this setting does not do anything
+    - Note that the Orange Link battery drain is substantial
+        * Some users reported batteries needed to be changed every 2-4 days compared to 10 days with MySentry off
 
-The Medtronic status and commands available are shown in the [Pump Setting](medtronic.md) page.
-
+The Medtronic status and commands available are shown in the [Pump Settings](medtronic.md) page.
 
 ## Change Pump Type
 

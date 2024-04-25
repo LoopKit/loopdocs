@@ -26,7 +26,7 @@ You'll see this screen every time you ask Loop to `Pair New Pod`.
 
 The Omnipod Common pairing protocol is the same for all pods. The difference is that Omnipod requires a RileyLink compatible device and Omnipod DASH does not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.
 
-Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (right).
+Graphic below shows the Pair Pod screen for Omnipod (first) and Omnipod DASH (right).
 
 ![pair pod screens for Omnipod and Omnipod DASH](img/loop-3-pair-pod-duo.svg){width="500"}
 {align="center"}
