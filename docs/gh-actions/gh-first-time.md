@@ -1101,13 +1101,13 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
 It is now time to edit the availability of your app on Apple Vision Pro. If you skip this step, you will get an annoying email telling you Apple Vision Pro is not supported by your app.
 
-* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" } and click on "Edit Availability" for **iOS Apps on Apple Vision Pro**.
+* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }. In the message section labeled **iOS Apps on Apple Vision Pro**, click on "Edit Availability", highlighted by the red rectangle in the graphic below.
 
     ![Edit Availability for Apple Vision Pro](img/apple-vision-pro.png){width="600"}
     {align="center"}
 
 * This opens a new screen. By default, all your apps have Apple Vision Pro selected. Tap on the None button and then save to remove this.
-* If you later create a new app, you will need to perform the same task for the new app<br><br>
+* If you later create a new app, you might need to perform the same task for the new app<br><br>
 
     ![remove Availability for Apple Vision Pro](img/remove-apple-vision-pro.png){width="600"}
     {align="center"}
