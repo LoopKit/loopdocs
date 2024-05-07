@@ -421,6 +421,24 @@ This section is only for people who have successfully built using *GitHub Build 
 
 Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
+### `ERROR: Asset validation failed`
+
+This error indicates your fork needs to be updated. As of 29 April 2024, you are required to use Xcode 15 to build the app.
+
+There are serveral phrases you can check for. All of them have the same solution.
+
+Copy the words on the line below and paste them into the search function for your action log.
+
+> ``` { .text .copy }
+> ERROR: Asset validation failed
+> ```
+
+> ``` { .text .copy }
+> Could not download/upload from App Store Connect
+> ```
+
+Solution: Update your fork. See instructions on the Update page: [Update `Fork`](gh-update.md#update-fork){: target="_blank" }
+
 ### `Could not install WWDR certificate`
 
 Assuming you have successfully built using the Browser-Build / *GitHub* method before:
