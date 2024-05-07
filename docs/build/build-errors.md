@@ -168,7 +168,7 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ### Unable to read included file `LoopConfigOverride.xcconfig`
 
-**Error Message:**  
+**Error Message:**
 This error occurs inside *Xcode* with the build halting at the line that reads the `LoopConfigOverride.xcconfig` file.
 
 ![xcode does not have permission to read downloads folder](img/xcode-permission-error.jpg){width="650"}
@@ -188,6 +188,14 @@ The graphic below has steps labeled 1 through 4 to guide you to the setting that
 ![check privacy settings for xcode access to downloads folder](img/set-xcode-file-permissions.png){width="750"}
 {align="center"}
 
+### The File Could not be Unlocked
+
+**Error Message:**
+This error occurs inside *Xcode* with a modal alert that says:
+
+> The file "contents.xcworkspacedata" could not be unlocked
+
+The solution is the same as in the previous section, [Unable to read included file](#unable-to-read-included-file-loopconfigoverridexcconfig).
 
 ### No devices from which to generate a provisioning profile
 
