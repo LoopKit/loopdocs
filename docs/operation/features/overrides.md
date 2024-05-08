@@ -193,7 +193,7 @@ When you **edit Overall Insulin Needs**, then the *Loop* app **recalculates** so
 
 Here's a cool tip for more advanced users. Suppose you have an override running but you realize your overall insulin needs percent wasn't quite right. You can edit the override and force the *Loop* app to recalculate the effect from the beginning of the override. A change in IOB may show up immediately when you edit insulin needs in the override. If you also quit and restart the app, this forces a recalculation from the beginning of the override.
 
-This is demonstrated in the following set of graphics contributed by a user - note the change in the ICE graph for carbohydrates absorbed - this requires you to quit and restart the *Loop* app. These examples are to illustrate what happens - typically the modification of insulin needs would be much smaller.
+This is demonstrated in the following set of graphics contributed by a user - note the change in the ICE graph for carbohydrates absorbed - this requires you to quit and restart the *Loop* app. These examples use extreme modifications to illustrate what happens - typically the modification of insulin needs would be much smaller.
 
 The first graphic is where the Overall Insulin need value was dramatically decreased (user much more sensitive).
 
@@ -209,7 +209,7 @@ The second graphic is where the Overall Insulin need value was dramatically incr
 !!! tip "Example"
     I set my biking override to be longer than my expected ride. When I return, I edit the insulin needs from 65% (needed while I'm actively biking) back to 100%. My negative IOB typically doubles at that change. I then disable the override and take the full negative IOB as a bolus. This helps prevents a post-exercise high that often follows my ride.
 
-    I do not enter any carbs while biking and almost always ride first thing in the morning while fasting, so i just edit the override. I do not quit and restart the app.
+    I do not enter any carbs while biking and almost always ride first thing in the morning while fasting, so i just edit the override. If no carbohydrates are active, there is not need to quit and restart the app.
 
 ## Remote Overrides
 
