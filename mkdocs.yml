@@ -124,6 +124,9 @@ plugins:
 
 use_directory_urls: !ENV [CHECK_BROKEN_LINKS, True]
 
+validation:
+    anchors: warn
+
 nav:
 - Home: 'index.md'
 - Intro:
