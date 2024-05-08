@@ -874,6 +874,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#make-a-secrets-reference-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make a Secrets Reference File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#how-to-video-to-build-with-a-browser" class="md-nav__link">
     <span class="md-ellipsis">
       How-to Video to Build with a Browser
@@ -4025,6 +4034,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#make-a-secrets-reference-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make a Secrets Reference File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#how-to-video-to-build-with-a-browser" class="md-nav__link">
     <span class="md-ellipsis">
       How-to Video to Build with a Browser
@@ -4790,6 +4808,83 @@
 <ul>
 <li><a href="https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md" target="_blank">LoopWorkspace Build Instructions</a></li>
 </ul>
+<h3 id="make-a-secrets-reference-file">Make a <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Reference File<a class="headerlink" href="#make-a-secrets-reference-file" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>As you move through this page, there will be a lot of instructions regarding your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. Please save yourself a lot of agony. Make a <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Reference folder and then create a <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Reference file in it.</p>
+<p>You don't need to know anything about the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> or any other steps on this page to do this. Come up with your own names, but make sure you know where you put this.</p>
+<ol>
+<li>Decide on where you want your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> saved and create a special folder</li>
+<li>Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>)<ul>
+<li>Create a blank <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Reference file using the text-only editor</li>
+<li>Tap on the copy icon below to copy the template and paste it into your blank file</li>
+<li>Save the file</li>
+</ul>
+</li>
+<li>As you move through the steps on this page, fill in the parts of the template that say <code>&lt;your information here&gt;</code></li>
+<li>In addition to the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this template has places for other pieces of information you may find handy to save in the same file.</li>
+</ol>
+<div class="copy highlight"><span class="filename">Template to use for Secrets</span><pre><span></span><code>MySecretsReferenceFile.txt
+
+Information<span class="w"> </span>needed<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>Browser<span class="w"> </span>Build.
+The<span class="w"> </span>same<span class="w"> </span>secrets<span class="w"> </span>are<span class="w"> </span>used<span class="w"> </span><span class="k">for</span><span class="w"> </span>every<span class="w"> </span>app<span class="w"> </span>you<span class="w"> </span>build.
+
+First<span class="w"> </span>some<span class="w"> </span>handy<span class="w"> </span>username<span class="w"> </span>and<span class="w"> </span>password<span class="w"> </span>information:
+
+Apple<span class="w"> </span>ID<span class="w"> </span>username<span class="w"> </span><span class="k">for</span><span class="w"> </span>your<span class="w"> </span>Developer<span class="w"> </span>account<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>associated<span class="w"> </span>email:
+&lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
+suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
+
+GitHub<span class="w"> </span>username
+&lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
+suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
+
+These<span class="w"> </span>are<span class="w"> </span>the<span class="w"> </span>Six<span class="w"> </span>Secrets<span class="w"> </span><span class="k">in</span><span class="w"> </span>alphabetical<span class="w"> </span>order<span class="w"> </span>-<span class="w"> </span>each<span class="w"> </span>one<span class="w"> </span>shows<span class="w"> </span>the<span class="w"> </span>expected<span class="w"> </span>format.
+Delete<span class="w"> </span>each<span class="w"> </span>prototype<span class="w"> </span>as<span class="w"> </span>you<span class="w"> </span>gather<span class="w"> </span>your<span class="w"> </span>own<span class="w"> </span>secrets.
+The<span class="w"> </span>letter<span class="w"> </span>A<span class="w"> </span>indicates<span class="w"> </span>an<span class="w"> </span>alphanumeric<span class="w"> </span>character.
+Some<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>lower<span class="w"> </span><span class="k">case</span>,<span class="w"> </span>some<span class="w"> </span>upper<span class="w"> </span><span class="k">case</span><span class="w"> </span>and<span class="w"> </span>some<span class="w"> </span>numerals.
+The<span class="w"> </span>FASTLANE_KEY<span class="w"> </span>may<span class="w"> </span>have<span class="w"> </span>additional<span class="w"> </span>characters<span class="w"> </span>included.
+For<span class="w"> </span>that<span class="w"> </span>one<span class="w"> </span>copy<span class="w"> </span>the<span class="w"> </span>entire<span class="w"> </span>key
+including<span class="w"> </span>-----BEGIN<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+through
+-----END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+
+SECRETS<span class="w"> </span>BELOW:
+
+FASTLANE_ISSUER_ID
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
+
+FASTLANE_KEY_ID
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAAAA
+
+
+FASTLANE_KEY
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+-----BEGIN<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+
+GH_PAT
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+ghp_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+MATCH_PASSWORD
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AnyThingYouWant-sameForEveryRepository
+
+TEAMID
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAAAA
+
+Repository<span class="w"> </span>Names<span class="w"> </span><span class="k">for</span><span class="w"> </span>my<span class="w"> </span>Fork:
+
+https://github.com/my-github-username/LoopWorkspace
+
+Add<span class="w"> </span>additional<span class="w"> </span>apps<span class="w"> </span>here<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>decide<span class="w"> </span>to<span class="w"> </span>build<span class="w"> </span>any
+</code></pre></div>
 <h3 id="how-to-video-to-build-with-a-browser">How-to Video to Build with a Browser<a class="headerlink" href="#how-to-video-to-build-with-a-browser" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In addition to this page, there is a narrated video of each step needed to build using a browser.</p>
 <ul>
@@ -5914,14 +6009,14 @@
 <p>It is now time to edit the availability of your app on Apple Vision Pro. If you skip this step, you will get an annoying email telling you Apple Vision Pro is not supported by your app.</p>
 <ul>
 <li>
-<p>First click to return to the main <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect</a> and click on "Edit Availability" for <strong><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Apps on Apple Vision Pro</strong>.</p>
+<p>First click to return to the main <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect</a>. In the message section labeled <strong><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Apps on Apple Vision Pro</strong>, click on "Edit Availability", highlighted by the red rectangle in the graphic below.</p>
 <p align="center"><img alt="Edit Availability for Apple Vision Pro" src="../img/apple-vision-pro.png" width="600" /></p>
 </li>
 <li>
 <p>This opens a new screen. By default, all your apps have Apple Vision Pro selected. Tap on the None button and then save to remove this.</p>
 </li>
 <li>
-<p>If you later create a new app, you will need to perform the same task for the new app<br><br></p>
+<p>If you later create a new app, you might need to perform the same task for the new app<br><br></p>
 <p align="center"><img alt="remove Availability for Apple Vision Pro" src="../img/remove-apple-vision-pro.png" width="600" /></p>
 </li>
 </ul>

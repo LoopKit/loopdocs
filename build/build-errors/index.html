@@ -1332,6 +1332,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#the-file-could-not-be-unlocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      The File Could not be Unlocked
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#no-devices-from-which-to-generate-a-provisioning-profile" class="md-nav__link">
     <span class="md-ellipsis">
       No devices from which to generate a provisioning profile
@@ -3833,6 +3842,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#the-file-could-not-be-unlocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      The File Could not be Unlocked
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#no-devices-from-which-to-generate-a-provisioning-profile" class="md-nav__link">
     <span class="md-ellipsis">
       No devices from which to generate a provisioning profile
@@ -4220,7 +4238,7 @@ The build errors listed below (and the checks listed above) will fix most of the
 <p><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="unable-to-read-included-file-loopconfigoverridexcconfig">Unable to read included file <code>LoopConfigOverride.xcconfig</code><a class="headerlink" href="#unable-to-read-included-file-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Error Message:</strong><br />
+<p><strong>Error Message:</strong>
 This error occurs inside <em><abbr title="program used to build an app">Xcode</abbr></em> with the build halting at the line that reads the <code>LoopConfigOverride.xcconfig</code> file.</p>
 <p align="center"><img alt="xcode does not have permission to read downloads folder" src="../img/xcode-permission-error.jpg" width="650" /></p>
 <p><strong>Solution:</strong></p>
@@ -4233,6 +4251,13 @@ This error occurs inside <em><abbr title="program used to build an app">Xcode</a
 <li>Ensure that Downloads Folder is enabled</li>
 </ol>
 <p align="center"><img alt="check privacy settings for xcode access to downloads folder" src="../img/set-xcode-file-permissions.png" width="750" /></p>
+<h3 id="the-file-could-not-be-unlocked">The File Could not be Unlocked<a class="headerlink" href="#the-file-could-not-be-unlocked" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Error Message:</strong>
+This error occurs inside <em><abbr title="program used to build an app">Xcode</abbr></em> with a <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert that says:</p>
+<blockquote>
+<p>The file "contents.xcworkspacedata" could not be unlocked</p>
+</blockquote>
+<p>The solution is the same as in the previous section, <a href="#unable-to-read-included-file-loopconfigoverridexcconfig">Unable to read included file</a>.</p>
 <h3 id="no-devices-from-which-to-generate-a-provisioning-profile">No devices from which to generate a provisioning profile<a class="headerlink" href="#no-devices-from-which-to-generate-a-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong><br />
 This error occurs during the <code>Build target WatchApp</code> or <code>Build target WatchApp Extension</code>.</p>

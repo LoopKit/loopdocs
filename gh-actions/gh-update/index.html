@@ -3908,12 +3908,33 @@
 <p>This is Step 3 of 6 - it may not always be necessary, but please check every time.</p>
 </blockquote>
 <p>Open your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and select your <code>LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></code> from your repositories list.</p>
-<p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
+<h4 id="up-to-date-or-behind">Up to Date or Behind<a class="headerlink" href="#up-to-date-or-behind" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>If your <code>fork</code> is up to date with LoopKit version, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is about to expire - in which case, proceed to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
-<li>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on <code>Update branch</code></li>
-<li>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually sync and choose to <code>discard changes</code>; you can always customize again after the update</li>
+<li>
+<p>If your <code>fork</code> is up to date with LoopKit version, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is about to expire - in which case, proceed to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
+</li>
+<li>
+<p>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code> and if it succeeds, move on to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
+</li>
 </ul>
+<p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
+<h4 id="ahead-and-behind">Ahead and Behind<a class="headerlink" href="#ahead-and-behind" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually resolve a conflict.<ul>
+<li>This can happen if you customized your build</li>
+<li>Sometimes <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> lets you keep your customizations while updating the <code>fork</code></li>
+<li>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below is an example for LoopFollow<ul>
+<li>Frame 1 shows the <abbr title="contains project files and each file's revision history">repository</abbr> is both ahead and behind</li>
+<li>Frame 2 shows the <code>Sync Fork</code> option was selected</li>
+<li>Frame 3 shows that <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> was able to merge the new <abbr title="version of code within a single repository or workspace repository">branch</abbr> with existing customization</li>
+</ul>
+</li>
+<li>Tap on <code>Sync Fork</code> and then <code>Update branch</code> and if it succeeds, move on to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
+<li>Sometimes <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> cannot figure out how to combine the incoming changes with the customizations, so you have to choose to <code>discard changes</code>; you can always customize again after the update</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="message displayed when your fork of LoopWorkspace is ahead and behind LoopKit version" src="../img/repo-ahead-and-behind.gif" width="700" /></p>
 <div class="admonition question">
 <p class="admonition-title">Building a different <abbr title="version of code within a single repository or workspace repository">branch</abbr></p>
 <p>Do I need to do anything special to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</p>

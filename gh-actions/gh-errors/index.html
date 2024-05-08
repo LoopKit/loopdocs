@@ -1072,6 +1072,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#error-asset-validation-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      ERROR: Asset validation failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#could-not-install-wwdr-certificate" class="md-nav__link">
     <span class="md-ellipsis">
       Could not install WWDR certificate
@@ -3767,6 +3776,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#error-asset-validation-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      ERROR: Asset validation failed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#could-not-install-wwdr-certificate" class="md-nav__link">
     <span class="md-ellipsis">
       Could not install WWDR certificate
@@ -4210,6 +4228,17 @@
 <h2 id="repeat-build-loop-errors">Repeat <code>Build Loop</code> Errors<a class="headerlink" href="#repeat-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
 <p>Use the <a href="#examine-the-error">Examine the Error</a> instructions to find your error message.</p>
+<h3 id="error-asset-validation-failed"><code>ERROR: Asset validation failed</code><a class="headerlink" href="#error-asset-validation-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This error indicates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> needs to be updated. As of 29 April 2024, you are required to use <abbr title="program used to build an app">Xcode</abbr> 15 to build the app.</p>
+<p>There are serveral phrases you can check for. All of them have the same solution.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>ERROR: Asset validation failed
+</code></pre></div>
+<div class="copy highlight"><pre><span></span><code>Could not download/upload from App Store Connect
+</code></pre></div>
+</blockquote>
+<p>Solution: Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. See instructions on the Update page: <a href="../gh-update/#update-fork" target="_blank">Update <code>Fork</code></a></p>
 <h3 id="could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code><a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Assuming you have successfully built using the Browser-Build / <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> method before:</p>
 <ul>
