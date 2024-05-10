@@ -124,11 +124,11 @@ where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed
 
 Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or incorrectly configured insulin delivery settings (e.g., basal rate, ISF, etc.). However, since the effect of carbohydrates is often dominant (after insulin), Loop can still make useful ongoing adjustments to its carbohydrate model by assuming that the increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  
 
-The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using the current carbohydrate-to-insulin ratio and the insulin sensitivity factor at the time of the recorded meal entry.
+The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using both the carbohydrate-to-insulin ratio and the insulin sensitivity factor that were current at the time of a recorded meal entry.
 
-$$ AC[t] = ICE[t] \times \frac{CIR[t]}{ISF[t]} $$
+$$ AC[t] = ICE[t] \times \frac{CIR[t_{meal}]}{ISF[t_{meal}]} $$
 
-where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time *t*.
+where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U) at the time of the relevant meal entry, and ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant meal entry.
 
 If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.
 
@@ -166,7 +166,7 @@ If the estimated carbohydrate absorption of a meal entry is less than what would
 
 After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then forecasted to decay or absorb using the minimum absorption rate. Loop uses this forecast to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:
 
-$$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} $$
+$$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t_{meal}]}{CIR[t_{meal}]} $$
 
 ## Retrospective Correction Effect
 
