@@ -44,7 +44,7 @@ Use this row if you switch to a different type of insulin.
 
 ### Pump Battery Type
 
-The type of battery used in the Medtronic pump affects how Loop interprets the [battery level for the pump](../operation/features/battery.md#pump-battery).
+The type of battery used in the Medtronic pump affects how Loop interprets the [battery level for the pump](../operation/features/battery.md#medtronic-pump-battery).
 
 ### Preferred Data Source
 
@@ -94,5 +94,5 @@ If you want to switch to a different pump you must first delete this one:
 * Acknowledge you really mean it when asked by tapping `Delete Pump` again
 * Add a new pump
 
-For more information, follow this link: [Modify Pump](add-pump.md#modify-pump).
+For more information, follow this link: [Change Pump Type](add-pump.md#change-pump-type).
 

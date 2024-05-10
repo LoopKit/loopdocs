@@ -170,7 +170,7 @@ Here are some things to check if you have frequent red loops:
 
 * Try deleting your [Nightscout](#nightscout) account from Loop settings and see if your Loop stops having red loops. If it does, then you'll need to assess what's going wrong in your Nightscout site and fix it. Most of the time, your database is getting too big and cleanup is required.
 
-* Is your [RileyLink battery plugged in all the way](../build/rileylink.md#assemble-rileylink) on the board? One Looper recently posted that her RileyLink battery connection needed to be reseated after several years of service.
+* Is your [RileyLink battery plugged in all the way](../faqs/rileylink-faqs.md#rileylink-assembly) on the board? One Looper recently posted that her RileyLink battery connection needed to be reseated after several years of service.
 
 * Has your RL been fully charged? Try charging your RL for an hour or two, make sure the red light comes on while charging. Try a new charger or cable.
 
