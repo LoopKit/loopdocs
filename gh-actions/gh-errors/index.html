@@ -1080,6 +1080,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#intermittent-testflight-upload-number-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intermittent TestFlight Upload Number Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#could-not-install-wwdr-certificate" class="md-nav__link">
     <span class="md-ellipsis">
       Could not install WWDR certificate
@@ -3773,6 +3782,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#intermittent-testflight-upload-number-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intermittent TestFlight Upload Number Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#could-not-install-wwdr-certificate" class="md-nav__link">
     <span class="md-ellipsis">
       Could not install WWDR certificate
@@ -4227,6 +4245,89 @@
 </code></pre></div>
 </blockquote>
 <p>Solution: Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. See instructions on the Update page: <a href="../gh-update/#update-fork" target="_blank">Update <code>Fork</code></a></p>
+<h3 id="intermittent-testflight-upload-number-error">Intermittent <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Upload Number Error<a class="headerlink" href="#intermittent-testflight-upload-number-error" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">This is an intermittent error</p>
+<p>Looking into history, we see that this error has been reported intermittently over the last few years.</p>
+</div>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>Error: The provided entity includes an attribute
+</code></pre></div>
+</blockquote>
+<p>The full error looks like this: <code>Error: The provided entity includes an attribute with a value that has already been used The bundle version must be higher than the previously uploaded version: #</code></p>
+<p>Examine the number that is there. If it is 3, you need to use 4 in the Solution step. If it is 53, you use 54.</p>
+<p><strong>Solution:</strong> You must force Apple to update to a build number higher than the one it has on record.</p>
+<p>Summary of what you will do (don't do it yet); there are detailed steps and graphics below:</p>
+<ol>
+<li>You will edit the Fastfile in your <code>fork</code> and save the changes to a new <code>patch</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Perform the Action to <code>Build Loop</code> and select the <code>patch</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> when you build</li>
+</ol>
+<blockquote>
+<p>There is no reason to expect subsequent builds to fail with this same error, but if it does, repeat this section.</p>
+</blockquote>
+<h4 id="prepare-your-fork">Prepare your <code>fork</code><a class="headerlink" href="#prepare-your-fork" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The graphic below shows the steps to make sure your <code>fork</code> is up to date and to locate the <code>fastfile</code> folder:</p>
+<ol>
+<li>Select the <code>branch</code> that you plan to build</li>
+<li>Check the <code>fork</code> for that <code>branch</code> is up to date<ul>
+<li>If it is behind, <code>sync</code> the <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+</ul>
+</li>
+<li>
+<p>Scroll down to locate the folder <code>fastlane</code> and click on it (next graphic)</p>
+<p align="center"><img alt="Graphic shows steps to get fork up to date and locate fastfile" src="../img/tf-build-number-error-01.svg" width="750" /></p>
+</li>
+</ol>
+<h4 id="prepare-to-edit-your-fastfile">Prepare to Edit your Fastfile<a class="headerlink" href="#prepare-to-edit-your-fastfile" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ol>
+<li>After clicking on the <code>fastlane</code> folder, 3 files are visible; click on <code>Fastfile</code></li>
+<li>When the <code>Fastfile</code> file opens click on the pencil icon so you can edit the file</li>
+</ol>
+<p align="center"><img alt="Graphic shows steps to select and edit fastfile" src="../img/tf-build-number-error-02.svg" width="750" /></p>
+<h4 id="edit-your-fastfile">Edit your Fastfile<a class="headerlink" href="#edit-your-fastfile" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ol>
+<li>
+<p>Type either CMD-C (Mac) or CNTL-C (PC) to reveal the find and replace dialog shown in the graphic below</p>
+<ul>
+<li>Copy the phrase indicated below and paste it into the find buffer, and then type into the replace buffer the build number you want to require (one more than indicated by your last error)</li>
+</ul>
+<div class="copy highlight"><pre><span></span><code>previous_build_number + 1
+</code></pre></div>
+</li>
+<li>
+<p>Tap on the <code>Find</code> button and the <code>Replace</code> button to make 2 changes to the file</p>
+</li>
+<li>After modifying the two lines, click on the <code>Commit changes</code> button at upper right</li>
+</ol>
+<p align="center"><img alt="Graphic shows steps to edit fastfile" src="../img/tf-build-number-error-03.svg" width="750" /></p>
+<h4 id="save-to-a-patch-branch">Save to a Patch Branch<a class="headerlink" href="#save-to-a-patch-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Refer to the graphic below. The number <code>3</code> by the <code>Commit changes</code> button indicates the selection made in the previous step; it is shown for reference.</p>
+<ol>
+<li>Tap on indicator that you will save to a new <abbr title="version of code within a single repository or workspace repository">branch</abbr> - <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> will automatically name it for you</li>
+<li>Tap on <code>Propose changes</code> button and then STOP; do not click on <code>Open pull request</code> - you are done with this step</li>
+</ol>
+<p align="center"><img alt="Graphic shows steps to edit fastfile" src="../img/tf-build-number-error-04.svg" width="750" /></p>
+<h4 id="build-using-patch-branch">Build using Patch Branch<a class="headerlink" href="#build-using-patch-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Select <code>Action: Build Loop</code></p>
+<p>Refer to the first graphic below:</p>
+<ul>
+<li>Tap on Run Workflow (on the right side)</li>
+<li>Tap on the drop-down arrow to the right of the default <code>branch</code></li>
+<li>Choose the <code>branch</code> you just created<ul>
+<li>Start to type <code>patch</code> in the <code>branch</code> selection drop-down</li>
+<li>Only <code>branches</code> with that phrase will be displayed</li>
+</ul>
+</li>
+<li>After you have the correct <code>branch</code> selected, tap on run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr></li>
+</ul>
+<p align="center"><img alt="select the branch branch to build" src="../img/tf-find-patch.png" width="400" /></p>
+<p>There is not a lot of indication that the build started - be patient - or refresh the screen - do NOT start another build. Your build status should be similar to the next graphic.</p>
+<p align="center"><img alt="build is in progress" src="../img/tf-workflow-running.png" width="700" /></p>
+<p>Once you get a successful build, you return to using your normal <code>branch</code> for future builds.</p>
+<blockquote>
+<p>There is no reason to expect subsequent builds to fail with this same error, but if it does, repeat this section.</p>
+</blockquote>
 <h3 id="could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code><a class="headerlink" href="#could-not-install-wwdr-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Assuming you have successfully built using the Browser-Build / <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> method before:</p>
 <ul>
