@@ -11,6 +11,10 @@ If you want to build another DIY app that is not included here, look for the fil
 
 The same technique is used and the same six <code>Secrets</code> are applied to each `repository`. Those secrets are tied to your *Apple* Developer ID and your *GitHub* account.
 
+### Updating / Rebuilding Other Apps
+
+If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](gh-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name from the [Table of App Repositories](#table-of-app-repositories) for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
+
 ### Update to Build with Browser for the *Loop Caregiver* App
 
 !!! warning "The *Loop Caregiver* App Requires an `App Group`"

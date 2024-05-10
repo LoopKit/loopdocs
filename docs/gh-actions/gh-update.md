@@ -173,12 +173,29 @@ Digital Service Act Compliance
 
 Open your *GitHub* account and select your <code>LoopWorkspace repository</code> from your repositories list.
 
+#### Up to Date or Behind
+
+* If your `fork` is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in *TestFlight* is about to expire - in which case, proceed to [Build the *Loop* App](#build-the-loop-app)
+
+* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch` and if it succeeds, move on to [Build the *Loop* App](#build-the-loop-app)
+
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
-* If your `fork` is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in *TestFlight* is about to expire - in which case, proceed to [Build the *Loop* App](#build-the-loop-app)
-* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on `Update branch`
-* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually sync and choose to `discard changes`; you can always customize again after the update
+#### Ahead and Behind
+
+* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually resolve a conflict.
+    * This can happen if you customized your build
+    * Sometimes GitHub lets you keep your customizations while updating the `fork`
+    * The GIF below is an example for LoopFollow
+        * Frame 1 shows the repository is both ahead and behind
+        * Frame 2 shows the `Sync Fork` option was selected
+        * Frame 3 shows that GitHub was able to merge the new branch with existing customization
+    * Tap on `Sync Fork` and then `Update branch` and if it succeeds, move on to [Build the *Loop* App](#build-the-loop-app)
+    * Sometimes GitHub cannot figure out how to combine the incoming changes with the customizations, so you have to choose to `discard changes`; you can always customize again after the update
+
+![message displayed when your fork of LoopWorkspace is ahead and behind LoopKit version](img/repo-ahead-and-behind.gif){width="700"}
+{align="center"}
 
 !!! question "Building a different branch"
     Do I need to do anything special to build a different branch?

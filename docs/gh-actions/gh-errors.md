@@ -455,39 +455,27 @@ At this point, get your correct `TEAMID`, fix your Secrets file to have the corr
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
-Use the [Find the Error](#find-the-error) instructions to find your error message.
+Use the [Examine the Error](#examine-the-error) instructions to find your error message.
 
-### `Error: No code signing identity`
+### `ERROR: Asset validation failed`
 
-Copy the words on the line below and paste them into the search function for your action log.
+This error indicates your fork needs to be updated. As of 29 April 2024, you are required to use Xcode 15 to build the app.
 
-> ``` { .text .copy }
-> No code signing identity found and can not create a new one because you enabled
-> ```
-
-If that phrase is found, it means your *Apple* `Distribution Certificate` expired or was revoked.
-
-* See [Renew Certificates](gh-update.md#renew-certificate){: target="_blank" }
-
-### `Error: AppStore com.***.loopkit.Loop.LoopWidgetExtension`
-
-This error has a useful Annotation that presents the error. If you want to search for it manually, copy the words on the line below and paste them into the search function for your action log.
-
-> ``` { .text .copy }
-> Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension
-> ```
-
-This means you did not follow the steps here: [Updating from 3.2.x to 3.4](gh-update.md#updating-from-32x-to-34){: target="_blank" }
-
-### `Error: Could not install WWDR certificate`
+There are serveral phrases you can check for. All of them have the same solution.
 
 Copy the words on the line below and paste them into the search function for your action log.
 
-Note - you will get that error in addition to the `No code signing` error if you need to renew your certificates.
+> ``` { .text .copy }
+> ERROR: Asset validation failed
+> ```
 
 > ``` { .text .copy }
-> Could not install WWDR certificate
+> Could not download/upload from App Store Connect
 > ```
+
+Solution: Update your fork. See instructions on the Update page: [Update `Fork`](gh-update.md#update-fork){: target="_blank" }
+
+### `Could not install WWDR certificate`
 
 Assuming you have successfully built using the Browser-Build / *GitHub* method before:
 

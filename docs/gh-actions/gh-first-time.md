@@ -83,6 +83,85 @@ For sparse instructions, click on the link below:
 
 * [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
 
+### Make a <code>Secrets</code> Reference File
+
+As you move through this page, there will be a lot of instructions regarding your <code>Secrets</code>. Please save yourself a lot of agony. Make a <code>Secrets</code> Reference folder and then create a <code>Secrets</code> Reference file in it.
+
+You don't need to know anything about the <code>Secrets</code> or any other steps on this page to do this. Come up with your own names, but make sure you know where you put this.
+
+1. Decide on where you want your <code>Secrets</code> saved and create a special folder
+2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin your <code>Secrets</code>)
+    * Create a blank <code>Secrets</code> Reference file using the text-only editor
+    * Tap on the copy icon below to copy the template and paste it into your blank file
+    * Save the file
+3. As you move through the steps on this page, fill in the parts of the template that say `<your information here>`
+4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file.
+
+``` { .bash .copy title="Template to use for Secrets" }
+MySecretsReferenceFile.txt
+
+Information needed to use Browser Build.
+The same secrets are used for every app you build.
+
+First some handy username and password information:
+
+Apple ID username for your Developer account is the associated email:
+<your information here>
+suggest you use your desired password tool to save the password for this account
+
+GitHub username
+<your information here>
+suggest you use your desired password tool to save the password for this account
+
+These are the Six Secrets in alphabetical order - each one shows the expected format.
+Delete each prototype as you gather your own secrets.
+The letter A indicates an alphanumeric character.
+Some may be lower case, some upper case and some numerals.
+The FASTLANE_KEY may have additional characters included.
+For that one copy the entire key
+including -----BEGIN PRIVATE KEY-----
+through
+-----END PRIVATE KEY-----
+
+SECRETS BELOW:
+
+FASTLANE_ISSUER_ID
+<looks like this>
+AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
+
+FASTLANE_KEY_ID
+<looks like this>
+AAAAAAAAAA
+
+
+FASTLANE_KEY
+<looks like this>
+-----BEGIN PRIVATE KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END PRIVATE KEY-----
+
+GH_PAT
+<looks like this>
+ghp_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+MATCH_PASSWORD
+<looks like this>
+AnyThingYouWant-sameForEveryRepository
+
+TEAMID
+<looks like this>
+AAAAAAAAAA
+
+Repository Names for my Fork:
+
+https://github.com/my-github-username/LoopWorkspace
+
+Add additional apps here if you decide to build any
+```
+
 ### How-to Video to Build with a Browser
 
 In addition to this page, there is a narrated video of each step needed to build using a browser.
@@ -997,13 +1076,13 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
 It is now time to edit the availability of your app on Apple Vision Pro. If you skip this step, you will get an annoying email telling you Apple Vision Pro is not supported by your app.
 
-* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" } and click on "Edit Availability" for **iOS Apps on Apple Vision Pro**.
+* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }. In the message section labeled **iOS Apps on Apple Vision Pro**, click on "Edit Availability", highlighted by the red rectangle in the graphic below.
 
     ![Edit Availability for Apple Vision Pro](img/apple-vision-pro.png){width="600"}
     {align="center"}
 
 * This opens a new screen. By default, all your apps have Apple Vision Pro selected. Tap on the None button and then save to remove this.
-* If you later create a new app, you will need to perform the same task for the new app<br><br>
+* If you later create a new app, you might need to perform the same task for the new app<br><br>
 
     ![remove Availability for Apple Vision Pro](img/remove-apple-vision-pro.png){width="600"}
     {align="center"}
