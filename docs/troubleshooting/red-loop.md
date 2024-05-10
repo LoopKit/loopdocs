@@ -166,7 +166,7 @@ The [Reset Loop-to-Pump Communications](#reset-loop-to-pump-communications) step
 
 ## Resolving Frequent Red Loops
 
-Here's some things to check if you have frequent red loops:
+Here are some things to check if you have frequent red loops:
 
 * Try deleting your [Nightscout](#nightscout) account from Loop settings and see if your Loop stops having red loops. If it does, then you'll need to assess what's going wrong in your Nightscout site and fix it. Most of the time, your database is getting too big and cleanup is required.
 
