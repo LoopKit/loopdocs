@@ -86,7 +86,9 @@ You don't need to know anything about the <code>Secrets</code> or any other step
     * Create a blank <code>Secrets</code> Reference file using the text-only editor
     * Tap on the copy icon below to copy the template and paste it into your blank file
     * Save the file
-3. As you move through the steps on this page, fill in the parts of the template that say `<your information here>`
+3. As you move through the steps on this page, fill in the file
+    * The `##` characters are used to indicate sections or title (text only file)
+    * The there is a reference pattern for each SECRET, replace that with your SECRET
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file.
 
 ``` { .bash .copy title="Template to use for Secrets" }
@@ -97,11 +99,11 @@ The same secrets are used for every app you build.
 
 First some handy username and password information:
 
-Apple ID username for your Developer account is the associated email:
+## Apple ID username for your Developer account is the associated email:
 <your information here>
 suggest you use your desired password tool to save the password for this account
 
-GitHub username
+## GitHub username
 <your information here>
 suggest you use your desired password tool to save the password for this account
 
@@ -115,7 +117,7 @@ including -----BEGIN PRIVATE KEY-----
 through
 -----END PRIVATE KEY-----
 
-SECRETS BELOW:
+## SECRETS BELOW:
 
 FASTLANE_ISSUER_ID
 <looks like this>
@@ -147,7 +149,7 @@ TEAMID
 <looks like this>
 AAAAAAAAAA
 
-Repository Names for my Fork:
+## Repository Names for my Fork:
 
 https://github.com/my-github-username/LoopWorkspace
 
