@@ -1,5 +1,5 @@
 ## Help with Errors
-    
+
 If you get an error when building with a browser, use this page to figure out what to do.
 
 If you are still unsuccessful, then post your request for help along with your *GitHub* **username**. Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span>_, check the status and then view your log files directly.
@@ -438,6 +438,100 @@ Copy the words on the line below and paste them into the search function for you
 > ```
 
 Solution: Update your fork. See instructions on the Update page: [Update `Fork`](gh-update.md#update-fork){: target="_blank" }
+
+### Intermittent TestFlight Upload Number Error
+
+!!! warning "This is an intermittent error"
+    Looking into history, we see that this error has been reported intermittently over the last few years.
+
+Copy the words on the line below and paste them into the search function for your action log.
+
+> ``` { .text .copy }
+> Error: The provided entity includes an attribute
+> ```
+
+The full error looks like this: `Error: The provided entity includes an attribute with a value that has already been used The bundle version must be higher than the previously uploaded version: #`
+
+Examine the number that is there. If it is 3, you need to use 4 in the Solution step. If it is 53, you use 54.
+
+**Solution:** You must force Apple to update to a build number higher than the one it has on record.
+
+Summary of what you will do (don't do it yet); there are detailed steps and graphics below:
+
+1. You will edit the Fastfile in your `fork` and save the changes to a new `patch` branch
+3. Perform the Action to `Build Loop` and select the `patch` branch when you build
+
+> There is no reason to expect subsequent builds to fail with this same error, but if it does, repeat this section.
+
+#### Prepare your `fork`
+
+The graphic below shows the steps to make sure your `fork` is up to date and to locate the `fastfile` folder:
+
+1. Select the `branch` that you plan to build
+2. Check the `fork` for that `branch` is up to date
+    * If it is behind, `sync` the fork
+3. Scroll down to locate the folder `fastlane` and click on it (next graphic)
+
+    ![Graphic shows steps to get fork up to date and locate fastfile](img/tf-build-number-error-01.svg){width="750"}
+    {align="center"}
+
+#### Prepare to Edit your Fastfile
+
+1. After clicking on the `fastlane` folder, 3 files are visible; click on `Fastfile`
+3. When the `Fastfile` file opens click on the pencil icon so you can edit the file
+
+![Graphic shows steps to select and edit fastfile](img/tf-build-number-error-02.svg){width="750"}
+{align="center"}
+
+#### Edit your Fastfile
+
+1. Type either ++command+"F"++ (Mac) or ++control+"F"++ (PC) to reveal the find and replace dialog shown in the graphic below
+    * Copy the phrase indicated below and paste it into the find buffer, and then type into the replace buffer the build number you want to require (one more than indicated by your last error)
+
+    ``` { .txt .copy }
+    previous_build_number + 1
+    ```
+
+2. Tap on the `Find` button and the `Replace` button to make 2 changes to the file
+3. After modifying the two lines, click on the `Commit changes` button at upper right
+
+![Graphic shows steps to edit fastfile](img/tf-build-number-error-03.svg){width="750"}
+{align="center"}
+
+#### Save to a Patch Branch
+
+Refer to the graphic below. The number `3` by the `Commit changes` button indicates the selection made in the previous step; it is shown for reference.
+
+1. Tap on indicator that you will save to a new branch - *GitHub* will automatically name it for you
+2. Tap on `Propose changes` button and then STOP; do not click on `Open pull request` - you are done with this step
+
+![Graphic shows steps to edit fastfile](img/tf-build-number-error-04.svg){width="750"}
+{align="center"}
+
+#### Build using Patch Branch
+
+Select `Action: Build Loop`
+
+Refer to the first graphic below:
+
+* Tap on Run Workflow (on the right side)
+* Tap on the drop-down arrow to the right of the default `branch`
+* Choose the `branch` you just created
+    * Start to type `patch` in the `branch` selection drop-down
+    * Only `branches` with that phrase will be displayed
+* After you have the correct `branch` selected, tap on run workflow
+
+![select the branch branch to build](img/tf-find-patch.png){width="400"}
+{align="center"}
+
+There is not a lot of indication that the build started - be patient - or refresh the screen - do NOT start another build. Your build status should be similar to the next graphic.
+
+![build is in progress](img/tf-workflow-running.png){width="700"}
+{align="center"}
+
+Once you get a successful build, you return to using your normal `branch` for future builds.
+
+> There is no reason to expect subsequent builds to fail with this same error, but if it does, repeat this section.
 
 ### `Could not install WWDR certificate`
 
