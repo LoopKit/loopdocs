@@ -4807,7 +4807,11 @@
 <li>Save the file</li>
 </ul>
 </li>
-<li>As you move through the steps on this page, fill in the parts of the template that say <code>&lt;your information here&gt;</code></li>
+<li>As you move through the steps on this page, fill in the file<ul>
+<li>The <code>##</code> characters are used to indicate sections or title (text only file)</li>
+<li>The there is a reference pattern for each SECRET, replace that with your SECRET</li>
+</ul>
+</li>
 <li>In addition to the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this template has places for other pieces of information you may find handy to save in the same file.</li>
 </ol>
 <div class="copy highlight"><span class="filename">Template to use for Secrets</span><pre><span></span><code>MySecretsReferenceFile.txt
@@ -4817,11 +4821,11 @@ The<span class="w"> </span>same<span class="w"> </span>secrets<span class="w"> <
 
 First<span class="w"> </span>some<span class="w"> </span>handy<span class="w"> </span>username<span class="w"> </span>and<span class="w"> </span>password<span class="w"> </span>information:
 
-Apple<span class="w"> </span>ID<span class="w"> </span>username<span class="w"> </span><span class="k">for</span><span class="w"> </span>your<span class="w"> </span>Developer<span class="w"> </span>account<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>associated<span class="w"> </span>email:
+<span class="c1">## Apple ID username for your Developer account is the associated email:</span>
 &lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
 suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
 
-GitHub<span class="w"> </span>username
+<span class="c1">## GitHub username</span>
 &lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
 suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
 
@@ -4835,7 +4839,7 @@ including<span class="w"> </span>-----BEGIN<span class="w"> </span>PRIVATE<span 
 through
 -----END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
 
-SECRETS<span class="w"> </span>BELOW:
+<span class="c1">## SECRETS BELOW:</span>
 
 FASTLANE_ISSUER_ID
 &lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
@@ -4867,7 +4871,7 @@ TEAMID
 &lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
 AAAAAAAAAA
 
-Repository<span class="w"> </span>Names<span class="w"> </span><span class="k">for</span><span class="w"> </span>my<span class="w"> </span>Fork:
+<span class="c1">## Repository Names for my Fork:</span>
 
 https://github.com/my-github-username/LoopWorkspace
 
