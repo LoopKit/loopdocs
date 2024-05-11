@@ -166,7 +166,7 @@ In addition to the risks of missing data, if the internet is not reliable, you m
     
     _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre, and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/){: target="_blank" }._
     
-    There are third-party apps that bring Libre data to your Loop phone and customization instructions are starting at [Libre Support for Loop 3.2.x Code](../version/code-custom-edits.md#libre-support-for-loop-32x-code) that explains how to modify Loop 3 to use one of those apps. Please use these steps to get a version of Loop that does not rely on internet access to work.
+    There are third-party apps that bring Libre data to your Loop phone and customization instructions are provided in at the `Loop and Learn` website: [Libre Support for Loop 3.2.x](https://www.loopandlearn.org/custom-code/#add-cgm-browser){: target="_blank" } that explains how to modify Loop 3 to use one of those apps for Browser Build. The Mac instructionsare found on the same page. Please use these steps to get a version of Loop that does not rely on internet access to work.
     
     It is suggested that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using a direct Bluetooth connection.
     

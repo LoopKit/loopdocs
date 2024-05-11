@@ -61,9 +61,7 @@ If you switch to Loop 3, there are additional CGM options:
 
 * If you can upload your CGM to Nightscout, Loop 3 offers the option to use Nightscout as a CGM source.
 
-* You can choose to download the Loop with patches option when building with the script.
-    * As a prerequisite, you must interface your iPhone to the Libre
-    * Please read [Libre Support for Loop 3.2.x Code](../../version/code-custom-edits.md#libre-support-for-loop-32x-code)
+* There are customization options for `main` to support Libre, [`Loop and Learn: Loop Customization`](https://www.loopandlearn.org/custom-code/){: target="_blank" }
 
 ## Next Step: Loop 2 Configuration
 
