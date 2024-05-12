@@ -203,7 +203,7 @@ On old phone (if available):
 It is now time to transfer the CGM to the new phone.
 
 * [Dexcom CGM](#dexcom-cgm)
-* [<span translate="no">Libre</span>&nbsp;CGM](#librecgm)
+* [<span translate="no">Libre</span>&nbsp;CGM](#libre-cgm)
 
 #### Dexcom CGM
 

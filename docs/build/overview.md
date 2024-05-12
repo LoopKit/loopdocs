@@ -14,7 +14,7 @@ Each requirement in the list is linked to the LoopDocs pages with more informati
 
 ### Build with *Mac* Additional Requirements
 
-1. [Compatible Computer](../build/computer.md#macos)
+1. [Compatible Computer](../build/computer.md#check-your-macos-version)
 1. [Xcode](../build/xcode-version.md) (a free Apple application)
 
 If using a *Mac* to build to a [Simulator](../version/simulator.md) to try things out, the only requirements are a computer and Xcode.

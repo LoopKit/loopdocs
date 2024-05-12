@@ -43,7 +43,7 @@
         * [`Action: 3. Create Certificates`](#create-certificates)
         * [`Action: 4. Build Loop`](#build-the-loop-app)
     * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](#set-up-users-and-access-testflight)
-    * Phone: [Install the *Loop* app using the *TestFlight* app](../gh-actions/gh-deploy.md#deploy-using-testflight)
+    * Phone: [Install the *Loop* app using the *TestFlight* app](#install-on-phone)
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
@@ -207,7 +207,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](gh-other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
-    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](gh-other-apps.md#use-agithub-organization-account), and have them available for every repository in that organization account
+    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](gh-other-apps.md#use-a-github-organization-account), and have them available for every repository in that organization account
 * API `Key`:`Application Programming Interface Key`
     * You obtain and save this key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
@@ -623,12 +623,12 @@ You will not directly interact with your `Match-Secrets` repository.
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
 !!! warning "Existing Fork"
-    If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-haveloopworkspace) to decide what to do. That section provides links to return you to these instructions.
+    If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
 1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
-    * If you already have a fork, you cannot proceed, see [Already Have LoopWorkspace](#already-haveloopworkspace)
+    * If you already have a fork, you cannot proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the owner (`Owner`)
     * <code>LoopWorkspace</code> is the repository name (`Repository Name`)

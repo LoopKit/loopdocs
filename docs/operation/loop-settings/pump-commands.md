@@ -192,7 +192,7 @@ During normal operation, Loop automatically keeps phone time and pump time align
 
 ### Pump Battery Type
 
-The type of battery used in the Medtronic pump affects how Loop interprets the [battery level for the pump](../features/battery.md#pump-battery).
+The type of battery used in the Medtronic pump affects how Loop interprets the [battery level for the pump](../features/battery.md#medtronic-pump-battery).
 
 
 ### Preferred Data Source
