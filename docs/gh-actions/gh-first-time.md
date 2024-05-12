@@ -89,10 +89,13 @@ You don't need to know anything about the <code>Secrets</code> or any other step
 3. As you move through the steps on this page, fill in the file
     * The `##` characters are used to indicate sections or title (text only file)
     * The there is a reference pattern for each SECRET, replace that with your SECRET
-4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file.
+4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
+5. At the very beginning, is a place to indicate the last day you updated the file
 
 ``` { .bash .copy title="Template to use for Secrets" }
 MySecretsReferenceFile.txt
+
+## This file updated on: DD MMM YYYY
 
 Information needed to use Browser Build.
 The same secrets are used for every app you build.
