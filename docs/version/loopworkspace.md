@@ -147,7 +147,7 @@ For this graphic, the cloned `LoopWorkspace` is in the home directory.
 
 When it's time to update the copy of `LoopWorkspace` on your computer - you have choices. You can use the method below or redo the whole cloning process.
 
-Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../version/code-custom-edits.md#open-a-terminal-in-loopworkspace-folder)
+Be sure your terminal is in the correct location using [Open a Terminal in `LoopWorkspace` Folder](../build/edit-mac.md#open-a-terminal-in-loopworkspace-folder)
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }
@@ -163,16 +163,16 @@ Be sure your terminal is in the correct location using [Open a Terminal in `Loop
     git pull --recurse
     ```
 
-If you are testing the LoopKit dev branch, you need to be on [zulipchat](https://loop.zulipchat.com){: target="_blank" } and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see repository updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in zulipchat.
+If you are testing the LoopKit dev branch, you need to be on [Zulipchat](https://loop.zulipchat.com){: target="_blank" } and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see repository updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in Zulipchat.
 
 ![there has been an update in three submodules](img/zulipchat-github.svg){width="600"}
 {align="center"}
 
 ### Updating Loop to a Specific LoopWorkspace commit
 
-Sometimes, you know a feature you want was added at a specific commit number; however, you know there are other changes later than that commit which you do not want to test. There is a solution.
+Sometimes, you know a feature you want was added at a specific commit number; however, there are other changes later than that commit that you do not want to test. There is a solution.
 
-Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../version/code-custom-edits.md#open-a-terminal-in-loopworkspace-folder). First you have to bring down all the latest dev commits. Then you will back up to the one you want.
+Be sure your terminal is in the correct location using [Open a Terminal in LoopWorkspace Folder](../build/edit-mac.md#open-a-terminal-in-loopworkspace-folder). First, you have to bring down all the latest dev commits. Then you will back up to the one you want.
 
 1. Make sure you are in the correct branch using this git command:
     ``` { .bash .copy }

@@ -168,7 +168,7 @@ The toolbar is where your inputs to the Loop behavior take place.  The individua
 
 * **Overrides** - click this tool to set an [Override](../features/overrides.md).
 
-* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../overview.md#configurations).
+* **Loop Settings** - click on this tool to make changes to any of your [Loop settings](../../loop-3/settings.md#configuration).
 
 ## Next Step: Pump Settings
 
