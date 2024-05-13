@@ -4,7 +4,7 @@ Loop uses an algorithm to maintain blood glucose in a correction range by predic
 
 $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
-Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects as implied in the simple formular above; it is blended with the other terms as described in more detail in the [Momemtum](#blood-glucose-momentum-effect) section below).
+Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the [Momemtum](#blood-glucose-momentum-effect) section below).
 
 You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
@@ -94,7 +94,7 @@ The insulin effect can be expressed mathematically:
 
 $$ \Delta BG_{I}[t] = ISF[t] \times IA[t] $$
 
-where BG is the expected change in blood glucose with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+where $ \Delta BG_{I} is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
 
 ## Carbohydrate Effect
 
@@ -118,9 +118,9 @@ where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrat
 
 The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (ICE):
 
-$$ ICE[t] = OA[t] + IA[t] $$
+$$ ICE[t] = \Delta BG_{O}[t] - \Delta BG_{I}[t] $$
 
-where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time *t*, and IA is the insulin activity (mg/dL/5min).
+where, ICE (mg/dL/5 min) is the insulin counteraction effect, \Delta BG_{O} is the observed change in blood glucose (mg/dL/5min) at time *t*, and \Delta BG_{I} is the modelled change in blood glucose due to insulin alone (i.e. the insulin effect as described above mg/dL/5min).
 
 Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or incorrectly configured insulin delivery settings (e.g., basal rate, ISF, etc.). However, since the effect of carbohydrates is often dominant (after insulin), Loop can still make useful ongoing adjustments to its carbohydrate model by assuming that the increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  
 
