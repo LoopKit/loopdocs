@@ -48,7 +48,7 @@ The active insulin at any time is the product of original insulin delivered and 
 
 ![bg drop from 2 units](img/bg_drop.png)
 
-NOTE: ISF is also a function of time, which means if the user’s scheduled ISF changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.
+NOTE: ISF is also a function of time, as set in the ISF schedule in therapy settings or in accordance with any overrides. Loop uses the ISF that applied at the time of an insulin dose to predict the expected change in blood glucose due to the inslin effect, and sums the effect from all still-active doses.
 
 ### Expected Change in Blood Glucose
 
