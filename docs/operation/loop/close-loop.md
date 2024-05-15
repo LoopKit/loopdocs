@@ -35,6 +35,11 @@ Watch whether Loop accumulates positive or negative IOB while holding your gluco
 
 ## Meals
 
+!!! Important "Avoid Double Entry of Carbohydrates"
+    Carbohydrates are saved when the `Save and Bolus` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
+
+    If you see a notification after saving a carbohydrate entry, check carbohydrates entries in the *Loop* app. Do **not** just add the entry again without checking.
+
 Start with meals that you know well. If Loop suggests less or more insulin than expected as a bolus before the meal - consider why this may be true.
 
 * If glucose is trending down, Loop may be trying to prevent a low glucose event
