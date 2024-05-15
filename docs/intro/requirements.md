@@ -44,7 +44,7 @@ Detailed instructions are included in the link above.
 
 If you plan to build using the Build with *Mac* instructions, you also need:
 
-1. [Compatible Computer](../build/computer.md#macos)
+1. [Compatible Computer](../build/computer.md#check-your-macos-version)
 1. [Xcode](../build/xcode-version.md) (a free Apple application)
 
 

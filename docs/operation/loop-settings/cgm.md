@@ -1,0 +1,68 @@
+## Add CGM
+
+Now we need to add a CGM source so that Loop has glucose data. From the Loop settings screen, select `Add CGM`.
+
+![img/add-cgm.png](img/add-cgm.png){width="550"}
+{align="center"}
+
+The standard selections are:
+
+* Dexcom G6 (use this for Dexcom ONE)
+* Dexcom G5
+* Dexcom G4
+* Dexcom Share
+
+!!! info ""
+
+    If you added a compatible Medtronic pump earlier in the setup process, then you will also see an option for the compatible Medtronic sensor that works with that same pump. If you are using a compatible MDT sensor, select that option and the CGM data will be uploaded to Loop when pump status is updated.
+
+## About Dexcom Share credentials
+
+You do **NOT** need your Share account info listed in Loop settings if you are using a G4, G5, or G6 system. The transmitter ID is sufficient. In fact, the recommendation is that you leave your Share account empty so that you don't accidentally become internet-dependent for CGM data when you forget to update your transmitter ID when you start a new transmitter. Just leave the Share credentials blank.
+
+!!! abstract "If you need to use Dexcom Share"
+
+    If the dexcom is on another phone and you choose to use Share (not advised), here is some information.
+
+    For all selections, the Dexcom Share credentials (in other words, account login) is the same as what you used to log in to the active Dexcom app on your iPhone. **Dexcom Share account is not always the same login info as your Dexcom Clarity account.** For G4 users, the Share account is found in the account tab on the app. For G5/G6 users, unfortunately, there is no information in the app displaying what your account name is. The information is entered when you first log in to the app and then is never displayed again, nor visible under any information screens. If you have forgotten your G5/G6 account info, you can delete the Dexcom app and redownload it to try logging in again. This will not cause a restart of any sensor sessions in progress.
+
+    If you do not enter your Share credentials correctly, you will get an error when Loop tries to access your Share account to backfill CGM data. That error message will look like below. If you see that message, delete your Share account from Loop settings and try again...or just leave it out and depend on your transmitter ID.
+
+    ![img/shareclient.jpg](img/shareclient.jpg){width="300"}
+    {align="center"}
+
+## Dexcom G5, G6, ONE
+
+The Dexcom G5 and G6 options only require the addition of the active transmitter ID, and the matching Dexcom app to be running on the Loop iPhone. Use the G6 options if you are using a Dexcom ONE CGM.
+
+When you change transmitters, you will need to select the `Delete CGM` button at the very bottom of the CGM info page in Loop. Then you will select your Dexcom system again and add the new transmitter ID. You cannot just tap on your old transmitter ID to update it.
+
+If you don't update your transmitter ID when you change active transmitters, your Loop will not get CGM data from the Dexcom app.
+
+If you did add Share credential, Loop will get data from your Dexcom Share server and will not work without cell or wifi connection. When Loop is using data from Dexcom Share servers, a small cloud will appear above the glucose reading in Loop and should tip you off that maybe you forgot to update your transmitter ID.
+
+## Dexcom G4
+
+Dexcom G4 users will need the Dexcom G4 Share2 app active on their iPhone and paired to their Dexcom G4 Share receiver.
+
+## Dexcom Share
+
+The Dexcom Share selection is primarily for people who wish to test Loop function without a local CGM source and who are not running the Dexcom app on their Loop iPhone. This selection will require login access to a Dexcom Share account with live data and active internet connection in order to work.
+
+Dexcom Share is not available for Dexcom ONE CGM.
+
+## Libre and Other CGM
+
+Loop 2 does not natively support Libre CGM. 
+
+If you switch to Loop 3, there are additional CGM options:
+
+* If you choose to [build Loop-dev](../../version/build-dev.md), Libre support has been added.
+
+* If you can upload your CGM to Nightscout, Loop 3 offers the option to use Nightscout as a CGM source.
+
+* There are customization options for `main` to support Libre, [`Loop and Learn: Loop Customization`](https://www.loopandlearn.org/custom-code/){: target="_blank" }
+
+## Next Step: Loop 2 Configuration
+
+Now that you have added your CGM source, we need to complete the configuration and settings in your Loop. Please head over to the [Loop 2 Configuration page](configurations.md) for guidance with this important part of Loop's setup.

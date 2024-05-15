@@ -214,7 +214,7 @@ With Loop 3, the "old" method still works, but there is a new method for enterin
     * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
         * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
         * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
-        * Once the user selects `Done` on the keyboard display, the entered value is displayed on the `Bolus` row and the `Log Dose` button changes from gray to blue
+        * Once the user selects `Done` on the keyboard display, the entered value is displayed on the `Bolus` row, and the `Log Dose` button changes from gray to blue
         * Tap on `Log Dose` to record or `Cancel` to quit
 
 ![entering non-pump insulin into Loop](img/non-pump-insulin.svg){width="500"}

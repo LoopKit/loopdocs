@@ -58,7 +58,7 @@ Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a 
 
 ### Medtronic Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compabible.
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compatible.
 
 !!! note ""
 
@@ -86,11 +86,11 @@ If the pump has been active recently or has a reservoir installed, follow these 
 
 If you are in the position of being able to choose from different pump models, there are some slight differences between the Loop-compatible Medtronic pumps that may influence your decision.
 
-**500 vs 700**:  The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180 unit reservoir, and the 700 series pumps use a 300 unit reservoir (or smaller 180 unit reservoir, if you want).
+**500 vs 700**:  The difference between the Medtronic 500 series and the 700 series pumps is the size of the insulin reservoirs.  The 500 series pumps use a 180-unit reservoir, and the 700 series pumps use a 300-unit reservoir (or smaller 180-unit reservoir, if you want).
 
 **x15/x22 vs x23/x54**:  The noteworthy differences between the x15 and x22 pumps versus the x23 and x54 series pumps are:
 
-* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations, if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.
+* The x23/x54 pumps will allow for smaller insulin deliveries in certain situations if the smaller scroll rate is selected in the Bolus>Setup>Scroll Rate menu.
 
 |Pump Model  |Basal increments  |Bolus increments  |Range  |
 |---------|---------|---------|---------|
@@ -131,7 +131,7 @@ If you choose to purchase from a remote or unknown seller, here are some tips fo
 
 * Ask for photos of the pump. Check to make sure the serial number of the pump on the back matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
 
-* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently), however some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
+* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently), however, some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
 
 * Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
 

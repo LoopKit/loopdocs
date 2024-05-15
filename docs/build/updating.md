@@ -88,7 +88,7 @@ Minimum means you need to have at least that version - newer versions build just
 
 Click on this link [Check your Xcode Version](xcode-settings.md#xcode-version) to find your Xcode version number.
 
-If you need to update your Xcode, follow the instructions at this link [Install Xcode](xcode-version.md#install-xcode) and continue through [Xcode Settings](xcode-settings.md).
+If you need to update your Xcode, follow the instructions at this link [Install Xcode](xcode-version.md#which-version-of-xcode-do-i-need) and continue through [Xcode Settings](xcode-settings.md).
 
 Advanced users: If you are finding installation of Xcode from the App Store incredibly slow, try the alternate method of [Direct Download of Xcode](#direct-download-of-xcode).
 

@@ -521,7 +521,7 @@ The graphic below shows the steps to make sure your `fork` is up to date and to 
 
 #### Edit your Fastfile
 
-1. Type either CMD-C (Mac) or CNTL-C (PC) to reveal the find and replace dialog shown in the graphic below
+1. Type either ++command+"F"++ (Mac) or ++control+"F"++ (PC) to reveal the find and replace dialog shown in the graphic below
     * Copy the phrase indicated below and paste it into the find buffer, and then type into the replace buffer the build number you want to require (one more than indicated by your last error)
 
     ``` { .txt .copy }

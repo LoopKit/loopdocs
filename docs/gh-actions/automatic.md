@@ -84,7 +84,7 @@ If you choose not to have automatic building enabled, be sure the `GH_PAT` has `
 What if I decide I don't want the automatic building feature?
 
 * If you are using the released version of Loop, please leave automatic building running
-    * Please read [TestFlight Automatic Updates](gh-deploy.md#testflight-automatic-updates) on how to configure TestFlight so you choose when the updated app gets installed on your phone
+    * Please read [TestFlight Automatic Updates](gh-deploy.md#automatic-update-build-install) on how to configure TestFlight so you choose when the updated app gets installed on your phone
     * Otherwise, you may see the dreaded "Loop Beta has expired" message, have a Loop that won't open and not have a version ready to go in TestFlight that you can install within a few seconds
 
 * If you are taking a break from Loop and want to stop monthly Build emails, consider disabling actions for the `Build Loop` action for your app.

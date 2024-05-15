@@ -31,7 +31,7 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
 * Follow [Build the Loop App](../build/build-app.md){: target="_blank" } but with the following variation:
     * Skip the section on Developer Mode (that is only when building to a phone)
     * Download the code as directed
-    * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
+    * Choose to Sign Manually in the [Sign Targets](../build/build-app.md#sign-targets) section
     * Continue with the [Build Free Loop](../build/build-free-loop.md){: target="_blank" } page
         * Select a simulator (not your phone) when told to do so
         * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
@@ -56,7 +56,7 @@ When building to a real phone using a *Mac*, you must have access to a [Compatib
 * Follow [Build the Loop App](../build/build-app.md){: target="_blank" } using the Free Account instructions
     * If your phone is running iOS 16 or newer, you must enable Developer Mode
     * Download the code as directed
-    * Choose to Sign Manually in the [Signing Targets](../build/build-app.md#signing-targets) section
+    * Choose to Sign Manually in the [Sign Targets](../build/build-app.md#sign-targets) section
     * Continue with the [Build Free Loop](../build/build-free-loop.md){: target="_blank" } page
 * Once the App is on your phone
     * Follow the [set up the app](../loop-3/loop-3-overview.md) instructions on your phone but choose a simulated pump
