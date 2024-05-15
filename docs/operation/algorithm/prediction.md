@@ -48,7 +48,7 @@ The active insulin at any time is the product of original insulin delivered and 
 
 ![bg drop from 2 units](img/bg_drop.png)
 
-NOTE: ISF is also a function of time, as set in the ISF schedule in therapy settings or in accordance with any overrides. Loop uses the ISF that applied at the time of an insulin dose to predict the expected change in blood glucose due to the inslin effect, and sums the effect from all still-active doses.
+NOTE: ISF is also a function of time, as set in the ISF schedule in therapy settings or in accordance with any overrides. Loop uses the ISF that applied at the time of an insulin dose to predict the expected change in blood glucose due to the insulin effect, and sums the effect from all still-active doses.
 
 ### Expected Change in Blood Glucose
 
@@ -92,9 +92,9 @@ Lastly, the combined effect of bolus and basal insulin are visually represented 
 
 The insulin effect can be expressed mathematically:
 
-$$ \Delta BG_{I}[t] = ISF[t] \times IA[t] $$
+$$ \Delta BG_{I}[t] = ISF[t_{dose}] \times IA[t] $$
 
-where $ \Delta BG_{I} is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+where $ \Delta BG_{I} is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
 
 ## Carbohydrate Effect
 
