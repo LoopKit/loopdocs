@@ -6,6 +6,11 @@ As soon as your app builds on your phone, you are guided through the onboarding 
 
 This section explains how to enter and edit values with Loop 3.
 
+!!! info "Screens"
+    With version 3 of the *Loop* app, the primary button, with an associated information message, is visible at the bottom of even small screens for many actions. You may need to scroll to see intermediate rows.
+
+    There are other screens, like the Onboarding and Therapy Settings screens, where you are expected read all the provided information. Those screens require you to scroll to the bottom before being able to hit Continue or Save.
+
 * For more information on a specific therapy setting, tap on the information icon on the screen or review the detailed [Therapy Settings](therapy-settings.md) page in LoopDocs
 * Some screens only have one value for a given quantity
     * In that case, you can tap on and edit that value

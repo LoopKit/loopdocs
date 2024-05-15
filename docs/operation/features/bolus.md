@@ -19,12 +19,10 @@ The **Save** refers to saving the Carb entry or Carb edit that led to this scree
 
 You can review the carb information at the [Meal Entry](carbs.md) link.
 
-!!! warning "Carbs are Saved in Meal Bolus Screen"
-    Carbs are saved when the `Save and Bolus` or `Save without Bolusing` button is tapped in Meal Bolus Screen. When the button is tapped, carbs are saved even if the bolus does not go through to the pump.
+!!! Important "Avoid Double Entry of Carbohydrates"
+    Carbohydrates are saved when the `Save and Bolus` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
 
-    If you see a `Bolus Issue` notification (Bolus in progress, etc) after saving a carb entry, check the state of Loop carb entries.
-
-    Do **not** just add the carbs again.
+    If you see a notification after saving a carbohydrate entry, check carbohydrates entries in the *Loop* app. Do **not** just add the entry again without checking.
 
 ### Accept Recommendation
 
