@@ -12,8 +12,8 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 
 Loopers can choose from 3 pumps and a simulator:
 
-* Minimed 500/700 Series
-    * Note: this label does not mean any 5 or 7 series pump works with the app
+* Minimed
+    * Note: only some Minimed pumps are compatible
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
@@ -134,13 +134,16 @@ At this point - you should hit `Cancel` (upper right of screen) and review the [
 
 If you followed this page to add your Medtronic pump, you have completed the first three steps.  If not, you can prepare your pump now, then do those first three steps using Loop (follow the links). All other steps be completed before you Connect the Pump.
 
-1. Select [Minimed 500/700 Series](#add-pump) as your pump
+1. Select [Minimed](#add-pump) as your pump
 1. Select [Insulin Type](#insulin-type)
 1. Select [RileyLink](#select-rileylink)
 1. [Prepare Medtronic Pump](#prepare-medtronic-pump)
 1. [Connect Pump to Loop](#connect-pump-to-loop)
 
 ### Prepare Medtronic Pump
+
+!!! Tip "No Need to Set the Time"
+    If you just added a battery to a Medtronic pump you have not used for a while, the pump initiation screens require you to set the date and time for the pump. You can just accept the default values; when you connect the pump to the *Loop* app, the time and date are automatically set.
 
 !!! warning ""
 
