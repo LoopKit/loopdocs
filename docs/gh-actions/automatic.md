@@ -25,7 +25,7 @@ Note that the weekly and monthly `Build Loop` actions will continue, but the act
 * If you want to only build when an update has been found: set `SCHEDULED_BUILD` to false and either do not create `SCHEDULED_SYNC` or set it to true
     * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire requiring a manual build
 
-|`SCHEDULED _SYNC`|`SCHEDULED _BUILD`|Automatic Actions|
+| <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |
 |---|---|---|
 | `true` (or NA) | `true` (or NA) | keep-alive, weekly update check (auto update/build), monthly build with auto update|
 | `true` (or NA) | `false` | keep-alive, weekly update check with auto update, only builds if update detected|
