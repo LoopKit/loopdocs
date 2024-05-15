@@ -15,7 +15,7 @@ This error message is common when a pump has been stored for some time without a
 
 ## Batt Out Limit
 
-This error message "battery out of limits" has to do with the internal pump battery, not the AAA battery you replace.  The internal battery cannot be replaced, and unfortunately also has a finite lifespan.  The error message is more of an annoyance than a true problem.  You can try to change the AAA battery faster.  But, the worst-case scenario is that you'll have to re-enter the time and date when you get this message more often.  (Don't forget to use RileyLink to set the time after you get this message.)
+This error message "battery out of limits" has to do with the internal pump battery, not the AAA battery you replace.  The internal battery cannot be replaced, and unfortunately also has a finite lifespan.  The error message is more of an annoyance than a true problem.  You can try to change the AAA battery faster.  But, the worst-case scenario is that you are required to set the time and date with each battery change. You can save time by accepting the default values; the *Loop* app automatically sets the time and date.  (Don't forget to use RileyLink to set the time after you get this message.)
 
 ![img/batt-out.jpg](img/batt-out.jpg){width="400"}
 {align="center"}
