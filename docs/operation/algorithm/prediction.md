@@ -94,7 +94,7 @@ The insulin effect can be expressed mathematically:
 
 $$ \Delta BG_{I}[t] = ISF[t_{dose}] \times IA[t] $$
 
-where $ \Delta BG_{I} is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+where $ \Delta BG_{I}$ is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
 
 ## Carbohydrate Effect
 
@@ -120,7 +120,7 @@ The linear model above is modulated by an additional calculation that uses recen
 
 $$ ICE[t] = \Delta BG_{O}[t] - \Delta BG_{I}[t] $$
 
-where, ICE (mg/dL/5 min) is the insulin counteraction effect, \Delta BG_{O} is the observed change in blood glucose (mg/dL/5min) at time *t*, and \Delta BG_{I} is the modelled change in blood glucose due to insulin alone (i.e. the insulin effect as described above mg/dL/5min).
+where, ICE (mg/dL/5 min) is the insulin counteraction effect, $\Delta BG_{O}$ is the observed change in blood glucose (mg/dL/5min) at time *t*, and $\Delta BG_{I}$ is the modelled change in blood glucose due to insulin alone (i.e. the insulin effect as described above mg/dL/5min).
 
 Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or incorrectly configured insulin delivery settings (e.g., basal rate, ISF, etc.). However, since the effect of carbohydrates is often dominant (after insulin), Loop can still make useful ongoing adjustments to its carbohydrate model by assuming that the increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  
 
@@ -160,7 +160,7 @@ resulting in 1g of absorption being attributed to Meal 1 and 2g attributed to Me
 
 ### Minimum Carbohydrate Absorption Rate
 
-If the estimated carbohydrate absorption of a meal entry is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.
+If the dynamically-estimated carbohydrate absorption of a meal entry up to the current time *t* is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.
 
 ### Modeling Remaining Active Carbohydrates
 
@@ -246,7 +246,7 @@ As described in the momentum effect section, the momentum effect is blended with
 
 $$ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{RC}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) $$
 
-Lastly, the forecast or predicted blood glucose BG at time *t* is the current blood glucose BG plus the sum of all blood glucose effects BG over the time interval [t5, t]:
+Lastly, the forecast or predicted blood glucose BG at time *t* is the current blood glucose BG plus the sum of all blood glucose effects $\Delta BG$ over the time interval $[t_{5}, t]$:
 
 $$ \widehat{BG}[t] = BG[t_{o}] + \sum_{i=5}^{t} \Delta BG[t_{o+i}] $$
 
