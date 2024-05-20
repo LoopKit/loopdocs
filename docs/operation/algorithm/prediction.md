@@ -50,19 +50,25 @@ The active insulin at any time is the product of original insulin delivered and 
 
 NOTE: ISF is also a function of time, as set in the ISF schedule in therapy settings or in accordance with any overrides. Loop uses the ISF that applied at the time of an insulin dose to predict the expected change in blood glucose due to the insulin effect, and sums the effect from all still-active doses.
 
-### Expected Change in Blood Glucose
+### Expected Change in Blood Glucose for Each Loop Interval
 
 Lastly, taking the first derivative (i.e., the rate of change) of the cumulative drop in the blood glucose curve yields the expected change in blood glucose over the insulin activity duration. For each dose of insulin given, Loop calculates the expected discrete drop in blood glucose at each 5-minute period for the insulin activity duration, as shown below.
 
 ![rate of bg change](img/derivative.png)
 
-### Insulin Effect on Blood Glucose
+The insulin effect for a given dose can be expressed mathematically:
+
+$$ \Delta BG_{I}[t] = ISF[t_{dose}] \times IA[t] $$
+
+where $\Delta BG_{I}$ is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+
+### Insulin Effect on Blood Glucose Over Time
 
 For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, Loop would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below.
 
 ![two unit example](img/two_units.png)
 
-### Scheduled Basal Rates
+### Treatment of Scheduled Basal Rates
 
 In traditional basal/bolus pump therapy, basal rates are set to accommodate the user's endogenous glucose production (EGP) that causes blood glucose to rise. If a user's basal settings were exactly right in traditional pump therapy, the user would have perfectly flat blood glucose all day, all other factors being equal.
 
@@ -82,19 +88,17 @@ Here is a real-world example where Loop is setting many temporary basal rates ov
 
 ![Loop's temp basal chart over day](img/temp_basal_day.png)
 
-### Total Insulin Effect (combining boluses and temporary basal rates)
+### Total Active Insulin (combining boluses and temporary basal rates)
 
-Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. As demonstrated above, using the predicted active insulin Loop can predict the blood glucose drop over the next 6 hours.
+Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. 
 
-Lastly, the combined effect of bolus and basal insulin are visually represented for the user by Loop’s insulin charts:
+The active insulin taking into account boluses and variations from scheduled basal basal rates are visually represented for the user by Loop’s insulin charts:
 
 ![Loop's iob and temp basals](img/insulin_delivery_iob.jpg)
 
-The insulin effect can be expressed mathematically:
+### Total Insulin Effect (combining boluses and temporary basal rates)
 
-$$ \Delta BG_{I}[t] = ISF[t_{dose}] \times IA[t] $$
-
-where $\Delta BG_{I}$ is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+The sum of all doses' effects on blood glucose are shown for the user in the 'Insulin' curve in the predicted glucose screen.
 
 ## Carbohydrate Effect
 
