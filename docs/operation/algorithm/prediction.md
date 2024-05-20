@@ -58,7 +58,7 @@ Lastly, taking the first derivative (i.e., the rate of change) of the cumulative
 
 The insulin effect for a given dose can be expressed mathematically:
 
-$$ \Delta BG_{I}[t] = ISF[t_{dose}] \times IA[t] $$
+$$ \Delta BG_{dose}[t] = ISF[t_{dose}] \times IA_{dose}[t] $$
 
 where $\Delta BG_{I}$ is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
 
@@ -99,6 +99,10 @@ The active insulin taking into account boluses and variations from scheduled bas
 ### Total Insulin Effect (combining boluses and temporary basal rates)
 
 The sum of all doses' effects on blood glucose are shown for the user in the 'Insulin' curve in the predicted glucose screen.
+
+The total insulin effect at time *t* is the sum of effects from each active dose or temporary basal rate:
+
+$$ \Delta BG_{I}[t] = \sum_{dose=1}^{n} \Delta BG_{dose}[t] $$
 
 ## Carbohydrate Effect
 
