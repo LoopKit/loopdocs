@@ -116,7 +116,7 @@ There are four insulin models to choose from with Loop 2.x; Walsh, Rapid-Acting 
 
 **We highly recommend selecting one of the exponential insulin models for Loop 2.2.x (in other words, not the Walsh model).**
 
-A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (DIA) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click [here](https://seemycgm.com/2017/08/09/why-dia-matters/){: target="_blank" } to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your DIA will lead to insulin stacking and less than desired bolusing recommendations.
+A common new Loop user error is to select Walsh model in order to easily shorten their insulin duration (DIA) to one like they used prior to Looping. This almost invariably leads to insulin stacking. If you would like to read more about why the duration of insulin action is important in Loop vs how you've traditionally used it, please click [here](https://web.archive.org/web/20231130035027/https://seemycgm.com/2017/08/09/why-dia-matters/){: target="_blank" } to read a blog post about the subject. In summary, choosing Walsh curve just to shorten your DIA will lead to insulin stacking and less than desired bolusing recommendations.
 
 You can click on each model and see what each model's insulin activity curve looks like, active one selected in blue.
 
