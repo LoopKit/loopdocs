@@ -72,14 +72,12 @@ If you have already completed the One-Time Changes, skip ahead to [Build `Branch
 
 #### Transition to `dev`
 
-When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.x to `dev`, you will need to take some extra steps. 
+When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.3 to `dev`, you will need to take some extra steps. 
 
-You have a choice:
+We recommend people leave their default branch as `main` if they are building `dev` because they are impatient for version 3.4.0 to be released. If version 3.4.0 gets released before these docs are updated to reflect that - wait for the update of docs.
 
-* You can change your default branch to `dev`, see [Change Default `Branch`](#change-default-branch) and then your&nbsp;_<span translate="no">Loop</span>_&nbsp;app will be automatically updated and automatically built at least once a month
-    * Be sure to review the [Modify Automatic Building](automatic.md#modify-automatic-building) section
-* You can leave your default branch at main, but no automated updates will happen
-    * Running each action below requires you to select the `dev` branch in the drop-down menu
+* This is the safest choice but it does mean that each action below requires you to select the `dev` branch in the drop-down menu
+* When version 3.4.0 is released, you will be ready to just update your `main` branch and return to using released code
 
 Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your `fork` and are at the correct branch.
 
@@ -126,14 +124,20 @@ You must create certificates again to cover the new Identifier name and to provi
 
 If you want a branch to be the one you build all the time, you may choose to [Change Default `Branch`](#change-default-branch). This is not necessary except for special cases.
 
+> **We recommend people leave their default branch as `main` if they are building `dev` because they are impatient for version 3.4.0 to be released.**
+
 If you have one branch as default, for example main, and choose to build a different branch, there is an extra step when you `Build Loop`. Refer to step 4 in the graphic below. Use the branch dropdown menu to select the branch you want before hitting the green Run workflow button.
 
 ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
 {align="center"}
 
-!!! 
+## Automatic Update & Build
+
+The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.
 
 ## Change Default `Branch`
+
+> **We recommend people leave their default branch as `main` if they are building `dev` because they are impatient for version 3.4.0 to be released.**
 
 There can be several reasons why you would change your default branch.
 
@@ -171,7 +175,3 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
-
-## Automatic Update & Build
-
-The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.
