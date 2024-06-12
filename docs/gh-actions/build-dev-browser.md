@@ -56,6 +56,8 @@ Each step in the list below matches with the number in the graphic. In the top h
 
 ### Update `Branch`
 
+> **If you normally build released code, but decided to build the `dev branch` because you want the features and bug fixes found there, please do not update the fork for the `dev branch` without first finding out what has changed since your last build.**
+
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
 * Select the desired branch in the dropdown menu (this graphic shows `dev` branch)
