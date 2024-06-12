@@ -18,7 +18,7 @@
     * You should be following along with zulipchat when using the `dev branch`
     * Summary build updates can be found under the [One-Time Changes](#one-time-changes) section
 
-You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either `dev` or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
+You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either `dev` or main branch using the [GitHub First-Time](gh-first-time.md){: target="_blank" } instructions.
 
 The graphics on this page show the `dev` branch. If you want a different branch, just substitute that branch name for `dev`.
 
@@ -56,6 +56,8 @@ Each step in the list below matches with the number in the graphic. In the top h
 
 ### Update `Branch`
 
+> **If you normally build released code, but decided to build the `dev branch` because you want the features and bug fixes found there, please do not update the fork for the `dev branch` without first finding out what has changed since your last build.**
+
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
 * Select the desired branch in the dropdown menu (this graphic shows `dev` branch)
@@ -72,40 +74,40 @@ If you have already completed the One-Time Changes, skip ahead to [Build `Branch
 
 #### Transition to `dev`
 
-When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.x to `dev`, you will need to take some extra steps. 
+When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.3 to `dev`, you will need to take some extra steps. 
 
-You have a choice:
+**We recommend most users leave their default branch as `main`.**
 
-* You can change your default branch to `dev`, see [Change Default `Branch`](#change-default-branch) and then your&nbsp;_<span translate="no">Loop</span>_&nbsp;app will be automatically updated and automatically built at least once a month
-    * Be sure to review the [Modify Automatic Building](automatic.md#modify-automatic-building) section
-* You can leave your default branch at main, but no automated updates will happen
-    * Running each action below requires you to select the `dev` branch in the drop-down menu
+* This is the safest choice if you are choosing to build `dev branch` now because you want the bug fixes and features that are found in `dev`
+* When version 3.4.0 is released, most users will return to the building the `main branch`
+    * At that time, simply update your `main` branch and return to using released code
+* Each action below requires you to select the `dev` branch in the drop-down menu
 
-Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your `fork` and are at the correct branch.
+Here is a summary of the extra steps you will follow as you progress through this section.
 
-1. Confirm the status of your &nbsp;<span translate="no">*GitHub* Personal Access Token</span>
+1. Confirm the status of your&nbsp;<span translate="no">*GitHub* Personal Access Token</span>
     * It should be configured with permission scope of `repo, workflow` and to never expire
-    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token)
-1. Next, follow along in this section to perform these steps before you build
-    * Add and Update `New Indentifier`
-    * `Create Certificates`
+    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token){: target="_blank" }
+1. [Add and Update `New Identifier`](#add-and-update-new-identifier)
+1. [`Create Certificates`](#create-certificates)
+1. [`Build Loop`](#build-branch)
 
 #### Automatic Creation of `alive branch`
 
-!!! warning "What about the `alive branch`"
+The `alive branch` is created automatically when you run the `Build Loop` action using the `dev branch` (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.
+
+??? warning "I got an error regarding the `alive branch` (click to open/close)"
     * Sometimes you get an error about the `alive branch`
-    * It should be created for you automatically if you are building with the `dev branch` **and** you have `workflow` permission added to the `scope` for your *GitHub* `Personal Access Token`
-    * If necessary, delete the `alive branch` and run the `Build Loop` action again
+    * If you do get an error, delete the `alive branch` and run the `Build Loop` action again
+        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
 
 #### Add and Update New `Identifier`
 
 The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
 
-* You need to run Add Identifier - be sure that you run this for the `dev branch`
+* You need to run `Add Identifier` - be sure to select the `dev branch` when you run this action
 * Wait for it to succeed
 * Add the `App Group` to this one new Identifier
-
-All other identifiers should be already set up. If they are not, please go through the steps on the [Configure to Use Browser](gh-first-time.md) page to figure out what you are missing.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -115,25 +117,40 @@ All other identifiers should be already set up. If they are not, please go throu
 * Click on the "`LoopWidgetExtension`" identifier
 * Edit the App Group to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
 
-#### Create Certificates and Build
+??? tip "Other Identifiers (Click to Open/Close)"
+    All other identifiers should be already set up.
 
-You must create certificates again to cover the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
+    * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
+    * With the `dev branch`, only the App Group needs to be added; all other `Identifier` settings are automatically included.
 
-1. Run the Action for Create Certificates - be sure that you run this for the `dev branch`
-1. Run the Action for `Build Loop` (see [Build `Branch`](#build-branch))
+#### Create Certificates
+
+You must run the action `Create Certificates` again because the `Identifiers` were updated. Be sure that you run this for the `dev branch`
 
 ### Build `Branch`
 
-If you want a branch to be the one you build all the time, you may choose to [Change Default `Branch`](#change-default-branch). This is not necessary except for special cases.
+> **We recommend most users leave their default branch as `main`.**
 
-If you have one branch as default, for example main, and choose to build a different branch, there is an extra step when you `Build Loop`. Refer to step 4 in the graphic below. Use the branch dropdown menu to select the branch you want before hitting the green Run workflow button.
+If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Loop`. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button.
 
 ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
 {align="center"}
 
-!!! 
+#### Refresh, Do Not Repeat
+
+!!! tip "Hit Refresh"
+    After you tap the green Run workflow button, *GitHub* can be slow to update.
+
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
+
+## Automatic Update & Build
+
+The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.
 
 ## Change Default `Branch`
+
+> **We recommend most users leave their default branch as `main`.**
 
 There can be several reasons why you would change your default branch.
 
@@ -171,7 +188,3 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
-
-## Automatic Update & Build
-
-The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.

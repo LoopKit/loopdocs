@@ -1044,6 +1044,14 @@ You will now be checking the status for 3 more identifiers to ensure the `App Gr
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
 | `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
 
+Tap on the **IDENTIFIER** row:
+
+* In the `App Services` column, scroll down to the `App Groups` row
+    * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
+    * If the word `Configure` shows up, tap on it
+        * This opens the `App Group Assignment` screen
+        * Check the box by `Loop` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
+
 !!! tip "Double-check when finished with this step"
     When you think you have completed this step, double check to make sure all 4 `Identifiers` listed in the table have the `App Group` added.
 
