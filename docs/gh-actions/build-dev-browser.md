@@ -76,24 +76,23 @@ When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.3 to `dev`, 
 
 **We recommend most users leave their default branch as `main`.**
 
-* This is the safest choice if you are choosing to build `dev` now because you want the bug fixes and features that are found in `dev`
-* When version 3.4.0 is released, most users should return to the `main` branch
+* This is the safest choice if you are choosing to build `dev branch` now because you want the bug fixes and features that are found in `dev`
+* When version 3.4.0 is released, most users will return to the building the `main branch`
     * At that time, simply update your `main` branch and return to using released code
 * Each action below requires you to select the `dev` branch in the drop-down menu
 
-Here is a summary of the extra steps; each step has an associated link. This assumes you have already updated your `fork` and are at the correct branch.
+Here is a summary of the extra steps you will follow as you progress through this section.
 
-1. Confirm the status of your &nbsp;<span translate="no">*GitHub* Personal Access Token</span>
+1. Confirm the status of your&nbsp;<span translate="no">*GitHub* Personal Access Token</span>
     * It should be configured with permission scope of `repo, workflow` and to never expire
-    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token)
-1. Next, follow along in this section to perform these steps before you build
-    * Add and Update `New Identifier`
-    * `Create Certificates`
+    * You can check this using directions at [*GitHub* Token](gh-update.md#github-token){: target="_blank" }
+1. [Add and Update `New Identifier`](#add-and-update-new-identifier)
+1. [`Create Certificates`](#create-certificates)
+1. [`Build Loop`](#build-branch)
 
 #### Automatic Creation of `alive branch`
 
 The `alive branch` is created automatically when you run the `Build Loop` action using the `dev branch` (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.
-
 
 ??? warning "I got an error regarding the `alive branch` (click to open/close)"
     * Sometimes you get an error about the `alive branch`
@@ -122,12 +121,9 @@ The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the mor
     * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
     * With the `dev branch`, only the App Group needs to be added; all other `Identifier` settings are automatically included.
 
-#### Create Certificates and Build
+#### Create Certificates
 
-You must run the action `Create Certificates` again because the `Identifiers` were updated.
-
-1. Run the Action for `Create Certificates` - be sure that you run this for the `dev branch`
-1. Run the Action for `Build Loop` (see [Build `Branch`](#build-branch))
+You must run the action `Create Certificates` again because the `Identifiers` were updated. Be sure that you run this for the `dev branch`
 
 ### Build `Branch`
 
