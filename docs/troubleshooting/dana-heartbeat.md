@@ -84,7 +84,7 @@ You will get prompt to set a notification reminder.
 This reminder will be sent to you if you haven't reconnected the pump within the given time.
 This feature is fully optional, but is recommended.
 
-![Dana continuous disconnect](./img/dana-disconnect.png){width="250"}
+![Dana continuous disconnect](./img/dana-disconnect.png){width="400"}
 {align="center"}
 
 ### How to enable Continuous bluetooth mode
