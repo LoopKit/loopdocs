@@ -211,6 +211,7 @@ nav:
     - 'Omnipod Faults': 'troubleshooting/omnipod-faults.md'
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
+    - 'Dana heartbeat': 'troubleshooting/dana-heartbeat.md'
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Releases': 'version/releases.md'

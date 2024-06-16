@@ -302,59 +302,12 @@ Sadly, only the Dana distributors know how to enable this feature at the moment.
 But we do know you need to set your alarm to sound.
 You can do this via: "Settings" -> "User options" -> "4. Alarm"
 
-### (Optional) Enable background sound
+### (Optional) Check if you need a heartbeat
 
-An extra feature available for the Dana pumps is the background sound.
-This feature was developed in order to keep the *Loop* app running in the background.
-
-Normally, your CGM will have an active Bluetooth connection, which prevent the *Loop* app from being put into a suspended state.
-But when you are planning on using a CGM, like [NightScout remote CGM](./add-cgm.md#nightscout-remote-cgm), [Dexcom Share](./add-cgm.md#dexcom-share-as-a-cgm), etc, you rely on a active internet connection, and not on an active Bluetooth connection.
-
-The Dana pump cannot provide a Bluetooth heartbeat, because it will block the pump's UI.
-This will cause issue with regards to battery drain of the pump, but also when you want to replace the reservoir or cannula.
-For this reason, the background sound feature is made available.
-
-!!! warning "Only activate this if truly needed"
-    Enabling this feature will put a big load on your iPhone's battery.
-    Therefore, only use it if your sensor doesn't provide a heartbeat, i.e. the NightScout remote CGM, Dexcom Share, etc
-
-In order to activate, follow these steps:
-
-1. Activate the [UIBackgroundMode - audio](https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes):
-    * When [building with Mac](../build/overview.md), go to the LoopWorkspace Xcode project and select the Loop project.
-    Go to "Targets" -> "Loop" -> "Signing & Capabilities" and scroll down to "Background modes".
-    Enable the checkbox for "Audio, AirPlay, and Picture in Picture".
-    Then rebuild the app and go to step 2.
-    ![Xcode background sound example](./img/background-sound-xcode.png)
-
-    * When [building with Browser](../gh-actions/gh-overview.md), you will need to make a change to the GitHub Actions workflow.
-    Go to your LoopWorkspace fork on GitHub and press `.` on your keyboard.
-    You will be redirected to a `github.dev` page with the code of your LoopWorkspace.
-    Now go to ".github" -> "workflows" -> "build_loop.yml".
-    Scroll down till you see the `- name: Fastlane Build & Archive` command.
-    Just before this command, add the following to this script ([example](https://github.com/bastiaanv/LoopWorkspace/commit/67a1e42b9b771550afc14adf914ff98c37d96e67)):
-
-    ```
-    - name: Update entitlement background sound
-      run: sed -i -e 's/<string>bluetooth-central<\/string>/<string>bluetooth-central<\/string><string>audio<\/string>/g' Loop/Loop/Info.plist
-    ```
-
-    * To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
-    Enter a message and press the green "Commit & Push"-button.
-    By pressing this button, GitHub will automatically make a new browser build for you and push it to TestFlight
-    ![Github web ide example](./img/background-sound-web-ide.png)
-
-2. After you have done the onboarding of the pump (see steps above), go to the pump settings.
-    Scroll down the "Pump name" and long-press this row.
-    A modal should pop-up with the question, whether you want to toggle Silent tones.
-    
-    In order to activate this feature, the modal should say something like: `Yes, Enable silent tones`.
-    When it says: `Yes, Disable silent tones`, it will disable the background sounds.
-    ![Loop example background sound](./img/background-sound-loop.jpeg){width="250"}
-    {align="center"}
-
-3. Done!
-    Every time you put the *Loop* app in the background, it will play a toneless sound, which prevents it from suspending the *Loop* app
+Most CGM provide a live Bluetooth connection, which prevents the *Loop* app from going to a suspended state.
+When the *Loop* app is in a suspended state, it is not possible to run the algorithm in the background.
+DanaKit doesn't provide a heartbeat by default.
+Therefore, it is important to check if your CGM provides a heartbeat, and if it doesn't to enable it [see documentation](../troubleshooting/dana-heartbeat.md).
 
 
 ## Change Pump Type
