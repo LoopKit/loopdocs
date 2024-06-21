@@ -902,12 +902,12 @@ Please read carefully to avoid confusion.
 
 ### :material-dots-triangle: Substep 7.1 for Step 7
 
-> Next section, Create `App Group`, is :material-dots-triangle: Substep 1 out of 2 for Step 7. This is only required one time and can be skipped if you previously built this app with Xcode.
+> Next section, Create `App Group`, is :material-dots-triangle: Substep 1 out of 2 for Step 7. This is only required one time.
 
 ### Create `App Group`
 
 ??? abstract "Section Summary (click to open/close)"
-    [<span class="loop-bigger">:material-skip-forward:</span>](#previous-xcode-builders) If you have already built the *Loop* app via Xcode using this *Apple* ID, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+    [<span class="loop-bigger">:material-skip-forward:</span>](#optional-app-group-description-modification) If you have already built the *Loop* app via Xcode using this *Apple* ID, skip ahead to [Optional: App Group Description Modification](#optional-app-group-description-modification).
 
     1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
     1. For Description, use "Loop App Group".
@@ -916,7 +916,7 @@ Please read carefully to avoid confusion.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#add-app-group-to-identifiers) To skip the detailed instructions, click on [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
 
-The `Loop` *App Group* already exists if you previously built the *Loop* app using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
+The `Loop` *App Group* already exists if you previously built the *Loop* app using *Xcode* with this *Apple Developer ID*. In that case, skip ahead to [Optional: App Group Description Modification](#optional-app-group-description-modification) to update the description.
 
 If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
@@ -926,6 +926,20 @@ If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you nee
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
     * A mistake here means you will not be able to build the *Loop* app until you fix it
 1. Click `Continue` and then `Register`.
+
+### Optional: App Group Description Modification
+
+> This step is not required, but if you previously built using a Mac with Xcode, it is a good idea to update the **NAME** associated with the **IDENTIFIER** for the Loop App Group. Then what you see on your display will match the directions as you continue.
+
+_Referring to the link and table below, tap on the **IDENTIFIER** for the `Loop App Group`, edit the Description to match the **NAME**, then Save the change._
+
+* [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup){: target="_blank" }
+
+Notice in the table below that the XCode version of the **NAME** for the `App Group` is the same as the **IDENTIFIER** but with the `.` replaced with a space.
+
+| NAME | XCode version | IDENTIFIER |
+|:--|:--|:--|
+| Loop App Group | group com TEAMID loopkit LoopGroup| group.com.TEAMID.loopkit.LoopGroup |
 
 ### Identifiers for the *Loop* app (3.2.x and before)
 
@@ -941,20 +955,30 @@ If you never built using *Xcode*, then after the <code>Add Identifiers</code> *A
 
 #### Previous Xcode Builders
 
-Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
+If you built previously using a Mac with Xcode, you may see the XCode version in your **NAME** column of the table below.
 
-Because you built the *Loop* app using *Xcode*, then the **`NAME`** associated with at least the `Loop identifier` will appear as `XC com.TEAMID.loopkit.Loop` under the **`NAME`** column. Ignore the **`NAME`** column and key off what you see under the **`IDENTIFIER`** column of the table. Only the six listed in the table below need to appear when building `Loop 3`.
+- The name starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for `Loop` is shown in detail
 
 #### Table with Name and Identifier for `Loop 3`
 
-| `NAME` | `IDENTIFIER` |
-|-------|------------|
-| `Loop` | `com.TEAMID.loopkit.Loop` |
-| `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
-| `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
-| `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
-| `WatchApp` | `com.TEAMID.loopkit.Loop.LoopWatch` |
-| `WatchAppExtension` | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
+#### Optional: Identifier Description Modification
+
+> This step is not required, but if you previously built using a Mac with Xcode, it is a good idea to update the **NAME** associated with each **IDENTIFIER** to match the table below. Then what you see on your display for the `App IDs` will match the directions as you continue.
+
+_Referring to the table below, tap on each **IDENTIFIER** that has a different **NAME**, edit the Description to match the **NAME**, then Save the change for that identifier._
+
+* Optional Organization Step - if you want, you can add the word `Loop` to the beginning of any **NAME** that starts with another word
+    * If you later build an additional app, it can be convenient to have the `Loop` identifiers be in adjacent rows (they are displayed alphabetically by **NAME**)
+    * For example, modify `WatchApp` to `Loop WatchApp` and `WatchAppExtension` to `Loop WatchAppExtension`
+
+| NAME | XCode version | IDENTIFIER |
+|:--|:--|:--|
+| `Loop` | `XC com TEAMID loopkit Loop`| `com.TEAMID.loopkit.Loop` |
+| `Loop Intent Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
+| `Loop Status Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.statuswidget` |
+| `Small Status Widget` | XC Identifier | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
+| `WatchApp` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch` |
+| `WatchAppExtension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
 !!! warning "Loop dev Builders"
     The name and identifier for "`Small Status Widget`" has been renamed to "`Loop Widget Extension`". This only affects those using the dev branch until the next release. At that time, this table will be updated.
