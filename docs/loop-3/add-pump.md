@@ -227,8 +227,9 @@ The Medtronic status and commands available are shown in the [Pump Setting](medt
     All versions of the Dana-i are supported at the moment!
 
 !!! warning "Check your DanaRS version before starting"
-    Only the DanaRS-v3 is supported, every other version is not supported or is untested (The korean versions are untested for example).
-    To check your DanaRS version, please go to "Analyze" -> "Model information". The version should be at least `xxx-3.0.0`
+    Only the DanaRS firmware v3.0 or higher is supported, every other version is not supported or is untested (The korean versions are untested for example).
+    To check your DanaRS version, please go to "Analyze" -> "Model information". The version should be at least `xxx-3.0.0`.
+    NOTE: If you are running v1.x, it is possible to [upgrade your firmware](../troubleshooting/danars-v1-upgrade.md)
 
     ![DanaRS-v3 version menu](img/danars-v3-version.jpeg){width="450"}
     {align="center"}

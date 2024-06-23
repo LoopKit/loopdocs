@@ -198,12 +198,13 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
 
-### DanaRS-v3
+### DanaRS
 
 The DanaRS is release in 2002, with firmware version v1. However, firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
+For those who are running an older version, [there is a way to upgrade the firmware](../troubleshooting/danars-v1-upgrade.md)
 
-`Loop 3.5.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the Dana-i.
+`Loop 3.5.0` and later works with the Dana-i. If your version of the *Loop* app is 3.3.9 or earlier, you cannot use the DanaRS.
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
