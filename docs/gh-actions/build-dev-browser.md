@@ -18,7 +18,7 @@
     * You should be following along with zulipchat when using the `dev branch`
     * Summary build updates can be found under the [One-Time Changes](#one-time-changes) section
 
-You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either `dev` or main branch using the [GitHub First-Time](gh-first-time.md) instructions.
+You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either `dev` or main branch using the [GitHub First-Time](gh-first-time.md){: target="_blank" } instructions.
 
 The graphics on this page show the `dev` branch. If you want a different branch, just substitute that branch name for `dev`.
 
@@ -56,6 +56,8 @@ Each step in the list below matches with the number in the graphic. In the top h
 
 ### Update `Branch`
 
+> **If you normally build released code, but decided to build the `dev branch` because you want the features and bug fixes found there, please do not update the fork for the `dev branch` without first finding out what has changed since your last build.**
+
 Tap the `Code` button (upper left) and ensure this branch in your `fork` is up to date.
 
 * Select the desired branch in the dropdown menu (this graphic shows `dev` branch)
@@ -72,16 +74,28 @@ With the release of version 3.4, no one-time changes are required. This assumes 
 
 ### Build `Branch`
 
-If you want a branch to be the one you build all the time, you may choose to [Change Default `Branch`](#change-default-branch). This is not necessary except for special cases.
+> **We recommend most users leave their default branch as `main`.**
 
-If you have one branch as default, for example main, and choose to build a different branch, there is an extra step when you `Build Loop`. Refer to step 4 in the graphic below. Use the branch dropdown menu to select the branch you want before hitting the green Run workflow button.
+If you have one branch as default, for example `main`, and choose to build a different branch, there is an extra step when you `Build Loop`. In addition to the normal steps 1, 2 and 3 in the graphic below, you must also do the (optional) step. Select the `dev branch` in the `branch dropdown` menu before continuing to step 4 and tapping on the green Run workflow button.
 
 ![build loop using github actions](img/action-04-build-loop.svg){width="700"}
 {align="center"}
 
-!!! 
+#### Refresh, Do Not Repeat
+
+!!! tip "Hit Refresh"
+    After you tap the green Run workflow button, *GitHub* can be slow to update.
+
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
+
+## Automatic Update & Build
+
+The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.
 
 ## Change Default `Branch`
+
+> **We recommend most users leave their default branch as `main`.**
 
 There can be several reasons why you would change your default branch.
 
