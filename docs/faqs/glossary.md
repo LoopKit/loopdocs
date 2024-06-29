@@ -76,6 +76,8 @@ When Google Translate is selected:
 
 **<span translate="no">dynos</span>**&nbsp; (dynos): used to reboot a Nightscout Site
 
+**<span translate="no">dynamic carb absorption</span>**&nbsp; (dynamic carb absorption): Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
+
 **<span translate="no">EmaLink</span>**&nbsp; (EmaLink): radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
 **<span translate="no">EGP</span>**&nbsp; (EGP): Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)
@@ -114,7 +116,7 @@ When Google Translate is selected:
 
 **<span translate="no">HUD</span>**&nbsp; (HUD): Heads-Up Display at top of Loop main screen, phone in portrait mode
 
-**<span translate="no">ICE</span>**&nbsp; (ICE): Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose
+**<span translate="no">ICE</span>**&nbsp; (ICE): Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.
 
 **<span translate="no">Identifiers</span>**&nbsp; (Identifiers): names of modules found on your Apple Developer Identifiers page that are required for GitHub build method
 

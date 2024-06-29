@@ -16,7 +16,7 @@ Consider the possible effects that counteract insulin (in other words, make gluc
 
 As we all know, this list can be long; but on "normal" days, food is the primary reason glucose levels go up. By "normal", we mean basal rates and settings are close to correct, illness is not an issue, and the site is good. We depend on the Loop dynamic carb absorption and other prediction effects to keep glucose in our desired range.
 
-When you have carbs on board, Loop _always_ assigns _ICE_ to carbs, not just on a normal day. 
+When you have carbs on board, Loop _always_ assigns positive _ICE_ to carbs, not just on a normal day. 
 This is how _Loop_ looks at it. 
 Keep in mind that in situations where you have other positive _ICE_, like insulin resistance, and carbs on board, _Loop_ will attribute all the positive _ICE_ to carbs until all the entered carbs are considered absorbed. 
 At that point, _ICE_ will start driving _RC_ upward.
@@ -27,15 +27,15 @@ At that point, _ICE_ will start driving _RC_ upward.
 
  The graph at the top of your "Carbohydrates" details page shows the effect *Loop* expects carbs to have on your glucose (gray bars) compared to the actual effect, or *ICE*. The units on the graph are mg/dL/5-min or mmol/L/5-min
 
-- ⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that *Loop* is currently modeling.  
-- 🟩: As a meal is tracked by *Loop*, you'll see green bars of observed carb absorption (including *ICE*).
+- ⬜️: The gray bars represent the effects of carbohydrates on your blood glucose that *Loop* is currently modeling. This will be a combination of dynamically-estimated carb absorption (where meals are absorbing faster than Loop's conservative estimate based on your carb entries) and static absorption based on Loop's conservative, minimum-absorption-rate estimate.  
+- 🟩: The green bars represent the observed change in blood glucose compared to Loop's prediction based on insulin alone (or *ICE*).
 
     !!! info "How *Loop* thinks about carbs" 
         [*ICE*](#insulin-counteraction-effects) is just one important component of how *Loop* thinks about carbs. The other parts are the user-entered data (amount of carbs, and absorption speed).
         
-        Sometimes *Loop* falls back to a default absorption model when *ICE* is less than the minimum absorption rate.
+        *Loop* falls back to a default absorption model when the total *ICE* for a meal up to the current time is less than the minimum absorption rate.
         
-        In the graphic below, early in the meal timeline, the green bars are below the grey bars. _Loop_ uses the minimum absorption instead of estimating absorption from glucose change. For example, if a pre-bolus was "perfect" leading to a constant glucose after a meal, the ideal grey bars will be used by _Loop_ throughout. 
+        In the graphic below, early in the meal timeline, the green bars are below the grey bars. _Loop_ uses the minimum absorption instead of estimating absorption from observed glucose change. For example, if you overestimated the amount of carbs in a meal, the meal absorbs slower than you estimated, or exercise leads to less insulin needs than normal, the grey bars predicted at the start of a meal will be used by _Loop_ throughout. 
 
     ![image of ice screen](img/ice-meal-example.svg){width="500"}
     {align="center"}
