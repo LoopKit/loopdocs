@@ -50,7 +50,7 @@ Under ordinary circumstance, updating the iOS on your phone does not require a r
 
 [Loop Releases](../version/releases.md#loop-releases) provides information about current and previous Loop versions.
 
-Updating to iOS 16 (watchOS 9 or newer) requires enabling [Developer Mode](build-app.md#developer-mode/). Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is **not** required.
+Updating to iOS 16 (watchOS 9 or newer) requires enabling [Developer Mode](build-app.md#developer-mode). Your existing app will not open until you take this step. Once enabled, the app opens again. A rebuild is **not** required.
 
 ### "Loop" is No Longer Available
 
