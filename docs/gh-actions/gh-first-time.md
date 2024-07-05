@@ -944,8 +944,6 @@ If you get an error saying `An Application Group with Identifier 'group.com.TEAM
     * In the Description box in the upper left, edit the Description to match the **NAME**
     * Tap Save in the upper right and confirm the the change for that identifier._
 
-    Click to display the [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup){: target="_blank" }
-
     Notice in the table below that the XCode version of the **NAME** for the `App Group` is the same as the **IDENTIFIER** but with the `.` replaced with a space.
 
     | NAME | XCode version | IDENTIFIER |
