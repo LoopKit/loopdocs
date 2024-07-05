@@ -212,7 +212,6 @@ nav:
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
     - 'Dana heartbeat': 'troubleshooting/dana-heartbeat.md'
-    - 'DanaRS-v1 upgrade': 'troubleshooting/danars-v1-upgrade.md'
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Releases': 'version/releases.md'

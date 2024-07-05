@@ -18,7 +18,7 @@ Loopers can choose from 4 pumps and a simulator:
 * Omnipod
 * Omnipod DASH
 * Dana-i / DanaRS-v3
-    * Note: DanaRS-v1 or any Dana korean versions are not supported (or is untested)
+    * Note: DanaRS-v1 or any Dana korean versions are not supported
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -229,7 +229,6 @@ The Medtronic status and commands available are shown in the [Pump Setting](medt
 !!! warning "Check your DanaRS version before starting"
     Only the DanaRS firmware v3.0 or higher is supported, every other version is not supported or is untested (The korean versions are untested for example).
     To check your DanaRS version, please go to "Analyze" -> "Model information". The version should be at least `xxx-3.0.0`.
-    NOTE: If you are running v1.x, it is possible to [upgrade your firmware](../troubleshooting/danars-v1-upgrade.md)
 
     ![DanaRS-v3 version menu](img/danars-v3-version.jpeg){width="450"}
     {align="center"}
