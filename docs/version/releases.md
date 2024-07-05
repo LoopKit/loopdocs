@@ -37,9 +37,9 @@ These features are added:
 
 * [*Libre*](../loop-3/add-cgm.md#libre){: target="_blank" }  support in the *Loop* app
 * [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" } for easy entry of common meals
-* [Algorithm Experiments](../loop-3/settings.md#algorithm-experiments){: target="_blank" }:
-    * [Glucose Based Partial Application](../loop-3/settings.md#glucose-based-partial-application-gbpa){: target="_blank" } for Automatic Bolus corrections
-    * [Integral Retrospective Correction](../loop-3/settings.md#integral-retrospective-correction-irc){: target="_blank" }
+* [Algorithm Experiments](../loop-3/features.md#algorithm-experiments){: target="_blank" }:
+    * [Glucose Based Partial Application](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" } for Automatic Bolus corrections
+    * [Integral Retrospective Correction](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
 * In app warning when a *TestFlight* install build is about to expire
 * Omnipod and Nighscout Users: automatic update of CAGE to Nightscout when pod is changed
 * Dexcom and Nighscout Users: automatic update of SAGE to Nightscout when Dexcom sensor is changed
@@ -50,7 +50,6 @@ These features are added:
 * Browser Builders:
     * improved error messages and automatic rebuild of app to *TestFlight*
     * automatic addition of all services except App Group to the App Service for Identifiers
-
 
 #### Summary of Bug Fixes
 

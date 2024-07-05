@@ -42,23 +42,11 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 The testflight expiration data is provided, instead of the profile expiration data, when the app was built using GitHub Browser Build method. When the app was built with Mac-Xcode, the date shown continues to be the profile experation date.
 
-See the [App Profile or TestFlight](../../loop-3/settings.md#app-profile-or-testflight) section at the bottom of the Loop Settings screen.
+See the [TestFlight or App Profile](../../loop-3/settings.md#testflight-or-app-profile) section at the bottom of the Loop Settings screen.
 
 #### For Loop 3.2.x and newer versions
 
-The provisioning profile expiration date is found in the [App Profile](../../loop-3/settings.md#app-profile-or-testflight) section at the bottom of the Loop Settings screen. This is useful for Mac-Xcode built apps, but may be misleading for GitHub Broswer build method.
-
-#### For Loop 2.2.5 through Loop 3.0
-
-If you want to see the expiration date at any time:
-
-* Loop 2.2.5 through 2.2.9: tap on Settings, then tap on Issue Report
-* Loop 3.x.x: tap on Settings, scroll down and tap on Support, then tap on Issue Report
-
-The expiration date is near the top of the report (to the right of `profileExpiration`).  If you don't see that, time to rebuild to get that feature. Once you've viewed the expiration date, tap Settings to back out of the Issue Report display. The time uses UTC, so adjust to your time zone if you procrastinated until the last minute.
-
-![Issue report displays Loop App expiration date](img/loop-app-expiration-issue-report.jpeg){width="250"}
-{align="center"}
+The provisioning profile expiration date is found in the that settings section at the bottom of the Loop Settings screen. This is useful for Mac-Xcode built apps, but may be misleading for GitHub Broswer build method.
 
 ## Omnipod Beeps
 

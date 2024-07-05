@@ -396,20 +396,14 @@ Copy the words on the line below and paste them into the search function for you
 
 If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your *Loop* App Group with one or more identifiers.
 
-For example, if you see:
-
-`error: Provisioning profile "match AppStore com.***.loopkit.Loop" doesn't include the com.apple.developer.usernotifications.time-sensitive entitlement.`
-
-Go back to [First-Time: Add or Review Configuration for Loop Identifier](gh-first-time.md#add-or-review-configuration-for-loop-identifier) and make sure you enabled the `Time-Sensitive notification` for Loop.
-
-
 For example, you might see:
 
-* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.SmallStatusWidget`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension`
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
 
-Return to [Add App Group to Other Identifiers](gh-first-time.md#add-app-group-to-identifiers) and fix the missing items.
+Return to [First-Time: Identifiers for the `Loop` app](gh-first-time.md#identifiers-for-the-loop-app) and make sure you followed all the steps.
 
 You must create certificates again before you can build *Loop*:
 
@@ -455,7 +449,7 @@ At this point, get your correct `TEAMID`, fix your Secrets file to have the corr
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
-Use the [Examine the Error](#examine-the-error) instructions to find your error message.
+Use the [Examine Annotation](#examine-annotation) instructions to find your error message.
 
 ### `ERROR: Asset validation failed`
 
