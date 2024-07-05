@@ -126,7 +126,7 @@ Apple updates its License Agreement for the Developer Program frequently. You ne
 
 ## Ready to Build Loop
 
-As long as there are no errors, you are now ready to proceed to [Build the Loop App: Developer Mode](build-app.md#developer-mode/)
+As long as there are no errors, you are now ready to proceed to [Build the Loop App: Developer Mode](build-app.md#developer-mode)
 
 After building the new app, you may choose to return to this page and follow the instructions to [Delete Old Copies](#delete-old-copies). This is optional, but cleans up space on your computer.
 
