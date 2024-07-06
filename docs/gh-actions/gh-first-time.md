@@ -408,7 +408,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
     ![generate api key dialog box](img/dev-generate-key.png){width="500"}
     {align="center"}
 
-    * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access drop-down menu
+    * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access dropdown menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
 
 ### :material-dots-triangle: Substep 2.3 for Step 2
@@ -529,7 +529,7 @@ You must be logged into your *GitHub* account before starting this step. If you 
         * Most Looper will use the `classic Token`
             * If you are a developer who needs to use fine-grained `tokens`, that is fine
         * Edit the note box to be `FastLane Access Token`
-    * The default Expiration time is 30 days - but you should select `No expiration` (use the drop-down menu to select)
+    * The default Expiration time is 30 days - but you should select `No expiration` (use the dropdown menu to select)
         * *GitHub* will show a yellow warning when you do this
         * It is ok to ignore the warning
     * Add a check beside the `workflow` permission scope
@@ -700,9 +700,9 @@ Carefully compare your screen to the graphic below paying attention to the highl
 Log into *GitHub*.
 
 1. Return to your forked copy of <code>LoopWorkspace</code>
-    * Click on your personal icon at the upper right to see the drop-down menu and select "`Your repositories`"
+    * Click on your personal icon at the upper right to see the dropdown menu and select "`Your repositories`"
 
-    ![drop-down-menu](img/gh-quick-access.png){width="200"}
+    ![dropdown-menu](img/gh-quick-access.png){width="200"}
     {align="center"}
 
 1. You should see (at least) 2 repositories: `Match-Secrets` and <code>LoopWorkspace</code>
@@ -831,7 +831,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on 1. <code>Validate Secrets</code>
-1. On the right side, click `Run Workflow` to show a drop-down menu
+1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (typically this is `main`)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says `Run workflow`.
@@ -869,7 +869,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on 2. <code>Add Identifiers</code>
-1. On the right side, click `Run Workflow` to show a drop-down menu
+1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (typically this is `main`)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says `Run workflow`.
@@ -1136,7 +1136,7 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
 1. Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
     * If you have never added an app to *App Store Connect*, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
-    *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the *Bundle ID* drop-down, this means you need to follow [Find My Loop](#find-my-loop).
+    *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the *Bundle ID* dropdown, this means you need to follow [Find My Loop](#find-my-loop).
 
     ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
     {align="center"}
@@ -1248,7 +1248,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
 1. On the left side, click on "`Create Certificates`"
-1. On the right side, click "`Run Workflow`" to show a drop-down menu
+1. On the right side, click "`Run Workflow`" to show a dropdown menu
     * You will see your default branch (typically `main`)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "`Run workflow`".
@@ -1288,7 +1288,7 @@ Refer to the graphic below for the first four steps:
 
 1. Click on the "`Actions`" tab of your <code>LoopWorkspace</code> repository.
 1. On the left side, click on "4. `Build Loop`".
-1. On the right side, click "`Run Workflow`" to show a drop-down menu
+1. On the right side, click "`Run Workflow`" to show a dropdown menu
     * You will see your default branch (typically `main`)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "`Run workflow`".
@@ -1442,7 +1442,6 @@ If coming here from the Errors with Browser page because you enter the wrong `TE
 If you were just trying to clean up the identifiers, then follow these steps:
 
 * Run Action: [Add Identifiers](#add-identifiers) to add Identifiers with the documented short names
-* If you did not complete the [Add or Review Configuration for Loop Identifier](#add-or-review-configuration-for-loop-identifier) step, do it now
-* Complete the [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
+* If you did not complete the [Add `App Group` to Identifiers](#add-app-group-to-identifiers)
 * If you did not complete the [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect) step, do it now
 * Continue with [Create Certificates](#create-certificates) and then [Build the *Loop* App](#build-the-loop-app)

@@ -77,7 +77,7 @@ On the Caregivers device (iPhone or Mac):
 ### Using Safari
 
 * When you use Safari to view your Looper's *Nightscout* site and choose the Careportal (:material-plus-thick:)
-    * Choose a remote command from the Event Type drop-down menu (remote commands are at the bottom of the list)
+    * Choose a remote command from the Event Type dropdown menu (remote commands are at the bottom of the list)
     * The OTP will be offered to you for every row - ignore it when entering Carb amount or Absorption Time, or Bolus Amount
     * Select it for the OTP row
     * Note that OTP is not required for Remote Overrides - leave that row blank
