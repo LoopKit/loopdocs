@@ -6,16 +6,18 @@ on:
   # Remark: Next 1 line requires manual action, Click on action tab, then publish
   # workflow_dispatch
   # Remark: Next 3 lines triggers the workflow on push events for the main branch
+  # For wip/release_3.4 ONLY - do not include in the 3.4 release version
   push:
     branches:
-      - main
+      - wip/release_3.4
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: github.repository_owner == 'LoopKit'
+    # For wip/release_3.4 ONLY - do not include in the 3.4 release version
+    if: github.repository_owner == 'marionbarker'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
