@@ -3579,7 +3579,7 @@
 <p>Look in this section for one-time changes for building <code>dev</code> with a browser that require special, one-time actions. </p>
 <p>If you have already completed the One-Time Changes, skip ahead to <a href="#build-branch">Build <code>Branch</code></a>.</p>
 <h4 id="transition-to-dev">Transition to <code>dev</code><a class="headerlink" href="#transition-to-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>When updating from&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;3.2.3 to <code>dev</code>, you will need to take some extra steps. </p>
+<p>When updating from&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;3.2.3 to <code>dev</code> (version 3.3.0), you will need to take some extra steps. </p>
 <p><strong>We recommend most users leave their default <abbr title="version of code within a single repository or workspace repository">branch</abbr> as <code>main</code>.</strong></p>
 <ul>
 <li>This is the safest choice if you are choosing to build <code>dev branch</code> now because you want the bug fixes and features that are found in <code>dev</code></li>
@@ -3587,37 +3587,51 @@
 <li>At that time, simply update your <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and return to using released code</li>
 </ul>
 </li>
-<li>Each action below requires you to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the drop-down menu</li>
+<li>Each action below requires you to select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu</li>
 </ul>
 <p>Here is a summary of the extra steps you will follow as you progress through this section.</p>
 <ol>
-<li>Confirm the status of your&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</span><ul>
-<li>It should be configured with permission scope of <code>repo, workflow</code> and to never expire</li>
-<li>You can check this using directions at <a href="../gh-update/#github-token" target="_blank"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token</a></li>
-</ul>
-</li>
 <li><a href="#add-and-update-new-identifier">Add and Update <code>New Identifier</code></a></li>
 <li><a href="#create-certificates"><code>Create Certificates</code></a></li>
 <li><a href="#build-branch"><code>Build Loop</code></a></li>
 </ol>
-<h4 id="automatic-creation-of-alive-branch">Automatic Creation of <code>alive branch</code><a class="headerlink" href="#automatic-creation-of-alive-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <code>alive branch</code> is created automatically when you run the <code>Build Loop</code> action using the <code>dev branch</code> (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.</p>
-<details class="warning">
-<summary>I got an error regarding the <code>alive branch</code> (click to open/close)</summary>
-<ul>
-<li>Sometimes you get an error about the <code>alive branch</code></li>
-<li>If you do get an error, delete the <code>alive branch</code> and run the <code>Build Loop</code> action again<ul>
-<li>Use this <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch" target="_blank"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> link</a> or ask for help when deleting a <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-</ul>
-</li>
-</ul>
-</details>
 <h4 id="add-and-update-new-identifier">Add and Update New <code>Identifier</code><a class="headerlink" href="#add-and-update-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>The <code>bundle ID</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>".</p>
 <ul>
 <li>You need to run <code>Add Identifier</code> - be sure to select the <code>dev branch</code> when you run this action</li>
 <li>Wait for it to succeed</li>
-<li>Add the <code>App Group</code> to this one new Identifier</li>
+</ul>
+<details class="tip">
+<summary>For detailed instructions (Click to open/close)</summary>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the <code>Actions</code> tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on 2. <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
+<li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
+<li>You should select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu near the word <code>Optional</code> in the graphic</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says <code>Run workflow</code>.</p>
+<p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
+</li>
+</ol>
+<p>The <code>Add Identifiers</code> &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
+<ul>
+<li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
+<li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
+<li><a href="../gh-errors/#examine-the-error">Examine the Error</a> tells how to view the file needed to diagnose your problem.</li>
+<li><a href="../gh-errors/#action-add-identifiers-errors">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> tells you what to search for in the file</li>
+<li>Resolve the error and repeat the Action: <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
+</ul>
+</li>
+</ul>
+</details>
+<h4 id="add-app-group-to-new-identifier">Add <code>App Group</code> to New <code>Identifier</code><a class="headerlink" href="#add-app-group-to-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
+<li>Add the <code>Loop App Group</code> to the new "<code>LoopWidgetExtension</code>" identifier</li>
 </ul>
 <table>
 <thead>
@@ -3633,21 +3647,69 @@
 </tr>
 </tbody>
 </table>
+<details class="tip">
+<summary>For detailed instructions (Click to open/close)</summary>
 <ul>
 <li>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</li>
-<li>Click on the "<code>LoopWidgetExtension</code>" identifier</li>
-<li>Edit the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to include <code>group.com.TEAMID.loopkit.LoopGroup</code> where you use your <code>TEAMID</code></li>
+<li>Click on the "<code>LoopWidgetExtension</code>" identifier to open the <code>Edit Your App ID Configuration</code> screen.</li>
 </ul>
-<details class="tip">
-<summary>Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (Click to Open/Close)</summary>
+<p>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row</p>
+<ul>
+<li>Ensure the check box (under the <code>Capabilities column</code>) for <code>App Groups</code> is checked</li>
+<li>If the word <code>Edit</code> shows up under <code>NOTES</code>, return to the identifiers list<ul>
+<li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
+</ul>
+</li>
+<li>If the word <code>Configure</code> shows up, tap on it<ul>
+<li>This opens the <code>App Group Assignment</code> screen</li>
+<li>Check the box by <code>Loop App Group</code> that uses your <code>TEAMID</code> in <code>group.com.TEAMID.loopkit.LoopGroup</code> and then <code>Continue</code></li>
+</ul>
+</li>
+</ul>
+<p>If you had to modify the identifier, the <code>Save</code> button at the top right will become active</p>
+<ul>
+<li>Tap on <code>Save</code></li>
+<li>This opens the <code>Modify App Capabilities confirmation</code> screen</li>
+<li>Click on <code>Confirm</code></li>
+</ul>
+<p>If you did not need to make changes, the <code>Save</code> button will not be active.</p>
+<ul>
+<li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
+</ul>
+<p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></p>
 <p>All other identifiers should be already set up.</p>
 <ul>
 <li>If they are not, refer to <a href="../gh-first-time/#add-app-group-to-identifiers" target="_blank">Configure to Use Browser: Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
-<li>With the <code>dev branch</code>, only the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> needs to be added; all other <code>Identifier</code> settings are automatically included.</li>
 </ul>
-</details>
+</div>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You must run the action <code>Create Certificates</code> again because the <code>Identifiers</code> were updated. Be sure that you run this for the <code>dev branch</code></p>
+<details class="tip">
+<summary>For detailed instructions (Click to open/close)</summary>
+<p>Refer to the graphic below for the numbered steps:</p>
+<ol>
+<li>Click on the "<code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code>" tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
+<li>On the left side, click on "<code>Create Certificates</code>"</li>
+<li>On the right side, click "<code>Run Workflow</code>" to show a dropdown menu<ul>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
+<li>You should select the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu near the word <code>Optional</code> in the graphic</li>
+</ul>
+</li>
+<li>
+<p>Tap the green button that says "<code>Run workflow</code>".</p>
+<p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700" /></p>
+</li>
+<li>
+<p>Wait a minute or two for the action to finish</p>
+<ul>
+<li>If this action fails, head over to <a href="../gh-errors/#action-create-certificates-errors">Action: 3. Create Certificates Errors</a></li>
+</ul>
+</li>
+</ol>
+</details>
 <h3 id="build-branch">Build <code>Branch</code><a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
 <p><strong>We recommend most users leave their default <abbr title="version of code within a single repository or workspace repository">branch</abbr> as <code>main</code>.</strong></p>
@@ -3663,6 +3725,18 @@
 <li>Do not start a new action until the first one completes</li>
 </ul>
 </div>
+<h4 id="automatic-creation-of-alive-branch">Automatic Creation of <code>alive branch</code><a class="headerlink" href="#automatic-creation-of-alive-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The <code>alive branch</code> is created automatically when you run the <code>Build Loop</code> action using the <code>dev branch</code> (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.</p>
+<details class="warning">
+<summary>I got an error regarding the <code>alive branch</code> (click to open/close)</summary>
+<ul>
+<li>Sometimes you get an error about the <code>alive branch</code></li>
+<li>If you do get an error, delete the <code>alive branch</code> and run the <code>Build Loop</code> action again<ul>
+<li>Use this <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch" target="_blank"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> link</a> or ask for help when deleting a <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</li>
+</ul>
+</details>
 <h2 id="automatic-update-build">Automatic Update &amp; Build<a class="headerlink" href="#automatic-update-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The automatic update and build features of the development <abbr title="version of code within a single repository or workspace repository">branch</abbr> are only available if you set the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Be sure to read the <a href="../automatic/">Automatic Update &amp; Build</a> if you did this.</p>
 <h2 id="change-default-branch">Change Default <code>Branch</code><a class="headerlink" href="#change-default-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
