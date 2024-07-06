@@ -19,7 +19,7 @@ Change Connected Devices:
 
   * Open the Pump Menu for your connected pump
     * [OmniPod Eros](../loop-3/omnipod.md#devices){: target="_blank" }
-    * [Medtronic]
+    * [Medtronic](../loop-3/medtronic.md#devices){: target="_blank" }
   * Scroll down to the DEVICES section
   * There should already be at least one device listed
   * Power on your new device and look for a new device to appear in the list
