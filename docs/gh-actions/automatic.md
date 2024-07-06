@@ -12,7 +12,7 @@ Regardless of your choice, please [Disable Automatic Installation from *TestFlig
 
 ## Modify Automatic Building
 
-For someone using [development code](build-dev-browser.md) for their own use, they probably want to decide when to update their `fork` to the most recent commit. They can still have the advantage of automatic building without automatic updates. There may be other configurations someone would choose. These options are available starting with Loop 3.3.0 (`dev` branch) and later.
+For someone using [development code](build-dev-browser.md) for their own use, they could decide to choose when to update their `fork` to the most recent commit. They can still have the advantage of automatic building without automatic updates; in other words, they want a new build added to TestFlight every month. There may be other configurations someone would choose. These options are available starting with Loop 3.3.0 (`dev` branch) and later.
 
 You can affect the default behavior:
 
@@ -21,22 +21,31 @@ You can affect the default behavior:
 
 ### Modify Automatic Schedule
 
-You can modify the automation by creating and using some variables.
+This is an optional step. If you are happy with the automatic sync and update, you are done with this page.
 
-To configure the automated build more granularly involves creating up to two environment variables: `SCHEDULED_BUILD` and/or `SCHEDULED_SYNC`. See [How to configure a variable](#how-to-configure-a-variable). 
+??? tip "Instructions to Modify the Automatic Actions (Click to Open/Close)"
+    You can modify the automation by creating and using some variables.
 
-Note that the weekly and monthly `Build Loop` actions will continue, but the actions are modified if one or more of these variables is set to false. **A successful Action Log will still appear, even if no automatic activity happens**.
+    To configure the automated build more granularly involves creating up to two environment variables: `SCHEDULED_BUILD` and/or `SCHEDULED_SYNC`. See [How to configure a variable](#how-to-configure-a-variable).
 
-* If you want to manually decide when to update your repository to the latest commit, but you want the monthly builds and keep-alive to continue: set `SCHEDULED_SYNC` to false and either do not create `SCHEDULED_BUILD` or set it to true
-* If you want to only build when an update has been found: set `SCHEDULED_BUILD` to false and either do not create `SCHEDULED_SYNC` or set it to true
-    * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire requiring a manual build
+    Note that the weekly and monthly `Build Loop` actions will continue, but the actions are modified if one or more of these variables is set to false. **A successful Action Log will still appear, even if no automatic activity happens**.
 
-| <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |
-|---|---|---|
-| `true` (or N/A) | `true` (or N/A) | This is the default:<br>keep-alive, weekly update check (auto update/build), monthly build with auto update|
-|`true` (or N/A) | `false` |  keep-alive, monthly build, no auto update |
-| `false` | `true` (or N/A) | keep-alive, weekly update check with auto update, only builds if update detected|
-| `false` | `false` | no automatic activity, no keep-alive|
+    * If you want to manually decide when to update your repository to the latest commit, but you want the monthly builds and keep-alive to continue:
+        * create the variable `SCHEDULED_SYNC` and set it to false
+        * either do not create the variable `SCHEDULED_BUILD` or set it to true
+        * If you are building the `dev branch` at a time when there is a lot of activity in that branch, you may want this configuration
+    * If you want to only build when an update has been found:
+        * either do not create the variable `SCHEDULED_SYNC` or set it to true
+        * create the variable `SCHEDULED_BUILD` and set it to false
+        * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire requiring a manual build
+        * During a time when updates are not happening frequently, this is not a good choice
+
+    | <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |
+    |---|---|---|
+    | `true` (or N/A) | `true` (or N/A) | This is the default:<br>keep-alive, weekly update check (auto update/build), monthly build with auto update|
+    | `false` | `true` (or N/A) | keep-alive, monthly build, no auto update |
+    | `true` (or N/A) | `false` | keep-alive, weekly update check with auto update, only builds if update detected |
+    | `false` | `false` | no automatic activity, no keep-alive|
 
 ### How to configure a variable
 
