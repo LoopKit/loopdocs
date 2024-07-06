@@ -72,6 +72,22 @@ Look in this section for one-time changes for building `dev` with a browser that
 
 With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.
 
+??? tip "For detailed instructions (Click to open/close)"
+    Refer to the graphic below for the numbered steps:
+
+    1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
+    1. On the left side, click on "`Create Certificates`"
+    1. On the right side, click "`Run Workflow`" to show a dropdown menu
+        * You will see your default branch (typically `main`)
+        * You should select the `dev` branch in the dropdown menu near the word `Optional` in the graphic
+    1. Tap the green button that says "`Run workflow`".
+
+        ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
+        {align="center"}
+
+    1. Wait a minute or two for the action to finish
+        * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
+
 ### Build `Branch`
 
 > **We recommend most users leave their default branch as `main`.**
@@ -88,6 +104,15 @@ If you have one branch as default, for example `main`, and choose to build a dif
 
     * Refresh the browser if you are unsure if the action started
     * Do not start a new action until the first one completes
+
+#### Automatic Creation of `alive branch`
+
+The `alive branch` is created automatically when you run the `Build Loop` action using the `dev branch` (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.
+
+??? warning "I got an error regarding the `alive branch` (click to open/close)"
+    * Sometimes you get an error about the `alive branch`
+    * If you do get an error, delete the `alive branch` and run the `Build Loop` action again
+        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
 
 ## Automatic Update & Build
 

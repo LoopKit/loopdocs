@@ -163,7 +163,7 @@ This step validates most of your six <code>Secrets</code> and provides error mes
 
 1. Click on the "Actions" tab of your  *Loop Follow*  or  *Loop Caregiver*repository and enable workflows if needed
 1. On the left side, click on 1. <code>Validate Secrets</code>
-1. On the right side, click `Run Workflow` to show a drop-down menu
+1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says `Run workflow`.
@@ -190,7 +190,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Click on the "Actions" tab of your repository
 1. On the left side, click on "Add Identifiers"
-1. On the right side, click "Run Workflow" to show a drop-down menu
+1. On the right side, click "Run Workflow" to show a dropdown menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow"
@@ -363,7 +363,7 @@ Refer to the graphic below for the numbered steps:
 
 1. Click on the "Actions" tab of your Repository repository
 1. On the left side, click on "Create Certificates"
-1. On the right side, click "Run Workflow" to show a drop-down menu
+1. On the right side, click "Run Workflow" to show a dropdown menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
@@ -399,7 +399,7 @@ Refer to the graphic below for the first four steps:
 
 1. Click on the "Actions" tab of your Repository repository.
 1. On the left side, click on "Build *App Name*".
-1. On the right side, click "Run Workflow" to show a drop-down menu
+1. On the right side, click "Run Workflow" to show a dropdown menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
@@ -474,7 +474,7 @@ There are three steps to using this account moving forward:
 
 1. For each repository: you need to `fork` for each app you wish to build to the new `my-name-org` account
 
-    * When you do the fork, there will be a drop-down menu under Owner for you to select the account for the `fork`
+    * When you do the fork, there will be a dropdown menu under Owner for you to select the account for the `fork`
     * Choose the organization account
     * Other than that extra step, follow the standard `fork` directions
         * This link provides instructions to [`Fork LoopWorkspace`](gh-first-time.md#fork-loopworkspace)
@@ -497,7 +497,7 @@ Make sure you are in the organization for *GitHub*:
 * In the new screen, select `my-name-org`
 * Make sure the URL is `github.com/my-name-org`
 * Click on Settings (it is optional to fill in the information shown under general)
-* In the left pane, scroll down to find `Secrets and variables` and click on the drop-down symbol and choose `Actions`
+* In the left pane, scroll down to find `Secrets and variables` and click on the dropdown symbol and choose `Actions`
 * Your screen should look like the graphic below
 
 ![add secrets at organization level](img/add-secrets-org.png)

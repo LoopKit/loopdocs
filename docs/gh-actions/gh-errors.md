@@ -545,9 +545,9 @@ Select `Action: Build Loop`
 Refer to the first graphic below:
 
 * Tap on Run Workflow (on the right side)
-* Tap on the drop-down arrow to the right of the default `branch`
+* Tap on the dropdown arrow to the right of the default `branch`
 * Choose the `branch` you just created
-    * Start to type `patch` in the `branch` selection drop-down
+    * Start to type `patch` in the `branch` selection dropdown
     * Only `branches` with that phrase will be displayed
 * After you have the correct `branch` selected, tap on run workflow
 
