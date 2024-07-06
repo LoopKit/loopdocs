@@ -39,7 +39,7 @@ The very first time you open Xcode it may install a package of command line tool
 
 * Check that your Command Line Tools installed correctly.
     - First, open Xcode Settings
-        * Click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and select `Settings` in the drop-down menu
+        * Click on the word **`Xcode`** in the top menu bar (just to the right of the Apple icon in the upper-left corner) and select `Settings` in the dropdown menu
     - Then select the `Locations` tab in the Settings window to see the dropdown menu for Command Line Tools.  Make sure the Xcode version listed matches what you just installed (not the version in this graphic)
 * If it's blank, use the blue arrows to the right of the Command Line Tools row to select it
 
