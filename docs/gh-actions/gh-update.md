@@ -404,7 +404,7 @@ For version 3.3.0 and newer, the usual [*Loop* app expiration notification syste
 ![expiration warning on settings for testflight example](../version/img/expiration-warning-testflight.svg){width="300"}
 {align="center"}
 
-## *GitHub Personal Access Token</span>
+## *GitHub* `Personal Access Token`
 
 Your *GitHub* `Personal Access Token` should be configured:
 
