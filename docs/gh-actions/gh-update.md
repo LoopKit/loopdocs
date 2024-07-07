@@ -220,7 +220,7 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 
 For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.
 
-> If you have successfully built Loop 3.4 with automatic build configuration enabled and later decide to manually build Loop, you can skip ahead to [4: Build](#4-build).
+> If you built version 3.3.0 (the `dev branch` before release of version 3.4) or newer, you can skip ahead to [4: Build](#4-build).
 
 #### Extra Steps
 
@@ -236,7 +236,8 @@ You will (1) run `Add Identifiers`, (2) update the new identifier, (3) run `Crea
 
 In your fork of LoopWorkspace:
 
-* Run the [`Action`: `Add Identifers`](gh-first-time.md#add-identifiers){: target="_blank" }
+* Run the `Action` to `Add Identifers`
+* If you need explicit instructions, review: [`Action`: `Add Identifers`](gh-first-time.md#add-identifiers){: target="_blank" }
 
 Wait for it to succeed.
 
@@ -297,7 +298,7 @@ You can ignore an email from *Apple* that there are things you must fix in your 
 
 ### Wait for *TestFlight*
 
-You'll receive an App Store Connect email confirming that the build has completed processing, and a &nbsp;<span translate="no">TestFlight</span>&nbsp;email confirming the new app is ready to test.
+You'll receive an App Store Connect email confirming that the build has completed processing, and a *TestFlight* email confirming the new app is ready to test.
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
     * Click on the most recent Build job with the red x by it
@@ -312,11 +313,11 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 Open the *TestFlight* app on the Loopers phone and install the most recent version of the *Loop* app. Most Loopers have automatic update disabled on their phones, so this is a manual process. **Don't forget.**
 
-The updated app will show up in your&nbsp;<span translate="no">TestFlight</span>&nbsp;app.
+The updated app will show up in your *TestFlight* app.
 
 * Your new app will have "Expires in 90 days"
-    * It takes time for the update to show up in the&nbsp;<span translate="no">TestFlight</span>&nbsp;app
-    * There may be older builds that are still in&nbsp;<span translate="no">TestFlight</span>
+    * It takes time for the update to show up in the *TestFlight* app
+    * There may be older builds that are still in *TestFlight*
     * Wait for the one that expires in about 90 days
 * You will also see a build number in parentheses, that number increments each build
 
@@ -328,7 +329,7 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../gh-ac
 * Open *TestFlight* on your phone and click `Install` as shown in the GIF below
 * If you are building for a child, follow the [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child) instructions again
 
-![install Loop from &nbsp;<span translate="no">TestFlight</span>](img/testflight-install-loop.gif){width="300"}
+![install Loop from  *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}
 
 
@@ -338,7 +339,7 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../gh-ac
 
 Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Loop* app, the updated build will be installed over your existing app as soon as it uploaded to *TestFlight*.
 
-* In this case, when you look at the&nbsp;<span translate="no">TestFlight</span>&nbsp;app on your phone, the app should have installed automatically
+* In this case, when you look at the *TestFlight* app on your phone, the app should have installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
 ## Choose Previous Build
@@ -396,14 +397,14 @@ The following graphic shows the view seen in the *TestFlight* app on the phone. 
 ![choose build from TestFlight that has test details](img/testflight-select-with-details.png){width="300"}
 {align="center"}
 
-## <span translate="no">TestFlight</span>&nbsp;Expiration Warning
+## *TestFlight* Expiration Warning
 
-For version 3.3.0 and newer, the usual [<span translate="no">Loop</span> expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when the app is within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
+For version 3.3.0 and newer, the usual [*Loop* app expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when the app is within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
 
 ![expiration warning on settings for testflight example](../version/img/expiration-warning-testflight.svg){width="300"}
 {align="center"}
 
-## <span translate="no">GitHub Personal Access Token</span>
+## *GitHub Personal Access Token</span>
 
 Your *GitHub* `Personal Access Token` should be configured:
 
@@ -474,7 +475,7 @@ Click on Regenerate token (red highlight in previous graphic) to see screen simi
 * Most Loopers will have classic personal access tokens
     * If you are a developer who needs to use the fine-grained (by repository) option, that's fine
 
-Be sure to change the Expiration from `30 days` to `No Expiration`. When you select `No Expiration` a &nbsp;<span translate="no">GitHub</span> warning appears. Click on the green `Regenerate Token` button (red highlight in following graphic).
+Be sure to change the Expiration from `30 days` to `No Expiration`. When you select `No Expiration`, a *GitHub* warning appears. Click on the green `Regenerate Token` button (red highlight in following graphic).
 
 ![regenerate fastlane access token on github](img/gh-token-no-expiration.svg){width="600"}
 {align="center"}
