@@ -3,6 +3,7 @@
 **Not needed for DASH**
 
 !!! info "Time Estimate"
+    - 0 minutes if you plan to use a DASH Omnipod pump - you don't need one
     - 15-20 minutes to read about RileyLink compatible devices
     - 15 minutes to order a device
 
