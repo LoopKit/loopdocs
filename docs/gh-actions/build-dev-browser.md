@@ -72,22 +72,6 @@ Look in this section for one-time changes for building `dev` with a browser that
 
 With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.
 
-??? tip "For detailed instructions (Click to open/close)"
-    Refer to the graphic below for the numbered steps:
-
-    1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
-    1. On the left side, click on "`Create Certificates`"
-    1. On the right side, click "`Run Workflow`" to show a dropdown menu
-        * You will see your default branch (typically `main`)
-        * You should select the `dev` branch in the dropdown menu near the word `Optional` in the graphic
-    1. Tap the green button that says "`Run workflow`".
-
-        ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
-        {align="center"}
-
-    1. Wait a minute or two for the action to finish
-        * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
-
 ### Build `Branch`
 
 > **We recommend most users leave their default branch as `main`.**
