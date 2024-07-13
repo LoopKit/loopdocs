@@ -1,6 +1,6 @@
 ## Loop Settings Screen
 
-The Settings screen, shown in the graphic below, is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen).
+The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.4 and later versions.
 
 ![settings screen for loop 3](img/loop-3-settings.svg){width="250"}
 {align="center"}
@@ -40,7 +40,11 @@ If you find this confusing, read how to [Think Like a Loop](https://loopkit.gith
 
 ## Dosing Strategy
 
-This row gives you the ability to select Dosing Strategy. The Dosing Strategy only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the Dosing Strategy label. The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.
+This row gives you the ability to select Dosing Strategy. The Dosing Strategy only affects the method by which the recommended bolus - if any - is delivered. The current selection is noted underneath the Dosing Strategy label.
+
+### Temp Basal Only
+
+The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.
 
 ![Dosing Strategy selection screen](img/loop-3-setting-dosing-strategy.svg){width="500"}
 {align="center"}
@@ -65,8 +69,17 @@ When you first start Loop, we encourage you to leave Dosing Strategy set to Temp
 
 The Automatic Bolus selection causes Loop to provide 40% of the recommended dose as a bolus at the beginning of each Loop cycle (when a CGM reading comes in). This is a faster method of getting the recommended insulin delivered. When Loop delivers extra insulin, the scheduled basal rate continues unchanged.
 
+With Loop 3.4.0 and later versions, you have the option of using Automatic Bolus with [Glucose Based Partial Application (GBPA)](features.md#glucose-based-partial-application-gbpa). This feature is reached through the [Algorithm Experiments](#algorithm-experiments) row of the Settings screen. It modifies the percentage of the recommended dose that is supplied with each Loop cycle. Instead of being a fixed 40%, it changes from 20% when glucose is near your selected Correction Range and gradually increases to 80% when glucose reaches 200 mg/dL (11.1 mmol/L).
+
 As with all Loop versions, you can manually bolus at any time by pressing the Bolus icon in the center of Loop's Main Screen.  Any bolus recommendation that you see when you press the Bolus icon will be 100% of the Recommended Bolus.
 
+## Alert Management
+
+This row enables the user to modify Alert Permissions and to enable Missed Meal Notifications.
+
+### Missed Meal Notifications
+
+Loop detects situations where glucose excursions indicate you may have consumed carbs but did not enter them into Loop. When Missed Meal Notifications are enabled, you will be provided an alert that suggests when the meal was consumed and how many carbs are already absorbed at the time of the alert. You have the option to increase the grams of carbs to match your actual meal.
 
 ## Configuration
 
@@ -126,6 +139,20 @@ If you choose to share usage data, it is collected anonymously. The choices are:
 * Share the Loop version number, phone type and iOS version number
 * Additionally share usage data in terms of events only - health data such as values for glucose, insulin and carbs is **not** collected
 
+### Algorithm Experiments
+
+The Algorithm Experiments are new with Loop 3.4 and we recommend you review the details on the [Features](features.md) new with Loop 3 page. Many people have tested these and like them, but you need to decide whether to enable them.
+
+* [Glucose Based Partial Application (GBPA)](features.md#glucose-based-partial-application-gbpa)
+    * Affects speed of Automatic Bolus delivery when enabled
+    * Provides smaller automatic bolus per cycle when glucose is near target range
+    * Provides larger automatic bolus per cycle when glucose is higher
+    * In all cases, the automatic bolus is always less than the recommended bolus
+* [Integral Retrospective Correction (IRC)](features.md#integral-retrospective-correction-irc)
+    * This changes the Loop model by considering longer-term differences between predicted glucose and actual glucose
+    * The primary reason why people like this feature is it helps with the "stuck on high" phenomenon
+    * It is not uncommon that someone who enables IRC may also need to adjust their ISF (increase the value slightly)
+
 ### Pump
 
 The information about the pump section is detailed on several different pages. Follow the links below:
@@ -133,10 +160,17 @@ The information about the pump section is detailed on several different pages. F
 * [Add or Modify Pump](add-pump.md)
 * [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
 * [Medtronic](medtronic.md) Status and Commands
+* [Dana Pumps](add-pump.md#dana-i-danars-v3)
 
 ### [CGM Settings](add-cgm.md)
 
 The information about the CGM is found on the [Add or Modify CGM](add-cgm.md) page.
+
+## Favorite Foods
+
+[Favorite Foods](features.md#favorite-foods), new with Loop 3.4, can simplify meal entry if you choose to use it. You can create a Favorite Food here or on the Carb Entry screen. 
+
+Note that to create a Favorite Food on the Carb Entry screen, an icon must be selected by typing on the plate icon and then choosing a food emoji. The standard Lollipop, Taco, Pizza icons selected from the top level are not sufficient to enable the Save as Favorite button.
 
 ## Services
 
@@ -148,7 +182,7 @@ Please refer to the [Optional: Service](services.md) page.
 
 The Support section enables the user to provide output data ([Loop Report](#issue-report) and/or [Critical Logs](#export-critical-event-logs)) about the app. This information can be very helpful to folks trying to assist with problem reports.
 
-The graphic below shows the screen provided when you tap on the Support row at the bottom of the Settings screen.
+The graphic below is similar to what you see when you scroll down to the Support section of the *Loop* Settings screen.
 
 ![settings support screen](img/loop-3-setting-support.svg){width="250"}
 {align="center"}
@@ -161,12 +195,12 @@ Tap on the `Issue Report` row, on the graphic above, to create a Loop Report tex
     Be aware:
     
     * Issue (on github) is used to report code problems
-    * `Issue Report` is an action in Loop app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
+    * `Issue Report` is an action in the *Loop* app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
 
 It's a good idea to use the `Issue Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
 !!! tip "Pro Tip"
-    The Loop Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named Loop Reports.
+    The *Loop* Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named *Loop* Reports.
 
     You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
 
@@ -178,6 +212,8 @@ In either case, the first action should be to add a term or phrase to the search
 
 ![settings support screen when submitting a bug report](img/loop-3-setting-support-bug.svg){width="500"}
 {align="center"}
+
+### When Not to Submit a Bug Report
 
 !!! warning "Not for Build or Settings Help"
     Submit Bug Report should be used when you believe there is an error in the code.
@@ -216,15 +252,16 @@ The JSON file for each day are zipped into one file for that day and then the zi
 
 The time stamps within the JSON files use UTC.
 
-## App Profile
+## TestFlight or App Profile
 
-The Profile Expiration is reported at the bottom of the Settings display along with the number of days remaining before Loop stops working.
+At the bottom of the Settings display is a section labeled either TestFlight or App Profile. This provides the number of days remaining before the *Loop* app stops working along with the date and time at which the `"Loop" is No Longer Available` or `"Loop" Beta has Expired` message appears and the refuses to open. (Prior to Loop 3.4, the TestFlight warning was available only in `dev`.)
 
-The link for `How to update (LoopDocs)` is provided for build with *Mac*.
+The link for `How to update (LoopDocs)` is provided for Build with Browser or Build with *Mac* as appropriate.
 
-In fine print, the exact date and time of the expiration is reported in your local time zone.
+In fine print, the date and time of the expiration is reported in your local time zone. The *Loop* app installed from *TestFlight* might last a day longer than the *Loop* app reports - this is a conservative estimate. The time reported in the *TestFlight* app is correct.
 
-![display of profile expiration appropriate for build with *Mac* method](img/app-profile.png){width="350"}
+![display of profile expiration appropriate for github build method using testflight](img/testflight-expire.png){width="350"}
 {align="center"}
 
-The Profile Expiration is different for GitHub Browser Build method. A feature request is in place (but not yet added to the code) to report the TestFlight expiration for that build method.
+![display of profile expiration appropriate for Mac-Xcode build method](img/app-profile.png){width="350"}
+{align="center"}

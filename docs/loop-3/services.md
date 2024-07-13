@@ -5,7 +5,6 @@ Near the bottom of your *Loop* settings screen is a section called "Services".
 !!! question "Sevices are Optional"
     * The *Loop* app will work whether you use these or not.
     * *Nightscout* is highly recommended, but can be added later - you don't need it to get started.
-    * If you are running Loop 2.2.x, see [Loop 2 Services](../operation/loop-settings/services-v2.md)
 
 The services are added by tapping on the &plus; sign and choosing the service from the list. Services are shown alphabetically. The most common services are [*Nightscout*](#nightscout) and [Tidepool](#tidepool).
 
@@ -67,47 +66,31 @@ The graphic below indicates how to remove your *Nightscout* site from the *Loop*
 ![steps to remove Nightscout from the Loop app](img/loop-3-nightscout-logout.png){width="350"}
 {align="center"}
 
-## Tidepool
+## *Tidepool*
 
-With Loop 3.2.x and newer versions, data can be directly uploaded from the *Loop* app to Tidepool.
+Data can be directly uploaded from *Loop* to *Tidepool* by adding it as a Service.
 
-!!! warning "User Beware"
-    Don't use the Loop Tidepool uploader yet unless you want to help the developers work through some known issues. The Tidepool Mobile app still works to upload some of your Loop data from Health.
+Please refer to the [LoopTips: Data: *Tidepool*](https://loopkit.github.io/looptips/data/tidepool/){: target="_blank" } page for more information about *Tidepool*.
 
-    * There is a new authentication framework in Tidepool
-        * Loop developers are working on handling this new authentication protocol
-    * One other problem is that data uploaded with the Tidepool Mobile uploader from Apple Health shows up as duplicate data
-        * Even if you turn off access of the Tidepool Mobile uploader to Apple Health, there will still be 7-days of overlap with Loop that will display as duplicated data (think 2x carbs, insulin etc in your Tidepool Web display) when you enable Loop Tidepool service as the uploader
-
-
-Please refer to the [LoopTips: Data: Tidepool](https://loopkit.github.io/looptips/data/tidepool/){: target="_blank" } page for more information about Tidepool. The Tidepool display browser is undergoing some updates; the information on these pages will be updated after changes happen.
-
-The Tidepool Mobile app serves 2 purposes:
-
-1.  Allow notes to be recorded with associated glucose, carbs, and insulin record for a snap shot in time
-1.  Upload *Loop* data stored in Health to the Tidepool database for display in their browser tool; when the Connect to Health feature is enabled
-
-With the new *Loop* Service to upload to Tidepool, additional information that is not stored in Health can be made available to Tidepool. However, this is a work in progress.
-
-At the current time:
-
-* If you have Tidepool Mobile installed on your phone, with the Connect to Health feature enabled, while also using the Tidepool Service in the *Loop* app, all of your carb and insulin records will be doubled on the Tidepool Web browser display
-    * In other words, your data is uploaded by the Tidepool Mobile app and by the *Loop* app and duplicates are not filtered (at the current time)
-* Short Term: There is a filter button at the bottom right of the browser display where you turn off the *Loop* portion for days when you have both Tidepool Mobile uploader and *Loop* uploader turned on
-
-When you add the Tidepool Service to the *Loop* app, be sure to disable Tidepool Mobile ability to read from Apple Health.
+When you add the *Tidepool* Service to *Loop*, be sure to disable *Tidepool* Mobile ability to read from Apple Health.
 
 ![img/services.JPG](img/loop-3-tidepool-mobile.png){width="350"}
 {align="center"}
 
-* Warning: Even when you turn off the access to Health on the Tidepool Mobile app on the day that you turn on *Loop* Tidepool service, you will still get 7 days of overlap because *Loop* stores 7 days of data.
+!!! warning "Double entries"
+    If you have *Tidepool* Mobile installed on your phone, with the Connect to Health feature enabled, while also using the *Tidepool* Service in *Loop*, all of your carb and insulin records will be doubled on the *Tidepool* Web browser display.
 
-You can still use the note taking feature with Tidepool Mobile when Health is not connected, although you must have internet connectivity for this to work.
+    Even when you turn off the access to Health on the *Tidepool* Mobile app when you turn on *Loop* *Tidepool* service, you will still get 7 days of overlap because *Loop* stores 7 days of data.
 
-Tidepool Support is available to help troubleshoot issues or answer questions about using Tidepool. Contact them via email at support@tidepool.org.
+    There is a filter button on the *Tidepool* Website you can use to separate the two data sources.
+
+You can still use the note taking feature with *Tidepool* Mobile when Health is not connected, although you must have internet connectivity for this to work.
+
+*Tidepool* Support is available to help troubleshoot issues or answer questions about using *Tidepool*. Contact them via email at support@tidepool.org.
 
 ## Loggly
 
+[Loggly](https://loggly.com){: target="_blank" } is a free logging service. If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens. Copy and paste your customer token into your *Loop* App settings for Loggly.
 [Loggly](https://loggly.com){: target="_blank" } is a free logging service. If you sign up for an account, you'll need to go under Source Setup and then Customer Tokens. Copy and paste your customer token into your *Loop* App settings for Loggly.
 
 ![img/loggly.png](img/loggly.png){width="500"}
@@ -115,13 +98,11 @@ Tidepool Support is available to help troubleshoot issues or answer questions ab
 
 ## Amplitude
 
-[Amplitude](https://amplitude.com){: target="_blank" } is a remote event monitoring service and can be used to quickly identify errors and events. Amplitude stores the events and allows you to view those events as points in time. To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues. If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have *Loop* integration setup.
+[Amplitude](https://amplitude.com){: target="_blank" } is a remote event monitoring service and can be used to quickly identify errors and events with *Loop*. Amplitude stores the events and allows you to view those events as points in time. To retrieve the details of the events you will need to look at corresponding mLab data entries to get a complete picture of the issues. If you sign up for a free account with Amplitude, you will be given an API Key that you can enter here to have *Loop* integration setup.
 
 ![img/amplitude.png](img/amplitude.png){width="500"}
 {align="center"}
 
 ## Next Step: *Loop* Displays
 
-Great job, almost finished! Now that you have completed your services, let's move onto understanding your [*Loop* Displays](displays-v3.md). 
-
-*Loop* displays is a valuable tool for understanding your *Loop* and a great page to review when troubleshooting.
+Great job, almost finished! Now that you have completed your services, let's move onto understanding your [*Loop* Displays](displays-v3.md). This page is a valuable tool for understanding your Loop and a great page to review when troubleshooting.

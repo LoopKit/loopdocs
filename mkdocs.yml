@@ -87,23 +87,6 @@ plugins:
         raise_error_after_finish: true
     - redirects:
         redirect_maps:
-            'build/build_errors.md': 'build/build-errors.md'
-            'build/code_customization.md': 'version/code-custom-edits.md'
-            'build/code-customization.md': 'version/code-custom-edits.md'
-            'build/step1.md': 'build/computer.md'
-            'build/step10.md': 'build/test-settings.md'
-            'build/step11.md': 'build/loop-data.md'
-            'build/step12.md': 'build/community.md'
-            'build/step14.md': 'build/build-app.md'
-            'build/step2.md': 'build/phone.md'
-            'build/step3.md': 'build/pump.md'
-            'build/step4.md': 'build/cgm.md'
-            'build/step5.md': 'build/rileylink.md'
-            'build/step6.md': 'build/apple-developer.md'
-            'build/step8.md': 'build/xcode-version.md'
-            'build/step9.md': 'build/xcode-settings.md'
-            'gh-actions/gh-customize.md': 'gh-actions/edit-browser.md'
-            'faqs/FAQS.md': 'faqs/loop-faqs.md'
             'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
@@ -111,9 +94,17 @@ plugins:
             'nightscout/troublehoot.md': 'nightscout/troubleshoot.md'
             'nightscout/update_user.md': 'nightscout/update-user.md'
             'operation/features/workout.md': 'operation/features/overrides.md'
-            'operation/loop-settings/services_v2.md': 'operation/loop-settings/services-v2.md'
             'troubleshooting/time-change.md': 'faqs/time-faqs.md'
             'troubleshooting/yellow-red-loop.md': 'troubleshooting/red-loop.md'
+            'operation/overview.md': 'loop-3/loop-3-overview.md'
+            'build/health.md': 'faqs/apple-health-faqs.md'
+            'operation/loop-settings/mdt-pump.md': 'loop-3/medtronic.md'
+            'operation/loop-settings/omnipod-pump.md': 'loop-3/omnipod.md'
+            'operation/loop-settings/cgm.md': 'loop-3/add-cgm.md'
+            'operation/loop-settings/configurations.md': 'loop-3/settings.md'
+            'operation/loop-settings/services-v2.md': 'loop-3/services.md'
+            'operation/loop-settings/displays.md': 'loop-3/displays-v3.md'
+            'operation/loop-settings/rileylink.md': 'loop-3/rileylink.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -174,21 +165,10 @@ nav:
     - 'Therapy Settings': 'loop-3/therapy-settings.md'
     - 'Optional: Services': 'loop-3/services.md'
     - 'Displays': 'loop-3/displays-v3.md'
-    - 'RileyLink Display': 'operation/loop-settings/rileylink.md'
+    - 'RileyLink Display': 'loop-3/rileylink.md'
     - 'Omnipod Pump': loop-3/omnipod.md
     - 'Medtronic Pump': loop-3/medtronic.md
     - 'Features': 'loop-3/features.md'
-    - 'Loop 2: Set Up App':
-        - 'Loop 2 Overview': 'operation/overview.md'
-        - 'Loop 2 Health Permissions': 'build/health.md'
-        - 'Loop 2 Add Pump':
-            - 'Loop 2 Add Medtronic': 'operation/loop-settings/mdt-pump.md'
-            - 'Loop 2 Add Omnipod': 'operation/loop-settings/omnipod-pump.md'
-        - 'Loop 2 Add CGM': 'operation/loop-settings/cgm.md'
-        - 'Loop 2 Configuration': 'operation/loop-settings/configurations.md'
-        - 'Loop 2 Services': 'operation/loop-settings/services-v2.md'
-        - 'Loop 2 Displays': 'operation/loop-settings/displays.md'
-        - 'Loop 2 Pump Settings': 'operation/loop-settings/pump-commands.md'
 - Operate:
     - 'Open Loop': 'operation/loop/open-loop.md'
     - 'Closed Loop': 'operation/loop/close-loop.md'
@@ -223,6 +203,8 @@ nav:
     - 'Loop Development': 'version/development.md'
     - 'Build Dev': 'version/build-dev.md'
     - 'LoopWorkspace': 'version/loopworkspace.md'
+    - 'Older Releases':
+      - 'Loop 2 and Older': version/releases-version2.md
 - Nightscout:
     - 'Nightscout Overview': 'nightscout/overview.md'
     - 'New Nightscout': 'nightscout/new-user.md'

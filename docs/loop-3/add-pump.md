@@ -10,13 +10,16 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 !!! question "Switching Pumps?"
     To change the pump connected to Loop go to [Change Pump Type](#change-pump-type).
 
-Loopers can choose from 3 pumps and a simulator:
+Loopers can choose from 4 pumps and a simulator:
 
 * Minimed
     * Note: only some Minimed pumps are compatible
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
+* Dana-i / DanaRS-v3 (Coming soon)
+    * Note: DanaRS-v1 or any Dana korean versions are not supported (or is untested)
+    * A special fork is required at this time (see [link](../build/pump.md#sooil-dana-pumps) for details)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -50,6 +53,7 @@ Here is an overview of the different steps for adding each pump.  Before changin
 1. [Select RileyLink](#select-rileylink)
 1. [Medtronic](#medtronic)
 
+#### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3) (Coming soon)
 
 ## Add Pump
 
@@ -98,9 +102,9 @@ For Omnipod and Medtronic pumps, you need a RileyLink compatible device to Loop.
 !!! warning ""
     A new RileyLink compatible device is not listed next to its slider until after you connect the device to Loop. Find the little toggle in the device list, switch on that toggle, and the RileyLink will appear after the toggle is green.
 
-    You can [personalize](../operation/loop-settings/rileylink.md#personalize-device) the name once it is connected to Loop.
+    You can [personalize](../loop-3/rileylink.md#personalize-device) the name once it is connected to Loop.
 
-![img/pod-rl.png](../operation/loop-settings/img/pod-rl.png){width="400"}
+![img/pod-rl.png](img/pod-rl.png){width="400"}
 {align="center"}
 
 All RileyLink compatible devices in the nearby area, not already connected to a Loop app, will display in the RileyLink Setup screen. Select your RileyLink by sliding the toggle to display green and then press the blue `Continue` button at the bottom of the screen.
@@ -210,7 +214,7 @@ Once you have successfully connected to the Medtronic pump, click on `Continue`:
 !!! info "For x23 and x54 Medtronic pump users only"
     | <div style="width:144px"></div> ||
     |---|---|
-    |![img/pump_broadcasts.png](../operation/loop-settings/img/pump_broadcasts.png){width="550"}|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
+    |![img/pump_broadcasts.png](img/pump_broadcasts.png){width="550"}|For x23 and x54 Medtronic pump users, there is a packet of information special to those pumps called MySentry messages. If you have never setup this part of the pump previously, you may see a screen, called "Pump Broadcasts", at this point in the setup process.</br></br>Follow the directions on the screen. They will require you to take some manual steps on your pump to "pair" it with your Loop app.</br></br>Basically, you will need to go to your pump's main menu, scroll down to Utilities, then Connect Devices, then Other Devices, turn that setting On, and then select Find Device. Once you do that, click on the `Continue` button in Loop app and the pairing will take place. This will allow those MySentry packets of information to flow to Loop app.</br></br>This step does not apply for x22 or x15 pump users, since those pumps do not have MySentry capabilities.|
 
 Now that your pump is paired with Loop, you should select the type of battery you are using and decide whether to use My Sentry:
 
@@ -223,6 +227,147 @@ Now that your pump is paired with Loop, you should select the type of battery yo
         * Some users reported batteries needed to be changed every 2-4 days compared to 10 days with MySentry off
 
 The Medtronic status and commands available are shown in the [Pump Settings](medtronic.md) page.
+
+## Dana-i / DanaRS-v3
+
+!!! important "Coming Soon"
+    The Dana pump is not part of the released code yet. But the plug-in feature of Loop makes adding it extremely easy.
+    
+    If you want to test the Dana before it added to Loop, please join the discussion of this pump in zulipchat: [Dana Discussion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }
+
+!!! info "Support for Dana-i"
+    All versions of the Dana-i are supported at the moment!
+
+!!! warning "Check your DanaRS version before starting"
+    Only the DanaRS-v3 is supported, every other version is not supported or is untested (The korean versions are untested for example).
+    To check your DanaRS version, please go to "Analyze" -> "Model information". The version should be at least `xxx-3.0.0`
+
+    ![DanaRS-v3 version menu](img/danars-v3-version.jpeg){width="450"}
+    {align="center"}
+
+When you select the "Dana-i/RS" option, you will be prompted to select your pump model.
+After this selection, you will get a short description on how the pairing process will work.
+Then you will get the following menu's:
+
+1. Select [Insulin Type](#insulin-type)
+2. Select [Delivery speed](#delivery-speed)
+3. Prepare your [Dana-i / DanaRS-v3 pump](#prepare-dana-idanars-v3)
+4. Connect to your [Dana-i pump](#pairing-dana-i) or [DanaRS-v3 pump](#pairing-danars-v3)
+5. (Optional): Enable [silent pump tones](#optional-enable-silent-pump-tones)
+6. (Optional): Enable [background sound](#optional-enable-background-sound)
+
+![Full dana flow](img/dana-total.jpg){align="center"}
+
+### Delivery speed
+
+!!! info "IMPORTANT"
+    The delivery speed can always be changed in the pump's settings, but you can only have one delivery speed active
+
+The Dana pumps supports several bolus/delivery speeds.
+This might be interesting to customize if you want to slow down the bolus speed for insulin types that feel like it is burning.
+Dana supports 3 speeds:
+
+* 12 seconds per unit (default)
+* 30 seconds per unit
+* 60 seconds per unit
+
+### Prepare Dana-i/DanaRS-v3
+
+Start by checking the device name at the back of your Dana (or inside the "Model information" menu).
+This is a 10 character code, which is listed behind the SN.
+The example below is from a Dana-i, but is the same for every Dana pump
+
+![Dana-i SN example](img/dana-i-sn.jpg){width="450"}
+{align="center"}
+
+After you have done the [Insulin Type](#insulin-type) and [Delivery speed](#delivery-speed), you will land on the Dana scanning page.
+This page will show all the Dana pumps it could find in your area.
+Once you see your device name in the list, click on it and Loop will try to connect to your Dana-i / DanaRS-v3.
+
+### Pairing Dana-i
+
+Once connected, your Dana-i will prompt you with a question if you want to connect.
+Accept this and you will see a code on your Dana-i.
+Meanwhile, you will see the standard iOS Bluetooth pairing modal.
+Also accept this and fill in the code from your pump into iOS.
+After that is done, Loop is ready to use your Dana-i!
+
+![Dana pairing request example](img/dana-pairing.jpg){width="450"}
+{align="center"}
+
+### Pairing DanaRS-v3
+
+Once you see your device name in the list, click on it and Loop will try to connect to your DanaRS-v3.
+
+Once connected, your DanaRS-v3 will prompt you with a question if you want to connect.
+Accept this and you will see two codes on your DanaRS-v3.
+Meanwhile, you will see a prompt for 2 codes in Loop.
+Fill in the codes from your pump into iOS and Loop is ready to use your DanaRS-v3!
+
+### (Optional) Enable silent pump tones
+
+Normally, a Dana pump will make a sound or a vibration every time a bolus is completed.
+When Loop is configured with [Automatic bolus](settings.md#dosing-strategy), it might be anoying to have a beep or a vibration for every micro bolus.
+Therefore, we strongly recommend user to enable the silent tones.
+
+Sadly, only the Dana distributors know how to enable this feature at the moment.
+But we do know you need to set your alarm to sound.
+You can do this via: "Settings" -> "User options" -> "4. Alarm"
+
+### (Optional) Enable background sound
+
+An extra feature available for the Dana pumps is the background sound.
+This feature was developed in order to keep the *Loop* app running in the background.
+
+Normally, your CGM will have an active Bluetooth connection, which prevent the *Loop* app from being put into a suspended state.
+But when you are planning on using a CGM, like [NightScout remote CGM](./add-cgm.md#nightscout-remote-cgm), [Dexcom Share](./add-cgm.md#dexcom-share-as-a-cgm), etc, you rely on a active internet connection, and not on an active Bluetooth connection.
+
+The Dana pump cannot provide a Bluetooth heartbeat, because it will block the pump's UI.
+This will cause issue with regards to battery drain of the pump, but also when you want to replace the reservoir or cannula.
+For this reason, the background sound feature is made available.
+
+!!! warning "Only activate this if truly needed"
+    Enabling this feature will put a big load on your iPhone's battery.
+    Therefore, only use it if your sensor doesn't provide a heartbeat, i.e. the NightScout remote CGM, Dexcom Share, etc
+
+In order to activate, follow these steps:
+
+1. Activate the [UIBackgroundMode - audio](https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes):
+    * When [building with Mac](../build/overview.md), go to the LoopWorkspace Xcode project and select the Loop project.
+    Go to "Targets" -> "Loop" -> "Signing & Capabilities" and scroll down to "Background modes".
+    Enable the checkbox for "Audio, AirPlay, and Picture in Picture".
+    Then rebuild the app and go to step 2.
+    ![Xcode background sound example](./img/background-sound-xcode.png)
+
+    * When [building with Browser](../gh-actions/gh-overview.md), you will need to make a change to the GitHub Actions workflow.
+    Go to your LoopWorkspace fork on GitHub and press `.` on your keyboard.
+    You will be redirected to a `github.dev` page with the code of your LoopWorkspace.
+    Now go to ".github" -> "workflows" -> "build_loop.yml".
+    Scroll down till you see the `- name: Fastlane Build & Archive` command.
+    Just before this command, add the following to this script ([example](https://github.com/bastiaanv/LoopWorkspace/commit/67a1e42b9b771550afc14adf914ff98c37d96e67)):
+
+    ```
+    - name: Update entitlement background sound
+      run: sed -i -e 's/<string>bluetooth-central<\/string>/<string>bluetooth-central<\/string><string>audio<\/string>/g' Loop/Loop/Info.plist
+    ```
+
+    * To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
+    Enter a message and press the green "Commit & Push"-button.
+    By pressing this button, GitHub will automatically make a new browser build for you and push it to TestFlight
+    ![Github web ide example](./img/background-sound-web-ide.png)
+
+2. After you have done the onboarding of the pump (see steps above), go to the pump settings.
+    Scroll down the "Pump name" and long-press this row.
+    A modal should pop-up with the question, whether you want to toggle Silent tones.
+    
+    In order to activate this feature, the modal should say something like: `Yes, Enable silent tones`.
+    When it says: `Yes, Disable silent tones`, it will disable the background sounds.
+    ![Loop example background sound](./img/background-sound-loop.jpeg){width="250"}
+    {align="center"}
+
+3. Done!
+    Every time you put the *Loop* app in the background, it will play a toneless sound, which prevents it from suspending the *Loop* app
+
 
 ## Change Pump Type
 

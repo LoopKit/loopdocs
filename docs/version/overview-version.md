@@ -20,4 +20,9 @@ Map to this section:
     - Links to the two build methods
 * [LoopWorkspace](../version/loopworkspace.md)
     - If you are interested in development, this page goes into more detail
-    - The primary focus is on techniques for using git
+    - The primary focus is on techniques for using the <code>git</code> tool
+
+Older Loop release information is kept for historical reasons:
+
+* Older Releases:
+    [Loop 2 Releases](releases-version2.md)

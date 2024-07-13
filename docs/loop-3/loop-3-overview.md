@@ -56,7 +56,7 @@ These pages have a lot of detailed Loop information.
 
 And a lot of detailed information about Status and Commands for:
 
-* [RileyLink](../operation/loop-settings/rileylink.md)
+* [RileyLink](../loop-3/rileylink.md)
 * [Omnipod Common](omnipod.md)
 * [Medtronic](medtronic.md)
 

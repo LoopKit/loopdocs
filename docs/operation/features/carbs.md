@@ -1,23 +1,39 @@
 ## Meal Entry
 
-This page was updated with information for Loop 3.
-
 ### Loop 3 Updates:
 
 * [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry
 * [Food Type](#food-type): emoji keyboard
     * Loop 3 initially displays Medium emojis and the association of some emojis with absorption time has been improved
-    * Loop 2.2.x initially displays Fast emojis
 * [Absorption Time](#absorption-time): values for fast, medium and slow
     * Loop 3 uses 30 minutes, 3 hr, 5 hr
-    * Loop 2.2.x uses 2 hr, 3 hr, 4 hr
 * [Meal Bolus](bolus.md#meal-bolus): Loop 3 fills in the Bolus row with Recommended Bolus
 * [Large Meal Warning](#large-meal-warning)
     * The warning limit of 99 g was chosen to assist in catching mistakes such as entering 115 grams instead of 15 grams
 * [Override Active Warning](#override-active-warning)
     * A warning is presented when entering carbs while an override with sensitivity other than 100% is active
 
+### New with Version 3.4.x
+
+The [Favorite Foods](../../loop-3/features.md#favorite-foods){: target="_blank" } feature was added with version 3.4.x. This is an even faster way to enter meals than is described in the next section, Meal Entry - Fast Version.
+
+The graphic in the link above was taken from my Favorite Foods screen. Subsequent to that screen shot, I've renamed Medium to Lunch and Large to Dinner. Note this is a personal solution that works for me; you need to modify your settings to work for you.
+
+For each meal I select Lunch or Dinner, save and accept the bolus.
+
+* If I know I will be eating less than usual (not often), I will edit the carb amount before saving
+* If I know I will be eating more than usual, my typical approach is:
+    * Accept the normal amount when I prebolus
+    * When I sit down to eat, I increase the carb amount by multiples of 15 g, depending on the situation
+* I use the fat-protein rise selection but advance the time to 4 hours after dinner
+
+
 ## Meal Entry - Fast Version
+
+!!! tip "Favorite Foods is even faster"
+    With version 3.4.x and later, you have access to the Favorite Foods feature. This can make meal entry even faster than this Fast Version section below.
+
+    * See [New with Version 3.4.x](#new-with-version-34x) section above for an example use of this feature
 
 To start a new meal entry, tap on the green plate icon (circled below) in the toolbar at the bottom of the Loop status screen. Your Loop app will open to the **Add Carb Entry** screen.
 
@@ -38,7 +54,7 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 
 ### Meal Entry
 
-The steps and graphics in this section are for users of Loop 3. To view the version used by Loop 2.2.x, click on this [link](#loop-2-fast-meal-entry).
+The steps and graphics in this section are for users of Loop 3.
 
 Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 
@@ -131,7 +147,6 @@ The information about the next row: [Absorption Time](#absorption-time) is also 
     If you switched to Loop 3 from Loop 2.2.x, please be aware that absorption times for the Lollipop, Taco, Pizza icons have been updated.
 
     * Loop 3 uses 30 minute, 3 hours and 5 hours
-    * Loop 2.2.x used 2 hours, 3 hours and 4 hours
 
 !!! warning "Beware using Lollipop for Complex meals"
     If you select the Lollipop icon for a large complex meal with Loop 3, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.
@@ -207,7 +222,7 @@ For more information on some of the details reported on this screen, review [Dyn
 
 ## Review Carb Absorption
 
-New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be COB on the **Active Carbohydrates Chart** [Loop 3](../../loop-3/displays-v3.md#active-carbohydrates-chart) / [Loop 2](../loop-settings/displays.md#active-carbohydrates-chart) that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
+New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be COB on the **Active Carbohydrates Chart** [Displays: Active Carbohydrate Chart](../../loop-3/displays-v3.md#active-carbohydrates-chart) that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
 
 * Need to adjust value for carbs or account for fat/protein
 * Need to adjust aborption time
@@ -266,30 +281,6 @@ If you enter carbs (not remote carbs) into the Careportal, they are not read by 
 
 * There may be times you want to do this, e.g., you want to indicate a low treatment you don't want Loop to know about
 
-## Third Party Apps
-
-This is relevant for Loop 2.2.x versions. Loop 3 does not read carbs from Apple Health unless you modified the code.
-
-Please see Loop 2 [Permissions](../../build/health.md#loop-permissions).
-
 ## Carb Absorption Model
 
 For more information about the way Loop models the effects of carbs, insulin, etc., see the [algorithm page](../algorithm/prediction.md).
-
-## Loop 2 - Fast Meal Entry
-
-This section is for users of Loop 2.2.x.
-
-Tap meal entry icon on toolbar
-
-1. Enter number of grams of carbs in the Amount Consumed row
-1. Tap continue to advance to the Meal Bolus screen
-1. Tap Recommended line to transfer the value to the Bolus line (Loop 2.2.x)
-1. Tap Deliver
-
-The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen is completed.
-
-![Add a carb entry](img/add-carb-entry.svg){width="600"}
-{align="center"}
-
-By tapping on the **Active Carbohydrates** chart on the main Loop display, previously entered carbs can be edited, refer to [Edit Meals](#edit-meals).

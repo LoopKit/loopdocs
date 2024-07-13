@@ -19,16 +19,18 @@ Your Loop app has an expiration date. The expiration date will depend on the bui
 
 ### Browser Build
 
-With the current version, 3.2.3, you unfortunately do not get prior warning that the app is about to expire, although you can look in the *TestFlight* app and it will tell you. An in-app warning will be added to the next release.
+> Update to version 3.4 as soon as possible. The builds will then be automatic. So all you will need to do in install the latest build from *TestFlight* on your phone.
 
-Please follow these steps to ensure you can build the app again. [How to Update or Rebuild](../gh-actions/gh-update.md#how-to-update-or-rebuild){: target="_blank" }
+If you are running an older version, you do not get prior warning that the app is about to expire, although you can look in the *TestFlight* app and it will tell you. An in-app warning is supplied with version 3.4.
+
+Please follow these steps to ensure you can build the app again: [How to Update or Rebuild](../gh-actions/gh-update.md#how-to-update-or-rebuild){: target="_blank" }.
 
 
 ### Mac using a Paid account (1 year)
 
-When your app expires after a year, you need to follow the steps on the [Build Updating](../build/updating.md) page. Your phone will probably have a new iOS that may require an updated version of Xcode that may require an updated Mac operating system.  All this is explained in the link above.  Give yourself time before expiration to prepare yourself.
+When your app expires after a year, you need to follow the steps on the [Build Updating](../build/updating.md){: target="_blank" } page. Your phone will probably have a new iOS that may require an updated version of Xcode that may require an updated Mac operating system.  All this is explained in the link above.  Give yourself time before expiration to prepare yourself.
 
-To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md).
+To make it easy to build when you **have** to, practice building every 3 to 6 months. This makes the process much lower stress. Also, each time you build, when you follow the link above, you give yourself another full year before rebuilding is **required**. Please review the [Updating FAQS](../faqs/update-faqs.md){: target="_blank" }.
 
 ### Mac using Personal Team (7 day)
 
@@ -45,17 +47,17 @@ Many people *accidentally* build with their old free account
 
 Remember that switching from free to paid changes the developer name incorporated into your Loop App
 
-* A separate Loop app is created - see [Switching from Free to Paid Membership](../build/apple-developer.md#switching-from-free-to-paid-memberships) for more details
+* A separate Loop app is created - see [Switching from Free to Paid Membership](../build/apple-developer.md#switching-from-free-to-paid-memberships){: target="_blank" } for more details
 * Did you select the new app and enter all your settings into it and then delete the 7-day app?
 * The new app issue only happens if you change developer name
 * As long as you stick with the same developer ID, updated Loop apps are built over existing apps and all your settings should be maintained
 
 ## Other reasons
 
-If you experience a crash for any other reason, please gather all the information you can about what was happening before the crash and report it to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help) help site - you will need to get some personalized help. Please - choose one site for your post and wait for someone to get back to you.  While you are waiting, search on any of the sites and, if on Facebook, read all the announcements.
+If you experience a crash for any other reason, please gather all the information you can about what was happening before the crash and report it to your favorite [Loop Social Media](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" } help site - you will need to get some personalized help. Please - choose one site for your post and wait for someone to get back to you.  While you are waiting, search on any of the sites and, if on Facebook, read all the announcements.
 
 ### Save and Submit your Crash Logs
-If you have continuous crashes, please save the crash logs so the developers can look at it. If you can, log into [Zulipchat](https://loop.zulipchat.com/) and post it directly.
+If you have continuous crashes, please save the crash logs so the developers can look at it. If you can, log into [Zulipchat](https://loop.zulipchat.com/){: target="_blank" } and post it directly.
 
 * The crash logs can be found under Settings --> Privacy & Security --> Analytics & Improvements --> Analytics Data
 * Scroll to find the file Loop_`DateTime`.ips for crash reports

@@ -17,13 +17,15 @@ If you are connecting to a new Medtronic pump or switching between Medtronic and
 
 Change Connected Devices:
 
-  * Open the [Pump Menu](../operation/loop-settings/pump-commands.md) for your connected pump
+  * Open the Pump Menu for your connected pump
+    * [OmniPod Eros](../loop-3/omnipod.md#devices){: target="_blank" }
+    * [Medtronic](../loop-3/medtronic.md#devices){: target="_blank" }
   * Scroll down to the DEVICES section
   * There should already be at least one device listed
   * Power on your new device and look for a new device to appear in the list
   * If this device has never been connected before, it might appear as a blank line with a slider beside it - if so, slide the slider to turn it green and then the device name should appear
   * You can now turn sliders on or off to select which device you want to use with your connected pump
-  * Refer to the [RileyLink Menu](../operation/loop-settings/rileylink.md) for instructions on personalizing your device name
+  * Refer to the [RileyLink Menu](../loop-3/rileylink.md) for instructions on personalizing your device name
 
 ![Select an existing or new link under DEVICES in pump menu](img/add-change-rl.svg){width="300"}
   {align="center"}
@@ -79,7 +81,7 @@ The electronics are not waterproof but there are waterproof cases available and 
 
 ## Firmware version
 
-In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different. (Note - the displays for Ema, Orange and Riley have been updated to include device-specific features as shown in the [RileyLink Display](../operation/loop-settings/rileylink.md) page.  The graphic below shows the original RileyLink display.)
+In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different. (Note - the displays for Ema, Orange and Riley have been updated to include device-specific features as shown in the [RileyLink Display](../loop-3/rileylink.md) page.  The graphic below shows the original RileyLink display.)
 
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
@@ -111,17 +113,7 @@ A number of OrangeLink Pro devices were shipped with FW2.6 and for people who al
 !!! warning "Firmware/Hardware Labeling"
     Earlier versions of the OrangeLink firmware did not put the hardware (HW) version and the firmware version (FW) in the "correct" location to hand off to Loop for interpretation. Do not worry if you are running on any FW version 1.x or 2.x and your HW version number doesn't say 1.0 or 1.1. This has been fixed for FW versions 3.x.
 
-## EmaLink and OrangeLink Features
-
-Some of the features of the OrangeLink were added to the [RileyLink Display](../operation/loop-settings/rileylink.md) with Loop 2.2.x. However, as mentioned above, the FW and HW information in some OrangeLink firmware was inconsistent in earlier versions. The consequence is that the OrangeLink Pro screen does not show the Find Device feature that many people want to use with the versions of firmware that provide good communication with Loop. The patch listed below fixes this issue.
-
-The EmaLink features were not added with Loop 2.2.x. The patch listed below adds some EmaLink features.
-
-### EmaLink and OrangeLink Patch
-
-A patch was developed to update the RileyLink screen of the Loop app that detects the OrangeLink hardware for all versions of the OrangeLink firmware and adds the battery level reporting and notification to the EmaLink screen. Click on the link below. There are detailed instructions on how to use this patch for Loop 2.2.x.
-
-* [EmaLink and OrangeLink Patch](https://github.com/ps2/rileylink_ios/issues/686){: target="_blank" }
+    Loop 3 is compatible with the OrangeLink.
 
 ## RileyLink Information
 

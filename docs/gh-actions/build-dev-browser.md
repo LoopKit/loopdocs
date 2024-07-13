@@ -68,113 +68,9 @@ Tap the `Code` button (upper left) and ensure this branch in your `fork` is up t
 
 ### One-Time Changes
 
-Look in this section for one-time changes for building `dev` with a browser that require special, one-time actions. 
+Look in this section for one-time changes for building `dev` with a browser that require special, one-time actions.
 
-If you have already completed the One-Time Changes, skip ahead to [Build `Branch`](#build-branch).
-
-#### Transition to `dev`
-
-When updating from&nbsp;_<span translate="no">Loop</span>_&nbsp;3.2.3 to `dev` (version 3.3.0), you will need to take some extra steps. 
-
-**We recommend most users leave their default branch as `main`.**
-
-* This is the safest choice if you are choosing to build `dev branch` now because you want the bug fixes and features that are found in `dev`
-* When version 3.4.0 is released, most users will return to the building the `main branch`
-    * At that time, simply update your `main` branch and return to using released code
-* Each action below requires you to select the `dev` branch in the dropdown menu
-
-Here is a summary of the extra steps you will follow as you progress through this section.
-
-1. [Add and Update `New Identifier`](#add-and-update-new-identifier)
-1. [`Create Certificates`](#create-certificates)
-1. [`Build Loop`](#build-branch)
-
-#### Add and Update New `Identifier`
-
-The `bundle ID` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`".
-
-* You need to run `Add Identifier` - be sure to select the `dev branch` when you run this action
-* Wait for it to succeed
-
-??? tip "For detailed instructions (Click to open/close)"
-    Refer to the graphic below for the numbered steps:
-
-    1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
-    1. On the left side, click on 2. <code>Add Identifiers</code>
-    1. On the right side, click `Run Workflow` to show a dropdown menu
-        * You will see your default branch (typically this is `main`)
-        * You should select the `dev` branch in the dropdown menu near the word `Optional` in the graphic
-    1. Tap the green button that says `Run workflow`.
-
-        ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
-        {align="center"}
-
-    The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
-
-    * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
-    * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-        * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-        * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
-        * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
-
-#### Add `App Group` to New `Identifier`
-
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-* Add the `Loop App Group` to the new "`LoopWidgetExtension`" identifier
-
-| `NAME` | `IDENTIFIER` |
-|-------|------------|
-| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
-
-??? tip "For detailed instructions (Click to open/close)"
-    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-    * Click on the "`LoopWidgetExtension`" identifier to open the `Edit Your App ID Configuration` screen.
-
-    Looking at the `App Services` column, scroll down to the `App Groups` row
-
-    * Ensure the check box (under the `Capabilities column`) for `App Groups` is checked
-    * If the word `Edit` shows up under `NOTES`, return to the identifiers list
-        * Tap on the `< All Identifiers` button at the top left
-    * If the word `Configure` shows up, tap on it
-        * This opens the `App Group Assignment` screen
-        * Check the box by `Loop App Group` that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
-
-    If you had to modify the identifier, the `Save` button at the top right will become active
-
-    * Tap on `Save`
-    * This opens the `Modify App Capabilities confirmation` screen
-    * Click on `Confirm`
-
-    If you did not need to make changes, the `Save` button will not be active.
-
-    * Tap on the `< All Identifiers` button at the top left
-
-    The full list of Identifiers should be displayed again.
-
-!!! note "Other Identifiers"
-    All other identifiers should be already set up.
-
-    * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
-
-#### Create Certificates
-
-You must run the action `Create Certificates` again because the `Identifiers` were updated. Be sure that you run this for the `dev branch`
-
-??? tip "For detailed instructions (Click to open/close)"
-    Refer to the graphic below for the numbered steps:
-
-    1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
-    1. On the left side, click on "`Create Certificates`"
-    1. On the right side, click "`Run Workflow`" to show a dropdown menu
-        * You will see your default branch (typically `main`)
-        * You should select the `dev` branch in the dropdown menu near the word `Optional` in the graphic
-    1. Tap the green button that says "`Run workflow`".
-
-        ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
-        {align="center"}
-
-    1. Wait a minute or two for the action to finish
-        * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
+With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.
 
 ### Build `Branch`
 
@@ -246,3 +142,9 @@ For the numbered steps below, refer to the graphic found under each group of ste
     {align="center"}
 
 Your default branch has been changed.
+
+## Automatic Update & Build
+
+The automatic update and build features are available for both the released (`main`) and development (`dev`) branch.
+
+Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.

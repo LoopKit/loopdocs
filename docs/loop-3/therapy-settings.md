@@ -24,7 +24,7 @@ Loop 3 has Guardrails for some Therapy Settings. These are grouped in the [Guard
 
     For example, choosing a Correction Range that is higher than "typical" when starting to learn Loop is fine. Once you are comfortable with how the system works, the range can be adjusted if desired - entirely up to you in consulatation with your health care professional.
 
-**Therapy Settings are used for automated insulin delivery when Loop is in Closed-Loop mode.**
+**Therapy Settings are used for automated insulin delivery when Loop is in Closed Loop mode.**
 
 * If your Therapy Settings are not "dialed-in" before you enable closed loop, you may experience too much or too little automated insulin delivery
 * Please spend the time to thoroughly understand the effect of each therapy setting

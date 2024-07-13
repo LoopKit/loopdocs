@@ -1,7 +1,5 @@
 This page has detailed information about Loop 3 Displays.
 
-If you are running Loop v2.2.x, follow this link: [Loop v2.2.x Displays](../operation/loop-settings/displays.md).
-
 ## Main Loop Screen
 
 The main Loop screen contains a Heads-Up Display ([HUD](#heads-up-display)) at the top (when in portrait mode) with various charts in the middle and a toolbar at the bottom. As part of the HUD, important messages will appear in the [Status Row](#hud-status-row) location.
@@ -29,7 +27,7 @@ There are several charts on the main screen to help you navigate and understand 
 
 ### Glucose Chart
 
-![Graph of Blood Glucose showing measured points and predicted dashed line](../operation/loop-settings/img/glucose_graph.jpg){width="400"}
+![Graph of Blood Glucose showing measured points and predicted dashed line](img/glucose_graph.jpg){width="400"}
 {align="center"}
 
 The Glucose Chart displays glucose values in your preferred units.
@@ -43,37 +41,46 @@ The horizontal axis is set to go forward from the current time through your DIA 
 
 The glucose [Correction Range](therapy-settings.md#correction-range) is shown as a blue bar on the glucose chart.  Single-value ranges (such as 100-100 mg/dL), will have a narrower blue bar.  When a temporary override range is enabled, a darker blue bar indicates the correction range during that override.
 
+!!! question "Why is my Prediction so High?"
+    New Loopers are often concerned when they bolus for a meal and Loop then reduces basal and predicts a high future glucose.
+
+    That prediction is what would happen if Loop took no further action (or if you walked away from your phone). Loop suggests a bolus for that meal that keeps near-term glucose above your Glucose Safety Limit. As the food is absorbed and glucose rises, Loop will provide additional insulin. The automated part of this waits until your actual glucose is above the low-end of your correction range. But you can manually bolus earlier, or set an override for a few hours with a lower correction range.
+
 !!! warning "Negative Glucose Prediction"
-    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md) with a tiny Overall Insulin Needs percentage.
+    If you have a crazy negative glucose prediction - it is likely that you set an [Override](../operation/features/overrides.md#avoid-extreme-insulin-needs-setting){: target="_blank" } with a tiny Overall Insulin Needs percentage.
 
-    * Do not panic - this is a prediction only; not reality.
-
-    Best approach:
-
-    * Open the loop until the prediction settles down.
-    * In future, do not choose a tiny Overall Insulin Needs percentage to force less insulin
-        * Increase the correction range in your override
-        * Loop will reduce your basal rate at the next cycle (within 5 minutes)
-        * Most users should limit Overall Insulin Needs settings in the range of 50% to 200% (a factor of 2 in each direction)
-        * Be cautious adding carbs during an override with a change in Overall Insulin Needs - make sure you understand the effects first
+    * Do not panic - this is a prediction only; not reality - follow the link above.
 
 If you tap on the Glucose Chart itself, it will open the Predicted Glucose chart described below.
 
 #### Predicted Glucose Chart
 
-The predicted glucose view is a great way to gain insight into the various components’ importance in Loop’s prediction of eventual glucose.
+The predicted glucose view is a great way to gain insight into the various components that are included in the *Loop* glucose prediction. The GIF below illustrates how the graph is changed by turning off one component of the prediction.
 
-![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](../operation/loop-settings/img/glucose_hidden.svg){width="300"}
+![Tap Graph of Blood Glucose to reveal separate elements of prediction selectable to demonstrate effects](img/glucose_hidden.gif){width="250"}
 {align="center"}
 
-The graph at the top of this view will match your Glucose Chart. Below this chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value:  Carbohydrates, Insulin, Glucose Momentum and Retrospective Correction. You can tap on any of the entries to see the effects of that component by looking at the dashed lines.
+Below the chart you will see an explanation of the variables Loop takes into account in predicting your future glucose value. For more information about each effect, click on one of the links below:
+
+* [Carbohydrates](../operation/algorithm/prediction.md#carbohydrate-effect){: target="_blank" }
+* [Insulin](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" }
+* [Glucose Momentum](../operation/algorithm/prediction.md#blood-glucose-momentum-effect){: target="_blank" }
+* [Integral Retrospective Correction](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" } (or [Retrospective Correction](../operation/algorithm/prediction.md#retrospective-correction-effect){: target="_blank" })
+* Suspension of Insulin Delivery
+
+You can tap on any of the entries to see the effects of that component by looking at the dashed lines. The last item, Suspension of Insulin Delivery, is new and was added to assist people wondering how long can they safely delay changing a site or suspending a pump.
 
 !!! note "Display Only"
     These elements are not turned on and off in the Loop predictions. They just modify the graph so you can view the relative effects.
 
+!!! tip "Algorithm Experiments"
+    Algorithm Experiments is a feature added with version 3.4. One of the items available is Integral Retrospective Correction (IRC). When you have this enabled, the Predicted Glucose Chart displays the retrospective and integral retrospective components as shown on the graphic above. When this is disabled, (the default setting), only the retrospective component is calculated and used.
+
+    The example above illustrates a time when having IRC enabled helped Loop to "put on the breaks" earlier, leading to a soft landing in the target range. IRC is often advertised as helping "stuck on high", but can also assist when glucose is dropping faster than the model (without IRC) would expect.
+
 ### Active Insulin Chart
 
-![Plot of insulin on board (IOB); active amount above or below basal using insulin type](../operation/loop-settings/img/active_insulin.jpg){width="400"}
+![Plot of insulin on board (IOB); active amount above or below basal using insulin type](img/active_insulin.jpg){width="400"}
 {align="center"}
 
 The Active Insulin chart displays the total insulin contribution from both temp basals and boluses.  Active IOB can be either positive or negative.  Negative IOB results from the suspension of normally scheduled basals.
@@ -92,7 +99,7 @@ There are some times when communication is interrupted at a critical moment in t
 
 ### Insulin Delivery Chart
 
-![Plot of insulin delivery shown as bolus triangles and relative temp basal settings](../operation/loop-settings/img/insulin_delivery.jpg){width="400"}
+![Plot of insulin delivery shown as bolus triangles and relative temp basal settings](img/insulin_delivery.jpg){width="400"}
 {align="center"}
 
 The Insulin Delivery chart displays a history of the temp basals enacted by Loop.  The display is relative to the scheduled basal rates entered in the Loop settings.  So, a rate displayed in this chart as `+0 units` would indicate no temp basal was set, and Loop defaulted to the scheduled basal rate.  Individual boluses are indicated by an orange triangle on the chart (shown in the graphic above, near the left-most time).  The total insulin delivered since midnight, including all basals and boluses **AND (Medtronic Only) priming insulin**, is given in the upper right corner of the graph.
@@ -120,43 +127,43 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
     Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/apple-health-faqs.md#how-does-loop-use-apple-healthkit) in detail.
 
-    Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit) section.
+    Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit){: target="_blank" } section.
 
 
 ### Active Carbohydrates Chart
 
-![Active carbohydrate chart showing measured rise and fall based on entries and settings](../operation/loop-settings/img/carb_graph.jpg){width="400"}
+![Active carbohydrate chart showing measured rise and fall based on entries and settings](img/carb_graph.jpg){width="400"}
 {align="center"}
 
-The Carbohydrate chart displays the carbs used by Loop to predict glucose changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Meal Entry](../operation/features/carbs.md) page for more information about entering and editing carb entries.
+The Carbohydrate chart displays the carbs used by Loop to predict glucose changes.  The active COB is displayed in the upper right corner of the chart.  Clicking on the chart will open the Carb Entries history and you can edit/delete any previous entries through that screen.  Please read the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page for more information about entering and editing carb entries.
 
 #### ICE Chart
 
-![Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph](../operation/loop-settings/img/carb_edit.png){width="300"}
+![Editable Carbohydrate History with Insulin Counteraction Effects (ICE) graph](img/carb_edit.png){width="300"}
 {align="center"}
 
-Click this link for even more details about [Insulin Counteraction Effects](../operation/features/ice.md). It's a good idea to read both the Meal Entry and ICE pages - this is an important concept.
+Click this link for even more details about [Insulin Counteraction Effects](../operation/features/ice.md){: target="_blank" }. It's a good idea to read both the Meal Entry and ICE pages - this is an important concept.
 
 ## Toolbar
 
 
-![Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons](../operation/loop-settings/img/toolbar.png){width="400"}
+![Loop Toolbar showing meal entry, pre-meal, bolus, override and settings icons](img/toolbar.png){width="400"}
 {align="center"}
 
 The toolbar is always found at the bottom of the main Loop screen in both portrait and landscape orientation. By tapping on one of these icons, you can begin a Meal Entry, start a Pre-Meal Range, initiate a Manual Bolus, select an Override or go to the Loop Settings screen.
 
 From left to right, the icons are:
 
-* **Meal Entry**- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the [Meal Entry](../operation/features/carbs.md) page.
+* **Meal Entry**- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page.
     * _For those used to entering carbs on a Medtronic pump or coming from non-Loop DIY systems, Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the meal entry tool._
 
-* **Pre-Meal Range** - click on this icon to start the [Pre-Meal Range](../operation/features/premeal.md) for one hour or until carbs are entered. (plate symbol turns dark green when active)
+* **Pre-Meal Range** - click on this icon to start the [Pre-Meal Range](../operation/features/premeal.md){: target="_blank" } for one hour or until carbs are entered. (plate symbol turns dark green when active)
 
-* **Bolus** - click on this icon to open the [Bolus](../operation/features/bolus.md) tool.
+* **Bolus** - click on this icon to open the [Bolus](../operation/features/bolus.md){: target="_blank" } tool.
 
-* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/overrides.md) or to cancel an override if one is active (heart symbol turns dark blue when active)
+* **Overrides** - click on this icon to select a saved or custom [Override](../operation/features/overrides.md){: target="_blank" } or to cancel an override if one is active (heart symbol turns dark blue when active)
 
-* **Loop Settings** - click on this icon to make changes to any of your [Loop settings](settings.md).
+* **Loop Settings** - click on this icon to make changes to any of your [Loop settings](settings.md){: target="_blank" }.
 
 ## HUD Details
 
@@ -199,7 +206,7 @@ This table shows examples of Loop Status Icons and what each icon means.
 |![A green circle indicating nominal status for closed loop](img/loop-3-icon-closed-green.svg){width="175"}|A green circle indicates the app is in Closed Loop mode and it completed a [cycle](#loop-cycle) within the last 5 minutes.|
 |![A yellow circle indicating warning status for closed loop](img/loop-3-icon-closed-yellow.svg){width="175"}|A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or RileyLink “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.|
 |![A red circle indicating failure status for closed loop](img/loop-3-icon-closed-red.svg){width="175"}|A red circle indicates the Loop has not completed in over 15 minutes.<br><br>This is not a typical state, and you should [troubleshoot](../troubleshooting/red-loop.md) the problem.<br><br>In this case, either the [Glucose Icon](#glucose-status-icon) or the [Pump Icon](#pump-status-icon) or both will display an `alert` graphic.|
-|![A green open circle with a gap at the top denoting open loop](img/loop-3-icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “open-loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented in Loop 3 for Omnipod and Omnipod DASH, at the current time._|
+|![A green open circle with a gap at the top denoting open loop](img/loop-3-icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “Open Loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented in Loop 3 for Omnipod and Omnipod DASH, at the current time._|
 
 !!! info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
@@ -276,12 +283,14 @@ The table below shows examples for a few nominal Pump Status Icons and Alert mes
 |![scheduled basal indicator for partially full mdt reservoir](img/loop-3-nominal-mdt-scheduled.svg){width="175"}|This nominal pump status graphic is for a Medtronic pump running scheduled basal rate and with a half-full reservoir.<br><br>For a Pod, the reservoir shows full until pod estimates reservoir is below 50 U remaining.|
 |![high temp basal indicator with reservoir above notification level](img/loop-3-nominal-pump-high-temp-reservoir.svg){width="175"}|This nominal pump status graphic is for a pump running a high temp basal rate with the reservoir level reported. <br><br>When the reservoir level is above the notification level, the reservoir graphic is orange.|
 |![high temp basal indicator with reservoir level below alert and clock icon](img/loop-3-pump-alert-reservoir-tz.svg){width="175"}|This pump status graphic indicates 2 alerts: (1) the 15 U reservoir level is less than the notification level of 20 U selected by this user and (2) a small clock icon is added to the display to indicate the phone time zone and pump time zone do not match. <br><br>When the reservoir level is below the notification level, the reservoir graphic is yellow.<br><br>Follow the link for [time zone](#time-zone) information.|
-|![pump alert - red exclamation point with phrase no insulin](img/loop-3-pump-alert-no-insulin.svg){width="175"}|This alert message indicates the reservoir reports 0 U. Although  pumps will continue to deliver some insulin after this point (max of 4 U for pods, or until all insulin is gone for both pods and Medtronic), the user should be aware that insulin delivery could stop at any moment.<br><br>Note that if you see a display of 0 U in yellow, that means there is 0.5 U or less reported by the pump.|
-|![pump alert - yellow exclamation point with phrase no pod](img/loop-3-pump-alert-no-pod.svg){width="175"}|This alert message indicates no pod is currently paired so no insulin is being delivered.<br><br>Tap on the icon to reach the pod setting screen and pair a new pod, or switch to a different source for providing insulin.|
-|![pump alert - yellow pause indicator that pump is suspended](img/loop-3-pump-alert-suspended.svg){width="175"}|This alert message indicates all insulin delivery has been suspended. <br><br>A [Status Row](#hud-status-row) message appears to enable the user to resume delivery with one tap. <br><br>Alternatively, insulin can be resumed by tapping on the Pump Icon to enter the Pump Setting display and resume from that screen.|
-|![pump alert - yellow exclamation point with phrase manual basal](img/loop-3-pump-alert-mtb.svg){width="175"}|This alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.|
-|![pump alert - red exclamation point with phrase no data](img/loop-3-pump-alert-no-data.svg){width="175"}|This alert message indicates it has been more than 15 minutes since the app was able to communicate with the pump.<br><br>Follow these [troubleshooting](../troubleshooting/red-loop.md) steps.|
-|![pump alert - red plus sign with phrase add pump](img/loop-3-pump-alert-add-pump.svg){width="175"}|This alert message indicates no pump has been added. <br><br>Follow the instruction for [adding a pump](add-pump.md#add-pump).|
+|![pump alert - red exclamation point with phrase no insulin](img/loop-3-pump-alert-no-insulin.svg){width="175"}|This No Insulin alert message indicates the reservoir reports 0 U. Although  pumps will continue to deliver some insulin after this point (max of 4 U for pods, or until all insulin is gone for both pods and Medtronic), the user should be aware that insulin delivery could stop at any moment.<br><br>Note that if you see a display of 0 U in yellow, that means there is 0.5 U or less reported by the pump.|
+|![pump alert - yellow exclamation point with phrase no pod](img/loop-3-pump-alert-no-pod.svg){width="175"}|The No Pod alert message indicates no pod is currently paired so no insulin is being delivered.<br><br>Tap on the icon to reach the pod setting screen and pair a new pod, or switch to a different source for providing insulin.|
+|![pump alert - yellow pause indicator that pump is suspended](img/loop-3-pump-alert-suspended.svg){width="175"}|The Insulin Suspended alert message indicates all insulin delivery has been suspended. <br><br>A [Status Row](#hud-status-row) message appears to enable the user to resume delivery with one tap. <br><br>Alternatively, insulin can be resumed by tapping on the Pump Icon to enter the Pump Setting display and resume from that screen.|
+|![pump alert - yellow exclamation point with phrase manual basal](img/loop-3-pump-alert-mtb.svg){width="175"}|The Manual Bolus alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.|
+|![pump alert - red exclamation point with phrase no data](img/loop-3-pump-alert-no-data.svg){width="175"}|The No Data alert message indicates it has been more than 15 minutes since the app was able to communicate with the pump.<br><br>Follow these [troubleshooting](../troubleshooting/red-loop.md) steps.|
+|![pump alert - red plus sign with phrase add pump](img/loop-3-pump-alert-add-pump.svg){width="175"}|The Add Pump alert message indicates no pump has been added. <br><br>Follow the instruction for [adding a pump](add-pump.md#add-pump).|
+|![pump alert - exclamation point with phrase finish setup](img/loop-3-pump-alert-finish-setup.svg){width="175"}|The Finish Setup alert indicates the pod setup procedure was not completed. <br><br>Tap on the icon to be taken to the Omnipod menu to complete the setup.<br><br>(If your icon says Finish Pairing, you are running older code and will be taken to the Insert Cannula screen even if pod is still priming. Make sure priming completes before trying to insert the cannula).|
+
 
 ### Time Zone
 
@@ -304,11 +313,10 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
         - Omnipod Common: Loop sends your scheduled basal rates to your pod based on phone time
         - Make sure your gear is close together (phone, pump and, if needed, RileyLink)
 
-The display to modify time zone is slightly different for Loop 2.2.x and Loop 3 (links below):
+The display to modify time zone is found on your Pump screen:
 
-* [Loop 3 Omnipod](omnipod.md#pump-time)
-* [Loop 3 Medtronic](medtronic.md#change-time-zone)
-* [Loop 2.2.x](../operation/loop-settings/pump-commands.md#change-time-zone)
+* [Omnipod](omnipod.md#pump-time)
+* [Medtronic](medtronic.md#change-time-zone)
 
 You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.
 
@@ -343,7 +351,7 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![insulin suspended message](img/status-row-pump-suspended.svg){width="350"}|
 |As soon the app determines that the pump is suspended, the `Insulin Suspended, Tap to Resume` message is displayed. Tapping on the `Status Row` resumes scheduled basal delivery if communication is active between the app and the pump.<br><br>Medtronic pump users who suspend directly on the pump will notice a delay before this message is displayed. It is best to use the app Pump Settings screen to suspend the pump.|
 |<br><br>![no recent glucose - tap to add message](img/status-row-glucose-stale.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and the glucose value is stale (more than 15 minutes old), the `No Recent Glucose, Tap to Add` message is displayed. Tapping on the `Status Row` opens the [Manual Bolus](features.md#manual-bolus) screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap `Save Without Bolusing`. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.|
+|If a higher priority message is not displayed in the `Status Row` and the glucose value is stale (more than 15 minutes old), the `No Recent Glucose, Tap to Add` message is displayed. Tapping on the `Status Row` opens the [Manual Bolus](../operation/features/bolus.md#manual-or-correction-bolus) screen for entry of a Fingerstick Glucose. <br><br>Note that if you choose not to accept a recommended bolus on this screen but you want to save the Fingerstick value, you need to tap the Bolus line to force it to 0 U and then tap `Save Without Bolusing`. However, be aware that, in Closed Loop mode, the app will use that glucose value for the next 15 minutes and may adjust insulin delivery accordingly.|
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/overrides.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|

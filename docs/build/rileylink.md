@@ -3,6 +3,7 @@
 **Not needed for DASH**
 
 !!! info "Time Estimate"
+    - 0 minutes if you plan to use a DASH Omnipod pump - you don't need one
     - 15-20 minutes to read about RileyLink compatible devices
     - 15 minutes to order a device
 
@@ -26,7 +27,7 @@ The RileyLink compatible device is required to allow your phone to talk to compa
 !!! abstract "Details for RileyLink"
     The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by compatible *Medtronic* and *Omnipod Eros* pumps.
 
-[Loop 3](../version/releases.md#loop-3-compatibility) has *Omnipod DASH* support, among other new features. When using *Omnipod DASH*, the RileyLink compatible device is not necessary.  If you are using *Medtronic* or *Omnipod Eros* (not DASH), you still need the device regardless of which version of Loop you are running.
+Loop 3 has *Omnipod DASH* support, among other new features. When using *Omnipod DASH*, the RileyLink compatible device is not necessary.  If you are using *Medtronic* or *Omnipod Eros* (not DASH), you still need the device regardless of which version of Loop you are running.
 
 *Medtronic* and *Omnipod Eros* pumps require a RileyLink compatible device.
 
@@ -68,8 +69,6 @@ There is an entire FAQs page on [RileyLink Compatible Devices](../faqs/rileylink
 Sections of interest include:
 
 * [Firmware Update](../faqs/rileylink-faqs.md#orangelink-firmware) information on the OrangeLink
-* [Ema and Orange Patch](../faqs/rileylink-faqs.md#emalink-and-orangelink-features) to see extra features on the Loop app screens
-
 
 ## Waiting for your RileyLink Compatible Device
 

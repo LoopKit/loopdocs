@@ -209,6 +209,24 @@ The example below that shows the retrospective correction effect when the BG*vel
 
 ![bg retrospective graph example](img/bgrc_graphic.png)
 
+## Integral Retrospective Correction Effect
+
+!!! note ""
+
+    The integral retrospective correction effect allows the Loop algorithm to account for longer term effects that are not modeled with the insulin and carbohydrate effects, by comparing historical predictions to the actual blood glucose.
+
+When Integral Retrospective Correction (IRC) is enabled in settings under Algorithm Experiments, this replaces the Retrospective Correction (RC).
+
+* When _<span translate="no">IRC</span>_ is enabled the equation in [Blood Glucose Prediction](#blood-glucose-prediction) is modifed to:
+
+$$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] $$
+
+The Retrospective Correction section of the [Predicted Glucose Chart](../../loop-3/displays-v3.md#predicted-glucose-chart) is updated when _<span translate="no">IRC</span>_ is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the _<span translate="no">IRC</span>_ and _<span translate="no">RC</span>_ calculations.
+
+![predicted glucose retrospective section with irc disabled and enabled](../../loop-3/img/glucose-details-irc.svg){width="400"}
+{align="center"}
+
+
 ## Blood Glucose Momentum Effect
 
 !!! note ""

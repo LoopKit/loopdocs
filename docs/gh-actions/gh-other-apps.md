@@ -175,8 +175,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Validate <code>Secrets</code> Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
+    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
+    * [Action: Validate <code>Secrets</code> Errors](gh-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
 
 
@@ -202,8 +202,8 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 ## Review App Identifier
@@ -464,12 +464,13 @@ There are three steps to using this account moving forward:
 1. One-time only: You need to add your 6 <code>Secrets</code> to this organization account (instructions are in next section)
 
 1. One-time only: Create a `Match-Secrets` repository in the `my-name-org` account
+    * Not required for version 3.4 or later of the *Loop* app but it may be required for other apps if you haven't already built the *Loop* app
     * Start out at the top-level of your organization (`github.com/my-name-org`)
     * Click on `Repositories`
     * Click on `New repository`
     * Choose `my-name-org` as owner and enter `Match-Secrets` as the name
     * Make sure to choose `Private` and tap on the `Create` button
-    * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](gh-first-time.md#create-match-secrets)
+    * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](gh-errors.md#create-match-secrets)
 
 1. For each repository: you need to `fork` for each app you wish to build to the new `my-name-org` account
 

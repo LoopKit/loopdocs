@@ -87,7 +87,7 @@ Look also at the Stable line for the desired customization:
 ## Outline of What Happens in the Module
 
 !!! warning "Review Only"
-    Review this section so you know what to expect. The actual steps will come later, starting with [Create your <code>Fork</code> for Selected Module](#create-your-fork-for-selected-module) or [Edit Module in Browser](#personalized-customization-for-this-module).
+    Review this section so you know what to expect. The actual steps will come later, starting with [Create your <code>Fork</code> for Selected Module](#create-your-fork-for-selected-module) or [Personalized Customization for this Module](#personalized-customization-for-this-module).
 
 In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. There are no links here because you are supposed to review the steps before taking action in the next section.
 
@@ -303,6 +303,8 @@ Once you prepare the commands, then you will edit the build_loop.yml file of you
 
 For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the&nbsp;`curl`&nbsp;statement pointing to the SHA-1 that has the customization.
 
+### Prepare customization lines
+
 Save the customization lines in your text file for later use in the build_loop.yml file.
 
 ```  { .sh .copy title="Customization Template:" }
@@ -330,13 +332,13 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 * Find the folder .github/workflows and click on it
 * Find the file build_loop.yml and click on it
 * Click on the pencil (so you can edit this file)
-* If you are building dev, or if version 3.4 was just released - the directions are different
-    * Skip the part where you copy and paste the block of text - it's already included
-    * You will [Add Personal Customizations to build_loop.yml](#add-personal-customizations-to-build_loopyml) at or near line 239
-* If you are building main, before version 3.4 was released, keep going
-* Locate line 31, which is just above the words:
-    * `# Patch Fastlane Match to not print tables`
-* Paste the contents of the block below so it comes before that section
+* If you are building version 3.4
+    * Skip ahead to [Add Personal Customizations to build_loop.yml](#add-personal-customizations-to-build_loopyml)
+* If you are building from an older version of main (version 3.2.3 or earlier), this is left here for your convenience - it will be removed over the next few months - please update soon
+    * Locate line 31, which is just above the words:
+        * `# Patch Fastlane Match to not print tables`
+    * Paste the contents of the block below so it comes before that section
+    * In the next section - you will need to modify the line number where you do the edits
 
 
 ``` { .text .copy title="Paste into build_loop.yml" }
@@ -363,9 +365,11 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 
 Open the text file in which you saved the customization lines.
 
-For a given submodule, paste the comment / curl command as indicated in the template above.
+For a given submodule, paste the comment curl lines that you prepared in [Prepare customization lines](#prepare-customization-lines) similar to the examples, near line 239, that are commented out and provided as an example. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
 
 The indenting needs to match, so tab or (shift-tab) to line up the columns.
+
+It is best to leave a blank line between customizations.
 
 **Once you are done with all the edits for build_loop.yml you will commit the changes to your <code>fork</code> directly.**
 

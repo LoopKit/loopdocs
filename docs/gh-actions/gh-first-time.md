@@ -31,7 +31,6 @@
     Now it's time to use those <code>Secrets</code> to build the Loop app
 
     * *GitHub*:
-        * [Create a <code>Match-Secrets</code> private repository](#create-match-secrets)
         * [Fork a repository (copy of <code>LoopWorkspace</code>)](#fork-loopworkspace)
         * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](#configure-secrets)
         * [`Action: 1. Validate Secrets`](#validate-secrets)
@@ -47,11 +46,20 @@
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
-    - **Can I do this on my phone?** Yes, but the graphics shown on this page are from a computer browser.
-    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build once, subsequent builds take very little of your time to start the build. The rest is done automatically.
+    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
+    - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](gh-deploy.md#automatic-update-build-install) for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](gh-deploy.md#testflight-for-a-child).
     - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md)
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
+
+## Automatic Build of Loop
+
+When you follow the directions on this page, for Loop 3.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main branch is updated.
+
+* What if I want to modify the automatic update and build schedule?
+    * [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }
+* What if I want to turn off automatic building?
+    * [Stop Building](automatic.md#stop-building){: target="_blank" }
 
 ## Tips and Tricks
 
@@ -214,8 +222,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * It is required to enable your *GitHub* account to interface with *Apple* to create your app
 * `Identifiers`: are required to build the *Loop* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
     * Four Identifier Names must be associated with your `App Group`
-        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Small Status Widget`
-        * For the dev branch only: `Small Status Widget` was renamed `Loop Widget Extension`
+        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Loop Widget Extension`
     * Two Identifier Names will exist but do not require that association
         * `WatchApp` and `WatchAppExtension`
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
@@ -514,11 +521,16 @@ The free level comes with plenty of storage and compute time to build the *Loop*
     * Enter a name for your token, use "`FastLane Access Token`"
     * Change the Expiration selection to `No expiration`
     * Select the `workflow` `permission scope` (`repo` will be automatically selected)
+        * This step enables automatic building
     * Click "Generate token"
     * Copy the token and record it. It will be used below as `GH_PAT`
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
 
+!!! tip "Default Settings"
+    These instructions are a prerequisite for automatic update and automatic build.
+
+    Refer to [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" } if you don't want to accept the default recommendation to automatically update and build.
 
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
@@ -539,6 +551,10 @@ You must be logged into your *GitHub* account before starting this step. If you 
     ![request a new personal access token](img/gh-access-token.svg){width="700"}
     {align="center"}
 
+    !!! tip "What does `repo` and  `workflow` do?"
+        * `repo`: enables manual build actions
+        * `workflow`: enables `repo` and automatic build actions
+
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
@@ -557,63 +573,11 @@ If you have not already made up a password, do it now and record it as <code>MAT
 
 ## :material-triangle: Step 3 of 12
 
-> :material-triangle: Step 3 of 12 is Prepare your Repositories. This step has 2 :material-dots-triangle: Substeps.
+> :material-triangle: Step 3 of 12 is Prepare your Repository. This step has no :material-dots-triangle: Substeps.
 
-## Prepare your Repositories
+> Prior to version 3.3, you had to manually create a private Match-Secrets repository - now it is done for you automatically.
 
-### :material-dots-triangle: Substep 3.1 for Step 3
-
-> Next section, Create Match-Secrets, is :material-dots-triangle: Substep 1 of 2 for Step 3. This is done only one time for a given GitHub username.
-
-### Create Match-Secrets
-
-??? abstract "Section Summary (click to open/close)"
-    The creation of the <code>Match-Secrets</code> repository is a common step for all <code>*GitHub* Browser Builds</code>; do this step only once. You must be logged into your *GitHub* account.
-
-    Click on the link to create a [new empty repository](https://github.com/new){: target="_blank" } titled <code>Match-Secrets</code>. It should be private.
-
-    Once created, you will not take any direct actions with this repository; it needs to be there for *GitHub* to use as you progress through the steps.
-
-    [<span class="loop-bigger">:material-skip-forward:</span>](#fork-loopworkspace) To skip the detailed instructions, click on [Fork LoopWorkspace](#fork-loopworkspace)
-
-
-Open your github.com URL (this is `https://github.com/username`), (`username` is the name you chose above).
-
-Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
-
-* Click on this link: [https://github.com/new](https://github.com/new){: target="_blank" }
-
-or
-
-* At the top right of the screen, click on the &plus; sign and select `New Repository`
-
-    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
-    {align="center"}
-
-This shows you a screen similar to the following graphic which has 3 regions highlighted:
-
-* In `Repository name`, type `Match-Secrets` (use a hyphen between `Match` and `Secrets`)
-* Be sure to check the  box **`Private`**  (red circle) to make the repository **private**
-* **Please confirm you selected the `Match-Secrets` repository as private.**
-* Scroll to the bottom of the page and tap on "`Create repository`"
-
-![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
-{align="center"}
-
-A screen will appear with a lot of options - do **not** do anything on this screen.
-
-* Click on your username (as indicated by the red rectangle) to return to your main *GitHub* URL.
-
-![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
-{align="center"}
-
-You will not directly interact with your `Match-Secrets` repository.
-
-### :material-dots-triangle: Substep 3.2 for Step 3
-
-> Next section, Fork LoopWorkspace, is :material-dots-triangle: Substep 2 out of 2 for Step 3.
-
-> If you are creating an app other than the *Loop* app, you substitute the appropriate URL for the app you are building.
+## Prepare your Repository
 
 ### Fork LoopWorkspace
 
@@ -625,7 +589,7 @@ You will not directly interact with your `Match-Secrets` repository.
 !!! warning "Existing Fork"
     If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
-1. Open this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`.
+1. Click this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`
 1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
     * If you already have a fork, you cannot proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
@@ -705,7 +669,6 @@ Log into *GitHub*.
     ![dropdown-menu](img/gh-quick-access.png){width="200"}
     {align="center"}
 
-1. You should see (at least) 2 repositories: `Match-Secrets` and <code>LoopWorkspace</code>
 1. Click on <code>LoopWorkspace</code> to open that repository
 1. Click on the Settings Icon near the top right of your LoopWorkspace
     * If you don't see ⚙️ `Settings`, make your browser wider or scroll to the right
@@ -843,8 +806,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
+    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
+    * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
 
 ## :material-triangle: Step 6 of 12
@@ -853,7 +816,12 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 > This should only be needed one time, unless the developers add or modify an identifier.
 
-> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+> For example going from version 3.2.x to version 3.4 requires this to be repeated.
+
+!!! warning "Update to Version 3.4"
+    The name and identifier for "`Small Status Widget`" was renamed to "`Loop Widget Extension`". If you previously built, you will need to run the Add Identifiers as directed on the [update page](gh-update.md#update-from-32x-to-34){: target="_blank" } to add the renamed Identifier and Create Certificates for it.
+
+    If you previously built the `dev` branch, you already have this identifier.
 
 ## <code>Add Identifiers</code>
 
@@ -881,8 +849,8 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine the Error](gh-errors.md#examine-the-error) tells how to view the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 
@@ -890,9 +858,7 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 > :material-triangle: Step 7 of 12 is Configure Identifiers for Loop. This step has 2 :material-dots-triangle: Substeps, some of which may not be required but are numbered so you can check them off.
 
-> This should only be needed one time, unless the developers add or modify an identifier.
-
-> For example going from version 3.2.x to version 3.3 or higher requires this to be repeated. There will be clear instructions on to [update page](gh-update.md#how-to-update-or-rebuild){: target="_blank" } when you need to do this.
+> This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.
 
 ## Configure Identifiers for Loop
 
@@ -1432,7 +1398,8 @@ To make it easy when configuring the identifiers, go through and delete as many 
     * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
 * Note - this graphic indicates where on this page you can find your `TEAMID`
     * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](gh-update.md#update-secrets) with your correct `TEAMID`
-    * If you try to delete a `Loop identifier` that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+    * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+    * Delete all the other identifiers first that have the same incorrect `TEAMID` and then try to delete the Loop identifier with the incorrect `TEAMID`
 
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
 {align="center"}

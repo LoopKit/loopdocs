@@ -1,21 +1,23 @@
 ## Which CGMs are supported by the *Loop* app?
 
-The next release of the *Loop* app and the current [Loop-dev branch](../version/build-dev.md) includes Libre support in addition to the CGM listed below.
+The following CGM are supported by some or all versions of Loop:
 
-The *Loop* app supports G5, G6, G7, Dexcom ONE, Dexcom Share, Nightscout and the Medtronic CGM systems compatible with Looping pumps.
+* All Dexcom CGM (Loop 3 and later)
+* Some Libre CGM (Loop 3.4 and later)
+* Medtronic Enlite CGM when used with a compatible pump
+* Remote CGM (requires internet access
+    * Dexcom Share
+    * Nightscout as CGM (Loop 3 and later)
 
-Libre Support (for some Libre sensors):
+See also: [Compatible CGM](../build/cgm.md) page.
 
-* [Loop dev](../version/build-dev.md) adds [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }
-* [Loop and Learn: Customization](https://www.loopandlearn.org/custom-code){: target="_blank" }
+## Dexcom FAQ
 
-There are more details on the [Compatible CGM](../build/cgm.md) page.
-
-## Do I need wait for a new sensor session to start Loop?
+### Do I need wait for a new Dexcom sensor session to start Loop?
 
 No, you can start Looping mid-sensor session. There's no need to do anything special with regards to your CGM session when starting or ending the *Loop* app.
 
-## What do I do when sensor is in warm-up?
+### What do I do when Dexcom sensor is in warm-up?
 
 The *Loop* app will stop automatically adjusting insulin when the most recent glucose value is older than 15 minutes.  This is indicated by seeing three dashes in place of the glucose reading on the HUD.
 
@@ -95,10 +97,11 @@ sequenceDiagram
     deactivate dexcom
 ```
 
+## Libre CGM
 
-## Can I use Libre sensors with a reader like Miao Miao?
+### Can I use Libre sensors with a reader like Miao Miao?
 
-If you use *Loop* dev code, then any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" } can be used with the *Loop* app.
+Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
 
 See [Which CGMs are supported by the *Loop* app?](#which-cgms-are-supported-by-the-loop-app).
 
@@ -114,8 +117,8 @@ Yes.
 
 ## What other CGM apps can be used with Loop?
 
-If you are willing to build a development version of Loop, the dev branch incorporates [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md){: target="_blank" } into the *Loop* app itself. Please read about [Loop Development](../version/development.md) before [building dev](../version/build-dev.md) and using the dev app.
+It is recommended that Libre users take advantage of the [LibreTransmitter](https://github.com/dabear/LibreTransmitter/blob/main/readme.md){: target="_blank" } that is incorporated into the *Loop* app itself for version 3.4 and later.
 
-You can add xDrip4iOS and GlucoseDirect as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code){: target="_blank" }.
+You can add xDrip4iOS and GlucoseDirect as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code){: target="_blank" }. However, this uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach.
 
-Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/){: target="_blank" } and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme){: target="_blank" }. You must build these apps yourself to Loop; you cannot use the TestFlight pre-built versions.
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/){: target="_blank" } and [Glucose Direct](https://github.com/creepymonster/GlucoseDirect#readme){: target="_blank" }. You must build these apps yourself so they have the same developer ID as your *Loop* app; you cannot use the TestFlight pre-built versions.

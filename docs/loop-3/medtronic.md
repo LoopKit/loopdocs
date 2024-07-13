@@ -56,12 +56,12 @@ The `Use My Sentry` row only shows up on pumps that support it.
 
 Using the MySentry feature on some Medtronic pumps when using an OrangeLink causes the batteries to die quickly.  This option allows you to turn off MySentry within the Loop app.
 
-![MySentry selection screen for enabling or disabling the option](../operation/loop-settings/img/mdt-my-sentry-v225.png){width="300"}
+![MySentry selection screen for enabling or disabling the option](img/mdt-my-sentry-v225.png){width="300"}
 {align="center"}
 
 ### Devices
 
-This allows access to the [RileyLink](../operation/loop-settings/rileylink.md) screen for each connected RileyLink compatible device.
+This allows access to the [RileyLink](../loop-3/rileylink.md) screen for each connected RileyLink compatible device.
 
 ### Pump Battery Remaining
 

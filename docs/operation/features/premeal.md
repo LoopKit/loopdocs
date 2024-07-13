@@ -16,17 +16,8 @@ Loop will adjust any insulin bolus as needed based on the extra insulin provided
 
 ## How to Adjust Pre-Meal Range
 
-Loop 3:
-
 * In Loop Settings, select Therapy Settings and then tap on Pre-Meal Range to adjust
 * If you prefer not to have that icon active on the Toolbar, you can tap Delete in the upper right corner of the adjustment screen
-
-Loop 2.2.x:
-
-* In Loop settings, find the Correction Range section.  The Correction Range
-sections stores all targets for Loop over the hours of the day, including
-Pre-Meal.
-
 
 ## Assessing the impact of pre-meal
 
@@ -36,8 +27,7 @@ any hypoglycemic ranges that may require treatment.
 
 To mitigate the impact of unintentional pre-meal activation:
 
-* If you are running Loop 3, you can delete the setting to deactivate the icon
-* If you are running Loop 2.2.x, you can set the pre-meal range to the same value as your usual correction range
+* You can delete the setting to deactivate the icon
 
 !!! tip "Custom Pre-Meal Overrides"
     Some loopers set up a custom override to use instead of the pre-meal icon.  This allows enabling the override remotely with Nightscout, permits specifying a custom duration, and will keep the override enabled after carbs are announced.
