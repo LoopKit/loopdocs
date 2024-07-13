@@ -530,7 +530,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
 !!! tip "Default Settings"
     These instructions are a prerequisite for automatic update and automatic build.
 
-    Refer to [Modify Automatic Building](automatic.md#modify-automatic-building{: target="_blank" } if you don't want to accept the default recommendation to automatically update and build.
+    Refer to [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" } if you don't want to accept the default recommendation to automatically update and build.
 
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
@@ -806,8 +806,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](gh-errors.md#examine-annotation) tells how to view the file needed to diagnose your problem.
-    * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors) tells you what to search for in the file
+    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
+    * [Action: Validate Secrets Errors](gh-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
 
 ## :material-triangle: Step 6 of 12
@@ -849,8 +849,8 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](gh-errors.md#examine-annotation) tells how to view the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors) tells you what to search for in the file
+    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
+    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
 
 
