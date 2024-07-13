@@ -24,6 +24,13 @@ To view the list of data stored in Health
     * Repeat until all three are added
     * Tap on the Summary (bottom left icon of toolbar); Favorites show up first
 
+### Apple Health Storage
+
+!!! question "Is Apple Health access Required?"
+    There is internal *Loop* storage of all data required for the app to operate with a 7-day history. (This is new with version 3.) So using Apple Health for data storage is not 100% required for the app to operate, but it is very useful and recommended.
+
+    If you do not give Loop permission to use Apple Health, you will see no records in the Health app from Loop for carbohydrates, insulin or glucose. LoopDocs assumes permission was enabled to Apple Health.
+
 ## HealthKit Plots
 
 The health app on the *Loop* phone provides useful plots of data since you started to *Loop* with that *Apple* ID. Examples for insulin delivery and carbohydrates are shown in the graphic below. New versions of iOS modified details of the display with the same or improved capabilities. 
