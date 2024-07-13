@@ -819,7 +819,7 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 > For example going from version 3.2.x to version 3.4 requires this to be repeated.
 
 !!! warning "Update to Version 3.4"
-    The name and identifier for "`Small Status Widget`" was renamed to "`Loop Widget Extension`". If you previously built, you will need to run the Add Identifiers as directed on the [update page](gh-update.md#updating-from-32x-to-34){: target="_blank" } to add the renamed Identifier and Create Certificates for it.
+    The name and identifier for "`Small Status Widget`" was renamed to "`Loop Widget Extension`". If you previously built, you will need to run the Add Identifiers as directed on the [update page](gh-update.md#update-from-32x-to-34){: target="_blank" } to add the renamed Identifier and Create Certificates for it.
 
     If you previously built the `dev` branch, you already have this identifier.
 

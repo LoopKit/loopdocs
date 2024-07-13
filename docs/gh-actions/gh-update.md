@@ -30,8 +30,11 @@
 
     Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild):
 
-    * If currently using verion 3.2.3 or earlier, there are extra steps included to update to 3.4
-    * This provides automatic build
+    * If currently using verion 3.2.3 or earlier, there are manual steps included to update to 3.4
+    * If currently using verion 3.4.0 or later, builds are automatic but you still need to do some actions:
+        * Your *Apple Developer* account must be active
+        * All agreements must be signed for your *Apple Developer* account
+        * Once a year, you need to update [Renew Certificates](#renew-certificate)
 
     If you are running `Loop-dev`, be sure to review these instructions but modify for the branch you are using: refer to [Build Loop dev with Browser](build-dev-browser.md)
 
@@ -216,7 +219,7 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 
     When action has finished, a log appears. Do not delete those logs. They are an important record of activity.
 
-#### Updating from 3.2.x to 3.4
+#### Update from 3.2.x to 3.4
 
 For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.
 
@@ -236,35 +239,85 @@ You will (1) run `Add Identifiers`, (2) update the new identifier, (3) run `Crea
 
 In your fork of LoopWorkspace:
 
-* Run the `Action` to `Add Identifers`
-* If you need explicit instructions, review: [`Action`: `Add Identifers`](gh-first-time.md#add-identifiers){: target="_blank" }
+* Run the Action: `Add Identifier`
+* Wait for it to succeed
 
-Wait for it to succeed.
+??? tip "For detailed instructions (Click to open/close)"
+    Refer to the graphic below for the numbered steps:
 
-#### 2: Update New Identifier
+    1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
+    1. On the left side, click on 2. <code>Add Identifiers</code>
+    1. On the right side, click `Run Workflow` to show a dropdown menu
+        * You will see your default branch (typically this is `main`)
+    1. Tap the green button that says `Run workflow`.
 
-The next step is to add your `App Group` to this one new Identifier, shown in the table below.
+        ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
+        {align="center"}
+
+    The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
+
+    * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
+    * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
+        * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
+        * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+
+#### Add `App Group` to New `Identifier`
+
+* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
+* Add the `Loop App Group` to the new "`LoopWidgetExtension`" identifier
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-* Click on the "`LoopWidgetExtension`" identifier
-* These are the steps you need to take:
-    * Scroll down to the `App Groups` row of the Capabilities column
-    * Configure the App Groups to include `group.com.TEAMID.loopkit.LoopGroup` where you use your `TEAMID`
-    * Save and Confirm your configuration
-* If you need more explicit directions, review [Configure to use Browser: Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
+??? tip "For detailed instructions (Click to open/close)"
+    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
+    * Click on the "`LoopWidgetExtension`" identifier to open the `Edit Your App ID Configuration` screen.
 
-#### 3: Create Certificates
+    Looking at the `App Services` column, scroll down to the `App Groups` row
 
-You must create certificates again to add a certificate for the new Identifier name and to provide support for the addition of the Libre sensors. (This step is required whether you use Libre or not - Loop needs permission to have that capability). Once the certificate action succeeds, then run the action to build Loop.
+    * Ensure the check box (under the `Capabilities column`) for `App Groups` is checked
+    * If the word `Edit` shows up under `NOTES`, return to the identifiers list
+        * Tap on the `< All Identifiers` button at the top left
+    * If the word `Configure` shows up, tap on it
+        * This opens the `App Group Assignment` screen
+        * Check the box by `Loop App Group` that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
 
-1. In your fork of LoopWorkspace:
-    * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
+    If you had to modify the identifier, the `Save` button at the top right will become active
 
-Wait for this action to succeed.
+    * Tap on `Save`
+    * This opens the `Modify App Capabilities confirmation` screen
+    * Click on `Confirm`
+
+    If you did not need to make changes, the `Save` button will not be active.
+
+    * Tap on the `< All Identifiers` button at the top left
+
+    The full list of Identifiers should be displayed again.
+
+!!! note "Other Identifiers"
+    All other identifiers should be already set up.
+
+    * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
+
+#### Create Certificates
+
+You must run the action `Create Certificates` again because the `Identifiers` were updated. Wait for this to succeed before trying to build.
+
+??? tip "For detailed instructions (Click to open/close)"
+    Refer to the graphic below for the numbered steps:
+
+    1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository
+    1. On the left side, click on "`Create Certificates`"
+    1. On the right side, click "`Run Workflow`" to show a dropdown menu
+        * You will see your default branch (typically `main`)
+    1. Tap the green button that says "`Run workflow`".
+
+        ![create certificates using github actions](img/action-03-create-certs.svg){width="700"}
+        {align="center"}
+
+    1. Wait a minute or two for the action to finish
+        * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
 
 #### 4: Build
 

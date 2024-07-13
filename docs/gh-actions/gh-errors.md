@@ -20,7 +20,7 @@ But first - try to diagnose it yourself using this page.
 !!! warning "Just updated?"
     If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.
 
-    If you missed this step - go do it now. [Updating from 3.2.x to 3.4](gh-update.md#updating-from-32x-to-34){: target="_blank" }
+    If you missed this step - go do it now. [Update from 3.2.x to 3.4](gh-update.md#update-from-32x-to-34){: target="_blank" }
 
 !!! important "Certificate is missing"
     If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
