@@ -128,7 +128,14 @@ A simple example to illustrate this - for a pump with smallest insulin delivery 
 
 ### *Tidepool* and *Apple* HealthKit
 
-If you have a [*Tidepool*](https://tidepool.org){: target="_blank" } account and use the *Tidepool* uploader on your *Loop* phone, the data in Health is uploaded to your *Tidepool* database where you can view displays with the [*Tidepool* web browser tool](https://loopkit.github.io/looptips/data/tidepool){: target="_blank" }.
+!!! important "Choose One Method for Upload"
+    Previously, the only method to get *Loop* data into [*Tidepool*](https://tidepool.org){: target="_blank" } was to use their mobile app on your phone and enable that app to read from *Apple Health* to upload data to *Tidepool*.
+
+    You can now upload directly from *Loop* to *Tidepool* - this is the preferred method.
+
+    With the direct upload, be sure to disable your *Tidepool* mobile app from reading Apple Health on your phone. If you do not do this, you will have double uploads of all your data. You can still make notes on the mobile app; it will get your data via the internet from *Tidepool*.
+
+    If you are currently using the *Tidepool* mobile app to upload and switch to direct upload, you will get one week of double uploads. You can filter the upload source for that week on the [*Tidepool* web browser tool](https://loopkit.github.io/looptips/data/tidepool){: target="_blank" }.
 
 ## How Do I Modify *Apple* HealthKit Permissions
 
