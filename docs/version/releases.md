@@ -25,7 +25,7 @@ Additional information including links is found here, but be aware that updates 
 
 ### Loop v3.4.0
 
-*Loop* v3.4.0 was released on 12 July 2024.
+*Loop* v3.4.0 was released on 13 July 2024.
 
 * [Link to release notes for Loop 3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0){: target="_blank" }
 
