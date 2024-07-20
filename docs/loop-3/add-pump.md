@@ -18,7 +18,7 @@ Loopers can choose from 4 pumps and a simulator:
 * Omnipod
 * Omnipod DASH
 * Dana-i / DanaRS-v3 (Coming soon)
-    * Note: DanaRS-v1 or any Dana korean versions are not supported (or is untested)
+    * Note: DanaRS-v1 or any Dana korean versions are not supported
     * A special fork is required at this time (see [link](../build/pump.md#sooil-dana-pumps) for details)
 * Insulin Pump Simulator
 
