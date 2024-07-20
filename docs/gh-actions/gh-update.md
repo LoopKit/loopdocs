@@ -242,7 +242,7 @@ In your fork of LoopWorkspace:
 * Run the Action: `Add Identifier`
 * Wait for it to succeed
 
-??? tip "For detailed instructions (Click to open/close)"
+???+ tip "Detailed instructions (Click to open/close)"
     Refer to the graphic below for the numbered steps:
 
     1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
@@ -270,7 +270,7 @@ In your fork of LoopWorkspace:
 |-------|------------|
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-??? tip "For detailed instructions (Click to open/close)"
+???+ tip "Detailed instructions (Click to open/close)"
     * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
     * Click on the "`LoopWidgetExtension`" identifier to open the `Edit Your App ID Configuration` screen.
 
@@ -304,7 +304,7 @@ In your fork of LoopWorkspace:
 
 You must run the action `Create Certificates` again because the `Identifiers` were updated. Wait for this to succeed before trying to build.
 
-??? tip "For detailed instructions (Click to open/close)"
+???+ tip "Detailed instructions (Click to open/close)"
     Refer to the graphic below for the numbered steps:
 
     1. Click on the "<code>Actions</code>" tab of your <code>LoopWorkspace</code> repository

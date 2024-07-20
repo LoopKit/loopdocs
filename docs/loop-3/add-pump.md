@@ -316,10 +316,14 @@ You can do this via: "Settings" -> "User options" -> "4. Alarm"
 
 ### (Optional) Check if you need a heartbeat
 
-Most CGM provide a live Bluetooth connection, which prevents the *Loop* app from going to a suspended state.
-When the *Loop* app is in a suspended state, it is not possible to run the algorithm in the background.
+Most CGM provide a live Bluetooth connection, which the *Loop* app uses as a heartbeat to wake the app with each CGM reading.
+Without a heartbeat, the *Loop* app will not run the algorithm when the app is in the background or the phone is locked.
+
+Some pumps can also provide a heartbeat if the CGM you choose cannot provide one.
+
 DanaKit doesn't provide a heartbeat by default.
-Therefore, it is important to check if your CGM provides a heartbeat, and if it doesn't to enable it [see documentation](../troubleshooting/dana-heartbeat.md).
+
+Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-heartbeat.md).
 
 
 ## Change Pump Type
