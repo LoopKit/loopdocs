@@ -10,7 +10,7 @@ The current released version for the *Loop* app is 3.4.0. The dates and contents
 
 ### What Version Do I Have?
 
-Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left. This graphic was generated with an older version.
+Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left.
     
 ![Determine current app version on app settings screen](img/app-version.svg){width="400"}
 {align="center"}
@@ -22,6 +22,15 @@ Release information is always found on the [*GitHub*&nbsp;_<span translate="no">
 Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
 
 ## Loop 3 Version History
+
+### Loop v3.4.1
+
+*Loop* v3.4.1 was released on 19 July 2024.
+
+This was a patch that fixed errors with the Browser Build. No other changes were made.
+
+* [Link to release notes for Loop 3.4.1](https://github.com/LoopKit/Loop/releases/tag/v3.4.1){: target="_blank" }
+
 
 ### Loop v3.4.0
 

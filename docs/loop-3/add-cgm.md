@@ -11,13 +11,13 @@ Loop can be connected to the following CGMs:
 
 * CGMs that reside on the same phone (internet not required)
     * [Dexcom G5](#dexcom-g5-g6-one)
-    * [Dexcom G6](#dexcom-g5-g6-one) (use this for Dexcom ONE)
-    * [Dexcom G7](#dexcom-g7) **(Loop 3 only)**
+    * [Dexcom G6 or ONE](#dexcom-g5-g6-one)
+    * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
     * [Libre](#libre) **(Loop 3.4 and later)**
         * Only some Libre sensors are supported; some have encryption that limits DIY use
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
-        * **You must [add pump](add-pump.md) first**
+        * **You must [add the Medtronic pump](add-pump.md) first**
             * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
 * CGMs that require active internet (WiFi or Cell)
     * [*Dexcom Share*](#dexcom-share-as-a-cgm)
@@ -112,7 +112,7 @@ Your selection to enable [Remote Upload from Loop](#remote-upload-from-loop) mus
 
 You do **NOT** need your Share account info listed in Loop settings if you are using a G5 or G6 system. The transmitter ID is sufficient. In fact, you should leave your Share credentials blank so that you don't accidentally become internet-dependent for CGM data if you forget to update your transmitter ID when you start a new transmitter.
 
-### Dexcom G7
+### Dexcom G7 or ONE+
 
 This is only available on Loop 3.
 
