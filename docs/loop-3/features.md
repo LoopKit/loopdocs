@@ -27,7 +27,7 @@ Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to
 
 ## Algorithm Experiments
 
-Two algorithm experiments have been added to dev. These are _<span translate="no">Glucose Based Partial Application</span>_ and _<span translate="no">Integral Retrospective Correction</span>_. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
+Two algorithm experiments are now available in the *Loop* app (version 3.4.0 or later). These are _<span translate="no">Glucose Based Partial Application</span>_ and _<span translate="no">Integral Retrospective Correction</span>_. They can be viewed on the Loop Settings screen just below Therapy Settings and Usage Data Sharing as shown in the graphic below:
 
 ![algorithm experiments](img/algorithm-experiments.svg){width="650"}
 {align="center"}
