@@ -1635,9 +1635,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#optional-enable-background-sound" class="md-nav__link">
+  <a href="#optional-check-if-you-need-a-heartbeat" class="md-nav__link">
     <span class="md-ellipsis">
-      (Optional) Enable background sound
+      (Optional) Check if you need a heartbeat
     </span>
   </a>
   
@@ -2423,6 +2423,27 @@
   
   <span class="md-ellipsis">
     MDT Pump Battery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/dana-heartbeat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dana Heartbeat
   </span>
   
 
@@ -3505,9 +3526,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#optional-enable-background-sound" class="md-nav__link">
+  <a href="#optional-check-if-you-need-a-heartbeat" class="md-nav__link">
     <span class="md-ellipsis">
-      (Optional) Enable background sound
+      (Optional) Check if you need a heartbeat
     </span>
   </a>
   
@@ -3562,7 +3583,7 @@
 <li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr></li>
 <li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH</li>
 <li>Dana-i / DanaRS-v3 (Coming soon)<ul>
-<li>Note: DanaRS-v1 or any Dana korean versions are not supported (or is untested)</li>
+<li>Note: DanaRS-v1 or any Dana korean versions are not supported</li>
 <li>A special <abbr title="a copy of code in a github repository other than the original">fork</abbr> is required at this time (see <a href="../../build/pump/#sooil-dana-pumps">link</a> for details)</li>
 </ul>
 </li>
@@ -3772,8 +3793,8 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Check your DanaRS version before starting</p>
-<p>Only the DanaRS-v3 is supported, every other version is not supported or is untested (The korean versions are untested for example).
-To check your DanaRS version, please go to "Analyze" -&gt; "Model information". The version should be at least <code>xxx-3.0.0</code></p>
+<p>Only the DanaRS firmware v3.0 or higher is supported, every other version is not supported or is untested (The korean versions are untested for example).
+To check your DanaRS version, please go to "Analyze" -&gt; "Model information". The version should be at least <code>xxx-3.0.0</code>.</p>
 <p align="center"><img alt="DanaRS-v3 version menu" src="../img/danars-v3-version.jpeg" width="450" /></p>
 </div>
 <p>When you select the "Dana-i/RS" option, you will be prompted to select your pump model.
@@ -3829,63 +3850,12 @@ Therefore, we strongly recommend user to enable the silent tones.</p>
 <p>Sadly, only the Dana distributors know how to enable this feature at the moment.
 But we do know you need to set your alarm to sound.
 You can do this via: "Settings" -&gt; "User options" -&gt; "4. Alarm"</p>
-<h3 id="optional-enable-background-sound">(Optional) Enable background sound<a class="headerlink" href="#optional-enable-background-sound" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>An extra feature available for the Dana pumps is the background sound.
-This feature was developed in order to keep the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app running in the background.</p>
-<p>Normally, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> will have an active Bluetooth connection, which prevent the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app from being put into a suspended state.
-But when you are planning on using a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, like <a href="../add-cgm/#nightscout-remote-cgm">NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, <a href="../add-cgm/#dexcom-share-as-a-cgm">Dexcom Share</a>, etc, you rely on a active internet connection, and not on an active Bluetooth connection.</p>
-<p>The Dana pump cannot provide a Bluetooth heartbeat, because it will block the pump's UI.
-This will cause issue with regards to battery drain of the pump, but also when you want to replace the reservoir or cannula.
-For this reason, the background sound feature is made available.</p>
-<div class="admonition warning">
-<p class="admonition-title">Only activate this if truly needed</p>
-<p>Enabling this feature will put a big load on your iPhone's battery.
-Therefore, only use it if your sensor doesn't provide a heartbeat, i.e. the NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Dexcom Share, etc</p>
-</div>
-<p>In order to activate, follow these steps:</p>
-<ol>
-<li>
-<p>Activate the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes">UIBackgroundMode - audio</a>:</p>
-<ul>
-<li>
-<p>When <a href="../../build/overview/">building with Mac</a>, go to the LoopWorkspace <abbr title="program used to build an app">Xcode</abbr> project and select the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> project.
-Go to "Targets" -&gt; "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>" -&gt; "Signing &amp; Capabilities" and scroll down to "Background modes".
-Enable the checkbox for "Audio, AirPlay, and Picture in Picture".
-Then rebuild the app and go to step 2.
-<img alt="Xcode background sound example" src="../img/background-sound-xcode.png" /></p>
-</li>
-<li>
-<p>When <a href="../../gh-actions/gh-overview/">building with Browser</a>, you will need to make a change to the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>.
-Go to your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and press <code>.</code> on your keyboard.
-You will be redirected to a <code>github.dev</code> page with the code of your LoopWorkspace.
-Now go to ".github" -&gt; "workflows" -&gt; "build_loop.yml".
-Scroll down till you see the <code>- name: Fastlane Build &amp; Archive</code> command.
-Just before this command, add the following to this script (<a href="https://github.com/bastiaanv/LoopWorkspace/commit/67a1e42b9b771550afc14adf914ff98c37d96e67">example</a>):</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>- name: Update entitlement background sound
-  run: sed -i -e &#39;s/&lt;string&gt;bluetooth-central&lt;\/string&gt;/&lt;string&gt;bluetooth-central&lt;\/string&gt;&lt;string&gt;audio&lt;\/string&gt;/g&#39; Loop/Loop/Info.plist
-</code></pre></div>
-<ul>
-<li>To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
-Enter a message and press the green "Commit &amp; Push"-button.
-By pressing this button, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will automatically make a new browser build for you and push it to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>
-<img alt="Github web ide example" src="../img/background-sound-web-ide.png" /></li>
-</ul>
-</li>
-<li>
-<p>After you have done the onboarding of the pump (see steps above), go to the pump settings.
-    Scroll down the "Pump name" and long-press this row.
-    A <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> should pop-up with the question, whether you want to toggle Silent tones.</p>
-<p align="center">In order to activate this feature, the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> should say something like: <code>Yes, Enable silent tones</code>.
-When it says: <code>Yes, Disable silent tones</code>, it will disable the background sounds.
-<img alt="Loop example background sound" src="../img/background-sound-loop.jpeg" width="250" /></p>
-</li>
-<li>
-<p>Done!
-    Every time you put the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app in the background, it will play a toneless sound, which prevents it from suspending the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</p>
-</li>
-</ol>
+<h3 id="optional-check-if-you-need-a-heartbeat">(Optional) Check if you need a heartbeat<a class="headerlink" href="#optional-check-if-you-need-a-heartbeat" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Most <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> provide a live Bluetooth connection, which the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app uses as a heartbeat to wake the app with each <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading.
+Without a heartbeat, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app will not run the algorithm when the app is in the background or the phone is locked.</p>
+<p>Some pumps can also provide a heartbeat if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> you choose cannot provide one.</p>
+<p>DanaKit doesn't provide a heartbeat by default.</p>
+<p>Therefore, it is important to check if your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See <a href="../../troubleshooting/dana-heartbeat/">Dana Heartbeat Modes</a>.</p>
 <h2 id="change-pump-type">Change Pump Type<a class="headerlink" href="#change-pump-type" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Before changing from one pump type to another pump type, you must delete the old pump type.</p>
 <ul>
