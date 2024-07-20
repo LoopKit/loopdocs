@@ -203,7 +203,7 @@ The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
 
-### DanaRS-v3
+### DanaRS
 
 The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
