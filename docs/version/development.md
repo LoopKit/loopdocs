@@ -48,7 +48,8 @@ In addition to the easier to read error messages found with these updates, these
     * If it does not exist, one is created for you
     * Only the App Group ID must be added to the Identifiers; all other App services are    automatically added
 * For new builders and current 3.2.3 users updating to the next release
-    * The required branches, with `alive` in the name, required to enable automatic update and building is created automatically
+    * The branches with `alive` in the name required to enable automatic update and building are created automatically
+    * Make sure your GitHub repository is in sync with the LoopKit/LoopWorkspace repository
 
 These sections are still useful for version 3.5.0 `dev` users:
 

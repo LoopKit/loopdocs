@@ -138,6 +138,6 @@ Your default branch has been changed.
 
 ## Automatic Update & Build
 
-The automatic update and build features are available for both the released (`main`) and development (`dev`) branch. For any other branch name, there is not automatic update available but the automatic build will run monthly.
+The automatic update and build features are available for both the released (`main`) and development (`dev`) branch, but only for your default branch. For any other branch name set as your default branch, there is no automatic update available but the automatic build will run monthly.
 
 Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.
