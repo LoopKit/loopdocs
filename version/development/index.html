@@ -3483,11 +3483,6 @@
 <li>Automatically update your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace once a week if updates are available</li>
 </ul>
 <p>It is suggested that all users of the released code (main <abbr title="version of code within a single repository or workspace repository">branch</abbr>), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;in their  <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>  app.</p>
-<p>For users of the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.</p>
-<ul>
-<li><a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#gh_pat-workflow-permission" target="_blank">Configure <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></a></li>
-<li><a href="https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#modify-scheduled-building-and-synchronization" target="_blank">Modify Scheduled Building and Synchronization</a></li>
-</ul>
 <p>In addition to the easier to read error messages found with these updates, these additional simplifications include:</p>
 <ul>
 <li><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are broken into logical components, each of which provides an easy to understand error message if it fails which includes a suggested fix</li>
@@ -3496,9 +3491,9 @@
 <li>Only the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> ID must be added to the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>; all other App services are    automatically added</li>
 </ul>
 </li>
-<li>For new builders and current 3.2.2 users updating to the next release<ul>
-<li>The &nbsp;<span translate="no">alive</span>&nbsp; <abbr title="version of code within a single repository or workspace repository">branch</abbr> needed to enable automatic building is created automatically</li>
-<li>If their <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> does not have <code>repo, workflow</code> permission, a prominent message is displayed with each Action completed</li>
+<li>For new builders and current 3.2.3 users updating to the next release<ul>
+<li>The branches with <code>alive</code> in the name required to enable automatic update and building are created automatically</li>
+<li>Make sure your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> is in sync with the LoopKit/LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></li>
 </ul>
 </li>
 </ul>
