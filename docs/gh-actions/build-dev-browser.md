@@ -89,18 +89,11 @@ If you have one branch as default, for example `main`, and choose to build a dif
     * Refresh the browser if you are unsure if the action started
     * Do not start a new action until the first one completes
 
-#### Automatic Creation of `alive branch`
-
-The `alive branch` is created automatically when you run the `Build Loop` action using the `dev branch` (version 3.3 or later). It is used as part of the automatic build process that will be released with the next version.
-
-??? warning "I got an error regarding the `alive branch` (click to open/close)"
-    * Sometimes you get an error about the `alive branch`
-    * If you do get an error, delete the `alive branch` and run the `Build Loop` action again
-        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
-
 ## Automatic Update & Build
 
-The automatic update and build features of the development branch are only available if you set the `dev` branch as your default branch. Be sure to read the [Automatic Update & Build](automatic.md) if you did this.
+The [Automatic Update & Build](automatic.md){: target="_blank" } features are applied to the default branch of your repository. Normally this is the `main` branch. If you are a developer or tester who wants the `dev` branch to be built automatically, you must configure it as your default branch. Be aware that for this situation, you will not get automatic updates of released code.
+
+Most people should keep `main` as default and make a considered decision when to launch a manual build of the `dev` branch. At that time, it will automatically update to the latest `dev` commit unless you have modified your environment settings: [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }.
 
 ## Change Default `Branch`
 
@@ -145,6 +138,6 @@ Your default branch has been changed.
 
 ## Automatic Update & Build
 
-The automatic update and build features are available for both the released (`main`) and development (`dev`) branch.
+The automatic update and build features are available for both the released (`main`) and development (`dev`) branch. For any other branch name, there is not automatic update available but the automatic build will run monthly.
 
 Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.

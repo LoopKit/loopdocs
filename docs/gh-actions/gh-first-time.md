@@ -804,6 +804,12 @@ Refer to the graphic below for the numbered steps:
 
 The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.
 
+!!! tip "Hit Refresh"
+    After you tap the green Run workflow button, *GitHub* can be slow to update.
+
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
+
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
     * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.

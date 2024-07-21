@@ -41,20 +41,14 @@ Note that the automatic build feature is opt-out. In other words, unless you tak
 
 It is suggested that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;_<span translate="no">Loop</span>_&nbsp;in their  *TestFlight*  app.
 
-For users of the `dev` branch, it is not uncommon to disable the automatic update portion so they can choose when to update their development version, but should probably keep the monthly build portion of the process.
-
-* [Configure GH_PAT](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#gh_pat-workflow-permission){: target="_blank" }
-* [Modify Scheduled Building and Synchronization](https://github.com/LoopKit/LoopWorkspace/blob/dev/fastlane/testflight.md#modify-scheduled-building-and-synchronization){: target="_blank" }
-
 In addition to the easier to read error messages found with these updates, these additional simplifications include:
 
 * Actions are broken into logical components, each of which provides an easy to understand error message if it fails which includes a suggested fix
 * A new builder no longer needs to create the &nbsp;<span translate="no">Match-Secrets repository</span>
     * If it does not exist, one is created for you
     * Only the App Group ID must be added to the Identifiers; all other App services are    automatically added
-* For new builders and current 3.2.2 users updating to the next release
-    * The &nbsp;<span translate="no">alive</span>&nbsp; branch needed to enable automatic building is created automatically
-    * If their GH_PAT does not have `repo, workflow` permission, a prominent message is displayed with each Action completed
+* For new builders and current 3.2.3 users updating to the next release
+    * The required branches, with `alive` in the name, required to enable automatic update and building is created automatically
 
 These sections are still useful for version 3.5.0 `dev` users:
 
