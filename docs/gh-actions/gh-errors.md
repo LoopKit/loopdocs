@@ -41,6 +41,10 @@ These are some of the most common errors to date.
 1. You skipped running one of the actions
 1. You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span>
     * Be sure to read [Misleading Error Message](#misleading-error-message)
+1. You got an error regarding a branch with `alive` in the name
+    * You can delete any branch that starts with the name `alive` and try again
+    * See [Automatic Creation of `alive branch`](automatic.md#automatic-creation-of-alive-branch){: target="_blank" }
+
 
 ## Error Annotations
 
