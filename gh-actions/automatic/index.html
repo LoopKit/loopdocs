@@ -944,6 +944,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#successful-weekly-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful Weekly Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#successful-monthly-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful Monthly Action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3204,6 +3228,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#successful-weekly-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful Weekly Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#successful-monthly-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful Monthly Action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3303,6 +3351,15 @@
 <li>Keep your <em>Apple Developer</em> account up to date with agreements signed</li>
 <li><a href="../gh-update/#renew-certificate" target="_blank">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> once a year</li>
 </ul>
+<h3 id="successful-weekly-action">Successful Weekly Action<a class="headerlink" href="#successful-weekly-action" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Normally, you will see a successful <code>build action</code> once a week. This happens at 08:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr> every Wednesday.</p>
+<p>If there are no updates to the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, your actions show a very short, successful <code>build action</code> as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. </p>
+<p><img alt="normal weekly check for updates when there are no updates" src="../img/normal-check-for-updates.png" /></p>
+<p>If there is an update, the <code>build action</code> updates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> and creates a new build. </p>
+<p>In that case, you should check your favorite information site to find out what the update was and then, when you are ready, install the update using the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone.</p>
+<h3 id="successful-monthly-action">Successful Monthly Action<a class="headerlink" href="#successful-monthly-action" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>On the first day of every month at 06:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>, you will see a successful <code>build action</code>. The purpose of this build is to provide a recent version of the app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> so you are never in a situation where you have no app on your phone.</p>
+<p>You start getting <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">Notifications</a> when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app. You do not want to get the dreaded "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)</p>
 <h2 id="modify-automatic-building">Modify Automatic Building<a class="headerlink" href="#modify-automatic-building" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For someone using <a href="../build-dev-browser/">development code</a> for their own use, they could decide to choose when to update their <code>fork</code> to the most recent <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. They can still have the advantage of automatic building without automatic updates; in other words, they want a new build added to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> every month. There may be other configurations someone would choose. These options are available starting with <abbr title="Latest release with major updates">Loop 3</abbr>.3.0 (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and later.</p>
 <p>You can affect the default behavior:</p>
