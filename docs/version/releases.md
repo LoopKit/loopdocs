@@ -52,7 +52,8 @@ These features are added:
 * Dexcom and Nighscout Users: automatic update of SAGE to Nightscout when Dexcom sensor is changed
 * Medtronic and Nighscout Users: automatic update of CAGE to Nightscout when set is changed
 * Omnipod Users:
-    * Cannula Insertion and Pod Deactivate uses a slider to minimize accidentally tap of a button
+    * Cannula Insertion uses a slider to minimize accidental insertion before pod is attached to the body
+    * Pod Deactivate uses a slider to minimize accidental deactivation
     * Pod Set up from Pod Pairing until Cannula is inserted now disables auto-lock of screen
 * Browser Builders:
     * improved error messages and automatic rebuild of app to *TestFlight*

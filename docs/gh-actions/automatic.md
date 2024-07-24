@@ -19,6 +19,24 @@ You still need to **take these actions** to ensure a recent build of the *Loop* 
 * Keep your *Apple Developer* account up to date with agreements signed
 * [Renew Certificate](gh-update.md#renew-certificate){: target="_blank" } once a year
 
+### Successful Weekly Action
+
+Normally, you will see a successful `build action` once a week. This happens at 08:00 UTC every Wednesday.
+
+If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. 
+
+![normal weekly check for updates when there are no updates](img/normal-check-for-updates.png)
+
+If there is an update, the `build action` updates your fork and creates a new build. 
+
+In that case, you should check your favorite information site to find out what the update was and then, when you are ready, install the update using the *TestFlight* app on your phone.
+
+### Successful Monthly Action
+
+On the first day of every month at 06:00 UTC, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
+
+You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
+
 ## Modify Automatic Building
 
 For someone using [development code](build-dev-browser.md) for their own use, they could decide to choose when to update their `fork` to the most recent commit. They can still have the advantage of automatic building without automatic updates; in other words, they want a new build added to TestFlight every month. There may be other configurations someone would choose. These options are available starting with Loop 3.3.0 (`dev` branch) and later.
