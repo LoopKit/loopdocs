@@ -10,7 +10,7 @@
             * DASH pods can be used without a RileyLink
                 * restarting your app or turning Bluetooth on and off replaces the Rileylink power cycle trouble-shooting tip
             * Nightscout with Heroku is no longer free, but there are other options
-            * you do NOT need a Mac computer if you use [Build with Browser](../gh-actions/gh-overview.md)
+            * you do NOT need a Mac computer if you use [Build with Browser](../browser/bb-overview.md)
     - 1-3 days to test settings for safety and to get the most out of the *Loop* app
         * This step can be done after you build the *Loop* app, just stay in [`Open Loop`](../operation/loop/open-loop.md) while you test
 

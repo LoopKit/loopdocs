@@ -10,7 +10,7 @@
 
 !!! tip "Build with Browser"
 
-    If you do not have a Mac, you can build&nbsp;<span translate="no">Loop 3</span>&nbsp;with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../gh-actions/gh-overview.md).
+    If you do not have a Mac, you can build&nbsp;<span translate="no">Loop 3</span>&nbsp;with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../browser/bb-overview.md).
 
     - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md)
     - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com){: target="_blank" }
@@ -26,7 +26,7 @@
 
 
 !!! question "FAQs"
-    - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../gh-actions/gh-overview.md) with any browser on any computer.
+    - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../browser/bb-overview.md) with any browser on any computer.
     - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can but only if your PC uses Intel chips. Please read this FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build).
     - **"How often do I need to use the computer if I choose the build with *Mac* method?"** Computer access is required when
         * Initially installing the Loop app
@@ -38,7 +38,7 @@ If you have access to a computer with MacOS 13.5 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-The current development version and the next release of&nbsp;_<span translate="no">Loop</span>_&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
+The current development version and the next release of&nbsp;_<span translate="no">Loop</span>_&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
 
 When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 
@@ -103,11 +103,11 @@ Ventura is required for building the *Loop* app on a phone running iOS 16.4 or h
 
 ## Older Macs
 
-Look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required). Works with any computer (PC or Mac or Tablet).
+Look into building with [GitHub Actions](../browser/bb-overview.md) - no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required). Works with any computer (PC or Mac or Tablet).
 
 ## Next Step:
 
 If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
 
 !!! warning "Free ID"
-    The free ID method only works when using the build with *Mac* method. The [Build with Browser](../gh-actions/gh-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.
+    The free ID method only works when using the build with *Mac* method. The [Build with Browser](../browser/bb-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.

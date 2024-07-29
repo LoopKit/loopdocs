@@ -23,7 +23,7 @@
     One Time: Complete the information for the Digital Service Act Compliance
 
     * This is a new requirement that must be completed one time
-    * See [Digital Service Act Compliance](gh-first-time.md#digital-service-act-compliance){: target="_blank" } for instructions
+    * See [Digital Service Act Compliance](prepare-app.md#digital-service-act-compliance){: target="_blank" } for instructions
 
 ???+ abstract "Page Summary (click to open/close)"
     **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
@@ -55,7 +55,7 @@
 
 Under ordinary circumstances, you do not *have to* rebuild or update your *Loop* app until *TestFlight* forces you to (90 days). However, there is no harm in building more frequently.
 
-* You control when the new app is installed on your phone, refer to: [Install on Phone: Disable Automatic Install from *TestFlight*](gh-deploy.md#disable-automatic-install-from-testflight)
+* You control when the new app is installed on your phone, refer to: [Install on Phone: Disable Automatic Install from *TestFlight*](phone-install.md#disable-automatic-install-from-testflight)
 * You always want a build available in the *TestFlight* app
     * You can use *TestFlight* to quickly install the app if you loose or break your phone and need to replace it
     * You can use *TestFlight* to quickly install the app if someone accidentally deletes the app from your phone
@@ -96,7 +96,7 @@ Digital Service Act Compliance
 
 * Configure yourself as a non-trader
     * This is a new requirement that must be completed one time
-    * See [Digital Service Act Compliance](gh-first-time.md#digital-service-act-compliance){: target="_blank" } for instructions
+    * See [Digital Service Act Compliance](prepare-app.md#digital-service-act-compliance){: target="_blank" } for instructions
 
 !!! warning "Wait After You Agree"
     It typically takes 15 minutes before your updated agreement is available so you can complete your build.
@@ -152,13 +152,13 @@ Digital Service Act Compliance
     {align="center"}
 
     !!! question "Deleting the certs/distribution folder did not work for me"
-        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](gh-errors.md#reset-match-secrets){: target="_blank" }
+        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](bb-errors.md#reset-match-secrets){: target="_blank" }
 
 1. While still within your *Github* account, navigate to your fork of LoopWorkspace.
     * You can do this several ways, but one method is demonstrated by the GIF below
     * Click on your username and then `Repositories` and select `LoopWorkspace`
     * Once you are on your LoopWorkspace repository, click on the link below and follow the instructions provided to create your certificates.
-    * Run the [`Action`: `Create Certificates`](gh-first-time.md#create-certificates){: target="_blank" }
+    * Run the [`Action`: `Create Certificates`](certs.md#create-certificates){: target="_blank" }
 
     ![navigate to your LoopWorkspace repository](img/switch-nav.gif){width="650"}
     {align="center"}
@@ -258,8 +258,8 @@ In your fork of LoopWorkspace:
 
     * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-        * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-        * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+        * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
+        * Resolve the error and repeat the Action: [Add Identifiers](identifiers.md#add-identifiers)
 
 #### Add `App Group` to New `Identifier`
 
@@ -298,7 +298,7 @@ In your fork of LoopWorkspace:
 !!! note "Other Identifiers"
     All other identifiers should be already set up.
 
-    * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
+    * If they are not, refer to [Configure to Use Browser: Add App Group to Identifiers](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
 
 #### Create Certificates
 
@@ -317,7 +317,7 @@ You must run the action `Create Certificates` again because the `Identifiers` we
         {align="center"}
 
     1. Wait a minute or two for the action to finish
-        * If this action fails, head over to [Action: 3. Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
+        * If this action fails, head over to [Action: 3. Create Certificates Errors](bb-errors.md#action-create-certificates-errors)
 
 #### 4: Build
 
@@ -340,7 +340,7 @@ If a new release is announced at [Current Release](../version/releases.md#curren
 
 If you are using the dev branch, head over to [Build Development Version](#build-development-version) for information.
 
-Otherwise, head over to [Errors with Browser](gh-errors.md).
+Otherwise, head over to [Errors with Browser](bb-errors.md).
 
 #### *Apple* Email to Ignore
 
@@ -355,7 +355,7 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
     * Click on the most recent Build job with the red x by it
-    * If the details show this message, [`Could not install WWDR certificate`](gh-errors.md#could-not-install-wwdr-certificate)
+    * If the details show this message, [`Could not install WWDR certificate`](bb-errors.md#could-not-install-wwdr-certificate)
          * This means *Apple* did not reply to *GitHub* as fast as *GitHub* expected
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
@@ -376,11 +376,11 @@ The updated app will show up in your *TestFlight* app.
 
 #### TestFlight Automatic Update Disabled
 
-Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../gh-actions/gh-deploy.md#disable-automatic-install-from-testflight), you control when to install the app on the phone.
+Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../browser/phone-install.md#disable-automatic-install-from-testflight), you control when to install the app on the phone.
 
 * **This is the recommended option**
 * Open *TestFlight* on your phone and click `Install` as shown in the GIF below
-* If you are building for a child, follow the [*TestFlight* for a Child](gh-deploy.md#testflight-for-a-child) instructions again
+* If you are building for a child, follow the [*TestFlight* for a Child](phone-install.md#testflight-for-a-child) instructions again
 
 ![install Loop from  *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}

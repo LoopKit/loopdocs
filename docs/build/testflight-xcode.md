@@ -3,7 +3,7 @@
 There are several different methods for making use of TestFlight:
 
 * Test an app someone else is developing
-* Use the [Build with Browser](../gh-actions/gh-overview.md) method to build and distribute your Loop app to your iPhone or that of a family member
+* Use the [Build with Browser](../browser/bb-overview.md) method to build and distribute your Loop app to your iPhone or that of a family member
 * Use *TestFlight* as a remote distribution (and backup) for an app you build using *Xcode*
 
 This guide can also be followed to install other apps you build with *Xcode* via *TestFlight*. Examples include <code>Loop Follow</code>, <code>Loop Caregiver</code>, <code>xDrip4iOS</code> and <code>GlucoseDirect</code>.
@@ -14,7 +14,7 @@ Some useful features of using TestFlight to install Loop:
 * You can update Loop on your kid's phone while they're away at college
 * Reinstalling Loop on the fly is quick and easy from your phone, even if you accidentally delete the app, see [Protect that App](build-app.md#protect-that-app), or need to install Loop on a brand new phone
 
-Since apps built with TestFlight expire after 90 days, it is suggested you also setup a build using the [Build with Browser](../gh-actions/gh-overview.md) method even if you don't plan on using it. The GitHub build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:
+Since apps built with TestFlight expire after 90 days, it is suggested you also setup a build using the [Build with Browser](../browser/bb-overview.md) method even if you don't plan on using it. The GitHub build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:
 
 * Your Xcode built Loop in TestFlight expires
 * An urgent update to Loop is released
@@ -103,7 +103,7 @@ Now that it's uploaded to TestFlight, it will take a little bit before it finish
 ![App Store TestFlight page](img/tf11.png){width="700"}
     {align="center"}
 
-To install Loop from TestFlight onto your iPhone, follow the instructions on the [GitHub Deploy](../gh-actions/gh-deploy.md) page.
+To install Loop from TestFlight onto your iPhone, follow the instructions on the [GitHub Deploy](../browser/phone-install.md) page.
 
 ## Update App
 

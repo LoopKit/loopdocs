@@ -11,7 +11,7 @@ The&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;website is organized as fol
 * [Intro](overview-intro.md): Introduction to&nbsp;<span translate="no">LoopDocs</span>
     * [Requirements](requirements.md): What is needed regardless of build method
 * There are two ways to build - you get the same app either way
-    * [Build with Browser](../gh-actions/gh-overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser on any computer or tablet
+    * [Build with Browser](../browser/bb-overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app using a browser on any computer or tablet
     * [Build with *Mac*](../build/overview.md): Build&nbsp;<span translate="no">Loop</span>&nbsp;app with a Mac the first time, or [Update](../build/updating.md) next time
 * [Set Up](../loop-3/loop-3-overview.md): How to set up the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Operate](../operation/loop/open-loop.md): How to use the&nbsp;<span translate="no">Loop</span>&nbsp;app

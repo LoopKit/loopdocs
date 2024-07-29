@@ -138,7 +138,7 @@ Scroll down the bottom of the `Config Vars` lines until you find the last blank 
 
 #### Remote Build Config Var Requirement
 
-That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../gh-actions/gh-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/){: target="_blank" }. If you later return to a direct *Xcode* build to your phone, you must remove that config var or remote commands will not work.
+That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../browser/bb-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/){: target="_blank" }. If you later return to a direct *Xcode* build to your phone, you must remove that config var or remote commands will not work.
 
 When executed properly, you should have something that looks like this for the three (or four) new variables that you added:
 
@@ -154,7 +154,7 @@ When the *Nightscout* config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the
 ### Do Not Confuse Your Keys
 
 !!! danger "API Key vs APN Key"
-    If you build with the [Build with Browser](../gh-actions/gh-overview.md), you may notice &nbsp;<span>the &nbsp;<span translate="no">Application Programming Interface (API)</span>&nbsp; key</span>&nbsp; has the same type of format as &nbsp;<span>the &nbsp;<span translate="no">Apple Push Notification (APN)</span>&nbsp; key</span>. The keys for both purposes are of type `p8`, but should not be confused.
+    If you build with the [Build with Browser](../browser/bb-overview.md), you may notice &nbsp;<span>the &nbsp;<span translate="no">Application Programming Interface (API)</span>&nbsp; key</span>&nbsp; has the same type of format as &nbsp;<span>the &nbsp;<span translate="no">Apple Push Notification (APN)</span>&nbsp; key</span>. The keys for both purposes are of type `p8`, but should not be confused.
 
     The Secrets for building with *GitHub* use the API Key.
     

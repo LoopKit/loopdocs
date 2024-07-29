@@ -38,7 +38,7 @@ You can build the *Loop Caregiver* app using the [Build with Browser](#build-wit
 
 ###  Build with Browser
 
-The Build with Browser method is documented on the [Build Other Apps with Browser](../gh-actions/gh-other-apps.md) page.
+The Build with Browser method is documented on the [Build Other Apps with Browser](../browser/other-apps.md) page.
 
 ### Build with *Mac*
 

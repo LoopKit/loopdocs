@@ -15,7 +15,7 @@ In both cases, you build the code to install over an existing app on your phone 
     * [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement){: target="_blank" }
 
 * If you use the Browser build method:
-    * Follow the steps on [Update/Rebuild with Browser](../gh-actions/gh-update.md)
+    * Follow the steps on [Update/Rebuild with Browser](../browser/bb-update.md)
     * Within an hour that new build should be available via TestFlight to install on your phone
 * If you use the build with *Mac* method:
     * Follow the steps on [Update/Rebuild with *Mac*](../build/updating.md)
@@ -81,7 +81,7 @@ Regardless of the build method, always check your *Apple* Developer Account stat
 
 #### Updates with the Browser build method:
 
-Go to [Update/Rebuild with Browser](../gh-actions/gh-update.md) and follow the instructions.
+Go to [Update/Rebuild with Browser](../browser/bb-update.md) and follow the instructions.
 
 #### Updates with the build with *Mac* method:
 

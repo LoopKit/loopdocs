@@ -29,7 +29,7 @@ With Loop 3.4 and later, apps installed using GitHub Browser Build method report
 * When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most
 * Simply tap on the `More Info` button of the notification for more information
     * Mac-Xcode: [LoopDocs Updating](../../build/updating.md)
-    * GitHub: [LoopDocs GitHub Update](../../gh-actions/gh-update.md)
+    * GitHub: [LoopDocs GitHub Update](../../browser/bb-update.md)
 
 ### Free (7-day) Loop App Expiration Notification
 
@@ -162,4 +162,4 @@ Many people use additional apps to assist in following a loved one or to support
 
 ![loop follow graphic from the README page](img/loop-follow.png)
 
-For more information, please read the [Loop Follow](https://www.loopandlearn.org/loop-follow){: target="_blank" } documentation. You can build Loop Follow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../gh-actions/gh-other-apps.md).
+For more information, please read the [Loop Follow](https://www.loopandlearn.org/loop-follow){: target="_blank" } documentation. You can build Loop Follow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../browser/other-apps.md).

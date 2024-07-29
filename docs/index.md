@@ -34,7 +34,7 @@ This site shows you step-by-step how to [**build**](intro/requirements.md){: tar
 
 * **You do not need a technical or computer background to do this**
 * **You can choose to build the *Loop* app several ways:**
-    * Use a [browser](gh-actions/gh-overview.md) on any computer or tablet and install it on your *iPhone* via *TestFlight*
+    * Use a [browser](browser/bb-overview.md) on any computer or tablet and install it on your *iPhone* via *TestFlight*
     * Use an **up-to-date** [*Mac* Computer](build/overview.md) and install it directly on your *iPhone*
 
 In order to become proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.

@@ -45,7 +45,7 @@
     * First turn off Bluetooth on the old phone
     * Review the IOB, COB and glucose trend on the old phone - that determines how long you need to run **Open Loop** on the new phone
     * Then build Loop on the new phone
-        * [Browser Build](../gh-actions/gh-deploy.md#subsequent-times-on-phone){: target="_blank" }: Open TestFlight and Install Loop
+        * [Browser Build](../browser/phone-install.md#subsequent-times-on-phone){: target="_blank" }: Open TestFlight and Install Loop
             * The TestFlight records were transferred to your new phone so no need to redeem a code
         * Mac Build: Plug the new phone into your computer
             * If you recently built to your old phone, you can use the same download - otherwise, you need to [Download Loop](../build/build-app.md#download-loop){: target="_blank" }
@@ -71,7 +71,7 @@
 
 ## Steps Required
 
-Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your&nbsp;_<span translate="no">Loop</span>_&nbsp;information is included and the&nbsp;_<span translate="no">Loop</span>_&nbsp;icon will appear, but the app will not open until you install&nbsp;_<span translate="no">Loop</span>_&nbsp;from either [*TestFlight*](../gh-actions/gh-deploy.md#install-app-with-testflight) or [*Mac* with *Xcode*](../build/build-app.md). 
+Changing phones means you have to rebuild the *Loop* app onto the new phone. When you transfer information from your old phone to your new one, all your&nbsp;_<span translate="no">Loop</span>_&nbsp;information is included and the&nbsp;_<span translate="no">Loop</span>_&nbsp;icon will appear, but the app will not open until you install&nbsp;_<span translate="no">Loop</span>_&nbsp;from either [*TestFlight*](../browser/phone-install.md#install-app-with-testflight) or [*Mac* with *Xcode*](../build/build-app.md). 
 
 The records on the new phone are from the time you started the transfer from the old phone to the new phone. The more recent records are transferred via Apple Health. You may want to adjust carbs after the transfer because those are not read by the *Loop* app. But if you enter them again and you are uploading to Nightscout or Tidepool - they will show up twice. Best to have COB and IOB close to zero when you start using your new phone.
 
@@ -101,12 +101,12 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 
 !!! abstract "New Phone Checklist for Build with Browser"
     * The *Loop* app will install from *TestFlight* onto the most recent iOS
-    * If a new version is available, we recommend updating and building to the latest, see [Update with Browser](../gh-actions/gh-update.md){: target="_blank" }
+    * If a new version is available, we recommend updating and building to the latest, see [Update with Browser](../browser/bb-update.md){: target="_blank" }
 
 !!! abstract "New Phone Checklist for Build with *Mac*"
     * Are your [Mac and Xcode versions](../build/xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other){: target="_blank" } compatible with the latest iOS version?
     * If not, you need to install the correct versions on your *Mac*
-    * If you cannot do that, you should consider [Build with Browser](../gh-actions/gh-overview.md)
+    * If you cannot do that, you should consider [Build with Browser](../browser/bb-overview.md)
 
 ### Different Developer ID
 
@@ -155,7 +155,7 @@ It is easier if you transfer information from the old phone to the new phone bef
 
 * Open *TestFlight* app on new phone
 * Install the app on your new phone from *TestFlight*
-* If necessary, review [*TestFlight* for a Child](../gh-actions/gh-deploy.md#testflight-for-a-child)
+* If necessary, review [*TestFlight* for a Child](../browser/phone-install.md#testflight-for-a-child)
 
 #### Build using *Mac*
 

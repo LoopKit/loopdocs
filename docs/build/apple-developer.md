@@ -52,7 +52,7 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 2. The paid developer account is $99 per year. The default setting is to auto-renew annually. You can change that selection in your developer account settings at any time.
 3. If your household has multiple Loop users, only one developer account is needed.  That one developer account can be used to build Loop on multiple phones.
 1. If you use the Browser Build method
-    * You must [Update with Browser](../gh-actions/gh-update.md) the build once every 90 days
+    * You must [Update with Browser](../browser/bb-update.md) the build once every 90 days
     * You must have a Paid Developer account
 1. If you use the Build with *Mac* method
     * If you have a paid developer account, you must build at least once a year

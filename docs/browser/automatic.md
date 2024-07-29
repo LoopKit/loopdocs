@@ -1,6 +1,6 @@
 ## Overview
 
-The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for released versions 3.4.1 and newer:
+The instructions on the [Configure to Use Browser](intro-summary.md) page will, unless you make a change, automatically take the following actions for released versions 3.4.1 and newer:
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
     * When an update to the default `branch`, typically `main`, is detected, a new build is created automatically and uploaded to *TestFlight*
@@ -12,12 +12,12 @@ This only works because of special branches that are automatically created in yo
 
 * [What are the `alive branches` and why do I need them?](#what-are-the-alive-branches-and-why-do-i-need-them)
 
-Regardless of your choice, please [Disable Automatic Installation from *TestFlight*](gh-deploy.md#disable-automatic-install-from-testflight){: target="_blank" }. You should be alert any time your *Loop* app is updated. Check that all settings are maintained and pay attention to make sure the app behavior is nominal.
+Regardless of your choice, please [Disable Automatic Installation from *TestFlight*](phone-install.md#disable-automatic-install-from-testflight){: target="_blank" }. You should be alert any time your *Loop* app is updated. Check that all settings are maintained and pay attention to make sure the app behavior is nominal.
 
 You still need to **take these actions** to ensure a recent build of the *Loop* app is available in *TestFlight* for you to install on your phone when you choose:
 
 * Keep your *Apple Developer* account up to date with agreements signed
-* [Renew Certificate](gh-update.md#renew-certificate){: target="_blank" } once a year
+* [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } once a year
 
 ### Successful Weekly Action
 
@@ -120,14 +120,14 @@ If you choose not to have automatic building enabled, be sure the `GH_PAT` has `
 What if I decide I don't want the automatic building feature?
 
 * If you are using the released version of Loop, please leave automatic building running
-    * Please read [TestFlight Automatic Updates](gh-deploy.md#automatic-update-build-install) on how to configure TestFlight so you choose when the updated app gets installed on your phone
+    * Please read [TestFlight Automatic Updates](phone-install.md#automatic-update-build-install) on how to configure TestFlight so you choose when the updated app gets installed on your phone
     * Otherwise, you may see the dreaded "Loop Beta has expired" message, have a Loop that won't open and not have a version ready to go in TestFlight that you can install within a few seconds
 
 * If you are taking a break from Loop and want to stop monthly Build emails, consider disabling actions for the `Build Loop` action for your app.
     * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow){: target="_blank" }
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
-* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](gh-first-time.md) to restore ability to build Loop with GitHub.
+* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](intro-summary.md) to restore ability to build Loop with GitHub.
 
 ## What are the `alive branches` and why do I need them?
 

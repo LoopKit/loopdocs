@@ -125,7 +125,7 @@ If this is a feature you want turned off, please follow the directions on the Co
 
 If you add an Apple Watch after building Loop using Xcode on a computer, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app.
 
-If you use the new, Loop 3 only, [Build Loop using GitHub Actions](../../gh-actions/gh-overview.md) process that enables building without needing a Mac, the watch app should work so long as you have the watch paired to your phone when you install from TestFlight.
+If you use the new, Loop 3 only, [Build Loop using GitHub Actions](../../browser/bb-overview.md) process that enables building without needing a Mac, the watch app should work so long as you have the watch paired to your phone when you install from TestFlight.
 
 ## Watch Hardware and OS Requirements
 

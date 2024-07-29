@@ -13,12 +13,12 @@
 !!! warning "For Experienced Builders"
     Building the development (`dev` branch) is not typically used for your first attempt at building the *Loop* app.
 
-    The instructions on this page assume you are familiar with building the *Loop* app using a browser as detailed on [Configure to use Browser](gh-first-time.md)
+    The instructions on this page assume you are familiar with building the *Loop* app using a browser as detailed on [Configure to use Browser](intro-summary.md)
 
     * You should be following along with zulipchat when using the `dev branch`
     * Summary build updates can be found under the [One-Time Changes](#one-time-changes) section
 
-You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either `dev` or main branch using the [GitHub First-Time](gh-first-time.md){: target="_blank" } instructions.
+You can build any desired branch (available at LoopKit/LoopWorkspace) using the *GitHub* Browser build method. This section is suitable if you have already built either `dev` or main branch using the [GitHub First-Time](intro-summary.md){: target="_blank" } instructions.
 
 The graphics on this page show the `dev` branch. If you want a different branch, just substitute that branch name for `dev`.
 

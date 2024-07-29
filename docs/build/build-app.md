@@ -24,7 +24,7 @@ If you do watch this video, please note that you no longer are required to delet
 
 ## Build with Browser
 
-If you previously used [Build with Browser](../gh-actions/gh-overview.md) to install Loop on this phone, you should [Disable Automatic Install from *TestFlight*](../gh-actions/gh-deploy.md#disable-automatic-install-from-testflight) to be sure the version of the app on the phone is the one you build with Xcode.
+If you previously used [Build with Browser](../browser/bb-overview.md) to install Loop on this phone, you should [Disable Automatic Install from *TestFlight*](../browser/phone-install.md#disable-automatic-install-from-testflight) to be sure the version of the app on the phone is the one you build with Xcode.
 
 ## <code>Developer Mode</code>
 
@@ -399,7 +399,7 @@ Sometimes, something goes wrong with the automatic signing. Just the fact that y
     * As you go through that page, ignore the steps that remove capabilities which require a paid `Apple Developer` account
     * Make sure you sign all 5 targets
     * Each signed target shows a `Bundle Identifier` with your 10-digit `Apple Developer Membership ID` embedded after `com.`
-    * If you don't know how to find that number, there are very clear directions in the [Build with Browser: Find `TEAMID`](../gh-actions/gh-first-time.md#find-teamid)
+    * If you don't know how to find that number, there are very clear directions in the [Build with Browser: Find `TEAMID`](../browser/secrets.md#find-teamid)
 
 ### Build Failed?
 

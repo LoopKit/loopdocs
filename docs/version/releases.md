@@ -142,7 +142,7 @@ Loop v3.0.0 was released on January 14, 2023.
     If you follow that link above, there is an `Assets` section with a zip link
 
     * Do not try to build from the zip link
-    * For Browser Build, refer to: [GitHub Overview](../gh-actions/gh-overview.md)
+    * For Browser Build, refer to: [GitHub Overview](../browser/bb-overview.md)
     * For Build with *Mac* refer to:
         * [Updating](../build/updating.md)
         * [Build the *Loop* App](../build/build-app.md)

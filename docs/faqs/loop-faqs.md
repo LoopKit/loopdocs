@@ -44,7 +44,7 @@ Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 
 * If you have a pump that requires a [RileyLink Compatible Device](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
 * Most people use a paid *Apple* Developer Account ($99/year)
-    * With a paid developer account, you can build using the [Build with Browser](../gh-actions/gh-overview.md); no *Mac* required
+    * With a paid developer account, you can build using the [Build with Browser](../browser/bb-overview.md); no *Mac* required
 * If you build on a *Mac* using *Xcode* [Build with *Mac*](../build/overview.md), you need a *Mac* or a PC with Intel chips on which you include a virtual Mac
     * The *Mac* must be kept up to date with recent operating system
     * The *Xcode* app (from from Apple) must also be updated regular
@@ -68,7 +68,7 @@ The *Apple* Developer License can be done for free, however, you will have to re
 
 ## Do I need to own my own *Apple* computer?
 
-You no longer need to own an *Apple* computer - see [Build with Browser](../gh-actions/gh-overview.md).
+You no longer need to own an *Apple* computer - see [Build with Browser](../browser/bb-overview.md).
 
 If you chose [Build with *Mac*](../build/overview.md), then you still don't **have** to own an *Apple* computer, but you do need to at least borrow one - or you can build using a virtual *Mac* if you have a PC with Intel chips (see next section).
 
@@ -76,13 +76,13 @@ If you are borrowing an *Apple* computer, look at the required minimum settings 
 
 ## Can I use a PC or Windows computer to build?
 
-You can build the *Loop* app using just a browser on any device: [Build with Browser](../gh-actions/gh-overview.md).
+You can build the *Loop* app using just a browser on any device: [Build with Browser](../browser/bb-overview.md).
 
 If you want to use [Build with *Mac*](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/){: target="_blank" } provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double-check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup){: target="_blank" } who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
-When you use the Browser Build method, you need to access a browser at least once every 90 days to [Update with Browser](../gh-actions/gh-update.md). This is simple enough to do that you can do the steps on your phone in just a few minutes. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.
+When you use the Browser Build method, you need to access a browser at least once every 90 days to [Update with Browser](../browser/bb-update.md). This is simple enough to do that you can do the steps on your phone in just a few minutes. Several people are already working on automated methods so that won't be required, but a manual Build Actions step is required for now.
 
 When you use Build with *Mac*: the short answer is (1) when you first build and (2) once per year minimum after that. (If you decide to use a free *Apple* Developer Account, you will need to get on the computer every 7 days.)
 
@@ -90,7 +90,7 @@ Loop code is updated periodically to include new features and bug fixes. When th
 
 Loop updates are **not** available through the iPhone's app store...instead you do the app update yourself
 
-* If using Browser build method: use this link: [Update with Browser](../gh-actions/gh-update.md#how-to-update-or-rebuild) 
+* If using Browser build method: use this link: [Update with Browser](../browser/bb-update.md#how-to-update-or-rebuild) 
 * If using build with *Mac* method: use this link: [update instructions](../build/updating.md)
 
 In general, there are updates to the *Loop* app released a few times a year - these can occur more frequently after a major release.
@@ -103,7 +103,7 @@ No. The *Loop* app lets you move between different pump types from within the sa
 
 If there is more than one Looper in the family, you only need to have one *Apple* Developer ID and only one annual payment. The developer must be an adult.
 
-* With the [Build with Browser](../gh-actions/gh-overview.md) method, you just add each Looper to your TestFlight test group and they get updates whenever you Build a new version on GitHub.
+* With the [Build with Browser](../browser/bb-overview.md) method, you just add each Looper to your TestFlight test group and they get updates whenever you Build a new version on GitHub.
 
 * With the [Build with Mac]() method, you just plug into your computer each phone on which you want to build the *Loop* app. (New *Xcode* and newer *iOS* phones allow you to build across WiFi after the initial connection with *Xcode*.)
 
@@ -189,7 +189,7 @@ Many features people used with FreeAPS are now included in `Loop 3` or can be ad
 
 The addition of customizations has been simplified.
 
-* If you build with a browser, refer to [Customize with Browser](../gh-actions/custom-browser.md)
+* If you build with a browser, refer to [Customize with Browser](../browser/custom-browser.md)
 * If you build with a *Mac*, refer to [Customize with *Mac*](../build/custom-mac.md)
 
 Please do not blindly apply customizations. First read the documentation provided at the links above carefully.
