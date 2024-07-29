@@ -23,33 +23,33 @@
     You can think of the first part as a scavenger hunt where you find or generate and save six <code>Secrets</code>.
 
     * _<span translate="no">Apple</span>_:
-        * [Collect the four *Apple* <code>Secrets</code>](secrets.md#collect-the-four-apple-secrets)
+        * [Collect the four *Apple* <code>Secrets</code>](secrets.md#collect-the-four-apple-secrets){: target="_blank" }
     * *GitHub*:
-        * [Collect the <code>GH_PAT</code> Secret](secrets.md#collect-the-gh_pat-secret)
-    * [Make up a Password](secrets.md#make-up-a-password)
+        * [Collect the <code>GH_PAT</code> Secret](secrets.md#collect-the-gh_pat-secret){: target="_blank" }
+    * [Make up a Password](secrets.md#make-up-a-password){: target="_blank" }
 
     Now it's time to use those <code>Secrets</code> to build the Loop app
 
     * *GitHub*:
-        * [Fork a repository (copy of <code>LoopWorkspace</code>)](prepare-fork.md#fork-loopworkspace)
-        * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](prepare-fork.md#configure-secrets)
-        * [`Action: 1. Validate Secrets`](identifiers.md#validate-secrets)
-        * [`Action: 2. Add Identifiers`](identifiers.md#add-identifiers)
+        * [Fork a repository (copy of <code>LoopWorkspace</code>)](prepare-fork.md#fork-loopworkspace){: target="_blank" }
+        * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](prepare-fork.md#configure-secrets){: target="_blank" }
+        * [`Action: 1. Validate Secrets`](identifiers.md#validate-secrets){: target="_blank" }
+        * [`Action: 2. Add Identifiers`](identifiers.md#add-identifiers){: target="_blank" }
     * _<span translate="no">Apple</span>_:
-        * [Configure Identifiers for *Loop*](prepare-app.md#configure-identifiers-for-loop)
-        * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect)
+        * [Configure Identifiers for *Loop*](prepare-app.md#configure-identifiers-for-loop){: target="_blank" }
+        * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
     * *GitHub*:
-        * [`Action: 3. Create Certificates`](certs.md#create-certificates)
-        * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app)
-    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](tf-users.md#set-up-users-and-access-testflight)
-    * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md)
+        * [`Action: 3. Create Certificates`](certs.md#create-certificates){: target="_blank" }
+        * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
+    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](tf-users.md#set-up-users-and-access-testflight){: target="_blank" }
+    * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md){: target="_blank" }
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
-    - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](phone-install.md#automatic-update-build-install) for more explanations
-    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child).
-    - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md)
+    - **Can you explain the new automatic building?** See this section [Automatic Update, Build, Install](phone-install.md#automatic-update-build-install){: target="_blank" } for more explanations
+    - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child){: target="_blank" }.
+    - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md){: target="_blank" }
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
 ## Automatic Build of Loop
@@ -194,11 +194,11 @@ To use Loop, you need a [Compatible Pump](../build/pump.md) and [Compatible CGM]
 
 ## New Terms with <code>*GitHub* Browser Build</code>
 
-[<span class="loop-big">:material-skip-forward:</span>](intro-summary.md#save-your-information) You can read details about new terms with *GitHub* build or skip ahead to [Save Your Information](intro-summary.md#save-your-information).
+[<span class="loop-big">:material-skip-forward:</span>](#save-your-information) You can read details about new terms with *GitHub* build or skip ahead to [Save Your Information](#save-your-information).
 
 The <code>*GitHub* Browser Build</code> may use new and unfamiliar **terms**.
 
-Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../faqs/glossary.md).
+Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../faqs/glossary.md){: target="_blank" }.
 
 * Some terms in the Glossary are not in alphabetical order. All the <code>Secrets</code> discussed on this page, are listed after <code>Secrets</code> in the Glossary.
 
@@ -211,7 +211,7 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
     * These <code>Secrets</code> can be added to [Other Apps](other-apps.md) configured with the same <code>*GitHub* Browser Build</code> method
-    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](other-apps.md#use-a-github-organization-account), and have them available for every repository in that organization account
+    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }, and have them available for every repository in that organization account
 * API `Key`:`Application Programming Interface Key`
     * You obtain and save this key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
@@ -223,11 +223,11 @@ If this summary of terms is confusing, finish reviewing the whole page and then 
         * `WatchApp` and `WatchAppExtension`
     * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
         * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
-        * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Identifiers](prepare-app.md#add-app-group-to-identifiers)
+        * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Identifiers](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
 * [`App Store Connect`](https://appstoreconnect.apple.com){: target="_blank" }: a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
-    * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect)
+    * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
 
 ## Save Your Information
 
