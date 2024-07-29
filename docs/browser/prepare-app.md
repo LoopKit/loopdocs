@@ -199,8 +199,6 @@ If you do see the banner, follow the numbered steps in the graphic below:
 
 You do not need to add a bank account or fill out tax forms if you are only using the App Store to get your own app into TestFlight. You only need to have a paid account with a valid license agreement and have completed this compliance form. Ignore other requests from Apple.
 
-## :material-dots-triangle: Substep 8.2 for Step 8
-
 ## Create Loop App in App Store Connect
 
 ??? abstract "Section Summary (click to open/close)"

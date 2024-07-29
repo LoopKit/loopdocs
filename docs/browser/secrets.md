@@ -75,10 +75,6 @@ If not, you need to purchase one ($99 annual fee). It may take a few days for th
 * LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
 * This link takes you straight to [*Apple Developer* account](https://developer.apple.com){: target="_blank" } to sign up
 
-### :material-dots-triangle: Substep 2.1 for Step 2
-
-> Next section, Find <code>TEAMID</code>, is :material-dots-triangle: Substep 1 out of 5 for Step 2.
-
 ### Find <code>TEAMID</code>
 
 Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
@@ -107,10 +103,6 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
         * <code>TEAMID</code> must be 10 characters
         * Avoid typing an&nbsp;<span class="loop-biggest">`8`</span>&nbsp;when it should be a&nbsp;<span class="loop-biggest">`B`</span>
-
-### :material-dots-triangle: Substep 2.2 for Step 2
-
-> Next section, Generate `API Key`, is :material-dots-triangle: Substep 2 out of 5 for Step 2.
 
 ### Generate `API Key`
 
@@ -144,10 +136,6 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
     * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access dropdown menu
     * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
-
-### :material-dots-triangle: Substep 2.3 for Step 2
-
-> Next section, Copy `API Key Secrets`, is :material-dots-triangle: Substep 3 out of 5 for Step 2. In this :material-dots-triangle: Substep you are dealing with 2 of the Apple <code>Secrets</code>.
 
 ### Copy `API Key Secrets`
 
@@ -234,10 +222,6 @@ Decide on a couple of usernames that you will be happy with - this will get embe
 
 The free level comes with plenty of storage and compute time to build the *Loop* app.
 
-### :material-dots-triangle: Substep 2.4 for Step 2
-
-> Next section, Create `GitHub Personal Access Token`, is :material-dots-triangle: Substep 4 out of 5 for Step 2.
-
 ### Create `GitHub Personal Access Token`
 
 ??? abstract "Section Summary (click to open/close)"
@@ -289,10 +273,6 @@ You must be logged into your *GitHub* account before starting this step. If you 
 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
-
-### :material-dots-triangle: Substep 2.5 for Step 2
-
-> Next section, Make up a Password, is :material-dots-triangle: Substep 5 out of 5 for Step 2.
 
 ### Make up a Password
 
