@@ -1,10 +1,15 @@
 ## Overview
 
-The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically take the following actions for released versions 3.4.1 and newer:
+The instructions on the [Configure to Use Browser](gh-first-time.md) page will, unless you make a change, automatically update and build for you.
 
-* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
-    * When an update to the default `branch`, typically `main`, is detected, a new build is created automatically and uploaded to *TestFlight*
-* Build the app at least once a month and upload the fresh build to *TestFlight*
+This keeps the most recent version of the *Loop* app available in *TestFlight* for you to install when you are ready.
+
+These events are automatically scheduled:
+
+* Once a week: Check for a new release of the *Loop* app:
+    * If found, your fork is automatically updated and a new build created
+    * The new version is then available in your *TestFlight* app when you are ready to install it
+* Once a month: Build the app and upload the fresh build to *TestFlight*
 
 If you do not want this automatic schedule, you can modify it.
 
