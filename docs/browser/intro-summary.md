@@ -188,23 +188,6 @@ https://github.com/my-github-username/LoopWorkspace
 Add additional apps here if you decide to build any
 ```
 
-## Prerequisites
-
-#### Prerequisites to Build the *Loop* App
-
-There are two prerequisites to build the *Loop* app using <code>*GitHub* Browser Build</code>.
-
-1. Paid *Apple Developer* account ($99/year)
-1. Free *GitHub* account
-
-#### Prerequisites to Install Loop
-
-To install Loop, you need the free *TestFlight* app, from the *Apple* App Store, installed on your [Compatible Phone](../build/phone.md).
-
-#### Prerequisites to Use Loop
-
-To use Loop, you need a [Compatible Pump](../build/pump.md) and [Compatible CGM](../build/cgm.md). For pumps other than Omnipod DASH, you also need a [RileyLink Compatible Device](../build/rileylink.md).
-
 ## New Terms with <code>*GitHub* Browser Build</code>
 
 The <code>*GitHub* Browser Build</code> may use new and unfamiliar **terms**.
