@@ -965,6 +965,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#what-are-the-alive-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the alive branches?
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1016,15 +1025,6 @@
   <a href="#stop-building" class="md-nav__link">
     <span class="md-ellipsis">
       Stop Building
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-the-alive-branches-and-why-do-i-need-them" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are the alive branches and why do I need them?
     </span>
   </a>
   
@@ -3249,6 +3249,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#what-are-the-alive-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the alive branches?
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3305,15 +3314,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#what-are-the-alive-branches-and-why-do-i-need-them" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are the alive branches and why do I need them?
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3332,19 +3332,17 @@
   <h1>Automatic Update & Build</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The instructions on the <a href="../gh-first-time/">Configure to Use Browser</a> page will, unless you make a change, automatically take the following actions for released versions 3.4.1 and newer:</p>
+<p>The instructions on the <a href="../gh-first-time/">Configure to Use Browser</a> page will, unless you make a change, automatically update and build for you.</p>
+<p>This keeps the most recent version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install when you are ready.</p>
+<p>These events are automatically scheduled:</p>
 <ul>
-<li>Update the version of your&nbsp;<span translate="no"><abbr title="a copy of code in a github repository other than the original">fork</abbr></span>&nbsp;within a week of the change<ul>
-<li>When an update to the default <code>branch</code>, typically <code>main</code>, is detected, a new build is created automatically and uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li>Once a week: Check for a new release of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app:<ul>
+<li>If found, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is automatically updated and a new build created and uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 </li>
-<li>Build the app at least once a month and upload the fresh build to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li>Once a month: Build the app and upload the fresh build to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 <p>If you do not want this automatic schedule, you can modify it.</p>
-<p>This only works because of special branches that are automatically created in your <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
-<ul>
-<li><a href="#what-are-the-alive-branches-and-why-do-i-need-them">What are the <code>alive branches</code> and why do I need them?</a></li>
-</ul>
 <p>Regardless of your choice, please <a href="../gh-deploy/#disable-automatic-install-from-testflight" target="_blank">Disable Automatic Installation from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>. You should be alert any time your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is updated. Check that all settings are maintained and pay attention to make sure the app behavior is nominal.</p>
 <p>You still need to <strong>take these actions</strong> to ensure a recent build of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install on your phone when you choose:</p>
 <ul>
@@ -3360,6 +3358,32 @@
 <h3 id="successful-monthly-action">Successful Monthly Action<a class="headerlink" href="#successful-monthly-action" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>On the first day of every month at 06:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>, you will see a successful <code>build action</code>. The purpose of this build is to provide a recent version of the app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> so you are never in a situation where you have no app on your phone.</p>
 <p>You start getting <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">Notifications</a> when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app. You do not want to get the dreaded "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)</p>
+<h3 id="what-are-the-alive-branches">What are the <code>alive branches</code>?<a class="headerlink" href="#what-are-the-alive-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The automatic update and build feature is embedded in the build_loop.yml code and uses the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> scheduling feature to trigger actions to run automatically.</p>
+<p>Some may have noticed one or more branches added to your <abbr title="contains project files and each file's revision history">repository</abbr> that start with the name <code>alive</code>. Don't worry about these. They are automatically created to ensure <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will keep building your app automatically.</p>
+<ul>
+<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> keeps track of repositories</li>
+<li>If there is no activity in a given <abbr title="contains project files and each file's revision history">repository</abbr> in 60 days, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> disables <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></li>
+<li>If your <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> are disabled, you don't get automatic builds</li>
+<li>Clever people developed a work around for this</li>
+</ul>
+<p>You may see branches called <code>alive</code>, <code>alive-dev</code> or <code>alive-main</code> in your <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p>The <code>alive</code> branches are created and used to make sure at least one <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> per month is added to an <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="contains project files and each file's revision history">repository</abbr>. That keeps your <abbr title="contains project files and each file's revision history">repository</abbr> active to allow the automatic update and build process to work.</p>
+<p>The <code>alive</code> branches are only used for the keep-alive functions. Do not build using an <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Most people will build using the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code>.</p>
+<h4 id="automatic-creation-of-alive-branch">Automatic Creation of <code>alive branch</code><a class="headerlink" href="#automatic-creation-of-alive-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> you need is created automatically when you run the <code>Build Loop</code> action.</p>
+<div class="admonition warning">
+<p class="admonition-title">I got an error regarding a <abbr title="version of code within a single repository or workspace repository">branch</abbr> with <code>alive</code> in the name</p>
+<ul>
+<li>Sometimes you get an error about an <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>If you do get an error, simply delete the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and run the <code>Build Loop</code> action again<ul>
+<li>Use this <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch" target="_blank"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> link</a> or ask for help when deleting a <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</li>
+<li>You can delete every <abbr title="version of code within a single repository or workspace repository">branch</abbr> that starts with the name <code>alive</code></li>
+<li>Leave the other branches alone unless a mentor directs you to take action</li>
+</ul>
+</div>
 <h2 id="modify-automatic-building">Modify Automatic Building<a class="headerlink" href="#modify-automatic-building" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For someone using <a href="../build-dev-browser/">development code</a> for their own use, they could decide to choose when to update their <code>fork</code> to the most recent <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. They can still have the advantage of automatic building without automatic updates; in other words, they want a new build added to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> every month. There may be other configurations someone would choose. These options are available starting with <abbr title="Latest release with major updates">Loop 3</abbr>.3.0 (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and later.</p>
 <p>You can affect the default behavior:</p>
@@ -3493,29 +3517,6 @@
 <p>If you are done with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can delete the whole <abbr title="contains project files and each file's revision history">repository</abbr>; but you should be sure about this because you'll need to start over with <a href="../gh-first-time/">Configure to Use Browser</a> to restore ability to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
 </li>
 </ul>
-<h2 id="what-are-the-alive-branches-and-why-do-i-need-them">What are the <code>alive branches</code> and why do I need them?<a class="headerlink" href="#what-are-the-alive-branches-and-why-do-i-need-them" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The automatic update and build features of version 3.4.1 and later use branches that start with the name <code>alive</code>. You may see branches called <code>alive</code>, <code>alive-dev</code> and <code>alive-main</code> in your <abbr title="contains project files and each file's revision history">repository</abbr>. These are automatically created. They are used to keep <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> actions working in your <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
-<ul>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> keeps track of repositories</li>
-<li>If there is no activity in a given <abbr title="contains project files and each file's revision history">repository</abbr> in 60 days, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> disables <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></li>
-</ul>
-<p>In other words, during a time when the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is fairly stable, your automatic update and build features would just stop working.</p>
-<p>No one wants that. The <code>alive</code> branches are created and used to make sure at least one <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> per month is added to an <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="contains project files and each file's revision history">repository</abbr>. That keeps your <abbr title="contains project files and each file's revision history">repository</abbr> active to allow the automatic update and build process to work.</p>
-<p>The <code>alive</code> branches are only used for the keep-alive functions. Do not build using an <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Most people will build using the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code>.</p>
-<h4 id="automatic-creation-of-alive-branch">Automatic Creation of <code>alive branch</code><a class="headerlink" href="#automatic-creation-of-alive-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> you need is created automatically when you run the <code>Build Loop</code> action.</p>
-<div class="admonition warning">
-<p class="admonition-title">I got an error regarding a <abbr title="version of code within a single repository or workspace repository">branch</abbr> with <code>alive</code> in the name</p>
-<ul>
-<li>Sometimes you get an error about an <code>alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>If you do get an error, simply delete the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and run the <code>Build Loop</code> action again<ul>
-<li>Use this <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch" target="_blank"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> link</a> or ask for help when deleting a <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-</ul>
-</li>
-<li>You can delete every <abbr title="version of code within a single repository or workspace repository">branch</abbr> that starts with the name <code>alive</code></li>
-<li>Leave the other branches alone unless a mentor directs you to take action</li>
-</ul>
-</div>
 
 
 
