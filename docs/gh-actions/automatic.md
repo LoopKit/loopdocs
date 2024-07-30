@@ -7,8 +7,7 @@ This keeps the most recent version of the *Loop* app available in *TestFlight* f
 These events are automatically scheduled:
 
 * Once a week: Check for a new release of the *Loop* app:
-    * If found, your fork is automatically updated and a new build created
-    * The new version is then available in your *TestFlight* app when you are ready to install it
+    * If found, your fork is automatically updated and a new build created and uploaded to *TestFlight*
 * Once a month: Build the app and upload the fresh build to *TestFlight*
 
 If you do not want this automatic schedule, you can modify it.
