@@ -2,16 +2,18 @@
 
 If you get an error when building with a browser, use this page to figure out what to do.
 
-If you are still unsuccessful, then post your request for help along with your *GitHub* **username**. Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span>_, check the status and then view your log files directly.
+If you are still unsuccessful, then post your request for help along with the link to your repository. For example - this link is used to test the build instructions and generate figures for LoopDocs. You replace your GitHub username where you see `loopdocs-tester`:
 
+* [https://github.com/loopdocs-tester/LoopWorkspace](https://github.com/loopdocs-tester/LoopWorkspace){: target="_blank" }
+
+Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span>_, make sure your code is up to date, examine your customizations (if any), then click on the Action tab and view your log files directly.
 * Do not copy from the log file and post the words
 * Do not take a screenshot of what you think is an error
-* Just post your username and the name of the app you are trying to build
 
 !!! tip "Username, Not Pictures"
     If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**.
 
-    All that is needed to assist is your *GitHub* **username**.
+    All that is needed to assist is your link or as a bare minimum your *GitHub* **username**.
 
 But first - try to diagnose it yourself using this page.
 
