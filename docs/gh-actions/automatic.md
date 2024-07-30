@@ -8,10 +8,6 @@ The instructions on the [Configure to Use Browser](gh-first-time.md) page will, 
 
 If you do not want this automatic schedule, you can modify it.
 
-This only works because of special branches that are automatically created in your repository.
-
-* [What are the `alive branches` and why do I need them?](#what-are-the-alive-branches-and-why-do-i-need-them)
-
 Regardless of your choice, please [Disable Automatic Installation from *TestFlight*](gh-deploy.md#disable-automatic-install-from-testflight){: target="_blank" }. You should be alert any time your *Loop* app is updated. Check that all settings are maintained and pay attention to make sure the app behavior is nominal.
 
 You still need to **take these actions** to ensure a recent build of the *Loop* app is available in *TestFlight* for you to install on your phone when you choose:
@@ -36,6 +32,34 @@ In that case, you should check your favorite information site to find out what t
 On the first day of every month at 06:00 UTC, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
 
 You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
+
+### What are the `alive branches`?
+
+The automatic update and build feature is embedded in the build_loop.yml code and uses the GitHub scheduling feature to trigger actions to run automatically.
+
+Some may have noticed one or more branches added to your repository that start with the name `alive`. Don't worry about these. They are automatically created to ensure GitHub will keep building your app automatically.
+
+* GitHub keeps track of repositories
+* If there is no activity in a given repository in 60 days, GitHub disables Actions
+* If your Actions are disabled, you don't get automatic builds
+* Clever people developed a work around for this
+
+You may see branches called `alive`, `alive-dev` or `alive-main` in your repository.
+
+The `alive` branches are created and used to make sure at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process to work.
+
+The `alive` branches are only used for the keep-alive functions. Do not build using an `alive` branch. Most people will build using the default branch of `main`.
+
+#### Automatic Creation of `alive branch`
+
+The `alive` branch you need is created automatically when you run the `Build Loop` action.
+
+!!! warning "I got an error regarding a branch with `alive` in the name"
+    * Sometimes you get an error about an `alive` branch
+    * If you do get an error, simply delete the branch and run the `Build Loop` action again
+        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
+    * You can delete every branch that starts with the name `alive`
+    * Leave the other branches alone unless a mentor directs you to take action
 
 ## Modify Automatic Building
 
@@ -128,27 +152,3 @@ What if I decide I don't want the automatic building feature?
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
 * If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to Use Browser](gh-first-time.md) to restore ability to build Loop with GitHub.
-
-## What are the `alive branches` and why do I need them?
-
-The automatic update and build features of version 3.4.1 and later use branches that start with the name `alive`. You may see branches called `alive`, `alive-dev` and `alive-main` in your repository. These are automatically created. They are used to keep GitHub actions working in your repository.
-
-* GitHub keeps track of repositories
-* If there is no activity in a given repository in 60 days, GitHub disables Actions
-
-In other words, during a time when the *Loop* app is fairly stable, your automatic update and build features would just stop working.
-
-No one wants that. The `alive` branches are created and used to make sure at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process to work.
-
-The `alive` branches are only used for the keep-alive functions. Do not build using an `alive` branch. Most people will build using the default branch of `main`.
-
-#### Automatic Creation of `alive branch`
-
-The `alive` branch you need is created automatically when you run the `Build Loop` action.
-
-!!! warning "I got an error regarding a branch with `alive` in the name"
-    * Sometimes you get an error about an `alive` branch
-    * If you do get an error, simply delete the branch and run the `Build Loop` action again
-        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
-    * You can delete every branch that starts with the name `alive`
-    * Leave the other branches alone unless a mentor directs you to take action
