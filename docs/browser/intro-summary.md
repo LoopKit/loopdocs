@@ -10,9 +10,9 @@
         * Expect 1 to 4 hours
 
 ???+ abstract "Summary for Browser Build with Links (click to open/close)"
-    There is a lot of introductory information on these pages.
+    You may be overwhelmed at first with all the new terms and the many steps. Take a deep breath and work through the steps one at a time.
 
-    * You can skip some sections but please read this one: [Save Your Information](intro-summary.md#save-your-information)
+    * Pay very close attention to this section [Save Your Information](intro-summary.md#save-your-information)
 
     A narrated video is available:
 
@@ -26,7 +26,7 @@
         * [Collect the four *Apple* <code>Secrets</code>](secrets.md#collect-the-four-apple-secrets){: target="_blank" }
     * *GitHub*:
         * [Collect the <code>GH_PAT</code> Secret](secrets.md#collect-the-gh_pat-secret){: target="_blank" }
-    * [Make up a Password](secrets.md#make-up-a-password){: target="_blank" }
+    * [Make up a Password](secrets.md#make-up-a-password){: target="_blank" } and save it as your sixth <code>Secrets</code>
 
     Now it's time to use those <code>Secrets</code> to build the Loop app
 
@@ -110,14 +110,14 @@ Please save yourself a lot of agony. Make a <code>Secrets</code> Reference folde
 
 You don't need to know anything about the <code>Secrets</code> to do this. Come up with your own names, but make sure you know where you put this file.
 
-1. Decide on where you want your <code>Secrets</code> saved and create a special folder
+1. Decide where you want your <code>Secrets</code> saved and create a special folder
 2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin your <code>Secrets</code>)
     * Create a blank <code>Secrets</code> Reference file using the text-only editor
     * Tap on the copy icon below to copy the template and paste it into your blank file
     * Save the file
 3. As you move through the steps of [Collect Secrets](secrets.md){: target="_blank" }, fill in the file
     * The `##` characters are used to indicate sections or title (text only file)
-    * The there is a reference pattern for each SECRET, replace that with your SECRET
+    * There is a reference pattern for each SECRET: replace that with your SECRET or you can add your secret below the pattern to give yourself confidence you got the correct item
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
 
