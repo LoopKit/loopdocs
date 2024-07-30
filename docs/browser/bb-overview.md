@@ -10,7 +10,7 @@
     * The *TestFlight* app is used to install the *Loop* app on your iPhone
 * Compatible version of *Xcode* is provided by *GitHub*
     * The time required for the initial setup to build with a browser may take less time than one *macOS* and *Xcode* version update for those using [Build with *Mac*](../build/overview.md)
-* Automatic Updates are loaded into TestFlight
+* Automatic Updates are loaded into *TestFlight*
     * With version 3.4, builds are automatically prepared at least once a month
     * You choose when to install the new app from TestFlight onto your phone
 * Manual Updates are easy
@@ -21,7 +21,7 @@
 * After the *GitHub* Build starts, your app is ready to install on your *iPhone* in about an hour
 * The app is delivered to your phone via *TestFlight*
     * The app is considered "Beta" by  *Apple* and expires after 90 days
-    * <span translate="no">Loop 3.4.0</span>&nbsp; and later versions provide automatic build as the default
+    * <span translate="no">Loop 3.4</span>&nbsp; and later versions provide automatic build as the default
 * Customization methods are documented at [Customize with Browser](custom-browser.md){: target="_blank" }
 
 ## Requirements
@@ -43,7 +43,9 @@ Once you have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app in *TestFligh
 1. [Compatible iPhone](../build/phone.md){: target="_blank" }
 1. [Compatible Pump](../build/pump.md){: target="_blank" }
 1. [Compatible CGM](../build/cgm.md){: target="_blank" }
-1. [RileyLink Compatible Device](../build/rileylink.md){: target="_blank" } (not needed for Omnipod DASH)
+1. [RileyLink Compatible Device](../build/rileylink.md){: target="_blank" }
+    * Needed for Medtronic and Omnipod Eros only
+    * Not needed for Bluetooth enabled pumps like DASH and Dana
 
 ## Instructions to Build with a Browser
 
