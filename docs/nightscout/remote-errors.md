@@ -58,7 +58,7 @@ You will not see any errors, but nothing will happen when you issue any kind of 
 
 ### Incorrect Password (OTP) Error
 
-The references to ‘caregiver’ below refer to the person sending the commands. There are specific *Loop Caregiver* app instructions that you modify for your authenticator. You must have the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone with you to troubleshoot this problem.
+The references to ‘caregiver’ below refer to the person sending the commands. You must have the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone with you to troubleshoot this problem.
 
 * The Apple clock should be set to automatic on both the Looper's phone and the caregiver’s device.
     * If the clock is incorrect, even slightly, remote commands will fail.
