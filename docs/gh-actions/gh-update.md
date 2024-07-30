@@ -259,7 +259,7 @@ In your fork of LoopWorkspace:
     * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
         * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-        * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+        * Resolve the error and repeat the Action: [Add Identifiers](gh-first-time.md#add-identifiers)
 
 #### Add `App Group` to New `Identifier`
 
