@@ -254,7 +254,7 @@ Then you will get the following menu's:
 3. Prepare your [Dana-i / DanaRS-v3 pump](#prepare-dana-idanars-v3)
 4. Connect to your [Dana-i pump](#pairing-dana-i) or [DanaRS-v3 pump](#pairing-danars-v3)
 5. (Optional): Enable [silent pump tones](#optional-enable-silent-pump-tones)
-6. (Optional): Enable [background sound](#optional-enable-background-sound)
+6. (Optional): [Check if you need a heartbeat](#optional-check-if-you-need-a-heartbeat)
 
 ![Full dana flow](img/dana-total.jpg){align="center"}
 
