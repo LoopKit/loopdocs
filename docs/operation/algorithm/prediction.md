@@ -4,7 +4,7 @@ Loop uses an algorithm to maintain blood glucose in a correction range by predic
 
 $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
-Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects as implied in the simple formular above; it is blended with the other terms as described in more detail in the [Momemtum](#blood-glucose-momentum-effect) section below).
+Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the [Momemtum](#blood-glucose-momentum-effect) section below).
 
 You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on Loop's status screen. Loop updates this blood glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
@@ -48,21 +48,27 @@ The active insulin at any time is the product of original insulin delivered and 
 
 ![bg drop from 2 units](img/bg_drop.png)
 
-NOTE: ISF is also a function of time, which means if the user’s scheduled ISF changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.
+NOTE: ISF is also a function of time, as set in the ISF schedule in therapy settings or in accordance with any overrides. Loop uses the ISF that applied at the time of an insulin dose to predict the expected change in blood glucose due to the insulin effect, and sums the effect from all still-active doses.
 
-### Expected Change in Blood Glucose
+### Expected Change in Blood Glucose for Each Loop Interval
 
 Lastly, taking the first derivative (i.e., the rate of change) of the cumulative drop in the blood glucose curve yields the expected change in blood glucose over the insulin activity duration. For each dose of insulin given, Loop calculates the expected discrete drop in blood glucose at each 5-minute period for the insulin activity duration, as shown below.
 
 ![rate of bg change](img/derivative.png)
 
-### Insulin Effect on Blood Glucose
+The insulin effect for a given dose can be expressed mathematically:
+
+$$ \Delta BG_{dose}[t] = ISF[t_{dose}] \times IA_{dose}[t] $$
+
+where $\Delta BG_{I}$ is the expected change in blood glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+
+### Insulin Effect on Blood Glucose Over Time
 
 For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, Loop would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below.
 
 ![two unit example](img/two_units.png)
 
-### Scheduled Basal Rates
+### Treatment of Scheduled Basal Rates
 
 In traditional basal/bolus pump therapy, basal rates are set to accommodate the user's endogenous glucose production (EGP) that causes blood glucose to rise. If a user's basal settings were exactly right in traditional pump therapy, the user would have perfectly flat blood glucose all day, all other factors being equal.
 
@@ -82,19 +88,21 @@ Here is a real-world example where Loop is setting many temporary basal rates ov
 
 ![Loop's temp basal chart over day](img/temp_basal_day.png)
 
-### Total Insulin Effect (combining boluses and temporary basal rates)
+### Total Active Insulin (combining boluses and temporary basal rates)
 
-Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. As demonstrated above, using the predicted active insulin Loop can predict the blood glucose drop over the next 6 hours.
+Loop will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. 
 
-Lastly, the combined effect of bolus and basal insulin are visually represented for the user by Loop’s insulin charts:
+The active insulin taking into account boluses and variations from scheduled basal basal rates are visually represented for the user by Loop’s insulin charts:
 
 ![Loop's iob and temp basals](img/insulin_delivery_iob.jpg)
 
-The insulin effect can be expressed mathematically:
+### Total Insulin Effect (combining boluses and temporary basal rates)
 
-$$ \Delta BG_{I}[t] = ISF[t] \times IA[t] $$
+The sum of all doses' effects on blood glucose are shown for the user in the 'Insulin' curve in the predicted glucose screen.
 
-where BG is the expected change in blood glucose with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
+The total insulin effect at time *t* is the sum of effects from each active dose or temporary basal rate:
+
+$$ \Delta BG_{I}[t] = \sum_{dose=1}^{n} \Delta BG_{dose}[t] $$
 
 ## Carbohydrate Effect
 
@@ -118,17 +126,17 @@ where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrat
 
 The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (ICE):
 
-$$ ICE[t] = OA[t] + IA[t] $$
+$$ ICE[t] = \Delta BG_{O}[t] - \Delta BG_{I}[t] $$
 
-where, ICE (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time *t*, and IA is the insulin activity (mg/dL/5min).
+where, ICE (mg/dL/5 min) is the insulin counteraction effect, $\Delta BG_{O}$ is the observed change in blood glucose (mg/dL/5min) at time *t*, and $\Delta BG_{I}$ is the modelled change in blood glucose due to insulin alone (i.e. the insulin effect as described above mg/dL/5min).
 
 Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or incorrectly configured insulin delivery settings (e.g., basal rate, ISF, etc.). However, since the effect of carbohydrates is often dominant (after insulin), Loop can still make useful ongoing adjustments to its carbohydrate model by assuming that the increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  
 
-The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using the current carbohydrate-to-insulin ratio and the insulin sensitivity factor at the time of the recorded meal entry.
+The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using both the carbohydrate-to-insulin ratio and the insulin sensitivity factor that were current at the time of a recorded meal entry.
 
-$$ AC[t] = ICE[t] \times \frac{CIR[t]}{ISF[t]} $$
+$$ AC[t] = ICE[t] \times \frac{CIR[t_{meal}]}{ISF[t_{meal}]} $$
 
-where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and ISF is the insulin sensitivity factor (mg/dL/U) at time *t*.
+where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U) at the time of the relevant meal entry, and ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant meal entry.
 
 If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.
 
@@ -160,13 +168,13 @@ resulting in 1g of absorption being attributed to Meal 1 and 2g attributed to Me
 
 ### Minimum Carbohydrate Absorption Rate
 
-If the estimated carbohydrate absorption of a meal entry is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.
+If the dynamically-estimated carbohydrate absorption of a meal entry up to the current time *t* is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.
 
 ### Modeling Remaining Active Carbohydrates
 
 After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then forecasted to decay or absorb using the minimum absorption rate. Loop uses this forecast to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:
 
-$$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} $$
+$$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t_{meal}]}{CIR[t_{meal}]} $$
 
 ## Retrospective Correction Effect
 
@@ -264,7 +272,7 @@ As described in the momentum effect section, the momentum effect is blended with
 
 $$ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{RC}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) $$
 
-Lastly, the forecast or predicted blood glucose BG at time *t* is the current blood glucose BG plus the sum of all blood glucose effects BG over the time interval [t5, t]:
+Lastly, the forecast or predicted blood glucose BG at time *t* is the current blood glucose BG plus the sum of all blood glucose effects $\Delta BG$ over the time interval $[t_{5}, t]$:
 
 $$ \widehat{BG}[t] = BG[t_{o}] + \sum_{i=5}^{t} \Delta BG[t_{o+i}] $$
 
