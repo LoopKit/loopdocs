@@ -7,6 +7,7 @@ If you are still unsuccessful, then post your request for help along with the li
 * [https://github.com/loopdocs-tester/LoopWorkspace](https://github.com/loopdocs-tester/LoopWorkspace){: target="_blank" }
 
 Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span>_, make sure your code is up to date, examine your customizations (if any), then click on the Action tab and view your log files directly.
+
 * Do not copy from the log file and post the words
 * Do not take a screenshot of what you think is an error
 
