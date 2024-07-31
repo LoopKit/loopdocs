@@ -2041,27 +2041,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#expected-change-in-blood-glucose" class="md-nav__link">
+  <a href="#expected-change-in-blood-glucose-for-each-loop-interval" class="md-nav__link">
     <span class="md-ellipsis">
-      Expected Change in Blood Glucose
+      Expected Change in Blood Glucose for Each Loop Interval
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#insulin-effect-on-blood-glucose" class="md-nav__link">
+  <a href="#insulin-effect-on-blood-glucose-over-time" class="md-nav__link">
     <span class="md-ellipsis">
-      Insulin Effect on Blood Glucose
+      Insulin Effect on Blood Glucose Over Time
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scheduled-basal-rates" class="md-nav__link">
+  <a href="#treatment-of-scheduled-basal-rates" class="md-nav__link">
     <span class="md-ellipsis">
-      Scheduled Basal Rates
+      Treatment of Scheduled Basal Rates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-active-insulin-combining-boluses-and-temporary-basal-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Total Active Insulin (combining boluses and temporary basal rates)
     </span>
   </a>
   
@@ -3360,27 +3369,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#expected-change-in-blood-glucose" class="md-nav__link">
+  <a href="#expected-change-in-blood-glucose-for-each-loop-interval" class="md-nav__link">
     <span class="md-ellipsis">
-      Expected Change in Blood Glucose
+      Expected Change in Blood Glucose for Each Loop Interval
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#insulin-effect-on-blood-glucose" class="md-nav__link">
+  <a href="#insulin-effect-on-blood-glucose-over-time" class="md-nav__link">
     <span class="md-ellipsis">
-      Insulin Effect on Blood Glucose
+      Insulin Effect on Blood Glucose Over Time
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scheduled-basal-rates" class="md-nav__link">
+  <a href="#treatment-of-scheduled-basal-rates" class="md-nav__link">
     <span class="md-ellipsis">
-      Scheduled Basal Rates
+      Treatment of Scheduled Basal Rates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-active-insulin-combining-boluses-and-temporary-basal-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Total Active Insulin (combining boluses and temporary basal rates)
     </span>
   </a>
   
@@ -3516,7 +3534,7 @@
 <h2 id="blood-glucose-prediction">Blood Glucose Prediction<a class="headerlink" href="#blood-glucose-prediction" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses an algorithm to maintain blood glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and blood glucose momentum) at any time <em>t</em> to recommend temporary basal rate corrections and boluses.</p>
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] \]</div>
-<p>Note that the <a href="#blood-glucose-momentum-effect">Momemtum</a> term does not just add to the other effects as implied in the simple formular above; it is blended with the other terms as described in more detail in the <a href="#blood-glucose-momentum-effect">Momemtum</a> section below).</p>
+<p>Note that the <a href="#blood-glucose-momentum-effect">Momemtum</a> term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the <a href="#blood-glucose-momentum-effect">Momemtum</a> section below).</p>
 <p>You can see the individual contributions of these effects by tapping on the predicted blood glucose chart on <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s status screen. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updates this blood glucose prediction every five minutes when a new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value has been received and the pump's status has been updated.</p>
 <p>Just a note, this whole section is fairly technical. While perhaps not the most interesting topic for many readers, if you are seeking the detailed view of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm this discussion is quite useful. If you want a more surface understanding, the overview and temporary basal recommendations sections alone are probably sufficient.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3538,14 +3556,17 @@
 <p><img alt="insulin remaining example" src="../img/insulin_remaining_example.png" /></p>
 <p>The active insulin at any time is the product of original insulin delivered and the percent of insulin activity remaining. Knowing the expected active insulin over the next 6 hours, and the insulin sensitivity factor (50 mg/dL, in this case), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> can calculate the expected drop in blood glucose from that dose of insulin as shown in the figure below.</p>
 <p><img alt="bg drop from 2 units" src="../img/bg_drop.png" /></p>
-<p>NOTE: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is also a function of time, which means if the user’s scheduled <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> changes during the insulin activity time, it will change the expected drop in blood glucose due to the insulin effect.</p>
-<h3 id="expected-change-in-blood-glucose">Expected Change in Blood Glucose<a class="headerlink" href="#expected-change-in-blood-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>NOTE: <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is also a function of time, as set in the <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> schedule in therapy settings or in accordance with any overrides. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses the <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> that applied at the time of an insulin dose to predict the expected change in blood glucose due to the insulin effect, and sums the effect from all still-active doses.</p>
+<h3 id="expected-change-in-blood-glucose-for-each-loop-interval">Expected Change in Blood Glucose for Each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Interval<a class="headerlink" href="#expected-change-in-blood-glucose-for-each-loop-interval" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Lastly, taking the first derivative (i.e., the rate of change) of the cumulative drop in the blood glucose curve yields the expected change in blood glucose over the insulin activity duration. For each dose of insulin given, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> calculates the expected discrete drop in blood glucose at each 5-minute period for the insulin activity duration, as shown below.</p>
 <p><img alt="rate of bg change" src="../img/derivative.png" /></p>
-<h3 id="insulin-effect-on-blood-glucose">Insulin Effect on Blood Glucose<a class="headerlink" href="#insulin-effect-on-blood-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The insulin effect for a given dose can be expressed mathematically:</p>
+<div class="arithmatex">\[ \Delta BG_{dose}[t] = ISF[t_{dose}] \times IA_{dose}[t] \]</div>
+<p>where <span class="arithmatex">\(\Delta BG_{I}\)</span> is the expected change in blood glucose due to insulin with the units (mg/dL/5min), <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time <em>t</em>. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with <abbr title="Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)">EGP</abbr>.</p>
+<h3 id="insulin-effect-on-blood-glucose-over-time">Insulin Effect on Blood Glucose Over Time<a class="headerlink" href="#insulin-effect-on-blood-glucose-over-time" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For this example, assuming a user’s blood glucose was 205 mg/dL at the time of insulin delivery, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> would predict a drop in blood glucose due to the two units delivered at 12 pm as shown in the figure below.</p>
 <p><img alt="two unit example" src="../img/two_units.png" /></p>
-<h3 id="scheduled-basal-rates">Scheduled Basal Rates<a class="headerlink" href="#scheduled-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="treatment-of-scheduled-basal-rates">Treatment of Scheduled Basal Rates<a class="headerlink" href="#treatment-of-scheduled-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In traditional basal/bolus pump therapy, basal rates are set to accommodate the user's endogenous glucose production (<abbr title="Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)">EGP</abbr>) that causes blood glucose to rise. If a user's basal settings were exactly right in traditional pump therapy, the user would have perfectly flat blood glucose all day, all other factors being equal.</p>
 <p>In reality, people with type 1 diabetes, and their caregivers, know that basal settings are never exactly right. Every day is a little different, and a myriad of factors that affect blood glucose (e.g., including stress, hormones, sleep, etc.) may affect insulin needs. Some people have different basal profiles to accommodate these variations. Some people regularly tune and adjust their basal rates, and/or do so at their endocrinology clinic visits.</p>
 <p>Since the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm assumes that the user-set basal rates are correct, it calculates the effect of insulin relative to scheduled basal rates. If basal rates are not entirely correct, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> can compensate a bit through the retrospective correction and blood glucose momentum effects, discussed later in this page.</p>
@@ -3555,13 +3576,14 @@
 <p>Similarly if <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> sets a temporary basal rate of 0 U/hr for 1 hour, then the insulin effect will also be relative to the current scheduled basal rate of 1 U/hr, and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> would predict the user’s blood glucose to increase by the amount of change from -1 U/hr of insulin. If the user’s <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is 50 mg/dL, then <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> would predict blood glucose to rise 50 mg/dL over the insulin activity duration (6 hours).</p>
 <p>Here is a real-world example where <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is setting many temporary basal rates over the course of the day. The light orange bars are the temporary basal rates delivered and the solid orange line is the active insulin at any given time during the day.  </p>
 <p><img alt="Loop's temp basal chart over day" src="../img/temp_basal_day.png" /></p>
-<h3 id="total-insulin-effect-combining-boluses-and-temporary-basal-rates">Total Insulin Effect (combining boluses and temporary basal rates)<a class="headerlink" href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. As demonstrated above, using the predicted active insulin <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> can predict the blood glucose drop over the next 6 hours.</p>
-<p>Lastly, the combined effect of bolus and basal insulin are visually represented for the user by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s insulin charts:</p>
+<h3 id="total-active-insulin-combining-boluses-and-temporary-basal-rates">Total Active Insulin (combining boluses and temporary basal rates)<a class="headerlink" href="#total-active-insulin-combining-boluses-and-temporary-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will combine or stack the active insulin of all the discrete (individual) boluses and temporary basal rates over the past insulin activity duration (6 hours), to predict the active insulin for the next 6 hours. </p>
+<p>The active insulin taking into account boluses and variations from scheduled basal basal rates are visually represented for the user by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s insulin charts:</p>
 <p><img alt="Loop's iob and temp basals" src="../img/insulin_delivery_iob.jpg" /></p>
-<p>The insulin effect can be expressed mathematically:</p>
-<div class="arithmatex">\[ \Delta BG_{I}[t] = ISF[t] \times IA[t] \]</div>
-<p>where BG is the expected change in blood glucose with the units (mg/dL/5min), <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is the insulin sensitivity factor (mg/dL/U) at time t, and IA is the insulin activity (U/5min) at time <em>t</em>. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with <abbr title="Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)">EGP</abbr>.</p>
+<h3 id="total-insulin-effect-combining-boluses-and-temporary-basal-rates">Total Insulin Effect (combining boluses and temporary basal rates)<a class="headerlink" href="#total-insulin-effect-combining-boluses-and-temporary-basal-rates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The sum of all doses' effects on blood glucose are shown for the user in the 'Insulin' curve in the predicted glucose screen.</p>
+<p>The total insulin effect at time <em>t</em> is the sum of effects from each active dose or temporary basal rate:</p>
+<div class="arithmatex">\[ \Delta BG_{I}[t] = \sum_{dose=1}^{n} \Delta BG_{dose}[t] \]</div>
 <h2 id="carbohydrate-effect">Carbohydrate Effect<a class="headerlink" href="#carbohydrate-effect" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Carbohydrates will raise blood glucose, but the speed and degree to which they impact blood glucose are dependent on the type of carbohydrates. High glycemic index (GI) carbohydrates will raise blood glucose quickly over a shorter time, whereas low GI foods will raise blood glucose more slowly over a longer period. Foods like candy, juice, and fruits tend to be high GI foods, while pizza, burritos, and quesadillas are usually lower GI foods. Digestion issues like gastroparesis may also contribute to variations in carbohydrate absorption.</p>
 <p>Because carbohydrate absorption can be quite variable, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has a model that dynamically adjusts the expected remaining time of carbohydrate absorption. To start with, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> allows the user to input a rough guess of how long they think the food or drink will take to absorb. The user’s guess is used as a middle of the road estimate, and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s algorithm will shorten or lengthen it based on observed blood glucose change.</p>
@@ -3572,13 +3594,13 @@
 <div class="arithmatex">\[ MAR[t] = \frac{CA[t]}{1.5 \times d} \]</div>
 <p>where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrates (g) and d is the expected duration (hr) it will take the carbohydrates to absorb.</p>
 <h3 id="dynamic-carbohydrate-absorption">Dynamic Carbohydrate Absorption<a class="headerlink" href="#dynamic-carbohydrate-absorption" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>):</p>
-<div class="arithmatex">\[ ICE[t] = OA[t] + IA[t] \]</div>
-<p>where, <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> (mg/dL/5 min) is the insulin counteraction effect, OA is the observed activity (mg/dL/5min) or observed change in blood glucose at time <em>t</em>, and IA is the insulin activity (mg/dL/5min).</p>
+<p>The linear model above is modulated by an additional calculation that uses recently observed blood glucose data to estimate how fast carbohydrates have been absorbing. The expected change in blood glucose due to insulin effects alone is compared to the actual observed changes in blood glucose. This difference is termed the insulin counteraction effect (<abbr title="Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.">ICE</abbr>):</p>
+<div class="arithmatex">\[ ICE[t] = \Delta BG_{O}[t] - \Delta BG_{I}[t] \]</div>
+<p>where, <abbr title="Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.">ICE</abbr> (mg/dL/5 min) is the insulin counteraction effect, <span class="arithmatex">\(\Delta BG_{O}\)</span> is the observed change in blood glucose (mg/dL/5min) at time <em>t</em>, and <span class="arithmatex">\(\Delta BG_{I}\)</span> is the modelled change in blood glucose due to insulin alone (i.e. the insulin effect as described above mg/dL/5min).</p>
 <p>Insulin counteraction effects are caused by more than just carbohydrates, and can include exercise, sensitivity changes, or incorrectly configured insulin delivery settings (e.g., basal rate, <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>, etc.). However, since the effect of carbohydrates is often dominant (after insulin), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> can still make useful ongoing adjustments to its carbohydrate model by assuming that the increase in blood glucose is mainly carbohydrate absorption in the period following recorded meal entries.  </p>
-<p>The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using the current carbohydrate-to-insulin ratio and the insulin sensitivity factor at the time of the recorded meal entry.</p>
-<div class="arithmatex">\[ AC[t] = ICE[t] \times \frac{CIR[t]}{ISF[t]} \]</div>
-<p>where AC is the number of carbohydrates absorbed (g/5min), <abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr> is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U), and <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is the insulin sensitivity factor (mg/dL/U) at time <em>t</em>.</p>
+<p>The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using both the carbohydrate-to-insulin ratio and the insulin sensitivity factor that were current at the time of a recorded meal entry.</p>
+<div class="arithmatex">\[ AC[t] = ICE[t] \times \frac{CIR[t_{meal}]}{ISF[t_{meal}]} \]</div>
+<p>where AC is the number of carbohydrates absorbed (g/5min), <abbr title="Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.">ICE</abbr> is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U) at the time of the relevant meal entry, and <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is the insulin sensitivity factor (mg/dL/U) at the time of the relevant meal entry.</p>
 <p>If multiple meal entries are active (i.e., still absorbing), the estimated absorption is split between each carbohydrate entry in proportion to each carbohydrate entry’s minimum absorption rate. For example, if 72g carbohydrates with an expected absorption time of 4 hours was consumed at 12 pm, and another 72g of carbohydrates with an expected absorption time of 2 hours was consumed at 3 pm, then the minimum absorption rate (see MAR equation above) would be 12 g/hr and 6 g/hr respectively, or 1 g/5min and 0.5 g/5min.</p>
 <div class="arithmatex">\[ MAR[t = 12pm] = \frac{ 72g }{ 1.5 \times 4hr } = 12 \frac{ g }{ hr } = 1 \frac{ g }{ 5min } \]</div>
 <div class="arithmatex">\[ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 24 \frac{ g }{ hr } = 2 \frac{ g }{ 5min } \]</div>
@@ -3587,7 +3609,7 @@
 <p>If we further expand this example, by assuming the following at 4pm:</p>
 <ul>
 <li>that there are still carbohydrates left to be absorbed from both meals,</li>
-<li>that the estimated insulin counteraction effect (<abbr title="Insulin Counteraction Effect - Loop models the expected glucose change based on carbs entered, absorption time and your settings; and adjusts based on measured glucose">ICE</abbr>) is <span class="arithmatex">\(+15 \frac{mg/dL}{5min}\)</span>, and</li>
+<li>that the estimated insulin counteraction effect (<abbr title="Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.">ICE</abbr>) is <span class="arithmatex">\(+15 \frac{mg/dL}{5min}\)</span>, and</li>
 <li>the user’s CIR is <span class="arithmatex">\(10 \frac{g}{U}\)</span> and the <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr> is <span class="arithmatex">\(50 \frac{mg/dL}{U}\)</span>,</li>
 </ul>
 <p>then the estimated amount of carbohydrates absorbed at 4pm would be 3g:</p>
@@ -3597,10 +3619,10 @@
 <div class="arithmatex">\[ \text{Proportion to Meal2} = \frac{MAR_{meal2}}{MAR_{meal1} + MAR_{meal2}} = \frac{24}{12+24}=\frac{2}{3} = 66.6\% \]</div>
 <p>resulting in 1g of absorption being attributed to Meal 1 and 2g attributed to Meal 2.</p>
 <h3 id="minimum-carbohydrate-absorption-rate">Minimum Carbohydrate Absorption Rate<a class="headerlink" href="#minimum-carbohydrate-absorption-rate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If the estimated carbohydrate absorption of a meal entry is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.</p>
+<p>If the dynamically-estimated carbohydrate absorption of a meal entry up to the current time <em>t</em> is less than what would have been absorbed using the minimum absorption rate, then the minimum absorption rate is used instead. This is to ensure that meal entries expire in a reasonable amount of time.</p>
 <h3 id="modeling-remaining-active-carbohydrates">Modeling Remaining Active Carbohydrates<a class="headerlink" href="#modeling-remaining-active-carbohydrates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then forecasted to decay or absorb using the minimum absorption rate. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses this forecast to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:</p>
-<div class="arithmatex">\[ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t]}{CIR[t]} \]</div>
+<div class="arithmatex">\[ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t_{meal}]}{CIR[t_{meal}]} \]</div>
 <h2 id="retrospective-correction-effect">Retrospective Correction Effect<a class="headerlink" href="#retrospective-correction-effect" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition note">
 <p>The retrospective correction effect allows the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm to account for effects that are not modeled with the insulin and carbohydrate effects, by comparing historical predictions to the actual blood glucose.</p>
@@ -3764,7 +3786,7 @@
 <h2 id="predicting-glucose">Predicting Glucose<a class="headerlink" href="#predicting-glucose" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>As described in the momentum effect section, the momentum effect is blended with the insulin, carbohydrate, and retrospective correction effects to predict the change in blood glucose:</p>
 <div class="arithmatex">\[ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{RC}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) \]</div>
-<p>Lastly, the forecast or predicted blood glucose BG at time <em>t</em> is the current blood glucose BG plus the sum of all blood glucose effects BG over the time interval [t5, t]:</p>
+<p>Lastly, the forecast or predicted blood glucose BG at time <em>t</em> is the current blood glucose BG plus the sum of all blood glucose effects <span class="arithmatex">\(\Delta BG\)</span> over the time interval <span class="arithmatex">\([t_{5}, t]\)</span>:</p>
 <div class="arithmatex">\[ \widehat{BG}[t] = BG[t_{o}] + \sum_{i=5}^{t} \Delta BG[t_{o+i}] \]</div>
 <p>Each individual effect along with the combined effects are illustrated in the figure below. As shown, blood glucose is trending slightly upwards at the time of the prediction. Therefore, the blood glucose momentum effect’s contribution is pulling up the overall prediction from the other three effects for a short time. Retrospective correction is lowering the current prediction, indicating that the recent rise in blood glucose was not as great as had been predicted in the recent past.</p>
 <p><img alt="combined effects curve" src="../img/combined_effects.png" /></p>
