@@ -3326,7 +3326,7 @@
 <li>Check out links on the <a href="../troubleshoot/">LoopDocs: <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Troubleshooting</a> page</li>
 </ul>
 </li>
-<li>Make sure Looper's phone is connected to the internet so it can upload to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em></li>
+<li>Make sure the Looper's phone is connected to the internet so it can upload to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em></li>
 </ul>
 <h2 id="remote-commands-stopped-working">Remote Commands Stopped Working<a class="headerlink" href="#remote-commands-stopped-working" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is for people who were using remote commands and they suddenly stopped working.</p>
@@ -3337,8 +3337,8 @@
 </ul>
 <h2 id="improper-configuration">Improper Configuration<a class="headerlink" href="#improper-configuration" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="nightscout-config-and-loop-build-method"><em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Config and <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Build Method<a class="headerlink" href="#nightscout-config-and-loop-build-method" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Ensure your <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> version is at least version 14.2.6.</p>
-<p>Verify that you performed all the <a href="../remote-config/">Remote Configuration</a> steps for the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site including sending an override from the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;phone to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>.</p>
+<p>Ensure your <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> version is at least 14.2.6.</p>
+<p>Verify that you performed all the <a href="../remote-config/">Remote Configuration</a> steps for the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site, including sending an override from the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;phone to <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>.</p>
 <h4 id="baddevicetoken">BadDeviceToken<a class="headerlink" href="#baddevicetoken" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>When the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> config var LOOP_PUSH_SERVER_ENVIRONMENT does not match the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;app build method; the error message contains the phrase <code>APNs delivery failed: BadDeviceToken</code>.</p>
 <ul>
@@ -3348,7 +3348,7 @@
 <p>If you attempt to issue a command from <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Careportal; after you hit submit and then OK, you will see the error message:</p>
 <div class="highlight"><pre><span></span><code>Error: APNs delivery failed: BadDeviceToken
 </code></pre></div>
-<p>If you attempt to issue a command using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> ; after you authenticate the command, you will see the error message listed below and shown in the screenshot.</p>
+<p>If you attempt to issue a command using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em>; after you authenticate the command, you will see the error message listed below and shown in the screenshot.</p>
 <div class="highlight"><pre><span></span><code>HTTP Error
 Status Code: 500
 body: APNs delivery failed: BadDeviceToken
@@ -3358,21 +3358,21 @@ body: APNs delivery failed: BadDeviceToken
 <p>You can build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <a href="../../version/build-time-flag/">Build-Time Features</a> as part of code customization.</p>
 <p>If you added this Build-Time Flag: <code>REMOTE_OVERRIDES_DISABLED</code></p>
 <p>You will not see any errors, but nothing will happen when you issue any kind of remote command.</p>
-<p><strong>Solution</strong>: Remove  <code>REMOTE_OVERRIDES_DISABLED</code> from  <code>LoopConfigOverride.xcconfig</code> file and rebuild the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;app.</p>
+<p><strong>Solution</strong>: Remove <code>REMOTE_OVERRIDES_DISABLED</code> from <code>LoopConfigOverride.xcconfig</code> file and rebuild the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;app.</p>
 <h3 id="incorrect-password-otp-error">Incorrect Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) Error<a class="headerlink" href="#incorrect-password-otp-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The references to Caregiver below is the person sending the commands. There are specific <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> app insructions that you modify for your authenticator. You must have the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;phone with you to troubleshoot this problem.</p>
+<p>The references to ‘caregiver’ below refer to the person sending the commands. You must have the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;phone with you to troubleshoot this problem.</p>
 <ul>
-<li>The Apple clock should be set to automatic on both the Looper's phone and Caregiver’s device.<ul>
+<li>The Apple clock should be set to automatic on both the Looper's phone and the caregiver’s device.<ul>
 <li>If the clock is incorrect, even slightly, remote commands will fail.</li>
 </ul>
 </li>
-<li>Check if One-Time Passwords (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) align between Caregiver and&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.<ul>
+<li>Check if One-Time Passwords (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) align between <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> and&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.<ul>
 <li>In&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>: Settings -&gt; Services -&gt; <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em></li>
-<li>In <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> : Settings -&gt; Tap on Loopers Name</li>
+<li>In <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> : Settings -&gt; Tap on Looper's Name</li>
 <li>Observe the 6-digit <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> as they change</li>
 </ul>
 </li>
-<li>If the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> don't match, you can reset it:<ul>
+<li>If the OTPs don't match, you can reset it:<ul>
 <li><strong>Warning</strong>: If there are multiple devices (or people) sending remote commands, this procedure <strong>resets the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> for all</strong></li>
 <li><em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>: Settings -&gt; Services -&gt; <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> -&gt; One-Time Password -&gt; Tap Reload button<ul>
 <li>The <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code is different as soon as you hit <code>Reload</code></li>
@@ -3388,89 +3388,79 @@ body: APNs delivery failed: BadDeviceToken
 </li>
 </ul>
 <h2 id="undelivered-or-expired-commands">Undelivered or Expired Commands<a class="headerlink" href="#undelivered-or-expired-commands" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Apple Push Notifications will often not make it to an app, either due to your settings or intentional limitations by Apple. This error can appear in various forms:</p>
+<p>Apple push notifications may not always reach your app due to various settings or Apple's intentional limitations. This issue can manifest in several ways:</p>
 <ul>
-<li>Push notification banner never shows on Looper’s device.</li>
-<li>Push notification banner shows but nothing happens in&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em> (no error or success message afterwards)</li>
-<li>Error message shows that Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) is expired</li>
+<li>The push notification banner never appears on the Looper’s device.</li>
+<li>The push notification banner appears, but nothing happens in&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;(no error or success message afterward).</li>
+<li>An error message in <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> indicates the Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) is expired.</li>
 </ul>
-<p>While&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;does not have control over Push Notification timely delivery, there are things that can be done to mitigate these issues. Note that rebuilding&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>, <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> or <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> is generally not going to help.</p>
-<p>Check these settings on the Looper’s device, not the Caregivers. Several of these are related to Apple suppressing notifications.</p>
-<ul>
-<li>Notifications<ul>
-<li>Settings -&gt; Notifications -&gt;&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em></li>
-<li>Turn on “Allow Notifications”</li>
-<li>Turn on “Time Sensitive Notifications”</li>
+<p>While&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;cannot control the timely delivery of push notifications, there are several steps you can take to mitigate these issues. Note that rebuilding&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;or <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> generally will not resolve the problem.</p>
+<p>Check these items on the Looper’s phone, not the caregiver's.</p>
+<ol>
+<li>Reboot the phone.</li>
+<li>Wait 24 hours as it often takes time for the push notification limits to reset.</li>
+<li>Limit the number of&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;commands you send in a short period.<ul>
+<li>Apple may throttle notifications if too many are received.</li>
+<li>Sending no more than 1 or 2 per hour may help.</li>
 </ul>
 </li>
-<li>Focus Modes<ul>
-<li>For all focus modes (ex: Do Not Disturb, Sleep), make sure&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;is listed as an app allowing Notifications.</li>
-<li>To Adjust<ul>
-<li>Settings -&gt; Focus</li>
-<li>Select the focus mode (ex: Do Not Disturb, Sleep)</li>
-<li>Under “Allow Notifications, tap “Apps”</li>
-<li>Add “&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;” to the list.               </li>
+<li>Disable notifications from other apps.<ul>
+<li>It is possible that other apps can cause the system to throttle all notifications, including&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.</li>
+</ul>
+</li>
+<li>Enable Time Sensitive Notifications:<ul>
+<li>Apple Settings -&gt; Notifications -&gt;&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.</li>
+<li>Turn on “Allow Notifications”.</li>
 <li>Turn on “Time Sensitive Notifications”.</li>
 </ul>
 </li>
+<li>Upgrade <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>:<ul>
+<li><em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> version 15.0 (released late 2023) and greater supports time sensitive notifications.</li>
+<li>This can help <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> to deliver remote notifications faster.</li>
 </ul>
 </li>
-<li>Background App Refresh<ul>
-<li>Settings -&gt; General -&gt; Background App Refresh</li>
-<li>Select “On” up top</li>
-<li>Activate&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;toggle in list</li>
+<li>Adjust Focus Modes:<ul>
+<li>For all focus modes, make sure&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;is listed as an app allowing Notifications.</li>
+<li>Apple Settings -&gt; Focus</li>
+<li>Select the focus mode (e.g., Do Not Disturb, Sleep).</li>
+<li>Under “Allow Notifications,” tap “Choose Apps”.</li>
+<li>Add&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;to the list.</li>
 </ul>
 </li>
-<li>Lower Power Mode<ul>
-<li>Turn off if able</li>
+<li>Turn on Background App Refresh:<ul>
+<li>Apple Settings -&gt; General -&gt; Background App Refresh</li>
+<li>Select “On” at the top.</li>
+<li>Activate the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;toggle in the list.</li>
 </ul>
 </li>
-</ul>
-<p>Some other things to try on the Looper’s phone:</p>
-<ul>
-<li>Reboot phone<ul>
-<li>This sometimes resets Apple’s push notification limit.</li>
+<li>Try using Wi-Fi instead of cellular if possible:<ul>
+<li>Apple may not deliver notifications on cellular as often as on Wi-Fi.</li>
 </ul>
 </li>
-<li>Try wifi instead of cellular, if able<ul>
-<li>Apple may not deliver notifications on cellular as often as wifi.</li>
+<li>Charge the phone:<ul>
+<li>If the battery is low, <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> may not deliver notifications to save battery life (e.g., while on Low Power mode).</li>
 </ul>
 </li>
-<li>Charge the phone<ul>
-<li>If the battery is low, <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> may not deliver notifications to save battery life.</li>
-</ul>
-</li>
-<li>Limit the number of&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;commands you send in a short period. Apple may throttle notifications if too many are received. (i.e. no more than 1 or 2 per hour may help).</li>
-<li>Consider disabling “spammy” notifications from other apps. This is only a theory, but it is possible that other apps can cause the system to throttle all notifications, including&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.</li>
-<li>Wait 24 hours or so as it often just takes time for the push notification limits to “reset”.</li>
-<li><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15.3.x: Note there are reports of Remote notifications not being received to the Loopers device for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version 15.3 and 15.3.1. This is fixed in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version 15.4.</li>
-</ul>
+</ol>
 <h2 id="how-to-ask-for-help">How to Ask for Help<a class="headerlink" href="#how-to-ask-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This is helpful information to share when requested by helpers. If you are not using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em>, review the response seen on the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site.</p>
 <ol>
-<li>Activate an override <em>from within&nbsp;</em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span><em> </em>. Does <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> show the active override?</li>
-<li>Activate an override <em>from  <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> </em>. Does it change the active override in&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>?</li>
+<li>Activate an override from within&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>. Does <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> show the active override?</li>
+<li>Activate an override from <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>. Does it change the active override in&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>?</li>
 <li>Do errors show in <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> or <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Careportal when you send a remote command?<ul>
-<li>Share screenshots of error if any</li>
-</ul>
-</li>
-<li>Do errors show in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Notifications on the Looper’s device?<ul>
-<li>Check their Notification history in <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> by swiping down </li>
-<li>Share screenshots of errors if any</li>
+<li>In both <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> and <em>Caregiver</em>, you can tap on an error to read specific error details.</li>
+<li>Share screenshots of errors</li>
 </ul>
 </li>
 <li>What&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;version are you using? Released (main) or development (dev)? Approximately when did you update last?<ul>
-<li>The minimum version that support remote bolus and carbs is&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;3</li>
+<li>The minimum version that supports remote bolus and carbs is&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.</li>
 </ul>
 </li>
-<li>What <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version is being used on the Looper’s device?<ul>
-<li>Note that <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15.3.x had notification issues</li>
-<li>Update to a newer version</li>
-</ul>
-</li>
+<li>What <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version is being used on the Looper’s device?</li>
 <li>How did you build&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>?<ul>
-<li>Build with <abbr title="program used to build an app">Xcode</abbr> to device (typical)?</li>
-<li>Using AppCenter or Diawai? A special environment variable must be set LOOP_PUSH_SERVER_ENVIRONMENT=production</li>
+<li>Web browser using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>?</li>
+<li><abbr title="program used to build an app">Xcode</abbr>?</li>
+<li>AppCenter or Diawi? A special environment variable must be set: <code>LOOP_PUSH_SERVER_ENVIRONMENT=production</code></li>
 </ul>
 </li>
 </ol>
