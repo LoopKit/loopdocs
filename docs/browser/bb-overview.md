@@ -25,36 +25,26 @@ To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, y
 
 ### How-to Video to Build with a Browser
 
-In addition to the pages linked above, there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
+In addition to the pages linked in [Configuration Pages](#configuration-pages), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
 
 * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
 Click in the comments for a full index of topics.  If you have issues with a step, use the index to  advance to the relevant part of the video. Subtitles are  in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
 
-### Configuration Pages
+### Configure to use Browser
 
-Steps that must be completed to build an app using the browser build method are grouped under the Configure to use Browser heading:
+There is a lot of information in the introduction and summary page. Please don't skip that. it should be read before you begin. The steps on these pages must be completed for you to build an app using a browser:
 
-There is an introduction and summary page that should be read first. This has a table of all the steps with links to each step.
-
-* [Introduction and Summary](intro-summary.md){: target="_blank" }
-
-The rest of the pages in this section detail the required configuration steps needed:
-
-* [Collect Secrets](secrets.md){: target="_blank" }
-* [Prepare Fork](prepare-fork.md){: target="_blank" }
-* [Identifiers](identifiers.md){: target="_blank" }
-* [Prepare App](prepare-app.md){: target="_blank" }
-* [Create Certificates](certs.md){: target="_blank" }
-* [Build the *Loop* App](build-yml.md){: target="_blank" }
+1. [Introduction and Summary](intro-summary.md){: target="_blank" }
+1. [Collect Secrets](secrets.md){: target="_blank" }
+1. [Prepare Fork](prepare-fork.md){: target="_blank" }
+1. [Identifiers](identifiers.md){: target="_blank" }
+1. [Prepare App](prepare-app.md){: target="_blank" }
+1. [Create Certificates](certs.md){: target="_blank" }
+1. [Build the *Loop* App](build-yml.md){: target="_blank" }
+1. [*TestFlight* Users](tf-users.md){: target="_blank" }
 
 ## Install on Phone
-
-Once the app is built the first time:
-
-* You need to set up [TestFlight Users](tf-users.md){: target="_blank" } who can then install that app on their phone
-* This is true even if the only *TestFlight* user is you
-* This step is needed one-time only
 
 Instructions to install on a phone are found at:
 
@@ -67,10 +57,21 @@ Try to:
 * Scroll back in the directions and see if you missed a paragraph or step
 * Compare your display with the <span>graphics in *LoopDocs*</span>
     * Is something different or does yours have an error message?
-    * Does the error message guide you to the problem and solution?
+    * Does the [Error](bb-errors.md){: target="_blank" } message guide you to the problem and solution?
     * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for *GitHub* directions if your display looks different than our documentation
-* If you are still stumped - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
-    * Remember - to get help with Browser Build, all we need is your *GitHub* username and a brief description of your problem
+
+## Errors while Configuring and Building
+
+If you get an error that you cannot figure out, reach out for help before you get frustrated or begin to delete things - let a mentor help you:
+
+* General instructions: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
+* Browser Build instructions:
+    * [Help with Errors](bb-errors.md#help-with-errors){: target="_blank" }
+    * [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
+    * With Browser Build, post your *GitHub* LoopWorkspace link and a brief description of your problem
+
+
+* [Errors with Browser](bb-errors.md){: target="_blank" }
 
 ## Update the App
 
@@ -81,12 +82,6 @@ Instructions to make updates are found at:
 There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic:
 
 * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
-
-## Errors while Building
-
-If you get an error, please consult:
-
-* [Errors with Browser](bb-errors.md){: target="_blank" }
 
 ## Other Topics
 
