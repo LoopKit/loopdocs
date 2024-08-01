@@ -38,7 +38,7 @@ In order to activate, follow these steps:
     Then rebuild the app and go to step 2.
     ![Xcode background sound example](./img/background-sound-xcode.png)
 
-    * When [building with Browser](../gh-actions/gh-overview.md), you will need to make a change to the GitHub Actions workflow.
+    * When [building with Browser](../browser/bb-overview.md), you will need to make a change to the GitHub Actions workflow.
     Go to your LoopWorkspace fork on GitHub and press `.` on your keyboard.
     You will be redirected to a `github.dev` page with the code of your LoopWorkspace.
     Now go to ".github" -> "workflows" -> "build_loop.yml".

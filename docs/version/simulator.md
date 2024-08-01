@@ -42,7 +42,7 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
 
 ### Build to a Compatible Phone using Browser Build
 
-You don't need to do anything special when you build the app using the [Build with Browser](../gh-actions/gh-overview.md) instructions. Install the app on your phone from TestFlight. Then select the CGM and/or Pump simulator desired. You must have a paid developer account.
+You don't need to do anything special when you build the app using the [Build with Browser](../browser/bb-overview.md) instructions. Install the app on your phone from TestFlight. Then select the CGM and/or Pump simulator desired. You must have a paid developer account.
 
 ### Build to a Compatible Phone using *Mac* Build
 

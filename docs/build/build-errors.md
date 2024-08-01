@@ -2,7 +2,7 @@
 
 !!! important
     **These are only relevant when building with a Mac and Xcode.**  
-    **For Building with Browser Build errors, please see: [Errors with Browser](../gh-actions/gh-errors.md)**
+    **For Building with Browser Build errors, please see: [Errors with Browser](../browser/bb-errors.md)**
 
 There are two types of build indications that may be seen: they are warnings (yellow or purple icons) and red errors. You'll see the warnings and errors in the left-hand column of the Xcode window.
 

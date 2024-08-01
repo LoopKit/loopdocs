@@ -82,7 +82,7 @@ If you are a new looper who got to these pages from the Set Up app page - congra
 
 ### Build with Browser
 
-Click here if you want to [Build with Browser](../gh-actions/gh-overview.md).
+Click here if you want to [Build with Browser](../browser/bb-overview.md).
 
 ### Build with *Mac*:
 

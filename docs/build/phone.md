@@ -63,7 +63,7 @@ Do not use any of the beta *iOS* versions. (If you are uncertain what that means
 
 ### Developer Mode - *Mac* Build Only
 
-> When you build the *Loop* app using [Build with Browser](../gh-actions/gh-overview.md), you are not required to enable Developer Mode on the phone or watch.
+> When you build the *Loop* app using [Build with Browser](../browser/bb-overview.md), you are not required to enable Developer Mode on the phone or watch.
 
 With *iOS* 16 or newer and *watchOS* 9 or newer, *Apple* added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device){: target="_blank" }.
 
@@ -100,7 +100,7 @@ Please read: [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#t
 
 **Please be proactive - install updates as soon as the all-clear is given for using the *Loop* app with that *iOS* update.**
 
-If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, consider using [Build with Browser](../gh-actions/gh-overview.md).
+If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, consider using [Build with Browser](../browser/bb-overview.md).
 
 
 ### Why Turn off Automatic Updates?

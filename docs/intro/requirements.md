@@ -8,7 +8,7 @@ With the release of&nbsp;_<span translate="no">Loop 3</span>_&nbsp;, there are t
 
 The Build Steps have been split into two tabs:
 
-* [Build with Browser](../gh-actions/gh-overview.md)
+* [Build with Browser](../browser/bb-overview.md)
     * Build with a browser on any computer or tablet
     * App is installed on the iPhone using *TestFlight*
 * [Build with *Mac*](../build/overview.md)
@@ -32,7 +32,7 @@ These requirements are independent of how you build the Loop app:
     * Build with Browser - requires a paid developer account
     * Build with *Mac* - can build a free version with some limitations and must rebuild weekly
 
-### Added Requirements to [Build with Browser](../gh-actions/gh-overview.md){: target="_blank" }
+### Added Requirements to [Build with Browser](../browser/bb-overview.md){: target="_blank" }
 
 If you plan to build using the Build with Browser instructions, you also need:
 
@@ -73,7 +73,7 @@ Before you start either build method, review the Common Requirements. First one 
 
 ### Build with Browser
 
-Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Browser](../gh-actions/gh-overview.md).
+Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Browser](../browser/bb-overview.md).
 
 ### Build with *Mac*
 

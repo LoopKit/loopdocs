@@ -2,7 +2,7 @@
 
 **This page is only relevant when building with a Mac and Xcode.**
 
-**For Browser Build, please see: [Update/Rebuild with Browser](../gh-actions/gh-update.md)**
+**For Browser Build, please see: [Update/Rebuild with Browser](../browser/bb-update.md)**
 
 !!! info "Time Estimate"
 
@@ -66,7 +66,7 @@ Between Loop app builds, there's a high likelihood that Apple has updated one or
 
 Based on the iOS on your phone, or the iOS you plan to install on your phone, determine the required macOS and Xcode versions. Click on this  link [versions for iOS, macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other) to determine the versions needed and then hit the back button in your browser to finish the steps on this updating page.
 
-If you are tired of the macOS and Xcode version update requirements, check out the [Build with Browser](../gh-actions/gh-overview.md) option.
+If you are tired of the macOS and Xcode version update requirements, check out the [Build with Browser](../browser/bb-overview.md) option.
 
 !!! warning "First macOS and Then Xcode"
     Your macOS must meet the minimum requirement for the Xcode version you need to support your current iOS as detailed in that link above.

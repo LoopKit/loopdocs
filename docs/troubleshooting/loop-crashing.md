@@ -23,7 +23,7 @@ Your Loop app has an expiration date. The expiration date will depend on the bui
 
 If you are running an older version, you do not get prior warning that the app is about to expire, although you can look in the *TestFlight* app and it will tell you. An in-app warning is supplied with version 3.4.
 
-Please follow these steps to ensure you can build the app again: [How to Update or Rebuild](../gh-actions/gh-update.md#how-to-update-or-rebuild){: target="_blank" }.
+Please follow these steps to ensure you can build the app again: [How to Update or Rebuild](../browser/bb-update.md#how-to-update-or-rebuild){: target="_blank" }.
 
 
 ### Mac using a Paid account (1 year)

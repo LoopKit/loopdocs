@@ -23,19 +23,19 @@ But first - try to diagnose it yourself using this page.
 !!! warning "Just updated?"
     If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.
 
-    If you missed this step - go do it now. [Update from 3.2.x to 3.4](gh-update.md#update-from-32x-to-34){: target="_blank" }
+    If you missed this step - go do it now. [Update from 3.2.x to 3.4](bb-update.md#update-from-32x-to-34){: target="_blank" }
 
 !!! important "Certificate is missing"
     If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
 
-    * See [Renew Certificates](gh-update.md#renew-certificate){: target="_blank" }
+    * See [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
 
 These are some of the most common errors to date.
 
 1. You made a spelling error when adding <code>Secrets</code>
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
-1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](gh-first-time.md#add-app-group-to-identifiers){: target="_blank" }
+1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
     * See [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for an example of this kind of failure
 1. You used a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
@@ -90,7 +90,7 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and can not create a new one because you enabled`.
 
-* See [Renew Certificates](gh-update.md#renew-certificate){: target="_blank" }
+* See [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
 
 
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
@@ -215,22 +215,20 @@ If that phrase is found, then:
     * You have already created a *Loop* App in the *App Store* with that incorrect `TEAMID`
     * This is true if you completed the steps after running Action: `Add Identifiers` and before Action: `Create Certificates`
 
-Follow these steps:
+Click on this link to [Delete Identifiers](#delete-identifiers).
 
-!!! tip "Open each link below in a separate tab"
-    It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.
+- Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
+- It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
 
-1. Delete all the identifiers that you can, following the steps in [Configure to Use Browser: Delete Identifiers](gh-first-time.md#delete-identifiers)
-    - Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
-    - It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
+#### Rerun Steps with correct TEAMID
 
 1. Enter your `TEAMID` correctly in the repository `Secrets`
     - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership){: target="_blank" } page for that `TEAMID`.
-    - Follow the update instructions here (this example is for `GH_PAT`, you'll do the same but for `TEAMID`) [Update Secrets](gh-update.md#update-secrets)
+    - Follow the update instructions here (this example is for `GH_PAT`, you'll do the same but for `TEAMID`) [Update Secrets](bb-update.md#update-secrets)
 
-1. Run Action: [Configure to Use Browser: `Add Identifiers`](gh-first-time.md#add-identifiers) again
+1. Run Action: [Configure to Use Browser: `Add Identifiers`](identifiers.md#add-identifiers) again
 
-1. Follow all the steps in this section with the **correct** `TEAMID` [Configure to Use Browser: Configure Identifiers for Loop](gh-first-time.md#configure-identifiers-for-loop) but when you get to the [Configure to Use Browser: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
+1. Follow all the steps in this section with the **correct** `TEAMID` [Configure to Use Browser: Configure Identifiers for Loop](prepare-app.md#configure-identifiers-for-loop) but when you get to the [Configure to Use Browser: Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect), you need to return to this page and follow the instructions below to remove the app and add a new one.
 
 The first time through, you created an app with a `Bundle ID` that does NOT include your `TEAMID`.
 
@@ -258,7 +256,7 @@ That *App* with the wrong `Bundle ID` remains in the *App store* but it is hidde
 
 Now click on the `Add Apps` button or the :heavy_plus_sign: (plus sign) if you have other apps in the *App Store*.
 
-Follow the [Configure to Use Browser: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) directions with these additions:
+Follow the [Configure to Use Browser: Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect) directions with these additions:
 
 * You must come up with a new name for your *Loop* App
 * Triple-check that the `Bundle ID` you choose is for *Loop* and contains your `TEAMID`, it should look like: `com.TEAMID.loopkit.Loop`
@@ -266,7 +264,7 @@ Follow the [Configure to Use Browser: Create Loop App in App Store Connect](gh-f
 
 #### Create Certificates
 
-You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
+You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](certs.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
 ### Error: Missing Repository Access
 
@@ -289,7 +287,7 @@ If you see this phrase, the `fastlane` package that is utilized during the `3. C
 To fix this error:
 
 - Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/){: target="_blank" }
-  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [Configure to Use Browser: Setup *GitHub*: Create `GitHub Personal Access Token`](../gh-actions/gh-first-time.md#create-github-personal-access-token)
+  - Here you will see your personal access token (`Fastlane Access Token`) that was created during [Configure to Use Browser: Setup *GitHub*: Create `GitHub Personal Access Token`](../browser/secrets.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
   - None of the checkboxes under **`Select Scopes`** will be checked – this is what's causing the issue.
@@ -304,7 +302,7 @@ NOTE: for next release or if using the dev branch - you want <code>GH_PAT</code>
 
 #### Create Certificates
 
-You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](gh-first-time.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
+You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](certs.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
 ### Error: Could not create
 
@@ -377,7 +375,7 @@ Copy the words on the line below and paste them into the search function for you
 
 If that phrase is found, then:
 
-* Make sure you completed the [Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) Step
+* Make sure you completed the [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect) Step
     * Once you've resolved that step, run these *Actions* again:
         * `Create Certificates`
         * `Build Loop`
@@ -410,7 +408,7 @@ For example, you might see:
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
 
-Return to [First-Time: Identifiers for the `Loop` app](gh-first-time.md#identifiers-for-the-loop-app) and make sure you followed all the steps.
+Return to [First-Time: Identifiers for the `Loop` app](prepare-app.md#identifiers-for-the-loop-app) and make sure you followed all the steps.
 
 You must create certificates again before you can build *Loop*:
 
@@ -438,7 +436,7 @@ If that phrase is found with lines similar to the following:
 [31m- 'AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.LoopWatch.watchkitextension.mobileprovision'[0m
 ```
 
-This tells you, the `Bundle ID` you selected in [First-Time: Create Loop App in App Store Connect](gh-first-time.md#create-loop-app-in-app-store-connect) does NOT have your `TEAMID` embedded in the name.
+This tells you, the `Bundle ID` you selected in [First-Time: Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect) does NOT have your `TEAMID` embedded in the name.
 
 Once you have created an app in the *App Store* that is not based on your `TEAMID`, you cannot delete it, but you can Remove it (i.e. hide it so that it is no longer visible on this page and you don't accidentally click on it).
 
@@ -450,7 +448,7 @@ Once you have created an app in the *App Store* that is not based on your `TEAMI
     * Tap on `Remove App`
     * New dialog window appears, select `Remove`
 
-At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](gh-first-time.md#configure-secrets). This time you will be updating `TEAMID` in the repository secret list.
+At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](prepare-fork.md#configure-secrets). This time you will be updating `TEAMID` in the repository secret list.
 
 ## Repeat `Build Loop` Errors
 
@@ -474,7 +472,7 @@ Copy the words on the line below and paste them into the search function for you
 > Could not download/upload from App Store Connect
 > ```
 
-Solution: Update your fork. See instructions on the Update page: [Update `Fork`](gh-update.md#update-fork){: target="_blank" }
+Solution: Update your fork. See instructions on the Update page: [Update `Fork`](bb-update.md#update-fork){: target="_blank" }
 
 ### Intermittent TestFlight Upload Number Error
 
@@ -587,7 +585,7 @@ This is not the first thing to try, but sometimes it is the best approach.
 
 There might be several reasons to do this:
 
-* You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](gh-other-apps.md)
+* You lost your <code>MATCH_PASSWORD</code> and want to build one of the [Other Apps](other-apps.md)
 * You thought you entered the correct <code>MATCH_PASSWORD</code> but you are getting [Error: Could not decrypt](#error-could-not-decrypt)
 * You are having trouble renewing your certificates after using Browser Build for a year
 
@@ -659,3 +657,24 @@ A screen will appear with a lot of options - do **not** do anything on this scre
 {align="center"}
 
 You will not directly interact with your `Match-Secrets` repository.
+
+### Delete Identifiers
+
+The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
+
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
+* Use the graphic below as a guide to removing identifiers
+* Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
+* It is OK to delete an identifier even if it does have your correct `TEAMID`
+    * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
+* Note - this graphic indicates where on this page you can find your `TEAMID`
+    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](bb-update.md#update-secrets){: target="_blank"} with your correct `TEAMID`
+    * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+    * Delete all the other identifiers first that have the same incorrect `TEAMID` and then try to delete the Loop identifier with the incorrect `TEAMID`
+
+![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
+{align="center"}
+
+If coming here because you enter the wrong `TEAMID` in `Secrets` - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
+
+After you delete identifiers, you must add them back, configure them and create certificate before you can build again.

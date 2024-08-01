@@ -29,6 +29,6 @@ The commit is identified by a 7-digit alphanumeric code.  That code was also app
 ## Build `Loop` `dev`
 
 1. For the Build with Browser method
-    * [Build dev with Browser](../gh-actions/build-dev-browser.md)
+    * [Build dev with Browser](../browser/build-dev-browser.md)
 1. For the Build with *Mac* method:
     * [Build dev with *Mac*](../build/build-dev-mac.md)

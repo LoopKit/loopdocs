@@ -2,7 +2,7 @@
 
 !!! info "Time Estimate"
     - 45 minutes to 2 hours, depending on internet connection...but you don't need to babysit the download.
-    - 0 minutes if you decide to use the [Build with Browser](../gh-actions/gh-overview.md) method to build Loop
+    - 0 minutes if you decide to use the [Build with Browser](../browser/bb-overview.md) method to build Loop
 
 !!! abstract "Summary"
     - Check iPhone iOS version
@@ -31,7 +31,7 @@ Which version of Xcode you install on your computer depends on the iOS version y
 
 Because of the complexity of these dependencies, **please read this entire page.**
 
-Or - look into building with [GitHub Actions](../gh-actions/gh-overview.md) - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
+Or - look into building with [GitHub Actions](../browser/bb-overview.md) - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
 
 ## Which version of Xcode do I need?
 
@@ -77,7 +77,7 @@ After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it i
 
 ### Compatible Versions#
 
-The current development version and the next release of&nbsp;_<span translate="no">Loop</span>_&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../gh-actions/gh-overview.md), which supports iOS 15, 16, and 17.
+The current development version and the next release of&nbsp;_<span translate="no">Loop</span>_&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
 
 When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
 

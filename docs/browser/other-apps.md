@@ -13,7 +13,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 
 ### Updating / Rebuilding Other Apps
 
-If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](gh-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name from the [Table of App Repositories](#table-of-app-repositories) for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
+If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name from the [Table of App Repositories](#table-of-app-repositories) for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
 
 ### Update to Build with Browser for the *Loop Caregiver* App
 
@@ -22,7 +22,7 @@ If you are coming to this page to update one of the other apps, follow the [How 
     
     * To update the *Loop Caregiver* App you need to [Update the `Repository`](#update-the-repository)
     * Then (one time only):
-        * Run the Action to [Add Identifiers](#add-identifiers)
+        * Run the Action to [Add Identifiers](identifiers.md#add-identifiers)
         * Follow the instructions in [Add `App Group` to `LoopCaregiver`](#add-app-group-to-loopcaregiver)
         * Continue with [Create Certificates](#create-certificates)
         * Finish with [Build App](#build-app)
@@ -56,9 +56,9 @@ For the convenience of caregivers who use `Loop Follow` to monitor multiple peop
 
     * If you decide you want to try the *GitHub* free organization method, review the instructions and then adjust as you work through the step-by-step instructions on this page which show graphics and instructions for using a personal *GitHub* account
 
-* If this is the first repository you have built with the Browser Build method, you must first complete the initial steps found on [Configure to Use Browser](../gh-actions/gh-first-time.md). When you reach the point where
+* If this is the first repository you have built with the Browser Build method, you must first complete the initial steps found on [Configure to Use Browser](../browser/intro-summary.md). When you reach the point where
     * You have created your Match-Secrets repository
-    * You are told to [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../gh-actions/gh-first-time.md#fork-loopworkspace)
+    * You are told to [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../browser/prepare-fork.md#fork-loopworkspace)
         * Review the directions but don't do it
         * Return here and check the table below
         * Use that table to find the link of the repository you will fork
@@ -68,7 +68,7 @@ For the convenience of caregivers who use `Loop Follow` to monitor multiple peop
 
 ## <span translate="no">Fork and Add Secrets</span>
 
-* You will return to this page after reviewing (but not doing) this step [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../gh-actions/gh-first-time.md#fork-loopworkspace)
+* You will return to this page after reviewing (but not doing) this step [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../browser/prepare-fork.md#fork-loopworkspace)
     * Use the same method as that section, but <span>`fork` the `repository` for the app</span> you plan to build
     * _<span translate="no">Loop Caregiver</span>_, expect the `dev branch`
     * _<span translate="no">Loop Follow</span>_, expect the `main branch`
@@ -93,14 +93,14 @@ If you just created the `fork`, you can skip this section.
 
 If you are returning to this page to update an app, please follow these steps. Each step has a link to instructions on the Update `LoopWorkspace` page. Follow the `Update Fork` directions for the `repository` of the app you are updating:
 
-1. [Accept Agreements](gh-update.md#accept-agreements) for the *Apple* Developer account
-2. [Update `Fork`](gh-update.md#update-fork)
+1. [Accept Agreements](bb-update.md#accept-agreements) for the *Apple* Developer account
+2. [Update `Fork`](bb-update.md#update-fork)
 
 Then return to this page.
 
 Normally you skip ahead to [Build App](#build-app) after an update.
 
-If you are updating the *LoopCaregiver* app after the 2023 December 8 update, you need to go to [Add Identifiers](#add-identifiers) after updating the `fork`.
+If you are updating the *LoopCaregiver* app after the 2023 December 8 update, you need to go to [Add Identifiers](identifiers.md#add-identifiers) after updating the `fork`.
 
 ## Configure <code>Secrets</code> for this App
 
@@ -115,7 +115,7 @@ After successfully creating your fork of the repository for this app:
 * If you have already built Loop using the Browser Build method, skip ahead to [Add Existing <code>Secrets</code>](#add-existing-secrets)
 
 * If this is the first repository you have built with *GitHub*
-    * You should follow the detailed steps at [Configure to Use Browser: Configure <code>Secrets</code>](../gh-actions/gh-first-time.md#configure-secrets), except you will apply the <code>Secrets</code> to the repository for the app you are planning to build
+    * You should follow the detailed steps at [Configure to Use Browser: Configure <code>Secrets</code>](../browser/prepare-fork.md#configure-secrets), except you will apply the <code>Secrets</code> to the repository for the app you are planning to build
     * Once your 6 secrets have been added, return to this page and skip ahead to [Validate <code>Secrets</code>](#validate-secrets) on this page.
 
 ### Add Existing <code>Secrets</code>
@@ -125,7 +125,7 @@ After successfully creating your fork of the repository for this app:
 
     If you did not save your MATCH_PASSWORD in your file with all your <code>Secrets</code>, you will need to delete your Match-Secrets repository, create a new one and then add all your <code>Secrets</code> into all you repositories again and run all the Actions again.
 
-    Instructions are found at [Reset Match-Secrets](gh-errors.md#reset-match-secrets).
+    Instructions are found at [Reset Match-Secrets](bb-errors.md#reset-match-secrets).
 
 Open the text file in which you maintain a copy of your 6 <code>Secrets</code> so you can copy each value into the <code>Secrets</code> for this repository.
 
@@ -175,8 +175,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
-    * [Action: Validate <code>Secrets</code> Errors](gh-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
+    * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
+    * [Action: Validate <code>Secrets</code> Errors](bb-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
 
 
@@ -202,9 +202,9 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](gh-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem
-    * [Action: Add Identifiers Errors](gh-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-    * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+    * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem
+    * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
+    * Resolve the error and repeat the Action: [Add Identifiers](identifiers.md#add-identifiers)
 
 ## Review App Identifier
 
@@ -253,7 +253,7 @@ Click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Id
 
 All five of these identifiers should be found after running the `Add Identifier` action on *GitHub*.
 
-If you do not see them, please sync your `LoopCaregiver` repository and then run the [`Add Identifier` action](#add-identifiers). The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
+If you do not see them, please sync your `LoopCaregiver` repository and then run the [`Add Identifier` action](identifiers.md#add-identifiers). The **`NAME`** might begin with an `XC` if you previously built with Xcode. However, the **`IDENTIFIER`** column value should match.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
@@ -312,7 +312,7 @@ The `Edit Your App ID Configuration` screen will open.
 !!! abstract "Same procedure as for the *Loop* app"
     You will follow the same procedure as you did with the *Loop* app.
 
-    You will also want to edit your new app once you create it to [Remove Apple Vision Pro](gh-first-time.md#remove-apple-vision-pro){: target="_blank" }.
+    You will also want to edit your new app once you create it to [Remove Apple Vision Pro](prepare-app.md#remove-apple-vision-pro){: target="_blank" }.
 
 You will be following the directions below to create an App in App Store Connect if you don't already have one.
 
@@ -333,14 +333,14 @@ This requires you to provide some information. Examine the table below for the b
     ![choose to add a new app](img/new-app-in-store.png){width="300"}
     {align="center"}
 
-1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [Configure to Use Browser: Find My Loop](gh-first-time.md#find-my-loop), where you'll be finding App Name instead of Loop.
+1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [Configure to Use Browser: Find My Loop](prepare-app.md#find-my-loop), where you'll be finding App Name instead of Loop.
     * Select "iOS". For Loop Follow you can also select "macOS" if you own a Mac with macOS 11 or later.
     * Enter a name: this will have to be unique
         * You could start with "App Name ABC" where ABC are your initials
         * If that is already taken, you can add a number, for example, "App Name ABC 123"
         * This name is what you see on the App Store Connect list and in the *TestFlight* app
         * Once installed on your phone, you will see the actual app name
-        * You can [Change the App Store Connect Name](../gh-actions/gh-deploy.md#change-the-app-store-connect-name) later if you want
+        * You can [Change the App Store Connect Name](../browser/phone-install.md#change-the-app-store-connect-name) later if you want
     * Select your primary language.
     * Choose the bundle ID for your app
     * SKU can be anything; for example "123" but must be unique across all your apps, so try 1234 or 12345 depending on how many apps you build with this method
@@ -351,7 +351,7 @@ This requires you to provide some information. Examine the table below for the b
 
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
-1. Edit your new app to [Remove Apple Vision Pro](gh-first-time.md#remove-apple-vision-pro){: target="_blank" }
+1. Edit your new app to [Remove Apple Vision Pro](prepare-app.md#remove-apple-vision-pro){: target="_blank" }
 
 You are done with this activity. Before you close this browser window, note the *TestFlight* tab at the top of the page. You'll be using that tab after you complete the next two actions.
 
@@ -372,8 +372,8 @@ Refer to the graphic below for the numbered steps:
     {align="center"}
 
 1. Wait a minute or two for the action to finish
-    * If this action fails, head over to [Action: Create Certificates Errors](gh-errors.md#action-create-certificates-errors)
-    * Once you've resolved the error, repeat the Actions [Add Identifiers](#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
+    * If this action fails, head over to [Action: Create Certificates Errors](bb-errors.md#action-create-certificates-errors)
+    * Once you've resolved the error, repeat the Actions [Add Identifiers](identifiers.md#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
 
 ## Build App
 
@@ -408,9 +408,9 @@ Refer to the graphic below for the first four steps:
     {align="center"}
 
 1. Wait a few minutes to make sure there is not an early failure
-    * If this action fails, head over to [Action: Build Loop Errors](gh-errors.md#action-build-loop-errors)
+    * If this action fails, head over to [Action: Build Loop Errors](bb-errors.md#action-build-loop-errors)
     * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * [Add Identifiers](#add-identifiers)
+        * [Add Identifiers](identifiers.md#add-identifiers)
         * Create Certificates
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
@@ -418,11 +418,11 @@ Refer to the graphic below for the first four steps:
 
 ## Add Users to *TestFlight* for App
 
-Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [Configure to Use Browser: Set Up Users and Access (TestFlight)](../gh-actions/gh-first-time.md#set-up-users-and-access-testflight).
+Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [Configure to Use Browser: Set Up Users and Access (TestFlight)](../browser/tf-users.md#set-up-users-and-access-testflight).
 
 ## Install on Phone
 
-The [Install on Phone](gh-deploy.md) walks you through the steps to install the app to a phone. When going through those steps, replace your App Name for&nbsp;_<span translate="no">Loop</span>_. Everything else is the same.
+The [Install on Phone](phone-install.md) walks you through the steps to install the app to a phone. When going through those steps, replace your App Name for&nbsp;_<span translate="no">Loop</span>_. Everything else is the same.
 
 ## Use a *GitHub* Organization Account
 
@@ -470,14 +470,14 @@ There are three steps to using this account moving forward:
     * Click on `New repository`
     * Choose `my-name-org` as owner and enter `Match-Secrets` as the name
     * Make sure to choose `Private` and tap on the `Create` button
-    * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](gh-errors.md#create-match-secrets)
+    * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](bb-errors.md#create-match-secrets)
 
 1. For each repository: you need to `fork` for each app you wish to build to the new `my-name-org` account
 
     * When you do the fork, there will be a dropdown menu under Owner for you to select the account for the `fork`
     * Choose the organization account
     * Other than that extra step, follow the standard `fork` directions
-        * This link provides instructions to [`Fork LoopWorkspace`](gh-first-time.md#fork-loopworkspace)
+        * This link provides instructions to [`Fork LoopWorkspace`](prepare-fork.md#fork-loopworkspace)
         * Refer to the [Table of App `Repositories`](#table-of-app-repositories) when building apps other than the *Loop* app
 
 Then, for every build, you will use just the organization account. The original account is maintained to give you access to *GitHub* and holds your *GitHub* personal access token.
@@ -503,12 +503,12 @@ Make sure you are in the organization for *GitHub*:
 ![add secrets at organization level](img/add-secrets-org.png)
 
 * At this point, tap on `New organization secret`
-    * Refer the instructions at this link, [Enter the <code>Secrets</code>](gh-first-time.md#enter-the-secrets), for adding <code>Secrets</code>
+    * Refer the instructions at this link, [Enter the <code>Secrets</code>](prepare-fork.md#enter-the-secrets), for adding <code>Secrets</code>
     * Those instructions show the graphics for a personal `repository` and indicate the button will says `New repository secret` - your screen will show `New organization secret`
     * Continue until all six <code>Secrets</code> are entered for your organization account `my-name-org`
 * Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
 
-The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow [these instructions](gh-first-time.md#create-github-personal-access-token) to get or configure a new one.
+The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow [these instructions](secrets.md#create-github-personal-access-token) to get or configure a new one.
 
 ### Disable Building for Personal *GitHub* account
 

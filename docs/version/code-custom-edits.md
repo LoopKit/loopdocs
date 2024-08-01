@@ -15,7 +15,7 @@ Read about the customizations on this page before applying them.
 
 Some customizations are the same for everyone and have been prepared for easy use. Refer to the build method that you use for information about applying these prepared changes - the same set is available for both build methods.
 
-* [Customize with Browser](../gh-actions/custom-browser.md)
+* [Customize with Browser](../browser/custom-browser.md)
 * [Customize with *Mac*](../build/custom-mac.md)
 
 Other customizations require that you create your own personalized version.
@@ -30,7 +30,7 @@ The instructions on this page identify the module, `Key_Phrase` or file and line
 !!! question "Why do I have to jump between pages?"
     * The code changes are defined on this page
     * The method to make code changes depends on build method and are found at:
-        * [Custom Edits with Browser](../gh-actions/edit-browser.md){: target="_blank" }
+        * [Custom Edits with Browser](../browser/edit-browser.md){: target="_blank" }
         * [Custom Edits with *Mac*](../build/edit-mac.md){: target="_blank" }
 
 !!! info "Line numbers may change"
@@ -79,7 +79,7 @@ of the block below the title `Key_Phrase`;  click on it to copy the phrase into 
 
     * If you had a customization working for 3.2.3 it will continue to work with 3.4.0 unless it is one listed in the [Not Stable List](#not-stable-list)
     * However, because the `build_loop.yml` file is significantly different for version 3.4.0, you will need to save your "customization lines" from the `build_loop.yml` file in the 3.2.3 version of your `fork` and add them to a new location for the 3.4.0 version of `build_loop.yml` in your `fork`
-    * If one of your personalized customizations is in the [Not Stable List](#not-stable-list) you will need to create a new version [Custom Edits with Browser: Code Updates](../gh-actions/edit-browser.md#code-updates){: target="_blank" }
+    * If one of your personalized customizations is in the [Not Stable List](#not-stable-list) you will need to create a new version [Custom Edits with Browser: Code Updates](../browser/edit-browser.md#code-updates){: target="_blank" }
 
 Each customization provides the Module, Folder and File bullet below the key phrase.
 
