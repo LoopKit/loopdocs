@@ -25,7 +25,7 @@ To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, y
 
 ### How-to Video to Build with a Browser
 
-In addition to the pages linked in [Configuration Pages](#configuration-pages), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
+In addition to the pages linked in [Configure to use Browser](#configure-to-use-browser), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
 
 * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 

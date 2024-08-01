@@ -257,7 +257,7 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
 1. One last check - if the `Bundle ID` has a number other than your actual 10-digit `TEAMID` embedded in it, you will be creating an App in the App Store that you cannot use
     * In this case, do **NOT** select `Create`
-    * Instead, go back and put the correct value into the `TEAMID`  *Secret*  and follow the steps in [Prepare Fork: Delete Identifiers](prepare-fork.md#delete-identifiers)
+    * Instead, go back and put the correct value into the `TEAMID`  *Secret*  and follow the steps in [Errors with Browser: Delete Identifiers](bb-errors.md#delete-identifiers){: target="_blank" }
 1. Click `Create` but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
 ### Remove Apple Vision Pro
