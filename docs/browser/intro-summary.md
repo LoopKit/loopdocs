@@ -12,7 +12,7 @@
 ???+ abstract "Summary for Browser Build with Links (click to open/close)"
     You may be overwhelmed at first with all the new terms and the many steps. Take a deep breath and work through the steps one at a time.
 
-    * Pay very close attention to this section [Save Your Information](intro-summary.md#save-your-information)
+    * Use the template to [Save Your Information](intro-summary.md#make-a-secrets-reference-file){: target="_blank" }
 
     A narrated video is available:
 
@@ -26,13 +26,13 @@
         * [Collect the four *Apple* <code>Secrets</code>](secrets.md#collect-the-four-apple-secrets){: target="_blank" }
     * *GitHub*:
         * [Collect the <code>GH_PAT</code> Secret](secrets.md#collect-the-gh_pat-secret){: target="_blank" }
-    * [Make up a Password](secrets.md#make-up-a-password){: target="_blank" } and save it as your sixth <code>Secrets</code>
+    * [Make up a Password](secrets.md#make-up-a-password){: target="_blank" } and save it as your sixth `Secret`
 
     Now it's time to use those <code>Secrets</code> to build the Loop app
 
     * *GitHub*:
-        * [Fork a repository (copy of <code>LoopWorkspace</code>)](prepare-fork.md#fork-loopworkspace){: target="_blank" }
-        * [Add <code>Secrets</code> to your copy of LoopWorkspace repository](prepare-fork.md#configure-secrets){: target="_blank" }
+        * [`Fork` the repository (make your copy of <code>LoopWorkspace</code>)](prepare-fork.md#fork-loopworkspace){: target="_blank" }
+        * [Add <code>Secrets</code> to your `fork`](prepare-fork.md#configure-secrets){: target="_blank" }
         * [`Action: 1. Validate Secrets`](identifiers.md#validate-secrets){: target="_blank" }
         * [`Action: 2. Add Identifiers`](identifiers.md#add-identifiers){: target="_blank" }
     * _<span translate="no">Apple</span>_:
