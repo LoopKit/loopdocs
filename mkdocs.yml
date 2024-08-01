@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: LoopDocs (Draft - Rearrange Build with Browser Section)
+site_name: LoopDocs
 
 theme:
     name: material
