@@ -1,6 +1,6 @@
-## Create Certificate
+## Overview
 
-The instructions on this page are required to build your app intially. It ties information in you Match-Secrets private repository to your Apple information so that the build action works. After that, it only needs to be run again in a few cases.
+The instructions on this page are required to build your app intially. This action ties information in your Match-Secrets private repository to your Apple information so that the build action works. Once successful that, it only needs to be run again in a few cases.
 
 * When your certificates have expired (after one year) and you need to [Renew Certificates](bb-update.md#renew-certificate){:target="_blank"}
 * When the developers have modified the Identifiers; this requires Create Certificates to be run after you successfully run Add Identifiers and update the new Identifiers
@@ -28,9 +28,19 @@ Refer to the graphic below for the numbered steps:
     {align="center"}
 
 1. Wait a minute or two for the action to finish
-    * If this action fails, head over to [Action: 3. Create Certificates Errors](bb-errors.md#action-create-certificates-errors){: target="_blank" }
-    * Once you've resolved the error, repeat the Actions [Add Identifiers](identifiers.md#add-identifiers){: target="_blank" } and then `Create Certificates`. (The <code>Add Identifiers</code> might not be required but it is fast and should be done as a matter of routine.)
 
-## Next Step
+!!! tip "Be Patient"
+    * Refresh the browser if you are unsure if the action started
+    * Do not start a new action until the first one completes
 
-The next step is to [Build your *Loop* App](build-yml.md).
+### Success
+
+Once you see the green check mark by `Create Certificates`, the next step is to [Build your *Loop* App](build-yml.md).
+
+### Failure
+
+If this action fails, head over to the errors page. Review these links, identify and fix your error or ask for help.
+
+* [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
+* [Create Certificates Errors](bb-errors.md#action-create-certificates-errors){: target="_blank" }.
+* [How to Ask for Help](bb-errors.md#help-with-errors){: target="_blank" }

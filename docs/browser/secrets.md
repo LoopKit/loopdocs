@@ -10,11 +10,11 @@
     * One Secret is a password you make up and save
     * Be sure to save the 6 <code>Secrets</code> in a text file using a text editor
         - Do **NOT** use a smart editor, which might auto-correct and change the case, because these <code>Secrets</code> are case-sensitive
-        - [<span class="loop-bigger">:material-skip-backward:</span>](intro-summary.md#save-your-information) Refer back to [Save Your Information](intro-summary.md#save-your-information) for more details about smart vs text editors
+        - [<span class="loop-bigger">:material-skip-backward:</span>](intro-summary.md#save-your-information){: target="_blank" } Refer back to [Save Your Information](intro-summary.md#save-your-information){: target="_blank" } for more details about smart vs text editors
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#collect-the-four-apple-secrets) To skip the detailed instructions, click on [Collect the Four `Apple Secrets`](#collect-the-four-apple-secrets)
 
-You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets) for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
+You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
 
 **Created at developer.apple.com**
 
@@ -40,14 +40,14 @@ You need to save your information digitally, so you can copy and paste. The info
 
 * a password - make one up and save it (<code>MATCH_PASSWORD</code>)
 
-### Collect the Four `Apple Secrets`
+## Collect the Four `Apple Secrets`
 
 ??? abstract "Section Summary (click to open/close)"
     You will be saving 4 <code>Secrets</code> from your *Apple* Account in this step.
 
     1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
-        * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements)
+        * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements){: target="_blank" }
     1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
     1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" } interface, click the "Integrations" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
     1. [Record three more secrets](#copy-api-key-secrets)
@@ -72,7 +72,7 @@ This section provides detailed instructions for the four <code>Secrets</code> as
 
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
-* LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md) page that explains in detail how to sign up for an account
+* LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md){: target="_blank" } page that explains in detail how to sign up for an account
 * This link takes you straight to [*Apple Developer* account](https://developer.apple.com){: target="_blank" } to sign up
 
 ### Find <code>TEAMID</code>
@@ -81,7 +81,7 @@ Sign in to your *Apple Developer* account at this link: [*Apple Developer* porta
 
 1. Click `Account` in the top menu bar
 1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
-    * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements)
+    * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements){: target="_blank" }
 1. Click the `Membership Details` icon
 
     ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg){width="600"}
@@ -93,7 +93,7 @@ Sign in to your *Apple Developer* account at this link: [*Apple Developer* porta
 ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
     {align="center"}
 
-Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](prepare-app.md#create-app-group).
+Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](prepare-app.md#create-app-group){: target="_blank" }.
 
 - Stop a moment and double-check
 * If you get this wrong, you will have errors at the very end, which require you to delete some items and repeat some steps on this page
@@ -109,7 +109,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 !!! info "Paid *Apple Developer* Account is Required"
     To generate the `API Key`, you must have a paid *Apple Developer* account.
 
-    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets) until your *Apple* account is active.
+    If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } until your *Apple* account is active.
 
 1. Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" }
 
@@ -141,7 +141,7 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
 
 The `Integrations` screen appears again with content similar to the graphic below; the key information is blanked out for security.
 
-Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets)
+Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" }
 
 ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
 {align="center"}
@@ -173,7 +173,7 @@ Review the graphic and then follow the directions below to save more parameters 
 
     ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
 
-### Do Not Confuse Your Keys
+#### Do Not Confuse Your Keys
 
 !!! important "<span class="loop-big">`API Key`</span>&nbsp; vs&nbsp;<span class="loop-big">`APN Key`</span>"
     If you use [Remote Commands with <code>Nightscout</code>](../nightscout/remote-overview.md), you may notice the Application Programming Interface (API) key has the same type of format as the *Apple* Push Notification (APN) key. The keys for both of these purposes are p8 keys, but they should not be confused with each other.
@@ -198,7 +198,7 @@ In summary, from this section, you have found or generated the following and sav
 !!! tip "Time for a Break?"
     This is a good place to pause if you need to. Just note where you are on the page so you can return later.
 
-### Collect the <code>GH_PAT</code> Secret
+## Collect the <code>GH_PAT</code> Secret
 
 [<span class="loop-bigger">:material-skip-forward:</span>](#create-github-personal-access-token) If you already have a *GitHub* Account, skip ahead to [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token).
 
@@ -269,12 +269,12 @@ You must be logged into your *GitHub* account before starting this step. If you 
 1. A new screen appears showing your access token
     * Copy the `token` and record it - once you leave this screen you can't see it again
     * You will use this for `GH_PAT` when you set up your Secrets
-    * You can [Regenerate Personal Access Token](bb-update.md#regenerate-token) for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using *GitHub* Build.
+    * You can [Regenerate Personal Access Token](bb-update.md#regenerate-token){: target="_blank" } for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using *GitHub* Build.
 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
 
-### Make up a Password
+## Make up a Password
 
 If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>.
 

@@ -215,14 +215,12 @@ If that phrase is found, then:
     * You have already created a *Loop* App in the *App Store* with that incorrect `TEAMID`
     * This is true if you completed the steps after running Action: `Add Identifiers` and before Action: `Create Certificates`
 
-Follow these steps:
+Click on this link to [Delete Identifiers](#delete-identifiers).
 
-!!! tip "Open each link below in a separate tab"
-    It is best to open each link below in a separate tab so you can return to this list and keep using the links in each step.
+- Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
+- It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
 
-1. Delete all the identifiers that you can, following the steps in [Prepare Fork: Delete Identifiers](prepare-fork.md#delete-identifiers)
-    - Delete all the other identifiers first, then try to delete the *Loop* identifier with the wrong <code>TEAMID</code>
-    - It is fine to just ignore identifiers with the wrong <code>TEAMID</code>, but do not use them
+#### Rerun Steps with correct TEAMID
 
 1. Enter your `TEAMID` correctly in the repository `Secrets`
     - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership){: target="_blank" } page for that `TEAMID`.
@@ -659,3 +657,24 @@ A screen will appear with a lot of options - do **not** do anything on this scre
 {align="center"}
 
 You will not directly interact with your `Match-Secrets` repository.
+
+### Delete Identifiers
+
+The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
+
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
+* Use the graphic below as a guide to removing identifiers
+* Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
+* It is OK to delete an identifier even if it does have your correct `TEAMID`
+    * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
+* Note - this graphic indicates where on this page you can find your `TEAMID`
+    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](bb-update.md#update-secrets){: target="_blank"} with your correct `TEAMID`
+    * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
+    * Delete all the other identifiers first that have the same incorrect `TEAMID` and then try to delete the Loop identifier with the incorrect `TEAMID`
+
+![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
+{align="center"}
+
+If coming here because you enter the wrong `TEAMID` in `Secrets` - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
+
+After you delete identifiers, you must add them back, configure them and create certificate before you can build again.

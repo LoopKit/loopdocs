@@ -1,6 +1,11 @@
-## Prepare your Repository
+## Fork `LoopWorkspace`
 
-### Fork LoopWorkspace
+??? tip "Feeling confident? Planning to build more than one app? Click to see more."
+    If you are already feeling overwhelmed - skip this tip.
+
+    If you plan to build more that one app, you will making a fork of each repository associated with each app, and then you must add the 6 <code>Secrets</code> to each repository. It is not hard but it can get tiresome.
+
+    There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
 
 ??? abstract "Section Summary (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } into your account.
@@ -45,13 +50,6 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 ## Configure <code>Secrets</code>
 
-??? abstract "Feeling confident? Planning to build more than one app? Click to see more."
-    If you are already feeling overwhelmed - skip this tip.
-
-    If you plan to build more that one app, you will making a fork of each repository associated with each app, and then you must add the 6 <code>Secrets</code> to each repository. It is not hard but it can get tiresome.
-
-    There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
-
 ??? abstract "Section Summary (click to open/close)"
     These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`.
 
@@ -68,10 +66,6 @@ Carefully compare your screen to the graphic below paying attention to the highl
     * `MATCH_PASSWORD`
 
     [<span class="loop-bigger">:material-skip-forward:</span>](identifiers.md#validate-secrets){: target="_blank" } To skip the detailed instructions, click on [Validate <code>Secrets</code>](identifiers.md#validate-secrets){: target="_blank" }.
-
-!!! tip "`Branches` and `Repositories`"
-    * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; are added to your `fork of LoopWorkspace` and work for any `branch` (`main` or `dev`, for example)
-    * These &nbsp;<span class="notranslate">Secrets</span>&nbsp; must be added, if desired, for [Other App](other-apps.md){: target="_blank" } `repositories`
 
 ### Prepare to Enter <code>Secrets</code>
 
@@ -159,25 +153,21 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 
 The next step is to [Validate Secrets and Add Identifiers](identifiers.md).
 
-## Extra Steps
+## Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
 
-Most people won't need the information on the rest of this page.
+Some people may already have a copy (`fork`) of <code>LoopWorkspace</code>.
 
-### Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
+If your copy (`fork`) is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
 
-Some people may already have a copy of <code>LoopWorkspace</code>.
-
-If your copy is **not** from `LoopKit`, follow the [Delete and Start Fresh](#delete-and-start-fresh) directions.
-
-If your copy is from `LoopKit`:
+If your copy (`fork`) is from `LoopKit`:
 
 * Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
 * Review the graphic in the [Configure: Successful Fork](#successful-fork) section
     * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
 * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
-* Continue with [Create `GitHub Personal Access Token`](secrets.md#create-github-personal-access-token)
+* Continue with [Validate Secrets and Add Identifiers](identifiers.md)
 
-#### Delete and Start Fresh
+### Delete and Start Fresh
 
 If your fork is not from `LoopKit`:
 
@@ -185,35 +175,3 @@ If your fork is not from `LoopKit`:
     * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
 * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
 
-### Delete Identifiers
-
-When you have already built the *Loop* app with *Xcode*, the Identifier names will not match the directions and you might have trouble deciding which ones to configure.  Your existing `Loop` identifier will have a name that starts with `XC` as shown below, where your 10-digit `TEAMID` is used.
-
-* `Name: XC com TEAMID loopkit Loop`
-* `Identifier: com.TEAMID.loopkit.Loop`
-
-The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. Same for other identifiers (if you build a bunch of Apps). If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
-
-To make it easy when configuring the identifiers, go through and delete as many as you can.
-
-* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
-* Use the graphic below as a guide to removing identifiers
-* Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
-* It is OK to delete an identifier even if it does have your correct `TEAMID`
-    * If you try to delete the `Loop` identifier with your `TEAMID`, it will refuse, don't worry, just keep going
-* Note - this graphic indicates where on this page you can find your `TEAMID`
-    * If you notice an identifier with a value embedded in it that does not have your `TEAMID`, then delete it if you can and [Update <code>Secrets</code>](bb-update.md#update-secrets) with your correct `TEAMID`
-    * If you try to delete a Loop identifier that does not have your `TEAMID`, but you already added to the *App Store*, it will refuse, don't worry, just keep going
-    * Delete all the other identifiers first that have the same incorrect `TEAMID` and then try to delete the Loop identifier with the incorrect `TEAMID`
-
-![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
-{align="center"}
-
-If coming here from the Errors with Browser page because you enter the wrong `TEAMID` in `Secrets` - return to that page once you've deleted as many identifiers as you can: [Errors: Wrong TEAMID in Secrets](bb-errors.md#error-wrong-teamid-in-secrets).
-
-If you were just trying to clean up the identifiers, then follow these steps:
-
-* Run Action: [Add Identifiers](identifiers.md#add-identifiers){: target="_blank" } to add Identifiers with the documented short names
-* If you did not complete the [Add `App Group` to Identifiers](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
-* If you did not complete the [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect) step, do it now
-* Continue with [Create Certificates](certs.md#create-certificates){: target="_blank" } and then [Build the *Loop* App](build-yml.md#build-the-loop-app){: target="_blank" }

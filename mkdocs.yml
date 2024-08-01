@@ -152,9 +152,9 @@ nav:
       - 'Prepare App': browser/prepare-app.md
       - 'Create Certificates': browser/certs.md
       - 'Build the App': browser/build-yml.md
-    - 'Errors with Browser': browser/bb-errors.md
-    - 'TestFlight Users': browser/tf-users.md
+      - 'TestFlight Users': browser/tf-users.md
     - 'Install on Phone': browser/phone-install.md
+    - 'Errors with Browser': browser/bb-errors.md
     - 'Update/Rebuild with Browser': browser/bb-update.md
     - 'Automatic Update & Build': browser/automatic.md
     - 'Customize using Browser': 'browser/custom-browser.md'
