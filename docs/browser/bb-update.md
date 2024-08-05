@@ -46,12 +46,11 @@
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built, then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
     - **Do I need a computer?** No.
     - **Can I do this on my phone?** Yes, especially after you update your *GitHub* token to `No Expiration`.
-    - **Did the directions change?** Yes. We now recommend you select a *GitHub* Personal Access Token that never expires and supports automatic update and rebuild when that feature is released. It simplifies the build every 90-day process significantly.
     - **How do I set my *GitHub* `Personal Access Token` to never expire and to support the automatic rebuild feature?** See this section [Regenerate Token](#regenerate-token).
     - **What happens to my existing builds when I change my *GitHub* Personal Access Token?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build are available for the full 90 days.
     - **Is there anything I have to do once a year?** Yes. Once a year you need to get a new `Distribution Certificate`. These only last one year. See this section [Renew Certificate](#renew-certificate)
 
-## When to Update or Rebuild
+### When to Update or Rebuild
 
 Under ordinary circumstances, you do not *have to* rebuild or update your *Loop* app until *TestFlight* forces you to (90 days). However, there is no harm in building more frequently.
 
@@ -60,7 +59,7 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
     * You can use *TestFlight* to quickly install the app if you loose or break your phone and need to replace it
     * You can use *TestFlight* to quickly install the app if someone accidentally deletes the app from your phone
 
-## How to Update or Rebuild
+### How to Update or Rebuild
 
 !!! abstract "Summary of Update Steps"
     1. [Accept Agreements](#accept-agreements)
@@ -203,7 +202,7 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 !!! question "Building a different branch"
     Do I need to do anything special to build a different branch?
 
-    Yes: please follow instructions at [Build Development Version](#build-development-version)
+    Yes: the update steps are the same, but review information on this page: [Build Loop dev with Browser](build-dev-browser.md){: target="_blank" }
 
 ## Build the *Loop* App
 
@@ -318,7 +317,7 @@ Refer to graphic below as you follow the steps to build the *Loop* app.
 
 If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.3 will certainly have extra instructions.)
 
-If you are using the dev branch, head over to [Build Development Version](#build-development-version) for information.
+If you are using the dev branch, the update steps are the same, but review information on this page: [Build Loop dev with Browser](build-dev-browser.md){: target="_blank" }.
 
 Otherwise, head over to [Errors with Browser](bb-errors.md).
 
@@ -365,7 +364,6 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../brows
 ![install Loop from  *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}
 
-
 ### Automatic Update Enabled
 
 > We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from GitHub for version 3.3 or later.
@@ -375,7 +373,9 @@ Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Lo
 * In this case, when you look at the *TestFlight* app on your phone, the app should have installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
-## Choose Previous Build
+## Other Information
+
+### Choose Previous Build
 
 If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.
 
@@ -383,38 +383,6 @@ This section provides detailed instructions if you want to choose a previous bui
 
 * You are supporting multiple family members and may build different versions for each
 * You want to test a different `branch` or set of customizations; you can install a previous build once you are done with the test
-
-This section covers two topics.
-
-1. Optional: [Add Test Details](#add-test-details) to the TestFlight build
-2. [Select a Previous Build](#select-a-previous-build)
-
-### Add Test Details
-
-About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
-
-* Log in if needed
-* Select your *Loop* app
-* Click on the `TestFlight` tab to see a screen similar to the graphic below
-
-![select a TestFlight build to update](img/testflight-select-build.png){width="700"}
-{align="center"}
-
-Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.
-
-![add details to your build](img/testflight-test-details.png){width="700"}
-{align="center"}
-
-Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
-
-In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
-
-!!! tip "Commit Number"
-    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
-
-    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
-
-### Select a Previous Build
 
 First open the *TestFlight* app on your phone and select the *Loop* app.
 
@@ -425,35 +393,10 @@ Near the bottom of the screen is a row labeled previous builds.
 * Typically you choose the most recent build for that version and click Install and then Open after installation completes
 * All your settings should remain
 
-The following graphic shows the view seen in the *TestFlight* app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.
+The following graphic shows the view seen in the *TestFlight* app on the phone. If you choose to [Add Test Details to *TestFlight*](#add-test-details-to-testflight), you can have notes show up to help you decide which version to load.
 
 ![choose build from TestFlight that has test details](img/testflight-select-with-details.png){width="300"}
 {align="center"}
-
-## *TestFlight* Expiration Warning
-
-For version 3.3.0 and newer, the usual [*Loop* app expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when the app is within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
-
-![expiration warning on settings for testflight example](../version/img/expiration-warning-testflight.svg){width="300"}
-{align="center"}
-
-## *GitHub* `Personal Access Token`
-
-Your *GitHub* `Personal Access Token` should be configured:
-
-* `Never expire`
-* `repo, workflow` permission scope
-
-Refer to [Modify Automatic Building](automatic.md#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
-
-If you are not logged in to *GitHub* and have not logged in recently, then you may see the authentication screen when doing the steps below.
-
-Authenticate if requested by clicking on the green `Send SMS` button or entering your password.
-
-![two-factor authentication for access to tokens](img/gh-sms-access-screen.png){width="300"}
-{align="center"}
-
-Once you are authenticated, you will have access to view your personal access token.
 
 ### Modify `Personal Access Token`
 
@@ -537,6 +480,27 @@ Refer to the GIF for help. There are 3 frames.
 
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [How to Update or Rebuild](#how-to-update-or-rebuild) instructions to start a new build.
 
-## Build Development Version
+### Add Test Details to *TestFlight*
 
-The information to build a development (`dev` or any other branch) has been moved to a new page: [Build dev with Browser](build-dev-browser.md)
+About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
+
+* Log in if needed
+* Select your *Loop* app
+* Click on the `TestFlight` tab to see a screen similar to the graphic below
+
+![select a TestFlight build to update](img/testflight-select-build.png){width="700"}
+{align="center"}
+
+Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.
+
+![add details to your build](img/testflight-test-details.png){width="700"}
+{align="center"}
+
+Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
+
+In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
+
+!!! tip "Commit Number"
+    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
+
+    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
