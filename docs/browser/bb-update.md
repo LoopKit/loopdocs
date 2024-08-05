@@ -352,7 +352,7 @@ The updated app will show up in your *TestFlight* app.
     * Wait for the one that expires in about 90 days
 * You will also see a build number in parentheses, that number increments each build
 
-### TestFlight Automatic Update Disabled
+### *TestFlight* Automatic Update Disabled
 
 Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../browser/phone-install.md#disable-automatic-install-from-testflight), you control when to install the app on the phone.
 
@@ -363,7 +363,7 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../brows
 ![install Loop from  *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}
 
-### Automatic Update Enabled
+### *TestFlight* Automatic Update Enabled
 
 > We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from GitHub for version 3.3 or later.
 
