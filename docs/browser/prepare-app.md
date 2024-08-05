@@ -101,17 +101,17 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 
 #### Table with Name and Identifier
 
-One Identifier was changed after v3.2.3 as noted in the table.
+> One Identifier was changed after v3.2.3. (`Small Status Widget` is now `Loop Widget Extension`).
 
 | NAME | XCode version | IDENTIFIER |
 |:--|:--|:--|
 | `Loop` | `XC com TEAMID loopkit Loop`| `com.TEAMID.loopkit.Loop` |
 | `Loop Intent Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
 | `Loop Status Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.statuswidget` |
-| **v3.2** `Small Status Widget` | XC Identifier | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
-| **v3.4** `Loop Widget Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
+| `Loop Widget Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 | `WatchApp` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
+| **v3.2** `Small Status Widget` | XC Identifier | `com.TEAMID.loopkit.Loop.SmallStatusWidget`<br>No longer used, harmless to leave or to delete |
 
 ### Add `App Group` to Identifiers
 
@@ -146,23 +146,23 @@ Look in the **`IDENTIFIER`** column to locate each Identifer. The name in the **
 | `Loop` | `com.TEAMID.loopkit.Loop` |
 | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
 | `Loop Status Extension` | `com.TEAMID.loopkit.Loop.statuswidget` |
-| **v3.2** `Small Status Widget` | `com.TEAMID.loopkit.Loop.SmallStatusWidget` |
-| **v3.4** `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
+| `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
 Click on each **`IDENTIFIER`** in turn and the `Edit Your App ID Configuration` screen will open.
 
-1. In the `App Services` column, scroll down to the `App Groups` row
-    * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
-    * If the word `Edit` shows up under `NOTES`, return using the `< All Identifiers` button at the top left
-    * If the word `Configure` shows up, tap on it
-        * This opens the `App Group Assignment` screen
-        * Check the box by `Loop` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
+The example graphic below has numbered steps that match these directions:
 
-If you modified settings for an **`IDENTIFIER`**, the `Save` button at the top right will become active. Click on `Save` before leaving this page - otherwise, the change does not take effect.
+1. Looking at the `App Services` column, scroll down to the `App Groups` row and ensure the check box (under the `Capabilities column`) for `App Groups` is checked
+2. If the word `Configure` shows up, tap on it
+    * This opens the `App Group Assignment` screen
+    * If it said `Edit` instead of `Configure` - you can click to confirm you have the correct App Group but won't need to continue or save if it is correct
+3. Check the box by `Loop App Group` that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup`
+    * Note that if you previously built with Xcode, the name may be different, i.e., `XC group com TEAMID loopkit LoopGroup`
+4. Tap `Continue`
+5. Tap `Save`
 
-* Tap on `Save`
-* This opens the `Modify App Capabilities` confirmation screen
-* Click on `Confirm`
+![graphic showing selection of the correct App Group](img/update-identifier-loop-3-4.png){width="700"}
+{align="center"}
 
 If you did not need to make changes, the `Save` button will not be active.
 
@@ -170,7 +170,7 @@ If you did not need to make changes, the `Save` button will not be active.
 
 The full list of Identifiers should be displayed again.
 
-Repeat until the 4 Identifiers for the version you are building have the `Loop App Group` configured.
+Repeat until the 4 Identifiers have the `Loop App Group` configured.
 
 * If you miss an identifier, the `Create Certificates` step will succeed but `Build Loop` will fail.
 

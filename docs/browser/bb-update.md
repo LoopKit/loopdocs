@@ -242,7 +242,7 @@ In your fork of LoopWorkspace:
     * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
         * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-        * Resolve the error and repeat the Action: [Add Identifiers](identifiers.md#add-identifiers)
+        * Resolve the error and repeat `Add Identifiers`
 
 #### Add `App Group` to New `Identifier`
 
@@ -296,7 +296,6 @@ You must run the action `Create Certificates` again because the `Identifiers` we
         {align="center"}
 
     1. Wait a minute or two for the action to finish
-        * If this action fails, head over to [Action: 3. Create Certificates Errors](bb-errors.md#action-create-certificates-errors)
 
 #### Build the App
 
