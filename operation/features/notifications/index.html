@@ -2029,9 +2029,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#free-7-day-loop-app-expiration-notification" class="md-nav__link">
+  <a href="#expiration-on-settings-screen" class="md-nav__link">
     <span class="md-ellipsis">
-      Free (7-day) Loop App Expiration Notification
+      Expiration on Settings Screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expiration-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expiration Alert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#free-7-day-loop-app-expiration-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free (7-day) Loop App Expiration Alert
     </span>
   </a>
   
@@ -2039,15 +2057,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loop-app-expiration-date" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loop App Expiration Date
-    </span>
-  </a>
   
 </li>
       
@@ -3497,9 +3506,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#free-7-day-loop-app-expiration-notification" class="md-nav__link">
+  <a href="#expiration-on-settings-screen" class="md-nav__link">
     <span class="md-ellipsis">
-      Free (7-day) Loop App Expiration Notification
+      Expiration on Settings Screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expiration-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expiration Alert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#free-7-day-loop-app-expiration-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free (7-day) Loop App Expiration Alert
     </span>
   </a>
   
@@ -3507,15 +3534,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loop-app-expiration-date" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loop App Expiration Date
-    </span>
-  </a>
   
 </li>
       
@@ -3644,26 +3662,32 @@
 <p>When communication is interrupted at a critical moment in the communication cycle, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cannot provide a reliable calculation for <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. When that happens a warning screen similar to the graphic above appears on your device. You cannot do anything but wait for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to restore communications or give up on that device.</p>
 </div>
 <h2 id="loop-app-expiration-notification"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App Expiration Notification<a class="headerlink" href="#loop-app-expiration-notification" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Profile expiration notification was added with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.5.</p>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>.4 and later, apps installed using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method report and alert the user for the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date. Instead of Profile Expires Soon, the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> alert with say "<abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Expires Soon". There is no change to the alert system for apps built with Mac-<abbr title="program used to build an app">Xcode</abbr> method.</p>
-<p align="center"><img alt="Notification display when near the Loop App expiration date" src="../img/loop-app-expiration-warning.png" width="350" /></p>
+<h3 id="expiration-on-settings-screen">Expiration on Settings Screen<a class="headerlink" href="#expiration-on-settings-screen" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>At any time, you can tap on Settings and scroll to the bottom of the screen to see when your app will expire.</p>
+<p>The graphic below shows the Settings display for a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> build (version 3.3 or newer):</p>
+<p align="center"><img alt="expiration warning on settings for testflight example" src="../img/expiration-warning-testflight.svg" width="300" /></p>
+<h3 id="expiration-alert">Expiration Alert<a class="headerlink" href="#expiration-alert" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Notification before an app expires is reported using this protocol:</p>
 <ul>
-<li>When fewer than 20 days remain until profile or testflight expiration, you'll get a notification when you open the app but no more frequently than every 2 days</li>
-<li>When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most</li>
-<li>Simply tap on the <code>More Info</code> button of the notification for more information<ul>
-<li>Mac-<abbr title="program used to build an app">Xcode</abbr>: <a href="../../../build/updating/">LoopDocs Updating</a></li>
-<li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>: <a href="../../../browser/bb-update/">LoopDocs <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Update</a></li>
+<li>When fewer than 20 days remain, you'll get an alert when you open the app but no more frequently than every 2 days</li>
+<li>When fewer than 24 hours remain, you'll get an alert when you open the app, once every hour at most</li>
+<li>Simply tap on the <code>More Info</code> button of the alert for more information<ul>
+<li>Build with <em>Mac</em>: <a href="../../../build/updating/" target="_blank">Update/Rebuild with <em>Mac</em></a></li>
+<li>Build with Browser: <a href="../../../browser/bb-update/" target="_blank">Update/Rebuild with Browser</a></li>
 </ul>
 </li>
 </ul>
-<h3 id="free-7-day-loop-app-expiration-notification">Free (7-day) <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App Expiration Notification<a class="headerlink" href="#free-7-day-loop-app-expiration-notification" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The graphic below show an example expiration alert for a <em>Mac</em> build:</p>
+<p align="center"><img alt="Notification display when near the Loop App expiration date" src="../img/loop-app-expiration-warning.png" width="350" /></p>
+<blockquote>
+<p>Notification when app expires is available in these versions or newer:</p>
+<ul>
+<li>Build with <em>Mac</em>: version 2.2.5 or newer</li>
+<li>Build with Browser: version 3.3 or newer</li>
+</ul>
+</blockquote>
+<h3 id="free-7-day-loop-app-expiration-alert">Free (7-day) <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App Expiration Alert<a class="headerlink" href="#free-7-day-loop-app-expiration-alert" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The expiration notification pattern is the same as for the Paid <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App. You may want to add an <a href="../../../version/code-custom-edits/#expiration-notification-customization">Expiration Notification Customization</a> to modify the first appearance and frequency of the notification.</p>
-<h2 id="loop-app-expiration-date"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App <abbr title="your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date">Expiration Date</abbr><a class="headerlink" href="#loop-app-expiration-date" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h4 id="for-loop-34-and-newer-versions">For <abbr title="Latest release with major updates">Loop 3</abbr>.4 and newer versions<a class="headerlink" href="#for-loop-34-and-newer-versions" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The testflight expiration data is provided, instead of the profile expiration data, when the app was built using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser Build method. When the app was built with Mac-<abbr title="program used to build an app">Xcode</abbr>, the date shown continues to be the profile experation date.</p>
-<p>See the <a href="../../../loop-3/settings/#testflight-or-app-profile"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> or App Profile</a> section at the bottom of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen.</p>
-<h4 id="for-loop-32x-and-newer-versions">For <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and newer versions<a class="headerlink" href="#for-loop-32x-and-newer-versions" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The provisioning profile expiration date is found in the that settings section at the bottom of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen. This is useful for Mac-<abbr title="program used to build an app">Xcode</abbr> built apps, but may be misleading for <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Broswer build method.</p>
 <h2 id="omnipod-beeps"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Beeps<a class="headerlink" href="#omnipod-beeps" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Most pod beep alarms are disabled for a more discrete use of pods than is available with the PDM. Only the following audible acknowledgments or alarms are used. Some can be configured in <a href="../../../loop-3/omnipod/#notification-settings"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>: Notification Settings</a>:</p>
 <ul>
@@ -3716,6 +3740,7 @@ This mostly happens when the connection is lost for a longer period of time betw
 <p align="center"><img alt="img/loop-failure.png" src="../img/loop-failure.png" width="250" /></p>
 <h2 id="bolus-failure">Bolus Failure<a class="headerlink" href="#bolus-failure" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> menu to update pump data.  <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will also notify of partial bolus deliveries.</p>
+<p><strong>Remember: Carbs are saved when you tap <code>Save and Bolus</code> following a meal entry - even if the bolus fails.</strong></p>
 <p align="center"><img alt="img/loop-bolus-failure.png" src="../img/loop-bolus-failure.png" width="250" /></p>
 <h2 id="low-reservoir">Low Reservoir<a class="headerlink" href="#low-reservoir" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><font color ="orange"><strong>Medtronic</strong></font><br />

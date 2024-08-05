@@ -3664,7 +3664,9 @@
 <p>The Description or Name can be whatever you want.</p>
 </details>
 <h4 id="table-with-name-and-identifier">Table with Name and Identifier<a class="headerlink" href="#table-with-name-and-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>One Identifier was changed after v3.2.3 as noted in the table.</p>
+<blockquote>
+<p>One Identifier was changed after v3.2.3. (<code>Small Status Widget</code> is now <code>Loop Widget Extension</code>).</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -3690,12 +3692,7 @@
 <td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.statuswidget</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>v3.2</strong> <code>Small Status Widget</code></td>
-<td style="text-align: left;">XC Identifier</td>
-<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.SmallStatusWidget</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>v3.4</strong> <code>Loop Widget Extension</code></td>
+<td style="text-align: left;"><code>Loop Widget Extension</code></td>
 <td style="text-align: left;">XC Identifier</td>
 <td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
 </tr>
@@ -3708,6 +3705,11 @@
 <td style="text-align: left;"><code>WatchAppExtension</code></td>
 <td style="text-align: left;">XC Identifier</td>
 <td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>v3.2</strong> <code>Small Status Widget</code></td>
+<td style="text-align: left;">XC Identifier</td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.SmallStatusWidget</code><br>No longer used, harmless to leave or to delete</td>
 </tr>
 </tbody>
 </table>
@@ -3763,40 +3765,34 @@
 <td><code>com.TEAMID.loopkit.Loop.statuswidget</code></td>
 </tr>
 <tr>
-<td><strong>v3.2</strong> <code>Small Status Widget</code></td>
-<td><code>com.TEAMID.loopkit.Loop.SmallStatusWidget</code></td>
-</tr>
-<tr>
-<td><strong>v3.4</strong> <code>Loop Widget Extension</code></td>
+<td><code>Loop Widget Extension</code></td>
 <td><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
 </tr>
 </tbody>
 </table>
 <p>Click on each <strong><code>IDENTIFIER</code></strong> in turn and the <code>Edit Your App ID Configuration</code> screen will open.</p>
+<p>The example graphic below has numbered steps that match these directions:</p>
 <ol>
-<li>In the <code>App Services</code> column, scroll down to the <code>App Groups</code> row<ul>
-<li>Ensure the check box (under the <code>Capabilities</code> column) for <code>App Groups</code> is checked</li>
-<li>If the word <code>Edit</code> shows up under <code>NOTES</code>, return using the <code>&lt; All Identifiers</code> button at the top left</li>
+<li>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row and ensure the check box (under the <code>Capabilities column</code>) for <code>App Groups</code> is checked</li>
 <li>If the word <code>Configure</code> shows up, tap on it<ul>
 <li>This opens the <code>App Group Assignment</code> screen</li>
-<li>Check the box by <code>Loop</code> <em><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></em> that uses your <code>TEAMID</code> in <code>group.com.TEAMID.loopkit.LoopGroup</code> and then <code>Continue</code></li>
+<li>If it said <code>Edit</code> instead of <code>Configure</code> - you can click to confirm you have the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> but won't need to continue or save if it is correct</li>
 </ul>
 </li>
+<li>Check the box by <code>Loop App Group</code> that uses your <code>TEAMID</code> in <code>group.com.TEAMID.loopkit.LoopGroup</code><ul>
+<li>Note that if you previously built with <abbr title="program used to build an app">Xcode</abbr>, the name may be different, i.e., <code>XC group com TEAMID loopkit LoopGroup</code></li>
 </ul>
 </li>
+<li>Tap <code>Continue</code></li>
+<li>Tap <code>Save</code></li>
 </ol>
-<p>If you modified settings for an <strong><code>IDENTIFIER</code></strong>, the <code>Save</code> button at the top right will become active. Click on <code>Save</code> before leaving this page - otherwise, the change does not take effect.</p>
-<ul>
-<li>Tap on <code>Save</code></li>
-<li>This opens the <code>Modify App Capabilities</code> confirmation screen</li>
-<li>Click on <code>Confirm</code></li>
-</ul>
+<p align="center"><img alt="graphic showing selection of the correct App Group" src="../img/update-identifier-loop-3-4.png" width="700" /></p>
 <p>If you did not need to make changes, the <code>Save</code> button will not be active.</p>
 <ul>
 <li>Tap on the <code>&lt; All Identifiers</code> button at the top left</li>
 </ul>
 <p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
-<p>Repeat until the 4 <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for the version you are building have the <code>Loop App Group</code> configured.</p>
+<p>Repeat until the 4 <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> have the <code>Loop App Group</code> configured.</p>
 <ul>
 <li>If you miss an identifier, the <code>Create Certificates</code> step will succeed but <code>Build Loop</code> will fail.</li>
 </ul>
