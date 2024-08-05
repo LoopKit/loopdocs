@@ -18,35 +18,38 @@ When you tap on the Learn More button, another screen appears. The only option a
 
 ## Loop App Expiration Notification
 
-Profile expiration notification was added with Loop 2.2.5.
+### Expiration on Settings Screen
 
-With Loop 3.4 and later, apps installed using GitHub Browser Build method report and alert the user for the TestFlight expiration date. Instead of Profile Expires Soon, the modal alert with say "TestFlight Expires Soon". There is no change to the alert system for apps built with Mac-Xcode method.
+At any time, you can tap on Settings and scroll to the bottom of the screen to see when your app will expire.
+
+The graphic below shows the Settings display for a *TestFlight* build (version 3.3 or newer):
+
+![expiration warning on settings for testflight example](img/expiration-warning-testflight.svg){width="300"}
+{align="center"}
+
+### Expiration Alert
+
+Notification before an app expires is reported using this protocol:
+
+* When fewer than 20 days remain, you'll get an alert when you open the app but no more frequently than every 2 days
+* When fewer than 24 hours remain, you'll get an alert when you open the app, once every hour at most
+* Simply tap on the `More Info` button of the alert for more information
+    * Build with *Mac*: [Update/Rebuild with *Mac*](../../build/updating.md){: target="_blank" }
+    * Build with Browser: [Update/Rebuild with Browser](../../browser/bb-update.md){: target="_blank" }
+
+The graphic below show an example expiration alert for a *Mac* build:
 
 ![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="350"}
 {align="center"}
 
-* When fewer than 20 days remain until profile or testflight expiration, you'll get a notification when you open the app but no more frequently than every 2 days
-* When fewer than 24 hours remain, you'll get a notification when you open the app, once every hour at most
-* Simply tap on the `More Info` button of the notification for more information
-    * Mac-Xcode: [LoopDocs Updating](../../build/updating.md)
-    * GitHub: [LoopDocs GitHub Update](../../browser/bb-update.md)
+> Notification when app expires is available in these versions or newer:
+>
+> * Build with *Mac*: version 2.2.5 or newer
+> * Build with Browser: version 3.3 or newer
 
-### Free (7-day) Loop App Expiration Notification
+### Free (7-day) Loop App Expiration Alert
 
 The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../version/code-custom-edits.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
-
-
-## Loop App Expiration Date
-
-#### For Loop 3.4 and newer versions
-
-The testflight expiration data is provided, instead of the profile expiration data, when the app was built using GitHub Browser Build method. When the app was built with Mac-Xcode, the date shown continues to be the profile experation date.
-
-See the [TestFlight or App Profile](../../loop-3/settings.md#testflight-or-app-profile) section at the bottom of the Loop Settings screen.
-
-#### For Loop 3.2.x and newer versions
-
-The provisioning profile expiration date is found in the that settings section at the bottom of the Loop Settings screen. This is useful for Mac-Xcode built apps, but may be misleading for GitHub Broswer build method.
 
 ## Omnipod Beeps
 
@@ -113,6 +116,8 @@ This mostly happens when the connection is lost for a longer period of time betw
 ## Bolus Failure
 
 If Loop detects that a bolus was not able to be delivered, it will provide a notification.  Bolus failures are usually due to stale pump data.  Try fetching recent history from the RileyLink menu to update pump data.  Loop will also notify of partial bolus deliveries.
+
+**Remember: Carbs are saved when you tap `Save and Bolus` following a meal entry - even if the bolus fails.**
 
 ![img/loop-bolus-failure.png](img/loop-bolus-failure.png){width="250"}
 {align="center"}
