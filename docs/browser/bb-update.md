@@ -46,12 +46,11 @@
     - **"What if I'm using a new/different developer account?"** If you aren't building with the same developer account used when your existing app was built, then you will be installing a brand new (second) Loop app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.
     - **Do I need a computer?** No.
     - **Can I do this on my phone?** Yes, especially after you update your *GitHub* token to `No Expiration`.
-    - **Did the directions change?** Yes. We now recommend you select a *GitHub* Personal Access Token that never expires and supports automatic update and rebuild when that feature is released. It simplifies the build every 90-day process significantly.
     - **How do I set my *GitHub* `Personal Access Token` to never expire and to support the automatic rebuild feature?** See this section [Regenerate Token](#regenerate-token).
     - **What happens to my existing builds when I change my *GitHub* Personal Access Token?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build are available for the full 90 days.
     - **Is there anything I have to do once a year?** Yes. Once a year you need to get a new `Distribution Certificate`. These only last one year. See this section [Renew Certificate](#renew-certificate)
 
-## When to Update or Rebuild
+### When to Update or Rebuild
 
 Under ordinary circumstances, you do not *have to* rebuild or update your *Loop* app until *TestFlight* forces you to (90 days). However, there is no harm in building more frequently.
 
@@ -60,7 +59,7 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
     * You can use *TestFlight* to quickly install the app if you loose or break your phone and need to replace it
     * You can use *TestFlight* to quickly install the app if someone accidentally deletes the app from your phone
 
-## How to Update or Rebuild
+### How to Update or Rebuild
 
 !!! abstract "Summary of Update Steps"
     1. [Accept Agreements](#accept-agreements)
@@ -76,7 +75,7 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
     * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
 
-### Accept Agreements
+## Accept Agreements
 
 > This is Step 1 of 6 - it may not always be necessary, but please check every time.
 
@@ -103,7 +102,7 @@ Digital Service Act Compliance
 
     If your build with browser fails, wait longer. An hour wait was reported by one person.
 
-### Renew Certificate
+## Renew Certificate
 
 > This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your `Distribution Certificate` expires. (Don't worry if you did not see the email.)
 
@@ -122,7 +121,7 @@ Digital Service Act Compliance
 
     * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
 
-#### Manual Steps to Renew Your `Distribution Certificate`
+### Manual Steps to Renew Your `Distribution Certificate`
 
 !!! warning "Delete and Create"
     **Do not miss the final step in this section. After you delete certificates, you must run the Action for `Create Certificates` before you can build an app again.**
@@ -170,13 +169,13 @@ Digital Service Act Compliance
     * You cannot build new versions of the app until you run `Create Certificates` for that app
     * To make sure you don't forget, go ahead and do that for all your other `repositories` now
 
-### Update `Fork`
+## Update `Fork`
 
 > This is Step 3 of 6 - it may not always be necessary, but please check every time.
 
 Open your *GitHub* account and select your <code>LoopWorkspace repository</code> from your repositories list.
 
-#### Up to Date or Behind
+### Up to Date or Behind
 
 * If your `fork` is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in *TestFlight* is about to expire - in which case, proceed to [Build the *Loop* App](#build-the-loop-app)
 
@@ -185,7 +184,7 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
-#### Ahead and Behind
+### Ahead and Behind
 
 * If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually resolve a conflict.
     * This can happen if you customized your build
@@ -203,46 +202,30 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 !!! question "Building a different branch"
     Do I need to do anything special to build a different branch?
 
-    Yes: please follow instructions at [Build Development Version](#build-development-version)
+    Yes: the update steps are the same, but review information on this page: [Build Loop dev with Browser](build-dev-browser.md){: target="_blank" }
 
-### Build the *Loop* App
+## Build the *Loop* App
 
 > This is Step 4 of 6 - this is always required.
 
-!!! abstract "Reminder on Actions"
-    1. You select the Actions tab
-    1. You select an action on the left
-    1. You click on the Run workflow button on the right to reveal two new rows
-    1. You click on the green Run workflow button that just appeared to start the action
-    1. Wait for the action to finish before doing anything else (except maybe refresh your browser)
-        * If an action takes longer than you think is reasonable, you can cancel the action (click on the three dots by the action and cancel) and then try again
+### Update from 3.2.x to 3.4
 
-    When action has finished, a log appears. Do not delete those logs. They are an important record of activity.
-
-#### Update from 3.2.x to 3.4
-
-For the update from 3.2.x to 3.4, you must do a few more actions than normal, but you will get automatic updates and builds in the future. If you skip this step - the build will fail.
-
-> If you built version 3.3.0 (the `dev branch` before release of version 3.4) or newer, you can skip ahead to [4: Build](#4-build).
-
-#### Extra Steps
-
-These extra steps are required one time only.
+For the update from 3.2.x to 3.4, you must do more than "just" build. If you skip this step - the build will fail.
 
 * The `Identifier` for the "`widget`" changed from "`SmallStatusWidget`" to the more descriptive "`LoopWidgetExtension`"
-* The addition of the Libre CGM to the *Loop* app requires new capabilities
-    * All capabilities, except the configuration of the `App Groups`, are now done automatically
 
-You will (1) run `Add Identifiers`, (2) update the new identifier, (3) run `Create Certificates` and then (4) run `Build Loop`.
+> If you built version 3.3.0 (the `dev branch` before release of version 3.4) or newer, you can skip ahead to [Build the App](#build-the-app).
 
-#### 1: Add Identifiers
+You will (1) run [`Add Identifiers`](#add-identifiers), (2) [add the `App Group`](#add-app-group-to-new-identifier) to the new identifier, (3) run [`Create Certificates`](#create-certificates) and then (4) run [`Build Loop`](#build-the-app).
+
+#### Add Identifiers
 
 In your fork of LoopWorkspace:
 
 * Run the Action: `Add Identifier`
 * Wait for it to succeed
 
-???+ tip "Detailed instructions (Click to open/close)"
+??? tip "Detailed instructions for `Add Identifier` (Click to open/close)"
     Refer to the graphic below for the numbered steps:
 
     1. Click on the `Actions` tab of your <code>LoopWorkspace</code> repository
@@ -259,41 +242,37 @@ In your fork of LoopWorkspace:
     * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
         * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-        * Resolve the error and repeat the Action: [Add Identifiers](identifiers.md#add-identifiers)
+        * Resolve the error and repeat `Add Identifiers`
 
 #### Add `App Group` to New `Identifier`
 
-* Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-* Add the `Loop App Group` to the new "`LoopWidgetExtension`" identifier
+Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
+
+Click on the "`LoopWidgetExtension`" identifier to open the `Edit Your App ID Configuration` screen.
 
 | `NAME` | `IDENTIFIER` |
 |-------|------------|
 | `Loop Widget Extension` | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 
-???+ tip "Detailed instructions (Click to open/close)"
-    * Open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page.
-    * Click on the "`LoopWidgetExtension`" identifier to open the `Edit Your App ID Configuration` screen.
+The graphic below has numbered steps that match these directions:
 
-    Looking at the `App Services` column, scroll down to the `App Groups` row
+1. Looking at the `App Services` column, scroll down to the `App Groups` row and ensure the check box (under the `Capabilities column`) for `App Groups` is checked
+2. If the word `Configure` shows up, tap on it
+    * This opens the `App Group Assignment` screen
+    * If it said `Edit` instead of `Configure` - you can click to confirm you have the correct App Group but won't need to continue or save if it is correct
+3. Check the box by `Loop App Group` that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup`
+    * Note that if you previously built with Xcode, the name may be different, i.e., `XC group com TEAMID loopkit LoopGroup`
+4. Tap `Continue`
+5. Tap `Save`
 
-    * Ensure the check box (under the `Capabilities column`) for `App Groups` is checked
-    * If the word `Edit` shows up under `NOTES`, return to the identifiers list
-        * Tap on the `< All Identifiers` button at the top left
-    * If the word `Configure` shows up, tap on it
-        * This opens the `App Group Assignment` screen
-        * Check the box by `Loop App Group` that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue`
+![graphic showing selection of the correct App Group](img/update-identifier-loop-3-4.png){width="700"}
+{align="center"}
 
-    If you had to modify the identifier, the `Save` button at the top right will become active
+If you did not need to make changes, the `Save` button will not be active.
 
-    * Tap on `Save`
-    * This opens the `Modify App Capabilities confirmation` screen
-    * Click on `Confirm`
+* Tap on the `< All Identifiers` button at the top left
 
-    If you did not need to make changes, the `Save` button will not be active.
-
-    * Tap on the `< All Identifiers` button at the top left
-
-    The full list of Identifiers should be displayed again.
+The full list of Identifiers should be displayed again.
 
 !!! note "Other Identifiers"
     All other identifiers should be already set up.
@@ -317,9 +296,8 @@ You must run the action `Create Certificates` again because the `Identifiers` we
         {align="center"}
 
     1. Wait a minute or two for the action to finish
-        * If this action fails, head over to [Action: 3. Create Certificates Errors](bb-errors.md#action-create-certificates-errors)
 
-#### 4: Build
+#### Build the App
 
 Refer to graphic below as you follow the steps to build the *Loop* app.
 
@@ -338,7 +316,7 @@ Refer to graphic below as you follow the steps to build the *Loop* app.
 
 If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. (The release after 3.2.3 will certainly have extra instructions.)
 
-If you are using the dev branch, head over to [Build Development Version](#build-development-version) for information.
+If you are using the dev branch, the update steps are the same, but review information on this page: [Build Loop dev with Browser](build-dev-browser.md){: target="_blank" }.
 
 Otherwise, head over to [Errors with Browser](bb-errors.md).
 
@@ -349,7 +327,7 @@ You can ignore an email from *Apple* that there are things you must fix in your 
 *  There is no action you need to take - the developers will handle any updates that are required before it affects your ability to build the app
 * Other warnings only address issues if you were selling the app in the app store, but it is for your own personal use
 
-### Wait for *TestFlight*
+## Wait for *TestFlight*
 
 You'll receive an App Store Connect email confirming that the build has completed processing, and a *TestFlight* email confirming the new app is ready to test.
 
@@ -360,7 +338,7 @@ You'll receive an App Store Connect email confirming that the build has complete
          * Make sure your developer account is in good standing and that there are no agreements that need to be accepted
         * Repeat the build (previous step)
 
-### Install the *Loop* app on the phone
+## Install the *Loop* app on the phone
 
 > This is Step 6 of 6 - once you finish this, you are done and your app will last 90 days.
 
@@ -374,7 +352,7 @@ The updated app will show up in your *TestFlight* app.
     * Wait for the one that expires in about 90 days
 * You will also see a build number in parentheses, that number increments each build
 
-#### TestFlight Automatic Update Disabled
+### *TestFlight* Automatic Update Disabled
 
 Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../browser/phone-install.md#disable-automatic-install-from-testflight), you control when to install the app on the phone.
 
@@ -385,8 +363,7 @@ Option 1: If you chose to [Disable Automatic Install from *TestFlight*](../brows
 ![install Loop from  *TestFlight*](img/testflight-install-loop.gif){width="300"}
 {align="center"}
 
-
-#### Automatic Update Enabled
+### *TestFlight* Automatic Update Enabled
 
 > We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from GitHub for version 3.3 or later.
 
@@ -395,7 +372,9 @@ Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Lo
 * In this case, when you look at the *TestFlight* app on your phone, the app should have installed automatically
 * Refer to the GIF above, the message will say `Open` instead of `Install`
 
-## Choose Previous Build
+## Other Information
+
+### Choose Previous Build
 
 If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.
 
@@ -403,38 +382,6 @@ This section provides detailed instructions if you want to choose a previous bui
 
 * You are supporting multiple family members and may build different versions for each
 * You want to test a different `branch` or set of customizations; you can install a previous build once you are done with the test
-
-This section covers two topics.
-
-1. Optional: [Add Test Details](#add-test-details) to the TestFlight build
-2. [Select a Previous Build](#select-a-previous-build)
-
-### Add Test Details
-
-About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
-
-* Log in if needed
-* Select your *Loop* app
-* Click on the `TestFlight` tab to see a screen similar to the graphic below
-
-![select a TestFlight build to update](img/testflight-select-build.png){width="700"}
-{align="center"}
-
-Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.
-
-![add details to your build](img/testflight-test-details.png){width="700"}
-{align="center"}
-
-Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
-
-In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
-
-!!! tip "Commit Number"
-    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
-
-    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
-
-### Select a Previous Build
 
 First open the *TestFlight* app on your phone and select the *Loop* app.
 
@@ -445,35 +392,10 @@ Near the bottom of the screen is a row labeled previous builds.
 * Typically you choose the most recent build for that version and click Install and then Open after installation completes
 * All your settings should remain
 
-The following graphic shows the view seen in the *TestFlight* app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.
+The following graphic shows the view seen in the *TestFlight* app on the phone. If you choose to [Add Test Details to *TestFlight*](#add-test-details-to-testflight), you can have notes show up to help you decide which version to load.
 
 ![choose build from TestFlight that has test details](img/testflight-select-with-details.png){width="300"}
 {align="center"}
-
-## *TestFlight* Expiration Warning
-
-For version 3.3.0 and newer, the usual [*Loop* app expiration notification system](../operation/features/notifications.md#loop-app-expiration-notification) alerts the user when the app is within 20 days of expiration. In addition to that modal alert, the user can examine the bottom of the Settings screen at any time to see the expected expiration date and time.
-
-![expiration warning on settings for testflight example](../version/img/expiration-warning-testflight.svg){width="300"}
-{align="center"}
-
-## *GitHub* `Personal Access Token`
-
-Your *GitHub* `Personal Access Token` should be configured:
-
-* `Never expire`
-* `repo, workflow` permission scope
-
-Refer to [Modify Automatic Building](automatic.md#modify-automatic-building) if you don't want to accept the default recommendation to automatically update and build.
-
-If you are not logged in to *GitHub* and have not logged in recently, then you may see the authentication screen when doing the steps below.
-
-Authenticate if requested by clicking on the green `Send SMS` button or entering your password.
-
-![two-factor authentication for access to tokens](img/gh-sms-access-screen.png){width="300"}
-{align="center"}
-
-Once you are authenticated, you will have access to view your personal access token.
 
 ### Modify `Personal Access Token`
 
@@ -557,6 +479,27 @@ Refer to the GIF for help. There are 3 frames.
 
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [How to Update or Rebuild](#how-to-update-or-rebuild) instructions to start a new build.
 
-## Build Development Version
+### Add Test Details to *TestFlight*
 
-The information to build a development (`dev` or any other branch) has been moved to a new page: [Build dev with Browser](build-dev-browser.md)
+About half an hour after the build action completes, the new build will appear in the TestFlight screen at this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
+
+* Log in if needed
+* Select your *Loop* app
+* Click on the `TestFlight` tab to see a screen similar to the graphic below
+
+![select a TestFlight build to update](img/testflight-select-build.png){width="700"}
+{align="center"}
+
+Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.
+
+![add details to your build](img/testflight-test-details.png){width="700"}
+{align="center"}
+
+Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
+
+In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
+
+!!! tip "Commit Number"
+    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
+
+    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
