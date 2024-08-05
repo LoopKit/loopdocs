@@ -31,12 +31,13 @@ This was a patch that fixed errors with the Browser Build. No other changes were
 
 * [Link to release notes for Loop 3.4.1](https://github.com/LoopKit/Loop/releases/tag/v3.4.1){: target="_blank" }
 
-
 ### Loop v3.4.0
 
 *Loop* v3.4.0 was released on 13 July 2024.
 
 * [Link to release notes for Loop 3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0){: target="_blank" }
+* There are some one-time update steps required for those who Build with Browser:
+    * [Update from 3.2.x to 3.4](../browser/bb-update.md#update-from-32x-to-34){: target="_blank" }
 
 #### Summary of Important New Features
 
