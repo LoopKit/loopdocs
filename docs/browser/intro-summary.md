@@ -14,7 +14,7 @@
 
     * Use the template to [Save Your Information](intro-summary.md#make-a-secrets-reference-file){: target="_blank" }
 
-    A narrated video is available:
+    If you prefer watching your instructions, a narrated video is available:
 
     * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
@@ -60,27 +60,29 @@ When you follow the directions to configure building with a browser, for Loop 3.
 
 The steps to configure for building with a browser requires a lot of focused attention. Take it in steps and take breaks as needed. Some people prefer a video. Some people prefer more detailed steps on a webpage and others only high-level steps. 
 
-### How-to Video to Build with a Browser
+### The Short Version
 
-There is a narrated video of each step needed to build using a browser. This video was created for version 3.2.x and some steps have been simplified with version 3.4.x.
+Complete instructions are found at this link for those comfortable with using *GitHub* and navigating the *Apple Developer* and *Apple App Connect* pages.
+
+* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
+
+### The Video Version
+
+If you prefer watching your instructions, there is a narrated video of each step needed to build using a browser. This video was created for version 3.2.x and some steps have been simplified with version 3.4.x.
 
 * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
 Click in the comments for a full index of topics.  If you have issues with a particular section, use the index to advance to the relevant part of the video. Subtitles are in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
 
-### Section Summaries
+### The Detailed Version
+
+If you prefer seeing step-by-step instructions, those are provided too.
 
 Some sections have a Section Summary for those who just want high-level steps without a lot of graphics. It also provides a high-level view of what you are going to do before you do it.
 
 * To view the summary, click on the summary header
 * If the summary is all you need, use the `skip forward` symbol (<span class="loop-big">:material-skip-forward:</span>) to skip to the next instruction
 * Or follow the detailed instructions below the summary
-
-### Sparse Instructions
-
-For sparse instructions, with no graphics or hand-holding, click on the link below:
-
-* [LoopWorkspace Build Instructions](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
 
 ## Save Your Information
 
@@ -151,6 +153,10 @@ through
 
 ## SECRETS BELOW:
 
+TEAMID
+<looks like this>
+AAAAAAAAAA
+
 FASTLANE_ISSUER_ID
 <looks like this>
 AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
@@ -177,10 +183,6 @@ MATCH_PASSWORD
 <looks like this>
 AnyThingYouWant-sameForEveryRepository
 
-TEAMID
-<looks like this>
-AAAAAAAAAA
-
 ## Repository Names for my Fork:
 
 https://github.com/my-github-username/LoopWorkspace
@@ -192,30 +194,24 @@ Add additional apps here if you decide to build any
 
 The <code>*GitHub* Browser Build</code> may use new and unfamiliar **terms**.
 
+These instructions can be used without knowing what any of these terms mean. But if you are curious:
+
 Some of these **terms** have ToolTips, so hover your mouse over those - or review them in the [Glossary](../faqs/glossary.md){: target="_blank" }.
 
 * Some terms in the Glossary are not in alphabetical order to improve logical grouping. All the individual <code>Secrets</code> are listed after <code>Secrets</code> in the Glossary.
 
 * `Actions`: available in your *GitHub* account to build your app (once you configure your repository)
-    * With `Loop 3`, the actions: `Validate Secrets`, <code>Add Identifiers</code>, `Create Certificates`, and `Build Loop` enable users to build the *Loop* app from a browser on any computer
-    * If <code>*GitHub* Browser Build</code> Actions are not operating as you expect, check [*GitHub* Status](https://www.githubstatus.com/){: target="_blank" } to see if it is *GitHub* problem.
+    * You must be logged in to *GitHub* to run the actions
 * <code>Secrets</code>: are required to enable *GitHub* to build the *Loop* app using *GitHub* Actions
     * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
     * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
-    * These <code>Secrets</code> can be added to [Other Apps](other-apps.md){: target="_blank" } configured with the same <code>*GitHub* Browser Build</code> method
-    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once, see [Use a *GitHub* Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }, and have them available for every repository in that organization account
+    * If you build [Other Apps](other-apps.md){: target="_blank" }, they use the same <code>Secrets</code>
+    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once and have them available for every repository in that organization account; see [Use a *GitHub* Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
 * API `Key`:`Application Programming Interface Key`
-    * You obtain and save this key from the *Apple Developer* website
+    * You create an API key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>
-    * It is required to enable your *GitHub* account to interface with *Apple* to create your app
-* `Identifiers`: are required to build the *Loop* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you)
-    * Four Identifier Names must be associated with your `App Group`
-        * `Loop`, `Loop Intent Extension`, `Loop Status Extension` and `Loop Widget Extension`
-    * Two Identifier Names will exist but do not require that association
-        * `WatchApp` and `WatchAppExtension`
-    * The `Identifier` screen, has **`NAME`** and **`IDENTIFIER`** columns
-        * If you previously built with Xcode, the items in the **`NAME`** column may start with `XC`
-        * The items under the **`IDENTIFIER`** column match the table in [Add `App Group` to Identifiers](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
+    * These secrets enable your *GitHub* account to interface with *Apple* to create your app
+* `Identifiers`: are required to build the *Loop* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you) when you run `Add Identifiers`
 * [`App Store Connect`](https://appstoreconnect.apple.com){: target="_blank" }: a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
