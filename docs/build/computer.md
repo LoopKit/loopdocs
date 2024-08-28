@@ -49,10 +49,8 @@ Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1,
 | iOS Version | minimum Xcode | minimum macOS | 
 |:---:|:---:|:---:|
 | 17.5 | 15.4 | 14.0 |
-| 17.0 | 15.0 | 13.5 |
-| 16.4 | 14.3 | 13.0 |
-| 16.2 | 14.2 | 12.5 |
-| 15.1 | 14.1 | 12.5 |
+| 17.4 | 15.3 | 14.0 |
+| 15.1 to<br>17.0 | 15.0 | 13.5 |
 
 !!! warning "iOS Dictates Your Computer Needs"
 

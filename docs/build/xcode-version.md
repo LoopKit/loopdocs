@@ -91,7 +91,6 @@ Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1,
 | 17.4 | 15.3 | 14.0 |
 | 15.1 to<br>17.0 | 15.0 | 13.5 |
 
-
 ### Wikipedia Chart for Apple Versions
 
 This graphic (copied from Wikipedia and last updated March 2023) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
