@@ -44,6 +44,13 @@ Every tooltip definition is also found in the [Glossary](../faqs/glossary.md) - 
 
 The process for building the&nbsp;<span translate="no">Loop</span>&nbsp;app is divided into short segments (sections or pages) in the Build tabs of&nbsp;<span translate="no">LoopDocs</span>.
 
+* [Build with Browser](../browser/bb-overview.md)
+    * Build with a browser on any computer or tablet
+    * App is installed on the iPhone using *TestFlight*
+* [Build with *Mac*](../build/overview.md)
+    * App is built on a *Mac* with *Xcode* connected to the iPhone
+    * The operating system on the *Mac* and the version of *Xcode* must be kept up-to-date
+
 !!! warning "Best Practice: Learn to Build"
     You are strongly encouraged to build&nbsp;<span translate="no">Loop</span>&nbsp;for yourself.
 

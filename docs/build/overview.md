@@ -1,18 +1,20 @@
 ## Build with *Mac* Requirements
 
-The complete requirements for building Loop with a *Mac* and *Xcode* are summarized below. The first list contains the common requirements that are the same regardless of build method. The second list contains the additional requirements for building with a Mac and Xcode.
+The complete requirements for building the *Loop* app with a *Mac* and *Xcode* are summarized below. 
 
-Each requirement in the list is linked to the LoopDocs pages with more information.
+* Common Requirements are the same regardless of build method
+* Additional Requirements are needed only for building with a *Mac*
+* If you prefer to use the Browser Build method, head over to [Build with Browser](../browser/bb-overview.md){: target="_blank" }
 
 ### Common Requirements
 
-1. [Compatible iPhone](../build/phone.md)
-1. [Compatible Pump](../build/pump.md)
-1. [Compatible CGM](../build/cgm.md)
-1. [RileyLink Compatible Device](../build/rileylink.md) (not needed for Omnipod DASH)
-1. [Apple Developer Membership](../build/apple-developer.md) (not needed if you rebuild weekly using the *Mac* method)
+* [Compatible Phone](../build/phone.md){: target="_blank" }
+* [Compatible CGM](../build/cgm.md){: target="_blank" }
+* [Compatible Pump](../build/pump.md){: target="_blank" }
+    * For pumps that do not support Bluetooth communications (older Medronic and Omnipod Eros), you also need a [RileyLink Compatible Device](../build/rileylink.md){: target="_blank" }
+* [Apple Developer Membership](../build/apple-developer.md) (not needed if you rebuild weekly using the *Mac* method)
 
-### Build with *Mac* Additional Requirements
+### Additional Requirements to Build with *Mac*
 
 1. [Compatible Computer](../build/computer.md#check-your-macos-version)
 1. [Xcode](../build/xcode-version.md) (a free Apple application)

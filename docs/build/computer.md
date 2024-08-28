@@ -3,7 +3,7 @@
 !!! info "Time Estimate"
     **If you are building with a Mac and Xcode:**
 
-    - 5 minutes, if you have a Mac with Ventura (macOS 13.5) or higher (Sonoma)
+    - 5 minutes, if you have a Mac with Sonoma (macOS 14.0) or higher
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
@@ -34,20 +34,21 @@
         * Updating to a newer Loop release
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
-If you have access to a computer with MacOS 13.5 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+If you have access to a computer with MacOS 14.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
 
 ## Compatible Versions
 
-The current development version and the next release of&nbsp;_<span translate="no">Loop</span>_&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
+The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xcode version 15 or higher regardless of the iOS on the phone. This requires macOS 13.5 or higher. If your phone is iOS 17.4 or newer, you must have macOS 14.0 or higher.  As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
 
-When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
+When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 17.6.1.
 
-The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
+The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.4.1</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
 
-Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
+Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
 
 | iOS Version | minimum Xcode | minimum macOS | 
 |:---:|:---:|:---:|
+| 17.5 | 15.4 | 14.0 |
 | 17.0 | 15.0 | 13.5 |
 | 16.4 | 14.3 | 13.0 |
 | 16.2 | 14.2 | 12.5 |
@@ -67,7 +68,7 @@ To find your macOS version, click on the Apple icon in the computer's upper left
 
 With the Ventura macOS version, the `About this Mac` display changed. For Ventura, when you tap on the `More Info` icon, it opens the General -> About screen from the System Settings menu. This is very similar to the phone Settings -> General -> About screen.
 
-Sonoma, macOS 14.0, is expected to be released 26 September 2023.
+Sonoma, macOS 14.0, was released September 2023.
 
 ![image showing macOS and system details](img/macos-12-13.svg){width="750"}
 
@@ -77,7 +78,7 @@ If you do not have the required minimum macOS version
 * For macOS 13.0 or later, click on the Apple and choose `System Settings`
     * Select `General` and `Software Update`, just like you would on the phone interface
 
-Apple says upgrading to macOS Ventura requires 26 GB of available storage.
+Apple says upgrading to macOS Sonoma requires 26 GB of available storage.
 
 ## Check the Space Available
 
@@ -87,19 +88,18 @@ You need to have 50 GB free space in order to install Xcode as directed on the [
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
-## Which Macs Are Compatible with macOS Ventura?
+## Which Macs Are Compatible with macOS Sonoma?
 
-Ventura is required for building the *Loop* app on a phone running iOS 16.4 or higher with the *Mac* method. You can install Ventura on the following:
+Sonoma is required for building the *Loop* app on a phone running iOS 17.4 or higher with the *Mac* method. You can install Sonoma on the following:
 
-* MacBook Pro introduced in 2017 or later
+* MacBook Pro introduced in 2018 or later
 * MacBook Air introduced in 2018 or later
-* MacBook introduced in 2017 or later
 * Mac mini introduced in 2018 or later
-* iMac introduced in late 2017 or later
-* iMac Pro
-* Mac Studio
+* iMac introduced in late 2019 or later
+* iMac Pro introduced in 2017 or later
+* Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Ventura](https://support.apple.com/kb/HT213264){: target="_blank" }
+* get the full list from [Apple for Sonoma](https://support.apple.com/en-us/105113){: target="_blank" }
 
 ## Older Macs
 

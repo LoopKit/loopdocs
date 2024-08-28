@@ -72,3 +72,18 @@ Consult with your health care professional regarding your diabetes management.
 !!! warning "Open Source"
     * The Loop app is an open source project used by many, but it is not approved for therapy by any government organization.
     * **You take full responsibility for building and running this system and do so at your own risk.**
+
+## Protect that App
+
+!!! danger "Protect Against Deletion"
+    Prevent your Loop app from being deleted accidentally.
+
+    * If you, or a child, deletes the app from the phone, it is gone along with all the settings
+    * You have to reinstall from *TestFlight* (Browser Build) or get access to your *Mac* to rebuild to the phone
+        * After you get Loop installed on the phone again, you must reenter all settings and start a new pod or add back in your Medtronic pump
+
+    Look under iPhone, Settings, Screen Time, Content & Privacy Restrictions, iTunes & App Store Purchases, Deleting Apps. Choose Don't Allow.
+
+    Prevent deletion of what is now a critical medical app.
+
+    Even if you prevent App deletion, someone can still delete the app from the Home Screen. If that happens, the icon won't show up; but the app is still on your phone. Use the search App feature to find your app and breath a sigh of relief.
