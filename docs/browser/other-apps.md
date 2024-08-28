@@ -13,7 +13,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 
 ### Updating / Rebuilding Other Apps
 
-If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name from the [Table of App Repositories](#table-of-app-repositories) for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
+If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
 
 ### Optional Build Method
 
@@ -40,26 +40,28 @@ For the convenience of caregivers who use `LoopFollow` to monitor multiple peopl
 
 ### Prerequisites
 
-* If you have already built using the Browser Build method, it is easy to build other apps which use the same method. Skip ahead to [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets)
+* If you have already built using the Browser Build method, it is easy to build other apps which use the same method. Skip ahead to [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets).
 
-    * If you decide you want to try the *GitHub* free organization method, review the instructions and then adjust as you work through the step-by-step instructions on this page which show graphics and instructions for using a personal *GitHub* account
+* If this is the first repository you have built with the Browser Build method
 
-* If this is the first repository you have built with the Browser Build method, you must first complete the initial steps found on [Configure to Use Browser](../browser/intro-summary.md). When you reach the point where
-    * You have created your Match-Secrets repository
-    * You are told to [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../browser/prepare-fork.md#fork-loopworkspace)
-        * Review the directions but don't do it
-        * Return here and check the table below
-        * Use that table to find the link of the repository you will fork
-
-!!! important "Use the <code>repository</code> for the application you are building"
-    Many graphics on this page show&nbsp;<span translate="no">LoopWorkspace</span>, just remember to use the <code>repository</code> for the app you want to build, that is either&nbsp;_<span translate="no">LoopCaregiver</span>_&nbsp;or &nbsp;_<span translate="no">LoopFollow</span>_.
+    * Begin reading at [Configure to Use Browser: Introduction and Summary](intro-summary.md){: target="_blank" }
+    * Follow all the instructions on the [Collect Secrets](secrets.md){: target="_blank" } page
+    * After all your secrets are collected, continue on this page with [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets).
 
 ## <span translate="no">Fork and Add Secrets</span>
+    
+!!! important "Use the <code>repository</code> for the application you are building"
+    Many graphics show&nbsp;<span translate="no">LoopWorkspace</span>. You need to replace that with the <code>repository</code> for the app you want to build. You may need to adjust the App Name, the Shared App Group and look for different Identifiers.
+    
+    Instructions for&nbsp;_<span translate="no">LoopCaregiver</span>_&nbsp;or &nbsp;_<span translate="no">LoopFollow</span>_ are found on this page.
+    
+    Other apps such as xDrip4iOS and Trio can also be built with this method. Refer to the repository associated with those other apps, examine the fastlane folder and open the testflight.md file in your browser to get specific details for building that app.
 
-* You will return to this page after reviewing (but not doing) this step [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../browser/prepare-fork.md#fork-loopworkspace)
-    * Use the same method as that section, but <span>`fork` the `repository` for the app</span> you plan to build
-    * _<span translate="no">LoopCaregiver</span>_, expect the `dev branch`
-    * _<span translate="no">LoopFollow</span>_, expect the `main branch`
+You will return to this page after reviewing (but not doing) this step [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](prepare-fork.md#fork-loopworkspace)
+
+* Use the same method as that section, but <span>`fork` the `repository` for the app</span> you plan to build
+* _<span translate="no">LoopCaregiver</span>_, expect the `dev branch`
+* _<span translate="no">LoopFollow</span>_, expect the `main branch`
 
 ### Table of App `Repositories`
 
@@ -75,21 +77,6 @@ The two repositories below are only if you need to follow a second or third loop
 | <span translate="no">LoopFollow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second){: target="_blank" } |
 | <span translate="no">LoopFollow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third){: target="_blank" } |
 
-## Update the `Repository`
-
-If you just created the `fork`, you can skip this section.
-
-If you are returning to this page to update an app, please follow these steps. Each step has a link to instructions on the Update `LoopWorkspace` page. Follow the `Update Fork` directions for the `repository` of the app you are updating:
-
-1. [Accept Agreements](bb-update.md#accept-agreements) for the *Apple* Developer account
-2. [Update `Fork`](bb-update.md#update-fork)
-
-Then return to this page.
-
-Normally you skip ahead to [Build App](#build-app) after an update.
-
-If you are updating the *LoopCaregiver* app after the 2023 December 8 update, you need to go to [Add Identifiers](identifiers.md#add-identifiers) after updating the `fork`.
-
 ## Configure <code>Secrets</code> for this App
 
 > If you choose to use the optional *GitHub* organization method, you can skip this section:
@@ -103,17 +90,10 @@ After successfully creating your fork of the repository for this app:
 * If you have already built Loop using the Browser Build method, skip ahead to [Add Existing <code>Secrets</code>](#add-existing-secrets)
 
 * If this is the first repository you have built with *GitHub*
-    * You should follow the detailed steps at [Configure to Use Browser: Configure <code>Secrets</code>](../browser/prepare-fork.md#configure-secrets), except you will apply the <code>Secrets</code> to the repository for the app you are planning to build
+    * You should follow the detailed steps at [Configure to Use Browser: Configure <code>Secrets</code>](../browser/prepare-fork.md#configure-secrets){: target="_blank" }, except you will apply the <code>Secrets</code> to the repository for the app you are planning to build
     * Once your 6 secrets have been added, return to this page and skip ahead to [Validate <code>Secrets</code>](#validate-secrets) on this page.
 
 ### Add Existing <code>Secrets</code>
-
-!!! tip "MATCH_PASSWORD"
-    An early version of *GitHub* First-Time had incorrect information about the need to save MATCH_PASSWORD.
-
-    If you did not save your MATCH_PASSWORD in your file with all your <code>Secrets</code>, you will need to delete your Match-Secrets repository, create a new one and then add all your <code>Secrets</code> into all you repositories again and run all the Actions again.
-
-    Instructions are found at [Reset Match-Secrets](bb-errors.md#reset-match-secrets).
 
 Open the text file in which you maintain a copy of your 6 <code>Secrets</code> so you can copy each value into the <code>Secrets</code> for this repository.
 
