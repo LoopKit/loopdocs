@@ -140,9 +140,9 @@ When Google Translate is selected:
 
 **<span translate="no">Loop Cycle</span>**&nbsp; (Loop Cycle): typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
 
-**<span translate="no">Loop Caregiver</span>**&nbsp; (Loop Caregiver): An app you can build to provide remote commands to `Loop` using `Nightscout`
+**<span translate="no">LoopCaregiver</span>**&nbsp; (LoopCaregiver): An app you can build to provide remote commands to `Loop` using `Nightscout`
 
-**<span translate="no">Loop Follow</span>**&nbsp; (Loop Follow): An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information
+**<span translate="no">LoopFollow</span>**&nbsp; (LoopFollow): An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information
 
 **<span translate="no">Loop</span>**&nbsp; (Loop): With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
 

@@ -9,7 +9,7 @@ If you are running a much older version of the *Loop* app, be aware:
 Loop 3 is **NOT backwards** compatible. Once you build Loop 3 or later on your phone, you cannot return to Loop 2.2.x or FreeAPS without some additional work.
 
 * Be prepared to enter all your settings again and start a new pod
-* If you use Loop Follow, you do **not** need to delete Loop Follow
+* If you use LoopFollow, you do **not** need to delete LoopFollow
 * When downgrading to an older version of Loop from Loop 3, you have to delete all apps with a shared app group ID
     * For more information, click on [Remove Apps with Shared App Group](releases.md#remove-apps-with-shared-app-group)
 

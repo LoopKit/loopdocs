@@ -9,12 +9,12 @@ All remote commands require the configuration steps from [Remote Configuration](
     * There are some versions of *Nightscout* that provide a row for entry of an OTP for Temporary Override in the *Nightscout* Careportal
     * Leave that row blank
 
-!!! question "Do I have to use *Loop Caregiver* ?"
+!!! question "Do I have to use *LoopCaregiver* ?"
     There are a number of methods for using remote commands.
 
     Things everyone needs to know are covered on this page, so you should read it regardless of how you plan to issue remote commands.
     
-    If you decide on *Loop Caregiver* , review both this page and &nbsp;[*Loop Caregiver*](loop-caregiver.md) page.
+    If you decide on *LoopCaregiver* , review both this page and &nbsp;[*LoopCaregiver*](loop-caregiver.md) page.
 
 ## QR Code
 
@@ -38,9 +38,9 @@ While you are on the Settings -> Services -> NightScout screen, notice that the 
 
 You need to set up an authentication app to generate one-time-passwords for remote bolus and carbs.
 
-One of the nice features of *Loop Caregiver* is that it handles the one-time password (OTP) requirements for you.
+One of the nice features of *LoopCaregiver* is that it handles the one-time password (OTP) requirements for you.
 
-But even if you choose to use *Loop Caregiver* , you should configure an authentication app for cases where you don't have access to your *Loop Caregiver* phone.
+But even if you choose to use *LoopCaregiver* , you should configure an authentication app for cases where you don't have access to your *LoopCaregiver* phone.
 
 There are several authentication apps that support one-time passwords.
 
@@ -214,11 +214,11 @@ For more information, see:
 
 ## Using Remote Commands
 
-There are four ways you can trigger your commands remotely; [*Loop Caregiver*](loop-caregiver.md){: target="_blank" }, [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
+There are four ways you can trigger your commands remotely; [*LoopCaregiver*](loop-caregiver.md){: target="_blank" }, [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-### [*Loop Caregiver*](loop-caregiver.md){: target="_blank" }
+### [*LoopCaregiver*](loop-caregiver.md){: target="_blank" }
 
-Click the link above to read more about *Loop Caregiver* .
+Click the link above to read more about *LoopCaregiver* .
 
 ### *Nightscout* Careportal
 

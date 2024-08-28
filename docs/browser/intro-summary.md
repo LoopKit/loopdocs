@@ -46,15 +46,11 @@
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
-    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action.
+    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action. For more information, see [Automatic Update & Build](automatic.md){: target="_blank" }.
     - **Can you explain the new automatic building?** There's a whole page on [Automatic Update & Build](automatic.md){: target="_blank" } for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child){: target="_blank" }.
     - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md){: target="_blank" }
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
-
-## Automatic Build of Loop
-
-When you follow the directions to configure building with a browser, for Loop 3.4 and later, you configure your app to automatically build at least once a month. You also configure your app to be updated within one week of a new release, in other words, when the LoopKit/LoopWorkspace main branch is updated. For details, see [Automatic Update & Build](automatic.md){: target="_blank" }.
 
 ## Tips and Tricks
 

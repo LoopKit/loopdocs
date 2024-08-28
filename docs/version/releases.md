@@ -185,4 +185,4 @@ At this point, you can restore your Loop 3 build on your phone and continue usin
 
 If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date){: target="_blank" } and then delete the profiles for all the apps by using the - sign. 
 
-You do not need to delete Loop Follow, so if you use Loop Follow - do not delete that provisioning profile.
+You do not need to delete LoopFollow, so if you use LoopFollow - do not delete that provisioning profile.

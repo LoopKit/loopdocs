@@ -12,12 +12,12 @@ While the Loop app sends notifications locally on the Loop user's iPhone, parent
       * [Nightscout: Configurations: Pushover](https://nightscout.github.io/nightscout/setup_variables/#pushover){: target="_blank" }
       * [Nightscout: Remote Notifications](https://nightscout.github.io/nightscout/pushover/){: target="_blank" }
 
-### Loop Follow
+### LoopFollow
 
-Loop Follow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Dexcom Share credentials and/or the Nightscout URL and allows for easy customization of alerts and alarms. Jon handed over maintenance of this app to the Loop and Learn team.
+LoopFollow was created by Jon Fawcett who took ideas from multiple other apps to create a single app to assist in his caregiving role. It is popular with Loopers who like the display and notifications as well as Loop caregivers. It can work with just the Dexcom Share credentials and/or the Nightscout URL and allows for easy customization of alerts and alarms. Jon handed over maintenance of this app to the Loop and Learn team.
 
 * Please see
-    * [Loop and Learn: Loop Follow page](https://www.loopandlearn.org/loop-follow){: target="_blank" }
+    * [Loop and Learn: LoopFollow page](https://www.loopandlearn.org/loop-follow){: target="_blank" }
     * [Loop and Learn Facebook group](https://www.facebook.com/groups/loopandlearn){: target="_blank" }
 
 ## Pebble Watch

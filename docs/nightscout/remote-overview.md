@@ -2,7 +2,7 @@
 
 With&nbsp;_<span translate="no">Loop</span>_&nbsp;3, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides, issuing remote bolus commands and adding remote carb entries. With&nbsp;_<span translate="no">Loop</span>_&nbsp;2, only overrides can be turned on or off remotely.
 
-Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go through their *Nightscout* site. For security, any command to deliver a bolus or add a carb entry requires a one-time-password (OTP) to be used with each remote command. These codes are unique to your combined&nbsp;_<span translate="no">Loop</span>_&nbsp;and *Nightscout* configuration. An authentication app needs to be installed on the device sending the remote boluses/carbs. The *Loop Caregiver* app can be used. It handles authentication requirements and offers a&nbsp;_<span translate="no">Loop</span>_&nbsp;-like user interface.
+Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go through their *Nightscout* site. For security, any command to deliver a bolus or add a carb entry requires a one-time-password (OTP) to be used with each remote command. These codes are unique to your combined&nbsp;_<span translate="no">Loop</span>_&nbsp;and *Nightscout* configuration. An authentication app needs to be installed on the device sending the remote boluses/carbs. The *LoopCaregiver* app can be used. It handles authentication requirements and offers a&nbsp;_<span translate="no">Loop</span>_&nbsp;-like user interface.
 
 ### Remote Commanding Requirements:
 
@@ -18,8 +18,8 @@ Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go thr
 
     If your *Nightscout* site is an older version, you should limit your remote commands to `Overrides`, even with &nbsp;<span translate="no">Loop 3</span>.
 
-!!! tip "&nbsp;*Loop Caregiver*"
-    There is a new companion app, &nbsp;[*Loop Caregiver*](loop-caregiver.md) that makes remote commands and reviewing the status of your looper much easier.
+!!! tip "&nbsp;*LoopCaregiver*"
+    There is a new companion app, &nbsp;[*LoopCaregiver*](loop-caregiver.md) that makes remote commands and reviewing the status of your looper much easier.
 
 ## How does this work?
 
@@ -54,4 +54,4 @@ There are several steps to follow to set this up. Each page is linked below:
 
 ### [Remote Errors](remote-errors.md)
 
-### [*Loop Caregiver* App](loop-caregiver.md)
+### [*LoopCaregiver* App](loop-caregiver.md)

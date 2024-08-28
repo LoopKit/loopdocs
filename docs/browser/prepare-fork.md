@@ -7,7 +7,7 @@
 
     There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
 
-??? abstract "Section Summary (click to open/close)"
+???+ abstract "Section Summary (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } into your account.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
@@ -54,7 +54,7 @@ Carefully compare your screen to the graphic below paying attention to the highl
     These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`.
 
     * They are added once for a repository and work for all branches of that repository
-    * They must be added to any other repository, such as <code>Loop Caregiver</code>, for which you also use `GitHub Browser Build`
+    * They must be added to any other repository, such as <code>LoopCaregiver</code>, for which you also use `GitHub Browser Build`
 
     For each of the following <code>Secrets</code>, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
 

@@ -1,7 +1,7 @@
 ## Collect and Save Secrets
 
 ??? abstract "Section Summary (click to open/close)"
-    You require 6 <code>Secrets</code> (alphanumeric items) to use the <code>*GitHub* Browser Build</code> method and if you use the <code>*GitHub* Browser Build</code> method to build more than Loop, e.g., <code>Loop Follow</code> or <code>Loop Caregiver</code>, you **must** use the same 6 <code>Secrets</code> for each app you build with this method.
+    You require 6 <code>Secrets</code> (alphanumeric items) to use the <code>*GitHub* Browser Build</code> method and if you use the <code>*GitHub* Browser Build</code> method to build more than Loop, e.g., <code>LoopFollow</code> or <code>LoopCaregiver</code>, you **must** use the same 6 <code>Secrets</code> for each app you build with this method.
 
     Each secret is identified with `ALL_CAPITAL_LETTER_NAMES`.
 
@@ -48,8 +48,10 @@ You need to save your information digitally, so you can copy and paste. The info
     1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
         * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements){: target="_blank" }
-    1. Copy the Team ID from the upper right of the screen. [Record this as your `TEAMID`](#find-teamid).
-    1. Go to the [App Store Connect](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" } interface, click the "Integrations" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
+    1. The first *Apple* `Secret` is your Team ID.
+        * Copy the [Team ID](#find-teamid) from the upper right of the screen. Record this as your `TEAMID`.
+    1. The final 3 *Apple* `Secrets` come from the creation of the "`FastLane API Key`".
+        * Go to the [App Store Connect](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" } interface, click the "Integrations" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
     1. [Record three more secrets](#copy-api-key-secrets)
         * Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
         * Record the key id; this will be used for `FASTLANE_KEY_ID`.
@@ -105,6 +107,8 @@ Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. Yo
         * Avoid typing an&nbsp;<span class="loop-biggest">`8`</span>&nbsp;when it should be a&nbsp;<span class="loop-biggest">`B`</span>
 
 ### Generate `API Key`
+
+This step is used to create and save the final 3 `Secrets` you need from your *Apple Developer* account.
 
 !!! info "Paid *Apple Developer* Account is Required"
     To generate the `API Key`, you must have a paid *Apple Developer* account.
@@ -173,6 +177,9 @@ Review the graphic and then follow the directions below to save more parameters 
 
     ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
 
+!!! tip "Pro Tip: Use the same folder as your Secrets Reference File"
+    It's a good idea to keep all your important files in one place. You probably set up a a folder for your [Secrets Reference File](intro-summary.md#make-a-secrets-reference-file){: target="_blank" }. Use the same folder for your API key - be sure to label the file so you know what the key is. For example, change the name from KPMAM8y3G5.p8 to API_KEY_KPMAM8y3G5.p8.
+
 #### Do Not Confuse Your Keys
 
 !!! important "<span class="loop-big">`API Key`</span>&nbsp; vs&nbsp;<span class="loop-big">`APN Key`</span>"
@@ -184,7 +191,7 @@ Review the graphic and then follow the directions below to save more parameters 
 
     * If you are using remote commands with `Nightscout` and building with <code>*GitHub* Browser Build</code>
         * [Remote Commands Config Vars](../nightscout/remote-config.md#remote-build-config-var-requirement): make sure you have a config var of `LOOP_PUSH_SERVER_ENVIRONMENT` with a value of `production` or remote commands will not work with `Nightscout`
-    * This is true for using *<code>Nightscout</code>* directly or using *<code>Loop Caregiver</code>*
+    * This is true for using *<code>Nightscout</code>* directly or using *<code>LoopCaregiver</code>*
 
 ### Done with *Apple* Secrets
 

@@ -58,6 +58,11 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
     * [Action: Validate Secrets Errors](bb-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
 
+!!! tip "Pro Tip: Validate Secrets"
+    The Action `Validate Secrets` is run every time you do any other action. Technically, you never have to run the action by itself - you could start with `Add Identifiers`.
+    
+    It is easier for you (or your mentors) to diagnose if there is a problem with the `Secrets` you entered when it is run stand-alone. Once your secrets are good, they should remain good, so this does not need to be repeated.
+
 ## <code>Add Identifiers</code>
 
 !!! warning "Update to Version 3.4"

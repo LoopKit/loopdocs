@@ -161,10 +161,10 @@ Loop will notify when battery levels have approximately 8-10 hours of battery li
 
 Loop does not have a remote notification to other devices.  If you are a remotely monitoring parent, you will want to read [here](https://nightscout.github.io/nightscout/setup_variables/#pushover){: target="_blank" } about setting up pushover alerts using your Nightscout site if you want proactive notifications of looping related information.
 
-## Loop Follow
+## LoopFollow
 
-Many people use additional apps to assist in following a loved one or to support a loved one who needs help waking up to alarms. One of the more popular options is Loop Follow, written by a parent of a Looper. There are several features to assist in remote monitoring with a variety of options for the source of data.
+Many people use additional apps to assist in following a loved one or to support a loved one who needs help waking up to alarms. One of the more popular options is LoopFollow, written by a parent of a Looper. There are several features to assist in remote monitoring with a variety of options for the source of data.
 
 ![loop follow graphic from the README page](img/loop-follow.png)
 
-For more information, please read the [Loop Follow](https://www.loopandlearn.org/loop-follow){: target="_blank" } documentation. You can build Loop Follow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../browser/other-apps.md).
+For more information, please read the [LoopFollow](https://www.loopandlearn.org/loop-follow){: target="_blank" } documentation. You can build LoopFollow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../browser/other-apps.md).

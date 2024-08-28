@@ -49,7 +49,7 @@ The steps on these pages must be completed (in order) for you to build an app us
 1. [Build the *Loop* App](build-yml.md){: target="_blank" }
 1. [*TestFlight* Users](tf-users.md){: target="_blank" }
 
-The pages of instructions listed above give detailed steps on how to build the *Loop* app. If you are building a different app, you can follow the detailed instructions but will need to know the Fork, App Name, Identifiers and in some cases App Group. Once you build one app, subsequent apps are much easier to build.
+The pages of instructions listed above give detailed steps on how to build the *Loop* app. If you are building a different app, you can follow the detailed instructions but will need to know the Fork, App Name, Identifiers and in some cases App Group for the App you intend to build. Once you build one app, subsequent apps are much easier to build.
 
 * [Build Other Apps with Browser](other-apps.md){: target="_blank" }
 
