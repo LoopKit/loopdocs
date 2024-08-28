@@ -84,6 +84,6 @@ Consult with your health care professional regarding your diabetes management.
 
     Look under iPhone, Settings, Screen Time, Content & Privacy Restrictions, iTunes & App Store Purchases, Deleting Apps. Choose Don't Allow.
 
-    Prevent deletion of what is now a critical medical app.
+    **Prevent deletion of what is now a critical medical app.**
 
     Even if you prevent App deletion, someone can still delete the app from the Home Screen. If that happens, the icon won't show up; but the app is still on your phone. Use the search App feature to find your app and breath a sigh of relief.
