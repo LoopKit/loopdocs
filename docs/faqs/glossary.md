@@ -136,6 +136,8 @@ When Google Translate is selected:
 
 **<span translate="no">Lock your Phone</span>**&nbsp; (Lock your Phone): click the button on the side of the phone to lock it - prevent accidental touch, i.e., accidental Loop command
 
+**<span translate="no">Loop</span>**&nbsp; (Loop): With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
+
 **<span translate="no">Loop 3</span>**&nbsp; (Loop 3): Latest release with major updates
 
 **<span translate="no">Loop Cycle</span>**&nbsp; (Loop Cycle): typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
@@ -143,8 +145,6 @@ When Google Translate is selected:
 **<span translate="no">LoopCaregiver</span>**&nbsp; (LoopCaregiver): An app you can build to provide remote commands to `Loop` using `Nightscout`
 
 **<span translate="no">LoopFollow</span>**&nbsp; (LoopFollow): An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information
-
-**<span translate="no">Loop</span>**&nbsp; (Loop): With a capital L, Loop is one of several do-it-yourself artifical pancreas systems
 
 **<span translate="no">Match-Secrets</span>**&nbsp; (Match-Secrets): a private repository you must create in your github account, stores keys required to build with github Build Actions
 
