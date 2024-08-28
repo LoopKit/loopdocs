@@ -314,7 +314,7 @@ Refer to graphic below as you follow the steps to build the *Loop* app.
 
 #### What if the Build Fails
 
-If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release.
+If a new release is announced at [Current Release](../version/releases.md#current-release), look to see if there are instructions about extra steps required with the release. ([Updating from 3.2.3 to 3.4.1](#update-from-32x-to-34) requires extra steps described above.)
 
 If you are using the dev branch, the update steps are the same, but review information on this page: [Build Loop dev with Browser](build-dev-browser.md){: target="_blank" }.
 
