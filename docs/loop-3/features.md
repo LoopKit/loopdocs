@@ -44,7 +44,7 @@ Two algorithm experiments are now available in the *Loop* app (version 3.4.0 or 
         * The "switcher" patch is no longer compatible
         * The GBPA feature is intended to replace the functionality of that older customization and is controlled completely inside the *Loop* app
 
-_<span translate="no">Glucose Based Partial Application</span>_ is only used when _Automatic Bolus_ (AB) is selected for _Temp Basal Only_ _Dosing Strategy_
+_<span translate="no">Glucose Based Partial Application</span>_ is only used when _Automatic Bolus_ (AB) is selected for _Dosing Strategy_
 
 * This modification **does not affect the recommended dose**, only how quickly the recommended dose is automatically delivered
 
