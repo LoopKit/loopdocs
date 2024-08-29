@@ -5,6 +5,8 @@ The complete requirements for building the *Loop* app with a *Mac* and *Xcode* a
 * Common Requirements are the same regardless of build method
 * Additional Requirements are needed only for building with a *Mac*
 * If you prefer to use the Browser Build method, head over to [Build with Browser](../browser/bb-overview.md){: target="_blank" }
+* As long as you use the same *Apple Developer* account, the app you build is the same regardless of build method
+    * When you install the app on your phone, settings and history are preserved; pump and CGM remain attached; selected Services are maintained
 
 ### Common Requirements
 
