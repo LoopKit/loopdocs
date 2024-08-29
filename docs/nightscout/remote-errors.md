@@ -35,7 +35,7 @@ If you attempt to issue a command from *Nightscout* Careportal; after you hit su
 Error: APNs delivery failed: BadDeviceToken
 ```
 
-If you attempt to issue a command using *Loop Caregiver*; after you authenticate the command, you will see the error message listed below and shown in the screenshot.
+If you attempt to issue a command using *LoopCaregiver*; after you authenticate the command, you will see the error message listed below and shown in the screenshot.
 
 ```
 HTTP Error
@@ -62,15 +62,15 @@ The references to ‘caregiver’ below refer to the person sending the commands
 
 * The Apple clock should be set to automatic on both the Looper's phone and the caregiver’s device.
     * If the clock is incorrect, even slightly, remote commands will fail.
-* Check if One-Time Passwords (OTP) align between *Loop Caregiver* and&nbsp;_<span translate="no">Loop</span>_.
+* Check if One-Time Passwords (OTP) align between *LoopCaregiver* and&nbsp;_<span translate="no">Loop</span>_.
     * In&nbsp;_<span translate="no">Loop</span>_: Settings -> Services -> *Nightscout*
-    * In *Loop Caregiver* : Settings -> Tap on Looper's Name
+    * In *LoopCaregiver* : Settings -> Tap on Looper's Name
     * Observe the 6-digit OTP as they change
 * If the OTPs don't match, you can reset it:
     * **Warning**: If there are multiple devices (or people) sending remote commands, this procedure **resets the OTP for all**
     * _<span translate="no">Loop</span>_: Settings -> Services -> *Nightscout* -> One-Time Password -> Tap Reload button
         * The QR code is different as soon as you hit `Reload`
-    * *Loop Caregiver*: Delete the Looper's profile from *Loop Caregiver* and add the Looper again by scanning their new QR code
+    * *LoopCaregiver*: Delete the Looper's profile from *LoopCaregiver* and add the Looper again by scanning their new QR code
     * Authenticators for every device used to send remote commands must be updated
         * Delete the OTP configuration
         * Add the new QR code
@@ -81,9 +81,9 @@ Apple push notifications may not always reach your app due to various settings o
 
 * The push notification banner never appears on the Looper’s device.
 * The push notification banner appears, but nothing happens in&nbsp;_<span translate="no">Loop</span>_&nbsp;(no error or success message afterward).
-* An error message in *Nightscout* or *Loop Caregiver* indicates the Password (OTP) is expired.
+* An error message in *Nightscout* or *LoopCaregiver* indicates the Password (OTP) is expired.
 
-While&nbsp;_<span translate="no">Loop</span>_&nbsp;cannot control the timely delivery of push notifications, there are several steps you can take to mitigate these issues. Note that rebuilding&nbsp;_<span translate="no">Loop</span>_&nbsp;or *Loop Caregiver* generally will not resolve the problem.
+While&nbsp;_<span translate="no">Loop</span>_&nbsp;cannot control the timely delivery of push notifications, there are several steps you can take to mitigate these issues. Note that rebuilding&nbsp;_<span translate="no">Loop</span>_&nbsp;or *LoopCaregiver* generally will not resolve the problem.
 
 Check these items on the Looper’s phone, not the caregiver's.
 
@@ -118,11 +118,11 @@ Check these items on the Looper’s phone, not the caregiver's.
 
 ## How to Ask for Help
 
-This is helpful information to share when requested by helpers. If you are not using *Loop Caregiver*, review the response seen on the *Nightscout* site.
+This is helpful information to share when requested by helpers. If you are not using *LoopCaregiver*, review the response seen on the *Nightscout* site.
 
 1. Activate an override from within&nbsp;_<span translate="no">Loop</span>_. Does *Nightscout* show the active override?
 1. Activate an override from *Nightscout*. Does it change the active override in&nbsp;_<span translate="no">Loop</span>_?
-1. Do errors show in *Loop Caregiver* or *Nightscout* Careportal when you send a remote command?
+1. Do errors show in *LoopCaregiver* or *Nightscout* Careportal when you send a remote command?
     * In both *Nightscout* and *Caregiver*, you can tap on an error to read specific error details.
     * Share screenshots of errors
 1. What&nbsp;_<span translate="no">Loop</span>_&nbsp;version are you using? Released (main) or development (dev)? Approximately when did you update last?

@@ -43,7 +43,7 @@ Take some time to familiarize yourself with these data options and choose your p
     * For those who assist someone who is Looping, *Nightscout* enables the caregiver to provide remote commands to the Looper's phone
         * `Loop 2` allows overrides to be enabled or disabled remotely
         * `Loop 3` allows remote commands for carbs, bolus, or overrides
-        * The [*Loop Caregiver*](../nightscout/loop-caregiver.md) app is under development but already has sufficient capabilities to be useful for caregivers to monitor and provide remote commands to their Looper's phone
+        * The [*LoopCaregiver*](../nightscout/loop-caregiver.md) app is under development but already has sufficient capabilities to be useful for caregivers to monitor and provide remote commands to their Looper's phone
 
 *Nightscout* options include free or nominal cost sites you build yourself or there are several *Nightscout* as a Service vendors who provide turn-key sites for a monthly fee. Links to the options are found in the [*Nightscout*: Documentation](https://nightscout.github.io/){: target="_blank" }.
 

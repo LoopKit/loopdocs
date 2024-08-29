@@ -1,11 +1,19 @@
 ## Prepare the App
 
-After creating the identifiers, you will need to modify to make sure the correct App Group is associated with each identifier (there will be instructions) and you need to prepare the App - one of those identifiers just created is used as the `Bundle ID` for building your app. This can be a little confusing and a lot of pages over at Apple look the same. Make sure you follow the links given for each section.
+After creating the identifiers, you will need to
 
-* App Group: associates different identifiers so the app works correctly - you will do this step under your Apple Developer ID account.
-* App: associates a particular identiers as the main Loop code - you will do this step under the App Connect site which is associated with your developer ID but is a different URL.
+1. [Configure](#configure-identifiers-for-loop){: target="_blank" } them to associate the correct App Group with specific identifiers 
+2. [Create](#create-loop-app-in-app-store-connect){: target="_blank" } the *Loop* App.
 
 ## Configure Identifiers for Loop
+
+???+ tip "Background Information (Click to open/close)"
+    * One of the identifiers just created is used as the `Bundle ID` for building your app
+        * This can be a little confusing and a lot of pages over at Apple look the same
+        * Make sure you follow the links given for each section.
+    * Terms that may help:
+        * App Group: associates different identifiers so the app works correctly - you will do this step under your Apple Developer ID account.
+        * App: associates a particular identier as the main Loop code - you will do this step under the App Connect site which is associated with your developer ID but is a different URL.
 
 > This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.
 
@@ -65,11 +73,6 @@ First, review the Identifiers and then [Add `App Group` to Identifiers](#add-app
 
 ### Identifiers for the *Loop* app
 
-!!! note "Identifier change after version 3.2.x"
-    One of the identifier names changed when transitioning from version 3.2.3.
-    
-    This is indicated in the Table of identifiers with **v3.2** or **v3.4**.
-
 [<span class="loop-big">:material-skip-forward:</span>](#previous-xcode-builders) If you ever built the *Loop* app using *Mac*, skip ahead to [Previous Xcode Builders](#previous-xcode-builders).
 
 #### New Builders
@@ -111,7 +114,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 | `Loop Widget Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 | `WatchApp` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
-| **v3.2** `Small Status Widget` | XC Identifier | `com.TEAMID.loopkit.Loop.SmallStatusWidget`<br>No longer used, harmless to leave or to delete |
+| **v3.2** `Small Status Widget` | XC Identifier | `com.TEAMID.loopkit.Loop.SmallStatusWidget`<br>No longer used, harmless to leave or to delete<br>Replaced with `Loop Widget Extension` |
 
 ### Add `App Group` to Identifiers
 
@@ -125,7 +128,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
         * `Loop`
         * `Loop Intent Extension`
         * `Loop Status Extension`
-        * `Small Status Widget` (**v3.2**) / `Loop Widget Extension` (**v3.4** or newer)
+        * `Loop Widget Extension`
     1. Click on the identifier's name.
     1. In the `App Services` column, scroll down to the `App Groups` row
         * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
@@ -133,7 +136,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
         * If the word `Configure` shows up, tap on it
             * This opens the `App Group Assignment` screen
             * Check the box by `Loop` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopGroup` and then `Continue` and `Save`
-    1. Remember to do this for each of the identifiers above.
+    1. Remember to do this for each of the 4 identifiers listed in item 2 above.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 

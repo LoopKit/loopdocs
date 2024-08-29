@@ -10,7 +10,7 @@ Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to
 * [Remote Configuration](../nightscout/remote-config.md)
 * [Remote Commands](../nightscout/remote-commands.md)
 * [Remote Errors](../nightscout/remote-errors.md)
-* [<span translate="no">Loop Caregiver</span> App](../nightscout/loop-caregiver.md)
+* [<span translate="no">LoopCaregiver</span> App](../nightscout/loop-caregiver.md)
 
 !!! warning "WARNING"
 

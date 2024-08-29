@@ -7,8 +7,8 @@
 !!! abstract "Summary"
     You will:
 
-    * Run the Build Select Script to download Loop code
-    * Prepare to build the Loop app
+    * Run the [Build Select Script](#build-select-script) to download Loop code
+    * Follow the step-by-step instructions in the script
     * Press the Xcode Build Button to build Loop
     * Watch in awe as you build your very own Loop app
 
@@ -316,7 +316,7 @@ Refer to the graphic below. Your intial Xcode screen should be similar.
 
 ### Start Build
 
-If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the [Build Error](build-errors.md) page
+If there is a red x in the dashed-blue rectange region on your Xcode screen you need to click over to the [Build Error](build-errors.md) page.
 
 #### First Time
 
@@ -324,6 +324,16 @@ The first time you build, there will be steps that will not be required for subs
 
 #### All Builds
 
+!!! tip "Be Patient"
+    You should see messages on the Xcode screen (upper right) after you start the build - wait for the app to open on your phone and display the main screen before unplugging your phone.
+
+    1. Building
+    2. Installing
+    3. Running
+        * Wait for app to open on your phone
+    
+    With iOS 17, it takes longer for the app to open on your phone after you see the "Running" message than with earlier iOS versions. Wait for it.
+ 
 Refer to the GIF below:
 
 * Frame 1: Packages are downloaded

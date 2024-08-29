@@ -19,7 +19,7 @@ The&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;website is organized as fol
 * [Version](../version/overview-version.md): Information about&nbsp;<span translate="no">Loop</span>&nbsp;versions, code customization and development
 * [<span translate="no">Nightscout</span>](../nightscout/overview.md): <span translate="no">Loop</span>-specific&nbsp;<span translate="no">Nightscout</span>&nbsp;details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/){: target="_blank" } is an open-source cloud application used by people with diabetes and their caregivers
     * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a&nbsp;<span translate="no">Loop</span>&nbsp;app using&nbsp;<span translate="no">Nightscout</span>&nbsp;and Apple Push Notifications
-    * [Loop Caregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
+    * [LoopCaregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
 * [Translation](../translate.md): Links to Google Translate provided as a convenience, no guarantees about the quality of the translation
 
@@ -43,6 +43,13 @@ Every tooltip definition is also found in the [Glossary](../faqs/glossary.md) - 
 ## Building&nbsp;<span translate="no">Loop</span>
 
 The process for building the&nbsp;<span translate="no">Loop</span>&nbsp;app is divided into short segments (sections or pages) in the Build tabs of&nbsp;<span translate="no">LoopDocs</span>.
+
+* [Build with Browser](../browser/bb-overview.md)
+    * Build with a browser on any computer or tablet
+    * App is installed on the iPhone using *TestFlight*
+* [Build with *Mac*](../build/overview.md)
+    * App is built on a *Mac* with *Xcode* connected to the iPhone
+    * The operating system on the *Mac* and the version of *Xcode* must be kept up-to-date
 
 !!! warning "Best Practice: Learn to Build"
     You are strongly encouraged to build&nbsp;<span translate="no">Loop</span>&nbsp;for yourself.

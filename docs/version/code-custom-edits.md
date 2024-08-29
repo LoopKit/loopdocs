@@ -387,7 +387,6 @@ This key phrase will indicate three different files in the same folder as shown 
 An expiration notification feature has been added to Loop. You get a notification when you open the Loop app to alert you that the expiration is approaching.
 
 * Read [Loop App Expiration Notification](../operation/features/notifications.md#loop-app-expiration-notification) to see the expiration reminder
-* Read [Loop App Expiration Date](../operation/features/notifications.md#loop-app-expiration-date) if you have an older version of Loop
 
 If you prefer a different notification time and frequency, there are two lines you can modify:
 

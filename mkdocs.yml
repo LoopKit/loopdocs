@@ -234,7 +234,7 @@ nav:
     - 'Remote Configuration': 'nightscout/remote-config.md'
     - 'Remote Commands': 'nightscout/remote-commands.md'
     - 'Remote Errors': 'nightscout/remote-errors.md'
-    - '<span translate="no">Loop Caregiver<span>': 'nightscout/loop-caregiver.md'
+    - '<span translate="no">LoopCaregiver<span>': 'nightscout/loop-caregiver.md'
 - FAQs:
     - 'FAQs Overview': 'faqs/overview-faqs.md'
     - 'Safety Tips': 'faqs/safety-faqs.md'

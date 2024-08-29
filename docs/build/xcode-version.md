@@ -31,7 +31,7 @@ Which version of Xcode you install on your computer depends on the iOS version y
 
 Because of the complexity of these dependencies, **please read this entire page.**
 
-Or - look into building with [GitHub Actions](../browser/bb-overview.md) - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
+Or - look into [Build with Browser](../browser/bb-overview.md){: target="_blank" } - no Mac computer required, no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required).
 
 ## Which version of Xcode do I need?
 
@@ -50,7 +50,7 @@ Have you turned off automatic updates on your iOS device?
 
 !!! info "Loop and iOS Updates"
 
-    **Please Read**: [Turn Off Automatic Updates](phone.md#turn-off-automatic-updates)
+    **Please Read**: [Turn Off Automatic Updates](phone.md#turn-off-automatic-updates){: target="_blank" }
 
 Before manually accepting an iOS update, be sure you have compatible versions of Xcode and MacOS.  
 
@@ -77,21 +77,19 @@ After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it i
 
 ### Compatible Versions#
 
-The current development version and the next release of&nbsp;_<span translate="no">Loop</span>_&nbsp;will require Xcode version 15 regardless of the iOS on the phone. This requires macOS 13.5 or higher. As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
+The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xcode version 15 or higher regardless of the iOS on the phone. This requires macOS 13.5 or higher. If your phone is iOS 17.4 or newer, you must have macOS 14.0 or higher.  As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
 
-When this page was last updated, macOS 14.0 and Xcode 15.0 were tested to successfully build the app for phones with iOS 15 through iOS 17.0.2.
+When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 17.6.1.
 
-The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.2.3</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
+The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.4.1</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
 
-Find your phone iOS in the table below. If your iOS is not listed, e.g., 16.6, choose the first row that is less than your iOS.
+Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
 
 | iOS Version | minimum Xcode | minimum macOS | 
 |:---:|:---:|:---:|
-| 17.0 | 15.0 | 13.5 |
-| 16.4 | 14.3 | 13.0 |
-| 16.2 | 14.2 | 12.5 |
-| 15.1 | 14.1 | 12.5 |
-
+| 17.5 | 15.4 | 14.0 |
+| 17.4 | 15.3 | 14.0 |
+| 15.1 to<br>17.0 | 15.0 | 13.5 |
 
 ### Wikipedia Chart for Apple Versions
 
@@ -118,7 +116,7 @@ This is for trying to select an iOS 17 phone when building with Xcode 14:
 Could not locate device support files
 ```
 
-This is for building development code with Xcode 14 instead of Xcode 15:
+This is for building code with Xcode 14 instead of Xcode 15:
 
 ```
 Loop Widget errors like:

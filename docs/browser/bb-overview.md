@@ -2,6 +2,7 @@
 
 * <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
 * The app is then installed by you on your phone using the *TestFlight* app
+* If you prefer to use *Xcode* on your *Mac*, head over to [Build with *Mac*](../build/overview.md){: target="_blank" }
 
 ## Requirements
 
@@ -23,17 +24,21 @@ To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, y
 
 ## Instructions to Build with a Browser
 
+### The Short Version
+
+Complete instructions are found at this link for those comfortable with using *GitHub* and navigating the *Apple Developer* and *Apple App Connect* pages.
+
+* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
+
 ### How-to Video to Build with a Browser
 
-In addition to the pages linked in [Configure to use Browser](#configure-to-use-browser), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
+In addition to the pages linked below in [Configure to use Browser](#configure-to-use-browser), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
 
 * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
 
-Click in the comments for a full index of topics.  If you have issues with a step, use the index to  advance to the relevant part of the video. Subtitles are  in English. You can choose a different language but the automatic translation feature may provide translations that are not completely accurate.
-
 ### Configure to use Browser
 
-There is a lot of information in the introduction and summary page. Please don't skip that. it should be read before you begin. The steps on these pages must be completed for you to build an app using a browser:
+The steps on these pages must be completed (in order) for you to build an app using a browser:
 
 1. [Introduction and Summary](intro-summary.md){: target="_blank" }
 1. [Collect Secrets](secrets.md){: target="_blank" }
@@ -43,6 +48,10 @@ There is a lot of information in the introduction and summary page. Please don't
 1. [Create Certificates](certs.md){: target="_blank" }
 1. [Build the *Loop* App](build-yml.md){: target="_blank" }
 1. [*TestFlight* Users](tf-users.md){: target="_blank" }
+
+The pages of instructions listed above give detailed steps on how to build the *Loop* app. If you are building a different app, you can follow the detailed instructions but will need to know the Fork, App Name, Identifiers and in some cases App Group for the App you intend to build. Once you build one app, subsequent apps are much easier to build.
+
+* [Build Other Apps with Browser](other-apps.md){: target="_blank" }
 
 ## Install on Phone
 

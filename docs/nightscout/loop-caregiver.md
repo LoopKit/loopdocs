@@ -1,13 +1,13 @@
-## The *Loop Caregiver* App  ![icon for *Loop Caregiver* app](img/lcg-icon.jpg){width="50"}
+## The *LoopCaregiver* App  ![icon for *LoopCaregiver* app](img/lcg-icon.jpg){width="50"}
 
-The *Loop Caregiver* app is under development to make remote commands easier to implement and monitor.
+The *LoopCaregiver* app is under development to make remote commands easier to implement and monitor.
 
 ### Minimum Requirements:
 
 * _<span translate="no">Loop</span>_&nbsp;version 3.2.0 or newer
     * version 3.0 works but is not recommended for other reasons
-    * version 3.3 and higher offers improved feedback to the *Loop Caregiver* user
-* iOS 16 or newer for *Loop Caregiver* phone
+    * version 3.3 and higher offers improved feedback to the *LoopCaregiver* user
+* iOS 16 or newer for *LoopCaregiver* phone
 * *Nightscout* version 14.2.6
 
 ### Prerequisites:
@@ -28,13 +28,13 @@ The *Loop Caregiver* app is under development to make remote commands easier to 
     * Please take the time to update your *Nightscout* site to `master`
     * *Nightscout* 14.2.6 was released 30-Sep-2022 as `Classic Liquorice`
 
-If you use *Loop Caregiver*, please join [*Loop Caregiver* App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App){: target="_blank" } *Zulipchat* stream.
+If you use *LoopCaregiver*, please join [*LoopCaregiver* App](https://loop.zulipchat.com/#narrow/stream/358458-Loop-Caregiver-App){: target="_blank" } *Zulipchat* stream.
 
 **As with all development code, monitor *Zulipchat* for announcements, report any problems you experience, be prepared to build frequently, and pay attention.**
 
-## Build the *Loop Caregiver* App
+## Build the *LoopCaregiver* App
 
-You can build the *Loop Caregiver* app using the [Build with Browser](#build-with-browser) method or the [Build with *Mac*](#build-with-mac) method.
+You can build the *LoopCaregiver* app using the [Build with Browser](#build-with-browser) method or the [Build with *Mac*](#build-with-mac) method.
 
 ###  Build with Browser
 
@@ -42,7 +42,7 @@ The Build with Browser method is documented on the [Build Other Apps with Browse
 
 ### Build with *Mac*
 
-A build script is available to assist in building *Loop Caregiver*. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
+A build script is available to assist in building *LoopCaregiver*. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
 
 - Open a terminal window. 
 - Spot the line below that starts with `/bin/bash`
@@ -66,17 +66,17 @@ A build script is available to assist in building *Loop Caregiver*. This should 
 !!! warning "Read Carefully"
     The output you see in the Terminal may look very similar to when you build the *Loop* app from a script.
     
-    It is pulling down a clone from a different location (`LoopKit/LoopCaregiver`). It uses some modules from `Loop`. The target and scheme are automatically selected for `Loop Caregiver`  and if you follow directions for a paid Developer account, the signing is automatic.
+    It is pulling down a clone from a different location (`LoopKit/LoopCaregiver`). It uses some modules from `Loop`. The target and scheme are automatically selected for `LoopCaregiver`  and if you follow directions for a paid Developer account, the signing is automatic.
 
-## Use the *Loop Caregiver* App
+## Use the *LoopCaregiver* App
 
-Some limited directions for using the *Loop Caregiver* app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of &nbsp;_<span translate="no">Loop</span>_.
+Some limited directions for using the *LoopCaregiver* app are provided - please also read the *Zulipchat* stream to stay up-to-date with improvements - especially if you are using a development branch of &nbsp;_<span translate="no">Loop</span>_.
 
-### Add Looper to the *Loop Caregiver* App
+### Add Looper to the *LoopCaregiver* App
 
-You must add a Looper to continue with the *Loop Caregiver* app as shown in the graphic below.
+You must add a Looper to continue with the *LoopCaregiver* app as shown in the graphic below.
 
-![add Looper to Loop Caregiver](img/lcg-add-looper.png){width="300"}
+![add Looper to LoopCaregiver](img/lcg-add-looper.png){width="300"}
 {align="center"}
 
 * On the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone:
@@ -85,21 +85,21 @@ You must add a Looper to continue with the *Loop Caregiver* app as shown in the 
     !!! tip "Pro-tip"
         Take a screenshot of the QR code and store it on your computer.
         
-        You can then add the QR code to *Loop Caregiver*  without bothering your Looper.
+        You can then add the QR code to *LoopCaregiver*  without bothering your Looper.
 
         * Keep the screenshot secure
         * Do not share the QR screenshot when asking for help
 
-* On the *Loop Caregiver* phone:
-    * Tap on *Loop Caregiver* -> `Settings`
+* On the *LoopCaregiver* phone:
+    * Tap on *LoopCaregiver* -> `Settings`
     * Enter the name of the Looper, the *Nightscout* URL (use &nbsp;<span translate="no"> http**s**://</span>&nbsp;) and `API_SECRET`
     * Touch the QR code row - this opens the camera - point the camera at the QR code from Looper's phone
 
-You can add additional more people under settings. (**Loop Caregiver* * can monitor more than one Looper).
+You can add additional more people under settings. (**LoopCaregiver* * can monitor more than one Looper).
 
-### Main Screen of the *Loop Caregiver* App
+### Main Screen of the *LoopCaregiver* App
 
-* *Loop Caregiver* uses a lot of features from&nbsp;_<span translate="no">Loop</span>_&nbsp;with some Nightscout-like features in the Timeline.
+* *LoopCaregiver* uses a lot of features from&nbsp;_<span translate="no">Loop</span>_&nbsp;with some Nightscout-like features in the Timeline.
 
 The Timeline:
 
@@ -108,22 +108,22 @@ The Timeline:
 * Horizontal display can be adjusted using the dropdown hours selector and scrolling left/right.
 * A double tap on the Timeline alternates between 1 and 6 hour display
 
-![main screen of the *Loop Caregiver* app](img/lcg-main.jpg){width="300"}
+![main screen of the *LoopCaregiver* app](img/lcg-main.jpg){width="300"}
 {align="center"}
 
 
-You can also use the *Loop Caregiver* -> `Settings` screen to modify:
+You can also use the *LoopCaregiver* -> `Settings` screen to modify:
 
 * Units used for glucose display: `mg/dL` or `mmol/L`
 * Include the&nbsp;_<span translate="no">Loop</span>_&nbsp;forecast display on the Timeline chart as well as the Glucose chart of the main display (`Show Prediction` is turned off in the graphic above)
 
-### Issue Remote Commands with the *Loop Caregiver* App
+### Issue Remote Commands with the *LoopCaregiver* App
 
 You issue override, carb, and bolus commands using a toolbar similar to the one seen on&nbsp;_<span translate="no">Loop</span>_. In the example graphic above, the carb and bolus entries visible were issued remotely.
 
-Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the *Loop Caregiver* &#39;s phone.
+Carb and bolus commands each require authorization before they are accepted. The authorization (*FaceID*, Fingerprint, or passcode) matches that required to unlock the *LoopCaregiver* &#39;s phone.
 
-The use of *Loop Caregiver* makes remote commands much easier and more reliable.
+The use of *LoopCaregiver* makes remote commands much easier and more reliable.
 
 Go back and review the details about [Remote Commands](remote-commands.md) before using the app.
 

@@ -31,7 +31,7 @@ Some people have their macOS privacy settings configured so that *Xcode* does no
 
 Yes, watchOS simulators are required to build Loop. If Xcode asks if you want to download them - say yes. It's slow but you cannot build Loop without the simulator.
 
-*   Tap on [New with Xcode 14](../build/build-errors.md#new-with-xcode-14) for more information
+*   Refer to [New with Xcode 14](../build/build-errors.md#new-with-xcode-14){: target="_blank" } for more information
 
 ## Command Line Tools
 

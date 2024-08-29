@@ -4,8 +4,8 @@ Once Loop 3 was released with the ability to build using a browser, a lot of oth
 
 **Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.**
 
-* _<span translate="no">Loop Caregiver</span>_
-* _<span translate="no">Loop Follow</span>_
+* _<span translate="no">LoopCaregiver</span>_
+* _<span translate="no">LoopFollow</span>_
 
 If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instructions for that app should be located in that file.
 
@@ -13,19 +13,7 @@ The same technique is used and the same six <code>Secrets</code> are applied to 
 
 ### Updating / Rebuilding Other Apps
 
-If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name from the [Table of App Repositories](#table-of-app-repositories) for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
-
-### Update to Build with Browser for the *Loop Caregiver* App
-
-!!! warning "The *Loop Caregiver* App Requires an `App Group`"
-    As of 2023 December 8, the updated version of the *Loop Caregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`.
-    
-    * To update the *Loop Caregiver* App you need to [Update the `Repository`](#update-the-repository)
-    * Then (one time only):
-        * Run the Action to [Add Identifiers](identifiers.md#add-identifiers)
-        * Follow the instructions in [Add `App Group` to `LoopCaregiver`](#add-app-group-to-loopcaregiver)
-        * Continue with [Create Certificates](#create-certificates)
-        * Finish with [Build App](#build-app)
+If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
 
 ### Optional Build Method
 
@@ -42,65 +30,52 @@ If you are coming to this page to update one of the other apps, follow the [How 
 
     For more information, see [Use a *GitHub* Organization Account](#use-a-github-organization-account).
 
-### Multiple Copies of `Loop Follow`
+### Multiple Copies of `LoopFollow`
 
-For the convenience of caregivers who use `Loop Follow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script){: target="_blank" }).
+For the convenience of caregivers who use `LoopFollow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script){: target="_blank" }).
 
-* Build up to three instances of `Loop Follow`
+* Build up to three instances of `LoopFollow`
 * Customize the name of the app that appears on your phone
-* Display the custom name in the main `Loop Follow` screen
+* Display the custom name in the main `LoopFollow` screen
 
 ### Prerequisites
 
-* If you have already built using the Browser Build method, it is easy to build other apps which use the same method. Skip ahead to [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets)
+* If you have already built using the Browser Build method, it is easy to build other apps which use the same method. Skip ahead to [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets).
 
-    * If you decide you want to try the *GitHub* free organization method, review the instructions and then adjust as you work through the step-by-step instructions on this page which show graphics and instructions for using a personal *GitHub* account
+* If this is the first repository you have built with the Browser Build method
 
-* If this is the first repository you have built with the Browser Build method, you must first complete the initial steps found on [Configure to Use Browser](../browser/intro-summary.md). When you reach the point where
-    * You have created your Match-Secrets repository
-    * You are told to [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../browser/prepare-fork.md#fork-loopworkspace)
-        * Review the directions but don't do it
-        * Return here and check the table below
-        * Use that table to find the link of the repository you will fork
-
-!!! important "Use the <code>repository</code> for the application you are building"
-    Many graphics on this page show&nbsp;<span translate="no">LoopWorkspace</span>, just remember to use the <code>repository</code> for the app you want to build, that is either&nbsp;_<span translate="no">Loop Caregiver</span>_&nbsp;or &nbsp;_<span translate="no">Loop Follow</span>_.
+    * Begin reading at [Configure to Use Browser: Introduction and Summary](intro-summary.md){: target="_blank" }
+    * Follow all the instructions on the [Collect Secrets](secrets.md){: target="_blank" } page
+    * After all your secrets are collected, continue on this page with [<span translate="no">Fork and Add Secrets</span>](#fork-and-add-secrets).
 
 ## <span translate="no">Fork and Add Secrets</span>
+    
+!!! important "Use the <code>repository</code> for the application you are building"
+    Many graphics show&nbsp;<span translate="no">LoopWorkspace</span>. You need to replace that with the <code>repository</code> for the app you want to build. You may need to adjust the App Name, the Shared App Group and look for different Identifiers.
+    
+    Instructions for&nbsp;_<span translate="no">LoopCaregiver</span>_&nbsp;or &nbsp;_<span translate="no">LoopFollow</span>_ are found on this page.
+    
+    Other apps such as xDrip4iOS and Trio can also be built with this method. Refer to the repository associated with those other apps, examine the fastlane folder and open the testflight.md file in your browser to get specific details for building that app.
 
-* You will return to this page after reviewing (but not doing) this step [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](../browser/prepare-fork.md#fork-loopworkspace)
-    * Use the same method as that section, but <span>`fork` the `repository` for the app</span> you plan to build
-    * _<span translate="no">Loop Caregiver</span>_, expect the `dev branch`
-    * _<span translate="no">Loop Follow</span>_, expect the `main branch`
+You will return to this page after reviewing (but not doing) this step [Configure to Use Browser: <span translate="no">Fork LoopWorkspace</span>](prepare-fork.md#fork-loopworkspace)
+
+* Use the same method as that section, but <span>`fork` the `repository` for the app</span> you plan to build
+* _<span translate="no">LoopCaregiver</span>_, expect the `dev branch`
+* _<span translate="no">LoopFollow</span>_, expect the `main branch`
 
 ### Table of App `Repositories`
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| <span translate="no">Loop Caregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver){: target="_blank" } | [LoopDocs: <span translate="no">Loop Caregiver</span>](../nightscout/loop-caregiver.md) |
-| <span translate="no">Loop Follow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow){: target="_blank" } | [<span translate="no">Loop Follow</span>](https://www.loopandlearn.org/loop-follow){: target="_blank" }|
+| <span translate="no">LoopCaregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver){: target="_blank" } | [LoopDocs: <span translate="no">LoopCaregiver</span>](../nightscout/loop-caregiver.md) |
+| <span translate="no">LoopFollow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow){: target="_blank" } | [<span translate="no">LoopFollow</span>](https://www.loopandlearn.org/loop-follow){: target="_blank" }|
 
 The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that `LoopCaregiver` can follow multiple Loopers; you select the person inside the app.
 
 | Special Case | Fork from this Address |
 |---|---|
-| <span translate="no">Loop Follow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second){: target="_blank" } |
-| <span translate="no">Loop Follow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third){: target="_blank" } |
-
-## Update the `Repository`
-
-If you just created the `fork`, you can skip this section.
-
-If you are returning to this page to update an app, please follow these steps. Each step has a link to instructions on the Update `LoopWorkspace` page. Follow the `Update Fork` directions for the `repository` of the app you are updating:
-
-1. [Accept Agreements](bb-update.md#accept-agreements) for the *Apple* Developer account
-2. [Update `Fork`](bb-update.md#update-fork)
-
-Then return to this page.
-
-Normally you skip ahead to [Build App](#build-app) after an update.
-
-If you are updating the *LoopCaregiver* app after the 2023 December 8 update, you need to go to [Add Identifiers](identifiers.md#add-identifiers) after updating the `fork`.
+| <span translate="no">LoopFollow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second){: target="_blank" } |
+| <span translate="no">LoopFollow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third){: target="_blank" } |
 
 ## Configure <code>Secrets</code> for this App
 
@@ -115,17 +90,10 @@ After successfully creating your fork of the repository for this app:
 * If you have already built Loop using the Browser Build method, skip ahead to [Add Existing <code>Secrets</code>](#add-existing-secrets)
 
 * If this is the first repository you have built with *GitHub*
-    * You should follow the detailed steps at [Configure to Use Browser: Configure <code>Secrets</code>](../browser/prepare-fork.md#configure-secrets), except you will apply the <code>Secrets</code> to the repository for the app you are planning to build
+    * You should follow the detailed steps at [Configure to Use Browser: Configure <code>Secrets</code>](../browser/prepare-fork.md#configure-secrets){: target="_blank" }, except you will apply the <code>Secrets</code> to the repository for the app you are planning to build
     * Once your 6 secrets have been added, return to this page and skip ahead to [Validate <code>Secrets</code>](#validate-secrets) on this page.
 
 ### Add Existing <code>Secrets</code>
-
-!!! tip "MATCH_PASSWORD"
-    An early version of *GitHub* First-Time had incorrect information about the need to save MATCH_PASSWORD.
-
-    If you did not save your MATCH_PASSWORD in your file with all your <code>Secrets</code>, you will need to delete your Match-Secrets repository, create a new one and then add all your <code>Secrets</code> into all you repositories again and run all the Actions again.
-
-    Instructions are found at [Reset Match-Secrets](bb-errors.md#reset-match-secrets).
 
 Open the text file in which you maintain a copy of your 6 <code>Secrets</code> so you can copy each value into the <code>Secrets</code> for this repository.
 
@@ -161,7 +129,7 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six <code>Secrets</code> and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your  *Loop Follow*  or  *Loop Caregiver*repository and enable workflows if needed
+1. Click on the "Actions" tab of your  *LoopFollow*  or  *LoopCaregiver*repository and enable workflows if needed
 1. On the left side, click on 1. <code>Validate Secrets</code>
 1. On the right side, click `Run Workflow` to show a dropdown menu
     * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
@@ -214,18 +182,18 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
-| <span translate="no">Loop Caregiver</span> | <span translate="no">LoopCaregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
-| <span translate="no">Loop Follow</span> | <span translate="no">LoopFollow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
+| <span translate="no">LoopCaregiver</span> | <span translate="no">LoopCaregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
+| <span translate="no">LoopFollow</span> | <span translate="no">LoopFollow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
 
-> If you build from a second or third `repository` for `Loop Follow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
+> If you build from a second or third `repository` for `LoopFollow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
 
-The *Loop Caregiver* app requires updates to the `Identifiers` after they are generated.
+The *LoopCaregiver* app requires updates to the `Identifiers` after they are generated.
 
-The *Loop Follow* app does not require this extra step. You can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
+The *LoopFollow* app does not require this extra step. You can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
 
 ## Add `App Group` to `LoopCaregiver`
 
-As of 2023 December 8, the *Loop Caregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`. Follow these steps one time to be able to build the *Loop Caregiver* app after this update.
+As of 2023 December 8, the *LoopCaregiver* app requires the addition of an `App Group` to an expanded list of `Identifiers`. Follow these steps one time to be able to build the *LoopCaregiver* app after this update.
 
 ### Check if `App Group` Exists
 
@@ -234,7 +202,7 @@ Open this link to view your `applicationGroup` `Identifiers`: [`App Group Identi
 * No action is required if there is already an identifier with the `NAME` of `LoopCaregiver App Group` and the `IDENTIFIER` contains your `TEAMID` in this format: `group.com.TEAMID.loopkit.LoopCaregiverGroup`
 * In that case, you can skip ahead to [Add `App Group` to `Identifiers`](#add-app-group-to-identifiers)
 
-### Create `App Group` for the *Loop Caregiver* App
+### Create `App Group` for the *LoopCaregiver* App
 
 Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
 
@@ -320,10 +288,10 @@ This requires you to provide some information. Examine the table below for the b
 
 | App Name | Bundle ID |
 | --- | --- |
-| <span translate="no">Loop Caregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
-| <span translate="no">Loop Follow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
+| <span translate="no">LoopCaregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
+| <span translate="no">LoopFollow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
 
-> If you build from a second or third `repository` for `Loop Follow`, the Bundle ID will have `.Second` or `.Third` at the end.
+> If you build from a second or third `repository` for `LoopFollow`, the Bundle ID will have `.Second` or `.Third` at the end.
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed. 
 
@@ -334,7 +302,7 @@ This requires you to provide some information. Examine the table below for the b
     {align="center"}
 
 1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [Configure to Use Browser: Find My Loop](prepare-app.md#find-my-loop), where you'll be finding App Name instead of Loop.
-    * Select "iOS". For Loop Follow you can also select "macOS" if you own a Mac with macOS 11 or later.
+    * Select "iOS". For LoopFollow you can also select "macOS" if you own a Mac with macOS 11 or later.
     * Enter a name: this will have to be unique
         * You could start with "App Name ABC" where ABC are your initials
         * If that is already taken, you can add a number, for example, "App Name ABC 123"
@@ -379,11 +347,11 @@ Refer to the graphic below for the numbered steps:
 
 The graphic below is an example from Loop, your screen will show your app and associated repository
 
-If you are building the *Loop Caregiver* app, skip ahead to [Build Action](#build-action).
+If you are building the *LoopCaregiver* app, skip ahead to [Build Action](#build-action).
 
-### Display Name Customization for `Loop Follow`
+### Display Name Customization for `LoopFollow`
 
-> If you build `Loop Follow` for one, two or three loopers, you may choose to customize your `fork` or `forks` to insert a custom display name.
+> If you build `LoopFollow` for one, two or three loopers, you may choose to customize your `fork` or `forks` to insert a custom display name.
 
 > * Find and click on the file `LoopFollowDisplayNameConfig.xcconfig`
 > * Tap the pencil icon so you can edit the file
@@ -391,7 +359,7 @@ If you are building the *Loop Caregiver* app, skip ahead to [Build Action](#buil
 > * Insert your custom name so the last line says `display_name = LF custom name`
 > * Click on commit changes and chose to commit directly into the `main` branch
 
-> Continue to build as instructed below. After you install the app on your phone, iPad or Mac via *TestFlight*, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom named `Loop Follow` app in the list of apps, but is not required.
+> Continue to build as instructed below. After you install the app on your phone, iPad or Mac via *TestFlight*, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom named `LoopFollow` app in the list of apps, but is not required.
 
 ### Build Action
 
