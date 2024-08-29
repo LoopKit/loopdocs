@@ -2994,7 +2994,7 @@
         
   
   <span class="md-ellipsis">
-    <span translate="no">Loop Caregiver<span>
+    <span translate="no">LoopCaregiver<span>
   </span>
   
 
@@ -3406,7 +3406,7 @@
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Build-time features are not available with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x.</p>
-<p>With <abbr title="Latest release with major updates">Loop 3</abbr>, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.</p>
+<p>With <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.</p>
 <p>If you use Build with Browser, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on your copy of LoopWorkspace and then <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the change.</p>
 <p>If you use the Build with <em>Mac</em> Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the <abbr title="program used to build an app">Xcode</abbr> folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.</p>
 <p>These flags are always upper case with underscore separating words for clarity, for example <code>MY_EXAMPLE_FLAG</code>. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. <abbr title="program used to build an app">Xcode</abbr> will automatically word-wrap the line for clarity. All values need to be on a single line.</p>
@@ -3486,7 +3486,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIR
 <p>You can customize chart display settings if you want. The original lines of code are shown below. You will need to read the rest of this page to figure out how to modify these to meet what you prefer. If you can't figure this out - reach out for help.</p>
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
-<li><abbr title="Latest release with major updates">Loop 3</abbr><ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3<ul>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
 <li>File: LoopConstants.swift</li>
 <li>Lines: 32 to 45</li>
@@ -3509,10 +3509,10 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIR
         HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 80)...HKQuantity(unit: .milligramsPerDeciliter, doubleValue: 240)
 </code></pre></div>
 <h3 id="enable-child-model">Enable Child Model<a class="headerlink" href="#enable-child-model" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><abbr title="Latest release with major updates">Loop 3</abbr>, by default, does not include the concept of child versus adult for rapid-acting insulin, i.e., Humalog, Novalog and Apidra.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3, by default, does not include the concept of child versus adult for rapid-acting insulin, i.e., Humalog, Novalog and Apidra.</p>
 <ul>
 <li>The child model can be enabled following the directions above, adding ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED to the LoopConfigOverride.xcconfig file and rebuilding</li>
-<li>Insulin Model is then found in the Therapy Setting section of <abbr title="Latest release with major updates">Loop 3</abbr> with Adult selected by default</li>
+<li>Insulin Model is then found in the Therapy Setting section of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3 with Adult selected by default</li>
 <li>Insulin Type continues to be associated with the pump and can be modified in the Pump Settings screen</li>
 </ul>
 

@@ -3048,7 +3048,7 @@
         
   
   <span class="md-ellipsis">
-    <span translate="no">Loop Caregiver<span>
+    <span translate="no">LoopCaregiver<span>
   </span>
   
 
@@ -3523,7 +3523,7 @@
 </ul>
 <h2 id="remote-commands-stopped-working">Remote Commands Stopped Working<a class="headerlink" href="#remote-commands-stopped-working" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is for people who were using remote commands and they suddenly stopped working.</p>
-<p>If you are using LoopCaregiver, try the remote command directly from <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> to see if they work there. If they are not working there as well, check out your account status first before attempting the fixes on the rest of this page.</p>
+<p>If you are using <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, try the remote command directly from <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> to see if they work there. If they are not working there as well, check out your account status first before attempting the fixes on the rest of this page.</p>
 <ul>
 <li>Your <em>Apple Developer</em> account must be in good standing for the push notifications to work</li>
 <li>Log in to your <a href="https://developer.apple.com/account" target="_blank"><em>Apple Developer</em> account</a> and see if there are agreements you need to accept</li>
@@ -3541,7 +3541,7 @@
 <p>If you attempt to issue a command from <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Careportal; after you hit submit and then OK, you will see the error message:</p>
 <div class="highlight"><pre><span></span><code>Error: APNs delivery failed: BadDeviceToken
 </code></pre></div>
-<p>If you attempt to issue a command using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em>; after you authenticate the command, you will see the error message listed below and shown in the screenshot.</p>
+<p>If you attempt to issue a command using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em>; after you authenticate the command, you will see the error message listed below and shown in the screenshot.</p>
 <div class="highlight"><pre><span></span><code>HTTP Error
 Status Code: 500
 body: APNs delivery failed: BadDeviceToken
@@ -3559,9 +3559,9 @@ body: APNs delivery failed: BadDeviceToken
 <li>If the clock is incorrect, even slightly, remote commands will fail.</li>
 </ul>
 </li>
-<li>Check if One-Time Passwords (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) align between <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> and&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.<ul>
+<li>Check if One-Time Passwords (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) align between <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> and&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>.<ul>
 <li>In&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>: Settings -&gt; Services -&gt; <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em></li>
-<li>In <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> : Settings -&gt; Tap on Looper's Name</li>
+<li>In <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> : Settings -&gt; Tap on Looper's Name</li>
 <li>Observe the 6-digit <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> as they change</li>
 </ul>
 </li>
@@ -3571,7 +3571,7 @@ body: APNs delivery failed: BadDeviceToken
 <li>The <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code is different as soon as you hit <code>Reload</code></li>
 </ul>
 </li>
-<li><em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em>: Delete the Looper's profile from <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> and add the Looper again by scanning their new <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code</li>
+<li><em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em>: Delete the Looper's profile from <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> and add the Looper again by scanning their new <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code</li>
 <li>Authenticators for every device used to send remote commands must be updated<ul>
 <li>Delete the <abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr> configuration</li>
 <li>Add the new <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code</li>
@@ -3585,9 +3585,9 @@ body: APNs delivery failed: BadDeviceToken
 <ul>
 <li>The push notification banner never appears on the Looper’s device.</li>
 <li>The push notification banner appears, but nothing happens in&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;(no error or success message afterward).</li>
-<li>An error message in <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> indicates the Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) is expired.</li>
+<li>An error message in <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> or <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> indicates the Password (<abbr title="one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone">OTP</abbr>) is expired.</li>
 </ul>
-<p>While&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;cannot control the timely delivery of push notifications, there are several steps you can take to mitigate these issues. Note that rebuilding&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;or <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> generally will not resolve the problem.</p>
+<p>While&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;cannot control the timely delivery of push notifications, there are several steps you can take to mitigate these issues. Note that rebuilding&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;or <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> generally will not resolve the problem.</p>
 <p>Check these items on the Looper’s phone, not the caregiver's.</p>
 <ol>
 <li>Reboot the phone.</li>
@@ -3636,11 +3636,11 @@ body: APNs delivery failed: BadDeviceToken
 </li>
 </ol>
 <h2 id="how-to-ask-for-help">How to Ask for Help<a class="headerlink" href="#how-to-ask-for-help" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This is helpful information to share when requested by helpers. If you are not using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em>, review the response seen on the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site.</p>
+<p>This is helpful information to share when requested by helpers. If you are not using <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em>, review the response seen on the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site.</p>
 <ol>
 <li>Activate an override from within&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>. Does <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> show the active override?</li>
 <li>Activate an override from <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em>. Does it change the active override in&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>?</li>
-<li>Do errors show in <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">Loop Caregiver</abbr></em> or <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Careportal when you send a remote command?<ul>
+<li>Do errors show in <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> or <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> Careportal when you send a remote command?<ul>
 <li>In both <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> and <em>Caregiver</em>, you can tap on an error to read specific error details.</li>
 <li>Share screenshots of errors</li>
 </ul>
@@ -3722,13 +3722,13 @@ body: APNs delivery failed: BadDeviceToken
         
         
           
-          <a href="../loop-caregiver/" class="md-footer__link md-footer__link--next" aria-label="Next: &lt;span translate=&#34;no&#34;&gt;Loop Caregiver&lt;span&gt;">
+          <a href="../loop-caregiver/" class="md-footer__link md-footer__link--next" aria-label="Next: &lt;span translate=&#34;no&#34;&gt;LoopCaregiver&lt;span&gt;">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                <span translate="no">Loop Caregiver<span>
+                <span translate="no">LoopCaregiver<span>
               </div>
             </div>
             <div class="md-footer__button md-icon">

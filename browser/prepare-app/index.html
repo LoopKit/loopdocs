@@ -3074,7 +3074,7 @@
         
   
   <span class="md-ellipsis">
-    <span translate="no">Loop Caregiver<span>
+    <span translate="no">LoopCaregiver<span>
   </span>
   
 
@@ -3563,12 +3563,27 @@
   <h1>Prepare App</h1>
 
 <h2 id="prepare-the-app">Prepare the App<a class="headerlink" href="#prepare-the-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>After creating the identifiers, you will need to modify to make sure the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> is associated with each identifier (there will be instructions) and you need to prepare the App - one of those identifiers just created is used as the <code>Bundle ID</code> for building your app. This can be a little confusing and a lot of pages over at Apple look the same. Make sure you follow the links given for each section.</p>
-<ul>
-<li><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>: associates different identifiers so the app works correctly - you will do this step under your Apple Developer ID account.</li>
-<li>App: associates a particular identiers as the main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code - you will do this step under the App Connect site which is associated with your developer ID but is a different <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</li>
-</ul>
+<p>After creating the identifiers, you will need to</p>
+<ol>
+<li><a href="#configure-identifiers-for-loop" target="_blank">Configure</a> them to associate the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with specific identifiers </li>
+<li><a href="#create-loop-app-in-app-store-connect" target="_blank">Create</a> the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App.</li>
+</ol>
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<details class="tip" open="open">
+<summary>Background Information (Click to open/close)</summary>
+<ul>
+<li>One of the identifiers just created is used as the <code>Bundle ID</code> for building your app<ul>
+<li>This can be a little confusing and a lot of pages over at Apple look the same</li>
+<li>Make sure you follow the links given for each section.</li>
+</ul>
+</li>
+<li>Terms that may help:<ul>
+<li><abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>: associates different identifiers so the app works correctly - you will do this step under your Apple Developer ID account.</li>
+<li>App: associates a particular identier as the main <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code - you will do this step under the App Connect site which is associated with your developer ID but is a different <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</li>
+</ul>
+</li>
+</ul>
+</details>
 <blockquote>
 <p>This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.</p>
 </blockquote>
@@ -3634,11 +3649,6 @@
 <h3 id="add-app-group">Add <code>App Group</code><a class="headerlink" href="#add-app-group" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>First, review the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and then <a href="#add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
 <h3 id="identifiers-for-the-loop-app"><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app<a class="headerlink" href="#identifiers-for-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Identifier change after version 3.2.x</p>
-<p>One of the identifier names changed when transitioning from version 3.2.3.</p>
-<p>This is indicated in the Table of identifiers with <strong>v3.2</strong> or <strong>v3.4</strong>.</p>
-</div>
 <p><a href="#previous-xcode-builders"><span class="loop-big"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> If you ever built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using <em>Mac</em>, skip ahead to <a href="#previous-xcode-builders">Previous <abbr title="program used to build an app">Xcode</abbr> Builders</a>.</p>
 <h4 id="new-builders">New Builders<a class="headerlink" href="#new-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Click this link: <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
@@ -3709,7 +3719,7 @@
 <tr>
 <td style="text-align: left;"><strong>v3.2</strong> <code>Small Status Widget</code></td>
 <td style="text-align: left;">XC Identifier</td>
-<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.SmallStatusWidget</code><br>No longer used, harmless to leave or to delete</td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.SmallStatusWidget</code><br>No longer used, harmless to leave or to delete<br>Replaced with <code>Loop Widget Extension</code></td>
 </tr>
 </tbody>
 </table>
@@ -3724,7 +3734,7 @@
 <li><code>Loop</code></li>
 <li><code>Loop Intent Extension</code></li>
 <li><code>Loop Status Extension</code></li>
-<li><code>Small Status Widget</code> (<strong>v3.2</strong>) / <code>Loop Widget Extension</code> (<strong>v3.4</strong> or newer)</li>
+<li><code>Loop Widget Extension</code></li>
 </ul>
 </li>
 <li>Click on the identifier's name.</li>
@@ -3738,7 +3748,7 @@
 </li>
 </ul>
 </li>
-<li>Remember to do this for each of the identifiers above.</li>
+<li>Remember to do this for each of the 4 identifiers listed in item 2 above.</li>
 </ol>
 <p><a href="#create-loop-app-in-app-store-connect"><span class="loop-bigger"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5v14l7-7m7-7v14h2V5m-9 0v14l7-7"/></svg></span></span></a> To skip the detailed instructions, click on <a href="#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a></p>
 </details>

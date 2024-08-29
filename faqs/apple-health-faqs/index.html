@@ -2918,7 +2918,7 @@
         
   
   <span class="md-ellipsis">
-    <span translate="no">Loop Caregiver<span>
+    <span translate="no">LoopCaregiver<span>
   </span>
   
 
@@ -3684,14 +3684,14 @@
 <p>Review the values one more time, and then delete those entries in both places. Review <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> again. If you made a mistake, you can refer to that written list and adjust appropriately.</p>
 </div>
 <h4 id="basal">Basal<a class="headerlink" href="#basal" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> keeps track of how much basal is delivered so the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is properly reported. In older versions of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, there may be occasional display glitches, but the <strong>internal</strong> accounting is correct and updates every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr>.</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> keeps track of how much basal is delivered so the <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is properly reported. In older versions of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, there may be occasional display glitches, but the <strong>internal</strong> accounting is correct and updates every <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Cycle.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Developer Notes: Scheduled Basal is Not a Pump Event</p>
 <p>Scheduled basal is not a pump event so you will not see it listed in the <abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> tab.</p>
 <p>Scheduled basal does not affect <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> when delivered as scheduled.</p>
 <p>The Insulin Delivery store keeps track of the insulin delivered via scheduled basal.</p>
 </div>
-<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> updates the amount of insulin delivered through basal (both scheduled and temporary) to Health at regular intervals - this does not happen every <abbr title="typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed">Loop Cycle</abbr> when basal rates are not changing. The updates to Health happen:</p>
+<p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> updates the amount of insulin delivered through basal (both scheduled and temporary) to Health at regular intervals - this does not happen every <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Cycle when basal rates are not changing. The updates to Health happen:</p>
 <ul>
 <li>At midnight</li>
 <li>When the scheduled basal rate changes</li>
@@ -3776,7 +3776,7 @@
 <p>With <code>Loop dev</code> (will be <code>Loop 3.4.x</code> after release), <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop" target="_blank">LibreTransmitter</a> is integrated with the <code>Loop</code> app.</p>
 <p>The frequent updates (1-minute glucose data) provided by <em>Libre</em> did cause some issues with released versions (<code>Loop 3.0</code> and <code>Loop 3.2.x</code> with customizations that use various third-party apps to read the <em>Libre</em>). These were fixed initially by modifying the third-party apps to limit how frequently they supplied glucose data.</p>
 <p>With <code>Loop dev</code> (will be <code>Loop 3.4.x</code> after release), the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app only initiates a closed-loop cycle automatically following a new glucose value if it has been more than 4.2 minutes since the last one.</p>
-<p><code>Loop 3.0</code> and <code>Loop 3.2.x</code> versions do not have that limitation on how frequently <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> responds to a new glucose reading. There is a <a href="https://www.loopandlearn.org/custom-code#loop-cycle-time" target="_blank">Customization</a> that incorporates the 4.2 minute interval check which can be applied to <abbr title="Latest release with major updates">Loop 3</abbr>.2.2.</p>
+<p><code>Loop 3.0</code> and <code>Loop 3.2.x</code> versions do not have that limitation on how frequently <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> responds to a new glucose reading. There is a <a href="https://www.loopandlearn.org/custom-code#loop-cycle-time" target="_blank">Customization</a> that incorporates the 4.2 minute interval check which can be applied to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3.2.2.</p>
 <h2 id="how-do-i-change-glucose-units">How Do I Change Glucose Units?<a class="headerlink" href="#how-do-i-change-glucose-units" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The glucose units (mg/dL or mmol/L) <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> uses match what is in <em>Apple</em> Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for <em>Dexcom</em> Share and it translates units for you - not sure about other devices.</p>
 <ul>
