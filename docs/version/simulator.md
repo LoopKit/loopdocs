@@ -62,7 +62,7 @@ When building to a real phone using a *Mac*, you must have access to a [Compatib
     * Follow the [set up the app](../loop-3/loop-3-overview.md) instructions on your phone but choose a simulated pump
     * If you have a compatible CGM on this phone, you can select that or you can use the simulated CGM or enter glucose values on the main Loop screen
 
-### What to Expect
+## What to Expect with a Simulator
 
 !!! warning "Locked Phone or App in Background"
     Loop will not work in the background without either a real CGM or a real pump to "wake" it up.
@@ -92,7 +92,7 @@ These CGM and pump options work to provide glucose readings or accept pump comma
 
     The Loop app, when open, will be quite aggressive at warning you that you have disabled Notifications, so you can reverse those directions to enable notifications when actually using the app.
 
-### Simulated Pump or CGM on Phone
+### Pump or CGM Simulator on Phone
 
 The simulators for the Pump and CGM, with version 3.3 and later, hide their detailed configuration screen. The initial view is a demonstration screen showing a typical CGM or Pump display. In order to configure the simulator controls or delete the simulator, you must tap on the Simulator Settings row. 
 
@@ -100,3 +100,11 @@ The simulators for the Pump and CGM, with version 3.3 and later, hide their deta
 {align="center"}
 
 If you do not see the Simulator Settings row, you have an older version. You can see the settings by doing a long-press (5 to 10 sec) in the top portion of the simulator screen. If you've counted to 10 and the display has not updated yet, then return to the main screen, go back to the simulator screen, and try again.
+
+### Delete the Pump or CGM Simulator on Phone
+
+To delete a pump simulator or CGM simulator from the *Loop* app on the phone, you must first tap on the Simulator Settings row, see graphic above.
+
+Then scroll down to the bottom of the screen and select `Delete Pump` or `Delete CGM`.
+
+After deleting the simulator, you can then [Add Pump](../loop-3/add-pump.md){: target="_blank" } or [Add CGM](../loop-3/add-cgm.md){: target="_blank" }.

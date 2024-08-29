@@ -21,7 +21,7 @@ Right now it is empty.
 Most features, originally in the Updates in `dev` section before the release of version 3.4, have been inserted into the appropriate part of the *LoopDocs* website (indicated by the up-right arrow after the link). A few items are still in this section.
 
 * [Support for Libre Sensors](../loop-3/add-cgm.md#libre){: target="_blank" }
-* [Simulated Pump or CGM on Phone](simulator.md#simulated-pump-or-cgm-on-phone){: target="_blank" }
+* [Pump or CGM Simulator on Phone](simulator.md#pump-or-cgm-simulator-on-phone){: target="_blank" }
 * [Algorithm Experiments](../loop-3/settings.md#algorithm-experiments){: target="_blank" }
     * [<span translate="no">Glucose Based Partial Application</span> Factor](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }
     * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
