@@ -3,6 +3,8 @@
 * <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
 * The app is then installed by you on your phone using the *TestFlight* app
 * If you prefer to use *Xcode* on your *Mac*, head over to [Build with *Mac*](../build/overview.md){: target="_blank" }
+* As long as you use the same *Apple Developer* account, the app you build is the same regardless of build method
+    * When you install the app on your phone, settings and history are preserved; pump and CGM remain attached; selected Services are maintained
 
 ## Requirements
 
