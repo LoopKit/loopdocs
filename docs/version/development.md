@@ -26,7 +26,7 @@ Most features, originally in the Updates in `dev` section before the release of 
     * [<span translate="no">Glucose Based Partial Application</span> Factor](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }
     * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
 * [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" }
-* [<span translate="no">TestFlight Expiration Warning</span>](../browser/bb-update.md#testflight-expiration-warning){: target="_blank" }
+* [<span translate="no">TestFlight Expiration Warning</span>](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }
 * [<span translate="no">GitHub Browser Build</span> Updates](#github-browser-build-updates)
 * [Miscellaneous Code Fixes](#miscellaneous-code-fixes)
 
