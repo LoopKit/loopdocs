@@ -65,21 +65,10 @@ To search using the `Key_Phrase` (see graphic above for an example):
 
 * A copy button is available when you hover your mouse in the right-hand side
 of the block below the title `Key_Phrase`;  click on it to copy the phrase into your paste buffer
-* You can paste this into the search function of the tool you are using if desired (warning, you may have to hit back-space to remove a return character from the pasted text)<br><br>
+* You can paste this into the search function of the tool you are using if desired (warning, you may have to hit back-space to remove a return character from the pasted text)
 * Alternatively, navigate to the required file using Module, Folder, File and line number
 
 ### Module, Folder, File
-
-!!! tip "Stability Information Added"
-    Some customizations have not changed for a very long time (stable since 2.2.x days).
-
-    It was not until version 3.2.3 that we started adding a notation as to when the required customization code changed.
-
-    For those using the Browser Build method:
-
-    * If you had a customization working for 3.2.3 it will continue to work with 3.4.0 unless it is one listed in the [Not Stable List](#not-stable-list)
-    * However, because the `build_loop.yml` file is significantly different for version 3.4.0, you will need to save your "customization lines" from the `build_loop.yml` file in the 3.2.3 version of your `fork` and add them to a new location for the 3.4.0 version of `build_loop.yml` in your `fork`
-    * If one of your personalized customizations is in the [Not Stable List](#not-stable-list) you will need to create a new version [Custom Edits with Browser: Code Updates](../browser/edit-browser.md#code-updates){: target="_blank" }
 
 Each customization provides the Module, Folder and File bullet below the key phrase.
 
@@ -88,7 +77,7 @@ Each customization provides the Module, Folder and File bullet below the key phr
   * File: filename.swift, line number(s)
   * Stable: "Yes" or "Changed on date: Version #"
 
-The customizations below show the original line of code that you will be changing. 
+Each customization will show the original line of code that you will be changing. 
 
 There may be a figure illustrating the change.
 
@@ -96,6 +85,25 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 * Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
 * In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
+
+### What does `Stable` mean?
+
+The line starting with `Stable` indicates the last time the code associated with a given modification was changed. For most of these customizations, you will see `Stable: Yes`. For a few, you will see the date and version number at which the customization was modified.
+
+If the customization you used for an earlier version changed since the last time you built, it might be on the [`Not Stable List`](#not-stable-list), then you will need to use the updated 3.4.x version. If the customization indicates `Stable: Yes`, then you do not need to modify the process for 3.4.x.
+
+When the development version has significant differences from the released version, the customization may also differ. With the release of version 3.4.x, all customizations are identical for `main` and `dev`. Older versions of the customization are now removed from this page.
+
+??? tip "More Information about `Stable` (Click to open/close)"
+    Some customizations have not changed for a very long time (stable since 2.2.x days).
+
+    It was not until version 3.2.3 that we started adding a notation as to when the required customization code changed.
+
+    For those using the Browser Build method:
+
+    * If you had a customization working for 3.2.3 it will continue to work with 3.4.0 unless it is one listed in the [Not Stable List](#not-stable-list)
+    * However, because the `build_loop.yml` file is significantly different for version 3.4.x, you will need to save your "customization lines" from the `build_loop.yml` file in the 3.2.3 version of your `fork` and add them to a new location for the 3.4.x version of `build_loop.yml` in your `fork`
+    * If one of your personalized customizations is in the [Not Stable List](#not-stable-list) you will need to create a new version when upgrading from 3.2.x to 3.4.x [Custom Edits with Browser: Code Updates](../browser/edit-browser.md#code-updates){: target="_blank" }
 
 #### Not Stable List
 
@@ -111,7 +119,9 @@ This list indicates personalized customization that differ between 3.2.3 and 3.4
 ![img/carb_screen.png](img/carb_screen.png){width="200"}
 {align="center"}
 
-Loop’s default carb absorption times are based on the high, medium, and low glycemic index absorption curves presented in *Think Like A Pancreas* by Gary Scheiner.  In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `the *Loop* app` to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values. 
+In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `the *Loop* app` to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values.
+
+If you want to change this to 2, 3 and 5 hours - that is available as a standard customization using the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code/#custom-list){: target="_blank" }
 
 ??? question "Do you want to know more? (Click to open/close)"
     The developers did this because they expect fast to only be used for rapid-acting low treatments. The medium and slow values are for moderate and higher-fat or large meals.
@@ -170,6 +180,8 @@ Because the automatic bolus amount is also limited by the partial application fa
 ### Adjust Percent Bolus for Automatic Bolus
 
 If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.
+
+> With the release of version 3.4.x, there is another option. If you choose to enable [Glucose Based Partial Application](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }, then the percent of the recommended bolus automatically provided adjusts from 20% to 80% depending on your glucose level. You may decide this works well enough for you that this customization is no longer desired. Please give this new feature a try.
 
 This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.
 
@@ -241,9 +253,8 @@ Guardrail(absoluteBounds:
 * Line: 26 for correctionRange
 * Stable: Changed on 2024 Feb 19: Version 3.4.0
 
-#### Version 3.4.0
-
-This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
+??? info "Update Details (Click to open/close)"
+    This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
 
 _Code Before Modification_
 
@@ -252,20 +263,6 @@ _Code Before Modification_
 and
 
     static let correctionRange = Guardrail(absoluteBounds: (86.1)...(180.5), recommendedBounds: (99.1)...(115.9), unit: .milligramsPerDeciliter, startingSuggestion: 100)
-
-Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
-
-Loop automatically converts from mg/dL to mmol/L. So you must enter values reasonable for mg/dL (18 times higher than for mmol/L).
-
-#### Version from 3.2.3
-
-_Code Before Modification_
-
-    static let suspendThreshold = Guardrail(absoluteBounds: 67...110, recommendedBounds: 74...80, unit: .milligramsPerDeciliter, startingSuggestion: 80)
-
-and
-
-    static let correctionRange = Guardrail(absoluteBounds: 87...180, recommendedBounds: 100...115, unit: .milligramsPerDeciliter, startingSuggestion: 100)
 
 Modify the absoluteBounds to change the allowed ranges or the recommendedBounds to change the color of the numbers on the picker wheel.
 
@@ -310,8 +307,6 @@ The *Loop* app limits to 1 hour the amount of time in the future that carbs can 
 * File: LoopConstants.swift, Line 28
 * Stable: Changed on 2023 May 29 through 2023 Aug 20: Version 3.4.0
 
-#### Version 3.4.0
-
 ``` { .txt .copy title="Key_Phrase" }
 static let maxCarbEntryFutureTime
 ```
@@ -323,23 +318,6 @@ _Code Before Modification_
     static let maxCarbEntryFutureTime = TimeInterval(hours: 1)
 
 Change the maxCarbEntryFutureTime to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
-
-#### Version from 3.2.3
-
-* Folder: Loop/Loop/View Controllers
-* File: CarbEntryViewController.swift, Line 438
-
-``` { .txt .copy title="Key_Phrase" }
-cell.datePicker.maximumDate = date.addingTimeInterval
-```
-
-Default shown below (for maximum and minimum):
-
-_Code Before Modification_
-
-    cell.datePicker.maximumDate = date.addingTimeInterval(.hours(1))
-
-Change the maximumDate to the number of hours in the future you desire. Remember that Loop may increase insulin dosing for future carbs - make sure that they actually arrive. 
 
 ### Adjust the Watch Crown Sensitivity
 
@@ -386,7 +364,7 @@ This key phrase will indicate three different files in the same folder as shown 
 
 An expiration notification feature has been added to Loop. You get a notification when you open the Loop app to alert you that the expiration is approaching.
 
-* Read [Loop App Expiration Notification](../operation/features/notifications.md#loop-app-expiration-notification) to see the expiration reminder
+* Read [Loop App Expiration Notification](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } to see the expiration reminder
 
 If you prefer a different notification time and frequency, there are two lines you can modify:
 
@@ -503,6 +481,10 @@ You may see a yellow warning that there are “unassigned children” depending 
 And now you'll be the proud new owner of a custom Loop icon.
 
 ## Custom Edits Optional
+
+The customizations listed below are incorporated into the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" }.
+
+You can use that script or make your own edit by following these directions.
 
 ### Disable Authentication for Bolusing
 
