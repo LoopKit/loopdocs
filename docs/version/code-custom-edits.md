@@ -41,6 +41,8 @@ The instructions on this page identify the module, `Key_Phrase` or file and line
     * If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help
 
     * Sometimes there is a bigger change than just line numbers. The git software is really good about finding the "right" code that is just at a different line number. When you see the notation `Stable: Changed on date`, that means you must select the correct version when making your personal customization depending on which version you are modifying.
+        * With the release of 3.4.x, no customizations fall into this category
+        * The notation is kept to handle future changes that might happen when development start again
 
 This page is broken into two halves:
 
@@ -88,11 +90,13 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 ### What does `Stable` mean?
 
-The line starting with `Stable` indicates the last time the code associated with a given modification was changed. For most of these customizations, you will see `Stable: Yes`. For a few, you will see the date and version number at which the customization was modified.
+The line starting with `Stable` was previously used to indicate when code changes were sufficient to require a different customization. With the release of 3.4.x, all customizations show `Stable: Yes`. 
 
-If the customization you used for an earlier version changed since the last time you built, it might be on the [`Not Stable List`](#not-stable-list), then you will need to use the updated 3.4.x version. If the customization indicates `Stable: Yes`, then you do not need to modify the process for 3.4.x.
+* A few have an additional notation of when they were last changed; if you use these with browser build, you must update the customization going from 3.2.3 to 3.4.x
+* All customizations are currently identical for `main` and `dev`
+* Instructions for older versions of the customization are removed from this page.
 
-When the development version has significant differences from the released version, the customization may also differ. With the release of version 3.4.x, all customizations are identical for `main` and `dev`. Older versions of the customization are now removed from this page.
+There are two customizations, see [Not Stable List](#not-stable-list) that require an update between version 3.2.3 and 3.4.x. If you use one of those customizations for the Browser Build method, you will be required to update it if you want to continue using that customization.
 
 ??? tip "More Information about `Stable` (Click to open/close)"
     Some customizations have not changed for a very long time (stable since 2.2.x days).
@@ -251,7 +255,8 @@ Guardrail(absoluteBounds:
 * File: Guardrail+Settings.swift
 * Line: 12 for suspendThreshold
 * Line: 26 for correctionRange
-* Stable: Changed on 2024 Feb 19: Version 3.4.0
+* Stable: Yes
+    * Last Changed on 2024 Feb 19
 
 ??? info "Update Details (Click to open/close)"
     This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
@@ -305,7 +310,8 @@ The *Loop* app limits to 1 hour the amount of time in the future that carbs can 
 * Module: Loop
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift, Line 28
-* Stable: Changed on 2023 May 29 through 2023 Aug 20: Version 3.4.0
+* Stable: Yes
+    * Last changed 2023 Aug 20
 
 ``` { .txt .copy title="Key_Phrase" }
 static let maxCarbEntryFutureTime

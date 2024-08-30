@@ -35,28 +35,30 @@
 
 !!! abstract "Summary"
     * Prepare Customization (One Time):
-        * Once you have prepared a given customization, you can use it again with each update
+        * Once you have prepared a given customization, you can use it again with every build and even across most updates
         * If there is an update (new release) and the customization is no longer valid - you will get a clear error message
             * Just follow the steps on this page again to replace the customization that did not work
         * If there is an update (new release) and the customization applies with no errors, then you do NOT need to create an update
         * It is a good idea to test each customization as soon as you install the new build on your phone
     * LoopDocs: Decide on Modules to modify using the [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } page
         * You only need to create your own customization if what you want is not provided at [Loop and Learn: Customization List](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
-        * If there are customization not provided by the Customization List, then you need to make presonalized edits
+        * If there are customization not provided by the Customization List, then you need to make personalized edits
         * This current page explains how to make the edits using a browser
         * The [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } gives instructions on identifying the Module, finding the file and editing the line(s) 
     * *GitHub* (each Module):
         1. `Fork` the Module (if needed) - this is your <code>fork</code> where you will make changes
         1. `Sync` the Module (if needed)
         1. Make the desired modification(s) using the pencil tool
-        1. Save your changes
+        1. Save your changes to a patch branch
         1. Prepare lines needed for each customization and save
     * <span translate="no">GitHub (LoopWorkspace)</span> - using your <code>fork</code> where you will make changes
         1. You will use the pencil tool to edit build_loop.yml
         1. Add customization lines to the file
-        1. Save your changes
+        1. Save your changes to your default branch
         1. Action 4: Build Loop
+    * (Optional): [Add Test Details to *TestFlight*](bb-update.md#add-test-details-to-testflight){: target="_blank" }
     * Phone: Install with *TestFlight*
+
 
 !!! question "FAQs"
     - **Do I need a Mac computer?** No. This can be done on any browser.
@@ -78,23 +80,23 @@ Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="
     * Do not get confused later: LoopKit is both a username and a Module name
     * Refer to the [Module Table](#module-table) when directed
 
-Look also at the Stable line for the desired customization:
+With the release of 3.4.x, the customizations for `main` and `dev` are the same. There are 2 customizations that require an update when moving from 3.2.3 to 3.4.x.
 
-* Stable: Yes or Changed on date
-* The method for applying that customization differs slightly in the instructions below based on that notation
-* The customizations that are not stable, are summarized in [Not Stable List](../version/code-custom-edits.md#not-stable-list){: target="_blank" }
+* For more information, refer to [Not Stable List](../version/code-custom-edits.md#not-stable-list){: target="_blank" }
+    * Glucose Guardrails
+    * Adjust Future Carbs Time Interval
 
 ## Outline of What Happens in the Module
 
 !!! warning "Review Only"
     Review this section so you know what to expect. The actual steps will come later, starting with [Create your <code>Fork</code> for Selected Module](#create-your-fork-for-selected-module) or [Personalized Customization for this Module](#personalized-customization-for-this-module).
 
+    Feel free to skip ahead if you think you don't need the summary.
+
 In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. There are no links here because you are supposed to review the steps before taking action in the next section.
 
 1. First time for this module:
     * Make a <code>fork</code>
-    * If the customization you want is not "Stable" and you are building `main`
-        * Create a new <code>branch</code> for your <code>fork</code> using the SHA-1 table
 1. Change the line(s) of code desired for your customization(s) in your `fork`
 1. Save the change(s) using descriptive comments
 1. Repeat until done with this Module
@@ -175,47 +177,85 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
 
 ## Create `branch` if needed
 
-* If the customization you wish to prepare indicates Stable: Yes, you can skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
-* If you are preparing a customization for the `dev` branch, regardless of the Stable notation, there is no need to create a special `branch`, simply update the default branch to the latest (sync it) and use the current version of the customization when you skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
-* Otherwise, when you a preparing a customization where the file changed sufficiently between `main` and `dev` and you want to build the `main` branch, you need to create a branch for this Module that is consistent with the version you wish to customize.
+> With the release of version 3.4.x, this entire section can be skipped. It was needed when LoopWorkspace `dev` used submodules that were quite different from those used by `main`.
 
-Open your browser to your https://github.com/username/Module URL. If you already created the `branch` you need, you do not need to create a new one.
+??? abstract "Skip for Now (Click to open/close)"
 
-If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. Notice the suggested branch name for that table. You will use this in Step 3.3 below.
+    * If the customization you wish to prepare indicates Stable: Yes, you can skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
+    * If you are preparing a customization for the `dev` branch, regardless of the Stable notation, there is no need to create a special `branch`, simply update the default branch to the latest (sync it) and use the current version of the customization when you skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
+    * Otherwise, when you a preparing a customization where the file changed sufficiently between `main` and `dev` and you want to build the `main` branch, you need to create a branch for this Module that is consistent with the version you wish to customize.
 
-You should create a `branch` following the numbered steps and watching the GIF. Each Frame in the GIF corresponds to a numbered step below.
+    ??? abstract "Use only if directed (Click to Open/Close)"
+        Open your browser to your https://github.com/username/Module URL. If you already created the `branch` you need, you do not need to create a new one.
 
-1. Click on URL line as indicated by the arrow
-1. Add the text `/tree/SHA-1` where you change SHA-1 to be the value in the table below and hit return
-1. Create a new branch in three steps
-    * 3.1: Click on the dropdown under the `branch` icon
-    * 3.2: Type the suggested new `branch` name in the blank space
-    * 3.3: Click on the create `branch` button
-1. You should see a screen similar to the example below
-    * Do not click on the Create Pull Request button that is marked with a big X
+        If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. Notice the suggested branch name for that table. You will use this in Step 3.3 below.
 
-![create branch for version](img/create-branch.gif){width="600"}
-{align="center"}
+        You should create a `branch` following the numbered steps and watching the GIF. Each Frame in the GIF corresponds to a numbered step below.
 
-### Table of SHA-1
+        1. Click on URL line as indicated by the arrow
+        1. Add the text `/tree/SHA-1` where you change SHA-1 to be the value in the table below and hit return
+        1. Create a new branch in three steps
+            * 3.1: Click on the dropdown under the `branch` icon
+            * 3.2: Type the suggested new `branch` name in the blank space
+            * 3.3: Click on the create `branch` button
+        1. You should see a screen similar to the example below
+            * Do not click on the Create Pull Request button that is marked with a big X
 
-This will be updated with each release. The versions for the `dev` branch are not reported here because they are frequently updated. If customizing dev, use the default branch for each Module and `sync` that branch if needed.
+        ![create branch for version](img/create-branch.gif){width="600"}
+        {align="center"}
 
-#### Version 3.2.3
+    ### Table of SHA-1
 
-Suggested `branch` name is `v-3.2.3`
+    This will be updated with each release. You do not need this information now - it is only important when submodules that are modified as part of `dev` branch changes to LoopWorkspace are sufficiently different from the versions used for `main` branch.
 
-| <code>Repository</code> | SHA-1 |
-|:--|:-:|
-| `LoopWorkspace` | 81a3d9b03305a4b2a844bd6bac14a14f27626fef |
-| `Loop` | c6b058b4276681600979aaeba518c635f06ac135 |
-| `LoopKit` |9835a29f1bac9f75023f39c376479a2e6a6c8ccd |
-| `OmniBLE` | f21360781c0b8eee26c531d20f1b0aa192a227f2 |
-| `OmniKit` | c1e0d395975c93d15b3f84ac21097e40b7d5d93f |
+    #### Version 3.4.1
+
+    | <code>Repository</code> | SHA-1 |
+    |:--|:-:|
+    | `LoopWorkspace` | 8060718e78b44ef45797082817392c1c4b7a7dab |
+    | `Loop` | 5c3b01f7e302dca9b8bbb12fd42fdd40ed52d2c1 |
+    | `LoopKit` |873b3b7c406cfc982f9061afb5f5e27e88d9208d |
+    | `OmniBLE` | 85fc3c6d4805d580acdf6592b220717b6e842558 |
+    | `OmniKit` | a80e38b1b7f203014b461f8aff8cead2c067e39d |
 
 ## Personalized Customization for this Module
 
-Navigate to the file you need to modify (using the instructions to find the lines from the [Version: Custom Edit](../version/code-custom-edits.md#instructions-for-finding-the-lines){: target="_blank" } page)
+Navigate to the file you need to modify (using the instructions to find the lines from the [Version: Custom Edit](../version/code-custom-edits.md#instructions-for-finding-the-lines){: target="_blank" } page).
+
+??? abstract "How do I navigate to the file? (Click to open/close)"
+    Let's do an example.
+
+    Suppose you want to add this customization: [Pods: Add Extra Insulin on Insertion](../version/code-custom-edits.md#pods-add-extra-insulin-on-insertion){: target="_blank" }
+
+    The folder name is: ` OmniBLE/OmniBLE/OmnipodCommon`<br>
+    The file name is: `Pod.swift`
+
+    So you will go to your OmniBLE fork:
+
+    1. Tap to select `OmniBLE` folder in that fork
+    1. Tap to select `OmnipodCommon` folder in that folder
+    1. Tap to open the `Pod.swift` file
+
+    The graphic below shows the `fork` for the `OmniBLE` submodule. If you need more detailed instructions, they are found after the graphic.
+
+    ![example navigation to file in fork](img/navigate-submodule-omnible.svg){width="800"}
+    {align="center"}
+
+    ??? info "More detailed instructions (Click to open/close)"
+        1. Check that this repository is the correct submodule and that:
+            * Fork has your GitHub Username
+            * Fork says it is forked from LoopKit
+            * Fork is up to date with LoopKit
+            * Tap on the OmniBLE folder to open the next screen
+        1. Check that your screen shows:
+            * `OmniBLE/OmniBLE` at the top (current folder location)
+            * Tap on the OmnipodCommon folder to open the next screen
+        1. Check that your screen shows:
+            * `OmniBLE/OmniBLE/OmnipodCommon` at the top (current folder location)
+            * Tap on the Pod.swift file to open it
+        
+        Now you are ready to move to the [Example GIF](#example-gif) which shows the steps needed to do the actual edit.
+
 
 !!! tip "Pro Tip"
     Look at the files you want to change - if more than one change is desired for a single file - do them at the same time.
@@ -225,6 +265,12 @@ This section provides the steps to make a single customization for the Module. I
 ### Example GIF
 
 The GIF showing the creation of one customization is shown below. Please review the 4 frames of the GIF, read the detailed instructions below and then review the GIF again. In case you are concerned by the&nbsp;"<span translate="no">Pull Request</span>&nbsp;shown here; this is to your own <code>fork</code>, not back to the original.
+
+There are 4 frames shown in this GIF; the frame number is noted at the bottom right. Take the time to cycle through several times to observe what you need to do. Frame 1 shows what to do after you have completed the edits you want for this file.
+
+**This includes making a `Pull Request` to your own repository. That is OK.**
+
+**Never make a `Pull Request` to a `LoopKit/repository`.**
 
 ![GitHub screen while creating a customization](img/browser-customize.gif){width="750"}
 {align="center"}
@@ -334,32 +380,34 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 * Click on the pencil (so you can edit this file)
 * If you are building version 3.4
     * Skip ahead to [Add Personal Customizations to build_loop.yml](#add-personal-customizations-to-build_loopyml)
-* If you are building from an older version of main (version 3.2.3 or earlier), this is left here for your convenience - it will be removed over the next few months - please update soon
-    * Locate line 31, which is just above the words:
-        * `# Patch Fastlane Match to not print tables`
-    * Paste the contents of the block below so it comes before that section
-    * In the next section - you will need to modify the line number where you do the edits
+
+??? abstract "Older versions (Click to open/close)"
+    * If you are building from an older version of main (version 3.2.3 or earlier), this is left here for your convenience - it will be removed over the next few months - please update soon
+        * Locate line 31, which is just above the words:
+            * `# Patch Fastlane Match to not print tables`
+        * Paste the contents of the block below so it comes before that section
+        * In the next section - you will need to modify the line number where you do the edits
 
 
-``` { .text .copy title="Paste into build_loop.yml" }
-      # Customize Loop: Download and apply patches
-      - name: Customize Loop
-        run: |
+    ``` { .text .copy title="Paste into build_loop.yml" }
+        # Customize Loop: Download and apply patches
+        - name: Customize Loop
+            run: |
 
-          # For each patch, edit comment line (keep the #) then update curl (and remove the #)
+            # For each patch, edit comment line (keep the #) then update curl (and remove the #)
 
-          # Submodule Loop patches:
-          # Loop: Filename: customization details
-          #curl https://github.com/username/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
-          
-          # Submodule LoopKit patches:
-          # LoopKit: Filename: customization details
-          #curl https://github.com/username/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
-          
-          # Submodule xxxxx patches: Follow prototype above
+            # Submodule Loop patches:
+            # Loop: Filename: customization details
+            #curl https://github.com/username/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
+            
+            # Submodule LoopKit patches:
+            # LoopKit: Filename: customization details
+            #curl https://github.com/username/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
+            
+            # Submodule xxxxx patches: Follow prototype above
 
 
-```
+    ```
 
 ### Add Personal Customizations to build_loop.yml
 
