@@ -17,7 +17,6 @@ There is a script to assist in building the `dev branch`. It gives you the optio
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)"
 ```
-Both the `dev branch` and the lightly tested branch of `dev` have Libre support.
 
 ### BuildLoopDev Other Branches
 

@@ -163,7 +163,7 @@ Each release uses 3 numbers: Major.Minor.Patch
 
 * Major is reserved for a significant change in the code, such as occurred going from `Loop 2.2.9` to `Loop 3.0.0`
 * Minor is used when the development branch is released for general use
-* Patch typically indicates a modification to support external events like an Xcode or iOS version update with no feature changes in Loop
+* Patch typically indicates a modification for a quick bug-fix or to support external events like an Xcode or iOS version update with no feature changes in Loop
 
 To prevent confusion between versions used for development and versions used for release (`main` `branch`), the Minor values are even for released code. The Minor value for the development `branch` (`dev`) is incremented as part of the release process and is always odd.
 
@@ -174,7 +174,8 @@ For example:
 * `Loop 3.2.0` was the next released version
     * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
     * `Loop 3.3.0` was the development version before `Loop 3.4.0` was released
-* `Loop 3.4.0` is the current version
+* `Loop 3.4.0` was the next released version
+    * `Loop 3.4.1` is a patched version (fixed Browser Build) without changes to the features of `Loop 3.4.x`
     * `Loop 3.5.0` is the current development version
 
 ## Remove Apps with Shared App Group

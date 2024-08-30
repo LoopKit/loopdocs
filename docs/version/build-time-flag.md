@@ -1,17 +1,21 @@
 ## Overview
 
-Build-time features are not available with Loop 2.2.x.
-
 With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.
 
-If you use Build with Browser, these build-time features can be added to your copy of the LoopConfigOverride.xcconfig file. Use the pencil icon in that file on your copy of LoopWorkspace and then commit the change.
+## Modify the `Build Time Flags`
 
-If you use the Build with *Mac* Method, this is the same file used to automatically sign all your targets. You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. For that second case, the "flags" you add in ~/Downloads/BuildLoop/LoopConfigOverride.xcconfig are applied to all downloads created with the script.
+The `Build Time Flags` are available for both build methods:
+
+* **Build with Browser**
+    * Edit the LoopConfigOverride.xcconfig file in your fork
+    * Use the pencil icon in that file to make the modification shown below and commit the change to your fork
+    * Do not try to open a pull request to LoopKit/LoopWorkspace - only modify your-github-username/LoopWorkspace version
+* **Build with *Mac* Method**
+    * You edit the file used to automatically sign all your targets
+    * You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. 
+        * If you edit `~/Downloads/BuildLoop/LoopConfigOverride.xcconfig`, the "flags" you add are applied to this download and all subsequent downloads created with the script.
 
 These flags are always upper case with underscore separating words for clarity, for example `MY_EXAMPLE_FLAG`. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. Xcode will automatically word-wrap the line for clarity. All values need to be on a single line.
-
-!!! question "New Instructions"
-    The instructions are more robust than earlier instructions that had you editing a line instead of adding new ones.
 
 Copy the text below, add it to the end of your LoopConfigOverride.xcconfig file and then insert the desired flags in place of `MY_EXAMPLE_FLAG`. If you want more than one flag, separate them by a space.
 
@@ -40,7 +44,7 @@ _Code After Modification_
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIRI_DISABLED
 ```
 
-List of some flags and what they do:
+## Table of Build Time Flags
 
 |FLAG|PURPOSE|
 |---------|---------|
