@@ -82,15 +82,43 @@ Once the app is available in *TestFlight*, you can adjust whether it is automati
 
 Go back to the *TestFlight* app on your phone and tap on your app name in the list to see an expanded screen similar to the graphic below. The row to enable or disable automatic updates is highlighted in the graphic, which shows the feature disabled. This is recommended for all users.
 
-* If you leave automatic update enabled (default), then whenever a new build is created and uploaded to *TestFlight* , it will be installed immediately.
-* WARNING: If you switch between Building with Browser and *Mac*, you must disable automatic update or Xcode will not be able to install to your phone.
+* If you leave automatic update enabled (default), then whenever a new build is created and uploaded to *TestFlight* , it will be installed immediately (see [Unexpected *TestFlight* Expiration](#unexpected-testflight-expiration))
+* WARNING: If you switch between Building with Browser and *Mac*, you must disable automatic update or Xcode will not be able to install to your phone
 
 ![enable or disable automatic update for Loop](img/testflight-auto-update.png){width="300"}
 {align="center"}
 
 When you are ready to install, just open the *TestFlight* app and click Install to get the most recent build and then click Open when it completes the installation. All your settings and connections to CGM and Pump are maintained.
 
-If you tap on the bottom row that says `Previous Builds`, highlighted by the dashed-green rectangle, you can view and choose an older build (as long as it has not expired).
+### Previous Builds
+
+If you tap on the bottom row that says `Previous Builds`, highlighted by the dashed-green rectangle, you can view and choose an older (or lower version number) build (as long as it has not expired). 
+
+* In some cases, you need to do this to see the newest build
+* For example, it you build version 3.5.0 (`dev` branch) accidentally and then switched to 3.4.x (`main` branch), *TestFlight* shows you the 3.5.0 version on the screen and you need to go to previous builds to find your newer 3.4.x build
+
+### Unexpected *TestFlight* Beta Expiration
+
+!!! important "*Apple TestFlight* Bug"
+    It doesn't happen to everyone but it has happened a few times over the years and only for people who have Automatic Update enabled for their *TestFlight* app.
+
+    Symptom:
+
+    * App has plenty of time before expiration
+    * A new build becomes available, for example from the automatic monthly rebuild
+    * User is told *Loop* Beta is not available
+
+    Solution:
+
+    * Open *TestFlight* and turn off automatic installation for your app
+    * Install the previous version of the app on the phone manually (with monthly build, it should still be ok)
+    * Manually start a new build (if there were updates you want to get)
+    * Manually install the new update
+
+    More information:
+
+    * [Link 1: Apple forum](https://forums.developer.apple.com/forums/thread/720033){: target="_blank" }
+    * [Link 2: Stackoverflow thread](https://stackoverflow.com/questions/74588716/testflight-beta-has-expired){: target="_blank" }
 
 ## *TestFlight* for a Child
 
