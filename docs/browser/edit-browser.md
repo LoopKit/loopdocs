@@ -51,11 +51,10 @@
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes to a patch branch
         1. Prepare lines needed for each customization and save
-    * <span translate="no">GitHub (LoopWorkspace)</span> - using your <code>fork</code> where you will make changes
-        1. You will use the pencil tool to edit build_loop.yml
-        1. Add customization lines to the file
-        1. Save your changes to your default branch
-        1. Action 4: Build Loop
+    * New with 3.4.x release, there are 2 ways to add customizations
+        * See [Update LoopWorkspace](#updateloopworkspace){: target="_blank" }
+        * See [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }
+    * Regardless of the method, incorporate the customization with `Action 4: Build Loop`
     * (Optional): [Add Test Details to *TestFlight*](bb-update.md#add-test-details-to-testflight){: target="_blank" }
     * Phone: Install with *TestFlight*
 
@@ -230,13 +229,15 @@ Navigate to the file you need to modify (using the instructions to find the line
     The folder name is: ` OmniBLE/OmniBLE/OmnipodCommon`<br>
     The file name is: `Pod.swift`
 
-    So you will go to your OmniBLE fork:
+    So you will go to your OmniBLE fork (see [New Fork](#new-fork){: target="_blank" } if you don't have a fork yet):
 
     1. Tap to select `OmniBLE` folder in that fork
     1. Tap to select `OmnipodCommon` folder in that folder
     1. Tap to open the `Pod.swift` file
+        * Once the file is open, tap on the pencil icon and make your edits
+        * When done, review the [Example GIF](#example-gif) which shows the steps needed to save your changes after you complete the edit
 
-    The graphic below shows the `fork` for the `OmniBLE` submodule. If you need more detailed instructions, they are found after the graphic.
+    The graphic below shows the `fork` for the `OmniBLE` submodule with numbers that match the steps in the list above. If you need more detailed instructions, they are found after the graphic.
 
     ![example navigation to file in fork](img/navigate-submodule-omnible.svg){width="800"}
     {align="center"}
@@ -253,8 +254,9 @@ Navigate to the file you need to modify (using the instructions to find the line
         1. Check that your screen shows:
             * `OmniBLE/OmniBLE/OmnipodCommon` at the top (current folder location)
             * Tap on the Pod.swift file to open it
+            * Tap on the pencil icon (upper right) to start editing the file
         
-        Now you are ready to move to the [Example GIF](#example-gif) which shows the steps needed to do the actual edit.
+        Now you are ready to move to the [Example GIF](#example-gif) which shows the steps needed to save your changes after you complete the edit.
 
 
 !!! tip "Pro Tip"
@@ -264,13 +266,17 @@ This section provides the steps to make a single customization for the Module. I
 
 ### Example GIF
 
-The GIF showing the creation of one customization is shown below. Please review the 4 frames of the GIF, read the detailed instructions below and then review the GIF again. In case you are concerned by the&nbsp;"<span translate="no">Pull Request</span>&nbsp;shown here; this is to your own <code>fork</code>, not back to the original.
+The GIF below shows the steps needed to save an edited file, so you can configure the customization. Please review the 4 frames of the GIF, read the [Detailed Instructions](#detailed-instructions) below and then review the GIF again.
 
-There are 4 frames shown in this GIF; the frame number is noted at the bottom right. Take the time to cycle through several times to observe what you need to do. Frame 1 shows what to do after you have completed the edits you want for this file.
+There are 4 frames shown in this GIF; the frame number is noted at the bottom right. Take the time to cycle through several times to observe what you need to do. 
 
-**This includes making a `Pull Request` to your own repository. That is OK.**
+* Frame 1 shows what to do after you have completed the edits you want for this file
 
-**Never make a `Pull Request` to a `LoopKit/repository`.**
+* **Frame 2 shows a `Pull Request` to your own repository - that is OK**
+
+* Frame 3 displays a green button that would make a `Pull Request` to a `LoopKit/repository` - **do NOT click that button**
+
+* Frame 4 shows how to obtain the really-long alphanumeric string needed to modify your build_loop.yml file
 
 ![GitHub screen while creating a customization](img/browser-customize.gif){width="750"}
 {align="center"}
@@ -337,6 +343,8 @@ Later on, you will create the actual command needed to insert into build_loop.ym
 Repeat this process until you've done all your customizations for this Module and then move on to the next Module.
 
 ## Prepare the Customizations
+
+There are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }.
 
 Once you prepare the commands, then you will edit the build_loop.yml file of your <code>fork</code> of&nbsp;<span translate="no">LoopWorkspace</span>.
 
@@ -413,11 +421,22 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 
 Open the text file in which you saved the customization lines.
 
-For a given submodule, paste the comment curl lines that you prepared in [Prepare customization lines](#prepare-customization-lines) similar to the examples, near line 239, that are commented out and provided as an example. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
+For a given submodule, paste the "comment" and "curl" lines that you prepared in [Prepare customization lines](#prepare-customization-lines) similar to the examples, near line 279 (`main` or 239 for `dev`), that are commented out and provided as an example. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
 
-The indenting needs to match, so tab or (shift-tab) to line up the columns.
+The indenting needs to match, so tab or (shift-tab) to line up the columns. The graphic below shows a couple of common mistakes.
+
+* All lines within a given section need to start in the same column (see the vertical dashed green line)
+* Comments (lines starting with a `#`) placed in the wrong column will cause the build to fail
+* Commands (line starting with `curl`) placed in the wrong column will cause the build to fail
+
+The command placed in the correct column has 4 "words" highlighted with red rectangles. You must have the correct values for all 4 of these places or the build will fail.
+
+![indentation and blank lines are important](img/modify-build-loop-yml.svg){width="600"}
+{align="center"}
 
 It is best to leave a blank line between customizations.
+
+**You must have a blank line** after the last customization and before the `# Patch Fastlane Match to not print tables` line or the build will fail.
 
 **Once you are done with all the edits for build_loop.yml you will commit the changes to your <code>fork</code> directly.**
 
@@ -442,6 +461,37 @@ At the top of the display, click on&nbsp;<span translate="no">Actions</span>.
 Wait about 2 minutes before walking away to make sure there are no errors. If you get an error, then look for the first "did not apply" error message and fix the customization right before that line.
 
 In about 1 hour, your customized app will be available for installation on your phone via *TestFlight*.
+
+## Extra Information
+
+The rest of this page has additional information most people can skip. If a mentor is helping you, they may use some of this information.
+
+### How to Use the `patches` Folder
+
+With the release of 3.4.x, you can add patches to your `GitHub-Username/LoopWorkspace` fork in the `patches` folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop.yml file.
+
+Refer to [Prepare customization lines](#prepare-customization-lines){: target="_blank" }:
+
+* extract the text from "https:" through "patch" and paste that into a new tab
+* this will open a browser similar to the following graphic
+
+![open patch at GitHub](img/browser-open-to-patch.png){width="750"}
+{align="center"}
+
+Now you need to download that file (Save Page As, if using chrome).
+
+Once the file is downloaded to a sensible name, make a copy (or rename it) to indicate that you have edited the file to make it a Workspace level patch. An example is shown below. You add the name of the submodule in 4 places so the patch is applied correctly when you build.
+
+![download and then edit patch for Workspace](img/prepare-workspace-patch.svg){width="750"}
+{align="center"}
+
+If you've gotten this far, keep going. No more pretty graphics, but I think you can figure it out.
+
+* Return to your `GitHub-Username/LoopWorkspace` fork, tap on the `patches` folder
+* At the upper right, click on `Add file` dropdown and choose `Upload files`
+    * Drag and drop your Workspace level patch into the window
+    * Commit to your default branch
+* Test the build to make sure everything worked
 
 ### Customization and SHA-1
 
