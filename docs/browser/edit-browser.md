@@ -51,7 +51,7 @@
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes to a patch branch
         1. Prepare lines needed for each customization and save
-    * New with 3.4.x release, there are 2 ways to add customizations
+    * New with 3.4.x release, there are 2 ways to add customizations (use only one)
         * See [Update LoopWorkspace](#updateloopworkspace){: target="_blank" }
         * See [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }
     * Regardless of the method, incorporate the customization with `Action 4: Build Loop`
@@ -187,7 +187,7 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
     ??? abstract "Use only if directed (Click to Open/Close)"
         Open your browser to your https://github.com/username/Module URL. If you already created the `branch` you need, you do not need to create a new one.
 
-        If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. Notice the suggested branch name for that table. You will use this in Step 3.3 below.
+        If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. The suggested branch name is `v-#.#.#` where #.#.# corresponds to the version number for `main`. You will use this in Step 3.3 below.
 
         You should create a `branch` following the numbered steps and watching the GIF. Each Frame in the GIF corresponds to a numbered step below.
 
@@ -274,14 +274,18 @@ There are 4 frames shown in this GIF; the frame number is noted at the bottom ri
 
 * **Frame 2 shows a `Pull Request` to your own repository - that is OK**
 
-* Frame 3 displays a green button that would make a `Pull Request` to a `LoopKit/repository` - **do NOT click that button**
+* Frame 3 displays a green `Compare & pull request` button that would make a `Pull Request` to a `LoopKit/repository` - **do NOT click that button**
 
-* Frame 4 shows how to obtain the really-long alphanumeric string needed to modify your build_loop.yml file
+* Frame 4 shows how to obtain the really-long alphanumeric string (SHA-1) needed to modify your build_loop.yml file
 
 ![GitHub screen while creating a customization](img/browser-customize.gif){width="750"}
 {align="center"}
 
 ### Detailed Instructions
+
+If you followed along above and made the modifations, you can skip ahead to [Prepare the Customizations](#prepare-the-customizations). 
+
+This section provides the detailed steps just explained in [Example GIF](#example-gif).
 
 You will be using the "pencil" tool in the browser display for your <code>fork</code>.
 
@@ -378,6 +382,8 @@ where:
 To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/username/Module/commit/SHA-1`.
 
 ## Update&nbsp;<span translate="no">LoopWorkspace</span>
+
+With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }.
 
 The final step is to update your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;to apply these customizations by adding those customization lines into the build_loop.yml file.
 
@@ -480,7 +486,12 @@ Refer to [Prepare customization lines](#prepare-customization-lines){: target="_
 
 Now you need to download that file (Save Page As, if using chrome).
 
-Once the file is downloaded to a sensible name, make a copy (or rename it) to indicate that you have edited the file to make it a Workspace level patch. An example is shown below. You add the name of the submodule in 4 places so the patch is applied correctly when you build.
+Once the file is downloaded to a sensible name, make a copy (or rename it) to indicate that you have edited the file to make it a Workspace level patch. An example is shown below.
+
+* Top file shows the original download
+* Lower file shows the renamed and edited version:
+    * Add the name of the module to the "a" and "b" directory paths so the patch is applied to the correct folder (from LoopWorkspace)
+    * In this example `OmniBLE/` was added in 4 places as highlighted by red rectangles
 
 ![download and then edit patch for Workspace](img/prepare-workspace-patch.svg){width="750"}
 {align="center"}
