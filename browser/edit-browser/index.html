@@ -1392,8 +1392,26 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build with Customizations">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra Information">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-the-patches-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use the patches Folder
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#customization-and-sha-1" class="md-nav__link">
@@ -3844,8 +3862,26 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build with Customizations">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra Information">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-the-patches-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use the patches Folder
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#customization-and-sha-1" class="md-nav__link">
@@ -3987,7 +4023,7 @@
 <p class="admonition-title">Summary</p>
 <ul>
 <li>Prepare Customization (One Time):<ul>
-<li>Once you have prepared a given customization, you can use it again with each update</li>
+<li>Once you have prepared a given customization, you can use it again with every build and even across most updates</li>
 <li>If there is an update (new release) and the customization is no longer valid - you will get a clear error message<ul>
 <li>Just follow the steps on this page again to replace the customization that did not work</li>
 </ul>
@@ -3998,7 +4034,7 @@
 </li>
 <li>LoopDocs: Decide on <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> to modify using the <a href="../../version/code-custom-edits/" target="_blank">Version: Custom Edits</a> page<ul>
 <li>You only need to create your own customization if what you want is not provided at <a href="https://www.loopandlearn.org/custom-code#custom-list" target="_blank"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Customization List</a></li>
-<li>If there are customization not provided by the Customization List, then you need to make presonalized edits</li>
+<li>If there are customization not provided by the Customization List, then you need to make personalized edits</li>
 <li>This current page explains how to make the edits using a browser</li>
 <li>The <a href="../../version/code-custom-edits/" target="_blank">Version: Custom Edits</a> gives instructions on identifying the Module, finding the file and editing the line(s) </li>
 </ul>
@@ -4007,17 +4043,17 @@
 <li><code>Fork</code> the Module (if needed) - this is your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> where you will make changes</li>
 <li><code>Sync</code> the Module (if needed)</li>
 <li>Make the desired modification(s) using the pencil tool</li>
-<li>Save your changes</li>
+<li>Save your changes to a patch <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li>Prepare lines needed for each customization and save</li>
 </ol>
 </li>
-<li><span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (LoopWorkspace)</span> - using your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> where you will make changes<ol>
-<li>You will use the pencil tool to edit build_loop.yml</li>
-<li>Add customization lines to the file</li>
-<li>Save your changes</li>
-<li>Action 4: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
-</ol>
+<li>New with 3.4.x release, there are 2 ways to add customizations (use only one)<ul>
+<li>See <a href="#updateloopworkspace" target="_blank">Update LoopWorkspace</a></li>
+<li>See <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a></li>
+</ul>
 </li>
+<li>Regardless of the method, incorporate the customization with <code>Action 4: Build Loop</code></li>
+<li>(Optional): <a href="../bb-update/#add-test-details-to-testflight" target="_blank">Add Test Details to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
 <li>Phone: Install with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 </div>
@@ -4042,25 +4078,24 @@
 </ul>
 </li>
 </ul>
-<p>Look also at the Stable line for the desired customization:</p>
+<p>With the release of 3.4.x, the customizations for <code>main</code> and <code>dev</code> are the same. There are 2 customizations that require an update when moving from 3.2.3 to 3.4.x.</p>
 <ul>
-<li>Stable: Yes or Changed on date</li>
-<li>The method for applying that customization differs slightly in the instructions below based on that notation</li>
-<li>The customizations that are not stable, are summarized in <a href="../../version/code-custom-edits/#not-stable-list" target="_blank">Not Stable List</a></li>
+<li>For more information, refer to <a href="../../version/code-custom-edits/#not-stable-list" target="_blank">Not Stable List</a><ul>
+<li>Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></li>
+<li>Adjust Future Carbs Time Interval</li>
+</ul>
+</li>
 </ul>
 <h2 id="outline-of-what-happens-in-the-module">Outline of What Happens in the Module<a class="headerlink" href="#outline-of-what-happens-in-the-module" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Review Only</p>
 <p>Review this section so you know what to expect. The actual steps will come later, starting with <a href="#create-your-fork-for-selected-module">Create your <code>Fork</code> for Selected Module</a> or <a href="#personalized-customization-for-this-module">Personalized Customization for this Module</a>.</p>
+<p>Feel free to skip ahead if you think you don't need the summary.</p>
 </div>
 <p>In the next sections, the exact process for making changes will be documented. But the steps may feel confusing. There are no links here because you are supposed to review the steps before taking action in the next section.</p>
 <ol>
 <li>First time for this module:<ul>
 <li>Make a <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code></li>
-<li>If the customization you want is not "Stable" and you are building <code>main</code><ul>
-<li>Create a new <code><abbr title="version of code within a single repository or workspace repository">branch</abbr></code> for your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> using the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> table</li>
-</ul>
-</li>
 </ul>
 </li>
 <li>Change the line(s) of code desired for your customization(s) in your <code>fork</code></li>
@@ -4166,13 +4201,20 @@
 </tbody>
 </table>
 <h2 id="create-branch-if-needed">Create <code>branch</code> if needed<a class="headerlink" href="#create-branch-if-needed" title="Anchor link to this Header on this Page">&para;</a></h2>
+<blockquote>
+<p>With the release of version 3.4.x, this entire section can be skipped. It was needed when LoopWorkspace <code>dev</code> used <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> that were quite different from those used by <code>main</code>.</p>
+</blockquote>
+<details class="abstract">
+<summary>Skip for Now (Click to open/close)</summary>
 <ul>
 <li>If the customization you wish to prepare indicates Stable: Yes, you can skip ahead to <a href="#personalized-customization-for-this-module">Personalized Customization for this Module</a></li>
 <li>If you are preparing a customization for the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, regardless of the Stable notation, there is no need to create a special <code>branch</code>, simply update the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> to the latest (sync it) and use the current version of the customization when you skip ahead to <a href="#personalized-customization-for-this-module">Personalized Customization for this Module</a></li>
 <li>Otherwise, when you a preparing a customization where the file changed sufficiently between <code>main</code> and <code>dev</code> and you want to build the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to create a <abbr title="version of code within a single repository or workspace repository">branch</abbr> for this Module that is consistent with the version you wish to customize.</li>
 </ul>
+<details class="abstract">
+<summary>Use only if directed (Click to Open/Close)</summary>
 <p>Open your browser to your https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/username/Module <abbr title="website address (Uniform Resource Locator)">URL</abbr>. If you already created the <code>branch</code> you need, you do not need to create a new one.</p>
-<p>If you are customizing a released version, use the <a href="#table-of-sha-1">Table of <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr></a> under your version number below. Copy the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for your Module so you can paste it into the <abbr title="website address (Uniform Resource Locator)">URL</abbr> in Step 2 below. Notice the suggested <abbr title="version of code within a single repository or workspace repository">branch</abbr> name for that table. You will use this in Step 3.3 below.</p>
+<p>If you are customizing a released version, use the <a href="#table-of-sha-1">Table of <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr></a> under your version number below. Copy the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for your Module so you can paste it into the <abbr title="website address (Uniform Resource Locator)">URL</abbr> in Step 2 below. The suggested <abbr title="version of code within a single repository or workspace repository">branch</abbr> name is <code>v-#.#.#</code> where #.#.# corresponds to the version number for <code>main</code>. You will use this in Step 3.3 below.</p>
 <p>You should create a <code>branch</code> following the numbered steps and watching the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>. Each Frame in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> corresponds to a numbered step below.</p>
 <ol>
 <li>Click on <abbr title="website address (Uniform Resource Locator)">URL</abbr> line as indicated by the arrow</li>
@@ -4189,10 +4231,10 @@
 </li>
 </ol>
 <p align="center"><img alt="create branch for version" src="../img/create-branch.gif" width="600" /></p>
+</details>
 <h3 id="table-of-sha-1">Table of <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr><a class="headerlink" href="#table-of-sha-1" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This will be updated with each release. The versions for the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> are not reported here because they are frequently updated. If customizing dev, use the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> for each Module and <code>sync</code> that <abbr title="version of code within a single repository or workspace repository">branch</abbr> if needed.</p>
-<h4 id="version-323">Version 3.2.3<a class="headerlink" href="#version-323" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Suggested <code>branch</code> name is <code>v-3.2.3</code></p>
+<p>This will be updated with each release. You do not need this information now - it is only important when <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> that are modified as part of <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> changes to LoopWorkspace are sufficiently different from the versions used for <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h4 id="version-341">Version 3.4.1<a class="headerlink" href="#version-341" title="Anchor link to this Header on this Page">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -4203,37 +4245,98 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>LoopWorkspace</code></td>
-<td style="text-align: center;">81a3d9b03305a4b2a844bd6bac14a14f27626fef</td>
+<td style="text-align: center;">8060718e78b44ef45797082817392c1c4b7a7dab</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Loop</code></td>
-<td style="text-align: center;">c6b058b4276681600979aaeba518c635f06ac135</td>
+<td style="text-align: center;">5c3b01f7e302dca9b8bbb12fd42fdd40ed52d2c1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>LoopKit</code></td>
-<td style="text-align: center;">9835a29f1bac9f75023f39c376479a2e6a6c8ccd</td>
+<td style="text-align: center;">873b3b7c406cfc982f9061afb5f5e27e88d9208d</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>OmniBLE</code></td>
-<td style="text-align: center;">f21360781c0b8eee26c531d20f1b0aa192a227f2</td>
+<td style="text-align: center;">85fc3c6d4805d580acdf6592b220717b6e842558</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>OmniKit</code></td>
-<td style="text-align: center;">c1e0d395975c93d15b3f84ac21097e40b7d5d93f</td>
+<td style="text-align: center;">a80e38b1b7f203014b461f8aff8cead2c067e39d</td>
 </tr>
 </tbody>
 </table>
+</details>
 <h2 id="personalized-customization-for-this-module">Personalized Customization for this Module<a class="headerlink" href="#personalized-customization-for-this-module" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Navigate to the file you need to modify (using the instructions to find the lines from the <a href="../../version/code-custom-edits/#instructions-for-finding-the-lines" target="_blank">Version: Custom Edit</a> page)</p>
+<p>Navigate to the file you need to modify (using the instructions to find the lines from the <a href="../../version/code-custom-edits/#instructions-for-finding-the-lines" target="_blank">Version: Custom Edit</a> page).</p>
+<details class="abstract">
+<summary>How do I navigate to the file? (Click to open/close)</summary>
+<p>Let's do an example.</p>
+<p>Suppose you want to add this customization: <a href="../../version/code-custom-edits/#pods-add-extra-insulin-on-insertion" target="_blank">Pods: Add Extra Insulin on Insertion</a></p>
+<p>The folder name is: <code>OmniBLE/OmniBLE/OmnipodCommon</code><br>
+The file name is: <code>Pod.swift</code></p>
+<p>So you will go to your OmniBLE <abbr title="a copy of code in a github repository other than the original">fork</abbr> (see <a href="#new-fork" target="_blank">New Fork</a> if you don't have a <abbr title="a copy of code in a github repository other than the original">fork</abbr> yet):</p>
+<ol>
+<li>Tap to select <code>OmniBLE</code> folder in that <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>Tap to select <code>OmnipodCommon</code> folder in that folder</li>
+<li>Tap to open the <code>Pod.swift</code> file<ul>
+<li>Once the file is open, tap on the pencil icon and make your edits</li>
+<li>When done, review the <a href="#example-gif">Example <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr></a> which shows the steps needed to save your changes after you complete the edit</li>
+</ul>
+</li>
+</ol>
+<p>The graphic below shows the <code>fork</code> for the <code>OmniBLE</code> submodule with numbers that match the steps in the list above. If you need more detailed instructions, they are found after the graphic.</p>
+<p align="center"><img alt="example navigation to file in fork" src="../img/navigate-submodule-omnible.svg" width="800" /></p>
+<details class="info">
+<summary>More detailed instructions (Click to open/close)</summary>
+<ol>
+<li>Check that this <abbr title="contains project files and each file's revision history">repository</abbr> is the correct submodule and that:<ul>
+<li>Fork has your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Username</li>
+<li>Fork says it is forked from LoopKit</li>
+<li>Fork is up to date with LoopKit</li>
+<li>Tap on the OmniBLE folder to open the next screen</li>
+</ul>
+</li>
+<li>Check that your screen shows:<ul>
+<li><code>OmniBLE/OmniBLE</code> at the top (current folder location)</li>
+<li>Tap on the OmnipodCommon folder to open the next screen</li>
+</ul>
+</li>
+<li>Check that your screen shows:<ul>
+<li><code>OmniBLE/OmniBLE/OmnipodCommon</code> at the top (current folder location)</li>
+<li>Tap on the Pod.swift file to open it</li>
+<li>Tap on the pencil icon (upper right) to start editing the file</li>
+</ul>
+</li>
+</ol>
+<p>Now you are ready to move to the <a href="#example-gif">Example <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr></a> which shows the steps needed to save your changes after you complete the edit.</p>
+</details>
+</details>
 <div class="admonition tip">
 <p class="admonition-title">Pro Tip</p>
 <p>Look at the files you want to change - if more than one change is desired for a single file - do them at the same time.</p>
 </div>
 <p>This section provides the steps to make a single customization for the Module. If you need more than one, just repeat the process and make additional&nbsp;"<span translate="no">"patch" branches</span>.</p>
 <h3 id="example-gif">Example <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr><a class="headerlink" href="#example-gif" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> showing the creation of one customization is shown below. Please review the 4 frames of the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>, read the detailed instructions below and then review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> again. In case you are concerned by the&nbsp;"<span translate="no"><abbr title="formal method to request changes to a repository">Pull Request</abbr></span>&nbsp;shown here; this is to your own <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code>, not back to the original.</p>
+<p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows the steps needed to save an edited file, so you can configure the customization. Please review the 4 frames of the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>, read the <a href="#detailed-instructions">Detailed Instructions</a> below and then review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> again.</p>
+<p>There are 4 frames shown in this <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>; the frame number is noted at the bottom right. Take the time to cycle through several times to observe what you need to do. </p>
+<ul>
+<li>
+<p>Frame 1 shows what to do after you have completed the edits you want for this file</p>
+</li>
+<li>
+<p><strong>Frame 2 shows a <code>Pull Request</code> to your own <abbr title="contains project files and each file's revision history">repository</abbr> - that is OK</strong></p>
+</li>
+<li>
+<p>Frame 3 displays a green <code>Compare &amp; pull request</code> button that would make a <code>Pull Request</code> to a <code>LoopKit/repository</code> - <strong>do NOT click that button</strong></p>
+</li>
+<li>
+<p>Frame 4 shows how to obtain the really-long alphanumeric string (<abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr>) needed to modify your build_loop.yml file</p>
+</li>
+</ul>
 <p align="center"><img alt="GitHub screen while creating a customization" src="../img/browser-customize.gif" width="750" /></p>
 <h3 id="detailed-instructions">Detailed Instructions<a class="headerlink" href="#detailed-instructions" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you followed along above and made the modifations, you can skip ahead to <a href="#prepare-the-customizations">Prepare the Customizations</a>. </p>
+<p>This section provides the detailed steps just explained in <a href="#example-gif">Example <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr></a>.</p>
 <p>You will be using the "pencil" tool in the browser display for your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code>.</p>
 <div class="admonition question">
 <p class="admonition-title">Are there detailed instructions?</p>
@@ -4290,6 +4393,7 @@ SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 <p>Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when your build the app.</p>
 <p>Repeat this process until you've done all your customizations for this Module and then move on to the next Module.</p>
 <h2 id="prepare-the-customizations">Prepare the Customizations<a class="headerlink" href="#prepare-the-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
 <p>Once you prepare the commands, then you will edit the build_loop.yml file of your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> of&nbsp;<span translate="no">LoopWorkspace</span>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Ensure your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> is from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span></p>
@@ -4317,6 +4421,7 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 <p>To view the exact code change associated with that patch, open a browser at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of&nbsp;<code>https://github.com/username/Module/commit/SHA-1</code>.</p>
 <h2 id="update-loopworkspace">Update&nbsp;<span translate="no">LoopWorkspace</span><a class="headerlink" href="#update-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
 <p>The final step is to update your&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr></span>&nbsp;to apply these customizations by adding those customization lines into the build_loop.yml file.</p>
 <p>Return to your&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a github repository other than the original">fork</abbr> for LoopWorkspace</span>&nbsp;and make sure to sync it if needed.</p>
 <ul>
@@ -4327,6 +4432,10 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 <li>Skip ahead to <a href="#add-personal-customizations-to-build_loopyml">Add Personal Customizations to build_loop.yml</a></li>
 </ul>
 </li>
+</ul>
+<details class="abstract">
+<summary>Older versions (Click to open/close)</summary>
+<ul>
 <li>If you are building from an older version of main (version 3.2.3 or earlier), this is left here for your convenience - it will be removed over the next few months - please update soon<ul>
 <li>Locate line 31, which is just above the words:<ul>
 <li><code># Patch Fastlane Match to not print tables</code></li>
@@ -4337,27 +4446,36 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 </li>
 </ul>
-<div class="copy highlight"><span class="filename">Paste into build_loop.yml</span><pre><span></span><code>      # Customize Loop: Download and apply patches
-      - name: Customize Loop
+<div class="copy highlight"><span class="filename">Paste into build_loop.yml</span><pre><span></span><code>    # Customize Loop: Download and apply patches
+    - name: Customize Loop
         run: |
 
-          # For each patch, edit comment line (keep the #) then update curl (and remove the #)
+        # For each patch, edit comment line (keep the #) then update curl (and remove the #)
 
-          # Submodule Loop patches:
-          # Loop: Filename: customization details
-          #curl https://github.com/username/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
+        # Submodule Loop patches:
+        # Loop: Filename: customization details
+        #curl https://github.com/username/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
 
-          # Submodule LoopKit patches:
-          # LoopKit: Filename: customization details
-          #curl https://github.com/username/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
+        # Submodule LoopKit patches:
+        # LoopKit: Filename: customization details
+        #curl https://github.com/username/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
 
-          # Submodule xxxxx patches: Follow prototype above
+        # Submodule xxxxx patches: Follow prototype above
 </code></pre></div>
+</details>
 <h3 id="add-personal-customizations-to-build_loopyml">Add Personal Customizations to build_loop.yml<a class="headerlink" href="#add-personal-customizations-to-build_loopyml" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Open the text file in which you saved the customization lines.</p>
-<p>For a given submodule, paste the comment curl lines that you prepared in <a href="#prepare-customization-lines">Prepare customization lines</a> similar to the examples, near line 239, that are commented out and provided as an example. The best place to paste these is at the end of the <code># Customize Loop: Download and apply patches</code> section and before the <code># Patch Fastlane Match to not print tables</code> line.</p>
-<p>The indenting needs to match, so tab or (shift-tab) to line up the columns.</p>
+<p>For a given submodule, paste the "comment" and "curl" lines that you prepared in <a href="#prepare-customization-lines">Prepare customization lines</a> similar to the examples, near line 279 (<code>main</code> or 239 for <code>dev</code>), that are commented out and provided as an example. The best place to paste these is at the end of the <code># Customize Loop: Download and apply patches</code> section and before the <code># Patch Fastlane Match to not print tables</code> line.</p>
+<p>The indenting needs to match, so tab or (shift-tab) to line up the columns. The graphic below shows a couple of common mistakes.</p>
+<ul>
+<li>All lines within a given section need to start in the same column (see the vertical dashed green line)</li>
+<li>Comments (lines starting with a <code>#</code>) placed in the wrong column will cause the build to fail</li>
+<li>Commands (line starting with <code>curl</code>) placed in the wrong column will cause the build to fail</li>
+</ul>
+<p>The command placed in the correct column has 4 "words" highlighted with red rectangles. You must have the correct values for all 4 of these places or the build will fail.</p>
+<p align="center"><img alt="indentation and blank lines are important" src="../img/modify-build-loop-yml.svg" width="600" /></p>
 <p>It is best to leave a blank line between customizations.</p>
+<p><strong>You must have a blank line</strong> after the last customization and before the <code># Patch Fastlane Match to not print tables</code> line or the build will fail.</p>
 <p><strong>Once you are done with all the edits for build_loop.yml you will <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the changes to your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> directly.</strong></p>
 <ul>
 <li>Once you have finished the edits for build_loop.yml</li>
@@ -4382,6 +4500,37 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 </ul>
 <p>Wait about 2 minutes before walking away to make sure there are no errors. If you get an error, then look for the first "did not apply" error message and fix the customization right before that line.</p>
 <p>In about 1 hour, your customized app will be available for installation on your phone via <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
+<h2 id="extra-information">Extra Information<a class="headerlink" href="#extra-information" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The rest of this page has additional information most people can skip. If a mentor is helping you, they may use some of this information.</p>
+<h3 id="how-to-use-the-patches-folder">How to Use the <code>patches</code> Folder<a class="headerlink" href="#how-to-use-the-patches-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>With the release of 3.4.x, you can add patches to your <code>GitHub-Username/LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr> in the <code>patches</code> folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop.yml file.</p>
+<p>Refer to <a href="#prepare-customization-lines" target="_blank">Prepare customization lines</a>:</p>
+<ul>
+<li>extract the text from "https:" through "patch" and paste that into a new tab</li>
+<li>this will open a browser similar to the following graphic</li>
+</ul>
+<p align="center"><img alt="open patch at GitHub" src="../img/browser-open-to-patch.png" width="750" /></p>
+<p>Now you need to download that file (Save Page As, if using chrome).</p>
+<p>Once the file is downloaded to a sensible name, make a copy (or rename it) to indicate that you have edited the file to make it a <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> level patch. An example is shown below.</p>
+<ul>
+<li>Top file shows the original download</li>
+<li>Lower file shows the renamed and edited version:<ul>
+<li>Add the name of the module to the "a" and "b" directory paths so the patch is applied to the correct folder (from LoopWorkspace)</li>
+<li>In this example <code>OmniBLE/</code> was added in 4 places as highlighted by red rectangles</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="download and then edit patch for Workspace" src="../img/prepare-workspace-patch.svg" width="750" /></p>
+<p>If you've gotten this far, keep going. No more pretty graphics, but I think you can figure it out.</p>
+<ul>
+<li>Return to your <code>GitHub-Username/LoopWorkspace</code> <abbr title="a copy of code in a github repository other than the original">fork</abbr>, tap on the <code>patches</code> folder</li>
+<li>At the upper right, click on <code>Add file</code> dropdown and choose <code>Upload files</code><ul>
+<li>Drag and drop your <abbr title="a grouping of several repositories into a complete package">Workspace</abbr> level patch into the window</li>
+<li>Commit to your default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+</ul>
+</li>
+<li>Test the build to make sure everything worked</li>
+</ul>
 <h3 id="customization-and-sha-1">Customization and <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr><a class="headerlink" href="#customization-and-sha-1" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When you <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> your customization to your <code>branch</code> of your <code>fork</code>, there is a new <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> associated with that step. The <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for a given <abbr title="version of code within a single repository or workspace repository">branch</abbr>, typically <code>main</code> or <code>dev</code> identifies to a mentor exactly which version of code you used for your build.</p>
 <p>The <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for customized code will not be recognized by a developer or mentor. If you are having a problem and need to ask for help you need to identify what the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> was before you added your customizations.</p>

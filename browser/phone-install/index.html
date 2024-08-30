@@ -1140,6 +1140,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Disable Automatic Install from TestFlight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#previous-builds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previous Builds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unexpected-testflight-beta-expiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unexpected TestFlight Beta Expiration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3487,6 +3511,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Disable Automatic Install from TestFlight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#previous-builds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previous Builds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unexpected-testflight-beta-expiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unexpected TestFlight Beta Expiration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3599,12 +3647,40 @@
 <p>Once the app is available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, you can adjust whether it is automatically installed when updated versions are available. We recommend you disable automatic installation so you can choose when to switch to a newer build, which in some cases, may be a newer version.</p>
 <p>Go back to the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone and tap on your app name in the list to see an expanded screen similar to the graphic below. The row to enable or disable automatic updates is highlighted in the graphic, which shows the feature disabled. This is recommended for all users.</p>
 <ul>
-<li>If you leave automatic update enabled (default), then whenever a new build is created and uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> , it will be installed immediately.</li>
-<li>WARNING: If you switch between Building with Browser and <em>Mac</em>, you must disable automatic update or <abbr title="program used to build an app">Xcode</abbr> will not be able to install to your phone.</li>
+<li>If you leave automatic update enabled (default), then whenever a new build is created and uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> , it will be installed immediately (see <a href="#unexpected-testflight-expiration">Unexpected <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Expiration</a>)</li>
+<li>WARNING: If you switch between Building with Browser and <em>Mac</em>, you must disable automatic update or <abbr title="program used to build an app">Xcode</abbr> will not be able to install to your phone</li>
 </ul>
 <p align="center"><img alt="enable or disable automatic update for Loop" src="../img/testflight-auto-update.png" width="300" /></p>
 <p>When you are ready to install, just open the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app and click Install to get the most recent build and then click Open when it completes the installation. All your settings and connections to <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump are maintained.</p>
-<p>If you tap on the bottom row that says <code>Previous Builds</code>, highlighted by the dashed-green rectangle, you can view and choose an older build (as long as it has not expired).</p>
+<h3 id="previous-builds">Previous Builds<a class="headerlink" href="#previous-builds" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you tap on the bottom row that says <code>Previous Builds</code>, highlighted by the dashed-green rectangle, you can view and choose an older (or lower version number) build (as long as it has not expired). </p>
+<ul>
+<li>In some cases, you need to do this to see the newest build</li>
+<li>For example, it you build version 3.5.0 (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) accidentally and then switched to 3.4.x (<code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>), <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> shows you the 3.5.0 version on the screen and you need to go to previous builds to find your newer 3.4.x build</li>
+</ul>
+<h3 id="unexpected-testflight-beta-expiration">Unexpected <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Beta Expiration<a class="headerlink" href="#unexpected-testflight-beta-expiration" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition important">
+<p class="admonition-title"><em>Apple <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Bug</p>
+<p>It doesn't happen to everyone but it has happened a few times over the years and only for people who have Automatic Update enabled for their <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app.</p>
+<p>Symptom:</p>
+<ul>
+<li>App has plenty of time before expiration</li>
+<li>A new build becomes available, for example from the automatic monthly rebuild</li>
+<li>User is told <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Beta is not available</li>
+</ul>
+<p>Solution:</p>
+<ul>
+<li>Open <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> and turn off automatic installation for your app</li>
+<li>Install the previous version of the app on the phone manually (with monthly build, it should still be ok)</li>
+<li>Manually start a new build (if there were updates you want to get)</li>
+<li>Manually install the new update</li>
+</ul>
+<p>More information:</p>
+<ul>
+<li><a href="https://forums.developer.apple.com/forums/thread/720033" target="_blank">Link 1: Apple forum</a></li>
+<li><a href="https://stackoverflow.com/questions/74588716/testflight-beta-has-expired" target="_blank">Link 2: Stackoverflow thread</a></li>
+</ul>
+</div>
 <h2 id="testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child<a class="headerlink" href="#testflight-for-a-child" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The adult (<em>Apple Developer Account</em> owner) can log into Media &amp; Purchase (see steps below) without affecting the child <em>Apple</em> ID associated with a phone (and thus their health records used by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app). After the adult installs or updates the app using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, they probably should reverse those steps to remove their credentials from Media &amp; Purchase.</p>
 <p>Media &amp; Purchase affects access to the App Store, Books, Music and Podcasts.</p>
