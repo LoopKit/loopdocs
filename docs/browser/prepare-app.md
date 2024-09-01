@@ -169,7 +169,7 @@ The example graphic below has numbered steps that match these directions:
 
 If you did not need to make changes, the `Save` button will not be active.
 
-* Tap on the `< All Identifiers` button at the top left
+* Tap on the `< All Identifiers` link at the top left
 
 The full list of Identifiers should be displayed again.
 
