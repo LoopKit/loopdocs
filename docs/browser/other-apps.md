@@ -261,7 +261,7 @@ The `Edit Your App ID Configuration` screen will open.
 
 3. If you did not need to make changes, the `Save` button will not be active.
 
-    * Tap on the `< All Identifiers` button at the top left
+    * Tap on the `< All Identifiers` link at the top left
 
 4. The full list of Identifiers should be displayed again.
 
