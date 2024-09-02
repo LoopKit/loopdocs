@@ -99,11 +99,29 @@ sequenceDiagram
 
 ## Libre CGM
 
+### Troubleshoot Connections
+
+The "normal" Libre 2 sensors have a firmware configuration that makes them slow to reconnect when they loose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
+
+If you try to pair a sensor in the app multiple times in a short period (let's say within a couple of minutes), you may need to just stop and wait.
+
+* A "pairing" sends a lot more (16 times the normal amount) of data between the app and sensor than a normal NFC scan to retrieve glucose data
+* Multiple pairing attempts may make the sensor temporarily unable to function
+* If this matches your use case, shut off your phone and let it stay shut down for up to five minutes
+
+Optionally: you can use miaomiao or bubble third party transmitters attached on top of your normal libre 2 sensors . Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of libre 1 sensors, but it also works with libre 2 sensors.
+
 ### Can I use Libre sensors with a reader like Miao Miao?
 
-Loop 3.4.0 and later allows any Libre sensor supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
+Loop 3.4.x and later enables the use of those Libre sensors supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
 
-See [Which CGMs are supported by the *Loop* app?](#which-cgms-are-supported-by-the-loop-app).
+### What about other Libre sensors?
+
+There are a number of libre sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [LibreLinkUp](https://librelinkup.com/){: target="_blank" }. This enables you to upload your data to the LibreLinkUp servers and then access the data from there.
+
+**The use of LibreLinkUp requires internet access via WiFi or Cell service.**
+
+If this is your only option for CGM, evaluate whether you want to add xDrip4iOS as a CGM option. Instructions for this customization are found at [Loop and Learn: Add CGM to Loop](https://www.loopandlearn.org/custom-code/#add-cgm){: target="_blank" }. The reason to recommend this option is that xDrip4iOS can sense when the Libre transmits glucose readings to your phone, although it cannot read the glucose value. Shortly thereafter, it will request the CGM reading from LibreLinkUp. If you prefer not to customize Loop, then you can configure [Nightscout](https://nightscout.github.io/uploader/uploaders/#abbott-freestyle-libre){: target="_blank" } to access data from LibreLinkUp and then use Nightscout as a CGM.
 
 ## Can I use Eversense?
 

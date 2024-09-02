@@ -72,6 +72,7 @@
 *[modal]: message or alert appearing in front of app that must be acknowledged to return to app
 *[Modules]: the Loop code uses a number of modules to handle different components of the entire app
 *[Monterey]: operating system for Mac, macOS 12.x
+*[NFC]: Near-Field Communication is used for scanning devices such as Libre sensors
 *[Nightscout]: a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`
 *[Onboarding]: familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
 *[Omnipod]: Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.

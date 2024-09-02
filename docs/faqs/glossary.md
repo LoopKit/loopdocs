@@ -158,6 +158,8 @@ When Google Translate is selected:
 
 **<span translate="no">Monterey</span>**&nbsp; (Monterey): operating system for Mac, macOS 12.x
 
+**<span translate="no">NFC</span>**&nbsp; (NFC): Near-Field Communication is used for scanning devices such as Libre sensors
+
 **<span translate="no">Nightscout</span>**&nbsp; (Nightscout): a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`
 
 **<span translate="no">Onboarding</span>**&nbsp; (Onboarding): familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
