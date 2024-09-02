@@ -109,7 +109,7 @@ If you try to pair a sensor in the app multiple times in a short period (let's s
 * Multiple pairing attempts may make the sensor temporarily unable to function
 * If this matches your use case, shut off your phone and let it stay shut down for up to five minutes
 
-Optionally: you can use miaomiao or bubble third party transmitters attached on top of your normal libre 2 sensors . Although the setup is a bit more bulky, it works and does not have connection problems. Libretransmitter supports bubble and miaomiao on top of libre 1 sensors, but it also works with libre 2 sensors.
+Optionally: you can use miaomiao or bubble third party transmitters attached on top of your normal libre 2 sensors . Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of libre 1 sensors, but it also works with libre 2 sensors.
 
 ### Can I use Libre sensors with a reader like Miao Miao?
 
