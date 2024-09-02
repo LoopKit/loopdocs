@@ -3228,9 +3228,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#troubleshoot-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#can-i-use-libre-sensors-with-a-reader-like-miao-miao" class="md-nav__link">
     <span class="md-ellipsis">
       Can I use Libre sensors with a reader like Miao Miao?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-about-other-libre-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      What about other Libre sensors?
     </span>
   </a>
   
@@ -3551,9 +3569,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#troubleshoot-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#can-i-use-libre-sensors-with-a-reader-like-miao-miao" class="md-nav__link">
     <span class="md-ellipsis">
       Can I use Libre sensors with a reader like Miao Miao?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-about-other-libre-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      What about other Libre sensors?
     </span>
   </a>
   
@@ -3701,9 +3737,21 @@
     dexcom   --&gt;&gt; user:     New Sensor operational
     deactivate dexcom</code></pre>
 <h2 id="libre-cgm">Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#libre-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="troubleshoot-connections">Troubleshoot Connections<a class="headerlink" href="#troubleshoot-connections" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The "normal" Libre 2 sensors have a firmware configuration that makes them slow to reconnect when they loose the connection to <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> (both <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> settings, Display &amp; Brightness, Auto-Lock.</p>
+<p>If you try to pair a sensor in the app multiple times in a short period (let's say within a couple of minutes), you may need to just stop and wait.</p>
+<ul>
+<li>A "pairing" sends a lot more (16 times the normal amount) of data between the app and sensor than a normal <abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> scan to retrieve glucose data</li>
+<li>Multiple pairing attempts may make the sensor temporarily unable to function</li>
+<li>If this matches your use case, shut off your phone and let it stay shut down for up to five minutes</li>
+</ul>
+<p>Optionally: you can use miaomiao or bubble third party transmitters attached on top of your normal libre 2 sensors . Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of libre 1 sensors, but it also works with libre 2 sensors.</p>
 <h3 id="can-i-use-libre-sensors-with-a-reader-like-miao-miao">Can I use Libre sensors with a reader like Miao Miao?<a class="headerlink" href="#can-i-use-libre-sensors-with-a-reader-like-miao-miao" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3.4.0 and later allows any Libre sensor supported by <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop" target="_blank">LibreTransmitter</a>.</p>
-<p>See <a href="#which-cgms-are-supported-by-the-loop-app">Which CGMs are supported by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app?</a>.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 3.4.x and later enables the use of those Libre sensors supported by <a href="https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop" target="_blank">LibreTransmitter</a>.</p>
+<h3 id="what-about-other-libre-sensors">What about other Libre sensors?<a class="headerlink" href="#what-about-other-libre-sensors" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There are a number of libre sensors in which the only option for digital access to the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> readings is to use the app provided by the vendor: <a href="https://librelinkup.com/" target="_blank">LibreLinkUp</a>. This enables you to upload your data to the LibreLinkUp servers and then access the data from there.</p>
+<p><strong>The use of LibreLinkUp requires internet access via WiFi or Cell service.</strong></p>
+<p>If this is your only option for <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, evaluate whether you want to add xDrip4iOS as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> option. Instructions for this customization are found at <a href="https://www.loopandlearn.org/custom-code/#add-cgm" target="_blank"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn: Add <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>. The reason to recommend this option is that xDrip4iOS can sense when the Libre transmits glucose readings to your phone, although it cannot read the glucose value. Shortly thereafter, it will request the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading from LibreLinkUp. If you prefer not to customize <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, then you can configure <a href="https://nightscout.github.io/uploader/uploaders/#abbott-freestyle-libre" target="_blank"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></a> to access data from LibreLinkUp and then use <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
 <h2 id="can-i-use-eversense">Can I use Eversense?<a class="headerlink" href="#can-i-use-eversense" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There is a method to upload Eversense to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> using an Android phone, but there is no method to read an Eversense directly with an iPhone at this time.</p>
 <p>You can use <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with Eversense, but that requires internet access.</p>
