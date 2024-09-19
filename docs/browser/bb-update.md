@@ -2,7 +2,9 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac*, please see: [Update/Rebuild with *Mac*](../build/updating.md)**
+**For *Mac*, please see: [Update/Rebuild with *Mac*](../build/updating.md){: target="_blank" }**
+
+> Regardless of build method, this is an **update** and will install over your existing app; your **settings are maintained including your current CGM and Pump.**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App
@@ -54,7 +56,7 @@
 
 Under ordinary circumstances, you do not *have to* rebuild or update your *Loop* app until *TestFlight* forces you to (90 days). However, there is no harm in building more frequently.
 
-* You control when the new app is installed on your phone, refer to: [Install on Phone: Disable Automatic Install from *TestFlight*](phone-install.md#disable-automatic-install-from-testflight)
+* You control when the new app is installed on your phone, refer to: [Install on Phone: Disable Automatic Install from *TestFlight*](phone-install.md#disable-automatic-install-from-testflight){: target="_blank" }
 * You always want a build available in the *TestFlight* app
     * You can use *TestFlight* to quickly install the app if you loose or break your phone and need to replace it
     * You can use *TestFlight* to quickly install the app if someone accidentally deletes the app from your phone
