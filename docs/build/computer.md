@@ -91,6 +91,19 @@ You need to have 50 GB free space in order to install Xcode as directed on the [
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
+## Which Macs Are Compatible with macOS Sequoia?
+
+Sequoia is not yet required for building the *Loop* app on a phone running iOS 18 or higher with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments. The only difference between this list and the one for Sonoma is the MacBook Air must be newer for Sequoia.
+
+* MacBook Pro introduced in 2018 or later
+* MacBook Air introduced in 2020 or later
+* Mac mini introduced in 2018 or later
+* iMac introduced in late 2019 or later
+* iMac Pro introduced in 2017 or later
+* Mac Studio introduced in 2022 or later
+* Mac Pro introduced in 2019 or later
+* get the full list from [Apple for Sequoia](https://support.apple.com/en-us/120282){: target="_blank" }
+
 ## Which Macs Are Compatible with macOS Sonoma?
 
 Sonoma is required for building the *Loop* app on a phone running iOS 17.4 or higher with the *Mac* method. You can install Sonoma on the following:
@@ -106,7 +119,7 @@ Sonoma is required for building the *Loop* app on a phone running iOS 17.4 or hi
 
 ## Older Macs
 
-Look into building with [GitHub Actions](../browser/bb-overview.md) - no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required). Works with any computer (PC or Mac or Tablet).
+Look into building with [GitHub Actions](../browser/bb-overview.md){: target="_blank" } - no need to worry about versions for Mac OS or Xcode - all done for you on GitHub (some configuration required). Works with any computer (PC or Mac or Tablet).
 
 ## Next Step:
 
