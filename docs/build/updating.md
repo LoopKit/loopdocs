@@ -248,12 +248,12 @@ The instructions do not hold your hand.
 
 Here are the different steps you need to follow when doing the Direct Download instead of the App Store method:
 
-1. [Login to your Apple developer account](https://developer.apple.com/account){: target="_blank" }
-    - Examine the menus (on my computer there are buttons on the left-hand side)
-    - Click on Downloads (under Additional Resources)
-    - Look at menu items (on my computer there are buttons at the top) that say Beta, Release, Profiles and Logs, and More
-    - Click on More
-    - Scroll down until you find the item you want (for example, Xcode 13)
+1. Open the [Apple Developer Download page](https://developer.apple.com/download){: target="_blank" }
+    - You may need to login
+    - Examine the menus (on my computer there are buttons across the top)
+    - Click on Applications
+    - Look at the available applications, which should include one or more Xcode version
+    - Scroll down until you find the item you want (for example, Xcode 15.4 or Xcode 16)
     - Click on View Details and click on the Download button for the "xip" file
 1. Wait for Download to complete
 1. Expand the file by clicking on it in Finder
