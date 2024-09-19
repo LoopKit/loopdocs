@@ -75,11 +75,17 @@ After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it i
 
 ## How do all the minimum versions relate to each other?
 
-### Compatible Versions#
+### Compatible Versions
 
-The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xcode version 15 or higher regardless of the iOS on the phone. This requires macOS 13.5 or higher. If your phone is iOS 17.4 or newer, you must have macOS 14.0 or higher.  As an alternative, use [Build with Browser](../browser/bb-overview.md), which supports iOS 15, 16, and 17.
+The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xcode version 15 or higher regardless of the iOS on the phone. This requires macOS 13.5 or higher.
 
-When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 17.6.1.
+* If your phone is iOS 17.4 or newer, you must have macOS 14.0 or higher.
+* If your phone is iOS 18.0 or newer, you must have macOS 14.5 or higher.
+* As an alternative, use [Build with Browser](../browser/bb-overview.md){: target="_blank" }, which supports iOS 15, 16, 17 and 18.
+
+When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 18.0.
+
+> Until a fix is applied, building with macOS 14.6 (or 15.0) using Xcode 16 builds Loop but the provisioning profile (expiration) date is not yet captured.
 
 The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.4.1</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
 
@@ -87,6 +93,7 @@ Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1,
 
 | iOS Version | minimum Xcode | minimum macOS | 
 |:---:|:---:|:---:|
+| 18.0 | 15.4 | 14.5 |
 | 17.5 | 15.4 | 14.0 |
 | 17.4 | 15.3 | 14.0 |
 | 15.1 to<br>17.0 | 15.0 | 13.5 |

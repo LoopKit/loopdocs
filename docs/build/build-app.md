@@ -32,14 +32,14 @@ If you are running iOS 15/watchOS 8, you do not have <code>Developer Mode</code>
 
 ### Upgrade from iOS 15 to newer version
 
-**If you upgrade an iOS 15 phone to iOS 16 or 17, the *Loop* app will not open until you enable <code>Developer Mode</code> on that phone.**
+**If you upgrade an iOS 15 phone to iOS 16 or newer, the *Loop* app will not open until you enable <code>Developer Mode</code> on that phone.**
 
 You will see a message similar to the next graphic.
 
 ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
 {align="center"}
 
-If you are running iOS 16 or 17 with watchOS 9 or newer, you must enable <code>Developer Mode</code> to run or build Loop directly from Xcode. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about <code>Developer Mode</code>](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device){: target="_blank" }.
+If you are running iOS 16 or newer with watchOS 9 or newer, you must enable <code>Developer Mode</code> to run or build Loop directly from Xcode. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about <code>Developer Mode</code>](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device){: target="_blank" }.
 
 ### Prepare your Phone and Watch
 
@@ -332,7 +332,7 @@ The first time you build, there will be steps that will not be required for subs
     3. Running
         * Wait for app to open on your phone
     
-    With iOS 17, it takes longer for the app to open on your phone after you see the "Running" message than with earlier iOS versions. Wait for it.
+    With *iOS* 17 and newer, it takes longer for the app to open on your phone after you see the "Running" message than with earlier iOS versions. Wait for it.
  
 Refer to the GIF below:
 

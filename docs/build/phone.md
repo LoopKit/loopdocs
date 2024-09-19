@@ -20,17 +20,24 @@
 
 ## Which Devices Are Compatible?
 
-The *Loop* app requires an *Apple* device and uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which is required for the *Loop* app. It may be possible with newer iPads and newer *iOS*, but this has not been tested.
+The *Loop* app requires an *Apple* device and uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which used to be required, and is still strongly recommended, for the *Loop* app. It may be possible to run Loop with newer iPads and newer *iOS*, but this has not been tested.
 
 You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. The *Loop* app is compatible with iPhone devices with *iOS* 15.1 or newer. 
 
-* It is unusual for three different *iOS* to be supported
+* It is unusual for four different *iOS* to be supported
 * The developers try to maintain support for the current and one-level earlier *iOS*
     * Be prepared for your *iOS* 15 device to no longer be supported in future releases
+    * Be prepared for your *iOS* 16 device to no longer be supported in future releases
 
 ### Compatible Device
 
-These devices are compatible.
+All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. Those that only support *iOS* 15 or 16 may become incompatible for the next version of the *Loop* app, but can be used with `Loop version 3.4.x`.
+
+These phones require *iOS* 18
+
+- iPhone 16, all variants
+
+These phones are compatible with both *iOS* 17 and 18
 
 - iPhone 15, all variants
 - iPhone 14, all variants
@@ -41,12 +48,12 @@ These devices are compatible.
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
-These devices are compatible (now), but are limited to *iOS* 16.
+These phones are limited to *iOS* 16.
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants
 
-These devices are compatible (now), but are limited to *iOS* 15.
+These phones are limited to *iOS* 15.
 
 - iPhone 7, all variants
 - iPhone 6s or 6s Plus, note the `s`
@@ -55,7 +62,7 @@ These devices are compatible (now), but are limited to *iOS* 15.
 
 ## Find Your *iOS*
 
-Your *iOS* version can be found under the phone Settings -> General -> About display as shown below. The *iOS* number is found on the `Software Version` line.
+Your *iOS* version can be found under the phone Settings -> General -> About display on the `iOS Version` line as shown below.
 
 ![phone current iOS display](img/ios.svg){width="300"}
 

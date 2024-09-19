@@ -2,7 +2,9 @@
 
 **This page is only relevant when building with a browser.**
 
-**For *Mac*, please see: [Update/Rebuild with *Mac*](../build/updating.md)**
+**For *Mac*, please see: [Update/Rebuild with *Mac*](../build/updating.md){: target="_blank" }**
+
+> Regardless of build method, this is an **update** and will install over your existing app; your **settings are maintained including your current CGM and Pump.**
 
 ???+ info "Time Estimate (click to open/close)"
     Build the *Loop* App
@@ -54,7 +56,7 @@
 
 Under ordinary circumstances, you do not *have to* rebuild or update your *Loop* app until *TestFlight* forces you to (90 days). However, there is no harm in building more frequently.
 
-* You control when the new app is installed on your phone, refer to: [Install on Phone: Disable Automatic Install from *TestFlight*](phone-install.md#disable-automatic-install-from-testflight)
+* You control when the new app is installed on your phone, refer to: [Install on Phone: Disable Automatic Install from *TestFlight*](phone-install.md#disable-automatic-install-from-testflight){: target="_blank" }
 * You always want a build available in the *TestFlight* app
     * You can use *TestFlight* to quickly install the app if you loose or break your phone and need to replace it
     * You can use *TestFlight* to quickly install the app if someone accidentally deletes the app from your phone
@@ -177,19 +179,21 @@ Open your *GitHub* account and select your <code>LoopWorkspace repository</code>
 
 ### Up to Date or Behind
 
-* If your `fork` is up to date with LoopKit version, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:{branch}` - there is no need to build again unless your Loop app in *TestFlight* is about to expire - in which case, proceed to [Build the *Loop* App](#build-the-loop-app)
+The bullets below show typical messages when you are building the `main` branch. If you are building a different `branch`, the messages show that `branch name` instead of `main`.
 
-* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch` and if it succeeds, move on to [Build the *Loop* App](#build-the-loop-app)
+* If your `fork` is up to date with LoopKit, you will see the message `This branch is up to date with LoopKit/LoopWorkspace:main` - there is no need to build again unless your Loop app in *TestFlight* is about to expire - in which case, proceed to [Build the *Loop* App](#build-the-loop-app)
+
+* If your `fork` shows a message such as `This branch is 2 commits behind LoopKit/LoopWorkspace:main` and you want to update and build, then click `Sync Fork` by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on `Update branch` and if it succeeds, move on to [Build the *Loop* App](#build-the-loop-app)
 
 ![message displayed when your fork of LoopWorkspace is behind LoopKit version](img/github-build-check-fork-status.svg){width="700"}
 {align="center"}
 
 ### Ahead and Behind
 
-* If your `fork` shows a message such as `This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main`; you might need to manually resolve a conflict.
+* If your `fork` shows a message such as `This branch is 2 commits ahead, 16 commits behind LoopKit/LoopWorkspace:main`; you might need to manually resolve a conflict.
     * This can happen if you customized your build
     * Sometimes GitHub lets you keep your customizations while updating the `fork`
-    * The GIF below is an example for LoopFollow
+    * The GIF below is an example for the **LoopFollow** app
         * Frame 1 shows the repository is both ahead and behind
         * Frame 2 shows the `Sync Fork` option was selected
         * Frame 3 shows that GitHub was able to merge the new branch with existing customization
