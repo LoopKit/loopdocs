@@ -3790,7 +3790,10 @@
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>This page is only relevant when building with a browser.</strong></p>
-<p><strong>For <em>Mac</em>, please see: <a href="../../build/updating/">Update/Rebuild with <em>Mac</em></a></strong></p>
+<p><strong>For <em>Mac</em>, please see: <a href="../../build/updating/" target="_blank">Update/Rebuild with <em>Mac</em></a></strong></p>
+<blockquote>
+<p>Regardless of build method, this is an <strong>update</strong> and will install over your existing app; your <strong>settings are maintained including your current <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump.</strong></p>
+</blockquote>
 <details class="info" open="open">
 <summary>Time Estimate (click to open/close)</summary>
 <p>Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
@@ -3848,7 +3851,7 @@
 <h3 id="when-to-update-or-rebuild">When to Update or Rebuild<a class="headerlink" href="#when-to-update-or-rebuild" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Under ordinary circumstances, you do not <em>have to</em> rebuild or update your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app until <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> forces you to (90 days). However, there is no harm in building more frequently.</p>
 <ul>
-<li>You control when the new app is installed on your phone, refer to: <a href="../phone-install/#disable-automatic-install-from-testflight">Install on Phone: Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
+<li>You control when the new app is installed on your phone, refer to: <a href="../phone-install/#disable-automatic-install-from-testflight" target="_blank">Install on Phone: Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
 <li>You always want a build available in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app<ul>
 <li>You can use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> to quickly install the app if you loose or break your phone and need to replace it</li>
 <li>You can use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> to quickly install the app if someone accidentally deletes the app from your phone</li>
@@ -3994,21 +3997,22 @@
 </blockquote>
 <p>Open your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and select your <code>LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></code> from your repositories list.</p>
 <h3 id="up-to-date-or-behind">Up to Date or Behind<a class="headerlink" href="#up-to-date-or-behind" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The bullets below show typical messages when you are building the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you are building a different <code>branch</code>, the messages show that <code>branch name</code> instead of <code>main</code>.</p>
 <ul>
 <li>
-<p>If your <code>fork</code> is up to date with LoopKit version, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is about to expire - in which case, proceed to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
+<p>If your <code>fork</code> is up to date with LoopKit, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:main</code> - there is no need to build again unless your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is about to expire - in which case, proceed to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
 </li>
 <li>
-<p>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code> and if it succeeds, move on to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
+<p>If your <code>fork</code> shows a message such as <code>This branch is 2 commits behind LoopKit/LoopWorkspace:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic below, then in the pop-up window, tap on <code>Update branch</code> and if it succeeds, move on to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></p>
 </li>
 </ul>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <h3 id="ahead-and-behind">Ahead and Behind<a class="headerlink" href="#ahead-and-behind" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
-<li>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually resolve a conflict.<ul>
+<li>If your <code>fork</code> shows a message such as <code>This branch is 2 commits ahead, 16 commits behind LoopKit/LoopWorkspace:main</code>; you might need to manually resolve a conflict.<ul>
 <li>This can happen if you customized your build</li>
 <li>Sometimes <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> lets you keep your customizations while updating the <code>fork</code></li>
-<li>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below is an example for <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr><ul>
+<li>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below is an example for the <strong><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></strong> app<ul>
 <li>Frame 1 shows the <abbr title="contains project files and each file's revision history">repository</abbr> is both ahead and behind</li>
 <li>Frame 2 shows the <code>Sync Fork</code> option was selected</li>
 <li>Frame 3 shows that <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> was able to merge the new <abbr title="version of code within a single repository or workspace repository">branch</abbr> with existing customization</li>
