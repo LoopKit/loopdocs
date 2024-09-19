@@ -85,6 +85,8 @@ The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xc
 
 When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 18.0.
 
+> Until a fix is applied, building with macOS 14.6 (or 15.0) using Xcode 16 builds Loop but the provisioning profile (expiration) date is not yet captured.
+
 The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.4.1</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
 
 Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
