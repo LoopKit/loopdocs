@@ -21,7 +21,7 @@ If you have an existing *Nightscout* site, it's still a good idea to review that
 
 The graphic below shows the steps needed to add your *Nightscout* site to the *Loop* app. See the tip below about using stored passwords on the phone. If you have your credentials stored in passwords, simply tap the URL row to show the password option and select it.
 
-1. Select Settings in the *Loop* app and scroll down to Services and tap the Add Service Row
+1. While in the *Loop* app, tap on the Settings icon, scroll down to Services and tap the Add Service Row
 2. Choose Nightscout Service
 3. Tap on the URL row
     * If your credentials are not saved in your Passwords, enter the URL including https:// in this row
@@ -49,7 +49,9 @@ The two most common errors in filling out this section are:
 !!! tip "Add a Password"
     To make it easy to access your Nightscout URL and API_SECRET, add a password to your iPhone:
 
-    1. iOS Settings, Password
+    1. The first step depends on iOS Version:
+        * For iOS 17 and earlier, use iOS Settings, Passwords
+        * For iOS 18 and newer, use the *Apple* [Password app](https://support.apple.com/en-us/104955){: target="_blank" }
     1. Tap + to add
         * Enter a name, e.g., "Nightscout" in the Title row
         * Enter the URL without the "https://" in the Website row
