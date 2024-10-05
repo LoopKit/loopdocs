@@ -183,7 +183,7 @@ One exception - if you've chosen to use a CGM source that does require the inter
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc){: target="_blank" } hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the *Loop and Learn* team kept it on life-support. It was updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or `iAPS`. Do not use an application without an owner.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc){: target="_blank" } hasn't really had an owner to develop it for several years, but many depended on it. Because of that, the *Loop and Learn* team kept it on life-support. It was updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or `Trio`. Do not use an application without an owner.
 
 Many features people used with FreeAPS are now included in `Loop 3` or can be added with customization. The `dev` branch has Libre support, see [Build *Loop* Dev](../version/build-dev.md).
 

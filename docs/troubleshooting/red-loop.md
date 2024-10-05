@@ -36,7 +36,7 @@ We have not seen this issue since the update of the *Loop* app from version 2 to
 
 * Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
 
-!!! warning "Be Careful with Phone Reboots with Loop 2 or iAPS"
+!!! warning "Be Careful with Phone Reboots with Loop 2"
 
     If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.
     
