@@ -32,9 +32,9 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 
 ### Lost Pod Information
 
-We have not seen this issue since the update of the *Loop* app from version 2 to version 3 when the method for saving data was updated. Some other applications in the open-source sets of codes might still have this issue. (It was reported in iAPS, for example.) The warning below is left in LoopDocs but if you are running *Loop* version 3.x.x, you do not need to worry about reboots.
+We have not seen this issue since the update of the *Loop* app from version 2 to version 3 when the method for saving data was updated. Some other applications in the open-source sets of codes might still have this issue. (It was reported in iAPS, for example. It has been fixed in Trio.) The warning below is left in LoopDocs but if you are running *Loop* version 3.x.x, you do not need to worry about reboots.
 
-* Before attempting to resolve a red-loop with a phone reboot; please review this section. It can affect the stored CGM information as well as the stored pump information.
+* Before attempting to resolve a red-loop with a phone reboot when you are running a `Loop` version older than version 3.0 (or iAPS); please review this section. It can affect the stored CGM information as well as the stored pump information.
 
 !!! warning "Be Careful with Phone Reboots with Loop 2 or iAPS"
 

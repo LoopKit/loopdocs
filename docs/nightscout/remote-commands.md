@@ -32,7 +32,7 @@ Options:
 ![example screen for nightscout and qr code](img/qr-code-example.png ){width="650"}
 {align="center"}
 
-While you are on the Settings -> Services -> NightScout screen, notice that the 6-digit number on the One-Time Password row updates every 30 seconds.
+While you are on the *Loop* Settings -> Services -> NightScout screen, notice that the 6-digit number on the One-Time Password row updates every 30 seconds.
 
 ## Set up an Authentication App
 
@@ -52,7 +52,10 @@ To set up your *Nightscout* credentials in &nbsp;<span translate="no">Apple Keyc
 
 On the Caregivers device (iPhone or Mac):
 
-* Go to Apple Settings -> Passwords
+* The first step depends on iOS version
+    * For iOS 17 and earlier, use iOS Settings, Passwords
+    * For iOS 18 and newer, use the *Apple* [Password app](https://support.apple.com/en-us/104955){: target="_blank" }
+
 * Tap the + Button up top to add a new Password
 
     ![add password screen for apple keychain](img/add-password-apple-keychain.png ){width="500"}
@@ -65,7 +68,9 @@ On the Caregivers device (iPhone or Mac):
     * Tap Done
 * Next, you are offered a screen that allows you to set up a `Verification Code`
     * If you need to come back later, you can find that screen again
-    * Go to Apple Settings -> Passwords -> Tap the row with your *Nightscout* URL
+        * For iOS 17 and earlier, use iPhone Settings -> Passwords
+        * For iOS 18 and newer, use the *Apple* [Password app](https://support.apple.com/en-us/104955){: target="_blank" }
+    * -> Tap the row with your *Nightscout* URL
 * Tap “Setup Verification Code”
     * This is where you can scan your QR code from the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone or the saved QR screenshot
     * As soon as the camera reads the QR code, an OTP will begin to appear

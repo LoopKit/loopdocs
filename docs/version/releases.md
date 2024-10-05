@@ -180,10 +180,15 @@ For example:
 
 ## Remove Apps with Shared App Group
 
-The storage of data with Loop 3 is not backward compatible. In other words, if you attempt to build Loop 2.2.x (or FreeAPS) on a phone which has been upgraded to Loop 3, you will not be able to run that app. You can successfully build the app, which will overwrite Loop 3 on the phone, but the app will crash and you will not be able to Loop.
+There are a number of Open Source apps which use the Loop App Group to share data.
 
-At this point, you can restore your Loop 3 build on your phone and continue using Loop 3 or you delete all apps on your phone with a shared app group. This list includes Loop, FreeAPS, FreeAPS X, iAPS, xDrip4iOS, Glucose-Direct, and the g5 Transmitter Reset app.
+One consequence of this is that if you delete one of those apps, there may be saved information on the phone that is **not** discarded. Normally this is not a problem, but sometimes you really want to wipe out all the stored information.
 
-If you tried to delete "all" the apps and still have something causing an issue; you can follow the directions to [Review Provisioning Profiles](https://www.loopandlearn.org/loop-expiration-date){: target="_blank" } and then delete the profiles for all the apps by using the - sign. 
+If you are in a situation where you want to completely wipe all data from your phone for any of these apps which use the Loop App Group, you might need to delete all of them:
 
-You do not need to delete LoopFollow, so if you use LoopFollow - do not delete that provisioning profile.
+* Active Apps: *`Loop`*, *`xDrip4iOS`*, *`Glucose-Direct`*, *`iAPS`*
+* Old Apps that might be hanging around: *`FreeAPS`*, *`FreeAPS X`* and the *`G5 Transmitter Reset`* app
+
+These apps either have their own App Group or do not use an App Group and do not need to be deleted:
+
+* *`LoopFollow`*, *`LoopCaregiver`*, *`Trio`*
