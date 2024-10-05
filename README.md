@@ -250,19 +250,12 @@ title: How to prevent Google Translate from automatically translating a text?
 ---
 flowchart TD
     A[Start] --> B{Is Text a Key, Identifier,<br/> Variable, Filename, Folder, <br/>Error Message,<br/> or UI Label?}
-    click A "#entity"
     B --> |Yes| C{is Text <br/>a Glossary Item?}
-    click C "#entity"
     C --> |Yes| D["&lt;code&gt;text&lt;/code&gt;"]
-    click D "#entity"
-    C --> |No| E[`text`]
-    click E "#entity"
+    C --> |No| E["&grave;text&grave;"]
     B --> |No| F{Is Text <br/>a Product Name,<br/>a Project Name,<br/>or a Brand Name?}
-    click F "#name"
-    F --> |Yes| G[*text*]
-    click G "#name"
+    F --> |Yes| G["&ast;text&ast;"]
     F --> |No| H["&lt;span translate=&quot;no&quot;&gt;text&lt;span&gt;"]
-    click H "#generic"
 ```
 
 If the automatic translation is still incorrect after applying these rules, [read this](#when-rules-fail).
