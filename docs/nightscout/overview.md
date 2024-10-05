@@ -1,6 +1,6 @@
 ## Overview
 
-*Nightscout* is an excellent tool for remotely viewing *Loop* actions. *Nightscout* can act as a stand-alone tool or be integrated with *Loop*. (*Nightscout* also integrates with other open-source hybrid closed loop systems such as *OpenAPS*, *AndroidAPS* and *iAPS*. *LoopDocs* focuses on *Loop*.)
+*Nightscout* is an excellent tool for remotely viewing *Loop* actions. *Nightscout* can act as a stand-alone tool or be integrated with *Loop*. (*Nightscout* also integrates with other open-source hybrid closed loop systems such as *OpenAPS*, *AndroidAPS* and *Trio*. *LoopDocs* focuses on *Loop*.)
 
 When integrated with *Loop*, *Nightscout* provides monitoring of *Loop* activities such as viewing history of glucose, carbs, boluses, temp basals and overrides; troubleshooting *Loop* errors; and provides extensive reports for analyzing data trends and patterns. These reports assist when *Loop* Therapy Settings need to be adjusted.
 
