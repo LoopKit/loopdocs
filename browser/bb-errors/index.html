@@ -1209,6 +1209,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#do-not-remove-an-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Do Not Remove an App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Do Not Remove an App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-developer-id-with-same-github-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Developer ID with Same GitHub Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#action-validate-secrets-errors" class="md-nav__link">
     <span class="md-ellipsis">
       Action: Validate Secrets Errors
@@ -3766,6 +3790,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#do-not-remove-an-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Do Not Remove an App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Do Not Remove an App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-developer-id-with-same-github-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Developer ID with Same GitHub Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#action-validate-secrets-errors" class="md-nav__link">
     <span class="md-ellipsis">
       Action: Validate Secrets Errors
@@ -4149,6 +4197,31 @@
 </ul>
 <p>As your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>username</code> is case-sensitive, use copy and paste.</p>
 </div>
+<h2 id="do-not-remove-an-app">Do Not Remove an App<a class="headerlink" href="#do-not-remove-an-app" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Please do not remove an existing app if you have trouble building a different app. Your build error is not caused by any existing app.</p>
+<div class="admonition important">
+<p class="admonition-title">Remove App Warning</p>
+<p>If you remove an app and later want to restore that app, you might not be able to.</p>
+<p>Sad and Expensive Scenario:</p>
+<ol>
+<li>User removed app with name "My App" and unique bundle ID that includes their <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></li>
+<li>User later decided to restore their app, but in the meantime, someone else has used the name "My App"</li>
+<li>When trying to restore your app, Apple doesn't allow you to change just the name of the app and will not allow you to restore it because someone else has that name, even though your bundle ID is different</li>
+<li>After spending time on the phone with Apple, user's only option was to purchase a new Apple Developer account so they can get a new <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> (see steps below) or doing a custom change to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code to modify the bundle ID (no instructions are provided for this - easy to do it wrong)</li>
+</ol>
+</div>
+<h3 id="new-developer-id-with-same-github-account">New Developer ID with Same <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Account<a class="headerlink" href="#new-developer-id-with-same-github-account" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You can use the same <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account with a new developer ID. Here are the steps:</p>
+<ol>
+<li>Update the 4 secrets that are associated with the Apple Account for each <abbr title="contains project files and each file's revision history">repository</abbr> on the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> used for browser build:<ul>
+<li><abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></li>
+<li><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></li>
+<li><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></li>
+<li><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></li>
+</ul>
+</li>
+<li>Once the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are updated, start at the <a href="../identifiers/" target="_blank"><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> page and work through the process for each app</li>
+</ol>
 <h2 id="action-validate-secrets-errors">Action: <code>Validate Secrets</code> Errors<a class="headerlink" href="#action-validate-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For Version 3.4 and later - use <a href="#examine-annotation">Examine Annotation</a> and read the annotation.</p>
 <h2 id="action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
