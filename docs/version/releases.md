@@ -36,7 +36,7 @@ Additional information including links is found here, but be aware that updates 
 
 *Loop* v3.4.3 was released on 6 October 2024.
 
-A few days later, it was discovered that the TestFlight expiration date was no longer available for Browser Build. This was quickly remedied with the *Loop* 3.4.4 release.
+A few days later, it was discovered that the TestFlight expiration date was no longer available for Browser Build (due to a change in 3.4.2). This was quickly remedied with the *Loop* 3.4.4 release.
 
 This was a minor update to the *Loop* code with a few bug fixes and some capability extensions.
 
@@ -76,7 +76,7 @@ The Browser Build method was updated to use `Fastlane version 2.223.1`. This cha
 
 *Loop* v3.4.2 was released on 5 October 2024.
 
-This was a patch that fixed errors with the expiration date for the Mac-Xcode build method for Xcode 16. No other changes were made. Because Browser Builders all use Xcode 15.4, there was no problem with their expiration date reporting.
+This was a patch that fixed errors with the expiration date for the Mac-Xcode build method for Xcode 16. No other changes were made. Unfortunately, the method used to fix expiration date for Mac Xcode 16 builders removed the expiration date for Browser Builders. The expiration date for Browser Builders was restored with version 3.4.4.
 
 * [Link to release notes for Loop 3.4.2](https://github.com/LoopKit/Loop/releases/tag/v3.4.2){: target="_blank" }
 
