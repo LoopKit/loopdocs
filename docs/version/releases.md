@@ -6,7 +6,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.4.3. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.4.4. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -23,16 +23,27 @@ Additional information including links is found here, but be aware that updates 
 
 ## Loop 3 Version History
 
+### Loop v3.4.4
+
+*Loop* v3.4.4 restored the TestFlight expiration date for Browser Build - it was released twice with the same build number. Just make sure your build (for both Browser Build and Mac Build) are later than 12 October 2024.
+
+* The first release on 9 October 2024 inadvertently removed all the improvements from v3.4.3, but did fix the TestFlight expiration date
+* The second release on 12 October 2024 restored the improvements from v3.4.3
+
+* [Link to release notes for Loop 3.4.4](https://github.com/LoopKit/Loop/releases/tag/v3.4.4){: target="_blank" }
+
 ### Loop v3.4.3
 
 *Loop* v3.4.3 was released on 6 October 2024.
+
+A few days later, it was discovered that the TestFlight expiration date was no longer available for Browser Build. This was quickly remedied with the *Loop* 3.4.4 release.
 
 This was a minor update to the *Loop* code with a few bug fixes and some capability extensions.
 
 !!! important "Please use the `main` branch"
     Some people have become complacent about using the `dev` branch to get the latest updates. This is a good time to switch to the `main` branch.
     
-    New revision will be landing in the `dev` branch soon. Don't be surprised - stick with `main` and version 3.4.3 until the changes have been tested.
+    New revision will be landing in the `dev` branch soon. Don't be surprised - stick with `main` until the changes have been tested.
 
 * [Link to release notes for Loop 3.4.3](https://github.com/LoopKit/Loop/releases/tag/v3.4.3){: target="_blank" }
 
