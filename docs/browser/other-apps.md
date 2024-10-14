@@ -147,7 +147,6 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
     * [Action: Validate <code>Secrets</code> Errors](bb-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
 
-
 ## Add Identifiers
 
 Near the top middle of your Repository fork, click on the "Actions" tab.
@@ -383,6 +382,18 @@ Refer to the graphic below for the first four steps:
         * Build Loop
 1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
+
+### Build Errors
+
+Refer to the [Browser Build: Build Errors](bb-errors.md){: target="_blank" } to find your error.
+
+Please do not remove an existing app if you have trouble building a new one. Your build error is not cause by any existing app.
+
+!!! Important "Removing App Warning"
+    If you remove an app and later want to restore that app, you might not be able to.
+
+    For more information, see [Do Not Remove an App](bb-errors.md#do-not-remove-an-app){: target="_blank" }.
+
 
 ## Add Users to *TestFlight* for App
 

@@ -48,7 +48,6 @@ These are some of the most common errors to date.
     * You can delete any branch that starts with the name `alive` and try again
     * See [Automatic Creation of `alive branch`](automatic.md#automatic-creation-of-alive-branch){: target="_blank" }
 
-
 ## Error Annotations
 
 Error annotations are available for the *Loop* app released version 3.4 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
@@ -187,6 +186,31 @@ Click on the top link to view the record of the failed action as shown in the gr
         ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
 
     As your *GitHub* `username` is case-sensitive, use copy and paste.
+
+## Do Not Remove an App
+
+Please do not remove an existing app if you have trouble building a different app. Your build error is not caused by any existing app.
+
+!!! Important "Remove App Warning"
+    If you remove an app and later want to restore that app, you might not be able to.
+
+    Sad and Expensive Scenario:
+
+    1. User removed app with name "My App" and unique bundle ID that includes their TEAMID
+    1. User later decided to restore their app, but in the meantime, someone else has used the name "My App"
+    1. When trying to restore your app, Apple doesn't allow you to change just the name of the app and will not allow you to restore it because someone else has that name, even though your bundle ID is different
+    1. After spending time on the phone with Apple, user's only option was to purchase a new Apple Developer account so they can get a new TEAMID (see steps below) or doing a custom change to the Loop code to modify the bundle ID (no instructions are provided for this - easy to do it wrong)
+
+### New Developer ID with Same GitHub Account
+
+You can use the same GitHub account with a new developer ID. Here are the steps:
+
+1. Update the 4 secrets that are associated with the Apple Account for each repository on the GitHub used for browser build:
+    * TEAMID
+    * FASTLANE_ISSUER_ID
+    * FASTLANE_KEY_ID
+    * FASTLANE_KEY
+1. Once the Secrets are updated, start at the [Identifiers](identifiers.md){:target="_blank"} page and work through the process for each app
 
 ## Action: `Validate Secrets` Errors
 
