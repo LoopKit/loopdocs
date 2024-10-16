@@ -12,14 +12,15 @@
         * *Dexcom* ONE (based off G6 sensor) is available in some countries, but will be discontinued soon
     - *Dexcom* G7 or ONE+ CGM systems
         * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
-    - Medtronic sensors connected to a Loop-compatible Medtronic pumps
-    - Some Libre sensors
+    - *Medtronic* sensors connected to a Loop-compatible *Medtronic* pumps
+    - Some *Libre* sensors
 
 !!! question "FAQs"
 
-    - **"What about other Libre sensors?"**
-        1. Only some Libre sensors have methods to read them directly on an iPhone
+    - **"What about other *Libre* sensors?"**
+        1. Only some *Libre* sensors have methods to read them directly on an iPhone
         2. There are more methods for Android
+        3. See also [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
     - **"What about Eversense?"** Refer to [CGMs Not Supported in the *Loop* App](#cgms-not-supported-in-the-loop-app)
 
 
@@ -40,28 +41,28 @@ If the *Dexcom* app is on the same device as the *Loop* app, your system can fun
 
     [*Dexcom* has stopped supporting the G5 system in the US](https://www.dexcom.com/obsolescence){: target="_blank" }. In the US, and some other countries, the G5 is not available for download from the Apple Store. There are countries in which *Dexcom* does supply and support G5. The G5 capability will continue to be supported in Loop.
 
-    There are third party apps, which interface with G4 and G5 transmitters, supported by some forks of Loop. The version of the *Loop* app supported by these documents only works with the *Dexcom* apps.
-
 ## *Dexcom* G7 and ONE+ CGM
 
 The *Dexcom* G7 and ONE+ CGM transmits data directly to the *Dexcom* app on your iPhone via Bluetooth.
 
 The *Dexcom* ONE+, available in some countries, acts just like the G7 as far as the *Loop* app is concerned. 
 
-## Libre CGM
+## *Libre* CGM
 
-With Loop 3.4 and newer versions, some Libre CGM are supported.
+With Loop 3.4 and newer versions, some *Libre* CGM are supported.
  
-* Libre 1 are supported but must use a third-party transmitters (miaomiao and bubble transmitters are supported)
-* European Libre 2 can be used directly or via transmitter
-* American Libre 2 is not supported
-* Libre 3 is not supported
+* *Libre* 1 are supported but must use a third-party transmitters (miaomiao and bubble transmitters are supported)
+* European *Libre* 2 and 2 Plus can be used directly or with optional transmitter
+* These *Libre* CGM are not supported within the *Loop* app
+    * American (Canada, US, South American) *Libre* 2
+    * *Libre* 3
+* See [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
 
-## Medtronic CGM
+## *Medtronic* CGM
 ![img/enlite.png](img/enlite.png){width="150"}
 
-The Minimed Enlite CGM, available with the Medtronic 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. The *Loop* app can read the Medtronic CGM data directly from the pump using a RileyLink compatible device.
+The Minimed Enlite CGM, available with the *Medtronic* 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. The *Loop* app can read the *Medtronic* CGM data directly from the pump using a RileyLink compatible device.
 
 ## Offline Use
 
@@ -88,10 +89,10 @@ Currently, there are no solutions for *Eversense*, *Guardian* or *Libre 3* CGM t
 
 ## Next Step
 
-If your compatible pump is Medtronic or Omnipod (not DASH)
+If your compatible pump is *Medtronic* or *Omnipod* (not DASH)
 
 * Next step is to [Order a RileyLink Compatible Device](rileylink.md)
 
-If your compatible pump is Omnipod DASH
+If your compatible pump is *Omnipod* DASH
 
 * Next step is to enroll in the [Apple Developer Program](apple-developer.md).
