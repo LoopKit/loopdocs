@@ -6,7 +6,7 @@ There are several different methods for making use of TestFlight:
 * Use the [Build with Browser](../browser/bb-overview.md) method to build and distribute your Loop app to your iPhone or that of a family member
 * Use *TestFlight* as a remote distribution (and backup) for an app you build using *Xcode*
 
-This guide can also be followed to install other apps you build with *Xcode* via *TestFlight*. Examples include <code>LoopFollow</code>, <code>LoopCaregiver</code>, <code>xDrip4iOS</code> and <code>GlucoseDirect</code>.
+This guide can also be followed to install other apps you build with *Xcode* via *TestFlight*. Examples include <code>LoopFollow</code>, <code>LoopCaregiver</code> and <code>xDrip4iOS</code>.
 
 Some useful features of using TestFlight to install Loop:
 
