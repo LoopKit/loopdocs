@@ -6,7 +6,7 @@ To bring up the Pump Settings display, tap on the pump icon in the Heads Up Disp
 
 Medtronic status and commands are found in the Pump Settings screen shown in the graphic below. The bottom section with Pump ID, Firware Version and Region is configured at the time the pump is connected to Loop. You cannot edit those lines.
 
-![Medtronic Pump Settings screen](img/loop-3-pump-setting-mdt.svg){width="300"}
+![Medtronic Pump Settings screen](img/pump-setting-mdt.svg){width="300"}
 {align="center"}
 
 ### Suspend Delivery
@@ -19,7 +19,7 @@ When the phone is in portrait mode, so the HUD is visible:
 
 * The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays-v3.md#pump-status-icon).
 
-![pump status icon when suspended](img/loop-3-pump-alert-suspended.svg){width="150"}
+![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
 * The [HUD Status Row](displays-v3.md#hud-status-row) message can be tapped to resume delivery.
@@ -77,11 +77,11 @@ During normal operation, Loop automatically keeps phone time and pump time align
 
 When the time zone for the pump and phone are not the same, you will notice a small clock symbol in the upper right of the pump status icon.
 
-![high temp basal indicator with reservoir level below alert and clock icon](img/loop-3-pump-alert-reservoir-tz.svg){width="150"}
+![high temp basal indicator with reservoir level below alert and clock icon](img/pump-alert-reservoir-tz.svg){width="150"}
 
 Navigate to the Pump Settings screen. Right below the Pump Battery Remaining and Pump Time rows, there is a new row `Sync to Current Time`. When you tap that row, the time for the Medtronic pump is updated to the current Loop phone time.
 
-![row on pump settings to change time on pump](img/loop-3-mdt-time-change.svg){width="300"}
+![row on pump settings to change time on pump](img/mdt-time-change.svg){width="300"}
 {center}
 
 ### Delete Pump

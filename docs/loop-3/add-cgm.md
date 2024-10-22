@@ -4,7 +4,7 @@ A CGM can be added from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-disp
 
 The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 
-![Loop HUD when CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
+![Loop HUD when CGM and Pump have not been added](img/add-cgm-add-pump.svg){width="350"}
 {align="center"}
 
 Loop can be connected to the following CGMs:
@@ -28,7 +28,7 @@ Loop can be connected to the following CGMs:
 
 To add a CGM, go to the Settings screen ⚙️, tap on `Add CGM`, and tap on your CGM.
 
-![graphic showing some of the CGMs available with Loop 3](img/loop-3-setting-add-cgm.svg){width="500"}
+![graphic showing some of the CGMs available with Loop 3](img/setting-add-cgm.svg){width="500"}
 {align="center"}
 
 If you later decide to use a different CGM type, you must first delete the CGM and then add CGM to choose the new one.
@@ -67,7 +67,7 @@ To use the Dexcom G5, G6 or ONE:
     * Do not tap, leave it alone
 * Only add the **transmitter ID** to Loop **after** it is paired with the *Dexcom app* on your phone
 
-![interface to add transmitter ID for Dexcom](img/loop-3-setting-add-dexcom.svg){width="300"}
+![interface to add transmitter ID for Dexcom](img/setting-add-dexcom.svg){width="300"}
 {align="center"}
 
 #### Where to get the Transmitter ID for Dexcom G6? 

@@ -66,7 +66,7 @@ Next, you need to give Loop permission to read and write to Apple Health. In the
 You need to enable Health Permissions for Loop to work.
 
 
-![setting up Apple Health permissions with Loop 3](img/health-loop-3.svg){width="750"}
+![setting up Apple Health permissions with Loop 3](img/health.svg){width="750"}
 {align="center"}
 
 You can review the permissions screen later. [FAQS: How Do I Modify Apple HealthKit Permissions](../faqs/apple-health-faqs.md#how-do-i-modify-apple-healthkit-permissions).

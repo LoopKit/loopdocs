@@ -8,7 +8,7 @@ Near the bottom of your *Loop* settings screen is a section called "Services".
 
 The services are added by tapping on the &plus; sign and choosing the service from the list. Services are shown alphabetically. The most common services are [*Nightscout*](#nightscout) and [Tidepool](#tidepool).
 
-![img/services.JPG](img/loop-3-services.png){width="350"}
+![img/services.JPG](img/services.png){width="350"}
 {align="center"}
 
 ## *Nightscout*
@@ -35,7 +35,7 @@ The *Loop* app will begin uploading your data from this point on - it does not b
 
 However, if there is a temporary outage of internet service or if the *Nightscout* site stops working temporarily, the *Loop* app will fill in all data not uploaded during the outage up to a total of 7 days worth of data.
 
-![steps to add Nightscout to the Loop app](img/loop-3-nightscout-login.svg){width="350"}
+![steps to add Nightscout to the Loop app](img/nightscout-login.svg){width="350"}
 {align="center"}
 
 The two most common errors in filling out this section are:
@@ -65,7 +65,7 @@ If you want to stop uploading to a given *Nightscout* site or change to a differ
 
 The graphic below indicates how to remove your *Nightscout* site from the *Loop* app. This will stop future uploads from the *Loop* app to that site.
 
-![steps to remove Nightscout from the Loop app](img/loop-3-nightscout-logout.png){width="350"}
+![steps to remove Nightscout from the Loop app](img/nightscout-logout.png){width="350"}
 {align="center"}
 
 ## *Tidepool*
@@ -76,7 +76,7 @@ Please refer to the [LoopTips: Data: *Tidepool*](https://loopkit.github.io/loopt
 
 When you add the *Tidepool* Service to *Loop*, be sure to disable *Tidepool* Mobile ability to read from Apple Health.
 
-![img/services.JPG](img/loop-3-tidepool-mobile.png){width="350"}
+![img/services.JPG](img/tidepool-mobile.png){width="350"}
 {align="center"}
 
 !!! warning "Double entries"

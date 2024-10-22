@@ -4,7 +4,7 @@ You can choose a pump from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-d
 
 The HUD looks like the graphic below if no CGM or Pump is chosen:
 
-![Loop HUD when both CGM and Pump have not been added](img/loop-3-hud-add-cgm-add-pump.svg){width="350"}
+![Loop HUD when both CGM and Pump have not been added](img/add-cgm-add-pump.svg){width="350"}
 {align="center"}
 
 !!! question "Switching Pumps?"
@@ -61,7 +61,7 @@ Tap on Add Pump in the Settings screen to see pump options (shown in the graphic
 
 Tap on your Pump.
 
-![graphic showing the pumps available with Loop 3](img/loop-3-setting-add-pump.svg){width="500"}
+![graphic showing the pumps available with Loop 3](img/setting-add-pump.svg){width="500"}
 {align="center"}
 
 
@@ -73,7 +73,7 @@ Medtronic pump users - skip ahead to [Insulin Type](#insulin-type).
 
 Here are the common screens for adding Omnipod or Omnipod DASH showing the default settings. You can change the default settings later.
 
-![initial screens for pod set up to define default notifications](img/loop-3-pod-notification.svg){width="600"}
+![initial screens for pod set up to define default notifications](img/pod-notification.svg){width="600"}
 {align="center"}
 
 After you complete these screens, you select the insulin type.
@@ -86,7 +86,7 @@ For all pumps, you can choose from the insulin types below.
     * **Rapid Acting** (Novolog, Humalog, Apidra) or **Ultra Rapid** (Fiasp, Lyumjev)
     * Inhaled insulin (Afrezza) is not offered because it is not used in pumps. [Non-Pump Insulin](displays-v3.md#event-history-reservoir-and-non-pump-insulin)
 
-![initial selection for insulin used in pump](img/loop-3-add-pump-insulin.svg){width="250"}
+![initial selection for insulin used in pump](img/add-pump-insulin.svg){width="250"}
 {align="center"}
 
 To add a Omnipod DASH pump, skip ahead to [Omnipod Commom 2](#omnipod-common-2).
@@ -122,7 +122,7 @@ After selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnip
 
 For Omnipod (left) and Omnipod DASH (right), you should see the `Pair Pod` screen.
 
-![pair pod screens for Omnipod and Omnipod DASH](img/loop-3-pair-pod-duo.svg){width="500"}
+![pair pod screens for Omnipod and Omnipod DASH](img/pair-pod-duo.svg){width="500"}
 {align="center"}
 
 At this point - you should hit `Cancel` (upper right of screen) and review the [Omnipod Common](omnipod.md) page before pairing a pod.
@@ -172,7 +172,7 @@ The final step is to connect your Medtronic pump to Loop.
 - Add your pump's region, color as shown in the graphic below
     * Note that some Canadian pumps use `CM` instead of `CA` for the region code.  Select `CA/CM` in the dropdown menu.
 
-![how to add country code and color for medtronic pump](img/loop-3-add-medtronic-1.svg){width="500"}
+![how to add country code and color for medtronic pump](img/add-medtronic-1.svg){width="500"}
 {align="center"}
 
 - Add your pump's 6-digit serial number as shown in the graphic below
@@ -182,7 +182,7 @@ The final step is to connect your Medtronic pump to Loop.
     - If the [Delivery Limits](therapy-settings.md#delivery-limits) (max basal and max bolus) in the pump are lower than values you entered in Loop you will see an error message: `Pump Error. Max setting exceeded`. (See note below for other reasons you might see this message.)
         - In this case, edit the values in the pump and then click `Connect` to retry.
 
-![how to enter serial number for a medtronic pump](img/loop-3-add-medtronic-2.svg){width="750"}
+![how to enter serial number for a medtronic pump](img/add-medtronic-2.svg){width="750"}
 {align="center"}
 
 !!! warning "Max setting exceeded"

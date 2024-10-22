@@ -2,7 +2,7 @@
 
 The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.4 and later versions.
 
-![settings screen for loop 3](img/loop-3-settings.svg){width="250"}
+![settings screen for loop 3](img/settings.svg){width="250"}
 {align="center"}
 
 Each section and row on the Settings screen is described below.
@@ -11,7 +11,7 @@ Each section and row on the Settings screen is described below.
 
 The user can select closed loop or open loop using this slider. When you first start Loop, we encourage you to leave this slider disabled and become familiar with the app using [Open Loop](../operation/loop/open-loop.md) mode.
 
-![slider to enable or disable closed loop](img/loop-3-setting-loop-mode.svg){width="500"}
+![slider to enable or disable closed loop](img/setting-loop-mode.svg){width="500"}
 {align="center"}
 
 **As soon as Closed Loop is enabled, Loop will begin automatic adjustment of insulin dosing. Please ensure the settings you entered are appropriate for the Loop algorithm.**
@@ -46,7 +46,7 @@ This row gives you the ability to select Dosing Strategy. The Dosing Strategy on
 
 The default (initial) value for this setting is Temp Basal Only. Tap on the arrow to the right to modify your selection.
 
-![Dosing Strategy selection screen](img/loop-3-setting-dosing-strategy.svg){width="500"}
+![Dosing Strategy selection screen](img/setting-dosing-strategy.svg){width="500"}
 {align="center"}
 
 !!! quote "Words in Graphic"
@@ -184,7 +184,7 @@ The Support section enables the user to provide output data ([Loop Report](#issu
 
 The graphic below is similar to what you see when you scroll down to the Support section of the *Loop* Settings screen.
 
-![settings support screen](img/loop-3-setting-support.svg){width="250"}
+![settings support screen](img/setting-support.svg){width="250"}
 {align="center"}
 
 ### `Issue Report`
@@ -210,7 +210,7 @@ Tap on the `Submit Bug Report` row to bring up one of the two views shown in the
 
 In either case, the first action should be to add a term or phrase to the search box (red rectangle) to see if your issue has already been reported and to read the status if it has been reported.  Please refer to the [GitHub Issues](../troubleshooting/overview.md#github-issues) section for more information.
 
-![settings support screen when submitting a bug report](img/loop-3-setting-support-bug.svg){width="500"}
+![settings support screen when submitting a bug report](img/setting-support-bug.svg){width="500"}
 {align="center"}
 
 ### When Not to Submit a Bug Report
