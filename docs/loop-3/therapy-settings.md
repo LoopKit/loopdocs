@@ -44,7 +44,7 @@ Loop will deliver basal and recommend bolus insulin only if your glucose is pred
 
 The graphic below shows the information screen presented during onboarding or when user taps the information icon, &#9432;.
 
-![information screen for the glucose safety limit](img/loop-3-therapy-setting-safety-info.svg){width="300"}
+![information screen for the glucose safety limit](img/therapy-setting-safety-info.svg){width="300"}
 {align="center"}
 
 The GIF below shows two screens for Glucose Safety Limit.
@@ -68,7 +68,7 @@ Your Correction Range is the glucose value (or range of values) that you want Lo
 
 The graphic below shows the information screen presented during onboarding or when user taps the information icon, &#9432;.
 
-![information screen for the correction range](img/loop-3-therapy-setting-correction.svg){width="300"}
+![information screen for the correction range](img/therapy-setting-correction.svg){width="300"}
 {align="center"}
 
 The GIF below shows four screens when first adding and selecting a correction range. The red box indicates where the user taps.

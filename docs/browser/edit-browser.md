@@ -52,7 +52,7 @@
         1. Save your changes to a patch branch
         1. Prepare lines needed for each customization and save
     * New with 3.4.x release, there are 2 ways to add customizations (use only one)
-        * See [Update LoopWorkspace](#updateloopworkspace){: target="_blank" }
+        * See [Update LoopWorkspace](#update-loopworkspace){: target="_blank" }
         * See [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }
     * Regardless of the method, incorporate the customization with `Action 4: Build Loop`
     * (Optional): [Add Test Details to *TestFlight*](bb-update.md#add-test-details-to-testflight){: target="_blank" }

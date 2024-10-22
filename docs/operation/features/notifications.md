@@ -143,7 +143,7 @@ Select your desired notification level for low reservoir
 
 * Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays-v3.md#pump-status-icon).
 
-![pump alert - red exclamation point with phrase no insulin](../../loop-3/img/loop-3-pump-alert-no-insulin.svg){width="125"}
+![pump alert - red exclamation point with phrase no insulin](../../loop-3/img/pump-alert-no-insulin.svg){width="125"}
 {align="center"}
 
 <font color ="orange">**Omnipod**</font>

@@ -28,7 +28,7 @@ The Omnipod Common pairing protocol is the same for all pods. The difference is 
 
 Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (right).
 
-![pair pod screens for Omnipod and Omnipod DASH](img/loop-3-pair-pod-duo.svg){width="500"}
+![pair pod screens for Omnipod and Omnipod DASH](img/pair-pod-duo.svg){width="500"}
 {align="center"}
 
 !!! abstract ""
@@ -63,13 +63,9 @@ The Screen that says Setup Complete allows you to change the Scheduled Reminder 
 
 ## Pod Status
 
-The Pod Status screen is shown in the graphic below. The dashed green outline indicates the `Device` portion that is found only for the Omnipod.  All other features of the screen are common for Omnipod and Omnipod DASH. There are two versions of the screen below.
+The Pod Status screen is shown in the graphic below. The dashed green outline indicates the `Device` portion that is found only for the Omnipod.  All other features of the screen are common for Omnipod and Omnipod DASH. If your screen looks different, consider updating to version 3.4 or newer.
 
-* If you are running v3.2.x, your screen looks like the graphic on the left
-    * You will not have the Silence Pod or Pod Diagnostics features and the Previous Pod details is at the very bottom of the screen
-* If you are running v3.4 or later, your screen looks like the graphic on the right
-
-![consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps](img/loop-3-omnipod-screen.svg){width="250"} ![consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps for 3.4 or later](img/loop-3-4-omnipod-screen.svg){width="250"}
+![consolidated view of the status and command screen for Omnipod or Omnipod DASH pumps](img/omnipod-screen.svg){width="250"}
 {align="center"}
 
 ### Play Beeps
@@ -135,7 +131,7 @@ When the phone is in portrait mode, so the HUD is visible:
 
 * The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays-v3.md#pump-status-icon).
 
-![pump status icon when suspended](img/loop-3-pump-alert-suspended.svg){width="150"}
+![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
 * The [HUD Status Row](displays-v3.md#hud-status-row) message can be tapped to resume delivery.
@@ -154,7 +150,7 @@ At the end of the reminder time, an alert beep is issued by the pod and a modal 
 * If you do not acknowledge the modal alert, the pod will keep beeping
 * If you need a silent pod, consider using [Manual Temp Basal](#manual-temp-basal) of 0 U/hr instead of Suspend
 
-![reminder that insulin is suspended](img/loop-3-modal-alert-suspended.svg){width="300"}
+![reminder that insulin is suspended](img/modal-alert-suspended.svg){width="300"}
 {align="center"}
 
 !!! danger "Manually Resume Insulin Delivery"
@@ -241,7 +237,7 @@ Some additional details for the most recent pod status response message are disp
 
 The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) in the middle and Omnipod DASH (NXP BLE) on the right. Do not worry about the different board styles (Device Name) for DASH. The developers did that for you. If you are asking for help from a mentor - they may request this information.
 
-![section of Pod Status screen with Pod Details](img/loop-3-omnipod-device-details.svg){width="600"}
+![section of Pod Status screen with Pod Details](img/omnipod-device-details.svg){width="600"}
 {align="center"}
 
 #### Previous Pod Details
@@ -250,7 +246,7 @@ When you tap on the `Previous Pod Details` row, a graphic similar to those shown
 
 If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.
 
-![previous pod information screen, both for DASH, left was nominal pod and right had a pod fault](img/loop-3-omnipod-previous.svg){width="600"}
+![previous pod information screen, both for DASH, left was nominal pod and right had a pod fault](img/omnipod-previous.svg){width="600"}
 {align="center"}
 
 !!! bug "Do Not Call Insulet about -049 (0x31) Faults"
@@ -268,7 +264,7 @@ When you tap on the `Replace Pod` row, the `Deactivate Pod` screen, shown below,
     * This action stops insulin delivery for this pod and cannot be resumed
 * If you have changed your mind, tap Back or Cancel to continue using the pod
 
-![Deactivate pod screen](img/loop-3-omnipod-deactivate.svg){width="300"}
+![Deactivate pod screen](img/omnipod-deactivate.svg){width="300"}
 {align="center"}
 
 
@@ -286,7 +282,7 @@ When you tap on the `Notifcation Settings` row, the graphic below is displayed. 
     * Change it after the next pod is paired
 * Critical Alerts: Information row about which alerts can be silenced by phone settings
 
-![Notification selection screen to set up default reminders](img/loop-3-omnipod-notification.svg){width="300"}
+![Notification selection screen to set up default reminders](img/omnipod-notification.svg){width="300"}
 {align="center"}
 
 
@@ -300,7 +296,7 @@ When you tap on the `Confidence Reminder` row, the graphic below is displayed.  
     * For automated dosage change, the pod does not beep.
 * Extended: Automated dosage change beeps, similar to the manual commands when set to `Enabled`
 
-![Confidence reminder selection screen, the current selection is enabled as indicated by the blue check mark](img/loop-3-omnipod-confidence.svg){width="300"}
+![Confidence reminder selection screen, the current selection is enabled as indicated by the blue check mark](img/omnipod-confidence.svg){width="300"}
 {align="center"}
 
 ### Silence Pod
@@ -359,7 +355,7 @@ When the phone time zone and pump time zone do not match, there is a clock icon 
     * The `Sync to Current Time` row appears
     * Tap on the `Sync to Current Time` row to choose whether to make Pump Time match Phone Time or not (bottom red rectangle in graphic below)
 
-![graphic showing display when Omnipod pump and phone time do not match](img/loop-3-omnipod-timezone.svg){width="600"}
+![graphic showing display when Omnipod pump and phone time do not match](img/omnipod-timezone.svg){width="600"}
 {align="center"}
 
 ### Other Time Changes
@@ -368,7 +364,7 @@ What about other time changes?  Suppose the iOS -> General -> Time & Date is mod
 
 Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
-![graphic warning user of a problem with the time on the phone](img/loop-3-omnipod-time-change.svg){width="300"}
+![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
 {align="center"}
 
 

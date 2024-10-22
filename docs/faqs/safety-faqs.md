@@ -31,7 +31,7 @@ Be sure to do this for every *Focus* mode you use.
 
 If you do not understand the components displayed in the graphic below, please spend time reviewing the information at [Displays](../loop-3/displays-v3.md).
 
-![main loop screen when running nominally with annotation for heads-up-display, charts and toolbar](../loop-3/img/loop-3-main-annotated.png){width="450"}
+![main loop screen when running nominally with annotation for heads-up-display, charts and toolbar](../loop-3/img/main-annotated.png){width="450"}
 {align="center"}
 
 ## Carb Entry and Insulin Delivery
