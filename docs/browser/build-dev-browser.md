@@ -141,3 +141,27 @@ Your default branch has been changed.
 The automatic update and build features are available for both the released (`main`) and development (`dev`) branch, but only for your default branch. For any other branch name set as your default branch, there is no automatic update available but the automatic build will run monthly.
 
 Be sure to read this page: [Automatic Update & Build](automatic.md){: target="_blank" }.
+
+## What Happens in TestFlight
+
+As soon as you build one version of the app from the `dev` branch, that version number (which is higher than the `main` branch) will show up at the top of the available builds in TestFlight.
+
+Suppose you then return to using the `main` branch after your excursion to the `dev` branch.
+
+> *For this example, version 3.4.4 is the released version from the `main` branch and version 3.5.0 is the development version you evaluated.*
+
+Every time you open TestFlight on your phone and select the *Loop* app, it will offer the most recent 3.5.0 version to be installed if you just tap **Install**. You might be in a situation where that build is about to expire or you decide you don't want to test this on your looping phone. In some cases, the released version, 3.4.4, might have fixes that are not available in a development branch.
+
+You have your choice:
+
+* You can manually go into TestFlight each time `main` is automatically built, Select Previous Builds, then choose 3.4.4 and install the top listing
+* You can log in at: [App Store Connect: Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
+    * Select your *Loop* app
+    * Click on the TestFlight tab
+    * For each 3.5 build, click on the row for a build
+        * Select Expire Build on upper right
+    * This leaves only the released version, 3.4.4 for this example, available in TestFlight on your phone
+
+![expire builds with higher version numbers](img/testflight-expire-dev.png){width="700"}
+{align="center"}
+
