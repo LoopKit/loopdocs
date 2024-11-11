@@ -292,9 +292,9 @@ If you have not already made up a password, do it now and record it as <code>MAT
 
     A **passphrase** is similar to a password. However, a password generally refers to something used to authenticate or log into a system. A passphrase generally refers to a secret used to protect an encryption key.
 
-    A good passphrase should have at least 15, preferably 20 characters and be difficult to guess. It should contain upper case letters, lower case letters, digits, and preferably at least one punctuation character. No part of it should be derivable from personal information about the user or his/her family.
+    A good passphrase should have at least 15, preferably 20 characters and be difficult to guess. It should contain upper case letters, lower case letters, digits, and preferably at least one punctuation character. It can include spaces. No part of it should be derivable from personal information about the user or his/her family.
 
-    If you already created a MATCH_PASSWORD that does not meet the criteria listed above, no worries, you are protecting an *Apple* developer certificate - not the family fortune. That information is provided for new builders looking for guidance.
+    If you already created a MATCH_PASSWORD that does not meet the criteria listed above, no worries, you are protecting an *Apple* developer certificate - not the family fortune. That information is provided for new builders who want guidance.
 
 ## Next Step
 
