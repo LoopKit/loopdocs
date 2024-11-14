@@ -1289,6 +1289,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-happens-in-testflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens in TestFlight
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3513,6 +3522,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-happens-in-testflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens in TestFlight
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3663,6 +3681,28 @@
 <h2 id="automatic-update-build_1">Automatic Update &amp; Build<a class="headerlink" href="#automatic-update-build_1" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The automatic update and build features are available for both the released (<code>main</code>) and development (<code>dev</code>) <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but only for your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. For any other <abbr title="version of code within a single repository or workspace repository">branch</abbr> name set as your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is no automatic update available but the automatic build will run monthly.</p>
 <p>Be sure to read this page: <a href="../automatic/" target="_blank">Automatic Update &amp; Build</a>.</p>
+<h2 id="what-happens-in-testflight">What Happens in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr><a class="headerlink" href="#what-happens-in-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>As soon as you build one version of the app from the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, that version number (which is higher than the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) will show up at the top of the available builds in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
+<p>Suppose you then return to using the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> after your excursion to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<blockquote>
+<p><em>For this example, version 3.4.4 is the released version from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and version 3.5.0 is the development version you evaluated.</em></p>
+</blockquote>
+<p>Every time you open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and select the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, it will offer the most recent 3.5.0 version to be installed if you just tap <strong>Install</strong>. You might be in a situation where that build is about to expire or you decide you don't want to test this on your looping phone. In some cases, the released version, 3.4.4, might have fixes that are not available in a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>You have your choice:</p>
+<ul>
+<li>You can manually go into <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> each time <code>main</code> is automatically built, Select Previous Builds, then choose 3.4.4 and install the top listing</li>
+<li>You can log in at: <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect: Apps</a><ul>
+<li>Select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+<li>Click on the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> tab</li>
+<li>For each 3.5 build, click on the row for a build<ul>
+<li>Select Expire Build on upper right</li>
+</ul>
+</li>
+<li>This leaves only the released version, 3.4.4 for this example, available in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="expire builds with higher version numbers" src="../img/testflight-expire-dev.png" width="700" /></p>
 
 
 

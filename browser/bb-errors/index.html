@@ -4370,7 +4370,7 @@
 <blockquote>
 <p><code>Couldn't decrypt the repo, please make sure you enter the right password</code></p>
 </blockquote>
-<p>If you know you entered the incorrect <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> in your <abbr title="contains project files and each file's revision history">repository</abbr> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, go and fix it now and try again.</p>
+<p>If you know you entered the incorrect <code><abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr></code> in your <abbr title="contains project files and each file's revision history">repository</abbr> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, go and fix it now and try again.</p>
 <p>Otherwise, you need to follow the steps to <a href="#reset-match-secrets">Reset <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a>.</p>
 <h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
@@ -4583,8 +4583,8 @@
 <p>This is not the first thing to try, but sometimes it is the best approach.</p>
 <p>There might be several reasons to do this:</p>
 <ul>
-<li>You lost your <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> and want to build one of the <a href="../other-apps/">Other Apps</a></li>
-<li>You thought you entered the correct <code><abbr title="One of 6 Secrets: password you make up but must save and cannot change without deleting the Match-Secrets repository">MATCH_PASSWORD</abbr></code> but you are getting <a href="#error-could-not-decrypt">Error: Could not decrypt</a></li>
+<li>You lost your <code><abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr></code> and want to build one of the <a href="../other-apps/">Other Apps</a></li>
+<li>You thought you entered the correct <code><abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr></code> but you are getting <a href="#error-could-not-decrypt">Error: Could not decrypt</a></li>
 <li>You are having trouble renewing your certificates after using Browser Build for a year</li>
 </ul>
 <p>These steps are needed to reset your <code>Match-Secrets</code>:</p>
