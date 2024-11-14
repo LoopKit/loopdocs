@@ -285,7 +285,22 @@ You must be logged into your *GitHub* account before starting this step. If you 
 
 ## Make up a Password
 
-If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>.
+If you have not already made up a password, do it now and record it as <code>MATCH_PASSWORD</code>. Note that if you [build more than one app](other-apps.md){: target="_blank" }, you use the same <code>MATCH_PASSWORD</code> for all the apps. Every app needs to have the same 6 Secrets.
+
+!!! info "What is this Password used for?"
+    The <code>MATCH_PASSWORD</code> is a special password called a *passphrase* that is used to encrypt and decrypt your certificates from *Apple* so they can be used when building with *GitHub*; it helps keeps your certificates secret and safe.
+
+    A *passphrase* is a little different from a regular password. A password is what you usually use to log in to a website or game. A *passphrase* is a secret code that helps protect important files by adding an extra layer of security when files are encrypted.
+
+### *Passphrase* Suggestions
+
+To make a *passphrase* that is hard to guess and keeps your certificates safe:
+
+* Use at least 15 characters (20 is even better) and you can include spaces
+* Mix in big letters, small letters, numbers, and symbols like $ or #
+* Don’t use words or numbers that people might guess, like your name or birthday
+
+If you already created a MATCH_PASSWORD that does not meet the criteria listed above, no worries, you are protecting an *Apple* developer certificate - not the family fortune. That information is provided for new builders who want guidance.
 
 ## Next Step
 
