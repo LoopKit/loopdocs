@@ -120,7 +120,7 @@ Open **your** **`loopdocs` repository** on Github: `https://github.com/YOUR_GITH
 5. **Second** drop-down: Select **`"/(root)"`**
 6. Click **`Save`** 
 
->    ![GitHub Pages Configuration](/LoopKit/loopdocs/raw/main/img/gh_pages_config.png)
+>    ![GitHub Pages Configuration](img/gh_pages_config.png)
 
 
 
