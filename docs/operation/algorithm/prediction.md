@@ -170,9 +170,9 @@ $$ MAR[t = 12pm] = \frac{ 72g }{ 1.5 \times 4hr } = 12 \frac{ g }{ hr } = 1 \fra
 
 $$ MAR[t = 3pm] = \frac{ 72g }{ 1.5 \times 2hr } = 24 \frac{ g }{ hr } = 2 \frac{ g }{ 5min } $$
 
-Examining just the simple linear carbohydrate effect of these two meals:
+The combined carbohydrate effect for these two meals is shown in the graphic below. The example in this section uses the linear absorption model, shown in the top part of the graphic. The subtle difference for the non-linear model, which is actually used in the *Loop* modeling, is shown in the bottom part of the graphic.
 
-![combined meal entries](img/mixed_meals.png)
+![combined meal entries](img/mixed-meals.svg)
 
 If we further expand this example, by assuming the following at 4pm:
 
