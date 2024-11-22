@@ -83,9 +83,9 @@ $$ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{
 * Temp Basal Only Dosing Stategy: see [Determine the Temporary Basal Rate](#determine-the-temporary-basal-rate)
 * Automatic Bolus Dosing Stategy: the amount of the automatic bolus is reduced from the recommended dose as explained in [Automatic Bolus](../../loop-3/settings.md#automatic-bolus){: target="_blank" }
 
-## Determine the Temporary Basal Rate
+### Determine the Temporary Basal Rate
 
-When a recommended dose is calculated, *Loop* converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:
+When a recommended dose is calculated and the Dosing Strategy is set to Temp Basal Only, *Loop* converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:
 
 $$ \mathit{BR_correction} = \frac{\mathit{dose}}{30 \mathrm{min}} = \frac{\mathit{dose}}{\frac{1}{2} \mathrm{hr}} = \frac{2 \times \mathit{dose}}{\mathrm{hr}} $$
 
@@ -101,9 +101,9 @@ After running the temporary basal calculation described above, *Loop* checks whe
 
 As mentioned at the beginning of this section, the process of determining whether a temporary basal should be issued is repeated every 5 minutes.
 
-## Temporary Basal Rate Calculation Example
+### Temporary Basal Rate Calculation Example
 
-To illustrate how the *Loop* calculates the temporary basal rate to issue, consider the calculation for the following scenario:
+To illustrate how the *Loop* calculates the temporary basal rate when there is a recommended bolus, consider the calculation for the following scenario:
 
 * $\mathit{BG_eventual} = 200 \mathrm{\frac{mg}{dL}}$
 * $\mathit{BG_target} = 100 \mathrm{\frac{mg}{dL}}$
@@ -127,7 +127,7 @@ Lastly, compare the required basal rate to the maximum temporary basal rate, and
 
 $$ \mathit{BR_{temp}} = \max(\min( \mathit{BR_{required}}, \mathit{BR_max}), 0) = \max(\min( 5 \mathrm{\frac{U}{hr}}, 6 \mathrm{\frac{U}{hr}} ), 0) = 5 \mathrm{\frac{U}{hr}}$$
 
-## More Examples
+### More Temporary Basal Examples
 
 Consider the following values as fixed values for our calculation:
 
