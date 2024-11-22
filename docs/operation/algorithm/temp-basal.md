@@ -1,6 +1,6 @@
 ## Calculated Dose
 
-The Loop algorithm takes one of four actions depending upon the eventual blood glucose, predicted glucose, target range and glucose safety threshold when Closed Loop operation is enabled.
+The Loop algorithm takes one of four actions depending upon the eventual glucose, predicted glucose, target range and glucose safety threshold when Closed Loop operation is enabled.
 
 The recommended insulin dose (positive or negative) is calculated first, then the Temp Basal or Automatic Bolus to be enacted is modified based on the recommended dose, dosing strategy, maximum Temp Basal and maximum Bolus settings. The automated dosing (increase or decrease) is updated with every CGM value - typically every 5 minutes.
 
@@ -20,7 +20,7 @@ The Pre-Meal button or a named override can be configured with a correction rang
 
 ## Four Possible Actions
 
-Loop implements one of four possible temporary basal actions: **decrease**, **increase**, **suspend**, or **resume** a scheduled basal rate.
+With each new glucose reading, Loop implements one of four possible actions: [**decrease** basal rate](#decrease-basal-rate), [**increase** basal rate](#increase-basal-rate) or [**bolus automatically**](#deliver-automatic-bolus-with-scheduled-basal), [set **zero** basal rate](#zero-the-basal-rate), or [**resume** scheduled basal rate](#resume-basal-rate).
 
 !!! info "Automatic Bolus"
 
@@ -30,19 +30,26 @@ Loop implements one of four possible temporary basal actions: **decrease**, **in
 
 ### Decrease Basal Rate
 
-If the eventual blood glucose is less than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is lower than the current scheduled basal rate to bring the eventual blood glucose up to the correction target.
+If the eventual glucose is less than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is lower than the current scheduled basal rate to bring the eventual glucose up to the correction target.
 
 ![decrease basal rate example](img/decrease.png)
 
 ### Increase Basal Rate
 
-If the eventual blood glucose is greater than the correction range and all of the predicted glucose values are both above the suspend threshold and equal to or above the correction range, then Loop will issue a temporary basal rate that is higher than the current basal rate to bring the eventual blood glucose down to the correction target.
+or
 
-![increase basal rate example](img/increase.png)
+### Deliver Automatic Bolus with Scheduled Basal
+
+If the eventual glucose is greater than the correction range and all of the predicted glucose values are both above the suspend threshold and equal to or above the correction range, then the *Loop* app takes action to safely bring the eventual glucose down to the correction target. Refer to [Dosing Strategy](../../loop-3/settings.md#dosing-strategy){: target="_blank" }.
+
+* Temp Basal Only Dosing Stategy: Loop will issue a temporary basal rate that is higher than the current basal rate
+* Automatic Bolus Dosing Stategy: Loop will restore the pump to scheduled basal rate if a current temp basal is running and issue an automatic bolus
+
+![increase basal rate or AB example](img/increase.png)
 
 ### Zero the Basal Rate
 
-If the minimum predicted blood glucose goes below the suspend threshold, then Loop will issue a temporary basal rate of zero units per hour, regardless of the eventual blood glucose.
+If the minimum predicted glucose goes below the suspend threshold, then Loop will issue a temporary basal rate of zero units per hour, regardless of the eventual glucose.
 
 ![suspend basal rate example](img/suspend.png)
 
@@ -50,33 +57,39 @@ If the minimum predicted blood glucose goes below the suspend threshold, then Lo
 
 There are three situations where the Loop algorithm will resume the current scheduled basal rate.
 
-If the eventual blood glucose is within the correction range, and all of the predicted glucose values are above the suspend threshold, then Loop will resume the current scheduled basal rate.
+If the eventual glucose is within the correction range, and all of the predicted glucose values are above the suspend threshold, then Loop will resume the current scheduled basal rate.
 
 ![first resume basal rate example](img/resume2.png)
 
-If the eventual blood glucose is above the correction range, and the predicted glucose values have a temporary excursion below the correction range but still above the suspend threshold, then Loop will resume the current scheduled basal rate.
+If the eventual glucose is above the correction range, and the predicted glucose values have a temporary excursion below the correction range but still above the suspend threshold, then Loop will resume the current scheduled basal rate.
 
 ![second resume basal rate example](img/resume.png)
 
 If the Loop algorithm does not have ALL of the data it needs to make a prediction, it will let the remaining temporary basal rate run its duration (maximum of 30 minutes), and then the basal rate will default back to the current scheduled basal rate, thus returning to the same therapy pattern that they would receive using a traditional insulin pump.
 
-## Determine the Temporary Basal Rate
+## Determine the Recommended Bolus
 
-To determine the corrective temporary basal rate to implement, Loop calculates a “dose” in the same way doses are calculated in both open-loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of Loop (and all other close-loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing the math. Loop also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.
+In the scenario where Loop will either increase basal rate or issue an automatic bolus, Loop calculates a “dose” in the same way doses are calculated in both open-loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of Loop (and all other close-loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing the math. Loop also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.
 
-The amount of insulin needed, or dose, is calculated using the desired reduction in blood glucose and the user’s ISF. For the Loop algorithm, the desired reduction in blood glucose is the delta between the eventual blood glucose and the correction target:
+The amount of insulin needed, or dose, is calculated using the desired reduction in glucose and the user’s ISF. For the Loop algorithm, the desired reduction in glucose is the delta between the eventual glucose and the correction target:
 
 $$ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{ISF}} $$
 
 !!! info "Loop Dose Calculation"
 
-    A major difference between traditional pump therapy and how the Loop calculates dose is that in pump therapy the current blood glucose is used to estimate the dose, whereas in the Loop algorithm the eventual and minimum blood glucose predictions are also used in determining dosing decisions.
+    A major difference between traditional pump therapy and how the Loop calculates dose is that in pump therapy the current glucose is used to estimate the dose, whereas in the Loop algorithm the eventual and minimum glucose predictions are also used in determining dosing decisions.
 
-Loop then converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:
+
+* Temp Basal Only Dosing Stategy: see [Determine the Temporary Basal Rate](#determine-the-temporary-basal-rate)
+* Automatic Bolus Dosing Stategy: the amount of the automatic bolus is reduced from the recommended dose as explained in [Automatic Bolus](../../loop-3/settings.md#automatic-bolus){: target="_blank" }
+
+## Determine the Temporary Basal Rate
+
+When a recommended dose is calculated, Loop converts the dose into a basal rate using the Loop’s temporary basal rate duration of 30 minutes:
 
 $$ \mathit{BR_correction} = \frac{\mathit{dose}}{30 \mathrm{min}} = \frac{\mathit{dose}}{\frac{1}{2} \mathrm{hr}} = \frac{2 \times \mathit{dose}}{\mathrm{hr}} $$
 
-where $\mathit{BR_correction}$ is the basal rate ( $\mathrm{\frac{U}{hr}}$ ), which is the amount of insulin needed over the next 30 minutes to bring the eventual blood glucose to the correction target. The basal rate, however, is the amount of basal rate needed beyond the user’s scheduled basal rate. As such, the required basal rate can be determined by:
+where $\mathit{BR_correction}$ is the basal rate ( $\mathrm{\frac{U}{hr}}$ ), which is the amount of insulin needed over the next 30 minutes to bring the eventual glucose to the correction target. The basal rate, however, is the amount of basal rate needed beyond the user’s scheduled basal rate. As such, the required basal rate can be determined by:
 
 $$ \mathit{BR_required} = \mathit{BR_scheduled} + \mathit{BR_correction} $$
 
@@ -84,7 +97,7 @@ Finally, Loop compares the $BR_{required}$ with the user-specified maximum tempo
 
 $$ \mathit{BR_temp} = \max(\min( \mathit{BR_required}, \mathit{BR_max} ), 0) $$
 
-After running the temporary basal calculation described above, Loop checks whether there is already an appropriate basal running with at least 10 minutes remaining. If so, Loop will not reissue the temporary basal. However, if the recommended temporary basal differs from the currently running temporary basal — or the current scheduled basal if no temporary is running —  then Loop will replace the current basal rate with the recommended temporary basal rate.
+After running the temporary basal calculation described above, Loop checks whether there is already an appropriate basal running with at least 10 minutes remaining. If so, Loop will not reissue the temporary basal. However, if the recommended temporary basal differs from the currently running temporary basal — or the current scheduled basal, when no temporary basal is running —  then Loop will replace the current basal rate with the recommended temporary basal rate.
 
 As mentioned at the beginning of this section, the process of determining whether a temporary basal should be issued is repeated every 5 minutes.
 
