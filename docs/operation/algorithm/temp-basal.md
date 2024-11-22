@@ -26,6 +26,8 @@ Loop implements one of four possible temporary basal actions: **decrease**, **in
 
     If you are using an Automatic-Bolus Dosing Strategy in closed Loop mode and Loop predicts you need an **increase** in insulin; this **increase** is provided as a percentage of the recommended bolus instead of an increased temporary basal. The default percentage is 40%.
 
+    If you add the Algorithm Experiments option of [Glucose Based Partial Application](../../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }, the percentage varies from 20% when glucose is lower to 80% when glucose is higher.
+
 ### Decrease Basal Rate
 
 If the eventual blood glucose is less than the correction range and all of the predicted glucose values are above the suspend threshold, then Loop will issue a temporary basal rate that is lower than the current scheduled basal rate to bring the eventual blood glucose up to the correction target.
@@ -38,7 +40,7 @@ If the eventual blood glucose is greater than the correction range and all of th
 
 ![increase basal rate example](img/increase.png)
 
-### Suspend Basal Rate
+### Zero the Basal Rate
 
 If the minimum predicted blood glucose goes below the suspend threshold, then Loop will issue a temporary basal rate of zero units per hour, regardless of the eventual blood glucose.
 
@@ -58,7 +60,7 @@ If the eventual blood glucose is above the correction range, and the predicted g
 
 If the Loop algorithm does not have ALL of the data it needs to make a prediction, it will let the remaining temporary basal rate run its duration (maximum of 30 minutes), and then the basal rate will default back to the current scheduled basal rate, thus returning to the same therapy pattern that they would receive using a traditional insulin pump.
 
-## Determining the Temporary Basal Rate
+## Determine the Temporary Basal Rate
 
 To determine the corrective temporary basal rate to implement, Loop calculates a “dose” in the same way doses are calculated in both open-loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of Loop (and all other close-loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing the math. Loop also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.
 
@@ -136,5 +138,5 @@ The table below shows the $\mathit{BR_temp}$ for different $\mathit{BG_eventual}
 
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
-    * [Blood Glucose Prediction](prediction.md)
+    * [Glucose Prediction](prediction.md)
     * [Temp Basal Adjustments](temp-basal.md)
