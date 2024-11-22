@@ -1,12 +1,12 @@
-## Loop Manual Bolus
+## Recommended Bolus
 
-Loop will recommend bolus insulin corrections when the eventual glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.
+The *Loop* app will recommend bolus insulin corrections when the eventual glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.
 
-These recommendations are not proactively sent to the Loop user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that Loop never issues a bolus command automatically while using the default Temp Basal [Dosing Strategy](../../loop-3/settings.md#dosing-strategy); all boluses are initiated by the user unless the [Automatic Bolus](../../loop-3/settings.md#automatic-bolus) dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.
+These recommendations are not proactively sent to the *Loop* user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that *Loop* never issues a bolus command automatically while using the default Temp Basal Only [Dosing Strategy](../../loop-3/settings.md#dosing-strategy); all boluses are initiated by the user unless the [Automatic Bolus](../../loop-3/settings.md#automatic-bolus) dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.
 
 The recommended bolus calculation is described in [Determine the Recommended Dose](temp-basal.md#determine-the-recommended-bolus){: target="_blank" }, with these exceptions:
 
-* the insulin contribution from the currently running temporary basal set by Loop is removed or subtracted from the recommended bolus amount, and  
+* the insulin contribution from the currently running temporary basal set by *Loop* is removed or subtracted from the recommended bolus amount, and  
 * the delta is calculated for the top of the correction range, rather than the average of the correction range.
 
 ### Slow Absorption Time (Extended Bolus)
@@ -22,11 +22,11 @@ The *Loop* algorithm computes the recommended bolus such that predicted glucose 
     * Automatic Bolus: 40% of the recommended amount
 * In effect, this algorithm behavior mimics traditional pump therapy of “extended” or “dual wave” bolusing, but with the benefit of added information about actual carbohydrate absorption effects as time goes by
 
-Finally, Loop checks that the result of the calculations is below the maximum single bolus the Loop user specified in their settings. If the calculated bolus is less than the maximum single bolus setting, then the recommended bolus will be displayed in Loop’s bolus tool.
+Finally, *Loop* checks that the result of the calculations is below the maximum single bolus the *Loop* user specified in their settings. If the calculated bolus is less than the maximum single bolus setting, then the recommended bolus will be displayed in Loop’s bolus tool.
 
 !!! info "Bolusing safety feature"
 
-    If the current glucose, or any predicted glucose, falls below the Glucose Safety Limit, Loop will not return a recommended bolus. When the minimum glucose rises above the Glucose Safety Limit, the bolus tool will provide a recommended bolus.
+    If the current glucose, or any predicted glucose, falls below the Glucose Safety Limit, *Loop* will not return a recommended bolus. When the minimum glucose rises above the Glucose Safety Limit, the bolus tool will provide a recommended bolus.
 
 ## Algorithm Section Menu
 
