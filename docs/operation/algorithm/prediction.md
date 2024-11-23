@@ -4,7 +4,7 @@ Loop uses a model predictive control (MPC) algorithm to maintain glucose in a co
 
 $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
-Note that the [Momemtum](#blood-glucose-momentum-effect) term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the [Momemtum](#blood-glucose-momentum-effect) section below).
+Note that the [Momemtum](#glucose-momentum-effect) term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the [Momemtum](#glucose-momentum-effect) section below).
 
 You can see the individual contributions of these effects by tapping on the glucose chart on Loop's main screen to view the  [Predicted Glucose Chart](loop-3/displays-v3.md#predicted-glucose-chart){: target="_blank" }. *Loop* updates this glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
@@ -311,4 +311,4 @@ Each individual effect along with the combined effects are illustrated in the fi
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](temp-basal.md)
+    * [Temp Basal Adjustments](auto-adjust.md)

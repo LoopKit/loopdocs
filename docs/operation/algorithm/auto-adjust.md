@@ -152,4 +152,4 @@ The table below shows the $\mathit{BR_temp}$ for different $\mathit{BG_eventual}
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](temp-basal.md)
+    * [Temp Basal Adjustments](auto-adjust.md)

@@ -64,7 +64,7 @@ Below the chart you will see an explanation of the variables Loop takes into acc
 
 * [Carbohydrates](../operation/algorithm/prediction.md#carbohydrate-effect){: target="_blank" }
 * [Insulin](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" }
-* [Glucose Momentum](../operation/algorithm/prediction.md#blood-glucose-momentum-effect){: target="_blank" }
+* [Glucose Momentum](../operation/algorithm/prediction.md#glucose-momentum-effect){: target="_blank" }
 * [Integral Retrospective Correction](../operation/algorithm/prediction.md#insulin-effect){: target="_blank" } (or [Retrospective Correction](../operation/algorithm/prediction.md#retrospective-correction-effect){: target="_blank" })
 * Suspension of Insulin Delivery
 

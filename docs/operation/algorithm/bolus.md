@@ -4,7 +4,7 @@ The *Loop* app will recommend bolus insulin corrections when the eventual glucos
 
 These recommendations are not proactively sent to the *Loop* user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that *Loop* never issues a bolus command automatically while using the default Temp Basal Only [Dosing Strategy](../../loop-3/settings.md#dosing-strategy); all boluses are initiated by the user unless the [Automatic Bolus](../../loop-3/settings.md#automatic-bolus) dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.
 
-The recommended bolus calculation is described in [Determine the Recommended Dose](temp-basal.md#determine-the-recommended-bolus){: target="_blank" }, with these exceptions:
+The recommended bolus calculation is described in [Determine the Recommended Dose](auto-adjust.md#determine-the-recommended-bolus){: target="_blank" }, with these exceptions:
 
 * the insulin contribution from the currently running temporary basal set by *Loop* is removed or subtracted from the recommended bolus amount, and  
 * the delta is calculated for the top of the correction range, rather than the average of the correction range.
@@ -18,7 +18,7 @@ The *Loop* algorithm computes the recommended bolus such that predicted glucose 
 * As time progresses after the meal, when appropriate, *Loop* modifies insulin delivery
 * A decrease in recommended insulin amount is always provided as a decreased Temporary Basal rate
 * An increase in recommended insulin amount is delivered based on the user-selected [Dosing Strategy](../../loop-3/settings.md#dosing-strategy){: target="_blank" }:
-    * Temp Basal Only: [Increase Basal Rate](temp-basal.md#increase-basal-rate){: target="_blank" }
+    * Temp Basal Only: [Increase Basal Rate](auto-adjust.md#increase-basal-rate){: target="_blank" }
     * Automatic Bolus: 40% of the recommended amount
 * In effect, this algorithm behavior mimics traditional pump therapy of “extended” or “dual wave” bolusing, but with the benefit of added information about actual carbohydrate absorption effects as time goes by
 
@@ -33,4 +33,4 @@ Finally, *Loop* checks that the result of the calculations is below the maximum 
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](temp-basal.md)
+    * [Temp Basal Adjustments](auto-adjust.md)
