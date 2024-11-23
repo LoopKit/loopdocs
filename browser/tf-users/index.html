@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#set-up-users-and-access-testflight" class="md-skip">
+        <a href="#testflight-users-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -1041,9 +1041,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#set-up-users-and-access-testflight" class="md-nav__link">
+  <a href="#testflight-users-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Set Up Users and Access (TestFlight)
+      TestFlight Users Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-app-store-connect-user-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your App Store Connect User List
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-testflight-group-for-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure TestFlight Group for the App
     </span>
   </a>
   
@@ -2221,7 +2239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
+      <a href="../../operation/algorithm/auto-adjust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3342,9 +3360,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#set-up-users-and-access-testflight" class="md-nav__link">
+  <a href="#testflight-users-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Set Up Users and Access (TestFlight)
+      TestFlight Users Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-app-store-connect-user-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your App Store Connect User List
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-testflight-group-for-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure TestFlight Group for the App
     </span>
   </a>
   
@@ -3376,48 +3412,67 @@
 
   <h1>TestFlight Users</h1>
 
-<h2 id="set-up-users-and-access-testflight">Set Up Users and Access (<abbr title="a method to distribute apps without direct connection">TestFlight</abbr>)<a class="headerlink" href="#set-up-users-and-access-testflight" title="Anchor link to this Header on this Page">&para;</a></h2>
-<blockquote>
-<p>You repeat this step if you need to add a User to your account. For example, you want to add another adult who can install the app on your child's phone or you want a spouse or friend to have a copy of the app on their phone as backup for a trip.</p>
-<p>As a developer, you are already included as a user with the Role of Account Holder, Admin. But you will need to add yourself to the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> group for your App.</p>
-</blockquote>
-<p>Once the first build completes, you will be able to configure <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for the app.</p>
+<h2 id="testflight-users-overview"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Users Overview<a class="headerlink" href="#testflight-users-overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There are two parts to this.</p>
+<ul>
+<li>A user must be registered under your <a href="#your-app-store-connect-user-list">Your App Store Connect User List</a> before they can be added to a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> internal test group for any app<ul>
+<li>As a developer, you are already included as a user with the Role of Account Holder, Admin</li>
+</ul>
+</li>
+<li>Once the first build for a given app completes, you will be able to configure the <a href="#configure-testflight-group-for-the-app"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Internal Testing Group</a> for that app<ul>
+<li>You must add yourself to the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Internal Testing Group for each app</li>
+</ul>
+</li>
+</ul>
+<h2 id="your-app-store-connect-user-list">Your App Store Connect User List<a class="headerlink" href="#your-app-store-connect-user-list" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition tip">
-<p class="admonition-title">Add Each Users One Time</p>
-<p>Once you add a user to have access to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for this app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.</p>
+<p class="admonition-title">Step 1: add user for access for any of your apps</p>
+<p>Before you can select someone for the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Internal Testing group for any app, you must first add them to your App Store Connect User list.</p>
+<p>As a developer, you are already included as a user with the Role of Account Holder, Admin.</p>
 </div>
-<p>You are configuring a private capability for your family using an Internal Testing group. You need the <em>Apple ID</em> email address for each adult installing from your build. When building for a child, you will use your own <em>Apple ID</em>, not theirs. See <a href="../phone-install/#testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a>.</p>
-<ol>
-<li>
+<p>You are configuring a private capability for your family using an Internal Testing group. You need the <em>Apple ID</em> email address for each adult installing from your build. When building for a child, you will use an adult's <em>Apple ID</em>, not theirs. See <a href="../phone-install/#testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a>.</p>
 <p>First you need to add the email address(es) to your <em>App Store Connect</em> Access Users list:</p>
 <ul>
 <li>Open this link: <a href="https://appstoreconnect.apple.com/access/users" target="_blank">Users and Access</a><ul>
 <li>You must provide a role for each person - <code>Customer Support</code> is a good choice</li>
-<li>Once you have added them here, you'll be able to select them in the <code>TestFlight</code> group for your app</li>
+<li>Once you have added them here, you'll be able to select them in the <code>TestFlight</code> internal test group for each of your apps</li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="add email and role for your users" src="../img/add-users.png" width="700" /></p>
+<h2 id="configure-testflight-group-for-the-app">Configure <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Group for the App<a class="headerlink" href="#configure-testflight-group-for-the-app" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Add user for each app</p>
+<p>Once you add a user to have access to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> internal test group for an app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.</p>
+</div>
+<ol>
+<li>
+<p>Open this link: <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect / Apps</a> to view your apps; log in if needed.</p>
+<ul>
+<li>Select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+<li>Click on the <code>TestFlight</code> tab</li>
+<li><strong>If you already have an Internal Testing Group for this app, skip to Step 4</strong></li>
+</ul>
 </li>
 <li>
-<p>Open this link: <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect / Apps</a> to view your apps; log in if needed. Then select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. Click on the <code>TestFlight</code> tab then click the blue plus button (<font color="#2997FF"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></font>) next to <code>Internal Testing</code> to add a group.</p>
+<p>Click the blue plus button (<font color="#2997FF"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></font>) next to <code>Internal Testing</code> to add a group.</p>
 <p align="center"><img alt="open TestFlight tab for your app" src="../img/setup-testflight-01.png" width="700" /></p>
 </li>
 <li>
 <p>Fill out the name you want for the <code>Internal Testing</code> group</p>
 <ul>
 <li>Be sure to check the box <code>Enable automatic distribution</code></li>
-<li>Click <code>Create</code> when done (this can always be modified later)</li>
+<li>Click <code>Create</code> when done</li>
 </ul>
 <p align="center"><img alt="add email and role for your users" src="../img/setup-testflight-02.png" width="700" /></p>
 </li>
 <li>
-<p>As soon as you create the group, you'll be asked who should be included</p>
+<p>You can add or remove emails to the Internal Test Group as any time</p>
 <ul>
 <li>Click in the box beside each person you want to include</li>
 <li>Each person in this group will get an email each time you update (build again) using the <code><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser Build</code> method</li>
 <li>Click <code>Add</code> when you are done</li>
-<li>If building for a child, you will send the invitation to yourself because you will install for your child: See <a href="../phone-install/#testflight-for-a-child"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for a Child</a></li>
+<li>If building for a minor child, you will send the invitation to yourself or another person because a minor child is not authorized to use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>: See <a href="../phone-install/#testflight-for-a-child"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for a Child</a></li>
 </ul>
 <p align="center"><img alt="select your users for the testing group" src="../img/setup-testflight-03.png" width="700" /></p>
 </li>

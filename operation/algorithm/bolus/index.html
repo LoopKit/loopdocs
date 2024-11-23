@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loop-manual-bolus" class="md-skip">
+        <a href="#recommended-bolus" class="md-skip">
           Skip to content
         </a>
       
@@ -2167,11 +2167,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loop-manual-bolus" class="md-nav__link">
+  <a href="#recommended-bolus" class="md-nav__link">
     <span class="md-ellipsis">
-      Loop Manual Bolus
+      Recommended Bolus
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Recommended Bolus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slow-absorption-time-extended-bolus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slow Absorption Time (Extended Bolus)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2221,7 +2236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../temp-basal/" class="md-nav__link">
+      <a href="../auto-adjust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3342,11 +3357,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loop-manual-bolus" class="md-nav__link">
+  <a href="#recommended-bolus" class="md-nav__link">
     <span class="md-ellipsis">
-      Loop Manual Bolus
+      Recommended Bolus
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Recommended Bolus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slow-absorption-time-extended-bolus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slow Absorption Time (Extended Bolus)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3376,26 +3406,38 @@
 
   <h1>Bolus Recommendations</h1>
 
-<h2 id="loop-manual-bolus"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Manual Bolus<a class="headerlink" href="#loop-manual-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will recommend bolus insulin corrections when the eventual blood glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.</p>
-<p>These recommendations are not proactively sent to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> never issues a bolus command automatically while using the default <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> <a href="../../../loop-3/settings/#dosing-strategy"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a>; all boluses are initiated by the user unless the <a href="../../../loop-3/settings/#automatic-bolus"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></a> dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.</p>
-<p>The bolus dose calculation is identical to the dose equation given in the basal recommendations section, with the exception that:</p>
+<h2 id="recommended-bolus">Recommended Bolus<a class="headerlink" href="#recommended-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app will recommend bolus insulin corrections when the eventual glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.</p>
+<p>These recommendations are not proactively sent to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> never issues a bolus command automatically while using the default <abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr> <a href="../../../loop-3/settings/#dosing-strategy"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a>; all boluses are initiated by the user unless the <a href="../../../loop-3/settings/#automatic-bolus"><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr></a> dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.</p>
+<p>The recommended bolus calculation is described in <a href="../auto-adjust/#determine-the-recommended-bolus" target="_blank">Determine the Recommended Dose</a>, with these exceptions:</p>
 <ul>
-<li>the insulin contribution from the currently running temporary basal set by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is removed or subtracted from the recommended bolus amount, and  </li>
+<li>the insulin contribution from the currently running temporary basal set by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is removed or subtracted from the recommended bolus amount, and  </li>
 <li>the delta is calculated for the top of the correction range, rather than the average of the correction range.</li>
 </ul>
-<p>For recently saved carbohydrates where the projected carbohydrate absorption will outlast the insulin activity duration (e.g., very slow-digesting meals like pizza or pasta), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s algorithm will inherently decrease the initial meal bolus — to prevent hypoglycemia events that often occur after these meals — by only recommending enough bolus to prevent minimum predicted glucose from going below the suspend threshold. As described above, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm computes the recommended bolus such that predicted glucose will not dip below the suspend threshold. This may result in future blood glucose levels predicted above correction range, but will prevent a hypoglycemia event shortly after the meal (as it sometimes occurs for people giving a "pizza bolus" in traditional pump therapy). <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will then later make corrections by issuing a command to temporarily <a href="../temp-basal/#increase-basal-rate">Increase Basal Rate</a> or provide an automatic bolus. In effect, this algorithm behavior mimics traditional pump therapy of “extended” or “dual wave” bolusing, but with the benefit of added information about actual carbohydrate absorption effects as time goes by.</p>
-<p>Finally, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> checks that the result of the calculations is below the maximum single bolus the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> user specified in their settings. If the calculated bolus is less than the maximum single bolus setting, then the recommended bolus will be displayed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s bolus tool.</p>
+<h3 id="slow-absorption-time-extended-bolus">Slow Absorption Time (Extended Bolus)<a class="headerlink" href="#slow-absorption-time-extended-bolus" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For recently saved carbohydrates with longer absorption time, e.g., very slow-digesting meals like pizza or pasta, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s algorithm provides an initial meal bolus less than the simple grams divided by carbohydrate ratio calculation for <a href="../prediction/#carbohydrate-effect" target="_blank">Carbohydrate Effect</a>.</p>
+<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm computes the recommended bolus such that predicted glucose will not dip below the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>. This may result in future glucose levels predicted above correction range, but will prevent a hypoglycemia event shortly after the meal.</p>
+<ul>
+<li>As time progresses after the meal, when appropriate, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> modifies insulin delivery</li>
+<li>A decrease in recommended insulin amount is always provided as a decreased Temporary Basal rate</li>
+<li>An increase in recommended insulin amount is delivered based on the user-selected <a href="../../../loop-3/settings/#dosing-strategy" target="_blank"><abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr></a>:<ul>
+<li><abbr title="provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)">Temp Basal Only</abbr>: <a href="../auto-adjust/#increase-basal-rate" target="_blank">Increase Basal Rate</a></li>
+<li><abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr>: 40% of the recommended amount</li>
+</ul>
+</li>
+<li>In effect, this algorithm behavior mimics traditional pump therapy of “extended” or “dual wave” bolusing, but with the benefit of added information about actual carbohydrate absorption effects as time goes by</li>
+</ul>
+<p>Finally, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> checks that the result of the calculations is below the maximum single bolus the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> user specified in their settings. If the calculated bolus is less than the maximum single bolus setting, then the recommended bolus will be displayed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s bolus tool.</p>
 <div class="admonition info">
 <p class="admonition-title">Bolusing safety feature</p>
-<p>If the current blood glucose, or any predicted blood glucose, falls below the suspend threshold, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will not return a recommended bolus. When the minimum blood glucose rises above the suspend threshold, the bolus tool will provide a recommended bolus.</p>
+<p>If the current glucose, or any predicted glucose, falls below the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will not return a recommended bolus. When the minimum glucose rises above the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>, the bolus tool will provide a recommended bolus.</p>
 </div>
 <h2 id="algorithm-section-menu">Algorithm Section Menu<a class="headerlink" href="#algorithm-section-menu" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
 <li><a href="../overview/">Algorithm Overview</a><ul>
 <li><a href="./">Bolus Recommendations</a></li>
-<li><a href="../prediction/">Blood Glucose Prediction</a></li>
-<li><a href="../temp-basal/"><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Adjustments</a></li>
+<li><a href="../prediction/">Glucose Prediction</a></li>
+<li><a href="../auto-adjust/">Automatic Dosing Adjustments</a></li>
 </ul>
 </li>
 </ul>

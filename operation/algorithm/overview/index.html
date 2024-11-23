@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loop-algorithm" class="md-skip">
+        <a href="#the-loop-algorithm" class="md-skip">
           Skip to content
         </a>
       
@@ -2146,9 +2146,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loop-algorithm" class="md-nav__link">
+  <a href="#the-loop-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
-      Loop Algorithm
+      The Loop Algorithm
     </span>
   </a>
   
@@ -2230,7 +2230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../temp-basal/" class="md-nav__link">
+      <a href="../auto-adjust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3351,9 +3351,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loop-algorithm" class="md-nav__link">
+  <a href="#the-loop-algorithm" class="md-nav__link">
     <span class="md-ellipsis">
-      Loop Algorithm
+      The Loop Algorithm
     </span>
   </a>
   
@@ -3394,11 +3394,16 @@
 
   <h1>Algorithm Overview</h1>
 
-<h2 id="loop-algorithm"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Algorithm<a class="headerlink" href="#loop-algorithm" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s algorithm for adjusting insulin delivery is oriented around making a blood glucose prediction. Every five minutes, triggered by new blood glucose data, it generates a new prediction. Both <a href="../bolus/">bolus recommendations</a> and <a href="../temp-basal/">temporary basal rate adjustments</a> are set based on this <a href="../prediction/">prediction</a>.</p>
+<h2 id="the-loop-algorithm">The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Algorithm<a class="headerlink" href="#the-loop-algorithm" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm for adjusting insulin delivery is oriented around making a glucose prediction and modifying delivery to bring that prediction within target range without going below the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>. Every five minutes, triggered by new glucose data, it generates a new prediction. Both <a href="../bolus/">bolus recommendations</a> and <a href="../auto-adjust/">temporary basal rate adjustments</a> are set based on this <a href="../prediction/">prediction</a>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Glucose Prediction</p>
+<p>The <em>prediction</em> is a calculation based on the known parameters of current and historical glucose values, current and historical insulin delivery using any entered carbs. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s model predictive control (<abbr title="model predictive control; the type of control algorithm used by Loop">MPC</abbr>) calculation includes the user's therapy settings modified by active overrides. This calculation is updated at the next glucose reading and the recommended insulin delivery may be updated.</p>
+<p>The predicted glucose shown assumes no changes to future insulin delivery, when in fact, the insulin delivery is likely to be modified based on actual glucose. In that sense, the glucose prediction shown in various charts in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app are meant to communicate the reason for the current dosing from <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>. Especially in the case of very low or very high <em>predictions</em>, be assured that <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will attempt to change dosing to prevent that future glucose from happening, while keeping the user above the <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>.</p>
+</div>
 <h2 id="algorithm-terminology">Algorithm Terminology<a class="headerlink" href="#algorithm-terminology" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This graph and legend illustrates terms commonly used in discussing <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s algorithm,
-and shows them in the context of historical and forecasted blood glucose in style similar to the
+and shows them in the context of historical and predicted glucose in style similar to the
 status screen of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p><img alt="Chart illustrating terms" src="../img/terms_graph.png" /></p>
 <table>
@@ -3411,11 +3416,11 @@ status screen of <abbr title="With a capital L, Loop is one of several do-it-you
 <tbody>
 <tr>
 <td>Insulin activity duration</td>
-<td>The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects blood glucose. The insulin activity duration is 6 hours for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s rapid-acting and ultra-rapid insulin models.</td>
+<td>The insulin activity duration is the duration of the insulin activity curve, and describes the point at which the delivered insulin dose no longer affects glucose. The insulin activity duration is 6 hours for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s rapid-acting and ultra-rapid insulin models.</td>
 </tr>
 <tr>
 <td>Correction range</td>
-<td>The correction range is the blood glucose range <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses to determine corrective actions (e.g., between 90 and 120 mg/dL in the figure). NOTE: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s correction range is a user setting and should not be confused with the target range, typically 70-180 mg/dL, used for the purpose of calculating the percent time in range.</td>
+<td>The correction range is the glucose range <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> uses to determine corrective actions (e.g., between 90 and 120 mg/dL in the figure). NOTE: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>’s correction range is a user setting and should not be confused with the target range, typically 70-180 mg/dL, used for the purpose of calculating the percent time in range.</td>
 </tr>
 <tr>
 <td>Correction minimum</td>
@@ -3430,36 +3435,36 @@ status screen of <abbr title="With a capital L, Loop is one of several do-it-you
 <td>The correction target is the average value of the correction range. In the overview figure, this is 105 mg/dL given that the correction minimum is 90 mg/dL and the correction maximum is 120 mg/dL.</td>
 </tr>
 <tr>
-<td>Predicted blood glucose</td>
-<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction of blood glucose values out for a length of time equal to your insulin action duration. The predicted blood glucose is the basis for how <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes its insulin delivery recommendations and actions.</td>
+<td>Predicted glucose</td>
+<td><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> makes a prediction of glucose values out for a length of time equal to your insulin action duration. The predicted glucose is the basis for how <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> makes its insulin delivery recommendations and actions.</td>
 </tr>
 <tr>
-<td>Eventual blood glucose</td>
-<td>The last value of the predicted glucose curve, in other words the very last blood glucose predicted at the end of your insulin action duration. In the figure above, this is 85 mg/dL.</td>
+<td>Eventual glucose</td>
+<td>The last value of the predicted glucose curve, in other words the very last glucose predicted at the end of your insulin action duration. In the figure above, this is 85 mg/dL.</td>
 </tr>
 <tr>
-<td>Minimum predicted blood glucose</td>
-<td>The lowest blood glucose value at any point in time within the prediction. In the figure above, this is 77 mg/dL.</td>
+<td>Minimum predicted glucose</td>
+<td>The lowest glucose value at any point in time within the prediction. In the figure above, this is 77 mg/dL.</td>
 </tr>
 <tr>
 <td>Delta</td>
-<td>The delta is the difference between the eventual blood glucose and the correction target. In the overview figure, the eventual blood glucose is 85 mg/dL and the correction target is 105 mg/dL, which means that the delta is  -20 mg/dL.</td>
+<td>The delta is the difference between the eventual glucose and the correction target. In the overview figure, the eventual glucose is 85 mg/dL and the correction target is 105 mg/dL, which means that the delta is  -20 mg/dL.</td>
 </tr>
 <tr>
-<td>Suspend Threshold</td>
-<td>The suspend threshold is a safety feature of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm. If any predicted blood glucose is below this threshold, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> algorithm will issue a temporary basal rate of 0</td>
+<td>Suspend Threshold (<abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>)</td>
+<td>The glucose safety limit (called suspend threshold when this figure was generated) is a safety feature of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm. If any predicted glucose is below this value, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm will issue a temporary basal rate of 0</td>
 </tr>
 <tr>
 <td><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data</td>
-<td>Blood glucose readings made by a continuous glucose monitor.</td>
+<td>Glucose readings made by a continuous glucose monitor.</td>
 </tr>
 <tr>
 <td>Insulin sensitivity factor</td>
-<td>A configuration value that provides an estimate of how much blood glucose will drop given a unit of insulin.</td>
+<td>A configuration value that provides an estimate of how much glucose will drop given a unit of insulin.</td>
 </tr>
 <tr>
 <td>Active insulin</td>
-<td>Active insulin, often referred to as Insulin-on-Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>), is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted blood glucose. The active insulin displayed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
+<td>Active insulin, often referred to as Insulin-on-Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>), is the remaining amount of insulin activity from boluses and temporary basal rates relative to a user’s scheduled basal rates. More specifically, it is the total amount of insulin activity due to all bolus and basal insulin delivered within the last N hours, where N is determined by the insulin activity duration. The amount of “active” insulin depends upon the insulin activity curve, and also accounts for the insulin withheld via basal suspensions. As such, it is possible that the active insulin can be negative. Negative active insulin will result in an increase in predicted glucose. The active insulin displayed in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main display does not reflect the currently enacted temporary basal rate, as that basal rate may be canceled or modified before completion over the next 30 minutes. In others words, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> doesn't count chickens before the eggs hatch...insulin delivery must be confirmed before being added to the active insulin reporting.</td>
 </tr>
 </tbody>
 </table>
@@ -3467,8 +3472,8 @@ status screen of <abbr title="With a capital L, Loop is one of several do-it-you
 <ul>
 <li><a href="./">Algorithm Overview</a><ul>
 <li><a href="../bolus/">Bolus Recommendations</a></li>
-<li><a href="../prediction/">Blood Glucose Prediction</a></li>
-<li><a href="../temp-basal/"><abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Adjustments</a></li>
+<li><a href="../prediction/">Glucose Prediction</a></li>
+<li><a href="../auto-adjust/">Automatic Dosing Adjustments</a></li>
 </ul>
 </li>
 </ul>
