@@ -33,4 +33,4 @@ Finally, *Loop* checks that the result of the calculations is below the maximum 
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](auto-adjust.md)
+    * [Automatic Dosing Adjustments](auto-adjust.md)

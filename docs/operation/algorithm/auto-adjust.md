@@ -1,16 +1,23 @@
 ## Calculated Dose
 
-The *Loop* algorithm takes one of four actions depending upon the eventual glucose, predicted glucose, target range and glucose safety threshold when Closed Loop operation is enabled.
+The *Loop* algorithm takes one of [four actions](#four-possible-actions) depending upon the glucose prediction, target range and glucose safety threshold when Closed Loop operation is enabled.
 
-The recommended insulin dose (positive or negative) is calculated first, then the Temp Basal or Automatic Bolus to be enacted is modified based on the recommended dose, dosing strategy, maximum Temp Basal and maximum Bolus settings. The automated dosing (increase or decrease) is updated with every CGM value - typically every 5 minutes.
+The recommended insulin dose (positive or negative) is calculated first, including all safety checks, and then the insulin delivery adjustments are applied based on the dosing strategy, while respecting the maximum Temp Basal and maximum Bolus values in the user's [Therapy Settings](../../loop-3/therapy-settings.md){: target="_blank" }. The automated dosing (increase or decrease) is updated with every CGM value - typically every 5 minutes.
+
+If a decrease in insulin dose is recommended, this is always applied using a temporary basal rate that is less than the scheduled basal rate.
+
+!!! abstract "Temporary Basal Duration"
+    All temporary basal rate commands are issued for a duration of 30 minutes. If communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates.
+
+    The *Loop* app may enact a new temporary basal rate every 5 minutes based on incoming glucose readings.
 
 **Dosing Strategy: Temp Basal Only**
 
-All temporary basal rate commands are issued for 30 minutes, however they may be updated (re-issued) every 5 minutes. Said another way, *Loop* may enact a new temporary basal rate every 5 minutes. But, if communication with the pump is lost, the last issued temporary basal rate will last for at most 30 minutes before the pump reverts to the user’s scheduled basal rates.
+If the Looper has selected Temp Basal Only Dosing Strategy and an increase in insulin dose is recommended, that increase is converted to a temporary basal rate that exceeds the current scheduled basal rate.
 
 **Dosing Strategy: Automatic Bolus**
 
-If the Looper has selected Automatic Bolus Dosing Strategy and an increase in insulin dose is recommended, then the Four Actions discussion below applies to the automatic bolus decision.
+If the Looper has selected Automatic Bolus Dosing Strategy and an increase in insulin dose is recommended, then an automatic bolus, which is less than the recommended dose, is delivered promptly.
 
 ### No Automatic Dosing
 
@@ -152,4 +159,4 @@ The table below shows the $\mathit{BR_temp}$ for different $\mathit{BG_eventual}
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](auto-adjust.md)
+    * [Automatic Dosing Adjustments](auto-adjust.md)

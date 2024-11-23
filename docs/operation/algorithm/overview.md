@@ -1,6 +1,6 @@
 ## The *Loop* Algorithm
 
-Loop’s algorithm for adjusting insulin delivery is oriented around making a glucose prediction and modifying delivery to bring that prediction within target range without going below the Glucose Safety Limit. Every five minutes, triggered by new glucose data, it generates a new prediction. Both [bolus recommendations](bolus.md) and [temporary basal rate adjustments](auto-adjust.md) are set based on this [prediction](prediction.md).
+The *Loop* algorithm for adjusting insulin delivery is oriented around making a glucose prediction and modifying delivery to bring that prediction within target range without going below the Glucose Safety Limit. Every five minutes, triggered by new glucose data, it generates a new prediction. Both [bolus recommendations](bolus.md) and [temporary basal rate adjustments](auto-adjust.md) are set based on this [prediction](prediction.md).
 
 !!! abstract "Glucose Prediction"
     The *prediction* is a calculation based on the known parameters of current and historical glucose values, current and historical insulin delivery using any entered carbs. Loop's model predictive control (MPC) calculation includes the user's therapy settings modified by active overrides. This calculation is updated at the next glucose reading and the recommended insulin delivery may be updated.
@@ -36,4 +36,4 @@ status screen of Loop.
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](auto-adjust.md)
+    * [Automatic Dosing Adjustments](auto-adjust.md)

@@ -311,4 +311,4 @@ Each individual effect along with the combined effects are illustrated in the fi
 * [Algorithm Overview](overview.md)
     * [Bolus Recommendations](bolus.md)
     * [Glucose Prediction](prediction.md)
-    * [Temp Basal Adjustments](auto-adjust.md)
+    * [Automatic Dosing Adjustments](auto-adjust.md)
