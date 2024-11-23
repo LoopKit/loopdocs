@@ -41,7 +41,7 @@
     * *GitHub*:
         * [`Action: 3. Create Certificates`](certs.md#create-certificates){: target="_blank" }
         * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
-    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](tf-users.md#set-up-users-and-access-testflight){: target="_blank" }
+    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](tf-users.md#testflight-users-overview){: target="_blank" }
     * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md){: target="_blank" }
 
 ???+ question "FAQs (click to open/close)"

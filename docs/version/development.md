@@ -73,7 +73,16 @@ The code that feeds Loop data to remote services like Tidepool and Nightscout ha
 
 There is a lot of discussion about *branches* with *Loop* but the concept is simple. Basically, they are all slightly different versions of *Loop*...kind of like different edits of the same book.
 
-To really understand what branches are, we should probably explain a little more about the software and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s){: target="_blank" } created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video that `master` was the old name for the `main` branch. The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` suggested for developers/testers.
+To really understand what branches are, we should probably explain a little more about the software and how development works.  You can watch a 30-minute long, classic Katie DiSimone [video explanation about branches](https://www.youtube.com/watch?v=cWqvYs4Azt0&t=4s){: target="_blank" } created when *Loop* Version 2.0 was newly released. Keep in mind while watching the video:
+
+
+Details that are different:
+
+* The way the code is organized has changed: see [LoopWorkspace](#loopworkspace)
+* The default branch name used to be `master` - but is now `main`
+* `carthage` is no longer used to determine which submodules (frameworks) are pulled in to build Loop (see [LoopWorkspace](#loopworkspace))
+
+The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` suggested for developers/testers.
 
 ### `Loop` GitHub Information
 

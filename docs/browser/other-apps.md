@@ -397,7 +397,7 @@ Please do not remove an existing app if you have trouble building a new one. You
 
 ## Add Users to *TestFlight* for App
 
-Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [Configure to Use Browser: Set Up Users and Access (TestFlight)](../browser/tf-users.md#set-up-users-and-access-testflight).
+Once the first build completes, you will be able to configure *TestFlight* for the app - follow the template for setting up *TestFlight* for Loop found in [Configure to Use Browser: *TestFlight* Users Overview](../browser/tf-users.md#testflight-users-overview).
 
 ## Install on Phone
 

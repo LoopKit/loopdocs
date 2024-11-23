@@ -1,12 +1,10 @@
 ## General Installation Information
 
-This is only available with&nbsp;_<span translate="no">Loop 3</span>_.
+**The *Loop* app must be built at least every 90 days when using a browser to build.** With version 3.4.0 and later, the build is automatic (once a month or with a new release). It is recommended you manually install the new build using *TestFlight* at your convenience.
 
-**The *Loop* app must be built at least every 90 days when using a browser to build.** With version 3.4.0 and later, the build is automatic. It is recommended you manually install the new build using *TestFlight* at your convenience.
+After you [Build the *Loop* App](../browser/build-yml.md#build-the-loop-app) with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
 
-After you [Build the *Loop* App](../browser/build-yml.md#build-the-loop-app) with a browser and it has automatically uploaded to the *TestFlight* app, you are ready to install on as many phones as you and your family members need.
-
-* If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../browser/tf-users.md#set-up-users-and-access-testflight).
+* If you later need to add an adult family member to your list, refer to [*TestFlight* Users Overview](../browser/tf-users.md#testflight-users-overview).
 
 * Children (under 13 in US, varies by country) cannot use *TestFlight* with their ID. When you use [*TestFlight* for a Child](#testflight-for-a-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the *TestFlight* invitation to the email associated with your ID.
 
@@ -26,7 +24,11 @@ To install *TestFlight*, refer to the GIF below:
 
 ## Install App with *TestFlight*
 
-Once you get an email that the *TestFlight* processing completed, you can install the app on your phone. Note this can be half-hour to an hour after the build displays the green check mark on your browser.
+Once you get an email that your app is available to test on iOS and watchOS, you can install the app on your phone from *TestFlight*.
+
+* Note this can be half-hour to an hour after the build displays the green check mark on your browser
+* Once the app is on your phone, you can choose to install the watch version using your phone *Watch* app
+* If you did not already add your email to your *TestFLight* group for your app, go and do it now using these [instructions](tf-users.md#configure-testflight-group-for-the-app){: target="_blank" }
 
 The first time you use *TestFlight* on any phone associated with a given email, you must `Redeem` the code sent to that email inviting you to test the app. The GIF below is for someone who has never used *TestFlight*.
 
@@ -40,11 +42,12 @@ The first time you use *TestFlight* on any phone associated with a given email, 
 
 If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the phone, you'll see the warning about possible loss of data. Don't worry, all your settings remain. Go ahead with the installation.
 
-* If you are building&nbsp;_<span translate="no">Loop</span>_&nbsp;3.x over&nbsp;_<span translate="no">Loop</span>_&nbsp;2.x, you will be required to go through [Onboarding](../loop-3/onboarding.md)
-
 ### Subsequent Times on Phone
 
 * Open the *TestFlight* app and find the name you used for your *Loop* app in the [Create *Loop* App in App Store Connect](../browser/prepare-app.md#create-loop-app-in-app-store-connect) step
+* If you have previously used *TestFlight* on this phone and don't see the latest build, sometimes quitting and restarting *TestFlight* will bring that new build into the list of available apps
+* Most people will just tap install to get the most recent build
+    * If you have more than one version number available in *TestFlight* you can choose which version to install by tapping on the `Previous Builds` row and then selecting the desired version
 * Tap on Install
     * If you already have the *Loop* app installed on this phone, you will be warned that the app already exists on your phone and that you might lose data
     * Click Install again (your pump connection and all your data will be fine)
@@ -56,15 +59,17 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-The instructions on the [Configure to Use Browser](intro-summary.md) page will, unless you make a change, automatically take the following actions for released versions 3.4.0 and later:
+The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.4.0 and later:
 
-* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the change
-    * When an update to the default `branch`, typically `main`, is detected, a new build is created automatically and uploaded to *TestFlight*
-* Build the app at least once a month and upload to *TestFlight*
+* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release release
+    * Automatically create a new build and upload it to *TestFlight*
+    * This is only for the `default` branch, typically `main`
+* Build the app at least once a month and upload it to *TestFlight*
 
-It is already true that, unless you make a change, the default setting will:
+Unless you make the recommended one-time change to [Disable Automatic Install from *TestFlight*](#disable-automatic-install-from-testflight), the default setting for each app found in *TestFlight* is to:
 
 * Install each new build from *TestFlight* on the phone as soon as it is detected
+* That's fine for some apps, like *LoopFollow*, but you do not want an app that controls your insulin delivery to install when you are not paying attention
 
 ### Recommendation
 
@@ -92,10 +97,10 @@ When you are ready to install, just open the *TestFlight* app and click Install 
 
 ### Previous Builds
 
-If you tap on the bottom row that says `Previous Builds`, highlighted by the dashed-green rectangle, you can view and choose an older (or lower version number) build (as long as it has not expired). 
+If you tap on the row that says `Previous Builds`, highlighted by the dashed-green rectangle in the graphic above, you can view and choose an older (or lower version number) build (as long as it has not expired). 
 
 * In some cases, you need to do this to see the newest build
-* For example, it you build version 3.5.0 (`dev` branch) accidentally and then switched to 3.4.x (`main` branch), *TestFlight* shows you the 3.5.0 version on the screen and you need to go to previous builds to find your newer 3.4.x build
+* For example, if you built version 3.5.0 (`dev` branch) and then switched to 3.4.x (`main` branch), *TestFlight* shows you the most recent 3.5.0 version as the default build to install and you need to go to previous builds to find your newer 3.4.x build
 
 ### Unexpected *TestFlight* Beta Expiration
 
@@ -122,7 +127,9 @@ If you tap on the bottom row that says `Previous Builds`, highlighted by the das
 
 ## *TestFlight* for a Child
 
-The adult (*Apple Developer Account* owner) can log into Media & Purchase (see steps below) without affecting the child *Apple* ID associated with a phone (and thus their health records used by the *Loop* app). After the adult installs or updates the app using *TestFlight*, they probably should reverse those steps to remove their credentials from Media & Purchase.
+Minor children are not allowed to install or use the *TestFlight* app.
+
+An adult, who is a member of the [Internal *TestFlight* Group](tf-users.md#configure-testflight-group-for-the-app){: target="_blank" :} can log into Media & Purchase (see steps below) without affecting the *Apple* ID associated with a phone (and thus the health records used by the *Loop* app for the minor child). After the adult installs or updates the app using *TestFlight*, they probably should reverse those steps to remove their credentials from Media & Purchase.
 
 Media & Purchase affects access to the App Store, Books, Music and Podcasts.
 
@@ -134,7 +141,7 @@ On the Child phone:
     * Tap on Media & Purchases
     * Tap on Sign Out, and confirm
     * Sometimes the phone requires a reboot before you can sign in with a different ID
-* Sign in with the adult (*Apple Developer* Account owner) *Apple* ID and password
+* Sign in with the adult *Apple* ID email and password
 * Install or Update the app from *TestFlight* on child phone
 * Repeat the process to sign out the adult and (if needed) sign back in the child
 

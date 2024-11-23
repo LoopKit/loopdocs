@@ -21,7 +21,9 @@
     * If you already have a fork, you cannot proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
 1. Now your screen should look like the graphic below
     * Your username will be automatically filled in as the owner (`Owner`)
-    * <code>LoopWorkspace</code> is the repository name (`Repository Name`)
+    * <code>LoopWorkspace</code> is the repository name (`Repository Name`) highlighted with the blue rectangle
+        * Do not rename the repository to something else
+        * It needs to match the original repository name or automatic building will not work
     * Leave the selection that says "`Copy the main branch only`" checked
     * Click on the green `Create fork` button
 

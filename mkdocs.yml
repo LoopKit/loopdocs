@@ -115,6 +115,7 @@ plugins:
             'operation/loop-settings/services-v2.md': 'loop-3/services.md'
             'operation/loop-settings/displays.md': 'loop-3/displays-v3.md'
             'operation/loop-settings/rileylink.md': 'loop-3/rileylink.md'
+            'operation/algorithm/temp-basal.md': 'operation/algorithm/auto-adjust.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -203,7 +204,7 @@ nav:
         - 'Algorithm Overview': 'operation/algorithm/overview.md'
         - 'Bolus Recommendations': 'operation/algorithm/bolus.md'
         - 'Glucose Prediction': 'operation/algorithm/prediction.md'
-        - 'Automated Adjustments': 'operation/algorithm/temp-basal.md'
+        - 'Automated Adjustments': 'operation/algorithm/auto-adjust.md'
 - Troubleshoot:
     - 'Troubleshooting Overview': 'troubleshooting/overview.md'
     - 'Loop App Crashes': 'troubleshooting/loop-crashing.md'

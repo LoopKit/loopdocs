@@ -158,6 +158,8 @@ When Google Translate is selected:
 
 **<span translate="no">Monterey</span>**&nbsp; (Monterey): operating system for Mac, macOS 12.x
 
+**<span translate="no">MPC</span>**&nbsp; (MPC): model predictive control; the type of control algorithm used by Loop
+
 **<span translate="no">NFC</span>**&nbsp; (NFC): Near-Field Communication is used for scanning devices such as Libre sensors
 
 **<span translate="no">Nightscout</span>**&nbsp; (Nightscout): a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`
