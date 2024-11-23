@@ -4,7 +4,7 @@
 
 After you [Build the *Loop* App](../browser/build-yml.md#build-the-loop-app) with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
 
-* If you later need to add an adult family member to your list, refer to [Set Up Users and Access (TestFlight)](../browser/tf-users.md#set-up-users-and-access-testflight).
+* If you later need to add an adult family member to your list, refer to [*TestFlight* Users Overview](../browser/tf-users.md#testflight-users-overview).
 
 * Children (under 13 in US, varies by country) cannot use *TestFlight* with their ID. When you use [*TestFlight* for a Child](#testflight-for-a-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the *TestFlight* invitation to the email associated with your ID.
 
@@ -47,7 +47,7 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 * Open the *TestFlight* app and find the name you used for your *Loop* app in the [Create *Loop* App in App Store Connect](../browser/prepare-app.md#create-loop-app-in-app-store-connect) step
 * If you have previously used *TestFlight* on this phone and don't see the latest build, sometimes quitting and restarting *TestFlight* will bring that new build into the list of available apps
 * Most people will just tap install to get the most recent build
-    * If you have more than one version number available in *TestFlight* you can can choose which version to install by tapping on the `Previous Builds` row and then selecting the desired version
+    * If you have more than one version number available in *TestFlight* you can choose which version to install by tapping on the `Previous Builds` row and then selecting the desired version
 * Tap on Install
     * If you already have the *Loop* app installed on this phone, you will be warned that the app already exists on your phone and that you might lose data
     * Click Install again (your pump connection and all your data will be fine)
@@ -59,9 +59,9 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-The instructions on the [Configure to Use Browser](intro-summary.md) pages will automatically take the following actions for released versions 3.4.0 and later:
+The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.4.0 and later:
 
-* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of the release
+* Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release release
     * Automatically create a new build and upload it to *TestFlight*
     * This is only for the `default` branch, typically `main`
 * Build the app at least once a month and upload it to *TestFlight*

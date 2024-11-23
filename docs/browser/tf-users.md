@@ -1,15 +1,20 @@
-## Set Up Users and Access (TestFlight)
+## *TestFlight* Users Overview
 
-> You repeat this step if you need to add a User to your account. For example, you want to add another adult who can install the app on your child's phone or you want a spouse or friend to have a copy of the app on their phone as backup for a trip.
+There are two parts to this.
 
-> As a developer, you are already included as a user with the Role of Account Holder, Admin. But you will need to add yourself to the TestFlight internal test group for each app you build.
+* A user must be registered under your [Your App Store Connect User List](#your-app-store-connect-user-list) before they can be added to a *TestFlight* internal test group for any app
+    * As a developer, you are already included as a user with the Role of Account Holder, Admin
+* Once the first build for a given app completes, you will be able to configure the [*TestFlight* Internal Testing Group](#configure-testflight-group-for-the-app) for that app
+    * You must add yourself to the *TestFlight* Internal Testing Group for each app
 
-Once the first build for a given app completes, you will be able to [Configure *TestFlight* Internal Testing Group](#configure-testflight-group-for-the-app) for that app.
+## Your App Store Connect User List
 
-!!! tip "Add Each User One Time"
-    Once you add a user to have access to your TestFlight internal test group for an app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
+!!! tip "Step 1: add user for access for any of your apps"
+    Before you can select someone for the *TestFlight* Internal Testing group for any app, you must first add them to your App Store Connect User list.
 
-You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use your own *Apple ID*, not theirs. See [*TestFlight* for a Child](phone-install.md#testflight-for-a-child).
+    As a developer, you are already included as a user with the Role of Account Holder, Admin.
+
+You are configuring a private capability for your family using an Internal Testing group. You need the *Apple ID* email address for each adult installing from your build. When building for a child, you will use an adult's *Apple ID*, not theirs. See [*TestFlight* for a Child](phone-install.md#testflight-for-a-child).
 
 First you need to add the email address(es) to your *App Store Connect* Access Users list:
 
@@ -20,7 +25,10 @@ First you need to add the email address(es) to your *App Store Connect* Access U
 ![add email and role for your users](img/add-users.png){width="700"}
 {align="center"}
 
-### Configure *TestFlight* Group for the App
+## Configure *TestFlight* Group for the App
+
+!!! tip "Add user for each app"
+    Once you add a user to have access to your TestFlight internal test group for an app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
 

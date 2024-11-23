@@ -14,7 +14,7 @@
         * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users){: target="_blank" } on App Store Connect.
         * Add them to your *TestFlight* Internal Testing group.
 
-    [<span class="loop-bigger">:material-skip-forward:</span>](tf-users.md#set-up-users-and-access-testflight) To skip the detailed instructions, click on [Set Up Users and Access (TestFlight)](tf-users.md#set-up-users-and-access-testflight).
+    [<span class="loop-bigger">:material-skip-forward:</span>](tf-users.md#testflight-users-overview) To skip the detailed instructions, click on [*TestFlight* Users Overview](tf-users.md#testflight-users-overview).
 
 Refer to the graphic below for the first four steps:
 
