@@ -58,6 +58,9 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
     * [Action: Validate Secrets Errors](bb-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
 
+!!! important "Ask For Help Early"
+    Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.
+
 !!! tip "Pro Tip: Validate Secrets"
     The Action `Validate Secrets` is run every time you do any other action. Technically, you never have to run the action by itself - you could start with `Add Identifiers`.
     
@@ -101,6 +104,9 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
     * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
     * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
     * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+
+!!! important "Ask For Help Early"
+    Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.
 
 ## Next Step
 

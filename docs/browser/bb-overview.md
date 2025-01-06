@@ -63,9 +63,15 @@ Instructions to install on a phone are found at:
 
 ## What if I get stuck?
 
-Try to:
+!!! important "How to Ask for Help"
+    First time setup should take several hours, but if you are having trouble:
+
+    * [Click here to find help](bb-errors.md#help-with-errors){: target="_blank" }.
+
+If you want to solve it yourself, try to:
 
 * Scroll back in the directions and see if you missed a paragraph or step
+    * Be sure you are copying the exact **names** needed for each step or clicking on the **link** associated with a particular step - many pages look similar
 * Compare your display with the <span>graphics in *LoopDocs*</span>
     * Is something different or does yours have an error message?
     * Does the [Error](bb-errors.md){: target="_blank" } message guide you to the problem and solution?
@@ -80,7 +86,6 @@ If you get an error that you cannot figure out, reach out for help before you ge
     * [Help with Errors](bb-errors.md#help-with-errors){: target="_blank" }
     * [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
     * With Browser Build, post your *GitHub* LoopWorkspace link and a brief description of your problem
-
 
 * [Errors with Browser](bb-errors.md){: target="_blank" }
 

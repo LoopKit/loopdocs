@@ -41,6 +41,6 @@ Once you see the green check mark by `Create Certificates`, the next step is to 
 
 If this action fails, head over to the errors page. Review these links, identify and fix your error or ask for help.
 
+* [How to Ask for Help](bb-errors.md#help-with-errors){: target="_blank" }
 * [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
 * [Create Certificates Errors](bb-errors.md#action-create-certificates-errors){: target="_blank" }.
-* [How to Ask for Help](bb-errors.md#help-with-errors){: target="_blank" }

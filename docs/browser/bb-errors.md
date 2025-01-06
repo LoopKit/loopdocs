@@ -1,10 +1,40 @@
 ## Help with Errors
 
-If you get an error when building with a browser, use this page to figure out what to do.
+!!! important "Get Help, Not Frustrated"
+    For first-time builders, there are a lot of one-time steps that all have to be correct and many screens look similar.
 
-If you are still unsuccessful, then post your request for help along with the link to your repository. For example - this link is used to test the build instructions and generate figures for LoopDocs. You replace your GitHub username where you see `loopdocs-tester`:
+    If you are updating your build or renewing certificates, the process can be confusing and some error messages can be misleading.
 
-* [https://github.com/loopdocs-tester/LoopWorkspace](https://github.com/loopdocs-tester/LoopWorkspace){: target="_blank" }
+    If you are having trouble, don't hesitate to ask for help.
+
+    Please do NOT:
+
+    * Spend hours in frustration
+    * Rename or delete a repository
+    * Delete your GitHub account
+    * Remove your App from App Store Connect
+
+### Where to Get Help with Browser Build
+
+These are two places to ask for help, but please choose only one. You may get a faster response from Facebook, but there are mentors on both sites:
+
+* [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN){: target="_blank" }
+* [Zulipchat: Loop: Build Help]( https://loop.zulipchat.com/#narrow/channel/148543-Loop/topic/Browser.20Build){: target="_blank" }
+
+### What Information is Needed for Help
+
+1. Your GitHub username (required):
+
+    * You can also provide a link to your repository like the example, but substitute your username for `USERNAME`
+    * If you are building an app other than Loop, replace LoopWorkspace with the app repository name
+
+    ```
+    https://github.com/USERNAME/LoopWorkspace
+    ```
+
+1. A brief summary of the step you are on and what isn't working.
+
+That's all we need to get started.
 
 Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span>_, make sure your code is up to date, examine your customizations (if any), then click on the Action tab and view your log files directly.
 
@@ -16,9 +46,9 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
     All that is needed to assist is your link or as a bare minimum your *GitHub* **username**.
 
-But first - try to diagnose it yourself using this page.
-
 ### Most Common Mistakes
+
+If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
 
 !!! warning "Just updated?"
     If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.

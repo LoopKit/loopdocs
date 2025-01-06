@@ -5,6 +5,11 @@ After creating the identifiers, you will need to
 1. [Configure](#configure-identifiers-for-loop){: target="_blank" } them to associate the correct App Group with specific identifiers 
 2. [Create](#create-loop-app-in-app-store-connect){: target="_blank" } the *Loop* App.
 
+Some people get confused on this page. Many of the links look similar but are actually different pages at *Apple*.
+
+!!! important "Ask For Help Early"
+    Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.
+
 ## Configure Identifiers for Loop
 
 ???+ tip "Background Information (Click to open/close)"
