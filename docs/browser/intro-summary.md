@@ -54,7 +54,12 @@
 
 ## Tips and Tricks
 
-The steps to configure for building with a browser requires a lot of focused attention. Take it in steps and take breaks as needed. Some people prefer a video. Some people prefer more detailed steps on a webpage and others only high-level steps. 
+The steps to configure for building with a browser require a lot of focused attention. Take it in steps and take breaks as needed. Some people prefer a video. Some people prefer more detailed steps on a webpage and others only high-level steps.
+
+!!! important "How to Ask for Help"
+    First time setup should take several hours, but if you are having trouble don't get frustrated:
+
+    * [Click here to find help](bb-errors.md#help-with-errors){: target="_blank" }.
 
 ### The Short Version
 

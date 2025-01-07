@@ -77,9 +77,21 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
     * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
 
+!!! important "How to Ask for Help"
+    Updating with Browser Build should be pretty fast and often automatic. Updating certificates (once a year) can sometimes be tricky.
+
+    If you are having trouble:
+
+    * [Click here to find help](bb-errors.md#help-with-errors){: target="_blank" }.
+
 ## Accept Agreements
 
 > This is Step 1 of 6 - it may not always be necessary, but please check every time.
+
+!!! warning "Wait After You Agree"
+    It typically takes 15 minutes before your updated agreement is available so you can complete your build.
+
+    If your build with browser fails, wait longer. An hour wait was reported by one person.
 
 Sign in to your [Apple Developer account](https://developer.apple.com/account){: target="_blank" }. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.
 
@@ -99,11 +111,6 @@ Digital Service Act Compliance
     * This is a new requirement that must be completed one time
     * See [Digital Service Act Compliance](prepare-app.md#digital-service-act-compliance){: target="_blank" } for instructions
 
-!!! warning "Wait After You Agree"
-    It typically takes 15 minutes before your updated agreement is available so you can complete your build.
-
-    If your build with browser fails, wait longer. An hour wait was reported by one person.
-
 ## Renew Certificate
 
 > This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your `Distribution Certificate` expires. (Don't worry if you did not see the email.)
@@ -117,9 +124,11 @@ Digital Service Act Compliance
 ??? question "Do you want to know more? (Click to open/close)"
     This is only a summary - please follow the detailed steps below carefully.
 
-    * Delete all your `Distribution Certificates`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
+    * Delete all your certificates that say the type is `Distribution`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
 
-    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`. Later this will be automated and can be done without modifying your `Match-Secrets repository`, but for now the easiest way to do that is to just delete the `certs/distribution` folder in your current `Match-Secrets repository`.
+    * Some people have `Distribution Managed` types listed. These are cloud-managed. An internet search finds this quote: "My general approach to cloud-managed certificates is to ignore them and let Apple’s infrastructure do its thing."
+
+    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`.
 
     * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
 
@@ -130,11 +139,12 @@ Digital Service Act Compliance
 
 1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
     * If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
-    * Carefully examine the `Type` column - do **not** delete a `Development Certificate`
-        * If you do not have any rows that say `Distribution Certificate`, your certificate already expired and was removed by *Apple*; so skip ahead to Step 2
+    * Carefully examine the `Type` column - do **not** delete a certificate with type of `Development`
+        * If you do not have any rows that say the type is `Distribution`, your certificate already expired and was removed by *Apple*; so skip ahead to Step 2
         * If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to [Update `Fork`](#update-fork)
-    * Click each row that has a `Distribution Certificate` and revoke it
+    * Click each row that has a type of `Distribution` and revoke it
     * You will get an email informing you the certificate was revoked
+    * You can ignore rows with a type of `Distribution Managed`
 1. Navigate to your `Match-Secrets` Repository
     * You can do this several ways, but one method is demonstrated by the GIF below
     * Open the URL for your *GitHub* account (address is `https://github.com/username` where `username` is replaced by your *GitHub* username
