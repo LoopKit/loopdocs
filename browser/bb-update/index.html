@@ -3875,10 +3875,23 @@
 <li><a href="https://www.youtube.com/watch?v=0ipTsiqbbrQ" target="_blank">How to Update and Rebuild <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with a Web Browser</a></li>
 </ul>
 </div>
+<div class="admonition important">
+<p class="admonition-title">How to Ask for Help</p>
+<p>Updating with Browser Build should be pretty fast and often automatic. Updating certificates (once a year) can sometimes be tricky.</p>
+<p>If you are having trouble:</p>
+<ul>
+<li><a href="../bb-errors/#help-with-errors" target="_blank">Click here to find help</a>.</li>
+</ul>
+</div>
 <h2 id="accept-agreements">Accept Agreements<a class="headerlink" href="#accept-agreements" title="Anchor link to this Header on this Page">&para;</a></h2>
 <blockquote>
 <p>This is Step 1 of 6 - it may not always be necessary, but please check every time.</p>
 </blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Wait After You Agree</p>
+<p>It typically takes 15 minutes before your updated agreement is available so you can complete your build.</p>
+<p>If your build with browser fails, wait longer. An hour wait was reported by one person.</p>
+</div>
 <p>Sign in to your <a href="https://developer.apple.com/account" target="_blank">Apple Developer account</a>. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.</p>
 <ul>
 <li>For an update, you do not need to modify the <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code></li>
@@ -3901,11 +3914,6 @@
 </ul>
 </li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Wait After You Agree</p>
-<p>It typically takes 15 minutes before your updated agreement is available so you can complete your build.</p>
-<p>If your build with browser fails, wait longer. An hour wait was reported by one person.</p>
-</div>
 <h2 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h2>
 <blockquote>
 <p>This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your <code>Distribution Certificate</code> expires. (Don't worry if you did not see the email.)</p>
@@ -3921,10 +3929,13 @@
 <p>This is only a summary - please follow the detailed steps below carefully.</p>
 <ul>
 <li>
-<p>Delete all your <code>Distribution Certificates</code>. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)</p>
+<p>Delete all your certificates that say the type is <code>Distribution</code>. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)</p>
 </li>
 <li>
-<p>The <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> in question is embedded in your <code>Match-Secrets repository</code>. In order to proceed, you need to remove the old certificate from <code>Match-Secrets</code>. Later this will be automated and can be done without modifying your <code>Match-Secrets repository</code>, but for now the easiest way to do that is to just delete the <code>certs/distribution</code> folder in your current <code>Match-Secrets repository</code>.</p>
+<p>Some people have <code>Distribution Managed</code> types listed. These are cloud-managed. An internet search finds this quote: "My general approach to cloud-managed certificates is to ignore them and let Apple’s infrastructure do its thing."</p>
+</li>
+<li>
+<p>The <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> in question is embedded in your <code>Match-Secrets repository</code>. In order to proceed, you need to remove the old certificate from <code>Match-Secrets</code>.</p>
 </li>
 <li>
 <p>Finally, for every app that you build with this method, you need to run <code>Create Certificates</code> for that app. (Step 4 below.)</p>
@@ -3939,13 +3950,14 @@
 <ol>
 <li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list" target="_blank">Apple Developer Certificates</a><ul>
 <li>If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by <em>Apple</em>; so skip ahead to Step 2: Navigate to your <code>Match-Secrets</code> Repository</li>
-<li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a <code>Development Certificate</code><ul>
-<li>If you do not have any rows that say <code>Distribution Certificate</code>, your certificate already expired and was removed by <em>Apple</em>; so skip ahead to Step 2</li>
+<li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a certificate with type of <code>Development</code><ul>
+<li>If you do not have any rows that say the type is <code>Distribution</code>, your certificate already expired and was removed by <em>Apple</em>; so skip ahead to Step 2</li>
 <li>If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to <a href="#update-fork">Update <code>Fork</code></a></li>
 </ul>
 </li>
-<li>Click each row that has a <code>Distribution Certificate</code> and revoke it</li>
+<li>Click each row that has a type of <code>Distribution</code> and revoke it</li>
 <li>You will get an email informing you the certificate was revoked</li>
+<li>You can ignore rows with a type of <code>Distribution Managed</code></li>
 </ul>
 </li>
 <li>
