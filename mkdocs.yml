@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: LoopDocs
+site_url: https://loopkit.github.io/loopdocs/
 
 theme:
     name: material
