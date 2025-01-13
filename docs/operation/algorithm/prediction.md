@@ -72,7 +72,7 @@ Lastly, taking the first derivative (i.e., the rate of change) of the cumulative
 
 The insulin effect for a given dose can be expressed mathematically:
 
-$$ \Delta BG_{dose}[t] = ISF[t_{dose}] \times IA_{dose}[t] $$
+$$ \Delta BG_{dose}[t] = IS\text{F}[t_{dose}] \times IA_{dose}[t] $$
 
 where $\Delta BG_{I}$ is the expected change in glucose due to insulin with the units (mg/dL/5min), ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant dose, and IA is the insulin activity (U/5min) at time *t*. Insulin activity can also be thought of as a velocity or rate of change in insulin in the blood as it acts on glucose. Insulin activity explicitly accounts for active insulin from temporary basals and boluses, and implicitly accounts for scheduled basal which is assumed to balance out with EGP.
 
@@ -152,7 +152,9 @@ where MAR is the minimum absorption rate (g/hr), CA is the number of carbohydrat
 
 The linear model above is modulated by an additional calculation that uses recently observed glucose data to estimate how fast carbohydrates have been absorbing. The expected change in glucose due to insulin effects alone is compared to the actual observed changes in glucose. This difference is termed the insulin counteraction effect (ICE):
 
-$$ ICE[t] = \Delta BG_{O}[t] - \Delta BG_{I}[t] $$
+$$ 
+\text{IC}\text{E}[t] = \Delta BG_{O}[t] - \Delta BG_{I}[t] 
+$$
 
 where, ICE (mg/dL/5 min) is the insulin counteraction effect, $\Delta BG_{O}$ is the observed change in glucose (mg/dL/5min) at time *t*, and $\Delta BG_{I}$ is the modelled change in glucose due to insulin alone (i.e. the insulin effect as described above mg/dL/5min).
 
@@ -160,7 +162,7 @@ Insulin counteraction effects are caused by more than just carbohydrates, and ca
 
 The insulin counteraction effect is converted into an estimated carbohydrate absorption amount by using both the carbohydrate-to-insulin ratio and the insulin sensitivity factor that were current at the time of a recorded meal entry.
 
-$$ AC[t] = ICE[t] \times \frac{CIR[t_{meal}]}{ISF[t_{meal}]} $$
+$$ AC[t] = \text{IC}\text{E}[t] \times \frac{CIR[t_{meal}]}{IS\text{F}[t_{meal}]} $$
 
 where AC is the number of carbohydrates absorbed (g/5min), ICE is the insulin counteraction effect, CIR is the carbohydrate-to-insulin ratio (g/U) at the time of the relevant meal entry, and ISF is the insulin sensitivity factor (mg/dL/U) at the time of the relevant meal entry.
 
@@ -200,7 +202,7 @@ If the dynamically-estimated carbohydrate absorption of a meal entry up to the c
 
 After the estimated absorbed carbohydrates have been subtracted from each meal entry, the remaining carbohydrates (for each entry) are then predicted to decay or absorb using the minimum absorption rate. *Loop* uses this prediction to estimate the effect (active carbohydrates, or carbohydrate activity) of the remaining carbohydrates. The carbohydrate effect can be expressed mathematically using the terms described above:
 
-$$ \Delta BG_{C}[t] = MAR[t] \times \frac{ISF[t_{meal}]}{CIR[t_{meal}]} $$
+$$ \Delta BG_{C}[t] = MAR[t] \times \frac{IS\text{F}[t_{meal}]}{CIR[t_{meal}]} $$
 
 ## Retrospective Correction Effect
 
@@ -218,7 +220,7 @@ where BG*vel* is a velocity term (mg/dL per 5min) that represents the average gl
 
 The retrospective correction effect can be expressed mathematically:
 
-$$ \Delta BG_{RC}[t] = BG_{vel} \times \left(1-\frac{t-5}{55}\right) $$
+$$ \Delta BG_{R\text{C}}[t] = BG_{vel} \times \left(1-\frac{t-5}{55}\right) $$
 
 where BG is the predicted change in glucose with the units (mg/dL/5min) at time *t* over the time range of 5 to 60 minutes, and the other term gives the percentage of BG*vel* that is applied to this effect.
 
@@ -296,7 +298,7 @@ It is also worth noting that *Loop* will not calculate glucose momentum in insta
 
 As described in the momentum effect section, the momentum effect is blended with the insulin, carbohydrate, and retrospective correction effects to predict the change in glucose:
 
-$$ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{RC}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) $$
+$$ \Delta BG[t] = \Delta BG_{M}[t] + \left(\Delta BG_{I}[t] + \Delta BG_{C}[t]+ \Delta BG_{R\text{C}}[t] \right) \times min\left(\frac{t-5}{15}, 1\right) $$
 
 Lastly, the predicted glucose BG at time *t* is the current glucose BG plus the sum of all glucose effects $\Delta BG$ over the time interval $[t_{5}, t]$:
 
