@@ -323,14 +323,14 @@ Some pumps can also provide a heartbeat if the CGM you choose cannot provide one
 
 DanaKit doesn't provide a heartbeat by default.
 
-Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-heartbeat.md).
+Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-faq.md).
 
 
 ## Change Pump Type
 
 Before changing from one pump type to another pump type, you must delete the old pump type.
 
-* If you are using Medtronic, scroll to the bottom of the pump screen and select `Delete Pump`
+* If you are using Medtronic or Dana (RS/-i), scroll to the bottom of the pump screen and select `Delete Pump`
 
 * Before switching between Omnipod and Omnipod DASH or any kind of Omnipod to Medtronic, you must deactivate your current pod
     * This does not include changing a pod, so long as the pods are of the same type
