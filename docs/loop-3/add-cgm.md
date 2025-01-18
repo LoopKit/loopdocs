@@ -130,7 +130,7 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 
 ### Libre
 
-The Libre plugin for Loop, [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop), connects directly via Near Field Communication (NFC) during pairing (for some sensors) and via Bluetooth (direct to sensor or direct to a transmitter attached to the sensor) for regular readings. No other app is needed.
+The Libre plugin for Loop, [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/), connects directly via Near Field Communication (NFC) during pairing (for some sensors) and via Bluetooth (direct to sensor or direct to a transmitter attached to the sensor) for regular readings. No other app is needed.
 
 * Libre 1 are supported but must use a third-party transmitter (miaomiao and bubble transmitters are supported)
 * European Libre 2 can be used directly or via transmitter
