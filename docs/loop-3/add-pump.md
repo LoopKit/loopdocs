@@ -330,7 +330,7 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 
 Before changing from one pump type to another pump type, you must delete the old pump type.
 
-* If you are using Medtronic, scroll to the bottom of the pump screen and select `Delete Pump`
+* If you are using Medtronic or Dana (RS/-i), scroll to the bottom of the pump screen and select `Delete Pump`
 
 * Before switching between Omnipod and Omnipod DASH or any kind of Omnipod to Medtronic, you must deactivate your current pod
     * This does not include changing a pod, so long as the pods are of the same type
