@@ -226,7 +226,7 @@ where BG is the predicted change in glucose with the units (mg/dL/5min) at time 
 
 The retrospective correction effect can be illustrated with an example: if the BG*vel* over the past 30 minutes was -10 mg/dL per 5min, then the retrospective correction effect over the next 60 minutes would be as follows:
 
-| Minutes relative to now (*t=0*) | Percent of $BG_{vel}$ Applied to RC Effect | $\Delta BG_{RC}[t]$ |
+| Minutes relative to now (*t=0*) | Percent of $BG_{vel}$ Applied to RC Effect | $\Delta BG_{\mathit{R}\mathit{C}}[t]$ |
 |---------------------------------|--------------------------------------------|---------------------|
 | 5                               | 100%                                       | -10                 |
 | 10                              | 91%                                        | -9.1                |
