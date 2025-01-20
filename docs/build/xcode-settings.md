@@ -6,7 +6,7 @@
 
 !!! abstract "Summary"
     - Verify that Command Line Tools are installed: Xcode-> Settings -> choose Locations tab.
-    - Add your Apply ID:  Xcode-> Settings -> choose Accounts tab.
+    - Add your Apple ID:  Xcode-> Settings -> choose Accounts tab.
 
 !!! question "FAQs"
     - **"I still only see an account with `(personal team)` beside it even though I enrolled in the paid Developer Account program...what should I do?"** You should check your spam email box in case Apple sent you an email there. Make sure you've waited the 48 hours that Apple says it may take to get your account approved. If it's been 48 hours and you still don't see anything in your email, contact Apple support and ask them about the status of your enrollment. It may be held up by something on their end.
