@@ -80,7 +80,7 @@ In the scenario where *Loop* will either increase basal rate or issue an automat
 
 The amount of insulin needed, or dose, is calculated using the desired reduction in glucose and the user’s ISF. For the *Loop* algorithm, the desired reduction in glucose is the delta between the eventual glucose and the correction target:
 
-$$ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{ISF}} $$
+$$ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{I}\mathit{SF}} $$
 
 !!! info "Loop Dose Calculation"
 
@@ -114,13 +114,13 @@ To illustrate how the *Loop* calculates the temporary basal rate when there is a
 
 * $\mathit{BG_eventual} = 200 \mathrm{\frac{mg}{dL}}$
 * $\mathit{BG_target} = 100 \mathrm{\frac{mg}{dL}}$
-* $\mathit{ISF} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}$
+* ${\mathit{I}\mathit{SF} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}}$
 * $\mathit{BR_scheduled} = 1 \mathrm{\frac{U}{hr}}$
 * $\mathit{BR_max} = 6 \mathrm{\frac{U}{hr}}$ (set by user in Loop)
 
 First, calculate the dose:
 
-$$ dose = \frac{\mathit{BG_eventual} - \mathit{BG_target}}{\mathit{ISF}} = \frac{200 \mathrm{\frac{mg}{dL}} - 100 \mathrm{\frac{mg}{dL}}}{50 \mathrm{\frac{\frac{mg}{dL}}{U}}} = 2 \mathrm{U} $$
+$$ dose = \frac{\mathit{BG_eventual} - \mathit{BG_target}}{\mathit{I}\mathit{SF}} = \frac{200 \mathrm{\frac{mg}{dL}} - 100 \mathrm{\frac{mg}{dL}}}{50 \mathrm{\frac{\frac{mg}{dL}}{U}}} = 2 \mathrm{U} $$
 
 Then, convert the dose into a basal rate to be issued for the next 30 minutes:
 
@@ -139,7 +139,7 @@ $$ \mathit{BR_{temp}} = \max(\min( \mathit{BR_{required}}, \mathit{BR_max}), 0) 
 Consider the following values as fixed values for our calculation:
 
 * $\mathit{BG_target} = 100 \mathrm{\frac{mg}{dL}}$
-* $\mathit{ISF} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}$
+* $\mathit{I}\mathit{SF} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}$
 * $\mathit{BR_scheduled} = 1 \mathrm{\frac{U}{hr}}$
 * $\mathit{BR_max} = 6 \mathrm{\frac{U}{hr}}$
 
