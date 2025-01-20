@@ -3660,7 +3660,7 @@
 <h2 id="determine-the-recommended-bolus">Determine the Recommended Bolus<a class="headerlink" href="#determine-the-recommended-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>In the scenario where <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will either increase basal rate or issue an automatic bolus, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> calculates a “dose” in the same way doses are calculated in both open-loop and traditional insulin pump therapy. It's also the same math many people on multiple-daily injection therapy use. The benefit of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> (and all other close-loop algorithms) is that it does this math every 5 minutes, and is far less prone to error than humans doing the math. <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> also does its math based on predicting into the future, which traditional pumps and humans, do not always have the time or inclination to do.</p>
 <p>The amount of insulin needed, or dose, is calculated using the desired reduction in glucose and the user’s <abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>. For the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm, the desired reduction in glucose is the delta between the eventual glucose and the correction target:</p>
-<div class="arithmatex">\[ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>}} \]</div>
+<div class="arithmatex">\[ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{I}\mathit{SF}} \]</div>
 <div class="admonition info">
 <p class="admonition-title"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Dose Calculation</p>
 <p>A major difference between traditional pump therapy and how the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> calculates dose is that in pump therapy the current glucose is used to estimate the dose, whereas in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm the eventual and minimum glucose predictions are also used in determining dosing decisions.</p>
@@ -3683,12 +3683,12 @@
 <ul>
 <li><span class="arithmatex">\(\mathit{BG_eventual} = 200 \mathrm{\frac{mg}{dL}}\)</span></li>
 <li><span class="arithmatex">\(\mathit{BG_target} = 100 \mathrm{\frac{mg}{dL}}\)</span></li>
-<li><span class="arithmatex">\(\mathit{<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}\)</span></li>
+<li><span class="arithmatex">\({\mathit{I}\mathit{SF} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}}\)</span></li>
 <li><span class="arithmatex">\(\mathit{BR_scheduled} = 1 \mathrm{\frac{U}{hr}}\)</span></li>
 <li><span class="arithmatex">\(\mathit{BR_max} = 6 \mathrm{\frac{U}{hr}}\)</span> (set by user in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>)</li>
 </ul>
 <p>First, calculate the dose:</p>
-<div class="arithmatex">\[ dose = \frac{\mathit{BG_eventual} - \mathit{BG_target}}{\mathit{<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>}} = \frac{200 \mathrm{\frac{mg}{dL}} - 100 \mathrm{\frac{mg}{dL}}}{50 \mathrm{\frac{\frac{mg}{dL}}{U}}} = 2 \mathrm{U} \]</div>
+<div class="arithmatex">\[ dose = \frac{\mathit{BG_eventual} - \mathit{BG_target}}{\mathit{I}\mathit{SF}} = \frac{200 \mathrm{\frac{mg}{dL}} - 100 \mathrm{\frac{mg}{dL}}}{50 \mathrm{\frac{\frac{mg}{dL}}{U}}} = 2 \mathrm{U} \]</div>
 <p>Then, convert the dose into a basal rate to be issued for the next 30 minutes:</p>
 <div class="arithmatex">\[ \mathit{BR_correction} = \frac{2 \times \mathit{dose}}{\mathrm{hr}} = \frac{2 \times 2 \mathrm{U}}{\mathrm{hr}} = 4 \mathrm{\frac{U}{hr}} \]</div>
 <p>Next, calculate the required basal rate:</p>
@@ -3699,7 +3699,7 @@
 <p>Consider the following values as fixed values for our calculation:</p>
 <ul>
 <li><span class="arithmatex">\(\mathit{BG_target} = 100 \mathrm{\frac{mg}{dL}}\)</span></li>
-<li><span class="arithmatex">\(\mathit{<abbr title="Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor">ISF</abbr>} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}\)</span></li>
+<li><span class="arithmatex">\(\mathit{I}\mathit{SF} = 50 \mathrm{\frac{\frac{mg}{dL}}{U}}\)</span></li>
 <li><span class="arithmatex">\(\mathit{BR_scheduled} = 1 \mathrm{\frac{U}{hr}}\)</span></li>
 <li><span class="arithmatex">\(\mathit{BR_max} = 6 \mathrm{\frac{U}{hr}}\)</span></li>
 </ul>
