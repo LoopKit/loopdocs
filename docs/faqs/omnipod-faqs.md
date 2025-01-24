@@ -104,3 +104,66 @@ Once you have removed the screaming pod, it can be silenced using a paperclip. S
 
 ![img/paperclip.jpg](img/paperclip.jpg){width="500"}
 {align="center"}
+
+## What Are the Pod Priming and Start Delays?
+
+- You have 2 hours after you fill the Pod with insulin to do a successful prime (this happens when you tap on `Pair Pod` on the Omnipod screen)
+- You have 1 hour after the prime completes to insert the cannula
+
+If you exceed these time limits, the pod becomes useless.  
+
+
+!!! info "Omnipod User Manual on Pod Start Delay"
+    
+     page 85:  
+    > **Note**: After filling the Pod, continue to the next step immediately.  
+    > If two hours pass before activating the filled Pod, the Pod becomes unusable.
+    
+     page 86:  
+    > **Note**: After activating, the Pod beeps every 5 minutes until you apply it.  
+    > If you do not apply it and do not begin insulin delivery within 60 minutes after activating, the Pod becomes unusable.  
+
+Window                      | Delay
+---                         | ---
+Filling to Priming          | 2 Hours
+Priming to Canula Insertion | 1 Hour
+
+Below is a *state diagram* that will give you a more **visual** representation.
+
+```mermaid
+stateDiagram-v2
+    state 2h_timeout_reached <<choice>>
+    state 1h_timeout_reached <<choice>>
+    filled: Pod Filled
+    primed: Pod Primed
+    inserted: Pod Canula Inserted
+    2h_window: 2-Hour Window
+    2h_timeout: Exceeded 2-Hour Limit?
+    1h_window: 1-Hour Window
+    1h_timeout: Exceeded 1-Hour Limit?
+    pod_useless: Pod is Useless
+
+    [*]    --> filled
+    filled --> 2h_window
+    state 2h_window {
+      [*] --> 2h_timeout
+    }
+    2h_window --> 2h_timeout
+    2h_timeout --> 2h_timeout_reached
+    2h_timeout_reached  --> pod_useless: Yes
+    2h_timeout_reached  --> primed: No
+
+    primed --> 1h_window
+    state 1h_window {
+        [*] --> 1h_timeout
+    }
+    1h_timeout --> 1h_timeout_reached
+    1h_timeout_reached  --> pod_useless: Yes
+    1h_timeout_reached  --> inserted: No
+
+    inserted --> [*]
+```
+
+!!! tip "What to do if the Pod becomes useless?"
+    - Be sure to [break the sound card connection](#what-do-you-do-to-stop-a-screaming-pod) before discarding the Pod - it will scream after 80 hours, if not sooner.  
+    - Be sure to move the old Pod far away before attempting to pair a new Pod.
