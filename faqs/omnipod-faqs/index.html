@@ -3219,6 +3219,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-the-pod-priming-and-start-delays" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are the Pod Priming and Start Delays?
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3533,6 +3542,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-are-the-pod-priming-and-start-delays" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are the Pod Priming and Start Delays?
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3649,6 +3667,82 @@
 <p>If you are <strong>not</strong> successful at deactivating a pod and you've tried the steps at <a href="../../troubleshooting/red-loop/#reset-loop-to-pump-communications">Reset-<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-to-Pump-Communications</a>, make sure the old pod is removed from the area before trying to connect a new pod. (Placing it in a microwave temporarily prevents the phone from detecting that pod.) The paperclip trick (next paragraph) only breaks the sound connection, the pod electronics is still active.</p>
 <p>Once you have removed the screaming pod, it can be silenced using a paperclip. Simply put the paperclip in the small hole that is on the bottom (the side opposite where the cannula is) of the pod as shown. Push the paperclip in until you hear a little click, that click is breaking the circuit that connects the speaker to the electronics.</p>
 <p align="center"><img alt="img/paperclip.jpg" src="../img/paperclip.jpg" width="500" /></p>
+<h2 id="what-are-the-pod-priming-and-start-delays">What Are the Pod Priming and Start Delays?<a class="headerlink" href="#what-are-the-pod-priming-and-start-delays" title="Anchor link to this Header on this Page">&para;</a></h2>
+<ul>
+<li>You have 2 hours after you fill the Pod with insulin to do a successful prime (this happens when you tap on <code>Pair Pod</code> on the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> screen)</li>
+<li>You have 1 hour after the prime completes to insert the cannula</li>
+</ul>
+<p>If you exceed these time limits, the pod becomes useless.  </p>
+<div class="admonition info">
+<p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> User Manual on Pod Start Delay</p>
+<p>page 85:  </p>
+<blockquote>
+<p><strong>Note</strong>: After filling the Pod, continue to the next step immediately.<br />
+If two hours pass before activating the filled Pod, the Pod becomes unusable.</p>
+</blockquote>
+<p>page 86:  </p>
+<blockquote>
+<p><strong>Note</strong>: After activating, the Pod beeps every 5 minutes until you apply it.<br />
+If you do not apply it and do not begin insulin delivery within 60 minutes after activating, the Pod becomes unusable.  </p>
+</blockquote>
+</div>
+<table>
+<thead>
+<tr>
+<th>Window</th>
+<th>Delay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filling to Priming</td>
+<td>2 Hours</td>
+</tr>
+<tr>
+<td>Priming to Canula Insertion</td>
+<td>1 Hour</td>
+</tr>
+</tbody>
+</table>
+<p>Below is a <em>state diagram</em> that will give you a more <strong>visual</strong> representation.</p>
+<pre class="mermaid"><code>stateDiagram-v2
+    state 2h_timeout_reached &lt;&lt;choice&gt;&gt;
+    state 1h_timeout_reached &lt;&lt;choice&gt;&gt;
+    filled: Pod Filled
+    primed: Pod Primed
+    inserted: Pod Canula Inserted
+    2h_window: 2-Hour Window
+    2h_timeout: Exceeded 2-Hour Limit?
+    1h_window: 1-Hour Window
+    1h_timeout: Exceeded 1-Hour Limit?
+    pod_useless: Pod is Useless
+
+    [*]    --&gt; filled
+    filled --&gt; 2h_window
+    state 2h_window {
+      [*] --&gt; 2h_timeout
+    }
+    2h_window --&gt; 2h_timeout
+    2h_timeout --&gt; 2h_timeout_reached
+    2h_timeout_reached  --&gt; pod_useless: Yes
+    2h_timeout_reached  --&gt; primed: No
+
+    primed --&gt; 1h_window
+    state 1h_window {
+        [*] --&gt; 1h_timeout
+    }
+    1h_timeout --&gt; 1h_timeout_reached
+    1h_timeout_reached  --&gt; pod_useless: Yes
+    1h_timeout_reached  --&gt; inserted: No
+
+    inserted --&gt; [*]</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">What to do if the Pod becomes useless?</p>
+<ul>
+<li>Be sure to <a href="#what-do-you-do-to-stop-a-screaming-pod">break the sound card connection</a> before discarding the Pod - it will scream after 80 hours, if not sooner.  </li>
+<li>Be sure to move the old Pod far away before attempting to pair a new Pod.</li>
+</ul>
+</div>
 
 
 
