@@ -181,6 +181,12 @@ Yes. The *Loop* app does not require internet or cell coverage to work. So long 
 
 One exception - if you've chosen to use a CGM source that does require the internet, you will need to have cell or internet coverage. This ability is provided as a service to folks who cannot get their CGM data any other way. It is also a convenience for people testing the code.
 
+## How to Fix Loop Suddenly Changing Glucose Units from mmol/L to mg/dL?
+
+A known **display glitch** occasionally occurs, causing glucose readings to change from `mmol/L` to `mg/dL`.  If this is the case, the fix consists of simply [force closing](https://support.apple.com/en-us/109359) and reopening the *Loop* app.
+
+If this does not fix the issue, then read [this section](apple-health-faqs.md/#how-do-i-change-glucose-units) 
+
 ## What happened to FreeAPS?
 
 [FreeAPS](https://www.loopandlearn.org/freeapsdoc){: target="_blank" } was last updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or [`Trio`](https://diy-trio.org/){: target="_blank" }. Do not use an application without an owner.
