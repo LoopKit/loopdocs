@@ -113,7 +113,7 @@ Optionally: you can use miaomiao or bubble third party transmitters attached on 
 
 ### Can I use *Libre* sensors with a reader like Miao Miao?
 
-Loop 3.4.x and later enables the use of those *Libre* sensors supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
+Loop 3.4.x and later enables the use of those *Libre* sensors supported by [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/#libretransmitter-for-loop){: target="_blank" }.
 
 ### What about other *Libre* sensors?
 
