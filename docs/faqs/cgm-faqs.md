@@ -101,7 +101,7 @@ sequenceDiagram
 
 ### Troubleshoot Connections
 
-The "normal" *Libre* 2 sensors have a firmware configuration that makes them slow to reconnect when they loose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
+The "normal" *Libre* 2 sensors have a firmware configuration that makes them slow to reconnect when they lose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
 
 If you try to pair a sensor in the app multiple times in a short period (let's say within a couple of minutes), you may need to just stop and wait.
 
@@ -109,7 +109,7 @@ If you try to pair a sensor in the app multiple times in a short period (let's s
 * Multiple pairing attempts may make the sensor temporarily unable to function
 * If this matches your use case, shut off your phone and let it stay shut down for up to five minutes
 
-Optionally: you can use miaomiao or bubble third party transmitters attached on top of your normal *Libre* 2 sensors . Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
+Optionally: you can use miaomiao or bubble third-party transmitters attached on top of your normal *Libre* 2 sensors. Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
 
 ### Can I use *Libre* sensors with a reader like Miao Miao?
 
@@ -146,7 +146,7 @@ If possible, it is recommended that *Libre* users take advantage of [LibreTransm
 
 You can add *xDrip4iOS* as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code){: target="_blank" }. This uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach if you have another choice. For *Libre* users with a sensor that is not handled by LibreTransmitter, this is your only option for closed-loop.
 
-* xDrip4iOS can sense when the *Libre* are providing updates over Bluetooth but cannot interpret the readings because of the encryption for some sensor models
+* xDrip4iOS can sense when the *Libre* is providing updates over Bluetooth but cannot interpret the readings because of the encryption for some sensor models
 * xDrip4iOS waits a few seconds after the new reading and then queries *LibreLinkUp* using your login credentials
 * Be aware this makes your ability for closed-loop dependent on having internet access
 
