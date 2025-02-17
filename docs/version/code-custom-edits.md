@@ -488,7 +488,7 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 ## Custom Edits Optional
 
-The customizations listed below are incorporated into the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" }.
+The customizations listed below are incorporated into the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/build-select/){: target="_blank" } when choosing the "[Customization Select](https://www.loopandlearn.org/build-select/#utilities-custom){: target="_blank" }" option.
 
 You can use that script or make your own edit by following these directions.
 
