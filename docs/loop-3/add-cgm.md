@@ -185,7 +185,7 @@ In addition to the risks of missing data, if the internet is not reliable, you m
     
     There are third-party apps that bring Libre data to your Loop phone. Customization instructions are provided at the `Loop and Learn` website: [Libre Support for Loop 3.4.x](https://www.loopandlearn.org/custom-code/#add-cgm-client){: target="_blank" } that explain how to modify Loop 3 to use one of those apps for Browser Build. The Mac instructions are found on the same page. Please use these steps to get a version of Loop that does not rely on internet access to work.
     
-    It is suggested that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using a direct Bluetooth connection.
+    It is suggested that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2, using a direct Bluetooth connection.
     
     The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during the warmup of a new sensor (European Libre 2 using a direct Bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop 3. One Shuggah user and one xDrip4iOS user who connected via Nighscout as a CGM with Loop 3 had a serious overdose of insulin because of bad readings with a new sensor. The developers of xDrip4iOS fixed their application - so make sure you have the latest version. Those developers have no control over what is provided by Shuggah.
 
@@ -194,7 +194,13 @@ In addition to the risks of missing data, if the internet is not reliable, you m
 {align="center"}
 
 
-The user must enter both the URL and API_SECRET for their site to ensure the security of the data. The URL must start with `https://` and cannot have any extra spaces in the line.
+The user must enter both the **`URL`** and **`API_SECRET`** for their Nightscout site to ensure the security of the data. 
+
+!!! important "Format of the Nightscout URL"
+    
+    The *Nightscout* URL must start with `https://`.   
+    It cannot have any extra spaces in the line.  
+    The `s` character is required after `http` and before `://`.
 
 ![Nightscout Remote CGM entry screen](img/nightscout-cgm-entry.svg){width="350"}
 {align="center"}
