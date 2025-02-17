@@ -474,7 +474,7 @@ This *Loop* table of default values is provided for convenience. The times are a
 !!! warning "*Mac* Instructions"
     This can be done with Build with Browser but the instructions might need to be adjusted for that case.
 
-If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/){: target="_blank" } or [appicon.co](https://appicon.co/){: target="_blank" } and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
+If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [makeappicon.com](https://makeappicon.com/){: target="_blank" } or [appicon.co](https://appicon.co/){: target="_blank" } and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
 
 1. Navigate to the LoopWorkspace folder
 1. Open the OverrideAssetsLoop.xcassets folder
