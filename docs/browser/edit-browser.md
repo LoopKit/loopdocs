@@ -10,7 +10,7 @@
 !!! warning "Modules vs Submodule"
     This page has instructions to set up your own <code>fork</code> for the Modules, otherwise known as submodules, associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.
 
-    Each Module has its own *GitHub* <code>repository</code>;and you will be working with your <code>fork</code> of that Module at https://github.com/my-name-org/Module, where username is your username.
+    Each Module has its own *GitHub* <code>repository</code>;and you will be working with your <code>fork</code> of that Module at https://github.com/my-name-org/Module, where you use your own organization (recommended) or personal account.
 
     If you are an experienced builder who set the Submodule changes up in your personal *GitHub* account, you can leave those forks where they are, i.e., https://github.com/my-name/Module. You do not build from Submodules, so no `Secrets` are required.
 

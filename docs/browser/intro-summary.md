@@ -210,13 +210,15 @@ With release of Loop 3.6.0:
 
 ## Repository Names for my Fork:
 
-https://github.com/my-github-username-or-org-name/LoopWorkspace
+If you use an organization (recommended)
+https://github.com/my-name-org/LoopWorkspace
+
+or (if you don't use an organzation): 
+https://github.com/my-name/LoopWorkspace
 
 
 Add additional apps here if you decide to build any
 ```
-
-
 
 ## New Terms with <code>*GitHub* Browser Build</code>
 

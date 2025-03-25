@@ -130,6 +130,6 @@ These considerations were prepared when most people were using a Mac computer to
 * After the *GitHub* Build starts, your app is ready to install on your *iPhone* in about an hour
 * The app is delivered to your phone via *TestFlight*
     * The app is considered "Beta" by  *Apple* and expires after 90 days
-    * <span translate="no">Loop 3.4</span>&nbsp; and later versions provide automatic build as the default
+    * <span translate="no">Loop 3.4</span>&nbsp; and newer versions provide automatic build as the default
 * Customization methods are documented at [Customize with Browser](custom-browser.md){: target="_blank" }
 

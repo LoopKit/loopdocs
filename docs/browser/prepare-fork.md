@@ -25,7 +25,7 @@
 
 1. Refer the the GIF below:
     * If you created a free organization (strongly recommended), you will see the display shown in the GIF below where you will choose your organization as the owner
-        * If you did not set up a free organization, your username will be automatically filled in as the owner (`Owner`)
+        * If you did not set up a free organization, `my-name` will be automatically filled in as the owner (`Owner`)
     * If you already have a fork, you should not proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
     * The repository name is already filled in
         * Do not rename the repository to something else
@@ -48,9 +48,9 @@ After creating the &nbsp;<span class="notranslate">fork</span>, your screen shou
 
 Carefully compare your screen to the graphic below paying attention to the highlighted sections.
 
-* Note that your username or username-org is now showing
+* Note that your URL is `https://github.com/my-name-org/LoopWorkspace` or `https://github.com/my-name/LoopWorkspace` where `my-name` is the name you chose:
     * Many graphics for LoopDocs are created using a free *GitHub* organization called `loopdocs-tester`
-* The comment under your username indicates where the &nbsp;<span class="notranslate">fork</span>&nbsp; came from (that is a clickable link)
+* The comment on the second row indicates where the &nbsp;<span class="notranslate">fork</span>&nbsp; came from (that is a clickable link)
 * The branch that is selected :octicons-git-branch-16: is `main`
 * The message says "`This branch is up to date with LoopKit/LoopWorkspace:main`"
 
@@ -247,7 +247,7 @@ If your copy (`fork`) is **not** from `LoopKit`, follow the [Delete and Start Fr
 
 If your copy (`fork`) is from `LoopKit`:
 
-* Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
+* Open your <code>LoopWorkspace</code> repository (`https://github.com/my-name-org/LoopWorkspace`) where you use your version of `my-name` in the URL
 * Review the graphic in the [Configure: Successful Fork](#successful-fork) section
     * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
 * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
