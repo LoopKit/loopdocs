@@ -408,12 +408,11 @@ The [Install on Phone](phone-install.md) walks you through the steps to install 
 This section is optional. It is provided to assist:
 
 * Users who are using *GitHub* for other reasons and want to segregate their DIY app building from their existing accounts
-* Mentors who want to do a lot of testing of many DIY apps to support people and get tired of entering the 6 <code>Secrets</code> repeatedly
-* Users who are comfortable with the *GitHub* web interface who want the convenience of entering the 6 <code>Secrets</code> just one time instead of entering them for each <code>repository</code> individually
+* Users who want the convenience of entering the 6 <code>Secrets</code> just one time instead of entering them for each <code>repository</code> individually
 
 ### Set up a Free *GitHub* Organization
 
-Prerequisite: You need a personal *GitHub* account.
+Prerequisite: You need a personal *GitHub* account. If you do not already have a personal *GitHub* account, click on [New *GitHub* Account](secrets.md#new-github-account){: target="_blank" }.
 
 In the instructions below, use your *GitHub* username instead of `my-name`.
 
