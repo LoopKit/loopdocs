@@ -5,6 +5,75 @@
     3. [Update *Nightscout* site and add some "config vars" lines in *Nightscout* site settings](#step-3-add-apn-to-nightscout)
     4. [Test Remote Overrides](#step-4-test-remote-overrides)
 
+## Save Your Important Nightscout Information
+
+There is some important information you need to save when using Nightscout, especially for Remote Control of a Looper's phone. In addition to the URL and API_SECRET, you need 3 or 4 additional variables (`config-vars`) that you add to your Nightscout configuration.
+
+1. Decide where you want your Nightscout information saved and create a special folder
+2. Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin some of the `config-vars`)
+    * Create a blank Nightscout Reference file using the text-only editor
+    * Tap on the copy icon below to copy the template and paste it into your blank file
+    * Save the file
+3. As you move through the steps below to configure Nightscout for remote commands, fill in the file
+
+``` { .bash .copy title="Template to use for Nightscout" }
+MyNightscoutReferenceFile.txt
+
+## This file updated on: DD MMM YYYY
+
+## Important Information for Remote Commands with Nightscout
+
+You will want to add information specific to your Nightscout. 
+This will be different depending on whether you build it yourself or pay a vendor.
+
+PLACEHOLDER FOR YOUR SPECIFIC INFO, e.g., vendor, username
+
+The URL will always start with https://
+
+https://your-nightscout-site
+
+API_SECRET
+
+choose-something-hard-to-guess
+
+* must contain at least 12 characters
+* hint: don’t make it too long and do not put special characters in it (better stick to letters and numbers)
+* It is case-sensitive
+
+If you also use Browser Build method, you need to be careful not to mix 
+up your keys.
+The APNS key for Nightscout is an Apple Push Notification Key.
+It may look like the FASTLANE_KEY used for Browser Build, 
+but it is completely different.
+You need both (if using remote features). Do NOT get them mixed up.
+
+LOOP_APNS_KEY
+<looks like this - include the entire key>
+-----BEGIN PRIVATE KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END PRIVATE KEY-----
+
+LOOP_APNS_KEY_ID
+<looks like this>
+AAAAAAAAAA
+
+LOOP_DEVELOPER_TEAM_ID
+This is the same as the TEAMID used as a browser build Secret.
+<looks like this>
+AAAAAAAAAA
+
+LOOP_PUSH_SERVER_ENVIRONMENT is used only if you use TestFlight (Browser Build)
+as a build method; or use Xcode but then distribute via TestFlight.
+
+If you build from Mac-Xcode directly to a phone, do not include this config-var
+
+LOOP_PUSH_SERVER_ENVIRONMENT = production
+
+```
+
 ## Set Up Remote for *Nightscout*
 
 You can use the *Nightscout* site to remotely set and cancel override presets remotely in the *Loop* app.
@@ -61,6 +130,13 @@ The step is required for the *Loop* app to give permissions to your *Nightscout*
 
 !!! info "Reminder"
     This only works with the **paid** Apple Developer ID.
+
+!!! warning "*Apple* changed the APN system"
+    *Apple* changed the way APN are created. Your old ones should still work, but it they don't, create new ones and update all the places where they are used.
+
+    When creating new APN keys, you have the option for "Sandbox", "Production" or "Sandbox & Production". Be sure to choose "Sandbox & Production".
+
+    **TODO: Update the graphics**
 
 1. To get started, go to the `Keys` section under Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list){: target="_blank" } and login with the *Apple ID* associated with your developer team that you used to build the *Loop* app.
 2. If not already open in your browser (compare with the below screenshot), 
