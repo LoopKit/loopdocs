@@ -136,8 +136,6 @@ The step is required for the *Loop* app to give permissions to your *Nightscout*
 
     When creating new APN keys, you have the option for "Sandbox", "Production" or "Sandbox & Production". Be sure to choose "Sandbox & Production".
 
-    **TODO: Update the graphics**
-
 1. To get started, go to the `Keys` section under Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list){: target="_blank" } and login with the *Apple ID* associated with your developer team that you used to build the *Loop* app.
 2. If not already open in your browser (compare with the below screenshot), 
     - Click on **`Keys`** (located in the left-hand column). 
