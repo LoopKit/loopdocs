@@ -188,7 +188,7 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
 
-### Enter Variables
+### Add Variable
 
 This is a new step. It is already included in the `dev` branch and will be included in the `main` branch when `Loop 3.6.0` is released.
 

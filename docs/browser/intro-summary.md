@@ -118,7 +118,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 !!! important "Use a Text-Only Editor"
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
-    If you use a "smart" editor, it may change little letters to capital letters at the beginning of a line when you paste items into your archive file.
+    If you use a "smart" editor, it may change small letters to capital letters at the beginning of a line when you paste items into your archive file.
 
     If even one character is capitalized when it should not be, you will get errors.
 
