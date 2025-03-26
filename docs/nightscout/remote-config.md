@@ -146,8 +146,9 @@ The step is required for the *Loop* app to give permissions to your *Nightscout*
 3. In the form that appears, do the following:
     - Click the checkbox for enabling **`Apple Push Notifications service (APNs)`**
     - Enter a name for the key such as `Nightscout` (you can name it however you want, just make sure you know what the key is for by the name you choose).
-    - Then click the **`Continue`** button in the upper right of the screen.  
-  > ![img/key-apns.png](img/key-apns.png)
+    - Then click the **`Configure`** button to the right of the name
+    - Choose **`Sandbox & Production`** and then **`Save`**
+  > ![updated instructions for creating and configuring an APNS key](img/key-apns.svg)
 4. In the screen that follows, click the blue **`Register`** button.  
    > ![img/apns-register.png](img/apns-register.png)
 5. In the screen that follows, click the blue **`Download`** button.  
