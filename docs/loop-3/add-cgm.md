@@ -52,7 +52,7 @@ Some people use Dexcom Share to feed their remote services. There have been outa
 
 This is the reason why there's a comment under each CGM below to select Upload Readings.
 
-This setting is off by default so if you want to ensure you have CGM data in Tidepool, for example, enable this option.
+This setting is **off by default** so if you want to ensure you have CGM data in Tidepool, for example, enable this option.
 
 * Tap on the CGM pill in the top left corner of Loop
 * Scroll down and tap the **Upload Readings** toggle under **CONFIGURATION**
