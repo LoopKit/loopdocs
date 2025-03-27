@@ -190,9 +190,7 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 
 ### Add Variable
 
-This is a new step. It is already included in the `dev` branch and will be included in the `main` branch when `Loop 3.6.0` is released.
-
-It is optional but strongly recommended.
+This is a new step. It will be used when `Loop 3.6.0` is released. This enables automatic generation and renewal of the certificates needed to build your app.
 
 1. While in the same screen where you enter the `Secrets`, click on the `Variables` tab to the right of the `Secrets` tab:
 1. Select new variable and give it the name the `ENABLE_NUKE_CERTS` and enter `true` as the value
@@ -220,7 +218,7 @@ If you are someone who already has a lot of forks in your personal account and w
 
 1. Follow the steps to create your organization
     * [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }
-1. Add the `Secrets` and the new `Enviornment` variable as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
+1. Add the `Secrets` and the `Variable` as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
 1. Fork all the repos you normally use, but this time, set your organization as the owner
 1. For each repository in your organization:
     * Tap on the Actions tab
@@ -237,7 +235,7 @@ If you are someone who already has a lot of forks in your personal account and w
 
 **Important**
 
-> Your personal *GitHub* account is still needed. The free organization points to your private account as a member. Please do not try to delete your personal *GitHub* account.
+> Your personal *GitHub* account is still needed. The free organization points to your private account as a member. If you delete your personal *GitHub* account, you lose access to your organization account too.
 
 ## Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
 

@@ -36,9 +36,9 @@ API_SECRET
 
 choose-something-hard-to-guess
 
-* must contain at least 12 characters
-* hint: don’t make it too long and do not put special characters in it (better stick to letters and numbers)
-* It is case-sensitive
+* must contain at least 12 characters and is case-sensitive
+* hint: don’t make it too long, best to use letters and numbers,
+  best to avoid special characters
 
 If you also use Browser Build method, you need to be careful not to mix 
 up your keys.

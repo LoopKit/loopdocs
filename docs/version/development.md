@@ -12,15 +12,13 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section is an early look at major features added to dev since Loop 3.4 was released.
+This section is provides an overview of changes to dev compared to `Loop 3.4.4`.
 
 ### Add Automatic Certificate Generation and Renewal
 
-These changes in the build process only work when `dev` is your default branch.
+These changes in the build process only work when `dev` is your default branch. Once `Loop 3.6.0` is released, these changes will work with the `main` branch.
 
 Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
-
-Note - there is no harm adding the variable even before the code is updated to use it.
 
 ### Loop Updates
 

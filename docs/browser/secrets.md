@@ -16,7 +16,7 @@
 
 You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
 
-**Created at developer.apple.com**
+**Created / used at developer.apple.com**
 
 * Email address (this is your username)
 * password
@@ -26,14 +26,15 @@ You need to save your information digitally, so you can copy and paste. The info
     * <code>FASTLANE_KEY_ID</code>
     * <code>FASTLANE_KEY</code>
 
-**Created at github.com**
+**Created / used at github.com**
 
 * Email address
 * password
 * username
-* Your *GitHub* address will be: `https://github.com/my-name`
-* Your (optional but recommended) *GitHub* organization address will be : `https://github.com/my-name-org`
-* Your LoopWorkspace repository address will be: `https://github.com/my-name-org/LoopWorkspace`
+* If your username is `my-name` then:
+    * Your *GitHub* address (URL) will be: `https://github.com/my-name`
+    * Your (optional but recommended) *GitHub* organization address will be : `https://github.com/my-name-org`
+    * Your LoopWorkspace repository address will be: `https://github.com/my-name-org/LoopWorkspace`
 * One item used as a Secret
     * *GitHub* Personal Access Token (<code>GH_PAT</code>)
 
