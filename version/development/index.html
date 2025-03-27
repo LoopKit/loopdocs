@@ -2708,6 +2708,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Updates in dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-automatic-certificate-generation-and-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Automatic Certificate Generation and Renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omnible-and-omnikit-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      OmniBLE and OmniKit Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3613,6 +3646,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Updates in dev">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-automatic-certificate-generation-and-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Automatic Certificate Generation and Renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omnible-and-omnikit-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      OmniBLE and OmniKit Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3775,8 +3841,25 @@
 <p>If you choose to use <code>dev</code>, you accept that this code is not released.</p>
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is an early look at major features added to dev since <abbr title="Latest release with major updates">Loop 3</abbr>.4 was released.</p>
-<p>Right now it is empty.</p>
+<p>This section is provides an overview of changes to dev compared to <code>Loop 3.4.4</code>.</p>
+<h3 id="add-automatic-certificate-generation-and-renewal">Add Automatic <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Generation and Renewal<a class="headerlink" href="#add-automatic-certificate-generation-and-renewal" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These changes in the build process only work when <code>dev</code> is your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Once <code>Loop 3.6.0</code> is released, these changes will work with the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>Automatic certificate generation and renewal requires a <code>Variable</code> be added to your organization or your <abbr title="contains project files and each file's revision history">repository</abbr>. Please see these instructions: <a href="prepare-fork.md#add-variable" target="_blank">Add Variable</a></p>
+<h3 id="loop-updates"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Updates<a class="headerlink" href="#loop-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Updates made to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or LoopKit <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> affect the operation of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<p>No functional changes made at the current time.</p>
+<h3 id="omnible-and-omnikit-updates">OmniBLE and OmniKit Updates<a class="headerlink" href="#omnible-and-omnikit-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Updates were made to the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> pump <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>: OmniBLE and OmniKit. Unless otherwise noted, the following functional updates were made to both <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> with the <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> numbers included in parentheses:</p>
+<ul>
+<li>Miscellaneous <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> code improvements &amp; cleanup (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 135, 44)</li>
+<li>Unacknowledged command handling fixes and PodCommsSession improvements (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 136, 45)</li>
+<li>DASH (OmniBLE only): Don't fail on ack comms error if validated response has been received (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 137)</li>
+<li>Eros (OmniKit only): return clock icon when isClockOffset is true (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 46)</li>
+<li>DASH (OmniBLE only): Use alternate type 7 getStatus call for standalone getStatus sessions (matches the Insulet PDM) (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 138)</li>
+<li>Improved unacknowledged command recovery (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 139, 47)</li>
+<li>Logic fix for 049 pod fault with concurrent temp basal commands; fixed Trio <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 140, 48)</li>
+<li>Logic fix for pump manager returns bogus podSuspended; fixed Trio <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> (<abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 141, 49)</li>
+</ul>
 <h2 id="updates-from-32-to-34">Updates from 3.2 to 3.4<a class="headerlink" href="#updates-from-32-to-34" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Most features, originally in the Updates in <code>dev</code> section before the release of version 3.4, have been inserted into the appropriate part of the <em>LoopDocs</em> website (indicated by the up-right arrow after the link). A few items are still in this section.</p>
 <ul>

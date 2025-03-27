@@ -4117,7 +4117,8 @@
 <div class="admonition warning">
 <p class="admonition-title"><abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> vs Submodule</p>
 <p>This page has instructions to set up your own <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> for the <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr>, otherwise known as <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.</p>
-<p>Each Module has its own <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code><abbr title="contains project files and each file's revision history">repository</abbr></code>;and you will be working with your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> of that Module at https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/username/Module, where username is your username.</p>
+<p>Each Module has its own <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code><abbr title="contains project files and each file's revision history">repository</abbr></code>; and you will be working with your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> of that Module at https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/my-name-org/Module, where you use your own organization (recommended) or personal account.</p>
+<p>If you are an experienced builder who set the Submodule changes up in your personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account, you can leave those forks where they are, i.e., https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/my-name/Module. You do not build from Submodules, so no <code>Secrets</code> are required.</p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">What is a <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr>?</p>
@@ -4337,7 +4338,7 @@
 </ul>
 <details class="abstract">
 <summary>Use only if directed (Click to Open/Close)</summary>
-<p>Open your browser to your https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/username/Module <abbr title="website address (Uniform Resource Locator)">URL</abbr>. If you already created the <code>branch</code> you need, you do not need to create a new one.</p>
+<p>Open your browser to your https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/my-name-org/Module <abbr title="website address (Uniform Resource Locator)">URL</abbr>. If you already created the <code>branch</code> you need, you do not need to create a new one.</p>
 <p>If you are customizing a released version, use the <a href="#table-of-sha-1">Table of <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr></a> under your version number below. Copy the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> for your Module so you can paste it into the <abbr title="website address (Uniform Resource Locator)">URL</abbr> in Step 2 below. The suggested <abbr title="version of code within a single repository or workspace repository">branch</abbr> name is <code>v-#.#.#</code> where #.#.# corresponds to the version number for <code>main</code>. You will use this in Step 3.3 below.</p>
 <p>You should create a <code>branch</code> following the numbered steps and watching the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>. Each Frame in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> corresponds to a numbered step below.</p>
 <ol>
@@ -4532,7 +4533,7 @@ SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 <h3 id="prepare-customization-lines">Prepare customization lines<a class="headerlink" href="#prepare-customization-lines" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Save the customization lines in your text file for later use in the build_loop.yml file.</p>
 <div class="copy highlight"><span class="filename">Customization Template:</span><pre><span></span><code><span class="c1"># Module: File: code customization description</span>
-curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patch<span class="w"> </span><span class="p">|</span><span class="w"> </span>git<span class="w"> </span>apply<span class="w"> </span>-v<span class="w"> </span>--directory<span class="o">=</span>Module
+curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.patch<span class="w"> </span><span class="p">|</span><span class="w"> </span>git<span class="w"> </span>apply<span class="w"> </span>-v<span class="w"> </span>--directory<span class="o">=</span>Module
 </code></pre></div>
 <p>where:</p>
 <ul>
@@ -4543,7 +4544,7 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 <li>adding&nbsp;<code>.patch</code>&nbsp;after the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> informs <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to format that code change so it can be applied to your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code></li>
 <li>the final&nbsp;<code> --directory=Module</code>&nbsp;is critical to apply the customization to the correct Module</li>
 </ul>
-<p>To view the exact code change associated with that patch, open a browser at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of&nbsp;<code>https://github.com/username/Module/commit/SHA-1</code>.</p>
+<p>To view the exact code change associated with that patch, open a browser at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of&nbsp;<code>https://github.com/my-name-org/Module/commit/SHA-1</code>.</p>
 <h2 id="update-loopworkspace">Update&nbsp;<span translate="no">LoopWorkspace</span><a class="headerlink" href="#update-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
 <p>The final step is to update your&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr></span>&nbsp;to apply these customizations by adding those customization lines into the build_loop.yml file.</p>
@@ -4578,11 +4579,11 @@ curl<span class="w"> </span>https://github.com/username/Module/commit/SHA-1.patc
 
         # Submodule Loop patches:
         # Loop: Filename: customization details
-        #curl https://github.com/username/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
+        #curl https://github.com/my-name-org/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
 
         # Submodule LoopKit patches:
         # LoopKit: Filename: customization details
-        #curl https://github.com/username/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
+        #curl https://github.com/my-name-org/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
 
         # Submodule xxxxx patches: Follow prototype above
 </code></pre></div>

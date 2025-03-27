@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#set-up-remote-for-nightscout" class="md-skip">
+        <a href="#save-your-important-nightscout-information" class="md-skip">
           Skip to content
         </a>
       
@@ -3006,6 +3006,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#save-your-important-nightscout-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save Your Important Nightscout Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#set-up-remote-for-nightscout" class="md-nav__link">
     <span class="md-ellipsis">
       Set Up Remote for Nightscout
@@ -3553,6 +3562,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#save-your-important-nightscout-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save Your Important Nightscout Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#set-up-remote-for-nightscout" class="md-nav__link">
     <span class="md-ellipsis">
       Set Up Remote for Nightscout
@@ -3687,6 +3705,73 @@
 <li><a href="#step-4-test-remote-overrides">Test Remote Overrides</a></li>
 </ol>
 </div>
+<h2 id="save-your-important-nightscout-information">Save Your Important <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Information<a class="headerlink" href="#save-your-important-nightscout-information" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>There is some important information you need to save when using <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, especially for Remote Control of a Looper's phone. In addition to the <abbr title="website address (Uniform Resource Locator)">URL</abbr> and <abbr title="password (min 12 characters) needed to access Nightscout Site">API_SECRET</abbr>, you need 3 or 4 additional variables (<code>config-vars</code>) that you add to your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> configuration.</p>
+<ol>
+<li>Decide where you want your <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> information saved and create a special folder</li>
+<li>Open a text-only editor (do not use a Smart Editor, those might change capitalization or formating and ruin some of the <code>config-vars</code>)<ul>
+<li>Create a blank <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> Reference file using the text-only editor</li>
+<li>Tap on the copy icon below to copy the template and paste it into your blank file</li>
+<li>Save the file</li>
+</ul>
+</li>
+<li>As you move through the steps below to configure <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> for remote commands, fill in the file</li>
+</ol>
+<div class="copy highlight"><span class="filename">Template to use for Nightscout</span><pre><span></span><code>MyNightscoutReferenceFile.txt
+
+<span class="c1">## This file updated on: DD MMM YYYY</span>
+
+<span class="c1">## Important Information for Remote Commands with Nightscout</span>
+
+You<span class="w"> </span>will<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>add<span class="w"> </span>information<span class="w"> </span>specific<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>Nightscout.<span class="w"> </span>
+This<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>different<span class="w"> </span>depending<span class="w"> </span>on<span class="w"> </span>whether<span class="w"> </span>you<span class="w"> </span>build<span class="w"> </span>it<span class="w"> </span>yourself<span class="w"> </span>or<span class="w"> </span>pay<span class="w"> </span>a<span class="w"> </span>vendor.
+
+PLACEHOLDER<span class="w"> </span>FOR<span class="w"> </span>YOUR<span class="w"> </span>SPECIFIC<span class="w"> </span>INFO,<span class="w"> </span>e.g.,<span class="w"> </span>vendor,<span class="w"> </span>username
+
+The<span class="w"> </span>URL<span class="w"> </span>will<span class="w"> </span>always<span class="w"> </span>start<span class="w"> </span>with<span class="w"> </span>https://
+
+https://your-nightscout-site
+
+API_SECRET
+
+choose-something-hard-to-guess
+
+*<span class="w"> </span>must<span class="w"> </span>contain<span class="w"> </span>at<span class="w"> </span>least<span class="w"> </span><span class="m">12</span><span class="w"> </span>characters<span class="w"> </span>and<span class="w"> </span>is<span class="w"> </span><span class="k">case</span>-sensitive
+*<span class="w"> </span>hint:<span class="w"> </span>don’t<span class="w"> </span>make<span class="w"> </span>it<span class="w"> </span>too<span class="w"> </span>long,<span class="w"> </span>best<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>letters<span class="w"> </span>and<span class="w"> </span>numbers,
+<span class="w">  </span>best<span class="w"> </span>to<span class="w"> </span>avoid<span class="w"> </span>special<span class="w"> </span>characters
+
+If<span class="w"> </span>you<span class="w"> </span>also<span class="w"> </span>use<span class="w"> </span>Browser<span class="w"> </span>Build<span class="w"> </span>method,<span class="w"> </span>you<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>careful<span class="w"> </span>not<span class="w"> </span>to<span class="w"> </span>mix<span class="w"> </span>
+up<span class="w"> </span>your<span class="w"> </span>keys.
+The<span class="w"> </span>APNS<span class="w"> </span>key<span class="w"> </span><span class="k">for</span><span class="w"> </span>Nightscout<span class="w"> </span>is<span class="w"> </span>an<span class="w"> </span>Apple<span class="w"> </span>Push<span class="w"> </span>Notification<span class="w"> </span>Key.
+It<span class="w"> </span>may<span class="w"> </span>look<span class="w"> </span>like<span class="w"> </span>the<span class="w"> </span>FASTLANE_KEY<span class="w"> </span>used<span class="w"> </span><span class="k">for</span><span class="w"> </span>Browser<span class="w"> </span>Build,<span class="w"> </span>
+but<span class="w"> </span>it<span class="w"> </span>is<span class="w"> </span>completely<span class="w"> </span>different.
+You<span class="w"> </span>need<span class="w"> </span>both<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span>using<span class="w"> </span>remote<span class="w"> </span>features<span class="o">)</span>.<span class="w"> </span>Do<span class="w"> </span>NOT<span class="w"> </span>get<span class="w"> </span>them<span class="w"> </span>mixed<span class="w"> </span>up.
+
+LOOP_APNS_KEY
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this<span class="w"> </span>-<span class="w"> </span>include<span class="w"> </span>the<span class="w"> </span>entire<span class="w"> </span>key&gt;
+-----BEGIN<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+
+LOOP_APNS_KEY_ID
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAAAA
+
+LOOP_DEVELOPER_TEAM_ID
+This<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>same<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>TEAMID<span class="w"> </span>used<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>browser<span class="w"> </span>build<span class="w"> </span>Secret.
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAAAA
+
+LOOP_PUSH_SERVER_ENVIRONMENT<span class="w"> </span>is<span class="w"> </span>used<span class="w"> </span>only<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>TestFlight<span class="w"> </span><span class="o">(</span>Browser<span class="w"> </span>Build<span class="o">)</span>
+as<span class="w"> </span>a<span class="w"> </span>build<span class="w"> </span>method<span class="p">;</span><span class="w"> </span>or<span class="w"> </span>use<span class="w"> </span>Xcode<span class="w"> </span>but<span class="w"> </span><span class="k">then</span><span class="w"> </span>distribute<span class="w"> </span>via<span class="w"> </span>TestFlight.
+
+If<span class="w"> </span>you<span class="w"> </span>build<span class="w"> </span>from<span class="w"> </span>Mac-Xcode<span class="w"> </span>directly<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>phone,<span class="w"> </span><span class="k">do</span><span class="w"> </span>not<span class="w"> </span>include<span class="w"> </span>this<span class="w"> </span>config-var
+
+<span class="nv">LOOP_PUSH_SERVER_ENVIRONMENT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>production
+</code></pre></div>
 <h2 id="set-up-remote-for-nightscout">Set Up Remote for <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em><a class="headerlink" href="#set-up-remote-for-nightscout" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can use the <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> site to remotely set and cancel override presets remotely in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <p>With &nbsp;<span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span>, you can also send remote commands to add carbs and command a bolus. <strong>Remote bolus/carb commands</strong> have a minimum requirement of &nbsp;<span translate="no"><strong><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> 14.2.6</strong></span>. If your Looper's <em><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></em> version does not meet that minimum requirement, remote commands <strong>might</strong> be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;phone.</p>
@@ -3750,6 +3835,11 @@
 <p class="admonition-title">Reminder</p>
 <p>This only works with the <strong>paid</strong> Apple Developer ID.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title"><em>Apple</em> changed the <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> system</p>
+<p><em>Apple</em> changed the way <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> are created. Your old ones should still work, but it they don't, create new ones and update all the places where they are used.</p>
+<p>When creating new <abbr title="Apple Push Notification service, required for issuing remote command via Nightscout">APN</abbr> keys, you have the option for "Sandbox", "Production" or "Sandbox &amp; Production". Be sure to choose "Sandbox &amp; Production".</p>
+</div>
 <ol>
 <li>To get started, go to the <code>Keys</code> section under Apple Developer's <a href="https://developer.apple.com/account/resources/authkeys/list" target="_blank"><code>Certificates, Identifiers &amp; Profiles</code></a> and login with the <em>Apple ID</em> associated with your developer team that you used to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</li>
 <li>If not already open in your browser (compare with the below screenshot), <ul>
@@ -3763,8 +3853,10 @@
 <li>In the form that appears, do the following:<ul>
 <li>Click the checkbox for enabling <strong><code>Apple Push Notifications service (APNs)</code></strong></li>
 <li>Enter a name for the key such as <code>Nightscout</code> (you can name it however you want, just make sure you know what the key is for by the name you choose).</li>
-<li>Then click the <strong><code>Continue</code></strong> button in the upper right of the screen.  <blockquote>
-<p><img alt="img/key-apns.png" src="../img/key-apns.png" /></p>
+<li>Then click the <strong><code>Configure</code></strong> button to the right of the name</li>
+<li>Choose <strong><code>Sandbox &amp; Production</code></strong> and then <strong><code>Save</code></strong></li>
+<li>Tap on the <strong><code>Continue</code></strong> button, upper right<blockquote>
+<p><img alt="updated instructions for creating and configuring an APNS key" src="../img/key-apns.svg" /></p>
 </blockquote>
 </li>
 </ul>

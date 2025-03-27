@@ -1442,15 +1442,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#misleading-error-message_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Misleading Error Message
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#extra-sections" class="md-nav__link">
     <span class="md-ellipsis">
       Extra Sections
@@ -1459,15 +1450,6 @@
   
     <nav class="md-nav" aria-label="Extra Sections">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-match-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create Match-Secrets
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#delete-identifiers" class="md-nav__link">
@@ -4135,15 +4117,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#misleading-error-message_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Misleading Error Message
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#extra-sections" class="md-nav__link">
     <span class="md-ellipsis">
       Extra Sections
@@ -4152,15 +4125,6 @@
   
     <nav class="md-nav" aria-label="Extra Sections">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-match-secrets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create Match-Secrets
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#delete-identifiers" class="md-nav__link">
@@ -4217,12 +4181,14 @@
 <h3 id="what-information-is-needed-for-help">What Information is Needed for Help<a class="headerlink" href="#what-information-is-needed-for-help" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ol>
 <li>
-<p>Your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username (required):</p>
+<p>Your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> name used for building (required):</p>
 <ul>
-<li>You can also provide a link to your <abbr title="contains project files and each file's revision history">repository</abbr> like the example, but substitute your username for <code>USERNAME</code></li>
+<li>Best to provide a link to your <abbr title="contains project files and each file's revision history">repository</abbr>, like the example, but substitute your information</li>
 <li>If you are building an app other than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, replace LoopWorkspace with the app <abbr title="contains project files and each file's revision history">repository</abbr> name</li>
 </ul>
-<div class="highlight"><pre><span></span><code>https://github.com/USERNAME/LoopWorkspace
+<div class="copy highlight"><span class="filename">If you use an organization</span><pre><span></span><code>https://github.com/my-name-org/LoopWorkspace
+</code></pre></div>
+<div class="copy highlight"><span class="filename">If you do not use an organization</span><pre><span></span><code>https://github.com/my-name/LoopWorkspace
 </code></pre></div>
 </li>
 <li>
@@ -4236,17 +4202,12 @@
 <li>Do not take a screenshot of what you think is an error</li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Username, Not Pictures</p>
+<p class="admonition-title"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr>, Not Pictures</p>
 <p>If you've been around the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community for a while, you know the mantra about screenshots. Well, when using a browser to build, <strong>screenshots are close to useless</strong>.</p>
-<p>All that is needed to assist is your link or as a bare minimum your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong>username</strong>.</p>
+<p>All that is needed to assist is your link to the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> where you are building.</p>
 </div>
 <h3 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to <a href="#help-with-errors">ask for help</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Just updated?</p>
-<p>If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.</p>
-<p>If you missed this step - go do it now. <a href="../bb-update/#update-from-32x-to-34" target="_blank">Update from 3.2.x to 3.4</a></p>
-</div>
 <div class="admonition important">
 <p class="admonition-title"><abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is missing</p>
 <p>If you get this build error message: <code>No code signing identity found and can not create a new one because you enabled</code>, you do not have certificates needed to run the build.</p>
@@ -4266,8 +4227,8 @@
 </ul>
 </li>
 <li>You used a smart editor instead of a text-only editor to save your information<ul>
-<li>It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day</li>
-<li>The alpha-numeric values used for <code>GH_PAT</code>, <code>FASTLANE_ISSUER_ID</code> and <code>FASTLANE_KEY</code> contain both upper and lower-case characters and all the values are case-sensitive</li>
+<li>It only takes one letter to be changed from small to capital by your smart editor to ruin your day</li>
+<li>The alpha-numeric values used for <code>GH_PAT</code>, <code>FASTLANE_ISSUER_ID</code> and <code>FASTLANE_KEY</code> contain both small and capital characters and all the values are case-sensitive</li>
 </ul>
 </li>
 <li>When saving <code>TEAMID</code>, you typed what you thought you saw instead of using copy and paste</li>
@@ -4289,7 +4250,7 @@
 <p>If a&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action</span>&nbsp;fails, you will see a clear notification.</p>
 <p>First consider the following results from the&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span>.</p>
 <h3 id="annotation-with-clear-message">Annotation with Clear Message<a class="headerlink" href="#annotation-with-clear-message" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Your screen may look similar to the graphic below. The name in parentheses refers to the <abbr title="version of code within a single repository or workspace repository">branch</abbr> used to develop these wonderful messages. Yours may be (dev) or (main), once 3.4 is released.</p>
+<p>Your screen may look similar to the graphic below. The name in parentheses refers to the <abbr title="version of code within a single repository or workspace repository">branch</abbr> used to develop these wonderful messages. Yours will almost always be the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p align="center"><img alt="graphic showing failure to validate secrets" src="../img/error-validate-secrets.png" width="500" /></p>
 <p>But there are so many reasons why this could happen. The first step is to click on the link highlighted by the red rectangle in the graphic above. This opens a new detailed view. The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows two different error messages. The first frame shows the error in the Annotation box at the bottom (you may need to scroll down to see this), and you may need to click on "Show More" to see the full message as seen in the second frame. The third frame of the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> shows a different message. Each one these messages is designed to make it easier for you to diagnose your own problem.</p>
 <p align="center"><img alt="graphic showing validate secret error messages" src="../img/error-annotations-validate-secrets.gif" width="800" /></p>
@@ -4300,6 +4261,10 @@
 <p align="center"><img alt="graphic showing failure to create certificates" src="../img/error-create-certs.png" width="800" /></p>
 <p>This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is <a href="#error-could-not-create">Error: Could not Create</a>.</p>
 <h3 id="missing-certificates">Missing Certificates<a class="headerlink" href="#missing-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<blockquote>
+<p>Coming soon: when <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 (or newer) is available, certificates will be automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
+<p>After <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 is released, the first attempt to build will update the files required for automatic certificate creation. The second attempt to build will use the new files. So if the first attempt with <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 fails, try again.</p>
+</blockquote>
 <p>If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: <code>No code signing identity found and can not create a new one because you enabled</code>.</p>
 <ul>
 <li>See <a href="../bb-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
@@ -4329,20 +4294,17 @@
 <h2 id="misleading-error-message">Misleading Error Message<a class="headerlink" href="#misleading-error-message" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If there are <em>Apple</em> Developer agreements you have not accepted, you may get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect even if they are not.</p>
 <ul>
-<li>The misleading message tells you that one or more of these: <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code> is not correct</li>
-<li>Check your <em>Apple</em> Developer account for agreements first, before trying to fix those</li>
+<li>The misleading message tells you that one or more of these: <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code> is not correct<ul>
+<li>Once <code>Loop 3.6.0</code> or newer is available, this should no longer appear unless you have a mistake in one of those</li>
+</ul>
+</li>
+<li>Check your <em>Apple</em> Developer account for agreements first, before trying to fix those <code>Secrets</code></li>
 <li>If you previously built successfully - it is almost certainly the agreement</li>
 <li>It can take 15 minutes to an hour after the agreement is signed before it can be used</li>
 </ul>
 <p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement" target="_blank"><code>Apple Program License Agreement</code> Help Page</a>.</p>
-<p>You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.</p>
-<blockquote>
-<p>One user reported: The expiration date on the credit card used for auto-renew of my developer account was updated and the value in the Apple account did not match the new one. After updating my account with the new expiration date - Browser Build succeeded again.</p>
-</blockquote>
+<p>You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or credit card expiration date, as entered at <em>Apple</em>, has passed.</p>
 <h2 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h2>
-<blockquote>
-<p>For Version 3.2.3 and earlier - later versions have an improved method for display errors.</p>
-</blockquote>
 <p>There is a separate section for each step in the process. First, you must follow the <a href="#examine-annotation">Examine Annotation</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.</p>
 <ul>
 <li>Paste in a possible error string (copy it exactly); repeat until you find a match</li>
@@ -4366,26 +4328,18 @@
 <p align="center"><img alt="graphic with failure details for a GitHub Add Identifier action" src="../img/action-result-failure.svg" width="700" /></p>
 <ul>
 <li>Still stuck?<ul>
-<li>Post for help including your <mark><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong>username</strong></mark></li>
+<li>Post for help including your <mark><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <strong><abbr title="website address (Uniform Resource Locator)">URL</abbr></strong></mark> (the link to your <abbr title="contains project files and each file's revision history">repository</abbr>)</li>
 <li>With that, mentors can diagnose your problem - or at least make a good guess at what you need to try</li>
 <li>Please <strong>do NOT post a screenshot</strong></li>
 </ul>
 </li>
 </ul>
 <div class="admonition tip">
-<p class="admonition-title">Where to find my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username?</p>
-<p>You can find it:</p>
+<p class="admonition-title">Where to find my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr>?</p>
 <ul>
-<li>either in the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>Loopworkspace</code>, after <code>github.com</code> in between the forward slashes (<code>/</code>).
-   https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/<mark>username</mark>/Loopworkspace</li>
-<li>
-<p>or on the <a href="https://github.com" target="_blank"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> website</a></p>
-<p align="right"><img alt="Find your GitHub username step 1" src="../img/github-username-1.svg" />
-<img alt="Find your GitHub username step 2" src="../img/github-username-2.svg" width="200" /></p>
-<p><img alt="Find your GitHub username step 3" src="../img/github-username-3.svg" width="400" /></p>
-</li>
+<li>Go to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of <code>LoopWorkspace</code> and highlight the address shown in your browser, for example:
+   https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/<mark>my-name-org</mark>/Loopworkspace</li>
 </ul>
-<p>As your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>username</code> is case-sensitive, use copy and paste.</p>
 </div>
 <h2 id="do-not-remove-an-app">Do Not Remove an App<a class="headerlink" href="#do-not-remove-an-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Please do not remove an existing app if you have trouble building a different app. Your build error is not caused by any existing app.</p>
@@ -4417,7 +4371,7 @@
 <h2 id="action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For Version 3.4 and later - use <a href="#examine-annotation">Examine Annotation</a> and read the annotation.</p>
 <h2 id="action-create-certificates-errors">Action: <code>Create Certificates</code> Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Review <a href="#examine-annotation">Examine Annotatios</a> for instructions on how to use the error strings.</p>
+<p>Review <a href="#examine-annotation">Examine Annotation</a> for instructions on how to use the error strings.</p>
 <h3 id="error-wrong-teamid-in-secrets">Error: Wrong <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> in <code>Secrets</code><a class="headerlink" href="#error-wrong-teamid-in-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
@@ -4511,7 +4465,6 @@
 </ul>
 <p><img alt="graphic showing missing repo scope with circled checkbox that user must check" src="../img/gh-missing-repo-scope.png" width="700" /></p>
 <p>After you have clicked <code>Update token</code> you should see the token overview again with the message <code>Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved.</code> (You can dismiss the message using the <code>X</code> near the upper right side if it appears).</p>
-<p>NOTE: for next release or if using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> - you want <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> to have <code>repo, workflow</code> scope. So click on the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> scope now and save yourself a step later.</p>
 <h4 id="create-certificates_1">Create Certificates<a class="headerlink" href="#create-certificates_1" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>You should be able to continue with the <a href="../certs/#create-certificates">Configure to Use Browser Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
 <h3 id="error-could-not-create">Error: Could not create<a class="headerlink" href="#error-could-not-create" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4524,7 +4477,11 @@
 <blockquote>
 <p><code>Could not create another Distribution certificate, reached the maximum number of available Distribution certificates</code></p>
 </blockquote>
-<p>These steps are needed to make room for a <code>Certificate</code>:</p>
+<h4 id="new-with-loop-360">New with <code>Loop 3.6.0</code><a class="headerlink" href="#new-with-loop-360" title="Anchor link to this Header on this Page">&para;</a></h4>
+<blockquote>
+<p>If you just updated to 3.6.0 (once it is released), you might not have added the new variable, <code>ENABLE_NUKE_CERTS</code>. Go do that now and then try again. It will take care of renewing your certificates automatically. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
+</blockquote>
+<p>These steps are needed to make room for a <code>Certificate</code> when running versions earlier than 3.6.0:</p>
 <ol>
 <li>Delete an old <code>Distribution Certificate</code><ul>
 <li><em>Apple</em> limits you to two <code>Distribution Certificates</code></li>
@@ -4565,7 +4522,7 @@
 <h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Run <code>Create Certificates</code> First</p>
-<p>You must run Action: <code>Create Certificates</code> before attempting to run Action: <code>Build Loop</code></p>
+<p>When running a version earlier than <code>Loop 3.6.0</code>, you must run Action: <code>Create Certificates</code> before attempting to run Action: <code>Build Loop</code></p>
 <p>If you had to step backward and fix an <code>Identifier</code>, you must run <code>Create Certificates</code> again.</p>
 </div>
 <p>Refer to <a href="#annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)</a> for a detailed example of these steps:</p>
@@ -4798,46 +4755,14 @@
 <p>If you add an app to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username (by forking the <abbr title="contains project files and each file's revision history">repository</abbr> and adding <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>) and then build it, it encrypts your <code>Certificate</code> using <code>MATCH_PASSWORD</code>.</p>
 <p>If you already have the other apps configured and then you delete <code>Match-Secrets</code> and add a new one, you will need to run <code>Create Certificates</code> for each app before the next time you build each app - go ahead and do that now so you don't forget.</p>
 </div>
-<h2 id="misleading-error-message_1">Misleading Error Message<a class="headerlink" href="#misleading-error-message_1" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If there are <em>Apple Developer</em> agreements you have not accepted, you will get errors when you try to build the app that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect.</p>
-<p>You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.</p>
-<ul>
-<li>The misleading message tells you that one or more of these: <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code> is not correct</li>
-<li>Check your <em>Apple</em> Developer account for agreements first, before trying to fix those</li>
-<li>If you previously built successfully - it is almost certainly the agreement</li>
-<li>It can take 15 minutes to an hour after the agreement is signed before it can be used</li>
-</ul>
-<p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code> Help Page</a>.</p>
 <h2 id="extra-sections">Extra Sections<a class="headerlink" href="#extra-sections" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>It is unlikely you will need these sections. They are being saved for the transition to version 3.4.x. The <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> is automatically created for you if you don't have one. The instructions below were used when you had to create yours manually.</p>
-<h3 id="create-match-secrets">Create <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr><a class="headerlink" href="#create-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Open your <abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> (this is <code>https://github.com/username</code>), (<code>username</code> is your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account name).</p>
-<p>Create a new private <abbr title="contains project files and each file's revision history">repository</abbr> - you can either click on the link below or follow the instructions with the first graphic:</p>
-<ul>
-<li>Click on this link: <a href="https://github.com/new" target="_blank">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/new</a></li>
-</ul>
-<p>or</p>
-<ul>
-<li>
-<p>At the top right of the screen, click on the &plus; sign and select <code>New Repository</code></p>
-<p align="center"><img alt="plus sign to add repository" src="../img/create-match-secrets.svg" width="200" /></p>
-</li>
-</ul>
-<p>This shows you a screen similar to the following graphic which has 3 regions highlighted:</p>
-<ul>
-<li>In <code>Repository name</code>, type <code>Match-Secrets</code> (use a hyphen between <code>Match</code> and <code>Secrets</code>)</li>
-<li>Be sure to check the  box <strong><code>Private</code></strong>  (red circle) to make the <abbr title="contains project files and each file's revision history">repository</abbr> <strong>private</strong></li>
-<li><strong>Please confirm you selected the <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr> as private.</strong></li>
-<li>Scroll to the bottom of the page and tap on "<code>Create repository</code>"</li>
-</ul>
-<p align="center"><img alt="first screen for new repository" src="../img/01-gh-create-match-secrets.png" width="600" /></p>
-<p>A screen will appear with a lot of options - do <strong>not</strong> do anything on this screen.</p>
-<ul>
-<li>Click on your username (as indicated by the red rectangle) to return to your main <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="website address (Uniform Resource Locator)">URL</abbr>.</li>
-</ul>
-<p align="center"><img alt="second screen for new repository" src="../img/02-gh-match-secrets-leave-alone.png" width="600" /></p>
-<p>You will not directly interact with your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p>It is unlikely you will need these sections.</p>
 <h3 id="delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#delete-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These instructions are useful if:</p>
+<ul>
+<li>You messed up your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr> when initially setting up your app and you want to remove identifiers that may be confusing</li>
+<li>You built an app but no longer want it, and want to clean up the list of identifiers so it is shorter</li>
+</ul>
 <p>The <code>Identifier</code> that is associated with the <code>Loop</code> identifier cannot be deleted if it is already in the <em>App Store</em> but all others can. If you attempt to delete the <code>XC</code> <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. If a <code>Bundle ID</code> has ever been associated with an app in the <em>App Store</em>, you cannot delete the <code>Identifier</code>.</p>
 <ul>
 <li>Open this link: <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> on the <em>Apple Developer</em> site.</li>
@@ -4856,7 +4781,7 @@
 </ul>
 <p align="center"><img alt="steps to delete a given identifier" src="../img/delete-identifiers.svg" width="700" /></p>
 <p>If coming here because you enter the wrong <code>TEAMID</code> in <code>Secrets</code> - return to <a href="#rerun-steps-with-correct-teamid">Rerun Steps with Correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></a> when you've deleted as many identifiers as you can.</p>
-<p>After you delete identifiers, you must add them back, configure them and create certificate before you can build again.</p>
+<p>After you delete identifiers, you must add them back before you can build a given app. Configure them and create certificates before you can build again.</p>
 
 
 

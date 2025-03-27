@@ -3810,7 +3810,11 @@
 <p>The steps on these pages must be completed (in order) for you to build an app using a browser:</p>
 <ol>
 <li><a href="../intro-summary/" target="_blank">Introduction and Summary</a></li>
-<li><a href="../secrets/" target="_blank">Collect <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
+<li><a href="../secrets/" target="_blank">Collect <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a><ul>
+<li>Some from <em>Apple</em></li>
+<li>Some from <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></li>
+</ul>
+</li>
 <li><a href="../prepare-fork/" target="_blank">Prepare Fork</a></li>
 <li><a href="../identifiers/" target="_blank"><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 <li><a href="../prepare-app/" target="_blank">Prepare App</a></li>
@@ -3869,9 +3873,13 @@
 <ul>
 <li><a href="../bb-update/" target="_blank">Update with Browser</a></li>
 </ul>
-<p>There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic:</p>
+<p>There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic if your <em>Apple</em> Developer account is active, agreements are signed and certificates are valid:</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=0ipTsiqbbrQ" target="_blank">How to Update and Rebuild <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with a Web Browser</a></li>
+</ul>
+<p>After 3.6.0 is released, certificates will be automatically renewed. In the meantime, they must be renewed manually using these instructions:</p>
+<ul>
+<li><a href="../bb-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
 </ul>
 <h2 id="other-topics">Other Topics<a class="headerlink" href="#other-topics" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="building-the-development-version-of-the-app">Building the Development Version of the App<a class="headerlink" href="#building-the-development-version-of-the-app" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3892,7 +3900,7 @@
 </ul>
 </li>
 <li>Automatic Updates are loaded into <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em><ul>
-<li>With version 3.4, builds are automatically prepared at least once a month</li>
+<li>With version 3.4 and newer, builds are automatically prepared at least once a month</li>
 <li>You choose when to install the new app from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> onto your phone</li>
 </ul>
 </li>
@@ -3903,7 +3911,7 @@
 <li>After the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Build starts, your app is ready to install on your <em>iPhone</em> in about an hour</li>
 <li>The app is delivered to your phone via <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em><ul>
 <li>The app is considered "Beta" by  <em>Apple</em> and expires after 90 days</li>
-<li><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr>.4</span>&nbsp; and later versions provide automatic build as the default</li>
+<li><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr>.4</span>&nbsp; and newer versions provide automatic build as the default</li>
 </ul>
 </li>
 <li>Customization methods are documented at <a href="../custom-browser/" target="_blank">Customize with Browser</a></li>

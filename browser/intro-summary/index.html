@@ -3686,6 +3686,7 @@
 </li>
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
 <li><a href="../secrets/#collect-the-gh_pat-secret" target="_blank">Collect the <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> Secret</a></li>
+<li>(Optional) <a href="../secrets/#create-a-free-github-organization" target="_blank">Create a Free <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Organization</a> (strongly recommended)</li>
 </ul>
 </li>
 <li><a href="../secrets/#make-up-a-password" target="_blank">Make up a Password</a> and save it as your sixth <code>Secret</code></li>
@@ -3693,8 +3694,12 @@
 <p>Now it's time to use those <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to build the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app</p>
 <ul>
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
-<li><a href="../prepare-fork/#fork-loopworkspace" target="_blank"><code>Fork</code> the <abbr title="contains project files and each file's revision history">repository</abbr> (make your copy of <code>LoopWorkspace</code>)</a></li>
-<li><a href="../prepare-fork/#configure-secrets" target="_blank">Add <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to your <code>fork</code></a></li>
+<li><a href="../prepare-fork/#fork-loopworkspace" target="_blank"><code>Fork</code> the <abbr title="contains project files and each file's revision history">repository</abbr> (make your copy of <code>LoopWorkspace</code>)</a><ul>
+<li>Using an organization? Add <code>Secrets</code> and <code>Variables</code> to your Organization and all your apps can use them</li>
+<li>Not using an organization? You have to add <code>Secrets</code> and <code>Variables</code> to each <abbr title="contains project files and each file's revision history">repository</abbr> individually</li>
+</ul>
+</li>
+<li><a href="../prepare-fork/#configure-secrets" target="_blank">Add <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to your <code>organization</code> or a single <code>fork</code></a></li>
 <li><a href="../identifiers/#validate-secrets" target="_blank"><code>Action: 1. Validate Secrets</code></a></li>
 <li><a href="../identifiers/#add-identifiers" target="_blank"><code>Action: 2. Add Identifiers</code></a></li>
 </ul>
@@ -3733,6 +3738,21 @@
 <li><a href="../bb-errors/#help-with-errors" target="_blank">Click here to find help</a>.</li>
 </ul>
 </div>
+<details class="tips" open="open">
+<summary>Who should use a free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization option (click to close/open)</summary>
+<p>There are several places where you see a recommendation to use a free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization instead of building directly from your personal free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
+<p>When you use an organization, you don't have to add 6 <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> to each <abbr title="contains project files and each file's revision history">repository</abbr> for every app you build. It can save a lot of time in the long run.</p>
+<ul>
+<li>Even if you just build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account</li>
+<li>Who should definitely build with an organization:<ul>
+<li>Anyone who is a caregiver will want <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> or <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> or both</li>
+<li>Anyone who wants to use <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> for the amazing alarm capabilties</li>
+<li>Anyone who might want to try a customized version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>Anyone who might want to try a different app such as xDrip4iOS or Trio</li>
+</ul>
+</li>
+</ul>
+</details>
 <h3 id="the-short-version">The Short Version<a class="headerlink" href="#the-short-version" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Complete instructions are found at this link for those comfortable with using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and navigating the <em>Apple Developer</em> and <em>Apple App Connect</em> pages.</p>
 <ul>
@@ -3768,7 +3788,7 @@
 <div class="admonition important">
 <p class="admonition-title">Use a Text-Only Editor</p>
 <p><strong>Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.</strong></p>
-<p>If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.</p>
+<p>If you use a "smart" editor, it may change small letters to capital letters at the beginning of a line when you paste items into your archive file.</p>
 <p>If even one character is capitalized when it should not be, you will get errors.</p>
 </div>
 <h3 id="make-a-secrets-reference-file">Make a <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Reference File<a class="headerlink" href="#make-a-secrets-reference-file" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -3789,6 +3809,7 @@
 </li>
 <li>In addition to the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this template has places for other pieces of information you may find handy to save in the same file</li>
 <li>At the very beginning is a place to indicate the last day you updated the file</li>
+<li>If you use <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, you may also want the <a href="../../nightscout/remote-config/#save-your-important-nightscout-information" target="_blank"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> template</a></li>
 </ol>
 <div class="copy highlight"><span class="filename">Template to use for Secrets</span><pre><span></span><code>MySecretsReferenceFile.txt
 
@@ -3807,15 +3828,17 @@ suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </
 &lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
 suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
 
-These<span class="w"> </span>are<span class="w"> </span>the<span class="w"> </span>Six<span class="w"> </span>Secrets<span class="w"> </span><span class="k">in</span><span class="w"> </span>alphabetical<span class="w"> </span>order<span class="w"> </span>-<span class="w"> </span>each<span class="w"> </span>one<span class="w"> </span>shows<span class="w"> </span>the<span class="w"> </span>expected<span class="w"> </span>format.
-Delete<span class="w"> </span>each<span class="w"> </span>prototype<span class="w"> </span>as<span class="w"> </span>you<span class="w"> </span>gather<span class="w"> </span>your<span class="w"> </span>own<span class="w"> </span>secrets.
-The<span class="w"> </span>letter<span class="w"> </span>A<span class="w"> </span>indicates<span class="w"> </span>an<span class="w"> </span>alphanumeric<span class="w"> </span>character.
-Some<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>lower<span class="w"> </span><span class="k">case</span>,<span class="w"> </span>some<span class="w"> </span>upper<span class="w"> </span><span class="k">case</span><span class="w"> </span>and<span class="w"> </span>some<span class="w"> </span>numerals.
+There<span class="w"> </span>are<span class="w"> </span>Six<span class="w"> </span>Secrets<span class="w"> </span>and<span class="w"> </span>One<span class="w"> </span>Variable:
+<span class="w"> </span>-<span class="w"> </span>the<span class="w"> </span>list<span class="w"> </span>below<span class="w"> </span>shows<span class="w"> </span>the<span class="w"> </span>expected<span class="w"> </span>format<span class="w"> </span>of<span class="w"> </span>each.
+You<span class="w"> </span>can<span class="w"> </span>replace<span class="w"> </span>each<span class="w"> </span>prototype<span class="w"> </span>with<span class="w"> </span>your<span class="w"> </span>secret<span class="w"> </span>as<span class="w"> </span>you<span class="w"> </span>gather<span class="w"> </span>them,
+<span class="w"> </span>-<span class="w"> </span>or<span class="w"> </span>put<span class="w"> </span>your<span class="w"> </span>secret<span class="w"> </span>below<span class="w"> </span>a<span class="w"> </span>prototype.
+The<span class="w"> </span>letter<span class="w"> </span>A<span class="w"> </span>indicates<span class="w"> </span>an<span class="w"> </span>alphanumeric<span class="w"> </span>character<span class="p">;</span>
+<span class="w"> </span>-<span class="w"> </span>some<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>small<span class="w"> </span>letter,<span class="w"> </span>some<span class="w"> </span>capital<span class="w"> </span>letters<span class="w"> </span>and<span class="w"> </span>some<span class="w"> </span>numerals.
 The<span class="w"> </span>FASTLANE_KEY<span class="w"> </span>may<span class="w"> </span>have<span class="w"> </span>additional<span class="w"> </span>characters<span class="w"> </span>included.
-For<span class="w"> </span>that<span class="w"> </span>one<span class="w"> </span>copy<span class="w"> </span>the<span class="w"> </span>entire<span class="w"> </span>key
-including<span class="w"> </span>-----BEGIN<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
-through
------END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+<span class="w">  </span>Be<span class="w"> </span>sure<span class="w"> </span>to<span class="w"> </span>copy<span class="w"> </span>the<span class="w"> </span>entire<span class="w"> </span>key<span class="w"> </span>including
+<span class="w">  </span>-----BEGIN<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+<span class="w">  </span>through
+<span class="w">  </span>-----END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
 
 <span class="c1">## SECRETS BELOW:</span>
 
@@ -3830,7 +3853,6 @@ AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
 FASTLANE_KEY_ID
 &lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
 AAAAAAAAAA
-
 
 FASTLANE_KEY
 &lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
@@ -3849,9 +3871,21 @@ MATCH_PASSWORD
 &lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
 AnyThingYouWant-sameForEveryRepository
 
+New<span class="w"> </span>addition,<span class="w"> </span>this<span class="w"> </span>Variable:
+
+<span class="nv">ENABLE_NUKE_CERTS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
+
+With<span class="w"> </span>release<span class="w"> </span>of<span class="w"> </span>Loop<span class="w"> </span><span class="m">3</span>.6.0:
+<span class="w">  </span>this<span class="w"> </span>variable<span class="w"> </span>is<span class="w"> </span>needed<span class="w"> </span>to<span class="w"> </span>automatically<span class="w"> </span>renew<span class="w"> </span>your<span class="w"> </span>certificates<span class="w"> </span>when<span class="w"> </span>they<span class="w"> </span>expire.
+
 <span class="c1">## Repository Names for my Fork:</span>
 
-https://github.com/my-github-username/LoopWorkspace
+If<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>an<span class="w"> </span>organization<span class="w"> </span><span class="o">(</span>recommended<span class="o">)</span>
+https://github.com/my-name-org/LoopWorkspace
+
+or<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>don<span class="err">&#39;</span>t<span class="w"> </span>use<span class="w"> </span>an<span class="w"> </span>organzation<span class="o">)</span>:<span class="w"> </span>
+https://github.com/my-name/LoopWorkspace
+
 
 Add<span class="w"> </span>additional<span class="w"> </span>apps<span class="w"> </span>here<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>decide<span class="w"> </span>to<span class="w"> </span>build<span class="w"> </span>any
 </code></pre></div>
