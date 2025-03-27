@@ -158,7 +158,7 @@ suggest you use your desired password tool to save the password for this account
 <your information here>
 suggest you use your desired password tool to save the password for this account
 
-There are Six Secrets and One Environment Variable:
+There are Six Secrets and One Variable:
  - the list below shows the expected format of each.
 You can replace each prototype with your secret as you gather them,
  - or put your secret below a prototype.
@@ -201,7 +201,7 @@ MATCH_PASSWORD
 <looks like this>
 AnyThingYouWant-sameForEveryRepository
 
-New addition, this environment variable:
+New addition, this Variable:
 
 ENABLE_NUKE_CERTS = true
 

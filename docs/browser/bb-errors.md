@@ -23,9 +23,9 @@ These are two places to ask for help, but please choose only one. You may get a 
 
 ### What Information is Needed for Help
 
-1. Your GitHub address (required):
+1. Your GitHub name used for building (required):
 
-    * You can also provide a link to your repository like the example, but substitute your information
+    * Best to provide a link to your repository, like the example, but substitute your information
     * If you are building an app other than Loop, replace LoopWorkspace with the app repository name
 
     ``` {.text .copy  title="If you use an organization" }
@@ -153,7 +153,7 @@ This section is required when you need to search for a string to diagnose and er
 If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
-    * Once `Loop 3.6.0` or newer is available, this should no longer appear unless you have a mistake in one of thsoe
+    * Once `Loop 3.6.0` or newer is available, this should no longer appear unless you have a mistake in one of those
 * Check your *Apple* Developer account for agreements first, before trying to fix those `Secrets`
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
