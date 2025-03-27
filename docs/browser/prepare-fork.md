@@ -1,11 +1,11 @@
 ## Fork `LoopWorkspace`
 
-??? tip "Feeling confident? Planning to build more than one app? Click to see more."
-    If you are already feeling overwhelmed - skip this tip.
+???+ tip "Are you a Caregiver? Are you planning to build more than one app? (Click to close/open)"
+    Did you skip the optional section to [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }?
 
-    If you plan to build more that one app, you will making a fork of each repository associated with each app, and then you must add the 6 <code>Secrets</code> to each repository. It is not hard but it can get tiresome.
+    If you plan to build more that one app and use your personal account, you must add the 6 <code>Secrets</code> to each repository for each app. It is not hard but it can get tiresome.
 
-    There is a way to enter the 6 <code>Secrets</code> only one time for all your repositories, but this requires setting up a free GitHub organization. This is also not hard, but it modifies some of displays you see on GitHub. If you are interested, refer to [Use a GitHub Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
+    If you make use of the organization option, you only enter the 6 <code>Secrets</code> one time for all your repositories. This is strongly recommended, but not required, for all Browser Builders.
 
 ???+ abstract "Section Summary (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } into your account.
@@ -15,19 +15,25 @@
 !!! warning "Existing Fork"
     If you already have a fork of <code>LoopWorkspace</code>, click on [Already Have LoopWorkspace](#already-have-loopworkspace) to decide what to do. That section provides links to return you to these instructions.
 
+### Create the `Fork`
+
 1. Click this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`
-1. Review the highlighted locations of the graphic below (yours won't look quite like this yet, but the `Fork` button is in the same place)
 1. At the upper right side of the screen, click on the word `Fork`
-    * If you already have a fork, you cannot proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
-1. Now your screen should look like the graphic below
-    * Your username will be automatically filled in as the owner (`Owner`)
-    * <code>LoopWorkspace</code> is the repository name (`Repository Name`) highlighted with the blue rectangle
+
+    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace-top.svg){width="700"}
+    {align="center"}
+
+1. Refer the the GIF below:
+    * If you created a free organization (strongly recommended), you will see the display shown in the GIF below where you will choose your organization as the owner
+        * If you did not set up a free organization, `my-name` will be automatically filled in as the owner (`Owner`)
+    * If you already have a fork, you should not proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
+    * The repository name is already filled in
         * Do not rename the repository to something else
         * It needs to match the original repository name or automatic building will not work
     * Leave the selection that says "`Copy the main branch only`" checked
     * Click on the green `Create fork` button
 
-    ![fork information for LoopWorkspace](img/gh-fork-loopworkspace.svg){width="700"}
+    ![fork information for LoopWorkspace](img/fork-org.gif){width="700"}
     {align="center"}
 
 #### Successful Fork
@@ -42,8 +48,9 @@ After creating the &nbsp;<span class="notranslate">fork</span>, your screen shou
 
 Carefully compare your screen to the graphic below paying attention to the highlighted sections.
 
-* Note that your username is now showing
-* The comment under your username indicates where the &nbsp;<span class="notranslate">fork</span>&nbsp; came from (that is a clickable link)
+* Note that your URL is `https://github.com/my-name-org/LoopWorkspace` or `https://github.com/my-name/LoopWorkspace` where `my-name` is the name you chose:
+    * Many graphics for LoopDocs are created using a free *GitHub* organization called `loopdocs-tester`
+* The comment on the second row indicates where the &nbsp;<span class="notranslate">fork</span>&nbsp; came from (that is a clickable link)
 * The branch that is selected :octicons-git-branch-16: is `main`
 * The message says "`This branch is up to date with LoopKit/LoopWorkspace:main`"
 
@@ -52,24 +59,49 @@ Carefully compare your screen to the graphic below paying attention to the highl
 
 ## Configure <code>Secrets</code>
 
-??? abstract "Section Summary (click to open/close)"
-    These <code>Secrets</code> are the same for any repository for which you use `GitHub Browser Build`.
+If you set up a GitHub organization (strongly recommended), follow this [set of instructions](#prepare-to-enter-secrets).
 
-    * They are added once for a repository and work for all branches of that repository
-    * They must be added to any other repository, such as <code>LoopCaregiver</code>, for which you also use `GitHub Browser Build`
+If you decided to not to use a GitHub organization, skip ahead to [Personal Account: Prepare to Enter <code>Secrets</code>](#personal-account-prepare-to-enter-secrets).
 
-    For each of the following <code>Secrets</code>, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
-
-    * `TEAMID`
-    * `FASTLANE_ISSUER_ID`
-    * `FASTLANE_KEY_ID`
-    * `FASTLANE_KEY`
-    * `GH_PAT`
-    * `MATCH_PASSWORD`
-
-    [<span class="loop-bigger">:material-skip-forward:</span>](identifiers.md#validate-secrets){: target="_blank" } To skip the detailed instructions, click on [Validate <code>Secrets</code>](identifiers.md#validate-secrets){: target="_blank" }.
+!!! tip "What if I already have a bunch of forks in my personal account?"
+    You do not have to switch to an organization. But if you want to make the move, follow instructions here [Switch to a GitHub Organization](#switch-to-a-github-organization)
 
 ### Prepare to Enter <code>Secrets</code>
+
+You will be adding `Secrets` and `Variables` to your organization. This makes them available to any app you decide to build as long as you set up your free *GitHub* organization as the [owner of the fork](#create-the-fork).
+
+1. Tap on this [*GitHub* link](https://github.com/settings/organizations){: target="_blank" } to see your organizations. (If you don't see a screen similar to the graphic below - you are not logged in to *GitHub*).
+
+    ![settings screen](img/gh-quick-access-org.png){width="700"}
+    {align="center"}
+
+1. Choose your organization name from the list (most people will only see one organization)
+    * I chose `loopdocs-tester` as my organization, so you will see that name in the URL for graphics in this section.
+
+    ![settings screen](img/gh-org-settings-01.png){width="700"}
+    {align="center"}
+
+1. Click on the Settings Icon near the top right
+    * If you don't see ⚙️ `Settings`, make your browser wider or scroll to the right
+    * After you click on ⚙️ `Settings`, your screen will show a lot of menu items on the left side of the screen. 
+    * Scroll down until you can see the `Security` section with `Secrets and variables` drop down.
+    * Click on the dropdown icon and then selection `Actions`
+
+    ![settings screen](img/gh-org-settings-02.png){width="600"}
+        {align="center"}
+
+1. Your screen should now look like the graphic below. Note that the `Secret` tab is automatically selected.
+
+    ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
+    {align="center"}
+
+The next steps are identical whether you are configuring your organizations `Secrets` and  `Variables` or doing this for every repository in a private account.
+
+* Skip ahead to [Enter the Secrets](#enter-the-secrets)
+
+### Personal Account: Prepare to Enter <code>Secrets</code>
+
+> This section is only if you are using a personal *GitHub* account to build. Using an organization is recommended.
 
 Log into *GitHub*.
 
@@ -89,12 +121,17 @@ Log into *GitHub*.
         {align="center"}
 
 1. On the left side, find the `Secrets and variables` dropdown and choose <code>Actions</code>
-    * After you select <code>Actions</code>, your screen should look like the graphic below
 
-        ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
-        {align="center"}
+At this point the instructions are the same whether you are using an organization or a personal account.
 
-### Enter the <code>Secrets</code>
+## Enter the <code>Secrets</code>
+
+The steps to enter the `Secrets` and  `Variables` are identical whether you are configuring these in your [organization account](#prepare-to-enter-secrets) or repeating this for every repository in a [private account](#personal-account-prepare-to-enter-secrets).
+
+Your screen should look like the graphic below. If not head back to [Configure Secrets](#configure-secrets). Note that the `Secret` tab is automatically selected.
+
+![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
+{align="center"}
 
 1. Tap on the green button at the top right of your screen labeled `New repository secret` (highlighted above)
     * A new screen appears as shown in the first graphic below
@@ -110,7 +147,7 @@ Log into *GitHub*.
 ![teamid secret ready to be saved](img/teamid-secret-ready-to-save.png){width="700"}
 {align="center"}
 
-#### Enter Each Secret
+### Enter Each Secret
 
 Enter the name of each <code>Secret</code> found in [Save Your Information](intro-summary.md#save-your-information) and your value for that `Secret`.
 
@@ -151,9 +188,54 @@ Once all six <code>Secrets</code> have been added to your <code>LoopWorkspace</c
 ![all secrets entered](img/gh-done-adding-secrets.png){width="700"}
 {align="center"}
 
+### Add Variable
+
+This is a new step. It will be used when `Loop 3.6.0` is released. This enables automatic generation and renewal of the certificates needed to build your app.
+
+1. While in the same screen where you enter the `Secrets`, click on the `Variables` tab to the right of the `Secrets` tab:
+1. Select new variable and give it the name the `ENABLE_NUKE_CERTS` and enter `true` as the value
+
+``` { .text .copy }
+ENABLE_NUKE_CERTS
+```
+
+What did you just do?
+
+* When `Loop 3.6.0` is released, certificates will be automatically updated if you have configured this `Variable`
+* After `Loop 3.6.0` is released, as long as your *Apple* developers license is valid and all agreements are signed: **you can skip the steps to create or renew your certificates**!
+
+![enable nuke certs](img/gh-nuke-certs.png){width="700"}
+{align="center"}
+
+
 ## Next Step
 
 The next step is to [Validate Secrets and Add Identifiers](identifiers.md).
+
+## Switch to a *GitHub* Organization
+
+If you are someone who already has a lot of forks in your personal account and want to switch to using a *GitHub* organization. Here's how:
+
+1. Follow the steps to create your organization
+    * [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }
+1. Add the `Secrets` and the `Variable` as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
+1. Fork all the repos you normally use, but this time, set your organization as the owner
+1. For each repository in your organization:
+    * Tap on the Actions tab
+    * Enable Actions
+    * Run the Create Certificates Action and wait for success
+    * Run the Build Action
+        * WHAT??
+        * That's right - all the setup is done on the *Apple* side and you already did that
+        * If you succeesfully built with your private *GitHub* account, everything is already configured
+        * The one thing you might want to do is copy customizations from your private account fork to the organization fork
+4. Return to your private *GitHub* account
+    * Your choice: either delete the forks in your private account or at least disable the building from your private account
+    * [Disable Building for Personal *GitHub* Account](other-apps.md#disable-building-for-personal-github-account){: target="_blank" }
+
+**Important**
+
+> Your personal *GitHub* account is still needed. The free organization points to your private account as a member. If you delete your personal *GitHub* account, you lose access to your organization account too.
 
 ## Already Have&nbsp;<span translate="no">LoopWorkspace</span>?
 
@@ -163,7 +245,7 @@ If your copy (`fork`) is **not** from `LoopKit`, follow the [Delete and Start Fr
 
 If your copy (`fork`) is from `LoopKit`:
 
-* Open your <code>LoopWorkspace</code> repository (`https://github.com/username/LoopWorkspace`) where you use your *GitHub* `username` in the URL
+* Open your <code>LoopWorkspace</code> repository (`https://github.com/my-name-org/LoopWorkspace`) where you use your version of `my-name` in the URL
 * Review the graphic in the [Configure: Successful Fork](#successful-fork) section
     * Make sure all the items highlighted by red rectangles are correct with the possible exception of your fork being up to date
 * If you see a message that your *fork* is not up to date - tap on the `Sync fork` button and follow the instructions
@@ -176,4 +258,3 @@ If your fork is not from `LoopKit`:
 * Delete your LoopWorkspace repository
     * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
 * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions
-

@@ -10,7 +10,9 @@
 !!! warning "Modules vs Submodule"
     This page has instructions to set up your own <code>fork</code> for the Modules, otherwise known as submodules, associated with&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;that are needed for a selected customization.
 
-    Each Module has its own *GitHub* <code>repository</code>;and you will be working with your <code>fork</code> of that Module at https://github.com/username/Module, where username is your username.
+    Each Module has its own *GitHub* <code>repository</code>; and you will be working with your <code>fork</code> of that Module at https://github.com/my-name-org/Module, where you use your own organization (recommended) or personal account.
+
+    If you are an experienced builder who set the Submodule changes up in your personal *GitHub* account, you can leave those forks where they are, i.e., https://github.com/my-name/Module. You do not build from Submodules, so no `Secrets` are required.
 
 !!! question "What is a SHA-1?"
     SHA-1 means Secure Hash Algorithm 1; which is used to generate an alphanumeric code.
@@ -185,7 +187,7 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
     * Otherwise, when you a preparing a customization where the file changed sufficiently between `main` and `dev` and you want to build the `main` branch, you need to create a branch for this Module that is consistent with the version you wish to customize.
 
     ??? abstract "Use only if directed (Click to Open/Close)"
-        Open your browser to your https://github.com/username/Module URL. If you already created the `branch` you need, you do not need to create a new one.
+        Open your browser to your https://github.com/my-name-org/Module URL. If you already created the `branch` you need, you do not need to create a new one.
 
         If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. The suggested branch name is `v-#.#.#` where #.#.# corresponds to the version number for `main`. You will use this in Step 3.3 below.
 
@@ -367,7 +369,7 @@ Save the customization lines in your text file for later use in the build_loop.y
 
 ```  { .sh .copy title="Customization Template:" }
 # Module: File: code customization description
-curl https://github.com/username/Module/commit/SHA-1.patch | git apply -v --directory=Module
+curl https://github.com/my-name-org/Module/commit/SHA-1.patch | git apply -v --directory=Module
 ```
 
 where:
@@ -379,7 +381,7 @@ where:
 * adding&nbsp;`.patch`&nbsp;after the SHA-1 informs *GitHub* to format that code change so it can be applied to your <code>fork</code>
 * the final&nbsp;<code> --directory=Module</code>&nbsp;is critical to apply the customization to the correct Module
 
-To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/username/Module/commit/SHA-1`.
+To view the exact code change associated with that patch, open a browser at the URL of&nbsp;`https://github.com/my-name-org/Module/commit/SHA-1`.
 
 ## Update&nbsp;<span translate="no">LoopWorkspace</span>
 
@@ -412,11 +414,11 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 
             # Submodule Loop patches:
             # Loop: Filename: customization details
-            #curl https://github.com/username/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
+            #curl https://github.com/my-name-org/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
             
             # Submodule LoopKit patches:
             # LoopKit: Filename: customization details
-            #curl https://github.com/username/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
+            #curl https://github.com/my-name-org/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
             
             # Submodule xxxxx patches: Follow prototype above
 

@@ -12,9 +12,32 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section is an early look at major features added to dev since Loop 3.4 was released.
+This section is provides an overview of changes to dev compared to `Loop 3.4.4`.
 
-Right now it is empty.
+### Add Automatic Certificate Generation and Renewal
+
+These changes in the build process only work when `dev` is your default branch. Once `Loop 3.6.0` is released, these changes will work with the `main` branch.
+
+Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
+
+### Loop Updates
+
+Updates made to Loop or LoopKit submodules affect the operation of Loop.
+
+No functional changes made at the current time.
+
+### OmniBLE and OmniKit Updates
+
+Updates were made to the Omnipod pump submodules: OmniBLE and OmniKit. Unless otherwise noted, the following functional updates were made to both submodules with the PR numbers included in parentheses:
+
+* Miscellaneous Omnipod code improvements & cleanup (PR 135, 44)
+* Unacknowledged command handling fixes and PodCommsSession improvements (PR 136, 45)
+* DASH (OmniBLE only): Don't fail on ack comms error if validated response has been received (PR 137)
+* Eros (OmniKit only): return clock icon when isClockOffset is true (PR 46)
+* DASH (OmniBLE only): Use alternate type 7 getStatus call for standalone getStatus sessions (matches the Insulet PDM) (PR 138)
+* Improved unacknowledged command recovery (PR 139, 47)
+* Logic fix for 049 pod fault with concurrent temp basal commands; fixed Trio Issue (PR 140, 48)
+* Logic fix for pump manager returns bogus podSuspended; fixed Trio Issue (PR 141, 49)
 
 ## Updates from 3.2 to 3.4
 

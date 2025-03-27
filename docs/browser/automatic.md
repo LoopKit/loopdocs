@@ -81,7 +81,7 @@ This is an optional step. If you are happy with the automatic sync and update, y
 ??? tip "Instructions to Modify the Automatic Actions (Click to Open/Close)"
     You can modify the automation by creating and using some variables.
 
-    To configure the automated build more granularly involves creating up to two environment variables: `SCHEDULED_BUILD` and/or `SCHEDULED_SYNC`. See [How to configure a variable](#how-to-configure-a-variable).
+    To configure the automated build more granularly involves creating up to two variables: `SCHEDULED_BUILD` and/or `SCHEDULED_SYNC`. See [How to configure a variable](#how-to-configure-a-variable).
 
     Note that the weekly and monthly `Build Loop` actions will continue, but the actions are modified if one or more of these variables is set to false. **A successful Action Log will still appear, even if no automatic activity happens**.
 

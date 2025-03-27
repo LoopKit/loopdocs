@@ -93,7 +93,7 @@ If you have one branch as default, for example `main`, and choose to build a dif
 
 The [Automatic Update & Build](automatic.md){: target="_blank" } features are applied to the default branch of your repository. Normally this is the `main` branch. If you are a developer or tester who wants the `dev` branch to be built automatically, you must configure it as your default branch. Be aware that for this situation, you will not get automatic updates of released code.
 
-Most people should keep `main` as default and make a considered decision when to launch a manual build of the `dev` branch. At that time, it will automatically update to the latest `dev` commit unless you have modified your environment settings: [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }.
+Most people should keep `main` as default and make a considered decision when to launch a manual build of the `dev` branch. At that time, it will automatically update to the latest `dev` commit unless you have modified your settings with special `Variables`: [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }.
 
 ## Change Default `Branch`
 

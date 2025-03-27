@@ -16,7 +16,7 @@
 
 You need to save your information digitally, so you can copy and paste. The information is created in one place and used in another. Refer to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } for how the <code>Secrets</code> are used. In addition to the 6 <code>Secrets</code>, other important information to keep handy (like usernames and passwords) is listed below. Be sure to keep this file secure.
 
-**Created at developer.apple.com**
+**Created / used at developer.apple.com**
 
 * Email address (this is your username)
 * password
@@ -26,13 +26,15 @@ You need to save your information digitally, so you can copy and paste. The info
     * <code>FASTLANE_KEY_ID</code>
     * <code>FASTLANE_KEY</code>
 
-**Created at github.com**
+**Created / used at github.com**
 
 * Email address
 * password
 * username
-* Your *GitHub* repository address will be: `https://github.com/username`
-* Your LoopWorkspace repository address will be: `https://github.com/username/LoopWorkspace`
+* If your username is `my-name` then:
+    * Your *GitHub* address (URL) will be: `https://github.com/my-name`
+    * Your (optional but recommended) *GitHub* organization address will be : `https://github.com/my-name-org`
+    * Your LoopWorkspace repository address will be: `https://github.com/my-name-org/LoopWorkspace`
 * One item used as a Secret
     * *GitHub* Personal Access Token (<code>GH_PAT</code>)
 
@@ -282,6 +284,35 @@ You must be logged into your *GitHub* account before starting this step. If you 
 
     ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
+
+### Create a Free *GitHub* Organization
+
+This step is optional but it can save you a lot of time and is strongly recommended.
+
+Prerequisite: You need a personal *GitHub* account. If you do not already have a personal *GitHub* account, click on [New *GitHub* Account](#new-github-account).
+
+In the instructions below, use your *GitHub* username instead of `my-name`.
+
+1. Follow the directions below to create a new *GitHub* organization account with a username of `my-name-org` (of course naming is up to you)
+    * *GitHub* provides documentation at this link, [New *GitHub* Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch){: target="_blank" }, or you can follow the bullets below
+    * Log into `my-name` and click on your icon (at upper right) and choose Settings
+    * On the left side-bar, click on Organizations
+    * In the new view, click on New Organization and choose Free for the plan by clicking on  `Create a free organization`.
+    * In the `Set up your organization` screen:
+        * Enter `my-name-org` into the `Organization name` box
+        * Enter the same email you use for `my-name` account
+        * Select this organization belongs to `My personal account`
+        * Check the box to accept the terms of service
+        * Tap on the next button
+2. You now see a Welcome screen
+    * Unless you plan to collaborate with others, just tap `Complete setup`
+    * You can always add others at a later time
+3. Confirm access by entering the same password as you use for `my-name`
+
+???+ tip "GH_PAT comes from personal `my-name` account"
+    The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it.
+
+**Your personal *GitHub* account is still needed. The free organization points to your private account as a member. Please do not delete your personal *GitHub* account after creating an organization. If you do that - you will no longer have access to your organization.**
 
 ## Make up a Password
 

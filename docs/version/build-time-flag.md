@@ -15,7 +15,7 @@ The `Build Time Flags` are available for both build methods:
     * You can edit the version in your LoopWorkspace folder (it shows up as the top item in the Xcode folder view) - or - if you use the build script, you can edit the copy found in ~/Downloads/BuildLoop after the first time you use the script. 
         * If you edit `~/Downloads/BuildLoop/LoopConfigOverride.xcconfig`, the "flags" you add are applied to this download and all subsequent downloads created with the script.
 
-These flags are always upper case with underscore separating words for clarity, for example `MY_EXAMPLE_FLAG`. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. Xcode will automatically word-wrap the line for clarity. All values need to be on a single line.
+These flags are always capital letters with underscore separating words for clarity, for example `MY_EXAMPLE_FLAG`. If you have more than one flag, they are separated by a space. Do not enter a line break between selections; in other words, do not hit return or enter. Xcode will automatically word-wrap the line for clarity. All values need to be on a single line.
 
 Copy the text below, add it to the end of your LoopConfigOverride.xcconfig file and then insert the desired flags in place of `MY_EXAMPLE_FLAG`. If you want more than one flag, separate them by a space.
 

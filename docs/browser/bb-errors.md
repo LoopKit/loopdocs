@@ -23,13 +23,17 @@ These are two places to ask for help, but please choose only one. You may get a 
 
 ### What Information is Needed for Help
 
-1. Your GitHub username (required):
+1. Your GitHub name used for building (required):
 
-    * You can also provide a link to your repository like the example, but substitute your username for `USERNAME`
+    * Best to provide a link to your repository, like the example, but substitute your information
     * If you are building an app other than Loop, replace LoopWorkspace with the app repository name
 
+    ``` {.text .copy  title="If you use an organization" }
+    https://github.com/my-name-org/LoopWorkspace
     ```
-    https://github.com/USERNAME/LoopWorkspace
+
+    ``` { .text .copy  title="If you do not use an organization" }
+    https://github.com/my-name/LoopWorkspace
     ```
 
 1. A brief summary of the step you are on and what isn't working.
@@ -41,19 +45,14 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 * Do not copy from the log file and post the words
 * Do not take a screenshot of what you think is an error
 
-!!! tip "Username, Not Pictures"
+!!! tip "GitHub URL, Not Pictures"
     If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**.
 
-    All that is needed to assist is your link or as a bare minimum your *GitHub* **username**.
+    All that is needed to assist is your link to the *GitHub* repository where you are building.
 
 ### Most Common Mistakes
 
 If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
-
-!!! warning "Just updated?"
-    If you just updated to version 3.4 from version 3.2.x, you must add a new Identifier.
-
-    If you missed this step - go do it now. [Update from 3.2.x to 3.4](bb-update.md#update-from-32x-to-34){: target="_blank" }
 
 !!! important "Certificate is missing"
     If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
@@ -68,8 +67,8 @@ These are some of the most common errors to date.
 1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
     * See [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for an example of this kind of failure
 1. You used a smart editor instead of a text-only editor to save your information
-    * It only takes one letter to be changed from lower-case to upper-case by your smart editor to ruin your day
-    * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both upper and lower-case characters and all the values are case-sensitive
+    * It only takes one letter to be changed from small to capital by your smart editor to ruin your day
+    * The alpha-numeric values used for `GH_PAT`, `FASTLANE_ISSUER_ID` and `FASTLANE_KEY` contain both small and capital characters and all the values are case-sensitive
 1. When saving `TEAMID`, you typed what you thought you saw instead of using copy and paste
 1. You skipped running one of the actions
 1. You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span>
@@ -92,7 +91,7 @@ First consider the following results from the&nbsp;<span translate="no">*GitHub*
 
 ### Annotation with Clear Message
 
-Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours may be (dev) or (main), once 3.4 is released.
+Your screen may look similar to the graphic below. The name in parentheses refers to the branch used to develop these wonderful messages. Yours will almost always be the `main` branch.
 
 ![graphic showing failure to validate secrets](img/error-validate-secrets.png){width="500"}
 {align="center"}
@@ -117,14 +116,16 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 ### Missing Certificates
 
+> Coming soon: when Loop 3.6.0 (or newer) is available, certificates will be automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
+
+> After Loop 3.6.0 is released, the first attempt to build will update the files required for automatic certificate creation. The second attempt to build will use the new files. So if the first attempt with Loop 3.6.0 fails, try again.
+
 If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and can not create a new one because you enabled`.
 
 * See [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
 
-
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
 {align="center"}
-
 
 ### Annotation without Clear Message (*Build*)
 
@@ -146,24 +147,22 @@ The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. 
 ## Find the Error
 
 This section is required when you need to search for a string to diagnose and error that does not have a clear annotation.
+
 ## Misleading Error Message
 
 If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
-* Check your *Apple* Developer account for agreements first, before trying to fix those
+    * Once `Loop 3.6.0` or newer is available, this should no longer appear unless you have a mistake in one of those
+* Check your *Apple* Developer account for agreements first, before trying to fix those `Secrets`
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
 
 If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement){: target="_blank" }.
 
-You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
-
-> One user reported: The expiration date on the credit card used for auto-renew of my developer account was updated and the value in the Apple account did not match the new one. After updating my account with the new expiration date - Browser Build succeeded again.
+You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or credit card expiration date, as entered at *Apple*, has passed.
 
 ## Find Your Error
-
-> For Version 3.2.3 and earlier - later versions have an improved method for display errors.
 
 There is a separate section for each step in the process. First, you must follow the [Examine Annotation](#examine-annotation) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.
 
@@ -198,24 +197,13 @@ Click on the top link to view the record of the failed action as shown in the gr
 {align="center"}
 
 * Still stuck?
-    * Post for help including your ==*GitHub* **username**==
+    * Post for help including your ==*GitHub* **URL**== (the link to your repository)
     * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
     * Please **do NOT post a screenshot**
 
-!!! tip "Where to find my *GitHub* username?"
-    You can find it:
-
-    -  either in the URL of your fork of `Loopworkspace`, after `github.com` in between the forward slashes (`/`).
-       https://github.com/==username==/Loopworkspace
-    - or on the [*GitHub* website](https://github.com){: target="_blank" }
-
-        ![Find your GitHub username step 1](img/github-username-1.svg)
-        ![Find your GitHub username step 2](img/github-username-2.svg){width="200"}
-        {align="right"}
-
-        ![Find your GitHub username step 3](img/github-username-3.svg){width="400"}
-
-    As your *GitHub* `username` is case-sensitive, use copy and paste.
+!!! tip "Where to find my *GitHub* URL?"
+    -  Go to your fork of `LoopWorkspace` and highlight the address shown in your browser, for example:
+       https://github.com/==my-name-org==/Loopworkspace
 
 ## Do Not Remove an App
 
@@ -252,7 +240,7 @@ For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and re
 
 ## Action: `Create Certificates` Errors
 
-Review [Examine Annotatios](#examine-annotation) for instructions on how to use the error strings.
+Review [Examine Annotation](#examine-annotation) for instructions on how to use the error strings.
 
 ### Error: Wrong TEAMID in `Secrets`
 
@@ -352,8 +340,6 @@ To fix this error:
 
 After you have clicked `Update token` you should see the token overview again with the message `Some of the scopes you’ve selected are included in other scopes. Only the minimum set of necessary scopes has been saved. ` (You can dismiss the message using the `X` near the upper right side if it appears).
 
-NOTE: for next release or if using the dev branch - you want <code>GH_PAT</code> to have `repo, workflow` scope. So click on the workflow scope now and save yourself a step later.
-
 #### Create Certificates
 
 You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](certs.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
@@ -370,7 +356,11 @@ The full error message is:
 
 > `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
 
-These steps are needed to make room for a `Certificate`:
+#### New with `Loop 3.6.0`
+
+> If you just updated to 3.6.0 (once it is released), you might not have added the new variable, `ENABLE_NUKE_CERTS`. Go do that now and then try again. It will take care of renewing your certificates automatically. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
+
+These steps are needed to make room for a `Certificate` when running versions earlier than 3.6.0:
 
 1. Delete an old `Distribution Certificate`
     * *Apple* limits you to two `Distribution Certificates`
@@ -406,7 +396,7 @@ Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-se
 ## Action: `Build Loop` Errors
 
 !!! warning "Run `Create Certificates` First"
-    You must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
+    When running a version earlier than `Loop 3.6.0`, you must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
 
     If you had to step backward and fix an `Identifier`, you must run `Create Certificates` again.
 
@@ -661,58 +651,17 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
-## Misleading Error Message
-
-If there are *Apple Developer* agreements you have not accepted, you will get errors when you try to build the app that indicate your *Apple* <code>Secrets</code> are incorrect.
-
-You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or expiration date has passed.
-
-* The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
-* Check your *Apple* Developer account for agreements first, before trying to fix those
-* If you previously built successfully - it is almost certainly the agreement
-* It can take 15 minutes to an hour after the agreement is signed before it can be used
-
-If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
 
 ## Extra Sections
 
-It is unlikely you will need these sections. They are being saved for the transition to version 3.4.x. The Match-Secrets repository is automatically created for you if you don't have one. The instructions below were used when you had to create yours manually.
-
-### Create Match-Secrets
-
-Open your github.com URL (this is `https://github.com/username`), (`username` is your GitHub account name).
-
-Create a new private repository - you can either click on the link below or follow the instructions with the first graphic:
-
-* Click on this link: [https://github.com/new](https://github.com/new){: target="_blank" }
-
-or
-
-* At the top right of the screen, click on the &plus; sign and select `New Repository`
-
-    ![plus sign to add repository](img/create-match-secrets.svg){width="200"}
-    {align="center"}
-
-This shows you a screen similar to the following graphic which has 3 regions highlighted:
-
-* In `Repository name`, type `Match-Secrets` (use a hyphen between `Match` and `Secrets`)
-* Be sure to check the  box **`Private`**  (red circle) to make the repository **private**
-* **Please confirm you selected the `Match-Secrets` repository as private.**
-* Scroll to the bottom of the page and tap on "`Create repository`"
-
-![first screen for new repository](img/01-gh-create-match-secrets.png){width="600"}
-{align="center"}
-
-A screen will appear with a lot of options - do **not** do anything on this screen.
-
-* Click on your username (as indicated by the red rectangle) to return to your main *GitHub* URL.
-
-![second screen for new repository](img/02-gh-match-secrets-leave-alone.png){width="600"}
-{align="center"}
-
-You will not directly interact with your `Match-Secrets` repository.
+It is unlikely you will need these sections.
 
 ### Delete Identifiers
+
+These instructions are useful if:
+
+* You messed up your TEAMID when initially setting up your app and you want to remove identifiers that may be confusing
+* You built an app but no longer want it, and want to clean up the list of identifiers so it is shorter
 
 The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
 
@@ -731,4 +680,4 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 
 If coming here because you enter the wrong `TEAMID` in `Secrets` - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
 
-After you delete identifiers, you must add them back, configure them and create certificate before you can build again.
+After you delete identifiers, you must add them back before you can build a given app. Configure them and create certificates before you can build again.

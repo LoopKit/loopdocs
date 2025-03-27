@@ -44,6 +44,8 @@ The steps on these pages must be completed (in order) for you to build an app us
 
 1. [Introduction and Summary](intro-summary.md){: target="_blank" }
 1. [Collect Secrets](secrets.md){: target="_blank" }
+    * Some from *Apple*
+    * Some from *GitHub*
 1. [Prepare Fork](prepare-fork.md){: target="_blank" }
 1. [Identifiers](identifiers.md){: target="_blank" }
 1. [Prepare App](prepare-app.md){: target="_blank" }
@@ -95,9 +97,13 @@ Instructions to make updates are found at:
 
 * [Update with Browser](bb-update.md){: target="_blank" }
 
-There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic:
+There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic if your *Apple* Developer account is active, agreements are signed and certificates are valid:
 
 * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
+
+After 3.6.0 is released, certificates will be automatically renewed. In the meantime, they must be renewed manually using these instructions:
+
+* [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
 
 ## Other Topics
 
@@ -117,13 +123,13 @@ These considerations were prepared when most people were using a Mac computer to
 * Compatible version of *Xcode* is provided by *GitHub*
     * The time required for the initial setup to build with a browser may take less time than one *macOS* and *Xcode* version update for those using [Build with *Mac*](../build/overview.md)
 * Automatic Updates are loaded into *TestFlight*
-    * With version 3.4, builds are automatically prepared at least once a month
+    * With version 3.4 and newer, builds are automatically prepared at least once a month
     * You choose when to install the new app from TestFlight onto your phone
 * Manual Updates are easy
     * Starting an update takes a few minutes of your time; it can be done from your phone; the rest is automatic and is done in about an hour
 * After the *GitHub* Build starts, your app is ready to install on your *iPhone* in about an hour
 * The app is delivered to your phone via *TestFlight*
     * The app is considered "Beta" by  *Apple* and expires after 90 days
-    * <span translate="no">Loop 3.4</span>&nbsp; and later versions provide automatic build as the default
+    * <span translate="no">Loop 3.4</span>&nbsp; and newer versions provide automatic build as the default
 * Customization methods are documented at [Customize with Browser](custom-browser.md){: target="_blank" }
 

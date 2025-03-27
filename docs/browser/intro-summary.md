@@ -26,13 +26,16 @@
         * [Collect the four *Apple* <code>Secrets</code>](secrets.md#collect-the-four-apple-secrets){: target="_blank" }
     * *GitHub*:
         * [Collect the <code>GH_PAT</code> Secret](secrets.md#collect-the-gh_pat-secret){: target="_blank" }
+        * (Optional) [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" } (strongly recommended)
     * [Make up a Password](secrets.md#make-up-a-password){: target="_blank" } and save it as your sixth `Secret`
 
     Now it's time to use those <code>Secrets</code> to build the Loop app
 
     * *GitHub*:
         * [`Fork` the repository (make your copy of <code>LoopWorkspace</code>)](prepare-fork.md#fork-loopworkspace){: target="_blank" }
-        * [Add <code>Secrets</code> to your `fork`](prepare-fork.md#configure-secrets){: target="_blank" }
+            * Using an organization? Add `Secrets` and `Variables` to your Organization and all your apps can use them
+            * Not using an organization? You have to add `Secrets` and `Variables` to each repository individually
+        * [Add <code>Secrets</code> to your `organization` or a single `fork`](prepare-fork.md#configure-secrets){: target="_blank" }
         * [`Action: 1. Validate Secrets`](identifiers.md#validate-secrets){: target="_blank" }
         * [`Action: 2. Add Identifiers`](identifiers.md#add-identifiers){: target="_blank" }
     * _<span translate="no">Apple</span>_:
@@ -60,6 +63,18 @@ The steps to configure for building with a browser require a lot of focused atte
     First time setup should take several hours, but if you are having trouble don't get frustrated:
 
     * [Click here to find help](bb-errors.md#help-with-errors){: target="_blank" }.
+
+???+ tips "Who should use a free GitHub Organization option (click to close/open)"
+    There are several places where you see a recommendation to use a free GitHub Organization instead of building directly from your personal free GitHub account.
+
+    When you use an organization, you don't have to add 6 Secrets to each repository for every app you build. It can save a lot of time in the long run.
+
+    * Even if you just build Loop and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account
+    * Who should definitely build with an organization:
+        * Anyone who is a caregiver will want LoopCaregiver or LoopFollow or both
+        * Anyone who wants to use LoopFollow for the amazing alarm capabilties
+        * Anyone who might want to try a customized version of Loop
+        * Anyone who might want to try a different app such as xDrip4iOS or Trio
 
 ### The Short Version
 
@@ -103,7 +118,7 @@ You need to keep a digital copy of your 6 <code>Secrets</code>.
 !!! important "Use a Text-Only Editor"
     **Be sure to use a Text-Only editor like NotePad (PC) or TextEdit (Mac) to archive your information.**
 
-    If you use a "smart" editor, it may change lower-case letters to upper-case letters at the beginning of a line when you paste items into your archive file.
+    If you use a "smart" editor, it may change small letters to capital letters at the beginning of a line when you paste items into your archive file.
 
     If even one character is capitalized when it should not be, you will get errors.
 
@@ -123,6 +138,7 @@ You don't need to know anything about the <code>Secrets</code> to do this. Come 
     * There is a reference pattern for each SECRET: replace that with your SECRET or you can add your secret below the pattern to give yourself confidence you got the correct item
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
+6. If you use Nightscout, you may also want the [Nightscout template](../nightscout/remote-config.md#save-your-important-nightscout-information){: target="_blank" }
 
 ``` { .bash .copy title="Template to use for Secrets" }
 MySecretsReferenceFile.txt
@@ -142,15 +158,17 @@ suggest you use your desired password tool to save the password for this account
 <your information here>
 suggest you use your desired password tool to save the password for this account
 
-These are the Six Secrets in alphabetical order - each one shows the expected format.
-Delete each prototype as you gather your own secrets.
-The letter A indicates an alphanumeric character.
-Some may be lower case, some upper case and some numerals.
+There are Six Secrets and One Variable:
+ - the list below shows the expected format of each.
+You can replace each prototype with your secret as you gather them,
+ - or put your secret below a prototype.
+The letter A indicates an alphanumeric character;
+ - some may be small letter, some capital letters and some numerals.
 The FASTLANE_KEY may have additional characters included.
-For that one copy the entire key
-including -----BEGIN PRIVATE KEY-----
-through
------END PRIVATE KEY-----
+  Be sure to copy the entire key including
+  -----BEGIN PRIVATE KEY-----
+  through
+  -----END PRIVATE KEY-----
 
 ## SECRETS BELOW:
 
@@ -165,7 +183,6 @@ AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
 FASTLANE_KEY_ID
 <looks like this>
 AAAAAAAAAA
-
 
 FASTLANE_KEY
 <looks like this>
@@ -184,9 +201,21 @@ MATCH_PASSWORD
 <looks like this>
 AnyThingYouWant-sameForEveryRepository
 
+New addition, this Variable:
+
+ENABLE_NUKE_CERTS = true
+
+With release of Loop 3.6.0:
+  this variable is needed to automatically renew your certificates when they expire.
+
 ## Repository Names for my Fork:
 
-https://github.com/my-github-username/LoopWorkspace
+If you use an organization (recommended)
+https://github.com/my-name-org/LoopWorkspace
+
+or (if you don't use an organzation): 
+https://github.com/my-name/LoopWorkspace
+
 
 Add additional apps here if you decide to build any
 ```
