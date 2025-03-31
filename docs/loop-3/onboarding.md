@@ -167,9 +167,6 @@ Take the yellow (and red) indications with a grain of salt. You will get an extr
 
 A red limit cannot be exceeded without modifying the code itself. But values that show up as red can be saved - they are valid therapy selections.
 
-!!! danger "mmol/L"
-    People using mmol/L should avoid the red (the min or max end points) glucose values for their settings. They sometimes cause a crash.
-
 The [Guardrails for Settings](therapy-settings.md#guardrails-for-settings) are summarized on the Therapy Settings page.
 
 ### Glucose Safety Limit
