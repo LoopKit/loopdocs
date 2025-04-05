@@ -41,10 +41,10 @@
     * _<span translate="no">Apple</span>_:
         * [Configure Identifiers for *Loop*](prepare-app.md#configure-identifiers-for-loop){: target="_blank" }
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
+        * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
     * *GitHub*:
         * [`Action: 3. Create Certificates`](certs.md#create-certificates){: target="_blank" }
         * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
-    * _<span translate="no">Apple</span>_: [Set up `Internal TestFlight Group`](tf-users.md#testflight-users-overview){: target="_blank" }
     * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md){: target="_blank" }
 
 ???+ question "FAQs (click to open/close)"
@@ -230,13 +230,17 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 
 * Some terms in the Glossary are not in alphabetical order to improve logical grouping. All the individual <code>Secrets</code> are listed after <code>Secrets</code> in the Glossary.
 
-* `Actions`: available in your *GitHub* account to build your app (once you configure your repository)
+* `Actions`: available in your *GitHub* repositories to build your app
     * You must be logged in to *GitHub* to run the actions
-* <code>Secrets</code>: are required to enable *GitHub* to build the *Loop* app using *GitHub* Actions
-    * Six <code>Secrets</code> must be added to your fork of LoopWorkspace
-    * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example)
-    * If you build [Other Apps](other-apps.md){: target="_blank" }, they use the same <code>Secrets</code>
-    * For those who feel confident using *GitHub*, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code>Secrets</code> only once and have them available for every repository in that organization account; see [Use a *GitHub* Organization Account](other-apps.md#use-a-github-organization-account){: target="_blank" }
+* `Fork`: you make a copy of the code needed to build an app and store it in your *GitHub* account (using a free *GitHub* organization is recommended for storing your `forks`)
+* <code>Secrets</code>: are required to enable *GitHub* to build an app from a repository using *GitHub* Actions
+    * Six <code>Secrets</code> must be entered to enable your app (or apps) to build
+    * These <code>Secrets</code> work for any branch in your fork (`main` or `dev`, for example) and if you use the recommended free *GitHub* organization to build, they work for any app you fork to your organization
+    * If you build [Other Apps](other-apps.md){: target="_blank" }, they use the same <code>Secrets</code> and the use of a *GitHub* organization is even more strongly recommended
+* Certificates: These are required to enable *GitHub* to build an app from a repository using *GitHub* Actions
+    * They are manually created with the Create Certificates action
+    * They expire at the end of one year
+    * With `Loop 3.6.0` and newer versions, certificates are automatically renewed as long as you [add the required `Variable`](prepare-fork.md#add-variable){: target="_blank" }
 * API `Key`:`Application Programming Interface Key`
     * You create an API key from the *Apple Developer* website
     * Doing this provides 3 of your <code>Secrets</code>

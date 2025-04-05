@@ -4,7 +4,7 @@
 
 After you [Build the *Loop* App](../browser/build-yml.md#build-the-loop-app) with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
 
-* If you later need to add an adult family member to your list, refer to [*TestFlight* Users Overview](../browser/tf-users.md#testflight-users-overview).
+* If you later need to add an adult family member to your list, refer to [*TestFlight* Overview](../browser/tf-users.md#testflight-overview).
 
 * Children (under 13 in US, varies by country) cannot use *TestFlight* with their ID. When you use [*TestFlight* for a Child](#testflight-for-a-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the *TestFlight* invitation to the email associated with your ID.
 

@@ -312,7 +312,7 @@ In the instructions below, use your *GitHub* username instead of `my-name`.
 ???+ tip "GH_PAT comes from personal `my-name` account"
     The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it.
 
-**Your personal *GitHub* account is still needed. The free organization points to your private account as a member. Please do not delete your personal *GitHub* account after creating an organization. If you do that - you will no longer have access to your organization.**
+**Your personal *GitHub* account is still needed. The free organization points to your personal account as a member. Please do not delete your personal *GitHub* account after creating an organization. If you do that - you will no longer have access to your organization.**
 
 ## Make up a Password
 

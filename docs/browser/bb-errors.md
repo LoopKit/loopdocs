@@ -492,7 +492,7 @@ Once you have created an app in the *App Store* that is not based on your `TEAMI
     * Tap on `Remove App`
     * New dialog window appears, select `Remove`
 
-At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](prepare-fork.md#configure-secrets). This time you will be updating `TEAMID` in the repository secret list.
+At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](prepare-fork.md#configure-secrets). This time you will be updating `TEAMID` in the secret list.
 
 ## Repeat `Build Loop` Errors
 

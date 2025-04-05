@@ -40,18 +40,18 @@ In addition to the pages linked below in [Configure to use Browser](#configure-t
 
 ### Configure to use Browser
 
-The steps on these pages must be completed (in order) for you to build an app using a browser:
+The steps on these pages must be completed for you to build an app using a browser:
 
 1. [Introduction and Summary](intro-summary.md){: target="_blank" }
 1. [Collect Secrets](secrets.md){: target="_blank" }
     * Some from *Apple*
     * Some from *GitHub*
 1. [Prepare Fork](prepare-fork.md){: target="_blank" }
-1. [Identifiers](identifiers.md){: target="_blank" }
+1. [Prepare Identifiers](identifiers.md){: target="_blank" }
 1. [Prepare App](prepare-app.md){: target="_blank" }
+1. [Prepare *TestFlight* Group](tf-users.md){: target="_blank" }
 1. [Create Certificates](certs.md){: target="_blank" }
 1. [Build the *Loop* App](build-yml.md){: target="_blank" }
-1. [*TestFlight* Users](tf-users.md){: target="_blank" }
 
 The pages of instructions listed above give detailed steps on how to build the *Loop* app. If you are building a different app, you can follow the detailed instructions but will need to know the Fork, App Name, Identifiers and in some cases App Group for the App you intend to build. Once you build one app, subsequent apps are much easier to build.
 

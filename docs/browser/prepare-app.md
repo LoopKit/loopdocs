@@ -324,4 +324,4 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
 
 ## Next Step
 
-The next step is to [Create Certificates](certs.md).
+The next step is to configure your [TestFlight Group](tf-users.md) for this app.

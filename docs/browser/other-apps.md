@@ -17,18 +17,17 @@ If you are coming to this page to update one of the other apps, follow the [How 
 
 ### Optional Build Method
 
-!!! tip "Optional - Set up a Organization Account"
-    If you are going to be building a lot of different apps, you can choose to set up a free organization account with *GitHub* and use that to build.
+!!! tip "Set up a Organization Account"
+    If you are going to be building a lot of different apps, you should set up a free organization account with *GitHub* and use that to build.
 
     Pros:
 
-    * The 6 <code>Secrets</code> can be added to the organization one-time and apply to every repository
+    * The 6 <code>Secrets</code> and 1 `Variable` can be added to the organization one-time and apply to every repository
 
     Cons:
 
-    * The displays for an organization are slightly different than for a personal account but are not hard to navigate if you are computer literate and feel comfortable using a browser
-
-    For more information, see [Use a *GitHub* Organization Account](#use-a-github-organization-account).
+    * None other than a little prep work:
+        * [Switch to a *GitHub* Organization Account](#switch-to-a-github-organization-account)
 
 ### Multiple Copies of `LoopFollow`
 
@@ -105,7 +104,7 @@ Open the text file in which you maintain a copy of your 6 <code>Secrets</code> s
     ![action secrets and variables screen](img/gh-actions-secrets.svg){width="700"}
     {align="center"}
 
-1. Tap on `New repository secret` and add each of the 6 <code>Secrets</code>
+1. Tap on `New secret` and add each of the 6 <code>Secrets</code>
     * You will notices the New secret dialog looks a little different
     * As soon as you click on the Name* Box, the 6 Secret Names may show up as a dropdown as shown in the graphic below
     * Select each one in turn and paste the secret value into the Secret* box and hit Add secret
@@ -403,18 +402,17 @@ Once the first build completes, you will be able to configure *TestFlight* for t
 
 The [Install on Phone](phone-install.md) walks you through the steps to install the app to a phone. When going through those steps, replace your App Name for&nbsp;_<span translate="no">Loop</span>_. Everything else is the same.
 
-## Use a *GitHub* Organization Account
+## Switch to a *GitHub* Organization Account
 
-This section is optional. It is provided to assist:
-
-* Users who are using *GitHub* for other reasons and want to segregate their DIY app building from their existing accounts
-* Users who want the convenience of entering the 6 <code>Secrets</code> just one time instead of entering them for each <code>repository</code> individually
+This section is optional. It is strongly recommended for anyone building more than one app.
 
 ### Set up a Free *GitHub* Organization
 
 Prerequisite: You need a personal *GitHub* account. If you do not already have a personal *GitHub* account, click on [New *GitHub* Account](secrets.md#new-github-account){: target="_blank" }.
 
-In the instructions below, use your *GitHub* username instead of `my-name`.
+Detailed instructions for creating an organization are found at [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }.
+
+The directions below may be sufficient for some where you use your *GitHub* username instead of `my-name`.
 
 1. Follow the directions below to create a new *GitHub* organization account with a username of `my-name-org` (of course naming is up to you)
     * There is documentation at this link, [New *GitHub* Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch){: target="_blank" }, or you can follow the bullets below
@@ -432,23 +430,11 @@ In the instructions below, use your *GitHub* username instead of `my-name`.
     * You can always add others at a later time
 3. Confirm access by entering the same password as you use for `my-name`
 
-???+ tip "GH_PAT comes from personal `my-name` account"
-    The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it.
-
 ### Use the Free *GitHub* Organization
 
-There are three steps to using this account moving forward:
+There are two steps to using this account moving forward:
 
-1. One-time only: You need to add your 6 <code>Secrets</code> to this organization account (instructions are in next section)
-
-1. One-time only: Create a `Match-Secrets` repository in the `my-name-org` account
-    * Not required for version 3.4 or later of the *Loop* app but it may be required for other apps if you haven't already built the *Loop* app
-    * Start out at the top-level of your organization (`github.com/my-name-org`)
-    * Click on `Repositories`
-    * Click on `New repository`
-    * Choose `my-name-org` as owner and enter `Match-Secrets` as the name
-    * Make sure to choose `Private` and tap on the `Create` button
-    * If you want to see graphics for the steps above, refer to the instructions written for a personal (instead of organization) account in [Create `Match-Secrets`](bb-errors.md#create-match-secrets)
+1. One-time only: You need to add your 6 <code>Secrets</code> and 1 `Variable` to this organization account (instructions are in next section)
 
 1. For each repository: you need to `fork` for each app you wish to build to the new `my-name-org` account
 
@@ -466,27 +452,17 @@ Then, for every build, you will use just the organization account. The original 
 
 Adding the <code>Secrets</code> to an organization is similar to adding them to each <code>repository</code> for a personal *GitHub* account. The difference is you add them at the organization level and then they are available to each <code>repository</code> in that organization.
 
-Follow the directions below to prepare to add secrets to the organization and then skip (when provided the link) to the per-repository directions for more details about adding each secret.
+Detailed instructions for using an organization are found at [Configure Secrets](prepare-fork.md#configure-secrets){: target="_blank" }.
+
+The directions below may be sufficient for some.
 
 Make sure you are in the organization for *GitHub*:
 
-* Click on your icon at upper right of *GitHub* browser
-* Select `Your Organizations`
-* In the new screen, select `my-name-org`
 * Make sure the URL is `github.com/my-name-org`
-* Click on Settings (it is optional to fill in the information shown under general)
+* Click on Settings
 * In the left pane, scroll down to find `Secrets and variables` and click on the dropdown symbol and choose `Actions`
-* Your screen should look like the graphic below
-
-![add secrets at organization level](img/add-secrets-org.png)
-
-* At this point, tap on `New organization secret`
-    * Refer the instructions at this link, [Enter the <code>Secrets</code>](prepare-fork.md#enter-the-secrets), for adding <code>Secrets</code>
-    * Those instructions show the graphics for a personal `repository` and indicate the button will says `New repository secret` - your screen will show `New organization secret`
-    * Continue until all six <code>Secrets</code> are entered for your organization account `my-name-org`
-* Once the organization <code>Secrets</code> are entered, they are used by every repository you fork with this organization as the owner
-
-The *GitHub* personal access token used as one of the 6 <code>Secrets</code> is associated with your personal account (`my-name`); so if you already have one, you just keep using it. If not, follow [these instructions](secrets.md#create-github-personal-access-token) to get or configure a new one.
+* At this point, tap on `New organization secret` and add your 6 secrets
+* Then tap on the `Variable` tab and enter your Variable
 
 ### Disable Building for Personal *GitHub* account
 
