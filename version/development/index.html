@@ -931,7 +931,7 @@
         
   
   <span class="md-ellipsis">
-    Identifiers
+    Prepare Identifiers
     
   </span>
   
@@ -954,6 +954,28 @@
   
   <span class="md-ellipsis">
     Prepare App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../browser/tf-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prepare TestFlight Group
     
   </span>
   
@@ -998,28 +1020,6 @@
   
   <span class="md-ellipsis">
     Build the App
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../browser/tf-users/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TestFlight Users
     
   </span>
   
@@ -3844,7 +3844,7 @@
 <p>This section is provides an overview of changes to dev compared to <code>Loop 3.4.4</code>.</p>
 <h3 id="add-automatic-certificate-generation-and-renewal">Add Automatic <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Generation and Renewal<a class="headerlink" href="#add-automatic-certificate-generation-and-renewal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These changes in the build process only work when <code>dev</code> is your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Once <code>Loop 3.6.0</code> is released, these changes will work with the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>Automatic certificate generation and renewal requires a <code>Variable</code> be added to your organization or your <abbr title="contains project files and each file's revision history">repository</abbr>. Please see these instructions: <a href="prepare-fork.md#add-variable" target="_blank">Add Variable</a></p>
+<p>Automatic certificate generation and renewal requires a <code>Variable</code> be added to your organization or your <abbr title="contains project files and each file's revision history">repository</abbr>. Please see these instructions: <a href="../../browser/prepare-fork/#add-variable" target="_blank">Add Variable</a></p>
 <h3 id="loop-updates"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Updates<a class="headerlink" href="#loop-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Updates made to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or LoopKit <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> affect the operation of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p>No functional changes made at the current time.</p>
@@ -3916,7 +3916,7 @@
 <p>To really understand what branches are, we should probably explain a little more about the software and how development works.  You can watch a 30-minute long, classic Katie DiSimone <a href="https://www.youtube.com/watch?v=cWqvYs4Azt0&amp;t=4s" target="_blank">video explanation about branches</a> created when <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Version 2.0 was newly released. Keep in mind while watching the video:</p>
 <p>Details that are different:</p>
 <ul>
-<li>The way the code is organized has changed: see <a href="#loopworkspace">LoopWorkspace</a></li>
+<li>The way the code is organized has changed: see <a href="../loopworkspace/" target="_blank">LoopWorkspace</a></li>
 <li>The default <abbr title="version of code within a single repository or workspace repository">branch</abbr> name used to be <code>master</code> - but is now <code>main</code></li>
 <li><code>carthage</code> is no longer used to determine which <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> (frameworks) are pulled in to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (see <a href="#loopworkspace">LoopWorkspace</a>)</li>
 </ul>

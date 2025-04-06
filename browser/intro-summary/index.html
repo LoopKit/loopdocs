@@ -1070,7 +1070,7 @@
         
   
   <span class="md-ellipsis">
-    Identifiers
+    Prepare Identifiers
     
   </span>
   
@@ -1093,6 +1093,28 @@
   
   <span class="md-ellipsis">
     Prepare App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tf-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prepare TestFlight Group
     
   </span>
   
@@ -1137,28 +1159,6 @@
   
   <span class="md-ellipsis">
     Build the App
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tf-users/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TestFlight Users
     
   </span>
   
@@ -3707,6 +3707,7 @@
 <li><em><span translate="no">Apple</span></em>:<ul>
 <li><a href="../prepare-app/#configure-identifiers-for-loop" target="_blank">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></a></li>
 <li><a href="../prepare-app/#create-loop-app-in-app-store-connect" target="_blank">Create your version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> in <code>App Store</code> (personal use only, not for distribution)</a></li>
+<li><a href="../tf-users/#testflight-overview" target="_blank">Set up <code>Internal TestFlight Group for the App</code></a></li>
 </ul>
 </li>
 <li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>:<ul>
@@ -3714,7 +3715,6 @@
 <li><a href="../build-yml/#build-the-loop-app" target="_blank"><code>Action: 4. Build Loop</code></a></li>
 </ul>
 </li>
-<li><em><span translate="no">Apple</span></em>: <a href="../tf-users/#testflight-users-overview" target="_blank">Set up <code>Internal TestFlight Group</code></a></li>
 <li>Phone: <a href="../phone-install/" target="_blank">Install the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app</a></li>
 </ul>
 </details>
@@ -3898,16 +3898,22 @@ Add<span class="w"> </span>additional<span class="w"> </span>apps<span class="w"
 <p>Some terms in the Glossary are not in alphabetical order to improve logical grouping. All the individual <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are listed after <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> in the Glossary.</p>
 </li>
 <li>
-<p><code>Actions</code>: available in your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account to build your app (once you configure your <abbr title="contains project files and each file's revision history">repository</abbr>)</p>
+<p><code>Actions</code>: available in your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> repositories to build your app</p>
 <ul>
 <li>You must be logged in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to run the actions</li>
 </ul>
 </li>
-<li><code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>: are required to enable <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><ul>
-<li>Six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> must be added to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace</li>
-<li>These <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> work for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (<code>main</code> or <code>dev</code>, for example)</li>
-<li>If you build <a href="../other-apps/" target="_blank">Other Apps</a>, they use the same <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
-<li>For those who feel confident using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, there are optional instructions to configure a free organizational account (for your personal use) that allows you to enter the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> only once and have them available for every <abbr title="contains project files and each file's revision history">repository</abbr> in that organization account; see <a href="../other-apps/#use-a-github-organization-account" target="_blank">Use a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Organization Account</a></li>
+<li><code>Fork</code>: you make a copy of the code needed to build an app and store it in your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account (using a free <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization is recommended for storing your <code>forks</code>)</li>
+<li><code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>: are required to enable <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to build an app from a <abbr title="contains project files and each file's revision history">repository</abbr> using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><ul>
+<li>Six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> must be entered to enable your app (or apps) to build</li>
+<li>These <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> work for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> (<code>main</code> or <code>dev</code>, for example) and if you use the recommended free <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization to build, they work for any app you <abbr title="a copy of code in a github repository other than the original">fork</abbr> to your organization</li>
+<li>If you build <a href="../other-apps/" target="_blank">Other Apps</a>, they use the same <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and the use of a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization is even more strongly recommended</li>
+</ul>
+</li>
+<li>Certificates: These are required to enable <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to build an app from a <abbr title="contains project files and each file's revision history">repository</abbr> using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><ul>
+<li>They are manually created with the Create Certificates action</li>
+<li>They expire at the end of one year</li>
+<li>With <code>Loop 3.6.0</code> and newer versions, certificates are automatically renewed as long as you <a href="../prepare-fork/#add-variable" target="_blank">add the required <code>Variable</code></a></li>
 </ul>
 </li>
 <li><abbr title="Application Programming Interface">API</abbr> <code>Key</code>:<code>Application Programming Interface Key</code><ul>

@@ -1109,7 +1109,7 @@
         
   
   <span class="md-ellipsis">
-    Identifiers
+    Prepare Identifiers
     
   </span>
   
@@ -1132,6 +1132,28 @@
   
   <span class="md-ellipsis">
     Prepare App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tf-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prepare TestFlight Group
     
   </span>
   
@@ -1176,28 +1198,6 @@
   
   <span class="md-ellipsis">
     Build the App
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tf-users/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TestFlight Users
     
   </span>
   
@@ -3760,8 +3760,8 @@
 </li>
 <li>If you already have a <abbr title="a copy of code in a github repository other than the original">fork</abbr>, you should not proceed, see <a href="#already-have-loopworkspace">Already Have a LoopWorkspace</a></li>
 <li>The <abbr title="contains project files and each file's revision history">repository</abbr> name is already filled in<ul>
-<li>Do not rename the <abbr title="contains project files and each file's revision history">repository</abbr> to something else</li>
-<li>It needs to match the original <abbr title="contains project files and each file's revision history">repository</abbr> name or automatic building will not work</li>
+<li><strong>Do not rename the <abbr title="contains project files and each file's revision history">repository</abbr> to something else</strong></li>
+<li>It needs to <strong>match the original <abbr title="contains project files and each file's revision history">repository</abbr> name</strong> or <strong>automatic building will not work</strong></li>
 </ul>
 </li>
 <li>Leave the selection that says "<code>Copy the main branch only</code>" checked</li>
@@ -3819,18 +3819,14 @@
 </ul>
 <p align="center"><img alt="settings screen" src="../img/gh-org-settings-02.png" width="600" /></p>
 </li>
-<li>
-<p>Your screen should now look like the graphic below. Note that the <code>Secret</code> tab is automatically selected.</p>
-<p align="center"><img alt="action secrets and variables screen" src="../img/gh-actions-secrets.svg" width="700" /></p>
-</li>
 </ol>
-<p>The next steps are identical whether you are configuring your organizations <code>Secrets</code> and  <code>Variables</code> or doing this for every <abbr title="contains project files and each file's revision history">repository</abbr> in a private account.</p>
+<p>The next steps are identical whether you are configuring your organizations <code>Secrets</code> and  <code>Variables</code> or doing this for every <abbr title="contains project files and each file's revision history">repository</abbr> in a personal account.</p>
 <ul>
 <li>Skip ahead to <a href="#enter-the-secrets">Enter the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
 </ul>
 <h3 id="personal-account-prepare-to-enter-secrets">Personal Account: Prepare to Enter <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#personal-account-prepare-to-enter-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
-<p>This section is only if you are using a personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account to build. Using an organization is recommended.</p>
+<p>This section is only if you are using a personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account to build. Using an organization is recommended. If you are using an organization, skip ahead to <a href="#enter-the-secrets">Enter the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
 </blockquote>
 <p>Log into <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>.</p>
 <ol>
@@ -3856,16 +3852,23 @@
 </ul>
 </li>
 <li>
-<p>On the left side, find the <code>Secrets and variables</code> dropdown and choose <code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code></p>
+<p>Refer to the graphic above:</p>
+<ul>
+<li>On the left side, find the <code>Secrets and variables</code> dropdown (red circlea)</li>
+<li>Tap on <code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code> (red rectangle)</li>
+</ul>
+<p align="center"><img alt="action secrets and variables screen" src="../img/personal-new-secret.png" width="500" /></p>
 </li>
 </ol>
 <p>At this point the instructions are the same whether you are using an organization or a personal account.</p>
 <h2 id="enter-the-secrets">Enter the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#enter-the-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The steps to enter the <code>Secrets</code> and  <code>Variables</code> are identical whether you are configuring these in your <a href="#prepare-to-enter-secrets">organization account</a> or repeating this for every <abbr title="contains project files and each file's revision history">repository</abbr> in a <a href="#personal-account-prepare-to-enter-secrets">private account</a>.</p>
-<p>Your screen should look like the graphic below. If not head back to <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>. Note that the <code>Secret</code> tab is automatically selected.</p>
-<p align="center"><img alt="action secrets and variables screen" src="../img/gh-actions-secrets.svg" width="700" /></p>
+<p>The steps to enter the <code>Secrets</code> and  <code>Variables</code> are identical whether you are configuring these in your <a href="#prepare-to-enter-secrets">organization account</a> or repeating this for every <abbr title="contains project files and each file's revision history">repository</abbr> in a <a href="#personal-account-prepare-to-enter-secrets">personal account</a>. Your screen should look like one of the graphics below. If not head back to <a href="#configure-secrets">Configure <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a>.</p>
+<p>If you are using a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization, tap on the green button for <code>New organization secret</code>:</p>
+<p align="center"><img alt="action secrets and variables screen" src="../img/gh-org-actions-secrets.svg" width="600" /></p>
+<p>If you are using a personal account, tap on the green button for <code>New repository secret</code>::</p>
+<p align="center"><img alt="action secrets and variables screen" src="../img/personal-new-secret.png" width="600" /></p>
 <ol>
-<li>Tap on the green button at the top right of your screen labeled <code>New repository secret</code> (highlighted above)<ul>
+<li>After you tap on the <code>New secret</code> button<ul>
 <li>A new screen appears as shown in the first graphic below</li>
 <li>Do not do anything until reading the sub-bullets, examining the graphics, and proceeding to the next section where each <code>Secret</code> name is provided for you to copy and paste<ul>
 <li>Under <code>Name *</code>, click on <code>YOUR_SECRET_NAME</code> and paste one of the 6 secret names, as directed in <a href="#enter-each-secret">Enter Each Secret</a></li>
@@ -3890,7 +3893,7 @@
 <li>If <code>TEAMID</code> is incorrect, the initial <code>Actions</code> will succeed but <code>Build Loop</code> will fail and you will have some clean-up to do</li>
 </ul>
 </li>
-</ul>
+<li>
 <p>You can copy the names of the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> by hovering to the right of each word below until you see the copy button (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg></span>). Click on the button to copy the <code>Secret</code> name and paste it into <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> where you see <code>YOUR_SECRET_NAME</code>. This avoids spelling errors.
 <div class="copy highlight"><pre><span></span><code>TEAMID
 </code></pre></div>
@@ -3904,21 +3907,26 @@
 </code></pre></div>
 <div class="copy highlight"><pre><span></span><code>MATCH_PASSWORD
 </code></pre></div></p>
-<ul>
-<li>For the <code>FASTLANE_KEY</code> value, copy the entire contents from<br><code>-----BEGIN PRIVATE KEY-----</code><br> through<br><code>-----END PRIVATE KEY-----</code><br></li>
+</li>
+<li>
+<p>For the <code>FASTLANE_KEY</code> value, copy the entire contents from<br><code>-----BEGIN PRIVATE KEY-----</code><br> through<br><code>-----END PRIVATE KEY-----</code><br></p>
+</li>
 <li>For <code>MATCH_PASSWORD</code> value - if you did not already make up a password and save it with your other <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, do it now<ul>
 <li>The <code>MATCH_PASSWORD</code> must be the same for any <abbr title="contains project files and each file's revision history">repository</abbr> using this method (<a href="../other-apps/" target="_blank">Other Apps</a>)</li>
 </ul>
 </li>
 </ul>
-<p>Once all six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> have been added to your <code>LoopWorkspace</code>, your screen should look similar to the graphic below.</p>
+<p>Once you add all six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, your screen should look similar to the one of the two examples in the graphic below.</p>
+<blockquote>
+<p>An organization account (top half of graphic) has an column for Visibility which is not seen in a personal account (bottom half of the graphic). The default setting for visibility is <code>Public repositories</code>. If yours says anything else, you should update the visibility by tapping on the pencil icon.</p>
+</blockquote>
 <ul>
 <li>Check that all of your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are spelled correctly</li>
-<li>If one is misspelled, delete it and add a <code>New repository secret</code> with the correct name</li>
+<li>If one is misspelled, delete it and add a <code>New secret</code> with the correct name</li>
 </ul>
-<p align="center"><img alt="all secrets entered" src="../img/gh-done-adding-secrets.png" width="700" /></p>
+<p align="center"><img alt="all secrets entered" src="../img/gh-done-adding-secrets.svg" width="600" /></p>
 <h3 id="add-variable">Add Variable<a class="headerlink" href="#add-variable" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This is a new step. It will be used when <code>Loop 3.6.0</code> is released. This enables automatic generation and renewal of the certificates needed to build your app.</p>
+<p>This is a new step. It will be used when <code>Loop 3.6.0</code> is released to provide automatic renewal of your certificates, which expire once per year.</p>
 <ol>
 <li>While in the same screen where you enter the <code>Secrets</code>, click on the <code>Variables</code> tab to the right of the <code>Secrets</code> tab:</li>
 <li>Select new variable and give it the name the <code>ENABLE_NUKE_CERTS</code> and enter <code>true</code> as the value</li>
@@ -3929,6 +3937,7 @@
 <ul>
 <li>When <code>Loop 3.6.0</code> is released, certificates will be automatically updated if you have configured this <code>Variable</code></li>
 <li>After <code>Loop 3.6.0</code> is released, as long as your <em>Apple</em> developers license is valid and all agreements are signed: <strong>you can skip the steps to create or renew your certificates</strong>!</li>
+<li><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> v2.3.0 or newer makes use of this variable to automate certificate renewal</li>
 </ul>
 <p align="center"><img alt="enable nuke certs" src="../img/gh-nuke-certs.png" width="700" /></p>
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -3950,20 +3959,20 @@
 <li>WHAT??</li>
 <li>That's right - all the setup is done on the <em>Apple</em> side and you already did that</li>
 <li>If you succeesfully built with your private <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account, everything is already configured</li>
-<li>The one thing you might want to do is copy customizations from your private account <abbr title="a copy of code in a github repository other than the original">fork</abbr> to the organization <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>The one thing you might want to do is copy customizations from your personal account <abbr title="a copy of code in a github repository other than the original">fork</abbr> to the organization <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Return to your private <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account<ul>
-<li>Your choice: either delete the forks in your private account or at least disable the building from your private account</li>
+<li>Your choice: either delete the forks in your personal account or at least disable the building from your personal account</li>
 <li><a href="../other-apps/#disable-building-for-personal-github-account" target="_blank">Disable Building for Personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Account</a></li>
 </ul>
 </li>
 </ol>
 <p><strong>Important</strong></p>
 <blockquote>
-<p>Your personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account is still needed. The free organization points to your private account as a member. If you delete your personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account, you lose access to your organization account too.</p>
+<p>Your personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account is still needed. The free organization points to your personal account as a member. If you delete your personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account, you lose access to your organization account too.</p>
 </blockquote>
 <h2 id="already-have-loopworkspace">Already Have&nbsp;<span translate="no">LoopWorkspace</span>?<a class="headerlink" href="#already-have-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Some people may already have a copy (<code>fork</code>) of <code>LoopWorkspace</code>.</p>
@@ -4039,13 +4048,13 @@
         
         
           
-          <a href="../identifiers/" class="md-footer__link md-footer__link--next" aria-label="Next: Identifiers">
+          <a href="../identifiers/" class="md-footer__link md-footer__link--next" aria-label="Next: Prepare Identifiers">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Identifiers
+                Prepare Identifiers
               </div>
             </div>
             <div class="md-footer__button md-icon">

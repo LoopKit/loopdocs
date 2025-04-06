@@ -931,7 +931,7 @@
         
   
   <span class="md-ellipsis">
-    Identifiers
+    Prepare Identifiers
     
   </span>
   
@@ -954,6 +954,28 @@
   
   <span class="md-ellipsis">
     Prepare App
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../browser/tf-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prepare TestFlight Group
     
   </span>
   
@@ -998,28 +1020,6 @@
   
   <span class="md-ellipsis">
     Build the App
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../browser/tf-users/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    TestFlight Users
     
   </span>
   
@@ -3852,7 +3852,7 @@
 <p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> uses a model predictive control (<abbr title="model predictive control; the type of control algorithm used by Loop">MPC</abbr>) algorithm to maintain glucose in a correction range by predicting the contributions from four individual effects (insulin, carbohydrates, retrospective correction, and glucose momentum) at any time <em>t</em> to recommend temporary basal rate corrections and boluses.</p>
 <div class="arithmatex">\[ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] \]</div>
 <p>Note that the <a href="#glucose-momentum-effect">Momemtum</a> term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the <a href="#glucose-momentum-effect">Momemtum</a> section below).</p>
-<p>You can see the individual contributions of these effects by tapping on the glucose chart on <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main screen to view the  <a href="loop-3/displays-v3.md#predicted-glucose-chart" target="_blank">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></a>. <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> updates this glucose prediction every five minutes when a new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value has been received and the pump's status has been updated.</p>
+<p>You can see the individual contributions of these effects by tapping on the glucose chart on <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s main screen to view the  <a href="../../../loop-3/displays-v3/#predicted-glucose-chart" target="_blank">Predicted <abbr title="Display of measured and predicted glucose values">Glucose Chart</abbr></a>. <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> updates this glucose prediction every five minutes when a new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> value has been received and the pump's status has been updated.</p>
 <p>Just a note, this whole page is fairly technical. While perhaps not the most interesting topic for many readers, if you are seeking the detailed view of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> algorithm this discussion is quite useful. If you want a more surface understanding, the overview, bolus and temporary basal recommendations pages alone are probably sufficient.</p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Before we delve into each of the four individual effects, a general overview figure may be a helpful start. There are four effects summed together to produce <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s final predicted glucose curve. Each individual effect, along with their combined effect, is illustrated in the figure below.</p>
