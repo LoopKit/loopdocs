@@ -1,11 +1,14 @@
-## *TestFlight* Users Overview
+## *TestFlight* Overview
 
-There are two parts to this.
+There are two parts to this. Step 1 is only done one time. Step 2 is done for each new app.
 
-* A user must be registered under your [Your App Store Connect User List](#your-app-store-connect-user-list) before they can be added to a *TestFlight* internal test group for any app
+1. A user must be registered under your [Your App Store Connect User List](#your-app-store-connect-user-list) before they can be added to a *TestFlight* internal test group for any app
     * As a developer, you are already included as a user with the Role of Account Holder, Admin
-* Once the first build for a given app completes, you will be able to configure the [*TestFlight* Internal Testing Group](#configure-testflight-group-for-the-app) for that app
+    * You can skip this step for yourself and only need it to add another adult to your test group
+2. For each new app, you must also create a [*TestFlight* Internal Testing Group](#configure-testflight-group-for-the-app) for that app
     * You must add yourself to the *TestFlight* Internal Testing Group for each app
+
+Most builders can skip ahead to creating the [*TestFlight* Internal Testing Group](#configure-testflight-group-for-the-app).
 
 ## Your App Store Connect User List
 
@@ -59,4 +62,4 @@ First you need to add the email address(es) to your *App Store Connect* Access U
 
 ## Next Step
 
-It is now time to install your *Loop* app using the *TestFlight* app on the phone: [Install on Phone](phone-install.md).
+[Create Certificates](certs.md) for your app.

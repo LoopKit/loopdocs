@@ -200,9 +200,6 @@ Loop has guardrails for Therapy Settings.
 !!! tip "Experienced Loopers"
     The guardrails for each therapy setting used by Loop can be modified with [Code Customization](../version/code-custom-edits.md).
 
-!!! danger "mmol/L"
-    People using mmol/L should avoid the red (the min or max end points) glucose values for their settings. They sometimes cause a crash.
-
 The font color in the value picker has the following meaning:
 
 * **black**: value is within the range "recommended by Loop"

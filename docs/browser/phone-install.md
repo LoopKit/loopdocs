@@ -2,9 +2,9 @@
 
 **The *Loop* app must be built at least every 90 days when using a browser to build.** With version 3.4.0 and later, the build is automatic (once a month or with a new release). It is recommended you manually install the new build using *TestFlight* at your convenience.
 
-After you [Build the *Loop* App](../browser/build-yml.md#build-the-loop-app) with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
+After you [Build the *Loop* App](build-yml.md#build-the-loop-app){: target="_blank" } with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
 
-* If you later need to add an adult family member to your list, refer to [*TestFlight* Users Overview](../browser/tf-users.md#testflight-users-overview).
+* If you later need to add an adult family member to your list, refer to [*TestFlight* Overview](tf-users.md#testflight-overview){: target="_blank" }.
 
 * Children (under 13 in US, varies by country) cannot use *TestFlight* with their ID. When you use [*TestFlight* for a Child](#testflight-for-a-child), you will need to use your ID on their phone (not the whole phone - just the Media & Purchase portion), so send the *TestFlight* invitation to the email associated with your ID.
 
@@ -17,7 +17,7 @@ To install *TestFlight*, refer to the GIF below:
 * On the phone, open the App Store and Search for *TestFlight*
 * Install or Download to that phone *TestFlight*
     * Hint: On child's phone, do this while logged in as yourself for Media & Purchase
-    * Logging in as an adult is explained in [*TestFlight* for a Child](phone-install.md#testflight-for-a-child)
+    * Logging in as an adult is explained in [*TestFlight* for a Child](#testflight-for-a-child)
 
 ![search for and dowload TestFlight](img/testflight-app-store.gif){width="300"}
 {align="center"}

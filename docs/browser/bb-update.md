@@ -443,6 +443,8 @@ If your `Personal Access Token` has expired or has an expiration date, you can r
 !!! tip "Update new GH_PAT to <code>Secrets</code>"
     After you get your new token, immediately add it to your <code>Secrets</code> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run `Action 1. Validate Secrets` for each repository to make sure you did not make a mistake.
 
+    This might be a good time to [Switch to a GitHub Organization](prepare-fork.md#switch-to-a-github-organization){: target="_blank" }.
+
 You can regenerate your *GitHub* `Personal Access Token` at any time by clicking on the link below. (it will open in a new browser tab.)
 
 * [Link to access your *GitHub* Personal Access Token](https://github.com/settings/tokens){: target="_blank" }
@@ -478,17 +480,17 @@ The next step is to update GH_PAT in your <code>Secrets</code>. (If you build ot
 
 ### Update <code>Secrets</code>
 
-This example is for updating GH_PAT in the <code>Secrets</code> for your `repository`, but the same method can be applied when changing any of the <code>Secrets</code>.
+This example is for updating GH_PAT in the <code>Secrets</code> for your `repository`, but the same method can be applied when changing any of the <code>Secrets</code>. It uses a personal account, instead of an organization. So it shows changing the `Secret` for a specific repository and would need to be repeated for every repository you use. This might be a good time to [Switch to a GitHub Organization](prepare-fork.md#switch-to-a-github-organization){: target="_blank" }.
 
 Open the `repository` for which you will update <code>Secrets</code>. On the far right is a Settings selection. If you don't see Settings (if last item on row is Insights), then you are **not** on your `fork` or you need to sign in to your *GitHub* account. You should see `username/LoopWorkspace` with `forked` from `LoopKit/LoopWorkspace` underneath.
 
 Refer to the GIF for help. There are 3 frames.
 
-![screen showing repository secrets list](img/update-secret-gh-pat.gif){width="500"}
+![screen showing secrets list](img/update-secret-gh-pat.gif){width="500"}
 {align="center"}
 
 1. Tap on Settings, then scroll down until you see `Secrets and variables` on the left side and click on the drop down indicator to display `Actions`.
-1. Keep scrolling on the same screen, past the `Action secrets / New repository secret` row, until you see the list of your current <code>Secrets</code>. 
+1. Keep scrolling on the same screen, past the `Action secrets / New secret` row, until you see the list of your current <code>Secrets</code>.
 1. Click on the GH_PAT, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.
 
 Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the [How to Update or Rebuild](#how-to-update-or-rebuild) instructions to start a new build.

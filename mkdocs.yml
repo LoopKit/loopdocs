@@ -149,11 +149,11 @@ nav:
       - 'Introduction and Summary': browser/intro-summary.md
       - 'Collect Secrets': browser/secrets.md
       - 'Prepare Fork': browser/prepare-fork.md
-      - 'Identifiers': browser/identifiers.md
+      - 'Prepare Identifiers': browser/identifiers.md
       - 'Prepare App': browser/prepare-app.md
+      - 'Prepare TestFlight Group': browser/tf-users.md
       - 'Create Certificates': browser/certs.md
       - 'Build the App': browser/build-yml.md
-      - 'TestFlight Users': browser/tf-users.md
     - 'Install on Phone': browser/phone-install.md
     - 'Errors with Browser': browser/bb-errors.md
     - 'Update/Rebuild with Browser': browser/bb-update.md
