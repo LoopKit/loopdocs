@@ -18,7 +18,7 @@ This section is provides an overview of changes to dev compared to `Loop 3.4.4`.
 
 These changes in the build process only work when `dev` is your default branch. Once `Loop 3.6.0` is released, these changes will work with the `main` branch.
 
-Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
+Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](../browser/prepare-fork.md#add-variable){: target="_blank" }
 
 ### Loop Updates
 
@@ -101,7 +101,7 @@ To really understand what branches are, we should probably explain a little more
 
 Details that are different:
 
-* The way the code is organized has changed: see [LoopWorkspace](#loopworkspace)
+* The way the code is organized has changed: see [LoopWorkspace](loopworkspace.md){: target="_blank" }
 * The default branch name used to be `master` - but is now `main`
 * `carthage` is no longer used to determine which submodules (frameworks) are pulled in to build Loop (see [LoopWorkspace](#loopworkspace))
 

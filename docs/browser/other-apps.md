@@ -314,7 +314,7 @@ You need to configure a *TestFlight* Internal Testing Group for each app you bui
 * Then after each successful build of the app, group members will get a notification when the new build is transferred to *TestFlight* and is available for use
 * They open the *TestFlight* app on their phone to install the new build
 
-If you need detailed instruction, visit [Configure to Use Browser: *TestFlight* Users Overview](tf-users.md#testflight-users-overview){: target="_blank" }.
+If you need detailed instruction, visit [Configure to Use Browser: *TestFlight* Users Overview](tf-users.md#testflight-overview){: target="_blank" }.
 
 ## Create Certificates
 
