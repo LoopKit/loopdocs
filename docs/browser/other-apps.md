@@ -228,7 +228,7 @@ The `Edit Your App ID Configuration` screen will open.
     * Ensure the check box (under the `Capabilities` column) for `App Groups` is checked
     * Tap on the word `Edit` or `Configure`, whichever shows up
         * This opens the `App Group Assignment` screen
-        * Check the box by `LoopCaregiver` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopCaregiver` 
+        * Check the box by `LoopCaregiver` *App Group* that uses your `TEAMID` in `group.com.TEAMID.loopkit.LoopCaregiver`
         * If the box by `Loop App Group` is checked, you should uncheck it
         * Your screen should be similar to the graphic below
         * If you made any changes, tap `Continue`, otherwise, tap `Cancel`
@@ -265,7 +265,7 @@ The `Edit Your App ID Configuration` screen will open.
 
 You will be following the directions below to create an App in App Store Connect if you don't already have one.
 
-This requires you to provide some information. Examine the table below for the bundle ID associated with your app. 
+This requires you to provide some information. Examine the table below for the bundle ID associated with your app.
 
 | App Name | Bundle ID |
 | --- | --- |
@@ -274,7 +274,7 @@ This requires you to provide some information. Examine the table below for the b
 
 > If you build from a second or third `repository` for `LoopFollow`, the Bundle ID will have `.Second` or `.Third` at the end.
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed. 
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
 
 1. If this App already exists, you can continue to [Create Certificates](#create-certificates)
 1. Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below
@@ -300,11 +300,15 @@ This requires you to provide some information. Examine the table below for the b
 
 1. Click Create but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
-You are done with the create app step. You will use this same browser location to complete the next step. Tap on the *TestFlight* tab at the top of the page.
+You are done with the create app step. 
+
+**You will use this same browser location to complete the next step. Tap on the *TestFlight* tab at the top of the page.**
 
 ## Add Users to *TestFlight* for App
 
-You need to configure a *TestFlight* Internal Testing Group for each app you build and invite the users (including yourself). 
+> If you are not already on your app page because you just created it, use this link to get there: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }. Find your app and click on it and then select the *TestFlight* tab at the top of the page.
+
+You need to configure a *TestFlight* Internal Testing Group for each app you build and invite the users (including yourself).
 
 * Each person added to the Internal Testing Group gets an invitation to join the group for this app
 * Then after each successful build of the app, group members will get a notification when the new build is transferred to *TestFlight* and is available for use
