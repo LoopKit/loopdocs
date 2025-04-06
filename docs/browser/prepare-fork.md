@@ -28,8 +28,8 @@
         * If you did not set up a free organization, `my-name` will be automatically filled in as the owner (`Owner`)
     * If you already have a fork, you should not proceed, see [Already Have a LoopWorkspace](#already-have-loopworkspace)
     * The repository name is already filled in
-        * Do not rename the repository to something else
-        * It needs to match the original repository name or automatic building will not work
+        * **Do not rename the repository to something else**
+        * It needs to **match the original repository name** or **automatic building will not work**
     * Leave the selection that says "`Copy the main branch only`" checked
     * Click on the green `Create fork` button
 
