@@ -1204,6 +1204,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#automatic-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Certificates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automatic Certificates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificates-and-match-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Certificates and Match-Secrets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annual-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annual Renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-certificate-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Certificate Renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source-app-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open-Source App Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modify-automatic-building" class="md-nav__link">
     <span class="md-ellipsis">
       Modify Automatic Building
@@ -3580,6 +3640,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#automatic-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Certificates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automatic Certificates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificates-and-match-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Certificates and Match-Secrets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annual-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annual Renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-certificate-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Certificate Renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source-app-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open-Source App Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modify-automatic-building" class="md-nav__link">
     <span class="md-ellipsis">
       Modify Automatic Building
@@ -3701,6 +3821,101 @@
 <li>Leave the other branches alone unless a mentor directs you to take action</li>
 </ul>
 </div>
+<h2 id="automatic-certificates">Automatic Certificates<a class="headerlink" href="#automatic-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Coming soon with <code>Loop 3.6.0</code>. </p>
+<p>Already here with <code>LoopFollow 2.3.0</code> and some other Open-Source apps.</p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You must have the <code>ENABLE_NUKE_CERTS</code> variable set to <code>true</code> for your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization, or when using a personal account to build, add it to each <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<ul>
+<li>Refer to <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a></li>
+</ul>
+<h3 id="certificates-and-match-secrets">Certificates and <code>Match-Secrets</code><a class="headerlink" href="#certificates-and-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The Create Certificates action does the following:</p>
+<ul>
+<li>Reads existing signing credentials from your <code>Match-Secrets</code> private respository and confirms if they are valid</li>
+<li>OR</li>
+<li>Uses your <code>Distribution</code> <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> from <em>Apple</em> or creates a new one if one does not exist</li>
+<li>Securely stores, in  your <code>Match-Secrets</code> private <abbr title="contains project files and each file's revision history">repository</abbr>, signing credentials (like certificates and provisioning profiles from <em>Apple</em>) used for code signing for each Identifier in your app when you build</li>
+</ul>
+<h3 id="annual-renewal">Annual Renewal<a class="headerlink" href="#annual-renewal" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This happens once a year after <em>Apple</em> automatically expires your <code>Distribution</code> <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>.</p>
+<ul>
+<li>When the <em>Apple</em> <code>Distribution</code> certificate expires, the saved credentials in your <code>Match-Secrets</code> private <abbr title="contains project files and each file's revision history">repository</abbr> are invalid and need to be removed (<code><abbr title="clear signing credentials from your Match-Secrets repository">nuke</abbr></code>)</li>
+<li>You need a new <code>Distribution</code> <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> at <em>Apple</em></li>
+<li>You need to create new signing credentials for <code>Match-Secrets</code></li>
+</ul>
+<p>For the <code>Loop</code> app, up through version 3.4.4, you need to do this process manually.</p>
+<h3 id="automatic-certificate-renewal">Automatic <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Renewal<a class="headerlink" href="#automatic-certificate-renewal" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Some Open-Source apps, in particular <code>Trio</code> and <code>LoopFollow 2.3.0</code> already have this capability.</p>
+<ul>
+<li>
+<p>If your signing credentials for the app being built are invalid and <code>ENABLE_NUKE_CERTS</code> is <code>true</code>, then signing credentials will be cleared from your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>, a new <code>Distribution</code> certificate will be created at <em>Apple</em> and signing credentials for the current app will be generated and stored in <code>Match-Secrets</code>.</p>
+</li>
+<li>
+<p>Next app you build will need certificates created because all signing credentials were cleared out of your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr></p>
+<ul>
+<li>If that app is configured for automatic certificate renewal, you only need to run the <code>Build Action</code>; it detects no signing credentials are available and creates them</li>
+<li>If that app is not configured for automatic certificate renewal, you must first run the action  <code>Create Certificates</code> and then <code>Build</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="open-source-app-schedule">Open-Source App Schedule<a class="headerlink" href="#open-source-app-schedule" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Each Open-Source App has a schedule for when the automatic build happens. This determines when the automatic check for certificate status happens.</p>
+<p>The times are shifted to make sure only one Open-Source app performs a <code>nuke</code> process at one time. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Open-Source App</th>
+<th style="text-align: center;">AutoCerts?</th>
+<th style="text-align: right;">Wed Time</th>
+<th style="text-align: right;">1st of Month Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></td>
+<td style="text-align: center;"><code>dev</code> only</td>
+<td style="text-align: right;">09:00</td>
+<td style="text-align: right;">07:00</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
+<td style="text-align: center;">n</td>
+<td style="text-align: right;">13:00</td>
+<td style="text-align: right;">11:00</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
+<td style="text-align: center;">y</td>
+<td style="text-align: right;">12:00</td>
+<td style="text-align: right;">10:00</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span translate="no">LoopFollow_Second</span></td>
+<td style="text-align: center;">y</td>
+<td style="text-align: right;">12:20</td>
+<td style="text-align: right;">10:20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span translate="no">LoopFollow_Third</span></td>
+<td style="text-align: center;">y</td>
+<td style="text-align: right;">12:40</td>
+<td style="text-align: right;">10:40</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span translate="no">Trio</span></td>
+<td style="text-align: center;">y</td>
+<td style="text-align: right;">08:00</td>
+<td style="text-align: right;">06:00</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span translate="no">xDrip4iOS</span></td>
+<td style="text-align: center;">n</td>
+<td style="text-align: right;">16:00</td>
+<td style="text-align: right;">14:00</td>
+</tr>
+</tbody>
+</table>
 <h2 id="modify-automatic-building">Modify Automatic Building<a class="headerlink" href="#modify-automatic-building" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For someone using <a href="../build-dev-browser/">development code</a> for their own use, they could decide to choose when to update their <code>fork</code> to the most recent <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. They can still have the advantage of automatic building without automatic updates; in other words, they want a new build added to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> every month. There may be other configurations someone would choose. These options are available starting with <abbr title="Latest release with major updates">Loop 3</abbr>.3.0 (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and later.</p>
 <p>You can affect the default behavior:</p>

@@ -1245,21 +1245,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build the Loop App">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-from-32x-to-34" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update from 3.2.x to 3.4
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -3775,21 +3760,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build the Loop App">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#update-from-32x-to-34" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update from 3.2.x to 3.4
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -3918,9 +3888,10 @@
 <blockquote>
 <p>Regardless of build method, this is an <strong>update</strong> and will install over your existing app; your <strong>settings are maintained including your current <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump.</strong></p>
 </blockquote>
+<p><strong>For most, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is configured for automatic build, so you only need to come to this page if the automatic build failed.</strong></p>
 <details class="info" open="open">
 <summary>Time Estimate (click to open/close)</summary>
-<p>Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
+<p>Manually update and build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
 <ul>
 <li>5 min: Check <em>Apple</em> account status</li>
 <li>Check if you need to renew certificates (once a year only)</li>
@@ -3935,7 +3906,10 @@
 <p>Once a Year <a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></p>
 <ul>
 <li>5 min: Clear out expired certificates</li>
-<li>5 min: Generate new certificates</li>
+<li>5 min: Generate new certificates<blockquote>
+<p>When <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 is released, certificate renewal will be automatic once you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a></p>
+</blockquote>
+</li>
 </ul>
 <p>One Time: Complete the information for the Digital Service Act Compliance</p>
 <ul>
@@ -3948,7 +3922,6 @@
 <p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when you build with a browser - this is <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> requirement.</strong></p>
 <p>Most users will start at <a href="#how-to-update-or-rebuild">How to Update or Rebuild</a>:</p>
 <ul>
-<li>If currently using verion 3.2.3 or earlier, there are manual steps included to update to 3.4</li>
 <li>If currently using verion 3.4.0 or later, builds are automatic but you still need to do some actions:<ul>
 <li>Your <em>Apple Developer</em> account must be active</li>
 <li>All agreements must be signed for your <em>Apple Developer</em> account</li>
@@ -4041,6 +4014,7 @@
 <h2 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h2>
 <blockquote>
 <p>This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your <code>Distribution Certificate</code> expires. (Don't worry if you did not see the email.)</p>
+<p>If you have not added the <code>Variable</code> <code>ENABLE_NUKE_CERTS</code>, do it now. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>. Once <code>Loop 3.6.0</code> is released, your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is updated and you set up that variable, you can skip this step - it will be automatic.</p>
 </blockquote>
 <p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> are not affected when a certificate expires or is revoked.</strong></p>
 <ul>
@@ -4169,112 +4143,6 @@
 <blockquote>
 <p>This is Step 4 of 6 - this is always required.</p>
 </blockquote>
-<h3 id="update-from-32x-to-34">Update from 3.2.x to 3.4<a class="headerlink" href="#update-from-32x-to-34" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For the update from 3.2.x to 3.4, you must do more than "just" build. If you skip this step - the build will fail.</p>
-<ul>
-<li>The <code>Identifier</code> for the "<code>widget</code>" changed from "<code>SmallStatusWidget</code>" to the more descriptive "<code>LoopWidgetExtension</code>"</li>
-</ul>
-<blockquote>
-<p>If you built version 3.3.0 (the <code>dev branch</code> before release of version 3.4) or newer, you can skip ahead to <a href="#build-the-app">Build the App</a>.</p>
-</blockquote>
-<p>You will (1) run <a href="#add-identifiers"><code>Add Identifiers</code></a>, (2) <a href="#add-app-group-to-new-identifier">add the <code>App Group</code></a> to the new identifier, (3) run <a href="#create-certificates"><code>Create Certificates</code></a> and then (4) run <a href="#build-the-app"><code>Build Loop</code></a>.</p>
-<h4 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
-<ul>
-<li>Run the Action: <code>Add Identifier</code></li>
-<li>Wait for it to succeed</li>
-</ul>
-<details class="tip">
-<summary>Detailed instructions for <code>Add Identifier</code> (Click to open/close)</summary>
-<p>Refer to the graphic below for the numbered steps:</p>
-<ol>
-<li>Click on the <code>Actions</code> tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>On the left side, click on 2. <code>Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code></li>
-<li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically this is <code>main</code>)</li>
-</ul>
-</li>
-<li>
-<p>Tap the green button that says <code>Run workflow</code>.</p>
-<p align="center"><img alt="add identifiers using github actions" src="../img/action-02-add-identifiers.svg" width="700" /></p>
-</li>
-</ol>
-<p>The <code>Add Identifiers</code> &nbsp;<span class=notranslate>Action</span>&nbsp; should succeed or fail in a few minutes. Do not continue to the next step until this one succeeds.</p>
-<ul>
-<li>If you see the green check (<span class="twemoji passed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m3.78-9.72a.75.75 0 0 0-.018-1.042.75.75 0 0 0-1.042-.018L6.75 9.19 5.28 7.72a.75.75 0 0 0-1.042.018.75.75 0 0 0-.018 1.042l2 2a.75.75 0 0 0 1.06 0Z"/></svg></span>)  continue to the next section</li>
-<li>If you see the red <code>X</code> (<span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657M6.03 4.97a.75.75 0 0 0-1.042.018.75.75 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.75.75 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.75.75 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.75.75 0 0 0-.734.215L8 6.94Z"/></svg></span>):<ul>
-<li><a href="../bb-errors/#action-add-identifiers-errors" target="_blank">Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Errors</a> tells you what to search for in the file</li>
-<li>Resolve the error and repeat <code>Add Identifiers</code></li>
-</ul>
-</li>
-</ul>
-</details>
-<h4 id="add-app-group-to-new-identifier">Add <code>App Group</code> to New <code>Identifier</code><a class="headerlink" href="#add-app-group-to-new-identifier" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Open the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page.</p>
-<p>Click on the "<code>LoopWidgetExtension</code>" identifier to open the <code>Edit Your App ID Configuration</code> screen.</p>
-<table>
-<thead>
-<tr>
-<th><code>NAME</code></th>
-<th><code>IDENTIFIER</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Loop Widget Extension</code></td>
-<td><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
-</tr>
-</tbody>
-</table>
-<p>The graphic below has numbered steps that match these directions:</p>
-<ol>
-<li>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row and ensure the check box (under the <code>Capabilities column</code>) for <code>App Groups</code> is checked</li>
-<li>If the word <code>Configure</code> shows up, tap on it<ul>
-<li>This opens the <code>App Group Assignment</code> screen</li>
-<li>If it said <code>Edit</code> instead of <code>Configure</code> - you can click to confirm you have the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> but won't need to continue or save if it is correct</li>
-</ul>
-</li>
-<li>Check the box by <code>Loop App Group</code> that uses your <code>TEAMID</code> in <code>group.com.TEAMID.loopkit.LoopGroup</code><ul>
-<li>Note that if you previously built with <abbr title="program used to build an app">Xcode</abbr>, the name may be different, i.e., <code>XC group com TEAMID loopkit LoopGroup</code></li>
-</ul>
-</li>
-<li>Tap <code>Continue</code></li>
-<li>Tap <code>Save</code></li>
-</ol>
-<p align="center"><img alt="graphic showing selection of the correct App Group" src="../img/update-identifier-loop-3-4.png" width="700" /></p>
-<p>If you did not need to make changes, the <code>Save</code> button will not be active.</p>
-<ul>
-<li>Tap on the <code>&lt; All Identifiers</code> link at the top left</li>
-</ul>
-<p>The full list of <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> should be displayed again.</p>
-<div class="admonition note">
-<p class="admonition-title">Other <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></p>
-<p>All other identifiers should be already set up.</p>
-<ul>
-<li>If they are not, refer to <a href="../prepare-app/#add-app-group-to-identifiers" target="_blank">Configure to Use Browser: Add <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
-</ul>
-</div>
-<h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You must run the action <code>Create Certificates</code> again because the <code>Identifiers</code> were updated. Wait for this to succeed before trying to build.</p>
-<details class="tip" open="open">
-<summary>Detailed instructions (Click to open/close)</summary>
-<p>Refer to the graphic below for the numbered steps:</p>
-<ol>
-<li>Click on the "<code><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></code>" tab of your <code>LoopWorkspace</code> <abbr title="contains project files and each file's revision history">repository</abbr></li>
-<li>On the left side, click on "<code>Create Certificates</code>"</li>
-<li>On the right side, click "<code>Run Workflow</code>" to show a dropdown menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (typically <code>main</code>)</li>
-</ul>
-</li>
-<li>
-<p>Tap the green button that says "<code>Run workflow</code>".</p>
-<p align="center"><img alt="create certificates using github actions" src="../img/action-03-create-certs.svg" width="700" /></p>
-</li>
-<li>
-<p>Wait a minute or two for the action to finish</p>
-</li>
-</ol>
-</details>
 <h4 id="build-the-app">Build the App<a class="headerlink" href="#build-the-app" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Refer to graphic below as you follow the steps to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <ul>
@@ -4290,7 +4158,10 @@
 </ul>
 <p align="center"><img alt="graphic indicating how to build again" src="../img/github-build-actions-build-again.svg" width="700" /></p>
 <h4 id="what-if-the-build-fails">What if the Build Fails<a class="headerlink" href="#what-if-the-build-fails" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If a new release is announced at <a href="../../version/releases/#current-release" target="_blank">Current Release</a>, look to see if there are instructions about extra steps required with the release. (<a href="#update-from-32x-to-34">Updating from 3.2.3 to 3.4.x</a> requires extra steps described above.)</p>
+<p>If a new release is announced at <a href="../../version/releases/#current-release" target="_blank">Current Release</a>, look to see if there are instructions about extra steps required with the release. </p>
+<blockquote>
+<p>When <code>Loop 3.6.0</code> is released, if you customized your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you may need to discard your customization and manually sync your <code>fork</code>. Check out the <a href="#ahead-and-behind">Ahead and Behind</a> instructions.</p>
+</blockquote>
 <p>If you are using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, the update steps are the same, but review information on this page: <a href="../build-dev-browser/" target="_blank">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a>.</p>
 <p>Otherwise, head over to <a href="../bb-errors/">Errors with Browser</a>.</p>
 <h4 id="apple-email-to-ignore"><em>Apple</em> Email to Ignore<a class="headerlink" href="#apple-email-to-ignore" title="Anchor link to this Header on this Page">&para;</a></h4>
