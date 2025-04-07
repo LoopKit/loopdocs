@@ -59,7 +59,7 @@ You will return to this page after reviewing (but not doing) this step [Configur
     * Do you have more than one Looper, so you are using LoopFollow_Second or LoopFollow_Third?
     * The 3 LoopFollow repositories enable you to customize the name shown on your phone
 
-    In your *GitHub* repository, find the file named: `LoopFollowDisplayNameConfig.xcconfig`
+    After you `fork` your *LoopFollow* repository, find the file named: `LoopFollowDisplayNameConfig.xcconfig`
 
     * Open it in your browser
     * Follow the directions to change `display_name`
@@ -79,7 +79,7 @@ The two repositories below are only if you need to follow a second or third loop
 
 * All `repositories` in your *GitHub* organization use the organization <code>Secrets and Variables</code>
 * If you have not already completed [Add <code>Secrets</code> to your *GitHub* Organization](#add-secrets-to-your-github-organization), do it now
-* Skip ahead to [Validate <code>Secrets</code>](#validate-secrets)
+* Skip ahead to [Add Identifiers](#add-identifiers)
 
 ### Using a Personal *GitHub* Account
 
@@ -112,9 +112,9 @@ Open the text file in which you maintain a copy of your 6 <code>Secrets</code> s
     ![dialog for entering a new secret](img/repeat-secret-dialog.png){width="500"}
     {align="center"}
 
-Once all six <code>Secrets</code> are added, proceed to the first Action to validate your secrets.
-
 Be sure to [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to the repository as well as `Secrets` to enable automatic certificate creation.
+
+Once the <code>Secrets</code> and `Variable` are added, proceed to the first Action to validate your secrets.
 
 ## Validate <code>Secrets</code>
 
@@ -151,6 +151,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 Near the top middle of your Repository fork, click on the "Actions" tab.
 
+* If this is the first `Action` you run with this repository you'll be informed that `Workflows aren't being run on this forked repository`
+    * Tap on the green button that says: `I understand my workflows, go ahead and enable them`
 * The graphic below is an example from Loop, your screen will show your app and associated repository
 
 Refer to the graphic below for the numbered steps:
