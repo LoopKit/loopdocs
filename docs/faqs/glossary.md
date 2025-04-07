@@ -164,6 +164,8 @@ When Google Translate is selected:
 
 **<span translate="no">Nightscout</span>**&nbsp; (Nightscout): a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`
 
+**<span translate="no">nuke</span>**&nbsp; (nuke): clear signing credentials from your Match-Secrets repository
+
 **<span translate="no">Onboarding</span>**&nbsp; (Onboarding): familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
 
 **<span translate="no">Omnipod</span>**&nbsp; (Omnipod): Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.

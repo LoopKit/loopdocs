@@ -225,7 +225,7 @@ If you are someone who already has a lot of forks in your personal account and w
 
 1. Follow the steps to create your organization
     * [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }
-1. Add the `Secrets` and the `Variable` as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
+1. Add the `Secrets` and the `Variable` to your *GitHub* organization as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
 1. Fork all the repos you normally use, but this time, set your organization as the owner
 1. For each repository in your organization:
     * Tap on the Actions tab
