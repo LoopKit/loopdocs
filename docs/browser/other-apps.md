@@ -17,6 +17,8 @@ The same technique is used and the same six <code>Secrets</code> are used for ma
 
 If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
 
+> If you have not added the `Variable` `ENABLE_NUKE_CERTS`, do it now. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
+
 ### Multiple Copies of `LoopFollow`
 
 For the convenience of caregivers who use `LoopFollow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script){: target="_blank" }).
@@ -51,6 +53,18 @@ You will return to this page after reviewing (but not doing) this step [Configur
 |---|---|---|
 | <span translate="no">LoopCaregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver){: target="_blank" } | [LoopDocs: <span translate="no">LoopCaregiver</span>](../nightscout/loop-caregiver.md) |
 | <span translate="no">LoopFollow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow){: target="_blank" } | [<span translate="no">LoopFollow</span>](https://www.loopandlearn.org/loop-follow){: target="_blank" }|
+
+??? tips "LoopFollow Builders: Display Name (Click to Open/Close)"
+    * Would you like the name of your LoopFollow app to be personalized?
+    * Do you have more than one Looper, so you are using LoopFollow_Second or LoopFollow_Third?
+    * The 3 LoopFollow repositories enable you to customize the name shown on your phone
+
+    In your *GitHub* repository, find the file named: `LoopFollowDisplayNameConfig.xcconfig`
+
+    * Open it in your browser
+    * Follow the directions to change `display_name`
+        * "Save the file" means commit the change to your `main` branch
+        * It is recommended that you use LF_name, where name is the customized name - that way you can find it in an alphabetic list of apps
 
 The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that `LoopCaregiver` can follow multiple Loopers; you select the person inside the app.
 
@@ -99,6 +113,8 @@ Open the text file in which you maintain a copy of your 6 <code>Secrets</code> s
     {align="center"}
 
 Once all six <code>Secrets</code> are added, proceed to the first Action to validate your secrets.
+
+Be sure to [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to the repository as well as `Secrets` to enable automatic certificate creation.
 
 ## Validate <code>Secrets</code>
 
@@ -448,6 +464,7 @@ The directions below may be sufficient for some.
 * In the left pane, scroll down to find `Secrets and variables` and click on the dropdown symbol and choose `Actions`
 * At this point, tap on `New organization secret` and add your 6 secrets
 * Then tap on the `Variable` tab and enter your Variable
+    * For details on adding the variable, see [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
 
 ### Build with Organization
 
