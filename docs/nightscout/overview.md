@@ -69,7 +69,11 @@ The main dashboard (upper section) for *Nightscout* displays the time duration y
 
 ### SAGE, CAGE, BAGE
 
-The SAGE, CAGE, and BAGE *pills* are for Sensor Age, Cannula Age, and (pump) Battery Age. These optional *pills* track the time since your CGM sensor, Pump site, and Pump battery were last changed. You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes. When these items do not auto-upload, you can use the *Nightscout* Careportal to input the changes.
+The SAGE, CAGE, and BAGE *pills* are for Sensor Age, Cannula Age, and (pump) Battery Age. These optional *pills* track the time since your CGM sensor, Pump site, and Pump battery were last changed. You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes.
+
+> With the *Loop* app, the SAGE and CAGE entries should automatically be updated when you change a sensor or a cannula.
+
+If these items do not auto-upload, you can use the *Nightscout* Careportal to input the changes.
 
 ### Carbs
 

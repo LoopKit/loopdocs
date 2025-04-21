@@ -96,8 +96,6 @@ The line starting with `Stable` was previously used to indicate when code change
 * All customizations are currently identical for `main` and `dev`
 * Instructions for older versions of the customization are removed from this page.
 
-There are two customizations, see [Not Stable List](#not-stable-list) that require an update between version 3.2.3 and 3.4.x. If you use one of those customizations for the Browser Build method, you will be required to update it if you want to continue using that customization.
-
 ??? tip "More Information about `Stable` (Click to open/close)"
     Some customizations have not changed for a very long time (stable since 2.2.x days).
 
@@ -105,10 +103,7 @@ There are two customizations, see [Not Stable List](#not-stable-list) that requi
 
 #### Not Stable List
 
-This list indicates personalized customization that differ between 3.2.3 and 3.4.x:
-
-* Changed on 2024 Feb 19: 3.4.0: [Glucose Guardrails](#glucose-guardrails){: target="_blank" }
-* Changed on 2023 May 29: 3.4.0: [Adjust Future Carbs Time Interval](#adjust-future-carbs-time-interval){: target="_blank" }
+At the current time, all customizations are stable. It has been more than a year since the last code modification that required a customization change. So this section is empty.
 
 ## Custom Edits Required
 
