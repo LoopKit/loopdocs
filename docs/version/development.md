@@ -12,7 +12,9 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section is provides an overview of changes to dev compared to `Loop 3.4.4`.
+This section provides an overview of changes to `dev` compared to `Loop 3.4.4`. These will be included in the next release, planned as `Loop 3.6.0`. 
+
+In the meantime, the version number remains `3.5.0` in the `dev` branch.
 
 ### Add Automatic Certificate Generation and Renewal
 
@@ -20,11 +22,32 @@ These changes in the build process only work when `dev` is your default branch. 
 
 Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](../browser/prepare-fork.md#add-variable){: target="_blank" }
 
-### Loop Updates
+### Maintenance Updates
 
-Updates made to Loop or LoopKit submodules affect the operation of Loop.
+These maintenance changes do not affect the functioning of the *Loop* app but do enable continued build with current iOS, Xcode and macOS versions, as well as continued operation of the GitHub Actions (Browser Build) capability.
 
-No functional changes made at the current time.
+* LoopWorkspace PR 234: Modify GitHub action files to enable automatic renewal of certificates when they expire or are revoked (details were in the previous section)
+* LoopWorkspace PR 241, Loop PR 2303: Modify the way the Loop app is versioned - it is now updated in the LoopWorkspace repository instead of the Loop repository - this simplifies version releases
+* LoopWorkspace PR 243: Update GitHub action files to use fastlane 2.227.1 and Xcode 16.3
+
+### Feature Updates
+
+These are changes in reponse to feature requests (`Loop Issues`) that were implemented in the noted submodule. The index for that submodule in LoopWorkspace was subsequently updated to include the feature.
+
+| Loop Issue | Submodule Updated | PR in Submodule | Request | Modification |
+|:--|:--|:--|:--|:--|
+| 2168 | LoopKit | 557 | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
+
+### Bug Fixes
+
+These are fixes in reponse to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The index for that submodule in LoopWorkspace was subsequently updated to include the bug fix.
+
+| Loop Issue | Submodule Updated | PR in Submodule | Description |
+|:--|:--|:--|:--|
+| 2159 | Loop | 2163 | Glucose change graph 'predicted' effects are inconsistent at different times or between orientations |
+| 2196 | Loop | 2295 | Bolus progress can display a stale total delivery value (UI bug only) |
+| 2265 | G7SensorKit | 34 | No G7 CGM Updates - Loop Failure |
+| 2291 | G7SensorKit | 35 | Backfill from G7 Created Bad Data |
 
 ### OmniBLE and OmniKit Updates
 
