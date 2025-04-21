@@ -69,7 +69,7 @@ The `alive` branch you need is created automatically when you run the `Build Loo
 
 Coming soon with `Loop 3.6.0`. 
 
-Already here with `LoopFollow 2.3.0` and some other Open-Source apps.
+Already here with `LoopCaregiver`, `LoopFollow` and some other Open-Source apps.
 
 ### Requirements
 
@@ -77,28 +77,20 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
 
 * Refer to [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
 
-### Certificates and `Match-Secrets`
+??? question "Do you want to know more? (Click to open/close)"
+    **Annual Renewal**
 
-The Create Certificates action does the following:
+    This happens once a year after *Apple* automatically expires your `Distribution` Certificate.
 
-* Reads existing signing credentials from your `Match-Secrets` private respository and confirms if they are valid
-* OR
-* Uses your `Distribution` Certificate from *Apple* or creates a new one if one does not exist
-* Securely stores, in  your `Match-Secrets` private repository, signing credentials (like certificates and provisioning profiles from *Apple*) used for code signing for each Identifier in your app when you build
+    * When the *Apple* `Distribution` certificate expires, the saved credentials in your `Match-Secrets` private repository are invalid and need to be removed (<code>nuke</code>)
+    * You need a new `Distribution` Certificate at *Apple*
+    * You need to create new signing credentials for `Match-Secrets`
 
-### Annual Renewal
-
-This happens once a year after *Apple* automatically expires your `Distribution` Certificate.
-
-* When the *Apple* `Distribution` certificate expires, the saved credentials in your `Match-Secrets` private repository are invalid and need to be removed (<code>nuke</code>)
-* You need a new `Distribution` Certificate at *Apple*
-* You need to create new signing credentials for `Match-Secrets`
-
-For the `Loop` app, up through version 3.4.4, you need to do this process manually.
+    For the `Loop` app, up through version 3.4.4, you must to do this [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } process manually. Once version 3.6.0 is release, it will be automatic.
 
 ### Automatic Certificate Renewal
 
-Some Open-Source apps, in particular `Trio` and `LoopFollow 2.3.0` already have this capability.
+Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` already have this capability.
 
 * If your signing credentials for the app being built are invalid and `ENABLE_NUKE_CERTS` is `true`, then signing credentials will be cleared from your `Match-Secrets` repository, a new `Distribution` certificate will be created at *Apple* and signing credentials for the current app will be generated and stored in `Match-Secrets`.
 
@@ -112,14 +104,14 @@ Each Open-Source App has a schedule for when the automatic build happens. This d
 
 The times are shifted to make sure only one Open-Source app performs a `nuke` process at one time. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
 
-| Open-Source App | AutoCerts? | Wed Time | 1st of Month Time |
-|:--|:-:|--:|--:|
+| Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
+|:--|:-:|:-:|:-:|
 | <span translate="no">Loop</span> | `dev` only | 09:00 | 07:00 |
-| <span translate="no">LoopCaregiver</span> | n | 13:00 | 11:00 |
-| <span translate="no">LoopFollow</span> | y | 12:00 | 10:00 |
-| <span translate="no">LoopFollow_Second</span> | y | 12:20 | 10:20 |
-| <span translate="no">LoopFollow_Third</span> | y | 12:40 | 10:40 |
-| <span translate="no">Trio</span> | y | 08:00 | 06:00 |
+| <span translate="no">LoopCaregiver</span> | &#x2705; | 13:00 | 11:00 |
+| <span translate="no">LoopFollow</span> | &#x2705; | 12:00 | 10:00 |
+| <span translate="no">LoopFollow_Second</span> | &#x2705; | 12:20 | 10:20 |
+| <span translate="no">LoopFollow_Third</span> | &#x2705; | 12:40 | 10:40 |
+| <span translate="no">Trio</span> | &#x2705; | 08:00 | 06:00 |
 | <span translate="no">xDrip4iOS</span> | n | 16:00 | 14:00 |
 
 
