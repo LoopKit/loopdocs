@@ -21,7 +21,7 @@ As shown in the GIF below:
 
 * Frame 1: This is what the Xcode screen looks the very first time it is opened after a fresh download
     * You need to click on the indicated Loop folder icon two times
-* Frame 2: After the 2 clicks, the middle pane of the Xcode window should be similar (for Loop 3.2.x and newer, the top middle bar will show LoopWorkspace, not Loop)
+* Frame 2: After the 2 clicks, the middle pane of the Xcode window should be similar (except you will see LoopWorkspace, not Loop)
 
 ![initial xcode display, click on loop to populate middle pane](img/build-229-01.gif){width="750"}
 {align="center"}
@@ -31,13 +31,13 @@ As shown in the GIF below:
 
 If this is the **First Time** your phone or watch has been connected to Xcode, you will need to tell the phone and watch to "Trust this Computer".
 
-The GIF (not updated for Loop 3.2.x) below shows:
+The GIF below shows:
 
 * Frame 1: Same as end of previous GIF
     * There's a red rectangle around the dropdown menus
-    * The menu on the left says "LoopWorkspace" for 3.2.x and newer
+    * The menu on the left says "LoopWorkspace"  (GIF is from an older version)
 * Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle
-    * Ignore Frame 2 and 3 for Loop 3.2.x and newer which already shows LoopWorkspace
+    * Ignore Frame 2 and 3 bec already shows LoopWorkspace
     * You can see Loop has a check mark beside it
     * Loop (Workspace) is one line below
     * Select Loop (Workspace)

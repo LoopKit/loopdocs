@@ -81,7 +81,7 @@ Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="
     * Do not get confused later: LoopKit is both a username and a Module name
     * Refer to the [Module Table](#module-table) when directed
 
-With the release of 3.4.x, the customizations for `main` and `dev` are the same. There are 2 customizations that require an update when moving from 3.2.3 to 3.4.x.
+For versions 3.4.x and newer, the customizations for `main` and `dev` are the same.
 
 * For more information, refer to [Not Stable List](../version/code-custom-edits.md#not-stable-list){: target="_blank" }
     * Glucose Guardrails
@@ -358,8 +358,6 @@ Once you prepare the commands, then you will edit the build_loop.yml file of you
     If your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing <code>fork</code> and make a new one. See [Already Have&nbsp;<span translate="no">LoopWorkspace</span>?](prepare-fork.md#already-have-loopworkspace){: target="_blank" }.
 
     * Do not use any other location to create your <code>fork</code>
-    * You may have used a different location for Loop 3.2.2
-    * This is **not** supported for Loop 3.2.3 or later
 
 For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the&nbsp;`curl`&nbsp;statement pointing to the SHA-1 that has the customization.
 
@@ -396,34 +394,6 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 * Click on the pencil (so you can edit this file)
 * If you are building version 3.4
     * Skip ahead to [Add Personal Customizations to build_loop.yml](#add-personal-customizations-to-build_loopyml)
-
-??? abstract "Older versions (Click to open/close)"
-    * If you are building from an older version of main (version 3.2.3 or earlier), this is left here for your convenience - it will be removed over the next few months - please update soon
-        * Locate line 31, which is just above the words:
-            * `# Patch Fastlane Match to not print tables`
-        * Paste the contents of the block below so it comes before that section
-        * In the next section - you will need to modify the line number where you do the edits
-
-
-    ``` { .text .copy title="Paste into build_loop.yml" }
-        # Customize Loop: Download and apply patches
-        - name: Customize Loop
-            run: |
-
-            # For each patch, edit comment line (keep the #) then update curl (and remove the #)
-
-            # Submodule Loop patches:
-            # Loop: Filename: customization details
-            #curl https://github.com/my-name-org/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
-            
-            # Submodule LoopKit patches:
-            # LoopKit: Filename: customization details
-            #curl https://github.com/my-name-org/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
-            
-            # Submodule xxxxx patches: Follow prototype above
-
-
-    ```
 
 ### Add Personal Customizations to build_loop.yml
 

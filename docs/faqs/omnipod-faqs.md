@@ -82,8 +82,6 @@ There is more communication between the pod and the controller (your *Loop* phon
 
 * Set your correction range to be 10 to 20 mg/dL (0.5 to 1.1 mmol/L) instead of a single number
     * The number of commands will be reduced
-* An earlier release of *Loop*, version 3.0.0, pinged the pods more frequently to refresh status more quickly when the phone was unlocked and the *Loop* app was in the foreground
-    * This did cause more failures and was modified for version 3.2.x.
 * The pod state is updated every 3 minutes for DASH and every 5 minutes for Eros
 * If uncertain communications are detected such that the *Loop* app cannot determine if a dosing command sent to the pod was actually received, the app will try once a minute to get a response
     * The combination of Eros pods with a RileyLink device with poor signal leading to uncertain comms may cause excessive battery use and contribute to pod faults

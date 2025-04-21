@@ -7,9 +7,6 @@
     * With Loop 3.0 and later
         * The Recommended Bolus is provided AND the default for the Bolus is the recommended value
         * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
-    * With Loop 2.2.x
-        * The Recommended Bolus is provided but the default for the Bolus value is 0
-        * If the user taps on the Recommended Bolus row, the recommended amount is transferred to the Bolus row
 
 ## Meal Bolus
 

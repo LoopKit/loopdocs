@@ -92,7 +92,7 @@ Below the figure, the original, and in some cases, the modified code will be dis
 
 The line starting with `Stable` was previously used to indicate when code changes were sufficient to require a different customization. With the release of 3.4.x, all customizations show `Stable: Yes`. 
 
-* A few have an additional notation of when they were last changed; if you use these with browser build, you must update the customization going from 3.2.3 to 3.4.x
+* A few have an additional notation of when they were last changed
 * All customizations are currently identical for `main` and `dev`
 * Instructions for older versions of the customization are removed from this page.
 
@@ -102,12 +102,6 @@ There are two customizations, see [Not Stable List](#not-stable-list) that requi
     Some customizations have not changed for a very long time (stable since 2.2.x days).
 
     It was not until version 3.2.3 that we started adding a notation as to when the required customization code changed.
-
-    For those using the Browser Build method:
-
-    * If you had a customization working for 3.2.3 it will continue to work with 3.4.0 unless it is one listed in the [Not Stable List](#not-stable-list)
-    * However, because the `build_loop.yml` file is significantly different for version 3.4.x, you will need to save your "customization lines" from the `build_loop.yml` file in the 3.2.3 version of your `fork` and add them to a new location for the 3.4.x version of `build_loop.yml` in your `fork`
-    * If one of your personalized customizations is in the [Not Stable List](#not-stable-list) you will need to create a new version when upgrading from 3.2.x to 3.4.x [Custom Edits with Browser: Code Updates](../browser/edit-browser.md#code-updates){: target="_blank" }
 
 #### Not Stable List
 

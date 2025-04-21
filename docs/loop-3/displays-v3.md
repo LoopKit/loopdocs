@@ -172,8 +172,6 @@ From left to right, the icons are:
 
     If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in Open Loop mode (before you enable Closed Loop mode). And then come back again after a day or so of closed loop testing.
 
-    Experienced loopers need to read the detail on this page. There are important changes from Loop 2.2.x.
-
 The Heads-Up-Display, visible in portrait mode, shows the Glucose Status on the left, the Loop Status in the middle and the Pump Status on the right. Once a CGM and pump have been added to Loop, the Loop Status icon will update and ideally be similar to the graphic below.
 
 ![heads-up-display when loop is operating nominally](img/hud-closed.svg){width="300"}

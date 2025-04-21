@@ -78,7 +78,6 @@ Regardless of the build method, always check your *Apple* Developer Account stat
 
 ![Screenshot: Account - Apple Developer](../build/img/license.png)
 
-
 #### Updates with the Browser build method:
 
 Go to [Update/Rebuild with Browser](../browser/bb-update.md) and follow the instructions.
@@ -122,27 +121,11 @@ There is more detailed information about how the *Loop* app was built at the top
 
 ## When will my app expire?
 
-The information in the graphic below shows the Build Details included at the very beginning of a Loop Report (`Loop, Setting, Support, Issue Report`).
-
-Up through version 3.2.3, the Browser Build versions do not report the correct date in the [Expiration Alert](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }. The date reported is correct with Mac Build or later versions using the Broswer Build.
-
-![top of issue report showing Build Details](img/loop-version.svg){width="500"}
-
-* A Browser Build can be identified when you see `runner` in the `* sourceRoot` line in the graphic above
-    * If you add 90 days to the `* buildDateString`, that is approximately when the app expires
-    * The best method is to look in the *TestFlight* app because that tells you exactly how many days until expiration
-* A Mac Build expiration date can be read directly from the `* profileExpiration` line in the Build Details
-    * The `* sourceRoot` line will be recognizable as where on your computer the download is located
+The expiration date for the app is displayed at the bottom of the Loop Settings screen. See also  [Expiration Alert](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }.
 
 ## What if I change the branch or fork?
 
 Does not matter. Changing the branch and even the fork is an **update** action. Nothing about the information above changes with the following exception.
-
-**The exception to the rule is if you build `Loop 3` on your phone and want to return to `Loop 2.2.x` or any `FreeAPS fork`.**
-
-* In this case, the database storage is different between `Loop 3` and `Loop 2.2.x`
-* `Loop 3` can read the data stored by `Loop 2.2.x`, but the reverse is not true
-* If you are downgrading from `Loop 3` to `FreeAPS`, you need to first record settings, delete the old app and then build the desired app, enter your settings and add your pump (new pod required for Omnipod)
 
 ## How long does it take?
 

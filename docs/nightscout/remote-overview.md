@@ -6,7 +6,7 @@ Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go thr
 
 ### Remote Commanding Requirements:
 
-* &nbsp;_<span translate="no">Loop</span>_&nbsp;version 3.2.0 or newer
+* &nbsp;_<span translate="no">Loop</span>_&nbsp;version 3..0 or newer
     * version 3.0 works but is not recommended for other reasons
 * <span translate="no">Apple Push Notifications</span>&nbsp; (</span>&nbsp;APN</span>&nbsp;) created with the &nbsp;<span translate="no">Apple Developer ID</span>&nbsp; that built the&nbsp;_<span translate="no">Loop</span>_&nbsp;app
 * *Nightscout* version 14.2.6 or newer

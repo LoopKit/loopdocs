@@ -176,8 +176,6 @@ The DASH system has the newer, slimmer locked-android Personal Diabetes Manager 
 
 **A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
 
-`Loop 3.0` and later works with DASH pods. If your version of the *Loop* app is 2.2.9 or earlier, you cannot use DASH pods.
-
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}
 
