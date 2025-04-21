@@ -68,11 +68,6 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 ## <code>Add Identifiers</code>
 
-!!! warning "Update to Version 3.4"
-    The name and identifier for "`Small Status Widget`" was renamed to "`Loop Widget Extension`". If you previously built, you will need to run the Add Identifiers as directed on the [update page](bb-update.md#update-from-32x-to-34){: target="_blank" } to add the renamed Identifier and Create Certificates for it.
-
-    If you previously built the `dev` branch, you already have this identifier.
-
 ??? abstract "Section Summary (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "2. Add Identifiers".
