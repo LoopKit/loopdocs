@@ -7,13 +7,12 @@ When integrated with *Loop*, *Nightscout* provides monitoring of *Loop* activiti
 For caregivers, *Nightscout* enables remote monitoring and even the ability to issue remote commands through *Nightscout* when both *Loop* and *Nightscout* are properly configured. There are several pages starting at [*LoopDocs*: Remote Overview](remote-overview.md) that provide documentation on this feature. If you are a caregiver, this summary of remote capabilities may encourage you to look into *Nightscout*.
 
 !!! info "Remote Commands"
-    * *Loop 3*
-        * Overrides can be enabled and disabled
-        * Carbs can be entered
-        * Boluses can be commanded
-        * *LoopCaregiver* app (under development, iOS only) enables the following from the caregiver's phone
-            * monitor *Loop*
-            * issue remote commands for carbs, bolus, and overrides
+    * Overrides can be enabled and disabled
+    * Carbs can be entered
+    * Boluses can be commanded
+    * *LoopCaregiver* app (under development, iOS only) enables the following from the caregiver's phone
+        * monitor *Loop*
+        * issue remote commands for carbs, bolus, and overrides
 
     If you plan to use remote commanding with *Nightscout*, please read these links with additional information:
 

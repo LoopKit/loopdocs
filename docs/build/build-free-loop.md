@@ -39,9 +39,9 @@ The GIF below shows:
 * Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle
     * Ignore Frame 2 and 3 bec already shows LoopWorkspace
     * You can see Loop has a check mark beside it
-    * Loop (Workspace) is one line below
-    * Select Loop (Workspace)
-* Frame 3: Zoomed inset after selecting Loop (Workspace)
+    * LoopWorkspace is one line below
+    * Select LoopWorkspace
+* Frame 3: Zoomed inset after selecting LoopWorkspace
 * Frame 4: Desired result should show LoopWorkspace and your phone
 
 ![select loop workspace and confirm phone](img/build-229-02.gif){width="600"}

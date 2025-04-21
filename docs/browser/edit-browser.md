@@ -392,8 +392,6 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 * Find the folder .github/workflows and click on it
 * Find the file build_loop.yml and click on it
 * Click on the pencil (so you can edit this file)
-* If you are building version 3.4
-    * Skip ahead to [Add Personal Customizations to build_loop.yml](#add-personal-customizations-to-build_loopyml)
 
 ### Add Personal Customizations to build_loop.yml
 

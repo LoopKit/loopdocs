@@ -203,7 +203,7 @@ This error occurs during the `Build target WatchApp` or `Build target WatchApp E
 
 **Error Message:**
 
-_The run destination for name's phone is not valid for running the scheme "Loop (Workspace)"_
+_The run destination for name's phone is not valid for running the scheme "LoopWorkspace"_
 
 ![run destination not valid](img/xcode-error-phone-needs-unpair.svg){width="300"}
 {align=center}
@@ -585,5 +585,5 @@ If the watch app still fails to install properly, the next section should work.
 
 **Warning:** Make sure your watchOS is up to date with respect to your phone iOS. If not, you may need to update to be successful. On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.
 
-Don't forget to select Loop(Workspace) after building to the watch before trying to build to a phone.
+Don't forget to select LoopWorkspace after building to the watch before trying to build to a phone.
 
