@@ -220,11 +220,9 @@ The next section on the Pod screen reports:
 * Time at which pod was Activated
 * Time at which pod will Expire
 * Access to Current Pod Details
-* Access to Previous Pod Details (3.4.x and later)
+* Access to Previous Pod Details
 
-The graphic below shows version 3.2.3 and earlier on the left with version 3.4 and later on the right.
-
-![section of Pod Status screen with Pod Details](img/pod-status-details.svg){width="600"}
+![section of Pod Status screen with Pod Details](img/pod-status-details.svg){width="350"}
 {align="center"}
 
 
@@ -242,7 +240,7 @@ The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) i
 
 #### Previous Pod Details
 
-When you tap on the `Previous Pod Details` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use. If you are running version 3.2.3 or earlier, this row is at the very bottom of the Omnipod screen.
+When you tap on the `Previous Pod Details` row, a graphic similar to those shown below is displayed. This provides summary information about the pod before the one currently in use.
 
 If the previous pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.
 
@@ -382,7 +380,7 @@ Unlock your phone, open Loop, navigate to the Pod Status screen and use the slid
 
 The updates included with version 3.4.x make it easier to find the pod fault, should one occur.
 
-The fault will appear on the Omnipod screen and more details will be shown when you tap on Replace Pod to arrive at the Deactivate screen. You can grab a quick screenshot on the Deactivate screen if desired. If there was no pod fault, you will not notice a difference in the version 3.4.x display compared to version 3.2.3.
+The fault will appear on the Omnipod screen and more details will be shown when you tap on Replace Pod to arrive at the Deactivate screen. You can grab a quick screenshot on the Deactivate screen if desired.
 
 The fault information can still be found under [Previous Pod Details](#previous-pod-details) if you need to find it after you Deactivate the "screaming" pod.
 

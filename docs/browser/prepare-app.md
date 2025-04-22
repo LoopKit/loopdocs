@@ -20,7 +20,7 @@ Some people get confused on this page. Many of the links look similar but are ac
         * App Group: associates different identifiers so the app works correctly - you will do this step under your Apple Developer ID account.
         * App: associates a particular identier as the main Loop code - you will do this step under the App Connect site which is associated with your developer ID but is a different URL.
 
-> This should only be needed one time, unless the developers add or modify an identifier. This happened between version 3.2 and version 3.4.
+> This should only be needed one time.
 
 Some steps can be skipped if you previously built the *Loop* app with a *Mac* using *Xcode*.
 
@@ -109,8 +109,6 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 
 #### Table with Name and Identifier
 
-> One Identifier was changed after v3.2.3. (`Small Status Widget` is now `Loop Widget Extension`).
-
 | NAME | XCode version | IDENTIFIER |
 |:--|:--|:--|
 | `Loop` | `XC com TEAMID loopkit Loop`| `com.TEAMID.loopkit.Loop` |
@@ -119,7 +117,6 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 | `Loop Widget Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWidgetExtension` |
 | `WatchApp` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
-| **v3.2** `Small Status Widget` | XC Identifier | `com.TEAMID.loopkit.Loop.SmallStatusWidget`<br>No longer used, harmless to leave or to delete<br>Replaced with `Loop Widget Extension` |
 
 ### Add `App Group` to Identifiers
 

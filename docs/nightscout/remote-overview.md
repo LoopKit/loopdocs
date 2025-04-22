@@ -1,15 +1,15 @@
 ## Remote Caregivers
 
-With&nbsp;_<span translate="no">Loop</span>_&nbsp;3, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides, issuing remote bolus commands and adding remote carb entries. With&nbsp;_<span translate="no">Loop</span>_&nbsp;2, only overrides can be turned on or off remotely.
+With&nbsp;_<span translate="no">Loop</span>_&nbsp;3, a caregiver can provide remote commands to assist in diabetes care, including modifying overrides, issuing remote bolus commands and adding remote carb entries.
 
 Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go through their *Nightscout* site. For security, any command to deliver a bolus or add a carb entry requires a one-time-password (OTP) to be used with each remote command. These codes are unique to your combined&nbsp;_<span translate="no">Loop</span>_&nbsp;and *Nightscout* configuration. An authentication app needs to be installed on the device sending the remote boluses/carbs. The *LoopCaregiver* app can be used. It handles authentication requirements and offers a&nbsp;_<span translate="no">Loop</span>_&nbsp;-like user interface.
 
 ### Remote Commanding Requirements:
 
-* &nbsp;_<span translate="no">Loop</span>_&nbsp;version 3.2.0 or newer
+* &nbsp;_<span translate="no">Loop</span>_&nbsp;version 3..0 or newer
     * version 3.0 works but is not recommended for other reasons
 * <span translate="no">Apple Push Notifications</span>&nbsp; (</span>&nbsp;APN</span>&nbsp;) created with the &nbsp;<span translate="no">Apple Developer ID</span>&nbsp; that built the&nbsp;_<span translate="no">Loop</span>_&nbsp;app
-* *Nightscout* version 14.2.6 or newer
+* *Nightscout* version 14.2.6 or newer, but the released version 15.0.2 is recommended
     * Several configuration variables must be added
 * Ability to generate a One-Time-Password (OTP)
 

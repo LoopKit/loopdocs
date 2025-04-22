@@ -32,7 +32,7 @@ Take some time to familiarize yourself with these data options and choose your p
     * Many users of the mobile app like the note-taking ability
         * The mobile app also uploads *Apple HealthKit* data to *Tidepool* when the "Read from *Apple Health*" option is selected
         * If you are using the *Loop* app to upload to Tidepool, be sure to disable the "Read from *Apple Health*" option in the Mobile app
-    * With Version 3.2 of the *Loop* app, you can upload directly as a Service within the *Loop* app
+    * With Version 3.2 and newer of the *Loop* app, you can upload directly as a Service within the *Loop* app
         * If you use the mobile *Tidepool* app on your phone for note-taking, be sure to disable the read from Apple Health option in the mobile *Tidepool* app settings to avoid duplicate uploads
         * If you use the mobile *Tidepool* app on your phone for uploading only, then it is no longer needed when you upload directly to *Tidepool* as a Service within the *Loop* app
 * *Nightscout*:

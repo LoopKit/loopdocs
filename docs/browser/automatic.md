@@ -41,7 +41,7 @@ You start getting [Notifications](../operation/features/notifications.md#loop-ap
 
 The automatic update and build feature is embedded in the build_loop.yml code and uses the GitHub scheduling feature to trigger actions to run automatically.
 
-Some may have noticed one or more branches added to your repository that start with the name `alive`. Don't worry about these. They are automatically created to ensure GitHub will keep building your app automatically.
+One or more branches are added to your repository that start with the name `alive`. Don't worry about these. They are automatically created so GitHub will keep building your app automatically.
 
 * GitHub keeps track of repositories
 * If there is no activity in a given repository in 60 days, GitHub disables Actions
@@ -50,7 +50,7 @@ Some may have noticed one or more branches added to your repository that start w
 
 You may see branches called `alive`, `alive-dev` or `alive-main` in your repository.
 
-The `alive` branches are created and used to make sure at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process to work.
+The `alive` branches are there so at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process.
 
 The `alive` branches are only used for the keep-alive functions. Do not build using an `alive` branch. Most people will build using the default branch of `main`.
 
@@ -69,7 +69,7 @@ The `alive` branch you need is created automatically when you run the `Build Loo
 
 Coming soon with `Loop 3.6.0`. 
 
-Already here with `LoopFollow 2.3.0` and some other Open-Source apps.
+Already here with `LoopCaregiver`, `LoopFollow` and some other Open-Source apps.
 
 ### Requirements
 
@@ -77,32 +77,24 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
 
 * Refer to [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
 
-### Certificates and `Match-Secrets`
+??? question "Do you want to know more? (Click to open/close)"
+    **Annual Renewal**
 
-The Create Certificates action does the following:
+    Once a year, *Apple* automatically expires your `Distribution` Certificate.
 
-* Reads existing signing credentials from your `Match-Secrets` private respository and confirms if they are valid
-* OR
-* Uses your `Distribution` Certificate from *Apple* or creates a new one if one does not exist
-* Securely stores, in  your `Match-Secrets` private repository, signing credentials (like certificates and provisioning profiles from *Apple*) used for code signing for each Identifier in your app when you build
+    * When the *Apple* `Distribution` certificate expires, the saved credentials in your `Match-Secrets` private repository are invalid and need to be removed (<code>nuke</code>)
+    * You need a new `Distribution` Certificate at *Apple*
+    * You need to create new signing credentials for `Match-Secrets`
 
-### Annual Renewal
-
-This happens once a year after *Apple* automatically expires your `Distribution` Certificate.
-
-* When the *Apple* `Distribution` certificate expires, the saved credentials in your `Match-Secrets` private repository are invalid and need to be removed (<code>nuke</code>)
-* You need a new `Distribution` Certificate at *Apple*
-* You need to create new signing credentials for `Match-Secrets`
-
-For the `Loop` app, up through version 3.4.4, you need to do this process manually.
+    For the `Loop` app, up through version 3.4.4, you must to do this [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } process manually. Once version 3.6.0 is released, it will be automatic.
 
 ### Automatic Certificate Renewal
 
-Some Open-Source apps, in particular `Trio` and `LoopFollow 2.3.0` already have this capability.
+Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` already have this capability. It will be available in with the next release of the *Loop* app (3.6.0).
 
 * If your signing credentials for the app being built are invalid and `ENABLE_NUKE_CERTS` is `true`, then signing credentials will be cleared from your `Match-Secrets` repository, a new `Distribution` certificate will be created at *Apple* and signing credentials for the current app will be generated and stored in `Match-Secrets`.
 
-* Next app you build will need certificates created because all signing credentials were cleared out of your `Match-Secrets` repository
+* The next app you build using Browser Build, following a `nuke` action, will need certificates created because all signing credentials were cleared out of your `Match-Secrets` repository
     * If that app is configured for automatic certificate renewal, you only need to run the `Build Action`; it detects no signing credentials are available and creates them
     * If that app is not configured for automatic certificate renewal, you must first run the action  `Create Certificates` and then `Build`
 
@@ -110,16 +102,16 @@ Some Open-Source apps, in particular `Trio` and `LoopFollow 2.3.0` already have 
 
 Each Open-Source App has a schedule for when the automatic build happens. This determines when the automatic check for certificate status happens.
 
-The times are shifted to make sure only one Open-Source app performs a `nuke` process at one time. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
+The times are shifted to make sure only one Open-Source app performs a `nuke` action. Any other app building later that same day will just create new signing credentials; it will not need to `nuke` all credentials. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
 
-| Open-Source App | AutoCerts? | Wed Time | 1st of Month Time |
-|:--|:-:|--:|--:|
+| Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
+|:--|:-:|:-:|:-:|
 | <span translate="no">Loop</span> | `dev` only | 09:00 | 07:00 |
-| <span translate="no">LoopCaregiver</span> | n | 13:00 | 11:00 |
-| <span translate="no">LoopFollow</span> | y | 12:00 | 10:00 |
-| <span translate="no">LoopFollow_Second</span> | y | 12:20 | 10:20 |
-| <span translate="no">LoopFollow_Third</span> | y | 12:40 | 10:40 |
-| <span translate="no">Trio</span> | y | 08:00 | 06:00 |
+| <span translate="no">LoopCaregiver</span> | &#x2705; | 13:00 | 11:00 |
+| <span translate="no">LoopFollow</span> | &#x2705; | 12:00 | 10:00 |
+| <span translate="no">LoopFollow_Second</span> | &#x2705; | 12:20 | 10:20 |
+| <span translate="no">LoopFollow_Third</span> | &#x2705; | 12:40 | 10:40 |
+| <span translate="no">Trio</span> | &#x2705; | 08:00 | 06:00 |
 | <span translate="no">xDrip4iOS</span> | n | 16:00 | 14:00 |
 
 
@@ -150,7 +142,7 @@ This is an optional step. If you are happy with the automatic sync and update, y
     * If you want to only build when an update has been found:
         * either do not create the variable `SCHEDULED_SYNC` or set it to true
         * create the variable `SCHEDULED_BUILD` and set it to false
-        * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire requiring a manual build
+        * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire, requiring a manual build
         * During a time when updates are not happening frequently, this is not a good choice
 
     | <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |

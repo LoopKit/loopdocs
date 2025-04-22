@@ -21,31 +21,16 @@ As shown in the GIF below:
 
 * Frame 1: This is what the Xcode screen looks the very first time it is opened after a fresh download
     * You need to click on the indicated Loop folder icon two times
-* Frame 2: After the 2 clicks, the middle pane of the Xcode window should be similar (for Loop 3.2.x and newer, the top middle bar will show LoopWorkspace, not Loop)
+* Frame 2: After the 2 clicks, the middle pane of the Xcode window should be similar (except you will see LoopWorkspace, not Loop)
 
 ![initial xcode display, click on loop to populate middle pane](img/build-229-01.gif){width="750"}
 {align="center"}
 
-
 ### Select Your Phone
 
-If this is the **First Time** your phone or watch has been connected to Xcode, you will need to tell the phone and watch to "Trust this Computer".
+Select your phone in the dropdown in Xcode. Be sure to select your actual phone - not a phone simulator.
 
-The GIF (not updated for Loop 3.2.x) below shows:
-
-* Frame 1: Same as end of previous GIF
-    * There's a red rectangle around the dropdown menus
-    * The menu on the left says "LoopWorkspace" for 3.2.x and newer
-* Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle
-    * Ignore Frame 2 and 3 for Loop 3.2.x and newer which already shows LoopWorkspace
-    * You can see Loop has a check mark beside it
-    * Loop (Workspace) is one line below
-    * Select Loop (Workspace)
-* Frame 3: Zoomed inset after selecting Loop (Workspace)
-* Frame 4: Desired result should show LoopWorkspace and your phone
-
-![select loop workspace and confirm phone](img/build-229-02.gif){width="600"}
-{align="center"}
+* If this is the **First Time** your phone or watch has been connected to Xcode, you will need to tell the phone and watch to "Trust this Computer".
 
 ![img/your_device.png](img/your_device.png){width="650"}
 {align="center"}
@@ -106,7 +91,7 @@ This section is required if you are using the free account.
 Some features of Loop are not available with the Free option, so as you sign, you will need to remove features that are not supported.
 
 1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:
-    * **Loop Target:** Push Notifications; Siri and Time Sensitive Notifications
+    * **Loop Target:** Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading
     * **Watch App Extension Target:** Siri
 1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
     * Click on the filename in the left pane of Xcode and view it in the Xcode editor
@@ -116,7 +101,7 @@ Some features of Loop are not available with the Free option, so as you sign, yo
 
 Details about removing unsupported capabilities:
 
-- You must disable Push Notification, Siri and Time Sensitive Notifications
+- You must disable Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading
     * If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target
     * If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target
 - The Xcode error message starts with "Cannot create . . ." with a list of all the attributes not supported.
@@ -127,7 +112,9 @@ Details about removing unsupported capabilities:
 
 ### End of Free Account Steps
 
-Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are **Loop**, **Loop Status Extension**, **Watch App**, and **WatchApp Extension** for Loop 2.2.x, with the addition of **Loop Intent Extension** for Loop 3.
+Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are **Loop**, **Loop Status Extension**, **Watch App**, **WatchApp Extension**, **Loop Widget Extension** and **Loop Intent Extension**.
+
+> The graphic below is from an older version of `Loop`. You must sign all 6 targets listed above.
 
 ![Xcode window showing the targets that must be signed](img/success.png){width="750"}
 {align="center"}

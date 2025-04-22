@@ -4,9 +4,7 @@ The *LoopCaregiver* app is under development to make remote commands easier to i
 
 ### Minimum Requirements:
 
-* _<span translate="no">Loop</span>_&nbsp;version 3.2.0 or newer
-    * version 3.0 works but is not recommended for other reasons
-    * version 3.3 and higher offers improved feedback to the *LoopCaregiver* user
+* _<span translate="no">Loop</span>_&nbsp;version 3.3 or newer
 * iOS 16 or newer for *LoopCaregiver* phone
 * *Nightscout* version 14.2.6
 

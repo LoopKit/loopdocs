@@ -171,18 +171,6 @@ If you happen to wear a *Dexcom* G6 and G7 sensor at the same time, then startin
 
     If you transition from G6 to G7 (or alternate back and forth), be sure that at least the app you are currently using has permission to write to health. (I inadvertently forgot to turn on health permission for G7. By the time I noticed, I had a gap of several days in my *Apple Health* storage of glucose values.)
 
-#### *Libre*
-
-There are several choices for reading *Libre* sensors.
-
-With `Loop dev` (will be `Loop 3.4.x` after release), [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" } is integrated with the `Loop` app.
-
-The frequent updates (1-minute glucose data) provided by *Libre* did cause some issues with released versions (`Loop 3.0` and `Loop 3.2.x` with customizations that use various third-party apps to read the *Libre*). These were fixed initially by modifying the third-party apps to limit how frequently they supplied glucose data.
-
-With `Loop dev` (will be `Loop 3.4.x` after release), the Loop app only initiates a closed-loop cycle automatically following a new glucose value if it has been more than 4.2 minutes since the last one.
-
-`Loop 3.0` and `Loop 3.2.x` versions do not have that limitation on how frequently Loop responds to a new glucose reading. There is a [Customization](https://www.loopandlearn.org/custom-code#loop-cycle-time){: target="_blank" } that incorporates the 4.2 minute interval check which can be applied to Loop 3.2.2.
-
 ##  How Do I Change Glucose Units?
 
 The glucose units (mg/dL or mmol/L) *Loop* uses match what is in *Apple* Health. Once you connect a device that reports glucose to the phone, make sure the units match the device. Note - you can change units for *Dexcom* Share and it translates units for you - not sure about other devices.

@@ -202,9 +202,9 @@ With Loop 3, the "old" method still works, but there is a new method for enterin
         * Add the carb entry and save the carbs without bolusing
 
 1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
-    * **Event History** (default) is similar to Loop 2.2.x; however, the event history from a prior pod is not displayed once it is deactivated
-    * **Reservoir** is similar to Loop 2.2.x; however, the reservoir value from a prior pod is not displayed once it is deactivated
-    * **Non-Pump Insulin** is a new feature with Loop 3
+    * **Event History** (default) lists delivery events from the Pump (does not include times when pump is returned to Scheduled Basal Rates)
+    * **Reservoir** This is the reservoir level reported by the attached pump. Pods are treated differently from other pumps because the reservoir does not begin to report until the pod has reached 50 U or below. You may see the previous pod reservoir levels following a pod change.
+    * **Non-Pump Insulin** injections can be recorded or edited here
 
 2. Select the `Non-Pump Insulin` tab to bring up the graphic shown below
     * Tap on the &plus; sign (green solid lines)

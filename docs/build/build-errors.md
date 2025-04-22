@@ -29,9 +29,6 @@ This can happen sometimes. You just need to force quit Xcode. Sometimes rebootin
 
 Before you start trying to resolve your red errors, start with the most obvious things that can cause a red error message:
 
-1. **For older builds, before 3.2.0, you had to select Loop(WorkSpace)** The first time you build after downloading new code, you had to manually select Loop (Workspace) instead of Loop in Xcode.
-    * Starting with Loop 3.2.0 and newer versions, the target name and xcworkspace file names are now automatically LoopWorkspace - no special action needed when building.
-
 1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
 1. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account){: target="_blank" } to check if there's a new license agreement.
@@ -85,24 +82,11 @@ If the build fails again, look through the list below and see if you can match y
 - WE CANNOT HELP without version numbers and [screenshots](#screenshots)
 - Do not take pictures of your computer screen with your phone, use [screenshots](#screenshots)
 
-## New with Xcode 15
+## Download Simulators
 
-### Cycle inside Loop
+You will be asked if you want to download & install simulators.   ==Make sure both `iOS` and `watchOS` simulators are selected.==
 
-If you build any older version of Loop with Xcode 15, you will see this error: `Cycle inside Loop: building could produce unreliable results`.
-
-Solution: Build Loop 3.2.3 or later
-
-!!! tips "What about other forks"
-    Other forks are not being maintained.
-
-    If you are using FreeAPS or Loop with Patches (from the loopnlearn GitHub username), it is time to switch to released code.
-
-## New with Xcode 14
-
-This may change, but for now, the watchOS simulator is not automatically included with the Xcode 14.x download and install. Some version of the watchOS simulator is required to build Loop, independent of whether you use a watch.
-
-You will be asked if you want to download & install.   ==Make sure `watchOS` is selected.==
+* The graphic below is from Xcode 14. For Xcode 16, you must select iOS too
 
 ![query about watchOS simulators](img/xcode-14-watchos.svg){width="500"}
 {align=center}
@@ -219,7 +203,7 @@ This error occurs during the `Build target WatchApp` or `Build target WatchApp E
 
 **Error Message:**
 
-_The run destination for name's phone is not valid for running the scheme "Loop (Workspace)"_
+_The run destination for name's phone is not valid for running the scheme "LoopWorkspace"_
 
 ![run destination not valid](img/xcode-error-phone-needs-unpair.svg){width="300"}
 {align=center}
@@ -413,22 +397,6 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 - (Optional) Clear the Build Error (Menu at top of Xcode: Select Product->Clean Build Folder)
 - Press build
 
-
-### Carthage Error
-
-For older builds only. With Loop 3.2.0 and newer, the default selection is already LoopWorkspace.
-
-You should not see carthage errors, but if you do, you probably did not select Loop (Workspace) at the top of the Xcode window. Review the graphic from the [Prepare to Build](build-app.md#initial-xcode-screens) Instructions.
-
-Or maybe you are trying to build using an old download; some older versions did require carthage. Best practice is to download new code.
-
-**Error Message:**
-
-!!! warning "Wrong Version of Carthage Error"
-    Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo: one of -create, -thin <arch_type>, -extract <arch_type>, -remove <arch_type>, -replace <arch_type> <file_name>, -verify_arch <arch_type> … , -archs, -info, or -detailed_info must be specified.
-
-**Solution:** Download fresh code with [Build Select Script](build-app.md#build-select-script).
-
 ### Could Not Locate Device Support Files
 
 **Error Message:** "Could not locate device support files." That message is telling you that your iOS on the Loop phone requires you to get a newer version of Xcode to be able to build Loop onto that phone.
@@ -606,7 +574,7 @@ If the watch app still fails to install properly, the next section should work.
 
 **Error:** Tapping the Loop app icon on the watch results in flash of the watch screen and then return to the Loop app icon or a brief display of the watch interface and then return to the Loop app icon.
 
-**Solution:** Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally choose Loop (Workspace) (with Loop 3.2.x and newer, LoopWorkspace is the default), choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..
+**Solution:** Plug in your iPhone, with the watch already paired, into the computer and start Xcode with your current build folder.  In Xcode, from the list of schemes where you normally see `LoopWorkspace`, choose the WatchApp scheme (near the bottom of the list) and then select your watch (not a simulator) from the device list, see the graphics below. Press the play button to build and deploy the WatchApp directly to your watch. It will launch correctly and will not crash when you subsequently launch it from the complication or your watch Home Screen..
 
 ![xcode screen display the selection for direct build of watchapp](img/watchapp-direct-build-from-xcode.svg){width="650"}
 {align="center"}
@@ -617,5 +585,5 @@ If the watch app still fails to install properly, the next section should work.
 
 **Warning:** Make sure your watchOS is up to date with respect to your phone iOS. If not, you may need to update to be successful. On pressing clicking build/play, some people report receiving an error stating “iPhone/Apple Watch are ineligible because the OS on the watch doesn’t support WatchKit App Products” or similar wording. This is a known issue with some Mac USB ports. Fixes in preference order are: 1) swap which USB port is in use;  2) unplug and replug the USB cable from both the iPhone and Mac; or 3) as a last resort, reboot the iPhone and Mac.
 
-Don't forget to select Loop(Workspace) after building to the watch before trying to build to a phone.
+Don't forget to select LoopWorkspace after building to the watch before trying to build to a phone.
 

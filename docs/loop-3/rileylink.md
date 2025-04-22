@@ -23,10 +23,8 @@ Tapping on a name with a green slider takes you to the RileyLink Status and Comm
 
 The name at the top center is whatever you [named your RileyLink compatible device](#personalize-device). The RileyLink screen is the same regardless of the pump you are using.
 
-* The three graphics below match the display for Loop 3. 
-* For Loop 2.2.x - the displays are almost identical when the patch mentioned below the graphic is applied.
+* The three graphics below match the display for Loop 3.
 * The [firmware](../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. 
-
 
 ![example rileylink screens for riley, ema, orange for loop 3](img/rl-comp-loop-3.svg){width="600"}
 {align="center"}

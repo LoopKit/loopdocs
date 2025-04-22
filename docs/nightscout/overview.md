@@ -7,15 +7,12 @@ When integrated with *Loop*, *Nightscout* provides monitoring of *Loop* activiti
 For caregivers, *Nightscout* enables remote monitoring and even the ability to issue remote commands through *Nightscout* when both *Loop* and *Nightscout* are properly configured. There are several pages starting at [*LoopDocs*: Remote Overview](remote-overview.md) that provide documentation on this feature. If you are a caregiver, this summary of remote capabilities may encourage you to look into *Nightscout*.
 
 !!! info "Remote Commands"
-    * *Loop 2.2.x*
-        * Overrides can be enabled and disabled
-    * *Loop 3*
-        * Overrides can be enabled and disabled
-        * Carbs can be entered
-        * Boluses can be commanded
-        * *LoopCaregiver* app (under development, iOS only) enables the following from the caregiver's phone
-            * monitor *Loop*
-            * issue remote commands for carbs, bolus, and overrides
+    * Overrides can be enabled and disabled
+    * Carbs can be entered
+    * Boluses can be commanded
+    * *LoopCaregiver* app (under development, iOS only) enables the following from the caregiver's phone
+        * monitor *Loop*
+        * issue remote commands for carbs, bolus, and overrides
 
     If you plan to use remote commanding with *Nightscout*, please read these links with additional information:
 
@@ -59,30 +56,6 @@ If upload to *Nightscout* is interrupted, *Loop 3* stores up to 7 days of *Night
 
 The Carb *pill* on the *Nightscout* site is populated by *Loop* when *Loop* is actively uploading to *Nightscout* - but it may lag the value displayed in the *Loop* *pill* by one loop cycle and it will display 0 COB within 5 to 10 minutes if the upload is interrupted. In other words, if the COB *pill* shows 0 unexpectedly and *Loop* *pill* is active, you can believe the value shown in the *Loop* *pill*.
 
-### *Loop 2* Red *Loop* Warning
-
-With *Loop 2.2.9* and earlier versions, when a *Nightscout* site is selected in *Loop* Services **and** is unable to upload messages to that site, *Loop* keeps trying to upload the buffer of stored messages. This could lead to sluggish behavior in *Loop* or even cause a &nbsp;<span translate="no">Red Loop</span>. This can happen if the *Nightscout* site is not accessible (no WiFi or cellular coverage) or if the database is full and not accepting messages.
-
-Step 1: Remove *Nightscout* URL from *Loop* Services
-
-Step 2: Figure out why the *Nightscout* site is not accepting uploads from *Loop* and fix that problem.
-
-* [*Nightscout*: Troubleshooting](https://nightscout.github.io/troubleshoot/troubleshoot){: target="_blank" }
-* [*Nightscout*: Database Management](https://nightscout.github.io/nightscout/admin_tools/#database-maintenance){: target="_blank" }
-
-Step 3: Add *Nightscout* URL to *Loop* Services
-
-Note - the method used by *Loop 3* is not subject to this same problem.
-
-??? tip "Do you want to know more? (Click to open)"
-    For those who want to know more:
-
-    There is a big architectural change between *Loop 2* and *Loop 3* for remote data services like *Nightscout*.
-
-    It used to be that Loop would keep trying to upload data to *Nightscout*. If a site could not be reached or would not accept data, that could cause large backlogs. *Loop* 2 could slow down by trying to keep uploading the backlog. The new system does not allow for this. Uploaders individually keep track of where they are in the upload stream via a lightweight “query handle”, and if the data in *Loop* data store expires before upload, that data will be missing in *Nightscout*.
-
-    *Loop 3* saves 7 days of information in the data store.
-
 ## *Nightscout* Dashboard
 
 ![img/example.jpg](img/example.jpg){width="600"}
@@ -96,10 +69,11 @@ The main dashboard (upper section) for *Nightscout* displays the time duration y
 
 ### SAGE, CAGE, BAGE
 
-The SAGE, CAGE, and BAGE *pills* are for Sensor Age, Cannula Age, and (pump) Battery Age. These optional *pills* track the time since your CGM sensor, Pump site, and Pump battery were last changed. You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes. When these items do not auto-upload, you can use the *Nightscout* Careportal to input the changes.
+The SAGE, CAGE, and BAGE *pills* are for Sensor Age, Cannula Age, and (pump) Battery Age. These optional *pills* track the time since your CGM sensor, Pump site, and Pump battery were last changed. You can set up custom alerts to remind you when it is time to change the devices, or simply use the visuals to keep track of your particular timing for site/sensor changes.
 
-* *Loop 3.3.0 or newer*: The SAGE and CAGE fields are automatically uploaded
-* *Loop 3.2.x or older*: None of the fields are automatically uploaded
+> With the *Loop* app, the SAGE and CAGE entries should automatically be updated when you change a sensor or a cannula.
+
+If these items do not auto-upload, you can use the *Nightscout* Careportal to input the changes.
 
 ### Carbs
 
