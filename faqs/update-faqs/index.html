@@ -3865,28 +3865,9 @@
 <p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app version is given at the top of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> settings page.</p>
 <p>There is more detailed information about how the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app was built at the top of the <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report as shown in the graphic in the next section.</p>
 <h2 id="when-will-my-app-expire">When will my app expire?<a class="headerlink" href="#when-will-my-app-expire" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The information in the graphic below shows the Build Details included at the very beginning of a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report (<code>Loop, Setting, Support, Issue Report</code>).</p>
-<p>Up through version 3.2.3, the Browser Build versions do not report the correct date in the <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">Expiration Alert</a>. The date reported is correct with Mac Build or later versions using the Broswer Build.</p>
-<p><img alt="top of issue report showing Build Details" src="../img/loop-version.svg" width="500" /></p>
-<ul>
-<li>A Browser Build can be identified when you see <code>runner</code> in the <code>* sourceRoot</code> line in the graphic above<ul>
-<li>If you add 90 days to the <code>* buildDateString</code>, that is approximately when the app expires</li>
-<li>The best method is to look in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app because that tells you exactly how many days until expiration</li>
-</ul>
-</li>
-<li>A Mac Build expiration date can be read directly from the <code>* profileExpiration</code> line in the Build Details<ul>
-<li>The <code>* sourceRoot</code> line will be recognizable as where on your computer the download is located</li>
-</ul>
-</li>
-</ul>
+<p>The expiration date for the app is displayed at the bottom of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen. See also  <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">Expiration Alert</a>.</p>
 <h2 id="what-if-i-change-the-branch-or-fork">What if I change the <abbr title="version of code within a single repository or workspace repository">branch</abbr> or <abbr title="a copy of code in a github repository other than the original">fork</abbr>?<a class="headerlink" href="#what-if-i-change-the-branch-or-fork" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Does not matter. Changing the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and even the <abbr title="a copy of code in a github repository other than the original">fork</abbr> is an <strong>update</strong> action. Nothing about the information above changes with the following exception.</p>
-<p><strong>The exception to the rule is if you build <code>Loop 3</code> on your phone and want to return to <code>Loop 2.2.x</code> or any <code>FreeAPS fork</code>.</strong></p>
-<ul>
-<li>In this case, the database storage is different between <code>Loop 3</code> and <code>Loop 2.2.x</code></li>
-<li><code>Loop 3</code> can read the data stored by <code>Loop 2.2.x</code>, but the reverse is not true</li>
-<li>If you are downgrading from <code>Loop 3</code> to <code>FreeAPS</code>, you need to first record settings, delete the old app and then build the desired app, enter your settings and add your pump (new pod required for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>)</li>
-</ul>
 <h2 id="how-long-does-it-take">How long does it take?<a class="headerlink" href="#how-long-does-it-take" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Assuming your <abbr title="operating system for Mac computer">macOS</abbr> and <abbr title="program used to build an app">Xcode</abbr> updates are done, then plan on about 30 minutes for a Mac build. The Browser build steps are very fast, but then you need to wait about an hour for the build to complete and appear in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 

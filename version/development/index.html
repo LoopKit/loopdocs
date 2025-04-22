@@ -2721,9 +2721,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#loop-updates" class="md-nav__link">
+  <a href="#maintenance-updates" class="md-nav__link">
     <span class="md-ellipsis">
-      Loop Updates
+      Maintenance Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bug Fixes
     </span>
   </a>
   
@@ -3659,9 +3677,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#loop-updates" class="md-nav__link">
+  <a href="#maintenance-updates" class="md-nav__link">
     <span class="md-ellipsis">
-      Loop Updates
+      Maintenance Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bug Fixes
     </span>
   </a>
   
@@ -3841,13 +3877,78 @@
 <p>If you choose to use <code>dev</code>, you accept that this code is not released.</p>
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is provides an overview of changes to dev compared to <code>Loop 3.4.4</code>.</p>
+<p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop 3.4.4</code>. These will be included in the next release, planned as <code>Loop 3.6.0</code>. </p>
+<p>In the meantime, the version number remains <code>3.5.0</code> in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <h3 id="add-automatic-certificate-generation-and-renewal">Add Automatic <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Generation and Renewal<a class="headerlink" href="#add-automatic-certificate-generation-and-renewal" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These changes in the build process only work when <code>dev</code> is your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Once <code>Loop 3.6.0</code> is released, these changes will work with the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Automatic certificate generation and renewal requires a <code>Variable</code> be added to your organization or your <abbr title="contains project files and each file's revision history">repository</abbr>. Please see these instructions: <a href="../../browser/prepare-fork/#add-variable" target="_blank">Add Variable</a></p>
-<h3 id="loop-updates"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Updates<a class="headerlink" href="#loop-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Updates made to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or LoopKit <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> affect the operation of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
-<p>No functional changes made at the current time.</p>
+<h3 id="maintenance-updates">Maintenance Updates<a class="headerlink" href="#maintenance-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These maintenance changes do not affect the functioning of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app but do enable continued build with current <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>, <abbr title="program used to build an app">Xcode</abbr> and <abbr title="operating system for Mac computer">macOS</abbr> versions, as well as continued operation of the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> (Browser Build) capability.</p>
+<ul>
+<li>LoopWorkspace <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 234: Modify <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> action files to enable automatic renewal of certificates when they expire or are revoked (details were in the previous section)</li>
+<li>LoopWorkspace <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 241, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2303: Modify the way the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app is versioned - it is now updated in the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> instead of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> - this simplifies version releases</li>
+<li>LoopWorkspace <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 243: Update <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> action files to use <abbr title="used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> 2.227.1 and <abbr title="program used to build an app">Xcode</abbr> 16.3</li>
+</ul>
+<h3 id="feature-updates">Feature Updates<a class="headerlink" href="#feature-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These are changes in reponse to feature requests (<code>Loop Issues</code>) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the feature.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr></th>
+<th style="text-align: left;">Submodule Updated</th>
+<th style="text-align: left;"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> in Submodule</th>
+<th style="text-align: left;">Request</th>
+<th style="text-align: left;">Modification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/issues/2168" target="_blank">2168</a></td>
+<td style="text-align: left;"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/pull/2300" target="_blank">2300</a></td>
+<td style="text-align: left;">Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry</td>
+<td style="text-align: left;">Change button label to <code>Save Carbs &amp; Deliver</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="bug-fixes">Bug Fixes<a class="headerlink" href="#bug-fixes" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These are fixes in reponse to specific bug reports (<code>Loop Issues</code>) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the bug fix.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr></th>
+<th style="text-align: left;">Submodule Updated</th>
+<th style="text-align: left;"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> in Submodule</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/issues/2159" target="_blank">2159</a></td>
+<td style="text-align: left;"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/pull/2163" target="_blank">2163</a></td>
+<td style="text-align: left;">Glucose change graph 'predicted' effects are inconsistent at different times or between orientations</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/issues/2196" target="_blank">2196</a></td>
+<td style="text-align: left;"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/pull/2295" target="_blank">2295</a></td>
+<td style="text-align: left;">Bolus progress can display a stale total delivery value (UI bug only)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/issues/2265" target="_blank">2265</a></td>
+<td style="text-align: left;">G7SensorKit</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/G7SensorKit/pull/34" target="_blank">34</a></td>
+<td style="text-align: left;">No G7 <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Updates - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Failure</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/Loop/issues/2291" target="_blank">2291</a></td>
+<td style="text-align: left;">G7SensorKit</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/G7SensorKit/pull/35" target="_blank">35</a></td>
+<td style="text-align: left;">Backfill from G7 Created Bad Data</td>
+</tr>
+</tbody>
+</table>
 <h3 id="omnible-and-omnikit-updates">OmniBLE and OmniKit Updates<a class="headerlink" href="#omnible-and-omnikit-updates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Updates were made to the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> pump <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>: OmniBLE and OmniKit. Unless otherwise noted, the following functional updates were made to both <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> with the <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> numbers included in parentheses:</p>
 <ul>
@@ -3965,8 +4066,7 @@ This forum has several streams of conversations (<code>streams</code>) depending
 <h3 id="generate-an-issue-report">Generate an <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report<a class="headerlink" href="#generate-an-issue-report" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Know how to generate an <code>Issue Report</code> when you see a problem so you can provide that if asked. An <code>Issue Report</code> is a log file generated by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app that has a lot of information the developers can parse to figure out what <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> was doing when you were having a problem.</p>
 <ul>
-<li><em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v2.2.9</span></em>&nbsp; and earlier:<code>Loop Settings -&gt; Issue Report</code></li>
-<li><em><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span></em>&nbsp; and later: <code>Loop Settings -&gt; Support -&gt; Issue Report</code></li>
+<li><code>Loop Settings</code> and then scroll almost to the bottom and select <code>Issue Report</code></li>
 </ul>
 <p>Do not confuse this with reporting an issue with <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.  That is done by logging into <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and going to the <a href="https://github.com/LoopKit/Loop/issues" target="_blank"><code>Issue</code> page</a> to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>.</p>
 <h3 id="create-a-debug-report">Create a Debug Report<a class="headerlink" href="#create-a-debug-report" title="Anchor link to this Header on this Page">&para;</a></h3>

@@ -3670,29 +3670,14 @@
 <li>You need to click on the indicated <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> folder icon two times</li>
 </ul>
 </li>
-<li>Frame 2: After the 2 clicks, the middle pane of the <abbr title="program used to build an app">Xcode</abbr> window should be similar (for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and newer, the top middle bar will show LoopWorkspace, not <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>)</li>
+<li>Frame 2: After the 2 clicks, the middle pane of the <abbr title="program used to build an app">Xcode</abbr> window should be similar (except you will see LoopWorkspace, not <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>)</li>
 </ul>
 <p align="center"><img alt="initial xcode display, click on loop to populate middle pane" src="../img/build-229-01.gif" width="750" /></p>
 <h3 id="select-your-phone">Select Your Phone<a class="headerlink" href="#select-your-phone" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If this is the <strong>First Time</strong> your phone or watch has been connected to <abbr title="program used to build an app">Xcode</abbr>, you will need to tell the phone and watch to "Trust this Computer".</p>
-<p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> (not updated for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x) below shows:</p>
+<p>Select your phone in the dropdown in <abbr title="program used to build an app">Xcode</abbr>. Be sure to select your actual phone - not a phone simulator.</p>
 <ul>
-<li>Frame 1: Same as end of previous <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr><ul>
-<li>There's a red rectangle around the dropdown menus</li>
-<li>The menu on the left says "LoopWorkspace" for 3.2.x and newer</li>
+<li>If this is the <strong>First Time</strong> your phone or watch has been connected to <abbr title="program used to build an app">Xcode</abbr>, you will need to tell the phone and watch to "Trust this Computer".</li>
 </ul>
-</li>
-<li>Frame 2: Same as Frame 1 with a zoomed inset of the red rectangle<ul>
-<li>Ignore Frame 2 and 3 for <abbr title="Latest release with major updates">Loop 3</abbr>.2.x and newer which already shows LoopWorkspace</li>
-<li>You can see <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> has a check mark beside it</li>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>) is one line below</li>
-<li>Select <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-</ul>
-</li>
-<li>Frame 3: Zoomed inset after selecting <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (<abbr title="a grouping of several repositories into a complete package">Workspace</abbr>)</li>
-<li>Frame 4: Desired result should show LoopWorkspace and your phone</li>
-</ul>
-<p align="center"><img alt="select loop workspace and confirm phone" src="../img/build-229-02.gif" width="600" /></p>
 <p align="center"><img alt="img/your_device.png" src="../img/your_device.png" width="650" /></p>
 <div class="admonition warning">
 <p class="admonition-title">I don't see my phone</p>
@@ -3747,7 +3732,7 @@
 <p>Some features of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> are not available with the Free option, so as you sign, you will need to remove features that are not supported.</p>
 <ol>
 <li>You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:<ul>
-<li><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Target:</strong> Push Notifications; Siri and Time Sensitive Notifications</li>
+<li><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Target:</strong> Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading</li>
 <li><strong>Watch App Extension Target:</strong> Siri</li>
 </ul>
 </li>
@@ -3761,7 +3746,7 @@
 </ol>
 <p>Details about removing unsupported capabilities:</p>
 <ul>
-<li>You must disable Push Notification, Siri and Time Sensitive Notifications<ul>
+<li>You must disable Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading<ul>
 <li>If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target</li>
 <li>If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target</li>
 </ul>
@@ -3775,7 +3760,10 @@
 <li>Proceed to the next target</li>
 </ul>
 <h3 id="end-of-free-account-steps">End of Free Account Steps<a class="headerlink" href="#end-of-free-account-steps" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></strong>, <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Status Extension</strong>, <strong>Watch App</strong>, and <strong>WatchApp Extension</strong> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x, with the addition of <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Intent Extension</strong> for <abbr title="Latest release with major updates">Loop 3</abbr>.</p>
+<p>Click on each of the three remaining targets shown in the red box below, and repeat the signing steps by choosing the same team name as you selected in the first target. The targets that must be signed prior to building are <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></strong>, <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Status Extension</strong>, <strong>Watch App</strong>, <strong>WatchApp Extension</strong>, <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Widget Extension</strong> and <strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Intent Extension</strong>.</p>
+<blockquote>
+<p>The graphic below is from an older version of <code>Loop</code>. You must sign all 6 targets listed above.</p>
+</blockquote>
 <p align="center"><img alt="Xcode window showing the targets that must be signed" src="../img/success.png" width="750" /></p>
 <p>After signing the targets, click on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon under the <code>PROJECTS</code> heading. (Refer to the bright blue box in graphic above - click on that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon.)</p>
 <ul>

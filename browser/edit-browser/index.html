@@ -4203,7 +4203,7 @@
 </ul>
 </li>
 </ul>
-<p>With the release of 3.4.x, the customizations for <code>main</code> and <code>dev</code> are the same. There are 2 customizations that require an update when moving from 3.2.3 to 3.4.x.</p>
+<p>For versions 3.4.x and newer, the customizations for <code>main</code> and <code>dev</code> are the same.</p>
 <ul>
 <li>For more information, refer to <a href="../../version/code-custom-edits/#not-stable-list" target="_blank">Not Stable List</a><ul>
 <li>Glucose <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr></li>
@@ -4525,8 +4525,6 @@ SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 <p>If your&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr></span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> and make a new one. See <a href="../prepare-fork/#already-have-loopworkspace" target="_blank">Already Have&nbsp;<span translate="no">LoopWorkspace</span>?</a>.</p>
 <ul>
 <li>Do not use any other location to create your <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code></li>
-<li>You may have used a different location for <abbr title="Latest release with major updates">Loop 3</abbr>.2.2</li>
-<li>This is <strong>not</strong> supported for <abbr title="Latest release with major updates">Loop 3</abbr>.2.3 or later</li>
 </ul>
 </div>
 <p>For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the&nbsp;<code>curl</code>&nbsp;statement pointing to the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> that has the customization.</p>
@@ -4553,41 +4551,7 @@ curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.p
 <li>Find the folder .github/workflows and click on it</li>
 <li>Find the file build_loop.yml and click on it</li>
 <li>Click on the pencil (so you can edit this file)</li>
-<li>If you are building version 3.4<ul>
-<li>Skip ahead to <a href="#add-personal-customizations-to-build_loopyml">Add Personal Customizations to build_loop.yml</a></li>
 </ul>
-</li>
-</ul>
-<details class="abstract">
-<summary>Older versions (Click to open/close)</summary>
-<ul>
-<li>If you are building from an older version of main (version 3.2.3 or earlier), this is left here for your convenience - it will be removed over the next few months - please update soon<ul>
-<li>Locate line 31, which is just above the words:<ul>
-<li><code># Patch Fastlane Match to not print tables</code></li>
-</ul>
-</li>
-<li>Paste the contents of the block below so it comes before that section</li>
-<li>In the next section - you will need to modify the line number where you do the edits</li>
-</ul>
-</li>
-</ul>
-<div class="copy highlight"><span class="filename">Paste into build_loop.yml</span><pre><span></span><code>    # Customize Loop: Download and apply patches
-    - name: Customize Loop
-        run: |
-
-        # For each patch, edit comment line (keep the #) then update curl (and remove the #)
-
-        # Submodule Loop patches:
-        # Loop: Filename: customization details
-        #curl https://github.com/my-name-org/Loop/commit/SHA-1.patch | git apply -v --directory=Loop
-
-        # Submodule LoopKit patches:
-        # LoopKit: Filename: customization details
-        #curl https://github.com/my-name-org/LoopKit/commit/SHA-1.patch | git apply -v --directory=LoopKit
-
-        # Submodule xxxxx patches: Follow prototype above
-</code></pre></div>
-</details>
 <h3 id="add-personal-customizations-to-build_loopyml">Add Personal Customizations to build_loop.yml<a class="headerlink" href="#add-personal-customizations-to-build_loopyml" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Open the text file in which you saved the customization lines.</p>
 <p>For a given submodule, paste the "comment" and "curl" lines that you prepared in <a href="#prepare-customization-lines">Prepare customization lines</a> similar to the examples, near line 279 (<code>main</code> or 239 for <code>dev</code>), that are commented out and provided as an example. The best place to paste these is at the end of the <code># Customize Loop: Download and apply patches</code> section and before the <code># Patch Fastlane Match to not print tables</code> line.</p>
