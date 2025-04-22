@@ -43,7 +43,7 @@
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
         * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
     * *GitHub*:
-        * [`Action: 3. Create Certificates`](certs.md#create-certificates){: target="_blank" }
+        * Action: 3. Create Certificates is included in Build Action with `Loop 3.6.0`
         * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
     * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md){: target="_blank" }
 

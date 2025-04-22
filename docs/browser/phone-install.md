@@ -1,6 +1,6 @@
 ## General Installation Information
 
-**The *Loop* app must be built at least every 90 days when using a browser to build.** With version 3.4.0 and later, the build is automatic (once a month or with a new release). It is recommended you manually install the new build using *TestFlight* at your convenience.
+**The *Loop* app must be built at least every 90 days when using a browser to build.** With version 3.4.0 and newer, the build is automatic (once a month or with a new release). It is recommended you manually install the new build using *TestFlight* at your convenience.
 
 After you [Build the *Loop* App](build-yml.md#build-the-loop-app){: target="_blank" } with a browser and you get the email that it is availble in *TestFlight*, you are ready to install on as many phones as you and your family members need.
 
