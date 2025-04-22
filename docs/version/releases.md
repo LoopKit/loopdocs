@@ -6,22 +6,75 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.4.4. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.6.0. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
 Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left.
     
-![Determine current app version on app settings screen](img/app-version.svg){width="400"}
+![Determine current app version on app settings screen](img/app-version.jpg){width="400"}
 {align="center"}
 
 ### Is the Released Version Newer?
 
-Release information is always found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases){: target="_blank" }.
+Release information has been moved for `Loop 3.6.0` and newer. It is now found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases){: target="_blank" }.
 
-Additional information including links is found here, but be aware that updates to&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;may take some time after a new release comes out.
+Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases){: target="_blank" }.
 
 ## Loop 3 Version History
+
+### Loop v3.6.0
+
+*Loop* v3.6.0 was released on 22 April 2025.
+
+* [Link to release notes for Loop 3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0){: target="_blank" }
+* This is the first release where the release notes are at the LoopWorkspace repository
+
+#### Add Automatic Certificate Generation and Renewal
+
+Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](../browser/prepare-fork.md#add-variable){: target="_blank" }
+
+#### Maintenance Updates
+
+These maintenance changes do not affect the functioning of the *Loop* app but do enable continued build with current iOS, Xcode and macOS versions, as well as continued operation of the GitHub Actions (Browser Build) capability.
+
+* LoopWorkspace PR 234: Modify GitHub action files to enable automatic renewal of certificates when they expire or are revoked
+* LoopWorkspace PR 241, Loop PR 2303: Modify the way the Loop app is versioned - it is now updated in the LoopWorkspace repository instead of the Loop repository - this simplifies version releases
+* LoopWorkspace PR 243: Update GitHub action files to use fastlane 2.227.1 and Xcode 16.3
+* LoopWorkspace PR 248: Enable GitHub build to continue working after the keepalive-workflow repository was disabled by *GitHub*
+
+#### Feature Updates
+
+These are changes in reponse to feature requests (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the feature.
+
+| Loop Issue | Submodule Updated | PR in Submodule | Request | Modification |
+|:--|:--|:--|:--|:--|
+| [2168](https://github.com/LoopKit/Loop/issues/2168){: target="_blank" } | Loop | [2300](https://github.com/LoopKit/Loop/pull/2300){: target="_blank" } | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
+
+#### Bug Fixes
+
+These are fixes in reponse to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the bug fix.
+
+| Loop Issue | Submodule Updated | PR in Submodule | Description of bug that is fixed |
+|:--|:--|:--|:--|
+| [2159](https://github.com/LoopKit/Loop/issues/2159){: target="_blank" } | Loop | [2163](https://github.com/LoopKit/Loop/pull/2163){: target="_blank" } | Glucose change graph 'predicted' effects are inconsistent at different times or between orientations |
+| [2196](https://github.com/LoopKit/Loop/issues/2196){: target="_blank" } | Loop | [2295](https://github.com/LoopKit/Loop/pull/2295){: target="_blank" } | Bolus progress can display a stale total delivery value (UI bug only) |
+| [2265](https://github.com/LoopKit/Loop/issues/2265){: target="_blank" } | G7SensorKit | [34](https://github.com/LoopKit/G7SensorKit/pull/34){: target="_blank" } | No G7 CGM Updates - Loop Failure |
+| [2291](https://github.com/LoopKit/Loop/issues/2291){: target="_blank" } | G7SensorKit | [35](https://github.com/LoopKit/G7SensorKit/pull/35){: target="_blank" } | Backfill from G7 Created Bad Data |
+
+#### OmniBLE and OmniKit Updates
+
+Updates were made to the Omnipod pump submodules: OmniBLE and OmniKit. Unless otherwise noted, the following functional updates were made to both submodules with the PR numbers included in parentheses:
+
+* Miscellaneous Omnipod code improvements & cleanup (PR 135, 44)
+* Unacknowledged command handling fixes and PodCommsSession improvements (PR 136, 45)
+* DASH (OmniBLE only): Don't fail on ack comms error if validated response has been received (PR 137)
+* Eros (OmniKit only): return clock icon when isClockOffset is true (PR 46)
+* DASH (OmniBLE only): Use alternate type 7 getStatus call for standalone getStatus sessions (matches the Insulet PDM) (PR 138)
+* Improved unacknowledged command recovery (PR 139, 47)
+* Logic fix for 049 pod fault with concurrent temp basal commands; fixed Trio Issue (PR 140, 48)
+* Logic fix for pump manager returns bogus podSuspended; fixed Trio Issue (PR 141, 49)
+
 
 ### Loop v3.4.4
 
@@ -232,8 +285,10 @@ For example:
     * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
     * `Loop 3.3.0` was the development version before `Loop 3.4.0` was released
 * `Loop 3.4.0` was the next released version
-    * `Loop 3.4.1` is a patched version (fixed Browser Build) without changes to the features of `Loop 3.4.x`
-    * `Loop 3.5.0` is the current development version
+    * `Loop 3.4.1`, `Loop 3.4.2`, `Loop 3.4.3` and `Loop 3.4.4` are patched versions without major changes to the features of `Loop 3.4`
+    * `Loop 3.5.0` was the development version before `Loop 3.6.0` was released
+* `Loop 3.6.0` is the current released version
+    * `Loop 3.7.0` is the current development version
 
 ## Remove Apps with Shared App Group
 
