@@ -32,22 +32,22 @@ These maintenance changes do not affect the functioning of the *Loop* app but do
 
 ### Feature Updates
 
-These are changes in reponse to feature requests (`Loop Issues`) that were implemented in the noted submodule. The index for that submodule in LoopWorkspace was subsequently updated to include the feature.
+These are changes in reponse to feature requests (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the feature.
 
 | Loop Issue | Submodule Updated | PR in Submodule | Request | Modification |
 |:--|:--|:--|:--|:--|
-| 2168 | LoopKit | 557 | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
+| [2168](https://github.com/LoopKit/Loop/issues/2168){: target="_blank" } | Loop | [2300](https://github.com/LoopKit/Loop/pull/2300){: target="_blank" } | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
 
 ### Bug Fixes
 
-These are fixes in reponse to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The index for that submodule in LoopWorkspace was subsequently updated to include the bug fix.
+These are fixes in reponse to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the bug fix.
 
 | Loop Issue | Submodule Updated | PR in Submodule | Description |
 |:--|:--|:--|:--|
-| 2159 | Loop | 2163 | Glucose change graph 'predicted' effects are inconsistent at different times or between orientations |
-| 2196 | Loop | 2295 | Bolus progress can display a stale total delivery value (UI bug only) |
-| 2265 | G7SensorKit | 34 | No G7 CGM Updates - Loop Failure |
-| 2291 | G7SensorKit | 35 | Backfill from G7 Created Bad Data |
+| [2159](https://github.com/LoopKit/Loop/issues/2159){: target="_blank" } | Loop | [2163](https://github.com/LoopKit/Loop/pull/2163){: target="_blank" } | Glucose change graph 'predicted' effects are inconsistent at different times or between orientations |
+| [2196](https://github.com/LoopKit/Loop/issues/2196){: target="_blank" } | Loop | [2295](https://github.com/LoopKit/Loop/pull/2295){: target="_blank" } | Bolus progress can display a stale total delivery value (UI bug only) |
+| [2265](https://github.com/LoopKit/Loop/issues/2265){: target="_blank" } | G7SensorKit | [34](https://github.com/LoopKit/G7SensorKit/pull/34){: target="_blank" } | No G7 CGM Updates - Loop Failure |
+| [2291](https://github.com/LoopKit/Loop/issues/2291){: target="_blank" } | G7SensorKit | [35](https://github.com/LoopKit/G7SensorKit/pull/35){: target="_blank" } | Backfill from G7 Created Bad Data |
 
 ### OmniBLE and OmniKit Updates
 
