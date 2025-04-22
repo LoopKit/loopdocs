@@ -86,7 +86,7 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
     * You need a new `Distribution` Certificate at *Apple*
     * You need to create new signing credentials for `Match-Secrets`
 
-    For the `Loop` app, up through version 3.4.4, you must to do this [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } process manually. Once version 3.6.0 is release, it will be automatic.
+    For the `Loop` app, up through version 3.4.4, you must to do this [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } process manually. Once version 3.6.0 is released, it will be automatic.
 
 ### Automatic Certificate Renewal
 
@@ -94,7 +94,7 @@ Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` al
 
 * If your signing credentials for the app being built are invalid and `ENABLE_NUKE_CERTS` is `true`, then signing credentials will be cleared from your `Match-Secrets` repository, a new `Distribution` certificate will be created at *Apple* and signing credentials for the current app will be generated and stored in `Match-Secrets`.
 
-* Next app you build will need certificates created because all signing credentials were cleared out of your `Match-Secrets` repository
+* The next app you build using Browser Build, following a `nuke` action, will need certificates created because all signing credentials were cleared out of your `Match-Secrets` repository
     * If that app is configured for automatic certificate renewal, you only need to run the `Build Action`; it detects no signing credentials are available and creates them
     * If that app is not configured for automatic certificate renewal, you must first run the action  `Create Certificates` and then `Build`
 
@@ -102,7 +102,7 @@ Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` al
 
 Each Open-Source App has a schedule for when the automatic build happens. This determines when the automatic check for certificate status happens.
 
-The times are shifted to make sure only one Open-Source app performs a `nuke` process at one time. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
+The times are shifted to make sure only one Open-Source app performs a `nuke` action. Any other app building later that same day will just create new signing credentials; it will not need to `nuke` all credentials. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
 
 | Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
 |:--|:-:|:-:|:-:|
