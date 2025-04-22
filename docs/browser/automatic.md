@@ -41,7 +41,7 @@ You start getting [Notifications](../operation/features/notifications.md#loop-ap
 
 The automatic update and build feature is embedded in the build_loop.yml code and uses the GitHub scheduling feature to trigger actions to run automatically.
 
-Some may have noticed one or more branches added to your repository that start with the name `alive`. Don't worry about these. They are automatically created to ensure GitHub will keep building your app automatically.
+One or more branches are added to your repository that start with the name `alive`. Don't worry about these. They are automatically created so GitHub will keep building your app automatically.
 
 * GitHub keeps track of repositories
 * If there is no activity in a given repository in 60 days, GitHub disables Actions
@@ -50,7 +50,7 @@ Some may have noticed one or more branches added to your repository that start w
 
 You may see branches called `alive`, `alive-dev` or `alive-main` in your repository.
 
-The `alive` branches are created and used to make sure at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process to work.
+The `alive` branches are there so at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process.
 
 The `alive` branches are only used for the keep-alive functions. Do not build using an `alive` branch. Most people will build using the default branch of `main`.
 
@@ -80,7 +80,7 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
 ??? question "Do you want to know more? (Click to open/close)"
     **Annual Renewal**
 
-    This happens once a year after *Apple* automatically expires your `Distribution` Certificate.
+    Once a year, *Apple* automatically expires your `Distribution` Certificate.
 
     * When the *Apple* `Distribution` certificate expires, the saved credentials in your `Match-Secrets` private repository are invalid and need to be removed (<code>nuke</code>)
     * You need a new `Distribution` Certificate at *Apple*
@@ -90,7 +90,7 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
 
 ### Automatic Certificate Renewal
 
-Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` already have this capability.
+Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` already have this capability. It will be available in with the next release of the *Loop* app (3.6.0).
 
 * If your signing credentials for the app being built are invalid and `ENABLE_NUKE_CERTS` is `true`, then signing credentials will be cleared from your `Match-Secrets` repository, a new `Distribution` certificate will be created at *Apple* and signing credentials for the current app will be generated and stored in `Match-Secrets`.
 
@@ -142,7 +142,7 @@ This is an optional step. If you are happy with the automatic sync and update, y
     * If you want to only build when an update has been found:
         * either do not create the variable `SCHEDULED_SYNC` or set it to true
         * create the variable `SCHEDULED_BUILD` and set it to false
-        * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire requiring a manual build
+        * **Warning**: if no updates to your default branch are detected within 90 days, your previous TestFlight build may expire, requiring a manual build
         * During a time when updates are not happening frequently, this is not a good choice
 
     | <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |
