@@ -3549,11 +3549,8 @@
   <h1>Create Certificates</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The instructions on this page are required to build your app intially. This action ties information in your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> private <abbr title="contains project files and each file's revision history">repository</abbr> to your Apple information so that the build action works. Once successful that, it only needs to be run again in a few cases.</p>
-<ul>
-<li>When your certificates have expired (after one year) and you need to <a href="../bb-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
-<li>When the developers have modified the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>; this requires Create Certificates to be run after you successfully run Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and update the new <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></li>
-</ul>
+<p>With the release of <code>Loop 3.6.0</code>, the build action includes the create certificates action. This action can be run independently, but is no longer required.</p>
+<p>You can skip ahead to <a href="../build-yml/">Build the App</a>.</p>
 <h2 id="create-certificates"><code>Create Certificates</code><a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>

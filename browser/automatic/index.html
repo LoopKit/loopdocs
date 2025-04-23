@@ -3748,16 +3748,17 @@
 <p>You still need to <strong>take these actions</strong> to ensure a recent build of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install on your phone when you choose:</p>
 <ul>
 <li>Keep your <em>Apple Developer</em> account up to date with agreements signed</li>
-<li><a href="../bb-update/#renew-certificate" target="_blank">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> once a year</li>
+<li>Check your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> action if you ever get an email saying an automatic action failed</li>
+<li>Look at your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the second of every month to make sure a new build is available for you to install when you are ready</li>
 </ul>
 <h3 id="successful-weekly-action">Successful Weekly Action<a class="headerlink" href="#successful-weekly-action" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Normally, you will see a successful <code>build action</code> once a week. This happens at 08:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr> every Wednesday.</p>
+<p>Normally, you will see a successful <code>build action</code> once a week. This happens every Wednesday.</p>
 <p>If there are no updates to the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, your actions show a very short, successful <code>build action</code> as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. </p>
 <p><img alt="normal weekly check for updates when there are no updates" src="../img/normal-check-for-updates.png" /></p>
 <p>If there is an update, the <code>build action</code> updates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> and creates a new build. </p>
 <p>In that case, you should check your favorite information site to find out what the update was and then, when you are ready, install the update using the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone.</p>
 <h3 id="successful-monthly-action">Successful Monthly Action<a class="headerlink" href="#successful-monthly-action" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>On the first day of every month at 06:00 <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>, you will see a successful <code>build action</code>. The purpose of this build is to provide a recent version of the app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> so you are never in a situation where you have no app on your phone.</p>
+<p>On the first day of every month, you will see a successful <code>build action</code>. The purpose of this build is to provide a recent version of the app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> so you are never in a situation where you have no app on your phone.</p>
 <p>You start getting <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">Notifications</a> when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app. You do not want to get the dreaded "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)</p>
 <h3 id="what-are-the-alive-branches">What are the <code>alive branches</code>?<a class="headerlink" href="#what-are-the-alive-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The automatic update and build feature is embedded in the build_loop.yml code and uses the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> scheduling feature to trigger actions to run automatically.</p>
@@ -3786,8 +3787,7 @@
 </ul>
 </div>
 <h2 id="automatic-certificates">Automatic Certificates<a class="headerlink" href="#automatic-certificates" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Coming soon with <code>Loop 3.6.0</code>. </p>
-<p>Already here with <code>LoopCaregiver</code>, <code>LoopFollow</code> and some other Open-Source apps.</p>
+<p>Automatic renewal of certificates is included in <code>Loop 3.6.0</code>.</p>
 <h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You must have the <code>ENABLE_NUKE_CERTS</code> variable set to <code>true</code> for your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization, or when using a personal account to build, add it to each <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 <ul>
@@ -3802,10 +3802,10 @@
 <li>You need a new <code>Distribution</code> <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> at <em>Apple</em></li>
 <li>You need to create new signing credentials for <code>Match-Secrets</code></li>
 </ul>
-<p>For the <code>Loop</code> app, up through version 3.4.4, you must to do this <a href="../bb-update/#renew-certificate" target="_blank">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> process manually. Once version 3.6.0 is released, it will be automatic.</p>
+<p>For the <code>Loop</code> app, up through version 3.4.4, you had to do this <a href="../bb-update/#renew-certificate" target="_blank">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> process manually. Now that version 3.6.0 is released, it is automatic.</p>
 </details>
 <h3 id="automatic-certificate-renewal">Automatic <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Renewal<a class="headerlink" href="#automatic-certificate-renewal" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Some Open-Source apps, in particular <code>Trio</code>, <code>LoopCaregiver</code> and <code>LoopFollow</code> already have this capability. It will be available in with the next release of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app (3.6.0).</p>
+<p>Some Open-Source apps, in particular <code>Trio</code>, <code>LoopCaregiver</code>, <code>LoopFollow</code> and <code>Loop</code> have automatic certificate renewal.</p>
 <ul>
 <li>
 <p>If your signing credentials for the app being built are invalid and <code>ENABLE_NUKE_CERTS</code> is <code>true</code>, then signing credentials will be cleared from your <code>Match-Secrets</code> <abbr title="contains project files and each file's revision history">repository</abbr>, a new <code>Distribution</code> certificate will be created at <em>Apple</em> and signing credentials for the current app will be generated and stored in <code>Match-Secrets</code>.</p>
@@ -3833,7 +3833,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></td>
-<td style="text-align: center;"><code>dev</code> only</td>
+<td style="text-align: center;">&#x2705;</td>
 <td style="text-align: center;">09:00</td>
 <td style="text-align: center;">07:00</td>
 </tr>
@@ -3869,7 +3869,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><span translate="no">xDrip4iOS</span></td>
-<td style="text-align: center;">n</td>
+<td style="text-align: center;">&#x274C;</td>
 <td style="text-align: center;">16:00</td>
 <td style="text-align: center;">14:00</td>
 </tr>

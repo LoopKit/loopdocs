@@ -4180,7 +4180,7 @@
 <div class="admonition important">
 <p class="admonition-title">Get Help, Not Frustrated</p>
 <p>For first-time builders, there are a lot of one-time steps that all have to be correct and many screens look similar.</p>
-<p>If you are updating your build or renewing certificates, the process can be confusing and some error messages can be misleading.</p>
+<p>If you are updating your build, the process can be confusing and some error messages can be misleading.</p>
 <p>If you are having trouble, don't hesitate to ask for help.</p>
 <p>Please do NOT:</p>
 <ul>
@@ -4234,7 +4234,6 @@
 <p><strong>Consequence</strong>: any required sync of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is skipped and build is skipped</p>
 <p><strong>Solution</strong>:</p>
 <ul>
-<li>For <code>Loop</code>: wait for 3.6.0 release (coming soon), all other apps are updated</li>
 <li>Manually sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr>: <a href="../bb-update/#update-fork" target="_blank">Update <code>Fork</code></a></li>
 <li>Manually start your build: <a href="../bb-update/#build-the-app" target="_blank">Build</a></li>
 </ul>
@@ -4248,7 +4247,7 @@
 <p class="admonition-title"><abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is missing</p>
 <p>If you get this build error message: <code>No code signing identity found and can not create a new one because you enabled</code>, you do not have certificates needed to run the build.</p>
 <ul>
-<li>See <a href="../bb-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
+<li>With <code>Loop 3.6.0</code> and newer, this should not happen. Make sure you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to automatically renew certificates.</li>
 </ul>
 </div>
 <p>These are some of the most common errors to date.</p>
@@ -4298,13 +4297,12 @@
 <p>This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is <a href="#error-could-not-create">Error: Could not Create</a>.</p>
 <h3 id="missing-certificates">Missing Certificates<a class="headerlink" href="#missing-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
-<p>Coming soon: when <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 (or newer) is available, certificates will be automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
-<p>After <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 is released, the first attempt to build will update the files required for automatic certificate creation. The second attempt to build will use the new files. So if the first attempt with <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 fails, try again.</p>
+<p>With <code>Loop 3.6.0</code> or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
 </blockquote>
 <p>If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: <code>No code signing identity found and can not create a new one because you enabled</code>.</p>
-<ul>
-<li>See <a href="../bb-update/#renew-certificate" target="_blank">Renew Certificates</a></li>
-</ul>
+<blockquote>
+<p>The first automatic build when <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 fails, try again.</p>
+</blockquote>
 <p align="center"><img alt="graphic showing missing distribution certificate" src="../img/missing-distribution-certificate.png" width="800" /></p>
 <h3 id="annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)<a class="headerlink" href="#annotation-without-clear-message-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows a failure of&nbsp;<em><span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 4. Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;. The nice messages have not been added to this yet - you will have to follow the <a href="#find-the-error">Find the Error</a> instructions, but now, you are automatically taken to the correct section so there is less of the log to deal with.</p>
@@ -4580,11 +4578,7 @@
 <li>
 <p>Make sure you completed the <a href="../prepare-app/#create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect</a> Step</p>
 <ul>
-<li>Once you've resolved that step, run these <em><abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em> again:<ul>
-<li><code>Create Certificates</code></li>
-<li><code>Build Loop</code></li>
-</ul>
-</li>
+<li>Once you've resolved that step, run <code>Build Loop</code> action again</li>
 </ul>
 </li>
 <li>
@@ -4620,9 +4614,8 @@
 <li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
 </ul>
 <p>Return to <a href="../prepare-app/#identifiers-for-the-loop-app">First-Time: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for the <code>Loop</code> app</a> and make sure you followed all the steps.</p>
-<p>You must create certificates again before you can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
+<p>You can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
 <ul>
-<li>Action: <code>Create Certificates</code></li>
 <li>Action: <code>Build Loop</code></li>
 </ul>
 <h3 id="error-a-new-one-cannot-be-created-because-you-enabled"><code>Error: A new one cannot be created because you enabled</code><a class="headerlink" href="#error-a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4817,7 +4810,7 @@
 </ul>
 <p align="center"><img alt="steps to delete a given identifier" src="../img/delete-identifiers.svg" width="700" /></p>
 <p>If coming here because you enter the wrong <code>TEAMID</code> in <code>Secrets</code> - return to <a href="#rerun-steps-with-correct-teamid">Rerun Steps with Correct <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></a> when you've deleted as many identifiers as you can.</p>
-<p>After you delete identifiers, you must add them back before you can build a given app. Configure them and create certificates before you can build again.</p>
+<p>After you delete identifiers, you must add them back before you can build a given app. Configure them and build again.</p>
 
 
 
