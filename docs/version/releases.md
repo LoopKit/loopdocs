@@ -25,16 +25,30 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 
 ### Loop v3.6.0
 
-*Loop* v3.6.0 was released on 22 April 2025.
+*Loop* v3.6.0 was released on TBD April 2025.
 
 * [Link to release notes for Loop 3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0){: target="_blank" }
-* This is the first release where the release notes are at the LoopWorkspace repository
 
-#### Add Automatic Certificate Generation and Renewal
+#### 3.6.0 Highlights
+
+* Add Automatic Certificate Generation and Renewal
+* Implement updates to minimize Dexcom G7 outages that were reported over the last few months, possibly related to iOS 18 changes
+* Modify the bolus after meals button to explicitly say `Save Carbs & Deliver`
+* Updates to Omnipod Eros and DASH repositories: some bug fixes, some improved responses
+* Fix a few bugs
+    * Fixed: Stale value of the total bolus in the Bolus Progress Display in HUD - UI Bug only
+    * Fixed: Glucose change graph 'predicted' effects are inconsistent at different times or between orientations
+    * Fixed: Dexcom G7 calibration flags were not decoded correctly and some backfill messages could be left over from a previous sensor and provide erroneous date data
+    * Fixed: The Algorithm Experiments screen could show stale selections - UI Bug only
+    * Not Fixed: The Basal Rate section of the Therapy Settings screen does not update until you exit the screen and then return (this will be addressed in a future update) - UI Bug only, and only seen on some phone hardware (like SE phones) with iOS 18
+
+#### 3.6.0 Details
+
+##### Add Automatic Certificate Generation and Renewal
 
 Automatic certificate generation and renewal requires a `Variable` be added to your organization or your repository. Please see these instructions: [Add Variable](../browser/prepare-fork.md#add-variable){: target="_blank" }
 
-#### Maintenance Updates
+##### Maintenance Updates
 
 These maintenance changes do not affect the functioning of the *Loop* app but do enable continued build with current iOS, Xcode and macOS versions, as well as continued operation of the GitHub Actions (Browser Build) capability.
 
@@ -43,7 +57,7 @@ These maintenance changes do not affect the functioning of the *Loop* app but do
 * LoopWorkspace PR 243: Update GitHub action files to use fastlane 2.227.1 and Xcode 16.3
 * LoopWorkspace PR 248: Enable GitHub build to continue working after the keepalive-workflow repository was disabled by *GitHub*
 
-#### Feature Updates
+##### Feature Updates
 
 These are changes in response to feature requests (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the feature.
 
@@ -51,7 +65,7 @@ These are changes in response to feature requests (`Loop Issues`) that were impl
 |:--|:--|:--|:--|:--|
 | [2168](https://github.com/LoopKit/Loop/issues/2168){: target="_blank" } | Loop | [2300](https://github.com/LoopKit/Loop/pull/2300){: target="_blank" } | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
 
-#### Bug Fixes
+##### Bug Fixes
 
 These are fixes in response to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the bug fix.
 
@@ -61,8 +75,9 @@ These are fixes in response to specific bug reports (`Loop Issues`) that were im
 | [2196](https://github.com/LoopKit/Loop/issues/2196){: target="_blank" } | Loop | [2295](https://github.com/LoopKit/Loop/pull/2295){: target="_blank" } | Bolus progress can display a stale total delivery value (UI bug only) |
 | [2265](https://github.com/LoopKit/Loop/issues/2265){: target="_blank" } | G7SensorKit | [34](https://github.com/LoopKit/G7SensorKit/pull/34){: target="_blank" } | No G7 CGM Updates - Loop Failure |
 | [2291](https://github.com/LoopKit/Loop/issues/2291){: target="_blank" } | G7SensorKit | [35](https://github.com/LoopKit/G7SensorKit/pull/35){: target="_blank" } | Backfill from G7 Created Bad Data |
+| N/A | Loop | [2297](https://github.com/LoopKit/Loop/pull/2297){: target="_blank" } | Fix display glitch for Algorithm Experiment selections |
 
-#### OmniBLE and OmniKit Updates
+##### OmniBLE and OmniKit Updates
 
 Updates were made to the Omnipod pump submodules: OmniBLE and OmniKit. Unless otherwise noted, the following functional updates were made to both submodules with the PR numbers included in parentheses:
 
