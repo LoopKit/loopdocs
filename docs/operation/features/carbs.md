@@ -1,18 +1,5 @@
 ## Meal Entry
 
-### Loop 3 Updates:
-
-* [Time](#time): Loop 3 adds the +/- 15 minute buttons to adjust time for entry
-* [Food Type](#food-type): emoji keyboard
-    * Loop 3 initially displays Medium emojis and the association of some emojis with absorption time has been improved
-* [Absorption Time](#absorption-time): values for fast, medium and slow
-    * Loop 3 uses 30 minutes, 3 hr, 5 hr
-* [Meal Bolus](bolus.md#meal-bolus): Loop 3 fills in the Bolus row with Recommended Bolus
-* [Large Meal Warning](#large-meal-warning)
-    * The warning limit of 99 g was chosen to assist in catching mistakes such as entering 115 grams instead of 15 grams
-* [Override Active Warning](#override-active-warning)
-    * A warning is presented when entering carbs while an override with sensitivity other than 100% is active
-
 ### New with Version 3.4.x
 
 The [Favorite Foods](../../loop-3/features.md#favorite-foods){: target="_blank" } feature was added with version 3.4.x. This is an even faster way to enter meals than is described in the next section, Meal Entry - Fast Version.
@@ -60,9 +47,9 @@ Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 
 1. Enter number of grams of carbs in the Amount Consumed row (keyboard appears automatically)
 1. Tap continue to advance to the **Meal Bolus** screen (as shown in the graphic below)
-1. Tap Save and Deliver to Save the carbs and Deliver the recommended bolus
+1. Tap Save Carbs & Deliver to Save the carbs and Deliver the recommended bolus
 
-The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen is completed.
+The carbs are saved as soon as the [**Meal Bolus**](bolus.md#meal-bolus) screen is completed.
 
 * If no bolus is recommended in the **Meal Bolus** screen:
     * A No Bolus Recommended warning appears with the reason why
@@ -73,7 +60,7 @@ The carbs are not saved until the [**Meal Bolus**](bolus.md#meal-bolus) screen i
 {align="center"}
 
 !!! warning "Carbs are Saved in Meal Bolus Screen"
-    Carbohydrates are saved when the `Save and Bolus` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
+    Carbohydrates are saved when the `Save Carbs & Deliver` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
 
     If you see a notification after saving a carbohydrate entry, check carbohydrates entries in the *Loop* app. Do **not** just add the entry again without checking.
 
