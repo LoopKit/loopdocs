@@ -25,7 +25,7 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 
 ### Loop v3.6.0
 
-*Loop* v3.6.0 was released on TBD April 2025.
+*Loop* v3.6.0 was released on 23 April 2025.
 
 * [Link to release notes for Loop 3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0){: target="_blank" }
 
@@ -33,12 +33,14 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 
 * Add Automatic Certificate Generation and Renewal
 * Implement updates to minimize Dexcom G7 outages that were reported over the last few months, possibly related to iOS 18 changes
-* Modify the bolus after meals button to explicitly say `Save Carbs & Deliver`
-* Updates to Omnipod Eros and DASH repositories: some bug fixes, some improved responses
+* Modify the bolus after meals button to say `Save Carbs & Deliver`
+* Update Omnipod Eros and DASH repositories: some bug fixes, some improved responses
 * Fix a few bugs
     * Fixed: Stale value of the total bolus in the Bolus Progress Display in HUD - UI Bug only
     * Fixed: Glucose change graph 'predicted' effects are inconsistent at different times or between orientations
-    * Fixed: Dexcom G7 calibration flags were not decoded correctly and some backfill messages could be left over from a previous sensor and provide erroneous date data
+    * Fixed: Dexcom G7 calibration flags were not decoded correctly
+    * Fixed: Dexcom G7 rare but significant date offset for glucose data
+        * If the backfillFinished message was not detected and a stale backFill message was applied to a new sensor, the date for that glucose reading would be in error
     * Fixed: The Algorithm Experiments screen could show stale selections - UI Bug only
     * Not Fixed: The Basal Rate section of the Therapy Settings screen does not update until you exit the screen and then return (this will be addressed in a future update) - UI Bug only, and only seen on some phone hardware (like SE phones) with iOS 18
 

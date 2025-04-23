@@ -115,6 +115,15 @@ Digital Service Act Compliance
 
 Open your *GitHub* account and select your <code>LoopWorkspace repository</code> from your repositories list.
 
+### Special Instructions for 3.6.0
+
+When updating to version 3.6.0, there are two "extra" things to do.
+
+* [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to enable automatic renewal of certificates
+* Manually update (sync) the fork - as described in this section
+    * With automatic build, you typically let the automatic process update the fork for you
+    * In this case, a third-party repository was removed by *GitHub* at the same time version 3.6.0 was released - this change prevented any builds from working - including the automatic sync that normally happens
+
 ### Up to Date or Behind
 
 The bullets below show typical messages when you are building the `main` branch. If you are building a different `branch`, the messages show that `branch name` instead of `main`.

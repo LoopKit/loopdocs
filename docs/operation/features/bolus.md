@@ -1,23 +1,13 @@
-## Updates with version 3 and later
-
-* Loop 3 uses the setting name of Glucose Safety Limit, which has the same meaning as Suspend Threshold in Loop 2
-* With Loop 3.2 and later
-    * Loop automatic delivery of insulin is limited when users IOB is two times the [<code>Maximum Bolus</code>](../../loop-3/therapy-settings.md#maximum-bolus) amount
-* Bolus Row: 
-    * With Loop 3.0 and later
-        * The Recommended Bolus is provided AND the default for the Bolus is the recommended value
-        * If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry
-
 ## Meal Bolus
 
-The **Meal Bolus** screen is entered following a carb entry or edit action, the active button might be **Save and Bolus** or, if no bolus was recommended, **Save without Bolusing**. 
+The **Meal Bolus** screen is entered following a carb entry or edit action, the active button might be **Save Carbs & Deliver** or, if no bolus was recommended, **Save without Bolusing**. 
 
 The **Save** refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (Loop 3 only).
 
 You can review the carb information at the [Meal Entry](carbs.md) link.
 
 !!! Important "Avoid Double Entry of Carbohydrates"
-    Carbohydrates are saved when the `Save and Bolus` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
+    Carbohydrates are saved when the `Save Carbs & Deliver` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
 
     If you see a notification after saving a carbohydrate entry, check carbohydrates entries in the *Loop* app. Do **not** just add the entry again without checking.
 
@@ -25,7 +15,7 @@ You can review the carb information at the [Meal Entry](carbs.md) link.
 
 The graphic below shows the Meal Bolus screen after the user entered carbs and tapped continue:
 
-* The left graphic shows a case where a bolus is recommended - tapping on the **Save and Deliver** button saves the carbs and delivers the bolus
+* The left graphic shows a case where a bolus is recommended - tapping on the **Save Carbs & Deliver** button saves the carbs and delivers the bolus
 * The right graphic shows a case where no bolus is recommended - tapping on the **Save without Bolusing** saves the carbs
 * These graphics are taken from a small phone - the left graphic shows all the information at once whereas the right graphic has an extra information message that requires the user to scroll to see the **Recommended Bolus** and **Bolus** rows
 * For both graphics
@@ -46,7 +36,7 @@ This section is a continuation of the information presented in the [Accept Recom
 
 * The left side shows a modified bolus less than the recommended bolus
 * The right side shows a modified bolus greater than the recommended bolus
-* The **Glucose** prediction graph updates with changes to the **Bolus** value, giving the user the opportunity to accept or change their proposed value before tapping **Save and Deliver**
+* The **Glucose** prediction graph updates with changes to the **Bolus** value, giving the user the opportunity to accept or change their proposed value before tapping **Save Carbs & Deliver**
 * At the next Loop cycle, the app modifies insulin delivery based on the saved information
     * For the example with bolus less than recommended amount:
         * Loop will **NOT** begin to automatically increase insulin delivery until the current glucose is above the bottom of the **Correction** range
@@ -54,7 +44,7 @@ This section is a continuation of the information presented in the [Accept Recom
     * For the example with bolus greater than recommended amount:
         * Loop will probably issue an automatic temp basal of 0 U/hr
         * This is a common "super-bolus" scenario; in other words, "borrow" basal for the meal bolus to limit post meal spikes
-* Remember - the **Glucose** prediction is what happens if you **Save and Deliver** and then no further adjustments are made to insulin delivery by Loop
+* Remember - the **Glucose** prediction is what happens if you **Save Carbs & Deliver** and then no further adjustments are made to insulin delivery by Loop
 
 ![meal bolus when bolus recommended is decreased on left and increased on right](../../loop-3/img/meal-bolus-mod-rec.svg){width="900"}
 {align="center"}
