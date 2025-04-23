@@ -196,7 +196,7 @@ Once you add all six <code>Secrets</code>, your screen should look similar to th
 
 ### Add Variable
 
-This is a new step. It will be used when `Loop 3.6.0` is released to provide automatic renewal of your certificates, which expire once per year.
+This is a new step required with `Loop 3.6.0` and newer versions. It provides automatic renewal of certificates, which expire once per year.
 
 1. While in the same screen where you enter the `Secrets`, click on the `Variables` tab to the right of the `Secrets` tab:
 1. Select new variable and give it the name the `ENABLE_NUKE_CERTS` and enter `true` as the value
@@ -207,13 +207,11 @@ ENABLE_NUKE_CERTS
 
 What did you just do?
 
-* When `Loop 3.6.0` is released, certificates will be automatically updated if you have configured this `Variable`
-* After `Loop 3.6.0` is released, as long as your *Apple* developers license is valid and all agreements are signed: **you can skip the steps to create or renew your certificates**!
-* LoopFollow v2.3.0 or newer makes use of this variable to automate certificate renewal
+* Certificates will be automatically updated if you have configured this `Variable`
+* With `Loop 3.6.0` and newer versions, as long as your *Apple* developers license is valid and all agreements are signed: **you can skip the steps to create or renew your certificates**!
 
 ![enable nuke certs](img/gh-nuke-certs.png){width="700"}
 {align="center"}
-
 
 ## Next Step
 

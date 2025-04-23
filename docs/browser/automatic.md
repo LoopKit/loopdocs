@@ -17,11 +17,12 @@ Regardless of your choice, please [Disable Automatic Installation from *TestFlig
 You still need to **take these actions** to ensure a recent build of the *Loop* app is available in *TestFlight* for you to install on your phone when you choose:
 
 * Keep your *Apple Developer* account up to date with agreements signed
-* [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } once a year
+* Check your *GitHub* action if you ever get an email saying an automatic action failed
+* Look at your *TestFlight* app on the second of every month to make sure a new build is available for you to install when you are ready
 
 ### Successful Weekly Action
 
-Normally, you will see a successful `build action` once a week. This happens at 08:00 UTC every Wednesday.
+Normally, you will see a successful `build action` once a week. This happens every Wednesday.
 
 If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. 
 
@@ -33,7 +34,7 @@ In that case, you should check your favorite information site to find out what t
 
 ### Successful Monthly Action
 
-On the first day of every month at 06:00 UTC, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
+On the first day of every month, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
 
 You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
 
@@ -67,9 +68,7 @@ The `alive` branch you need is created automatically when you run the `Build Loo
 
 ## Automatic Certificates
 
-Coming soon with `Loop 3.6.0`. 
-
-Already here with `LoopCaregiver`, `LoopFollow` and some other Open-Source apps.
+Automatic renewal of certificates is included in `Loop 3.6.0`.
 
 ### Requirements
 
@@ -86,11 +85,11 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
     * You need a new `Distribution` Certificate at *Apple*
     * You need to create new signing credentials for `Match-Secrets`
 
-    For the `Loop` app, up through version 3.4.4, you must to do this [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } process manually. Once version 3.6.0 is released, it will be automatic.
+    For the `Loop` app, up through version 3.4.4, you had to do this [Renew Certificate](bb-update.md#renew-certificate){: target="_blank" } process manually. Now that version 3.6.0 is released, it is automatic.
 
 ### Automatic Certificate Renewal
 
-Some Open-Source apps, in particular `Trio`, `LoopCaregiver` and `LoopFollow` already have this capability. It will be available in with the next release of the *Loop* app (3.6.0).
+Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow` and `Loop` have automatic certificate renewal.
 
 * If your signing credentials for the app being built are invalid and `ENABLE_NUKE_CERTS` is `true`, then signing credentials will be cleared from your `Match-Secrets` repository, a new `Distribution` certificate will be created at *Apple* and signing credentials for the current app will be generated and stored in `Match-Secrets`.
 
@@ -106,13 +105,13 @@ The times are shifted to make sure only one Open-Source app performs a `nuke` ac
 
 | Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
 |:--|:-:|:-:|:-:|
-| <span translate="no">Loop</span> | `dev` only | 09:00 | 07:00 |
+| <span translate="no">Loop</span> | &#x2705; | 09:00 | 07:00 |
 | <span translate="no">LoopCaregiver</span> | &#x2705; | 13:00 | 11:00 |
 | <span translate="no">LoopFollow</span> | &#x2705; | 12:00 | 10:00 |
 | <span translate="no">LoopFollow_Second</span> | &#x2705; | 12:20 | 10:20 |
 | <span translate="no">LoopFollow_Third</span> | &#x2705; | 12:40 | 10:40 |
 | <span translate="no">Trio</span> | &#x2705; | 08:00 | 06:00 |
-| <span translate="no">xDrip4iOS</span> | n | 16:00 | 14:00 |
+| <span translate="no">xDrip4iOS</span> | &#x274C; | 16:00 | 14:00 |
 
 
 ## Modify Automatic Building

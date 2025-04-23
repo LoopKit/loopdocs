@@ -12,18 +12,15 @@
     Manually update and build the *Loop* App
 
     - 5 min: Check *Apple* account status
-    - Check if you need to renew certificates (once a year only)
     - 5 min: Update version if a new one is available
     - 5 min: Start the Build
     - 1 hour: Wait for the build to complete and appear in the *TestFlight* app on your phone
         * depends on *GitHub*, *Apple* and *TestFlight*
     - 5 min: Install from *TestFlight* onto your phone
 
-    Once a Year [Renew Certificate](#renew-certificate)
+    Once a Year certificates must be renewed
 
-    * 5 min: Clear out expired certificates
-    * 5 min: Generate new certificates
-    > When Loop 3.6.0 is released, certificate renewal will be automatic once you [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
+    * With `Loop 3.6.0` and newer, certificate renewal is automatic once you [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
 
     One Time: Complete the information for the Digital Service Act Compliance
 
@@ -35,10 +32,10 @@
 
     Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild):
 
-    * If currently using verion 3.4.0 or later, builds are automatic but you still need to do some actions:
+    * If currently using verion 3.4.0 or newer, builds are automatic but you still need to do some actions:
         * Your *Apple Developer* account must be active
         * All agreements must be signed for your *Apple Developer* account
-        * Once a year, you need to update [Renew Certificates](#renew-certificate)
+        * Once a year, you need to update renew certificates, but this is automatic with `Loop 3.6.0` and newer versions
 
     If you are running `Loop-dev`, be sure to review these instructions but modify for the branch you are using: refer to [Build Loop dev with Browser](build-dev-browser.md)
 
@@ -52,7 +49,6 @@
     - **Can I do this on my phone?** Yes, especially after you update your *GitHub* token to `No Expiration`.
     - **How do I set my *GitHub* `Personal Access Token` to never expire and to support the automatic rebuild feature?** See this section [Regenerate Token](#regenerate-token).
     - **What happens to my existing builds when I change my *GitHub* Personal Access Token?** Nothing. The <code>GH_PAT</code> only affect future builds. Previous build are available for the full 90 days.
-    - **Is there anything I have to do once a year?** Yes. Once a year you need to get a new `Distribution Certificate`. These only last one year. See this section [Renew Certificate](#renew-certificate)
 
 ### When to Update or Rebuild
 
@@ -67,20 +63,19 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
 !!! abstract "Summary of Update Steps"
     1. [Accept Agreements](#accept-agreements)
-    2. [Renew Certificate](#renew-certificate) **(once a year)**
-    3. [Update `Fork`](#update-fork)
-    4. [Build the *Loop* App](#build-the-loop-app)
-    5. [Wait for *TestFlight*](#wait-for-testflight)
-    6. [Install on Phone](#install-the-loop-app-on-the-phone)
+    2. [Update `Fork`](#update-fork)
+    3. [Build the *Loop* App](#build-the-loop-app)
+    4. [Wait for *TestFlight*](#wait-for-testflight)
+    5. [Install on Phone](#install-the-loop-app-on-the-phone)
 
     Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
 
-    There is also a helpful video for updating (it does not include the Renew Certificates step, which is only done once a year):
+    There is also a helpful video for updating:
 
     * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
 
 !!! important "How to Ask for Help"
-    Updating with Browser Build should be pretty fast and often automatic. Updating certificates (once a year) can sometimes be tricky.
+    Updating with Browser Build should be pretty fast and often automatic.
 
     If you are having trouble:
 
@@ -88,7 +83,7 @@ Under ordinary circumstances, you do not *have to* rebuild or update your *Loop*
 
 ## Accept Agreements
 
-> This is Step 1 of 6 - it may not always be necessary, but please check every time.
+> This is Step 1 of 5 - it may not always be necessary, but please check every time.
 
 !!! warning "Wait After You Agree"
     It typically takes 15 minutes before your updated agreement is available so you can complete your build.
@@ -113,81 +108,10 @@ Digital Service Act Compliance
     * This is a new requirement that must be completed one time
     * See [Digital Service Act Compliance](prepare-app.md#digital-service-act-compliance){: target="_blank" } for instructions
 
-## Renew Certificate
-
-> This is Step 2 of 6 - it is only needed once a year - you should get an email from Apple 30 days before your `Distribution Certificate` expires. (Don't worry if you did not see the email.)
-
-> If you have not added the `Variable` `ENABLE_NUKE_CERTS`, do it now. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }. Once `Loop 3.6.0` is released, your fork is updated and you set up that variable, you can skip this step - it will be automatic.
-
-**Apps in TestFlight are not affected when a certificate expires or is revoked.**
-
-* Apps installed on the phone continue to run
-* Apps can be installed from TestFlight onto a phone up through the TestFlight expiration date
-* You just cannot build a new app until a new Certificate is generated
-
-??? question "Do you want to know more? (Click to open/close)"
-    This is only a summary - please follow the detailed steps below carefully.
-
-    * Delete all your certificates that say the type is `Distribution`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
-
-    * Some people have `Distribution Managed` types listed. These are cloud-managed. An internet search finds this quote: "My general approach to cloud-managed certificates is to ignore them and let Apple’s infrastructure do its thing."
-
-    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`.
-
-    * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
-
-### Manual Steps to Renew Your `Distribution Certificate`
-
-!!! warning "Delete and Create"
-    **Do not miss the final step in this section. After you delete certificates, you must run the Action for `Create Certificates` before you can build an app again.**
-
-1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
-    * If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
-    * Carefully examine the `Type` column - do **not** delete a certificate with type of `Development`
-        * If you do not have any rows that say the type is `Distribution`, your certificate already expired and was removed by *Apple*; so skip ahead to Step 2
-        * If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to [Update `Fork`](#update-fork)
-    * Click each row that has a type of `Distribution` and revoke it
-    * You will get an email informing you the certificate was revoked
-    * You can ignore rows with a type of `Distribution Managed`
-1. Navigate to your `Match-Secrets` Repository
-    * You can do this several ways, but one method is demonstrated by the GIF below
-    * Open the URL for your *GitHub* account (address is `https://github.com/username` where `username` is replaced by your *GitHub* username
-    * Click on the Repositories Tab
-    * Select Match-Secrets
-
-    ![navigate to your Match-Secrets repository](img/match-secrets-nav.gif){width="650"}
-    {align="center"}
-
-1. Delete the `certs/distribution` folder of your `Match-Secrets` `repository` using these instructions. The GIF below indicates the places to click with numbered red rectangles:
-    * Frame 1: Click 1 on the folder called `certs/distribution`
-    * Frame 2: Click 2 and 3 on the three dots in the upper right and then `Delete directory`
-    * Frame 3: Click 4 and 5 on `Commit changes` in the upper right and then accept the suggested choice by clicking on `Commit changes` in the lower right
-
-    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="650"}
-    {align="center"}
-
-    !!! question "Deleting the certs/distribution folder did not work for me"
-        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](bb-errors.md#reset-match-secrets){: target="_blank" }
-
-1. While still within your *Github* account, navigate to your fork of LoopWorkspace.
-    * You can do this several ways, but one method is demonstrated by the GIF below
-    * Click on your username and then `Repositories` and select `LoopWorkspace`
-    * Once you are on your LoopWorkspace repository, click on the link below and follow the instructions provided to create your certificates.
-    * Run the [`Action`: `Create Certificates`](certs.md#create-certificates){: target="_blank" }
-
-    ![navigate to your LoopWorkspace repository](img/switch-nav.gif){width="650"}
-    {align="center"}
-
-!!! warning "Other Apps"
-    If you build other apps using the build with browser method, they have just had their certificates revoked.
-
-    * The existing apps you installed from TestFlight continue working until their TestFlight expiration date
-    * You cannot build new versions of the app until you run `Create Certificates` for that app
-    * To make sure you don't forget, go ahead and do that for all your other `repositories` now
 
 ## Update `Fork`
 
-> This is Step 3 of 6 - it may not always be necessary, but please check every time.
+> This is Step 2 of 5 - it may not always be necessary, but please check every time.
 
 Open your *GitHub* account and select your <code>LoopWorkspace repository</code> from your repositories list.
 
@@ -224,7 +148,7 @@ The bullets below show typical messages when you are building the `main` branch.
 
 ## Build the *Loop* App
 
-> This is Step 4 of 6 - this is always required.
+> This is Step 3 of 5 - this is always required.
 
 #### Build the App
 
@@ -260,6 +184,8 @@ You can ignore an email from *Apple* that there are things you must fix in your 
 
 ## Wait for *TestFlight*
 
+> This is Step 4 of 5.
+
 You'll receive an App Store Connect email confirming that the build has completed processing, and a *TestFlight* email confirming the new app is ready to test.
 
 * If you get an email that the action failed, then return to your repository and look for Build Action error messages
@@ -271,7 +197,7 @@ You'll receive an App Store Connect email confirming that the build has complete
 
 ## Install the *Loop* app on the phone
 
-> This is Step 6 of 6 - once you finish this, you are done and your app will last 90 days.
+> This is Step 5 of 5 - once you finish this, you are done and your app will last 90 days.
 
 Open the *TestFlight* app on the Loopers phone and install the most recent version of the *Loop* app. Most Loopers have automatic update disabled on their phones, so this is a manual process. **Don't forget.**
 
@@ -436,3 +362,69 @@ In this example, the branch and commit number are included followed by an indica
     If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
 
     Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
+
+## No Longer Needed
+
+This section contains the old directions to manually renew certificates. It is no longer needed with the automatic certificate renewal method found in `Loop 3.6.0` and newer versions.
+
+## Renew Certificate
+
+Manual certificate renewal is not longer required if you added the `Variable` `ENABLE_NUKE_CERTS`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
+
+**Apps in TestFlight are not affected when a certificate expires or is revoked.**
+
+* Apps installed on the phone continue to run
+* Apps can be installed from TestFlight onto a phone up through the TestFlight expiration date
+* You just cannot build a new app until a new Certificate is generated
+
+??? question "Do you want to know more? (Click to open/close)"
+    This is only a summary - please follow the detailed steps below carefully.
+
+    * Delete all your certificates that say the type is `Distribution`. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)
+
+    * Some people have `Distribution Managed` types listed. These are cloud-managed. An internet search finds this quote: "My general approach to cloud-managed certificates is to ignore them and let Apple’s infrastructure do its thing."
+
+    * The Certificate in question is embedded in your `Match-Secrets repository`. In order to proceed, you need to remove the old certificate from `Match-Secrets`.
+
+    * Finally, for every app that you build with this method, you need to run `Create Certificates` for that app. (Step 4 below.)
+
+### Manual Steps to Renew Your `Distribution Certificate`
+
+Manual certificate renewal is not longer required if you added the `Variable` `ENABLE_NUKE_CERTS`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
+
+1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
+    * If your screen shows no Certificates and you see a message "Getting Started with Certificates", your certificate already expired and was removed by *Apple*; so skip ahead to Step 2: Navigate to your `Match-Secrets` Repository
+    * Carefully examine the `Type` column - do **not** delete a certificate with type of `Development`
+        * If you do not have any rows that say the type is `Distribution`, your certificate already expired and was removed by *Apple*; so skip ahead to Step 2
+        * If your certificate has an expiration date several months in the future - you can wait and renew your certificate later; skip ahead to [Update `Fork`](#update-fork)
+    * Click each row that has a type of `Distribution` and revoke it
+    * You will get an email informing you the certificate was revoked
+    * You can ignore rows with a type of `Distribution Managed`
+1. Navigate to your `Match-Secrets` Repository
+    * You can do this several ways, but one method is demonstrated by the GIF below
+    * Open the URL for your *GitHub* account (address is `https://github.com/username` where `username` is replaced by your *GitHub* username
+    * Click on the Repositories Tab
+    * Select Match-Secrets
+
+    ![navigate to your Match-Secrets repository](img/match-secrets-nav.gif){width="650"}
+    {align="center"}
+
+1. Delete the `certs/distribution` folder of your `Match-Secrets` `repository` using these instructions. The GIF below indicates the places to click with numbered red rectangles:
+    * Frame 1: Click 1 on the folder called `certs/distribution`
+    * Frame 2: Click 2 and 3 on the three dots in the upper right and then `Delete directory`
+    * Frame 3: Click 4 and 5 on `Commit changes` in the upper right and then accept the suggested choice by clicking on `Commit changes` in the lower right
+
+    ![delete the distributon certs folder in your Match-Secrets repository](img/delete-distr-certs-match-secrets.gif){width="650"}
+    {align="center"}
+
+    !!! question "Deleting the certs/distribution folder did not work for me"
+        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](bb-errors.md#reset-match-secrets){: target="_blank" }
+
+1. While still within your *Github* account, navigate to your fork of LoopWorkspace.
+    * You can do this several ways, but one method is demonstrated by the GIF below
+    * Click on your username and then `Repositories` and select `LoopWorkspace`
+    * Once you are on your LoopWorkspace repository, click on the link below and follow the instructions provided to create your certificates.
+    * Run the [`Action`: `Create Certificates`](certs.md#create-certificates){: target="_blank" }
+
+    ![navigate to your LoopWorkspace repository](img/switch-nav.gif){width="650"}
+    {align="center"}

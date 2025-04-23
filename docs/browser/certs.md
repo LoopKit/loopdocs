@@ -1,9 +1,8 @@
 ## Overview
 
-The instructions on this page are required to build your app intially. This action ties information in your Match-Secrets private repository to your Apple information so that the build action works. Once successful that, it only needs to be run again in a few cases.
+With the release of `Loop 3.6.0`, the build action includes the create certificates action. This action can be run independently, but is no longer required.
 
-* When your certificates have expired (after one year) and you need to [Renew Certificates](bb-update.md#renew-certificate){:target="_blank"}
-* When the developers have modified the Identifiers; this requires Create Certificates to be run after you successfully run Add Identifiers and update the new Identifiers
+You can skip ahead to [Build the App](build-yml.md).
 
 ## `Create Certificates`
 

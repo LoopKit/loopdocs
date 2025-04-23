@@ -3,7 +3,7 @@
 !!! important "Get Help, Not Frustrated"
     For first-time builders, there are a lot of one-time steps that all have to be correct and many screens look similar.
 
-    If you are updating your build or renewing certificates, the process can be confusing and some error messages can be misleading.
+    If you are updating your build, the process can be confusing and some error messages can be misleading.
 
     If you are having trouble, don't hesitate to ask for help.
 
@@ -61,7 +61,6 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
     **Solution**:
 
-    * For `Loop`: wait for 3.6.0 release (coming soon), all other apps are updated
     * Manually sync your fork of the repository: [Update `Fork`](bb-update.md#update-fork){: target="_blank" }
     * Manually start your build: [Build](bb-update.md#build-the-app){: target="_blank" }
 
@@ -78,7 +77,7 @@ If you get an error when building with a browser, you can use this page to figur
 !!! important "Certificate is missing"
     If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
 
-    * See [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
+    * With `Loop 3.6.0` and newer, this should not happen. Make sure you [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to automatically renew certificates.
 
 These are some of the most common errors to date.
 
@@ -137,13 +136,11 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 ### Missing Certificates
 
-> Coming soon: when Loop 3.6.0 (or newer) is available, certificates will be automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
-
-> After Loop 3.6.0 is released, the first attempt to build will update the files required for automatic certificate creation. The second attempt to build will use the new files. So if the first attempt with Loop 3.6.0 fails, try again.
+> With `Loop 3.6.0` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
 
 If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and can not create a new one because you enabled`.
 
-* See [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
+> The first automatic build when Loop 3.6.0 is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with Loop 3.6.0 fails, try again.
 
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
 {align="center"}
@@ -441,9 +438,7 @@ Copy the words on the line below and paste them into the search function for you
 If that phrase is found, then:
 
 * Make sure you completed the [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect) Step
-    * Once you've resolved that step, run these *Actions* again:
-        * `Create Certificates`
-        * `Build Loop`
+    * Once you've resolved that step, run `Build Loop` action again
 
 
 * This can also be caused if you correctly created the *Loop* App but entered an incorrect value for the `TEAMID`.
@@ -475,9 +470,8 @@ For example, you might see:
 
 Return to [First-Time: Identifiers for the `Loop` app](prepare-app.md#identifiers-for-the-loop-app) and make sure you followed all the steps.
 
-You must create certificates again before you can build *Loop*:
+You can build *Loop*:
 
-* Action: `Create Certificates`
 * Action: `Build Loop`
 
 ### `Error: A new one cannot be created because you enabled`
@@ -701,4 +695,4 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 
 If coming here because you enter the wrong `TEAMID` in `Secrets` - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
 
-After you delete identifiers, you must add them back before you can build a given app. Configure them and create certificates before you can build again.
+After you delete identifiers, you must add them back before you can build a given app. Configure them and build again.

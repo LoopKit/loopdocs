@@ -53,7 +53,7 @@
         1. Make the desired modification(s) using the pencil tool
         1. Save your changes to a patch branch
         1. Prepare lines needed for each customization and save
-    * New with 3.4.x release, there are 2 ways to add customizations (use only one)
+    * With `Loop 3.4` and newer, there are 2 ways to add customizations (use only one)
         * See [Update LoopWorkspace](#update-loopworkspace){: target="_blank" }
         * See [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }
     * Regardless of the method, incorporate the customization with `Action 4: Build Loop`
@@ -444,7 +444,7 @@ The rest of this page has additional information most people can skip. If a ment
 
 ### How to Use the `patches` Folder
 
-With the release of 3.4.x, you can add patches to your `GitHub-Username/LoopWorkspace` fork in the `patches` folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop.yml file.
+With `Loop 3.4.0` and newer, you can add patches to your `GitHub-Username/LoopWorkspace` fork in the `patches` folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop.yml file.
 
 Refer to [Prepare customization lines](#prepare-customization-lines){: target="_blank" }:
 

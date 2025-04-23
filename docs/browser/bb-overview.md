@@ -50,7 +50,6 @@ The steps on these pages must be completed for you to build an app using a brows
 1. [Prepare Identifiers](identifiers.md){: target="_blank" }
 1. [Prepare App](prepare-app.md){: target="_blank" }
 1. [Prepare *TestFlight* Group](tf-users.md){: target="_blank" }
-1. [Create Certificates](certs.md){: target="_blank" }
 1. [Build the *Loop* App](build-yml.md){: target="_blank" }
 
 The pages of instructions listed above give detailed steps on how to build the *Loop* app. If you are building a different app, you can follow the detailed instructions but will need to know the Fork, App Name, Identifiers and in some cases App Group for the App you intend to build. Once you build one app, subsequent apps are much easier to build.
@@ -101,9 +100,7 @@ There is also a helpful video for this process. Once again, this was prepared fo
 
 * [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
 
-After 3.6.0 is released, certificates will be automatically renewed. In the meantime, they must be renewed manually using these instructions:
-
-* [Renew Certificates](bb-update.md#renew-certificate){: target="_blank" }
+> With `Loop 3.6.0`, certificates are automatically created and renewed. You no longer need to renew certificates as a separate step.
 
 ## Other Topics
 
