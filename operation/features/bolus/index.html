@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#updates-with-version-3-and-later" class="md-skip">
+        <a href="#meal-bolus" class="md-skip">
           Skip to content
         </a>
       
@@ -2004,15 +2004,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#updates-with-version-3-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updates with version 3 and later
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#meal-bolus" class="md-nav__link">
     <span class="md-ellipsis">
       Meal Bolus
@@ -3529,15 +3520,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#updates-with-version-3-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updates with version 3 and later
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#meal-bolus" class="md-nav__link">
     <span class="md-ellipsis">
       Meal Bolus
@@ -3630,35 +3612,19 @@
 
   <h1>Bolus</h1>
 
-<h2 id="updates-with-version-3-and-later">Updates with version 3 and later<a class="headerlink" href="#updates-with-version-3-and-later" title="Anchor link to this Header on this Page">&para;</a></h2>
-<ul>
-<li><abbr title="Latest release with major updates">Loop 3</abbr> uses the setting name of <abbr title="Loop will not suggest insulin delivery when glucose prediction (in next 3 hours) goes below this limit; in Loop 2 this was called Suspend Threshold">Glucose Safety Limit</abbr>, which has the same meaning as Suspend Threshold in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2</li>
-<li>With <abbr title="Latest release with major updates">Loop 3</abbr>.2 and later<ul>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> automatic delivery of insulin is limited when users <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is two times the <a href="../../../loop-3/therapy-settings/#maximum-bolus"><code>Maximum Bolus</code></a> amount</li>
-</ul>
-</li>
-<li>Bolus Row: <ul>
-<li>With <abbr title="Latest release with major updates">Loop 3</abbr>.0 and later<ul>
-<li>The Recommended Bolus is provided AND the default for the Bolus is the recommended value</li>
-<li>If the user taps on the Bolus row, the amount is modified to 0 and the keyboard is opened for entry</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="meal-bolus">Meal Bolus<a class="headerlink" href="#meal-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The <strong>Meal Bolus</strong> screen is entered following a carb entry or edit action, the active button might be <strong>Save and Bolus</strong> or, if no bolus was recommended, <strong>Save without Bolusing</strong>. </p>
+<p>The <strong>Meal Bolus</strong> screen is entered following a carb entry or edit action, the active button might be <strong>Save Carbs &amp; Deliver</strong> or, if no bolus was recommended, <strong>Save without Bolusing</strong>. </p>
 <p>The <strong>Save</strong> refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (<abbr title="Latest release with major updates">Loop 3</abbr> only).</p>
 <p>You can review the carb information at the <a href="../carbs/">Meal Entry</a> link.</p>
 <div class="admonition important">
 <p class="admonition-title">Avoid Double Entry of Carbohydrates</p>
-<p>Carbohydrates are saved when the <code>Save and Bolus</code> or <code>Save without Bolusing</code> button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.</p>
+<p>Carbohydrates are saved when the <code>Save Carbs &amp; Deliver</code> or <code>Save without Bolusing</code> button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.</p>
 <p>If you see a notification after saving a carbohydrate entry, check carbohydrates entries in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. Do <strong>not</strong> just add the entry again without checking.</p>
 </div>
 <h3 id="accept-recommendation">Accept Recommendation<a class="headerlink" href="#accept-recommendation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The graphic below shows the Meal Bolus screen after the user entered carbs and tapped continue:</p>
 <ul>
-<li>The left graphic shows a case where a bolus is recommended - tapping on the <strong>Save and Deliver</strong> button saves the carbs and delivers the bolus</li>
+<li>The left graphic shows a case where a bolus is recommended - tapping on the <strong>Save Carbs &amp; Deliver</strong> button saves the carbs and delivers the bolus</li>
 <li>The right graphic shows a case where no bolus is recommended - tapping on the <strong>Save without Bolusing</strong> saves the carbs</li>
 <li>These graphics are taken from a small phone - the left graphic shows all the information at once whereas the right graphic has an extra information message that requires the user to scroll to see the <strong>Recommended Bolus</strong> and <strong>Bolus</strong> rows</li>
 <li>For both graphics<ul>
@@ -3679,7 +3645,7 @@
 <ul>
 <li>The left side shows a modified bolus less than the recommended bolus</li>
 <li>The right side shows a modified bolus greater than the recommended bolus</li>
-<li>The <strong>Glucose</strong> prediction graph updates with changes to the <strong>Bolus</strong> value, giving the user the opportunity to accept or change their proposed value before tapping <strong>Save and Deliver</strong></li>
+<li>The <strong>Glucose</strong> prediction graph updates with changes to the <strong>Bolus</strong> value, giving the user the opportunity to accept or change their proposed value before tapping <strong>Save Carbs &amp; Deliver</strong></li>
 <li>At the next <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cycle, the app modifies insulin delivery based on the saved information<ul>
 <li>For the example with bolus less than recommended amount:<ul>
 <li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will <strong>NOT</strong> begin to automatically increase insulin delivery until the current glucose is above the bottom of the <strong>Correction</strong> range</li>
@@ -3693,7 +3659,7 @@
 </li>
 </ul>
 </li>
-<li>Remember - the <strong>Glucose</strong> prediction is what happens if you <strong>Save and Deliver</strong> and then no further adjustments are made to insulin delivery by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>Remember - the <strong>Glucose</strong> prediction is what happens if you <strong>Save Carbs &amp; Deliver</strong> and then no further adjustments are made to insulin delivery by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ul>
 <p align="center"><img alt="meal bolus when bolus recommended is decreased on left and increased on right" src="../../../loop-3/img/meal-bolus-mod-rec.svg" width="900" /></p>
 <h2 id="manual-or-correction-bolus">Manual (or Correction) Bolus<a class="headerlink" href="#manual-or-correction-bolus" title="Anchor link to this Header on this Page">&para;</a></h2>

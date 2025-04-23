@@ -1192,6 +1192,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#special-instructions-for-360" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Instructions for 3.6.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#up-to-date-or-behind" class="md-nav__link">
     <span class="md-ellipsis">
       Up to Date or Behind
@@ -3716,6 +3725,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#special-instructions-for-360" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Instructions for 3.6.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#up-to-date-or-behind" class="md-nav__link">
     <span class="md-ellipsis">
       Up to Date or Behind
@@ -4027,6 +4045,16 @@
 <p>This is Step 2 of 5 - it may not always be necessary, but please check every time.</p>
 </blockquote>
 <p>Open your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and select your <code>LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></code> from your repositories list.</p>
+<h3 id="special-instructions-for-360">Special Instructions for 3.6.0<a class="headerlink" href="#special-instructions-for-360" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When updating to version 3.6.0, there are two "extra" things to do.</p>
+<ul>
+<li><a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to enable automatic renewal of certificates</li>
+<li>Manually update (sync) the <abbr title="a copy of code in a github repository other than the original">fork</abbr> - as described in this section<ul>
+<li>With automatic build, you typically let the automatic process update the <abbr title="a copy of code in a github repository other than the original">fork</abbr> for you</li>
+<li>In this case, a third-party <abbr title="contains project files and each file's revision history">repository</abbr> was removed by <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> at the same time version 3.6.0 was released - this change prevented any builds from working - including the automatic sync that normally happens</li>
+</ul>
+</li>
+</ul>
 <h3 id="up-to-date-or-behind">Up to Date or Behind<a class="headerlink" href="#up-to-date-or-behind" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The bullets below show typical messages when you are building the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you are building a different <code>branch</code>, the messages show that <code>branch name</code> instead of <code>main</code>.</p>
 <ul>
