@@ -50,6 +50,27 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
     All that is needed to assist is your link to the *GitHub* repository where you are building.
 
+### `Check Upstream and Keep Alive` Error
+
+!!! important "`Check Upstream and Keep Alive` Error"
+    **Error**: Your Browser Build fails and when you click on the link, you see
+
+    * **`Check Upstream and Keep Alive`** failed
+
+    **Consequence**: any required sync of your fork is skipped and build is skipped
+
+    **Solution**:
+
+    * For `Loop`: wait for 3.6.0 release (coming soon), all other apps are updated
+    * Manually sync your fork of the repository: [Update `Fork`](bb-update.md#update-fork){: target="_blank" }
+    * Manually start your build: [Build](bb-update.md#build-the-app){: target="_blank" }
+
+    **Details about what happened**:
+
+    On 21 April 2025, *GitHub* removed one of the third-party repositories that we used to keep automatic building going without action on your part. The repository was removed because it was in violation of the *GitHub* terms of service. *GitHub* disables automatic actions for repositories that have been inactive (no commits added in 60 days). For stable apps, like the *Loop* app, this third-party repository enabled a workaround to keep the builds happening.
+
+    This affected all the Open-Source apps in our community - Loop, LoopFollow, LoopCaregiver, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.
+
 ### Most Common Mistakes
 
 If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
