@@ -17,7 +17,7 @@ Tap on the Settings icon at the toolbar of the *Loop* app and look at the versio
 
 ### Is the Released Version Newer?
 
-Release information has been moved for `Loop 3.6.0` and newer. It is now found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases){: target="_blank" }.
+Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases){: target="_blank" }.
 
 Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases){: target="_blank" }.
 
@@ -45,7 +45,7 @@ These maintenance changes do not affect the functioning of the *Loop* app but do
 
 #### Feature Updates
 
-These are changes in reponse to feature requests (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the feature.
+These are changes in response to feature requests (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the feature.
 
 | Loop Issue | Submodule Updated | PR in Submodule | Request | Modification |
 |:--|:--|:--|:--|:--|
@@ -53,7 +53,7 @@ These are changes in reponse to feature requests (`Loop Issues`) that were imple
 
 #### Bug Fixes
 
-These are fixes in reponse to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the bug fix.
+These are fixes in response to specific bug reports (`Loop Issues`) that were implemented in the noted submodule. The LoopWorkspace respository was subsequently updated to include the bug fix.
 
 | Loop Issue | Submodule Updated | PR in Submodule | Description of bug that is fixed |
 |:--|:--|:--|:--|

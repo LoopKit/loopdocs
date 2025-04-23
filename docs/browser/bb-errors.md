@@ -61,7 +61,6 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
     **Solution**:
 
-    * For `Loop`: wait for 3.6.0 release (coming soon), all other apps are updated
     * Manually sync your fork of the repository: [Update `Fork`](bb-update.md#update-fork){: target="_blank" }
     * Manually start your build: [Build](bb-update.md#build-the-app){: target="_blank" }
 
