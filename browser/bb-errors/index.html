@@ -1146,6 +1146,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#check-upstream-and-keep-alive-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Upstream and Keep Alive Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#most-common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       Most Common Mistakes
@@ -3821,6 +3830,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#check-upstream-and-keep-alive-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Upstream and Keep Alive Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#most-common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       Most Common Mistakes
@@ -4205,6 +4223,24 @@
 <p class="admonition-title"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr>, Not Pictures</p>
 <p>If you've been around the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> community for a while, you know the mantra about screenshots. Well, when using a browser to build, <strong>screenshots are close to useless</strong>.</p>
 <p>All that is needed to assist is your link to the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> where you are building.</p>
+</div>
+<h3 id="check-upstream-and-keep-alive-error"><code>Check Upstream and Keep Alive</code> Error<a class="headerlink" href="#check-upstream-and-keep-alive-error" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition important">
+<p class="admonition-title"><code>Check Upstream and Keep Alive</code> Error</p>
+<p><strong>Error</strong>: Your Browser Build fails and when you click on the link, you see</p>
+<ul>
+<li><strong><code>Check Upstream and Keep Alive</code></strong> failed</li>
+</ul>
+<p><strong>Consequence</strong>: any required sync of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is skipped and build is skipped</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>For <code>Loop</code>: wait for 3.6.0 release (coming soon), all other apps are updated</li>
+<li>Manually sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr>: <a href="../bb-update/#update-fork" target="_blank">Update <code>Fork</code></a></li>
+<li>Manually start your build: <a href="../bb-update/#build-the-app" target="_blank">Build</a></li>
+</ul>
+<p><strong>Details about what happened</strong>:</p>
+<p>On 21 April 2025, <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> removed one of the third-party repositories that we used to keep automatic building going without action on your part. The <abbr title="contains project files and each file's revision history">repository</abbr> was removed because it was in violation of the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> terms of service. <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> disables automatic actions for repositories that have been inactive (no commits added in 60 days). For stable apps, like the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, this third-party <abbr title="contains project files and each file's revision history">repository</abbr> enabled a workaround to keep the builds happening.</p>
+<p>This affected all the Open-Source apps in our community - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.</p>
 </div>
 <h3 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to <a href="#help-with-errors">ask for help</a>.</p>
