@@ -60,7 +60,7 @@ The carbs are saved as soon as the [**Meal Bolus**](bolus.md#meal-bolus) screen 
 {align="center"}
 
 !!! warning "Carbs are Saved in Meal Bolus Screen"
-    Carbohydrates are saved when the `Save Carbs & Deliver` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once that the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
+    Carbohydrates are saved when the `Save Carbs & Deliver` or `Save without Bolusing` button is tapped in the Meal Bolus Screen. Once the button is tapped, carbohydrates are saved. That is true even if the bolus does not go through to the pump.
 
     If you see a notification after saving a carbohydrate entry, check carbohydrates entries in the *Loop* app. Do **not** just add the entry again without checking.
 
