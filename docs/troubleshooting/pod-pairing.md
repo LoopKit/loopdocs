@@ -16,17 +16,6 @@ The instructions from Insulet say fill with U-100 insulin. That is the strength 
 !!! tip "Inject slowly"
     Some users are able to get the pods to beep with smaller amounts by very slowly injecting the insulin.
 
-## Verbose Message, Hard to Interpret
-
-This is only seen with DASH pods. Sometimes the communication error happens at a very low level and by the time the error message works its way up to the display, it seems to go on for a long time and may not make sense to the typical looper.
-
-If you see a Pairing exception message similar to the one shown in the graphic below, you probably just need to toggle Bluetooth on the phone.
-
-![bluetooth error](img/pod-error-toggle-bluetooth.png ){width="300"}
-{align="center"}
-
-Still not working, read through the [Why do pod pairings fail?](#why-do-pod-pairings-fail) section.
-
 ## The app crashed after pairing started and before cannula insertion
 
 Sometimes the *Loop* app will crash while a new pod is being setup. This is rare but can happen. There are several parts to the setup process:
