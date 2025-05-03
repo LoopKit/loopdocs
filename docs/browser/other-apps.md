@@ -349,6 +349,7 @@ Refer to the graphic below for the numbered steps:
     {align="center"}
 
 1. Wait a minute or two for the action to finish
+    * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
         * Use the Browser Build Errors page to resolve the error, then repeat the Action
         * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
@@ -389,11 +390,9 @@ Refer to the graphic below for the first four steps:
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
         * Use the Browser Build Errors page to resolve the error, then repeat the Action
         * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
-    * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * [Add Identifiers](identifiers.md#add-identifiers)
-        * Create Certificates
-        * Build Loop
-1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
+1. If the process appears to be happening without an error, go do something else for a while. The build should take less than half an hour (these tend to build faster than the *Loop* app.
+    * When you see the green check (:octicons-check-circle-fill-16:{: .passed }) continue
+    * If there is a late-appearing error, then use [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
 
 ### Build Errors
