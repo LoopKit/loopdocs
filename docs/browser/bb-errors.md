@@ -11,9 +11,9 @@ If you are having trouble:
 
 #### Please DO:
 
-* [Ask a mentor for help](#where-to-get-help-with-browser-build)
 * Use the LoopDocs search feature
 * Use the zulipchat or Facebook search feature
+* [Ask a mentor for help](#where-to-get-help-with-browser-build)
 
 #### Please do NOT:
 
@@ -64,14 +64,20 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
 Please make this your first stop if you get any kind of an error with Browser Build.
 
-!!! important "Check Upstream and Keep Alive Error"
-    If you have not manually updated your fork since 21 April 2025 - there is a one-time requirement to do that. Instructions and background for that step are found here:
+### Link Styles
 
-    * [Check Upstream and Keep Alive Error](#check-upstream-and-keep-alive-error)
+If you notice an arrow pointing up and to the right beside the link:
+
+* This means a new tab or window (depending on your browser configuration) is opened when you click on the link
+* Your original place in the docs is in the original tab, so you can return to your same position in the docs
+
+If there is no upright arrow by a link, then the location is on the same page:
+
+* Once you have read that section, hit the back arrow in your browser to return to your original location
 
 ### Look at the Annotation
 
-If you get an error in an Action. Click on the link and scroll down to view the annonation. An example is shown below. Most errors have a clear annotation telling you what to do. If the annotation is not clear to your, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+If you get an error in an Action. Click on the link and scroll down to view the annotation. An example is shown below. Most errors have a clear annotation telling you what to do. If the annotation is not clear to your, please [ask a mentor for help](#where-to-get-help-with-browser-build).
 
 ![graphic with an example validate secret error](img/example-annotation.png){width="800"}
 {align="center"}
@@ -79,7 +85,7 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 ### Rebuild or New Builder
 
 * If you have successfully built before and this is a rebuild, skip ahead to [Rebuild Errors Quick Reference](#rebuild-errors-quick-reference)
-* If you are a new builder, please follow these suggestions
+* If you are a new builder, please continue reading
 
 ## New Builder: Quick Reference
 
@@ -87,7 +93,7 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 
 This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.
 
-* No other action will work - because all the other actions include Validate Secrets as the first step
+* No other action will work - because all the other actions repeat Validate Secrets as the first step of the action
 * Be sure to [Look at the Annotation](#look-at-the-annotation)
 * You can [ask a mentor for help](#where-to-get-help-with-browser-build)
 
@@ -168,9 +174,15 @@ Ignore the warnings - this does not affect the build.
 
 With `Loop 3.6.0`, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
 
+> Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
+
 ### Rebuild: Build Error
 
 After you update to `Loop 3.6.0`, the Create Certificates Action is incorporated into the Build Action. So for rebuilders, if you completed the manual sync and added the new variable, you should not get an error when building.
+
+> Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
+
+There are, however, a few intermittent errors that can happen when *GitHub* and *Apple* don't communicate for some reason or there is a problem with the *TestFlight* upload. Check out [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating).
 
 ## Most Common Mistakes
 
@@ -280,7 +292,7 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or credit card expiration date, as entered at *Apple*, has passed.
 
-## Find Your Error
+### Find Your Error
 
 At this point, it may be faster to [ask a mentor for help](#where-to-get-help-with-browser-build). But if you want to dig into the details of the log and find the error yourself, the information is here.
 
@@ -295,35 +307,9 @@ Error annotations are available for the *Loop* app version 3.4 and later for som
 1. [Action: `Add Identifiers` Errors](#action-add-identifiers-errors)
 1. [Action: `Create Certificates` Errors](#action-create-certificates-errors)
 1. [Action: `Build Loop` Errors](#action-build-loop-errors) before a successful build
-1. [Repeat `Build Loop` Errors](#repeat-build-loop-errors) after a successful build
+1. [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating) after a successful build
 
 If you discover a new error, please reach out to help us update the documentation.
-
-## Still Stuck?
-
-It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green">:material-checkbox-marked-circle:</font> for **success** or a red x mark <font color="red">:fontawesome-solid-circle-xmark:</font> for **failure**. The graphic below shows an example for the `Add Identifiers` action.
-
-![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
-{align="center"}
-
-If you click on the *action* name, it opens a secondary screen as shown below.
-
-![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result-secondary.svg){width="500"}
-{align="center"}
-
-Click on the top link to view the record of the failed action as shown in the graphic below. You will be pasting strings into the search box (highlighted with a green rectangle) to look for a documented error. Please read the instructions below the graphic.
-
-![graphic with failure details for a GitHub Add Identifier action](img/action-result-failure.svg){width="700"}
-{align="center"}
-
-* Still stuck?
-    * Post for help including your ==*GitHub* **URL**== (the link to your repository)
-    * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
-    * Please **do NOT post a screenshot**
-
-!!! tip "Where to find my *GitHub* URL?"
-    -  Go to your fork of `LoopWorkspace` and highlight the address shown in your browser, for example:
-       https://github.com/==my-name-org==/Loopworkspace
 
 ## Do Not Remove an App
 
@@ -339,16 +325,7 @@ Please do not remove an existing app if you have trouble building a different ap
     1. When trying to restore your app, Apple doesn't allow you to change just the name of the app and will not allow you to restore it because someone else has that name, even though your bundle ID is different
     1. After spending time on the phone with Apple, user's only option was to purchase a new Apple Developer account so they can get a new TEAMID (see steps below) or doing a custom change to the Loop code to modify the bundle ID (no instructions are provided for this - easy to do it wrong)
 
-### New Developer ID with Same GitHub Account
-
-You can use the same GitHub account with a new developer ID. Here are the steps:
-
-1. Update the 4 secrets that are associated with the Apple Account for each repository on the GitHub used for browser build:
-    * TEAMID
-    * FASTLANE_ISSUER_ID
-    * FASTLANE_KEY_ID
-    * FASTLANE_KEY
-1. Once the Secrets are updated, start at the [Identifiers](identifiers.md){:target="_blank"} page and work through the process for each app
+## Instructions to Diagnose Your Errors
 
 ## Action: `Validate Secrets` Errors
 
@@ -531,7 +508,7 @@ These steps are only needed to make room for a `Certificate` when running versio
 
 ## Action: `Build Loop` Errors
 
-This is the section for people who have not successfully built the *Loop* app one time. If you are a repeat builder, please skip ahead to [Repeat Build Loop Errors](#repeat-build-loop-errors).
+This section is for people who have not successfully built the *Loop* app one time. If you are a repeat builder, please skip ahead to [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating).
 
 !!! warning "Run `Create Certificates` First"
     When running a version earlier than `Loop 3.6.0`, you must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
@@ -636,7 +613,7 @@ Once you have created an app in the *App Store* that is not based on your `TEAMI
 
 At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](prepare-fork.md#configure-secrets). This time you will be updating `TEAMID` in the secret list.
 
-## Repeat `Build Loop` Errors
+## Action: `Build Loop` Errors when Updating
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
@@ -644,7 +621,7 @@ Use the [Examine Annotation](#examine-annotation) instructions to find your erro
 
 ### `ERROR: Asset validation failed`
 
-This error indicates your fork needs to be updated. As of 24 April 2025, you are required to use Xcode 16 to build the app.
+This error indicates your fork needs to be updated. As of 24 April 2025, you are required to use Xcode 16 to build the app. This is provided with `Loop 3.6.0` and newer versions.
 
 There are serveral phrases you can check for. All of them have the same solution.
 
@@ -765,7 +742,11 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 ![graphic showing failure to install certificate](img/github-error-cert-failed.png){width="500"}
 {align="center"}
 
-## Reset `Match-Secrets`
+## Extra Sections
+
+It is unlikely you will need these sections.
+
+### Reset `Match-Secrets`
 
 This is not the first thing to try, but sometimes it is the best approach.
 
@@ -793,11 +774,6 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
-
-## Extra Sections
-
-It is unlikely you will need these sections.
-
 ### Delete Identifiers
 
 These instructions are useful if:
@@ -823,3 +799,16 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 If coming here because you enter the wrong `TEAMID` in `Secrets` - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
 
 After you delete identifiers, you must add them back before you can build a given app. Configure them and build again.
+
+### New Developer ID with Same GitHub Account
+
+You can use the same GitHub account with a new developer ID. This is an uncommon scenario, but if you lost access to the developer ID you used to use, you can modify your *GitHub* account to use a new one. Remember - this will be a new app, requiring you to enter your settings fresh and add your pump again. (New pod required if using Omnipod.)
+
+Here are the steps:
+
+1. Update the 4 secrets that are associated with the Apple Account for each repository on the GitHub used for browser build:
+    * TEAMID
+    * FASTLANE_ISSUER_ID
+    * FASTLANE_KEY_ID
+    * FASTLANE_KEY
+1. Once the Secrets are updated, start at the [Identifiers](identifiers.md){:target="_blank"} page and work through the process for each app
