@@ -5,14 +5,24 @@
 
     If you are updating your build, the process can be confusing and some error messages can be misleading.
 
-    If you are having trouble, don't hesitate to ask for help.
+    You are not alone - please reach out.
 
-    Please do NOT:
+If you are having trouble:
 
-    * Spend hours in frustration
-    * Rename or delete a repository
-    * Delete your GitHub account
-    * Remove your App from App Store Connect
+#### Please DO:
+
+* Use the LoopDocs search feature
+* Use the zulipchat or Facebook search feature
+* [Ask a mentor for help](#where-to-get-help-with-browser-build)
+
+#### Please do NOT:
+
+* Search in a general internet browser to find your error
+* Ask ChatGPT (or other AI) how to fix your error
+* Spend hours in frustration
+* Rename or delete a repository
+* Delete your GitHub account
+* Remove your App from App Store Connect
 
 ### Where to Get Help with Browser Build
 
@@ -50,6 +60,96 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
     All that is needed to assist is your link to the *GitHub* repository where you are building.
 
+## Quick Reference for Browser Build Errors
+
+Please make this your first stop if you get any kind of an error with Browser Build.
+
+### Link Styles
+
+If you notice an arrow pointing up and to the right beside the link:
+
+* This means a new tab or window (depending on your browser configuration) is opened when you click on the link
+* Your original place in the docs is in the original tab, so you can return to your same position in the docs
+
+If there is no upright arrow by a link, then the location is on the same page:
+
+* Once you have read that section, hit the back arrow in your browser to return to your original location
+
+### Look at the Annotation
+
+If you get an error in an Action. Click on the link and scroll down to view the annotation. An example is shown below. Most errors have a clear annotation telling you what to do. If the annotation is not clear to your, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+
+![graphic with an example validate secret error](img/example-annotation.png){width="800"}
+{align="center"}
+
+### Rebuild or New Builder
+
+* If you have successfully built before and this is a rebuild, skip ahead to [Rebuild Errors Quick Reference](#rebuild-errors-quick-reference)
+* If you are a new builder, please continue reading
+
+## New Builder: Quick Reference
+
+### New Builder: Validate Secrets Error
+
+This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.
+
+* No other action will work - because all the other actions repeat Validate Secrets as the first step of the action
+* Be sure to [Look at the Annotation](#look-at-the-annotation)
+* You can [ask a mentor for help](#where-to-get-help-with-browser-build)
+
+If you want to try to solve it yourself, refer back to these section in the documentation:
+
+* [Collect Secrets](secrets.md){: target="_blank" }
+* [Enter the Secrets](prepare-fork.md#enter-the-secrets){: target="_blank" }
+
+### New Builder: Add Identifiers Error
+
+If you succeeded with Validate Secrets, this should also succeed. If it does not, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+
+### New Builder: Create Certificates Error
+
+This is one of the hardest ones to solve. If you are getting this, don't be afraid to [ask a mentor for help](#where-to-get-help-with-browser-build). If you want to solve it yourself, a link is coming your way but first read this:
+
+#### This is NOT Your Error
+
+When you start this action, GitHub starts a cloud computer to run your job for you. It doesn't have any information about you or your secrets - yet.
+
+Early in the log file you will see two phrases in red font:
+
+> There are no local code signing identities found.
+
+> security: SecItemCopyMatching: The specified item could not be found in the keychain.
+
+This is normal. The next steps will set up a keychain for you using your Match-Secrets repository and your MATCH_PASSWORD pass phrase.
+
+#### Where to find the Certificate Solutions
+
+Head over to [Action: Create Certificate Errors](#action-create-certificates-errors) and find your specific error.
+
+### New Builder: Build Errors
+
+The most likely reason to get errors here is a mistake in the [Prepare App](prepare-app.md){: target="_blank" } page. 
+
+Common errors are:
+
+* You skipped one of the Identifiers when adding the App Group to it
+* The App Group was spelled wrong
+* You unchecked a capability on one of the Identifiers (because you watched an old video)
+* You did not select the correct identifier when creating your app
+* You entered an incorrect TEAMID
+
+All of these solutions are found in [Action: Build Loop Errors](#action-build-loop-errors). The mentors can pick out the exact solution quickly if you [ask a mentor for help](#where-to-get-help-with-browser-build).
+
+An example annotation for skipping one of the Identifiers is shown in the graphic below. The App Group for `Loop-Intent-Extension` was deliberately removed to provoke that error.
+
+![graphic with an example build error](img//example-identifier-build-errors.png){width="800"}
+{align="center"}
+
+Ignore the warnings - this does not affect the build.
+
+
+## Rebuild Errors: Quick Reference
+
 ### `Check Upstream and Keep Alive` Error
 
 !!! important "`Check Upstream and Keep Alive` Error"
@@ -70,7 +170,21 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 
     This affected all the Open-Source apps in our community - Loop, LoopFollow, LoopCaregiver, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.
 
-### Most Common Mistakes
+### Rebuild: Create Certificates Error
+
+With `Loop 3.6.0`, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
+
+> Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
+
+### Rebuild: Build Error
+
+After you update to `Loop 3.6.0`, the Create Certificates Action is incorporated into the Build Action. So for rebuilders, if you completed the manual sync and added the new variable, you should not get an error when building.
+
+> Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
+
+There are, however, a few intermittent errors that can happen when *GitHub* and *Apple* don't communicate for some reason or there is a problem with the *TestFlight* upload. Check out [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating).
+
+## Most Common Mistakes
 
 If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
 
@@ -97,12 +211,6 @@ These are some of the most common errors to date.
     * You can delete any branch that starts with the name `alive` and try again
     * See [Automatic Creation of `alive branch`](automatic.md#automatic-creation-of-alive-branch){: target="_blank" }
 
-## Error Annotations
-
-Error annotations are available for the *Loop* app released version 3.4 and later. These were contributed by community volunteers along with the improvements to enable automatic updates and automatic builds.
-
-Not all error messages have an annotation yet. In those cases, you will be required to search for the error string as explained in [Find the Error](#find-the-error).
-
 ## Examine Annotation
 
 If a&nbsp;<span translate="no">*GitHub* Action</span>&nbsp;fails, you will see a clear notification.
@@ -125,7 +233,11 @@ Notice that&nbsp;<span translate="no">*GitHub* Action: 1. Validate Secrets</span
 
 ### Annotation without Clear Message (*Certificates*)
 
-Not all error messages have a clear annotation (yet).
+This section is left here for those who have an older version (3.4 or older) in their fork.
+
+> If you have updated to 3.6.0 or newer, refer to [Rebuild Errors: Quick Reference](#rebuild-errors-quick-reference) and ignore this section.
+
+Not all error messages had a clear annotation (up through version 3.4.x).
 
 For example, the graphic below shows a failure of&nbsp;<span translate="no">*GitHub* Action: 3. Create Certificates</span>&nbsp;.
 
@@ -166,7 +278,7 @@ The GIF below shows a failure of&nbsp;_<span translate="no">*GitHub* Action: 4. 
 
 This section is required when you need to search for a string to diagnose and error that does not have a clear annotation.
 
-## Misleading Error Message
+### Misleading Error Message
 
 If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
@@ -180,7 +292,9 @@ If you need detailed instructions, click on this [<code>Apple Program License Ag
 
 You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or credit card expiration date, as entered at *Apple*, has passed.
 
-## Find Your Error
+### Find Your Error
+
+At this point, it may be faster to [ask a mentor for help](#where-to-get-help-with-browser-build). But if you want to dig into the details of the log and find the error yourself, the information is here.
 
 There is a separate section for each step in the process. First, you must follow the [Examine Annotation](#examine-annotation) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.
 
@@ -193,35 +307,9 @@ Error annotations are available for the *Loop* app version 3.4 and later for som
 1. [Action: `Add Identifiers` Errors](#action-add-identifiers-errors)
 1. [Action: `Create Certificates` Errors](#action-create-certificates-errors)
 1. [Action: `Build Loop` Errors](#action-build-loop-errors) before a successful build
-1. [Repeat `Build Loop` Errors](#repeat-build-loop-errors) after a successful build
+1. [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating) after a successful build
 
 If you discover a new error, please reach out to help us update the documentation.
-
-## Still Stuck?
-
-It doesn't matter which action you are running; after the action completes, you will either see a green check mark <font color="green">:material-checkbox-marked-circle:</font> for **success** or a red x mark <font color="red">:fontawesome-solid-circle-xmark:</font> for **failure**. The graphic below shows an example for the `Add Identifiers` action.
-
-![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result.svg){width="700"}
-{align="center"}
-
-If you click on the *action* name, it opens a secondary screen as shown below.
-
-![graphic showing a success and a failure for a GitHub Add Identifiers action](img/action-result-secondary.svg){width="500"}
-{align="center"}
-
-Click on the top link to view the record of the failed action as shown in the graphic below. You will be pasting strings into the search box (highlighted with a green rectangle) to look for a documented error. Please read the instructions below the graphic.
-
-![graphic with failure details for a GitHub Add Identifier action](img/action-result-failure.svg){width="700"}
-{align="center"}
-
-* Still stuck?
-    * Post for help including your ==*GitHub* **URL**== (the link to your repository)
-    * With that, mentors can diagnose your problem - or at least make a good guess at what you need to try
-    * Please **do NOT post a screenshot**
-
-!!! tip "Where to find my *GitHub* URL?"
-    -  Go to your fork of `LoopWorkspace` and highlight the address shown in your browser, for example:
-       https://github.com/==my-name-org==/Loopworkspace
 
 ## Do Not Remove an App
 
@@ -237,16 +325,7 @@ Please do not remove an existing app if you have trouble building a different ap
     1. When trying to restore your app, Apple doesn't allow you to change just the name of the app and will not allow you to restore it because someone else has that name, even though your bundle ID is different
     1. After spending time on the phone with Apple, user's only option was to purchase a new Apple Developer account so they can get a new TEAMID (see steps below) or doing a custom change to the Loop code to modify the bundle ID (no instructions are provided for this - easy to do it wrong)
 
-### New Developer ID with Same GitHub Account
-
-You can use the same GitHub account with a new developer ID. Here are the steps:
-
-1. Update the 4 secrets that are associated with the Apple Account for each repository on the GitHub used for browser build:
-    * TEAMID
-    * FASTLANE_ISSUER_ID
-    * FASTLANE_KEY_ID
-    * FASTLANE_KEY
-1. Once the Secrets are updated, start at the [Identifiers](identifiers.md){:target="_blank"} page and work through the process for each app
+## Instructions to Diagnose Your Errors
 
 ## Action: `Validate Secrets` Errors
 
@@ -258,9 +337,23 @@ For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and re
 
 ## Action: `Create Certificates` Errors
 
-Review [Examine Annotation](#examine-annotation) for instructions on how to use the error strings.
+> Reminder - If it is not obvious to you what your error is, please [ask a mentor for help](#where-to-get-help-with-browser-build)
 
-### Error: Wrong TEAMID in `Secrets`
+> * you might get to the answer sooner
+> * you are less likely to do something that makes it harder for the mentor to help you later
+
+Review [Find the Error](#find-the-error) for instructions on how to use the error strings.
+
+List of certificate errors on this page:
+
+* [Error: No profile for team](#error-no-profile-for-team)
+* [Error: Error cloning certificates](#error-error-cloning-certificates)
+* [Error: Could not decrypt](#error-could-not-decrypt)
+* [Error: Could not create](#error-could-not-create)
+ 
+### Error: No profile for team
+
+This happens if you entered the wrong TEAMID in `Secrets`.
 
 Copy the words on the line below and paste them into the search function for your action log.
 
@@ -326,7 +419,9 @@ Follow the [Configure to Use Browser: Create Loop App in App Store Connect](prep
 
 You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](certs.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
-### Error: Missing Repository Access
+### Error: Error cloning certificates
+
+This indicates you do not have the appropriate Repository access.
 
 Copy the words on the line below and paste them into the search function for your action log.
 
@@ -362,39 +457,6 @@ After you have clicked `Update token` you should see the token overview again wi
 
 You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](certs.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
 
-### Error: Could not create
-
-Copy the words on the line below and paste them into the search function for your log file.
-
-> ``` { .text .copy }
-> Could not create another Distribution certificate
-> ```
-
-The full error message is:
-
-> `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
-
-#### New with `Loop 3.6.0`
-
-> If you just updated to 3.6.0 (once it is released), you might not have added the new variable, `ENABLE_NUKE_CERTS`. Go do that now and then try again. It will take care of renewing your certificates automatically. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
-
-These steps are needed to make room for a `Certificate` when running versions earlier than 3.6.0:
-
-1. Delete an old `Distribution Certificate`
-    * *Apple* limits you to two `Distribution Certificates`
-    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
-        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
-        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
-    * Click on the oldest `Distribution` `Certificate` and revoke it
-        * You will get an email informing you the certificate was revoked
-1. To create a new `Certificate`:
-    * Return to *GitHub* and your fork
-    * Run the `Action`: `Create Certificates`
-1. You are now ready to run the `Action`: `Build Loop`
-
-!!! question "But what about *TestFlight* builds?"
-    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
-
 ### Error: Could not decrypt
 
 Copy the words on the line below and paste them into the search function for your log file.
@@ -411,7 +473,42 @@ If you know you entered the incorrect <code>MATCH_PASSWORD</code> in your reposi
 
 Otherwise, you need to follow the steps to [Reset Match-Secrets](#reset-match-secrets).
 
+### Error: Could not create
+
+Copy the words on the line below and paste them into the search function for your log file.
+
+> ``` { .text .copy }
+> Could not create another Distribution certificate
+> ```
+
+The full error message is:
+
+> `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
+
+#### New with `Loop 3.6.0`
+
+> If you just updated to 3.6.0, you might not have added the new variable, `ENABLE_NUKE_CERTS`. Go do that now and then try again. It will take care of renewing your certificates automatically. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
+
+These steps are only needed to make room for a `Certificate` when running versions earlier than 3.6.0 if you choose not to add the `ENABLE_NUKE_CERTS` variable:
+
+1. Delete an old `Distribution Certificate`
+    * *Apple* limits you to two `Distribution Certificates`
+    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
+        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
+        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
+    * Click on the oldest `Distribution` `Certificate` and revoke it
+        * You will get an email informing you the certificate was revoked
+1. To create a new `Certificate`:
+    * Return to *GitHub* and your fork
+    * Run the `Action`: `Create Certificates`
+1. You are now ready to run the `Action`: `Build Loop`
+
+!!! question "But what about *TestFlight* builds?"
+    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
+
 ## Action: `Build Loop` Errors
+
+This section is for people who have not successfully built the *Loop* app one time. If you are a repeat builder, please skip ahead to [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating).
 
 !!! warning "Run `Create Certificates` First"
     When running a version earlier than `Loop 3.6.0`, you must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
@@ -426,6 +523,13 @@ Refer to [Annotation without Clear Message (*Build*)](#annotation-without-clear-
 * Use the search function in this log to locate your error using one of the strings below
 
 For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.
+
+List of build errors in this section:
+
+* [`Error: Could not find an app on App Store Connect`](#error-could-not-find-an-app-on-app-store-connect)
+* [`Error: Provisioning Profile`](#error-provisioning-profile)
+* [`Error: A new one cannot be created because you enabled`](#error-a-new-one-cannot-be-created-because-you-enabled)
+
 
 ### `Error: Could not find an app on App Store Connect`
 
@@ -509,7 +613,7 @@ Once you have created an app in the *App Store* that is not based on your `TEAMI
 
 At this point, get your correct `TEAMID`, fix your Secrets file to have the correct `TEAMID` and then return to [First-Time: Configure Secrets](prepare-fork.md#configure-secrets). This time you will be updating `TEAMID` in the secret list.
 
-## Repeat `Build Loop` Errors
+## Action: `Build Loop` Errors when Updating
 
 This section is only for people who have successfully built using *GitHub Build Actions*.
 
@@ -517,7 +621,7 @@ Use the [Examine Annotation](#examine-annotation) instructions to find your erro
 
 ### `ERROR: Asset validation failed`
 
-This error indicates your fork needs to be updated. As of 29 April 2024, you are required to use Xcode 15 to build the app.
+This error indicates your fork needs to be updated. As of 24 April 2025, you are required to use Xcode 16 to build the app. This is provided with `Loop 3.6.0` and newer versions.
 
 There are serveral phrases you can check for. All of them have the same solution.
 
@@ -638,7 +742,11 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 ![graphic showing failure to install certificate](img/github-error-cert-failed.png){width="500"}
 {align="center"}
 
-## Reset `Match-Secrets`
+## Extra Sections
+
+It is unlikely you will need these sections.
+
+### Reset `Match-Secrets`
 
 This is not the first thing to try, but sometimes it is the best approach.
 
@@ -666,11 +774,6 @@ These steps are needed to reset your `Match-Secrets`:
 
     If you already have the other apps configured and then you delete `Match-Secrets` and add a new one, you will need to run `Create Certificates` for each app before the next time you build each app - go ahead and do that now so you don't forget.
 
-
-## Extra Sections
-
-It is unlikely you will need these sections.
-
 ### Delete Identifiers
 
 These instructions are useful if:
@@ -696,3 +799,16 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 If coming here because you enter the wrong `TEAMID` in `Secrets` - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
 
 After you delete identifiers, you must add them back before you can build a given app. Configure them and build again.
+
+### New Developer ID with Same GitHub Account
+
+You can use the same GitHub account with a new developer ID. This is an uncommon scenario, but if you lost access to the developer ID you used to use, you can modify your *GitHub* account to use a new one. Remember - this will be a new app, requiring you to enter your settings fresh and add your pump again. (New pod required if using Omnipod.)
+
+Here are the steps:
+
+1. Update the 4 secrets that are associated with the Apple Account for each repository on the GitHub used for browser build:
+    * TEAMID
+    * FASTLANE_ISSUER_ID
+    * FASTLANE_KEY_ID
+    * FASTLANE_KEY
+1. Once the Secrets are updated, start at the [Identifiers](identifiers.md){:target="_blank"} page and work through the process for each app

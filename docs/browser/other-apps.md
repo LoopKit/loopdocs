@@ -143,9 +143,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
-    * [Action: Validate <code>Secrets</code> Errors](bb-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
-    * Resolve the error and repeat the Action: [Validate <code>Secrets</code>](#validate-secrets)
+    * Use the Browser Build Errors page to resolve the error, then repeat the Action
+    * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 
 ## Add Identifiers
 
@@ -171,9 +170,8 @@ The `Add Identifier` &nbsp;<span class=notranslate>Action</span>&nbsp; should su
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem
-    * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-    * Resolve the error and repeat the Action: [Add Identifiers](identifiers.md#add-identifiers)
+    * Use the Browser Build Errors page to resolve the error, then repeat the Action
+    * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 
 ## Review App Identifier
 
@@ -351,8 +349,10 @@ Refer to the graphic below for the numbered steps:
     {align="center"}
 
 1. Wait a minute or two for the action to finish
-    * If this action fails, head over to [Action: Create Certificates Errors](bb-errors.md#action-create-certificates-errors)
-    * Once you've resolved the error, repeat the Actions [Add Identifiers](identifiers.md#add-identifiers) and then Create Certificates. (The Add Identifiers might not be required but it is fast and should be done as a matter of routine.)
+    * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
+    * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
+        * Use the Browser Build Errors page to resolve the error, then repeat the Action
+        * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 
 ## Build App
 
@@ -387,12 +387,12 @@ Refer to the graphic below for the first four steps:
     {align="center"}
 
 1. Wait a few minutes to make sure there is not an early failure
-    * If this action fails, head over to [Action: Build Loop Errors](bb-errors.md#action-build-loop-errors)
-    * Once you've resolved the error, it's a good idea to repeat all three steps in this order:
-        * [Add Identifiers](identifiers.md#add-identifiers)
-        * Create Certificates
-        * Build Loop
-1. If the process appears to be happening without an error, go do something else for a while. The build should take about 20-30 minutes.
+    * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
+        * Use the Browser Build Errors page to resolve the error, then repeat the Action
+        * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
+1. If the process appears to be happening without an error, go do something else for a while. The build should take less than half an hour (these tend to build faster than the *Loop* app.
+    * When you see the green check (:octicons-check-circle-fill-16:{: .passed }) continue
+    * If there is a late-appearing error, then use [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
 
 ### Build Errors

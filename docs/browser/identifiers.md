@@ -54,9 +54,8 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
-    * [Action: Validate Secrets Errors](bb-errors.md#action-validate-secrets-errors){: target="_blank" } tells you what to search for in the file
-    * Resolve the error and repeat the Action: [Validate Secrets](#validate-secrets)
+    * Use the Browser Build Errors page to resolve the error, then repeat the Action
+    * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 
 !!! important "Ask For Help Early"
     Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.
@@ -96,9 +95,8 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 
 * If you see the green check (:octicons-check-circle-fill-16:{: .passed })  continue to the next section
 * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-    * [Examine Annotation](bb-errors.md#examine-annotation){: target="_blank" } tells how to view the file needed to diagnose your problem.
-    * [Action: Add Identifiers Errors](bb-errors.md#action-add-identifiers-errors){: target="_blank" } tells you what to search for in the file
-    * Resolve the error and repeat the Action: [Add Identifiers](#add-identifiers)
+    * Use the Browser Build Errors page to resolve the error, then repeat the Action
+    * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 
 !!! important "Ask For Help Early"
     Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.

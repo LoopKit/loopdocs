@@ -38,8 +38,6 @@ Once you see the green check mark by `Create Certificates`, the next step is to 
 
 ### Failure
 
-If this action fails, head over to the errors page. Review these links, identify and fix your error or ask for help.
-
-* [How to Ask for Help](bb-errors.md#help-with-errors){: target="_blank" }
-* [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
-* [Create Certificates Errors](bb-errors.md#action-create-certificates-errors){: target="_blank" }.
+* If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
+    * Use the Browser Build Errors page to resolve the error, then repeat the Action
+    * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
