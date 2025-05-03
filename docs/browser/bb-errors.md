@@ -221,9 +221,11 @@ Notice that&nbsp;<span translate="no">*GitHub* Action: 1. Validate Secrets</span
 
 ### Annotation without Clear Message (*Certificates*)
 
-This section is left here for those who have an older version (3.4 or older) in their fork. If that is you, please follow these directions, [Rebuild Errors: Quick Reference](#rebuild-errors-quick-reference) and ignore this section.
+This section is left here for those who have an older version (3.4 or older) in their fork.
 
-Not all error messages have a clear annotation (up through version 3.4.x).
+> If you have updated to 3.6.0 or newer, refer to [Rebuild Errors: Quick Reference](#rebuild-errors-quick-reference) and ignore this section.
+
+Not all error messages had a clear annotation (up through version 3.4.x).
 
 For example, the graphic below shows a failure of&nbsp;<span translate="no">*GitHub* Action: 3. Create Certificates</span>&nbsp;.
 
