@@ -205,10 +205,19 @@ This is a new step required with `Loop 3.6.0` and newer versions. It provides au
 ENABLE_NUKE_CERTS
 ```
 
-What did you just do?
+What will this accomplish?
 
 * Certificates will be automatically updated if you have configured this `Variable`
 * With `Loop 3.6.0` and newer versions, as long as your *Apple* developers license is valid and all agreements are signed: **you can skip the steps to create or renew your certificates**!
+
+Not sure how to get to the Variables screen. Review the two graphics.
+
+This graphic shows how to access Variables for a repository (similar steps required for an organization).
+
+![steps to add a variable](img/add-variable.png){width="600"}
+{align="center"}
+
+This graphic shows how to add the `ENABLE_NUKE_CERTS` to an organization. Be sure that Repository access is set to `Public repositories`. When adding this to a repository, that option is not shown.
 
 ![enable nuke certs](img/gh-nuke-certs.png){width="700"}
 {align="center"}
