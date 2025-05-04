@@ -19,6 +19,8 @@ If you are coming to this page to update one of the other apps, follow the [How 
 
 > If you have not added the `Variable` `ENABLE_NUKE_CERTS`, do it now. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
 
+**WARNING: starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually.**
+
 ### Multiple Copies of `LoopFollow`
 
 For the convenience of caregivers who use `LoopFollow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script){: target="_blank" }).
@@ -388,7 +390,7 @@ Refer to the graphic below for the first four steps:
 
 1. Wait a few minutes to make sure there is not an early failure
     * If you see the red `X` (:octicons-x-circle-fill-16:{: .failed }):
-        * Use the Browser Build Errors page to resolve the error, then repeat the Action
+        * Use the Browser Build Errors page (which uses LoopWorkspace repository) to resolve the error, substituting the repository name for the app you are building, then repeat the Action
         * [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
 1. If the process appears to be happening without an error, go do something else for a while. The build should take less than half an hour (these tend to build faster than the *Loop* app.
     * When you see the green check (:octicons-check-circle-fill-16:{: .passed }) continue

@@ -8,6 +8,8 @@
 
 **For most, the *Loop* app is configured for automatic build, so you only need to come to this page if the automatic build failed.**
 
+**WARNING: starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually.**
+
 ???+ info "Time Estimate (click to open/close)"
     Manually update and build the *Loop* App
 
@@ -161,17 +163,18 @@ The bullets below show typical messages when you are building the `main` branch.
 
 #### Build the App
 
-Refer to graphic below as you follow the steps to build the *Loop* app.
+Refer to graphic below as you follow the steps to build the *Loop* app. The numbers highlighted in the graphic correspond to numbers in parentheses in the bullet list below:
 
-* Click on the `Actions` tab
-* Select the `4. Build Loop` workflow on the left
+* (1) Click on the `Actions` tab
+* (2) Select the `4. Build Loop` workflow on the left
     * If using a mobile browser, be sure to use landscape mode to more closely match how *GitHub* looks on a computer.
-* Look on the right and click `Run workflow` to  see the dropdown
-* Click on the green `Run workflow` button in the dropdown
+* If you notice your build action is disabled, you must (3) click on `Enable workflow`
+* (4) Look on the right and click `Run workflow` to  see the dropdown
+* (5) Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
 * It is then processed by *Apple* and sent to *TestFlight* (be patient)
 
-![graphic indicating how to build again](img/github-build-actions-build-again.svg){width="700"}
+![graphic indicating how to build again](img/build-disabled-fix.png){width="700"}
 {align="center"}
 
 #### What if the Build Fails

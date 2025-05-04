@@ -122,6 +122,7 @@ These considerations were prepared when most people were using a Mac computer to
 * Automatic Updates are loaded into *TestFlight*
     * With version 3.4 and newer, builds are automatically prepared at least once a month
     * You choose when to install the new app from TestFlight onto your phone
+    * **WARNING:** starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually
 * Manual Updates are easy
     * Starting an update takes a few minutes of your time; it can be done from your phone; the rest is automatic and is done in about an hour
 * After the *GitHub* Build starts, your app is ready to install on your *iPhone* in about an hour

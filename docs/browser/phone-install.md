@@ -66,6 +66,13 @@ The instructions on the [Configure to Use Browser](intro-summary.md){: target="_
     * This is only for the `default` branch, typically `main`
 * Build the app at least once a month and upload it to *TestFlight*
 
+!!! important "You Get No Warning if Repository Build Action is Disabled"
+    Alert - this issue is new as of May 2025. Your build action might be disabled by *GitHub*, which means you need to enable it manually.
+
+    If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+
+    * Refer to [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }
+
 Unless you make the recommended one-time change to [Disable Automatic Install from *TestFlight*](#disable-automatic-install-from-testflight), the default setting for each app found in *TestFlight* is to:
 
 * Install each new build from *TestFlight* on the phone as soon as it is detected
