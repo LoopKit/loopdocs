@@ -9,7 +9,7 @@ The instructions provided for building with a browser include settings to automa
 
     What does that mean?
 
-    * **inactive** means no commits within the last 60 days
+    * **inactive** means stable code (no new commit within the last 60 days)
     * **disables actions** means the Build Action shows up as disabled
 
 ### What Manual Action is Required?
@@ -17,13 +17,15 @@ The instructions provided for building with a browser include settings to automa
 For any repository that is stable, like the *Loop* app, you may need to take manual action to keep automatic builds flowing every month.
 
 * Put a calendar reminder to check every month on the 2nd day of the month (or later)
-    * Check that *TestFlight* has a new build of the *Loop* app
+    * Check that *TestFlight* has a new build of the *Loop* (or other) app
     * If not, go to your repository to see if the build action is disabled
 * If necessary, enable the build action at your repository as shown in the graphic below and then launch a manual build
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
-This keeps the most recent version of your app available in *TestFlight* for you to install when you are ready.
+This keeps the most recent version of your app available in *TestFlight* for you to install when you are ready. This should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.
+
+> Builds in *TestFlight* are good for 90 days before they [expire](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }.
 
 ## What is Automatic
 
@@ -33,9 +35,10 @@ These events are automatically scheduled:
     * If found, your fork is automatically updated and a new build created and uploaded to *TestFlight*
 * Once a month: Build the app and upload the fresh build to *TestFlight*
 
-> These automatic actions happen on schedule, but if your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
->
-> * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
+!!! important "You Get No Warning if Repository Build Action is Disabled"
+    These automatic actions happen on schedule, but if your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+
+    * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
 
 If you do not want this automatic schedule, you can modify it.
 
@@ -63,9 +66,10 @@ In that case, you should check your favorite information site to find out what t
 
 On the first day of every month, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
 
-> This automatic monthly build happens on schedule, but if your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
->
-> * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
+!!! important "You Get No Warning if Repository Build Action is Disabled"
+    If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+
+    * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
 
 You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
 

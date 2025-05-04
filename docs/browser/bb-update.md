@@ -168,7 +168,7 @@ Refer to graphic below as you follow the steps to build the *Loop* app. The numb
 * (1) Click on the `Actions` tab
 * (2) Select the `4. Build Loop` workflow on the left
     * If using a mobile browser, be sure to use landscape mode to more closely match how *GitHub* looks on a computer.
-* If you notice your build action is disabled, you must do (3)
+* If you notice your build action is disabled, you must (3) click on `Enable workflow`
 * (4) Look on the right and click `Run workflow` to  see the dropdown
 * (5) Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
