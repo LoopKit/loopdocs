@@ -50,6 +50,7 @@
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
     - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action. For more information, see [Automatic Update & Build](automatic.md){: target="_blank" }.
+    - **When do I have to kick off my automatic build?** Starting in May 2025, you may need to take an extra action after 60 days with no updates to the app: [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } 
     - **Can you explain the new automatic building?** There's a whole page on [Automatic Update & Build](automatic.md){: target="_blank" } for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child){: target="_blank" }.
     - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md){: target="_blank" }
@@ -69,7 +70,7 @@ The steps to configure for building with a browser require a lot of focused atte
 
     When you use an organization, you don't have to add 6 Secrets to each repository for every app you build. It can save a lot of time in the long run.
 
-    * Even if you just build Loop and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account
+    * Even if you just build Loop and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account - but there is no particular advantage (until you decide maybe you do want to build another app)
     * Who should definitely build with an organization:
         * Anyone who is a caregiver will want LoopCaregiver or LoopFollow or both
         * Anyone who wants to use LoopFollow for the amazing alarm capabilties
@@ -156,9 +157,15 @@ First some handy username and password information:
 <your information here>
 suggest you use your desired password tool to save the password for this account
 
-## GitHub username
+## GitHub personal account username
 <your information here>
 suggest you use your desired password tool to save the password for this account
+
+### GitHub organization name
+<your GitHub organization name>
+Using an organization is optional.
+But it you do use one, add the name here for reference.
+You always log in using your GitHub personal account to access your organization.
 
 There are Six Secrets and One Variable:
  - the list below shows the expected format of each.
@@ -233,7 +240,8 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
 * Some terms in the Glossary are not in alphabetical order to improve logical grouping. All the individual <code>Secrets</code> are listed after <code>Secrets</code> in the Glossary.
 
 * `Actions`: available in your *GitHub* repositories to build your app
-    * You must be logged in to *GitHub* to run the actions
+    * You must be logged in to *GitHub* to run the actions manually
+    * The build action is automatically run for you once your repository is configured
 * `Fork`: you make a copy of the code needed to build an app and store it in your *GitHub* account (using a free *GitHub* organization is recommended for storing your `forks`)
 * <code>Secrets</code>: are required to enable *GitHub* to build an app from a repository using *GitHub* Actions
     * Six <code>Secrets</code> must be entered to enable your app (or apps) to build

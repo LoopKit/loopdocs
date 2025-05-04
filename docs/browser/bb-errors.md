@@ -170,6 +170,14 @@ Ignore the warnings - this does not affect the build.
 
     This affected all the Open-Source apps in our community - Loop, LoopFollow, LoopCaregiver, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.
 
+### Manual Enable for Build Action May be Required
+
+The automatic build actions continue to happen on schedule, but starting May 2025, you may find your build action disabled by *GitHub*. (This might happen every 60 days, but it might happen sooner.) In that case, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+
+If necessary, enable the build action at your repository as shown in the graphic below and then launch a manual build.
+
+![fix a disabled build state](img/build-disabled-fix.png )
+
 ### Rebuild: Create Certificates Error
 
 With `Loop 3.6.0`, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
