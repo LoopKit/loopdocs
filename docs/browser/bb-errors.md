@@ -120,7 +120,7 @@ Early in the log file you will see two phrases in red font:
 
 > security: SecItemCopyMatching: The specified item could not be found in the keychain.
 
-This is normal. The next steps will set up a keychain for you using your Match-Secrets repository and your MATCH_PASSWORD pass phrase.
+This is normal. The next steps will set up a keychain for you using your Match-Secrets repository and your MATCH_PASSWORD passphrase.
 
 #### Where to find the Certificate Solutions
 
@@ -198,7 +198,7 @@ These are some of the most common errors to date.
 1. You made a spelling error when adding <code>Secrets</code>
     * Each secret must be spelled exactly the way it is presented in the instructions
     * If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name
-1. You did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
+1. You made a spelling error in creating the `App Group Identifier` or did not add the `App Group Identifier` to all 4 of the required identifiers in this step: [Add `App Group` to `Identifiers`](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
     * See [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for an example of this kind of failure
 1. You used a smart editor instead of a text-only editor to save your information
     * It only takes one letter to be changed from small to capital by your smart editor to ruin your day

@@ -18,13 +18,14 @@ There is a script to assist in building the `dev branch`. It gives you the optio
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)"
 ```
 
-### BuildLoopDev Other Branches
+### Build Other Branches
 
-You can use the BuildLoopDev script to build a specific development branch, other than `dev`. See the example below that would build `other-branch`, if such a branch existed. This is just an example. You need to substitute the branch you desire for `other-branch`. There must be a space after the final quote, followed by a hyphen, another space and then the branch name.
+You can use the BuildLoopDev script to build a specific development branch, other than `dev`. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the branch name. See the example below that would build `other-branch`, if such a branch existed. This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
 
-``` { .bash .copy title="Example using <code>other-branch</code> with the BuildLoopDev script" }
+``` { title="Replace <code>other-branch</code> with the desired branch" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)" - other-branch
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)" \
+   - other-branch
 ```
 
 ## Update Loop-dev
