@@ -4511,7 +4511,7 @@
 <p>There are no local code signing identities found.</p>
 <p>security: SecItemCopyMatching: The specified item could not be found in the keychain.</p>
 </blockquote>
-<p>This is normal. The next steps will set up a keychain for you using your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> and your <abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr> pass phrase.</p>
+<p>This is normal. The next steps will set up a keychain for you using your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> and your <abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr> passphrase.</p>
 <h4 id="where-to-find-the-certificate-solutions">Where to find the <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Solutions<a class="headerlink" href="#where-to-find-the-certificate-solutions" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Head over to <a href="#action-create-certificates-errors">Action: Create <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Errors</a> and find your specific error.</p>
 <h3 id="new-builder-build-errors">New Builder: Build Errors<a class="headerlink" href="#new-builder-build-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4573,7 +4573,7 @@
 <li>If you are using an automatic translation, please keep an original page open too and copy from it to make sure there are no spelling errors in the secret name</li>
 </ul>
 </li>
-<li>You did not add the <code>App Group Identifier</code> to all 4 of the required identifiers in this step: <a href="../prepare-app/#add-app-group-to-identifiers" target="_blank">Add <code>App Group</code> to <code>Identifiers</code></a><ul>
+<li>You made a spelling error in creating the <code>App Group Identifier</code> or did not add the <code>App Group Identifier</code> to all 4 of the required identifiers in this step: <a href="../prepare-app/#add-app-group-to-identifiers" target="_blank">Add <code>App Group</code> to <code>Identifiers</code></a><ul>
 <li>See <a href="#annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)</a> for an example of this kind of failure</li>
 </ul>
 </li>
