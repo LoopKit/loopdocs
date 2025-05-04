@@ -3737,7 +3737,7 @@
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Look in this section for one-time changes for building <code>dev</code> with a browser that require special, one-time actions.</p>
-<p>With the release of version 3.4, no one-time changes are required. This assumes you built main after the release of 3.4.</p>
+<p>No one-time changes are required. This assumes you built main after the release of 3.6.</p>
 <h3 id="build-branch">Build <code>Branch</code><a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
 <p><strong>We recommend most users leave their default <abbr title="version of code within a single repository or workspace repository">branch</abbr> as <code>main</code>.</strong></p>
@@ -3809,23 +3809,26 @@
 <p>As soon as you build one version of the app from the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, that version number (which is higher than the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) will show up at the top of the available builds in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <p>Suppose you then return to using the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> after your excursion to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <blockquote>
-<p><em>For this example, version 3.4.4 is the released version from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and version 3.5.0 is the development version you evaluated.</em></p>
+<p><em>For this example, version 3.6.x is the released version from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and version 3.7.0 is the development version you evaluated.</em></p>
 </blockquote>
-<p>Every time you open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and select the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, it will offer the most recent 3.5.0 version to be installed if you just tap <strong>Install</strong>. You might be in a situation where that build is about to expire or you decide you don't want to test this on your looping phone. In some cases, the released version, 3.4.4, might have fixes that are not available in a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>Every time you open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and select the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, it will offer the most recent 3.7.0 version to be installed if you just tap <strong>Install</strong>. You might be in a situation where that build is about to expire or you decide you don't want to test this on your looping phone.</p>
 <p>You have your choice:</p>
 <ul>
-<li>You can manually go into <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> each time <code>main</code> is automatically built, Select Previous Builds, then choose 3.4.4 and install the top listing</li>
+<li>You can manually go into <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> each time <code>main</code> is automatically built, Select Previous Builds, then choose 3.6.x and install the top listing</li>
 <li>You can log in at: <a href="https://appstoreconnect.apple.com/apps" target="_blank">App Store Connect: Apps</a><ul>
 <li>Select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
 <li>Click on the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> tab</li>
-<li>For each 3.5 build, click on the row for a build<ul>
+<li>For each 3.7 build, click on the row for a build<ul>
 <li>Select Expire Build on upper right</li>
 </ul>
 </li>
-<li>This leaves only the released version, 3.4.4 for this example, available in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone</li>
+<li>This leaves only the released version, 3.6.x for this example, available in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone</li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>The example graphic below was created when 3.4.4 was the released version</p>
+</blockquote>
 <p align="center"><img alt="expire builds with higher version numbers" src="../img/testflight-expire-dev.png" width="700" /></p>
 
 

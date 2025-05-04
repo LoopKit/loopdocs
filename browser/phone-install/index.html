@@ -3762,6 +3762,14 @@
 </li>
 <li>Build the app at least once a month and upload it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">You Get No Warning if Repository Build Action is Disabled</p>
+<p>Alert - this issue is new as of May 2025. Your build action might be disabled by <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, which means you need to enable it manually.</p>
+<p>If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.</p>
+<ul>
+<li>Refer to <a href="../automatic/#manual-action-for-automatic-build" target="_blank">Manual Action for Automatic Build</a></li>
+</ul>
+</div>
 <p>Unless you make the recommended one-time change to <a href="#disable-automatic-install-from-testflight">Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>, the default setting for each app found in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is to:</p>
 <ul>
 <li>Install each new build from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on the phone as soon as it is detected</li>

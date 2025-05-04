@@ -3723,6 +3723,7 @@
 <ul>
 <li><strong>Do I need a Mac computer?</strong> No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.</li>
 <li><strong>Isn't it hard to build every 90 days?</strong> The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are automatic. You just need to keep your Apple Developer account up to date. Review any email that says a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> action failed - read the error and take action. For more information, see <a href="../automatic/" target="_blank">Automatic Update &amp; Build</a>.</li>
+<li><strong>When do I have to kick off my automatic build?</strong> Starting in May 2025, you may need to take an extra action after 60 days with no updates to the app: <a href="../automatic/#manual-action-for-automatic-build" target="_blank">Manual Action for Automatic Build</a> </li>
 <li><strong>Can you explain the new automatic building?</strong> There's a whole page on <a href="../automatic/" target="_blank">Automatic Update &amp; Build</a> for more explanations</li>
 <li><strong>Can I use this for my child?</strong> You, as the adult, can install using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on your child's phone. The explicit steps are provided at <a href="../phone-install/#testflight-for-a-child" target="_blank">Install on Phone: <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a>.</li>
 <li><strong>Can I still use my customizations?</strong> Yes. <a href="../custom-browser/" target="_blank">Customize using Browser</a></li>
@@ -3743,7 +3744,7 @@
 <p>There are several places where you see a recommendation to use a free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization instead of building directly from your personal free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account.</p>
 <p>When you use an organization, you don't have to add 6 <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> to each <abbr title="contains project files and each file's revision history">repository</abbr> for every app you build. It can save a lot of time in the long run.</p>
 <ul>
-<li>Even if you just build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account</li>
+<li>Even if you just build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and nothing else, using an organization is pretty easy and your build works just the same as using only a personal account - but there is no particular advantage (until you decide maybe you do want to build another app)</li>
 <li>Who should definitely build with an organization:<ul>
 <li>Anyone who is a caregiver will want <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> or <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> or both</li>
 <li>Anyone who wants to use <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> for the amazing alarm capabilties</li>
@@ -3827,9 +3828,15 @@ First<span class="w"> </span>some<span class="w"> </span>handy<span class="w"> <
 &lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
 suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
 
-<span class="c1">## GitHub username</span>
+<span class="c1">## GitHub personal account username</span>
 &lt;your<span class="w"> </span>information<span class="w"> </span>here&gt;
 suggest<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>your<span class="w"> </span>desired<span class="w"> </span>password<span class="w"> </span>tool<span class="w"> </span>to<span class="w"> </span>save<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>account
+
+<span class="c1">### GitHub organization name</span>
+&lt;your<span class="w"> </span>GitHub<span class="w"> </span>organization<span class="w"> </span>name&gt;
+Using<span class="w"> </span>an<span class="w"> </span>organization<span class="w"> </span>is<span class="w"> </span>optional.
+But<span class="w"> </span>it<span class="w"> </span>you<span class="w"> </span><span class="k">do</span><span class="w"> </span>use<span class="w"> </span>one,<span class="w"> </span>add<span class="w"> </span>the<span class="w"> </span>name<span class="w"> </span>here<span class="w"> </span><span class="k">for</span><span class="w"> </span>reference.
+You<span class="w"> </span>always<span class="w"> </span>log<span class="w"> </span><span class="k">in</span><span class="w"> </span>using<span class="w"> </span>your<span class="w"> </span>GitHub<span class="w"> </span>personal<span class="w"> </span>account<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>your<span class="w"> </span>organization.
 
 There<span class="w"> </span>are<span class="w"> </span>Six<span class="w"> </span>Secrets<span class="w"> </span>and<span class="w"> </span>One<span class="w"> </span>Variable:
 <span class="w"> </span>-<span class="w"> </span>the<span class="w"> </span>list<span class="w"> </span>below<span class="w"> </span>shows<span class="w"> </span>the<span class="w"> </span>expected<span class="w"> </span>format<span class="w"> </span>of<span class="w"> </span>each.
@@ -3903,7 +3910,8 @@ Add<span class="w"> </span>additional<span class="w"> </span>apps<span class="w"
 <li>
 <p><code>Actions</code>: available in your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> repositories to build your app</p>
 <ul>
-<li>You must be logged in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to run the actions</li>
+<li>You must be logged in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> to run the actions manually</li>
+<li>The build action is automatically run for you once your <abbr title="contains project files and each file's revision history">repository</abbr> is configured</li>
 </ul>
 </li>
 <li><code>Fork</code>: you make a copy of the code needed to build an app and store it in your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account (using a free <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization is recommended for storing your <code>forks</code>)</li>

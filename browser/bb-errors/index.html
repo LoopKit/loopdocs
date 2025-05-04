@@ -1263,6 +1263,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#manual-enable-for-build-action-may-be-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Enable for Build Action May be Required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#rebuild-create-certificates-error" class="md-nav__link">
     <span class="md-ellipsis">
       Rebuild: Create Certificates Error
@@ -4064,6 +4073,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#manual-enable-for-build-action-may-be-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Enable for Build Action May be Required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#rebuild-create-certificates-error" class="md-nav__link">
     <span class="md-ellipsis">
       Rebuild: Create Certificates Error
@@ -4546,6 +4564,10 @@
 <p>On 21 April 2025, <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> removed one of the third-party repositories that we used to keep automatic building going without action on your part. The <abbr title="contains project files and each file's revision history">repository</abbr> was removed because it was in violation of the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> terms of service. <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> disables automatic actions for repositories that have been inactive (no commits added in 60 days). For stable apps, like the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, this third-party <abbr title="contains project files and each file's revision history">repository</abbr> enabled a workaround to keep the builds happening.</p>
 <p>This affected all the Open-Source apps in our community - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.</p>
 </div>
+<h3 id="manual-enable-for-build-action-may-be-required">Manual Enable for Build Action May be Required<a class="headerlink" href="#manual-enable-for-build-action-may-be-required" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The automatic build actions continue to happen on schedule, but starting May 2025, you may find your build action disabled by <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. (This might happen every 60 days, but it might happen sooner.) In that case, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.</p>
+<p>If necessary, enable the build action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build.</p>
+<p><img alt="fix a disabled build state" src="../img/build-disabled-fix.png" /></p>
 <h3 id="rebuild-create-certificates-error">Rebuild: Create Certificates Error<a class="headerlink" href="#rebuild-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>With <code>Loop 3.6.0</code>, these should be a thing of the past - but you must first manually update (sync) your <abbr title="contains project files and each file's revision history">repository</abbr> in order to get this feature added and you must do this new step <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a></p>
 <blockquote>

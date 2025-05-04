@@ -1168,7 +1168,40 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-action-for-automatic-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Action for Automatic Build
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Action for Automatic Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-manual-action-is-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Manual Action is Required?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-automatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Automatic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Automatic">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3586,7 +3619,40 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-action-for-automatic-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Action for Automatic Build
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Action for Automatic Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-manual-action-is-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Manual Action is Required?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-automatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Automatic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Automatic">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3734,7 +3800,32 @@
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions provided for building with a browser include settings to automatically update and build for you.</p>
-<p>This keeps the most recent version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install when you are ready.</p>
+<h2 id="manual-action-for-automatic-build">Manual Action for Automatic Build<a class="headerlink" href="#manual-action-for-automatic-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Automatic Build Requires Manual Action</p>
+<p><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> automatically <strong>disables actions</strong> that run according to a schedule if the <abbr title="contains project files and each file's revision history">repository</abbr> in question is <strong>inactive</strong>.</p>
+<p>What does that mean?</p>
+<ul>
+<li><strong>inactive</strong> means stable code (no new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> within the last 60 days)</li>
+<li><strong>disables actions</strong> means the Build Action shows up as disabled</li>
+</ul>
+</div>
+<h3 id="what-manual-action-is-required">What Manual Action is Required?<a class="headerlink" href="#what-manual-action-is-required" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For any <abbr title="contains project files and each file's revision history">repository</abbr> that is stable, like the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, you may need to take manual action to keep automatic builds flowing every month.</p>
+<ul>
+<li>Put a calendar reminder to check every month on the 2nd day of the month (or later)<ul>
+<li>Check that <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> has a new build of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> (or other) app</li>
+<li>If not, go to your <abbr title="contains project files and each file's revision history">repository</abbr> to see if the build action is disabled</li>
+</ul>
+</li>
+<li>If necessary, enable the build action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build</li>
+</ul>
+<p><img alt="fix a disabled build state" src="../img/build-disabled-fix.png" /></p>
+<p>This keeps the most recent version of your app available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install when you are ready. This manual enable step should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.</p>
+<blockquote>
+<p>Builds in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are good for 90 days before they <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">expire</a>.</p>
+</blockquote>
+<h2 id="what-is-automatic">What is Automatic<a class="headerlink" href="#what-is-automatic" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These events are automatically scheduled:</p>
 <ul>
 <li>Once a week: Check for a new release of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app:<ul>
@@ -3743,6 +3834,13 @@
 </li>
 <li>Once a month: Build the app and upload the fresh build to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">You Get No Warning if Repository Build Action is Disabled</p>
+<p>These automatic actions happen on schedule, but if your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.</p>
+<ul>
+<li>Refer to <a href="#what-manual-action-is-required">What Manual Action is Required?</a></li>
+</ul>
+</div>
 <p>If you do not want this automatic schedule, you can modify it.</p>
 <p>Regardless of your choice, please <a href="../phone-install/#disable-automatic-install-from-testflight" target="_blank">Disable Automatic Installation from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>. You should be alert any time your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is updated. Check that all settings are maintained and pay attention to make sure the app behavior is nominal.</p>
 <p>You still need to <strong>take these actions</strong> to ensure a recent build of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install on your phone when you choose:</p>
@@ -3759,6 +3857,13 @@
 <p>In that case, you should check your favorite information site to find out what the update was and then, when you are ready, install the update using the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone.</p>
 <h3 id="successful-monthly-action">Successful Monthly Action<a class="headerlink" href="#successful-monthly-action" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>On the first day of every month, you will see a successful <code>build action</code>. The purpose of this build is to provide a recent version of the app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> so you are never in a situation where you have no app on your phone.</p>
+<div class="admonition important">
+<p class="admonition-title">You Get No Warning if Repository Build Action is Disabled</p>
+<p>If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.</p>
+<ul>
+<li>Refer to <a href="#what-manual-action-is-required">What Manual Action is Required?</a></li>
+</ul>
+</div>
 <p>You start getting <a href="../../operation/features/notifications/#loop-app-expiration-notification" target="_blank">Notifications</a> when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app. You do not want to get the dreaded "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)</p>
 <h3 id="what-are-the-alive-branches">What are the <code>alive branches</code>?<a class="headerlink" href="#what-are-the-alive-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The automatic update and build feature is embedded in the build_loop.yml code and uses the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> scheduling feature to trigger actions to run automatically.</p>
