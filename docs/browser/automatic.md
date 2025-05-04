@@ -23,7 +23,7 @@ For any repository that is stable, like the *Loop* app, you may need to take man
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
-This keeps the most recent version of your app available in *TestFlight* for you to install when you are ready. This should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.
+This keeps the most recent version of your app available in *TestFlight* for you to install when you are ready. This manual enable step should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.
 
 > Builds in *TestFlight* are good for 90 days before they [expire](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }.
 
