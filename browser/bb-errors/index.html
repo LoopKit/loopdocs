@@ -4519,7 +4519,13 @@
 <li><a href="../prepare-fork/#enter-the-secrets" target="_blank">Enter the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
 </ul>
 <h3 id="new-builder-add-identifiers-error">New Builder: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Error<a class="headerlink" href="#new-builder-add-identifiers-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you succeeded with Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, this should also succeed. If it does not, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
+<p>If you succeeded with Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, this should also succeed. If it does not, the most likely problem is with one of these keys. Perhaps when you saved them to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Reference file, there was a mistake or you used a smart editor that changed a small letter to a capital letter or inserted or removed a line break:</p>
+<ul>
+<li><code>FASTLANE_KEY</code></li>
+<li><code>FASTLANE_KEY_ID</code></li>
+</ul>
+<p>The <code>FASTLANE_KEY</code> can be taken from the <code>p8</code> file you downloaded. The other keys are all able to be copied again from your <em>Apple</em> Developer account page. See <a href="../secrets/#copy-api-key-secrets" target="_blank">Copy <code>API Key Secrets</code></a>.</p>
+<p>Do not hesitate to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h3 id="new-builder-create-certificates-error">New Builder: Create Certificates Error<a class="headerlink" href="#new-builder-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is one of the hardest ones to solve. If you are getting this, don't be afraid to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>. If you want to solve it yourself, a link is coming your way but first read this:</p>
 <h4 id="this-is-not-your-error">This is NOT Your Error<a class="headerlink" href="#this-is-not-your-error" title="Anchor link to this Header on this Page">&para;</a></h4>
