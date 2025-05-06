@@ -109,7 +109,7 @@ If you succeeded with Validate Secrets, this should also succeed. If it does not
 * `FASTLANE_KEY`
 * `FASTLANE_KEY_ID`
 
-The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }
+The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }.
 
 Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
 
