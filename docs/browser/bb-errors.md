@@ -104,7 +104,14 @@ If you want to try to solve it yourself, refer back to these section in the docu
 
 ### New Builder: Add Identifiers Error
 
-If you succeeded with Validate Secrets, this should also succeed. If it does not, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+If you succeeded with Validate Secrets, this should also succeed. If it does not, the most likely problem is with one of these keys. Perhaps when you saved them to your Secrets Reference file, there was a mistake or you used a smart editor that changed a small letter to a capital letter or inserted or removed a line break:
+
+* `FASTLANE_KEY`
+* `FASTLANE_KEY_ID`
+
+The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }.
+
+Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
 
 ### New Builder: Create Certificates Error
 
