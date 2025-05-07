@@ -377,6 +377,14 @@ AAAAAAAA
 
 The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }.
 
+If you decide to revoke the key and start again, see [Generate `API Key`](secrets.md#generate-api-key){: target="_blank" }. You will need to first select the existing `FASTLANE_KEY`:
+
+* Select `Edit`
+* Click on the checkbox beside `FASTLANE_KEY`
+* Select `Revoke Key`
+
+Then follow the normal steps detailed in that section to generate a new key and save the updated key and key ID in your Secrets Reference file and in your organization or repositories.
+
 Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
 
 ## Action: `Create Certificates` Errors
