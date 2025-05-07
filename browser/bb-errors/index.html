@@ -1421,6 +1421,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Action: Add Identifiers Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-missing-a-required-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error: missing a required attribute
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4231,6 +4246,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Action: Add Identifiers Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error-missing-a-required-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error: missing a required attribute
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4519,12 +4549,7 @@
 <li><a href="../prepare-fork/#enter-the-secrets" target="_blank">Enter the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a></li>
 </ul>
 <h3 id="new-builder-add-identifiers-error">New Builder: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Error<a class="headerlink" href="#new-builder-add-identifiers-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you succeeded with Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, this should also succeed. If it does not, the most likely problem is with one of these keys. Perhaps when you saved them to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Reference file, there was a mistake or you used a smart editor that changed a small letter to a capital letter or inserted or removed a line break:</p>
-<ul>
-<li><code>FASTLANE_KEY</code></li>
-<li><code>FASTLANE_KEY_ID</code></li>
-</ul>
-<p>The <code>FASTLANE_KEY</code> can be taken from the <code>p8</code> file you downloaded. The other keys are all able to be copied again from your <em>Apple</em> Developer account page. See <a href="../secrets/#copy-api-key-secrets" target="_blank">Copy <code>API Key Secrets</code></a>.</p>
+<p>If you succeeded with Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>, this should also succeed. If it does not, please skip ahead to <a href="#error-missing-a-required-attribute">Error: <code>missing a required attribute</code></a>.</p>
 <p>Do not hesitate to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h3 id="new-builder-create-certificates-error">New Builder: Create Certificates Error<a class="headerlink" href="#new-builder-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is one of the hardest ones to solve. If you are getting this, don't be afraid to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>. If you want to solve it yourself, a link is coming your way but first read this:</p>
@@ -4716,7 +4741,41 @@
 <h2 id="action-validate-secrets-errors">Action: <code>Validate Secrets</code> Errors<a class="headerlink" href="#action-validate-secrets-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For Version 3.4 and later - use <a href="#examine-annotation">Examine Annotation</a> and read the annotation.</p>
 <h2 id="action-add-identifiers-errors">Action: <code>Add Identifiers</code> Errors<a class="headerlink" href="#action-add-identifiers-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>For Version 3.4 and later - use <a href="#examine-annotation">Examine Annotation</a> and read the annotation.</p>
+<h3 id="error-missing-a-required-attribute">Error: <code>missing a required attribute</code><a class="headerlink" href="#error-missing-a-required-attribute" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This happens if your <code>FASTLANE_KEY</code> is invalid. You may have copied it incorrectly or there may be some other reason why the value that you correctly copied from your <code>p8</code> file is not working.</p>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>The provided entity is missing a required attribute - You must provide a value for the attribute
+</code></pre></div>
+</blockquote>
+<p>There were a number of cases recently where the solution was to revoke your <code>FASTLANE_KEY</code>, create a new one and then update these two secrets in your organzation, or in every <abbr title="contains project files and each file's revision history">repository</abbr> if you are using a personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account to build.</p>
+<ul>
+<li><code>FASTLANE_KEY</code></li>
+<li><code>FASTLANE_KEY_ID</code></li>
+</ul>
+<p>Before revoking your key, first make sure that when you saved them to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Reference file, there was not a mistake. Make sure you are NOT using a smart editor; that can change a small letter to a capital letter. Make sure you did NOT insert or remove a line break and that you copied from the first hyphen to the last hyphen. The 2 keys should look like this:</p>
+<div class="highlight"><pre><span></span><code>FASTLANE_KEY_ID
+&lt;looks like this&gt;
+AAAAAAAAAA
+
+FASTLANE_KEY
+&lt;looks like this&gt;
+-----BEGIN PRIVATE KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END PRIVATE KEY-----
+</code></pre></div>
+<p>The <code>FASTLANE_KEY</code> can be taken from the <code>p8</code> file you downloaded. The other keys are all able to be copied again from your <em>Apple</em> Developer account page. See <a href="../secrets/#copy-api-key-secrets" target="_blank">Copy <code>API Key Secrets</code></a>.</p>
+<p>If you decide to revoke the key and start again, see <a href="../secrets/#generate-api-key" target="_blank">Generate <code>API Key</code></a>. You will need to first revoke the existing <code>FASTLANE_KEY</code>:</p>
+<ul>
+<li>Select <code>Edit</code></li>
+<li>Click on the checkbox beside <code>FASTLANE_KEY</code></li>
+<li>Select <code>Revoke Key</code></li>
+</ul>
+<p>Then follow the normal steps detailed in that section to generate a new key and save the updated key and key ID in your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> Reference file and in your organization or repositories.</p>
+<p>Do not hesitate to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h2 id="action-create-certificates-errors">Action: <code>Create Certificates</code> Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <blockquote>
 <p>Reminder - If it is not obvious to you what your error is, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a></p>
