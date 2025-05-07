@@ -353,7 +353,7 @@ Copy the words on the line below and paste them into the search function for you
 > The provided entity is missing a required attribute - You must provide a value for the attribute
 > ```
 
-There have be a number of cases recently where the solution was to revoke your `FASTLANE_KEY`, create a new one and then update these two secrets in your organzation, or in every repository if you are using a personal *GitHub* account to build.
+There were a number of cases recently where the solution was to revoke your `FASTLANE_KEY`, create a new one and then update these two secrets in your organzation, or in every repository if you are using a personal *GitHub* account to build.
 
 * `FASTLANE_KEY`
 * `FASTLANE_KEY_ID`
@@ -377,7 +377,7 @@ AAAAAAAA
 
 The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }.
 
-If you decide to revoke the key and start again, see [Generate `API Key`](secrets.md#generate-api-key){: target="_blank" }. You will need to first select the existing `FASTLANE_KEY`:
+If you decide to revoke the key and start again, see [Generate `API Key`](secrets.md#generate-api-key){: target="_blank" }. You will need to first revoke the existing `FASTLANE_KEY`:
 
 * Select `Edit`
 * Click on the checkbox beside `FASTLANE_KEY`
