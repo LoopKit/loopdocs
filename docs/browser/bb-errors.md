@@ -345,7 +345,7 @@ For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and re
 
 ### Error: `missing a required attribute`
 
-This happens if your `FASTLANE_KEY` is invalid. It may be you copied it incorrectly or there may be some other reason why the value that you correctly copied from your `p8` file is not working.
+This happens if your `FASTLANE_KEY` is invalid. You may have copied it incorrectly or there may be some other reason why the value that you correctly copied from your `p8` file is not working.
 
 Copy the words on the line below and paste them into the search function for your action log.
 
