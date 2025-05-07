@@ -104,12 +104,7 @@ If you want to try to solve it yourself, refer back to these section in the docu
 
 ### New Builder: Add Identifiers Error
 
-If you succeeded with Validate Secrets, this should also succeed. If it does not, the most likely problem is with one of these keys. Perhaps when you saved them to your Secrets Reference file, there was a mistake or you used a smart editor that changed a small letter to a capital letter or inserted or removed a line break:
-
-* `FASTLANE_KEY`
-* `FASTLANE_KEY_ID`
-
-The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }.
+If you succeeded with Validate Secrets, this should also succeed. If it does not, please skip ahead to [Error: `missing a required attribute`](#error-missing-a-required-attribute).
 
 Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
 
@@ -348,7 +343,41 @@ For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and re
 
 ## Action: `Add Identifiers` Errors
 
-For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and read the annotation.
+### Error: `missing a required attribute`
+
+This happens if your `FASTLANE_KEY` is invalid. It may be you copied it incorrectly or there may be some other reason why the value that you correctly copied from your `p8` file is not working.
+
+Copy the words on the line below and paste them into the search function for your action log.
+
+> ``` { .text .copy }
+> The provided entity is missing a required attribute - You must provide a value for the attribute
+> ```
+
+There have be a number of cases recently where the solution was to revoke your `FASTLANE_KEY`, create a new one and then update these two secrets in your organzation, or in every repository if you are using a personal *GitHub* account to build.
+
+* `FASTLANE_KEY`
+* `FASTLANE_KEY_ID`
+
+Before revoking your key, first make sure that when you saved them to your Secrets Reference file, there was not a mistake. Make sure you are NOT using a smart editor; that can change a small letter to a capital letter. Make sure you did NOT insert or remove a line break and that you copied from the first hyphen to the last hyphen. The 2 keys should look like this:
+
+```
+FASTLANE_KEY_ID
+<looks like this>
+AAAAAAAAAA
+
+FASTLANE_KEY
+<looks like this>
+-----BEGIN PRIVATE KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END PRIVATE KEY-----
+```
+
+The `FASTLANE_KEY` can be taken from the `p8` file you downloaded. The other keys are all able to be copied again from your *Apple* Developer account page. See [Copy `API Key Secrets`](secrets.md#copy-api-key-secrets){: target="_blank" }.
+
+Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
 
 ## Action: `Create Certificates` Errors
 
