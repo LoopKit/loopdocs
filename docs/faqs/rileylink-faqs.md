@@ -100,7 +100,7 @@ If several power cycles do not make the correct firmware show up, contact the ma
 
 The OrangeLink devices allow the user to update the firmware on the device using an app on the phone itself (available for iPhone 7 and later devices).
 
-* [OrangeLink Firmware Update](https://getrileylink.org/orangelink-firmware){: target="_blank" }
+* [OrangeLink Firmware Update](https://getrileylink.org/orangelink-firmware)
 
 A number of OrangeLink Pro devices were shipped with FW2.6 and for people who already had OrangeLink devices, a version of FW2.6 was offered for download. However, this firmware did not work well with Loop (or AndroidAPS).  
 
@@ -134,9 +134,9 @@ Make sure the LiPo battery is well-plugged into the connection. Line up the litt
 
 Loose battery cable on left. Proper battery cable on right
 
-Finally, the board and the battery fit into the slim case fairly tightly as well. Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be){: target="_blank" }.
+Finally, the board and the battery fit into the slim case fairly tightly as well. Click on the image below to watch a helpful [assembly video](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be).
 
-[![frame for video on how to insert RileyLink into slim case, follow link for video](img/slimcase.png)](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be){: target="_blank" }
+[![frame for video on how to insert RileyLink into slim case, follow link for video](img/slimcase.png)](https://www.youtube.com/watch?v=-GHxxEJMCZc&feature=youtu.be)
 
 ## RileyLink Lights
 
@@ -160,7 +160,7 @@ If your blue light remains on despite trying a restart, it is time to pull out y
 
 The battery that comes with RileyLink is not charged completely when it is shipped, so be sure to charge it up before initial use. RileyLink takes about 2 hours to fully charge (the red light will turn off when fully charged, read note above about red light patterns) and should easily last at least a full day of constant Loop use. Typically, it can go into the 30-hour range without any problems. Most people charge their RileyLink each night when they are sleeping. You don't have to worry about leaving the RileyLink plugged in "too long" for charging. It will automatically stop charging the battery when it is fully charged.
 
-Since the best practice is to charge your RileyLink overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RileyLink. The RileyLink's charge level is not viewable on Nightscout, nor within the Loop app. If you forget to charge your RileyLink overnight, you can recharge it with a portable USB battery in a pinch. A [short mini-USB cable](https://www.adafruit.com/product/899){: target="_blank" } could be a good addition to a small gear bag.
+Since the best practice is to charge your RileyLink overnight while you sleep, and the battery lasts safely over 24 hours, there is no battery level indicator for the RileyLink. The RileyLink's charge level is not viewable on Nightscout, nor within the Loop app. If you forget to charge your RileyLink overnight, you can recharge it with a portable USB battery in a pinch. A [short mini-USB cable](https://www.adafruit.com/product/899) could be a good addition to a small gear bag.
 
 ### What are the differences between the RileyLink Medtronic and Omnipod Antennas?
 
@@ -196,10 +196,10 @@ After a year of use (and a year of being dropped), the antenna may no longer be 
 
 ### RileyLink Battery
 
-Keep your RileyLink and its Lithium-ion Polymer (LiPo) battery protected from damage. LiPo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping. If your battery is damaged in some way, please disconnect it immediately, and dispose of it (it should be recycled). You can order new RileyLink batteries on the [GetRileyLink website](https://getrileylink.org/){: target="_blank" }
+Keep your RileyLink and its Lithium-ion Polymer (LiPo) battery protected from damage. LiPo batteries are unsafe when damaged or punctured, so the case is an important part of safe Looping. If your battery is damaged in some way, please disconnect it immediately, and dispose of it (it should be recycled). You can order new RileyLink batteries on the [GetRileyLink website](https://getrileylink.org/)
 
 ## RileyLink Battery Removal
 
-To remove the LiPo battery from the RileyLink, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww){: target="_blank" }.
+To remove the LiPo battery from the RileyLink, please do so slowly and patiently. Work the battery connection side to side slowly to loosen it from the plug. Some people have reported success using small, curved needle-nose pliers such as hemostats. Others have used small flathead screwdrivers as shown in [this video](https://youtu.be/s2qNPLpfwww).
 
-[![frame from video showing how to remove battery from RileyLink, follow link for video](img/rileylink_battery_removal.png)](https://youtu.be/s2qNPLpfwww){: target="_blank" }
+[![frame from video showing how to remove battery from RileyLink, follow link for video](img/rileylink_battery_removal.png)](https://youtu.be/s2qNPLpfwww)

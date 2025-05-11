@@ -40,7 +40,7 @@ There are several ways to use this to sign the targets automatically.
 
 Your Apple Developer ID is the 10-character Team ID
   found on the Membership page after logging into your account at:
-   [https://developer.apple.com/account/#!/membership](https://developer.apple.com/account/#!/membership){: target="_blank" }.
+   [https://developer.apple.com/account/#!/membership](https://developer.apple.com/account/#!/membership).
 
 
 ### What is git?
@@ -55,7 +55,7 @@ But yes, git commands take awhile to properly use. And they are not plain Englis
 
 There is more information in [Loop Development](../version/development.md#what-are-git-branches) that is not repeated here.
 
-The important fact for this discussion on *LoopWorkspace* is that Loop developers own an account in *GitHub* called [`LoopKit`](https://github.com/LoopKit){: target="_blank" }.  Within that account, the developers have several `repositories` that support *Loop* in particular. A `repository` is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are repositories for *Loop* itself, *LoopDocs*, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop&#39;s repo has a lot of info about the app itself; and the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* `repository` code. But, there's more than just a user interface for *Loop*. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit` for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), *LoopKit* for the algorithm about carbs and insulin curves, etc.
+The important fact for this discussion on *LoopWorkspace* is that Loop developers own an account in *GitHub* called [`LoopKit`](https://github.com/LoopKit).  Within that account, the developers have several `repositories` that support *Loop* in particular. A `repository` is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are repositories for *Loop* itself, *LoopDocs*, and various other supporting "frameworks" that are helper repositories for Loop to build correctly. For example, Loop&#39;s repo has a lot of info about the app itself; and the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* `repository` code. But, there's more than just a user interface for *Loop*. Loop has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit` for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), *LoopKit* for the algorithm about carbs and insulin curves, etc.
 
 When you build *Loop* from `LoopWorkspace`, each of those repositories is downloaded to your computer.  This is slower than the old zip-download as far as downloading *Loop* - but it is much faster when you build Loop because all the files are already on your computer.
 
@@ -163,7 +163,7 @@ Be sure your terminal is in the correct location using [Open a Terminal in `Loop
     git pull --recurse
     ```
 
-If you are testing the LoopKit dev branch, you need to be on [Zulipchat](https://loop.zulipchat.com){: target="_blank" } and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see repository updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in Zulipchat.
+If you are testing the LoopKit dev branch, you need to be on [Zulipchat](https://loop.zulipchat.com) and subscribe to at least the #development and #github streams. (It's a good idea to subscribe to all the streams.) When you see repository updates similar to the graphic below, there may also be an announcement in the #development channel that LoopWorkspace is updated and ready to test. If not you can check the commits in LoopWorkspace and see if they've been updated. It's a good idea to wait 24 hours. My procedure is to build dev to my backup phone and then put it on my "real" phone. Otherwise, wait for someone else to do it and give the all-clear in Zulipchat.
 
 ![there has been an update in three submodules](img/zulipchat-github.svg){width="600"}
 {align="center"}
@@ -343,7 +343,7 @@ This tutorial is pretty nice.
 !!! tip "Git Tutorial"
     When I first started using git, my adult son answered all my questions very politely and then started sending me links to this tutorial instead.
 
-    * [Learn Git Branching](https://learngitbranching.js.org/){: target="_blank" }
+    * [Learn Git Branching](https://learngitbranching.js.org/)
 
     There's a section called `Main` that goes over commands in your local copy (clone) of the code. There's a section called `Remote` that goes over fetching, pulling, and pushing to remote copies.
 
@@ -378,4 +378,4 @@ It's a little easier to think about this with an analogy. Let's say you're worki
 
 Where do the submodules fit in? Each submodule is actually a branch, so when you make changes to multiple submodules, you'll need to commit those changes to their respective branches. Let's say you've made changes to Loop and LoopKit. You'll need to go into Loop and commit and push the changes, then go into LoopKit and commit and push the changes.
 
-There are a few different ways to keep track of all these different branches. Some people like using the command line (which is what you're using when you do commands like `git clone`) because it's very customizable and has the largest variety of commands. Others like to use graphical Git editors, which make it easier to see changes and be able to do a variety of common actions (like cloning, committing, and pushing) with the push of a button. Everyone has their own preferences, but some methods that Loop contributors have used in the past include the command line, [Gitkraken](https://www.gitkraken.com/){: target="_blank" }, and [SourceTree](https://www.sourcetreeapp.com/){: target="_blank" }.
+There are a few different ways to keep track of all these different branches. Some people like using the command line (which is what you're using when you do commands like `git clone`) because it's very customizable and has the largest variety of commands. Others like to use graphical Git editors, which make it easier to see changes and be able to do a variety of common actions (like cloning, committing, and pushing) with the push of a button. Everyone has their own preferences, but some methods that Loop contributors have used in the past include the command line, [Gitkraken](https://www.gitkraken.com/), and [SourceTree](https://www.sourcetreeapp.com/).

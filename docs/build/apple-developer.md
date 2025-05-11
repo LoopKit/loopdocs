@@ -8,7 +8,7 @@
      
     There are two options: Paid ($99/year) or Free (re-build weekly, Xcode only)
     
-    - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/){: target="_blank" } to enroll in an individual account.
+    - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
     - Free: No action required at this time.
         * Free requires the [Build with *Mac*](overview.md){: target="_blank" } method
 
@@ -22,7 +22,7 @@
 The Apple ID is DIFFERENT than the Apple Developer ID.
 
 !!! warning "Apple ID"
-    Parents should set up a **different** Apple ID for each of their looper children and looper children should **not** use the parent Apple ID. Use Apple's Instructions for [Create an Apple ID for your child](https://support.apple.com/en-us/HT201084){: target="_blank" }.
+    Parents should set up a **different** Apple ID for each of their looper children and looper children should **not** use the parent Apple ID. Use Apple's Instructions for [Create an Apple ID for your child](https://support.apple.com/en-us/HT201084).
 
     The Apple Health record is a convenient record of blood glucose, insulin and carbohydrates and should be associated with only one individual.
 
@@ -74,7 +74,7 @@ Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid 
 
 ## Enrolling
 
-To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/){: target="_blank" }.
+To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
 
 Be sure to use the credit card already associated with the email you are using for the developer account. If you switch credit cards, it can cause delays.
 

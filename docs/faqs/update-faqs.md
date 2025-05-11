@@ -12,7 +12,7 @@ In both cases, you build the code to install over an existing app on your phone 
 !!! important "Check *Apple* Developer Account"
     If you have an updated agreement, be sure to accept it before you update or rebuild.
 
-    * [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement){: target="_blank" }
+    * [<code>Apple Program License Agreement</code>](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement)
 
 * If you use the Browser build method:
     * Follow the steps on [Update/Rebuild with Browser](../browser/bb-update.md)
@@ -27,7 +27,7 @@ In both cases, you build the code to install over an existing app on your phone 
     If you have a very slow download speed or if you do a lot of customizations, it may be worth your time to decide if you need a new download.
 
     * Use Finder to check the date of your last download by looking in the Downloads/BuildLoop folder
-    * Check the date of the last release at [*GitHub* `LoopKit/Loop releases`](https://github.com/LoopKit/Loop/releases){: target="_blank" }
+    * Check the date of the last release at [*GitHub* `LoopKit/Loop releases`](https://github.com/LoopKit/Loop/releases)
     * If the date in Finder is after the release date, follow [Find my Downloaded *Loop* Code](../build/edit-mac.md#find-my-downloaded-loop-code)
         * Double-click on the Loop.xcworkspace file in that folder
         * This opens Xcode and you can just plug in your phone and build with your existing download
@@ -74,7 +74,7 @@ Updating the *Loop* app is the same idea as what happens to your other apps on y
 
 Regardless of the build method, always check your *Apple* Developer Account status.
 
-*Apple* updates its License Agreement for the Developer Program frequently. You need to log in to your [developer account](https://developer.apple.com/account/){: target="_blank" } to manually check if there is a new agreement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
+*Apple* updates its License Agreement for the Developer Program frequently. You need to log in to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
 
 ![Screenshot: Account - Apple Developer](../build/img/license.png)
 

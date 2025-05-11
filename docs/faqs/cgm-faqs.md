@@ -117,13 +117,13 @@ Loop 3.4.x and later enables the use of those *Libre* sensors supported by [Libr
 
 ### What about other *Libre* sensors?
 
-There are a number of *Libre* sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [*LibreLinkUp*](https://librelinkup.com/){: target="_blank" }. This enables you to upload your data to the *LibreLinkUp* servers and then access the data from there.
+There are a number of *Libre* sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [*LibreLinkUp*](https://librelinkup.com/). This enables you to upload your data to the *LibreLinkUp* servers and then access the data from there.
 
 **The use of *LibreLinkUp* requires internet access via WiFi or Cell service.**
 
-If this is your only option for CGM, evaluate whether you want to add xDrip4iOS as a CGM option. Instructions for this customization are found at [Loop and Learn: Add CGM to Loop](https://www.loopandlearn.org/custom-code/#add-cgm){: target="_blank" }. The reason to recommend this option is that xDrip4iOS can sense when the *Libre* transmits glucose readings to your phone, although it cannot read the glucose value. Shortly thereafter, it will request the CGM reading from *LibreLinkUp*.
+If this is your only option for CGM, evaluate whether you want to add xDrip4iOS as a CGM option. Instructions for this customization are found at [Loop and Learn: Add CGM to Loop](https://www.loopandlearn.org/custom-code/#add-cgm). The reason to recommend this option is that xDrip4iOS can sense when the *Libre* transmits glucose readings to your phone, although it cannot read the glucose value. Shortly thereafter, it will request the CGM reading from *LibreLinkUp*.
 
-If you prefer not to customize Loop, then you can configure [Nightscout](https://nightscout.github.io/uploader/uploaders/#abbott-freestyle-*Libre*){: target="_blank" } to access data from *LibreLinkUp* and then use Nightscout as a CGM.
+If you prefer not to customize Loop, then you can configure [Nightscout](https://nightscout.github.io/uploader/uploaders/#abbott-freestyle-*Libre*) to access data from *LibreLinkUp* and then use Nightscout as a CGM.
 
 * If you choose this option, your CGM will not act as a heartbeat to wake the app when the phone is locked or in the background
 * You probably have a pump that serves this role, but if your pump is not actively waking your app and you use *LibreLinkUp*, consider [CGM Customization](#cgm-customization).
@@ -142,12 +142,12 @@ Yes.
 
 If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the *xDrip4iOS* DIY CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
 
-If possible, it is recommended that *Libre* users take advantage of [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/blob/main/readme.md){: target="_blank" } which is incorporated into the *Loop* app for version 3.4 and later. However, some *Libre* sensors have encryption that limits ability to get data through open-source code and instead requires using the *LibreLinkUp* server.
+If possible, it is recommended that *Libre* users take advantage of [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/blob/main/readme.md) which is incorporated into the *Loop* app for version 3.4 and later. However, some *Libre* sensors have encryption that limits ability to get data through open-source code and instead requires using the *LibreLinkUp* server.
 
-You can add *xDrip4iOS* as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code){: target="_blank" }. This uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach if you have another choice. For *Libre* users with a sensor that is not handled by LibreTransmitter, this is your only option for closed-loop.
+You can add *xDrip4iOS* as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code). This uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach if you have another choice. For *Libre* users with a sensor that is not handled by LibreTransmitter, this is your only option for closed-loop.
 
 * xDrip4iOS can sense when the *Libre* are providing updates over Bluetooth but cannot interpret the readings because of the encryption for some sensor models
 * xDrip4iOS waits a few seconds after the new reading and then queries *LibreLinkUp* using your login credentials
 * Be aware this makes your ability for closed-loop dependent on having internet access
 
-Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/){: target="_blank" }. You must build these apps yourself so they have the same developer ID as your *Loop* app; you cannot use the TestFlight pre-built versions. And you must configure the app as explained in those docs.
+Please read the docs for [xDrip4iOS](https://xdrip4ios.readthedocs.io/en/latest/). You must build these apps yourself so they have the same developer ID as your *Loop* app; you cannot use the TestFlight pre-built versions. And you must configure the app as explained in those docs.

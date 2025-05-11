@@ -10,7 +10,7 @@ There are several methods to build Loop-dev. First review the general informatio
 
 While Loop-dev is under active development, you should monitor zulipchat and update frequently. Sometimes the `dev` branch is quiet for a month or more and other times it gets updated daily. Please pay attention.
 
-Checking for updates every week is a good idea. Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com){: target="_blank" } to make sure you don't miss critical information.
+Checking for updates every week is a good idea. Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 
 ## Loop-dev Version
 

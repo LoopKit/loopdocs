@@ -167,4 +167,4 @@ Many people use additional apps to assist in following a loved one or to support
 
 ![loop follow graphic from the README page](img/loop-follow.png)
 
-For more information, please read the [LoopFollow](https://www.loopandlearn.org/loop-follow){: target="_blank" } documentation. You can build LoopFollow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../browser/other-apps.md).
+For more information, please read the [LoopFollow](https://www.loopandlearn.org/loop-follow) documentation. You can build LoopFollow using the same [Build Select Script](../../build/build-app.md#build-select-script) you used to build the Loop app or using the [GitHub Browser Build Method](../../browser/other-apps.md).

@@ -122,7 +122,7 @@ Make sure your new computer has the macOS and Xcode required by your phone iOS. 
 
 ## Check your Developer Account
 
-Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/){: target="_blank" } to manually check if there is a new agreement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
+Apple updates its License Agreement for the Developer Program frequently. You need to login to your [developer account](https://developer.apple.com/account/) to manually check if there is a new agreement to accept.  If you see a big red or orange banner across the top of your Developer Account announcing a new license agreement like shown below...please read and accept it before building Loop.
 
 ![Screenshot: Account - Apple Developer](img/license.png)
 
@@ -138,7 +138,7 @@ This step is optional, but if your computer is low on space, it helps to clean u
 
 There is an easy way to do this. The Build Select Script used to download and build Loop provides Maintenance Utilities to help free up disk space.
     
-Please review [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/){: target="_blank" } for more information.
+Please review [Loop and Learn: Build Select Script](https://www.loopandlearn.org/build-select/) for more information.
 
 Copy the line below that starts with `/bin/bash` by hovering the mouse near the bottom right side of the text and clicking the copy icon (should say `Copy to Clipboard` when you hover over it). When you click the icon, a message that says `Copied to Clipboard` will appear on your screen.
 
@@ -225,7 +225,7 @@ More information is shown in the orange box below.
 
     1. You might get this if you logged in as a different user, have a new computer or if your computer had to undergo a factory reset
         * You can transfer your keychain to your new computer (or just revoke and keep going)
-        * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b){: target="_blank" }
+        * To transfer your keychain, check this [Apple Documentation Link](https://help.apple.com/xcode/mac/current/#/dev8a2822e0b)
     1. Your version of Xcode is way out-of-date
         * Mentors have seen this with people trying to build with Xcode 11.4 or earlier
         * Update [Xcode](xcode-version.md) to the most recent version
@@ -258,7 +258,7 @@ The instructions do not hold your hand.
 
 Here are the different steps you need to follow when doing the Direct Download instead of the App Store method:
 
-1. Open the [Apple Developer Download page](https://developer.apple.com/download){: target="_blank" }
+1. Open the [Apple Developer Download page](https://developer.apple.com/download)
     - You may need to login
     - Examine the menus (on my computer there are buttons across the top)
     - Click on Applications

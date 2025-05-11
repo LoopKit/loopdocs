@@ -22,7 +22,7 @@ The *Loop* app is an automated insulin delivery application that you build and o
 ### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
 !!! success "&nbsp;_<span translate="no">Loop</span>_&nbsp;Video"
-    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE){: target="_blank" } video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf){: target="_blank" } was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
+    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
     * It is a great introduction, created when Reese was using an earlier version of Loop
     * Special thanks to 
         * Tina and Reese Hammer for the terrific video
@@ -34,8 +34,8 @@ This site shows you step-by-step how to [**build**](intro/requirements.md){: tar
 
 * **You do not need a technical or computer background to do this**
 * **You can choose to build the *Loop* app several ways:**
-    * Use a [browser](browser/bb-overview.md) on any computer or tablet and install it on your *iPhone* via *TestFlight*
-    * Use an **up-to-date** [*Mac* Computer](build/overview.md) and install it directly on your *iPhone*
+    * Use a [browser](browser/bb-overview.md){: target="_blank" } on any computer or tablet and install it on your *iPhone* via *TestFlight*
+    * Use an **up-to-date** [*Mac* Computer](build/overview.md){: target="_blank" } and install it directly on your *iPhone*
 
 In order to become proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.
 

@@ -23,7 +23,7 @@ Volunteers provide assistance on building and using the *Loop* app at these site
 
     Note, the *LoopDocs* menus were reorganized after this video was prepared to make it easier to progress through the pages.   
 
-[![img/looped-group.png](img/looped-group.png)](https://youtu.be/_vSN6C-Uo04){: target="_blank" }
+[![img/looped-group.png](img/looped-group.png)](https://youtu.be/_vSN6C-Uo04)
 
 ## Screenshots
 

@@ -16,7 +16,7 @@
 
     If you prefer watching your instructions, a narrated video is available:
 
-    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
+    * [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
     Once you have *Apple Developer* and *GitHub* accounts, the steps below are a high-level summary with links to the detailed `LoopDocs` section.
 
@@ -54,7 +54,7 @@
     - **Can you explain the new automatic building?** There's a whole page on [Automatic Update & Build](automatic.md){: target="_blank" } for more explanations
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child){: target="_blank" }.
     - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md){: target="_blank" }
-    - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
+    - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 ## Tips and Tricks
 
@@ -87,7 +87,7 @@ Complete instructions are found at this link for those comfortable with using *G
 
 If you prefer watching your instructions, there is a narrated video of each step needed to build using a browser. This video was created for version 3.2.x and some steps have been simplified with version 3.4.x.
 
-* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
+* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 > Do not decide to uncheck the box for Near Field Communications in the Identifer for `Loop` - that is required to build version 3.4.x and newer.
 
@@ -256,7 +256,7 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
     * Doing this provides 3 of your <code>Secrets</code>
     * These secrets enable your *GitHub* account to interface with *Apple* to create your app
 * `Identifiers`: are required to build the *Loop* app with <code>*GitHub* Browser Build</code> (these are automatically generated for you) when you run `Add Identifiers`
-* [`App Store Connect`](https://appstoreconnect.apple.com){: target="_blank" }: a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
+* [`App Store Connect`](https://appstoreconnect.apple.com): a website available for *Apple Developer*s to review apps build with your *Apple Developer* account
     * Once you purchase an *Apple Developer* annual account, you are an *Apple Developer* and have access to this site
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }

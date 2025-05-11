@@ -102,7 +102,7 @@ Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1,
 
 This graphic (copied from Wikipedia and last updated March 2023) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
 
-Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode){: target="_blank" } and scroll down to the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
+Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll down to the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
 
 ![Screenshot: Wikipedia Xcode example; Clip from Wiki with Xcode versions 13.x - 14.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/xcode_vs_13-14.svg){width="750"}
 {align="center"}

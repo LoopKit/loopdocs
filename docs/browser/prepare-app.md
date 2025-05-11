@@ -31,7 +31,7 @@ Please read carefully to avoid confusion.
 ??? abstract "Section Summary (click to open/close)"
     [<span class="loop-bigger">:material-skip-forward:</span>](#optional-app-group-description-modification) If you have already built the *Loop* app via Xcode using this *Apple* ID, skip ahead to [Optional: App Group Description Modification](#optional-app-group-description-modification).
 
-    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
+    1. Go to [Register an `App Group`](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
     1. For Description, use "Loop App Group".
     1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", substituting your team id for `TEAMID`.
     1. Click "Continue" and then "Register".
@@ -42,7 +42,7 @@ The `Loop` *App Group* already exists if you previously built the *Loop* app usi
 
 If you have never built the *Loop* app with *Xcode* using your `TEAMID`, you need to create an *App Group* associated with your `TEAMID`.
 
-1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/){: target="_blank" } on the *Apple Developer* site.
+1. Open this link: [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the *Apple Developer* site.
 1. For **`Description`**, use `Loop App Group`.
 1. For **`Identifier`**, enter `group.com.TEAMID.loopkit.LoopGroup`, substituting your team id for `TEAMID`.
 1. Double-check the spelling - your `TEAMID` must be correct and the `Loop` *App Group* must match the format shown in the previous step
@@ -58,7 +58,7 @@ If you get an error saying `An Application Group with Identifier 'group.com.TEAM
 > This step is not required, but if you previously built using a Mac with Xcode, it is a good idea to update the Name associated with the Identifier for the Loop App Group. Then what you see on your display will match the directions as you continue.
 
 ??? tip "Optional Rename Step (click to open/close)"
-    Click to display the [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup){: target="_blank" }
+    Click to display the [App Group List](https://developer.apple.com/account/resources/identifiers/list/applicationGroup)
     
     Tap on the Identifier that shows `group.com.TEAMID.loopkit.LoopGroup` where TEAMID is your Developer ID.
 
@@ -82,7 +82,7 @@ First, review the Identifiers and then [Add `App Group` to Identifiers](#add-app
 
 #### New Builders
 
-Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
+Click this link: [`Certificates, Identifiers & Profiles: Identifiers List`](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 
 If you never built using *Xcode*, then after the <code>Add Identifiers</code> *Action*, you will see the six items under **`NAME`**, in the [table](#table-with-name-and-identifier) below, with the associated **`IDENTIFIER`** information. Your `Developer ID` replaces the `TEAMID` in the identifier.
 
@@ -125,7 +125,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 
     Note 2 - Depending on your build history, you may find some of the Identifiers already have your "App Group" and you are just verifying the status.
 
-    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
+    1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
     1. For each of the following identifier names (be sure to look in Identifier column if names do not match):
         * `Loop`
         * `Loop Intent Extension`
@@ -142,7 +142,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#create-loop-app-in-app-store-connect) To skip the detailed instructions, click on [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect)
 
-Click to open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } page. 
+Click to open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. 
 
 Look in the **`IDENTIFIER`** column to locate each Identifer. The name in the **`NAME`** column may be different if you previously [built with a Mac using Xcode](#previous-xcode-builders).
 
@@ -185,7 +185,7 @@ In order to create an app you need to indicate whether you are a trader or a non
 
 Even if the graphic below does not match what you see exactly, it should assist in guiding you through the steps.
 
-Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps){: target="_blank" }; log in if needed.
+Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps); log in if needed.
 
 If you do not see the banner, shown in the top of the graphic below, asking you to Complete Compliance Requirements, you can skip ahead to [Create Loop App in App Store Connect](#create-loop-app-in-app-store-connect).
 
@@ -209,7 +209,7 @@ You do not need to add a bank account or fill out tax forms if you are only usin
 ??? abstract "Section Summary (click to open/close)"
     If you have created a Loop app in App Store Connect before, make sure you [Remove Apple Vision Pro](#remove-apple-vision-pro) and then skip ahead to [Create Certificates](certs.md#create-certificates).
 
-    1. Click on the link [apps list](https://appstoreconnect.apple.com/apps){: target="_blank" } to open App Store Connect and click the blue "plus" icon to create a New App.
+    1. Click on the link [apps list](https://appstoreconnect.apple.com/apps) to open App Store Connect and click the blue "plus" icon to create a New App.
         * Select "iOS".
         * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
         * Select your primary language.
@@ -228,7 +228,7 @@ If you have created a `Loop app` in *App Store Connect* before, skip ahead to [C
 
 If you have previously used some kind of remote build, like `diawi` or `TestFlight`, you may have your Loop in the *App Store* but can't see it. Don't worry - there are instructions for this case.
 
-1. Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
+1. Open this link: [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
     * If you have never added an app to *App Store Connect*, you will not see the icons inside the red rectangle and should keep going, although some people report the search icon shows up for them
     *  If you have an app that is not shown, you will see a search icon and the `All Statuses` dropdown. If you get to step 3 and cannot find your `com.TEAMID.loopkit.Loop` in the *Bundle ID* dropdown, this means you need to follow [Find My Loop](#find-my-loop).
 
@@ -262,7 +262,7 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
 1. One last check - if the `Bundle ID` has a number other than your actual 10-digit `TEAMID` embedded in it, you will be creating an App in the App Store that you cannot use
     * In this case, do **NOT** select `Create`
-    * Instead, go back and put the correct value into the `TEAMID`  *Secret*  and follow the steps in [Errors with Browser: Delete Identifiers](bb-errors.md#delete-identifiers){: target="_blank" }
+    * Instead, go back and put the correct value into the `TEAMID`  *Secret*  and follow the steps in [Errors with Browser: Delete Identifiers](bb-errors.md#delete-identifiers)
 1. Click `Create` but do not fill out the next form. That is for submitting to the app store and you will not be doing that.
 
 ### Remove Apple Vision Pro
@@ -271,7 +271,7 @@ If you have previously used some kind of remote build, like `diawi` or `TestFlig
 
 It is now time to edit the availability of your app on Apple Vision Pro. If you skip this step, you will get an annoying email telling you Apple Vision Pro is not supported by your app.
 
-* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }. In the message section labeled **iOS Apps on Apple Vision Pro**, click on "Edit Availability", highlighted by the red rectangle in the graphic below.
+* First click to return to the main [App Store Connect](https://appstoreconnect.apple.com/apps). In the message section labeled **iOS Apps on Apple Vision Pro**, click on "Edit Availability", highlighted by the red rectangle in the graphic below.
 
     ![Edit Availability for Apple Vision Pro](img/apple-vision-pro.png){width="600"}
     {align="center"}
@@ -296,7 +296,7 @@ There are two possible reasons:
 
 You may have no memory of ever setting up `Loop` in *App Store Connect*. If you previously used some kind of remote build, like `diawi`, your `Loop` may be there as a *Removed App*.
 
-* Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }, look for the `All Statuses` dropdown indicator, and select `Removed Apps`
+* Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps), look for the `All Statuses` dropdown indicator, and select `Removed Apps`
 
     ![app store connect with deleted apps](img/01-app-store-connect.png){width="600"}
     {align="center"}

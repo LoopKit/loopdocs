@@ -30,13 +30,13 @@ To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, y
 
 Complete instructions are found at this link for those comfortable with using *GitHub* and navigating the *Apple Developer* and *Apple App Connect* pages.
 
-* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
+* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
 
 ### How-to Video to Build with a Browser
 
 In addition to the pages linked below in [Configure to use Browser](#configure-to-use-browser), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
 
-* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8){: target="_blank" }
+* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
 
 ### Configure to use Browser
 
@@ -98,7 +98,7 @@ Instructions to make updates are found at:
 
 There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic if your *Apple* Developer account is active, agreements are signed and certificates are valid:
 
-* [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ){: target="_blank" }
+* [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ)
 
 > With `Loop 3.6.0`, certificates are automatically created and renewed. You no longer need to renew certificates as a separate step.
 
@@ -118,7 +118,7 @@ These considerations were prepared when most people were using a Mac computer to
     * Anything with a browser works to build the *Loop* app: PC, Tablet, Mac or iPad
     * The *TestFlight* app is used to install the *Loop* app on your iPhone
 * Compatible version of *Xcode* is provided by *GitHub*
-    * The time required for the initial setup to build with a browser may take less time than one *macOS* and *Xcode* version update for those using [Build with *Mac*](../build/overview.md)
+    * The time required for the initial setup to build with a browser may take less time than one *macOS* and *Xcode* version update for those using [Build with *Mac*](../build/overview.md){: target="_blank" }
 * Automatic Updates are loaded into *TestFlight*
     * With version 3.4 and newer, builds are automatically prepared at least once a month
     * You choose when to install the new app from TestFlight onto your phone
