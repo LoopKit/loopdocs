@@ -19,10 +19,10 @@ Some customizations are the same for everyone and have been prepared for easy us
 
 The *Loop and Learn* team is committed to maintaining these prepared customizations and provides an easy method to add your selection from these customizations to your version of *Loop*.
 
-Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code){: target="_blank" }:
+Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code):
 
-* [List of Customizations Available](https://www.loopandlearn.org/custom-code/#custom-list){: target="_blank" }
-* [Customization Select Script](https://www.loopandlearn.org/custom-code/#customization-select){: target="_blank" }
+* [List of Customizations Available](https://www.loopandlearn.org/custom-code/#custom-list)
+* [Customization Select Script](https://www.loopandlearn.org/custom-code/#customization-select)
 
 ## Personal Customizations
 

@@ -32,13 +32,13 @@ You can use the BuildLoopDev script to build a specific development branch, othe
 
 While Loop-dev is under active development, you should monitor zulipchat and update frequently.
 
-Checking for updates every week is a good idea. Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com){: target="_blank" } to make sure you don't miss critical information.
+Checking for updates every week is a good idea. Also - subscribe to all the streams on [Loop Zulipchat](https://loop.zulipchat.com) to make sure you don't miss critical information.
 
 You may choose to download fresh each time you update. 
 
 You may prefer to use commands to fetch and pull the latest code without making a new clone.
 
-* Some users like to use [GitKraken](https://support.gitkraken.com/){: target="_blank" } to assist them (link takes you to a tutorial video).
+* Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
 * Some are comfortable with the command line git commands described on [here](../version/loopworkspace.md#updating-loop-using-loopworkspace).
 
 ## Loop-dev Version

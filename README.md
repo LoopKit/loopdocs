@@ -14,7 +14,7 @@ This repository contains the source files for [Loop's](https://github.com/LoopKi
 - [**Requirements**](https://loopkit.github.io/loopdocs/intro/requirements/)
 - [Build Loop](https://loopkit.github.io/loopdocs/intro/requirements/#two-loop-build-methods)
 - [Configuration](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/)
-- [Usage](https://loopkit.github.io/loopdocs/operation/loop/open-loop/)
+- [Usage](https://loopkit.github.io/loopdocs/operation/loop/close-loop/)
 - [Troubleshooting](https://loopkit.github.io/loopdocs/troubleshooting/overview/)
 - Remote monitoring and commands with [*Nightscout*](https://loopkit.github.io/loopdocs/nightscout/overview/)
 - [FAQs](https://loopkit.github.io/loopdocs/faqs/overview-faqs/)
@@ -52,7 +52,8 @@ If it is a more substantive change and you want to [install LoopDocs locally](#i
   ```shell
   cd loopdocs # Make sure you are in the folder where you cloned this repository
 
-  python -m pip install -r requirements.txt  
+  python -m pip install -r dev-requirements.txt
+  python -m pip install -r requirements.txt
   ```
 
 ## Run

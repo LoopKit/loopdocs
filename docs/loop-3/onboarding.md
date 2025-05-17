@@ -46,7 +46,7 @@ Each onboarding step is presented in order on this page. Please follow this docu
 !!! abstract "Settings Help"
     Please stay in Open Loop until you verify that your settings (basal rates, insulin sensitivity, carb ratio, etc) are properly adjusted to work with the Loop algorithm. You may need time to evaluate and perhaps identify settings to adjust.
 
-    If you need help with your settings adjustment, you may find useful tips in the companion website, LoopTips at this link: [LoopTips: Settings](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } tab.
+    If you need help with your settings adjustment, you may find useful tips in the companion website, LoopTips at this link: [LoopTips: Settings](https://loopkit.github.io/looptips/settings/settings/) tab.
 
 ### Welcome to Loop
 
@@ -262,9 +262,9 @@ Your [Insulin Sensitivity Factor](therapy-settings.md#insulin-sensitivities) is 
 * At least one insulin sensitivity factor (ISF) must be entered
 * A daily schedule with varying ISF can be entered
 
-Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
+Loop works best if you have [tested and optimized](https://loopkit.github.io/looptips/settings/settings/) your ISF settings for accuracy. Insulin sensitivities can change for many reasons including waiting too long to change your infusion set. Loop will not auto-detect changes in ISF.
 
-Incorrectly set ISF is a common cause of roller coaster glucoses for new Loop users. You may need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#insulin-sensitivity-factor){: target="_blank" }.
+Incorrectly set ISF is a common cause of roller coaster glucoses for new Loop users. You may need to raise (increase) your ISF value/number to help smooth a roller coaster glucose trend. You can read about that topic more over in LoopTips [here](https://loopkit.github.io/looptips/settings/settings/#insulin-sensitivity-factor).
 
 
 ### Therapy Settings Review

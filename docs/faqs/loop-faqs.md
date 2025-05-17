@@ -14,7 +14,7 @@ If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-
 
 Loop requires an *Apple* device. Older iPads do not support *Apple* Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.
 
-There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
+There is open source software that runs on Android phones. Check out [AndroidAPS Documention](https://androidaps.readthedocs.io/en/latest/).
 
 ## Do I have to be "tech-smart" to build Loop?
 
@@ -24,7 +24,7 @@ Often times the non-tech people do better than the tech people in building Loop.
 
 ## Is there a cheat sheet for a school nurse to use?
 
-Sure, you can give this one a try. [School nurse's cheat sheet download](https://github.com/Kdisimone/images/raw/master/school_nurse.pdf){: target="_blank" }
+Sure, you can give this one a try. [School nurse's cheat sheet download](https://github.com/Kdisimone/images/raw/master/school_nurse.pdf)
 
 ## How long does it take to build Loop?
 
@@ -57,7 +57,7 @@ There are no other costs, ongoing or initial, to use the *Loop* app beyond what 
 
 There are several options for [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup.
 
-Many used devices are available in the community. You may find posts for resale on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945){: target="_blank" }. This is a private FB group where you must agree to the rules.
+Many used devices are available in the community. You may find posts for resale on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945). This is a private FB group where you must agree to the rules.
 
 !!! warning ""
     Posts offering to buy or sell items in the support FB groups like The Looped Group, Loop and Learn or Little Loopers will be immediately taken down, or you will be directed to the appropriate location and comments will be turned off. FB can shut down groups without warning if they detect sales and the support groups are too important to risk.
@@ -78,7 +78,7 @@ If you are borrowing an *Apple* computer, look at the required minimum settings 
 
 You can build the *Loop* app using just a browser on any device: [Build with Browser](../browser/bb-overview.md).
 
-If you want to use [Build with *Mac*](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/){: target="_blank" } provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double-check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup){: target="_blank" } who can assist.
+If you want to use [Build with *Mac*](../build/overview.md), there is a hacked way of installing macOS on a Windows computer called a **Virtual Machine**. [This link](https://macosvmware.tech.blog/) provides some helpful information. This **Virtual Machine** method will not work on PCs that have AMD processors, only Intel. Double-check that your computer uses an Intel processor before attempting the virtual machine method. If you want to try this, there are mentors on [The Looped Facebook Group](https://www.facebook.com/groups/TheLoopedGroup) who can assist.
 
 ## How often do I need to get on the computer for Loop?
 
@@ -133,7 +133,7 @@ You can use Omnipod DASH and Eros pumps with the *Loop* app. You do not need the
 
 There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 
-Some Looping equipment can be found on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945){: target="_blank" }. This is a private FB group where you must agree to the rules.
+Some Looping equipment can be found on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945). This is a private FB group where you must agree to the rules.
 
 ## Can I pay someone else to do build the app for me?
 
@@ -189,7 +189,7 @@ If this does not fix the issue, then read [this section](apple-health-faqs.md/#h
 
 ## What happened to FreeAPS?
 
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc){: target="_blank" } was last updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or [`Trio`](https://diy-trio.org/){: target="_blank" }. Do not use an application without an owner.
+[FreeAPS](https://www.loopandlearn.org/freeapsdoc) was last updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or [`Trio`](https://diy-trio.org/). Do not use an application without an owner.
 
 The features people used with FreeAPS are now included in `Loop 3` or can be added with customization.
 

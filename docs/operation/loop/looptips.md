@@ -11,7 +11,7 @@ Things such as:
 * What about pizza boluses?
 * What do I do when I shower or swim?
 
-All of those usability questions and more are addressed over in the companion site called [LoopTips](https://loopkit.github.io/looptips){: target="_blank" }.
+All of those usability questions and more are addressed over in the companion site called [LoopTips](https://loopkit.github.io/looptips).
 
 Please head over to Looptips in order to read some really helpful tips to make your Looping easier.
 

@@ -31,7 +31,7 @@ Before you start trying to resolve your red errors, start with the most obvious 
 
 1. **Did you check that you have the minumum Xcode version for your iOS?** This is critical. If you are updating your Loop app, please review the iOS driven requirements for minimum version of [macOS and Xcode](xcode-version.md#how-do-all-the-minimum-versions-relate-to-each-other).
 
-1. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account){: target="_blank" } to check if there's a new license agreement.
+1. **Did you check your Apple developer account for new license agreement?** Periodically, Apple will release a new developer license agreement that you need to sign before you can build new apps. You will get a build failure if there is a pending license agreement to sign. [Login to your Apple developer account](https://developer.apple.com/account) to check if there's a new license agreement.
 
 1. **Do you have a new computer, never used to build Loop?** Did you [Add Apple ID](xcode-settings.md#add-apple-id) to Xcode?
 
@@ -418,7 +418,7 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 **Error message:** `The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement`.  
 Or you may see `Unable to process request - PLA Update available. You currently don't have access to this membership resource. To resolve this issue, agree to the latest Program License Agreement in your developer account.`
 
-**Solution:** You'll need to log onto your Apple Developer account at [developer.apple.com](https://developer.apple.com/account/){: target="_blank" } and accept the latest license agreement.
+**Solution:** You'll need to log onto your Apple Developer account at [developer.apple.com](https://developer.apple.com/account/) and accept the latest license agreement.
 
 ![img/license.png](img/license.png){width="750"}
 {align="center"}
@@ -490,7 +490,7 @@ If your problem persists after that, then you might need to do total reset of yo
 ![img/pending_certification_request.jpg](img/pending_certification_request.jpg){width="750"}
 {align="center"}
 
-**Solution:** This error message has recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at [developer.apple.com](https://developer.apple.com){: target="_blank" } and then click on "Certificates, Identifiers & Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"
+**Solution:** This error message has recently started to appear for some new Loop builders. To resolve the issue, please log in to your Developer account at [developer.apple.com](https://developer.apple.com) and then click on "Certificates, Identifiers & Profiles".  Under that screen, you will see "Development" under the "Certificates" section in the column on the left.  You will need to click on the certificates, and choose "revoke" from the options that show after you click on the certificate. Confirm the warning message that will appear asking "Do you want to revoke the certificate?"
 
 ![img/revoke1.png](img/revoke1.png){width="750"}
 {align="center"}

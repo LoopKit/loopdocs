@@ -4,7 +4,7 @@ Do not enter settings that you are unsure of. For example, if you haven't any id
 
 ## iOS *Focus* Notifications
 
-iPhones have [*Focus* modes](https://support.apple.com/en-us/108302){: target="_blank" } to enable maximum flexibility for notifications. These modes must be configured by each user to allow important notifications from your diabetes apps.
+iPhones have [*Focus* modes](https://support.apple.com/en-us/108302) to enable maximum flexibility for notifications. These modes must be configured by each user to allow important notifications from your diabetes apps.
 
 **Set up every *Focus* mode you use to allow glucose alerts or you will not get them.**
 

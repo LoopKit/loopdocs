@@ -9,7 +9,7 @@
         * one says the build succeeded (or failed)
         * one says *TestFlight* is ready (typically half-hour after the build succeeds)
         * Ignore the one that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.
-    1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
+    1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
 Refer to the graphic below for the first four steps:
 
@@ -37,7 +37,7 @@ You should get several emails
 * one says *TestFlight* is ready (typically half-hour after the build succeeds)
 * Ignore the one that says you need to fix "issues" in your app
 
-Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps){: target="_blank" }.
+Your app should eventually appear on [`App Store Connect`](https://appstoreconnect.apple.com/apps).
 
 ### Successful Build
 

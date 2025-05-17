@@ -28,8 +28,8 @@ If you are having trouble:
 
 These are two places to ask for help, but please choose only one. You may get a faster response from Facebook, but there are mentors on both sites:
 
-* [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN){: target="_blank" }
-* [Zulipchat: Loop: Build Help]( https://loop.zulipchat.com/#narrow/channel/148543-Loop/topic/Browser.20Build){: target="_blank" }
+* [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
+* [Zulipchat: Loop: Build Help]( https://loop.zulipchat.com/#narrow/channel/148543-Loop/topic/Browser.20Build)
 
 ### What Information is Needed for Help
 
@@ -298,7 +298,7 @@ If there are *Apple* Developer agreements you have not accepted, you may get err
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
 
-If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement){: target="_blank" }.
+If you need detailed instructions, click on this [<code>Apple Program License Agreement</code> Help Page](https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement).
 
 You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or credit card expiration date, as entered at *Apple*, has passed.
 
@@ -428,7 +428,7 @@ Click on this link to [Delete Identifiers](#delete-identifiers).
 #### Rerun Steps with correct TEAMID
 
 1. Enter your `TEAMID` correctly in the repository `Secrets`
-    - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership){: target="_blank" } page for that `TEAMID`.
+    - Make sure you use copy and paste from your [Apple Developer Membership](https://developer.apple.com/account/#!/membership) page for that `TEAMID`.
     - Follow the update instructions here (this example is for `GH_PAT`, you'll do the same but for `TEAMID`) [Update Secrets](bb-update.md#update-secrets)
 
 1. Run Action: [Configure to Use Browser: `Add Identifiers`](identifiers.md#add-identifiers) again
@@ -441,7 +441,7 @@ You will remove that app and create a new one.
 
 #### Remove App with Incorrect `TEAMID`
 
-Go to [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps){: target="_blank" } and follow the numbered steps in the graphic below.
+Go to [`App Store Connect / Apps`](https://appstoreconnect.apple.com/apps) and follow the numbered steps in the graphic below.
 
 1. Find the *Loop* app you created earlier and click on it
 2. On the left side, under `General`, click on `App Information`
@@ -493,7 +493,7 @@ If you see this phrase, the `fastlane` package that is utilized during the `3. C
 
 To fix this error:
 
-- Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/){: target="_blank" }
+- Open this link: [https://github.com/settings/tokens/](https://github.com/settings/tokens/)
   - Here you will see your personal access token (`Fastlane Access Token`) that was created during [Configure to Use Browser: Setup *GitHub*: Create `GitHub Personal Access Token`](../browser/secrets.md#create-github-personal-access-token)
   - Note that `Tokens (classic)` is highlighted in the menu on the left
   - Click on the token name (should be bold, blue **`Fastlane Access Token`** ) to open its detail page
@@ -545,7 +545,7 @@ These steps are only needed to make room for a `Certificate` when running versio
 
 1. Delete an old `Distribution Certificate`
     * *Apple* limits you to two `Distribution Certificates`
-    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list){: target="_blank" }
+    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
         * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
         * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
     * Click on the oldest `Distribution` `Certificate` and revoke it
@@ -598,7 +598,7 @@ If that phrase is found, then:
 
 
 * This can also be caused if you correctly created the *Loop* App but entered an incorrect value for the `TEAMID`.
-    * If you have the incorrect `TEAMID`, check this link: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } for entries with the incorrect `TEAMID` embedded
+    * If you have the incorrect `TEAMID`, check this link: [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) for entries with the incorrect `TEAMID` embedded
     * For example, if your `TEAMID` is `0123456789`, but you entered `000123`, you may see both of these in your identifiers list
         * `com.0123456789.loopkit.Loop`
         * `com.000123.loopkit.Loop`
@@ -655,7 +655,7 @@ This tells you, the `Bundle ID` you selected in [First-Time: Create Loop App in 
 
 Once you have created an app in the *App Store* that is not based on your `TEAMID`, you cannot delete it, but you can Remove it (i.e. hide it so that it is no longer visible on this page and you don't accidentally click on it).
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
 1. Find the App with the wrong `Bundle ID` and click on it
 1. On the left-hand side, click on `App Information` (under `General`)
     * Confirm the `Bundle ID` listed does not include your `TEAMID`
@@ -787,7 +787,7 @@ Once you get a successful build, you return to using your normal `branch` for fu
 
 Assuming you have successfully built using the Browser-Build / *GitHub* method before:
 
-* If the details show this message, `Could not install WWDR certificate`, make sure your [*Apple developer* account](https://developer.apple.com){: target="_blank" } is in good standing and that there are no agreements that need to be accepted and that your `Distribution Certificates` did not expire
+* If the details show this message, `Could not install WWDR certificate`, make sure your [*Apple developer* account](https://developer.apple.com) is in good standing and that there are no agreements that need to be accepted and that your `Distribution Certificates` did not expire
 * Sometimes this is a sign that *Apple* did not respond to a request, this failure happens in the first few minutes
     * Repeat the build and it should be fine the next time
 
@@ -811,7 +811,7 @@ There might be several reasons to do this:
 These steps are needed to reset your `Match-Secrets`:
 
 1. Delete your `Match-Secrets` `Repository`
-    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
+    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 1. In your fork of LoopWorkspace:
     * This will automatically create a new `Match-Secrets` `Repository` for you
     * Run the `Action`: `Create Certificates`
@@ -835,7 +835,7 @@ These instructions are useful if:
 
 The `Identifier` that is associated with the `Loop` identifier cannot be deleted if it is already in the *App Store* but all others can. If you attempt to delete the `XC` *Loop* identifier, you may be told it cannot be deleted because it is in use in the app store. That's OK. If a `Bundle ID` has ever been associated with an app in the *App Store*, you cannot delete the `Identifier`.
 
-* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list){: target="_blank" } on the *Apple Developer* site.
+* Open this link: [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) on the *Apple Developer* site.
 * Use the graphic below as a guide to removing identifiers
 * Keep repeating the steps until you've removed all the identifiers you can (or want to) delete
 * It is OK to delete an identifier even if it does have your correct `TEAMID`

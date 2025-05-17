@@ -47,13 +47,13 @@ You need to save your information digitally, so you can copy and paste. The info
 ??? abstract "Section Summary (click to open/close)"
     You will be saving 4 <code>Secrets</code> from your *Apple* Account in this step.
 
-    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
+    1. Sign in to the [*Apple Developer* portal page](https://developer.apple.com/account).
     1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
         * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements){: target="_blank" }
     1. The first *Apple* `Secret` is your Team ID.
         * Copy the [Team ID](#find-teamid) from the upper right of the screen. Record this as your `TEAMID`.
     1. The final 3 *Apple* `Secrets` come from the creation of the "`FastLane API Key`".
-        * Go to the [App Store Connect](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" } interface, click the "Integrations" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
+        * Go to the [App Store Connect](https://appstoreconnect.apple.com/access/integrations/api) interface, click the "Integrations" tab, and create a new key with "Admin" access. Give it the name: ["`FastLane API Key`"](#generate-api-key).
     1. [Record three more secrets](#copy-api-key-secrets)
         * Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`.
         * Record the key id; this will be used for `FASTLANE_KEY_ID`.
@@ -77,11 +77,11 @@ This section provides detailed instructions for the four <code>Secrets</code> as
 If not, you need to purchase one ($99 annual fee). It may take a few days for the account to be enabled.
 
 * LoopDocs has an [*Apple Developer* Program](../build/apple-developer.md){: target="_blank" } page that explains in detail how to sign up for an account
-* This link takes you straight to [*Apple Developer* account](https://developer.apple.com){: target="_blank" } to sign up
+* This link takes you straight to [*Apple Developer* account](https://developer.apple.com) to sign up
 
 ### Find <code>TEAMID</code>
 
-Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account){: target="_blank" }.
+Sign in to your *Apple Developer* account at this link: [*Apple Developer* portal page](https://developer.apple.com/account).
 
 1. Click `Account` in the top menu bar
 1. If you need to accept a new agreement (happens about twice a year), be sure to do so now
@@ -117,7 +117,7 @@ This step is used to create and save the final 3 `Secrets` you need from your *A
 
     If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } until your *Apple* account is active.
 
-1. Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api){: target="_blank" }
+1. Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api)
 
     * The top of the display is shown in the graphic below
 
@@ -219,7 +219,7 @@ If you do not already have a *GitHub* account, you need to create one. Be sure t
 
 Decide on a couple of usernames that you will be happy with - this will get embedded into your *GitHub* URL. Your first choice might not be available, so be prepared with several candidates. Your personal URL will be: `https://github.com/username`.
 
-* Click on this link to sign up for a free account: [*GitHub* account signup](https://github.com/signup){: target="_blank" }
+* Click on this link to sign up for a free account: [*GitHub* account signup](https://github.com/signup)
     * You will need to enter the **email** you want associated your *GitHub* account
     * You will be asked to enter a **password**
     * You will be asked to enter a **username**
@@ -238,7 +238,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
 ??? abstract "Section Summary (click to open/close)"
     Log into your *GitHub* account to create a personal access token, which you will save as <code>GH_PAT</code>.
 
-     Click to create a [new `personal access token`](https://github.com/settings/tokens/new){: target="_blank" }:
+     Click to create a [new `personal access token`](https://github.com/settings/tokens/new):
 
     * Enter a name for your token, use "`FastLane Access Token`"
     * Change the Expiration selection to `No expiration`
@@ -257,7 +257,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
 You must be logged into your *GitHub* account before starting this step. If you are continuing, you are already logged in.
 
 1. You will be creating a new *GitHub* `Personal Access Token` and giving it the name "`FastLane Access Token`"
-1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new){: target="_blank" }
+1. Open this link: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
     * Referring to the graphic
         * Note that `Tokens (classic)` is highlighted
         * Most Looper will use the `classic Token`

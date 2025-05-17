@@ -91,7 +91,7 @@ After you complete the configuration, read the entire [Remote Commands](remote-c
     * There are many choices for building your own or paying someone to build a *Nightscout* site
         * The directions for only one of the options is documented on this page
         * Use that as a guide for your site
-    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table){: target="_blank" }
+    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
         * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
         * If a green check is missing, it might just be too new for evaluation
 
@@ -101,7 +101,7 @@ There are several options to pay for a turn-key *Nightscout* service.
 
 * In order to enable remote commanding, your *Nightscout* site must be configured with information associated with the *Apple Developer ID* used to build the *Loop* app
     * Most *Nightscout* options allow you full access to your *Nightscout* configuration variables so you can add the required information
-* Please check out [*Nightscout*: New User](https://nightscout.github.io/nightscout/new_user/){: target="_blank" } for up-to-date information about your *Nightscout* options
+* Please check out [*Nightscout*: New User](https://nightscout.github.io/nightscout/new_user/) for up-to-date information about your *Nightscout* options
     * If you use the wizard, you can see more options when you select No to the question about contributing to research and development
     * If you choose *T1Pal* and want to use remote commands, you must also purchase your *Loop* app from them for an additional monthly fee - contact *T1Pal* for details
 
@@ -136,7 +136,7 @@ The step is required for the *Loop* app to give permissions to your *Nightscout*
 
     When creating new APN keys, you have the option for "Sandbox", "Production" or "Sandbox & Production". Be sure to choose "Sandbox & Production".
 
-1. To get started, go to the `Keys` section under Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list){: target="_blank" } and login with the *Apple ID* associated with your developer team that you used to build the *Loop* app.
+1. To get started, go to the `Keys` section under Apple Developer's [`Certificates, Identifiers & Profiles`](https://developer.apple.com/account/resources/authkeys/list) and login with the *Apple ID* associated with your developer team that you used to build the *Loop* app.
 2. If not already open in your browser (compare with the below screenshot), 
     - Click on **`Keys`** (located in the left-hand column). 
     - Either click on the blue **`Create a new key`** button **OR** the plus button (<font color="#2997FF">:material-plus-circle:</font>)  to add a new key.
@@ -183,15 +183,15 @@ You'll need to make sure your *Nightscout* site version is version `13.0.1` or n
      - **Scroll** to the very bottom of this menu.
      - The **version** is located in the **`About`** section after the `Settings` section, (below the `Save` button).
 
-This link should be used if you want to [Nightscout: Update](https://nightscout.github.io/update/update/){: target="_blank" } your *Nightscout* site.
+This link should be used if you want to [Nightscout: Update](https://nightscout.github.io/update/update/) your *Nightscout* site.
 
 !!! note "Note for *Google Cloud* Users"
-    The [*Nightscout* with *Google Cloud*](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html){: target="_blank" } instructions include information about updating your site.  
+    The [*Nightscout* with *Google Cloud*](https://navid200.github.io/xDrip/docs/Nightscout/GoogleCloud.html) instructions include information about updating your site.  
     Scroll down to the line (on that page) that says `Update Nightscout`.
 
 ### Add APN Variables to *Nightscout*
 
-In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your *Nightscout* configuration, review [Nightscout: Setup Variables](https://nightscout.github.io/nightscout/setup_variables/){: target="_blank" } and then come back.
+In order to use remote overrides, you must add a couple of new variables. If you don't know how to update your *Nightscout* configuration, review [Nightscout: Setup Variables](https://nightscout.github.io/nightscout/setup_variables/) and then come back.
 
 The instructions in this section show *Heroku* images. If you are using a different method, you should be able to "translate" the steps.
 
@@ -214,7 +214,7 @@ Scroll down the bottom of the `Config Vars` lines until you find the last blank 
 
 #### Remote Build Config Var Requirement
 
-That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../browser/bb-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/){: target="_blank" }. If you later return to a direct *Xcode* build to your phone, you must remove that config var or remote commands will not work.
+That last row of the table above is needed if you are using a remote build option such as [LoopDocs: GitHub Build Actions](../browser/bb-overview.md) or downloaded an archived file via [Loop and Learn: Remote Build with Diawi](https://www.loopandlearn.org/remote-build/). If you later return to a direct *Xcode* build to your phone, you must remove that config var or remote commands will not work.
 
 When executed properly, you should have something that looks like this for the three (or four) new variables that you added:
 

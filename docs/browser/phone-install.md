@@ -129,8 +129,8 @@ If you tap on the row that says `Previous Builds`, highlighted by the dashed-gre
 
     More information:
 
-    * [Link 1: Apple forum](https://forums.developer.apple.com/forums/thread/720033){: target="_blank" }
-    * [Link 2: Stackoverflow thread](https://stackoverflow.com/questions/74588716/testflight-beta-has-expired){: target="_blank" }
+    * [Link 1: Apple forum](https://forums.developer.apple.com/forums/thread/720033)
+    * [Link 2: Stackoverflow thread](https://stackoverflow.com/questions/74588716/testflight-beta-has-expired)
 
 ## *TestFlight* for a Child
 
@@ -158,7 +158,7 @@ Suppose you really don't like the name you picked initially for the&nbsp;_<span 
 
 You can change it.
 
-Open this link: [App Store Connect Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } and log in as needed.
+Open this link: [App Store Connect Apps](https://appstoreconnect.apple.com/apps) and log in as needed.
 
 * Click on your app name.
 * Click on App Information on the left side (make browser wider if you don't see this).

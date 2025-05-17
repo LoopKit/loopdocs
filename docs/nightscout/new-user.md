@@ -15,14 +15,14 @@
 
 ## Setup Nightscout
 
-Please visit [Nightscout: Documentation](https://nightscout.github.io){: target="_blank" } to read about Nightscout. There are several options, mentioned in that documentation, for setting up your Nightscout site.
+Please visit [Nightscout: Documentation](https://nightscout.github.io) to read about Nightscout. There are several options, mentioned in that documentation, for setting up your Nightscout site.
 
 * You can choose one of many free (except for your time) DIY methods
 * You can choose one of many DIY methods where you pay a monthly fee for data storage
 * You can choose a managed site (for a monthly fee) that creates your site, keeps the software up to date and provides data storage
 * Social Media sites for announcements, help and discussion:
-    * [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud){: target="_blank" } Facebook group
-    * [Nightscout Discord Channel](https://discord.gg/zg7CvCQ){: target="_blank" }
+    * [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group
+    * [Nightscout Discord Channel](https://discord.gg/zg7CvCQ)
 
 
 Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to follow the directions on the [LoopDocs: Nightscout with Loop](update-user.md) page.

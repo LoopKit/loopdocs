@@ -36,7 +36,7 @@ Based on this prediction, Loop calculates a modification to insulin dosing to br
 * When in Open Loop, no automated action is taken.
 * When in Closed Loop, automated action is taken based on the selected Dosing Strategy.
 
-If you find this confusing, read how to [Think Like a Loop](https://loopkit.github.io/looptips/how-to/think-like-loop/){: target="_blank" } on the LoopTips website.
+If you find this confusing, read how to [Think Like a Loop](https://loopkit.github.io/looptips/how-to/think-like-loop/) on the LoopTips website.
 
 ## Dosing Strategy
 

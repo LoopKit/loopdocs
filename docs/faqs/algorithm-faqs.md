@@ -17,7 +17,7 @@ No in that:
     * Loop does not adjust or "learn" the [Therapy Settings](../loop-3/therapy-settings.md) portion of Loop parameters directly
         * It keeps those fixed and user controlled, separate from the dynamic part of the Loop algorithm, which does learn based on short-term patterns
         * If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying Therapy Settings you may need to manually adjust those settings.
-* This LoopTips 3-page section on [Settings](https://loopkit.github.io/looptips/settings/overview/){: target="_blank" } is recommended.
+* This LoopTips 3-page section on [Settings](https://loopkit.github.io/looptips/settings/overview/) is recommended.
 
 
 Perhaps in subsequent versions of Loop, auto-adjustment of settings or machine learning could be incorporated. Until then, you will need to tell Loop if your underlying settings change or make temporary adjustments for short term issues.
@@ -28,7 +28,7 @@ The use of [Overrides](../operation/features/overrides.md) can be quite helpful 
 
 When Loop withholds or suspends some of your scheduled basal insulin, that starts an accumulation of insulin deficit. If you have a kinked cannula and insulin is not delivered, you'd call yourself "lacking insulin" (negative IOB).
 
-When Loop reports negative IOB, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative IOB regularly, you probably need to [adjust/test your settings](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" }. Glucose that continues to decrease (away from a meal) when IOB goes negative is typically a sign that the scheduled basal rate is too high.
+When Loop reports negative IOB, it is a sign that Loop has been actively helping you prevent a low blood sugar. If you find significant negative IOB regularly, you probably need to [adjust/test your settings](https://loopkit.github.io/looptips/settings/settings/). Glucose that continues to decrease (away from a meal) when IOB goes negative is typically a sign that the scheduled basal rate is too high.
 
 !!! abstract "Developer Notes"
     Scheduled basal rates are meant to counteract your endogenous glucose production. Another way of saying this is that Loop expects your body to be producing an amount of glucose at a rate that is handled by your basal insulin settings.

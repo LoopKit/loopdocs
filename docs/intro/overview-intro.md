@@ -17,7 +17,7 @@ The&nbsp;_<span translate="no">LoopDocs</span>_&nbsp;website is organized as fol
 * [Operate](../operation/loop/open-loop.md): How to use the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Troubleshoot](../troubleshooting/overview.md): What to do if you're having trouble with the&nbsp;<span translate="no">Loop</span>&nbsp;app
 * [Version](../version/overview-version.md): Information about&nbsp;<span translate="no">Loop</span>&nbsp;versions, code customization and development
-* [<span translate="no">Nightscout</span>](../nightscout/overview.md): <span translate="no">Loop</span>-specific&nbsp;<span translate="no">Nightscout</span>&nbsp;details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/){: target="_blank" } is an open-source cloud application used by people with diabetes and their caregivers
+* [<span translate="no">Nightscout</span>](../nightscout/overview.md): <span translate="no">Loop</span>-specific&nbsp;<span translate="no">Nightscout</span>&nbsp;details; [<span translate="no">Nightscout</span>](https://nightscout.github.io/) is an open-source cloud application used by people with diabetes and their caregivers
     * [Remote Overview](../nightscout/remote-overview.md): Overview on issuing commands remotely to a&nbsp;<span translate="no">Loop</span>&nbsp;app using&nbsp;<span translate="no">Nightscout</span>&nbsp;and Apple Push Notifications
     * [LoopCaregiver](../nightscout/loop-caregiver.md): Companion app useful for remote commands
 * [FAQs](../faqs/overview-faqs.md): Pages with safety tips, frequently asked questions and the Glossary
@@ -29,7 +29,7 @@ You will notice many links in the *LoopDocs* pages pointing to detailed informat
 
 * If you notice an arrow pointing up and to the right beside the link:
     * This means a new tab or window (depending on your browser configuration) is opened when you click on the link
-    * For example, the [What is Loop?](https://youtu.be/64qhgnmkyAE){: target="_blank" } video is found on *YouTube*
+    * For example, the [What is Loop?](https://youtu.be/64qhgnmkyAE) video is found on *YouTube*
 
 * This link format is used anytime the link will take you to a different website
 * In some cases, it is also used when referring to a different *LoopDocs* page
@@ -90,11 +90,11 @@ Some techniques are specific to&nbsp;_<span translate="no">Loop</span>_, but the
 Here are development history links to other resources for you to explore.
 
 * The early history of&nbsp;<span translate="no">Loop</span>&nbsp;development:
-    * [History of&nbsp;<span translate="no">Loop</span>&nbsp;and&nbsp;<span translate="no">LoopKit</span>](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805){: target="_blank" }, written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Nate Racklyeft
+    * [History of&nbsp;<span translate="no">Loop</span>&nbsp;and&nbsp;<span translate="no">LoopKit</span>](https://medium.com/@loudnate/the-history-of-loop-and-loopkit-59b3caf13805), written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Nate Racklyeft
 
 * The early days and the many advances brought about by the `#We Are Not Waiting` diabetes community:
-    * [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/){: target="_blank" } written by Dana Lewis and check out her website [DIYPS](https://diyps.org){: target="_blank" }.
+    * [The Artificial Pancreas Book](https://www.artificialpancreasbook.com/) written by Dana Lewis and check out her website [DIYPS](https://diyps.org).
 
 * How the Omnipod Eros pods were cracked to work with&nbsp;<span translate="no">Loop</span>:
-    * [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2){: target="_blank" } written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Pete Schwamb
-    * [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf){: target="_blank" } by Sergei Skorobogatov
+    * [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Pete Schwamb
+    * [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov

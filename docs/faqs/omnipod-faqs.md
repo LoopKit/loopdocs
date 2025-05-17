@@ -32,7 +32,7 @@ DASH pumps communicate with the phone via Bluetooth so they do not require a Ril
 * App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
 * App that originated as a patient-led initiative
 
-With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop){: target="_blank" }.
+With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
 
 ## Do I still need a PDM with Omnipod Loop?
 

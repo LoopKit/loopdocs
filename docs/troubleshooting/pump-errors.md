@@ -22,7 +22,7 @@ This error message "battery out of limits" has to do with the internal pump batt
 
 ## Button Error
 
-The Button Error message usually happens from water, moisture, or dust getting under the pump's button pad and causing button(s) to fail.  The fix luckily is quite straight-forward and takes less than 30 minutes.  Check out the fix [here for a YouTube video](https://www.youtube.com/watch?v=nWRVSHXN5cQ){: target="_blank" } or [here for photo gallery](https://imgur.com/a/iOXAP){: target="_blank" }. There is also a detailed page in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Resources/Medtronic-Button-Errors.html#medtronic-button-error-troubleshooting){: target="_blank" }.
+The Button Error message usually happens from water, moisture, or dust getting under the pump's button pad and causing button(s) to fail.  The fix luckily is quite straight-forward and takes less than 30 minutes.  Check out the fix [here for a YouTube video](https://www.youtube.com/watch?v=nWRVSHXN5cQ) or [here for photo gallery](https://imgur.com/a/iOXAP). There is also a detailed page in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Resources/Medtronic-Button-Errors.html#medtronic-button-error-troubleshooting).
 
 ![img/button-error.jpg](img/button-error.jpg){width="400"}
 {align="center"}
@@ -44,11 +44,11 @@ After you finish your fix, another excellent idea is to make sure you add a leng
 
 ## Crack/Missing Piece Repairs
 
-Another common issue on these Medtronic pumps are cracks and/or missing bits of plastic near the battery cap or reservoir sleeve. You can repair these fairly easily. For filling small cracks, [Testor's plastic cement](https://www.amazon.com/Cement-Glue-Value-Testors-tubes/dp/B0013D53CS/ref=sr_1_2?s=toys-and-games&ie=UTF8&qid=1550883077&sr=1-2&keywords=testors+plastic+cement){: target="_blank" } or [Gorilla epoxy](https://www.amazon.com/Gorilla-Epoxy-Minute-ounce-Syringe/dp/B001Z3C3AG/ref=sr_1_1_sspa?ie=UTF8&qid=1550883118&sr=8-1-spons&keywords=gorilla+epoxy&psc=1){: target="_blank" } are good choices.
+Another common issue on these Medtronic pumps are cracks and/or missing bits of plastic near the battery cap or reservoir sleeve. You can repair these fairly easily. For filling small cracks, [Testor's plastic cement](https://www.amazon.com/Cement-Glue-Value-Testors-tubes/dp/B0013D53CS/ref=sr_1_2?s=toys-and-games&ie=UTF8&qid=1550883077&sr=1-2&keywords=testors+plastic+cement) or [Gorilla epoxy](https://www.amazon.com/Gorilla-Epoxy-Minute-ounce-Syringe/dp/B001Z3C3AG/ref=sr_1_1_sspa?ie=UTF8&qid=1550883118&sr=8-1-spons&keywords=gorilla+epoxy&psc=1) are good choices.
 
-For more extensive repairs to replace missing chunks of plastic, [Gorilla epoxy](https://www.amazon.com/Gorilla-Epoxy-Minute-ounce-Syringe/dp/B001Z3C3AG/ref=sr_1_1_sspa?ie=UTF8&qid=1550883118&sr=8-1-spons&keywords=gorilla+epoxy&psc=1){: target="_blank" } or [Sugru](https://www.amazon.com/Sugru-Mouldable-Glue-Original-Formula/dp/B01BFE0KNQ/ref=sr_1_4?ie=UTF8&qid=1550883178&sr=8-4&keywords=sugru){: target="_blank" } are excellent choices.  
+For more extensive repairs to replace missing chunks of plastic, [Gorilla epoxy](https://www.amazon.com/Gorilla-Epoxy-Minute-ounce-Syringe/dp/B001Z3C3AG/ref=sr_1_1_sspa?ie=UTF8&qid=1550883118&sr=8-1-spons&keywords=gorilla+epoxy&psc=1) or [Sugru](https://www.amazon.com/Sugru-Mouldable-Glue-Original-Formula/dp/B01BFE0KNQ/ref=sr_1_4?ie=UTF8&qid=1550883178&sr=8-4&keywords=sugru) are excellent choices.  
 
-You can use [teflon thread tape](https://www.amazon.com/LASCO-11-1033-Sealant-2-Inch-100-Inch/dp/B00ITPHXZI/ref=sr_1_17?ie=UTF8&qid=1550883881&sr=8-17&keywords=teflon+thread+tape){: target="_blank" } on the battery cap to make sure the epoxy or Sugru don't stick to the battery cap, but still recreate the threads.  The first photos are of a Sugru repair and second set of photos are Gorilla epoxy repair.
+You can use [teflon thread tape](https://www.amazon.com/LASCO-11-1033-Sealant-2-Inch-100-Inch/dp/B00ITPHXZI/ref=sr_1_17?ie=UTF8&qid=1550883881&sr=8-17&keywords=teflon+thread+tape) on the battery cap to make sure the epoxy or Sugru don't stick to the battery cap, but still recreate the threads.  The first photos are of a Sugru repair and second set of photos are Gorilla epoxy repair.
 
 ![img/after-sugru.jpg](img/after-sugru.jpg){width="750"}
 {align="center"}

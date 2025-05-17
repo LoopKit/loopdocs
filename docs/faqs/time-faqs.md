@@ -34,7 +34,7 @@ If you have future glucose from a manual time change or just entering something 
     * If you tap on the bolus icon, Loop informs you it detected invalid future glucose
     * If you tap on the glucose icon - it takes you to your CGM which probably has a very different number from that shown on the main Loop screen
 * If you also use Nightscout **and** have the upload CGM readings enabled in Loop, those future glucose values will appear in Nightscout
-    * To fix this problem (after you fix Apple Health), use the [Admin Tools in Nightscout](https://nightscout.github.io/nightscout/admin_tools/){: target="_blank" } to remove future treatments and future entries
+    * To fix this problem (after you fix Apple Health), use the [Admin Tools in Nightscout](https://nightscout.github.io/nightscout/admin_tools/) to remove future treatments and future entries
 
 The *Loop* app is very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next view the *Loop* app after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please [Remove Future Glucose](#remove-future-glucose).
 

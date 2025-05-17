@@ -21,7 +21,7 @@ Loop will adjust any insulin bolus as needed based on the extra insulin provided
 
 ## Assessing the impact of pre-meal
 
-The intent of the pre-meal icon on the toolbar is to [provide an eating-soon mode in Loop](https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/){: target="_blank" }.
+The intent of the pre-meal icon on the toolbar is to [provide an eating-soon mode in Loop](https://diyps.org/2016/07/11/picture-this-how-to-do-eating-soon-mode/).
 Do not set pre-meal limits to
 any hypoglycemic ranges that may require treatment.
 

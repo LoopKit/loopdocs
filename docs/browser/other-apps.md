@@ -53,8 +53,8 @@ You will return to this page after reviewing (but not doing) this step [Configur
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
-| <span translate="no">LoopCaregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver){: target="_blank" } | [LoopDocs: <span translate="no">LoopCaregiver</span>](../nightscout/loop-caregiver.md) |
-| <span translate="no">LoopFollow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow){: target="_blank" } | [<span translate="no">LoopFollow</span>](https://www.loopandlearn.org/loop-follow){: target="_blank" }|
+| <span translate="no">LoopCaregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">LoopCaregiver</span>](../nightscout/loop-caregiver.md) |
+| <span translate="no">LoopFollow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [<span translate="no">LoopFollow</span>](https://www.loopandlearn.org/loop-follow)|
 
 ??? tips "LoopFollow Builders: Display Name (Click to Open/Close)"
     * Would you like the name of your LoopFollow app to be personalized?
@@ -72,8 +72,8 @@ The two repositories below are only if you need to follow a second or third loop
 
 | Special Case | Fork from this Address |
 |---|---|
-| <span translate="no">LoopFollow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second){: target="_blank" } |
-| <span translate="no">LoopFollow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third){: target="_blank" } |
+| <span translate="no">LoopFollow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second) |
+| <span translate="no">LoopFollow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third) |
 
 ## Configure <code>Secrets</code> for this App
 
@@ -292,7 +292,7 @@ This requires you to provide some information. Examine the table below for the b
 
 > If you build from a second or third `repository` for `LoopFollow`, the Bundle ID will have `.Second` or `.Third` at the end.
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
 
 1. If this App already exists, you can continue to [Create Certificates](#create-certificates)
 1. Click the Add Apps button or the blue "plus" icon and select New App as shown in the graphic below
@@ -324,7 +324,7 @@ You are done with the create app step.
 
 ## Add Users to *TestFlight* for App
 
-> If you are not already on your app page because you just created it, use this link to get there: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }. Find your app and click on it and then select the *TestFlight* tab at the top of the page.
+> If you are not already on your app page because you just created it, use this link to get there: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps). Find your app and click on it and then select the *TestFlight* tab at the top of the page.
 
 You need to configure a *TestFlight* Internal Testing Group for each app you build and invite the users (including yourself).
 
@@ -395,7 +395,7 @@ Refer to the graphic below for the first four steps:
 1. If the process appears to be happening without an error, go do something else for a while. The build should take less than half an hour (these tend to build faster than the *Loop* app.
     * When you see the green check (:octicons-check-circle-fill-16:{: .passed }) continue
     * If there is a late-appearing error, then use [Quick Reference for Browser Build Errors](bb-errors.md#quick-reference-for-browser-build-errors){: target="_blank" }
-1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps){: target="_blank" }.
+1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps).
 
 ### Build Errors
 
@@ -498,7 +498,7 @@ You can disable the build actions from the repositories in your personal account
     * Notice the github address now says `my-name` instead of `my-name-org`
     * Select the repository you wish to disable build actions for and follow these instructions
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
-        * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow){: target="_blank" }
+        * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
 
 #### Option 2: Delete `repository`
 
@@ -513,4 +513,4 @@ You can delete the DIY repositories from your personal account
     * Select `Your Repositories`
     * Notice the github address now says `my-name` instead of `my-name-org`
     * Select the repository you wish to delete and follow these instructions
-    * [GitHub Docs: Delete a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
+    * [GitHub Docs: Delete a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)

@@ -60,7 +60,7 @@ The sole exception to reporting to Insulet is if you get a fault ending in `049`
 
 ## Known Pod Fault Codes
 
-The currently known pod faults are listed here on the openomni wiki page: [Pod Fault codes](https://github.com/openaps/openomni/wiki/Fault-event-codes){: target="_blank" }
+The currently known pod faults are listed here on the openomni wiki page: [Pod Fault codes](https://github.com/openaps/openomni/wiki/Fault-event-codes)
 
 ## Ways to Reduce Likelihood of a Fault
 

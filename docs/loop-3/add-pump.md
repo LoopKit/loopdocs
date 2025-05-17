@@ -132,7 +132,7 @@ At this point - you should hit `Cancel` (upper right of screen) and review the [
 
     If you are not ready to fill and attach a pod with insulin, try filling a pod with water and let it drip into a ziplock bag to test running Loop on the pod. (Be sure the pod is not near anything when you hit "Insert Cannula".)
 
-    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/){: target="_blank" }.
+    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/).
 
 ## Medtronic
 
@@ -233,7 +233,7 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 !!! important "Coming Soon"
     The Dana pump is not part of the released code yet. But the plug-in feature of Loop makes adding it extremely easy.
     
-    If you want to test the Dana before it added to Loop, please join the discussion of this pump in zulipchat: [Dana Discussion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }
+    If you want to test the Dana before it added to Loop, please join the discussion of this pump in zulipchat: [Dana Discussion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump)
 
 !!! info "Support for Dana-i"
     All versions of the Dana-i are supported at the moment!

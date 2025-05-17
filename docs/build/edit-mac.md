@@ -67,7 +67,7 @@ Each customization will also show Module, Folder and File bullet below the key p
 
 ## Open a Terminal in LoopWorkspace Folder
 
-If you use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code){: target="_blank" }, it automatically locates your most recent download, makes the customization you select in that download and then opens Xcode for you.
+If you use the [Loop and Learn: Customization Select Script](https://www.loopandlearn.org/custom-code), it automatically locates your most recent download, makes the customization you select in that download and then opens Xcode for you.
 
 But sometimes, you need to find your downloaded code and make your own changes in Xcode. This section tells you how to do this.
 

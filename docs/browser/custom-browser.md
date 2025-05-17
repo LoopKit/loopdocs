@@ -19,14 +19,14 @@ Some customizations are the same for everyone and have been prepared for easy us
 
 The *Loop and Learn* team commits to maintaining these prepared customizations and provides an easy method to add your selection from these customizations to your version of *Loop*.
 
-Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code){: target="_blank" }:
+Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code):
 
-* [List of Customizations Available](https://www.loopandlearn.org/custom-code#custom-list){: target="_blank" }
+* [List of Customizations Available](https://www.loopandlearn.org/custom-code#custom-list)
 * When building using a browser you will be modifying one of the special files that enable the *GitHub* action to build the *Loop* app. This file is called the build_loop.yml file and can be located at your `fork` of your `LoopWorkspace` repository. There are several sections you need to review on the *Loop and Learn* page:
-    * [Overview](https://www.loopandlearn.org/custom-code/#github-intro){: target="_blank" } of how to modify the build_loop.yml file
+    * [Overview](https://www.loopandlearn.org/custom-code/#github-intro) of how to modify the build_loop.yml file
     * You will copy a template that you paste into that file and then edit it to keep just the customizations you want
-    * [Template for `main`](https://www.loopandlearn.org/custom-code#template){: target="_blank" }
-    * [Template for `dev`](https://www.loopandlearn.org/custom-code#template-dev){: target="_blank" }
+    * [Template for `main`](https://www.loopandlearn.org/custom-code#template)
+    * [Template for `dev`](https://www.loopandlearn.org/custom-code#template-dev)
 
 ## Personal Customizations
 

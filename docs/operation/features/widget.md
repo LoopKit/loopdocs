@@ -2,7 +2,7 @@
 
 The *Loop* app uses the new-style widgets. With the advent of iOS 16 and 17, you can add widgets that show up on the lock screen without need to swipe to view. But only some widgets can do this and there is very limited space for those lock screen widgets. You can add more widgets to the Today View, where you do need to swipe right from the Home View or Lock Screen.
 
-The example graphic below shows the *Loop* widget on the top row, with the *LoopCaregiver* widget next to a [Scriptable widget](https://niepi.org/2020/10/25/ios-14-nightscout-widget/){: target="_blank" } that is fed from my Nightscout site on the middle row. Below that is the Dexcom G7 widget next to a weather widget. This Today View requires a swipe right from the Lock Screen or the Home screen. The scriptable widget is also on my lock screen. The update rate for these widgets is similar to watch complications, some will grey out when stale. If they are greyed out, tap on them to go to the app directly.
+The example graphic below shows the *Loop* widget on the top row, with the *LoopCaregiver* widget next to a [Scriptable widget](https://niepi.org/2020/10/25/ios-14-nightscout-widget/) that is fed from my Nightscout site on the middle row. Below that is the Dexcom G7 widget next to a weather widget. This Today View requires a swipe right from the Lock Screen or the Home screen. The scriptable widget is also on my lock screen. The update rate for these widgets is similar to watch complications, some will grey out when stale. If they are greyed out, tap on them to go to the app directly.
 
 The Scriptable widget includes the time of the last update, 11:25 am, so is 11 minutes old at the current time of 11:36 am.
 

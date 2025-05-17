@@ -13,7 +13,7 @@
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
     - **"What are the differences between Medtronic pump models?"** This question is answered in the [Extra Details](#extra-details-on-medtronic) section.
     - **"But what about the other types of pumps?"** No other pumps work with the *Loop* app at this time.
-        - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html){: target="_blank" } and [OpenAPS](https://openaps.readthedocs.io/en/latest/){: target="_blank" } that support other pumps
+        - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps
     - **"Can I change the firmware of my Medtronic pump?"** No.
 
 ## Pumps Compatible with the *Loop* app
@@ -117,7 +117,7 @@ Finding a compatible Medtronic pump is probably the most difficult part for most
 
 * Check out the **HelpAround, NextDoor, OfferUp, and/or LetGo** apps for pumps.
   
-* [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/){: target="_blank" }
+* [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
 
 The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
 
@@ -157,7 +157,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
 ### Omnipod Eros
 
-Eros pods (also known as Gen 3) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation){: target="_blank" }:
+Eros pods (also known as Gen 3) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
 
 !!! info "Alternative Names for Omnipod Eros Pump and Pods"
 
@@ -186,7 +186,7 @@ Loop does not support Omnipod 5 pods.
 ## Sooil Dana pumps
 
 !!! warning "Future Feature Only"
-    Sorry but the Dana pump has not landed in released code or even dev code at this time. There is a testing fork, so check out [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump){: target="_blank" }.
+    Sorry but the Dana pump has not landed in released code or even dev code at this time. There is a testing fork, so check out [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump).
 
     The information below is for the convenience of people reading along in zulipchat.
 
