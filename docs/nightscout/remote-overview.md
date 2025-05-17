@@ -41,7 +41,7 @@ _<span translate="no">Loop</span>_&nbsp;and *Nightscout* work using &nbsp;<span 
 
 For more information, see:
 
-* [Use Unique Times for Remote Carbohydrate Entries](remote-commands.md#use-unique-times-for-remote-carbohydrate-entries)
+* [Use Unique Times for Remote Carbohydrate Entries](remote-commands.md#use-unique-times-for-remote-carbohydrate-entries){: target="_blank" }
 
 
 ## Next Steps

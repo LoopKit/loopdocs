@@ -182,7 +182,7 @@ MATCH_PASSWORD
 
 * For the `FASTLANE_KEY` value, copy the entire contents from<br>`-----BEGIN PRIVATE KEY-----`<br> through<br>`-----END PRIVATE KEY-----`<br>
 * For `MATCH_PASSWORD` value - if you did not already make up a password and save it with your other <code>Secrets</code>, do it now
-    * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](other-apps.md))
+    * The `MATCH_PASSWORD` must be the same for any repository using this method ([Other Apps](other-apps.md){: target="_blank" })
 
 Once you add all six <code>Secrets</code>, your screen should look similar to the one of the two examples in the graphic below.
 

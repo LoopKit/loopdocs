@@ -122,7 +122,7 @@ If you added your Nightscout URL to Loop and are uploading information to Nights
 1. Check that Nightscout database size isn't full (more details below)
 1. If Red Loops are resolved by removing the Nightscout URL from Loop; you need to figure out if it's the connection or the database or some other issue
 
-If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars) and cleaning it.
+If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars){: target="_blank" } and cleaning it.
 
 ### Phone Storage is Full
 

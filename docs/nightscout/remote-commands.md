@@ -219,20 +219,20 @@ For more information, see:
 
 ## Using Remote Commands
 
-There are four ways you can trigger your commands remotely; [*LoopCaregiver*](loop-caregiver.md), [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
+There are four ways you can trigger your commands remotely; [*LoopCaregiver*](loop-caregiver.md){: target="_blank" }, [*Nightscout* Careportal](#nightscout-careportal), [Shortcuts](#shortcuts), and [IFTTT](#ifttt).
 
-### [*LoopCaregiver*](loop-caregiver.md)
+### [*LoopCaregiver*](loop-caregiver.md){: target="_blank" }
 
 Click the link above to read more about *LoopCaregiver* .
 
 ### *Nightscout* Careportal
 
-To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure your *Nightscout* site according to the directions [here](update-user.md) in&nbsp;<span translate="no">Loopdocs</span>&nbsp;in addition to setting up the [Remote Configuration](remote-config.md). 
+To use remote commands in the &nbsp;<span translate="no">Careportal</span>, you must configure your *Nightscout* site according to the directions [here](update-user.md){: target="_blank" } in&nbsp;<span translate="no">Loopdocs</span>&nbsp;in addition to setting up the [Remote Configuration](remote-config.md){: target="_blank" }. 
 
 * Pay particular attention to these entries in the `ENABLE` line: `override` `careportal` `Loop`
     * The order of the words in the `ENABLE` line is not important
-* If you changed your Loop build method (between Mac Build and Browser Build) - don't forget the extra [Config Var](remote-config.md#remote-build-config-var-requirement)
-* You [site must be authenticated](update-user.md#authenticate-site) so that your &nbsp;<span translate="no">Careportal</span>&nbsp;is active to send remote overrides from the website
+* If you changed your Loop build method (between Mac Build and Browser Build) - don't forget the extra [Config Var](remote-config.md#remote-build-config-var-requirement){: target="_blank" }
+* You [site must be authenticated](update-user.md#authenticate-site){: target="_blank" } so that your &nbsp;<span translate="no">Careportal</span>&nbsp;is active to send remote overrides from the website
 
 Once authenticated by entering your `API_SECRET`, there is a plus sign (:material-plus-thick:) in the upper right corner of your site. That is your *Careportal*. Tap the *Careportal* plus sign (:material-plus-thick:) and then scroll down to the bottom of the `event type` menu. Refer to [Command Remote Bolus or Carb Entry](#command-remote-bolus-or-carb-entry) for more instructions and a graphic.
 
