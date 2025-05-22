@@ -155,7 +155,7 @@ Every time you open TestFlight on your phone and select the *Loop* app, it will 
 You have your choice:
 
 * You can manually go into TestFlight each time `main` is automatically built, Select Previous Builds, then choose 3.6.x and install the top listing
-* You can log in at: [App Store Connect: Apps](https://appstoreconnect.apple.com/apps){: target="_blank" }
+* You can log in at: [App Store Connect: Apps](https://appstoreconnect.apple.com/apps)
     * Select your *Loop* app
     * Click on the TestFlight tab
     * For each 3.7 build, click on the row for a build

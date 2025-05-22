@@ -28,8 +28,8 @@ _<span translate="no">Loop</span>_&nbsp;and *Nightscout* work using &nbsp;<span 
 * The &nbsp;<span translate="no">Apple Developer ID</span>&nbsp; used to build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app must be configured to enable &nbsp;<span translate="no">Apple Push Notifications</span>
     * If you built *Nightscout* and&nbsp;_<span translate="no">Loop</span>_&nbsp;yourself, follow the directions to set up [Remote Configuration](remote-config.md)
 * Most providers who supply `Nightscout as a service` or `Hosted Nightscout` will assist you, if needed, in getting your APN information added to your *Nightscout* variables
-    * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user){: target="_blank" }
-    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table){: target="_blank" }
+    * [Nightscout Docs: New User](https://nightscout.github.io/nightscout/new_user)
+    * [Nightscout Docs: Comparison Table](https://nightscout.github.io/nightscout/new_user/#vendors-comparison-table)
         * **Warning: examine the `Loop remote carbs/bolus` row: subscription refers to a monthly fee**
 
 ## Warning: *Nightscout* Remote Carbohydrate Entries

@@ -10,7 +10,7 @@ The information and user interface for Omnipod (Eros) and DASH pods is the same,
     If you overfill the pods, you may get a pod fault right after priming.
 
 !!! info "Pod Filling and Insertion"
-    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y){: target="_blank" } and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI){: target="_blank" }, may be useful.
+    The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.
 
     For DASH Pods:
 
@@ -36,7 +36,7 @@ Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (rig
 
     It makes sure you are really ready to do the insertion.
 
-    Please watch the [video of the *Loop* app screen when pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing){: target="_blank" } to see the full process before pairing your first pod. In this video, once the pod starts priming, you may want to skip forward (it takes about a minute to prime).
+    Please watch the [video of the *Loop* app screen when pairing a DASH pod](https://drive.google.com/file/d/1mN5s8-oorvoa-gbjAaYbnUnl_-vvuhNC/view?usp=sharing) to see the full process before pairing your first pod. In this video, once the pod starts priming, you may want to skip forward (it takes about a minute to prime).
 
 !!! danger "Keep Gear Close"
     * Make sure the phone (and RileyLink if using one) are close to the pod before you tap Pair Pod

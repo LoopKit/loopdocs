@@ -186,9 +186,9 @@ In addition to the risks of missing data, if the internet is not reliable, you m
 
     If you decide to use Nightscout as a CGM source, make sure the data stored in Nightscout is reliable. If the app you choose uploads bad results to Nightscout, you don't want Loop to use that bad data.
     
-    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre, and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/){: target="_blank" }._
+    _Sensors that can be added to Nightscout via other apps include Dexcom, some Libre, and some Medtronic sensors. Please refer to [Nightscout Docs: Configure your Uploader](https://nightscout.github.io/uploader/setup/)._
     
-    There are third-party apps that bring some models of Libre data to your Loop phone. Customization instructions are provided at the `Loop and Learn` website: [New CGM and Pump](https://www.loopandlearn.org/custom-code-add-cgm-pump/){: target="_blank" } that explain how to modify Loop to add a CGM or Pump that is not part of the released `Loop` code.
+    There are third-party apps that bring some models of Libre data to your Loop phone. Customization instructions are provided at the `Loop and Learn` website: [New CGM and Pump](https://www.loopandlearn.org/custom-code-add-cgm-pump/) that explain how to modify Loop to add a CGM or Pump that is not part of the released `Loop` code.
     
     It is suggested that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using a direct Bluetooth connection.
     

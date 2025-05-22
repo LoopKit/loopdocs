@@ -27,7 +27,7 @@ Take some time to familiarize yourself with these data options and choose your p
 * [*Apple Health* app](../faqs/apple-health-faqs.md#healthkit-plots)
     * Great resource to view on the Loop phone
     * Not so great for showing your endo
-* [*Tidepool*](https://loopkit.github.io/looptips/data/tidepool/){: target="_blank" }
+* [*Tidepool*](https://loopkit.github.io/looptips/data/tidepool/)
     * Some endo offices will use your *Tidepool* website when you provide them with an invitation
     * Many users of the mobile app like the note-taking ability
         * The mobile app also uploads *Apple HealthKit* data to *Tidepool* when the "Read from *Apple Health*" option is selected
@@ -37,15 +37,15 @@ Take some time to familiarize yourself with these data options and choose your p
         * If you use the mobile *Tidepool* app on your phone for uploading only, then it is no longer needed when you upload directly to *Tidepool* as a Service within the *Loop* app
 * *Nightscout*:
     * [LoopDocs: *Nightscout*](../nightscout/overview.md){: target="_blank" } section of LoopDocs, has Loop-centric information about *Nightscout*
-    * [LoopTips: *Nightscout*](https://loopkit.github.io/looptips/data/nightscout/){: target="_blank" } link to LoopTips page on *Nightscout*
-    * [*Nightscout*: Documentation](https://nightscout.github.io/){: target="_blank" } official *Nightscout* site with lots of information about building and using *Nightscout*
+    * [LoopTips: *Nightscout*](https://loopkit.github.io/looptips/data/nightscout/) link to LoopTips page on *Nightscout*
+    * [*Nightscout*: Documentation](https://nightscout.github.io/) official *Nightscout* site with lots of information about building and using *Nightscout*
     * *Nightscout* has a lot of useful alarms and alerts, provides a care portal and detailed reports
     * For those who assist someone who is Looping, *Nightscout* enables the caregiver to provide remote commands to the Looper's phone
         * `Loop 2` allows overrides to be enabled or disabled remotely
         * `Loop 3` allows remote commands for carbs, bolus, or overrides
         * The [*LoopCaregiver*](../nightscout/loop-caregiver.md) app is under development but already has sufficient capabilities to be useful for caregivers to monitor and provide remote commands to their Looper's phone
 
-*Nightscout* options include free or nominal cost sites you build yourself or there are several *Nightscout* as a Service vendors who provide turn-key sites for a monthly fee. Links to the options are found in the [*Nightscout*: Documentation](https://nightscout.github.io/){: target="_blank" }.
+*Nightscout* options include free or nominal cost sites you build yourself or there are several *Nightscout* as a Service vendors who provide turn-key sites for a monthly fee. Links to the options are found in the [*Nightscout*: Documentation](https://nightscout.github.io/).
 
 *Nightscout* provides a secure, real-time Dashboard with status of the *Loop* app visible to anyone with access codes and the internet. It is required for remote commanding.
 

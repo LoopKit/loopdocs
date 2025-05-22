@@ -18,7 +18,7 @@ Once you have created a Nightscout site, there are some Nightscout Config Vars s
 
 These instructions are for people using Heroku, because that is the most common choice. If your Nightscout site is not on Heroku, this page provides a guide for the Config Vars used by Loop.
 
-[Login to your Heroku account](https://id.heroku.com/login){: target="_blank" }, select the `Settings` tab near the top of the screen on your Heroku app.
+[Login to your Heroku account](https://id.heroku.com/login), select the `Settings` tab near the top of the screen on your Heroku app.
 
 ![img/heroku5.png](img/heroku5.png){width="600"}
 {align="center"}
@@ -142,7 +142,7 @@ If the current display of your NS site has been not authenticated, you will not 
 
 The use of tokens is documented at this link to the security page in the Nightscout documentation.
 
-* Please see [Nightscout: Tokens](http://nightscout.github.io/nightscout/security/#create-authentication-tokens-for-users){: target="_blank" }
+* Please see [Nightscout: Tokens](http://nightscout.github.io/nightscout/security/#create-authentication-tokens-for-users)
 
 You can authenticate with your API_SECRET using either of these methods:
 
@@ -155,11 +155,11 @@ An authenticated site, with careportal plugin enabled, will show a &plus; at upp
 
 ## Nightscout Version Update
 
-If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit [Nightscout: Update Instructions](https://nightscout.github.io/update/update/){: target="_blank" } for directions on updating.
+If you are new to Loop and haven’t updated your Nightscout site for a while, check to see if there's an available update. Visit [Nightscout: Update Instructions](https://nightscout.github.io/update/update/) for directions on updating.
 
 
 ## More Variables for Loopers
 
 The list of [Variables for Loopers](#variables-for-loopers) above can be expanded if you want your site to automatically open with specific values and alarm settings.
 
-This [Loop and Learn: Nightscout Variables](https://www.loopandlearn.org/nightscout-variables/){: target="_blank" } page, created for folks using the Google Cloud method to create a Nightscout site, has a convenient, expanded list.
+This [Loop and Learn: Nightscout Variables](https://www.loopandlearn.org/nightscout-variables/) page, created for folks using the Google Cloud method to create a Nightscout site, has a convenient, expanded list.

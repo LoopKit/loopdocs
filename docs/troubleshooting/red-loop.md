@@ -106,7 +106,7 @@ If you have not enabled background app refresh on your phone, then Loop is likel
 1. While you are there - check your CGM app as well
 
 
-For iOS 15 and later, there is a new feature described by [Dexcom](https://www.dexcom.com/faqs/what-are-the-recommended-iphone-settings){: target="_blank" }
+For iOS 15 and later, there is a new feature described by [Dexcom](https://www.dexcom.com/faqs/what-are-the-recommended-iphone-settings)
 
 1. Phone Settings -> Screen Time -> choose Always Allowed -> select an app, tap the plus icon to add to Always Allowed list
     - add Dexcom
@@ -122,7 +122,7 @@ If you added your Nightscout URL to Loop and are uploading information to Nights
 1. Check that Nightscout database size isn't full (more details below)
 1. If Red Loops are resolved by removing the Nightscout URL from Loop; you need to figure out if it's the connection or the database or some other issue
 
-If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full){: target="_blank" }. Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars) and cleaning it.
+If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars){: target="_blank" } and cleaning it.
 
 ### Phone Storage is Full
 
@@ -192,7 +192,7 @@ There are a few other things to consider:
 
 ### RileyLink is Broken
 
-How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board. Some information is listed below, but also review the [FAQs at getrileylink.org](https://getrileylink.org/faq){: target="_blank" }.
+How can you tell if your RileyLink has a problem? The answer is mostly within the LED lights that display on the board. Some information is listed below, but also review the [FAQs at getrileylink.org](https://getrileylink.org/faq).
 
 If you have a different RileyLink compatible device, please check the appropriate site for troubleshooting help.
 
@@ -200,13 +200,13 @@ If you have a different RileyLink compatible device, please check the appropriat
 
 **Green light**: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.
 
-**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww){: target="_blank" }). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) for replacement options.
+**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) for replacement options.
 
 ### Battery has Failed
 
-Both [RileyLink](https://getrileylink.org/faq){: target="_blank" } and [EmaLink](https://github.com/sks01/EmaLink/wiki/Battery-swelling){: target="_blank" } use LiPo batteries.  If they stop holding charge for as long as they used to, or if they swell (often first noticed as bowing of the case), stop using the battery and replace it as soon as possible.
+Both [RileyLink](https://getrileylink.org/faq) and [EmaLink](https://github.com/sks01/EmaLink/wiki/Battery-swelling) use LiPo batteries.  If they stop holding charge for as long as they used to, or if they swell (often first noticed as bowing of the case), stop using the battery and replace it as soon as possible.
 
-[OrangeLink](https://getrileylink.org/faq){: target="_blank" } uses regular batteries, so just change them out.
+[OrangeLink](https://getrileylink.org/faq) uses regular batteries, so just change them out.
 
 ### OrangeLink Firmware
 

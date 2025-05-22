@@ -2,14 +2,14 @@
 
 Volunteers generously provide support for Loop via online platforms. You have several options for joining conversations on Loop and asking for help.  Links to the main platforms are listed below.  Non-US Loop users in Italy, Australia, and several other countries have also formed Facebook (FB) groups.
 
-* The [Looped Group](https://www.facebook.com/groups/TheLoopedGroup){: target="_blank" } on Facebook. Looped Group is the original FB group for DIY looping systems. There are a lot of active members there with an excellent history of helping people.
+* The [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) on Facebook. Looped Group is the original FB group for DIY looping systems. There are a lot of active members there with an excellent history of helping people.
 * Loop and Learn is a community that provides Loop-centric information, a T1D Speaker Series covering many topics of general diabetes interest as well as Loop-specific chats, alerts whenever there is an update to iOS and Xcode, Quick Tips and articles written by mentors providing their Loop experience.
-    * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN){: target="_blank" }
-    * [LoopandLearn Website](https://www.loopandlearn.org){: target="_blank" }
-    * [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn){: target="_blank" }
-* The [LoopTips](https://loopkit.github.io/looptips/){: target="_blank" } website provides non-build information that is helpful once you are looping, e.g., how to print endo reports, find Loop data, deal with therapy settings changes, etc.
-* Many Loopers use a companion app called Nightscout. Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud){: target="_blank" } Facebook group.
-* For those interested in what is coming next for Loop and those who prefer not to use Facebook, join [Loop Zulipchat](https://loop.zulipchat.com){: target="_blank" } and be sure to subscribe to all the streams or you'll miss some interesting conversations.
+    * [LoopandLearn Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
+    * [LoopandLearn Website](https://www.loopandlearn.org)
+    * [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn)
+* The [LoopTips](https://loopkit.github.io/looptips/) website provides non-build information that is helpful once you are looping, e.g., how to print endo reports, find Loop data, deal with therapy settings changes, etc.
+* Many Loopers use a companion app called Nightscout. Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group.
+* For those interested in what is coming next for Loop and those who prefer not to use Facebook, join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.
 * Loop has an Instagram account @diy.loop where some updates are shared.
 
 ### How to Ask for Help
@@ -17,7 +17,7 @@ Volunteers generously provide support for Loop via online platforms. You have se
 If you are having trouble building or using your Loop app, there are some important steps to get responses to your question, while also being considerate of our volunteers' time.
 
 1. Always search in **both** [LoopDocs](#website-search) and your favorite [support group](#how-to-find-help). 
-    * Confused about how to search in a Facebook group? [Here is a video](https://www.youtube.com/watch?v=_vSN6C-Uo04){: target="_blank" } to help.
+    * Confused about how to search in a Facebook group? [Here is a video](https://www.youtube.com/watch?v=_vSN6C-Uo04) to help.
 2.  If you use Facebook, click on the Featured posts (at the top of the page); many posts asking for help are already answered there.
 3.  Don't post a duplicate question in multiple groups (mentors monitor many groups). Only post to a different group if you have had no responses for several hours.
 4.  If a LoopDocs search, FB or Zulipchat search, and a check of Looped Group featured posts pinned to the top of the page haven't answered your question, then post for help. Review the [tips for how to post for help](../build/community.md) so that our volunteers get all the information they'll need to help you, without needing to ask 40 questions first.    
@@ -85,10 +85,10 @@ Please submit suggestions for updates and improvements to this documentation. Th
 
 ### Pull Requests and Issues
 
-If you decide to do a GitHub Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls){: target="_blank" } or [Issue](https://github.com/LoopKit/loopdocs/issues){: target="_blank" } on the topic so you don't create a duplicate.
+If you decide to do a GitHub Pull Request (PR) or create an Issue, first look to see if someone has already opened a [PR](https://github.com/LoopKit/loopdocs/pulls) or [Issue](https://github.com/LoopKit/loopdocs/issues) on the topic so you don't create a duplicate.
 
 * If a PR or Issue on the topic is open, feel free to add your comments (don't be shy), but please don't create a duplicate
-* If a PR doesn't exist, watch this [LoopDocs Pull Request video](https://youtu.be/6qSppvgGxpg){: target="_blank" } on how to create one (it's easy, video is less than 5 minutes)
+* If a PR doesn't exist, watch this [LoopDocs Pull Request video](https://youtu.be/6qSppvgGxpg) on how to create one (it's easy, video is less than 5 minutes)
 * If your Issue is new, please add it by clicking on the `New Issue` button
     * Give the Issue a descriptive title
     * Indicate which page or pages need updating , along with a brief description of the problem(s)
@@ -96,6 +96,6 @@ If you decide to do a GitHub Pull Request (PR) or create an Issue, first look to
 ### Facebook or Zulipchat
 Helpful tips for providing LoopDocs feedback through Facebook and/or Zulipchat:
 
-* In [Looped Group](https://www.facebook.com/groups/TheLoopedGroup){: target="_blank" } - make sure your post is clear that you have a comment about LoopDocs in particular.
-* In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue){: target="_blank" } channel.
+* In [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) - make sure your post is clear that you have a comment about LoopDocs in particular.
+* In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue) channel.
 

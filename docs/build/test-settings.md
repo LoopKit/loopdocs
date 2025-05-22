@@ -1,9 +1,9 @@
 ## Test Settings
 
 !!! info "Time Estimate"
-    - 2 hours to review the rest of *LoopDocs* (particularly the [Set Up](../loop-3/loop-3-overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" }, and [FAQs](../faqs/overview-faqs.md){: target="_blank" } sections) and [LoopTips](https://loopkit.github.io/looptips/){: target="_blank" }
+    - 2 hours to review the rest of *LoopDocs* (particularly the [Set Up](../loop-3/loop-3-overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" }, and [FAQs](../faqs/overview-faqs.md){: target="_blank" } sections) and [LoopTips](https://loopkit.github.io/looptips/)
     * If you like quizzes, this older quiz has not been updated for version 3 of the *Loop* app and not all the links work (when your answers are scored), but the questions are still really good and the scoring report provides extra insight into why your answer was right or wrong
-        - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform){: target="_blank" } to confirm you understand the *Loop* app expected behavior
+        - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to confirm you understand the *Loop* app expected behavior
         * New with version 3 of the *Loop* app: 
             * you can remote bolus
             * you can set a manual temp basal rate
@@ -54,11 +54,11 @@ If you are spiking higher than you’d like after a meal, but still coming back 
 
 ## Other Resources
 
-Check the companion site [LoopTips](https://loopkit.github.io/looptips){: target="_blank" }. Several direct links to discussions are provided below:
+Check the companion site [LoopTips](https://loopkit.github.io/looptips). Several direct links to discussions are provided below:
 
-* How to [check settings](https://loopkit.github.io/looptips/settings/settings/){: target="_blank" } 
-* [Why settings are important](https://loopkit.github.io/looptips/settings/overview/){: target="_blank" }
-* [What to do when you need to change settings](https://loopkit.github.io/looptips/settings/adjust/){: target="_blank" } which covers short term and long term reasons
+* How to [check settings](https://loopkit.github.io/looptips/settings/settings/) 
+* [Why settings are important](https://loopkit.github.io/looptips/settings/overview/)
+* [What to do when you need to change settings](https://loopkit.github.io/looptips/settings/adjust/) which covers short term and long term reasons
 
 If you’re fascinated by this topic, read the book *'Think Like A Pancreas'* by Gary Scheiner for a really great discussion.
 

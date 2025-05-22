@@ -22,7 +22,7 @@ For caregivers, *Nightscout* enables remote monitoring and even the ability to i
 
 *Nightscout* is useful for many who use *Loop*. Adults who take care of themselves find the reports and analysis methods from *Nightscout* provide effective tools to monitor their settings and provide reports for their health care provider. It also stores *Loop* configurations so they can be reviewed. With *Loop 3*, the saved *Nightscout* profiles can be downloaded to a new *Loop* installation or a new phone for quick onboarding, should you ever need to start fresh.
 
-Setting up a *Nightscout* site is described in a separate web site: [*Nightscout*: Documentation](https://nightscout.github.io){: target="_blank" }.
+Setting up a *Nightscout* site is described in a separate web site: [*Nightscout*: Documentation](https://nightscout.github.io).
 
 There are *Nightscout* apps in your iPhone App Store that allow you to view the *Nightscout* site after you've configured it, or you can use a web browser to view the data. The app alone is not enough - you need to follow the steps to configure your own *Nightscout* site and obtain your specific *Nightscout* URL.
 
@@ -32,14 +32,14 @@ There are *Nightscout* apps in your iPhone App Store that allow you to view the 
 
 ## *Nightscout* Documentation
 
-There used to be a lot of *Nightscout* information found only in *LoopDocs*, but that was transferred and subsequently updated in [*Nightscout*: Documentation](https://nightscout.github.io){: target="_blank" }. The information that remains in *LoopDocs* about *Nightscout* is *Loop* specific. So you may be jumping back and forth between the two sets of documents.
+There used to be a lot of *Nightscout* information found only in *LoopDocs*, but that was transferred and subsequently updated in [*Nightscout*: Documentation](https://nightscout.github.io). The information that remains in *LoopDocs* about *Nightscout* is *Loop* specific. So you may be jumping back and forth between the two sets of documents.
 
 !!! info ""
 
     * If you see the *Nightscout* Owl logo in upper left you are in the *Nightscout* website
     * If you see the *LoopDocs* green-loop logo in upper left you are in the *LoopDocs* website
     * While in the *Nightscout* tab of *LoopDocs*, most links have a *Nightscout* or *LoopDocs* in the link name
-    * Suggestion: open the [*Nightscout*: Documentation](https://nightscout.github.io){: target="_blank" } in a separate tab or window of your browser for easy access to both websites
+    * Suggestion: open the [*Nightscout*: Documentation](https://nightscout.github.io) in a separate tab or window of your browser for easy access to both websites
 
 
 ## *Nightscout* with *Loop*
@@ -50,7 +50,7 @@ This page provides a general discussion about the *Nightscout* display, as well 
 
 The *Nightscout* display updates when the *Loop* phone is connected to the internet via WiFi or cellular service. When the uploads stop, the *Loop* *pill* becomes "stale" (cannot open it) after 15 minutes.
 
-*Pills* are the little information boxes. They are [*Nightscout*: Plugins](https://nightscout.github.io/nightscout/setup_variables/#plugins){: target="_blank" } that must be enabled with configuration variables and then the display for each *pill* can be turned on or off within your *Nightscout* site.
+*Pills* are the little information boxes. They are [*Nightscout*: Plugins](https://nightscout.github.io/nightscout/setup_variables/#plugins) that must be enabled with configuration variables and then the display for each *pill* can be turned on or off within your *Nightscout* site.
 
 If upload to *Nightscout* is interrupted, *Loop 3* stores up to 7 days of *Nightscout* information in a local buffer on the phone, and will attempt to upload later when access is restored. Once access is restored, a stale *Loop* Pill may require 15 minutes before it will open to display additional *Loop* information.
 

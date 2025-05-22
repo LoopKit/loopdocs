@@ -97,7 +97,7 @@ The `alive` branch you need is created automatically when you run the `Build Loo
 !!! warning "I got an error regarding a branch with `alive` in the name"
     * Sometimes you get an error about an `alive` branch
     * If you do get an error, simply delete the branch and run the `Build Loop` action again
-        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch){: target="_blank" } or ask for help when deleting a branch
+        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch) or ask for help when deleting a branch
     * You can delete every branch that starts with the name `alive`
     * Leave the other branches alone unless a mentor directs you to take action
 
@@ -217,7 +217,7 @@ Your build will run on the following conditions:
 
 To enable the scheduled build and sync, the `GH_PAT` must hold the `workflow` permission scopes. This permission serves as the enabler for automatic and scheduled builds with browser build. To disable this, follow these steps:
 
-1. Go to your [FastLane Access Token](https://github.com/settings/tokens){: target="_blank" }
+1. Go to your [FastLane Access Token](https://github.com/settings/tokens)
 1. If it says `repo`, `workflow` next to the `FastLane Access Token` link, then automatic building is enabled
 1. To disable automatic update and build, click on the link to open the token detail view
     * Click to uncheck the `workflow` box
@@ -236,7 +236,7 @@ What if I decide I don't want the automatic building feature?
     * Otherwise, you may see the dreaded "Loop Beta has expired" message, have a Loop that won't open and not have a version ready to go in TestFlight that you can install within a few seconds
 
 * If you are taking a break from Loop and want to stop monthly Build emails, consider disabling actions for the `Build Loop` action for your app.
-    * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow){: target="_blank" }
+    * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
 * If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to use Browser](bb-overview.md#configure-to-use-browser) to restore ability to build Loop with GitHub.

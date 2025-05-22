@@ -121,8 +121,8 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 1. Procure the new phone and keep the old one (if possible)
     * [Use the Old Phone](#use-the-old-phone-until-ready) until it is convenient to switch to the new phone
 1. Transfer your information to your new phone. Your options are:
-    1. Use both devices with [Quick Start](https://support.apple.com/en-us/HT210216){: target="_blank" } to transfer from the old to the new phone
-    1. Use an [iCloud back-up](https://support.apple.com/en-us/HT210217){: target="_blank" } for the transfer
+    1. Use both devices with [Quick Start](https://support.apple.com/en-us/HT210216) to transfer from the old to the new phone
+    1. Use an [iCloud back-up](https://support.apple.com/en-us/HT210217) for the transfer
     1. Let the new phone vendor help you
 
 ### Use the Old Phone until Ready

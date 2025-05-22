@@ -54,7 +54,7 @@ Some practical use of the ICE screen is provided in the [Meal Entries: Review Ca
     * Some people enter typical values for themselves for a given meal and let Loop handle the rest
     * Some people guess and then carb surf if their glucose goes higher than they like
 
-The rest of this page was written by Katie DiSimone before the non-linear carb model was added to Loop in 2019. You may also want to review her blog post from 2017: [Loop: Dynamic Carb Absorption](https://web.archive.org/web/20231130033719/https://seemycgm.com/2017/07/25/loop-dynamic-carb-absorption/){: target="_blank" }.
+The rest of this page was written by Katie DiSimone before the non-linear carb model was added to Loop in 2019. You may also want to review her blog post from 2017: [Loop: Dynamic Carb Absorption](https://web.archive.org/web/20231130033719/https://seemycgm.com/2017/07/25/loop-dynamic-carb-absorption/).
 
 A lot of the information is still relevant although some of the Loop carb modeling and prediction details have been updated over the years.
 

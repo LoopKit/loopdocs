@@ -17,9 +17,9 @@ Tap on the Settings icon at the toolbar of the *Loop* app and look at the versio
 
 ### Is the Released Version Newer?
 
-Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases){: target="_blank" }.
+Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases).
 
-Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases){: target="_blank" }.
+Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
 
 ## Loop 3 Version History
 
@@ -27,7 +27,7 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 
 *Loop* v3.6.0 was released on 23 April 2025.
 
-* [Link to release notes for Loop 3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0){: target="_blank" }
+* [Link to release notes for Loop 3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0)
 
 #### 3.6.0 Highlights
 
@@ -65,7 +65,7 @@ These are changes in response to feature requests (`Loop Issues`) that were impl
 
 | Loop Issue | Submodule Updated | PR in Submodule | Request | Modification |
 |:--|:--|:--|:--|:--|
-| [2168](https://github.com/LoopKit/Loop/issues/2168){: target="_blank" } | Loop | [2300](https://github.com/LoopKit/Loop/pull/2300){: target="_blank" } | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
+| [2168](https://github.com/LoopKit/Loop/issues/2168) | Loop | [2300](https://github.com/LoopKit/Loop/pull/2300) | Request for message change helpful for little loopers with multiple caregivers; avoid double carbohydrate entry | Change button label to `Save Carbs & Deliver` |
 
 ##### Bug Fixes
 
@@ -73,11 +73,11 @@ These are fixes in response to specific bug reports (`Loop Issues`) that were im
 
 | Loop Issue | Submodule Updated | PR in Submodule | Description of bug that is fixed |
 |:--|:--|:--|:--|
-| [2159](https://github.com/LoopKit/Loop/issues/2159){: target="_blank" } | Loop | [2163](https://github.com/LoopKit/Loop/pull/2163){: target="_blank" } | Glucose change graph 'predicted' effects are inconsistent at different times or between orientations |
-| [2196](https://github.com/LoopKit/Loop/issues/2196){: target="_blank" } | Loop | [2295](https://github.com/LoopKit/Loop/pull/2295){: target="_blank" } | Bolus progress can display a stale total delivery value (UI bug only) |
-| [2265](https://github.com/LoopKit/Loop/issues/2265){: target="_blank" } | G7SensorKit | [34](https://github.com/LoopKit/G7SensorKit/pull/34){: target="_blank" } | No G7 CGM Updates - Loop Failure |
-| [2291](https://github.com/LoopKit/Loop/issues/2291){: target="_blank" } | G7SensorKit | [35](https://github.com/LoopKit/G7SensorKit/pull/35){: target="_blank" } | Backfill from G7 Created Bad Data |
-| N/A | Loop | [2297](https://github.com/LoopKit/Loop/pull/2297){: target="_blank" } | Fix display glitch for Algorithm Experiment selections |
+| [2159](https://github.com/LoopKit/Loop/issues/2159) | Loop | [2163](https://github.com/LoopKit/Loop/pull/2163) | Glucose change graph 'predicted' effects are inconsistent at different times or between orientations |
+| [2196](https://github.com/LoopKit/Loop/issues/2196) | Loop | [2295](https://github.com/LoopKit/Loop/pull/2295) | Bolus progress can display a stale total delivery value (UI bug only) |
+| [2265](https://github.com/LoopKit/Loop/issues/2265) | G7SensorKit | [34](https://github.com/LoopKit/G7SensorKit/pull/34) | No G7 CGM Updates - Loop Failure |
+| [2291](https://github.com/LoopKit/Loop/issues/2291) | G7SensorKit | [35](https://github.com/LoopKit/G7SensorKit/pull/35) | Backfill from G7 Created Bad Data |
+| N/A | Loop | [2297](https://github.com/LoopKit/Loop/pull/2297) | Fix display glitch for Algorithm Experiment selections |
 
 ##### OmniBLE and OmniKit Updates
 
@@ -100,7 +100,7 @@ Updates were made to the Omnipod pump submodules: OmniBLE and OmniKit. Unless ot
 * The first release on 9 October 2024 inadvertently removed all the improvements from v3.4.3, but did fix the TestFlight expiration date
 * The second release on 12 October 2024 restored the improvements from v3.4.3
 
-* [Link to release notes for Loop 3.4.4](https://github.com/LoopKit/Loop/releases/tag/v3.4.4){: target="_blank" }
+* [Link to release notes for Loop 3.4.4](https://github.com/LoopKit/Loop/releases/tag/v3.4.4)
 
 ### Loop v3.4.3
 
@@ -115,32 +115,32 @@ This was a minor update to the *Loop* code with a few bug fixes and some capabil
     
     New revision will be landing in the `dev` branch soon. Don't be surprised - stick with `main` until the changes have been tested.
 
-* [Link to release notes for Loop 3.4.3](https://github.com/LoopKit/Loop/releases/tag/v3.4.3){: target="_blank" }
+* [Link to release notes for Loop 3.4.3](https://github.com/LoopKit/Loop/releases/tag/v3.4.3)
 
 These updates were incorporated in this release. The pull request for each modification is linked in parentheses.
 
-* CGMBLEKit: Add ONE to the display name ([194](https://github.com/LoopKit/CGMBLEKit/pull/194){: target="_blank" })
+* CGMBLEKit: Add ONE to the display name ([194](https://github.com/LoopKit/CGMBLEKit/pull/194))
 
-* G7SensorKit: Add ONE+ to the display name ([28](https://github.com/LoopKit/G7SensorKit/pull/28){: target="_blank" })
+* G7SensorKit: Add ONE+ to the display name ([28](https://github.com/LoopKit/G7SensorKit/pull/28))
 
 * LibreTransmitter: 
-    * support the newer libre 2 plus european sensors ([14](https://github.com/LoopKit/LibreTransmitter/pull/14){: target="_blank" })
-    * fix: Prevent notification from sending if it isnt enabled ([15](https://github.com/LoopKit/LibreTransmitter/pull/15){: target="_blank" })
-    * increase build speed for Xcode 16 ([16](https://github.com/LoopKit/LibreTransmitter/pull/16){: target="_blank" })
+    * support the newer libre 2 plus european sensors ([14](https://github.com/LoopKit/LibreTransmitter/pull/14))
+    * fix: Prevent notification from sending if it isnt enabled ([15](https://github.com/LoopKit/LibreTransmitter/pull/15))
+    * increase build speed for Xcode 16 ([16](https://github.com/LoopKit/LibreTransmitter/pull/16))
 
 * LoopKit:
-    * Prevent app crash while moving presets ([540](https://github.com/LoopKit/LoopKit/pull/540){: target="_blank" })
-    * fix locale for CarbEntry decimal separator ([546](https://github.com/LoopKit/LoopKit/pull/546){: target="_blank" })
-    * Improve the visibility of the options to select ([549](https://github.com/LoopKit/LoopKit/pull/549){: target="_blank" })
+    * Prevent app crash while moving presets ([540](https://github.com/LoopKit/LoopKit/pull/540))
+    * fix locale for CarbEntry decimal separator ([546](https://github.com/LoopKit/LoopKit/pull/546))
+    * Improve the visibility of the options to select ([549](https://github.com/LoopKit/LoopKit/pull/549))
 
 * Several fixes for OmniBLE (DASH), OmniKit (Eros)
-    * update_pump_manager ([125](https://github.com/LoopKit/OmniBLE/pull/125){: target="_blank" }, [36](https://github.com/LoopKit/OmniKit/pull/36){: target="_blank" })
-    * fix/bogus_suspend_msg ([126](https://github.com/LoopKit/OmniBLE/pull/126){: target="_blank" }, [37](https://github.com/LoopKit/OmniKit/pull/37){: target="_blank" })
-    * podAlreadyPaired-fix ([127](https://github.com/LoopKit/OmniBLE/pull/127){: target="_blank" }, [38](https://github.com/LoopKit/OmniKit/pull/38){: target="_blank" })
-    * fix/deactivate-sideways-pull ([128](https://github.com/LoopKit/OmniBLE/pull/128){: target="_blank" }, [39](https://github.com/LoopKit/OmniKit/pull/39){: target="_blank" })
-    * increase build speed for Xcode 16 ([131](https://github.com/LoopKit/OmniBLE/pull/131){: target="_blank" }, [40](https://github.com/LoopKit/OmniKit/pull/40){: target="_blank" })
+    * update_pump_manager ([125](https://github.com/LoopKit/OmniBLE/pull/125), [36](https://github.com/LoopKit/OmniKit/pull/36))
+    * fix/bogus_suspend_msg ([126](https://github.com/LoopKit/OmniBLE/pull/126), [37](https://github.com/LoopKit/OmniKit/pull/37))
+    * podAlreadyPaired-fix ([127](https://github.com/LoopKit/OmniBLE/pull/127), [38](https://github.com/LoopKit/OmniKit/pull/38))
+    * fix/deactivate-sideways-pull ([128](https://github.com/LoopKit/OmniBLE/pull/128), [39](https://github.com/LoopKit/OmniKit/pull/39))
+    * increase build speed for Xcode 16 ([131](https://github.com/LoopKit/OmniBLE/pull/131), [40](https://github.com/LoopKit/OmniKit/pull/40))
 
-The Browser Build method was updated to use `Fastlane version 2.223.1`. This change ([208](https://github.com/LoopKit/LoopWorkspace/pull/208){: target="_blank" }) fixes a build error reported by several folks across the Open Source app community. This was also added to LoopWorkspace `dev` branch ([207](https://github.com/LoopKit/LoopWorkspace/pull/207){: target="_blank" }).
+The Browser Build method was updated to use `Fastlane version 2.223.1`. This change ([208](https://github.com/LoopKit/LoopWorkspace/pull/208)) fixes a build error reported by several folks across the Open Source app community. This was also added to LoopWorkspace `dev` branch ([207](https://github.com/LoopKit/LoopWorkspace/pull/207)).
 
 ### Loop v3.4.2
 
@@ -148,7 +148,7 @@ The Browser Build method was updated to use `Fastlane version 2.223.1`. This cha
 
 This was a patch that fixed errors with the expiration date for the Mac-Xcode build method for Xcode 16. No other changes were made. Unfortunately, the method used to fix expiration date for Mac Xcode 16 builders removed the expiration date for Browser Builders. The expiration date for Browser Builders was restored with version 3.4.4.
 
-* [Link to release notes for Loop 3.4.2](https://github.com/LoopKit/Loop/releases/tag/v3.4.2){: target="_blank" }
+* [Link to release notes for Loop 3.4.2](https://github.com/LoopKit/Loop/releases/tag/v3.4.2)
 
 ### Loop v3.4.1
 
@@ -156,13 +156,13 @@ This was a patch that fixed errors with the expiration date for the Mac-Xcode bu
 
 This was a patch that fixed errors with the Browser Build. No other changes were made.
 
-* [Link to release notes for Loop 3.4.1](https://github.com/LoopKit/Loop/releases/tag/v3.4.1){: target="_blank" }
+* [Link to release notes for Loop 3.4.1](https://github.com/LoopKit/Loop/releases/tag/v3.4.1)
 
 ### Loop v3.4.0
 
 *Loop* v3.4.0 was released on 13 July 2024.
 
-* [Link to release notes for Loop 3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0){: target="_blank" }
+* [Link to release notes for Loop 3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0)
 * There are some one-time update steps required for those who Build with Browser:
     * [Update from 3.2.x to 3.4](../browser/bb-update.md#update-from-32x-to-34){: target="_blank" }
 
@@ -239,12 +239,12 @@ Pete's announcment:
 
 Loop 3.2 Is released! This contains some very important bug fixes for everyone. If you are running latest dev, you do not need to update, but everyone else running older 3.x versions of Loop should consider upgrading as soon as you can.
 
-[https://github.com/LoopKit/Loop/releases/tag/v3.2.0](https://github.com/LoopKit/Loop/releases/tag/v3.2.0){: target="_blank" }
+[https://github.com/LoopKit/Loop/releases/tag/v3.2.0](https://github.com/LoopKit/Loop/releases/tag/v3.2.0)
 
 Bug Fixes (Please update ASAP):
 
-* Omnipod bolus tracking issue fixed: [link](https://github.com/LoopKit/Loop/issues/1941){: target="_blank" }
-* Medtronic temp basal tracking issue fixed: [link](https://github.com/ps2/rileylink_ios/pull/775){: target="_blank" }
+* Omnipod bolus tracking issue fixed: [link](https://github.com/LoopKit/Loop/issues/1941)
+* Medtronic temp basal tracking issue fixed: [link](https://github.com/ps2/rileylink_ios/pull/775)
 * Crashes caused by large updates from Apple Health fixed
 * Automatic refresh timers for Omnipod (both Dash and Eros) have been removed, to reduce load on pods and reduce frequency of failed pods.
 
@@ -254,9 +254,9 @@ Updates and new Features:
 * Tidepool Service added. This lets you upload your diabetes data from Loop to Tidepool! It is in early stages, so there may be issues. Please report any issues you have with this integration on DIY Loop forums, like Zulip, GitHub, or the Looped group.
 * Translations! Loop now has very good coverage for several languages, including German, Spanish, Italian, French, Danish, Polish, Dutch, Norwegian, Russian, Turkish, and Romanian!
     * Warning - a few items got overwritten by Spanish - if you can't figure it out, try Google translate
-* A new safeguard restricts automatic dosing to keep your IOB below a limit of 2 times your max bolus. Manual dosing can still be delivered to put your IOB above this amount. [link](https://github.com/LoopKit/Loop/pull/1871){: target="_blank" }
-* Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901){: target="_blank" }
-* “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76){: target="_blank" }
+* A new safeguard restricts automatic dosing to keep your IOB below a limit of 2 times your max bolus. Manual dosing can still be delivered to put your IOB above this amount. [link](https://github.com/LoopKit/Loop/pull/1871)
+* Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901)
+* “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76)
 
 ### Loop v3.0.0
 
@@ -264,7 +264,7 @@ After several years of development and a lot of testing, Loop 3 is here!
 
 Loop v3.0.0 was released on January 14, 2023.
 
-[Link to release notes for Loop 3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0){: target="_blank" }
+[Link to release notes for Loop 3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0)
 
 !!! warning "Use Script not Zip"
     If you follow that link above, there is an `Assets` section with a zip link

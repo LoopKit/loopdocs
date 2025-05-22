@@ -14,7 +14,7 @@
 !!! question "FAQs"
     - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. There are many used devices available in the community now that many users have switched to DASH. **Not needed for DASH**
-        * Facebook Group where you may find used items: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/){: target="_blank" }
+        * Facebook Group where you may find used items: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to the normal scheduled basal rate
     - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between compatible devices.
     - **"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"** See [RileyLink Compatible Device Range](../faqs/rileylink-faqs.md#range){: target="_blank" }.
@@ -40,14 +40,14 @@ The RileyLink protocol defines a specific Bluetooth interface and way of opening
 
 There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
-- A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A){: target="_blank" } is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
+- A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
 - RileyLink
     - Designed by Pete Schwamb
     - Rechargeable battery (max 36 hours per charge)
     - No longer available new, check this Facebook Group for used ones:
-        * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/){: target="_blank" }
+        * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
 - OrangeLink
-    - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org){: target="_blank" }
+    - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org)
     - Uses 2 AAA batteries, batteries typically last weeks or more, depending on the batteries/pump type
     - Works with either Omnipod or Medtronic
     - Uses new chipsets, reported to have a longer range
@@ -59,8 +59,8 @@ There used to be just one option, the original RileyLink. Now there are more opt
         - Standard: 6 to 7 days
         - Maxx: 12 to 14 days
     - Must order either Omnipod or Medtronic version
-    - This [EmaLink Information](https://github.com/sks01/EmaLink#emalink){: target="_blank" } includes photos of various EmaLink configurations as well as photos showing relative sizes of EmaLink, OrangeLink and RileyLink
-    - In North America, available from [EmaLink.us](https://www.emalink.us){: target="_blank" }
+    - This [EmaLink Information](https://github.com/sks01/EmaLink#emalink) includes photos of various EmaLink configurations as well as photos showing relative sizes of EmaLink, OrangeLink and RileyLink
+    - In North America, available from [EmaLink.us](https://www.emalink.us)
 
 ## More information
 

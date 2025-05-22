@@ -1,14 +1,14 @@
 ## Fork `LoopWorkspace`
 
 ???+ tip "Are you a Caregiver? Are you planning to build more than one app? (Click to close/open)"
-    Did you skip the optional section to [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }?
+    Did you skip the optional section to [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization)?
 
     If you plan to build more that one app and use your personal account, you must add the 6 <code>Secrets</code> to each repository for each app. It is not hard but it can get tiresome.
 
     If you make use of the organization option, you only enter the 6 <code>Secrets</code> one time for all your repositories. This is strongly recommended, but not required, for all Browser Builders.
 
 ???+ abstract "Section Summary (click to open/close)"
-    Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } into your account.
+    Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
 
     [<span class="loop-bigger">:material-skip-forward:</span>](#configure-secrets) To skip the detailed instructions, click on [Configure <code>Secrets</code>](#configure-secrets)
 
@@ -17,7 +17,7 @@
 
 ### Create the `Fork`
 
-1. Click this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace){: target="_blank" } to open the <code>LoopWorkspace</code> repository owned by `LoopKit`
+1. Click this link [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) to open the <code>LoopWorkspace</code> repository owned by `LoopKit`
 1. At the upper right side of the screen, click on the word `Fork`
 
     ![fork information for LoopWorkspace](img/gh-fork-loopworkspace-top.svg){width="700"}
@@ -70,7 +70,7 @@ If you decided to not to use a GitHub organization, skip ahead to [Personal Acco
 
 You will be adding `Secrets` and `Variables` to your organization. This makes them available to any app you decide to build as long as you set up your free *GitHub* organization as the [owner of the fork](#create-the-fork).
 
-1. Tap on this [*GitHub* link](https://github.com/settings/organizations){: target="_blank" } to see your organizations. (If you don't see a screen similar to the graphic below - you are not logged in to *GitHub*).
+1. Tap on this [*GitHub* link](https://github.com/settings/organizations) to see your organizations. (If you don't see a screen similar to the graphic below - you are not logged in to *GitHub*).
 
     ![settings screen](img/gh-quick-access-org.png){width="700"}
     {align="center"}
@@ -231,7 +231,7 @@ The next step is to [Validate Secrets and Add Identifiers](identifiers.md).
 If you are someone who already has a lot of forks in your personal account and want to switch to using a *GitHub* organization. Here's how:
 
 1. Follow the steps to create your organization
-    * [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization){: target="_blank" }
+    * [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization)
 1. Add the `Secrets` and the `Variable` to your *GitHub* organization as explained in [Prepare to Enter `Secrets`](#prepare-to-enter-secrets)
 1. Fork all the repos you normally use, but this time, set your organization as the owner
 1. For each repository in your organization:
@@ -245,7 +245,7 @@ If you are someone who already has a lot of forks in your personal account and w
         * The one thing you might want to do is copy customizations from your personal account fork to the organization fork
 4. Return to your private *GitHub* account
     * Your choice: either delete the forks in your personal account or at least disable the building from your personal account
-    * [Disable Building for Personal *GitHub* Account](other-apps.md#disable-building-for-personal-github-account){: target="_blank" }
+    * [Disable Building for Personal *GitHub* Account](other-apps.md#disable-building-for-personal-github-account)
 
 **Important**
 
@@ -270,5 +270,5 @@ If your copy (`fork`) is from `LoopKit`:
 If your fork is not from `LoopKit`:
 
 * Delete your LoopWorkspace repository
-    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository){: target="_blank" }
+    * Instructions to delete a repository are found at [*GitHub* Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
 * Return to [Fork LoopWorkspace](#fork-loopworkspace) and follow all the instructions

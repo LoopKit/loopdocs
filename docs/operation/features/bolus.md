@@ -119,7 +119,7 @@ If an "uncertain" delivery is not resolved:
 
 * Make sure the RileyLink compatible device is communicating properly
 * You can try to turn off Bluetooth and then turn it back on again
-* [Quit the Loop app](https://support.apple.com/en-us/HT201330){: target="_blank" } and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app that was running before the power cycle.)
+* [Quit the Loop app](https://support.apple.com/en-us/HT201330) and restart it. (Note - this is different from a power cycle of the phone which remembers settings within an app that was running before the power cycle.)
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
 

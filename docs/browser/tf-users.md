@@ -21,7 +21,7 @@ You are configuring a private capability for your family using an Internal Testi
 
 First you need to add the email address(es) to your *App Store Connect* Access Users list:
 
-* Open this link: [Users and Access](https://appstoreconnect.apple.com/access/users){: target="_blank" }
+* Open this link: [Users and Access](https://appstoreconnect.apple.com/access/users)
     * You must provide a role for each person - `Customer Support` is a good choice
     * Once you have added them here, you'll be able to select them in the `TestFlight` internal test group for each of your apps
 
@@ -33,7 +33,7 @@ First you need to add the email address(es) to your *App Store Connect* Access U
 !!! tip "Add user for each app"
     Once you add a user to have access to your TestFlight internal test group for an app, you don't need to do it again - it remains available to them across rebuilds and different versions for that app.
 
-1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps){: target="_blank" } to view your apps; log in if needed.
+1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
 
     * Select your *Loop* app
     * Click on the `TestFlight` tab

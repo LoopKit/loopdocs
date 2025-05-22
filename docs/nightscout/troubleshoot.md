@@ -1,10 +1,10 @@
 ## Setup Troubleshooting
 
-If you have just tried to set up your Nightscout site and have problems with seeing all your data, please check out the [Nightscout: Troubleshooting](https://nightscout.github.io/troubleshoot/troubleshoot){: target="_blank" }  page.
+If you have just tried to set up your Nightscout site and have problems with seeing all your data, please check out the [Nightscout: Troubleshooting](https://nightscout.github.io/troubleshoot/troubleshoot)  page.
 
 ## Dexcom data not showing
 
-If you use a Dexcom and get your CGM data into Nightscout using Dexcom Share (bridge in Nightscout) and everything is working but the Dexcom data stops showing, please review [Nightscout: Dexcom bridge Troubleshooting](https://nightscout.github.io/troubleshoot/dexcom_bridge/){: target="_blank" }.
+If you use a Dexcom and get your CGM data into Nightscout using Dexcom Share (bridge in Nightscout) and everything is working but the Dexcom data stops showing, please review [Nightscout: Dexcom bridge Troubleshooting](https://nightscout.github.io/troubleshoot/dexcom_bridge/).
 
 As part of that troubleshooting, you may need to remove the Nightscout service credentials from Loop. You may need to remove Dexcom credentials from all third-party apps that get data from Dexcom Share. Be sure to add them back after the CGM data to Nightscout is restored.
 

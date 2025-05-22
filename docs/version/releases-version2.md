@@ -87,12 +87,12 @@ Omnipod Code Fixes:
 * Make insertion more robust (LoopKit issue #1369)
 * Fix “Pod already primed” errors when priming cancelled (rileylink_ios issue #661)
 * Prevent 049 pod faults during setup (rileylink_ios issue #627)
-* See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676){: target="_blank" } for additional details.
+* See [RileyLink Pull Request 676](https://github.com/ps2/rileylink_ios/pull/676) for additional details.
 
 (REMOVED) Insulin Accounting:
 
 * Reduced occurrences of overlaps in accounting for insulin via reservoir and dose history, which causes temporary overestimation of IOB
-* See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344){: target="_blank" } for details
+* See [Loop Pull Request 344](https://github.com/LoopKit/LoopKit/pull/344) for details
 * This modification (in v2.2.5) was removed for v2.2.6
     - It worked as advertised during testing, but . . .
     - If the user's phone had trouble communicating with the Apple HealthKit app, this could cause IOB to be under-reported and cause Loop to provide more insulin than needed

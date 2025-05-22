@@ -18,7 +18,7 @@
 
 ## Build Video
 
-The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM){: target="_blank" } showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
+The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
 
 If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.
 
@@ -39,7 +39,7 @@ You will see a message similar to the next graphic.
 ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
 {align="center"}
 
-If you are running iOS 16 or newer with watchOS 9 or newer, you must enable <code>Developer Mode</code> to run or build Loop directly from Xcode. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about <code>Developer Mode</code>](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device){: target="_blank" }.
+If you are running iOS 16 or newer with watchOS 9 or newer, you must enable <code>Developer Mode</code> to run or build Loop directly from Xcode. (This is true for any app created by Xcode directly on your device.) If you want to know more, click on this [Apple Link about <code>Developer Mode</code>](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 ### Prepare your Phone and Watch
 
@@ -106,7 +106,7 @@ These steps have been reported on Facebook and have not been tested in a control
     * Click on the watch and if it connects - you are done
 5. Otherwise manually add the UDID to your Developer Account
     * Copy UDID (right-click or control-click and choose Copy Identifier)
-7. Go to the [Apple developer website, devices page](https://developer.apple.com/account/resources/devices/list){: target="_blank" } and manually add the watch (using the UDID)
+7. Go to the [Apple developer website, devices page](https://developer.apple.com/account/resources/devices/list) and manually add the watch (using the UDID)
 8. With phone plugged into computer and watch on wrist, follow these steps on the build errors page: [Apple Watch Loop App not running on Watch](build-errors.md#apple-watch-loop-app-not-running-on-watch) to build the watch app directly.
 
 At this point, be sure to reboot the watch.
@@ -457,7 +457,7 @@ If you plan to build again on a backup phone, or want to try a customization, ea
 But wait - there's more.
 
 * Caregivers who help manage a loved-ones diabetes often use other open-source apps that can be built the same way
-* When you are done building and installing the *Loop* app, there are instructions on the *Loop and Learn* website to [Download and Build Related Apps](https://www.loopandlearn.org/build-select/#build-other-apps){: target="_blank" }
+* When you are done building and installing the *Loop* app, there are instructions on the *Loop and Learn* website to [Download and Build Related Apps](https://www.loopandlearn.org/build-select/#build-other-apps)
 
 ## Protect that App
 

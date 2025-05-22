@@ -13,7 +13,7 @@
     If you do not have a Mac, you can build&nbsp;<span translate="no">Loop 3</span>&nbsp;with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
 
     - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md){: target="_blank" }
-    - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com){: target="_blank" }
+    - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com)
     - You need a [compatible phone](phone.md) to install the app from *TestFlight*
     - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
 
@@ -104,7 +104,7 @@ Sequoia is not yet required for building the *Loop* app on a phone running iOS 1
 * iMac Pro introduced in 2017 or later
 * Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Sequoia](https://support.apple.com/en-us/120282){: target="_blank" }
+* get the full list from [Apple for Sequoia](https://support.apple.com/en-us/120282)
 
 ## Which Macs Are Compatible with macOS Sonoma?
 
@@ -117,7 +117,7 @@ Sonoma is required for building the *Loop* app on a phone running iOS 17.4 or hi
 * iMac Pro introduced in 2017 or later
 * Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Sonoma](https://support.apple.com/en-us/105113){: target="_blank" }
+* get the full list from [Apple for Sonoma](https://support.apple.com/en-us/105113)
 
 ## Older Macs
 
