@@ -3678,7 +3678,7 @@
 <h3 id="report-049-0x31-to-developers-not-insulet">Report 049 (0x31) to Developers, Not Insulet<a class="headerlink" href="#report-049-0x31-to-developers-not-insulet" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The sole exception to reporting to Insulet is if you get a fault ending in <code>049</code> in the Ref code or with the notation <code>Fault Event Code 0x31: Incorrect pod state for command</code>. That particular fault is only seen if there is a mistake in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. This happened rarely in earlier versions but should be fixed by the time version 3.4.0 is released. If you do get an 0x31 (049) fault - report that to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> developers and include a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report (<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, Settings, Support, <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report).</p>
 <h2 id="known-pod-fault-codes">Known Pod Fault Codes<a class="headerlink" href="#known-pod-fault-codes" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The currently known pod faults are listed here on the openomni wiki page: <a href="https://github.com/openaps/openomni/wiki/Fault-event-codes" target="_blank">Pod Fault codes</a></p>
+<p>The currently known pod faults are listed here on the openomni wiki page: <a href="https://github.com/openaps/openomni/wiki/Fault-event-codes">Pod Fault codes</a></p>
 <h2 id="ways-to-reduce-likelihood-of-a-fault">Ways to Reduce Likelihood of a Fault<a class="headerlink" href="#ways-to-reduce-likelihood-of-a-fault" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app will put a higher battery load on a pod than the PDM due to its regular and repeated communications. A pod with lower battery level appears to be more likely to fault for conditions like static electricity and occlusions/pump issues the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is not directly causing, like decimal fault codes 052, 061, 064 and 066. Pods always perform safety checks and if a potential problem is found, the pod will end itself by screaming and halt all insulin delivery.</p>
 <p>DASH pods have additional Fault Codes associated with the pod Bluetooth communications. The <code>0xCB</code>, <code>-203</code> decimal, seems to be pretty common. These should be reported to Insulet for their records.</p>
@@ -3804,6 +3804,8 @@
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
       
     
   </body>
