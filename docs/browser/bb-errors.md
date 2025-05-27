@@ -345,7 +345,7 @@ For Version 3.4 and later - use [Examine Annotation](#examine-annotation) and re
 
 ## Action: `Add Identifiers` Errors
 
-We used to be able to say that if `Validate Secrets` worked then so did `Add Identifiers`. That is still, mostly true, for new builders. But we are finding many experienced builders have to revoke their old `FastLane API Key` and generate a new one to be able to continue building. We don't know why, but it is happening a lot. If you are one of those experienced builders, head over to the [Handle the `FastLane API Key` Error](#handle-the-fastlane-api-key-error).
+We used to be able to say that if `Validate Secrets` worked then so did `Add Identifiers`. That is still typically true for new builders. But we are finding many experienced builders have to revoke their old `FastLane API Key` and generate a new one to be able to continue building. We don't know why, but it is happening a lot. If you are one of those experienced builders, head over to the [Handle the `FastLane API Key` Error](#handle-the-fastlane-api-key-error).
 
 If you are new builder who gets an error at `Add Identifiers`, please [ask a mentor for help](#where-to-get-help-with-browser-build).
 
@@ -806,7 +806,7 @@ Continuing on the same [webpage](https://appstoreconnect.apple.com/access/integr
     ```{ .text .copy }
     FastLane API Key
     ```
-3. Click in the box where is says start typing and a dropdown list appears - select Admin
+3. Click in the box where it says start typing and a dropdown list appears - select Admin
 4. Confirm the name and that "Admin" is selected and then click on the `Generate` button.
 
 > ![generate a new FastLane API Key](img/api-key-generate.svg){width="500"}
@@ -832,7 +832,7 @@ You need a new `FASTLANE_KEY_ID` and a new `FASTLANE_KEY`, but the `FASTLANE_ISS
 2. Double-click to open the `AuthKey_AAAAAAAAAA.p8.txt` file. It will look similar to the screenshot below. You need to highlight **ALL OF THE CONTENTS** of that file and copy it and then paste it both into your Secrets Reference file and the value for `FASTLANE_KEY_ID` when you [Update Secrets](#update-secrets).  
       * **Click inside that file**
       * Highlight **all** the text, and then
-      * Copy **all** the text to the clipboard (Cf. screenshot below).
+      * Copy **all** of the text to the clipboard (Cf. screenshot below).
         * On a *Mac*, press ++command+"A"++ to select all, then press ++command+"C"++ to copy the selection. 
         * On a **PC**, press ++control+"A"++ to select all, then press ++control+"C"++ to copy the selection.
 
@@ -917,8 +917,8 @@ If you only have *one* Certificate of the `Distribution` type, similar to the gr
 If you have two Certificates that have the `Distribution` type, select the oldest one and delete it.
 
 * Carefully examine the Type column - do not delete a Development Certificate
-    * If you accidentally delete a Development Type certificate associated with an Xcode build for your app - it will stop working and you will be very sad
-    * Click on the oldest Distribution Certificate, select Revoke and confirm.  If you have two with the same expiration date. Revoke both.
+    * If you accidentally delete a Development Type certificate associated with an Xcode build for your app, it will stop working and you will be very sad
+    * Click on the oldest Distribution Certificate, select Revoke and confirm.  If you have two with the same expiration date, revoke both.
 
 You will get an email informing you the certificate was revoked
 
@@ -992,7 +992,7 @@ The `Identifier` that is associated with the `Loop` identifier cannot be deleted
 ![steps to delete a given identifier](img/delete-identifiers.svg){width="700"}
 {align="center"}
 
-If coming here because you enter the wrong `TEAMID` in <code>Secrets</code> - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
+If coming here because you entered the wrong `TEAMID` in <code>Secrets</code> - return to [Rerun Steps with Correct TEAMID](#rerun-steps-with-correct-teamid) when you've deleted as many identifiers as you can.
 
 After you delete identifiers, you must add them back before you can build a given app. Configure them and build again.
 
