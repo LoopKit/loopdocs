@@ -3928,7 +3928,14 @@
 <h3 id="add-variable">Add Variable<a class="headerlink" href="#add-variable" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is a new step required with <code>Loop 3.6.0</code> and newer versions. It provides automatic renewal of certificates, which expire once per year.</p>
 <ol>
-<li>While in the same screen where you enter the <code>Secrets</code>, click on the <code>Variables</code> tab to the right of the <code>Secrets</code> tab:</li>
+<li>While in the same screen where you enter the <code>Secrets</code>, click on the <code>Variables</code> tab to the right of the <code>Secrets</code> tab<ul>
+<li>If you aren't at the screen:<ul>
+<li><strong><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization account</strong>: go to your organization page and select Settings; scroll down, select <code>Secret and Variable</code> and then select <code>Actions</code></li>
+<li><strong><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> personal account</strong>: go to your <abbr title="contains project files and each file's revision history">repository</abbr> for the app you are building, select Settings; scroll down, select <code>Secret and Variable</code> and then select <code>Actions</code></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Select new variable and give it the name the <code>ENABLE_NUKE_CERTS</code> and enter <code>true</code> as the value</li>
 </ol>
 <div class="copy highlight"><pre><span></span><code>ENABLE_NUKE_CERTS
