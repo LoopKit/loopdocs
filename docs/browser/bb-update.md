@@ -430,7 +430,7 @@ Manual certificate renewal is not longer required if you added the `Variable` `E
     {align="center"}
 
     !!! question "Deleting the certs/distribution folder did not work for me"
-        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Reset `Match-Secrets`](bb-errors.md#reset-match-secrets){: target="_blank" }
+        Some people reported trouble with this step. The other option is to delete and create a new `Match-Secrets` repository: see [Delete `Match-Secrets`](bb-errors.md#delete-match-secrets){: target="_blank" }
 
 1. While still within your *Github* account, navigate to your fork of LoopWorkspace.
     * You can do this several ways, but one method is demonstrated by the GIF below
