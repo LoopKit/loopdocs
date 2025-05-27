@@ -48,9 +48,9 @@ If it is a more substantive change and you want to [install LoopDocs locally](#i
   # Run the next line **each time** you start a new shell window/tab
   source venv/bin/activate
   ```
-- Install the project's required *Python* packages
+- **Install** the **dependencies** (that is the project's required *Python* packages)
   ```shell
-  cd loopdocs # Make sure you are in the folder where you cloned this repository
+  cd loopdocs # where you cloned the loopdocs repository
 
   python -m pip install -r dev-requirements.txt
   python -m pip install -r requirements.txt
@@ -611,4 +611,61 @@ The website uses the Markdown page of the glossary.
 
 > [!IMPORTANT]
 > Remember to commit these two files.
+
+### Add a Package
+
+> [!NOTE]
+> In this section, the terms Python **package** and **dependency** refer to the same thing.
+
+- **Create** a feature **branch** (aka. topic branch)
+  ```shell
+  git switch dev
+  git switch -c feature/add_dependency_XXX
+  ```
+- **Add** the pinned version of the new **package** to the **`requirements.in`** file
+  ```shell
+    MY_FAVORITE_EDITOR_HERE requirements.in
+    
+    # Add the pinned version of the package to `requirements.in
+    XXX_PACKAGE_NAME_HERE==XXX_PACKAGE_VERSION_HERE
+    ```
+    For example, to add the `mkdocs-exporter` package version `6.1.1`, I added the following line to the `requirements.in` file:
+     ```text
+     mkdocs-exporter==6.1.1
+     ```
+- Generate **`requirements.txt`**
+  ```shell
+    cd loopdocs
+    
+    # IMPORTANT: The project's virtual environment MUST be activated first
+    source venv/bin/activate
+    
+    # Remove the already installed packages in case you need to start from a blank slate
+    # python -m pip freeze --exclude-editable | xargs python -m pip uninstall -y
+    
+    # Install the development packages
+    # (among which `pip-tools` that contains `pip-compile`)
+    pip install -r dev-requirements.txt
+    
+    # Install the direct dependencies (listed in `requirements.in`
+    # This also installs the indirect dependencies these packages depend upon.
+    pip install -r requirements.in
+    
+    # Add code/doc using this package and test until it is ready.
+    
+    # Generate the `requirements.txt` file from `requirements.in`
+    # This can be slow, be patient
+    pip-compile requirements.in
+    
+    # Commit the changes (where XXX denotes the package name)
+    git add requirements.in requirements.txt
+    git commit -m "➕ Add dependency: XXX"
+    
+    # Push your feature branch to your `origin` repository
+    git push -u origin feature/add_dependency_XXX
+    ```
+- [**Create a Pull Request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes:
+	- Open your clone repository of `trio-docs` on *GitHub* (`https://github.com/YOUR_USERNAME/trio-docs`)
+		- Click the `Pull Requests` tab 
+		- Click "`Compare & pull request`" in the yellow banner next to your branch name
 
