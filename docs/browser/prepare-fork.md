@@ -198,7 +198,10 @@ Once you add all six <code>Secrets</code>, your screen should look similar to th
 
 This is a new step required with `Loop 3.6.0` and newer versions. It provides automatic renewal of certificates, which expire once per year.
 
-1. While in the same screen where you enter the `Secrets`, click on the `Variables` tab to the right of the `Secrets` tab:
+1. While in the same screen where you enter the `Secrets`, click on the `Variables` tab to the right of the `Secrets` tab
+    * If you aren't at the screen:
+        * ***GitHub* organization account**: go to your organization page and select Settings; scroll down, select `Secret and Variable` and then select `Actions`
+        * ***GitHub* personal account**: go to your repository for the app you are building, select Settings; scroll down, select `Secret and Variable` and then select `Actions`
 1. Select new variable and give it the name the `ENABLE_NUKE_CERTS` and enter `true` as the value
 
 ``` { .text .copy }
