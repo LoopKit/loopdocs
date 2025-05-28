@@ -565,9 +565,9 @@ where:
 - `.copy` shows the copy-to-clipboard button when present (hidden otherwise)
 - `title=“title of this code block”` adds a title to the code (none when absent)
 
-Do note that:
-- There is a space before **and** after the opening curly brace ` { `.
-- There is space before the closing curly brace `}`.
+> [!NOTE]
+> - There is a space **before and after** the **opening** curly brace ` { `.
+> - There is space **before** the **closing** curly brace `}`.
 
 
 [Source](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=copy+clipboard#code-copy-button)
@@ -615,11 +615,14 @@ The website uses the Markdown page of the glossary.
 ### Add a Package
 
 > [!NOTE]
-> In this section, the terms Python **package** and **dependency** refer to the same thing.
+> In this section:
+> 
+> - the terms Python **package** and **dependency** refer to the same thing.
+> -  `XXX` denotes the name of the package to add
 
 - **Create** a feature **branch** (aka. topic branch)
   ```shell
-  git switch dev
+  git switch main
   git switch -c feature/add_dependency_XXX
   ```
 - **Add** the pinned version of the new **package** to the **`requirements.in`** file
@@ -648,7 +651,7 @@ The website uses the Markdown page of the glossary.
     pip install -r dev-requirements.txt
     
     # Install the direct dependencies (listed in `requirements.in`
-    # This also installs the indirect dependencies these packages depend upon.
+    # This also installs the indirect dependencies that these packages depend upon.
     pip install -r requirements.in
     
     # Add code/doc using this package and test until it is ready.
