@@ -619,7 +619,7 @@ The website uses the Markdown page of the glossary.
 
 - **Create** a feature **branch** (aka. topic branch)
   ```shell
-  git switch dev
+  git switch main
   git switch -c feature/add_dependency_XXX
   ```
 - **Add** the pinned version of the new **package** to the **`requirements.in`** file
