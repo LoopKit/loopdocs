@@ -651,7 +651,7 @@ The website uses the Markdown page of the glossary.
     pip install -r dev-requirements.txt
     
     # Install the direct dependencies (listed in `requirements.in`
-    # This also installs the indirect dependencies these packages depend upon.
+    # This also installs the indirect dependencies that these packages depend upon.
     pip install -r requirements.in
     
     # Add code/doc using this package and test until it is ready.
