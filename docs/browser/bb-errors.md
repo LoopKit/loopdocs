@@ -5,7 +5,7 @@
 
     If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
 
-    We are working to find a solution, but for now, we suggest you check when your most recent build in TestFlight will expire.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 
 !!! important "Get Help, Not Frustrated"
