@@ -5,7 +5,7 @@
 
     If you want to work through all the steps up to when you Add Identifiers in Prepare Identifiers, that is fine, but you will not be able to proceed past that point. You will not be able to build the app through this method, at this time.
 
-    We are working to find a solution, but for now you need to be patient.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 
 ???+ info "Time Estimate (click to open/close)"

@@ -3,11 +3,13 @@
 !!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
     Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
 
-    This affects a lot of people - not just Open Source Automated Insulin Delivery Apps.
+    This affects a lot of people - not just Open Source Automated Insulin Delivery Apps. We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
     > Building with a Mac still works.
 
     > If your Identifiers, Certificates and Profiles are up to date, Browser Build still works.
+
+    We suggest you check when your most recent build in TestFlight will expire.
 
     If you are able to build - do it now - that gives you 90 days for us to figure this out.
 
@@ -18,8 +20,6 @@
     3. If necessary, enable Build Action and run it
     4. If that succeeds, you have given yourself 90 days
     5. If that fails, reach out to see if the failure reason is something we can fix, but otherwise, please wait
-
-    We are working to find a solution, but for now, we suggest you check when your most recent build in TestFlight will expire.
 
 * <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
 * The app is then installed by you on your phone using the *TestFlight* app

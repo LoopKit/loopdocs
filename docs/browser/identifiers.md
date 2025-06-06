@@ -70,7 +70,7 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 !!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
     The Add Identifiers action does not work at this time.
 
-    We are working to find a solution, but for now you need to be patient.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 
 ??? abstract "Section Summary (click to open/close)"

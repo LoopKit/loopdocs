@@ -100,7 +100,7 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 !!! important "Browser Build Temporarily Unavailable for New Builders"
     New builders cannot build at this time because we cannot add Identifiers.
 
-    We are working to find a solution, but for now you need to be patient.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 
 ### New Builder: Validate <code>Secrets</code> Error
@@ -121,7 +121,7 @@ If you want to try to solve it yourself, refer back to these section in the docu
 !!! important "Browser Build Temporarily Unavailable for New Builders"
     New builders cannot build at this time because we cannot add Identifiers.
 
-    We are working to find a solution, but for now you need to be patient.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 
 If you succeeded with Validate <code>Secrets</code>, this should also succeed. If it does not, please skip ahead to [Action: `Add Identifiers` Error`](#action-add-identifiers-errors).
