@@ -177,7 +177,7 @@ Ignore the warnings - this does not affect the build.
 
     If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
 
-    We are working to find a solution, but for now, we suggest you check when your most recent build in TestFlight will expire.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 ### `Check Upstream and Keep Alive` Error
 
@@ -790,7 +790,7 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 
     If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
 
-    We are working to find a solution, but for now, we suggest you check when your most recent build in TestFlight will expire.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 We have removed the section on getting a new Fastlane API Key - that is not the solution to what turns out to be a bigger problem.
 
