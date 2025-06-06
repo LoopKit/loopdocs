@@ -794,7 +794,7 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 
 We have removed the section on getting a new Fastlane API Key - that is not the solution to what turns out to be a bigger problem.
 
-The rest of this section has some steps that may be needed in the future, once the Fastlane system is working again. Do not follow any of these steps a this time - they will not help until the underlying connection between *GitHub* Actions and *Apple* is working again.
+The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time - they will not help until the underlying connection between *GitHub* Actions and *Apple* is working again.
 
 ## Other Help Steps
 
