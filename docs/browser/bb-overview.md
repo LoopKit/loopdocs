@@ -11,7 +11,7 @@
 
     We suggest you check when your most recent build in TestFlight will expire.
 
-    If you are able to build - do it now - that gives you 90 days for us to figure this out.
+    If you are able to build - do it now - that gives you 90 days.
 
     To [Build](bb-update.md#build-the-app){: target="_blank" }: 
     
