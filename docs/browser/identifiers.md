@@ -67,6 +67,12 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 ## <code>Add Identifiers</code>
 
+!!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
+    The Add Identifiers action does not work at this time.
+
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+
+
 ??? abstract "Section Summary (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "2. Add Identifiers".

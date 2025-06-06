@@ -1,5 +1,13 @@
 ## Help with Errors
 
+!!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
+    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
+
+    If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
+
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+
+
 !!! important "Get Help, Not Frustrated"
     For first-time builders, there are a lot of one-time steps that all have to be correct and many screens look similar.
 
@@ -89,6 +97,12 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 
 ## New Builder: Quick Reference
 
+!!! important "Browser Build Temporarily Unavailable for New Builders"
+    New builders cannot build at this time because we cannot add Identifiers.
+
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+
+
 ### New Builder: Validate <code>Secrets</code> Error
 
 This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.
@@ -103,6 +117,12 @@ If you want to try to solve it yourself, refer back to these section in the docu
 * [Enter the <code>Secrets</code>](prepare-fork.md#enter-the-secrets){: target="_blank" }
 
 ### New Builder: Add Identifiers Error
+
+!!! important "Browser Build Temporarily Unavailable for New Builders"
+    New builders cannot build at this time because we cannot add Identifiers.
+
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+
 
 If you succeeded with Validate <code>Secrets</code>, this should also succeed. If it does not, please skip ahead to [Action: `Add Identifiers` Error`](#action-add-identifiers-errors).
 
@@ -152,7 +172,12 @@ Ignore the warnings - this does not affect the build.
 
 ## Rebuild Errors: Quick Reference
 
-> There's a new error to annoy you. We are finding many experienced builders have to [Handle the `FastLane API Key` Error](#handle-the-fastlane-api-key-error). We don't know why, but it is happening a lot, so check out that section if you have already fixed the `Check Upstream and Keep Alive` Error.
+!!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
+    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
+
+    If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
+
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
 ### `Check Upstream and Keep Alive` Error
 
@@ -760,134 +785,29 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 
 ## Handle the `FastLane API Key` Error
 
-We don't know why, but sometimes you have to take these steps to restore your ability to build. Make sure you really need to do this. The symptom is you were previously building successfully and all your license agreements are up to date, but all of a sudden you can no longer build.
+!!! important "Browser Build Temporary Issue"
+    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
 
-* Run the `Action: Add Identifiers`
-    * If you don't remember how to do that, this [link](identifiers.md#add-identifiers){: target="_blank" } opens in a separate tab with complete instructions
-* If that fails with the error `The provided entity includes an unknown relationship`, then yes - do these steps.
+    If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
 
-After completing the steps, try `Action: Add Identifiers` again and if it works, you can start building again.
+    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
 
-The steps are:
+We have removed the section on getting a new Fastlane API Key - that is not the solution to what turns out to be a bigger problem.
 
-1. [Refresh `FastLane API Key`](#refresh-fastlane-api-key)
-1. [Update Secrets](#update-secrets)
-1. [Delete Match-Secrets](#delete-match-secrets)
-1. [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
-1. [Delete Invalid Profiles](#delete-invalid-profiles)
-1. [Run Actions](#run-actions)
+The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time - they will not help until the underlying connection between *GitHub* Actions and *Apple* is working again.
 
-This is a complicated fix. Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
+## Other Help Steps
 
-### Refresh `FastLane API Key`
+These help steps might be needed so the documentation is here.
 
-You will [revoke](#revoke-key), [generate](#generate-key) and [save](#download-key-and-save-secrets) a new key with the same name: `FastLane API Key`. It should be available immediately.
-
-#### Revoke Key
-
-This step is done at the App Store Connect site, click on this [link](https://appstoreconnect.apple.com/access/integrations/api).
-
-1. Click on the `Edit` button to open a new window
-2. Select the key you want to revoke (`FastLane API Key`)
-3. Click on the `Revoke Key` button
-4. Click on the `Revoke` button
-
-> ![revoke the FastLane API Key](img/api-key-revoke.svg){width="500"}
-
-The key has now been revoked and you can no longer use it.
-
-#### Generate Key
-
-Continuing on the same [webpage](https://appstoreconnect.apple.com/access/integrations/api), generate a new key.
-
-1. Click on either the plus sign or the Generate API Key button to open a new window
-2. Copy the name (below) and paste into the `Name` box
-
-    ```{ .text .copy }
-    FastLane API Key
-    ```
-3. Click in the box where it says start typing and a dropdown list appears - select Admin
-4. Confirm the name and that "Admin" is selected and then click on the `Generate` button.
-
-> ![generate a new FastLane API Key](img/api-key-generate.svg){width="500"}
-
-#### Download Key and Save Secrets
-
-Your screen should now look like this where the `Copy Key ID` shows up when you hover your mouse near the `KEY ID` and you can only `Download API Key` one time:
-
-> ![App Store Connect Key page](img/api-key-in-process-regen.svg){width="700"}
-{align="center"}
-
-**Summary:** You need to download the new key and move it to the special folder where you keep secrets. Your Secrets Reference file should be in the same place. Carefully delete the information from the `FastLane API Key` you just revoked and add the new information for the one you just generated.
-
-**Detailed Steps:**
-
-You need a new `FASTLANE_KEY_ID` and a new `FASTLANE_KEY`, but the `FASTLANE_ISSUER_ID` is unchanged because that is tied to your developer account. Save your updated Secrets Reference File.
-
-1. Find your `AuthKey` downloaded file in your downloads folder and move it to your special folder so you can find it again when you need it. 
-    The next task is to rename the file so you can open it. 
-    Highlight the filename and choose rename, then add ".txt" after ".p8". In other words, modify `AuthKey_AAAAAAAAAA.p8` to `AuthKey_AAAAAAAAAA.p8.txt` and click on `Use .txt` when questioned.
-> ![rename the p8 file](img/p8-key-rename.png){width=200}
-
-2. Double-click to open the `AuthKey_AAAAAAAAAA.p8.txt` file. It will look similar to the screenshot below. You need to highlight **ALL OF THE CONTENTS** of that file and copy it and then paste it both into your Secrets Reference file and the value for `FASTLANE_KEY_ID` when you [Update Secrets](#update-secrets).  
-      * **Click inside that file**
-      * Highlight **all** the text, and then
-      * Copy **all** of the text to the clipboard (Cf. screenshot below).
-        * On a *Mac*, press ++command+"A"++ to select all, then press ++command+"C"++ to copy the selection. 
-        * On a **PC**, press ++control+"A"++ to select all, then press ++control+"C"++ to copy the selection.
-
-    > ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
-
-3. The API Key ID is the 10-character name embedded in the filename: `AuthKey_AAAAAAAAAA.p8.txt`. You can also use the `Copy Key ID` button as mentioned at the [beginning of this section](#download-key-and-save-secrets). Either method, you update the `FASTLANE_KEY_ID` value in both into your Secrets Reference file and the value for `FASTLANE_KEY` when you [Update Secrets](#update-secrets).
-
-Reminder of the format for these two Secrets:
-
-```
-FASTLANE_KEY_ID
-<looks like this>
-AAAAAAAAAA
-
-FASTLANE_KEY
-<looks like this>
------BEGIN PRIVATE KEY-----
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAA
------END PRIVATE KEY-----
-```
-
-### Update Secrets
-
-Open the *GitHub* webpage for your organization or the repository if you are building with a personal account.
-
-Once you open the *GitHub* webpage, navigate to Settings and then scroll down to the `Secrets and variable` row and choose `Actions`.
-
-!!! tip "Use a direct link"
-    If you prefer, you can generate a direct link to this location:
-
-    ``` {.text .copy  title="If you use an organization" }
-    https://github.com/organizations/my-name-org/settings/secrets/actions
-    ```
-
-    ``` { .text .copy  title="If you do not use an organization" }
-    https://github.com/my-name/LoopWorkspace/settings/secrets/actions
-    ```
-
-Refer to graphic below for help. This example is for updating an organization secret. For a personal repository update, there is no step 2. You will be updating 2 different <code>Secrets</code>.
-
-1. Tap on the pencil beside the <code>Secret</code> you plan to change; you must change both; the order is not important
-    * `FASTLANE_KEY`
-    * `FASTLANE_KEY_ID`
-1. Click on the `enter a new value` button if it exists (organization only)
-1. Click in the `Value` box for that <code>Secret</code> and paste in the value
-1. Click on `Save changes`
-
-> ![screen with instructions to update a secret](img/update-org-secret.svg){width="700"}
+!!! important "Browser Build Temporary Issue"
+    Do not follow any of these steps a this time - they will not help until the underlying connection between *GitHub* Actions and *Apple* is working again.
 
 ### Delete `Match-Secrets`
 
-This is always required after a new `FastLane API Key` has been generated.
+Make sure you really need to do this - please [ask a mentor for help](#where-to-get-help-with-browser-build).
+
+Make sure you only delete `Match-Secrets`. Do NOT delete the repository of the app you are trying to build.
 
 Open the *GitHub* website for your organization or personal account.
 
@@ -951,24 +871,6 @@ Your profiles will be displayed. Under the `Expiration` column, you might see an
 4. Review the profiles - note that in this view, the full name of each profile is visible - and then click on the `Delete` button
 
     > ![delete selected profiles](img/profiles-03.png){width="500"}
-
-### Run Actions
-
-If you can't remember how to run the actions, the link for each opens a separate page with details and graphics.
-
-* If [`Action: Add Identifiers`](identifiers.md#add-identifiers){: target="_blank" } fails with the same error as before, you might need to revoke and generate the [`FastLane API Key` again](#refresh-fastlane-api-key). (I had to do it twice when this happened to me.)
-
-* If `Action: Add Identifiers` succeeds continue with these two actions:
-
-    * [`Create Certificates`](certs.md#create-certificates){: target="_blank" }
-    * [`Build`](build-yml.md#build-the-loop-app){: target="_blank" }
-
-If these all succeed, you are done with the `FastLane API Key` Error steps.
-
-!!! important "Personal *GitHub* Account"
-    If you are using a personal *GitHub* account to build instead of an organization, you must update your <code>Secrets</code> for `FASTLANE_KEY_ID` and `FASTLANE_KEY` for each of the repositories.
-
-## Other Help Steps
 
 ### Delete Identifiers
 
