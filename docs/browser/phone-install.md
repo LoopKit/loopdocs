@@ -28,7 +28,7 @@ Once you get an email that your app is available to test on iOS and watchOS, you
 
 * Note this can be half-hour to an hour after the build displays the green check mark on your browser
 * Once the app is on your phone, you can choose to install the watch version using your phone *Watch* app
-* If you did not already add your email to your *TestFLight* group for your app, go and do it now using these [instructions](tf-users.md#configure-testflight-group-for-the-app){: target="_blank" }
+* If you did not already add your email to your *TestFlight* group for your app, go and do it now using these [instructions](tf-users.md#configure-testflight-group-for-the-app){: target="_blank" }
 
 The first time you use *TestFlight* on any phone associated with a given email, you must `Redeem` the code sent to that email inviting you to test the app. The GIF below is for someone who has never used *TestFlight*.
 
