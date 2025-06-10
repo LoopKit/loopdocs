@@ -123,7 +123,7 @@ pyyaml==6.0.2
     #   pyyaml-env-tag
 pyyaml-env-tag==0.1
     # via mkdocs
-requests==2.32.3
+requests==2.32.4
     # via
     #   mkdocs-htmlproofer-plugin
     #   mkdocs-material
