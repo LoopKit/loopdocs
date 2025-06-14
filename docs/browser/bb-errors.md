@@ -1,11 +1,18 @@
 ## Help with Errors
 
-!!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
-    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
+!!! important "Browser Build Temporarily Unavailable for New Builders"
+    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. 
+    
+    A partial update was instituted on 13 June 2025 for Loop (with other apps like LoopCaregiver, LoopFollow and Trio updated about that time). This restored the ability for current builders to build again.
 
-    If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
+    * If you previously built and had a valid certificate, you probably did not notice the issue
+    * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
+    * If this is your first time building a particular app, then the ability to create **Identifiers** for that app is still impacted
+        * A solution is being tested but not currently available in the released code
 
-    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+    > Building with a Mac in not affected.
+
+    > If your Identifiers are configured, Browser Build works normally now.
 
 
 !!! important "Get Help, Not Frustrated"
@@ -98,10 +105,7 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 ## New Builder: Quick Reference
 
 !!! important "Browser Build Temporarily Unavailable for New Builders"
-    New builders cannot build at this time because we cannot add Identifiers.
-
-    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
-
+    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
 
 ### New Builder: Validate <code>Secrets</code> Error
 
@@ -119,10 +123,7 @@ If you want to try to solve it yourself, refer back to these section in the docu
 ### New Builder: Add Identifiers Error
 
 !!! important "Browser Build Temporarily Unavailable for New Builders"
-    New builders cannot build at this time because we cannot add Identifiers.
-
-    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
-
+    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
 
 If you succeeded with Validate <code>Secrets</code>, this should also succeed. If it does not, please skip ahead to [Action: `Add Identifiers` Error`](#action-add-identifiers-errors).
 
@@ -172,12 +173,8 @@ Ignore the warnings - this does not affect the build.
 
 ## Rebuild Errors: Quick Reference
 
-!!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
-    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
-
-    If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
-
-    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+!!! check "Browser Build is Working Again"
+    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
 
 ### `Check Upstream and Keep Alive` Error
 
@@ -786,22 +783,22 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 ## Handle the `FastLane API Key` Error
 
 !!! important "Browser Build Temporary Issue"
-    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
+    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. 
+    
+    A partial update was instituted on 13 June 2025 for Loop (with other apps like LoopCaregiver, LoopFollow and Trio updated about that time). This restored the ability for current builders to build again.
 
-    If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.
+    * If you previously built and had a valid certificate, you probably did not notice the issue
+    * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
 
-    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+    It took several weeks for the change at *Apple* to propagate through all the `API Keys`. Thus an adhoc fix worked initially but then stopped working. An update to fastlane (the code the communicates between *Apple* and *GitHub*) is now in the released Loop code (3.6.1 and newer).
 
-We have removed the section on getting a new Fastlane API Key - that is not the solution to what turns out to be a bigger problem.
+We have removed the section on getting a new Fastlane API Key - that is not the solution to what turned out to be a change made by *Apple*.
 
-The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time - they will not help until the underlying connection between *GitHub* Actions and *Apple* is working again.
+The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time unless a mentor has suggested it or you have a specific error case where one of these steps is recommended.
 
 ## Other Help Steps
 
 These help steps might be needed so the documentation is here.
-
-!!! important "Browser Build Temporary Issue"
-    Do not follow any of these steps a this time - they will not help until the underlying connection between *GitHub* Actions and *Apple* is working again.
 
 ### Delete `Match-Secrets`
 
@@ -827,6 +824,10 @@ https://github.com/my-name/Match-Secrets
 2. The next action you run will automatically create a new Match-Secrets repository for you
 
 ### Revoke Extra Distribution Certificate
+
+If you have the `ENABLE_NUKE_CERTS` variable added and set to `true`, you should not need this section for most apps. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" } for instructions.
+
+> A few apps still require manual steps for certificate renewal.
 
 This step is done at the *Apple* Developer site; click on this [link](https://developer.apple.com/account/resources/certificates/list).
 

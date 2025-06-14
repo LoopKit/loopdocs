@@ -88,13 +88,13 @@ Sign in to your *Apple Developer* account at this link: [*Apple Developer* porta
     * Need help? Look at this section on the update page: [Accept Agreements](bb-update.md#accept-agreements){: target="_blank" }
 1. Click the `Membership Details` icon
 
-    ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg){width="600"}
+    > ![Apple Developer Account Membership Details](img/apple_dev_account-teamid-001.svg){width="600"}
     {align="center"}
 
 1. Next to the `Team ID` field, is a 10-character ID number.
   This is your ***Apple Developer* `TEAMID`**.
 
-![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
+    > ![Apple Developer TEAMID](img/apple_dev_account-teamid-002.svg){width="500"}
     {align="center"}
 
 Record this for use as <code>TEAMID</code> in your <code>Secrets</code> file. You will also need it when you [Create &nbsp;<span class="notranslate">App Group</span>](prepare-app.md#create-app-group){: target="_blank" }.
@@ -117,31 +117,33 @@ This step is used to create and save the final 3 `Secrets` you need from your *A
 
     If you are waiting for *Apple* to enable your account, you can skip ahead to create a [New *GitHub* Account](#new-github-account) and [Create *GitHub* `Personal Access Token`](#create-github-personal-access-token). You then pause at [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" } until your *Apple* account is active.
 
-1. Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api)
 
-    * The top of the display is shown in the graphic below
+Click this link to open in a new tab: [`App Store Connect/Access/Integrations/API`](https://appstoreconnect.apple.com/access/integrations/api)
 
-    ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
-    {align="center"}
+* The top of the display is shown in the graphic below
 
-    * Click the `Integrations` tab as indicated in the graphic above
-        * If this is your first time here, you will see:
+    > ![App Store Connect Key page](img/api-key-initial-screen.svg){width="700"}
+{align="center"}
 
-            "`Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
+Click the `Integrations` tab as indicated in the graphic above
 
-            * Click on `Request Access` and follow directions until access is granted
+If this is your first time here, you will see:
 
-        * Once access is granted, click on the `Generate API Key` button
+* "Permission is required to access the App Store Connect API. You can request access on behalf of your organization.`"
 
-    * If you did not get routed through the `permission is required` screens click the blue &plus; sign
+* Click on `Request Access` and follow directions until access is granted
 
-    * A new `Generate API Key` dialog box will appear as shown in the graphic below
+The numbered steps below correspond to the actions you take in the subsequent windows:
 
-    ![generate api key dialog box](img/dev-generate-key.png){width="500"}
-    {align="center"}
+1. Click on the `Generate API Key` button or the blue &plus; sign to open the `Generate API Key` dialog box
 
-    * Enter the name of the key as "`FastLane API Key`" and choose `Admin` in the access dropdown menu
-    * Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button.
+2. Enter the name of the key as "`FastLane API Key`"
+
+3. Choose `Admin` in the access dropdown menu
+
+4. Confirm the name and that "`Admin`" is selected and then click on the "`Generate`" button
+
+    > ![generate a new FastLane API Key](img/api-key-generate.svg){width="500"}
 
 ### Copy `API Key Secrets`
 
@@ -149,7 +151,7 @@ The `Integrations` screen appears again with content similar to the graphic belo
 
 Review the graphic and then follow the directions below to save more parameters you will need to [Configure <code>Secrets</code>](prepare-fork.md#configure-secrets){: target="_blank" }
 
-![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
+> ![App Store Connect Key page](img/api-key-in-process.svg){width="700"}
 {align="center"}
 
 1. A button labeled Copy is always adjacent to the `Issuer ID` above the word Active (this is the same for all keys that you generate with this *Apple Developer* ID)
@@ -160,24 +162,25 @@ Review the graphic and then follow the directions below to save more parameters 
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY_ID`
 1. Click on the `Download API Key` button - you will be warned you can only download this once.
 
-    ![download key only once](img/dev-dl-key-once.png){width="700"}
+    > ![download key only once](img/dev-dl-key-once.png){width="700"}
     {align="center"}
 
 6. Find your `AuthKey` download in your downloads folder. The name of the file will be "`AuthKey_KeyID.p8`" where `KeyID` matches your `FASTLANE_KEY_ID`
 
-    * Double-click to open it and you will be presented a message asking how you'd like to open it (The message shown is for a Mac - translate these directions to whatever computer you are using)
-    * Click on "`Choose Application...`" and then select "`TextEdit`" (on a Mac, NotePad on a PC, or any text-only editor you prefer)
+    The next task is to rename the file so you can open it. 
+    Highlight the filename and choose rename, then add ".txt" after ".p8". In other words, modify `AuthKey_AAAAAAAAAA.p8` to `AuthKey_AAAAAAAAAA.p8.txt` and click on `Use .txt` when questioned.
 
-    ![img/apns-open.png](../nightscout/img/apns-open.png)
+    > ![rename the p8 file](img/p8-key-rename.png){width=200}
 
-1. The contents of this file will be used for `FASTLANE_KEY`
-
-    * Copy the full text, including the "`-----BEGIN PRIVATE KEY-----`" and "`-----END PRIVATE KEY-----`" lines
+2. Double-click to open the `AuthKey_AAAAAAAAAA.p8.txt` file. It will look similar to the screenshot below. You need to highlight **ALL OF THE CONTENTS** of that file and copy it and then paste it into your Secrets Reference file as the  `FASTLANE_KEY`.  
+    * **Click inside that file**
+    * Highlight **all** the text, including the "`-----BEGIN PRIVATE KEY-----`" and "`-----END PRIVATE KEY-----`" lines and then
+    * Copy **all** of the text to the clipboard (Cf. screenshot below).
         * On a *Mac*, use ++command+"A"++, then ++command+"C"++  to copy all the contents
         * On a **PC**, use ++control+"A"++ , then ++control+"C"++ to copy all the contents
     * In the file where you are saving information, paste this with the indication that it is for  `FASTLANE_KEY`
 
-    ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
+    > ![img/apns-copy-key.png](../nightscout/img/apns-copy-key.png)
 
 #### Organize your Key File
 
@@ -270,7 +273,7 @@ You must be logged into your *GitHub* account before starting this step. If you 
     * A check will automatically appear in the `repo` scope as well - this is normal
     * Scroll all the way to the bottom and click `Generate token` (it's a long way, ignore all other settings, do not check anything else)
 
-    ![request a new personal access token](img/gh-access-token.svg){width="700"}
+    > ![request a new personal access token](img/gh-access-token.svg){width="700"}
     {align="center"}
 
     !!! tip "What does `repo` and  `workflow` do?"
@@ -282,7 +285,7 @@ You must be logged into your *GitHub* account before starting this step. If you 
     * You will use this for `GH_PAT` when you set up your Secrets
     * You can [Regenerate Personal Access Token](bb-update.md#regenerate-token){: target="_blank" } for `GH_PAT` if you lose it, but then you have to update that in the <code>Secrets</code> for all repositories using *GitHub* Build.
 
-    ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
+    > ![copy fastlane access token on github](img/gh-token-to-copy.png){width="600"}
     {align="center"}
 
 ### Create a Free *GitHub* Organization
