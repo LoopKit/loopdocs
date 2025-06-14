@@ -8,7 +8,7 @@
     * If you previously built and had a valid certificate, you probably did not notice the issue
     * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
     * If this is your first time building a particular app, then the ability to create **Identifiers** for that app is still impacted
-        * A solution is being tested but not currently available in the released code
+        * A solution is being tested but is not currently available in the released code
 
     > Building with a Mac in not affected.
 
