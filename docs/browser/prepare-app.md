@@ -118,6 +118,18 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 | `WatchApp` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch` |
 | `WatchAppExtension` | XC Identifier | `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` |
 
+??? abstract "Capabilities for Each Identifier (Click to open/close)"
+    When <code>Action: Add Identifiers</code> is working, you do not need this information. If you ever need to manually create the Identiers, the table below lists the required capabilities. For the App Group, you must first add that capability and update the Identifier and then modify the Identifier a second time to add the Loop App Group as directed in the next section.
+
+    | NAME | IDENTIFIER | Capabilities |
+    |:--|:--|:--|
+    | `Loop` |  `com.TEAMID.loopkit.Loop` | App Groups<br>HealthKit<br>NFC Tag Reading<br>Push Notifications (do not configure)<br>Siri<br>Time Sensitive Notifications |
+    | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` | App Groups<br> |
+    | `Loop Status Extension` |  `com.TEAMID.loopkit.Loop.statuswidget` | App Groups<br> |
+    | `Loop Widget Extension` |  `com.TEAMID.loopkit.Loop.LoopWidgetExtension` | App Groups<br> |
+    | `WatchApp` |  `com.TEAMID.loopkit.Loop.LoopWatch` | none |
+    | `WatchAppExtension`| `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` | HealthKit<br>SiriKit |
+
 ### Add `App Group` to Identifiers
 
 ??? abstract "Section Summary (click to open/close)"

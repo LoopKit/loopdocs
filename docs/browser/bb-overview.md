@@ -1,25 +1,18 @@
 ## Build with a Browser
 
-!!! important "Browser Build Temporarily Unavailable for New Builders and Some Updating Builders"
-    Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.
-
-    This affects a lot of people - not just Open Source Automated Insulin Delivery Apps. We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
-
-    > Building with a Mac still works.
-
-    > If your Identifiers, Certificates and Profiles are up to date, Browser Build still works.
-
-    We suggest you check when your most recent build in TestFlight will expire.
-
-    If you are able to build - do it now - that gives you 90 days.
-
-    To [Build](bb-update.md#build-the-app){: target="_blank" }: 
+!!! important "Browser Build Temporarily Unavailable for New Builders"
+    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. 
     
-    1. Open your repository at github
-    2. Tap on the Action tab and look at the Action List
-    3. If necessary, enable Build Action and run it
-    4. If that succeeds, you have given yourself 90 days
-    5. If that fails, reach out to see if the failure reason is something we can fix, but otherwise, please wait
+    A partial update was instituted on 13 June 2025 for Loop (with other apps like LoopCaregiver, LoopFollow and Trio updated about that time). This restored the ability for current builders to build again.
+
+    * If you previously built and had a valid certificate, you probably did not notice the issue
+    * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
+    * If this is your first time building a particular app, then the ability to create **Identifiers** for that app is still impacted
+        * A solution is being tested but is not currently available in the released code
+
+    > Building with a Mac in not affected.
+
+    > If your Identifiers are configured, Browser Build works normally now.
 
 * <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
 * The app is then installed by you on your phone using the *TestFlight* app

@@ -1,11 +1,7 @@
 ## Summary of Steps
 
 !!! important "Browser Build Temporarily Unavailable for New Builders"
-    New builders cannot build at this time because we cannot add Identifiers.
-
-    If you want to work through all the steps up to when you Add Identifiers in Prepare Identifiers, that is fine, but you will not be able to proceed past that point. You will not be able to build the app through this method, at this time.
-
-    We are confident that the connection between *GitHub* Actions and *Apple* will be fixed. For now, please be patient.
+    New builders should probably wait a few days for the next update before attempting to build a new app. You can manually configure Identifiers (very tedious), and then build, but waiting is probably the right choice. You can do all the steps leading up the to the <code>Add Identifiers</code> action.
 
 
 ???+ info "Time Estimate (click to open/close)"
