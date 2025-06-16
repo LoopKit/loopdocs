@@ -3844,6 +3844,51 @@
 </tr>
 </tbody>
 </table>
+<details class="abstract">
+<summary>Capabilities for Each Identifier (Click to open/close)</summary>
+<p>When <code>Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> is working, you do not need this information. If you ever need to manually create the Identiers, the table below lists the required capabilities. For the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>, you must first add that capability and update the Identifier and then modify the Identifier a second time to add the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> as directed in the next section.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">NAME</th>
+<th style="text-align: left;">IDENTIFIER</th>
+<th style="text-align: left;">Capabilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Loop</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop</code></td>
+<td style="text-align: left;">App Groups<br>HealthKit<br><abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> Tag Reading<br>Push Notifications (do not configure)<br>Siri<br>Time Sensitive Notifications</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Loop Intent Extension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.Loop-Intent-Extension</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Loop Status Extension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.statuswidget</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Loop Widget Extension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.LoopWidgetExtension</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>WatchApp</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.LoopWatch</code></td>
+<td style="text-align: left;">none</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>WatchAppExtension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension</code></td>
+<td style="text-align: left;">HealthKit<br>SiriKit</td>
+</tr>
+</tbody>
+</table>
+</details>
 <h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>

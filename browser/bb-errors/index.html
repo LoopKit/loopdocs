@@ -4484,10 +4484,21 @@
 
 <h2 id="help-with-errors">Help with Errors<a class="headerlink" href="#help-with-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition important">
-<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders and Some Updating Builders</p>
-<p>Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.</p>
-<p>If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.</p>
-<p>We are confident that the connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> will be fixed. For now, please be patient.</p>
+<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
+<p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. </p>
+<p>A partial update was instituted on 13 June 2025 for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (with other apps like <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio updated about that time). This restored the ability for current builders to build again.</p>
+<ul>
+<li>If you previously built and had a valid certificate, you probably did not notice the issue</li>
+<li>If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved</li>
+<li>If this is your first time building a particular app, then the ability to create <strong><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></strong> for that app is still impacted<ul>
+<li>A solution is being tested but is not currently available in the released code</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Building with a Mac in not affected.</p>
+<p>If your <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> are configured, Browser Build works normally now.</p>
+</blockquote>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Get Help, Not Frustrated</p>
@@ -4558,7 +4569,10 @@
 <li>Once you have read that section, hit the back arrow in your browser to return to your original location</li>
 </ul>
 <h3 id="look-at-the-annotation">Look at the Annotation<a class="headerlink" href="#look-at-the-annotation" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you get an error in an Action. Click on the link and scroll down to view the annotation. An example is shown below. Most errors have a clear annotation telling you what to do. If the annotation is not clear to your, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
+<p>If you get an error in an Action. Click on the link and scroll down to view the annotation. An example is shown below. Some errors have a clear annotation telling you what to do. If the annotation is not clear to your, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
+<blockquote>
+<p>Changes at <em>Apple</em> led to a number of new errors - these do have have nice annotations.</p>
+</blockquote>
 <p align="center"><img alt="graphic with an example validate secret error" src="../img/example-annotation.png" width="800" /></p>
 <h3 id="rebuild-or-new-builder">Rebuild or New Builder<a class="headerlink" href="#rebuild-or-new-builder" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
@@ -4568,8 +4582,7 @@
 <h2 id="new-builder-quick-reference">New Builder: Quick Reference<a class="headerlink" href="#new-builder-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
-<p>New builders cannot build at this time because we cannot add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>.</p>
-<p>We are confident that the connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> will be fixed. For now, please be patient.</p>
+<p>New builders can build at this time but only if they manually create <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.</p>
 </div>
 <h3 id="new-builder-validate-secrets-error">New Builder: Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Error<a class="headerlink" href="#new-builder-validate-secrets-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.</p>
@@ -4586,8 +4599,7 @@
 <h3 id="new-builder-add-identifiers-error">New Builder: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Error<a class="headerlink" href="#new-builder-add-identifiers-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
-<p>New builders cannot build at this time because we cannot add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>.</p>
-<p>We are confident that the connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> will be fixed. For now, please be patient.</p>
+<p>New builders can build at this time but only if they manually create <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.</p>
 </div>
 <p>If you succeeded with Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this should also succeed. If it does not, please skip ahead to <a href="#action-add-identifiers-errors">Action: <code>Add Identifiers</code> Error`</a>.</p>
 <p>Do not hesitate to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
@@ -4618,11 +4630,9 @@
 <p align="center"><img alt="graphic with an example build error" src="../img/example-identifier-build-errors.png" width="800" /></p>
 <p>Ignore the warnings - this does not affect the build.</p>
 <h2 id="rebuild-errors-quick-reference">Rebuild Errors: Quick Reference<a class="headerlink" href="#rebuild-errors-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders and Some Updating Builders</p>
-<p>Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.</p>
-<p>If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.</p>
-<p>We are confident that the connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> will be fixed. For now, please be patient.</p>
+<div class="admonition check">
+<p class="admonition-title">Browser Build is Working Again</p>
+<p>New builders can build at this time but only if they manually create <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.</p>
 </div>
 <h3 id="check-upstream-and-keep-alive-error"><code>Check Upstream and Keep Alive</code> Error<a class="headerlink" href="#check-upstream-and-keep-alive-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
@@ -4661,6 +4671,7 @@
 <div class="admonition important">
 <p class="admonition-title"><abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is missing</p>
 <p>If you get this build error message: <code>No code signing identity found and can not create a new one because you enabled</code>, you do not have certificates needed to run the build.</p>
+<p>If you have more than one Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>, you may need to delete the oldest one using these instructions: <a href="./#revoke-extra-distribution-certificate" target="_blank">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a>.</p>
 <ul>
 <li>With <code>Loop 3.6.0</code> and newer, this should not happen. Make sure you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to automatically renew certificates.</li>
 </ul>
@@ -5167,18 +5178,18 @@
 <h2 id="handle-the-fastlane-api-key-error">Handle the <code>FastLane API Key</code> Error<a class="headerlink" href="#handle-the-fastlane-api-key-error" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Browser Build Temporary <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr></p>
-<p>Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.</p>
-<p>If your build is failing, reach out to see if the failure reason is something we can fix, but otherwise, please wait.</p>
-<p>We are confident that the connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> will be fixed. For now, please be patient.</p>
+<p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. </p>
+<p>A partial update was instituted on 13 June 2025 for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (with other apps like <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio updated about that time). This restored the ability for current builders to build again.</p>
+<ul>
+<li>If you previously built and had a valid certificate, you probably did not notice the issue</li>
+<li>If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved</li>
+</ul>
+<p>It took several weeks for the change at <em>Apple</em> to propagate through all the <code>API Keys</code>. Thus an adhoc fix worked initially but then stopped working. An update to <abbr title="used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> (the code the communicates between <em>Apple</em> and <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>) is now in the released <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code (3.6.1 and newer).</p>
 </div>
-<p>We have removed the section on getting a new Fastlane <abbr title="Application Programming Interface">API</abbr> Key - that is not the solution to what turns out to be a bigger problem.</p>
-<p>The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time - they will not help until the underlying connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> is working again.</p>
+<p>We have removed the section on getting a new Fastlane <abbr title="Application Programming Interface">API</abbr> Key - that is not the solution to what turned out to be a change made by <em>Apple</em>.</p>
+<p>The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time unless a mentor has suggested it or you have a specific error case where one of these steps is recommended.</p>
 <h2 id="other-help-steps">Other Help Steps<a class="headerlink" href="#other-help-steps" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>These help steps might be needed so the documentation is here.</p>
-<div class="admonition important">
-<p class="admonition-title">Browser Build Temporary <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr></p>
-<p>Do not follow any of these steps a this time - they will not help until the underlying connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> is working again.</p>
-</div>
 <h3 id="delete-match-secrets">Delete <code>Match-Secrets</code><a class="headerlink" href="#delete-match-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Make sure you really need to do this - please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <p>Make sure you only delete <code>Match-Secrets</code>. Do NOT delete the <abbr title="contains project files and each file's revision history">repository</abbr> of the app you are trying to build.</p>
@@ -5198,6 +5209,10 @@
 <li>The next action you run will automatically create a new <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> for you</li>
 </ol>
 <h3 id="revoke-extra-distribution-certificate">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#revoke-extra-distribution-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you have the <code>ENABLE_NUKE_CERTS</code> variable added and set to <code>true</code>, you should not need this section for most apps. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> for instructions.</p>
+<blockquote>
+<p>A few apps still require manual steps for certificate renewal.</p>
+</blockquote>
 <p>This step is done at the <em>Apple</em> Developer site; click on this <a href="https://developer.apple.com/account/resources/certificates/list">link</a>.</p>
 <p>If you only have <em>one</em> <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> of the <code>Distribution</code> type, similar to the graphic shown below, skip ahead to <a href="#delete-invalid-profiles">Delete Invalid Profiles</a>. Ignore any other types of <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>. Do not delete them.</p>
 <blockquote>

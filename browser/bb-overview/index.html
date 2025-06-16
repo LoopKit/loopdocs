@@ -3770,23 +3770,21 @@
 
 <h2 id="build-with-a-browser">Build with a Browser<a class="headerlink" href="#build-with-a-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition important">
-<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders and Some Updating Builders</p>
-<p>Over the last few weeks, the ability to add identifiers has been degrading and we provided what we thought was a solution - it was not.</p>
-<p>This affects a lot of people - not just Open Source Automated Insulin Delivery Apps. We are confident that the connection between <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> and <em>Apple</em> will be fixed. For now, please be patient.</p>
+<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
+<p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. </p>
+<p>A partial update was instituted on 13 June 2025 for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (with other apps like <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio updated about that time). This restored the ability for current builders to build again.</p>
+<ul>
+<li>If you previously built and had a valid certificate, you probably did not notice the issue</li>
+<li>If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved</li>
+<li>If this is your first time building a particular app, then the ability to create <strong><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></strong> for that app is still impacted<ul>
+<li>A solution is being tested but is not currently available in the released code</li>
+</ul>
+</li>
+</ul>
 <blockquote>
-<p>Building with a Mac still works.</p>
-<p>If your <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, Certificates and Profiles are up to date, Browser Build still works.</p>
+<p>Building with a Mac in not affected.</p>
+<p>If your <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> are configured, Browser Build works normally now.</p>
 </blockquote>
-<p>We suggest you check when your most recent build in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> will expire.</p>
-<p>If you are able to build - do it now - that gives you 90 days.</p>
-<p>To <a href="../bb-update/#build-the-app" target="_blank">Build</a>: </p>
-<ol>
-<li>Open your <abbr title="contains project files and each file's revision history">repository</abbr> at github</li>
-<li>Tap on the Action tab and look at the Action List</li>
-<li>If necessary, enable Build Action and run it</li>
-<li>If that succeeds, you have given yourself 90 days</li>
-<li>If that fails, reach out to see if the failure reason is something we can fix, but otherwise, please wait</li>
-</ol>
 </div>
 <ul>
 <li><span translate="no"><abbr title="Latest release with major updates">Loop 3</abbr></span>&nbsp;can be built with a web browser using <span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></span></li>

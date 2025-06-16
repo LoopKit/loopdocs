@@ -4259,6 +4259,12 @@
 </li>
 </ul>
 <h2 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Temporarily Unavailable</p>
+<p>The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> action does not work at this time.</p>
+<p>A solution is being tested but is not currently available in the released code. 
+For now, please be patient.</p>
+</div>
 <p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
 <ul>
 <li>If this is the first <code>Action</code> you run with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code><ul>
@@ -4318,7 +4324,7 @@
 <p>If you build from a second or third <code>repository</code> for <code>LoopFollow</code>, the Name will end in <code>Second</code> or <code>Third</code> and Bundle ID will have <code>.Second</code> or <code>.Third</code> at the end.</p>
 </blockquote>
 <p>The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app requires updates to the <code>Identifiers</code> after they are generated.</p>
-<p>The <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> app does not require this extra step. You can skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a>.</p>
+<p>The <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> app does not require this extra step. You can skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a>. The <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> app does not require any special capabilities.</p>
 <h2 id="add-app-group-to-loopcaregiver">Add <code>App Group</code> to <code>LoopCaregiver</code><a class="headerlink" href="#add-app-group-to-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app requires the addition of an <code>App Group</code> to each of its list of <code>Identifiers</code>. Follow these steps one time to be able to build the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app.</p>
 <h3 id="check-if-app-group-exists">Check if <code>App Group</code> Exists<a class="headerlink" href="#check-if-app-group-exists" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4341,6 +4347,12 @@
 <h3 id="add-app-group-to-identifiers">Add <code>App Group</code> to <code>Identifiers</code><a class="headerlink" href="#add-app-group-to-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Click to open this link in a new tab: <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank"><code>Certificates, Identifiers &amp; Profiles: Identifiers List</code></a> on the <em>Apple Developer</em> site.</p>
 <h4 id="table-with-name-and-identifier-for-loopcaregiver">Table with Name and Identifier for <code>LoopCaregiver</code><a class="headerlink" href="#table-with-name-and-identifier-for-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Temporarily Unavailable</p>
+<p>The Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> action does not work at this time.</p>
+<p>A solution is being tested but is not currently available in the released code. 
+For now, please be patient.</p>
+</div>
 <p>All five of these identifiers should be found after running the <code>Add Identifier</code> action on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>.</p>
 <p>If you do not see them, please sync your <code>LoopCaregiver</code> <abbr title="contains project files and each file's revision history">repository</abbr> and then run the <a href="../identifiers/#add-identifiers"><code>Add Identifier</code> action</a>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
 <table>
@@ -4373,6 +4385,47 @@
 </tr>
 </tbody>
 </table>
+<p>The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app requires capabilities be associated with the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. When Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> is working, this is handled for you. The annotation box below is only for the special case where you must configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> manually.</p>
+<details class="abstract">
+<summary>Capabilities for Each <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> Identifier (Click to open/close)</summary>
+<p>When <code>Action: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></code> is working, you do not need this information. If you ever need to manually create the Identiers, the table below lists the required capabilities. For the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>, you must first add that capability and update the Identifier and then modify the Identifier a second time to add the <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> as directed in the next section.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">NAME</th>
+<th style="text-align: left;">IDENTIFIER</th>
+<th style="text-align: left;">Capabilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>LoopCaregiver</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.LoopCaregiver</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LoopCaregiverIntentExtension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.LoopCaregiver.IntentExtension</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LoopCaregiverWatch</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.LoopCaregiver.watchkitapp</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LoopCaregiverWatchWidgetExtension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.LoopCaregiver.watchkitapp.WidgetExtension</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LoopCaregiverWidgetExtension</code></td>
+<td style="text-align: left;"><code>com.TEAMID.loopkit.LoopCaregiver.WidgetExtension</code></td>
+<td style="text-align: left;">App Groups<br></td>
+</tr>
+</tbody>
+</table>
+</details>
 <h3 id="add-loopcaregivergroup-to-each-identifier">Add <code>LoopCaregiverGroup</code> to each Identifier<a class="headerlink" href="#add-loopcaregivergroup-to-each-identifier" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Find and click on the row for the <code>LoopCaregiver</code> on the <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank">Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> &amp; Profiles: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> List</a> page. Look in the <strong><code>IDENTIFIER</code></strong> column to find <code>com.TEAMID.loopkit.LoopCaregiver</code>. The <strong><code>NAME</code></strong> might begin with an <code>XC</code> if you previously built with <abbr title="program used to build an app">Xcode</abbr>. However, the <strong><code>IDENTIFIER</code></strong> column value should match.</p>
 <table>
