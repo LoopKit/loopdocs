@@ -123,10 +123,10 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 
     | NAME | IDENTIFIER | Capabilities |
     |:--|:--|:--|
-    | `Loop` |  `com.TEAMID.loopkit.Loop` | App Group<br>HealthKit<br>NFC Tag Reading<br>Push Notifications<br>SiriKit<br>User Notifications Time Sensitive |
-    | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` | App Group<br> |
-    | `Loop Status Extension` |  `com.TEAMID.loopkit.Loop.statuswidget` | App Group<br> |
-    | `Loop Widget Extension` |  `com.TEAMID.loopkit.Loop.LoopWidgetExtension` | App Group<br> |
+    | `Loop` |  `com.TEAMID.loopkit.Loop` | App Groups<br>HealthKit<br>NFC Tag Reading<br>Push Notifications (do not configure)<br>Siri<br>Time Sensitive Notifications |
+    | `Loop Intent Extension` | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` | App Groups<br> |
+    | `Loop Status Extension` |  `com.TEAMID.loopkit.Loop.statuswidget` | App Groups<br> |
+    | `Loop Widget Extension` |  `com.TEAMID.loopkit.Loop.LoopWidgetExtension` | App Groups<br> |
     | `WatchApp` |  `com.TEAMID.loopkit.Loop.LoopWatch` | none |
     | `WatchAppExtension`| `com.TEAMID.loopkit.Loop.LoopWatch.watchkitextension` | HealthKit<br>SiriKit |
 

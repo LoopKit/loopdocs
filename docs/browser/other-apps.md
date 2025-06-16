@@ -251,11 +251,11 @@ The *LoopCaregiver* app requires capabilities be associated with the Identifiers
 
     | NAME | IDENTIFIER | Capabilities |
     |:--|:--|:--|
-    | `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` | App Group<br> |
-    | `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiver.IntentExtension` | App Group<br> |
-    | `LoopCaregiverWatch` | `com.TEAMID.loopkit.LoopCaregiver.watchkitapp` | App Group<br> |
-    | `LoopCaregiverWatchWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.watchkitapp.WidgetExtension` | App Group<br> |
-    | `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.WidgetExtension` | App Group<br> |
+    | `LoopCaregiver` | `com.TEAMID.loopkit.LoopCaregiver` | App Groups<br> |
+    | `LoopCaregiverIntentExtension` | `com.TEAMID.loopkit.LoopCaregiver.IntentExtension` | App Groups<br> |
+    | `LoopCaregiverWatch` | `com.TEAMID.loopkit.LoopCaregiver.watchkitapp` | App Groups<br> |
+    | `LoopCaregiverWatchWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.watchkitapp.WidgetExtension` | App Groups<br> |
+    | `LoopCaregiverWidgetExtension` | `com.TEAMID.loopkit.LoopCaregiver.WidgetExtension` | App Groups<br> |
 
 
 ### Add `LoopCaregiverGroup` to each Identifier

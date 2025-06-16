@@ -92,7 +92,9 @@ If there is no upright arrow by a link, then the location is on the same page:
 
 ### Look at the Annotation
 
-If you get an error in an Action. Click on the link and scroll down to view the annotation. An example is shown below. Most errors have a clear annotation telling you what to do. If the annotation is not clear to your, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+If you get an error in an Action. Click on the link and scroll down to view the annotation. An example is shown below. Some errors have a clear annotation telling you what to do. If the annotation is not clear to your, please [ask a mentor for help](#where-to-get-help-with-browser-build).
+
+> Changes at *Apple* led to a number of new errors - these do have have nice annotations.
 
 ![graphic with an example validate secret error](img/example-annotation.png){width="800"}
 {align="center"}
@@ -224,6 +226,8 @@ If you get an error when building with a browser, you can use this page to figur
 
 !!! important "Certificate is missing"
     If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
+
+    If you have more than one Distribution Certificate, you may need to delete the oldest one using these instructions: [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
 
     * With `Loop 3.6.0` and newer, this should not happen. Make sure you [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to automatically renew certificates.
 
