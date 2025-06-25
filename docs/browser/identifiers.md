@@ -67,12 +67,6 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 ## <code>Add Identifiers</code>
 
-!!! important "Add Identifiers Temporarily Unavailable"
-    The Add Identifiers action does not work at this time.
-
-    A solution is being tested but is not currently available in the released code. For now, please be patient.
-
-
 ??? abstract "Section Summary (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
     1. On the left side, select "2. Add Identifiers".

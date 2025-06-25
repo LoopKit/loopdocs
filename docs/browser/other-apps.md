@@ -150,11 +150,10 @@ The `Validate Secrets` &nbsp;<span class=notranslate>Action</span>&nbsp; should 
 
 ## Add Identifiers
 
-!!! important "Add Identifiers Temporarily Unavailable"
-    The Add Identifiers action does not work at this time.
+!!! important "Add Identifiers were Temporarily Unavailable"
+    The Add Identifiers action stopped working for a time. The timing for the release of the fix for LoopCaregiver may be delayed slightly. It is fixed for dev branch of LoopFollow and will be released to LoopFollow main soon.
 
-    A solution is being tested but is not currently available in the released code. 
-    For now, please be patient.
+    If you are a new builder and Add Identifiers does not work - please wait a day or two and try again.
 
 Near the top middle of your Repository fork, click on the "Actions" tab.
 
@@ -225,12 +224,6 @@ Click to open this link in a new tab: [`Certificates, Identifiers & Profiles: Id
 
 
 #### Table with Name and Identifier for `LoopCaregiver`
-
-!!! important "Add Identifiers Temporarily Unavailable"
-    The Add Identifiers action does not work at this time.
-
-    A solution is being tested but is not currently available in the released code. 
-    For now, please be patient.
 
 All five of these identifiers should be found after running the `Add Identifier` action on *GitHub*.
 

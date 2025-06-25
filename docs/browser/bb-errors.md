@@ -1,20 +1,5 @@
 ## Help with Errors
 
-!!! important "Browser Build Temporarily Unavailable for New Builders"
-    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. 
-    
-    A partial update was instituted on 13 June 2025 for Loop (with other apps like LoopCaregiver, LoopFollow and Trio updated about that time). This restored the ability for current builders to build again.
-
-    * If you previously built and had a valid certificate, you probably did not notice the issue
-    * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
-    * If this is your first time building a particular app, then the ability to create **Identifiers** for that app is still impacted
-        * A solution is being tested but is not currently available in the released code
-
-    > Building with a Mac in not affected.
-
-    > If your Identifiers are configured, Browser Build works normally now.
-
-
 !!! important "Get Help, Not Frustrated"
     For first-time builders, there are a lot of one-time steps that all have to be correct and many screens look similar.
 
@@ -106,9 +91,6 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 
 ## New Builder: Quick Reference
 
-!!! important "Browser Build Temporarily Unavailable for New Builders"
-    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
-
 ### New Builder: Validate <code>Secrets</code> Error
 
 This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.
@@ -123,9 +105,6 @@ If you want to try to solve it yourself, refer back to these section in the docu
 * [Enter the <code>Secrets</code>](prepare-fork.md#enter-the-secrets){: target="_blank" }
 
 ### New Builder: Add Identifiers Error
-
-!!! important "Browser Build Temporarily Unavailable for New Builders"
-    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
 
 If you succeeded with Validate <code>Secrets</code>, this should also succeed. If it does not, please skip ahead to [Action: `Add Identifiers` Error`](#action-add-identifiers-errors).
 
@@ -208,7 +187,9 @@ If necessary, enable the build action at your repository as shown in the graphic
 
 ### Rebuild: Create Certificates Error
 
-With `Loop 3.6.0`, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }
+With `Loop 3.6.1` or newer, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
+
+> Note - we used to say with `Loop 3.6.0`, this was not longer an issue. However, Apple changed part of the infrastructure in May 2025 and it took us a while to get this fixed.
 
 > Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
 
@@ -229,7 +210,7 @@ If you get an error when building with a browser, you can use this page to figur
 
     If you have more than one Distribution Certificate, you may need to delete the oldest one using these instructions: [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
 
-    * With `Loop 3.6.0` and newer, this should not happen. Make sure you [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to automatically renew certificates.
+    * With `Loop 3.6.1` and newer, this should not happen. Make sure you [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to automatically renew certificates. It only happened with `Loop 3.6.0` when Apple made a change to their infrastructure.
 
 These are some of the most common errors to date.
 
@@ -786,14 +767,11 @@ Assuming you have successfully built using the Browser-Build / *GitHub* method b
 
 ## Handle the `FastLane API Key` Error
 
-!!! important "Browser Build Temporary Issue"
-    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. 
+This was never an actual error - but a procedure that worked briefly. There is no need to revoke and generate a new `FastLane API Key`.
+
+!!! important "Browser Build Temporary Issue is Fixed with `Loop 3.6.2`"
+    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. With the release of `Loop 3.6.2`, these issues are resolved.
     
-    A partial update was instituted on 13 June 2025 for Loop (with other apps like LoopCaregiver, LoopFollow and Trio updated about that time). This restored the ability for current builders to build again.
-
-    * If you previously built and had a valid certificate, you probably did not notice the issue
-    * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
-
     It took several weeks for the change at *Apple* to propagate through all the `API Keys`. Thus an adhoc fix worked initially but then stopped working. An update to fastlane (the code the communicates between *Apple* and *GitHub*) is now in the released Loop code (3.6.1 and newer).
 
 We have removed the section on getting a new Fastlane API Key - that is not the solution to what turned out to be a change made by *Apple*.

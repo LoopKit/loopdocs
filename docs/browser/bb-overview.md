@@ -1,19 +1,5 @@
 ## Build with a Browser
 
-!!! important "Browser Build Temporarily Unavailable for New Builders"
-    *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. 
-    
-    A partial update was instituted on 13 June 2025 for Loop (with other apps like LoopCaregiver, LoopFollow and Trio updated about that time). This restored the ability for current builders to build again.
-
-    * If you previously built and had a valid certificate, you probably did not notice the issue
-    * If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved
-    * If this is your first time building a particular app, then the ability to create **Identifiers** for that app is still impacted
-        * A solution is being tested but is not currently available in the released code
-
-    > Building with a Mac in not affected.
-
-    > If your Identifiers are configured, Browser Build works normally now.
-
 * <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
 * The app is then installed by you on your phone using the *TestFlight* app
 * If you prefer to use *Xcode* on your *Mac*, head over to [Build with *Mac*](../build/overview.md){: target="_blank" }
