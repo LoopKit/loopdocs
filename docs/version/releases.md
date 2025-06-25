@@ -23,6 +23,22 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 
 ## Loop 3 Version History
 
+### Loop v3.6.2
+
+[*Loop* v3.6.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.2) was released on 25 June 2025.
+
+There are no changes to the *Loop* app - this is a Browser Build fix only.
+
+This release is the second fix for Browser Build features that stopped working when Apple made changes to their infrastructure beginning in May 2025. Those with valid Identifiers and build credentials probably did not notice that there was a problem.
+
+**Fixed**
+
+* The ability to run the `Add Identifiers` action is fixed with this version
+
+**Not Fixed**
+
+* We can no longer automatically enable the capability for Time Sensitive Notifications for Loop. This capability must be added manually as directed in this section: [Add Time Sensitive Notifications](../browser/prepare-app.md#add-time-sensitive-notifications){: target="_blank" }
+
 ### Loop v3.6.1
 
 [*Loop* v3.6.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.1) was released on 13 June 2025.
