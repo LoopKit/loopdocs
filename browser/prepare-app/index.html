@@ -3947,7 +3947,12 @@
 </tbody>
 </table>
 <p>Click on each <strong><code>IDENTIFIER</code></strong> in turn and the <code>Edit Your App ID Configuration</code> screen will open.</p>
-<p>The example graphic below has numbered steps that match these directions:</p>
+<h4 id="add-time-sensitive-notifications">Add Time Sensitive Notifications<a class="headerlink" href="#add-time-sensitive-notifications" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>There is one difference for the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Identifier from the other 3 <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. You must manually enable the Time Sensitive Notifications capabilty. Follow the directions below for adding the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>, but keep scrolling down until you see the Time Sensitive Notifications. Make sure that check box is enabled, as shown in the graphic below. If you do not do this, the Build will fail.</p>
+<blockquote>
+<p><img alt="graphic showing selection of the time sensitive notifications" src="../img/add-time-sensitive-notifications-loop-identifier.png" width="300" /></p>
+</blockquote>
+<p>The example graphic below has numbered steps that match these directions. The columns from left to right are <code>Capabilities</code>, <code>App Services</code> and <code>Capability Requests</code>. With the exception of one App Service (for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>), the check box under <code>Capabilities</code> will already be checked for you.:</p>
 <ol>
 <li>Looking at the <code>App Services</code> column, scroll down to the <code>App Groups</code> row and ensure the check box (under the <code>Capabilities column</code>) for <code>App Groups</code> is checked</li>
 <li>If the word <code>Configure</code> shows up, tap on it<ul>
@@ -3971,6 +3976,7 @@
 <p>Repeat until the 4 <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> have the <code>Loop App Group</code> configured.</p>
 <ul>
 <li>If you miss an identifier, the <code>Create Certificates</code> step will succeed but <code>Build Loop</code> will fail.</li>
+<li>If you do not <a href="#add-time-sensitive-notifications">enable the <code>Time Sensitive Notifications</code></a> for the <code>Loop</code> Identifier, the <code>Create Certificates</code> step will succeed but <code>Build Loop</code> will fail.</li>
 </ul>
 <h2 id="digital-service-act-compliance">Digital Service Act Compliance<a class="headerlink" href="#digital-service-act-compliance" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>In order to create an app you need to indicate whether you are a trader or a non-trader. You are a non-trader unless you use the same Developer ID to submit apps for sale.</p>

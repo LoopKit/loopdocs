@@ -4484,23 +4484,6 @@
 
 <h2 id="help-with-errors">Help with Errors<a class="headerlink" href="#help-with-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition important">
-<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
-<p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. </p>
-<p>A partial update was instituted on 13 June 2025 for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (with other apps like <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio updated about that time). This restored the ability for current builders to build again.</p>
-<ul>
-<li>If you previously built and had a valid certificate, you probably did not notice the issue</li>
-<li>If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved</li>
-<li>If this is your first time building a particular app, then the ability to create <strong><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></strong> for that app is still impacted<ul>
-<li>A solution is being tested but is not currently available in the released code</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>Building with a Mac in not affected.</p>
-<p>If your <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> are configured, Browser Build works normally now.</p>
-</blockquote>
-</div>
-<div class="admonition important">
 <p class="admonition-title">Get Help, Not Frustrated</p>
 <p>For first-time builders, there are a lot of one-time steps that all have to be correct and many screens look similar.</p>
 <p>If you are updating your build, the process can be confusing and some error messages can be misleading.</p>
@@ -4580,10 +4563,6 @@
 <li>If you are a new builder, please continue reading</li>
 </ul>
 <h2 id="new-builder-quick-reference">New Builder: Quick Reference<a class="headerlink" href="#new-builder-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
-<p>New builders can build at this time but only if they manually create <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.</p>
-</div>
 <h3 id="new-builder-validate-secrets-error">New Builder: Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> Error<a class="headerlink" href="#new-builder-validate-secrets-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.</p>
 <ul>
@@ -4597,10 +4576,6 @@
 <li><a href="../prepare-fork/#enter-the-secrets" target="_blank">Enter the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></li>
 </ul>
 <h3 id="new-builder-add-identifiers-error">New Builder: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> Error<a class="headerlink" href="#new-builder-add-identifiers-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition important">
-<p class="admonition-title">Browser Build Temporarily Unavailable for New Builders</p>
-<p>New builders can build at this time but only if they manually create <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.</p>
-</div>
 <p>If you succeeded with Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this should also succeed. If it does not, please skip ahead to <a href="#action-add-identifiers-errors">Action: <code>Add Identifiers</code> Error`</a>.</p>
 <p>Do not hesitate to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h3 id="new-builder-create-certificates-error">New Builder: Create Certificates Error<a class="headerlink" href="#new-builder-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4656,8 +4631,9 @@
 <p>If necessary, enable the build action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build.</p>
 <p><img alt="fix a disabled build state" src="../img/build-disabled-fix.png" /></p>
 <h3 id="rebuild-create-certificates-error">Rebuild: Create Certificates Error<a class="headerlink" href="#rebuild-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With <code>Loop 3.6.0</code>, these should be a thing of the past - but you must first manually update (sync) your <abbr title="contains project files and each file's revision history">repository</abbr> in order to get this feature added and you must do this new step <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a></p>
+<p>With <code>Loop 3.6.1</code> or newer, these should be a thing of the past - but you must first manually update (sync) your <abbr title="contains project files and each file's revision history">repository</abbr> in order to get this feature added and you must do this new step <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
 <blockquote>
+<p>Note - we used to say with <code>Loop 3.6.0</code>, this was no longer an issue. However, Apple changed part of their infrastructure in May 2025 and it took us a while to get this fixed.</p>
 <p>Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.</p>
 </blockquote>
 <h3 id="rebuild-build-error">Rebuild: Build Error<a class="headerlink" href="#rebuild-build-error" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4673,7 +4649,7 @@
 <p>If you get this build error message: <code>No code signing identity found and can not create a new one because you enabled</code>, you do not have certificates needed to run the build.</p>
 <p>If you have more than one Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>, you may need to delete the oldest one using these instructions: <a href="./#revoke-extra-distribution-certificate" target="_blank">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a>.</p>
 <ul>
-<li>With <code>Loop 3.6.0</code> and newer, this should not happen. Make sure you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to automatically renew certificates.</li>
+<li>With <code>Loop 3.6.1</code> and newer, this should not happen. Make sure you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to automatically renew certificates. It only happened with <code>Loop 3.6.0</code> when Apple made a change to their infrastructure.</li>
 </ul>
 </div>
 <p>These are some of the most common errors to date.</p>
@@ -5176,14 +5152,10 @@
 <p align="center"><img alt="graphic showing failure to install certificate" src="../img/github-error-cert-failed.png" width="500" /></p>
 <hr />
 <h2 id="handle-the-fastlane-api-key-error">Handle the <code>FastLane API Key</code> Error<a class="headerlink" href="#handle-the-fastlane-api-key-error" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>This was never an actual error - but a procedure that worked briefly. There is no need to revoke and generate a new <code>FastLane API Key</code>.</p>
 <div class="admonition important">
-<p class="admonition-title">Browser Build Temporary <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr></p>
-<p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. </p>
-<p>A partial update was instituted on 13 June 2025 for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (with other apps like <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio updated about that time). This restored the ability for current builders to build again.</p>
-<ul>
-<li>If you previously built and had a valid certificate, you probably did not notice the issue</li>
-<li>If you previously built, but needed to renew your certificate, you were not able to build for a few weeks but that is now resolved</li>
-</ul>
+<p class="admonition-title">Browser Build Temporary <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> is Fixed with <code>Loop 3.6.2</code></p>
+<p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. With the release of <code>Loop 3.6.2</code>, these issues are resolved.</p>
 <p>It took several weeks for the change at <em>Apple</em> to propagate through all the <code>API Keys</code>. Thus an adhoc fix worked initially but then stopped working. An update to <abbr title="used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> (the code the communicates between <em>Apple</em> and <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>) is now in the released <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code (3.6.1 and newer).</p>
 </div>
 <p>We have removed the section on getting a new Fastlane <abbr title="Application Programming Interface">API</abbr> Key - that is not the solution to what turned out to be a change made by <em>Apple</em>.</p>
