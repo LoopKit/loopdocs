@@ -6,7 +6,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.6.1. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.6.2. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -36,6 +36,8 @@ This release is the second fix for Browser Build features that stopped working w
 * The ability to run the `Add Identifiers` action is fixed with this version
 
 **Not Fixed**
+
+This only affects new builders and the instructions are updated to accomodate this restriction.
 
 * We can no longer automatically enable the capability for Time Sensitive Notifications for Loop. This capability must be added manually as directed in this section: [Add Time Sensitive Notifications](../browser/prepare-app.md#add-time-sensitive-notifications){: target="_blank" }
 

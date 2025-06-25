@@ -189,7 +189,7 @@ If necessary, enable the build action at your repository as shown in the graphic
 
 With `Loop 3.6.1` or newer, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
 
-> Note - we used to say with `Loop 3.6.0`, this was not longer an issue. However, Apple changed part of the infrastructure in May 2025 and it took us a while to get this fixed.
+> Note - we used to say with `Loop 3.6.0`, this was no longer an issue. However, Apple changed part of their infrastructure in May 2025 and it took us a while to get this fixed.
 
 > Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
 
