@@ -6,11 +6,11 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.6.0. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.6.1. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
-Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left.
+Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left. (This graphic shows an older release.)
     
 ![Determine current app version on app settings screen](img/app-version.jpg){width="400"}
 {align="center"}
@@ -23,11 +23,26 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 
 ## Loop 3 Version History
 
+### Loop v3.6.1
+
+[*Loop* v3.6.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.1) was released on 13 June 2025.
+
+There are no changes to the *Loop* app - this is a Browser Build fix only.
+
+This release partially restored some Browser Build features that stopped working when Apple made changes to their infrastructure beginning in May 2025. Those with valid Identifiers and build credentials probably did not notice that there was a problem.
+
+**Fixed**
+
+* The ability to generate new build credentials after certificates expired or were deleted is fixed with this version
+
+**Not Fixed**
+
+* The ability to run the `Add Identifiers` action is still "broken" with this version
+* Identifiers can be added manually
+
 ### Loop v3.6.0
 
-*Loop* v3.6.0 was released on 23 April 2025.
-
-* [Link to release notes for Loop 3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0)
+[*Loop* v3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0) was released on 23 April 2025.
 
 #### 3.6.0 Highlights
 
