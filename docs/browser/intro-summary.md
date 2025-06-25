@@ -1,9 +1,5 @@
 ## Summary of Steps
 
-!!! important "Browser Build Temporarily Unavailable for New Builders"
-    New builders should probably wait a few days for the next update before attempting to build a new app. You can manually configure Identifiers (very tedious), and then build, but waiting is probably the right choice. You can do all the steps leading up the to the <code>Add Identifiers</code> action.
-
-
 ???+ info "Time Estimate (click to open/close)"
     - If you have never built the *Loop* app (allow up to one week elapsed time)
         * Request and get an <span>*Apple Developer* Account</span>: 1-2 days
