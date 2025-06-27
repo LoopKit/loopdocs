@@ -154,9 +154,6 @@ Ignore the warnings - this does not affect the build.
 
 ## Rebuild Errors: Quick Reference
 
-!!! check "Browser Build is Working Again"
-    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
-
 ### `Check Upstream and Keep Alive` Error
 
 !!! important "`Check Upstream and Keep Alive` Error"
@@ -271,8 +268,6 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 If your certificates have expired and you do not have the ENABLE_NUKE_VARIABLE configured, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
 
-> The first automatic build when Loop 3.6.x is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with Loop 3.6.x fails, try again.
-
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
 {align="center"}
 
@@ -302,7 +297,7 @@ This section is required when you need to search for a string to diagnose and er
 If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
-    * Once `Loop 3.6.0` or newer is available, this should no longer appear unless you have a mistake in one of those
+    * With `Loop 3.6.0` or newer, this should no longer appear unless you have a mistake in one of those
 * Check your *Apple* Developer account for agreements first, before trying to fix those `Secrets`
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
