@@ -205,12 +205,10 @@ There are, however, a few intermittent errors that can happen when *GitHub* and 
 
 If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
 
-!!! important "Certificate is missing"
-    If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
-
-    If you have more than one Distribution Certificate, you may need to delete the oldest one using these instructions: [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
-
-    * With `Loop 3.6.1` and newer, this should not happen. Make sure you [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to automatically renew certificates. It only happened with `Loop 3.6.0` when Apple made a change to their infrastructure.
+!!! important "Build Credentials are Invalid"
+    If you are a repeat builder and you get this build error message: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`. This means you need to delete a Distribution Certificate and try again. See [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
+    
+    * A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that are not properly matched to profiles to create building credentials in their Match-Secrets repository
 
 These are some of the most common errors to date.
 
@@ -269,7 +267,7 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 > With `Loop 3.6.0` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
 
-If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and can not create a new one because you enabled`.
+If your certificates have expired and you do not have the ENABLE_NUKE_VARIABLE configured, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
 
 > The first automatic build when Loop 3.6.0 is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with Loop 3.6.0 fails, try again.
 
@@ -607,7 +605,19 @@ Copy the words on the line below and paste them into the search function for you
 > A new one cannot be created because you enabled
 > ```
 
-If that phrase is found with lines similar to the following:
+If that exact phrase is found with lines similar to those in [Bundle ID is wrong](#bundle-id-is-wrong) below and this is your first build, you have the `Bundle ID` problem.
+
+However, this very similar phrase means you need to delete one or more Distribution Certificates and try again: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
+
+* Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
+
+> If you attempted to create certificates or build during May/June 2025 while the fastlane issues were not fixed, you may very well have one or two Distribution Certificates in your account that are not properly matched to credentials in your Match-Secrets repository. They must be deleted manually.
+
+> Do not be confused by this message: `There are no local code signing identities found.` That is always reported one time because you are building with a new computer in the cloud that does not yet have your code signing identities. Later on in the build process, the action will recover the code signing identities that you stored in your Match-Secrets.
+
+#### Bundle ID is wrong
+
+This is not typical and will only be seen for the very first build if you entered an incorrect TEAMID.
 
 ```
 [31mA new one cannot be created because you enabled `readonly`[0m
@@ -807,13 +817,9 @@ https://github.com/my-name/Match-Secrets
 
 ### Revoke Extra Distribution Certificate
 
-If you have the `ENABLE_NUKE_CERTS` variable added and set to `true`, you should not need this section for most apps. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" } for instructions.
-
-> A few apps still require manual steps for certificate renewal.
+Make sure you have the `ENABLE_NUKE_CERTS` variable added and set to `true`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" } for instructions.
 
 This step is done at the *Apple* Developer site; click on this [link](https://developer.apple.com/account/resources/certificates/list).
-
-If you only have *one* Certificate of the `Distribution` type, similar to the graphic shown below, skip ahead to [Delete Invalid Profiles](#delete-invalid-profiles). Ignore any other types of Certificate. Do not delete them.
 
 > ![view the current certificates at Apple](img/certificates-01.png)
 
