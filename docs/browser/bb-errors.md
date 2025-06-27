@@ -206,9 +206,11 @@ There are, however, a few intermittent errors that can happen when *GitHub* and 
 If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
 
 !!! important "Build Credentials are Invalid"
-    If you are a repeat builder and you get this build error message: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`. This means you need to delete a Distribution Certificate and try again. See [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
+    If you are a repeat builder and you get this build error message: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`. 
     
-    * A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that are not properly matched to profiles to create building credentials in their Match-Secrets repository
+    You need to delete a Distribution Certificate and try again. See [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
+    
+    > A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that are not properly matched to profiles to create building credentials in their Match-Secrets repository. The solution is to simply delete a Distribution Certificate and Build again.
 
 These are some of the most common errors to date.
 
@@ -265,11 +267,11 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 ### Missing Certificates
 
-> With `Loop 3.6.0` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
+> With `Loop 3.6.1` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
 
 If your certificates have expired and you do not have the ENABLE_NUKE_VARIABLE configured, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
 
-> The first automatic build when Loop 3.6.0 is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with Loop 3.6.0 fails, try again.
+> The first automatic build when Loop 3.6.x is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with Loop 3.6.x fails, try again.
 
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
 {align="center"}
@@ -611,10 +613,6 @@ However, this very similar phrase means you need to delete one or more Distribut
 
 * Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
 
-> If you attempted to create certificates or build during May/June 2025 while the fastlane issues were not fixed, you may very well have one or two Distribution Certificates in your account that are not properly matched to credentials in your Match-Secrets repository. They must be deleted manually.
-
-> Do not be confused by this message: `There are no local code signing identities found.` That is always reported one time because you are building with a new computer in the cloud that does not yet have your code signing identities. Later on in the build process, the action will recover the code signing identities that you stored in your Match-Secrets.
-
 #### Bundle ID is wrong
 
 This is not typical and will only be seen for the very first build if you entered an incorrect TEAMID.
@@ -829,19 +827,26 @@ If you have two Certificates that have the `Distribution` type, select the oldes
     * If you accidentally delete a Development Type certificate associated with an Xcode build for your app, it will stop working and you will be very sad
     * Click on the oldest Distribution Certificate, select Revoke and confirm.  If you have two with the same expiration date, revoke both.
 
-You will get an email informing you the certificate was revoked
+You will get an email informing you the certificate was revoked.
 
-!!! tip "Navigate with Menu"
-    On the left side, you see a menu that indicates Certificates, Identifiers, Keys and Profiles. You can navigate between these items by clicking on the links.
+At this point, you should be able to simple run the Build action and a new Distribution Certificate will be created along with the profiles and build credential needed.
 
-    * Certificates (this section)
-    * Identifiers (you used those when adding the App Group)
-    * Keys
-        * Access to the *Apple* Push Notification Keys used by people to enable remote control
-        * The `FastLane API Key` is at the App Store Connect site - not at this site
-    * Profiles (next section)
+### Navigate with Menu
+
+Once you open the *Apple* Developer site for Certificates: [link](https://developer.apple.com/account/resources/certificates/list), you can move around in the menu to get to Certificates, Identifiers, Keys and Profiles. 
+
+You can navigate between these items by clicking on the links.
+
+* Certificates (previous section)
+* Identifiers (you used those when adding the App Group)
+* Keys
+    * Access to the *Apple* Push Notification Keys used by people to enable remote control using Nightscout, LoopCaregiver or LoopFollow
+    * The `FastLane API Key` is at the App Store Connect site - not at this site
+* Profiles (next section)
 
 ### Delete Invalid Profiles
+
+These instructions are useful if you need to delete one or more profiles.
 
 This step is done at the *Apple* Developer site; click on this [link](https://developer.apple.com/account/resources/profiles/list).
 
