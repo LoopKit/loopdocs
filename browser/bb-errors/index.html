@@ -1596,6 +1596,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#navigate-with-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigate with Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#delete-invalid-profiles" class="md-nav__link">
     <span class="md-ellipsis">
       Delete Invalid Profiles
@@ -4433,6 +4442,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#navigate-with-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigate with Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#delete-invalid-profiles" class="md-nav__link">
     <span class="md-ellipsis">
       Delete Invalid Profiles
@@ -4605,10 +4623,6 @@
 <p align="center"><img alt="graphic with an example build error" src="../img/example-identifier-build-errors.png" width="800" /></p>
 <p>Ignore the warnings - this does not affect the build.</p>
 <h2 id="rebuild-errors-quick-reference">Rebuild Errors: Quick Reference<a class="headerlink" href="#rebuild-errors-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition check">
-<p class="admonition-title">Browser Build is Working Again</p>
-<p>New builders can build at this time but only if they manually create <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.</p>
-</div>
 <h3 id="check-upstream-and-keep-alive-error"><code>Check Upstream and Keep Alive</code> Error<a class="headerlink" href="#check-upstream-and-keep-alive-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title"><code>Check Upstream and Keep Alive</code> Error</p>
@@ -4645,12 +4659,12 @@
 <h2 id="most-common-mistakes">Most Common Mistakes<a class="headerlink" href="#most-common-mistakes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to <a href="#help-with-errors">ask for help</a>.</p>
 <div class="admonition important">
-<p class="admonition-title"><abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is missing</p>
-<p>If you get this build error message: <code>No code signing identity found and can not create a new one because you enabled</code>, you do not have certificates needed to run the build.</p>
-<p>If you have more than one Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>, you may need to delete the oldest one using these instructions: <a href="./#revoke-extra-distribution-certificate" target="_blank">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a>.</p>
-<ul>
-<li>With <code>Loop 3.6.1</code> and newer, this should not happen. Make sure you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to automatically renew certificates. It only happened with <code>Loop 3.6.0</code> when Apple made a change to their infrastructure.</li>
-</ul>
+<p class="admonition-title">Build Credentials are Invalid</p>
+<p>If you are a repeat builder and you get this build error message: <code>No code signing identity found and</code>. The phrase ends with <code>can not create a new one because you enabled readonly</code> but the <code>readonly</code> has backquotes around it. Sometimes, the phrase uses <code>cannot</code> and in other cases <code>can not</code>. </p>
+<p>You need to delete a Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> and try again. See <a href="./#revoke-extra-distribution-certificate" target="_blank">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a>.</p>
+<blockquote>
+<p>A number of people who tried to update certificates after <em>Apple</em> changed things in May and before <abbr title="Latest release with major updates">Loop 3</abbr>.6.1 was released, may have Distribution Certificates that are not properly matched to profiles to create building credentials in their <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr>. The solution is to simply delete a Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> and Build again.</p>
+</blockquote>
 </div>
 <p>These are some of the most common errors to date.</p>
 <ol>
@@ -4700,12 +4714,9 @@
 <p>This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is <a href="#error-could-not-create">Error: Could not Create</a>.</p>
 <h3 id="missing-certificates">Missing Certificates<a class="headerlink" href="#missing-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
-<p>With <code>Loop 3.6.0</code> or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
+<p>With <code>Loop 3.6.1</code> or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
 </blockquote>
-<p>If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: <code>No code signing identity found and can not create a new one because you enabled</code>.</p>
-<blockquote>
-<p>The first automatic build when <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with <abbr title="Latest release with major updates">Loop 3</abbr>.6.0 fails, try again.</p>
-</blockquote>
+<p>If your certificates have expired and you do not have the ENABLE_NUKE_VARIABLE configured, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: <code>No code signing identity found and</code>. The phrase ends with <code>can not create a new one because you enabled readonly</code> but the <code>readonly</code> has backquotes around it. Sometimes, the phrase uses <code>cannot</code> and in other cases <code>can not</code>.</p>
 <p align="center"><img alt="graphic showing missing distribution certificate" src="../img/missing-distribution-certificate.png" width="800" /></p>
 <h3 id="annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)<a class="headerlink" href="#annotation-without-clear-message-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below shows a failure of&nbsp;<em><span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 4. Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;. The nice messages have not been added to this yet - you will have to follow the <a href="#find-the-error">Find the Error</a> instructions, but now, you are automatically taken to the correct section so there is less of the log to deal with.</p>
@@ -4732,7 +4743,7 @@
 <p>If there are <em>Apple</em> Developer agreements you have not accepted, you may get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect even if they are not.</p>
 <ul>
 <li>The misleading message tells you that one or more of these: <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code> is not correct<ul>
-<li>Once <code>Loop 3.6.0</code> or newer is available, this should no longer appear unless you have a mistake in one of those</li>
+<li>With <code>Loop 3.6.0</code> or newer, this should no longer appear unless you have a mistake in one of those</li>
 </ul>
 </li>
 <li>Check your <em>Apple</em> Developer account for agreements first, before trying to fix those <code>Secrets</code></li>
@@ -4911,36 +4922,10 @@
 <blockquote>
 <p><code>Could not create another Distribution certificate, reached the maximum number of available Distribution certificates</code></p>
 </blockquote>
-<h4 id="new-with-loop-360">New with <code>Loop 3.6.0</code><a class="headerlink" href="#new-with-loop-360" title="Anchor link to this Header on this Page">&para;</a></h4>
-<blockquote>
-<p>If you just updated to 3.6.0, you might not have added the new variable, <code>ENABLE_NUKE_CERTS</code>. Go do that now and then try again. It will take care of renewing your certificates automatically. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
-</blockquote>
-<p>These steps are only needed to make room for a <code>Certificate</code> when running versions earlier than 3.6.0 if you choose not to add the <code>ENABLE_NUKE_CERTS</code> variable:</p>
-<ol>
-<li>Delete an old <code>Distribution Certificate</code><ul>
-<li><em>Apple</em> limits you to two <code>Distribution Certificates</code></li>
-<li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list">Apple Developer Certificates</a><ul>
-<li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a <code>Development</code> <code>Certificate</code></li>
-<li>If you accidentally delete a <code>Development</code> <code>Type</code> certificate associated with an <abbr title="program used to build an app">Xcode</abbr> build for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app - it will stop working and you will be very sad</li>
+<p>These steps are required to make room for a <code>Certificate</code> if you have two Certificates or if you tried to create a new certificate in the May/Jun 2025 time frame when the Browser Build actions were "broken", before <code>Loop 3.6.1</code> was released.</p>
+<ul>
+<li>Follow the directions to <a href="#revoke-extra-distribution-certificate">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></li>
 </ul>
-</li>
-<li>Click on the oldest <code>Distribution</code> <code>Certificate</code> and revoke it<ul>
-<li>You will get an email informing you the certificate was revoked</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>To create a new <code>Certificate</code>:<ul>
-<li>Return to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and your <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
-<li>Run the <code>Action</code>: <code>Create Certificates</code></li>
-</ul>
-</li>
-<li>You are now ready to run the <code>Action</code>: <code>Build Loop</code></li>
-</ol>
-<div class="admonition question">
-<p class="admonition-title">But what about <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds?</p>
-<p>Previous builds using this method that are already in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are not affected by deleting the <code>Distribution Certificate</code>.</p>
-</div>
 <h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section is for people who have not successfully built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app one time. If you are a repeat builder, please skip ahead to <a href="#action-build-loop-errors-when-updating">Action: <code>Build Loop</code> Errors when Updating</a>.</p>
 <div class="admonition warning">
@@ -5019,7 +5004,13 @@
 <div class="copy highlight"><pre><span></span><code>A new one cannot be created because you enabled
 </code></pre></div>
 </blockquote>
-<p>If that phrase is found with lines similar to the following:</p>
+<p>If that exact phrase is found with lines similar to those in <a href="#bundle-id-is-wrong">Bundle ID is wrong</a> below and this is your first build, you have the <code>Bundle ID</code> problem.</p>
+<p>However, this very similar phrase means you need to delete one or more Distribution Certificates and try again: <code>No code signing identity found and</code>. The phrase ends with <code>can not create a new one because you enabled readonly</code> but the <code>readonly</code> has backquotes around it. Sometimes, the phrase uses <code>cannot</code> and in other cases <code>can not</code>.</p>
+<ul>
+<li>Follow the directions to <a href="#revoke-extra-distribution-certificate">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></li>
+</ul>
+<h4 id="bundle-id-is-wrong">Bundle ID is wrong<a class="headerlink" href="#bundle-id-is-wrong" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This is not typical and will only be seen for the very first build if you entered an incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.</p>
 <div class="highlight"><pre><span></span><code>[31mA new one cannot be created because you enabled `readonly`[0m
 [31mProvisioning profiles in your repo for type `appstore`:[0m
 [31m- &#39;AppStore_com.NOT_YOUR_TEAMID.loopkit.Loop.statuswidget.mobileprovision&#39;[0m
@@ -5181,12 +5172,8 @@
 <li>The next action you run will automatically create a new <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> for you</li>
 </ol>
 <h3 id="revoke-extra-distribution-certificate">Revoke Extra Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#revoke-extra-distribution-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you have the <code>ENABLE_NUKE_CERTS</code> variable added and set to <code>true</code>, you should not need this section for most apps. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> for instructions.</p>
-<blockquote>
-<p>A few apps still require manual steps for certificate renewal.</p>
-</blockquote>
+<p>Make sure you have the <code>ENABLE_NUKE_CERTS</code> variable added and set to <code>true</code>. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> for instructions.</p>
 <p>This step is done at the <em>Apple</em> Developer site; click on this <a href="https://developer.apple.com/account/resources/certificates/list">link</a>.</p>
-<p>If you only have <em>one</em> <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> of the <code>Distribution</code> type, similar to the graphic shown below, skip ahead to <a href="#delete-invalid-profiles">Delete Invalid Profiles</a>. Ignore any other types of <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>. Do not delete them.</p>
 <blockquote>
 <p><img alt="view the current certificates at Apple" src="../img/certificates-01.png" /></p>
 </blockquote>
@@ -5198,22 +5185,27 @@
 </ul>
 </li>
 </ul>
-<p>You will get an email informing you the certificate was revoked</p>
-<div class="admonition tip">
-<p class="admonition-title">Navigate with Menu</p>
-<p>On the left side, you see a menu that indicates Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, Keys and Profiles. You can navigate between these items by clicking on the links.</p>
+<p>You will get an email informing you the certificate was revoked.</p>
+<p>At this point, you should be able to simply run the Build action and a new Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> will be created along with the profiles and build credentials needed.</p>
+<div class="admonition question">
+<p class="admonition-title">But what about <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds?</p>
+<p>Previous builds using this method that are already in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are not affected by deleting the <code>Distribution Certificate</code>.</p>
+</div>
+<h3 id="navigate-with-menu">Navigate with Menu<a class="headerlink" href="#navigate-with-menu" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Once you open the <em>Apple</em> Developer site for Certificates: <a href="https://developer.apple.com/account/resources/certificates/list">link</a>, you can move around in the menu to get to Certificates, <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>, Keys and Profiles. </p>
+<p>You can navigate between these items by clicking on the links.</p>
 <ul>
-<li>Certificates (this section)</li>
+<li>Certificates (previous section)</li>
 <li><abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> (you used those when adding the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>)</li>
 <li>Keys<ul>
-<li>Access to the <em>Apple</em> Push Notification Keys used by people to enable remote control</li>
+<li>Access to the <em>Apple</em> Push Notification Keys used by people to enable remote control using <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr> or <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></li>
 <li>The <code>FastLane API Key</code> is at the App Store Connect site - not at this site</li>
 </ul>
 </li>
 <li>Profiles (next section)</li>
 </ul>
-</div>
 <h3 id="delete-invalid-profiles">Delete Invalid Profiles<a class="headerlink" href="#delete-invalid-profiles" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>These instructions are useful if you need to delete one or more profiles.</p>
 <p>This step is done at the <em>Apple</em> Developer site; click on this <a href="https://developer.apple.com/account/resources/profiles/list">link</a>.</p>
 <p>Your profiles will be displayed. Under the <code>Expiration</code> column, you might see an expiration date, even if some of these are invalid because you just revoked a certificate, or you might see <code>Invalid</code>.</p>
 <ol>
