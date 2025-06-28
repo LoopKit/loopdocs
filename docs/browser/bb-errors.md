@@ -505,9 +505,6 @@ These steps are required to make room for a `Certificate` if you have two Certif
 
 * Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
 
-!!! question "But what about *TestFlight* builds?"
-    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
-
 ## Action: `Build Loop` Errors
 
 This section is for people who have not successfully built the *Loop* app one time. If you are a repeat builder, please skip ahead to [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating).
@@ -811,6 +808,9 @@ If you have two Certificates that have the `Distribution` type, select the oldes
 You will get an email informing you the certificate was revoked.
 
 At this point, you should be able to simple run the Build action and a new Distribution Certificate will be created along with the profiles and build credential needed.
+
+!!! question "But what about *TestFlight* builds?"
+    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
 
 ### Navigate with Menu
 
