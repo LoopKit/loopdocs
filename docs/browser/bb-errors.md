@@ -154,9 +154,6 @@ Ignore the warnings - this does not affect the build.
 
 ## Rebuild Errors: Quick Reference
 
-!!! check "Browser Build is Working Again"
-    New builders can build at this time but only if they manually create Identifiers and configure each Identifier with the required capabilities. It is recommended that new builders wait for the next fix to be released.
-
 ### `Check Upstream and Keep Alive` Error
 
 !!! important "`Check Upstream and Keep Alive` Error"
@@ -205,12 +202,12 @@ There are, however, a few intermittent errors that can happen when *GitHub* and 
 
 If you get an error when building with a browser, you can use this page to figure out what to do - but don't be afraid to [ask for help](#help-with-errors).
 
-!!! important "Certificate is missing"
-    If you get this build error message: `No code signing identity found and can not create a new one because you enabled`, you do not have certificates needed to run the build.
-
-    If you have more than one Distribution Certificate, you may need to delete the oldest one using these instructions: [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
-
-    * With `Loop 3.6.1` and newer, this should not happen. Make sure you [Add Variable](prepare-fork.md#add-variable){: target="_blank" } to automatically renew certificates. It only happened with `Loop 3.6.0` when Apple made a change to their infrastructure.
+!!! important "Build Credentials are Invalid"
+    If you are a repeat builder and you get this build error message: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`. 
+    
+    You need to delete a Distribution Certificate and try again. See [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
+    
+    > A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that are not properly matched to profiles to create building credentials in their Match-Secrets repository. The solution is to simply delete a Distribution Certificate and Build again.
 
 These are some of the most common errors to date.
 
@@ -267,11 +264,9 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 ### Missing Certificates
 
-> With `Loop 3.6.0` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
+> With `Loop 3.6.1` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
 
-If your certificates have expired, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and can not create a new one because you enabled`.
-
-> The first automatic build when Loop 3.6.0 is released will update the files required for automatic certificate creation. The next automatic build will use the new files. So if the first attempt with Loop 3.6.0 fails, try again.
+If your certificates have expired and you do not have the ENABLE_NUKE_VARIABLE configured, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
 
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
 {align="center"}
@@ -302,7 +297,7 @@ This section is required when you need to search for a string to diagnose and er
 If there are *Apple* Developer agreements you have not accepted, you may get errors when you try to Build that indicate your *Apple* <code>Secrets</code> are incorrect even if they are not.
 
 * The misleading message tells you that one or more of these: <code>FASTLANE_ISSUER_ID</code>, <code>FASTLANE_KEY_ID</code> or <code>FASTLANE_KEY</code> is not correct
-    * Once `Loop 3.6.0` or newer is available, this should no longer appear unless you have a mistake in one of those
+    * With `Loop 3.6.0` or newer, this should no longer appear unless you have a mistake in one of those
 * Check your *Apple* Developer account for agreements first, before trying to fix those `Secrets`
 * If you previously built successfully - it is almost certainly the agreement
 * It can take 15 minutes to an hour after the agreement is signed before it can be used
@@ -506,26 +501,9 @@ The full error message is:
 
 > `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
 
-#### New with `Loop 3.6.0`
+These steps are required to make room for a `Certificate` if you have two Certificates or if you tried to create a new certificate in the May/Jun 2025 time frame when the Browser Build actions were "broken", before `Loop 3.6.1` was released.
 
-> If you just updated to 3.6.0, you might not have added the new variable, `ENABLE_NUKE_CERTS`. Go do that now and then try again. It will take care of renewing your certificates automatically. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
-
-These steps are only needed to make room for a `Certificate` when running versions earlier than 3.6.0 if you choose not to add the `ENABLE_NUKE_CERTS` variable:
-
-1. Delete an old `Distribution Certificate`
-    * *Apple* limits you to two `Distribution Certificates`
-    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
-        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
-        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
-    * Click on the oldest `Distribution` `Certificate` and revoke it
-        * You will get an email informing you the certificate was revoked
-1. To create a new `Certificate`:
-    * Return to *GitHub* and your fork
-    * Run the `Action`: `Create Certificates`
-1. You are now ready to run the `Action`: `Build Loop`
-
-!!! question "But what about *TestFlight* builds?"
-    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
+* Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
 
 ## Action: `Build Loop` Errors
 
@@ -607,7 +585,15 @@ Copy the words on the line below and paste them into the search function for you
 > A new one cannot be created because you enabled
 > ```
 
-If that phrase is found with lines similar to the following:
+If that exact phrase is found with lines similar to those in [Bundle ID is wrong](#bundle-id-is-wrong) below and this is your first build, you have the `Bundle ID` problem.
+
+However, this very similar phrase means you need to delete one or more Distribution Certificates and try again: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
+
+* Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
+
+#### Bundle ID is wrong
+
+This is not typical and will only be seen for the very first build if you entered an incorrect TEAMID.
 
 ```
 [31mA new one cannot be created because you enabled `readonly`[0m
@@ -807,13 +793,9 @@ https://github.com/my-name/Match-Secrets
 
 ### Revoke Extra Distribution Certificate
 
-If you have the `ENABLE_NUKE_CERTS` variable added and set to `true`, you should not need this section for most apps. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" } for instructions.
-
-> A few apps still require manual steps for certificate renewal.
+Make sure you have the `ENABLE_NUKE_CERTS` variable added and set to `true`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" } for instructions.
 
 This step is done at the *Apple* Developer site; click on this [link](https://developer.apple.com/account/resources/certificates/list).
-
-If you only have *one* Certificate of the `Distribution` type, similar to the graphic shown below, skip ahead to [Delete Invalid Profiles](#delete-invalid-profiles). Ignore any other types of Certificate. Do not delete them.
 
 > ![view the current certificates at Apple](img/certificates-01.png)
 
@@ -823,19 +805,29 @@ If you have two Certificates that have the `Distribution` type, select the oldes
     * If you accidentally delete a Development Type certificate associated with an Xcode build for your app, it will stop working and you will be very sad
     * Click on the oldest Distribution Certificate, select Revoke and confirm.  If you have two with the same expiration date, revoke both.
 
-You will get an email informing you the certificate was revoked
+You will get an email informing you the certificate was revoked.
 
-!!! tip "Navigate with Menu"
-    On the left side, you see a menu that indicates Certificates, Identifiers, Keys and Profiles. You can navigate between these items by clicking on the links.
+At this point, you should be able to simply run the Build action and a new Distribution Certificate will be created along with the profiles and build credentials needed.
 
-    * Certificates (this section)
-    * Identifiers (you used those when adding the App Group)
-    * Keys
-        * Access to the *Apple* Push Notification Keys used by people to enable remote control
-        * The `FastLane API Key` is at the App Store Connect site - not at this site
-    * Profiles (next section)
+!!! question "But what about *TestFlight* builds?"
+    Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
+
+### Navigate with Menu
+
+Once you open the *Apple* Developer site for Certificates: [link](https://developer.apple.com/account/resources/certificates/list), you can move around in the menu to get to Certificates, Identifiers, Keys and Profiles. 
+
+You can navigate between these items by clicking on the links.
+
+* Certificates (previous section)
+* Identifiers (you used those when adding the App Group)
+* Keys
+    * Access to the *Apple* Push Notification Keys used by people to enable remote control using Nightscout, LoopCaregiver or LoopFollow
+    * The `FastLane API Key` is at the App Store Connect site - not at this site
+* Profiles (next section)
 
 ### Delete Invalid Profiles
+
+These instructions are useful if you need to delete one or more profiles.
 
 This step is done at the *Apple* Developer site; click on this [link](https://developer.apple.com/account/resources/profiles/list).
 
