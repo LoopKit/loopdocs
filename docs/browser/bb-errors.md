@@ -501,23 +501,9 @@ The full error message is:
 
 > `Could not create another Distribution certificate, reached the maximum number of available Distribution certificates`
 
-#### New with `Loop 3.6.0`
+These steps are required to make room for a `Certificate` if you have two Certificates or if you tried to create a new certificate in the May/Jun 2025 time frame when the Browser Build actions were "broken", before `Loop 3.6.1` was released.
 
-> If you just updated to 3.6.0, you might not have added the new variable, `ENABLE_NUKE_CERTS`. Go do that now and then try again. It will take care of renewing your certificates automatically. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
-
-These steps are only needed to make room for a `Certificate` when running versions earlier than 3.6.0 if you choose not to add the `ENABLE_NUKE_CERTS` variable:
-
-1. Delete an old `Distribution Certificate`
-    * *Apple* limits you to two `Distribution Certificates`
-    * Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)
-        * Carefully examine the `Type` column - do **not** delete a `Development` `Certificate`
-        * If you accidentally delete a `Development` `Type` certificate associated with an Xcode build for your Loop app - it will stop working and you will be very sad
-    * Click on the oldest `Distribution` `Certificate` and revoke it
-        * You will get an email informing you the certificate was revoked
-1. To create a new `Certificate`:
-    * Return to *GitHub* and your fork
-    * Run the `Action`: `Create Certificates`
-1. You are now ready to run the `Action`: `Build Loop`
+* Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
 
 !!! question "But what about *TestFlight* builds?"
     Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
