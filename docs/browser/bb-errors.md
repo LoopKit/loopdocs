@@ -807,7 +807,7 @@ If you have two Certificates that have the `Distribution` type, select the oldes
 
 You will get an email informing you the certificate was revoked.
 
-At this point, you should be able to simple run the Build action and a new Distribution Certificate will be created along with the profiles and build credential needed.
+At this point, you should be able to simply run the Build action and a new Distribution Certificate will be created along with the profiles and build credentials needed.
 
 !!! question "But what about *TestFlight* builds?"
     Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
