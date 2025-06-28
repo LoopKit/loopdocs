@@ -205,9 +205,9 @@ If you get an error when building with a browser, you can use this page to figur
 !!! important "Build Credentials are Invalid"
     If you are a repeat builder and you get this build error message: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`. 
     
-    You need to delete a Distribution Certificate and try again. See [Revoke Extra Distribution Certificate](bb-errors.md#revoke-extra-distribution-certificate){: target="_blank" }.
+    You need to delete a Distribution Certificate and try again. See [Revoke Distribution Certificate](bb-errors.md#revoke-distribution-certificate){: target="_blank" }.
     
-    > A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that are not properly matched to profiles to create building credentials in their Match-Secrets repository. The solution is to simply delete a Distribution Certificate and Build again.
+    > A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that need to be deleted. If your credentials were valid during that time period, you won't see this error.
 
 These are some of the most common errors to date.
 
@@ -266,7 +266,9 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 > With `Loop 3.6.1` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
 
-If your certificates have expired and you do not have the ENABLE_NUKE_VARIABLE configured, you will see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
+If your certificates expired and you do not have the `ENABLE_NUKE_VARIABLE` configured, you might see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
+
+Please follow the directions in [Revoke Distribution Certificate](#revoke-distribution-certificate) and build again.
 
 ![graphic showing missing distribution certificate](img/missing-distribution-certificate.png){width="800"}
 {align="center"}
@@ -503,7 +505,7 @@ The full error message is:
 
 These steps are required to make room for a `Certificate` if you have two Certificates or if you tried to create a new certificate in the May/Jun 2025 time frame when the Browser Build actions were "broken", before `Loop 3.6.1` was released.
 
-* Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
+* Follow the directions to [Revoke Distribution Certificate](#revoke-distribution-certificate)
 
 ## Action: `Build Loop` Errors
 
@@ -589,7 +591,7 @@ If that exact phrase is found with lines similar to those in [Bundle ID is wrong
 
 However, this very similar phrase means you need to delete one or more Distribution Certificates and try again: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
 
-* Follow the directions to [Revoke Extra Distribution Certificate](#revoke-extra-distribution-certificate)
+* Follow the directions to [Revoke Distribution Certificate](#revoke-distribution-certificate)
 
 #### Bundle ID is wrong
 
@@ -758,7 +760,7 @@ This was never an actual error - but a procedure that worked briefly. There is n
 !!! important "Browser Build Temporary Issue is Fixed with `Loop 3.6.2`"
     *Apple* made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate Identifiers. With the release of `Loop 3.6.2`, these issues are resolved.
     
-    It took several weeks for the change at *Apple* to propagate through all the `API Keys`. Thus an adhoc fix worked initially but then stopped working. An update to fastlane (the code the communicates between *Apple* and *GitHub*) is now in the released Loop code (3.6.1 and newer).
+    It took several weeks for the change at *Apple* to propagate through all the `API Keys`. Thus an adhoc fix worked initially but then stopped working. An update to fastlane (the code that communicates between *Apple* and *GitHub*) is now in the released Loop code (3.6.1 and newer).
 
 We have removed the section on getting a new Fastlane API Key - that is not the solution to what turned out to be a change made by *Apple*.
 
@@ -768,30 +770,7 @@ The rest of this section has some steps that may be needed in the future. Do not
 
 These help steps might be needed so the documentation is here.
 
-### Delete `Match-Secrets`
-
-Make sure you really need to do this - please [ask a mentor for help](#where-to-get-help-with-browser-build).
-
-Make sure you only delete `Match-Secrets`. Do NOT delete the repository of the app you are trying to build.
-
-Open the *GitHub* website for your organization or personal account.
-
-``` {.text .copy  title="If you use an organization" }
-https://github.com/my-name-org/Match-Secrets
-```
-
-``` { .text .copy  title="If you do not use an organization" }
-https://github.com/my-name/Match-Secrets
-```
-
-1. Delete your `Match-Secrets` `Repository`
-    * Click on Settings
-    * Scroll to the bottom (into the Danger Zone)
-    * Choose `Delete this repository`
-    * Read and follow directions to delete
-2. The next action you run will automatically create a new Match-Secrets repository for you
-
-### Revoke Extra Distribution Certificate
+### Revoke Distribution Certificate
 
 Make sure you have the `ENABLE_NUKE_CERTS` variable added and set to `true`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" } for instructions.
 
@@ -799,18 +778,37 @@ This step is done at the *Apple* Developer site; click on this [link](https://de
 
 > ![view the current certificates at Apple](img/certificates-01.png)
 
-If you have two Certificates that have the `Distribution` type, select the oldest one and delete it.
+If you have two Certificates that have the `Distribution` type, most people should delete both.
 
 * Carefully examine the Type column - do not delete a Development Certificate
-    * If you accidentally delete a Development Type certificate associated with an Xcode build for your app, it will stop working and you will be very sad
-    * Click on the oldest Distribution Certificate, select Revoke and confirm.  If you have two with the same expiration date, revoke both.
+    * Click on a Distribution Certificate, select Revoke and confirm
+    * If you have two, revoke both (unless you are a developer who needs two)
+    * Other certificates (ignore these):
+        * Development Type certificates are associated with an Xcode build for your app; an app on a phone built with Xcode will stop working if you delete that
+        * Managed Distribution certificates are generated when you use another method to distribute an app, such as Diawi or uploading an Xcode build from a Mac to TestFlight
+
 
 You will get an email informing you the certificate was revoked.
 
-At this point, you should be able to simply run the Build action and a new Distribution Certificate will be created along with the profiles and build credentials needed.
+Run the Build action and a new Distribution Certificate will be created along with the profiles and build credentials needed.
+
+* This is true for Loop, LoopCaregiver, LoopFollow and Trio if you have the ENABLE_NUKE_CERTS variable set to true
 
 !!! question "But what about *TestFlight* builds?"
     Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
+
+Do not continue to later sections on this page unless directed or for the following special case:
+
+!!! important "Building xDrip4iOS?"
+    For xDrip4iOS, the nuke certs capabality is not available (as of 2025-June).
+    
+    For that case, or if you choose not to add the `ENABLE_NUKE_CERTS` variable, please take these additional steps:
+
+    1. Revoke Distribution Certificate (this section)
+    2. [Delete Invalid Profiles](#delete-invalid-profiles)
+    3. [Delete Match-Secrets](#delete-match-secrets)
+    4. Run the action Create Certificates
+    5. Run the action Build
 
 ### Navigate with Menu
 
@@ -827,7 +825,7 @@ You can navigate between these items by clicking on the links.
 
 ### Delete Invalid Profiles
 
-These instructions are useful if you need to delete one or more profiles.
+You should not need to delete invalid profiles for Loop, LoopCaregiver, LoopFollow and Trio when you have the `ENABLE_NUKE_CERTS` variable set to true. If a mentor suggests you do this, follow these instructions.
 
 This step is done at the *Apple* Developer site; click on this [link](https://developer.apple.com/account/resources/profiles/list).
 
@@ -846,6 +844,38 @@ Your profiles will be displayed. Under the `Expiration` column, you might see an
 4. Review the profiles - note that in this view, the full name of each profile is visible - and then click on the `Delete` button
 
     > ![delete selected profiles](img/profiles-03.png){width="500"}
+
+### Delete `Match-Secrets`
+
+Make sure you really need to do this - please [ask a mentor for help](#where-to-get-help-with-browser-build).
+
+Make sure you only delete `Match-Secrets`. Do NOT delete the repository of the app you are trying to build.
+
+When building Loop, LoopCaregiver, LoopFollow or Trio:
+
+* If you just revoked a [Distrbution Certificate](#revoke-extra-distribution-certificate) - please do not delete your `Match-Secrets`
+* Make sure you have `ENABLE_NUKE_CERTS` set to true
+* The next time you try to build, the information in Match-Secrets is used to remove invalid profiles
+    * A new Distribution Certificate and new profiles will be generated and your Match-Secrets will be updated
+
+When building apps that do not use `ENABLE_NUKE_CERTS`, like xDrip4iOS, you may need to manually delete your profiles and your Match-Secrets repository before trying to run Create Certs followed by Build.
+
+Open the *GitHub* website for your organization or personal account.
+
+``` {.text .copy  title="If you use an organization" }
+https://github.com/my-name-org/Match-Secrets
+```
+
+``` { .text .copy  title="If you do not use an organization" }
+https://github.com/my-name/Match-Secrets
+```
+
+1. Delete your `Match-Secrets` `Repository`
+    * Click on Settings
+    * Scroll to the bottom (into the Danger Zone)
+    * Choose `Delete this repository`
+    * Read and follow directions to delete
+2. The next action you run will automatically create a new Match-Secrets repository for you
 
 ### Delete Identifiers
 
