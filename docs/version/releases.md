@@ -4,9 +4,11 @@ The new features added with each Loop release are provided for reference.
 
 For information about version 2 releases and compatibility between version 2 and 3, refer to [Older Releases](releases-version2.md){: target="_blank" }.
 
+- - -
+
 ## Current Release
 
-The current released version for the *Loop* app is 3.6.2. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.6.3. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -21,7 +23,19 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
 
+- - -
+
 ## Loop 3 Version History
+
+### Loop v3.6.3
+
+[*Loop* v3.6.3](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.3) was released on 10 July 2025.
+
+This release fixes [Loop Issue 2322: Negative interrupted bolus](https://github.com/LoopKit/Loop/issues/2322).
+
+* The bug was that the amount reported after an interrupted bolus could be incorrect
+    * This bug was reported when a user **heard a pod fault** and tried to **manually interrupt the bolus**
+    * This release ensures the amount not delivered is only subtracted once for all cases
 
 ### Loop v3.6.2
 
@@ -315,6 +329,8 @@ Loop v3.0.0 was released on January 14, 2023.
     * All new Git `repositories` on *GitHub* will be named `main` instead of `master` starting October 1, 2020
     * GitHub provides tools to assist in modifying existing `repositories` to use main
 
+- - -
+
 ## `Loop` Version Numbering
 
 With the release of `Loop 3`, there is a new pattern for identifying the releases as distinct from the development work.
@@ -339,6 +355,8 @@ For example:
     * `Loop 3.5.0` was the development version before `Loop 3.6.0` was released
 * `Loop 3.6.0` is the current released version
     * `Loop 3.7.0` is the current development version
+
+- - -
 
 ## Remove Apps with Shared App Group
 
