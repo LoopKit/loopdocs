@@ -2657,6 +2657,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v363" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop v3.6.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v362" class="md-nav__link">
     <span class="md-ellipsis">
       Loop v3.6.2
@@ -3689,6 +3698,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v363" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop v3.6.3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v362" class="md-nav__link">
     <span class="md-ellipsis">
       Loop v3.6.2
@@ -3849,15 +3867,27 @@
 <h2 id="loop-releases"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Releases<a class="headerlink" href="#loop-releases" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The new features added with each <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> release are provided for reference.</p>
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
+<hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is 3.6.2. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is 3.6.3. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left. (This graphic shows an older release.)</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.jpg" width="400" /></p>
 <h3 id="is-the-released-version-newer">Is the Released Version Newer?<a class="headerlink" href="#is-the-released-version-newer" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Release information is found on the <a href="https://github.com/LoopKit/LoopWorkspace/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/LoopWorkspace</span></em>&nbsp;release page</a>.</p>
 <p>Releases from <code>Loop 3.4.4</code> and older are reported at <a href="https://github.com/LoopKit/Loop/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;release page</a>.</p>
+<hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-v363"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.6.3<a class="headerlink" href="#loop-v363" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.3"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.6.3</a> was released on 10 July 2025.</p>
+<p>This release fixes <a href="https://github.com/LoopKit/Loop/issues/2322"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 2322: Negative interrupted bolus</a>.</p>
+<ul>
+<li>The bug was that the amount reported after an interrupted bolus could be incorrect<ul>
+<li>This bug was reported when a user <strong>heard a pod fault</strong> and tried to <strong>manually interrupt the bolus</strong></li>
+<li>This release ensures the amount not delivered is only subtracted once for all cases</li>
+</ul>
+</li>
+</ul>
 <h3 id="loop-v362"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.6.2<a class="headerlink" href="#loop-v362" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.2"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.6.2</a> was released on 25 June 2025.</p>
 <p>There are no changes to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app - this is a Browser Build fix only.</p>
@@ -4192,6 +4222,7 @@
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> provides tools to assist in modifying existing <code>repositories</code> to use main</li>
 </ul>
 </div>
+<hr />
 <h2 id="loop-version-numbering"><code>Loop</code> Version Numbering<a class="headerlink" href="#loop-version-numbering" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>With the release of <code>Loop 3</code>, there is a new pattern for identifying the releases as distinct from the development work.</p>
 <p>Each release uses 3 numbers: Major.Minor.Patch</p>
@@ -4222,6 +4253,7 @@
 </ul>
 </li>
 </ul>
+<hr />
 <h2 id="remove-apps-with-shared-app-group">Remove Apps with Shared <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr><a class="headerlink" href="#remove-apps-with-shared-app-group" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>There are a number of Open Source apps which use the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> to share data.</p>
 <p>One consequence of this is that if you delete one of those apps, there may be saved information on the phone that is <strong>not</strong> discarded. Normally this is not a problem, but sometimes you really want to wipe out all the stored information.</p>
