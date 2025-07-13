@@ -4222,6 +4222,49 @@
 <li><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> provides tools to assist in modifying existing <code>repositories</code> to use main</li>
 </ul>
 </div>
+<h4 id="build-updates">Build Updates<a class="headerlink" href="#build-updates" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>There is a <a href="https://loopkit.github.io/loopdocs/browser/bb-overview/">new way to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a> that does not require a Mac!</li>
+</ul>
+<h4 id="details-on-this-update">Details on this Update<a class="headerlink" href="#details-on-this-update" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This is one of the bigger updates to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. Since the last release <a href="../releases-version2/#loop-v229" target="_blank"><code>Loop v2.2.9</code></a>, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With <a href="https://github.com/LoopKit/Loop/graphs/contributors">more contributors</a> than ever! This is just a high level summary; There are more details in the <a href="https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/" target="_blank">LoopDocs page for <abbr title="Latest release with major updates">Loop 3</abbr>.0</a>.</p>
+<h4 id="new-hardware-support">New Hardware Support 🔥<a class="headerlink" href="#new-hardware-support" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Dash Support! Thanks to all who worked on this. It was a big team effort.</li>
+<li>Dexcom G7!  We are definitely not waiting here. :)</li>
+</ul>
+<h4 id="safety">Safety 🥽<a class="headerlink" href="#safety" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li><abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> added for many therapy settings, preventing unrealistic values, and warning about high or low values.</li>
+<li>Changing the time on your phone triggers warnings to let users (and clever children) know that doing so can have dangerous consequences for insulin delivery.</li>
+<li>Timezone changes, while not being urgent, should be performed when convenient, as before. But the UI now signals that this should be done, helping remind you </li>
+<li>Warnings when bluetooth is disabled.</li>
+<li>
+<p><abbr title="Latest release with major updates">Loop 3</abbr>.0 will not read carbs from other apps, unless the code is edited to allow this, preventing inadvertent dosing when entering carbs into other apps.</p>
+<ul>
+<li>The instructions for modifying this, as well as some other <abbr title="Latest release with major updates">Loop 3</abbr> default settings, are found in <a href="../build-time-flag/#modify-the-build-time-flags" target="_blank">Modify the <code>Build Time Flags</code></a>.</li>
+</ul>
+</li>
+<li>
+<p>Warnings when alert permissions are disabled.</p>
+</li>
+<li>Carb absorption default times changed from 2 hours, 3 hours, and 4 hours to 30 minutes, 3 hours, and 5 hours. The 30 minute entry is now for fast acting carbs only, and will help prevent double lows after treating a low. Most foods should be entered with the default 3 hour duration.  The 5 hour entry will do better for meals where you do not want all of the insulin delivered up front.</li>
+<li>The recommendations posted to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> are now more timely, and bolus amounts are adjusted to account for the automatic dosing that has just been enacted. New forecast &amp; bolus recommendations are uploaded to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> when carbs entered/edited, when therapy settings change, doses edited, etc, keeping the recommendation shown in <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> safer to rely on.</li>
+<li>If an invalid future glucose reading is detected (such as from a manual phone time change), <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will not automatically dose, and will show a warning on the bolus screen.</li>
+<li>Reminder shown if you have an active override that adjusts sensitivity while entering carbs.</li>
+</ul>
+<h4 id="new-features">New Features 🎉<a class="headerlink" href="#new-features" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>A more friendly onboarding experience that guides users through initial configuration choices. You can now import settings that were uploaded to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> to speed up your initial configuration.</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Home Screen Widget (Thanks <a href="https://github.com/SwiftlyNoah">Noah Brauner</a>!)</li>
+<li>Non-Pump Insulin (Thanks <a href="https://github.com/novalegra">Anna Quinlan</a>!) This is a bigger change than might be obvious. Each dose in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is now tracked with an insulin type, so there can be doses of Afrezza alongside insulin doses of fast acting types from a pump, and each dose is using the appropriate insulin curve. Related to this, there is no longer support for Walsh insulin model, and no separate adult/child models for the fast acting insulin types.</li>
+<li>Manual temp basal for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> (both DASH and Eros)</li>
+<li>When glucose is stale (like during a sensor warmup), you can enter glucose meter readings directly in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, without needing to go to Apple Health.</li>
+<li>Remote Carbs / Remote Bolus is possible, but still in an experimental/testing phase. Please <a href="https://loopkit.github.io/loopdocs/nightscout/remote-overrides/">read the documentation</a> for more information.</li>
+<li>Schedule editors (Basal, Insulin Sensitivity, Carb Ratios) have been redesigned to be more helpful for new users, and more user friendly for everyone.</li>
+<li>There is a new option to share usage data (not health data) with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> developers to help us keep track of how many people are using <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, and how they are using it, that will hopefully provide insight that is useful for updating <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and designing new features. It's completely optional, and you'll be asked about it during onboarding when you first run <abbr title="Latest release with major updates">Loop 3</abbr>.0.</li>
+<li>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> in <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> now shows automatic bolus dosing enactments.</li>
+</ul>
 <hr />
 <h2 id="loop-version-numbering"><code>Loop</code> Version Numbering<a class="headerlink" href="#loop-version-numbering" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>With the release of <code>Loop 3</code>, there is a new pattern for identifying the releases as distinct from the development work.</p>
