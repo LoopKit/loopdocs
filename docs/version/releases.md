@@ -329,6 +329,46 @@ Loop v3.0.0 was released on January 14, 2023.
     * All new Git `repositories` on *GitHub* will be named `main` instead of `master` starting October 1, 2020
     * GitHub provides tools to assist in modifying existing `repositories` to use main
 
+#### Build Updates
+
+* There is a [new way to build Loop](https://loopkit.github.io/loopdocs/browser/bb-overview/) that does not require a Mac!
+
+#### Details on this Update
+
+This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3.0](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/){: target="_blank" }.
+
+#### New Hardware Support 🔥
+
+* Omnipod Dash Support! Thanks to all who worked on this. It was a big team effort.
+* Dexcom G7!  We are definitely not waiting here. :)
+
+#### Safety 🥽
+
+* Guardrails added for many therapy settings, preventing unrealistic values, and warning about high or low values.
+* Changing the time on your phone triggers warnings to let users (and clever children) know that doing so can have dangerous consequences for insulin delivery.
+* Timezone changes, while not being urgent, should be performed when convenient, as before. But the UI now signals that this should be done, helping remind you 
+* Warnings when bluetooth is disabled.
+* Loop 3.0 will not read carbs from other apps, unless the code is edited to allow this, preventing inadvertent dosing when entering carbs into other apps.
+    * The instructions for modifying this, as well as some other Loop 3 default settings, are found in [Modify the `Build Time Flags`](build-time-flag.md#modify-the-build-time-flags){: target="_blank" }.
+    
+* Warnings when alert permissions are disabled.
+* Carb absorption default times changed from 2 hours, 3 hours, and 4 hours to 30 minutes, 3 hours, and 5 hours. The 30 minute entry is now for fast acting carbs only, and will help prevent double lows after treating a low. Most foods should be entered with the default 3 hour duration.  The 5 hour entry will do better for meals where you do not want all of the insulin delivered up front.
+* The recommendations posted to Nightscout are now more timely, and bolus amounts are adjusted to account for the automatic dosing that has just been enacted. New forecast & bolus recommendations are uploaded to Nightscout when carbs entered/edited, when therapy settings change, doses edited, etc, keeping the recommendation shown in Nightscout safer to rely on.
+* If an invalid future glucose reading is detected (such as from a manual phone time change), Loop will not automatically dose, and will show a warning on the bolus screen.
+* Reminder shown if you have an active override that adjusts sensitivity while entering carbs.
+
+#### New Features 🎉
+
+* A more friendly onboarding experience that guides users through initial configuration choices. You can now import settings that were uploaded to Nightscout to speed up your initial configuration.
+* Loop Home Screen Widget (Thanks [Noah Brauner](https://github.com/SwiftlyNoah)!)
+* Non-Pump Insulin (Thanks [Anna Quinlan](https://github.com/novalegra)!) This is a bigger change than might be obvious. Each dose in Loop is now tracked with an insulin type, so there can be doses of Afrezza alongside insulin doses of fast acting types from a pump, and each dose is using the appropriate insulin curve. Related to this, there is no longer support for Walsh insulin model, and no separate adult/child models for the fast acting insulin types.
+* Manual temp basal for Omnipod (both DASH and Eros)
+* When glucose is stale (like during a sensor warmup), you can enter glucose meter readings directly in Loop, without needing to go to Apple Health.
+* Remote Carbs / Remote Bolus is possible, but still in an experimental/testing phase. Please [read the documentation](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/) for more information.
+* Schedule editors (Basal, Insulin Sensitivity, Carb Ratios) have been redesigned to be more helpful for new users, and more user friendly for everyone.
+* There is a new option to share usage data (not health data) with Loop developers to help us keep track of how many people are using DIY Loop, and how they are using it, that will hopefully provide insight that is useful for updating Loop and designing new features. It's completely optional, and you'll be asked about it during onboarding when you first run Loop 3.0.
+* The Loop pill in Nightscout now shows automatic bolus dosing enactments.
+
 - - -
 
 ## `Loop` Version Numbering

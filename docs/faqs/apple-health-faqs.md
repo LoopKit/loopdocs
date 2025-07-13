@@ -51,9 +51,12 @@ All other CGM readings are reported with the *Loop* icon and there is no transit
 
 ### Carbohydrates and *Apple* HealthKit
 
-In `Loop* 2.2.x`, if you set *Apple* Health app permissions to allow it, *Loop* will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that *Loop* reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow *Loop* to write to carbohydrate storage but not read.
+In `Loop 2.2.x`, if you set *Apple* Health app permissions to allow it, *Loop* will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that *Loop* reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow *Loop* to write to carbohydrate storage but not read.
 
-In `Loop 3`, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up special parameters when you build the app. The insructions for the code customization are not in LoopDocs yet. If it is important to you to use a third-party app to record carbohydrates and have *Loop* read the information and automatically dose with insulin, [ask for help in zulipchat](../intro/loopdocs-how-to.md#how-to-find-help).
+In `Loop 3`, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up a `Build Time Flag`  when you build the app.
+
+* The `Build Time Flag`, `OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED`, is used to enable ability for the *Loop* app to read from the *Health* app
+* The instructions for this code customization are found in [Modify the `Build Time Flags`](../version/build-time-flag.md#modify-the-build-time-flags){: target="_blank" }.
 
 ### Insulin and *Apple* HealthKit
 
