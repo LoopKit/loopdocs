@@ -158,7 +158,7 @@ Each Open-Source App has a schedule for when the automatic build happens.
 
         This build schedule determines when the automatic check for certificate status happens. The times are shifted to make sure only one Open-Source app performs a `nuke` action. Any other app building later that same day will just create new signing credentials; it will not need to `nuke`. This only happens once a year, but we wanted to be sure there are no conflicts. 
         
-        Starting in 2025 July, some people were getting messages that "no runners" were available to perform their build. (Remember, this is a **free** service we are using.) 
+        Starting in 2025 May, some people were getting messages that "no runners" were available to perform their build. (Remember, this is a **free** service we are using.) 
         Initially, all builds started at the "top of the hour" (HH:00), but it turns out that is when *GitHub* has the most activity. 
         In an attempt to minimize build failures due to resource limitations, the minute of the hour for all the apps is gradually being shifted.
 
