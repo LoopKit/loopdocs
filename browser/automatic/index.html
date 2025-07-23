@@ -3924,8 +3924,10 @@
 </li>
 </ul>
 <h3 id="open-source-app-schedule">Open-Source App Schedule<a class="headerlink" href="#open-source-app-schedule" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Each Open-Source App has a schedule for when the automatic build happens. This determines when the automatic check for certificate status happens.</p>
-<p>The times are shifted to make sure only one Open-Source app performs a <code>nuke</code> action. Any other app building later that same day will just create new signing credentials; it will not need to <code>nuke</code> all credentials. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.</p>
+<p>Each Open-Source App has a schedule for when the automatic build happens.</p>
+<blockquote>
+<p>The table below indicates <strong>planned</strong> minutes. They <strong>may happen at the start of the hour now</strong>, but are planned to be shifted to the indicated minute over time.</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -3939,26 +3941,26 @@
 <tr>
 <td style="text-align: left;"><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></td>
 <td style="text-align: center;">&#x2705;</td>
-<td style="text-align: center;">09:00</td>
-<td style="text-align: center;">07:00</td>
+<td style="text-align: center;">09:33</td>
+<td style="text-align: center;">07:33</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
 <td style="text-align: center;">&#x2705;</td>
-<td style="text-align: center;">13:00</td>
-<td style="text-align: center;">11:00</td>
+<td style="text-align: center;">13:33</td>
+<td style="text-align: center;">11:33</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
 <td style="text-align: center;">&#x2705;</td>
-<td style="text-align: center;">12:00</td>
-<td style="text-align: center;">10:00</td>
+<td style="text-align: center;">12:17</td>
+<td style="text-align: center;">10:17</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span translate="no">LoopFollow_Second</span></td>
 <td style="text-align: center;">&#x2705;</td>
-<td style="text-align: center;">12:20</td>
-<td style="text-align: center;">10:20</td>
+<td style="text-align: center;">12:27</td>
+<td style="text-align: center;">10:27</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span translate="no">LoopFollow_Third</span></td>
@@ -3969,17 +3971,33 @@
 <tr>
 <td style="text-align: left;"><span translate="no">Trio</span></td>
 <td style="text-align: center;">&#x2705;</td>
-<td style="text-align: center;">08:00</td>
-<td style="text-align: center;">06:00</td>
+<td style="text-align: center;">08:43</td>
+<td style="text-align: center;">06:43</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span translate="no">xDrip4iOS</span></td>
 <td style="text-align: center;">&#x274C;</td>
-<td style="text-align: center;">16:00</td>
-<td style="text-align: center;">14:00</td>
+<td style="text-align: center;">16:43</td>
+<td style="text-align: center;">14:43</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition question">
+<p class="admonition-title">Why are the Hour and Minute staggered?</p>
+<p>There are 2 reasons:</p>
+<ol>
+<li>You only want one action to <code>nuke</code> profiles and build credentials associated with an expired certificate</li>
+<li>The <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> resources are more likely to be busy at the beginning of each hour</li>
+</ol>
+<details class="abstract">
+<summary>Do you want to know more? (Click to Open/Close)</summary>
+<p>This build schedule determines when the automatic check for certificate status happens. The times are shifted to make sure only one Open-Source app performs a <code>nuke</code> action. Any other app building later that same day will just create new signing credentials; it will not need to <code>nuke</code>. This only happens once a year, but we wanted to be sure there are no conflicts. </p>
+<p>Starting in 2025 May, some people were getting messages that "no runners" were available to perform their build. (Remember, this is a <strong>free</strong> service we are using.) 
+Initially, all builds started at the "top of the hour" (HH:00), but it turns out that is when <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> has the most activity. 
+In an attempt to minimize build failures due to resource limitations, the minute of the hour for all the apps is gradually being shifted.</p>
+</details>
+</div>
+<p>Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are <abbr title="Coordinated Universal Time is a time standard for civil time and time zones worldwide">UTC</abbr>. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.</p>
 <h2 id="modify-automatic-building">Modify Automatic Building<a class="headerlink" href="#modify-automatic-building" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For someone using <a href="../build-dev-browser/">development code</a> for their own use, they could decide to choose when to update their <code>fork</code> to the most recent <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. They can still have the advantage of automatic building without automatic updates; in other words, they want a new build added to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> every month. There may be other configurations someone would choose. These options are available starting with <abbr title="Latest release with major updates">Loop 3</abbr>.3.0 (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) and later.</p>
 <p>You can affect the default behavior:</p>
