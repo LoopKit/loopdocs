@@ -134,20 +134,36 @@ Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow` and `
 
 ### Open-Source App Schedule
 
-Each Open-Source App has a schedule for when the automatic build happens. This determines when the automatic check for certificate status happens.
+Each Open-Source App has a schedule for when the automatic build happens.
 
-The times are shifted to make sure only one Open-Source app performs a `nuke` action. Any other app building later that same day will just create new signing credentials; it will not need to `nuke` all credentials. This only happens once a year, but we wanted to be sure there are no conflicts. Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
+> The table below indicates **planned** minutes. They **may happen at the start of the hour now**, but are planned to be shifted to the indicated minute over time.
 
 | Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
 |:--|:-:|:-:|:-:|
-| <span translate="no">Loop</span> | &#x2705; | 09:00 | 07:00 |
-| <span translate="no">LoopCaregiver</span> | &#x2705; | 13:00 | 11:00 |
-| <span translate="no">LoopFollow</span> | &#x2705; | 12:00 | 10:00 |
-| <span translate="no">LoopFollow_Second</span> | &#x2705; | 12:20 | 10:20 |
+| <span translate="no">Loop</span> | &#x2705; | 09:33 | 07:33 |
+| <span translate="no">LoopCaregiver</span> | &#x2705; | 13:33 | 11:33 |
+| <span translate="no">LoopFollow</span> | &#x2705; | 12:17 | 10:17 |
+| <span translate="no">LoopFollow_Second</span> | &#x2705; | 12:27 | 10:27 |
 | <span translate="no">LoopFollow_Third</span> | &#x2705; | 12:40 | 10:40 |
-| <span translate="no">Trio</span> | &#x2705; | 08:00 | 06:00 |
-| <span translate="no">xDrip4iOS</span> | &#x274C; | 16:00 | 14:00 |
+| <span translate="no">Trio</span> | &#x2705; | 08:43 | 06:43 |
+| <span translate="no">xDrip4iOS</span> | &#x274C; | 16:43 | 14:43 |
 
+!!! question "Why are the Hour and Minute staggered?"
+    There are 2 reasons:
+
+    1. You only want one action to `nuke` profiles and build credentials associated with an expired certificate
+    2. The *GitHub* resources are more likely to be busy at the beginning of each hour
+
+    ??? abstract "Do you want to know more? (Click to Open/Close)"
+
+        This build schedule determines when the automatic check for certificate status happens. The times are shifted to make sure only one Open-Source app performs a `nuke` action. Any other app building later that same day will just create new signing credentials; it will not need to `nuke`. This only happens once a year, but we wanted to be sure there are no conflicts. 
+        
+        Starting in 2025 May, some people were getting messages that "no runners" were available to perform their build. (Remember, this is a **free** service we are using.) 
+        Initially, all builds started at the "top of the hour" (HH:00), but it turns out that is when *GitHub* has the most activity. 
+        In an attempt to minimize build failures due to resource limitations, the minute of the hour for all the apps is gradually being shifted.
+
+
+Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
 
 ## Modify Automatic Building
 
