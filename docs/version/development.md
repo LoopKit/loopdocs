@@ -20,7 +20,7 @@ There are no updates at this time, but that can change without warning. Be very 
 
 All updates are reported in [`Loop 3.6.0`](releases.md#loop-v360){: target="_blank" }
 
-Check the release page for minor update found in 3.6.x.
+Check [Version History](releases.md#loop-3-version-history) for minor updates found in 3.6.x.
 
 ## Updates from 3.2 to 3.4
 
