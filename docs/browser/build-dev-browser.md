@@ -148,13 +148,13 @@ As soon as you build one version of the app from the `dev` branch, that version 
 
 Suppose you then return to using the `main` branch after your excursion to the `dev` branch.
 
-> *For this example, version 3.6.x is the released version from the `main` branch and version 3.7.0 is the development version you evaluated.*
+> *For this example, version 3.6.x is the released version from the `main` branch and version 3.7.x is the development version you evaluated.*
 
-Every time you open TestFlight on your phone and select the *Loop* app, it will offer the most recent 3.7.0 version to be installed if you just tap **Install**. You might be in a situation where that build is about to expire or you decide you don't want to test this on your looping phone.
+Every time you open TestFlight on your phone and select the *Loop* app, it will offer the most recent 3.7.x version to be installed if you just tap **Install**. You might be in a situation where that build is about to expire or you decide you don't want to test this on your looping phone.
 
 You have your choice:
 
-* You can manually go into TestFlight each time `main` is automatically built, Select Previous Builds, then choose 3.6.x and install the top listing
+* You can manually go into TestFlight on your phone each time `main` is automatically built, Select Previous Builds, then choose 3.6.x and install the top listing
 * You can log in at: [App Store Connect: Apps](https://appstoreconnect.apple.com/apps)
     * Select your *Loop* app
     * Click on the TestFlight tab
