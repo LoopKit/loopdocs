@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.6.3. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is 3.6.4. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,19 @@ Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span trans
 - - -
 
 ## Loop 3 Version History
+
+### Loop v3.6.4
+
+[*Loop* v3.6.4](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.4) was released on 31 July 2025.
+
+This release:
+
+* provides support for newer European Libre 2 plus sensors (mid 2025 Libre 2 plus EU sensors)
+* adds localization to the LibreTransmitter module
+* adjusts build dependencies for G7SensorKit (no functional change)
+* shifts the automatic build time from hh:00 to hh:33
+    * automatic builds have been running into errors recently
+    * this time shift avoids a time when GitHub resources are impacted
 
 ### Loop v3.6.3
 

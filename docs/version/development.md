@@ -12,13 +12,15 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop 3.6.0`. 
+This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
 
 There are no updates at this time, but that can change without warning. Be very cautious building `dev` branch.
 
 ## Updates from 3.4 to 3.6
 
 All updates are reported in [`Loop 3.6.0`](releases.md#loop-v360){: target="_blank" }
+
+Check [Version History](releases.md#loop-3-version-history) for minor updates found in 3.6.x.
 
 ## Updates from 3.2 to 3.4
 
