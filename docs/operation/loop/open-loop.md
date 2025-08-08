@@ -164,9 +164,9 @@ For this example:
 
 $$ Balance = 3 U - 1 U = 2 U $$
 
-$$ MTB = (2 / 1.5) U/hr + 0.5 U/hr = 1.55 U/hr $$
+$$ MTB = (2 / 1.5) U/hr + 0.5 U/hr = 1.85 U/hr $$
 
-You have your choice of rounding $MTB$ up or down to the nearest $0.05 U/hr$. For this example, the quantity of $(2/1.5)=1.333$ was rounded up to $1.35 U/hr$.
+You have your choice of rounding $MTB$ up or down to the nearest $0.05 U/hr$. For this example, the quantity of $(2/1.5)=1.333$ was rounded up to $1.35 U/hr$ and then the scheduled basal rate was added.
 
 ??? question "Why isn't there a menu item? (Click to see more)"
     Each item provided by the *Loop* app needs a volunteer to decide it is important and develop a method to provide that item. If a volunteer steps up to do this work, there is a long process of discussion and code review before such a modification is considered for the development branch.
