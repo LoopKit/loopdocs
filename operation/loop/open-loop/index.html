@@ -3837,11 +3837,11 @@
 <p>This section was added at user request. Once you switch to <code><abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr></code> mode, you should not need this. But before you are ready for that step, you may want to use a tested method for a known meal.</p>
 </blockquote>
 <p>Consider a desired total bolus <span class="arithmatex">\((BolusTotal)\)</span> given over an extended time with a prompt amount <span class="arithmatex">\((PromptAmount)\)</span> now and the balance <span class="arithmatex">\((Balance)\)</span> delivered over the next <span class="arithmatex">\((H)\)</span> hours with a current scheduled basal rate <span class="arithmatex">\((BR)\)</span>.</p>
-<p>First the equations to calculate the desired rate <span class="arithmatex">\((<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>)\)</span> to enter into the <code>Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> menu and then an example.</p>
+<p>First the equations to calculate the desired rate <span class="arithmatex">\((\mathit{MT}\mathit{B})\)</span> to enter into the <code>Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> menu and then an example.</p>
 <div class="arithmatex">\[ Balance = BolusTotal - PromptAmount \]</div>
-<div class="arithmatex">\[ <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> = Balance / H + BR \]</div>
+<div class="arithmatex">\[ \mathit{MT}\mathit{B} = Balance / H + BR \]</div>
 <ol>
-<li>Turn on a <a href="../../../loop-3/omnipod/#manual-temp-basal"><code>Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code></a> to value of <span class="arithmatex">\(<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>\)</span> units/hour for <span class="arithmatex">\(H\)</span> hours</li>
+<li>Turn on a <a href="../../../loop-3/omnipod/#manual-temp-basal"><code>Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code></a> to value of <span class="arithmatex">\((\mathit{MT}\mathit{B})\)</span> units/hour for <span class="arithmatex">\(H\)</span> hours</li>
 <li>Tap the bolus icon on the main toolbar and enter a bolus for <span class="arithmatex">\(PromptAmount\)</span> units</li>
 </ol>
 <p>The order is important. Sending the <code>Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr></code> request to the pod is a single command and then the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is available for the next command to be entered. The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app (and pod) will not respond to any pod commands until the bolus finishes delivering; this takes about 40 seconds per unit requested.</p>
@@ -3854,8 +3854,8 @@
 <li>Scheduled basal rate, <span class="arithmatex">\(BR\)</span>, is 0.5 U/hr</li>
 </ul>
 <div class="arithmatex">\[ Balance = 3 U - 1 U = 2 U \]</div>
-<div class="arithmatex">\[ <abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr> = (2 / 1.5) U/hr + 0.5 U/hr = 1.85 U/hr \]</div>
-<p>You have your choice of rounding <span class="arithmatex">\(<abbr title="Manual Temp Basal: user initiated temporary basal, Omnipod Common feature">MTB</abbr>\)</span> up or down to the nearest <span class="arithmatex">\(0.05 U/hr\)</span>. For this example, the quantity of <span class="arithmatex">\((2/1.5)=1.333\)</span> was rounded up to <span class="arithmatex">\(1.35 U/hr\)</span> and then the scheduled basal rate was added.</p>
+<div class="arithmatex">\[ \mathit{MT}\mathit{B} = (2 / 1.5) U/hr + 0.5 U/hr = 1.85 U/hr \]</div>
+<p>You have your choice of rounding <span class="arithmatex">\((\mathit{MT}\mathit{B})\)</span> up or down to the nearest <span class="arithmatex">\(0.05 U/hr\)</span>. For this example, the quantity of <span class="arithmatex">\((2/1.5)=1.333\)</span> was rounded up to <span class="arithmatex">\(1.35 U/hr\)</span> and then the scheduled basal rate was added.</p>
 <details class="question">
 <summary>Why isn't there a menu item? (Click to see more)</summary>
 <p>Each item provided by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app needs a volunteer to decide it is important and develop a method to provide that item. If a volunteer steps up to do this work, there is a long process of discussion and code review before such a modification is considered for the development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
