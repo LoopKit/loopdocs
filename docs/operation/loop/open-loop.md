@@ -142,13 +142,13 @@ A menu item to set an extended bolus is not a feature provided by the *Loop* app
 
 Consider a desired total bolus $(BolusTotal)$ given over an extended time with a prompt amount $(PromptAmount)$ now and the balance $(Balance)$ delivered over the next $(H)$ hours with a current scheduled basal rate $(BR)$.
 
-First the equations to calculate the desired rate $(MTB)$ to enter into the <code>Manual Temp Basal</code> menu and then an example.
+First the equations to calculate the desired rate $(\mathit{MT}\mathit{B})$ to enter into the <code>Manual Temp Basal</code> menu and then an example.
 
 $$ Balance = BolusTotal - PromptAmount $$
 
-$$ MTB = Balance / H + BR $$
+$$ \mathit{MT}\mathit{B} = Balance / H + BR $$
 
-1. Turn on a [<code>Manual Temp Basal</code>](../../loop-3/omnipod.md#manual-temp-basal) to value of $MTB$ units/hour for $H$ hours
+1. Turn on a [<code>Manual Temp Basal</code>](../../loop-3/omnipod.md#manual-temp-basal) to value of $(\mathit{MT}\mathit{B})$ units/hour for $H$ hours
 2. Tap the bolus icon on the main toolbar and enter a bolus for $PromptAmount$ units
 
 The order is important. Sending the <code>Manual Temp Basal</code> request to the pod is a single command and then the *Loop* app is available for the next command to be entered. The *Loop* app (and pod) will not respond to any pod commands until the bolus finishes delivering; this takes about 40 seconds per unit requested.
@@ -164,9 +164,9 @@ For this example:
 
 $$ Balance = 3 U - 1 U = 2 U $$
 
-$$ MTB = (2 / 1.5) U/hr + 0.5 U/hr = 1.85 U/hr $$
+$$ \mathit{MT}\mathit{B} = (2 / 1.5) U/hr + 0.5 U/hr = 1.85 U/hr $$
 
-You have your choice of rounding $MTB$ up or down to the nearest $0.05 U/hr$. For this example, the quantity of $(2/1.5)=1.333$ was rounded up to $1.35 U/hr$ and then the scheduled basal rate was added.
+You have your choice of rounding $(\mathit{MT}\mathit{B})$ up or down to the nearest $0.05 U/hr$. For this example, the quantity of $(2/1.5)=1.333$ was rounded up to $1.35 U/hr$ and then the scheduled basal rate was added.
 
 ??? question "Why isn't there a menu item? (Click to see more)"
     Each item provided by the *Loop* app needs a volunteer to decide it is important and develop a method to provide that item. If a volunteer steps up to do this work, there is a long process of discussion and code review before such a modification is considered for the development branch.
