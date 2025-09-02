@@ -14,7 +14,16 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
 
-There are no updates at this time, but that can change without warning. Be very cautious building `dev` branch.
+The following features are found only in dev at this time.
+
+* The Dana pump is supported for Dana-i and DanaRS-v3 models
+* Some localization (translate strings to different languages) is updated
+* Some code clean-up is added
+    * Fix to a bolus problem with iOS 26
+    * Discard some unneeded files
+    * Update to Xcode 16.4 for browser build and CircleCI quality testing
+  
+Please check this channel in zulipchat for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
 ## Updates from 3.4 to 3.6
 

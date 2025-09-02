@@ -27,11 +27,33 @@ Volunteers provide assistance on building and using the *Loop* app at these site
 
 ## Screenshots
 
-Please take screenshots of your issue and include them in your posts. On an Apple computer, press ++shift+command+4++ keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to include in the screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name `Screen Shot`. To capture an entire window, press ++shift+command+4++ keys at the same time followed by pressing ++space++ (the  space bar) and then click on the window of interest.
+Please take screenshots of your issue and include them in your posts - unless you want Browser Build help. **For Browser Build, include your URL, not a screenshot.**
 
-**Use screenshots instead of cell phone images whenever possible.** Screenshots are higher resolution and easier to read.
+### Help with the app
 
-Take a wide screenshot (full window capture) when asking for help with settings or Xcode build errors. Nightscout and Xcode have lots of valuable information off-to-the-side that can be valuable for troubleshooters.
+If you are asking for help using the *Loop* app after you've already built it, take screenshots on your phone and upload to either Facebook or zulipchat along with your question.
+
+If you are posting *Nightscout* graphics, use the full window from either your phone or your computer in your screenshot.
+
+> [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" }
+
+### Help with Browser Build
+
+If you need help with building the app using a browser, copy the URL for the LoopWorkspace fork and paste it into Facebook or zulipchat along with your question.
+
+> [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" }
+
+### Help with Mac Build
+
+If you are building with a Mac computer and need assistance, **use screenshots** from your Mac computer. Taking a cell phone photo of your Mac screen is generally insufficient.
+
+Include full window capture when asking for help. The *Nightscout* and *Xcode* apps have lots of valuable information off-to-the-side that can be valuable for troubleshooters.
+
+> [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" }
+
+#### How to Obtain a Screenshot on a Mac
+
+On an Apple computer, press ++shift+command+4++ keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to include in the screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name `Screen Shot`. To capture an entire window, press ++shift+command+4++ keys at the same time followed by pressing ++space++ (the  space bar) and then click on the window of interest.
 
 ## Descriptive Language
 
@@ -56,7 +78,7 @@ The *Loop* app no longer allows you to enter your correction range in the wrong 
 This example is not quite as old, but does refer to details from older *Loop* and *iOS* versions. It exemplifies the details needed to assist someone with a build error.
 
 !!! tip "Build with Browser"
-    If you are using the Build with Browser method, we still need descriptive details but we do not need screenshots. All that is required is to list your *GitHub* user name. The volunteers can then read your publicly available log files. (All private information is automatically redacted in those logs.)
+    If you are using the Build with Browser method, we still need descriptive details but we do not need screenshots. All that is required is to list your *GitHub* user name. Of course it's really nice if you just paste in your URL - then we don't have to construct the link. The volunteers can then read your publicly available log files. (All private information is automatically redacted in those logs.)
 
 **Bad:** "`My Loop app won't build.`" <----- What step are you on? What is the iOS on your phone? What kind of computer are you using? What macOS? What Xcode version? Have you built successfully before or is this new?
 
@@ -71,6 +93,8 @@ This example is not quite as old, but does refer to details from older *Loop* an
 Often, the best answer to your question is sending a link to the answer in *LoopDocs* or *LoopTips*.  This provides you a quick, accurate and complete answer. We understand that there is so much information in these sites that it can be hard to find answers.  Mentors know the docs well, are experts at using the search tools and will send direct links to the sections that best answer your question.
 
 If you've searched the docs and read relevant info already, please include that in your post or your reply. That way you don't get linked back to the part you are confused about. And if you have already read the specific section a mentor just linked, be specific about why your problem is not addressed by that link.  Or just say "I'm confused when the doc says this". Letting us know when these docs can be improved is very useful.
+
+- - -
 
 ## Next Step
 

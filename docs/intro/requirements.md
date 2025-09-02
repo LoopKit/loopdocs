@@ -25,7 +25,7 @@ These requirements are independent of how you build the Loop app:
 1. [Compatible Pump](../build/pump.md)
 1. [Compatible CGM](../build/cgm.md)
 1. [RileyLink Compatible Device](../build/rileylink.md)
-    * Not needed with Omnipod DASH
+    * Not needed with Omnipod DASH or SOOIL Dana pumps (i or RS)
     * Required for Medtronic and Omnipod Eros
 1. [Apple Developer Membership](../build/apple-developer.md)
     * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
