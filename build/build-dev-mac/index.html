@@ -1564,21 +1564,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Loop-dev Version">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identify-loop-dev-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identify Loop-dev Version
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -3559,21 +3544,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Loop-dev Version">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identify-loop-dev-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identify Loop-dev Version
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -3602,6 +3572,9 @@
 <li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the <code>dev branch</code></a></strong></li>
 </ul>
 <h2 id="buildloopdev-script"><code>BuildLoopDev</code> Script<a class="headerlink" href="#buildloopdev-script" title="Anchor link to this Header on this Page">&para;</a></h2>
+<blockquote>
+<p>Choose the tip of dev when using the existing scripts. The concept of the lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is no longer needed. Each <code>dev</code> update comes with a new dev version number after a formal review process.</p>
+</blockquote>
 <p>There is a script to assist in building the <code>dev branch</code>. It gives you the option to choose the tip of the <code>dev branch</code> or to build a lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. If you have not used the <a href="../build-app/#build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> previously, you may want to review that page. The command below can be pasted into the terminal of your Mac. Read the directions in the script.</p>
 <div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoopDev script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh<span class="k">)</span><span class="s2">&quot;</span>
@@ -3622,14 +3595,16 @@
 <li>Some are comfortable with the command line <abbr title="a tool for version control">git</abbr> commands described on <a href="../../version/loopworkspace/#updating-loop-using-loopworkspace">here</a>.</li>
 </ul>
 <h2 id="loop-dev-version"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev Version<a class="headerlink" href="#loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The version of code that shows up under the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen does not change when the <code>dev branch</code> is modified.</p>
-<p>If you need help with your app, the mentors need more information. Please issue a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report when asking for help. Refer to <a href="../../loop-3/settings/#support">Support</a> for how to issue a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report. If you want to keep track yourself, refer to <a href="#identify-loop-dev-version">Identify <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev Version</a></p>
+<p>Starting with v3.7.x, the version of code that shows up under the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen increments with each formal change to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the pull request process. That increment might be an update to match a hotfix to <code>main</code> or might be from a new feature brought just into the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>If you need help with your app, the mentors need to know you are running a <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and the specific version that shows on your settings screen. </p>
+<p>For a summary of features added to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> by version number:</p>
 <ul>
-<li><a href="../../version/releases/#loop-version-numbering"><code>Loop</code> Version Numbering</a></li>
+<li><a href="../../version/development/#updates-in-dev" target="_blank">Updates in <code>dev</code></a></li>
 </ul>
-<h3 id="identify-loop-dev-version">Identify <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev Version<a class="headerlink" href="#identify-loop-dev-version" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The version of code that shows up under the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Settings screen will remain fixed until <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev is released. In order to identify which version of dev you have on your phone, you need the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>.</p>
-<p>The <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report, refer to <a href="../../loop-3/settings/#support">Support</a> for instructions on issuing a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report. After you issue the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report, look at the workspaceGitRevision number near the beginning of the report.</p>
+<p>For more information about version numbers:</p>
+<ul>
+<li><a href="../../version/releases/#loop-version-numbering" target="_blank"><code>Loop</code> Version Numbering</a></li>
+</ul>
 
 
 
