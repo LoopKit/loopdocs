@@ -319,12 +319,12 @@ Meanwhile, you will see the standard iOS Bluetooth pairing modal.
 Also accept this and fill in the code from your pump into iOS.
 After that is done, Loop is ready to use your Dana-i!
 
-![Dana pairing request example](img/dana-pairing.jpg){width="450"}
-{align="center"}
-
 #### Pairing DanaRS-v3
 
 Once you see your device name in the list, click on it and Loop will try to connect to your DanaRS-v3.
+
+![Dana pairing request example](img/dana-pairing.jpg){width="450"}
+{align="center"}
 
 Once connected, your DanaRS-v3 will prompt you with a question if you want to connect.
 Accept this and you will see two codes on your DanaRS-v3.

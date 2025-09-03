@@ -26,7 +26,7 @@ These types of pumps are compatible with the *Loop* app.
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
     * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (dev branch only, 3.7.5 or newer))
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (dev branch only, v3.7.5 or newer))
 
 ## Check Medtronic Pump Version
 
@@ -191,7 +191,7 @@ Loop does not support Omnipod 5 pods.
 ## Sooil Dana pumps
 
 !!! warning "You must build dev branch to use Dana pumps"
-    The Dana pump is in dev (as of version 3.7.5) and will be in the next release. Follow the [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20support.20for.20Loop) if you choose to run the *Loop* app with a Dana pump.
+    The Dana pump is in dev (as of version v3.7.5) and will be in the next release. Follow the [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20support.20for.20Loop) if you choose to run the *Loop* app with a Dana pump.
 
 **Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Loop* app.**
 
