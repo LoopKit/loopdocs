@@ -3,11 +3,13 @@
 !!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which Personal Diabetes Manager (PDM) you've been using.
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
+    - Dana users: 5 minutes to check your model number
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! abstract "Summary"
     - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - If you use [Omnipod](#omnipod-pumps) - check which kind
+    - If you use [Dana](#sooil-dana-pumps) - check which kind
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
@@ -23,7 +25,8 @@ These types of pumps are compatible with the *Loop* app.
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) Coming soon
+    * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (dev branch only, v3.7.5 or newer))
 
 ## Check Medtronic Pump Version
 
@@ -179,16 +182,16 @@ The DASH system has the newer, slimmer locked-android Personal Diabetes Manager 
 ![img/dash.png](img/dash.png){width="750"}
 {align="center"}
 
+[See warning about iPhone 16 with DASH](phone.md#compatible-device){: target="_blank" }.
+
 ### Omnipod 5
 
 Loop does not support Omnipod 5 pods.
 
 ## Sooil Dana pumps
 
-!!! warning "Future Feature Only"
-    Sorry but the Dana pump has not landed in released code or even dev code at this time. There is a testing fork, so check out [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump).
-
-    The information below is for the convenience of people reading along in zulipchat.
+!!! warning "You must build dev branch to use Dana pumps"
+    The Dana pump is in dev (as of version v3.7.5) and will be in the next release. Follow the [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20support.20for.20Loop) if you choose to run the *Loop* app with a Dana pump.
 
 **Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Loop* app.**
 
@@ -196,7 +199,7 @@ Loop does not support Omnipod 5 pods.
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
 
-The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana-i. If your version of the *Loop* app not from that fork, you cannot use the Dana-i.
+> The *Loop* app v3.7.5 or newer (built with dev branch of `LoopWorkspace`) supports the Dana-i. 
 
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
@@ -206,7 +209,7 @@ The special fork (see [link](#sooil-dana-pumps) for details) works with the Dana
 The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
-The special fork (see [link](#sooil-dana-pumps) for details) works with the DanaRS-v3. If your version of the *Loop* app not from that fork, you cannot use the DanaRS-v3.
+> The *Loop* app v3.7.5 or newer (built with dev branch of `LoopWorkspace`) supports the DanaRS-v3. 
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}

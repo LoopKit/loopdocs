@@ -96,3 +96,15 @@ The graphic below shows the Google Translate Tool when maximized (default) for a
 
 ![various display options for the google translation tool](img/google-xlate.svg){width="600"}
 {align="center"}
+
+## Code Translation
+
+The localization (strings translated to the selected language in the *Loop* app) makes use of volunteers who input translations in a special web app. Their work is then dowloaded and imported into the code used by Loop and its submodules (repositories on GitHub).
+
+If you notice *Loop* app messages in English even though you selected a specific language, and you can help translate it, please volunteer.
+
+Translations for Loop are performed by volunteers at [lokalise](https://app.lokalise.com/projects).
+
+To volunteer, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate.
+
+If you are using the *Trio* app instead of the *Loop* app, you can still assist with pump, CGM and Tidepool module localization through Loop lokalise. Some repositories from *Loop* are used by *Trio*. You can use the *Trio* discord server to volunteer by sending a direct message to Marion if you are not a member of zulipchat.

@@ -13,8 +13,23 @@ Please read this entire page before using any version of *Loop* other than the r
 ## Updates in `dev`
 
 This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
+  
+Please check this channel in zulipchat for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-There are no updates at this time, but that can change without warning. Be very cautious building `dev` branch.
+The following features are found only in dev at this time. Any updates added to `main` were also added to `dev`.
+
+### v3.7.5
+
+* Added support for Dana-i and DanaRS-v3 pump models
+
+### v3.7.6
+
+* Updated some localization (strings translated to different languages)
+    * Added scripts to make localization more streamlined
+* Cleaned up some code
+    * Fixed a bolus problem with iOS 26
+    * Discarded some unneeded files
+    * Updated to Xcode 16.4 for browser build and CircleCI quality testing
 
 ## Updates from 3.4 to 3.6
 
@@ -24,7 +39,7 @@ Check [Version History](releases.md#loop-3-version-history) for minor updates fo
 
 ## Updates from 3.2 to 3.4
 
-Most features, originally in the Updates in `dev` section before the release of version 3.4, have been inserted into the appropriate part of the *LoopDocs* website (indicated by the up-right arrow after the link). A few items are still in this section.
+Features new with v3.4, originally in the Updates in `dev` section before the release, have been inserted into the appropriate part of the *LoopDocs* website (indicated by the up-right arrow after the link). The links below are left to assist people in finding the features.
 
 * [Support for Libre Sensors](../loop-3/add-cgm.md#libre){: target="_blank" }
 * [Pump or CGM Simulator on Phone](simulator.md#pump-or-cgm-simulator-on-phone){: target="_blank" }
@@ -33,47 +48,8 @@ Most features, originally in the Updates in `dev` section before the release of 
     * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
 * [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" }
 * [<span translate="no">TestFlight Expiration Warning</span>](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }
-* [<span translate="no">GitHub Browser Build</span> Updates](#github-browser-build-updates)
-* [Miscellaneous Code Fixes](#miscellaneous-code-fixes)
 
-### <span translate="no">GitHub Browser Build</span>&nbsp; Updates
-
-The `dev` branch has several updates merged that make it easier to find errors in configuration and that make the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; automatic.
-
-Note that the automatic build feature is opt-out. In other words, unless you take specific steps, the &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for&nbsp;_<span translate="no">Loop</span>_&nbsp;will:
-
-* Automatically build a new version once a month, with automatic update included
-* Automatically update your fork of LoopWorkspace once a week if updates are available
-
-It is suggested that all users of the released code (main branch), maintain this automatic schedule so they are never without a valid and up-to-date&nbsp;_<span translate="no">Loop</span>_&nbsp;in their  *TestFlight*  app.
-
-In addition to the easier to read error messages found with these updates, these additional simplifications include:
-
-* Actions are broken into logical components, each of which provides an easy to understand error message if it fails which includes a suggested fix
-* A new builder no longer needs to create the &nbsp;<span translate="no">Match-Secrets repository</span>
-    * If it does not exist, one is created for you
-    * Only the App Group ID must be added to the Identifiers; all other App services are    automatically added
-* For new builders and current 3.2.3 users updating to the next release
-    * The branches with `alive` in the name required to enable automatic update and building are created automatically
-    * Make sure your GitHub repository is in sync with the LoopKit/LoopWorkspace repository
-
-These sections are still useful for version 3.5.0 `dev` users:
-
-* [Browser Build for dev](../browser/build-dev-browser.md): How to use &nbsp;<span translate="no">GitHub Browser Build</span>&nbsp; for `dev` branch
-* [Browser Build: One-Time Changes](../browser/build-dev-browser.md#one-time-changes): New steps and dates at which the new steps were added
-
-### Miscellaneous Code Fixes
-
-#### G7 Sensors: Duplicate CGM Values
-
-Fixed with [PR 16: Fix parsing of age field of message](https://github.com/LoopKit/G7SensorKit/pull/16)
-
-* Most sensors report the time with very little offset between time of arrival and time of sensing
-* If the time discrepancy is large, the error (using one byte instead of two for age of the reading) could cause CGM values to appear as duplicate readings in Loop
-
-#### Remote Services Update
-
-The code that feeds Loop data to remote services like Tidepool and Nightscout have been improved to be more robust.
+- - -
 
 ## What are Git Branches?
 
@@ -94,7 +70,10 @@ The information in this video is still generally useful with the last half focus
 
 *Loop* developers own an account in *GitHub* called [LoopKit](https://github.com/LoopKit).  Within that account, the developers have several <code>repositories</code> that support *Loop* in particular. A repository&#8203; is like a book...let's think of it like a cookbook for now. Within the `LoopKit` account, there are `repositories` for Loop&#8203; itself, *LoopDocs*, and various other supporting "frameworks" that are <span>helper &#8203;repositories&#8203; for *Loop*</span> to build correctly. For example, Loop&#39;s &#8203;repository&#8203; has a lot of info about the app itself; the outward-facing things that you interact with. How information is put to you and taken in from you...that's in *Loop* <code>repository</code> code. But, there's more than just a user interface for Loop. *Loop* has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The *Loop* app has help from frameworks to do those other parts. `CGMBLEkit`&nbsp; for some of the transmitter parts of *Loop*, `RileyLink_ios` for the pump managers (talking to the pumps and decoding their information), `LoopKit` for the algorithm about carbs and insulin curves, etc.
 
-When you build *Loop*, in the background, *Loop* pulls those other frameworks (7 in total) into the build process using `Carthage`.  `Carthage`&nbsp;  is like a personal shopper. You give it a shopping list (the cart file in *Loop* code is that shopping list) and it goes and fetches that for you during the build process. Sometimes your computer has an old shopping list...and that can cause build errors. Hence the `carthage update` fix in the Build Errors page...that command updates the shopping list to get the right versions of those frameworks.
+When you build *Loop*, you actually start with LoopWorkspace which points to all the other repositories needed for a complete *Loop* app.
+
+> Note - this graphic is outdated - you download the *LoopWorkspace* repository and use the workspace to get the right version of the *Loop* repository and the other necessary code.
+
 
 ![img/loopkit.png](img/loopkit.png){width="650"}
 {align="center"}
@@ -109,7 +88,7 @@ After much testing and tweaking, eventually, the recipes get the flavors right (
 
 ## What's going on in the `dev` branch?
 
-The `dev` branch, currently v3.5.0, is where the next version of *Loop* is being developed and tested.
+The `dev` branch is where the next version of *Loop* is being developed and tested.
 
 If you choose to build *Loop* using a `dev` branch, you need to be aware that the `dev` branch may update code frequently and unannounced in the traditional sense that most users in the  *Looped* group or *Instagram* would see. Developers are not helped by people being in a `dev` branch if those users mistakenly think of it as a stable `main` branch with lots of detailed docs to go with it. People should only use a `dev` branch build if they EDUCATE themselves on the expectations and how to properly manage `dev` information and updates. People using the `dev` branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 
@@ -150,10 +129,6 @@ You can choose to watch the `repository` so that you get emails when new `Issues
 ![img/watching.png](img/watching.png){width="650"}
 {align="center"}
 
-### Keep checking `Looped` group
-
-Keep watching [`The Looped Group`](https://www.facebook.com/groups/TheLoopedGroup) on  *Facebook*. Major concerns/issues are brought up there...so it doesn't hurt to scroll through and see what's going on there.
-
 ### Become familiar with your data sources
 
 Another useful thing if you'll be on `dev` branches undergoing a lot of active change...know how *Loop* works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries stored in the *Health* app.
@@ -175,7 +150,7 @@ This 6-minute long, classic Katie DiSimone video shows how to [capture debugging
 
 If you're a developer looking for direct links to the **code and documentation** in *GitHub*:
 
-* [`Loop`](https://github.com/LoopKit/Loop)
+* [`LoopWorkspace`](https://github.com/LoopKit/LoopWorkspace)
 * [`LoopDocs`](https://github.com/LoopKit/Loopdocs)
 
 For more information on **how to contribute code to the *Loop* project**, please review:

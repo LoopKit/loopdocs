@@ -1,9 +1,14 @@
 ## Order a RileyLink Compatible Device
 
-**Not needed for DASH**
+**Not needed for any pump that supports direct Bluetooth BLE commands**
+
+* **Dana**
+* **DASH**
+
+**Required when using an older Medtronic pump or Omnipod Eros pods**
 
 !!! info "Time Estimate"
-    - 0 minutes if you plan to use a DASH Omnipod pump - you don't need one
+    - 0 minutes if you plan to use a Dana pump or a DASH Omnipod pump - you don't need one
     - 15-20 minutes to read about RileyLink compatible devices
     - 15 minutes to order a device
 
@@ -13,7 +18,7 @@
 
 !!! question "FAQs"
     - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
-    - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. There are many used devices available in the community now that many users have switched to DASH. **Not needed for DASH**
+    - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. There are many used devices available in the community now that many users have switched to DASH. **Not needed for DASH or Dana pumps**
         * Facebook Group where you may find used items: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to the normal scheduled basal rate
     - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between compatible devices.
@@ -22,7 +27,7 @@
 
 ## What is a RileyLink Compatible Device
 
-The RileyLink compatible device is required to allow your phone to talk to compatible *Medtronic* and *Omnipod Eros* pumps. **It is not needed for *Omnipod DASH* pumps.**
+The RileyLink compatible device is required to allow your phone to talk to compatible *Medtronic* and *Omnipod Eros* pumps. **It is not needed for *Omnipod DASH* or Sooil Dana pumps.**
 
 !!! abstract "Details for RileyLink"
     The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by compatible *Medtronic* and *Omnipod Eros* pumps.
@@ -37,6 +42,8 @@ Loop 3 has *Omnipod DASH* support, among other new features. When using *Omnipod
 ## RileyLink Compatible Devices
 
 The RileyLink protocol defines a specific Bluetooth interface and way of opening a Sub-GHz radio channel to pumps. All RileyLink compatible devices follow the RileyLink protocol.
+
+> Many Omnipod users have switched to DASH and no longer need a RileyLink device, so the demand is significantly less than it used to be. You can still buy the devices, but there are fewer options.
 
 There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
@@ -72,7 +79,7 @@ Sections of interest include:
 
 ## Waiting for your RileyLink Compatible Device
 
-While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md){: target="_blank" } options. After that, unless you are using *Omnipod DASH*, you'll have to wait for your device.
+While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md){: target="_blank" } options. After that, unless you are using *Omnipod DASH* or Sooil Dana, you'll have to wait for your device.
 
 The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
 

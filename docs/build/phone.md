@@ -31,7 +31,17 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
 
 ### Compatible Device
 
-All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. Those that only support *iOS* 15 or 16 may become incompatible for the next version of the *Loop* app, but can be used with `Loop version 3.4.x`.
+!!! warning "iPhone 16 and Omnipod DASH"
+    At the current time, some DASH pods produced in 2025 have different chips and firmware than were used for earlier manufacturing dates. 
+    
+    * These pods, which advertise with a Bluetooth Device name of `InPlay BLE` are fully compatible with all iPhone models listed below except iPhone 16
+    * They still work with the 16 but can be slow (seconds to minutes) to connect (and reconnect) to the *Loop* app
+    * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
+    * No solution to this issue is known (yet)
+    
+    > DASH pods that advertise with a Bluetooth Device name of `TWI Board` and are fully compatible with all phones listed below.
+
+All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. Those that only support *iOS* 15 or 16 may become incompatible for the next version of the *Loop* app, but can be used with `Loop version 3.6.x`.
 
 These phones require *iOS* 18
 

@@ -8,7 +8,9 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is 3.6.4. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.6.4 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+
+> The current development version for the *Loop* app is v3.7.6 and is built from the `dev` branch of LoopWorkspace. See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference between `main` and `dev`.
 
 ### What Version Do I Have?
 
@@ -21,7 +23,7 @@ Tap on the Settings icon at the toolbar of the *Loop* app and look at the versio
 
 Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases).
 
-Releases from `Loop 3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
+Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
 
 - - -
 
@@ -40,6 +42,8 @@ This release:
     * automatic builds have been running into errors recently
     * this time shift avoids a time when GitHub resources are impacted
 
+> The updates applied to `main` for v3.6.4 were also applied to `dev` in v3.7.4.
+
 ### Loop v3.6.3
 
 [*Loop* v3.6.3](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.3) was released on 10 July 2025.
@@ -49,6 +53,8 @@ This release fixes [Loop Issue 2322: Negative interrupted bolus](https://github.
 * The bug was that the amount reported after an interrupted bolus could be incorrect
     * This bug was reported when a user **heard a pod fault** and tried to **manually interrupt the bolus**
     * This release ensures the amount not delivered is only subtracted once for all cases
+
+> The updates applied to `main` for v3.6.3 were also applied to `dev` in v3.7.3.
 
 ### Loop v3.6.2
 
@@ -68,6 +74,8 @@ This only affects new builders and the instructions are updated to accomodate th
 
 * We can no longer automatically enable the capability for Time Sensitive Notifications for Loop. This capability must be added manually as directed in this section: [Add Time Sensitive Notifications](../browser/prepare-app.md#add-time-sensitive-notifications){: target="_blank" }
 
+> The updates applied to `main` for v3.6.2 were also applied to `dev` in v3.7.2.
+
 ### Loop v3.6.1
 
 [*Loop* v3.6.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.1) was released on 13 June 2025.
@@ -85,11 +93,15 @@ This release partially restored some Browser Build features that stopped working
 * The ability to run the `Add Identifiers` action is still "broken" with this version
 * Identifiers can be added manually
 
+> The updates applied to `main` for v3.6.1 were also applied to `dev` in v3.7.1.
+
 ### Loop v3.6.0
 
 [*Loop* v3.6.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.6.0) was released on 23 April 2025.
 
-#### 3.6.0 Highlights
+> When v3.6.0 was released, the `dev` branch version was similarly updated to v3.7.0
+
+#### v3.6.0 Highlights
 
 * Add Automatic Certificate Generation and Renewal
 * Implement updates to minimize Dexcom G7 outages that were reported over the last few months, possibly related to iOS 18 changes
@@ -104,7 +116,7 @@ This release partially restored some Browser Build features that stopped working
     * Fixed: The Algorithm Experiments screen could show stale selections - UI Bug only
     * Not Fixed: The Basal Rate section of the Therapy Settings screen does not update until you exit the screen and then return (this will be addressed in a future update) - UI Bug only, and only seen on some phone hardware (like SE phones) with iOS 18
 
-#### 3.6.0 Details
+#### v3.6.0 Details
 
 ##### Add Automatic Certificate Generation and Renewal
 
@@ -116,6 +128,8 @@ These maintenance changes do not affect the functioning of the *Loop* app but do
 
 * LoopWorkspace PR 234: Modify GitHub action files to enable automatic renewal of certificates when they expire or are revoked
 * LoopWorkspace PR 241, Loop PR 2303: Modify the way the Loop app is versioned - it is now updated in the LoopWorkspace repository instead of the Loop repository - this simplifies version releases
+    * This feature enables the development, or `dev` branch, to have an updated version number with each modification
+    * This enables any hotfix applied to `main` to be similarly applied to the `dev` branch
 * LoopWorkspace PR 243: Update GitHub action files to use fastlane 2.227.1 and Xcode 16.3
 * LoopWorkspace PR 248: Enable GitHub build to continue working after the keepalive-workflow repository was disabled by *GitHub*
 
@@ -160,13 +174,13 @@ Updates were made to the Omnipod pump submodules: OmniBLE and OmniKit. Unless ot
 * The first release on 9 October 2024 inadvertently removed all the improvements from v3.4.3, but did fix the TestFlight expiration date
 * The second release on 12 October 2024 restored the improvements from v3.4.3
 
-* [Link to release notes for Loop 3.4.4](https://github.com/LoopKit/Loop/releases/tag/v3.4.4)
+* [Link to release notes for Loop v3.4.4](https://github.com/LoopKit/Loop/releases/tag/v3.4.4)
 
 ### Loop v3.4.3
 
 *Loop* v3.4.3 was released on 6 October 2024.
 
-A few days later, it was discovered that the TestFlight expiration date was no longer available for Browser Build (due to a change in 3.4.2). This was quickly remedied with the *Loop* 3.4.4 release.
+A few days later, it was discovered that the TestFlight expiration date was no longer available for Browser Build (due to a change in v3.4.2). This was quickly remedied with the *Loop* v3.4.4 release.
 
 This was a minor update to the *Loop* code with a few bug fixes and some capability extensions.
 
@@ -175,7 +189,7 @@ This was a minor update to the *Loop* code with a few bug fixes and some capabil
     
     New revision will be landing in the `dev` branch soon. Don't be surprised - stick with `main` until the changes have been tested.
 
-* [Link to release notes for Loop 3.4.3](https://github.com/LoopKit/Loop/releases/tag/v3.4.3)
+* [Link to release notes for Loop v3.4.3](https://github.com/LoopKit/Loop/releases/tag/v3.4.3)
 
 These updates were incorporated in this release. The pull request for each modification is linked in parentheses.
 
@@ -206,9 +220,9 @@ The Browser Build method was updated to use `Fastlane version 2.223.1`. This cha
 
 *Loop* v3.4.2 was released on 5 October 2024.
 
-This was a patch that fixed errors with the expiration date for the Mac-Xcode build method for Xcode 16. No other changes were made. Unfortunately, the method used to fix expiration date for Mac Xcode 16 builders removed the expiration date for Browser Builders. The expiration date for Browser Builders was restored with version 3.4.4.
+This was a patch that fixed errors with the expiration date for the Mac-Xcode build method for Xcode 16. No other changes were made. Unfortunately, the method used to fix expiration date for Mac Xcode 16 builders removed the expiration date for Browser Builders. The expiration date for Browser Builders was restored with v3.4.4.
 
-* [Link to release notes for Loop 3.4.2](https://github.com/LoopKit/Loop/releases/tag/v3.4.2)
+* [Link to release notes for Loop v3.4.2](https://github.com/LoopKit/Loop/releases/tag/v3.4.2)
 
 ### Loop v3.4.1
 
@@ -216,15 +230,15 @@ This was a patch that fixed errors with the expiration date for the Mac-Xcode bu
 
 This was a patch that fixed errors with the Browser Build. No other changes were made.
 
-* [Link to release notes for Loop 3.4.1](https://github.com/LoopKit/Loop/releases/tag/v3.4.1)
+* [Link to release notes for Loop v3.4.1](https://github.com/LoopKit/Loop/releases/tag/v3.4.1)
 
 ### Loop v3.4.0
 
 *Loop* v3.4.0 was released on 13 July 2024.
 
-* [Link to release notes for Loop 3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0)
+* [Link to release notes for Loop v3.4.0](https://github.com/LoopKit/Loop/releases/tag/v3.4.0)
 * There are some one-time update steps required for those who Build with Browser:
-    * [Update from 3.2.x to 3.4](../browser/bb-update.md#update-from-32x-to-34){: target="_blank" }
+    * [Update from v3.2.x to v3.4](../browser/bb-update.md#update-from-32x-to-34){: target="_blank" }
 
 #### Summary of Important New Features
 
@@ -297,7 +311,7 @@ There are some important bug fixes and new features, so please rebuild to this v
 
 Pete's announcment:
 
-Loop 3.2 Is released! This contains some very important bug fixes for everyone. If you are running latest dev, you do not need to update, but everyone else running older 3.x versions of Loop should consider upgrading as soon as you can.
+Loop v3.2 Is released! This contains some very important bug fixes for everyone. If you are running latest dev, you do not need to update, but everyone else running older 3.x versions of Loop should consider upgrading as soon as you can.
 
 [https://github.com/LoopKit/Loop/releases/tag/v3.2.0](https://github.com/LoopKit/Loop/releases/tag/v3.2.0)
 
@@ -324,7 +338,7 @@ After several years of development and a lot of testing, Loop 3 is here!
 
 Loop v3.0.0 was released on January 14, 2023.
 
-[Link to release notes for Loop 3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0)
+[Link to release notes for Loop v3.0](https://github.com/LoopKit/Loop/releases/tag/v3.0.0)
 
 !!! warning "Use Script not Zip"
     If you follow that link above, there is an `Assets` section with a zip link
@@ -348,7 +362,7 @@ Loop v3.0.0 was released on January 14, 2023.
 
 #### Details on this Update
 
-This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3.0](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/){: target="_blank" }.
+This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/){: target="_blank" }.
 
 #### New Hardware Support 🔥
 
@@ -361,7 +375,7 @@ This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`
 * Changing the time on your phone triggers warnings to let users (and clever children) know that doing so can have dangerous consequences for insulin delivery.
 * Timezone changes, while not being urgent, should be performed when convenient, as before. But the UI now signals that this should be done, helping remind you 
 * Warnings when bluetooth is disabled.
-* Loop 3.0 will not read carbs from other apps, unless the code is edited to allow this, preventing inadvertent dosing when entering carbs into other apps.
+* Loop v3.0 will not read carbs from other apps, unless the code is edited to allow this, preventing inadvertent dosing when entering carbs into other apps.
     * The instructions for modifying this, as well as some other Loop 3 default settings, are found in [Modify the `Build Time Flags`](build-time-flag.md#modify-the-build-time-flags){: target="_blank" }.
     
 * Warnings when alert permissions are disabled.
@@ -379,35 +393,40 @@ This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`
 * When glucose is stale (like during a sensor warmup), you can enter glucose meter readings directly in Loop, without needing to go to Apple Health.
 * Remote Carbs / Remote Bolus is possible, but still in an experimental/testing phase. Please [read the documentation](https://loopkit.github.io/loopdocs/nightscout/remote-overrides/) for more information.
 * Schedule editors (Basal, Insulin Sensitivity, Carb Ratios) have been redesigned to be more helpful for new users, and more user friendly for everyone.
-* There is a new option to share usage data (not health data) with Loop developers to help us keep track of how many people are using DIY Loop, and how they are using it, that will hopefully provide insight that is useful for updating Loop and designing new features. It's completely optional, and you'll be asked about it during onboarding when you first run Loop 3.0.
+* There is a new option to share usage data (not health data) with Loop developers to help us keep track of how many people are using DIY Loop, and how they are using it, that will hopefully provide insight that is useful for updating Loop and designing new features. It's completely optional, and you'll be asked about it during onboarding when you first run Loop v3.0.
 * The Loop pill in Nightscout now shows automatic bolus dosing enactments.
 
 - - -
 
 ## `Loop` Version Numbering
 
-With the release of `Loop 3`, there is a new pattern for identifying the releases as distinct from the development work.
+With the release of `Loop 3`, there was a new pattern for identifying the releases as distinct from the development work. This pattern was revised again starting with `Loop v3.6`.
 
-Each release uses 3 numbers: Major.Minor.Patch
+Each release uses 3 numbers: Major.Minor.Update
 
-* Major is reserved for a significant change in the code, such as occurred going from `Loop 2.2.9` to `Loop 3.0.0`
-* Minor is used when the development branch is released for general use
-* Patch typically indicates a modification for a quick bug-fix or to support external events like an Xcode or iOS version update with no feature changes in Loop
+* `Major` is reserved for a significant change in the code, such as occurred going from `Loop v2.2.9` to `Loop v3.0.0`
+* `Minor` is used when the development branch is released for general use as the `main` branch
+* `Update` when associated with the `main` branch indicates a modification for a bug-fix or to support external events like an Xcode or iOS version update with no feature changes in Loop
+* Starting with `v3.7.0` and newer, every change to the `dev` branch occurs through a formal pull request with associated increase in the `Update` number
+    * This identifies which version of development code a user is running without having to look at the specific SHA
+    * Any updated code in the `main` branch is also updated in the `dev` branch
+    * As new features are added to the `dev` branch the `Update` number for `dev` will be bigger than the `Update` number for `main`
 
 To prevent confusion between versions used for development and versions used for release (`main` `branch`), the Minor values are even for released code. The Minor value for the development `branch` (`dev`) is incremented as part of the release process and is always odd.
 
 For example:
 
-* `Loop 3.0.0` was the first released version of `Loop 3`
-    * `Loop 3.1.0` was the development version before `Loop 3.2.0` was released
-* `Loop 3.2.0` was the next released version
-    * `Loop 3.2.1, 3.2.2 and 3.2.3` are patches to `Loop 3.2.0` without changes to the features of `Loop 3.2.x`
-    * `Loop 3.3.0` was the development version before `Loop 3.4.0` was released
-* `Loop 3.4.0` was the next released version
-    * `Loop 3.4.1`, `Loop 3.4.2`, `Loop 3.4.3` and `Loop 3.4.4` are patched versions without major changes to the features of `Loop 3.4`
-    * `Loop 3.5.0` was the development version before `Loop 3.6.0` was released
-* `Loop 3.6.0` is the current released version
-    * `Loop 3.7.0` is the current development version
+* `Loop v3.0.0` was the first released version of `Loop 3`
+    * `Loop v3.1.0` was the development version before `Loop v3.2.0` was released
+* `Loop v3.2.0` was the next minor release
+    * `Loop v3.2.1, v3.2.2 and v3.2.3` were updates without major changes to the features of `Loop v3.2`
+    * `Loop v3.3.0` was the development version before `Loop v3.4.0` was released
+* `Loop v3.4.0` was the next minor release
+    * `Loop v3.4.1`, `Loop v3.4.2`, `Loop v3.4.3` and `Loop v3.4.4` were updates without major changes to the features of `Loop v3.4`
+    * `Loop v3.5.0` was the development version before `Loop v3.6.0` was released
+* `Loop v3.6.0` was the next minor release
+    * `Loop v3.6.1`, `Loop v3.6.2`, `Loop v3.6.3` and `Loop v3.6.4` were updates without major changes to the features of `Loop v3.6`
+    * `Loop v3.7.6` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences between `main` and `dev`
 
 - - -
 

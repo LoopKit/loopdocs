@@ -17,15 +17,15 @@ Loopers can choose from 4 pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* Dana-i / DanaRS-v3 (Coming soon)
-    * Note: DanaRS-v1 or any Dana korean versions are not supported
-    * A special fork is required at this time (see [link](../build/pump.md#sooil-dana-pumps) for details)
+* Dana-i / DanaRS-v3 (dev branch only)
+    * Some Dana pumps are currently supported with the [dev branch](../version/build-dev.md#build-loop-dev){: target="_blank" }
+    * Note: DanaRS-v1 or any Dana Korean versions are not supported
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
     The Loop app and LoopDocs use these terms:
 
-    * **Omnipod** is the older (Eros) pods (requires RileyLink compatible device to Loop)
+    * **Omnipod** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
     * **Omnipod DASH** is the newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
     * **Omnipod Common** means information common to Omnipod and Omnipod DASH
 
@@ -53,7 +53,15 @@ Here is an overview of the different steps for adding each pump.  Before changin
 1. [Select RileyLink](#select-rileylink)
 1. [Medtronic](#medtronic)
 
-#### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3) (Coming soon)
+#### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3)
+
+> Requires dev branch, v3.7.5 or newer
+
+1. [Select Dana-i/DanaRS-v3](#select-dana-idanars-v3)
+1. [Insulin Type](#insulin-type)
+1. [Delivery Speed](#delivery-speed)
+1. [Pair Dana](#pair-dana)
+
 
 ## Add Pump
 
@@ -230,10 +238,8 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 
 ## Dana-i / DanaRS-v3
 
-!!! important "Coming Soon"
-    The Dana pump is not part of the released code yet. But the plug-in feature of Loop makes adding it extremely easy.
-    
-    If you want to test the Dana before it added to Loop, please join the discussion of this pump in zulipchat: [Dana Discussion](https://loop.zulipchat.com/#narrow/stream/144182-development/topic/Dana.20i.20pump)
+!!! important "Dana Support requires dev branch"
+    The Dana pump is not part of the released code but is included in the dev branch for v3.7.5 and newer.
 
 !!! info "Support for Dana-i"
     All versions of the Dana-i are supported at the moment!
@@ -245,18 +251,41 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
     ![DanaRS-v3 version menu](img/danars-v3-version.jpeg){width="450"}
     {align="center"}
 
-When you select the "Dana-i/RS" option, you will be prompted to select your pump model.
-After this selection, you will get a short description on how the pairing process will work.
-Then you will get the following menu's:
+You can only add the Dana when no pump is selected. If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
 
+1. Select [Dana-i / DanaRS-v3](#select-dana-idanars-v3)
 1. Select [Insulin Type](#insulin-type)
-2. Select [Delivery speed](#delivery-speed)
-3. Prepare your [Dana-i / DanaRS-v3 pump](#prepare-dana-idanars-v3)
-4. Connect to your [Dana-i pump](#pairing-dana-i) or [DanaRS-v3 pump](#pairing-danars-v3)
-5. (Optional): Enable [silent pump tones](#optional-enable-silent-pump-tones)
-6. (Optional): [Check if you need a heartbeat](#optional-check-if-you-need-a-heartbeat)
+1. Select [Delivery speed](#delivery-speed)
+1. [Pair Dana](#pair-dana)
+    * [Dana-i pump](#pairing-dana-i)
+    * [DanaRS-v3 pump](#pairing-danars-v3)
+1. (Optional): Enable [silent pump tones](#optional-enable-silent-pump-tones)
+1. (Optional): [Check if you need a heartbeat](#optional-check-if-you-need-a-heartbeat)
 
 ![Full dana flow](img/dana-total.jpg){align="center"}
+
+#### Device Name
+
+You will need to have a battery in the pump and you will need the 10-character Device Name for your pump.
+
+Start by checking the device name at the back of your Dana (or inside the "Model information" menu).
+Observe the a 10 character device-name listed behind the SN.
+The example below is from a Dana-i, but is the same for every Dana pump
+
+![Dana-i SN example](img/dana-i-sn.jpg){width="450"}
+{align="center"}
+
+### Select Dana-i/DanaRS-v3
+
+When you select the "Dana-i/RS" option in the Add Pump screen, you will be prompted to select your pump model.
+
+Choose the pump you plan to use: either Dana-i or DanaRS-v3. You will see a third option, but it is not supported at this time.
+
+After this selection, you will get a short description on how the pairing process will work.
+
+Once you enter the pump type, you will see an information screen for that pump. Read the information and then continue to select the [Insulin Type](#insulin-type).
+
+After choosing insulin type, you will see the [Delivery speed](#delivery-speed) screen.
 
 ### Delivery speed
 
@@ -265,26 +294,24 @@ Then you will get the following menu's:
 
 The Dana pumps supports several bolus/delivery speeds.
 This might be interesting to customize if you want to slow down the bolus speed for insulin types that feel like it is burning.
+
 Dana supports 3 speeds:
 
 * 12 seconds per unit (default)
 * 30 seconds per unit
 * 60 seconds per unit
 
-### Prepare Dana-i/DanaRS-v3
+### Pair Dana
 
-Start by checking the device name at the back of your Dana (or inside the "Model information" menu).
-This is a 10 character code, which is listed behind the SN.
-The example below is from a Dana-i, but is the same for every Dana pump
+After you choose Delivery Speed, you will land on the Dana scanning page.
 
-![Dana-i SN example](img/dana-i-sn.jpg){width="450"}
-{align="center"}
-
-After you have done the [Insulin Type](#insulin-type) and [Delivery speed](#delivery-speed), you will land on the Dana scanning page.
 This page will show all the Dana pumps it could find in your area.
-Once you see your device name in the list, click on it and Loop will try to connect to your Dana-i / DanaRS-v3.
+Once you see your [device name](#device-name) in the list, click on it and Loop will try to connect to pair with:
 
-### Pairing Dana-i
+* [Dana-i](#pairing-dana-i)
+* [DanaRS-v3](#pairing-danars-v3)
+
+#### Pairing Dana-i
 
 Once connected, your Dana-i will prompt you with a question if you want to connect.
 Accept this and you will see a code on your Dana-i.
@@ -292,17 +319,21 @@ Meanwhile, you will see the standard iOS Bluetooth pairing modal.
 Also accept this and fill in the code from your pump into iOS.
 After that is done, Loop is ready to use your Dana-i!
 
-![Dana pairing request example](img/dana-pairing.jpg){width="450"}
-{align="center"}
-
-### Pairing DanaRS-v3
+#### Pairing DanaRS-v3
 
 Once you see your device name in the list, click on it and Loop will try to connect to your DanaRS-v3.
+
+![Dana pairing request example](img/dana-pairing.jpg){width="450"}
+{align="center"}
 
 Once connected, your DanaRS-v3 will prompt you with a question if you want to connect.
 Accept this and you will see two codes on your DanaRS-v3.
 Meanwhile, you will see a prompt for 2 codes in Loop.
 Fill in the codes from your pump into iOS and Loop is ready to use your DanaRS-v3!
+
+### Setup Complete
+
+After the Dana pump is paired to the phone app, you will see the Setup Complete screen. Tap finish to begin using your Dana pump.
 
 ### (Optional) Enable silent pump tones
 
@@ -331,6 +362,8 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 Before changing from one pump type to another pump type, you must delete the old pump type.
 
 * If you are using Medtronic or Dana (RS/-i), scroll to the bottom of the pump screen and select `Delete Pump`
+
+* If you are using Pump Simulator on the phone, you must tap on Simulator Settings and then scroll to the bottom of the pump screen and select `Delete Pump`
 
 * Before switching between Omnipod and Omnipod DASH or any kind of Omnipod to Medtronic, you must deactivate your current pod
     * This does not include changing a pod, so long as the pods are of the same type
