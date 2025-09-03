@@ -13,20 +13,23 @@ Please read this entire page before using any version of *Loop* other than the r
 ## Updates in `dev`
 
 This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
+  
+Please check this channel in zulipchat for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
 The following features are found only in dev at this time. Any updates added to `main` were also added to `dev`.
 
-* v3.7.5
-    * Added support for Dana-i and DanaRS-v3 pump models
-* v3.7.6
-    * Updated some localization (strings translated to different languages)
-        * Added scripts to make localization more streamlined
-    * Cleaned up some code
-        * Fixed a bolus problem with iOS 26
-        * Discarded some unneeded files
-        * Updated to Xcode 16.4 for browser build and CircleCI quality testing
-  
-Please check this channel in zulipchat for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
+### v3.7.5
+
+* Added support for Dana-i and DanaRS-v3 pump models
+
+### v3.7.6
+
+* Updated some localization (strings translated to different languages)
+    * Added scripts to make localization more streamlined
+* Cleaned up some code
+    * Fixed a bolus problem with iOS 26
+    * Discarded some unneeded files
+    * Updated to Xcode 16.4 for browser build and CircleCI quality testing
 
 ## Updates from 3.4 to 3.6
 
