@@ -11,6 +11,8 @@
 
 ## `BuildLoopDev` Script
 
+> With the modification of how the `dev` branch is handled starting with v3.7.x, the build scripts will be updated. In the interim, choose the tip of dev when using the existing scripts. The concept of the lightly tested commit is not longer valid and the SHA is not being updated.
+
 There is a script to assist in building the `dev branch`. It gives you the option to choose the tip of the `dev branch` or to build a lightly tested commit. If you have not used the [Build Select Script](../build/build-app.md#build-select-script) to build Loop previously, you may want to review that page. The command below can be pasted into the terminal of your Mac. Read the directions in the script.
 
 ``` { .bash .copy title="Copy and Paste to start the BuildLoopDev script" }
@@ -43,14 +45,8 @@ You may prefer to use commands to fetch and pull the latest code without making 
 
 ## Loop-dev Version
 
-The version of code that shows up under the Loop Settings screen does not change when the `dev branch` is modified.
+Starting with v3.7.x, the version of code that shows up under the Loop Settings screen increments with each formal change to the `dev` branch using the pull request process. That increment might be an update to match a hotfix to `main` or might be from a new feature brought just into the `dev` branch.
 
-If you need help with your app, the mentors need more information. Please issue a Loop Report when asking for help. Refer to [Support](../loop-3/settings.md#support) for how to issue a Loop Report. If you want to keep track yourself, refer to [Identify Loop-dev Version](#identify-loop-dev-version)
+If you need help with your app, the mentors need to know you are running a `dev` branch and the specific version that shows on your settings screen. For more information about version numbers:
 
-* [`Loop` Version Numbering](../version/releases.md#loop-version-numbering)
-
-### Identify Loop-dev Version
-
-The version of code that shows up under the Loop Settings screen will remain fixed until Loop-dev is released. In order to identify which version of dev you have on your phone, you need the commit.
-
-The commit is identified by a 7-digit alphanumeric code.  That code was also appended to the folder name of the downloaded code under Downloads/BuildLoop as shown in the graphic above.  You can use finder to view the folder name after the script completes. It also appears in the Loop Report, refer to [Support](../loop-3/settings.md#support) for instructions on issuing a Loop Report. After you issue the Loop Report, look at the workspaceGitRevision number near the beginning of the report.
+* [`Loop` Version Numbering](../version/releases.md#loop-version-numbering){: target="_blank" }
