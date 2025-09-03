@@ -26,6 +26,11 @@
     
     This would be an attempt to merge changes from your <code>fork</code> back to the original version that everyone uses. These changes are for you only. Ignore those prompts.
 
+    Of course, accidents happen. No worries. 
+    
+    * Just hit the Close button
+    * If you don't close the accidental PR yourself, it will be closed for you, but that takes time
+
 ## Overview
 
 !!! info "Time Estimate"
@@ -81,11 +86,11 @@ Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="
     * Do not get confused later: LoopKit is both a username and a Module name
     * Refer to the [Module Table](#module-table) when directed
 
-For versions 3.4.x and newer, the customizations for `main` and `dev` are the same.
+> For versions 3.4.x, the customizations for `main` and `dev` are the same.
 
-* For more information, refer to [Not Stable List](../version/code-custom-edits.md#not-stable-list){: target="_blank" }
-    * Glucose Guardrails
-    * Adjust Future Carbs Time Interval
+> When moving from v3.4 to v3.6, several items that used to require customization are no longer needed. They are included in v3.6.
+
+> For versions 3.6.x and newer, the customizations for `main` and `dev` are the same.
 
 ## Outline of What Happens in the Module
 
@@ -176,49 +181,6 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
 | <span translate="no">LoopKit/OmniBLE</span> | <span translate="no">dev</span> |
 | <span translate="no">LoopKit/OmniKit</span> | <span translate="no">main</span> |
 
-## Create `branch` if needed
-
-> With the release of version 3.4.x, this entire section can be skipped. It was needed when LoopWorkspace `dev` used submodules that were quite different from those used by `main`.
-
-??? abstract "Skip for Now (Click to open/close)"
-
-    * If the customization you wish to prepare indicates Stable: Yes, you can skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
-    * If you are preparing a customization for the `dev` branch, regardless of the Stable notation, there is no need to create a special `branch`, simply update the default branch to the latest (sync it) and use the current version of the customization when you skip ahead to [Personalized Customization for this Module](#personalized-customization-for-this-module)
-    * Otherwise, when you a preparing a customization where the file changed sufficiently between `main` and `dev` and you want to build the `main` branch, you need to create a branch for this Module that is consistent with the version you wish to customize.
-
-    ??? abstract "Use only if directed (Click to Open/Close)"
-        Open your browser to your https://github.com/my-name-org/Module URL. If you already created the `branch` you need, you do not need to create a new one.
-
-        If you are customizing a released version, use the [Table of SHA-1](#table-of-sha-1) under your version number below. Copy the SHA-1 for your Module so you can paste it into the URL in Step 2 below. The suggested branch name is `v-#.#.#` where #.#.# corresponds to the version number for `main`. You will use this in Step 3.3 below.
-
-        You should create a `branch` following the numbered steps and watching the GIF. Each Frame in the GIF corresponds to a numbered step below.
-
-        1. Click on URL line as indicated by the arrow
-        1. Add the text `/tree/SHA-1` where you change SHA-1 to be the value in the table below and hit return
-        1. Create a new branch in three steps
-            * 3.1: Click on the dropdown under the `branch` icon
-            * 3.2: Type the suggested new `branch` name in the blank space
-            * 3.3: Click on the create `branch` button
-        1. You should see a screen similar to the example below
-            * Do not click on the Create Pull Request button that is marked with a big X
-
-        ![create branch for version](img/create-branch.gif){width="600"}
-        {align="center"}
-
-    ### Table of SHA-1
-
-    This will be updated with each release. You do not need this information now - it is only important when submodules that are modified as part of `dev` branch changes to LoopWorkspace are sufficiently different from the versions used for `main` branch.
-
-    #### Version 3.4.1
-
-    | <code>Repository</code> | SHA-1 |
-    |:--|:-:|
-    | `LoopWorkspace` | 8060718e78b44ef45797082817392c1c4b7a7dab |
-    | `Loop` | 5c3b01f7e302dca9b8bbb12fd42fdd40ed52d2c1 |
-    | `LoopKit` |873b3b7c406cfc982f9061afb5f5e27e88d9208d |
-    | `OmniBLE` | 85fc3c6d4805d580acdf6592b220717b6e842558 |
-    | `OmniKit` | a80e38b1b7f203014b461f8aff8cead2c067e39d |
-
 ## Personalized Customization for this Module
 
 Navigate to the file you need to modify (using the instructions to find the lines from the [Version: Custom Edit](../version/code-custom-edits.md#instructions-for-finding-the-lines){: target="_blank" } page).
@@ -231,7 +193,9 @@ Navigate to the file you need to modify (using the instructions to find the line
     The folder name is: ` OmniBLE/OmniBLE/OmnipodCommon`<br>
     The file name is: `Pod.swift`
 
-    So you will go to your OmniBLE fork (see [New Fork](#new-fork){: target="_blank" } if you don't have a fork yet):
+    So you will go to your OmniBLE fork (see [New Fork](#new-fork){: target="_blank" } if you don't have a fork yet).
+    
+    **Ensure your fork is up-to-date.** Tap on the `Sync `ork` button if necessary.
 
     1. Tap to select `OmniBLE` folder in that fork
     1. Tap to select `OmnipodCommon` folder in that folder
@@ -397,7 +361,7 @@ Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nb
 
 Open the text file in which you saved the customization lines.
 
-For a given submodule, paste the "comment" and "curl" lines that you prepared in [Prepare customization lines](#prepare-customization-lines) similar to the examples, near line 279 (`main` or 239 for `dev`), that are commented out and provided as an example. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
+For a given submodule, paste the "comment" and "curl" lines that you prepared in [Prepare customization lines](#prepare-customization-lines) (similar to the examples found in lines 279 through 286). These examples are commented out and are just for guidance. The best place to paste these is at the end of the `# Customize Loop: Download and apply patches` section and before the `# Patch Fastlane Match to not print tables` line.
 
 The indenting needs to match, so tab or (shift-tab) to line up the columns. The graphic below shows a couple of common mistakes.
 
@@ -440,7 +404,7 @@ In about 1 hour, your customized app will be available for installation on your 
 
 ## Extra Information
 
-The rest of this page has additional information most people can skip. If a mentor is helping you, they may use some of this information.
+The rest of this page has additional information most people can skip.
 
 ### How to Use the `patches` Folder
 
@@ -473,52 +437,6 @@ If you've gotten this far, keep going. No more pretty graphics, but I think you 
     * Drag and drop your Workspace level patch into the window
     * Commit to your default branch
 * Test the build to make sure everything worked
-
-### Customization and SHA-1
-
-When you commit your customization to your `branch` of your `fork`, there is a new SHA-1 associated with that step. The SHA-1 for a given branch, typically `main` or `dev` identifies to a mentor exactly which version of code you used for your build.
-
-The SHA-1 for customized code will not be recognized by a developer or mentor. If you are having a problem and need to ask for help you need to identify what the SHA-1 was before you added your customizations.
-
-If you are on `main` branch and it is up-to-date, this is less of an issue. If you are on `dev` branch, that can require some investigation.
-
-### Ask for Help to Identify Your Base Version
-
-The easy method is to provide a mentor with your GitHub username and they can figure out the base version you are using aside from customization. They can also identify the customizations you added.
-
-### Identify Your Base Version
-
-If you want to do this yourself, this section explains the steps.
-
-* Step 1: In your customized `LoopWorkspace fork`: tap on <code>Code</code> at upper left
-    * If your `fork` is behind the `LoopKit` `repository`, consider updating your `fork`
-        * Typically this can be done without changing your customization
-    * Because you added customizations, your `fork` will be ahead of the `LoopKit` `repository`
-    * An example is shown for the `main` branch in the graphic below - it is one <code>commit</code> ahead of <code>LoopKit</code> as indicated by the message highlighted by the red rectangle<br><br>
-
-    ![main branch after applying customization](img/show-fork-main-customized.png){width="600"}
-    {align="center"}
-
-* Step 2: Click on the clock symbol, highlighted by blue rectangle in the previous graphic, to view the <code>commit</code> history - the history is presented in reverse chronological order
-* Step 3: Look at the <code>commit</code> descriptions for your `fork`; several examples are shown below
-    * The last <code>commit</code> made by the developers that is included in your `fork` is the one a mentor will recognize
-    * The first example is for `main` with one customization
-        * The row highlighted in red is the one a mentor will recognize
-        * The 7-digit alpha-numeric identifier for the <code>commit</code> is highlighted in the blue rectangle
-        * If you click on the copy icon beside it, the full SHA-1 is captured in your paste buffer but the first 7 characters are sufficient to identify your base version (before customization) to a mentor<br><br>
-
-        ![main branch after applying customization](img/show-history-main-customized.png){width="600"}
-        {align="center"}
-
-    * The second example is for `dev` where the `fork` was synched both before and after customizations were applied
-        * Red rectangle labeled 1 is the commit a mentor will recognize
-        * Blue dashed rectangle labeled 2 is what GitHub adds when the user successfully syncs the <code>repository</code> - note that the SHA-1 here is specific to this repo and does not help a mentor identify the base version of your build
-        * The row above the red rectangle is a customization made prior to the sync
-        * The top row (above the blue rectangle) is a customizaiton made after the sync
-
-        ![dev branch after applying customization and then sync](img/show-history-dev-customized.png){width="600"}
-        {align="center"}
-
 
 ## Special Cases
 
