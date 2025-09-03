@@ -11,7 +11,7 @@
 
 ## `BuildLoopDev` Script
 
-> With the modification of how the `dev` branch is handled starting with v3.7.x, the build scripts will be updated. In the interim, choose the tip of dev when using the existing scripts. The concept of the lightly tested commit is no longer needed and the SHA is not being updated.
+> Choose the tip of dev when using the existing scripts. The concept of the lightly tested commit is no longer needed. Each `dev` update comes with a new dev version number after a formal review process.
 
 There is a script to assist in building the `dev branch`. It gives you the option to choose the tip of the `dev branch` or to build a lightly tested commit. If you have not used the [Build Select Script](../build/build-app.md#build-select-script) to build Loop previously, you may want to review that page. The command below can be pasted into the terminal of your Mac. Read the directions in the script.
 

@@ -43,6 +43,8 @@ Loop 3 has *Omnipod DASH* support, among other new features. When using *Omnipod
 
 The RileyLink protocol defines a specific Bluetooth interface and way of opening a Sub-GHz radio channel to pumps. All RileyLink compatible devices follow the RileyLink protocol.
 
+> Many Omnipod users have switched to DASH and no longer need a RileyLink device, so the demand is significantly less than it used to be. You can still buy the devices, but there are fewer options.
+
 There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
 - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
