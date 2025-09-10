@@ -9,24 +9,28 @@
 
 * **[What's going on in the `dev branch`](../version/development.md#whats-going-on-in-the-dev-branch)**
 
-## `BuildLoopDev` Script
+## Build `dev` with Mac
 
-> Choose the tip of dev when using the existing scripts. The concept of the lightly tested commit is no longer needed. Each `dev` update comes with a new dev version number after a formal review process.
-
-There is a script to assist in building the `dev branch`. It gives you the option to choose the tip of the `dev branch` or to build a lightly tested commit. If you have not used the [Build Select Script](../build/build-app.md#build-select-script) to build Loop previously, you may want to review that page. The command below can be pasted into the terminal of your Mac. Read the directions in the script.
-
-``` { .bash .copy title="Copy and Paste to start the BuildLoopDev script" }
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)"
-```
-
-### Build Other Branches
-
-You can use the BuildLoopDev script to build a specific development branch, other than `dev`. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the branch name. See the example below that would build `other-branch`, if such a branch existed. This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
+The same script is used to build the `dev` branch as is used to build the `main` branch. Copy and paste this command in any terminal and choose `dev` branch. Follow the instructions on the screen.
 
 ``` { title="Replace <code>other-branch</code> with the desired branch" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)" \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)"
+```
+
+For more detailed instructions, head over to:
+
+* [Experienced Builder: Instructions to Download and Build Loop](https://loopkit.github.io/loopdocs/build/build-app/#download-loop){: target="_blank" }
+
+* [New Builder: Start here to set up Developer Mode on Phone and Watch](https://loopkit.github.io/loopdocs/build/build-app/#prepare-your-phone-and-watch){: target="_blank" }
+
+### Build Other Branches
+
+You can use the BuildLoop script to build a feature branch that was advertised in zulipchat but has not been merged into `dev`. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the branch name. See the example below that would build `other-branch`, if such a branch existed. This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
+
+``` { title="Replace <code>other-branch</code> with the desired branch" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
    - other-branch
 ```
 
