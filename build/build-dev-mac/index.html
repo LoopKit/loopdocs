@@ -1525,13 +1525,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#buildloopdev-script" class="md-nav__link">
+  <a href="#build-dev-with-mac" class="md-nav__link">
     <span class="md-ellipsis">
-      BuildLoopDev Script
+      Build dev with Mac
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="BuildLoopDev Script">
+    <nav class="md-nav" aria-label="Build dev with Mac">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3505,13 +3505,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#buildloopdev-script" class="md-nav__link">
+  <a href="#build-dev-with-mac" class="md-nav__link">
     <span class="md-ellipsis">
-      BuildLoopDev Script
+      Build dev with Mac
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="BuildLoopDev Script">
+    <nav class="md-nav" aria-label="Build dev with Mac">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3571,18 +3571,24 @@
 <ul>
 <li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the <code>dev branch</code></a></strong></li>
 </ul>
-<h2 id="buildloopdev-script"><code>BuildLoopDev</code> Script<a class="headerlink" href="#buildloopdev-script" title="Anchor link to this Header on this Page">&para;</a></h2>
-<blockquote>
-<p>Choose the tip of dev when using the existing scripts. The concept of the lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> is no longer needed. Each <code>dev</code> update comes with a new dev version number after a formal review process.</p>
-</blockquote>
-<p>There is a script to assist in building the <code>dev branch</code>. It gives you the option to choose the tip of the <code>dev branch</code> or to build a lightly tested <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr>. If you have not used the <a href="../build-app/#build-select-script"><abbr title="by running a command in your terminal, this menu-driven tool assists in building Loop">Build Select Script</abbr></a> to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> previously, you may want to review that page. The command below can be pasted into the terminal of your Mac. Read the directions in the script.</p>
-<div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoopDev script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh<span class="k">)</span><span class="s2">&quot;</span>
+<h2 id="build-dev-with-mac">Build <code>dev</code> with Mac<a class="headerlink" href="#build-dev-with-mac" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The same script is used to build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as is used to build the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Copy and paste this command in any terminal and choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Follow the instructions on the screen.</p>
+<div class="highlight"><span class="filename">Copy and Paste to start the BuildLoop Script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot;
 </code></pre></div>
+<p>For more detailed instructions, head over to:</p>
+<ul>
+<li>
+<p><a href="https://loopkit.github.io/loopdocs/build/build-app/#download-loop" target="_blank">Experienced Builder: Instructions to Download and Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></p>
+</li>
+<li>
+<p><a href="https://loopkit.github.io/loopdocs/build/build-app/#prepare-your-phone-and-watch" target="_blank">New Builder: Start here to set up <abbr title="Extra security for iOS 16 and newer; this must be turned on to allow an app built from Xcode directly to the phone to run on a phone or watch">Developer Mode</abbr> on Phone and Watch</a></p>
+</li>
+</ul>
 <h3 id="build-other-branches">Build Other Branches<a class="headerlink" href="#build-other-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can use the BuildLoopDev script to build a specific development <abbr title="version of code within a single repository or workspace repository">branch</abbr>, other than <code>dev</code>. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name. See the example below that would build <code>other-branch</code>, if such a <abbr title="version of code within a single repository or workspace repository">branch</abbr> existed. This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.</p>
+<p>You can use the BuildLoop script to build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> that was advertised in zulipchat but has not been merged into <code>dev</code>. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name. See the example below that would build <code>other-branch</code>, if such a <abbr title="version of code within a single repository or workspace repository">branch</abbr> existed. This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.</p>
 <div class="highlight"><span class="filename">Replace <code>other-branch</code> with the desired branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoopDev.sh)&quot; \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
    - other-branch
 </code></pre></div>
 <h2 id="update-loop-dev">Update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>

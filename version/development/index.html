@@ -2712,9 +2712,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#v375" class="md-nav__link">
+  <a href="#v377" class="md-nav__link">
     <span class="md-ellipsis">
-      v3.7.5
+      v3.7.7
     </span>
   </a>
   
@@ -2724,6 +2724,24 @@
   <a href="#v376" class="md-nav__link">
     <span class="md-ellipsis">
       v3.7.6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v375" class="md-nav__link">
+    <span class="md-ellipsis">
+      v3.7.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v370-through-v374" class="md-nav__link">
+    <span class="md-ellipsis">
+      v3.7.0 through v3.7.4
     </span>
   </a>
   
@@ -3617,9 +3635,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#v375" class="md-nav__link">
+  <a href="#v377" class="md-nav__link">
     <span class="md-ellipsis">
-      v3.7.5
+      v3.7.7
     </span>
   </a>
   
@@ -3629,6 +3647,24 @@
   <a href="#v376" class="md-nav__link">
     <span class="md-ellipsis">
       v3.7.6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v375" class="md-nav__link">
+    <span class="md-ellipsis">
+      v3.7.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v370-through-v374" class="md-nav__link">
+    <span class="md-ellipsis">
+      v3.7.0 through v3.7.4
     </span>
   </a>
   
@@ -3776,11 +3812,28 @@
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop 3.6.x</code>. </p>
-<p>Please check this channel in zulipchat for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
-<p>The following features are found only in dev at this time. Any updates added to <code>main</code> were also added to <code>dev</code>.</p>
-<h3 id="v375">v3.7.5<a class="headerlink" href="#v375" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
+<p>The following features are found only in <code>dev</code> at this time. The updates are provided in reverse chronological order.</p>
+<h3 id="v377">v3.7.7<a class="headerlink" href="#v377" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The changes are to maintenance scripts and to translations with no change to the function of the code:</p>
 <ul>
-<li>Added support for Dana-i and DanaRS-v3 pump models</li>
+<li>There are some updates to translated strings that people who use <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> in other languages may notice<ul>
+<li>The DanaKit pump translations now work</li>
+<li>Parts of the Favorite Foods sections are now translated</li>
+<li>Many common keys used in more than one submodule are linked so they only need to be translated one time to appear in the app</li>
+</ul>
+</li>
+<li>With v3.6.2, the method to Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> when using Browser Build for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app changed. <ul>
+<li>The new method requires the time-sensitive capability be added manually</li>
+<li>This change was captured in LoopDocs but not in testflight.md</li>
+<li>The instructions found in testflight.md were updated</li>
+</ul>
+</li>
+<li>For developers who might want to know, this update included<ul>
+<li>conversion to use String Catalogs for localization in the <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> with associated tweaks to <abbr title="program used to build an app">Xcode</abbr> configuration</li>
+<li>updates to the CircleCI configurations</li>
+</ul>
+</li>
 </ul>
 <h3 id="v376">v3.7.6<a class="headerlink" href="#v376" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
@@ -3794,6 +3847,18 @@
 <li>Updated to <abbr title="program used to build an app">Xcode</abbr> 16.4 for browser build and CircleCI quality testing</li>
 </ul>
 </li>
+</ul>
+<h3 id="v375">v3.7.5<a class="headerlink" href="#v375" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li>Added support for Dana-i and DanaRS-v3 pump models</li>
+</ul>
+<h3 id="v370-through-v374">v3.7.0 through v3.7.4<a class="headerlink" href="#v370-through-v374" title="Anchor link to this Header on this Page">&para;</a></h3>
+<ul>
+<li><code>dev</code> v3.7.4 is same as <a href="../releases/#loop-v364"><code>main</code> v3.6.4</a>.</li>
+<li><code>dev</code> v3.7.3 is same as <a href="../releases/#loop-v363"><code>main</code> v3.6.3</a>.</li>
+<li><code>dev</code> v3.7.2 is same as <a href="../releases/#loop-v362"><code>main</code> v3.6.2</a>.</li>
+<li><code>dev</code> v3.7.1 is same as <a href="../releases/#loop-v361"><code>main</code> v3.6.1</a>.</li>
+<li><code>dev</code> v3.7.0 is same as <a href="../releases/#loop-v360"><code>main</code> v3.6.0</a>.</li>
 </ul>
 <h2 id="updates-from-34-to-36">Updates from 3.4 to 3.6<a class="headerlink" href="#updates-from-34-to-36" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>All updates are reported in <a href="../releases/#loop-v360" target="_blank"><code>Loop 3.6.0</code></a></p>
