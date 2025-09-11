@@ -13,7 +13,7 @@
 
 The same script is used to build the `dev` branch as is used to build the `main` branch. Copy and paste this command in any terminal and choose `dev` branch. Follow the instructions on the screen.
 
-``` { title="Replace <code>other-branch</code> with the desired branch" }
+``` { title="Copy and Paste to start the BuildLoop Script" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)"
 ```
