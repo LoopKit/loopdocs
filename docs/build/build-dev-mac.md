@@ -11,11 +11,11 @@
 
 ## Build `dev` with Mac
 
-The same script is used to build the `dev` branch as is used to build the `main` branch. Copy and paste this command in any terminal and choose `dev` branch. Follow the instructions on the screen.
+The same script is used to build the `dev` branch as is used to build the `main` branch. Copy and paste this command in any terminal. Follow the instructions on the screen. Choose Build Loop and then choose `dev` branch.
 
 ``` { title="Copy and Paste to start the BuildLoop Script" }
 /bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)"
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh)"
 ```
 
 For more detailed instructions, head over to:
@@ -26,12 +26,25 @@ For more detailed instructions, head over to:
 
 ### Build Other Branches
 
-You can use the BuildLoop script to build a feature branch that was advertised in zulipchat but has not been merged into `dev`. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the branch name. See the example below that would build `other-branch`, if such a branch existed. This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
+You can use the BuildLoop script to build a feature branch that was advertised in zulipchat but has not been merged into `dev`. 
+
+> Note. You cannot use the BuildSelectScript to select a custom branch. You must directly choose the app you wish to build. In this case, BuildLoop.
+
+In the command (shown below), there is a space after the final quote, followed by a hyphen, another space and then the branch name. This example would build `other-branch`, if such a branch existed. 
+
+> This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
 
 ``` { title="Replace <code>other-branch</code> with the desired branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
    - other-branch
+```
+
+If you want to customize this custom branch. You can call the Customization Select script after you download the custom branch. This script finds the most recent download in your ~/Downloads/BuildLoop folder. If you want to customize a specific branch, first set the terminal to be in the LoopWorkspace folder for the download you want to customize.
+
+``` { title="Copy and paste to start the CustomizationSelect script" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)"
 ```
 
 ## Update Loop-dev
