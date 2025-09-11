@@ -14,13 +14,25 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
   
-Please check this channel in zulipchat for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
+Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-The following features are found only in dev at this time. Any updates added to `main` were also added to `dev`.
+The following features are found only in `dev` at this time. The updates are provided in reverse chronological order.
 
-### v3.7.5
+### v3.7.7
 
-* Added support for Dana-i and DanaRS-v3 pump models
+The changes are to maintenance scripts and to translations with no change to the function of the code:
+
+* There are some updates to translated strings that people who use Loop in other languages may notice
+    * The DanaKit pump translations now work
+    * Parts of the Favorite Foods sections are now translated
+    * Many common keys used in more than one submodule are linked so they only need to be translated one time to appear in the app
+* With v3.6.2, the method to Add Identifiers when using Browser Build for the *Loop* app changed. 
+    * The new method requires the time-sensitive capability be added manually
+    * This change was captured in LoopDocs but not in testflight.md
+    * The instructions found in testflight.md were updated
+* For developers who might want to know, this update included
+    * conversion to use String Catalogs for localization in the submodules with associated tweaks to Xcode configuration
+    * updates to the CircleCI configurations
 
 ### v3.7.6
 
@@ -30,6 +42,18 @@ The following features are found only in dev at this time. Any updates added to 
     * Fixed a bolus problem with iOS 26
     * Discarded some unneeded files
     * Updated to Xcode 16.4 for browser build and CircleCI quality testing
+
+### v3.7.5
+
+* Added support for Dana-i and DanaRS-v3 pump models
+
+### v3.7.0 through v3.7.4
+
+* `dev` v3.7.4 is same as [`main` v3.6.4](releases.md#loop-v364).
+* `dev` v3.7.3 is same as [`main` v3.6.3](releases.md#loop-v363).
+* `dev` v3.7.2 is same as [`main` v3.6.2](releases.md#loop-v362).
+* `dev` v3.7.1 is same as [`main` v3.6.1](releases.md#loop-v361).
+* `dev` v3.7.0 is same as [`main` v3.6.0](releases.md#loop-v360).
 
 ## Updates from 3.4 to 3.6
 

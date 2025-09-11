@@ -426,7 +426,7 @@ For example:
     * `Loop v3.5.0` was the development version before `Loop v3.6.0` was released
 * `Loop v3.6.0` was the next minor release
     * `Loop v3.6.1`, `Loop v3.6.2`, `Loop v3.6.3` and `Loop v3.6.4` were updates without major changes to the features of `Loop v3.6`
-    * `Loop v3.7.6` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences between `main` and `dev`
+    * `Loop v3.7.7` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences between `main` and `dev`
 
 - - -
 

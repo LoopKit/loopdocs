@@ -152,7 +152,9 @@ You will be informed that you are downloading open source software. Type `1` and
 ![open-source warning](img/bss-open-source-warning.svg){width="700"}
 {align="center"}
 
-The next screen informs you of what you will be downloading. Type `1` and return to begin the download or `2` to return to the main menu.
+The next screen asks you to choose to build either Loop `main` or Loop `dev`, with `main` recommended. Type `1` to choose `main` and return to begin the download.
+
+> You can choose `dev` by typing 2 and return. Or return to the BuildSelect Menu by typing 3 and return.
 
 ![agree to the download](img/bss-03-download.svg){width="700"}
 {align="center"}
@@ -161,7 +163,7 @@ The next screen informs you of what you will be downloading. Type `1` and return
 
 This download can take from 3 minutes to 30 minutes depending on your download speed.  You can leave the room and return later to check on progress. When you read the words in the terminal, as the script runs, you may see terminology you do not understand - don't worry - you do not need to understand enumeration or submodule or cloning.  You only need to review the display to look for any error messages. 
 
-!!! tip "New Feature"
+!!! tip "Watch for messages"
     The Build-Script automatically reports when the download is successful.
 
 The next graphic shows terminal messages for the beginning of a successful download.
