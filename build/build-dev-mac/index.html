@@ -3572,9 +3572,9 @@
 <li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the <code>dev branch</code></a></strong></li>
 </ul>
 <h2 id="build-dev-with-mac">Build <code>dev</code> with Mac<a class="headerlink" href="#build-dev-with-mac" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The same script is used to build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as is used to build the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Copy and paste this command in any terminal and choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Follow the instructions on the screen.</p>
+<p>The same script is used to build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as is used to build the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Copy and paste this command in any terminal. Follow the instructions on the screen. Choose Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and then choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <div class="highlight"><span class="filename">Copy and Paste to start the BuildLoop Script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot;
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh)&quot;
 </code></pre></div>
 <p>For more detailed instructions, head over to:</p>
 <ul>
@@ -3586,10 +3586,21 @@
 </li>
 </ul>
 <h3 id="build-other-branches">Build Other Branches<a class="headerlink" href="#build-other-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can use the BuildLoop script to build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> that was advertised in zulipchat but has not been merged into <code>dev</code>. At the end of the script (from above), add a space after the final quote, followed by a hyphen, another space and then the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name. See the example below that would build <code>other-branch</code>, if such a <abbr title="version of code within a single repository or workspace repository">branch</abbr> existed. This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.</p>
+<p>You can use the BuildLoop script to build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> that was advertised in zulipchat but has not been merged into <code>dev</code>. </p>
+<blockquote>
+<p>Note. You cannot use the BuildSelectScript to select a custom <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You must directly choose the app you wish to build. In this case, BuildLoop.</p>
+</blockquote>
+<p>In the command (shown below), there is a space after the final quote, followed by a hyphen, another space and then the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name. This example would build <code>other-branch</code>, if such a <abbr title="version of code within a single repository or workspace repository">branch</abbr> existed. </p>
+<blockquote>
+<p>This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.</p>
+</blockquote>
 <div class="highlight"><span class="filename">Replace <code>other-branch</code> with the desired branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
    - other-branch
+</code></pre></div>
+<p>If you want to customize this custom <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You can call the Customization Select script after you download the custom <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This script finds the most recent download in your ~/Downloads/BuildLoop folder. If you want to customize a specific <abbr title="version of code within a single repository or workspace repository">branch</abbr>, first set the terminal to be in the LoopWorkspace folder for the download you want to customize.</p>
+<div class="highlight"><span class="filename">Copy and paste to start the CustomizationSelect script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)&quot;
 </code></pre></div>
 <h2 id="update-loop-dev">Update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>While <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev is under active development, you should monitor zulipchat and update frequently.</p>
