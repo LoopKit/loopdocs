@@ -54,19 +54,16 @@ Do not use any of the beta macOS versions. (If you don't know what that means, y
 
 To find your macOS version, click on the Apple icon in the computer's upper left corner and select `About this Mac`. The graphic below highlights the macOS version with a red rectangle. Your computer can be a MacBook, iMac, macMini, etc. It will work to build Loop if it has the minimum required macOS version and enough storage.
 
-The screenshot on the left is from the older operating system, the one on the right is current.
-
-
-![image showing macOS and system details](img/macos-12-13.svg){width="750"}
+> ![image showing macOS and system details](img/macos-13_and_newer.svg){width="300"}
 
 To update your operating system:
 
-* Click on the Apple and choose `System Settings`
+* Click on the Apple and choose `System Settings` or click on the `More Info` button on the screen shown above
     * Select `General` and `Software Update`, just like you would on the phone interface
 
 ## Check the Space Available
 
-You need to have 50 GB free space in order to install Xcode as directed on the [Xcode Version](xcode-version.md) page. At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle, or, if running Ventura, tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
+You need to have 50 GB free space in order to install Xcode as directed on the [Xcode Version](xcode-version.md) page. Tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
 
  To free up space, move things like photos to an external drive. The Xcode application cannot be run from an external drive.
 
@@ -75,7 +72,7 @@ If you are evaluating a used computer, it's best to have at least 256 GB total d
 
 ## Which Macs Are Compatible with macOS Tahoe?
 
-Tahoe is not yet required for building the *Loop* app on a phone running iOS 26 with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+Tahoe (macOS 26) is not yet required for building the *Loop* app on a phone running iOS 26 with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
 
 * MacBook Pro introduced in 2020 or later
 * MacBook Air introduced in 2020 or later
@@ -88,7 +85,7 @@ Tahoe is not yet required for building the *Loop* app on a phone running iOS 26 
 
 ## Which Macs Are Compatible with macOS Sequoia?
 
-Sequoia is required for building the *Loop* app on a phone running iOS 18.6 or higher with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+Sequoia (macOS 15) is required for building the *Loop* app on a phone running iOS 18.6 or higher with the *Mac* method. 
 
 * MacBook Pro introduced in 2018 or later
 * MacBook Air introduced in 2020 or later
