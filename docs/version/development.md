@@ -12,11 +12,15 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
+This section provides an overview of changes to `dev` compared to `Loop 3.8.x`. 
   
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-The following features are found only in `dev` at this time. The updates are provided in reverse chronological order.
+There are no differences between `dev` and `main` at this time. 
+
+## Updates from 3.6 to 3.8
+
+The updates developed in `dev` are provided in reverse chronological order.
 
 ### v3.7.7
 
@@ -49,11 +53,7 @@ The changes are to maintenance scripts and to translations with no change to the
 
 ### v3.7.0 through v3.7.4
 
-* `dev` v3.7.4 is same as [`main` v3.6.4](releases.md#loop-v364).
-* `dev` v3.7.3 is same as [`main` v3.6.3](releases.md#loop-v363).
-* `dev` v3.7.2 is same as [`main` v3.6.2](releases.md#loop-v362).
-* `dev` v3.7.1 is same as [`main` v3.6.1](releases.md#loop-v361).
-* `dev` v3.7.0 is same as [`main` v3.6.0](releases.md#loop-v360).
+* `dev` v3.7.x was same as [`main` v3.6.x](releases.md#loop-v364).
 
 ## Updates from 3.4 to 3.6
 
