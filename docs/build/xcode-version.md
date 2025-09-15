@@ -75,32 +75,22 @@ After any update of [macOS](computer.md#check-your-macos-version) or Xcode, it i
 
 ## How do all the minimum versions relate to each other?
 
+This section is no longer updated.
+
+We used to keep track of the minimum Xcode and macOS that enabled users to keep building with their (often older) Mac computer.
+
+With the advent of browser build, this is no longer worth maintaining. If you don't or can't keep your Mac up to date, please use [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
+
+
 ### Compatible Versions
 
-The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xcode version 15 or higher regardless of the iOS on the phone. This requires macOS 13.5 or higher.
-
-* If your phone is iOS 17.4 or newer, you must have macOS 14.0 or higher.
-* If your phone is iOS 18.0 or newer, you must have macOS 14.5 or higher.
+* Before the release of iOS 26, the version of iOS was 18.6.2 and could be built with Xcode 16.4 and macOS 15.6.1
+* To build on an iOS 26 device, you must use Xcode 26 with macOS 15.6 or newer
 * As an alternative, use [Build with Browser](../browser/bb-overview.md){: target="_blank" }, which supports iOS 15, 16, 17 and 18.
-
-When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 18.0.1. Newer versions, macOS 15 and Xcode 16 work as well.
-
-> Release 3.4.2 and newer fix an issue building *Loop* with Xcode 16. If your current *Loop* app does not show your expiration date, please rebuild to version 3.4.4 as soon as possible.
-
-The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.4.4</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
-
-Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
-
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 15.1 to<br>17.0 | 15.0 | 13.5 |
 
 ### Wikipedia Chart for Apple Versions
 
-This graphic (copied from Wikipedia and last updated March 2023) is not updated with every iOS update - use it as a map to read the minimum requirements.  Every attempt will be made to update the words in the [Minimum Version List](#how-do-all-the-minimum-versions-relate-to-each-other) promptly - that's much easier than updating a graphic.
+This graphic (copied from Wikipedia and last updated March 2023) is provided as a map to read the minimum requirements.
 
 Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll down to the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
 

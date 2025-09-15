@@ -22,9 +22,9 @@
 
 The *Loop* app requires an *Apple* device and uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which used to be required, and is still strongly recommended, for the *Loop* app. It may be possible to run Loop with newer iPads and newer *iOS*, but this has not been tested.
 
-You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. The *Loop* app is compatible with iPhone devices with *iOS* 15.1 or newer. 
+You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. The *Loop* app is fully compatible with iPhone devices with *iOS* 16.1 or newer, and mostly compatible with *iOS* 15 devices.
 
-* It is unusual for four different *iOS* to be supported
+* It is unusual for five different *iOS* to be supported
 * The developers try to maintain support for the current and one-level earlier *iOS*
     * Be prepared for your *iOS* 15 device to no longer be supported in future releases
     * Be prepared for your *iOS* 16 device to no longer be supported in future releases
@@ -41,7 +41,11 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
     
     > DASH pods that advertise with a Bluetooth Device name of `TWI Board` and are fully compatible with all phones listed below.
 
-All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. Those that only support *iOS* 15 or 16 may become incompatible for the next version of the *Loop* app, but can be used with `Loop version 3.6.x`.
+All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. Those that only support *iOS* 15 or 16 may become incompatible for the next version of the *Loop* app, but can be used with `Loop version 3.8.x`.
+
+These phones require *iOS* 26
+
+- iPhone 17, all variants
 
 These phones require *iOS* 18
 
@@ -64,6 +68,13 @@ These phones are limited to *iOS* 16.
 - iPhone 8, all variants
 
 These phones are limited to *iOS* 15.
+
+**Warning**: several features of the *Loop* app do not work with *iOS* 15 devices for v3.8.0 and newer:
+
+* The Widget does not display properly
+* The Mixpanel Service is not available
+
+Other features of the *Loop* app do work, but please find a newer phone soon.
 
 - iPhone 7, all variants
 - iPhone 6s or 6s Plus, note the `s`

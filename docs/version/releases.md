@@ -8,9 +8,9 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.6.4 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.8.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> The current development version for the *Loop* app is v3.7.6 and is built from the `dev` branch of LoopWorkspace. See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference between `main` and `dev`.
+> The current development version for the *Loop* app is v3.9.0 and is built from the `dev` branch of LoopWorkspace. See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
 ### What Version Do I Have?
 
@@ -28,6 +28,33 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.8.x
+
+### Loop v3.8.0
+
+[*Loop* v3.8.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.0) was released on 14 September 2025.
+
+> When v3.8.0 was released, the `dev` branch version was similarly updated to v3.9.0
+
+#### v3.8.0 Highlights
+
+* Add support for Dana-i and DanaRS-v3 pump models
+* Update translations and convert to String Catalogs
+* Update to support iOS 26
+
+#### Limitations for *iOS* 15
+
+Note that iOS 15 devices do not support:
+
+* *Loop Widgets*, however, *Loop Widgets* continue to work with iOS 16 devices and iOS 18 and newer devices now support tinted widgets.
+* The Mixpanel Service is not available
+
+- - -
+
+## Loop v3.6.x
 
 ### Loop v3.6.4
 
@@ -166,6 +193,9 @@ Updates were made to the Omnipod pump submodules: OmniBLE and OmniKit. Unless ot
 * Logic fix for 049 pod fault with concurrent temp basal commands; fixed Trio Issue (PR 140, 48)
 * Logic fix for pump manager returns bogus podSuspended; fixed Trio Issue (PR 141, 49)
 
+- - -
+
+## Loop v3.4.x
 
 ### Loop v3.4.4
 
@@ -277,6 +307,9 @@ These features are added:
     * Glucose limits can now use the min or max value with no restrictions
 * Nightscout as a CGM works again for older iOS versions, it no longer requires iOS 17
 
+- - -
+
+## Loop v3.2.x
 
 ### Loop v3.2.3
 
@@ -332,7 +365,9 @@ Updates and new Features:
 * Add missing X-Large watch complications. [link](https://github.com/LoopKit/Loop/pull/1901)
 * “Deactivate Pod” button on some screens changed to not be so alarming, as it doesn’t actually deactivate the pod, but takes you to a screen where you can, and has an option to cancel: [link](https://github.com/LoopKit/OmniBLE/pull/76)
 
-### Loop v3.0.0
+- - -
+
+## Loop v3.0.0
 
 After several years of development and a lot of testing, Loop 3 is here!
 
@@ -426,7 +461,9 @@ For example:
     * `Loop v3.5.0` was the development version before `Loop v3.6.0` was released
 * `Loop v3.6.0` was the next minor release
     * `Loop v3.6.1`, `Loop v3.6.2`, `Loop v3.6.3` and `Loop v3.6.4` were updates without major changes to the features of `Loop v3.6`
-    * `Loop v3.7.7` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences between `main` and `dev`
+    * `Loop v3.7.7` was the development version before `Loop v3.8.0` was released
+* `Loop v3.8.0` was the next minor release
+    * `Loop v3.9.0` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences, if any, between `main` and `dev`
 
 - - -
 

@@ -38,26 +38,9 @@ If you have access to a computer with MacOS 14.0 or newer, you can skip ahead to
 
 ## Compatible Versions
 
-The current release of&nbsp;_<span translate="no">Loop</span>_&nbsp; requires Xcode version 15 or higher regardless of the iOS on the phone. This requires macOS 13.5 or higher.
+We used to keep track of the minimum Xcode and macOS that enabled users to keep building with their (often older) Mac computer.
 
-* If your phone is iOS 17.4 or newer, you must have macOS 14.0 or higher.
-* If your phone is iOS 18.0 or newer, you must have macOS 14.5 or higher.
-* As an alternative, use [Build with Browser](../browser/bb-overview.md){: target="_blank" }, which supports iOS 15, 16, 17 and 18.
-
-When this page was last updated, macOS 14.6 and Xcode 15.4 were tested to successfully build the app for phones with iOS 15 through iOS 18.0.1. Newer versions, macOS 15 and Xcode 16 work as well.
-
-> Release 3.4.2 and newer fix an issue building *Loop* with Xcode 16. If your current *Loop* app does not show your expiration date, please rebuild to version 3.4.4 as soon as possible.
-
-The table below lists the **minimum** requirements to build the current release of&nbsp;<span translate="no">Loop 3.4.4</span>. If your macOS or Xcode version is higher, you can build with *Mac*.
-
-Find your phone iOS in the table below. If your iOS is not listed, e.g., 17.6.1, choose the first row that is less than your iOS.
-
-| iOS Version | minimum Xcode | minimum macOS | 
-|:---:|:---:|:---:|
-| 18.0 | 15.4 | 14.5 |
-| 17.5 | 15.4 | 14.0 |
-| 17.4 | 15.3 | 14.0 |
-| 15.1 to<br>17.0 | 15.0 | 13.5 |
+With the advent of browser build, this is no longer worth maintaining. If you don't or can't keep your Mac up to date, please use [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
 
 !!! warning "iOS Dictates Your Computer Needs"
 
@@ -71,31 +54,38 @@ Do not use any of the beta macOS versions. (If you don't know what that means, y
 
 To find your macOS version, click on the Apple icon in the computer's upper left corner and select `About this Mac`. The graphic below highlights the macOS version with a red rectangle. Your computer can be a MacBook, iMac, macMini, etc. It will work to build Loop if it has the minimum required macOS version and enough storage.
 
-With the Ventura macOS version, the `About this Mac` display changed. For Ventura, when you tap on the `More Info` icon, it opens the General -> About screen from the System Settings menu. This is very similar to the phone Settings -> General -> About screen.
+> ![image showing macOS and system details](img/macos-13_and_newer.svg){width="300"}
 
-Sonoma, macOS 14.0, was released September 2023.
+To update your operating system:
 
-![image showing macOS and system details](img/macos-12-13.svg){width="750"}
-
-If you do not have the required minimum macOS version
-
-* For macOS 12.6.1 or earlier, check the `Software Update` button on the screen shown above
-* For macOS 13.0 or later, click on the Apple and choose `System Settings`
+* Click on the Apple and choose `System Settings` or click on the `More Info` button on the screen shown above
     * Select `General` and `Software Update`, just like you would on the phone interface
-
-Apple says upgrading to macOS Sonoma requires 26 GB of available storage.
 
 ## Check the Space Available
 
-You need to have 50 GB free space in order to install Xcode as directed on the [Xcode Version](xcode-version.md) page. At the top of the menu on the graphic above, click on the Storage Tab highlighted with a red rectangle, or, if running Ventura, tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
+You need to have 50 GB free space in order to install Xcode as directed on the [Xcode Version](xcode-version.md) page. Tap on More Info to open the About screen (under System Settings->General), which includes storage at the bottom of the display.
 
  To free up space, move things like photos to an external drive. The Xcode application cannot be run from an external drive.
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
+
+## Which Macs Are Compatible with macOS Tahoe?
+
+Tahoe (macOS 26) is not yet required for building the *Loop* app on a phone running iOS 26 with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+
+* MacBook Pro introduced in 2020 or later
+* MacBook Air introduced in 2020 or later
+* Mac mini introduced in 2020 or later
+* iMac introduced in late 2020 or later
+* iMac Pro introduced in 2017 or later
+* Mac Studio introduced in 2022 or later
+* Mac Pro introduced in 2019 or later
+* get the full list from [Apple](https://www.apple.com/os/macos/)
+
 ## Which Macs Are Compatible with macOS Sequoia?
 
-Sequoia is not yet required for building the *Loop* app on a phone running iOS 18 or higher with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments. The only difference between this list and the one for Sonoma is the MacBook Air must be newer for Sequoia.
+Sequoia (macOS 15) is required for building the *Loop* app on a phone running iOS 18.6 or higher with the *Mac* method. 
 
 * MacBook Pro introduced in 2018 or later
 * MacBook Air introduced in 2020 or later
@@ -105,19 +95,6 @@ Sequoia is not yet required for building the *Loop* app on a phone running iOS 1
 * Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
 * get the full list from [Apple for Sequoia](https://support.apple.com/en-us/120282)
-
-## Which Macs Are Compatible with macOS Sonoma?
-
-Sonoma is required for building the *Loop* app on a phone running iOS 17.4 or higher with the *Mac* method. You can install Sonoma on the following:
-
-* MacBook Pro introduced in 2018 or later
-* MacBook Air introduced in 2018 or later
-* Mac mini introduced in 2018 or later
-* iMac introduced in late 2019 or later
-* iMac Pro introduced in 2017 or later
-* Mac Studio introduced in 2022 or later
-* Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Sonoma](https://support.apple.com/en-us/105113)
 
 ## Older Macs
 

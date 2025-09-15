@@ -12,13 +12,19 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop 3.6.x`. 
+This section provides an overview of changes to `dev` compared to `Loop 3.8.x`. 
   
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-The following features are found only in `dev` at this time. The updates are provided in reverse chronological order.
+There are no differences between `dev` and `main` at this time. 
 
-### v3.7.7
+## Older updates
+
+### Updates from v3.6 to v3.8
+
+The updates developed in the `dev` branch before the release of v3.8.0, are provided in reverse chronological order.
+
+#### v3.7.7
 
 The changes are to maintenance scripts and to translations with no change to the function of the code:
 
@@ -34,7 +40,7 @@ The changes are to maintenance scripts and to translations with no change to the
     * conversion to use String Catalogs for localization in the submodules with associated tweaks to Xcode configuration
     * updates to the CircleCI configurations
 
-### v3.7.6
+#### v3.7.6
 
 * Updated some localization (strings translated to different languages)
     * Added scripts to make localization more streamlined
@@ -43,25 +49,21 @@ The changes are to maintenance scripts and to translations with no change to the
     * Discarded some unneeded files
     * Updated to Xcode 16.4 for browser build and CircleCI quality testing
 
-### v3.7.5
+#### v3.7.5
 
 * Added support for Dana-i and DanaRS-v3 pump models
 
-### v3.7.0 through v3.7.4
+#### v3.7.0 through v3.7.4
 
-* `dev` v3.7.4 is same as [`main` v3.6.4](releases.md#loop-v364).
-* `dev` v3.7.3 is same as [`main` v3.6.3](releases.md#loop-v363).
-* `dev` v3.7.2 is same as [`main` v3.6.2](releases.md#loop-v362).
-* `dev` v3.7.1 is same as [`main` v3.6.1](releases.md#loop-v361).
-* `dev` v3.7.0 is same as [`main` v3.6.0](releases.md#loop-v360).
+* `dev` v3.7.x was same as [`main` v3.6.x](releases.md#loop-v364).
 
-## Updates from 3.4 to 3.6
+### Updates from v3.4 to v3.6
 
 All updates are reported in [`Loop 3.6.0`](releases.md#loop-v360){: target="_blank" }
 
 Check [Version History](releases.md#loop-3-version-history) for minor updates found in 3.6.x.
 
-## Updates from 3.2 to 3.4
+### Updates from v3.2 to v3.4
 
 Features new with v3.4, originally in the Updates in `dev` section before the release, have been inserted into the appropriate part of the *LoopDocs* website (indicated by the up-right arrow after the link). The links below are left to assist people in finding the features.
 
