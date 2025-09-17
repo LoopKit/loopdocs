@@ -10,7 +10,7 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 !!! question "Switching Pumps?"
     To change the pump connected to Loop go to [Change Pump Type](#change-pump-type).
 
-Loopers can choose from 4 pumps and a simulator:
+Loopers can choose from 5 pumps and a simulator:
 
 * Minimed
     * Note: only some Minimed pumps are compatible
@@ -20,6 +20,7 @@ Loopers can choose from 4 pumps and a simulator:
 * Dana-i / DanaRS-v3 (dev branch only)
     * Some Dana pumps are currently supported with the [dev branch](../version/build-dev.md#build-loop-dev){: target="_blank" }
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
+* Medtrum Nano patch pump
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -356,6 +357,67 @@ DanaKit doesn't provide a heartbeat by default.
 
 Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-faq.md).
 
+## Medtrum Nano
+
+!!! warning "You must build feat/medtrum branch to use Medtrum patch pumps"
+    The Medtrum patch pump is in feat/medtrum (as of version v3.7.5) and is experimental as of now
+
+!!! info "All versions are supported!"
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
+
+!!! warning "Always check your REF's"
+    Before connecting your pump base with your patch, always check the REF on your patch with the REF on your pump base.
+    The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1.
+    Do not use the patch if they do not match.
+
+    ![Medtrum REF](img/medtrum-ref.JPG){width="450"}
+    {align="center"}
+
+You can only add the Medtrum patch pump when no pump is selected.
+If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
+
+1. Select [Insulin Type](#insulin-type)
+1. Check [Patch settings](#patch-settings)
+1. Enter your [pump base Serial Number](#check-pump-base-serial-number)
+1. Prime & Activate patch. See [Activation flow patch](#activation-flow)
+
+![Full Medtrum flow](img/medtrum-total.png){align="center"}
+
+### Patch settings
+
+!!! info "Good to know"
+    All of these settings can be adjusted throughout the lifespan of the patch. You can safely update them after activating the patch
+
+There are several settings you can setup while using Medtrum nano with the *Loop* app:
+
+1. `Max hourly insulin` & `Max daily insulin`: Medtrum Nano does not work with max bolus and max basal settings, it uses max hourly & max daily insulin. Just like the names suggests, it controls the maximum amount of insulin per hour or per day. 
+1. `Alarm setting`: The Medtrum Nano has the ability to make a beep it there is an occlusion, patch fault, empty battery, etc. These alarms can also be silenced using this setting
+1. `Patch lifetime`: Normally, the medtrum nano runs for 3 days and 8 hours. This ensures the funcioning of the patch. You can disable this limit with this setting to extend the lifetime of the patch untill an failure occures, like an occlusion, empty battery, etc
+1. `Notification for expiration patch`: If the `Patch lifetime` setting is set to normal lifetime, you have the ability to update this setting. With this setting, you can control at what point you get a reminder notification for replacing the patch
+
+### Check pump base serial number
+
+After checking the patch settings, you are prompted to enter the pump base serial number.
+This serial number is used by the *Loop* app to connect to the correct pump base.
+To see you serial number, grab your pump base and look at the bottom of the base.
+It should have a QR code and a small 8 character serial number.
+See image below:
+
+![Medtrum SN example](img/medtrum-sn.png){width="450"}
+{align="center"}
+
+### Activation flow
+
+!!! warning "IMPORTANT"
+    While the priming is running, DO NOT USE THE CANCEL BUTTON.
+    This might corrupt the activation flow, so please be patience while the priming process is running.
+
+After the serial number prompt, you need to setup the patch itself.
+Follow the visual guide in the *Loop* app and press "Start priming" to start priming the cannula of the patch.
+It is important to not attach the patch on your body while the priming process has not completed.
+
+After priming, follow the rest of the visual guide in the *Loop* app.
+From here, you can attach the patch to your body and complete the activation process.
 
 ## Change Pump Type
 

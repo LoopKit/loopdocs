@@ -10,6 +10,7 @@
     - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - If you use [Omnipod](#omnipod-pumps) - check which kind
     - If you use [Dana](#sooil-dana-pumps) - check which kind
+    - If you use [Medtrum Nano](#medtrum-touchcare-nano) - Check which loop version
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
@@ -26,7 +27,8 @@ These types of pumps are compatible with the *Loop* app.
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
     * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (dev branch only, v3.7.5 or newer))
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (dev branch only, v3.7.5 or newer)
+* [Medtrum Touchcare Nano](#medtrum-touchcare-nano) (feature branch only)
 
 ## Check Medtronic Pump Version
 
@@ -212,6 +214,24 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 > The *Loop* app v3.7.5 or newer (built with dev branch of `LoopWorkspace`) supports the DanaRS-v3. 
 
 ![DanaRS-v3](img/danars.png){width="250"}
+{align="center"}
+
+## Medtrum Nano
+
+!!! warning "You must build feat/medtrum branch to use Medtrum patch pumps"
+    The Medtrum patch pump is in feat/medtrum (as of version v3.7.5) and is experimental as of now
+
+!!! info "All versions are supported!"
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
+
+**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Loop* app.**
+
+
+The Medtrum patch pump is the second tubeless pump option available to the *Loop* app.
+The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
+It uses a steel cannula, instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
+
+![Medtrum Nano 200U](img/medtrum.jpeg){width="250"}
 {align="center"}
 
 ## Next Step: Compatible CGM
