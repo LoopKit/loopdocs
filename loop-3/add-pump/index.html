@@ -1895,6 +1895,48 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#medtrum-nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      Medtrum Nano
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medtrum Nano">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patch-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patch settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-pump-base-serial-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check pump base serial number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#change-pump-type" class="md-nav__link">
     <span class="md-ellipsis">
       Change Pump Type
@@ -3856,6 +3898,48 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#medtrum-nano" class="md-nav__link">
+    <span class="md-ellipsis">
+      Medtrum Nano
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medtrum Nano">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patch-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patch settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-pump-base-serial-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check pump base serial number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#change-pump-type" class="md-nav__link">
     <span class="md-ellipsis">
       Change Pump Type
@@ -3890,7 +3974,7 @@
 <p class="admonition-title">Switching Pumps?</p>
 <p>To change the pump connected to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> go to <a href="#change-pump-type">Change Pump Type</a>.</p>
 </div>
-<p>Loopers can choose from 4 pumps and a simulator:</p>
+<p>Loopers can choose from 5 pumps and a simulator:</p>
 <ul>
 <li>Minimed<ul>
 <li>Note: only some Minimed pumps are compatible</li>
@@ -3904,6 +3988,7 @@
 <li>Note: DanaRS-v1 or any Dana Korean versions are not supported</li>
 </ul>
 </li>
+<li>Medtrum Nano patch pump</li>
 <li>Insulin Pump Simulator</li>
 </ul>
 <div class="admonition info">
@@ -4197,6 +4282,69 @@ Without a heartbeat, the <em><abbr title="With a capital L, Loop is one of sever
 <p>Some pumps can also provide a heartbeat if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> you choose cannot provide one.</p>
 <p>DanaKit doesn't provide a heartbeat by default.</p>
 <p>Therefore, it is important to check if your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See <a href="../../troubleshooting/dana-faq/">Dana Heartbeat Modes</a>.</p>
+<h2 id="medtrum-nano">Medtrum Nano<a class="headerlink" href="#medtrum-nano" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">You must build feat/dev-medtrum <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use Medtrum patch pumps</p>
+<p>The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">All versions are supported!</p>
+<p>Both 200U (MD0201 &amp; MD8201) and 300U (MD8301) version are supported with the correct version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Always check your REF's</p>
+<p>Before connecting your pump base with your patch, always check the REF on your patch with the REF on your pump base.
+The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1.
+Do not use the patch if they do not match.</p>
+<p align="center"><img alt="Medtrum REF" src="../img/medtrum-ref.JPG" width="450" /></p>
+</div>
+<p>You can only add the Medtrum patch pump when no pump is selected.
+If you already have a pump selected, you must first delete the pump as detailed in <a href="#change-pump-type">Change Pump Type</a>.</p>
+<ol>
+<li>Select <a href="#insulin-type">Insulin Type</a></li>
+<li>Check <a href="#patch-settings">Patch settings</a></li>
+<li>Enter your <a href="#check-pump-base-serial-number">pump base Serial Number</a></li>
+<li>Prime &amp; Activate patch. See <a href="#activation-flow">Activation flow patch</a><ol>
+<li>Note, make sure the pump base is connected to your patch before adding insulin</li>
+</ol>
+</li>
+</ol>
+<p><img align="center" alt="Full Medtrum flow" src="../img/medtrum-total.png" /></p>
+<h3 id="patch-settings">Patch settings<a class="headerlink" href="#patch-settings" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Good to know</p>
+<p>All of these settings can be adjusted throughout the lifespan of the patch. You can safely update them after activating the patch</p>
+</div>
+<p>There are several settings you can setup while using Medtrum nano with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app:</p>
+<ol>
+<li><code>Max hourly insulin</code> &amp; <code>Max daily insulin</code>: Medtrum Nano does not work with max bolus and max basal settings, it uses max hourly &amp; max daily insulin. Just like the names suggests, it controls the maximum amount of insulin per hour or per day. </li>
+<li><code>Alarm setting</code>: The Medtrum Nano has the ability to make a beep it there is an occlusion, patch fault, empty battery, etc. These alarms can also be silenced using this setting</li>
+<li><code>Patch lifetime</code>: Normally, the medtrum nano runs for 3 days and 8 hours. This ensures the funcioning of the patch. You can disable this limit with this setting to extend the lifetime of the patch untill an failure occures, like an occlusion, empty battery, etc</li>
+<li><code>Notification for expiration patch</code>: If the <code>Patch lifetime</code> setting is set to normal lifetime, you have the ability to update this setting. With this setting, you can control at what point you get a reminder notification for replacing the patch</li>
+</ol>
+<h3 id="check-pump-base-serial-number">Check pump base serial number<a class="headerlink" href="#check-pump-base-serial-number" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>After checking the patch settings, you are prompted to enter the pump base serial number.
+This serial number is used by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app to connect to the correct pump base.
+To see your serial number, grab your pump base and look at the bottom of the base.
+It should have a <abbr title="a machine-readable code consisting of an array of black and white squares">QR</abbr> code and a small 8 character serial number.
+See image below:</p>
+<p align="center"><img alt="Medtrum SN example" src="../img/medtrum-sn.png" width="450" /></p>
+<h3 id="activation-flow">Activation flow<a class="headerlink" href="#activation-flow" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">IMPORTANT</p>
+<p>While the priming is running, DO NOT USE THE CANCEL BUTTON.
+This might corrupt the activation flow, so please be patience while the priming process is running.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">IMPORTANT</p>
+<p>Connect your pump base to the patch before adding insulin to your patch.
+Otherwise, you might corrupt the activation flow.</p>
+</div>
+<p>After the serial number prompt, you need to setup the patch itself.
+Follow the visual guide in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and press "Start priming" to start priming the cannula of the patch.
+It is important to not attach the patch on your body before the priming process completes.</p>
+<p>After priming, follow the rest of the visual guide in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.
+From here, you can attach the patch to your body and complete the activation process.</p>
 <h2 id="change-pump-type">Change Pump Type<a class="headerlink" href="#change-pump-type" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Before changing from one pump type to another pump type, you must delete the old pump type.</p>
 <ul>
