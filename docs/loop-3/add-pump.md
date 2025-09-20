@@ -359,8 +359,8 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 
 ## Medtrum Nano
 
-!!! warning "You must build feat/medtrum branch to use Medtrum patch pumps"
-    The Medtrum patch pump is in feat/medtrum (as of version v3.7.5) and is experimental as of now
+!!! warning "You must build feat/dev-medtrum branch to use Medtrum patch pumps"
+    The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
@@ -380,6 +380,7 @@ If you already have a pump selected, you must first delete the pump as detailed 
 1. Check [Patch settings](#patch-settings)
 1. Enter your [pump base Serial Number](#check-pump-base-serial-number)
 1. Prime & Activate patch. See [Activation flow patch](#activation-flow)
+    1. Note, make sure the pump base is connected to your patch before adding insulin
 
 ![Full Medtrum flow](img/medtrum-total.png){align="center"}
 
@@ -399,7 +400,7 @@ There are several settings you can setup while using Medtrum nano with the *Loop
 
 After checking the patch settings, you are prompted to enter the pump base serial number.
 This serial number is used by the *Loop* app to connect to the correct pump base.
-To see you serial number, grab your pump base and look at the bottom of the base.
+To see your serial number, grab your pump base and look at the bottom of the base.
 It should have a QR code and a small 8 character serial number.
 See image below:
 
@@ -412,9 +413,13 @@ See image below:
     While the priming is running, DO NOT USE THE CANCEL BUTTON.
     This might corrupt the activation flow, so please be patience while the priming process is running.
 
+!!! warning "IMPORTANT"
+    Connect your pump base to the patch before adding insulin to your patch.
+    Otherwise, you might corrupt the activation flow.
+
 After the serial number prompt, you need to setup the patch itself.
 Follow the visual guide in the *Loop* app and press "Start priming" to start priming the cannula of the patch.
-It is important to not attach the patch on your body while the priming process has not completed.
+It is important to not attach the patch on your body before the priming process completes.
 
 After priming, follow the rest of the visual guide in the *Loop* app.
 From here, you can attach the patch to your body and complete the activation process.

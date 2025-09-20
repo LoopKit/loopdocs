@@ -28,7 +28,7 @@ These types of pumps are compatible with the *Loop* app.
 * [Omnipod DASH pumps](#omnipod-dash)
     * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
 * [Dana-i / DanaRS-v3](#sooil-dana-pumps) (dev branch only, v3.7.5 or newer)
-* [Medtrum Touchcare Nano](#medtrum-touchcare-nano) (feature branch only)
+* [Medtrum Touchcare Nano](#medtrum-nano) (feat/dev-medtrum branch only, v3.9.0 or newer)
 
 ## Check Medtronic Pump Version
 
@@ -218,8 +218,8 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 ## Medtrum Nano
 
-!!! warning "You must build feat/medtrum branch to use Medtrum patch pumps"
-    The Medtrum patch pump is in feat/medtrum (as of version v3.7.5) and is experimental as of now
+!!! warning "You must build feat/dev-medtrum branch to use Medtrum patch pumps"
+    The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
