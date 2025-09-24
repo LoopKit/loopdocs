@@ -3629,13 +3629,12 @@ You will get a full wizard based on the type of refill you want to do!</li>
 <p align="center"><img alt="Dana Blind refill" src="../img/dana-blind-refill.png" width="250" /></p>
 <h2 id="heartbeat-modes">Heartbeat modes<a class="headerlink" href="#heartbeat-modes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="background-sound">Background sound<a class="headerlink" href="#background-sound" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>An extra feature available for the Dana pumps is the background sound.
-This feature was developed in order to keep the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app running in the background.</p>
-<p>Normally, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> will have an active Bluetooth connection, which prevent the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app from being put into a suspended state.
-But when you are planning on using a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, like <a href="../../loop-3/add-cgm/#nightscout-remote-cgm">NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, <a href="../../loop-3/add-cgm/#dexcom-share-as-a-cgm">Dexcom Share</a>, etc, you rely on a active internet connection, and not on an active Bluetooth connection.</p>
-<p>In order to activate, follow these steps:</p>
-<ol>
-<li>
+<p>An optional feature for Dana, useful when using a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> without a heartbeat, is to play a silent audio to keep the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app active when in the background or the phone is locked.</p>
+<p>Normally, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> will have an active Bluetooth connection, which prevents the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app from being put into a suspended state.
+But when you use a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> like <a href="../../loop-3/add-cgm/#nightscout-remote-cgm">NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, <a href="../../loop-3/add-cgm/#dexcom-share-as-a-cgm">Dexcom Share</a>, etc, you rely on a active internet connection, and not on an active Bluetooth connection.</p>
+<details class="abstract">
+<summary>Versions older than 3.8.1 or 3.9.1 (click to open)</summary>
+<p>This modification is not required for code newer than version 3.8.1 (main) or 3.9.1 (dev). It was required for v3.8.0/v3.9.0 and older versions.</p>
 <p>Activate the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes">UIBackgroundMode - audio</a>:</p>
 <ul>
 <li>
@@ -3655,7 +3654,7 @@ Just before this command, add the following to this script (<a href="https://git
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code>- name: Update entitlement background sound
-  run: sed -i -e &#39;s/&lt;string&gt;bluetooth-central&lt;\/string&gt;/&lt;string&gt;bluetooth-central&lt;\/string&gt;&lt;string&gt;audio&lt;\/string&gt;/g&#39; Loop/Loop/Info.plist
+run: sed -i -e &#39;s/&lt;string&gt;bluetooth-central&lt;\/string&gt;/&lt;string&gt;bluetooth-central&lt;\/string&gt;&lt;string&gt;audio&lt;\/string&gt;/g&#39; Loop/Loop/Info.plist
 </code></pre></div>
 <ul>
 <li>To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
@@ -3663,20 +3662,29 @@ Enter a message and press the green "Commit &amp; Push"-button.
 By pressing this button, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will automatically make a new browser build for you and push it to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>
 <img alt="Github web ide example" src="../img/background-sound-web-ide.png" /></li>
 </ul>
-</li>
+</details>
+<blockquote>
+<p>If you have older code, before main v3.8.1 or dev v3.9.1, open the box above for instructions on a required modification.</p>
+</blockquote>
+<p>After you have onboarded the Dana pump, go to the pump settings.</p>
+<ul>
 <li>
-<p>After you have done the onboarding of the pump (see steps above), go to the pump settings.
-    Scroll down the "Pump name" and long-press this row.
-    A <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> should pop-up with the question, whether you want to toggle Silent tones.</p>
-<p align="center">In order to activate this feature, the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> should say something like: <code>Yes, Enable silent tones</code>.
-When it says: <code>Yes, Disable silent tones</code>, it will disable the background sounds.
-<img alt="Loop example background sound" src="../img/background-sound-loop.jpeg" width="250" /></p>
+<p>Scroll down to the "Pump name" and long-press this row.</p>
+<ul>
+<li>A <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> should pop-up with the question, whether you want to toggle Silent tones.</li>
+<li>In order to activate this feature, the <abbr title="message or alert appearing in front of app that must be acknowledged to return to app">modal</abbr> should say something like: <code>Yes, Enable silent tones</code>.</li>
+<li>When it says: <code>Yes, Disable silent tones</code>, it will disable the background sounds.</li>
+</ul>
+<blockquote>
+<p align="center"><img alt="Loop example background sound" src="../img/background-sound-loop.jpeg" width="250" /></p>
+</blockquote>
 </li>
 <li>
 <p>Done!
-    Every time you put the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app in the background, it will play a toneless sound, which prevents it from suspending the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</p>
+    Every time you put the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app in the background or lock the phone, it will play a toneless sound, which prevents it from suspending the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</p>
 </li>
-</ol>
+<li>Warning - this will affect your phone battery life</li>
+</ul>
 <h3 id="continuous-bluetooth-mode">Continuous bluetooth mode<a class="headerlink" href="#continuous-bluetooth-mode" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This mode replicates how a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> works: it keeps the bluetooth connection open even though no commands are being executed.</p>
 <h4 id="how-to-unblock-the-pumps-ui">How to unblock the pump's UI<a class="headerlink" href="#how-to-unblock-the-pumps-ui" title="Anchor link to this Header on this Page">&para;</a></h4>

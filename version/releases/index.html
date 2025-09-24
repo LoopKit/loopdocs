@@ -2666,6 +2666,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v381" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop v3.8.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v380" class="md-nav__link">
     <span class="md-ellipsis">
       Loop v3.8.0
@@ -3779,6 +3788,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v381" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop v3.8.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v380" class="md-nav__link">
     <span class="md-ellipsis">
       Loop v3.8.0
@@ -4013,9 +4031,10 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.8.0 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.8.1 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <blockquote>
-<p>The current development version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.9.0 and is built from the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. See <a href="../development/#updates-in-dev" target="_blank">Updates in <code>dev</code></a> for a summary of difference, if any, between <code>main</code> and <code>dev</code>.</p>
+<p>When main is updated to v3.8.1 for a hotfix, the same hotfix is applied to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. It may take a day before the hotfix/dev_3.9.1 <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> is merged.</p>
+<p>See <a href="../development/#updates-in-dev" target="_blank">Updates in <code>dev</code></a> for a summary of difference, if any, between <code>main</code> and <code>dev</code>.</p>
 </blockquote>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left. (This graphic shows an older release.)</p>
@@ -4027,6 +4046,27 @@
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
 <hr />
 <h2 id="loop-v38x"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.x<a class="headerlink" href="#loop-v38x" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="loop-v381"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.1<a class="headerlink" href="#loop-v381" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.1</a> was released on 23 September 2025.</p>
+<p>This was released as a hotfix:</p>
+<ul>
+<li>the designed behavior of tapping on the bolus line should automatically replace the recommended value with zero</li>
+<li>this stopped working after changes were made to this interface to accommodate <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 26</li>
+</ul>
+<p>When putting together the hotfix, the following additional updates were included:</p>
+<ul>
+<li>Bring in updates from DanaKit</li>
+<li>Restore expected behavior for G6 of going to <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Manager screen, instead of the Dexcom app, when tapping on glucose in the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr></li>
+<li>Update Gemfile and Gemfile.lock to fix a security warning</li>
+<li>Add audio capability to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to support DanaKit optional behavior and possible OmniBLE InPlay/iPhone 16 work-around later<ul>
+<li>Dana users no longer need to modify the code to use <a href="../../troubleshooting/dana-faq/#background-sound" target="_blank">Background Sound</a> if their <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not have a heartbeat</li>
+</ul>
+</li>
+<li>Update some translations</li>
+</ul>
+<blockquote>
+<p>When main is updated to v3.8.1 for a hotfix, the same hotfix is applied to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. It may take a day before the hotfix/dev_3.9.1 <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> is merged.</p>
+</blockquote>
 <h3 id="loop-v380"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.0<a class="headerlink" href="#loop-v380" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.0"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.0</a> was released on 14 September 2025.</p>
 <blockquote>
