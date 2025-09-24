@@ -64,11 +64,10 @@ You will get a full wizard based on the type of refill you want to do!
 
 ### Background sound
 
-An extra feature available for the Dana pumps is the background sound.
-This feature was developed in order to keep the *Loop* app running in the background.
+An optional feature for Dana, useful when using a CGM without a heartbeat, is to play a silent audio to keep the *Loop* app active when in the background or the phone is locked.
 
-Normally, your CGM will have an active Bluetooth connection, which prevent the *Loop* app from being put into a suspended state.
-But when you are planning on using a CGM, like [NightScout remote CGM](../loop-3/add-cgm.md#nightscout-remote-cgm), [Dexcom Share](../loop-3/add-cgm.md#dexcom-share-as-a-cgm), etc, you rely on a active internet connection, and not on an active Bluetooth connection.
+Normally, your CGM will have an active Bluetooth connection, which prevents the *Loop* app from being put into a suspended state.
+But when you use a CGM like [NightScout remote CGM](../loop-3/add-cgm.md#nightscout-remote-cgm), [Dexcom Share](../loop-3/add-cgm.md#dexcom-share-as-a-cgm), etc, you rely on a active internet connection, and not on an active Bluetooth connection.
 
 ??? abstract "Versions older than 3.8.1 or 3.9.1 (click to open)"
     This modification is not required for code newer than version 3.8.1 (main) or 3.9.1 (dev). It was required for v3.8.0/v3.9.0 and older versions.

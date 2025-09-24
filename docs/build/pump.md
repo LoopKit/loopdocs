@@ -193,14 +193,14 @@ Loop does not support Omnipod 5 pods.
 ## Sooil Dana pumps
 
 !!! warning "Dana pumps support is new - pay attention"
-    The Dana pump now supported with the released *Loop* app.
+    The Dana pump is supported with the released *Loop* app, v3.8.0 or newer.
     
     Follow the [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20support.20for.20Loop) if you need additional support for the Dana pump.
 
     Read these pages in LoopDocs:
 
-    * [Add a Dana Pump](../loop-3/add-pump.md#dana-i--danars-v3){: target="_blank" }
-    * [Dana Troubleshooting](){: target="_blank" }
+    * [Add a Dana Pump](../loop-3/add-pump.md#dana-i-danars-v3){: target="_blank" }
+    * [Dana Troubleshooting](../troubleshooting/dana-faq.md){: target="_blank" }
 
 **Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Loop* app.**
 
@@ -208,7 +208,7 @@ Loop does not support Omnipod 5 pods.
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
 
-> The *Loop* app v3.7.5 or newer (built with dev branch of `LoopWorkspace`) supports the Dana-i. 
+> The *Loop* app v3.7.5 or newer supports the Dana-i. 
 
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
@@ -218,7 +218,7 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
-> The *Loop* app v3.7.5 or newer (built with dev branch of `LoopWorkspace`) supports the DanaRS-v3. 
+> The *Loop* app v3.7.5 or newer supports the DanaRS-v3. 
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
