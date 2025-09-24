@@ -10,7 +10,9 @@ For information about version 2 releases and compatibility between version 2 and
 
 The current released version for the *Loop* app is v3.8.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> The current development version for the *Loop* app is v3.9.1 and is built from the `dev` branch of LoopWorkspace. See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
+> When main is updated to v3.8.1 for a hotfix, the same hotfix is applied to the `dev` branch. It may take a day before the hotfix/dev_3.9.1 PR is merged.
+
+> See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
 ### What Version Do I Have?
 
