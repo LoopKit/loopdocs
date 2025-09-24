@@ -8,9 +8,11 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.8.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.8.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> The current development version for the *Loop* app is v3.9.0 and is built from the `dev` branch of LoopWorkspace. See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
+> When main is updated to v3.8.1 for a hotfix, the same hotfix is applied to the `dev` branch. It may take a day before the hotfix/dev_3.9.1 PR is merged.
+
+> See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
 ### What Version Do I Have?
 
@@ -32,6 +34,26 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 - - -
 
 ## Loop v3.8.x
+
+### Loop v3.8.1
+
+[*Loop* v3.8.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1) was released on 23 September 2025.
+
+This was released as a hotfix:
+
+* the designed behavior of tapping on the bolus line should automatically replace the recommended value with zero
+* this stopped working after changes were made to this interface to accommodate iOS 26
+
+When putting together the hotfix, the following additional updates were included:
+
+* Bring in updates from DanaKit
+* Restore expected behavior for G6 of going to CGM Manager screen, instead of the Dexcom app, when tapping on glucose in the HUD
+* Update Gemfile and Gemfile.lock to fix a security warning
+* Add audio capability to Loop to support DanaKit optional behavior and possible OmniBLE InPlay/iPhone 16 work-around later
+    * Dana users no longer need to modify the code to use [Background Sound](../troubleshooting/dana-faq.md#background-sound){: target="_blank" } if their CGM does not have a heartbeat
+* Update some translations
+
+> When main is updated to v3.8.1 for a hotfix, the same hotfix is applied to the `dev` branch. It may take a day before the hotfix/dev_3.9.1 PR is merged.
 
 ### Loop v3.8.0
 

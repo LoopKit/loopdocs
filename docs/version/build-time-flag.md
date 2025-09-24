@@ -54,7 +54,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(SWIFT_ACTIVE_COMPILATION_CONDITIONS) SIR
 |OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED|Turns on ability for Loop to read third party carb entries. You must also make sure Health permissions allow Loop to read carbs from Health. Be vigilant if you select this; added carbs lead to added insulin dosing when closed loop is enabled|
 |SHOW_EVENTUAL_BLOOD_GLUCOSE_ON_WATCH_DISABLED|The Apple Watch screens show current glucose, trend arrow and eventual glucose by default. This flag disables the display of eventual glucose on the watch if you find the display distracting.|
 |PREDICTED_GLUCOSE_CHART_CLAMP_ENABLED|[Chart Clamp](#chart-clamp)|
-|ALLOW_ALGORITHM_EXPERIMENTS|**dev branch only**<br><br>This is enabled by default to show Algorithm Experiments below the Therapy Settings row. This enables the user to separately enable or disable Glucose Based Partial Application and Integral Retrospective Correction|
+|ALLOW_ALGORITHM_EXPERIMENTS|This is enabled by default to show Algorithm Experiments below the Therapy Settings row. This enables the user to separately enable or disable Glucose Based Partial Application and Integral Retrospective Correction|
 
 ### Chart Clamp
 

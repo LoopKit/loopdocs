@@ -17,8 +17,7 @@ Loopers can choose from 5 pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* Dana-i / DanaRS-v3 (dev branch only)
-    * Some Dana pumps are currently supported with the [dev branch](../version/build-dev.md#build-loop-dev){: target="_blank" }
+* Dana-i / DanaRS-v3 (v3.7.5 or newer)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
 * Medtrum Nano patch pump
 * Insulin Pump Simulator
@@ -56,7 +55,7 @@ Here is an overview of the different steps for adding each pump.  Before changin
 
 #### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3)
 
-> Requires dev branch, v3.7.5 or newer
+> Requires v3.7.5 or newer
 
 1. [Select Dana-i/DanaRS-v3](#select-dana-idanars-v3)
 1. [Insulin Type](#insulin-type)
@@ -239,9 +238,6 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 
 ## Dana-i / DanaRS-v3
 
-!!! important "Dana Support requires dev branch"
-    The Dana pump is not part of the released code but is included in the dev branch for v3.7.5 and newer.
-
 !!! info "Support for Dana-i"
     All versions of the Dana-i are supported at the moment!
 
@@ -355,7 +351,7 @@ Some pumps can also provide a heartbeat if the CGM you choose cannot provide one
 
 DanaKit doesn't provide a heartbeat by default.
 
-Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-faq.md).
+Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-faq.md#heartbeat-modes){: target="_blank" }.
 
 ## Medtrum Nano
 
