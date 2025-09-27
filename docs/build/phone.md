@@ -22,36 +22,45 @@
 
 The *Loop* app requires an *Apple* device and uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which used to be required, and is still strongly recommended, for the *Loop* app. It may be possible to run Loop with newer iPads and newer *iOS*, but this has not been tested.
 
-You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. The *Loop* app is fully compatible with iPhone devices with *iOS* 16.1 or newer, and mostly compatible with *iOS* 15 devices.
+You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone.
 
-* It is unusual for five different *iOS* to be supported
-* The developers try to maintain support for the current and one-level earlier *iOS*
-    * Be prepared for your *iOS* 15 device to no longer be supported in future releases
-    * Be prepared for your *iOS* 16 device to no longer be supported in future releases
+* As of v3.8.x, you must use iPhone devices with *iOS* 16.1 or newer
+* The next release will require *iOS* 17 or newer
+    * All phones that support *iOS* 17, also support 18 and 26
+
+* The developers maintain support for the current and one-level earlier *iOS*
+ 
+### iPhone 16 and InPlay DASH pods
+
+!!! warning "iPhone 16 and Omnipod DASH"
+    Some of the DASH pods produced in 2025 have different chips and firmware. 
+    
+    * These pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16
+    * Early reports indicate the `InPlay BLE` pods work fine with iPhone 17
+    * Although `InPlay` pods do work with the 16 you may notice some communication issues
+        * It can take many attempts to get the pod to initially connect when pairing; just keep hitting retry
+        * Once the pod disconnects itself from the phone Bluetooth, the phone is slow to reconnect the pod to the *Loop* app
+            * Pod firmware initiates the disconnect 3 minutes after the last message exchange
+            * With other models, the reconnect happens in about 1 sec
+            * With iPhone 16, this can take many seconds and sometimes a few minutes
+        * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
+        * No solution to this issue is known
+    
+    > DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones included the iPhone 16.
 
 ### Compatible Device
 
-!!! warning "iPhone 16 and Omnipod DASH"
-    At the current time, some DASH pods produced in 2025 have different chips and firmware than were used for earlier manufacturing dates. 
-    
-    * These pods, which advertise with a Bluetooth Device name of `InPlay BLE` are fully compatible with all iPhone models listed below except iPhone 16
-    * They still work with the 16 but can be slow (seconds to minutes) to connect (and reconnect) to the *Loop* app
-    * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
-    * No solution to this issue is known (yet)
-    
-    > DASH pods that advertise with a Bluetooth Device name of `TWI Board` and are fully compatible with all phones listed below.
+All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. 
 
-All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. Those that only support *iOS* 15 or 16 may become incompatible for the next version of the *Loop* app, but can be used with `Loop version 3.8.x`.
-
-These phones require *iOS* 26
+These phones require *iOS* 26 and `Loop version 3.8.x` or newer
 
 - iPhone 17, all variants
 
-These phones require *iOS* 18
+These phones require *iOS* 18 and are compatible with *iOS* 26
 
 - iPhone 16, all variants
 
-These phones are compatible with both *iOS* 17 and 18
+These phones are compatible with *iOS* 17, 18 and 26
 
 - iPhone 15, all variants
 - iPhone 14, all variants
@@ -62,17 +71,24 @@ These phones are compatible with both *iOS* 17 and 18
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
+### Older Devices
+
+If you are currently using an *iOS* 16 device, plan to replace it soon. The next version of the *Loop* app will require *iOS* 17 or newer.
+
 These phones are limited to *iOS* 16.
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants
 
-These phones are limited to *iOS* 15.
+### Not Supported
 
-**Warning**: several features of the *Loop* app do not work with *iOS* 15 devices for v3.8.0 and newer:
+These phones are limited to *iOS* 15 and are no longer supported by the developers.
+
+**Warning**: several features of the *Loop* app do not work with *iOS* 15 devices:
 
 * The Widget does not display properly
 * The Mixpanel Service is not available
+* Some screens show up in different languages than the one selected for v3.8.0 and newer
 
 Other features of the *Loop* app do work, but please find a newer phone soon.
 
