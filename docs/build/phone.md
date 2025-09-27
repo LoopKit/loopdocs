@@ -44,9 +44,10 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
             * With other models, the reconnect happens in about 1 sec
             * With iPhone 16, this can take many seconds and sometimes a few minutes
         * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
-        * No solution to this issue is known (yet)
+        * No solution to this issue is known
     
-    > DASH pods that advertise with a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones included the iPhone 16.
+    > DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones included the iPhone 16.
+
 ### Compatible Device
 
 All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. 
