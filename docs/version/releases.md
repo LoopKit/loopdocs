@@ -35,6 +35,12 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 
 ## Loop v3.8.x
 
+!!! important "[iOS 15 is no longer supported](../build/phone.md#not-supported){: target="_blank" }"
+    * It is a known issue that some screens show up as a different language for iOS 15 devices with v3.8.x.
+    * It is expected *Loop* will soon require a minimum of iOS 17
+
+    See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }:
+
 ### Loop v3.8.1
 
 [*Loop* v3.8.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1) was released on 23 September 2025.
