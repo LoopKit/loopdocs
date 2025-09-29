@@ -493,6 +493,8 @@ Manual certificate renewal is not longer required if you added the `Variable` `E
 
 ### Manual Steps to Renew Your `Distribution Certificate`
 
+> If you are coming here because you build an app, like *xDrip4iOS*, without automatic renewal, these steps will work for you.
+
 Manual certificate renewal is not longer required if you added the `Variable` `ENABLE_NUKE_CERTS`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
 
 1. Use this link to view your [Apple Developer Certificates](https://developer.apple.com/account/resources/certificates/list)

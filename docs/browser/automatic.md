@@ -124,7 +124,7 @@ You must have the `ENABLE_NUKE_CERTS` variable set to `true` for your *GitHub* o
 
 ### Automatic Certificate Renewal
 
-Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow` and `Loop` have automatic certificate renewal.
+Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow`, `Loop`  and `iAPS` have automatic certificate renewal.
 
 * If your signing credentials for the app being built are invalid and `ENABLE_NUKE_CERTS` is `true`, then signing credentials will be cleared from your `Match-Secrets` repository, a new `Distribution` certificate will be created at *Apple* and signing credentials for the current app will be generated and stored in `Match-Secrets`.
 
@@ -134,9 +134,7 @@ Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow` and `
 
 ### Open-Source App Schedule
 
-Each Open-Source App has a schedule for when the automatic build happens.
-
-> The table below indicates **planned** minutes. They **may happen at the start of the hour now**, but are planned to be shifted to the indicated minute over time.
+The table below indicates **planned** time for the automatic build schedule.
 
 | Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
 |:--|:-:|:-:|:-:|
@@ -147,6 +145,12 @@ Each Open-Source App has a schedule for when the automatic build happens.
 | <span translate="no">LoopFollow_Third</span> | &#x2705; | 12:40 | 10:40 |
 | <span translate="no">Trio</span> | &#x2705; | 08:43 | 06:43 |
 | <span translate="no">xDrip4iOS</span> | &#x274C; | 16:43 | 14:43 |
+| <span translate="no">iAPS</span> | &#x2705; | 03:00 daily | n/a |
+
+> The *iAPS* app uses a different system to trigger updates
+
+> * daily check for updates
+> * autobuild when updates detected (if user opts in)
 
 !!! question "Why are the Hour and Minute staggered?"
     There are 2 reasons:
