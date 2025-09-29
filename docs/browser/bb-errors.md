@@ -766,6 +766,8 @@ We have removed the section on getting a new Fastlane API Key - that is not the 
 
 The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time unless a mentor has suggested it or you have a specific error case where one of these steps is recommended.
 
+> If you are building *xDrip4iOS*, or another app that does not automatically renew certificates, go ahead and try these steps. No need to check with a mentor first.
+
 ## Other Help Steps
 
 These help steps might be needed so the documentation is here.
