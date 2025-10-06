@@ -6,26 +6,26 @@
 #
 babel==2.17.0
     # via mkdocs-material
-backrefs==5.8
+backrefs==5.9
     # via mkdocs-material
-beautifulsoup4==4.13.3
+beautifulsoup4==4.14.2
     # via
     #   mkdocs-exporter
     #   mkdocs-htmlproofer-plugin
     #   mkdocs-unused-files
-bracex==2.5.post1
+bracex==2.6
     # via wcmatch
-certifi==2025.1.31
+certifi==2025.10.5
     # via requests
-charset-normalizer==3.4.1
+charset-normalizer==3.4.3
     # via requests
-click==8.1.8
+click==8.3.0
     # via mkdocs
 colorama==0.4.6
     # via mkdocs-material
 ghp-import==2.1.0
     # via mkdocs
-greenlet==3.1.1
+greenlet==3.2.4
     # via playwright
 hjson==3.1.0
     # via
@@ -41,15 +41,15 @@ jinja2==3.1.6
     #   mkdocs-material
 libsass==0.23.0
     # via mkdocs-exporter
-lxml==5.3.1
+lxml==6.0.2
     # via mkdocs-exporter
-markdown==3.7
+markdown==3.9
     # via
     #   mkdocs
     #   mkdocs-htmlproofer-plugin
     #   mkdocs-material
     #   pymdown-extensions
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via
     #   jinja2
     #   mkdocs
@@ -74,11 +74,11 @@ mkdocs-get-deps==0.2.0
     # via mkdocs
 mkdocs-htmlproofer-plugin==1.3.0
     # via -r requirements.in
-mkdocs-include-markdown-plugin==7.1.6
+mkdocs-include-markdown-plugin==7.1.8
     # via -r requirements.in
-mkdocs-macros-plugin==1.3.7
+mkdocs-macros-plugin==1.4.0
     # via -r requirements.in
-mkdocs-material==9.6.7
+mkdocs-material==9.6.21
     # via -r requirements.in
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
@@ -88,7 +88,7 @@ mkdocs-redirects==1.2.2
     # via -r requirements.in
 mkdocs-unused-files==0.2.0
     # via -r requirements.in
-packaging==24.2
+packaging==25.0
     # via
     #   mkdocs
     #   mkdocs-macros-plugin
@@ -98,44 +98,44 @@ pathspec==0.12.1
     # via
     #   mkdocs
     #   mkdocs-macros-plugin
-platformdirs==4.3.6
+platformdirs==4.4.0
     # via mkdocs-get-deps
-playwright==1.50.0
+playwright==1.55.0
     # via mkdocs-exporter
-pyee==12.1.1
+pyee==13.0.0
     # via playwright
-pygments==2.19.1
+pygments==2.19.2
     # via mkdocs-material
-pymdown-extensions==10.14.3
+pymdown-extensions==10.16.1
     # via mkdocs-material
-pypdf==5.3.1
+pypdf==6.1.1
     # via mkdocs-exporter
 python-dateutil==2.9.0.post0
     # via
     #   ghp-import
     #   mkdocs-macros-plugin
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via
     #   mkdocs
     #   mkdocs-get-deps
     #   mkdocs-macros-plugin
     #   pymdown-extensions
     #   pyyaml-env-tag
-pyyaml-env-tag==0.1
+pyyaml-env-tag==1.1
     # via mkdocs
-requests==2.32.4
+requests==2.32.5
     # via
     #   mkdocs-htmlproofer-plugin
     #   mkdocs-material
 six==1.17.0
     # via python-dateutil
-soupsieve==2.6
+soupsieve==2.8
     # via beautifulsoup4
-super-collections==0.5.3
+super-collections==0.6.2
     # via mkdocs-macros-plugin
-termcolor==2.5.0
+termcolor==3.1.0
     # via mkdocs-macros-plugin
-typing-extensions==4.12.2
+typing-extensions==4.15.0
     # via
     #   beautifulsoup4
     #   pyee
@@ -143,5 +143,5 @@ urllib3==2.5.0
     # via requests
 watchdog==6.0.0
     # via mkdocs
-wcmatch==10.0
+wcmatch==10.1
     # via mkdocs-include-markdown-plugin
