@@ -193,9 +193,31 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 
 > If you build from a second or third `repository` for `LoopFollow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
 
-The *LoopCaregiver* app requires updates to the `Identifiers` after they are generated.
+The *LoopCaregiver* app requires updates to the `Identifiers` after they are generated. Skip ahead to [Add `App Group` to `LoopCaregiver`](#add-app-group-to-identifiers).
 
-The *LoopFollow* app does not require this extra step. You can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect). The *LoopFollow* app does not require any special capabilities.
+The *LoopFollow* requires you to add a capability manually. 
+
+#### Add Push Notifications Capability to LoopFollow Identifiers
+
+You must manually enable the Push Notifications capabilty to the *LoopFollow* Identifier. Follow the directions below to open the Identifier and then keep scrolling down until you see Push Notifications. Make sure that check box is enabled, as shown in the graphic below. If you do not do this, the Build will fail.
+
+The example graphic below has numbered steps that match these directions:
+
+Click to open the [Certificates, Identifiers & Profiles: Identifiers List](https://developer.apple.com/account/resources/identifiers/list) page. 
+
+1. Look in the **`IDENTIFIER`** column to locate the LoopFollow Identifer and click on it
+    * The name in the **`NAME`** column may be different if you previously built with a Mac using Xcode, in that case it will start with XC
+2. Looking at the `App Services` column, scroll down to the `Push Notifications` row
+3. If the check box is not checked, you must check it
+4. Scroll back to the top and hit Save if you modified that value or All Identifiers if you made no changes
+
+If you made a change and hit Save, you then need to Tap `Continue` and Tap `Save` to complete the process.
+
+> ![graphic showing selection of the push notifications](img/add-push-notifications.svg){width="600"}
+
+Repeat this step if you use LoopFollow_Second or LoopFollow_Third.
+
+You can now skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect).
 
 ## Add `App Group` to `LoopCaregiver`
 
