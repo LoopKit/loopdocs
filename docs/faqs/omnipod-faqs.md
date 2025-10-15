@@ -79,17 +79,17 @@ When the Pod reports 0 U in the reservoir, there can be up to 4 U more delivered
 
 * You will not see a report of these units on the reservoir icon or on the Pod screen
 * The pod keeps track of how many units are delivered after it reports 0 U in the reservoir and it will stop when it delivers 4 more units
-* The pod also keeps track of whether isulin is being delivered and it will start to scream when there is not any more
+* The pod also keeps track of whether insulin is being delivered and it will start to scream when there is not any more
 
 Do **not** count on those 4 U, but be aware that they might be available.
 
-The Event Log for dose delivery keeps track of what was actually delivered.
+The Event Log for dose delivery keeps track of what was actually delivered. The Insulin on Board (IOB) for the app updates if an bolus is interrupted because the pod runs out of insulin or hits the 4 U below zero limit.
 
 - - -
 
 ## What if I lose my phone or RileyLink?
 
-Most user are now on DASH and no longer need a RileyLink, but you might still walk away from your phone - we just hope you didn't lose it.
+Most users are now on DASH and no longer need a RileyLink, but you might still walk away from your phone - we just hope you didn't lose it.
 
 For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone (or RileyLink with Eros pod), however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
 
