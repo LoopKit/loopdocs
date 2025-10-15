@@ -177,7 +177,7 @@ The table below indicates **planned** time for the automatic build schedule. For
         Initially, all builds started at the "top of the hour" (HH:00), but it turns out that is when *GitHub* has the most activity. 
         In an attempt to minimize build failures due to resource limitations, the minute of the hour for all the apps is gradually being shifted.
 
-        When the first of the month and Wednesday came on the same day, there were many failed builds. This triggered us to redesign the timing. There is now only one run of a build action per week, on Sunday, and inside that build action there is logic to decide if it is the second Sunday of the month. If so, the build is always run and not skipped.
+        When the first of the month and Wednesday came on the same day, there were many failed builds. This triggered us to redesign the timing. The new design is for only one run of a build action per week, on Sunday, and inside that build action there is logic to decide if it is the second Sunday of the month. If so, the build is always run and not skipped.
 
 
 Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
