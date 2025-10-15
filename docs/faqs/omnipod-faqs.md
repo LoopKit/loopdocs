@@ -23,20 +23,21 @@ You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod suppli
 
 DASH pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
 
+- - -
+
 ## What about *Tidepool Loop*?
 
-*Tidepool Loop* was approved by the FDA in Jan 2023, but at the current time, there are no announced pump or CGM partners. What does this mean?
+*Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
 
-*Tidepool Loop*, cleared by the FDA, is the first:
+There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH pods.
 
-* App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
-* App that originated as a patient-led initiative
-
-With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
+- - -
 
 ## Do I still need a PDM with Omnipod Loop?
 
 No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your *Loop* app on your iPhone. In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a pod that has been activated with the *Loop* app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. See below for what to do if you lose your phone or RileyLink.
+
+- - -
 
 ## Can I cancel a bolus?
 
@@ -51,6 +52,8 @@ As soon as a bolus is initiated, look at your phone in portrait orientation.  Yo
 ![graphic showing the bolus in progress - tap to cancel display](img/cancel-bolus.svg){width="300"}
 {align="center"}
 
+- - -
+
 ## Can I cancel a temp basal?
 
 ### Cancel Temp Basal with the *Loop* app
@@ -62,19 +65,41 @@ You can tap on disable Closed-Loop and then immediately tap on enable Closed-Loo
 !!! tip "Bolus in progress"
     Even if a bolus is in progress, you can still switch to Open-Loop and restore scheduled basal. The current bolus continues unless you separately cancel the bolus.
 
+- - -
+
 ## Can I set my own temp basal on Loop?
 
 With version 3, the *Loop* app provides a [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) feature.
 
+- - -
+
+## How much insulin is left when Pod reservoir say zero or 0 U?
+
+When the Pod reports 0 U in the reservoir, there can be up to 4 U more delivered.
+
+* You will not see a report of these units on the reservoir icon or on the Pod screen
+* The pod keeps track of how many units are delivered after it reports 0 U in the reservoir and it will stop when it delivers 4 more units
+* The pod also keeps track of whether insulin is being delivered and it will start to scream when there is not any more
+
+Do **not** count on those 4 U, but be aware that they might be available.
+
+The Event Log for dose delivery keeps track of what was actually delivered. The Insulin on Board (IOB) for the app updates if a bolus is interrupted because the pod runs out of insulin or hits the 4 U below zero limit.
+
+- - -
+
 ## What if I lose my phone or RileyLink?
 
-For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone or RileyLink, however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
+Most users are now on DASH and no longer need a RileyLink, but you might still walk away from your phone - we just hope you didn't lose it.
+
+For pod users, your pod will finish any currently running temporary basal rate and then revert back to your scheduled basal rate. Without a phone (or RileyLink with Eros pod), however, you will not be able to affect any pod use; no basal change, suspend, cancel, or bolus. To do anything other than let basals continue, you will need to take action depending on the situation.
 
 * Lost RileyLink only: You can replace your missing RileyLink with one from your backup supplies. No problem to [switch out to a different Rileylink mid-pod session](rileylink-faqs.md#adding-or-changing-rileylink). If you don't have a backup RileyLink to use, then you will need to remove the pod and put on a new pod paired with your PDM until you can get a new RileyLink. In the interim, you are still getting basal from the pod. If you are taking bolus insulin via injection, just add it to Apple Health under insulin. The *Loop* app will read it and keep making predictions for you. Once you inject, then add the carbs that go with that injection into Loop.
 
 * Lost iPhone only: You will need to remove the pod and put on a new pod paired with your PDM or a backup phone (with a copy of the *Loop* app on it). You cannot use the old pod with a new device. In the interim, the pod will continue to deliver your scheduled basal until the pod reaches 80 hours. See [New Phone](new-phone.md) for more information.
 
 * Lost both RileyLink and phone: You're having a really bad day. You'll need a hug and to follow the same directions as if you lost the phone as shown in the bullet above.
+
+- - -
 
 ## Is there an increase in pod failures on Loop?
 
@@ -86,9 +111,13 @@ There is more communication between the pod and the controller (your *Loop* phon
 * If uncertain communications are detected such that the *Loop* app cannot determine if a dosing command sent to the pod was actually received, the app will try once a minute to get a response
     * The combination of Eros pods with a RileyLink device with poor signal leading to uncertain comms may cause excessive battery use and contribute to pod faults
 
+- - -
+
 ## What do I do if a pod fails to pair?
 
 If you get a pod that is failing to pair, please see [this page](../troubleshooting/pod-pairing.md){: target="_blank" } for steps on how to fix the problem. Follow these steps before filling and trying another pod. If the pod is not screaming, you can probably recover it.
+
+- - -
 
 ## What do you do to stop a screaming pod?
 
@@ -102,6 +131,8 @@ Once you have removed the screaming pod, it can be silenced using a paperclip. S
 
 ![img/paperclip.jpg](img/paperclip.jpg){width="500"}
 {align="center"}
+
+- - -
 
 ## What Are the Pod Priming and Start Delays?
 

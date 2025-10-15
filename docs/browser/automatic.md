@@ -134,16 +134,27 @@ Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow`, `Loo
 
 ### Open-Source App Schedule
 
-The table below indicates **planned** time for the automatic build schedule.
+!!! information "Changes are Coming"
+    We are in process of modifying when **planned** builds happen.
 
-| Open-Source App | AutoCerts? | Wed<br>UTC | 1st of Month<br>UTC |
+    The *LoopFollow* app and *Trio* app are already changed. This change will propagate to other apps in the Open-Source ecosystem.
+
+    New method - there will be one automatic run of the build action each week on Sunday.
+
+    * If it is the second Sunday of the month, the app will be built and uploaded to TestFlight
+    * If updated code is detected, the new version of the app will be built and uploaded to TestFlight
+    * If no updated code is detected, the build will be skipped (except for the second Sunday of the month)
+
+The table below indicates **planned** time for the automatic build schedule. For apps not yet changed to the new method, the weekly runs are on Wednesday and the monthly runs are on the 1st of each month.
+
+| Open-Source App | AutoCerts? | Weekly<br>UTC | Once a Month<br>UTC |
 |:--|:-:|:-:|:-:|
 | <span translate="no">Loop</span> | &#x2705; | 09:33 | 07:33 |
 | <span translate="no">LoopCaregiver</span> | &#x2705; | 13:33 | 11:33 |
-| <span translate="no">LoopFollow</span> | &#x2705; | 12:17 | 10:17 |
-| <span translate="no">LoopFollow_Second</span> | &#x2705; | 12:27 | 10:27 |
-| <span translate="no">LoopFollow_Third</span> | &#x2705; | 12:40 | 10:40 |
-| <span translate="no">Trio</span> | &#x2705; | 08:43 | 06:43 |
+| <span translate="no">LoopFollow</span> | &#x2705; | 10:17 | same |
+| <span translate="no">LoopFollow_Second</span> | &#x2705; | 10:27 | same |
+| <span translate="no">LoopFollow_Third</span> | &#x2705; | 10:40 | same |
+| <span translate="no">Trio</span> | &#x2705; | 06:43 | same |
 | <span translate="no">xDrip4iOS</span> | &#x274C; | 16:43 | 14:43 |
 | <span translate="no">iAPS</span> | &#x2705; | 03:00 daily | n/a |
 
@@ -165,6 +176,8 @@ The table below indicates **planned** time for the automatic build schedule.
         Starting in 2025 May, some people were getting messages that "no runners" were available to perform their build. (Remember, this is a **free** service we are using.) 
         Initially, all builds started at the "top of the hour" (HH:00), but it turns out that is when *GitHub* has the most activity. 
         In an attempt to minimize build failures due to resource limitations, the minute of the hour for all the apps is gradually being shifted.
+
+        When the first of the month and Wednesday came on the same day, there were many failed builds. This triggered us to redesign the timing. The new design is for only one run of a build action per week, on Sunday, and inside that build action there is logic to decide if it is the second Sunday of the month. If so, the build is always run and not skipped.
 
 
 Even if an app doesn't have automatic certificates implemented yet, they are added to the table as suggested values to use when this capability gets added. All times are UTC. If other apps decide to add this feature, please make a pull request to LoopDocs so we can add those times to the deconfliction table.
