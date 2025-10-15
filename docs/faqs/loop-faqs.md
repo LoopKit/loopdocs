@@ -10,6 +10,21 @@ Each step needed to successfully build your *Loop* app is found in these docs. T
 
 If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-search) feature to find topics in LoopDocs.
 
+- - -
+
+## What about *Tidepool Loop*?
+
+*Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
+
+*Tidepool Loop*, cleared by the FDA, is the first:
+
+* App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
+* App that originated as a patient-led initiative
+
+With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
+
+- - -
+
 ## Can I use an android phone or iPad for Loop?
 
 Loop requires an *Apple* device. Older iPads do not support *Apple* Health which is required for Loop. It may be possible with newer iPads and newer iOS, but this has not been tested.

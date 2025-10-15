@@ -29,12 +29,7 @@ DASH pumps communicate with the phone via Bluetooth so they do not require a Ril
 
 *Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
 
-*Tidepool Loop*, cleared by the FDA, is the first:
-
-* App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
-* App that originated as a patient-led initiative
-
-With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
+There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH pods.
 
 - - -
 
