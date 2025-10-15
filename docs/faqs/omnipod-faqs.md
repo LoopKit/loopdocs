@@ -83,7 +83,7 @@ When the Pod reports 0 U in the reservoir, there can be up to 4 U more delivered
 
 Do **not** count on those 4 U, but be aware that they might be available.
 
-The Event Log for dose delivery keeps track of what was actually delivered. The Insulin on Board (IOB) for the app updates if an bolus is interrupted because the pod runs out of insulin or hits the 4 U below zero limit.
+The Event Log for dose delivery keeps track of what was actually delivered. The Insulin on Board (IOB) for the app updates if a bolus is interrupted because the pod runs out of insulin or hits the 4 U below zero limit.
 
 - - -
 
