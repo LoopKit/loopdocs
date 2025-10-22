@@ -48,7 +48,7 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 This version updates a few iOS 26 interface issues and modifies some details of the Browser Build process.
 
 * Restore expected behavior for phones running iOS 26
-    * buttons should be grey not blue when inactive
+    * buttons should be grey (not blue) when inactive
     * updates to Therapy Settings should be reflected after a save
         * there is still a display refresh bug for SE phones, simply go to main screen and then return to Therapy Screen to see the update did happen
     * the information screens for Therapy settings continue to display until dismissed

@@ -73,7 +73,7 @@ The modified design for the build action found in `Loop v3.8.2` and newer is doc
 
 Normally, you will see a successful `build action` once a week. This happens every Sunday (as soon as your version is 3.8.2 or newer).
 
-> Older code checked on Wed or first of the month, but that tends to be a very busy time for GitHub - automatic builds are shifted to Sunday.
+> Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
 
 If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. 
 
@@ -87,7 +87,7 @@ In that case, you should check your favorite information site to find out what t
 
 On the second Sunday of every month, you will see a longer `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
 
-> Older code built on the first of the month, but that tends to be a very busy time for GitHub - automatic builds are shifted to the second Sunday of each month.
+> Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
 
 !!! important "You Get No Warning if Repository Build Action is Disabled"
     If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
@@ -98,9 +98,9 @@ You start getting [Notifications](../operation/features/notifications.md#loop-ap
 
 ### What are the `alive branches`?
 
-The alive branches stopped being when GitHub disallowed automatic updates of those branches in 2025 April. They were used to prevent your repository from becoming stale and enable continued automatic building even when the upstream repository did not have updates.
+In April 2025, GitHub disallowed using the build action to automatically add commits to `alive branches`. This trick was previously used to keep your fork active even when the upstream repository was stable.
 
-Once you update to v3.8.2 or newer, the alive branches are no longer updated and if you don't have those branches, they are no longer created.
+Once you update to v3.8.2 or newer, references to `alive branches` are removed from the build action.
 
 > * If you have alive branches (`alive`, `alive-dev` or `alive-main`) you may delete them if you choose
 
@@ -243,8 +243,8 @@ Your build will run on the following conditions:
     - Run weekly, every Wednesday at 08:00 UTC to check for changes; if there are changes, it will update your repository and build
     - Run monthly, every first of the month at 06:00 UTC, if there are changes, it will update your repository; regardless of changes, it will build
 - If you disable any automation (both variables set to `false`), no updates or building happens when `Build Loop` runs
-- If you disabled just scheduled synchronization (`SCHEDULED_SYNC` set to`false`), it will only run once a month, on the first of the month, no update will happen
-- If you disabled just scheduled build (`SCHEDULED_BUILD` set to`false`), it will run once weekly, every Wednesday, to check for changes; if there are changes, it will update and build
+- If you disable only scheduled synchronization (`SCHEDULED_SYNC` set to`false`), the build action runs weekly but your fork is not updated and the monthly build uses the current version of your fork
+- If you disable only scheduled build (`SCHEDULED_BUILD` set to`false`), the build action runs weekly to check for changes; if there are changes, it will update and build
 
 ### Disable Automatic Actions
 
