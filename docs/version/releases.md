@@ -8,9 +8,9 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.8.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.8.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
+> When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
 
 > See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
@@ -41,6 +41,26 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 
     See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }:
 
+### Loop v3.8.2
+
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 22 October 2025.
+
+This version updates a few iOS 26 interface issues and modifies some details of the Browser Build process.
+
+* Restore expected behavior for phones running iOS 26
+    * buttons should be grey not blue when inactive
+    * updates to Therapy Settings should be reflected after a save
+        * there is still a display refresh bug for SE phones, simply go to main screen and then return to Therapy Screen to see the update did happen
+    * the information screens for Therapy settings continue to display until dismissed
+* Modify the build schedule to check for update on Sunday
+    * build when updates are found
+    * build on the second Sunday of the month
+    * remove the concept of alive branches
+* Bring in updates from DanaKit
+* Update some translations
+
+> When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
+
 ### Loop v3.8.1
 
 [*Loop* v3.8.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1) was released on 23 September 2025.
@@ -57,26 +77,6 @@ When putting together the hotfix, the following additional updates were included
 * Update Gemfile and Gemfile.lock to fix a security warning
 * Add audio capability to Loop to support DanaKit optional behavior and possible OmniBLE InPlay/iPhone 16 work-around later
     * Dana users no longer need to modify the code to use [Background Sound](../troubleshooting/dana-faq.md#background-sound){: target="_blank" } if their CGM does not have a heartbeat
-* Update some translations
-
-> When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
-
-### Loop v3.8.2
-
-[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1) was released on 22 October 2025.
-
-This version updates a few iOS 26 interface issues and modifies some details of the Browser Build process.
-
-* Restore expected behavior for phones running iOS 26
-    * buttons should be grey not blue when inactive
-    * updates to Therapy Settings should be reflected after a save
-        * there is still a display refresh bug for SE phones, simply go to main screen and then return to Therapy Screen to see the update did happen
-    * the information screens for Therapy settings continue to display until dismissed
-* Modify the build schedule to check for update on Sunday
-    * build when updates are found
-    * build on the second Sunday of the month
-    * remove the concept of alive branches
-* Bring in updates from DanaKit
 * Update some translations
 
 > When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
