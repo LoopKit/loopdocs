@@ -61,6 +61,26 @@ When putting together the hotfix, the following additional updates were included
 
 > When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
 
+### Loop v3.8.2
+
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1) was released on 22 October 2025.
+
+This version updates a few iOS 26 interface issues and modifies some details of the Browser Build process.
+
+* Restore expected behavior for phones running iOS 26
+    * buttons should be grey not blue when inactive
+    * updates to Therapy Settings should be reflected after a save
+        * there is still a display refresh bug for SE phones, simply go to main screen and then return to Therapy Screen to see the update did happen
+    * the information screens for Therapy settings continue to display until dismissed
+* Modify the build schedule to check for update on Sunday
+    * build when updates are found
+    * build on the second Sunday of the month
+    * remove the concept of alive branches
+* Bring in updates from DanaKit
+* Update some translations
+
+> When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
+
 ### Loop v3.8.0
 
 [*Loop* v3.8.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.0) was released on 14 September 2025.

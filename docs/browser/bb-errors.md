@@ -154,26 +154,6 @@ Ignore the warnings - this does not affect the build.
 
 ## Rebuild Errors: Quick Reference
 
-### `Check Upstream and Keep Alive` Error
-
-!!! important "`Check Upstream and Keep Alive` Error"
-    **Error**: Your Browser Build fails and when you click on the link, you see
-
-    * **`Check Upstream and Keep Alive`** failed
-
-    **Consequence**: any required sync of your fork is skipped and build is skipped
-
-    **Solution**:
-
-    * Manually sync your fork of the repository: [Update `Fork`](bb-update.md#update-fork){: target="_blank" }
-    * Manually start your build: [Build](bb-update.md#build-the-app){: target="_blank" }
-
-    **Details about what happened**:
-
-    On 21 April 2025, *GitHub* removed one of the third-party repositories that we used to keep automatic building going without action on your part. The repository was removed because it was in violation of the *GitHub* terms of service. *GitHub* disables automatic actions for repositories that have been inactive (no commits added in 60 days). For stable apps, like the *Loop* app, this third-party repository enabled a workaround to keep the builds happening.
-
-    This affected all the Open-Source apps in our community - Loop, LoopFollow, LoopCaregiver, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.
-
 ### Manual Enable for Build Action May be Required
 
 The automatic build actions continue to happen on schedule, but starting May 2025, you may find your build action disabled by *GitHub*. (This might happen every 60 days, but it might happen sooner.) In that case, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
@@ -223,9 +203,6 @@ These are some of the most common errors to date.
 1. You skipped running one of the actions
 1. You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span>
     * Be sure to read [Misleading Error Message](#misleading-error-message)
-1. You got an error regarding a branch with `alive` in the name
-    * You can delete any branch that starts with the name `alive` and try again
-    * See [Automatic Creation of `alive branch`](automatic.md#automatic-creation-of-alive-branch){: target="_blank" }
 
 ## Examine Annotation
 
