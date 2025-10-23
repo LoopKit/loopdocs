@@ -52,22 +52,37 @@ You still need to **take these actions** to ensure a recent build of the *Loop* 
 
 ### Modified Design for Build Action
 
-The modified design for the build action found in `Loop v3.8.2` and newer is documented in this section. Most people do not need to know this.
+The modified design for the build action found in `Loop v3.8.2` and newer is documented in this section.
+
+#### Updated Build Features
+
+The code that controls the build process was streamlined and enhanced to have these features:
+
+* build when updates are found on any Sunday
+* build on the second Sunday of the month regardless of update status
+* rearrange the order so the check whether to build takes a few seconds
+    * longer processes are skipped when build is skipped
+* remove the concept of alive branches
+* remove the requirement that your fork name match the upstream repository name
+* enable any branch in your fork to be updated if the upstream repository has the same branch
+    * if you choose to have a special branch in your fork set to default, the automatic check for updates works for that special branch
 
 ??? question "Do you want to know more? (Click to open/close)"
     **Build Action Redesign**
 
-    When GitHub allowed the use of alive branches with automatic addition of commits to the branch, there was an extra step in the build yml files.
+    When GitHub allowed the use of alive branches with automatic addition of commits to the branch, there were extra steps in the build yml file and limitations to which branches would be updated.
 
-    This extra step committed any updates to the alive branch and if no updates were found, committed an extra commit to the alive branch if it had been 20 days since the last change.
+    * These steps kept your fork from getting stale
+    * GitHub will disable your build actions if no commits have been added for 60 days
 
-    This kept your fork from getting stale. GitHub will disable your build actions if no commits have been added for 60 days.
+    Because this trick is no longer allowed, the creation and use of alive branches was removed. That opened the door to streamline and enhance the build action capabilities.
+    
+    If you want to follow the detailed design steps taken to reach this new version, see the following LoopFollow PR. (Most people do not need to know this).
 
-    Because this trick is no longer allowed, the creation and use of alive branches was removed.
-
-    This removes an entire section of the build where the code is checked out multiple times to both update the alive branch and update the branch you are building. Now the code is checked out one time to update your branch if you are running main or dev, then later checked out to build if the logic indicates a build is warranted.
-
-
+    * [LoopFollow PR 465: Shift GitHub to check for updates every Sunday and build 2nd Saturday of each month](https://github.com/loopandlearn/LoopFollow/pull/465)
+    * [LoopFollow PR 470: Update the GitHub build schedule to every Sunday](https://github.com/loopandlearn/LoopFollow/pull/470)
+    * [LoopFollow PR 477: Revise Browser Build to Remove Alive Branches](https://github.com/loopandlearn/LoopFollow/pull/477)
+    * [LoopFollow PR 480: Expand and streamline build action](https://github.com/loopandlearn/LoopFollow/pull/480)
 
 ### Successful Weekly Action
 
@@ -75,7 +90,7 @@ Normally, you will see a successful `build action` once a week. This happens eve
 
 > Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
 
-If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. 
+If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes a few seconds because the logic says - if no update was detected and it is not the second Sunday, then skip checking the certificates and skip the build. 
 
 ![normal weekly check for updates when there are no updates](img/normal-check-for-updates.png)
 
