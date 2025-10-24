@@ -5,12 +5,15 @@
 
     As of January 2023, this change in time is detected and the *Loop* app stops all automatic dosing of insulin other than your scheduled basal rates and begins to aggressively warn the user.
 
-    One scenario should be enough to convince you not to do this:
+    Sometimes you can recover by restoring time and deleting erroneous values from Apple Health; but sometimes you have to delete the app and reinstall.
 
-    * Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)
-    * Later you return time to automatic and think nothing of it
-    * As soon as automatic time is restored, the *Loop* app thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range
-        * If you are running a very old version of the *Loop* app, dosing could continue based on that incorrect future glucose value
+    One **worst-case** scenario should be enough to convince you not to do this:
+
+    * While a bolus was being delivered, a user manually adjusted the time to be in the past by disabling automatic time and changing time
+    * In this case, an exception was entered into the record that caused the app to crash (End Time for bolus was before Start Time)
+    * At the current time - the **only solution was to delete the app completely and reinstall**
+        * This means a new pod if that is the type of pump used
+        * All settings and configurations have to be entered again
 
 ### Force Automatic Time
 
@@ -20,9 +23,46 @@ You can configure the iPhone to only allow automatic time.
 * Scroll down to the Lock Screen Time Settings row
     * Enter a passcode
 
-The ability to use anything other than automatic time is disabled as long as that iOS setting has a passcode. Parents can use this for children. Adults can use this too in case they need a reminder not to change the time - you must first disable the passcode.
+The ability to use anything other than automatic time is disabled as long as that iOS setting has a passcode. 
+
+* Adults can use this too in case they need a reminder not to change the time - you must first disable the passcode
+* Parents can use this for children - but if they have [family managed settings](#automatic-time-for-managed-phones), they may need different instructions.
 
 This does not affect automatic time zone changes, those are handled by the phone without need for interaction.
+
+#### Test the Configuration
+
+To test that Time & Date can no longer be modified, navigate to the following Settings:
+
+* Settings > General > Date & Time
+
+The option to modify "Set Automatically" should be disabled (greyed out), as seen in the screenshot below.
+
+![screenshot for case where time adjustment is not allowed on the phone](img/time-cannot-be-modified.png){width="350"}
+{align="center"}
+
+#### Automatic Time for Managed Phones
+
+If you manage the *Loop* phone as part of a family account, forcing the phone to be on automatic time may take a few more steps.
+
+After enabling Screen Time and creating a password, navigate to the following settings:
+
+* Settings > Screen Time > Content & Privacy Restrictions > Location Services > System Services > Setting Time Zone
+
+    * Disable the option for Setting Time Zone
+
+Then return to the following settings:
+
+* Settings > Screen Time > Content & Privacy Restrictions > Location Services
+* Select the option "Don't Allow Changes".
+
+Be sure to [Test the Configuration](#test-the-configuration).
+
+#### Troubleshooting
+
+If Time & Date can still be modified after making the above changes, try disabling Content and Privacy Restrictions or disabling Screen Time all together and then enabling it again. This might correct the problem. [Test the Configuration](#test-the-configuration) again.
+
+Note, when Screen Time is remotely administered through a Family Group from another person's iPhone, such as a parent, if the IOS version is not the same or similar to the child's phone, it can create unexpected behavior in Screen Time settings and can cause an inability to disable Time & Date modifications using Screen Time. Update both phones to be on the latest version of IOS and try again.
 
 ### Remove Future Glucose
 
