@@ -3365,6 +3365,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#not-on-automatic-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Not on Automatic Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#force-automatic-time" class="md-nav__link">
     <span class="md-ellipsis">
       Force Automatic Time
@@ -3374,9 +3383,45 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#test-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-time-for-managed-phones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Time for Managed Phones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#remove-future-glucose" class="md-nav__link">
     <span class="md-ellipsis">
       Remove Future Glucose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-warning-about-time-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Warning about Time Change
     </span>
   </a>
   
@@ -3700,6 +3745,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#not-on-automatic-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Not on Automatic Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#force-automatic-time" class="md-nav__link">
     <span class="md-ellipsis">
       Force Automatic Time
@@ -3709,9 +3763,45 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#test-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-time-for-managed-phones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Time for Managed Phones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#remove-future-glucose" class="md-nav__link">
     <span class="md-ellipsis">
       Remove Future Glucose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-warning-about-time-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop Warning about Time Change
     </span>
   </a>
   
@@ -3797,18 +3887,44 @@
 <h2 id="the-loop-phone-must-be-on-automatic-time">The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Phone Must be on Automatic Time<a class="headerlink" href="#the-loop-phone-must-be-on-automatic-time" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Phone is a Medical Device</p>
-<p>There have been several instances where a Looper disabled automatic time to change the time on their <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> phone.</p>
-<p>As of January 2023, this change in time is detected and the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app stops all automatic dosing of insulin other than your scheduled basal rates and begins to aggressively warn the user.</p>
-<p>One scenario should be enough to convince you not to do this:</p>
+<p><strong>The app relies on phone time when calculating active insulin. When you modify the time artificially to defeat screen time limits or to change the rules on a game, you run the risk of modifying that active insulin calculation.</strong></p>
 <ul>
-<li>Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)</li>
-<li>Later you return time to automatic and think nothing of it</li>
-<li>As soon as automatic time is restored, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range<ul>
-<li>If you are running a very old version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, dosing could continue based on that incorrect future glucose value</li>
+<li>
+<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app detects if you modified the time</p>
+<ul>
+<li>This is only possible when you disable Automatic Time in the phone settings</li>
+<li>The app stops all automatic dosing of insulin other than your scheduled basal rates</li>
+<li>The app will aggressively warn the user: <a href="#loop-warning-about-time-change"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Warning about Time Change</a></li>
+</ul>
+</li>
+<li>
+<p>This detection is for your safety</p>
+</li>
+<li>Some manual time changes can cause the app to crash and not reopen</li>
+</ul>
+<p>This behavior is meant to prevent a situation where the user has a lot of insulin active but, because of the time change, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app thinks they do not. The app could suggest a bolus or deliver increased insulin that could cause injury.</p>
+</div>
+<h3 id="not-on-automatic-time">Not on Automatic Time<a class="headerlink" href="#not-on-automatic-time" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>What can happen if you don't <a href="#force-automatic-time">Force Automatic Time</a>?</p>
+<ul>
+<li>Someone can change time manually</li>
+<li>This is not referring to time zone changes when you are traveling; those are handled for you when automatic time is enabled</li>
+</ul>
+<p>If the time was changed manually and you pay attention to the warning:</p>
+<ul>
+<li>Sometimes you can recover by restoring time and deleting erroneous values, if any, from Apple Health</li>
+<li>Sometimes you have to <strong>delete the app and reinstall</strong>.</li>
+</ul>
+<p>One <strong>worst-case</strong> scenario should be enough to convince you to <a href="#force-automatic-time">Force Automatic Time</a>:</p>
+<ul>
+<li>While a bolus was being delivered, a user manually adjusted the time to be in the past by changing time on the phone</li>
+<li>In this case, an exception was entered into the record that caused the app to crash (End Time for bolus was before Start Time)</li>
+<li>Their <strong>solution was to delete the app completely and reinstall</strong><ul>
+<li>A deleted app means a new pod if that is the type of pump used</li>
+<li>A deleted app means all settings and configurations have to be entered again</li>
 </ul>
 </li>
 </ul>
-</div>
 <h3 id="force-automatic-time">Force Automatic Time<a class="headerlink" href="#force-automatic-time" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>You can configure the iPhone to only allow automatic time.</p>
 <ul>
@@ -3818,8 +3934,39 @@
 </ul>
 </li>
 </ul>
-<p>The ability to use anything other than automatic time is disabled as long as that <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> setting has a passcode. Parents can use this for children. Adults can use this too in case they need a reminder not to change the time - you must first disable the passcode.</p>
+<p>The ability to use anything other than automatic time is disabled as long as that <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> setting has a passcode. </p>
+<ul>
+<li>Adults can use this too in case they need a reminder not to change the time - you must first disable the passcode</li>
+<li>Parents can use this for children - but if they have <a href="#automatic-time-for-managed-phones">family managed settings</a>, they may need different instructions.</li>
+</ul>
 <p>This does not affect automatic time zone changes, those are handled by the phone without need for interaction.</p>
+<h3 id="test-the-configuration">Test the Configuration<a class="headerlink" href="#test-the-configuration" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>To test that Time &amp; Date can no longer be modified, navigate to the following Settings:</p>
+<ul>
+<li>Settings &gt; General &gt; Date &amp; Time</li>
+</ul>
+<p>The option to modify "Set Automatically" should be disabled (greyed out), as seen in the screenshot below.</p>
+<p align="center"><img alt="screenshot for case where time adjustment is not allowed on the phone" src="../img/time-cannot-be-modified.png" width="350" /></p>
+<h3 id="automatic-time-for-managed-phones">Automatic Time for Managed Phones<a class="headerlink" href="#automatic-time-for-managed-phones" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you manage the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> phone as part of a family account, forcing the phone to be on automatic time may take a few more steps.</p>
+<p>After enabling Screen Time and creating a password, navigate to the following settings:</p>
+<ul>
+<li>
+<p>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions &gt; Location Services &gt; System Services &gt; Setting Time Zone</p>
+<ul>
+<li>Disable the option for Setting Time Zone</li>
+</ul>
+</li>
+</ul>
+<p>Then return to the following settings:</p>
+<ul>
+<li>Settings &gt; Screen Time &gt; Content &amp; Privacy Restrictions &gt; Location Services</li>
+<li>Select the option "Don't Allow Changes".</li>
+</ul>
+<p>Be sure to <a href="#test-the-configuration">Test the Configuration</a>.</p>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If Time &amp; Date can still be modified after making the above changes, try disabling Content and Privacy Restrictions or disabling Screen Time all together and then enabling it again. This might correct the problem. <a href="#test-the-configuration">Test the Configuration</a> again.</p>
+<p>Note, when Screen Time is remotely administered through a Family Group from another person's iPhone, such as a parent, if the IOS version is not the same or similar to the child's phone, it can create unexpected behavior in Screen Time settings and can cause an inability to disable Time &amp; Date modifications using Screen Time. Update both phones to be on the latest version of IOS and try again.</p>
 <h3 id="remove-future-glucose">Remove Future Glucose<a class="headerlink" href="#remove-future-glucose" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you have future glucose from a manual time change or just entering something into Apple Health with the wrong timestamp:</p>
 <ul>
@@ -3835,6 +3982,7 @@
 </ul>
 </li>
 </ul>
+<h3 id="loop-warning-about-time-change"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Warning about Time Change<a class="headerlink" href="#loop-warning-about-time-change" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next view the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please <a href="#remove-future-glucose">Remove Future Glucose</a>.</p>
 <p align="center"><img alt="notification displayed when automatic time is disabled on Loop phone" src="../../loop-3/img/omnipod-time-change.svg" width="350" /></p>
 <p>The rest of this page is about changing time zones.</p>
