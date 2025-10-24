@@ -1,16 +1,37 @@
 ## The *Loop* Phone Must be on Automatic Time
 
 !!! danger "The *Loop* Phone is a Medical Device"
-    There have been several instances where a Looper disabled automatic time to change the time on their *Loop* phone.
+    **The app relies on phone time when calculating active insulin. When you modify the time artificially to defeat screen time limits or to change the rules on a game, you run the risk of modifying that active insulin calculation.**
 
-    As of January 2023, this change in time is detected and the *Loop* app stops all automatic dosing of insulin other than your scheduled basal rates and begins to aggressively warn the user.
+    * The *Loop* app detects if you modified the time
+        * This is only possible when you disable Automatic Time in the phone settings
+        * The app stops all automatic dosing of insulin other than your scheduled basal rates
+        * The app will aggressively warn the user: [*Loop* Warning about Time Change](#loop-warning-about-time-change)
 
-    One scenario should be enough to convince you not to do this:
+    * This detection is for your safety
+    * Some manual time changes can cause the app to crash and not reopen
 
-    * Glucose is 180 mg/dL (10 mmol/L) when you set time one day ahead (for a game)
-    * Later you return time to automatic and think nothing of it
-    * As soon as automatic time is restored, the *Loop* app thinks your eventual glucose will be the future value (in this example 180 mg/dL) and attempts to bring you to your correction range
-        * If you are running a very old version of the *Loop* app, dosing could continue based on that incorrect future glucose value
+    This behavior is meant to prevent a situation where the user has a lot of insulin active but, because of the time change, the *Loop* app thinks they do not. The app could suggest a bolus or deliver increased insulin that could cause injury.
+
+### Not on Automatic Time
+
+What can happen if you don't [Force Automatic Time](#force-automatic-time)?
+
+* Someone can change time manually
+* This is not referring to time zone changes when you are traveling; those are handled for you when automatic time is enabled
+
+If the time was changed manually and you pay attention to the warning:
+
+* Sometimes you can recover by restoring time and deleting erroneous values, if any, from Apple Health
+* Sometimes you have to **delete the app and reinstall**.
+
+One **worst-case** scenario should be enough to convince you to [Force Automatic Time](#force-automatic-time):
+
+* While a bolus was being delivered, a user manually adjusted the time to be in the past by changing time on the phone
+* In this case, an exception was entered into the record that caused the app to crash (End Time for bolus was before Start Time)
+* Their **solution was to delete the app completely and reinstall**
+    * A deleted app means a new pod if that is the type of pump used
+    * A deleted app means all settings and configurations have to be entered again
 
 ### Force Automatic Time
 
@@ -20,9 +41,46 @@ You can configure the iPhone to only allow automatic time.
 * Scroll down to the Lock Screen Time Settings row
     * Enter a passcode
 
-The ability to use anything other than automatic time is disabled as long as that iOS setting has a passcode. Parents can use this for children. Adults can use this too in case they need a reminder not to change the time - you must first disable the passcode.
+The ability to use anything other than automatic time is disabled as long as that iOS setting has a passcode. 
+
+* Adults can use this too in case they need a reminder not to change the time - you must first disable the passcode
+* Parents can use this for children - but if they have [family managed settings](#automatic-time-for-managed-phones), they may need different instructions.
 
 This does not affect automatic time zone changes, those are handled by the phone without need for interaction.
+
+### Test the Configuration
+
+To test that Time & Date can no longer be modified, navigate to the following Settings:
+
+* Settings > General > Date & Time
+
+The option to modify "Set Automatically" should be disabled (greyed out), as seen in the screenshot below.
+
+![screenshot for case where time adjustment is not allowed on the phone](img/time-cannot-be-modified.png){width="350"}
+{align="center"}
+
+### Automatic Time for Managed Phones
+
+If you manage the *Loop* phone as part of a family account, forcing the phone to be on automatic time may take a few more steps.
+
+After enabling Screen Time and creating a password, navigate to the following settings:
+
+* Settings > Screen Time > Content & Privacy Restrictions > Location Services > System Services > Setting Time Zone
+
+    * Disable the option for Setting Time Zone
+
+Then return to the following settings:
+
+* Settings > Screen Time > Content & Privacy Restrictions > Location Services
+* Select the option "Don't Allow Changes".
+
+Be sure to [Test the Configuration](#test-the-configuration).
+
+### Troubleshooting
+
+If Time & Date can still be modified after making the above changes, try disabling Content and Privacy Restrictions or disabling Screen Time all together and then enabling it again. This might correct the problem. [Test the Configuration](#test-the-configuration) again.
+
+Note, when Screen Time is remotely administered through a Family Group from another person's iPhone, such as a parent, if the IOS version is not the same or similar to the child's phone, it can create unexpected behavior in Screen Time settings and can cause an inability to disable Time & Date modifications using Screen Time. Update both phones to be on the latest version of IOS and try again.
 
 ### Remove Future Glucose
 
@@ -35,6 +93,8 @@ If you have future glucose from a manual time change or just entering something 
     * If you tap on the glucose icon - it takes you to your CGM which probably has a very different number from that shown on the main Loop screen
 * If you also use Nightscout **and** have the upload CGM readings enabled in Loop, those future glucose values will appear in Nightscout
     * To fix this problem (after you fix Apple Health), use the [Admin Tools in Nightscout](https://nightscout.github.io/nightscout/admin_tools/) to remove future treatments and future entries
+
+### *Loop* Warning about Time Change
 
 The *Loop* app is very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next view the *Loop* app after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please [Remove Future Glucose](#remove-future-glucose).
 
