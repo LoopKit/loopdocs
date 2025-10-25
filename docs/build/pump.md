@@ -10,7 +10,7 @@
     - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - If you use [Omnipod](#omnipod-pumps) - check which kind
     - If you use [Dana](#sooil-dana-pumps) - check which kind
-    - If you use [Medtrum Nano](#medtrum-touchcare-nano) - Check which loop version
+    - If you use [Medtrum Nano](#medtrum-nano) - Check which loop version
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
@@ -226,7 +226,11 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 ## Medtrum Nano
 
 !!! warning "You must build feat/dev-medtrum branch to use Medtrum patch pumps"
-    The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now
+    The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now.
+
+    **Be very careful running this. The initial version had a bug where a delivered bolus was not always recorded properly. This is just one example of why only experts should volunteer to test experimental code.**
+
+    Follow along in the [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247).
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.

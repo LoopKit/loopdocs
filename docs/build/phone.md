@@ -33,10 +33,13 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
 ### iPhone 16 and InPlay DASH pods
 
 !!! warning "iPhone 16 and Omnipod DASH"
+    **iPhone 16 only**
+
+    **Other phones, including iPhone 17, work fine with InPlay DASH pods**
+
     Some of the DASH pods produced in 2025 have different chips and firmware. 
     
     * These pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16
-    * Early reports indicate the `InPlay BLE` pods work fine with iPhone 17
     * Although `InPlay` pods do work with the 16 you may notice some communication issues
         * It can take many attempts to get the pod to initially connect when pairing; just keep hitting retry
         * Once the pod disconnects itself from the phone Bluetooth, the phone is slow to reconnect the pod to the *Loop* app
@@ -46,7 +49,7 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
         * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
         * No solution to this issue is known
     
-    > DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones included the iPhone 16.
+    **DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16.**
 
 ### Compatible Device
 
@@ -58,7 +61,7 @@ These phones require *iOS* 26 and `Loop version 3.8.x` or newer
 
 These phones require *iOS* 18 and are compatible with *iOS* 26
 
-- iPhone 16, all variants
+- iPhone 16, all variants (phone is compatible but see [InPlay DASH pod](#iphone-16-and-inplay-dash-pods) warning)
 
 These phones are compatible with *iOS* 17, 18 and 26
 

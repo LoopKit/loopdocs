@@ -8,9 +8,9 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.8.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.8.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
+> When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
 
 > See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
@@ -40,6 +40,22 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
     * It is expected *Loop* will soon require a minimum of iOS 17
 
     See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }:
+
+### Loop v3.8.2
+
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 24 October 2025.
+
+This version updates a few iOS 26 interface issues, add fixes for Dana pumps and streamlines and enhances the Browser Build process.
+
+* Restore expected behavior for phones running iOS 26
+    * see [Loop PR 2371](https://github.com/LoopKit/Loop/pull/2371) / [LoopKit PR 573](https://github.com/LoopKit/LoopKit/pull/573)
+* Modify the build schedule to run on Sundays and build on the second Sunday of each month
+    * see [Updated Build Features](../browser/automatic.md#updated-build-features){: target="_blank" } details
+
+* Bring in updates from DanaKit and updates from LoopKit to improve IOB reporting when pump disconnects during a bolus
+* Update some translations
+
+> When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
 
 ### Loop v3.8.1
 
