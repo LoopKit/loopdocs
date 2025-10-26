@@ -43,7 +43,7 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 
 ### Loop v3.8.2
 
-[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 24 October 2025.
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on TBD October 2025.
 
 This version updates a few iOS 26 interface issues, add fixes for Dana pumps and streamlines and enhances the Browser Build process.
 
@@ -52,7 +52,7 @@ This version updates a few iOS 26 interface issues, add fixes for Dana pumps and
 * Modify the build schedule to run on Sundays and build on the second Sunday of each month
     * see [Updated Build Features](../browser/automatic.md#updated-build-features){: target="_blank" } details
 
-* Bring in updates from DanaKit and updates from LoopKit to improve IOB reporting when pump disconnects during a bolus
+* Bring in updates from DanaKit and updates from LoopKit to improve IOB reporting
 * Update some translations
 
 > When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.

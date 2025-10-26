@@ -56,16 +56,20 @@ The modified design for the build action found in `Loop v3.8.2` and newer is doc
 
 #### Updated Build Features
 
-The code that controls the build process was streamlined and enhanced to have these features:
+The code that controls the build process was streamlined and enhanced. It runs every Sunday at a time when *GitHub* is not impacted. The portion of the action that decides whether to build or not completes in a few seconds.
 
-* build when updates are found on any Sunday
-* build on the second Sunday of the month regardless of update status
-* rearrange the order so the check whether to build takes a few seconds
-    * longer processes are skipped when build is skipped
+**Build when**
+
+* updates are detected
+* it is the second Sunday of the month
+
+**Other features**
+
 * remove the concept of alive branches
 * remove the requirement that your fork name match the upstream repository name
 * enable any branch in your fork to be updated if the upstream repository has the same branch
     * if you choose to have a special branch in your fork set to default, the automatic check for updates works for that special branch
+
 
 ??? question "Do you want to know more? (Click to open/close)"
     **Build Action Redesign**
@@ -118,6 +122,7 @@ In April 2025, GitHub disallowed using the build action to automatically add com
 Once you update to v3.8.2 or newer, references to `alive branches` are removed from the build action.
 
 > * If you have alive branches (`alive`, `alive-dev` or `alive-main`) you may delete them if you choose
+* Only delete alive branches after your default branch is updated to the new version
 
 ## Automatic Certificates
 
