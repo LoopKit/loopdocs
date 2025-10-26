@@ -1,14 +1,11 @@
 ## Order a RileyLink Compatible Device
 
-**Not needed for any pump that supports direct Bluetooth BLE commands**
-
-* **Dana**
-* **DASH**
+**Not needed for any pump that supports direct Bluetooth BLE commands such as Dana, DASH and Medtrum**
 
 **Required when using an older Medtronic pump or Omnipod Eros pods**
 
 !!! info "Time Estimate"
-    - 0 minutes if you plan to use a Dana pump or a DASH Omnipod pump - you don't need one
+    - 0 minutes if you plan to use a pump that supports direct BLE communication - you don't need one
     - 15-20 minutes to read about RileyLink compatible devices
     - 15 minutes to order a device
 
