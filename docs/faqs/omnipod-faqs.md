@@ -35,7 +35,7 @@ Some of the DASH pods produced in 2025 have different chips and firmware. The on
 
 * The left images show the SAW marking for "TWI Board" DASH pods
 * The right images show the Atlas marking for "InPlay BLE" DASH pods
-* The exact location of the marking varies according to manufacture location and date but the SAW and Atlas determine the internal BLE configuration for that pod
+* The exact location of the marking varies according to manufacture location and date but the SAW and Atlas indicates the internal BLE configuration for that pod
 
 ![identifying marks for SAW and Atlas DASH pods](img/saw-atlas-identifiers.svg){width="750"}
 {align="center"}
