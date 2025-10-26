@@ -51,7 +51,7 @@ Some of the DASH pods produced in 2025 have different chips and firmware. The on
         * With iPhone 16, this can take many seconds and sometimes a few minutes
     * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
     * No solution to this issue is known
-    * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3 minute BLE disconnect; but it uses extra battery for both the phone and the pod
+    * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for both the phone and the pod
         * If you are forced to use an iPhone 16 with InPlay pods, reach out for help and this work-around can be made available
 
 > DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16.
