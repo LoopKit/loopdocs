@@ -143,7 +143,7 @@ The next screen allows you to choose `Translation` in one drop-down and then `ma
 ![configure a custom filter for same as source on lokalise](img/lokalise-filter-for-matches-source.png){width="900"}
 {align="center"}
 
-You can hit Appy or Save and Apply and give it a name so you can select the Name next time.
+You can hit Apply or Save and Apply and give it a name so you can select the Name next time.
 
 The screenshot below is after creating and naming a custom filter called `Translation Matches Source`.
 
@@ -185,5 +185,5 @@ You can use the *Trio* or *iAPS* discord server to volunteer to translate using 
 
 We can add languages if a translator commits to take on that task.
 
-At lokalise, the language must be added first before translators have access it to that language. Send a DM to Marion Barker with your request for a new language.
+At lokalise, the language must be added first before translators have access to that language. Send a DM to Marion Barker with your request for a new language.
 

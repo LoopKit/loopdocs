@@ -19,8 +19,8 @@ All of these methods require APNS keys from someone with an Apple Developers Lic
 1. Use the [Careportal at the Nightscout URL](../nightscout/remote-commands.md){: target="_blank" }
     * If the Caregiver uses an Android phone, this is your only option
     * The Nightscout config vars must include APNS keys and the developer ID for the developer who built the Loop app
-2. Build the [*LoopCaregiver* app](../nightscout/loop-caregiver.md){: target="_blank" } on the caregiver's phone to issue command through the Nightscout site
-    * The Caregiver must have an iOS phone with iOS 16 or newer
+2. Build the [*LoopCaregiver* app](../nightscout/loop-caregiver.md){: target="_blank" } on the caregiver's iPhone to issue command through the Nightscout site
+    * The Caregiver must have an iPhone with iOS 16 or newer
     * The Nightscout config vars must include APNS keys and the developer ID for the developer who built the Loop app
 3. Build the [*LoopFollow* app](https://loopfollowdocs.org/remote/remote-control-loop/) on the caregiver's phone to directly issue APNS to the Looper's phone, this can be faster and more reliable
     * The Caregiver must have an iOS phone with iOS 16 or newer
