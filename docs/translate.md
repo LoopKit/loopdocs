@@ -1,14 +1,20 @@
+The lanuage list below provides automatic translation for `LoopDocs`.
+
+To assist with translation for the app on your phone, please see [App Translation](faqs/app-translation.md){: target="_blank" }.
+
 ## Language List
 
 [عربي](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ar)
 
 [Български](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=bg)
 
+[Нохчийн](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=ce)
+
 [Čeština](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=cs)
 
-[Deutsch](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=de)
-
 [Dansk](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=da)
+
+[Deutsch](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=de)
 
 [Ελληνικά](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=el)
 
@@ -48,17 +54,23 @@
 
 [Turkish](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=tr)
 
+[українська](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=uk)
+
+[Tiếng Việt](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=vi)
+
+([中国人](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-HAN))
+
 中文（[简体](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-CN))
 
 中文（[繁體](https://loopkit-github-io.translate.goog/loopdocs/?_x_tr_sl=auto&_x_tr_tl=zh-TW))
 
 ## Google Translate Links
 
-Click on a language on the list of links above to turn on Google's automatic translation.
+Click on a language on the list of links above to turn on Google's automatic translation. This opens in a new browser tab. To return to English, switch back to the original tab.
 
-## Change Language
+### Change Language
 
-To modify the language choice for the whole site, copy the line below, and paste it into the URL, and then choose the desired language from the list above.
+To modify the language choice for the whole site you can return to the original tab (which is in English). If you closed that tab and are on a translated page, then you can copy the line below, and paste it into the URL, and then choose the desired language from the list.
 
 ``` { .bash .copy title="Copy and Paste in Browser URL to return to original version" }
 https://loopkit.github.io/loopdocs/translate
@@ -99,12 +111,4 @@ The graphic below shows the Google Translate Tool when maximized (default) for a
 
 ## Code Translation
 
-The localization (strings translated to the selected language in the *Loop* app) makes use of volunteers who input translations in a special web app. Their work is then dowloaded and imported into the code used by Loop and its submodules (repositories on GitHub).
-
-If you notice *Loop* app messages in English even though you selected a specific language, and you can help translate it, please volunteer.
-
-Translations for Loop are performed by volunteers at [lokalise](https://app.lokalise.com/projects).
-
-To volunteer, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate.
-
-If you are using the *Trio* app instead of the *Loop* app, you can still assist with pump, CGM and Tidepool module localization through Loop lokalise. Some repositories from *Loop* are used by *Trio*. You can use the *Trio* discord server to volunteer by sending a direct message to Marion if you are not a member of zulipchat.
+The information about code translation has moved. Please see [App Translation](faqs/app-translation.md).
