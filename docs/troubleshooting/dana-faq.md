@@ -11,6 +11,11 @@
 * Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
 
 
+The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
+
+This branch is subject to rapid updates.
+
+
 ## Q: Help I frequently encounter signal loss or orange loops
 
 First of all, lets check you CGM, since the dana driver trusts your CGM to provide a heartbeat.

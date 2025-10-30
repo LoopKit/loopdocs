@@ -53,15 +53,12 @@ Here is an overview of the different steps for adding each pump.  Before changin
 1. [Select RileyLink](#select-rileylink)
 1. [Medtronic](#medtronic)
 
-#### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3)
+#### Other Pumps
 
-> Requires v3.7.5 or newer
+> Experts only, `feat/dev-dana-medtrum` branch required
 
-1. [Select Dana-i/DanaRS-v3](#select-dana-idanars-v3)
-1. [Insulin Type](#insulin-type)
-1. [Delivery Speed](#delivery-speed)
-1. [Pair Dana](#pair-dana)
-
+* [Dana-i / DanaRS-v3](#dana-i-danars-v3)
+* [Medtrum Nano](#medtrum-nano)
 
 ## Add Pump
 
