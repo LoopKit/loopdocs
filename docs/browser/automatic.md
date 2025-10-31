@@ -12,11 +12,18 @@ The instructions provided for building with a browser include settings to automa
     * **inactive** means stable code (no new commit within the last 60 days)
     * **disables actions** means the Build Action shows up as disabled
 
+!!! warning "Browser Build Disabled"
+    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace even though the repository is not stale.
+
+    * We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)
+    * The redesigned build action for v3.8.2 should alleviate this
+    * We also plan to reach out to GitHub after people have transitioned to the v3.8.2 build schedule
+
 ### What Manual Action is Required?
 
-For any repository that is stable, like the *Loop* app, you may need to take manual action to keep automatic builds flowing every month.
+For any repository that shows the build action disabled, you should enable the action and do a manual build.
 
-* Put a calendar reminder to check every month on the 2nd day of the month (or later)
+* Put a calendar reminder to check every month on the 15th day of the month (or later)
     * Check that *TestFlight* has a new build of the *Loop* (or other) app
     * If not, go to your repository to see if the build action is disabled
 * If necessary, enable the build action at your repository as shown in the graphic below and then launch a manual build
@@ -26,6 +33,10 @@ For any repository that is stable, like the *Loop* app, you may need to take man
 This keeps the most recent version of your app available in *TestFlight* for you to install when you are ready. This manual enable step should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.
 
 > Builds in *TestFlight* are good for 90 days before they [expire](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }.
+
+Your build may fail for other reasons - most common is forgetting to sign your updated license agreement or not adding the variable needed to get automatic annual certification renewal.
+
+* Head over to [Errors with Browser](bb-errors.md){: target="_blank" }
 
 ## What is Automatic
 

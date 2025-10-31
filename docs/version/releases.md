@@ -10,7 +10,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 The current released version for the *Loop* app is v3.8.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
+> When main is updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
 
 > See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
@@ -43,7 +43,18 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 
 ### Loop v3.8.2
 
-[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on TBD October 2025.
+!!! warning "Browser Build Disabled"
+    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace.
+
+    * We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)
+    * The redesigned build action for v3.8.2 should alleviate this
+    * We also plan to reach out to GitHub after people have transitioned to the v3.8.2 build schedule
+
+> Please follow these steps to build manually and then once that build completes, enable the build action again.
+
+> * [What Manual Action is Required?](../browser/automatic.md#what-manual-action-is-required){: target="_blank" }
+
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 31 October 2025.
 
 This version updates a few iOS 26 interface issues, moves support for Dana pumps to a different branch, and streamlines and enhances the Browser Build process.
 
@@ -55,7 +66,7 @@ This version updates a few iOS 26 interface issues, moves support for Dana pumps
 * [Remove DanaKit](#why-was-danakit-support-changed) support from `main` and `dev` branches of the *Loop* app
 * Update some translations
 
-> When main was updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
+> When main is updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
 
 #### Why was DanaKit Support Changed
 
