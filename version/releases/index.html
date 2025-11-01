@@ -2788,6 +2788,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v382" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop v3.8.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v381" class="md-nav__link">
     <span class="md-ellipsis">
       Loop v3.8.1
@@ -3992,6 +4001,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop-v382" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loop v3.8.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#loop-v381" class="md-nav__link">
     <span class="md-ellipsis">
       Loop v3.8.1
@@ -4235,9 +4253,9 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.8.1 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.8.2 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <blockquote>
-<p>When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, which is at v3.9.1.</p>
+<p>When main is updated to v3.8.2, the same update is planned for the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. It may take a day or two before <code>dev</code> is updated to 3.9.2.</p>
 <p>See <a href="../development/#updates-in-dev" target="_blank">Updates in <code>dev</code></a> for a summary of difference, if any, between <code>main</code> and <code>dev</code>.</p>
 </blockquote>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4256,8 +4274,73 @@
 <li>It is a known issue that some screens show up as a different language for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15 devices with v3.8.x.</li>
 <li>It is expected <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> will soon require a minimum of <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 17</li>
 </ul>
-<p>See <a href="../../build/phone/#compatible-device" target="_blank">Compatible Device</a>:</p>
+<p>See <a href="../../build/phone/#compatible-device" target="_blank">Compatible Device</a>.</p>
 </div>
+<h3 id="loop-v382"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.2<a class="headerlink" href="#loop-v382" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.2</a> was released on 31 October 2025.</p>
+<p><strong>Warning - Dana users - this version does not support Dana but 2 alternate branches are available. Choose one of those to build to continue using your pump. Please read the note below:</strong></p>
+<ul>
+<li><a href="#why-was-danakit-support-changed">Why was DanaKit Support Changed?</a></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Browser Build Disabled?</p>
+<p>We do not know why, but <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> is disabling the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Action for many user's LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<ul>
+<li>We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)</li>
+<li>The redesigned build action for v3.8.2 should alleviate this</li>
+<li>We also plan to reach out to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> after people have transitioned to the v3.8.2 build schedule</li>
+</ul>
+</div>
+<blockquote>
+<p>Please follow these steps to build manually:</p>
+<ul>
+<li><a href="../../browser/automatic/#what-manual-action-is-required" target="_blank">What Manual Action is Required?</a></li>
+</ul>
+</blockquote>
+<h4 id="updates-in-v382">Updates in v3.8.2<a class="headerlink" href="#updates-in-v382" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This version updates a few <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 26 interface issues, moves support for Dana pumps to a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, and streamlines and enhances the Browser Build process.</p>
+<ul>
+<li>Restore expected behavior for phones running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 26<ul>
+<li>see <a href="https://github.com/LoopKit/Loop/pull/2371"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2371</a> / <a href="https://github.com/LoopKit/LoopKit/pull/573">LoopKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 573</a></li>
+</ul>
+</li>
+<li>
+<p>Modify the build schedule to run on Sundays and build on the second Sunday of each month</p>
+<ul>
+<li>see <a href="../../browser/automatic/#updated-build-features" target="_blank">Updated Build Features</a> details</li>
+</ul>
+</li>
+<li>
+<p><a href="#why-was-danakit-support-changed">Remove DanaKit</a> support from <code>main</code> and <code>dev</code> branches of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</p>
+</li>
+<li>Update some translations</li>
+</ul>
+<blockquote>
+<p>When main is updated to v3.8.2, the same update is planned for the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. It may take a day or two before <code>dev</code> is updated to 3.9.2.</p>
+</blockquote>
+<h4 id="why-was-danakit-support-changed">Why was DanaKit Support Changed<a class="headerlink" href="#why-was-danakit-support-changed" title="Anchor link to this Header on this Page">&para;</a></h4>
+<blockquote>
+<p><strong>A pump manager that works for Trio must be separately tested for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></strong></p>
+</blockquote>
+<ul>
+<li>Several issues were reported regarding bolus accounting and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> reporting for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.1</li>
+<li>For this reason, Dana support is only found in 2 special branches</li>
+</ul>
+<p>If you were using Dana with v3.8.1, a <abbr title="version of code within a single repository or workspace repository">branch</abbr> called <code>release/3.8.1</code> was created for your continued use.</p>
+<ul>
+<li>The <code>release/3.8.1</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> will remain available while troubleshooting continues</li>
+<li>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version</li>
+</ul>
+<p>If you are an expert and want to use <a href="../../loop-3/add-pump/#dana-in-loop-requires-expert-testing" target="_blank">Dana</a> or <a href="../../loop-3/add-pump/#medtrum-in-loop-requires-expert-testing" target="_blank">Medtrum</a>, the experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> is <code>feat/dev-dana-medtrum</code></p>
+<ul>
+<li>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is subject to rapid updates</li>
+<li>
+<p>Please do not use Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260">developers on zulipchat in this DanaKit channel</a></p>
+</li>
+<li>
+<p>Please do not use Medtrum with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247">developers on zulipchat in the Medtrum channel</a></p>
+</li>
+</ul>
 <h3 id="loop-v381"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.1<a class="headerlink" href="#loop-v381" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.1</a> was released on 23 September 2025.</p>
 <p>This was released as a hotfix:</p>

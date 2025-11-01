@@ -1309,15 +1309,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#check-upstream-and-keep-alive-error" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check Upstream and Keep Alive Error
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#manual-enable-for-build-action-may-be-required" class="md-nav__link">
     <span class="md-ellipsis">
       Manual Enable for Build Action May be Required
@@ -4304,15 +4295,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#check-upstream-and-keep-alive-error" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check Upstream and Keep Alive Error
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#manual-enable-for-build-action-may-be-required" class="md-nav__link">
     <span class="md-ellipsis">
       Manual Enable for Build Action May be Required
@@ -4827,23 +4809,6 @@
 <p align="center"><img alt="graphic with an example build error" src="../img/example-identifier-build-errors.png" width="800" /></p>
 <p>Ignore the warnings - this does not affect the build.</p>
 <h2 id="rebuild-errors-quick-reference">Rebuild Errors: Quick Reference<a class="headerlink" href="#rebuild-errors-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="check-upstream-and-keep-alive-error"><code>Check Upstream and Keep Alive</code> Error<a class="headerlink" href="#check-upstream-and-keep-alive-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="admonition important">
-<p class="admonition-title"><code>Check Upstream and Keep Alive</code> Error</p>
-<p><strong>Error</strong>: Your Browser Build fails and when you click on the link, you see</p>
-<ul>
-<li><strong><code>Check Upstream and Keep Alive</code></strong> failed</li>
-</ul>
-<p><strong>Consequence</strong>: any required sync of your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is skipped and build is skipped</p>
-<p><strong>Solution</strong>:</p>
-<ul>
-<li>Manually sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr>: <a href="../bb-update/#update-fork" target="_blank">Update <code>Fork</code></a></li>
-<li>Manually start your build: <a href="../bb-update/#build-the-app" target="_blank">Build</a></li>
-</ul>
-<p><strong>Details about what happened</strong>:</p>
-<p>On 21 April 2025, <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> removed one of the third-party repositories that we used to keep automatic building going without action on your part. The <abbr title="contains project files and each file's revision history">repository</abbr> was removed because it was in violation of the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> terms of service. <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> disables automatic actions for repositories that have been inactive (no commits added in 60 days). For stable apps, like the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, this third-party <abbr title="contains project files and each file's revision history">repository</abbr> enabled a workaround to keep the builds happening.</p>
-<p>This affected all the Open-Source apps in our community - <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, Trio, iAPS and xDrip4iOS. The developers in our community have restored the ability to build using the Browser Build method. Stay tuned for updates to required actions in the documentation over the next few months, before we hit the 60 day limit.</p>
-</div>
 <h3 id="manual-enable-for-build-action-may-be-required">Manual Enable for Build Action May be Required<a class="headerlink" href="#manual-enable-for-build-action-may-be-required" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The automatic build actions continue to happen on schedule, but starting May 2025, you may find your build action disabled by <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. (This might happen every 60 days, but it might happen sooner.) In that case, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.</p>
 <p>If necessary, enable the build action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build.</p>
@@ -4890,11 +4855,6 @@
 <li>You skipped running one of the actions</li>
 <li>You need to sign a program license agreement or update a credit card at&nbsp;<span translate="no">Apple Developer</span><ul>
 <li>Be sure to read <a href="#misleading-error-message">Misleading Error Message</a></li>
-</ul>
-</li>
-<li>You got an error regarding a <abbr title="version of code within a single repository or workspace repository">branch</abbr> with <code>alive</code> in the name<ul>
-<li>You can delete any <abbr title="version of code within a single repository or workspace repository">branch</abbr> that starts with the name <code>alive</code> and try again</li>
-<li>See <a href="../automatic/#automatic-creation-of-alive-branch" target="_blank">Automatic Creation of <code>alive branch</code></a></li>
 </ul>
 </li>
 </ol>

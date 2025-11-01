@@ -2637,6 +2637,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#dana-in-loop-requires-expert-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dana in Loop Requires Expert Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#q-help-i-frequently-encounter-signal-loss-or-orange-loops" class="md-nav__link">
     <span class="md-ellipsis">
       Q: Help I frequently encounter signal loss or orange loops
@@ -3715,6 +3724,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#dana-in-loop-requires-expert-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dana in Loop Requires Expert Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#q-help-i-frequently-encounter-signal-loss-or-orange-loops" class="md-nav__link">
     <span class="md-ellipsis">
       Q: Help I frequently encounter signal loss or orange loops
@@ -3791,6 +3809,18 @@
 
 
 <h1 id="dana-rs-i-faq">Dana (RS/-i) FAQ<a class="headerlink" href="#dana-rs-i-faq" title="Anchor link to this Header on this Page">&para;</a></h1>
+<h3 id="dana-in-loop-requires-expert-testing">Dana in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Requires Expert Testing<a class="headerlink" href="#dana-in-loop-requires-expert-testing" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>WARNING: Dana support in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is a work-in-progress; only experts should consider testing this.</strong></p>
+<blockquote>
+<p><strong>A pump manager that works for Trio must be separately tested for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></strong></p>
+</blockquote>
+<ul>
+<li>Several issues were reported regarding bolus accounting and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> reporting for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>For this reason, the Dana pump support, available in v3.8.1, was removed from the <code>main</code> and <code>dev</code> branches for v3.8.2 (3.9.2)</li>
+<li>Please do not use Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260">developers on zulipchat in this DanaKit channel</a></li>
+</ul>
+<p>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> needed to get Dana in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is: <code>feat/dev-dana-medtrum</code>.</p>
+<p>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is subject to rapid updates.</p>
 <h2 id="q-help-i-frequently-encounter-signal-loss-or-orange-loops">Q: Help I frequently encounter signal loss or orange loops<a class="headerlink" href="#q-help-i-frequently-encounter-signal-loss-or-orange-loops" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>First of all, lets check you <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, since the dana driver trusts your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to provide a heartbeat.</p>
 <p>If you are using an internet <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> (like NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Dexcom Share), you lack a heartbeat inside the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.

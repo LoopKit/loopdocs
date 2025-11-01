@@ -4050,7 +4050,6 @@
 <ul>
 <li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> users: 3 seconds to remember which Personal Diabetes Manager (PDM) you've been using.</li>
 <li>Medtronic users: 10 minutes to put a battery in and look at model and firmware</li>
-<li>Dana users: 5 minutes to check your model number</li>
 <li>Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr></li>
 </ul>
 </div>
@@ -4059,8 +4058,11 @@
 <ul>
 <li>If you have a Medtronic pump, check the <a href="#check-medtronic-pump-version">Medtronic Pump Version</a> list to ensure compatible model/firmware</li>
 <li>If you use <a href="#omnipod-pumps"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr></a> - check which kind</li>
+<li>For expert testers only, must build a special <abbr title="version of code within a single repository or workspace repository">branch</abbr>:<ul>
 <li>If you use <a href="#sooil-dana-pumps">Dana</a> - check which kind</li>
-<li>If you use <a href="#medtrum-nano">Medtrum Nano</a> - Check which loop version</li>
+<li>If you use <a href="#medtrum-nano">Medtrum Nano</a> - click the link</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="admonition question">
@@ -4084,8 +4086,11 @@
 <li>See caveat about <a href="../phone/#compatible-device" target="_blank">iPhone 16</a></li>
 </ul>
 </li>
-<li><a href="#sooil-dana-pumps">Dana-i / DanaRS-v3</a> (v3.7.5 or newer)</li>
-<li><a href="#medtrum-nano">Medtrum Touchcare Nano</a> (feat/dev-medtrum <abbr title="version of code within a single repository or workspace repository">branch</abbr> only, v3.9.0 or newer)</li>
+</ul>
+<p>You must build a special <abbr title="version of code within a single repository or workspace repository">branch</abbr> to test these pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.</p>
+<ul>
+<li><a href="#sooil-dana-pumps">Dana-i / DanaRS-v3</a> (experts only, work in progress)</li>
+<li><a href="#medtrum-nano">Medtrum Touchcare Nano</a> (experts only, work in progress)</li>
 </ul>
 <h2 id="check-medtronic-pump-version">Check Medtronic Pump Version<a class="headerlink" href="#check-medtronic-pump-version" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
@@ -4259,9 +4264,11 @@
 <p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> does not support <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 pods.</p>
 <h2 id="sooil-dana-pumps">Sooil Dana pumps<a class="headerlink" href="#sooil-dana-pumps" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Dana pumps support is new - pay attention</p>
-<p>The Dana pump is supported with the released <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, v3.8.0 or newer.</p>
-<p>Follow the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20support.20for.20Loop">Zulipchat Dana Pump discusion</a> if you need additional support for the Dana pump.</p>
+<p class="admonition-title">You must build <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use Dana pumps</p>
+<p>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is experimental and requires careful attention to bolus accounting and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> reporting. </p>
+<ul>
+<li>You must follow <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260">zulipchat DanaKit topic</a></li>
+</ul>
 <p>Read these pages in LoopDocs:</p>
 <ul>
 <li><a href="../../loop-3/add-pump/#dana-i-danars-v3" target="_blank">Add a Dana Pump</a></li>
@@ -4272,22 +4279,27 @@
 <h3 id="dana-i">Dana-i<a class="headerlink" href="#dana-i" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.</p>
 <blockquote>
-<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app v3.7.5 or newer supports the Dana-i. </p>
+<p>The <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports Dana-i. </p>
 </blockquote>
 <p align="center"><img alt="Dana-i" src="../img/dana-i.png" width="250" /></p>
 <h3 id="danars">DanaRS<a class="headerlink" href="#danars" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.
 <a href="../../loop-3/add-pump/#dana-i-danars-v3">Check here</a> to see how to check your firmware version.</p>
 <blockquote>
-<p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app v3.7.5 or newer supports the DanaRS-v3. </p>
+<p>The <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports DanaRS-v3. </p>
 </blockquote>
 <p align="center"><img alt="DanaRS-v3" src="../img/danars.png" width="250" /></p>
 <h2 id="medtrum-nano">Medtrum Nano<a class="headerlink" href="#medtrum-nano" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">You must build feat/dev-medtrum <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use Medtrum patch pumps</p>
-<p>The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now.</p>
-<p><strong>Be very careful running this. The initial version had a bug where a delivered bolus was not always recorded properly. This is just one example of why only experts should volunteer to test experimental code.</strong></p>
-<p>Follow along in the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247">zulipchat Medtrum channel</a>.</p>
+<p class="admonition-title">You must build <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use Medtrum pumps</p>
+<p>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is experimental and requires careful attention to bolus accounting and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> reporting. </p>
+<ul>
+<li>You must follow <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247">zulipchat Medtrum channel</a></li>
+</ul>
+<p>Read this section in LoopDocs:</p>
+<ul>
+<li><a href="../../loop-3/add-pump/#medtrum-nano" target="_blank">Medtrum Nano</a></li>
+</ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">All versions are supported!</p>
