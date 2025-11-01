@@ -43,18 +43,24 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
 
 ### Loop v3.8.2
 
-!!! warning "Browser Build Disabled"
-    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace.
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 31 October 2025.
+
+**Warning - Dana users - this version does not support Dana but 2 alternate branches are available. Choose one of those to build to continue using your pump. Please read the note below:**
+
+* [Why was DanaKit Support Changed?](#why-was-danakit-support-changed)
+
+!!! warning "Browser Build Disabled?"
+    We do not know why, but GitHub is disabling the Build Loop Action for many user's LoopWorkspace fork.
 
     * We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)
     * The redesigned build action for v3.8.2 should alleviate this
     * We also plan to reach out to GitHub after people have transitioned to the v3.8.2 build schedule
 
-> Please follow these steps to build manually and then once that build completes, enable the build action again.
+> Please follow these steps to build manually:
 
 > * [What Manual Action is Required?](../browser/automatic.md#what-manual-action-is-required){: target="_blank" }
 
-[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 31 October 2025.
+#### Updates in v3.8.2
 
 This version updates a few iOS 26 interface issues, moves support for Dana pumps to a different branch, and streamlines and enhances the Browser Build process.
 
@@ -72,12 +78,21 @@ This version updates a few iOS 26 interface issues, moves support for Dana pumps
 
 > **A pump manager that works for Trio must be separately tested for Loop**
 
-* Several issues were reported regarding bolus accounting and IOB reporting for Loop
-* For this reason, the Dana and Medtrum pump support is only found in a special branch
-* If you are an expert and want to use [Dana](../loop-3/add-pump.md#dana-in-loop-requires-expert-testing){: target="_blank" } or [Medtrum](../loop-3/add-pump.md#medtrum-in-loop-requires-expert-testing){: target="_blank" }, the experimental branch is `feat/dev-dana-medtrum`
-    * Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+* Several issues were reported regarding bolus accounting and IOB reporting for *Loop* v3.8.1
+* For this reason, Dana support is only found in 2 special branches
 
-    * Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+If you were using Dana with v3.8.1, a branch called `release/3.8.1` was created for your continued use.
+
+* The `release/3.8.1` branch will remain available while troubleshooting continues
+* This branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version
+
+If you are an expert and want to use [Dana](../loop-3/add-pump.md#dana-in-loop-requires-expert-testing){: target="_blank" } or [Medtrum](../loop-3/add-pump.md#medtrum-in-loop-requires-expert-testing){: target="_blank" }, the experimental branch is `feat/dev-dana-medtrum`
+
+* This branch is subject to rapid updates
+* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+
+* Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+
 
 
 ### Loop v3.8.1
