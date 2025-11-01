@@ -8,9 +8,9 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.8.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.8.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> When main was updated to v3.8.1 for a hotfix, the same hotfix was applied to the `dev` branch, which is at v3.9.1.
+> When main is updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
 
 > See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
 
@@ -39,7 +39,61 @@ Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span tran
     * It is a known issue that some screens show up as a different language for iOS 15 devices with v3.8.x.
     * It is expected *Loop* will soon require a minimum of iOS 17
 
-    See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }:
+    See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }.
+
+### Loop v3.8.2
+
+[*Loop* v3.8.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.2) was released on 31 October 2025.
+
+**Warning - Dana users - this version does not support Dana but 2 alternate branches are available. Choose one of those to build to continue using your pump. Please read the note below:**
+
+* [Why was DanaKit Support Changed?](#why-was-danakit-support-changed)
+
+!!! warning "Browser Build Disabled?"
+    We do not know why, but GitHub is disabling the Build Loop Action for many user's LoopWorkspace fork.
+
+    * We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)
+    * The redesigned build action for v3.8.2 should alleviate this
+    * We also plan to reach out to GitHub after people have transitioned to the v3.8.2 build schedule
+
+> Please follow these steps to build manually:
+
+> * [What Manual Action is Required?](../browser/automatic.md#what-manual-action-is-required){: target="_blank" }
+
+#### Updates in v3.8.2
+
+This version updates a few iOS 26 interface issues, moves support for Dana pumps to a different branch, and streamlines and enhances the Browser Build process.
+
+* Restore expected behavior for phones running iOS 26
+    * see [Loop PR 2371](https://github.com/LoopKit/Loop/pull/2371) / [LoopKit PR 573](https://github.com/LoopKit/LoopKit/pull/573)
+* Modify the build schedule to run on Sundays and build on the second Sunday of each month
+    * see [Updated Build Features](../browser/automatic.md#updated-build-features){: target="_blank" } details
+
+* [Remove DanaKit](#why-was-danakit-support-changed) support from `main` and `dev` branches of the *Loop* app
+* Update some translations
+
+> When main is updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
+
+#### Why was DanaKit Support Changed
+
+> **A pump manager that works for Trio must be separately tested for Loop**
+
+* Several issues were reported regarding bolus accounting and IOB reporting for *Loop* v3.8.1
+* For this reason, Dana support is only found in 2 special branches
+
+If you were using Dana with v3.8.1, a branch called `release/3.8.1` was created for your continued use.
+
+* The `release/3.8.1` branch will remain available while troubleshooting continues
+* This branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version
+
+If you are an expert and want to use [Dana](../loop-3/add-pump.md#dana-in-loop-requires-expert-testing){: target="_blank" } or [Medtrum](../loop-3/add-pump.md#medtrum-in-loop-requires-expert-testing){: target="_blank" }, the experimental branch is `feat/dev-dana-medtrum`
+
+* This branch is subject to rapid updates
+* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+
+* Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+
+
 
 ### Loop v3.8.1
 

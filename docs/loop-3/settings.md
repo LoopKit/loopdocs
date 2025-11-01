@@ -160,7 +160,11 @@ The information about the pump section is detailed on several different pages. F
 * [Add or Modify Pump](add-pump.md)
 * [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
 * [Medtronic](medtronic.md) Status and Commands
+
+For experts only, requires a special branch:
+
 * [Dana Pumps](add-pump.md#dana-i-danars-v3)
+* [Medtrum Pumps](add-pump.md#medtrum-nano)
 
 ### [CGM Settings](add-cgm.md)
 

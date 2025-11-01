@@ -1,5 +1,21 @@
 # Dana (RS/-i) FAQ
 
+### Dana in Loop Requires Expert Testing
+
+**WARNING: Dana support in Loop is a work-in-progress; only experts should consider testing this.**
+
+> **A pump manager that works for Trio must be separately tested for Loop**
+
+* Several issues were reported regarding bolus accounting and IOB reporting for Loop
+* For this reason, the Dana pump support, available in v3.8.1, was removed from the `main` and `dev` branches for v3.8.2 (3.9.2)
+* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+
+
+The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
+
+This branch is subject to rapid updates.
+
+
 ## Q: Help I frequently encounter signal loss or orange loops
 
 First of all, lets check you CGM, since the dana driver trusts your CGM to provide a heartbeat.

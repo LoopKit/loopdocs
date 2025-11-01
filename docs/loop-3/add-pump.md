@@ -17,9 +17,9 @@ Loopers can choose from 5 pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* Dana-i / DanaRS-v3 (v3.7.5 or newer)
+* Dana-i / DanaRS-v3 (**work-in-progress; experts only**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
-* Medtrum Nano patch pump
+* Medtrum Nano patch pump (**work-in-progress; experts only**)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -53,15 +53,12 @@ Here is an overview of the different steps for adding each pump.  Before changin
 1. [Select RileyLink](#select-rileylink)
 1. [Medtronic](#medtronic)
 
-#### Steps for [Dana-i / DanaRS-v3](#dana-i-danars-v3)
+#### Other Pumps
 
-> Requires v3.7.5 or newer
+> Experts only, `feat/dev-dana-medtrum` branch required
 
-1. [Select Dana-i/DanaRS-v3](#select-dana-idanars-v3)
-1. [Insulin Type](#insulin-type)
-1. [Delivery Speed](#delivery-speed)
-1. [Pair Dana](#pair-dana)
-
+* [Dana-i / DanaRS-v3](#dana-i-danars-v3)
+* [Medtrum Nano](#medtrum-nano)
 
 ## Add Pump
 
@@ -238,6 +235,31 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 
 ## Dana-i / DanaRS-v3
 
+### Dana in Loop Requires Expert Testing
+
+**WARNING: Dana support in Loop is a work-in-progress; only experts should consider testing this.**
+
+> **A pump manager that works for Trio must be separately tested for Loop**
+
+* Several issues were reported regarding bolus accounting and IOB reporting for Loop
+* For this reason, the Dana pump support, available in v3.8.1, was removed from the `main` and `dev` branches for v3.8.2 (3.9.2)
+* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+
+### Before Testing Dana
+
+The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
+
+This branch is subject to rapid updates.
+
+Please refer to [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260) before building this branch.
+
+### When Testing Dana
+
+!!! warning "You must build feat/dev-dana-medtrum branch to use Dana pumps"
+    This branch is experimental and requires careful attention to bolus accounting and IOB reporting. 
+    
+    * You must follow [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+
 !!! info "Support for Dana-i"
     All versions of the Dana-i are supported at the moment!
 
@@ -355,8 +377,31 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 
 ## Medtrum Nano
 
-!!! warning "You must build feat/dev-medtrum branch to use Medtrum patch pumps"
-    The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now
+
+### Medtrum in Loop Requires Expert Testing
+
+**WARNING: Medtrum support in Loop is a work-in-progress; only experts should consider testing this.**
+
+> **A pump manager that works for Trio must be separately tested for Loop**
+
+* Several issues were reported regarding bolus accounting and IOB reporting for Loop
+* For this reason, the Medtrum pump support is only found in a special branch
+* Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+
+### Before Testing Medtrum
+
+The branch needed to get Medtrum in Loop is: `feat/dev-dana-medtrum`.
+
+This branch is subject to rapid updates.
+
+Please refer to the [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247) before building this branch.
+
+### When Testing Medtrum
+
+!!! warning "You must build feat/dev-dana-medtrum branch to use Medtrum patch pumps"
+    The Medtrum patch pump is experimental and requires careful attention to bolus accounting and IOB reporting. 
+    
+    * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.

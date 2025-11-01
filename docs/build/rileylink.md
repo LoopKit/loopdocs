@@ -76,7 +76,7 @@ Sections of interest include:
 
 ## Waiting for your RileyLink Compatible Device
 
-While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md){: target="_blank" } options. After that, unless you are using *Omnipod DASH* or Sooil Dana, you'll have to wait for your device.
+While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md){: target="_blank" } options. After that, unless you are using pump that communicates directly with Bluetooth, you'll have to wait for your device.
 
 The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
 

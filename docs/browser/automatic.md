@@ -12,11 +12,18 @@ The instructions provided for building with a browser include settings to automa
     * **inactive** means stable code (no new commit within the last 60 days)
     * **disables actions** means the Build Action shows up as disabled
 
+!!! warning "Browser Build Disabled"
+    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace even though the repository is not stale.
+
+    * We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)
+    * The redesigned build action for v3.8.2 should alleviate this
+    * We also plan to reach out to GitHub after people have transitioned to the v3.8.2 build schedule
+
 ### What Manual Action is Required?
 
-For any repository that is stable, like the *Loop* app, you may need to take manual action to keep automatic builds flowing every month.
+For any repository that shows the build action disabled, you should enable the action and do a manual build.
 
-* Put a calendar reminder to check every month on the 2nd day of the month (or later)
+* Put a calendar reminder to check every month on the 15th day of the month (or later)
     * Check that *TestFlight* has a new build of the *Loop* (or other) app
     * If not, go to your repository to see if the build action is disabled
 * If necessary, enable the build action at your repository as shown in the graphic below and then launch a manual build
@@ -26,6 +33,10 @@ For any repository that is stable, like the *Loop* app, you may need to take man
 This keeps the most recent version of your app available in *TestFlight* for you to install when you are ready. This manual enable step should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.
 
 > Builds in *TestFlight* are good for 90 days before they [expire](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }.
+
+Your build may fail for other reasons - most common is forgetting to sign your updated license agreement or not adding the variable needed to get automatic annual certification renewal.
+
+* Head over to [Errors with Browser](bb-errors.md){: target="_blank" }
 
 ## What is Automatic
 
@@ -50,11 +61,51 @@ You still need to **take these actions** to ensure a recent build of the *Loop* 
 * Check your *GitHub* action if you ever get an email saying an automatic action failed
 * Look at your *TestFlight* app on the second of every month to make sure a new build is available for you to install when you are ready
 
+### Modified Design for Build Action
+
+The modified design for the build action found in `Loop v3.8.2` and newer is documented in this section.
+
+#### Updated Build Features
+
+The code that controls the build process was streamlined and enhanced. It runs every Sunday at a time when *GitHub* is not impacted. The portion of the action that decides whether to build or not completes in a few seconds.
+
+**Build when**
+
+* updates are detected
+* it is the second Sunday of the month
+
+**Other features**
+
+* remove the concept of alive branches
+* remove the requirement that your fork name match the upstream repository name
+* enable any branch in your fork to be updated if the upstream repository has the same branch
+    * if you choose to have a special branch in your fork set to default, the automatic check for updates works for that special branch
+
+
+??? question "Do you want to know more? (Click to open/close)"
+    **Build Action Redesign**
+
+    When GitHub allowed the use of alive branches with automatic addition of commits to the branch, there were extra steps in the build yml file and limitations to which branches would be updated.
+
+    * These steps kept your fork from getting stale
+    * GitHub will disable your build actions if no commits have been added for 60 days
+
+    Because this trick is no longer allowed, the creation and use of alive branches was removed. That opened the door to streamline and enhance the build action capabilities.
+    
+    If you want to follow the detailed design steps taken to reach this new version, see the following LoopFollow PR. (Most people do not need to know this).
+
+    * [LoopFollow PR 465: Shift GitHub to check for updates every Sunday and build 2nd Saturday of each month](https://github.com/loopandlearn/LoopFollow/pull/465)
+    * [LoopFollow PR 470: Update the GitHub build schedule to every Sunday](https://github.com/loopandlearn/LoopFollow/pull/470)
+    * [LoopFollow PR 477: Revise Browser Build to Remove Alive Branches](https://github.com/loopandlearn/LoopFollow/pull/477)
+    * [LoopFollow PR 480: Expand and streamline build action](https://github.com/loopandlearn/LoopFollow/pull/480)
+
 ### Successful Weekly Action
 
-Normally, you will see a successful `build action` once a week. This happens every Wednesday.
+Normally, you will see a successful `build action` once a week. This happens every Sunday (as soon as your version is 3.8.2 or newer).
 
-If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes about a minute because the logic says - no update then skip the build. 
+> Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
+
+If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes a few seconds because the logic says - if no update was detected and it is not the second Sunday, then skip checking the certificates and skip the build. 
 
 ![normal weekly check for updates when there are no updates](img/normal-check-for-updates.png)
 
@@ -64,7 +115,9 @@ In that case, you should check your favorite information site to find out what t
 
 ### Successful Monthly Action
 
-On the first day of every month, you will see a successful `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
+On the second Sunday of every month, you will see a longer `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
+
+> Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
 
 !!! important "You Get No Warning if Repository Build Action is Disabled"
     If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
@@ -75,35 +128,16 @@ You start getting [Notifications](../operation/features/notifications.md#loop-ap
 
 ### What are the `alive branches`?
 
-The automatic update and build feature is embedded in the build_loop.yml code and uses the GitHub scheduling feature to trigger actions to run automatically.
+In April 2025, GitHub disallowed using the build action to automatically add commits to `alive branches`. This trick was previously used to keep your fork active even when the upstream repository was stable.
 
-One or more branches are added to your repository that start with the name `alive`. Don't worry about these. They are automatically created so GitHub will keep building your app automatically.
+Once you update to v3.8.2 or newer, references to `alive branches` are removed from the build action.
 
-* GitHub keeps track of repositories
-* If there is no activity in a given repository in 60 days, GitHub disables Actions
-* If your Actions are disabled, you don't get automatic builds
-* Clever people developed a work around for this
-
-You may see branches called `alive`, `alive-dev` or `alive-main` in your repository.
-
-The `alive` branches are there so at least one commit per month is added to an `alive` branch in your repository. That keeps your repository active to allow the automatic update and build process.
-
-The `alive` branches are only used for the keep-alive functions. Do not build using an `alive` branch. Most people will build using the default branch of `main`.
-
-#### Automatic Creation of `alive branch`
-
-The `alive` branch you need is created automatically when you run the `Build Loop` action.
-
-!!! warning "I got an error regarding a branch with `alive` in the name"
-    * Sometimes you get an error about an `alive` branch
-    * If you do get an error, simply delete the branch and run the `Build Loop` action again
-        * Use this [GitHub link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#deleting-a-branch) or ask for help when deleting a branch
-    * You can delete every branch that starts with the name `alive`
-    * Leave the other branches alone unless a mentor directs you to take action
+> * If you have alive branches (`alive`, `alive-dev` or `alive-main`) you may delete them if you choose
+* Only delete alive branches after your default branch is updated to the new version
 
 ## Automatic Certificates
 
-Automatic renewal of certificates is included in `Loop 3.6.0`.
+Automatic renewal of certificates is included in `Loop 3.6.0` and newer versions.
 
 ### Requirements
 
@@ -134,22 +168,20 @@ Some Open-Source apps, in particular `Trio`, `LoopCaregiver`, `LoopFollow`, `Loo
 
 ### Open-Source App Schedule
 
-!!! information "Changes are Coming"
-    We are in process of modifying when **planned** builds happen.
+With the release of `Loop 3.8.2` and newer, the build schedule is updated.
 
-    The *LoopFollow* app and *Trio* app are already changed. This change will propagate to other apps in the Open-Source ecosystem.
+**New schedule - there will be one automatic run of the build action each week on Sunday.**
 
-    New method - there will be one automatic run of the build action each week on Sunday.
+* If no updated code is detected, the build will be skipped unless it is the **second Sunday** of the month
+* If updated code is detected, the new version of the app will be built and uploaded to TestFlight
 
-    * If it is the second Sunday of the month, the app will be built and uploaded to TestFlight
-    * If updated code is detected, the new version of the app will be built and uploaded to TestFlight
-    * If no updated code is detected, the build will be skipped (except for the second Sunday of the month)
+The table below indicates **planned** time for the automatic build schedule. GitHub will start the build action no earlier than the stated time but it can be delayed depending on activity at GitHub.
 
-The table below indicates **planned** time for the automatic build schedule. For apps not yet changed to the new method, the weekly runs are on Wednesday and the monthly runs are on the 1st of each month.
+> For apps not yet changed to the new method, the weekly runs are on Wednesday and the monthly runs are on the 1st of each month.
 
 | Open-Source App | AutoCerts? | Weekly<br>UTC | Once a Month<br>UTC |
 |:--|:-:|:-:|:-:|
-| <span translate="no">Loop</span> | &#x2705; | 09:33 | 07:33 |
+| <span translate="no">Loop</span> | &#x2705; | 07:33 | same |
 | <span translate="no">LoopCaregiver</span> | &#x2705; | 13:33 | 11:33 |
 | <span translate="no">LoopFollow</span> | &#x2705; | 10:17 | same |
 | <span translate="no">LoopFollow_Second</span> | &#x2705; | 10:27 | same |
@@ -202,7 +234,7 @@ This is an optional step. If you are happy with the automatic sync and update, y
 
     Note that the weekly and monthly `Build Loop` actions will continue, but the actions are modified if one or more of these variables is set to false. **A successful Action Log will still appear, even if no automatic activity happens**.
 
-    * If you want to manually decide when to update your repository to the latest commit, but you want the monthly builds and keep-alive to continue:
+    * If you want to manually decide when to update your repository to the latest commit, but you want the monthly builds to continue:
         * create the variable `SCHEDULED_SYNC` and set it to false
         * either do not create the variable `SCHEDULED_BUILD` or set it to true
         * If you are building the `dev branch` at a time when there is a lot of activity in that branch, you may want this configuration
@@ -214,10 +246,10 @@ This is an optional step. If you are happy with the automatic sync and update, y
 
     | <div style="width:120px">`SCHEDULED_SYNC`</div> | <div style="width:120px">`SCHEDULED_BUILD`</div> | Automatic Actions |
     |---|---|---|
-    | `true` (or N/A) | `true` (or N/A) | This is the default:<br>keep-alive, weekly update check (auto update/build), monthly build with auto update|
-    | `false` | `true` (or N/A) | keep-alive, monthly build, no auto update |
-    | `true` (or N/A) | `false` | keep-alive, weekly update check with auto update, only builds if update detected |
-    | `false` | `false` | no automatic activity, no keep-alive|
+    | `true` (or N/A) | `true` (or N/A) | This is the default:<br>weekly update check (auto update/build), monthly build with auto update|
+    | `false` | `true` (or N/A) | monthly build, no auto update |
+    | `true` (or N/A) | `false` | weekly update check with auto update, only builds if update detected |
+    | `false` | `false` | no automatic activity|
 
 ### How to configure a variable
 
@@ -241,10 +273,9 @@ Your build will run on the following conditions:
 - Default behaviour:
     - Run weekly, every Wednesday at 08:00 UTC to check for changes; if there are changes, it will update your repository and build
     - Run monthly, every first of the month at 06:00 UTC, if there are changes, it will update your repository; regardless of changes, it will build
-    - Each time the action runs, it makes a keep-alive commit to the `alive` branch if necessary
-- If you disable any automation (both variables set to `false`), no updates, keep-alive or building happens when `Build Loop` runs
-- If you disabled just scheduled synchronization (`SCHEDULED_SYNC` set to`false`), it will only run once a month, on the first of the month, no update will happen; keep-alive will run
-- If you disabled just scheduled build (`SCHEDULED_BUILD` set to`false`), it will run once weekly, every Wednesday, to check for changes; if there are changes, it will update and build; keep-alive will run
+- If you disable any automation (both variables set to `false`), no updates or building happens when `Build Loop` runs
+- If you disable only scheduled synchronization (`SCHEDULED_SYNC` set to`false`), the build action runs weekly but your fork is not updated and the monthly build uses the current version of your fork
+- If you disable only scheduled build (`SCHEDULED_BUILD` set to`false`), the build action runs weekly to check for changes; if there are changes, it will update and build
 
 ### Disable Automatic Actions
 

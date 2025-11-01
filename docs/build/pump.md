@@ -3,14 +3,14 @@
 !!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which Personal Diabetes Manager (PDM) you've been using.
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
-    - Dana users: 5 minutes to check your model number
     - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
 
 !!! abstract "Summary"
     - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - If you use [Omnipod](#omnipod-pumps) - check which kind
-    - If you use [Dana](#sooil-dana-pumps) - check which kind
-    - If you use [Medtrum Nano](#medtrum-nano) - Check which loop version
+    - For expert testers only, must build a special branch:
+        - If you use [Dana](#sooil-dana-pumps) - check which kind
+        - If you use [Medtrum Nano](#medtrum-nano) - click the link
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
@@ -27,8 +27,11 @@ These types of pumps are compatible with the *Loop* app.
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
     * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (v3.7.5 or newer)
-* [Medtrum Touchcare Nano](#medtrum-nano) (feat/dev-medtrum branch only, v3.9.0 or newer)
+
+You must build a special branch to test these pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
+
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (experts only, work in progress)
+* [Medtrum Touchcare Nano](#medtrum-nano) (experts only, work in progress)
 
 ## Check Medtronic Pump Version
 
@@ -192,10 +195,10 @@ Loop does not support Omnipod 5 pods.
 
 ## Sooil Dana pumps
 
-!!! warning "Dana pumps support is new - pay attention"
-    The Dana pump is supported with the released *Loop* app, v3.8.0 or newer.
+!!! warning "You must build `feat/dev-dana-medtrum` branch to use Dana pumps"
+    This branch is experimental and requires careful attention to bolus accounting and IOB reporting. 
     
-    Follow the [Zulipchat Dana Pump discusion](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20support.20for.20Loop) if you need additional support for the Dana pump.
+    * You must follow [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
 
     Read these pages in LoopDocs:
 
@@ -208,7 +211,7 @@ Loop does not support Omnipod 5 pods.
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
 
-> The *Loop* app v3.7.5 or newer supports the Dana-i. 
+> The `feat/dev-dana-medtrum` branch supports Dana-i. 
 
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
@@ -218,19 +221,21 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
-> The *Loop* app v3.7.5 or newer supports the DanaRS-v3. 
+> The `feat/dev-dana-medtrum` branch supports DanaRS-v3. 
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
 
 ## Medtrum Nano
 
-!!! warning "You must build feat/dev-medtrum branch to use Medtrum patch pumps"
-    The Medtrum patch pump is in feat/dev-medtrum (as of version v3.9.0) and is experimental as of now.
+!!! warning "You must build `feat/dev-dana-medtrum` branch to use Medtrum pumps"
+    This branch is experimental and requires careful attention to bolus accounting and IOB reporting. 
+    
+    * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
 
-    **Be very careful running this. The initial version had a bug where a delivered bolus was not always recorded properly. This is just one example of why only experts should volunteer to test experimental code.**
+    Read this section in LoopDocs:
 
-    Follow along in the [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247).
+    * [Medtrum Nano](../loop-3/add-pump.md#medtrum-nano){: target="_blank" }
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
