@@ -4172,7 +4172,7 @@
 
 <h2 id="build-then-customize">Build then Customize<a class="headerlink" href="#build-then-customize" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>For new Loopers, please build the code before you make any changes. Start with <abbr title="Loop will not make automated adjustments of insulin delivery but predictions and recommendation features are available">Open Loop</abbr> and familiarize yourself with the interface.  Later, you can make the customization(s) you desire and build again.  The second build will be much easier than your first build.</p>
-<p>These customizations require you modify the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app code and then build the app after making these customizations. This page supports version 3 and greater for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>These customizations require you to modify the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app code and then build the app after making these customizations. This page supports version 3 and greater for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <h2 id="customization-options">Customization Options<a class="headerlink" href="#customization-options" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Read about the customizations on this page before applying them.</p>
 <div class="admonition warning">
@@ -4196,7 +4196,7 @@
 <p class="admonition-title">Why do I have to jump between pages?</p>
 <ul>
 <li>The code changes are defined on this page</li>
-<li>The method to make code changes depends on build method and are found at:<ul>
+<li>The method to make code changes depends on build method and is found at:<ul>
 <li><a href="../../browser/edit-browser/" target="_blank">Custom Edits with Browser</a></li>
 <li><a href="../../build/edit-mac/" target="_blank">Custom Edits with <em>Mac</em></a></li>
 </ul>
@@ -4205,7 +4205,7 @@
 </div>
 <div class="admonition info">
 <p class="admonition-title">Line numbers may change</p>
-<p>Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code.</p>
+<p>Every effort will be made to update the line numbers as the code is updated, but there may be times when the screenshots and line numbers differ from the current version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code.</p>
 <ul>
 <li>
 <p>You may notice some customizations list line numbers for different branches</p>
@@ -4214,10 +4214,10 @@
 <p>If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help</p>
 </li>
 <li>
-<p>Sometimes there is a bigger change than just line numbers. The <abbr title="a tool for version control">git</abbr> software is really good about finding the "right" code that is just at a different line number. When you see the notation <code>Stable: Changed on date</code>, that means you must select the correct version when making your personal customization depending on which version you are modifying.</p>
+<p>Sometimes there is a bigger change than just line numbers. The <em><abbr title="a tool for version control">git</abbr></em> software is really good about finding the "right" code that is just at a different line number. When you see the notation <code>Stable: Changed on date</code>, that means you must select the correct version when making your personal customization depending on which version you are modifying.</p>
 <ul>
 <li>With the release of 3.4.x, no customizations fall into this category</li>
-<li>The notation is kept to handle future changes that might happen when development start again</li>
+<li>The notation is kept to handle future changes that might happen when development starts again</li>
 </ul>
 </li>
 </ul>
@@ -4240,19 +4240,19 @@
 </ul>
 <p>For each customization, you will be given landmarks to find the correct location in the code. You can choose to search using the <code>Key_Phrase</code> or navigate to the file in the folder structure and look for the line number. </p>
 <h3 id="key_phrase">Key_Phrase<a class="headerlink" href="#key_phrase" title="Anchor link to this Header on this Page">&para;</a></h3>
-<div class="copy highlight"><span class="filename">Example of a Key_Phrase</span><pre><span></span><code>use the copy button at right, paste into search
-The copy button for this exampe is just for practice
+<div class="copy highlight"><span class="filename">Example of a Key_Phrase</span><pre><span></span><code>use the copy button at right, paste it into the search box
+The copy button for this example is just for practice
 Do not paste the result anywhere
 </code></pre></div>
 <p>To search using the <code>Key_Phrase</code> (see graphic above for an example):</p>
 <ul>
-<li>A copy button is available when you hover your mouse in the right-hand side
+<li>A copy button is available when you hover your mouse on the right-hand side
 of the block below the title <code>Key_Phrase</code>;  click on it to copy the phrase into your paste buffer</li>
 <li>You can paste this into the search function of the tool you are using if desired (warning, you may have to hit back-space to remove a return character from the pasted text)</li>
-<li>Alternatively, navigate to the required file using Module, Folder, File and line number</li>
+<li>Alternatively, navigate to the required file using Module, Folder, File, and line number</li>
 </ul>
 <h3 id="module-folder-file">Module, Folder, File<a class="headerlink" href="#module-folder-file" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Each customization provides the Module, Folder and File bullet below the key phrase.</p>
+<p>Each customization provides the Module, Folder, and File bullet below the key phrase.</p>
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/subfolder1/subfolder2/etc.</li>
@@ -4283,8 +4283,8 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <h2 id="custom-edits-required">Custom Edits Required<a class="headerlink" href="#custom-edits-required" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="img/carb_screen.png" src="../img/carb_screen.png" width="200" /></p>
-<p>In prior versions of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for <code>the *Loop* app</code> to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values.</p>
-<p>If you want to change this to 2, 3 and 5 hours - that is available as a standard customization using the <a href="https://www.loopandlearn.org/custom-code/#custom-list"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a></p>
+<p>In prior versions of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for <code>the *Loop* app</code> to 30 minutes, 3 hours, and 5 hours respectively. Some people prefer different values.</p>
+<p>If you want to change this to 2, 3, and 5 hours - that is available as a standard customization using the <a href="https://www.loopandlearn.org/custom-code/#custom-list"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a></p>
 <details class="question">
 <summary>Do you want to know more? (Click to open/close)</summary>
 <p>The developers did this because they expect fast to only be used for rapid-acting low treatments. The medium and slow values are for moderate and higher-fat or large meals.</p>
@@ -4308,7 +4308,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <p>Note that if you change <code>fast</code> from 30 minutes to 1.5 hours, you must also change the indication before the parentheses.</p>
 <h3 id="adjust-maximum-iob-for-automatic-dosing">Adjust Maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for Automatic Dosing<a class="headerlink" href="#adjust-maximum-iob-for-automatic-dosing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>With version 3.2.0, a new safety feature was added. This limits automatic dosing so <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is no more than two times the <span class="arithmatex">\(\mathit{maximumBolus}\)</span> set in your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>. (The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate.) Manual Bolus, where you initiate the bolus yourself, is not subject to this limit. Please read <a href="../../faqs/algorithm-faqs/#how-do-delivery-limits-affect-automatic-dosing">How do <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr> Affect Automatic Dosing?</a> for detailed information on how this safety feature works.</p>
-<p>The default value (<span class="arithmatex">\(\mathit{2*maximumBolus}\)</span>) used for this feature is good for the majority of people who use the app. However, there are some individuals who might need to limit the size of any single bolus independent from the maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling and the insulin leaks out along the cannula.</p>
+<p>The default value (<span class="arithmatex">\(\mathit{2*maximumBolus}\)</span>) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling, and the insulin leaks out along the cannula.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>automaticDosingIOBLimit = maxBolus
 </code></pre></div>
 <ul>
@@ -4331,7 +4331,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <p>With the release of version 3.4.x, there is another option. If you choose to enable <a href="../../loop-3/features/#glucose-based-partial-application-gbpa" target="_blank">Glucose Based Partial Application</a>, then the percent of the recommended bolus automatically provided adjusts from 20% to 80% depending on your glucose level. You may decide this works well enough for you that this customization is no longer desired. Please give this new feature a try.</p>
 </blockquote>
 <p>This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.</p>
-<p><strong>Change just the number and double check that the value is less than 1.</strong></p>
+<p><strong>Change just the number and double-check that the value is less than 1.</strong></p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let bolusPartialApplicationFactor
 </code></pre></div>
 <ul>
@@ -4525,7 +4525,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <p>An example change that a Free <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App user (who has to build once a week) might choose is:</p>
 <p><div class="highlight"><pre><span></span><code>     &gt; .hours(4) ? .days(10) : .hours(2)
 </code></pre></div>
-Combined with an <code>.hours(12)</code> on line 16, they would get notified at 12 hours, 4 hours and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.</p>
+Combined with an <code>.hours(12)</code> on line 16, they would get notified at 12 hours, 4 hours, and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.</p>
 <h3 id="enable-child-model">Enable Child Model<a class="headerlink" href="#enable-child-model" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Please see the <a href="../build-time-flag/">Build-Time Flag</a> page for this customization.</p>
 <h3 id="insulin-model-customization">Insulin Model Customization<a class="headerlink" href="#insulin-model-customization" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -4602,7 +4602,7 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p class="admonition-title"><em>Mac</em> Instructions</p>
 <p>This can be done with Build with Browser but the instructions might need to be adjusted for that case.</p>
 </div>
-<p>If you want an app logo other than the default green circle for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="http://www.appicon.build/">appicon.build</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
+<p>If you want an app logo other than the default green circle for your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like <a href="https://makeappicon.com/">makeappicon.com</a> or <a href="https://appicon.co/">appicon.co</a> and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file</p>
 <ol>
 <li>Navigate to the LoopWorkspace folder</li>
 <li>Open the OverrideAssetsLoop.xcassets folder</li>
@@ -4613,8 +4613,8 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <p>You may see a yellow warning that there are “unassigned children” depending on the images the app icon generator tool produced. The unassigned children alert will not prevent your app from building, it’s simply because there are more sizes of images than <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app uses.  You can just leave the unassigned children alone (wow...how often do you get to say that phrase?).</p>
 <p>And now you'll be the proud new owner of a custom <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon.</p>
 <h2 id="custom-edits-optional">Custom Edits Optional<a class="headerlink" href="#custom-edits-optional" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The customizations listed below are incorporated into the <a href="https://www.loopandlearn.org/custom-code"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization Select Script</a>.</p>
-<p>You can use that script or make your own edit by following these directions.</p>
+<p>The customizations listed below are available already prepared - please review <a href="https://www.loopandlearn.org/custom-code/#custom-list"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Learn</em>: Customization</a>.</p>
+<p>You can use the prepared customizations or make your own edit by following these directions.</p>
 <h3 id="disable-authentication-for-bolusing">Disable Authentication for Bolusing<a class="headerlink" href="#disable-authentication-for-bolusing" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Depending on your iPhone Settings and model, you may have Face ID or Touch ID enabled.  Those security features will also be used to authenticate bolus delivery in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.  You can choose to disable authentication (i.e., not require Face ID, Touch ID, or passcode for bolusing) through the following code customization.</p>
 <div class="admonition warning">
