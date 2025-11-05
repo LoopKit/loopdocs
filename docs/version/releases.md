@@ -10,13 +10,13 @@ For information about version 2 releases and compatibility between version 2 and
 
 The current released version for the *Loop* app is v3.8.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> When main is updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
+> When main was updated to v3.8.2, the same update was made to the`dev` branch. At this time, the `dev` branch is identical to `main` with the exception of the version number, which is at 3.9.2.
 
-> See [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } for a summary of difference, if any, between `main` and `dev`.
+When there are updates to `dev`, differences between `main` and `dev` will be summarized in [Updates in `dev`](development.md#updates-in-dev){: target="_blank" }.
 
 ### What Version Do I Have?
 
-Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left. (This graphic shows an older release.)
+Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left.
     
 ![Determine current app version on app settings screen](img/app-version.jpg){width="400"}
 {align="center"}
@@ -72,7 +72,7 @@ This version updates a few iOS 26 interface issues, moves support for Dana pumps
 * [Remove DanaKit](#why-was-danakit-support-changed) support from `main` and `dev` branches of the *Loop* app
 * Update some translations
 
-> When main is updated to v3.8.2, the same update is planned for the `dev` branch. It may take a day or two before `dev` is updated to 3.9.2.
+> When main was updated to v3.8.2, the same update was made to the`dev` branch. At this time, the `dev` branch is identical to `main` with the exception of the version number, which is at 3.9.2.
 
 #### Why was DanaKit Support Changed
 
