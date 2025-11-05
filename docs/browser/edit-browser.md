@@ -1,7 +1,7 @@
 ## Hot Topics
 
 !!! tip "Pro Tip"
-    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code#prepared-custom-list). You can use (and re-use) your customizations with either Browser Build or *Mac* builds so you don't have to repeat the customization with every update.
+    The method on this page allows you to create a set of personalized customizations that you can use in addition to the [Loop and Learn: Prepared Customizations](https://www.loopandlearn.org/custom-code/#custom-list). You can use (and re-use) your customizations with either Browser Build or *Mac* builds so you don't have to repeat the customization with every update.
 
     * If you are building with *Mac* method, you can use the same lines prepared for Build with Browser method and simply paste them in your terminal at the&nbsp;<span translate="no">LoopWorkspace</span>&nbsp;folder to customize your code
     * You can often use the same customization for several releases

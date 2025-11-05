@@ -22,7 +22,7 @@ The *Loop and Learn* team is committed to maintaining these prepared customizati
 Please read the documentation for these on the [Loop and Learn: Customization Select Page](https://www.loopandlearn.org/custom-code):
 
 * [List of Customizations Available](https://www.loopandlearn.org/custom-code/#custom-list)
-* [Customization Select Script](https://www.loopandlearn.org/custom-code/#customization-select)
+* [Customization Select Script](https://www.loopandlearn.org/custom-code-mac-xcode-build/#script)
 
 ## Personal Customizations
 
