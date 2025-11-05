@@ -101,7 +101,7 @@ sequenceDiagram
 
 ### Troubleshoot Connections
 
-The "normal" *Libre* 2 sensors have a firmware configuration that makes them slow to reconnect when they loose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
+The "normal" *Libre* 2 sensors have a firmware configuration that makes them slow to reconnect when they lose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
 
 If you try to pair a sensor in the app multiple times in a short period (let's say within a couple of minutes), you may need to just stop and wait.
 
@@ -109,11 +109,11 @@ If you try to pair a sensor in the app multiple times in a short period (let's s
 * Multiple pairing attempts may make the sensor temporarily unable to function
 * If this matches your use case, shut off your phone and let it stay shut down for up to five minutes
 
-Optionally: you can use miaomiao or bubble third party transmitters attached on top of your normal *Libre* 2 sensors . Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
+Optionally: you can use miaomiao or bubble third-party transmitters attached on top of your normal *Libre* 2 sensors. Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
 
 ### Can I use *Libre* sensors with a reader like Miao Miao?
 
-Loop 3.4.x and later enables the use of those *Libre* sensors supported by [LibreTransmitter](https://github.com/dabear/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
+Loop 3.4.x and later enables the use of those *Libre* sensors supported by [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
 
 ### What about other *Libre* sensors?
 
@@ -121,7 +121,7 @@ There are a number of *Libre* sensors in which the only option for digital acces
 
 **The use of *LibreLinkUp* requires internet access via WiFi or Cell service.**
 
-If this is your only option for CGM, evaluate whether you want to add xDrip4iOS as a CGM option. Instructions for this customization are found at [Loop and Learn: Add CGM to Loop](https://www.loopandlearn.org/custom-code/#add-cgm). The reason to recommend this option is that xDrip4iOS can sense when the *Libre* transmits glucose readings to your phone, although it cannot read the glucose value. Shortly thereafter, it will request the CGM reading from *LibreLinkUp*.
+If this is your only option for CGM, evaluate whether you want to add xDrip4iOS as a CGM option. Instructions for this customization are found at [Loop and Learn: Add CGM to Loop](https://www.loopandlearn.org/custom-code-add-cgm-pump/). The reason to recommend this option is that xDrip4iOS can sense when the *Libre* transmits glucose readings to your phone, although it cannot read the glucose value. Shortly thereafter, it will request the CGM reading from *LibreLinkUp*.
 
 If you prefer not to customize Loop, then you can configure [Nightscout](https://nightscout.github.io/uploader/uploaders/#abbott-freestyle-*Libre*) to access data from *LibreLinkUp* and then use Nightscout as a CGM.
 
@@ -144,9 +144,9 @@ If you can connect your CGM directly to *Loop* that is preferred. You can custom
 
 If possible, it is recommended that *Libre* users take advantage of [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/blob/main/readme.md) which is incorporated into the *Loop* app for version 3.4 and later. However, some *Libre* sensors have encryption that limits ability to get data through open-source code and instead requires using the *LibreLinkUp* server.
 
-You can add *xDrip4iOS* as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code). This uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach if you have another choice. For *Libre* users with a sensor that is not handled by LibreTransmitter, this is your only option for closed-loop.
+You can add *xDrip4iOS* as a CGM option to the *Loop* app by applying a [code customization](https://www.loopandlearn.org/custom-code-add-cgm-pump/). This uses the shared AppGroup feature to transfer data from the CGM app to Loop. This is not the preferred approach if you have another choice. For *Libre* users with a sensor that is not handled by LibreTransmitter, this is your only option for closed-loop.
 
-* xDrip4iOS can sense when the *Libre* are providing updates over Bluetooth but cannot interpret the readings because of the encryption for some sensor models
+* xDrip4iOS can sense when the *Libre* is providing updates over Bluetooth but cannot interpret the readings because of the encryption for some sensor models
 * xDrip4iOS waits a few seconds after the new reading and then queries *LibreLinkUp* using your login credentials
 * Be aware this makes your ability for closed-loop dependent on having internet access
 

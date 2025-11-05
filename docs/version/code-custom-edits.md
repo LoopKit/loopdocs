@@ -2,7 +2,7 @@
 
 For new Loopers, please build the code before you make any changes. Start with Open Loop and familiarize yourself with the interface.  Later, you can make the customization(s) you desire and build again.  The second build will be much easier than your first build.
 
-These customizations require you modify the *Loop* app code and then build the app after making these customizations. This page supports version 3 and greater for the *Loop* app.
+These customizations require you to modify the *Loop* app code and then build the app after making these customizations. This page supports version 3 and greater for the *Loop* app.
 
 ## Customization Options
 
@@ -29,20 +29,20 @@ The instructions on this page identify the module, `Key_Phrase` or file and line
 
 !!! question "Why do I have to jump between pages?"
     * The code changes are defined on this page
-    * The method to make code changes depends on build method and are found at:
+    * The method to make code changes depends on build method and is found at:
         * [Custom Edits with Browser](../browser/edit-browser.md){: target="_blank" }
         * [Custom Edits with *Mac*](../build/edit-mac.md){: target="_blank" }
 
 !!! info "Line numbers may change"
-    Every effort will be made to update the line numbers as the code is updated, but there may be times where the screenshots and line numbers differ from the current version of Loop code.
+    Every effort will be made to update the line numbers as the code is updated, but there may be times when the screenshots and line numbers differ from the current version of Loop code.
 
     * You may notice some customizations list line numbers for different branches
 
     * If you cannot identify a line that looks exactly like the example - do not guess - go to your favorite social media group and ask for help
 
-    * Sometimes there is a bigger change than just line numbers. The git software is really good about finding the "right" code that is just at a different line number. When you see the notation `Stable: Changed on date`, that means you must select the correct version when making your personal customization depending on which version you are modifying.
+    * Sometimes there is a bigger change than just line numbers. The *git* software is really good about finding the "right" code that is just at a different line number. When you see the notation `Stable: Changed on date`, that means you must select the correct version when making your personal customization depending on which version you are modifying.
         * With the release of 3.4.x, no customizations fall into this category
-        * The notation is kept to handle future changes that might happen when development start again
+        * The notation is kept to handle future changes that might happen when development starts again
 
 This page is broken into two halves:
 
@@ -58,21 +58,21 @@ For each customization, you will be given landmarks to find the correct location
 ### Key_Phrase
 
 ``` { .txt .copy title="Example of a Key_Phrase" }
-use the copy button at right, paste into search
-The copy button for this exampe is just for practice
+use the copy button at right, paste it into the search box
+The copy button for this example is just for practice
 Do not paste the result anywhere
 ```
 
 To search using the `Key_Phrase` (see graphic above for an example):
 
-* A copy button is available when you hover your mouse in the right-hand side
+* A copy button is available when you hover your mouse on the right-hand side
 of the block below the title `Key_Phrase`;  click on it to copy the phrase into your paste buffer
 * You can paste this into the search function of the tool you are using if desired (warning, you may have to hit back-space to remove a return character from the pasted text)
-* Alternatively, navigate to the required file using Module, Folder, File and line number
+* Alternatively, navigate to the required file using Module, Folder, File, and line number
 
 ### Module, Folder, File
 
-Each customization provides the Module, Folder and File bullet below the key phrase.
+Each customization provides the Module, Folder, and File bullet below the key phrase.
 
   * Module: Loop
   * Folder: Loop/subfolder1/subfolder2/etc.
@@ -112,9 +112,9 @@ At the current time, all customizations are stable. It has been more than a year
 ![img/carb_screen.png](img/carb_screen.png){width="200"}
 {align="center"}
 
-In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `the *Loop* app` to 30 minutes, 3 hours and 5 hours respectively. Some people prefer different values.
+In prior versions of the *Loop* app, for example version 2.2.x, the lollipop (fast) icon was set for 2 hours, taco (medium) icon for 3 hours, and pizza (slow) icon for 4 hours. This is modified for `the *Loop* app` to 30 minutes, 3 hours, and 5 hours respectively. Some people prefer different values.
 
-If you want to change this to 2, 3 and 5 hours - that is available as a standard customization using the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code/#custom-list)
+If you want to change this to 2, 3, and 5 hours - that is available as a standard customization using the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code/#custom-list)
 
 ??? question "Do you want to know more? (Click to open/close)"
     The developers did this because they expect fast to only be used for rapid-acting low treatments. The medium and slow values are for moderate and higher-fat or large meals.
@@ -145,7 +145,7 @@ Note that if you change `fast` from 30 minutes to 1.5 hours, you must also chang
 
 With version 3.2.0, a new safety feature was added. This limits automatic dosing so IOB is no more than two times the $\mathit{maximumBolus}$ set in your Delivery Limits. (The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate.) Manual Bolus, where you initiate the bolus yourself, is not subject to this limit. Please read [How do Delivery Limits Affect Automatic Dosing?](../faqs/algorithm-faqs.md#how-do-delivery-limits-affect-automatic-dosing) for detailed information on how this safety feature works.
 
-The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, there are some individuals who might need to limit the size of any single bolus independent from the maximum IOB they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling and the insulin leaks out along the cannula.
+The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum IOB they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling, and the insulin leaks out along the cannula.
 
 ``` { .txt .copy title="Key_Phrase" }
 automaticDosingIOBLimit = maxBolus
@@ -178,7 +178,7 @@ If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it 
 
 This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.
 
-**Change just the number and double check that the value is less than 1.**
+**Change just the number and double-check that the value is less than 1.**
 
 ``` { .txt .copy title="Key_Phrase" }
 let bolusPartialApplicationFactor
@@ -414,7 +414,7 @@ An example change that a Free Loop App user (who has to build once a week) might
 ```
      > .hours(4) ? .days(10) : .hours(2)
 ```
-Combined with an ```.hours(12)``` on line 16, they would get notified at 12 hours, 4 hours and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.
+Combined with an ```.hours(12)``` on line 16, they would get notified at 12 hours, 4 hours, and 2 hours before expiration on the day of expiration and only when the app is opened. Since you'll be building once a week, you can play around with these values until you are happy.
 
 ### Enable Child Model
 
@@ -463,7 +463,7 @@ This *Loop* table of default values is provided for convenience. The times are a
 !!! warning "*Mac* Instructions"
     This can be done with Build with Browser but the instructions might need to be adjusted for that case.
 
-If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [appicon.build](http://www.appicon.build/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
+If you want an app logo other than the default green circle for your Loop app, you can easily customize this.  To make it easy to generate the correct sizes of icons, you can use a site like [makeappicon.com](https://makeappicon.com/) or [appicon.co](https://appicon.co/) and just drag and drop your source image. The source image needs to be 1024 pixels x 1024 pixels.  The site will email you a zip file or automatically download a set of files.  Highlight and copy the contents of the Appicon.appiconset that you are sent, including the Contents.json file
 
 1. Navigate to the LoopWorkspace folder
 1. Open the OverrideAssetsLoop.xcassets folder
@@ -477,9 +477,9 @@ And now you'll be the proud new owner of a custom Loop icon.
 
 ## Custom Edits Optional
 
-The customizations listed below are incorporated into the [*Loop and Learn*: Customization Select Script](https://www.loopandlearn.org/custom-code).
+The customizations listed below are available already prepared - please review [*Loop and Learn*: Customization](https://www.loopandlearn.org/custom-code/#custom-list).
 
-You can use that script or make your own edit by following these directions.
+You can use the prepared customizations or make your own edit by following these directions.
 
 ### Disable Authentication for Bolusing
 

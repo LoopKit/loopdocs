@@ -77,11 +77,11 @@ To use the Dexcom G5, G6 or ONE:
 
 #### Where to get the Transmitter ID for Dexcom G6? 
 
-You can find the **transmitter ID** in your Dexcom G6 app or on the back of the transmitter box (please refer to the below screenshots). 
+You can find the **transmitter ID** in your Dexcom G6 app or on the back of the transmitter box (see screenshots below). 
 
 * In your Dexcom G6 app
   * Tap "⚙️ Settings"
-  * The **transmitter ID** is located under section "CGM" where it says "Transmitter" with a the 6-digit string.
+  * The **transmitter ID** is located under the section "CGM" where it says "Transmitter" with a 6-digit string.
   * Alternatively, while in Settings, tap on the <kbd>></kbd> in the "Transmitter" row: your **transmitter ID** is the 6-digit identifier next to "SN" (short for serial number). 
 
 ![dexcom app settings to retrieve transmitter id](img/dexcom-g6-transmitter-id.svg){width="550"}
@@ -97,11 +97,11 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 
 #### Change Dexcom Sensor
 
-When you change a Dexcom G5, G6 or ONE sensor, you do this in the Dexcom app. When the sensor completes warmup and CGM values are once again reported in the Dexcom app, Loop picks these values up because you are using the same Dexcom Transmitter.
+When you change a Dexcom G5, G6, or ONE sensor, you do this in the Dexcom app. When the sensor completes warmup and CGM values are once again reported in the Dexcom app, Loop picks these values up because you are using the same Dexcom Transmitter.
 
 #### Change Dexcom Transmitter
 
-When you change the Dexcom G5, G6 or ONE Transmitter, you need to delete your CGM selection from Loop and then add it back after you complete the pairing with the transmitter in your Dexcom app.
+When you change the Dexcom G5, G6, or ONE Transmitter, you need to delete your CGM selection from Loop and then add it back after you complete the pairing with the transmitter in your Dexcom app.
 
 ??? info "FYI: When You Change Dexcom Transmitters (click to open)"
 
@@ -129,7 +129,7 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 {align="center"}
 
 !!! tip "Don't forget Health Permissions"
-    For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*.
+    For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want the long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*.
 
     If either the G6 or the G7 has permission to write to *Apple Health*, then *Loop* will delete the *Loop* glucose data in *Apple Health* that are older than 3 hours and newer than 1 week. The *Dexcom* app will write its glucose values to Health when each value is 3 hours old.
 
@@ -137,19 +137,19 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 
 The Libre plugin for Loop, [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/), connects directly via Near Field Communication (NFC) during pairing (for some sensors) and via Bluetooth (direct to sensor or direct to a transmitter attached to the sensor) for regular readings. No other app is needed.
 
-* Libre 1 are supported but must use a third-party transmitter (miaomiao and bubble transmitters are supported)
+* Libre 1 is supported but must use a third-party transmitter (miaomiao and bubble transmitters are supported)
 * European Libre 2 can be used directly or via transmitter
 * American Libre 2 is not supported
 * Libre 3 is not supported
 
 !!! tip "Connecting to Libre"
-    First reading for a new sensor will often take 2-4 minutes. This is due to some technicalities on how the Libre sensor announces its presence via bluetooth.
+    The first reading for a new sensor will often take 2-4 minutes. This is due to some technicalities on how the Libre sensor announces its presence via Bluetooth.
 
 There are solutions for some Libre 3 but they cannot reside on an iPhone. The Android solution can be uploaded to Nightscout, with Loop using Nightscout as a Remote CGM; but this requires internet access to continue closed-loop performance.
 
-Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over bluetooth).
+Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over Bluetooth).
 
-Libre 3 sensors have started appearing as well, but are unsupported. Other Libre sensors that are unsupported: Libre Pro, Libre H, Libre Sense Glucose Sport Biosensors.
+Libre 3 sensors have started appearing as well, but are unsupported. Other Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.
 
 ### Medtronic Enlite CGM
 
@@ -163,7 +163,7 @@ The Medtronic Enlite CGM is only available if you have connected it to your comp
 
 !!! warning "If you need to use *Dexcom Share*"
 
-    If the dexcom is on another phone, you can use Share if internet / cell coverage is good.
+    If the Dexcom is on another phone, you can use *Dexcom Share* if Internet/cell coverage is good.
     
     *Dexcom Share* is not available for Dexcom ONE CGM.
     
@@ -199,7 +199,12 @@ In addition to the risks of missing data, if the internet is not reliable, you m
 {align="center"}
 
 
-The user must enter both the URL and API_SECRET for their site to ensure the security of the data. The URL must start with `https://` and cannot have any extra spaces in the line.
+The user must enter both the URL and API_SECRET for their site to ensure the security of the data. 
+
+!!! important "Format of the Nightscout URL"
+    The *Nightscout* URL must start with `https://`. 
+    It cannot have any extra spaces in the line. 
+    The `s` character is required after `http` and before `://`.
 
 ![Nightscout Remote CGM entry screen](img/nightscout-cgm-entry.svg){width="350"}
 {align="center"}
@@ -225,7 +230,7 @@ Scroll to the bottom of the screen and select `Delete CGM`.
 
 ### Dexcom G5, G6 and One (not G7)
 
-For older Dexcom sensors, the transmitter is replaced separately about once every three months. In order to enter a new transmitter number, you must first delete the CGM and then add the CGM.
+For older Dexcom sensors, the transmitter is replaced separately about once every three months. To enter a new transmitter number, you must first delete the CGM and then add the CGM.
 
 Detailed instructions are found at [CGM FAQs: What do I do when I switch Dexcom transmitters?](../faqs/cgm-faqs.md#what-do-i-do-when-i-switch-dexcom-transmitters).
 
