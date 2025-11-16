@@ -16,7 +16,48 @@ This section provides an overview of changes to `dev` compared to `Loop 3.8.x`.
   
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-There are no differences between `dev` and `main` at this time. 
+There are no differences between `dev` and `main` at this time. However, there are some feature branches.
+
+| <div style="width:140px"> branch | version # | comments |
+|:--|:--|:--|
+| main | 3.8.2 | release |
+| dev | 3.9.2 | identical to main except version number |
+| feat/pod-keep-alive | 3.9.3 | - identical to 3.8.2 & 3.9.2 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- this really should have kept the 3.9.2 version number<br>- SHA for OmniBLE is `8c47404` |
+| release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- this branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version<br>- SHA for DanaKit is `3e606b8` |
+| feat/dev-dana-medtrum | 3.9.1 | - identical to dev when it was at 3.9.1, with addition of experimental support for Dana and Medtrum pumps<br>- this branch will be updated as updates are available for DanaKit and MedtrumKit<br>- this branch has newer version of the Dana pump manager than release/3.8.1 but new bolus recording issues were observed with this update<br>- when an updated version of dev is merged into this branch, the version number will be similarly incremented<br>- SHA for DanaKit is `0875c1e`<br>- SHA for MedtrumKit is `a85496e` |
+
+### Version Number Plan
+
+Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for the current method for version numbering for the `main` and `dev` branches.
+
+The idea of having a feature branch is not new for the *Loop* app but hasn't been used for a few years. At this point, we have two feature branches.
+
+Moving forward, the version number in the feature branch will match the `dev` branch version number. 
+
+* In other words, a diff between `dev` and the feature branch is just the updates added to support the feature starting with that version of `dev`
+* As appropriate, `dev` will be merged into the feature branch and at that time, the version number for the feature branch will also be bumped
+* Updates to the feature branch to support the feature will not be updated with a new version number associated with the features
+    * When updates for the feature are added, the SHA for that submodule will be reported and can be found by examining the LoopWorkspace repository for that feature branch
+
+> The version number for the `feat/pod-keep-alive` does not match the planned pattern for numbering feature branches; it should have been left at 3.9.2. 
+
+
+### Feature Branch: Pod Keep Alive Feature
+
+For more information about using the `feat/pod-keep-alive` branch with an iPhone 16 and InPlay BLE DASH pods, please refer to the README file for the OmniBLE `pod-keep-alive` branch:
+
+* [Workaround for InPlay Pods](https://github.com/LoopKit/OmniBLE/tree/8c4740468949cf6ca787e232f885a535b2bb3e8f?tab=readme-ov-file#omnible)
+
+
+### Feature Branch: Medtrum and Dana Support
+
+The Medtrum and Dana pump managers were originally tested with the Trio app. We know that pump managers that work for Loop also work for Trio, however, the converse is not necessarily true.
+
+There are differences in the way Loop and Trio manage insulin delivery. An eventual goal is to make the apps use the same protocols.
+
+* Loop uses the concept of a mutable dose
+    * a mutable dose has been requested and is treated as if it completed as requested but until it is marked isMutable=false, it if not treated as final
+* Trio has its own method for dealing with doses that are initiated but might later change
 
 ## Older updates
 
