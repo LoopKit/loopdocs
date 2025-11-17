@@ -22,9 +22,16 @@ There are no differences between `dev` and `main` at this time. However, there a
 |:--|:--|:--|
 | main | 3.8.2 | release |
 | dev | 3.9.2 | identical to main except version number |
-| feat/pod-keep-alive | 3.9.3 | - identical to 3.8.2 & 3.9.2 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- this really should have kept the 3.9.2 version number<br>- SHA for OmniBLE is `8c47404` |
+| feat/pod-keep-alive | 3.9.3 | - identical to 3.8.2 & 3.9.2 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- should have maintained the 3.9.2 version number<br>- SHA for OmniBLE is `8c47404` |
 | release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- this branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version<br>- SHA for DanaKit is `3e606b8` |
 | feat/dev-dana-medtrum | 3.9.1 | - identical to dev when it was at 3.9.1, with addition of experimental support for Dana and Medtrum pumps<br>- this branch will be updated as updates are available for DanaKit and MedtrumKit<br>- this branch has newer version of the Dana pump manager than release/3.8.1 but new bolus recording issues were observed with this update<br>- when an updated version of dev is merged into this branch, the version number will be similarly incremented<br>- SHA for DanaKit is `0875c1e`<br>- SHA for MedtrumKit is `a85496e` |
+
+!!! question "What is SHA?"
+    SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
+
+    Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
+
+    The SHA-1 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the commit for a particular repository.
 
 ### Version Number Plan
 
@@ -37,7 +44,7 @@ Moving forward, the version number in the feature branch will match the `dev` br
 * In other words, a diff between `dev` and the feature branch is just the updates added to support the feature starting with that version of `dev`
 * As appropriate, `dev` will be merged into the feature branch and at that time, the version number for the feature branch will also be bumped
 * Updates to the feature branch to support the feature will not be updated with a new version number associated with the features
-    * When updates for the feature are added, the SHA for that submodule will be reported and can be found by examining the LoopWorkspace repository for that feature branch
+    * When updates for the feature are added, the SHA for that submodule will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
 > The version number for the `feat/pod-keep-alive` does not match the planned pattern for numbering feature branches; it should have been left at 3.9.2. 
 
@@ -51,13 +58,19 @@ For more information about using the `feat/pod-keep-alive` branch with an iPhone
 
 ### Feature Branch: Medtrum and Dana Support
 
+!!! important "Experts Only"
+    Please only use the feat/dev-dana-medtrum branch if you are prepared to follow along in zulipchat and are willing to test an experimental branch that has known issues.
+
 The Medtrum and Dana pump managers were originally tested with the Trio app. We know that pump managers that work for Loop also work for Trio, however, the converse is not necessarily true.
 
 There are differences in the way Loop and Trio manage insulin delivery. An eventual goal is to make the apps use the same protocols.
 
 * Loop uses the concept of a mutable dose
-    * a mutable dose has been requested and is treated as if it completed as requested but until it is marked isMutable=false, it if not treated as final
+    * a mutable dose has been requested and affects reported active insulin, but is not finalized
+    * once the dose is finalized, the reported event in the event log shows isMutable=false
+    * an example of a mutable delivery is a bolus in progress or a temporary basal rate with a fixed duration that ends in the future
 * Trio has its own method for dealing with doses that are initiated but might later change
+* Both systems respond to reported reservoir values for pumps that allow a user to manually initiate insulin delivery on the pump, but the methods differ
 
 ## Older updates
 
