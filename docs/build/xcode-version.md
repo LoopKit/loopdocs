@@ -84,9 +84,10 @@ With the advent of browser build, this is no longer worth maintaining. If you do
 
 ### Compatible Versions
 
-* Before the release of iOS 26, the version of iOS was 18.6.2 and could be built with Xcode 16.4 and macOS 15.6.1
-* To build on an iOS 26 device, you must use Xcode 26 with macOS 15.6 or newer
-* As an alternative, use [Build with Browser](../browser/bb-overview.md){: target="_blank" }, which supports iOS 15, 16, 17 and 18.
+* Before the release of iOS 26, the version of iOS was 18.x and could be built with Xcode 16.4 and macOS 15.3
+* To build to an iOS 26 phone, you can continue to use Xcode 16.4
+    * Xcode 26.1.1, which requires macOS 15.6.1 or higher also works
+* As an alternative, use [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
 
 ### Wikipedia Chart for Apple Versions
 
