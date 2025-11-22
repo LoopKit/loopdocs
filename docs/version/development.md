@@ -67,12 +67,12 @@ The details of the additions to the `dev` branch for v3.9.3 are found in Pull Re
     **Live Activity, Dynamic Island and CarPlay**
 
     * The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen still works for older phone versions that support iOS 16
-    * The minimum iOS for Live Activity to appear in the Smart Stack on the Apple Watch is iOS 18 and watchOS 10
-    * The minimum iOS to to have Live Activity appear in the CarPlay view is iOS 26
+    * iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
+    * iOS 26 or newer is required to have Live Activity appear in the CarPlay view
 
 #### Live Activities
 
-This update includes adding Live Activities to Loop. Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
+This update adds Live Activity to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
 
 * The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
 * You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
