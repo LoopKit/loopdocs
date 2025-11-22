@@ -16,15 +16,22 @@ This section provides an overview of changes to `dev` compared to `Loop 3.8.x`.
   
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-There are no differences between `dev` and `main` at this time. However, there are some feature branches.
+With the `dev` branch, version 3.9.3, there are now differences between `dev` and `main`. In addition, there are some feature branches.
+
+**Note that the feature branches will be updated with the 3.9.3 updates soon after the PR to update `dev` is merged, but it takes some time. LoopDocs will be updated again when those updates happen.**
+
+!!! tip "Medtrum and Dana users"
+    You have not been forgotten.
+
+    There is active work fixing the issues for both these pump managers with Loop. Please be patient. Updates are coming soon.
 
 | <div style="width:140px"> branch | version # | comments |
 |:--|:--|:--|
 | main | 3.8.2 | release |
-| dev | 3.9.2 | identical to main except version number |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature) | 3.9.3 | - identical to 3.8.2 & 3.9.2 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- should have maintained the 3.9.2 version number<br>- SHA for OmniBLE is `8c47404` |
+| dev | 3.9.3 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature) | 3.9.3 | **will be updated soon**<br>- identical to 3.8.2 & 3.9.2 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- should have maintained the 3.9.2 version number<br>- SHA for OmniBLE is `8c47404`|
 | release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- this branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version<br>- SHA for DanaKit is `3e606b8` |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) | 3.9.1 | - identical to dev when it was at 3.9.1, with addition of experimental support for Dana and Medtrum pumps<br>- this branch will be updated as updates are available for DanaKit and MedtrumKit<br>- this branch has newer version of the Dana pump manager than release/3.8.1 but new bolus recording issues were observed with this update<br>- when an updated version of dev is merged into this branch, the version number will be similarly incremented<br>- SHA for DanaKit is `0875c1e`<br>- SHA for MedtrumKit is `a85496e` |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) | 3.9.1 | **will be updated soon**<br>- identical to dev when it was at 3.9.1, with addition of experimental support for Dana and Medtrum pumps<br>- this branch will be updated as updates are available for DanaKit and MedtrumKit<br>- this branch has newer version of the Dana pump manager than release/3.8.1 but new bolus recording issues were observed with this update<br>- when an updated version of dev is merged into this branch, the version number will be similarly incremented<br>- SHA for DanaKit is `0875c1e`<br>- SHA for MedtrumKit is `a85496e` |
 
 !!! question "What is SHA?"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -48,6 +55,36 @@ Moving forward, the version number in the feature branch will match the `dev` br
 
 > The version number for the `feat/pod-keep-alive` does not match the planned pattern for numbering feature branches; it should have been left at 3.9.2. 
 
+### v3.9.3 `dev`
+
+The details of the additions to the `dev` branch for v3.9.3 are found in Pull Request 358:
+
+*   [Update dev to 3.9.3](https://github.com/LoopKit/LoopWorkspace/pull/358)
+
+!!! important "New Minimum Requirements"
+    **The minimum iOS required to build this version is iOS 16; but not all features are supported by iOS 16 - specifically the Live Activity / Dynamic Island / CarPlay features**
+
+    **Live Activity, Dynamic Island and CarPlay**
+
+    * The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen still works for older phone versions that support iOS 16
+    * iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
+    * iOS 26 or newer is required to have Live Activity appear in the CarPlay view
+
+#### Live Activities
+
+This update adds Live Activity to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
+
+* The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
+* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
+
+#### Mac-Xcode Builders
+
+One change with this PR is to modify the Build Order selected in Xcode from the deprecated `Manual Order` to the preferred `Dependency Order`.
+
+* If you start with a fresh download - this will not affect you
+* If you update an existing clone on your computer with the `git pull --recurse` command, you will need to perform a `Product: Clean Build Folder` in Xcode, close the workspace in Xcode and reopen it
+    * If there are still build errors, then quit out of Xcode, issue the following command and try again
+    * `rm -rf ~/Library/Developer/Xcode/DerivedData`
 
 ### Feature Branch: Pod Keep Alive Feature
 
@@ -57,6 +94,8 @@ For more information about using the `feat/pod-keep-alive` branch with an iPhone
 
 
 ### Feature Branch: Medtrum and Dana Support
+
+**Updates are coming soon - if you have not built this, please wait for the updates currently being tested**
 
 !!! danger "Do Not Use in Closed Loop"
     Users report that after a bolus finishes in Loop, the record of the bolus is removed from the event history.
