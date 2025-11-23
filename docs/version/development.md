@@ -18,20 +18,13 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 
 With the `dev` branch, version 3.9.3, there are now differences between `dev` and `main`. In addition, there are some feature branches.
 
-**Note that the feature branches will be updated with the 3.9.3 updates soon after the PR to update `dev` is merged, but it takes some time. LoopDocs will be updated again when those updates happen.**
-
-!!! tip "Medtrum and Dana users"
-    You have not been forgotten.
-
-    There is active work fixing the issues for both these pump managers with Loop. Please be patient. Updates are coming soon.
-
 | <div style="width:140px"> branch | version # | comments |
 |:--|:--|:--|
 | main | 3.8.2 | release |
 | dev | 3.9.3 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature) | 3.9.3 | **will be updated soon**<br>- identical to 3.8.2 & 3.9.2 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- should have maintained the 3.9.2 version number<br>- SHA for OmniBLE is `8c47404`|
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature) | 3.9.3 | - identical to dev v3.9.3 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>- SHA for OmniBLE is `a9b63fa` |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) | 3.9.3 | - identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this branch will be updated as updates are available for DanaKit and MedtrumKit<br>- SHA for DanaKit is `939e9ee`<br>- SHA for MedtrumKit is `d9bc8b5` |
 | release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- this branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version<br>- SHA for DanaKit is `3e606b8` |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) | 3.9.1 | **will be updated soon**<br>- identical to dev when it was at 3.9.1, with addition of experimental support for Dana and Medtrum pumps<br>- this branch will be updated as updates are available for DanaKit and MedtrumKit<br>- this branch has newer version of the Dana pump manager than release/3.8.1 but new bolus recording issues were observed with this update<br>- when an updated version of dev is merged into this branch, the version number will be similarly incremented<br>- SHA for DanaKit is `0875c1e`<br>- SHA for MedtrumKit is `a85496e` |
 
 !!! question "What is SHA?"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -48,16 +41,14 @@ The idea of having a feature branch is not new for the *Loop* app but hasn't bee
 
 Moving forward, the version number in the feature branch will match the `dev` branch version number. 
 
-* In other words, a diff between `dev` and the feature branch is just the updates added to support the feature starting with that version of `dev`
+* In other words, a diff between `dev` and the feature branch is just the updates added to support the feature compared to that version of `dev`
 * As appropriate, `dev` will be merged into the feature branch and at that time, the version number for the feature branch will also be bumped
 * Updates to the feature branch to support the feature will not be updated with a new version number associated with the features
     * When updates for the feature are added, the SHA for that submodule will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
-> The version number for the `feat/pod-keep-alive` does not match the planned pattern for numbering feature branches; it should have been left at 3.9.2. 
-
 ### v3.9.3 `dev`
 
-The details of the additions to the `dev` branch for v3.9.3 are found in Pull Request 358:
+The details of the additions to the `dev` branch for v3.9.3 are found in LoopWorkspace Pull Request 358:
 
 *   [Update dev to 3.9.3](https://github.com/LoopKit/LoopWorkspace/pull/358)
 
@@ -66,7 +57,7 @@ The details of the additions to the `dev` branch for v3.9.3 are found in Pull Re
 
     **Live Activity, Dynamic Island and CarPlay**
 
-    * The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen still works for older phone versions that support iOS 16
+    * The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running iOS 16 or newer
     * iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
     * iOS 26 or newer is required to have Live Activity appear in the CarPlay view
 
@@ -95,25 +86,19 @@ For more information about using the `feat/pod-keep-alive` branch with an iPhone
 
 ### Feature Branch: Medtrum and Dana Support
 
-**Updates are coming soon - if you have not built this, please wait for the updates currently being tested**
+**Updates are believed to have fixed the bolus reporting issues but, especially for MedtrumKit, additional updates are expected**
 
-!!! danger "Do Not Use in Closed Loop"
-    Users report that after a bolus finishes in Loop, the record of the bolus is removed from the event history.
+!!! danger "Test Before Enabling Closed Loop"
+    Users reported that for a previous version, after a bolus finished in Loop, the record of the bolus was removed from the event history.
+
+    Testing indicates this problem is resolved, but be very careful when first using this branch and report any issues that are observed.
 
 !!! important "Experts Only"
-    Please only use the feat/dev-dana-medtrum branch if you are prepared to follow along in zulipchat and are willing to test an experimental branch that has known issues.
+    Please only use the feat/dev-dana-medtrum branch if you are prepared to follow along in zulipchat and are willing to test an experimental branch to help test and resolve issues.
 
 The Medtrum and Dana pump managers were originally tested with the Trio app. We know that pump managers that work for Loop also work for Trio, however, the converse is not necessarily true.
 
 There are differences in the way Loop and Trio manage insulin delivery. An eventual goal is to make the apps use the same protocols.
-
-* Loop uses the concept of a mutable dose
-    * a mutable dose has been requested and affects reported active insulin, but is not finalized
-    * once the dose is finalized, the reported event in the event log shows isMutable=false
-    * an example of a mutable delivery is a bolus in progress or a temporary basal rate with a fixed duration that ends in the future
-* Trio has its own method for dealing with doses that are initiated but might later change
-* Both systems respond to reported reservoir values for pumps that allow a user to manually initiate insulin delivery on the pump, but the methods differ
-    * The interaction between reservoir level versus event history and the isMutable logic is probably what is causing the current Loop event history problem
 
 ## Older updates
 
