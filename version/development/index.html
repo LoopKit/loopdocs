@@ -4086,19 +4086,19 @@
 <td style="text-align: left;">Adds Live Activity, Browser Build improvement, translation and other updates <br>See <a href="#v393-dev">v3.9.3 <code>dev</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a></td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>c84fc3a</code></td>
 <td style="text-align: left;">3.9.3</td>
-<td style="text-align: left;">- identical to dev v3.9.3 except uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>- SHA for OmniBLE is <code>a9b63fa</code></td>
+<td style="text-align: left;">- identical to dev v3.9.3 except uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>a9b63fa</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a></td>
+<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>de1109f</code></td>
 <td style="text-align: left;">3.9.3</td>
-<td style="text-align: left;">- identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> will be updated as updates are available for DanaKit and MedtrumKit<br>- SHA for DanaKit is <code>939e9ee</code><br>- SHA for MedtrumKit is <code>d9bc8b5</code></td>
+<td style="text-align: left;">- identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>08b6623c</code><br>  - SHA for MedtrumKit is <code>9958befc</code></td>
 </tr>
 <tr>
 <td style="text-align: left;">release/3.8.1</td>
 <td style="text-align: left;">3.8.1</td>
-<td style="text-align: left;">- copy of the main release at version 3.8.1 that included Dana support<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version<br>- SHA for DanaKit is <code>3e606b8</code></td>
+<td style="text-align: left;">- copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum <abbr title="version of code within a single repository or workspace repository">branch</abbr> instead and test it<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is <code>3e606b8</code></td>
 </tr>
 </tbody>
 </table>
@@ -4128,6 +4128,9 @@
 <div class="admonition important">
 <p class="admonition-title">New Minimum Requirements</p>
 <p><strong>The minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> required to build this version is <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16; but not all features are supported by <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 - specifically the Live Activity / Dynamic Island / CarPlay features</strong></p>
+<ul>
+<li>Correction, you can still build onto an <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15 phone with this version, but because the use of String Catalogs for languages don't work well for <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 15 and Live Activity is not supported, expect the next dev version will force a minimum <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 for building</li>
+</ul>
 <p><strong>Live Activity, Dynamic Island and CarPlay</strong></p>
 <ul>
 <li>The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 16 or newer</li>
@@ -4157,18 +4160,18 @@
 <li><a href="https://github.com/LoopKit/OmniBLE/tree/8c4740468949cf6ca787e232f885a535b2bb3e8f?tab=readme-ov-file#omnible">Workaround for InPlay Pods</a></li>
 </ul>
 <h3 id="feature-branch-medtrum-and-dana-support">Feature Branch: Medtrum and Dana Support<a class="headerlink" href="#feature-branch-medtrum-and-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Updates are believed to have fixed the bolus reporting issues but, especially for MedtrumKit, additional updates are expected</strong></p>
-<div class="admonition danger">
-<p class="admonition-title">Test Before Enabling <abbr title="Loop will make automated adjustments of insulin delivery using predictions based off user entries, settings, IOB and COB">Closed Loop</abbr></p>
-<p>Users reported that for a previous version, after a bolus finished in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, the record of the bolus was removed from the event history.</p>
-<p>Testing indicates this problem is resolved, but be very careful when first using this <abbr title="version of code within a single repository or workspace repository">branch</abbr> and report any issues that are observed.</p>
-</div>
+<p><strong>Updates are believed to have fixed the active insulin issues reported for both Dana and Medtrum, but this should be tested by experts to confirm pumps are working well with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</strong></p>
 <div class="admonition important">
 <p class="admonition-title">Experts Only</p>
-<p>Please only use the feat/dev-dana-medtrum <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to test an experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> to help test and resolve issues.</p>
+<p>Please only use the <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to test an experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> to help test and resolve issues.</p>
+<ul>
+<li>Please ensure you have the latest version of this <abbr title="version of code within a single repository or workspace repository">branch</abbr>:<ul>
+<li><code>feat/dev-dana-medtrum</code></li>
+<li>SHA <code>de1109f</code></li>
+</ul>
+</li>
+</ul>
 </div>
-<p>The Medtrum and Dana pump managers were originally tested with the Trio app. We know that pump managers that work for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> also work for Trio, however, the converse is not necessarily true.</p>
-<p>There are differences in the way <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Trio manage insulin delivery. An eventual goal is to make the apps use the same protocols.</p>
 <h2 id="older-updates">Older updates<a class="headerlink" href="#older-updates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="updates-from-v36-to-v38">Updates from v3.6 to v3.8<a class="headerlink" href="#updates-from-v36-to-v38" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The updates developed in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> before the release of v3.8.0, are provided in reverse chronological order.</p>
