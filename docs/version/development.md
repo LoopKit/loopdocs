@@ -24,7 +24,7 @@ With the `dev` branch, version 3.9.3, there are now differences between `dev` an
 | dev | 3.9.3 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `c84fc3a` | 3.9.3 | - identical to dev v3.9.3 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `a9b63fa` |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `de1109f`| 3.9.3 | - identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `08b6623c`<br>  - SHA for MedtrumKit is `9958befc` |
-| release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum branch instead and test it<br>- this branch was a stop-gap measure to support people already using Dana with v3.8.1 who understand how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is `3e606b8` |
+| release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum branch instead and test it<br>- this branch was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is `3e606b8` |
 
 !!! question "What is SHA?"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
