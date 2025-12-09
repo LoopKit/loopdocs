@@ -247,7 +247,7 @@ nav:
     - 'Update/Rebuild Loop FAQs': 'faqs/update-faqs.md'
     - 'New Phone Tips': 'faqs/new-phone.md'
     - 'Remote Control FAQs': 'faqs/remote-control.md'
-    - 'Translation FAQS': 'faqs/app-translation'
+    - 'Translation FAQS': 'faqs/app-translation.md'
     - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
     - 'Apple Health FAQs': 'faqs/apple-health-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
