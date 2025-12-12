@@ -63,7 +63,7 @@ The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at th
 
 It was tested for LoopWorkspace and Trio.
 
-The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for a bolus (either manual or automatic) or temp basal or command to modify scheduled basal rates.
+The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.
 
 The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.
 

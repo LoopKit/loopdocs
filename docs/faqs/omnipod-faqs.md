@@ -31,11 +31,13 @@ DASH pumps communicate with the phone via Bluetooth so they do not require a Ril
 
     **Other phones, including iPhone 17, work fine with InPlay DASH pods**
 
-Some of the DASH pods produced in 2025 have different chips and firmware. The only way to tell the difference before use is to examine the paper cover over the pods inside the box as shown in the graphic below.
+Beginning in 2025, some of the DASH pods are produced with a newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. It is anticipated that `Atlas` pods, which report electronically as `InPlay BLE`, will become more common.
 
-* The left images show the SAW marking for "TWI Board" DASH pods
-* The right images show the Atlas marking for "InPlay BLE" DASH pods
-* The exact location of the marking varies according to manufacture location and date but the SAW and Atlas indicates the internal BLE configuration for that pod
+**If you do not already own an iPhone 16, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17) phone.**
+
+* The left images show the SAW marking for `TWI Board` DASH pods
+* The right images show the Atlas marking for `InPlay BLE` DASH pods
+* The exact location of the marking varies according to manufacture location and date but the `SAW` or `Atlas` notation indicates the internal BLE configuration for that pod
 
 ![identifying marks for SAW and Atlas DASH pods](img/saw-atlas-identifiers.svg){width="750"}
 {align="center"}
@@ -57,7 +59,9 @@ Some of the DASH pods produced in 2025 have different chips and firmware. The on
 
 > DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16.
 
-> Some InPlay DASH pods were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16. Otherwise, you won't notice a difference.
+> The earliest `Atlas` DASH pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. Later in 2025, `Atlas` DASH pods with July 2025 and later manufacture dates were seen. 
+
+We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16. Otherwise, you won't notice a difference.
 
 
 - - -
