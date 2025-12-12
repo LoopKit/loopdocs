@@ -22,16 +22,110 @@ With the `dev` branch, version 3.9.3, there are now differences between `dev` an
 |:--|:--|:--|
 | main | 3.8.2 | release |
 | dev | 3.9.3 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `c84fc3a` | 3.9.3 | - identical to dev v3.9.3 except uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `a9b63fa` |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `de1109f`| 3.9.3 | - identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `08b6623c`<br>  - SHA for MedtrumKit is `9958befc` |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `e723867` | 3.9.3 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods; identical to dev v3.9.3 except as noted <br>  - SHA for OmniBLE is `9f39f195`<br>  - SHA for Loop updated to `e92405` to fix a linting problem (Mac-Xcode only)<br>**Please read [OmniBLE Keep-Alive](#omnible-keep-alive)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `8247599`| 3.9.3 | - identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `299331d4`<br>  - SHA for MedtrumKit is `8172454a` |
 | release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum branch instead and test it<br>- this branch was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is `3e606b8` |
 
-!!! question "What is SHA?"
+??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
 
     Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
 
     The SHA-1 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the commit for a particular repository.
+
+### How to Build Feature Branches
+
+For full instructions on building different branches, review these pages:
+
+* [Browser Build: Build a Version in Development](../browser/build-dev-browser.md#build-development-version){: target="_blank" }
+* [Mac Xcode: Build a Version in Development](../build/build-dev-mac.md#build-other-branches){: target="_blank" }
+
+For Browser Build, use the page linked above to add the desired branch name (from the table above) to your fork. In other words, where the directions indicate the `dev` branch, you substitute the branch name of interest.
+
+For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
+
+
+``` { title="Download and build the feat/pod-keep-alive branch" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
+   - feat/pod-keep-alive
+```
+
+``` { title="Download and build the feat/dev-dana-medtrum branch" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
+   - feat/dev-dana-medtrum
+```
+
+### OmniBLE Keep-Alive
+
+The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an [iPhone 16 and DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#iphone-16-and-atlas-or-inplay-dash-pods){: target="_blank" }. No action is taken automatically unless both these cases are detected to be true.
+
+It was tested for LoopWorkspace and Trio.
+
+The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.
+
+The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.
+
+The default value is Disabled. The graphic below shows the Pod Keep Alive screen that allows the user to choose an option.
+
+![Options available for Pod Keep Alive](img/omnible-keep-alive-options.svg){width="650"}
+{align="center"}
+
+There are 4 choices for Pod Keep Alive:
+
+1. [Disabled](#disabled) (default)
+2. [When Open](#when-open)
+3. [Silent Tune](#silent-tune)
+4. [RileyLink](#rileylink)
+
+#### Disabled
+
+When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmniBLE code.
+
+!!! warning "Automatic Change for iPhone 16 and Atlas DASH pod"
+    If your app has Pod Keep Alive set to disabled and you have an **iPhone 16** and the pod you just paired is an **InPlay (Atlas) pod**, the configuration **automatically** switches to **When Open**. 
+    
+    The Pod Keep Alive configuration remains at **When Open** until you change it manually.
+
+All three criteria must be true or no automatic change to the setting takes place:
+
+* iPhone 16
+* pair a new pod that is InPlay BLE (Atlas)
+* Pod Keep Alive is Disabled
+
+Note that during the time from pair to insert, the app keeps the screen open and unlocked unless you manually lock it.
+
+This means you can take all the time you need between pair/prime and insert. As long as you don't manually lock the phone or move it out of range of the pod, the pod stays connected until you insert the cannula.
+
+Once the pod is inserted, the phone auto-lock timing is restored to the value the user has selected.
+
+#### When Open
+
+When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available to the phone.
+
+This is true as long as the phone and pod are in-range while the app is open with phone unlocked.
+
+> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+
+#### Silent Tune
+
+A silent tune is played in the background which keeps the app alive even when the phone is locked. This will increase the battery usage on the phone.
+
+While Silent Tune is selected, the app will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.
+
+> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+
+#### RileyLink
+
+For those who have a RileyLink (OrangeLink, EmaLink, etc), you can use that instead of the Silent Tune but you must keep the link with the phone.
+
+While RileyLink is selected, the app is triggered by the RileyLink one minute heartbeat. The app will send a getStatus to the pod 2:00 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.
+
+> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+
+> If the phone moves out of RileyLink range, then the app is not triggered by the RileyLink heartbeat and the pod disconnects from BLE at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+
 
 ### Version Number Plan
 
