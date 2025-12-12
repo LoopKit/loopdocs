@@ -2838,6 +2838,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#how-to-build-feature-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Build Feature Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omnible-keep-alive" class="md-nav__link">
+    <span class="md-ellipsis">
+      OmniBLE Keep-Alive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#version-number-plan" class="md-nav__link">
     <span class="md-ellipsis">
       Version Number Plan
@@ -3680,7 +3698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/app-translation" class="md-nav__link">
+      <a href="../../faqs/app-translation/" class="md-nav__link">
         
   
   
@@ -3861,6 +3879,24 @@
   
     <nav class="md-nav" aria-label="Updates in dev">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-build-feature-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Build Feature Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omnible-keep-alive" class="md-nav__link">
+    <span class="md-ellipsis">
+      OmniBLE Keep-Alive
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#version-number-plan" class="md-nav__link">
@@ -4086,14 +4122,14 @@
 <td style="text-align: left;">Adds Live Activity, Browser Build improvement, translation and other updates <br>See <a href="#v393-dev">v3.9.3 <code>dev</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>c84fc3a</code></td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>e723867</code></td>
 <td style="text-align: left;">3.9.3</td>
-<td style="text-align: left;">- identical to dev v3.9.3 except uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>a9b63fa</code></td>
+<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods; identical to dev v3.9.3 except as noted <br>  - SHA for OmniBLE is <code>9f39f195</code><br>  - SHA for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updated to <code>e92405</code> to fix a linting problem (Mac-<abbr title="program used to build an app">Xcode</abbr> only)<br><strong>Please read <a href="#omnible-keep-alive">OmniBLE Keep-Alive</a></strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>de1109f</code></td>
+<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>8247599</code></td>
 <td style="text-align: left;">3.9.3</td>
-<td style="text-align: left;">- identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>08b6623c</code><br>  - SHA for MedtrumKit is <code>9958befc</code></td>
+<td style="text-align: left;">- identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>299331d4</code><br>  - SHA for MedtrumKit is <code>8172454a</code></td>
 </tr>
 <tr>
 <td style="text-align: left;">release/3.8.1</td>
@@ -4102,12 +4138,77 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition question">
-<p class="admonition-title">What is SHA?</p>
+<details class="question">
+<summary>What is SHA? (Click to Open/Close)</summary>
 <p><abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a <abbr title="contains project files and each file's revision history">repository</abbr> is used. </p>
 <p>Each time you save a change to your&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></span>, a unique <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> is created. That identifier is used to tell <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> a specific change that you want applied or identifies a specific version for that <code><abbr title="contains project files and each file's revision history">repository</abbr></code>. These work for any compatible <code><abbr title="a copy of code in a github repository other than the original">fork</abbr></code> from the original&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></span>.</p>
 <p>The <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> for a particular <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+</details>
+<h3 id="how-to-build-feature-branches">How to Build Feature Branches<a class="headerlink" href="#how-to-build-feature-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For full instructions on building different branches, review these pages:</p>
+<ul>
+<li><a href="../../browser/build-dev-browser/#build-development-version" target="_blank">Browser Build: Build a Version in Development</a></li>
+<li><a href="../../build/build-dev-mac/#build-other-branches" target="_blank">Mac <abbr title="program used to build an app">Xcode</abbr>: Build a Version in Development</a></li>
+</ul>
+<p>For Browser Build, use the page linked above to add the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> name (from the table above) to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. In other words, where the directions indicate the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name of interest.</p>
+<p>For Mac <abbr title="program used to build an app">Xcode</abbr> build, the lines you need to copy and paste into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window are explicitly provided below:</p>
+<div class="highlight"><span class="filename">Download and build the feat/pod-keep-alive branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
+   - feat/pod-keep-alive
+</code></pre></div>
+<div class="highlight"><span class="filename">Download and build the feat/dev-dana-medtrum branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
+   - feat/dev-dana-medtrum
+</code></pre></div>
+<h3 id="omnible-keep-alive">OmniBLE Keep-Alive<a class="headerlink" href="#omnible-keep-alive" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The experimental <code>pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> has a new "Pod Keep Alive" option at the bottom of the "<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH" screen. This is intended to assist users who have both an <a href="../../faqs/omnipod-faqs/#iphone-16-and-atlas-or-inplay-dash-pods" target="_blank">iPhone 16 and DASH pods with a InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas) board</a>. No action is taken automatically unless both these cases are detected to be true.</p>
+<p>It was tested for LoopWorkspace and Trio.</p>
+<p>The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.</p>
+<p>The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.</p>
+<p>The default value is Disabled. The graphic below shows the Pod Keep Alive screen that allows the user to choose an option.</p>
+<p align="center"><img alt="Options available for Pod Keep Alive" src="../img/omnible-keep-alive-options.svg" width="650" /></p>
+<p>There are 4 choices for Pod Keep Alive:</p>
+<ol>
+<li><a href="#disabled">Disabled</a> (default)</li>
+<li><a href="#when-open">When Open</a></li>
+<li><a href="#silent-tune">Silent Tune</a></li>
+<li><a href="#rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></a></li>
+</ol>
+<h4 id="disabled">Disabled<a class="headerlink" href="#disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmniBLE code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Automatic Change for iPhone 16 and Atlas DASH pod</p>
+<p>If your app has Pod Keep Alive set to disabled and you have an <strong>iPhone 16</strong> and the pod you just paired is an <strong>InPlay (Atlas) pod</strong>, the configuration <strong>automatically</strong> switches to <strong>When Open</strong>. </p>
+<p>The Pod Keep Alive configuration remains at <strong>When Open</strong> until you change it manually.</p>
 </div>
+<p>All three criteria must be true or no automatic change to the setting takes place:</p>
+<ul>
+<li>iPhone 16</li>
+<li>pair a new pod that is InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas)</li>
+<li>Pod Keep Alive is Disabled</li>
+</ul>
+<p>Note that during the time from pair to insert, the app keeps the screen open and unlocked unless you manually lock it.</p>
+<p>This means you can take all the time you need between pair/prime and insert. As long as you don't manually lock the phone or move it out of range of the pod, the pod stays connected until you insert the cannula.</p>
+<p>Once the pod is inserted, the phone auto-lock timing is restored to the value the user has selected.</p>
+<h4 id="when-open">When Open<a class="headerlink" href="#when-open" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available to the phone.</p>
+<p>This is true as long as the phone and pod are in-range while the app is open with phone unlocked.</p>
+<blockquote>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+</blockquote>
+<h4 id="silent-tune">Silent Tune<a class="headerlink" href="#silent-tune" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>A silent tune is played in the background which keeps the app alive even when the phone is locked. This will increase the battery usage on the phone.</p>
+<p>While Silent Tune is selected, the app will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.</p>
+<blockquote>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+</blockquote>
+<h4 id="rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#rileylink" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>For those who have a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> (<abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr>, <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">EmaLink</abbr>, etc), you can use that instead of the Silent Tune but you must keep the link with the phone.</p>
+<p>While <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> is selected, the app is triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> one minute heartbeat. The app will send a getStatus to the pod 2:00 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.</p>
+<blockquote>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+<p>If the phone moves out of <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> range, then the app is not triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> heartbeat and the pod disconnects from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+</blockquote>
 <h3 id="version-number-plan">Version Number Plan<a class="headerlink" href="#version-number-plan" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Please see <a href="../releases/#loop-version-numbering"><code>Loop</code> Version Numbering</a> for the current method for version numbering for the <code>main</code> and <code>dev</code> branches.</p>
 <p>The idea of having a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not new for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app but hasn't been used for a few years. At this point, we have two feature branches.</p>

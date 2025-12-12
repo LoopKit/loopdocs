@@ -3623,7 +3623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app-translation" class="md-nav__link">
+      <a href="../app-translation/" class="md-nav__link">
         
   
   
@@ -3980,11 +3980,12 @@
 <p><strong>iPhone 16 only</strong></p>
 <p><strong>Other phones, including iPhone 17, work fine with InPlay DASH pods</strong></p>
 </div>
-<p>Some of the DASH pods produced in 2025 have different chips and firmware. The only way to tell the difference before use is to examine the paper cover over the pods inside the box as shown in the graphic below.</p>
+<p>Beginning in 2025, some of the DASH pods are produced with a newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the pods inside the box for the word <code>Atlas</code> (newer) or <code>SAW</code> (older) as shown in the graphic below. It is anticipated that <code>Atlas</code> pods, which report electronically as <code>InPlay BLE</code>, will become more common.</p>
+<p><strong>If you do not already own an iPhone 16, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17) phone.</strong></p>
 <ul>
-<li>The left images show the SAW marking for "TWI Board" DASH pods</li>
-<li>The right images show the Atlas marking for "InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr>" DASH pods</li>
-<li>The exact location of the marking varies according to manufacture location and date but the SAW and Atlas indicates the internal <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> configuration for that pod</li>
+<li>The left images show the SAW marking for <code>TWI Board</code> DASH pods</li>
+<li>The right images show the Atlas marking for <code>InPlay BLE</code> DASH pods</li>
+<li>The exact location of the marking varies according to manufacture location and date but the <code>SAW</code> or <code>Atlas</code> notation indicates the internal <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> configuration for that pod</li>
 </ul>
 <p align="center"><img alt="identifying marks for SAW and Atlas DASH pods" src="../img/saw-atlas-identifiers.svg" width="750" /></p>
 <h4 id="characteristics-of-atlas-with-iphone-16">Characteristics of Atlas with iPhone 16<a class="headerlink" href="#characteristics-of-atlas-with-iphone-16" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -4001,7 +4002,8 @@
 <li>When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery</li>
 <li>No solution to this issue is known</li>
 <li>There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> disconnect; but it uses extra battery for both the phone and the pod<ul>
-<li>If you are forced to use an iPhone 16 with InPlay pods, reach out for help and this work-around can be made available</li>
+<li>If you are forced to use an iPhone 16 with InPlay pods, please read the <a href="../../version/development/#updates-in-dev" target="_blank">Updates in dev</a> section for information about building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> that contains this code</li>
+<li>If you are using Trio or iAPS, the same OmniBLE <code>pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> can be used by that app - check with mentors for those apps for instructions</li>
 </ul>
 </li>
 </ul>
@@ -4009,8 +4011,9 @@
 </ul>
 <blockquote>
 <p>DASH pods that advertise a Bluetooth Device name of <code>TWI Board</code> and indicate <code>-SAW</code> in small print on the paper pod cover are fully compatible with all phones including the iPhone 16.</p>
-<p>Some InPlay DASH pods were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16. Otherwise, you won't notice a difference.</p>
+<p>The earliest <code>Atlas</code> DASH pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. Later in 2025, <code>Atlas</code> DASH pods with July 2025 and later manufacture dates were seen. </p>
 </blockquote>
+<p>We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16. Otherwise, you won't notice a difference.</p>
 <hr />
 <h2 id="what-about-tidepool-loop">What about <em>Tidepool <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>?<a class="headerlink" href="#what-about-tidepool-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><em>Tidepool <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> was approved by the FDA in Jan 2023. In 2025, the <a href="https://www.twiist.com/">Sequel twiist pump</a> became available with <em>Tidepool <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>. Check their site to see if it available in your area.</p>
