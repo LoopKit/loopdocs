@@ -5,6 +5,12 @@
 
     You can choose to keep Looping on the old phone and swap later. Most vendors give you more than a week to turn in your old device for credit.
 
+!!! warning "New Phone Requires iOS Update"
+    In general, when you get a new phone you are required to update that phone to the latest operating system before you can finish onboarding.
+
+    Be sure to update to the latest version of Loop on your old phone before configuring your new phone.
+
+    For example - if you transfer to an iOS 26 phone with `Loop v3.7.x` or older, you will not be able to manually bolus. Do yourself a favor and install an update before you switch phones.
 
 !!! abstract "Phone Transition Overview - Detailed steps below"
 
@@ -80,6 +86,12 @@ Some people don't have access to their old phone. There are instructions for han
 ### Forced iOS Update
 
 When you change phones, *Apple* will force you to the latest iOS version available for your new phone.
+
+!!! important "iOS 26 requires `Loop v3.8.2` or newer"
+    You must install `Loop v3.8.2` or newer before updating to iOS 26.  `Loop v3.7.x` and earlier do not to support iOS 26.
+
+    **Do not attempt to run an older version of Loop on any iOS 26 phone, use `Loop v3.8.2` or newer.**
+
 
 ### Prepare Before Upgrade
 
