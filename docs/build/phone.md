@@ -38,7 +38,12 @@ These phones require *iOS* 26 and `Loop version 3.8.x` or newer
 
 - iPhone 17, all variants
 
-These phones require *iOS* 18 and are compatible with *iOS* 26
+!!! important "iOS 26 requires `Loop v3.8.2` or newer"
+    Any iPhone 17 must run iOS 26. Changes to `Loop v3.7.x` and earlier were required to support iOS 26. These updates are found in `Loop v3.8.2` and newer.
+
+    **Do not attempt to run an earlier version of Loop on any iOS 26 phone, use `Loop v3.8.2` or newer.**
+
+These phones require *iOS* 18 and are compatible with *iOS* 26.
 
 - iPhone 16, all variants: **not recommended for use with Omnipod**
     * iPhone 16 is compatible but see [InPlay DASH pod](../faqs/omnipod-faqs.md#iphone-16-and-atlas-or-inplay-dash-pods){: target="_blank" } warning
