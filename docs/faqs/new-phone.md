@@ -88,9 +88,9 @@ Some people don't have access to their old phone. There are instructions for han
 When you change phones, *Apple* will force you to the latest iOS version available for your new phone.
 
 !!! important "iOS 26 requires `Loop v3.8.2` or newer"
-    Changes to `Loop v3.7.x` and earlier were required to support iOS 26. These updates are found in `Loop v3.8.2` and newer.
+    You must install `Loop v3.8.2` or newer before updating to iOS 26.  `Loop v3.7.x` and earlier do not to support iOS 26.
 
-    **Do not attempt to run an earlier version of Loop on any iOS 26 phone, use `Loop v3.8.2` or newer.**
+    **Do not attempt to run an older version of Loop on any iOS 26 phone, use `Loop v3.8.2` or newer.**
 
 
 ### Prepare Before Upgrade
