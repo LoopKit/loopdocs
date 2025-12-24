@@ -18,13 +18,18 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 
 With the `dev` branch, version 3.9.3, there are now differences between `dev` and `main`. In addition, there are some feature branches.
 
-| <div style="width:140px"> branch | version # | comments |
-|:--|:--|:--|
-| main | 3.8.2 | release |
-| dev | 3.9.3 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `e723867` | 3.9.3 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods; identical to dev v3.9.3 except as noted <br>  - SHA for OmniBLE is `9f39f195`<br>  - SHA for Loop updated to `e92405` to fix a linting problem (Mac-Xcode only)<br>**Please read [OmniBLE Keep-Alive](#omnible-keep-alive)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `8247599`| 3.9.3 | - identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `299331d4`<br>  - SHA for MedtrumKit is `8172454a` |
-| release/3.8.1 | 3.8.1 | - copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum branch instead and test it<br>- this branch was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is `3e606b8` |
+* Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates.
+* There are also feature branches for items like new pumps and new CGMs:
+    * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
+
+| <div style="width:140px"> branch | version # | last updated | comments |
+|:--|:--|:--|:--|
+| main | 3.8.2 | 31 October 2025 | release |
+| dev | 3.9.3 | 22 November 2025 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
+| update_dev_to_3.9.4 | 3.9.4 | 24 December 2025 | Work in progress for next dev branch<br>[Commits Page](https://github.com/LoopKit/LoopWorkspace/commits/update_dev_to_3.9.4/) |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `9bc2bae` | 3.9.4 | 24 December 2025 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `e10964be`<br>**Please read [OmniBLE Keep-Alive](#omnible-keep-alive)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `c775906`| 3.9.4 | 24 December 2025 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `92d2cd7`<br>  - SHA for MedtrumKit is ` db71473` |
+| release/3.8.1 | 3.8.1 | will be removed soon | - copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum branch instead and test it<br>- this branch was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is `3e606b8` |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
