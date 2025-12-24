@@ -4852,11 +4852,19 @@
 <p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop 3.8.x</code>. </p>
 <p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <p>With the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, version 3.9.3, there are now differences between <code>dev</code> and <code>main</code>. In addition, there are some feature branches.</p>
+<ul>
+<li>Sometimes there is a work-in-progress <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>update_dev_to_M.m.#</code> used to collect new items in preparation for the next <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This allows people to test and comment on the updates.</li>
+<li>There are also feature branches for items like new pumps and new CGMs:<ul>
+<li>The feature branches typically spin off of <code>dev</code>, but if a <code>updates_dev_to_ . . .</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is in work, it is merged into the feature branches as items get included</li>
+</ul>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;"><div style="width:140px"> <abbr title="version of code within a single repository or workspace repository">branch</abbr></th>
 <th style="text-align: left;">version #</th>
+<th style="text-align: left;">last updated</th>
 <th style="text-align: left;">comments</th>
 </tr>
 </thead>
@@ -4864,26 +4872,37 @@
 <tr>
 <td style="text-align: left;">main</td>
 <td style="text-align: left;">3.8.2</td>
+<td style="text-align: left;">31 October 2025</td>
 <td style="text-align: left;">release</td>
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
 <td style="text-align: left;">3.9.3</td>
+<td style="text-align: left;">22 November 2025</td>
 <td style="text-align: left;">Adds Live Activity, Browser Build improvement, translation and other updates <br>See <a href="#v393-dev">v3.9.3 <code>dev</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>e723867</code></td>
-<td style="text-align: left;">3.9.3</td>
-<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods; identical to dev v3.9.3 except as noted <br>  - SHA for OmniBLE is <code>9f39f195</code><br>  - SHA for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> updated to <code>e92405</code> to fix a linting problem (Mac-<abbr title="program used to build an app">Xcode</abbr> only)<br><strong>Please read <a href="#omnible-keep-alive">OmniBLE Keep-Alive</a></strong></td>
+<td style="text-align: left;">update_dev_to_3.9.4</td>
+<td style="text-align: left;">3.9.4</td>
+<td style="text-align: left;">24 December 2025</td>
+<td style="text-align: left;">Work in progress for next dev <abbr title="version of code within a single repository or workspace repository">branch</abbr><br><a href="https://github.com/LoopKit/LoopWorkspace/commits/update_dev_to_3.9.4/">Commits Page</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>8247599</code></td>
-<td style="text-align: left;">3.9.3</td>
-<td style="text-align: left;">- identical to dev v3.9.3, with addition of experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>299331d4</code><br>  - SHA for MedtrumKit is <code>8172454a</code></td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>9bc2bae</code></td>
+<td style="text-align: left;">3.9.4</td>
+<td style="text-align: left;">24 December 2025</td>
+<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>e10964be</code><br><strong>Please read <a href="#omnible-keep-alive">OmniBLE Keep-Alive</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>c775906</code></td>
+<td style="text-align: left;">3.9.4</td>
+<td style="text-align: left;">24 December 2025</td>
+<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>92d2cd7</code><br>  - SHA for MedtrumKit is <code>db71473</code></td>
 </tr>
 <tr>
 <td style="text-align: left;">release/3.8.1</td>
 <td style="text-align: left;">3.8.1</td>
+<td style="text-align: left;">will be removed soon</td>
 <td style="text-align: left;">- copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum <abbr title="version of code within a single repository or workspace repository">branch</abbr> instead and test it<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is <code>3e606b8</code></td>
 </tr>
 </tbody>
