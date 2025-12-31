@@ -16,20 +16,19 @@ This section provides an overview of changes to `dev` compared to `Loop 3.8.x`.
   
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-With the `dev` branch, version 3.9.3, there are now differences between `dev` and `main`. In addition, there are some feature branches.
+This section summarizes differences found in the`dev` branch, version 3.9.4, compared to `main`. In addition, there are some feature branches.
 
-* Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates.
-* There are also feature branches for items like new pumps and new CGMs:
-    * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
+??? tip "Updates in Progress (Click to open/close)"
+    * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land inthe `dev` branch.
+    * There are also feature branches for items like new pumps and new CGMs:
+        * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
 
-| <div style="width:140px"> branch | version # | last updated | comments |
+| <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.8.2 | 31 October 2025 | release |
-| dev | 3.9.3 | 22 November 2025 | Adds Live Activity, Browser Build improvement, translation and other updates <br>See [v3.9.3 `dev`](#v393-dev) |
-| update_dev_to_3.9.4 | 3.9.4 | 24 December 2025 | Work in progress for next dev branch<br>[Commits Page](https://github.com/LoopKit/LoopWorkspace/commits/update_dev_to_3.9.4/) |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `9bc2bae` | 3.9.4 | 24 December 2025 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `e10964be`<br>**Please read [OmniBLE Keep-Alive](#omnible-keep-alive)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `c775906`| 3.9.4 | 24 December 2025 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `92d2cd7`<br>  - SHA for MedtrumKit is ` db71473` |
-| release/3.8.1 | 3.8.1 | will be removed soon | - copy of the main release at version 3.8.1 that included Dana support<br>- please build the feat/dev-dana-medtrum branch instead and test it<br>- this branch was a stop-gap measure to support people already using Dana with v3.8.1 who understood how to manage the issues with that version; it will be deleted soon<br>  - SHA for DanaKit is `3e606b8` |
+| main | 3.8.2 | 31 Oct 2025<br>07 Dec 2025 | release<br>Browser Build hot-fix same version |
+| dev | 3.9.4 | 31 Dec 2025 | v3.9.3 Add Live Activity<br>v3.9.4 Add Omnipod updates, Purge excessive log file storage, Add CAGE and IAGE to Minimed UI screen, Improve Browser Build, Update to fastlane 2.230.0, Update translations <br>See [v3.9.4 `dev`](#v394-dev) |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `9bc2bae` UPDATE| 3.9.4 | 31 Dec 2025 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `e10964be` UPDATE?<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `c775906` UPDATE| 3.9.4 | 31 Dec 2025 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `92d2cd7` UPDATE?<br>  - SHA for MedtrumKit is ` db71473` UPDATE? |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -37,6 +36,70 @@ With the `dev` branch, version 3.9.3, there are now differences between `dev` an
     Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
 
     The SHA-1 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the commit for a particular repository.
+
+
+### v3.9.4 `dev`
+
+#### Minimum Requirements
+
+!!! important "Minimum Requirements"
+    **Although the build will succeed for iOS 15 and 16 devices, not all features are supported**
+    
+    * Please update your phone hardware to something that supports iOS 18 or iOS 26
+    * Be sure your build is 3.8.2 or newer before updating your phone to iOS 26
+    * See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }
+
+    For iOS 16 and older not all features for Live Activity / Dynamic Island / CarPlay features are supported; and for iOS 15 even more features are not supported, including some translations.
+
+#### Differences between `main` and `dev`
+
+The `dev` branch labeled v3.9.4 includes these updates with respect to the `main` branch
+
+* Live Activity, Dynamic Island and CarPlay: see [Live Activities](#live-activities)
+
+* OmniBLE and OmniKit:
+    * handle cases where a pod was discarded rather than deactivated more accurately
+    * ensure completion for acknowledgeAlert
+* LibreTransmitter: reduce the log size
+* LoopKit: automatically purge log files to prevent excessive on-phone storage
+* MinimedKit: add CAGE and IAGE to pump settings view
+* New translations
+* Use fastlane 2.230.0 (for browser build)
+
+#### Live Activities
+
+Live Activity was added to Loop with this [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
+
+* The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
+* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
+
+##### Requirements for Live Activities
+
+* The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running iOS 16 or newer
+* iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
+* iOS 26 or newer is required to have Live Activity appear in the CarPlay view
+
+
+
+### PR Links for `dev` Updates
+
+The details of the additions to the `dev` branch for v3.9.4 are found in LoopWorkspace Pull Request 367:
+
+*   [Update dev to 3.9.4](https://github.com/LoopKit/LoopWorkspace/pull/367)
+
+The details of the additions to the `dev` branch for v3.9.3 are found in LoopWorkspace Pull Request 358:
+
+*   [Update dev to 3.9.3](https://github.com/LoopKit/LoopWorkspace/pull/358)
+
+
+#### Mac-Xcode Builders
+
+One change with v3.9.3 and newer is to modify the Build Order selected in Xcode from the deprecated `Manual Order` to the preferred `Dependency Order`.
+
+* If you start with a fresh download - this will not affect you
+* If you update an existing clone on your computer with the `git pull --recurse` command, you will need to perform a `Product: Clean Build Folder` in Xcode, close the workspace in Xcode and reopen it
+    * If there are still build errors, then quit out of Xcode, issue the following command and try again
+    * `rm -rf ~/Library/Developer/Xcode/DerivedData`
 
 ### How to Build Feature Branches
 
@@ -62,7 +125,7 @@ For Mac Xcode build, the lines you need to copy and paste into a Terminal window
    - feat/dev-dana-medtrum
 ```
 
-### OmniBLE Keep-Alive
+### Feature Branch: Pod Keep Alive Feature
 
 The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an [iPhone 16 and DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#iphone-16-and-atlas-or-inplay-dash-pods){: target="_blank" }. No action is taken automatically unless both these cases are detected to be true.
 
@@ -138,52 +201,11 @@ Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for th
 
 The idea of having a feature branch is not new for the *Loop* app but hasn't been used for a few years. At this point, we have two feature branches.
 
-Moving forward, the version number in the feature branch will match the `dev` branch version number. 
+Moving forward, the version number in the feature branch will match the `dev` branch version number, or in some cases, a work-in-progress update to the `dev` branch which uses the naming convention `update_dev_to_M.m.#`.
 
-* In other words, a diff between `dev` and the feature branch is just the updates added to support the feature compared to that version of `dev`
-* As appropriate, `dev` will be merged into the feature branch and at that time, the version number for the feature branch will also be bumped
-* Updates to the feature branch to support the feature will not be updated with a new version number associated with the features
-    * When updates for the feature are added, the SHA for that submodule will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
-
-### v3.9.3 `dev`
-
-The details of the additions to the `dev` branch for v3.9.3 are found in LoopWorkspace Pull Request 358:
-
-*   [Update dev to 3.9.3](https://github.com/LoopKit/LoopWorkspace/pull/358)
-
-!!! important "New Minimum Requirements"
-    **The minimum iOS required to build this version is iOS 16; but not all features are supported by iOS 16 - specifically the Live Activity / Dynamic Island / CarPlay features**
-
-    * Correction, you can still build onto an iOS 15 phone with this version, but because the use of String Catalogs for languages don't work well for iOS 15 and Live Activity is not supported, expect the next dev version will force a minimum iOS 16 for building
-
-    **Live Activity, Dynamic Island and CarPlay**
-
-    * The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running iOS 16 or newer
-    * iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
-    * iOS 26 or newer is required to have Live Activity appear in the CarPlay view
-
-
-#### Live Activities
-
-This update adds Live Activity to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
-
-* The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
-* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
-
-#### Mac-Xcode Builders
-
-One change with this PR is to modify the Build Order selected in Xcode from the deprecated `Manual Order` to the preferred `Dependency Order`.
-
-* If you start with a fresh download - this will not affect you
-* If you update an existing clone on your computer with the `git pull --recurse` command, you will need to perform a `Product: Clean Build Folder` in Xcode, close the workspace in Xcode and reopen it
-    * If there are still build errors, then quit out of Xcode, issue the following command and try again
-    * `rm -rf ~/Library/Developer/Xcode/DerivedData`
-
-### Feature Branch: Pod Keep Alive Feature
-
-For more information about using the `feat/pod-keep-alive` branch with an iPhone 16 and InPlay BLE DASH pods, please refer to the README file for the OmniBLE `pod-keep-alive` branch:
-
-* [Workaround for InPlay Pods](https://github.com/LoopKit/OmniBLE/tree/8c4740468949cf6ca787e232f885a535b2bb3e8f?tab=readme-ov-file#omnible)
+* In other words, the feature branch is up to date with other changes to `dev` or `update_dev_to_M.m.#` with the added support for the specific feature
+* Each feature has an associated repository that contains the feature
+    * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
 
 ### Feature Branch: Medtrum and Dana Support
