@@ -29,10 +29,10 @@ If a given phrase in the app does not have a translation string in what is calle
 
 For the *Loop* app and the submodules (Pumps, CGM and Services) associated with the *Loop* app, the [*lokalise*](https://app.lokalise.com/projects) website is used. You must be signed up with the *Loop* project to be able to see *Loop* translations at that site.
 
-!!! note "Want to Sign Up to Translate?"
+!!! note "Want to Translate?"
     To volunteer to translate, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate.
 
-    If you want to be translate for one of the new CGM / Pump repositories, include that information as well. This includes DanaKit, EversenseKit and MedtrumKit. Those new repositories are handled using a [*crowdin* project](#crowdin-projects) for each repository.
+    If you want translate one of the new CGM / Pump repositories: DanaKit, EversenseKit and MedtrumKit, indicate that as well. Those new repositories are handled using a [*crowdin* project](#crowdin-projects) for each repository.
 
 
 ## Code Translation

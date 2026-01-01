@@ -215,9 +215,10 @@ Moving forward, the version number in the feature branch will match the `dev` br
 !!! important "Experts Only"
     Please only use the `feat/dev-dana-medtrum` branch if you are prepared to follow along in zulipchat and are willing to test an experimental branch to help test and resolve issues.
 
-    * Please ensure you have the latest version of this branch:
+    * Please ensure you have the latest version of this branch by synching before you build:
         * `feat/dev-dana-medtrum`
-        * SHA `de1109f`
+        * Mac-Xcode: type `git pull --recurse` to update an existing clone or download a fresh copy
+        * Browser Build, the Build Loop action, with the `feat/dev-dana-medtrum` branch selected should automatically sync your fork for you
 
 ## Older updates
 
