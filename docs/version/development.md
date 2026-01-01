@@ -125,6 +125,19 @@ For Mac Xcode build, the lines you need to copy and paste into a Terminal window
    - feat/dev-dana-medtrum
 ```
 
+### Version Number Plan
+
+Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for the current method for version numbering for the `main` and `dev` branches.
+
+The idea of having a feature branch is not new for the *Loop* app but hasn't been used for a few years. At this point, we have two feature branches.
+
+Moving forward, the version number in the feature branch will match the `dev` branch version number, or in some cases, a work-in-progress update to the `dev` branch which uses the naming convention `update_dev_to_M.m.#`.
+
+* In other words, the feature branch is up to date with other changes to `dev` or `update_dev_to_M.m.#` with the added support for the specific feature
+* Each feature has an associated repository that contains the feature
+    * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
+
+
 ### Feature Branch: Pod Keep Alive Feature
 
 The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an [iPhone 16 and DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#iphone-16-and-atlas-or-inplay-dash-pods){: target="_blank" }. No action is taken automatically unless both these cases are detected to be true.
@@ -193,19 +206,6 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 > If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 
 > If the phone moves out of RileyLink range, then the app is not triggered by the RileyLink heartbeat and the pod disconnects from BLE at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
-
-
-### Version Number Plan
-
-Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for the current method for version numbering for the `main` and `dev` branches.
-
-The idea of having a feature branch is not new for the *Loop* app but hasn't been used for a few years. At this point, we have two feature branches.
-
-Moving forward, the version number in the feature branch will match the `dev` branch version number, or in some cases, a work-in-progress update to the `dev` branch which uses the naming convention `update_dev_to_M.m.#`.
-
-* In other words, the feature branch is up to date with other changes to `dev` or `update_dev_to_M.m.#` with the added support for the specific feature
-* Each feature has an associated repository that contains the feature
-    * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
 
 ### Feature Branch: Medtrum and Dana Support
