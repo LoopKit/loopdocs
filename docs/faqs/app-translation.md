@@ -60,7 +60,7 @@ Some new pump and CGM modules are provided by developers associated with the *Tr
 
 ### Volunteer to Translate
 
-To volunteer, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate. Indicate whether you need access to the new repositories (*crowdin*) in addition to the Loop repositories. You will get an invitation to join the Loop *lokalise* project. You do not need to start a new project, start a free trial or sign up for anything special; just join the project you are invited to.
+To volunteer, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate. Indicate whether you need access to the new repositories (*crowdin*) in addition to the Loop repositories. You will get an invitation to join the Loop *lokalise* project. You do not need to start a new *lokalise* project. Do not start a free *lokalise* trial or sign up for anything special; just join the project you are invited to.
 
 > If you are using the *Trio* or *iAPS* app instead of the *Loop* app, you can still assist with Pump, CGM and Tidepool module localization through *Loop* *lokalise*. Some repositories from *Loop* are used by [*Trio* and *iAPS*](#what-about-other-ios-apps).
 
@@ -138,42 +138,6 @@ The screenshot below is configured for someone translating simplified Chinese fo
 ![choose a submodule for translation](img/lokalise-by-context-submodule-xcstrings.png){width="1024"}
 {align="center"}
 
-#### Submodule Table for Multiple Apps
-
-These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled by *lokalise*.
-
-| Type |  <div style="width:145px"></div> Name | Files |
-|:-:|:--|:--|
-| CGM | `CGMBLEKit` | CGMBLEKit/CGMBLEKit/Localizable.xcstrings<br>CGMBLEKit/CGMBLEKitUI/Localizable.xcstrings |
-| CGM | `G7SensorKit` | G7SensorKit/G7SensorKit/Localizable.xcstrings<br>G7SensorKit/G7SensorKitUI/Localizable.xcstrings |
-| CGM | `LibreTransmitter` | LibreTransmitter/LibreTransmitter/Localizable.xcstrings<br>LibreTransmitter/LibreTransmitterUI/Localizable.xcstrings |
-| CGM | `Dexcom Share` | dexcom-share-client-swift/ShareClient/Localizable.xcstrings<br>dexcom-share-client-swift/ShareClientUI/Localizable.xcstrings |
-| CGM | `NightscoutRemoteCGM` | NightscoutRemoteCGM/NightscoutRemoteCGM/Localizable.xcstrings | 
-| Pump | `OmniBLE` | OmniBLE/Localizable.xcstrings<br>OmniBLE/OmniBLE/Localizable.xcstrings |
-| Pump | `RileyLinkKit` | RileyLinkKit/RileyLink/Localizable.xcstrings<br>RileyLinkKit/RileyLink/LoopKit.xcstrings<br>RileyLinkKit/RileyLinkBLEKit/Localizable.xcstrings<br>RileyLinkKit/RileyLinkKitUI/Localizable.xcstrings |
-| Pump | `MinimedKit` | MinimedKit/MinimedKit/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/mul.lproj/MinimedPumpManager.xcstrings|
-| Pump | `OmniKit` | OmniKit/Localizable.xcstrings<br>OmniKit/OmniKit/Resources/Localizable.xcstrings<br>OmniKit/OmniKitUI/Resources/Localizable.xcstrings |
-| Misc | `LoopKit` | LoopKit/LoopKit/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/InsulinKit.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/LegacyInsulinDeliveryTableViewController.xcstrings<br>LoopKit/MockKit/Resources/Localizable.xcstrings<br>LoopKit/MockKitUI/Resources/Localizable.xcstrings |
-| Service | `TidepoolService` | TidepoolService/TidepoolServiceKit/Localizable.xcstrings<br>TidepoolService/TidepoolServiceKitUI/Localizable.xcstrings |
-
-
-These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled by *crowdin*.
-
-| Type |  <div style="width:145px"></div> Name | Files |
-|:-:|:--|:--|
-| Pump | `DanaKit` | see [DanaKit *crowdin*](https://crowdin.com/project/danakit) |
-| Pump | `MedtrumKit` | see [MedtrumKit *crowdin*](https://crowdin.com/project/medtrumkit) | 
-| CGM | `EversenseKit` | crowdin project is not yet configured |
-
-The modules are specific to the particular app:
-
-| Type |  <div style="width:145px"></div> Name | Files |
-|:-:|:--|:--|
-| Loop | `Loop` | use [Loop *lokalise*](https://app.lokalise.com/projects) |
-| Trio | `Trio` | use [Trio *crowdin*](https://crowdin.com/project/trio) | 
-| iAPS | `iAPS` | use [iAPS *crowdsin*](https://crowdin.com/project/iaps) |
-
-
 ### Matches Source
 
 Some of the String Catalogs have had the English version inserted in the translation field. This was done inadvertently. To find these instances in the language you are translating, set up a custom filter.
@@ -224,6 +188,42 @@ The bottom line is
 * *iAPS* translations are handled at [crowdin for *iAPS*](https://crowdin.com/project/iaps)
 
 You can use the *Trio* or *iAPS* discord server to volunteer to translate using *lokalise* by sending a direct message to Marion Barker if you are not a member of zulipchat.
+
+
+### Submodule Table for Multiple Apps
+
+These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled by *lokalise*.
+
+| Type |  <div style="width:145px"></div> Name | Files |
+|:-:|:--|:--|
+| CGM | `CGMBLEKit` | CGMBLEKit/CGMBLEKit/Localizable.xcstrings<br>CGMBLEKit/CGMBLEKitUI/Localizable.xcstrings |
+| CGM | `G7SensorKit` | G7SensorKit/G7SensorKit/Localizable.xcstrings<br>G7SensorKit/G7SensorKitUI/Localizable.xcstrings |
+| CGM | `LibreTransmitter` | LibreTransmitter/LibreTransmitter/Localizable.xcstrings<br>LibreTransmitter/LibreTransmitterUI/Localizable.xcstrings |
+| CGM | `Dexcom Share` | dexcom-share-client-swift/ShareClient/Localizable.xcstrings<br>dexcom-share-client-swift/ShareClientUI/Localizable.xcstrings |
+| CGM | `NightscoutRemoteCGM` | NightscoutRemoteCGM/NightscoutRemoteCGM/Localizable.xcstrings | 
+| Pump | `OmniBLE` | OmniBLE/Localizable.xcstrings<br>OmniBLE/OmniBLE/Localizable.xcstrings |
+| Pump | `RileyLinkKit` | RileyLinkKit/RileyLink/Localizable.xcstrings<br>RileyLinkKit/RileyLink/LoopKit.xcstrings<br>RileyLinkKit/RileyLinkBLEKit/Localizable.xcstrings<br>RileyLinkKit/RileyLinkKitUI/Localizable.xcstrings |
+| Pump | `MinimedKit` | MinimedKit/MinimedKit/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/mul.lproj/MinimedPumpManager.xcstrings|
+| Pump | `OmniKit` | OmniKit/Localizable.xcstrings<br>OmniKit/OmniKit/Resources/Localizable.xcstrings<br>OmniKit/OmniKitUI/Resources/Localizable.xcstrings |
+| Misc | `LoopKit` | LoopKit/LoopKit/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/InsulinKit.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/LegacyInsulinDeliveryTableViewController.xcstrings<br>LoopKit/MockKit/Resources/Localizable.xcstrings<br>LoopKit/MockKitUI/Resources/Localizable.xcstrings |
+| Service | `TidepoolService` | TidepoolService/TidepoolServiceKit/Localizable.xcstrings<br>TidepoolService/TidepoolServiceKitUI/Localizable.xcstrings |
+
+These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled by *crowdin*.
+
+| Type |  <div style="width:145px"></div> Name | Files |
+|:-:|:--|:--|
+| Pump | `DanaKit` | see [DanaKit *crowdin*](https://crowdin.com/project/danakit) |
+| Pump | `MedtrumKit` | see [MedtrumKit *crowdin*](https://crowdin.com/project/medtrumkit) | 
+| CGM | `EversenseKit` | crowdin project is not yet configured |
+
+The modules are specific to the particular app:
+
+| Type |  <div style="width:145px"></div> Name | Files |
+|:-:|:--|:--|
+| Loop | `Loop` | use [Loop *lokalise*](https://app.lokalise.com/projects) |
+| Trio | `Trio` | use [Trio *crowdin*](https://crowdin.com/project/trio) | 
+| iAPS | `iAPS` | use [iAPS *crowdsin*](https://crowdin.com/project/iaps) |
+
 
 - - -
 

@@ -19,7 +19,7 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 This section summarizes differences found in the`dev` branch, version 3.9.4, compared to `main`. In addition, there are some feature branches.
 
 ??? tip "Updates in Progress (Click to open/close)"
-    * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land inthe `dev` branch.
+    * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land in the `dev` branch.
     * There are also feature branches for items like new pumps and new CGMs:
         * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
 
