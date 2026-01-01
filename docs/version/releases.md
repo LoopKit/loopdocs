@@ -545,7 +545,8 @@ For example:
     * `Loop v3.6.1`, `Loop v3.6.2`, `Loop v3.6.3` and `Loop v3.6.4` were updates without major changes to the features of `Loop v3.6`
     * `Loop v3.7.7` was the development version before `Loop v3.8.0` was released
 * `Loop v3.8.0` was the next minor release
-    * `Loop v3.9.0` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences, if any, between `main` and `dev`
+    * `Loop v3.8.1`, `Loop v3.8.2` were hotfixes to handle iOS 26 issues without major changes to the features of `Loop v3.8` with the important exception that DanaKit support was spun off to a feature branch with v3.8.2
+    * `Loop v3.9.x` is the current development version, see [Updates in dev](development.md#updates-in-dev) for functional differences, if any, between `main` and `dev`
 
 - - -
 
