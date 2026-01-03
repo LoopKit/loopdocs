@@ -28,7 +28,7 @@ This section summarizes differences found in the`dev` branch, version 3.9.4, com
 | main | 3.8.2 | 31 Oct 2025<br>07 Dec 2025 | release<br>Browser Build hot-fix same version |
 | dev | 3.9.4 | 31 Dec 2025 | v3.9.3 Add Live Activity<br>v3.9.4 Add Omnipod updates, Purge excessive log file storage, Add CAGE and IAGE to Minimed UI screen, Improve Browser Build, Update to fastlane 2.230.0, Update translations <br>See [v3.9.4 `dev`](#v394-dev) |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `5eba785` | 3.9.4 | 31 Dec 2025 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `41dd40e`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `84f32bf` | 3.9.4 | 31 Dec 2025 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `f01a75a9`<br>  - SHA for MedtrumKit is ` db71473` |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `6a8d0c6` | 3.9.4 | 02 Jan 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `bad8fad`<br>  - SHA for MedtrumKit is ` 8e9d9f7` |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
