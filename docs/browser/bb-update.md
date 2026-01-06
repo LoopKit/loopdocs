@@ -461,15 +461,6 @@ Click inside the box under **Test Details**. Insert the text you want to see on 
 
 In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
 
-!!! tip "Commit Number"
-    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
-
-    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
-
-## No Longer Needed
-
-This section contains the old directions to manually renew certificates. It is no longer needed with the automatic certificate renewal method found in `Loop 3.6.0` and newer versions.
-
 ## Renew Certificate
 
 Manual certificate renewal is not longer required if you added the `Variable` `ENABLE_NUKE_CERTS`. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.

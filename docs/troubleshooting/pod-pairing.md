@@ -100,7 +100,7 @@ Hopefully, your pod pairing continues uneventfully at this point. You'll press t
 
 The DASH pod can be left in the tray and placed right next to the phone. If the first attempt to pair shows the "No pods found" message, place the tray on top of the phone or move the pod a little further away from the phone, then try again.
 
-If you see the [Verbose Message, Hard to Interpret](#verbose-message-hard-to-interpret) Pairing exception message as shown in the link above, you need to toggle Bluetooth on the phone:
+If you see an error message indicating a Bluetooth issue, you need to toggle Bluetooth on the phone:
 
 * In your phone settings, turn off Bluetooth
 * Turn on Bluetooth

@@ -400,7 +400,7 @@ These features are added:
 This patch release was required for those who build using the *Mac* method.
 
 * There are no changes to app functionality
-* Version 3.2.2 and earlier cannot be built using Xcode 15, see [Cycle Inside Loop](../build/build-errors.md#cycle-inside-loop)
+* Version 3.2.2 and earlier cannot be built using Xcode 15.
 
 ### Loop v3.2.2
 

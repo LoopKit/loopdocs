@@ -290,7 +290,7 @@ Details that are different:
 
 * The way the code is organized has changed: see [LoopWorkspace](loopworkspace.md){: target="_blank" }
 * The default branch name used to be `master` - but is now `main`
-* `carthage` is no longer used to determine which submodules (frameworks) are pulled in to build Loop (see [LoopWorkspace](#loopworkspace))
+* `carthage` is no longer used to determine which submodules (frameworks) are pulled in to build Loop (see [LoopWorkspace](loopworkspace.md))
 
 The information in this video is still generally useful with the last half focused on automatic-bolus - the automatic-bolus dosing strategy has now been incorporated into <span>*Loop* `main` branch</span>. *Loop* has moved on to using only one stable branch (`main`), with `dev` suggested for developers/testers.
 

@@ -832,7 +832,7 @@ Make sure you only delete `Match-Secrets`. Do NOT delete the repository of the a
 
 When building Loop, LoopCaregiver, LoopFollow or Trio:
 
-* If you just revoked a [Distrbution Certificate](#revoke-extra-distribution-certificate) - please do not delete your `Match-Secrets`
+* If you just revoked a [Distrbution Certificate](#revoke-distribution-certificate) - please do not delete your `Match-Secrets`
 * Make sure you have `ENABLE_NUKE_CERTS` set to true
 * The next time you try to build, the information in Match-Secrets is used to remove invalid profiles
     * A new Distribution Certificate and new profiles will be generated and your Match-Secrets will be updated
