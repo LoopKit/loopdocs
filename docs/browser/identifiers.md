@@ -1,3 +1,9 @@
+!!! abstract "Progress: Step 4 of 7"
+    **📍 You are here:** Prepare Identifiers
+    **⏱️ Time:** 15-30 minutes
+    **✅ Goal:** Validate secrets and create Apple identifiers
+    **📋 Next:** [Prepare App](prepare-app.md)
+
 ## First Use of Actions Tab
 
 Near the top middle of your <code>LoopWorkspace</code> &nbsp;<span class="notranslate">fork</span>&nbsp; is an <code>Actions</code> tab. This section provides detailed directions to enable <code>Actions</code>.
@@ -101,6 +107,14 @@ The `Add Identifiers` &nbsp;<span class=notranslate>Action</span>&nbsp; should s
 !!! important "Ask For Help Early"
     Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.
 
+---
+
 ## Next Step
 
-The next step is to [Prepare the App](prepare-app.md).
+Identifiers created successfully! Now configure them at Apple:
+
+**→ [Step 5: Prepare App](prepare-app.md)**
+
+---
+
+**Navigation:** [← Back: Prepare Fork](prepare-fork.md) | [Next: Prepare App →](prepare-app.md)

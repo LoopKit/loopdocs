@@ -1,8 +1,21 @@
+!!! abstract "Progress: Step 2 of 7"
+    **📍 You are here:** Collect Secrets
+    **⏱️ Time:** 1-2 hours
+    **✅ Goal:** Gather 6 secrets needed for building
+    **📋 Next:** [Prepare Fork](prepare-fork.md)
+
 ## Collect and Save Secrets
 
-??? abstract "Section Summary (click to open/close)"
-    You require 6 <code>Secrets</code> (alphanumeric items) to use the <code>*GitHub* Browser Build</code> method and if you use the <code>*GitHub* Browser Build</code> method to build more than Loop, e.g., <code>LoopFollow</code> or <code>LoopCaregiver</code>, you **must** use the same 6 <code>Secrets</code> for each app you build with this method.
+!!! info "What You'll Collect"
+    You need 6 secrets (alphanumeric codes) to build with a browser. These same secrets work for any app you build (Loop, LoopFollow, LoopCaregiver, etc.).
 
+    **Secrets checklist:**
+
+    * ☐ 4 secrets from Apple Developer account
+    * ☐ 1 secret from GitHub account
+    * ☐ 1 password you create yourself
+
+??? abstract "Section Summary (click to open/close)"
     Each secret is identified with `ALL_CAPITAL_LETTER_NAMES`.
 
     * Four <code>Secrets</code> are from your *Apple* Account
@@ -336,6 +349,14 @@ To make a *passphrase* that is hard to guess and keeps your certificates safe:
 
 If you already created a MATCH_PASSWORD that does not meet the criteria listed above, no worries, you are protecting an *Apple* developer certificate - not the family fortune. That information is provided for new builders who want guidance.
 
+---
+
 ## Next Step
 
-The next step is to [Prepare your Fork (Copy of LoopWorkspace)](prepare-fork.md).
+You've collected all 6 secrets! Ready to move forward:
+
+**→ [Step 3: Prepare Fork](prepare-fork.md)**
+
+---
+
+**Navigation:** [← Back: Introduction](intro-summary.md) | [Next: Prepare Fork →](prepare-fork.md)

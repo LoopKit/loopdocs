@@ -1,3 +1,9 @@
+!!! abstract "Progress: Step 7 of 7"
+    **📍 You are here:** Build the Loop App
+    **⏱️ Time:** 20-30 minutes (mostly automated)
+    **✅ Goal:** Trigger the build and wait for completion
+    **📋 Next:** [Install on Phone](phone-install.md)
+
 ## Build the *Loop* App
 
 ??? abstract "Section Summary (click to open/close)"
@@ -56,20 +62,31 @@ You can ignore an email from *Apple* that there are things you must fix in your 
 
 Did you get a red X? Head over to the [Errors with Browser](bb-errors.md){: target="_blank" } to page find a solution.
 
+---
+
 ## Next Steps
 
-It may take up to an hour for your new build to appear in TestFlight.
+!!! success "🎉 Congratulations!"
+    Your Loop app is building! It will take about 20-30 minutes to complete.
 
-From the phone where you want to install the *Loop* app, use TestFlight on that phone to install the app.
+**What happens now:**
 
-* [Install on Phone](phone-install.md)
+1. ⏳ **Wait ~30 minutes** - GitHub is building your app in the cloud
+2. 📧 **Check email** - You'll receive confirmation when build completes
+3. ⏳ **Wait another ~30 minutes** - Apple processes the app for TestFlight
+4. 📧 **Second email** - TestFlight is ready!
 
-If is you skipped the step about creating a *TestFlight* Group or want to add another person to your group:
+**Next, install on your phone:**
 
-* [TestFlight Group](tf-users.md)
+**→ [Install on Phone](phone-install.md)**
 
-## Caregivers
+---
 
-If you are a Caregiver who helps manage a loved-ones diabetes, you may use other open-source apps that can be built the same way:
+**Additional Resources:**
 
-* When you are done building and installing the *Loop* app, there are instructions to [Build Other Apps with Browser](other-apps.md)
+* Need to add more people to TestFlight? [TestFlight Group](tf-users.md)
+* Building for a caregiver? [Build Other Apps with Browser](other-apps.md)
+
+---
+
+**Navigation:** [← Back: TestFlight Group](tf-users.md) | [Next: Install on Phone →](phone-install.md)

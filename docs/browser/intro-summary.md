@@ -1,3 +1,8 @@
+!!! abstract "Progress: Step 1 of 7"
+    **📍 You are here:** Introduction and Summary
+    **⏱️ Time:** 15-30 minutes to understand the process
+    **📋 Next:** [Collect Secrets](secrets.md)
+
 ## Summary of Steps
 
 ???+ info "Time Estimate (click to open/close)"
@@ -261,6 +266,14 @@ Some of these **terms** have ToolTips, so hover your mouse over those - or revie
     * Most Loopers will not have an App until using the <code>*GitHub* Browser Build</code>
     * The instructions walk you through creating and naming your app: [Create Loop App in App Store Connect](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
 
+---
+
 ## Next Step
 
-The next step is to [Collect and Save Secrets](secrets.md).
+Ready to begin? Proceed to:
+
+**→ [Step 2: Collect and Save Secrets](secrets.md)**
+
+---
+
+**Navigation:** [← Back to Overview](bb-overview.md) | [Next: Collect Secrets →](secrets.md)

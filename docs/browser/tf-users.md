@@ -1,3 +1,9 @@
+!!! abstract "Progress: Step 6 of 7"
+    **📍 You are here:** Prepare TestFlight Group
+    **⏱️ Time:** 10-15 minutes
+    **✅ Goal:** Set up who can install your Loop app via TestFlight
+    **📋 Next:** [Build the Loop App](build-yml.md)
+
 ## *TestFlight* Overview
 
 There are two parts to this. Step 1 is only done one time. Step 2 is done for each new app.
@@ -60,6 +66,14 @@ First you need to add the email address(es) to your *App Store Connect* Access U
     ![select your users for the testing group](img/setup-testflight-03.png){width="700"}
     {align="center"}
 
+---
+
 ## Next Step
 
-[Create Certificates](certs.md) for your app.
+TestFlight group configured! Ready to build:
+
+**→ [Step 7: Build the Loop App](build-yml.md)**
+
+---
+
+**Navigation:** [← Back: Prepare App](prepare-app.md) | [Next: Build Loop →](build-yml.md)

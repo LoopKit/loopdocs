@@ -1,16 +1,42 @@
+!!! abstract "Progress: Step 5 of 7"
+    **📍 You are here:** Prepare App
+    **⏱️ Time:** 30-45 minutes
+    **✅ Goal:** Configure identifiers at Apple and create your Loop app
+    **📋 Next:** [Prepare TestFlight Group](tf-users.md)
+
 ## Prepare the App
 
-After creating the identifiers, you will need to
+This page involves working with two different Apple websites. Pay close attention to which site you're on:
 
-1. [Configure](#configure-identifiers-for-loop){: target="_blank" } them to associate the correct App Group with specific identifiers 
-2. [Create](#create-loop-app-in-app-store-connect){: target="_blank" } the *Loop* App.
+!!! info "🍎 Two Apple Sites - Don't Confuse Them!"
+    **Site 1: Apple Developer** (developer.apple.com)
 
-Some people get confused on this page. Many of the links look similar but are actually different pages at *Apple*.
+    * 🔧 **Purpose:** Configure technical identifiers and app groups
+    * 📍 **You'll do:** Link identifiers to Loop App Group
+    * 🎨 **Look:** Developer-focused, technical interface
+
+    ---
+
+    **Site 2: App Store Connect** (appstoreconnect.apple.com)
+
+    * 📱 **Purpose:** Manage your app listing and TestFlight
+    * 📍 **You'll do:** Create the Loop app entry
+    * 🎨 **Look:** App management interface
+
+After creating the identifiers, you will:
+
+1. ✅ [Configure identifiers](#configure-identifiers-for-loop) at **Apple Developer**
+2. ✅ [Create the Loop app](#create-loop-app-in-app-store-connect) at **App Store Connect**
 
 !!! important "Ask For Help Early"
-    Please if you are having trouble - [ask for help early by clicking on this link](bb-errors.md#help-with-errors){: target="_blank" }.
+    This page has the most steps. If you're unsure which website you're on or get confused - [ask for help early](bb-errors.md#help-with-errors){: target="_blank" }!
+
+---
 
 ## Configure Identifiers for Loop
+
+!!! tip "📍 You're now at: **Apple Developer** (developer.apple.com)"
+    This section works with technical identifiers. You'll link 4 identifiers to your Loop App Group.
 
 ???+ tip "Background Information (Click to open/close)"
     * One of the identifiers just created is used as the `Bundle ID` for building your app
@@ -198,7 +224,12 @@ Repeat until the 4 Identifiers have the `Loop App Group` configured.
 * If you miss an identifier, the `Create Certificates` step will succeed but `Build Loop` will fail.
 * If you do not [enable the `Time Sensitive Notifications`](#add-time-sensitive-notifications) for the `Loop` Identifier, the `Create Certificates` step will succeed but `Build Loop` will fail.
 
+---
+
 ## Digital Service Act Compliance
+
+!!! tip "📍 You're now at: **App Store Connect** (appstoreconnect.apple.com)"
+    This quick step confirms you're building for personal use, not selling apps.
 
 In order to create an app you need to indicate whether you are a trader or a non-trader. You are a non-trader unless you use the same Developer ID to submit apps for sale.
 
@@ -223,10 +254,15 @@ If you do see the banner, follow the numbered steps in the graphic below:
 
 You do not need to add a bank account or fill out tax forms if you are only using the App Store to get your own app into TestFlight. You only need to have a paid account with a valid license agreement and have completed this compliance form. Ignore other requests from Apple.
 
+---
+
 ## Create Loop App in App Store Connect
 
+!!! tip "📍 Still at: **App Store Connect** (appstoreconnect.apple.com)"
+    Now you'll create the actual Loop app entry for TestFlight distribution.
+
 ??? abstract "Section Summary (click to open/close)"
-    If you have created a Loop app in App Store Connect before, make sure you [Remove Apple Vision Pro](#remove-apple-vision-pro) and then skip ahead to [Create Certificates](certs.md#create-certificates).
+    If you have created a Loop app in App Store Connect before, make sure you [Remove Apple Vision Pro](#remove-apple-vision-pro) and then skip ahead to [Prepare TestFlight Group](tf-users.md).
 
     1. Click on the link [apps list](https://appstoreconnect.apple.com/apps) to open App Store Connect and click the blue "plus" icon to create a New App.
         * Select "iOS".
@@ -338,6 +374,14 @@ You may have no memory of ever setting up `Loop` in *App Store Connect*. If you 
     ![find removed apps](img/restore-removed-02.png){width="800"}
     {align="center"}
 
+---
+
 ## Next Step
 
-The next step is to configure your [TestFlight Group](tf-users.md) for this app.
+App created at App Store Connect! Now set up TestFlight access:
+
+**→ [Step 6: Prepare TestFlight Group](tf-users.md)**
+
+---
+
+**Navigation:** [← Back: Prepare Identifiers](identifiers.md) | [Next: TestFlight Group →](tf-users.md)

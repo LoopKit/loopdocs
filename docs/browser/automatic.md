@@ -303,4 +303,4 @@ What if I decide I don't want the automatic building feature?
     * [GitHub Directions to Disable and Enable a Workflow](https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow#disabling-a-workflow)
     * It is the Build action that kicks off the update and build steps, so simply disabling the one action is sufficient
 
-* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to use Browser](bb-overview.md#configure-to-use-browser) to restore ability to build Loop with GitHub.
+* If you are done with Loop, you can delete the whole repository; but you should be sure about this because you'll need to start over with [Configure to use Browser](bb-overview.md#step-by-step-build-process) to restore ability to build Loop with GitHub.

@@ -1,10 +1,26 @@
 ## Build with a Browser
 
-* <span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span>
-* The app is then installed by you on your phone using the *TestFlight* app
-* If you prefer to use *Xcode* on your *Mac*, head over to [Build with *Mac*](../build/overview.md){: target="_blank" }
-* As long as you use the same *Apple Developer* account, the app you build is the same regardless of build method
+<span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span> and installed on your phone using the *TestFlight* app. This method works on any device with a browser (PC, Mac, tablet, or iPad) - no Mac computer required.
+
+!!! success "Same App, Different Method"
+    * If you prefer to use *Xcode* on your *Mac*, see [Build with *Mac*](../build/overview.md){: target="_blank" }
+    * As long as you use the same *Apple Developer* account, the app you build is identical regardless of build method
     * When you install the app on your phone, settings and history are preserved; pump and CGM remain attached; selected Services are maintained
+
+## Is This Method Right for You?
+
+**Choose Browser Build if:**
+
+* ✓ You don't have a Mac or prefer not to use one
+* ✓ You want automatic monthly builds (after initial setup)
+* ✓ You're comfortable following step-by-step instructions with multiple accounts (Apple, GitHub)
+* ✓ You can dedicate 2-4 hours for first-time setup (spread over several days)
+
+**Choose Mac Build if:**
+
+* You already have an up-to-date Mac and are comfortable with Xcode
+* You prefer building locally without cloud services
+* See [Build with Mac](../build/overview.md){: target="_blank" } for Mac requirements
 
 ## Requirements
 
@@ -24,23 +40,28 @@ To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, y
 1. Free *GitHub* account: (instructions found at [New *GitHub* Account](secrets.md#new-github-account){: target="_blank" })
 1. Paid *Apple* Developer account: ($99/year; instructions found at [*Apple* Developer Account](../build/apple-developer.md){: target="_blank" })
 
-## Instructions to Build with a Browser
+## Getting Started: Two Paths
 
-### The Short Version
+Choose the path that matches your experience level:
 
-Complete instructions are found at this link for those comfortable with using *GitHub* and navigating the *Apple Developer* and *Apple App Connect* pages.
+### 🟢 Path 1: Detailed Step-by-Step (Recommended for First-Time Builders)
 
-* [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md)
+Follow the detailed instructions below with screenshots, explanations, and help at every step.
 
-### How-to Video to Build with a Browser
+**Start here:** [Introduction and Summary](intro-summary.md){: target="_blank" }
 
-In addition to the pages linked below in [Configure to use Browser](#configure-to-use-browser), there is a narrated video of each step needed to build using a browser. (This video shows build steps for version 3.2.3 or older. Some items are simplified for version 3.4.1 and newer.)
+### 🔵 Path 2: Quick Reference (For Experienced Users)
 
-* [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)
+If you're comfortable with GitHub and Apple Developer portals, use the condensed version:
 
-### Configure to use Browser
+* **Documentation:** [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
+* **Video Guide:** [How to Build Loop With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8) (shows version 3.2.3; some steps simplified in 3.4.1+)
 
-The steps on these pages must be completed for you to build an app using a browser:
+---
+
+## Step-by-Step Build Process
+
+The following pages guide you through the complete browser build process:
 
 1. [Introduction and Summary](intro-summary.md){: target="_blank" }
 1. [Collect Secrets](secrets.md){: target="_blank" }
@@ -52,82 +73,83 @@ The steps on these pages must be completed for you to build an app using a brows
 1. [Prepare *TestFlight* Group](tf-users.md){: target="_blank" }
 1. [Build the *Loop* App](build-yml.md){: target="_blank" }
 
-The pages of instructions listed above give detailed steps on how to build the *Loop* app. If you are building a different app, you can follow the detailed instructions but will need to know the Fork, App Name, Identifiers and in some cases App Group for the App you intend to build. Once you build one app, subsequent apps are much easier to build.
+---
 
-* [Build Other Apps with Browser](other-apps.md){: target="_blank" }
+## After Building: Next Steps
 
-## Install on Phone
+Once your build completes successfully:
 
-Instructions to install on a phone are found at:
+1. **[Install on Phone](phone-install.md){: target="_blank" }** - Use TestFlight to install the app on your iPhone
+2. **[Update/Rebuild](bb-update.md){: target="_blank" }** - Learn how to update your app (much easier than initial build!)
+3. **[Build Other Apps](other-apps.md){: target="_blank" }** - Optional: Build LoopCaregiver, LoopFollow, or other apps using the same setup
 
-* [Install on Phone](phone-install.md){: target="_blank" }
+---
 
-## What if I get stuck?
+## Need Help?
 
-!!! important "How to Ask for Help"
-    First time setup should take several hours, but if you are having trouble:
+!!! question "Stuck? Don't Get Frustrated!"
+    First-time setup involves many steps across different websites. If something isn't working:
 
-    * [Click here to find help](bb-errors.md#help-with-errors){: target="_blank" }.
+    **→ [Get Help from Mentors](bb-errors.md#help-with-errors){: target="_blank" }**
 
-If you want to solve it yourself, try to:
+    Just provide your GitHub repository link and a brief description. Mentors can view your logs and guide you.
 
-* Scroll back in the directions and see if you missed a paragraph or step
-    * Be sure you are copying the exact **names** needed for each step or clicking on the **link** associated with a particular step - many pages look similar
-* Compare your display with the <span>graphics in *LoopDocs*</span>
-    * Is something different or does yours have an error message?
-    * Does the [Error](bb-errors.md){: target="_blank" } message guide you to the problem and solution?
-    * Be aware that *GitHub* sometimes updates displayed names or locations for menu items - search for *GitHub* directions if your display looks different than our documentation
+**Common troubleshooting resources:**
 
-## Errors while Configuring and Building
+* [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
+* [Complete Error Reference](bb-errors.md){: target="_blank" }
+* [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
 
-If you get an error that you cannot figure out, reach out for help before you get frustrated or begin to delete things - let a mentor help you:
+!!! warning "Please DON'T..."
+    * Search Google or ask ChatGPT about your error
+    * Spend hours frustrated
+    * Delete your repository or GitHub account
+    * Remove your app from App Store Connect
 
-* General instructions: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
-* Browser Build instructions:
-    * [Help with Errors](bb-errors.md#help-with-errors){: target="_blank" }
-    * [Most Common Mistakes](bb-errors.md#most-common-mistakes){: target="_blank" }
-    * With Browser Build, post your *GitHub* LoopWorkspace link and a brief description of your problem
+    **→ Ask a mentor instead!** They can quickly diagnose issues from your repository link.
 
-* [Errors with Browser](bb-errors.md){: target="_blank" }
+---
 
-## Update the App
+## Additional Topics
 
-Instructions to make updates are found at:
+### Automatic Updates
 
-* [Update with Browser](bb-update.md){: target="_blank" }
+!!! success "Set It and Forget It"
+    With Loop 3.4+, your app automatically rebuilds monthly (after initial setup). You just need to:
 
-There is also a helpful video for this process. Once again, this was prepared for an earlier version 3.2.3 or older. With version 3.4.1 and newer, the update and build is automatic if your *Apple* Developer account is active, agreements are signed and certificates are valid:
+    * Keep your Apple Developer account active
+    * Install updates from TestFlight when ready
+    * **Note:** Starting May 2025, you may need to [manually trigger builds](automatic.md#manual-action-for-automatic-build){: target="_blank" } every 60 days
 
-* [How to Update and Rebuild DIY Loop with a Web Browser](https://www.youtube.com/watch?v=0ipTsiqbbrQ)
+    Learn more: [Automatic Update & Build](automatic.md){: target="_blank" }
 
-> With `Loop 3.6.0`, certificates are automatically created and renewed. You no longer need to renew certificates as a separate step.
+### Customization
 
-## Other Topics
+Want to customize your Loop app? Both methods are supported:
 
-### Building the Development Version of the App
+* [Customize using Browser](custom-browser.md){: target="_blank" } - Configuration changes
+* [Custom Edits with Browser](edit-browser.md){: target="_blank" } - Code modifications
 
-For experienced and/or advanced users who want to build the development version of the app, there is additional information at the link below. If you have not built using the browser build method before, it is suggested you first build the released version. Once you have a successful build, then follow the steps for the development version. Building the app is independent of installing the app on your phone from *TestFlight*.
+### Development Version
+
+For advanced users who want cutting-edge features before official release:
 
 * [Build Development Version](build-dev-browser.md){: target="_blank" }
 
-### Mac vs Browser
+!!! tip "Build Stable First"
+    We recommend building the stable release version first. Once successful, you can switch to the development version.
 
-These considerations were prepared when most people were using a Mac computer to build the *Loop* app.
+### Comparison: Browser vs Mac Build
 
-* *Mac* computer is not required to build or install the app
-    * Anything with a browser works to build the *Loop* app: PC, Tablet, Mac or iPad
-    * The *TestFlight* app is used to install the *Loop* app on your iPhone
-* Compatible version of *Xcode* is provided by *GitHub*
-    * The time required for the initial setup to build with a browser may take less time than one *macOS* and *Xcode* version update for those using [Build with *Mac*](../build/overview.md){: target="_blank" }
-* Automatic Updates are loaded into *TestFlight*
-    * With version 3.4 and newer, builds are automatically prepared at least once a month
-    * You choose when to install the new app from TestFlight onto your phone
-    * **WARNING:** starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually
-* Manual Updates are easy
-    * Starting an update takes a few minutes of your time; it can be done from your phone; the rest is automatic and is done in about an hour
-* After the *GitHub* Build starts, your app is ready to install on your *iPhone* in about an hour
-* The app is delivered to your phone via *TestFlight*
-    * The app is considered "Beta" by  *Apple* and expires after 90 days
-    * <span translate="no">Loop 3.4</span>&nbsp; and newer versions provide automatic build as the default
-* Customization methods are documented at [Customize with Browser](custom-browser.md){: target="_blank" }
+| Feature | Browser Build | Mac Build |
+|---------|--------------|-----------|
+| **Computer Required** | Any device with browser | Mac with recent macOS |
+| **Xcode Required** | No (GitHub provides) | Yes (must update regularly) |
+| **Initial Setup Time** | 2-4 hours over several days | 1-2 hours (if Mac is ready) |
+| **Monthly Updates** | Automatic | Manual via Xcode |
+| **Build Time** | ~1 hour (in cloud) | ~30 minutes (local) |
+| **App Expiration** | 90 days (TestFlight) | 1 year |
+| **Customization** | Supported | Supported |
+
+Both methods produce the identical Loop app. Choose based on your available hardware and preferences.
 
