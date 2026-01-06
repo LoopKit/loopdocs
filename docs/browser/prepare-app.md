@@ -1,7 +1,7 @@
 !!! abstract "Progress: Step 5 of 7"
-    **📍 You are here:** Prepare App
-    **⏱️ Time:** 30-45 minutes
-    **✅ Goal:** Configure identifiers at Apple and create your Loop app
+    **📍 You are here:** Prepare App<br>
+    **⏱️ Time:** 30-45 minutes<br>
+    **✅ Goal:** Configure identifiers at Apple and create your Loop app<br>
     **📋 Next:** [Prepare TestFlight Group](tf-users.md)
 
 ## Prepare the App

@@ -1,7 +1,7 @@
 !!! abstract "Progress: Step 4 of 7"
-    **📍 You are here:** Prepare Identifiers
-    **⏱️ Time:** 15-30 minutes
-    **✅ Goal:** Validate secrets and create Apple identifiers
+    **📍 You are here:** Prepare Identifiers<br>
+    **⏱️ Time:** 15-30 minutes<br>
+    **✅ Goal:** Validate secrets and create Apple identifiers<br>
     **📋 Next:** [Prepare App](prepare-app.md)
 
 ## First Use of Actions Tab

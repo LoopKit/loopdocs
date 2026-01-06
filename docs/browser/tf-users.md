@@ -1,7 +1,7 @@
 !!! abstract "Progress: Step 6 of 7"
-    **📍 You are here:** Prepare TestFlight Group
-    **⏱️ Time:** 10-15 minutes
-    **✅ Goal:** Set up who can install your Loop app via TestFlight
+    **📍 You are here:** Prepare TestFlight Group<br>
+    **⏱️ Time:** 10-15 minutes<br>
+    **✅ Goal:** Set up who can install your Loop app via TestFlight<br>
     **📋 Next:** [Build the Loop App](build-yml.md)
 
 ## *TestFlight* Overview

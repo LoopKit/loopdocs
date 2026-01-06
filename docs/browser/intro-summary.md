@@ -1,6 +1,6 @@
 !!! abstract "Progress: Step 1 of 7"
-    **📍 You are here:** Introduction and Summary
-    **⏱️ Time:** 15-30 minutes to understand the process
+    **📍 You are here:** Introduction and Summary<br>
+    **⏱️ Time:** 15-30 minutes to understand the process<br>
     **📋 Next:** [Collect Secrets](secrets.md)
 
 ## Summary of Steps

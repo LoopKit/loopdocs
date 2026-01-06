@@ -1,7 +1,7 @@
 !!! abstract "Progress: Step 7 of 7"
-    **📍 You are here:** Build the Loop App
-    **⏱️ Time:** 20-30 minutes (mostly automated)
-    **✅ Goal:** Trigger the build and wait for completion
+    **📍 You are here:** Build the Loop App<br>
+    **⏱️ Time:** 20-30 minutes (mostly automated)<br>
+    **✅ Goal:** Trigger the build and wait for completion<br>
     **📋 Next:** [Install on Phone](phone-install.md)
 
 ## Build the *Loop* App

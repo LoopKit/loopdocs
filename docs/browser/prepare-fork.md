@@ -1,8 +1,8 @@
 !!! abstract "Progress: Step 3 of 7"
-    **📍 You are here:** Prepare Fork
-    **⏱️ Time:** 30-60 minutes
-    **✅ Goal:** Create your copy of LoopWorkspace and add secrets
-    **📋 Next:** [Prepare Identifiers](identifiers.md)
+    **📍 You are here:** Prepare Fork<br>
+    **⏱️ Time:** 30-60 minutes<br>
+    **✅ Goal:** Create your copy of LoopWorkspace and add secrets<br>
+    **📋 Next:** [Prepare Identifiers](identifiers.md)<br>
 
 ## Fork `LoopWorkspace`
 

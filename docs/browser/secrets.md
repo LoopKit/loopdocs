@@ -1,7 +1,7 @@
 !!! abstract "Progress: Step 2 of 7"
-    **📍 You are here:** Collect Secrets
-    **⏱️ Time:** 1-2 hours
-    **✅ Goal:** Gather 6 secrets needed for building
+    **📍 You are here:** Collect Secrets<br>
+    **⏱️ Time:** 1-2 hours<br>
+    **✅ Goal:** Gather 6 secrets needed for building<br>
     **📋 Next:** [Prepare Fork](prepare-fork.md)
 
 ## Collect and Save Secrets
