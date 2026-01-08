@@ -15,9 +15,9 @@ The instructions provided for building with a browser include settings to automa
 !!! warning "Browser Build Disabled"
     We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace even though the repository is not stale.
 
-    * We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)
-    * The redesigned build action for v3.8.2 should alleviate this
-    * We also plan to reach out to GitHub after people have transitioned to the v3.8.2 build schedule
+    * The automatic build actions should occur every Sunday
+        * The automatic build using the same code works for all OS-AID apps except for *Loop*
+        * See this [GitHub Discussion topic for details](https://github.com/orgs/community/discussions/181236)) 
 
 ### What Manual Action is Required?
 

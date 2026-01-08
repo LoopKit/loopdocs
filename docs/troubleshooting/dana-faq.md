@@ -110,7 +110,7 @@ But when you use a CGM like [NightScout remote CGM](../loop-3/add-cgm.md#nightsc
 
     * To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
     Enter a message and press the green "Commit & Push"-button.
-    By pressing this button, GitHub will automatically make a new browser build for you and push it to TestFlight
+    By pressing this button, GitHub will automatically make a new browser build for you and push it to TestFlight (with the caveat that you might need to manually start the build)
     ![Github web ide example](./img/background-sound-web-ide.png)
 
 > If you have older code, before main v3.8.1 or dev v3.9.1, open the box above for instructions on a required modification.

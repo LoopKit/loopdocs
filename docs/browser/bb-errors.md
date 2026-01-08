@@ -156,9 +156,9 @@ Ignore the warnings - this does not affect the build.
 
 ### Manual Enable for Build Action May be Required
 
-The automatic build actions continue to happen on schedule, but starting May 2025, you may find your build action disabled by *GitHub*. (This might happen every 60 days, but it might happen sooner.) In that case, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
 
-If necessary, enable the build action at your repository as shown in the graphic below and then launch a manual build.
+For *Loop*, if your build action is being disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build.
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 

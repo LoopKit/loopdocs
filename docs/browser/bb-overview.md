@@ -114,8 +114,8 @@ Once your build completes successfully:
 
 ### Automatic Updates
 
-!!! success "Set It and Forget It"
-    With Loop 3.4+, your app automatically rebuilds monthly (after initial setup). You just need to:
+!!! success "Check Status of Build Action Monthly"
+    The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*, and even for *Loop*, some people are getting automatic builds.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
 
     * Keep your Apple Developer account active
     * Install updates from TestFlight when ready

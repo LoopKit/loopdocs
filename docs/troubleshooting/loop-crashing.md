@@ -19,9 +19,7 @@ Your Loop app has an expiration date. The expiration date will depend on the bui
 
 ### Browser Build
 
-> Update to version 3.4 as soon as possible. The builds will then be automatic. So all you will need to do in install the latest build from *TestFlight* on your phone.
-
-If you are running an older version, you do not get prior warning that the app is about to expire, although you can look in the *TestFlight* app and it will tell you. An in-app warning is supplied with version 3.4.
+> With *Loop* 3.4 and newer, you will get an in-app notification when your build is about to expire. For many people, GitHub is disabling the automatic build once a month feature for Loop. Be sure to check once a month and kick off the build action if needed to make sure you always have a valid build in TestFlight.
 
 Please follow these steps to ensure you can build the app again: [How to Update or Rebuild](../browser/bb-update.md#how-to-update-or-rebuild){: target="_blank" }.
 
