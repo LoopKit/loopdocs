@@ -29,7 +29,12 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
     * All phones that support *iOS* 17, also support 18 and 26
 
 * The developers maintain support for the current and one-level earlier *iOS*
- 
+
+!!! Danger "Update Older Phones!"
+    Some CGM vendors are limiting which iOS versions, and therefore which phones, are supported by their apps.
+
+    The Compatible Device list in LoopDocs is updated to reflect that. Devices that cannot be updated to the latest iOS version are treated as incompatible.
+
 ### Compatible Device
 
 All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. 
@@ -59,31 +64,18 @@ These phones are compatible with *iOS* 17, 18 and 26
 - iPhone SE (3rd generation or later model; 2022 first release)
 - iPhone SE (2nd generation; 2020 first release)
 
+### Not Supported
+
+**The [Older Devices](#older-devices) listed below are no longer supported by some CGM vendors and should be considered incompatible**
+
+* **Please update your phone hardware and iOS as soon as possible**
+
 ### Older Devices
 
-If you are currently using an *iOS* 16 device, plan to replace it soon. The next version of the *Loop* app will require *iOS* 17 or newer.
-
-These phones are limited to *iOS* 16.
+These phones are limited to *iOS* 16. No longer supported by *Dexcom*. Update ASAP.
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants
-
-### Not Supported
-
-These phones are limited to *iOS* 15 and are no longer supported by the developers.
-
-**Warning**: several features of the *Loop* app do not work with *iOS* 15 devices:
-
-* The Widget does not display properly
-* The Mixpanel Service is not available
-* Some screens show up in different languages than the one selected for v3.8.0 and newer
-
-Other features of the *Loop* app do work, but please find a newer phone soon.
-
-- iPhone 7, all variants
-- iPhone 6s or 6s Plus, note the `s`
-- iPhone SE (1st generation; 2016 first release)
-- iPod Touch, 7th generation
 
 ## Find Your *iOS*
 
@@ -132,8 +124,14 @@ Please read: [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#t
 
 **Please be proactive - install updates as soon as the all-clear is given for using the *Loop* app with that *iOS* update.**
 
-If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, consider using [Build with Browser](../browser/bb-overview.md).
+If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, switch to using [Build with Browser](../browser/bb-overview.md).
 
+!!! Important "Update While Awake and Aware"
+    The suggestion is to turn off automatic install of updates so you can be awake and aware when you do an iOS update. Otherwise, it happens in the middle of the night.
+
+    For major updates, for example iOS 18 to iOS 26, we suggest you hold off until the initial bugs get worked out. In other words when iOS 26.1 was released, the OK was given for everyone to update to iOS 26. Often, that includes an update to the Loop app to accommodate changes in the phone operating system.
+
+    For minor updates, for example iOS 26.1 to iOS 26.2, update at your earliest convenience.
 
 ### Why Turn off Automatic Updates?
 
