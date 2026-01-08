@@ -95,6 +95,10 @@ The [Automatic Update & Build](automatic.md){: target="_blank" } features are ap
 
 Most people should keep `main` as default and make a considered decision when to launch a manual build of the `dev` branch. At that time, it will automatically update to the latest `dev` commit unless you have modified your settings with special `Variables`: [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" }.
 
+> The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
+
+> See [Manual Enable for Build Action](bb-errors.md#manual-enable-for-build-action-may-be-required){: target="_blank" }
+
 ## Change Default `Branch`
 
 > **We recommend most users leave their default branch as `main`.**

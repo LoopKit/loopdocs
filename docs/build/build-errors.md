@@ -406,13 +406,6 @@ This is very similar to the steps for the WatchApp Entitlements Error but you ne
 ![img/device-support-files.jpg](img/device-support-files.jpg){width="750"}
 {align="center"}
 
-
-### No Such Module 'LoopKit' or Similar Message
-
-**Error Message:** If you see a **Cartfile failure** and several other red errors (in particular saying there is "no such module 'LoopKit'").
-
-**Solution**: Read the [Carthage Error](build-errors.md#carthage-error) section above.
-
 ### Developer License Update (PLA Update)
 
 **Error message:** `The Apple Developer Program License Agreement has been updated,  In order to access certain membership resources, you must accept the latest license agreement`.  

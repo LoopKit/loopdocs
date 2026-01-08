@@ -1,11 +1,29 @@
+!!! abstract "Progress: Step 3 of 7"
+    **📍 You are here:** Prepare Fork<br>
+    **⏱️ Time:** 30-60 minutes<br>
+    **✅ Goal:** Create your copy of LoopWorkspace and add secrets<br>
+    **📋 Next:** [Prepare Identifiers](identifiers.md)<br>
+
 ## Fork `LoopWorkspace`
 
-???+ tip "Are you a Caregiver? Are you planning to build more than one app? (Click to close/open)"
-    Did you skip the optional section to [Create a Free *GitHub* Organization](secrets.md#create-a-free-github-organization)?
+!!! question "Important Decision: Personal Account or Organization?"
+    **Before you fork**, decide whether to use a GitHub organization. This affects where you store your secrets.
 
-    If you plan to build more that one app and use your personal account, you must add the 6 <code>Secrets</code> to each repository for each app. It is not hard but it can get tiresome.
+    **Use a GitHub Organization if you:**
 
-    If you make use of the organization option, you only enter the 6 <code>Secrets</code> one time for all your repositories. This is strongly recommended, but not required, for all Browser Builders.
+    * ✓ Plan to build multiple apps (Loop + LoopFollow/LoopCaregiver)
+    * ✓ Want to enter secrets once for all apps
+    * ✓ Might try customized versions or development builds
+
+    **Use Personal Account if you:**
+
+    * Only building Loop (no other apps planned)
+    * Prefer simpler setup (fewer concepts to learn)
+
+    **📖 Haven't decided?** Review [Create a Free GitHub Organization](secrets.md#create-a-free-github-organization) first, then come back here.
+
+???+ tip "Changing Your Mind Later"
+    You can [switch to an organization later](#switch-to-a-github-organization) if needed, but it's easier to decide now.
 
 ???+ abstract "Section Summary (click to open/close)"
     Fork [https://github.com/LoopKit/LoopWorkspace](https://github.com/LoopKit/LoopWorkspace) into your account.
@@ -225,9 +243,17 @@ This graphic shows how to add the `ENABLE_NUKE_CERTS` to an organization. Be sur
 ![enable nuke certs](img/gh-nuke-certs.png){width="700"}
 {align="center"}
 
+---
+
 ## Next Step
 
-The next step is to [Validate Secrets and Add Identifiers](identifiers.md).
+Secrets are configured! Now let's validate them:
+
+**→ [Step 4: Prepare Identifiers](identifiers.md)**
+
+---
+
+**Navigation:** [← Back: Collect Secrets](secrets.md) | [Next: Prepare Identifiers →](identifiers.md)
 
 ## Switch to a *GitHub* Organization
 

@@ -34,13 +34,13 @@
 
     Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild):
 
-    * If currently using verion 3.4.0 or newer, builds are automatic but you still need to do some actions:
+    * If currently using verion 3.4.0 or newer, builds are supposed to be automatic, but are being disabled by GitHub ([for Loop, not other OS-AID](https://github.com/orgs/community/discussions/181236)), so you should check the status monthly
+    * In addition to that monthly check, expect to do these actions:
         * Your *Apple Developer* account must be active
         * All agreements must be signed for your *Apple Developer* account
         * Once a year, you need to update renew certificates, but this is automatic with `Loop 3.6.0` and newer versions
 
     If you are running `Loop-dev`, be sure to review these instructions but modify for the branch you are using: refer to [Build Loop dev with Browser](build-dev-browser.md)
-
 
 ???+ question "FAQs (click to open/close)"
     - **"What is an update?"** Anytime you want to change versions or if your *TestFlight* build is about to expire, follow the instructions on this page.
@@ -460,15 +460,6 @@ Select the build to which you wish to add testing notes. When you tap on that ic
 Click inside the box under **Test Details**. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>< iOS Builds</code> at upper left.
 
 In this example, the branch and commit number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".
-
-!!! tip "Commit Number"
-    If your build includes customizations, your commit number will not match what the developer expects to see if you need to ask for help.
-
-    Use this section [Customization and SHA-1](edit-browser.md#customization-and-sha-1) to determine the SHA-1 before customization.
-
-## No Longer Needed
-
-This section contains the old directions to manually renew certificates. It is no longer needed with the automatic certificate renewal method found in `Loop 3.6.0` and newer versions.
 
 ## Renew Certificate
 
