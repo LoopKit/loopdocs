@@ -4770,9 +4770,11 @@
 <p class="admonition-title">Browser Build Disabled</p>
 <p>We do not know why, but <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> is disabling the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Action for LoopWorkspace even though the <abbr title="contains project files and each file's revision history">repository</abbr> is not stale.</p>
 <ul>
-<li>We think it is associated with running too many builds at a busy time that requested too many runners (virtual computers)</li>
-<li>The redesigned build action for v3.8.2 should alleviate this</li>
-<li>We also plan to reach out to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> after people have transitioned to the v3.8.2 build schedule</li>
+<li>The automatic build actions should occur every Sunday<ul>
+<li>The automatic build using the same code works for all OS-AID apps except for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></li>
+<li>See this <a href="https://github.com/orgs/community/discussions/181236"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Discussion topic for details</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <h3 id="what-manual-action-is-required">What Manual Action is Required?<a class="headerlink" href="#what-manual-action-is-required" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -5140,7 +5142,7 @@ In an attempt to minimize build failures due to resource limitations, the minute
 </ul>
 </li>
 <li>
-<p>If you are done with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can delete the whole <abbr title="contains project files and each file's revision history">repository</abbr>; but you should be sure about this because you'll need to start over with <a href="../bb-overview/#configure-to-use-browser">Configure to use Browser</a> to restore ability to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
+<p>If you are done with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, you can delete the whole <abbr title="contains project files and each file's revision history">repository</abbr>; but you should be sure about this because you'll need to start over with <a href="../bb-overview/#step-by-step-build-process">Configure to use Browser</a> to restore ability to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>.</p>
 </li>
 </ul>
 

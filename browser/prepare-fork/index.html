@@ -4646,12 +4646,33 @@
 
   <h1>Prepare Fork</h1>
 
+<div class="admonition abstract">
+<p class="admonition-title">Progress: Step 3 of 7</p>
+<p><strong>📍 You are here:</strong> Prepare Fork<br>
+<strong>⏱️ Time:</strong> 30-60 minutes<br>
+<strong>✅ Goal:</strong> Create your copy of LoopWorkspace and add secrets<br>
+<strong>📋 Next:</strong> <a href="../identifiers/">Prepare <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a><br></p>
+</div>
 <h2 id="fork-loopworkspace">Fork <code>LoopWorkspace</code><a class="headerlink" href="#fork-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Important Decision: Personal Account or Organization?</p>
+<p><strong>Before you <abbr title="a copy of code in a github repository other than the original">fork</abbr></strong>, decide whether to use a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> organization. This affects where you store your secrets.</p>
+<p><strong>Use a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization if you:</strong></p>
+<ul>
+<li>✓ Plan to build multiple apps (<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> + <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>/<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>)</li>
+<li>✓ Want to enter secrets once for all apps</li>
+<li>✓ Might try customized versions or development builds</li>
+</ul>
+<p><strong>Use Personal Account if you:</strong></p>
+<ul>
+<li>Only building <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (no other apps planned)</li>
+<li>Prefer simpler setup (fewer concepts to learn)</li>
+</ul>
+<p><strong>📖 Haven't decided?</strong> Review <a href="../secrets/#create-a-free-github-organization">Create a Free <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization</a> first, then come back here.</p>
+</div>
 <details class="tip" open="open">
-<summary>Are you a Caregiver? Are you planning to build more than one app? (Click to close/open)</summary>
-<p>Did you skip the optional section to <a href="../secrets/#create-a-free-github-organization">Create a Free <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Organization</a>?</p>
-<p>If you plan to build more that one app and use your personal account, you must add the 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> to each <abbr title="contains project files and each file's revision history">repository</abbr> for each app. It is not hard but it can get tiresome.</p>
-<p>If you make use of the organization option, you only enter the 6 <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> one time for all your repositories. This is strongly recommended, but not required, for all Browser Builders.</p>
+<summary>Changing Your Mind Later</summary>
+<p>You can <a href="#switch-to-a-github-organization">switch to an organization later</a> if needed, but it's easier to decide now.</p>
 </details>
 <details class="abstract" open="open">
 <summary>Section Summary (click to open/close)</summary>
@@ -4868,8 +4889,12 @@
 <p align="center"><img alt="steps to add a variable" src="../img/add-variable.png" width="600" /></p>
 <p>This graphic shows how to add the <code>ENABLE_NUKE_CERTS</code> to an organization. Be sure that Repository access is set to <code>Public repositories</code>. When adding this to a <abbr title="contains project files and each file's revision history">repository</abbr>, that option is not shown.</p>
 <p align="center"><img alt="enable nuke certs" src="../img/gh-nuke-certs.png" width="700" /></p>
+<hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The next step is to <a href="../identifiers/">Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a>.</p>
+<p><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> are configured! Now let's validate them:</p>
+<p><strong>→ <a href="../identifiers/">Step 4: Prepare <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></strong></p>
+<hr />
+<p><strong>Navigation:</strong> <a href="../secrets/">← Back: Collect <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></a> | <a href="../identifiers/">Next: Prepare <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> →</a></p>
 <h2 id="switch-to-a-github-organization">Switch to a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Organization<a class="headerlink" href="#switch-to-a-github-organization" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>If you are someone who already has a lot of forks in your personal account and want to switch to using a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization. Here's how:</p>
 <ol>

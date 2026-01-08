@@ -4600,18 +4600,46 @@
 
   <h1>Prepare App</h1>
 
+<div class="admonition abstract">
+<p class="admonition-title">Progress: Step 5 of 7</p>
+<p><strong>📍 You are here:</strong> Prepare App<br>
+<strong>⏱️ Time:</strong> 30-45 minutes<br>
+<strong>✅ Goal:</strong> Configure identifiers at Apple and create your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app<br>
+<strong>📋 Next:</strong> <a href="../tf-users/">Prepare <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</a></p>
+</div>
 <h2 id="prepare-the-app">Prepare the App<a class="headerlink" href="#prepare-the-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>After creating the identifiers, you will need to</p>
+<p>This page involves working with two different Apple websites. Pay close attention to which site you're on:</p>
+<div class="admonition info">
+<p class="admonition-title">🍎 Two Apple Sites - Don't Confuse Them!</p>
+<p><strong>Site 1: Apple Developer</strong> (developer.apple.com)</p>
+<ul>
+<li>🔧 <strong>Purpose:</strong> Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and App Groups</li>
+<li>📍 <strong>You'll do:</strong> Link identifiers to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr></li>
+<li>🎨 <strong>Look:</strong> Developer-focused, technical interface</li>
+</ul>
+<hr />
+<p><strong>Site 2: App Store Connect</strong> (appstoreconnect.apple.com)</p>
+<ul>
+<li>📱 <strong>Purpose:</strong> Manage your app listing and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li>📍 <strong>You'll do:</strong> Create the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app entry</li>
+<li>🎨 <strong>Look:</strong> App management interface and manage your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> group</li>
+</ul>
+</div>
+<p>After creating the identifiers, you will:</p>
 <ol>
-<li><a href="#configure-identifiers-for-loop" target="_blank">Configure</a> them to associate the correct <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with specific identifiers </li>
-<li><a href="#create-loop-app-in-app-store-connect" target="_blank">Create</a> the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App.</li>
+<li>✅ <a href="#configure-identifiers-for-loop">Configure identifiers</a> at <strong>Apple Developer</strong></li>
+<li>✅ <a href="#create-loop-app-in-app-store-connect">Create the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app</a> at <strong>App Store Connect</strong></li>
 </ol>
-<p>Some people get confused on this page. Many of the links look similar but are actually different pages at <em>Apple</em>.</p>
 <div class="admonition important">
 <p class="admonition-title">Ask For Help Early</p>
-<p>Please if you are having trouble - <a href="../bb-errors/#help-with-errors" target="_blank">ask for help early by clicking on this link</a>.</p>
+<p>This page has the most steps. If you're unsure which website you're on or get confused - <a href="../bb-errors/#help-with-errors" target="_blank">ask for help early</a>!</p>
 </div>
+<hr />
 <h2 id="configure-identifiers-for-loop">Configure <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#configure-identifiers-for-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">📍 You're now at: <strong>Apple Developer</strong> (developer.apple.com)</p>
+<p>This section works with technical identifiers. You'll link 4 identifiers to your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>.</p>
+</div>
 <details class="tip" open="open">
 <summary>Background Information (Click to open/close)</summary>
 <ul>
@@ -4892,7 +4920,12 @@
 <li>If you miss an identifier, the <code>Create Certificates</code> step will succeed but <code>Build Loop</code> will fail.</li>
 <li>If you do not <a href="#add-time-sensitive-notifications">enable the <code>Time Sensitive Notifications</code></a> for the <code>Loop</code> Identifier, the <code>Create Certificates</code> step will succeed but <code>Build Loop</code> will fail.</li>
 </ul>
+<hr />
 <h2 id="digital-service-act-compliance">Digital Service Act Compliance<a class="headerlink" href="#digital-service-act-compliance" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">📍 You're now at: <strong>App Store Connect</strong> (appstoreconnect.apple.com)</p>
+<p>This quick step confirms you're building for personal use, not selling apps.</p>
+</div>
 <p>In order to create an app you need to indicate whether you are a trader or a non-trader. You are a non-trader unless you use the same Developer ID to submit apps for sale.</p>
 <p>Even if the graphic below does not match what you see exactly, it should assist in guiding you through the steps.</p>
 <p>Open this link: <a href="https://appstoreconnect.apple.com/apps"><code>App Store Connect / Apps</code></a>; log in if needed.</p>
@@ -4914,10 +4947,15 @@
 </ol>
 <p align="center"><img alt="app store connect digital service act compliance steps" src="../img/not-a-trader.svg" width="800" /></p>
 <p>You do not need to add a bank account or fill out tax forms if you are only using the App Store to get your own app into <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>. You only need to have a paid account with a valid license agreement and have completed this compliance form. Ignore other requests from Apple.</p>
+<hr />
 <h2 id="create-loop-app-in-app-store-connect">Create <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> App in App Store Connect<a class="headerlink" href="#create-loop-app-in-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">📍 Still at: <strong>App Store Connect</strong> (appstoreconnect.apple.com)</p>
+<p>Now you'll create the actual <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app entry for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> distribution.</p>
+</div>
 <details class="abstract">
 <summary>Section Summary (click to open/close)</summary>
-<p>If you have created a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in App Store Connect before, make sure you <a href="#remove-apple-vision-pro">Remove Apple Vision Pro</a> and then skip ahead to <a href="../certs/#create-certificates">Create Certificates</a>.</p>
+<p>If you have created a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in App Store Connect before, make sure you <a href="#remove-apple-vision-pro">Remove Apple Vision Pro</a> and then skip ahead to <a href="../tf-users/">Prepare <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</a>.</p>
 <ol>
 <li>Click on the link <a href="https://appstoreconnect.apple.com/apps">apps list</a> to open App Store Connect and click the blue "plus" icon to create a New App.<ul>
 <li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>".</li>
@@ -5036,8 +5074,12 @@
 <p align="center"><img alt="find removed apps" src="../img/restore-removed-02.png" width="800" /></p>
 </li>
 </ul>
+<hr />
 <h2 id="next-step">Next Step<a class="headerlink" href="#next-step" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The next step is to configure your <a href="../tf-users/"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</a> for this app.</p>
+<p>App created at App Store Connect! Now set up <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> access:</p>
+<p><strong>→ <a href="../tf-users/">Step 6: Prepare <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</a></strong></p>
+<hr />
+<p><strong>Navigation:</strong> <a href="../identifiers/">← Back: Prepare <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a> | <a href="../tf-users/">Next: <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group →</a></p>
 
 
 

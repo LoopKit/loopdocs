@@ -1594,17 +1594,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#no-longer-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        No Longer Needed
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#renew-certificate" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4841,17 +4830,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#no-longer-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        No Longer Needed
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#renew-certificate" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4934,7 +4912,8 @@
 <p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when you build with a browser - this is <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> requirement.</strong></p>
 <p>Most users will start at <a href="#how-to-update-or-rebuild">How to Update or Rebuild</a>:</p>
 <ul>
-<li>If currently using verion 3.4.0 or newer, builds are automatic but you still need to do some actions:<ul>
+<li>If currently using verion 3.4.0 or newer, builds are supposed to be automatic, but are being disabled by <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (<a href="https://github.com/orgs/community/discussions/181236">for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, not other OS-AID</a>), so you should check the status monthly</li>
+<li>In addition to that monthly check, expect to do these actions:<ul>
 <li>Your <em>Apple Developer</em> account must be active</li>
 <li>All agreements must be signed for your <em>Apple Developer</em> account</li>
 <li>Once a year, you need to update renew certificates, but this is automatic with <code>Loop 3.6.0</code> and newer versions</li>
@@ -5343,13 +5322,6 @@
 <p align="center"><img alt="add details to your build" src="../img/testflight-test-details.png" width="700" /></p>
 <p>Click inside the box under <strong>Test Details</strong>. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>&lt; <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Builds</code> at upper left.</p>
 <p>In this example, the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".</p>
-<div class="admonition tip">
-<p class="admonition-title">Commit Number</p>
-<p>If your build includes customizations, your <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number will not match what the developer expects to see if you need to ask for help.</p>
-<p>Use this section <a href="../edit-browser/#customization-and-sha-1">Customization and <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr></a> to determine the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> before customization.</p>
-</div>
-<h2 id="no-longer-needed">No Longer Needed<a class="headerlink" href="#no-longer-needed" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section contains the old directions to manually renew certificates. It is no longer needed with the automatic certificate renewal method found in <code>Loop 3.6.0</code> and newer versions.</p>
 <h2 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Manual certificate renewal is not longer required if you added the <code>Variable</code> <code>ENABLE_NUKE_CERTS</code>. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
 <p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> are not affected when a certificate expires or is revoked.</strong></p>
