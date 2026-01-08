@@ -143,10 +143,10 @@ For advanced users who want cutting-edge features before official release:
 
 | Feature | Browser Build | Mac Build |
 |---------|--------------|-----------|
-| **Computer Required** | Any device with browser | Mac with recent macOS |
+| **Device Required** | Any device with browser | Mac with recent macOS |
 | **Xcode Required** | No (GitHub provides) | Yes (must update regularly) |
 | **Initial Setup Time** | 2-4 hours over several days | 1-2 hours (if Mac is ready) |
-| **Monthly Updates** | Automatic | Manual via Xcode |
+| **Monthly Updates** | Automatic to TestFlight<br>[Manual Actions](automatic.md#manual-action-for-automatic-build){: target="_blank"}| Manual via Xcode |
 | **Build Time** | ~1 hour (in cloud) | ~30 minutes (local) |
 | **App Expiration** | 90 days (TestFlight) | 1 year |
 | **Customization** | Supported | Supported |
