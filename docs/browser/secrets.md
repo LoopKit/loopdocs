@@ -76,7 +76,7 @@ You need to save your information digitally, so you can copy and paste. The info
 
 This section provides detailed instructions for the four <code>Secrets</code> associated with your *Apple Developer* ID.
 
-|Name|Description|
+|<div style="width:150px"></div>Name|Description|
 |---------|---------|
 |<code>TEAMID</code>|This 10-character identifier is associated with your *Apple Developer* ID and never changes|
 |<code>FASTLANE_ISSUER_ID</code>|The issuer ID is associated with your *Apple Developer* ID and never changes|

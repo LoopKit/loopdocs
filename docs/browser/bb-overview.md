@@ -55,7 +55,7 @@ Follow the detailed instructions below with screenshots, explanations, and help 
 If you're comfortable with GitHub and Apple Developer portals, use the condensed version:
 
 * **Documentation:** [Using GitHub Actions + FastLane to deploy to TestFlight](https://github.com/LoopKit/LoopWorkspace/blob/main/fastlane/testflight.md){: target="_blank" }
-* **Video Guide:** [How to Build Loop With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8) (shows version 3.2.3; some steps simplified in 3.4.1+)
+* **Video Guide:** [How to Build Loop With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8) (shows version 3.2.3; some steps simplified in 3.4.1+, others added when an *Apple* interface was changed))
 
 ---
 
