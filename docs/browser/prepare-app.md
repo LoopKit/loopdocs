@@ -11,7 +11,7 @@ This page involves working with two different Apple websites. Pay close attentio
 !!! info "🍎 Two Apple Sites - Don't Confuse Them!"
     **Site 1: Apple Developer** (developer.apple.com)
 
-    * 🔧 **Purpose:** Configure technical identifiers and app groups
+    * 🔧 **Purpose:** Configure Identifiers and App Groups
     * 📍 **You'll do:** Link identifiers to Loop App Group
     * 🎨 **Look:** Developer-focused, technical interface
 
@@ -21,7 +21,7 @@ This page involves working with two different Apple websites. Pay close attentio
 
     * 📱 **Purpose:** Manage your app listing and TestFlight
     * 📍 **You'll do:** Create the Loop app entry
-    * 🎨 **Look:** App management interface
+    * 🎨 **Look:** App management interface and manage your TestFlight group
 
 After creating the identifiers, you will:
 

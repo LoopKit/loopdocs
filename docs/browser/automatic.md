@@ -17,7 +17,7 @@ The instructions provided for building with a browser include settings to automa
 
     * The automatic build actions should occur every Sunday
         * The automatic build using the same code works for all OS-AID apps except for *Loop*
-        * See this [GitHub Discussion topic for details](https://github.com/orgs/community/discussions/181236)) 
+        * See this [GitHub Discussion topic for details](https://github.com/orgs/community/discussions/181236)
 
 ### What Manual Action is Required?
 

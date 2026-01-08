@@ -158,7 +158,7 @@ Ignore the warnings - this does not affect the build.
 
 The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
 
-For *Loop*, if your build action is being disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build.
+If your build action is being disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build.
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
