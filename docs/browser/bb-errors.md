@@ -332,6 +332,17 @@ If you are new builder who gets an error at `Add Identifiers`, please [ask a men
 
 ## Action: `Create Certificates` Errors
 
+The modern version of Browser Build creates your certificates automatically when you run the build action.
+
+The first time you run the build action, there might be a certificate error if you did not configure your secrets or Identifiers correctly.
+
+Subsequent times:
+
+* You must have your *Apple* Developer license up to date with all agreements signed
+* After a year, you must have the [`ENABLE_NUKE_CERTS` variable](prepare-fork.md#add-variable){: target="_blank" } set to true for automatic renewal - make sure to set that up now
+
+and 
+
 > Reminder - If it is not obvious to you what your error is, please [ask a mentor for help](#where-to-get-help-with-browser-build)
 
 > * you might get to the answer sooner
@@ -361,7 +372,7 @@ If that phrase is found, then:
 * You probably do not have the correct `TEAMID` entered in your `Secrets`
 * The rest of these instructions assume:
     * You have already created a *Loop* App in the *App Store* with that incorrect `TEAMID`
-    * This is true if you completed the steps after running Action: `Add Identifiers` and before Action: `Create Certificates`
+    * This is true if you completed the steps after running Action: `Add Identifiers` and before Action: `Create Certificates` or `Build Loop`
 
 Click on this link to [Delete Identifiers](#delete-identifiers).
 
@@ -412,7 +423,9 @@ Follow the [Configure to Use Browser: Create Loop App in App Store Connect](prep
 
 #### Create Certificates
 
-You should be able to continue with the [Configure to Use Browser Steps to `Create Certificates`](certs.md#create-certificates) and then proceed from there with `Build Loop` and keep going.
+You can go straight to [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } which will `Create Certificates` for you. However, you may be more comfortable making sure you got your mistakes fixed. You can run [`Create Certifcates`](certs.md#create-certificates){: target="_blank" } as a stand-alone process. It should only take a few minutes.
+
+After that succeeds, proceed to [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } and keep going.
 
 ### Error: Error cloning certificates
 
@@ -771,6 +784,13 @@ You will get an email informing you the certificate was revoked.
 
 Run the Build action and a new Distribution Certificate will be created along with the profiles and build credentials needed.
 
+!!! question "But my Build Action Failed Again"
+    - [x] Make sure you deleted all the Distribution Certificates as directed above.
+
+    - [x] Make sure you have the [`ENABLE_NUKE_CERTS` variable](prepare-fork.md#add-variable){: target="_blank" } set to true
+
+    - [ ] Then follow the link to delete your [Match Secrets repository](#delete-match-secrets) and run the [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } again.
+
 * This is true for Loop, LoopCaregiver, LoopFollow and Trio if you have the ENABLE_NUKE_CERTS variable set to true
 
 !!! question "But what about *TestFlight* builds?"
@@ -832,7 +852,7 @@ Make sure you only delete `Match-Secrets`. Do NOT delete the repository of the a
 
 When building Loop, LoopCaregiver, LoopFollow or Trio:
 
-* If you just revoked a [Distrbution Certificate](#revoke-distribution-certificate) - please do not delete your `Match-Secrets`
+* If you just revoked a [Distrbution Certificate](#revoke-distribution-certificate) - try building first before you delete your `Match-Secrets`
 * Make sure you have `ENABLE_NUKE_CERTS` set to true
 * The next time you try to build, the information in Match-Secrets is used to remove invalid profiles
     * A new Distribution Certificate and new profiles will be generated and your Match-Secrets will be updated

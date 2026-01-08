@@ -11,16 +11,16 @@
 
 **Choose Browser Build if:**
 
-* ✓ You don't have a Mac or prefer not to use one
-* ✓ You want automatic monthly builds (after initial setup)
-* ✓ You're comfortable following step-by-step instructions with multiple accounts (Apple, GitHub)
-* ✓ You can dedicate 2-4 hours for first-time setup (spread over several days)
+- [x] You don't have a Mac or prefer not to use one
+- [x] You want automatic monthly builds (after initial setup)
+- [x] You're comfortable following step-by-step instructions with multiple accounts (Apple, GitHub)
+- [x] You can dedicate 2-4 hours for first-time setup (spread over several days)
 
 **Choose Mac Build if:**
 
-* You already have an up-to-date Mac and are comfortable with Xcode
-* You prefer building locally without cloud services
-* See [Build with Mac](../build/overview.md){: target="_blank" } for Mac requirements
+- [x] You already have an up-to-date Mac and are comfortable with Xcode
+- [x] You prefer building locally without cloud services
+- [x] See [Build with Mac](../build/overview.md){: target="_blank" } for Mac requirements
 
 ## Requirements
 
