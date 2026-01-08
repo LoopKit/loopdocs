@@ -2,19 +2,20 @@
 
 This page discusses some features new with Loop 3.
 
+- - -
+
 ## Remote Carb / Bolus
 
-Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop. This requires the Loop user have a Nightscout site. Please review these pages:
+There are 2 ways to send remote commands:
 
-* [Remote Overview](../nightscout/remote-overview.md)
-* [Remote Configuration](../nightscout/remote-config.md)
-* [Remote Commands](../nightscout/remote-commands.md)
-* [Remote Errors](../nightscout/remote-errors.md)
-* [<span translate="no">LoopCaregiver</span> App](../nightscout/loop-caregiver.md)
+* [Remote Control with *LoopFollow*](#remote-control-with-loopfollow)
+* [Remote Control with LoopCaregiver or Nighstcout](#remote-control-with-loopcaregiver-or-nightscout)
+
+The remote features were originally developed in coordination with the development of *LoopCaregiver* and updates to *Nightscout* were added at that time to support these remote features. Subsequent to that, [LoopFollow]() added code to directly send *Apple* push notifications to the *Loop* app, so offers a separate path for providing remote control for caregivers.
 
 !!! warning "WARNING"
 
-    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the links listed above before getting started.
+    You will be using this feature at your own risk, like any other Loop code you build. It is very important you completely read and re-read the links listed below before getting started.
    
     Be aware:
     
@@ -22,6 +23,37 @@ Loop 3 has a Remote Carb and Remote Bolus feature to enable remote caregivers to
     * If the system feels too many are being sent, it may begin to throttle notifications
         * There is no published limit, but consider limiting it to 1 or 2 per hour
     * When on cellular data, there may be further limitations to protect your data usage
+
+    The *Apple* limits on push notifications will limit *LoopFollow*, *LoopCaregiver* and direct use of the *Nightscout* `careportal`.
+
+### Remote Control with *LoopFollow*
+
+The *LoopFollow* app is very popular with caregivers and with people who use OS-AID for themselves because of the overview display and extensive, flexible alarm features. This can only be used on an iOS device: an iPhone, iPad or Mac. You can have copies of *LoopFollow* on multiple devices and share responsibility with multiple caregivers. So be careful in your usage.
+
+Please refer to:
+
+* [LoopFollowDocs](https://loopfollowdocs.org/)
+* [LoopFollowDocs: Remote Control](https://loopfollowdocs.org/remote/remote-control-overview/)
+
+
+### Remote Control with *LoopCaregiver* or *Nightscout*
+
+Loop 3 supports Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop. This requires the Loop user have a Nightscout site. Please review these pages housed in *LoopDocs*:
+
+* [Remote Overview](../nightscout/remote-overview.md){: target="_blank" }
+* [Remote Configuration](../nightscout/remote-config.md){: target="_blank" }
+* [Remote Commands](../nightscout/remote-commands.md){: target="_blank" }
+* [Remote Errors](../nightscout/remote-errors.md){: target="_blank" }
+* [<span translate="no">LoopCaregiver</span> App](../nightscout/loop-caregiver.md){: target="_blank" }
+
+### Remote Control of More than One Person
+
+You can use the same *Apple* push notification credentials to support more than one person.
+
+* Each person must have their own unique *Nightscout* URL
+* For LoopFollow, each person has their own app and you can personalize that app with their name and icon
+    * Refer to [LoopFollowDocs: Multiple People]()
+* For LoopCaregiver, each person is added to the same *LoopCaregiver* app and you switch between people in the app
 
 ## **New with Loop 3.4.0**
 
@@ -220,3 +252,22 @@ With Loop 3, the "old" method still works, but there is a new method for enterin
         * Tap on `Log Dose` to record or `Cancel` to quit
 
 ![entering non-pump insulin into Loop](img/non-pump-insulin.svg){width="500"}
+
+## New with Loop v3.10.0
+
+### Live Activity
+
+Live Activity was added to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
+
+* The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
+* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
+
+##### Requirements for Live Activities
+
+* The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running iOS 16 or newer
+* iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
+* iOS 26 or newer is required to have Live Activity appear in the CarPlay view
+
+### ToDo
+
+Add Live Activity Documentation

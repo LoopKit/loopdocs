@@ -12,11 +12,13 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop 3.8.x`. 
-  
+This section provides an overview of changes to `dev` compared to `Loop v3.10.0`. 
+
+A few days after v3.10.0 is released, a new version of dev that is identical to main except for version number will also be updated.
+
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-This section summarizes differences found in the`dev` branch, version 3.9.4, compared to `main`. In addition, there are some feature branches.
+This section summarizes differences found in the`dev` branch compared to `main`. In addition, there are some feature branches.
 
 ??? tip "Updates in Progress (Click to open/close)"
     * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land in the `dev` branch.
@@ -25,10 +27,10 @@ This section summarizes differences found in the`dev` branch, version 3.9.4, com
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.8.2 | 31 Oct 2025<br>07 Dec 2025 | release<br>Browser Build hot-fix same version |
-| dev | 3.9.4 | 31 Dec 2025 | v3.9.3 Add Live Activity<br>v3.9.4 Add Omnipod updates, Purge excessive log file storage, Add CAGE and IAGE to Minimed UI screen, Improve Browser Build, Update to fastlane 2.230.0, Update translations <br>See [v3.9.4 `dev`](#v394-dev) |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `5eba785` | 3.9.4 | 31 Dec 2025 | - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `41dd40e`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `6a8d0c6` | 3.9.4 | 02 Jan 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `bad8fad`<br>  - SHA for MedtrumKit is ` 8e9d9f7` |
+| main | 3.10.0 | TBD Jan 2026 | release|
+| dev | 3.11.0 | TBD Jan 2026 | same as main, except version number |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `52106b8` | 3.9.5 | 07 Jan 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `61e3ef9`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `ca0463d` | 3.9.5 | 08 Jan 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `bad8fad`<br>  - SHA for MedtrumKit is ` 0905638` |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -36,70 +38,6 @@ This section summarizes differences found in the`dev` branch, version 3.9.4, com
     Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
 
     The SHA-1 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the commit for a particular repository.
-
-
-### v3.9.4 `dev`
-
-#### Minimum Requirements
-
-!!! important "Minimum Requirements"
-    **Although the build will succeed for iOS 15 and 16 devices, not all features are supported**
-    
-    * Please update your phone hardware to something that supports iOS 18 or iOS 26
-    * Be sure your build is 3.8.2 or newer before updating your phone to iOS 26
-    * See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }
-
-    For iOS 16 and older not all features for Live Activity / Dynamic Island / CarPlay features are supported; and for iOS 15 even more features are not supported, including some translations.
-
-#### Differences between `main` and `dev`
-
-The `dev` branch labeled v3.9.4 includes these updates with respect to the `main` branch
-
-* Live Activity, Dynamic Island and CarPlay: see [Live Activities](#live-activities)
-
-* OmniBLE and OmniKit:
-    * handle cases where a pod was discarded rather than deactivated more accurately
-    * ensure completion for acknowledgeAlert
-* LibreTransmitter: reduce the log size
-* LoopKit: automatically purge log files to prevent excessive on-phone storage
-* MinimedKit: add CAGE and IAGE to pump settings view
-* New translations
-* Use fastlane 2.230.0 (for browser build)
-
-#### Live Activities
-
-Live Activity was added to Loop with this [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
-
-* The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
-* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
-
-##### Requirements for Live Activities
-
-* The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running iOS 16 or newer
-* iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
-* iOS 26 or newer is required to have Live Activity appear in the CarPlay view
-
-
-
-### PR Links for `dev` Updates
-
-The details of the additions to the `dev` branch for v3.9.4 are found in LoopWorkspace Pull Request 367:
-
-*   [Update dev to 3.9.4](https://github.com/LoopKit/LoopWorkspace/pull/367)
-
-The details of the additions to the `dev` branch for v3.9.3 are found in LoopWorkspace Pull Request 358:
-
-*   [Update dev to 3.9.3](https://github.com/LoopKit/LoopWorkspace/pull/358)
-
-
-#### Mac-Xcode Builders
-
-One change with v3.9.3 and newer is to modify the Build Order selected in Xcode from the deprecated `Manual Order` to the preferred `Dependency Order`.
-
-* If you start with a fresh download - this will not affect you
-* If you update an existing clone on your computer with the `git pull --recurse` command, you will need to perform a `Product: Clean Build Folder` in Xcode, close the workspace in Xcode and reopen it
-    * If there are still build errors, then quit out of Xcode, issue the following command and try again
-    * `rm -rf ~/Library/Developer/Xcode/DerivedData`
 
 ### How to Build Feature Branches
 
@@ -222,6 +160,15 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 ## Older updates
 
+### Updates from v3.8 to v3.10
+
+The updates developed in the `dev` branch before the release of v3.10.0 are found in these PR.
+
+*   [Update dev to 3.9.5](https://github.com/LoopKit/LoopWorkspace/pull/394)
+*   [Update dev to 3.9.4](https://github.com/LoopKit/LoopWorkspace/pull/367)
+*   [Update dev to 3.9.3](https://github.com/LoopKit/LoopWorkspace/pull/358)
+
+
 ### Updates from v3.6 to v3.8
 
 The updates developed in the `dev` branch before the release of v3.8.0, are provided in reverse chronological order.
@@ -336,12 +283,12 @@ This forum has several streams of conversations (`streams`) depending on interes
 ![img/zulipchat.png](img/zulipchat.png){width="650"}
 {align="center"}
 
-You can also go directly to the git commit history for each of the branches if you'd like.
+You can also go directly to the git commit history for each of the branches if you'd like. Note that `LoopWorkspace` is the card-catalog for all the books (repositories) used by Loop.
 
-- [`Loop` **`main`** branch: git commit history](https://github.com/LoopKit/Loop/commits/main)
-- [`Loop` **`dev`** branch: git commit history](https://github.com/LoopKit/Loop/commits/dev)
+- [`LoopWorkspace` **`main`** branch: git commit history](https://github.com/LoopKit/LoopWorkspace/commits/main)
+- [`LoopWorkspace` **`dev`** branch: git commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev)
 
-If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red is the old code, and in green is the updated code. The line numbers and file names of the edited code are also there to help.
+If you click on the commit, you can see exactly what changes to the code were made. It's an interesting learning experience. In red is the old code, and in green is the updated code. The line numbers and file names of the edited code are also there to help.)
 
 ![img/commit.png](img/commit.png){width="550"}
 {align="center"}
@@ -361,13 +308,23 @@ You can choose to watch the `repository` so that you get emails when new `Issues
 
 Another useful thing if you'll be on `dev` branches undergoing a lot of active change...know how *Loop* works and where to look for additional information about what you are seeing. For example, if you see an IOB value that looks odd, you should know to look at the insulin deliveries stored in the *Health* app.
 
-### Generate an Issue Report
+### Generate an Issue Report and a Critical Event Log
 
-Know how to generate an `Issue Report` when you see a problem so you can provide that if asked. An `Issue Report` is a log file generated by the *Loop* app that has a lot of information the developers can parse to figure out what *Loop* was doing when you were having a problem.
+!!! tip "Issue Report vs Loop Issue"
+    The action in the *Loop* app where you select `Issue Report` generates a human-readable LoopReport file that you can share which has a lot of useful information.
 
-* `Loop Settings` and then scroll almost to the bottom and select `Issue Report`
+    The `Loop Issue` mentioned in [Watch the `Loop Repository` and `Issues List`](#watch-the-loop-repository-and-issues-list) is a website at GitHub where known Issues with the *Loop* app are kept in permanent storage.
 
-Do not confuse this with reporting an issue with *Loop*.  That is done by logging into *GitHub* and going to the [`Issue` page](https://github.com/LoopKit/Loop/issues) to report a new issue.  You can read about existing issues without logging in, but to report a new one, you must log in to *GitHub*.
+    The names are similar, but the activity is quite different.
+
+Know how to generate an `Issue Report` and `Export a Critical Event Log` when you see a problem so you can provide that if asked. 
+
+* An `Issue Report` is a log file generated by the *Loop* app that has a lot of information the developers can parse to figure out what *Loop* was doing when you were having a problem. Some items go back 84 hours (pump and cgm messages), others are limited to a few hours (decision arrays) and some items are overall status (build version number and phone model / iOS).
+* A `Critical Event Log` contains a zip of 7 individual zips. Each zip is for one day and contains the complete set of data used for Loop decision making. The event log goes back 7 full days.
+
+To issue these reports
+* `Loop Settings` and then scroll almost to the bottom and select `Issue Report` and share
+* `Loop Settings` and then scroll almost to the bottom and select `Export a Critical Event Log` and share
 
 ### Create a Debug Report
 

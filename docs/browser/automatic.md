@@ -4,20 +4,22 @@ The instructions provided for building with a browser include settings to automa
 
 ## Manual Action for Automatic Build
 
-!!! important "Automatic Build Requires Manual Action"
+!!! warning "Browser Build for *Loop* Disabled?"
+    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace even though the repository is not stale.
+
+    If this is happening to you, see [What Manual Action is Required?](#what-manual-action-is-required).
+
+    * The automatic build actions should occur every Sunday
+        * The automatic build using the same code works for all OS-AID apps except for *Loop*
+        * See this [GitHub Discussion topic for details](https://github.com/orgs/community/discussions/181236)
+
+??? tip "Stale Repositoriy Always Requires Manual Action (Click to Open Close)"
     *GitHub* automatically **disables actions** that run according to a schedule if the repository in question is **inactive**.
 
     What does that mean?
 
     * **inactive** means stable code (no new commit within the last 60 days)
     * **disables actions** means the Build Action shows up as disabled
-
-!!! warning "Browser Build Disabled"
-    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace even though the repository is not stale.
-
-    * The automatic build actions should occur every Sunday
-        * The automatic build using the same code works for all OS-AID apps except for *Loop*
-        * See this [GitHub Discussion topic for details](https://github.com/orgs/community/discussions/181236)
 
 ### What Manual Action is Required?
 
@@ -27,6 +29,7 @@ For any repository that shows the build action disabled, you should enable the a
     * Check that *TestFlight* has a new build of the *Loop* (or other) app
     * If not, go to your repository to see if the build action is disabled
 * If necessary, enable the build action at your repository as shown in the graphic below and then launch a manual build
+* If you are building any branch other than the default branch for your `fork`, don't forget to select that branch as part of Step 5 in the graphic below
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
