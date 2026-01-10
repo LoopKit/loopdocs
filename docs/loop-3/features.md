@@ -1,4 +1,4 @@
-## New with Loop 3
+## **New with Loop 3**
 
 This page discusses some features new with Loop 3.
 
@@ -6,10 +6,11 @@ This page discusses some features new with Loop 3.
 
 ## Remote Carb / Bolus
 
-There are 2 ways to send remote commands:
+!!! tip "Companion Apps for Remote Control"
+    There are 2 ways to send remote commands:
 
-* [Remote Control with *LoopFollow*](#remote-control-with-loopfollow)
-* [Remote Control with LoopCaregiver or Nighstcout](#remote-control-with-loopcaregiver-or-nightscout)
+    * [Remote Control with *LoopFollow*](#remote-control-with-loopfollow)
+    * [Remote Control with LoopCaregiver or Nighstcout](#remote-control-with-loopcaregiver-or-nightscout)
 
 The remote features were originally developed in coordination with the development of *LoopCaregiver* and updates to *Nightscout* were added at that time to support these remote features. Subsequent to that, [LoopFollow]() added code to directly send *Apple* push notifications to the *Loop* app, so offers a separate path for providing remote control for caregivers.
 
@@ -55,9 +56,58 @@ You can use the same *Apple* push notification credentials to support more than 
     * Refer to [LoopFollowDocs: Multiple People]()
 * For LoopCaregiver, each person is added to the same *LoopCaregiver* app and you switch between people in the app
 
+- - -
+
+## Non-Pump Insulin
+
+If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop 3.
+
+With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
+
+With Loop 3, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
+
+### Enter non-pump insulin before carbs
+
+!!! warning "WARNING"
+    If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, enter the non-pump insulin first and then add the carbs.
+    
+    To find out what Loop recommends, without actually dosing with Loop:
+    
+    * Wait for a CGM entry (or fingerstick) to appear in the HUD
+        * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
+        * Note the recommended bolus, but do not actually bolus
+        * Back up to the carb entry screen and `Cancel`
+    * Go to the non-pump insulin screen and enter the bolus amount you've decided to take, and select the model if it's different from your pump
+        * Don't forget to actually take the insulin
+        * Add the carb entry and save the carbs without bolusing
+
+1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
+    * **Event History** (default) lists delivery events from the Pump (does not include times when pump is returned to Scheduled Basal Rates)
+    * **Reservoir** This is the reservoir level reported by the attached pump. Pods are treated differently from other pumps because the reservoir does not begin to report until the pod has reached 50 U or below. You may see the previous pod reservoir levels following a pod change.
+    * **Non-Pump Insulin** injections can be recorded or edited here
+
+2. Select the `Non-Pump Insulin` tab to bring up the graphic shown below
+    * Tap on the &plus; sign (green solid lines)
+    * `Log Dose` screen is displayed showing the current `Glucose` prediction
+    * The default insulin type is that used by the pump
+    * To modify Insulin Type, tap on that row (red dashed lines)
+        * Picker wheel allows other insulin types to be selected
+        * Note that some insulin types, such as Afrezza are only available for non-pump insulin selection
+    * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
+        * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
+        * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
+        * Once the user selects `Done` on the keyboard display, the entered value is displayed on the `Bolus` row, and the `Log Dose` button changes from gray to blue
+        * Tap on `Log Dose` to record or `Cancel` to quit
+
+![entering non-pump insulin into Loop](img/non-pump-insulin.svg){width="500"}
+
+- - -
+
 ## **New with Loop 3.4.0**
 
 Additional details about the 3.4.0 release are found here: [Version: Releases: 3.4.0](../version/releases.md#loop-v340){: target="_blank" }
+
+- - -
 
 ## Algorithm Experiments
 
@@ -189,6 +239,8 @@ The Retrospective Correction section of the [Predicted Glucose Chart](../loop-3/
     * Responses to unannounced meals - spikes should in general be somewhat lower than with standard Loop, but there should also be no follow-up lows
     * Nighttime responses over a few weeks - highs or lows should be less frequent compared to standard Loop; at the wake-up time blood glucose should in general be closer to the correction range.
 
+- - -
+
 ## Favorite Foods
 
 This feature allows you to save _Favorite Foods_.
@@ -210,64 +262,83 @@ At this point the meal can be saved by tapping the Continue button, or the user 
 
 Note that to create a _Favorite Food_ on the _Carb Entry_ screen, an icon must be selected by typing on the plate icon and choosing one of the specific food emoji icons. The standard Lollipop, Taco, Pizza icons can be selected at that level, but choosing them at the top level is not sufficient to enable the _Save as Favorite_ button. The favorite food examples seen in the graphic above were created in the Favorite Foods Settings row. The taco was chosen to go with the absorption time chosen.
 
-## Non-Pump Insulin
+- - -
 
-If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop 3.
+## **New with Loop v3.10.0**
 
-With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
+Additional details about the 3.10.0 release are found here: [Version: Releases: 3.10.0](../version/releases.md#loop-v3100){: target="_blank" }.
 
-With Loop 3, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
+## Live Activity
 
-### Enter non-pump insulin before carbs
+Live Activity was added to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537) in a development branch and released with version 3.10.0. 
 
-!!! warning "WARNING"
-    If you are planning to enter non-pump insulin to cover carbs and you do NOT want Loop to automatically start increasing insulin based on the carb entry, enter the non-pump insulin first and then add the carbs.
-    
-    To find out what Loop recommends, without actually dosing with Loop:
-    
-    * Wait for a CGM entry (or fingerstick) to appear in the HUD
-        * Enter the carbs and continue to the bolus screen, i.e., do not save carbs
-        * Note the recommended bolus, but do not actually bolus
-        * Back up to the carb entry screen and `Cancel`
-    * Go to the non-pump insulin screen and enter the bolus amount you've decided to take, and select the model if it's different from your pump
-        * Don't forget to actually take the insulin
-        * Add the carb entry and save the carbs without bolusing
+!!! warning "Customization Users; Browser Builders"
+    Many people have been using Live Activity as a customization. If you used the customization - you need to remove `live_activity` from your customization list in your build_loop.yml file of your fork or your build will fail.
 
-1. Tap on either of the insulin charts (Active Insulin or Insulin Delivery) on the home screen to display the `Insulin Delivery Screen`. This screen has 3 tabs.
-    * **Event History** (default) lists delivery events from the Pump (does not include times when pump is returned to Scheduled Basal Rates)
-    * **Reservoir** This is the reservoir level reported by the attached pump. Pods are treated differently from other pumps because the reservoir does not begin to report until the pod has reached 50 U or below. You may see the previous pod reservoir levels following a pod change.
-    * **Non-Pump Insulin** injections can be recorded or edited here
-
-2. Select the `Non-Pump Insulin` tab to bring up the graphic shown below
-    * Tap on the &plus; sign (green solid lines)
-    * `Log Dose` screen is displayed showing the current `Glucose` prediction
-    * The default insulin type is that used by the pump
-    * To modify Insulin Type, tap on that row (red dashed lines)
-        * Picker wheel allows other insulin types to be selected
-        * Note that some insulin types, such as Afrezza are only available for non-pump insulin selection
-    * Tap on the `Bolus` row (blue dash-dot lines) to bring up a keyboard
-        * The `Glucose` prediction chart updates automatically based on the value entered in the Bolus row
-        * Tip, add 0.001 to the actual dose to make it easier to see if reviewing in Apple Health
-        * Once the user selects `Done` on the keyboard display, the entered value is displayed on the `Bolus` row, and the `Log Dose` button changes from gray to blue
-        * Tap on `Log Dose` to record or `Cancel` to quit
-
-![entering non-pump insulin into Loop](img/non-pump-insulin.svg){width="500"}
-
-## New with Loop v3.10.0
-
-### Live Activity
-
-Live Activity was added to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537). Many people have been using this as a customization. If you used the customization - you need to stop selecting `live_activity` as a customization or your build will fail.
-
-* The configuration for the Live Activity widget on the lock screen is found under Loop, Settings, Notifications, Live Activity
-* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable Allow Live Activites and More Frequent Update
-
-##### Requirements for Live Activities
+### Requirements for Live Activity
 
 * The dynamic island is only available for iPhone versions 14 pro and newer; but Live Activity on the Lock Screen is supported for older phones running iOS 16 or newer
 * iOS 18 and watchOS 10 or newer are required for Live Activity to appear in the Smart Stack on the Apple Watch
 * iOS 26 or newer is required to have Live Activity appear in the CarPlay view
 
-### ToDo
+    !!! tip "Dynamic Island"
+        If your phone supports [Dynamic Island](https://support.apple.com/guide/iphone/view-live-activities-in-the-dynamic-island-iph28f50d10d/ios)  and you enable Live Activity, then Dynamic Island is displayed.
+        
+        There is no separate control to enable one without the other.
 
-Add Live Activity Documentation
+### Enable Live Activity
+
+* The configuration for the *Loop* Live Activity widget on the lock screen is found under *Loop*, Settings, Notifications, Live Activity
+    * Live Activity will be displayed when enabled here and on the iPhone itself
+* You must also enable Live Activity under iPhone settings, Loop, tap on Live Activites and enable both Allow Live Activites and More Frequent Update
+
+![enable Live Activity](img/liveactivity-enable.svg){width="700"}
+{align="center"}
+
+After you enable Live Activity, lock your screen.
+
+* If you don't see the Live Activity, you may need to quit and restart the Loop App
+* Sometimes after a reboot, you may need open the Loop app before Live Activity for Loop shows up
+    * You might need to disable and then enable Live Activity
+
+### Configure Live Activity
+
+To configure what is shown on your Lock Screen, and CarPlay when supported:
+
+* You can select Large (with a plot) or Small `Mode`
+* You can enable or disable the predictive line display (when Large is selected)
+* You can modify the values of glucose to indicate high or low levels
+* You can choose to show glucose with a single color (*Loop* blue) or using different colors for different levels
+* You can configure details displayed in the widget by tapping on the `Bottom row configuration` (indicated by the blue rectangle in the graphic above)
+
+#### Effect of `Use BG coloring`
+
+`Use BG coloring` is disabled for the graphic on the left and enabled for the one on the right.
+
+![Live Activity example using BG color](img/liveactivity-glucose-color.png){width="500"}
+
+#### Example Lock and Watch / CarPlay Displays
+
+Example screens are shown below.
+
+![Live Activity example for lock screen and carplay](img/liveactivity-lock-car.png){width="500"}
+
+#### Widget Layout using `Bottom row configuration`
+
+You can configure the details displayed in the Lock Screen widget by tapping on the `Bottom row configuration` in the *Loop* Live Activity settings screen.
+
+![Configure Live Activity Display](img/liveactivity-bottom-row.svg){width="500"}
+{align="center"}
+
+Only 4 items can be displayed at one time. If you want a different set of items, make sure 3 or fewer are selected. 
+
+* Left side of graphic above: 
+    * Tap on a minus sign (highlighted with red rectangle) to remove an item
+    * Drag items up or down using :material-menu: (highlighted with a blue rectangle). 
+    * Tap on the plus sign (highlighted with blue rectangle) to display right side of graphic (only active when 3 or fewer items are selected)
+
+* Right side of graphic above:
+    * This display shows all available options with no indication which ones are selected
+    * If you touch an item it is added to your selection
+        * When your selection reaches 4 items you are automatically returned to the previous screen
+        * If you want fewer than 4 items, tap on any of the control icons on this screen to return to the previous screen
