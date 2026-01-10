@@ -146,8 +146,8 @@ For advanced users who want cutting-edge features before official release:
 | **Device Required** | Any device with browser | Mac with recent macOS |
 | **Xcode Required** | No (GitHub provides) | Yes (must update regularly) |
 | **Initial Setup Time** | 2-4 hours over several days | 1-2 hours (if Mac is ready) |
-| **Monthly Updates** | Automatic to TestFlight<br>[Manual Actions](automatic.md#manual-action-for-automatic-build){: target="_blank"}| Manual via Xcode |
-| **Build Time** | ~1 hour (in cloud) | ~30 minutes (local) |
+| **Monthly Updates** | Automatic or<br>Five minutes with [Manual Actions](automatic.md#manual-action-for-automatic-build){: target="_blank"}<br>Build uploaded to TestFlight| Manual via Xcode |
+| **Build Time** | ~30 minutes (in cloud) | ~30 minutes (local) |
 | **App Expiration** | 90 days (TestFlight) | 1 year |
 | **Customization** | Supported | Supported |
 
@@ -155,7 +155,7 @@ For advanced users who want cutting-edge features before official release:
 
 * Sometimes there is a new feature
 * Sometimes there is a required update to support the latest phone iOS
-* Even though a *Mac* lets you go a year between builds, that is **not** advisable
+* Even though a *Mac* lets you go a year between builds, you should build at least once a quarter
 
 Both methods produce the identical Loop app. Choose based on your available hardware and preferences.
 

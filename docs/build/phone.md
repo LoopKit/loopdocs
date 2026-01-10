@@ -22,13 +22,7 @@
 
 The *Loop* app requires an *Apple* device and uses the *Apple Health* app to store and retrieve your blood glucose and insulin data and to store your carbohydrate records. Older iPads do not support *Apple Health* which used to be required, and is still strongly recommended, for the *Loop* app. It may be possible to run Loop with newer iPads and newer *iOS*, but this has not been tested.
 
-You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone.
-
-* As of v3.8.x, you must use iPhone devices with *iOS* 16.1 or newer
-* The next release will require *iOS* 17 or newer
-    * All phones that support *iOS* 17, also support 18 and 26
-
-* The developers maintain support for the current and one-level earlier *iOS*
+You need a minimum version of the mobile operating software, called the *iOS*, to be installed on your iPhone. It is **strongly advised your phone hardware support and be updated to the most recent iOS**. This is for security and feature compatibility for *Loop* and companion apps.
 
 !!! Danger "Update Older Phones!"
     Some CGM vendors are limiting which iOS versions, and therefore which phones, are supported by their apps.

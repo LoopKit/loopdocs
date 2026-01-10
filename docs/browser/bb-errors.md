@@ -112,7 +112,7 @@ Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build
 
 ### New Builder: Create Certificates Error
 
-New builders are now told they can skip the separate `Create Certificates` step if they choose.  It is run when you `Build Loop`.
+New builders should skip the separate `Create Certificates` step.  It is run when you `Build Loop`.
 
 !!! tip "Successful Certificate, Failed Build"
     The create certificate step simply creates certificates based on how you configured your Identifiers. You can have a successful certificate step but still fail with the build if you made a mistake when you configured the Identifiers.
@@ -176,7 +176,7 @@ These should be a thing of the past - but you must do this step [Add Variable](p
 
 ### Rebuild: Build Error
 
-After you update to `Loop 3.6.0`, the Create Certificates Action is incorporated into the Build Action. So for rebuilders, if you completed the manual sync and added the new variable, you should not get an error when building.
+The Create Certificates Action is incorporated into the Build Action. So for rebuilders, if you completed the manual sync and added the new variable, you should not get an error when building.
 
 > Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
 
@@ -358,6 +358,8 @@ and
 
 Review [Find the Error](#find-the-error) for instructions on how to use the error strings.
 
+* If you want to do a general search for an error, enter `::error` in the search box or just `error` and look at the first item
+
 List of certificate errors on this page:
 
 * [Error: No profile for team](#error-no-profile-for-team)
@@ -433,7 +435,7 @@ Follow the [Configure to Use Browser: Create Loop App in App Store Connect](prep
 
 You can go straight to [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } which will `Create Certificates` for you. However, you may be more comfortable making sure you got your mistakes fixed. You can run [`Create Certifcates`](certs.md#create-certificates){: target="_blank" } as a stand-alone process. It should only take a few minutes.
 
-After that succeeds, proceed to [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } and keep going.
+* After your stand alone run of Create Certificates succeeds, proceed to [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } and keep going.
 
 ### Error: Error cloning certificates
 
@@ -525,10 +527,46 @@ For each section below, copy the phrase into the search function of the log. If 
 
 List of build errors in this section:
 
-* [`Error: Could not find an app on App Store Connect`](#error-could-not-find-an-app-on-app-store-connect)
 * [`Error: Provisioning Profile`](#error-provisioning-profile)
+* [`Error: Could not find an app on App Store Connect`](#error-could-not-find-an-app-on-app-store-connect)
 * [`Error: A new one cannot be created because you enabled`](#error-a-new-one-cannot-be-created-because-you-enabled)
 
+
+### `Error: Provisioning Profile`
+
+Copy the words on the line below and paste them into the search function for your action log.
+
+> ``` { .text .copy }
+> error: Provisioning profile "match AppStore
+> ```
+
+If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your *Loop* App Group with one or more identifiers.
+
+!!! tip "`App Group` Mistake"
+    The most common reasons for a new builder to see this
+    
+    1. They spelled the `App Group` correctly but missed one or more Identifiers that needed the `App Group` configure - see [`Add App Group to Identifier`](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
+    1. They did not spell the `App Group` properly
+        *  In the [directions](prepare-app.md#create-app-group){: target="_blank" }, please copy and paste the protype and then insert your TEAMID
+        * Do not type what you think you see 
+        * It is too easy to mess this one up and it will affect every Identifier. Read this whole section and follow the appropriate links
+
+For example, you might see:
+
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
+* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
+
+If some, but not all, of those errors are seen when building the *Loop* app, then you spelled the `App Group` correctly, but failed to associate all the Identifiers with that App Group.
+
+* Link to the entire section: [First-Time: Identifiers for the `Loop` app](prepare-app.md#identifiers-for-the-loop-app){: target="_blank" }
+    * Link to [Create `App Group`](prepare-app.md#create-app-group){: target="_blank" }
+    * Link to [``Add App Group to Identifier`](prepare-app.md#add-app-group-to-identifiers){: target="_blank" }
+
+You can build *Loop*:
+
+* Action: `Build Loop`
 
 ### `Error: Could not find an app on App Store Connect`
 
@@ -553,37 +591,6 @@ If that phrase is found, then:
         * `Add Identifier`
         * `Create Certificates`
         * `Build Loop`
-
-### `Error: Provisioning Profile`
-
-Copy the words on the line below and paste them into the search function for your action log.
-
-> ``` { .text .copy }
-> error: Provisioning profile "match AppStore
-> ```
-
-If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your *Loop* App Group with one or more identifiers.
-
-!!! tip "`App Group` Mistake"
-
-The most common reason for a new builder to see this is that did not spell the `App Group` properly.  In the directions, please copy and paste the protype and then insert your TEAMID. Do not type what you think you see. It is too easy to mess this one up and it will affect every Identifier. (See link to the `App Group` fix below.)
-
-For example, you might see:
-
-* `error: Provisioning profile "match AppStore com.***.loopkit.Loop`
-* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension`
-* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
-* `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
-
-If some, but not all, of those errors are seen when building the *Loop* app, then you spelled the `App Group` correctly, but failed to associate all the Identifiers with that App Group.
-
-* Link to the entire section: [First-Time: Identifiers for the `Loop` app](prepare-app.md#identifiers-for-the-loop-app)
-* Link to the `App Group` fix
-* Link to the `Identifier` fix
-
-You can build *Loop*:
-
-* Action: `Build Loop`
 
 ### `Error: A new one cannot be created because you enabled`
 
@@ -636,7 +643,7 @@ Use the [Examine Annotation](#examine-annotation) instructions to find your erro
 
 ### `ERROR: Asset validation failed`
 
-This error indicates your fork needs to be updated. As of 24 April 2025, you are required to use Xcode 16 to build the app. This is provided with `Loop 3.6.0` and newer versions.
+This error indicates your fork needs to be updated.
 
 There are serveral phrases you can check for. All of them have the same solution.
 
@@ -705,8 +712,8 @@ The graphic below shows the steps to make sure your `fork` is up to date and to 
     previous_build_number + 1
     ```
 
-2. Tap on the `Find` button and the `Replace` button to make 2 changes to the file
-3. After modifying the two lines, click on the `Commit changes` button at upper right
+2. Tap on the `Find` button and the `Replace` button to change the file
+3. Click on the `Commit changes` button at upper right
 
 ![Graphic shows steps to edit fastfile](img/tf-build-number-error-03.svg){width="750"}
 {align="center"}
@@ -800,14 +807,17 @@ You will get an email informing you the certificate was revoked.
 
 Run the Build action and a new Distribution Certificate will be created along with the profiles and build credentials needed.
 
+* This is true for Loop, LoopCaregiver, LoopFollow and Trio if you have the ENABLE_NUKE_CERTS variable set to true
+
 !!! question "But my Build Action Failed Again"
     - [x] Make sure you deleted all the Distribution Certificates as directed above.
 
     - [x] Make sure you have the [`ENABLE_NUKE_CERTS` variable](prepare-fork.md#add-variable){: target="_blank" } set to true
+        - [x] Make sure you configured `ENABLE_NUKE_CERTS` as a variable
+        - [x] Make sure you spelled `ENABLE_NUKE_CERTS` correctly
+        - [x] Make sure you entered the value of `true` in little letters
 
-    - [ ] Then follow the link to delete your [Match Secrets repository](#delete-match-secrets) and run the [`Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" } again.
-
-* This is true for Loop, LoopCaregiver, LoopFollow and Trio if you have the ENABLE_NUKE_CERTS variable set to true
+    - [ ] Then follow the link to delete your [Match Secrets repository](#delete-match-secrets); after that step, then run `Build Loop` again.
 
 !!! question "But what about *TestFlight* builds?"
     Previous builds using this method that are already in *TestFlight* are not affected by deleting the `Distribution Certificate`.
