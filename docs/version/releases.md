@@ -8,11 +8,11 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.8.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.10.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
-> The released version is the `main` branch, v3.8.2.
+> The released version is the `main` branch, v3.10.0.
 
-> The `dev` branch, now at v3.9.3, is where development happens between released.
+> The `dev` branch is where development happens between releases.
 
 > * The differences between `main` and `dev` are summarized in [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } along with details about some feature branches.
 
@@ -20,18 +20,73 @@ The current released version for the *Loop* app is v3.8.2 and is built from the 
 
 Tap on the Settings icon at the toolbar of the *Loop* app and look at the version information at upper left.
     
-![Determine current app version on app settings screen](img/app-version.jpg){width="400"}
+![Determine current app version on app settings screen](img/app-version.png){width="400"}
 {align="center"}
 
 ### Is the Released Version Newer?
 
 Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases).
 
-Releases from `Loop v3.4.4` and older are reported at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
+> Older releases from `Loop v3.4.4` and earlier are documented at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
 
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.10.0
+
+[*Loop* v3.10.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.10.0) was released on 10 January 2027.
+
+#### Customization Update for v3.10.0
+
+!!! tip ""
+    These customizations are now included in the released code.
+
+    * `live_activity`
+    * `dexcom_upload_readings`
+
+    **Browser Builders:** If you used these, remove them from your build_loop.yml file. Otherwise, your **build will fail**.
+
+
+#### v3.10.0 Highlights
+
+**Loop Features**
+
+* Add [Live Activity](../loop-3/features.md#live-activity){: target="_blank" } Feature
+    * Loop [PR 2191](https://github.com/LoopKit/Loop/pull/2191)
+* Reduce the size of *Loop* Documents & Data storage on the phone
+    * LibreTransmitter [PR 33](https://github.com/LoopKit/LibreTransmitter/pull/33); log only once per 5 minute instead of every minute
+    * LoopKit [PR 581](https://github.com/LoopKit/LoopKit/pull/581); purge logs of data older than 7 days
+
+**CGM Features**
+
+* Support added for 15-day G7 Sensors [PR 48](https://github.com/LoopKit/G7SensorKit/pull/48)
+* Modify default for G6 / ONE and G7 / ONE+ to upload glucose
+    * CGMBLEKit [PR 206](https://github.com/LoopKit/CGMBLEKit/pull/206), G7SensorKit [PR 50](https://github.com/LoopKit/G7SensorKit/pull/50)
+
+**Pump Features**
+
+* OmniBLE (DASH pod) and OmniKit (Eros pod) repositories improvements
+    * OmniBLE [PR 154](https://github.com/LoopKit/OmniBLE/pull/154), [PR 157](https://github.com/LoopKit/OmniBLE/pull/157), [PR 158](https://github.com/LoopKit/OmniBLE/pull/158)
+    * OmniKit [PR 61](https://github.com/LoopKit/OmniKit/pull/61), [PR 63](https://github.com/LoopKit/OmniKit/pull/63), [PR 64](https://github.com/LoopKit/OmniKit/pull/64)
+    * OmniBLE test suite: [PR 160 ](https://github.com/LoopKit/OmniBLE/pull/160)
+* MinimedKit [PR 25](https://github.com/LoopKit/MinimedKit/pull/25): Add CAGE and IAGE to pump settings view
+
+**Miscellaneous Features**
+
+* Improve messages for Browser Build and update to fastlane 2.230.0
+* [Translations](../faqs/app-translation.md#code-translation){: target="_blank" } added from community volunteers
+
+#### Mac-Xcode Builders
+
+One change moving to v3.10.0 from 3.8.2 (or newer) is the Build Order selected in Xcode changed from the deprecated `Manual Order` to the preferred `Dependency Order`.
+
+* If you start with a fresh download - this will not affect you
+* If you update an existing clone on your computer with the `git pull --recurse` command, you will need to perform a `Product: Clean Build Folder` in Xcode, close the workspace in Xcode and reopen it
+    * If there are still build errors, then quit out of Xcode, issue the following command and try again
+    * `rm -rf ~/Library/Developer/Xcode/DerivedData`
 
 - - -
 
