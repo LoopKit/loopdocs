@@ -96,7 +96,7 @@ If you get an error in an Action. Click on the link and scroll down to view the 
 This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.
 
 * No other action will work - because all the other actions repeat Validate <code>Secrets</code> as the first step of the action
-* Be sure to [Look at the Annotation](#look-at-the-annotation)
+* Be sure to [Look at the Annotation](#look-at-the-annotation) (click on the link to the right of the :octicons-x-circle-fill-16:{: .failed })
 * You can [ask a mentor for help](#where-to-get-help-with-browser-build)
 
 If you want to try to solve it yourself, refer back to these section in the documentation:
@@ -111,6 +111,13 @@ If you succeeded with Validate <code>Secrets</code>, this should also succeed. I
 Do not hesitate to [ask a mentor for help](#where-to-get-help-with-browser-build).
 
 ### New Builder: Create Certificates Error
+
+New builders are now told they can skip the separate `Create Certificates` step if they choose.  It is run when you `Build Loop`.
+
+!!! tip "Successful Certificate, Failed Build"
+    The create certificate step simply creates certificates based on how you configured your Identifiers. You can have a successful certificate step but still fail with the build if you made a mistake when you configured the Identifiers.
+
+#### New Builder with a Successful `Create Certificates` but a Failed Build
 
 This is one of the hardest ones to solve. If you are getting this, don't be afraid to [ask a mentor for help](#where-to-get-help-with-browser-build). If you want to solve it yourself, a link is coming your way but first read this:
 
@@ -144,13 +151,12 @@ Common errors are:
 
 All of these solutions are found in [Action: Build Loop Errors](#action-build-loop-errors). The mentors can pick out the exact solution quickly if you [ask a mentor for help](#where-to-get-help-with-browser-build).
 
-An example annotation for skipping one of the Identifiers is shown in the graphic below. The App Group for `Loop-Intent-Extension` was deliberately removed to provoke that error.
+An example annotation for skipping adding the App Group one of the Identifiers is shown in the graphic below. The App Group for `Loop-Intent-Extension` was deliberately removed to provoke that error.
 
-![graphic with an example build error](img//example-identifier-build-errors.png){width="800"}
+> Unfortunatley, the automatic annotation seen here is no longer provided by the tool we use. We may get it added back later. In the meantime, you will need to search for the phrase `::error` in the log file. We'll explain that in the detailed howto section.
+
+![graphic with an example build error](img/example-identifier-build-errors.png){width="800"}
 {align="center"}
-
-Ignore the warnings - this does not affect the build.
-
 
 ## Rebuild Errors: Quick Reference
 
@@ -164,9 +170,7 @@ If your build action is being disabled, you need to manually enable the action a
 
 ### Rebuild: Create Certificates Error
 
-With `Loop 3.6.1` or newer, these should be a thing of the past - but you must first manually update (sync) your repository in order to get this feature added and you must do this new step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
-
-> Note - we used to say with `Loop 3.6.0`, this was no longer an issue. However, Apple changed part of their infrastructure in May 2025 and it took us a while to get this fixed.
+These should be a thing of the past - but you must do this step [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
 
 > Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.
 
@@ -185,10 +189,8 @@ If you get an error when building with a browser, you can use this page to figur
 !!! important "Build Credentials are Invalid"
     If you are a repeat builder and you get this build error message: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`. 
     
-    You need to delete a Distribution Certificate and try again. See [Revoke Distribution Certificate](bb-errors.md#revoke-distribution-certificate){: target="_blank" }.
+    You need to delete your Distribution Certificate(s) and try again. See [Revoke Distribution Certificate](bb-errors.md#revoke-distribution-certificate){: target="_blank" }.
     
-    > A number of people who tried to update certificates after *Apple* changed things in May and before Loop 3.6.1 was released, may have Distribution Certificates that need to be deleted. If your credentials were valid during that time period, you won't see this error.
-
 These are some of the most common errors to date.
 
 1. You made a spelling error when adding <code>Secrets</code>
@@ -241,7 +243,7 @@ This is an example of a message that is not terribly descriptive - which is why 
 
 ### Missing Certificates
 
-> With `Loop 3.6.1` or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
+> Certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new [Add Variable](prepare-fork.md#add-variable){: target="_blank" } step.
 
 If your certificates expired and you do not have the `ENABLE_NUKE_VARIABLE` configured, you might see this error when you try to build. It does not have a clear annotation. The error string starts with: `No code signing identity found and`. The phrase ends with `can not create a new one because you enabled readonly` but the `readonly` has backquotes around it. Sometimes, the phrase uses `cannot` and in other cases `can not`.
 
@@ -288,6 +290,12 @@ You can also get this message if the credit card used to purchase the Developer 
 ### Find Your Error
 
 At this point, it may be faster to [ask a mentor for help](#where-to-get-help-with-browser-build). But if you want to dig into the details of the log and find the error yourself, the information is here.
+
+!!! tip "General Search for the Error"
+    * Click on the link to the right of the :octicons-x-circle-fill-16:{: .failed }
+    * In upper right, there is a search box
+    * Enter `::error` in the search box to find your specific error
+        * If the search is empty, search for `error` and look at the first one
 
 There is a separate section for each step in the process. First, you must follow the [Examine Annotation](#examine-annotation) instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.
 
@@ -499,12 +507,12 @@ These steps are required to make room for a `Certificate` if you have two Certif
 
 ## Action: `Build Loop` Errors
 
+!!! abstract "First Time Builders"
+    **📍 You are here:** You had a build error and have never built this app before<br>
+    **✅ Goal:** Find and fix your mistake<br>
+    **📋 Repeat Builders:** [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating)
+
 This section is for people who have not successfully built the *Loop* app one time. If you are a repeat builder, please skip ahead to [Action: `Build Loop` Errors when Updating](#action-build-loop-errors-when-updating).
-
-!!! warning "Run `Create Certificates` First"
-    When running a version earlier than `Loop 3.6.0`, you must run Action: `Create Certificates` before attempting to run Action: `Build Loop`
-
-    If you had to step backward and fix an `Identifier`, you must run `Create Certificates` again.
 
 Refer to [Annotation without Clear Message (*Build*)](#annotation-without-clear-message-build) for a detailed example of these steps:
 
@@ -556,6 +564,10 @@ Copy the words on the line below and paste them into the search function for you
 
 If that phrase is found one, or more times, it means you missed a step when configuring the Loop identifier or missed associating your *Loop* App Group with one or more identifiers.
 
+!!! tip "`App Group` Mistake"
+
+The most common reason for a new builder to see this is that did not spell the `App Group` properly.  In the directions, please copy and paste the protype and then insert your TEAMID. Do not type what you think you see. It is too easy to mess this one up and it will affect every Identifier. (See link to the `App Group` fix below.)
+
 For example, you might see:
 
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop`
@@ -563,7 +575,11 @@ For example, you might see:
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget`
 * `error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension`
 
-Return to [First-Time: Identifiers for the `Loop` app](prepare-app.md#identifiers-for-the-loop-app) and make sure you followed all the steps.
+If some, but not all, of those errors are seen when building the *Loop* app, then you spelled the `App Group` correctly, but failed to associate all the Identifiers with that App Group.
+
+* Link to the entire section: [First-Time: Identifiers for the `Loop` app](prepare-app.md#identifiers-for-the-loop-app)
+* Link to the `App Group` fix
+* Link to the `Identifier` fix
 
 You can build *Loop*:
 

@@ -151,5 +151,11 @@ For advanced users who want cutting-edge features before official release:
 | **App Expiration** | 90 days (TestFlight) | 1 year |
 | **Customization** | Supported | Supported |
 
+**Build Frequently** Please check monthly to see if there is a newer version of the *Loop* app.
+
+* Sometimes there is a new feature
+* Sometimes there is a required update to support the latest phone iOS
+* Even though a *Mac* lets you go a year between builds, that is **not** advisable
+
 Both methods produce the identical Loop app. Choose based on your available hardware and preferences.
 
