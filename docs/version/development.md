@@ -28,7 +28,7 @@ This section summarizes differences found in the`dev` branch compared to `main`.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.10.0 | 10 Jan 2026 | release|
-| dev | 3.11.0 | 10 Jan 2026 | same as main, except version number |
+| dev | 3.9.5<br>3.11.0 | 07 Jan 2026<br>TBD | same as main, except version number |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `52106b8` | 3.9.5 | 07 Jan 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `61e3ef9`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `ca0463d` | 3.9.5 | 08 Jan 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `bad8fad`<br>  - SHA for MedtrumKit is ` 0905638` |
 
