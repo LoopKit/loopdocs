@@ -4757,18 +4757,10 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions provided for building with a browser include settings to automatically update and build for you.</p>
 <h2 id="manual-action-for-automatic-build">Manual Action for Automatic Build<a class="headerlink" href="#manual-action-for-automatic-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Automatic Build Requires Manual Action</p>
-<p><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> automatically <strong>disables actions</strong> that run according to a schedule if the <abbr title="contains project files and each file's revision history">repository</abbr> in question is <strong>inactive</strong>.</p>
-<p>What does that mean?</p>
-<ul>
-<li><strong>inactive</strong> means stable code (no new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> within the last 60 days)</li>
-<li><strong>disables actions</strong> means the Build Action shows up as disabled</li>
-</ul>
-</div>
 <div class="admonition warning">
-<p class="admonition-title">Browser Build Disabled</p>
+<p class="admonition-title">Browser Build for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Disabled?</p>
 <p>We do not know why, but <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> is disabling the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Action for LoopWorkspace even though the <abbr title="contains project files and each file's revision history">repository</abbr> is not stale.</p>
+<p>If this is happening to you, see <a href="#what-manual-action-is-required">What Manual Action is Required?</a>.</p>
 <ul>
 <li>The automatic build actions should occur every Sunday<ul>
 <li>The automatic build using the same code works for all OS-AID apps except for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></li>
@@ -4777,6 +4769,15 @@
 </li>
 </ul>
 </div>
+<details class="tip">
+<summary>Stale Repositoriy Always Requires Manual Action (Click to Open Close)</summary>
+<p><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> automatically <strong>disables actions</strong> that run according to a schedule if the <abbr title="contains project files and each file's revision history">repository</abbr> in question is <strong>inactive</strong>.</p>
+<p>What does that mean?</p>
+<ul>
+<li><strong>inactive</strong> means stable code (no new <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> within the last 60 days)</li>
+<li><strong>disables actions</strong> means the Build Action shows up as disabled</li>
+</ul>
+</details>
 <h3 id="what-manual-action-is-required">What Manual Action is Required?<a class="headerlink" href="#what-manual-action-is-required" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For any <abbr title="contains project files and each file's revision history">repository</abbr> that shows the build action disabled, you should enable the action and do a manual build.</p>
 <ul>
@@ -4786,6 +4787,7 @@
 </ul>
 </li>
 <li>If necessary, enable the build action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build</li>
+<li>If you are building any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> for your <code>fork</code>, don't forget to select that <abbr title="version of code within a single repository or workspace repository">branch</abbr> as part of Step 5 in the graphic below</li>
 </ul>
 <p><img alt="fix a disabled build state" src="../img/build-disabled-fix.png" /></p>
 <p>This keeps the most recent version of your app available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for you to install when you are ready. This manual enable step should be required no more frequently than every 60 days, however, best to make it a monthly habit to check.</p>

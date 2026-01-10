@@ -1750,10 +1750,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-could-not-find-an-app-on-app-store-connect" class="md-nav__link">
+  <a href="#error-provisioning-profile" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: Could not find an app on App Store Connect
+        Error: Provisioning Profile
       
     </span>
   </a>
@@ -1761,10 +1761,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-provisioning-profile" class="md-nav__link">
+  <a href="#error-could-not-find-an-app-on-app-store-connect" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: Provisioning Profile
+        Error: Could not find an app on App Store Connect
       
     </span>
   </a>
@@ -5352,10 +5352,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-could-not-find-an-app-on-app-store-connect" class="md-nav__link">
+  <a href="#error-provisioning-profile" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: Could not find an app on App Store Connect
+        Error: Provisioning Profile
       
     </span>
   </a>
@@ -5363,10 +5363,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-provisioning-profile" class="md-nav__link">
+  <a href="#error-could-not-find-an-app-on-app-store-connect" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: Provisioning Profile
+        Error: Could not find an app on App Store Connect
       
     </span>
   </a>
@@ -5637,7 +5637,7 @@
 <p>This is the first step. If you have not succeeded (&#x2705;) with this action - STOP.</p>
 <ul>
 <li>No other action will work - because all the other actions repeat Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> as the first step of the action</li>
-<li>Be sure to <a href="#look-at-the-annotation">Look at the Annotation</a></li>
+<li>Be sure to <a href="#look-at-the-annotation">Look at the Annotation</a> (click on the link to the right of the <span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657M6.03 4.97a.75.75 0 0 0-1.042.018.75.75 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.75.75 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.75.75 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.75.75 0 0 0-.734.215L8 6.94Z"/></svg></span>)</li>
 <li>You can <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a></li>
 </ul>
 <p>If you want to try to solve it yourself, refer back to these section in the documentation:</p>
@@ -5649,6 +5649,12 @@
 <p>If you succeeded with Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this should also succeed. If it does not, please skip ahead to <a href="#action-add-identifiers-errors">Action: <code>Add Identifiers</code> Error`</a>.</p>
 <p>Do not hesitate to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h3 id="new-builder-create-certificates-error">New Builder: Create Certificates Error<a class="headerlink" href="#new-builder-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>New builders should skip the separate <code>Create Certificates</code> step.  It is run when you <code>Build Loop</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Successful <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>, Failed Build</p>
+<p>The create certificate step simply creates certificates based on how you configured your <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. You can have a successful certificate step but still fail with the build if you made a mistake when you configured the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>.</p>
+</div>
+<h4 id="new-builder-with-a-successful-create-certificates-but-a-failed-build">New Builder with a Successful <code>Create Certificates</code> but a Failed Build<a class="headerlink" href="#new-builder-with-a-successful-create-certificates-but-a-failed-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>This is one of the hardest ones to solve. If you are getting this, don't be afraid to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>. If you want to solve it yourself, a link is coming your way but first read this:</p>
 <h4 id="this-is-not-your-error">This is NOT Your Error<a class="headerlink" href="#this-is-not-your-error" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>When you start this action, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> starts a cloud computer to run your job for you. It doesn't have any information about you or your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> - yet.</p>
@@ -5671,22 +5677,23 @@
 <li>You entered an incorrect <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></li>
 </ul>
 <p>All of these solutions are found in <a href="#action-build-loop-errors">Action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Errors</a>. The mentors can pick out the exact solution quickly if you <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
-<p>An example annotation for skipping one of the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> is shown in the graphic below. The <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> for <code>Loop-Intent-Extension</code> was deliberately removed to provoke that error.</p>
+<p>An example annotation for skipping adding the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> one of the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> is shown in the graphic below. The <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> for <code>Loop-Intent-Extension</code> was deliberately removed to provoke that error.</p>
+<blockquote>
+<p>Unfortunatley, the automatic annotation seen here is no longer provided by the tool we use. We may get it added back later. In the meantime, you will need to search for the phrase <code>::error</code> in the log file. We'll explain that in the detailed howto section.</p>
+</blockquote>
 <p align="center"><img alt="graphic with an example build error" src="../img/example-identifier-build-errors.png" width="800" /></p>
-<p>Ignore the warnings - this does not affect the build.</p>
 <h2 id="rebuild-errors-quick-reference">Rebuild Errors: Quick Reference<a class="headerlink" href="#rebuild-errors-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="manual-enable-for-build-action-may-be-required">Manual Enable for Build Action May be Required<a class="headerlink" href="#manual-enable-for-build-action-may-be-required" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The automatic build actions should occur every Sunday. They do for all OS-AID apps except for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.  (<a href="https://github.com/orgs/community/discussions/181236">We do not know why.</a>) </p>
 <p>If your build action is being disabled, you need to manually enable the action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build.</p>
 <p><img alt="fix a disabled build state" src="../img/build-disabled-fix.png" /></p>
 <h3 id="rebuild-create-certificates-error">Rebuild: Create Certificates Error<a class="headerlink" href="#rebuild-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With <code>Loop 3.6.1</code> or newer, these should be a thing of the past - but you must first manually update (sync) your <abbr title="contains project files and each file's revision history">repository</abbr> in order to get this feature added and you must do this new step <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
+<p>These should be a thing of the past - but you must do this step <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
 <blockquote>
-<p>Note - we used to say with <code>Loop 3.6.0</code>, this was no longer an issue. However, Apple changed part of their infrastructure in May 2025 and it took us a while to get this fixed.</p>
 <p>Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.</p>
 </blockquote>
 <h3 id="rebuild-build-error">Rebuild: Build Error<a class="headerlink" href="#rebuild-build-error" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>After you update to <code>Loop 3.6.0</code>, the Create Certificates Action is incorporated into the Build Action. So for rebuilders, if you completed the manual sync and added the new variable, you should not get an error when building.</p>
+<p>The Create Certificates Action is incorporated into the Build Action. So for rebuilders, if you completed the manual sync and added the new variable, you should not get an error when building.</p>
 <blockquote>
 <p>Caveat - your Apple Developer account must be in good standing with a valid credit card attached and all agreements signed.</p>
 </blockquote>
@@ -5696,10 +5703,7 @@
 <div class="admonition important">
 <p class="admonition-title">Build Credentials are Invalid</p>
 <p>If you are a repeat builder and you get this build error message: <code>No code signing identity found and</code>. The phrase ends with <code>can not create a new one because you enabled readonly</code> but the <code>readonly</code> has backquotes around it. Sometimes, the phrase uses <code>cannot</code> and in other cases <code>can not</code>. </p>
-<p>You need to delete a Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> and try again. See <a href="./#revoke-distribution-certificate" target="_blank">Revoke Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a>.</p>
-<blockquote>
-<p>A number of people who tried to update certificates after <em>Apple</em> changed things in May and before <abbr title="Latest release with major updates">Loop 3</abbr>.6.1 was released, may have Distribution Certificates that need to be deleted. If your credentials were valid during that time period, you won't see this error.</p>
-</blockquote>
+<p>You need to delete your Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr>(s) and try again. See <a href="./#revoke-distribution-certificate" target="_blank">Revoke Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a>.</p>
 </div>
 <p>These are some of the most common errors to date.</p>
 <ol>
@@ -5744,7 +5748,7 @@
 <p>This is an example of a message that is not terribly descriptive - which is why it is shown here. In this case, you can click on just the one job that failed. There will be less to sort through to find your error. The most likely reason for this error is <a href="#error-could-not-create">Error: Could not Create</a>.</p>
 <h3 id="missing-certificates">Missing Certificates<a class="headerlink" href="#missing-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <blockquote>
-<p>With <code>Loop 3.6.1</code> or newer, certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
+<p>Certificates are automatically renewed if your developer account is up to date, all agreements are signed and you completed the new <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> step.</p>
 </blockquote>
 <p>If your certificates expired and you do not have the <code>ENABLE_NUKE_VARIABLE</code> configured, you might see this error when you try to build. It does not have a clear annotation. The error string starts with: <code>No code signing identity found and</code>. The phrase ends with <code>can not create a new one because you enabled readonly</code> but the <code>readonly</code> has backquotes around it. Sometimes, the phrase uses <code>cannot</code> and in other cases <code>can not</code>.</p>
 <p>Please follow the directions in <a href="#revoke-distribution-certificate">Revoke Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> and build again.</p>
@@ -5785,6 +5789,17 @@
 <p>You can also get this message if the credit card used to purchase the Developer account is not current, e.g., no longer valid or credit card expiration date, as entered at <em>Apple</em>, has passed.</p>
 <h3 id="find-your-error">Find Your Error<a class="headerlink" href="#find-your-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>At this point, it may be faster to <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>. But if you want to dig into the details of the log and find the error yourself, the information is here.</p>
+<div class="admonition tip">
+<p class="admonition-title">General Search for the Error</p>
+<ul>
+<li>Click on the link to the right of the <span class="twemoji failed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657M6.03 4.97a.75.75 0 0 0-1.042.018.75.75 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.75.75 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.75.75 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.75.75 0 0 0-.734.215L8 6.94Z"/></svg></span></li>
+<li>In upper right, there is a search box</li>
+<li>Enter <code>::error</code> in the search box to find your specific error<ul>
+<li>If the search is empty, search for <code>error</code> and look at the first one</li>
+</ul>
+</li>
+</ul>
+</div>
 <p>There is a separate section for each step in the process. First, you must follow the <a href="#examine-annotation">Examine Annotation</a> instructions to view the record of the failed action. Then go to the section for the Action you were trying to complete to look for possible error strings to copy into the search box. For each section there are possible strings to paste to search the log.</p>
 <ul>
 <li>Paste in a possible error string (copy it exactly); repeat until you find a match</li>
@@ -5819,6 +5834,14 @@
 <p>We used to be able to say that if <code>Validate Secrets</code> worked then so did <code>Add Identifiers</code>. That is still typically true for new builders. But we are finding many experienced builders have to revoke their old <code>FastLane API Key</code> and generate a new one to be able to continue building. We don't know why, but it is happening a lot. If you are one of those experienced builders, head over to the <a href="#handle-the-fastlane-api-key-error">Handle the <code>FastLane API Key</code> Error</a>.</p>
 <p>If you are new builder who gets an error at <code>Add Identifiers</code>, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <h2 id="action-create-certificates-errors">Action: <code>Create Certificates</code> Errors<a class="headerlink" href="#action-create-certificates-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The modern version of Browser Build creates your certificates automatically when you run the build action.</p>
+<p>The first time you run the build action, there might be a certificate error if you did not configure your secrets or <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> correctly.</p>
+<p>Subsequent times:</p>
+<ul>
+<li>You must have your <em>Apple</em> Developer license up to date with all agreements signed</li>
+<li>After a year, you must have the <a href="../prepare-fork/#add-variable" target="_blank"><code>ENABLE_NUKE_CERTS</code> variable</a> set to true for automatic renewal - make sure to set that up now</li>
+</ul>
+<p>and </p>
 <blockquote>
 <p>Reminder - If it is not obvious to you what your error is, please <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a></p>
 <ul>
@@ -5827,6 +5850,9 @@
 </ul>
 </blockquote>
 <p>Review <a href="#find-the-error">Find the Error</a> for instructions on how to use the error strings.</p>
+<ul>
+<li>If you want to do a general search for an error, enter <code>::error</code> in the search box or just <code>error</code> and look at the first item</li>
+</ul>
 <p>List of certificate errors on this page:</p>
 <ul>
 <li><a href="#error-no-profile-for-team">Error: No profile for team</a></li>
@@ -5846,7 +5872,7 @@
 <li>You probably do not have the correct <code>TEAMID</code> entered in your <code>Secrets</code></li>
 <li>The rest of these instructions assume:<ul>
 <li>You have already created a <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App in the <em>App Store</em> with that incorrect <code>TEAMID</code></li>
-<li>This is true if you completed the steps after running Action: <code>Add Identifiers</code> and before Action: <code>Create Certificates</code></li>
+<li>This is true if you completed the steps after running Action: <code>Add Identifiers</code> and before Action: <code>Create Certificates</code> or <code>Build Loop</code></li>
 </ul>
 </li>
 </ul>
@@ -5900,7 +5926,10 @@
 <li>You must come up with a new <code>SKU</code> for your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App (try <code>1234</code>, if you used <code>123</code> before)</li>
 </ul>
 <h4 id="create-certificates">Create Certificates<a class="headerlink" href="#create-certificates" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>You should be able to continue with the <a href="../certs/#create-certificates">Configure to Use Browser Steps to <code>Create Certificates</code></a> and then proceed from there with <code>Build Loop</code> and keep going.</p>
+<p>You can go straight to <a href="../build-yml/#build-the-loop-app" target="_blank"><code>Build Loop</code></a> which will <code>Create Certificates</code> for you. However, you may be more comfortable making sure you got your mistakes fixed. You can run <a href="../certs/#create-certificates" target="_blank"><code>Create Certifcates</code></a> as a stand-alone process. It should only take a few minutes.</p>
+<ul>
+<li>After your stand alone run of Create Certificates succeeds, proceed to <a href="../build-yml/#build-the-loop-app" target="_blank"><code>Build Loop</code></a> and keep going.</li>
+</ul>
 <h3 id="error-error-cloning-certificates">Error: Error cloning certificates<a class="headerlink" href="#error-error-cloning-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This indicates you do not have the appropriate Repository access.</p>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
@@ -5958,12 +5987,13 @@
 <li>Follow the directions to <a href="#revoke-distribution-certificate">Revoke Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></li>
 </ul>
 <h2 id="action-build-loop-errors">Action: <code>Build Loop</code> Errors<a class="headerlink" href="#action-build-loop-errors" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section is for people who have not successfully built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app one time. If you are a repeat builder, please skip ahead to <a href="#action-build-loop-errors-when-updating">Action: <code>Build Loop</code> Errors when Updating</a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Run <code>Create Certificates</code> First</p>
-<p>When running a version earlier than <code>Loop 3.6.0</code>, you must run Action: <code>Create Certificates</code> before attempting to run Action: <code>Build Loop</code></p>
-<p>If you had to step backward and fix an <code>Identifier</code>, you must run <code>Create Certificates</code> again.</p>
+<div class="admonition abstract">
+<p class="admonition-title">First Time Builders</p>
+<p><strong>📍 You are here:</strong> You had a build error and have never built this app before<br>
+<strong>✅ Goal:</strong> Find and fix your mistake<br>
+<strong>📋 Repeat Builders:</strong> <a href="#action-build-loop-errors-when-updating">Action: <code>Build Loop</code> Errors when Updating</a></p>
 </div>
+<p>This section is for people who have not successfully built the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app one time. If you are a repeat builder, please skip ahead to <a href="#action-build-loop-errors-when-updating">Action: <code>Build Loop</code> Errors when Updating</a>.</p>
 <p>Refer to <a href="#annotation-without-clear-message-build">Annotation without Clear Message (<em>Build</em>)</a> for a detailed example of these steps:</p>
 <ul>
 <li>Click on the Action log on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em></li>
@@ -5974,9 +6004,48 @@
 <p>For each section below, copy the phrase into the search function of the log. If you find it, solve that error. If not, move on to the next one.</p>
 <p>List of build errors in this section:</p>
 <ul>
-<li><a href="#error-could-not-find-an-app-on-app-store-connect"><code>Error: Could not find an app on App Store Connect</code></a></li>
 <li><a href="#error-provisioning-profile"><code>Error: Provisioning Profile</code></a></li>
+<li><a href="#error-could-not-find-an-app-on-app-store-connect"><code>Error: Could not find an app on App Store Connect</code></a></li>
 <li><a href="#error-a-new-one-cannot-be-created-because-you-enabled"><code>Error: A new one cannot be created because you enabled</code></a></li>
+</ul>
+<h3 id="error-provisioning-profile"><code>Error: Provisioning Profile</code><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Copy the words on the line below and paste them into the search function for your action log.</p>
+<blockquote>
+<div class="copy highlight"><pre><span></span><code>error: Provisioning profile &quot;match AppStore
+</code></pre></div>
+</blockquote>
+<p>If that phrase is found one, or more times, it means you missed a step when configuring the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier or missed associating your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
+<div class="admonition tip">
+<p class="admonition-title"><code>App Group</code> Mistake</p>
+<p>The most common reasons for a new builder to see this</p>
+<ol>
+<li>They spelled the <code>App Group</code> correctly but missed one or more <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> that needed the <code>App Group</code> configure - see <a href="../prepare-app/#add-app-group-to-identifiers" target="_blank"><code>Add App Group to Identifier</code></a></li>
+<li>They did not spell the <code>App Group</code> properly<ul>
+<li>In the <a href="../prepare-app/#create-app-group" target="_blank">directions</a>, please copy and paste the protype and then insert your <abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr></li>
+<li>Do not type what you think you see </li>
+<li>It is too easy to mess this one up and it will affect every Identifier. Read this whole section and follow the appropriate links</li>
+</ul>
+</li>
+</ol>
+</div>
+<p>For example, you might see:</p>
+<ul>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget</code></li>
+<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
+</ul>
+<p>If some, but not all, of those errors are seen when building the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, then you spelled the <code>App Group</code> correctly, but failed to associate all the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> with that <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr>.</p>
+<ul>
+<li>Link to the entire section: <a href="../prepare-app/#identifiers-for-the-loop-app" target="_blank">First-Time: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for the <code>Loop</code> app</a><ul>
+<li>Link to <a href="../prepare-app/#create-app-group" target="_blank">Create <code>App Group</code></a></li>
+<li>Link to <a href="../prepare-app/#add-app-group-to-identifiers" target="_blank"><code>`Add App Group to Identifier</code></a></li>
+</ul>
+</li>
+</ul>
+<p>You can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
+<ul>
+<li>Action: <code>Build Loop</code></li>
 </ul>
 <h3 id="error-could-not-find-an-app-on-app-store-connect"><code>Error: Could not find an app on App Store Connect</code><a class="headerlink" href="#error-could-not-find-an-app-on-app-store-connect" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
@@ -6009,25 +6078,6 @@
 </li>
 </ul>
 </li>
-</ul>
-<h3 id="error-provisioning-profile"><code>Error: Provisioning Profile</code><a class="headerlink" href="#error-provisioning-profile" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Copy the words on the line below and paste them into the search function for your action log.</p>
-<blockquote>
-<div class="copy highlight"><pre><span></span><code>error: Provisioning profile &quot;match AppStore
-</code></pre></div>
-</blockquote>
-<p>If that phrase is found one, or more times, it means you missed a step when configuring the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> identifier or missed associating your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> with one or more identifiers.</p>
-<p>For example, you might see:</p>
-<ul>
-<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop</code></li>
-<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.LoopWidgetExtension</code></li>
-<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.statuswidget</code></li>
-<li><code>error: Provisioning profile "match AppStore com.***.loopkit.Loop.Loop-Intent-Extension</code></li>
-</ul>
-<p>Return to <a href="../prepare-app/#identifiers-for-the-loop-app">First-Time: <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> for the <code>Loop</code> app</a> and make sure you followed all the steps.</p>
-<p>You can build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>:</p>
-<ul>
-<li>Action: <code>Build Loop</code></li>
 </ul>
 <h3 id="error-a-new-one-cannot-be-created-because-you-enabled"><code>Error: A new one cannot be created because you enabled</code><a class="headerlink" href="#error-a-new-one-cannot-be-created-because-you-enabled" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
@@ -6069,7 +6119,7 @@
 <p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
 <p>Use the <a href="#examine-annotation">Examine Annotation</a> instructions to find your error message.</p>
 <h3 id="error-asset-validation-failed"><code>ERROR: Asset validation failed</code><a class="headerlink" href="#error-asset-validation-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This error indicates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> needs to be updated. As of 24 April 2025, you are required to use <abbr title="program used to build an app">Xcode</abbr> 16 to build the app. This is provided with <code>Loop 3.6.0</code> and newer versions.</p>
+<p>This error indicates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> needs to be updated.</p>
 <p>There are serveral phrases you can check for. All of them have the same solution.</p>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
@@ -6130,9 +6180,9 @@
 </code></pre></div>
 </li>
 <li>
-<p>Tap on the <code>Find</code> button and the <code>Replace</code> button to make 2 changes to the file</p>
+<p>Tap on the <code>Find</code> button and the <code>Replace</code> button to change the file</p>
 </li>
-<li>After modifying the two lines, click on the <code>Commit changes</code> button at upper right</li>
+<li>Click on the <code>Commit changes</code> button at upper right</li>
 </ol>
 <p align="center"><img alt="Graphic shows steps to edit fastfile" src="../img/tf-build-number-error-03.svg" width="750" /></p>
 <h4 id="save-to-a-patch-branch">Save to a Patch Branch<a class="headerlink" href="#save-to-a-patch-branch" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -6212,6 +6262,25 @@
 <li>This is true for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio if you have the ENABLE_NUKE_CERTS variable set to true</li>
 </ul>
 <div class="admonition question">
+<p class="admonition-title">But my Build Action Failed Again</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Make sure you deleted all the Distribution Certificates as directed above.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Make sure you have the <a href="../prepare-fork/#add-variable" target="_blank"><code>ENABLE_NUKE_CERTS</code> variable</a> set to true</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Make sure you configured <code>ENABLE_NUKE_CERTS</code> as a variable</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Make sure you spelled <code>ENABLE_NUKE_CERTS</code> correctly</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Make sure you entered the value of <code>true</code> in little letters</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Then follow the link to delete your <a href="#delete-match-secrets">Match <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr></a>; after that step, then run <code>Build Loop</code> again.</p>
+</li>
+</ul>
+</div>
+<div class="admonition question">
 <p class="admonition-title">But what about <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds?</p>
 <p>Previous builds using this method that are already in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are not affected by deleting the <code>Distribution Certificate</code>.</p>
 </div>
@@ -6273,7 +6342,7 @@
 <p>Make sure you only delete <code>Match-Secrets</code>. Do NOT delete the <abbr title="contains project files and each file's revision history">repository</abbr> of the app you are trying to build.</p>
 <p>When building <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> or Trio:</p>
 <ul>
-<li>If you just revoked a <a href="#revoke-distribution-certificate">Distrbution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> - please do not delete your <code>Match-Secrets</code></li>
+<li>If you just revoked a <a href="#revoke-distribution-certificate">Distrbution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> - try building first before you delete your <code>Match-Secrets</code></li>
 <li>Make sure you have <code>ENABLE_NUKE_CERTS</code> set to true</li>
 <li>The next time you try to build, the information in <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> is used to remove invalid profiles<ul>
 <li>A new Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> and new profiles will be generated and your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> will be updated</li>

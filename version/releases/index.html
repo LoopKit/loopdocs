@@ -3266,6 +3266,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.10.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v38x" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4724,6 +4735,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.10.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v38x" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5035,22 +5057,82 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.8.2 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.10.0 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <blockquote>
-<p>The released version is the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, v3.8.2.</p>
-<p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, now at v3.9.3, is where development happens between released.</p>
+<p>The released version is the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, v3.10.0.</p>
+<p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is where development happens between releases.</p>
 <ul>
 <li>The differences between <code>main</code> and <code>dev</code> are summarized in <a href="../development/#updates-in-dev" target="_blank">Updates in <code>dev</code></a> along with details about some feature branches.</li>
 </ul>
 </blockquote>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
-<p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.jpg" width="400" /></p>
+<p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
 <h3 id="is-the-released-version-newer">Is the Released Version Newer?<a class="headerlink" href="#is-the-released-version-newer" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Release information is found on the <a href="https://github.com/LoopKit/LoopWorkspace/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/LoopWorkspace</span></em>&nbsp;release page</a>.</p>
-<p>Releases from <code>Loop v3.4.4</code> and older are reported at <a href="https://github.com/LoopKit/Loop/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;release page</a>.</p>
+<blockquote>
+<p>Older releases from <code>Loop v3.4.4</code> and earlier are documented at <a href="https://github.com/LoopKit/Loop/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;release page</a>.</p>
+</blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v3100"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.10.0<a class="headerlink" href="#loop-v3100" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.10.0"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.10.0</a> was released on 10 January 2027.</p>
+<h4 id="customization-update-for-v3100">Customization Update for v3.10.0<a class="headerlink" href="#customization-update-for-v3100" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition tip">
+<p>These customizations are now included in the released code.</p>
+<ul>
+<li><code>live_activity</code></li>
+<li><code>dexcom_upload_readings</code></li>
+</ul>
+<p><strong>Browser Builders:</strong> If you used these, remove them from your build_loop.yml file. Otherwise, your <strong>build will fail</strong>.</p>
+</div>
+<h4 id="v3100-highlights">v3.10.0 Highlights<a class="headerlink" href="#v3100-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>
+<ul>
+<li>Add <a href="../../loop-3/features/#live-activity" target="_blank">Live Activity</a> Feature<ul>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <a href="https://github.com/LoopKit/Loop/pull/2191"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2191</a></li>
+</ul>
+</li>
+<li>Reduce the size of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Documents &amp; Data storage on the phone<ul>
+<li>LibreTransmitter <a href="https://github.com/LoopKit/LibreTransmitter/pull/33"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 33</a>; log only once per 5 minute instead of every minute</li>
+<li>LoopKit <a href="https://github.com/LoopKit/LoopKit/pull/581"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 581</a>; purge logs of data older than 7 days</li>
+</ul>
+</li>
+</ul>
+<p><strong><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Features</strong></p>
+<ul>
+<li>Support added for 15-day G7 Sensors <a href="https://github.com/LoopKit/G7SensorKit/pull/48"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 48</a></li>
+<li>Modify default for G6 / ONE and G7 / ONE+ to upload glucose<ul>
+<li>CGMBLEKit <a href="https://github.com/LoopKit/CGMBLEKit/pull/206"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 206</a>, G7SensorKit <a href="https://github.com/LoopKit/G7SensorKit/pull/50"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 50</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Pump Features</strong></p>
+<ul>
+<li>OmniBLE (DASH pod) and OmniKit (Eros pod) repositories improvements<ul>
+<li>OmniBLE <a href="https://github.com/LoopKit/OmniBLE/pull/154"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 154</a>, <a href="https://github.com/LoopKit/OmniBLE/pull/157"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 157</a>, <a href="https://github.com/LoopKit/OmniBLE/pull/158"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 158</a></li>
+<li>OmniKit <a href="https://github.com/LoopKit/OmniKit/pull/61"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 61</a>, <a href="https://github.com/LoopKit/OmniKit/pull/63"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 63</a>, <a href="https://github.com/LoopKit/OmniKit/pull/64"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 64</a></li>
+<li>OmniBLE test suite: <a href="https://github.com/LoopKit/OmniBLE/pull/160"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 160 </a></li>
+</ul>
+</li>
+<li>MinimedKit <a href="https://github.com/LoopKit/MinimedKit/pull/25"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 25</a>: Add <abbr title="cannula (or pump site) age on Nightscout site">CAGE</abbr> and IAGE to pump settings view</li>
+</ul>
+<p><strong>Miscellaneous Features</strong></p>
+<ul>
+<li>Improve messages for Browser Build and update to <abbr title="used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> 2.230.0</li>
+<li><a href="../../faqs/app-translation/#code-translation" target="_blank">Translations</a> added from community volunteers</li>
+</ul>
+<h4 id="mac-xcode-builders">Mac-<abbr title="program used to build an app">Xcode</abbr> Builders<a class="headerlink" href="#mac-xcode-builders" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>One change moving to v3.10.0 from 3.8.2 (or newer) is the Build Order selected in <abbr title="program used to build an app">Xcode</abbr> changed from the deprecated <code>Manual Order</code> to the preferred <code>Dependency Order</code>.</p>
+<ul>
+<li>If you start with a fresh download - this will not affect you</li>
+<li>If you update an existing <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> on your computer with the <code>git pull --recurse</code> command, you will need to perform a <code>Product: Clean Build Folder</code> in <abbr title="program used to build an app">Xcode</abbr>, close the workspace in <abbr title="program used to build an app">Xcode</abbr> and reopen it<ul>
+<li>If there are still build errors, then quit out of <abbr title="program used to build an app">Xcode</abbr>, issue the following command and try again</li>
+<li><code>rm -rf ~/Library/Developer/Xcode/DerivedData</code></li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="loop-v38x"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.x<a class="headerlink" href="#loop-v38x" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition important">
