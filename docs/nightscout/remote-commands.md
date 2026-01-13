@@ -109,7 +109,7 @@ Don't forget to read [*Loopdocs*: Overrides](../operation/features/overrides.md)
 
 For remote overrides in particular:
 
-1. **Can I set a different override in *Nighscout* than I have programmed into&nbsp;_<span translate="no">Loop</span>_&nbsp;app?**  
+1. **Can I set a different override in *Nightscout* than I have programmed into&nbsp;_<span translate="no">Loop</span>_&nbsp;app?**  
    **Answer**: No. You will only be able to enact override presets already programmed into the Loop app.
 
 1. **If I didn't start the override in *Nightscout* (it was started in&nbsp;_<span translate="no">Loop</span>_&nbsp;itself), can I still use *Nightscout* to cancel it?**  

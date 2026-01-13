@@ -311,7 +311,7 @@ To prevent a name from being automatically translated, such as a **product** nam
 Name | Markdown Input | Rendered Output 
 ---          |---                               |---
 Project Name | The `*Loop*` pill                 | The *Loop* pill
-Product Name | require a `*RileyLink*` compatible device [...]<br/>Visit `*Nightscout*` documentation [...]<br/> using `*Omnipod DASH*` [...]<br/>the `*Tidepool Mobile*` uploader [...]| require a *RileyLink* compatible device [...]<br/>Visit *Nighscout* documentation [...]<br/>using *Omnipod DASH* [...]<br/>the *Tidepool Mobile* uploader [...]
+Product Name | require a `*RileyLink*` compatible device [...]<br/>Visit `*Nightscout*` documentation [...]<br/> using `*Omnipod DASH*` [...]<br/>the `*Tidepool Mobile*` uploader [...]| require a *RileyLink* compatible device [...]<br/>Visit *Nightscout* documentation [...]<br/>using *Omnipod DASH* [...]<br/>the *Tidepool Mobile* uploader [...]
 Brand Name   | on some `*Medtronic*` pumps          | on some *Medtronic* pumps
 
 If the `text` you do not want to translate is neither an [Entity](#entity) nor a [Name](#name), read on.
