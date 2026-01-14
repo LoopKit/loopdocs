@@ -417,9 +417,9 @@ These features are added:
     * [Glucose Based Partial Application](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" } for Automatic Bolus corrections
     * [Integral Retrospective Correction](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
 * In app warning when a *TestFlight* install build is about to expire
-* Omnipod and Nighscout Users: automatic update of CAGE to Nightscout when pod is changed
-* Dexcom and Nighscout Users: automatic update of SAGE to Nightscout when Dexcom sensor is changed
-* Medtronic and Nighscout Users: automatic update of CAGE to Nightscout when set is changed
+* Omnipod and Nightscout Users: automatic update of CAGE to Nightscout when pod is changed
+* Dexcom and Nightscout Users: automatic update of SAGE to Nightscout when Dexcom sensor is changed
+* Medtronic and Nightscout Users: automatic update of CAGE to Nightscout when set is changed
 * Omnipod Users:
     * Cannula Insertion uses a slider to minimize accidental insertion before pod is attached to the body
     * Pod Deactivate uses a slider to minimize accidental deactivation
