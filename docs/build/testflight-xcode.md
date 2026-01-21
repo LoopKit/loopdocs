@@ -104,10 +104,11 @@ Wait until uploading is finished. Don't be alarmed if you see the following scre
 
 ## Deploy App
 
-Now that your app is uploaded to *TestFlight*, it will take a little bit before it finishes processing and becomes available for installation on your iPhone.
+Now that your app is uploaded to *TestFlight*, it will take some time before it finishes processing and becomes available for installation on your iPhone.
 
 * You can check [appstoreconnect.apple.com/apps](https://appstoreconnect.apple.com/apps) to find its progress by clicking **Test Flight** and then **iOS** under **Builds** in the upper left. 
 * Once it no longer says "Processing" and instead says "Ready to Submit" next to the build's number, it should be available and ready to install on your iPhone.
+* The processing is normally done within half-hour but sometimes *Apple* gets slowed down; be sure to refresh your browser to see if processing completed since the last time you checked
 
 ![App Store TestFlight page](img/tf11.png){width="700"}
     {align="center"}
@@ -116,7 +117,11 @@ Now that your app is uploaded to *TestFlight*, it will take a little bit before 
 
 If you are a repeat user of *TestFlight*, skip ahead to [Install App from *TestFlight*](#install-app-from-testflight).
 
-When you use *TestFlight* to distribute the app to yourself or a family member, you create an Internal *TestFlight* Group and add the email addresses for these users. The email address must match that associated with their Apple accounts. This group can be edited as needed to add or remove members.
+When you use *TestFlight* to distribute the app to yourself or a family member, you create an Internal *TestFlight* Group.
+
+* You will add yourself - your email address will already be available
+* If you want to add others, you must add the email addresses for these users. Each email address must match that associated with each Apple account
+* This group can be edited as needed to add or remove members
 
 > If one of your users is a child, you or another adult will need to log into the `Media & Purchases` portion of their phone to install and use *TestFlight* and to install each new build of the app from *TestFlight*. Do not try to add a child to your Internal *TestFlight* Group.
 
@@ -132,7 +137,7 @@ Continue with the next section, which covers the steps needed for each new *Test
 
 ### Install App from *TestFlight*
 
-The members of your Internal *TestFlight* group are notified via email and can install the new build of the app from *TestFlight*.
+The members of your Internal *TestFlight* group are notified via email each time a new build is available. They can choose to install the new build of the app from *TestFlight*.
 
 * Follow the instructions at [Install App with *TestFlight*](../browser/phone-install.md#install-app-with-testflight){: target="_blank" }
 
