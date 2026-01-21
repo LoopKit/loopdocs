@@ -1980,6 +1980,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Deploy App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-time-with-testflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Time with TestFlight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-app-from-testflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install App from TestFlight
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4522,6 +4550,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Deploy App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-time-with-testflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First Time with TestFlight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-app-from-testflight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install App from TestFlight
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4555,34 +4611,36 @@
   <h1>TestFlight from Xcode</h1>
 
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are several different methods for making use of <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>:</p>
+<p>There are several different methods for making use of <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>:</p>
 <ul>
 <li>Test an app someone else is developing</li>
 <li>Use the <a href="../../browser/bb-overview/">Build with Browser</a> method to build and distribute your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app to your iPhone or that of a family member</li>
 <li>Use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> as a remote distribution (and backup) for an app you build using <em><abbr title="program used to build an app">Xcode</abbr></em></li>
 </ul>
 <p>This guide can also be followed to install other apps you build with <em><abbr title="program used to build an app">Xcode</abbr></em> via <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>. Examples include <code><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></code>, <code><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></code> and <code>xDrip4iOS</code>.</p>
-<p>Some useful features of using <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> to install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>:</p>
+<p>Some useful features of using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> to install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>:</p>
 <ul>
 <li>You don't need to plug your phone into your computer</li>
 <li>You can update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on your kid's phone while they're away at college</li>
 <li>Reinstalling <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on the fly is quick and easy from your phone, even if you accidentally delete the app, see <a href="../build-app/#protect-that-app">Protect that App</a>, or need to install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on a brand new phone</li>
 </ul>
-<p>Since apps built with <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expire after 90 days, it is suggested you also setup a build using the <a href="../../browser/bb-overview/">Build with Browser</a> method even if you don't plan on using it. The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:</p>
+<p>Since apps built with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> expire after 90 days, it is suggested you also setup a build using the <a href="../../browser/bb-overview/">Build with Browser</a> method even if you don't plan on using it. The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build can be updated in a few minutes from any browser and is an extra layer of protection in these scenarios if you do not have access to your Mac for a rebuild:</p>
 <ul>
-<li>Your <abbr title="program used to build an app">Xcode</abbr> built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expires</li>
+<li>Your <abbr title="program used to build an app">Xcode</abbr> built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> expires</li>
 <li>An urgent update to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is released</li>
 </ul>
-<p>In all cases, except accidental deletion of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or loss of phone, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> you install from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> builds over your existing app and you keep all your settings including your pump.</p>
-<h2 id="build-to-testflight-via-xcode">Build to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> via <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#build-to-testflight-via-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>In all cases, except accidental deletion of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or loss of phone, the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> you install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds over your existing app and you keep all your settings including your pump.</p>
+<hr />
+<h2 id="build-to-testflight-via-xcode">Build to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> via <abbr title="program used to build an app">Xcode</abbr><a class="headerlink" href="#build-to-testflight-via-xcode" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="initial-steps">Initial Steps<a class="headerlink" href="#initial-steps" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Before creating the app or uploading it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, use the <a href="../overview/">Build with <em>Mac</em></a> guide to <a href="../build-free-loop/#select-signing-capabilities-tab">sign your targets</a> and build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to a <a href="../build-free-loop/#build-to-a-simulator">simulator phone</a> in <abbr title="program used to build an app">Xcode</abbr>. This checks to ensure the app you upload to your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> will work as expected.</p>
+<p>Before creating the app or uploading it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, use the <a href="../overview/">Build with <em>Mac</em></a> guide to <a href="../build-free-loop/#select-signing-capabilities-tab">sign your targets</a> and build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> to a <a href="../build-free-loop/#build-to-a-simulator">simulator phone</a> in <abbr title="program used to build an app">Xcode</abbr>. This checks to ensure the app you upload to your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> will work as expected.</p>
 <h3 id="archive-the-project">Archive the Project<a class="headerlink" href="#archive-the-project" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Change the build target to from building to a simulated phone to <strong>LoopWorkspace &gt; Any <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Device (arm64)</strong> like the image below.</p>
 <p align="center"><img alt="Set build target to Any iOS Device (arm64)" src="../img/tf01.png" width="700" /></p>
 <p>Now go to the top menu and choose <strong>Product &gt; Clean Build Folder</strong>. Once it's done, it should say "Clean Finished".</p>
 <p align="center"><img alt="Clean build folder" src="../img/tf02.png" width="700" /></p>
 <p>Go back to the top menu and choose <strong>Product &gt; Archive</strong>. This will build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> into a file rather than a phone or simulator. It should take about the same amount of time as building to a phone or simulator does.</p>
+<hr />
 <h2 id="upload-the-archive">Upload the Archive<a class="headerlink" href="#upload-the-archive" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Once the archive finishes building, it should automatically open the <strong>Archives</strong> window. If you want to open this window without re-archiving, click the following in the top menu: <strong><abbr title="program used to build an app">Xcode</abbr> &gt; Window &gt; Organizer</strong>.</p>
 <p align="center"><img alt="Archives window" src="../img/tf03.png" width="700" /></p>
@@ -4592,11 +4650,11 @@
 <p>On the next screen, <strong>Upload</strong> is selected by default. Click <strong>Next</strong>.</p>
 <p align="center"><img alt="Destination page" src="../img/tf05.png" width="700" /></p>
 <h3 id="first-time-archive-upload">First-Time Archive Upload<a class="headerlink" href="#first-time-archive-upload" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you have already created a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> via <abbr title="program used to build an app">Xcode</abbr> or the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build method, the next screen will not be shown, so skip ahead to <a href="#subsequent-archive-upload">Subsequent Archive Upload</a>.</p>
-<p>If this is the first time you're creating a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, enter the following on the next screen and click <strong>Next</strong>:</p>
+<p>If you have already created a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> via <abbr title="program used to build an app">Xcode</abbr> or the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build method, the next screen will not be shown, so skip ahead to <a href="#subsequent-archive-upload">Subsequent Archive Upload</a>.</p>
+<p>If this is the first time you're creating a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, enter the following on the next screen and click <strong>Next</strong>:</p>
 <ul>
 <li><strong>Name:</strong> Enter a name that is unique. Most people just use "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>" followed by their initials, so James Kirk would use "LoopJK". If he gets an error that the name is already taken, he might try something like "LoopJTK" or "Loop_JTK_1701".</li>
-<li><strong>SKU:</strong> This can be anything, but it can't be the same SKU that you've used for a different app that you've created a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> for. Ideally, just leave it as the autofilled bundle id.</li>
+<li><strong>SKU:</strong> This can be anything, but it can't be the same SKU that you've used for a different app that you've created a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for. Ideally, just leave it as the autofilled bundle id.</li>
 <li><strong>Primary Language:</strong> Set this to your primary language.</li>
 <li><strong>Bundle Identifier:</strong> This should already be autofilled. If it's not, it should be "com.YOUR_TEAM_ID.loopkit.<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>". Make sure you replace YOUR_TEAM_ID with your actual TEAM ID, which you can find at <a href="https://developer.apple.com/account">developer.apple.com/account</a>.</li>
 </ul>
@@ -4610,18 +4668,48 @@
 <p align="center"><img alt="Review Loop.ipa before upload page" src="../img/tf09.png" width="700" /></p>
 <p>Wait until uploading is finished. Don't be alarmed if you see the following screen, just click <strong>Done</strong>.</p>
 <p align="center"><img alt="Error page" src="../img/tf10.png" width="700" /></p>
+<hr />
 <h2 id="deploy-app">Deploy App<a class="headerlink" href="#deploy-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Now that it's uploaded to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, it will take a little bit before it finishes processing and becomes available for installation on your iPhone. You can check <a href="https://appstoreconnect.apple.com/apps">appstoreconnect.apple.com/apps</a> to find it's progress by clicking <strong>Test Flight</strong> and then <strong><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr></strong> under <strong>Builds</strong> in the upper left. Once it no longer says "Processing" and instead says "Ready to Submit" next to the build's number, it should be available and ready to install on your iPhone.</p>
+<p>Now that your app is uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, it will take some time before it finishes processing and becomes available for installation on your iPhone.</p>
+<ul>
+<li>You can check <a href="https://appstoreconnect.apple.com/apps">appstoreconnect.apple.com/apps</a> to find its progress by clicking <strong>Test Flight</strong> and then <strong><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr></strong> under <strong>Builds</strong> in the upper left. </li>
+<li>Once it no longer says "Processing" and instead says "Ready to Submit" next to the build's number, it should be available and ready to install on your iPhone.</li>
+<li>The processing is normally done within half-hour but sometimes <em>Apple</em> gets slowed down; be sure to refresh your browser to see if processing completed since the last time you checked</li>
+</ul>
 <p align="center"><img alt="App Store TestFlight page" src="../img/tf11.png" width="700" /></p>
-<p>To install <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> onto your iPhone, follow the instructions on the <a href="../../browser/phone-install/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Deploy</a> page.</p>
+<h3 id="first-time-with-testflight">First Time with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em><a class="headerlink" href="#first-time-with-testflight" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you are a repeat user of <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, skip ahead to <a href="#install-app-from-testflight">Install App from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>.</p>
+<p>When you use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> to distribute the app to yourself or a family member, you create an Internal <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Group.</p>
+<ul>
+<li>You will add yourself - your email address will already be available</li>
+<li>If you want to add others, you must add the email addresses for these users. Each email address must match that associated with each Apple account</li>
+<li>This group can be edited as needed to add or remove members</li>
+</ul>
+<blockquote>
+<p>If one of your users is a child, you or another adult will need to log into the <code>Media &amp; Purchases</code> portion of their phone to install and use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> and to install each new build of the app from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>. Do not try to add a child to your Internal <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> Group.</p>
+</blockquote>
+<p>This link provides the instruction you need as a first-time <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> user.</p>
+<ul>
+<li><a href="../../browser/tf-users/" target="_blank">Prepare <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Group</a></li>
+</ul>
+<p>You must also install the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the phone of the person who will be using the app you just built.</p>
+<ul>
+<li>Follow the instructions at <a href="../../browser/phone-install/#install-testflight" target="_blank">Install <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
+</ul>
+<p>Continue with the next section, which covers the steps needed for each new <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> build.</p>
+<h3 id="install-app-from-testflight">Install App from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em><a class="headerlink" href="#install-app-from-testflight" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>The members of your Internal <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> group are notified via email each time a new build is available. They can choose to install the new build of the app from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
+<ul>
+<li>Follow the instructions at <a href="../../browser/phone-install/#install-app-with-testflight" target="_blank">Install App with <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
+</ul>
+<p>When installing the app for a child, there are additional instructions.</p>
+<ul>
+<li><a href="../../browser/phone-install/#testflight-for-a-child" target="_blank"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a></li>
+</ul>
+<hr />
 <h2 id="update-app">Update App<a class="headerlink" href="#update-app" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Apps installed via <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> are only valid for a maximum of 90 days, so you must upload a new build to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> at least every 90 days.</p>
-<p>To update, simply repeat all the steps on this page.</p>
-<div class="admonition warning">
-<p class="admonition-title">Add a Calendar Reminder</p>
-<p>Note that the built-in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Notification for expiration has not been modified to read <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration, yet.</p>
-<p>So, please add a calendar reminder.</p>
-</div>
+<p>Apps installed via <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> are only valid for a maximum of 90 days, so you must upload a new build to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> at least every 90 days.</p>
+<p>To update, simply repeat the steps on this page.</p>
 
 
 
