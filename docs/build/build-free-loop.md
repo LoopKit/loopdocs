@@ -91,13 +91,15 @@ This section is required if you are using the free account.
 Some features of Loop are not available with the Free option, so as you sign, you will need to remove features that are not supported.
 
 1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:
-    * **Loop Target:** Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading
-    * **Watch App Extension Target:** Siri
-1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
+    * **Loop Target:** Time Sensitive Notifications, Siri, HealthKit (Clinical Health Records), Push Notifications, and NFC Tag Reading capabilities.  
+    Note:  the HealthKit Access (Healthkit Background Delivery) should be checked.
+    * **Watch App Extension Target:** Siri, and HealthKit (Clinical Health Records)
+    Note:  the HealthKit (Healthkit Background Delivery) should be checked.
+2. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
     * Click on the filename in the left pane of Xcode and view it in the Xcode editor
-    * Examine the file and find the line that starts with<br> `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
+    * Examine the file and find the line that starts with`SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
     * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
-    * When done, that line should be similar to:<br>`SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED`
+    * When done, that line should be similar to: 'SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) EXPERIMENTAL_FEATURES_ENABLED SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS DEBUG_FEATURES_ENABLED SIRI_DISABLED'
 
 Details about removing unsupported capabilities:
 
