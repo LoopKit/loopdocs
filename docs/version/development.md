@@ -22,7 +22,7 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 
 In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
 
-* The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released at `main`
+* The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
 * The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the keep-alive work-around for Atlas DASH pods with by iPhone 16
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
@@ -194,13 +194,15 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 There is a new feature branch available, `feat/eversense` which supports the Eversense E365 and E3 transmitters. In addition to Eversense support, this branch also has the same pump support as the `feat/dev-dana-medtrum` branch.
 
-For anyone who tests this branch with Eversense,  if there are issues with your use of Loop with Eversense please report in this [zulipchat channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Eversense.20CGM/with/569969251). 
+For anyone who tests this branch with Eversense, if there are issues with your use of Loop with Eversense please report in this [zulipchat channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Eversense.20CGM/with/569969251). 
 
 Be sure to include:
 
 * a description of your issue
-* your phone model
-* iOS version on your phone
+* your phone model and iOS version
+* your build method:
+    * Browser Build
+    * Mac-Xcode and include Xcode version
 * which version of code you are running (branch name and SHA)
 * share your Eversense logs (at bottom of the Loop Eversense screen)
 
@@ -317,7 +319,7 @@ The `dev` branch is where the next version of *Loop* is being developed and test
 
 If you choose to build *Loop* using a `dev` branch, you need to be aware that the `dev` branch may update code frequently and unannounced in the traditional sense that most users in the  *Looped* group or *Instagram* would see. Developers are not helped by people being in a `dev` branch if those users mistakenly think of it as a stable `main` branch with lots of detailed docs to go with it. People should only use a `dev` branch build if they EDUCATE themselves on the expectations and how to properly manage `dev` information and updates. People using the `dev` branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 
-If you choose to use a `dev` build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy *Loopdocs* page updated regularly with current "`dev` updates"...that's just not the way the `dev` branch works (at least normally). There is, however, an attempt to organize that status of development in the [Updates in `dev`](#updates-in-dev) section.
+If you choose to use a `dev` build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy *Loopdocs* page updated regularly with current "`dev` updates"...that's just not the way the `dev` branch works (at least normally). There is, however, an attempt to organize the current status of development in the [Updates in `dev`](#updates-in-dev) section.
 
 ### Subscribe to the Zulipchat channels
 
