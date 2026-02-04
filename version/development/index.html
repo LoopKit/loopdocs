@@ -3340,6 +3340,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#how-to-build-feature-branches" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3362,6 +3373,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#update-to-dev-3111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update to dev 3.11.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#feature-branch-pod-keep-alive-feature" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3377,6 +3399,17 @@
     <span class="md-ellipsis">
       
         Feature Branch: Medtrum and Dana Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-branch-eversense-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch: Eversense Support
       
     </span>
   </a>
@@ -3466,6 +3499,17 @@
     <span class="md-ellipsis">
       
         Loop GitHub Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-as-a-cookbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop as a Cookbook
       
     </span>
   </a>
@@ -4581,6 +4625,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#how-to-build-feature-branches" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4603,6 +4658,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#update-to-dev-3111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update to dev 3.11.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#feature-branch-pod-keep-alive-feature" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4618,6 +4684,17 @@
     <span class="md-ellipsis">
       
         Feature Branch: Medtrum and Dana Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-branch-eversense-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch: Eversense Support
       
     </span>
   </a>
@@ -4707,6 +4784,17 @@
     <span class="md-ellipsis">
       
         Loop GitHub Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-as-a-cookbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop as a Cookbook
       
     </span>
   </a>
@@ -4828,9 +4916,18 @@
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop v3.10.0</code>. </p>
-<p>A few days after v3.10.0 is released, a new version of dev that is identical to main except for version number will also be updated.</p>
+<p>A few days after v3.10.0 was released, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> was updated to be identical to main except for version number of 3.11.0. Work leading to the next update for <code>dev</code> is found in the <code>update_dev_to_3.11.1</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
-<p>This section summarizes differences found in the<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> compared to <code>main</code>. In addition, there are some feature branches.</p>
+<h3 id="branches">Branches<a class="headerlink" href="#branches" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.</p>
+<ul>
+<li>The <code>update_dev_to_M.m.#</code> is where the next version of dev is tested before becoming part of <code>dev</code> and later being released as <code>main</code></li>
+<li>The branches starting with <code>feat/</code> have one or more special features, like support for new pumps, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or the keep-alive work-around for Atlas DASH pods with by iPhone 16</li>
+</ul>
+<p>The graphic below shows the <code>main</code> and <code>dev</code> branches along with some feature branches and an update <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<blockquote>
+<p align="center"><img alt="Active branches for LoopWorkspace" src="../img/loop-development-branches.png" width="750" /></p>
+</blockquote>
 <details class="tip">
 <summary>Updates in Progress (Click to open/close)</summary>
 <ul>
@@ -4841,6 +4938,8 @@
 </li>
 </ul>
 </details>
+<h4 id="table-of-active-branches">Table of Active Branches<a class="headerlink" href="#table-of-active-branches" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The table below lists active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to <em>LoopDocs</em>.</p>
 <table>
 <thead>
 <tr>
@@ -4859,24 +4958,41 @@
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
-<td style="text-align: left;">3.9.5<br>3.11.0</td>
-<td style="text-align: left;">07 Jan 2026<br>TBD</td>
+<td style="text-align: left;">3.11.0</td>
+<td style="text-align: left;">11 Jan 2026</td>
 <td style="text-align: left;">same as main, except version number</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>52106b8</code></td>
-<td style="text-align: left;">3.9.5</td>
-<td style="text-align: left;">07 Jan 2026</td>
-<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>61e3ef9</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
+<td style="text-align: left;"><a href="#update-to-dev-3111">update_dev_to_3.11.1</a></td>
+<td style="text-align: left;">3.11.1</td>
+<td style="text-align: left;">02 Feb 2026</td>
+<td style="text-align: left;">collect updates for the next version of dev <br>Details are in <a href="https://github.com/LoopKit/LoopWorkspace/pull/408"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 408</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>ca0463d</code></td>
-<td style="text-align: left;">3.9.5</td>
-<td style="text-align: left;">08 Jan 2026</td>
-<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>bad8fad</code><br>  - SHA for MedtrumKit is <code>0905638</code></td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>783d390</code></td>
+<td style="text-align: left;">3.11.1</td>
+<td style="text-align: left;">02 Feb 2026</td>
+<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>9992773</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>0282e18</code></td>
+<td style="text-align: left;">3.11.1</td>
+<td style="text-align: left;">02 Feb 2026</td>
+<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>dbe63ae</code><br>  - SHA for MedtrumKit is <code>f21d808</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>41d63dd</code></td>
+<td style="text-align: left;">3.11.0</td>
+<td style="text-align: left;">24 Jan 2026</td>
+<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is <code>a478d8f</code></td>
 </tr>
 </tbody>
 </table>
+<div class="admonition important">
+<p class="admonition-title">Eversense Support</p>
+<p>The Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is now supported by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app in a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>. To simplify maintenance, the <abbr title="version of code within a single repository or workspace repository">branch</abbr> which supports Eversense also supports the two new pumps: Dana and Medtrum.</p>
+<p>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> which support Evensense E3 and E365 <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is simply called <code>feat/eversense</code>.</p>
+</div>
 <details class="question">
 <summary>What is SHA? (Click to Open/Close)</summary>
 <p><abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a <abbr title="contains project files and each file's revision history">repository</abbr> is used. </p>
@@ -4899,10 +5015,14 @@
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
    - feat/dev-dana-medtrum
 </code></pre></div>
+<div class="highlight"><span class="filename">Download and build the feat/eversense branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
+   - feat/eversense
+</code></pre></div>
 <h3 id="version-number-plan">Version Number Plan<a class="headerlink" href="#version-number-plan" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Please see <a href="../releases/#loop-version-numbering"><code>Loop</code> Version Numbering</a> for the current method for version numbering for the <code>main</code> and <code>dev</code> branches.</p>
-<p>The idea of having a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not new for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app but hasn't been used for a few years. At this point, we have two feature branches.</p>
-<p>Moving forward, the version number in the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> will match the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> version number, or in some cases, a work-in-progress update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> which uses the naming convention <code>update_dev_to_M.m.#</code>.</p>
+<p>The idea of having a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> is not new for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app but hasn't been used for a few years. At this point, we have several feature branches.</p>
+<p>The version number in the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> will match either the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> version number or a work-in-progress update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> which uses the naming convention <code>update_dev_to_M.m.#</code>.</p>
 <ul>
 <li>In other words, the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> is up to date with other changes to <code>dev</code> or <code>update_dev_to_M.m.#</code> with the added support for the specific feature</li>
 <li>Each feature has an associated <abbr title="contains project files and each file's revision history">repository</abbr> that contains the feature<ul>
@@ -4910,6 +5030,8 @@
 </ul>
 </li>
 </ul>
+<h3 id="update-to-dev-3111">Update to dev 3.11.1<a class="headerlink" href="#update-to-dev-3111" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Details are in <a href="https://github.com/LoopKit/LoopWorkspace/pull/408"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 408</a>.</p>
 <h3 id="feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature<a class="headerlink" href="#feature-branch-pod-keep-alive-feature" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The experimental <code>pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> has a new "Pod Keep Alive" option at the bottom of the "<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH" screen. This is intended to assist users who have both an <a href="../../faqs/omnipod-faqs/#iphone-16-and-atlas-or-inplay-dash-pods" target="_blank">iPhone 16 and DASH pods with a InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas) board</a>. No action is taken automatically unless both these cases are detected to be true.</p>
 <p>It was tested for LoopWorkspace and Trio.</p>
@@ -4973,6 +5095,33 @@
 </li>
 </ul>
 </div>
+<h3 id="feature-branch-eversense-support">Feature Branch: Eversense Support<a class="headerlink" href="#feature-branch-eversense-support" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There is a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> available, <code>feat/eversense</code> which supports the Eversense E365 and E3 transmitters. In addition to Eversense support, this <abbr title="version of code within a single repository or workspace repository">branch</abbr> also has the same pump support as the <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>For anyone who tests this <abbr title="version of code within a single repository or workspace repository">branch</abbr> with Eversense, if there are issues with your use of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with Eversense please report in this <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Eversense.20CGM/with/569969251">zulipchat channel</a>. </p>
+<p>Be sure to include:</p>
+<ul>
+<li>a description of your issue</li>
+<li>your phone model and <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> version</li>
+<li>your build method:<ul>
+<li>Browser Build</li>
+<li>Mac-<abbr title="program used to build an app">Xcode</abbr> and include <abbr title="program used to build an app">Xcode</abbr> version</li>
+</ul>
+</li>
+<li>which version of code you are running (<abbr title="version of code within a single repository or workspace repository">branch</abbr> name and SHA)</li>
+<li>share your Eversense logs (at bottom of the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Eversense screen)</li>
+</ul>
+<p>If you prefer to create an issue directly at the Eversense repo, create it here:</p>
+<ul>
+<li><a href="https://github.com/bastiaanv/EversenseKit/issues">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/bastiaanv/EversenseKit/issues</a></li>
+</ul>
+<blockquote>
+<p>Note</p>
+<ul>
+<li>This was tested using an E365 transmitter attached to a small vial containing a sensor in glucose solution</li>
+<li>This enabled testing the Eversense behavior with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on a test phone</li>
+<li>No testing with the E3 (3-month, 90-day) sensor has been performed</li>
+</ul>
+</blockquote>
 <h2 id="older-updates">Older updates<a class="headerlink" href="#older-updates" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="updates-from-v38-to-v310">Updates from v3.8 to v3.10<a class="headerlink" href="#updates-from-v38-to-v310" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The updates developed in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> before the release of v3.10.0 are found in these <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr>.</p>
@@ -5055,18 +5204,14 @@
 <h3 id="loop-github-information"><code>Loop</code> <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Information<a class="headerlink" href="#loop-github-information" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> developers own an account in <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> called <a href="https://github.com/LoopKit">LoopKit</a>.  Within that account, the developers have several <code>repositories</code> that support <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> in particular. A <abbr title="contains project files and each file's revision history">repository</abbr>&#8203; is like a book...let's think of it like a cookbook for now. Within the <code>LoopKit</code> account, there are <code>repositories</code> for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>&#8203; itself, <em>LoopDocs</em>, and various other supporting "frameworks" that are <span>helper &#8203;repositories&#8203; for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></span> to build correctly. For example, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>&#39;s &#8203;<abbr title="contains project files and each file's revision history">repository</abbr>&#8203; has a lot of info about the app itself; the outward-facing things that you interact with. How information is put to you and taken in from you...that's in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <code><abbr title="contains project files and each file's revision history">repository</abbr></code> code. But, there's more than just a user interface for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> has to do a lot of complex work like Bluetooth communications, algorithm math, pump communications, etc. The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app has help from frameworks to do those other parts. <code>CGMBLEkit</code>&nbsp; for some of the transmitter parts of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, <code>RileyLink_ios</code> for the pump managers (talking to the pumps and decoding their information), <code>LoopKit</code> for the algorithm about carbs and insulin curves, etc.</p>
 <p>When you build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, you actually start with LoopWorkspace which points to all the other repositories needed for a complete <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
-<blockquote>
-<p>Note - this graphic is outdated - you download the <em>LoopWorkspace</em> <abbr title="contains project files and each file's revision history">repository</abbr> and use the workspace to get the right version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> and the other necessary code.</p>
-</blockquote>
-<p align="center"><img alt="img/loopkit.png" src="../img/loopkit.png" width="650" /></p>
-<p>Anyways...so now you know about the general structure of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and <em>LoopKit</em> in <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>. Now we can discuss <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> itself a little deeper.</p>
+<h3 id="loop-as-a-cookbook"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> as a Cookbook<a class="headerlink" href="#loop-as-a-cookbook" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>So let's imagine <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, and documenting improvements. They send the drafts to the editor, who makes suggestions and eventually, the cookbook is finalized. There are no grammar issues, and no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a release&#8203;, and it is the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. The <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is stable and tested.</p>
 <p>But then...the chefs/developers go on a trip. They are inspired by new cuisine and want to add new recipes to the old cookbook. (Things like <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr>&#8203; support and the overrides are new "recipes" that were developed since the last <code>main</code> release, for example.) But, the process of developing a recipe is arduous. There was a lot of trial and error involved. Lots of tweaking ingredients (code). The editors try out the new recipes and offer feedback (similar to the <a href="https://github.com/LoopKit/Loop/issues">Issues List on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a>). While the recipes are being developed, they have a version of the old cookbook that gets marked up...edited in pencil a lot. Scribbles and notes in the side. Revisions happen frequently because that's what testing new recipes is all about. These marked-up versions of the cookbook are called the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Short for "development" <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Like the name sounds...this is where new developments are happening, new recipes, and tweaks.</p>
 <p>After much testing and tweaking, eventually, the recipes get the flavors right (bugs in code are squashed) and enough people have provided feedback and careful observations of results...that the book goes to the publishing house for the next printing. The cookbook is republished with an updated edition number and new recipes are highlighted. When this happens in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>,  <span><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>&#39;s <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span> is updated with the new features coming from <code>dev</code> (aka, the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is merged into the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>). When that happens, the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> gets another <code>release</code> version. At this point, <code>dev</code> and <code>main</code> are identical. They remain so until the development team for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>&nbsp; starts working on the next batch of improvements, which could be in the next hour or even days later, but then the cycle starts again.  The developers will start editing the code again and dropping those edits in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> for further development.</p>
 <h2 id="whats-going-on-in-the-dev-branch">What's going on in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>?<a class="headerlink" href="#whats-going-on-in-the-dev-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is where the next version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is being developed and tested.</p>
 <p>If you choose to build <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> using a <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you need to be aware that the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> may update code frequently and unannounced in the traditional sense that most users in the  <em>Looped</em> group or <em>Instagram</em> would see. Developers are not helped by people being in a <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> if those users mistakenly think of it as a stable <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> with lots of detailed docs to go with it. People should only use a <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> build if they EDUCATE themselves on the expectations and how to properly manage <code>dev</code> information and updates. People using the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.</p>
-<p>If you choose to use a <code>dev</code> build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy <em>Loopdocs</em> page updated regularly with current "<code>dev</code> updates"...that's just not the way the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> works (at least normally).</p>
+<p>If you choose to use a <code>dev</code> build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy <em>Loopdocs</em> page updated regularly with current "<code>dev</code> updates"...that's just not the way the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> works (at least normally). There is, however, an attempt to organize the current status of development in the <a href="#updates-in-dev">Updates in <code>dev</code></a> section.</p>
 <h3 id="subscribe-to-the-zulipchat-channels">Subscribe to the Zulipchat channels<a class="headerlink" href="#subscribe-to-the-zulipchat-channels" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Use <a href="https://loop.zulipchat.com">Zulipchat</a> forums for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.<br />
 This forum has several streams of conversations (<code>streams</code>) depending on interest. I highly recommend following all the streams so you do not miss conversations.  You can select by stream and by topic within a stream to focus on a given conversation.  </p>
