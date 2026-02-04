@@ -14,23 +14,45 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to `Loop v3.10.0`. 
 
-A few days after v3.10.0 is released, a new version of dev that is identical to main except for version number will also be updated.
+A few days after v3.10.0 was released, the dev branch was updated to be identical to main except for version number of 3.11.0. Work leading to the next update for `dev` is found in the `update_dev_to_3.11.1` branch.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-This section summarizes differences found in the`dev` branch compared to `main`. In addition, there are some feature branches.
+### Branches
+
+In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
+
+* The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
+* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the keep-alive work-around for Atlas DASH pods with by iPhone 16
+
+The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
+
+> ![Active branches for LoopWorkspace](img/loop-development-branches.png ){width="750"}
+{align="center"}
+
 
 ??? tip "Updates in Progress (Click to open/close)"
     * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land in the `dev` branch.
     * There are also feature branches for items like new pumps and new CGMs:
         * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
 
+#### Table of Active Branches
+
+The table below lists active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to *LoopDocs*.
+
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.10.0 | 10 Jan 2026 | release|
-| dev | 3.9.5<br>3.11.0 | 07 Jan 2026<br>TBD | same as main, except version number |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `52106b8` | 3.9.5 | 07 Jan 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `61e3ef9`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `ca0463d` | 3.9.5 | 08 Jan 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `bad8fad`<br>  - SHA for MedtrumKit is ` 0905638` |
+| dev | 3.11.0 | 11 Jan 2026 | same as main, except version number |
+| [update_dev_to_3.11.1](#update-to-dev-3111) | 3.11.1 | 02 Feb 2026 | collect updates for the next version of dev <br>Details are in [PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408) |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `783d390` | 3.11.1 | 02 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `0282e18` | 3.11.1 | 02 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae`<br>  - SHA for MedtrumKit is `f21d808` |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `41d63dd` | 3.11.0 | 24 Jan 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `a478d8f` |
+
+!!! important "Eversense Support"
+    The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
+
+    The branch which support Evensense E3 and E365 CGM is simply called `feat/eversense`.
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -63,18 +85,27 @@ For Mac Xcode build, the lines you need to copy and paste into a Terminal window
    - feat/dev-dana-medtrum
 ```
 
+``` { title="Download and build the feat/eversense branch" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
+   - feat/eversense
+```
+
 ### Version Number Plan
 
 Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for the current method for version numbering for the `main` and `dev` branches.
 
-The idea of having a feature branch is not new for the *Loop* app but hasn't been used for a few years. At this point, we have two feature branches.
+The idea of having a feature branch is not new for the *Loop* app but hasn't been used for a few years. At this point, we have several feature branches.
 
-Moving forward, the version number in the feature branch will match the `dev` branch version number, or in some cases, a work-in-progress update to the `dev` branch which uses the naming convention `update_dev_to_M.m.#`.
+The version number in the feature branch will match either the `dev` branch version number or a work-in-progress update to the `dev` branch which uses the naming convention `update_dev_to_M.m.#`.
 
 * In other words, the feature branch is up to date with other changes to `dev` or `update_dev_to_M.m.#` with the added support for the specific feature
 * Each feature has an associated repository that contains the feature
     * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
+### Update to dev 3.11.1
+
+Details are in [PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408).
 
 ### Feature Branch: Pod Keep Alive Feature
 
@@ -157,6 +188,33 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
         * `feat/dev-dana-medtrum`
         * Mac-Xcode: type `git pull --recurse` to update an existing clone or download a fresh copy
         * Browser Build, the Build Loop action, with the `feat/dev-dana-medtrum` branch selected should automatically sync your fork for you
+
+
+### Feature Branch: Eversense Support
+
+There is a new feature branch available, `feat/eversense` which supports the Eversense E365 and E3 transmitters. In addition to Eversense support, this branch also has the same pump support as the `feat/dev-dana-medtrum` branch.
+
+For anyone who tests this branch with Eversense, if there are issues with your use of Loop with Eversense please report in this [zulipchat channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Eversense.20CGM/with/569969251). 
+
+Be sure to include:
+
+* a description of your issue
+* your phone model and iOS version
+* your build method:
+    * Browser Build
+    * Mac-Xcode and include Xcode version
+* which version of code you are running (branch name and SHA)
+* share your Eversense logs (at bottom of the Loop Eversense screen)
+
+If you prefer to create an issue directly at the Eversense repo, create it here:
+
+* [https://github.com/bastiaanv/EversenseKit/issues](https://github.com/bastiaanv/EversenseKit/issues)
+
+> Note
+
+> * This was tested using an E365 transmitter attached to a small vial containing a sensor in glucose solution
+> * This enabled testing the Eversense behavior with Loop on a test phone
+> * No testing with the E3 (3-month, 90-day) sensor has been performed
 
 ## Older updates
 
@@ -247,13 +305,7 @@ The information in this video is still generally useful with the last half focus
 
 When you build *Loop*, you actually start with LoopWorkspace which points to all the other repositories needed for a complete *Loop* app.
 
-> Note - this graphic is outdated - you download the *LoopWorkspace* repository and use the workspace to get the right version of the *Loop* repository and the other necessary code.
-
-
-![img/loopkit.png](img/loopkit.png){width="650"}
-{align="center"}
-
-Anyways...so now you know about the general structure of *Loop* and *LoopKit* in *GitHub*. Now we can discuss *Loop* itself a little deeper.
+### *Loop* as a Cookbook
 
 So let's imagine *Loop* as a cookbook. The developers are the authors/chefs of the recipes (code) in the cookbook. The authors spend countless hours testing new recipes, taste testing, and documenting improvements. They send the drafts to the editor, who makes suggestions and eventually, the cookbook is finalized. There are no grammar issues, and no typos, the photos are beautiful and the recipes are yummy. They publish the book and you see a gorgeous final product on the shelves. That is called a release&#8203, and it is the `main` branch. This book has been well-tested and is super stable. Every time you cook with those recipes, you know exactly what you're getting and lots of people have had a chance before you to make sure that it all tastes good. The `main` branch is stable and tested.
 
@@ -267,7 +319,7 @@ The `dev` branch is where the next version of *Loop* is being developed and test
 
 If you choose to build *Loop* using a `dev` branch, you need to be aware that the `dev` branch may update code frequently and unannounced in the traditional sense that most users in the  *Looped* group or *Instagram* would see. Developers are not helped by people being in a `dev` branch if those users mistakenly think of it as a stable `main` branch with lots of detailed docs to go with it. People should only use a `dev` branch build if they EDUCATE themselves on the expectations and how to properly manage `dev` information and updates. People using the `dev` branch should also have regular access to a computer to be able to rebuild quickly if a new bug/fix is identified.
 
-If you choose to use a `dev` build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy *Loopdocs* page updated regularly with current "`dev` updates"...that's just not the way the `dev` branch works (at least normally).
+If you choose to use a `dev` build, you can stay abreast of developments in a number of ways...but they will all require you to do some legwork and keep yourself informed. This is not a situation where you should expect a fancy *Loopdocs* page updated regularly with current "`dev` updates"...that's just not the way the `dev` branch works (at least normally). There is, however, an attempt to organize the current status of development in the [Updates in `dev`](#updates-in-dev) section.
 
 ### Subscribe to the Zulipchat channels
 
