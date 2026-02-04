@@ -38,12 +38,13 @@ The graphic below shows the `main` and `dev` branches along with some feature br
 
 #### Table of Active Branches
 
-The table below lists the active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to *LoopDocs*.
+The table below lists active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to *LoopDocs*.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.10.0 | 10 Jan 2026 | release|
 | dev | 3.11.0 | 11 Jan 2026 | same as main, except version number |
+| [update_dev_to_3.11.1](#update-to-dev-3111) | 3.11.1 | 02 Feb 2026 | collect updates for the next version of dev <br>Details are in [PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408) |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `783d390` | 3.11.1 | 02 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `0282e18` | 3.11.1 | 02 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae`<br>  - SHA for MedtrumKit is `f21d808` |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `41d63dd` | 3.11.0 | 24 Jan 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `a478d8f` |
@@ -102,6 +103,9 @@ The version number in the feature branch will match either the `dev` branch vers
 * Each feature has an associated repository that contains the feature
     * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
+### Update to dev 3.11.1
+
+Details are in [PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408).
 
 ### Feature Branch: Pod Keep Alive Feature
 
