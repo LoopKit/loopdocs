@@ -14,11 +14,26 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to `Loop v3.10.0`. 
 
-A few days after v3.10.0 is released, a new version of dev that is identical to main except for version number will also be updated.
+A few days after v3.10.0 was released, the dev branch was updated to be identical to main except for version number of 3.11.0. Work leading to the next update for `dev` is found in the `update_dev_to_3.11.1` branch.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
-This section summarizes differences found in the`dev` branch compared to `main`. In addition, there are some feature branches.
+### Branches: main, dev and feat/XXX
+
+In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature branches. The feature branches have a descriptive names which always start with `feat/`. These feature branches are subject to more frequent updates, so users should follow along in zulipchat for information.
+
+The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released at `main`.
+
+The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
+
+> ![Active branches for LoopWorkspace](img/loop-development-branches.png ){width="600"}
+{align="center"}
+
+
+!!! important "Two names - One feature branch"
+    The Eversense CGM is now supported by the *Loop* app in a feature branch. It was added to the same feature branch as the two new pumps: Dana and Medtrum.
+
+    To make it clear what is included in that branch, it is now called `feat/dev-dana-eversense-medtrum`. But for those already using `feat/dev-dana-medtrum`, no worries. You can use either name. The two feature branches are identical.
 
 ??? tip "Updates in Progress (Click to open/close)"
     * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land in the `dev` branch.
