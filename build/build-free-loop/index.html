@@ -4630,35 +4630,58 @@
 <h2 id="sign-the-targets">Sign the Targets<a class="headerlink" href="#sign-the-targets" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>It is time to Sign the Targets with your <a href="../xcode-settings/#add-apple-id">Apple ID</a>.</p>
 <p>If you chose to sign manually but have a paid account, you can skip the Free Account steps below.</p>
-<p>You will be building multiple targets to make a complete app and must sign each one. With <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2.2.x, there are 4 targets. With <abbr title="Latest release with major updates">Loop 3</abbr>, there are 5 targets.</p>
+<p>You will be building multiple targets to make a complete app and must sign each one. There are 6 targets to sign.</p>
 <p>Start with the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> target, the first one on the target list. Choose your Apple ID.</p>
 <p align="center"><img alt="zoom of region where user selects signing team" src="../img/team.png" width="400" /></p>
 <h3 id="free-account">Free Account<a class="headerlink" href="#free-account" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>This section is required if you are using the free account.</p>
 <p>Some features of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> are not available with the Free option, so as you sign, you will need to remove features that are not supported.</p>
+<blockquote>
+<p>These directions are for <abbr title="program used to build an app">Xcode</abbr> 26.2. They may vary based on <abbr title="program used to build an app">Xcode</abbr> version.</p>
+</blockquote>
 <ol>
-<li>You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:<ul>
-<li><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Target:</strong> Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading</li>
-<li><strong>Watch App Extension Target:</strong> Siri</li>
+<li>You must remove unsupported capabilities from 2 targets, this is best done as you sign each target. The items you must delete (using the trashcan) or edit by adjusting checked boxes are listed in order from top to bottom:<ul>
+<li><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Target:</strong> <ul>
+<li>HealthKit <strong>DO NOT DELETE</strong><ul>
+<li>uncheck the Clinical Health Records if it is checked; </li>
+<li>finish with the Healthkit Background Delivery checked - you may need to toggle it off and then back on to get the signing to work</li>
+</ul>
+</li>
+<li><abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> Tag Reading capabilities (delete), (<abbr title="Near-Field Communication is used for scanning devices such as Libre sensors">NFC</abbr> Scan is OK)</li>
+<li>Push Notifications (delete)</li>
+<li>Siri (delete)</li>
+<li>Time Sensitive Notifications (delete)</li>
+</ul>
+</li>
+<li><strong>Watch App Extension Target:</strong><ul>
+<li>HealthKit <strong>DO NOT DELETE</strong><ul>
+<li>uncheck the Clinical Health Records if it is checked</li>
+<li>check the Healthkit Background Delivery</li>
+</ul>
+</li>
+<li>Siri (delete)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Add the keyword <code>SIRI_DISABLED</code> to the LoopConfigOverride.xcconfig file<ul>
 <li>Click on the filename in the left pane of <abbr title="program used to build an app">Xcode</abbr> and view it in the <abbr title="program used to build an app">Xcode</abbr> editor</li>
-<li>Examine the file and find the line that starts with<br> <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
-<li>Insert the new keyword (separated by a space) anywhere after <code>$(inherited)</code> and before the slashes near the end of the line</li>
-<li>When done, that line should be similar to:<br><code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED</code></li>
+<li>Examine the file and find the line that starts with<code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)</code></li>
+<li>Insert the new keyword (separated by a space) anywhere after <code>$(inherited)</code> before the end of the line</li>
+<li>When done, that line should be similar to: <code>SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) EXPERIMENTAL_FEATURES_ENABLED SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS DEBUG_FEATURES_ENABLED SIRI_DISABLED</code></li>
 </ul>
 </li>
 </ol>
 <p>Details about removing unsupported capabilities:</p>
 <ul>
-<li>You must disable Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading<ul>
-<li>If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target</li>
-<li>If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target</li>
+<li>You must disable some capabilities to enable building the Free app<ul>
+<li>If the target you are signing uses a capability that required a paid account, an error message will appear when you select (personal team) for that target</li>
+<li>Carefully follow the bullet list above for what needs to be modified - do not delete too many items</li>
 </ul>
 </li>
 <li>The <abbr title="program used to build an app">Xcode</abbr> error message starts with "Cannot create . . ." with a list of all the attributes not supported.<ul>
 <li>Scroll down and click on the little trash can icon next to each unsupported attribute</li>
+<li>Do NOT delete the HealthKit completely - only modify the check boxes if required</li>
 </ul>
 </li>
 <li>Scroll up and both the "Cannot create . . ." and "No profiles for . . ." error messages are gone</li>
@@ -4671,16 +4694,23 @@
 <p>The graphic below is from an older version of <code>Loop</code>. You must sign all 6 targets listed above.</p>
 </blockquote>
 <p align="center"><img alt="Xcode window showing the targets that must be signed" src="../img/success.png" width="750" /></p>
-<p>After signing the targets, click on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon under the <code>PROJECTS</code> heading. (Refer to the bright blue box in graphic above - click on that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> icon.)</p>
-<ul>
-<li>If you skip this step, you may get an "Entitlements" Build Error for either <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> or WatchApp<ul>
-<li>Follow this procedure to fix the error: <a href="../build-errors/#entitlements-error">Entitlements Error</a></li>
-<li>Much easier to just click on <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> under <code>Projects</code></li>
-</ul>
-</li>
-</ul>
 <h2 id="signing-complete">Signing Complete<a class="headerlink" href="#signing-complete" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Now that you have signed your app, return to the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> page at <a href="../build-app/#start-build">Start Build</a>.</p>
+<p>Now that you have signed your app, you will be able to build following these directions: <a href="../build-app/#start-build">Start Build</a>.  If this is your first free build on this phone, you will need to build once, then "Trust the Free Account" and then build a second time. This is only for the first build. Subsequent builds on that phone are already trusted.</p>
+<div class="admonition important">
+<p class="admonition-title">Trust the Free Account</p>
+<p>The first time you build the free app, you will be told <abbr title="program used to build an app">Xcode</abbr> cannot install on the phone because the Free Account name is not trusted.</p>
+<p>The phone will also show a message stating <code>Untrusted Developer</code>.</p>
+<p>Once you see that error message, go into the phone and follow these steps:</p>
+<ul>
+<li>Select iPhone Settings</li>
+<li>Select General</li>
+<li>Select VPN &amp; Device Management</li>
+<li>At the bottom of the screen, tap on the free developer email address</li>
+<li>On the next screen, tap on Trust "free developer email address"</li>
+<li>Tap on "Allow"</li>
+</ul>
+<p>Return to <abbr title="program used to build an app">Xcode</abbr> and build again.</p>
+</div>
 
 
 
