@@ -77,7 +77,7 @@ It is time to Sign the Targets with your [Apple ID](xcode-settings.md#add-apple-
 
 If you chose to sign manually but have a paid account, you can skip the Free Account steps below.
 
-You will be building multiple targets to make a complete app and must sign each one. With Loop 2.2.x, there are 4 targets. With Loop 3, there are 5 targets.
+You will be building multiple targets to make a complete app and must sign each one. There are 6 targets to sign.
 
 Start with the Loop target, the first one on the target list. Choose your Apple ID.
 
@@ -90,22 +90,36 @@ This section is required if you are using the free account.
 
 Some features of Loop are not available with the Free option, so as you sign, you will need to remove features that are not supported.
 
-1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target:
-    * **Loop Target:** Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading
-    * **Watch App Extension Target:** Siri
-1. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
+> These directions are for Xcode 26.2. They may vary based on Xcode version.
+
+1. You must remove unsupported capabilities from 2 targets, this is best done as you sign each target. The items you must delete (using the trashcan) or edit by adjusting checked boxes are listed in order from top to bottom:
+    * **Loop Target:** 
+        * HealthKit **DO NOT DELETE**
+            * uncheck the Clinical Health Records if it is checked; 
+            * finish with the Healthkit Background Delivery checked - you may need to toggle it off and then back on to get the signing to work
+        * NFC Tag Reading capabilities (delete), (NFC Scan is OK)
+        * Push Notifications (delete)
+        * Siri (delete)
+        * Time Sensitive Notifications (delete)
+    * **Watch App Extension Target:**
+        * HealthKit **DO NOT DELETE**
+            * uncheck the Clinical Health Records if it is checked
+            * check the Healthkit Background Delivery
+        * Siri (delete)
+2. Add the keyword `SIRI_DISABLED` to the LoopConfigOverride.xcconfig file
     * Click on the filename in the left pane of Xcode and view it in the Xcode editor
-    * Examine the file and find the line that starts with<br> `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
-    * Insert the new keyword (separated by a space) anywhere after `$(inherited)` and before the slashes near the end of the line
-    * When done, that line should be similar to:<br>`SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) SIRI_DISABLED`
+    * Examine the file and find the line that starts with`SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)`
+    * Insert the new keyword (separated by a space) anywhere after `$(inherited)` before the end of the line
+    * When done, that line should be similar to: `SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) EXPERIMENTAL_FEATURES_ENABLED SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS DEBUG_FEATURES_ENABLED SIRI_DISABLED`
 
 Details about removing unsupported capabilities:
 
-- You must disable Push Notification, Siri, Time Sensitive Notifications and Near Field Communication Tag Reading
-    * If the target you are signing does not use one of these attributes, no error message will appear when you select (personal team) for that target
-    * If the target you are signing does use one of these attributes, an error message will appear when you select (personal team) for that target
+- You must disable some capabilities to enable building the Free app
+    * If the target you are signing uses a capability that required a paid account, an error message will appear when you select (personal team) for that target
+    * Carefully follow the bullet list above for what needs to be modified - do not delete too many items
 - The Xcode error message starts with "Cannot create . . ." with a list of all the attributes not supported.
     - Scroll down and click on the little trash can icon next to each unsupported attribute
+    - Do NOT delete the HealthKit completely - only modify the check boxes if required
 - Scroll up and both the "Cannot create . . ." and "No profiles for . . ." error messages are gone
 - You are done with this target
 - Proceed to the next target
@@ -119,12 +133,22 @@ Click on each of the three remaining targets shown in the red box below, and rep
 ![Xcode window showing the targets that must be signed](img/success.png){width="750"}
 {align="center"}
 
-After signing the targets, click on the Loop icon under the `PROJECTS` heading. (Refer to the bright blue box in graphic above - click on that Loop icon.)
-
-- If you skip this step, you may get an "Entitlements" Build Error for either Loop or WatchApp
-    - Follow this procedure to fix the error: [Entitlements Error](build-errors.md#entitlements-error)
-    - Much easier to just click on Loop under `Projects`
-
 ## Signing Complete
 
-Now that you have signed your app, return to the Build Loop page at [Start Build](build-app.md#start-build).
+Now that you have signed your app, you will be able to build following these directions: [Start Build](build-app.md#start-build).  If this is your first free build on this phone, you will need to build once, then "Trust the Free Account" and then build a second time. This is only for the first build. Subsequent builds on that phone are already trusted.
+
+!!! important "Trust the Free Account"
+    The first time you build the free app, you will be told Xcode cannot install on the phone because the Free Account name is not trusted.
+
+    The phone will also show a message stating `Untrusted Developer`.
+
+    Once you see that error message, go into the phone and follow these steps:
+    
+    * Select iPhone Settings
+    * Select General
+    * Select VPN & Device Management
+    * At the bottom of the screen, tap on the free developer email address
+    * On the next screen, tap on Trust "free developer email address"
+    * Tap on "Allow"
+
+    Return to Xcode and build again.
