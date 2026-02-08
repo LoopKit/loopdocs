@@ -28,15 +28,19 @@ The graphics on this page show the `dev` branch. If you want a different branch,
         * You cannot just rename your existing branch to `dev` - you must get the `dev` branch from LoopKit
     1. When you select the action `4. Build Loop` and then click on the `Run Workflow` dropdown, you must select `dev` there before clicking the green `Run workflow` button - see [Build `Branch`](#build-branch)
 
+### Find Your Branch
+
+If you're building 'dev', you can skip ahead to Check Current Branch.  If you're building a featured branch, following these steps to copy the branch name from the Loopkit/LoopWorkspace repository will minimize typographical errors.
+1.  Go to https://github.com/LoopKit/LoopWorkspace/branches
+2.  Click the copy button next to the branch you'd like to build. The branch name is now in your paste buffer.
 
 ### Check Current `Branch`
 
-Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` where you substitute your actual *GitHub* `username`. You need to be logged into *GitHub*. Review the graphic below as you go through the steps.
+Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace/branches` where you substitute your actual *GitHub* `username`. You need to be logged into *GitHub*. Review the graphic below as you go through the steps.
 
-1. Click on the `branch` icon to display the `branches` as shown in the lower half of the graphic below:
-    * If the `branch` you want is not listed, then continue with Step 2
+1. If the `branch` you want is not listed, then continue with Step 2
     * Otherwise, skip ahead to [Update `Branch`](#update-branch)
-1. Click on the `New branch` button and follow the [Add `Branch`](#add-branch) steps
+2. Click on the `New branch` button and follow the [Add `Branch`](#add-branch) steps
 
 ![steps to add a branch](img/add-branch-01.svg){width="700"}
 {align="center"}
@@ -47,7 +51,7 @@ Each step in the list below matches with the number in the graphic. In the top h
 
 1. Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic
 2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
-3. Click on the `Branch` name box labeled 3 in the graphic and type `dev`
+3. Click on the `Branch` name box labeled 3 in the graphic and type `dev`or paste from your buffer.
     * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
 
