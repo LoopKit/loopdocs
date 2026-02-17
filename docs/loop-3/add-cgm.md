@@ -15,6 +15,7 @@ Loop can be connected to the following CGMs:
     * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
     * [Libre](#libre) **(Loop 3.4 and later)**
         * Only some Libre sensors are supported; some have encryption that limits DIY use
+    * [Eversense E3/365](#eversense-e3365) **Experimental branch only**
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add the Medtronic pump](add-pump.md) first**
@@ -150,6 +151,28 @@ There are solutions for some Libre 3 but they cannot reside on an iPhone. The An
 Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over Bluetooth).
 
 Libre 3 sensors have started appearing as well, but are unsupported. Other Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.
+
+### Eversense E3/365
+
+!!! warning "You must build feat/eversense branch to use the Eversense CGM"
+    The Eversense CGM is in feat/eversense (as of version v3.11.0) and is experimental as of now
+
+!!! warning "Wait till initialization phase is completed"
+    During the initialization phase of this system, the glucose reading might be incorrect.
+    Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
+
+!!! warning "Do not use the Eversense app and the *Loop* app concurrently"
+    The transmitter is not able to multiple connection to the same device, due to the security protocol.
+    Make sure you either use the Eversense app or the *Loop* app, but not both at the same time.
+
+The Eversense plugin for Loop, [EversenseKit](https://github.com/loopandlearn/EversenseKit), connects directly to your transmitter for glucose reading and alert notifications.
+This makes the use of the Eversense app obsolete, after the initialization phase, and should not be used while having the transmitter paired to the *Loop* app.
+
+The pairing process of both transmitters are simple:
+
+* For the Eversense E3, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
+
+* For the Eversense 365, you are required to have an internet connection and Eversense account during pairing. This is needed to fetch the security keys for your transmitter. After logging in, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
 
 ### Medtronic Enlite CGM
 
