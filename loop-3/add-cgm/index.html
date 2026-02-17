@@ -2091,6 +2091,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#eversense-e3365" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eversense E3/365
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#medtronic-enlite-cgm" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4536,6 +4547,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#eversense-e3365" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eversense E3/365
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#medtronic-enlite-cgm" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4656,6 +4678,7 @@
 <li>Only some Libre sensors are supported; some have encryption that limits <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> use</li>
 </ul>
 </li>
+<li><a href="#eversense-e3365">Eversense E3/365</a> <strong>Experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</strong></li>
 <li><a href="#medtronic-enlite-cgm">Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a><ul>
 <li>Medtronic Pump only</li>
 <li><strong>You must <a href="../add-pump/">add the Medtronic pump</a> first</strong><ul>
@@ -4767,6 +4790,32 @@
 <p>There are solutions for some Libre 3 but they cannot reside on an iPhone. The Android solution can be uploaded to <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> as a Remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>; but this requires internet access to continue closed-loop performance.</p>
 <p>Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over Bluetooth).</p>
 <p>Libre 3 sensors have started appearing as well, but are unsupported. Other Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.</p>
+<h3 id="eversense-e3365">Eversense E3/365<a class="headerlink" href="#eversense-e3365" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">You must build feat/eversense <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></p>
+<p>The Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is in feat/eversense (as of version v3.11.0) and is experimental as of now</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Wait till initialization phase is completed</p>
+<p>During the initialization phase of this system, the glucose reading might be incorrect.
+Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Do not use the Eversense app and the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app concurrently</p>
+<p>The transmitter is not able to multiple connection to the same device, due to the security protocol.
+Make sure you either use the Eversense app or the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, but not both at the same time.</p>
+</div>
+<p>The Eversense plugin for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <a href="https://github.com/loopandlearn/EversenseKit">EversenseKit</a>, connects directly to your transmitter for glucose reading and alert notifications.
+This makes the use of the Eversense app obsolete, after the initialization phase, and should not be used while having the transmitter paired to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>The pairing process of both transmitters are simple:</p>
+<ul>
+<li>
+<p>For the Eversense E3, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> pairing prompt (if shown) and wait till the pairing has completed</p>
+</li>
+<li>
+<p>For the Eversense 365, you are required to have an internet connection and Eversense account during pairing. This is needed to fetch the security keys for your transmitter. After logging in, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> pairing prompt (if shown) and wait till the pairing has completed</p>
+</li>
+</ul>
 <h3 id="medtronic-enlite-cgm">Medtronic Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#medtronic-enlite-cgm" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The Medtronic Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> is only available if you have connected it to your compatible Medtronic Pump.</p>
 <ul>
