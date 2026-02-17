@@ -14,6 +14,7 @@
         * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
     - *Medtronic* sensors connected to a Loop-compatible *Medtronic* pumps
     - Some *Libre* sensors
+    - Eversense XL & 365 sensors
 
 !!! question "FAQs"
 
@@ -58,6 +59,13 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
     * *Libre* 3
 * See [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
+## *Eversense* E3 & 365 CGM
+![img/eversense.png](img/eversense.png){width="150"}
+
+Both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters are supported, on an experimental branch feat/eversense.
+
+Eversense E3 & 365 are implantable continuous glucose monitoring (CGM) systems with a sensor inserted under the skin and a removable on-body transmitter that sends real-time glucose data and alerts to the *Loop* app.
+Unlike traditional CGMs that require frequent sensor changes, Eversense reduces insertion frequency but requires regular fingerstick calibrations.
 
 ## *Medtronic* CGM
 ![img/enlite.png](img/enlite.png){width="150"}
