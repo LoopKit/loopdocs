@@ -13,7 +13,7 @@
 
 The same script is used to build the `dev` branch as is used to build the `main` branch. Copy and paste this command in any terminal. Follow the instructions on the screen. Choose Build Loop and then choose `dev` branch.
 
-``` { title="Copy and Paste to start the BuildLoop Script" }
+``` { .bash .copy title="Copy and Paste to start the BuildLoop Script" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh)"
 ```
@@ -34,7 +34,7 @@ In the command (shown below), there is a space after the final quote, followed b
 
 > This is just an example. You need to substitute the branch you desire for `other-branch`. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.
 
-``` { title="Replace <code>other-branch</code> with the desired branch" }
+``` { .bash .copy title="Replace <code>other-branch</code> with the desired branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
    - other-branch
@@ -42,7 +42,7 @@ In the command (shown below), there is a space after the final quote, followed b
 
 If you want to customize this custom branch. You can call the Customization Select script after you download the custom branch. This script finds the most recent download in your ~/Downloads/BuildLoop folder. If you want to customize a specific branch, first set the terminal to be in the LoopWorkspace folder for the download you want to customize.
 
-``` { title="Copy and paste to start the CustomizationSelect script" }
+``` { .bash .copy title="Copy and paste to start the CustomizationSelect script" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)"
 ```

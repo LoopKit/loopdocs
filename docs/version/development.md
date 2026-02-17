@@ -4,7 +4,9 @@ The early history of the *Loop* app was touched on in the introductory [*LoopDoc
 
 The [*Loop* Releases](../version/releases.md) page lists releases since version 2.0 in reverse chronological order.
 
-The next version of the *Loop* app is developed using branch(es), independent of the released *Loop* version, which is found in <span>the `main` branch</span>. <span>The `dev` branch</span> is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of *Loop* is improved.
+The next version of the *Loop* app is developed using branch(es), independent of the released *Loop* version, which is found in <span>the `main` branch</span>. 
+
+<span>The `dev` branch</span> is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of *Loop* is improved.
 
 If you choose to use `dev`, you accept that this code is not released.
 
@@ -14,7 +16,8 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to `Loop v3.10.0`. 
 
-A few days after v3.10.0 was released, the dev branch was updated to be identical to main except for version number of 3.11.0. Work leading to the next update for `dev` is found in the `update_dev_to_3.11.1` branch.
+The current version of `dev` is v3.11.1.
+
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -43,11 +46,10 @@ The table below lists active branches. Note that updates may occur and be announ
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.10.0 | 10 Jan 2026 | release|
-| dev | 3.11.0 | 11 Jan 2026 | same as main, except version number |
-| [update_dev_to_3.11.1](#update-to-dev-3111) | 3.11.1 | 02 Feb 2026 | collect updates for the next version of dev <br>Details are in [PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408) |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `783d390` | 3.11.1 | 02 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `0282e18` | 3.11.1 | 02 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae`<br>  - SHA for MedtrumKit is `f21d808` |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `41d63dd` | 3.11.0 | 24 Jan 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `a478d8f` |
+| dev | 3.11.1 | 17 Feb 2026 | updates with respect to `main` include<br>[PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408) |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `TBD` | 3.11.1 | 02 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `TBD` | 3.11.1 | 02 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae`<br>  - SHA for MedtrumKit is `c79a883` |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `TBD` | 3.11.0 | 24 Jan 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `4a40994c` |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -68,24 +70,42 @@ For full instructions on building different branches, review these pages:
 * [Browser Build: Build a Version in Development](../browser/build-dev-browser.md#build-development-version){: target="_blank" }
 * [Mac Xcode: Build a Version in Development](../build/build-dev-mac.md#build-other-branches){: target="_blank" }
 
-For Browser Build, use the page linked above to add the desired branch name (from the table above) to your fork. In other words, where the directions indicate the `dev` branch, you substitute the branch name of interest.
+#### Browser Build
+
+You will need to enter the name of the branch you want to add to your fork. To make it easier for you, click on one of the selections below to add the branch to your paste buffer, then follow the directions using this branch instead of `dev`.
+
+If you are a new builder wanting to add Medtrum or Dana, go on and build the feat/eversense branch which also supports those pumps.
+
+
+``` { .bash .copy }
+feat/pod-keep-alive
+```
+
+``` { .bash .copy }
+feat/eversense
+```
+
+
+Use the page linked above to add the desired branch name (from the table above) to your fork. In other words, where the directions indicate the `dev` branch, you substitute the branch name of interest.
+
+#### Mac-Xcode Build 
 
 For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
 
 
-``` { title="Download and build the feat/pod-keep-alive branch" }
+``` { .bash .copy title="Download and build the feat/pod-keep-alive branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
    - feat/pod-keep-alive
 ```
 
-``` { title="Download and build the feat/dev-dana-medtrum branch" }
+``` { .bash .copy  title="Download and build the feat/dev-dana-medtrum branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
    - feat/dev-dana-medtrum
 ```
 
-``` { title="Download and build the feat/eversense branch" }
+``` { .bash .copy title="Download and build the feat/eversense branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
    - feat/eversense
@@ -179,15 +199,25 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 ### Feature Branch: Medtrum and Dana Support
 
-**Updates are believed to have fixed the active insulin issues reported for both Dana and Medtrum, but this should be tested by experts to confirm pumps are working well with Loop.**
+General statement about these pump managers. These were created for use with Trio and, at the time, some of the differences between the way Loop and other OS-AID systems handle insulin accounting were not completely understood.
+
+* Initially the bolusing pump event problem was pointed out and a fix provided
+* There was still an issue with reporting temp basal pump events
+    * This issue was fixed for MedtrumKit on 17 Feb 2026
+    * See the now closed MedtrumKit Issue: [Loop and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct](https://github.com/jbr7rr/MedtrumKit/issues/77)
+* Until there is time to copy these inputs to the DanaKit repository, those using Dana with Loop should only use Dosing Strategy of Automatic Bolus
+
+Anyone uses these new pump managers need to be using either one of these branches:
+
+* `feat/dev-dana-medtrum` 
+* `feat/eversense` 
 
 !!! important "Experts Only"
-    Please only use the `feat/dev-dana-medtrum` branch if you are prepared to follow along in zulipchat and are willing to test an experimental branch to help test and resolve issues.
+    Please only use an experimental branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.
 
-    * Please ensure you have the latest version of this branch by synching before you build:
-        * `feat/dev-dana-medtrum`
+    * Please ensure you have the latest version of a given branch by synching before you build:
         * Mac-Xcode: type `git pull --recurse` to update an existing clone or download a fresh copy
-        * Browser Build, the Build Loop action, with the `feat/dev-dana-medtrum` branch selected should automatically sync your fork for you
+        * Browser Build, the Build Loop action, with the `feat/dev-dana-medtrum` or `feat/eversense` branch selected should automatically sync your fork for you
 
 
 ### Feature Branch: Eversense Support
