@@ -72,20 +72,6 @@ For full instructions on building different branches, review these pages:
 
 #### Browser Build
 
-You will need to enter the name of the branch you want to add to your fork. To make it easier for you, click on one of the selections below to add the branch to your paste buffer, then follow the directions using this branch instead of `dev`.
-
-If you are a new builder wanting to add Medtrum or Dana, go on and build the feat/eversense branch which also supports those pumps.
-
-
-``` { .bash .copy }
-feat/pod-keep-alive
-```
-
-``` { .bash .copy }
-feat/eversense
-```
-
-
 Use the page linked above to add the desired branch name (from the table above) to your fork. In other words, where the directions indicate the `dev` branch, you substitute the branch name of interest.
 
 #### Mac-Xcode Build 

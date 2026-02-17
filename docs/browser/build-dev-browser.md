@@ -1,6 +1,6 @@
 ## Overview
 
-**This page is only relevant when building the `dev` branch with a browser.**
+**This page is only relevant when building the `dev` (or a feature) branch with a browser.**
 
 **For *Mac*, please see: [Build Loop `dev` with *Mac*](../build/build-dev-mac.md)**
 
@@ -28,6 +28,22 @@ The graphics on this page show the `dev` branch. If you want a different branch,
         * You cannot just rename your existing branch to `dev` - you must get the `dev` branch from LoopKit
     1. When you select the action `4. Build Loop` and then click on the `Run Workflow` dropdown, you must select `dev` there before clicking the green `Run workflow` button - see [Build `Branch`](#build-branch)
 
+### Feature Branch
+
+If you're building 'dev', you can skip ahead to [Check Current Branch](#check-current-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
+
+
+``` { .bash .copy }
+feat/pod-keep-alive
+```
+
+``` { .bash .copy }
+feat/dev-dana-medtrum
+```
+
+``` { .bash .copy }
+feat/eversense
+```
 
 ### Check Current `Branch`
 
@@ -47,8 +63,9 @@ Each step in the list below matches with the number in the graphic. In the top h
 
 1. Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic
 2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
-3. Click on the `Branch` name box labeled 3 in the graphic and type `dev`
+3. Click on the `Branch` name box labeled 3 in the graphic and type `dev` or paste the feature branch name from your paste buffer
     * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
+    * See [Feature Branch](#feature-branch) if you need to fill your paste buffer
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
 
 ![steps to add a branch continued](img/add-branch-02.svg){width="700"}
