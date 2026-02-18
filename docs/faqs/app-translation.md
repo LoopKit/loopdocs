@@ -32,8 +32,7 @@ For the *Loop* app and the submodules (Pumps, CGM and Services) associated with 
 !!! note "Want to Translate?"
     To volunteer to translate, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate.
 
-    If you want translate one of the new CGM / Pump repositories: DanaKit, EversenseKit and MedtrumKit, indicate that as well. Those new repositories are handled using a [*crowdin* project](#crowdin-projects) for each repository.
-
+- - -
 
 ## Code Translation
 
@@ -43,32 +42,21 @@ If you notice *Loop* app messages in English even though you selected a specific
 
 ### Loop *lokalise* project
 
-Translations for most of the repositories used by Loop are performed by volunteers at [*lokalise*](https://app.lokalise.com/projects).
+Translations for the repositories used by Loop are performed by volunteers at [*lokalise*](https://app.lokalise.com/projects).
 
-Some newer CGM and Pump modules, currently found in feature branches, get their translations from *crowdin* instead of *lokalise*.
+Some newer CGM and Pump modules, currently found in feature branches, were initially configured to get their translations from *crowdin* instead of *lokalise*.
 
 * There was an early attempt to use both *lokalise* and *crowdin* but merging input from two sources was deemed impractical
-* The DanaKit, MedtrumKit and EversenseKit translations are each handled by separate [*crowdin* projects](#crowdin-projects)
-
-### *crowdin* projects
-
-Some new pump and CGM modules are provided by developers associated with the *Trio* (*OpenAPS*) community. They have an established base of translators who are familiar with using *crowdin*. Translations for each of these new repositories is handled directly at the repository level. Loop translators who want to help with these repositories can just add that information to the request when they [volunteer to translate](#volunteer-to-translate).
-
-* [DanaKit crowdin](https://crowdin.com/project/danakit)
-* [MedtrumKit crowdin](https://crowdin.com/project/medtrumkit)
-* EversenseKit - not configured yet, coming soon
+    * Briefly, DanaKit, MedtrumKit and EversenseKit translations were handled by their separate *crowdin* projects
+* In the interest of efficiency and offloading responsibility from developers so they can develop, these have been returned to lokalise
 
 ### Volunteer to Translate
 
-To volunteer, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate. Indicate whether you need access to the new repositories (*crowdin*) in addition to the Loop repositories. You will get an invitation to join the Loop *lokalise* project. You do not need to start a new *lokalise* project. Do not start a free *lokalise* trial or sign up for anything special; just join the project you are invited to.
+To volunteer, join [Loop zulipchat](https://loop.zulipchat.com/) and send a direct message to Marion Barker with your email address and the language(s) you can translate. You will get an invitation to join the Loop *lokalise* project. You do not need to start a new *lokalise* project. Do not start a free *lokalise* trial or sign up for anything special; just join the project you are invited to.
 
 > If you are using the *Trio* or *iAPS* app instead of the *Loop* app, you can still assist with Pump, CGM and Tidepool module localization through *Loop* *lokalise*. Some repositories from *Loop* are used by [*Trio* and *iAPS*](#what-about-other-ios-apps).
 
-Alternative contacts for addtion to *crowdin*:
-
-* Bastiaan Verhaar in zulipchat
-    * Bastiaan is known as `INeedSugar` in [Trio discord](https://discord.gg/FnwFEFUwXE) and [iAPS discord](https://discord.com/invite/ptkk2Y264Z)
-* `lubor` in [iAPS discord](https://discord.com/invite/ptkk2Y264Z)
+- - -
 
 ## Lokalise Information
 
@@ -121,7 +109,7 @@ If a `key` does not have a translation in a given language, then when running th
 
 ### Select a Submodule
 
-Suppose you know that you want to modify translations for a particular submodule (CGM, Pump or Service module). You can choose context in *lokalise*; or if it is one of the newer submodules, go directly to the *crowdin* project for that submodule. See [Submodule Table for Multiple Apps](#submodule-table-for-multiple-apps) for a detailed listing.
+Suppose you know that you want to modify translations for a particular submodule (CGM, Pump or Service module). You can choose context in *lokalise*. See [Submodule Table for Multiple Apps](#submodule-table-for-multiple-apps) for a detailed listing.
 
 * Tap on Filter
 * Tap on Context
@@ -132,8 +120,6 @@ Suppose you know that you want to modify translations for a particular submodule
     * those strings do not need to be translated and the keys should be configured to be hidden from translators
 
 The screenshot below is configured for someone translating simplified Chinese for the DanaKit pump.
-
-**NOTE** The DanaKit keys are no longer visible in *lokalise*. They are being handled using [*crowdin*](#crowdin-projects).
 
 ![choose a submodule for translation](img/lokalise-by-context-submodule-xcstrings.png){width="1024"}
 {align="center"}
@@ -182,8 +168,8 @@ The *Trio* and the *iAPS* apps use submodules for CGM, Pump and Service features
 
 The bottom line is
 
-* Loop and older (pre 2025) submodule translations are handled at [*lokalise*](https://app.lokalise.com/)
-* New submodules, DanaKit, EversenseKit, and MedtrumKit. are currently handled in [*crowdin* projects](#crowdin-projects) for the individual repositories
+* Loop and all its submodule translations are handled at [*lokalise*](https://app.lokalise.com/)
+    * This includes cgm managers, pump managers and service managers used by several OS-AID systems
 * *Trio* translations are handled at [crowdin for *Trio*](https://crowdin.com/project/trio/invite/public?h=48e1a77abd1611860f475c1ce17540112591650&show_welcome)
 * *iAPS* translations are handled at [crowdin for *iAPS*](https://crowdin.com/project/iaps)
 
@@ -197,24 +183,19 @@ These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled 
 | Type |  <div style="width:145px"></div> Name | Files |
 |:-:|:--|:--|
 | CGM | `CGMBLEKit` | CGMBLEKit/CGMBLEKit/Localizable.xcstrings<br>CGMBLEKit/CGMBLEKitUI/Localizable.xcstrings |
+| CGM | `EversenseKit` | EversenseKit/EversenseKitUI/Localizable.xcstrings |
 | CGM | `G7SensorKit` | G7SensorKit/G7SensorKit/Localizable.xcstrings<br>G7SensorKit/G7SensorKitUI/Localizable.xcstrings |
 | CGM | `LibreTransmitter` | LibreTransmitter/LibreTransmitter/Localizable.xcstrings<br>LibreTransmitter/LibreTransmitterUI/Localizable.xcstrings |
 | CGM | `Dexcom Share` | dexcom-share-client-swift/ShareClient/Localizable.xcstrings<br>dexcom-share-client-swift/ShareClientUI/Localizable.xcstrings |
 | CGM | `NightscoutRemoteCGM` | NightscoutRemoteCGM/NightscoutRemoteCGM/Localizable.xcstrings | 
+| Pump | `DanaKit` | DanaKit/Localizable.xcstrings |
+| Pump | `MedtrumKit` | MedtrumKit/Localizable.xcstrings |
 | Pump | `OmniBLE` | OmniBLE/Localizable.xcstrings<br>OmniBLE/OmniBLE/Localizable.xcstrings |
 | Pump | `RileyLinkKit` | RileyLinkKit/RileyLink/Localizable.xcstrings<br>RileyLinkKit/RileyLink/LoopKit.xcstrings<br>RileyLinkKit/RileyLinkBLEKit/Localizable.xcstrings<br>RileyLinkKit/RileyLinkKitUI/Localizable.xcstrings |
 | Pump | `MinimedKit` | MinimedKit/MinimedKit/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/mul.lproj/MinimedPumpManager.xcstrings|
 | Pump | `OmniKit` | OmniKit/Localizable.xcstrings<br>OmniKit/OmniKit/Resources/Localizable.xcstrings<br>OmniKit/OmniKitUI/Resources/Localizable.xcstrings |
 | Misc | `LoopKit` | LoopKit/LoopKit/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/InsulinKit.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/LegacyInsulinDeliveryTableViewController.xcstrings<br>LoopKit/MockKit/Resources/Localizable.xcstrings<br>LoopKit/MockKitUI/Resources/Localizable.xcstrings |
 | Service | `TidepoolService` | TidepoolService/TidepoolServiceKit/Localizable.xcstrings<br>TidepoolService/TidepoolServiceKitUI/Localizable.xcstrings |
-
-These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled by *crowdin*.
-
-| Type |  <div style="width:145px"></div> Name | Files |
-|:-:|:--|:--|
-| Pump | `DanaKit` | see [DanaKit *crowdin*](https://crowdin.com/project/danakit) |
-| Pump | `MedtrumKit` | see [MedtrumKit *crowdin*](https://crowdin.com/project/medtrumkit) | 
-| CGM | `EversenseKit` | crowdin project is not yet configured |
 
 The modules are specific to the particular app:
 
