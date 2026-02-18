@@ -64,7 +64,7 @@ Each step in the list below matches with the number in the graphic. In the top h
 1. Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic
 2. Click on the drop down menu labeled 2 in the graphic and choose `dev`
 3. Click on the `Branch` name box labeled 3 in the graphic and type `dev` or paste the feature branch name from your paste buffer
-    * The branch name in your `fork` should always match the branch name you are adding; check that you type it correctly
+    * The branch name in your `fork` should always match the branch name you are adding - it is best to use a paste buffer (to minimize typographical errors)
     * See [Feature Branch](#feature-branch) if you need to fill your paste buffer
 4. Review the dialog items to make sure everything is correct and then tap on Create branch
 
