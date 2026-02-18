@@ -14,6 +14,7 @@
         * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
     - *Medtronic* sensors connected to a Loop-compatible *Medtronic* pumps
     - Some *Libre* sensors
+    - Eversense E3 and 365 sensors
 
 !!! question "FAQs"
 
@@ -21,7 +22,7 @@
         1. Only some *Libre* sensors have methods to read them directly on an iPhone
         2. There are more methods for Android
         3. See also [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
-    - **"What about Eversense?"** Refer to [CGMs Not Supported in the *Loop* App](#cgms-not-supported-in-the-loop-app)
+    - **"What about Eversense?"** Refer to [*Eversense* E3 and 365 CGM](#eversense-e3-and-365-cgm)
 
 
 ## Continuous Glucose Monitor (CGM)
@@ -58,6 +59,15 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
     * *Libre* 3
 * See [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
+## *Eversense* E3 and 365 CGM
+![img/eversense.png](img/eversense.png){width="150"}
+
+Both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters are supported, on an experimental branch feat/eversense.
+
+* See [Loop Development: Branches](../version/development.md#branches){: target="_blank" } for more information on how to build this branch.
+
+Eversense E3 and 365 are implantable continuous glucose monitoring (CGM) systems with a sensor inserted under the skin and a removable on-body transmitter that sends real-time glucose data and alerts to the *Loop* app.
+Unlike traditional CGMs that require frequent sensor changes, Eversense reduces insertion frequency but requires weekly fingerstick calibrations.
 
 ## *Medtronic* CGM
 ![img/enlite.png](img/enlite.png){width="150"}
@@ -79,13 +89,13 @@ The *Loop* app can download *Dexcom* Share data for use in modeling glucose. How
 
 ## Nightscout as a Remote CGM
 
-Version 3 or later of the *Loop* app can use Nightscout as a remote source for CGM data. This requires cell or WiFi connection.
+The *Loop* app allows you to use Nightscout as a remote source for CGM data. This requires cell or WiFi connection.
 
 
 ## CGMs Not Supported in the *Loop* App 
 
 
-Currently, there are no solutions for *Eversense*, *Guardian* or *Libre 3* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
+Currently, there are no solutions for *Guardian* or *Libre 3* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
 
 ## Next Step
 

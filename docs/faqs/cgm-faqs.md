@@ -4,8 +4,9 @@ The following CGM are supported by some or all versions of Loop:
 
 * All *Dexcom* CGM (Loop 3 and later)
 * Some *Libre* CGM (Loop 3.4 and later)
+* Eversense E3 and 365 (Loop 3.11 and later, via an experimental feature branch)
 * Medtronic Enlite CGM when used with a compatible pump
-* Remote CGM (requires internet access
+* Remote CGM (requires internet access)
     * *Dexcom* Share
     * Nightscout as CGM (Loop 3 and later)
 
@@ -128,11 +129,12 @@ If you prefer not to customize Loop, then you can configure [Nightscout](https:/
 * If you choose this option, your CGM will not act as a heartbeat to wake the app when the phone is locked or in the background
 * You probably have a pump that serves this role, but if your pump is not actively waking your app and you use *LibreLinkUp*, consider [CGM Customization](#cgm-customization).
 
-## Can I use Eversense?
+## Can I use Eversense E3 or Eversense 365?
 
-There is a method to upload Eversense to Nightscout using an Android phone, but there is no method to read an Eversense directly with an iPhone at this time.
+Using the experimental branch, feat/eversense using Loop 3.11.0 or newer, you can make a native connection to your Eversense E3 or 365.
 
-You can use Nightscout as a CGM with Eversense, but that requires internet access.
+* See [Loop Development: Branches](../version/development.md#branches){: target="_blank" } for more information on how to build this branch.
+
 
 ## Can the *Loop* app read CGM data from Nightscout?
 
