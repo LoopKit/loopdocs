@@ -37,14 +37,14 @@ Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` wher
     * Otherwise, skip ahead to [Update `Branch`](#update-branch)
 1. Click on the `New branch` button
     * To add the `dev` branch, go to the [Add `Branch`](#add-branch) instructions
-    * To add a feature branch, start with [Feature Branch](#feature-branch) before continuing with the add branch instructions
+    * To add a feature branch, start with [Feature `Branch`](#feature-branch) before continuing with the add `branch` instructions
 
 ![steps to add a branch](img/add-branch-01.svg){width="700"}
 {align="center"}
 
-### Feature Branch
+### Feature `Branch`
 
-If you're building `dev`, you can skip ahead to [AddBranch](#add-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
+If you're building `dev`, you can skip ahead to [Add `Branch`](#add-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
 
 
 ``` { .bash .copy }
