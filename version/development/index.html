@@ -4911,12 +4911,13 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The early history of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app was touched on in the introductory <a href="../../intro/overview-intro/#development-history"><em>LoopDocs</em> Overview: Development History</a> section.</p>
 <p>The <a href="../releases/"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Releases</a> page lists releases since version 2.0 in reverse chronological order.</p>
-<p>The next version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is developed using <abbr title="version of code within a single repository or workspace repository">branch</abbr>(es), independent of the released <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> version, which is found in <span>the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span>. <span>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span> is used by the developers to push out changes for users to test. You should only test a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is improved.</p>
+<p>The next version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is developed using <abbr title="version of code within a single repository or workspace repository">branch</abbr>(es), independent of the released <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> version, which is found in <span>the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span>. </p>
+<p><span>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span> is used by the developers to push out changes for users to test. You should only test a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is improved.</p>
 <p>If you choose to use <code>dev</code>, you accept that this code is not released.</p>
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop v3.10.0</code>. </p>
-<p>A few days after v3.10.0 was released, the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> was updated to be identical to main except for version number of 3.11.0. Work leading to the next update for <code>dev</code> is found in the <code>update_dev_to_3.11.1</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>The current version of <code>dev</code> is v3.11.1.</p>
 <p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h3 id="branches">Branches<a class="headerlink" href="#branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.</p>
@@ -4958,33 +4959,27 @@
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
-<td style="text-align: left;">3.11.0</td>
-<td style="text-align: left;">11 Jan 2026</td>
-<td style="text-align: left;">same as main, except version number</td>
+<td style="text-align: left;">3.11.1</td>
+<td style="text-align: left;">17 Feb 2026</td>
+<td style="text-align: left;">updates with respect to <code>main</code> include<br><a href="https://github.com/LoopKit/LoopWorkspace/pull/408"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 408</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#update-to-dev-3111">update_dev_to_3.11.1</a></td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>04dc876</code></td>
 <td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">02 Feb 2026</td>
-<td style="text-align: left;">collect updates for the next version of dev <br>Details are in <a href="https://github.com/LoopKit/LoopWorkspace/pull/408"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 408</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>783d390</code></td>
-<td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">02 Feb 2026</td>
+<td style="text-align: left;">17 Feb 2026</td>
 <td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>9992773</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>0282e18</code></td>
+<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>865110f</code></td>
 <td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">02 Feb 2026</td>
-<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>dbe63ae</code><br>  - SHA for MedtrumKit is <code>f21d808</code></td>
+<td style="text-align: left;">17 Feb 2026</td>
+<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>dbe63ae</code> (Known TBR issues)<br>  - SHA for MedtrumKit is <code>c79a883</code> (TBR issues fixed)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>41d63dd</code></td>
+<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>84bf0c7</code></td>
 <td style="text-align: left;">3.11.0</td>
-<td style="text-align: left;">24 Jan 2026</td>
-<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is <code>a478d8f</code></td>
+<td style="text-align: left;">17 Feb 2026</td>
+<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is <code>4a40994</code></td>
 </tr>
 </tbody>
 </table>
@@ -5005,19 +5000,21 @@
 <li><a href="../../browser/build-dev-browser/#build-development-version" target="_blank">Browser Build: Build a Version in Development</a></li>
 <li><a href="../../build/build-dev-mac/#build-other-branches" target="_blank">Mac <abbr title="program used to build an app">Xcode</abbr>: Build a Version in Development</a></li>
 </ul>
-<p>For Browser Build, use the page linked above to add the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> name (from the table above) to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. In other words, where the directions indicate the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name of interest.</p>
+<h4 id="browser-build">Browser Build<a class="headerlink" href="#browser-build" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Use the page linked above to add the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> name (from the table above) to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. In other words, where the directions indicate the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name of interest.</p>
+<h4 id="mac-xcode-build">Mac-<abbr title="program used to build an app">Xcode</abbr> Build<a class="headerlink" href="#mac-xcode-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For Mac <abbr title="program used to build an app">Xcode</abbr> build, the lines you need to copy and paste into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window are explicitly provided below:</p>
-<div class="highlight"><span class="filename">Download and build the feat/pod-keep-alive branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
-   - feat/pod-keep-alive
+<div class="copy highlight"><span class="filename">Download and build the feat/pod-keep-alive branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>feat/pod-keep-alive
 </code></pre></div>
-<div class="highlight"><span class="filename">Download and build the feat/dev-dana-medtrum branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
-   - feat/dev-dana-medtrum
+<div class="copy highlight"><span class="filename">Download and build the feat/dev-dana-medtrum branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>feat/dev-dana-medtrum
 </code></pre></div>
-<div class="highlight"><span class="filename">Download and build the feat/eversense branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
-   - feat/eversense
+<div class="copy highlight"><span class="filename">Download and build the feat/eversense branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>feat/eversense
 </code></pre></div>
 <h3 id="version-number-plan">Version Number Plan<a class="headerlink" href="#version-number-plan" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Please see <a href="../releases/#loop-version-numbering"><code>Loop</code> Version Numbering</a> for the current method for version numbering for the <code>main</code> and <code>dev</code> branches.</p>
@@ -5082,15 +5079,28 @@
 <p>If the phone moves out of <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> range, then the app is not triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> heartbeat and the pod disconnects from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
 </blockquote>
 <h3 id="feature-branch-medtrum-and-dana-support">Feature Branch: Medtrum and Dana Support<a class="headerlink" href="#feature-branch-medtrum-and-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>Updates are believed to have fixed the active insulin issues reported for both Dana and Medtrum, but this should be tested by experts to confirm pumps are working well with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</strong></p>
+<p>General statement about these pump managers. These were created for use with Trio and, at the time, some of the differences between the way <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and other OS-AID systems handle insulin accounting were not completely understood.</p>
+<ul>
+<li>Initially the bolusing pump event problem was pointed out and a fix provided</li>
+<li>There was still an issue with reporting temp basal pump events<ul>
+<li>This issue was fixed for MedtrumKit on 17 Feb 2026</li>
+<li>See the now closed MedtrumKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr>: <a href="https://github.com/jbr7rr/MedtrumKit/issues/77"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct</a></li>
+</ul>
+</li>
+<li>Until there is time to ensure equivalent fixes to the DanaKit <abbr title="contains project files and each file's revision history">repository</abbr>, those using Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> should only use <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> - the insulin accounting will still not be perfect, but using <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> helps</li>
+</ul>
+<p>Anyone uses these new pump managers need to be using either one of these branches:</p>
+<ul>
+<li><code>feat/dev-dana-medtrum</code> </li>
+<li><code>feat/eversense</code> </li>
+</ul>
 <div class="admonition important">
 <p class="admonition-title">Experts Only</p>
-<p>Please only use the <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to test an experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> to help test and resolve issues.</p>
+<p>Please only use an experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.</p>
 <ul>
-<li>Please ensure you have the latest version of this <abbr title="version of code within a single repository or workspace repository">branch</abbr> by synching before you build:<ul>
-<li><code>feat/dev-dana-medtrum</code></li>
+<li>Please ensure you have the latest version of a given <abbr title="version of code within a single repository or workspace repository">branch</abbr> by synching before you build:<ul>
 <li>Mac-<abbr title="program used to build an app">Xcode</abbr>: type <code>git pull --recurse</code> to update an existing <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> or download a fresh copy</li>
-<li>Browser Build, the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> action, with the <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> selected should automatically sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> for you</li>
+<li>Browser Build, the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> action, with the <code>feat/dev-dana-medtrum</code> or <code>feat/eversense</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> selected should automatically sync your <abbr title="a copy of code in a github repository other than the original">fork</abbr> for you</li>
 </ul>
 </li>
 </ul>

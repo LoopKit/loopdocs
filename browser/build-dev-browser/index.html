@@ -1496,6 +1496,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#add-branch" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4475,6 +4486,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#add-branch" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4587,7 +4609,7 @@
   <h1>Build Loop dev with Browser</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p><strong>This page is only relevant when building the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> with a browser.</strong></p>
+<p><strong>This page is only relevant when building the <code>dev</code> (or a feature) <abbr title="version of code within a single repository or workspace repository">branch</abbr> with a browser.</strong></p>
 <p><strong>For <em>Mac</em>, please see: <a href="../../build/build-dev-mac/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <code>dev</code> with <em>Mac</em></a></strong></p>
 <p><strong>No matter the method used to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev, you are testing development code. Please read this link now before continuing.</strong></p>
 <ul>
@@ -4624,16 +4646,29 @@
 <li>Otherwise, skip ahead to <a href="#update-branch">Update <code>Branch</code></a></li>
 </ul>
 </li>
-<li>Click on the <code>New branch</code> button and follow the <a href="#add-branch">Add <code>Branch</code></a> steps</li>
+<li>Click on the <code>New branch</code> button<ul>
+<li>To add the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, go to the <a href="#add-branch">Add <code>Branch</code></a> instructions</li>
+<li>To add a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, start with <a href="#feature-branch">Feature <code>Branch</code></a> before continuing with the add <code>branch</code> instructions</li>
+</ul>
+</li>
 </ol>
 <p align="center"><img alt="steps to add a branch" src="../img/add-branch-01.svg" width="700" /></p>
+<h3 id="feature-branch">Feature <code>Branch</code><a class="headerlink" href="#feature-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you're building <code>dev</code>, you can skip ahead to <a href="#add-branch">Add <code>Branch</code></a>.  If you're building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, copy the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name into your paste buffer to minimize typographical errors.</p>
+<div class="copy highlight"><pre><span></span><code>feat/pod-keep-alive
+</code></pre></div>
+<div class="copy highlight"><pre><span></span><code>feat/dev-dana-medtrum
+</code></pre></div>
+<div class="copy highlight"><pre><span></span><code>feat/eversense
+</code></pre></div>
 <h3 id="add-branch">Add <code>Branch</code><a class="headerlink" href="#add-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:</p>
 <ol>
 <li>Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic</li>
 <li>Click on the drop down menu labeled 2 in the graphic and choose <code>dev</code></li>
-<li>Click on the <code>Branch</code> name box labeled 3 in the graphic and type <code>dev</code><ul>
-<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <code>fork</code> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding; check that you type it correctly</li>
+<li>Click on the <code>Branch</code> name box labeled 3 in the graphic and type <code>dev</code> or paste the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> name from your paste buffer<ul>
+<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <code>fork</code> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding - it is best to use a paste buffer (to minimize typographical errors)</li>
+<li>See <a href="#feature-branch">Feature Branch</a> if you need to fill your paste buffer</li>
 </ul>
 </li>
 <li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>

@@ -4463,8 +4463,8 @@
 </ul>
 <h2 id="build-dev-with-mac">Build <code>dev</code> with Mac<a class="headerlink" href="#build-dev-with-mac" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The same script is used to build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> as is used to build the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. Copy and paste this command in any terminal. Follow the instructions on the screen. Choose Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and then choose <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<div class="highlight"><span class="filename">Copy and Paste to start the BuildLoop Script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh)&quot;
+<div class="copy highlight"><span class="filename">Copy and Paste to start the BuildLoop Script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildSelectScript.sh<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
 <p>For more detailed instructions, head over to:</p>
 <ul>
@@ -4484,13 +4484,13 @@
 <blockquote>
 <p>This is just an example. You need to substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you desire for <code>other-branch</code>. The example below uses a continuation character to put the extra characters on a new line to make this easier to read.</p>
 </blockquote>
-<div class="highlight"><span class="filename">Replace <code>other-branch</code> with the desired branch</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)&quot; \
-   - other-branch
+<div class="copy highlight"><span class="filename">Replace <code>other-branch</code> with the desired branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>other-branch
 </code></pre></div>
 <p>If you want to customize this custom <abbr title="version of code within a single repository or workspace repository">branch</abbr>. You can call the Customization Select script after you download the custom <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This script finds the most recent download in your ~/Downloads/BuildLoop folder. If you want to customize a specific <abbr title="version of code within a single repository or workspace repository">branch</abbr>, first set the terminal to be in the LoopWorkspace folder for the download you want to customize.</p>
-<div class="highlight"><span class="filename">Copy and paste to start the CustomizationSelect script</span><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)&quot;
+<div class="copy highlight"><span class="filename">Copy and paste to start the CustomizationSelect script</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
 <h2 id="update-loop-dev">Update <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev<a class="headerlink" href="#update-loop-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>While <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev is under active development, you should monitor zulipchat and update frequently.</p>
