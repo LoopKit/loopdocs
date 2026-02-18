@@ -28,9 +28,23 @@ The graphics on this page show the `dev` branch. If you want a different branch,
         * You cannot just rename your existing branch to `dev` - you must get the `dev` branch from LoopKit
     1. When you select the action `4. Build Loop` and then click on the `Run Workflow` dropdown, you must select `dev` there before clicking the green `Run workflow` button - see [Build `Branch`](#build-branch)
 
+### Check Current `Branch`
+
+Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` where you substitute your actual *GitHub* `username`. You need to be logged into *GitHub*. Review the graphic below as you go through the steps.
+
+1. Click on the `branch` icon to display the `branches` as shown in the lower half of the graphic below:
+    * If the `branch` you want is not listed, then continue with Step 2
+    * Otherwise, skip ahead to [Update `Branch`](#update-branch)
+1. Click on the `New branch` button
+    * To add the `dev` branch, go to the [Add `Branch`](#add-branch) instructions
+    * To add a feature branch, start with [Feature Branch](#feature-branch) before continuing with the add branch instructions
+
+![steps to add a branch](img/add-branch-01.svg){width="700"}
+{align="center"}
+
 ### Feature Branch
 
-If you're building 'dev', you can skip ahead to [Check Current Branch](#check-current-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
+If you're building `dev`, you can skip ahead to [AddBranch](#add-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
 
 
 ``` { .bash .copy }
@@ -44,18 +58,6 @@ feat/dev-dana-medtrum
 ``` { .bash .copy }
 feat/eversense
 ```
-
-### Check Current `Branch`
-
-Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` where you substitute your actual *GitHub* `username`. You need to be logged into *GitHub*. Review the graphic below as you go through the steps.
-
-1. Click on the `branch` icon to display the `branches` as shown in the lower half of the graphic below:
-    * If the `branch` you want is not listed, then continue with Step 2
-    * Otherwise, skip ahead to [Update `Branch`](#update-branch)
-1. Click on the `New branch` button and follow the [Add `Branch`](#add-branch) steps
-
-![steps to add a branch](img/add-branch-01.svg){width="700"}
-{align="center"}
 
 ### Add `Branch`
 
