@@ -172,7 +172,7 @@ The pairing process of both transmitters are simple:
 
 * For the Eversense E3, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
 
-* For the Eversense E365, you are required to have an internet connection and Eversense account during pairing. This is needed to fetch the security keys for your transmitter. After logging in, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
+* For the Eversense 365, you are required to have an internet connection and Eversense account during pairing. This is needed to fetch the security keys for your transmitter. After logging in, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
 
 ### Medtronic Enlite CGM
 
