@@ -4178,17 +4178,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#crowdin-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        crowdin projects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#volunteer-to-translate" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4564,17 +4553,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#crowdin-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        crowdin projects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#volunteer-to-translate" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4774,38 +4752,27 @@
 <div class="admonition note">
 <p class="admonition-title">Want to Translate?</p>
 <p>To volunteer to translate, join <a href="https://loop.zulipchat.com/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> zulipchat</a> and send a direct message to Marion Barker with your email address and the language(s) you can translate.</p>
-<p>If you want translate one of the new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> / Pump repositories: DanaKit, EversenseKit and MedtrumKit, indicate that as well. Those new repositories are handled using a <a href="#crowdin-projects"><em>crowdin</em> project</a> for each <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
 </div>
+<hr />
 <h2 id="code-translation">Code Translation<a class="headerlink" href="#code-translation" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Localization (strings translated to the selected language in the app) makes use of volunteers who input translations in a special web app. Their work is then dowloaded and imported into the code used by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and its <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> (repositories on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>).</p>
 <p>If you notice <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app messages in English even though you selected a specific language, and you can help translate it, please volunteer.</p>
 <h3 id="loop-lokalise-project"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <em>lokalise</em> project<a class="headerlink" href="#loop-lokalise-project" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Translations for most of the repositories used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> are performed by volunteers at <a href="https://app.lokalise.com/projects"><em>lokalise</em></a>.</p>
-<p>Some newer <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump modules, currently found in feature branches, get their translations from <em>crowdin</em> instead of <em>lokalise</em>.</p>
+<p>Translations for the repositories used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> are performed by volunteers at <a href="https://app.lokalise.com/projects"><em>lokalise</em></a>.</p>
+<p>Some newer <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump modules, currently found in feature branches, were initially configured to get their translations from <em>crowdin</em> instead of <em>lokalise</em>.</p>
 <ul>
-<li>There was an early attempt to use both <em>lokalise</em> and <em>crowdin</em> but merging input from two sources was deemed impractical</li>
-<li>The DanaKit, MedtrumKit and EversenseKit translations are each handled by separate <a href="#crowdin-projects"><em>crowdin</em> projects</a></li>
+<li>There was an early attempt to use both <em>lokalise</em> and <em>crowdin</em> but merging input from two sources was deemed impractical<ul>
+<li>Briefly, DanaKit, MedtrumKit and EversenseKit translations were handled by their separate <em>crowdin</em> projects</li>
 </ul>
-<h3 id="crowdin-projects"><em>crowdin</em> projects<a class="headerlink" href="#crowdin-projects" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Some new pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> modules are provided by developers associated with the <em>Trio</em> (<em>OpenAPS</em>) community. They have an established base of translators who are familiar with using <em>crowdin</em>. Translations for each of these new repositories is handled directly at the <abbr title="contains project files and each file's revision history">repository</abbr> level. <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> translators who want to help with these repositories can just add that information to the request when they <a href="#volunteer-to-translate">volunteer to translate</a>.</p>
-<ul>
-<li><a href="https://crowdin.com/project/danakit">DanaKit crowdin</a></li>
-<li><a href="https://crowdin.com/project/medtrumkit">MedtrumKit crowdin</a></li>
-<li>EversenseKit - not configured yet, coming soon</li>
+</li>
+<li>In the interest of efficiency and offloading responsibility from developers so they can develop, these have been returned to lokalise</li>
 </ul>
 <h3 id="volunteer-to-translate">Volunteer to Translate<a class="headerlink" href="#volunteer-to-translate" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>To volunteer, join <a href="https://loop.zulipchat.com/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> zulipchat</a> and send a direct message to Marion Barker with your email address and the language(s) you can translate. Indicate whether you need access to the new repositories (<em>crowdin</em>) in addition to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> repositories. You will get an invitation to join the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <em>lokalise</em> project. You do not need to start a new <em>lokalise</em> project. Do not start a free <em>lokalise</em> trial or sign up for anything special; just join the project you are invited to.</p>
+<p>To volunteer, join <a href="https://loop.zulipchat.com/"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> zulipchat</a> and send a direct message to Marion Barker with your email address and the language(s) you can translate. You will get an invitation to join the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <em>lokalise</em> project. You do not need to start a new <em>lokalise</em> project. Do not start a free <em>lokalise</em> trial or sign up for anything special; just join the project you are invited to.</p>
 <blockquote>
 <p>If you are using the <em>Trio</em> or <em>iAPS</em> app instead of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, you can still assist with Pump, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Tidepool module localization through <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <em>lokalise</em>. Some repositories from <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> are used by <a href="#what-about-other-ios-apps"><em>Trio</em> and <em>iAPS</em></a>.</p>
 </blockquote>
-<p>Alternative contacts for addtion to <em>crowdin</em>:</p>
-<ul>
-<li>Bastiaan Verhaar in zulipchat<ul>
-<li>Bastiaan is known as <code>INeedSugar</code> in <a href="https://discord.gg/FnwFEFUwXE">Trio discord</a> and <a href="https://discord.com/invite/ptkk2Y264Z">iAPS discord</a></li>
-</ul>
-</li>
-<li><code>lubor</code> in <a href="https://discord.com/invite/ptkk2Y264Z">iAPS discord</a></li>
-</ul>
+<hr />
 <h2 id="lokalise-information">Lokalise Information<a class="headerlink" href="#lokalise-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="initial-screen-on-lokalise">Initial Screen on <em>lokalise</em><a class="headerlink" href="#initial-screen-on-lokalise" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>When you log in to <em>lokalise</em>, you will see a screen similar to the screenshot below. Tap on the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> icon, highlighted in the graphic with a red rectangle, to start translating.</p>
@@ -4838,7 +4805,7 @@
 <p>The only reason to use <code>Insert source</code> would be if that <code>key</code> should always be identical to the English version and you want to avoid having that <code>key</code> show up when looking for untranslated keys.</p>
 </blockquote>
 <h3 id="select-a-submodule">Select a Submodule<a class="headerlink" href="#select-a-submodule" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Suppose you know that you want to modify translations for a particular submodule (<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Pump or Service module). You can choose context in <em>lokalise</em>; or if it is one of the newer <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, go directly to the <em>crowdin</em> project for that submodule. See <a href="#submodule-table-for-multiple-apps">Submodule Table for Multiple Apps</a> for a detailed listing.</p>
+<p>Suppose you know that you want to modify translations for a particular submodule (<abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Pump or Service module). You can choose context in <em>lokalise</em>. See <a href="#submodule-table-for-multiple-apps">Submodule Table for Multiple Apps</a> for a detailed listing.</p>
 <ul>
 <li>Tap on Filter</li>
 <li>Tap on Context</li>
@@ -4853,7 +4820,6 @@
 </li>
 </ul>
 <p>The screenshot below is configured for someone translating simplified Chinese for the DanaKit pump.</p>
-<p><strong>NOTE</strong> The DanaKit keys are no longer visible in <em>lokalise</em>. They are being handled using <a href="#crowdin-projects"><em>crowdin</em></a>.</p>
 <p align="center"><img alt="choose a submodule for translation" src="../img/lokalise-by-context-submodule-xcstrings.png" width="1024" /></p>
 <h3 id="matches-source">Matches Source<a class="headerlink" href="#matches-source" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Some of the String Catalogs have had the English version inserted in the translation field. This was done inadvertently. To find these instances in the language you are translating, set up a custom filter.</p>
@@ -4882,8 +4848,10 @@
 </ul>
 <p>The bottom line is</p>
 <ul>
-<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and older (pre 2025) submodule translations are handled at <a href="https://app.lokalise.com/"><em>lokalise</em></a></li>
-<li>New <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, DanaKit, EversenseKit, and MedtrumKit. are currently handled in <a href="#crowdin-projects"><em>crowdin</em> projects</a> for the individual repositories</li>
+<li><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and all its submodule translations are handled at <a href="https://app.lokalise.com/"><em>lokalise</em></a><ul>
+<li>This includes cgm managers, pump managers and service managers used by several OS-AID systems</li>
+</ul>
+</li>
 <li><em>Trio</em> translations are handled at <a href="https://crowdin.com/project/trio/invite/public?h=48e1a77abd1611860f475c1ce17540112591650&amp;show_welcome">crowdin for <em>Trio</em></a></li>
 <li><em>iAPS</em> translations are handled at <a href="https://crowdin.com/project/iaps">crowdin for <em>iAPS</em></a></li>
 </ul>
@@ -4906,6 +4874,11 @@
 </tr>
 <tr>
 <td style="text-align: center;"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></td>
+<td style="text-align: left;"><code>EversenseKit</code></td>
+<td style="text-align: left;">EversenseKit/EversenseKitUI/Localizable.xcstrings</td>
+</tr>
+<tr>
+<td style="text-align: center;"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></td>
 <td style="text-align: left;"><code>G7SensorKit</code></td>
 <td style="text-align: left;">G7SensorKit/G7SensorKit/Localizable.xcstrings<br>G7SensorKit/G7SensorKitUI/Localizable.xcstrings</td>
 </tr>
@@ -4923,6 +4896,16 @@
 <td style="text-align: center;"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></td>
 <td style="text-align: left;"><code>NightscoutRemoteCGM</code></td>
 <td style="text-align: left;">NightscoutRemoteCGM/NightscoutRemoteCGM/Localizable.xcstrings</td>
+</tr>
+<tr>
+<td style="text-align: center;">Pump</td>
+<td style="text-align: left;"><code>DanaKit</code></td>
+<td style="text-align: left;">DanaKit/Localizable.xcstrings</td>
+</tr>
+<tr>
+<td style="text-align: center;">Pump</td>
+<td style="text-align: left;"><code>MedtrumKit</code></td>
+<td style="text-align: left;">MedtrumKit/Localizable.xcstrings</td>
 </tr>
 <tr>
 <td style="text-align: center;">Pump</td>
@@ -4953,33 +4936,6 @@
 <td style="text-align: center;">Service</td>
 <td style="text-align: left;"><code>TidepoolService</code></td>
 <td style="text-align: left;">TidepoolService/TidepoolServiceKit/Localizable.xcstrings<br>TidepoolService/TidepoolServiceKitUI/Localizable.xcstrings</td>
-</tr>
-</tbody>
-</table>
-<p>These <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> are used by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, <em>Trio</em> and <em>iAPS</em> apps and are handled by <em>crowdin</em>.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Type</th>
-<th style="text-align: left;"><div style="width:145px"></div> Name</th>
-<th style="text-align: left;">Files</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Pump</td>
-<td style="text-align: left;"><code>DanaKit</code></td>
-<td style="text-align: left;">see <a href="https://crowdin.com/project/danakit">DanaKit <em>crowdin</em></a></td>
-</tr>
-<tr>
-<td style="text-align: center;">Pump</td>
-<td style="text-align: left;"><code>MedtrumKit</code></td>
-<td style="text-align: left;">see <a href="https://crowdin.com/project/medtrumkit">MedtrumKit <em>crowdin</em></a></td>
-</tr>
-<tr>
-<td style="text-align: center;"><abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></td>
-<td style="text-align: left;"><code>EversenseKit</code></td>
-<td style="text-align: left;">crowdin project is not yet configured</td>
 </tr>
 </tbody>
 </table>
