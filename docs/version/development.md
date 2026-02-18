@@ -191,7 +191,7 @@ General statement about these pump managers. These were created for use with Tri
 * There was still an issue with reporting temp basal pump events
     * This issue was fixed for MedtrumKit on 17 Feb 2026
     * See the now closed MedtrumKit Issue: [Loop and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct](https://github.com/jbr7rr/MedtrumKit/issues/77)
-* Until there is time to copy these inputs to the DanaKit repository, those using Dana with Loop should only use Dosing Strategy of Automatic Bolus
+* Until there is time to copy these inputs to the DanaKit repository, those using Dana with Loop should only use Dosing Strategy of Automatic Bolus - the insulin accounting will still not be perfect, but using Automatic Bolus helps
 
 Anyone uses these new pump managers need to be using either one of these branches:
 
