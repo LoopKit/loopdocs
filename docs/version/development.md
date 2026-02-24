@@ -48,7 +48,7 @@ The table below lists active branches. Note that updates may occur and be announ
 | dev | 3.11.1 | 17 Feb 2026 | code is currently the same as `main` |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `04dc876` | 3.11.1 | 17 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `865110f` | 3.11.1 | 17 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae` (Known TBR issues)<br>  - SHA for MedtrumKit is `c79a883` (TBR issues fixed) |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `84bf0c7` | 3.11.0 | 17 Feb 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `4a40994` |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `506d529` | 3.11.1 | 18 Feb 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `4a40994` |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.

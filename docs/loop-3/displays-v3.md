@@ -108,7 +108,7 @@ Please note that for safety reasons, Loop will assume a bolus was successful, ev
 
 ### Event History, Reservoir and Non-Pump Insulin
 
-Clicking on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs that can be viewed, with Event History shown by default:
+Tapping on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs that can be viewed, with Event History shown by default:
 
 ![figure showing event history, reservoir and non-pump insulin tabs](img/insulin-detail.svg){width="250"}
 {align="center"}
@@ -124,7 +124,7 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
 #### Event History and Details
 
-The event history lists pump events such as Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list because that action is implied when the Temp Basal events completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)
+The event history lists pump events such as Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list because that action is implied when the preceding Temp Basal event completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)
 
 Additional details are available for every pump event. These are displayed by tapping on the event.
 
@@ -138,7 +138,7 @@ The graphic below shows pump event details for a manual bolus of 1 U. The indica
     * The value for `units` is the requested bolus amount
 * The right side shows the same event once delivery is finalized
     * The variable `isMutable` is set to false
-    * The `deliveredUnits` value is the final dose as reported by the pump manager and used by *Loop* to update the earlier esimates *Loop* assumed for this event
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier esimates *Loop* assumed for this event
 
 > ![figure showing event details for bolus](img/insulin-event-detail-bolus.svg){width="700"}
 {align="center"}
@@ -155,7 +155,7 @@ The graphic below shows an automatic temporary basal event. The indication this 
 * The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command.
     * The end date was updated to show the actual end time for this TBR
     * The variable `isMutable` is set to false
-    * The `deliveredUnits` value is the final dose as reported by the pump manager and used by *Loop* to update the earlier esimates *Loop* assumed for this event
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier esimates *Loop* assumed for this event
 
 > ![figure showing event details for a temporary basal rate](img/insulin-event-detail-tbr.svg){width="700"}
 {align="center"}
