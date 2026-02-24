@@ -14,10 +14,9 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop v3.10.0`. 
+This section provides an overview of changes to `dev` compared to `Loop v3.12.0`. 
 
-The current version of `dev` is v3.11.1.
-
+The current version of `dev` is v3.11.1 and will soon be updated to v3.13.0 to match the new release to v3.12.0.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -45,8 +44,8 @@ The table below lists active branches. Note that updates may occur and be announ
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.10.0 | 10 Jan 2026 | release|
-| dev | 3.11.1 | 17 Feb 2026 | updates with respect to `main` include<br>[PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408) |
+| main | 3.12.0 | 24 Feb 2026 | release|
+| dev | 3.11.1 | 17 Feb 2026 | code is currently the same as `main` |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `04dc876` | 3.11.1 | 17 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `865110f` | 3.11.1 | 17 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae` (Known TBR issues)<br>  - SHA for MedtrumKit is `c79a883` (TBR issues fixed) |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `84bf0c7` | 3.11.0 | 17 Feb 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `4a40994` |
@@ -108,10 +107,6 @@ The version number in the feature branch will match either the `dev` branch vers
 * In other words, the feature branch is up to date with other changes to `dev` or `update_dev_to_M.m.#` with the added support for the specific feature
 * Each feature has an associated repository that contains the feature
     * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
-
-### Update to dev 3.11.1
-
-Details are in [PR 408](https://github.com/LoopKit/LoopWorkspace/pull/408).
 
 ### Feature Branch: Pod Keep Alive Feature
 
