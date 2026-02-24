@@ -48,7 +48,7 @@ Some newer CGM and Pump modules, currently found in feature branches, were initi
 
 * There was an early attempt to use both *lokalise* and *crowdin* but merging input from two sources was deemed impractical
     * Briefly, DanaKit, MedtrumKit and EversenseKit translations were handled by their separate *crowdin* projects
-* In the interest of efficiency and offloading responsibility from developers so they can develop, these have been returned to lokalise
+* In the interest of efficiency and offloading responsibility from developers so they can develop, these have been returned to *lokalise*
 
 ### Volunteer to Translate
 

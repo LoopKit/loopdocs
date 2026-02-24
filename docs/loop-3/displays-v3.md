@@ -108,27 +108,66 @@ Please note that for safety reasons, Loop will assume a bolus was successful, ev
 
 ### Event History, Reservoir and Non-Pump Insulin
 
-Clicking on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs that can be viewed, with Event History shown by default:
+Tapping on either the Active Insulin or Insulin Delivery charts will open your Insulin Delivery history.  The top of the screen will display the current IOB and the total insulin delivered for the day since midnight (or since the time the loop became active if you started Loop after midnight). There are three tabs that can be viewed, with Event History shown by default:
 
 ![figure showing event history, reservoir and non-pump insulin tabs](img/insulin-detail.svg){width="250"}
 {align="center"}
 
-* **Event History**: Event history is a detailed accounting of all pump/pod actions. Both Medtronic and Omnipod users will have a detailed record of event history. If you tap on an event, you get more detail. Turn your phone to landscape to improve readability.
+* **Event History**: Event history is a detailed accounting of all pump/pod actions. All pump managers provide a detailed record of event history. If you tap on an event, you get more detail. Turn your phone to landscape to improve readability.
 
 * **Reservoir**:
 
-    - **Omnipod** users should not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
-    - **Medtronic** users will have reservoir history displayed in 5-minute increments, unless Loop has been having communication issues.
+    - **Omnipod** users: Do not not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
+    - **All other pump** users: The reservoir history is displayed in 5-minute increments, unless Loop has been having communication issues.
 
 * **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin type than used by the pump. This is explained further at this [link](features.md#non-pump-insulin).
 
-!!! abstract "Previous Pod Insulin History"
-    For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.
+#### Event History and Details
+
+The event history lists pump events such as Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list because that action is implied when the preceding Temp Basal event completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)
+
+Additional details are available for every pump event. These are displayed by tapping on the event.
+
+#### Manual Bolus Example
+
+The graphic below shows pump event details for a manual bolus of 1 U. The indication this was a manual event initiated by the user is the `automatic` value is false. 
+
+* The left side shows a bolus-in-progress
+    * The variable `isMutable` remains true while the bolus is in progress
+    * The `deliveredUnits` value is set to `nil` to indicate the final amount is not yet known
+    * The value for `units` is the requested bolus amount
+* The right side shows the same event once delivery is finalized
+    * The variable `isMutable` is set to false
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier esimates *Loop* assumed for this event
+
+> ![figure showing event details for bolus](img/insulin-event-detail-bolus.svg){width="700"}
+{align="center"}
+
+#### Automatic Temporary Basal Rate Example
+
+The graphic below shows an automatic temporary basal event. The indication this was an automatic event initiated by *Loop* is the `automatic` value is true. 
+
+* The left side shows a temporary basal rate (TBR) in progress
+    * The variable `isMutable` remains true while the TBR is in progress
+    * The `deliveredUnits` value is set to `nil` to indicate the final amount is not yet known
+    * The value for `units` is the current temporary basal rate (in U/hr)
+    * The end date is based on the planned duration for this TBR
+* The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command.
+    * The end date was updated to show the actual end time for this TBR
+    * The variable `isMutable` is set to false
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier esimates *Loop* assumed for this event
+
+> ![figure showing event details for a temporary basal rate](img/insulin-event-detail-tbr.svg){width="700"}
+{align="center"}
+
+#### Modify Insulin History
+
+!!! abstract "Previous Insulin History"
+    For those who want to delete some recorded insulin when a site was not absorbing properly, this can be done in Apple Health.
 
     Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/apple-health-faqs.md#how-does-loop-use-apple-healthkit) in detail.
 
     Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit){: target="_blank" } section.
-
 
 ### Active Carbohydrates Chart
 
@@ -269,8 +308,8 @@ The nominal pump icon displays high-level status information for the pump with t
             * If Loop sets a temp basal rate of 0.2 U/hr, the icon displays -0.115 U
             * If Loop sets a temp basal rate of 1.5 U/hr, the icon displays +1.185 U
 * The reservoir status indicates insulin remaining graphically and displays a value when less than 50 U remain.
-    * For Medtronic Pumps, the reservoir display indicates the level graphically.
     * For Pods, the reservoir graphic is constant until the pod begins to report reservoir level when less than 50 U remain.
+    * For all other pumps, the reservoir display indicates the level graphically.
 
 
 The table below shows examples for a few nominal Pump Status Icons and Alert messages that might be shown.  In all cases, tapping on the Pump Status Icon opens the Pump Settings screen with more information.
@@ -278,10 +317,10 @@ The table below shows examples for a few nominal Pump Status Icons and Alert mes
 | <div style="width:55px"></div> Icon | Meaning |
 |---|---|
 |![low temp basal indicator plus pod reservoir above 50 U](img/nominal-pod-low-temp.svg){width="175"}|This nominal pump status graphic is for a Pod with temp basal less than scheduled basal rate and no reported reservoir level.|
-|![scheduled basal indicator for partially full mdt reservoir](img/nominal-mdt-scheduled.svg){width="175"}|This nominal pump status graphic is for a Medtronic pump running scheduled basal rate and with a half-full reservoir.<br><br>For a Pod, the reservoir shows full until pod estimates reservoir is below 50 U remaining.|
+|![scheduled basal indicator for partially full mdt reservoir](img/nominal-mdt-scheduled.svg){width="175"}|This nominal pump status graphic is for a pump running scheduled basal rate and with a half-full reservoir.<br><br>For a Pod, the reservoir shows full until pod estimates reservoir is below 50 U remaining.|
 |![high temp basal indicator with reservoir above notification level](img/nominal-pump-high-temp-reservoir.svg){width="175"}|This nominal pump status graphic is for a pump running a high temp basal rate with the reservoir level reported. <br><br>When the reservoir level is above the notification level, the reservoir graphic is orange.|
 |![high temp basal indicator with reservoir level below alert and clock icon](img/pump-alert-reservoir-tz.svg){width="175"}|This pump status graphic indicates 2 alerts: (1) the 15 U reservoir level is less than the notification level of 20 U selected by this user and (2) a small clock icon is added to the display to indicate the phone time zone and pump time zone do not match. <br><br>When the reservoir level is below the notification level, the reservoir graphic is yellow.<br><br>Follow the link for [time zone](#time-zone) information.|
-|![pump alert - red exclamation point with phrase no insulin](img/pump-alert-no-insulin.svg){width="175"}|This No Insulin alert message indicates the reservoir reports 0 U. Although  pumps will continue to deliver some insulin after this point (max of 4 U for pods, or until all insulin is gone for both pods and Medtronic), the user should be aware that insulin delivery could stop at any moment.<br><br>Note that if you see a display of 0 U in yellow, that means there is 0.5 U or less reported by the pump.|
+|![pump alert - red exclamation point with phrase no insulin](img/pump-alert-no-insulin.svg){width="175"}|This No Insulin alert message indicates the reservoir reports 0 U. Although  pumps will continue to deliver some insulin after this point (max of 4 U for pods, or until all insulin is gone for any pump), the user should be aware that insulin delivery could stop at any moment.<br><br>Note that if you see a display of 0 U in yellow, that means there is 0.5 U or less reported by the pump.|
 |![pump alert - yellow exclamation point with phrase no pod](img/pump-alert-no-pod.svg){width="175"}|The No Pod alert message indicates no pod is currently paired so no insulin is being delivered.<br><br>Tap on the icon to reach the pod setting screen and pair a new pod, or switch to a different source for providing insulin.|
 |![pump alert - yellow pause indicator that pump is suspended](img/pump-alert-suspended.svg){width="175"}|The Insulin Suspended alert message indicates all insulin delivery has been suspended. <br><br>A [Status Row](#hud-status-row) message appears to enable the user to resume delivery with one tap. <br><br>Alternatively, insulin can be resumed by tapping on the Pump Icon to enter the Pump Setting display and resume from that screen.|
 |![pump alert - yellow exclamation point with phrase manual basal](img/pump-alert-mtb.svg){width="175"}|The Manual Bolus alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.|
@@ -292,11 +331,13 @@ The table below shows examples for a few nominal Pump Status Icons and Alert mes
 
 ### Time Zone
 
-Loop allows your pump to have a different time zone from your phone.
+Loop allows your pump to have a different time zone from your phone. This allows you to choose when, or if, you want your pump basal, CR, ISF and correct target schedule to match you current phone time zone.
 
-* For Medtronic - the pump time shows on the pump display
+* For pumps like Medtronic or Dana - the pump time shows on the pump display
     * Always use Loop to set your pump time
-* For Omnipod Common - there isn't a clock on pods, but Loop has a concept of "pump" time for that pod
+* For pumps without a display screen - there isn't a time shown outside the *app*, but *Loop* has a concept of "pump" time for that pump
+
+> For Trio users - this is not the case - pump time and phone time are always kept aligned.
 
 Your daily schedule for basal rates, correction ranges, insulin sensitivity factors and carb ratios is displayed with respect to midnight on "pump time". When you first [Add Pump](add-pump.md#add-pump) to Loop, the pump and phone are in the same time zone, but it's important to understand what happens when the time zone changes on the phone.
 

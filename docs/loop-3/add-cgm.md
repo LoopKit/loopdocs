@@ -154,25 +154,44 @@ Libre 3 sensors have started appearing as well, but are unsupported. Other Libre
 
 ### Eversense E3/365
 
+#### Important Information
+
 !!! warning "You must build feat/eversense branch to use the Eversense CGM"
-    The Eversense CGM is in feat/eversense (as of version v3.11.0) and is experimental as of now
+    The Eversense CGM is in feat/eversense (as of version v3.11.0) and is experimental as of now.
 
-!!! warning "Wait till initialization phase is completed"
-    During the initialization phase of this system, the glucose reading might be incorrect.
-    Before using automated insulin delivery, be sure to complete the initialization phase using the original Eversense app.
+    This branch adds the [EversenseKit](https://github.com/loopandlearn/EversenseKit) repository to the *Loop* app.
 
-!!! warning "Do not use the Eversense app and the *Loop* app concurrently"
-    The transmitter is not able to multiple connection to the same device, due to the security protocol.
-    Make sure you either use the Eversense app or the *Loop* app, but not both at the same time.
+!!! important "Wait till initialization phase is completed"
+    During the initialization phase after insertion of a new sensor, the glucose reading might be incorrect.
+    Before using automated insulin delivery, be sure to complete the initialization phase using the official Eversense app.
 
-The Eversense plugin for Loop, [EversenseKit](https://github.com/loopandlearn/EversenseKit), connects directly to your transmitter for glucose reading and alert notifications.
-This makes the use of the Eversense app obsolete, after the initialization phase, and should not be used while having the transmitter paired to the *Loop* app.
+!!! warning "Transmitter is read by only one app: Eversense app or the *Loop* app"
+    The transmitter is not able to support multiple connections to the same device due to the security protocol.
+    
+    From Official to *Loop* app:
+
+    * In the official app, go to Connections and tap on the Transmitter and select Disconnect
+    * In the *Loop* app, choose Eversense, login and then select the Transmitter
+        * If this is the first time you pair this transmitter with this phone / app, you might need to put the Transmitter into pairing mode before it will show up
+
+    From *Loop* to Official app:
+
+    * In the *Loop* app, go to Settings, CGM and delete CGM
+    * In the official app, go to Connections and tap on the Transmitter and select Connect
+ 
+#### Add Eversense CGM
+
+With Eversense added to *Loop* you get direct connection to your transmitter for glucose readings and can configure alert notifications. Because the transmitter can only connect to one app at a time, disconnect from the Eversense app, after the initialization phase, and connect to the *Loop* app.
+
+The *Loop* app does not have glucose notification features, at this time. You can enable the on-transmitter notification within the *Loop* app, so the transmitter will vibrate to alert you of an issue.
 
 The pairing process of both transmitters are simple:
 
 * For the Eversense E3, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
 
 * For the Eversense 365, you are required to have an internet connection and Eversense account during pairing. This is needed to fetch the security keys for your transmitter. After logging in, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
+
+    * If this is the first time you pair this transmitter with this phone / app, you might need to put the Transmitter into pairing mode before it will show up
 
 ### Medtronic Enlite CGM
 

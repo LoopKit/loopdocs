@@ -8,13 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.10.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
-
-> The released version is the `main` branch, v3.10.0.
-
-> The `dev` branch is where development happens between releases.
-
-> * The differences between `main` and `dev` are summarized in [Updates in `dev`](development.md#updates-in-dev){: target="_blank" } along with details about some feature branches.
+The current released version for the *Loop* app is v3.12.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -27,11 +21,52 @@ Tap on the Settings icon at the toolbar of the *Loop* app and look at the versio
 
 Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit/LoopWorkspace</span>_&nbsp;release page](https://github.com/LoopKit/LoopWorkspace/releases).
 
-> Older releases from `Loop v3.4.4` and earlier are documented at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
+> Older releases, `Loop v3.4.4` and earlier, are documented at [*GitHub*&nbsp;_<span translate="no">LoopKit/Loop</span>_&nbsp;release page](https://github.com/LoopKit/Loop/releases).
 
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.12.0
+
+[*Loop* v3.12.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.0) was released on 24 February 2026.
+
+#### Customization Update for v3.12.0
+
+!!! tip ""
+    This customization is no longer compatible.
+
+    * `remote_window`
+
+    **Browser Builders:** If you used this customization, remove it from your build_loop.yml file. Otherwise, your **build will fail**.
+
+    Instead of using a 15-minute window with *LoopCaregiver* and *Loop*, it is suggested you try *LoopFollow* remote commands which provide direct APNS message from *LoopFollow* to *Loop* with real-time returned APNS response. This still depends on APNS availability, but should be more direct and reliable than *LoopCaregiver*.
+
+    * [*LoopFollow* Remote Control](https://loopfollowdocs.org/remote/remote-control-loop/)
+
+#### v3.12.0 Highlights
+
+**Loop Features**
+
+* Improve Live Activity display
+    * handles larger fonts, limits truncation, modifies some displays
+    * fixes colored glucose plot bug [Issue 2392](https://github.com/LoopKit/Loop/issues/2392)
+* Support real-time APNS response for remote control commands
+    * This, in combination with *LoopFollow* version 4.5.1 or newer, provides real-time response to report the success of a remote command (or explict error message) returned to the originating *LoopFollow* phone
+    * Please see [*LoopFollowDocs*: *Loop* Remote Control](https://loopfollowdocs.org/remote/remote-control-loop/) documentation
+    * Support for real-time response in *Loop* added with [NightscoutService PR 19](https://github.com/LoopKit/NightscoutService/pull/19)
+
+**Miscellaneous Features**
+
+* Bring in pretty print for pump event details: [Loop PR 2403](https://github.com/LoopKit/Loop/pull/2403) and [LoopKit PR 586](https://github.com/LoopKit/LoopKit/pull/586)
+    * makes the details much easier to interpret, see [Event History and Details](../loop-3/displays-v3.md#event-history-and-details){: target="_blank" }
+    * adds a localized date to the pump event display
+* Update support files for Browser Build
+* Update translations
+* Add to the Loop Report Build Details section the list of all submodules used for that build including their branch name and SHA
+    * This supports developers and testers working with development and feature branches
 
 - - -
 
