@@ -118,17 +118,56 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 * **Reservoir**:
 
     - **Omnipod** users should not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
-    - **Medtronic** users will have reservoir history displayed in 5-minute increments, unless Loop has been having communication issues.
+    - **All other pumps** users will have reservoir history displayed in 5-minute increments, unless Loop has been having communication issues.
 
 * **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin type than used by the pump. This is explained further at this [link](features.md#non-pump-insulin).
 
-!!! abstract "Previous Pod Insulin History"
-    For those who want to delete some recorded insulin near the end of a pod because the site was not absorbing properly, this can be done in Apple Health.
+#### Event History and Details
+
+The event history lists the pump events Temp Basal and Bolus, Suspend and Resume. In general, when the pump returns to Scheduled basal, there is no indication in the list, because that it implied in the Temp Basal event (the end of temp basal restores the pump to scheduled basal delivery.)
+
+Additional details are available for every pump event. These are displayed by tapping on the event.
+
+#### Manual Bolus Example
+
+The graphic below shows the pump event details for a manual bolus of 1 U. This was manual event initiated by the user as indicated by the `automatic` value of false. 
+
+* The left side shows a bolus-in-progress
+    * The variable `isMutable` remains true while the bolus is in progress
+    * The `deliveredUnits` value is set to `nil` to indicate the final amount is not yet known
+    * The value for `units` is the requested bolus amount
+* The right side shows the same event once delivery is finalized
+    * The variable `isMutable` is set to false
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and used by *Loop* to update the earlier esimates *Loop* assumed for this event
+
+> ![figure showing event details for bolus](img/insulin-event-detail-bolus.svg){width="700"}
+{align="center"}
+
+#### Automatic Temporary Basal Rate Example
+
+The graphic below shows an automatic temporary basal event. This was an automatic event commanded by *Loop*  as indicated by the `automatic` value of true. 
+
+* The left side shows a temporary basal rate (TBR) in progress
+    * The variable `isMutable` remains true while the TBR is in progress
+    * The `deliveredUnits` value is set to `nil` to indicate the final amount is not yet known
+    * The value for `units` is the current temporary basal rate (in U/hr)
+    * The end date is based on the planned duration for this TBR
+* The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command.
+    * The end date was updated to show the actual end time for this TBR
+    * The variable `isMutable` is set to false
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and used by *Loop* to update the earlier esimates *Loop* assumed for this event
+
+> ![figure showing event details for a temporary basal rate](img/insulin-event-detail-tbr.svg){width="700"}
+{align="center"}
+
+#### Modify Insulin History
+
+!!! abstract "Previous Insulin History"
+    For those who want to delete some recorded insulin when a site was not absorbing properly, this can be done in Apple Health.
 
     Before attempting that modification, please read this entire section on [How does Loop use Apple HealthKit](../faqs/apple-health-faqs.md#how-does-loop-use-apple-healthkit) in detail.
 
     Pay special attention to [Insulin and Apple HealthKit](../faqs/apple-health-faqs.md#insulin-and-apple-healthkit){: target="_blank" } section.
-
 
 ### Active Carbohydrates Chart
 
