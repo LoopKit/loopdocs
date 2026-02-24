@@ -3266,6 +3266,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.12.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3100" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4735,6 +4746,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.12.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3100" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5057,24 +5079,61 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.10.0 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
-<blockquote>
-<p>The released version is the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, v3.10.0.</p>
-<p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is where development happens between releases.</p>
-<ul>
-<li>The differences between <code>main</code> and <code>dev</code> are summarized in <a href="../development/#updates-in-dev" target="_blank">Updates in <code>dev</code></a> along with details about some feature branches.</li>
-</ul>
-</blockquote>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.12.0 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
 <h3 id="is-the-released-version-newer">Is the Released Version Newer?<a class="headerlink" href="#is-the-released-version-newer" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Release information is found on the <a href="https://github.com/LoopKit/LoopWorkspace/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/LoopWorkspace</span></em>&nbsp;release page</a>.</p>
 <blockquote>
-<p>Older releases from <code>Loop v3.4.4</code> and earlier are documented at <a href="https://github.com/LoopKit/Loop/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;release page</a>.</p>
+<p>Older releases, <code>Loop v3.4.4</code> and earlier, are documented at <a href="https://github.com/LoopKit/Loop/releases"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>&nbsp;<em><span translate="no">LoopKit/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;release page</a>.</p>
 </blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v3120"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.12.0<a class="headerlink" href="#loop-v3120" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.0"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.12.0</a> was released on 24 February 2026.</p>
+<h4 id="customization-update-for-v3120">Customization Update for v3.12.0<a class="headerlink" href="#customization-update-for-v3120" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition tip">
+<p>This customization is no longer compatible.</p>
+<ul>
+<li><code>remote_window</code></li>
+</ul>
+<p><strong>Browser Builders:</strong> If you used this customization, remove it from your build_loop.yml file. Otherwise, your <strong>build will fail</strong>.</p>
+<p>Instead of using a 15-minute window with <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> and <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, it is suggested you try <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> remote commands which provide direct APNS message from <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> to <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with real-time returned APNS response. This still depends on APNS availability, but should be more direct and reliable than <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em>.</p>
+<ul>
+<li><a href="https://loopfollowdocs.org/remote/remote-control-loop/"><em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> Remote Control</a></li>
+</ul>
+</div>
+<h4 id="v3120-highlights">v3.12.0 Highlights<a class="headerlink" href="#v3120-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>
+<ul>
+<li>Improve Live Activity display<ul>
+<li>handles larger fonts, limits truncation, modifies some displays</li>
+<li>fixes colored glucose plot bug <a href="https://github.com/LoopKit/Loop/issues/2392"><abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 2392</a></li>
+</ul>
+</li>
+<li>Support real-time APNS response for remote control commands<ul>
+<li>This, in combination with <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> version 4.5.1 or newer, provides real-time response to report the success of a remote command (or explict error message) returned to the originating <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> phone</li>
+<li>Please see <a href="https://loopfollowdocs.org/remote/remote-control-loop/"><em>LoopFollowDocs</em>: <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Remote Control</a> documentation</li>
+<li>Support for real-time response in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> added with <a href="https://github.com/LoopKit/NightscoutService/pull/19">NightscoutService <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 19</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Miscellaneous Features</strong></p>
+<ul>
+<li>Bring in pretty print for pump event details: <a href="https://github.com/LoopKit/Loop/pull/2403"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 2403</a> and <a href="https://github.com/LoopKit/LoopKit/pull/586">LoopKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 586</a><ul>
+<li>makes the details much easier to interpret, see <a href="../../loop-3/displays-v3/#event-history-and-details" target="_blank"><abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Details</a></li>
+<li>adds a localized date to the pump event display</li>
+</ul>
+</li>
+<li>Update support files for Browser Build</li>
+<li>Update translations</li>
+<li>Add to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report Build Details section the list of all <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> used for that build including their <abbr title="version of code within a single repository or workspace repository">branch</abbr> name and SHA<ul>
+<li>This supports developers and testers working with development and feature branches</li>
+</ul>
+</li>
+</ul>
 <hr />
 <h2 id="loop-v3100"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.10.0<a class="headerlink" href="#loop-v3100" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.10.0"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.10.0</a> was released on 10 January 2026.</p>
