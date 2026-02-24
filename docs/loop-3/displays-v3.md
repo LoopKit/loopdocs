@@ -117,20 +117,20 @@ Clicking on either the Active Insulin or Insulin Delivery charts will open your 
 
 * **Reservoir**:
 
-    - **Omnipod** users should not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
-    - **All other pumps** users will have reservoir history displayed in 5-minute increments, unless Loop has been having communication issues.
+    - **Omnipod** users: Do not not worry if the reservoir display is blank. Pods do not report or track insulin remaining until their reservoirs get below 50 units remaining. When a pod is deactivated, the reservoir history for that pod is no longer displayed.
+    - **All other pump** users: The reservoir history is displayed in 5-minute increments, unless Loop has been having communication issues.
 
 * **Non-Pump Insulin**: The user can enter insulin taken by another method such as inhaled or by injection. The user can choose a different insulin type than used by the pump. This is explained further at this [link](features.md#non-pump-insulin).
 
 #### Event History and Details
 
-The event history lists the pump events Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list, because that it implied in the Temp Basal events (the end of temp basal restores the pump to scheduled basal delivery.)
+The event history lists pump events such as Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list because that action is implied when the Temp Basal events completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)
 
 Additional details are available for every pump event. These are displayed by tapping on the event.
 
 #### Manual Bolus Example
 
-The graphic below shows the pump event details for a manual bolus of 1 U. This was manual event initiated by the user as indicated by the `automatic` value of false. 
+The graphic below shows pump event details for a manual bolus of 1 U. The indication this was a manual event initiated by the user is the `automatic` value is false. 
 
 * The left side shows a bolus-in-progress
     * The variable `isMutable` remains true while the bolus is in progress
@@ -145,7 +145,7 @@ The graphic below shows the pump event details for a manual bolus of 1 U. This w
 
 #### Automatic Temporary Basal Rate Example
 
-The graphic below shows an automatic temporary basal event. This was an automatic event commanded by *Loop*  as indicated by the `automatic` value of true. 
+The graphic below shows an automatic temporary basal event. The indication this was an automatic event initiated by *Loop* is the `automatic` value is true. 
 
 * The left side shows a temporary basal rate (TBR) in progress
     * The variable `isMutable` remains true while the TBR is in progress
