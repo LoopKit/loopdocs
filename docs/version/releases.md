@@ -50,22 +50,22 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 **Loop Features**
 
-* Improve Live Activity display
+* Improves Live Activity display
     * handles larger fonts, limits truncation, modifies some displays
     * fixes colored glucose plot bug [Issue 2392](https://github.com/LoopKit/Loop/issues/2392)
-* Support real-time APNS response for remote control commands
+* Supports real-time APNS response for remote control commands
     * This, in combination with *LoopFollow* version 4.5.1 or newer, provides real-time response to report the success of a remote command (or explict error message) returned to the originating *LoopFollow* phone
     * Please see [*LoopFollowDocs*: *Loop* Remote Control](https://loopfollowdocs.org/remote/remote-control-loop/) documentation
     * Support for real-time response in *Loop* added with [NightscoutService PR 19](https://github.com/LoopKit/NightscoutService/pull/19)
 
 **Miscellaneous Features**
 
-* Bring in pretty print for pump event details: [Loop PR 2403](https://github.com/LoopKit/Loop/pull/2403) and [LoopKit PR 586](https://github.com/LoopKit/LoopKit/pull/586)
+* Brings in pretty print for pump event details: [Loop PR 2403](https://github.com/LoopKit/Loop/pull/2403) and [LoopKit PR 586](https://github.com/LoopKit/LoopKit/pull/586)
     * makes the details much easier to interpret, see [Event History and Details](../loop-3/displays-v3.md#event-history-and-details){: target="_blank" }
     * adds a localized date to the pump event display
-* Update support files for Browser Build
-* Update translations
-* Add to the Loop Report Build Details section the list of all submodules used for that build including their branch name and SHA
+* Updates support files for Browser Build
+* Updates translations
+* Adds to the Loop Report Build Details section the list of all submodules used for that build including their branch name and SHA
     * This supports developers and testers working with development and feature branches
 
 - - -

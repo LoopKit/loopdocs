@@ -124,13 +124,13 @@ Tapping on either the Active Insulin or Insulin Delivery charts will open your I
 
 #### Event History and Details
 
-The event history lists pump events such as Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list because that action is implied when the preceding Temp Basal event completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)
+The event history lists pump events such as Temp Basal and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled Basal, there is no indication in the list because that action is implied when the preceding Temp Basal event completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)
 
 Additional details are available for every pump event. These are displayed by tapping on the event.
 
 #### Manual Bolus Example
 
-The graphic below shows pump event details for a manual bolus of 1 U. The indication this was a manual event initiated by the user is the `automatic` value is false. 
+The graphic below shows pump event details for a manual bolus of 1 U. The `automatic: false` indicates this was a manual event initiated by the user. 
 
 * The left side shows a bolus-in-progress
     * The variable `isMutable` remains true while the bolus is in progress
@@ -138,21 +138,21 @@ The graphic below shows pump event details for a manual bolus of 1 U. The indica
     * The value for `units` is the requested bolus amount
 * The right side shows the same event once delivery is finalized
     * The variable `isMutable` is set to false
-    * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier esimates *Loop* assumed for this event
+    * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier estimates *Loop* assumed for this event
 
 > ![figure showing event details for bolus](img/insulin-event-detail-bolus.svg){width="700"}
 {align="center"}
 
 #### Automatic Temporary Basal Rate Example
 
-The graphic below shows an automatic temporary basal event. The indication this was an automatic event initiated by *Loop* is the `automatic` value is true. 
+The graphic below shows an automatic temporary basal rate (TBR) event. The `automatic: true` indicates this was an automatic event initiated by *Loop*. 
 
 * The left side shows a temporary basal rate (TBR) in progress
     * The variable `isMutable` remains true while the TBR is in progress
     * The `deliveredUnits` value is set to `nil` to indicate the final amount is not yet known
     * The value for `units` is the current temporary basal rate (in U/hr)
     * The end date is based on the planned duration for this TBR
-* The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command.
+* The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command
     * The end date was updated to show the actual end time for this TBR
     * The variable `isMutable` is set to false
     * The `deliveredUnits` value is the final dose as reported by the pump manager and is used by *Loop* to update the earlier esimates *Loop* assumed for this event

@@ -181,9 +181,9 @@ Libre 3 sensors have started appearing as well, but are unsupported. Other Libre
  
 #### Add Eversense CGM
 
-With Eversense added to *Loop* you get direct connection to your transmitter for glucose readings and can configure alert notifications. Because the transmitter can only connect to one app at a time, disconnect from the Eversense app, after the initialization phase, and connect to the *Loop* app.
+With Eversense added to *Loop* you get direct connection to your transmitter for glucose readings and can configure alert notifications. Because the transmitter can only connect to one app at a time, you must first disconnect from the Eversense app before you can connect to the *Loop* app.
 
-The *Loop* app does not have glucose notification features, at this time. You can enable the on-transmitter notification within the *Loop* app, so the transmitter will vibrate to alert you of an issue.
+The *Loop* app does not have glucose notification features, at this time. You can enable the on-transmitter notification within the *Loop* app so the transmitter will vibrate to alert you of an issue.
 
 The pairing process of both transmitters are simple:
 

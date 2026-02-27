@@ -16,7 +16,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to `Loop v3.12.0`. 
 
-The current version of `dev` is v3.11.1 and will soon be updated to v3.13.0 to match the new release to v3.12.0.
+The current version of `dev` is v3.13.0 with code identical to that in the `main` branch.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -45,10 +45,10 @@ The table below lists active branches. Note that updates may occur and be announ
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.12.0 | 24 Feb 2026 | release|
-| dev | 3.11.1 | 17 Feb 2026 | code is currently the same as `main` |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `04dc876` | 3.11.1 | 17 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `865110f` | 3.11.1 | 17 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `dbe63ae` (Known TBR issues)<br>  - SHA for MedtrumKit is `c79a883` (TBR issues fixed) |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `506d529` | 3.11.1 | 18 Feb 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `4a40994` |
+| dev | 3.13.0 | 24 Feb 2026 | code is currently the same as `main` |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `f51cf70` | 3.13.0 | 26 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `309b448` | 3.13.0 | 26 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `3970b2a` (TBR issues fixed)<br>  - SHA for MedtrumKit is `c79a883` (TBR issues fixed) |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `efe5f5c` | 3.13.0 | 26 Feb 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `e870c22` |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -180,21 +180,32 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 ### Feature Branch: Medtrum and Dana Support
 
-General statement about these pump managers. These were created for use with Trio and, at the time, some of the differences between the way Loop and other OS-AID systems handle insulin accounting were not completely understood.
+!!! important "Check your settings, temp basal accounting corrected"
+    The accounting used by Loop requires specific feedback from the Pump Managers. This important information was not initially added to the Dana or Medtrum pump managers. Those both were developed first for Trio which uses a different algorithm and accounts for insulin dosing differently.
+
+    This oversight is fixed for both Dana and Medtrum.
+
+    * Medtrum was fixed on 17 Feb 2026
+    * Dana was fixed on 26 Feb 2026
+
+    If you were using Loop with one of these pumps before those dates, be aware that when you update your build, your settings may need to be adjusted.
+
+General statement about these pump managers. These were originally tested using experimental branches with Trio and, at the time, some of the differences between the way Loop and other OS-AID systems handle insulin accounting were not completely understood.
 
 * Initially the bolusing pump event problem was pointed out and a fix provided
-* There was still an issue with reporting temp basal pump events
-    * This issue was fixed for MedtrumKit on 17 Feb 2026
-    * See the now closed MedtrumKit Issue: [Loop and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct](https://github.com/jbr7rr/MedtrumKit/issues/77)
-* Until there is time to ensure equivalent fixes to the DanaKit repository, those using Dana with Loop should only use Dosing Strategy of Automatic Bolus - the insulin accounting will still not be perfect, but using Automatic Bolus helps
+* There was still an issue with reporting temp basal pump events that was subsequently fixed
+    * This fix was brought into the Loop feature branches which include MedtrumKit on 17 Feb 2026
+        * For more information see the closed MedtrumKit Issue: [Loop and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct](https://github.com/jbr7rr/MedtrumKit/issues/77#issuecomment-3915865502)
+    * This fix was brought into the Loop feature branches which include DanaKit on 26 Feb 2026
+        * For more information see the closed DanaKit Issue: [Loop and DanaKit: Observe Pump Event Details in Loop](https://github.com/bastiaanv/DanaKit/issues/32#issuecomment-3937294107)
 
-Anyone uses these new pump managers need to be using either one of these branches:
+Anyone using these new pump managers must build either one of these branches:
 
 * `feat/dev-dana-medtrum` 
 * `feat/eversense` 
 
 !!! important "Experts Only"
-    Please only use an experimental branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.
+    Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.
 
     * Please ensure you have the latest version of a given branch by synching before you build:
         * Mac-Xcode: type `git pull --recurse` to update an existing clone or download a fresh copy
