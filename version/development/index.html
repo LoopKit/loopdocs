@@ -4895,7 +4895,7 @@
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop v3.12.0</code>. </p>
-<p>The current version of <code>dev</code> is v3.11.1 and will soon be updated to v3.13.0 to match the new release to v3.12.0.</p>
+<p>The current version of <code>dev</code> is v3.13.0 with code identical to that in the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h3 id="branches">Branches<a class="headerlink" href="#branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.</p>
@@ -4937,27 +4937,27 @@
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
-<td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">17 Feb 2026</td>
+<td style="text-align: left;">3.13.0</td>
+<td style="text-align: left;">24 Feb 2026</td>
 <td style="text-align: left;">code is currently the same as <code>main</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>04dc876</code></td>
-<td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">17 Feb 2026</td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>f51cf70</code></td>
+<td style="text-align: left;">3.13.0</td>
+<td style="text-align: left;">26 Feb 2026</td>
 <td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>9992773</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>865110f</code></td>
-<td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">17 Feb 2026</td>
-<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>dbe63ae</code> (Known TBR issues)<br>  - SHA for MedtrumKit is <code>c79a883</code> (TBR issues fixed)</td>
+<td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>309b448</code></td>
+<td style="text-align: left;">3.13.0</td>
+<td style="text-align: left;">26 Feb 2026</td>
+<td style="text-align: left;">- adds experimental support for Dana and Medtrum pumps<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is <code>3970b2a</code> (TBR issues fixed)<br>  - SHA for MedtrumKit is <code>c79a883</code> (TBR issues fixed)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>506d529</code></td>
-<td style="text-align: left;">3.11.1</td>
-<td style="text-align: left;">18 Feb 2026</td>
-<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is <code>4a40994</code></td>
+<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>efe5f5c</code></td>
+<td style="text-align: left;">3.13.0</td>
+<td style="text-align: left;">26 Feb 2026</td>
+<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is <code>e870c22</code></td>
 </tr>
 </tbody>
 </table>
@@ -5055,24 +5055,39 @@
 <p>If the phone moves out of <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> range, then the app is not triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> heartbeat and the pod disconnects from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
 </blockquote>
 <h3 id="feature-branch-medtrum-and-dana-support">Feature Branch: Medtrum and Dana Support<a class="headerlink" href="#feature-branch-medtrum-and-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>General statement about these pump managers. These were created for use with Trio and, at the time, some of the differences between the way <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and other OS-AID systems handle insulin accounting were not completely understood.</p>
+<div class="admonition important">
+<p class="admonition-title">Check your settings, temp basal accounting corrected</p>
+<p>The accounting used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> requires specific feedback from the Pump Managers. This important information was not initially added to the Dana or Medtrum pump managers. Those both were developed first for Trio which uses a different algorithm and accounts for insulin dosing differently.</p>
+<p>This oversight is fixed for both Dana and Medtrum.</p>
+<ul>
+<li>Medtrum was fixed on 17 Feb 2026</li>
+<li>Dana was fixed on 26 Feb 2026</li>
+</ul>
+<p>If you were using <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with one of these pumps before those dates, be aware that when you update your build, your settings may need to be adjusted.</p>
+</div>
+<p>General statement about these pump managers. These were originally tested using experimental branches with Trio and, at the time, some of the differences between the way <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and other OS-AID systems handle insulin accounting were not completely understood.</p>
 <ul>
 <li>Initially the bolusing pump event problem was pointed out and a fix provided</li>
-<li>There was still an issue with reporting temp basal pump events<ul>
-<li>This issue was fixed for MedtrumKit on 17 Feb 2026</li>
-<li>See the now closed MedtrumKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr>: <a href="https://github.com/jbr7rr/MedtrumKit/issues/77"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct</a></li>
+<li>There was still an issue with reporting temp basal pump events that was subsequently fixed<ul>
+<li>This fix was brought into the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> feature branches which include MedtrumKit on 17 Feb 2026<ul>
+<li>For more information see the closed MedtrumKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr>: <a href="https://github.com/jbr7rr/MedtrumKit/issues/77#issuecomment-3915865502"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct</a></li>
 </ul>
 </li>
-<li>Until there is time to ensure equivalent fixes to the DanaKit <abbr title="contains project files and each file's revision history">repository</abbr>, those using Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> should only use <abbr title="chosen method for increased insulin dosing: (1) High Temp Basal or (2) Automatic Bolus with scheduled basal">Dosing Strategy</abbr> of <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> - the insulin accounting will still not be perfect, but using <abbr title="provide a fraction of the recommended insulin automatically with each updated CGM reading (default 40%)">Automatic Bolus</abbr> helps</li>
+<li>This fix was brought into the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> feature branches which include DanaKit on 26 Feb 2026<ul>
+<li>For more information see the closed DanaKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr>: <a href="https://github.com/bastiaanv/DanaKit/issues/32#issuecomment-3937294107"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and DanaKit: Observe Pump Event Details in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a></li>
 </ul>
-<p>Anyone uses these new pump managers need to be using either one of these branches:</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Anyone using these new pump managers must build either one of these branches:</p>
 <ul>
 <li><code>feat/dev-dana-medtrum</code> </li>
 <li><code>feat/eversense</code> </li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Experts Only</p>
-<p>Please only use an experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.</p>
+<p>Please only use a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.</p>
 <ul>
 <li>Please ensure you have the latest version of a given <abbr title="version of code within a single repository or workspace repository">branch</abbr> by synching before you build:<ul>
 <li>Mac-<abbr title="program used to build an app">Xcode</abbr>: type <code>git pull --recurse</code> to update an existing <abbr title="create a copy of a repository on your computer including revision history and ability to update using git commands">clone</abbr> or download a fresh copy</li>

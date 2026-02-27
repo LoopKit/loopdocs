@@ -4803,10 +4803,10 @@
 </li>
 </ul>
 <h4 id="event-history-and-details"><abbr title="record of pump events (bolus or temp basal) reported and used by Loop">Event History</abbr> and Details<a class="headerlink" href="#event-history-and-details" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The event history lists pump events such as <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled basal, there is no indication in the list because that action is implied when the preceding <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> event completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)</p>
+<p>The event history lists pump events such as <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> and Bolus, Suspend and Resume along with other events provided by the pump manager. In general, when the pump returns to Scheduled Basal, there is no indication in the list because that action is implied when the preceding <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> event completed (the end of temp basal restores the pump to scheduled basal delivery unless a new temp basal rate event is started.)</p>
 <p>Additional details are available for every pump event. These are displayed by tapping on the event.</p>
 <h4 id="manual-bolus-example">Manual Bolus Example<a class="headerlink" href="#manual-bolus-example" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The graphic below shows pump event details for a manual bolus of 1 U. The indication this was a manual event initiated by the user is the <code>automatic</code> value is false. </p>
+<p>The graphic below shows pump event details for a manual bolus of 1 U. The <code>automatic: false</code> indicates this was a manual event initiated by the user. </p>
 <ul>
 <li>The left side shows a bolus-in-progress<ul>
 <li>The variable <code>isMutable</code> remains true while the bolus is in progress</li>
@@ -4816,7 +4816,7 @@
 </li>
 <li>The right side shows the same event once delivery is finalized<ul>
 <li>The variable <code>isMutable</code> is set to false</li>
-<li>The <code>deliveredUnits</code> value is the final dose as reported by the pump manager and is used by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to update the earlier esimates <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> assumed for this event</li>
+<li>The <code>deliveredUnits</code> value is the final dose as reported by the pump manager and is used by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to update the earlier estimates <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> assumed for this event</li>
 </ul>
 </li>
 </ul>
@@ -4824,7 +4824,7 @@
 <p align="center"><img alt="figure showing event details for bolus" src="../img/insulin-event-detail-bolus.svg" width="700" /></p>
 </blockquote>
 <h4 id="automatic-temporary-basal-rate-example">Automatic Temporary Basal Rate Example<a class="headerlink" href="#automatic-temporary-basal-rate-example" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The graphic below shows an automatic temporary basal event. The indication this was an automatic event initiated by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is the <code>automatic</code> value is true. </p>
+<p>The graphic below shows an automatic temporary basal rate (TBR) event. The <code>automatic: true</code> indicates this was an automatic event initiated by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>. </p>
 <ul>
 <li>The left side shows a temporary basal rate (TBR) in progress<ul>
 <li>The variable <code>isMutable</code> remains true while the TBR is in progress</li>
@@ -4833,7 +4833,7 @@
 <li>The end date is based on the planned duration for this TBR</li>
 </ul>
 </li>
-<li>The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command.<ul>
+<li>The right side shows this same event once it is finalized. In this case, the TBR was superceded by another command<ul>
 <li>The end date was updated to show the actual end time for this TBR</li>
 <li>The variable <code>isMutable</code> is set to false</li>
 <li>The <code>deliveredUnits</code> value is the final dose as reported by the pump manager and is used by <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to update the earlier esimates <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> assumed for this event</li>
