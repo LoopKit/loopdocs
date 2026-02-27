@@ -193,10 +193,10 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 General statement about these pump managers. These were originally tested using experimental branches with Trio and, at the time, some of the differences between the way Loop and other OS-AID systems handle insulin accounting were not completely understood.
 
 * Initially the bolusing pump event problem was pointed out and a fix provided
-* There was still an issue with reporting temp basal pump events
-    * This issue was fixed for MedtrumKit on 17 Feb 2026
+* There was still an issue with reporting temp basal pump events that was subsequently fixed
+    * This fix was brought into the Loop feature branches which include MedtrumKit on 17 Feb 2026
         * For more information see the closed MedtrumKit Issue: [Loop and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct](https://github.com/jbr7rr/MedtrumKit/issues/77#issuecomment-3915865502)
-    * The same methodology was brought into DanaKit on 26 Feb 2026
+    * This fix was brought into the Loop feature branches which include DanaKit on 26 Feb 2026
         * For more information see the closed DanaKit Issue: [Loop and DanaKit: Observe Pump Event Details in Loop](https://github.com/bastiaanv/DanaKit/issues/32#issuecomment-3937294107)
 
 Anyone using these new pump managers must build either one of these branches:
