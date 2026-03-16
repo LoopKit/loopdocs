@@ -4901,7 +4901,7 @@
 <p>In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.</p>
 <ul>
 <li>The <code>update_dev_to_M.m.#</code> is where the next version of dev is tested before becoming part of <code>dev</code> and later being released as <code>main</code></li>
-<li>The branches starting with <code>feat/</code> have one or more special features, like support for new pumps, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or the keep-alive work-around for Atlas DASH pods with by iPhone 16</li>
+<li>The branches starting with <code>feat/</code> have one or more special features, like support for new pumps, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or the keep-alive work-around for Atlas DASH pods with by iPhone 16 or iPhone 17e</li>
 </ul>
 <p>The graphic below shows the <code>main</code> and <code>dev</code> branches along with some feature branches and an update <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <blockquote>
@@ -4945,7 +4945,7 @@
 <td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>f51cf70</code></td>
 <td style="text-align: left;">3.13.0</td>
 <td style="text-align: left;">26 Feb 2026</td>
-<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>9992773</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
+<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 or 17e phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>9992773</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="#feature-branch-medtrum-and-dana-support">feat/dev-dana-medtrum</a> <br>- SHA <code>309b448</code></td>
@@ -5006,7 +5006,7 @@
 </li>
 </ul>
 <h3 id="feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature<a class="headerlink" href="#feature-branch-pod-keep-alive-feature" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The experimental <code>pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> has a new "Pod Keep Alive" option at the bottom of the "<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH" screen. This is intended to assist users who have both an <a href="../../faqs/omnipod-faqs/#iphone-16-and-atlas-or-inplay-dash-pods" target="_blank">iPhone 16 and DASH pods with a InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas) board</a>. No action is taken automatically unless both these cases are detected to be true.</p>
+<p>The experimental <code>pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> has a new "Pod Keep Alive" option at the bottom of the "<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and <a href="../../faqs/omnipod-faqs/#atlas-or-inplay-dash-pods" target="_blank">DASH pods with a InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas) board</a>. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.</p>
 <p>It was tested for LoopWorkspace and Trio.</p>
 <p>The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.</p>
 <p>The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.</p>
@@ -5032,6 +5032,11 @@
 <li>pair a new pod that is InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas)</li>
 <li>Pod Keep Alive is Disabled</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">No Automatic Change for iPhone 17e</p>
+<p>Note that we did not know the 17e would exhibit the same issue. The <code>When Open</code> option does not automatically enable when a 17e is used to pair with an Atlas pod.</p>
+<p>The user should manually enable <code>When Open</code> or <code>Silent Tune</code>/<code>RileyLink</code> before they try to pair an Atlas pod with an iPhone 17e.</p>
+</div>
 <p>Note that during the time from pair to insert, the app keeps the screen open and unlocked unless you manually lock it.</p>
 <p>This means you can take all the time you need between pair/prime and insert. As long as you don't manually lock the phone or move it out of range of the pod, the pod stays connected until you insert the cannula.</p>
 <p>Once the pod is inserted, the phone auto-lock timing is restored to the value the user has selected.</p>
@@ -5039,19 +5044,19 @@
 <p>When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available to the phone.</p>
 <p>This is true as long as the phone and pod are in-range while the app is open with phone unlocked.</p>
 <blockquote>
-<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
 </blockquote>
 <h4 id="silent-tune">Silent Tune<a class="headerlink" href="#silent-tune" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>A silent tune is played in the background which keeps the app alive even when the phone is locked. This will increase the battery usage on the phone.</p>
 <p>While Silent Tune is selected, the app will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.</p>
 <blockquote>
-<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
 </blockquote>
 <h4 id="rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#rileylink" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For those who have a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> (<abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr>, <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">EmaLink</abbr>, etc), you can use that instead of the Silent Tune but you must keep the link with the phone.</p>
 <p>While <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> is selected, the app is triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> one minute heartbeat. The app will send a getStatus to the pod 2:00 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.</p>
 <blockquote>
-<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
 <p>If the phone moves out of <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> range, then the app is not triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> heartbeat and the pod disconnects from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
 </blockquote>
 <h3 id="feature-branch-medtrum-and-dana-support">Feature Branch: Medtrum and Dana Support<a class="headerlink" href="#feature-branch-medtrum-and-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
