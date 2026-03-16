@@ -143,7 +143,7 @@ For this graphic, the cloned `LoopWorkspace` is in the home directory.
 * Choose your device
 * Tap on the build (play) button to build to your selected device
 
-## Updating Loop using `LoopWorkspace`
+## Updating `Loop` using Terminal
 
 When it's time to update the copy of `LoopWorkspace` on your computer - you have choices. You can use the method below or redo the whole cloning process.
 

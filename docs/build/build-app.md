@@ -117,6 +117,11 @@ This page has the detailed steps to run the Build Select Script to download the 
 
 Every attempt was made to put messages directly in the script for each step. The next few sections of this page walk you through what you will see when you run the script.
 
+!!! tips "How to Reuse a Download"
+    Some people prefer to use an existing download instead of starting fresh. In that case, be sure to read this section of the docs.
+
+    * [Updating `Loop` using Terminal](../version/loopworkspace.md#updating-loop-using-terminal){: target="_blank" }
+
 ### Open Terminal
 
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.

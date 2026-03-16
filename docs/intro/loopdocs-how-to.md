@@ -13,7 +13,7 @@ Volunteers generously provide support for Loop via online platforms. You have se
     * Visit the [LoopandLearn Website](https://www.loopandlearn.org)
     * Check out the [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn)
         * T1D Speaker Series covering many topics of general diabetes interest
-        * Open-Source Automated Insulin Dosing (OS AID) specific topics
+        * Open-Source Automated Insulin Dosing (OS-AID) specific topics
 
 ### How to Ask for Help
 
