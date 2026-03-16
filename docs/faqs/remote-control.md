@@ -14,7 +14,7 @@ You can add remote control to:
 
 You have 3 ways in which to do this. The first two require additions to the config vars on your Nightscout site and then you send commands through the Nightscout site either directly (option 1) or using the *LoopCaregiver* app (option 2) to the Looper's phone. The third option (*LoopFollow*) uses direct Apple Push Notifications (APNS) from your phone to the Looper's phone. With that method, the Nightscout site is used for monitoring, not issuing commands.
 
-All of these methods require APNS keys from someone with an Apple Developers License and that must be the same developer who built to *Loop* app.
+All of these methods require an APNS key from someone with an Apple Developers License and that must be the same developer who built to *Loop* app.
 
 1. Use the [Careportal at the Nightscout URL](../nightscout/remote-commands.md){: target="_blank" }
     * If the Caregiver uses an Android phone, this is your only option
@@ -23,7 +23,7 @@ All of these methods require APNS keys from someone with an Apple Developers Lic
     * The Caregiver must have an iPhone with iOS 16 or newer
     * The Nightscout config vars must include APNS keys and the developer ID for the developer who built the Loop app
 3. Build the [*LoopFollow* app](https://loopfollowdocs.org/remote/remote-control-loop/) on the caregiver's phone to directly issue APNS to the Looper's phone, this can be faster and more reliable
-    * The Caregiver must have an iOS phone with iOS 16 or newer
+    * The Caregiver must have an iOS phone with iOS 16.6 or newer
     * The Nightscout site monitors the Looper's phone
     * No additions to the Nightscout config vars are required - this makes it easier when you use Nightscout as a Service
 
