@@ -58,7 +58,7 @@ You may choose to download fresh each time you update.
 You may prefer to use commands to fetch and pull the latest code without making a new clone.
 
 * Some users like to use [GitKraken](https://support.gitkraken.com/) to assist them (link takes you to a tutorial video).
-* Some are comfortable with the command line git commands described on [here](../version/loopworkspace.md#updating-loop-using-loopworkspace).
+* Some are comfortable with the command line git commands described on [here](../version/loopworkspace.md#updating-loop-using-terminal).
 
 ## Loop-dev Version
 
