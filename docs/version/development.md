@@ -25,7 +25,7 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
-* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the keep-alive work-around for Atlas DASH pods with by iPhone 16
+* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the keep-alive work-around for Atlas DASH pods with by iPhone 16 or iPhone 17e
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
 
@@ -46,7 +46,7 @@ The table below lists active branches. Note that updates may occur and be announ
 |:--|:--|:--|:--|
 | main | 3.12.0 | 24 Feb 2026 | release|
 | dev | 3.13.0 | 24 Feb 2026 | code is currently the same as `main` |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `f51cf70` | 3.13.0 | 26 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `f51cf70` | 3.13.0 | 26 Feb 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 or 17e phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `9992773`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `309b448` | 3.13.0 | 26 Feb 2026 | - adds experimental support for Dana and Medtrum pumps<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for DanaKit is `3970b2a` (TBR issues fixed)<br>  - SHA for MedtrumKit is `c79a883` (TBR issues fixed) |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `efe5f5c` | 3.13.0 | 26 Feb 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `e870c22` |
 
@@ -110,7 +110,7 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Feature Branch: Pod Keep Alive Feature
 
-The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an [iPhone 16 and DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#iphone-16-and-atlas-or-inplay-dash-pods){: target="_blank" }. No action is taken automatically unless both these cases are detected to be true.
+The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 
 It was tested for LoopWorkspace and Trio.
 
@@ -145,6 +145,11 @@ All three criteria must be true or no automatic change to the setting takes plac
 * pair a new pod that is InPlay BLE (Atlas)
 * Pod Keep Alive is Disabled
 
+!!! warning "No Automatic Change for iPhone 17e"
+    Note that we did not know the 17e would exhibit the same issue. The `When Open` option does not automatically enable when a 17e is used to pair with an Atlas pod.
+    
+    The user should manually enable `When Open` or `Silent Tune`/`RileyLink` before they try to pair an Atlas pod with an iPhone 17e.
+
 Note that during the time from pair to insert, the app keeps the screen open and unlocked unless you manually lock it.
 
 This means you can take all the time you need between pair/prime and insert. As long as you don't manually lock the phone or move it out of range of the pod, the pod stays connected until you insert the cannula.
@@ -157,7 +162,7 @@ When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the
 
 This is true as long as the phone and pod are in-range while the app is open with phone unlocked.
 
-> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 
 #### Silent Tune
 
@@ -165,7 +170,7 @@ A silent tune is played in the background which keeps the app alive even when th
 
 While Silent Tune is selected, the app will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.
 
-> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 
 #### RileyLink
 
@@ -173,7 +178,7 @@ For those who have a RileyLink (OrangeLink, EmaLink, etc), you can use that inst
 
 While RileyLink is selected, the app is triggered by the RileyLink one minute heartbeat. The app will send a getStatus to the pod 2:00 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.
 
-> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
+> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 
 > If the phone moves out of RileyLink range, then the app is not triggered by the RileyLink heartbeat and the pod disconnects from BLE at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 
