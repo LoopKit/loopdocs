@@ -27,7 +27,7 @@ DASH pumps communicate with the phone via Bluetooth so they do not require a Ril
 ### Atlas or InPlay DASH pods
 
 !!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
-    **iPhone 16 all models** and **iPhone 17e model only**
+    **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH pods. This can cause delays to automatic and manual insulin dosing.
 
     **Other phones, including iPhone 17 models other than 17e, work fine with InPlay DASH pods**
 
@@ -53,7 +53,8 @@ Beginning in 2025, some of the DASH pods are produced with a newer version of ch
         * With iPhone 16 or 17e, this can take many seconds and sometimes a few minutes
     * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
     * No solution to this issue is known
-    * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for both the phone and the pod
+    * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for the phone. 
+        * Although it does increase the number of messages to the pod slightly, this is not thought to be a big issue. Pods with marginal batteries are as likely to fault without this feature as with the feature.
         * If you are forced to use an iPhone 16 or 17e with InPlay pods, please read the [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } section for information about building a feature branch for Loop that contains this code
         * If you are using Trio or iAPS, the same OmniBLE `pod-keep-alive` branch can be used by that app - check with mentors for those apps for instructions
 
@@ -61,7 +62,7 @@ Beginning in 2025, some of the DASH pods are produced with a newer version of ch
 
 > The earliest `Atlas` DASH pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. Later in 2025, `Atlas` DASH pods with July 2025 and later manufacture dates were seen. 
 
-We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16. Otherwise, you won't notice a difference.
+We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16 or iPhone 17e. Otherwise, you won't notice a difference.
 
 
 - - -
