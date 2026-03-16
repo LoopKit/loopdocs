@@ -110,7 +110,7 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Feature Branch: Pod Keep Alive Feature
 
-The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an [iPhone 16 and DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#iphone-16-and-atlas-or-inplay-dash-pods){: target="_blank" }. No action is taken automatically unless both these cases are detected to be true.
+The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 
 It was tested for LoopWorkspace and Trio.
 

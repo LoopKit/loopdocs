@@ -24,16 +24,16 @@ You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod suppli
 DASH pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
 
 
-### iPhone 16 and Atlas or InPlay DASH pods
+### Atlas or InPlay DASH pods
 
-!!! warning "iPhone 16 and Omnipod DASH"
-    **iPhone 16 only**
+!!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
+    **iPhone 16 all models** and **iPhone 17e model only**
 
-    **Other phones, including iPhone 17, work fine with InPlay DASH pods**
+    **Other phones, including iPhone 17 models other than 17e, work fine with InPlay DASH pods**
 
 Beginning in 2025, some of the DASH pods are produced with a newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. It is anticipated that `Atlas` pods, which report electronically as `InPlay BLE`, will become more common.
 
-**If you do not already own an iPhone 16, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17) phone.**
+**If you do not already own an iPhone 16 or a 17e, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17 that is not the 17e) phone.**
 
 * The left images show the SAW marking for `TWI Board` DASH pods
 * The right images show the Atlas marking for `InPlay BLE` DASH pods
@@ -42,22 +42,22 @@ Beginning in 2025, some of the DASH pods are produced with a newer version of ch
 ![identifying marks for SAW and Atlas DASH pods](img/saw-atlas-identifiers.svg){width="750"}
 {align="center"}
 
-#### Characteristics of Atlas with iPhone 16
+#### Characteristics of Atlas with iPhone 16 or 17e
 
-* The Atlas DASH pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16
-* Although `InPlay` pods do work with the iPhone 16 you may notice some communication issues
+* The Atlas DASH pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16 and iPhone 17e
+* Although `InPlay` pods do work with the iPhone 16 and 17e you may notice some communication issues
     * It can take many attempts to get the pod to initially connect when pairing; just keep hitting retry
     * Once the pod disconnects itself from the phone Bluetooth, the phone is slow to reconnect the pod to the *Loop* app
         * Pod firmware initiates the disconnect 3 minutes after the last message exchange
         * With other models, the reconnect happens in about 1 sec
-        * With iPhone 16, this can take many seconds and sometimes a few minutes
+        * With iPhone 16 or 17e, this can take many seconds and sometimes a few minutes
     * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
     * No solution to this issue is known
     * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for both the phone and the pod
-        * If you are forced to use an iPhone 16 with InPlay pods, please read the [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } section for information about building a feature branch for Loop that contains this code
+        * If you are forced to use an iPhone 16 or 17e with InPlay pods, please read the [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } section for information about building a feature branch for Loop that contains this code
         * If you are using Trio or iAPS, the same OmniBLE `pod-keep-alive` branch can be used by that app - check with mentors for those apps for instructions
 
-> DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16.
+> DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16 and 17e.
 
 > The earliest `Atlas` DASH pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. Later in 2025, `Atlas` DASH pods with July 2025 and later manufacture dates were seen. 
 
