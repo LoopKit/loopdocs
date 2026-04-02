@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.12.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.12.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,30 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.12.1
+
+[*Loop* v3.12.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.1) was released on 02 April 2026.
+
+#### v3.12.1 Highlights
+
+**Loop Features**
+
+No change to any Loop Features.
+
+**Browser Build Support**
+
+This release fixes those nagging warning messages:
+
+* The Build action uses Xcode 26 (takes care of the SDK 18 warning)
+* The GitHub actions were updated to use Node.js 24
+* The value for `ENABLE_NUKE_CERTS` is now case insensitive; it now works if you entered `True` instead of `true`
+
+**Translations**
+
+Additional translations were imported from lokalise.
 
 - - -
 
