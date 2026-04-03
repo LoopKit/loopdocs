@@ -47,7 +47,7 @@ The table below lists active branches. Note that updates may occur and be announ
 | main | 3.12.1 | 03 Apr 2026 | release|
 | dev | 3.13.1 | 02 Apr 2026 | code is currently the same as `main` |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `4612426` | 3.13.1 | 31 Mar 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 or 17e phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `dade6ed`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `31fe9f6` | 3.13.1 | 31 Mar 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `0158fc8`<br>  - SHA for MedtrumKit is `b7f3d44`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interace |
+| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `31fe9f6` | 3.13.1 | 31 Mar 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `0158fc8`<br>  - SHA for MedtrumKit is `b7f3d44`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interace |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `126c4a6` | 3.13.1 | 31 Mar 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `0bf3cf4` |
 
 !!! important "Eversense Support"
@@ -182,11 +182,32 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 > If the phone moves out of RileyLink range, then the app is not triggered by the RileyLink heartbeat and the pod disconnects from BLE at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 
+- - -
 
-### Feature Branch: Medtrum and Dana Support
+### Feature Branch: Dana and Medtrum Support
+
+Anyone using Dana or Medtrum pumps must build one of these branches. The pump manager support is identical. The difference is the second one includes support for the Eversense CGM.
+
+* `feat/dev-dana-medtrum` 
+* `feat/eversense` 
+
+!!! important "Experts Only"
+    Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.
+
+    * Please ensure you have the latest version of a given branch by synching before you build:
+        * Browser Build: be sure you select `feat/dev-dana-medtrum` or `feat/eversense` branch
+            * The Build Loop action automatically syncs your fork when building
+            * Be sure to install the resultant build from *TestFlight* onto your phone
+        * Mac-Xcode: you can update your clone or download a fresh copy
+            * if updating your clone, be sure to type `git pull --recurse` in your `LoopWorkspace` folder to include updates to all submodules
+            * See [Mac-Xcode Build](#mac-xcode-build) for fresh download instructions
 
 !!! important "Bluetooth Connection Issues for Dana and Medtrum"
-    Both the Dana and Medtrum pumps are designed to stay in continuous Bluetooth commnication with the pump controller, which is your phone OS-AID system.
+    Both the Dana and Medtrum pumps are designed to stay in continuous Bluetooth commnication with the pump controller. The behavior of your OS-AID system needs to properly handle boluses in progress if that communication is interrupted.  This can happen if someone walks away from their phone during a bolus.
+
+    Please read the rest of this section to learn about how this might affect an older or current version of your OS-AID app.
+
+#### Closed Issue for Medtrum
 
 !!! success "Medtrum Bluetooth Comms Loss Updated"
 
@@ -196,6 +217,7 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
     [MedtrumKit Pull Request 93](https://github.com/jbr7rr/MedtrumKit/pull/93) fixed this issue.  Now if Bluetooth communication is lost, the pump manager relies on expected timing to continue the bolus progress display.  The bolus is not considered final until BLE is restored and the app is able to communicate with the pump.
 
+#### Open Issue for DanaKit
 
 !!! bug "DanaKit Bluetooth Comms Loss Not Fixed"
 
@@ -211,6 +233,7 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
     This is less serious of a problem because the reported IOB matches what the pump was told to deliver. But of course, it will be fixed.
 
+#### Issue Fixed Earlier
 
 !!! success "Temp Basal Accounting Corrected"
     The accounting used by Loop requires specific feedback from the Pump Managers. This important information was not initially added to the Dana or Medtrum pump managers. Those both were developed first for Trio which uses a different algorithm and accounts for insulin dosing differently.
@@ -225,19 +248,7 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
     * For more information see the closed MedtrumKit Issue: [Loop and Medtrum Pump Manager: Basal Delivery Accounting is Not Correct](https://github.com/jbr7rr/MedtrumKit/issues/77#issuecomment-3915865502)
     * For more information see the closed DanaKit Issue: [Loop and DanaKit: Observe Pump Event Details in Loop](https://github.com/bastiaanv/DanaKit/issues/32#issuecomment-3937294107)
 
-
-Anyone using these new pump managers must build either one of these branches:
-
-* `feat/dev-dana-medtrum` 
-* `feat/eversense` 
-
-!!! important "Experts Only"
-    Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues.
-
-    * Please ensure you have the latest version of a given branch by synching before you build:
-        * Mac-Xcode: type `git pull --recurse` to update an existing clone or download a fresh copy
-        * Browser Build, the Build Loop action, with the `feat/dev-dana-medtrum` or `feat/eversense` branch selected should automatically sync your fork for you
-
+- - -
 
 ### Feature Branch: Eversense Support
 
