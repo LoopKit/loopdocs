@@ -14,9 +14,9 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop v3.12.0`. 
+This section provides an overview of changes to `dev` compared to `Loop v3.12.1`. 
 
-The current version of `dev` is v3.13.0 with code identical to that in the `main` branch.
+The current version of `dev` is v3.13.1 with code identical to that in the `main` branch.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -44,7 +44,7 @@ The table below lists active branches. Note that updates may occur and be announ
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.12.1 | 02 Apr 2026 | release|
+| main | 3.12.1 | 03 Apr 2026 | release|
 | dev | 3.13.1 | 02 Apr 2026 | code is currently the same as `main` |
 | [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `4612426` | 3.13.1 | 31 Mar 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 or 17e phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `dade6ed`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
 | [feat/dev-dana-medtrum](#feature-branch-medtrum-and-dana-support) <br>- SHA `31fe9f6` | 3.13.1 | 31 Mar 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `0158fc8`<br>  - SHA for MedtrumKit is `b7f3d44`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interace |

@@ -31,7 +31,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 ## Loop v3.12.1
 
-[*Loop* v3.12.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.1) was released on 02 April 2026.
+[*Loop* v3.12.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.1) was released on 03 April 2026.
 
 #### v3.12.1 Highlights
 
