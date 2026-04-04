@@ -185,13 +185,21 @@ With Eversense added to *Loop* you get direct connection to your transmitter for
 
 The *Loop* app does not have glucose notification features, at this time. You can enable the on-transmitter notification within the *Loop* app so the transmitter will vibrate to alert you of an issue.
 
-The pairing process of both transmitters are simple:
+Review the graphic and text below for the steps to add the Eversense CGM. Note the middle screen of that graphic is only shown for the 365 transmitter. The E3 does not require a login step.
 
-* For the Eversense E3, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
+![Steps to add Eversense CGM](img/eversense-login-screen.png){width="750"}
+{align="center"}
 
-* For the Eversense 365, you are required to have an internet connection and Eversense account during pairing. This is needed to fetch the security keys for your transmitter. After logging in, select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
+Step 1: Choose the type of Eversense Sensor
 
-    * If this is the first time you pair this transmitter with this phone / app, you might need to put the Transmitter into pairing mode before it will show up
+* Eversense E3: click the radio button for E3 and tap Continue to proceed to Step 2
+* Eversense 365: click the radio button for 365 and tap Continue to proceed to the login screen
+    * If you already have an Eversense login, and you should, just enter the credential here to login and continue to Step 2
+    * Note that you must have internet access at this point, but only at this point. After the login, all required communication is through Bluetooth between the OS-AID and the Transmitter
+
+Step 2: Select the correct transmitter name (see SN at the bottom of your transmitter) and accept the iOS pairing prompt (if shown) and wait till the pairing has completed
+
+* If this is the first time you pair this transmitter with this phone / app, you might need to put the Transmitter into pairing mode before it will show up
 
 ### Medtronic Enlite CGM
 
