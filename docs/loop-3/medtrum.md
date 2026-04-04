@@ -125,13 +125,13 @@ The icon shown in the Loop main screen may not be as specific as the string in t
 
 The configuration section displays:
 
-* [**Insulin Type**](#insulin-type) shows the Insulin Brand selected; be sure to modify this between patches if you change the insulin type
+* [**Insulin Type**](#insulin-type) shows the Insulin Brand selected; be sure to modify this between patches if you change your insulin
 * [**Patch Settings**](#patch-settings) tap on this row to modify settings for the patch
 
 
 ### Insulin Type
 
-You selected [insulin type](add-pump.md#insulin-type){: target="_blank"} when connecting to this pump.
+You selected [Insulin Type](add-pump.md#insulin-type){: target="_blank"} when connecting to this pump.
 
 Tap on this row if you switch to a different type of insulin.
 
@@ -145,25 +145,25 @@ Typically the default Patch Settings are selected during onboarding of the Medtr
 Any changes made to Patch Settings after onboarding requires authentication to be saved.
 
 1. **Max hourly insulin** & **Max daily insulin**: Medtrum Nano does not work with max bolus and max basal settings, it uses max hourly & max daily insulin. Just like the names suggests, it controls the maximum amount of insulin per hour or per day (measured since midnight). 
-1. **Alarm setting**: The Medtrum Nano has the ability to make a beep if there is an occlusion, patch fault, empty battery, etc. These alarms can also be silenced using this setting
-1. **Patch lifetime**: Normally, the Medtrum Nano runs for 3 days and 8 hours. This is recommended to ensures the functioning of the patch and cannula. You can disable this limit but it is not recommended.  See [Extended Lifetime Setting](#extended-lifetime-setting) for more
+1. **Alarm setting**: The Medtrum Nano has the ability to make a beep if there is an occlusion, patch fault, empty battery, etc. These alarms can also be silenced using this setting.
+1. **Patch lifetime**: Normally, the Medtrum Nano runs for 3 days and 8 hours. This is recommended to ensures the functioning of the patch and cannula. You can disable this limit but it is not recommended.  See [Extended Lifetime Setting](#extended-lifetime-setting) for more information.
 1. **Notification for expiration**: If the **Patch lifetime** setting is set to normal lifetime, you have the ability to update this setting. You can control at what point the patch will alert you that patch is nearing expiration.
-1. **Notification for low reservoir**: You can select the reservoir level at which you want to be notified or disable the notification
+1. **Notification for low reservoir**: You can select the reservoir level at which you want to be notified or disable the notification.
 
 
 - - -
 
 ## Information
 
-The next section on the Patch screen reports information about the current patch and the previous patch:
+The next section on the Medtrum Nano screen reports information about the current patch and the previous patch:
 
 * **Activation**: Time at which patch was Activated
 * **Expiration:** Time at which patch will Expire (8 hours before No Delivery time)
 * **No Delivery**: Time at which patch will stop delivering insulin
     * If using extended life, please read [Extended Lifetime Setting](#extended-lifetime-setting)
     * If a Patch Fault was detected, this will give the time at which the fault was detected
-* Access to **Patch Details**
-* Access to **Previous Patch Details**
+* Access to [**Patch Details**](#patch-details)
+* Access to [**Previous Patch Details**](#previous-patch-details)
 
 #### Patch Details
 
@@ -183,7 +183,7 @@ When you tap on the `Previous Patch Details` row, summary information is display
 
 ## Patch Time
 
-Click on [Time Zone](displays-v3.md#time-zone) to understand how Loop treats "pump" time for pods.
+Click on [Time Zone](displays-v3.md#time-zone){: target="_blank" } to understand how Loop treats "pump" time for pods.
 
 When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. 
 
@@ -204,6 +204,8 @@ When the phone time zone and pump time zone do not match, there is a clock icon 
 
 What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on an OS-AID phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the main display or Nano screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
 
+> When automatic time is disabled on the iPhone settings, Loop will not automatically modify insulin delivery and the pump will revert to scheduled basal after the last temporary basal rate duration completes.
+
 Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
 ![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
@@ -216,10 +218,9 @@ Loop 3 will display this warning modal screen if it detects a problem with the P
 !!! danger "Attach Pump Base Before Filling the Pump Patch with Insulin"
     Make sure the pump base matches the patch.
 
-    !!! warning "Always check your REF's"
-        Before connecting your pump base with your patch, always check the REF on your patch with the REF on your pump base.
-        The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1.
-        Do not use the patch if they do not match.
+    * Before connecting your pump base with your patch, always check the REF on your patch with the REF on your pump base
+    * The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1
+    * Do not use the patch with that base if they do not match
 
         ![Medtrum REF](img/medtrum-ref.JPG){width="450"}
         {align="center"}
@@ -235,7 +236,7 @@ Loop 3 will display this warning modal screen if it detects a problem with the P
 !!! abstract ""
     The graphics walk you through each step of the filling, pairing, priming, attaching and insertion process.
 
-    You will probably need to scroll up or down to see all the instructions.
+    You will probably need to scroll up or down to see all the instructions on your phone.
 
 ![activate a new patch](img/patch-activation-flow.svg){width="500"}
 {align="center"}
