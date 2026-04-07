@@ -58,9 +58,10 @@ If [Patch Errors and Alerts](#patch-error-messages) occur, they will show up jus
 
 ### Suspend Delivery
 
-Tapping on `Suspend Delivery` halts all insulin delivery from the patch. You must remember to resume insulin later. Please configure a timer to remind you that no insulin is being delivered.
+Tapping on `Suspend Delivery` halts all insulin delivery from the patch for a duration of 2 hours. You can resume insulin delivery before that by tapping on resume delivery.
 
 * The user is alerted that pump is suspended by an icon on the OS-AID main screen header.
+* The patch itself might vibrate or beep every 15 minutes
 
 ![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
 {align="center"}
@@ -87,6 +88,15 @@ The graphic below shows a nominal display with scheduled basal running on the le
 
 If the last sync was in the far past, you can force an immediate sync by tapping on Sync patch data.
 
+!!! info "Items Updated by Sync"
+    * Patch state (active, reservoir empty, fault, etc)
+    * Patch datetime
+    * Reservoir levels
+    * Bolus/basal state
+    * Patch battery voltage
+    * Patch starttime
+
+
 ### Disconnect or Reconnect
 
 The Nano pump is normally always connected to the phone with Bluetooth. The action button will show Disconnect and the Status will report Connected with a green dot. (See [Stop Temp Basal](#stop-temp-basal) for example screenshots.)
@@ -108,14 +118,27 @@ Once the patch is deactivated, use the Medtrum-provided tool to retract the need
 
 ### Patch State
 
-The patch state row echoes the status for the patch:
+The Patch State refers to the patch itself, whereas [Status](#status) refers to the Bluetooth status.
 
-The icon shown in the Loop main screen may not be as specific as the string in the Patch state row. So if you see Patch Error with the stop sign on the main screen, tap on the icon to determine the exact issue.
+The icon shown in the Loop main screen may not be as specific as the string in the Patch State row. So if you see Patch Error with the stop sign on the main screen, tap on the icon to determine the exact issue.
 
-* **Connected** (normal configuration)
+* **Active** (normal operation)
+* **Fault**
+* **Occlusion**
+* **Battery Empty**
 * **Suspended** (usually a manual action)
 * **Suspended - Hourly max** (insulin delivered in the last hour exceeds patch setting)
 * **Suspended - Daily max** (insulin delivered since midnight exceeds patch setting)
+* **Expired**
+
+The Suspended states can be updated by resuming, or modifying the hourly or daily maximum values in [Patch Settings](#patch-settings) and then clearing the alert.
+
+
+### Status
+
+The Status row reports the Bluetooth status:
+
+* **Connected** (normal configuration)
 * **Disconnected** (out of Bluetooth range)
 * **Reconnecting...** (after tap on Reconnect)
 
