@@ -51,7 +51,7 @@ There is a summary of the patch status at the top of the screen.
         * It is blue for at least the first 48 hours
         * The line turns orange to warn the patch is within 24 hours of expiration
         * When the patch expires, the line turns red and the text indicates how much time until No Delivery
-        * The warning orange and red lifecycle lines also appear in the [HUD Pump Status](displays-v3.md#pump-status-icon) icon at the top of the *Loop* main screen
+        * The warning orange and red lifecycle lines also appear in the [HUD Pump Status](displays-v3.md#pump-status-icon){: target="_blank" } icon at the top of the *Loop* main screen
 * The left side of the next row reports the current (absolute) basal rate
 * The right side of the next row reports the reservoir level
 
@@ -71,7 +71,7 @@ Tapping on `Suspend Delivery` halts all insulin delivery from the patch for a du
 ![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
-* For the *Loop* app, the [HUD Status Row](displays-v3.md#hud-status-row) message can be tapped to resume delivery.
+* For the *Loop* app, the [HUD Status Row](displays-v3.md#hud-status-row){: target="_blank" } message can be tapped to resume delivery.
 
 ![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
@@ -295,6 +295,35 @@ From here, you can attach the patch to your body and complete the activation pro
 
 🚧 TODO: This section is under construction 🚧
 
+Most Patch Error messages are for information and there is no action that can be taken other than to replace the patch. (This statement needs review)
+
+There are two states that can be handled by taking the appropriate action.
+
+### Alert: Suspended - Hourly Max
+
+The patch has an internal setting for the maximum amount of total insulin that can be delivered per hour. If this is exceeded then the patch indicates an alert and suspends itself.
+
+* Consider if there might be a cannula issue if your **Max hourly insulin** is reasonable and you do not think you should exceed that amount
+    * Remember to include scheduled basal rate, temporary basal rate and any boluses for that hour
+* Go to the [Patch Settings](#patch-settings)
+    * Examine the current value for **Max hourly insulin**
+    * You can modify that value to a larger amount and save it
+    * Once a larger amount is saved, you can then return to the Nano screen and clear the alert at the top of the screen
+    * Insulin Delivery should resume providing normal close-loop operation
+
+
+### Alert: Suspended - Daily max
+
+The patch has an internal setting for the maximum amount of total insulin that can be delivered in a day. If this is exceeded then the patch indicates an alert and suspends itself. Note that the insulin delivery is calculated from midnight local time.
+
+* Consider if there might be a cannula issue if your **Max daily insulin** is reasonable and you do not think you should exceed that amount
+    * Remember to include scheduled basal rate, temporary basal rate and any boluses for that day
+* Go to the [Patch Settings](#patch-settings)
+    * Examine the current value for **Max daily insulin**
+    * You can modify that value to a larger amount and save it
+    * Once a larger amount is saved, you can then return to the Nano screen and clear the alert at the top of the screen
+    * Insulin Delivery should resume providing normal close-loop operation
+    
 - - -
 
 ## Extended Lifetime Setting
