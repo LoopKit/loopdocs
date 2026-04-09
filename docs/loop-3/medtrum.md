@@ -1,6 +1,10 @@
-!!! important "🚧 Documentation Under Construction 🚧"
+!!! warning "🚧 Documentation Under Construction 🚧"
     
-    This page is under development.
+    This page is under development. 
+    
+    The addition of the Medtrum Nano pump to iOS Open-Source Automated Insulin Delivery systems is new.
+    
+    Please review the [MedtrumKit Issues](https://github.com/jbr7rr/MedtrumKit/issues) page for open issues reported for the MedtrumKit Pump Manager. In a few cases, the documentation on this page may anticipate some of the fixes planned for those minor issues.
  
 ## Medtrum Nano Pump
 
@@ -10,12 +14,13 @@ The Medtrum Nano Pump is supported using the *Loop* app built with a feature bra
 * The pump base is reusable - do not accidentally discard the base after removing the patch
 * Versions 200U (MD0201 & MD8201) and 300U (MD8301) are supported 
 
-### When Testing Medtrum with Loop
+### Testing Medtrum with the *Loop* App
 
-* The branch needed to get Medtrum in Loop is: `feat/dev-dana-medtrum`.
-    * This branch is subject to rapid updates.
+* The branch needed to get Medtrum in *Loop* is: `feat/dev-dana-medtrum`
+    * This branch is subject to rapid updates
+    * If you also want to use the Eversense CGM, the `feat/eversense` branch provides support for Dana and Medtrum along with the Eversense CGM
 
-* Please refer to the [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247) before building this branch.
+* Please refer to the [zulipchat Loop-dev development channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/515372445) before building this branch.
 
 - - -
 
@@ -46,7 +51,7 @@ There is a summary of the patch status at the top of the screen.
         * It is blue for at least the first 48 hours
         * The line turns orange to warn the patch is within 24 hours of expiration
         * When the patch expires, the line turns red and the text indicates how much time until No Delivery
-        * The warning orange and red lifecycle lines also appear in the [HUD Pump Status](displays-v3.md#pump-status-icon) icon
+        * The warning orange and red lifecycle lines also appear in the [HUD Pump Status](displays-v3.md#pump-status-icon) icon at the top of the *Loop* main screen
 * The left side of the next row reports the current (absolute) basal rate
 * The right side of the next row reports the reservoir level
 
@@ -73,7 +78,7 @@ Tapping on `Suspend Delivery` halts all insulin delivery from the patch for a du
 
 #### No Manual Bolus While Patch is Suspended
 
-If you request a manual bolus with Loop while a patch is suspended, Loop will send a notification that Bolus Failed with instructions that Pump is Suspended, Resume Delivery.  In other words, you must resume delivery before you will be allowed to bolus with pods.
+If you request a manual bolus with *Loop* while a patch is suspended, *Loop* will send a notification that Bolus Failed with instructions that Pump is Suspended, Resume Delivery.  In other words, you must resume delivery before you will be allowed to bolus with pods.
 
 ### Stop Temp Basal
 
@@ -114,13 +119,13 @@ When the phone and pump are separated, the app will report Bluetooth is disconne
 
 The Deactivate Patch should only be tapped when you are ready to halt insulin permanently and remove the patch. Once you select this row, you are asked if you want to deactivate and then you must provide authentication to do so.
 
-Once the patch is deactivated, use the Medtrum-provided tool to retract the needle before removing the patch.  Remove the patch and then promptly remove the pump base (brain) from the patch and put it in a safe place. The easiest way to remove the base is to turn the patch upside down and gently press on the plastic tab to release to base.
+Once the patch is deactivated, use the Medtrum-provided tool to retract the needle before removing the patch.  Remove the patch and then promptly remove the pump base (brain) from the patch and put it in a safe place. The easiest way to remove the base is to turn the patch upside down and gently press on the plastic tab to release the base.
 
 ### Patch State
 
 The Patch State refers to the patch itself, whereas [Status](#status) refers to the Bluetooth status.
 
-The icon shown in the Loop main screen may not be as specific as the string in the Patch State row. So if you see Patch Error with the stop sign on the main screen, tap on the icon to determine the exact issue.
+The icon shown in the *Loop* main screen may not be as specific as the string in the Patch State row. So if you see Patch Error with the stop sign on the main screen, tap on the icon to determine the exact issue.
 
 * **Active** (normal operation)
 * **Fault**
@@ -158,8 +163,8 @@ You selected [Insulin Type](add-pump.md#insulin-type){: target="_blank"} when co
 
 Tap on this row if you switch to a different type of insulin.
 
-* The model used by Loop for all the rapid insulin brands are the same, but it's a good idea to record if you change brands - some people notice differences
-* If you switch between rapid and ultra-rapid insulin, you need to let Loop know so it will use the appropriate model
+* The model used by *Loop* for all the rapid insulin brands are the same, but it's a good idea to record if you change brands - some people notice differences
+* If you switch between rapid and ultra-rapid insulin, you need to let *Loop* know so it will use the appropriate model
 
 ### Patch Settings
 
@@ -180,6 +185,7 @@ Any changes made to Patch Settings after onboarding requires authentication to b
 
 The next section on the Medtrum Nano screen reports information about the current patch and the previous patch:
 
+* **Cannula Age**: Time since the cannula was inserted (coming soon)
 * **Activation**: Time at which patch was Activated
 * **Expiration:** Time at which patch will Expire (8 hours before No Delivery time)
 * **No Delivery**: Time at which patch will stop delivering insulin
@@ -206,7 +212,7 @@ When you tap on the `Previous Patch Details` row, summary information is display
 
 ## Patch Time
 
-Click on [Time Zone](displays-v3.md#time-zone){: target="_blank" } to understand how Loop treats "pump" time for pods.
+Click on [Time Zone](displays-v3.md#time-zone){: target="_blank" } to understand how *Loop* treats "pump" time for pods.
 
 When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. 
 
@@ -225,11 +231,11 @@ When the phone time zone and pump time zone do not match, there is a clock icon 
 
 ### Other Time Changes
 
-What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on an OS-AID phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the main display or Nano screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
+What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on an OS-AID phone.  If you have an "old" glucose reading in the "future" - *Loop* will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the main display or Nano screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
 
-> When automatic time is disabled on the iPhone settings, Loop will not automatically modify insulin delivery and the pump will revert to scheduled basal after the last temporary basal rate duration completes.
+> When automatic time is disabled on the iPhone settings, *Loop* will not automatically modify insulin delivery and the pump will revert to scheduled basal after the last temporary basal rate duration completes.
 
-Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
+The *Loop* app will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
 ![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
 {align="center"}
