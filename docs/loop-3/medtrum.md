@@ -301,7 +301,7 @@ There are two states that can be handled by taking the appropriate action.
 
 ### Alert: Suspended - Hourly Max
 
-The patch has an internal setting for the maximum amount of total insulin that can be delivered per hour. If this is exceeded then the patch indicates an alert and suspends itself.
+The patch has an internal setting for the maximum amount of total insulin that can be delivered per hour. If this is exceeded then the patch indicates an alert and suspends insulin delivery.
 
 * Consider if there might be a cannula issue if your **Max hourly insulin** is reasonable and you do not think you should exceed that amount
     * Remember to include scheduled basal rate, temporary basal rate and any boluses for that hour
@@ -314,7 +314,7 @@ The patch has an internal setting for the maximum amount of total insulin that c
 
 ### Alert: Suspended - Daily max
 
-The patch has an internal setting for the maximum amount of total insulin that can be delivered in a day. If this is exceeded then the patch indicates an alert and suspends itself. Note that the insulin delivery is calculated from midnight local time.
+The patch has an internal setting for the maximum amount of total insulin that can be delivered in a day. If this is exceeded then the patch indicates an alert and suspends insulin delivery. Note that the insulin delivery is calculated from midnight local time.
 
 * Consider if there might be a cannula issue if your **Max daily insulin** is reasonable and you do not think you should exceed that amount
     * Remember to include scheduled basal rate, temporary basal rate and any boluses for that day
@@ -323,7 +323,7 @@ The patch has an internal setting for the maximum amount of total insulin that c
     * You can modify that value to a larger amount and save it
     * Once a larger amount is saved, you can then return to the Nano screen and clear the alert at the top of the screen
     * Insulin Delivery should resume providing normal close-loop operation
-    
+
 - - -
 
 ## Extended Lifetime Setting
