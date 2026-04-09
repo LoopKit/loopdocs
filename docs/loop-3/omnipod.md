@@ -110,7 +110,7 @@ Pods start reporting reservoir values when 50 U are left.
 | 0 U|Pod will attempt to deliver up to 4 U after it reports 0 U.<br><br> This is not guaranteed. The pod senses when it is not successful delivering pulses and that can happen before 4 U have been delivered.|
 
 
-## Activity
+## Actions
 
 ### Suspend Delivery
 

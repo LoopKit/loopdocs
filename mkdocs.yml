@@ -189,8 +189,11 @@ nav:
     - 'Optional: Services': 'loop-3/services.md'
     - 'Displays': 'loop-3/displays-v3.md'
     - 'RileyLink Display': 'loop-3/rileylink.md'
+    - 'Eversense CGM': loop-3/eversense.md
+    - 'Dana Pump': loop-3/dana.md
     - 'Omnipod Pump': loop-3/omnipod.md
     - 'Medtronic Pump': loop-3/medtronic.md
+    - 'Medtrum Pump': loop-3/medtrum.md
     - 'Features': 'loop-3/features.md'
 - Operate:
     - 'Open Loop': 'operation/loop/open-loop.md'
