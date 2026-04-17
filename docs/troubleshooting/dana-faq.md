@@ -15,6 +15,16 @@ The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
 
 This branch is subject to rapid updates.
 
+## Q: How long should the Dana pump last on a battery?
+
+It is considerd normal for a Dana-I pump to last 14-16 days while using closed Loop.
+This is strongly infuenced by your pump settings and quality of the batteries.
+
+Some tips to extend the battery life:
+
+- Make sure to use good quality batteries, an example is the Enerhizer Max AAA (this can also decrease time drifting on the pump)
+- Try to decrease the screen timeouts, items 5 & 6 in the User Option menu.
+- [Silence your pump](#q-can-i-fully-silence-the-pump)
 
 ## Q: Help I frequently encounter signal loss or orange loops
 
@@ -75,6 +85,83 @@ You will get a full wizard based on the type of refill you want to do!
 
 ![Dana Blind refill](./img/dana-blind-refill.png){width="250"}
 {align="center"}
+
+## Q: Why does the Dana pump not update my Bolus/Basal limits?
+
+The dana pump only allows these limits to be read, not writen.
+You need to enter the doctor mode on the pump itself in order to update these limits.
+
+#### How to enter Doctor mode?
+
+First, you need to find the production **day** of your pump:
+
+- Go to the main menu and enter Review
+- Go to Shipping information and see the production date in item 3
+
+![Dana Menu](./img/dana_shipping_information_menu.png){width="600"}
+{align="center"}
+
+![Dana Shipping Information Menu](./img/dana_shipping_information.png){width="250"}
+{align="center"}
+
+Now, we can enter doctor mode:
+
+- Make sure you are at the starting screen of your pump
+- Now press the following three buttons at the same time: + (plus), - (minus), > (play)
+
+![Dana Password Menu](./img/dana_enter_password_menu.png){width="600"}
+{align="center"}
+
+- Enter the following password: *30XY*, where XY equals the production day of you pump
+- You should have entered the Doctor mode. If nothing happend, you have entered your password incorrectly. Double check the production day or contact your Dana distributor.
+
+![Dana Doctor Menu](./img/dana_doctor_mode_settings.png){width="300"}
+{align="center"}
+
+- The max basal limit is item 9 and the max bolus limit is item 10 in this menu
+
+## Q: Can I fully silence the pump?
+
+Yes, the dana pump has a secret menu which allows you to fully silence the pump.
+The pump will not vibrate nor beep after every bolus.
+
+First, make sure you pump is has the correct alarm setting:
+
+- Go to the main menu and enter Option
+- Go to User Option and Scroll down to item 4 ALARM
+- Make sure this setting is on **Sound**
+
+![Dana Option Menu](./img/dana_options_menu.png){width="600"}
+{align="center"}
+
+![Dana Options](./img/dana_options.png){width="250"}
+{align="center"}
+
+Next, we need to go to Engineering mode:
+
+!!! warning "Entering Engineering mode is dangerous!"
+    You will be able to adjust very dangerous pump settings. DO NOT CHANGE THOSE!!! If you changed something else here, contact your Dana distributor to restore that setting
+
+- Make sure you are at the starting screen of your pump
+- Now press the following three buttons at the same time: + (plus), - (minus), > (play)
+
+![Dana Password Menu](./img/dana_enter_password_menu.png){width="600"}
+{align="center"}
+
+- Enter the following password: **1013**, but make sure you enter the fourth digit first (3). Then enter the first digit second (1), the second digit (0), and finaly, enter the third digit (1). If done correctly, the pump will say: "Engineering mode pw" (or something similar)
+- Now press the following three buttons again at the same time: + (plus), - (minus), > (play)
+- Enter the following password: **1216**, but make sure you enter the second digit first (2), follow this with the third digit (1), fourth digit (6), first digit (1).
+- You should have entered the Engineering mode:
+
+![Dana Engineering Menu](./img/dana_engineering_mode.JPG){width="500"}
+{align="center"}
+
+- Go to option 4 and set Silent mode to ON
+
+![Dana Engineering Menu](./img/dana_silent_mode.JPG){width="500"}
+{align="center"}
+
+- Go back by pressing OK and use option 8 to leave the Engineering mode
 
 ## Heartbeat modes
 
