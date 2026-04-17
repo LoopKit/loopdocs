@@ -17,12 +17,12 @@ This branch is subject to rapid updates.
 
 ## Q: How long should the Dana pump last on a battery?
 
-It is considerd normal for a Dana-I pump to last 14-16 days while using closed Loop.
+It is considerd normal for a Dana-I pump to last 14-16 days while using closed Loop on a single AAA-battery.
 This is strongly infuenced by your pump settings and quality of the batteries.
 
 Some tips to extend the battery life:
 
-- Make sure to use good quality batteries, an example is the Enerhizer Max AAA (this can also decrease time drifting on the pump)
+- Make sure to use good quality batteries, an example is the Energizer Max AAA (this can also decrease time drifting on the pump)
 - Try to decrease the screen timeouts, items 5 & 6 in the User Option menu.
 - [Silence your pump](#q-can-i-fully-silence-the-pump)
 
