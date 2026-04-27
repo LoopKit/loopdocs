@@ -33,7 +33,7 @@ First of all, lets check you CGM, since the dana driver trusts your CGM to provi
 If you are using an internet CGM (like NightScout remote CGM, Dexcom Share), you lack a heartbeat inside the *Loop* app.
 You must look into one of the heartbeat modes of the Dana driver:
 
-- Continuous mode - [Please read this paragraph before activating it](#continuous-bluetooth-mode). This mode will keep a connection at all times, this will decrease the battery life for your pump and phone by a small amount
+- Continuous mode - [Please read this paragraph before activating it](#continuous-bluetooth-mode). This mode will keep a connection at all times, which will decrease the battery life for your pump and phone by a small amount
 - Background sound - [link](#background-sound). This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone battery life, but little to no impact on your pump battery life.
 
 If you are running a bluetooth CGM, it might be worth to look into [continuous heartbeat mode](#continuous-bluetooth-mode).
