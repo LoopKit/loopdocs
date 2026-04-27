@@ -1513,17 +1513,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#multiple-copies-of-loopfollow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multiple Copies of LoopFollow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1733,17 +1722,6 @@
   
     <nav class="md-nav" aria-label="Build App">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-name-customization-for-loopfollow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Display Name Customization for LoopFollow
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#build-action" class="md-nav__link">
@@ -4787,17 +4765,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#multiple-copies-of-loopfollow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multiple Copies of LoopFollow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5009,17 +4976,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#display-name-customization-for-loopfollow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Display Name Customization for LoopFollow
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#build-action" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5149,11 +5105,13 @@
   <h1>Build Other Apps with Browser</h1>
 
 <h2 id="build-other-apps-using-a-browser">Build Other Apps using a Browser<a class="headerlink" href="#build-other-apps-using-a-browser" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Once <abbr title="Latest release with major updates">Loop 3</abbr> was released with the ability to build using a browser, a lot of other apps in the <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> universe added the same feature.</p>
-<p><strong>Only apps that are companions to&nbsp;<em><span translate="no"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></span></em>&nbsp;are included on this page.</strong></p>
+<p>Many apps in the Open Source Diabetes ecosystem can be built with the Browser Build method. The steps are similar for all apps with details varying for <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and App Groups.</p>
+<p>With the exception of the <strong><em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em></strong> app, each app has their own set of detailed documentation.</p>
 <ul>
-<li><em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></em></li>
-<li><em><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></em></li>
+<li><em><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></em> Browser Build instructions were moved to <em>LoopFollowDocs</em><ul>
+<li><a href="https://loopfollowdocs.org/build/lf-browser-build/"><em>LoopFollowDocs</em> Browser Build Instructions</a></li>
+</ul>
+</li>
 </ul>
 <p>If you want to build another <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app that is not included here, look for the file <code>fastlane/testflight.md</code> in the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> associated with that app and open it in a browser. The instructions for that app should be located in that file.</p>
 <p>The same technique is used and the same six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are used for many Open-Source apps. Over time, it is expected that more apps will use the <code>variable</code> ENABLE_NUKE_CERTS to allow automatic creation and update of the required certificates.</p>
@@ -5165,14 +5123,6 @@
 <blockquote>
 <p>If you have not added the <code>Variable</code> <code>ENABLE_NUKE_CERTS</code>, do it now. See <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
 </blockquote>
-<p><strong>WARNING: starting May 2025, <a href="../automatic/#manual-action-for-automatic-build" target="_blank">Manual Action for Automatic Build</a> may be required - be sure to check monthly to see if you need to start a build manually.</strong></p>
-<h3 id="multiple-copies-of-loopfollow">Multiple Copies of <code>LoopFollow</code><a class="headerlink" href="#multiple-copies-of-loopfollow" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For the convenience of caregivers who use <code>LoopFollow</code> to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or <a href="https://www.loopandlearn.org/loop-follow#lf-script" target="_blank">Build with <em>Mac</em></a>).</p>
-<ul>
-<li>Build up to three instances of <code>LoopFollow</code></li>
-<li>Customize the name of the app that appears on your phone</li>
-<li>Display the custom name in the main <code>LoopFollow</code> screen</li>
-</ul>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this Header on this Page">&para;</a></h3>
 <ul>
 <li>
@@ -5195,7 +5145,6 @@
 <ul>
 <li>Use the same method as that section, but <span><code>fork</code> the <code>repository</code> for the app</span> you plan to build to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> organization</li>
 <li><em><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></em>, expect the <code>dev branch</code></li>
-<li><em><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></em>, expect the <code>main branch</code></li>
 </ul>
 <h3 id="table-of-app-repositories">Table of App <code>Repositories</code><a class="headerlink" href="#table-of-app-repositories" title="Anchor link to this Header on this Page">&para;</a></h3>
 <table>
@@ -5211,47 +5160,6 @@
 <td><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
 <td><a href="https://github.com/LoopKit/LoopCaregiver">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></a></td>
 <td><a href="../../nightscout/loop-caregiver/">LoopDocs: <span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></a></td>
-</tr>
-<tr>
-<td><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
-<td><a href="https://github.com/loopandlearn/LoopFollow">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/loopandlearn/<abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></a></td>
-<td><a href="https://www.loopandlearn.org/loop-follow"><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></a></td>
-</tr>
-</tbody>
-</table>
-<details class="tips">
-<summary><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> Builders: Display Name (Click to Open/Close)</summary>
-<ul>
-<li>Would you like the name of your <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> app to be personalized?</li>
-<li>Do you have more than one Looper, so you are using LoopFollow_Second or LoopFollow_Third?</li>
-<li>The 3 <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> repositories enable you to customize the name shown on your phone</li>
-</ul>
-<p>After you <code>fork</code> your <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr>, find the file named: <code>LoopFollowDisplayNameConfig.xcconfig</code></p>
-<ul>
-<li>Open it in your browser</li>
-<li>Follow the directions to change <code>display_name</code><ul>
-<li>"Save the file" means <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the change to your <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>It is recommended that you use LF_name, where name is the customized name - that way you can find it in an alphabetic list of apps</li>
-</ul>
-</li>
-</ul>
-</details>
-<p>The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that <code>LoopCaregiver</code> can follow multiple Loopers; you select the person inside the app.</p>
-<table>
-<thead>
-<tr>
-<th>Special Case</th>
-<th>Fork from this Address</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> for a Second Looper</span></td>
-<td><a href="https://github.com/loopandlearn/LoopFollow_Second">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/loopandlearn/LoopFollow_Second</a></td>
-</tr>
-<tr>
-<td><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> for a Third Looper</span></td>
-<td><a href="https://github.com/loopandlearn/LoopFollow_Third">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/loopandlearn/LoopFollow_Third</a></td>
 </tr>
 </tbody>
 </table>
@@ -5313,11 +5221,10 @@
 </ul>
 <p>This step validates most of your six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and provides error messages if it detects an issue with one or more.</p>
 <ol>
-<li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your  <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em>  or  <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> and enable workflows if needed</li>
+<li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> and enable workflows if needed</li>
 <li>On the left side, click on 1. <code>Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></li>
 <li>On the right side, click <code>Run Workflow</code> to show a dropdown menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <code>dev</code> for <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>)</li>
-<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>dev</code>)</li>
 </ul>
 </li>
 <li>Tap the green button that says <code>Run workflow</code>.</li>
@@ -5346,8 +5253,7 @@
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>"</li>
 <li>On the right side, click "Run Workflow" to show a dropdown menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <code>dev</code> for <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>)</li>
-<li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>dev</code>)</li>
 </ul>
 </li>
 <li>
@@ -5381,18 +5287,9 @@
 <td><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
 <td><span translate="no">com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
 </tr>
-<tr>
-<td><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
-<td><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
-<td><span translate="no">com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.<abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
-</tr>
 </tbody>
 </table>
-<blockquote>
-<p>If you build from a second or third <code>repository</code> for <code>LoopFollow</code>, the Name will end in <code>Second</code> or <code>Third</code> and Bundle ID will have <code>.Second</code> or <code>.Third</code> at the end.</p>
-</blockquote>
 <p>The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app requires updates to the <code>Identifiers</code> after they are generated. Skip ahead to <a href="#add-app-group-to-identifiers">Add <code>App Group</code> to <code>LoopCaregiver</code></a>.</p>
-<p>The <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> do not need special handling, so for <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em>, you can skip ahead to <a href="#create-app-in-app-store-connect">Create App in App Store Connect</a></p>
 <h2 id="add-app-group-to-loopcaregiver">Add <code>App Group</code> to <code>LoopCaregiver</code><a class="headerlink" href="#add-app-group-to-loopcaregiver" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app requires the addition of an <code>App Group</code> to each of its list of <code>Identifiers</code>. Follow these steps one time to be able to build the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app.</p>
 <h3 id="check-if-app-group-exists">Check if <code>App Group</code> Exists<a class="headerlink" href="#check-if-app-group-exists" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -5591,15 +5488,8 @@
 <td><span translate="no"><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
 <td><span translate="no">com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.loopkit.<abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></span></td>
 </tr>
-<tr>
-<td><span translate="no"><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
-<td><span translate="no">com.<abbr title="One of 6 Secrets: Apple Developer account member number">TEAMID</abbr>.<abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></span></td>
-</tr>
 </tbody>
 </table>
-<blockquote>
-<p>If you build from a second or third <code>repository</code> for <code>LoopFollow</code>, the Bundle ID will have <code>.Second</code> or <code>.Third</code> at the end.</p>
-</blockquote>
 <ol>
 <li>
 <p>Open this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a> to view your apps; log in if needed.</p>
@@ -5614,7 +5504,7 @@
 <li>
 <p>The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in <a href="../prepare-app/#find-my-loop">Configure to Use Browser: Find My <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></a>, where you'll be finding App Name instead of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <ul>
-<li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>". For <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> you can also select "<abbr title="operating system for Mac computer">macOS</abbr>" if you own a Mac with <abbr title="operating system for Mac computer">macOS</abbr> 11 or later.</li>
+<li>Select "<abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>"</li>
 <li>Enter a name: this will have to be unique<ul>
 <li>You could start with "App Name ABC" where ABC are your initials</li>
 <li>If that is already taken, you can add a number, for example, "App Name ABC 123"</li>
@@ -5656,7 +5546,7 @@
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your Repository <abbr title="contains project files and each file's revision history">repository</abbr></li>
 <li>On the left side, click on "Create Certificates"</li>
 <li>On the right side, click "Run Workflow" to show a dropdown menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <code>dev</code> for <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>)</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>dev</code>)</li>
 <li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
@@ -5679,25 +5569,13 @@
 <h2 id="build-app">Build App<a class="headerlink" href="#build-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The graphic below is an example from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, your screen will show your app and associated <abbr title="contains project files and each file's revision history">repository</abbr></p>
 <p>If you are building the <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> app, skip ahead to <a href="#build-action">Build Action</a>.</p>
-<h3 id="display-name-customization-for-loopfollow">Display Name Customization for <code>LoopFollow</code><a class="headerlink" href="#display-name-customization-for-loopfollow" title="Anchor link to this Header on this Page">&para;</a></h3>
-<blockquote>
-<p>If you build <code>LoopFollow</code> for one, two or three loopers, you may choose to customize your <code>fork</code> or <code>forks</code> to insert a custom display name.</p>
-<ul>
-<li>Find and click on the file <code>LoopFollowDisplayNameConfig.xcconfig</code></li>
-<li>Tap the pencil icon so you can edit the file</li>
-<li>The last line says <code>display_name = LoopFollow</code> (or <code>LoopFollow_Second</code> or <code>LoopFollow_Third</code>)</li>
-<li>Insert your custom name so the last line says <code>display_name = LF custom name</code></li>
-<li>Click on <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> changes and chose to <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> directly into the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-</ul>
-<p>Continue to build as instructed below. After you install the app on your phone, iPad or Mac via <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom named <code>LoopFollow</code> app in the list of apps, but is not required.</p>
-</blockquote>
 <h3 id="build-action">Build Action<a class="headerlink" href="#build-action" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Refer to the graphic below for the first four steps:</p>
 <ol>
 <li>Click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab of your Repository <abbr title="contains project files and each file's revision history">repository</abbr>.</li>
 <li>On the left side, click on "Build <em>App Name</em>".</li>
 <li>On the right side, click "Run Workflow" to show a dropdown menu<ul>
-<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>main</code> for <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr>, <code>dev</code> for <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>)</li>
+<li>You will see your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (<code>dev</code>)</li>
 <li>You can select a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but typically, you run the default</li>
 </ul>
 </li>
