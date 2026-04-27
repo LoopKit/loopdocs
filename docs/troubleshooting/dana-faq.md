@@ -1,19 +1,22 @@
 # Dana (RS/-i) FAQ
 
-### Dana in Loop Requires Expert Testing
+## Dana is a new Pump Manager
 
-**WARNING: Dana support in Loop is a work-in-progress; only experts should consider testing this.**
-
-> **A pump manager that works for Trio must be separately tested for Loop**
-
-* Several issues were reported regarding bolus accounting and IOB reporting for Loop
-* For this reason, the Dana pump support, available in v3.8.1, was removed from the `main` and `dev` branches for v3.8.2 (3.9.2)
+* Most of the issues have been identified and fixed, but a few are still known
+* Be sure to check this site frequently for open issues:
+    * [DanaKit Issues](https://github.com/bastiaanv/DanaKit/issues)
 * Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+    * Note that pump managers are separately tested for Trio and Loop
+
+## Branch for Dana
+
+You may choose one of two feature branches to get Dana in Loop
+
+* `feat/dev-dana-medtrum`: adds support for Dana and Medtrum pumps
+* `feat/eversense`: adds support for the Eversense CGM in addition to the Dana and Medtrum pumps
 
 
-The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
-
-This branch is subject to rapid updates.
+These branches are subject to rapid updates. Any updates to Dana and Medtrum pumps are found in both branches.
 
 ## Q: How long should the Dana pump last on a battery?
 
@@ -171,36 +174,6 @@ An optional feature for Dana, useful when using a CGM without a heartbeat, is to
 
 Normally, your CGM will have an active Bluetooth connection, which prevents the *Loop* app from being put into a suspended state.
 But when you use a CGM like [NightScout remote CGM](../loop-3/add-cgm.md#nightscout-remote-cgm), [Dexcom Share](../loop-3/add-cgm.md#dexcom-share-as-a-cgm), etc, you rely on a active internet connection, and not on an active Bluetooth connection.
-
-??? abstract "Versions older than 3.8.1 or 3.9.1 (click to open)"
-    This modification is not required for code newer than version 3.8.1 (main) or 3.9.1 (dev). It was required for v3.8.0/v3.9.0 and older versions.
-
-    Activate the [UIBackgroundMode - audio](https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes):
-
-    * When [building with Mac](../build/overview.md), go to the LoopWorkspace Xcode project and select the Loop project.
-    Go to "Targets" -> "Loop" -> "Signing & Capabilities" and scroll down to "Background modes".
-    Enable the checkbox for "Audio, AirPlay, and Picture in Picture".
-    Then rebuild the app and go to step 2.
-    ![Xcode background sound example](./img/background-sound-xcode.png)
-
-    * When [building with Browser](../browser/bb-overview.md), you will need to make a change to the GitHub Actions workflow.
-    Go to your LoopWorkspace fork on GitHub and press `.` on your keyboard.
-    You will be redirected to a `github.dev` page with the code of your LoopWorkspace.
-    Now go to ".github" -> "workflows" -> "build_loop.yml".
-    Scroll down till you see the `- name: Fastlane Build & Archive` command.
-    Just before this command, add the following to this script ([example](https://github.com/bastiaanv/LoopWorkspace/commit/67a1e42b9b771550afc14adf914ff98c37d96e67)):
-
-    ```
-    - name: Update entitlement background sound
-    run: sed -i -e 's/<string>bluetooth-central<\/string>/<string>bluetooth-central<\/string><string>audio<\/string>/g' Loop/Loop/Info.plist
-    ```
-
-    * To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
-    Enter a message and press the green "Commit & Push"-button.
-    By pressing this button, GitHub will automatically make a new browser build for you and push it to TestFlight (with the caveat that you might need to manually start the build)
-    ![Github web ide example](./img/background-sound-web-ide.png)
-
-> If you have older code, before main v3.8.1 or dev v3.9.1, open the box above for instructions on a required modification.
 
 After you have onboarded the Dana pump, go to the pump settings.
 
