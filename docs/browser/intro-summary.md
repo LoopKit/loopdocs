@@ -222,6 +222,23 @@ ENABLE_NUKE_CERTS = true
 With release of Loop 3.6.0:
   this variable is needed to automatically renew your certificates when they expire.
 
+If you're a caregiver and would like to use Loop's Remote Commands, you'll want to add these too.  If you use LoopFollow, the first two (APNS_KEY and APNS_KEY_ID) get added to the LoopFollow app.  If you use LoopCaregiver, all three get added to your Nightscout Configvars.  https://loopkit.github.io/loopdocs/nightscout/remote-config/#step-2-apple-push-notifications
+
+APNS_KEY
+<looks like this>
+-----BEGIN PRIVATE KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END PRIVATE KEY-----
+
+APNS_KEY_ID
+<looks like this>
+AAAAAAAAAA
+
+LOOP_PUSH_SERVER_ENVIRONMENT = production
+
 ## Repository Names for my Fork:
 
 If you use an organization (recommended)
