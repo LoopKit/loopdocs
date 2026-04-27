@@ -33,8 +33,8 @@ First of all, lets check you CGM, since the dana driver trusts your CGM to provi
 If you are using an internet CGM (like NightScout remote CGM, Dexcom Share), you lack a heartbeat inside the *Loop* app.
 You must look into one of the heartbeat modes of the Dana driver:
 
-- Continuous mode - [Please read this paragraph before activating it](#continuous-bluetooth-mode). This mode will keep a connection at all times, this will decrease your pump's & phone's battery life by a bit
-- Background sound - [link](#background-sound). This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone's battery, but little to no impact on your pumps battery life.
+- Continuous mode - [Please read this paragraph before activating it](#continuous-bluetooth-mode). This mode will keep a connection at all times, this will decrease the battery life for your pump and phone by a small amount
+- Background sound - [link](#background-sound). This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone battery life, but little to no impact on your pump battery life.
 
 If you are running a bluetooth CGM, it might be worth to look into [continuous heartbeat mode](#continuous-bluetooth-mode).
 Some Dexcom users have reported to have less issue/orange loops using the continuous mode, then in normal mode.
@@ -112,7 +112,7 @@ Now, we can enter doctor mode:
 ![Dana Password Menu](./img/dana_enter_password_menu.png){width="600"}
 {align="center"}
 
-- Enter the following password: *30XY*, where XY equals the production day of you pump
+- Enter the following password: *30XY*, where XY equals the production day of your pump
 - You should have entered the Doctor mode. If nothing happend, you have entered your password incorrectly. Double check the production day or contact your Dana distributor.
 
 ![Dana Doctor Menu](./img/dana_doctor_mode_settings.png){width="300"}
@@ -125,7 +125,7 @@ Now, we can enter doctor mode:
 Yes, the dana pump has a secret menu which allows you to fully silence the pump.
 The pump will not vibrate nor beep after every bolus.
 
-First, make sure you pump is has the correct alarm setting:
+First, make sure your pump has the correct alarm setting:
 
 - Go to the main menu and enter Option
 - Go to User Option and Scroll down to item 4 ALARM
