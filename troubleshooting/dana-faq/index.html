@@ -3180,10 +3180,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dana-in-loop-requires-expert-testing" class="md-nav__link">
+  <a href="#dana-is-a-new-pump-manager" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dana in Loop Requires Expert Testing
+        Dana is a new Pump Manager
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch-for-dana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branch for Dana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-how-long-should-the-dana-pump-last-on-a-battery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q: How long should the Dana pump last on a battery?
       
     </span>
   </a>
@@ -3217,6 +3239,28 @@
     <span class="md-ellipsis">
       
         Q: Help I just found out my pump screen doesn't work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-why-does-the-dana-pump-not-update-my-bolusbasal-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q: Why does the Dana pump not update my Bolus/Basal limits?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-can-i-fully-silence-the-pump" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q: Can I fully silence the pump?
       
     </span>
   </a>
@@ -4487,10 +4531,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dana-in-loop-requires-expert-testing" class="md-nav__link">
+  <a href="#dana-is-a-new-pump-manager" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dana in Loop Requires Expert Testing
+        Dana is a new Pump Manager
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch-for-dana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branch for Dana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-how-long-should-the-dana-pump-last-on-a-battery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q: How long should the Dana pump last on a battery?
       
     </span>
   </a>
@@ -4524,6 +4590,28 @@
     <span class="md-ellipsis">
       
         Q: Help I just found out my pump screen doesn't work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-why-does-the-dana-pump-not-update-my-bolusbasal-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q: Why does the Dana pump not update my Bolus/Basal limits?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-can-i-fully-silence-the-pump" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q: Can I fully silence the pump?
       
     </span>
   </a>
@@ -4587,25 +4675,41 @@
 
 
 <h1 id="dana-rs-i-faq">Dana (RS/-i) FAQ<a class="headerlink" href="#dana-rs-i-faq" title="Anchor link to this Header on this Page">&para;</a></h1>
-<h3 id="dana-in-loop-requires-expert-testing">Dana in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Requires Expert Testing<a class="headerlink" href="#dana-in-loop-requires-expert-testing" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p><strong>WARNING: Dana support in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is a work-in-progress; only experts should consider testing this.</strong></p>
-<blockquote>
-<p><strong>A pump manager that works for Trio must be separately tested for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></strong></p>
-</blockquote>
+<h2 id="dana-is-a-new-pump-manager">Dana is a new Pump Manager<a class="headerlink" href="#dana-is-a-new-pump-manager" title="Anchor link to this Header on this Page">&para;</a></h2>
 <ul>
-<li>Several issues were reported regarding bolus accounting and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> reporting for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
-<li>For this reason, the Dana pump support, available in v3.8.1, was removed from the <code>main</code> and <code>dev</code> branches for v3.8.2 (3.9.2)</li>
-<li>Please do not use Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260">developers on zulipchat in this DanaKit channel</a></li>
+<li>Most of the issues have been identified and fixed, but a few are still known</li>
+<li>Be sure to check this site frequently for open issues:<ul>
+<li><a href="https://github.com/bastiaanv/DanaKit/issues">DanaKit Issues</a></li>
 </ul>
-<p>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> needed to get Dana in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is: <code>feat/dev-dana-medtrum</code>.</p>
-<p>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is subject to rapid updates.</p>
+</li>
+<li>Please do not use Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260">developers on zulipchat in this DanaKit channel</a><ul>
+<li>Note that pump managers are separately tested for Trio and <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+</ul>
+</li>
+</ul>
+<h2 id="branch-for-dana">Branch for Dana<a class="headerlink" href="#branch-for-dana" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>You may choose one of two feature branches to get Dana in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></p>
+<ul>
+<li><code>feat/dev-dana-medtrum</code>: adds support for Dana and Medtrum pumps</li>
+<li><code>feat/eversense</code>: adds support for the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> in addition to the Dana and Medtrum pumps</li>
+</ul>
+<p>These branches are subject to rapid updates. Any updates to Dana and Medtrum pumps are found in both branches.</p>
+<h2 id="q-how-long-should-the-dana-pump-last-on-a-battery">Q: How long should the Dana pump last on a battery?<a class="headerlink" href="#q-how-long-should-the-dana-pump-last-on-a-battery" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>It is considerd normal for a Dana-I pump to last 14-16 days while using closed <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> on a single AAA-battery.
+This is strongly infuenced by your pump settings and quality of the batteries.</p>
+<p>Some tips to extend the battery life:</p>
+<ul>
+<li>Make sure to use good quality batteries, an example is the Energizer Max AAA (this can also decrease time drifting on the pump)</li>
+<li>Try to decrease the screen timeouts, items 5 &amp; 6 in the User Option menu.</li>
+<li><a href="#q-can-i-fully-silence-the-pump">Silence your pump</a></li>
+</ul>
 <h2 id="q-help-i-frequently-encounter-signal-loss-or-orange-loops">Q: Help I frequently encounter signal loss or orange loops<a class="headerlink" href="#q-help-i-frequently-encounter-signal-loss-or-orange-loops" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>First of all, lets check you <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, since the dana driver trusts your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to provide a heartbeat.</p>
 <p>If you are using an internet <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> (like NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, Dexcom Share), you lack a heartbeat inside the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.
 You must look into one of the heartbeat modes of the Dana driver:</p>
 <ul>
-<li>Continuous mode - <a href="#continuous-bluetooth-mode">Please read this paragraph before activating it</a>. This mode will keep a connection at all times, this will decrease your pump's &amp; phone's battery life by a bit</li>
-<li>Background sound - <a href="#background-sound">link</a>. This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone's battery, but little to no impact on your pumps battery life.</li>
+<li>Continuous mode - <a href="#continuous-bluetooth-mode">Please read this paragraph before activating it</a>. This mode will keep a connection at all times, which will decrease the battery life for your pump and phone by a small amount</li>
+<li>Background sound - <a href="#background-sound">link</a>. This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone battery life, but little to no impact on your pump battery life.</li>
 </ul>
 <p>If you are running a bluetooth <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, it might be worth to look into <a href="#continuous-bluetooth-mode">continuous heartbeat mode</a>.
 Some Dexcom users have reported to have less issue/orange loops using the continuous mode, then in normal mode.</p>
@@ -4639,45 +4743,71 @@ You can check your display settings here, just to make sure the screen isn't bro
 You will get a full wizard based on the type of refill you want to do!</li>
 </ul>
 <p align="center"><img alt="Dana Blind refill" src="../img/dana-blind-refill.png" width="250" /></p>
+<h2 id="q-why-does-the-dana-pump-not-update-my-bolusbasal-limits">Q: Why does the Dana pump not update my Bolus/Basal limits?<a class="headerlink" href="#q-why-does-the-dana-pump-not-update-my-bolusbasal-limits" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The dana pump only allows these limits to be read, not writen.
+You need to enter the doctor mode on the pump itself in order to update these limits.</p>
+<h4 id="how-to-enter-doctor-mode">How to enter Doctor mode?<a class="headerlink" href="#how-to-enter-doctor-mode" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>First, you need to find the production <strong>day</strong> of your pump:</p>
+<ul>
+<li>Go to the main menu and enter Review</li>
+<li>Go to Shipping information and see the production date in item 3</li>
+</ul>
+<p align="center"><img alt="Dana Menu" src="../img/dana_shipping_information_menu.png" width="600" /></p>
+<p align="center"><img alt="Dana Shipping Information Menu" src="../img/dana_shipping_information.png" width="250" /></p>
+<p>Now, we can enter doctor mode:</p>
+<ul>
+<li>Make sure you are at the starting screen of your pump</li>
+<li>Now press the following three buttons at the same time: + (plus), - (minus), &gt; (play)</li>
+</ul>
+<p align="center"><img alt="Dana Password Menu" src="../img/dana_enter_password_menu.png" width="600" /></p>
+<ul>
+<li>Enter the following password: <em>30XY</em>, where XY equals the production day of your pump</li>
+<li>You should have entered the Doctor mode. If nothing happend, you have entered your password incorrectly. Double check the production day or contact your Dana distributor.</li>
+</ul>
+<p align="center"><img alt="Dana Doctor Menu" src="../img/dana_doctor_mode_settings.png" width="300" /></p>
+<ul>
+<li>The max basal limit is item 9 and the max bolus limit is item 10 in this menu</li>
+</ul>
+<h2 id="q-can-i-fully-silence-the-pump">Q: Can I fully silence the pump?<a class="headerlink" href="#q-can-i-fully-silence-the-pump" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Yes, the dana pump has a secret menu which allows you to fully silence the pump.
+The pump will not vibrate nor beep after every bolus.</p>
+<p>First, make sure your pump has the correct alarm setting:</p>
+<ul>
+<li>Go to the main menu and enter Option</li>
+<li>Go to User Option and Scroll down to item 4 ALARM</li>
+<li>Make sure this setting is on <strong>Sound</strong></li>
+</ul>
+<p align="center"><img alt="Dana Option Menu" src="../img/dana_options_menu.png" width="600" /></p>
+<p align="center"><img alt="Dana Options" src="../img/dana_options.png" width="250" /></p>
+<p>Next, we need to go to Engineering mode:</p>
+<div class="admonition warning">
+<p class="admonition-title">Entering Engineering mode is dangerous!</p>
+<p>You will be able to adjust very dangerous pump settings. DO NOT CHANGE THOSE!!! If you changed something else here, contact your Dana distributor to restore that setting</p>
+</div>
+<ul>
+<li>Make sure you are at the starting screen of your pump</li>
+<li>Now press the following three buttons at the same time: + (plus), - (minus), &gt; (play)</li>
+</ul>
+<p align="center"><img alt="Dana Password Menu" src="../img/dana_enter_password_menu.png" width="600" /></p>
+<ul>
+<li>Enter the following password: <strong>1013</strong>, but make sure you enter the fourth digit first (3). Then enter the first digit second (1), the second digit (0), and finaly, enter the third digit (1). If done correctly, the pump will say: "Engineering mode pw" (or something similar)</li>
+<li>Now press the following three buttons again at the same time: + (plus), - (minus), &gt; (play)</li>
+<li>Enter the following password: <strong>1216</strong>, but make sure you enter the second digit first (2), follow this with the third digit (1), fourth digit (6), first digit (1).</li>
+<li>You should have entered the Engineering mode:</li>
+</ul>
+<p align="center"><img alt="Dana Engineering Menu" src="../img/dana_engineering_mode.JPG" width="500" /></p>
+<ul>
+<li>Go to option 4 and set Silent mode to ON</li>
+</ul>
+<p align="center"><img alt="Dana Engineering Menu" src="../img/dana_silent_mode.JPG" width="500" /></p>
+<ul>
+<li>Go back by pressing OK and use option 8 to leave the Engineering mode</li>
+</ul>
 <h2 id="heartbeat-modes">Heartbeat modes<a class="headerlink" href="#heartbeat-modes" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="background-sound">Background sound<a class="headerlink" href="#background-sound" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>An optional feature for Dana, useful when using a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> without a heartbeat, is to play a silent audio to keep the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app active when in the background or when the phone is locked.</p>
 <p>Normally, your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> will have an active Bluetooth connection, which prevents the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app from being put into a suspended state.
 But when you use a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> like <a href="../../loop-3/add-cgm/#nightscout-remote-cgm">NightScout remote <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>, <a href="../../loop-3/add-cgm/#dexcom-share-as-a-cgm">Dexcom Share</a>, etc, you rely on a active internet connection, and not on an active Bluetooth connection.</p>
-<details class="abstract">
-<summary>Versions older than 3.8.1 or 3.9.1 (click to open)</summary>
-<p>This modification is not required for code newer than version 3.8.1 (main) or 3.9.1 (dev). It was required for v3.8.0/v3.9.0 and older versions.</p>
-<p>Activate the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes">UIBackgroundMode - audio</a>:</p>
-<ul>
-<li>
-<p>When <a href="../../build/overview/">building with Mac</a>, go to the LoopWorkspace <abbr title="program used to build an app">Xcode</abbr> project and select the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> project.
-Go to "Targets" -&gt; "<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>" -&gt; "Signing &amp; Capabilities" and scroll down to "Background modes".
-Enable the checkbox for "Audio, AirPlay, and Picture in Picture".
-Then rebuild the app and go to step 2.
-<img alt="Xcode background sound example" src="../img/background-sound-xcode.png" /></p>
-</li>
-<li>
-<p>When <a href="../../browser/bb-overview/">building with Browser</a>, you will need to make a change to the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>.
-Go to your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and press <code>.</code> on your keyboard.
-You will be redirected to a <code>github.dev</code> page with the code of your LoopWorkspace.
-Now go to ".github" -&gt; "workflows" -&gt; "build_loop.yml".
-Scroll down till you see the <code>- name: Fastlane Build &amp; Archive</code> command.
-Just before this command, add the following to this script (<a href="https://github.com/bastiaanv/LoopWorkspace/commit/67a1e42b9b771550afc14adf914ff98c37d96e67">example</a>):</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>- name: Update entitlement background sound
-run: sed -i -e &#39;s/&lt;string&gt;bluetooth-central&lt;\/string&gt;/&lt;string&gt;bluetooth-central&lt;\/string&gt;&lt;string&gt;audio&lt;\/string&gt;/g&#39; Loop/Loop/Info.plist
-</code></pre></div>
-<ul>
-<li>To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
-Enter a message and press the green "Commit &amp; Push"-button.
-By pressing this button, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will automatically make a new browser build for you and push it to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (with the caveat that you might need to manually start the build)
-<img alt="Github web ide example" src="../img/background-sound-web-ide.png" /></li>
-</ul>
-</details>
-<blockquote>
-<p>If you have older code, before main v3.8.1 or dev v3.9.1, open the box above for instructions on a required modification.</p>
-</blockquote>
 <p>After you have onboarded the Dana pump, go to the pump settings.</p>
 <ul>
 <li>
