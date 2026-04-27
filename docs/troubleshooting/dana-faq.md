@@ -1,20 +1,33 @@
 # Dana (RS/-i) FAQ
 
-### Dana in Loop Requires Expert Testing
+## Dana is a new Pump Manager
 
-**WARNING: Dana support in Loop is a work-in-progress; only experts should consider testing this.**
-
-> **A pump manager that works for Trio must be separately tested for Loop**
-
-* Several issues were reported regarding bolus accounting and IOB reporting for Loop
-* For this reason, the Dana pump support, available in v3.8.1, was removed from the `main` and `dev` branches for v3.8.2 (3.9.2)
+* Most of the issues have been identified and fixed, but a few are still known
+* Be sure to check this site frequently for open issues:
+    * [DanaKit Issues](https://github.com/bastiaanv/DanaKit/issues)
 * Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+    * Note that pump managers are separately tested for Trio and Loop
+
+## Branch for Dana
+
+You may choose one of two feature branches to get Dana in Loop
+
+* `feat/dev-dana-medtrum`: adds support for Dana and Medtrum pumps
+* `feat/eversense`: adds support for the Eversense CGM in addition to the Dana and Medtrum pumps
 
 
-The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
+These branches are subject to rapid updates. Any updates to Dana and Medtrum pumps are found in both branches.
 
-This branch is subject to rapid updates.
+## Q: How long should the Dana pump last on a battery?
 
+It is considerd normal for a Dana-I pump to last 14-16 days while using closed Loop on a single AAA-battery.
+This is strongly infuenced by your pump settings and quality of the batteries.
+
+Some tips to extend the battery life:
+
+- Make sure to use good quality batteries, an example is the Energizer Max AAA (this can also decrease time drifting on the pump)
+- Try to decrease the screen timeouts, items 5 & 6 in the User Option menu.
+- [Silence your pump](#q-can-i-fully-silence-the-pump)
 
 ## Q: Help I frequently encounter signal loss or orange loops
 
@@ -23,8 +36,8 @@ First of all, lets check you CGM, since the dana driver trusts your CGM to provi
 If you are using an internet CGM (like NightScout remote CGM, Dexcom Share), you lack a heartbeat inside the *Loop* app.
 You must look into one of the heartbeat modes of the Dana driver:
 
-- Continuous mode - [Please read this paragraph before activating it](#continuous-bluetooth-mode). This mode will keep a connection at all times, this will decrease your pump's & phone's battery life by a bit
-- Background sound - [link](#background-sound). This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone's battery, but little to no impact on your pumps battery life.
+- Continuous mode - [Please read this paragraph before activating it](#continuous-bluetooth-mode). This mode will keep a connection at all times, which will decrease the battery life for your pump and phone by a small amount
+- Background sound - [link](#background-sound). This mode will keep loop alive by playing soundless music in the background. This has a big impact on your phone battery life, but little to no impact on your pump battery life.
 
 If you are running a bluetooth CGM, it might be worth to look into [continuous heartbeat mode](#continuous-bluetooth-mode).
 Some Dexcom users have reported to have less issue/orange loops using the continuous mode, then in normal mode.
@@ -76,6 +89,83 @@ You will get a full wizard based on the type of refill you want to do!
 ![Dana Blind refill](./img/dana-blind-refill.png){width="250"}
 {align="center"}
 
+## Q: Why does the Dana pump not update my Bolus/Basal limits?
+
+The dana pump only allows these limits to be read, not writen.
+You need to enter the doctor mode on the pump itself in order to update these limits.
+
+#### How to enter Doctor mode?
+
+First, you need to find the production **day** of your pump:
+
+- Go to the main menu and enter Review
+- Go to Shipping information and see the production date in item 3
+
+![Dana Menu](./img/dana_shipping_information_menu.png){width="600"}
+{align="center"}
+
+![Dana Shipping Information Menu](./img/dana_shipping_information.png){width="250"}
+{align="center"}
+
+Now, we can enter doctor mode:
+
+- Make sure you are at the starting screen of your pump
+- Now press the following three buttons at the same time: + (plus), - (minus), > (play)
+
+![Dana Password Menu](./img/dana_enter_password_menu.png){width="600"}
+{align="center"}
+
+- Enter the following password: *30XY*, where XY equals the production day of your pump
+- You should have entered the Doctor mode. If nothing happend, you have entered your password incorrectly. Double check the production day or contact your Dana distributor.
+
+![Dana Doctor Menu](./img/dana_doctor_mode_settings.png){width="300"}
+{align="center"}
+
+- The max basal limit is item 9 and the max bolus limit is item 10 in this menu
+
+## Q: Can I fully silence the pump?
+
+Yes, the dana pump has a secret menu which allows you to fully silence the pump.
+The pump will not vibrate nor beep after every bolus.
+
+First, make sure your pump has the correct alarm setting:
+
+- Go to the main menu and enter Option
+- Go to User Option and Scroll down to item 4 ALARM
+- Make sure this setting is on **Sound**
+
+![Dana Option Menu](./img/dana_options_menu.png){width="600"}
+{align="center"}
+
+![Dana Options](./img/dana_options.png){width="250"}
+{align="center"}
+
+Next, we need to go to Engineering mode:
+
+!!! warning "Entering Engineering mode is dangerous!"
+    You will be able to adjust very dangerous pump settings. DO NOT CHANGE THOSE!!! If you changed something else here, contact your Dana distributor to restore that setting
+
+- Make sure you are at the starting screen of your pump
+- Now press the following three buttons at the same time: + (plus), - (minus), > (play)
+
+![Dana Password Menu](./img/dana_enter_password_menu.png){width="600"}
+{align="center"}
+
+- Enter the following password: **1013**, but make sure you enter the fourth digit first (3). Then enter the first digit second (1), the second digit (0), and finaly, enter the third digit (1). If done correctly, the pump will say: "Engineering mode pw" (or something similar)
+- Now press the following three buttons again at the same time: + (plus), - (minus), > (play)
+- Enter the following password: **1216**, but make sure you enter the second digit first (2), follow this with the third digit (1), fourth digit (6), first digit (1).
+- You should have entered the Engineering mode:
+
+![Dana Engineering Menu](./img/dana_engineering_mode.JPG){width="500"}
+{align="center"}
+
+- Go to option 4 and set Silent mode to ON
+
+![Dana Engineering Menu](./img/dana_silent_mode.JPG){width="500"}
+{align="center"}
+
+- Go back by pressing OK and use option 8 to leave the Engineering mode
+
 ## Heartbeat modes
 
 ### Background sound
@@ -84,36 +174,6 @@ An optional feature for Dana, useful when using a CGM without a heartbeat, is to
 
 Normally, your CGM will have an active Bluetooth connection, which prevents the *Loop* app from being put into a suspended state.
 But when you use a CGM like [NightScout remote CGM](../loop-3/add-cgm.md#nightscout-remote-cgm), [Dexcom Share](../loop-3/add-cgm.md#dexcom-share-as-a-cgm), etc, you rely on a active internet connection, and not on an active Bluetooth connection.
-
-??? abstract "Versions older than 3.8.1 or 3.9.1 (click to open)"
-    This modification is not required for code newer than version 3.8.1 (main) or 3.9.1 (dev). It was required for v3.8.0/v3.9.0 and older versions.
-
-    Activate the [UIBackgroundMode - audio](https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes):
-
-    * When [building with Mac](../build/overview.md), go to the LoopWorkspace Xcode project and select the Loop project.
-    Go to "Targets" -> "Loop" -> "Signing & Capabilities" and scroll down to "Background modes".
-    Enable the checkbox for "Audio, AirPlay, and Picture in Picture".
-    Then rebuild the app and go to step 2.
-    ![Xcode background sound example](./img/background-sound-xcode.png)
-
-    * When [building with Browser](../browser/bb-overview.md), you will need to make a change to the GitHub Actions workflow.
-    Go to your LoopWorkspace fork on GitHub and press `.` on your keyboard.
-    You will be redirected to a `github.dev` page with the code of your LoopWorkspace.
-    Now go to ".github" -> "workflows" -> "build_loop.yml".
-    Scroll down till you see the `- name: Fastlane Build & Archive` command.
-    Just before this command, add the following to this script ([example](https://github.com/bastiaanv/LoopWorkspace/commit/67a1e42b9b771550afc14adf914ff98c37d96e67)):
-
-    ```
-    - name: Update entitlement background sound
-    run: sed -i -e 's/<string>bluetooth-central<\/string>/<string>bluetooth-central<\/string><string>audio<\/string>/g' Loop/Loop/Info.plist
-    ```
-
-    * To save your changes to the "build_loop.yml", go to the Source Control tab on the left (should show up with a blue 1, see image below).
-    Enter a message and press the green "Commit & Push"-button.
-    By pressing this button, GitHub will automatically make a new browser build for you and push it to TestFlight (with the caveat that you might need to manually start the build)
-    ![Github web ide example](./img/background-sound-web-ide.png)
-
-> If you have older code, before main v3.8.1 or dev v3.9.1, open the box above for instructions on a required modification.
 
 After you have onboarded the Dana pump, go to the pump settings.
 
