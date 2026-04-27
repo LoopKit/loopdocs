@@ -1,11 +1,11 @@
 ## Build Other Apps using a Browser
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other apps in the DIY universe added the same feature.
+Many apps in the Open Source Diabetes ecosystem can be built with the Browser Build method. The steps are similar for all apps with details varying for Identifiers and App Groups.
 
-**Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.**
+With the exception of the ***LoopCaregiver*** app, each app has their own set of detailed documentation.
 
-* _<span translate="no">LoopCaregiver</span>_
-* _<span translate="no">LoopFollow</span>_
+* _<span translate="no">LoopFollow</span>_ Browser Build instructions were moved to *LoopFollowDocs*
+    * [*LoopFollowDocs* Browser Build Instructions](https://loopfollowdocs.org/build/lf-browser-build/)
 
 If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instructions for that app should be located in that file.
 
@@ -18,16 +18,6 @@ The same technique is used and the same six <code>Secrets</code> are used for ma
 If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
 
 > If you have not added the `Variable` `ENABLE_NUKE_CERTS`, do it now. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
-
-**WARNING: starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually.**
-
-### Multiple Copies of `LoopFollow`
-
-For the convenience of caregivers who use `LoopFollow` to monitor multiple people, updates were added in v2.1.2 to make this more convenient. This works regardless of the build method. (Build with Browser or [Build with *Mac*](https://www.loopandlearn.org/loop-follow#lf-script){: target="_blank" }).
-
-* Build up to three instances of `LoopFollow`
-* Customize the name of the app that appears on your phone
-* Display the custom name in the main `LoopFollow` screen
 
 ### Prerequisites
 
@@ -47,33 +37,14 @@ You will return to this page after reviewing (but not doing) this step [Configur
 
 * Use the same method as that section, but <span>`fork` the `repository` for the app</span> you plan to build to your *GitHub* organization
 * _<span translate="no">LoopCaregiver</span>_, expect the `dev branch`
-* _<span translate="no">LoopFollow</span>_, expect the `main branch`
+
 
 ### Table of App `Repositories`
 
 | App | Fork from this Address | Documentation |
 |---|---|---|
 | <span translate="no">LoopCaregiver</span> | [https://github.com/LoopKit/LoopCaregiver](https://github.com/LoopKit/LoopCaregiver) | [LoopDocs: <span translate="no">LoopCaregiver</span>](../nightscout/loop-caregiver.md) |
-| <span translate="no">LoopFollow</span> | [https://github.com/loopandlearn/LoopFollow](https://github.com/loopandlearn/LoopFollow) | [<span translate="no">LoopFollow</span>](https://www.loopandlearn.org/loop-follow)|
 
-??? tips "LoopFollow Builders: Display Name (Click to Open/Close)"
-    * Would you like the name of your LoopFollow app to be personalized?
-    * Do you have more than one Looper, so you are using LoopFollow_Second or LoopFollow_Third?
-    * The 3 LoopFollow repositories enable you to customize the name shown on your phone
-
-    After you `fork` your *LoopFollow* repository, find the file named: `LoopFollowDisplayNameConfig.xcconfig`
-
-    * Open it in your browser
-    * Follow the directions to change `display_name`
-        * "Save the file" means commit the change to your `main` branch
-        * It is recommended that you use LF_name, where name is the customized name - that way you can find it in an alphabetic list of apps
-
-The two repositories below are only if you need to follow a second or third looper. All others should use just the table above. The instructions for the second and third looper are otherwise identical to the first looper. Note that `LoopCaregiver` can follow multiple Loopers; you select the person inside the app.
-
-| Special Case | Fork from this Address |
-|---|---|
-| <span translate="no">LoopFollow for a Second Looper</span> | [https://github.com/loopandlearn/LoopFollow_Second](https://github.com/loopandlearn/LoopFollow_Second) |
-| <span translate="no">LoopFollow for a Third Looper</span> | [https://github.com/loopandlearn/LoopFollow_Third](https://github.com/loopandlearn/LoopFollow_Third) |
 
 ## Configure <code>Secrets</code> for this App
 
@@ -131,11 +102,10 @@ The workflows are now displayed: look at the list on the left side similar to th
 
 This step validates most of your six <code>Secrets</code> and provides error messages if it detects an issue with one or more.
 
-1. Click on the "Actions" tab of your  *LoopFollow*  or  *LoopCaregiver* repository and enable workflows if needed
+1. Click on the "Actions" tab of your *LoopCaregiver* repository and enable workflows if needed
 1. On the left side, click on 1. <code>Validate Secrets</code>
 1. On the right side, click `Run Workflow` to show a dropdown menu
-    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
-    * You can select a different branch, but typically, you run the default
+    * You will see your default branch (`dev`)
 1. Tap the green button that says `Run workflow`.
 
 ![add identifiers using github actions](img/action-01-validate-secrets.svg){width="700"}
@@ -161,8 +131,7 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "Actions" tab of your repository
 1. On the left side, click on "Add Identifiers"
 1. On the right side, click "Run Workflow" to show a dropdown menu
-    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
-    * You can select a different branch, but typically, you run the default
+    * You will see your default branch (`dev`)
 1. Tap the green button that says "Run workflow"
 
     ![add identifiers using github actions](img/action-02-add-identifiers.svg){width="700"}
@@ -184,13 +153,10 @@ After successfully performing the `Add Identifiers Action`, you will see the ide
 | App Name | Name | Bundle ID |
 | --- | --- | --- |
 | <span translate="no">LoopCaregiver</span> | <span translate="no">LoopCaregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
-| <span translate="no">LoopFollow</span> | <span translate="no">LoopFollow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
 
-> If you build from a second or third `repository` for `LoopFollow`, the Name will end in `Second` or `Third` and Bundle ID will have `.Second` or `.Third` at the end.
 
 The *LoopCaregiver* app requires updates to the `Identifiers` after they are generated. Skip ahead to [Add `App Group` to `LoopCaregiver`](#add-app-group-to-identifiers).
 
-The *LoopFollow* Identifiers do not need special handling, so for *LoopFollow*, you can skip ahead to [Create App in App Store Connect](#create-app-in-app-store-connect)
 
 ## Add `App Group` to `LoopCaregiver`
 
@@ -302,9 +268,7 @@ This requires you to provide some information. Examine the table below for the b
 | App Name | Bundle ID |
 | --- | --- |
 | <span translate="no">LoopCaregiver</span> | <span translate="no">com.TEAMID.loopkit.LoopCaregiver</span> |
-| <span translate="no">LoopFollow</span> | <span translate="no">com.TEAMID.LoopFollow</span> |
 
-> If you build from a second or third `repository` for `LoopFollow`, the Bundle ID will have `.Second` or `.Third` at the end.
 
 1. Open this link: [App Store Connect / Apps](https://appstoreconnect.apple.com/apps) to view your apps; log in if needed.
 
@@ -315,7 +279,7 @@ This requires you to provide some information. Examine the table below for the b
     {align="center"}
 
 1. The New App dialog box opens and should appear similar to the graphic below. Before you fill anything out, make sure your Bundle ID is available in the dropdown menu. If you do not see the Bundle ID for your app; back out of this screen and follow the directions in [Configure to Use Browser: Find My Loop](prepare-app.md#find-my-loop), where you'll be finding App Name instead of Loop.
-    * Select "iOS". For LoopFollow you can also select "macOS" if you own a Mac with macOS 11 or later.
+    * Select "iOS"
     * Enter a name: this will have to be unique
         * You could start with "App Name ABC" where ABC are your initials
         * If that is already taken, you can add a number, for example, "App Name ABC 123"
@@ -357,7 +321,7 @@ Refer to the graphic below for the numbered steps:
 1. Click on the "Actions" tab of your Repository repository
 1. On the left side, click on "Create Certificates"
 1. On the right side, click "Run Workflow" to show a dropdown menu
-    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
+    * You will see your default branch (`dev`)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
 
@@ -376,17 +340,6 @@ The graphic below is an example from Loop, your screen will show your app and as
 
 If you are building the *LoopCaregiver* app, skip ahead to [Build Action](#build-action).
 
-### Display Name Customization for `LoopFollow`
-
-> If you build `LoopFollow` for one, two or three loopers, you may choose to customize your `fork` or `forks` to insert a custom display name.
-
-> * Find and click on the file `LoopFollowDisplayNameConfig.xcconfig`
-> * Tap the pencil icon so you can edit the file
-> * The last line says `display_name = LoopFollow` (or `LoopFollow_Second` or `LoopFollow_Third`)
-> * Insert your custom name so the last line says `display_name = LF custom name`
-> * Click on commit changes and chose to commit directly into the `main` branch
-
-> Continue to build as instructed below. After you install the app on your phone, iPad or Mac via *TestFlight*, that custom name is what is displayed. The prefix LF is suggested to make it easier to find the custom named `LoopFollow` app in the list of apps, but is not required.
 
 ### Build Action
 
@@ -395,7 +348,7 @@ Refer to the graphic below for the first four steps:
 1. Click on the "Actions" tab of your Repository repository.
 1. On the left side, click on "Build *App Name*".
 1. On the right side, click "Run Workflow" to show a dropdown menu
-    * You will see your default branch (`main` for LoopFollow, `dev` for LoopCaregiver)
+    * You will see your default branch (`dev`)
     * You can select a different branch, but typically, you run the default
 1. Tap the green button that says "Run workflow".
 
