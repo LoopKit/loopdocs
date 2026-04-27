@@ -1,11 +1,11 @@
 ## Build Other Apps using a Browser
 
-Once Loop 3 was released with the ability to build using a browser, a lot of other apps in the DIY universe added the same feature.
+Many apps in the Open Source Diabetes ecosystem can be built with the Browser Build method. The steps are similar for all apps with details varying for Identifiers and App Groups.
 
-**Only apps that are companions to&nbsp;_<span translate="no">Loop</span>_&nbsp;are included on this page.**
+With the exception of the ***LoopCaregiver*** app, each app has their own set of detailed documentation.
 
-* _<span translate="no">LoopCaregiver</span>_
-* _<span translate="no">LoopFollow</span>_  LoopFollow build instructions have been moved to https://loopfollowdocs.org/build/lf-browser-build/
+* _<span translate="no">LoopFollow</span>_ Browser Build instructions were moved to *LoopFollowDocs*
+    * [*LoopFollowDocs* Browser Build Instructions](https://loopfollowdocs.org/build/lf-browser-build/)
 
 If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instructions for that app should be located in that file.
 
@@ -18,9 +18,6 @@ The same technique is used and the same six <code>Secrets</code> are used for ma
 If you are coming to this page to update one of the other apps, follow the [How to Update or Rebuild](bb-update.md#how-to-update-or-rebuild){: target="_blank" } instructions provided for the *Loop* app, but substitute the repository name for the app you want to rebuild for all references to&nbsp;*<span translate="no">LoopWorkspace</span>*.
 
 > If you have not added the `Variable` `ENABLE_NUKE_CERTS`, do it now. See [Add Variable](prepare-fork.md#add-variable){: target="_blank" }.
-
-**WARNING: starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually.**
-
 
 ### Prerequisites
 
