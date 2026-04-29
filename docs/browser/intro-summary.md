@@ -146,7 +146,7 @@ You don't need to know anything about the <code>Secrets</code> to do this. Come 
     * There is a reference pattern for each SECRET: replace that with your SECRET or you can add your secret below the pattern to give yourself confidence you got the correct item
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
-6. If you use Nightscout, you may also want the [Nightscout template](../nightscout/remote-config.md#save-your-important-nightscout-information){: target="_blank" }
+6. If you use Nightscout, you may also want to add the APNS_KEY and APNS_KEY_ID, which are located at the bottom of this template [Nightscout template](../nightscout/remote-config.md#save-your-important-nightscout-information){: target="_blank" }
 
 ``` { .bash .copy title="Template to use for Secrets" }
 MySecretsReferenceFile.txt
