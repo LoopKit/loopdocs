@@ -211,8 +211,6 @@ Loop does not support Omnipod 5 pods.
 
 The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, released in 2020.
 
-> The `feat/dev-dana-medtrum` branch supports Dana-i. 
-
 ![Dana-i](img/dana-i.png){width="250"}
 {align="center"}
 
@@ -221,15 +219,13 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
 [Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
-> The `feat/dev-dana-medtrum` branch supports DanaRS-v3. 
-
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
 
 ## Medtrum Nano
 
-!!! warning "You must build `feat/dev-dana-medtrum` branch to use Medtrum pumps"
-    This branch is experimental and requires careful attention to bolus accounting and IOB reporting. 
+!!! warning "You must build a feature branch to use Medtrum pumps"
+    Medtrum Nano is supported in both of [these feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
     
     * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
 
