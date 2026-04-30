@@ -5026,22 +5026,22 @@
 <td style="text-align: left;">code is currently the same as <code>main</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>4612426</code></td>
+<td style="text-align: left;"><a href="#feature-branch-pod-keep-alive-feature">feat/pod-keep-alive</a><br>- SHA <code>6b7cf86</code></td>
 <td style="text-align: left;">3.13.1</td>
-<td style="text-align: left;">31 Mar 2026</td>
-<td style="text-align: left;">- uses the OmniBLE pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> to support users of iPhone 16 or 17e phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>dade6ed</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
+<td style="text-align: left;">16 Apr 2026</td>
+<td style="text-align: left;">OmniBLE dev was updated to include the pod-keep-alive feature with <a href="https://github.com/LoopKit/OmniBLE/pull/165"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 165</a>.<br>The LoopWorkspace main and dev branches are not yet updated.<br>Keep using the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the meantime if you use iPhone 16 or 17e phones with InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (-Atlas) DASH pods<br>  - SHA for OmniBLE is <code>14c03be</code><br><strong>Please read <a href="#feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature</a></strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-dana-and-medtrum-support">feat/dev-dana-medtrum</a> <br>- SHA <code>31fe9f6</code></td>
+<td style="text-align: left;"><a href="#feature-branch-dana-and-medtrum-support">feat/dev-dana-medtrum</a> <br>- SHA <code>58758c5</code></td>
 <td style="text-align: left;">3.13.1</td>
-<td style="text-align: left;">31 Mar 2026</td>
-<td style="text-align: left;">- adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is <code>0158fc8</code><br>  - SHA for MedtrumKit is <code>b7f3d44</code><br><strong>Medtrum User Interface Redesigned</strong> to be more like the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> User Interace</td>
+<td style="text-align: left;">30 Apr 2026</td>
+<td style="text-align: left;">- adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is <code>5148f19</code><br>  - SHA for MedtrumKit is <code>64f716c</code><br><strong>Medtrum User Interface Redesigned</strong> to be more like the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>126c4a6</code></td>
+<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>63684de</code></td>
 <td style="text-align: left;">3.13.1</td>
-<td style="text-align: left;">31 Mar 2026</td>
-<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is <code>0bf3cf4</code></td>
+<td style="text-align: left;">30 Apr 2026</td>
+<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for use to evaluate and report back<br>  - SHA for Eversense is <code>eaca3a7</code></td>
 </tr>
 </tbody>
 </table>
@@ -5145,14 +5145,14 @@
 </blockquote>
 <hr />
 <h3 id="feature-branch-dana-and-medtrum-support">Feature Branch: Dana and Medtrum Support<a class="headerlink" href="#feature-branch-dana-and-medtrum-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Anyone using Dana or Medtrum pumps must build one of these branches. The pump manager support is identical. The difference is the second one includes support for the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
+<p>Anyone using Dana or Medtrum pumps must build one of these branches. The pump manager support is identical. The difference is the second one includes support for the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>. Build instructions are found here: <a href="#how-to-build-feature-branches">How to Build Feature Branches</a>.</p>
 <ul>
 <li><code>feat/dev-dana-medtrum</code> </li>
 <li><code>feat/eversense</code> </li>
 </ul>
 <div class="admonition important">
-<p class="admonition-title">Experts Only</p>
-<p>Please only use a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.</p>
+<p class="admonition-title">New Pump Managers</p>
+<p>These are new Pump Managers and may have known or unknown bugs. Please only use a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.</p>
 <ul>
 <li>Please ensure you have the latest version of a given <abbr title="version of code within a single repository or workspace repository">branch</abbr> by synching before you build:<ul>
 <li>Browser Build: be sure you select <code>feat/dev-dana-medtrum</code> or <code>feat/eversense</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
@@ -5171,12 +5171,16 @@
 </div>
 <div class="admonition important">
 <p class="admonition-title">Bluetooth Connection Issues for Dana and Medtrum</p>
-<p>Both the Dana and Medtrum pumps are designed to stay in continuous Bluetooth commnication with the pump controller. The behavior of your OS-AID system needs to properly handle boluses in progress if that communication is interrupted.  This can happen if someone walks away from their phone during a bolus.</p>
+<p>Both the Dana and Medtrum pumps are designed to stay in continuous Bluetooth commnication with the pump controller. This is quite different from the older Pod and Medtronic pumps.</p>
+<p>The behavior of your OS-AID system needs to properly handle bolus and temp basal rate events in progress if that communication is interrupted.  This can happen if someone walks away from their phone during a bolus or while a temp basal rate is in progress.</p>
 <p>Please read the rest of this section to learn about how this might affect an older or current version of your OS-AID app.</p>
 </div>
-<h4 id="closed-issue-for-medtrum">Closed <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> for Medtrum<a class="headerlink" href="#closed-issue-for-medtrum" title="Anchor link to this Header on this Page">&para;</a></h4>
+<h4 id="recently-closed-issue-for-medtrum">Recently Closed <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> for Medtrum<a class="headerlink" href="#recently-closed-issue-for-medtrum" title="Anchor link to this Header on this Page">&para;</a></h4>
 <div class="admonition success">
 <p class="admonition-title">Medtrum Bluetooth Comms Loss Updated</p>
+<h4 id="medtrumkit-fixed-on-29-april-2026">MedtrumKit - fixed on 29 April 2026<a class="headerlink" href="#medtrumkit-fixed-on-29-april-2026" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><a href="https://github.com/jbr7rr/MedtrumKit/issues/112">MedtrumKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 112</a> reported that MedtrumKit did not properly handle a <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Rate (TBR) event if <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> comms was lost at the time the TBR completed.</p>
+<p><a href="https://github.com/jbr7rr/MedtrumKit/pull/118">MedtrumKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 118</a> provided an updated management of TBR providing accurate handling of TBR when <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> was interrupted and later restored.</p>
 <h4 id="medtrumkit-fixed-on-25-march-2026">MedtrumKit - fixed on 25 March 2026<a class="headerlink" href="#medtrumkit-fixed-on-25-march-2026" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><a href="https://github.com/jbr7rr/MedtrumKit/issues/92">MedtrumKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 92</a> reported that when the Medtrum moved out of Bluetooth range, the app reported an interrupted bolus when in fact the bolus continued. This led to underreported values for Active Insulin, also known as Insulin on Board (<abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>).</p>
 <p><a href="https://github.com/jbr7rr/MedtrumKit/pull/93">MedtrumKit <abbr title="formal method to request changes to a repository">Pull Request</abbr> 93</a> fixed this issue.  Now if Bluetooth communication is lost, the pump manager relies on expected timing to continue the bolus progress display.  The bolus is not considered final until <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> is restored and the app is able to communicate with the pump.</p>
@@ -5185,7 +5189,8 @@
 <div class="admonition bug">
 <p class="admonition-title">DanaKit Bluetooth Comms Loss Not Fixed</p>
 <h4 id="danakit-issue-is-still-open">DanaKit - <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> is still open<a class="headerlink" href="#danakit-issue-is-still-open" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The Medtrum <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> report led to testing for DanaKit. It has a slighlty different error signature. This one is an open <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr>, so Dana users need to be aware of this.</p>
+<p>The Medtrum <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> report led to testing for DanaKit. The bolus issue has a slightly different error signature. This two issues are still open, so Dana users need to be aware of them.</p>
+<p><a href="https://github.com/bastiaanv/DanaKit/issues/36">DanaKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 36</a> reported that DanaKit did not properly handle a <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> Rate (TBR) event if <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> comms was lost at the time the TBR completed.</p>
 <p><a href="https://github.com/bastiaanv/DanaKit/issues/34">DanaKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 34</a></p>
 <ul>
 <li>When Bluetooth communication is interrupted during a bolus, the pump manager reports the bolus as finalized even if it is still being delivered</li>
@@ -5211,6 +5216,13 @@
 </div>
 <hr />
 <h3 id="feature-branch-eversense-support">Feature Branch: Eversense Support<a class="headerlink" href="#feature-branch-eversense-support" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h4 id="recently-closed-issue-for-eversense">Recently Closed <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> for Eversense<a class="headerlink" href="#recently-closed-issue-for-eversense" title="Anchor link to this Header on this Page">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Eversense Placement Guide updated</p>
+<h4 id="eversensekit-fixed-on-30-april-2026">EversenseKit - fixed on 30 April 2026<a class="headerlink" href="#eversensekit-fixed-on-30-april-2026" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><a href="https://github.com/bastiaanv/EversenseKit/issues/26">EversenseKit <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> 26</a> reported that the placement guide graph was not updating when attaching the Transmitter over the sensor.</p>
+<p><a href="https://github.com/bastiaanv/EversenseKit/pull/30">EversenseKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 30</a> fixed the problem. The solution was to enable debug mode while using the placement guide and disable debug mode when done.</p>
+</div>
 <p>There is a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> available, <code>feat/eversense</code> which supports the Eversense E365 and E3 transmitters. In addition to Eversense support, this <abbr title="version of code within a single repository or workspace repository">branch</abbr> also has the same pump support as the <code>feat/dev-dana-medtrum</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>For anyone who tests this <abbr title="version of code within a single repository or workspace repository">branch</abbr> with Eversense, if there are issues with your use of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> with Eversense please report in this <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Eversense.20CGM/with/569969251">zulipchat channel</a>. </p>
 <p>Be sure to include:</p>
