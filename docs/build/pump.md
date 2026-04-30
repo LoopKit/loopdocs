@@ -30,8 +30,8 @@ These types of pumps are compatible with the *Loop* app.
 
 You must build a special branch to test these pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
 
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (experts only, work in progress)
-* [Medtrum Touchcare Nano](#medtrum-nano) (experts only, work in progress)
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress)
+* [Medtrum Touchcare Nano](#medtrum-nano) (new pump manager, work in progress)
 
 ## Check Medtronic Pump Version
 

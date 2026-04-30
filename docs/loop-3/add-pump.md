@@ -17,9 +17,9 @@ Loopers can choose from 5 pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* Dana-i / DanaRS-v3 (**work-in-progress; experts only**)
+* Dana-i / DanaRS-v3 (**work-in-progress; new pump manager, use with care**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
-* Medtrum Nano patch pump (**work-in-progress; experts only**)
+* Medtrum Nano patch pump (**work-in-progress; new pump manager, use with care**)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -55,7 +55,7 @@ Here is an overview of the different steps for adding each pump.  Before changin
 
 #### Other Pumps
 
-> Experts only, `feat/dev-dana-medtrum` branch required
+> These are new pump managers that can be built using one of [two feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
 
 * [Dana-i / DanaRS-v3](#dana-i-danars-v3)
 * [Medtrum Nano](#medtrum-nano)
@@ -235,9 +235,9 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 
 ## Dana-i / DanaRS-v3
 
-### Dana in Loop Requires Expert Testing
+### Dana is a New Pump Manager
 
-**WARNING: Dana support in Loop is a work-in-progress; only experts should consider testing this.**
+**WARNING: Dana support in Loop is a work-in-progress; this is one of several new pump managers.**
 
 > **A pump manager that works for Trio must be separately tested for Loop**
 
@@ -378,9 +378,9 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 ## Medtrum Nano
 
 
-### Medtrum in Loop Requires Expert Testing
+### Medtrum is a New Pump Manager
 
-**WARNING: Medtrum support in Loop is a work-in-progress; only experts should consider testing this.**
+**WARNING: Medtrum support in Loop is a work-in-progress; this is one of several new pump managers.**
 
 > **A pump manager that works for Trio must be separately tested for Loop**
 

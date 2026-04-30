@@ -46,9 +46,9 @@ The table below lists active branches. Note that updates may occur and be announ
 |:--|:--|:--|:--|
 | main | 3.12.1 | 03 Apr 2026 | release|
 | dev | 3.13.1 | 02 Apr 2026 | code is currently the same as `main` |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `4612426` | 3.13.1 | 31 Mar 2026| - uses the OmniBLE pod-keep-alive branch to support users of iPhone 16 or 17e phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `dade6ed`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `31fe9f6` | 3.13.1 | 31 Mar 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `0158fc8`<br>  - SHA for MedtrumKit is `b7f3d44`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interace |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `126c4a6` | 3.13.1 | 31 Mar 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support too)<br>- this branch is ready for expert testers to evaluate and report back<br>  - SHA for Eversense is `0bf3cf4` |
+| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `6b7cf86` | 3.13.1 | 16 Apr 2026| OmniBLE dev was updated to include the pod-keep-alive feature with [PR 165](https://github.com/LoopKit/OmniBLE/pull/165).<br>The LoopWorkspace main and dev branches are not yet updated.<br>Keep using the feature branch in the meantime if you use iPhone 16 or 17e phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `14c03be`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
+| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `58758c5` | 3.13.1 | 30 Apr 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `5148f19`<br>  - SHA for MedtrumKit is `64f716c`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `63684de` | 3.13.1 | 30 Apr 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `eaca3a7` |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -191,8 +191,8 @@ Anyone using Dana or Medtrum pumps must build one of these branches. The pump ma
 * `feat/dev-dana-medtrum` 
 * `feat/eversense` 
 
-!!! important "Experts Only"
-    Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.
+!!! important "New Pump Managers"
+    These are new Pump Managers and may have known or unknown bugs. Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.
 
     * Please ensure you have the latest version of a given branch by synching before you build:
         * Browser Build: be sure you select `feat/dev-dana-medtrum` or `feat/eversense` branch
@@ -203,13 +203,21 @@ Anyone using Dana or Medtrum pumps must build one of these branches. The pump ma
             * See [Mac-Xcode Build](#mac-xcode-build) for fresh download instructions
 
 !!! important "Bluetooth Connection Issues for Dana and Medtrum"
-    Both the Dana and Medtrum pumps are designed to stay in continuous Bluetooth commnication with the pump controller. The behavior of your OS-AID system needs to properly handle boluses in progress if that communication is interrupted.  This can happen if someone walks away from their phone during a bolus.
+    Both the Dana and Medtrum pumps are designed to stay in continuous Bluetooth commnication with the pump controller. This is quite different from the older Pod and Medtronic pumps.
+    
+    The behavior of your OS-AID system needs to properly handle bolus and temp basal rate events in progress if that communication is interrupted.  This can happen if someone walks away from their phone during a bolus or while a temp basal rate is in progress.
 
     Please read the rest of this section to learn about how this might affect an older or current version of your OS-AID app.
 
-#### Closed Issue for Medtrum
+#### Recently Closed Issue for Medtrum
 
 !!! success "Medtrum Bluetooth Comms Loss Updated"
+
+    #### MedtrumKit - fixed on 29 April 2026
+
+    [MedtrumKit Issue 112](https://github.com/jbr7rr/MedtrumKit/issues/112) reported that MedtrumKit did not properly handle a Temp Basal Rate (TBR) event if BLE comms was lost at the time the TBR completed.
+
+    [MedtrumKit PR 118](https://github.com/jbr7rr/MedtrumKit/pull/118) provided an updated management of TBR providing accurate handling of TBR when BLE was interrupted and later restored.
 
     #### MedtrumKit - fixed on 25 March 2026
 
@@ -223,7 +231,9 @@ Anyone using Dana or Medtrum pumps must build one of these branches. The pump ma
 
     #### DanaKit - Issue is still open
 
-    The Medtrum Issue report led to testing for DanaKit. It has a slighlty different error signature. This one is an open Issue, so Dana users need to be aware of this.
+    The Medtrum Issue report led to testing for DanaKit. The bolus issue has a slightly different error signature. This two issues are still open, so Dana users need to be aware of them.
+
+    [DanaKit Issue 36](https://github.com/bastiaanv/DanaKit/issues/36) reported that DanaKit did not properly handle a Temp Basal Rate (TBR) event if BLE comms was lost at the time the TBR completed.
 
     [DanaKit Issue 34](https://github.com/bastiaanv/DanaKit/issues/34)
 
@@ -252,6 +262,16 @@ Anyone using Dana or Medtrum pumps must build one of these branches. The pump ma
 
 ### Feature Branch: Eversense Support
 
+#### Recently Closed Issue for Eversense
+
+!!! success "Eversense Placement Guide updated"
+
+    #### EversenseKit - fixed on 30 April 2026
+
+    [EversenseKit Issue 26](https://github.com/bastiaanv/EversenseKit/issues/26) reported that the placement guide graph was not updating when attaching the Transmitter over the sensor.
+
+    [EversenseKit PR 30](https://github.com/bastiaanv/EversenseKit/pull/30) fixed the problem. The solution was to enable debug mode while using the placement guide and disable debug mode when done.
+
 There is a new feature branch available, `feat/eversense` which supports the Eversense E365 and E3 transmitters. In addition to Eversense support, this branch also has the same pump support as the `feat/dev-dana-medtrum` branch.
 
 For anyone who tests this branch with Eversense, if there are issues with your use of Loop with Eversense please report in this [zulipchat channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Eversense.20CGM/with/569969251). 
@@ -275,6 +295,7 @@ If you prefer to create an issue directly at the Eversense repo, create it here:
 > * This was tested using an E365 transmitter attached to a small vial containing a sensor in glucose solution
 > * This enabled testing the Eversense behavior with Loop on a test phone
 > * No testing with the E3 (3-month, 90-day) sensor has been performed
+
 
 ## Older updates
 
