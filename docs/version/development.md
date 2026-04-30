@@ -186,7 +186,7 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 ### Feature Branch: Dana and Medtrum Support
 
-Anyone using Dana or Medtrum pumps must build one of these branches. The pump manager support is identical. The difference is the second one includes support for the Eversense CGM.
+Anyone using Dana or Medtrum pumps must build one of these branches. The pump manager support is identical. The difference is the second one includes support for the Eversense CGM. Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
 
 * `feat/dev-dana-medtrum` 
 * `feat/eversense` 
