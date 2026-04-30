@@ -195,8 +195,8 @@ Loop does not support Omnipod 5 pods.
 
 ## Sooil Dana pumps
 
-!!! warning "You must build `feat/dev-dana-medtrum` branch to use Dana pumps"
-    This branch is experimental and requires careful attention to bolus accounting and IOB reporting. 
+!!! warning "You must build a feature branch to use Dana pumps"
+    Dana is supported in both of [these feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
     
     * You must follow [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
 

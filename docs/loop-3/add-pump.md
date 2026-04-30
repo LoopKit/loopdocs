@@ -235,30 +235,7 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 
 ## Dana-i / DanaRS-v3
 
-### Dana is a New Pump Manager
-
-**WARNING: Dana support in Loop is a work-in-progress; this is one of several new pump managers.**
-
-> **A pump manager that works for Trio must be separately tested for Loop**
-
-* Several issues were reported regarding bolus accounting and IOB reporting for Loop
-* For this reason, the Dana pump support, available in v3.8.1, was removed from the `main` and `dev` branches for v3.8.2 (3.9.2)
-* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
-
-### Before Testing Dana
-
-The branch needed to get Dana in Loop is: `feat/dev-dana-medtrum`.
-
-This branch is subject to rapid updates.
-
-Please refer to [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260) before building this branch.
-
-### When Testing Dana
-
-!!! warning "You must build feat/dev-dana-medtrum branch to use Dana pumps"
-    This branch is experimental and requires careful attention to bolus accounting and IOB reporting. 
-    
-    * You must follow [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+### Check Dana Pump Version
 
 !!! info "Support for Dana-i"
     All versions of the Dana-i are supported at the moment!
@@ -269,6 +246,23 @@ Please refer to [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/cha
 
     ![DanaRS-v3 version menu](img/danars-v3-version.jpeg){width="450"}
     {align="center"}
+
+### Dana is a New Pump Manager
+
+**WARNING: Dana support in Loop is a work-in-progress; this is one of several new pump managers.**
+
+### Before Testing Dana
+
+You must build a feature branch to get Dana support in Loop. You can use either one of two feature branches: `feat/dev-dana-medtrum` or `feat/eversense`.
+
+* Please refer to information summarized at [Feature Branch: Dana and Medtrum Support](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }.
+
+
+### When Testing Dana
+
+* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
+
+### Add Dana Pump
 
 You can only add the Dana when no pump is selected. If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
 
@@ -382,26 +376,16 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 
 **WARNING: Medtrum support in Loop is a work-in-progress; this is one of several new pump managers.**
 
-> **A pump manager that works for Trio must be separately tested for Loop**
+You must build a feature branch to get Medtrum support in Loop. You can use either one of two feature branches: `feat/dev-dana-medtrum` or `feat/eversense`.
 
-* Several issues were reported regarding bolus accounting and IOB reporting for Loop
-* For this reason, the Medtrum pump support is only found in a special branch
-* Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+* Please refer to information summarized at [Feature Branch: Dana and Medtrum Support](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }.
 
-### Before Testing Medtrum
 
-The branch needed to get Medtrum in Loop is: `feat/dev-dana-medtrum`.
+### When Testing Medtrum Nano
 
-This branch is subject to rapid updates.
+* Please do not use Medtrum Nano with Loop unless you are willing to test and communicate with  [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
 
-Please refer to the [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247) before building this branch.
-
-### When Testing Medtrum
-
-!!! warning "You must build feat/dev-dana-medtrum branch to use Medtrum patch pumps"
-    The Medtrum patch pump is experimental and requires careful attention to bolus accounting and IOB reporting. 
-    
-    * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+### Confirm Patch and Pump Base are Compatible
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
@@ -413,6 +397,8 @@ Please refer to the [zulipchat Medtrum channel](https://loop.zulipchat.com/#narr
 
     ![Medtrum REF](img/medtrum-ref.JPG){width="450"}
     {align="center"}
+
+### Add Medtrum Nano Pump
 
 You can only add the Medtrum patch pump when no pump is selected.
 If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
