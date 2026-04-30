@@ -161,10 +161,10 @@ The information about the pump section is detailed on several different pages. F
 * [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
 * [Medtronic](medtronic.md) Status and Commands
 
-For experts only, requires a special branch:
+There are several new pump managers available when you [build a feature branch](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }:
 
-* [Dana Pumps](add-pump.md#dana-i-danars-v3)
-* [Medtrum Pumps](add-pump.md#medtrum-nano)
+* [Dana Pumps](dana.md)
+* [Medtrum Pumps](medtrum.md)
 
 ### [CGM Settings](add-cgm.md)
 
