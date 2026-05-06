@@ -80,13 +80,17 @@ When Google Translate is selected:
 
 **<span translate="no">EmaLink</span>**&nbsp; (EmaLink): radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 
+**<span translate="no">ENABLE_NUKE_CERTS</span>**&nbsp; (ENABLE_NUKE_CERTS): The Variable that gets added to GitHub, along with your 6 Secrets: renews your Apple Developer Certificate after it expires
+
 **<span translate="no">EGP</span>**&nbsp; (EGP): Endogenous Glucose Production: glucose produced by the body from its reserves (mainly glycogen in the liver)
 
 **<span translate="no">Event History</span>**&nbsp; (Event History): record of pump events (bolus or temp basal) reported and used by Loop
 
 **<span translate="no">Expiration Date</span>**&nbsp; (Expiration Date): your Loop app has a finite life, the app warns you starting 3 weeks before the expiration date
 
-**<span translate="no">fastlane</span>**&nbsp; (fastlane): used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode
+**<span translate="no">fastlane</span>**&nbsp; (fastlane): used as part of the GitHub Build Action method that enables building Loop without a Mac computer or Xcode
+
+**<span translate="no">fork</span>**&nbsp; (fork): a copy of code in a GitHub repository other than the original
 
 **<span translate="no">Finder</span>**&nbsp; (Finder): graphical folder and file display on Mac
 
@@ -128,7 +132,7 @@ When Google Translate is selected:
 
 **<span translate="no">ISF</span>**&nbsp; (ISF): Insulin Sensitivity Factor; how many points your blood sugar will drop for each unit of insulin; sometimes called Correction Factor
 
-**<span translate="no">Issue</span>**&nbsp; (Issue): On github - a formal method to report a problem, either code behavior or documentation
+**<span translate="no">Issue</span>**&nbsp; (Issue): On GitHub - a formal method to report a problem, either code behavior or documentation
 
 **<span translate="no">JSON</span>**&nbsp; (JSON): JavaScript Object Notation; a standard data interchange format that is text-based and human readable
 
@@ -146,7 +150,7 @@ When Google Translate is selected:
 
 **<span translate="no">LoopFollow</span>**&nbsp; (LoopFollow): An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information
 
-**<span translate="no">Match-Secrets</span>**&nbsp; (Match-Secrets): a private repository you must create in your github account, stores keys required to build with github Build Actions
+**<span translate="no">Match-Secrets</span>**&nbsp; (Match-Secrets): a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository
 
 **<span translate="no">MTB</span>**&nbsp; (MTB): Manual Temp Basal: user initiated temporary basal, Omnipod Common feature
 
@@ -174,7 +178,7 @@ When Google Translate is selected:
 
 **<span translate="no">OTP</span>**&nbsp; (OTP): one-time password, this is used to enable caregivers to securely execute remote commands to a Looper's phone
 
-**<span translate="no">Override</span>**&nbsp; (Override): a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both
+**<span translate="no">Override</span>**&nbsp; (Override): a modification to Loop settings that can change the correction range, the sensitivity (basal, ISF and CR) or both.  Accessed by clicking the heart symbol on Loop's mainscreen, and referred to as a Custom Preset within the Loop app.
 
 **<span translate="no">Package Dependencies</span>**&nbsp; (Package Dependencies): packages that must be downloaded by Xcode (once) to build the app after downloading the LoopWorkspace to your computer
 
@@ -214,15 +218,17 @@ When Google Translate is selected:
 
 **<span translate="no">GH_PAT</span>**&nbsp; (GH_PAT): One of 6 Secrets: Generated with your GitHub account; set it to never expire
 
-**<span translate="no">MATCH_PASSWORD</span>**&nbsp; (MATCH_PASSWORD): One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.
+**<span translate="no">MATCH_PASSWORD</span>**&nbsp; (MATCH_PASSWORD): One of 6 Secrets: GitHub repository encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.
 
-**<span translate="no">SHA-1</span>**&nbsp; (SHA-1): Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)
+**<span translate="no">SHA-1</span>**&nbsp; (SHA-1): Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)
 
 **<span translate="no">Sign Targets</span>**&nbsp; (Sign Targets): associate a Developer ID with an app; must sign all targets for a given app
 
 **<span translate="no">submodules</span>**&nbsp; (submodules): for Loop, submodules are repositories defined in the Workspace repository that are required to build the app
 
 **<span translate="no">Table of Contents</span>**&nbsp; (Table of Contents): (TOC) is the list of level 2 and 3 headers on a given page; the title at the top of the page is a level 1 header
+
+**<span translate="no">Tahoe</span>**&nbsp; (Tahoe): operating system for Mac, macOS 26.x
 
 **<span translate="no">Temp Basal Only</span>**&nbsp; (Temp Basal Only): provide the recommended insulin automatically using an increase in temp basal over half an hour (limited by max temp basal)
 
@@ -234,15 +240,13 @@ When Google Translate is selected:
 
 **<span translate="no">Therapy Settings</span>**&nbsp; (Therapy Settings): Basal Rates, ISF, CR, correction and safety ranges and delivery limits
 
-**<span translate="no">Tokens</span>**&nbsp; (Tokens): on Nightscout, configure access permissions using tokens
+**<span translate="no">Tokens</span>**&nbsp; (Tokens): in Nightscout Admin Tools, configure access permissions using tokens 
 
 **<span translate="no">Tooltip</span>**&nbsp; (Tooltip): brief definitions provided for important terms and abbreviations on the website
 
 **<span translate="no">URL</span>**&nbsp; (URL): website address (Uniform Resource Locator)
 
 **<span translate="no">UTC</span>**&nbsp; (UTC): Coordinated Universal Time is a time standard for civil time and time zones worldwide
-
-**<span translate="no">Ventura</span>**&nbsp; (Ventura): operating system for Mac, macOS 13.x
 
 **<span translate="no">watchOS</span>**&nbsp; (watchOS): Apple watch operating system; must be compatible with phone iOS
 
