@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.12.1 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -29,7 +29,30 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 - - -
 
-## Loop v3.12.1
+## Loop v3.14.0
+
+[*Loop* v3.14.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.0) was released on TBD May 2026.
+
+#### v3.14.0 Highlights
+
+**Loop Features**
+
+* Live Activity Plots on the phone were improved
+* Live Activity on the watch now open the Loop app on the watch
+* Bugfix: the G6 sensor start used to report a time in the future which messed up SAGE reporting on Nightscout - that is now fixed
+
+**Support**
+
+* The support files for browser build were updated
+* Additional translations were imported from lokalise
+* Two languages with no translations (Chechen and Hindi) were removed, while Korean was added
+* A CONTRIBUTING.md file was added to assist volunteers who want to contribute to the community
+
+- - -
+
+## Loop v3.12.x
+
+### Loop v3.12.1
 
 [*Loop* v3.12.1](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.1) was released on 03 April 2026.
 
@@ -53,7 +76,7 @@ Additional translations were imported from lokalise.
 
 - - -
 
-## Loop v3.12.0
+### Loop v3.12.0
 
 [*Loop* v3.12.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.12.0) was released on 24 February 2026.
 
@@ -630,6 +653,10 @@ This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`
 - - -
 
 ## `Loop` Version Numbering
+
+With the release of version 3.14.0, the numbering is changing again. We will not be using even numbers for main and odd numbers for dev.
+
+We will start out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev.
 
 With the release of `Loop 3`, there was a new pattern for identifying the releases as distinct from the development work. This pattern was revised again starting with `Loop v3.6`.
 
