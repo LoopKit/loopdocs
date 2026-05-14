@@ -37,6 +37,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 **Loop Features**
 
+* The Pod Keep Alive feature for folks using Omnipod with iPhone 16 (all models) or iPhone 17e is no part of the released code
 * Live Activity Plots on the phone were improved
 * Live Activity on the watch now open the Loop app on the watch
 * Bugfix: the G6 sensor start used to report a time in the future which messed up SAGE reporting on Nightscout - that is now fixed

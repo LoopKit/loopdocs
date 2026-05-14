@@ -25,7 +25,7 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
-* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the new universal pump manager for all types of Omnipods
+* The branches starting with `feat/` have one or more special features, like support for new pumps or CGM
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
 
@@ -102,7 +102,7 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Feature Branch: Pod Keep Alive Feature
 
-The feat/pod-keep-alive branch has been deleted. It has been updated and incorporated into the released code.
+The feat/pod-keep-alive branch has been deleted. It was updated and incorporated into the released code.
 
 See [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }.
 
