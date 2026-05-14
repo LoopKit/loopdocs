@@ -31,7 +31,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 ## Loop v3.14.0
 
-[*Loop* v3.14.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.0) was released on TBD May 2026.
+[*Loop* v3.14.0](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.0) was released on 14 May 2026.
 
 #### v3.14.0 Highlights
 
@@ -39,12 +39,12 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 * The Pod Keep Alive feature for folks using Omnipod with iPhone 16 (all models) or iPhone 17e is now part of the released code
 * Live Activity Plots on the phone were improved
-* Live Activity on the watch now open the Loop app on the watch
+* Live Activity on the watch now opens the Loop app on the watch
 * Bugfix: the G6 sensor start used to report a time in the future which messed up SAGE reporting on Nightscout - that is now fixed
 
 **Support**
 
-* The support files for browser build were updated
+* The support files for browser build were updated to fastlane 2.234.0
 * Additional translations were imported from lokalise
 * Two languages with no translations (Chechen and Hindi) were removed, while Korean was added
 * A CONTRIBUTING.md file was added to assist volunteers who want to contribute to the community

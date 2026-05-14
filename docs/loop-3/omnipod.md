@@ -388,7 +388,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-No better solution has been found for dealing with Atlas pods with iPhone 16 (all models) and iPhone 17e. Therefore, the features previously found just in the `pod-keep-alive` branch were merged into OmniBLE and are part of the new release as of version 3.14.0.
+No better solution has been found for dealing with Atlas pods with iPhone 16 (all models) and iPhone 17e. Therefore, the features previously found just in the `feat/pod-keep-alive` branch of LoopWorkspace are part of the released code as of version 3.14.0.
 
 There is a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 

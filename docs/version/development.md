@@ -44,10 +44,10 @@ The table below lists active branches. Note that updates may occur and be announ
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.14.0 | TBD May 2026 | release|
-| dev | 3.14.0 | TBD May 2026 | code is currently the same as `main` |
-| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `TBD` | 3.14.0  | TBD May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `TBD`<br>  - SHA for MedtrumKit is `TBD`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `TBD` | 3.14.0  | TBD May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `TBD` |
+| main | 3.14.0 | 14 May 2026 | release |
+| dev | 3.14.0 | 14 May 2026 | code is currently the same as `main` |
+| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `638d351` | 3.14.0  | 14 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `c544c42`<br>  - SHA for MedtrumKit is `6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `08e0e20` | 3.14.0  | 14 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `d243638` |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
