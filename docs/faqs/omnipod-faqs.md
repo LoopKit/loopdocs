@@ -55,8 +55,7 @@ Beginning in 2025, some of the DASH pods are produced with a newer version of ch
     * No solution to this issue is known
     * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for the phone. 
         * Although it does increase the number of messages to the pod slightly, this is not thought to be a big issue. Pods with marginal batteries are as likely to fault without this feature as with the feature.
-        * If you are forced to use an iPhone 16 or 17e with InPlay pods, please read the [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } section for information about building a feature branch for Loop that contains this code
-        * If you are using Trio or iAPS, the same OmniBLE `pod-keep-alive` branch can be used by that app - check with mentors for those apps for instructions
+        * If you are forced to use an iPhone 16 or 17e with InPlay pods, please read the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } section. This used to be found only in a feature branch but as of v3.14.0 is part of the released Loop code
 
 > DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16 and 17e.
 

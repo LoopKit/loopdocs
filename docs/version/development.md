@@ -14,9 +14,9 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop v3.12.1`. 
+This section provides an overview of changes to `dev` compared to `Loop v3.14.0`. 
 
-The current version of `dev` is v3.13.1 with code identical to that in the `main` branch.
+The current version of `dev` is v3.14.0 with code identical to that in the `main` branch.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -25,7 +25,7 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
-* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the keep-alive work-around for Atlas DASH pods with by iPhone 16 or iPhone 17e
+* The branches starting with `feat/` have one or more special features, like support for new pumps or CGM
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
 
@@ -44,11 +44,10 @@ The table below lists active branches. Note that updates may occur and be announ
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.12.1 | 03 Apr 2026 | release|
-| dev | 3.13.1 | 02 Apr 2026 | code is currently the same as `main` |
-| [feat/pod-keep-alive](#feature-branch-pod-keep-alive-feature)<br>- SHA `6b7cf86` | 3.13.1 | 16 Apr 2026| OmniBLE dev was updated to include the pod-keep-alive feature with [PR 165](https://github.com/LoopKit/OmniBLE/pull/165).<br>The LoopWorkspace main and dev branches are not yet updated.<br>Keep using the feature branch in the meantime if you use iPhone 16 or 17e phones with InPlay BLE (-Atlas) DASH pods<br>  - SHA for OmniBLE is `14c03be`<br>**Please read [Feature Branch: Pod Keep Alive Feature](#feature-branch-pod-keep-alive-feature)** |
-| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `58758c5` | 3.13.1 | 30 Apr 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `5148f19`<br>  - SHA for MedtrumKit is `64f716c`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `63684de` | 3.13.1 | 30 Apr 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `eaca3a7` |
+| main | 3.14.0 | 14 May 2026 | release |
+| dev | 3.14.0 | 14 May 2026 | code is currently the same as `main` |
+| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `638d351` | 3.14.0  | 14 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `c544c42`<br>  - SHA for MedtrumKit is `6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `08e0e20` | 3.14.0  | 14 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `d243638` |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -77,13 +76,6 @@ Use the page linked above to add the desired branch name (from the table above) 
 
 For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
 
-
-``` { .bash .copy title="Download and build the feat/pod-keep-alive branch" }
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
-   - feat/pod-keep-alive
-```
-
 ``` { .bash .copy  title="Download and build the feat/dev-dana-medtrum branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
@@ -110,79 +102,10 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Feature Branch: Pod Keep Alive Feature
 
-The experimental `pod-keep-alive` branch has a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
+The feat/pod-keep-alive branch has been deleted. It was updated and incorporated into the released code.
 
-It was tested for LoopWorkspace and Trio.
+See [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }.
 
-The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.
-
-The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.
-
-The default value is Disabled. The graphic below shows the Pod Keep Alive screen that allows the user to choose an option.
-
-![Options available for Pod Keep Alive](img/omnible-keep-alive-options.svg){width="650"}
-{align="center"}
-
-There are 4 choices for Pod Keep Alive:
-
-1. [Disabled](#disabled) (default)
-2. [When Open](#when-open)
-3. [Silent Tune](#silent-tune)
-4. [RileyLink](#rileylink)
-
-#### Disabled
-
-When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmniBLE code.
-
-!!! warning "Automatic Change for iPhone 16 and Atlas DASH pod"
-    If your app has Pod Keep Alive set to disabled and you have an **iPhone 16** and the pod you just paired is an **InPlay (Atlas) pod**, the configuration **automatically** switches to **When Open**. 
-    
-    The Pod Keep Alive configuration remains at **When Open** until you change it manually.
-
-All three criteria must be true or no automatic change to the setting takes place:
-
-* iPhone 16
-* pair a new pod that is InPlay BLE (Atlas)
-* Pod Keep Alive is Disabled
-
-!!! warning "No Automatic Change for iPhone 17e"
-    Note that we did not know the 17e would exhibit the same issue. The `When Open` option does not automatically enable when a 17e is used to pair with an Atlas pod.
-    
-    The user should manually enable `When Open` or `Silent Tune`/`RileyLink` before they try to pair an Atlas pod with an iPhone 17e.
-
-Note that during the time from pair to insert, the app keeps the screen open and unlocked unless you manually lock it.
-
-This means you can take all the time you need between pair/prime and insert. As long as you don't manually lock the phone or move it out of range of the pod, the pod stays connected until you insert the cannula.
-
-Once the pod is inserted, the phone auto-lock timing is restored to the value the user has selected.
-
-#### When Open
-
-When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available to the phone.
-
-This is true as long as the phone and pod are in-range while the app is open with phone unlocked.
-
-> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
-
-#### Silent Tune
-
-A silent tune is played in the background which keeps the app alive even when the phone is locked. This will increase the battery usage on the phone.
-
-While Silent Tune is selected, the app will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.
-
-> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
-
-#### RileyLink
-
-For those who have a RileyLink (OrangeLink, EmaLink, etc), you can use that instead of the Silent Tune but you must keep the link with the phone.
-
-While RileyLink is selected, the app is triggered by the RileyLink one minute heartbeat. The app will send a getStatus to the pod 2:00 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.
-
-> If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or iPhone 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
-
-> If the phone moves out of RileyLink range, then the app is not triggered by the RileyLink heartbeat and the pod disconnects from BLE at the 3 minute cadence. With iPhone 16 it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
-
-- - -
 
 ### Feature Branch: Dana and Medtrum Support
 
