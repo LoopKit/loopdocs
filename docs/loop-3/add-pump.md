@@ -17,7 +17,6 @@ Loopers can choose from 5 pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* [All Omnipod Types](../version/development.md#feature-branch-omnipodkit-pump-manager){: target="_blank" } (available as a feature branch)
 * Dana-i / DanaRS-v3 (**work-in-progress; new pump manager, use with care**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
 * Medtrum Nano patch pump (**work-in-progress; new pump manager, use with care**)

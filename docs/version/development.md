@@ -46,7 +46,6 @@ The table below lists active branches. Note that updates may occur and be announ
 |:--|:--|:--|:--|
 | main | 3.14.0 | TBD May 2026 | release|
 | dev | 3.14.0 | TBD May 2026 | code is currently the same as `main` |
-| [feat/omnipodkit](#feature-branch-omnipodkit)<br>- SHA `TBD` | 3.14.0 | TBD May 2026| The new OmnipodKit pump manager, controls all Type of pods. Initially only the Eros and DASH pod types are available for feature branch testers while the Omnipod 5 pod features are being checked out and improved by a limited set of testers<br>  - SHA for OmnipodKit is `TBD`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
 | [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `TBD` | 3.14.0  | TBD May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `TBD`<br>  - SHA for MedtrumKit is `TBD`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `TBD` | 3.14.0  | TBD May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `TBD` |
 
@@ -77,13 +76,6 @@ Use the page linked above to add the desired branch name (from the table above) 
 
 For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
 
-
-``` { .bash .copy title="Download and build the feat/pod-keep-alive branch" }
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
-   - feat/omnipodkit
-```
-
 ``` { .bash .copy  title="Download and build the feat/dev-dana-medtrum branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
@@ -108,25 +100,11 @@ The version number in the feature branch will match either the `dev` branch vers
 * Each feature has an associated repository that contains the feature
     * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
-### Feature Branch: OmnipodKit Pump Manager
+### Feature Branch: Pod Keep Alive Feature
 
-To test the new pump manager - which comes with improved user interface and user experience, the next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
+The feat/pod-keep-alive branch has been deleted. It has been updated and incorporated into the released code.
 
-Select `All Omnipod Types` as your new pump manager.
-
-Go through the onboarding of selecting notifications and reminders and insulin type.
-
-You will then be presented with a screen to select the type of pod. 
-
-Initially, only Classic (Eros) and DASH will be displayed but the O5 is coming soon. It is being tested privately and successfully. Please be patient.
-
-!!! tip "feat/omnipodkit supports other plugins"
-    For the convenience of the developers and testers, this feature branch, feat/omnipodkit, also supports the new pump and cgm managers that are found in the other feature branches.
-
-    In other words:
-
-    * Eversense is available as a CGM
-    * Dana and Medtrum are available as a pump, in addtion to OmnipodKit and all the older pump managers
+See [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }.
 
 
 ### Feature Branch: Dana and Medtrum Support
