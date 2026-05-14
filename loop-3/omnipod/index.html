@@ -2547,6 +2547,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pod-keep-alive-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pod Keep Alive Feature
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pod Keep Alive Feature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Open
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silent-tune" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Silent Tune
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rileylink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RileyLink
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4941,6 +5002,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pod-keep-alive-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pod Keep Alive Feature
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pod Keep Alive Feature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Open
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silent-tune" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Silent Tune
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rileylink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RileyLink
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5308,6 +5430,58 @@
 <p>The updates included with version 3.4.x make it easier to find the pod fault, should one occur.</p>
 <p>The fault will appear on the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> screen and more details will be shown when you tap on Replace Pod to arrive at the Deactivate screen. You can grab a quick screenshot on the Deactivate screen if desired.</p>
 <p>The fault information can still be found under <a href="#previous-pod-details">Previous Pod Details</a> if you need to find it after you Deactivate the "screaming" pod.</p>
+<hr />
+<h2 id="pod-keep-alive-feature">Pod Keep Alive Feature<a class="headerlink" href="#pod-keep-alive-feature" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>No better solution has been found for dealing with Atlas pods with iPhone 16 (all models) and iPhone 17e. Therefore, the features previously found just in the <code>feat/pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace are part of the released code as of version 3.14.0.</p>
+<p>There is a new "Pod Keep Alive" option at the bottom of the "<abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and <a href="../../faqs/omnipod-faqs/#atlas-or-inplay-dash-pods" target="_blank">DASH pods with a InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas) board</a>. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.</p>
+<p>It was tested for LoopWorkspace and Trio.</p>
+<p>The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the pod before the 3 minute disconnect happens. Therefore, so long as you and the pod stay close to the phone, the pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.</p>
+<p>The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.</p>
+<p>The default value is Disabled. The graphic below shows the Pod Keep Alive screen that allows the user to choose an option.</p>
+<p align="center"><img alt="Options available for Pod Keep Alive" src="../img/omnible-keep-alive-options.svg" width="650" /></p>
+<p>There are 4 choices for Pod Keep Alive:</p>
+<ol>
+<li><a href="#disabled">Disabled</a> (default)</li>
+<li><a href="#when-open">When Open</a></li>
+<li><a href="#silent-tune">Silent Tune</a></li>
+<li><a href="#rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></a></li>
+</ol>
+<h3 id="disabled">Disabled<a class="headerlink" href="#disabled" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmniBLE code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Automatic Change for iPhone 16 or 17e and Atlas DASH pod</p>
+<p>If your app has Pod Keep Alive set to disabled and you have an <strong>iPhone 16</strong> or <strong>iPhone 17e</strong> and the pod you just paired is an <strong>InPlay (Atlas) pod</strong>, the configuration <strong>automatically</strong> switches to <strong>When Open</strong>. </p>
+<p>The Pod Keep Alive configuration remains at <strong>When Open</strong> until you change it manually.</p>
+</div>
+<p>All three criteria must be true or no automatic change to the setting takes place:</p>
+<ul>
+<li>iPhone 16 (any model) or iPhone 17e</li>
+<li>pair a new pod that is InPlay <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> (Atlas)</li>
+<li>Pod Keep Alive is Disabled</li>
+</ul>
+<p>Note that during the time from pair to insert, the app keeps the screen open and unlocked unless you manually lock it.</p>
+<p>This means you can take all the time you need between pair/prime and insert. As long as you don't manually lock the phone or move it out of range of the pod, the pod stays connected until you insert the cannula.</p>
+<p>Once the pod is inserted, the phone auto-lock timing is restored to the value the user has selected.</p>
+<h3 id="when-open">When Open<a class="headerlink" href="#when-open" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available to the phone.</p>
+<p>This is true as long as the phone and pod are in-range while the app is open with phone unlocked.</p>
+<blockquote>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+</blockquote>
+<h3 id="silent-tune">Silent Tune<a class="headerlink" href="#silent-tune" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>A silent tune is played in the background which keeps the app alive even when the phone is locked. This will increase the battery usage on the phone.</p>
+<p>While Silent Tune is selected, the app will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.</p>
+<blockquote>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+</blockquote>
+<h3 id="rileylink"><abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr><a class="headerlink" href="#rileylink" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>For those who have a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> (<abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">OrangeLink</abbr>, <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">EmaLink</abbr>, etc), you can use that instead of the Silent Tune but you must keep the link with the phone.</p>
+<p>While <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> is selected, the app is triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> one minute heartbeat. The app will send a getStatus to the pod 2:00 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> and remains available for commands from the app so long as the phone and pod stay within Bluetooth range.</p>
+<blockquote>
+<p>If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+<p>If the phone moves out of <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> range, then the app is not triggered by the <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> heartbeat and the pod disconnects from <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> at the 3 minute cadence. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.</p>
+</blockquote>
+<hr />
 
 
 
