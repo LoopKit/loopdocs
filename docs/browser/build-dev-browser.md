@@ -47,16 +47,16 @@ Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` wher
 If you're building `dev`, you can skip ahead to [Add `Branch`](#add-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
 
 
-``` { .bash .copy }
-feat/pod-keep-alive
-```
-
-``` { .bash .copy }
+``` { .bash .copy title="Add Dana and Medtrum pumps to dev branch" }
 feat/dev-dana-medtrum
 ```
 
-``` { .bash .copy }
+``` { .bash .copy title="Add Dana and Medtrum pumps, Eversense CGM to dev branch" }
 feat/eversense
+```
+
+``` { .bash .copy title="Add Dana, Medtrum and All Omnipod Types, Eversense CGM to dev branch" }
+feat/omnipodkit
 ```
 
 ### Add `Branch`

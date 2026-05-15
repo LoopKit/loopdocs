@@ -67,6 +67,7 @@ The table below lists active branches. Note that updates may occur and be announ
 For full instructions on building different branches, review these pages:
 
 * [Browser Build: Build a Version in Development](../browser/build-dev-browser.md#build-development-version){: target="_blank" }
+    * For short-cut instructions on adding the feature branch: [Feature Branch](../browser/build-dev-browser.md#feature-branch){: target="_blank" }
 * [Mac Xcode: Build a Version in Development](../build/build-dev-mac.md#build-other-branches){: target="_blank" }
 
 #### Browser Build
@@ -109,21 +110,37 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Feature Branch: OmnipodKit Pump Manager
 
-To test the new pump manager - which comes with improved user interface and user experience, the next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
+You need to build the `feat/omnipodkit` branch if you want to test the new `All Omnipod Types` pump manager. Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
+
+This pump manager comes with improved user interface and user experience for Omnipod Classic (Eros) and DASH pods including
+
+* Some layout adjustments
+* Some new labels
+* Some reworked sub-menus with added information or features
+* WARNINGS
+    - no translations added yet so English only for the initial roll-out
+    - no pod-keep-alive function added yet
+
+The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
 
 * Select `All Omnipod Types` as your new pump manager.
 * Go through the onboarding of selecting notifications and reminders and insulin type.
 * You will then be presented with a screen to select the type of pod. 
 * Choose the Classic (Eros) or DASH Pod type
 
+The underyling control code should be the same, but we want more people testing it to ensure this works as well as the older pod managers. The developers have been using it on themselves before making this publicly available.
+
+!!! warning "Do not use with iPhone 16 or 17e and Atlas pods"
+    The new OmnipodKit does not have the pod-keep-alive feature incorporated. For now, if you use an iPhone 16 (any model) or iPhone 17e and have Atlas pods (the newer version for DASH pods), stick with the old Omnipod DASH selection.
+
 !!! question "Why OmnipodKit?"
-    When DASH was added to the supported pumps in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
+    When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
 
     A significant portion of the two repositories serve the same function. Whenever a fix or improvement was added to OmniBLE, it was duplicated and added to OmniKit. Having a universal pod manager saves significant developer resources.
 
     OmnipodKit provides the individual support needed for different `Pod Types` while using a single copy of code for most of the logic and user interface.
 
-    We think you will find it completely transparent as an Eros or DASH user.
+    The improvements that have been going on in the background landed in the new pump manager only - and were not replicated in the OmniKit or OmniBLE repositories.
 
     This will be a significant time saver for developers moving forward for updating code and adding support for new types of pods.
 
@@ -137,7 +154,7 @@ To test the new pump manager - which comes with improved user interface and user
 
 ### Feature Branch: Pod Keep Alive Feature
 
-The feat/pod-keep-alive branch has been deleted. It was updated and incorporated into the released code.
+The feat/pod-keep-alive branch has been deleted. It was updated and incorporated into the released code. Please build the `main` branch over your existing app. All your selections will remain as you configured them when building the `feat/pod-keep-alive` branch.
 
 See [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }.
 
