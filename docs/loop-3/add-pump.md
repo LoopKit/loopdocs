@@ -10,7 +10,7 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 !!! question "Switching Pumps?"
     To change the pump connected to Loop go to [Change Pump Type](#change-pump-type).
 
-Loopers can choose from 5 pumps and a simulator:
+Loopers can choose from multiple pumps and a simulator:
 
 * Minimed
     * Note: only some Minimed pumps are compatible
