@@ -25,7 +25,7 @@ Please check the [development channel in zulipchat](https://loop.zulipchat.com/#
 In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
-* The branches starting with `feat/` have one or more special features, like support for new pumps or CGM
+* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the new universal pump manager for all types of Omnipods
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
 
@@ -48,6 +48,7 @@ The table below lists active branches. Note that updates may occur and be announ
 | dev | 3.14.0 | 14 May 2026 | code is currently the same as `main` |
 | [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `638d351` | 3.14.0  | 14 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `c544c42`<br>  - SHA for MedtrumKit is `6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `08e0e20` | 3.14.0  | 14 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `d243638` |
+| [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `TBD` | 3.14.0 | TBD May 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA for OmnipodKit is `TBD`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -66,6 +67,7 @@ The table below lists active branches. Note that updates may occur and be announ
 For full instructions on building different branches, review these pages:
 
 * [Browser Build: Build a Version in Development](../browser/build-dev-browser.md#build-development-version){: target="_blank" }
+    * For short-cut instructions on adding the feature branch: [Feature Branch](../browser/build-dev-browser.md#feature-branch){: target="_blank" }
 * [Mac Xcode: Build a Version in Development](../build/build-dev-mac.md#build-other-branches){: target="_blank" }
 
 #### Browser Build
@@ -75,6 +77,12 @@ Use the page linked above to add the desired branch name (from the table above) 
 #### Mac-Xcode Build 
 
 For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
+
+``` { .bash .copy  title="Download and build the feat/omnipodkit branch" }
+/bin/bash -c "$(curl -fsSL \
+  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
+   - feat/omnipodkit
+```
 
 ``` { .bash .copy  title="Download and build the feat/dev-dana-medtrum branch" }
 /bin/bash -c "$(curl -fsSL \
@@ -100,9 +108,53 @@ The version number in the feature branch will match either the `dev` branch vers
 * Each feature has an associated repository that contains the feature
     * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
 
+### Feature Branch: OmnipodKit Pump Manager
+
+You need to build the `feat/omnipodkit` branch if you want to test the new `All Omnipod Types` pump manager. Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
+
+This pump manager comes with improved user interface and user experience for Omnipod Classic (Eros) and DASH pods including
+
+* Some layout adjustments
+* Some new labels
+* Some reworked sub-menus with added information or features
+* WARNINGS
+    - no translations added yet so English only for the initial roll-out
+    - no pod-keep-alive function added yet
+
+The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
+
+* Select `All Omnipod Types` as your new pump manager.
+* Go through the onboarding of selecting notifications and reminders and insulin type.
+* You will then be presented with a screen to select the type of pod. 
+* Choose the Classic (Eros) or DASH Pod type
+
+The underyling control code should be the same, but we want more people testing it to ensure this works as well as the older pod managers. The developers have been using it on themselves before making this publicly available.
+
+!!! warning "Do not use with iPhone 16 or 17e and Atlas pods"
+    The new OmnipodKit does not have the pod-keep-alive feature incorporated. For now, if you use an iPhone 16 (any model) or iPhone 17e and have Atlas pods (the newer version for DASH pods), stick with the old Omnipod DASH selection.
+
+!!! question "Why OmnipodKit?"
+    When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
+
+    A significant portion of the two repositories serve the same function. Whenever a fix or improvement was added to OmniBLE, it was duplicated and added to OmniKit. Having a universal pod manager saves significant developer resources.
+
+    OmnipodKit provides the individual support needed for different `Pod Types` while using a single copy of code for most of the logic and user interface.
+
+    The improvements that have been going on in the background landed in the new pump manager only - and were not replicated in the OmniKit or OmniBLE repositories.
+
+    This will be a significant time saver for developers moving forward for updating code and adding support for new types of pods.
+
+!!! tip "feat/omnipodkit supports other plugins"
+    For the convenience of the developers and testers, this feature branch, feat/omnipodkit, also supports the new pump and cgm managers that are found in the other feature branches.
+
+    In other words:
+
+    * Eversense is available as a CGM
+    * Dana and Medtrum are available as a pump, in addtion to OmnipodKit and all the older pump managers
+
 ### Feature Branch: Pod Keep Alive Feature
 
-The feat/pod-keep-alive branch has been deleted. It was updated and incorporated into the released code.
+The feat/pod-keep-alive branch has been deleted. It was updated and incorporated into the released code. Please build the `main` branch over your existing app. All your selections will remain as you configured them when building the `feat/pod-keep-alive` branch.
 
 See [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }.
 
