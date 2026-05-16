@@ -3457,6 +3457,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#feature-branch-omnipodkit-pump-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch: OmnipodKit Pump Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#feature-branch-pod-keep-alive-feature" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4731,6 +4742,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#feature-branch-omnipodkit-pump-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch: OmnipodKit Pump Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#feature-branch-pod-keep-alive-feature" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4985,7 +5007,7 @@
 <p>In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.</p>
 <ul>
 <li>The <code>update_dev_to_M.m.#</code> is where the next version of dev is tested before becoming part of <code>dev</code> and later being released as <code>main</code></li>
-<li>The branches starting with <code>feat/</code> have one or more special features, like support for new pumps or <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
+<li>The branches starting with <code>feat/</code> have one or more special features, like support for new pumps, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or the new universal pump manager for all types of Omnipods</li>
 </ul>
 <p>The graphic below shows the <code>main</code> and <code>dev</code> branches along with some feature branches and an update <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <blockquote>
@@ -5037,6 +5059,12 @@
 <td style="text-align: left;">14 May 2026</td>
 <td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for use to evaluate and report back<br>  - SHA for Eversense is <code>d243638</code></td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="#feature-branch-omnipodkit-pump-manager">feat/omnipodkit</a><br>- SHA <code>TBD</code></td>
+<td style="text-align: left;">3.14.0</td>
+<td style="text-align: left;">TBD May 2026</td>
+<td style="text-align: left;">The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> testers<br>  - SHA for OmnipodKit is <code>TBD</code><br><strong>Please read <a href="#feature-branch-omnipodkit-pump-manager">Feature Branch: OmnipodKit Pump Manager</a></strong></td>
+</tr>
 </tbody>
 </table>
 <div class="admonition important">
@@ -5053,13 +5081,20 @@
 <h3 id="how-to-build-feature-branches">How to Build Feature Branches<a class="headerlink" href="#how-to-build-feature-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For full instructions on building different branches, review these pages:</p>
 <ul>
-<li><a href="../../browser/build-dev-browser/#build-development-version" target="_blank">Browser Build: Build a Version in Development</a></li>
+<li><a href="../../browser/build-dev-browser/#build-development-version" target="_blank">Browser Build: Build a Version in Development</a><ul>
+<li>For short-cut instructions on adding the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>: <a href="../../browser/build-dev-browser/#feature-branch" target="_blank">Feature Branch</a></li>
+</ul>
+</li>
 <li><a href="../../build/build-dev-mac/#build-other-branches" target="_blank">Mac <abbr title="program used to build an app">Xcode</abbr>: Build a Version in Development</a></li>
 </ul>
 <h4 id="browser-build">Browser Build<a class="headerlink" href="#browser-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Use the page linked above to add the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> name (from the table above) to your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. In other words, where the directions indicate the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name of interest.</p>
 <h4 id="mac-xcode-build">Mac-<abbr title="program used to build an app">Xcode</abbr> Build<a class="headerlink" href="#mac-xcode-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For Mac <abbr title="program used to build an app">Xcode</abbr> build, the lines you need to copy and paste into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window are explicitly provided below:</p>
+<div class="copy highlight"><span class="filename">Download and build the feat/omnipodkit branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>feat/omnipodkit
+</code></pre></div>
 <div class="copy highlight"><span class="filename">Download and build the feat/dev-dana-medtrum branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>-<span class="w"> </span>feat/dev-dana-medtrum
@@ -5079,8 +5114,50 @@
 </ul>
 </li>
 </ul>
+<h3 id="feature-branch-omnipodkit-pump-manager">Feature Branch: OmnipodKit Pump Manager<a class="headerlink" href="#feature-branch-omnipodkit-pump-manager" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You need to build the <code>feat/omnipodkit</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you want to test the new <code>All Omnipod Types</code> pump manager. Build instructions are found here: <a href="#how-to-build-feature-branches">How to Build Feature Branches</a>.</p>
+<p>This pump manager comes with improved user interface and user experience for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Classic (Eros) and DASH pods including</p>
+<ul>
+<li>Some layout adjustments</li>
+<li>Some new labels</li>
+<li>Some reworked sub-menus with added information or features</li>
+<li>WARNINGS<ul>
+<li>no translations added yet so English only for the initial roll-out</li>
+<li>no pod-keep-alive function added yet</li>
+</ul>
+</li>
+</ul>
+<p>The next time you change a pod, delete the pump manager you are using and add a new pump. See <a href="loop-3/add-pump.md#change-pump-type" target="_blank">Change Pump Type</a> for detailed instructions.</p>
+<ul>
+<li>Select <code>All Omnipod Types</code> as your new pump manager.</li>
+<li>Go through the onboarding of selecting notifications and reminders and insulin type.</li>
+<li>You will then be presented with a screen to select the type of pod. </li>
+<li>Choose the Classic (Eros) or DASH Pod type</li>
+</ul>
+<p>The underyling control code should be the same, but we want more people testing it to ensure this works as well as the older pod managers. The developers have been using it on themselves before making this publicly available.</p>
+<div class="admonition warning">
+<p class="admonition-title">Do not use with iPhone 16 or 17e and Atlas pods</p>
+<p>The new OmnipodKit does not have the pod-keep-alive feature incorporated. For now, if you use an iPhone 16 (any model) or iPhone 17e and have Atlas pods (the newer version for DASH pods), stick with the old <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH selection.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Why OmnipodKit?</p>
+<p>When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.</p>
+<p>A significant portion of the two repositories serve the same function. Whenever a fix or improvement was added to OmniBLE, it was duplicated and added to OmniKit. Having a universal pod manager saves significant developer resources.</p>
+<p>OmnipodKit provides the individual support needed for different <code>Pod Types</code> while using a single copy of code for most of the logic and user interface.</p>
+<p>The improvements that have been going on in the background landed in the new pump manager only - and were not replicated in the OmniKit or OmniBLE repositories.</p>
+<p>This will be a significant time saver for developers moving forward for updating code and adding support for new types of pods.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">feat/omnipodkit supports other plugins</p>
+<p>For the convenience of the developers and testers, this feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, feat/omnipodkit, also supports the new pump and cgm managers that are found in the other feature branches.</p>
+<p>In other words:</p>
+<ul>
+<li>Eversense is available as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
+<li>Dana and Medtrum are available as a pump, in addtion to OmnipodKit and all the older pump managers</li>
+</ul>
+</div>
 <h3 id="feature-branch-pod-keep-alive-feature">Feature Branch: Pod Keep Alive Feature<a class="headerlink" href="#feature-branch-pod-keep-alive-feature" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The feat/pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been deleted. It was updated and incorporated into the released code.</p>
+<p>The feat/pod-keep-alive <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been deleted. It was updated and incorporated into the released code. Please build the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> over your existing app. All your selections will remain as you configured them when building the <code>feat/pod-keep-alive</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>See <a href="../../loop-3/omnipod/#pod-keep-alive-feature" target="_blank">Pod Keep Alive Feature</a>.</p>
 <h3 id="feature-branch-dana-and-medtrum-support">Feature Branch: Dana and Medtrum Support<a class="headerlink" href="#feature-branch-dana-and-medtrum-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Anyone using Dana or Medtrum pumps must build one of these branches. The pump manager support is identical. The difference is the second one includes support for the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>. Build instructions are found here: <a href="#how-to-build-feature-branches">How to Build Feature Branches</a>.</p>
