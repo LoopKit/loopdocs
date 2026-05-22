@@ -236,12 +236,29 @@ When you get a new iPhone, you can plan ahead. There's a whole FAQs page about t
 Hey now...let's be grateful for what we have first. The ability to use the *Loop* app is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for any Open-Source Automated Insulin Deliver (OS-AID) system use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to the *Loop* app. You don't need to let us know that you'd love to see more pumps compatible with Loop; we know that. There is just an awful lot of work that needs to happen and it is neither quick nor easy.
 
 * Tandem pumps are not compatible (yet)
-* Omnipod 5 pods are not compatible
+* Omnipod 5 pods are not compatible (yet)
+* Dana pumps are available using a feature branch
+* Medtrum pumps are available using a feature branch
 * Newer Medtronic pumps are not compatible
 
 In fact there are several OS-AID systems for iOS which use a common set of pump and CGM repositories. And new ones are being developed.
 
 This [link](../build/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS OS-AID community. You need to consider which ones are available in your country.
+
+- - -
+
+## How do I return to the released version?
+
+Great question.
+
+Sometimes people build the `dev` branch to get a shiny new feature. But you should not stay on the `dev` branch unless you are dedicated to testing new features and following along carefully on [zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development).
+
+Most people need to build the released version of the *Loop* app found at the `main` branch and let the testing community give new features - or major updates of the *Loop* app - thorough testing before these updates are released in the `main` branch.
+
+As a matter of fact, with version 3.14.1 and newer - you will see a modal alert you must acknowledge when you start up the *Loop* app built from the `dev` branch. Note that the `dev` branch is the only branch that gets this alert. If you built a feature branch, we assume you know you are testing that feature and that you expect frequent updates.
+
+* See this link for [Browser Build Instructions](../browser/bb-update.md#restore-default-branch-to-main-and-build)
+* If you use Mac-Xcode, just follow the [standard update instructions](../build/updating.md) to ensure you are ready to download and build the `main` branch
 
 - - -
 

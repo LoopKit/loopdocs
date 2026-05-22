@@ -334,6 +334,31 @@ Option 2: If you chose to enable Automatic Updates from *TestFlight* for the *Lo
 
 ## Other Information
 
+### Restore Default Branch to `main` and Build
+
+If you build using the Browser Build method but have any branch other than `main` selected as your default build, please think twice. Using the `dev` branch is only for people wha are actively testing. If you need something from a feature branch, be sure to switch back to `main` once the feature is added to the released code. (Hint - when this happens, the feature branch is deleted.)
+
+To change your default branch, follow these directions. The example is changing from `dev` to `main`.
+
+Open your LoopWorkspace fork. The graphic below shows what the fork looks like when the `dev` branch is the default. If yours shows `main` at the location labeled with a "1", then simply do a [fresh build](bb-update.md#how-to-update-or-rebuild){: target="_blank" } using the `main` branch and install it on your phone from TestFlight.
+
+![graphic showing fork with dev branch as default](../browser/img/change-branch-check-branch.svg){width="750"}
+{align="center"}
+
+If your branch shows as `dev` then click on Settings, as indicated by the rectangle labeled with a "2" in the graphic above.
+
+Follow the numbered sequence in the graphic below:
+
+1. Click on the left/right arrows
+2. Select the `main` branch in the drop-down menu
+3. Click on "Update"
+4. Click on "I understand, update the default branch"
+
+![graphic showing fork with dev branch as default](../browser/img/change-branch-change-default.svg){width="750"}
+{align="center"}
+
+Do a [fresh build](../browser/bb-update.md#how-to-update-or-rebuild){: target="_blank" } using the `main` branch and install it on your phone from TestFlight.
+
 ### Choose Previous Build
 
 If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.
