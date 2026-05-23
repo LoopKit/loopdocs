@@ -4993,15 +4993,30 @@
   <h1>Loop Development</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The early history of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app was touched on in the introductory <a href="../../intro/overview-intro/#development-history"><em>LoopDocs</em> Overview: Development History</a> section.</p>
-<p>The <a href="../releases/"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Releases</a> page lists releases since version 2.0 in reverse chronological order.</p>
-<p>The next version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is developed using <abbr title="version of code within a single repository or workspace repository">branch</abbr>(es), independent of the released <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> version, which is found in <span>the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span>. </p>
-<p><span>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></span> is used by the developers to push out changes for users to test. You should only test a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is improved.</p>
-<p>If you choose to use <code>dev</code>, you accept that this code is not released.</p>
+<p>The early history of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app was touched on in the introductory <a href="../../intro/overview-intro/#development-history" target="_blank"><em>LoopDocs</em> Overview: Development History</a> section.</p>
+<p>The <a href="../releases/" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Releases</a>  page lists releases since version 3.0 in reverse chronological order. For older release history, check out <a href="../releases-version2/" target="_blank"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 2 and older</a> .</p>
+<p>The current released version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is always in the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr>.</p>
+<p>The next version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is developed using branches. </p>
+<ul>
+<li>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is used by the developers to push out changes for users to test before that code is released<ul>
+<li>Sometimes there are breaking changes in <code>dev</code></li>
+<li>A breaking change is when you can build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> over your existing app, but cannot leave the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> without deleting your app from your phone</li>
+<li>It's been a few years since this happened (when we went from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> 2 to <abbr title="Latest release with major updates">Loop 3</abbr>), but it will be happening again soon with an upcoming merge from Tidepool</li>
+</ul>
+</li>
+<li>In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>You should only test a development or feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> if you are willing to be an active participant with the developers:<ul>
+<li><a href="https://loop.zulipchat.com/#narrow/channel/144182-development">Monitor announcements in zulipchat</a> </li>
+<li>Provide feedback</li>
+<li>Build frequently to obtain the latest feature or bug-fix that is being tested</li>
+</ul>
+</li>
+<li>If you are willing to help out - this is the way the next release of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> is improved.</li>
+</ul>
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section provides an overview of changes to <code>dev</code> compared to <code>Loop v3.14.0</code>. </p>
-<p>The current version of <code>dev</code> is v3.14.0 with code identical to that in the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<p>This section provides an overview of changes to <code>dev</code> compared to the current release: <code>Loop v3.14.0</code>. </p>
+<p>The current version of <code>dev</code> is v3.14.1. It is functionally identical the released code. The only difference is we added an alert you must acknowledge if you are running the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h3 id="branches">Branches<a class="headerlink" href="#branches" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.</p>
@@ -5043,9 +5058,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
-<td style="text-align: left;">3.14.0</td>
-<td style="text-align: left;">14 May 2026</td>
-<td style="text-align: left;">code is currently the same as <code>main</code></td>
+<td style="text-align: left;">3.14.1</td>
+<td style="text-align: left;">23 May 2026</td>
+<td style="text-align: left;">functionally the same as <code>main</code><br>3.14.1: <a href="https://github.com/LoopKit/LoopWorkspace/pull/452#top"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 452</a> add alert about dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="#feature-branch-dana-and-medtrum-support">feat/dev-dana-medtrum</a> <br>- SHA <code>638d351</code></td>
