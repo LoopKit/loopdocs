@@ -1,22 +1,31 @@
 ## Overview
 
-The early history of the *Loop* app was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history) section.
+The early history of the *Loop* app was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history){: target="_blank"} section.
 
-The [*Loop* Releases](../version/releases.md) page lists releases since version 2.0 in reverse chronological order.
+The [*Loop* Releases](releases.md){: target="_blank"}  page lists releases since version 3.0 in reverse chronological order. For older release history, check out [*Loop* 2 and older](releases-v2.md){: target="_blank"} .
 
-The next version of the *Loop* app is developed using branch(es), independent of the released *Loop* version, which is found in <span>the `main` branch</span>. 
+The current released version of the *Loop* app is always in the `main` branch of the LoopWorkspace repository.
 
-<span>The `dev` branch</span> is used by the developers to push out changes for users to test. You should only test a development branch if you are willing to be both an active participant with the developers to monitor announcements and provide feedback and to build frequently to obtain the latest feature or bug-fix that is being tested. If you are willing to help out - this is the way the next release of *Loop* is improved.
+The next version of the *Loop* app is developed using branches. 
 
-If you choose to use `dev`, you accept that this code is not released.
+* The `dev` branch is used by the developers to push out changes for users to test before that code is released
+    * Sometimes there are breaking changes in `dev`
+    * A breaking change is when you can build the `dev` branch over your existing app, but cannot leave the `dev` branch without deleting your app from your phone
+    * It's been a few years since this happened (when we went from Loop 2 to Loop 3), but it will be happening again soon with an upcoming merge from Tidepool
+* In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the `dev` branch
+* You should only test a development or feature branch if you are willing to be an active participant with the developers:
+    * [Monitor announcements in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) 
+    * Provide feedback
+    * Build frequently to obtain the latest feature or bug-fix that is being tested
+* If you are willing to help out - this is the way the next release of *Loop* is improved.
 
 Please read this entire page before using any version of *Loop* other than the released code.
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to `Loop v3.14.0`. 
+This section provides an overview of changes to `dev` compared to the current release: `Loop v3.14.0`. 
 
-The current version of `dev` is v3.14.0 with code identical to that in the `main` branch.
+The current version of `dev` is v3.14.1. It is functionally identical the released code. The only difference is we added an alert you must acknowledge if you are running the `dev` branch.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -45,7 +54,7 @@ The table below lists active branches. Note that updates may occur and be announ
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
-| dev | 3.14.0 | 14 May 2026 | code is currently the same as `main` |
+| dev | 3.14.1 | 23 May 2026 | functionally the same as `main`<br>3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch |
 | [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `638d351` | 3.14.0  | 14 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `c544c42`<br>  - SHA for MedtrumKit is `6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `059caf5` | 3.14.0  | 15 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `fe322a6` |
 | [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `553bf36` | 3.14.0 | 15 May 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA for OmnipodKit is `9bf676e`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
