@@ -2,7 +2,7 @@
 
 The early history of the *Loop* app was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history){: target="_blank"} section.
 
-The [*Loop* Releases](releases.md){: target="_blank"}  page lists releases since version 3.0 in reverse chronological order. For older release history, check out [*Loop* 2 and older](releases-v2.md){: target="_blank"} .
+The [*Loop* Releases](releases.md){: target="_blank"}  page lists releases since version 3.0 in reverse chronological order. For older release history, check out [*Loop* 2 and older](releases-version2.md){: target="_blank"} .
 
 The current released version of the *Loop* app is always in the `main` branch of the LoopWorkspace repository.
 
