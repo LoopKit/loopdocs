@@ -1534,6 +1534,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#restore-default-branch-to-main-and-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restore Default Branch to main and Build
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#choose-previous-build" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4854,6 +4865,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#restore-default-branch-to-main-and-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restore Default Branch to main and Build
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#choose-previous-build" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5321,6 +5343,21 @@
 <li>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above, the message will say <code>Open</code> instead of <code>Install</code></li>
 </ul>
 <h2 id="other-information">Other Information<a class="headerlink" href="#other-information" title="Anchor link to this Header on this Page">&para;</a></h2>
+<h3 id="restore-default-branch-to-main-and-build">Restore Default Branch to <code>main</code> and Build<a class="headerlink" href="#restore-default-branch-to-main-and-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If you build using the Browser Build method but have any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than <code>main</code> selected as your default build, please think twice. Using the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is only for people wha are actively testing. If you need something from a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, be sure to switch back to <code>main</code> once the feature is added to the released code. (Hint - when this happens, the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> is deleted.)</p>
+<p>To change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, follow these directions. The example is changing from <code>dev</code> to <code>main</code>.</p>
+<p>Open your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>. The graphic below shows what the <abbr title="a copy of code in a github repository other than the original">fork</abbr> looks like when the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the default. If yours shows <code>main</code> at the location labeled with a "1", then simply do a <a href="./#how-to-update-or-rebuild" target="_blank">fresh build</a> using the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and install it on your phone from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
+<p align="center"><img alt="graphic showing fork with dev branch as default" src="../img/change-branch-check-branch.svg" width="750" /></p>
+<p>If your <abbr title="version of code within a single repository or workspace repository">branch</abbr> shows as <code>dev</code> then click on Settings, as indicated by the rectangle labeled with a "2" in the graphic above.</p>
+<p>Follow the numbered sequence in the graphic below:</p>
+<ol>
+<li>Click on the left/right arrows</li>
+<li>Select the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the drop-down menu</li>
+<li>Click on "Update"</li>
+<li>Click on "I understand, update the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>"</li>
+</ol>
+<p align="center"><img alt="graphic showing fork with dev branch as default" src="../img/change-branch-change-default.svg" width="750" /></p>
+<p>Do a <a href="./#how-to-update-or-rebuild" target="_blank">fresh build</a> using the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and install it on your phone from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h3 id="choose-previous-build">Choose Previous Build<a class="headerlink" href="#choose-previous-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.</p>
 <p>This section provides detailed instructions if you want to choose a previous build to install on your phone. Typically, the most recent build is selected but there may be special cases:</p>
