@@ -106,7 +106,7 @@ pyee==13.0.0
     # via playwright
 pygments==2.20.0
     # via mkdocs-material
-pymdown-extensions==10.20.1
+pymdown-extensions==10.21.3
     # via mkdocs-material
 pypdf==6.10.2
     # via mkdocs-exporter
