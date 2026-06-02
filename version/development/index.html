@@ -5063,22 +5063,22 @@
 <td style="text-align: left;">functionally the same as <code>main</code><br>3.14.1: <a href="https://github.com/LoopKit/LoopWorkspace/pull/452#top"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 452</a> add alert about dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-dana-and-medtrum-support">feat/dev-dana-medtrum</a> <br>- SHA <code>638d351</code></td>
-<td style="text-align: left;">3.14.0</td>
-<td style="text-align: left;">14 May 2026</td>
-<td style="text-align: left;">- adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is <code>c544c42</code><br>  - SHA for MedtrumKit is <code>6060747</code><br><strong>Medtrum User Interface Redesigned</strong> to be more like the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit</td>
+<td style="text-align: left;"><a href="#feature-branch-dana-and-medtrum-support">feat/dev-dana-medtrum</a> <br>- SHA <code>e0331eb</code></td>
+<td style="text-align: left;">3.14.1</td>
+<td style="text-align: left;">26 May 2026</td>
+<td style="text-align: left;">- adds support for Dana and Medtrum pumps<br>  - SHA  <code>DanaKit @ c544c42</code><br>  - SHA <code>MedtrumKit @ 6060747</code><br><strong>Medtrum User Interface Redesigned</strong> to be more like the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>059caf5</code></td>
-<td style="text-align: left;">3.14.0</td>
-<td style="text-align: left;">15 May 2026</td>
-<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for use to evaluate and report back<br>  - SHA for Eversense is <code>fe322a6</code></td>
+<td style="text-align: left;"><a href="#feature-branch-eversense-support">feat/eversense</a> <br>- SHA <code>e909b2e</code></td>
+<td style="text-align: left;">3.14.1</td>
+<td style="text-align: left;">26 May 2026</td>
+<td style="text-align: left;">- adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is ready for use to evaluate and report back<br>  - SHA <code>EversenseKit @ 43b8080</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="#feature-branch-omnipodkit-pump-manager">feat/omnipodkit</a><br>- SHA <code>553bf36</code></td>
-<td style="text-align: left;">3.14.0</td>
-<td style="text-align: left;">15 May 2026</td>
-<td style="text-align: left;">The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> testers<br>  - SHA for OmnipodKit is <code>9bf676e</code><br><strong>Please read <a href="#feature-branch-omnipodkit-pump-manager">Feature Branch: OmnipodKit Pump Manager</a></strong></td>
+<td style="text-align: left;"><a href="#feature-branch-omnipodkit-pump-manager">feat/omnipodkit</a><br>- SHA <code>a625519</code></td>
+<td style="text-align: left;">3.14.1</td>
+<td style="text-align: left;">01 June 2026</td>
+<td style="text-align: left;">The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> testers<br>  - SHA <code>OmnipodKit @ c04c4d4</code><br><strong>Please read <a href="#feature-branch-omnipodkit-pump-manager">Feature Branch: OmnipodKit Pump Manager</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -5136,11 +5136,6 @@
 <li>Some layout adjustments</li>
 <li>Some new labels</li>
 <li>Some reworked sub-menus with added information or features</li>
-<li>WARNINGS<ul>
-<li>no translations added yet so English only for the initial roll-out</li>
-<li>no pod-keep-alive function added yet</li>
-</ul>
-</li>
 </ul>
 <p>The next time you change a pod, delete the pump manager you are using and add a new pump. See <a href="loop-3/add-pump.md#change-pump-type" target="_blank">Change Pump Type</a> for detailed instructions.</p>
 <ul>
@@ -5150,10 +5145,6 @@
 <li>Choose the Classic (Eros) or DASH Pod type</li>
 </ul>
 <p>The underyling control code should be the same, but we want more people testing it to ensure this works as well as the older pod managers. The developers have been using it on themselves before making this publicly available.</p>
-<div class="admonition warning">
-<p class="admonition-title">Do not use with iPhone 16 or 17e and Atlas pods</p>
-<p>The new OmnipodKit does not have the pod-keep-alive feature incorporated. For now, if you use an iPhone 16 (any model) or iPhone 17e and have Atlas pods (the newer version for DASH pods), stick with the old <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH selection.</p>
-</div>
 <div class="admonition question">
 <p class="admonition-title">Why OmnipodKit?</p>
 <p>When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.</p>
