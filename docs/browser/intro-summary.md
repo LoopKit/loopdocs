@@ -222,9 +222,21 @@ ENABLE_NUKE_CERTS = true
 With release of Loop 3.6.0:
   this variable is needed to automatically renew your certificates when they expire.
 
+## Repository Names for my Fork:
+
+If you use an organization (recommended)
+https://github.com/my-name-org/LoopWorkspace
+
+or (if you don't use an organzation):
+https://github.com/my-name/LoopWorkspace
+
 ## REMOTE COMMAND INFORMATION:
 
-If you use LoopFollow for remote commands, this information gets added to the LoopFollow app.  If you use LoopCaregiver or Nightscout for remote commands, this information gets added to your Nightscout config-vars.  https://loopkit.github.io/loopdocs/nightscout/remote-config/#step-2-apple-push-notifications
+If you use LoopFollow for remote commands, this information gets added to
+  the LoopFollow app.
+If you use LoopCaregiver or Nightscout for remote commands, this
+  information gets added to your Nightscout config-vars.
+https://loopkit.github.io/loopdocs/nightscout/remote-config/#step-2-apple-push-notifications
 
 LOOP_APNS_KEY
 <looks like this - include the entire key>
@@ -251,8 +263,9 @@ This is the same as the TEAMID as above.
 <looks like this>
 AAAAAAAAAA
 
-LOOP_PUSH_SERVER_ENVIRONMENT is used only if you use TestFlight for your Loop app, 
-regardless of whether you use the Browser Build or use Xcode to distribute via TestFlight.
+LOOP_PUSH_SERVER_ENVIRONMENT is used only if you use TestFlight
+  for your Loop app, regardless of whether you use the Browser Build
+  or use Xcode to distribute via TestFlight.
 
 If you build from Mac-Xcode directly to a phone, do not include this config-var
 
@@ -261,7 +274,8 @@ LOOP_PUSH_SERVER_ENVIRONMENT = production
 
 ## NIGHTSCOUT INFORMATION
 
-How this inforation gets added to your Nightscout config-vars will be different depending on whether you build it yourself or pay a vendor.
+How this inforation gets added to your Nightscout config-vars depends
+  on whether you build it yourself or pay a vendor.
 
 PLACEHOLDER FOR YOUR SPECIFIC INFO, e.g., vendor, username
 
@@ -276,7 +290,7 @@ choose-something-hard-to-guess
 * must contain at least 12 characters and is case-sensitive
 * hint: don’t make it too long, best to use letters and numbers,
   best to avoid special characters
-
+```
 
 ## New Terms with <code>*GitHub* Browser Build</code>
 
