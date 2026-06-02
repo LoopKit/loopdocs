@@ -90,11 +90,9 @@ When Google Translate is selected:
 
 **<span translate="no">fastlane</span>**&nbsp; (fastlane): used as part of the GitHub Build Action method that enables building Loop without a Mac computer or Xcode
 
-**<span translate="no">fork</span>**&nbsp; (fork): a copy of code in a GitHub repository other than the original
-
 **<span translate="no">Finder</span>**&nbsp; (Finder): graphical folder and file display on Mac
 
-**<span translate="no">fork</span>**&nbsp; (fork): a copy of code in a github repository other than the original
+**<span translate="no">fork</span>**&nbsp; (fork): a copy of code in a GitHub repository other than the original
 
 **<span translate="no">GBPA</span>**&nbsp; (GBPA): Glucose Based Partial Application: modification to Automatic Bolus Dosing Strategy
 
@@ -240,7 +238,7 @@ When Google Translate is selected:
 
 **<span translate="no">Therapy Settings</span>**&nbsp; (Therapy Settings): Basal Rates, ISF, CR, correction and safety ranges and delivery limits
 
-**<span translate="no">Tokens</span>**&nbsp; (Tokens): in Nightscout Admin Tools, configure access permissions using tokens 
+**<span translate="no">Tokens</span>**&nbsp; (Tokens): in Nightscout Admin Tools, configure access permissions using tokens
 
 **<span translate="no">Tooltip</span>**&nbsp; (Tooltip): brief definitions provided for important terms and abbreviations on the website
 
