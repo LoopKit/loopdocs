@@ -146,7 +146,7 @@ You don't need to know anything about the <code>Secrets</code> to do this. Come 
     * There is a reference pattern for each SECRET: replace that with your SECRET or you can add your secret below the pattern to give yourself confidence you got the correct item
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
-6. If you use Loop's remote commands, you will need the APNS_KEY and APNS_KEY_ID, which are included at the bottom of this template. 
+6. If you use Loop's remote commands, you will need the APNS_KEY and APNS_KEY_ID, which are included at the bottom of this template
 
 ``` { .bash .copy title="Template to use for Secrets" }
 MySecretsReferenceFile.txt
@@ -229,6 +229,8 @@ https://github.com/my-name-org/LoopWorkspace
 
 or (if you don't use an organzation):
 https://github.com/my-name/LoopWorkspace
+
+Add additional apps here if you decide to build any
 
 ## REMOTE COMMAND INFORMATION:
 
