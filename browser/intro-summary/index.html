@@ -4811,7 +4811,7 @@
 </li>
 <li>In addition to the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, this template has places for other pieces of information you may find handy to save in the same file</li>
 <li>At the very beginning is a place to indicate the last day you updated the file</li>
-<li>If you use <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>, you may also want the <a href="../../nightscout/remote-config/#save-your-important-nightscout-information" target="_blank"><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> template</a></li>
+<li>If you use <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>'s remote commands, you will need the APNS_KEY and APNS_KEY_ID, which are included at the bottom of this template</li>
 </ol>
 <div class="copy highlight"><span class="filename">Template to use for Secrets</span><pre><span></span><code>MySecretsReferenceFile.txt
 
@@ -4891,11 +4891,71 @@ With<span class="w"> </span>release<span class="w"> </span>of<span class="w"> </
 If<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>an<span class="w"> </span>organization<span class="w"> </span><span class="o">(</span>recommended<span class="o">)</span>
 https://github.com/my-name-org/LoopWorkspace
 
-or<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>don<span class="err">&#39;</span>t<span class="w"> </span>use<span class="w"> </span>an<span class="w"> </span>organzation<span class="o">)</span>:<span class="w"> </span>
+or<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>don<span class="err">&#39;</span>t<span class="w"> </span>use<span class="w"> </span>an<span class="w"> </span>organzation<span class="o">)</span>:
 https://github.com/my-name/LoopWorkspace
 
-
 Add<span class="w"> </span>additional<span class="w"> </span>apps<span class="w"> </span>here<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>decide<span class="w"> </span>to<span class="w"> </span>build<span class="w"> </span>any
+
+<span class="c1">## REMOTE COMMAND INFORMATION:</span>
+
+If<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>LoopFollow<span class="w"> </span><span class="k">for</span><span class="w"> </span>remote<span class="w"> </span>commands,<span class="w"> </span>this<span class="w"> </span>information<span class="w"> </span>gets<span class="w"> </span>added<span class="w"> </span>to
+<span class="w">  </span>the<span class="w"> </span>LoopFollow<span class="w"> </span>app.
+If<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>LoopCaregiver<span class="w"> </span>or<span class="w"> </span>Nightscout<span class="w"> </span><span class="k">for</span><span class="w"> </span>remote<span class="w"> </span>commands,<span class="w"> </span>this
+<span class="w">  </span>information<span class="w"> </span>gets<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>Nightscout<span class="w"> </span>config-vars.
+https://loopkit.github.io/loopdocs/nightscout/remote-config/#step-2-apple-push-notifications
+
+LOOP_APNS_KEY
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this<span class="w"> </span>-<span class="w"> </span>include<span class="w"> </span>the<span class="w"> </span>entire<span class="w"> </span>key&gt;
+-----BEGIN<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END<span class="w"> </span>PRIVATE<span class="w"> </span>KEY-----
+
+LOOP_APNS_KEY_ID
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAAAA
+
+If<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>Browser<span class="w"> </span>Build<span class="w"> </span>method,<span class="w"> </span>you<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>careful<span class="w"> </span>not<span class="w"> </span>to<span class="w"> </span>mix<span class="w"> </span>
+up<span class="w"> </span>your<span class="w"> </span>keys.
+The<span class="w"> </span>APNS<span class="w"> </span>Key<span class="w"> </span><span class="k">for</span><span class="w"> </span>Remote<span class="w"> </span>Commands<span class="w"> </span>is<span class="w"> </span>an<span class="w"> </span>Apple<span class="w"> </span>Push<span class="w"> </span>Notification<span class="w"> </span>Key.
+It<span class="w"> </span>may<span class="w"> </span>look<span class="w"> </span>like<span class="w"> </span>the<span class="w"> </span>FASTLANE_KEY<span class="w"> </span>used<span class="w"> </span><span class="k">for</span><span class="w"> </span>Browser<span class="w"> </span>Build,<span class="w"> </span>
+but<span class="w"> </span>it<span class="w"> </span>is<span class="w"> </span>completely<span class="w"> </span>different.
+You<span class="w"> </span>need<span class="w"> </span>both<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span>using<span class="w"> </span>remote<span class="w"> </span>features<span class="o">)</span>.<span class="w"> </span>Do<span class="w"> </span>NOT<span class="w"> </span>get<span class="w"> </span>them<span class="w"> </span>mixed<span class="w"> </span>up.
+
+LOOP_DEVELOPER_TEAM_ID
+This<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>same<span class="w"> </span>as<span class="w"> </span>the<span class="w"> </span>TEAMID<span class="w"> </span>as<span class="w"> </span>above.
+&lt;looks<span class="w"> </span>like<span class="w"> </span>this&gt;
+AAAAAAAAAA
+
+LOOP_PUSH_SERVER_ENVIRONMENT<span class="w"> </span>is<span class="w"> </span>used<span class="w"> </span>only<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>TestFlight
+<span class="w">  </span><span class="k">for</span><span class="w"> </span>your<span class="w"> </span>Loop<span class="w"> </span>app,<span class="w"> </span>regardless<span class="w"> </span>of<span class="w"> </span>whether<span class="w"> </span>you<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>Browser<span class="w"> </span>Build
+<span class="w">  </span>or<span class="w"> </span>use<span class="w"> </span>Xcode<span class="w"> </span>to<span class="w"> </span>distribute<span class="w"> </span>via<span class="w"> </span>TestFlight.
+
+If<span class="w"> </span>you<span class="w"> </span>build<span class="w"> </span>from<span class="w"> </span>Mac-Xcode<span class="w"> </span>directly<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>phone,<span class="w"> </span><span class="k">do</span><span class="w"> </span>not<span class="w"> </span>include<span class="w"> </span>this<span class="w"> </span>config-var
+
+<span class="nv">LOOP_PUSH_SERVER_ENVIRONMENT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>production
+
+
+<span class="c1">## NIGHTSCOUT INFORMATION</span>
+
+How<span class="w"> </span>this<span class="w"> </span>inforation<span class="w"> </span>gets<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>Nightscout<span class="w"> </span>config-vars<span class="w"> </span>depends
+<span class="w">  </span>on<span class="w"> </span>whether<span class="w"> </span>you<span class="w"> </span>build<span class="w"> </span>it<span class="w"> </span>yourself<span class="w"> </span>or<span class="w"> </span>pay<span class="w"> </span>a<span class="w"> </span>vendor.
+
+PLACEHOLDER<span class="w"> </span>FOR<span class="w"> </span>YOUR<span class="w"> </span>SPECIFIC<span class="w"> </span>INFO,<span class="w"> </span>e.g.,<span class="w"> </span>vendor,<span class="w"> </span>username
+
+The<span class="w"> </span>URL<span class="w"> </span>will<span class="w"> </span>always<span class="w"> </span>start<span class="w"> </span>with<span class="w"> </span>https://
+
+https://your-nightscout-site
+
+API_SECRET
+
+choose-something-hard-to-guess
+
+*<span class="w"> </span>must<span class="w"> </span>contain<span class="w"> </span>at<span class="w"> </span>least<span class="w"> </span><span class="m">12</span><span class="w"> </span>characters<span class="w"> </span>and<span class="w"> </span>is<span class="w"> </span><span class="k">case</span>-sensitive
+*<span class="w"> </span>hint:<span class="w"> </span>don’t<span class="w"> </span>make<span class="w"> </span>it<span class="w"> </span>too<span class="w"> </span>long,<span class="w"> </span>best<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>letters<span class="w"> </span>and<span class="w"> </span>numbers,
+<span class="w">  </span>best<span class="w"> </span>to<span class="w"> </span>avoid<span class="w"> </span>special<span class="w"> </span>characters
 </code></pre></div>
 <h2 id="new-terms-with-github-browser-build">New Terms with <code><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser Build</code><a class="headerlink" href="#new-terms-with-github-browser-build" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The <code><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Browser Build</code> may use new and unfamiliar <strong>terms</strong>.</p>
