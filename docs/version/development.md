@@ -55,9 +55,9 @@ The table below lists active branches. Note that updates may occur and be announ
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
 | dev | 3.14.1 | 23 May 2026 | functionally the same as `main`<br>3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch |
-| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `638d351` | 3.14.0  | 14 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA for DanaKit is `c544c42`<br>  - SHA for MedtrumKit is `6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
-| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `059caf5` | 3.14.0  | 15 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA for Eversense is `fe322a6` |
-| [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `553bf36` | 3.14.0 | 15 May 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA for OmnipodKit is `9bf676e`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
+| [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `e0331eb` | 3.14.1  | 26 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA  `DanaKit @ c544c42`<br>  - SHA `MedtrumKit @ 6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
+| [feat/eversense](#feature-branch-eversense-support) <br>- SHA `e909b2e` | 3.14.1  | 26 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA `EversenseKit @ 43b8080` |
+| [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `a625519` | 3.14.1 | 01 June 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA `OmnipodKit @ c04c4d4`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -126,9 +126,6 @@ This pump manager comes with improved user interface and user experience for Omn
 * Some layout adjustments
 * Some new labels
 * Some reworked sub-menus with added information or features
-* WARNINGS
-    - no translations added yet so English only for the initial roll-out
-    - no pod-keep-alive function added yet
 
 The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
 
@@ -138,9 +135,6 @@ The next time you change a pod, delete the pump manager you are using and add a 
 * Choose the Classic (Eros) or DASH Pod type
 
 The underyling control code should be the same, but we want more people testing it to ensure this works as well as the older pod managers. The developers have been using it on themselves before making this publicly available.
-
-!!! warning "Do not use with iPhone 16 or 17e and Atlas pods"
-    The new OmnipodKit does not have the pod-keep-alive feature incorporated. For now, if you use an iPhone 16 (any model) or iPhone 17e and have Atlas pods (the newer version for DASH pods), stick with the old Omnipod DASH selection.
 
 !!! question "Why OmnipodKit?"
     When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
