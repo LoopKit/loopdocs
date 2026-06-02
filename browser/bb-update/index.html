@@ -5122,7 +5122,7 @@
 </blockquote>
 <p>You will (1) run <a href="#add-identifiers"><code>Add Identifiers</code></a>, (2) <a href="#add-app-group-to-new-identifier">add the <code>App Group</code></a> to the new identifier, (3) run <a href="#create-certificates"><code>Create Certificates</code></a> and then (4) run <a href="#build-the-app"><code>Build Loop</code></a>.</p>
 <h4 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
+<p>In your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> of LoopWorkspace:</p>
 <ul>
 <li>Run the Action: <code>Add Identifier</code></li>
 <li>Wait for it to succeed</li>
@@ -5222,8 +5222,8 @@
 <p>When updating to version 3.6.0, there are two "extra" things to do.</p>
 <ul>
 <li><a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to enable automatic renewal of certificates</li>
-<li>Manually update (sync) the <abbr title="a copy of code in a github repository other than the original">fork</abbr> - as described in this section<ul>
-<li>With automatic build, you typically let the automatic process update the <abbr title="a copy of code in a github repository other than the original">fork</abbr> for you</li>
+<li>Manually update (sync) the <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> - as described in this section<ul>
+<li>With automatic build, you typically let the automatic process update the <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> for you</li>
 <li>In this case, a third-party <abbr title="contains project files and each file's revision history">repository</abbr> was removed by <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> at the same time version 3.6.0 was released - this change prevented any builds from working - including the automatic sync that normally happens</li>
 </ul>
 </li>
@@ -5346,7 +5346,7 @@
 <h3 id="restore-default-branch-to-main-and-build">Restore Default Branch to <code>main</code> and Build<a class="headerlink" href="#restore-default-branch-to-main-and-build" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>If you build using the Browser Build method but have any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than <code>main</code> selected as your default build, please think twice. Using the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is only for people wha are actively testing. If you need something from a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, be sure to switch back to <code>main</code> once the feature is added to the released code. (Hint - when this happens, the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> is deleted.)</p>
 <p>To change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, follow these directions. The example is changing from <code>dev</code> to <code>main</code>.</p>
-<p>Open your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr>. The graphic below shows what the <abbr title="a copy of code in a github repository other than the original">fork</abbr> looks like when the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the default. If yours shows <code>main</code> at the location labeled with a "1", then simply do a <a href="./#how-to-update-or-rebuild" target="_blank">fresh build</a> using the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and install it on your phone from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
+<p>Open your LoopWorkspace <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>. The graphic below shows what the <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> looks like when the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the default. If yours shows <code>main</code> at the location labeled with a "1", then simply do a <a href="./#how-to-update-or-rebuild" target="_blank">fresh build</a> using the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> and install it on your phone from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <p align="center"><img alt="graphic showing fork with dev branch as default" src="../img/change-branch-check-branch.svg" width="750" /></p>
 <p>If your <abbr title="version of code within a single repository or workspace repository">branch</abbr> shows as <code>dev</code> then click on Settings, as indicated by the rectangle labeled with a "2" in the graphic above.</p>
 <p>Follow the numbered sequence in the graphic below:</p>
@@ -5493,7 +5493,7 @@
 <li>You can do this several ways, but one method is demonstrated by the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
 <li>Open the <abbr title="website address (Uniform Resource Locator)">URL</abbr> for your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account (address is <code>https://github.com/username</code> where <code>username</code> is replaced by your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username</li>
 <li>Click on the Repositories Tab</li>
-<li>Select <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></li>
+<li>Select <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr></li>
 </ul>
 <p align="center"><img alt="navigate to your Match-Secrets repository" src="../img/match-secrets-nav.gif" width="650" /></p>
 </li>
@@ -5511,7 +5511,7 @@
 </div>
 </li>
 <li>
-<p>While still within your <em>Github</em> account, navigate to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace.</p>
+<p>While still within your <em>Github</em> account, navigate to your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> of LoopWorkspace.</p>
 <ul>
 <li>You can do this several ways, but one method is demonstrated by the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
 <li>Click on your username and then <code>Repositories</code> and select <code>LoopWorkspace</code></li>

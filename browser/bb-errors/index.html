@@ -5747,7 +5747,7 @@
 <p>There are no local code signing identities found.</p>
 <p>security: SecItemCopyMatching: The specified item could not be found in the keychain.</p>
 </blockquote>
-<p>This is normal. The next steps will set up a keychain for you using your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> and your <abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr> passphrase.</p>
+<p>This is normal. The next steps will set up a keychain for you using your <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> and your <abbr title="One of 6 Secrets: GitHub repository encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr> passphrase.</p>
 <h4 id="where-to-find-the-certificate-solutions">Where to find the <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Solutions<a class="headerlink" href="#where-to-find-the-certificate-solutions" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Head over to <a href="#action-create-certificates-errors">Action: Create <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> Errors</a> and find your specific error.</p>
 <h3 id="new-builder-build-errors">New Builder: Build Errors<a class="headerlink" href="#new-builder-build-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -5822,7 +5822,7 @@
 <p align="center"><img alt="graphic showing validate secret error messages" src="../img/error-annotations-validate-secrets.gif" width="800" /></p>
 <p>Notice that&nbsp;<span translate="no"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Action: 1. Validate <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></span>&nbsp;is broken into three jobs each of which will either pass and show a green check or fail and show a red check. The secrets are validated with each action.</p>
 <h3 id="annotation-without-clear-message-certificates">Annotation without Clear Message (<em>Certificates</em>)<a class="headerlink" href="#annotation-without-clear-message-certificates" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This section is left here for those who have an older version (3.4 or older) in their <abbr title="a copy of code in a github repository other than the original">fork</abbr>.</p>
+<p>This section is left here for those who have an older version (3.4 or older) in their <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>.</p>
 <blockquote>
 <p>If you have updated to 3.6.0 or newer, refer to <a href="#rebuild-errors-quick-reference">Rebuild Errors: Quick Reference</a> and ignore this section.</p>
 </blockquote>
@@ -6054,8 +6054,8 @@
 <blockquote>
 <p><code>Couldn't decrypt the repo, please make sure you enter the right password</code></p>
 </blockquote>
-<p>If you know you entered the incorrect <code><abbr title="One of 6 Secrets: Git repo encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr></code> in your <abbr title="contains project files and each file's revision history">repository</abbr> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, go and fix it now and try again.</p>
-<p>Otherwise, you need to follow the steps to <a href="#delete-match-secrets">Delete <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a>.</p>
+<p>If you know you entered the incorrect <code><abbr title="One of 6 Secrets: GitHub repository encryption passphrase, used to encrypt the Match-Secrets repository when it is created. You must save and use the same MATCH_PASSWORD for every repository if you build multiple apps.">MATCH_PASSWORD</abbr></code> in your <abbr title="contains project files and each file's revision history">repository</abbr> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>, go and fix it now and try again.</p>
+<p>Otherwise, you need to follow the steps to <a href="#delete-match-secrets">Delete <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr></a>.</p>
 <h3 id="error-could-not-create">Error: Could not create<a class="headerlink" href="#error-could-not-create" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Copy the words on the line below and paste them into the search function for your log file.</p>
 <blockquote>
@@ -6203,7 +6203,7 @@
 <p>This section is only for people who have successfully built using <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr></em>.</p>
 <p>Use the <a href="#examine-annotation">Examine Annotation</a> instructions to find your error message.</p>
 <h3 id="error-asset-validation-failed"><code>ERROR: Asset validation failed</code><a class="headerlink" href="#error-asset-validation-failed" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This error indicates your <abbr title="a copy of code in a github repository other than the original">fork</abbr> needs to be updated.</p>
+<p>This error indicates your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> needs to be updated.</p>
 <p>There are serveral phrases you can check for. All of them have the same solution.</p>
 <p>Copy the words on the line below and paste them into the search function for your action log.</p>
 <blockquote>
@@ -6212,7 +6212,7 @@
 <div class="copy highlight"><pre><span></span><code>Could not download/upload from App Store Connect
 </code></pre></div>
 </blockquote>
-<p>Solution: Update your <abbr title="a copy of code in a github repository other than the original">fork</abbr>. See instructions on the Update page: <a href="../bb-update/#update-fork" target="_blank">Update <code>Fork</code></a></p>
+<p>Solution: Update your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>. See instructions on the Update page: <a href="../bb-update/#update-fork" target="_blank">Update <code>Fork</code></a></p>
 <h3 id="intermittent-testflight-upload-number-error">Intermittent <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Upload Number Error<a class="headerlink" href="#intermittent-testflight-upload-number-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">This is an intermittent error</p>
@@ -6239,7 +6239,7 @@
 <ol>
 <li>Select the <code>branch</code> that you plan to build</li>
 <li>Check the <code>fork</code> for that <code>branch</code> is up to date<ul>
-<li>If it is behind, <code>sync</code> the <abbr title="a copy of code in a github repository other than the original">fork</abbr></li>
+<li>If it is behind, <code>sync</code> the <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></li>
 </ul>
 </li>
 <li>
@@ -6310,9 +6310,9 @@
 <h2 id="handle-the-fastlane-api-key-error">Handle the <code>FastLane API Key</code> Error<a class="headerlink" href="#handle-the-fastlane-api-key-error" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This was never an actual error - but a procedure that worked briefly. There is no need to revoke and generate a new <code>FastLane API Key</code>.</p>
 <div class="admonition important">
-<p class="admonition-title">Browser Build Temporary <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> is Fixed with <code>Loop 3.6.2</code></p>
+<p class="admonition-title">Browser Build Temporary <abbr title="On GitHub - a formal method to report a problem, either code behavior or documentation">Issue</abbr> is Fixed with <code>Loop 3.6.2</code></p>
 <p><em>Apple</em> made a modification in May 2025 that impacted Browser Build for builders who needed to renew their certificates or generate <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr>. With the release of <code>Loop 3.6.2</code>, these issues are resolved.</p>
-<p>It took several weeks for the change at <em>Apple</em> to propagate through all the <code>API Keys</code>. Thus an adhoc fix worked initially but then stopped working. An update to <abbr title="used as part of the github Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> (the code that communicates between <em>Apple</em> and <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>) is now in the released <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code (3.6.1 and newer).</p>
+<p>It took several weeks for the change at <em>Apple</em> to propagate through all the <code>API Keys</code>. Thus an adhoc fix worked initially but then stopped working. An update to <abbr title="used as part of the GitHub Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> (the code that communicates between <em>Apple</em> and <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>) is now in the released <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> code (3.6.1 and newer).</p>
 </div>
 <p>We have removed the section on getting a new Fastlane <abbr title="Application Programming Interface">API</abbr> Key - that is not the solution to what turned out to be a change made by <em>Apple</em>.</p>
 <p>The rest of this section has some steps that may be needed in the future. Do not follow any of these steps at this time unless a mentor has suggested it or you have a specific error case where one of these steps is recommended.</p>
@@ -6343,7 +6343,7 @@
 <p>You will get an email informing you the certificate was revoked.</p>
 <p>Run the Build action and a new Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> will be created along with the profiles and build credentials needed.</p>
 <ul>
-<li>This is true for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio if you have the ENABLE_NUKE_CERTS variable set to true</li>
+<li>This is true for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, <abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr>, <abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr> and Trio if you have the <abbr title="The Variable that gets added to GitHub, along with your 6 Secrets: renews your Apple Developer Certificate after it expires">ENABLE_NUKE_CERTS</abbr> variable set to true</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">But my Build Action Failed Again</p>
@@ -6376,7 +6376,7 @@
 <ol>
 <li>Revoke Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> (this section)</li>
 <li><a href="#delete-invalid-profiles">Delete Invalid Profiles</a></li>
-<li><a href="#delete-match-secrets">Delete <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr></a></li>
+<li><a href="#delete-match-secrets">Delete <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr></a></li>
 <li>Run the action Create Certificates</li>
 <li>Run the action Build</li>
 </ol>
@@ -6428,12 +6428,12 @@
 <ul>
 <li>If you just revoked a <a href="#revoke-distribution-certificate">Distrbution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> - try building first before you delete your <code>Match-Secrets</code></li>
 <li>Make sure you have <code>ENABLE_NUKE_CERTS</code> set to true</li>
-<li>The next time you try to build, the information in <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> is used to remove invalid profiles<ul>
-<li>A new Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> and new profiles will be generated and your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> will be updated</li>
+<li>The next time you try to build, the information in <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr> is used to remove invalid profiles<ul>
+<li>A new Distribution <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> and new profiles will be generated and your <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr> will be updated</li>
 </ul>
 </li>
 </ul>
-<p>When building apps that do not use <code>ENABLE_NUKE_CERTS</code>, like xDrip4iOS, you may need to manually delete your profiles and your <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> before trying to run Create Certs followed by Build.</p>
+<p>When building apps that do not use <code>ENABLE_NUKE_CERTS</code>, like xDrip4iOS, you may need to manually delete your profiles and your <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> before trying to run Create Certs followed by Build.</p>
 <p>Open the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> website for your organization or personal account.</p>
 <div class="copy highlight"><span class="filename">If you use an organization</span><pre><span></span><code>https://github.com/my-name-org/Match-Secrets
 </code></pre></div>
@@ -6447,7 +6447,7 @@
 <li>Read and follow directions to delete</li>
 </ul>
 </li>
-<li>The next action you run will automatically create a new <abbr title="a private repository you must create in your github account, stores keys required to build with github Build Actions">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> for you</li>
+<li>The next action you run will automatically create a new <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr> <abbr title="contains project files and each file's revision history">repository</abbr> for you</li>
 </ol>
 <h3 id="delete-identifiers">Delete <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#delete-identifiers" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These instructions are useful if:</p>

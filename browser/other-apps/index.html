@@ -5114,7 +5114,7 @@
 </li>
 </ul>
 <p>If you want to build another <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> app that is not included here, look for the file <code>fastlane/testflight.md</code> in the <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="contains project files and each file's revision history">repository</abbr> associated with that app and open it in a browser. The instructions for that app should be located in that file.</p>
-<p>The same technique is used and the same six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are used for many Open-Source apps. Over time, it is expected that more apps will use the <code>variable</code> ENABLE_NUKE_CERTS to allow automatic creation and update of the required certificates.</p>
+<p>The same technique is used and the same six <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are used for many Open-Source apps. Over time, it is expected that more apps will use the <code>variable</code> <abbr title="The Variable that gets added to GitHub, along with your 6 Secrets: renews your Apple Developer Certificate after it expires">ENABLE_NUKE_CERTS</abbr> to allow automatic creation and update of the required certificates.</p>
 <ul>
 <li>Did you start building with your personal account and want to switch to the recommended organization account for buiding?: <a href="#switch-to-a-github-organization-account">Switch to a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Organization Account</a></li>
 </ul>
@@ -5171,7 +5171,7 @@
 <li>Skip ahead to <a href="#add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr></a></li>
 </ul>
 <h3 id="using-a-personal-github-account">Using a Personal <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Account<a class="headerlink" href="#using-a-personal-github-account" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>After successfully creating your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> for this app:</p>
+<p>After successfully creating your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> of the <abbr title="contains project files and each file's revision history">repository</abbr> for this app:</p>
 <ul>
 <li>
 <p>If you have already built <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> using the Browser Build method, skip ahead to <a href="#add-existing-secrets">Add Existing <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></a></p>
@@ -5210,7 +5210,7 @@
 <p>Be sure to <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a> to the <abbr title="contains project files and each file's revision history">repository</abbr> as well as <code>Secrets</code> to enable automatic certificate creation.</p>
 <p>Once the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> and <code>Variable</code> are added, proceed to the first Action to validate your secrets.</p>
 <h2 id="validate-secrets">Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#validate-secrets" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The first action step is to Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the <code>Actions</code> tab.</p>
+<p>The first action step is to Validate <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. Near the top middle of your Repository <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>, click on the <code>Actions</code> tab.</p>
 <ul>
 <li>The first time you click on <code>Actions</code> with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code></li>
 <li>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></li>
@@ -5240,7 +5240,7 @@
 </li>
 </ul>
 <h2 id="add-identifiers">Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr><a class="headerlink" href="#add-identifiers" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Near the top middle of your Repository <abbr title="a copy of code in a github repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
+<p>Near the top middle of your Repository <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>, click on the "<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>" tab.</p>
 <ul>
 <li>If this is the first <code>Action</code> you run with this <abbr title="contains project files and each file's revision history">repository</abbr> you'll be informed that <code>Workflows aren't being run on this forked repository</code><ul>
 <li>Tap on the green button that says: <code>I understand my workflows, go ahead and enable them</code></li>
@@ -5650,7 +5650,7 @@
 <li>
 <p>For each <abbr title="contains project files and each file's revision history">repository</abbr>: you need to <code>fork</code> for each app you wish to build to the new <code>my-name-org</code> account</p>
 <ul>
-<li>When you do the <abbr title="a copy of code in a github repository other than the original">fork</abbr>, there will be a dropdown menu under Owner for you to select the account for the <code>fork</code><ul>
+<li>When you do the <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>, there will be a dropdown menu under Owner for you to select the account for the <code>fork</code><ul>
 <li>For detailed directions with a <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>, see <a href="../prepare-fork/#create-the-fork" target="_blank">Create the Fork</a></li>
 </ul>
 </li>
