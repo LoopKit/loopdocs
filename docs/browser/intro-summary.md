@@ -146,7 +146,7 @@ You don't need to know anything about the <code>Secrets</code> to do this. Come 
     * There is a reference pattern for each SECRET: replace that with your SECRET or you can add your secret below the pattern to give yourself confidence you got the correct item
 4. In addition to the <code>Secrets</code>, this template has places for other pieces of information you may find handy to save in the same file
 5. At the very beginning is a place to indicate the last day you updated the file
-6. If you use Nightscout, you may also want the [Nightscout template](../nightscout/remote-config.md#save-your-important-nightscout-information){: target="_blank" }
+6. If you use Loop's remote commands, you will need the APNS_KEY and APNS_KEY_ID, which are included at the bottom of this template
 
 ``` { .bash .copy title="Template to use for Secrets" }
 MySecretsReferenceFile.txt
@@ -227,11 +227,71 @@ With release of Loop 3.6.0:
 If you use an organization (recommended)
 https://github.com/my-name-org/LoopWorkspace
 
-or (if you don't use an organzation): 
+or (if you don't use an organzation):
 https://github.com/my-name/LoopWorkspace
 
-
 Add additional apps here if you decide to build any
+
+## REMOTE COMMAND INFORMATION:
+
+If you use LoopFollow for remote commands, this information gets added to
+  the LoopFollow app.
+If you use LoopCaregiver or Nightscout for remote commands, this
+  information gets added to your Nightscout config-vars.
+https://loopkit.github.io/loopdocs/nightscout/remote-config/#step-2-apple-push-notifications
+
+LOOP_APNS_KEY
+<looks like this - include the entire key>
+-----BEGIN PRIVATE KEY-----
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
+-----END PRIVATE KEY-----
+
+LOOP_APNS_KEY_ID
+<looks like this>
+AAAAAAAAAA
+
+If you use Browser Build method, you need to be careful not to mix 
+up your keys.
+The APNS Key for Remote Commands is an Apple Push Notification Key.
+It may look like the FASTLANE_KEY used for Browser Build, 
+but it is completely different.
+You need both (if using remote features). Do NOT get them mixed up.
+
+LOOP_DEVELOPER_TEAM_ID
+This is the same as the TEAMID as above.
+<looks like this>
+AAAAAAAAAA
+
+LOOP_PUSH_SERVER_ENVIRONMENT is used only if you use TestFlight
+  for your Loop app, regardless of whether you use the Browser Build
+  or use Xcode to distribute via TestFlight.
+
+If you build from Mac-Xcode directly to a phone, do not include this config-var
+
+LOOP_PUSH_SERVER_ENVIRONMENT = production
+
+
+## NIGHTSCOUT INFORMATION
+
+How this inforation gets added to your Nightscout config-vars depends
+  on whether you build it yourself or pay a vendor.
+
+PLACEHOLDER FOR YOUR SPECIFIC INFO, e.g., vendor, username
+
+The URL will always start with https://
+
+https://your-nightscout-site
+
+API_SECRET
+
+choose-something-hard-to-guess
+
+* must contain at least 12 characters and is case-sensitive
+* hint: don’t make it too long, best to use letters and numbers,
+  best to avoid special characters
 ```
 
 ## New Terms with <code>*GitHub* Browser Build</code>
