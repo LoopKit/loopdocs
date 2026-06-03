@@ -6,12 +6,15 @@ The [*Loop* Releases](releases.md){: target="_blank"}  page lists releases since
 
 The current released version of the *Loop* app is always in the `main` branch of the LoopWorkspace repository.
 
+### Development Branches and Breaking Changes
+
 The next version of the *Loop* app is developed using branches. 
 
 * The `dev` branch is used by the developers to push out changes for users to test before that code is released
-    * Sometimes there are breaking changes in `dev`
-    * A breaking change is when you can build the `dev` branch over your existing app, but cannot leave the `dev` branch without deleting your app from your phone
-    * It's been a few years since this happened (when we went from Loop 2 to Loop 3), but it will be happening again soon with an upcoming merge from Tidepool
+    * Sometimes there are breaking changes
+        * A breaking change is when you can build the new branch over your existing app, but cannot go backwards without deleting your app from your phone
+    * We are bringing in updates for Tidepool that will intially land in a special branch `next_dev`
+        * Note that you might be able to go backward to `main` or `dev` from `next_dev` but it is not guaranteed
 * In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the `dev` branch
 * You should only test a development or feature branch if you are willing to be an active participant with the developers:
     * [Monitor announcements in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) 
@@ -25,7 +28,14 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to the current release: `Loop v3.14.0`. 
 
-The current version of `dev` is v3.14.1. It is functionally identical the released code. The only difference is we added an alert you must acknowledge if you are running the `dev` branch.
+The current version of `dev` is v3.14.2. This has a very significant change - please read the warning.
+
+!!! important "Omnipod Users cannot return to v3.14.0 after building v3.14.2 without replacing their Pod"
+    The new unified Omnipod Pump Manager, OmnipodKit, is the only pump manager available in v3.14.2.
+
+    If you are running a Pod, you can install v3.14.2 over v3.14.0 and the Pod will be automatically transition to the OmnipodKit Pump Manager.
+
+    If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod. Simply rebuild v3.14.2 back on your phone and control will be restored.
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -49,15 +59,15 @@ The graphic below shows the `main` and `dev` branches along with some feature br
 
 #### Table of Active Branches
 
-The table below lists active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to *LoopDocs*.
+The table below lists active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to *LoopDocs*. The feature branches listed below will be replaced shortly after the next release. Any one using a feature branch needs to be alert and check zulipchat regularly.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
-| dev | 3.14.1 | 23 May 2026 | functionally the same as `main`<br>3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch |
+| dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>[PR453](https://github.com/LoopKit/LoopWorkspace/pull/452#top) replace OmniBLE and OmniKit with OmnipodKit |
 | [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `e0331eb` | 3.14.1  | 26 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA  `DanaKit @ c544c42`<br>  - SHA `MedtrumKit @ 6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `e909b2e` | 3.14.1  | 26 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA `EversenseKit @ 43b8080` |
-| [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `a625519` | 3.14.1 | 01 June 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA `OmnipodKit @ c04c4d4`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
+| [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `10fd21f` | 3.14.1 | 03 June 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA `OmnipodKit @ d68699c`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
 
 !!! important "Eversense Support"
     The Eversense CGM is now supported by the *Loop* app in a feature branch. To simplify maintenance, the branch which supports Eversense also supports the two new pumps: Dana and Medtrum.
@@ -119,22 +129,24 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Feature Branch: OmnipodKit Pump Manager
 
-You need to build the `feat/omnipodkit` branch if you want to test the new `All Omnipod Types` pump manager. Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
+!!! Question "What is different between `feat/omnipodkit` and `dev` branch"
+    There are several differences between `feat/omnipodkit` and `dev` branch.  For one thing, this branch (which will be renamed soon - so pay attention) has all the pump managers: OmniBLE, OmniKit, OmnipodKit, DanaKit, MedtrumKit and MinimedKit and the new CGM manager EversenseKit.
 
-This pump manager comes with improved user interface and user experience for Omnipod Classic (Eros) and DASH pods including
+    Keeping OmniBLE & OmniKit in this branch is useful for developers. Those pump managers were removed from `dev` branch (3.14.2) and will soon be removed from `main` when `dev` is merged into main.
+
+    Because OmniBLE & OmniKit are present, a tester who comes in with a Pod attached to one of those managers stays with the manager. The automatic conversion to OmnipodKit, which happens with v3.14.2, does not happen with this branch. The tester has to manually change pump managers during a Pod change.
+
+#### OmnipodKit Pump Manager
+
+The OmnipodKit pump manager comes with improved user interface and user experience for Omnipod Classic (Eros) and DASH pods including
 
 * Some layout adjustments
 * Some new labels
 * Some reworked sub-menus with added information or features
 
-The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
+If you are running the `dev` branch - your Pod is automatically transitioned to OmnipodKit. You will notice the user interface is a little different. If you are running `feat/omnipodkit` branch, see [Manual transition with `feat/omnipodkit`](#manual-transition-with-featomnipodkit).
 
-* Select `All Omnipod Types` as your new pump manager.
-* Go through the onboarding of selecting notifications and reminders and insulin type.
-* You will then be presented with a screen to select the type of pod. 
-* Choose the Classic (Eros) or DASH Pod type
-
-The underyling control code should be the same, but we want more people testing it to ensure this works as well as the older pod managers. The developers have been using it on themselves before making this publicly available.
+One of the biggest things is that you can change Pod types between Pods. With this version of OmnipodKit, only Eros and DASH are supported.
 
 !!! question "Why OmnipodKit?"
     When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
@@ -147,13 +159,16 @@ The underyling control code should be the same, but we want more people testing 
 
     This will be a significant time saver for developers moving forward for updating code and adding support for new types of pods.
 
-!!! tip "feat/omnipodkit supports other plugins"
-    For the convenience of the developers and testers, this feature branch, feat/omnipodkit, also supports the new pump and cgm managers that are found in the other feature branches.
+#### Manual transition with `feat/omnipodkit`
 
-    In other words:
+If you are running `feat/omnipodkit` branch, you need to take these steps to switch to using the new pump manager.
 
-    * Eversense is available as a CGM
-    * Dana and Medtrum are available as a pump, in addtion to OmnipodKit and all the older pump managers
+The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
+
+* Select `All Omnipod Types` as your new pump manager.
+* Go through the onboarding of selecting notifications and reminders and insulin type.
+* You will then be presented with a screen to select the type of pod. 
+* Choose the Classic (Eros) or DASH Pod type
 
 ### Feature Branch: Pod Keep Alive Feature
 

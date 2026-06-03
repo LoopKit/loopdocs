@@ -655,9 +655,17 @@ This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`
 
 ## `Loop` Version Numbering
 
-With the release of version 3.14.0, the numbering is changing again. We will not be using even numbers for main and odd numbers for dev.
+With the release of version 3.14.0, the numbering is changing again.
 
-We will start out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev.
+### `Loop` 3 versus `Loop` 4
+
+We are bringing in input from Tidepool that brings a whole new set up enhancements. This will eventually be released as version 4.0.0, but while we are testing in a branch called `next_dev`, it will be version 3.15.n.
+
+The existing version of Loop will continue to be updated, but it will all be in the 3.14.n series.
+
+We started out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev. When a given version of dev needs to be released, the main branch will be updated to the same code and version number as the dev branch.
+
+### Older Version Numbering
 
 With the release of `Loop 3`, there was a new pattern for identifying the releases as distinct from the development work. This pattern was revised again starting with `Loop v3.6`.
 
