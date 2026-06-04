@@ -224,14 +224,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 ## Medtrum Nano
 
-!!! warning "You must build a feature branch to use Medtrum pumps"
-    Medtrum Nano is supported in the 
-    
-    * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
-
-    Read this section in LoopDocs:
-
-    * [Medtrum Nano](../loop-3/add-pump.md#medtrum-nano){: target="_blank" }
+Metrum support was added to the `dev` branch in version 3.14.2, and is will be included in the next release.
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
