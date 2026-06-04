@@ -13,8 +13,8 @@ The next version of the *Loop* app is developed using branches.
 * The `dev` branch is used by the developers to push out changes for users to test before that code is released
     * Sometimes there are breaking changes
         * A breaking change is when you can build the new branch over your existing app, but cannot go backwards without deleting your app from your phone
-    * We are bringing in updates for Tidepool in a special branch `next_dev`
-        * Note that you might be able to go backward to `main` or `dev` from `next_dev` but it is not guaranteed
+    * We are bringing in updates for Tidepool in a special branch `next-dev`
+        * Note that you might be able to go backward to `main` or `dev` from `next-dev` but it is not guaranteed
 * In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the `dev` branch
 * You should only test a development or feature branch if you are willing to be an active participant with the developers:
     * [Monitor announcements in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) 
@@ -80,7 +80,7 @@ The table below lists active branches.
 | main | 3.14.0 | 14 May 2026 | release |
 | dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/453)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read [Transition to OmnipodKit](#transition-to-omnipodkit)** |
 | `feat/all-managers`<br>- SHA `TBD` | 3.14.2 | TBD June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides Dana support: [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `next_dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454) |
+| `next-dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454) |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 

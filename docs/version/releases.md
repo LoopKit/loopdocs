@@ -645,7 +645,7 @@ With the release of version 3.14.0, the numbering is changing again.
 
 ### `Loop` 3 versus `Loop` 4
 
-We are bringing in input from Tidepool that brings a whole new set of enhancements. This will eventually be released as version 4.0.0, but while we are testing in a branch called `next_dev`, it will be version 3.15.n.
+We are bringing in input from Tidepool that brings a whole new set of enhancements. This will eventually be released as version 4.0.0, but while we are testing in a branch called `next-dev`, it will be version 3.15.n.
 
 The existing version of Loop will continue to be updated, but it will all be in the 3.14.n series.
 
