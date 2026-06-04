@@ -196,7 +196,7 @@ Loop does not support Omnipod 5 pods.
 ## Sooil Dana pumps
 
 !!! warning "You must build a feature branch to use Dana pumps"
-    Dana is supported in both of [these feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
+    Dana is supported in [`feat/all-managers` feature branch](../version/development.md#feature-branch-featall-managers){: target="_blank" }.
     
     * You must follow [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
 
@@ -225,7 +225,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 ## Medtrum Nano
 
 !!! warning "You must build a feature branch to use Medtrum pumps"
-    Medtrum Nano is supported in both of [these feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
+    Medtrum Nano is supported in the 
     
     * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
 

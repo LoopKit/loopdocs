@@ -17,10 +17,10 @@ Loopers can choose from multiple pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * Omnipod
 * Omnipod DASH
-* [All Omnipod Types](../version/development.md#feature-branch-omnipodkit-pump-manager){: target="_blank" } (available with `feat/omnipodkit` feature branch)
+* [All Omnipod Types](../version/development.md#feature-branch-omnipodkit-pump-manager){: target="_blank" } (available with `dev` v3.14.2)
 * Dana-i / DanaRS-v3 (**work-in-progress; new pump manager, use with care**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
-* Medtrum Nano patch pump (**work-in-progress; new pump manager, use with care**)
+* Medtrum Nano patch pump (available in `dev` branch, v3.14.2)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -56,7 +56,7 @@ Here is an overview of the different steps for adding each pump.  Before changin
 
 #### Other Pumps
 
-> These are new pump managers that can be built using one of [two feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
+> These are new pump managers that can be built using `dev` for Medtrum or a feature branch for Dana. See (../version/development.md#fstatus-for-dana-support){: target="_blank" }.
 
 * [Dana-i / DanaRS-v3](#dana-i-danars-v3)
 * [Medtrum Nano](#medtrum-nano)
@@ -250,13 +250,14 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 
 ### Dana is a New Pump Manager
 
-**WARNING: Dana support in Loop is a work-in-progress; this is one of several new pump managers.**
+**WARNING: Dana support in Loop is a work-in-progress.**
 
 ### Before Testing Dana
 
-You must build a feature branch to get Dana support in Loop. You can use either one of two feature branches: `feat/dev-dana-medtrum` or `feat/eversense`.
+You must build a feature branch to get Dana support in Loop
+* `feat/all-managers`.
 
-* Please refer to information summarized at [Feature Branch: Dana and Medtrum Support](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }.
+* Please refer to information summarized at [Status for Dana Support](../version/development.md#status-for-dana-support){: target="_blank" }.
 
 
 ### When Testing Dana
@@ -375,16 +376,9 @@ Therefore, it is important to check if your CGM provides a heartbeat. If it does
 
 ### Medtrum is a New Pump Manager
 
-**WARNING: Medtrum support in Loop is a work-in-progress; this is one of several new pump managers.**
+**Medtrum is available in `dev` branch, v3.14.2.**
 
-You must build a feature branch to get Medtrum support in Loop. You can use either one of two feature branches: `feat/dev-dana-medtrum` or `feat/eversense`.
-
-* Please refer to information summarized at [Feature Branch: Dana and Medtrum Support](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }.
-
-
-### When Testing Medtrum Nano
-
-* Please do not use Medtrum Nano with Loop unless you are willing to test and communicate with  [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
+You must build the `dev` branch to get Medtrum support in Loop.
 
 ### Confirm Patch and Pump Base are Compatible
 

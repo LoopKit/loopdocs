@@ -62,7 +62,7 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
 ## *Eversense* E3 and 365 CGM
 ![img/eversense.png](img/eversense.png){width="150"}
 
-Both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters are supported, on an experimental branch feat/eversense.
+Both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) transmitters are supported, on the `dev` branch with v3.14.2.
 
 * See [Loop Development: Branches](../version/development.md#branches){: target="_blank" } for more information on how to build this branch.
 

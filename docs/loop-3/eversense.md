@@ -6,13 +6,9 @@
     
     Please review the [EversenseKit Issues](https://github.com/bastiaanv/EversenseKit/issues) page for open issues reported for the EversenseKit CGM Manager.
 
-## Testing Eversense with the *Loop* App
+## Using Eversense with the *Loop* App
 
-* The branch needed to get Eversense in *Loop* is: `feat/eversense`
-    * This branch is subject to rapid updates
-    * This branch provides support for Dana and Medtrum along with the Eversense CGM
-
-* Please refer to the [zulipchat Loop-dev development channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/515372445) before building this branch.
+Eversense support was added to the `dev` branch in version 3.14.2.
 
 ## Eversense 365 Screen
 

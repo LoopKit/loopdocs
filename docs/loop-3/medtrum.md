@@ -8,19 +8,11 @@
  
 ## Medtrum Nano Pump
 
-The Medtrum Nano Pump is supported using the *Loop* app built with a feature branch.  See [Feature Branches](../version/development.md#how-to-build-feature-branches){: target="_blank" } for building instructions.
+The Medtrum Nano Pump support was added to the `dev` branch in version 3.14.2.
 
 * The pump patch is designed to be changed every 3 days
 * The pump base is reusable - do not accidentally discard the base after removing the patch
 * Versions 200U (MD0201 & MD8201) and 300U (MD8301) are supported 
-
-### Testing Medtrum with the *Loop* App
-
-* The branch needed to get Medtrum in *Loop* is: `feat/dev-dana-medtrum`
-    * This branch is subject to rapid updates
-    * If you also want to use the Eversense CGM, the `feat/eversense` branch provides support for Dana and Medtrum along with the Eversense CGM
-
-* Please refer to the [zulipchat Loop-dev development channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/515372445) before building this branch.
 
 - - -
 
