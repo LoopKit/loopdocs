@@ -154,7 +154,7 @@ Eversense support was added to the `dev` branch in version 3.14.2.
 
 For Dana support, you must build a new feature branch. The old feature branches were deleted.
 
-See [Feature Branch: All Managers](#feature-branch-all-managers) for more information about the branch. Keep reading here for Dana specific status.
+See [Feature Branch: feat/all-managers](#feature-branch-featall-managers) for more information about the branch. Keep reading here for Dana specific status.
 
 Anyone using Dana pumps must build a new feature branch, feat/all-managers. Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
 

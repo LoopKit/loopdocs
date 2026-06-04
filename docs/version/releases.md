@@ -217,21 +217,7 @@ This version updates a few iOS 26 interface issues, moves support for Dana pumps
 > **A pump manager that works for Trio must be separately tested for Loop**
 
 * Several issues were reported regarding bolus accounting and IOB reporting for *Loop* v3.8.1
-* For this reason, Dana support is only found in 2 special branches
-
-If you were using Dana with v3.8.1, a branch called `release/3.8.1` was created for your continued use.
-
-* The `release/3.8.1` branch will remain available while troubleshooting continues
-* This branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version
-
-If you are an expert and want to use [Dana](../loop-3/add-pump.md#dana-in-loop-requires-expert-testing){: target="_blank" } or [Medtrum](../loop-3/add-pump.md#medtrum-in-loop-requires-expert-testing){: target="_blank" }, the experimental branch is `feat/dev-dana-medtrum`
-
-* This branch is subject to rapid updates
-* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
-
-* Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
-
-
+* For this reason, Dana support is only found in a feature branch
 
 ### Loop v3.8.1
 
