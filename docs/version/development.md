@@ -42,7 +42,7 @@ The current version of `dev` is v3.14.2. This has some very significant changes 
 
     If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod. Simply rebuild v3.14.2 back on your phone and control will be restored.
 
-For those on the Dana pump. You need to keep building a feature branch, but it might be a different branch from what you used before. 
+For those on the Dana pump. You need to keep building a feature branch, but the name of the branch changed. 
 
 Please see [Table of Retired Branches](#table-of-retired-branches) for up to date information about what branch you need to build for Dana support.
 
@@ -55,9 +55,7 @@ In addition to the main and dev branches, which are tightly controlled and only 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
 * The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the new universal pump manager for all types of Omnipods
 
-The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch.
-
-TO-DO - update this graphic
+The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch. This is a snapshot in time and no longer reflects the current status. Always check [Table of Active Branches](#table-of-active-branches).
 
 > ![Active branches for LoopWorkspace](img/loop-development-branches.png ){width="750"}
 {align="center"}

@@ -224,7 +224,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 ## Medtrum Nano
 
-Metrum support was added to the `dev` branch in version 3.14.2, and is will be included in the next release.
+Metrum support was added to the `dev` branch in version 3.14.2, and will be included in the next release.
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
