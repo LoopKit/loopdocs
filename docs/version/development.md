@@ -57,14 +57,14 @@ The graphic below shows the `main` and `dev` branches along with some feature br
     * There are also feature branches for items like new pumps and new CGMs:
         * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
 
-#### Table of Active Branches
+### Table of Active Branches
 
 The table below lists active branches. Note that updates may occur and be announced in zulipchat a day or two before updates propogate to *LoopDocs*. The feature branches listed below will be replaced shortly after the next release. Any one using a feature branch needs to be alert and check zulipchat regularly.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
-| dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>[PR453](https://github.com/LoopKit/LoopWorkspace/pull/452#top) replace OmniBLE and OmniKit with OmnipodKit |
+| dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR453](https://github.com/LoopKit/LoopWorkspace/pull/452#top) replace OmniBLE and OmniKit with OmnipodKit |
 | [feat/dev-dana-medtrum](#feature-branch-dana-and-medtrum-support) <br>- SHA `e0331eb` | 3.14.1  | 26 May 2026 | - adds support for Dana and Medtrum pumps<br>  - SHA  `DanaKit @ c544c42`<br>  - SHA `MedtrumKit @ 6060747`<br>**Medtrum User Interface Redesigned** to be more like the Omnipod User Interac.<br>Several fixes added for MedtrumKit, not yet in DanaKit |
 | [feat/eversense](#feature-branch-eversense-support) <br>- SHA `e909b2e` | 3.14.1  | 26 May 2026 | - adds experimental support for Eversense (includes Dana and Medtrum pumps support - same SHA as above)<br>- this branch is ready for use to evaluate and report back<br>  - SHA `EversenseKit @ 43b8080` |
 | [feat/omnipodkit](#feature-branch-omnipodkit-pump-manager)<br>- SHA `10fd21f` | 3.14.1 | 03 June 2026| The new OmnipodKit pump manager, controls all Types of pods. Initially only the Eros and DASH pod types are available for feature branch testers<br>  - SHA `OmnipodKit @ d68699c`<br>**Please read [Feature Branch: OmnipodKit Pump Manager](#feature-branch-omnipodkit-pump-manager)** |
@@ -169,6 +169,11 @@ The next time you change a pod, delete the pump manager you are using and add a 
 * Go through the onboarding of selecting notifications and reminders and insulin type.
 * You will then be presented with a screen to select the type of pod. 
 * Choose the Classic (Eros) or DASH Pod type
+
+!!! important "Once you transition to OmnipodKit, stay with OmnipodKit"
+    The new unified Omnipod Pump Manager, OmnipodKit, is the only available in v3.14.2 or newer.
+
+    If you are running a Pod and you transition to the OmnipodKit Pump Manager, then any build you install on your phone should have OmnipodKit. If you need to downgrade to a build earlier than v3.14.2, do so after deactivating a Pod.
 
 ### Feature Branch: Pod Keep Alive Feature
 
