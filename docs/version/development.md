@@ -32,13 +32,13 @@ The current version of `dev` is v3.14.2. This has some very significant changes 
 
 * The Medtrum Nano 200 U / 300 U pump manager is added to the dev branch and will be in the next release
 * The Eversense E3 and 365 sensor CGM manager is added to the dev branch and will be in the next release
-* The unified OmnipodKit pump managaer, which controls either Classic (Eros) or DASH pods, is added to the dev branch and will be in the next release
+* The unified OmnipodKit pump manager, which controls either Classic (Eros) or DASH pods, is added to the dev branch and will be in the next release
     * The OmniBLE and OmniKit single-pod-type pump managers were removed from the dev branch
 
 !!! important "Omnipod Users cannot return to v3.14.0 after building v3.14.2 without replacing their Pod"
     The new unified Omnipod Pump Manager, OmnipodKit, is the only pump manager available in v3.14.2.
 
-    If you are running a Pod, you can install v3.14.2 over v3.14.0 and the Pod will be automatically transition to the OmnipodKit Pump Manager.
+    If you are running a Pod, you can install v3.14.2 over v3.14.0 or earlier and the Pod control will automatically transition to the OmnipodKit Pump Manager.
 
     If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod. Simply rebuild v3.14.2 back on your phone and control will be restored.
 
@@ -71,16 +71,16 @@ The graphic below shows the `main` and `dev` branches along with some feature br
 The table below lists active branches. 
 
 * Note that updates may occur and be announced in zulipchat a day or two before updates propagate to *LoopDocs*
-* Any one using a feature branch needs to be alert and check zulipchat regularly
+* Anyone using a feature branch needs to be alert and check zulipchat regularly
 * For example, while preparing for v3.14.2, older feature branches were retired
     * Check the [Table of Retired Branches](#table-of-retired-branches) to get the support you need.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
-| dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/452#top)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read [Transition to OmnipodKit](#transition-to-omnipodkit)** |
-| `feat/all-managers`<br>- SHA `TBD` | 3.14.2 | TBD June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides Dana suppor: [Feature: All Managers] |
-| `next_dev` | 3.15.0 | subject to rapid change | [PR 454]((https://github.com/LoopKit/LoopWorkspace/pull/454) |
+| dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/453)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read [Transition to OmnipodKit](#transition-to-omnipodkit)** |
+| `feat/all-managers`<br>- SHA `TBD` | 3.14.2 | TBD June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides Dana support: [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `next_dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454) |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -95,7 +95,7 @@ The table below lists active branches.
 |:--|:--|:--|
 | feat/dev-dana-medtrum |For Medtrum, use `dev`<br>For Dana, use `feat/all-managers` | [Status for Medtrum](#status-for-medtrum-support)<br>[Status for Dana](#status-for-dana-support) |
 | feat/eversense |  For Eversense, use `dev` | [Status for Eversense](#status-for-eversense-support) |
-| feat/omnipodkit | Use `dev` unless you are a developer<br>developers can use `feat/all-managers` | [Feature Branch: All Managers](#feature-branch-all-managers) |
+| feat/omnipodkit | Use `dev` unless you are a developer<br>developers can use `feat/all-managers` |  [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 
 ### How to Build Feature Branches
 
@@ -140,7 +140,7 @@ For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is
 
 ### Status for Medtrum Support
 
-Metrum support was added to the `dev` branch in version 3.14.2.
+Medtrum support was added to the `dev` branch in version 3.14.2.
 
 - - -
 
@@ -217,9 +217,9 @@ Anyone using Dana pumps must build a new feature branch, feat/all-managers. Buil
 
 - - -
 
-### Feature Branch: All Managers
+### Feature Branch: feat/all-managers
 
-This branch replaces several [retired feature branches](#table-of-retired-branches). If you need a feature branch for a Dana pump - you need to build this branch. Be sure to review the [Status For Dana Support](#status-for-dana-support) section.
+The `feat/all-managers` branch replaces several [retired feature branches](#table-of-retired-branches). If you need a feature branch for a Dana pump - you need to build this branch. Be sure to review the [Status For Dana Support](#status-for-dana-support) section.
 
 If you previously used a feature branch for Medtrum or Eversense support, you can switch to the `dev` branch.
 
@@ -263,7 +263,7 @@ One of the biggest things is that you can change Pod types between Pods. With th
 
 If you are running `feat/all-managers` branch, you need to take these steps to switch to using the new pump manager.
 
-The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
+The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](../loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
 
 * Select `All Omnipod Types` as your new pump manager.
 * Go through the onboarding of selecting notifications and reminders and insulin type.

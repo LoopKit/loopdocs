@@ -12,7 +12,7 @@
 
 You must build the `feat/all-managers` branch to get support for Dana.
 
-This branch is subject to rapid updates. Any updates to Dana and Medtrum pumps are found in both branches.
+This branch is subject to rapid updates.
 
 ## Q: How long should the Dana pump last on a battery?
 
