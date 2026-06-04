@@ -26,12 +26,12 @@ These types of pumps are compatible with the *Loop* app.
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
-    * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
+    * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
+* [Medtrum Touchcare Nano](#medtrum-nano) (included in `dev` branch, planned for next release)
 
-You must build a special branch to test these pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
+You must build a special branch to test some pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
 
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress)
-* [Medtrum Touchcare Nano](#medtrum-nano) (new pump manager, work in progress)
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress, included in `feat/all-managers` branch)
 
 ## Check Medtronic Pump Version
 
