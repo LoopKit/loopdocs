@@ -6,6 +6,20 @@ The [*Loop* Releases](releases.md){: target="_blank"}  page lists releases since
 
 The current released version of the *Loop* app is always in the `main` branch of the LoopWorkspace repository.
 
+
+### Relationship with *Tidepool Loop*
+
+*Tidepool Loop* is an independent version of *Loop*. *Tidepool Loop* started with *Loop* code, added safety features, and additional FDA approved device integrations. Much of the *Tidepool Loop* improvements are also published as open source, which volunteers in the community are free to incorporate back into *Loop*. The device integrations for *Tidepool Loop* are generally closed source when required by device manufacturers.
+
+* In 2019, the non-profit *Tidepool* organization partnered with the JAEB Foundation to review outcomes from volunteers using *Loop*
+    * *Tidepool* successfully submitted *Tidepool Loop* to the Federal Drug Administration as an approved automated insulin delivery system
+    * *Tidepool Loop* is available now, please see their website for more information: [*Tidepool Loop*](https://www.tidepool.org/tidepool-loop)
+* In 2022, some of the *Tidepool* open-source code was brought into the *Loop* project by dedicated volunteers and eventually released as *Loop* 3
+    * The traditional OS-AID process of community volunteers providing updates continued throughout
+* In 2026, volunteers are once-again bringing in upgrades from *Tidepool* open-source code, laying the foundation for what will be *Loop* 4.
+    * Look for upcoming information about `next-dev` branch - it is awesome, but still being tested
+    * If you are interested, follow along in [zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707)
+
 ### Development Branches and Breaking Changes
 
 The next version of the *Loop* app is developed using branches. 
@@ -40,9 +54,11 @@ The current version of `dev` is v3.14.2. This has some very significant changes 
 
     If you are running a Pod, you can install v3.14.2 over v3.14.0 or earlier and the Pod control will automatically transition to the OmnipodKit Pump Manager.
 
-    If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod. Simply rebuild v3.14.2 back on your phone and control will be restored.
+    If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod.
+    
+    * If this happens to you: **install v3.14.2 on your phone and control will be restored**.
 
-For those on the Dana pump. You need to keep building a feature branch, but the name of the branch changed. 
+For those on the Dana pump. You need to keep building a feature branch, but the name of the branch changed. The old one is still available but has been removed from LoopDocs.
 
 Please see [Table of Retired Branches](#table-of-retired-branches) for up to date information about what branch you need to build for Dana support.
 
@@ -78,7 +94,7 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
-| dev | 3.14.2 | TBD June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/453)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read [Transition to OmnipodKit](#transition-to-omnipodkit)** |
+| dev | 3.14.2 | 5 June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/453)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read [Transition to OmnipodKit](#transition-to-omnipodkit)** |
 | `feat/all-managers`<br>- SHA `TBD` | 3.14.2 | TBD June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides Dana support: [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454) |
 
@@ -152,16 +168,15 @@ Eversense support was added to the `dev` branch in version 3.14.2.
 
 ### Status for Dana Support
 
-For Dana support, you must build a new feature branch. The old feature branches were deleted.
+For Dana support, you must build a new feature branch, feat/all-managers. The old feature branches will be deleted without further warning.
 
-See [Feature Branch: feat/all-managers](#feature-branch-featall-managers) for more information about the branch. Keep reading here for Dana specific status.
+* Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
+* See [Feature Branch: feat/all-managers](#feature-branch-featall-managers) for more information about the branch. 
+* Keep reading here for Dana specific status.
 
-Anyone using Dana pumps must build a new feature branch, feat/all-managers. Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
-
-* `feat/all-managers`
 
 !!! important "New Managers"
-    This branch is used to add new Pump Managers and CGM Managers which may have known or unknown bugs. Once the managers are deemed reliable, they are added to the `dev` branch and subsequently released. This branch gets updated when that happens.
+    The `feat/all-managers` branch is used to add new Pump Managers and CGM Managers which may have known or unknown bugs. Once the managers are deemed reliable, they are added to the `dev` branch and subsequently released. This branch contains new and old managers (like OmniBLE and OmniKit) for use by developers.
     
     Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.
 
@@ -178,7 +193,9 @@ Anyone using Dana pumps must build a new feature branch, feat/all-managers. Buil
     
     The behavior of your OS-AID system needs to properly handle bolus and temp basal rate events in progress if that communication is interrupted.  This can happen if someone walks away from their phone during a bolus or while a temp basal rate is in progress.
 
-    There are known issues with this for DanaKit, which is why that pump manager is not yet in the `dev` branch
+    These issues were fixed in MedtrumKit and the lessons learned will be applied to DanaKit.
+
+    There are known issues for DanaKit, which is why that pump manager is not yet in the `dev` branch
 
     Please read the rest of this section to learn about how this might affect an older or current version of your OS-AID app.
 

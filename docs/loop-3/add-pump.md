@@ -255,6 +255,7 @@ The Medtronic status and commands available are shown in the [Pump Settings](med
 ### Before Testing Dana
 
 You must build a feature branch to get Dana support in Loop
+
 * `feat/all-managers`.
 
 * Please refer to information summarized at [Status for Dana Support](../version/development.md#status-for-dana-support){: target="_blank" }.
