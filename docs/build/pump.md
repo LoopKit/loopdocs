@@ -26,12 +26,12 @@ These types of pumps are compatible with the *Loop* app.
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 * [Omnipod Eros pumps](pump.md#omnipod-pumps)
 * [Omnipod DASH pumps](#omnipod-dash)
-    * See caveat about [iPhone 16](phone.md#compatible-device){: target="_blank" }
+    * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
+* [Medtrum Touchcare Nano](#medtrum-nano) (included in `dev` branch, planned for next release)
 
-You must build a special branch to test these pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
+You must build a special branch to test some pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
 
-* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress)
-* [Medtrum Touchcare Nano](#medtrum-nano) (new pump manager, work in progress)
+* [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress, included in `feat/all-managers` branch)
 
 ## Check Medtronic Pump Version
 
@@ -196,7 +196,7 @@ Loop does not support Omnipod 5 pods.
 ## Sooil Dana pumps
 
 !!! warning "You must build a feature branch to use Dana pumps"
-    Dana is supported in both of [these feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
+    Dana is supported in [`feat/all-managers` feature branch](../version/development.md#feature-branch-featall-managers){: target="_blank" }.
     
     * You must follow [zulipchat DanaKit topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
 
@@ -224,14 +224,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 ## Medtrum Nano
 
-!!! warning "You must build a feature branch to use Medtrum pumps"
-    Medtrum Nano is supported in both of [these feature branches](../version/development.md#feature-branch-dana-and-medtrum-support){: target="_blank" }, `feat/dev-dana-medtrum` or `feat/eversense`.
-    
-    * You must follow [zulipchat Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
-
-    Read this section in LoopDocs:
-
-    * [Medtrum Nano](../loop-3/add-pump.md#medtrum-nano){: target="_blank" }
+Medtrum support was added to the `dev` branch in version 3.14.2, and will be included in the next release.
 
 !!! info "All versions are supported!"
     Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.

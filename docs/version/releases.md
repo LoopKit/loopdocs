@@ -217,21 +217,7 @@ This version updates a few iOS 26 interface issues, moves support for Dana pumps
 > **A pump manager that works for Trio must be separately tested for Loop**
 
 * Several issues were reported regarding bolus accounting and IOB reporting for *Loop* v3.8.1
-* For this reason, Dana support is only found in 2 special branches
-
-If you were using Dana with v3.8.1, a branch called `release/3.8.1` was created for your continued use.
-
-* The `release/3.8.1` branch will remain available while troubleshooting continues
-* This branch is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version
-
-If you are an expert and want to use [Dana](../loop-3/add-pump.md#dana-in-loop-requires-expert-testing){: target="_blank" } or [Medtrum](../loop-3/add-pump.md#medtrum-in-loop-requires-expert-testing){: target="_blank" }, the experimental branch is `feat/dev-dana-medtrum`
-
-* This branch is subject to rapid updates
-* Please do not use Dana with Loop unless you are willing to test and communicate with [developers on zulipchat in this DanaKit channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260)
-
-* Please do not use Medtrum with Loop unless you are willing to test and communicate with [developers on zulipchat in the Medtrum channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247)
-
-
+* For this reason, Dana support is only found in a feature branch
 
 ### Loop v3.8.1
 
@@ -655,9 +641,17 @@ This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`
 
 ## `Loop` Version Numbering
 
-With the release of version 3.14.0, the numbering is changing again. We will not be using even numbers for main and odd numbers for dev.
+With the release of version 3.14.0, the numbering is changing again.
 
-We will start out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev.
+### `Loop` 3 versus `Loop` 4
+
+We are bringing in input from Tidepool that brings a whole new set of enhancements. This will eventually be released as version 4.0.0, but while we are testing in a branch called `next-dev`, it will be version 3.15.n.
+
+The existing version of Loop will continue to be updated, but it will all be in the 3.14.n series.
+
+We started out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev. When a given version of dev needs to be released, the main branch will be updated to the same code and version number as the dev branch.
+
+### Older Version Numbering
 
 With the release of `Loop 3`, there was a new pattern for identifying the releases as distinct from the development work. This pattern was revised again starting with `Loop v3.6`.
 

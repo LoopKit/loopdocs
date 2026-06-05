@@ -16,9 +16,8 @@
 
 ### Testing Dana with the *Loop* App
 
-* The branch needed to get Dana in *Loop* is: `feat/dev-dana-medtrum`
+* The branch needed to get Dana in *Loop* is: `feat/all-managers`
     * This branch is subject to rapid updates
-    * If you also want to use the Eversense CGM, the `feat/eversense` branch provides support for Dana and Medtrum along with the Eversense CGM
 
 * Please refer to the [zulipchat Loop-dev development channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/515372445) before building this branch.
 

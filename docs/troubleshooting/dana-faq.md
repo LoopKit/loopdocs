@@ -10,13 +10,9 @@
 
 ## Branch for Dana
 
-You may choose one of two feature branches to get Dana in Loop
+You must build the `feat/all-managers` branch to get support for Dana.
 
-* `feat/dev-dana-medtrum`: adds support for Dana and Medtrum pumps
-* `feat/eversense`: adds support for the Eversense CGM in addition to the Dana and Medtrum pumps
-
-
-These branches are subject to rapid updates. Any updates to Dana and Medtrum pumps are found in both branches.
+This branch is subject to rapid updates.
 
 ## Q: How long should the Dana pump last on a battery?
 

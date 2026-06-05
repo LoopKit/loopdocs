@@ -98,3 +98,6 @@ Here are development history links to other resources for you to explore.
 * How the Omnipod Eros pods were cracked to work with&nbsp;<span translate="no">Loop</span>:
     * [Insulin Pumps, Decapped Chips and Software Defined Radios](https://medium.com/@ps2) written by&nbsp;<span translate="no">Loop</span>&nbsp;developer Pete Schwamb
     * [Deep Dip Teardown of Tubeless Insulin Pump](https://arxiv.org/ftp/arxiv/papers/1709/1709.06026.pdf) by Sergei Skorobogatov
+
+* What role does *Tidepool* play in *Loop* development?
+    * Please see [Relationship with *Tidepool Loop*](../version/development.md#relationship-with-tidepool-loop){: target="_blank" }

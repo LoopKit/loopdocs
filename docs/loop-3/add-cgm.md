@@ -15,7 +15,7 @@ Loop can be connected to the following CGMs:
     * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
     * [Libre](#libre) **(Loop 3.4 and later)**
         * Only some Libre sensors are supported; some have encryption that limits DIY use
-    * [Eversense E3/365](#eversense-e3365) **Experimental branch only**
+    * [Eversense E3/365](#eversense-e3365) **`dev` branch, v3.14.2**
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add the Medtronic pump](add-pump.md) first**
@@ -158,6 +158,8 @@ With Eversense added to *Loop* you get direct connection to your transmitter for
 
 The *Loop* app does not have glucose notification features, at this time. You can enable the on-transmitter notification within the *Loop* app so the transmitter will vibrate to alert you of an issue.
 
+The Eversense implementation for Loop (and other OS-AID systems) enables you to upload your readings through the Eversense system and to use the Eversense NOW app. You can invite people to follow your CGM values.
+
 Review the graphic and text below for the steps to add the Eversense CGM. Note the middle screen of that graphic is only shown for the 365 transmitter. The E3 does not require a login step.
 
 ![Steps to add Eversense CGM](img/eversense-login-screen.png){width="750"}
@@ -184,10 +186,7 @@ If you are having trouble with connecting to the Eversense, try these steps.
 
 #### Important Information
 
-!!! warning "You must build feat/eversense branch to use the Eversense CGM"
-    The Eversense CGM is in feat/eversense (as of version v3.11.0) and is experimental as of now.
-
-    This branch adds the [EversenseKit](https://github.com/loopandlearn/EversenseKit) repository to the *Loop* app.
+!!! warning "You must build the `dev` branch to use the Eversense CGM"
 
 !!! important "Wait till initialization phase is completed"
     During the initialization phase after insertion of a new sensor, the glucose reading might be incorrect.
