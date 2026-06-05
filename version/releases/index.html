@@ -3685,6 +3685,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Loop Version Numbering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-3-versus-loop-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop 3 versus Loop 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#older-version-numbering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Older Version Numbering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5204,6 +5232,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Loop Version Numbering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loop-3-versus-loop-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop 3 versus Loop 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#older-version-numbering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Older Version Numbering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5443,22 +5499,7 @@
 </blockquote>
 <ul>
 <li>Several issues were reported regarding bolus accounting and <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> reporting for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.1</li>
-<li>For this reason, Dana support is only found in 2 special branches</li>
-</ul>
-<p>If you were using Dana with v3.8.1, a <abbr title="version of code within a single repository or workspace repository">branch</abbr> called <code>release/3.8.1</code> was created for your continued use.</p>
-<ul>
-<li>The <code>release/3.8.1</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> will remain available while troubleshooting continues</li>
-<li>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is meant to support people already using Dana with v3.8.1 who understand how to manage the issues with that version</li>
-</ul>
-<p>If you are an expert and want to use <a href="../../loop-3/add-pump/#dana-in-loop-requires-expert-testing" target="_blank">Dana</a> or <a href="../../loop-3/add-pump/#medtrum-in-loop-requires-expert-testing" target="_blank">Medtrum</a>, the experimental <abbr title="version of code within a single repository or workspace repository">branch</abbr> is <code>feat/dev-dana-medtrum</code></p>
-<ul>
-<li>This <abbr title="version of code within a single repository or workspace repository">branch</abbr> is subject to rapid updates</li>
-<li>
-<p>Please do not use Dana with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/DanaKit.20Troubleshooting/with/547829260">developers on zulipchat in this DanaKit channel</a></p>
-</li>
-<li>
-<p>Please do not use Medtrum with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> unless you are willing to test and communicate with <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Medtrum.20Nano.20-.20pumps.20for.20development.20use/with/481836247">developers on zulipchat in the Medtrum channel</a></p>
-</li>
+<li>For this reason, Dana support is only found in a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 </ul>
 <h3 id="loop-v381"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.8.1<a class="headerlink" href="#loop-v381" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.8.1"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.8.1</a> was released on 23 September 2025.</p>
@@ -5926,8 +5967,12 @@
 </ul>
 <hr />
 <h2 id="loop-version-numbering"><code>Loop</code> Version Numbering<a class="headerlink" href="#loop-version-numbering" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With the release of version 3.14.0, the numbering is changing again. We will not be using even numbers for main and odd numbers for dev.</p>
-<p>We will start out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev.</p>
+<p>With the release of version 3.14.0, the numbering is changing again.</p>
+<h3 id="loop-3-versus-loop-4"><code>Loop</code> 3 versus <code>Loop</code> 4<a class="headerlink" href="#loop-3-versus-loop-4" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>We are bringing in input from Tidepool that brings a whole new set of enhancements. This will eventually be released as version 4.0.0, but while we are testing in a <abbr title="version of code within a single repository or workspace repository">branch</abbr> called <code>next-dev</code>, it will be version 3.15.n.</p>
+<p>The existing version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will continue to be updated, but it will all be in the 3.14.n series.</p>
+<p>We started out with main and dev at the same number, e.g., 3.14.0. When changes are incorporated into dev via a formal pull request, dev will be bumped up in the last position, e.g., to 3.14.1, then 3.14.2, etc to indicate updates brought into dev. When a given version of dev needs to be released, the main <abbr title="version of code within a single repository or workspace repository">branch</abbr> will be updated to the same code and version number as the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h3 id="older-version-numbering">Older Version Numbering<a class="headerlink" href="#older-version-numbering" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>With the release of <code>Loop 3</code>, there was a new pattern for identifying the releases as distinct from the development work. This pattern was revised again starting with <code>Loop v3.6</code>.</p>
 <p>Each release uses 3 numbers: Major.Minor.Update</p>
 <ul>
