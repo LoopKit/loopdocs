@@ -50,7 +50,7 @@ The current version of `dev` is v3.14.2. This has some very significant changes 
     * The OmniBLE and OmniKit single-pod-type pump managers were removed from the dev branch
 
 !!! important "Omnipod Users cannot return to v3.14.0 after building v3.14.2 without replacing their Pod"
-    The new unified Omnipod Pump Manager, OmnipodKit, is the only pump manager available in v3.14.2.
+    The new unified Omnipod Pump Manager, OmnipodKit, is the only Omnipod pump manager available in v3.14.2.
 
     If you are running a Pod, you can install v3.14.2 over v3.14.0 or earlier and the Pod control will automatically transition to the OmnipodKit Pump Manager.
 
@@ -94,9 +94,9 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.0 | 14 May 2026 | release |
-| dev | 3.14.2 | 5 June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/453)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read [Transition to OmnipodKit](#transition-to-omnipodkit)** |
-| `feat/all-managers`<br>- SHA `TBD` | 3.14.2 | TBD June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides Dana support: [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `next-dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454) |
+| dev | 3.14.2 | 5 June 2026 | v3.14.2 has a breaking change wrt `main`<br>- v3.14.1: [PR 452](https://github.com/LoopKit/LoopWorkspace/pull/452#top) add alert about dev branch<br>- v3.14.2 [PR 453](https://github.com/LoopKit/LoopWorkspace/pull/453)<br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br>**Please read** [Transition to OmnipodKit](#transition-to-omnipodkit) |
+| `feat/all-managers`<br>- SHA `1b4718f` | 3.14.2 | 5 June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `next-dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)<br>[zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 

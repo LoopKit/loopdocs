@@ -47,7 +47,7 @@ Your `LoopWorkspace fork` is at `https://github.com/username/LoopWorkspace` wher
 If you're building `dev`, you can skip ahead to [Add `Branch`](#add-branch).  If you're building a feature branch, copy the branch name into your paste buffer to minimize typographical errors.
 
 
-``` { .bash .copy title="Add Dana pump to dev branch" }
+``` { .bash .copy title="Branch to Add Dana Pump Support" }
 feat/all-managers
 ```
 
