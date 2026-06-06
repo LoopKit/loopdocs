@@ -144,13 +144,13 @@ For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is
 
 ### Status for Medtrum Support
 
-Medtrum support was added to the `main` branch in version 3.14.2.
+Medtrum support was added to the released code, `main`, v3.14.2 or later.
 
 - - -
 
 ### Status for Eversense Support
 
-Eversense support was added to the `main` branch in version 3.14.2.
+Eversense support was added to the released code, `main`, v3.14.2 or later.
 
 - - -
 
@@ -231,7 +231,7 @@ If you previously used a feature branch for Medtrum or Eversense support, you ca
 !!! Question "What is different between `feat/all-managers` and `dev` branch"
     There are several differences between `feat/all-managers` and `dev` branch.  For one thing, this branch has all the pump managers: OmniBLE, OmniKit, OmnipodKit, DanaKit, MedtrumKit and MinimedKit and the new CGM manager EversenseKit. When other new managers become available, they may be added here for testing.
 
-    Keeping OmniBLE & OmniKit in this branch is useful for developers. Those pump managers were removed from `dev` branch (3.14.2) and will soon be removed from `main` when `dev` is merged into main. We expect those managers will eventually be dropped from this branch, but only when the developers agree to do so.
+    Keeping OmniBLE & OmniKit in this branch is useful for developers. Those pump managers were removed from `main` and `dev` branches (v3.14.2). We expect those managers will eventually be dropped from this branch, but only when the developers agree to do so.
 
     Because OmniBLE & OmniKit are present, a tester who comes in with a Pod attached to one of those managers stays with the manager. The automatic conversion to OmnipodKit, which happens with v3.14.2, does not happen with this branch. The tester has to manually change pump managers during a Pod change.
 

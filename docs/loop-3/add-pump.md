@@ -20,7 +20,7 @@ Loopers can choose from multiple pumps and a simulator:
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
-* [Dana-i / DanaRS-v3](#dana-i--danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
+* [Dana-i / DanaRS-v3](#dana-i-danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
 * Insulin Pump Simulator
 
@@ -47,7 +47,7 @@ Then continue with the appropriate section for your pump:
 * [Omnipod Setup](#omnipod-setup)
 * [Medtrum Nano Setup](#medtrum-nano-setup)
 * [Medtronic Minimed Setup](#medtronic-setup)
-* [Dana Setup](#dana-i--danars-v3-setup)
+* [Dana Setup](#dana-i-danars-v3-setup)
 
 
 ## Omnipod Setup

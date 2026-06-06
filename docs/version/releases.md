@@ -31,7 +31,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 ## Loop v3.14.2
 
-[*Loop* v3.14.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.2) was released on TBD June 2026.
+[*Loop* v3.14.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.2) was released on 6 June 2026.
 
 #### v3.14.2 Highlights
 
@@ -40,8 +40,8 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 * Added support for Eversense E3 and 365 CGM
 * Added support for Medtrum Nano Patch pumps
 * Replaced the old Pod pump managers with the new the universal OmnipodKit controller for Pods
-   * :warning: Pod users - your active Pod will be automatically transitioned to use OmnipodKit
-   * once you build v3.14.2, you can only downgrade by discarding your Pod
+    * :warning: Pod users - your active Pod will be automatically transitioned to use OmnipodKit
+    * once you build v3.14.2, you can only downgrade by discarding your Pod
 
 **Support**
 

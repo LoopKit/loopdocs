@@ -47,7 +47,7 @@ You must build a special branch to test some pumps. Please only test if you are 
 
 ### Omnipod Eros
 
-Eros pods (also known as Gen 3) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
+Eros pods (also known as Gen 3 or Classic) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
 
 !!! info "Alternative Names for Omnipod Eros Pump and Pods"
 
