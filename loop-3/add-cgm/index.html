@@ -4758,11 +4758,11 @@
 <li><a href="#dexcom-g5-g6-one">Dexcom G5</a></li>
 <li><a href="#dexcom-g5-g6-one">Dexcom G6 or ONE</a></li>
 <li><a href="#dexcom-g7-or-one">Dexcom G7 or ONE+</a></li>
-<li><a href="#libre">Libre</a> <strong>(<abbr title="Latest release with major updates">Loop 3</abbr>.4 and later)</strong><ul>
+<li><a href="#libre">Libre</a> <strong>(v3.4 or newer)</strong><ul>
 <li>Only some Libre sensors are supported; some have encryption that limits <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> use</li>
 </ul>
 </li>
-<li><a href="#eversense-e3365">Eversense E3/365</a> <strong><code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, v3.14.2</strong></li>
+<li><a href="#eversense-e3365">Eversense E3/365</a> <strong>v3.14.2 or newer</strong></li>
 <li><a href="#medtronic-enlite-cgm">Minimed Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a><ul>
 <li>Medtronic Pump only</li>
 <li><strong>You must <a href="../add-pump/">add the Medtronic pump</a> first</strong><ul>
@@ -4792,7 +4792,7 @@
 <p>Don't forgot to check your <a href="../../faqs/safety-faqs/#ios-focus-notifications"><abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> <em>Focus</em> Notifications</a> when you add or change your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>.</p>
 <ul>
 <li>Dexcom <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> must have the app for G6 or G7 added separately</li>
-<li>Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> (<code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only) must have <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> notifications turned on to get <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> alerts</li>
+<li>Libre <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> must have <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> notifications turned on to get <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> alerts</li>
 <li><abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> or other alerts: if you use another app to provide alerts, be sure to add them to <em>Focus</em> as well</li>
 </ul>
 </div>
@@ -4893,6 +4893,11 @@
 <ul>
 <li>If this is the first time you pair this transmitter with this phone / app, you might need to put the Transmitter into pairing mode before </li>
 </ul>
+<p>Step 3: Once connected to the Eversense Transmitter, tap on the row that says DMS Settings</p>
+<ul>
+<li>Choose if you want to upload your readings to Eversense DMS</li>
+<li>If you enable upload, you can invite followers to Eversense Now</li>
+</ul>
 <h4 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If you are having trouble with connecting to the Eversense, try these steps.</p>
 <ul>
@@ -4901,9 +4906,6 @@
 <li>Reboot your phone</li>
 </ul>
 <h4 id="important-information">Important Information<a class="headerlink" href="#important-information" title="Anchor link to this Header on this Page">&para;</a></h4>
-<div class="admonition warning">
-<p class="admonition-title">You must build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></p>
-</div>
 <div class="admonition important">
 <p class="admonition-title">Wait till initialization phase is completed</p>
 <p>During the initialization phase after insertion of a new sensor, the glucose reading might be incorrect.

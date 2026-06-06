@@ -5161,26 +5161,15 @@
 </ul>
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section provides an overview of changes to <code>dev</code> compared to the current release: <code>Loop v3.14.0</code>. </p>
-<p>The current version of <code>dev</code> is v3.14.2. This has some very significant changes - please read the bullets and the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> warning.</p>
+<p>This section provides an overview of changes to <code>dev</code> compared to the current release: <a href="../releases/#v3142-highlights" target="_blank"><code>Loop v3.14.2</code></a>. </p>
+<p>The current version of <code>dev</code> is v3.14.2 and is the same as <code>main</code>.</p>
 <ul>
-<li>The Medtrum Nano 200 U / 300 U pump manager is added to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and will be in the next release</li>
-<li>The Eversense E3 and 365 sensor <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> manager is added to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and will be in the next release</li>
-<li>The unified OmnipodKit pump manager, which controls either Classic (Eros) or DASH pods, is added to the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> and will be in the next release<ul>
-<li>The OmniBLE and OmniKit single-pod-type pump managers were removed from the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Those who have been using feature branches for Medtrum or Eversense support can now build the released code</li>
+<li>Those on the Dana pump must keep building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but the name of the <abbr title="version of code within a single repository or workspace repository">branch</abbr> changed<ul>
+<li>Dana users need to update the name of the <abbr title="version of code within a single repository or workspace repository">branch</abbr> they build to <code>feat/all-managers</code></li>
 </ul>
 </li>
 </ul>
-<div class="admonition important">
-<p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Users cannot return to v3.14.0 after building v3.14.2 without replacing their Pod</p>
-<p>The new unified <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pump Manager, OmnipodKit, is the only <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> pump manager available in v3.14.2.</p>
-<p>If you are running a Pod, you can install v3.14.2 over v3.14.0 or earlier and the Pod control will automatically transition to the OmnipodKit Pump Manager.</p>
-<p>If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod.</p>
-<ul>
-<li>If this happens to you: <strong>install v3.14.2 on your phone and control will be restored</strong>.</li>
-</ul>
-</div>
-<p>For those on the Dana pump. You need to keep building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but the name of the <abbr title="version of code within a single repository or workspace repository">branch</abbr> changed. The old one is still available but has been removed from LoopDocs.</p>
 <p>Please see <a href="#table-of-retired-branches">Table of Retired Branches</a> for up to date information about what <abbr title="version of code within a single repository or workspace repository">branch</abbr> you need to build for Dana support.</p>
 <p>Please check the <a href="https://loop.zulipchat.com/#narrow/channel/144182-development">development channel in zulipchat</a> for notifications when an update to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is expected so you will be prepared. Do this <strong>before</strong> you install a <code>dev</code> build from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>.</p>
 <h3 id="branches">Branches<a class="headerlink" href="#branches" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -5225,15 +5214,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;">main</td>
-<td style="text-align: left;">3.14.0</td>
-<td style="text-align: left;">14 May 2026</td>
+<td style="text-align: left;">3.14.2</td>
+<td style="text-align: left;">6 June 2026</td>
 <td style="text-align: left;">release</td>
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
 <td style="text-align: left;">3.14.2</td>
 <td style="text-align: left;">5 June 2026</td>
-<td style="text-align: left;">v3.14.2 has a breaking change wrt <code>main</code><br>- v3.14.1: <a href="https://github.com/LoopKit/LoopWorkspace/pull/452#top"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 452</a> add alert about dev <abbr title="version of code within a single repository or workspace repository">branch</abbr><br>- v3.14.2 <a href="https://github.com/LoopKit/LoopWorkspace/pull/453"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 453</a><br>- add MedtrumKit<br>- add EversenseKit<br>- add OmnipodKit<br>- delete OmniBLE and OmniKit<br><strong>Please read</strong> <a href="#transition-to-omnipodkit">Transition to OmnipodKit</a></td>
+<td style="text-align: left;">identical to main</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>1b4718f</code></td>
@@ -5267,17 +5256,17 @@
 <tbody>
 <tr>
 <td style="text-align: left;">feat/dev-dana-medtrum</td>
-<td style="text-align: left;">For Medtrum, use <code>dev</code><br>For Dana, use <code>feat/all-managers</code></td>
+<td style="text-align: left;">For Medtrum, use <code>main</code><br>For Dana, use <code>feat/all-managers</code></td>
 <td style="text-align: left;"><a href="#status-for-medtrum-support">Status for Medtrum</a><br><a href="#status-for-dana-support">Status for Dana</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">feat/eversense</td>
-<td style="text-align: left;">For Eversense, use <code>dev</code></td>
+<td style="text-align: left;">For Eversense, use <code>main</code></td>
 <td style="text-align: left;"><a href="#status-for-eversense-support">Status for Eversense</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">feat/omnipodkit</td>
-<td style="text-align: left;">Use <code>dev</code> unless you are a developer<br>developers can use <code>feat/all-managers</code></td>
+<td style="text-align: left;">Use <code>main</code> unless you are a developer<br>developers can use <code>feat/all-managers</code></td>
 <td style="text-align: left;"><a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a></td>
 </tr>
 </tbody>
@@ -5311,16 +5300,16 @@
 </ul>
 <hr />
 <h3 id="status-for-pod-keep-alive-support">Status for Pod Keep Alive Support<a class="headerlink" href="#status-for-pod-keep-alive-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, <code>main</code>, v3.14.0 or in the development code, <code>dev</code>, v3.14.2.</p>
+<p>For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, <code>main</code>, v3.14.0 or later.</p>
 <hr />
 <h3 id="status-for-medtrum-support">Status for Medtrum Support<a class="headerlink" href="#status-for-medtrum-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Medtrum support was added to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in version 3.14.2.</p>
+<p>Medtrum support was added to the released code, <code>main</code>, v3.14.2 or later.</p>
 <hr />
 <h3 id="status-for-eversense-support">Status for Eversense Support<a class="headerlink" href="#status-for-eversense-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Eversense support was added to the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> in version 3.14.2.</p>
+<p>Eversense support was added to the released code, <code>main</code>, v3.14.2 or later.</p>
 <hr />
 <h3 id="status-for-dana-support">Status for Dana Support<a class="headerlink" href="#status-for-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For Dana support, you must build a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, feat/all-managers. The old feature branches will be deleted without further warning.</p>
+<p>For Dana support, you must build a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>feat/all-managers</code>. The old feature branches will be deleted without further warning.</p>
 <ul>
 <li>Build instructions are found here: <a href="#how-to-build-feature-branches">How to Build Feature Branches</a>.</li>
 <li>See <a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a> for more information about the <abbr title="version of code within a single repository or workspace repository">branch</abbr>. </li>
@@ -5390,7 +5379,7 @@
 <div class="admonition question">
 <p class="admonition-title">What is different between <code>feat/all-managers</code> and <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></p>
 <p>There are several differences between <code>feat/all-managers</code> and <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.  For one thing, this <abbr title="version of code within a single repository or workspace repository">branch</abbr> has all the pump managers: OmniBLE, OmniKit, OmnipodKit, DanaKit, MedtrumKit and MinimedKit and the new <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> manager EversenseKit. When other new managers become available, they may be added here for testing.</p>
-<p>Keeping OmniBLE &amp; OmniKit in this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is useful for developers. Those pump managers were removed from <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> (3.14.2) and will soon be removed from <code>main</code> when <code>dev</code> is merged into main. We expect those managers will eventually be dropped from this <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but only when the developers agree to do so.</p>
+<p>Keeping OmniBLE &amp; OmniKit in this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is useful for developers. Those pump managers were removed from <code>main</code> and <code>dev</code> branches (v3.14.2). We expect those managers will eventually be dropped from this <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but only when the developers agree to do so.</p>
 <p>Because OmniBLE &amp; OmniKit are present, a tester who comes in with a Pod attached to one of those managers stays with the manager. The automatic conversion to OmnipodKit, which happens with v3.14.2, does not happen with this <abbr title="version of code within a single repository or workspace repository">branch</abbr>. The tester has to manually change pump managers during a Pod change.</p>
 </div>
 <h4 id="transition-to-omnipodkit">Transition to OmnipodKit<a class="headerlink" href="#transition-to-omnipodkit" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -5405,7 +5394,7 @@
 <li>Some new labels</li>
 <li>Some reworked sub-menus with added information or features</li>
 </ul>
-<p>If you are running the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> - your Pod is automatically transitioned to OmnipodKit. You will notice the user interface is a little different. If you are running <code>feat/all-managers</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, see <a href="#manual-transition-with-featall-managers">Manual transition with <code>feat/all-managers</code></a>.</p>
+<p>If you are running the <code>main</code> or <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> - your Pod is automatically transitioned to OmnipodKit. You will notice the user interface is a little different. If you are running <code>feat/all-managers</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, see <a href="#manual-transition-with-featall-managers">Manual transition with <code>feat/all-managers</code></a>.</p>
 <p>One of the biggest things is that you can change Pod types between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Types. With this version of OmnipodKit, only Eros and DASH are supported.</p>
 <div class="admonition question">
 <p class="admonition-title">Why OmnipodKit?</p>

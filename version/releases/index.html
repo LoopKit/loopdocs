@@ -3350,6 +3350,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3140" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4897,6 +4908,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3140" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5297,7 +5319,7 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.0 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.2 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
@@ -5308,6 +5330,34 @@
 </blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v3142"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.2<a class="headerlink" href="#loop-v3142" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.2"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.2</a> was released on 6 June 2026.</p>
+<h4 id="v3142-highlights">v3.14.2 Highlights<a class="headerlink" href="#v3142-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>
+<ul>
+<li>Added support for Eversense E3 and 365 <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
+<li>Added support for Medtrum Nano Patch pumps</li>
+<li>Replaced the old Pod pump managers with the new the universal OmnipodKit controller for Pods<ul>
+<li><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> Pod users - your active Pod will be automatically transitioned to use OmnipodKit</li>
+<li>once you build v3.14.2, you can only downgrade by discarding your Pod</li>
+</ul>
+</li>
+</ul>
+<p><strong>Support</strong></p>
+<ul>
+<li>The support files for browser build were updated to <abbr title="used as part of the GitHub Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> 2.235.0</li>
+<li>The Browser Build file was updated to use <abbr title="program used to build an app">Xcode</abbr> 26.4</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Users cannot return to v3.14.0 after building v3.14.2 without replacing their Pod</p>
+<p>The new unified <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pump Manager, OmnipodKit, is the only <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> pump manager available in v3.14.2.</p>
+<p>If you are running a Pod, you can install v3.14.2 over v3.14.0 or earlier and the Pod control will automatically transition to the OmnipodKit Pump Manager.</p>
+<p>If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod.</p>
+<ul>
+<li>If this happens to you: <strong>install v3.14.2 on your phone and control will be restored</strong>.</li>
+</ul>
+</div>
 <hr />
 <h2 id="loop-v3140"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.0<a class="headerlink" href="#loop-v3140" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.0"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.0</a> was released on 14 May 2026.</p>
