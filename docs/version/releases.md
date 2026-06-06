@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.0 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,37 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.2
+
+[*Loop* v3.14.2](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.2) was released on 6 June 2026.
+
+#### v3.14.2 Highlights
+
+**Loop Features**
+
+* Added support for Eversense E3 and 365 CGM
+* Added support for Medtrum Nano Patch pumps
+* Replaced the old Pod pump managers with the new the universal OmnipodKit controller for Pods
+    * :warning: Pod users - your active Pod will be automatically transitioned to use OmnipodKit
+    * once you build v3.14.2, you can only downgrade by discarding your Pod
+
+**Support**
+
+* The support files for browser build were updated to fastlane 2.235.0
+* The Browser Build file was updated to use Xcode 26.4
+
+!!! important "Omnipod Users cannot return to v3.14.0 after building v3.14.2 without replacing their Pod"
+    The new unified Omnipod Pump Manager, OmnipodKit, is the only Omnipod pump manager available in v3.14.2.
+
+    If you are running a Pod, you can install v3.14.2 over v3.14.0 or earlier and the Pod control will automatically transition to the OmnipodKit Pump Manager.
+
+    If you are running a Pod with v3.14.2, but reinstall 3.14.0 or earlier over it, there will not be an OmnipodKit Pump Manager available so you lose contact with your Pod.
+    
+    * If this happens to you: **install v3.14.2 on your phone and control will be restored**.
+
 
 - - -
 

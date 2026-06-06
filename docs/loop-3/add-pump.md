@@ -12,54 +12,26 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 
 Loopers can choose from multiple pumps and a simulator:
 
-* Minimed
-    * Note: only some Minimed pumps are compatible
+* [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
+    * Omnipod Classic (Eros)
+    * Omnipod DASH
+    * Omnipod O5 (coming soon)
+* [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
+* [Minimed](#medtronic-setup)
+    * Note: only some Medtronic Minimed pumps are compatible
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
-* Omnipod
-* Omnipod DASH
-* [All Omnipod Types](../version/development.md#transition-to-omnipodkit){: target="_blank" } (available with `dev` v3.14.2)
-* Dana-i / DanaRS-v3 (**work-in-progress; new pump manager, use with care**)
+* [Dana-i / DanaRS-v3](#dana-i-danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
-* Medtrum Nano patch pump (available in `dev` branch, v3.14.2)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
-    The Loop app and LoopDocs use these terms:
+    The Loop app and LoopDocs use these terms. For any supported Pod Type, select `All Omnipod Types` when choosing your pump.
 
-    * **Omnipod** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
+    * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
     * **Omnipod DASH** is the newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
-    * **Omnipod Common** means information common to Omnipod and Omnipod DASH
+    * **Omnipod 5** is not yet supported but will be included with the `All Omnipod Types` selection when it is added
 
-### Summary of Steps to Add a Pump
-
-Here is an overview of the different steps for adding each pump.  Before changing pumps, you need to delete the old pump first.  See [Change Pump Type](#change-pump-type) section below.
-
-#### Steps for Omnipod
-
-1. [Omnipod Common 1](#omnipod-common-1) (choose default notifications)
-1. [Insulin Type](#insulin-type)
-1. [Select RileyLink](#select-rileylink)
-1. [Omnipod Common 2](#omnipod-common-2) (Pair Pod)
-
-#### Steps for Omnipod DASH
-
-1. [Omnipod Common 1](#omnipod-common-1) (choose default notifications)
-1. [Insulin Type](#insulin-type)
-1. [Omnipod Common 2](#omnipod-common-2) (Pair Pod)
-
-
-#### Steps for Medtronic
-
-1. [Insulin Type](#insulin-type)
-1. [Select RileyLink](#select-rileylink)
-1. [Medtronic](#medtronic)
-
-#### Other Pumps
-
-> These are new pump managers that can be built using the `dev` branch for Medtrum or a [feature branch for Dana](../version/development.md#status-for-dana-support){: target="_blank" }.
-
-* [Dana-i / DanaRS-v3](#dana-i-danars-v3)
-* [Medtrum Nano](#medtrum-nano)
+- - -
 
 ## Add Pump
 
@@ -70,23 +42,151 @@ Tap on your Pump.
 ![graphic showing the pumps available with Loop 3](img/setting-add-pump.svg){width="500"}
 {align="center"}
 
+Then continue with the appropriate section for your pump:
 
-Medtronic pump users - skip ahead to [Insulin Type](#insulin-type).
+* [Omnipod Setup](#omnipod-setup)
+* [Medtrum Nano Setup](#medtrum-nano-setup)
+* [Medtronic Minimed Setup](#medtronic-setup)
+* [Dana Setup](#dana-i-danars-v3-setup)
 
-## Omnipod Common 1
 
-### Pod Nofication Defaults
+## Omnipod Setup
 
-Here are the common screens for adding Omnipod or Omnipod DASH showing the default settings. You can change the default settings later.
+You will see the welcome screen for `All Omnipod Types`. When done reading, tap on the blue Continue button.
 
-![initial screens for pod set up to define default notifications](img/pod-notification.svg){width="600"}
+![graphic showing the welcome screen for all omnipod types](img/pod-setup.png){width="250"}
 {align="center"}
 
-After you complete these screens, you select the insulin type.
 
-## Insulin Type
+### Pod Expiration Reminder
 
-For all pumps, you can choose from the insulin types below.
+In this screen, you choose the default expiration reminder you prefer. After you make your selection, tap on the blue Next button.
+
+![initial screen for pod expiration notifications](img/pod-expiration-reminder.png){width="250"}
+{align="center"}
+
+### Pod Low Reservoir Reminder
+
+In this screen, you choose the default low-reservoir reminder you prefer. After you make your selection, tap on the blue Next button.
+
+![initial screen for low-reservoir reminder](img/pod-low-reservoir.png){width="250"}
+{align="center"}
+
+### Pod Insulin Type
+
+In this screen, you choose the Insulin type you use for your pods. This screen is common for all pumps. After you make your selection, tap on the blue Continue button.
+
+![initial selection for insulin used in pump](img/add-pump-insulin.svg){width="250"}
+{align="center"}
+
+### Pod Type
+
+In this screen you choose the Pod Type you will be pairing. After you make your selection, tap on the blue Confirm Pod Type button.
+
+![initial selection for pod type](img/pod-type.png){width="250"}
+{align="center"}
+
+If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](#select-rileylink) screen before reaching the Pair Pod screen.
+
+### Pair Pod
+
+At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods.
+
+!!! tip "New Looper / New Podder"
+    Carefully review the [Pair Pod](omnipod.md#pair-pod){: target="_blank"} instructions before continuing. Then, when you are ready, pair a pod.
+
+    If you are not ready to fill and attach a pod with insulin, try filling a pod with water and let it drip into a ziplock bag to test running Loop on the pod. (Be sure the pod is not near anything when you hit "Insert Cannula".)
+
+    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/).
+
+## Medtrum Nano Setup
+
+
+### Medtrum is a New Pump Manager
+
+**Medtrum is available in released code with v3.14.2 or newer.**
+
+### Confirm Patch and Pump Base are Compatible
+
+!!! info "All versions are supported!"
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
+
+!!! warning "Always check your REF's"
+    Before connecting your pump base with your patch, always check the REF on your patch with the REF on your pump base.
+    The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1.
+    Do not use the patch if they do not match.
+
+    ![Medtrum REF](img/medtrum-ref.JPG){width="450"}
+    {align="center"}
+
+### Add Medtrum Nano Pump
+
+You can only add the Medtrum patch pump when no pump is selected.
+If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
+
+1. Select [Insulin Type](#insulin-type)
+1. Check [Patch settings](#patch-settings)
+1. Enter your [pump base Serial Number](#check-pump-base-serial-number)
+1. Prime & Activate patch. See [Activation flow patch](#activation-flow)
+    1. Note, make sure the pump base is connected to your patch before adding insulin
+
+![Full Medtrum flow](img/medtrum-total.png){align="center"}
+
+### Patch settings
+
+!!! info "Good to know"
+    All of these settings can be adjusted throughout the lifespan of the patch. You can safely update them after activating the patch
+
+There are several settings you can setup while using Medtrum nano with the *Loop* app:
+
+1. `Max hourly insulin` & `Max daily insulin`: Medtrum Nano does not work with max bolus and max basal settings, it uses max hourly & max daily insulin. Just like the names suggests, it controls the maximum amount of insulin per hour or per day. 
+1. `Alarm setting`: The Medtrum Nano has the ability to make a beep it there is an occlusion, patch fault, empty battery, etc. These alarms can also be silenced using this setting
+1. `Patch lifetime`: Normally, the medtrum nano runs for 3 days and 8 hours. This ensures the funcioning of the patch. You can disable this limit with this setting to extend the lifetime of the patch untill an failure occures, like an occlusion, empty battery, etc
+1. `Notification for expiration patch`: If the `Patch lifetime` setting is set to normal lifetime, you have the ability to update this setting. With this setting, you can control at what point you get a reminder notification for replacing the patch
+
+### Check pump base serial number
+
+After checking the patch settings, you are prompted to enter the pump base serial number.
+This serial number is used by the *Loop* app to connect to the correct pump base.
+To see your serial number, grab your pump base and look at the bottom of the base.
+It should have a QR code and a small 8 character serial number.
+See image below:
+
+![Medtrum SN example](img/medtrum-sn.png){width="450"}
+{align="center"}
+
+### Activation flow
+
+!!! warning "IMPORTANT"
+    While the priming is running, DO NOT USE THE CANCEL BUTTON.
+    This might corrupt the activation flow, so please be patience while the priming process is running.
+
+!!! warning "IMPORTANT"
+    Connect your pump base to the patch before adding insulin to your patch.
+    Otherwise, you might corrupt the activation flow.
+
+After the serial number prompt, you need to setup the patch itself.
+Follow the visual guide in the *Loop* app and press "Start priming" to start priming the cannula of the patch.
+It is important to not attach the patch on your body before the priming process completes.
+
+After priming, follow the rest of the visual guide in the *Loop* app.
+From here, you can attach the patch to your body and complete the activation process.
+
+- - -
+
+## Medtronic Setup
+
+After you choose Medtronic as your pump, you must go through these steps:
+
+1. Select [Insulin Type](#insulin-type)
+1. Select [RileyLink](#select-rileylink)
+1. [Prepare Medtronic Pump](#prepare-medtronic-pump)
+1. [Connect Pump to Loop](#connect-pump-to-loop)
+
+
+### Insulin Type
+
+You can choose from the insulin types below. This screen is common for all pumps. After you make your selection, tap on the blue Continue button.
 
 * Insulin Type
     * **Rapid Acting** (Novolog, Humalog, Apidra) or **Ultra Rapid** (Fiasp, Lyumjev)
@@ -95,15 +195,9 @@ For all pumps, you can choose from the insulin types below.
 ![initial selection for insulin used in pump](img/add-pump-insulin.svg){width="250"}
 {align="center"}
 
-To add a Omnipod DASH pump, skip ahead to [Omnipod Commom 2](#omnipod-common-2).
-
-Omnipod and Medtronic users should continue to select a RileyLink compatible device.
-
-## Omnipod or Medtronic
-
 ### Select RileyLink
 
-For Omnipod and Medtronic pumps, you need a RileyLink compatible device to Loop.  The Device and your phone must be kept close to your pump for Loop to work.
+For Omnipod Classic (Eros) and Medtronic pumps, you need a RileyLink compatible device to use the *Loop* app.  The Device and your phone must be kept close to your pump to work.
 
 !!! warning ""
     A new RileyLink compatible device is not listed next to its slider until after you connect the device to Loop. Find the little toggle in the device list, switch on that toggle, and the RileyLink will appear after the toggle is green.
@@ -122,33 +216,6 @@ If your device does not appear:
 
 If you are adding a Medtronic pump, skip ahead to [Medtronic](#medtronic).
 
-## Omnipod Common 2
-
-After selecting a RileyLink for Omnipod, all other actions for Omnipod and Omnipod DASH are the same. Once a pod is paired, the Pump display is the same, except the Omnipod screen has a RileyLink Devices section.
-
-For Omnipod (left) and Omnipod DASH (right), you should see the `Pair Pod` screen.
-
-![pair pod screens for Omnipod and Omnipod DASH](img/pair-pod-duo.svg){width="500"}
-{align="center"}
-
-At this point - you should hit `Cancel` (upper right of screen) and review the [Omnipod Common](omnipod.md) page before pairing a pod.
-
-!!! tip "New Looper / New Podder"
-    Carefully review the [Pair Pod](omnipod.md#pair-pod) instructions and the rest of the [Omnipod Common](omnipod.md) page before continuing. Then, when you are ready, pair a pod.
-
-    If you are not ready to fill and attach a pod with insulin, try filling a pod with water and let it drip into a ziplock bag to test running Loop on the pod. (Be sure the pod is not near anything when you hit "Insert Cannula".)
-
-    You may enjoy reading [Rufus the Bear](https://www.loopandlearn.org/sl-rufus/).
-
-## Medtronic
-
-If you followed this page to add your Medtronic pump, you have completed the first three steps.  If not, you can prepare your pump now, then do those first three steps using Loop (follow the links). All other steps be completed before you Connect the Pump.
-
-1. Select [Minimed](#add-pump) as your pump
-1. Select [Insulin Type](#insulin-type)
-1. Select [RileyLink](#select-rileylink)
-1. [Prepare Medtronic Pump](#prepare-medtronic-pump)
-1. [Connect Pump to Loop](#connect-pump-to-loop)
 
 ### Prepare Medtronic Pump
 
@@ -234,7 +301,7 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 
 The Medtronic status and commands available are shown in the [Pump Settings](medtronic.md) page.
 
-## Dana-i / DanaRS-v3
+## Dana-i / DanaRS-v3 Setup
 
 ### Check Dana Pump Version
 
@@ -372,107 +439,27 @@ DanaKit doesn't provide a heartbeat by default.
 
 Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-faq.md#heartbeat-modes){: target="_blank" }.
 
-## Medtrum Nano
-
-
-### Medtrum is a New Pump Manager
-
-**Medtrum is available in `dev` branch, v3.14.2.**
-
-You must build the `dev` branch to get Medtrum support in Loop.
-
-### Confirm Patch and Pump Base are Compatible
-
-!!! info "All versions are supported!"
-    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
-
-!!! warning "Always check your REF's"
-    Before connecting your pump base with your patch, always check the REF on your patch with the REF on your pump base.
-    The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1.
-    Do not use the patch if they do not match.
-
-    ![Medtrum REF](img/medtrum-ref.JPG){width="450"}
-    {align="center"}
-
-### Add Medtrum Nano Pump
-
-You can only add the Medtrum patch pump when no pump is selected.
-If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
-
-1. Select [Insulin Type](#insulin-type)
-1. Check [Patch settings](#patch-settings)
-1. Enter your [pump base Serial Number](#check-pump-base-serial-number)
-1. Prime & Activate patch. See [Activation flow patch](#activation-flow)
-    1. Note, make sure the pump base is connected to your patch before adding insulin
-
-![Full Medtrum flow](img/medtrum-total.png){align="center"}
-
-### Patch settings
-
-!!! info "Good to know"
-    All of these settings can be adjusted throughout the lifespan of the patch. You can safely update them after activating the patch
-
-There are several settings you can setup while using Medtrum nano with the *Loop* app:
-
-1. `Max hourly insulin` & `Max daily insulin`: Medtrum Nano does not work with max bolus and max basal settings, it uses max hourly & max daily insulin. Just like the names suggests, it controls the maximum amount of insulin per hour or per day. 
-1. `Alarm setting`: The Medtrum Nano has the ability to make a beep it there is an occlusion, patch fault, empty battery, etc. These alarms can also be silenced using this setting
-1. `Patch lifetime`: Normally, the medtrum nano runs for 3 days and 8 hours. This ensures the funcioning of the patch. You can disable this limit with this setting to extend the lifetime of the patch untill an failure occures, like an occlusion, empty battery, etc
-1. `Notification for expiration patch`: If the `Patch lifetime` setting is set to normal lifetime, you have the ability to update this setting. With this setting, you can control at what point you get a reminder notification for replacing the patch
-
-### Check pump base serial number
-
-After checking the patch settings, you are prompted to enter the pump base serial number.
-This serial number is used by the *Loop* app to connect to the correct pump base.
-To see your serial number, grab your pump base and look at the bottom of the base.
-It should have a QR code and a small 8 character serial number.
-See image below:
-
-![Medtrum SN example](img/medtrum-sn.png){width="450"}
-{align="center"}
-
-### Activation flow
-
-!!! warning "IMPORTANT"
-    While the priming is running, DO NOT USE THE CANCEL BUTTON.
-    This might corrupt the activation flow, so please be patience while the priming process is running.
-
-!!! warning "IMPORTANT"
-    Connect your pump base to the patch before adding insulin to your patch.
-    Otherwise, you might corrupt the activation flow.
-
-After the serial number prompt, you need to setup the patch itself.
-Follow the visual guide in the *Loop* app and press "Start priming" to start priming the cannula of the patch.
-It is important to not attach the patch on your body before the priming process completes.
-
-After priming, follow the rest of the visual guide in the *Loop* app.
-From here, you can attach the patch to your body and complete the activation process.
-
 ## Change Pump Type
 
 Before changing from one pump type to another pump type, you must delete the old pump type.
 
-* If you are using Medtronic or Dana (RS/-i), scroll to the bottom of the pump screen and select `Delete Pump`
+After you delete a pump, the [Heads-Up-Display](#pump-choices) at the top of the Loop main screen shows the add pump icon. When you tap on that, you are taken to the [Add Pump](#add-pump) screen
+
+
+
+* If you are using Medtronic Minimed or Dana (RS/-i), scroll to the bottom of the pump screen and select `Delete Pump`
 
 * If you are using Pump Simulator on the phone, you must tap on Simulator Settings and then scroll to the bottom of the pump screen and select `Delete Pump`
 
-* Before switching between Omnipod and Omnipod DASH or any kind of Omnipod to Medtronic, you must deactivate your current pod
-    * This does not include changing a pod, so long as the pods are of the same type
-    * The `Switch to other insulin delivery device` button will not be available with an active pod
-    * Follow along in the GIF below - it cycles though these steps.
+* If you are using Medtrum or Omnipod, you can only change pump types or Pod types when you are between Medtrum Patches or Omnipod Pods
 
-        * Go to the Omnipod screen and tap on Replace Pod
-        * Deactivate the pod
-        * When deactivation completes, tap on Cancel in upper right
-            * If you hit continue instead, tap cancel when Pair Pod screen appears
-        * On the main Loop screen, tap on the ! No Pod icon
-        * Scroll to the bottom of the screen
-        * Tap on `Switch to other insulin delivery device` and follow the directions to complete the task
+* With Omnipod, you can switch between Pod Types or choose a different pump (v3.14.2 or newer) but only after deactivating your current Pod
+    * This is not needed when you are changing a pod, so long as the pods are of the same type
+    * Tap on `Switch to another pod or pump type` when between pods
+    * If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Selection screen
+        * All of your configuration settings are maintained when switching Pod Types
+    * If you select Switch pump type, you can add a pump and go through the [Add Pump](#add-pump) screen
 
-    * Now the new pump type can be selected from settings or tapping on the add pump icon on the HUD
-
-    ![how to switch from any omnipod pump type to a different pump type](img/pod-type-change.gif){width="350"}
+    ![how to switch from any omnipod pot type to a different pod or pump type](img//omnipodkit-switch-pod-pump.png){width="350"}
     {align="center"}
-
-
-The [Head-Up-Display](#pump-choices) at the top of the Loop main screen will now show the add pump icon.
 

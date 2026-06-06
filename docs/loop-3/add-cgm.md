@@ -13,9 +13,9 @@ Loop can be connected to the following CGMs:
     * [Dexcom G5](#dexcom-g5-g6-one)
     * [Dexcom G6 or ONE](#dexcom-g5-g6-one)
     * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
-    * [Libre](#libre) **(Loop 3.4 and later)**
+    * [Libre](#libre) **(v3.4 or newer)**
         * Only some Libre sensors are supported; some have encryption that limits DIY use
-    * [Eversense E3/365](#eversense-e3365) **`dev` branch, v3.14.2**
+    * [Eversense E3/365](#eversense-e3365) **v3.14.2 or newer**
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
         * **You must [add the Medtronic pump](add-pump.md) first**
@@ -40,7 +40,7 @@ If you later decide to use a different CGM type, you must first delete the CGM a
     Don't forgot to check your [iOS *Focus* Notifications](../faqs/safety-faqs.md#ios-focus-notifications) when you add or change your CGM.
 
     * Dexcom CGM must have the app for G6 or G7 added separately
-    * Libre CGM (`dev` branch only) must have Loop notifications turned on to get CGM alerts
+    * Libre CGM must have Loop notifications turned on to get CGM alerts
     * Nightscout or other alerts: if you use another app to provide alerts, be sure to add them to *Focus* as well
 
 ### Remote Upload from Loop
@@ -176,6 +176,11 @@ Step 2: Select the correct transmitter name (see SN at the bottom of your transm
 
 * If this is the first time you pair this transmitter with this phone / app, you might need to put the Transmitter into pairing mode before 
 
+Step 3: Once connected to the Eversense Transmitter, tap on the row that says DMS Settings
+
+* Choose if you want to upload your readings to Eversense DMS
+* If you enable upload, you can invite followers to Eversense Now
+
 #### Troubleshooting
 
 If you are having trouble with connecting to the Eversense, try these steps.
@@ -186,7 +191,6 @@ If you are having trouble with connecting to the Eversense, try these steps.
 
 #### Important Information
 
-!!! warning "You must build the `dev` branch to use the Eversense CGM"
 
 !!! important "Wait till initialization phase is completed"
     During the initialization phase after insertion of a new sensor, the glucose reading might be incorrect.

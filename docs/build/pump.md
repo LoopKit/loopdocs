@@ -2,36 +2,102 @@
 
 !!! info "Time Estimate"
     - Omnipod users: 3 seconds to remember which Personal Diabetes Manager (PDM) you've been using.
+    - Medtrum Nano users: both 200 U and 300 U patches are supported
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
-    - Other pump users: 5 days to email friends asking them to check closets for their old Medtronic pump or call your insurance to start prior authorization for Omnipod
+    - Dana users: you must be willing to build a feature branch and understand the known issues
 
 !!! abstract "Summary"
-    - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - If you use [Omnipod](#omnipod-pumps) - check which kind
+    - If you use [Medtrum Nano](#medtrum-nano) - your pump is supported
+    - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - For expert testers only, must build a special branch:
         - If you use [Dana](#sooil-dana-pumps) - check which kind
-        - If you use [Medtrum Nano](#medtrum-nano) - click the link
 
 !!! question "FAQs"
     - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
     - **"What are the differences between Medtronic pump models?"** This question is answered in the [Extra Details](#extra-details-on-medtronic) section.
-    - **"But what about the other types of pumps?"** No other pumps work with the *Loop* app at this time.
+    - **"But what about the other types of pumps?"** Only the pumps listed in Summary work with the *Loop* app at this time.
         - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps
     - **"Can I change the firmware of my Medtronic pump?"** No.
+
+- - -
 
 ## Pumps Compatible with the *Loop* app
 
 These types of pumps are compatible with the *Loop* app.
 
-* [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
-* [Omnipod Eros pumps](pump.md#omnipod-pumps)
-* [Omnipod DASH pumps](#omnipod-dash)
+* [Omnipod Eros Pods](pump.md#omnipod-pumps)
+* [Omnipod DASH Pods](#omnipod-dash)
     * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
-* [Medtrum Touchcare Nano](#medtrum-nano) (included in `dev` branch, planned for next release)
+* [Omnipod 5 Pods](#omnipod-5) are not supported yet
+* [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
+* [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 
 You must build a special branch to test some pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
 
 * [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress, included in `feat/all-managers` branch)
+
+- - -
+
+## Omnipod Pumps
+
+!!! warning "Reminder and Disclaimer"
+
+    The use of Omnipod pumps with the *Loop* app is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your *Loop* app build, setup, or operation. You are fully responsible for your use of the *Loop* app and do so at your own risk. Please read these documents and familiarize yourself with the *Loop* app before using it.
+
+### Omnipod Eros
+
+Eros pods (also known as Gen 3 or Classic) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
+
+!!! info "Alternative Names for Omnipod Eros Pump and Pods"
+
+    **Eros** pump is also known as **Classic**, or **UST400**, or *Omnipod Insulin Management* **System**.  
+
+    Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods. 
+    
+Eros system has a big Personal Diabetes Manager (PDM) that does not look like a phone.
+
+![img/eros.png](img/eros.png){width="750"}
+{align="center"}
+
+### Omnipod DASH
+
+The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device.
+
+**A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
+
+![img/dash.png](img/dash.png){width="750"}
+{align="center"}
+
+[See warning about iPhone 16 with DASH](phone.md#compatible-device){: target="_blank" }.
+
+### Omnipod 5
+
+Loop does not support Omnipod 5 pods yet but it is coming soon. 
+
+* There is an on-going private beta test with Omnipod 5
+* We cannot give a timeline for when this will land in `dev` for public beta
+
+- - -
+
+## Medtrum Nano
+
+Medtrum support was added to version 3.14.2.
+
+!!! info "All versions are supported!"
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with v3.14.2 or newer of the *Loop* app.
+
+**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Loop* app.**
+
+
+The Medtrum patch pump is the second tubeless pump option available to the *Loop* app.
+The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
+It uses a steel cannula, instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
+
+![Medtrum Nano 200U](img/medtrum.jpeg){width="250"}
+{align="center"}
+
+- - -
 
 ## Check Medtronic Pump Version
 
@@ -157,41 +223,7 @@ Red flags that may indicate a scam:
 
 Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.
 
-## Omnipod Pumps
-
-!!! warning "Reminder and Disclaimer"
-
-    The use of Omnipod pumps with the *Loop* app is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your *Loop* app build, setup, or operation. You are fully responsible for your use of the *Loop* app and do so at your own risk. Please read these documents and familiarize yourself with the *Loop* app before using it.
-
-### Omnipod Eros
-
-Eros pods (also known as Gen 3) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
-
-!!! info "Alternative Names for Omnipod Eros Pump and Pods"
-
-    **Eros** pump is also known as **Classic**, or **UST400**, or *Omnipod Insulin Management* **System**.  
-
-    Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods. 
-    
-Eros system has a big Personal Diabetes Manager (PDM) that does not look like a phone.
-
-![img/eros.png](img/eros.png){width="750"}
-{align="center"}
-
-### Omnipod DASH
-
-The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device.
-
-**A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
-
-![img/dash.png](img/dash.png){width="750"}
-{align="center"}
-
-[See warning about iPhone 16 with DASH](phone.md#compatible-device){: target="_blank" }.
-
-### Omnipod 5
-
-Loop does not support Omnipod 5 pods.
+- - -
 
 ## Sooil Dana pumps
 
@@ -222,22 +254,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
 
-## Medtrum Nano
-
-Medtrum support was added to the `dev` branch in version 3.14.2, and will be included in the next release.
-
-!!! info "All versions are supported!"
-    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
-
-**Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Loop* app.**
-
-
-The Medtrum patch pump is the second tubeless pump option available to the *Loop* app.
-The patch pump is 13.8gram, 40.5mm X 31.5mm x 11.5mm, making it the smallest and most discreet patch pump on the market as of now.
-It uses a steel cannula, instead of the Teflon cannula of the Omnipods, with a virtually painless insertion.
-
-![Medtrum Nano 200U](img/medtrum.jpeg){width="250"}
-{align="center"}
+- - -
 
 ## Next Step: Compatible CGM
 
