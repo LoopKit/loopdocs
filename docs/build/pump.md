@@ -82,10 +82,10 @@ Loop does not support Omnipod 5 pods yet but it is coming soon.
 
 ## Medtrum Nano
 
-Medtrum support was added to the `dev` branch in version 3.14.2, and will be included in the next release.
+Medtrum support was added to version 3.14.2.
 
 !!! info "All versions are supported!"
-    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with the correct version of the *Loop* app.
+    Both 200U (MD0201 & MD8201) and 300U (MD8301) version are supported with v3.14.2 or newer of the *Loop* app.
 
 **Every Medtrum patch pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Medtrum patch pump with the *Loop* app.**
 

@@ -6,6 +6,8 @@
     
     Please review the [EversenseKit Issues](https://github.com/bastiaanv/EversenseKit/issues) page for open issues reported for the EversenseKit CGM Manager.
 
+- - -
+
 ## Using Eversense with the *Loop* App
 
 Eversense support was added to the `dev` branch in version 3.14.2.
@@ -16,6 +18,8 @@ The user interface for the 365 sensor is shown below.
  
 ![consolidated view of the status and command screen for eversense main screen](img/eversense-user-interface.svg){width="300"}
 {align="center"}
+
+- - -
 
 ## Calibration and Battery Indicators
 
@@ -31,6 +35,22 @@ The calibration status and battery level is highlighted at the top of the Everse
 
 * The left screenshot shows an orange line indicating a calibration is due in less than 24 hours
 * The right screenshot is after calibration
+
+- - -
+
+## Upload Glucose and Share with NOW
+
+If you want to upload your readings to the Eversense servers tap on the DMS Settings row in the Eversense screen
+
+* Enable Upload
+* Enter your Eversense Credentials
+
+If you want to share your readings using Eversense NOW, you can invite them from this same screen.
+ 
+![eversense calibration status](img/eversense-dms.png){width="300"}
+{align="center"}
+
+- - - 
 
 ## *Loop* Main Screen
 
