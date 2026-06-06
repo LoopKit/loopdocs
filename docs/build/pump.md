@@ -191,7 +191,10 @@ The DASH system has the newer, slimmer locked-android Personal Diabetes Manager 
 
 ### Omnipod 5
 
-Loop does not support Omnipod 5 pods.
+Loop does not support Omnipod 5 pods yet but it is coming soon. 
+
+* There is an on-going private beta test with Omnipod 5
+* We cannot give a timeline for when this will land in `dev` for public beta
 
 ## Sooil Dana pumps
 
