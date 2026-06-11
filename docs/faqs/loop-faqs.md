@@ -74,7 +74,7 @@ Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
     * The *Xcode* app (from from Apple) must also be updated regular
 * If you have a pump that requires a [RileyLink Compatible Device](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
     * The RileyLink is only required for loopable Medtronic pumps and the older Eros Omnipod patch pumps
-    * No RileyLink is needed for the BLE pumps such as DASH, DanaKit and soon-to-be-implemented Medtrum patch pump
+    * No RileyLink is needed for the BLE pumps such as DASH, DanaKit and Medtrum patch pump
 
 There are no other costs, ongoing or initial, to use the *Loop* app beyond what you already pay for your CGM, pump supplies and insulin.
 
@@ -186,9 +186,11 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 This [link](../build/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS Open-Source community. You need to consider which ones are available in your country.
 
-You can use Omnipod DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
+You can use Omnipod DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM) to use Omnipod with Loop, however, Insulet may ask for the PDM serial number when requesting pod replacements. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
 
 There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+
+Medtrum pumps are compatible with the released version of Loop v3.14.2 or newer.
 
 Some Looping equipment can be found on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945). This is a private FB group where you must agree to the rules.
 
@@ -238,7 +240,6 @@ Hey now...let's be grateful for what we have first. The ability to use the *Loop
 * Tandem pumps are not compatible (yet)
 * Omnipod 5 pods are not compatible (yet)
 * Dana pumps are available using a feature branch
-* Medtrum pumps are available using a feature branch
 * Newer Medtronic pumps are not compatible
 
 In fact there are several OS-AID systems for iOS which use a common set of pump and CGM repositories. And new ones are being developed.
