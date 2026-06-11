@@ -8,7 +8,7 @@
  
 ## Medtrum Nano Pump
 
-The Medtrum Nano Pump support was added to the `dev` branch in version 3.14.2.
+The Medtrum Nano Pump support is included in both the `main` and `dev` branches as of version 3.14.2.
 
 * The pump patch is designed to be changed every 3 days
 * The pump base is reusable - do not accidentally discard the base after removing the patch
