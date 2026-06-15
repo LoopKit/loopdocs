@@ -107,7 +107,7 @@ cd LoopWorkspace
 xed .
 ```
 
-Remember the warning - if you build the `dev` branch on your phone from `Loop main`, it should work fine. Going backward, please delete the app from your phone and enter all your settings again to return to `main`.
+Remember the warning - if you move to the `dev` branch on your phone from `Loop main`, it should work fine. Going backward, you may need to delete the app from your phone and enter all your settings again to return to `main`.
 
 
 ### Start Xcode using Finder
