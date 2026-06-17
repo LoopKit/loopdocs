@@ -150,24 +150,27 @@ For example, if you see "Invalid active developer path (/Library/Developer/Comma
 
 ## Specific Error Messages
 
-### Unable to read included file `LoopConfigOverride.xcconfig`
+### in Xcode, Unable to read included file `LoopConfigOverride.xcconfig` or in Terminal `LoopConfigOverride.xcconfig`: Operation not permitted
 
 **Error Message:**
-This error occurs inside *Xcode* with the build halting at the line that reads the `LoopConfigOverride.xcconfig` file.
+This error occurs inside *Xcode* with the build halting at the line that reads the `LoopConfigOverride.xcconfig` file, or in Terminal when trying to customize a prior download of Loop.
 
 ![xcode does not have permission to read downloads folder](img/xcode-permission-error.jpg){width="650"}
 {align="center"}
 
+
 **Solution:**
 
-Modify the permissions for *Xcode* in your macOS.
+Modify the permissions for *Xcode* and *Terminal* in your macOS.
 
 The graphic below has steps labeled 1 through 4 to guide you to the setting that must be enabled for you to build the app with *Xcode*.
 
 1. Open the macOS settings (*Apple* icon) and navigate to Privacy & Security
 1. Select Files and Folders
 1. Select *Xcode*
-1. Ensure that Downloads Folder is enabled
+1. The graphic below shows that the Downloads Folder is enabled, however in newer macOS, your only option may be to grant Full Disk Access.
+2. Additionally, if your error has occured while trying to add customizations, select *Terminal*
+3. The graphic below shows that the Downloads Folder is enabled for *Xcode*, however it's the same process for *Terminal*. 
 
 ![check privacy settings for xcode access to downloads folder](img/set-xcode-file-permissions.png){width="750"}
 {align="center"}
