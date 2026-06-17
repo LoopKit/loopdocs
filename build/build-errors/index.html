@@ -1838,10 +1838,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unable-to-read-included-file-loopconfigoverridexcconfig" class="md-nav__link">
+  <a href="#in-xcode-unable-to-read-included-file-loopconfigoverridexcconfig-or-in-terminal-loopconfigoverridexcconfig-operation-not-permitted" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Unable to read included file LoopConfigOverride.xcconfig
+        in Xcode, Unable to read included file LoopConfigOverride.xcconfig or in Terminal LoopConfigOverride.xcconfig: Operation not permitted
       
     </span>
   </a>
@@ -4919,10 +4919,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#unable-to-read-included-file-loopconfigoverridexcconfig" class="md-nav__link">
+  <a href="#in-xcode-unable-to-read-included-file-loopconfigoverridexcconfig-or-in-terminal-loopconfigoverridexcconfig-operation-not-permitted" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Unable to read included file LoopConfigOverride.xcconfig
+        in Xcode, Unable to read included file LoopConfigOverride.xcconfig or in Terminal LoopConfigOverride.xcconfig: Operation not permitted
       
     </span>
   </a>
@@ -5342,18 +5342,20 @@ The build errors listed below (and the checks listed above) will fix most of the
 <p>For example, if you see "Invalid active developer path (/Library/Developer/CommandLineTools)" in your error message, use the search tool in LoopDocs with "invalid active". You will get a couple of links and one is the Command Line Tools fix for that error message. Click on the link and you'll find the solution.</p>
 <p><img alt="img/search-errors.png" src="../img/search-errors.png" width="650" /></p>
 <h2 id="specific-error-messages">Specific Error Messages<a class="headerlink" href="#specific-error-messages" title="Anchor link to this Header on this Page">&para;</a></h2>
-<h3 id="unable-to-read-included-file-loopconfigoverridexcconfig">Unable to read included file <code>LoopConfigOverride.xcconfig</code><a class="headerlink" href="#unable-to-read-included-file-loopconfigoverridexcconfig" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="in-xcode-unable-to-read-included-file-loopconfigoverridexcconfig-or-in-terminal-loopconfigoverridexcconfig-operation-not-permitted">in <abbr title="program used to build an app">Xcode</abbr>, Unable to read included file <code>LoopConfigOverride.xcconfig</code> or in <abbr title="interface for entering commands to the computer">Terminal</abbr> <code>LoopConfigOverride.xcconfig</code>: Operation not permitted<a class="headerlink" href="#in-xcode-unable-to-read-included-file-loopconfigoverridexcconfig-or-in-terminal-loopconfigoverridexcconfig-operation-not-permitted" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Error Message:</strong>
-This error occurs inside <em><abbr title="program used to build an app">Xcode</abbr></em> with the build halting at the line that reads the <code>LoopConfigOverride.xcconfig</code> file.</p>
+This error occurs inside <em><abbr title="program used to build an app">Xcode</abbr></em> with the build halting at the line that reads the <code>LoopConfigOverride.xcconfig</code> file, or in <abbr title="interface for entering commands to the computer">Terminal</abbr> when trying to customize a prior download of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
 <p align="center"><img alt="xcode does not have permission to read downloads folder" src="../img/xcode-permission-error.jpg" width="650" /></p>
 <p><strong>Solution:</strong></p>
-<p>Modify the permissions for <em><abbr title="program used to build an app">Xcode</abbr></em> in your <abbr title="operating system for Mac computer">macOS</abbr>.</p>
+<p>Modify the permissions for <em><abbr title="program used to build an app">Xcode</abbr></em> and <em><abbr title="interface for entering commands to the computer">Terminal</abbr></em> in your <abbr title="operating system for Mac computer">macOS</abbr>.</p>
 <p>The graphic below has steps labeled 1 through 4 to guide you to the setting that must be enabled for you to build the app with <em><abbr title="program used to build an app">Xcode</abbr></em>.</p>
 <ol>
 <li>Open the <abbr title="operating system for Mac computer">macOS</abbr> settings (<em>Apple</em> icon) and navigate to Privacy &amp; Security</li>
 <li>Select Files and Folders</li>
 <li>Select <em><abbr title="program used to build an app">Xcode</abbr></em></li>
-<li>Ensure that Downloads Folder is enabled</li>
+<li>The graphic below shows that the Downloads Folder is enabled, however in newer <abbr title="operating system for Mac computer">macOS</abbr>, your only option may be to grant Full Disk Access.</li>
+<li>Additionally, if your error has occured while trying to add customizations, select <em><abbr title="interface for entering commands to the computer">Terminal</abbr></em></li>
+<li>The graphic below shows that the Downloads Folder is enabled for <em><abbr title="program used to build an app">Xcode</abbr></em>, however it's the same process for <em><abbr title="interface for entering commands to the computer">Terminal</abbr></em>. </li>
 </ol>
 <p align="center"><img alt="check privacy settings for xcode access to downloads folder" src="../img/set-xcode-file-permissions.png" width="750" /></p>
 <h3 id="the-file-could-not-be-unlocked">The File Could not be Unlocked<a class="headerlink" href="#the-file-could-not-be-unlocked" title="Anchor link to this Header on this Page">&para;</a></h3>
