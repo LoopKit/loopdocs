@@ -1,6 +1,16 @@
-## Omnipod and Omnipod DASH Pump
+## Overview
 
-The information and user interface for Omnipod (Eros) and DASH pods is the same, except Omnipod DASH pods do not require a RileyLink compatible device. They communicate directly with the phone through Bluetooth.
+The information and user interface for all Omnipod Pods is the same, except Omnipod 5 and DASH pods do not require a RileyLink compatible device. They communicate directly with the phone through Bluetooth.
+
+!!! warning "O5 is in beta test"
+    Omnipod 5 Pods should only be tested by experienced users willing to build a development branch: 
+    
+    * LoopWorkspace `dev`
+    * LoopWorkspace `next-dev`
+
+    The timing for when O5 is supported in these branches depends on when Pull Requests are merged.
+
+    Please thoroughly read [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } before attempting to use one of these branches.
 
 ## Pair Pod
 
@@ -12,11 +22,11 @@ The information and user interface for Omnipod (Eros) and DASH pods is the same,
 !!! info "Pod Filling and Insertion"
     The Pod filling and insertion instructions are the same with the Loop app as they are for the PDM.  These videos: [Filling a Pod with Insulin](https://youtu.be/qJBN6rlvn_Y) and [Inserting the Cannula](https://youtu.be/ss1vpsmaLoI), may be useful.
 
-    For DASH Pods:
+    For Omnipod 5 and DASH Pods:
 
     * You will use your phone instead of the PDM.  Be sure to keep the phone close to the pod during pairing and insertion because the Pod uses a low-power mode during these activities.
 
-    For Eros Pods:
+    For Classic or Eros Pods:
 
     * You will use your phone and RileyLink compatible device instead of the PDM.  Be sure to keep the phone and RileyLink close during pairing and insertion because the Pod uses a low-power mode during these activities.
 
@@ -24,11 +34,11 @@ You'll be pairing a pod every 2 or 3 days (max pod life is 80 hours).
 
 You'll see this screen every time you ask Loop to `Pair New Pod`.
 
-The Omnipod Common pairing protocol is the same for all pods. The difference is that Omnipod requires a RileyLink compatible device and Omnipod DASH does not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and Omnipod has a clear needle cap.
+The Omnipod Common pairing protocol is the same for all pods. The difference is that Classic or Eros Pods require a RileyLink compatible device and Omnipod 5 and DASH do not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and both the Classic and Omnipod 5 pods use a clear needle cap.
 
-Graphic below shows the Pair Pod screen for Omnipod (left) and Omnipod DASH (right).
+Graphic below shows the Pair Pod screen for Eros (left), DASH (middle) and O5 (right).
 
-![pair pod screens for Omnipod and Omnipod DASH](img/pair-pod-duo.svg){width="500"}
+![pair pod screens for Classic, DASH and Omnipod 5 Pods](img/pair-pod-screens.svg){width="750"}
 {align="center"}
 
 !!! abstract ""
@@ -388,9 +398,9 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-No better solution has been found for dealing with Atlas pods with iPhone 16 (all models) and iPhone 17e. Therefore, the features previously found just in the `feat/pod-keep-alive` branch of LoopWorkspace are part of the released code as of version 3.14.0.
+No better solution has been found for dealing with the difficulty reconnecting Atlas pods with iPhone 16 (all models) and iPhone 17e. Therefore, the features previously found just in the `feat/pod-keep-alive` branch of LoopWorkspace are part of the released code as of version 3.14.0.
 
-There is a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
+There is a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 
 It was tested for LoopWorkspace and Trio.
 
@@ -436,6 +446,12 @@ Once the pod is inserted, the phone auto-lock timing is restored to the value th
 When the app is open, it will send a getStatus to the pod 2:40 (mm:ss) after the last pod message was exchanged. This means the pod does not disconnect from BLE and remains available to the phone.
 
 This is true as long as the phone and pod are in-range while the app is open with phone unlocked.
+
+This mode is primarily to help out people who just paired an Atlas Pod for the first time with an iPhone 16 or 17e. It is meant to keep the Pod connected to the phone until the cannula is inserted.
+
+> Imagine - you just hit retry 5 times to get the Pod to pair and prime and then when it's time to insert the cannula, the Pod has disconnected because it was more than 3 minutes since the last message exchange.  Then you have to keep hitting retry until the insertion process finally starts. With When Open, the pod stays connected through the entire process of pairing, priming and inserting so long as the user does not manually lock the phone or move to another app.
+
+The user should choose with Silent Tune or Riley Link going forward if they want to have reliable communication between their iPhone 16/17e and an Atlas Pod.
 
 > If the pod moves out of Bluetooth range, the pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the pod once it is back in range. This can cause disruptions until the reconnect happens.
 

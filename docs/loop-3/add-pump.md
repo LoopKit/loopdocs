@@ -15,7 +15,7 @@ Loopers can choose from multiple pumps and a simulator:
 * [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
     * Omnipod Classic (Eros)
     * Omnipod DASH
-    * Omnipod O5 (coming soon)
+    * Omnipod O5 (`dev` and `next-dev` only) See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" }
 * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
@@ -29,7 +29,7 @@ Loopers can choose from multiple pumps and a simulator:
 
     * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
     * **Omnipod DASH** is the newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
-    * **Omnipod 5** is not yet supported but will be included with the `All Omnipod Types` selection when it is added
+    * **Omnipod 5** is not yet supported in the release code but when it is, it will be included with the `All Omnipod Types` selection
 
 - - -
 
