@@ -28,6 +28,10 @@ With no recent glucose readings, your pump returns to the scheduled basal delive
 
 Loop continues to accept carb entries and manual bolus commands. [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
 
+### Is the 15-day *Dexcom* G7 Supported?
+
+Yes. Support for the 15-day *Dexcom* G7 was added with *Loop* v3.10.0 in January 2026.
+
 ### *Dexcom* G7 Warmup
 
 The *Dexcom* G7 (and ONE+) begins warming up as soon as you insert the device and completes in less than half an hour. Many Loopers use the combination of this warmup upon insertion and the 12-hour grace period offered by the G7 to have continuous CGM readings with no gap.

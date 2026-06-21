@@ -44,9 +44,9 @@ If the *Dexcom* app is on the same device as the *Loop* app, your system can fun
 
 ## *Dexcom* G7 and ONE+ CGM
 
-The *Dexcom* G7 and ONE+ CGM transmits data directly to the *Dexcom* app on your iPhone via Bluetooth.
+The *Dexcom* G7 (10-day and 15-day) and ONE+ CGM transmits data directly to the *Dexcom* app on your iPhone via Bluetooth.
 
-The *Dexcom* ONE+, available in some countries, acts just like the G7 as far as the *Loop* app is concerned. 
+The *Dexcom* ONE+, available in some countries, acts just like the G7 as far as the *Loop* app is concerned.
 
 ## *Libre* CGM
 
