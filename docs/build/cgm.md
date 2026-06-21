@@ -57,6 +57,7 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
 * These *Libre* CGM are not supported within the *Loop* app
     * American (Canada, US, South American) *Libre* 2
     * *Libre* 3
+* Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev) for experienced users
 * See [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
 ## *Eversense* E3 and 365 CGM

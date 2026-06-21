@@ -2,13 +2,15 @@
 
 The following CGM are supported by some or all versions of Loop:
 
-* All *Dexcom* CGM (Loop 3 and later)
-* Some *Libre* CGM (Loop 3.4 and later)
-* Eversense E3 and 365 (Loop 3.11 and later, via an experimental feature branch)
+* All *Dexcom* CGM (*Loop* v3 and later)
+    * This includes 15-day G7 CGM
+* Some *Libre* CGM (*Loop* v3.4 and later)
+    * Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev) for experienced users
+* Eversense E3 and 365 (included with *Loop* v3.14.2 and newer)
 * Medtronic Enlite CGM when used with a compatible pump
 * Remote CGM (requires internet access)
     * *Dexcom* Share
-    * Nightscout as CGM (Loop 3 and later)
+    * Nightscout as CGM (*Loop*  v3 and later)
 
 See also: [Compatible CGM](../build/cgm.md){: target="_blank" } and [CGM Customization](#cgm-customization)
 
@@ -122,6 +124,8 @@ Loop 3.4.x and later enables the use of those *Libre* sensors supported by [Libr
 
 ### What about other *Libre* sensors?
 
+> Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+
 There are a number of *Libre* sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [*LibreLinkUp*](https://librelinkup.com/). This enables you to upload your data to the *LibreLinkUp* servers and then access the data from there.
 
 **The use of *LibreLinkUp* requires internet access via WiFi or Cell service.**
@@ -142,6 +146,8 @@ With `dev` branch, 3.14.2 and later, Eversense is included in the Loop build.
 Yes.
 
 ## CGM Customization
+
+> Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
 
 If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the *xDrip4iOS* DIY CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
 
