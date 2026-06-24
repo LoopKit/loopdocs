@@ -1,10 +1,10 @@
 ## Which Pods work with the *Loop* app?
 
-You can use Omnipod 5, DASH and Eros Omnipod Pods with the *Loop* app.
+You can use Omnipod 5 (under test), DASH and Eros Pods with the *Loop* app.
 
 * The Omnipod 5 is only available in the development branches while in open beta testing
 
-You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost. The PDM may be needed in some countries to get replacements for failed Pods.
 
 !!! info "Alternative Names for Omnipod Pods"
 
@@ -13,14 +13,14 @@ You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod suppli
     * **Eros** Pods are also known as **Classic** or **UST400**
         * The Reference number on the boxes should be similar to POD-ZXP425
         * They have a clear needle cap
-        * Pharmacy sites sometimes may refer to the **Eros Pods** as **Gen 3** but they are the same exact Pods
+        * Pharmacy sites sometimes may refer to the **Eros Pods** as **Gen 3** but they are the same Pods
 
     * **DASH** Pods have DASH in the name
-        * The Reference number on the box should be similar to POD-BLE-P1-525 (note the **P**)
+        * The Reference number on the box should be similar to POD-BLE-P1-525
         * They have a blue needle cap
 
     * **Omnipod 5** Pods have 5 in the name
-        * The Reference number on the box should be similar to POD-OMNI-I1-6720 (note the **OMNI**)
+        * The Reference number on the box should be similar to POD-OMNI-I1-6720
         * They have a clear needle cap
 
 DASH and Omnipod 5 pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
@@ -45,7 +45,7 @@ We have looked at the analytics reported from Loop users who [share their data](
 !!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
     **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH Pods. This can cause delays to automatic and manual insulin dosing.
 
-    **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-fault) which affects all phone models and seems to be box specific.
+    **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) which affects all phone models and seems to be box specific.
 
 Beginning in 2025, some of the DASH Pods are produced with a newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the Pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. It is anticipated that `Atlas` Pods, which report electronically as `InPlay BLE`, will become more common.
 
@@ -92,7 +92,7 @@ There is no arrangement for using an FDA cleared version of the Loop app with Om
 
 ## Do I still need a PDM with Omnipod Loop?
 
-You don't need a PDM to use Pods with your OS-AID system but you might need a PDM serial number registered to your Insulet account to get replacements for failed Pods.
+You don't need a PDM to use Pods with your OS-AID system but you are likely to need a PDM serial number registered to your Insulet account to get replacements for failed Pods.
 
 Pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your *Loop* app on your iPhone. In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a pod that has been activated with the *Loop* app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. See below for what to do if you lose your phone or RileyLink.
 

@@ -28,8 +28,9 @@ Loopers can choose from multiple pumps and a simulator:
     The Loop app and LoopDocs use these terms. For any supported Pod Type, select `All Omnipod Types` when choosing your pump.
 
     * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
-    * **Omnipod DASH** is the newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
-    * **Omnipod 5** is not yet supported in the release code but when it is, it will be included with the `All Omnipod Types` selection
+    * The next two Pod types are BLE pods - no extra device needed
+        * **Omnipod DASH** is the first version of Insulet BLE pods
+        * **Omnipod 5** is not yet supported in the released code but when it is, it will be included when selecting a Pod Type
 
 - - -
 
@@ -83,10 +84,14 @@ In this screen, you choose the Insulin type you use for your pods. This screen i
 
 In this screen you choose the Pod Type you will be pairing. After you make your selection, tap on the blue Confirm Pod Type button.
 
+> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on this screen.
+
 ![initial selection for pod type](img/pod-type.png){width="250"}
 {align="center"}
 
 If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](#select-rileylink) screen before reaching the Pair Pod screen.
+
+If you select Omnipod 5 and you do not have a certificate installed yet, you will be routed to [obtain a certificate](omnipod.md#o5-certificate-status) and then land in the Pair Pod screen.
 
 ### Pair Pod
 

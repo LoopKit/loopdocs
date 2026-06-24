@@ -49,7 +49,7 @@ These phones require *iOS* 18 and are compatible with *iOS* 26.
 - iPhone 16 models are compatible but **not recommended for use with Omnipod DASH**
     * See [Keep Alive: Atlas or InPlay DASH pod](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" } warning
 
-These phones are compatible with *iOS* 17, 18 and 26
+These phones are compatible with *iOS* 17, 18 and 26. The next version of the *Loop* app will require *iOS* 18 as a minimum.
 
 - iPhone 15, all variants
 - iPhone 14, all variants
@@ -68,7 +68,7 @@ These phones are compatible with *iOS* 17, 18 and 26
 
 ### Older Devices
 
-These phones are limited to *iOS* 16. No longer supported by *Dexcom*. Update ASAP.
+These phones are limited to *iOS* 16. No longer supported by *Dexcom*. Update ASAP. The next version of the *Loop* app will require *iOS* 18 as a minimum.
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants

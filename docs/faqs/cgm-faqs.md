@@ -10,7 +10,7 @@ The following CGM are supported by some or all versions of Loop:
 * Medtronic Enlite CGM when used with a compatible pump
 * Remote CGM (requires internet access)
     * *Dexcom* Share
-    * Nightscout as CGM (*Loop*  v3 and later)
+    * Nightscout as CGM
 
 See also: [Compatible CGM](../build/cgm.md){: target="_blank" } and [CGM Customization](#cgm-customization)
 
