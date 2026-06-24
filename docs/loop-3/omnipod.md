@@ -12,6 +12,10 @@ The information and user interface for all Omnipod Pods is the same, except Omni
 
     Please thoroughly read [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } before attempting to use one of these branches.
 
+!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
+    * O5 Pod code is experimental and does not provide a heartbeat at this time
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
 
 - - -
 
@@ -305,6 +309,11 @@ If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Select
 
 !!! important "The Omnipod 5 is only available in the [development branches](../version/development.md#updates-in-dev){: target="_blank"} while in open beta testing"
 
+!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
+    * O5 Pod code is experimental and does not provide a heartbeat at this time
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+
 If you are using a development branch and choose Omnipod 5 Pod Type and have not previously gotten a certificate, one will be automatically downloaded for you.
 
 * This one-time step that requires internet access
@@ -515,26 +524,28 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 - - -
 
-
-- - -
-
 ## Pod Diagnostics
 
 The row is typically used by developers. It opens a new screen with a variety of diagnostic options. These are listed in the table below.
 
-| Name | Purpose |
-|:--|:--|
-| Read Pod Status | |
-| Play Test Beeps | |
-| Read Pulse Log | |
-| Read Pulse Log Plus | |
-| Read Activation Time | |
-| Read Triggered Alerts | |
-| Pump Manager Details | |
+| Name | 
+|:--|
+| Read Pod Status |
+| Play Test Beeps |
+| Read Pulse Log |
+| Read Pulse Log Plus |
+| Read Activation Time |
+| Read Triggered Alerts |
+| Pump Manager Details |
 
 - - -
 
 ## Omnipod 5 Support
+
+!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
+    * O5 Pod code is experimental and does not provide a heartbeat at this time
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
 
 To use Omnipod 5 Pods you must have a certificate installed on your phone. 
 

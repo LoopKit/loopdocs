@@ -93,6 +93,11 @@ If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](
 
 If you select Omnipod 5 and you do not have a certificate installed yet, you will be routed to [obtain a certificate](omnipod.md#o5-certificate-status) and then land in the Pair Pod screen.
 
+!!! warning "Must have a CGM with a heartbeat"
+    * O5 Pod code is experimental and does not provide a heartbeat at this time
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+
 ### Pair Pod
 
 At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods.

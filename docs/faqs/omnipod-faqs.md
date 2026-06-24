@@ -27,6 +27,9 @@ DASH and Omnipod 5 pumps communicate with the phone via Bluetooth so they do not
 You may find the Omnipod 5 a little slower than the DASH because of the extra layer of security added to these Pods.
 
 !!! tip "To date, no iPhone model specific issues have been found with Omnipod 5 Pods"
+    * O5 Pod code is experimental and does not provide a heartbeat
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+
 
 ### Increase in DASH Faults
 

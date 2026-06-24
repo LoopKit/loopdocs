@@ -29,7 +29,9 @@ These types of pumps are compatible with the *Loop* app.
 * [Omnipod Eros Pods](pump.md#omnipod-pumps)
 * [Omnipod DASH Pods](#omnipod-dash)
     * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
-* [Omnipod 5 Pods](#omnipod-5) are not in released code, for [details](#omnipod-5)
+* [Omnipod 5 Pods](#omnipod-5) support is not in released code, for [details](#omnipod-5)
+    * O5 Pod code is experimental and does not provide a heartbeat
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 
@@ -78,6 +80,8 @@ Loop does not support Omnipod 5 Pods in the released code.
 * There is an on-going public beta test with Omnipod 5
 * You must build a development branch to test Omnipod 5 - we encourage most people to wait while experienced users test this implementation
     * See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } if you are an experienced user who wants to help with testing and are willing to build frequently and report any issues to the development team
+    * O5 Pod code is experimental and does not provide a heartbeat
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
 
 - - -
 

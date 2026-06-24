@@ -138,6 +138,12 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Status for Open Beta for Omnipod 5
 
+!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
+    * O5 Pod code is experimental and does not provide a heartbeat at this time
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+
+
 Support for Omnipod 5 is available in development branches. Please report any issues you have in the zulipchat channel for either [Loop-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/600775735) or [Loop next-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/604885611).
 
 You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues) at the OmnipodKit repository. Be sure to report your configuration, be descriptive in what you observed along with a timestamp when it happened and include a [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" }.
