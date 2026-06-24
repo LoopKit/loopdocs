@@ -234,10 +234,12 @@ For Omnipod, there is a Devices section used to access the [RileyLink](../loop-3
 
 The next section on the Pod screen reports:
 
-* Time at which Pod was Activated
-* Time at which Pod will Expire
-* Access to Current Pod Details
-* Access to Previous Pod Details
+* **Activation**: Time at which Pod was Activated
+* **Expiration**; Time at which Pod will Expire
+* **No Deliver**: Time at which Pod stops delivery insulin
+    * If the Pod faults, this row changes to **Faulted** and reports the time of the fault
+* **Pod Details**: Access to Current Pod Details
+* **Previous Pod**:Access to Previous Pod Details
 
 ![section of Pod Status screen with Pod Details](img/pod-status-details.svg){width="350"}
 {align="center"}
@@ -255,9 +257,9 @@ The graphic shows an example for Omnipod on the left, Omnipod DASH (TWI BOARD) i
 ![section of Pod Status screen with Pod Details](img/omnipod-device-details.svg){width="600"}
 {align="center"}
 
-#### Previous Pod Details
+#### Previous Pod
 
-When you tap on the `Previous Pod Details` row, a graphic similar to those shown below is displayed. This provides summary information about the Pod before the one currently in use.
+When you tap on the `Previous Pod` row, a graphic similar to those shown below is displayed. This provides summary information about the Pod before the one currently in use.
 
 If the previous Pod had a fault and you choose to report it to Insulet, this screen reports the PDM reference code that Insulet uses in their tracking system.
 
@@ -271,9 +273,9 @@ If the previous Pod had a fault and you choose to report it to Insulet, this scr
 
 - - -
 
-## Replace Pod
+## Deactivate Pod
 
-When you tap on the `Replace Pod` row, the `Deactivate Pod` screen, shown below, is displayed. 
+When you tap on the `Deactivate Pod` row, the `Deactivate Pod` screen, shown below, is displayed. 
 
 * Touch the circular icon and maintain contact while you slide your finger all the way across the phone
     * When you release the slide, the deactivation command is sent to the Pod
@@ -305,7 +307,7 @@ If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Select
 
 If you are using a development branch and choose Omnipod 5 Pod Type and have not previously gotten a certificate, one will be automatically downloaded for you.
 
-* This one-time step requires internet access
+* This one-time step that requires internet access
 * Once a certificate is successfully downloaded, you will be taken to the [Pair Pod](#pair-pod) screen for Omnipod 5
 
 For more information, see [Omnipod 5 Support](#omnipod-5-support).
@@ -319,12 +321,11 @@ For more information, see [Omnipod 5 Support](#omnipod-5-support).
 
 When you tap on the `Notifcation Settings` row, the graphic below is displayed. The notifications are a combination of beeps on the Pod with associated modal alerts on the phone app that must be acknowledged to prevent future beeps.
 
-* Expiration Reminder Default: changes the reminder time for any future Pod (not the current one)
-* Scheduled Reminder: affects the reminder for the current Pod (not future Pods)
-    * If no Pod is connected, you will not see the Scheduled Reminder section
-* Low Reservoir Reminder: changes the reminder level for the current Pod and all future Pods
-    * If no Pod is connected, the app will not allow you to modify this setting
-    * Change it after the next Pod is paired
+If a pod is active, you can modify the Expiration Reminder and Low Reservoir Reminder for that Pod as applicable
+
+The defaults for futures Pods are always accessible
+* Expiration Reminder Default: changes the reminder time for any future Pod
+* Low Reservoir Reminder: changes the reminder level for all future Pods
 * Critical Alerts: Information row about which alerts can be silenced by phone settings
 
 ![Notification selection screen to set up default reminders](img/omnipod-notification.svg){width="300"}
@@ -423,7 +424,7 @@ This section presents some of the error message screens you may see specific to 
 
 You are likely to hear a Pod fault before Loop notices. If your phone is locked, Loop only checks status every 5 minutes for Omnipod or 3 minutes for Omnipod DASH.
 
-Unlock your phone, open Loop, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The Pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the [Previous Pod Details](#previous-pod-details) screen.
+Unlock your phone, open Loop, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The Pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the [Previous Pod Details](#previous-pod) screen.
 
 #### Updates with Version 3.4.x
 
@@ -431,7 +432,7 @@ The updates included with version 3.4.x make it easier to find the Pod fault, sh
 
 The fault will appear on the Omnipod screen and more details will be shown when you tap on Replace Pod to arrive at the Deactivate screen. You can grab a quick screenshot on the Deactivate screen if desired.
 
-The fault information can still be found under [Previous Pod Details](#previous-pod-details) if you need to find it after you Deactivate the "screaming" Pod.
+The fault information can still be found under [Previous Pod Details](#previous-pod) if you need to find it after you Deactivate the "screaming" Pod.
 
 - - -
 
