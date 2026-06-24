@@ -542,9 +542,7 @@ To use Omnipod 5 Pods you must have a certificate installed on your phone.
 If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they switch [Pod Types](#change-pod-types).
 
 * If your *Omnipod 5 Support* row shows a yellow warning badge, you can tap on it to request a certificate
-
-Obtaining a certificate is a one-time thing. The normal process for getting a certificate is to deactivate your Pod, switch Pod Types, select Omnipod 5 and allow the certificate process to automatically get one for you.
-
 * This one-time step requires internet access
 * This certificate remains available for this app on this phone, even if you delete and reinstall the app
+
 
