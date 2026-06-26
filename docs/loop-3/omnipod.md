@@ -37,7 +37,7 @@ You'll be pairing a Pod every 2 or 3 days (max Pod life is 80 hours).
 
 You'll see this screen every time you ask Loop to `Pair New Pod`.
 
-With the new Universal Omnipod Pump Manager, the Pair Pod screen includes the name of the Pod Type you are pairin along with a description. Make sure you have the correct Pod Type selected for the Pod you just filled with insulin.
+With the new Universal Omnipod Pump Manager, the Pair Pod screen includes the name of the Pod Type you are pairing along with a description. Make sure you have the correct Pod Type selected for the Pod you just filled with insulin.
 
 The Omnipod Common pairing protocol is the same for all Pods. The difference is that Classic or Eros Pods require a RileyLink compatible device and Omnipod 5 and DASH do not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and both the Classic and Omnipod 5 Pods use a clear needle cap.
 
@@ -57,15 +57,14 @@ Graphic below shows the Pair Pod screen for Eros (left), DASH (middle) and O5 (r
     * Make sure the phone (and RileyLink if using one) are close to the Pod before you tap Pair Pod
         * Do NOT move devices away from the Pod until you see the blue check mark and the `Continue` button on the phone screen
         * You can then move away to attach the Pod to your body
-    * Make sure the phone (and RileyLink if using one) are close to the Pod before you tap `Insert Cannula`
+    * Make sure the phone (and RileyLink if using one) are close to the Pod before you slide the `Insert Cannula` slider
         * Do NOT move devices away from the Pod until you see the blue check mark and the `Continue` button on the phone screen
 
-### New Slider
+### Insert Cannula Slider
 
-!!! tip "The Insert Cannula and Deactivate Pod now use a Slider instead of a Button"
-    For version 3.4.x and later there is a new slider to control insertion of the cannula and deactivation of a Pod. 
+The Insert Cannula and Deactivate Pod screens use a Slider instead of a Button.
 
-    The slider looks like the graphic below. (The Deactivate Pod slider is red.) You place your finger on the dark circular icon and, while keeping your finger in contact with the screen, drag all the way to the other side. (The direction depends on the natural direction for your selected language). After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the Pod.
+The slider looks like the graphic below. (The Deactivate Pod slider is red.) You place your finger on the dark circular icon and, while keeping your finger in contact with the screen, drag all the way to the other side. (The direction depends on the natural direction for your selected language). After the drag operation, as soon as you lift your finger off the phone, the cannula insertion command is sent to the Pod.
 
 ![slider to insert cannual for Omnipod or Omnipod DASH pumps](img/omnipod-insert-slider.svg){width="250"}
 {align="center"}
