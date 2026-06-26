@@ -32,7 +32,7 @@ This step requires you to have **internet access**. After this step is done, you
 
 **First Omnipod 5 Pod Only**
 
-When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to switch [Pod Types](../loop-3/omnipod.md#change-pod-types){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to switch [Pod Types](../loop-3/omnipod.md#switch-pod-types){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
 
 
 ![sucess screen after downloading an O5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
@@ -51,11 +51,11 @@ Because of the extra exchanges required to handle the security added to Omnipod 
 
 #### More frequent pod not connected messages
 
-The private-beta testers notices more frequent notifications that the pod is not connected. But tapping on the app, does establish communications again.
+The private-beta testers noticed more frequent notifications that the pod is not connected. But the app continues to work. There are more periods when the spacing between automatic adjustments is 10 minutes instead of 5 minutes, but the majority of the time, every CGM reading triggers an automatic calculation.
 
-Instead of a steady cadence of communitcations with the Pod every 3 minutes.
+### Will I still get 203 errors?
 
-
+The increased frequency of faults noticed with DASH Atlas Pods has not been observed in the Ominpod 5 Pods tested to date.  Considering just the Pods that are not expired, there is a 3% failure rate with the failure being an occlusion (105) fault. There were testers in the private beta group using DASH instead of Omnipod 5. They had a 20% failure rate on a small sample of DASH Pods, all 203 faults near the 72 hours time frame.
 
 ## Which Pods work with the *Loop* app?
 

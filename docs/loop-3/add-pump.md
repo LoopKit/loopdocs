@@ -86,21 +86,25 @@ In this screen you choose the Pod Type you will be pairing. After you make your 
 
 > If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on this screen.
 
+> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5.
+
 ![initial selection for pod type](img/pod-type.png){width="250"}
 {align="center"}
 
 If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](#select-rileylink) screen before reaching the Pair Pod screen.
 
-If you select Omnipod 5 and you do not have a certificate installed yet, you will be routed to [obtain a certificate](omnipod.md#o5-certificate-status) and then land in the Pair Pod screen.
+If you select Omnipod 5 and you do not have a certificate installed yet, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
 
-!!! warning "Must have a CGM with a heartbeat"
-    * O5 Pod code is experimental and does not provide a heartbeat at this time
-    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+![success screen after downloading an O5 certificate](img/omnipod-5-setup-success.png){width="300"}
+{align="center"}
+
+At this point, you can tap Continue and will be taken to the Pair O5 Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
+
+Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
 
 ### Pair Pod
 
-At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods.
+At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods. The Pair NAME Pod screen is slightly different for each Pod Type. Make sure you have chosen the correct Pod Type to match your Pods.
 
 !!! tip "New Looper / New Podder"
     Carefully review the [Pair Pod](omnipod.md#pair-pod){: target="_blank"} instructions before continuing. Then, when you are ready, pair a pod.

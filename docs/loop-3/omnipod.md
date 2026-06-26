@@ -41,6 +41,8 @@ You'll be pairing a Pod every 2 or 3 days (max Pod life is 80 hours).
 
 You'll see this screen every time you ask Loop to `Pair New Pod`.
 
+With the new Universal Omnipod Pump Manager, the Pair Pod screen includes the name of the Pod Type you are pairin along with a description. Make sure you have the correct Pod Type selected for the Pod you just filled with insulin.
+
 The Omnipod Common pairing protocol is the same for all Pods. The difference is that Classic or Eros Pods require a RileyLink compatible device and Omnipod 5 and DASH do not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and both the Classic and Omnipod 5 Pods use a clear needle cap.
 
 Graphic below shows the Pair Pod screen for Eros (left), DASH (middle) and O5 (right).
@@ -293,13 +295,13 @@ When deactivation completes, you are presented with the [Pair Pod](#pair-pod) sc
 
 - - -
 
-## Change Pod Types
+## Switch Pod Types
 
 After the Pod is deactivated, you can choose to switch to a different Pod Type. Simply cancel out of the Pair Pod screen that is normally displayed following deactivation.
 
 At that point, you can scroll to the bottom of the Omnipod screen and select the row that says *Switch to another pod or pump type*. Tapping on that row displays the screen, shown below, where you can choose *Switch pod type* or *Switch pump type*.
 
-![how to switch from any omnipod pot type to a different pod or pump type](img//omnipodkit-switch-pod-pump.png){width="350"}
+![how to switch from any omnipod pod type to a different pod or pump type](img//omnipodkit-switch-pod-pump.png){width="350"}
 {align="center"}
 
 If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Selection screen
@@ -316,10 +318,11 @@ If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Select
 
 If you are using a development branch and choose Omnipod 5 Pod Type and have not previously gotten a certificate, one will be automatically downloaded for you.
 
-* This one-time step that requires internet access
+* Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
+* This one-time step requires internet access
 * Once a certificate is successfully downloaded, you will be taken to the [Pair Pod](#pair-pod) screen for Omnipod 5
 
-For more information, see [Omnipod 5 Support](#omnipod-5-support).
+If you already have the required certificate, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row at the bottom of your Omnipod screen. In that case, selecting Omnipod 5 as a Pod Type takes you straight to the Pair O5 Pod screen.
 
 
 - - -
@@ -551,7 +554,7 @@ To use Omnipod 5 Pods you must have a certificate installed on your phone.
 
 * Once you have a certificate, the *Omnipod 5 Support* row will show a green check mark
 
-If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they switch [Pod Types](#change-pod-types).
+If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they switch [Pod Types](#switch-pod-types).
 
 * If your *Omnipod 5 Support* row shows a yellow warning badge, you can tap on it to request a certificate
 * This one-time step requires internet access
