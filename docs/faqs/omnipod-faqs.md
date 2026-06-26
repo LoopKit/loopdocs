@@ -2,6 +2,14 @@
 
 Yes it is.
 
+### Is this version less secure than using the PDM
+
+The security layer that Insulet added to Omnipod 5 is fully preserved.
+
+The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of comms.
+
+This is all handled for you automatically. You simply need to ensure you have internet access for your first Omnipod 5 Pod.
+
 ### Should I switch to Omnipod 5 now?
 
 1. Don't be in a rush
