@@ -15,7 +15,7 @@ Loopers can choose from multiple pumps and a simulator:
 * [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
     * Omnipod Classic (Eros)
     * Omnipod DASH
-    * Omnipod O5 (coming soon)
+    * Omnipod O5 (`dev` and `next-dev` only) See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" }
 * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
@@ -28,8 +28,9 @@ Loopers can choose from multiple pumps and a simulator:
     The Loop app and LoopDocs use these terms. For any supported Pod Type, select `All Omnipod Types` when choosing your pump.
 
     * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
-    * **Omnipod DASH** is the newer BLE pods (phone talks directly to pod - no extra device needed to Loop)
-    * **Omnipod 5** is not yet supported but will be included with the `All Omnipod Types` selection when it is added
+    * The next two Pod types are BLE pods - no extra device needed
+        * **Omnipod DASH** is the first version of Insulet BLE pods
+        * **Omnipod 5** is not yet supported in the released code but when it is, it will be included when selecting a Pod Type
 
 - - -
 
@@ -83,14 +84,27 @@ In this screen, you choose the Insulin type you use for your pods. This screen i
 
 In this screen you choose the Pod Type you will be pairing. After you make your selection, tap on the blue Confirm Pod Type button.
 
+> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on this screen.
+
+> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5.
+
 ![initial selection for pod type](img/pod-type.png){width="250"}
 {align="center"}
 
 If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](#select-rileylink) screen before reaching the Pair Pod screen.
 
+If you select Omnipod 5 and you do not have a certificate installed yet, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+
+![success screen after downloading an O5 certificate](img/omnipod-5-setup-success.png){width="300"}
+{align="center"}
+
+At this point, you can tap Continue and will be taken to the Pair O5 Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
+
+Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
+
 ### Pair Pod
 
-At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods.
+At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods. The Pair NAME Pod screen is slightly different for each Pod Type. Make sure you have chosen the correct Pod Type to match your Pods.
 
 !!! tip "New Looper / New Podder"
     Carefully review the [Pair Pod](omnipod.md#pair-pod){: target="_blank"} instructions before continuing. Then, when you are ready, pair a pod.

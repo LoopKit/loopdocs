@@ -15,6 +15,7 @@ Loop can be connected to the following CGMs:
     * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
     * [Libre](#libre) **(v3.4 or newer)**
         * Only some Libre sensors are supported; some have encryption that limits DIY use
+        * Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
     * [Eversense E3/365](#eversense-e3365) **v3.14.2 or newer**
     * [Minimed Enlite CGM](#medtronic-enlite-cgm)
         * Medtronic Pump only
@@ -141,7 +142,9 @@ The Libre plugin for Loop, [LibreTransmitter](https://github.com/LoopKit/LibreTr
 * Libre 1 is supported but must use a third-party transmitter (miaomiao and bubble transmitters are supported)
 * European Libre 2 can be used directly or via transmitter
 * American Libre 2 is not supported
-* Libre 3 is not supported
+* Libre 3 is not supported in the released code
+
+> Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
 
 !!! tip "Connecting to Libre"
     The first reading for a new sensor will often take 2-4 minutes. This is due to some technicalities on how the Libre sensor announces its presence via Bluetooth.

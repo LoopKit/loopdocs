@@ -63,7 +63,7 @@ Most pod beep alarms are disabled for a more discrete use of pods than is availa
     * Loop will update the actual delivery amounts based on pod reported information
 - Pod deactivation acknowledgment
 - Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours), running out of insulin or a fault/occlusion happens
-    * Screamers are silenced using the [Replace Pod](../../loop-3/omnipod.md#replace-pod) row on the pod settings page
+    * Screamers are silenced using the [Deactivate Pod](../../loop-3/omnipod.md#deactivate-pod) row on the pod settings page
     * The one exception is if communications with the pod is lost and cannot be restored - in that case, you will be offered the chance to discard the pod from Loop but will still want to [Silence the Pod](../../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod)
 
 ## Notification settings for Loop
