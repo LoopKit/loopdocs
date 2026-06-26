@@ -1,3 +1,62 @@
+## Is Omnipod 5 available for open-beta testing?
+
+Yes it is.
+
+### Should I switch to Omnipod 5 now?
+
+1. Don't be in a rush
+1. This is new code that has been tested by a dozen developers in closed-beta testing
+1. Consider waiting a few weeks and letting experienced people do the testing
+1. There are a few known issues but we expect more will be revealed when we get a bigger group of testers
+    * The current implementation for Omnipod 5 requires you to [use a CGM with a heartbeat](#what-are-the-known-issues)
+    * If you are using something like Nightscout as a CGM, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked
+
+### How can I switch to Omnipod 5?
+
+!!! important "You need to be comfortable building a development branch, updating frequently, and reporting problems."
+
+#### Build the correct version of code
+
+To get access to Omnipod 5, build the `dev` branch for Loop.
+
+* Please read: [Updates in dev](../version/development.md#updates-in-dev)
+* Please follow along in zulipchat at [Loop-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/606368226)
+
+#### Perform a one-time step to support Omnipod 5
+
+There is a one-time step to get a certificate needed for you to use an Omnipod 5 Pod. This is pretty automatic, but this is new code so be prepared to handle issues if they happen. 
+
+This step requires you to have **internet access**. After this step is done, you can pair an Omnipod 5 Pod with this phone and this app with no need for internet access.
+
+!!! important "Do not fill your first Omnipod 5 Pod before you reach the Pair O5 Pod screen"
+
+**First Omnipod 5 Pod Only**
+
+When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to switch [Pod Types](../loop-3/omnipod.md#change-pod-types){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+
+
+![sucess screen after downloading an O5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
+{align="center"}
+
+At this point, you can tap Continue and will be taken to the Pair O5 Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
+
+Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
+
+### What are the known issues
+
+#### No Pump Heartbeat
+
+* The current implementation for Omnipod 5 requires you to [use a CGM with a heartbeat](#what-are-the-known-issues)
+* If you are using something like Nightscout as a CGM, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked
+
+#### More frequent pod not connected messages
+
+The private-beta testers notices more frequent notifications that the pod is not connected. But tapping on the app, does establish communications again.
+
+Instead of a steady cadence of communitcations with the Pod every 3 minutes.
+
+
+
 ## Which Pods work with the *Loop* app?
 
 You can use Omnipod 5 (under test), DASH and Eros Pods with the *Loop* app.
