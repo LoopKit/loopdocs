@@ -308,21 +308,17 @@ If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Select
 
 * All of your configuration settings including Insulin brand are maintained when switching Pod Types
 
+> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on the Pod Type screen.
 
-!!! important "The Omnipod 5 is only available in the [development branches](../version/development.md#updates-in-dev){: target="_blank"} while in open beta testing"
+> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5
 
-!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
-    * O5 Pod code is experimental and does not provide a heartbeat at this time
-    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
 
 If you are using a development branch and choose Omnipod 5 Pod Type and have not previously gotten a certificate, one will be automatically downloaded for you.
 
-* Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
-* This one-time step requires internet access
+* **This one-time step requires internet access**
 * Once a certificate is successfully downloaded, you will be taken to the [Pair Pod](#pair-pod) screen for Omnipod 5
 
-If you already have the required certificate, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row at the bottom of your Omnipod screen. In that case, selecting Omnipod 5 as a Pod Type takes you straight to the Pair O5 Pod screen.
+If you already have the required certificate, selecting Omnipod 5 as a Pod Type takes you straight to the Pair O5 Pod screen. If you scroll to the bottom of the Omnipod screen, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row.
 
 
 - - -
@@ -545,10 +541,9 @@ The row is typically used by developers. It opens a new screen with a variety of
 
 ## Omnipod 5 Support
 
-!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
-    * O5 Pod code is experimental and does not provide a heartbeat at this time
-    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on the Pod Type screen.
+
+> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5
 
 To use Omnipod 5 Pods you must have a certificate installed on your phone. 
 
@@ -557,7 +552,7 @@ To use Omnipod 5 Pods you must have a certificate installed on your phone.
 If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they switch [Pod Types](#switch-pod-types).
 
 * If your *Omnipod 5 Support* row shows a yellow warning badge, you can tap on it to request a certificate
-* This one-time step requires internet access
+* **This one-time step requires internet access**
 * This certificate remains available for this app on this phone, even if you delete and reinstall the app
 
 
