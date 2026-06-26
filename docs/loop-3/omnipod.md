@@ -10,12 +10,8 @@ The information and user interface for all Omnipod Pods is the same, except Omni
 
     The timing for when O5 is supported in these branches depends on when Pull Requests are merged.
 
-    Please thoroughly read [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } before attempting to use one of these branches.
-
-!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
-    * O5 Pod code is experimental and does not provide a heartbeat at this time
-    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+    * Please thoroughly read [Omnipod 5 Open Beta FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before attempting to use one of these branches.
+    * Please thoroughly read [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } before attempting to use one of these branches.
 
 - - -
 
