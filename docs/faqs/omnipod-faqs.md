@@ -23,6 +23,8 @@ This is all handled for you automatically. You simply need to ensure you have in
 
 !!! important "You need to be comfortable building a development branch, updating frequently, and reporting problems."
 
+If you decide to test: help up by [reporting any problems](#how-do-i-report-problems).
+
 #### Build the correct version of code
 
 To get access to Omnipod 5, build the `dev` branch for Loop.
@@ -50,7 +52,23 @@ At this point, you can tap Continue and will be taken to the Pair O5 Pod screen.
 
 Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
 
-### What are the known issues
+### How do I report problems?
+
+You have your choice - but please choose one. Don't post in both places.
+
+* You can report problems (and compliments) in the Omnipod 5 topic of the development channel in zulipchat. [TODO: Add LINK Here when channel is created].
+
+* You can report problems in the Omnipod 5 Open Beta channel in the Nightscout Foundation Discord if you are a member there.
+
+    * [Invitation Link](https://discord.gg/Y7EJfVxxCa) to join Nightscout Foundation Discord
+    * Specific channel for Omnipod 5 Open Beta [TODO: Add Link here when channel is created]
+
+Please report any Fault you experience and upload your [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" } that contains the Fault using the [OmnipodKit Testing Log form](https://docs.google.com/forms/d/e/1FAIpQLSeuclLr4jU-5Vr5oF1vYgmUv_FoN12nxXR0-Bzu_JW1J3bn5w/formResponse).
+
+You are not required to upload a Loop Report following each successful Pod change, although if you do - that successful report will be processed and added to our statistics.
+
+
+### What are the known issues?
 
 #### No Pump Heartbeat
 
