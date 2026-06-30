@@ -45,10 +45,10 @@ This step requires you to have **internet access**. After this step is done, you
 When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to switch [Pod Types](../loop-3/omnipod.md#switch-pod-types){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
 
 
-![sucess screen after downloading an O5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
+![sucess screen after downloading an Omnipod 5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
 {align="center"}
 
-At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
+At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your Omnipod 5 Pod with insulin and pair it.
 
 Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
 

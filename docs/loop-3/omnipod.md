@@ -2,13 +2,13 @@
 
 The information and user interface for all Omnipod Pods is the same, except Omnipod 5 and DASH Pods do not require a RileyLink compatible device. They communicate directly with the phone through Bluetooth.
 
-!!! warning "O5 is in beta test"
+!!! warning "Omnipod 5 is in beta test"
     Omnipod 5 Pods should only be tested by experienced users willing to build a development branch: 
     
     * LoopWorkspace `dev`
     * LoopWorkspace `next-dev`
 
-    The timing for when O5 is supported in these branches depends on when Pull Requests are merged.
+    The timing for when Omnipod 5 is supported in these branches depends on when Pull Requests are merged.
 
     * Please thoroughly read [Omnipod 5 Open Beta FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before attempting to use one of these branches.
     * Please thoroughly read [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } before attempting to use one of these branches.
@@ -41,7 +41,7 @@ With the new Universal Omnipod Pump Manager, the Pair Pod screen includes the na
 
 The Omnipod Common pairing protocol is the same for all Pods. The difference is that Classic or Eros Pods require a RileyLink compatible device and Omnipod 5 and DASH do not. There are also slight differences in some of the text and graphics, e.g., Omnipod DASH uses a blue needle cap and both the Classic and Omnipod 5 Pods use a clear needle cap.
 
-Graphic below shows the Pair Pod screen for Eros (left), DASH (middle) and O5 (right).
+Graphic below shows the Pair Pod screen for Eros (left), DASH (middle) and Omnipod 5 (right).
 
 ![pair pod screens for Classic, DASH and Omnipod 5 Pods](img/pair-pod-screens.svg){width="750"}
 {align="center"}

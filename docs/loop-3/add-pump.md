@@ -15,7 +15,7 @@ Loopers can choose from multiple pumps and a simulator:
 * [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
     * Omnipod Classic (Eros)
     * Omnipod DASH
-    * Omnipod O5 (`dev` and `next-dev` only) See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" }
+    * Omnipod 5 (`dev` and `next-dev` only) See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" }
 * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
@@ -95,7 +95,7 @@ If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](
 
 If you select Omnipod 5 and you do not have a certificate installed yet, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
 
-![success screen after downloading an O5 certificate](img/omnipod-5-setup-success.png){width="300"}
+![success screen after downloading an Omnipod 5 certificate](img/omnipod-5-setup-success.png){width="300"}
 {align="center"}
 
 At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your Omnipod 5 Pod with insulin and pair it.
