@@ -42,8 +42,9 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.2`](releases.md#v3142-highlights){: target="_blank" }. 
 
-The current version of `dev` is v3.14.2 and is the same as `main`.
+The current version of `dev` is v3.14.3. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459).
 
+* Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch
 * Those who have been using feature branches for Medtrum or Eversense support can now build the released code
 * Those on the Dana pump must keep building a feature branch, but the name of the branch changed
     * Dana users need to update the name of the branch they build to `feat/all-managers`
@@ -82,8 +83,8 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.2 | 6 June 2026 | release |
-| dev | 3.14.3 | TBD June 2026 | add open beta support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5) |
-| `feat/all-managers`<br>- SHA `1b4718f` | 3.14.3 | TBD June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| dev | 3.14.3 | 30 June 2026 | adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) |
+| `feat/all-managers`<br>- SHA `1b4718f` | 3.14.3 | 30 June 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5) <br>[zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) |
 
 ??? question "What is SHA? (Click to Open/Close)"
@@ -143,6 +144,8 @@ The version number in the feature branch will match either the `dev` branch vers
     * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
     * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
 
+
+Please read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
 
 Support for Omnipod 5 is available in development branches. Please report any issues you have in the zulipchat channel for either [Loop-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/600775735) or [Loop next-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/604885611).
 
