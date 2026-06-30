@@ -54,14 +54,7 @@ Because of the extra exchanges required to handle the security added to Omnipod 
 
 ### How do I report problems?
 
-You have your choice - but please choose one. Don't post in both places.
-
-* You can report problems (and compliments) in the Omnipod 5 topic of the development channel in zulipchat. [TODO: Add LINK Here when channel is created].
-
-* You can report problems in the Omnipod 5 Open Beta channel in the Nightscout Foundation Discord if you are a member there.
-
-    * [Invitation Link](https://discord.gg/Y7EJfVxxCa) to join Nightscout Foundation Discord
-    * Specific channel for Omnipod 5 Open Beta [TODO: Add Link here when channel is created]
+* You can report problems (and compliments) in the [Loop Open Beta for Omnipod 5](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20Open.20Beta.20for.20Omnipod.205/with/607418710) topic in zulipchat.
 
 Please report any Fault you experience and upload your [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" } that contains the Fault using the [OmnipodKit Testing Log form](https://docs.google.com/forms/d/e/1FAIpQLSeuclLr4jU-5Vr5oF1vYgmUv_FoN12nxXR0-Bzu_JW1J3bn5w/formResponse).
 
