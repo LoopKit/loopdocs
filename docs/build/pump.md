@@ -79,7 +79,7 @@ Loop does not support Omnipod 5 Pods in the released code.
 * You must build a development branch to test Omnipod 5 - we encourage most people to wait while experienced users test this implementation
     * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
     * See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } if you are an experienced user who wants to help with testing and are willing to build frequently and report any issues to the development team
-    * O5 Pod code is experimental and does not provide a heartbeat
+    * Omnipod 5 code is experimental and does not provide a heartbeat
     * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
 
 - - -

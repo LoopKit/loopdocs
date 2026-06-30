@@ -138,8 +138,8 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Status for Open Beta for Omnipod 5
 
-!!! warning "Use of O5 Pods requires a CGM with a heartbeat"
-    * O5 Pod code is experimental and does not provide a heartbeat at this time
+!!! warning "Use of Omnipod 5 Pods requires a CGM with a heartbeat"
+    * Omnipod 5 code is experimental and does not provide a heartbeat at this time
     * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
     * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
 

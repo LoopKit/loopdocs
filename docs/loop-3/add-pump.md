@@ -98,7 +98,7 @@ If you select Omnipod 5 and you do not have a certificate installed yet, you are
 ![success screen after downloading an O5 certificate](img/omnipod-5-setup-success.png){width="300"}
 {align="center"}
 
-At this point, you can tap Continue and will be taken to the Pair O5 Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
+At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your Omnipod 5 Pod with insulin and pair it.
 
 Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
 

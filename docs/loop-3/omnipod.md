@@ -313,7 +313,7 @@ If you are using a development branch and choose Omnipod 5 Pod Type and have not
 * **This one-time step requires internet access**
 * Once a certificate is successfully downloaded, you will be taken to the [Pair Pod](#pair-pod) screen for Omnipod 5
 
-If you already have the required certificate, selecting Omnipod 5 as a Pod Type takes you straight to the Pair O5 Pod screen. If you scroll to the bottom of the Omnipod screen, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row.
+If you already have the required certificate, selecting Omnipod 5 as a Pod Type takes you straight to the Pair Pod screen. If you scroll to the bottom of the Omnipod screen, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row.
 
 
 - - -

@@ -38,7 +38,7 @@ There is a one-time step to get a certificate needed for you to use an Omnipod 5
 
 This step requires you to have **internet access**. After this step is done, you can pair an Omnipod 5 Pod with this phone and this app with no need for internet access.
 
-!!! important "Do not fill your first Omnipod 5 Pod before you reach the Pair O5 Pod screen"
+!!! important "Do not fill your first Omnipod 5 Pod before you reach the Pair Pod screen"
 
 **First Omnipod 5 Pod Only**
 
@@ -48,7 +48,7 @@ When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to 
 ![sucess screen after downloading an O5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
 {align="center"}
 
-At this point, you can tap Continue and will be taken to the Pair O5 Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
+At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your O5 Pod with insulin and pair it.
 
 Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
 
@@ -112,7 +112,7 @@ DASH and Omnipod 5 pumps communicate with the phone via Bluetooth so they do not
 You may find the Omnipod 5 a little slower than the DASH because of the extra layer of security added to these Pods.
 
 !!! tip "To date, no iPhone model specific issues have been found with Omnipod 5 Pods"
-    * O5 Pod code is experimental and does not provide a heartbeat
+    * Omnipod 5 code is experimental and does not provide a heartbeat
     * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
 
 
