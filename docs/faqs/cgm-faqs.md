@@ -3,7 +3,7 @@
 The following CGM are supported by some or all versions of Loop:
 
 * All *Dexcom* CGM (Loop 3 and later)
-* Some *Libre* CGM (Loop 3.4 and later)
+* *EU Libre 2/+* CGM (Loop 3.4 and later), *Libre 3+* CGM (via an experimental testing branch, next-dev),
 * Eversense E3 and 365 (Loop 3.11 and later, via an experimental feature branch)
 * Medtronic Enlite CGM when used with a compatible pump
 * Remote CGM (requires internet access)
@@ -102,7 +102,7 @@ sequenceDiagram
 
 ### Troubleshoot Connections
 
-The "normal" *Libre* 2 sensors have a firmware configuration that makes them slow to reconnect when they lose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
+*EU Libre* 2 sensors have a firmware configuration that makes them slow to reconnect when they lose the connection to iOS (both iOS and the sensors are to blame for this). What usually helps is to make sure your app is open and in the foreground and that your phone is unlocked. iOS seems to be better at reconnecting Bluetooth devices under such conditions (i.e. it gives more Bluetooth priority to the foreground app). If you need to modify how quickly your phone locks, this is found under iOS settings, Display & Brightness, Auto-Lock.
 
 If you try to pair a sensor in the app multiple times in a short period (let's say within a couple of minutes), you may need to just stop and wait.
 
@@ -110,13 +110,15 @@ If you try to pair a sensor in the app multiple times in a short period (let's s
 * Multiple pairing attempts may make the sensor temporarily unable to function
 * If this matches your use case, shut off your phone and let it stay shut down for up to five minutes
 
-Optionally: you can use miaomiao or bubble third-party transmitters attached on top of your normal *Libre* 2 sensors. Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
+Optionally: you can use miaomiao or bubble third-party transmitters attached on top of your normal *EU Libre* 2/+ sensors. Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
 
 ### Can I use *Libre* sensors with a reader like Miao Miao?
 
-Loop 3.4.x and later enables the use of those *Libre* sensors supported by [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
+Loop 3.4.x and later enables the use of *Libre* sensors supported by [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter#libretransmitter-for-loop){: target="_blank" }.
 
 ### What about other *Libre* sensors?
+
+*Libre 3 Plus* is currently available for testing in a special branch, next-dev; it is not yet part of the released version of Loop.
 
 There are a number of *Libre* sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [*LibreLinkUp*](https://librelinkup.com/). This enables you to upload your data to the *LibreLinkUp* servers and then access the data from there.
 
