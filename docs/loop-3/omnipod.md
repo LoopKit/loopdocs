@@ -235,7 +235,7 @@ The next section on the Pod screen reports:
 
 * **Activation**: Time at which Pod was Activated
 * **Expiration**; Time at which Pod will Expire
-* **No Deliver**: Time at which Pod stops delivery insulin
+* **No Delivery**: Time at which Pod stops delivery insulin
     * If the Pod faults, this row changes to **Faulted** and reports the time of the fault
 * **Pod Details**: Access to Current Pod Details
 * **Previous Pod**:Access to Previous Pod Details
@@ -245,7 +245,7 @@ The next section on the Pod screen reports:
 
 
 !!! question "Time Drift"
-    The Pod will expire when it thinks it has been 80 hours. The Pod clock may drift a few seconds with respect to phone time during the Pod life. The Expiration time gets updated when the Pod reports how long it thinks it has been since it was activated.
+    The Pod will expire when it thinks it has been 80 hours. The Pod clock may drift with respect to phone time during the Pod life. This can be several minutes. The Expiration time gets updated when the Pod reports how long it thinks it has been since it was activated.
 
 #### Pod Details
 
@@ -313,7 +313,6 @@ If you are using a development branch and choose Omnipod 5 Pod Type and have not
 
 If you already have the required certificate, selecting Omnipod 5 as a Pod Type takes you straight to the Pair Pod screen. If you scroll to the bottom of the Omnipod screen, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row.
 
-
 - - -
 
 ## Configuration
@@ -322,12 +321,14 @@ If you already have the required certificate, selecting Omnipod 5 as a Pod Type 
 
 When you tap on the `Notifcation Settings` row, the graphic below is displayed. The notifications are a combination of beeps on the Pod with associated modal alerts on the phone app that must be acknowledged to prevent future beeps.
 
-If a pod is active, you can modify the Expiration Reminder and Low Reservoir Reminder for that Pod as applicable
+If a pod is active, you can modify the Expiration Reminder and Low Reservoir Reminder for that Pod as applicable.
 
-The defaults for futures Pods are always accessible
-* Expiration Reminder Default: changes the reminder time for any future Pod
-* Low Reservoir Reminder: changes the reminder level for all future Pods
-* Critical Alerts: Information row about which alerts can be silenced by phone settings
+The *Default Alerts* are always visible and are used to configure to future Pods:
+
+* Expiration Reminder Default: changes the reminder time in hours before expiration
+* Low Reservoir Default: changes the reminder level in units
+
+> Critical Alerts provides information about which alerts can be silenced by phone settings and Silent Pod mode.
 
 ![Notification selection screen to set up default reminders](img/omnipod-notification.svg){width="300"}
 {align="center"}
@@ -355,6 +356,8 @@ What Silence Pod will not do:
 * This feature cannot change the "clicking" noise that comes from insulin delivery
 * This feature will not prevent the constant alarm if the Pod fails for any reason such as out-of-time, out-of-insulin, occlusion detected or any other fault
 * If you tap on the sound icon, the beeps will still be heard on the Pod
+
+When you enable Silenced mode, a new row appears that allows you to set an end time. Initially it says *Not set* which means it is an indefinite setting. You can schedule the end of the Silence mode by tapping on *Not set* and choose a time up to 12 hours in the future.
 
 When would you use Silence Pod:
 
@@ -492,7 +495,7 @@ This mode is primarily to help out people who just paired an Atlas Pod for the f
 
 > Imagine - you just hit retry 5 times to get the Pod to pair and prime and then when it's time to insert the cannula, the Pod has disconnected because it was more than 3 minutes since the last message exchange.  Then you have to keep hitting retry until the insertion process finally starts. With When Open, the Pod stays connected through the entire process of pairing, priming and inserting so long as the user does not manually lock the phone or move to another app.
 
-**The user should choose with Silent Tune or Riley Link going forward if they want to have reliable communication between their iPhone 16/17e and an Atlas Pod.**
+**The user should choose with Silent Tune or RileyLink going forward if they want to have reliable communication between their iPhone 16/17e and an Atlas Pod.**
 
 > If the Pod moves out of Bluetooth range, the Pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the Pod once it is back in range. This can cause disruptions until the reconnect happens.
 
@@ -518,7 +521,7 @@ While RileyLink is selected, the app is triggered by the RileyLink one minute he
 
 ## Pod Diagnostics
 
-The row is typically used by developers. It opens a new screen with a variety of diagnostic options. These are listed in the table below.
+The row is typically used by developers. It opens a new screen with a variety of diagnostic options. These are listed in the table below. All of the read commands in the table continue to work with a screaming Pod if you are interested.
 
 | Name | 
 |:--|
@@ -542,10 +545,8 @@ To use Omnipod 5 Pods you must have a certificate installed on your phone.
 
 * Once you have a certificate, the *Omnipod 5 Support* row will show a green check mark
 
-If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they [Switch Pod Type](#switch-pod-type).
+If you do not have a certificate, you can get one at any time without affecting your current pod session for all Pod Types by tapping on this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they [Switch Pod Type](#switch-pod-type).
 
 * If your *Omnipod 5 Support* row shows a yellow warning badge, you can tap on it to request a certificate
 * **This one-time step requires internet access**
 * This certificate remains available for this app on this phone, even if you delete and reinstall the app
-
-
