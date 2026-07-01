@@ -44,9 +44,9 @@ If the *Dexcom* app is on the same device as the *Loop* app, your system can fun
 
 ## *Dexcom* G7 and ONE+ CGM
 
-The *Dexcom* G7 and ONE+ CGM transmits data directly to the *Dexcom* app on your iPhone via Bluetooth.
+The *Dexcom* G7 (10-day and 15-day) and ONE+ CGM transmits data directly to the *Dexcom* app on your iPhone via Bluetooth.
 
-The *Dexcom* ONE+, available in some countries, acts just like the G7 as far as the *Loop* app is concerned. 
+The *Dexcom* ONE+, available in some countries, acts just like the G7 as far as the *Loop* app is concerned.
 
 ## *Libre* CGM
 
@@ -57,6 +57,7 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
 * These *Libre* CGM are not supported within the *Loop* app
     * American (Canada, US, South American) *Libre* 2
     * *Libre* 3
+* Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev) for experienced users
 * See [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
 ## *Eversense* E3 and 365 CGM

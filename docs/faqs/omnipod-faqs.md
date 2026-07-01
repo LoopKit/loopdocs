@@ -1,51 +1,148 @@
-## Which pods work with the *Loop* app?
+## Is Omnipod 5 available for open-beta testing?
 
-You can use DASH and Eros Omnipod pods with the *Loop* app. You cannot use Omnipod 5 pods.
+Yes it is.
 
-You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost.
+### Is this version less secure than using the PDM
+
+The security layer that Insulet added to Omnipod 5 is fully preserved.
+
+The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of comms.
+
+This is all handled for you automatically. You simply need to ensure you have internet access for your first Omnipod 5 Pod.
+
+### Should I switch to Omnipod 5 now?
+
+1. Don't be in a rush
+1. This is new code that has been tested by a dozen developers in closed-beta testing
+1. Consider waiting a few weeks and letting experienced people do the testing
+1. There are a few known issues but we expect more will be revealed when we get a bigger group of testers
+    * The current implementation for Omnipod 5 requires you to [use a CGM with a heartbeat](#what-are-the-known-issues)
+    * If you are using something like Nightscout as a CGM, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked
+
+### How can I switch to Omnipod 5?
+
+!!! important "You need to be comfortable building a development branch, updating frequently, and reporting problems."
+
+If you decide to test: help us by [reporting any problems](#how-do-i-report-problems).
+
+#### Build the correct version of code
+
+To get access to Omnipod 5, build the `dev` branch for Loop.
+
+* Please read: [Updates in dev](../version/development.md#updates-in-dev)
+* Please follow along in zulipchat at [Loop-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/606368226)
+
+#### Perform a one-time step to support Omnipod 5
+
+There is a one-time step to get a certificate needed for you to use an Omnipod 5 Pod. This is pretty automatic, but this is new code so be prepared to handle issues if they happen. 
+
+This step requires you to have **internet access**. After this step is done, you can pair an Omnipod 5 Pod with this phone and this app with no need for internet access.
+
+!!! important "Do not fill your first Omnipod 5 Pod before you reach the Pair Pod screen"
+
+**First Omnipod 5 Pod Only**
+
+When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+
+
+![sucess screen after downloading an Omnipod 5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
+{align="center"}
+
+At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your Omnipod 5 Pod with insulin and pair it.
+
+Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
+
+### How do I report problems?
+
+* You can report problems (and compliments) in the [Loop Open Beta for Omnipod 5](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20Open.20Beta.20for.20Omnipod.205/with/607418710) topic in zulipchat.
+
+Please report any Fault you experience and upload your [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" } that contains the Fault using the [OmnipodKit Testing Log form](https://docs.google.com/forms/d/e/1FAIpQLSeuclLr4jU-5Vr5oF1vYgmUv_FoN12nxXR0-Bzu_JW1J3bn5w/formResponse).
+
+You are not required to upload a Loop Report following each successful Pod change, although if you do - that successful report will be processed and added to our statistics.
+
+
+### What are the known issues?
+
+#### No Pump Heartbeat
+
+* The current implementation for Omnipod 5 requires you to [use a CGM with a heartbeat](#what-are-the-known-issues)
+* If you are using something like Nightscout as a CGM, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked
+
+#### More frequent pod not connected messages
+
+The private-beta testers noticed more frequent notifications that the pod is not connected. But the app continues to work. There are more periods when the spacing between automatic adjustments is 10 minutes instead of 5 minutes, but the majority of the time, every CGM reading triggers an automatic calculation.
+
+### Will I still get 203 errors?
+
+The increased frequency of faults noticed with DASH Atlas Pods has not been observed in the Ominpod 5 Pods tested to date.  Considering just the Pods that are not expired, there is a 3% failure rate with the failure being an occlusion (105) fault. There were testers in the private beta group using DASH instead of Omnipod 5. They had a 20% failure rate on a small sample of DASH Pods, all 203 faults near the 72 hours time frame.
+
+## Which Pods work with the *Loop* app?
+
+You can use Omnipod 5 (under test), DASH and Eros Pods with the *Loop* app.
+
+* The Omnipod 5 is only available in the development branches while in open beta testing
+
+You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost. The PDM may be needed in some countries to get replacements for failed Pods.
 
 !!! info "Alternative Names for Omnipod Pods"
 
-    All three types of pods can be packaged five to a box, don't let the 5-pack indication confuse you. 
+    All three types of Pods can be packaged five to a box, don't let the 5-pack indication confuse you. 
 
-    * **Eros** pods are also known as **Classic** or **UST400**
+    * **Eros** Pods are also known as **Classic** or **UST400**
         * The Reference number on the boxes should be similar to POD-ZXP425
         * They have a clear needle cap
-        * Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods
+        * Pharmacy sites sometimes may refer to the **Eros Pods** as **Gen 3** but they are the same Pods
 
-    * DASH pods have DASH in the name
-        * The Reference number on the box should be similar to POD-BLE-P1-525 (note the **P**)
+    * **DASH** Pods have DASH in the name
+        * The Reference number on the box should be similar to POD-BLE-P1-525
         * They have a blue needle cap
 
-    * Omnipod 5 pods have 5 in the name
-        * The Reference number on the box should be similar to POD-BLE-H1-525 (note the **H**)
+    * **Omnipod 5** Pods have 5 in the name
+        * The Reference number on the box should be similar to POD-OMNI-I1-6720
         * They have a clear needle cap
 
-DASH pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
+DASH and Omnipod 5 pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
+You may find the Omnipod 5 a little slower when pairing than the DASH because of the extra layer of security added to these Pods.
+
+!!! tip "To date, no iPhone model specific issues have been found with Omnipod 5 Pods"
+    * Omnipod 5 code is experimental and does not provide a heartbeat
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
 
 
-### Atlas or InPlay DASH pods
+### Increase in DASH Faults
+
+There have been a number of lots of Atlas DASH Pods that exhibit an increase in the frequency of certain DASH Faults when used with iOS Open-Source Automated Insulin Delivery Systems (OS-AID). This is different from the Bluetooth connection issues for some iPhone models: see [Keep Alive: Atlas or InPlay DASH Pods](#keep-alive-atlas-or-inplay-dash-pods).
+
+To the best of our knowledge this is not something that we (as OS-AID developers and users) can control. People who have boxes that fail early find most Pods in that box fail early.
+
+* The 203 fault is the most common one to exhibit an increase in frequency; occuring on the third day of Pod life
+* The 016 fault also exhibits an increased frequency and this one happens early in Pod life
+* You may be able to get Insulet to replace these, but there is no guarantee
+
+We have looked at the analytics reported from Loop users who [share their data](../loop-3/onboarding.md#usage-data-sharing){: target="_blank" }. The increase in fault rate appears to go along with the increased used of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.
+
+### Keep Alive: Atlas or InPlay DASH Pods
 
 !!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
-    **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH pods. This can cause delays to automatic and manual insulin dosing.
+    **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH Pods. This can cause delays to automatic and manual insulin dosing.
 
-    **Other phones, including iPhone 17 models other than 17e, work fine with InPlay DASH pods**
+    **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) which affects all phone models and seems to be box specific.
 
-Beginning in 2025, some of the DASH pods are produced with a newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. It is anticipated that `Atlas` pods, which report electronically as `InPlay BLE`, will become more common.
+Beginning in 2025, DASH Pods began using the newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the Pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. These `Atlas` Pods, which report electronically as `InPlay BLE`, are the new version.
 
 **If you do not already own an iPhone 16 or a 17e, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17 that is not the 17e) phone.**
 
-* The left images show the SAW marking for `TWI Board` DASH pods
-* The right images show the Atlas marking for `InPlay BLE` DASH pods
+* The left images show the SAW marking for `TWI Board` DASH Pods
+* The right images show the Atlas marking for `InPlay BLE` DASH Pods
 * The exact location of the marking varies according to manufacture location and date but the `SAW` or `Atlas` notation indicates the internal BLE configuration for that pod
 
-![identifying marks for SAW and Atlas DASH pods](img/saw-atlas-identifiers.svg){width="750"}
+![identifying marks for SAW and Atlas DASH Pods](img/saw-atlas-identifiers.svg){width="750"}
 {align="center"}
 
 #### Characteristics of Atlas with iPhone 16 or 17e
 
-* The Atlas DASH pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16 and iPhone 17e
-* Although `InPlay` pods do work with the iPhone 16 and 17e you may notice some communication issues
+* The Atlas DASH Pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16 and iPhone 17e
+* Although `InPlay` Pods do work with the iPhone 16 and 17e you may notice some communication issues
     * It can take many attempts to get the pod to initially connect when pairing; just keep hitting retry
     * Once the pod disconnects itself from the phone Bluetooth, the phone is slow to reconnect the pod to the *Loop* app
         * Pod firmware initiates the disconnect 3 minutes after the last message exchange
@@ -53,13 +150,13 @@ Beginning in 2025, some of the DASH pods are produced with a newer version of ch
         * With iPhone 16 or 17e, this can take many seconds and sometimes a few minutes
     * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
     * No solution to this issue is known
-    * There is a work-around to keep these pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for the phone. 
+    * There is a work-around to keep these Pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for the phone. 
         * Although it does increase the number of messages to the pod slightly, this is not thought to be a big issue. Pods with marginal batteries are as likely to fault without this feature as with the feature.
-        * If you are forced to use an iPhone 16 or 17e with InPlay pods, please read the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } section. This used to be found only in a feature branch but as of v3.14.0 is part of the released Loop code
+        * If you are forced to use an iPhone 16 or 17e with InPlay Pods, please read the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } section. This used to be found only in a feature branch but as of v3.14.0 is part of the released Loop code
 
-> DASH pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16 and 17e.
+> DASH Pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16 and 17e.
 
-> The earliest `Atlas` DASH pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH pods were manufactured in May 2025. Later in 2025, `Atlas` DASH pods with July 2025 and later manufacture dates were seen. 
+> The earliest `Atlas` DASH Pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH Pods were manufactured in May 2025. Later in 2025, `Atlas` DASH Pods with July 2025 and later manufacture dates were seen. 
 
 We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16 or iPhone 17e. Otherwise, you won't notice a difference.
 
@@ -70,13 +167,15 @@ We have no insight into the deployment plans from Insulet. Just pay attention if
 
 *Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
 
-There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH pods.
+There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH Pods.
 
 - - -
 
 ## Do I still need a PDM with Omnipod Loop?
 
-No, pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your *Loop* app on your iPhone. In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a pod that has been activated with the *Loop* app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. See below for what to do if you lose your phone or RileyLink.
+You don't need a PDM to use Pods with your OS-AID system but you are likely to need a PDM serial number registered to your Insulet account to get replacements for failed Pods.
+
+Pods are monogamous little creatures. They will pair with only one device at a time for safety reasons...so a pod is either paired with a PDM or your *Loop* app on your iPhone. In other words, your PDM can stay in the diabetes closet while you are Looping. You cannot use the PDM for a pod that has been activated with the *Loop* app. That doesn't mean you should get rid of your PDM if you have one. Instead, keep it for backup situations if you lose your phone. See below for what to do if you lose your phone or RileyLink.
 
 - - -
 
@@ -144,13 +243,15 @@ For pod users, your pod will finish any currently running temporary basal rate a
 
 ## Is there an increase in pod failures on Loop?
 
+This section used to be accurate. But there is an issue with some Atlas DASH pods that we don't understand, but we have statistics indicating a big increase in frequency of faults (Pods starting to scream). See [Increase in DASH Faults](#increase-in-dash-faults).
+
 There is more communication between the pod and the controller (your *Loop* phone) than is typical with the PDM (Insulet provided controller). This increases the load on the pod battery. Most people have no increase in pod failures, but there are steps to take to limit "extra pod battery use". Every time the *Loop* app requests an update of the pod state or issues a command (bolus, basal schedule, temp basal), messages are exchanged with the pod.
 
 * Set your correction range to be 10 to 20 mg/dL (0.5 to 1.1 mmol/L) instead of a single number
     * The number of commands will be reduced
 * The pod state is updated every 3 minutes for DASH and every 5 minutes for Eros
 * If uncertain communications are detected such that the *Loop* app cannot determine if a dosing command sent to the pod was actually received, the app will try once a minute to get a response
-    * The combination of Eros pods with a RileyLink device with poor signal leading to uncertain comms may cause excessive battery use and contribute to pod faults
+    * The combination of Eros Pods with a RileyLink device with poor signal leading to uncertain comms may cause excessive battery use and contribute to pod faults
 
 - - -
 
@@ -237,3 +338,5 @@ stateDiagram-v2
 !!! tip "What to do if the Pod becomes useless?"
     - Be sure to [break the sound card connection](#what-do-you-do-to-stop-a-screaming-pod) before discarding the Pod - it will scream after 80 hours, if not sooner.  
     - Be sure to move the old Pod far away before attempting to pair a new Pod.
+        - You can put the old Pod in the microwave to shield it while pairing the new one - be sure to take it out before you start the microwave
+        - Breaking the connection to the sound card does **not** deactivate the Pod communications - it only stops the noise
