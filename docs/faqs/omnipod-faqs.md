@@ -23,7 +23,7 @@ This is all handled for you automatically. You simply need to ensure you have in
 
 !!! important "You need to be comfortable building a development branch, updating frequently, and reporting problems."
 
-If you decide to test: help up by [reporting any problems](#how-do-i-report-problems).
+If you decide to test: help us by [reporting any problems](#how-do-i-report-problems).
 
 #### Build the correct version of code
 
@@ -42,7 +42,7 @@ This step requires you to have **internet access**. After this step is done, you
 
 **First Omnipod 5 Pod Only**
 
-When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to switch [Pod Types](../loop-3/omnipod.md#switch-pod-types){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
 
 
 ![sucess screen after downloading an Omnipod 5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
@@ -102,7 +102,7 @@ You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod suppli
         * They have a clear needle cap
 
 DASH and Omnipod 5 pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
-You may find the Omnipod 5 a little slower than the DASH because of the extra layer of security added to these Pods.
+You may find the Omnipod 5 a little slower when pairing than the DASH because of the extra layer of security added to these Pods.
 
 !!! tip "To date, no iPhone model specific issues have been found with Omnipod 5 Pods"
     * Omnipod 5 code is experimental and does not provide a heartbeat
@@ -128,7 +128,7 @@ We have looked at the analytics reported from Loop users who [share their data](
 
     **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) which affects all phone models and seems to be box specific.
 
-Beginning in 2025, some of the DASH Pods are produced with a newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the Pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. It is anticipated that `Atlas` Pods, which report electronically as `InPlay BLE`, will become more common.
+Beginning in 2025, DASH Pods began using the newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the Pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. These `Atlas` Pods, which report electronically as `InPlay BLE`, are the new version.
 
 **If you do not already own an iPhone 16 or a 17e, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17 that is not the 17e) phone.**
 

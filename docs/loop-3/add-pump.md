@@ -15,7 +15,7 @@ Loopers can choose from multiple pumps and a simulator:
 * [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
     * Omnipod Classic (Eros)
     * Omnipod DASH
-    * Omnipod 5 (`dev` and `next-dev` only) See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" }
+    * Omnipod 5 (`dev` and `next-dev` only) See  [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
 * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
@@ -100,7 +100,7 @@ If you select Omnipod 5 and you do not have a certificate installed yet, you are
 
 At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your Omnipod 5 Pod with insulin and pair it.
 
-Because of the extra exchanges required to handle the security added to Omnipod 5 Pods, the pairing and some of the insulin dosing commands may seem slow compared to a DASH Pod. This is normal.
+Because of the extra exchanges required to handle the security amd setup for Omnipod 5 Pods, the pairing process may seem longer than for a DASH Pod. This is normal.
 
 ### Pair Pod
 
@@ -465,14 +465,14 @@ After you delete a pump, the [Heads-Up-Display](#pump-choices) at the top of the
 
 * If you are using Pump Simulator on the phone, you must tap on Simulator Settings and then scroll to the bottom of the pump screen and select `Delete Pump`
 
-* If you are using Medtrum or Omnipod, you can only change pump types or Pod types when you are between Medtrum Patches or Omnipod Pods
+* If you are using Medtrum or Omnipod, you can only change pump or Pod type when you are between Medtrum Patches or Omnipod Pods
 
 ### Change Pod Type
 
-* With Omnipod, you can switch between Pod Types or choose a different pump (v3.14.2 or newer) but only after deactivating your current Pod
+* With Omnipod, you can switch between Pod types or choose a different pump (v3.14.2 or newer) but only after deactivating your current Pod
     * This is not needed when you are changing a pod, so long as the pods are of the same type
     * Tap on *Switch to another pod or pump type* when between pods
-    * If you select *Switch pod type*, you are taken to the [Pod Type](#pod-type) Selection screen
+    * If you select *Switch pod type*, you are taken to the [Switch Pod Type](#switch-pod-type) Selection screen
         * All of your configuration settings are maintained when switching Pod Types
     * If you select Switch pump type, you can add a pump and go through the [Add Pump](#add-pump) screen
 

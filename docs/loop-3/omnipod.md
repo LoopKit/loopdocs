@@ -71,9 +71,7 @@ The slider looks like the graphic below. (The Deactivate Pod slider is red.) You
 
 The Screen that says Setup Complete allows you to change the Scheduled Reminder for this Pod if you want a different reminder time (including none) from your usual setting.
 
-* This only changes the reminder for this one Pod
-* If you want to change all future reminders, tap on Notifications to modify the Reminder Default
-* In that same location, you can also change notification for the current Pod at any time
+> This only changes the reminder for this Pod.
 
 - - -
 
@@ -290,7 +288,7 @@ When deactivation completes, you are presented with the [Pair Pod](#pair-pod) sc
 
 - - -
 
-## Switch Pod Types
+## Switch Pod Type
 
 After the Pod is deactivated, you can choose to switch to a different Pod Type. Simply cancel out of the Pair Pod screen that is normally displayed following deactivation.
 
@@ -299,9 +297,9 @@ At that point, you can scroll to the bottom of the Omnipod screen and select the
 ![how to switch from any omnipod pod type to a different pod or pump type](img//omnipodkit-switch-pod-pump.png){width="350"}
 {align="center"}
 
-If you select Switch pod type, you are taken to the [Pod Type](#pod-type) Selection screen
+If you select Switch pod type, you are taken to the [Switch Pod Type](#switch-pod-type) Selection screen
 
-* All of your configuration settings including Insulin brand are maintained when switching Pod Types
+* All of your configuration settings including Insulin brand are maintained when you switch to a different Pod Type
 
 > If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on the Pod Type screen.
 
@@ -494,7 +492,7 @@ This mode is primarily to help out people who just paired an Atlas Pod for the f
 
 > Imagine - you just hit retry 5 times to get the Pod to pair and prime and then when it's time to insert the cannula, the Pod has disconnected because it was more than 3 minutes since the last message exchange.  Then you have to keep hitting retry until the insertion process finally starts. With When Open, the Pod stays connected through the entire process of pairing, priming and inserting so long as the user does not manually lock the phone or move to another app.
 
-The user should choose with Silent Tune or Riley Link going forward if they want to have reliable communication between their iPhone 16/17e and an Atlas Pod.
+**The user should choose with Silent Tune or Riley Link going forward if they want to have reliable communication between their iPhone 16/17e and an Atlas Pod.**
 
 > If the Pod moves out of Bluetooth range, the Pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the Pod once it is back in range. This can cause disruptions until the reconnect happens.
 
@@ -544,7 +542,7 @@ To use Omnipod 5 Pods you must have a certificate installed on your phone.
 
 * Once you have a certificate, the *Omnipod 5 Support* row will show a green check mark
 
-If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they switch [Pod Types](#switch-pod-types).
+If you do not have a certificate, you can get one at any time using this row. Getting a certificate ahead of time is not required, but some people will feel more comfortable knowing the certificate is installed before they [Switch Pod Type](#switch-pod-type).
 
 * If your *Omnipod 5 Support* row shows a yellow warning badge, you can tap on it to request a certificate
 * **This one-time step requires internet access**
