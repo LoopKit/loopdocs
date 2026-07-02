@@ -6,8 +6,7 @@ Specific information about using Omnipod 5 Pods with Loop is found in LoopDocs
 
 There is also a general FAQs page for Omnipod 5 in Open-Source Automated Insulin Delivery systems at this link: 
 
-* [Omnipod 5: Announcement](https://nightscout.github.io/omnipod-five)
-* [Omnipod 5: Open Beta](https://nightscout.github.io/omnipod-five/open-beta.html)
+* [Omnipod 5: Open Beta](https://nightscout.github.io/omnipod-five)
 
 ### Is this version less secure than using the PDM
 
