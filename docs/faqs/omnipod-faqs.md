@@ -2,11 +2,9 @@
 
 Yes it is.
 
-Specific information about using Omnipod 5 Pods with Loop is found in LoopDocs
+* We encourage anyone interested in participating in the Omnipod 5 Open Beta to read [these FAQs](https://nightscout.github.io/omnipod-five/open-beta.html)
 
-There is also a general FAQs page for Omnipod 5 in Open-Source Automated Insulin Delivery systems at this link: 
-
-* [Omnipod 5: Open Beta](https://nightscout.github.io/omnipod-five)
+Specific information about using Omnipod 5 Pods with Loop is found in LoopDocs.
 
 ### Is this version less secure than using the PDM
 
