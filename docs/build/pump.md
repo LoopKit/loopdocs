@@ -29,7 +29,7 @@ These types of pumps are compatible with the *Loop* app.
 * [Omnipod Eros Pods](pump.md#omnipod-pumps)
 * [Omnipod DASH Pods](#omnipod-dash)
     * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
-* [Omnipod 5 Pods](#omnipod-5) are not supported yet
+* [Omnipod 5 Pods](#omnipod-5) only available in development branches
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 
@@ -47,13 +47,13 @@ You must build a special branch to test some pumps. Please only test if you are 
 
 ### Omnipod Eros
 
-Eros pods (also known as Gen 3 or Classic) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
+Eros Pods (also known as Gen 3 or Classic) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros Pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros Pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
 
 !!! info "Alternative Names for Omnipod Eros Pump and Pods"
 
     **Eros** pump is also known as **Classic**, or **UST400**, or *Omnipod Insulin Management* **System**.  
 
-    Pharmacy sites sometimes may refer to the **Eros pods** as **Gen 3** but they are the same exact pods. 
+    Pharmacy sites sometimes may refer to the **Eros Pods** as **Gen 3** but they are the same Pods. 
     
 Eros system has a big Personal Diabetes Manager (PDM) that does not look like a phone.
 
@@ -62,7 +62,7 @@ Eros system has a big Personal Diabetes Manager (PDM) that does not look like a 
 
 ### Omnipod DASH
 
-The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the pod, so there is no requirement for a RileyLink compatible device.
+The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the Pod, so there is no requirement for a RileyLink compatible device.
 
 **A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
 
@@ -73,10 +73,14 @@ The DASH system has the newer, slimmer locked-android Personal Diabetes Manager 
 
 ### Omnipod 5
 
-Loop does not support Omnipod 5 pods yet but it is coming soon. 
+Loop does not support Omnipod 5 Pods in the released code.
 
-* There is an on-going private beta test with Omnipod 5
-* We cannot give a timeline for when this will land in `dev` for public beta
+* There is an on-going public beta test with Omnipod 5
+* You must build a development branch to test Omnipod 5 - we encourage most people to wait while experienced users test this implementation
+    * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
+    * See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } if you are an experienced user who wants to help with testing and are willing to build frequently and report any issues to the development team
+    * Omnipod 5 code is experimental and does not provide a heartbeat
+    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
 
 - - -
 
