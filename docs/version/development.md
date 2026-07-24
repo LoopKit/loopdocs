@@ -29,6 +29,7 @@ The next version of the *Loop* app is developed using branches.
         * A breaking change is when you can build the new branch over your existing app, but cannot go backwards without deleting your app from your phone
     * We are bringing in updates for Tidepool in a special branch `next-dev`
         * Note that you can probably go backward to `main` or `dev` from `next-dev` but it is not guaranteed
+        * Note that you can probably go backward to `main` or `dev` from `next-dev` but it is not guaranteed
 * In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the `dev` branch
 * You should only test a development or feature branch if you are willing to be an active participant with the developers:
     * [Monitor announcements in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) 
