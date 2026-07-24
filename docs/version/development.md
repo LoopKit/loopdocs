@@ -29,7 +29,6 @@ The next version of the *Loop* app is developed using branches.
         * A breaking change is when you can build the new branch over your existing app, but cannot go backwards without deleting your app from your phone
     * We are bringing in updates for Tidepool in a special branch `next-dev`
         * Note that you can probably go backward to `main` or `dev` from `next-dev` but it is not guaranteed
-        * Note that you can probably go backward to `main` or `dev` from `next-dev` but it is not guaranteed
 * In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the `dev` branch
 * You should only test a development or feature branch if you are willing to be an active participant with the developers:
     * [Monitor announcements in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) 
@@ -88,7 +87,7 @@ The table below lists active branches.
 | dev | 3.14.3 | 2 July 2026 | adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) |
 | update_dev_to_3.14.4 | 3.14.4 | 20 July 2026 | work in progress for the next version<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) |
 | `feat/all-managers`<br>- SHA `2f6b61e` | 3.14.4 | 20 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `next-dev` | 3.15.0 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
+| `next-dev` | 3.15.1 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
