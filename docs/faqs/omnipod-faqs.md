@@ -67,18 +67,34 @@ You are not required to upload a Loop Report following each successful Pod chang
 
 ### What are the known issues?
 
+These are known issues for the `dev` branch of Loop.
+
+#### Updates in `next-dev` branch only
+
+A new BLE management protocol is under test in the `next-dev` branch. This branch fixes the following issues:
+
+* [No Pump Heartbeat](#no-pump-heartbeat) - the `next-dev` branch provides a heartbeat
+* [More frequent pod not connected messages](#more-frequent-pod-not-connected-messages) - limited testing, but this is no longer observed
+* [Will I still get 203 errors?](#will-i-still-get-203-errors) - we do not know but because the new method communicates much less frequently with Pods (DASH and Omnipod 5), it is possible this will reduce the frequency of 203 faults
+
 #### No Pump Heartbeat
 
 * The current implementation for Omnipod 5 requires you to [use a CGM with a heartbeat](#what-are-the-known-issues)
 * If you are using something like Nightscout as a CGM, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked
 
+> see [Updates in `next-dev` branch only](#updates-in-next-dev-branch-only)
+
 #### More frequent pod not connected messages
 
 The private-beta testers noticed more frequent notifications that the pod is not connected. But the app continues to work. There are more periods when the spacing between automatic adjustments is 10 minutes instead of 5 minutes, but the majority of the time, every CGM reading triggers an automatic calculation.
 
+> see [Updates in `next-dev` branch only](#updates-in-next-dev-branch-only)
+
 ### Will I still get 203 errors?
 
 The increased frequency of faults noticed with DASH Atlas Pods has not been observed in the Ominpod 5 Pods tested to date.  Considering just the Pods that are not expired, there is a 3% failure rate with the failure being an occlusion (105) fault. There were testers in the private beta group using DASH instead of Omnipod 5. They had a 20% failure rate on a small sample of DASH Pods, all 203 faults near the 72 hours time frame.
+
+> see [Updates in `next-dev` branch only](#updates-in-next-dev-branch-only)
 
 ## Which Pods work with the *Loop* app?
 
@@ -125,12 +141,16 @@ To the best of our knowledge this is not something that we (as OS-AID developers
 
 We have looked at the analytics reported from Loop users who [share their data](../loop-3/onboarding.md#usage-data-sharing){: target="_blank" }. The increase in fault rate appears to go along with the increased used of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.
 
+> see [Updates in `next-dev` branch only](#updates-in-next-dev-branch-only)
+
 ### Keep Alive: Atlas or InPlay DASH Pods
 
 !!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
     **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH Pods. This can cause delays to automatic and manual insulin dosing.
 
     **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) which affects all phone models and seems to be box specific.
+
+> Note that the BLE Management updates found in the `next-dev` branch, see [Updates in `next-dev` branch only](#updates-in-next-dev-branch-only), cannot fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. The `next-dev` code still offers Pod Keep Alive, which works by always keeping the Pod connected via Bluetooth.
 
 Beginning in 2025, DASH Pods began using the newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the Pods inside the box for the word `Atlas` (newer) or `SAW` (older) as shown in the graphic below. These `Atlas` Pods, which report electronically as `InPlay BLE`, are the new version.
 

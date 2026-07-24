@@ -44,8 +44,8 @@ This section provides an overview of changes to `dev` compared to the current re
 
 The current version of `dev` is v3.14.3. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459).
 
-* Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch
-* Those who have been using feature branches for Medtrum or Eversense support can now build the released code
+* Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch; it is also supported in the `next-dev` branch
+* Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense CGM
 * Those on the Dana pump must keep building a feature branch, but the name of the branch changed
     * Dana users need to update the name of the branch they build to `feat/all-managers`
 
@@ -59,6 +59,7 @@ In addition to the main and dev branches, which are tightly controlled and only 
 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
 * The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the new universal pump manager for all types of Omnipods
+* As mentioned earlier, there is also a `next-dev` branch for early adopters of what will eventually be Loop version 4, but is currently tagged as v3.15.
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch. This is a snapshot in time and no longer reflects the current status. Always check [Table of Active Branches](#table-of-active-branches).
 
@@ -84,8 +85,9 @@ The table below lists active branches.
 |:--|:--|:--|:--|
 | main | 3.14.2 | 6 June 2026 | release |
 | dev | 3.14.3 | 2 July 2026 | adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) |
-| `feat/all-managers`<br>- SHA `5a90eda` | 3.14.3 | 1 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `next-dev` | 3.15.0 | subject to rapid change | [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5) <br>[zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) |
+| update_dev_to_3.14.4 | 3.14.4 | 20 July 2026 | work in progress for the next version<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) |
+| `feat/all-managers`<br>- SHA `2f6b61e` | 3.14.4 | 20 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `next-dev` | 3.15.1 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -137,13 +139,32 @@ The version number in the feature branch will match either the `dev` branch vers
 
 - - -
 
+### Status for `next-dev` Branch
+
+!!! important "For Expert Testers"
+    If you are willing to test using the `next-dev` branch of LoopWorkspace, this implementation provides a heartbeat from the Pod if the CGM does not have one.
+    
+    It also operates the BLE Pods (DASH and Omnipod 5) in disconnected mode instead of always connected as was done earlier.
+    
+    This new BLE management method needs people to test it and report if they find any issues.
+
+    * Please read this [post in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev/near/612491860)
+    * Follow along in that channel
+    * Be prepared to rebuild frequently
+
+This is the open PR for `next-dev`: [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)
+
+Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5) and [zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) 
+
 ### Status for Open Beta for Omnipod 5
 
 !!! warning "Use of Omnipod 5 Pods requires a CGM with a heartbeat"
-    * Omnipod 5 code is experimental and does not provide a heartbeat at this time
-    * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-    * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
-
+    * Omnipod 5 code is experimental
+        * The implementation found the the `dev` branch does not provide a heartbeat at this time
+            * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
+            * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
+        * The implementation found in the `next-dev` branch does provide a heartbeat
+            * Read [Status for `next-dev` Branch](#status-for-next-dev-branch)
 
 Please read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
 
