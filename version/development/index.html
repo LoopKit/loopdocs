@@ -3507,6 +3507,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#status-for-next-dev-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status for next-dev Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#status-for-open-beta-for-omnipod-5" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4864,6 +4875,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#status-for-next-dev-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status for next-dev Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#status-for-open-beta-for-omnipod-5" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5186,8 +5208,8 @@
 <p>This section provides an overview of changes to <code>dev</code> compared to the current release: <a href="../releases/#v3142-highlights" target="_blank"><code>Loop v3.14.2</code></a>. </p>
 <p>The current version of <code>dev</code> is v3.14.3. The differences with respect to <code>main</code> are found in <a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a>.</p>
 <ul>
-<li>Those who want to participate in the Open Beta for using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, should build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Those who have been using feature branches for Medtrum or Eversense support can now build the released code</li>
+<li>Those who want to participate in the Open Beta for using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, should build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>; it is also supported in the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
 <li>Those on the Dana pump must keep building a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, but the name of the <abbr title="version of code within a single repository or workspace repository">branch</abbr> changed<ul>
 <li>Dana users need to update the name of the <abbr title="version of code within a single repository or workspace repository">branch</abbr> they build to <code>feat/all-managers</code></li>
 </ul>
@@ -5200,6 +5222,7 @@
 <ul>
 <li>The <code>update_dev_to_M.m.#</code> is where the next version of dev is tested before becoming part of <code>dev</code> and later being released as <code>main</code></li>
 <li>The branches starting with <code>feat/</code> have one or more special features, like support for new pumps, <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> or the new universal pump manager for all types of Omnipods</li>
+<li>As mentioned earlier, there is also a <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> for early adopters of what will eventually be <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> version 4, but is currently tagged as v3.15.</li>
 </ul>
 <p>The graphic below shows the <code>main</code> and <code>dev</code> branches along with some feature branches and an update <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This is a snapshot in time and no longer reflects the current status. Always check <a href="#table-of-active-branches">Table of Active Branches</a>.</p>
 <blockquote>
@@ -5248,16 +5271,22 @@
 <td style="text-align: left;">adds support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5<br>Please read <a href="#status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a><br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>5a90eda</code></td>
-<td style="text-align: left;">3.14.3</td>
-<td style="text-align: left;">1 July 2026</td>
+<td style="text-align: left;">update_dev_to_3.14.4</td>
+<td style="text-align: left;">3.14.4</td>
+<td style="text-align: left;">20 July 2026</td>
+<td style="text-align: left;">work in progress for the next version<br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/469"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 469</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>2f6b61e</code></td>
+<td style="text-align: left;">3.14.4</td>
+<td style="text-align: left;">20 July 2026</td>
 <td style="text-align: left;">This <abbr title="version of code within a single repository or workspace repository">branch</abbr> contains all the managers and is primarily for developers to use for testing<br>It also provides <code>DanaKit @ c544c42</code> support<br><strong>Please read</strong> <a href="#status-for-dana-support">Status for Dana Support</a><br><strong>Please read</strong> <a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>next-dev</code></td>
-<td style="text-align: left;">3.15.0</td>
+<td style="text-align: left;">3.15.1</td>
 <td style="text-align: left;">subject to rapid change</td>
-<td style="text-align: left;"><a href="https://github.com/LoopKit/LoopWorkspace/pull/454"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 454</a><br>Please read <a href="#status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a> <br><a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707">zulipchat: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> next-dev Status</a></td>
+<td style="text-align: left;"><a href="#status-for-next-dev-branch">Status for <code>next-dev</code> Branch</a></td>
 </tr>
 </tbody>
 </table>
@@ -5322,13 +5351,36 @@
 </li>
 </ul>
 <hr />
+<h3 id="status-for-next-dev-branch">Status for <code>next-dev</code> Branch<a class="headerlink" href="#status-for-next-dev-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition important">
+<p class="admonition-title">For Expert Testers</p>
+<p>If you are willing to test using the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace, this implementation provides a heartbeat from the Pod if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not have one.</p>
+<p>It also operates the <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods (DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5) in disconnected mode instead of always connected as was done earlier.</p>
+<p>This new <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> management method needs people to test it and report if they find any issues.</p>
+<ul>
+<li>Please read this <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev/near/612491860">post in zulipchat</a></li>
+<li>Follow along in that channel</li>
+<li>Be prepared to rebuild frequently</li>
+</ul>
+</div>
+<p>This is the open <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> for <code>next-dev</code>: <a href="https://github.com/LoopKit/LoopWorkspace/pull/454"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 454</a></p>
+<p>Please read <a href="#status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a> and <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707">zulipchat: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> next-dev Status</a> </p>
 <h3 id="status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5<a class="headerlink" href="#status-for-open-beta-for-omnipod-5" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Use of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods requires a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</p>
 <ul>
-<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 code is experimental and does not provide a heartbeat at this time</li>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 code is experimental<ul>
+<li>The implementation found the the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> does not provide a heartbeat at this time<ul>
 <li>This means you rely on your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to wake up the app when it is in the background or the phone is locked</li>
 <li>If your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not supply a heartbeat, the app with stop automatically running when it is not open</li>
+</ul>
+</li>
+<li>The implementation found in the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> does provide a heartbeat<ul>
+<li>Read <a href="#status-for-next-dev-branch">Status for <code>next-dev</code> Branch</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 <p>Please read the open beta <a href="../../faqs/omnipod-faqs/#is-omnipod-5-available-for-open-beta-testing" target="_blank"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 FAQS</a>.</p>
