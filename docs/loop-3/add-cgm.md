@@ -137,23 +137,19 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 
 ### Libre
 
-The Libre plugin for Loop, [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/), connects directly via Near Field Communication (NFC) during pairing (for some sensors) and via Bluetooth (direct to sensor or direct to a transmitter attached to the sensor) for regular readings. No other app is needed.
-
 * Libre 1 is supported but must use a third-party transmitter (miaomiao and bubble transmitters are supported)
-* European Libre 2 can be used directly or via transmitter
+* European Libre 2/2+ can be used directly or via transmitter
 * American Libre 2 is not supported
-* Libre 3 is not supported in the released code
+* Libre 3/3+ is not supported by the released version of *Loop*, but is being tested in a special branch (next-dev)
 
 > Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
 
 !!! tip "Connecting to Libre"
     The first reading for a new sensor will often take 2-4 minutes. This is due to some technicalities on how the Libre sensor announces its presence via Bluetooth.
 
-There are solutions for some Libre 3 but they cannot reside on an iPhone. The Android solution can be uploaded to Nightscout, with Loop using Nightscout as a Remote CGM; but this requires internet access to continue closed-loop performance.
-
 Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over Bluetooth).
 
-Libre 3 sensors have started appearing as well, but are unsupported. Other Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.
+Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.
 
 ### Eversense E3/365
  
@@ -253,9 +249,6 @@ In addition to the risks of missing data, if the internet is not reliable, you m
     There are third-party apps that bring some models of Libre data to your Loop phone. Customization instructions are provided at the `Loop and Learn` website: [New CGM and Pump](https://www.loopandlearn.org/custom-code-add-cgm-pump/) that explain how to modify Loop to add a CGM or Pump that is not part of the released `Loop` code.
     
     It is suggested that you use Open Loop during warmup until the new sensor begins to provide reasonable data. This is especially important with European Libre 2 using a direct Bluetooth connection.
-    
-    The xDrip4iOS app (which can also be found in the app store under the name Shuggah) may have a problem during the warmup of a new sensor (European Libre 2 using a direct Bluetooth connection). There were two instances of crazy high values being reported and picked up by Loop 3. One Shuggah user and one xDrip4iOS user who connected via Nightscout as a CGM with Loop 3 had a serious overdose of insulin because of bad readings with a new sensor. The developers of xDrip4iOS fixed their application - so make sure you have the latest version. Those developers have no control over what is provided by Shuggah.
-
 
 ![Nightscout Remote CGM acknowledgement screen](img/nightscout-cgm-acknowledge.svg){width="350"}
 {align="center"}

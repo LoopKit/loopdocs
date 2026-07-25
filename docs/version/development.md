@@ -141,6 +141,12 @@ The version number in the feature branch will match either the `dev` branch vers
 
 ### Status for `next-dev` Branch
 
+The document linked below provides an overview of updates brought from Tidepool *Loop* to "DIY *Loop*", as found in next-dev.
+
+* [*Loop* DIY: What's new](https://github.com/LoopKit/LoopWorkspace/blob/next-dev/docs/loop-diy-whats-new.md)
+
+The document linked above does not include more recent updates which you find discussed in zulipchat and highlighted below. But the document does provides a solid basis for understanding the new features.
+
 !!! important "For Expert Testers"
     If you are willing to test using the `next-dev` branch of LoopWorkspace, this implementation provides a heartbeat from the Pod if the CGM does not have one.
     
@@ -155,6 +161,17 @@ The version number in the feature branch will match either the `dev` branch vers
 This is the open PR for `next-dev`: [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)
 
 Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5) and [zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) 
+
+#### Preset Behavior in *Loop* 4
+
+The next-dev branch will eventually be released as *Loop* version 4. The preset (override) behavior is quite different than in *Loop* versions 2 and 3.
+
+!!! tip "Preset Behavior is Different"
+    The preset (override) behavior of the released version of *Loop* remembers the insulin needs factor at the time a dose is delivered throughout the duration of insulin activity.
+
+    The new code no longer does that. As soon as the preset is cancelled, the ISF and CR return to their scheduled values. The old, often repeated, do not use extreme overrides because they mess up predictions, is no longer true.  You may need to adjust your preset values when you switch to the next-dev branch.
+
+    In particular - tricks like changing the insulin needs factor of a currently running override, no longer work and should be forgotten.
 
 ### Status for Open Beta for Omnipod 5
 
