@@ -138,9 +138,9 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 ### Libre
 
 * Libre 1 is supported but must use a third-party transmitter (miaomiao and bubble transmitters are supported)
-* European Libre 2 can be used directly or via transmitter
+* European Libre 2/2+ can be used directly or via transmitter
 * American Libre 2 is not supported
-* Libre 3 is not supported by the released version of *Loop*, but is being tested in a special branch (next-dev)
+* Libre 3/3+ is not supported by the released version of *Loop*, but is being tested in a special branch (next-dev)
 
 > Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
 

@@ -4,7 +4,7 @@ The following CGM are supported by some or all versions of Loop:
 
 * All *Dexcom* CGM (*Loop* v3 and later)
     * This includes 15-day G7 CGM
-* *EU Libre 2/+* CGM (Loop 3.4 and later), *Libre 3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#updates-in-dev))
+* *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#updates-in-dev))
 * Eversense E3 and 365 (included with *Loop* v3.14.2 and newer)
 * Medtronic Enlite CGM when used with a compatible pump
 * Remote CGM (requires internet access)
@@ -115,7 +115,7 @@ If you try to pair a sensor in the app multiple times in a short period (let's s
 * Multiple pairing attempts may make the sensor temporarily unable to function
 * If this matches your use case, shut off your phone and let it stay shut down for up to five minutes
 
-Optionally: you can use miaomiao or bubble third-party transmitters attached on top of your normal *EU Libre* 2/+ sensors. Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
+Optionally: you can use miaomiao or bubble third-party transmitters attached on top of your normal *EU Libre* 2/2+ sensors. Although the setup is a bit more bulky, it works and does not have connection problems. LibreTransmitter supports bubble and miaomiao on top of *Libre* 1 sensors, but it also works with *Libre* 2 sensors.
 
 ### Can I use *Libre* sensors with a reader like Miao Miao?
 
@@ -123,7 +123,7 @@ Loop 3.4.x and later enables the use of *Libre* sensors supported by [LibreTrans
 
 ### What about other *Libre* sensors?
 
-*Libre 3 Plus* is currently available for testing in a special branch, next-dev; it is not yet part of the released version of Loop.
+*Libre 3/3+* is currently available for testing in a special branch, next-dev; it is not yet part of the released version of Loop.
 
 * See [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
 
