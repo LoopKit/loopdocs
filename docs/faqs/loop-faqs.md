@@ -16,15 +16,7 @@ If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-
 
 ## What about *Tidepool Loop*?
 
-*Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
-
-*Tidepool Loop*, cleared by the FDA, is the first:
-
-* App that provides automated insulin dosing **and** is configured to be fully interoperable with pump and CGM partners
-* App that originated as a patient-led initiative
-
-With this approval, there is now an FDA-approved pathway for independent selection of an app, a pump, and a CGM. Stay tuned for updates at [https://tidepool.org/tidepool-loop](https://tidepool.org/tidepool-loop).
-
+See (https://loopkit.github.io/loopdocs/version/development/#relationship-with-tidepool-loop)
 - - -
 
 ## Can I use an android phone or iPad for Loop?
@@ -121,11 +113,11 @@ If you want to use [Build with *Mac*](../build/overview.md), there is a hacked w
 
 ## How often do I need to get on the computer for Loop?
 
-When you use the Browser Build method, the initial configuration is best done on the computer. After that, the process should work automatically to build and upload the build to TestFlight once a month, or when a new release is published.
+When you use the Browser Build method, the initial configuration is best done on the computer. After that, the process can be done on a phone or any other device from any location with internet access. For the Loop app only, the automated build process is disabled by GitHub (https://loopkit.github.io/loopdocs/browser/automatic/#manual-action-for-automatic-build).  It is recommended that you update your build and install from TestFlight monthly.
 
-After that, the tasks you need to do can be completed in a few minutes on your phone. 
+At a minimum: 
 
-* Update the app on your phone from TestFlight (minimum of once every 90 days)
+* Update the app on your phone from TestFlight at least once every 90 days
 * Make sure the TestFlight builds are being automatically generated
 * Sign Developer License agreements when prompted
 
@@ -179,7 +171,6 @@ Your *Loop* app will also die immediately if their developer account is not rene
 
 Moral of the story, out of all the ways to save money...borrowing someone's developer account is not a good place to save money. You don't want your *Loop* app to suddenly stop working.
 
-
 - - -
 
 ## How can I find a compatible pump? supplies?
@@ -213,6 +204,14 @@ There are a few companies that provide the *Loop* app as a service.
 
 - - -
 
+## What if I lose or get a new iPhone?
+
+If you lose your phone - follow the same dosing protocol as if you lost your [rileylink](#what-if-i-lose-my-rileylink-compatible-device).
+
+When you get a new iPhone, you can plan ahead. There's a whole FAQs page about transferring your *Loop* information to a new phone. [New Phone](new-phone.md).
+
+- - -
+
 ## What if I lose my RileyLink Compatible Device?
 
 **The RileyLink is is not required for BLE pump users.**
@@ -225,20 +224,12 @@ For Eros Pod users, your Pod will finish any currently running temporary basal r
 
 - - -
 
-## What if I lose or get a new iPhone?
-
-If you lose your phone - follow the same dosing protocol as if you lost your [rileylink](#what-if-i-lose-my-rileylink-compatible-device).
-
-When you get a new iPhone, you can plan ahead. There's a whole FAQs page about transferring your *Loop* information to a new phone. [New Phone](new-phone.md).
-
-- - -
-
 ## What about other pumps? When will they Loop?
 
-Hey now...let's be grateful for what we have first. The ability to use the *Loop* app is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Cracking the pumps for any Open-Source Automated Insulin Deliver (OS-AID) system use is a large undertaking. If and when another set of people spend a large amount of time figuring out other pumps, then they could conceivably be added to the *Loop* app. You don't need to let us know that you'd love to see more pumps compatible with Loop; we know that. There is just an awful lot of work that needs to happen and it is neither quick nor easy.
+Hey now...let's be grateful for what we have first. The ability to use the *Loop* app is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Reverse engineering the pumps' communication protocols for any Open-Source Automated Insulin Delivery (OS-AID) system use is a large undertaking. You don't need to let us know that you'd love to see more pumps compatible with Loop; we know that. There is just an awful lot of work that needs to happen and it is neither quick nor easy.
 
 * Tandem pumps are not compatible (yet)
-* Omnipod 5 pods are not compatible (yet)
+* Omnipod 5 pods are compatible with Loop-dev and Loop-next-dev
 * Dana pumps are available using a feature branch
 * Newer Medtronic pumps are not compatible
 
@@ -269,7 +260,7 @@ Yes, this is technically possible. You can have multiple *Loop* apps built onto 
 
 - - -
 
-## Will I be able to the *Loop* app on a plane? Or in the mountains?
+## Will I be able to use the *Loop* app on a plane? Or in the mountains?
 
 Yes. The *Loop* app does not require internet or cell coverage to work. So long as the *Loop* user has Bluetooth enabled on the iPhone, then the CGM and DASH pod (or RileyLink for Eros or Medtronic pumps) will still be able to do their work with the *Loop* app and your pump/Pod.
 
@@ -283,17 +274,6 @@ A known **display glitch** occasionally occurs, causing glucose readings to chan
 
 If this does not fix the issue, then read [this section](apple-health-faqs.md/#how-do-i-change-glucose-units) 
 
-- - -
 
-## What happened to FreeAPS?
-
-[FreeAPS](https://www.loopandlearn.org/freeapsdoc) was last updated in early 2023 to include DASH, but that was the last improvement. It is strongly recommended people switch to `Loop 3` or [`Trio`](https://diy-trio.org/). Do not use an application without an owner.
-
-The features people used with FreeAPS are now included in `Loop 3` or can be added with customization.
-
-The addition of customizations has been simplified.
-
-* If you build with a browser, refer to [Customize with Browser](../browser/custom-browser.md)
-* If you build with a *Mac*, refer to [Customize with *Mac*](../build/custom-mac.md)
 
 Please do not blindly apply customizations. First read the documentation provided at the links above carefully.
