@@ -196,8 +196,8 @@ On old phone (if available):
 1. _<span translate="no">Loop</span>_&nbsp;app, turn off the slider for the *RileyLink* if using *Medtronic* or *Eros Pods*
     * Do not delete the pump; if using pods, this cannot be reversed
 1. Phone Settings, *Bluetooth*
-    * Forget the connections to the CGM (*Dexcom* or *Libre*)
-    * Do not forget anything that says *TWI_BOARD or *NXP_BLE*(this is your *DASH* pod)
+    * Forget (remove) the connections to the CGM (*Dexcom* or *Libre*)
+    * Do NOT forget (remove) connections that say *InPlay BLE, *TWI_BOARD or *NXP_BLE*(this is your *DASH* pod)
 1. Phone Settings, *Bluetooth*: Disable *Bluetooth*
 
 ### Transfer Pump
