@@ -108,7 +108,7 @@ pygments==2.20.0
     # via mkdocs-material
 pymdown-extensions==11.0.1
     # via mkdocs-material
-pypdf==6.13.3
+pypdf==6.15.0
     # via mkdocs-exporter
 python-dateutil==2.9.0.post0
     # via
