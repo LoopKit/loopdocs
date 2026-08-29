@@ -68,10 +68,6 @@ Both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) tra
 Eversense E3 and 365 are implantable continuous glucose monitoring (CGM) systems with a sensor inserted under the skin and a removable on-body transmitter that sends real-time glucose data and alerts to the *Loop* app.
 Unlike traditional CGMs that require frequent sensor changes, Eversense reduces insertion frequency but requires weekly fingerstick calibrations.
 
-## *Medtronic* CGM
-![img/enlite.png](img/enlite.png){width="150"}
-
-The Minimed Enlite CGM, available with the *Medtronic* 522/722, 523/723, and 554/754, wirelessly sends glucose readings to the pump. The *Loop* app can read the *Medtronic* CGM data directly from the pump using a RileyLink compatible device.
 
 ## Offline Use
 

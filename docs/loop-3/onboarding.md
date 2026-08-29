@@ -295,11 +295,7 @@ For new Loopers, it is now time to add a CGM and a pump.  Follow these links for
 * Add a [CGM](add-cgm.md)
 * Add a [Pump](add-pump.md)
 
-!!! info "Medtronic CGM"
-
-    If you plan to use a Medtronic Enlite sensor for your CGM, you must first add that pump to Loop before the sensor will be shown as an option.
-
-If you built Loop 3 over an existing app, your CGM and pump selections should have carried over.
+If you built a new version of Loop over an existing app, your CGM and pump selections should have carried over, so long as the app was built with the same *Apple* developer ID.
 
 ## Experienced Loopers
 

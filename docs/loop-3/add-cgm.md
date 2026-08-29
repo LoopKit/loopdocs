@@ -17,10 +17,6 @@ Loop can be connected to the following CGMs:
         * Only some Libre sensors are supported; some have encryption that limits DIY use
         * Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
     * [Eversense E3/365](#eversense-e3365) **v3.14.2 or newer**
-    * [Minimed Enlite CGM](#medtronic-enlite-cgm)
-        * Medtronic Pump only
-        * **You must [add the Medtronic pump](add-pump.md) first**
-            * If Enlite is connected to Medtronic pump and that pump is connected to Loop, then an option for Enlite shows up when choosing a CGM, _not visible in graphic below_
 * CGMs that require active internet (WiFi or Cell)
     * [*Dexcom Share*](#dexcom-share-as-a-cgm)
     * [Nightscout Remote CGM](#nightscout-remote-cgm)
@@ -208,14 +204,6 @@ If you are having trouble with connecting to the Eversense, try these steps.
 
     * In the *Loop* app, go to Settings, CGM and delete CGM
     * In the official app, go to Connections and tap on the Transmitter and select Connect
-
-### Medtronic Enlite CGM
-
-The Medtronic Enlite CGM is only available if you have connected it to your compatible Medtronic Pump.
-
-* Make sure your pump reports the Enlite CGM results
-* Go through the [Add Pump](add-pump.md) to Loop steps with that Medtronic pump
-* Then do the [Add CGM](add-cgm.md) steps and the sensor should be presented as an option
 
 ### *Dexcom Share* as a CGM
 

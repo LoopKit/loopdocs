@@ -249,7 +249,6 @@ If you are adding a Medtronic pump, skip ahead to [Medtronic](#medtronic).
 - Set your pump's `Temp Basal Type` to `Insulin Rate (U/hr)`.
 - Set Remote Devices to `ON` and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn `ON` the Remote Options.
 - Cancel any currently running extended or dual wave boluses.  Loop cannot loop with those running.
-- If you are using an Enlite CGM through your Medtronic pump, make sure that is configured properly before adding your pump to Loop
 
 ### Connect Pump to Loop
 
