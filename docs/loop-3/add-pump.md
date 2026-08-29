@@ -120,6 +120,11 @@ At this point - you can pair your pod or hit `Cancel` (upper right of screen). Y
 
 **Medtrum is available in released code with v3.14.2 or newer.**
 
+!!! important "Do not use the EasyPatch App when running an OS-AID"
+    The **Medtrum** pump can be controlled by the vendor's EasyPatch App or by the OS-AID app but not by both.
+
+    If you have EasyPatch on your phone - make sure you have forgotten the pump base serial number in the EasyPatch app before attempting to connect a Medtrum Patch to your OS-AID app using that same pump base.
+
 ### Confirm Patch and Pump Base are Compatible
 
 !!! info "All versions are supported!"
@@ -135,7 +140,12 @@ At this point - you can pair your pod or hit `Cancel` (upper right of screen). Y
 
 ### Add Medtrum Nano Pump
 
+
+!!! important ""
+    If you previously used the Medtrum EasyPatch app, be sure to disconnect the pump base from the EasyPatch app before adding it as your new pump
+
 You can only add the Medtrum patch pump when no pump is selected.
+
 If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
 
 1. Select [Insulin Type](#insulin-type)
