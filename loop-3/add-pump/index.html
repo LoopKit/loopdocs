@@ -5313,6 +5313,11 @@
 <h2 id="medtrum-nano-setup">Medtrum Nano Setup<a class="headerlink" href="#medtrum-nano-setup" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="medtrum-is-a-new-pump-manager">Medtrum is a New Pump Manager<a class="headerlink" href="#medtrum-is-a-new-pump-manager" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p><strong>Medtrum is available in released code with v3.14.2 or newer.</strong></p>
+<div class="admonition important">
+<p class="admonition-title">Do not use the EasyPatch App when running an OS-AID</p>
+<p>The <strong>Medtrum</strong> pump can be controlled by the vendor's EasyPatch App or by the OS-AID app but not by both.</p>
+<p>If you have EasyPatch on your phone - make sure you have forgotten the pump base serial number in the EasyPatch app before attempting to connect a Medtrum Patch to your OS-AID app using that same pump base.</p>
+</div>
 <h3 id="confirm-patch-and-pump-base-are-compatible">Confirm Patch and Pump Base are Compatible<a class="headerlink" href="#confirm-patch-and-pump-base-are-compatible" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition info">
 <p class="admonition-title">All versions are supported!</p>
@@ -5326,8 +5331,11 @@ Do not use the patch if they do not match.</p>
 <p align="center"><img alt="Medtrum REF" src="../img/medtrum-ref.JPG" width="450" /></p>
 </div>
 <h3 id="add-medtrum-nano-pump">Add Medtrum Nano Pump<a class="headerlink" href="#add-medtrum-nano-pump" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can only add the Medtrum patch pump when no pump is selected.
-If you already have a pump selected, you must first delete the pump as detailed in <a href="#change-pump-type">Change Pump Type</a>.</p>
+<div class="admonition important">
+<p>If you previously used the Medtrum EasyPatch app, be sure to disconnect the pump base from the EasyPatch app before adding it as your new pump</p>
+</div>
+<p>You can only add the Medtrum patch pump when no pump is selected.</p>
+<p>If you already have a pump selected, you must first delete the pump as detailed in <a href="#change-pump-type">Change Pump Type</a>.</p>
 <ol>
 <li>Select <a href="#insulin-type">Insulin Type</a></li>
 <li>Check <a href="#patch-settings">Patch settings</a></li>
@@ -5422,7 +5430,6 @@ From here, you can attach the patch to your body and complete the activation pro
 <li>Set your pump's <code>Temp Basal Type</code> to <code>Insulin Rate (U/hr)</code>.</li>
 <li>Set Remote Devices to <code>ON</code> and enter any random ID (010101 will work - avoid using all zeros). This setting is found in the pump's Utilities menu (for x23 continue to Connect Devices, Remotes) and turn <code>ON</code> the Remote Options.</li>
 <li>Cancel any currently running extended or dual wave boluses.  <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> cannot loop with those running.</li>
-<li>If you are using an Enlite <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> through your Medtronic pump, make sure that is configured properly before adding your pump to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 </ul>
 <h3 id="connect-pump-to-loop">Connect Pump to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><a class="headerlink" href="#connect-pump-to-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The final step is to connect your Medtronic pump to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>

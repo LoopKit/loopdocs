@@ -5273,18 +5273,18 @@
 <tr>
 <td style="text-align: left;">update_dev_to_3.14.4</td>
 <td style="text-align: left;">3.14.4</td>
-<td style="text-align: left;">20 July 2026</td>
+<td style="text-align: left;">31 July 2026</td>
 <td style="text-align: left;">work in progress for the next version<br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/469"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 469</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>2f6b61e</code></td>
+<td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>7a35cf6</code></td>
 <td style="text-align: left;">3.14.4</td>
-<td style="text-align: left;">20 July 2026</td>
+<td style="text-align: left;">31 July 2026</td>
 <td style="text-align: left;">This <abbr title="version of code within a single repository or workspace repository">branch</abbr> contains all the managers and is primarily for developers to use for testing<br>It also provides <code>DanaKit @ c544c42</code> support<br><strong>Please read</strong> <a href="#status-for-dana-support">Status for Dana Support</a><br><strong>Please read</strong> <a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>next-dev</code></td>
-<td style="text-align: left;">3.15.1</td>
+<td style="text-align: left;">3.15.2</td>
 <td style="text-align: left;">subject to rapid change</td>
 <td style="text-align: left;"><a href="#status-for-next-dev-branch">Status for <code>next-dev</code> Branch</a></td>
 </tr>
@@ -5336,6 +5336,14 @@
 <p>Use the page linked above to add the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> name (from the table above) to your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>. In other words, where the directions indicate the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name of interest.</p>
 <h4 id="mac-xcode-build">Mac-<abbr title="program used to build an app">Xcode</abbr> Build<a class="headerlink" href="#mac-xcode-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For Mac <abbr title="program used to build an app">Xcode</abbr> build, the lines you need to copy and paste into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window are explicitly provided below:</p>
+<div class="copy highlight"><span class="filename">Download and build the update_dev_to_3.14.4 branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>update_dev_to_3.14.4
+</code></pre></div>
+<div class="copy highlight"><span class="filename">Download and build the next-dev branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-<span class="w"> </span>next-dev
+</code></pre></div>
 <div class="copy highlight"><span class="filename">Download and build the feat/all-managers branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>-<span class="w"> </span>feat/all-managers
@@ -5360,7 +5368,7 @@
 <div class="admonition important">
 <p class="admonition-title">For Expert Testers</p>
 <p>If you are willing to test using the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace, this implementation provides a heartbeat from the Pod if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not have one.</p>
-<p>It also operates the <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods (DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5) in disconnected mode instead of always connected as was done earlier.</p>
+<p>It also operates the <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods (DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5) in disconnected mode instead of always connected as was done earlier; and with the updates found in interim version 3.15.2, it uses the <em>eager-connect</em> method. See <a href="../../faqs/omnipod-faqs/#table-of-omnipodkit-versions" target="_blank">Table of OmnipodKit Versions</a> for more information.</p>
 <p>This new <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> management method needs people to test it and report if they find any issues.</p>
 <ul>
 <li>Please read this <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev/near/612491860">post in zulipchat</a></li>
@@ -5388,10 +5396,12 @@
 <li>If your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not supply a heartbeat, the app with stop automatically running when it is not open</li>
 </ul>
 </li>
-<li>The implementation found in the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> does provide a heartbeat<ul>
-<li>Read <a href="#status-for-next-dev-branch">Status for <code>next-dev</code> Branch</a></li>
 </ul>
 </li>
+<li>These two branches are available which do provide a heartbeat for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 but are only for expert testers<ul>
+<li>The <code>update_dev_to_3.14.4</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> uses the <em>ble-heartbeat</em> Bluetooth connection method</li>
+<li>The <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> uses the <em>eager-connect</em> Bluetooth connection method</li>
+<li>See <a href="../../faqs/omnipod-faqs/#table-of-omnipodkit-versions" target="_blank">Table of OmnipodKit Versions</a> for more information about Bluetooth connection methods</li>
 </ul>
 </li>
 </ul>
@@ -5399,7 +5409,7 @@
 <p>Please read the open beta <a href="../../faqs/omnipod-faqs/#is-omnipod-5-available-for-open-beta-testing" target="_blank"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 FAQS</a>.</p>
 <p>Support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 is available in development branches. Please report any issues you have in the zulipchat channel for <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20Open.20Beta.20for.20Omnipod.205/with/607418710"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a> topic in zulipchat.</p>
 <ul>
-<li>Include whether you are using the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> or <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
+<li>Include the <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> you are using</li>
 <li>If the problem you are having is not associated with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, please use the appropriate channel<ul>
 <li><a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/600775735"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>-dev status</a> </li>
 <li><a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/604885611"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> next-dev status</a>.</li>
@@ -5409,6 +5419,10 @@
 <p>You can also create an <a href="https://github.com/loopandlearn/OmnipodKit/issues"><abbr title="On GitHub - a formal method to report a problem, either code behavior or documentation">Issue</abbr></a> at the OmnipodKit <abbr title="contains project files and each file's revision history">repository</abbr>. Be sure to report your configuration, be descriptive in what you observed along with a timestamp when it happened and include a <a href="../../loop-3/settings/#issue-report" target="_blank"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report</a>.</p>
 <h3 id="status-for-pod-keep-alive-support">Status for Pod Keep Alive Support<a class="headerlink" href="#status-for-pod-keep-alive-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, <code>main</code>, v3.14.0 or later.</p>
+<p>For experts, the new Bluetooth connection method, nicknamed <em>eager-connect</em>, is currently available for use with the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.</p>
+<ul>
+<li>If you test with <code>next-dev</code>, please try it without Pod Keep Alive and share your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Reports in zulipchat</li>
+</ul>
 <hr />
 <h3 id="status-for-medtrum-support">Status for Medtrum Support<a class="headerlink" href="#status-for-medtrum-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Medtrum support was added to the released code, <code>main</code>, v3.14.2 or later.</p>
