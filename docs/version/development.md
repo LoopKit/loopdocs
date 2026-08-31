@@ -85,8 +85,8 @@ The table below lists active branches.
 |:--|:--|:--|:--|
 | main | 3.14.2 | 6 June 2026 | release |
 | dev | 3.14.3 | 2 July 2026 | adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) |
-| update_dev_to_3.14.4 | 3.14.4 | 20 July 2026 | work in progress for the next version<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) |
-| `feat/all-managers`<br>- SHA `2f6b61e` | 3.14.4 | 20 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| update_dev_to_3.14.4 | 3.14.4 | 31 July 2026 | work in progress for the next version<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) |
+| `feat/all-managers`<br>- SHA `7a35cf6` | 3.14.4 | 31 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"

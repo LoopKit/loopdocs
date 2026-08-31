@@ -39,11 +39,12 @@ OmnipodKit replaces the need for OmniKit and OmniBLE submodules and provides sup
 * When developing a new method, connect on demand for the iOS/Pod pair, not only was a heartbeat developed for Omnipod 5 Pods, but this new technique appears to greatly reduce the 203 Fault frequency for Atlas DASH Pods
     * This new version: nicknamed *ble-heartbeat* was a move in the right direction
     * Because the Bluetooth connection is only opened when the app wants to communicate with the Pod, the interaction appears slower to the user: only a few seconds, but noticeable
-* The next version, nicknamed *eager-connect*, arose from analysis of what is going wrong with iPhone 16/17e models when connecting to Atlas Pods
-    * There are a lot of technical details but the short version is that with iPhone 16/17e the Bluetooth connection could get stuck (also referred to as "wedged" where the iOS and Pod states were not commnunicating) and it could take seconds to minutes for nominal communication to begin
+* The next version, nicknamed *eager-connect*, arose from analysis of what is going wrong with iPhone 16/17e models when initiating a Bluetooth connection to Atlas Pods
+    * There are a lot of technical details but the short version is that with iPhone 16/17e the Bluetooth connection could get stuck and it could take seconds to minutes for nominal communication to begin
+        * If you read the PR, you may see language about the system getting "wedged" where the iOS and Pod states were not communicating and suffered from a very-long timeout before trying again
     * The *eager-connect* method, senses if the connection is taking too long and restarts the process
         * With iPhone 16/17e, the connection is much faster: a few seconds instead of seconds to minutes
-        * For all other phones, the *eager-connection* is ready to communicate with the pod in a few seconds, so still can be noticeable but faster than with *ble-heartbeat*
+        * For all other phones, the *eager-connection* is ready to communicate with the pod in a few seconds, so the user can still notice a slight delay compared to the *keep-connected* method, but faster than with *ble-heartbeat* method
 
 
 ### Table of OmnipodKit Versions
