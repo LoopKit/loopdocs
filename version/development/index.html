@@ -5206,7 +5206,7 @@
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section provides an overview of changes to <code>dev</code> compared to the current release: <a href="../releases/#v3142-highlights" target="_blank"><code>Loop v3.14.2</code></a>. </p>
-<p>The current version of <code>dev</code> is v3.14.3. The differences with respect to <code>main</code> are found in <a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a>.</p>
+<p>The current version of <code>dev</code> is v3.14.4. The differences with respect to <code>main</code> are found in <a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a> and  <a href="https://github.com/LoopKit/LoopWorkspace/pull/469"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 469</a>.</p>
 <ul>
 <li>Those who want to participate in the Open Beta for using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, should build the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>; it is also supported in the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
 <li>Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></li>
@@ -5266,21 +5266,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
-<td style="text-align: left;">3.14.3</td>
-<td style="text-align: left;">2 July 2026</td>
-<td style="text-align: left;">adds support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5<br>Please read <a href="#status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a><br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a></td>
-</tr>
-<tr>
-<td style="text-align: left;">update_dev_to_3.14.4</td>
 <td style="text-align: left;">3.14.4</td>
 <td style="text-align: left;">31 July 2026</td>
-<td style="text-align: left;">work in progress for the next version<br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/469"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 469</a></td>
+<td style="text-align: left;">uses the <em>ble-heartbeat</em> method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5<br>Please read <a href="#status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a><br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a><br>See <a href="https://github.com/LoopKit/LoopWorkspace/pull/469"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 469</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>7a35cf6</code></td>
 <td style="text-align: left;">3.14.4</td>
 <td style="text-align: left;">31 July 2026</td>
-<td style="text-align: left;">This <abbr title="version of code within a single repository or workspace repository">branch</abbr> contains all the managers and is primarily for developers to use for testing<br>It also provides <code>DanaKit @ c544c42</code> support<br><strong>Please read</strong> <a href="#status-for-dana-support">Status for Dana Support</a><br><strong>Please read</strong> <a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a></td>
+<td style="text-align: left;">This <abbr title="version of code within a single repository or workspace repository">branch</abbr> contains all the managers and is primarily for developers to use for testing<br>It also provides <code>DanaKit @ 2884c39</code> support<br><strong>Please read</strong> <a href="#status-for-dana-support">Status for Dana Support</a><br><strong>Please read</strong> <a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>next-dev</code></td>
@@ -5431,7 +5425,7 @@
 <p>Eversense support was added to the released code, <code>main</code>, v3.14.2 or later.</p>
 <hr />
 <h3 id="status-for-dana-support">Status for Dana Support<a class="headerlink" href="#status-for-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>For Dana support, you must build a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>feat/all-managers</code>. The old feature branches will be deleted without further warning.</p>
+<p>For Dana support, you must build a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>feat/all-managers</code>.</p>
 <ul>
 <li>Build instructions are found here: <a href="#how-to-build-feature-branches">How to Build Feature Branches</a>.</li>
 <li>See <a href="#feature-branch-featall-managers">Feature Branch: feat/all-managers</a> for more information about the <abbr title="version of code within a single repository or workspace repository">branch</abbr>. </li>
