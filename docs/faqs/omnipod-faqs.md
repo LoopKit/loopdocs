@@ -55,8 +55,7 @@ For details about the different Bluetooth connection methods nicknamed *keep-con
 |:--|:--|:--|:--|:--|
 | before Loop 3.14.2 | released | OmniKit<br>OmniBLE | *keep-connected*| Classic, DASH |
 | Loop 3.14.2 | released |  OmnipodKit | *keep-connected* | Classic, DASH |
-| Loop 3.14.3 | dev | OmnipodKit | *keep-connected* | Classic, DASH, Omnipod 5 |
-| Loop 3.14.4 | update_dev_to_3.14.4 | OmnipodKit | *ble-heartbeat* | Classic, DASH, Omnipod 5 |
+| Loop 3.14.4 | dev | OmnipodKit | *ble-heartbeat* | Classic, DASH, Omnipod 5 |
 | Loop 3.15.2 | next-dev | OmnipodKit | *eager-connect* | Classic, DASH, Omnipod 5 |
 
 
