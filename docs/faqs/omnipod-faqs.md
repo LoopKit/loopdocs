@@ -1,3 +1,65 @@
+## Why are there so many Omnipod Pump Manager versions?
+
+The code used to control Pods is undergoing a lot of modifications in the summer of 2026. 
+
+You can skip ahead to the [Table of OmnipodKit Versions](#table-of-omnipodkit-versions), or keep reading for more details.
+
+### OS-AID Omnipod History
+
+For Loop versions 3.14.2 and newer, all Omnipod pump manager control code is found in a single repository: **OmnipodKit**.
+
+Before that, there were two repositories with a lot of common code; often requiring updates for each repository to provide a single improved feature.
+
+To make development easier moving forward and to facilitate adding Omnipod 5 Pod support, the OmnipodKit repository was created to replace the two older submodules, which are now removed from Loop.
+
+#### OmniKit
+
+OmniKit was used to communicate with Classic (also known as Eros or Generation 3) Pods using a RileyLink
+
+* This is now replaced with **OmnipodKit**
+
+#### OmniBLE
+
+OmniBLE was used to communicate with DASH Pods with direct Bluetooth connection
+
+* This is now replaced with **OmnipodKit**
+* The method developed for DASH pods originally used a *keep-connected* method
+* Three minutes after the last message exchange between the phone and Pod, the Pod would initiate a disconnect from the Bluetooth channel (a characteristic of those Pods)
+* The 3-minute disconnect could be detected and an immediate reconnect be initiatied by iOS giving a 3-minute heartbeat for these pods
+* We now believe that keeping the DASH Pods connected may lead to heavier battery load with potentially more Faults
+    * This began to be critical when the new version of DASH Pods, using Atlas cards, began to be delivered in spring of 2025, see: [Increase in DASH Faults](#increase-in-dash-faults)
+* Furthermore, several iPhone models, iPhone 16/17e, were very slow to make connection with Atlas DASH pods: [Keep Alive: Atlas or InPlay DASH Pods](#keep-alive-atlas-or-inplay-dash-pods)
+
+
+#### OmnipodKit
+
+OmnipodKit replaces the need for OmniKit and OmniBLE submodules and provides support for Classic, DASH and Omnipod 5 Pods
+
+* The intial version with Omnipod 5 support used the Bluetooth *keep-connected* method; but this did not provide a heartbeat for Omnipod 5 Pods
+* When developing a new method, connect on demand for the iOS/Pod pair, not only was a heartbeat developed for Omnipod 5 Pods, but this new technique appears to greatly reduce the 203 Fault frequency for Atlas DASH Pods
+    * This new version: nicknamed *ble-heartbeat* was a move in the right direction
+    * Because the Bluetooth connection is only opened when the app wants to communicate with the Pod, the interaction appears slower to the user: only a few seconds, but noticeable
+* The next version, nicknamed *eager-connect*, arose from analysis of what is going wrong with iPhone 16/17e models when initiating a Bluetooth connection to Atlas Pods
+    * There are a lot of technical details but the short version is that with iPhone 16/17e the Bluetooth connection could get stuck and it could take seconds to minutes for nominal communication to begin
+        * If you read the PR, you may see language about the system getting "wedged" where the iOS and Pod states were not communicating and suffered from a very-long timeout before trying again
+    * The *eager-connect* method, senses if the connection is taking too long and restarts the process
+        * With iPhone 16/17e, the connection is much faster: a few seconds instead of seconds to minutes
+        * For all other phones, the *eager-connection* is ready to communicate with the pod in a few seconds, so the user can still notice a slight delay compared to the *keep-connected* method, but faster than with *ble-heartbeat* method
+
+
+### Table of OmnipodKit Versions
+
+For details about the different Bluetooth connection methods nicknamed *keep-connected*, *ble-heartbeat* and *eager-connect*, please read [OS-AID Omnipod History](#os-aid-omnipod-history). Some of the Loop versions listed below are works-in-progress suitable only for expert testers.
+
+| Loop | Status |Pod Pump Manager | BLE Method | Supports |
+|:--|:--|:--|:--|:--|
+| before Loop 3.14.2 | released | OmniKit<br>OmniBLE | *keep-connected*| Classic, DASH |
+| Loop 3.14.2 | released |  OmnipodKit | *keep-connected* | Classic, DASH |
+| Loop 3.14.3 | dev | OmnipodKit | *keep-connected* | Classic, DASH, Omnipod 5 |
+| Loop 3.14.4 | update_dev_to_3.14.4 | OmnipodKit | *ble-heartbeat* | Classic, DASH, Omnipod 5 |
+| Loop 3.15.2 | next-dev | OmnipodKit | *eager-connect* | Classic, DASH, Omnipod 5 |
+
+
 ## Is Omnipod 5 available for open-beta testing?
 
 Yes it is.

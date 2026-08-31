@@ -6,7 +6,6 @@ The following CGM are supported by some or all versions of Loop:
     * This includes 15-day G7 CGM
 * *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#updates-in-dev))
 * Eversense E3 and 365 (included with *Loop* v3.14.2 and newer)
-* Medtronic Enlite CGM when used with a compatible pump
 * Remote CGM (requires internet access)
     * *Dexcom* Share
     * Nightscout as CGM
