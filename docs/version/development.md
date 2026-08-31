@@ -42,7 +42,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.2`](releases.md#v3142-highlights){: target="_blank" }. 
 
-The current version of `dev` is v3.14.3. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459).
+The current version of `dev` is v3.14.4. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) and  [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469).
 
 * Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch; it is also supported in the `next-dev` branch
 * Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense CGM
@@ -84,9 +84,8 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.2 | 6 June 2026 | release |
-| dev | 3.14.3 | 2 July 2026 | adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) |
-| update_dev_to_3.14.4 | 3.14.4 | 31 July 2026 | work in progress for the next version<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) |
-| `feat/all-managers`<br>- SHA `7a35cf6` | 3.14.4 | 31 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ c544c42` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| dev | 3.14.4 | 31 July 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469)  |
+| `feat/all-managers`<br>- SHA `7a35cf6` | 3.14.4 | 31 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 2884c39` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
@@ -233,7 +232,7 @@ Eversense support was added to the released code, `main`, v3.14.2 or later.
 
 ### Status for Dana Support
 
-For Dana support, you must build a new feature branch, `feat/all-managers`. The old feature branches will be deleted without further warning.
+For Dana support, you must build a new feature branch, `feat/all-managers`.
 
 * Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
 * See [Feature Branch: feat/all-managers](#feature-branch-featall-managers) for more information about the branch. 
