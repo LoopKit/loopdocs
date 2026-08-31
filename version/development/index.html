@@ -5330,10 +5330,6 @@
 <p>Use the page linked above to add the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> name (from the table above) to your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr>. In other words, where the directions indicate the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, you substitute the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name of interest.</p>
 <h4 id="mac-xcode-build">Mac-<abbr title="program used to build an app">Xcode</abbr> Build<a class="headerlink" href="#mac-xcode-build" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>For Mac <abbr title="program used to build an app">Xcode</abbr> build, the lines you need to copy and paste into a <abbr title="interface for entering commands to the computer">Terminal</abbr> window are explicitly provided below:</p>
-<div class="copy highlight"><span class="filename">Download and build the update_dev_to_3.14.4 branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">   </span>-<span class="w"> </span>update_dev_to_3.14.4
-</code></pre></div>
 <div class="copy highlight"><span class="filename">Download and build the next-dev branch</span><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>-<span class="w"> </span>next-dev
@@ -5385,7 +5381,7 @@
 <p class="admonition-title">Use of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods requires a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</p>
 <ul>
 <li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 code is experimental<ul>
-<li>The implementation found the the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> does not provide a heartbeat at this time<ul>
+<li>The initial implementation found older builds of the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, v3.14.3, did not provide a heartbeat at this time<ul>
 <li>This means you rely on your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to wake up the app when it is in the background or the phone is locked</li>
 <li>If your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not supply a heartbeat, the app with stop automatically running when it is not open</li>
 </ul>
@@ -5393,7 +5389,7 @@
 </ul>
 </li>
 <li>These two branches are available which do provide a heartbeat for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 but are only for expert testers<ul>
-<li>The <code>update_dev_to_3.14.4</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> uses the <em>ble-heartbeat</em> Bluetooth connection method</li>
+<li>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> uses the <em>ble-heartbeat</em> Bluetooth connection method</li>
 <li>The <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> uses the <em>eager-connect</em> Bluetooth connection method</li>
 <li>See <a href="../../faqs/omnipod-faqs/#table-of-omnipodkit-versions" target="_blank">Table of OmnipodKit Versions</a> for more information about Bluetooth connection methods</li>
 </ul>
