@@ -119,12 +119,6 @@ Use the page linked above to add the desired branch name (from the table above) 
 
 For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
 
-``` { .bash .copy  title="Download and build the update_dev_to_3.14.4 branch" }
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
-   - update_dev_to_3.14.4
-```
-
 ``` { .bash .copy  title="Download and build the next-dev branch" }
 /bin/bash -c "$(curl -fsSL \
   https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
@@ -188,11 +182,11 @@ The next-dev branch will eventually be released as *Loop* version 4. The preset 
 
 !!! warning "Use of Omnipod 5 Pods requires a CGM with a heartbeat"
     * Omnipod 5 code is experimental
-        * The implementation found the the `dev` branch does not provide a heartbeat at this time
+        * The initial implementation found older builds of the `dev` branch, v3.14.3, did not provide a heartbeat at this time
             * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
             * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
     * These two branches are available which do provide a heartbeat for Omnipod 5 but are only for expert testers
-        * The `update_dev_to_3.14.4` branch uses the *ble-heartbeat* Bluetooth connection method
+        * The `dev` branch uses the *ble-heartbeat* Bluetooth connection method
         * The `next-dev` branch uses the *eager-connect* Bluetooth connection method
         * See [Table of OmnipodKit Versions](../faqs/omnipod-faqs.md#table-of-omnipodkit-versions){: target="_blank"} for more information about Bluetooth connection methods
 
