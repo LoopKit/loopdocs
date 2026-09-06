@@ -148,6 +148,15 @@ Part of the problem with Libre sensors is that there are differences in region, 
 Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.
 
 ### Eversense E3/365
+
+!!! warning "Eversense Transmitter Connects to One App"
+    You can move back and forth between your OS-AID app with Eversense or the Eversense native app but you can only use one at a time.
+
+    When transitioning:
+
+    * Disconnect the Transmitter from the app you are leaving
+    * Go into phone settings: Bluetooth, find the Transmitter ID and select "Forget this device"
+    * Go to the app you want to use with Eversense, log in if needed and select the Transmitter
  
 With Eversense added to *Loop* you get direct connection to your transmitter for glucose readings and can configure alert notifications. Because the transmitter can only connect to one app at a time, you must first disconnect from the Eversense app before you can connect to the *Loop* app.
 
@@ -178,10 +187,10 @@ Step 3: Once connected to the Eversense Transmitter, tap on the row that says DM
 
 #### Troubleshooting
 
-If you are having trouble with connecting to the Eversense, try these steps.
+If you are having trouble with connecting to the Eversense, try these steps, one at a time.
 
 * Make sure the official Eversense app is not connected to the Transmitter
-* In your phone settings, find the Transmitter name and forget that device
+* In your phone settings under Bluetooth, find the Transmitter name and forget that device
 * Reboot your phone
 
 #### Important Information
