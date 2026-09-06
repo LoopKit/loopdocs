@@ -326,18 +326,30 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 
 ## Older updates
 
-### Updates from v3.10 to v3.12.2
+### Updates from v3.14.0 to v3.14.2
 
-The updates developed in the `dev` branch before the release of v3.12.2 are found in these PR.
+> Note - the numbering is "limited" to 3.14.x for Loop 3 because next-dev, which will be Loop 4, is using 3.15.x.
 
-Note - the numbering is "limited" to 3.14.x for Loop 3 because next-dev, which will be Loop 4, is using 3.15.x.
+The updates developed in the `dev` branch before the release of v3.14.2:
 
-*   [Update dev to 3.12.2](https://github.com/LoopKit/LoopWorkspace/pull/453)
-*   [Update dev to 3.12.1](https://github.com/LoopKit/LoopWorkspace/pull/452)
+*   [Update dev to 3.14.2](https://github.com/LoopKit/LoopWorkspace/pull/453)
+*   [Update dev to 3.14.1](https://github.com/LoopKit/LoopWorkspace/pull/452)
+
+### Updates from v3.12 to v3.14.0
+
+The updates developed in the `dev` branch before the release of v3.14.0:
+
+*   [Update dev to 3.13.1](https://github.com/LoopKit/LoopWorkspace/pull/422)
+
+### Updates from v3.10 to v3.12
+
+The updates developed in the `dev` branch before the release of v3.10.0:
+
+*   [Update dev to 3.11.1](https://github.com/LoopKit/LoopWorkspace/pull/408)
 
 ### Updates from v3.8 to v3.10
 
-The updates developed in the `dev` branch before the release of v3.10.0 are found in these PR.
+The updates developed in the `dev` branch before the release of v3.10.0:
 
 *   [Update dev to 3.9.5](https://github.com/LoopKit/LoopWorkspace/pull/394)
 *   [Update dev to 3.9.4](https://github.com/LoopKit/LoopWorkspace/pull/367)
