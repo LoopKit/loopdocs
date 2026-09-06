@@ -44,7 +44,7 @@ OmnipodKit replaces the need for OmniKit and OmniBLE submodules and provides sup
         * If you read the PR, you may see language about the system getting "wedged" where the iOS and Pod states were not communicating and suffered from a very-long timeout before trying again
     * The *eager-connect* method, senses if the connection is taking too long and restarts the process
         * With iPhone 16/17e, the connection is much faster: a few seconds instead of seconds to minutes
-        * For all other phones, the *eager-connection* is ready to communicate with the pod in a few seconds, so the user can still notice a slight delay compared to the *keep-connected* method, but faster than with *ble-heartbeat* method
+        * For all other phones, the *eager-connection* is ready to communicate with the pod in a few seconds, so the user can still notice a slight connection delay compared to the *keep-connected* method, but faster than with *ble-heartbeat* method
 
 
 ### Table of OmnipodKit Versions
@@ -140,7 +140,7 @@ You are not required to upload a Loop Report following each successful Pod chang
 
 These are known issues for the `dev` branch of Loop.
 
-* The `dev` branch uses a connect-on-demand method for connecting to both DASH and Omnipod 5 Pods so you may notice a slight delay is connecting, getting status and then responding to a command from Loop
+* The `dev` branch uses a connect-on-demand method for connecting to both DASH and Omnipod 5 Pods so you may notice a slight delay in connecting, getting status and then responding to a command from Loop
     * This is normal, be patient
 * [Will I still get 203 errors?](#will-i-still-get-203-errors) - we do not know but early testing indicates reduced frequency of 203 faults for Atlas DASH Pods
 * If you are using an iPhone 16/17e, the connection delay is variable and can be quite severe (up to minutes to connect)
@@ -200,7 +200,7 @@ It took a while, but we are testing (in `dev` and `next-dev` branches) a differe
 
 #### Status for released code
 
-This section remains valid for folks using released code, v3.14.2 or earlier, which used the always-connected method for Bluetooth between the phone and pod. The new methods under test, which connect on demand, provide reduced frequency for 203 faults.
+This section remains valid for folks using released code, v3.14.2 or earlier, which used the *keep-connected* method for Bluetooth between the phone and pod. The new methods under test, which connect on demand, provide reduced frequency for 203 faults.
 
 People who have boxes that fail early find most Pods in that box fail early.
 
@@ -215,7 +215,7 @@ We have looked at the analytics reported from Loop users who [share their data](
 !!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
     **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH Pods. This can cause delays to automatic and manual insulin dosing.
 
-    **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) when using the always-connected Bluetooth method which affects all phone models and seems to be box specific.
+    **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) when using the *keep-connected* Bluetooth method which affects all phone models and seems to be box specific.
 
 > * Note that the BLE Management modifications found in the `dev` branch, known as *ble-heartbeat*. cannot fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. 
 
