@@ -430,10 +430,6 @@ You are likely to hear a Pod fault before Loop notices. If your phone is locked,
 
 Unlock your phone, open Loop, navigate to the Pod Status screen and use the slider to Deactivate Pod to stop the noise. The Pod fault - even if it does not show up in the HUD or the Pod Status screen, will be picked up by the process of sliding to Deactivate Pod. You can then view the Fault information in the [Previous Pod Details](#previous-pod) screen.
 
-#### Updates with Version 3.4.x
-
-The updates included with version 3.4.x make it easier to find the Pod fault, should one occur.
-
 The fault will appear on the Omnipod screen and more details will be shown when you tap on Replace Pod to arrive at the Deactivate screen. You can grab a quick screenshot on the Deactivate screen if desired.
 
 The fault information can still be found under [Previous Pod Details](#previous-pod) if you need to find it after you Deactivate the "screaming" Pod.
@@ -442,11 +438,9 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-No better solution has been found for dealing with the difficulty reconnecting Atlas DASJ Pods with iPhone 16 (all models) and iPhone 17e. Therefore, the features previously found just in the `feat/pod-keep-alive` branch of LoopWorkspace are part of the released code as of version 3.14.0.
+Although there is a method under test in development branches, it is not available in the released code. Until that method is proven, the difficulty reconnecting Atlas DASH Pods with iPhone 16 (all models) and iPhone 17e is helped by using the Pod Keep Alive feature. It still might take time for the initial connection, but so long as the pod and phone are within Bluetooth range, the pod never disconnects itself from the phone. This is available as part of the released code for versions 3.14.0 and newer.
 
-There is a new "Pod Keep Alive" option at the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH Pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
-
-It was tested for LoopWorkspace and Trio.
+The "Pod Keep Alive" option is found the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH Pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 
 The concept is by choosing one of the Pod Keep Alive choices, the app sends a getStatus to the Pod before the 3 minute disconnect happens. Therefore, so long as you and the Pod stay close to the phone, the Pod will be connected for any command (either manual or automatic) including bolus, temp basal, modify scheduled basal rates, suspend, or deactivate.
 

@@ -144,7 +144,7 @@ These are known issues for the `dev` branch of Loop.
     * This is normal, be patient
 * [Will I still get 203 errors?](#will-i-still-get-203-errors) - we do not know but early testing indicates reduced frequency of 203 faults for Atlas DASH Pods
 * If you are using an iPhone 16/17e, the connection delay is variable and can be quite severe (up to minutes to connect)
-    * Use the Pod Keep Alive feature - most people use the Silent Tune option
+    * Use the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } - most people use the Silent Tune option
 
 #### Updates in `next-dev` branch only
 
