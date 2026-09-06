@@ -71,7 +71,7 @@ This is a snapshot in time. Users do not need this but developers may find this 
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
 | main | 5 Sep 2026 |  `1d1f21b` | *ble-heartbeat* | 
-| dev | 6 Sep 2026 |  TBD |*ble-heartbeat* |
+| dev | 6 Sep 2026 |  `8df0b2b` |*ble-heartbeat* |
 | next-dev | 31 Aug 2026 | `6106c1c` | *eager-connect* |
 
 ## Is Omnipod 5 available for open-beta testing?
