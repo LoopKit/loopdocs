@@ -116,6 +116,8 @@ When Google Translate is selected:
 
 **<span translate="no">Hamburger Menu</span>**&nbsp; (Hamburger Menu): three parallel lines that, when tapped, open a new menu
 
+**<span translate="no">hotfix</span>**&nbsp; (hotfix): An urgent fix that is applied to both the released and development branches at the same time
+
 **<span translate="no">HUD</span>**&nbsp; (HUD): Heads-Up Display at top of Loop main screen, phone in portrait mode
 
 **<span translate="no">ICE</span>**&nbsp; (ICE): Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.

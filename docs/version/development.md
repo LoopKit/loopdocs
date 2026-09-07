@@ -42,14 +42,12 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.2`](releases.md#v3142-highlights){: target="_blank" }. 
 
-The current version of `dev` is v3.14.4. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459) and  [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469).
+The current version of `dev` is v3.14.5. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459), [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) and  [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488).
 
 * Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch; it is also supported in the `next-dev` branch
 * Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense CGM
-* Those on the Dana pump must keep building a feature branch, but the name of the branch changed
-    * Dana users need to update the name of the branch they build to `feat/all-managers`
-
-Please see [Table of Retired Branches](#table-of-retired-branches) for up to date information about what branch you need to build for Dana support.
+    * There are updates to both Medtrum and Eversense in the `dev` branch (v3.14.5), which should be released to `main` very soon
+* Those on the Dana pump must keep building the feature branch, `feat/all-managers`
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
@@ -59,7 +57,7 @@ In addition to the main and dev branches, which are tightly controlled and only 
 
 * The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
 * The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the new universal pump manager for all types of Omnipods
-* As mentioned earlier, there is also a `next-dev` branch for early adopters of what will eventually be Loop version 4, but is currently tagged as v3.15.
+* As mentioned earlier, there is also a `next-dev` branch for early adopters of what will eventually be Loop version 4, but is currently tagged as v3.15.x
 
 The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch. This is a snapshot in time and no longer reflects the current status. Always check [Table of Active Branches](#table-of-active-branches).
 
@@ -78,14 +76,12 @@ The table below lists active branches.
 
 * Note that updates may occur and be announced in zulipchat a day or two before updates propagate to *LoopDocs*
 * Anyone using a feature branch needs to be alert and check zulipchat regularly
-* For example, while preparing for v3.14.2, older feature branches were retired
-    * Check the [Table of Retired Branches](#table-of-retired-branches) to get the support you need.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.2 | 6 June 2026 | release |
-| dev | 3.14.4 | 31 July 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469)  |
-| `feat/all-managers`<br>- SHA `7a35cf6` | 3.14.4 | 31 July 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 2884c39` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| dev | 3.14.5 | 7 Sep 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) <br>See [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)  |
+| `feat/all-managers`<br>- SHA `30135eb` | 3.14.5 | 5 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
@@ -94,14 +90,6 @@ The table below lists active branches.
     Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
 
     The SHA-1 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the commit for a particular repository.
-
-### Table of Retired Branches
-
-| Retired Branch |  Use Instead | Status Link |
-|:--|:--|:--|
-| feat/dev-dana-medtrum |For Medtrum, use `main`<br>For Dana, use `feat/all-managers` | [Status for Medtrum](#status-for-medtrum-support)<br>[Status for Dana](#status-for-dana-support) |
-| feat/eversense |  For Eversense, use `main` | [Status for Eversense](#status-for-eversense-support) |
-| feat/omnipodkit | Use `main` unless you are a developer<br>developers can use `feat/all-managers` |  [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 
 ### How to Build Feature Branches
 
@@ -182,13 +170,12 @@ The next-dev branch will eventually be released as *Loop* version 4. The preset 
 
 !!! warning "Use of Omnipod 5 Pods requires a CGM with a heartbeat"
     * Omnipod 5 code is experimental
-        * The initial implementation found older builds of the `dev` branch, v3.14.3, did not provide a heartbeat at this time
-            * This means you rely on your CGM to wake up the app when it is in the background or the phone is locked
-            * If your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
-    * These two branches are available which do provide a heartbeat for Omnipod 5 but are only for expert testers
+    * The current versions of `dev` and `next-dev` both provide a heartbeat for Omnipod 5
         * The `dev` branch uses the *ble-heartbeat* Bluetooth connection method
         * The `next-dev` branch uses the *eager-connect* Bluetooth connection method
         * See [Table of OmnipodKit Versions](../faqs/omnipod-faqs.md#table-of-omnipodkit-versions){: target="_blank"} for more information about Bluetooth connection methods
+    * The initial implementation for Omnipod 5 Pods from an older `dev` build, v3.14.3, did not provide a heartbeat for Omnipod 5 Pods
+        * If you are running this older version and your CGM does not supply a heartbeat, the app will stop running when it is not open; please rebuild
 
 
 Please read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
@@ -205,6 +192,8 @@ You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues
 ### Status for Pod Keep Alive Support
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
+
+The Pod Keep Alive code was completely revamped and cleaned up with v3.14.5.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
 
 For experts, the new Bluetooth connection method, nicknamed *eager-connect*, is currently available for use with the `next-dev` branch, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.
 
@@ -294,24 +283,13 @@ For Dana support, you must build a new feature branch, `feat/all-managers`.
 
 ### Feature Branch: feat/all-managers
 
-The `feat/all-managers` branch replaces several [retired feature branches](#table-of-retired-branches). If you need a feature branch for a Dana pump - you need to build this branch. Be sure to review the [Status For Dana Support](#status-for-dana-support) section.
+The `feat/all-managers` branch replaces several retired feature branches. If you need a feature branch for a Dana pump - you need to build this branch. Be sure to review the [Status For Dana Support](#status-for-dana-support) section.
 
-If you previously used a feature branch for Medtrum or Eversense support, you can switch to the `dev` branch.
+If you previously used a feature branch for Medtrum or Eversense support, you can switch to the `main` branch, with updates coming in to the `dev` branch.
 
-!!! Question "What is different between `feat/all-managers` and `dev` branch"
-    There are several differences between `feat/all-managers` and `dev` branch.  For one thing, this branch has all the pump managers: OmniBLE, OmniKit, OmnipodKit, DanaKit, MedtrumKit and MinimedKit and the new CGM manager EversenseKit. When other new managers become available, they may be added here for testing.
+## OmnipodKit Information
 
-    Keeping OmniBLE & OmniKit in this branch is useful for developers. Those pump managers were removed from `main` and `dev` branches (v3.14.2). We expect those managers will eventually be dropped from this branch, but only when the developers agree to do so.
-
-    Because OmniBLE & OmniKit are present, a tester who comes in with a Pod attached to one of those managers stays with the manager. The automatic conversion to OmnipodKit, which happens with v3.14.2, does not happen with this branch. The tester has to manually change pump managers during a Pod change.
-
-#### Transition to OmnipodKit
-
-!!! important "Once you transition to OmnipodKit, stay with OmnipodKit"
-    The new unified Omnipod Pump Manager, OmnipodKit, is provided in v3.14.2 or newer.
-
-    If you are running a Pod and you transition to the OmnipodKit Pump Manager, then any build you install on your phone should have OmnipodKit. If you need to downgrade to a build earlier than v3.14.2, do so after deactivating a Pod.
-
+When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.15.0 or newer) branch over an older build, your Pod is automatically transitioned to use a new Pump Manager: OmnipodKit. You will notice the user interface is a little different from the older managers (OmniKit and OmniBLE).
 
 The OmnipodKit pump manager comes with improved user interface and user experience for Omnipod Classic (Eros) and DASH pods including
 
@@ -319,9 +297,14 @@ The OmnipodKit pump manager comes with improved user interface and user experien
 * Some new labels
 * Some reworked sub-menus with added information or features
 
-If you are running the `main` or `dev` branch - your Pod is automatically transitioned to OmnipodKit. You will notice the user interface is a little different. If you are running `feat/all-managers` branch, see [Manual transition with `feat/all-managers`](#manual-transition-with-featall-managers).
+!!! warning "Pod Keep Alive v3.14.5 or later"
+    The Pod Keep Alive feature was rewritten with v3.14.5.
+    
+    * Old Pod Keep Alive (PKA) settings are not transferred and must be reselected
+    * The RileyLink connections will be shown in the pump (Omnipod DASH) view under the Pod Keep Alive button when the RileyLink option is selected
+    * When switching Pod types and then reselecting DASH Pods, PKA Settings must be reselected
 
-One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With this version of OmnipodKit, only Eros and DASH are supported.
+One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the `main` (v3.14.2) branch, only Eros and DASH are supported. With the `dev` (3.14.3 or newer) or `next-dev` ( 3.15.0 and newer) branches, Eros, DASH and Omnipod 5 are all supported.
 
 !!! question "Why OmnipodKit?"
     When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
@@ -334,25 +317,34 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 
     This will be a significant time saver for developers moving forward for updating code and adding support for new types of pods.
 
-#### Manual transition with `feat/all-managers`
-
-If you are running `feat/all-managers` branch, you need to take these steps to switch to using the new pump manager.
-
-The next time you change a pod, delete the pump manager you are using and add a new pump. See [Change Pump Type](../loop-3/add-pump.md#change-pump-type){: target="_blank" } for detailed instructions.
-
-* Select `All Omnipod Types` as your new pump manager.
-* Go through the onboarding of selecting notifications and reminders and insulin type.
-* You will then be presented with a screen to select the type of pod. 
-* Choose the Classic (Eros) or DASH Pod type
-
-
 - - -
 
 ## Older updates
 
+### Updates from v3.14.0 to v3.14.2
+
+> Note - the numbering is "limited" to 3.14.x for Loop 3 because next-dev, which will be Loop 4, is using 3.15.x.
+
+The updates developed in the `dev` branch before the release of v3.14.2:
+
+*   [Update dev to 3.14.2](https://github.com/LoopKit/LoopWorkspace/pull/453)
+*   [Update dev to 3.14.1](https://github.com/LoopKit/LoopWorkspace/pull/452)
+
+### Updates from v3.12 to v3.14.0
+
+The updates developed in the `dev` branch before the release of v3.14.0:
+
+*   [Update dev to 3.13.1](https://github.com/LoopKit/LoopWorkspace/pull/422)
+
+### Updates from v3.10 to v3.12
+
+The updates developed in the `dev` branch before the release of v3.10.0:
+
+*   [Update dev to 3.11.1](https://github.com/LoopKit/LoopWorkspace/pull/408)
+
 ### Updates from v3.8 to v3.10
 
-The updates developed in the `dev` branch before the release of v3.10.0 are found in these PR.
+The updates developed in the `dev` branch before the release of v3.10.0:
 
 *   [Update dev to 3.9.5](https://github.com/LoopKit/LoopWorkspace/pull/394)
 *   [Update dev to 3.9.4](https://github.com/LoopKit/LoopWorkspace/pull/367)
