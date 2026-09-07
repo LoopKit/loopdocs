@@ -45,10 +45,12 @@ If you want to upload your readings to the Eversense servers tap on the DMS Sett
 * Enable Upload
 * Enter your Eversense Credentials
 
-If you want to share your readings using Eversense NOW, you can invite them from this same screen.
+The default delay is 1 hour but can be selected with a delay of "None" as an option.
  
-![eversense calibration status](img/eversense-dms.png){width="300"}
+![eversense dms status](img/eversense-dms.png){width="300"}
 {align="center"}
+
+If you want to share your readings using Eversense NOW, scroll down on this same screen and tap the *Invite follower* row.
 
 - - - 
 
