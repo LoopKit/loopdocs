@@ -12,7 +12,6 @@
         * *Dexcom* ONE (based off G6 sensor) is available in some countries, but will be discontinued soon
     - *Dexcom* G7 or ONE+ CGM systems
         * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
-    - *Medtronic* sensors connected to a Loop-compatible *Medtronic* pumps
     - Some *Libre* sensors
     - Eversense E3 and 365 sensors
 
@@ -37,6 +36,12 @@ The *Dexcom* G5, G6 and ONE CGM transmits data directly to the *Dexcom* app on y
 The *Dexcom* ONE, available in some countries, acts just like the G6 as far as the *Loop* app is concerned. The *Dexcom* ONE app does not provide some features, such as *Dexcom* Share, that come with the G6. When you set up the *Loop* app, select *Dexcom* G6 as your CGM to use *Dexcom* ONE CGM with the *Dexcom* ONE app installed on your phone.
 
 If the *Dexcom* app is on the same device as the *Loop* app, your system can function without an internet connection. See Offline Use below.
+
+!!! tip "Anubis Support"
+    *Anubis* support is available in the dev branch (v3.14.5) and will be in the next release.
+    
+    * *Abubis* is a retrofitted Dexcom G6 transmitter that has different characteristics for warmup time and sensor life
+    * The support allows you to enter your expected sensor life and provides access to transmitter battery levels
 
 !!! warning "*Dexcom* G5 Support"
 

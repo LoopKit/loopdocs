@@ -48,9 +48,14 @@ With Loop 3, the data-store on the Loop phone keeps a full week of data. If ther
 
 Some people use Dexcom Share to feed their remote services. There have been outages with Share. When those occur, the data is not back-filled like it is with Loop.
 
-This is the reason why there's a comment under each CGM below to select Upload Readings.
+This is the reason why there's an option under each CGM, as shown in the G7 example below, to enable Upload Readings if desired.
 
-This setting is **off by default** so if you want to ensure you have CGM data in Tidepool, for example, enable this option.
+* This setting was set **off by default** for earlier versions of Loop. 
+* With Loop v3.14.2 and newer, it is **on by default**. 
+* The default setting is what is selected when you install the app on your phone for the first time. 
+* If you modified this setting to be **on**, it should remain **on** through a rebuild. 
+
+It's a good idea to check this setting to ensure you have CGM data in Tidepool and Nightscout.
 
 * Tap on the CGM pill in the top left corner of Loop
 * Scroll down and tap the **Upload Readings** toggle under **CONFIGURATION**
@@ -149,7 +154,7 @@ Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose 
 
 ### Eversense E3/365
 
-!!! warning "Eversense Transmitter Connects to One App"
+!!! warning "Eversense Transmitter Connects to a Single App"
     You can move back and forth between your OS-AID app with Eversense or the Eversense native app but you can only use one at a time.
 
     When transitioning:

@@ -49,8 +49,6 @@ The current version of `dev` is v3.14.5. The differences with respect to `main` 
     * There are updates to both Medtrum and Eversense in the `dev` branch (v3.14.5), which should be released to `main` very soon
 * Those on the Dana pump must keep building the feature branch, `feat/all-managers`
 
-Please see [Table of Retired Branches](#table-of-retired-branches) for up to date information about what branch you need to build for Dana support.
-
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
 
 ### Branches
@@ -78,8 +76,6 @@ The table below lists active branches.
 
 * Note that updates may occur and be announced in zulipchat a day or two before updates propagate to *LoopDocs*
 * Anyone using a feature branch needs to be alert and check zulipchat regularly
-* For example, while preparing for v3.14.2, older feature branches were retired
-    * Check the [Table of Retired Branches](#table-of-retired-branches) to get the support you need.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
@@ -94,14 +90,6 @@ The table below lists active branches.
     Each time you save a change to your&nbsp;<span translate="no">GitHub repository</span>, a unique SHA-1 is created. That identifier is used to tell *GitHub* a specific change that you want applied or identifies a specific version for that <code>repository</code>. These work for any compatible <code>fork</code> from the original&nbsp;<span translate="no">GitHub repository</span>.
 
     The SHA-1 20-character value is abbreviated as SHA and typically only the first 7 or 8 characters are presented to identify the commit for a particular repository.
-
-### Table of Retired Branches
-
-| Retired Branch |  Use Instead | Status Link |
-|:--|:--|:--|
-| feat/dev-dana-medtrum |For Medtrum, use `main`<br>For Dana, use `feat/all-managers` | [Status for Medtrum](#status-for-medtrum-support)<br>[Status for Dana](#status-for-dana-support) |
-| feat/eversense |  For Eversense, use `main` | [Status for Eversense](#status-for-eversense-support) |
-| feat/omnipodkit | Use `main` unless you are a developer<br>developers can use `feat/all-managers` |  [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 
 ### How to Build Feature Branches
 
@@ -293,7 +281,7 @@ For Dana support, you must build a new feature branch, `feat/all-managers`.
 
 ### Feature Branch: feat/all-managers
 
-The `feat/all-managers` branch replaces several [retired feature branches](#table-of-retired-branches). If you need a feature branch for a Dana pump - you need to build this branch. Be sure to review the [Status For Dana Support](#status-for-dana-support) section.
+The `feat/all-managers` branch replaces several retired feature branches. If you need a feature branch for a Dana pump - you need to build this branch. Be sure to review the [Status For Dana Support](#status-for-dana-support) section.
 
 If you previously used a feature branch for Medtrum or Eversense support, you can switch to the `main` branch, with updates coming in to the `dev` branch.
 
