@@ -198,7 +198,7 @@ You may find the Omnipod 5 a little slower when pairing than the DASH because of
 
 There have been a number of lots of Atlas DASH Pods that exhibit an increase in the frequency of certain DASH Faults when used with iOS Open-Source Automated Insulin Delivery Systems (OS-AID). This is different from the Bluetooth connection issues for some iPhone models: see [Keep Alive: Atlas or InPlay DASH Pods](#keep-alive-atlas-or-inplay-dash-pods).
 
-It took a while, but we are testing (in `dev` and `next-dev` branches) a different method of connecting to Pods that appears to reduce the frequency of 203 Faults.  There are still other faults that can happen with any pods, but that particular fault was quite a problem.
+It took a while, but we are testing (in `dev` and `next-dev` branches) a different method of connecting to Pods that appears to reduce the frequency of 203 Faults.  There are faults that can happen with any pods, including 203, but the Atlas DASH pods exhibited almost 20 times the rate of 203 faults as earlier pods and that particular problem is improved.
 
 #### Status for released code
 
