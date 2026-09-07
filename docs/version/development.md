@@ -187,8 +187,7 @@ The next-dev branch will eventually be released as *Loop* version 4. The preset 
         * The `next-dev` branch uses the *eager-connect* Bluetooth connection method
         * See [Table of OmnipodKit Versions](../faqs/omnipod-faqs.md#table-of-omnipodkit-versions){: target="_blank"} for more information about Bluetooth connection methods
     * The initial implementation for Omnipod 5 Pods from an older `dev` build, v3.14.3, did not provide a heartbeat for Omnipod 5 Pods
-        * If you are running this older version and your CGM does not supply a heartbeat, the app with stop automatically running when it is not open
-        * This also uses the older keep-connected method for Bluetooth, which is no longer recommened for Pods
+        * If you are running this older version and your CGM does not supply a heartbeat, the app will stop running when it is not open; please rebuild
 
 
 Please read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
