@@ -51,6 +51,7 @@
 *[GMT]: Greenwich Mean Time is mean (average) solar time at 0 degrees longitude, see UTC
 *[Guardrails]: limits in the code for user selected settings, recommended and absolute limits are provided
 *[Hamburger Menu]: three parallel lines that, when tapped, open a new menu
+*[hotfix]: An urgent fix that is applied to both the released and development branches at the same time
 *[HUD]: Heads-Up Display at top of Loop main screen, phone in portrait mode
 *[ICE]: Insulin Counteraction Effect - Refers to the difference between observed change in blood glucose and the change in blood glucose that Loop models based on the effects of insulin.
 *[Identifiers]: names of modules found on your Apple Developer Identifiers page that are required for GitHub build method
