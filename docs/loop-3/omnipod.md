@@ -438,7 +438,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-Although there is a method under test in development branches, it is not available in the released code. Until that method is proven, the difficulty reconnecting Atlas DASH Pods with iPhone 16 (all models) and iPhone 17e is helped by using the Pod Keep Alive feature. It still might take time for the initial connection, but so long as the pod and phone are within Bluetooth range, the pod never disconnects itself from the phone. This is available as part of the released code for versions 3.14.0 and newer.
+The difficulty connecting Atlas DASH Pods with iPhone 16 (all models) and iPhone 17e is helped by using the Pod Keep Alive feature. A new method is under test in development branches, but will not be available in the released code until that method is proven. With the Pod Keep Alive feature, it still might take time for the initial Bluetooth connection, but so long as the pod and phone are within Bluetooth range, the pod never disconnects itself from the phone. This is available as part of the released code for versions 3.14.0 and newer.
 
 The "Pod Keep Alive" option is found the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH Pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 

@@ -193,6 +193,8 @@ You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
 
+The Pod Keep Alive code was completely revamped and cleaned up with v3.14.5.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
+
 For experts, the new Bluetooth connection method, nicknamed *eager-connect*, is currently available for use with the `next-dev` branch, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.
 
 * If you test with `next-dev`, please try it without Pod Keep Alive and share your Loop Reports in zulipchat
@@ -295,6 +297,12 @@ The OmnipodKit pump manager comes with improved user interface and user experien
 * Some new labels
 * Some reworked sub-menus with added information or features
 
+!!! warning "Pod Keep Alive v3.14.5 or later"
+    The Pod Keep Alive feature was rewritten with v3.14.5.
+    
+    * Old Pod Keep Alive (PKA) settings are not transferred and must be reselected
+    * The RileyLink connections will be shown in the pump (Omnipod DASH) view under the Pod Keep Alive button when the RileyLink option is selected
+    * When switching Pod types and then reselecting DASH Pods, PKA Settings must be reselected
 
 One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the `main` (v3.14.2) branch, only Eros and DASH are supported. With the `dev` (3.14.3 or newer) or `next-dev` ( 3.15.0 and newer) branches, Eros, DASH and Omnipod 5 are all supported.
 

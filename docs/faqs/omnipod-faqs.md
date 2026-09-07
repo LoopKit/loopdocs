@@ -60,13 +60,15 @@ For details about the different Bluetooth connection methods nicknamed *keep-con
 
 #### Map of OmnipodKit SHA
 
-This is a snapshot in time. Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
+Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
 
 **OmnipodKit Branches / SHA as of 2026-09-06**
 
 * subject to modification - be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
 * all these branch support Classic, DASH, and Omnipod 5 Pods
 * all these branches support a connect on demand Bluetooth method
+
+**At this snapshot in time**, the OmnipodKit `main` and `dev` branches have the same code with two different SHA. There are open PR to modify `dev` so that additional *eager-connect* testing can start.
 
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
@@ -142,15 +144,15 @@ These are known issues for the `dev` branch of Loop.
 
 * The `dev` branch uses a connect-on-demand method for connecting to both DASH and Omnipod 5 Pods so you may notice a slight delay in connecting, getting status and then responding to a command from Loop
     * This is normal, be patient
-* [Will I still get 203 errors?](#will-i-still-get-203-errors) - we do not know but early testing indicates reduced frequency of 203 faults for Atlas DASH Pods
+* [Will I still get 203 errors?](#will-i-still-get-203-errors) - there have always been some reports of 203 faults with DASH that ramped up significantly with the Atlas version of DASH. Early testing indicates reduced frequency of 203 faults for Atlas DASH Pods with the newer Bluetooth protocols.
 * If you are using an iPhone 16/17e, the connection delay is variable and can be quite severe (up to minutes to connect)
-    * Use the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } - most people use the Silent Tune option
+    * Use the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } - unless you have a RileyLink device, select the Silent Tune option for Atlas DASH pods with an iPhone 16/17e
 
 #### Updates in `next-dev` branch only
 
 A new BLE management protocol is under test in the `next-dev` branch. This branch fixes the following issues:
 
-* [Will I still get 203 errors?](#will-i-still-get-203-errors) - we do not know but early testing indicates reduced frequency of 203 faults for Atlas DASH Pods
+* [Will I still get 203 errors?](#will-i-still-get-203-errors) - there have always been some reports of 203 faults with DASH that ramped up significantly with the Atlas version of DASH. Early testing indicates reduced frequency of 203 faults for Atlas DASH Pods with the newer Bluetooth protocols.
 * If you are using an iPhone 16/17e, the connection delay has been dramatically redused using the new *eager-connect* connect-on-demand method
     * Early testing indicates the Pod Keep Alive option might not be needed, but it is available if you have difficulty with the iPhone 16/17e plus Atlas DASH combination
 
@@ -160,7 +162,7 @@ A new BLE management protocol is under test in the `next-dev` branch. This branc
 
 ### Will I still get 203 errors?
 
-Both the `dev` and `next-dev` branches use a new connect-on-demand method that appears to reduce the frequency of 203 faults for Atlas DASH pod.  In addition, not 203 faults have been observed to date by any of the Omnipod 5 testers.
+Both the `dev` and `next-dev` branches use a new connect-on-demand method that appears to reduce the frequency of 203 faults for Atlas DASH pod.  In addition, no 203 faults have been observed to date by any of the Omnipod 5 testers.
 
 ## Which Pods work with the *Loop* app?
 
@@ -190,7 +192,7 @@ You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod suppli
 DASH and Omnipod 5 pumps communicate with the phone via Bluetooth so they do not require a RileyLink compatible device.
 You may find the Omnipod 5 a little slower when pairing than the DASH because of the extra layer of security added to these Pods.
 
-**To date, no iPhone model specific issues have been found with Omnipod 5 Pods.**
+**To date, no iPhone model specific issues have been found with Omnipod 5 Pods variants tested.**
 
 ### Increase in DASH Faults
 
