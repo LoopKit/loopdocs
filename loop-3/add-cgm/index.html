@@ -4771,8 +4771,14 @@
 <p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> provides an option to upload <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> values to a remote service like <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> or Tidepool. In many cases this can be a preferred solution.</p>
 <p>With <abbr title="Latest release with major updates">Loop 3</abbr>, the data-store on the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> phone keeps a full week of data. If there is an interruption in the upload, when it is restored, <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> will fill in up to 1-week of <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data that was not previously uploaded.</p>
 <p>Some people use Dexcom Share to feed their remote services. There have been outages with Share. When those occur, the data is not back-filled like it is with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
-<p>This is the reason why there's a comment under each <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> below to select Upload Readings.</p>
-<p>This setting is <strong>off by default</strong> so if you want to ensure you have <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data in Tidepool, for example, enable this option.</p>
+<p>This is the reason why there's an option under each <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, as shown in the G7 example below, to enable Upload Readings if desired.</p>
+<ul>
+<li>This setting was set <strong>off by default</strong> for earlier versions of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. </li>
+<li>With <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.2 and newer, it is <strong>on by default</strong>. </li>
+<li>The default setting is what is selected when you install the app on your phone for the first time. </li>
+<li>If you modified this setting to be <strong>on</strong>, it should remain <strong>on</strong> through a rebuild. </li>
+</ul>
+<p>It's a good idea to check this setting to ensure you have <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> data in Tidepool and <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr>.</p>
 <ul>
 <li>Tap on the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> <abbr title="on Nightscout, small boxes with information, tap for extra details">pill</abbr> in the top left corner of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Scroll down and tap the <strong>Upload Readings</strong> toggle under <strong>CONFIGURATION</strong></li>
@@ -4847,6 +4853,16 @@
 <p>Part of the problem with Libre sensors is that there are differences in region, type and "security generations" which makes it hard to account for all variants. For example, the Libre 2 US has a different "security generation" than European Libre 2 sensors (different encryption in the data transmitted over Bluetooth).</p>
 <p>Libre sensors that are unsupported: Libre Pro, Libre H, and Libre Sense Glucose Sport Biosensors.</p>
 <h3 id="eversense-e3365">Eversense E3/365<a class="headerlink" href="#eversense-e3365" title="Anchor link to this Header on this Page">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Eversense Transmitter Connects to a Single App</p>
+<p>You can move back and forth between your OS-AID app with Eversense or the Eversense native app but you can only use one at a time.</p>
+<p>When transitioning:</p>
+<ul>
+<li>Disconnect the Transmitter from the app you are leaving</li>
+<li>Go into phone settings: Bluetooth, find the Transmitter ID and select "Forget this device"</li>
+<li>Go to the app you want to use with Eversense, log in if needed and select the Transmitter</li>
+</ul>
+</div>
 <p>With Eversense added to <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> you get direct connection to your transmitter for glucose readings and can configure alert notifications. Because the transmitter can only connect to one app at a time, you must first disconnect from the Eversense app before you can connect to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app does not have glucose notification features, at this time. You can enable the on-transmitter notification within the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app so the transmitter will vibrate to alert you of an issue.</p>
 <p>The Eversense implementation for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> (and other OS-AID systems) enables you to upload your readings through the Eversense system and to use the Eversense NOW app. You can invite people to follow your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> values.</p>
@@ -4871,10 +4887,10 @@
 <li>If you enable upload, you can invite followers to Eversense Now</li>
 </ul>
 <h4 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>If you are having trouble with connecting to the Eversense, try these steps.</p>
+<p>If you are having trouble with connecting to the Eversense, try these steps, one at a time.</p>
 <ul>
 <li>Make sure the official Eversense app is not connected to the Transmitter</li>
-<li>In your phone settings, find the Transmitter name and forget that device</li>
+<li>In your phone settings under Bluetooth, find the Transmitter name and forget that device</li>
 <li>Reboot your phone</li>
 </ul>
 <h4 id="important-information">Important Information<a class="headerlink" href="#important-information" title="Anchor link to this Header on this Page">&para;</a></h4>

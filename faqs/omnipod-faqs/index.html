@@ -5055,7 +5055,7 @@
 </li>
 <li>The <em>eager-connect</em> method, senses if the connection is taking too long and restarts the process<ul>
 <li>With iPhone 16/17e, the connection is much faster: a few seconds instead of seconds to minutes</li>
-<li>For all other phones, the <em>eager-connection</em> is ready to communicate with the pod in a few seconds, so the user can still notice a slight delay compared to the <em>keep-connected</em> method, but faster than with <em>ble-heartbeat</em> method</li>
+<li>For all other phones, the <em>eager-connection</em> is ready to communicate with the pod in a few seconds, so the user can still notice a slight connection delay compared to the <em>keep-connected</em> method, but faster than with <em>ble-heartbeat</em> method</li>
 </ul>
 </li>
 </ul>
@@ -5089,7 +5089,7 @@
 <td style="text-align: left;">Classic, DASH</td>
 </tr>
 <tr>
-<td style="text-align: left;"><abbr title="Latest release with major updates">Loop 3</abbr>.14.4</td>
+<td style="text-align: left;"><abbr title="Latest release with major updates">Loop 3</abbr>.14.5</td>
 <td style="text-align: left;">dev</td>
 <td style="text-align: left;">OmnipodKit</td>
 <td style="text-align: left;"><em>ble-heartbeat</em></td>
@@ -5104,6 +5104,45 @@
 </tr>
 </tbody>
 </table>
+<h4 id="map-of-omnipodkit-sha">Map of OmnipodKit SHA<a class="headerlink" href="#map-of-omnipodkit-sha" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.</p>
+<p><strong>OmnipodKit Branches / SHA as of 2026-09-06</strong></p>
+<ul>
+<li>subject to modification - be sure to check <a href="https://github.com/loopandlearn/OmnipodKit/branches"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a></li>
+<li>all these <abbr title="version of code within a single repository or workspace repository">branch</abbr> support Classic, DASH, and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</li>
+<li>all these branches support a connect on demand Bluetooth method</li>
+</ul>
+<p><strong>At this snapshot in time</strong>, the OmnipodKit <code>main</code> and <code>dev</code> branches have the same code with two different SHA. There are open <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> to modify <code>dev</code> so that additional <em>eager-connect</em> testing can start.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Branch</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">SHA</th>
+<th style="text-align: left;"><abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">main</td>
+<td style="text-align: left;">5 Sep 2026</td>
+<td style="text-align: left;"><code>1d1f21b</code></td>
+<td style="text-align: left;"><em>ble-heartbeat</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">dev</td>
+<td style="text-align: left;">6 Sep 2026</td>
+<td style="text-align: left;"><code>8df0b2b</code></td>
+<td style="text-align: left;"><em>ble-heartbeat</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">next-dev</td>
+<td style="text-align: left;">31 Aug 2026</td>
+<td style="text-align: left;"><code>6106c1c</code></td>
+<td style="text-align: left;"><em>eager-connect</em></td>
+</tr>
+</tbody>
+</table>
 <h2 id="is-omnipod-5-available-for-open-beta-testing">Is <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 available for open-beta testing?<a class="headerlink" href="#is-omnipod-5-available-for-open-beta-testing" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Yes it is.</p>
 <ul>
@@ -5115,16 +5154,7 @@
 <p>The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of comms.</p>
 <p>This is all handled for you automatically. You simply need to ensure you have internet access for your first <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod.</p>
 <h3 id="should-i-switch-to-omnipod-5-now">Should I switch to <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 now?<a class="headerlink" href="#should-i-switch-to-omnipod-5-now" title="Anchor link to this Header on this Page">&para;</a></h3>
-<ol>
-<li>Don't be in a rush</li>
-<li>This is new code that has been tested by a dozen developers in closed-beta testing</li>
-<li>Consider waiting a few weeks and letting experienced people do the testing</li>
-<li>There are a few known issues but we expect more will be revealed when we get a bigger group of testers<ul>
-<li>The current implementation for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 requires you to <a href="#what-are-the-known-issues">use a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</a></li>
-<li>If you are using something like <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked</li>
-</ul>
-</li>
-</ol>
+<p>Don't be in a rush, the open beta testing is almost completed and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 will be in released code soon</p>
 <h3 id="how-can-i-switch-to-omnipod-5">How can I switch to <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5?<a class="headerlink" href="#how-can-i-switch-to-omnipod-5" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">You need to be comfortable building a development <abbr title="version of code within a single repository or workspace repository">branch</abbr>, updating frequently, and reporting problems.</p>
@@ -5155,31 +5185,32 @@
 <p>You are not required to upload a <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report following each successful Pod change, although if you do - that successful report will be processed and added to our statistics.</p>
 <h3 id="what-are-the-known-issues">What are the known issues?<a class="headerlink" href="#what-are-the-known-issues" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These are known issues for the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<ul>
+<li>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> uses a connect-on-demand method for connecting to both DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods so you may notice a slight delay in connecting, getting status and then responding to a command from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr><ul>
+<li>This is normal, be patient</li>
+</ul>
+</li>
+<li><a href="#will-i-still-get-203-errors">Will I still get 203 errors?</a> - there have always been some reports of 203 faults with DASH that ramped up significantly with the Atlas version of DASH. Early testing indicates reduced frequency of 203 faults for Atlas DASH Pods with the newer Bluetooth protocols.</li>
+<li>If you are using an iPhone 16/17e, the connection delay is variable and can be quite severe (up to minutes to connect)<ul>
+<li>Use the <a href="../../loop-3/omnipod/#pod-keep-alive-feature" target="_blank">Pod Keep Alive Feature</a> - unless you have a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> device, select the Silent Tune option for Atlas DASH pods with an iPhone 16/17e</li>
+</ul>
+</li>
+</ul>
 <h4 id="updates-in-next-dev-branch-only">Updates in <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only<a class="headerlink" href="#updates-in-next-dev-branch-only" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>A new <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> management protocol is under test in the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. This <abbr title="version of code within a single repository or workspace repository">branch</abbr> fixes the following issues:</p>
 <ul>
-<li><a href="#no-pump-heartbeat">No Pump Heartbeat</a> - the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> provides a heartbeat</li>
-<li><a href="#more-frequent-pod-not-connected-messages">More frequent pod not connected messages</a> - limited testing, but this is no longer observed</li>
-<li><a href="#will-i-still-get-203-errors">Will I still get 203 errors?</a> - we do not know but because the new method communicates much less frequently with Pods (DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5), it is possible this will reduce the frequency of 203 faults</li>
+<li><a href="#will-i-still-get-203-errors">Will I still get 203 errors?</a> - there have always been some reports of 203 faults with DASH that ramped up significantly with the Atlas version of DASH. Early testing indicates reduced frequency of 203 faults for Atlas DASH Pods with the newer Bluetooth protocols.</li>
+<li>If you are using an iPhone 16/17e, the connection delay has been dramatically redused using the new <em>eager-connect</em> connect-on-demand method<ul>
+<li>Early testing indicates the Pod Keep Alive option might not be needed, but it is available if you have difficulty with the iPhone 16/17e plus Atlas DASH combination</li>
+</ul>
+</li>
 </ul>
 <h4 id="no-pump-heartbeat">No Pump Heartbeat<a class="headerlink" href="#no-pump-heartbeat" title="Anchor link to this Header on this Page">&para;</a></h4>
 <ul>
-<li>The current implementation for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 requires you to <a href="#what-are-the-known-issues">use a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</a></li>
-<li>If you are using something like <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> as a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr>, your app goes to sleep and does not wake up if it is not in the foreground with the phone unlocked</li>
+<li>An early implementation (dev v3.14.3) did not provide an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 heartbeat; please rebuild if your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not provide a hearbeat</li>
 </ul>
-<blockquote>
-<p>see <a href="#updates-in-next-dev-branch-only">Updates in <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</a></p>
-</blockquote>
-<h4 id="more-frequent-pod-not-connected-messages">More frequent pod not connected messages<a class="headerlink" href="#more-frequent-pod-not-connected-messages" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The private-beta testers noticed more frequent notifications that the pod is not connected. But the app continues to work. There are more periods when the spacing between automatic adjustments is 10 minutes instead of 5 minutes, but the majority of the time, every <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> reading triggers an automatic calculation.</p>
-<blockquote>
-<p>see <a href="#updates-in-next-dev-branch-only">Updates in <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</a></p>
-</blockquote>
 <h3 id="will-i-still-get-203-errors">Will I still get 203 errors?<a class="headerlink" href="#will-i-still-get-203-errors" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The increased frequency of faults noticed with DASH Atlas Pods has not been observed in the Ominpod 5 Pods tested to date.  Considering just the Pods that are not expired, there is a 3% failure rate with the failure being an occlusion (105) fault. There were testers in the private beta group using DASH instead of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5. They had a 20% failure rate on a small sample of DASH Pods, all 203 faults near the 72 hours time frame.</p>
-<blockquote>
-<p>see <a href="#updates-in-next-dev-branch-only">Updates in <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</a></p>
-</blockquote>
+<p>Both the <code>dev</code> and <code>next-dev</code> branches use a new connect-on-demand method that appears to reduce the frequency of 203 faults for Atlas DASH pod.  In addition, no 203 faults have been observed to date by any of the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 testers.</p>
 <h2 id="which-pods-work-with-the-loop-app">Which Pods work with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app?<a class="headerlink" href="#which-pods-work-with-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>You can use <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 (under test), DASH and Eros Pods with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <ul>
@@ -5216,33 +5247,34 @@
 </div>
 <p>DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 pumps communicate with the phone via Bluetooth so they do not require a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> compatible device.
 You may find the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 a little slower when pairing than the DASH because of the extra layer of security added to these Pods.</p>
-<div class="admonition tip">
-<p class="admonition-title">To date, no iPhone model specific issues have been found with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</p>
-<ul>
-<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 code is experimental and does not provide a heartbeat</li>
-<li>This means you rely on your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> to wake up the app when it is in the background or the phone is locked</li>
-</ul>
-</div>
+<p><strong>To date, no iPhone model specific issues have been found with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods variants tested.</strong></p>
 <h3 id="increase-in-dash-faults">Increase in DASH Faults<a class="headerlink" href="#increase-in-dash-faults" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>There have been a number of lots of Atlas DASH Pods that exhibit an increase in the frequency of certain DASH Faults when used with <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Open-Source Automated Insulin Delivery Systems (OS-AID). This is different from the Bluetooth connection issues for some iPhone models: see <a href="#keep-alive-atlas-or-inplay-dash-pods">Keep Alive: Atlas or InPlay DASH Pods</a>.</p>
-<p>To the best of our knowledge this is not something that we (as OS-AID developers and users) can control. People who have boxes that fail early find most Pods in that box fail early.</p>
+<p>It took a while, but we are testing (in <code>dev</code> and <code>next-dev</code> branches) a different method of connecting to Pods that appears to reduce the frequency of 203 Faults.  There are faults that can happen with any pods, including 203, but the Atlas DASH pods exhibited almost 20 times the rate of 203 faults as earlier pods and that particular problem is improved.</p>
+<h4 id="status-for-released-code">Status for released code<a class="headerlink" href="#status-for-released-code" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This section remains valid for folks using released code, v3.14.2 or earlier, which used the <em>keep-connected</em> method for Bluetooth between the phone and pod. The new methods under test, which connect on demand, provide reduced frequency for 203 faults.</p>
+<p>People who have boxes that fail early find most Pods in that box fail early.</p>
 <ul>
 <li>The 203 fault is the most common one to exhibit an increase in frequency; occuring on the third day of Pod life</li>
 <li>The 016 fault also exhibits an increased frequency and this one happens early in Pod life</li>
 <li>You may be able to get Insulet to replace these, but there is no guarantee</li>
 </ul>
 <p>We have looked at the analytics reported from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> users who <a href="../../loop-3/onboarding/#usage-data-sharing" target="_blank">share their data</a>. The increase in fault rate appears to go along with the increased used of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.</p>
-<blockquote>
-<p>see <a href="#updates-in-next-dev-branch-only">Updates in <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</a></p>
-</blockquote>
 <h3 id="keep-alive-atlas-or-inplay-dash-pods">Keep Alive: Atlas or InPlay DASH Pods<a class="headerlink" href="#keep-alive-atlas-or-inplay-dash-pods" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">iPhone 16 (all models) and 17e model with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH</p>
 <p><strong>iPhone 16 all models</strong> and <strong>iPhone 17e model only</strong> can be slow to reconnect to Atlas versions of DASH Pods. This can cause delays to automatic and manual insulin dosing.</p>
-<p><strong>Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods</strong> - but see <a href="#increase-in-dash-faults">Increase in DASH Faults</a> which affects all phone models and seems to be box specific.</p>
+<p><strong>Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods</strong> - but see <a href="#increase-in-dash-faults">Increase in DASH Faults</a> when using the <em>keep-connected</em> Bluetooth method which affects all phone models and seems to be box specific.</p>
 </div>
 <blockquote>
-<p>Note that the <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Management updates found in the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, see <a href="#updates-in-next-dev-branch-only">Updates in <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> only</a>, cannot fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. The <code>next-dev</code> code still offers Pod Keep Alive, which works by always keeping the Pod connected via Bluetooth.</p>
+<ul>
+<li>
+<p>Note that the <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Management modifications found in the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, known as <em>ble-heartbeat</em>. cannot fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. </p>
+</li>
+<li>
+<p>The <code>next-dev</code> code offers yet another version of connect on demand, nicknamed <em>eager-connect</em>. It senses if the connection is taking too long, quits the attempt and retries until the connection goes through. For iPhone 16/17e, this can still be a few seconds, but much faster than before. </p>
+</li>
+</ul>
 </blockquote>
 <p>Beginning in 2025, DASH Pods began using the newer version of chips and firmware. The only way to tell the difference before use is to examine the paper cover over the Pods inside the box for the word <code>Atlas</code> (newer) or <code>SAW</code> (older) as shown in the graphic below. These <code>Atlas</code> Pods, which report electronically as <code>InPlay BLE</code>, are the new version.</p>
 <p><strong>If you do not already own an iPhone 16 or a 17e, it is strongly suggested you choose an older (iPhone 15 or SE or older) or newer (iPhone 17 that is not the 17e) phone.</strong></p>
@@ -5277,7 +5309,7 @@ You may find the <abbr title="Insulet tubeless insulin pump; Loop supports Eros 
 <p>DASH Pods that advertise a Bluetooth Device name of <code>TWI Board</code> and indicate <code>-SAW</code> in small print on the paper pod cover are fully compatible with all phones including the iPhone 16 and 17e.</p>
 <p>The earliest <code>Atlas</code> DASH Pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH Pods were manufactured in May 2025. Later in 2025, <code>Atlas</code> DASH Pods with July 2025 and later manufacture dates were seen. </p>
 </blockquote>
-<p>We have no insight into the deployment plans from Insulet. Just pay attention if you have an iPhone 16 or iPhone 17e. Otherwise, you won't notice a difference.</p>
+<p><strong>The <em>eager-connect</em> method, currently under test, may be a fix for the iPhone 16/17e connection issue.</strong></p>
 <hr />
 <h2 id="what-about-tidepool-loop">What about <em>Tidepool <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>?<a class="headerlink" href="#what-about-tidepool-loop" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><em>Tidepool <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> was approved by the FDA in Jan 2023. In 2025, the <a href="https://www.twiist.com/">Sequel twiist pump</a> became available with <em>Tidepool <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>. Check their site to see if it available in your area.</p>
