@@ -41,7 +41,7 @@ The calibration status and battery level is highlighted at the top of the Everse
 ## Upload Glucose and Share with NOW
 
 !!! important "Known Issue with Upload to Senseoics"
-    There is an issue Eversense DMS (upload to the Senseoic server). It is reported that DMS upload is missing data. It kinda looks like that the upload only works while the OS-AID is open. Look for updates to come as soon as this is resolved, but do not count of this feature for now.
+    There is an issue with Eversense DMS (upload to the Senseoics server). It is reported that DMS upload is missing data. It appears that the upload only works while the OS-AID is open. Look for updates to come as soon as this is resolved, but do not count of this feature for now.
 
 If you want to upload your readings to the Eversense servers tap on the DMS Settings row in the Eversense screen
 
