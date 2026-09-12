@@ -62,19 +62,21 @@ For details about the different Bluetooth connection methods nicknamed *keep-con
 
 Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
 
-**OmnipodKit Branches / SHA as of 2026-09-06**
+**OmnipodKit Branches / SHA as of 2026-09-12**
 
 * subject to modification - be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
 * all these branch support Classic, DASH, and Omnipod 5 Pods
 * all these branches support a connect on demand Bluetooth method
 
-**At this snapshot in time**, the OmnipodKit `main` and `dev` branches have the same code with two different SHA. There are open PR to modify `dev` so that additional *eager-connect* testing can start.
+**At this snapshot in time**, the OmnipodKit `main` and `dev` branches have the same code with two different SHA. There are open PR to modify `dev` so that additional *eager-connect* testing can start. The `next-dev` branch is where most of the early testing happens. Both the `dev` and `next-dev` branches are subject to rapid change. 
+
+**The `main` branch is the stable version of *ble-heartbeat* and will be in the next Loop release (v3.14.6).**
 
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
-| main | 5 Sep 2026 |  `1d1f21b` | *ble-heartbeat* | 
-| dev | 6 Sep 2026 |  `8df0b2b` |*ble-heartbeat* |
-| next-dev | 31 Aug 2026 | `6106c1c` | *eager-connect* |
+| main | 11 Sep 2026 |  `aee61f9` | *ble-heartbeat* |
+| dev | 11 Sep 2026 |  `176a42d` |*ble-heartbeat* |
+| next-dev | 9 Sep 2026 | `7511203` | *eager-connect* |
 
 ## Is Omnipod 5 available for open-beta testing?
 

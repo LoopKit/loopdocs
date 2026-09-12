@@ -80,8 +80,8 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.2 | 6 June 2026 | release |
-| dev | 3.14.5 | 7 Sep 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) <br>See [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)  |
-| `feat/all-managers`<br>- SHA `30135eb` | 3.14.5 | 5 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| dev | 3.14.6 | 12 Sep 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) <br>See [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)<br>See [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493)  |
+| `feat/all-managers`<br>- SHA `30135eb` | 3.14.6 | 12 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
@@ -190,6 +190,14 @@ Support for Omnipod 5 is available in development branches. Please report any is
 You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues) at the OmnipodKit repository. Be sure to report your configuration, be descriptive in what you observed along with a timestamp when it happened and include a [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" }.
 
 ### Status for Pod Keep Alive Support
+
+!!! important "Bug in v3.14.5 - rebuild ASAP"
+    A bug was introduced in the dev branch v3.14.5. This was associated with cleaning up the Pod Keep Alive code.
+
+    If you built this interim version of dev - please rebuild as soon as possible.
+
+    * The bug affected people who used a heartbeat without a CGM and used DASH pods
+    * The Loop app would stop working when the app was not in the foreground or the phone was locked - so a pretty obvious issue
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
 
