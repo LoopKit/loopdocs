@@ -42,11 +42,11 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.2`](releases.md#v3142-highlights){: target="_blank" }. 
 
-The current version of `dev` is v3.14.5. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459), [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) and  [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488).
+The current version of `dev` is v3.14.6. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459), [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469), [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488) and  [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493).
 
 * Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch; it is also supported in the `next-dev` branch
 * Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense CGM
-    * There are updates to both Medtrum and Eversense in the `dev` branch (v3.14.5), which should be released to `main` very soon
+    * There are updates to both Medtrum and Eversense in the `dev` branch (v3.14.6), which should be released to `main` very soon
 * Those on the Dana pump must keep building the feature branch, `feat/all-managers`
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
@@ -201,7 +201,7 @@ You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
 
-The Pod Keep Alive code was completely revamped and cleaned up with v3.14.5.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
+The Pod Keep Alive code was completely revamped and cleaned up with v3.14.6.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
 
 For experts, the new Bluetooth connection method, nicknamed *eager-connect*, is currently available for use with the `next-dev` branch, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.
 
@@ -305,8 +305,8 @@ The OmnipodKit pump manager comes with improved user interface and user experien
 * Some new labels
 * Some reworked sub-menus with added information or features
 
-!!! warning "Pod Keep Alive v3.14.5 or later"
-    The Pod Keep Alive feature was rewritten with v3.14.5.
+!!! warning "Pod Keep Alive v3.14.6 or later"
+    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.6. If you have the interim v3.14.5, please rebuild to v3.14.6 as soon as possible.
     
     * Old Pod Keep Alive (PKA) settings are not transferred and must be reselected
     * The RileyLink connections will be shown in the pump (Omnipod DASH) view under the Pod Keep Alive button when the RileyLink option is selected
