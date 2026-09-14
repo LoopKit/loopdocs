@@ -76,9 +76,9 @@ The table below lists active branches.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.14.6 | TBD Sep 2026 | release |
-| dev | 3.14.6 | 12 Sep 2026 | same code as `main` |
-| `feat/all-managers`<br>- SHA `38ef7ab` | 3.14.6 | 12 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| main | 3.14.7 | 14 Sep 2026 | release |
+| dev | 3.14.7 | 14 Sep 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) <br>See [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)<br>See [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493)<br>See [PR 496](https://github.com/LoopKit/LoopWorkspace/pull/496)  |
+| `feat/all-managers`<br>- SHA `27195b0` | 3.14.7 | 14 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
@@ -195,7 +195,7 @@ You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
 
-The Pod Keep Alive code was completely revamped and cleaned up with v3.14.6.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
+The Pod Keep Alive code was completely revamped and cleaned up with v3.14.6 or later.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
 
 For experts, the new Bluetooth connection method, nicknamed *eager-connect*, is currently available for use with the `next-dev` branch, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.
 
@@ -301,7 +301,7 @@ When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.1
     * Starting with development versions v3.14.3
 
 !!! warning "Pod Keep Alive v3.14.6 or later"
-    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.6. If you have the interim v3.14.5, please rebuild to v3.14.6 as soon as possible.
+    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.6. If you have the interim v3.14.5, please rebuild to v3.14.6 or later as soon as possible.
     
     * Old Pod Keep Alive (PKA) settings are not transferred and must be reselected
     * The RileyLink connections will be shown in the pump (Omnipod DASH) view under the Pod Keep Alive button when the RileyLink option is selected
