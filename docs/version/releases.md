@@ -39,8 +39,8 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 * Provide support for Omnipod 5 Pods
 * Bring in the first connect-on-demand Omnipod Bluetooth modification
-    * This version reduces the frequency of the 203 faults observed with Atlas DASH pod
-    * Warning, the [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } feature was modified, read the updated documentaion at that link
+    * This version reduces the frequency of the 203 faults observed with Atlas DASH pods
+    * Warning, the [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } feature was modified, read the updated documentaion at that link if you use an iPhone 16 (all models) or iPhone 17e
 * Dexcom G7 
     * Trade off reduced drop-outs of G7 data for a 15-minute delay in picking up new sensor 
     * User can initiate a scan manually to avoid the 15 minute delay
@@ -53,7 +53,9 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 **Support**
 
-* Modify the Browser Build method to restore automatic building
+* Modify the Browser Build method to restore [Automatic Build](../browser/automatic.md#automatic-build){: target="_blank" }
+* Modify the Browser Build method to differentiate between a skipped build and a successful build
+    * Only the successful build shows the green check mark [Skipped Build](../browser/automatic.md#skipped-build){: target="_blank" }
 * Update fastlane to 2.237.0
 * Update the code to be compatible with Xcode 27
     * Minimum deployment target is now iOS 17.6
