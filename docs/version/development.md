@@ -40,7 +40,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.6`](releases.md#v3142-highlights){: target="_blank" }. 
+This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.7`](releases.md#v3147-highlights){: target="_blank" }. 
 
 At this time, there are no changes between the released version and the `dev` branch, but expect that to change soon.
 
@@ -195,7 +195,7 @@ You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
 
-The Pod Keep Alive code was completely revamped and cleaned up with v3.14.6 or later.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
+The Pod Keep Alive code was completely revamped and cleaned up with v3.14.7 or later.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
 
 For experts, the new Bluetooth connection method, nicknamed *eager-connect*, is currently available for use with the `next-dev` branch, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.
 
@@ -297,11 +297,11 @@ When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.1
 * Some new labels
 * Some reworked sub-menus with added information or features
 * Omnipod 5 Support added to Classic and DASH support
-    * Released version v3.14.6 or newer
+    * Released version v3.14.7 or newer
     * Starting with development versions v3.14.3
 
-!!! warning "Pod Keep Alive v3.14.6 or later"
-    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.6. If you have the interim v3.14.5, please rebuild to v3.14.6 or later as soon as possible.
+!!! warning "Pod Keep Alive v3.14.7 or later"
+    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.7. If you have the interim v3.14.5, please rebuild to v3.14.7 or later as soon as possible.
     
     * Old Pod Keep Alive (PKA) settings are not transferred and must be reselected
     * The RileyLink connections will be shown in the pump (Omnipod DASH) view under the Pod Keep Alive button when the RileyLink option is selected

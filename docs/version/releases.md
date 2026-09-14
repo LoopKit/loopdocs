@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.6 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.7 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -29,11 +29,11 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 - - -
 
-## Loop v3.14.6
+## Loop v3.14.7
 
-[*Loop* v3.14.6](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.6) was released on 14 September 2026.
+[*Loop* v3.14.7](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.7) was released on 15 September 2026.
 
-#### v3.14.6 Highlights
+#### v3.14.7 Highlights
 
 **Loop Features**
 
@@ -59,9 +59,9 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
     * Minimum deployment target is now iOS 17.6
     * Users are encouraged to update to the latest iOS 26 version before iOS 27 is released 
 
-#### Details from v3.14.2 to v3.14.6
+#### Details from v3.14.2 to v3.14.7
 
-The detailed list of updates from v3.14.2 to v3.14.6 are found in the table of PRs below. Most users do not need this level of detail.
+The detailed list of updates from v3.14.2 to v3.14.7 are found in the table of PRs below. Most users do not need this level of detail.
 
 | Interim Version | PR |
 |:--|:--|
@@ -69,6 +69,7 @@ The detailed list of updates from v3.14.2 to v3.14.6 are found in the table of P
 | dev 3.14.4 | [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469)|
 | dev 3.14.5 | [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)|
 | dev 3.14.6 | [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493)|
+| dev 3.14.7 | [PR 496](https://github.com/LoopKit/LoopWorkspace/pull/496)|
 
 - - -
 
