@@ -2,16 +2,42 @@
 
 The instructions provided for building with a browser include settings to automatically update and build for you.
 
+## Automatic Build
+
+!!! tip "Automatic Build Returns for Loop v3.14.7 and newer"
+    With v3.14.7, a new file name is used for automatic building using the Browser Build method.
+
+    * The new file: build_loop_auto.yml has the same content as the older build_loop.yml
+        * It appears that just giving it a new name was enough to prevent GitHub from disabling the build process
+        * Once you update to v3.14.7, your automatic building will be restored
+    * The old file: build_loop.yml is still in your LoopWorkspace folder for your convenience
+        * It no longer has the instructions to run automatically (that did not work anyway)
+        * If you had customization lines in build_loop.yml, they should still be there
+        * Simply copy those lines from build_loop.yml to build_loop_auto.yml to transfer the customization instructions to the file that actually runs to build Loop once a month
+
+The Actions shown for Loop were modified with the v3.14.7 release. The new build_loop_auto.yml file shows up as *Build Loop Auto* and actually runs every Sunday. The existing build_loop.yml shows up as *Build Loop Manual*. It can still be run manually, but it no longer is triggered automatically and continues to show as Disabled.
+
+![the new build loop auto is automatic](img/build-loop-auto.svg ){width="400"}
+{align="center"}
+
+## Skipped Build
+
+The automatic build process checks once a week for updates to the `main` branch. If there are no updates, it skips the build unless it is the second Sunday of the month.
+
+* The skipped build used to show a green check mark which caused some confusion
+* With v3.14.7, the indications were updated as shown in the graphic below
+    * top row: a scheduled build was successful (this one was the second Sunday of a month)
+    * middle row: the build was manually triggered and was successful
+    * bottom row: a schedule run of the build_loop_auto file, determined there was no reason to build, the icon shows the build was skipped
+
+![clear indication if build was skipped or successful](img/build-skip-or-success.svg ){width="300"}
+{align="center"}
+
+
 ## Manual Action for Automatic Build
 
 !!! warning "Browser Build for *Loop* Disabled?"
-    We do not know why, but GitHub is disabling the Build Loop Action for LoopWorkspace even though the repository is not stale.
-
-    If this is happening to you, see [What Manual Action is Required?](#what-manual-action-is-required).
-
-    * The automatic build actions should occur every Sunday
-        * The automatic build using the same code works for all OS-AID apps except for *Loop*
-        * See this [GitHub Discussion topic for details](https://github.com/orgs/community/discussions/181236)
+    GitHub disables the Build Loop Action for LoopWorkspace for v3.14.2 and older. Please update your fork to bring in the changes for v3.14.7 (or newer).  See: [Automatic Build](#automatic-build)
 
 ??? tip "Stale Repositoriy Always Requires Manual Action (Click to Open Close)"
     *GitHub* automatically **disables actions** that run according to a schedule if the repository in question is **inactive**.

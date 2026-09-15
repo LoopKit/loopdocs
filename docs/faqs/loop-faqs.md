@@ -229,7 +229,6 @@ For Eros Pod users, your Pod will finish any currently running temporary basal r
 Hey now...let's be grateful for what we have first. The ability to use the *Loop* app is the result of tremendous amounts of effort, time, and sacrifice by volunteers. Reverse engineering the pumps' communication protocols for any Open-Source Automated Insulin Delivery (OS-AID) system use is a large undertaking. You don't need to let us know that you'd love to see more pumps compatible with Loop; we know that. There is just an awful lot of work that needs to happen and it is neither quick nor easy.
 
 * Tandem pumps are not compatible (yet)
-* Omnipod 5 pods are compatible with Loop-dev and Loop-next-dev
 * Dana pumps are available using a feature branch
 * Newer Medtronic pumps are not compatible
 

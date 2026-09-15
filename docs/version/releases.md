@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.2 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.7 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,52 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.7
+
+[*Loop* v3.14.7](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.7) was released on 15 September 2026.
+
+#### v3.14.7 Highlights
+
+**Loop Features**
+
+* Provide support for Omnipod 5 Pods
+* Bring in the first connect-on-demand Omnipod Bluetooth modification
+    * This version reduces the frequency of the 203 faults observed with Atlas DASH pods
+    * Warning, the [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } feature was modified, read the updated documentaion at that link if you use an iPhone 16 (all models) or iPhone 17e
+* Dexcom G7 
+    * Trade off reduced drop-outs of G7 data for a 15-minute delay in picking up new sensor 
+    * User can initiate a scan manually to avoid the 15 minute delay
+* Dexcom G6
+    * Add support for Anubis Transmitters
+* Various fixes and additional support features for EversenseKit and MedtrumKit
+    * Medtrum now supports Manual Temp Basal and logging is found in the standard Loop Report 
+* Various fixes to prevent crashes for Loop and for RileyLink users
+
+
+**Support**
+
+* Modify the Browser Build method to restore [Automatic Build](../browser/automatic.md#automatic-build){: target="_blank" }
+* Modify the Browser Build method to differentiate between a skipped build and a successful build
+    * Only the successful build shows the green check mark [Skipped Build](../browser/automatic.md#skipped-build){: target="_blank" }
+* Update fastlane to 2.237.0
+* Update the code to be compatible with Xcode 27
+    * Minimum deployment target is now iOS 17.6
+    * Users are encouraged to update to the latest iOS 26 version before iOS 27 is released 
+
+#### Details from v3.14.2 to v3.14.7
+
+The detailed list of updates from v3.14.2 to v3.14.7 are found in the table of PRs below. Most users do not need this level of detail.
+
+| Interim Version | PR |
+|:--|:--|
+| dev 3.14.3 | [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)|
+| dev 3.14.4 | [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469)|
+| dev 3.14.5 | [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)|
+| dev 3.14.6 | [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493)|
+| dev 3.14.7 | [PR 496](https://github.com/LoopKit/LoopWorkspace/pull/496)|
 
 - - -
 

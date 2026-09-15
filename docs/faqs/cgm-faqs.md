@@ -139,7 +139,7 @@ If you prefer not to customize Loop, then you can configure [Nightscout](https:/
 
 ## Can I use Eversense E3 or Eversense 365?
 
-With `dev` branch, 3.14.2 and later, Eversense is included in the Loop build.
+For Loop versions 3.14.2 and newer, Eversense is included.
 
 ## Can the *Loop* app read CGM data from Nightscout?
 

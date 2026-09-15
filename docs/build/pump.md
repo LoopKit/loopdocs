@@ -1,13 +1,13 @@
 ## Compatible Pump
 
 !!! info "Time Estimate"
-    - Omnipod users: 3 seconds to remember which Personal Diabetes Manager (PDM) you've been using.
+    - Omnipod users: All Omnipod Pod Types are compatible
     - Medtrum Nano users: both 200 U and 300 U patches are supported
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Dana users: you must be willing to build a feature branch and understand the known issues
 
 !!! abstract "Summary"
-    - If you use [Omnipod](#omnipod-pumps) - check which kind
+    - If you use [Omnipod](#omnipod-pumps) - your pump is supported
     - If you use [Medtrum Nano](#medtrum-nano) - your pump is supported
     - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - For expert testers only, must build a special branch:
@@ -26,10 +26,10 @@
 
 These types of pumps are compatible with the *Loop* app.
 
-* [Omnipod Eros Pods](pump.md#omnipod-pumps)
+* [Omnipod Classic (or Eros) Pods](pump.md#omnipod-pumps)
 * [Omnipod DASH Pods](#omnipod-dash)
     * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
-* [Omnipod 5 Pods](#omnipod-5) only available in development branches
+* [Omnipod 5 Pods](#omnipod-5)
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 
@@ -73,12 +73,7 @@ The DASH system has the newer, slimmer locked-android Personal Diabetes Manager 
 
 ### Omnipod 5
 
-Loop does not support Omnipod 5 Pods in the released code.
-
-* There is an on-going public beta test with Omnipod 5
-* You must build a development branch to test Omnipod 5 - we encourage most people to wait while experienced users test this implementation
-    * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
-    * See [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } if you are an experienced user who wants to help with testing and are willing to build frequently and report any issues to the development team
+!!! success "Omnipod 5 Pods are supported with released code v3.14.7 or newer"
 
 - - -
 

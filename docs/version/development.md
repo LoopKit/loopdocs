@@ -40,13 +40,10 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.2`](releases.md#v3142-highlights){: target="_blank" }. 
+This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.7`](releases.md#v3147-highlights){: target="_blank" }. 
 
-The current version of `dev` is v3.14.7. The differences with respect to `main` are found in [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459), [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469), [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488), [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493) and [PR 496](https://github.com/LoopKit/LoopWorkspace/pull/496).
+At this time, there are no changes between the released version and the `dev` branch, but expect that to change soon.
 
-* Those who want to participate in the Open Beta for using Omnipod 5, should build the `dev` branch; it is also supported in the `next-dev` branch
-* Those who have been using feature branches for Medtrum or Eversense support can build the released code, which has support for both Medtrum Pumps and Eversense CGM
-    * There are updates to both Medtrum and Eversense in the `dev` branch (v3.14.6 or later); the `dev` branch should be released to `main` very soon
 * Those on the Dana pump must keep building the feature branch, `feat/all-managers`
 
 Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
@@ -79,7 +76,7 @@ The table below lists active branches.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| main | 3.14.2 | 6 June 2026 | release |
+| main | 3.14.7 | 15 Sep 2026 | release |
 | dev | 3.14.7 | 14 Sep 2026 | uses the *ble-heartbeat* method for OmnipodKit plus improves G7 Sensor drop-outs<br>adds support for Omnipod 5<br>Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5)<br>See [PR 459](https://github.com/LoopKit/LoopWorkspace/pull/459)<br>See [PR 469](https://github.com/LoopKit/LoopWorkspace/pull/469) <br>See [PR 488](https://github.com/LoopKit/LoopWorkspace/pull/488)<br>See [PR 493](https://github.com/LoopKit/LoopWorkspace/pull/493)<br>See [PR 496](https://github.com/LoopKit/LoopWorkspace/pull/496)  |
 | `feat/all-managers`<br>- SHA `27195b0` | 3.14.7 | 14 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
@@ -168,26 +165,20 @@ The next-dev branch will eventually be released as *Loop* version 4. The preset 
 
 ### Status for Open Beta for Omnipod 5
 
-!!! warning "Use of Omnipod 5 Pods requires a CGM with a heartbeat"
-    * Omnipod 5 code is experimental
-    * The current versions of `dev` and `next-dev` both provide a heartbeat for Omnipod 5
-        * The `dev` branch uses the *ble-heartbeat* Bluetooth connection method
-        * The `next-dev` branch uses the *eager-connect* Bluetooth connection method
-        * See [Table of OmnipodKit Versions](../faqs/omnipod-faqs.md#table-of-omnipodkit-versions){: target="_blank"} for more information about Bluetooth connection methods
-    * The initial implementation for Omnipod 5 Pods from an older `dev` build, v3.14.3, did not provide a heartbeat for Omnipod 5 Pods
-        * If you are running this older version and your CGM does not supply a heartbeat, the app will stop running when it is not open; please rebuild
+The Open-Beta is completed for Omnipod 5. Support is found in the released version of the *Loop* app. Please switch your build to the Loop `main` branch. There is no need for a development branch to get Omnipod 5 support.
 
+#### Please Update for Omnipod 5 Support
 
-Please read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
+!!! warning "Earlier development code required a CGM with a heartbeat"
+    * If you were an early adopter and built one of the early development branches, that required a CGM with a heartbeat
+    * If your *Loop* app version is v3.14.3, the app will not wake up when your phone is locked using Omnipod 5
+    * Please update to v3.14.7 or newer to remove this constraint
 
-Support for Omnipod 5 is available in development branches. Please report any issues you have in the zulipchat channel for [Loop Open Beta for Omnipod 5](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20Open.20Beta.20for.20Omnipod.205/with/607418710) topic in zulipchat.
+Support for Omnipod 5 is available in the released version as of v3.14.7.
 
-* Include the branch of Loop you are using
-* If the problem you are having is not associated with Omnipod 5, please use the appropriate channel
-    * [Loop-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/600775735) 
-    * [Loop next-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/604885611).
+For more information about the open beta that is now complete, you can read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
 
-You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues) at the OmnipodKit repository. Be sure to report your configuration, be descriptive in what you observed along with a timestamp when it happened and include a [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" }.
+If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them at your favorite help site, [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" }.
 
 ### Status for Pod Keep Alive Support
 
@@ -201,7 +192,7 @@ You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues
 
 For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, `main`, v3.14.0 or later.
 
-The Pod Keep Alive code was completely revamped and cleaned up with v3.14.6 or later.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
+The Pod Keep Alive code was completely revamped and cleaned up with v3.14.7 or later.  See [OmnipodKit Information](#omnipodkit-information) for more details. Be sure to check your selection after a rebuild because it is not carried over from the older versions.
 
 For experts, the new Bluetooth connection method, nicknamed *eager-connect*, is currently available for use with the `next-dev` branch, with interim version number 3.15.2 or higher. This needs testing by individuals who use an iPhone 16 or 17e with Atlas DASH pods.
 
@@ -299,14 +290,15 @@ If you previously used a feature branch for Medtrum or Eversense support, you ca
 
 When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.15.0 or newer) branch over an older build, your Pod is automatically transitioned to use a new Pump Manager: OmnipodKit. You will notice the user interface is a little different from the older managers (OmniKit and OmniBLE).
 
-The OmnipodKit pump manager comes with improved user interface and user experience for Omnipod Classic (Eros) and DASH pods including
-
 * Some layout adjustments
 * Some new labels
 * Some reworked sub-menus with added information or features
+* Omnipod 5 Support added to Classic and DASH support
+    * Released version v3.14.7 or newer
+    * Starting with development versions v3.14.3
 
-!!! warning "Pod Keep Alive v3.14.6 or later"
-    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.6. If you have the interim v3.14.5, please rebuild to v3.14.6 or later as soon as possible.
+!!! warning "Pod Keep Alive v3.14.7 or later"
+    The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.7. If you have the interim v3.14.5, please rebuild to v3.14.7 or later as soon as possible.
     
     * Old Pod Keep Alive (PKA) settings are not transferred and must be reselected
     * The RileyLink connections will be shown in the pump (Omnipod DASH) view under the Pod Keep Alive button when the RileyLink option is selected
