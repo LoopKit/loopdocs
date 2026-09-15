@@ -342,7 +342,7 @@ The Silence Pod feature is new with version 3.4.x. This allows a user to tap on 
     * The box and each Pod cover has a black circle on upper right with "R1" in white font
     * When used with the official Omnipod app, these allow a target as low as 100 mg/dL
     * The programming for beeping patterns for the Pods has changed slightly with this version of firmware (Pod Details shows 12.0.2)
-    * These alerts beep and required you to acknowledge of the app even when Silence Pod is selected
+    * The following alerts beep on the Pod and require you to acknowledge on the app even when Silence Pod is selected
         * Pod expiration warning (unless you choose none)
         * Pod expiration (72 hours)
         * Pod insulin delivery stop warning (79 hours)

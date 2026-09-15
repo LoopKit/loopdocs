@@ -202,9 +202,9 @@ We have looked at the analytics reported from Loop users who [share their data](
 
     **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) when using the *keep-connected* Bluetooth method which affects all phone models and seems to be box specific.
 
-> * Note that the BLE Management modifications, known as *ble-heartbeat*, found in released code v3.14.7 or newer cannot fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. 
+> * Note that the BLE Management modifications, known as *ble-heartbeat*, found in released code v3.14.7 or newer does not fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. 
 
-> * The `next-dev` code offers yet another version of connect on demand, nicknamed *eager-connect*. It senses if the connection is taking too long, quits the attempt and retries until the connection goes through. For iPhone 16/17e, this can still be a few seconds, but much faster than before. 
+> * Another version of connect on demand, nicknamed *eager-connect*, is under test in `next-dev` and will soon be in another development branch for those expert testers not ready to switch to `next-dev`. It senses if the connection is taking too long, quits the attempt and retries until the connection goes through. For iPhone 16/17e, this can still be a few seconds, but much faster than before. 
 
 #### Historical Information about 203 Fault increase with Atlas DASH pods
 
