@@ -75,7 +75,7 @@ Users do not need this but developers may find this helpful in selecting which v
 
 **At this snapshot in time**, the OmnipodKit `main` branch supports the first version of connect-on-demand for Bluetooth communications. The `dev` and `next-dev` branches supports the *eager-connect* method for additional testing before it is released. Both the `dev` and `next-dev` branches are subject to rapid change. 
 
-**The `main` branch is the stable version of *ble-heartbeat* and will be in the next Loop release (v3.14.7).**
+**The `main` branch is the stable version of *ble-heartbeat* and is used by Loop release (v3.14.7).**
 
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
