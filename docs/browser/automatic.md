@@ -15,16 +15,23 @@ The instructions provided for building with a browser include settings to automa
         * If you had customization lines in build_loop.yml, they should still be there
         * Simply copy those lines from build_loop.yml to build_loop_auto.yml to transfer the customization instructions to the file that actually runs to build Loop once a month
 
+The Actions shown for Loop were modified with the v3.14.7 release. The new build_loop_auto.yml file shows up as *Build Loop Auto* and actually runs every Sunday. The existing build_loop.yml shows up as *Build Loop Manual*. It can still be run manually, but it no longer is triggered automatically and continues to show as Disabled.
+
+![the new build loop auto is automatic](img/build-loop-auto.svg ){width="400"}
+{align="center"}
+
 ## Skipped Build
 
-The automatic build checks once a week for updates to the `main` branch. If there are no updates, it skips the build.
+The automatic build process checks once a week for updates to the `main` branch. If there are no updates, it skips the build unless it is the second Sunday of the month.
 
-* The skipped build used to show a green check mark and might confuse people
-* With v3.14.7, the indications are updated
-    * If there is no reason to build, the icon shows the build was skipped
-    * If a new build was successful, because of a code update or because it's the second Sunday of the month, the icon shows the green check mark when successful
+* The skipped build used to show a green check mark which caused some confusion
+* With v3.14.7, the indications were updated as shown in the graphic below
+    * top row: a scheduled build was successful (this one was the second Sunday of a month)
+    * middle row: the build was manually triggered and was successful
+    * bottom row: a schedule run of the build_loop_auto file, determined there was no reason to build, the icon shows the build was skipped
 
-![clear indication if build was skipped or successful](img/build-skip-or-success.png )
+![clear indication if build was skipped or successful](img/build-skip-or-success.svg ){width="300"}
+{align="center"}
 
 
 ## Manual Action for Automatic Build
