@@ -167,21 +167,18 @@ The next-dev branch will eventually be released as *Loop* version 4. The preset 
 
 The Open-Beta is completed for Omnipod 5. Support is found in the released version of the *Loop* app. Please switch your build to the Loop `main` branch. There is no need for a development branch to get Omnipod 5 support.
 
+#### Please Update for Omnipod 5 Support
+
 !!! warning "Earlier development code required a CGM with a heartbeat"
-    * The initial implementation for Omnipod 5 Pods in an older development branch (v3.14.3), did not provide a heartbeat for Omnipod 5 Pods
-        * If you are running this older version and your CGM does not supply a heartbeat, the app will stop running when it is not open; please rebuild to the released code
+    * If you were an early adopter and built one of the early development branches, that required a CGM with a heartbeat
+    * If your *Loop* app version is v3.14.3, the app will not wake up when your phone is locked using Omnipod 5
+    * Please update to v3.14.7 or newer to remove this constraint
 
+Support for Omnipod 5 is available in the released version as of v3.14.7.
 
-Please read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
+For more information about the open beta that is now complete, you can read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
 
-Support for Omnipod 5 is available in development branches. Please report any issues you have in the zulipchat channel for [Loop Open Beta for Omnipod 5](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20Open.20Beta.20for.20Omnipod.205/with/607418710) topic in zulipchat.
-
-* Include the branch of Loop you are using
-* If the problem you are having is not associated with Omnipod 5, please use the appropriate channel
-    * [Loop-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop-dev.20Status/with/600775735) 
-    * [Loop next-dev status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/604885611).
-
-You can also create an [Issue](https://github.com/loopandlearn/OmnipodKit/issues) at the OmnipodKit repository. Be sure to report your configuration, be descriptive in what you observed along with a timestamp when it happened and include a [Loop Report](../loop-3/settings.md#issue-report){: target="_blank" }.
+If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them at your favorite help site, [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" }.
 
 ### Status for Pod Keep Alive Support
 

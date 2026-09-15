@@ -134,7 +134,7 @@ Because of the extra exchanges required to handle the security added to Omnipod 
 
 ## Which Pods work with the *Loop* app?
 
-You can use Omnipod 5, DASH and Eros Pods with the *Loop* app.
+You can use all types of Pods: Omnipod 5, DASH and Classis (Eros) Pods with the *Loop* app.
 
 You do not need the Omnipod Personal Diabetes Manager (PDM), just the pod supplies. Your insurance or pharmacy coverage may cover some of the cost. The PDM may be needed in some countries to get replacements for failed Pods.
 
@@ -164,7 +164,7 @@ You may find the Omnipod 5 a little slower when pairing than the DASH because of
 
 ## Is connect-on-demand for Omnipod slower to respond?
 
-With the new connect-on-demand code, *ble-heartbeat*, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 sec to resolve and is normal. Do not report this as an issue.  The *eager-connect* method, still under still, will shorten this delay.
+With the new connect-on-demand code, *ble-heartbeat*, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 seconds to resolve and is normal. Do not report this as an issue.  The *eager-connect* method, still under still, will shorten this delay.
 
 * connect-on-demand means the Pod wakes up at 5 minute intervals for automatic control or when you open the app for manual control
 * the *ble-heartbeat* version does not improve connection time for iPhone 16/17e so you will still need to use [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } for those phones
