@@ -15,7 +15,7 @@ Loopers can choose from multiple pumps and a simulator:
 * [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
     * Omnipod Classic (Eros)
     * Omnipod DASH
-    * Omnipod 5 (`dev` and `next-dev` only) See  [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }
+    * Omnipod 5 (available with release v3.14.7)
 * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
@@ -27,10 +27,9 @@ Loopers can choose from multiple pumps and a simulator:
 !!! info "Omnipod Terms"
     The Loop app and LoopDocs use these terms. For any supported Pod Type, select `All Omnipod Types` when choosing your pump.
 
+    * **Omnipod 5**
+    * **Omnipod DASH**
     * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
-    * The next two Pod types are BLE pods - no extra device needed
-        * **Omnipod DASH** is the first version of Insulet BLE pods
-        * **Omnipod 5** is not yet supported in the released code but when it is, it will be included when selecting a Pod Type
 
 - - -
 
@@ -84,16 +83,12 @@ In this screen, you choose the Insulin type you use for your pods. This screen i
 
 In this screen you choose the Pod Type you will be pairing. After you make your selection, tap on the blue Confirm Pod Type button.
 
-> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on this screen.
-
-> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5.
-
 ![initial selection for pod type](img/pod-type.png){width="250"}
 {align="center"}
 
 If you select Classic (Eros) pods, you will be routed to the [Select RileyLink](#select-rileylink) screen before reaching the Pair Pod screen.
 
-If you select Omnipod 5 and you do not have a certificate installed yet, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+If you select Omnipod 5 and you do not have a certificate installed yet, you are automatically routed to a service that provides you with the certificate you need. You will have to tell the app to continue, then several progress screens will flash past until you see this final screen. You must have **Internet access** for this one-time set. Once you have a certificate, it is good for this phone and this app.
 
 ![success screen after downloading an Omnipod 5 certificate](img/omnipod-5-setup-success.png){width="300"}
 {align="center"}

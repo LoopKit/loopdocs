@@ -2,16 +2,7 @@
 
 The information and user interface for all Omnipod Pods is the same, except Omnipod 5 and DASH Pods do not require a RileyLink compatible device. They communicate directly with the phone through Bluetooth.
 
-!!! warning "Omnipod 5 is in beta test"
-    Omnipod 5 Pods should only be tested by experienced users willing to build a development branch: 
-    
-    * LoopWorkspace `dev`
-    * LoopWorkspace `next-dev`
-
-    The timing for when Omnipod 5 is supported in these branches depends on when Pull Requests are merged.
-
-    * Please thoroughly read [Omnipod 5 Open Beta FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before attempting to use one of these branches.
-    * Please thoroughly read [Updates in dev](../version/development.md#updates-in-dev){: target="_blank" } before attempting to use one of these branches.
+!!! success "Omnipod 5 Pod support added to DASH and Classic Pods with v3.14.7 release!"
 
 - - -
 
@@ -300,16 +291,10 @@ At that point, you can scroll to the bottom of the Omnipod screen and select the
 If you select Switch pod type, you are taken to the [Switch Pod Type](#switch-pod-type) Selection screen
 
 * All of your configuration settings including Insulin brand are maintained when you switch to a different Pod Type
-
-> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on the Pod Type screen.
-
-> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5
-
-
-If you are using a development branch and choose Omnipod 5 Pod Type and have not previously gotten a certificate, one will be automatically downloaded for you.
-
-* **This one-time step requires internet access**
-* Once a certificate is successfully downloaded, you will be taken to the [Pair Pod](#pair-pod) screen for Omnipod 5
+* The very first time you select an Omnipod 5 Pod, you must have **Internet access to download a security certificate**
+    * This is a one-time automatic step: the app says it will download the certificate, you tap Continue button and the rest is automatic
+    * Once downloaded, the certificate works for this app and this phone and you will not need Internet access for future Omnipod 5 Pods
+    * Once a certificate is successfully downloaded, you will be taken to the [Pair Pod](#pair-pod) screen for Omnipod 5
 
 If you already have the required certificate, selecting Omnipod 5 as a Pod Type takes you straight to the Pair Pod screen. If you scroll to the bottom of the Omnipod screen, you will see a green check mark on the [Omnipod 5 Support](#omnipod-5-support) row.
 
@@ -351,6 +336,18 @@ When you tap on the `Confidence Reminder` row, the graphic below is displayed.  
 
 The Silence Pod feature is new with version 3.4.x. This allows a user to tap on silence Pod to prevent any noises from the Pod, other than critical faults.
 
+!!! warning "Omnipod 5 Black Dot Pods cannot be Silenced"
+    There are new versions of Omnipod 5 Pods distributed starting in 2026.
+
+    * The box and each Pod cover has a black circle on upper right with "R1" in white font
+    * When used with the official Omnipod app, these allow a target as low as 100 mg/dL
+    * The programming for beeping patterns for the Pods has changed slightly with this version of firmware (Pod Details shows 12.0.2)
+    * These alerts beep and required you to acknowledge of the app even when Silence Pod is selected
+        * Pod expiration warning (unless you choose none)
+        * Pod expiration (72 hours)
+        * Pod insulin delivery stop warning (79 hours)
+        * Pod reservoir level warning (unless you choose none)
+
 What Silence Pod will not do:
 
 * This feature cannot change the "clicking" noise that comes from insulin delivery
@@ -374,6 +371,7 @@ When would you use Silence Pod:
 
 Caveats:
 
+* If you have "Black Dot" Omnipod 5 Pods - these cannot be completely silenced, see warning above
 * You must remember to disable Silence Pod if you want to hear Notifications and Confidence Reminders as Pod beeps in addition to alerts on your phone
 * The settings you have under Notifications and Confidence Reminders are not changed, the Pod beeps associated with them are simply silenced while Silence Pod is Enabled
 
@@ -438,7 +436,13 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-The difficulty connecting Atlas DASH Pods with iPhone 16 (all models) and iPhone 17e is helped by using the Pod Keep Alive feature. A new method is under test in development branches, but will not be available in the released code until that method is proven. With the Pod Keep Alive feature, it still might take time for the initial Bluetooth connection, but so long as the pod and phone are within Bluetooth range, the pod never disconnects itself from the phone. This is available as part of the released code for versions 3.14.0 and newer.
+!!! important "Update your Pod Keep Alive (PKA) selection on rebuild and Pod Type change"
+    The Pod Keep Alive code was updated with release v3.14.7.
+
+    * Your previous PKA selection is not maintained across the rebuild - be sure to check your settings if you use iPhone 16/17e
+    * Your PKA settings are not maintained across Pod Type changes - each time you return to DASH pods, check your settings if you use iPhone 16/17e
+
+The difficulty connecting Atlas DASH Pods with iPhone 16 (all models) and iPhone 17e is helped by using the Pod Keep Alive feature. A new method is under test in development branches, but will not be available in the released code until that method is proven. With the Pod Keep Alive feature, it still might take time for the initial Bluetooth connection, but so long as the pod and phone are within Bluetooth range, the pod never disconnects itself from the phone. This is available as part of the released code for versions as of 3.14.0, then updated in 3.14.7.
 
 The "Pod Keep Alive" option is found the bottom of the "Omnipod DASH" screen. This is intended to assist users who have both an iPhone 16 (all models) or 17e and [DASH Pods with a InPlay BLE (Atlas) board](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" }. Model 17 phones, except for the 17e, do not exhibit this problem. No action is taken automatically unless both these cases are detected to be true.
 
@@ -531,11 +535,7 @@ The row is typically used by developers. It opens a new screen with a variety of
 
 ## Omnipod 5 Support
 
-> If you are an experienced tester running a development branch, you will see the Omnipod 5 Pod type as an option on the Pod Type screen.
-
-> * Be sure to read the [Omnipod 5 FAQs](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" } before choosing Omnipod 5
-
-To use Omnipod 5 Pods you must have a certificate installed on your phone. 
+To use Omnipod 5 Pods you must build released code v3.14.7 or newer, and have a certificate installed on your phone. 
 
 * Once you have a certificate, the *Omnipod 5 Support* row will show a green check mark
 
