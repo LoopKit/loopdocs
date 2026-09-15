@@ -181,7 +181,7 @@ It took a while, but we modified the method of connecting to Pods with release v
 
 If you experience increased 203 faults with Atlas DASH pods, please rebuild to the released code, v3.14.7 or newer.
 
-This is found in the `main` branch and provides a connect-on-demand Bluetooth method to resolve this issue. Plus there are other [updates to the *Loop* app with this release](../version/releases.md#loop-v3146){: target="_blank" }.
+This is found in the `main` branch and provides a connect-on-demand Bluetooth method to resolve this issue. Plus there are other [updates to the *Loop* app with this release](../version/releases.md#loop-v3147){: target="_blank" }.
 
 ### Status for older code
 
