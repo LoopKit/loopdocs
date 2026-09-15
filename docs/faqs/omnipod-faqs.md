@@ -57,6 +57,7 @@ The table below references which *Loop* version is associated with which Bluetoo
 |:--|:--|:--|:--|
 | Loop 3.14.7 | `main`<br>- current release | *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
 | Loop 3.14.7 | `dev` | same as `main` but subject to change<br>- will use for *eager-connect* testing soon | Classic, DASH, Omnipod 5 |
+| Loop 3.14.8 | `update_dev_to_3.14.8` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
 | Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
 | Loop 3.14.2 | - previous release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
 
@@ -66,20 +67,20 @@ Versions before Loop 3.14.2 used the older repositories of OmniKit or OmniBLE, w
 
 Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
 
-**OmnipodKit Branches / SHA as of 2026-09-14**
+**OmnipodKit Branches / SHA as of 2026-09-15**
 
 * subject to modification - be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
 * all these branch support Classic, DASH, and Omnipod 5 Pods
 * all these branches support a connect-on-demand Bluetooth method
 
-**At this snapshot in time**, the OmnipodKit `main` and `dev` branches have the same code with two different SHA. There are open PR to modify `dev` so that additional *eager-connect* testing can start. The `next-dev` branch is where most of the early testing happens. Both the `dev` and `next-dev` branches are subject to rapid change. 
+**At this snapshot in time**, the OmnipodKit `main` branch supports the first version of connect-on-demand for Bluetooth communications. The `dev` and `next-dev` branches supports the *eager-connect* method for additional testing before it is released. Both the `dev` and `next-dev` branches are subject to rapid change. 
 
 **The `main` branch is the stable version of *ble-heartbeat* and will be in the next Loop release (v3.14.7).**
 
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
 | main | 14 Sep 2026 |  `3b20e3b` | *ble-heartbeat* |
-| dev | 14 Sep 2026 |  `fe5229b` |*ble-heartbeat* |
+| dev | 15 Sep 2026 |  `305c84d` | *eager-connect* |
 | next-dev | 13 Sep 2026 | `d9b5966` | *eager-connect* |
 
 ## Is Omnipod 5 available for open-beta testing?
