@@ -5121,6 +5121,12 @@
 <td style="text-align: left;">Classic, DASH, <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</td>
 </tr>
 <tr>
+<td style="text-align: left;"><abbr title="Latest release with major updates">Loop 3</abbr>.14.8</td>
+<td style="text-align: left;"><code>update_dev_to_3.14.8</code></td>
+<td style="text-align: left;"><em>eager-connect</em><br>- iPhone 16/17e connect delay improved</td>
+<td style="text-align: left;">Classic, DASH, <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</td>
+</tr>
+<tr>
 <td style="text-align: left;"><abbr title="Latest release with major updates">Loop 3</abbr>.15.2</td>
 <td style="text-align: left;"><code>next-dev</code></td>
 <td style="text-align: left;"><em>eager-connect</em><br>- iPhone 16/17e connect delay improved</td>
@@ -5137,13 +5143,13 @@
 <p>Versions before <abbr title="Latest release with major updates">Loop 3</abbr>.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. The Bluetooth communications used the <em>keep-connected</em> method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of <a href="../../loop-3/omnipod/#pod-keep-alive-feature" target="_blank">Pod Keep Alive</a>. </p>
 <h4 id="map-of-omnipodkit-sha">Map of OmnipodKit SHA<a class="headerlink" href="#map-of-omnipodkit-sha" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.</p>
-<p><strong>OmnipodKit Branches / SHA as of 2026-09-14</strong></p>
+<p><strong>OmnipodKit Branches / SHA as of 2026-09-15</strong></p>
 <ul>
 <li>subject to modification - be sure to check <a href="https://github.com/loopandlearn/OmnipodKit/branches"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a></li>
 <li>all these <abbr title="version of code within a single repository or workspace repository">branch</abbr> support Classic, DASH, and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</li>
 <li>all these branches support a connect-on-demand Bluetooth method</li>
 </ul>
-<p><strong>At this snapshot in time</strong>, the OmnipodKit <code>main</code> and <code>dev</code> branches have the same code with two different SHA. There are open <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> to modify <code>dev</code> so that additional <em>eager-connect</em> testing can start. The <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is where most of the early testing happens. Both the <code>dev</code> and <code>next-dev</code> branches are subject to rapid change. </p>
+<p><strong>At this snapshot in time</strong>, the OmnipodKit <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports the first version of connect-on-demand for Bluetooth communications. The <code>dev</code> and <code>next-dev</code> branches supports the <em>eager-connect</em> method for additional testing before it is released. Both the <code>dev</code> and <code>next-dev</code> branches are subject to rapid change. </p>
 <p><strong>The <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the stable version of <em>ble-heartbeat</em> and will be in the next <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> release (v3.14.7).</strong></p>
 <table>
 <thead>
@@ -5163,9 +5169,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
-<td style="text-align: left;">14 Sep 2026</td>
-<td style="text-align: left;"><code>fe5229b</code></td>
-<td style="text-align: left;"><em>ble-heartbeat</em></td>
+<td style="text-align: left;">15 Sep 2026</td>
+<td style="text-align: left;"><code>305c84d</code></td>
+<td style="text-align: left;"><em>eager-connect</em></td>
 </tr>
 <tr>
 <td style="text-align: left;">next-dev</td>
