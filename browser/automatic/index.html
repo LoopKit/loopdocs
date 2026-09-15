@@ -1389,6 +1389,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#automatic-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skipped-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skipped Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#manual-action-for-automatic-build" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4620,6 +4642,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#automatic-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skipped-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skipped Build
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#manual-action-for-automatic-build" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4840,18 +4884,42 @@
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The instructions provided for building with a browser include settings to automatically update and build for you.</p>
-<h2 id="manual-action-for-automatic-build">Manual Action for Automatic Build<a class="headerlink" href="#manual-action-for-automatic-build" title="Anchor link to this Header on this Page">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Browser Build for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Disabled?</p>
-<p>We do not know why, but <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> is disabling the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Action for LoopWorkspace even though the <abbr title="contains project files and each file's revision history">repository</abbr> is not stale.</p>
-<p>If this is happening to you, see <a href="#what-manual-action-is-required">What Manual Action is Required?</a>.</p>
+<h2 id="automatic-build">Automatic Build<a class="headerlink" href="#automatic-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Automatic Build Returns for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.7 and newer</p>
+<p>With v3.14.7, a new file name is used for automatic building using the Browser Build method.</p>
 <ul>
-<li>The automatic build actions should occur every Sunday<ul>
-<li>The automatic build using the same code works for all OS-AID apps except for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em></li>
-<li>See this <a href="https://github.com/orgs/community/discussions/181236"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Discussion topic for details</a></li>
+<li>The new file: build_loop_auto.yml has the same content as the older build_loop.yml<ul>
+<li>It appears that just giving it a new name was enough to prevent <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> from disabling the build process</li>
+<li>Once you update to v3.14.7, your automatic building will be restored</li>
+</ul>
+</li>
+<li>The old file: build_loop.yml is still in your LoopWorkspace folder for your convenience<ul>
+<li>It no longer has the instructions to run automatically (that did not work anyway)</li>
+<li>If you had customization lines in build_loop.yml, they should still be there</li>
+<li>Simply copy those lines from build_loop.yml to build_loop_auto.yml to transfer the customization instructions to the file that actually runs to build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> once a month</li>
 </ul>
 </li>
 </ul>
+</div>
+<p>The <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> shown for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> were modified with the v3.14.7 release. The new build_loop_auto.yml file shows up as <em>Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Auto</em> and actually runs every Sunday. The existing build_loop.yml shows up as <em>Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Manual</em>. It can still be run manually, but it no longer is triggered automatically and continues to show as Disabled.</p>
+<p align="center"><img alt="the new build loop auto is automatic" src="../img/build-loop-auto.svg" width="400" /></p>
+<h2 id="skipped-build">Skipped Build<a class="headerlink" href="#skipped-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The automatic build process checks once a week for updates to the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If there are no updates, it skips the build unless it is the second Sunday of the month.</p>
+<ul>
+<li>The skipped build used to show a green check mark which caused some confusion</li>
+<li>With v3.14.7, the indications were updated as shown in the graphic below<ul>
+<li>top row: a scheduled build was successful (this one was the second Sunday of a month)</li>
+<li>middle row: the build was manually triggered and was successful</li>
+<li>bottom row: a schedule run of the build_loop_auto file, determined there was no reason to build, the icon shows the build was skipped</li>
+</ul>
+</li>
+</ul>
+<p align="center"><img alt="clear indication if build was skipped or successful" src="../img/build-skip-or-success.svg" width="300" /></p>
+<h2 id="manual-action-for-automatic-build">Manual Action for Automatic Build<a class="headerlink" href="#manual-action-for-automatic-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Browser Build for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> Disabled?</p>
+<p><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> disables the Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Action for LoopWorkspace for v3.14.2 and older. Please update your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> to bring in the changes for v3.14.7 (or newer).  See: <a href="#automatic-build">Automatic Build</a></p>
 </div>
 <details class="tip">
 <summary>Stale Repositoriy Always Requires Manual Action (Click to Open Close)</summary>

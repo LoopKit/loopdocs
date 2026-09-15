@@ -3350,6 +3350,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3147" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3142" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4908,6 +4919,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3147" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3142" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5319,7 +5341,7 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.2 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.7 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
@@ -5330,6 +5352,79 @@
 </blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v3147"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.7<a class="headerlink" href="#loop-v3147" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.7"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.7</a> was released on 15 September 2026.</p>
+<h4 id="v3147-highlights">v3.14.7 Highlights<a class="headerlink" href="#v3147-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>
+<ul>
+<li>Provide support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</li>
+<li>Bring in the first connect-on-demand <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Bluetooth modification<ul>
+<li>This version reduces the frequency of the 203 faults observed with Atlas DASH pods</li>
+<li>Warning, the <a href="../../loop-3/omnipod/#pod-keep-alive-feature" target="_blank">Pod Keep Alive</a> feature was modified, read the updated documentaion at that link if you use an iPhone 16 (all models) or iPhone 17e</li>
+</ul>
+</li>
+<li>Dexcom G7 <ul>
+<li>Trade off reduced drop-outs of G7 data for a 15-minute delay in picking up new sensor </li>
+<li>User can initiate a scan manually to avoid the 15 minute delay</li>
+</ul>
+</li>
+<li>Dexcom G6<ul>
+<li>Add support for Anubis Transmitters</li>
+</ul>
+</li>
+<li>Various fixes and additional support features for EversenseKit and MedtrumKit<ul>
+<li>Medtrum now supports Manual <abbr title="modify the scheduled basal rate for a pump">Temp Basal</abbr> and logging is found in the standard <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Report </li>
+</ul>
+</li>
+<li>Various fixes to prevent crashes for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and for <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr> users</li>
+</ul>
+<p><strong>Support</strong></p>
+<ul>
+<li>Modify the Browser Build method to restore <a href="../../browser/automatic/#automatic-build" target="_blank">Automatic Build</a></li>
+<li>Modify the Browser Build method to differentiate between a skipped build and a successful build<ul>
+<li>Only the successful build shows the green check mark <a href="../../browser/automatic/#skipped-build" target="_blank">Skipped Build</a></li>
+</ul>
+</li>
+<li>Update <abbr title="used as part of the GitHub Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> to 2.237.0</li>
+<li>Update the code to be compatible with <abbr title="program used to build an app">Xcode</abbr> 27<ul>
+<li>Minimum deployment target is now <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 17.6</li>
+<li>Users are encouraged to update to the latest <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 26 version before <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> 27 is released </li>
+</ul>
+</li>
+</ul>
+<h4 id="details-from-v3142-to-v3147">Details from v3.14.2 to v3.14.7<a class="headerlink" href="#details-from-v3142-to-v3147" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>The detailed list of updates from v3.14.2 to v3.14.7 are found in the table of PRs below. Most users do not need this level of detail.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Interim Version</th>
+<th style="text-align: left;"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">dev 3.14.3</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/LoopWorkspace/pull/459"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 459</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">dev 3.14.4</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/LoopWorkspace/pull/469"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 469</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">dev 3.14.5</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/LoopWorkspace/pull/488"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 488</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">dev 3.14.6</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/LoopWorkspace/pull/493"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 493</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">dev 3.14.7</td>
+<td style="text-align: left;"><a href="https://github.com/LoopKit/LoopWorkspace/pull/496"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 496</a></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="loop-v3142"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.2<a class="headerlink" href="#loop-v3142" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.2"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.2</a> was released on 6 June 2026.</p>
