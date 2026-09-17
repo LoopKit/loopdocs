@@ -79,7 +79,7 @@ The table below lists active branches.
 | main | 3.14.7 | 15 Sep 2026 | [released code](releases.md#v3147-highlights){: target="_blank" } |
 | dev | 3.14.7 | 14 Sep 2026 | same as released code |
 | `update_dev_to_3.14.8` | 3.14.8 | 17 Sep 2026| This branch switches to *eager-connect* for Omnipod BLE connection and has some toolbar fixes<br>[PR 497](https://github.com/LoopKit/LoopWorkspace/pull/497) |
-| `feat/all-managers`<br>- SHA `27195b0` | 3.14.7 | 14 Sep 2026| This branch contains all the managers and is primarily for developers to use for testing<br>It also provides `DanaKit @ 7f4f3e4f` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `feat/all-managers`<br>- SHA `86c6f6f` | 3.14.8 | 17 Sep 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ f41d225` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
@@ -103,20 +103,7 @@ Use the page linked above to add the desired branch name (from the table above) 
 
 #### Mac-Xcode Build 
 
-For Mac Xcode build, the lines you need to copy and paste into a Terminal window are explicitly provided below:
-
-``` { .bash .copy  title="Download and build the next-dev branch" }
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
-   - next-dev
-```
-
-``` { .bash .copy  title="Download and build the feat/all-managers branch" }
-/bin/bash -c "$(curl -fsSL \
-  https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/BuildLoop.sh)" \
-   - feat/all-managers
-```
-
+For Mac Xcode build, you can use the [regular build script](../build/build-app.md#build-select-script){: target="_blank"} and choose `main`, `dev` or `next-dev` as a branch. For other branches, please see [Build other branches][../build/build-dev-mac.md#build-other-branches]{: target="_blank"}.
 
 ### Version Number Plan
 

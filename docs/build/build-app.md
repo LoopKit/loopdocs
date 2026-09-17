@@ -157,9 +157,11 @@ You will be informed that you are downloading open source software. Type `1` and
 ![open-source warning](img/bss-open-source-warning.svg){width="700"}
 {align="center"}
 
-The next screen asks you to choose to build either Loop `main` or Loop `dev`, with `main` recommended. Type `1` to choose `main` and return to begin the download.
+The next screen asks you to choose to build either Loop `main`, Loop `dev`, or Loop `next-dev` with `main` recommended. Type `1` to choose `main` and return to begin the download.
 
-> You can choose `dev` by typing 2 and return. Or return to the BuildSelect Menu by typing 3 and return.
+> * You can choose `dev` by typing 2 and return.
+> * Expert testers only - please follow along in zulipchat, you can choose `next-dev` by typing 3 and return.
+>       * The graphic below does not show the `next-dev` option, but it is in the script
 
 ![agree to the download](img/bss-03-download.svg){width="700"}
 {align="center"}
