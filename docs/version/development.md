@@ -103,7 +103,7 @@ Use the page linked above to add the desired branch name (from the table above) 
 
 #### Mac-Xcode Build 
 
-For Mac Xcode build, you can use the [regular build script](../build/build-app.md#build-select-script){: target="_blank"} and choose `main`, `dev` or `next-dev` as a branch. For other branches, please see [Build other branches][../build/build-dev-mac.md#build-other-branches]{: target="_blank"}.
+For Mac Xcode build, you can use the [regular build script](../build/build-app.md#build-select-script){: target="_blank"} and choose `main`, `dev` or `next-dev` as a branch. For other branches, please see [Build other branches](../build/build-dev-mac.md#build-other-branches){: target="_blank"}.
 
 ### Version Number Plan
 
@@ -163,8 +163,6 @@ The Open-Beta is completed for Omnipod 5. Support is found in the released versi
     * Please update to v3.14.7 or newer to remove this constraint
 
 Support for Omnipod 5 is available in the released version as of v3.14.7.
-
-For more information about the open beta that is now complete, you can read the open beta [Omnipod 5 FAQS](../faqs/omnipod-faqs.md#is-omnipod-5-available-for-open-beta-testing){: target="_blank" }.
 
 If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them at your favorite help site, [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help){: target="_blank" }.
 

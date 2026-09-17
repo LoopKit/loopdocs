@@ -1,6 +1,6 @@
 ## Why are there so many Omnipod Pump Manager versions?
 
-The code used to control Pods is undergoing a lot of modifications in the summer of 2026. 
+The code used to control Pods was modified in the summer of 2026. 
 
 You can skip ahead to the [Table of OmnipodKit Versions](#table-of-omnipodkit-versions), or keep reading for more details.
 
@@ -10,17 +10,17 @@ For Loop versions 3.14.2 and newer, all Omnipod pump manager control code is fou
 
 Before that, there were two repositories with a lot of common code; often requiring updates for each repository to provide a single improved feature.
 
-To make development easier moving forward and to facilitate adding Omnipod 5 Pod support, the OmnipodKit repository was created to replace the two older submodules, which are now removed from Loop.
+To facilitate development, the OmnipodKit repository was created to replace the two older submodules. The OmnipodKit repository supports all available Omnipod pod types including Omnipod 5, DASH and the Classic (or Eros) Pods.
 
 #### OmniKit
 
-OmniKit was used to communicate with Classic (also known as Eros or Generation 3) Pods using a RileyLink
+OmniKit communicated with Classic (also known as Eros or Generation 3) Pods using a RileyLink
 
 * This is now replaced with **OmnipodKit**
 
 #### OmniBLE
 
-OmniBLE was used to communicate with DASH Pods with direct Bluetooth connection
+OmniBLE communicated with DASH Pods with direct Bluetooth connection
 
 * This is now replaced with **OmnipodKit**
 * The method developed for DASH pods originally used a *keep-connected* method
@@ -33,7 +33,7 @@ OmniBLE was used to communicate with DASH Pods with direct Bluetooth connection
 
 #### OmnipodKit
 
-OmnipodKit replaces the need for OmniKit and OmniBLE submodules and provides support for Classic, DASH and Omnipod 5 Pods
+OmnipodKit provides support for Classic, DASH and Omnipod 5 Pods
 
 * The intial version with Omnipod 5 support used the Bluetooth *keep-connected* method; but this did not provide a heartbeat for Omnipod 5 Pods
 * When developing a new method, connect on demand for the iOS/Pod pair, not only was a heartbeat developed for Omnipod 5 Pods, but this new technique appears to greatly reduce the 203 Fault frequency for Atlas DASH Pods
@@ -67,29 +67,23 @@ Versions before Loop 3.14.2 used the older repositories of OmniKit or OmniBLE, w
 
 Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
 
-**OmnipodKit Branches / SHA as of 2026-09-15**
+**OmnipodKit Branches / SHA as of 2026-09-17**
 
 * subject to modification - be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
 * all these branch support Classic, DASH, and Omnipod 5 Pods
 * all these branches support a connect-on-demand Bluetooth method
 
-**At this snapshot in time**, the OmnipodKit `main` branch supports the first version of connect-on-demand for Bluetooth communications. The `dev` and `next-dev` branches supports the *eager-connect* method for additional testing before it is released. Both the `dev` and `next-dev` branches are subject to rapid change. 
-
-**The `main` branch is the stable version of *ble-heartbeat* and is used by Loop release (v3.14.7).**
+**At this snapshot in time**, all the OmnipodKit branches, `main`, `dev` and `next-dev` support the *eager-connect* method. Both the `dev` and `next-dev` branches are subject to rapid change.
 
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
-| main | 14 Sep 2026 |  `3b20e3b` | *ble-heartbeat* |
+| main | 17 Sep 2026 |  `05dd725` | *eager-connect*  |
 | dev | 15 Sep 2026 |  `305c84d` | *eager-connect* |
 | next-dev | 13 Sep 2026 | `d9b5966` | *eager-connect* |
 
-## Is Omnipod 5 available for open-beta testing?
+## Is Omnipod 5 available?
 
-Yes it is, however, the open-beta was successful and is complete.
-
-Support is found in the released version of the *Loop* app. Please switch your build to the Loop `main` branch. There is no need for a development branch to get Omnipod 5 support. (If you are a Trio user, then check [TrioDocs](https://triodocs.org) for branch information.)
-
-* For historical purposes, this link has information about the [Omnipod 5 Open Beta FAQs](https://nightscout.github.io/omnipod-five/open-beta.html)
+Yes it is. As of v3.14.7 and newer, Omnipod 5 is supported in the released (`main` branch) of the *Loop* and other iOS OS-AID apps.
 
 Specific information about using Omnipod 5 Pods with Loop is found in LoopDocs.
 
@@ -97,15 +91,19 @@ Specific information about using Omnipod 5 Pods with Loop is found in LoopDocs.
 
 The security layer that Insulet added to Omnipod 5 is fully preserved.
 
-The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of comms.
+The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of Bluetooth communications.
 
 This is all handled for you automatically. You simply need to ensure you have internet access for your first Omnipod 5 Pod.
 
 ### Should I switch to Omnipod 5 now?
 
-That's a personal decision and may be affected by your ability to change prescriptions and get insurance coverage. With the new connect-on-demand method for Omnipod Bluetooth communications, the pressure from the increased frequency of 203 faults has been removed.
+That's a personal decision and may be affected by your ability to change prescriptions and get insurance coverage. The new connect-on-demand methods for Omnipod Bluetooth communications reduced the frequency of 203 faults for Atlas DASH pods.
 
-There is still an issue, in the released code, for iPhone 16/17e users with Atlas DASH pods, but work is on-going to improve that situation as well. (A new connection method, nicknamed *eager-connect* is under test.)
+There is still an issue, in the v3.14.7 released code, for iPhone 16/17e users with Atlas DASH pods.
+
+* Note that this build resets the Pod Keep Alive setting, so you need to turn it back on again.
+
+The next release, coming soon, will provide a new connection method, nicknamed *eager-connect* is under test, that will handle iPhone 16/17e in a better manner. Final testing of this is in process.
 
 ### How can I switch to Omnipod 5?
 
@@ -115,9 +113,9 @@ To get access to Omnipod 5, build the released code, from the `main` branch, and
 
 #### Perform a one-time step to support Omnipod 5
 
-There is a one-time step to get a certificate needed for you to use an Omnipod 5 Pod.
+There is a one-time step to get a certificate needed to use an Omnipod 5 Pod.
 
-This step requires you to have **internet access**. After this step is done, you can pair an Omnipod 5 Pod with this phone and this app with no need for internet access.
+This step requires **internet access**. After this step is done, you can pair an Omnipod 5 Pod with this phone and this app with no need for internet access.
 
 !!! important "Do not fill your first Omnipod 5 Pod before you reach the Pair Pod screen"
 
@@ -165,7 +163,7 @@ You may find the Omnipod 5 a little slower when pairing than the DASH because of
 
 ## Is connect-on-demand for Omnipod slower to respond?
 
-With the new connect-on-demand code, *ble-heartbeat*, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 seconds to resolve and is normal. Do not report this as an issue.  The *eager-connect* method, still under still, will shorten this delay.
+With the new connect-on-demand code, *ble-heartbeat*, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 seconds to resolve and is normal. Do not report this as an issue.  The *eager-connect* method, still under development, will shorten this delay.
 
 * connect-on-demand means the Pod wakes up at 5 minute intervals for automatic control or when you open the app for manual control
 * the *ble-heartbeat* version does not improve connection time for iPhone 16/17e so you will still need to use [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } for those phones
@@ -194,7 +192,7 @@ People who have boxes that fail early find most Pods in that box fail early.
 * The 016 fault also exhibits an increased frequency and this one happens early in Pod life
 * You may be able to get Insulet to replace these, but there is no guarantee
 
-We have looked at the analytics reported from Loop users who [share their data](../loop-3/onboarding.md#usage-data-sharing){: target="_blank" }. The increase in fault rate appears to go along with the increased used of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.
+We have looked at the analytics reported from Loop users who [share their data](../loop-3/onboarding.md#usage-data-sharing){: target="_blank" }. The increase in fault rate appears to go along with the increased use of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.
 
 ### Keep Alive: Atlas or InPlay DASH Pods
 
