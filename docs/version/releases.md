@@ -41,9 +41,11 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 * Bring in the first connect-on-demand Omnipod Bluetooth modification
     * This version reduces the frequency of the 203 faults observed with Atlas DASH pods
     * Warning, the [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } feature was modified, read the updated documentaion at that link if you use an iPhone 16 (all models) or iPhone 17e
+    * Your PKA settings are not maintained across Pod Type changes or building v3.14.7 over an older version
 * Dexcom G7 
     * Trade off reduced drop-outs of G7 data for a 15-minute delay in picking up new sensor 
-    * User can initiate a scan manually to avoid the 15 minute delay
+    * User can initiate a scan manually to avoid the 15-minute delay to automatically scan for a new sensor
+    * Scan can be initiated on the G7 screen of the OS-AID app, scroll to the bottom and select "Scan for new sensor"
 * Dexcom G6
     * Add support for Anubis Transmitters
 * Various fixes and additional support features for EversenseKit and MedtrumKit
