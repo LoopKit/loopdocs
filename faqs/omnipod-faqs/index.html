@@ -4116,15 +4116,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#is-omnipod-5-available-for-open-beta-testing" class="md-nav__link">
+  <a href="#is-omnipod-5-available" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Is Omnipod 5 available for open-beta testing?
+        Is Omnipod 5 available?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Is Omnipod 5 available for open-beta testing?">
+    <nav class="md-nav" aria-label="Is Omnipod 5 available?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4753,15 +4753,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#is-omnipod-5-available-for-open-beta-testing" class="md-nav__link">
+  <a href="#is-omnipod-5-available" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Is Omnipod 5 available for open-beta testing?
+        Is Omnipod 5 available?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Is Omnipod 5 available for open-beta testing?">
+    <nav class="md-nav" aria-label="Is Omnipod 5 available?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -5049,19 +5049,19 @@
   <h1>Omnipod FAQs</h1>
 
 <h2 id="why-are-there-so-many-omnipod-pump-manager-versions">Why are there so many <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pump Manager versions?<a class="headerlink" href="#why-are-there-so-many-omnipod-pump-manager-versions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The code used to control Pods is undergoing a lot of modifications in the summer of 2026. </p>
+<p>The code used to control Pods was modified in the summer of 2026. </p>
 <p>You can skip ahead to the <a href="#table-of-omnipodkit-versions">Table of OmnipodKit Versions</a>, or keep reading for more details.</p>
 <h3 id="os-aid-omnipod-history">OS-AID <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> History<a class="headerlink" href="#os-aid-omnipod-history" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> versions 3.14.2 and newer, all <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> pump manager control code is found in a single <abbr title="contains project files and each file's revision history">repository</abbr>: <strong>OmnipodKit</strong>.</p>
 <p>Before that, there were two repositories with a lot of common code; often requiring updates for each <abbr title="contains project files and each file's revision history">repository</abbr> to provide a single improved feature.</p>
-<p>To make development easier moving forward and to facilitate adding <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod support, the OmnipodKit <abbr title="contains project files and each file's revision history">repository</abbr> was created to replace the two older <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>, which are now removed from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>.</p>
+<p>To facilitate development, the OmnipodKit <abbr title="contains project files and each file's revision history">repository</abbr> was created to replace the two older <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr>. The OmnipodKit <abbr title="contains project files and each file's revision history">repository</abbr> supports all available <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> pod types including <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, DASH and the Classic (or Eros) Pods.</p>
 <h4 id="omnikit">OmniKit<a class="headerlink" href="#omnikit" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>OmniKit was used to communicate with Classic (also known as Eros or Generation 3) Pods using a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></p>
+<p>OmniKit communicated with Classic (also known as Eros or Generation 3) Pods using a <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr></p>
 <ul>
 <li>This is now replaced with <strong>OmnipodKit</strong></li>
 </ul>
 <h4 id="omnible">OmniBLE<a class="headerlink" href="#omnible" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>OmniBLE was used to communicate with DASH Pods with direct Bluetooth connection</p>
+<p>OmniBLE communicated with DASH Pods with direct Bluetooth connection</p>
 <ul>
 <li>This is now replaced with <strong>OmnipodKit</strong></li>
 <li>The method developed for DASH pods originally used a <em>keep-connected</em> method</li>
@@ -5074,7 +5074,7 @@
 <li>Furthermore, several iPhone models, iPhone 16/17e, were very slow to make connection with Atlas DASH pods: <a href="#keep-alive-atlas-or-inplay-dash-pods">Keep Alive: Atlas or InPlay DASH Pods</a></li>
 </ul>
 <h4 id="omnipodkit">OmnipodKit<a class="headerlink" href="#omnipodkit" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>OmnipodKit replaces the need for OmniKit and OmniBLE <abbr title="for Loop, submodules are repositories defined in the Workspace repository that are required to build the app">submodules</abbr> and provides support for Classic, DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</p>
+<p>OmnipodKit provides support for Classic, DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</p>
 <ul>
 <li>The intial version with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 support used the Bluetooth <em>keep-connected</em> method; but this did not provide a heartbeat for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</li>
 <li>When developing a new method, connect on demand for the <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr>/Pod pair, not only was a heartbeat developed for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods, but this new technique appears to greatly reduce the 203 Fault frequency for Atlas DASH Pods<ul>
@@ -5143,14 +5143,13 @@
 <p>Versions before <abbr title="Latest release with major updates">Loop 3</abbr>.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. The Bluetooth communications used the <em>keep-connected</em> method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of <a href="../../loop-3/omnipod/#pod-keep-alive-feature" target="_blank">Pod Keep Alive</a>. </p>
 <h4 id="map-of-omnipodkit-sha">Map of OmnipodKit SHA<a class="headerlink" href="#map-of-omnipodkit-sha" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.</p>
-<p><strong>OmnipodKit Branches / SHA as of 2026-09-15</strong></p>
+<p><strong>OmnipodKit Branches / SHA as of 2026-09-17</strong></p>
 <ul>
 <li>subject to modification - be sure to check <a href="https://github.com/loopandlearn/OmnipodKit/branches"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></a></li>
 <li>all these <abbr title="version of code within a single repository or workspace repository">branch</abbr> support Classic, DASH, and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods</li>
 <li>all these branches support a connect-on-demand Bluetooth method</li>
 </ul>
-<p><strong>At this snapshot in time</strong>, the OmnipodKit <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> supports the first version of connect-on-demand for Bluetooth communications. The <code>dev</code> and <code>next-dev</code> branches supports the <em>eager-connect</em> method for additional testing before it is released. Both the <code>dev</code> and <code>next-dev</code> branches are subject to rapid change. </p>
-<p><strong>The <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is the stable version of <em>ble-heartbeat</em> and is used by <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> release (v3.14.7).</strong></p>
+<p><strong>At this snapshot in time</strong>, all the OmnipodKit branches, <code>main</code>, <code>dev</code> and <code>next-dev</code> support the <em>eager-connect</em> method. Both the <code>dev</code> and <code>next-dev</code> branches are subject to rapid change.</p>
 <table>
 <thead>
 <tr>
@@ -5163,9 +5162,9 @@
 <tbody>
 <tr>
 <td style="text-align: left;">main</td>
-<td style="text-align: left;">14 Sep 2026</td>
-<td style="text-align: left;"><code>3b20e3b</code></td>
-<td style="text-align: left;"><em>ble-heartbeat</em></td>
+<td style="text-align: left;">17 Sep 2026</td>
+<td style="text-align: left;"><code>05dd725</code></td>
+<td style="text-align: left;"><em>eager-connect</em></td>
 </tr>
 <tr>
 <td style="text-align: left;">dev</td>
@@ -5181,26 +5180,26 @@
 </tr>
 </tbody>
 </table>
-<h2 id="is-omnipod-5-available-for-open-beta-testing">Is <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 available for open-beta testing?<a class="headerlink" href="#is-omnipod-5-available-for-open-beta-testing" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>Yes it is, however, the open-beta was successful and is complete.</p>
-<p>Support is found in the released version of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. Please switch your build to the <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>. There is no need for a development <abbr title="version of code within a single repository or workspace repository">branch</abbr> to get <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 support. (If you are a Trio user, then check <a href="https://triodocs.org">TrioDocs</a> for <abbr title="version of code within a single repository or workspace repository">branch</abbr> information.)</p>
-<ul>
-<li>For historical purposes, this link has information about the <a href="https://nightscout.github.io/omnipod-five/open-beta.html"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Open Beta FAQs</a></li>
-</ul>
+<h2 id="is-omnipod-5-available">Is <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 available?<a class="headerlink" href="#is-omnipod-5-available" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Yes it is. As of v3.14.7 and newer, <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 is supported in the released (<code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>) of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> and other <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> OS-AID apps.</p>
 <p>Specific information about using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> is found in LoopDocs.</p>
 <h3 id="is-this-version-less-secure-than-using-the-pdm">Is this version less secure than using the PDM<a class="headerlink" href="#is-this-version-less-secure-than-using-the-pdm" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The security layer that Insulet added to <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 is fully preserved.</p>
-<p>The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of comms.</p>
+<p>The method used by Open-Source Automated Insulin Delivery (OS-AID) systems retains all the security that users want in their devices; secure authorization and privacy of Bluetooth communications.</p>
 <p>This is all handled for you automatically. You simply need to ensure you have internet access for your first <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod.</p>
 <h3 id="should-i-switch-to-omnipod-5-now">Should I switch to <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 now?<a class="headerlink" href="#should-i-switch-to-omnipod-5-now" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>That's a personal decision and may be affected by your ability to change prescriptions and get insurance coverage. With the new connect-on-demand method for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Bluetooth communications, the pressure from the increased frequency of 203 faults has been removed.</p>
-<p>There is still an issue, in the released code, for iPhone 16/17e users with Atlas DASH pods, but work is on-going to improve that situation as well. (A new connection method, nicknamed <em>eager-connect</em> is under test.)</p>
+<p>That's a personal decision and may be affected by your ability to change prescriptions and get insurance coverage. The new connect-on-demand methods for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Bluetooth communications reduced the frequency of 203 faults for Atlas DASH pods.</p>
+<p>There is still an issue, in the v3.14.7 released code, for iPhone 16/17e users with Atlas DASH pods.</p>
+<ul>
+<li>Note that this build resets the Pod Keep Alive setting, so you need to turn it back on again.</li>
+</ul>
+<p>The next release, coming soon, will provide a new connection method, nicknamed <em>eager-connect</em> is under test, that will handle iPhone 16/17e in a better manner. Final testing of this is in process.</p>
 <h3 id="how-can-i-switch-to-omnipod-5">How can I switch to <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5?<a class="headerlink" href="#how-can-i-switch-to-omnipod-5" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h4 id="build-the-correct-version-of-code">Build the correct version of code<a class="headerlink" href="#build-the-correct-version-of-code" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>To get access to <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, build the released code, from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>, and ensure your new code indicates version 3.14.7 (or newer).</p>
 <h4 id="perform-a-one-time-step-to-support-omnipod-5">Perform a one-time step to support <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5<a class="headerlink" href="#perform-a-one-time-step-to-support-omnipod-5" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>There is a one-time step to get a certificate needed for you to use an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod.</p>
-<p>This step requires you to have <strong>internet access</strong>. After this step is done, you can pair an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod with this phone and this app with no need for internet access.</p>
+<p>There is a one-time step to get a certificate needed to use an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod.</p>
+<p>This step requires <strong>internet access</strong>. After this step is done, you can pair an <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod with this phone and this app with no need for internet access.</p>
 <div class="admonition important">
 <p class="admonition-title">Do not fill your first <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pod before you reach the Pair Pod screen</p>
 </div>
@@ -5245,7 +5244,7 @@ You may find the <abbr title="Insulet tubeless insulin pump; Loop supports Eros 
 <p><strong>To date, no iPhone model specific issues have been found with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods variants tested.</strong></p>
 <hr />
 <h2 id="is-connect-on-demand-for-omnipod-slower-to-respond">Is connect-on-demand for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> slower to respond?<a class="headerlink" href="#is-connect-on-demand-for-omnipod-slower-to-respond" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With the new connect-on-demand code, <em>ble-heartbeat</em>, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 seconds to resolve and is normal. Do not report this as an issue.  The <em>eager-connect</em> method, still under still, will shorten this delay.</p>
+<p>With the new connect-on-demand code, <em>ble-heartbeat</em>, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 seconds to resolve and is normal. Do not report this as an issue.  The <em>eager-connect</em> method, still under development, will shorten this delay.</p>
 <ul>
 <li>connect-on-demand means the Pod wakes up at 5 minute intervals for automatic control or when you open the app for manual control</li>
 <li>the <em>ble-heartbeat</em> version does not improve connection time for iPhone 16/17e so you will still need to use <a href="../../loop-3/omnipod/#pod-keep-alive-feature" target="_blank">Pod Keep Alive</a> for those phones</li>
@@ -5265,7 +5264,7 @@ You may find the <abbr title="Insulet tubeless insulin pump; Loop supports Eros 
 <li>The 016 fault also exhibits an increased frequency and this one happens early in Pod life</li>
 <li>You may be able to get Insulet to replace these, but there is no guarantee</li>
 </ul>
-<p>We have looked at the analytics reported from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> users who <a href="../../loop-3/onboarding/#usage-data-sharing" target="_blank">share their data</a>. The increase in fault rate appears to go along with the increased used of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.</p>
+<p>We have looked at the analytics reported from <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> users who <a href="../../loop-3/onboarding/#usage-data-sharing" target="_blank">share their data</a>. The increase in fault rate appears to go along with the increased use of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.</p>
 <h3 id="keep-alive-atlas-or-inplay-dash-pods">Keep Alive: Atlas or InPlay DASH Pods<a class="headerlink" href="#keep-alive-atlas-or-inplay-dash-pods" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">iPhone 16 (all models) and 17e model with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH</p>
