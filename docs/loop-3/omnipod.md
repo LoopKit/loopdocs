@@ -442,7 +442,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
     All BLE Pods default to using the When Open mode. The other types of Pod Keep Alive are no longer necessary and the selections for them will probably be removed in the next release.
 
 !!! important "With v3.14.7, check for Pod Keep Alive settings on rebuild and Pod Type change"
-    The v3.14.7 release used the *ble-heartbeat* method for Bluetooth connection which did not resolve the issues with connecting iPhone 16/17e phones to Atlas DASH Pods. Now that v3.14.8 is available - please update as soon as possible.
+    The v3.14.7 release used the *ble-heartbeat* method for Bluetooth connection which did not resolve the issues with connecting iPhone 16/17e phones to Atlas DASH Pods. **Now that v3.14.8 is available - please update as soon as possible.**
 
     * Your previous PKA selection is not maintained across the rebuild - be sure to check your settings if you use iPhone 16/17e
     * Your PKA settings are not maintained across Pod Type changes - each time you return to DASH pods, check your settings if you use iPhone 16/17e
@@ -457,10 +457,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
     The selection for Pod Keep Alive is found at the bottom of the Pod settings screen.
 
-    The default value is Disabled. The graphic below shows the Pod Keep Alive screen that allows the user to choose an option.
-
-    ![Options available for Pod Keep Alive](img/omnible-keep-alive-options.svg){width="650"}
-    {align="center"}
+    The default value for v3.14.0 through v3.14.7 is Disabled.
 
     There are 4 choices for Pod Keep Alive:
 
@@ -469,7 +466,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
     3. [Silent Tune](#silent-tune)
     4. [RileyLink](#rileylink)
 
-    ### Disabled
+    #### Disabled
 
     When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmniBLE code.
 
@@ -490,21 +487,13 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
     Once the Pod is inserted, the phone auto-lock timing is restored to the value the user has selected.
 
-    ### When Open
+    #### When Open
 
     When the app is open, it will send a getStatus to the Pod 2:40 (mm:ss) after the last Pod message was exchanged. This means the Pod does not disconnect from BLE and remains available to the phone.
 
     This is true as long as the phone and Pod are in-range while the app is open with phone unlocked.
 
-    This mode is primarily to help out people who just paired an Atlas Pod for the first time with an iPhone 16 or 17e. It is meant to keep the Pod connected to the phone until the cannula is inserted.
-
-    > Imagine - you just hit retry 5 times to get the Pod to pair and prime and then when it's time to insert the cannula, the Pod has disconnected because it was more than 3 minutes since the last message exchange.  Then you have to keep hitting retry until the insertion process finally starts. With When Open, the Pod stays connected through the entire process of pairing, priming and inserting so long as the user does not manually lock the phone or move to another app.
-
-    **The user should choose with Silent Tune or RileyLink going forward if they want to have reliable communication between their iPhone 16/17e and an Atlas Pod.**
-
-    > If the Pod moves out of Bluetooth range, the Pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the Pod once it is back in range. This can cause disruptions until the reconnect happens.
-
-    ### Silent Tune
+    #### Silent Tune
 
     A silent tune is played in the background which keeps the app alive even when the phone is locked. This will increase the battery usage on the phone.
 
@@ -512,7 +501,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
     > If the Pod moves out of Bluetooth range, the Pod disconnects. With iPhone 16 or 17e it might take several seconds to minutes before the app reconnects to the Pod once it is back in range. This can cause disruptions until the reconnect happens.
 
-    ### RileyLink
+    #### RileyLink
 
     For those who have a RileyLink (OrangeLink, EmaLink, etc), you can use that instead of the Silent Tune but you must keep the link with the phone.
 
