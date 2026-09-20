@@ -56,8 +56,7 @@ The table below references which *Loop* version is associated with which Bluetoo
 | Loop Version | Branch | OmnipodKit BLE Method<br>- known issues | Supports |
 |:--|:--|:--|:--|
 | Loop 3.14.7 | `main`<br>- current release | *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
-| Loop 3.14.7 | `dev` | same as `main` but subject to change<br>- will use for *eager-connect* testing soon | Classic, DASH, Omnipod 5 |
-| Loop 3.14.8 | `update_dev_to_3.14.8` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
+| Loop 3.14.8 | `dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
 | Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
 | Loop 3.14.2 | - previous release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
 
@@ -67,7 +66,7 @@ Versions before Loop 3.14.2 used the older repositories of OmniKit or OmniBLE, w
 
 Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
 
-**OmnipodKit Branches / SHA as of 2026-09-17**
+**OmnipodKit Branches / SHA as of 2026-09-19**
 
 * subject to modification - be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
 * all these branch support Classic, DASH, and Omnipod 5 Pods
@@ -75,10 +74,15 @@ Users do not need this but developers may find this helpful in selecting which v
 
 **At this snapshot in time**, all the OmnipodKit branches, `main`, `dev` and `next-dev` support the *eager-connect* method. Both the `dev` and `next-dev` branches are subject to rapid change.
 
+Recent changes to OmnipodKit `main` and `dev`, which have the same code with different SHA include
+
+* Silence Pod message indicates if your current pod is a Black-Dot Omnipod 5 Pod that cannot be completely silenced
+* Reworked Pod Keep Alive - default behavior is to use When Open mode; the other selections should not be required with *eager-connect* and will be removed soon
+
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
-| main | 17 Sep 2026 |  `05dd725` | *eager-connect*  |
-| dev | 15 Sep 2026 |  `305c84d` | *eager-connect* |
+| main | 19 Sep 2026 |  `4e923d7` | *eager-connect*  |
+| dev | 19 Sep 2026 |  `79991df` | *eager-connect* |
 | next-dev | 13 Sep 2026 | `d9b5966` | *eager-connect* |
 
 ## Is Omnipod 5 available?
