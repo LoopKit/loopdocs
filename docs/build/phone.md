@@ -33,23 +33,26 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
 
 All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. 
 
-These phones require *iOS* 26 and `Loop version 3.8.x` or newer
+These phones require *iOS* 27 and `Loop version 3.14.8` or newer
 
-- iPhone 17, all variants except 17e
-    - iPhone 17e models are compatible but **not recommended for use with Omnipod DASH**
+- iPhone 18, all variants
+    * Note we only assume this is true - there have been no complaints
+
+These phones require *iOS* 26 and support *iOS* 27
+
+- iPhone 17, all variants
+    - iPhone 17e works with v3.14.8 or newer
+    - Older versions of the Loop app did not work as well with some DASH pods with iPhone 17e
     * See [Keep Alive: Atlas or InPlay DASH pod](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" } warning
 
-!!! important "iOS 26 requires `Loop v3.8.2` or newer"
-    Any iPhone 17 must run iOS 26. You must install `Loop v3.8.2` or newer before updating to iOS 26.  `Loop v3.7.x` and earlier do not to support iOS 26.
+These phones require *iOS* 18 and are compatible with *iOS* 26 and 27.
 
-    **Do not attempt to run an older version of Loop on any iOS 26 phone, use `Loop v3.8.2` or newer.**
-
-These phones require *iOS* 18 and are compatible with *iOS* 26.
-
-- iPhone 16 models are compatible but **not recommended for use with Omnipod DASH**
+- iPhone 16, all variants
+    - iPhone 16 models work with v3.14.8 or newer
+    - Older versions of the Loop app did not work well with some DASH pods with iPhone 16
     * See [Keep Alive: Atlas or InPlay DASH pod](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" } warning
 
-These phones are compatible with *iOS* 17, 18 and 26. The next version of the *Loop* app will require *iOS* 18 as a minimum.
+These phones are compatible with *iOS* 17, 18, 26 and 27. The next version of the *Loop* app will require *iOS* 18 as a minimum.
 
 - iPhone 15, all variants
 - iPhone 14, all variants
@@ -62,13 +65,7 @@ These phones are compatible with *iOS* 17, 18 and 26. The next version of the *L
 
 ### Not Supported
 
-**The [Older Devices](#older-devices) listed below are no longer supported by some CGM vendors and should be considered incompatible**
-
-* **Please update your phone hardware and iOS as soon as possible**
-
-### Older Devices
-
-These phones are limited to *iOS* 16. No longer supported by *Dexcom*. Update ASAP. The next version of the *Loop* app will require *iOS* 18 as a minimum.
+**The phone listed below are no longer supported.**
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants
