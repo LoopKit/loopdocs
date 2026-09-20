@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.7 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.8 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,29 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.8
+
+[*Loop* v3.14.8](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.8) was released on 19 September 2026.
+
+#### v3.14.8 Highlights
+
+**Loop Features**
+
+* Fix for the toolbar to show all 5 icons in portrait mode
+* Omnipod Users:
+    * improved connection speed using *eager-connect* method for all Omnipod BLE pods
+        * this provides a significant improvement in connection speed for the iPhone 16/17e with Atlas DASH pod combination
+    * added information in-app for those who get the new firmware [(Black-dot) Omnipod 5](../loop-3/omnipod.md#silence-pod){: target="_blank" } pods that cannot be completely silenced
+    * set Pod Keep Alive to When Open as the default for all BLE pods
+        * users of iPhone 16/17e with Atlas DASH pod combination should not need the other Pod Keep Alive settings
+* Various submodules, updated translations 
+
+**Details**
+
+Addition details for the update from v3.14.7 to v3.14.8 can be seen in [PR 497](https://github.com/LoopKit/LoopWorkspace/pull/497)
 
 - - -
 

@@ -9,7 +9,7 @@ The instructions provided for building with a browser include settings to automa
 
     * The new file: build_loop_auto.yml has the same content as the older build_loop.yml
         * It appears that just giving it a new name was enough to prevent GitHub from disabling the build process
-        * Once you update to v3.14.7, your automatic building will be restored
+        * Once you update to v3.14.7 or newer, your automatic building will be restored
     * The old file: build_loop.yml is still in your LoopWorkspace folder for your convenience
         * It no longer has the instructions to run automatically (that did not work anyway)
         * If you had customization lines in build_loop.yml, they should still be there

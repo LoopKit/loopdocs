@@ -1,6 +1,6 @@
-## Why are there so many Omnipod Pump Manager versions?
+## Why were there so many Omnipod Pump Manager versions?
 
-The code used to control Pods was modified in the summer of 2026. 
+The code used to control Pods was modified several times during the summer of 2026. 
 
 You can skip ahead to the [Table of OmnipodKit Versions](#table-of-omnipodkit-versions), or keep reading for more details.
 
@@ -51,14 +51,14 @@ OmnipodKit provides support for Classic, DASH and Omnipod 5 Pods
 
 For details about the different Bluetooth connection methods nicknamed *keep-connected*, *ble-heartbeat* and *eager-connect*, please read [OS-AID Omnipod History](#os-aid-omnipod-history). 
 
-The table below references which *Loop* version is associated with which Bluetooth connection method in OmnpodKit. The released *Loop* version, 3.14.7, is recommended for the general user. Please update as soon as possible if your version is 3.14.2 or older. The development branches are suitable only for expert testers.
+The table below references which *Loop* version is associated with which Bluetooth connection method in OmnpodKit. The released *Loop* version, 3.14.8, is recommended for the general user. Please update as soon as possible if your version is 3.14.2 or older. The development branches are suitable only for expert testers.
 
 | Loop Version | Branch | OmnipodKit BLE Method<br>- known issues | Supports |
 |:--|:--|:--|:--|
-| Loop 3.14.7 | `main`<br>- current release | *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
-| Loop 3.14.8 | `dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
+| Loop 3.14.8 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
 | Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
-| Loop 3.14.2 | - previous release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
+| Loop 3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
+| Loop 3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
 
 Versions before Loop 3.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the *Loop* app. The Bluetooth communications used the *keep-connected* method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }. 
 
@@ -103,11 +103,10 @@ This is all handled for you automatically. You simply need to ensure you have in
 
 That's a personal decision and may be affected by your ability to change prescriptions and get insurance coverage. The new connect-on-demand methods for Omnipod Bluetooth communications reduced the frequency of 203 faults for Atlas DASH pods.
 
-There is still an issue, in the v3.14.7 released code, for iPhone 16/17e users with Atlas DASH pods.
+There was still an issue, in a previous release, v3.14.7, for iPhone 16/17e users with Atlas DASH pods.
 
-* Note that this build resets the Pod Keep Alive setting, so you need to turn it back on again.
-
-The next release, coming soon, will provide a new connection method, nicknamed *eager-connect* is under test, that will handle iPhone 16/17e in a better manner. Final testing of this is in process.
+* The v3.14.8 release provides much faster connection for iPhone 16/17e models with Atlas DASH pods
+* If you use that combination, update to v3.14.8 as soon as possible
 
 ### How can I switch to Omnipod 5?
 
@@ -182,9 +181,9 @@ It took a while, but we modified the method of connecting to Pods with release v
 
 ### Status for released code
 
-If you experience increased 203 faults with Atlas DASH pods, please rebuild to the released code, v3.14.7 or newer.
+If you experience increased 203 faults with Atlas DASH pods, please rebuild to the released code, v3.14.8 or newer.
 
-This is found in the `main` branch and provides a connect-on-demand Bluetooth method to resolve this issue. Plus there are other [updates to the *Loop* app with this release](../version/releases.md#loop-v3147){: target="_blank" }.
+This is found in the `main` branch and provides a connect-on-demand Bluetooth method to resolve this issue. Plus there are other [updates to the *Loop* app with this release](../version/releases.md#loop-v3148){: target="_blank" }.
 
 ### Status for older code
 
@@ -200,14 +199,11 @@ We have looked at the analytics reported from Loop users who [share their data](
 
 ### Keep Alive: Atlas or InPlay DASH Pods
 
-!!! warning "iPhone 16 (all models) and 17e model with Omnipod DASH"
-    **iPhone 16 all models** and **iPhone 17e model only** can be slow to reconnect to Atlas versions of DASH Pods. This can cause delays to automatic and manual insulin dosing.
+!!! success "Loop v3.14.8 and newer greatly improves Bluetooth connection speed for iPhone 16/17e with Atlas DASH"
 
-    **Other phones, including iPhone 17 models other than 17e, do not have the reconnection problems with InPlay DASH Pods** - but see [Increase in DASH Faults](#increase-in-dash-faults) when using the *keep-connected* Bluetooth method which affects all phone models and seems to be box specific.
+> * Note that the BLE Management modifications, known as *ble-heartbeat*, found in released code v3.14.7 did not fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. 
 
-> * Note that the BLE Management modifications, known as *ble-heartbeat*, found in released code v3.14.7 or newer does not fix the slow reconnection time for Atlas DASH Pods using iPhone 16 and 17e. 
-
-> * Another version of connect on demand, nicknamed *eager-connect*, is under test in `next-dev` and will soon be in another development branch for those expert testers not ready to switch to `next-dev`. It senses if the connection is taking too long, quits the attempt and retries until the connection goes through. For iPhone 16/17e, this can still be a few seconds, but much faster than before. 
+> * Update to v3.14.8 to get the method for connect on demand, nicknamed *eager-connect*. It senses if the connection is taking too long, quits the attempt and retries until the connection goes through. For iPhone 16/17e, this can still be a few seconds, but much faster than before. 
 
 #### Historical Information about 203 Fault increase with Atlas DASH pods
 
@@ -224,6 +220,10 @@ Beginning in 2025, DASH Pods began using the newer version of chips and firmware
 
 #### Characteristics of Atlas with iPhone 16 or 17e
 
+!!! success "Loop v3.14.8 and newer greatly improves Bluetooth connection speed for iPhone 16/17e with Atlas DASH Pods"
+
+For older code, v3.14.7 and earlier:
+
 * The Atlas DASH Pods, which advertise a Bluetooth Device name of `InPlay BLE` and indicate `-Atlas` in small print on the paper pod cover are fully compatible with all iPhone models except iPhone 16 and iPhone 17e
 * Although `InPlay` Pods do work with the iPhone 16 and 17e you may notice some communication issues
     * It can take many attempts to get the pod to initially connect when pairing; just keep hitting retry
@@ -232,16 +232,12 @@ Beginning in 2025, DASH Pods began using the newer version of chips and firmware
         * With other models, the reconnect happens in about 1 sec
         * With iPhone 16 or 17e, this can take many seconds and sometimes a few minutes
     * When the pod is not connected, neither automatic nor manual commands can be sent to the pod to modify insulin delivery
-    * No solution to this issue is known
-    * There is a work-around to keep these Pods more connected by issuing a keep-alive message before the 3-minute BLE disconnect; but it uses extra battery for the phone. 
-        * Although it does increase the number of messages to the pod slightly, this is not thought to be a big issue. Pods with marginal batteries are as likely to fault without this feature as with the feature.
-        * If you are forced to use an iPhone 16 or 17e with InPlay Pods, please read the [Pod Keep Alive Feature](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } section.
 
 > DASH Pods that advertise a Bluetooth Device name of `TWI Board` and indicate `-SAW` in small print on the paper pod cover are fully compatible with all phones including the iPhone 16 and 17e.
 
 > The earliest `Atlas` DASH Pods noticed by the OS-AID community were manufactured in Feb 2025. Some TWI DASH Pods were manufactured in May 2025. Later in 2025, `Atlas` DASH Pods with July 2025 and later manufacture dates were seen. 
 
-**The *eager-connect* method, currently under test, may be a fix for the iPhone 16/17e connection issue.**
+**The *eager-connect* method, released in v3.14.8 resolves the slow connection for iPhone 16/17e with Atlas DASH Pods.**
 
 - - -
 
