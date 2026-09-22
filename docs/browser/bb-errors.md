@@ -162,11 +162,14 @@ An example annotation for skipping adding the App Group one of the Identifiers i
 
 ### Manual Enable for Build Action May be Required
 
-The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
+The automatic build actions should occur every Sunday. 
 
-If your build action is being disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build.
+If your build action is disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build.
 
 ![fix a disabled build state](img/build-disabled-fix.png )
+
+If you see this message, then follow the instructions here [https://loopkit.github.io/loopdocs/browser/automatic/#disable-automatic-actions] but select (rather than unselect) the workflow scope in order to enable automated builds.  
+
 
 ### Rebuild: Create Certificates Error
 
