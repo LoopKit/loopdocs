@@ -290,7 +290,7 @@ When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.1
 * Some new labels
 * Some reworked sub-menus with added information or features
 * Omnipod 5 Support provided along with Classic and DASH support
-    * Released version v3.14.8 or newer (please build the latest v3.14.9 for important updates)
+    * Released version v3.14.7 or newer (please build the latest v3.14.9 for important updates)
     * Starting with development versions v3.14.3
 
 !!! warning "Update to v3.14.9 or later"
