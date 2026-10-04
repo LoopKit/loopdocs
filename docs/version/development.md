@@ -42,7 +42,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.8`](releases.md#v3148-highlights){: target="_blank" }. 
 
-At this time, there are no changes between the released version and the `dev` branch, but expect that to change soon.
+The current version of `dev` is v3.14.9. The differences with respect to `main` are found in [PR 504](https://github.com/LoopKit/LoopWorkspace/pull/504).
 
 * Those on the Dana pump must keep building the feature branch, `feat/all-managers`
 
@@ -77,8 +77,8 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | main | 3.14.8 | 19 Sep 2026 | [released code](releases.md#v3148-highlights){: target="_blank" } |
-| dev | 3.14.8 | 19 Sep 2026 | same as the released code |
-| `feat/all-managers`<br>- SHA `199264b` | 3.14.8 | 19 Sep 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ a2d3aa` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| dev | 3.14.9 | 03 Oct 2026 | A number of fixes and improvements for OmnipodKit, EversenseKit and MedtrumKith<br>For more details see [PR 504](https://github.com/LoopKit/LoopWorkspace/pull/504) |
+| `feat/all-managers`<br>- SHA `ee55586` | 3.14.9 | 03 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ e157a86` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 
 ??? question "What is SHA? (Click to Open/Close)"
