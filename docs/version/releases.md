@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.8 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.9 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,39 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.9
+
+[*Loop* v3.14.9](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.9) was released on 04 October 2026.
+
+#### v3.14.9 Highlights
+
+**Loop Features**
+
+Improvements to Eversense CGM, Medtrum Patch Pump and Omnipod Pod managers:
+
+fill this in later
+
+**Translations**
+
+Bring in new translations from lokalise
+
+**Support Features**
+
+Update support files
+
+* update a variety of files to work with Xcode 27
+* update to fastlane version 2.240.1
+* update action files to prevent unnecessary warning messages
+* update scripts used by developers
+    * ensure proper submodule selection
+    * assist in bringing translations from and uploading new strings to lokalise
+
+**Details**
+
+Addition details for the update from v3.14.8 to v3.14.9 can be seen in [PR 504](https://github.com/LoopKit/LoopWorkspace/pull/504)
 
 - - -
 
