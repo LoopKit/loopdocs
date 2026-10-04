@@ -337,7 +337,7 @@ When you tap on the `Confidence Reminder` row, the graphic below is displayed.  
 The Silence Pod feature is new with version 3.4.x. This allows a user to tap on silence Pod to prevent any noises from the Pod, other than critical faults.
 
 !!! warning "Omnipod 5 Black Dot Pods cannot be Silenced"
-    There are new versions of Omnipod 5 Pods distributed starting in 2026. With release v3.14.8, there is an in-app warning if you are wearing a Black Dot pod.
+    There are new versions of Omnipod 5 Pods distributed starting in 2026. With release v3.14.8 and newer, there is an in-app warning if you are wearing a Black Dot pod.
 
     * The box and each Pod cover has a black circle on upper right with "R1" in white font
     * When used with the official Omnipod app, these allow a target as low as 100 mg/dL
@@ -436,16 +436,13 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-!!! success "With v3.14.8, you can ignore Pod Keep Alive"
-    The v3.14.8 release uses the *eager-connect* method for Bluetooth connection which can connect even iPhone 16/17e phones to Atlas DASH Pods within a few seconds.
+!!! success "Update to v3.14.9 or later"
+    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. All BLE Pods default to using the When Open mode.
     
-    All BLE Pods default to using the When Open mode. The other types of Pod Keep Alive are no longer necessary and the selections for them will probably be removed in the next release.
+    Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.
 
-!!! important "With v3.14.7, check for Pod Keep Alive settings on rebuild and Pod Type change"
-    The v3.14.7 release used the *ble-heartbeat* method for Bluetooth connection which did not resolve the issues with connecting iPhone 16/17e phones to Atlas DASH Pods. **Now that v3.14.8 is available - please update as soon as possible.**
+    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".
 
-    * Your previous PKA selection is not maintained across the rebuild - be sure to check your settings if you use iPhone 16/17e
-    * Your PKA settings are not maintained across Pod Type changes - each time you return to DASH pods, check your settings if you use iPhone 16/17e
 
 ### Pod Keep Alive for Older Versions
 
