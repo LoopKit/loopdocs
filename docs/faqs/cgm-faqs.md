@@ -147,7 +147,7 @@ Yes.
 
 ## CGM Customization
 
-> Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
 
 If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the *xDrip4iOS* DIY CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
 

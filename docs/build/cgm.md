@@ -10,9 +10,12 @@
 
     - *Dexcom* G5, G6 or ONE CGM systems
         * *Dexcom* ONE (based off G6 sensor) is available in some countries, but will be discontinued soon
+        * The *Anubis* Transmitters for the *Dexcom* G6 family are supported
     - *Dexcom* G7 or ONE+ CGM systems
         * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
+        * The *Stelo* variant is supported with `next-dev` branch
     - Some *Libre* sensors
+        * The *Libre 3 / 3 Plus* are supported with `next-dev` branch
     - Eversense E3 and 365 sensors
 
 !!! question "FAQs"
@@ -62,7 +65,7 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
 * These *Libre* CGM are not supported within the *Loop* app
     * American (Canada, US, South American) *Libre* 2
     * *Libre* 3
-* Coming soon *Libre* 3/3+ support is available in [next-dev branch](../version/development.md#updates-in-dev) for experienced users
+* Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#updates-in-dev) for experienced users
 * See [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
 ## *Eversense* E3 and 365 CGM
