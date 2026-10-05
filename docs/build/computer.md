@@ -56,7 +56,8 @@ Do not use any of the beta macOS versions. (If you don't know what that means, y
 
 To find your macOS version, click on the Apple icon in the computer's upper left corner and select `About this Mac`. The graphic below highlights the macOS version with a red rectangle. Your computer can be a MacBook, iMac, macMini, etc. It will work to build Loop if it has the minimum required macOS version and enough storage.
 
-> ![image showing macOS and system details](img/macos-27.png){width="300"}
+![image showing macOS and system details](img/macos-27.png){width="300"}
+{align="center"}
 
 To update your operating system:
 

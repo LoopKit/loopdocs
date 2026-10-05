@@ -129,29 +129,17 @@ If you use the new, Loop 3 only, [Build Loop using GitHub Actions](../../browser
 
 ## Watch Hardware and OS Requirements
 
-Loop 3 requires newer versions of the watch and requires watchOS 8 as a minimum.
+Loop v3.14.7 or newer requires iOS 17.6 or newer with watchOS 10.6 as a minimum.
 
-The compatibility list below is copied from Apple. Note that some version of iOS require specific versions of watchOS. That level of detail is not captured here. Please review [LoopDocs: Wikipedia Chart for Apple Versions](../../build/xcode-version.md#wikipedia-chart-for-apple-versions).
+Note that some version of iOS require specific versions of watchOS. That level of detail is not captured here. Please review [Apple Developer System Requirements](https://developer.apple.com/xcode/system-requirements/).
 
-### watchOS 8 Compatibility:
+### Compatible Hardware
 
-watchOS 8 requires iPhone 6s or later with iOS 15 or later and one of the following Apple Watch models:
+The hardware for some watches require newer iOS than 17.6 and newer watchOS than 10.6. In general, the phone and watch operating systems should be updated for minor releases right away and major releases, e.g., from 26.x to 27.0, when they have been tested for compatibility with the *Loop* app.
 
-* Apple Watch Series 3.
-* Apple Watch Series 4.
-* Apple Watch Series 5.
-* Apple Watch SE.
-* Apple Watch Series 6.
-* Apple Watch Series 7.
+The *Loop* app can be run on these watch series:
+
+* Apple Watch Series 4 through 12
+* Apple Watch SE
+* Apple Watch Ultra
 * Not all features are available on all devices.
-
-### watchOS 9 Compatibility:
-
-watchOS 9 requires iPhone 8 or later with iOS 16 or later and one of the following Apple Watch models:
-
-* Apple Watch Series 5.
-* Apple Watch SE.
-* Apple Watch Series 6.
-* Apple Watch Series 7.
-* Apple Watch Series 8.
-* Apple Watch Ultra.
