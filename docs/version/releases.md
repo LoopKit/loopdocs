@@ -37,10 +37,33 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 **Loop Features**
 
-Improvements to Eversense CGM, Medtrum Patch Pump and Omnipod Pod managers:
+There are two major bug fixes of note:
 
-fill this in later
+* Families with more than one user of Omnipod DASH pods can now pair pods without a spurious too many pods found error
+* For users of Eversense and Omnipod Pods (DASH and Omnipod 5):
+    * Turns out Eversense wakes up the app with Bluetooth every minute
+    * This revealed some issues with the way OmnipodKit was working that have now been fixed
+    * There were also a couple of issues found and fixed in EversenseKit where it would stop working, and therefore looping would stop
+    
+There were improvements in the following pump and CGM managers:
 
+* EversenseKit
+    * fix a bug that caused glucose reporting to halt
+    * fix a bug that did not restore CGM following an app restart
+    * fix: restore transmitter across app launches;
+    * fix: make the test target compile again
+    * fix: vibration toggles for Transmitter
+* MedtrumKit
+    * report state of patch if not ready to prime
+    * fix crash, detect when delivery halts
+    * check patch status
+    * add machine translations for new strings
+* OmnipodKit
+    * improve timing on *eager-connect*
+    * fix the When Open to not operate while app is in the background even if the CGM wakes up the app
+    * fix the End Time for Silence Pod
+    * add to the analytics reported for beginning and end of pod
+    
 **Translations**
 
 Bring in new translations from lokalise
