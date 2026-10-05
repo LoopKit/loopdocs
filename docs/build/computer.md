@@ -22,7 +22,7 @@
 
     * A summary list of [Compatible Versions](#compatible-versions) is found on this page with more detail in a later page
 
-	If you are buying a Mac specifically to use the build with *Mac* method, chose one with capabably of being updated to the Sonoma (macOS 14) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
+	If you are buying a Mac specifically to use the build with *Mac* method, chose one with capabably of being updated to the Golden Gate (macOS 27) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
 
 
 !!! question "FAQs"
@@ -34,7 +34,9 @@
         * Updating to a newer Loop release
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
-If you have access to a computer with MacOS 14.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+If you have access to a computer with MacOS 27.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+
+> Note with macOS 27.0 and higher, only Mac Silicon computers are supported. Computer using Intel chips are no longer supported.
 
 ## Compatible Versions
 
@@ -69,10 +71,22 @@ You need to have 50 GB free space in order to install Xcode as directed on the [
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
+## Which Macs Are Compatible with macOS Golden Gate?
+
+Golden Gate (macOS 27) is not yet required for building the *Loop* app on a phone running iOS 27 with the *Mac* method. There are a number of features, where Xcode 27 is already required, but that can be installed on computers running macOS 26.6. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+
+* MacBook Neo (2026)
+* MacBook Air (2020 and later)
+* MacBook Pro (2020 and later)
+* iMac (2021 and later)
+* Mac mini (2020 and later)
+* Mac Studio (2022 and later)
+* Mac Pro (2023 and later)
+* get the full list from [Apple](https://support.apple.com/en-us/127255)
 
 ## Which Macs Are Compatible with macOS Tahoe?
 
-Tahoe (macOS 26) is not yet required for building the *Loop* app on a phone running iOS 26 with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+Tahoe (macOS 26) is the minumum version for building. Expect to need Golden Gate (macOS 27) sooer rather than later.
 
 * MacBook Pro introduced in 2020 or later
 * MacBook Air introduced in 2020 or later
@@ -82,19 +96,6 @@ Tahoe (macOS 26) is not yet required for building the *Loop* app on a phone runn
 * Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
 * get the full list from [Apple](https://www.apple.com/os/macos/)
-
-## Which Macs Are Compatible with macOS Sequoia?
-
-Sequoia (macOS 15) is required for building the *Loop* app on a phone running iOS 18.6 or higher with the *Mac* method. 
-
-* MacBook Pro introduced in 2018 or later
-* MacBook Air introduced in 2020 or later
-* Mac mini introduced in 2018 or later
-* iMac introduced in late 2019 or later
-* iMac Pro introduced in 2017 or later
-* Mac Studio introduced in 2022 or later
-* Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Sequoia](https://support.apple.com/en-us/120282)
 
 ## Older Macs
 
