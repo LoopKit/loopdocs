@@ -76,7 +76,7 @@ The table below lists active branches.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| `main` | 3.14.9 | 04 Oct 2026 | [released code](releases.md#v3149-highlights){: target="_blank" } |
+| `main` | 3.14.9 | 05 Oct 2026 | [released code](releases.md#v3149-highlights){: target="_blank" } |
 | `dev` | 3.14.9 | 03 Oct 2026 | same as `main` |
 | `feat/all-managers`<br>- SHA `ee55586` | 3.14.9 | 03 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ e157a86` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
@@ -135,6 +135,8 @@ The document linked above does not include more recent updates which you find di
     * If you return after a short time on `next-dev`, your database will probably be maintained (but this is a compatibility feature that has not been tested)
     * Many people who return are annoyed by spurious warning messages where the alerts from `next-dev` are different and might not be cleared
         * It is recommended that if you do decide to return to `main` or `dev` after testing `next-dev` on your personal phone, that you be prepared to delete the app and rebuild, which means you lose connection to your existing Omnipod Pod or Medtrum Patch
+        * You will also need to enter all your settings and your CGM / Pump information
+        * Some, but not all, of your configuration can be downloaded from Nightscout if you use Nightscout
 
 This is the open PR for `next-dev`: [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)
 

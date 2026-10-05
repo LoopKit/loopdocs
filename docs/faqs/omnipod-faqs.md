@@ -90,7 +90,7 @@ Recent changes to OmnipodKit `dev`. Please do not use OmnipodKit `main` branch.
 | Branch | Date | SHA | BLE Method |
 |:--|:--|:--|:--|
 | dev | 03 Oct 2026 |  `043b91d` | *eager-connect* |
-| next-dev | 24 Sep 2026 | `35a1646` | *eager-connect* <br> missing some backports from `dev` |
+| next-dev | 04 Oct 2026 | `63a2d6f` | *eager-connect* |
 
 ## Is Omnipod 5 available?
 

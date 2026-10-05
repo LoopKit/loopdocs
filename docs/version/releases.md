@@ -31,7 +31,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 ## Loop v3.14.9
 
-[*Loop* v3.14.9](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.9) was released on 04 October 2026.
+[*Loop* v3.14.9](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.9) was released on 05 October 2026.
 
 #### v3.14.9 Highlights
 
@@ -48,40 +48,46 @@ There are two major bug fixes of note:
 There were improvements in the following pump and CGM managers:
 
 * EversenseKit
-    * fix a bug that caused glucose reporting to halt
-    * fix a bug that did not restore CGM following an app restart
-    * fix: restore transmitter across app launches;
-    * fix: make the test target compile again
-    * fix: vibration toggles for Transmitter
+    * fixed a bug that caused glucose reporting to halt
+    * fixed a bug that did not restore CGM following an app restart
+    * fixed configuration to restore known transmitter
+    * fixed the test target
+    * fixed vibration toggles for Transmitter
 * MedtrumKit
-    * report state of patch if not ready to prime
-    * fix crash, detect when delivery halts
+    * added report for state of patch if not ready to prime
+    * fixed crash, detect when delivery halts
     * check patch status
-    * add machine translations for new strings
+    * added machine translations for new strings
 * OmnipodKit
-    * improve timing on *eager-connect*
-    * fix the When Open to not operate while app is in the background even if the CGM wakes up the app
-    * fix the End Time for Silence Pod
-    * add to the analytics reported for beginning and end of pod
-    
+    * improved timing on *eager-connect*
+    * fixed the When Open to not operate while app is in the background even if the CGM wakes up the app
+    * fixed the End Time for Silence Pod
+    * added to the analytics reported for beginning and end of pod
+
+There were some fixes and improvements in Loop and LoopKit
+
+* Fixed a few instances that could cause as crash
+* Added support to enable Pump and CGM Managers to upload specific strings to Analytics so each can customized what is tracked
+    * OmnipodKit is the only submodule that currently uses this feature
+
 **Translations**
 
 Bring in new translations from lokalise
 
 **Support Features**
 
-Update support files
+Updated support files
 
-* update a variety of files to work with Xcode 27
-* update to fastlane version 2.240.1
-* update action files to prevent unnecessary warning messages
-* update scripts used by developers
-    * ensure proper submodule selection
-    * assist in bringing translations from and uploading new strings to lokalise
+* updated a variety of files to work with Xcode 27
+* updated to fastlane version 2.240.1
+* updated action files to prevent unnecessary warning messages
+* updated scripts used by developers
+    * ensures proper submodule selection
+    * assists in bringing translations from and uploading new strings to lokalise
 
 **Details**
 
-Addition details for the update from v3.14.8 to v3.14.9 can be seen in [PR 504](https://github.com/LoopKit/LoopWorkspace/pull/504)
+Additional details for the update from v3.14.8 to v3.14.9 can be seen in [PR 504](https://github.com/LoopKit/LoopWorkspace/pull/504)
 
 - - -
 

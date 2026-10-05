@@ -96,7 +96,7 @@ Tahoe (macOS 26.6) is the minumum version for building with Xcode 27. Expect to 
 * iMac Pro introduced in 2017 or later
 * Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
-* get the full list from [Apple](https://www.apple.com/os/macos/)
+* get the full list from [Apple](https://support.apple.com/en-us/122867)
 
 ## Older Macs
 

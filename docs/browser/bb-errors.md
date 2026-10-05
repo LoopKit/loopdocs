@@ -170,7 +170,7 @@ The figure below is also left for historical reasons, but should not be required
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
-If you see this message, then follow the instructions here [https://loopkit.github.io/loopdocs/browser/automatic/#disable-automatic-actions] but select (rather than unselect) the workflow scope in order to enable automated builds.  
+If you previously disabled building manually, then follow the instructions [here](automatic.md#disable-automatic-actions) but select (rather than unselect) the workflow scope in order to enable automated builds.  
 
 
 ### Rebuild: Create Certificates Error
