@@ -4989,7 +4989,7 @@
 <p>Regardless of build method, this is an <strong>update</strong> and will install over your existing app; your <strong>settings are maintained including your current <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump.</strong></p>
 </blockquote>
 <p><strong>For most, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is configured for automatic build, so you only need to come to this page if the automatic build failed.</strong></p>
-<p><strong>WARNING: starting May 2025, <a href="../automatic/#manual-action-for-automatic-build" target="_blank">Manual Action for Automatic Build</a> may be required - be sure to check monthly to see if you need to start a build manually.</strong></p>
+<p><strong>Be sure to update to the latest version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> - automatic build was restored for v3.14.7 and newer</strong></p>
 <details class="info" open="open">
 <summary>Time Estimate (click to open/close)</summary>
 <p>Manually update and build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
@@ -5269,11 +5269,11 @@
 <p>Refer to graphic below as you follow the steps to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. The numbers highlighted in the graphic correspond to numbers in parentheses in the bullet list below:</p>
 <ul>
 <li>(1) Click on the <code>Actions</code> tab</li>
-<li>(2) Select the <code>4. Build Loop</code> <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left<ul>
+<li>(2) Select the <code>4. Build Loop Auto</code> <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left<ul>
 <li>If using a mobile browser, be sure to use landscape mode to more closely match how <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> looks on a computer.</li>
 </ul>
 </li>
-<li>If you notice your build action is disabled, you must (3) click on <code>Enable workflow</code></li>
+<li>If you only see <code>4. Build Loop</code> and the action is disabled, update to the latest version of <code>main</code> and return to actions, you will no longer need to do step (3) from the graphic</li>
 <li>(4) Look on the right and click <code>Run workflow</code> to  see the dropdown</li>
 <li>(5) Click on the green <code>Run workflow</code> button in the dropdown</li>
 <li>Wait ~25 min for the build to complete successfully</li>
@@ -5283,7 +5283,8 @@
 <h4 id="what-if-the-build-fails">What if the Build Fails<a class="headerlink" href="#what-if-the-build-fails" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p>If a new release is announced at <a href="../../version/releases/#current-release" target="_blank">Current Release</a>, look to see if there are instructions about extra steps required with the release. </p>
 <blockquote>
-<p>When <code>Loop 3.6.0</code> is released, if you customized your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app, you may need to discard your customization and manually sync your <code>fork</code>. Check out the <a href="#ahead-and-behind">Ahead and Behind</a> instructions.</p>
+<p>When <code>Loop 3.14.7</code> was released, you needed to transfer any desired customizations from the <code>buld_loop.yml</code> file to the <code>build_loop_auto.yml</code> file. This is a one-time action, only needed for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app. See <a href="../automatic/#automatic-build" target="_blank">Automatic Build</a>.</p>
+<p>Check out the <a href="#ahead-and-behind">Ahead and Behind</a> instructions.</p>
 </blockquote>
 <p>If you are using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, the update steps are the same, but review information on this page: <a href="../build-dev-browser/" target="_blank">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a>.</p>
 <p>Otherwise, head over to <a href="../bb-errors/">Errors with Browser</a>.</p>

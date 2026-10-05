@@ -3350,6 +3350,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3149" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3148" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4930,6 +4941,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v3149" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v3148" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5363,7 +5385,7 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.8 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.9 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
@@ -5374,6 +5396,70 @@
 </blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v3149"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.9<a class="headerlink" href="#loop-v3149" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.9"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.9</a> was released on 05 October 2026.</p>
+<h4 id="v3149-highlights">v3.14.9 Highlights<a class="headerlink" href="#v3149-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>
+<p>There are two major bug fixes of note:</p>
+<ul>
+<li>Families with more than one user of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> DASH pods can now pair pods without a spurious too many pods found error</li>
+<li>For users of Eversense and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pods (DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5):<ul>
+<li>Turns out Eversense wakes up the app with Bluetooth every minute</li>
+<li>This revealed some issues with the way OmnipodKit was working that have now been fixed</li>
+<li>There were also a couple of issues found and fixed in EversenseKit where it would stop working, and therefore looping would stop</li>
+</ul>
+</li>
+</ul>
+<p>There were improvements in the following pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> managers:</p>
+<ul>
+<li>EversenseKit<ul>
+<li>fixed a bug that caused glucose reporting to halt</li>
+<li>fixed a bug that did not restore <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> following an app restart</li>
+<li>fixed configuration to restore known transmitter</li>
+<li>fixed the test target</li>
+<li>fixed vibration toggles for Transmitter</li>
+</ul>
+</li>
+<li>MedtrumKit<ul>
+<li>added report for state of patch if not ready to prime</li>
+<li>fixed crash, detect when delivery halts</li>
+<li>check patch status</li>
+<li>added machine translations for new strings</li>
+</ul>
+</li>
+<li>OmnipodKit<ul>
+<li>improved timing on <em>eager-connect</em></li>
+<li>fixed the When Open to not operate while app is in the background even if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> wakes up the app</li>
+<li>fixed the End Time for Silence Pod</li>
+<li>added to the analytics reported for beginning and end of pod</li>
+</ul>
+</li>
+</ul>
+<p>There were some fixes and improvements in <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and LoopKit</p>
+<ul>
+<li>Fixed a few instances that could cause as crash</li>
+<li>Added support to enable Pump and <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> Managers to upload specific strings to Analytics so each can customized what is tracked<ul>
+<li>OmnipodKit is the only submodule that currently uses this feature</li>
+</ul>
+</li>
+</ul>
+<p><strong>Translations</strong></p>
+<p>Bring in new translations from lokalise</p>
+<p><strong>Support Features</strong></p>
+<p>Updated support files</p>
+<ul>
+<li>updated a variety of files to work with <abbr title="program used to build an app">Xcode</abbr> 27</li>
+<li>updated to <abbr title="used as part of the GitHub Build Action method that enables building Loop without a Mac computer or Xcode">fastlane</abbr> version 2.240.1</li>
+<li>updated action files to prevent unnecessary warning messages</li>
+<li>updated scripts used by developers<ul>
+<li>ensures proper submodule selection</li>
+<li>assists in bringing translations from and uploading new strings to lokalise</li>
+</ul>
+</li>
+</ul>
+<p><strong>Details</strong></p>
+<p>Additional details for the update from v3.14.8 to v3.14.9 can be seen in <a href="https://github.com/LoopKit/LoopWorkspace/pull/504"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 504</a></p>
 <hr />
 <h2 id="loop-v3148"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.8<a class="headerlink" href="#loop-v3148" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.8"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.8</a> was released on 19 September 2026.</p>
@@ -5543,7 +5629,7 @@
 <ul>
 <li><code>remote_window</code></li>
 </ul>
-<p><strong>Browser Builders:</strong> If you used this customization, remove it from your build_loop.yml file. Otherwise, your <strong>build will fail</strong>.</p>
+<p><strong>Browser Builders:</strong> If you used this customization, remove it from your build_loop_auto.yml file. Otherwise, your <strong>build will fail</strong>.</p>
 <p>Instead of using a 15-minute window with <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em> and <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>, it is suggested you try <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> remote commands which provide direct APNS message from <em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> to <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> with real-time returned APNS response. This still depends on APNS availability, but should be more direct and reliable than <em><abbr title="An app you can build to provide remote commands to `Loop` using `Nightscout`">LoopCaregiver</abbr></em>.</p>
 <ul>
 <li><a href="https://loopfollowdocs.org/remote/remote-control-loop/"><em><abbr title="An app you can build to provide extra alarms and views of important information - can use Dexcom Share or `Nightscout` to include `Loop` information">LoopFollow</abbr></em> Remote Control</a></li>
@@ -5588,7 +5674,7 @@
 <li><code>live_activity</code></li>
 <li><code>dexcom_upload_readings</code></li>
 </ul>
-<p><strong>Browser Builders:</strong> If you used these, remove them from your build_loop.yml file. Otherwise, your <strong>build will fail</strong>.</p>
+<p><strong>Browser Builders:</strong> If you used these, remove them from your build_loop_auto.yml file. Otherwise, your <strong>build will fail</strong>.</p>
 </div>
 <h4 id="v3100-highlights">v3.10.0 Highlights<a class="headerlink" href="#v3100-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
 <p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>

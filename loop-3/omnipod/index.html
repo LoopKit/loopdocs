@@ -5391,7 +5391,7 @@
 <p>The Silence Pod feature is new with version 3.4.x. This allows a user to tap on silence Pod to prevent any noises from the Pod, other than critical faults.</p>
 <div class="admonition warning">
 <p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Black Dot Pods cannot be Silenced</p>
-<p>There are new versions of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods distributed starting in 2026. With release v3.14.8, there is an in-app warning if you are wearing a Black Dot pod.</p>
+<p>There are new versions of <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods distributed starting in 2026. With release v3.14.8 and newer, there is an in-app warning if you are wearing a Black Dot pod.</p>
 <ul>
 <li>The box and each Pod cover has a black circle on upper right with "R1" in white font</li>
 <li>When used with the official <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> app, these allow a target as low as 100 mg/dL</li>
@@ -5471,17 +5471,10 @@
 <hr />
 <h2 id="pod-keep-alive-feature">Pod Keep Alive Feature<a class="headerlink" href="#pod-keep-alive-feature" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition success">
-<p class="admonition-title">With v3.14.8, you can ignore Pod Keep Alive</p>
-<p>The v3.14.8 release uses the <em>eager-connect</em> method for Bluetooth connection which can connect even iPhone 16/17e phones to Atlas DASH Pods within a few seconds.</p>
-<p>All <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods default to using the When Open mode. The other types of Pod Keep Alive are no longer necessary and the selections for them will probably be removed in the next release.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">With v3.14.7, check for Pod Keep Alive settings on rebuild and Pod Type change</p>
-<p>The v3.14.7 release used the <em>ble-heartbeat</em> method for Bluetooth connection which did not resolve the issues with connecting iPhone 16/17e phones to Atlas DASH Pods. <strong>Now that v3.14.8 is available - please update as soon as possible.</strong></p>
-<ul>
-<li>Your previous PKA selection is not maintained across the rebuild - be sure to check your settings if you use iPhone 16/17e</li>
-<li>Your PKA settings are not maintained across Pod Type changes - each time you return to DASH pods, check your settings if you use iPhone 16/17e</li>
-</ul>
+<p class="admonition-title">Update to v3.14.9 or later</p>
+<p>The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. All <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods default to using the When Open mode.</p>
+<p>Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.</p>
+<p>For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".</p>
 </div>
 <h3 id="pod-keep-alive-for-older-versions">Pod Keep Alive for Older Versions<a class="headerlink" href="#pod-keep-alive-for-older-versions" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">

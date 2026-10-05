@@ -5762,16 +5762,18 @@
 </ul>
 <p>All of these solutions are found in <a href="#action-build-loop-errors">Action: Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Errors</a>. The mentors can pick out the exact solution quickly if you <a href="#where-to-get-help-with-browser-build">ask a mentor for help</a>.</p>
 <p>An example annotation for skipping adding the <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> one of the <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> is shown in the graphic below. The <abbr title="a unique identifier that Apple users for a given app, yours has your TEAMID embedded in it, group.com.TEAMID.loopkit.LoopGroup">App Group</abbr> for <code>Loop-Intent-Extension</code> was deliberately removed to provoke that error.</p>
-<blockquote>
-<p>Unfortunatley, the automatic annotation seen here is no longer provided by the tool we use. We may get it added back later. In the meantime, you will need to search for the phrase <code>::error</code> in the log file. We'll explain that in the detailed howto section.</p>
-</blockquote>
 <p align="center"><img alt="graphic with an example build error" src="../img/example-identifier-build-errors.png" width="800" /></p>
 <h2 id="rebuild-errors-quick-reference">Rebuild Errors: Quick Reference<a class="headerlink" href="#rebuild-errors-quick-reference" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="manual-enable-for-build-action-may-be-required">Manual Enable for Build Action May be Required<a class="headerlink" href="#manual-enable-for-build-action-may-be-required" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The automatic build actions should occur every Sunday. </p>
-<p>If your build action is disabled, you need to manually enable the action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build.</p>
+<ul>
+<li>If your build action is disabled, you need to manually enable the action at your <abbr title="contains project files and each file's revision history">repository</abbr> as shown in the graphic below and then launch a manual build</li>
+<li>Once you update to 3.14.7 or newer, you should have a new action called Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Auto that restores automatic building</li>
+<li>You can ignore the action labeled Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Manual; it is left for historical reasons to enable users to keep a record of customizations they may have used in earlier versions and may be removed later.</li>
+</ul>
+<p>The figure below is also left for historical reasons, but should not be required.</p>
 <p><img alt="fix a disabled build state" src="../img/build-disabled-fix.png" /></p>
-<p>If you see this message, then follow the instructions here [https://loopkit.github.io/loopdocs/browser/automatic/#disable-automatic-actions] but select (rather than unselect) the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> scope in order to enable automated builds.  </p>
+<p>If you previously disabled building manually, then follow the instructions <a href="../automatic/#disable-automatic-actions">here</a> but select (rather than unselect) the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> scope in order to enable automated builds.  </p>
 <h3 id="rebuild-create-certificates-error">Rebuild: Create Certificates Error<a class="headerlink" href="#rebuild-create-certificates-error" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>These should be a thing of the past - but you must do this step <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a>.</p>
 <blockquote>

@@ -4756,7 +4756,7 @@
 </ul>
 <p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h2 id="automatic-update-build-install">Automatic Update, Build, Install<a class="headerlink" href="#automatic-update-build-install" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The instructions on the <a href="../intro-summary/" target="_blank">Configure to Use Browser</a> pages will automatically take the following actions for released versions 3.4.0 and later:</p>
+<p>The instructions on the <a href="../intro-summary/" target="_blank">Configure to Use Browser</a> pages will automatically take the following actions for released versions 3.14.7 and later. There was a period, from May 2025 until September 2026, before adding the new file <code>build_loop_auto.yml</code> when automatic building did not work. If you have customizations in the older file <code>build_loop.yml</code>, simply copy them to <code>build_loop_auto.yml</code> to get the customizations and automatic builds once per month or when the code updates.</p>
 <ul>
 <li>Update the version of your&nbsp;<span translate="no"><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></span>&nbsp;within a week of a new release release<ul>
 <li>Automatically create a new build and upload it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
@@ -4765,14 +4765,6 @@
 </li>
 <li>Build the app at least once a month and upload it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
-<div class="admonition important">
-<p class="admonition-title">You Get No Warning if Repository Build Action is Disabled</p>
-<p>Alert - this issue is new as of May 2025. Your build action might be disabled by <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, which means you need to enable it manually.</p>
-<p>If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.</p>
-<ul>
-<li>Refer to <a href="../automatic/#manual-action-for-automatic-build" target="_blank">Manual Action for Automatic Build</a></li>
-</ul>
-</div>
 <p>Unless you make the recommended one-time change to <a href="#disable-automatic-install-from-testflight">Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>, the default setting for each app found in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is to:</p>
 <ul>
 <li>Install each new build from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on the phone as soon as it is detected</li>

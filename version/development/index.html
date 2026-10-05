@@ -5271,8 +5271,8 @@
 </ul>
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This section provides an overview of changes to <code>dev</code> compared to the current release: <a href="../releases/#v3148-highlights" target="_blank"><code>Loop v3.14.8</code></a>. </p>
-<p>The current version of <code>dev</code> is v3.14.9. The differences with respect to <code>main</code> are found in <a href="https://github.com/LoopKit/LoopWorkspace/pull/504"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 504</a>.</p>
+<p>This section provides an overview of changes to <code>dev</code> compared to the current release: <a href="../releases/#v3149-highlights" target="_blank"><code>Loop v3.14.9</code></a>. </p>
+<p>At this time, <code>dev</code> is identical to to <code>main</code>.</p>
 <ul>
 <li>Those on the Dana pump must keep building the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>feat/all-managers</code></li>
 </ul>
@@ -5315,16 +5315,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">main</td>
-<td style="text-align: left;">3.14.8</td>
-<td style="text-align: left;">19 Sep 2026</td>
-<td style="text-align: left;"><a href="../releases/#v3148-highlights" target="_blank">released code</a></td>
+<td style="text-align: left;"><code>main</code></td>
+<td style="text-align: left;">3.14.9</td>
+<td style="text-align: left;">05 Oct 2026</td>
+<td style="text-align: left;"><a href="../releases/#v3149-highlights" target="_blank">released code</a></td>
 </tr>
 <tr>
-<td style="text-align: left;">dev</td>
+<td style="text-align: left;"><code>dev</code></td>
 <td style="text-align: left;">3.14.9</td>
 <td style="text-align: left;">03 Oct 2026</td>
-<td style="text-align: left;">A number of fixes and improvements for OmnipodKit, EversenseKit and MedtrumKith<br>For more details see <a href="https://github.com/LoopKit/LoopWorkspace/pull/504"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 504</a></td>
+<td style="text-align: left;">same as <code>main</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>feat/all-managers</code><br>- SHA <code>ee55586</code></td>
@@ -5380,17 +5380,24 @@
 <p class="admonition-title">For Expert Testers</p>
 <p>If you are willing to test using the <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace, this implementation provides a heartbeat from the Pod if the <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> does not have one.</p>
 <p>It also operates the <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods (DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5) in disconnected mode instead of always connected as was done earlier; and with the updates found in interim version 3.15.2, it uses the <em>eager-connect</em> method. See <a href="../../faqs/omnipod-faqs/#table-of-omnipodkit-versions" target="_blank">Table of OmnipodKit Versions</a> for more information.</p>
-<p>This new <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> management method needs people to test it and report if they find any issues.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Backward Compatibility is Limited</p>
+<p>Once you build <code>next-dev</code> on your personal phone, you may run into issues trying to return to released code at this time.</p>
 <ul>
-<li>Please read this <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev/near/612491860">post in zulipchat</a></li>
-<li>Follow along in that channel</li>
-<li>Be prepared to rebuild frequently</li>
+<li>If you return after a short time on <code>next-dev</code>, your database will probably be maintained (but this is a compatibility feature that has not been tested)</li>
+<li>Many people who return are annoyed by spurious warning messages where the alerts from <code>next-dev</code> are different and might not be cleared<ul>
+<li>It is recommended that if you do decide to return to <code>main</code> or <code>dev</code> after testing <code>next-dev</code> on your personal phone, that you be prepared to delete the app and rebuild, which means you lose connection to your existing <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pod or Medtrum Patch</li>
+<li>You will also need to enter all your settings and your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> / Pump information</li>
+<li>Some, but not all, of your configuration can be downloaded from <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> if you use <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></li>
+</ul>
+</li>
 </ul>
 </div>
 <p>This is the open <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> for <code>next-dev</code>: <a href="https://github.com/LoopKit/LoopWorkspace/pull/454"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 454</a></p>
 <p>Please read <a href="#status-for-open-beta-for-omnipod-5">Status for Open Beta for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</a> and <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707">zulipchat: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> next-dev Status</a> </p>
 <h4 id="preset-behavior-in-loop-4">Preset Behavior in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 4<a class="headerlink" href="#preset-behavior-in-loop-4" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>The next-dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> will eventually be released as <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> version 4. The preset (override) behavior is quite different than in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> versions 2 and 3.</p>
+<p>The <code>next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> will eventually be released as <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> version 4. The preset (override) behavior is quite different than in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> versions 2 and 3.</p>
 <div class="admonition tip">
 <p class="admonition-title">Preset Behavior is Different</p>
 <p>The preset (override) behavior of the released version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> remembers the insulin needs factor at the time a dose is delivered throughout the duration of insulin activity.</p>
@@ -5405,31 +5412,40 @@
 <ul>
 <li>If you were an early adopter and built one of the early development branches, that required a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> with a heartbeat</li>
 <li>If your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app version is v3.14.3, the app will not wake up when your phone is locked using <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5</li>
-<li>Please update to v3.14.8 or newer to remove this constraint</li>
+<li>This constraint was relaxed in v3.14.8, but please update to the latest released version for other improvements</li>
 </ul>
 </div>
-<p>Support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 is available in the released version as of v3.14.7.</p>
+<p>Support for <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 is available in the released version.</p>
 <p>If you have any trouble with <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, or any of the <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Types, report them at your favorite help site, <a href="../../intro/loopdocs-how-to/#how-to-find-help" target="_blank">How to Find Help</a>.</p>
 <h3 id="status-for-pod-keep-alive-support">Status for Pod Keep Alive Support<a class="headerlink" href="#status-for-pod-keep-alive-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition important">
-<p class="admonition-title">Bug in v3.14.5 - rebuild ASAP</p>
-<p>A bug was introduced in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> v3.14.5. This was associated with cleaning up the Pod Keep Alive code.</p>
-<p>If you built this interim version of dev - please rebuild as soon as possible.</p>
+<p class="admonition-title"><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Users: Update to v3.14.9</p>
+<p>There were important fixes to Bluetooth connection timing in v3.14.9.</p>
 <ul>
-<li>The bug affected people who used a heartbeat without a <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and used DASH pods</li>
-<li>The <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app would stop working when the app was not in the foreground or the phone was locked - so a pretty obvious issue</li>
+<li>The release of v3.14.9 fixed an issue with When Open for v3.14.8</li>
+<li>The combination of Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> (which wakes up the app every minute even while locked) and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pods revealed an issue in v3.14.8 that is fixed in v3.14.9<ul>
+<li>In v3.14.8, the When Open would keep working while the phone was locked when the app woke up from the Eversense Bluetooth signal, even those the app was in the background</li>
+<li>This was fixed in v3.14.9 and another improvement to <em>eager-coneect</em> was added that speeds up reconnection to Pods</li>
+</ul>
+</li>
+<li>The Eversense fixes are important for any pump type<ul>
+<li>There were several issues in v3.14.9 that keep the Eversense <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> working through a variety of responses that previously caused glucose data to stop being provided</li>
+</ul>
+</li>
 </ul>
 </div>
-<p>For those using iPhone 16 or 17e with Atlas DASH Pods, the keep alive support is available in the released code, <code>main</code>, v3.14.0 or later.</p>
+<div class="admonition tip">
+<p class="admonition-title">Update to v3.14.9 for iPhone 16/17e with Atlas DASH Pods</p>
+<p>If your phone model is a 16 or 17e and you use Atlas DASH Pods:</p>
 <ul>
-<li>The released code, v3.14.8, uses the new <em>eager-connect</em> method which improves the speed of connection for Atlas DASH Pods with iPhone 16/17e</li>
-<li>Although the Pod Keep Alive feature is still there, it defaults to When Open; the other selections are not needed and will be removed soon</li>
+<li>Update to v3.14.9 or later for faster connection speed<ul>
+<li>Note that while the Pod Keep Alive selection can still be modified, you should be able to leave it at the default value of When Open</li>
+<li>This works for all iPhone and <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pod models</li>
 </ul>
-<p>The Pod Keep Alive code was completely revamped and cleaned up with v3.14.7 and even more with v3.14.8.  See <a href="#omnipodkit-information">OmnipodKit Information</a> for more details.</p>
-<ul>
-<li>If you are running v3.14.7, be sure to check your selection after a rebuild because it is not carried over from the older versions or when you change pod type</li>
-<li>If you are running v3.14.8 or later, the selection defaults to When Open for DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Pods and should work for all iPhone and <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pod models</li>
+</li>
 </ul>
+</div>
+<p>The Pod Keep Alive code was completely revamped and cleaned up in v3.14.7 through v3.14.9.  See <a href="#omnipodkit-information">OmnipodKit Information</a> for more details.</p>
 <hr />
 <h3 id="status-for-medtrum-support">Status for Medtrum Support<a class="headerlink" href="#status-for-medtrum-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Medtrum support was added to the released code, <code>main</code>, v3.14.2 or later.</p>
@@ -5440,10 +5456,10 @@
 <h3 id="status-for-dana-support">Status for Dana Support<a class="headerlink" href="#status-for-dana-support" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>For Dana support, you must build a new feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>feat/all-managers</code>.</p>
 <div class="admonition important">
-<p class="admonition-title">Build v3.14.8</p>
+<p class="admonition-title">Build v3.14.9</p>
 <p>There were some important fixes for connectivity in the latest feat/all-managers.</p>
 <ul>
-<li>If your build does not say v3.14.8, please rebuild</li>
+<li>If your build does not say v3.14.9, please rebuild</li>
 <li>The earlier v3.14.7 version of feat/all-managers did not show the bolus progress display - that is fixed now</li>
 </ul>
 </div>
@@ -5520,18 +5536,16 @@
 <li>Some new labels</li>
 <li>Some reworked sub-menus with added information or features</li>
 <li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 Support provided along with Classic and DASH support<ul>
-<li>Released version v3.14.8 or newer</li>
+<li>Released version v3.14.7 or newer (please build the latest v3.14.9 for important updates)</li>
 <li>Starting with development versions v3.14.3</li>
 </ul>
 </li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">Pod Keep Alive v3.14.7 or later</p>
-<p>The Pod Keep Alive feature was rewritten with v3.14.5 but a bug was introduced which was fixed in v3.14.7.</p>
-<p>Then with the <em>eager-connect</em> version of Bluetooth connection provided in v3.14.8, the Pod Keep Alive defaults to When Open automatically for both DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 and the other methods, while still available, should not be needed.</p>
-<ul>
-<li>Old Pod Keep Alive (PKA) settings are not transferred to the new build or when changing pod types</li>
-</ul>
+<p class="admonition-title">Update to v3.14.9 or later</p>
+<p>The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. </p>
+<p>Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.</p>
+<p>For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".</p>
 </div>
 <p>One of the biggest things is that you can <a href="../../loop-3/omnipod/#switch-pod-type" target="_blank">Switch Pod Type</a> between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the <code>main</code> (v3.14.2) <abbr title="version of code within a single repository or workspace repository">branch</abbr>, only Eros and DASH are supported. With the <code>dev</code> (3.14.3 or newer) or <code>next-dev</code> ( 3.15.0 and newer) branches, Eros, DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5 are all supported.</p>
 <div class="admonition question">

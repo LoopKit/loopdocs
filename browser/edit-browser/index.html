@@ -1641,10 +1641,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add-personal-customizations-to-build_loopyml" class="md-nav__link">
+  <a href="#add-personal-customizations-to-build_loop_autoyml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Personal Customizations to build_loop.yml
+        Add Personal Customizations to build_loop_auto.yml
       
     </span>
   </a>
@@ -4923,10 +4923,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add-personal-customizations-to-build_loopyml" class="md-nav__link">
+  <a href="#add-personal-customizations-to-build_loop_autoyml" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Personal Customizations to build_loop.yml
+        Add Personal Customizations to build_loop_auto.yml
       
     </span>
   </a>
@@ -5092,7 +5092,7 @@
 <li>Typically 1 or 2 <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr></li>
 </ul>
 </li>
-<li>Ten minutes to add patch lines to your build_loop.yml file</li>
+<li>Ten minutes to add patch lines to your build_loop_auto.yml file</li>
 <li>One minute to start the build</li>
 <li>An hour before the build shows up on your phone in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
@@ -5340,7 +5340,7 @@ The file name is: <code>Pod.swift</code></p>
 <p>Frame 3 displays a green <code>Compare &amp; pull request</code> button that would make a <code>Pull Request</code> to a <code>LoopKit/repository</code> - <strong>do NOT click that button</strong></p>
 </li>
 <li>
-<p>Frame 4 shows how to obtain the really-long alphanumeric string (<abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)">SHA-1</abbr>) needed to modify your build_loop.yml file</p>
+<p>Frame 4 shows how to obtain the really-long alphanumeric string (<abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)">SHA-1</abbr>) needed to modify your build_loop_auto.yml file</p>
 </li>
 </ul>
 <p align="center"><img alt="GitHub screen while creating a customization" src="../img/browser-customize.gif" width="750" /></p>
@@ -5400,11 +5400,11 @@ The file name is: <code>Pod.swift</code></p>
 SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 </code></pre></div>
 <p>Warning - that is not a valid <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)">SHA-1</abbr> for this change. Do not try to copy it and use it. You must make your own personalized changes.</p>
-<p>Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when your build the app.</p>
+<p>Later on, you will create the actual command needed to insert into build_loop_auto.yml so you can add this customization when your build the app.</p>
 <p>Repeat this process until you've done all your customizations for this Module and then move on to the next Module.</p>
 <h2 id="prepare-the-customizations">Prepare the Customizations<a class="headerlink" href="#prepare-the-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
-<p>Once you prepare the commands, then you will edit the build_loop.yml file of your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> of&nbsp;<span translate="no">LoopWorkspace</span>.</p>
+<p>There are two ways to use this customization. Keep reading for the method in which you edit the build_loop_auto.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
+<p>Once you prepare the commands, then you will edit the build_loop_auto.yml file of your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> of&nbsp;<span translate="no">LoopWorkspace</span>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Ensure your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> is from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span></p>
 <p>If your&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> and make a new one. See <a href="../prepare-fork/#already-have-loopworkspace" target="_blank">Already Have&nbsp;<span translate="no">LoopWorkspace</span>?</a>.</p>
@@ -5414,7 +5414,7 @@ SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 </div>
 <p>For each customization you want to include, create a pair of lines consisting of the comment (must start with a #) followed by the&nbsp;<code>curl</code>&nbsp;statement pointing to the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)">SHA-1</abbr> that has the customization.</p>
 <h3 id="prepare-customization-lines">Prepare customization lines<a class="headerlink" href="#prepare-customization-lines" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Save the customization lines in your text file for later use in the build_loop.yml file.</p>
+<p>Save the customization lines in your text file for later use in the build_loop_auto.yml file.</p>
 <div class="copy highlight"><span class="filename">Customization Template:</span><pre><span></span><code><span class="c1"># Module: File: code customization description</span>
 curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.patch<span class="w"> </span><span class="p">|</span><span class="w"> </span>git<span class="w"> </span>apply<span class="w"> </span>-v<span class="w"> </span>--directory<span class="o">=</span>Module
 </code></pre></div>
@@ -5429,15 +5429,15 @@ curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.p
 </ul>
 <p>To view the exact code change associated with that patch, open a browser at the <abbr title="website address (Uniform Resource Locator)">URL</abbr> of&nbsp;<code>https://github.com/my-name-org/Module/commit/SHA-1</code>.</p>
 <h2 id="update-loopworkspace">Update&nbsp;<span translate="no">LoopWorkspace</span><a class="headerlink" href="#update-loopworkspace" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
-<p>The final step is to update your&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></span>&nbsp;to apply these customizations by adding those customization lines into the build_loop.yml file.</p>
+<p>With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop_auto.yml file. If you are feeling adventurous, check out <a href="#how-to-use-the-patches-folder" target="_blank">How to use the <code>patches</code> Folder</a>.</p>
+<p>The final step is to update your&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></span>&nbsp;to apply these customizations by adding those customization lines into the build_loop_auto.yml file.</p>
 <p>Return to your&nbsp;<span translate="no"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> for LoopWorkspace</span>&nbsp;and make sure to sync it if needed.</p>
 <ul>
 <li>Find the folder .github/workflows and click on it</li>
-<li>Find the file build_loop.yml and click on it</li>
+<li>Find the file build_loop_auto.yml and click on it</li>
 <li>Click on the pencil (so you can edit this file)</li>
 </ul>
-<h3 id="add-personal-customizations-to-build_loopyml">Add Personal Customizations to build_loop.yml<a class="headerlink" href="#add-personal-customizations-to-build_loopyml" title="Anchor link to this Header on this Page">&para;</a></h3>
+<h3 id="add-personal-customizations-to-build_loop_autoyml">Add Personal Customizations to build_loop_auto.yml<a class="headerlink" href="#add-personal-customizations-to-build_loop_autoyml" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Open the text file in which you saved the customization lines.</p>
 <p>For a given submodule, paste the "comment" and "curl" lines that you prepared in <a href="#prepare-customization-lines">Prepare customization lines</a> (similar to the examples found in lines 279 through 286). These examples are commented out and are just for guidance. The best place to paste these is at the end of the <code># Customize Loop: Download and apply patches</code> section and before the <code># Patch Fastlane Match to not print tables</code> line.</p>
 <p>The indenting needs to match, so tab or (shift-tab) to line up the columns. The graphic below shows a couple of common mistakes.</p>
@@ -5450,17 +5450,17 @@ curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.p
 <p align="center"><img alt="indentation and blank lines are important" src="../img/modify-build-loop-yml.svg" width="600" /></p>
 <p>It is best to leave a blank line between customizations.</p>
 <p><strong>You must have a blank line</strong> after the last customization and before the <code># Patch Fastlane Match to not print tables</code> line or the build will fail.</p>
-<p><strong>Once you are done with all the edits for build_loop.yml you will <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the changes to your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> directly.</strong></p>
+<p><strong>Once you are done with all the edits for build_loop_auto.yml you will <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> the changes to your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> directly.</strong></p>
 <ul>
-<li>Once you have finished the edits for build_loop.yml</li>
+<li>Once you have finished the edits for build_loop_auto.yml</li>
 <li>Click on&nbsp;<span translate="no">Commit changes</span> (upper right)</li>
-<li>Click in the larger box below&nbsp;<span translate="no">"Update build_loop.yml"</span>&nbsp;and summarize the customizations you added</li>
+<li>Click in the larger box below&nbsp;<span translate="no">"Update build_loop_auto.yml"</span>&nbsp;and summarize the customizations you added</li>
 <li>Click on the option to&nbsp;<span translate="no">"Commit directly to your <abbr title="version of code within a single repository or workspace repository">branch</abbr>"</span><ul>
 <li><strong>NOTE: for&nbsp;<span translate="no">LoopWorkspace <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></span>&nbsp;- <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> directly to your default <abbr title="version of code within a single repository or workspace repository">branch</abbr></strong></li>
 </ul>
 </li>
 <li>Click on&nbsp;<span translate="no">Commit changes</span></li>
-<li>You can make as many changes to build_loop.yml in your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> as you want</li>
+<li>You can make as many changes to build_loop_auto.yml in your <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> as you want</li>
 </ul>
 <p>When you are ready, it's time to build with your customizations.</p>
 <h2 id="build-with-customizations">Build with Customizations<a class="headerlink" href="#build-with-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -5477,7 +5477,7 @@ curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.p
 <h2 id="extra-information">Extra Information<a class="headerlink" href="#extra-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>The rest of this page has additional information most people can skip.</p>
 <h3 id="how-to-use-the-patches-folder">How to Use the <code>patches</code> Folder<a class="headerlink" href="#how-to-use-the-patches-folder" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With <code>Loop 3.4.0</code> and newer, you can add patches to your <code>GitHub-Username/LoopWorkspace</code> <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> in the <code>patches</code> folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop.yml file.</p>
+<p>With <code>Loop 3.4.0</code> and newer, you can add patches to your <code>GitHub-Username/LoopWorkspace</code> <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> in the <code>patches</code> folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop_auto.yml file.</p>
 <p>Refer to <a href="#prepare-customization-lines" target="_blank">Prepare customization lines</a>:</p>
 <ul>
 <li>extract the text from "https:" through "patch" and paste that into a new tab</li>
