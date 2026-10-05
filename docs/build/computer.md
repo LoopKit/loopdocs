@@ -3,7 +3,7 @@
 !!! info "Time Estimate"
     **If you are building with a Mac and Xcode:**
 
-    - 5 minutes, if you have a Mac with Sonoma (macOS 14.0) or higher
+    - 5 minutes, if you have a Mac with Tahoe (macOS 26.6) or higher
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
@@ -27,7 +27,7 @@
 
 !!! question "FAQs"
     - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../browser/bb-overview.md){: target="_blank" } with any browser on any computer.
-    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can but only if your PC uses Intel chips. Please read this FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build){: target="_blank" }.
+    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** You used to be able to but with macOS 27, Intel chips are no longer supported. You can read the FAQ about virtual machines but you are better off learning how to use GitHub Actions and Build with the Browser Build method. FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build){: target="_blank" }.
     - **"How often do I need to use the computer if I choose the build with *Mac* method?"** Computer access is required when
         * Initially installing the Loop app
         * Loop app expires (Annually for a paid account or weekly for a free account)
@@ -56,7 +56,7 @@ Do not use any of the beta macOS versions. (If you don't know what that means, y
 
 To find your macOS version, click on the Apple icon in the computer's upper left corner and select `About this Mac`. The graphic below highlights the macOS version with a red rectangle. Your computer can be a MacBook, iMac, macMini, etc. It will work to build Loop if it has the minimum required macOS version and enough storage.
 
-> ![image showing macOS and system details](img/macos-13_and_newer.svg){width="300"}
+> ![image showing macOS and system details](img/macos-27.png){width="300"}
 
 To update your operating system:
 
@@ -86,7 +86,7 @@ Golden Gate (macOS 27) is not yet required for building the *Loop* app on a phon
 
 ## Which Macs Are Compatible with macOS Tahoe?
 
-Tahoe (macOS 26) is the minumum version for building. Expect to need Golden Gate (macOS 27) sooer rather than later.
+Tahoe (macOS 26.6) is the minumum version for building with Xcode 27. Expect to need Golden Gate (macOS 27) sooer rather than later.
 
 * MacBook Pro introduced in 2020 or later
 * MacBook Air introduced in 2020 or later
