@@ -87,7 +87,7 @@ Golden Gate (macOS 27) is not yet required for building the *Loop* app on a phon
 
 ## Which Macs Are Compatible with macOS Tahoe?
 
-Tahoe (macOS 26.6) is the minumum version for building with Xcode 27. Expect to need Golden Gate (macOS 27) sooer rather than later.
+Tahoe (macOS 26.6) is the minumum version for building with Xcode 27. Golden Gate (macOS 27) will be absolutely required by spring of 2027, but there is no particular reason to hold off updating once macOS 27.1 is available.
 
 * MacBook Pro introduced in 2020 or later
 * MacBook Air introduced in 2020 or later
