@@ -153,8 +153,6 @@ All of these solutions are found in [Action: Build Loop Errors](#action-build-lo
 
 An example annotation for skipping adding the App Group one of the Identifiers is shown in the graphic below. The App Group for `Loop-Intent-Extension` was deliberately removed to provoke that error.
 
-> Unfortunatley, the automatic annotation seen here is no longer provided by the tool we use. We may get it added back later. In the meantime, you will need to search for the phrase `::error` in the log file. We'll explain that in the detailed howto section.
-
 ![graphic with an example build error](img/example-identifier-build-errors.png){width="800"}
 {align="center"}
 
@@ -164,11 +162,15 @@ An example annotation for skipping adding the App Group one of the Identifiers i
 
 The automatic build actions should occur every Sunday. 
 
-If your build action is disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build.
+* If your build action is disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build
+* Once you update to 3.14.7 or newer, you should have a new action called Build Loop Auto that restores automatic building
+* You can ignore the action labeled Build Loop Manual; it is left for historical reasons to enable users to keep a record of customizations they may have used in earlier versions and may be removed later.
+
+The figure below is also left for historical reasons, but should not be required.
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
-If you see this message, then follow the instructions here [https://loopkit.github.io/loopdocs/browser/automatic/#disable-automatic-actions] but select (rather than unselect) the workflow scope in order to enable automated builds.  
+If you previously disabled building manually, then follow the instructions [here](automatic.md#disable-automatic-actions) but select (rather than unselect) the workflow scope in order to enable automated builds.  
 
 
 ### Rebuild: Create Certificates Error

@@ -84,19 +84,22 @@ With the advent of browser build, this is no longer worth maintaining. If you do
 
 ### Compatible Versions
 
-* Before the release of iOS 26, the version of iOS was 18.x and could be built with Xcode 16.4 and macOS 15.3
-* To build to an iOS 26 phone, you can continue to use Xcode 16.4
-    * Xcode 26.1.1, which requires macOS 15.6.1 or higher also works
-* As an alternative, use [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
+#### iOS 27
 
-### Wikipedia Chart for Apple Versions
+* To build to an iOS 27 phone, you need Xcode 27, which requires macOS 26.6 or higher
 
-This graphic (copied from Wikipedia and last updated March 2023) is provided as a map to read the minimum requirements.
+#### iOS 26
 
-Follow this link to [Wikipedia](https://en.wikipedia.org/wiki/Xcode) and scroll down to the current version of this figure - the graphic shown below is a map of how to read the current version of this figure at Wikipedia.
+* To build to an iOS 26.6 phone, you need Xcode 26.6, which requires macOS 26.2 or higher
 
-![Screenshot: Wikipedia Xcode example; Clip from Wiki with Xcode versions 13.x - 14.x showing relationship for iOS, Xcode, macOS; highlights how to read current graphic](img/xcode_vs_13-14.svg){width="750"}
-{align="center"}
+#### iOS 18
+
+* To build to an iOS 18.x phone, you need Xcode 16.4, which requires macOS 15.3 or higher
+
+
+### Apple Versions
+
+This link takes you to the [Apple Developer System Requirements](https://developer.apple.com/xcode/system-requirements/) page.
 
 ## What happens if you try using too old of Xcode?
 

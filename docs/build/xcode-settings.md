@@ -20,7 +20,9 @@ Click on the Xcode->About Xcode menu item. The version number is displayed.
 
 ## Privacy Settings
 
-This is not typical, but it does happen.
+> With Xcode 27, when you install it, you are specifically asked if you want to provide access to your Downloads folder. Say yes.  The Downloads folder is where the code resides when you use the build script directions provided in LoopDocs.
+
+With earlier versions of Xcode, sometimes permission to read the Downloads folder was not given.
 
 Some people have their macOS privacy settings configured so that *Xcode* does not have permission to access their `~/Downloads` folder. This will cause a lot of grief when trying to use the Build Select Script to build an app with *Xcode*. This will be mentioned on the build errors page, but this is a good time to check. The graphic below has steps labeled 1 through 4 to guide you to the setting that must be enabled for you to build the app with *Xcode*.
 

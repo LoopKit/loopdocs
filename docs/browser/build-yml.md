@@ -8,7 +8,7 @@
 
 ??? abstract "Section Summary (click to open/close)"
     1. Click on the "Actions" tab of your LoopWorkspace repository.
-    1. On the left side, select "4. Build Loop".
+    1. On the left side, select "4. Build Loop Auto".
     1. On the right side, click "Run Workflow", and tap the green `Run workflow` button.
     1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
     1. You should get several emails
@@ -20,7 +20,7 @@
 Refer to the graphic below for the first four steps:
 
 1. Click on the "`Actions`" tab of your <code>LoopWorkspace</code> repository.
-1. On the left side, click on "4. `Build Loop`".
+1. On the left side, click on "4. `Build Loop Auto`".
 1. On the right side, click "`Run Workflow`" to show a dropdown menu
     * You will see your default branch (typically `main`)
     * You can select a different branch, but typically, you run the default

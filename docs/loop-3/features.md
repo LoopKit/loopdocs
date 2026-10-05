@@ -273,7 +273,7 @@ Additional details about the 3.10.0 release are found here: [Version: Releases: 
 Live Activity was added to Loop with [Loop PR 2919](https://github.com/LoopKit/Loop/pull/2191#issuecomment-3565473537) in a development branch and released with version 3.10.0. 
 
 !!! warning "Customization Users; Browser Builders"
-    Many people have been using Live Activity as a customization. If you used the customization - you need to remove `live_activity` from your customization list in your build_loop.yml file of your fork or your build will fail.
+    Many people have been using Live Activity as a customization. If you used the customization - you need to remove `live_activity` from your customization list in your build_loop_auto.yml file of your fork or your build will fail.
 
 ### Requirements for Live Activity
 

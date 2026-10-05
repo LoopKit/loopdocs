@@ -12,10 +12,10 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 
 Loopers can choose from multiple pumps and a simulator:
 
-* [All Omnipod Types](#omnipod-setup) (available with v3.14.2 and newer)
+* [Omnipod](#omnipod-setup) (v3.14.9 or newer, v3.14.2 through .7 displayed "All Omnipod Types")
     * Omnipod Classic (Eros)
     * Omnipod DASH
-    * Omnipod 5 (available with release v3.14.7)
+    * Omnipod 5 (v3.14.7 or newer)
 * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
 * [Minimed](#medtronic-setup)
     * Note: only some Medtronic Minimed pumps are compatible
@@ -25,7 +25,7 @@ Loopers can choose from multiple pumps and a simulator:
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
-    The Loop app and LoopDocs use these terms. For any supported Pod Type, select `All Omnipod Types` when choosing your pump.
+    The Loop app and LoopDocs use these terms. For any supported Pod Type, select `Omnipod` when choosing your pump.
 
     * **Omnipod 5**
     * **Omnipod DASH**
@@ -52,7 +52,7 @@ Then continue with the appropriate section for your pump:
 
 ## Omnipod Setup
 
-You will see the welcome screen for `All Omnipod Types`. When done reading, tap on the blue Continue button.
+You will see the welcome screen for `Omnipod`. When done reading, tap on the blue Continue button.
 
 ![graphic showing the welcome screen for all omnipod types](img/pod-setup.png){width="250"}
 {align="center"}

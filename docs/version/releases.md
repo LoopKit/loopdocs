@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.8 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.9 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,68 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.9
+
+[*Loop* v3.14.9](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.9) was released on 05 October 2026.
+
+#### v3.14.9 Highlights
+
+**Loop Features**
+
+There are two major bug fixes of note:
+
+* Families with more than one user of Omnipod DASH pods can now pair pods without a spurious too many pods found error
+* For users of Eversense and Omnipod Pods (DASH and Omnipod 5):
+    * Turns out Eversense wakes up the app with Bluetooth every minute
+    * This revealed some issues with the way OmnipodKit was working that have now been fixed
+    * There were also a couple of issues found and fixed in EversenseKit where it would stop working, and therefore looping would stop
+    
+There were improvements in the following pump and CGM managers:
+
+* EversenseKit
+    * fixed a bug that caused glucose reporting to halt
+    * fixed a bug that did not restore CGM following an app restart
+    * fixed configuration to restore known transmitter
+    * fixed the test target
+    * fixed vibration toggles for Transmitter
+* MedtrumKit
+    * added report for state of patch if not ready to prime
+    * fixed crash, detect when delivery halts
+    * check patch status
+    * added machine translations for new strings
+* OmnipodKit
+    * improved timing on *eager-connect*
+    * fixed the When Open to not operate while app is in the background even if the CGM wakes up the app
+    * fixed the End Time for Silence Pod
+    * added to the analytics reported for beginning and end of pod
+
+There were some fixes and improvements in Loop and LoopKit
+
+* Fixed a few instances that could cause as crash
+* Added support to enable Pump and CGM Managers to upload specific strings to Analytics so each can customized what is tracked
+    * OmnipodKit is the only submodule that currently uses this feature
+
+**Translations**
+
+Bring in new translations from lokalise
+
+**Support Features**
+
+Updated support files
+
+* updated a variety of files to work with Xcode 27
+* updated to fastlane version 2.240.1
+* updated action files to prevent unnecessary warning messages
+* updated scripts used by developers
+    * ensures proper submodule selection
+    * assists in bringing translations from and uploading new strings to lokalise
+
+**Details**
+
+Additional details for the update from v3.14.8 to v3.14.9 can be seen in [PR 504](https://github.com/LoopKit/LoopWorkspace/pull/504)
 
 - - -
 
@@ -190,7 +252,7 @@ Additional translations were imported from lokalise.
 
     * `remote_window`
 
-    **Browser Builders:** If you used this customization, remove it from your build_loop.yml file. Otherwise, your **build will fail**.
+    **Browser Builders:** If you used this customization, remove it from your build_loop_auto.yml file. Otherwise, your **build will fail**.
 
     Instead of using a 15-minute window with *LoopCaregiver* and *Loop*, it is suggested you try *LoopFollow* remote commands which provide direct APNS message from *LoopFollow* to *Loop* with real-time returned APNS response. This still depends on APNS availability, but should be more direct and reliable than *LoopCaregiver*.
 
@@ -232,7 +294,7 @@ Additional translations were imported from lokalise.
     * `live_activity`
     * `dexcom_upload_readings`
 
-    **Browser Builders:** If you used these, remove them from your build_loop.yml file. Otherwise, your **build will fail**.
+    **Browser Builders:** If you used these, remove them from your build_loop_auto.yml file. Otherwise, your **build will fail**.
 
 
 #### v3.10.0 Highlights

@@ -1,7 +1,7 @@
 ## Compatible Pump
 
 !!! info "Time Estimate"
-    - Omnipod users: All Omnipod Pod Types are compatible
+    - Omnipod users: Omnipod Pod Types of Omnipod 5, DASH and Eros (Classic) are compatible
     - Medtrum Nano users: both 200 U and 300 U patches are supported
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Dana users: you must be willing to build a feature branch and understand the known issues
@@ -28,7 +28,7 @@ These types of pumps are compatible with the *Loop* app.
 
 * [Omnipod Classic (or Eros) Pods](pump.md#omnipod-pumps)
 * [Omnipod DASH Pods](#omnipod-dash)
-    * With the v3.14.8 release of the Loop app, the issues with iPhone 16/17e are improved
+    * With the v3.14.9 or newer release of the Loop app, the issues with iPhone 16/17e are improved
     * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
 * [Omnipod 5 Pods](#omnipod-5)
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
@@ -46,6 +46,19 @@ You must build a special branch to test some pumps. Please only test if you are 
 
     The use of Omnipod pumps with the *Loop* app is not supported by Insulet, although they are aware it is happening. Do not call Insulet asking for help with your *Loop* app build, setup, or operation. You are fully responsible for your use of the *Loop* app and do so at your own risk. Please read these documents and familiarize yourself with the *Loop* app before using it.
 
+### Omnipod 5
+
+!!! success "Omnipod 5 Pods are supported with released code v3.14.7; v3.14.9 or newer strongly recommended"
+
+### Omnipod DASH
+
+The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the Pod, so there is no requirement for a RileyLink compatible device.
+
+**A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
+
+![img/dash.png](img/dash.png){width="750"}
+{align="center"}
+
 ### Omnipod Eros
 
 Eros Pods (also known as Gen 3 or Classic) were launched in 2013 and continue to be sold by Insulet in some countries. Insulet stopped providing Eros Pods in the US end of December 2023. As far as we know, there are no timelines announced for the discontinuation of Eros Pods for other countries. Insulet doesn't specifically call these "Eros" anymore, they just use the term "Omnipod system". For clarity, from [Insulet's webpage](https://www.omnipod.com/discontinuation):
@@ -60,22 +73,6 @@ Eros system has a big Personal Diabetes Manager (PDM) that does not look like a 
 
 ![img/eros.png](img/eros.png){width="750"}
 {align="center"}
-
-### Omnipod DASH
-
-The DASH system has the newer, slimmer locked-android Personal Diabetes Manager (PDM) and built-in BLE communications in the Pod, so there is no requirement for a RileyLink compatible device.
-
-**A RileyLink-compatible device is not required to use DASH with the *Loop* app. The communication with your iPhone uses Bluetooth.**
-
-![img/dash.png](img/dash.png){width="750"}
-{align="center"}
-
-[See warning about iPhone 16/17e with DASH](phone.md#compatible-device){: target="_blank" }.
-
-### Omnipod 5
-
-!!! success "Omnipod 5 Pods are supported with released code v3.14.7 or newer"
-
 - - -
 
 ## Medtrum Nano

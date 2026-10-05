@@ -48,8 +48,9 @@
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
         * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
     * *GitHub*:
-        * [`Action: 4. Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
+        * [`Action: 4 Build Loop Auto`](build-yml.md#build-the-loop-app){: target="_blank" }
             * Yes we can count, but Action 3 is included in Action 4
+            * Only the *Loop* app has the word "Auto" added - that's for historical reasons; if you are using these instructions to build another app, you will not see the word "Auto" included in the name, but it will build automatically
     * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md){: target="_blank" }
 
 ???+ question "FAQs (click to open/close)"

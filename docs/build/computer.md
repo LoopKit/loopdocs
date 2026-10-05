@@ -3,7 +3,7 @@
 !!! info "Time Estimate"
     **If you are building with a Mac and Xcode:**
 
-    - 5 minutes, if you have a Mac with Sonoma (macOS 14.0) or higher
+    - 5 minutes, if you have a Mac with Tahoe (macOS 26.6) or higher
     - 30-60 minutes, if you need to install macOS updates
 
     Hint: OS stands for Operating System
@@ -22,19 +22,21 @@
 
     * A summary list of [Compatible Versions](#compatible-versions) is found on this page with more detail in a later page
 
-	If you are buying a Mac specifically to use the build with *Mac* method, chose one with capabably of being updated to the Sonoma (macOS 14) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
+	If you are buying a Mac specifically to use the build with *Mac* method, chose one with capabably of being updated to the Golden Gate (macOS 27) operating system and at least 256 GB (512 GB is better). The Build with Browser method works on any computer or tablet.
 
 
 !!! question "FAQs"
     - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../browser/bb-overview.md){: target="_blank" } with any browser on any computer.
-    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** Yes, you can but only if your PC uses Intel chips. Please read this FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build){: target="_blank" }.
+    - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** You used to be able to but with macOS 27, Intel chips are no longer supported. You can read the FAQ about virtual machines but you are better off learning how to use GitHub Actions and Build with the Browser Build method. FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build){: target="_blank" }.
     - **"How often do I need to use the computer if I choose the build with *Mac* method?"** Computer access is required when
         * Initially installing the Loop app
         * Loop app expires (Annually for a paid account or weekly for a free account)
         * Updating to a newer Loop release
         * You do NOT need access to an Apple computer to update your phone iOS, troubleshoot or change Loop settings
 
-If you have access to a computer with MacOS 14.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+If you have access to a computer with MacOS 27.0 or newer, you can skip ahead to [Check Space Available](#check-the-space-available).
+
+> Note with macOS 27.0 and higher, only Mac Silicon computers are supported. Computer using Intel chips are no longer supported.
 
 ## Compatible Versions
 
@@ -54,7 +56,8 @@ Do not use any of the beta macOS versions. (If you don't know what that means, y
 
 To find your macOS version, click on the Apple icon in the computer's upper left corner and select `About this Mac`. The graphic below highlights the macOS version with a red rectangle. Your computer can be a MacBook, iMac, macMini, etc. It will work to build Loop if it has the minimum required macOS version and enough storage.
 
-> ![image showing macOS and system details](img/macos-13_and_newer.svg){width="300"}
+![image showing macOS and system details](img/macos-27.png){width="300"}
+{align="center"}
 
 To update your operating system:
 
@@ -69,10 +72,22 @@ You need to have 50 GB free space in order to install Xcode as directed on the [
 
 If you are evaluating a used computer, it's best to have at least 256 GB total disk space (more is better).
 
+## Which Macs Are Compatible with macOS Golden Gate?
+
+Golden Gate (macOS 27) is not yet required for building the *Loop* app on a phone running iOS 27 with the *Mac* method. There are a number of features, where Xcode 27 is already required, but that can be installed on computers running macOS 26.6. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+
+* MacBook Neo (2026)
+* MacBook Air (2020 and later)
+* MacBook Pro (2020 and later)
+* iMac (2021 and later)
+* Mac mini (2020 and later)
+* Mac Studio (2022 and later)
+* Mac Pro (2023 and later)
+* get the full list from [Apple](https://support.apple.com/en-us/127255)
 
 ## Which Macs Are Compatible with macOS Tahoe?
 
-Tahoe (macOS 26) is not yet required for building the *Loop* app on a phone running iOS 26 with the *Mac* method. The normal *Apple* schedule is that you will be required to have this installed by April of the year after the *iOS* version increments.
+Tahoe (macOS 26.6) is the minumum version for building with Xcode 27. Golden Gate (macOS 27) will be absolutely required by spring of 2027, but there is no particular reason to hold off updating once macOS 27.1 is available.
 
 * MacBook Pro introduced in 2020 or later
 * MacBook Air introduced in 2020 or later
@@ -81,20 +96,7 @@ Tahoe (macOS 26) is not yet required for building the *Loop* app on a phone runn
 * iMac Pro introduced in 2017 or later
 * Mac Studio introduced in 2022 or later
 * Mac Pro introduced in 2019 or later
-* get the full list from [Apple](https://www.apple.com/os/macos/)
-
-## Which Macs Are Compatible with macOS Sequoia?
-
-Sequoia (macOS 15) is required for building the *Loop* app on a phone running iOS 18.6 or higher with the *Mac* method. 
-
-* MacBook Pro introduced in 2018 or later
-* MacBook Air introduced in 2020 or later
-* Mac mini introduced in 2018 or later
-* iMac introduced in late 2019 or later
-* iMac Pro introduced in 2017 or later
-* Mac Studio introduced in 2022 or later
-* Mac Pro introduced in 2019 or later
-* get the full list from [Apple for Sequoia](https://support.apple.com/en-us/120282)
+* get the full list from [Apple](https://support.apple.com/en-us/122867)
 
 ## Older Macs
 

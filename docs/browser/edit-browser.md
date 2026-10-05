@@ -36,7 +36,7 @@
 !!! info "Time Estimate"
     * About half an hour to an hour per Module
         * Typically 1 or 2 Modules
-    * Ten minutes to add patch lines to your build_loop.yml file
+    * Ten minutes to add patch lines to your build_loop_auto.yml file
     * One minute to start the build
     * An hour before the build shows up on your phone in *TestFlight*
 
@@ -242,7 +242,7 @@ There are 4 frames shown in this GIF; the frame number is noted at the bottom ri
 
 * Frame 3 displays a green `Compare & pull request` button that would make a `Pull Request` to a `LoopKit/repository` - **do NOT click that button**
 
-* Frame 4 shows how to obtain the really-long alphanumeric string (SHA-1) needed to modify your build_loop.yml file
+* Frame 4 shows how to obtain the really-long alphanumeric string (SHA-1) needed to modify your build_loop_auto.yml file
 
 ![GitHub screen while creating a customization](img/browser-customize.gif){width="750"}
 {align="center"}
@@ -308,15 +308,15 @@ SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 
 Warning - that is not a valid SHA-1 for this change. Do not try to copy it and use it. You must make your own personalized changes.
 
-Later on, you will create the actual command needed to insert into build_loop.yml so you can add this customization when your build the app.
+Later on, you will create the actual command needed to insert into build_loop_auto.yml so you can add this customization when your build the app.
 
 Repeat this process until you've done all your customizations for this Module and then move on to the next Module.
 
 ## Prepare the Customizations
 
-There are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }.
+There are two ways to use this customization. Keep reading for the method in which you edit the build_loop_auto.yml file. If you are feeling adventurous, check out [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }.
 
-Once you prepare the commands, then you will edit the build_loop.yml file of your <code>fork</code> of&nbsp;<span translate="no">LoopWorkspace</span>.
+Once you prepare the commands, then you will edit the build_loop_auto.yml file of your <code>fork</code> of&nbsp;<span translate="no">LoopWorkspace</span>.
 
 !!! warning "Ensure your <code>fork</code> is from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>"
     If your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;did not come from&nbsp;<span translate="no">LoopKit/LoopWorkspace</span>, then delete your existing <code>fork</code> and make a new one. See [Already Have&nbsp;<span translate="no">LoopWorkspace</span>?](prepare-fork.md#already-have-loopworkspace){: target="_blank" }.
@@ -327,7 +327,7 @@ For each customization you want to include, create a pair of lines consisting of
 
 ### Prepare customization lines
 
-Save the customization lines in your text file for later use in the build_loop.yml file.
+Save the customization lines in your text file for later use in the build_loop_auto.yml file.
 
 ```  { .sh .copy title="Customization Template:" }
 # Module: File: code customization description
@@ -347,17 +347,17 @@ To view the exact code change associated with that patch, open a browser at the 
 
 ## Update&nbsp;<span translate="no">LoopWorkspace</span>
 
-With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop.yml file. If you are feeling adventurous, check out [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }.
+With the release of 3.4.x, there are two ways to use this customization. Keep reading for the method in which you edit the build_loop_auto.yml file. If you are feeling adventurous, check out [How to use the `patches` Folder](#how-to-use-the-patches-folder){: target="_blank" }.
 
-The final step is to update your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;to apply these customizations by adding those customization lines into the build_loop.yml file.
+The final step is to update your&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;to apply these customizations by adding those customization lines into the build_loop_auto.yml file.
 
 Return to your&nbsp;<span translate="no">GitHub fork for LoopWorkspace</span>&nbsp;and make sure to sync it if needed.
 
 * Find the folder .github/workflows and click on it
-* Find the file build_loop.yml and click on it
+* Find the file build_loop_auto.yml and click on it
 * Click on the pencil (so you can edit this file)
 
-### Add Personal Customizations to build_loop.yml
+### Add Personal Customizations to build_loop_auto.yml
 
 Open the text file in which you saved the customization lines.
 
@@ -378,15 +378,15 @@ It is best to leave a blank line between customizations.
 
 **You must have a blank line** after the last customization and before the `# Patch Fastlane Match to not print tables` line or the build will fail.
 
-**Once you are done with all the edits for build_loop.yml you will commit the changes to your <code>fork</code> directly.**
+**Once you are done with all the edits for build_loop_auto.yml you will commit the changes to your <code>fork</code> directly.**
 
-* Once you have finished the edits for build_loop.yml
+* Once you have finished the edits for build_loop_auto.yml
 * Click on&nbsp;<span translate="no">Commit changes</span> (upper right)
-* Click in the larger box below&nbsp;<span translate="no">"Update build_loop.yml"</span>&nbsp;and summarize the customizations you added
+* Click in the larger box below&nbsp;<span translate="no">"Update build_loop_auto.yml"</span>&nbsp;and summarize the customizations you added
 * Click on the option to&nbsp;<span translate="no">"Commit directly to your branch"</span>
     * **NOTE: for&nbsp;<span translate="no">LoopWorkspace fork</span>&nbsp;- commit directly to your default branch**
 * Click on&nbsp;<span translate="no">Commit changes</span>
-* You can make as many changes to build_loop.yml in your <code>fork</code> as you want
+* You can make as many changes to build_loop_auto.yml in your <code>fork</code> as you want
 
 When you are ready, it's time to build with your customizations.
 
@@ -408,7 +408,7 @@ The rest of this page has additional information most people can skip.
 
 ### How to Use the `patches` Folder
 
-With `Loop 3.4.0` and newer, you can add patches to your `GitHub-Username/LoopWorkspace` fork in the `patches` folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop.yml file.
+With `Loop 3.4.0` and newer, you can add patches to your `GitHub-Username/LoopWorkspace` fork in the `patches` folder. Those patches will then be automatically added to your build every time without needing to modify the build_loop_auto.yml file.
 
 Refer to [Prepare customization lines](#prepare-customization-lines){: target="_blank" }:
 
