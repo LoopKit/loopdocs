@@ -8,7 +8,7 @@
 
 **For most, the *Loop* app is configured for automatic build, so you only need to come to this page if the automatic build failed.**
 
-**WARNING: starting May 2025, [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } may be required - be sure to check monthly to see if you need to start a build manually.**
+**Be sure to update to the latest version of Loop - automatic build was restored for v3.14.7 and newer**
 
 ???+ info "Time Estimate (click to open/close)"
     Manually update and build the *Loop* App
@@ -257,9 +257,9 @@ The bullets below show typical messages when you are building the `main` branch.
 Refer to graphic below as you follow the steps to build the *Loop* app. The numbers highlighted in the graphic correspond to numbers in parentheses in the bullet list below:
 
 * (1) Click on the `Actions` tab
-* (2) Select the `4. Build Loop` workflow on the left
+* (2) Select the `4. Build Loop Auto` workflow on the left
     * If using a mobile browser, be sure to use landscape mode to more closely match how *GitHub* looks on a computer.
-* If you notice your build action is disabled, you must (3) click on `Enable workflow`
+* If you only see `4. Build Loop` and the action is disabled, update to the latest version of `main` and return to actions, you will no longer need to do step (3) from the graphic
 * (4) Look on the right and click `Run workflow` to  see the dropdown
 * (5) Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
@@ -272,7 +272,9 @@ Refer to graphic below as you follow the steps to build the *Loop* app. The numb
 
 If a new release is announced at [Current Release](../version/releases.md#current-release){: target="_blank" }, look to see if there are instructions about extra steps required with the release. 
 
-> When `Loop 3.6.0` is released, if you customized your Loop app, you may need to discard your customization and manually sync your `fork`. Check out the [Ahead and Behind](#ahead-and-behind) instructions.
+> When `Loop 3.14.7` was released, you needed to transfer any desired customizations from the `buld_loop.yml` file to the `build_loop_auto.yml` file. This is a one-time action, only needed for the *Loop* app. See [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
+
+> Check out the [Ahead and Behind](#ahead-and-behind) instructions.
 
 If you are using the dev branch, the update steps are the same, but review information on this page: [Build Loop dev with Browser](build-dev-browser.md){: target="_blank" }.
 

@@ -65,19 +65,12 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.4.0 and later:
+The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.14.7 and later. There was a period, from May 2025 until September 2026, before adding the new file `build_loop_auto.yml` when automatic building did not work. If you have customizations in the older file `build_loop_auto.yml`, simply copy them to `build_loop_auto.yml` to get the customizations and automatic builds once per month or when the code updates.
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release release
     * Automatically create a new build and upload it to *TestFlight*
     * This is only for the `default` branch, typically `main`
 * Build the app at least once a month and upload it to *TestFlight*
-
-!!! important "You Get No Warning if Repository Build Action is Disabled"
-    Alert - this issue is new as of May 2025. Your build action might be disabled by *GitHub*, which means you need to enable it manually.
-
-    If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
-
-    * Refer to [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }
 
 Unless you make the recommended one-time change to [Disable Automatic Install from *TestFlight*](#disable-automatic-install-from-testflight), the default setting for each app found in *TestFlight* is to:
 

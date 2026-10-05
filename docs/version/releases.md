@@ -223,7 +223,7 @@ Additional translations were imported from lokalise.
 
     * `remote_window`
 
-    **Browser Builders:** If you used this customization, remove it from your build_loop.yml file. Otherwise, your **build will fail**.
+    **Browser Builders:** If you used this customization, remove it from your build_loop_auto.yml file. Otherwise, your **build will fail**.
 
     Instead of using a 15-minute window with *LoopCaregiver* and *Loop*, it is suggested you try *LoopFollow* remote commands which provide direct APNS message from *LoopFollow* to *Loop* with real-time returned APNS response. This still depends on APNS availability, but should be more direct and reliable than *LoopCaregiver*.
 
@@ -265,7 +265,7 @@ Additional translations were imported from lokalise.
     * `live_activity`
     * `dexcom_upload_readings`
 
-    **Browser Builders:** If you used these, remove them from your build_loop.yml file. Otherwise, your **build will fail**.
+    **Browser Builders:** If you used these, remove them from your build_loop_auto.yml file. Otherwise, your **build will fail**.
 
 
 #### v3.10.0 Highlights
