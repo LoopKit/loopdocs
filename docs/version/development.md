@@ -25,6 +25,8 @@ The current released version of the *Loop* app is always in the `main` branch of
 The next version of the *Loop* app is developed using branches. 
 
 * The `dev` branch is used by the developers to push out changes for users to test before that code is released
+    * Updates to `dev` are made via PRs to LoopWorkspace and are announced in zulipchat
+        * You should only be on the `dev` branch if you are willing to be a tester, build frequently and pay close attention to each update
     * Sometimes there are breaking changes
         * A breaking change is when you can build the new branch over your existing app, but cannot go backwards without deleting your app from your phone
     * We are bringing in updates for Tidepool in a special branch `next-dev`
@@ -40,46 +42,48 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides an overview of changes to `dev` compared to the current release: [`Loop v3.14.9`](releases.md#v3149-highlights){: target="_blank" }. 
+This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.9`](releases.md#v3149-highlights){: target="_blank" }.
 
-At this time, `dev` is identical to to `main`.
+The `dev` branch is subject to frequent updates. Follow along in zulipchat or read the commit history found here: [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/).
 
-* Those on the Dana pump must keep building the feature branch, `feat/all-managers`
+* Although the [Status for `dev` Branch](#status-for-dev-branch) is not necessarily updated with every commit to `dev`, it provides a location to summarize updates found in `dev` between releases.
 
-Please check the [development channel in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) for notifications when an update to the `dev` branch is expected so you will be prepared. Do this **before** you install a `dev` build from TestFlight.
+Those on the Dana pump must keep building the feature branch, `feat/all-managers`, which is kept up-to-date with the `dev` branch.
 
 ### Branches
 
-In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature and update branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
+In addition to the main and dev branches, which are tightly controlled and only updated through a formal pull request and approval process, there are also some feature branches. These branches are subject to more frequent updates, so users testing these branches should follow along in zulipchat for information.
 
-* The `update_dev_to_M.m.#` is where the next version of dev is tested before becoming part of `dev` and later being released as `main`
-* The branches starting with `feat/` have one or more special features, like support for new pumps, CGM or the new universal pump manager for all types of Omnipods
+* Starting with `dev` branch at v3.14.10, we stopped using the `update_dev_to_M.m.#` interim branches
+    * Users have been forced to acknowledge they are on a `dev` branch for a while now
+    * Updates will be merged directly into `dev` and the version will be bumped one more time before releasing `dev` to `main`
+* The branches starting with `feat/` have one or more special features, like support for new pumps or CGM; they are kept up to date with changes in the `dev` branch
 * As mentioned earlier, there is also a `next-dev` branch for early adopters of what will eventually be Loop version 4, but is currently tagged as v3.15.x
 
-The graphic below shows the `main` and `dev` branches along with some feature branches and an update branch. This is a snapshot in time and no longer reflects the current status. Always check [Table of Active Branches](#table-of-active-branches).
+The graphic below shows the `main` and `dev` branches along with some feature branches. This is a snapshot in time. Always check [Table of Active Branches](#table-of-active-branches).
 
-> ![Active branches for LoopWorkspace](img/loop-development-branches.png ){width="750"}
+> ![Active branches for LoopWorkspace](img/loop-development-branches.png ){width="600"}
 {align="center"}
 
 
 ??? tip "Updates in Progress (Click to open/close)"
-    * Sometimes there is a work-in-progress branch, `update_dev_to_M.m.#` used to collect new items in preparation for the next `dev` branch. This allows people to test and comment on the updates before they land in the `dev` branch.
-    * There are also feature branches for items like new pumps and new CGMs:
-        * The feature branches typically spin off of `dev`, but if a `updates_dev_to_ . . .` branch is in work, it is merged into the feature branches as items get included
+    * There are feature branches for items like new pumps and new CGMs:
+        * The feature branches typically are kept up to date with the `dev` branch
 
 ### Table of Active Branches
 
 The table below lists active branches. 
 
-* Note that updates may occur and be announced in zulipchat a day or two before updates propagate to *LoopDocs*
+* Note that updates may occur and be announced in zulipchat before updates propagate to *LoopDocs*
 * Anyone using a feature branch needs to be alert and check zulipchat regularly
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | `main` | 3.14.9 | 05 Oct 2026 | [released code](releases.md#v3149-highlights){: target="_blank" } |
-| `dev` | 3.14.9 | 03 Oct 2026 | same as `main` |
-| `feat/all-managers`<br>- SHA `ee55586` | 3.14.9 | 03 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ e157a86` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `dev` | 3.14.10 | subject to rapid change | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
+| `feat/all-managers` | 3.14.10 | 11 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ e157a86` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `feat/tandem-closed-beta` | 3.14.9 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -108,11 +112,13 @@ For Mac Xcode build, you can use the [regular build script](../build/build-app.m
 
 Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for the current method for version numbering for the `main` and `dev` branches.
 
-The version number in the feature branch will match either the `dev` branch version number or a work-in-progress update to the `dev` branch which uses the naming convention `update_dev_to_M.m.#`.
+- - -
 
-* In other words, the feature branch is up to date with other changes to `dev` or `update_dev_to_M.m.#` with the added support for the specific feature
-* Each feature has an associated repository that contains the feature
-    * When updates to the feature are added, the SHA for the feature branch and the SHA for the submodule(s) which support that feature will be reported in the table above and can be found by examining the LoopWorkspace repository for that feature branch
+### Status for `dev` Branch
+
+This section is updated with an overview of changes but may lag the current state of the `dev` branch.
+
+Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) and consider commits since the last release on 5 October 2026.
 
 - - -
 
@@ -123,11 +129,6 @@ The document linked below provides an overview of updates brought from Tidepool 
 * [*Loop* DIY: What's new](https://github.com/LoopKit/LoopWorkspace/blob/next-dev/docs/loop-diy-whats-new.md)
 
 The document linked above does not include more recent updates which you find discussed in zulipchat and highlighted below. But the document does provides a solid basis for understanding the new features.
-
-!!! important "For Expert Testers"
-    If you are willing to test using the `next-dev` branch of LoopWorkspace, this implementation provides a heartbeat from the Pod if the CGM does not have one.
-    
-    It also operates the BLE Pods (DASH and Omnipod 5) in disconnected mode instead of always connected as was done earlier; and with the updates found in interim version 3.15.2, it uses the *eager-connect* method. See [Table of OmnipodKit Versions](../faqs/omnipod-faqs.md#table-of-omnipodkit-versions){: target="_blank"} for more information.
 
 !!! warning "Backward Compatibility is Limited"
     Once you build `next-dev` on your personal phone, you may run into issues trying to return to released code at this time.
@@ -140,7 +141,7 @@ The document linked above does not include more recent updates which you find di
 
 This is the open PR for `next-dev`: [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)
 
-Please read [Status for Open Beta for Omnipod 5](#status-for-open-beta-for-omnipod-5) and [zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) 
+Please follow along in [zulipchat: Loop next-dev Status](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Loop.20next-dev.20Status/with/600761707) 
 
 #### Preset Behavior in *Loop* 4
 
