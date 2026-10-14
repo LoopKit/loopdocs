@@ -5298,9 +5298,10 @@
 <p>Please read this entire page before using any version of <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> other than the released code.</p>
 <h2 id="updates-in-dev">Updates in <code>dev</code><a class="headerlink" href="#updates-in-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>This section provides a permanent link for the overview of changes to <code>dev</code> compared to the current release: <a href="../releases/#v3149-highlights" target="_blank"><code>Loop v3.14.9</code></a>.</p>
-<p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is subject to frequent updates. Follow along in zulipchat or read the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history found here: <a href="https://github.com/LoopKit/LoopWorkspace/commits/dev/">LoopWorkspace dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a>.</p>
+<p>The <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is subject to frequent updates. Follow along in zulipchat for information about those updates.</p>
 <ul>
-<li>Although the <a href="#status-for-dev-branch">Status for <code>dev</code> Branch</a> is not necessarily updated with every <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to <code>dev</code>, it provides a location to summarize updates found in <code>dev</code> between releases.</li>
+<li>Although the <a href="#status-for-dev-branch">Status for <code>dev</code> Branch</a> is not necessarily updated with every <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> to <code>dev</code>, it provides a table of updates to <code>dev</code> between releases with additional information as needed</li>
+<li>For additional information, the <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history is found here: <a href="https://github.com/LoopKit/LoopWorkspace/commits/dev/">LoopWorkspace dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a></li>
 </ul>
 <p>Those on the Dana pump must keep building the feature <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <code>feat/all-managers</code>, which is kept up-to-date with the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
 <h3 id="branches">Branches<a class="headerlink" href="#branches" title="Anchor link to this Header on this Page">&para;</a></h3>
@@ -5398,8 +5399,61 @@
 <p>Please see <a href="../releases/#loop-version-numbering"><code>Loop</code> Version Numbering</a> for the current method for version numbering for the <code>main</code> and <code>dev</code> branches.</p>
 <hr />
 <h3 id="status-for-dev-branch">Status for <code>dev</code> Branch<a class="headerlink" href="#status-for-dev-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This section is updated with an overview of changes but may lag the current state of the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>Refer to <a href="https://github.com/LoopKit/LoopWorkspace/commits/dev/">LoopWorkspace dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a> and consider commits since the last release on 5 October 2026.</p>
+<p>This section provides an overview of changes since the last release, but may lag the current state of the <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
+<h4 id="summary-of-updates-to-dev">Summary of updates to <code>dev</code><a class="headerlink" href="#summary-of-updates-to-dev" title="Anchor link to this Header on this Page">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Date</th>
+<th style="text-align: center;"># of commits</th>
+<th style="text-align: left;">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">11 Oct 2026</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Increment version number to v3.14.10</td>
+</tr>
+<tr>
+<td style="text-align: left;">12 Oct 2026</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Update support files for automated testing with CircleCI</td>
+</tr>
+<tr>
+<td style="text-align: left;">12 Oct 2026</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Update OmnipodKit to bring in 3 fixes:<br>1. Deactivate Fix: Shorten time from 4 to less than 1 minute before  offering to Discard Pod in case of signal loss and update messages<br>2. Trio Eros Fix: Enable clean deletion of pump manager with Eros Pods<br>3. Alert Fix: automatic retry to clear Pod Beeping alerts if initial acknowledgement to pod was missed</td>
+</tr>
+<tr>
+<td style="text-align: left;">14 Oct 2026</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see <a href="#update-to-eager-connect-for-iphone-1617e-plus-atlas">Update to <code>eager-connect</code> for iPhone 16/17e Plus Atlas</a></td>
+</tr>
+</tbody>
+</table>
+<p>Refer to <a href="https://github.com/LoopKit/LoopWorkspace/commits/dev/">LoopWorkspace dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> history</a> for all commits.</p>
+<h4 id="update-to-eager-connect-for-iphone-1617e-plus-atlas">Update to <code>eager-connect</code> for iPhone 16/17e Plus Atlas<a class="headerlink" href="#update-to-eager-connect-for-iphone-1617e-plus-atlas" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p>This fix should reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas DASH Pods.</p>
+<h5 id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Anchor link to this Header on this Page">&para;</a></h5>
+<p>Modify the <em>eager-connect</em> method for Bluetooth communication with Pods:</p>
+<ul>
+<li>This modification affects the handling of iPhone 16/17e with Atlas Pods when the app is in the background or the phone locked; other iPhone/Pod combinations are not affected<ul>
+<li>Before this change, the program manager was essentially keeping the 16/17e plus Atlas Pod Bluetooth in a <em>keep-connected</em> mode</li>
+<li>After this change, the program manager allows the Bluetooth connection to close once messages are completed just like it does for other iPhone / Pod combinations</li>
+</ul>
+</li>
+</ul>
+<h5 id="background">Background<a class="headerlink" href="#background" title="Anchor link to this Header on this Page">&para;</a></h5>
+<p>The Bluetooth connection method for Pods has undergone several revisions driven by both the increased incidence of 203 Faults for Atlas DASH Pods and the very slow connection for iPhone 16/17e with Atlas Pods.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Release v3.14.7 used the first modification from <em>keep-connected</em> to <em>ble-heartbeat</em> and was associated with a reduction in 203 Faults but did not provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods.</p>
+<p><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Release v3.14.8 and v3.14.9 used the second modification of <em>eager-connect</em> which did provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods, however, these implementations essentially kept the 16/17e plus Atlas combination always connected to Bluetooth, which we believe makes 203 faults more common.</p>
+<ul>
+<li>We got several reports of the return of 203 Faults for users who updated from v3.14.7 to v3.14.8 or v3.14.9 for users of iPhone 16/17e with Atlas Pods</li>
+<li>Using those <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Reports, the modification to the OmnipodKit pump manager (see link below) was proposed and tested</li>
+</ul>
+<p>This update should provide the improvements for all iPhones and all Pod Types.</p>
+<p>This fix to OmnipodKit came into the pump manager with <a href="https://github.com/loopandlearn/OmnipodKit/pull/190">OmnipodKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 190 (to <code>dev</code>)</a>. It was also backported to <code>next-dev</code>.</p>
 <hr />
 <h3 id="status-for-next-dev-branch">Status for <code>next-dev</code> Branch<a class="headerlink" href="#status-for-next-dev-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The document linked below provides an overview of updates brought from Tidepool <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> to "<abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr> <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>", as found in next-dev.</p>
