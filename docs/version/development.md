@@ -44,9 +44,10 @@ Please read this entire page before using any version of *Loop* other than the r
 
 This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.9`](releases.md#v3149-highlights){: target="_blank" }.
 
-The `dev` branch is subject to frequent updates. Follow along in zulipchat or read the commit history found here: [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/).
+The `dev` branch is subject to frequent updates. Follow along in zulipchat for information about those updates.
 
-* Although the [Status for `dev` Branch](#status-for-dev-branch) is not necessarily updated with every commit to `dev`, it provides a location to summarize updates found in `dev` between releases.
+* Although the [Status for `dev` Branch](#status-for-dev-branch) is not necessarily updated with every commit to `dev`, it provides a table of updates to `dev` between releases with additional information as needed
+* For additional information, the commit history is found here: [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/)
 
 Those on the Dana pump must keep building the feature branch, `feat/all-managers`, which is kept up-to-date with the `dev` branch.
 
@@ -116,9 +117,47 @@ Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for th
 
 ### Status for `dev` Branch
 
-This section is updated with an overview of changes but may lag the current state of the `dev` branch.
+This section provides an overview of changes since the last release, but may lag the current state of the `dev` branch.
 
-Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) and consider commits since the last release on 5 October 2026.
+#### Summary of updates to `dev`
+
+| Date | # of commits | Summary |
+|:--|:-:|:--|
+| 11 Oct 2026 | 2 | Increment version number to v3.14.10 |
+| 12 Oct 2026 | 1 | Update support files for automated testing with CircleCI |
+| 12 Oct 2026 | 1 | Update OmnipodKit to bring in 3 fixes:<br>1. Deactivate Fix: Shorten time from 4 to less than 1 minute before  offering to Discard Pod in case of signal loss and update messages<br>2. Trio Eros Fix: Enable clean deletion of pump manager with Eros Pods<br>3. Alert Fix: automatic retry to clear Pod Beeping alerts if initial acknowledgement to pod was missed |
+| 14 Oct 2026 | 1 | Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see [Update to `eager-connect` for iPhone 16/17e Plus Atlas](#update-to-eager-connect-for-iphone-1617e-plus-atlas)
+
+
+Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
+
+#### Update to `eager-connect` for iPhone 16/17e Plus Atlas
+
+This fix should reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas DASH Pods.
+
+##### Overview
+
+Modify the *eager-connect* method for Bluetooth communication with Pods:
+
+* This modification affects the handling of iPhone 16/17e with Atlas Pods when the app is in the background or the phone locked; other iPhone/Pod combinations are not affected
+    * Before this change, the program manager was essentially keeping the 16/17e plus Atlas Pod Bluetooth in a *keep-connected* mode
+    * After this change, the program manager allows the Bluetooth connection to close once messages are completed just like it does for other iPhone / Pod combinations
+
+##### Background
+
+The Bluetooth connection method for Pods has undergone several revisions driven by both the increased incidence of 203 Faults for Atlas DASH Pods and the very slow connection for iPhone 16/17e with Atlas Pods.
+
+Loop Release v3.14.7 used the first modification from *keep-connected* to *ble-heartbeat* and was associated with a reduction in 203 Faults but did not provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods.
+
+Loop Release v3.14.8 and v3.14.9 used the second modification of *eager-connect* which did provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods, however, these implementations essentially kept the 16/17e plus Atlas combination always connected to Bluetooth, which we believe makes 203 faults more common.
+
+* We got several reports of the return of 203 Faults for users who updated from v3.14.7 to v3.14.8 or v3.14.9 for users of iPhone 16/17e with Atlas Pods
+* Using those Loop Reports, the modification to the OmnipodKit pump manager (see link below) was proposed and tested
+
+This update should provide the improvements for all iPhones and all Pod Types.
+
+This fix to OmnipodKit came into the pump manager with [OmnipodKit PR 190 (to `dev`)](https://github.com/loopandlearn/OmnipodKit/pull/190). It was also backported to `next-dev`.
+
 
 - - -
 
