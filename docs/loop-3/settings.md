@@ -123,9 +123,6 @@ If you want to use Loop in parallel with your current method of dosing insulin.
 
 ### Usage Data Sharing
 
-!!! warning "iOS 15"
-    If you are running an iOS 15 device, this screen is shown in German regardless of the language you choose for Loop. That is an accident that will be fixed by the next release. The English version is shown below.
-
 You can review and modify your preference for Usage Data Sharing as shown in the graphic below:
 
 ![review or modify usage data sharing with Loop developers](img/data-sharing-revisit.svg){width="350"}
