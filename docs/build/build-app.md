@@ -28,11 +28,7 @@ If you previously used [Build with Browser](../browser/bb-overview.md) to instal
 
 ## <code>Developer Mode</code>
 
-If you are running iOS 15/watchOS 8, you do not have <code>Developer Mode</code> and can skip ahead to [Download Loop](#download-loop).
-
-### Upgrade from iOS 15 to newer version
-
-**If you upgrade an iOS 15 phone to iOS 16 or newer, the *Loop* app will not open until you enable <code>Developer Mode</code> on that phone.**
+**If <code>Developer Mode</code> is not enabled, the *Loop* app built with Xcode will not open on that phone.**
 
 You will see a message similar to the next graphic.
 
@@ -524,7 +520,7 @@ To add custom configurations to your Loop or Loop Apple Watch apps, follow the s
 
 ### Apple Watch
 
-**Existing Apple Watch users**: Please update your watchOS prior to building the Loop app. The minimum iOS for Loop 3 is iOS 15.1, which means watchOS 8.1. When running iOS 16.x, you will need a watchOS of 9.x.
+**Existing Apple Watch users**: Please update your watchOS prior to building the Loop app. The minimum iOS for the *Loop* app is iOS 17.6, which means watchOS 10.6. See [Watch Hardware and OS Requirements](../operation/features/watch.md#watch-hardware-and-os-requirements){: target="_blank" }.
 
 **New Apple Watch users**: If you have an Apple watch and want to use it with Loop, first pair the watch with the iPhone before continuing to the next steps.  If you get a new watch after building the Loop app, you'll need to redo your Loop build.
 
