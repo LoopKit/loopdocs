@@ -39,7 +39,7 @@ It's a mix of the two: built on your Mac like [Mac-Xcode Build](build-app.md#bui
 
 ### Step by step
 
-1. **Run the build script script as usual.** Pick your app and answer the questions like always. At the end you'll see a new question: how do you want to install the app? Type 2 for TestFlight and press return.
+1. **Run the build script as usual.** Pick your app and answer the questions like always. At the end you'll see a new question: how do you want to install the app? Type 2 for TestFlight and press return.
 
     ![select upload to TestFlight](img/upload-to-testflight-option.png){width="700"}
     {align="center"}
