@@ -4,7 +4,71 @@ There are several different methods for making use of *TestFlight*:
 
 * Test an app someone else is developing
 * Use the [Build with Browser](../browser/bb-overview.md) method to build and distribute your Loop app to your iPhone or that of a family member
+* Use any of the [build or customization scripts](#use-scripts-to-upload-to-testflight) and choose the "Upload to TestFlight" option
 * Use *TestFlight* as a remote distribution (and backup) for an app you build using *Xcode*
+
+## Use Scripts to Upload to TestFlight
+
+The Loop and Learn build scripts can now send your app straight to TestFlight. You build on your Mac just like before, and then install the app on the phone with the TestFlight app, the same way Browser Build users do. You don't need to plug the phone in.
+It works for Loop, Trio, LoopFollow, LoopCaregiver and xDrip4iOS. The Customization Select menu has the option too, for Loop.
+
+### How it compares to what you already do
+
+It's a mix of the two: built on your Mac like [Mac-Xcode Build](build-app.md#build-select-script){: target="_blank" }, delivered through TestFlight like [Browser Build](../browser/bb-overview.md){: target="_blank" }.
+
+| | Xcode<br>(build script) | Browser Build<br>(GitHub) | Build script + TestFlight<br>(new) |
+|:--|:--|:--|:--|
+| Where the app is built | Your Mac | GitHub's computers | Your Mac |
+| Paid Apple Developer account | Optional | Required | Required |
+| How long the app lasts | 1 year (paid)<br>7 days (free) | 90 days | 90 days |
+| Setup Work | Xcode on a Mac | GitHub Account, Secrets, on-time-setup | Xcode on a Mac |
+
+### Why you might want it
+
+* **Your Mac is older than your phone.** Installing over a cable needs an Xcode version that supports the phone's iOS, and an older Mac may not be able to run it. TestFlight doesn't care which iOS the phone has. Apple does still require a fairly recent Xcode for uploads.
+* **No cable needed.** New versions reach your child's phone, or a caregiver's, wherever it is.
+* **Works alongside Browser Build.** Both can upload the same app without clashing.
+* **No GitHub setup.** You get TestFlight without GitHub, secrets or Actions.
+
+### What you need
+
+* A Mac with Xcode, which you already have if you build with the script today. Make sure your Apple ID is signed in under Xcode → Settings → Accounts.
+* A **paid** Apple Developer account. TestFlight doesn't work with a free account.
+* Apple updates its License Agreement for the Developer Program frequently. You need to [login to your developer account](https://developer.apple.com/account/) to manually check if there is a new agreement to accept. A pending agreement blocks uploads.
+* The TestFlight app on the phone that will install the app.
+
+### Step by step
+
+1. **Run the build script as usual.** Pick your app and answer the questions like always. At the end you'll see a new question: how do you want to install the app? Type 2 for TestFlight and press return.
+
+    ![select upload to TestFlight](img/upload-to-testflight-option.png){width="700"}
+    {align="center"}
+
+2. **Let it build and upload**. The script builds the app, which usually takes 10 to 30 minutes, and then uploads it to Apple. When both steps show a green check mark, you're done at the Mac.
+
+    ![building display when you choose upload to TestFlight](img/build-for-upload-to-testflight.png){width="700"}
+    {align="center"}
+
+3. **First time only:** let Xcode register the app. If Apple doesn't know about this app yet (for example, you've never used Browser Build for it), the script opens Xcode and shows four steps to follow. The app name must be unique across the whole App Store, so use the name the script suggests. You only do this once.
+
+    ![first time upload to TestFlight](img/first-time-upload-to-testflight.png){width="700"}
+    {align="center"}
+
+4. **Wait for Apple.** Apple processes each new build before it shows up in TestFlight. That usually takes 5 to 30 minutes.
+5. **First time only: set up your TestFlight group.** Add yourself and anyone else who will install the app on a phone. If you use Browser Build, you've done this already. [LoopDocs: Configure TestFlight Group](../browser/tf-users.md#configure-testflight-group-for-the-app){: target="_blank" }
+6. **Install on the phone.** Open TestFlight on the phone and tap Install or Update. [LoopDocs: Install with TestFlight](../browser/phone-install.md){: target="_blank" }
+
+### Good to know
+
+* **TestFlight builds expire after 90 days.** An expired app won't open, so automation stops. Set a calendar reminder to build again well before then, and keep a backup plan for diabetes care.
+* **Xcode is still there.** Option 1 opens Xcode exactly as before.
+* **If the upload fails,** the script lists the usual causes and opens Xcode so you can retry and see a clearer error.
+* **Need help?** You can [get help from your favorite site for build help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank" }
+
+
+## Manual Method to Upload to TestFlight
+
+Before there was a script, the manual method was developed and instructions provided on this page.  Using the script method is far easier, but we're keeping these instructions for historical reasons.
 
 This guide can also be followed to install other apps you build with *Xcode* via *TestFlight*. Examples include <code>LoopFollow</code>, <code>LoopCaregiver</code> and <code>xDrip4iOS</code>.
 
