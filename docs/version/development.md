@@ -127,6 +127,7 @@ This section provides an overview of changes since the last release, but may lag
 | 12 Oct 2026 | 1 | Update support files for automated testing with CircleCI |
 | 12 Oct 2026 | 1 | Update OmnipodKit to bring in 3 fixes:<br>1. Deactivate Fix: Shorten time from 4 to less than 1 minute before  offering to Discard Pod in case of signal loss and update messages<br>2. Trio Eros Fix: Enable clean deletion of pump manager with Eros Pods<br>3. Alert Fix: automatic retry to clear Pod Beeping alerts if initial acknowledgement to pod was missed |
 | 14 Oct 2026 | 1 | Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see [Update to `eager-connect` for iPhone 16/17e Plus Atlas](#update-to-eager-connect-for-iphone-1617e-plus-atlas)
+| 15 Oct 2026 | 1 | update LoopKit: share the Core Data model used by next-dev<br>- maintains next-dev information if user transitions to and from dev branch |
 
 
 Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
