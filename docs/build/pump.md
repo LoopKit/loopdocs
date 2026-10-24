@@ -28,7 +28,7 @@ These types of pumps are compatible with the *Loop* app.
 
 * [Omnipod Classic (or Eros) Pods](pump.md#omnipod-pumps)
 * [Omnipod DASH Pods](#omnipod-dash)
-    * With the v3.14.9 or newer release of the Loop app, the issues with iPhone 16/17e are improved
+    * With the v3.14.11 or newer release of the Loop app, the issues with iPhone 16/17e are improved
     * See caveat about [iPhone 16 and 17e](phone.md#compatible-device){: target="_blank" }
 * [Omnipod 5 Pods](#omnipod-5)
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
@@ -48,7 +48,7 @@ You must build a special branch to test some pumps. Please only test if you are 
 
 ### Omnipod 5
 
-!!! success "Omnipod 5 Pods are supported with released code v3.14.7; v3.14.9 or newer strongly recommended"
+!!! success "Omnipod 5 Pods are supported with released code v3.14.7; v3.14.11 or newer strongly recommended"
 
 ### Omnipod DASH
 

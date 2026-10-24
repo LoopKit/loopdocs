@@ -55,8 +55,9 @@ The table below references which *Loop* version is associated with which Bluetoo
 
 | Loop Version | Branch | OmnipodKit BLE Method<br>- known issues | Supports |
 |:--|:--|:--|:--|
-| Loop 3.14.9 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
-| Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved | Classic, DASH, Omnipod 5 |
+| Loop 3.14.11 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
+| Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
+| Loop 3.14.9 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased, very slow to offer to Discard pod | Classic, DASH, Omnipod 5 |
 | Loop 3.14.8 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved<br>- Had issues fixed with v3.14.9, please update | Classic, DASH, Omnipod 5 |
 | Loop 3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
 | Loop 3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |

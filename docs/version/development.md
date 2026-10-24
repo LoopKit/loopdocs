@@ -42,7 +42,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.9`](releases.md#v3149-highlights){: target="_blank" }.
+This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.11`](releases.md#v3149-highlights){: target="_blank" }.
 
 The `dev` branch is subject to frequent updates. Follow along in zulipchat for information about those updates.
 
@@ -80,11 +80,11 @@ The table below lists active branches.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| `main` | 3.14.9 | 05 Oct 2026 | [released code](releases.md#v3149-highlights){: target="_blank" } |
-| `dev` | 3.14.10 | subject to rapid change | [Status for `dev` Branch](#status-for-dev-branch) |
+| `main` | 3.14.11 | 24 Oct 2026 | [released code](releases.md#v31411-highlights){: target="_blank" } |
+| `dev` | 3.14.11 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
-| `feat/all-managers` | 3.14.10 | 11 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ e157a86` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `feat/tandem-closed-beta` | 3.14.9 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply |
+| `feat/all-managers` | 3.14.10 | 22 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ eadb9fe` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `feat/tandem-closed-beta` | 3.14.10 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply |
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -117,48 +117,12 @@ Please see [`Loop` Version Numbering](releases.md#loop-version-numbering) for th
 
 ### Status for `dev` Branch
 
-This section provides an overview of changes since the last release, but may lag the current state of the `dev` branch.
+This section provides an overview of changes since the last release, if any, but may lag the current state of the `dev` branch.
 
-#### Summary of updates to `dev`
+**WARNING**
 
-| Date | # of commits | Summary |
-|:--|:-:|:--|
-| 11 Oct 2026 | 2 | Increment version number to v3.14.10 |
-| 12 Oct 2026 | 1 | Update support files for automated testing with CircleCI |
-| 12 Oct 2026 | 1 | Update OmnipodKit to bring in 3 fixes:<br>1. Deactivate Fix: Shorten time from 4 to less than 1 minute before  offering to Discard Pod in case of signal loss and update messages<br>2. Trio Eros Fix: Enable clean deletion of pump manager with Eros Pods<br>3. Alert Fix: automatic retry to clear Pod Beeping alerts if initial acknowledgement to pod was missed |
-| 14 Oct 2026 | 1 | Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see [Update to `eager-connect` for iPhone 16/17e Plus Atlas](#update-to-eager-connect-for-iphone-1617e-plus-atlas)
-| 15 Oct 2026 | 1 | update LoopKit: share the Core Data model used by next-dev<br>- maintains next-dev information if user transitions to and from dev branch |
-
-
-Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
-
-#### Update to `eager-connect` for iPhone 16/17e Plus Atlas
-
-This fix should reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas DASH Pods.
-
-##### Overview
-
-Modify the *eager-connect* method for Bluetooth communication with Pods:
-
-* This modification affects the handling of iPhone 16/17e with Atlas Pods when the app is in the background or the phone locked; other iPhone/Pod combinations are not affected
-    * Before this change, the program manager was essentially keeping the 16/17e plus Atlas Pod Bluetooth in a *keep-connected* mode
-    * After this change, the program manager allows the Bluetooth connection to close once messages are completed just like it does for other iPhone / Pod combinations
-
-##### Background
-
-The Bluetooth connection method for Pods has undergone several revisions driven by both the increased incidence of 203 Faults for Atlas DASH Pods and the very slow connection for iPhone 16/17e with Atlas Pods.
-
-Loop Release v3.14.7 used the first modification from *keep-connected* to *ble-heartbeat* and was associated with a reduction in 203 Faults but did not provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods.
-
-Loop Release v3.14.8 and v3.14.9 used the second modification of *eager-connect* which did provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods, however, these implementations essentially kept the 16/17e plus Atlas combination always connected to Bluetooth, which we believe makes 203 faults more common.
-
-* We got several reports of the return of 203 Faults for users who updated from v3.14.7 to v3.14.8 or v3.14.9 for users of iPhone 16/17e with Atlas Pods
-* Using those Loop Reports, the modification to the OmnipodKit pump manager (see link below) was proposed and tested
-
-This update should provide the improvements for all iPhones and all Pod Types.
-
-This fix to OmnipodKit came into the pump manager with [OmnipodKit PR 190 (to `dev`)](https://github.com/loopandlearn/OmnipodKit/pull/190). It was also backported to `next-dev`.
-
+* **Coming soon**: the `next-dev` branch will be merged into the `dev` branch
+* If you don't want to test `next-dev` yet, be sure to switch to the `main` branch
 
 - - -
 
@@ -359,6 +323,62 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 - - -
 
 ## Older updates
+
+### Detailed updates from v3.14.9 to v3.14.11
+
+These updates were made in-place to the `dev` branch so there is not a single PR to be referenced.
+
+#### Summary of updates while preparing for v3.14.11
+
+| Date | # of commits | Summary |
+|:--|:-:|:--|
+| 11 Oct 2026 | 2 | Increment version number to v3.14.10 |
+| 12 Oct 2026 | 1 | Update support files for automated testing with CircleCI |
+| 12 Oct 2026 | 1 | Update OmnipodKit to bring in 3 fixes:<br>1. Deactivate Fix: Shorten time from 4 to less than 1 minute before  offering to Discard Pod in case of signal loss and update messages<br>2. Trio Eros Fix: Enable clean deletion of pump manager with Eros Pods<br>3. Alert Fix: automatic retry to clear Pod Beeping alerts if initial acknowledgement to pod was missed |
+| 14 Oct 2026 | 1 | Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see [Update to `eager-connect` for iPhone 16/17e Plus Atlas](#update-to-eager-connect-for-iphone-1617e-plus-atlas)
+| 15 Oct 2026 | 1 | update LoopKit: share the Core Data model used by next-dev<br>- maintains next-dev information if user transitions to and from dev branch |
+| 17 Oct 2026 | 1 | Update LoopSupport: send analytics to ingest.loopkit.org<br>maintain our own storage prior to using Amplitude for analysis |
+| 21 Oct 2026 | 7 | Update EversenseKit, Loop, LoopKit, LoopOnboarding, LoopSupport, OmnipodKit<br>minimum deployment is iOS 17.6<br>implement Report a Problem method<br>update Pod Keep Alive language for OmnipodKit<br>fix certification issue for Eversense |
+| 22 Oct 2026 | 4 | Enable user to view the Diagnostic Report before sharing it<br>update translations<br>Bump version to 3.14.11 in preparation for release<br>modify translation flags |
+
+At this point, all commits were made to the `release/v3.14.11 branch`. This was merged into `main` for the release and then `main` will be merged back to `dev`.
+
+| Date | # of commits | Summary |
+|:--|:-:|:--|
+| 22 Oct 2026 | 2 | Bump version to 3.14.11 in preparation for release<br>modify translation flags |
+| 23 Oct 2026 | 1 | Update README |
+
+
+Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
+
+#### Update to `eager-connect` for iPhone 16/17e Plus Atlas
+
+This fix should reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas DASH Pods.
+
+##### Overview
+
+Modify the *eager-connect* method for Bluetooth communication with Pods:
+
+* This modification affects the handling of iPhone 16/17e with Atlas Pods when the app is in the background or the phone locked; other iPhone/Pod combinations are not affected
+    * Before this change, the program manager was essentially keeping the 16/17e plus Atlas Pod Bluetooth in a *keep-connected* mode
+    * After this change, the program manager allows the Bluetooth connection to close once messages are completed just like it does for other iPhone / Pod combinations
+
+##### Background
+
+The Bluetooth connection method for Pods has undergone several revisions driven by both the increased incidence of 203 Faults for Atlas DASH Pods and the very slow connection for iPhone 16/17e with Atlas Pods.
+
+Loop Release v3.14.7 used the first modification from *keep-connected* to *ble-heartbeat* and was associated with a reduction in 203 Faults but did not provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods.
+
+Loop Release v3.14.8 and v3.14.9 used the second modification of *eager-connect* which did provide relief for slow Bluetooth connection for users of iPhone 16/17e with Atlas Pods, however, these implementations essentially kept the 16/17e plus Atlas combination always connected to Bluetooth, which we believe makes 203 faults more common.
+
+* We got several reports of the return of 203 Faults for users who updated from v3.14.7 to v3.14.8 or v3.14.9 for users of iPhone 16/17e with Atlas Pods
+* Using those Loop Reports, the modification to the OmnipodKit pump manager (see link below) was proposed and tested
+
+This update should provide the improvements for all iPhones and all Pod Types.
+
+This fix to OmnipodKit came into the pump manager with [OmnipodKit PR 190 (to `dev`)](https://github.com/loopandlearn/OmnipodKit/pull/190). It was also backported to `next-dev`.
+
+
 
 ### Updates from v3.14.0 to v3.14.2
 

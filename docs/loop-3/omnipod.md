@@ -436,12 +436,12 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-!!! success "Update to v3.14.9 or later"
-    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. All BLE Pods default to using the When Open mode.
+!!! success "Update to v3.14.11 or later"
+    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.11 as soon as possible. All BLE Pods default to using the When Open mode.
     
     Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.
 
-    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".
+    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.11 and should leave the Pod Keep Alive setting at the default value of "When Open".
 
 
 ### Pod Keep Alive for Older Versions
