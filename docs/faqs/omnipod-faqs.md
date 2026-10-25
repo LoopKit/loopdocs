@@ -51,26 +51,21 @@ OmnipodKit provides support for Classic, DASH and Omnipod 5 Pods
 
 For details about the different Bluetooth connection methods nicknamed *keep-connected*, *ble-heartbeat* and *eager-connect*, please read [OS-AID Omnipod History](#os-aid-omnipod-history). 
 
-The table below references which *Loop* version is associated with which Bluetooth connection method in OmnpodKit. The released *Loop* version, 3.14.11, is recommended for the general user. Please update as soon as possible. The development branches are suitable only for expert testers.
+The table below references which *Loop* version is associated with which Bluetooth connection method in OmnpodKit. The released *Loop* version, v3.14.11, is recommended for the general user. Please update as soon as possible. The development branches are suitable only for expert testers.
 
-| Loop Version | Branch | OmnipodKit BLE Method<br>- known issues | Supports |
+| Loop Version | Branch | OmnipodKit BLE Method<br>- status | Supports |
 |:--|:--|:--|:--|
-| Loop 3.14.11 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
-| Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
-| Loop 3.14.9 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased, very slow to offer to Discard pod<br>- these issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
-| Loop 3.14.8 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved<br>- some issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
-| Loop 3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
-| Loop 3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
+| v3.14.11 | `main`<br>- current release | *eager-connect*<br>- multiple fixes<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
+| v3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
+| v3.14.9<br>v3.14.8 | - previous releases| *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased compared to 3.14.7<br>- very slow to offer to Discard pod<br>- issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
+| v3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
+| v3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
 
-Versions before Loop 3.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the *Loop* app. The Bluetooth communications used the *keep-connected* method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }. 
+Versions before Loop v3.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the *Loop* app. The Bluetooth communications used the *keep-connected* method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }. 
 
-#### Map of OmnipodKit SHA
+#### OmnipodKit Branches
 
-Users do not need this but developers may find this helpful in selecting which version of OmnipodKit to use for their release and development branches.
-
-**OmnipodKit Branches**
-
-* be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
+Users do not need this but developers may find this helpful.
 
 **NOTE: the OmnipodKit `main` branch is not being updated at this time; OS-AID (other than Loop next-dev) should point to the OmnipodKit `dev` branch.**
 
@@ -91,6 +86,8 @@ Recent changes to OmnipodKit `dev`. Please do not use OmnipodKit `main` branch.
     * Fixed a bug where an acknowledgement for an alert got lost, this fix means your Pod won't keep beeping from an alert
     * Fixed a bug where it took a long time to offer to Discard a Pod the phone cannot reach, now it is 20 sec for most and less than a minute for iPhone 16/17e with Atlas Pods
     * Pod Keep Alive was simplified and language updated
+
+* be sure to check [GitHub](https://github.com/loopandlearn/OmnipodKit/branches)
 
 ## Is Omnipod 5 available?
 
