@@ -5471,10 +5471,19 @@
 <hr />
 <h2 id="pod-keep-alive-feature">Pod Keep Alive Feature<a class="headerlink" href="#pod-keep-alive-feature" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition success">
-<p class="admonition-title">Update to v3.14.9 or later</p>
-<p>The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. All <abbr title="Bluetooth low energy, used for communication by phones, CGM and some pumps">BLE</abbr> Pods default to using the When Open mode.</p>
-<p>Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.</p>
-<p>For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".</p>
+<p class="admonition-title">Update to v3.14.11 or newer</p>
+<p>With v3.14.11, the developers believe the background Pod Keep Alive feature should be disabled for any combination of iPhone and type of Pod.</p>
+<ul>
+<li>When the app is open, the Pod is kept alive by issuing a getStatus command from the phone to the Pod before the Pod would naturally disconnect from the iPhone<ul>
+<li>Keeping the Bluetooth connected while the app is open makes any insulin or other Pod commands significantly faster</li>
+</ul>
+</li>
+<li>When the app is in the background, or the phone locked, the updated <em>eager-connect</em> method is able to connect fast enough that the closed loop system works nominally, even for the combination of iPhone 16/17e plus Atlas (InPlay) DASH Pods<ul>
+<li>Allowing the Bluetooth to disconnect after a message exchange, while in the background, reduces the load on the Pod</li>
+</ul>
+</li>
+<li>The user still has the option of modifying the behavior of Pod Keep Alive while in background mode, but they are encouraged to leave this disabled</li>
+</ul>
 </div>
 <h3 id="pod-keep-alive-for-older-versions">Pod Keep Alive for Older Versions<a class="headerlink" href="#pod-keep-alive-for-older-versions" title="Anchor link to this Header on this Page">&para;</a></h3>
 <div class="admonition abstract">
