@@ -15,7 +15,7 @@ beautifulsoup4==4.14.3
     #   mkdocs-unused-files
 bracex==2.6
     # via wcmatch
-certifi==2026.1.4
+certifi==2026.10.19
     # via requests
 charset-normalizer==3.4.4
     # via requests
