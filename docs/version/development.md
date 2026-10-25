@@ -183,7 +183,7 @@ If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them
         * In v3.14.8, the When Open would keep working while the phone was locked when the app woke up from the Eversense Bluetooth signal, even those the app was in the background
         * This was fixed in v3.14.11 and another improvement to *eager-connect* was added that speeds up reconnection to Pods
     * The Eversense fixes are important for any pump type
-        * There were several issues in v3.14.9 that keep the Eversense CGM working through a variety of responses that previously caused glucose data to stop being provided
+        * There were several issues in v3.14.8 that kept the Eversense CGM working through a variety of responses that previously caused glucose data to stop being provided
         * Eversense users need to update to v3.14.11 to enable newer Transmitters to connect properly
 
 !!! tip "Update to v3.14.11 for iPhone 16/17e with Atlas DASH Pods"

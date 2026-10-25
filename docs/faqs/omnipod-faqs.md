@@ -57,7 +57,7 @@ The table below references which *Loop* version is associated with which Bluetoo
 |:--|:--|:--|:--|
 | Loop 3.14.11 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
 | Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
-| Loop 3.14.9 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased, very slow to offer to Discard pod<br>- these issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
+| Loop 3.14.11 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased, very slow to offer to Discard pod<br>- these issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
 | Loop 3.14.8 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved<br>- some issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
 | Loop 3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
 | Loop 3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
@@ -114,7 +114,7 @@ That's a personal decision and may be affected by your ability to change prescri
 
 #### Build the correct version of code
 
-To get access to Omnipod 5, build the released code, from the `main` branch, and ensure your new code indicates version 3.14.9 (or newer).
+To get access to Omnipod 5, build the released code, from the `main` branch. We recommend your build be version 3.14.11 (or newer).
 
 #### Perform a one-time step to support Omnipod 5
 
