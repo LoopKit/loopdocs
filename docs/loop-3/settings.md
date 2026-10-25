@@ -1,6 +1,6 @@
 ## Loop Settings Screen
 
-The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.4 and later versions.
+The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.14.11 and later versions.
 
 ![settings screen for loop 3](img/settings.svg){width="700"}
 {align="center"}
