@@ -48,7 +48,7 @@ You must build a special branch to test some pumps. Please only test if you are 
 
 ### Omnipod 5
 
-!!! success "Omnipod 5 Pods are supported with released code v3.14.7; v3.14.11 or newer strongly recommended"
+!!! success "Omnipod 5 Pods are supported; v3.14.11 or newer strongly recommended"
 
 ### Omnipod DASH
 

@@ -47,17 +47,17 @@ OmnipodKit provides support for Classic, DASH and Omnipod 5 Pods
         * For all other phones, the *eager-connection* is ready to communicate with the pod in a few seconds, so the user can still notice a slight connection delay compared to the *keep-connected* method, but faster than with *ble-heartbeat* method
 
 
-### Table of OmnipodKit Versions
+## Table of OmnipodKit Versions
 
 For details about the different Bluetooth connection methods nicknamed *keep-connected*, *ble-heartbeat* and *eager-connect*, please read [OS-AID Omnipod History](#os-aid-omnipod-history). 
 
-The table below references which *Loop* version is associated with which Bluetooth connection method in OmnpodKit. The released *Loop* version, 3.14.11, is recommended for the general user. Please update as soon as possible. This release is suitable for all users. The development branches are suitable only for expert testers.
+The table below references which *Loop* version is associated with which Bluetooth connection method in OmnpodKit. The released *Loop* version, 3.14.11, is recommended for the general user. Please update as soon as possible. The development branches are suitable only for expert testers.
 
 | Loop Version | Branch | OmnipodKit BLE Method<br>- known issues | Supports |
 |:--|:--|:--|:--|
 | Loop 3.14.11 | `main`<br>- current release | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
 | Loop 3.15.2 | `next-dev` | *eager-connect*<br>- iPhone 16/17e connect delay improved & frequency of 203 reduced | Classic, DASH, Omnipod 5 |
-| Loop 3.14.11 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased, very slow to offer to Discard pod<br>- these issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
+| Loop 3.14.9 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved but frequency of 203 increased, very slow to offer to Discard pod<br>- these issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
 | Loop 3.14.8 | - previous release| *eager-connect*<br>- iPhone 16/17e connect delay improved<br>- some issues fixed with v3.14.11, please update | Classic, DASH, Omnipod 5 |
 | Loop 3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
 | Loop 3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |

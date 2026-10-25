@@ -65,7 +65,7 @@ These phones are compatible with *iOS* 17, 18, 26 and 27. The latest release of 
 
 ### Not Supported
 
-**The phone listed below are no longer supported.**
+**The phone models listed below are no longer supported.**
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants
