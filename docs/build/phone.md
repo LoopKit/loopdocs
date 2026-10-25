@@ -33,7 +33,7 @@ You need a minimum version of the mobile operating software, called the *iOS*, t
 
 All the devices listed below are currently compatible with Loop. They are separated by the available *iOS* for the phone. 
 
-These phones require *iOS* 27. Recommend you use `Loop version 3.14.9` or newer.
+These phones require *iOS* 27. Recommend you use `Loop version 3.14.11` or newer.
 
 - iPhone 18, all variants
     * Note we only assume this is true - there have been no complaints
@@ -41,14 +41,14 @@ These phones require *iOS* 27. Recommend you use `Loop version 3.14.9` or newer.
 These phones require *iOS* 26 and support *iOS* 27
 
 - iPhone 17, all variants
-    - iPhone 17e works with v3.14.9 or newer
+    - iPhone 17e works with v3.14.11 or newer
     - Older versions of the Loop app did not work as well with some DASH pods with iPhone 17e
     * See [Keep Alive: Atlas or InPlay DASH pod](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" } warning
 
-These phones require *iOS* 18 and are compatible with *iOS* 26 and 27. Recommend you use `Loop version 3.14.9` or newer.
+These phones require *iOS* 18 and are compatible with *iOS* 26 and 27. Recommend you use `Loop version 3.14.11` or newer.
 
 - iPhone 16, all variants
-    - iPhone 16 models work with v3.14.9 or newer
+    - iPhone 16 models work with v3.14.11 or newer
     - Older versions of the Loop app did not work well with some DASH pods with iPhone 16
     * See [Keep Alive: Atlas or InPlay DASH pod](../faqs/omnipod-faqs.md#keep-alive-atlas-or-inplay-dash-pods){: target="_blank" } warning
 
@@ -65,7 +65,7 @@ These phones are compatible with *iOS* 17, 18, 26 and 27. The latest release of 
 
 ### Not Supported
 
-**The phone listed below are no longer supported.**
+**The phone models listed below are no longer supported.**
 
 - iPhone X, without an extra letter
 - iPhone 8, all variants

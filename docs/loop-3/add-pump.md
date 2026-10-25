@@ -12,7 +12,7 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 
 Loopers can choose from multiple pumps and a simulator:
 
-* [Omnipod](#omnipod-setup) (v3.14.9 or newer, v3.14.2 through .7 displayed "All Omnipod Types")
+* [Omnipod](#omnipod-setup) (v3.14.11 or newer, v3.14.2 through .7 displayed "All Omnipod Types")
     * Omnipod Classic (Eros)
     * Omnipod DASH
     * Omnipod 5 (v3.14.7 or newer)

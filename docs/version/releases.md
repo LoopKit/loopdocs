@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.9 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.11 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,38 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.11
+
+[*Loop* v3.14.11](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.11) was released on 24 October 2026.
+
+#### v3.14.11 Highlights
+
+**Loop Features**
+
+The Settings Support section was revised with a new [Report a Problem](../loop-3/settings.md#report-a-problem){: target="_blank"} row that takes you to a unified screen. This includes a new feature to report your problem directly to the developers, in addition to providing access to the Diagnostic (Loop) Report, link to Open a GitHub Issue or Export Critical Event Log.
+
+**Omnipod Users**
+
+* Fixed a bug where iPhone 16/17e with Atlas Pods were kept connected in the backgroud, this fix reduces frequency for 203 for that combination
+* Fixed a bug where an acknowledgement for an alert got lost, this fix means your Pod won't keep beeping from an alert
+* Fixed a bug where it took a long time to offer to Discard a Pod the phone cannot reach, now it is 20 sec for most and less than a minute for iPhone 16/17e with Atlas Pods
+* Pod Keep Alive was simplified and language updated
+
+**Eversense**
+
+* New Eversense users were not able to connect until an update was added to the Transmitter pairing process
+
+**Translations**
+
+* Bring in new translations from lokalise
+
+**Support Features**
+
+* Update automated testing features for Xcode 27
+
 
 - - -
 

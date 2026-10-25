@@ -436,13 +436,14 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
 ## Pod Keep Alive Feature
 
-!!! success "Update to v3.14.9 or later"
-    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. All BLE Pods default to using the When Open mode.
-    
-    Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.
+!!! success "Update to v3.14.11 or newer"
+    With v3.14.11, the developers believe the background Pod Keep Alive feature should be disabled for any combination of iPhone and type of Pod.
 
-    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".
-
+    * When the app is open, the Pod is kept alive by issuing a getStatus command from the phone to the Pod before the Pod would naturally disconnect from the iPhone
+        * Keeping the Bluetooth connected while the app is open makes any insulin or other Pod commands significantly faster
+    * When the app is in the background, or the phone locked, the updated *eager-connect* method is able to connect fast enough that the closed loop system works nominally, even for the combination of iPhone 16/17e plus Atlas (InPlay) DASH Pods
+        * Allowing the Bluetooth to disconnect after a message exchange, while in the background, reduces the load on the Pod
+    * The user still has the option of modifying the behavior of Pod Keep Alive while in background mode, but they are encouraged to leave this disabled
 
 ### Pod Keep Alive for Older Versions
 

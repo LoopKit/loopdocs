@@ -1,8 +1,8 @@
 ## Loop Settings Screen
 
-The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.4 and later versions.
+The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.14.11 and later versions.
 
-![settings screen for loop 3](img/settings.svg){width="250"}
+![settings screen for loop 3](img/settings.svg){width="700"}
 {align="center"}
 
 Each section and row on the Settings screen is described below.
@@ -178,40 +178,54 @@ Please refer to the [Optional: Service](services.md) page.
 
 ## Support
 
-The Support section enables the user to provide output data ([Loop Report](#issue-report) and/or [Critical Logs](#export-critical-event-logs)) about the app. This information can be very helpful to folks trying to assist with problem reports.
+### Report a Problem
 
-The graphic below is similar to what you see when you scroll down to the Support section of the *Loop* Settings screen.
+The Support section provides access to several methods to Report a Problem. This provides access for viewing or sharing a Loop Report or Critical Event Log or opening a GitHub Issue (Submit Bug Report). If your build is v3.14.9 or older, see [Report Problems for v3.14.9 or older](#report-problems-for-v3149-or-older)
 
-![settings support screen](img/setting-support.svg){width="250"}
+![settings support screen](../loop-4/img/setting-report-problem.svg){width="500"}
 {align="center"}
 
-### `Issue Report`
+* If you are an expert tester, you will find [Send to Loop Developers](#send-to-loop-developers) an incredibly helpful feature
+* If you are a novice to reporting problems, check with a mentor to see if your problem is something that is understood
+    * See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
+    * You can use [Share a Diagnostic Report](#share-a-diagnostic-report) or [Export Critical Event Logs](#export-critical-event-logs) and save them for yourself for later submission if a mentor suggests you need to do this
 
-Tap on the `Issue Report` row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to save the report.
 
-!!! note "Issue vs `Issue Report`"
-    Be aware:
-    
-    * Issue (on github) is used to report code problems
-    * `Issue Report` is an action in the *Loop* app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
+### Send to Loop Developers
 
-It's a good idea to use the `Issue Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+When you tap on the Send to Loop Developers row, you see a screen like that below. Explain why you are sending this report. Please include screenshots if they are relevant. You have a choice of submitting anomymously or including contact information.
 
-!!! tip "Pro Tip"
-    The *Loop* Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named *Loop* Reports.
+**PLEASE - do not use this form if you are having trouble building the app or configuring your settings.**
 
-    You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
+* See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
 
-### Submit Bug Report
 
-Tap on the `Submit Bug Report` row to bring up one of the two views shown in the graphic below.  The left view is if you do not have a github account (or the phone is not signed in to your account). The right view is if your github credentials are available.
+![settings support screen](../loop-4/img/setting-send-to-developers.svg){width="500"}
+{align="center"}
+
+### Share a Diagnostic Report
+
+The Diagnostic Report referred to here is the Loop Report that used to be offered on the older "Issue Report" row.
+
+When you tap on the Share a Diagnostic Report row, you see the important build details as shown in the screenshot below. Just viewing the report can answer questions about what version you are running, what customizations you use if any. Tap on the up-arrow on the upper right of the screen to share this report.
+
+![diagnostics report screen](../loop-4/img/view-diagnostic-report.png){width="400"}
+{align="center"}
+
+It's a good idea to use the `Share a Diagnostic Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+
+### Open a GitHub Issue
+
+Tap on the `Open a GitHub Issue` row to bring up one of the two views shown in the graphic below.  The left view is if you do not have a github account (or the phone is not signed in to your account). The right view is if your github credentials are available.
+
+> For versions 3.14.9 and earlier, this same feature was labeled Submit a Bug Report. Same button action, new name.
 
 In either case, the first action should be to add a term or phrase to the search box (red rectangle) to see if your issue has already been reported and to read the status if it has been reported.  Please refer to the [GitHub Issues](../troubleshooting/overview.md#github-issues) section for more information.
 
 ![settings support screen when submitting a bug report](img/setting-support-bug.svg){width="500"}
 {align="center"}
 
-### When Not to Submit a Bug Report
+#### When Not to Submit a Bug Report
 
 !!! warning "Not for Build or Settings Help"
     Submit Bug Report should be used when you believe there is an error in the code.
@@ -225,7 +239,7 @@ In either case, the first action should be to add a term or phrase to the search
 
 ### Export Critical Event Logs
 
-The last row under Support creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can save it and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.
+The last row creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can save it and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.
 
 !!! tip "Pro Tip"
     The Critical Logs zip file can be saved in the Files section on your iPhone. I have a folder on my phone Files named Critical Logs.
@@ -249,6 +263,61 @@ Each day (in user's local time) has the following files:
 The JSON file for each day are zipped into one file for that day and then the zip files are again zipped into a single file that you can save. The current day (up to the current time) is combined with the previous day's data.
 
 The time stamps within the JSON files use UTC.
+
+### Report Problems for v3.14.9 or older
+
+??? abstract "`Loop` v3.14.9 or earlier (click to open)"
+    The graphic below with the instructions in the following sections is similar to what you see when you scroll down to the Support section of the *Loop* Settings screen with versions up through v3.14.9.
+
+    ![settings support screen](img/setting-support.svg){width="250"}
+    {align="center"}
+
+    #### `Issue Report`
+
+    Tap on the `Issue Report` row, on the graphic above, to create a Loop Report text file with a lot of useful information for the mentors or developers if they need to assist you in solving a problem. This covers 84-hours (to enable a full pod history for users of Omnipod or Omnipod DASH). When you tap that row, you'll see a message that the file is loading.  That message never goes away but the rest of the page fills in fairly quickly. After that happens, use the up arrow to see various options to save the report.
+
+    !!! note "Issue vs `Issue Report`"
+        Be aware:
+        
+        * Issue (on github) is used to report code problems
+        * `Issue Report` is an action in the *Loop* app to provide information you may need when you ask for help: refer to [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help)
+
+    It's a good idea to use the `Issue Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+
+    !!! tip "Pro Tip"
+        The *Loop* Reports can be saved in the Files section on your iPhone. I have a folder on my phone Files named *Loop* Reports.
+
+        You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
+
+    #### Submit Bug Report
+
+    Tap on the `Submit Bug Report` row to bring up one of the two views shown in the graphic below.  The left view is if you do not have a github account (or the phone is not signed in to your account). The right view is if your github credentials are available.
+
+    In either case, the first action should be to add a term or phrase to the search box (red rectangle) to see if your issue has already been reported and to read the status if it has been reported.  Please refer to the [GitHub Issues](../troubleshooting/overview.md#github-issues) section for more information.
+
+    ![settings support screen when submitting a bug report](img/setting-support-bug.svg){width="500"}
+    {align="center"}
+
+    #### When Not to Submit a Bug Report
+
+    !!! warning "Not for Build or Settings Help"
+        Submit Bug Report should be used when you believe there is an error in the code.
+
+        * Use [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help) instead for these cases:
+            * Trouble building
+            * Trouble pairing a pod
+            * Trouble with red loops
+            * RileyLink is not working
+            * Trouble adjusting your settings
+
+    #### Export Critical Event Logs
+
+    The last row under Support creates a zip (compressed file) with detailed app information over a 7-day period. It is stored in a different format from the Loop Report and provides critical information to the developers when troubleshooting. Once the compressed file is created, you can save it and later share it with the developers if they request it.  You can always discard these if you resolve the problem on your own.
+
+    !!! tip "Pro Tip"
+        The Critical Logs zip file can be saved in the Files section on your iPhone. I have a folder on my phone Files named Critical Logs.
+
+        You can upload them to zulipchat from your phone (new feature) using the paperclip in the zulipchat app. (Don't see a paperclip - update your app.)
 
 ## TestFlight or App Profile
 
