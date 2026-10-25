@@ -179,21 +179,22 @@ If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them
     There were important fixes to Bluetooth connection timing in v3.14.11.
 
     * The release of v3.14.11 fixed an issue for iPhone 16/17e users of Atlas (InPlay) Pods and fixed an excessive delay before offering to discard a Pod that cannot be deactivated and improved fidelity of acknowledging alerts on Pods
-    * The combination of Eversense CGM (which wakes up the app every minute even while locked) and Omnipod Pods revealed an issue in v3.14.8 that is fixed in v3.14.9
+    * The combination of Eversense CGM (which wakes up the app every minute even while locked) and Omnipod Pods revealed an issue in v3.14.8 that is fixed in v3.14.11
         * In v3.14.8, the When Open would keep working while the phone was locked when the app woke up from the Eversense Bluetooth signal, even those the app was in the background
-        * This was fixed in v3.14.9 and another improvement to *eager-connect* was added that speeds up reconnection to Pods
+        * This was fixed in v3.14.11 and another improvement to *eager-connect* was added that speeds up reconnection to Pods
     * The Eversense fixes are important for any pump type
         * There were several issues in v3.14.9 that keep the Eversense CGM working through a variety of responses that previously caused glucose data to stop being provided
+        * Eversense users need to update to v3.14.11 to enable newer Transmitters to connect properly
 
-!!! tip "Update to v3.14.9 for iPhone 16/17e with Atlas DASH Pods"
+!!! tip "Update to v3.14.11 for iPhone 16/17e with Atlas DASH Pods"
     If your phone model is a 16 or 17e and you use Atlas DASH Pods:
 
-    * Update to v3.14.9 or later for faster connection speed
+    * Update to v3.14.11 or later for faster connection speed
         * Note that while the Pod Keep Alive selection can still be modified, you should be able to leave it at the default value of When Open
         * This works for all iPhone and BLE Pod models
 
 
-The Pod Keep Alive code was completely revamped and cleaned up in v3.14.7 through v3.14.9.  See [OmnipodKit Information](#omnipodkit-information) for more details.
+The Pod Keep Alive code was completely revamped and cleaned up in v3.14.7 through v3.14.11.  See [OmnipodKit Information](#omnipodkit-information) for more details.
 
 - - -
 
@@ -213,10 +214,10 @@ Eversense support was added to the released code, `main`, v3.14.2 or later.
 
 For Dana support, you must build a new feature branch, `feat/all-managers`.
 
-!!! important "Build v3.14.9"
+!!! important "Build v3.14.11"
     There were some important fixes for connectivity in the latest feat/all-managers.
 
-    * If your build does not say v3.14.9, please rebuild
+    * If your build does not say v3.14.11, please rebuild
     * The earlier v3.14.7 version of feat/all-managers did not show the bolus progress display - that is fixed now
 
 * Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
@@ -297,15 +298,15 @@ When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.1
 * Some new labels
 * Some reworked sub-menus with added information or features
 * Omnipod 5 Support provided along with Classic and DASH support
-    * Released version v3.14.7 or newer (please build the latest v3.14.9 for important updates)
+    * Released version v3.14.7 or newer (please build the latest v3.14.11 for important updates)
     * Starting with development versions v3.14.3
 
-!!! warning "Update to v3.14.9 or later"
-    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.9 as soon as possible. 
+!!! warning "Update to v3.14.11 or later"
+    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.11 as soon as possible. 
     
     Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.
 
-    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.9 and should leave the Pod Keep Alive setting at the default value of "When Open".
+    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.11 and should leave the Pod Keep Alive setting at the default value of "When Open".
 
 One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the `main` (v3.14.2) branch, only Eros and DASH are supported. With the `dev` (3.14.3 or newer) or `next-dev` ( 3.15.0 and newer) branches, Eros, DASH and Omnipod 5 are all supported.
 
