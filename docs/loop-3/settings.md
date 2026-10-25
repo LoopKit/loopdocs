@@ -185,13 +185,19 @@ The Support section provides access to several methods to Report a Problem. This
 ![settings support screen](../loop-4/img/setting-report-problem.svg){width="500"}
 {align="center"}
 
-Before you choose to Send to Developers or Open a GitHub Issue, you probably should check with mentors to see if you should. You can always send the Diagnostic Report (Loop Report) or Critical Event Log to yourself, and share it later.
+* If you are an expert tester, you will find [Send to Loop Developers](#send-to-loop-developers) an incredibly helpful feature
+* If you are a novice to reporting problems, check with a mentor to see if your problem is something that is understood
+    * See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
+    * You can use [Share a Diagnostic Report](#share-a-diagnostic-report) or [Export Critical Event Logs](#export-critical-event-logs) and save them for yourself for later submission if a mentor suggests you need to do this
+
 
 ### Send to Loop Developers
 
-When you tap on the Send to Loop Developers row, you see a screen like that below. Explain why you are sending this report. Please include screenshots if they are relevant. You have a choice of submitting anonomously or including contact information.
+When you tap on the Send to Loop Developers row, you see a screen like that below. Explain why you are sending this report. Please include screenshots if they are relevant. You have a choice of submitting anomymously or including contact information.
 
-**PLEASE - do not use this form if you are having trouble building the app or configuring your settings.** See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}.
+**PLEASE - do not use this form if you are having trouble building the app or configuring your settings.**
+
+* See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
 
 
 ![settings support screen](../loop-4/img/setting-send-to-developers.svg){width="500"}
@@ -206,11 +212,13 @@ When you tap on the Share a Diagnostic Report row, you see the important build d
 ![diagnostics report screen](../loop-4/img/view-diagnostic-report.png){width="400"}
 {align="center"}
 
-It's a good idea to use the `Diagnostic Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
+It's a good idea to use the `Share a Diagnostic Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.
 
 ### Open a GitHub Issue
 
 Tap on the `Open a GitHub Issue` row to bring up one of the two views shown in the graphic below.  The left view is if you do not have a github account (or the phone is not signed in to your account). The right view is if your github credentials are available.
+
+> For versions 3.14.9 and earlier, this same feature was labeled Submit a Bug Report. Same button action, new name.
 
 In either case, the first action should be to add a term or phrase to the search box (red rectangle) to see if your issue has already been reported and to read the status if it has been reported.  Please refer to the [GitHub Issues](../troubleshooting/overview.md#github-issues) section for more information.
 

@@ -43,15 +43,14 @@ The Settings Support section was revised with a new [Report a Problem](../loop-3
 
 * Going from the always connected Bluetooth method to the *ble-heartbeat* Bluetooth method (v3.14.7) and then several versions of the *eager-connect* Bluetooth method (starting in v3.14.8) was a big change in the way Pods connect to the iPhone
 * Each release addressed issues that were revealed when more people used the code, so we can't guarantee we fixed everything, but this is another improvement
-* Fix: if an alert acknowlegement is not received by the Pod, make sure it is sent again
-    * A missed acknowlegement used to mean the Pod kept beeping - this no longer happens with v3.14.11
-* Fix: very long time for app to give up when Pod cannot be contacted because of signal loss or loss of the Pod
+* Fix: if an alert acknowledgement is not received by the Pod, make sure it is sent again
+    * A missed acknowledgement used to mean the Pod kept beeping - this no longer happens with v3.14.11
+* Fix: shorter wait before offering to Discard Pod after signal loss or loss of the Pod
     * This was present in v3.14.8 and v3.14.9
     * In the new release, v3.14.11, the time is typically less than 20 seconds, although with an iPhone 16/17e plus Atlas Pod, it can be closer to a minute
 * Fix: increase in frequency of 203 Faults for users of iPhone 16/17e with Atlas DASH pods
     * This increase in frequency of 203 faults for those users was reported for v3.14.8 and v3.14.9 after an improvement in v3.14.7
     * With v3.14.11, those Pods are no longer kept always connected in the background, which should resolve the increased 203 incidence
-
 
 **Eversense**
 

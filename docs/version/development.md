@@ -42,7 +42,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.11`](releases.md#v3149-highlights){: target="_blank" }.
+This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.11`](releases.md#v31411-highlights){: target="_blank" }.
 
 The `dev` branch is subject to frequent updates. Follow along in zulipchat for information about those updates.
 
@@ -175,13 +175,13 @@ If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them
 
 ### Status for Pod Keep Alive Support
 
-!!! important "Omnipod Users: Update to v3.14.9"
-    There were important fixes to Bluetooth connection timing in v3.14.9.
+!!! important "Omnipod Users: Update to v3.14.11"
+    There were important fixes to Bluetooth connection timing in v3.14.11.
 
-    * The release of v3.14.9 fixed an issue with When Open for v3.14.8
+    * The release of v3.14.11 fixed an issue for iPhone 16/17e users of Atlas (InPlay) Pods and fixed an excessive delay before offering to discard a Pod that cannot be deactivated and improved fidelity of acknowledging alerts on Pods
     * The combination of Eversense CGM (which wakes up the app every minute even while locked) and Omnipod Pods revealed an issue in v3.14.8 that is fixed in v3.14.9
         * In v3.14.8, the When Open would keep working while the phone was locked when the app woke up from the Eversense Bluetooth signal, even those the app was in the background
-        * This was fixed in v3.14.9 and another improvement to *eager-coneect* was added that speeds up reconnection to Pods
+        * This was fixed in v3.14.9 and another improvement to *eager-connect* was added that speeds up reconnection to Pods
     * The Eversense fixes are important for any pump type
         * There were several issues in v3.14.9 that keep the Eversense CGM working through a variety of responses that previously caused glucose data to stop being provided
 
@@ -335,19 +335,19 @@ These updates were made in-place to the `dev` branch so there is not a single PR
 | 11 Oct 2026 | 2 | Increment version number to v3.14.10 |
 | 12 Oct 2026 | 1 | Update support files for automated testing with CircleCI |
 | 12 Oct 2026 | 1 | Update OmnipodKit to bring in 3 fixes:<br>1. Deactivate Fix: Shorten time from 4 to less than 1 minute before  offering to Discard Pod in case of signal loss and update messages<br>2. Trio Eros Fix: Enable clean deletion of pump manager with Eros Pods<br>3. Alert Fix: automatic retry to clear Pod Beeping alerts if initial acknowledgement to pod was missed |
-| 14 Oct 2026 | 1 | Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see [Update to `eager-connect` for iPhone 16/17e Plus Atlas](#update-to-eager-connect-for-iphone-1617e-plus-atlas)
+| 14 Oct 2026 | 1 | Update OmnipodKit: <br>reduce the likelihood of 203 Faults for the combination of iPhone 16/17e Plus Atlas<br>see [Update to `eager-connect` for iPhone 16/17e Plus Atlas](#update-to-eager-connect-for-iphone-1617e-plus-atlas) |
 | 15 Oct 2026 | 1 | update LoopKit: share the Core Data model used by next-dev<br>- maintains next-dev information if user transitions to and from dev branch |
 | 17 Oct 2026 | 1 | Update LoopSupport: send analytics to ingest.loopkit.org<br>maintain our own storage prior to using Amplitude for analysis |
 | 21 Oct 2026 | 7 | Update EversenseKit, Loop, LoopKit, LoopOnboarding, LoopSupport, OmnipodKit<br>minimum deployment is iOS 17.6<br>implement Report a Problem method<br>update Pod Keep Alive language for OmnipodKit<br>fix certification issue for Eversense |
 | 22 Oct 2026 | 4 | Enable user to view the Diagnostic Report before sharing it<br>update translations<br>Bump version to 3.14.11 in preparation for release<br>modify translation flags |
 
-At this point, all commits were made to the `release/v3.14.11 branch`. This was merged into `main` for the release and then `main` will be merged back to `dev`.
+At this point, all commits were made to the `release/v3.14.11` branch. This was merged into `main` for the release.
 
 | Date | # of commits | Summary |
 |:--|:-:|:--|
 | 22 Oct 2026 | 2 | Bump version to 3.14.11 in preparation for release<br>modify translation flags |
 | 23 Oct 2026 | 1 | Update README |
-
+| 24 Oct 2026 | 1 | Restore the Loop Report name as the subject when sharing the Diagnostic Report via email |
 
 Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
 
