@@ -442,6 +442,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
     * When the app is open, the Pod is kept alive by issuing a getStatus command from the phone to the Pod before the Pod would naturally disconnect from the iPhone
         * Keeping the Bluetooth connected while the app is open makes any insulin or other Pod commands significantly faster
     * When the app is in the background, or the phone locked, the updated *eager-connect* method is able to connect fast enough that the closed loop system works nominally, even for the combination of iPhone 16/17e plus Atlas (InPlay) DASH Pods
+        * Allowing the Bluetooth to disconnect after a message exchange, while in the background, reduces the load on the Pod
     * The user still has the option of modifying the behavior of Pod Keep Alive while in background mode, but they are encouraged to leave this disabled
 
 ### Pod Keep Alive for Older Versions
