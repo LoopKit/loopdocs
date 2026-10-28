@@ -3373,10 +3373,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-does-stable-mean" class="md-nav__link">
+  <a href="#switch-to-omnipodkit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What does Stable mean?
+        Switch to OmnipodKit
       
     </span>
   </a>
@@ -4758,10 +4758,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-does-stable-mean" class="md-nav__link">
+  <a href="#switch-to-omnipodkit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What does Stable mean?
+        Switch to OmnipodKit
       
     </span>
   </a>
@@ -5120,20 +5120,9 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs</li>
 <li>In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs</li>
 </ul>
-<h3 id="what-does-stable-mean">What does <code>Stable</code> mean?<a class="headerlink" href="#what-does-stable-mean" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The line starting with <code>Stable</code> was previously used to indicate when code changes were sufficient to require a different customization. With the release of 3.4.x, all customizations show <code>Stable: Yes</code>. </p>
-<ul>
-<li>A few have an additional notation of when they were last changed</li>
-<li>All customizations are currently identical for <code>main</code> and <code>dev</code></li>
-<li>Instructions for older versions of the customization are removed from this page.</li>
-</ul>
-<details class="tip">
-<summary>More Information about <code>Stable</code> (Click to open/close)</summary>
-<p>Some customizations have not changed for a very long time (stable since 2.2.x days).</p>
-<p>It was not until version 3.2.3 that we started adding a notation as to when the required customization code changed.</p>
-</details>
-<h4 id="not-stable-list">Not Stable List<a class="headerlink" href="#not-stable-list" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>At the current time, all customizations are stable. It has been more than a year since the last code modification that required a customization change. So this section is empty.</p>
+<h3 id="switch-to-omnipodkit">Switch to OmnipodKit<a class="headerlink" href="#switch-to-omnipodkit" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>There used to be a separate customization required when using different Pod Types. With version 3.14.2 and newer, all Pod Types are handled with a single <abbr title="contains project files and each file's revision history">repository</abbr>. This page reflects the new situation.</p>
+<p>If your code is older, you should update to the latest release.</p>
 <h2 id="custom-edits-required">Custom Edits Required<a class="headerlink" href="#custom-edits-required" title="Anchor link to this Header on this Page">&para;</a></h2>
 <h3 id="default-carb-absorption-times">Default Carb Absorption Times<a class="headerlink" href="#default-carb-absorption-times" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p align="center"><img alt="img/carb_screen.png" src="../img/carb_screen.png" width="200" /></p>
@@ -5150,7 +5139,6 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/LoopCore</li>
 <li>File: LoopCoreConstants.swift</li>
 <li>Line: 19</li>
-<li>Stable: Yes</li>
 </ul>
 <p>For example, if you wanted to change <code>fast</code> to be slightly longer, the edit would be as follows:</p>
 <p>_Code Before Modification</p>
@@ -5161,15 +5149,20 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 </code></pre></div>
 <p>Note that if you change <code>fast</code> from 30 minutes to 1.5 hours, you must also change the indication before the parentheses.</p>
 <h3 id="adjust-maximum-iob-for-automatic-dosing">Adjust Maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> for Automatic Dosing<a class="headerlink" href="#adjust-maximum-iob-for-automatic-dosing" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>With version 3.2.0, a new safety feature was added. This limits automatic dosing so <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is no more than two times the <span class="arithmatex">\(\mathit{maximumBolus}\)</span> set in your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>. (The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate.) Manual Bolus, where you initiate the bolus yourself, is not subject to this limit. Please read <a href="../../faqs/algorithm-faqs/#how-do-delivery-limits-affect-automatic-dosing">How do <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr> Affect Automatic Dosing?</a> for detailed information on how this safety feature works.</p>
-<p>The default value (<span class="arithmatex">\(\mathit{2*maximumBolus}\)</span>) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling, and the insulin leaks out along the cannula.</p>
+<p>The maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> safety feature limits automatic dosing so <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> is no more than two times the 
+<span class="arithmatex">\(\mathit{maximumBolus}\)</span> set in your <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr>.</p>
+<ul>
+<li>The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate</li>
+<li>Manual Bolus, where you initiate the bolus yourself, is not subject to this limit</li>
+<li>Please read <a href="../../faqs/algorithm-faqs/#how-do-delivery-limits-affect-automatic-dosing">How do <abbr title="max bolus and max basal rates allowed by your therapy settings">Delivery Limits</abbr> Affect Automatic Dosing?</a> for detailed information on how this safety feature works</li>
+</ul>
+<p>The default value (<span class="arithmatex">\(\mathit{2*maximumBolus}\)</span>) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> they want to set for their app. This is particularly true for those who find large boluses cause tunneling, and the insulin leaks out along the cannula.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>automaticDosingIOBLimit = maxBolus
 </code></pre></div>
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Managers</li>
-<li>File: LoopDataManager.swift, line: 1690 (main), 1796 (dev)</li>
-<li>Stable: Yes</li>
+<li>File: LoopDataManager.swift, line: 1815</li>
 </ul>
 <p>The following example is for someone who limits a single bolus to 5 U but frequently needs to achieve an <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> of 15 U for meals. They want that level of <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr> to be reached with automatic bolusing. In that case, they may want to modify the factor used to calculate <span class="arithmatex">\(\mathit{automaticDosingIOBLimit}\)</span>.</p>
 <p>Original Code:
@@ -5193,7 +5186,6 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
 <li>File: LoopConstants.swift</li>
 <li>Line: 53</li>
-<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let bolusPartialApplicationFactor = 0.4
@@ -5208,18 +5200,16 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <h3 id="pods-add-extra-insulin-on-insertion">Pods: Add Extra Insulin on Insertion<a class="headerlink" href="#pods-add-extra-insulin-on-insertion" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The default value is 0.0 U of extra insulin.  If you use this customization, start with a small number and work your way up. If you are coming from manual podding and routinely gave yourself an extra bolus with your PDM at pod change time, you may not need nearly as much with <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> - be conservative.</p>
 <p>Note that <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> does not include the amount of insulin in the prime or insertion steps in your <abbr title="Insulin on Board, affects automated insulin delivery: the current active insulin (above or below the basal rate) that Loop calculates and uses for glucose prediction">IOB</abbr>. The pod reports every pulse that it delivers to <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.</p>
-<p>This code change is found in one location for Eros Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> throughout the app) and DASH Pods (called <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.</p>
+<p>This code change is found in one location for all Pod Types.</p>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>let cannulaInsertionUnitsExtra
 </code></pre></div>
 <ul>
-<li>Module: OmniBLE (DASH) or OmniKit (Eros)</li>
-<li>DASH or Eros Pod (the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app only)<ul>
-<li>Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)</li>
-<li>Folder: OmniKit/OmniKit/OmnipodCommon (Eros)</li>
-<li>File: Pod.swift, Line 82 (DASH); Line 87 (Eros); </li>
+<li>Module: OmnipodKit</li>
+<li><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5, DASH or Eros Pods<ul>
+<li>Folder: OmnipodKit/OmnipodKit/OmnipodCommon</li>
+<li>File: Pod.swift, Line 80</li>
 </ul>
 </li>
-<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>public static let cannulaInsertionUnitsExtra = 0.0 // edit to add a fixed additional amount of insulin during cannula insertion
@@ -5238,15 +5228,13 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>File: Guardrail+Settings.swift</li>
 <li>Line: 12 for suspendThreshold</li>
 <li>Line: 26 for correctionRange</li>
-<li>Stable: Yes<ul>
-<li>Last Changed on 2024 Feb 19</li>
 </ul>
-</li>
+<p>AND</p>
+<ul>
+<li>Folder: LoopKit/LoopKitUI/Views</li>
+<li>File: GlucoseValuePicker.swift</li>
+<li>Line: 62 for GlucoseValuePicker guardrails</li>
 </ul>
-<details class="info">
-<summary>Update Details (Click to open/close)</summary>
-<p>This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.</p>
-</details>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let suspendThreshold = Guardrail(absoluteBounds: (66.1)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
 </code></pre></div>
@@ -5263,7 +5251,6 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift, line: 81</li>
-<li>Stable: Yes</li>
 </ul>
 <h3 id="modify-guardrails-for-carb-ratio-cr">Modify <abbr title="limits in the code for user selected settings, recommended and absolute limits are provided">Guardrails</abbr> for Carb Ratio (<abbr title="Carb Ratio; how many grams of carbs are covered by one unit of rapid-acting insulin">CR</abbr>)<a class="headerlink" href="#modify-guardrails-for-carb-ratio-cr" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Similar to the instructions for glucose guardrails above, but use this <code>Key_Phrase</code> and modify the absoluteBounds row, next line.</p>
@@ -5273,7 +5260,6 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/Extensions</li>
 <li>File: Guardrail+Settings.swift, line: 88</li>
-<li>Stable: Yes</li>
 </ul>
 <h3 id="adjust-future-carbs-time-interval">Adjust Future Carbs Time Interval<a class="headerlink" href="#adjust-future-carbs-time-interval" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app limits to 1 hour the amount of time in the future that carbs can be entered.</p>
@@ -5287,10 +5273,6 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 </li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
 <li>File: LoopConstants.swift, Line 28</li>
-<li>Stable: Yes<ul>
-<li>Last changed 2023 Aug 20</li>
-</ul>
-</li>
 </ul>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>static let maxCarbEntryFutureTime
 </code></pre></div>
@@ -5312,7 +5294,6 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <ul>
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/WatchApp Extension/Views/Carb Entry &amp; Bolus</li>
-<li>Stable: Yes</li>
 </ul>
 <p align="center"><img alt="use a single Key_Phrase to identify all lines needed to customize sensitivity with loop 3" src="../img/digital-crown-rotation.svg" width="800" /></p>
 <h4 id="modify-bolus-confirmation-motion">Modify Bolus Confirmation Motion<a class="headerlink" href="#modify-bolus-confirmation-motion" title="Anchor link to this Header on this Page">&para;</a></h4>
@@ -5344,10 +5325,9 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Managers</li>
 <li>File: ProfileExpirationAlerter.swift<ul>
 <li>Line 16: modify how long before expiration you get the FIRST notification</li>
-<li>Line 28: modify how frequently you will be notified</li>
+<li>Line 35: modify how frequently you will be notified</li>
 </ul>
 </li>
-<li>Stable: Yes</li>
 </ul>
 <div class="copy highlight"><span class="filename">Key_Phrase</span><pre><span></span><code>expirationAlertWindow: TimeInterval
 </code></pre></div>
@@ -5362,7 +5342,7 @@ of the block below the title <code>Key_Phrase</code>;  click on it to copy the p
 <li>30 days: change <code>.days(20)</code> to <code>.days(30)</code></li>
 <li>12 hours: change <code>.days(20)</code> to <code>.hours(12)</code></li>
 </ul>
-<p>Default code for line 28:</p>
+<p>Default code for line 35:</p>
 <div class="highlight"><pre><span></span><code>    let minimumTimeBetweenAlerts: TimeInterval = timeUntilExpiration &gt; .hours(24) ? .days(2) : .hours(1)
 </code></pre></div>
 <p>Modify Frequency of Repeated Notifications (Three Values):</p>
@@ -5395,17 +5375,16 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 </code></pre></div>
 <ul>
 <li>Module: LoopKit</li>
-<li>Folder: LoopKit/LoopKit/Insulin/ &lt;&lt; NOTE new location</li>
+<li>Folder: LoopKit/LoopKit/Insulin/</li>
 <li>File: ExponentialInsulinModelPreset.swift</li>
 <li>Lines:<ul>
-<li>actionDuration (19 to 32)</li>
-<li>peakActivity (34 to 47)<ul>
-<li>delay (49 to 62)</li>
+<li>actionDuration (21 to 34)</li>
+<li>peakActivity (36 to 49)<ul>
+<li>delay (51 to 64)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Stable: Yes</li>
 </ul>
 <p align="center"><img alt="img/exponential.png" src="../img/exponential.png" width="750" /></p>
 <p>This <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> table of default values is provided for convenience. The times are all in minutes.</p>
@@ -5483,7 +5462,6 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/LoopKitUI/Extensions/</li>
 <li>File: Environment+Authenticate.swift, Line 20</li>
-<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &amp;error) {
@@ -5513,7 +5491,6 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Module: LoopKit</li>
 <li>Folder: LoopKit/LoopKitUI/Views</li>
 <li>File: InsulinSensitivityScalingTableViewCell.swift, Line 19</li>
-<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>private let allScaleFactorPercentages = Array(stride(from: 10, through: 200, by: 10))
@@ -5529,7 +5506,6 @@ Combined with an <code>.hours(12)</code> on line 16, they would get notified at 
 <li>Module: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></li>
 <li>Folder: <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/<abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>/Models</li>
 <li>File: LoopConstants.swift, line 18</li>
-<li>Stable: Yes</li>
 </ul>
 <p><em>Code Before Modification</em></p>
 <div class="highlight"><pre><span></span><code>static let maxCarbEntryQuantity = HKQuantity(unit: .gram(), doubleValue: 250) // cannot exceed this value

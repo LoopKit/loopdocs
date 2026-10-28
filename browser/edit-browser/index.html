@@ -5081,7 +5081,7 @@
 <p>Of course, accidents happen. No worries. </p>
 <ul>
 <li>Just hit the Close button</li>
-<li>If you don't close the accidental <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> yourself, it will be closed for you, but that takes time</li>
+<li>If you don't close the accidental <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> yourself, it will be closed for you, but that takes time from the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> developers</li>
 </ul>
 </div>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -5148,8 +5148,10 @@
 <h2 id="decide-which-modules-you-want-to-modify">Decide Which <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> You Want to Modify<a class="headerlink" href="#decide-which-modules-you-want-to-modify" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Decide which <a href="../../version/code-custom-edits/" target="_blank">Version: Custom Edits</a> changes you want to make. Each customization lists a Module name.</p>
 <ul>
-<li>DASH Pods: Use OmniBLE</li>
-<li>Eros Pods: Use OmniKit</li>
+<li>Any Pod Type: Use OmnipodKit which is hosted at the loopandlearn <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> username<ul>
+<li>When you change Pod Types, this customization remains in place</li>
+</ul>
+</li>
 <li>Other <abbr title="the Loop code uses a number of modules to handle different components of the entire app">Modules</abbr> are <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> and LoopKit<ul>
 <li>Do not get confused later: LoopKit is both a username and a Module name</li>
 <li>Refer to the <a href="#module-table">Module Table</a> when directed</li>
@@ -5160,6 +5162,11 @@
 <p>For versions 3.4.x, the customizations for <code>main</code> and <code>dev</code> are the same.</p>
 <p>When moving from v3.4 to v3.6, several items that used to require customization are no longer needed. They are included in v3.6.</p>
 <p>For versions 3.6.x and newer, the customizations for <code>main</code> and <code>dev</code> are the same.</p>
+<p>For versions 3.14.2 and newer:</p>
+<ul>
+<li>the old OmniBLE (DASH) and OmniKit (Eros) repositories are no longer used</li>
+<li>the new OmnipodKit (Eros, DASH and <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> 5) <abbr title="contains project files and each file's revision history">repository</abbr> is used for all <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> support</li>
+</ul>
 </blockquote>
 <h2 id="outline-of-what-happens-in-the-module">Outline of What Happens in the Module<a class="headerlink" href="#outline-of-what-happens-in-the-module" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
@@ -5233,12 +5240,8 @@
 <td><a href="https://github.com/LoopKit/LoopKit"><span translate="no">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/LoopKit</span></a></td>
 </tr>
 <tr>
-<td><span translate="no">OmniBLE (for DASH)</span></td>
-<td><a href="https://github.com/LoopKit/OmniBLE"><span translate="no">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/OmniBLE</span></a></td>
-</tr>
-<tr>
-<td><span translate="no">OmniKit (for Eros)</span></td>
-<td><a href="https://github.com/LoopKit/OmniKit"><span translate="no">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/LoopKit/OmniKit</span></a></td>
+<td><span translate="no">OmnipodKit</span></td>
+<td><a href="https://github.com/loopandlearn/OmnipodKit"><span translate="no">https://<abbr title="an online service for storing repositories, accessible from a browser">github.com</abbr>/loopandlearn/OmnipodKit</span></a></td>
 </tr>
 </tbody>
 </table>
@@ -5266,12 +5269,8 @@
 <td><span translate="no">dev</span></td>
 </tr>
 <tr>
-<td><span translate="no">LoopKit/OmniBLE</span></td>
+<td><span translate="no">loopandlearn/OmnipodKit</span></td>
 <td><span translate="no">dev</span></td>
-</tr>
-<tr>
-<td><span translate="no">LoopKit/OmniKit</span></td>
-<td><span translate="no">main</span></td>
 </tr>
 </tbody>
 </table>
@@ -5281,12 +5280,12 @@
 <summary>How do I navigate to the file? (Click to open/close)</summary>
 <p>Let's do an example.</p>
 <p>Suppose you want to add this customization: <a href="../../version/code-custom-edits/#pods-add-extra-insulin-on-insertion" target="_blank">Pods: Add Extra Insulin on Insertion</a></p>
-<p>The folder name is: <code>OmniBLE/OmniBLE/OmnipodCommon</code><br>
+<p>The folder name is: <code>OmnipodKit/OmnipodKit/OmnipodCommon</code><br>
 The file name is: <code>Pod.swift</code></p>
-<p>So you will go to your OmniBLE <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> (see <a href="#new-fork" target="_blank">New Fork</a> if you don't have a <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> yet).</p>
-<p><strong>Ensure your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> is up-to-date.</strong> Tap on the <code>Sync</code>ork` button if necessary.</p>
+<p>So you will go to your OmnipodKit <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> (see <a href="#new-fork" target="_blank">New Fork</a> if you don't have a <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> yet).</p>
+<p><strong>Ensure your <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr> is up-to-date.</strong> Tap on the <code>Sync fork</code> button if necessary.</p>
 <ol>
-<li>Tap to select <code>OmniBLE</code> folder in that <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></li>
+<li>Tap to select <code>OmnipodKit</code> folder in that <abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></li>
 <li>Tap to select <code>OmnipodCommon</code> folder in that folder</li>
 <li>Tap to open the <code>Pod.swift</code> file<ul>
 <li>Once the file is open, tap on the pencil icon and make your edits</li>
@@ -5294,25 +5293,25 @@ The file name is: <code>Pod.swift</code></p>
 </ul>
 </li>
 </ol>
-<p>The graphic below shows the <code>fork</code> for the <code>OmniBLE</code> submodule with numbers that match the steps in the list above. If you need more detailed instructions, they are found after the graphic.</p>
+<p>The graphic below shows the <code>fork</code> for the <code>OmnipodKit</code> submodule with numbers that match the steps in the list above. If you need more detailed instructions, they are found after the graphic.</p>
 <p align="center"><img alt="example navigation to file in fork" src="../img/navigate-submodule-omnible.svg" width="800" /></p>
 <details class="info">
 <summary>More detailed instructions (Click to open/close)</summary>
 <ol>
 <li>Check that this <abbr title="contains project files and each file's revision history">repository</abbr> is the correct submodule and that:<ul>
 <li>Fork has your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Username</li>
-<li>Fork says it is forked from LoopKit</li>
-<li>Fork is up to date with LoopKit</li>
-<li>Tap on the OmniBLE folder to open the next screen</li>
+<li>Fork says it is forked from loopandlearn (or LoopKit for other repositories)</li>
+<li>Fork is up to date with loopandlearn</li>
+<li>Tap on the OmnipodKit folder to open the next screen</li>
 </ul>
 </li>
 <li>Check that your screen shows:<ul>
-<li><code>OmniBLE/OmniBLE</code> at the top (current folder location)</li>
+<li><code>OmnipodKit/OmnipodKit</code> at the top (current folder location)</li>
 <li>Tap on the OmnipodCommon folder to open the next screen</li>
 </ul>
 </li>
 <li>Check that your screen shows:<ul>
-<li><code>OmniBLE/OmniBLE/OmnipodCommon</code> at the top (current folder location)</li>
+<li><code>OmnipodKit/OmnipodKit/OmnipodCommon</code> at the top (current folder location)</li>
 <li>Tap on the Pod.swift file to open it</li>
 <li>Tap on the pencil icon (upper right) to start editing the file</li>
 </ul>
@@ -5371,7 +5370,10 @@ The file name is: <code>Pod.swift</code></p>
 <li>You will be shown a screen where you create a pull request to your own <code><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></code> (this does not go back to the original)</li>
 <li>First review the changes (shown at the bottom) and then click on the&nbsp;"<span translate="no">Create pull request</span>"&nbsp;button</li>
 </ul>
-<p>Between Frame 2 and 3 of the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>, your display will look similar to the graphic below:</p>
+<p>Between Frame 2 and 3 of the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>, your display will look similar to the graphic below</p>
+<ul>
+<li>This is an old figure - if you are making Pod edits, you will see OmnipodKit - not OmniBLE</li>
+</ul>
 <p align="center"><img alt="GitHub screen after modifying the custom branch" src="../img/browser-customize-select-branch.png" width="750" /></p>
 <p>You see there an opportunity to&nbsp;<span translate="no">"Compare &amp; pull request"</span></p>
 <ul>
@@ -5396,10 +5398,10 @@ The file name is: <code>Pod.swift</code></p>
 <li>There is a copy icon to the right - click on it and save it in your text file along with a comment about the customization and record which module you used for the customization</li>
 </ul>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code># OmniBLE: Increase insulin at insert by 0.35 U
+<div class="highlight"><pre><span></span><code># OmnipodKit: Increase insulin at insert by 0.35 U
 SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 </code></pre></div>
-<p>Warning - that is not a valid <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)">SHA-1</abbr> for this change. Do not try to copy it and use it. You must make your own personalized changes.</p>
+<p><strong>Warning</strong> - that is not a valid <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (GitHub)">SHA-1</abbr> for this change. Do not try to copy it and use it. You must make your own personalized changes.</p>
 <p>Later on, you will create the actual command needed to insert into build_loop_auto.yml so you can add this customization when your build the app.</p>
 <p>Repeat this process until you've done all your customizations for this Module and then move on to the next Module.</p>
 <h2 id="prepare-the-customizations">Prepare the Customizations<a class="headerlink" href="#prepare-the-customizations" title="Anchor link to this Header on this Page">&para;</a></h2>
@@ -5481,7 +5483,10 @@ curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.p
 <p>Refer to <a href="#prepare-customization-lines" target="_blank">Prepare customization lines</a>:</p>
 <ul>
 <li>extract the text from "https:" through "patch" and paste that into a new tab</li>
-<li>this will open a browser similar to the following graphic</li>
+<li>this will open a browser similar to the following graphic<ul>
+<li>this graphic was prepared using the old OmniBLE <abbr title="contains project files and each file's revision history">repository</abbr> - now the patch would be with OmnipodKit</li>
+</ul>
+</li>
 </ul>
 <p align="center"><img alt="open patch at GitHub" src="../img/browser-open-to-patch.png" width="750" /></p>
 <p>Now you need to download that file (Save Page As, if using chrome).</p>
@@ -5490,7 +5495,10 @@ curl<span class="w"> </span>https://github.com/my-name-org/Module/commit/SHA-1.p
 <li>Top file shows the original download</li>
 <li>Lower file shows the renamed and edited version:<ul>
 <li>Add the name of the module to the "a" and "b" directory paths so the patch is applied to the correct folder (from LoopWorkspace)</li>
-<li>In this example <code>OmniBLE/</code> was added in 4 places as highlighted by red rectangles</li>
+<li>In this example <code>OmniBLE/</code> was added in 4 places as highlighted by red rectangles<ul>
+<li>WARNING: this graphic is old - a new one would use OmnipodKit, OmniBLE is no longer used </li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
