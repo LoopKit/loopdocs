@@ -226,7 +226,7 @@ For Dana support, you must build a new feature branch, `feat/all-managers`.
 
 
 !!! important "New Managers"
-    The `feat/all-managers` branch is used to add new Pump Managers and CGM Managers which may have known or unknown bugs. Once the managers are deemed reliable, they are added to the `dev` branch and subsequently released. This branch contains new and old managers (like OmniBLE and OmniKit) for use by developers.
+    The `feat/all-managers` branch is used to add new Pump Managers and CGM Managers which may have known or unknown bugs. Once the managers are deemed reliable, they are added to the `dev` branch and subsequently released.
     
     Please only use a feature branch if you are prepared to follow along in zulipchat and are willing to help test and resolve issues. This is critical when using new pump managers.
 

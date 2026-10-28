@@ -29,7 +29,7 @@
     Of course, accidents happen. No worries. 
     
     * Just hit the Close button
-    * If you don't close the accidental PR yourself, it will be closed for you, but that takes time
+    * If you don't close the accidental PR yourself, it will be closed for you, but that takes time from the *Loop* developers
 
 ## Overview
 
@@ -80,8 +80,8 @@ There is some background information at the bottom of this page starting at&nbsp
 
 Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="_blank" } changes you want to make. Each customization lists a Module name.
 
-* DASH Pods: Use OmniBLE
-* Eros Pods: Use OmniKit
+* Any Pod Type: Use OmnipodKit which is hosted at the loopandlearn GitHub username
+    * When you change Pod Types, this customization remains in place
 * Other Modules are Loop and LoopKit
     * Do not get confused later: LoopKit is both a username and a Module name
     * Refer to the [Module Table](#module-table) when directed
@@ -91,6 +91,11 @@ Decide which [Version: Custom Edits](../version/code-custom-edits.md){: target="
 > When moving from v3.4 to v3.6, several items that used to require customization are no longer needed. They are included in v3.6.
 
 > For versions 3.6.x and newer, the customizations for `main` and `dev` are the same.
+
+> For versions 3.14.2 and newer:
+>
+> * the old OmniBLE (DASH) and OmniKit (Eros) repositories are no longer used
+> * the new OmnipodKit (Eros, DASH and Omnipod 5) repository is used for all Omnipod support
 
 ## Outline of What Happens in the Module
 
@@ -162,8 +167,7 @@ This table lists all the modules referred to on the Code Customization page link
 | --- | --- |
 | <span translate="no">Loop</span> | [<span translate="no">https://github.com/LoopKit/Loop</span>](https://github.com/LoopKit/Loop) |
 | <span translate="no">LoopKit</span> | [<span translate="no">https://github.com/LoopKit/LoopKit</span>](https://github.com/LoopKit/LoopKit) |
-| <span translate="no">OmniBLE (for DASH)</span> | [<span translate="no">https://github.com/LoopKit/OmniBLE</span>](https://github.com/LoopKit/OmniBLE) |
-| <span translate="no">OmniKit (for Eros)</span> | [<span translate="no">https://github.com/LoopKit/OmniKit</span>](https://github.com/LoopKit/OmniKit) |
+| <span translate="no">OmnipodKit</span> | [<span translate="no">https://github.com/loopandlearn/OmnipodKit</span>](https://github.com/loopandlearn/OmnipodKit) |
 
 Remember - you can only have a single <code>fork</code> of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a <code>fork</code>, you don't need another one; but it must be a linked to the URL listed the [Module Table](#module-table).
 
@@ -178,8 +182,7 @@ When you&nbsp;"<span translate="no">fork a repository"</span>, the default&nbsp;
 | --- | --- |
 | <span translate="no">LoopKit/Loop</span> | <span translate="no">dev</span> |
 | <span translate="no">LoopKit/LoopKit</span> | <span translate="no">dev</span> |
-| <span translate="no">LoopKit/OmniBLE</span> | <span translate="no">dev</span> |
-| <span translate="no">LoopKit/OmniKit</span> | <span translate="no">main</span> |
+| <span translate="no">loopandlearn/OmnipodKit</span> | <span translate="no">dev</span> |
 
 ## Personalized Customization for this Module
 
@@ -190,20 +193,20 @@ Navigate to the file you need to modify (using the instructions to find the line
 
     Suppose you want to add this customization: [Pods: Add Extra Insulin on Insertion](../version/code-custom-edits.md#pods-add-extra-insulin-on-insertion){: target="_blank" }
 
-    The folder name is: ` OmniBLE/OmniBLE/OmnipodCommon`<br>
+    The folder name is: ` OmnipodKit/OmnipodKit/OmnipodCommon`<br>
     The file name is: `Pod.swift`
 
-    So you will go to your OmniBLE fork (see [New Fork](#new-fork){: target="_blank" } if you don't have a fork yet).
+    So you will go to your OmnipodKit fork (see [New Fork](#new-fork){: target="_blank" } if you don't have a fork yet).
     
-    **Ensure your fork is up-to-date.** Tap on the `Sync `ork` button if necessary.
+    **Ensure your fork is up-to-date.** Tap on the `Sync fork` button if necessary.
 
-    1. Tap to select `OmniBLE` folder in that fork
+    1. Tap to select `OmnipodKit` folder in that fork
     1. Tap to select `OmnipodCommon` folder in that folder
     1. Tap to open the `Pod.swift` file
         * Once the file is open, tap on the pencil icon and make your edits
         * When done, review the [Example GIF](#example-gif) which shows the steps needed to save your changes after you complete the edit
 
-    The graphic below shows the `fork` for the `OmniBLE` submodule with numbers that match the steps in the list above. If you need more detailed instructions, they are found after the graphic.
+    The graphic below shows the `fork` for the `OmnipodKit` submodule with numbers that match the steps in the list above. If you need more detailed instructions, they are found after the graphic.
 
     ![example navigation to file in fork](img/navigate-submodule-omnible.svg){width="800"}
     {align="center"}
@@ -211,14 +214,14 @@ Navigate to the file you need to modify (using the instructions to find the line
     ??? info "More detailed instructions (Click to open/close)"
         1. Check that this repository is the correct submodule and that:
             * Fork has your GitHub Username
-            * Fork says it is forked from LoopKit
-            * Fork is up to date with LoopKit
-            * Tap on the OmniBLE folder to open the next screen
+            * Fork says it is forked from loopandlearn (or LoopKit for other repositories)
+            * Fork is up to date with loopandlearn
+            * Tap on the OmnipodKit folder to open the next screen
         1. Check that your screen shows:
-            * `OmniBLE/OmniBLE` at the top (current folder location)
+            * `OmnipodKit/OmnipodKit` at the top (current folder location)
             * Tap on the OmnipodCommon folder to open the next screen
         1. Check that your screen shows:
-            * `OmniBLE/OmniBLE/OmnipodCommon` at the top (current folder location)
+            * `OmnipodKit/OmnipodKit/OmnipodCommon` at the top (current folder location)
             * Tap on the Pod.swift file to open it
             * Tap on the pencil icon (upper right) to start editing the file
         
@@ -274,7 +277,9 @@ The bullets below go with Frame 2 of the [GIF](#example-gif) above:
 * You will be shown a screen where you create a pull request to your own <code>fork</code> (this does not go back to the original)
 * First review the changes (shown at the bottom) and then click on the&nbsp;"<span translate="no">Create pull request</span>"&nbsp;button
 
-Between Frame 2 and 3 of the GIF, your display will look similar to the graphic below:
+Between Frame 2 and 3 of the GIF, your display will look similar to the graphic below
+
+* This is an old figure - if you are making Pod edits, you will see OmnipodKit - not OmniBLE
 
 ![GitHub screen after modifying the custom branch](img/browser-customize-select-branch.png){width="750"}
 {align="center"}
@@ -302,11 +307,11 @@ Now your display should look like Frame 4 of the [GIF](#example-gif) above:
 For example:
 
 ```
-# OmniBLE: Increase insulin at insert by 0.35 U
+# OmnipodKit: Increase insulin at insert by 0.35 U
 SHA-1 = 5e9f4f407ff5544663f496d2e3a5ed8aa4f32a68
 ```
 
-Warning - that is not a valid SHA-1 for this change. Do not try to copy it and use it. You must make your own personalized changes.
+**Warning** - that is not a valid SHA-1 for this change. Do not try to copy it and use it. You must make your own personalized changes.
 
 Later on, you will create the actual command needed to insert into build_loop_auto.yml so you can add this customization when your build the app.
 
@@ -414,6 +419,7 @@ Refer to [Prepare customization lines](#prepare-customization-lines){: target="_
 
 * extract the text from "https:" through "patch" and paste that into a new tab
 * this will open a browser similar to the following graphic
+    * this graphic was prepared using the old OmniBLE repository - now the patch would be with OmnipodKit
 
 ![open patch at GitHub](img/browser-open-to-patch.png){width="750"}
 {align="center"}
@@ -426,6 +432,7 @@ Once the file is downloaded to a sensible name, make a copy (or rename it) to in
 * Lower file shows the renamed and edited version:
     * Add the name of the module to the "a" and "b" directory paths so the patch is applied to the correct folder (from LoopWorkspace)
     * In this example `OmniBLE/` was added in 4 places as highlighted by red rectangles
+        * WARNING: this graphic is old - a new one would use OmnipodKit, OmniBLE is no longer used 
 
 ![download and then edit patch for Workspace](img/prepare-workspace-patch.svg){width="750"}
 {align="center"}

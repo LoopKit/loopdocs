@@ -88,22 +88,11 @@ Below the figure, the original, and in some cases, the modified code will be dis
 * Sometimes that line is long and you may need to use the scroll bar to see the entire line in LoopDocs
 * In most cases, an example customization is shown to assist you in deciding how to edit the line to meet your needs
 
-### What does `Stable` mean?
+### Switch to OmnipodKit
 
-The line starting with `Stable` was previously used to indicate when code changes were sufficient to require a different customization. With the release of 3.4.x, all customizations show `Stable: Yes`. 
+There used to be a separate customization required when using different Pod Types. With version 3.14.2 and newer, all Pod Types are handled with a single repository. This page reflects the new situation.
 
-* A few have an additional notation of when they were last changed
-* All customizations are currently identical for `main` and `dev`
-* Instructions for older versions of the customization are removed from this page.
-
-??? tip "More Information about `Stable` (Click to open/close)"
-    Some customizations have not changed for a very long time (stable since 2.2.x days).
-
-    It was not until version 3.2.3 that we started adding a notation as to when the required customization code changed.
-
-#### Not Stable List
-
-At the current time, all customizations are stable. It has been more than a year since the last code modification that required a customization change. So this section is empty.
+If your code is older, you should update to the latest release.
 
 ## Custom Edits Required
 
@@ -127,7 +116,6 @@ defaultCarbAbsorptionTimes: CarbStore.DefaultAbsorptionTimes
 * Folder: Loop/LoopCore
 * File: LoopCoreConstants.swift
 * Line: 19
-* Stable: Yes
 
 For example, if you wanted to change `fast` to be slightly longer, the edit would be as follows:
 
@@ -143,9 +131,14 @@ Note that if you change `fast` from 30 minutes to 1.5 hours, you must also chang
 
 ### Adjust Maximum IOB for Automatic Dosing
 
-With version 3.2.0, a new safety feature was added. This limits automatic dosing so IOB is no more than two times the $\mathit{maximumBolus}$ set in your Delivery Limits. (The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate.) Manual Bolus, where you initiate the bolus yourself, is not subject to this limit. Please read [How do Delivery Limits Affect Automatic Dosing?](../faqs/algorithm-faqs.md#how-do-delivery-limits-affect-automatic-dosing) for detailed information on how this safety feature works.
+The maximum IOB safety feature limits automatic dosing so IOB is no more than two times the 
+$\mathit{maximumBolus}$ set in your Delivery Limits.
 
-The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum IOB they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling, and the insulin leaks out along the cannula.
+* The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate
+* Manual Bolus, where you initiate the bolus yourself, is not subject to this limit
+* Please read [How do Delivery Limits Affect Automatic Dosing?](../faqs/algorithm-faqs.md#how-do-delivery-limits-affect-automatic-dosing) for detailed information on how this safety feature works
+
+The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum IOB they want to set for their app. This is particularly true for those who find large boluses cause tunneling, and the insulin leaks out along the cannula.
 
 ``` { .txt .copy title="Key_Phrase" }
 automaticDosingIOBLimit = maxBolus
@@ -153,8 +146,7 @@ automaticDosingIOBLimit = maxBolus
 
 * Module: Loop
 * Folder: Loop/Managers
-* File: LoopDataManager.swift, line: 1690 (main), 1796 (dev)
-* Stable: Yes
+* File: LoopDataManager.swift, line: 1815
 
 The following example is for someone who limits a single bolus to 5 U but frequently needs to achieve an IOB of 15 U for meals. They want that level of IOB to be reached with automatic bolusing. In that case, they may want to modify the factor used to calculate $\mathit{automaticDosingIOBLimit}$.
 
@@ -188,7 +180,6 @@ let bolusPartialApplicationFactor
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift
 * Line: 53
-* Stable: Yes
 
 _Code Before Modification_
 
@@ -208,18 +199,16 @@ The default value is 0.0 U of extra insulin.  If you use this customization, sta
 
 Note that Loop does not include the amount of insulin in the prime or insertion steps in your IOB. The pod reports every pulse that it delivers to Loop. If you look in the Pod Settings insulin delivered row, that is the total delivered by the pod minus the (prime plus insertion) amounts. The only way to know that you successfully made this change is to count the clicks.  Normal insertion is 0.5 U (0.5 U / 0.05 U per click = 10 clicks). So if you add 0.35 U to the "extra" value, you should get 0.35 / 0.05 = 7 extra clicks. In other words, 17 total clicks after you press insert.
 
-This code change is found in one location for Eros Pods (called Omnipod throughout the app) and DASH Pods (called Omnipod Dash throughout the app). I tend to change both files, but if you're only using one kind of pod, that is really not necessary.
+This code change is found in one location for all Pod Types.
 
 ``` { .txt .copy title="Key_Phrase" }
 let cannulaInsertionUnitsExtra
 ```
 
-* Module: OmniBLE (DASH) or OmniKit (Eros)
-* DASH or Eros Pod (the *Loop* app only)
-    * Folder: OmniBLE/OmniBLE/OmnipodCommon (DASH)
-    * Folder: OmniKit/OmniKit/OmnipodCommon (Eros)
-    * File: Pod.swift, Line 82 (DASH); Line 87 (Eros); 
-* Stable: Yes
+* Module: OmnipodKit
+* Omnipod 5, DASH or Eros Pods
+    * Folder: OmnipodKit/OmnipodKit/OmnipodCommon
+    * File: Pod.swift, Line 80
 
 _Code Before Modification_
 
@@ -244,11 +233,12 @@ Guardrail(absoluteBounds:
 * File: Guardrail+Settings.swift
 * Line: 12 for suspendThreshold
 * Line: 26 for correctionRange
-* Stable: Yes
-    * Last Changed on 2024 Feb 19
 
-??? info "Update Details (Click to open/close)"
-    This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
+AND
+
+* Folder: LoopKit/LoopKitUI/Views
+* File: GlucoseValuePicker.swift
+* Line: 62 for GlucoseValuePicker guardrails
 
 _Code Before Modification_
 
@@ -273,7 +263,6 @@ static let insulinSensitivity = Guardrail(
 * Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift, line: 81
-* Stable: Yes
 
 ### Modify Guardrails for Carb Ratio (CR)
 
@@ -286,7 +275,6 @@ static let carbRatio = Guardrail(
 * Module: LoopKit
 * Folder: LoopKit/Extensions
 * File: Guardrail+Settings.swift, line: 88
-* Stable: Yes
 
 
 ### Adjust Future Carbs Time Interval
@@ -299,8 +287,6 @@ The *Loop* app limits to 1 hour the amount of time in the future that carbs can 
 * Module: Loop
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift, Line 28
-* Stable: Yes
-    * Last changed 2023 Aug 20
 
 ``` { .txt .copy title="Key_Phrase" }
 static let maxCarbEntryFutureTime
@@ -332,7 +318,6 @@ This key phrase will indicate three different files in the same folder as shown 
 
 * Module: Loop
 * Folder: Loop/WatchApp Extension/Views/Carb Entry & Bolus
-* Stable: Yes
 
 ![use a single Key_Phrase to identify all lines needed to customize sensitivity with loop 3](img/digital-crown-rotation.svg){width="800"}
 {align="center"}
@@ -367,8 +352,7 @@ If you prefer a different notification time and frequency, there are two lines y
 * Folder: Loop/Managers
 * File: ProfileExpirationAlerter.swift
     * Line 16: modify how long before expiration you get the FIRST notification
-    * Line 28: modify how frequently you will be notified
-* Stable: Yes
+    * Line 35: modify how frequently you will be notified
 
 ``` { .txt .copy title="Key_Phrase" }
 expirationAlertWindow: TimeInterval
@@ -391,7 +375,7 @@ Example modifications to First Notification:
 * 30 days: change `.days(20)` to `.days(30)`
 * 12 hours: change `.days(20)` to `.hours(12)`
 
-Default code for line 28:
+Default code for line 35:
 
 ```
     let minimumTimeBetweenAlerts: TimeInterval = timeUntilExpiration > .hours(24) ? .days(2) : .hours(1)
@@ -437,13 +421,12 @@ MARK: - Model generation
 ```
 
 * Module: LoopKit
-* Folder: LoopKit/LoopKit/Insulin/ << NOTE new location
+* Folder: LoopKit/LoopKit/Insulin/
 * File: ExponentialInsulinModelPreset.swift
 * Lines:
-    * actionDuration (19 to 32)
-    * peakActivity (34 to 47)
-        * delay (49 to 62)
-* Stable: Yes
+    * actionDuration (21 to 34)
+    * peakActivity (36 to 49)
+        * delay (51 to 64)
 
 ![img/exponential.png](img/exponential.png){width="750"}
 {align="center"}
@@ -499,7 +482,6 @@ canEvaluatePolicy(.deviceOwnerAuthentication
 * Module: LoopKit
 * Folder: LoopKit/LoopKitUI/Extensions/
 * File: Environment+Authenticate.swift, Line 20
-* Stable: Yes
 
 _Code Before Modification_
 
@@ -534,7 +516,6 @@ let allScaleFactorPercentages
 * Module: LoopKit
 * Folder: LoopKit/LoopKitUI/Views
 * File: InsulinSensitivityScalingTableViewCell.swift, Line 19
-* Stable: Yes
 
 _Code Before Modification_
 
@@ -555,7 +536,6 @@ let maxCarbEntryQuantity =
 * Module: Loop
 * Folder: Loop/Loop/Models
 * File: LoopConstants.swift, line 18
-* Stable: Yes
 
 _Code Before Modification_
 
