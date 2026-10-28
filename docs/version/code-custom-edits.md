@@ -131,9 +131,14 @@ Note that if you change `fast` from 30 minutes to 1.5 hours, you must also chang
 
 ### Adjust Maximum IOB for Automatic Dosing
 
-With version 3.2.0, a new safety feature was added. This limits automatic dosing so IOB is no more than two times the $\mathit{maximumBolus}$ set in your Delivery Limits. (The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate.) Manual Bolus, where you initiate the bolus yourself, is not subject to this limit. Please read [How do Delivery Limits Affect Automatic Dosing?](../faqs/algorithm-faqs.md#how-do-delivery-limits-affect-automatic-dosing) for detailed information on how this safety feature works.
+The maximum IOB safety feature limits automatic dosing so IOB is no more than two times the 
+$\mathit{maximumBolus}$ set in your Delivery Limits.
 
-The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum IOB they want to set for their app. This is particularly true for those who find large boluses give rise to tunneling, and the insulin leaks out along the cannula.
+* The term automatic dosing refers to insulin the app automatically delivers above your scheduled basal rate
+* Manual Bolus, where you initiate the bolus yourself, is not subject to this limit
+* Please read [How do Delivery Limits Affect Automatic Dosing?](../faqs/algorithm-faqs.md#how-do-delivery-limits-affect-automatic-dosing) for detailed information on how this safety feature works
+
+The default value ($\mathit{2*maximumBolus}$) used for this feature is good for the majority of people who use the app. However, some individuals might need to limit the size of any single bolus independent of the maximum IOB they want to set for their app. This is particularly true for those who find large boluses cause tunneling, and the insulin leaks out along the cannula.
 
 ``` { .txt .copy title="Key_Phrase" }
 automaticDosingIOBLimit = maxBolus
@@ -234,10 +239,6 @@ AND
 * Folder: LoopKit/LoopKitUI/Views
 * File: GlucoseValuePicker.swift
 * Line: 62 for GlucoseValuePicker guardrails
-
-
-??? info "Update Details (Click to open/close)"
-    This update, merged on 2024 Feb 19 was part of a larger fix to a problem when glucose units were mmol/L. The user could not select two values (min and max) that were the same and equal to the reported absolute range. This was a rounding problem going between mmol/L and mg/dL that has now been resolved. Part of the resolution was to modify the mg/dL absolute ranges to preserve the previously reported mmol/L absolute ranges.
 
 _Code Before Modification_
 
