@@ -96,21 +96,11 @@ To confirm you are in the correct location, type `pwd` and return in the termina
 
 The folders listed in the code customization steps are the actual directory names as stored on your computer.  However, a shortened name is used for some folders when being displayed as icons in Xcode. Some people prefer to search through the folder icons to find a file instead of using the `Find in Workspace` feature.
 
-In the graphic below, the user searched for an item found for both Eros and DASH pods (in two different files).  The top part of the graphic shows the result of the search with user clicking on one instance.  On the right side of the top graphic (highlighted by red rectangle) is the name of the selected file on the computer with the full directory name.
-
-* Inset 1: User clicked on the folder icon (highlighted by red square) to see the list of icons for folders included in the LoopWorkspace
-* Inset 2: User opens folders under RileyLink icon to open OmniKit, then OmnipodCommon to find the Pod.swift file (NOTE - the Eros information is in a different Module now, OmniKit, but the graphic has not been updated.)
-
-![graphic showing folder icons vs folder names](img/xcode-folder-names.svg){width="750"}
-{align="center"}
-
 These folder icon names are different from the directory names on the computer:
 
 |  Folder Icon Name |  Directory Name | |
 |:--|:--||
 | ShareClient | dexcom-share-client-swift | 
-| RileyLink | rileylink_ios | 
-| Amplitude | Amplitude-iOS | 
 
 All other icons and directory names match.
 
