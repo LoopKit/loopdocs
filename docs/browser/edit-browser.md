@@ -167,7 +167,7 @@ This table lists all the modules referred to on the Code Customization page link
 | --- | --- |
 | <span translate="no">Loop</span> | [<span translate="no">https://github.com/LoopKit/Loop</span>](https://github.com/LoopKit/Loop) |
 | <span translate="no">LoopKit</span> | [<span translate="no">https://github.com/LoopKit/LoopKit</span>](https://github.com/LoopKit/LoopKit) |
-| <span translate="no">OmnipodKit</span> | [<span translate="no">https://github.com/loopandlearn/OmnipodKit</span>](https://github.com/loopandleard/OmnipodKit) |
+| <span translate="no">OmnipodKit</span> | [<span translate="no">https://github.com/loopandlearn/OmnipodKit</span>](https://github.com/loopandlearn/OmnipodKit) |
 
 Remember - you can only have a single <code>fork</code> of a given&nbsp;<span translate="no">GitHub repository</span>. If you already have a <code>fork</code>, you don't need another one; but it must be a linked to the URL listed the [Module Table](#module-table).
 
@@ -198,7 +198,7 @@ Navigate to the file you need to modify (using the instructions to find the line
 
     So you will go to your OmnipodKit fork (see [New Fork](#new-fork){: target="_blank" } if you don't have a fork yet).
     
-    **Ensure your fork is up-to-date.** Tap on the `Sync `ork` button if necessary.
+    **Ensure your fork is up-to-date.** Tap on the `Sync fork` button if necessary.
 
     1. Tap to select `OmnipodKit` folder in that fork
     1. Tap to select `OmnipodCommon` folder in that folder
@@ -277,7 +277,9 @@ The bullets below go with Frame 2 of the [GIF](#example-gif) above:
 * You will be shown a screen where you create a pull request to your own <code>fork</code> (this does not go back to the original)
 * First review the changes (shown at the bottom) and then click on the&nbsp;"<span translate="no">Create pull request</span>"&nbsp;button
 
-Between Frame 2 and 3 of the GIF, your display will look similar to the graphic below:
+Between Frame 2 and 3 of the GIF, your display will look similar to the graphic below
+
+* This is an old figure - if you are making Pod edits, you will see OmnipodKit - not OmniBLE
 
 ![GitHub screen after modifying the custom branch](img/browser-customize-select-branch.png){width="750"}
 {align="center"}
