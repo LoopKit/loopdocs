@@ -419,7 +419,7 @@ Refer to [Prepare customization lines](#prepare-customization-lines){: target="_
 
 * extract the text from "https:" through "patch" and paste that into a new tab
 * this will open a browser similar to the following graphic
-    * this graphic was prepared using the old OmniBLE repository - now the patch who be with OmnipodKit
+    * this graphic was prepared using the old OmniBLE repository - now the patch would be with OmnipodKit
 
 ![open patch at GitHub](img/browser-open-to-patch.png){width="750"}
 {align="center"}
