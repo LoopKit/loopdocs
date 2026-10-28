@@ -190,10 +190,9 @@ These submodules are used by the *Loop*, *Trio* and *iAPS* apps and are handled 
 | CGM | `NightscoutRemoteCGM` | NightscoutRemoteCGM/NightscoutRemoteCGM/Localizable.xcstrings | 
 | Pump | `DanaKit` | DanaKit/Localizable.xcstrings |
 | Pump | `MedtrumKit` | MedtrumKit/Localizable.xcstrings |
-| Pump | `OmniBLE` | OmniBLE/Localizable.xcstrings<br>OmniBLE/OmniBLE/Localizable.xcstrings |
+| Pump | `OmnipodKit` | OmnipodKit/Localization/Localizable.xcstrings|
 | Pump | `RileyLinkKit` | RileyLinkKit/RileyLink/Localizable.xcstrings<br>RileyLinkKit/RileyLink/LoopKit.xcstrings<br>RileyLinkKit/RileyLinkBLEKit/Localizable.xcstrings<br>RileyLinkKit/RileyLinkKitUI/Localizable.xcstrings |
 | Pump | `MinimedKit` | MinimedKit/MinimedKit/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/Localizable.xcstrings<br>MinimedKit/MinimedKitUI/Resources/mul.lproj/MinimedPumpManager.xcstrings|
-| Pump | `OmniKit` | OmniKit/Localizable.xcstrings<br>OmniKit/OmniKit/Resources/Localizable.xcstrings<br>OmniKit/OmniKitUI/Resources/Localizable.xcstrings |
 | Misc | `LoopKit` | LoopKit/LoopKit/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/Localizable.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/InsulinKit.xcstrings<br>LoopKit/LoopKitUI/Resources/mul.lproj/LegacyInsulinDeliveryTableViewController.xcstrings<br>LoopKit/MockKit/Resources/Localizable.xcstrings<br>LoopKit/MockKitUI/Resources/Localizable.xcstrings |
 | Service | `TidepoolService` | TidepoolService/TidepoolServiceKit/Localizable.xcstrings<br>TidepoolService/TidepoolServiceKitUI/Localizable.xcstrings |
 
