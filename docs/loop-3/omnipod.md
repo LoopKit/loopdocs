@@ -466,7 +466,7 @@ The fault information can still be found under [Previous Pod Details](#previous-
 
     #### Disabled
 
-    When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmniBLE code.
+    When Pod Keep Alive is disabled, the code behavior is unchanged from the nominal OmnipodKit code.
 
     !!! warning "Automatic Change for iPhone 16 or 17e and Atlas DASH Pod"
         If your app has Pod Keep Alive set to disabled and you have an **iPhone 16** or **iPhone 17e** and the Pod you just paired is an **InPlay (Atlas) Pod**, the configuration **automatically** switches to **When Open**.
