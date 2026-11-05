@@ -4988,14 +4988,15 @@
 <blockquote>
 <p>Regardless of build method, this is an <strong>update</strong> and will install over your existing app; your <strong>settings are maintained including your current <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> and Pump.</strong></p>
 </blockquote>
-<p><strong>For most, the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is configured for automatic build, so you only need to come to this page if the automatic build failed.</strong></p>
-<p><strong>Be sure to update to the latest version of <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> - automatic build was restored for v3.14.7 and newer</strong></p>
+<p><strong>The build update process is supposed to be automatic as of <abbr title="Latest release with major updates">Loop 3</abbr>.4.0 or newer, but this automated process was disabled by <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. The developers attempted to resolve this by adding a new build action, build_loop_auto.yml to v 3.14.7,but <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> again disabled the automated build action.</strong></p>
 <details class="info" open="open">
 <summary>Time Estimate (click to open/close)</summary>
 <p>Manually update and build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
 <ul>
 <li>5 min: Check <em>Apple</em> account status</li>
-<li>5 min: Update version if a new one is available</li>
+<li>5 min: Unless you're a developer or tester, make sure your Default Branch is set to main</li>
+<li>5 min: Update version if a new one is available (Update Fork)</li>
+<li>15 min: Add customizations to build_loop_manual (if customizations are desired)</li>
 <li>5 min: Start the Build</li>
 <li>1 hour: Wait for the build to complete and appear in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone<ul>
 <li>depends on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, <em>Apple</em> and <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
@@ -5003,30 +5004,22 @@
 </li>
 <li>5 min: Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> onto your phone</li>
 </ul>
-<p>Once a Year certificates must be renewed</p>
-<ul>
-<li>With <code>Loop 3.6.0</code> and newer, certificate renewal is automatic once you <a href="../prepare-fork/#add-variable" target="_blank">Add Variable</a></li>
-</ul>
-<p>One Time: Complete the information for the Digital Service Act Compliance</p>
-<ul>
-<li>This is a new requirement that must be completed one time</li>
-<li>See <a href="../prepare-app/#digital-service-act-compliance" target="_blank">Digital Service Act Compliance</a> for instructions</li>
-</ul>
 </details>
+<p>If you have any issues with your build, provide your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Loopworkspace <abbr title="contains project files and each file's revision history">repository</abbr> <abbr title="website address (Uniform Resource Locator)">URL</abbr> to mentors on Facebook or Zulipchat.  Do not post photos or screenshots.</p>
+<div class="highlight"><pre><span></span><code>Once a Year certificates must be renewed
+
+* With `Loop 3.6.0` and newer, certificate renewal is automatic once you [Add Variable](prepare-fork.md#add-variable){: target=&quot;_blank&quot; }
+
+One Time: Complete the information for the Digital Service Act Compliance
+
+* This is a one-time requirement
+* See [Digital Service Act Compliance](prepare-app.md#digital-service-act-compliance){: target=&quot;_blank&quot; } for instructions
+</code></pre></div>
 <details class="abstract" open="open">
 <summary>Page Summary (click to open/close)</summary>
-<p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when you build with a browser - this is <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> requirement.</strong></p>
+<p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be updated at least every 90 days when you build with a browser - this is <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> requirement.</strong></p>
 <p>Most users will start at <a href="#how-to-update-or-rebuild">How to Update or Rebuild</a>:</p>
-<ul>
-<li>If currently using verion 3.4.0 or newer, builds are supposed to be automatic, but are being disabled by <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> (<a href="https://github.com/orgs/community/discussions/181236">for <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr>, not other OS-AID</a>), so you should check the status monthly</li>
-<li>In addition to that monthly check, expect to do these actions:<ul>
-<li>Your <em>Apple Developer</em> account must be active</li>
-<li>All agreements must be signed for your <em>Apple Developer</em> account</li>
-<li>Once a year, you need to update renew certificates, but this is automatic with <code>Loop 3.6.0</code> and newer versions</li>
-</ul>
-</li>
-</ul>
-<p>If you are running <code>Loop-dev</code>, be sure to review these instructions but modify for the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are using: refer to <a href="../build-dev-browser/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a></p>
+<p>If you are running <code>Loop-dev</code>, be sure to review these instructions but modify for the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are using: refer to <a href="../build-dev-browser/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a>.  Most users should be running <code>Loop-main</code>.</p>
 </details>
 <details class="question" open="open">
 <summary>FAQs (click to open/close)</summary>
