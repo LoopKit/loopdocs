@@ -6,19 +6,22 @@
 
 > Regardless of build method, this is an **update** and will install over your existing app; your **settings are maintained including your current CGM and Pump.**
 
-**For most, the *Loop* app is configured for automatic build, so you only need to come to this page if the automatic build failed.**
-
-**Be sure to update to the latest version of Loop - automatic build was restored for v3.14.7 and newer**
+**The build update process is supposed to be automatic as of Loop 3.4.0 or newer, but this automated process was disabled by GitHub. The developers attempted to resolve this by adding a new build action, build_loop_auto.yml to v 3.14.7,but GitHub again disabled the automated build action.**
 
 ???+ info "Time Estimate (click to open/close)"
     Manually update and build the *Loop* App
 
     - 5 min: Check *Apple* account status
-    - 5 min: Update version if a new one is available
+    - 5 min: Unless you're a developer or tester, make sure your Default Branch is set to main
+    - 5 min: Update version if a new one is available (Update Fork)
+    - 15 min: Add customizations to build_loop_manual (if customizations are desired)
     - 5 min: Start the Build
     - 1 hour: Wait for the build to complete and appear in the *TestFlight* app on your phone
         * depends on *GitHub*, *Apple* and *TestFlight*
     - 5 min: Install from *TestFlight* onto your phone
+
+If you have any issues with your build, provide your GitHub Loopworkspace repository URL to mentors on Facebook or Zulipchat.  Do not post photos or screenshots.
+
 
     Once a Year certificates must be renewed
 
@@ -26,21 +29,15 @@
 
     One Time: Complete the information for the Digital Service Act Compliance
 
-    * This is a new requirement that must be completed one time
+    * This is a one-time requirement
     * See [Digital Service Act Compliance](prepare-app.md#digital-service-act-compliance){: target="_blank" } for instructions
 
 ???+ abstract "Page Summary (click to open/close)"
-    **The *Loop* app must be built at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
+    **The *Loop* app must be updated at least every 90 days when you build with a browser - this is *TestFlight* requirement.**
 
     Most users will start at [How to Update or Rebuild](#how-to-update-or-rebuild):
 
-    * If currently using verion 3.4.0 or newer, builds are supposed to be automatic, but are being disabled by GitHub ([for Loop, not other OS-AID](https://github.com/orgs/community/discussions/181236)), so you should check the status monthly
-    * In addition to that monthly check, expect to do these actions:
-        * Your *Apple Developer* account must be active
-        * All agreements must be signed for your *Apple Developer* account
-        * Once a year, you need to update renew certificates, but this is automatic with `Loop 3.6.0` and newer versions
-
-    If you are running `Loop-dev`, be sure to review these instructions but modify for the branch you are using: refer to [Build Loop dev with Browser](build-dev-browser.md)
+    If you are running `Loop-dev`, be sure to review these instructions but modify for the branch you are using: refer to [Build Loop dev with Browser](build-dev-browser.md).  Most users should be running `Loop-main`.
 
 ???+ question "FAQs (click to open/close)"
     - **"What is an update?"** Anytime you want to change versions or if your *TestFlight* build is about to expire, follow the instructions on this page.
