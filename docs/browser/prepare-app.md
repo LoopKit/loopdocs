@@ -92,9 +92,9 @@ If you get an error saying `An Application Group with Identifier 'group.com.TEAM
     * In the Description box in the upper left, edit the Description to match the **NAME**
     * Tap Save in the upper right and confirm the the change for that identifier._
 
-    Notice in the table below that the XCode version of the **NAME** for the `App Group` is the same as the **IDENTIFIER** but with the `.` replaced with a space.
+    Notice in the table below that the Xcode version of the **NAME** for the `App Group` is the same as the **IDENTIFIER** but with the `.` replaced with a space.
 
-    | NAME | XCode version | IDENTIFIER |
+    | NAME | Xcode version | IDENTIFIER |
     |:--|:--|:--|
     | Loop App Group | group com TEAMID loopkit LoopGroup| group.com.TEAMID.loopkit.LoopGroup |
 
@@ -116,7 +116,7 @@ If you never built using *Xcode*, then after the <code>Add Identifiers</code> *A
 
 #### Previous Xcode Builders
 
-If you built previously using a Mac with Xcode, you may see the XCode version in your **NAME** column of the table below.
+If you built previously using a Mac with Xcode, you may see the Xcode version in your **NAME** column of the table below.
 
 - The name starts with XC and then the **IDENTIFIER** is appended where the `.` is replaced with a space, the example for `Loop` is shown in detail
 
@@ -135,7 +135,7 @@ If you built previously using a Mac with Xcode, you may see the XCode version in
 
 #### Table with Name and Identifier
 
-| NAME | XCode version | IDENTIFIER |
+| NAME | Xcode version | IDENTIFIER |
 |:--|:--|:--|
 | `Loop` | `XC com TEAMID loopkit Loop`| `com.TEAMID.loopkit.Loop` |
 | `Loop Intent Extension` | XC Identifier | `com.TEAMID.loopkit.Loop.Loop-Intent-Extension` |
