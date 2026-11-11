@@ -338,8 +338,10 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 | 10 Nov 2026 | 1 | Build with Xcode 27.1 in GitHub Actions, so the app runs full screen on the iPhone Duo inner display ([LoopWorkspace PR 567](https://github.com/LoopKit/LoopWorkspace/pull/567)) |
 | 10 Nov 2026 | 1 | Update EversenseKit, G7SensorKit, Loop, LoopKit, MedtrumKit and OmnipodKit ([LoopWorkspace PR 580](https://github.com/LoopKit/LoopWorkspace/pull/580))<br>G7: reconnect with a start delay to fix multi-hour background gaps<br>Loop: status screen layout for iPhone Duo inner display<br>OmnipodKit: fix a crash from a replaced Pod connection; record a bolus cut short by a Pod fault<br>see [v3.14.12 Highlights](releases.md#v31412-highlights){: target="_blank" } for the full list |
 | 10 Nov 2026 | 1 | Restore the weekly schedule to `4. Build Loop`, phase out `4. Build Loop Auto`, skip the fastlane update check ([LoopWorkspace PR 581](https://github.com/LoopKit/LoopWorkspace/pull/581)) |
+| 11 Nov 2026 | 1 | Update translations from lokalise for EversenseKit, Loop, LoopKit, LoopSupport, MedtrumKit, MinimedKit and OmnipodKit, including updated Czech strings ([LoopWorkspace PR 582](https://github.com/LoopKit/LoopWorkspace/pull/582)) |
 
-<!-- TODO: add the release/v3.14.12 branch table (as was done for v3.14.11) once the release is merged into main -->
+<!-- TODO (release): replace ### with the number of the LoopWorkspace PR that merges dev into main, in the link below -->
+The `dev` branch was merged into `main` for the release with [LoopWorkspace PR ###](https://github.com/LoopKit/LoopWorkspace/pull/###).
 
 Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
 

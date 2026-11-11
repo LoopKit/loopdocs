@@ -31,6 +31,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 ## Loop v3.14.12
 
+<!-- TODO (release): confirm the v3.14.12 tag and release page exist at LoopWorkspace (link below) -->
 [*Loop* v3.14.12](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.12) was released on 11 November 2026.
 
 #### v3.14.12 Highlights
@@ -79,6 +80,10 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 * A scheduled run that has nothing to build shows as cancelled, not successful
 * Create Certificates now fails with a clear message when your stored certificate is rejected and no renewal will run, instead of failing later during the build
 * The "Please update using bundle update fastlane" notice no longer appears at the end of every run, where it could be mistaken for the cause of a failed build
+
+**Translations**
+
+* Bring in new translations from lokalise, including updated Czech strings
 
 
 - - -
