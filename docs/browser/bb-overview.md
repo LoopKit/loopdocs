@@ -1,6 +1,6 @@
 ## Build with a Browser
 
-<span translate="no">Loop 3</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span> and installed on your phone using the *TestFlight* app. This method works on any device with a browser (PC, Mac, tablet, or iPad) - no Mac computer required.
+<span translate="no">Loop</span>&nbsp;can be built with a web browser using <span translate="no">GitHub Actions</span> and installed on your phone using the *TestFlight* app. This method works on any device with a browser (PC, Mac, tablet, or iPad) - no Mac computer required.
 
 !!! success "Same App, Different Method"
     * If you prefer to use *Xcode* on your *Mac*, see [Build with *Mac*](../build/overview.md){: target="_blank" }
@@ -12,7 +12,8 @@
 **Choose Browser Build if:**
 
 - [x] You don't have a Mac or prefer not to use one
-- [x] You want automatic monthly builds (after initial setup)
+- [x] You want easy manual builds (after initial setup)
+- [x] You want to provide builds to a family member or yourself via TestFlight
 - [x] You're comfortable following step-by-step instructions with multiple accounts (Apple, GitHub)
 - [x] You can dedicate 2-4 hours for first-time setup (spread over several days)
 
@@ -114,14 +115,10 @@ Once your build completes successfully:
 
 ### Automatic Updates
 
-!!! success "Check Status of Build Action Monthly"
-    The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*, and even for *Loop*, some people are getting automatic builds.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
-
-    * Keep your Apple Developer account active
-    * Install updates from TestFlight when ready
-    * **Note:** Starting May 2025, you may need to [manually trigger builds](automatic.md#manual-action-for-automatic-build){: target="_blank" } every 60 days
-
-    Learn more: [Automatic Update & Build](automatic.md){: target="_blank" }
+!!! abstract "*GitHub* disables automatic update"
+    *GitHub* is very likely to disable your [automatic build](automatic.md#manual-action-for-automatic-build){: target="_blank" } for the *Loop* app. The automatic build still works for other apps that use the same method.
+    
+    * Builders of the *Loop* app should just set a calendar reminder to do a manual build once a month so you always have a fresh build available in *TestFlight*.
 
 ### Customization
 
@@ -137,7 +134,7 @@ For advanced users who want cutting-edge features before official release:
 * [Build Development Version](build-dev-browser.md){: target="_blank" }
 
 !!! tip "Build Stable First"
-    We recommend building the stable release version first. Once successful, you can switch to the development version.
+    We recommend building the stable release version, especially if you are new to Loop.
 
 ### Comparison: Browser vs Mac Build
 
@@ -146,7 +143,7 @@ For advanced users who want cutting-edge features before official release:
 | **Device Required** | Any device with browser | Mac with recent macOS |
 | **Xcode Required** | No (GitHub provides) | Yes (must update regularly) |
 | **Initial Setup Time** | 2-4 hours over several days | 1-2 hours (if Mac is ready) |
-| **Monthly Updates** | Automatic or<br>Five minutes with [Manual Actions](automatic.md#manual-action-for-automatic-build){: target="_blank"}<br>Build uploaded to TestFlight| Manual via Xcode |
+| **Monthly Updates** | Five minutes with [Manual Actions](automatic.md#manual-action-for-automatic-build){: target="_blank"}<br>- Build uploaded to TestFlight<br>Automatic Build for Loop typically disabled by GitHub | Manual via Xcode |
 | **Build Time** | ~30 minutes (in cloud) | ~30 minutes (local) |
 | **App Expiration** | 90 days (TestFlight) | 1 year |
 | **Customization** | Supported | Supported |

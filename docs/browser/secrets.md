@@ -266,7 +266,7 @@ The free level comes with plenty of storage and compute time to build the *Loop*
     [<span class="loop-bigger">:material-skip-forward:</span>](#make-up-a-password) To skip the detailed instructions, click on [Make up a Password](#make-up-a-password).
 
 !!! tip "Default Settings"
-    These instructions are a prerequisite for automatic update and automatic build.
+    These instructions are a prerequisite for automatic update and automatic build. Even though GitHub is currently disabling the automatic timing for the *Loop* app, this works for other apps and it's best to be prepared in case GitHub stops disabling the automatic build feature.
 
     Refer to [Modify Automatic Building](automatic.md#modify-automatic-building){: target="_blank" } if you don't want to accept the default recommendation to automatically update and build.
 

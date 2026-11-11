@@ -4,30 +4,22 @@ The instructions provided for building with a browser include settings to automa
 
 ## Automatic Build
 
-!!! tip "One Build Action for Loop v3.14.12 and newer"
-    With v3.14.12, the *Loop* app has one build action again: `4. Build Loop`. It runs on the weekly schedule and you also use it for a manual build.
+Automatic Build is Manual for Loop: skip ahead to [Manual Action for Automatic Build](#manual-action-for-automatic-build).
 
-    After you update your fork to v3.14.12 or newer:
+??? tips "More information (click to open/close)"
+    The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
 
-    * If `4. Build Loop` shows as disabled, enable it in the Actions tab (see [What Manual Action is Required?](#what-manual-action-is-required)); otherwise the schedule won't run
-    * If you added customization lines to build_loop_auto.yml, copy them into build_loop.yml
-    * Use `4. Build Loop` for all builds
-        * The action named `zzz Phasing Out` (the build_loop_auto.yml file) no longer runs on a schedule
-        * It is kept only so you can copy your customizations; it will be removed in a future release
+    * Keep your Apple Developer account active
+    * Install updates from TestFlight when ready
+    * **Note:** Starting May 2025, you may need to [manually trigger builds](automatic.md#manual-action-for-automatic-build){: target="_blank" } every 60 days
+    * We recommend a monthly calendar reminder to kick off the manual build so you always have a build availble in *TestFlight*
 
-??? abstract "Why did the name change again? (Click to Open/Close)"
-    *GitHub* kept disabling the scheduled build action in many forks, so the weekly update and build stopped running. We never found the cause.
-
-    * v3.14.7 moved the schedule to a new file, build_loop_auto.yml, shown as `4. Build Loop Auto`; the original build_loop.yml was renamed `4. Build Loop Manual`
-    * That worked while only a few people used it, but after release *GitHub* began disabling `4. Build Loop Auto` the same way
-    * Since a new file name did not help, v3.14.12 puts the schedule back into build_loop.yml so there is one build action that runs both manually and on schedule
-
-<!-- TODO: add a screenshot of the Actions list showing "4. Build Loop" and "zzz Phasing Out" -->
+    Some people are still getting automatic builds because GitHub does not disable the `Build Loop` action. If you are one of the lucky ones, please check to make sure you continue to get automatic builds.
 
 
-## Skipped Build
+### Skipped Build
 
-The automatic build process checks once a week for updates to the `main` branch. If there are no updates, it skips the build unless it is the second Sunday of the month.
+Unless the `Build Loop` action is disabled, the automatic build process checks once a week for updates to the `main` branch. If there are no updates, it skips the build unless it is the second Sunday of the month.
 
 * The skipped build used to show a green check mark which caused some confusion
 * With v3.14.7, the indications were updated as shown in the graphic below
@@ -42,15 +34,30 @@ The automatic build process checks once a week for updates to the `main` branch.
 ## Manual Action for Automatic Build
 
 !!! warning "Browser Build for *Loop* Disabled?"
-    *GitHub* may disable the `4. Build Loop` action. Update your fork to v3.14.12 (or newer), then enable the action if it shows as disabled.  See: [Automatic Build](#automatic-build)
+    *GitHub* may disable the `4. Build Loop` action. If it does, you need to first enable the action and then you can start it manually.
 
-??? tip "Stale Repositoriy Always Requires Manual Action (Click to Open Close)"
+??? abstract "Stale Repositoriy Always Requires Manual Action (Click to Open Close)"
     *GitHub* automatically **disables actions** that run according to a schedule if the repository in question is **inactive**.
 
     What does that mean?
 
     * **inactive** means stable code (no new commit within the last 60 days)
     * **disables actions** means the Build Action shows up as disabled
+
+
+!!! tip "One Build Action for Loop v3.14.12 and newer"
+    We tried using a different name for the automatic build and it worked briefly. But then *GitHub* began to disable the new name (build_loop_auto.yml) the same way it disabled the old name (build_loop.yml).  We are transitioning back to having a single build file.
+
+    The graphic below compares the workflows shown with v3.14.11 and v3.14.12.
+    
+    After you update your fork to v3.14.12 or newer:
+
+    * If you added customization lines to build_loop_auto.yml, copy them into build_loop.yml
+    * Use `4. Build Loop` for all builds
+        * The action named `zzz Phasing Out` (the build_loop_auto.yml file) no longer runs on a schedule
+        * It is kept only so you can copy your customizations; it will be removed in a future release
+
+    ![actions shown before and after v3.14.12](img/workflow-change.png)
 
 ### What Manual Action is Required?
 
@@ -137,8 +144,6 @@ The code that controls the build process was streamlined and enhanced. It runs e
 
 Normally, you will see a `build action` once a week. This happens every Sunday (as soon as your version is 3.8.2 or newer).
 
-> Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
-
 If there are no updates to the `main` branch and it is not the second Sunday, the run is very short and shows as cancelled, not successful. This is expected: it means no new build was needed. See [Skipped Build](#skipped-build).
 
 If there is an update, the `build action` updates your fork and creates a new build. 
@@ -149,14 +154,12 @@ In that case, you should check your favorite information site to find out what t
 
 On the second Sunday of every month, you will see a longer `build action`. The purpose of this build is to provide a recent version of the app in *TestFlight* so you are never in a situation where you have no app on your phone.
 
-> Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
-
 !!! important "You Get No Warning if Repository Build Action is Disabled"
     If your build action is disabled, the scheduled run does not happen at all: no build, no warning email and no new entry in your Actions list.
 
     * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
 
-You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
+You start getting [Notifications](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" } inside the *Loop* app when there are fewer than 20 days until expiration. When you see the warning, install the newest build from your *TestFlight* app. You do not want to get the dreaded "Loop Beta is not available" message on your phone. (The warnings get very agressive when close to expiration.)
 
 ### What are the `alive branches`?
 
@@ -165,7 +168,6 @@ In April 2025, GitHub disallowed using the build action to automatically add com
 Once you update to v3.8.2 or newer, references to `alive branches` are removed from the build action.
 
 > * If you have alive branches (`alive`, `alive-dev` or `alive-main`) you may delete them if you choose
-* Only delete alive branches after your default branch is updated to the new version
 
 ## Automatic Certificates
 
@@ -209,11 +211,9 @@ With the release of `Loop 3.8.2` and newer, the build schedule is updated.
 
 The table below indicates **planned** time for the automatic build schedule. GitHub will start the build action no earlier than the stated time but it can be delayed depending on activity at GitHub.
 
-> For apps not yet changed to the new method, the weekly runs are on Wednesday and the monthly runs are on the 1st of each month.
-
 | Open-Source App | AutoCerts? | Weekly<br>UTC | Once a Month<br>UTC |
 |:--|:-:|:-:|:-:|
-| <span translate="no">Loop</span> | &#x2705; | 07:33 | same |
+| <span translate="no">Loop</span><br>*GitHub* will disable this | &#x2705; | 07:33 | same |
 | <span translate="no">LoopCaregiver</span> | &#x2705; | 13:33 | 11:33 |
 | <span translate="no">LoopFollow</span> | &#x2705; | 10:17 | same |
 | <span translate="no">LoopFollow_Second</span> | &#x2705; | 10:27 | same |
@@ -221,6 +221,9 @@ The table below indicates **planned** time for the automatic build schedule. Git
 | <span translate="no">Trio</span> | &#x2705; | 06:43 | same |
 | <span translate="no">xDrip4iOS</span> | &#x274C; | 16:43 | 14:43 |
 | <span translate="no">iAPS</span> | &#x2705; | 03:00 daily | n/a |
+
+
+> For apps not yet changed to the new method, the weekly runs are on Wednesday and the monthly runs are on the 1st of each month.
 
 > The *iAPS* app uses a different system to trigger updates
 

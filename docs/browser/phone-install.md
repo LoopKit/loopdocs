@@ -2,9 +2,11 @@
 
 **The *Loop* app must be built at least every 90 days when using a browser to build.** 
 
-> The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
+> The automatic build actions are timed to occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236))
 
-> See [Manual Enable for Build Action](bb-errors.md#manual-enable-for-build-action-may-be-required){: target="_blank" }
+> As a *Loop* user, you should set a calendar reminder to enable and run your build action monthly so you always have a valid build in *TestFlight*.
+
+> * See [Manual Enable for Build Action](bb-errors.md#manual-enable-for-build-action-may-be-required){: target="_blank" }
 
 It is recommended you manually install the new build using *TestFlight* at your convenience.
 
@@ -65,12 +67,20 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.14.7 and later. Starting in May 2025, *GitHub* often disabled automatic building. With v3.14.12, the schedule is back in the `build_loop.yml` file (the `4. Build Loop` action). If you added customizations to `build_loop_auto.yml`, copy them to `build_loop.yml` to get the customizations and automatic builds once per month or when the code updates. If *GitHub* has disabled `4. Build Loop`, enable it: see [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
+The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages configure for automatic build of the *Loop* app unless *GitHub* disables the build action.
+
+* Starting in May 2025, *GitHub* began to disable automatic building
+* That means you have to manually start the build action
+    * We recommend you do this monthly using a calendar reminder
+* For more information, see [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }.
+
+What the automatic action does, when it is not disabled:
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release release
     * Automatically create a new build and upload it to *TestFlight*
     * This is only for the `default` branch, typically `main`
 * Build the app at least once a month and upload it to *TestFlight*
+* For more information, see [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
 
 Unless you make the recommended one-time change to [Disable Automatic Install from *TestFlight*](#disable-automatic-install-from-testflight), the default setting for each app found in *TestFlight* is to:
 

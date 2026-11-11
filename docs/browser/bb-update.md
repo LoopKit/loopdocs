@@ -6,7 +6,10 @@
 
 > Regardless of build method, this is an **update** and will install over your existing app; your **settings are maintained including your current CGM and Pump.**
 
-**The build update process is supposed to be automatic as of Loop 3.4.0 or newer, but *GitHub* has disabled the automated build action for many people. A new action name in v3.14.7 did not fix this, so v3.14.12 returns to a single `4. Build Loop` action. Check that it is enabled, and build manually if *TestFlight* has no recent build. See [Automatic Build](automatic.md#automatic-build){: target="_blank" }.**
+**The build update process is supposed to be automatic as of Loop 3.4.0 or newer, but *GitHub* disables the automated build action for many people. That means you need to enable the action and start the build yourself.**
+
+* We recommend you do that once a month
+* [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }
 
 ???+ info "Time Estimate (click to open/close)"
     Manually update and build the *Loop* App
