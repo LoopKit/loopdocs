@@ -80,7 +80,7 @@ The table below lists active branches.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| `main` | 3.14.12 | DD Nov 2026 | [released code](releases.md#v31412-highlights){: target="_blank" } |
+| `main` | 3.14.12 | 11 Nov 2026 | [released code](releases.md#v31412-highlights){: target="_blank" } |
 | `dev` | 3.14.12 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 | `feat/all-managers` | 3.14.10 | 22 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ eadb9fe` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
@@ -337,7 +337,7 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 | 09 Nov 2026 | 1 | Bump version to 3.14.12 ([LoopWorkspace PR 578](https://github.com/LoopKit/LoopWorkspace/pull/578)) |
 | 10 Nov 2026 | 1 | Build with Xcode 27.1 in GitHub Actions, so the app runs full screen on the iPhone Duo inner display ([LoopWorkspace PR 567](https://github.com/LoopKit/LoopWorkspace/pull/567)) |
 | 10 Nov 2026 | 1 | Update EversenseKit, G7SensorKit, Loop, LoopKit, MedtrumKit and OmnipodKit ([LoopWorkspace PR 580](https://github.com/LoopKit/LoopWorkspace/pull/580))<br>G7: reconnect with a start delay to fix multi-hour background gaps<br>Loop: status screen layout for iPhone Duo inner display<br>OmnipodKit: fix a crash from a replaced Pod connection; record a bolus cut short by a Pod fault<br>see [v3.14.12 Highlights](releases.md#v31412-highlights){: target="_blank" } for the full list |
-| DD Nov 2026 | 1 | Restore the weekly schedule to `4. Build Loop`, phase out `4. Build Loop Auto`, skip the fastlane update check ([LoopWorkspace PR 581](https://github.com/LoopKit/LoopWorkspace/pull/581)) |
+| 10 Nov 2026 | 1 | Restore the weekly schedule to `4. Build Loop`, phase out `4. Build Loop Auto`, skip the fastlane update check ([LoopWorkspace PR 581](https://github.com/LoopKit/LoopWorkspace/pull/581)) |
 
 <!-- TODO: add the release/v3.14.12 branch table (as was done for v3.14.11) once the release is merged into main -->
 
