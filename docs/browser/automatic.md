@@ -7,7 +7,7 @@ The instructions provided for building with a browser include settings to automa
 Automatic Build is Manual for Loop: skip ahead to [Manual Action for Automatic Build](#manual-action-for-automatic-build).
 
 ??? tips "More information (click to open/close)"
-    The automatic build actions should occur every Sunday. They do for all OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)) 
+    The automatic build actions should occur every Sunday. They do for most OS-AID apps except for *Loop*.  ([We do not know why.](https://github.com/orgs/community/discussions/181236)). It appears this is starting to happen to the *Trio* app (November 2026).
 
     * Keep your Apple Developer account active
     * Install updates from TestFlight when ready
@@ -213,12 +213,12 @@ The table below indicates **planned** time for the automatic build schedule. Git
 
 | Open-Source App | AutoCerts? | Weekly<br>UTC | Once a Month<br>UTC |
 |:--|:-:|:-:|:-:|
-| <span translate="no">Loop</span><br>*GitHub* will disable this | &#x2705; | 07:33 | same |
+| <span translate="no">Loop</span><br>*GitHub* typically disables this | &#x2705; | 07:33 | same |
 | <span translate="no">LoopCaregiver</span> | &#x2705; | 13:33 | 11:33 |
 | <span translate="no">LoopFollow</span> | &#x2705; | 10:17 | same |
 | <span translate="no">LoopFollow_Second</span> | &#x2705; | 10:27 | same |
 | <span translate="no">LoopFollow_Third</span> | &#x2705; | 10:40 | same |
-| <span translate="no">Trio</span> | &#x2705; | 06:43 | same |
+| <span translate="no">Trio<br>*GitHub* might disable this</span> | &#x2705; | 06:43 | same |
 | <span translate="no">xDrip4iOS</span> | &#x274C; | 16:43 | 14:43 |
 | <span translate="no">iAPS</span> | &#x2705; | 03:00 daily | n/a |
 

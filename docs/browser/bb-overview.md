@@ -116,7 +116,7 @@ Once your build completes successfully:
 ### Automatic Updates
 
 !!! abstract "*GitHub* disables automatic update"
-    *GitHub* is very likely to disable your [automatic build](automatic.md#manual-action-for-automatic-build){: target="_blank" } for the *Loop* app. The automatic build still works for other apps that use the same method.
+    *GitHub* is very likely to disable your [automatic build](automatic.md#manual-action-for-automatic-build){: target="_blank" } for the *Loop* app. The automatic build still works for other apps that use the same method, although the disable issue appears to be happening for some *Trio* builders (November 2026).
     
     * Builders of the *Loop* app should just set a calendar reminder to do a manual build once a month so you always have a fresh build available in *TestFlight*.
 

@@ -69,7 +69,8 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages configure for automatic build of the *Loop* app unless *GitHub* disables the build action.
 
-* Starting in May 2025, *GitHub* began to disable automatic building
+* Starting in May 2025, *GitHub* began to disable automatic building for the *Loop* app
+    * It appears this may be happening for the *Trio* app (November 2026)
 * That means you have to manually start the build action
     * We recommend you do this monthly using a calendar reminder
 * For more information, see [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }.
