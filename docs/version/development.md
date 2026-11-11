@@ -360,7 +360,7 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 | 10 Nov 2026 | 1 | Restore the weekly schedule to `4. Build Loop`, phase out `4. Build Loop Auto`, skip the fastlane update check ([LoopWorkspace PR 581](https://github.com/LoopKit/LoopWorkspace/pull/581)) |
 | 11 Nov 2026 | 1 | Update translations from lokalise for EversenseKit, Loop, LoopKit, LoopSupport, MedtrumKit, MinimedKit and OmnipodKit, including updated Czech strings ([LoopWorkspace PR 582](https://github.com/LoopKit/LoopWorkspace/pull/582)) |
 
-The `dev` branch was merged into `main` for the release with [LoopWorkspace PR 584](https://github.com/LoopKit/LoopWorkspace/pull/584). Other than the version number, the released code is identical to `dev` commit `a31d16c`.
+The `dev` branch was merged into `main` for the release with [LoopWorkspace PR 584](https://github.com/LoopKit/LoopWorkspace/pull/584). The released code is identical to `dev` commit `a31d16c`.
 
 Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
 
