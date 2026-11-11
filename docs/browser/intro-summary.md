@@ -48,16 +48,14 @@
         * [Create your version of *Loop* in `App Store` (personal use only, not for distribution)](prepare-app.md#create-loop-app-in-app-store-connect){: target="_blank" }
         * [Set up `Internal TestFlight Group for the App`](tf-users.md#testflight-overview){: target="_blank" }
     * *GitHub*:
-        * [`Action: 4 Build Loop Auto`](build-yml.md#build-the-loop-app){: target="_blank" }
+        * [`Action: 4 Build Loop`](build-yml.md#build-the-loop-app){: target="_blank" }
             * Yes we can count, but Action 3 is included in Action 4
-            * Only the *Loop* app has the word "Auto" added - that's for historical reasons; if you are using these instructions to build another app, you will not see the word "Auto" included in the name, but it will build automatically
     * Phone: [Install the *Loop* app using the *TestFlight* app](phone-install.md){: target="_blank" }
 
 ???+ question "FAQs (click to open/close)"
     - **Do I need a Mac computer?** No. This can be done on any browser, although it will be easier using a computer or tablet than just using a phone.
-    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are really fast. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action. For more information, see [Automatic Update & Build](automatic.md){: target="_blank" }.
-    - **When do I have to kick off my automatic build?** Starting in May 2025, you may need to take an extra action after 60 days with no updates to the app: [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" } 
-    - **Can you explain the new automatic building?** There's a whole page on [Automatic Update & Build](automatic.md){: target="_blank" } for more explanations
+    - **Isn't it hard to build every 90 days?** The initial setup and installation take a lot of your focused time. But once you build, future updates and builds are really fast. You just need to keep your Apple Developer account up to date. Review any email that says a GitHub action failed - read the error and take action. For more information, see [Update & Build](automatic.md){: target="_blank" }.
+    - **When do I have to kick off my build?** Starting in May 2025, GitHub disables the automatic build feature for Loop so you need to take an extra action after 60 days with no updates to the app: [What Manual Action is Required?](automatic.md#what-manual-action-is-required){: target="_blank" } 
     - **Can I use this for my child?** You, as the adult, can install using *TestFlight* on your child's phone. The explicit steps are provided at [Install on Phone: *TestFlight* for a Child](phone-install.md#testflight-for-a-child){: target="_blank" }.
     - **Can I still use my customizations?** Yes. [Customize using Browser](custom-browser.md){: target="_blank" }
     - **Is there a build video?** Yes. [How to Build the *Loop* App With a Web Browser](https://www.youtube.com/watch?v=kiu5ho0MTW8)

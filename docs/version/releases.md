@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.11 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.12 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,58 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.12
+
+[*Loop* v3.14.12](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.12) was released on 11 November 2026.
+
+#### v3.14.12 Highlights
+
+**Loop Features**
+
+* The status screen layout is adjusted for the inner display of the iPhone Duo: the HUD and status row no longer disappear after fold/unfold
+* The glucose rate display updates right away when you change glucose units
+* Settings saved by a `next-dev` build that uses presets are read correctly, so testers returning from `next-dev` to `main` keep their settings
+
+**Omnipod Users**
+
+* Fixed a crash that could happen when an old Pod connection finished after a new one had taken over
+* When a Pod faults partway through a bolus, only the insulin that was delivered counts toward insulin on board
+* Improved logging for Pod connections to help troubleshoot
+
+**Dexcom G7 Users**
+
+* Fixed gaps of several hours in glucose readings while *Loop* was in the background, which became visible after the Pod Keep Alive change in v3.14.9
+
+**Eversense Users**
+
+* Glucose is read right after connecting, which improves the chance of getting a reading each time
+* Each new sensor is started correctly, not just the first sensor after Transmitter setup
+
+**Medtrum Users**
+
+* Reconnects after a Bluetooth reset
+* Unsaved patch settings are kept during sync
+* Improved base reset detection and delivery state during patch change
+* Updated instruction screens with "how to" buttons
+
+**Translations**
+
+* Bring in new translations from lokalise, including updated Czech strings
+
+**Browser Build**
+
+* *GitHub* Actions now build with Xcode 27.1, so the app runs full screen on the iPhone Duo inner display
+* The weekly schedule moved back to the build_loop.yml file, shown as `4. Build Loop`
+    * *GitHub* also disabled the interim build_loop_auto.yml action, so expect that you will still need to [build manually](../browser/automatic.md#manual-action-for-automatic-build){: target="_blank" }
+    * The interim action is renamed `zzz Phasing Out` and no longer runs on a schedule; it is kept only so you can move customization lines
+    * **Only if you added customizations to build_loop_auto.yml**: copy those lines into build_loop.yml; no one else needs to take action
+* A scheduled run that has nothing to build ends as cancelled, not successful, so a green check always means a new build was made
+* Create Certificates now fails with a clear error when Fastlane Match cannot use the Distribution certificate in Match-Secrets and no automatic renewal will run; the error points to [Delete `Match-Secrets`](../browser/bb-errors.md#delete-match-secrets){: target="_blank" }
+* Fastlane update checks are skipped in all workflows to remove a confusing message from the logs
+
 
 - - -
 

@@ -6,7 +6,10 @@
 
 > Regardless of build method, this is an **update** and will install over your existing app; your **settings are maintained including your current CGM and Pump.**
 
-**The build update process is supposed to be automatic as of Loop 3.4.0 or newer, but this automated process was disabled by GitHub. The developers attempted to resolve this by adding a new build action, build_loop_auto.yml to v 3.14.7,but GitHub again disabled the automated build action.**
+**The build update process is supposed to be automatic as of Loop 3.4.0 or newer, but *GitHub* disables the automated build action for many people. That means you need to enable the action and start the build yourself.**
+
+* We recommend you do that once a month
+* [What Manual Action is Required?](automatic.md#what-manual-action-is-required){: target="_blank" }
 
 ???+ info "Time Estimate (click to open/close)"
     Manually update and build the *Loop* App
@@ -14,7 +17,7 @@
     - 5 min: Check *Apple* account status
     - 5 min: Unless you're a developer or tester, make sure your Default Branch is set to main
     - 5 min: Update version if a new one is available (Update Fork)
-    - 15 min: Add customizations to build_loop_manual (if customizations are desired)
+    - 15 min: Add customizations to build_loop.yml (if customizations are desired)
     - 5 min: Start the Build
     - 1 hour: Wait for the build to complete and appear in the *TestFlight* app on your phone
         * depends on *GitHub*, *Apple* and *TestFlight*
@@ -254,9 +257,10 @@ The bullets below show typical messages when you are building the `main` branch.
 Refer to graphic below as you follow the steps to build the *Loop* app. The numbers highlighted in the graphic correspond to numbers in parentheses in the bullet list below:
 
 * (1) Click on the `Actions` tab
-* (2) Select the `4. Build Loop Auto` workflow on the left
+* (2) Select the `4. Build Loop` workflow on the left
     * If using a mobile browser, be sure to use landscape mode to more closely match how *GitHub* looks on a computer.
-* If you only see `4. Build Loop` and the action is disabled, update to the latest version of `main` and return to actions, you will no longer need to do step (3) from the graphic
+* (3) If the action shows as disabled, click `Enable workflow`; otherwise skip this step
+    * If you see `4. Build Loop Auto` or `4. Build Loop Manual`, your fork is older than v3.14.12: update to the latest version of `main` and return to actions
 * (4) Look on the right and click `Run workflow` to  see the dropdown
 * (5) Click on the green `Run workflow` button in the dropdown
 * Wait ~25 min for the build to complete successfully
@@ -269,7 +273,7 @@ Refer to graphic below as you follow the steps to build the *Loop* app. The numb
 
 If a new release is announced at [Current Release](../version/releases.md#current-release){: target="_blank" }, look to see if there are instructions about extra steps required with the release. 
 
-> When `Loop 3.14.7` was released, you needed to transfer any desired customizations from the `buld_loop.yml` file to the `build_loop_auto.yml` file. This is a one-time action, only needed for the *Loop* app. See [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
+> When `Loop 3.14.12` was released, the schedule moved back to the `build_loop.yml` file. Only if you added customizations to the `build_loop_auto.yml` file, copy them into `build_loop.yml`. This is a one-time action, only needed for the *Loop* app. See [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
 
 > Check out the [Ahead and Behind](#ahead-and-behind) instructions.
 

@@ -160,13 +160,12 @@ An example annotation for skipping adding the App Group one of the Identifiers i
 
 ### Manual Enable for Build Action May be Required
 
-The automatic build actions should occur every Sunday. 
+The automatic build actions are scheduled every Sunday, but *GitHub* often disables the build action for *Loop*. Expect to build manually.
 
 * If your build action is disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build
-* Once you update to 3.14.7 or newer, you should have a new action called Build Loop Auto that restores automatic building
-* You can ignore the action labeled Build Loop Manual; it is left for historical reasons to enable users to keep a record of customizations they may have used in earlier versions and may be removed later.
-
-The figure below is also left for historical reasons, but should not be required.
+* With v3.14.12 or newer, use the `4. Build Loop` action
+* You can ignore the action labeled `zzz Phasing Out`; it is kept only so people who added customizations can copy them into build_loop.yml, and it will be removed in a future release
+* See [Automatic Build](automatic.md#automatic-build){: target="_blank" } for more information
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 
@@ -876,6 +875,13 @@ Your profiles will be displayed. Under the `Expiration` column, you might see an
     > ![delete selected profiles](img/profiles-03.png){width="500"}
 
 ### Delete `Match-Secrets`
+
+!!! tip "Sent here by the Create Certificates error?"
+    Starting with v3.14.12, `Create Certificates` stops with this error when your stored certificate cannot be used and no automatic renewal will run:
+
+    `Fastlane Match could not use the Distribution certificate in your Match-Secrets repository, and automated renewal will not run because another valid certificate exists.`
+
+    In that case, deleting `Match-Secrets` and running the action again is the expected fix.
 
 Make sure you really need to do this - please [ask a mentor for help](#where-to-get-help-with-browser-build).
 
