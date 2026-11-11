@@ -73,7 +73,7 @@ The instructions on the [Configure to Use Browser](intro-summary.md){: target="_
     * It appears this may be happening for the *Trio* app (November 2026)
 * That means you have to manually start the build action
     * We recommend you do this monthly using a calendar reminder
-* For more information, see [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }.
+* For more information, see [What Manual Action is Required?](automatic.md#what-manual-action-is-required){: target="_blank" }.
 
 What the automatic action does, when it is not disabled:
 

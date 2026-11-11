@@ -9,7 +9,7 @@
 **The build update process is supposed to be automatic as of Loop 3.4.0 or newer, but *GitHub* disables the automated build action for many people. That means you need to enable the action and start the build yourself.**
 
 * We recommend you do that once a month
-* [Manual Action for Automatic Build](automatic.md#manual-action-for-automatic-build){: target="_blank" }
+* [What Manual Action is Required?](automatic.md#what-manual-action-is-required){: target="_blank" }
 
 ???+ info "Time Estimate (click to open/close)"
     Manually update and build the *Loop* App
