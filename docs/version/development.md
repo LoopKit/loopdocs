@@ -83,7 +83,7 @@ The table below lists active branches.
 | `main` | 3.14.12 | 11 Nov 2026 | [released code](releases.md#v31412-highlights){: target="_blank" } |
 | `dev` | 3.14.12 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
-| `feat/all-managers` | 3.14.12 | 11 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ eadb9fe` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `feat/all-managers` | 3.14.12 | 11 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ b494109` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `feat/tandem-closed-beta-next-dev` | 3.15.2 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
 | `feat/tandem-closed-beta` | 3.14.11 | 01 Nov 2026<br>**no longer updated** | Replaced by `feat/tandem-closed-beta-next-dev`<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
 
