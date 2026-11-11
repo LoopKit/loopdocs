@@ -22,7 +22,7 @@ Automatic Build is Manual for Loop: skip ahead to [Manual Action for Automatic B
 Unless the `Build Loop` action is disabled, the automatic build process checks once a week for updates to the `main` branch. If there are no updates, it skips the build unless it is the second Sunday of the month.
 
 * The skipped build used to show a green check mark which caused some confusion
-* With v3.14.7, the indications were updated as shown in the graphic below
+* With v3.14.7 or newer, the indications were updated as shown in the graphic below
     * top row: a scheduled build was successful (this one was the second Sunday of a month)
     * middle row: the build was manually triggered and was successful
     * bottom row: a scheduled run determined there was no reason to build, so the run was cancelled; the cancelled icon means no build was made
@@ -44,9 +44,11 @@ Unless the `Build Loop` action is disabled, the automatic build process checks o
     * **inactive** means stable code (no new commit within the last 60 days)
     * **disables actions** means the Build Action shows up as disabled
 
+    This is **not** why the Build Loop action is being disabled. The repository is updated regularly.
+
 
 !!! tip "One Build Action for Loop v3.14.12 and newer"
-    We tried using a different name for the automatic build and it worked briefly. But then *GitHub* began to disable the new name (build_loop_auto.yml) the same way it disabled the old name (build_loop.yml).  We are transitioning back to having a single build file.
+    We tried using a different name for the automatic build and it worked briefly. But then *GitHub* began to disable the new name (build_loop_auto.yml) the same way it disabled the old name (build_loop.yml).  We are transitioning back to a single build file.
 
     The graphic below compares the workflows shown with v3.14.11 and v3.14.12.
     
@@ -142,11 +144,11 @@ The code that controls the build process was streamlined and enhanced. It runs e
 
 ### Successful Weekly Action
 
-Normally, you will see a `build action` once a week. This happens every Sunday (as soon as your version is 3.8.2 or newer).
+If *GitHub* was not disabling your build action, you would see a `build action` once a week.
 
-If there are no updates to the `main` branch and it is not the second Sunday, the run is very short and shows as cancelled, not successful. This is expected: it means no new build was needed. See [Skipped Build](#skipped-build).
-
-If there is an update, the `build action` updates your fork and creates a new build. 
+* The steps below are scheduled for every Sunday (when disabled, this does not happen)
+    * If there are no updates to the `main` branch and it is not the second Sunday, the run is very short and shows as cancelled, not successful. This is expected: it means no new build was needed. See [Skipped Build](#skipped-build).
+    * If there is an update, the `build action` updates your fork and creates a new build.
 
 In that case, you should check your favorite information site to find out what the update was and then, when you are ready, install the update using the *TestFlight* app on your phone.
 
