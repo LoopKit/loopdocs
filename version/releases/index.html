@@ -3350,6 +3350,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v31412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v31411" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4952,6 +4963,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v31412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v31411" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5407,7 +5429,7 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.11 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.12 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
@@ -5418,6 +5440,55 @@
 </blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v31412"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.12<a class="headerlink" href="#loop-v31412" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.12"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.12</a> was released on 11 November 2026.</p>
+<h4 id="v31412-highlights">v3.14.12 Highlights<a class="headerlink" href="#v31412-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> Features</strong></p>
+<ul>
+<li>The status screen layout is adjusted for the inner display of the iPhone Duo: the <abbr title="Heads-Up Display at top of Loop main screen, phone in portrait mode">HUD</abbr> and status row no longer disappear after fold/unfold</li>
+<li>The glucose rate display updates right away when you change glucose units</li>
+<li>Settings saved by a <code>next-dev</code> build that uses presets are read correctly, so testers returning from <code>next-dev</code> to <code>main</code> keep their settings</li>
+</ul>
+<p><strong><abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Users</strong></p>
+<ul>
+<li>Fixed a crash that could happen when an old Pod connection finished after a new one had taken over</li>
+<li>When a Pod faults partway through a bolus, only the insulin that was delivered counts toward insulin on board</li>
+<li>Improved logging for Pod connections to help troubleshoot</li>
+</ul>
+<p><strong>Dexcom G7 Users</strong></p>
+<ul>
+<li>Fixed gaps of several hours in glucose readings while <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> was in the background, which became visible after the Pod Keep Alive change in v3.14.9</li>
+</ul>
+<p><strong>Eversense Users</strong></p>
+<ul>
+<li>Glucose is read right after connecting, which improves the chance of getting a reading each time</li>
+<li>Each new sensor is started correctly, not just the first sensor after Transmitter setup</li>
+</ul>
+<p><strong>Medtrum Users</strong></p>
+<ul>
+<li>Reconnects after a Bluetooth reset</li>
+<li>Unsaved patch settings are kept during sync</li>
+<li>Improved base reset detection and delivery state during patch change</li>
+<li>Updated instruction screens with "how to" buttons</li>
+</ul>
+<p><strong>Translations</strong></p>
+<ul>
+<li>Bring in new translations from lokalise, including updated Czech strings</li>
+</ul>
+<p><strong>Browser Build</strong></p>
+<ul>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> now build with <abbr title="program used to build an app">Xcode</abbr> 27.1, so the app runs full screen on the iPhone Duo inner display</li>
+<li>The weekly schedule moved back to the build_loop.yml file, shown as <code>4. Build Loop</code><ul>
+<li><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> also disabled the interim build_loop_auto.yml action, so expect that you will still need to <a href="../../browser/automatic/#manual-action-for-automatic-build" target="_blank">build manually</a></li>
+<li>The interim action is renamed <code>zzz Phasing Out</code> and no longer runs on a schedule; it is kept only so you can move customization lines</li>
+<li><strong>Only if you added customizations to build_loop_auto.yml</strong>: copy those lines into build_loop.yml; no one else needs to take action</li>
+</ul>
+</li>
+<li>A scheduled run that has nothing to build ends as cancelled, not successful, so a green check always means a new build was made</li>
+<li>Create Certificates now fails with a clear error when Fastlane Match cannot use the Distribution certificate in <abbr title="a private repository that is automatically created for you in your GitHub account, stores keys required to build with GitHub Build Actions.  There is no need for you to interact with this repository">Match-Secrets</abbr> and no automatic renewal will run; the error points to <a href="../../browser/bb-errors/#delete-match-secrets" target="_blank">Delete <code>Match-Secrets</code></a></li>
+<li>Fastlane update checks are skipped in all workflows to remove a confusing message from the logs</li>
+</ul>
 <hr />
 <h2 id="loop-v31411"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.11<a class="headerlink" href="#loop-v31411" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.11"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.11</a> was released on 24 October 2026.</p>

@@ -4697,8 +4697,11 @@
 <h2 id="general-installation-information">General Installation Information<a class="headerlink" href="#general-installation-information" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when using a browser to build.</strong> </p>
 <blockquote>
-<p>The automatic build actions should occur every Sunday. They do for all OS-AID apps except for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.  (<a href="https://github.com/orgs/community/discussions/181236">We do not know why.</a>) </p>
-<p>See <a href="../bb-errors/#manual-enable-for-build-action-may-be-required" target="_blank">Manual Enable for Build Action</a></p>
+<p>The automatic build actions are timed to occur every Sunday. They do for all OS-AID apps except for <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>.  (<a href="https://github.com/orgs/community/discussions/181236">We do not know why.</a>)</p>
+<p>As a <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> user, you should set a calendar reminder to enable and run your build action monthly so you always have a valid build in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
+<ul>
+<li>See <a href="../bb-errors/#manual-enable-for-build-action-may-be-required" target="_blank">Manual Enable for Build Action</a></li>
+</ul>
 </blockquote>
 <p>It is recommended you manually install the new build using <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> at your convenience.</p>
 <p>After you <a href="../build-yml/#build-the-loop-app" target="_blank">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a> with a browser and you get the email that it is availble in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, you are ready to install on as many phones as you and your family members need.</p>
@@ -4756,7 +4759,19 @@
 </ul>
 <p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h2 id="automatic-update-build-install">Automatic Update, Build, Install<a class="headerlink" href="#automatic-update-build-install" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The instructions on the <a href="../intro-summary/" target="_blank">Configure to Use Browser</a> pages will automatically take the following actions for released versions 3.14.7 and later. There was a period, from May 2025 until September 2026, before adding the new file <code>build_loop_auto.yml</code> when automatic building did not work. If you have customizations in the older file <code>build_loop.yml</code>, simply copy them to <code>build_loop_auto.yml</code> to get the customizations and automatic builds once per month or when the code updates.</p>
+<p>The instructions on the <a href="../intro-summary/" target="_blank">Configure to Use Browser</a> pages configure for automatic build of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app unless <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> disables the build action.</p>
+<ul>
+<li>Starting in May 2025, <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> began to disable automatic building for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app<ul>
+<li>It appears this may be happening for the <em>Trio</em> app (November 2026)</li>
+</ul>
+</li>
+<li>That means you have to manually start the build action<ul>
+<li>We recommend you do this monthly using a calendar reminder</li>
+</ul>
+</li>
+<li>For more information, see <a href="../automatic/#what-manual-action-is-required" target="_blank">What Manual Action is Required?</a>.</li>
+</ul>
+<p>What the automatic action does, when it is not disabled:</p>
 <ul>
 <li>Update the version of your&nbsp;<span translate="no"><abbr title="a copy of code in a GitHub repository other than the original">fork</abbr></span>&nbsp;within a week of a new release release<ul>
 <li>Automatically create a new build and upload it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
@@ -4764,6 +4779,7 @@
 </ul>
 </li>
 <li>Build the app at least once a month and upload it to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li>For more information, see <a href="../automatic/#automatic-build" target="_blank">Automatic Build</a>.</li>
 </ul>
 <p>Unless you make the recommended one-time change to <a href="#disable-automatic-install-from-testflight">Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>, the default setting for each app found in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is to:</p>
 <ul>
