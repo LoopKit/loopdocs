@@ -83,8 +83,27 @@ The table below lists active branches.
 | `main` | 3.14.12 | 11 Nov 2026 | [released code](releases.md#v31412-highlights){: target="_blank" } |
 | `dev` | 3.14.12 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
-| `feat/all-managers` | 3.14.10 | 22 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ eadb9fe` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `feat/tandem-closed-beta` | 3.14.10 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply |
+| `feat/all-managers` | 3.14.12 | 11 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ eadb9fe` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `feat/tandem-closed-beta-next-dev` | 3.15.2 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
+| `feat/tandem-closed-beta` | 3.14.11 | 01 Nov 2026<br>**no longer updated** | Replaced by `feat/tandem-closed-beta-next-dev`<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
+
+#### Tandem Closed Beta Moved to `next-dev`
+
+!!! warning "Tandem Closed Beta Testers: Switch Branches"
+    Closed Beta testing for the Tandem Mobi has moved to a `next-dev` version of *Loop*.
+
+    | | Old branch | New branch |
+    |:--|:--|:--|
+    | Branch name | `feat/tandem-closed-beta` | `feat/tandem-closed-beta-next-dev` |
+    | Based on | `dev` | `next-dev` |
+    | Version | 3.14.11 | 3.15.2 |
+    | Status | **no longer updated**<br>last update 01 Nov 2026 | subject to frequent updates |
+
+    What to do:
+
+    * Add the `feat/tandem-closed-beta-next-dev` branch to your fork and build it; see [How to Build Feature Branches](#how-to-build-feature-branches)
+    * Read [Status for `next-dev` Branch](#status-for-next-dev-branch) before you build: `next-dev` is *Loop* 4 development code with changes beyond Tandem support
+    * Follow the [Tandem closed beta channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497) on zulipchat for updates
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
@@ -216,10 +235,11 @@ Eversense support was added to the released code, `main`, v3.14.2 or later.
 
 For Dana support, you must build a new feature branch, `feat/all-managers`.
 
-!!! important "Build v3.14.11"
-    There were some important fixes for connectivity in the latest feat/all-managers.
+!!! important "Build v3.14.12"
+    The latest feat/all-managers matches the v3.14.12 release and includes its fixes, along with earlier fixes for connectivity.
 
-    * If your build does not say v3.14.11, please rebuild
+    * If your build does not say v3.14.12, please rebuild
+    * See [v3.14.12 Highlights](releases.md#v31412-highlights){: target="_blank" } for what is included
     * The earlier v3.14.7 version of feat/all-managers did not show the bolus progress display - that is fixed now
 
 * Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
