@@ -4,21 +4,26 @@ The instructions provided for building with a browser include settings to automa
 
 ## Automatic Build
 
-!!! tip "Automatic Build Returns for Loop v3.14.7 and newer"
-    With v3.14.7, a new file name is used for automatic building using the Browser Build method.
+!!! tip "One Build Action for Loop v3.14.12 and newer"
+    With v3.14.12, the *Loop* app has one build action again: `4. Build Loop`. It runs on the weekly schedule and you also use it for a manual build.
 
-    * The new file: build_loop_auto.yml has the same content as the older build_loop.yml
-        * It appears that just giving it a new name was enough to prevent GitHub from disabling the build process
-        * Once you update to v3.14.7 or newer, your automatic building will be restored
-    * The old file: build_loop.yml is still in your LoopWorkspace folder for your convenience
-        * It no longer has the instructions to run automatically (that did not work anyway)
-        * If you had customization lines in build_loop.yml, they should still be there
-        * Simply copy those lines from build_loop.yml to build_loop_auto.yml to transfer the customization instructions to the file that actually runs to build Loop once a month
+    After you update your fork to v3.14.12 or newer:
 
-The Actions shown for Loop were modified with the v3.14.7 release. The new build_loop_auto.yml file shows up as *Build Loop Auto* and actually runs every Sunday. The existing build_loop.yml shows up as *Build Loop Manual*. It can still be run manually, but it no longer is triggered automatically and continues to show as Disabled.
+    * If `4. Build Loop` shows as disabled, enable it in the Actions tab (see [What Manual Action is Required?](#what-manual-action-is-required)); otherwise the schedule won't run
+    * If you added customization lines to build_loop_auto.yml, copy them into build_loop.yml
+    * Use `4. Build Loop` for all builds
+        * The action named `zzz Phasing Out` (the build_loop_auto.yml file) no longer runs on a schedule
+        * It is kept only so you can copy your customizations; it will be removed in a future release
 
-![the new build loop auto is automatic](img/build-loop-auto.svg ){width="400"}
-{align="center"}
+??? abstract "Why did the name change again? (Click to Open/Close)"
+    *GitHub* kept disabling the scheduled build action in many forks, so the weekly update and build stopped running. We never found the cause.
+
+    * v3.14.7 moved the schedule to a new file, build_loop_auto.yml, shown as `4. Build Loop Auto`; the original build_loop.yml was renamed `4. Build Loop Manual`
+    * That worked while only a few people used it, but after release *GitHub* began disabling `4. Build Loop Auto` the same way
+    * Since a new file name did not help, v3.14.12 puts the schedule back into build_loop.yml so there is one build action that runs both manually and on schedule
+
+<!-- TODO: add a screenshot of the Actions list showing "4. Build Loop" and "zzz Phasing Out" -->
+
 
 ## Skipped Build
 
@@ -28,7 +33,7 @@ The automatic build process checks once a week for updates to the `main` branch.
 * With v3.14.7, the indications were updated as shown in the graphic below
     * top row: a scheduled build was successful (this one was the second Sunday of a month)
     * middle row: the build was manually triggered and was successful
-    * bottom row: a schedule run of the build_loop_auto file, determined there was no reason to build, the icon shows the build was skipped
+    * bottom row: a scheduled run determined there was no reason to build, so the run was cancelled; the cancelled icon means no build was made
 
 ![clear indication if build was skipped or successful](img/build-skip-or-success.svg ){width="300"}
 {align="center"}
@@ -37,7 +42,7 @@ The automatic build process checks once a week for updates to the `main` branch.
 ## Manual Action for Automatic Build
 
 !!! warning "Browser Build for *Loop* Disabled?"
-    GitHub disables the Build Loop Action for LoopWorkspace for v3.14.2 and older. Please update your fork to bring in the changes for v3.14.7 (or newer).  See: [Automatic Build](#automatic-build)
+    *GitHub* may disable the `4. Build Loop` action. Update your fork to v3.14.12 (or newer), then enable the action if it shows as disabled.  See: [Automatic Build](#automatic-build)
 
 ??? tip "Stale Repositoriy Always Requires Manual Action (Click to Open Close)"
     *GitHub* automatically **disables actions** that run according to a schedule if the repository in question is **inactive**.
@@ -76,7 +81,7 @@ These events are automatically scheduled:
 * Once a month: Build the app and upload the fresh build to *TestFlight*
 
 !!! important "You Get No Warning if Repository Build Action is Disabled"
-    These automatic actions happen on schedule, but if your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+    If your build action is disabled, the scheduled run does not happen at all: no build, no warning email and no new entry in your Actions list.
 
     * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
 
@@ -130,13 +135,11 @@ The code that controls the build process was streamlined and enhanced. It runs e
 
 ### Successful Weekly Action
 
-Normally, you will see a successful `build action` once a week. This happens every Sunday (as soon as your version is 3.8.2 or newer).
+Normally, you will see a `build action` once a week. This happens every Sunday (as soon as your version is 3.8.2 or newer).
 
 > Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
 
-If there are no updates to the `main` branch, your actions show a very short, successful `build action` as shown in the graphic below. It only takes a few seconds because the logic says - if no update was detected and it is not the second Sunday, then skip checking the certificates and skip the build. 
-
-![normal weekly check for updates when there are no updates](img/normal-check-for-updates.png)
+If there are no updates to the `main` branch and it is not the second Sunday, the run is very short and shows as cancelled, not successful. This is expected: it means no new build was needed. See [Skipped Build](#skipped-build).
 
 If there is an update, the `build action` updates your fork and creates a new build. 
 
@@ -149,7 +152,7 @@ On the second Sunday of every month, you will see a longer `build action`. The p
 > Previously the build action would run every Wed or the first of the month, when GitHub resources were impacted.
 
 !!! important "You Get No Warning if Repository Build Action is Disabled"
-    If your build action is disabled, no build actually happens, no warning email is sent and a green checkmark (&#x2705;) appears beside a very short build action in which the actual build was skipped.
+    If your build action is disabled, the scheduled run does not happen at all: no build, no warning email and no new entry in your Actions list.
 
     * Refer to [What Manual Action is Required?](#what-manual-action-is-required)
 
@@ -261,7 +264,7 @@ This is an optional step. If you are happy with the automatic sync and update, y
 
     To configure the automated build more granularly involves creating up to two variables: `SCHEDULED_BUILD` and/or `SCHEDULED_SYNC`. See [How to configure a variable](#how-to-configure-a-variable).
 
-    Note that the weekly and monthly `Build Loop` actions will continue, but the actions are modified if one or more of these variables is set to false. **A successful Action Log will still appear, even if no automatic activity happens**.
+    Note that the weekly and monthly `Build Loop` actions will continue, but the actions are modified if one or more of these variables is set to false. **A scheduled run still appears in your Actions list, shown as cancelled, when no build is made**.
 
     * If you want to manually decide when to update your repository to the latest commit, but you want the monthly builds to continue:
         * create the variable `SCHEDULED_SYNC` and set it to false
@@ -300,8 +303,8 @@ This is an optional step. If you are happy with the automatic sync and update, y
 Your build will run on the following conditions:
 
 - Default behaviour:
-    - Run weekly, every Wednesday at 08:00 UTC to check for changes; if there are changes, it will update your repository and build
-    - Run monthly, every first of the month at 06:00 UTC, if there are changes, it will update your repository; regardless of changes, it will build
+    - Run weekly, every Sunday at 07:33 UTC to check for changes; if there are changes, it will update your repository and build
+    - On the second Sunday of the month, it will build regardless of changes (after updating your repository if there are changes)
 - If you disable any automation (both variables set to `false`), no updates or building happens when `Build Loop` runs
 - If you disable only scheduled synchronization (`SCHEDULED_SYNC` set to`false`), the build action runs weekly but your fork is not updated and the monthly build uses the current version of your fork
 - If you disable only scheduled build (`SCHEDULED_BUILD` set to`false`), the build action runs weekly to check for changes; if there are changes, it will update and build

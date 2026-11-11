@@ -163,10 +163,9 @@ An example annotation for skipping adding the App Group one of the Identifiers i
 The automatic build actions should occur every Sunday. 
 
 * If your build action is disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build
-* Once you update to 3.14.7 or newer, you should have a new action called Build Loop Auto that restores automatic building
-* You can ignore the action labeled Build Loop Manual; it is left for historical reasons to enable users to keep a record of customizations they may have used in earlier versions and may be removed later.
-
-The figure below is also left for historical reasons, but should not be required.
+* With v3.14.12 or newer, the scheduled build is the `4. Build Loop` action; if it was disabled by *GitHub* in the past, enable it as shown below
+* You can ignore the action labeled `zzz Phasing Out`; it is kept only so you can copy any customizations into build_loop.yml and will be removed in a future release
+* See [Automatic Build](automatic.md#automatic-build){: target="_blank" } for more information
 
 ![fix a disabled build state](img/build-disabled-fix.png )
 

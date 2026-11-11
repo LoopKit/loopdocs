@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.11 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.12 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,61 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.12
+
+<!-- TODO: fill in the release date -->
+[*Loop* v3.14.12](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.12) was released on DD November 2026.
+
+#### v3.14.12 Highlights
+
+!!! important "Browser Builders: Use `4. Build Loop`"
+    The weekly schedule is back in the `4. Build Loop` action (the build_loop.yml file).
+
+    * If *GitHub* disabled `4. Build Loop` in the past, enable it in the Actions tab; otherwise the schedule won't run
+    * If you added customizations to build_loop_auto.yml, copy them into build_loop.yml
+    * The action now named `zzz Phasing Out` (build_loop_auto.yml) no longer runs on a schedule and will be removed in a future release
+
+    See [Automatic Build](../browser/automatic.md#automatic-build){: target="_blank" } for more information.
+
+**Loop Features**
+
+* The status screen layout works on the inner display of the iPhone Duo: the HUD and status row no longer disappear after fold/unfold
+* Browser Build uses Xcode 27.1, so the app runs full screen on the iPhone Duo inner display
+* The glucose rate display updates right away when you change glucose units
+* Settings saved by a `next-dev` build are read correctly, so you can go back from `next-dev` to `dev` or `main` without losing settings
+
+**Omnipod Users**
+
+* Fixed a crash that could happen when an old Pod connection finished after a new one had taken over
+* When a Pod faults partway through a bolus, only the insulin that was delivered counts toward insulin on board
+* Improved logging for Pod connections to help troubleshoot
+
+**Dexcom G7 Users**
+
+* Fixed gaps of several hours in glucose readings while *Loop* was in the background, which became visible after the Pod Keep Alive change in v3.14.9
+
+**Eversense Users**
+
+* Glucose is read right after connecting, which improves the chance of getting a reading each time
+* Each new sensor is started correctly, not just the first sensor after Transmitter setup
+
+**Medtrum Users**
+
+* Reconnects after a Bluetooth reset
+* Unsaved patch settings are kept during sync
+* Improved patch change and base reset handling
+* Updated instruction screens with "how to" buttons
+
+**Browser Build**
+
+* The scheduled build is back in `4. Build Loop` (see the box above)
+* A scheduled run that has nothing to build shows as cancelled, not successful
+* Create Certificates now fails with a clear message when your stored certificate is rejected and no renewal will run, instead of failing later during the build
+* The "Please update using bundle update fastlane" notice no longer appears at the end of every run, where it could be mistaken for the cause of a failed build
+
 
 - - -
 

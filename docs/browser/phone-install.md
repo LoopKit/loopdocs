@@ -65,7 +65,7 @@ If you already have the&nbsp;_<span translate="no">Loop</span>_&nbsp;app on the 
 
 ## Automatic Update, Build, Install
 
-The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.14.7 and later. There was a period, from May 2025 until September 2026, before adding the new file `build_loop_auto.yml` when automatic building did not work. If you have customizations in the older file `build_loop.yml`, simply copy them to `build_loop_auto.yml` to get the customizations and automatic builds once per month or when the code updates.
+The instructions on the [Configure to Use Browser](intro-summary.md){: target="_blank" } pages will automatically take the following actions for released versions 3.14.7 and later. Starting in May 2025, *GitHub* often disabled automatic building. With v3.14.12, the schedule is back in the `build_loop.yml` file (the `4. Build Loop` action). If you added customizations to `build_loop_auto.yml`, copy them to `build_loop.yml` to get the customizations and automatic builds once per month or when the code updates. If *GitHub* has disabled `4. Build Loop`, enable it: see [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
 
 * Update the version of your&nbsp;<span translate="no">fork</span>&nbsp;within a week of a new release release
     * Automatically create a new build and upload it to *TestFlight*

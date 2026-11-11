@@ -42,7 +42,7 @@ Please read this entire page before using any version of *Loop* other than the r
 
 ## Updates in `dev`
 
-This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.11`](releases.md#v31411-highlights){: target="_blank" }.
+This section provides a permanent link for the overview of changes to `dev` compared to the current release: [`Loop v3.14.12`](releases.md#v31412-highlights){: target="_blank" }.
 
 The `dev` branch is subject to frequent updates. Follow along in zulipchat for information about those updates.
 
@@ -80,8 +80,8 @@ The table below lists active branches.
 
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
-| `main` | 3.14.11 | 24 Oct 2026 | [released code](releases.md#v31411-highlights){: target="_blank" } |
-| `dev` | 3.14.11 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
+| `main` | 3.14.12 | DD Nov 2026 | [released code](releases.md#v31412-highlights){: target="_blank" } |
+| `dev` | 3.14.12 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 | `feat/all-managers` | 3.14.10 | 22 Oct 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ eadb9fe` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `feat/tandem-closed-beta` | 3.14.10 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply |
@@ -175,9 +175,11 @@ If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them
 
 ### Status for Pod Keep Alive Support
 
-!!! important "Omnipod Users: Update to v3.14.11"
-    There were important fixes to Bluetooth connection timing in v3.14.11.
+!!! important "Omnipod Users: Update to v3.14.12"
+    There were important fixes to Bluetooth connection timing in v3.14.11, and more fixes in v3.14.12.
 
+    * The release of v3.14.12 fixed a crash when an old Pod connection finished after a new one had taken over, and counts only the delivered insulin when a Pod faults partway through a bolus
+    * The release of v3.14.12 also fixed multi-hour background gaps for Dexcom G7 users that became visible after the Pod Keep Alive change in v3.14.9
     * The release of v3.14.11 fixed an issue for iPhone 16/17e users of Atlas (InPlay) Pods and fixed an excessive delay before offering to discard a Pod that cannot be deactivated and improved fidelity of acknowledging alerts on Pods
     * The combination of Eversense CGM (which wakes up the app every minute even while locked) and Omnipod Pods revealed an issue in v3.14.8 that is fixed in v3.14.11
         * In v3.14.8, the When Open would keep working while the phone was locked when the app woke up from the Eversense Bluetooth signal, even those the app was in the background
@@ -186,10 +188,10 @@ If you have any trouble with Omnipod 5, or any of the Omnipod Types, report them
         * There were several issues in v3.14.8 that kept the Eversense CGM working through a variety of responses that previously caused glucose data to stop being provided
         * Eversense users need to update to v3.14.11 to enable newer Transmitters to connect properly
 
-!!! tip "Update to v3.14.11 for iPhone 16/17e with Atlas DASH Pods"
+!!! tip "Update to v3.14.12 for iPhone 16/17e with Atlas DASH Pods"
     If your phone model is a 16 or 17e and you use Atlas DASH Pods:
 
-    * Update to v3.14.11 or later for faster connection speed
+    * Update to v3.14.12 or later for faster connection speed
         * Note that while the Pod Keep Alive selection can still be modified, you should be able to leave it at the default value of When Open
         * This works for all iPhone and BLE Pod models
 
@@ -298,15 +300,15 @@ When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.1
 * Some new labels
 * Some reworked sub-menus with added information or features
 * Omnipod 5 Support provided along with Classic and DASH support
-    * Released version v3.14.7 or newer (please build the latest v3.14.11 for important updates)
+    * Released version v3.14.7 or newer (please build the latest v3.14.12 for important updates)
     * Starting with development versions v3.14.3
 
-!!! warning "Update to v3.14.11 or later"
-    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.11 as soon as possible. 
+!!! warning "Update to v3.14.12 or later"
+    The Pod Keep Alive feature was rewritten with various improvements and bug fixes implemented over the last few versions. Please update to v3.14.12 as soon as possible. 
     
     Even if you do not use an iPhone 16/17e model with Atlas DASH Pods, it is still worth updating.
 
-    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.11 and should leave the Pod Keep Alive setting at the default value of "When Open".
+    For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.12 and should leave the Pod Keep Alive setting at the default value of "When Open".
 
 One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the `main` (v3.14.2) branch, only Eros and DASH are supported. With the `dev` (3.14.3 or newer) or `next-dev` ( 3.15.0 and newer) branches, Eros, DASH and Omnipod 5 are all supported.
 
@@ -324,6 +326,22 @@ One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md
 - - -
 
 ## Older updates
+
+### Detailed updates from v3.14.11 to v3.14.12
+
+#### Summary of updates while preparing for v3.14.12
+
+| Date | # of commits | Summary |
+|:--|:-:|:--|
+| 06 Nov 2026 | 2 | Create Certificates fails with a clear message when Match rejects the stored certificate and no renewal will run<br>the error points at deleting Match-Secrets ([LoopWorkspace PR 573](https://github.com/LoopKit/LoopWorkspace/pull/573)) |
+| 09 Nov 2026 | 1 | Bump version to 3.14.12 ([LoopWorkspace PR 578](https://github.com/LoopKit/LoopWorkspace/pull/578)) |
+| 10 Nov 2026 | 1 | Build with Xcode 27.1 in GitHub Actions, so the app runs full screen on the iPhone Duo inner display ([LoopWorkspace PR 567](https://github.com/LoopKit/LoopWorkspace/pull/567)) |
+| 10 Nov 2026 | 1 | Update EversenseKit, G7SensorKit, Loop, LoopKit, MedtrumKit and OmnipodKit ([LoopWorkspace PR 580](https://github.com/LoopKit/LoopWorkspace/pull/580))<br>G7: reconnect with a start delay to fix multi-hour background gaps<br>Loop: status screen layout for iPhone Duo inner display<br>OmnipodKit: fix a crash from a replaced Pod connection; record a bolus cut short by a Pod fault<br>see [v3.14.12 Highlights](releases.md#v31412-highlights){: target="_blank" } for the full list |
+| DD Nov 2026 | 1 | Restore the weekly schedule to `4. Build Loop`, phase out `4. Build Loop Auto`, skip the fastlane update check ([LoopWorkspace PR 581](https://github.com/LoopKit/LoopWorkspace/pull/581)) |
+
+<!-- TODO: add the release/v3.14.12 branch table (as was done for v3.14.11) once the release is merged into main -->
+
+Refer to [LoopWorkspace dev branch commit history](https://github.com/LoopKit/LoopWorkspace/commits/dev/) for all commits.
 
 ### Detailed updates from v3.14.9 to v3.14.11
 
