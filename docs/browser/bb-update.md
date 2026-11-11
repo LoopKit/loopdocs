@@ -273,7 +273,7 @@ Refer to graphic below as you follow the steps to build the *Loop* app. The numb
 
 If a new release is announced at [Current Release](../version/releases.md#current-release){: target="_blank" }, look to see if there are instructions about extra steps required with the release. 
 
-> When `Loop 3.14.12` was released, the schedule moved back to the `build_loop.yml` file. If you added customizations to the `build_loop_auto.yml` file, copy them into `build_loop.yml`. This is a one-time action, only needed for the *Loop* app. See [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
+> When `Loop 3.14.12` was released, the schedule moved back to the `build_loop.yml` file. Only if you added customizations to the `build_loop_auto.yml` file, copy them into `build_loop.yml`. This is a one-time action, only needed for the *Loop* app. See [Automatic Build](automatic.md#automatic-build){: target="_blank" }.
 
 > Check out the [Ahead and Behind](#ahead-and-behind) instructions.
 

@@ -36,21 +36,11 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 #### v3.14.12 Highlights
 
-!!! important "Browser Builders: Use `4. Build Loop`"
-    The weekly schedule is back in the `4. Build Loop` action (the build_loop.yml file).
-
-    * If *GitHub* disabled `4. Build Loop` in the past, enable it in the Actions tab; otherwise the schedule won't run
-    * If you added customizations to build_loop_auto.yml, copy them into build_loop.yml
-    * The action now named `zzz Phasing Out` (build_loop_auto.yml) no longer runs on a schedule and will be removed in a future release
-
-    See [Automatic Build](../browser/automatic.md#automatic-build){: target="_blank" } for more information.
-
 **Loop Features**
 
-* The status screen layout works on the inner display of the iPhone Duo: the HUD and status row no longer disappear after fold/unfold
-* Browser Build uses Xcode 27.1, so the app runs full screen on the iPhone Duo inner display
+* The status screen layout is adjusted for the inner display of the iPhone Duo: the HUD and status row no longer disappear after fold/unfold
 * The glucose rate display updates right away when you change glucose units
-* Settings saved by a `next-dev` build are read correctly, so you can go back from `next-dev` to `dev` or `main` without losing settings
+* Settings saved by a `next-dev` build that uses presets are read correctly, so testers returning from `next-dev` to `main` keep their settings
 
 **Omnipod Users**
 
@@ -71,19 +61,23 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 
 * Reconnects after a Bluetooth reset
 * Unsaved patch settings are kept during sync
-* Improved patch change and base reset handling
+* Improved base reset detection and delivery state during patch change
 * Updated instruction screens with "how to" buttons
-
-**Browser Build**
-
-* The scheduled build is back in `4. Build Loop` (see the box above)
-* A scheduled run that has nothing to build shows as cancelled, not successful
-* Create Certificates now fails with a clear message when your stored certificate is rejected and no renewal will run, instead of failing later during the build
-* The "Please update using bundle update fastlane" notice no longer appears at the end of every run, where it could be mistaken for the cause of a failed build
 
 **Translations**
 
 * Bring in new translations from lokalise, including updated Czech strings
+
+**Browser Build**
+
+* *GitHub* Actions now build with Xcode 27.1, so the app runs full screen on the iPhone Duo inner display
+* The weekly schedule moved back to the build_loop.yml file, shown as `4. Build Loop`
+    * *GitHub* also disabled the interim build_loop_auto.yml action, so expect that you will still need to [build manually](../browser/automatic.md#manual-action-for-automatic-build){: target="_blank" }
+    * The interim action is renamed `zzz Phasing Out` and no longer runs on a schedule; it is kept only so you can move customization lines
+    * **Only if you added customizations to build_loop_auto.yml**: copy those lines into build_loop.yml; no one else needs to take action
+* A scheduled run that has nothing to build ends as cancelled, not successful, so a green check always means a new build was made
+* Create Certificates now fails with a clear error when Fastlane Match cannot use the Distribution certificate in Match-Secrets and no automatic renewal will run; the error points to [Delete `Match-Secrets`](../browser/bb-errors.md#delete-match-secrets){: target="_blank" }
+* Fastlane update checks are skipped in all workflows to remove a confusing message from the logs
 
 
 - - -

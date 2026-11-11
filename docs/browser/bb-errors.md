@@ -160,11 +160,11 @@ An example annotation for skipping adding the App Group one of the Identifiers i
 
 ### Manual Enable for Build Action May be Required
 
-The automatic build actions should occur every Sunday. 
+The automatic build actions are scheduled every Sunday, but *GitHub* often disables the build action for *Loop*. Expect to build manually.
 
 * If your build action is disabled, you need to manually enable the action at your repository as shown in the graphic below and then launch a manual build
-* With v3.14.12 or newer, the scheduled build is the `4. Build Loop` action; if it was disabled by *GitHub* in the past, enable it as shown below
-* You can ignore the action labeled `zzz Phasing Out`; it is kept only so you can copy any customizations into build_loop.yml and will be removed in a future release
+* With v3.14.12 or newer, use the `4. Build Loop` action
+* You can ignore the action labeled `zzz Phasing Out`; it is kept only so people who added customizations can copy them into build_loop.yml, and it will be removed in a future release
 * See [Automatic Build](automatic.md#automatic-build){: target="_blank" } for more information
 
 ![fix a disabled build state](img/build-disabled-fix.png )
@@ -875,6 +875,13 @@ Your profiles will be displayed. Under the `Expiration` column, you might see an
     > ![delete selected profiles](img/profiles-03.png){width="500"}
 
 ### Delete `Match-Secrets`
+
+!!! tip "Sent here by the Create Certificates error?"
+    Starting with v3.14.12, `Create Certificates` stops with this error when your stored certificate cannot be used and no automatic renewal will run:
+
+    `Fastlane Match could not use the Distribution certificate in your Match-Secrets repository, and automated renewal will not run because another valid certificate exists.`
+
+    In that case, deleting `Match-Secrets` and running the action again is the expected fix.
 
 Make sure you really need to do this - please [ask a mentor for help](#where-to-get-help-with-browser-build).
 
