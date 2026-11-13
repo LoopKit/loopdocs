@@ -83,7 +83,7 @@ The table below lists active branches.
 | `main` | 3.14.13 | 13 Nov 2026 | [released code](releases.md#v31413-highlights){: target="_blank" } |
 | `dev` | 3.14.12 | expect `next-dev` to be merged here soon<br>does not yet have the v3.14.13 G7 revert | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
-| `feat/all-managers` | 3.14.12 | 11 Nov 2026| This branch matches latest updates for dev<br>does not yet have the v3.14.13 G7 revert<br>It also provides `DanaKit @ b494109` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
+| `feat/all-managers` | 3.14.13 | 13 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ b494109` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `feat/tandem-closed-beta-next-dev` | 3.15.2 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
 | `feat/tandem-closed-beta` | 3.14.11 | 01 Nov 2026<br>**no longer updated** | Replaced by `feat/tandem-closed-beta-next-dev`<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
 
@@ -236,12 +236,11 @@ Eversense support was added to the released code, `main`, v3.14.2 or later.
 
 For Dana support, you must build a new feature branch, `feat/all-managers`.
 
-!!! important "Build v3.14.12"
-    The latest feat/all-managers matches the v3.14.12 release and includes its fixes, along with earlier fixes for connectivity.
+!!! important "Build v3.14.13"
+    The latest feat/all-managers matches the v3.14.13 release and includes its fixes, along with earlier fixes for connectivity.
 
-    * If your build does not say v3.14.12, please rebuild
-    * See [v3.14.12 Highlights](releases.md#v31412-highlights){: target="_blank" } for what is included
-    * The v3.14.13 G7 revert has not yet been added to feat/all-managers; Dexcom G7 users who also run the Dexcom app may miss some readings until it is updated, see [v3.14.13 Highlights](releases.md#v31413-highlights){: target="_blank" }
+    * If your build does not say v3.14.13, please rebuild
+    * See [v3.14.13 Highlights](releases.md#v31413-highlights){: target="_blank" } and [v3.14.12 Highlights](releases.md#v31412-highlights){: target="_blank" } for what is included
     * The earlier v3.14.7 version of feat/all-managers did not show the bolus progress display - that is fixed now
 
 * Build instructions are found here: [How to Build Feature Branches](#how-to-build-feature-branches).
@@ -357,7 +356,7 @@ This was a hotfix release made directly to `main` with [LoopWorkspace PR 588](ht
 |:--|:-:|:--|
 | 13 Nov 2026 | 3 | Update G7SensorKit to `a03a295`: revert the reconnect with a start delay from v3.14.12 ([G7SensorKit PR 120](https://github.com/LoopKit/G7SensorKit/pull/120), reverting [G7SensorKit PR 109](https://github.com/LoopKit/G7SensorKit/pull/109))<br>Bump version to 3.14.13 |
 
-The `dev` branch still needs the same G7SensorKit change to stay aligned with `main`.
+The `dev` branch is brought into alignment with `main` with [LoopWorkspace PR 589](https://github.com/LoopKit/LoopWorkspace/pull/589).
 
 ### Detailed updates from v3.14.11 to v3.14.12
 
