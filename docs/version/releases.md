@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.12 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.13 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -26,6 +26,27 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 - - -
 
 ## Loop 3 Version History
+
+- - -
+
+## Loop v3.14.13
+
+[*Loop* v3.14.13](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.13) was released on 13 November 2026.
+
+This is a hotfix release. It is identical to v3.14.12 except for the version number and the Dexcom G7 change below.
+
+#### v3.14.13 Highlights
+
+**Dexcom G7 Users**
+
+* Reverted the v3.14.12 change that reconnects to the G7 with a start delay ([G7SensorKit PR 120](https://github.com/LoopKit/G7SensorKit/pull/120), reverting [G7SensorKit PR 109](https://github.com/LoopKit/G7SensorKit/pull/109))
+    * With the Dexcom app also running, v3.14.12 missed G7 readings in *Loop*; one user saw 6 to 8 readings an hour instead of 12
+    * G7 reconnects now behave as they did in v3.14.11
+* If you use a G7 and updated to v3.14.12, please update to v3.14.13
+
+**All Other Users**
+
+* There is no functional change from v3.14.12; update when convenient
 
 - - -
 
@@ -50,6 +71,7 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 **Dexcom G7 Users**
 
 * Fixed gaps of several hours in glucose readings while *Loop* was in the background, which became visible after the Pod Keep Alive change in v3.14.9
+    * **This change was reverted in v3.14.13** because it caused missed G7 readings for some users who also run the Dexcom app; see [v3.14.13 Highlights](#v31413-highlights)
 
 **Eversense Users**
 
