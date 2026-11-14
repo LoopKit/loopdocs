@@ -3350,6 +3350,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v31413" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v31412" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4963,6 +4974,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loop-v31413" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop v3.14.13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loop-v31412" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5429,7 +5451,7 @@
 <p>For information about version 2 releases and compatibility between version 2 and 3, refer to <a href="../releases-version2/" target="_blank">Older Releases</a>.</p>
 <hr />
 <h2 id="current-release">Current Release<a class="headerlink" href="#current-release" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.12 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
+<p>The current released version for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is v3.14.13 and is built from the <code>main</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).</p>
 <h3 id="what-version-do-i-have">What Version Do I Have?<a class="headerlink" href="#what-version-do-i-have" title="Anchor link to this Header on this Page">&para;</a></h3>
 <p>Tap on the Settings icon at the toolbar of the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app and look at the version information at upper left.</p>
 <p align="center"><img alt="Determine current app version on app settings screen" src="../img/app-version.png" width="400" /></p>
@@ -5440,6 +5462,24 @@
 </blockquote>
 <hr />
 <h2 id="loop-3-version-history"><abbr title="Latest release with major updates">Loop 3</abbr> Version History<a class="headerlink" href="#loop-3-version-history" title="Anchor link to this Header on this Page">&para;</a></h2>
+<hr />
+<h2 id="loop-v31413"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.13<a class="headerlink" href="#loop-v31413" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.13"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.13</a> was released on 13 November 2026.</p>
+<p>This is a <abbr title="An urgent fix that is applied to both the released and development branches at the same time">hotfix</abbr> release. It is identical to v3.14.12 except for the version number and the Dexcom G7 change below.</p>
+<h4 id="v31413-highlights">v3.14.13 Highlights<a class="headerlink" href="#v31413-highlights" title="Anchor link to this Header on this Page">&para;</a></h4>
+<p><strong>Dexcom G7 Users</strong></p>
+<ul>
+<li>Reverted the v3.14.12 change that reconnects to the G7 with a start delay (<a href="https://github.com/LoopKit/G7SensorKit/pull/120">G7SensorKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 120</a>, reverting <a href="https://github.com/LoopKit/G7SensorKit/pull/109">G7SensorKit <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 109</a>)<ul>
+<li>With the Dexcom app also running, v3.14.12 missed G7 readings in <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em>; one user saw 6 to 8 readings an hour instead of 12</li>
+<li>G7 reconnects now behave as they did in v3.14.11</li>
+</ul>
+</li>
+<li>If you use a G7 and updated to v3.14.12, please update to v3.14.13</li>
+</ul>
+<p><strong>All Other Users</strong></p>
+<ul>
+<li>There is no functional change from v3.14.12; update when convenient</li>
+</ul>
 <hr />
 <h2 id="loop-v31412"><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> v3.14.12<a class="headerlink" href="#loop-v31412" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p><a href="https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.12"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> v3.14.12</a> was released on 11 November 2026.</p>
@@ -5458,7 +5498,10 @@
 </ul>
 <p><strong>Dexcom G7 Users</strong></p>
 <ul>
-<li>Fixed gaps of several hours in glucose readings while <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> was in the background, which became visible after the Pod Keep Alive change in v3.14.9</li>
+<li>Fixed gaps of several hours in glucose readings while <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> was in the background, which became visible after the Pod Keep Alive change in v3.14.9<ul>
+<li><strong>This change was reverted in v3.14.13</strong> because it caused missed G7 readings for some users who also run the Dexcom app; see <a href="#v31413-highlights">v3.14.13 Highlights</a></li>
+</ul>
+</li>
 </ul>
 <p><strong>Eversense Users</strong></p>
 <ul>
