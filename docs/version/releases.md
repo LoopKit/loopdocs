@@ -8,7 +8,7 @@ For information about version 2 releases and compatibility between version 2 and
 
 ## Current Release
 
-The current released version for the *Loop* app is v3.14.12 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
+The current released version for the *Loop* app is v3.14.13 and is built from the `main` branch of LoopWorkspace. The dates and contents for releases are summarized below in reverse chronological order (so newest release information comes first).
 
 ### What Version Do I Have?
 
@@ -28,6 +28,19 @@ Release information is found on the [*GitHub*&nbsp;_<span translate="no">LoopKit
 ## Loop 3 Version History
 
 - - -
+## Loop v3.14.13
+
+[*Loop* v3.14.13](https://github.com/LoopKit/LoopWorkspace/releases/tag/v3.14.13) was released on 13 November 2026.
+
+#### v3.14.13 Highlights
+
+This is a hotfix release. The only change from v3.14.12 is for Dexcom G7 users.
+
+**Dexcom G7 Users**
+
+* The G7 reconnect change in v3.14.12 is reverted, so G7 connections work as they did in v3.14.11
+* With the Dexcom app also running, v3.14.12 could miss G7 readings in Loop, in some cases several readings an hour
+Because of the revert, the v3.14.12 fix for gaps of several hours in glucose readings while Loop is in the background is no longer included; a different fix is being worked on
 
 ## Loop v3.14.12
 
