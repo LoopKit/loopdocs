@@ -81,7 +81,7 @@ The table below lists active branches.
 | <div style="width:140px"> branch | version # | <div style="width:140px">last updated | comments |
 |:--|:--|:--|:--|
 | `main` | 3.14.13 | 13 Nov 2026 | [released code](releases.md#v31413-highlights){: target="_blank" } |
-| `dev` | 3.14.12 | expect `next-dev` to be merged here soon<br>does not yet have the v3.14.13 G7 revert | [Status for `dev` Branch](#status-for-dev-branch) |
+| `dev` | 3.14.13 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 | `feat/all-managers` | 3.14.13 | 13 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ b494109` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `feat/tandem-closed-beta-next-dev` | 3.15.2 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
@@ -356,7 +356,7 @@ This was a hotfix release made directly to `main` with [LoopWorkspace PR 588](ht
 |:--|:-:|:--|
 | 13 Nov 2026 | 3 | Update G7SensorKit to `a03a295`: revert the reconnect with a start delay from v3.14.12 ([G7SensorKit PR 120](https://github.com/LoopKit/G7SensorKit/pull/120), reverting [G7SensorKit PR 109](https://github.com/LoopKit/G7SensorKit/pull/109))<br>Bump version to 3.14.13 |
 
-The `dev` branch is brought into alignment with `main` with [LoopWorkspace PR 589](https://github.com/LoopKit/LoopWorkspace/pull/589).
+The `dev` branch was brought into alignment with `main` with [LoopWorkspace PR 589](https://github.com/LoopKit/LoopWorkspace/pull/589). The code in `dev` is identical to the released code.
 
 ### Detailed updates from v3.14.11 to v3.14.12
 
