@@ -11,6 +11,7 @@
     - If you use [Medtrum Nano](#medtrum-nano) - your pump is supported
     - If you have a Medtronic pump, check the [Medtronic Pump Version](#check-medtronic-pump-version) list to ensure compatible model/firmware
     - For expert testers only, must build a special branch:
+        - [Tandem Mobi](#tandem-mobi) - in open beta
         - If you use [Dana](#sooil-dana-pumps) - check which kind
 
 !!! question "FAQs"
@@ -37,6 +38,7 @@ These types of pumps are compatible with the *Loop* app.
 You must build a special branch to test some pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
 
 * [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress, included in `feat/all-managers` branch)
+* [Tandem Mobi](#tandem-mobi) (in open beta, work in progress)
 
 - - -
 
@@ -248,6 +250,17 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}
+
+
+## Tandem Mobi
+
+
+!!! warning "You must build a feature branch to use Tandem Mobi"
+    Tandem Mobi is in open beta. Please use the [`feat/tandem-next-dev` feature branch](../version/development.md#feature-branch-featall-managers){: target="_blank" }.
+    
+    * You must follow [zulipchat Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)
+
+
 
 - - -
 
