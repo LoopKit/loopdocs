@@ -281,6 +281,7 @@ Before you add the Tandem Mobi to the *Loop* app, know that:
 * The Tandem Mobi can be controlled by the Tandem Mobi app or by the *Loop* app, but not by both
 * When you add the Tandem Mobi to the *Loop* app, Control-IQ on the pump is turned off so the *Loop* app can control insulin delivery
 * You need the pump's charging pad and the 6-digit pairing code (PIN) found inside the cartridge area of the pump to pair the pump with the *Loop* app
+* The pump beeps or vibrates each time the *Loop* app sends a bolus or temp basal command, whether automatic or manual; there is no silent option for these commands (see [Mobi Sound Settings](../setup/add-pump.md#mobi-sound-settings){: target="_blank" })
 
 For step-by-step instructions, see [Tandem Mobi Setup](../setup/add-pump.md#tandem-mobi-setup){: target="_blank" }.
 
