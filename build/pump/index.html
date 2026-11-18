@@ -4900,6 +4900,7 @@
 <li>Medtrum Nano users: both 200 U and 300 U patches are supported</li>
 <li>Medtronic users: 10 minutes to put a battery in and look at model and firmware</li>
 <li>Dana users: you must be willing to build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> and understand the known issues</li>
+<li>Tandem Mobi users: you must be willing to build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> based on <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 4 development code and follow the open beta on zulipchat</li>
 </ul>
 </div>
 <div class="admonition abstract">
@@ -5156,11 +5157,31 @@ It uses a steel cannula, instead of the Teflon cannula of the Omnipods, with a v
 <h2 id="tandem-mobi">Tandem Mobi<a class="headerlink" href="#tandem-mobi" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">You must build a feature <abbr title="version of code within a single repository or workspace repository">branch</abbr> to use Tandem Mobi</p>
-<p>Tandem Mobi is in open beta. Please use the <a href="../../version/development/#feature-branch-featall-managers" target="_blank"><code>feat/tandem-next-dev</code> feature <abbr title="version of code within a single repository or workspace repository">branch</abbr></a>.</p>
+<p>Tandem Mobi is in open beta. Please use the <a href="../../version/development/#tandem-mobi-open-beta" target="_blank"><code>feat/tandem-next-dev</code> feature <abbr title="version of code within a single repository or workspace repository">branch</abbr></a>.</p>
 <ul>
 <li>You must follow <a href="https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737">zulipchat Tandem Mobi Open Beta topic</a></li>
 </ul>
+<p>Read these pages in LoopDocs:</p>
+<ul>
+<li><a href="../../setup/add-pump/#tandem-mobi-setup" target="_blank">Add a Tandem Mobi Pump</a></li>
+<li><a href="../../version/development/#status-for-next-dev-branch" target="_blank">Status for <code>next-dev</code> Branch</a>: the <code>feat/tandem-next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr> is <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> 4 development code</li>
+</ul>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Reminder and Disclaimer</p>
+<p>The use of the Tandem Mobi with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app is not supported by Tandem Diabetes Care. Do not call Tandem asking for help with your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app build, setup, or operation. The Tandem Mobi pump manager, TandemKit, is open-source code that is not affiliated with Tandem.</p>
+</div>
+<p><strong>The Tandem Mobi has built-in Bluetooth communications. Therefore, no <abbr title="radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps">RileyLink</abbr>-compatible device is needed to use the Tandem Mobi with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</strong></p>
+<p align="center"><img alt="Tandem Mobi pump" src="../img/tandem-mobi.png" width="300" /></p>
+<p>The Tandem Mobi is a small, 200 U tubed pump from Tandem Diabetes Care.</p>
+<p>Before you add the Tandem Mobi to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, know that:</p>
+<ul>
+<li>The Tandem Mobi can be controlled by the Tandem Mobi app or by the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, but not by both</li>
+<li>When you add the Tandem Mobi to the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, Control-IQ on the pump is turned off so the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app can control insulin delivery</li>
+<li>You need the pump's charging pad and the 6-digit pairing code (PIN) found inside the cartridge area of the pump to pair the pump with the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+<li>The pump beeps or vibrates each time the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app sends a bolus or temp basal command, whether automatic or manual; the current Mobi firmware has no silent option for commands sent over Bluetooth (see <a href="../../setup/add-pump/#mobi-sound-settings" target="_blank">Mobi Sound Settings</a>)</li>
+</ul>
+<p>For step-by-step instructions, see <a href="../../setup/add-pump/#tandem-mobi-setup" target="_blank">Tandem Mobi Setup</a>.</p>
 <hr />
 <h2 id="next-step-compatible-cgm">Next Step: Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr><a class="headerlink" href="#next-step-compatible-cgm" title="Anchor link to this Header on this Page">&para;</a></h2>
 <p>Now you are ready to check if you have a <a href="../cgm/">Compatible <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr></a>.</p>
