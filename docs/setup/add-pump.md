@@ -1,6 +1,6 @@
 ## Pump Choices
 
-You can choose a pump from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
+You can choose a pump from the Heads-Up-Display ([HUD](displays.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
 
 The HUD looks like the graphic below if no CGM or Pump is chosen:
 
@@ -209,7 +209,7 @@ You can choose from the insulin types below. This screen is common for all pumps
 
 * Insulin Type
     * **Rapid Acting** (Novolog, Humalog, Apidra) or **Ultra Rapid** (Fiasp, Lyumjev)
-    * Inhaled insulin (Afrezza) is not offered because it is not used in pumps. [Non-Pump Insulin](displays-v3.md#event-history-reservoir-and-non-pump-insulin)
+    * Inhaled insulin (Afrezza) is not offered because it is not used in pumps. [Non-Pump Insulin](displays.md#event-history-reservoir-and-non-pump-insulin)
 
 ![initial selection for insulin used in pump](img/add-pump-insulin.svg){width="250"}
 {align="center"}

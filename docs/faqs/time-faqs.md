@@ -125,7 +125,7 @@ Time Change comments:
     * For short trips, many Loopers just leave the pump time alone
 * Time Change (Daylight Savings Time or Summer Time)
     * Most people want to update their pump time immediately after the clocks change
-* A Clock Icon is seen in the HUD Pump Status display when pump time differs from phone [Time Zone](../setup/displays-v3.md#time-zone){: target="_blank" }
+* A Clock Icon is seen in the HUD Pump Status display when pump time differs from phone [Time Zone](../setup/displays.md#time-zone){: target="_blank" }
 
 !!! warning "Medtronic Users"
 

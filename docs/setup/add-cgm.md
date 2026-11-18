@@ -1,6 +1,6 @@
 ## CGM Choices
 
-A CGM can be added from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
+A CGM can be added from the Heads-Up-Display ([HUD](displays.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
 
 The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 

@@ -35,7 +35,7 @@ This simulator requires access to a Mac or virtual computer, see [Compatible Com
     * Continue with the [Build Free Loop](../build/build-free-loop.md){: target="_blank" } page
         * Select a simulator (not your phone) when told to do so
         * Complete the [Build to a Simulator](../build/build-free-loop.md#build-to-a-simulator) section
-* Use the simulated iPhone that will appear on you *Mac* and [set up the app](../setup/loop-3-overview.md) as desired
+* Use the simulated iPhone that will appear on you *Mac* and [set up the app](../setup/overview.md) as desired
 * This gives you a feel for the interface, but the simulator on the *Mac* has limitations
 
 ## Build to a Compatible Phone
@@ -59,7 +59,7 @@ When building to a real phone using a *Mac*, you must have access to a [Compatib
     * Choose to Sign Manually in the [Sign Targets](../build/build-app.md#sign-targets) section
     * Continue with the [Build Free Loop](../build/build-free-loop.md){: target="_blank" } page
 * Once the App is on your phone
-    * Follow the [set up the app](../setup/loop-3-overview.md) instructions on your phone but choose a simulated pump
+    * Follow the [set up the app](../setup/overview.md) instructions on your phone but choose a simulated pump
     * If you have a compatible CGM on this phone, you can select that or you can use the simulated CGM or enter glucose values on the main Loop screen
 
 ## What to Expect with a Simulator

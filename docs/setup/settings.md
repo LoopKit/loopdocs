@@ -1,6 +1,6 @@
 ## Loop Settings Screen
 
-The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.14.11 and later versions.
+The Settings screen is reached by tapping the gear icon in the [Toolbar](displays.md#toolbar) on the [Main Loop Screen](displays.md#main-loop-screen). The graphic below is for Loop 3.14.11 and later versions.
 
 ![settings screen for loop 3](img/settings.svg){width="700"}
 {align="center"}
@@ -31,7 +31,7 @@ With every loop cycle - typically every 5 minutes - Loop updates the glucose pre
 * IOB from previous insulin delivery
 * Your [Therapy Settings](therapy-settings.md)
 
-Based on this prediction, Loop calculates a modification to insulin dosing to bring the user into the desired correction range. This can be a reduction in basal to raise the glucose prediction or a recommended bolus, subject to Delivery Limits, to lower the prediction. The glucose prediction is shown in the [Glucose Chart](displays-v3.md#charts) along with the measured glucose values.
+Based on this prediction, Loop calculates a modification to insulin dosing to bring the user into the desired correction range. This can be a reduction in basal to raise the glucose prediction or a recommended bolus, subject to Delivery Limits, to lower the prediction. The glucose prediction is shown in the [Glucose Chart](displays.md#charts) along with the measured glucose values.
 
 * When in Open Loop, no automated action is taken.
 * When in Closed Loop, automated action is taken based on the selected Dosing Strategy.

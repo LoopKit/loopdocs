@@ -26,7 +26,7 @@
 
 ### Glucose Prediction
 
-Pay attention to the prediction in the [Glucose Chart](../../setup/displays-v3.md#glucose-chart){: target="_blank" }. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. Be sure you understand the predictions and recommendations before you enable <code>Closed Loop</code>. You may need to adjust settings or learn more about how the app works. The *Loop* app tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
+Pay attention to the prediction in the [Glucose Chart](../../setup/displays.md#glucose-chart){: target="_blank" }. Practice with the user interface while you manually control your insulin delivery. Compare the recommended insulin after entering carbs for a familiar meal. Be sure you understand the predictions and recommendations before you enable <code>Closed Loop</code>. You may need to adjust settings or learn more about how the app works. The *Loop* app tries to keep predicted glucose in the Correction Range and, more importantly, above your Glucose Safety Limit.
 
 There's a lot to learn and understand. New loopers may need to adjust the following Therapy Settings, typically in this order:
 
@@ -38,7 +38,7 @@ Using an algorithm that updates glucose predictions and adjusts insulin delivery
 
 ### Eventual Glucose
 
-Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../setup/displays-v3.md#glucose-chart)** to understand recommendations for insulin delivery adjustment. The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose. Its current decisions are based on actual, predicted and eventual glucose. Predictions for the first three hours of insulin duration of activity are given more emphasis than later predictions when deciding how much insulin should be recommended or withheld from basal.
+Watch the eventual glucose, current glucose and prediction curve in the **[Glucose Chart](../../setup/displays.md#glucose-chart)** to understand recommendations for insulin delivery adjustment. The *Loop* app is looking at current glucose, glucose momentum, carbs on board, insulin on board, and retrospective trends to predict an eventual glucose. Its current decisions are based on actual, predicted and eventual glucose. Predictions for the first three hours of insulin duration of activity are given more emphasis than later predictions when deciding how much insulin should be recommended or withheld from basal.
 
 If there is a dip in the predicted glucose below the Glucose Safety Limit, the *Loop* app will not recommend insulin even if the eventual glucose is above your Correction Range.
 
@@ -92,7 +92,7 @@ Loop uses carb absorption as a component to every meal entry. Most people are su
 * For low-glucose treatment, you can enter using the 30-minute (lollipop) icon
 * For high-fat meals, you can try the 5-hour (pizza) icon
 
-The [Active Carbohydrate](../../setup/displays-v3.md#active-carbohydrates-chart){: target="_blank" } chart displays how the app thinks your meal is being aborbed. This is affected by your basal rates, ISF and CR. If it looks wrong, examine your settings.
+The [Active Carbohydrate](../../setup/displays.md#active-carbohydrates-chart){: target="_blank" } chart displays how the app thinks your meal is being aborbed. This is affected by your basal rates, ISF and CR. If it looks wrong, examine your settings.
 
 Depending on the type of food you eat, you may increase the carb entry to include some protein or fat.
 

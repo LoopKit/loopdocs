@@ -30,7 +30,7 @@ The *Loop* app is an automated insulin delivery application that you build and o
 
 ## What are my next steps?
 
-This site shows you step-by-step how to [**build**](intro/requirements.md){: target="_blank" }, [**set up**](setup/loop-3-overview.md){: target="_blank" } and [**operate**](operation/loop/open-loop.md){: target="_blank" } the *Loop* app.
+This site shows you step-by-step how to [**build**](intro/requirements.md){: target="_blank" }, [**set up**](setup/overview.md){: target="_blank" } and [**operate**](operation/loop/open-loop.md){: target="_blank" } the *Loop* app.
 
 * **You do not need a technical or computer background to do this**
 * **You can choose to build the *Loop* app several ways:**

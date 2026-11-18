@@ -63,7 +63,7 @@ Once you have chosen your Build Method, go through the pages for that build meth
 
 When you are ready to proceed, work through the tasks on each page. Take your time. You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
-After you build Loop on your phone, keep following along in the docs as you [Set up](../setup/loop-3-overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
+After you build Loop on your phone, keep following along in the docs as you [Set up](../setup/overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
 
 ## Next Steps:
 

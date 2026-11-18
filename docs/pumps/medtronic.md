@@ -1,6 +1,6 @@
 ## Pump Settings
 
-To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](../setup/displays-v3.md#heads-up-display)) or your connected pump in the Loop [Settings](../setup/settings.md) screen.
+To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](../setup/displays.md#heads-up-display)) or your connected pump in the Loop [Settings](../setup/settings.md) screen.
 
 ## Medtronic Status and Commands
 
@@ -17,12 +17,12 @@ As long as the spinning icon is spinning, Loop is trying to execute the Suspend 
 
 When the phone is in portrait mode, so the HUD is visible:
 
-* The user is alerted that pump is suspended by the HUD [Pump Status Icon](../setup/displays-v3.md#pump-status-icon).
+* The user is alerted that pump is suspended by the HUD [Pump Status Icon](../setup/displays.md#pump-status-icon).
 
 ![pump status icon when suspended](../setup/img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
-* The [HUD Status Row](../setup/displays-v3.md#hud-status-row) message can be tapped to resume delivery.
+* The [HUD Status Row](../setup/displays.md#hud-status-row) message can be tapped to resume delivery.
 
 ![status row message when pump is suspended](../setup/img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
@@ -73,7 +73,7 @@ Loop keeps the pump time up to date with the phone time automatically. As shown 
 
 ### Change Time Zone
 
-During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](../setup/displays-v3.md#time-zone) for more details.
+During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](../setup/displays.md#time-zone) for more details.
 
 When the time zone for the pump and phone are not the same, you will notice a small clock symbol in the upper right of the pump status icon.
 

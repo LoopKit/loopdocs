@@ -6,7 +6,7 @@ $$ BG[t] = Insulin[t] + Carb[t] + RetrospectiveCorrection[t] + Momentum[t] $$
 
 Note that the [Momemtum](#glucose-momentum-effect) term does not just add to the other effects as implied in the simple formula above; it is blended with the other terms as described in more detail in the [Momemtum](#glucose-momentum-effect) section below).
 
-You can see the individual contributions of these effects by tapping on the glucose chart on Loop's main screen to view the  [Predicted Glucose Chart](../../setup/displays-v3.md#predicted-glucose-chart){: target="_blank" }. *Loop* updates this glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
+You can see the individual contributions of these effects by tapping on the glucose chart on Loop's main screen to view the  [Predicted Glucose Chart](../../setup/displays.md#predicted-glucose-chart){: target="_blank" }. *Loop* updates this glucose prediction every five minutes when a new CGM value has been received and the pump's status has been updated.
 
 Just a note, this whole page is fairly technical. While perhaps not the most interesting topic for many readers, if you are seeking the detailed view of the *Loop* algorithm this discussion is quite useful. If you want a more surface understanding, the overview, bolus and temporary basal recommendations pages alone are probably sufficient.
 
@@ -257,7 +257,7 @@ When Integral Retrospective Correction (IRC) is enabled in settings under Algori
 
 $$ BG[t] = Insulin[t] + Carb[t] + IntegralRetrospectiveCorrection[t] + Momentum[t] $$
 
-The Retrospective Correction section of the [Predicted Glucose Chart](../../setup/displays-v3.md#predicted-glucose-chart) is updated when _<span translate="no">IRC</span>_ is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the _<span translate="no">IRC</span>_ and _<span translate="no">RC</span>_ calculations.
+The Retrospective Correction section of the [Predicted Glucose Chart](../../setup/displays.md#predicted-glucose-chart) is updated when _<span translate="no">IRC</span>_ is enabled, as shown in the graphic below. The `Integral effect`, inside lower blue rectangle, is the difference between the _<span translate="no">IRC</span>_ and _<span translate="no">RC</span>_ calculations.
 
 ![predicted glucose retrospective section with irc disabled and enabled](../../setup/img/glucose-details-irc.svg){width="400"}
 {align="center"}

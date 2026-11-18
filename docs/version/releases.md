@@ -379,7 +379,7 @@ Additional translations were imported from lokalise.
 **Miscellaneous Features**
 
 * Brings in pretty print for pump event details: [Loop PR 2403](https://github.com/LoopKit/Loop/pull/2403) and [LoopKit PR 586](https://github.com/LoopKit/LoopKit/pull/586)
-    * makes the details much easier to interpret, see [Event History and Details](../setup/displays-v3.md#event-history-and-details){: target="_blank" }
+    * makes the details much easier to interpret, see [Event History and Details](../setup/displays.md#event-history-and-details){: target="_blank" }
     * adds a localized date to the pump event display
 * Updates support files for Browser Build
 * Updates translations
@@ -873,7 +873,7 @@ Loop v3.0.0 was released on January 14, 2023.
 
 #### Details on this Update
 
-This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3](https://loopkit.github.io/loopdocs/setup/loop-3-overview/){: target="_blank" }.
+This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3](https://loopkit.github.io/loopdocs/setup/overview/){: target="_blank" }.
 
 #### New Hardware Support 🔥
 

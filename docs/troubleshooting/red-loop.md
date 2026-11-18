@@ -2,7 +2,7 @@
 
 This page provides help if your Loop icon is red and Loop is not working or only working sometimes.
 
-Clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../setup/displays-v3.md#pump-status-icon) and the [Glucose Status Icon](../setup/displays-v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
+Clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../setup/displays.md#pump-status-icon) and the [Glucose Status Icon](../setup/displays.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
 
 !!! warning "Omnipod Users"
 

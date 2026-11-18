@@ -52,7 +52,7 @@ These pages have a lot of detailed Loop information.
 * [Settings](settings.md)
 * [Therapy Settings](therapy-settings.md)
 * [Optional Services](services.md)
-* [Displays](displays-v3.md)
+* [Displays](displays.md)
 
 And a lot of detailed information about Status and Commands for:
 

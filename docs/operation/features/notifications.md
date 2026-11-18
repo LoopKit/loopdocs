@@ -141,7 +141,7 @@ Select your desired notification level for low reservoir
 ![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
 {align="center"}
 
-* Loop 3 reports No Insulin on the [Heads-Up-Display](../../setup/displays-v3.md#pump-status-icon).
+* Loop 3 reports No Insulin on the [Heads-Up-Display](../../setup/displays.md#pump-status-icon).
 
 ![pump alert - red exclamation point with phrase no insulin](../../setup/img/pump-alert-no-insulin.svg){width="125"}
 {align="center"}

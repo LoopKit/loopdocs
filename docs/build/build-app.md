@@ -488,7 +488,7 @@ But wait - there's more.
 
 ### New to Loop 3
 
-If this is your first build with Loop 3, head to the Set Up tab starting here: [Loop 3 Overview](../setup/loop-3-overview.md).
+If this is your first build with Loop 3, head to the Set Up tab starting here: [Loop 3 Overview](../setup/overview.md).
 
 !!! tip "Pro Tip: Read Along in LoopDocs as you Onboard"
     One of the goals for Loop 3 is to make the app robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.

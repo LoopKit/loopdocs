@@ -107,4 +107,4 @@ You can still use the note taking feature with *Tidepool* Mobile when Health is 
 
 ## Next Step: *Loop* Displays
 
-Great job, almost finished! Now that you have completed your services, let's move onto understanding your [*Loop* Displays](displays-v3.md). This page is a valuable tool for understanding your Loop and a great page to review when troubleshooting.
+Great job, almost finished! Now that you have completed your services, let's move onto understanding your [*Loop* Displays](displays.md). This page is a valuable tool for understanding your Loop and a great page to review when troubleshooting.
