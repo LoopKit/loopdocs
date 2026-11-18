@@ -4,7 +4,7 @@
 
 It is important that permissions for *Loop* be properly configured for the Health app.
 
-* See [Apple Health Permissions](../loop-3/onboarding.md#apple-health-permissions){: target="_blank" }
+* See [Apple Health Permissions](../setup/onboarding.md#apple-health-permissions){: target="_blank" }
 
 To view the list of data stored in Health
 

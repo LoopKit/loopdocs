@@ -61,7 +61,7 @@ The table below references which *Loop* version is associated with which Bluetoo
 | v3.14.7 | - previous release| *ble-heartbeat*<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH, Omnipod 5 |
 | v3.14.2 | - older release | *keep-connected*<br>- increased 203 faults with Atlas DASH<br>- iPhone 16/17e + Atlas DASH needs Pod Keep Alive | Classic, DASH |
 
-Versions before Loop v3.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the *Loop* app. The Bluetooth communications used the *keep-connected* method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" }. 
+Versions before Loop v3.14.2 used the older repositories of OmniKit or OmniBLE, which are no longer included in the *Loop* app. The Bluetooth communications used the *keep-connected* method and was subject to increased 203 faults with Atlas DASH for all phone models. The combination of iPhone 16/17e with Atlas DASH required use of [Pod Keep Alive](../pumps/omnipod.md#pod-keep-alive-feature){: target="_blank" }. 
 
 #### OmnipodKit Branches
 
@@ -123,10 +123,10 @@ This step requires **internet access**. After this step is done, you can pair an
 
 **First Omnipod 5 Pod Only**
 
-When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
+When you deactivate a Pod, you can cancel out of the Pair Pod screen, scroll to the bottom and choose to [Switch Pod Type](../pumps/omnipod.md#switch-pod-type){: target="_blank" } and choose Omnipod 5. As soon as you confirm Omnipod 5 as your selection, you are automatically routed to a service that provides you with the certificate you need. You will see several progress screens finishing in this final screen.
 
 
-![sucess screen after downloading an Omnipod 5 certificate](../loop-3/img/omnipod-5-setup-success.png){width="300"}
+![sucess screen after downloading an Omnipod 5 certificate](../setup/img/omnipod-5-setup-success.png){width="300"}
 {align="center"}
 
 At this point, you can tap Continue and will be taken to the Pair Pod screen. It is now safe to fill your Omnipod 5 Pod with insulin and pair it.
@@ -168,7 +168,7 @@ You may find the Omnipod 5 a little slower when pairing than the DASH because of
 With the new connect-on-demand code, *ble-heartbeat*, you may see delays for the app to connect to the pod when you unlock the phone for a manual action. This should take less than 5 seconds to resolve and is normal. Do not report this as an issue.  The *eager-connect* method, still under development, will shorten this delay.
 
 * connect-on-demand means the Pod wakes up at 5 minute intervals for automatic control or when you open the app for manual control
-* the *ble-heartbeat* version does not improve connection time for iPhone 16/17e so you will still need to use [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } for those phones
+* the *ble-heartbeat* version does not improve connection time for iPhone 16/17e so you will still need to use [Pod Keep Alive](../pumps/omnipod.md#pod-keep-alive-feature){: target="_blank" } for those phones
 
 - - -
 
@@ -196,7 +196,7 @@ People who have boxes that fail early find most Pods in that box fail early.
 * The 016 fault also exhibits an increased frequency and this one happens early in Pod life
 * You may be able to get Insulet to replace these, but there is no guarantee
 
-We have looked at the analytics reported from Loop users who [share their data](../loop-3/onboarding.md#usage-data-sharing){: target="_blank" }. The increase in fault rate appears to go along with the increased use of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.
+We have looked at the analytics reported from Loop users who [share their data](../setup/onboarding.md#usage-data-sharing){: target="_blank" }. The increase in fault rate appears to go along with the increased use of Atlas Pods. Reports from users that their Pods failed early started in November/December of 2025 and continues to increase through at least May 2026. Note that 203 and 016 faults have been around for a long time. The increased fault rate (almost 20 times more likely for 203 and 4 times more likely for 016) is associated with the Atlas DASH Pods which use a different internal card with different firmware.
 
 ### Keep Alive: Atlas or InPlay DASH Pods
 
@@ -288,7 +288,7 @@ You can tap on disable Closed-Loop and then immediately tap on enable Closed-Loo
 
 ## Can I set my own temp basal on Loop?
 
-With version 3, the *Loop* app provides a [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) feature.
+With version 3, the *Loop* app provides a [Manual Temp Basal](../pumps/omnipod.md#manual-temp-basal) feature.
 
 - - -
 

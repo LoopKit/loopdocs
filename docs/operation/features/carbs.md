@@ -2,7 +2,7 @@
 
 ### New with Version 3.4.x
 
-The [Favorite Foods](../../loop-3/features.md#favorite-foods){: target="_blank" } feature was added with version 3.4.x. This is an even faster way to enter meals than is described in the next section, Meal Entry - Fast Version.
+The [Favorite Foods](../../setup/features.md#favorite-foods){: target="_blank" } feature was added with version 3.4.x. This is an even faster way to enter meals than is described in the next section, Meal Entry - Fast Version.
 
 The graphic in the link above was taken from my Favorite Foods screen. Subsequent to that screen shot, I've renamed Medium to Lunch and Large to Dinner. Note this is a personal solution that works for me; you need to modify your settings to work for you.
 
@@ -209,7 +209,7 @@ For more information on some of the details reported on this screen, review [Dyn
 
 ## Review Carb Absorption
 
-New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be COB on the **Active Carbohydrates Chart** [Displays: Active Carbohydrate Chart](../../loop-3/displays-v3.md#active-carbohydrates-chart) that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
+New Loopers, and even experienced Loopers with an unfamiliar meal or activity, should review how Loop reports absorption for the carbs you entered for a meal. If you have perfect dosing for your meal (the mythical flat line), then the carb absorption will match the model perfectly. But sometimes, there might be COB on the **Active Carbohydrates Chart** [Displays: Active Carbohydrate Chart](../../setup/displays.md#active-carbohydrates-chart) that doesn't reflect your current situation, and you might need to make an adjustment. Note that while Loop is pretty forgiving on exact values and absorption time, you need to learn what works for you. Some common things to consider are listed below.
 
 * Need to adjust value for carbs or account for fat/protein
 * Need to adjust aborption time
@@ -262,7 +262,7 @@ The information available on the Carbohydrates screen disappears for any meals o
 
 ## Nightscout Entries
 
-With Loop 3, a caregiver can add remote carbs and perform remote bolus through Nightscout, but that requires set-up between the caregiver and Loopers phone and use of the [Remote Carb and Remote Bolus](../../loop-3/features.md#remote-carb-bolus) entries in the Careportal.
+With Loop 3, a caregiver can add remote carbs and perform remote bolus through Nightscout, but that requires set-up between the caregiver and Loopers phone and use of the [Remote Carb and Remote Bolus](../../setup/features.md#remote-carb-bolus) entries in the Careportal.
 
 If you enter carbs (not remote carbs) into the Careportal, they are not read by Loop and will not be reflected in COB.
 

@@ -2,7 +2,7 @@
 
 This page provides help if your Loop icon is red and Loop is not working or only working sometimes.
 
-Clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../loop-3/displays-v3.md#pump-status-icon) and the [Glucose Status Icon](../loop-3/displays-v3.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
+Clicking on the Loop icon on the main screen tells you the last time Loop completed, but you need to look at the [Pump Status Icon](../setup/displays.md#pump-status-icon) and the [Glucose Status Icon](../setup/displays.md#glucose-status-icon) for more information. For example, when Glucose is stale (more than 15 minutes old), the Glucose icon shows "- - -". For example, when the Pump is having a communication issue, you will see a No Signal icon.
 
 !!! warning "Omnipod Users"
 
@@ -64,7 +64,7 @@ Do these steps until one of them fixes the issue:
     ![img/riley-switch.png](img/riley-switch.png){width="300"}
     {align="center"}
 
-This should restore a green Loop within 5 minutes. If you're impatient and are using pods, you can tap on [Play Beeps](../loop-3/omnipod.md#play-beeps). With Medtronic, you can attempt to suspend/resume the pump. If this is successful, you've established communication again.
+This should restore a green Loop within 5 minutes. If you're impatient and are using pods, you can tap on [Play Beeps](../pumps/omnipod.md#play-beeps). With Medtronic, you can attempt to suspend/resume the pump. If this is successful, you've established communication again.
 
 Last thing to try is:
 

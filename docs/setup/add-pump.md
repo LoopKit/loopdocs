@@ -1,6 +1,6 @@
 ## Pump Choices
 
-You can choose a pump from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
+You can choose a pump from the Heads-Up-Display ([HUD](displays.md#heads-up-display)) or from the [Loop Settings](settings.md) screen.
 
 The HUD looks like the graphic below if no CGM or Pump is chosen:
 
@@ -102,7 +102,7 @@ Because of the extra exchanges required to handle the security amd setup for Omn
 At this point - you can pair your pod or hit `Cancel` (upper right of screen). You have completed the onboarding of the pump manager that handles all supported types of Omnipod Pods. The Pair NAME Pod screen is slightly different for each Pod Type. Make sure you have chosen the correct Pod Type to match your Pods.
 
 !!! tip "New Looper / New Podder"
-    Carefully review the [Pair Pod](omnipod.md#pair-pod){: target="_blank"} instructions before continuing. Then, when you are ready, pair a pod.
+    Carefully review the [Pair Pod](../pumps/omnipod.md#pair-pod){: target="_blank"} instructions before continuing. Then, when you are ready, pair a pod.
 
     If you are not ready to fill and attach a pod with insulin, try filling a pod with water and let it drip into a ziplock bag to test running Loop on the pod. (Be sure the pod is not near anything when you hit "Insert Cannula".)
 
@@ -209,7 +209,7 @@ You can choose from the insulin types below. This screen is common for all pumps
 
 * Insulin Type
     * **Rapid Acting** (Novolog, Humalog, Apidra) or **Ultra Rapid** (Fiasp, Lyumjev)
-    * Inhaled insulin (Afrezza) is not offered because it is not used in pumps. [Non-Pump Insulin](displays-v3.md#event-history-reservoir-and-non-pump-insulin)
+    * Inhaled insulin (Afrezza) is not offered because it is not used in pumps. [Non-Pump Insulin](displays.md#event-history-reservoir-and-non-pump-insulin)
 
 ![initial selection for insulin used in pump](img/add-pump-insulin.svg){width="250"}
 {align="center"}
@@ -221,7 +221,7 @@ For Omnipod Classic (Eros) and Medtronic pumps, you need a RileyLink compatible 
 !!! warning ""
     A new RileyLink compatible device is not listed next to its slider until after you connect the device to Loop. Find the little toggle in the device list, switch on that toggle, and the RileyLink will appear after the toggle is green.
 
-    You can [personalize](../loop-3/rileylink.md#personalize-device) the name once it is connected to Loop.
+    You can [personalize](../pumps/rileylink.md#personalize-device) the name once it is connected to Loop.
 
 ![img/pod-rl.png](img/pod-rl.png){width="400"}
 {align="center"}
@@ -233,7 +233,7 @@ If your device does not appear:
 * Make sure it is charged and turned on
 * Make sure it is not connected to a different phone or app
 
-If you are adding a Medtronic pump, skip ahead to [Medtronic](#medtronic).
+If you are adding a Medtronic pump, skip ahead to [Prepare Medtronic Pump](#prepare-medtronic-pump).
 
 
 ### Prepare Medtronic Pump
@@ -317,7 +317,7 @@ Now that your pump is paired with Loop, you should select the type of battery yo
     - Note that the Orange Link battery drain is substantial
         * Some users reported batteries needed to be changed every 2-4 days compared to 10 days with MySentry off
 
-The Medtronic status and commands available are shown in the [Pump Settings](medtronic.md) page.
+The Medtronic status and commands available are shown in the [Pump Settings](../pumps/medtronic.md) page.
 
 ## Dana-i / DanaRS-v3 Setup
 
@@ -476,10 +476,10 @@ After you delete a pump, the [Heads-Up-Display](#pump-choices) at the top of the
 * With Omnipod, you can switch between Pod types or choose a different pump (v3.14.2 or newer) but only after deactivating your current Pod
     * This is not needed when you are changing a pod, so long as the pods are of the same type
     * Tap on *Switch to another pod or pump type* when between pods
-    * If you select *Switch pod type*, you are taken to the [Switch Pod Type](#switch-pod-type) Selection screen
+    * If you select *Switch pod type*, you are taken to the [Switch Pod Type](../pumps/omnipod.md#switch-pod-type) Selection screen
         * All of your configuration settings are maintained when switching Pod Types
     * If you select Switch pump type, you can add a pump and go through the [Add Pump](#add-pump) screen
 
-    ![how to switch from any omnipod pot type to a different pod or pump type](img//omnipodkit-switch-pod-pump.png){width="350"}
+    ![how to switch from any omnipod pot type to a different pod or pump type](img/omnipodkit-switch-pod-pump.png){width="350"}
     {align="center"}
 

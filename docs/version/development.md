@@ -331,7 +331,7 @@ When you build the `main` or `dev` (v3.14.2 or newer) branch or `next-dev` (v3.1
 
     For those who do use an iPhone 16/17e model with Atlas DASH Pods, you will get better performance with v3.14.13 and should leave the Pod Keep Alive setting at the default value of "When Open".
 
-One of the biggest things is that you can [Switch Pod Type](../loop-3/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the `main` (v3.14.2) branch, only Eros and DASH are supported. With the `dev` (3.14.3 or newer) or `next-dev` ( 3.15.0 and newer) branches, Eros, DASH and Omnipod 5 are all supported.
+One of the biggest things is that you can [Switch Pod Type](../pumps/omnipod.md#switch-pod-type){: target="_blank" } between Pods without deleting the pump manager. That means all your configuration choices for desired notifications and type of Insulin are maintained when you change Pod Type. With the `main` (v3.14.2) branch, only Eros and DASH are supported. With the `dev` (3.14.3 or newer) or `next-dev` ( 3.15.0 and newer) branches, Eros, DASH and Omnipod 5 are all supported.
 
 !!! question "Why OmnipodKit?"
     When the initial work to add DASH to the supported pumps was started in 2021, a completely separate pump submodule was created distinct from the Classic (Eros) pump submodule. In other words, OmniBLE handled DASH and OmniKit handled Eros.
@@ -508,12 +508,12 @@ Check [Version History](releases.md#loop-3-version-history) for minor updates fo
 
 Features new with v3.4, originally in the Updates in `dev` section before the release, have been inserted into the appropriate part of the *LoopDocs* website (indicated by the up-right arrow after the link). The links below are left to assist people in finding the features.
 
-* [Support for Libre Sensors](../loop-3/add-cgm.md#libre){: target="_blank" }
+* [Support for Libre Sensors](../setup/add-cgm.md#libre){: target="_blank" }
 * [Pump or CGM Simulator on Phone](simulator.md#pump-or-cgm-simulator-on-phone){: target="_blank" }
-* [Algorithm Experiments](../loop-3/settings.md#algorithm-experiments){: target="_blank" }
-    * [<span translate="no">Glucose Based Partial Application</span> Factor](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }
-    * [<span translate="no">Integral Retrospective Correction</span>](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
-* [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" }
+* [Algorithm Experiments](../setup/settings.md#algorithm-experiments){: target="_blank" }
+    * [<span translate="no">Glucose Based Partial Application</span> Factor](../setup/features.md#glucose-based-partial-application-gbpa){: target="_blank" }
+    * [<span translate="no">Integral Retrospective Correction</span>](../setup/features.md#integral-retrospective-correction-irc){: target="_blank" }
+* [Favorite Foods](../setup/settings.md#favorite-foods){: target="_blank" }
 * [<span translate="no">TestFlight Expiration Warning</span>](../operation/features/notifications.md#loop-app-expiration-notification){: target="_blank" }
 
 - - -

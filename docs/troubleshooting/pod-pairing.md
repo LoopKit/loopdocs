@@ -67,7 +67,7 @@ For Eros pods, let's make sure everything is ok as far as the RileyLink goes:
 
 Read this page to understand the information you should see on your phone if your RileyLink Device is working properly:
 
-* [RileyLink Display](../loop-3/rileylink.md){: target="_blank" }
+* [RileyLink Display](../pumps/rileylink.md){: target="_blank" }
 
 ## Step 2: Deactivate old Pod
 

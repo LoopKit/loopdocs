@@ -354,8 +354,8 @@ Your daily schedule for basal rates, correction ranges, insulin sensitivity fact
 
 The display to modify time zone is found on your Pump screen:
 
-* [Omnipod](omnipod.md#pump-time)
-* [Medtronic](medtronic.md#change-time-zone)
+* [Omnipod](../pumps/omnipod.md#pump-time)
+* [Medtronic](../pumps/medtronic.md#change-time-zone)
 
 You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.
 

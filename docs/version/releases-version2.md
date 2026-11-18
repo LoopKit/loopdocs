@@ -69,15 +69,15 @@ Provisioning Profile Expiration Notifications:
 
 RileyLink Compatible Devices:
 
-* The [RileyLink compatible device displays](../loop-3/rileylink.md) are pump independent
+* The [RileyLink compatible device displays](../pumps/rileylink.md) are pump independent
 * OrangeLink Support added for connection monitoring, battery level alerting, find device, and light/vibration controls
-* [Medtronic Pump Settings](../loop-3/medtronic.md#use-mysentry) screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer RileyLink compatible device battery life
+* [Medtronic Pump Settings](../pumps/medtronic.md#use-mysentry) screen updated with option to disable MySentry use; user can trade Medtronic pump battery for longer RileyLink compatible device battery life
 
 Omnipod Features:
 
-* [Pod Settings](../loop-3/omnipod.md) layout: improved layout and functionality
+* [Pod Settings](../pumps/omnipod.md) layout: improved layout and functionality
 * Fault Codes: PDM style Ref code displayed for pod faults
-* [Confirmation beeps](../loop-3/omnipod.md#confidence-reminders): improved and more uniform implementation
+* [Confirmation beeps](../pumps/omnipod.md#confidence-reminders): improved and more uniform implementation
 * Pod Suspended: pod beeps once every 5 minutes until delivery is resumed or alarm cleared
 
 #### Code Fixes:

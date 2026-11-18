@@ -1,7 +1,7 @@
 ## Test Settings
 
 !!! info "Time Estimate"
-    - 2 hours to review the rest of *LoopDocs* (particularly the [Set Up](../loop-3/loop-3-overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" }, and [FAQs](../faqs/overview-faqs.md){: target="_blank" } sections) and [LoopTips](https://loopkit.github.io/looptips/)
+    - 2 hours to review the rest of *LoopDocs* (particularly the [Set Up](../setup/overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" }, and [FAQs](../faqs/overview-faqs.md){: target="_blank" } sections) and [LoopTips](https://loopkit.github.io/looptips/)
     * If you like quizzes, this older quiz has not been updated for version 3 of the *Loop* app and not all the links work (when your answers are scored), but the questions are still really good and the scoring report provides extra insight into why your answer was right or wrong
         - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to confirm you understand the *Loop* app expected behavior
         * New with version 3 of the *Loop* app: 

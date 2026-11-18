@@ -98,7 +98,7 @@ If you have future glucose from a manual time change or just entering something 
 
 The *Loop* app is very aggressive at warning you if you make this mistake. you will get a notification - even when you are in a different app. The graphic below shows the alert when you next view the *Loop* app after turning off automatic time and changing the time. Even if you respond right away, you may have at least one glucose reading in the future when you see this alert. Please [Remove Future Glucose](#remove-future-glucose).
 
-![notification displayed when automatic time is disabled on Loop phone](../loop-3/img/omnipod-time-change.svg){width="350"}
+![notification displayed when automatic time is disabled on Loop phone](../setup/img/omnipod-time-change.svg){width="350"}
 {align="center"}
 
 The rest of this page is about changing time zones.
@@ -125,7 +125,7 @@ Time Change comments:
     * For short trips, many Loopers just leave the pump time alone
 * Time Change (Daylight Savings Time or Summer Time)
     * Most people want to update their pump time immediately after the clocks change
-* A Clock Icon is seen in the HUD Pump Status display when pump time differs from phone [Time Zone](../loop-3/displays-v3.md#time-zone){: target="_blank" }
+* A Clock Icon is seen in the HUD Pump Status display when pump time differs from phone [Time Zone](../setup/displays.md#time-zone){: target="_blank" }
 
 !!! warning "Medtronic Users"
 

@@ -26,7 +26,7 @@ The *Loop* app will stop automatically adjusting insulin when the most recent gl
 
 With no recent glucose readings, your pump returns to the scheduled basal delivery (within 30 min or less).
 
-Loop continues to accept carb entries and manual bolus commands. [Manual Temp Basal](../loop-3/omnipod.md#manual-temp-basal) can also be commanded.
+Loop continues to accept carb entries and manual bolus commands. [Manual Temp Basal](../pumps/omnipod.md#manual-temp-basal) can also be commanded.
 
 ### Is the 15-day *Dexcom* G7 Supported?
 
@@ -60,7 +60,7 @@ When you change transmitters (prior to *Dexcom* G7), you will need to update the
 * After pairing completes with *Dexcom*:
     * In Loop, add CGM and select the *Dexcom* system again
     * Enter the new transmitter ID
-    * If you're unsure where to find your transmitter ID, see [Where to get the Transmitter ID for *Dexcom* G6?](../loop-3/add-cgm.md#where-to-get-the-transmitter-id-for-dexcom-g6)
+    * If you're unsure where to find your transmitter ID, see [Where to get the Transmitter ID for *Dexcom* G6?](../setup/add-cgm.md#where-to-get-the-transmitter-id-for-dexcom-g6)
 
 ![img/delete-cgm.jpg](img/delete-cgm.jpg){width="400"}
 {align="center"}

@@ -166,7 +166,7 @@ Because the automatic bolus amount is also limited by the partial application fa
 
 If you are mostly happy with the Dosing Strategy of Automatic Bolus but wish it delivered more or less insulin during every Loop interval, then this customization is for you.
 
-> With the release of version 3.4.x, there is another option. If you choose to enable [Glucose Based Partial Application](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }, then the percent of the recommended bolus automatically provided adjusts from 20% to 80% depending on your glucose level. You may decide this works well enough for you that this customization is no longer desired. Please give this new feature a try.
+> With the release of version 3.4.x, there is another option. If you choose to enable [Glucose Based Partial Application](../setup/features.md#glucose-based-partial-application-gbpa){: target="_blank" }, then the percent of the recommended bolus automatically provided adjusts from 20% to 80% depending on your glucose level. You may decide this works well enough for you that this customization is no longer desired. Please give this new feature a try.
 
 This customization changes the percent of the recommended bolus used for automatic delivery. The method for calculating that recommendation is not changed by this modification.  The default value is 40% (0.4).  It is recommended you take small changes of 0.1 at a time.  Once you modify it once and try it out for a while, it’s easy to go back and change it again.
 

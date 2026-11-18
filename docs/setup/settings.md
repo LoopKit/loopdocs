@@ -1,6 +1,6 @@
 ## Loop Settings Screen
 
-The Settings screen is reached by tapping the gear icon in the [Toolbar](displays-v3.md#toolbar) on the [Main Loop Screen](displays-v3.md#main-loop-screen). The graphic below is for Loop 3.14.11 and later versions.
+The Settings screen is reached by tapping the gear icon in the [Toolbar](displays.md#toolbar) on the [Main Loop Screen](displays.md#main-loop-screen). The graphic below is for Loop 3.14.11 and later versions.
 
 ![settings screen for loop 3](img/settings.svg){width="700"}
 {align="center"}
@@ -20,7 +20,7 @@ No automatic (closed loop) adjustment of insulin will occur and the slider will 
 
 * No Pump added
 * No CGM added
-* User set a [Manual Temp Basal](omnipod.md#manual-temp-basal)
+* User set a [Manual Temp Basal](../pumps/omnipod.md#manual-temp-basal)
 
 ### Recommended Insulin
 
@@ -31,7 +31,7 @@ With every loop cycle - typically every 5 minutes - Loop updates the glucose pre
 * IOB from previous insulin delivery
 * Your [Therapy Settings](therapy-settings.md)
 
-Based on this prediction, Loop calculates a modification to insulin dosing to bring the user into the desired correction range. This can be a reduction in basal to raise the glucose prediction or a recommended bolus, subject to Delivery Limits, to lower the prediction. The glucose prediction is shown in the [Glucose Chart](displays-v3.md#charts) along with the measured glucose values.
+Based on this prediction, Loop calculates a modification to insulin dosing to bring the user into the desired correction range. This can be a reduction in basal to raise the glucose prediction or a recommended bolus, subject to Delivery Limits, to lower the prediction. The glucose prediction is shown in the [Glucose Chart](displays.md#charts) along with the measured glucose values.
 
 * When in Open Loop, no automated action is taken.
 * When in Closed Loop, automated action is taken based on the selected Dosing Strategy.
@@ -155,10 +155,10 @@ The Algorithm Experiments are new with Loop 3.4 and we recommend you review the 
 The information about the pump section is detailed on several different pages. Follow the links below:
 
 * [Add or Modify Pump](add-pump.md)
-* [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
-* [Medtronic](medtronic.md) Status and Commands
-* [Medtrum Pumps](medtrum.md) requires `dev` branch
-* [Dana Pumps](dana.md) requires a feature branch: [Status for Dana Support](../version/development.md#status-for-dana-support){: target="_blank" }:
+* [Omnipod or Omnipod DASH](../pumps/omnipod.md) Status and Commands
+* [Medtronic](../pumps/medtronic.md) Status and Commands
+* [Medtrum Pumps](../pumps/medtrum.md) requires `dev` branch
+* [Dana Pumps](../pumps/dana.md) requires a feature branch: [Status for Dana Support](../version/development.md#status-for-dana-support){: target="_blank" }:
 
 ### [CGM Settings](add-cgm.md)
 

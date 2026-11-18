@@ -1,6 +1,6 @@
 ## CGM Choices
 
-A CGM can be added from the Heads-Up-Display ([HUD](displays-v3.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
+A CGM can be added from the Heads-Up-Display ([HUD](displays.md#heads-up-display)) or from the [Loop Settings](settings.md) screen ⚙️.
 
 The HUD will look like the graphic below if no CGM or Pump is connected with Loop:
 
@@ -231,7 +231,7 @@ If you are having trouble with connecting to the Eversense, try these steps, one
     
     If you do not enter your Share credentials correctly into Loop, you will get an error when Loop tries to access your Share account to backfill CGM data. An example of the error message is shown in the graphic below. If you see that message, delete your Share account from Loop settings and try again.
     
-    ![img/shareclient.jpg](../loop-3/img/shareclient.jpg){width="300"}
+    ![img/shareclient.jpg](img/shareclient.jpg){width="300"}
     {align="center"}
 
 

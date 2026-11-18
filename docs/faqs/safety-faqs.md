@@ -29,9 +29,9 @@ Be sure to do this for every *Focus* mode you use.
 
 ## Understand the App Displays
 
-If you do not understand the components displayed in the graphic below, please spend time reviewing the information at [Displays](../loop-3/displays-v3.md).
+If you do not understand the components displayed in the graphic below, please spend time reviewing the information at [Displays](../setup/displays.md).
 
-![main loop screen when running nominally with annotation for heads-up-display, charts and toolbar](../loop-3/img/main-annotated.png){width="450"}
+![main loop screen when running nominally with annotation for heads-up-display, charts and toolbar](../setup/img/main-annotated.png){width="450"}
 {align="center"}
 
 ## Carb Entry and Insulin Delivery
@@ -44,9 +44,9 @@ If you entered carbs and then changed your mind on the amount or the time at whi
 
 ## How to Cancel a Bolus
 
-Once a bolus starts, the progress of that bolus appears in the [HUD Status Row](../loop-3/displays-v3.md#hud-status-row). Note that the phone must be held in portrait mode to see this. Simply tap on the row that shows the delivery to halt the bolus.
+Once a bolus starts, the progress of that bolus appears in the [HUD Status Row](../setup/displays.md#hud-status-row). Note that the phone must be held in portrait mode to see this. Simply tap on the row that shows the delivery to halt the bolus.
 
-![bolus-in-progess message: message size is 500 x 50 pixels](../loop-3/img/status-row-bolus-in-progress.svg){width="350"}
+![bolus-in-progess message: message size is 500 x 50 pixels](../setup/img/status-row-bolus-in-progress.svg){width="350"}
 
 ## Understand Delivery Limits
 

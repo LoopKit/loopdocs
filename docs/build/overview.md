@@ -38,7 +38,7 @@ Next, read pages completely and skim [Oh dear! Build errors?](build-errors.md). 
 
 When you are ready to proceed, complete the tasks on each page.  You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
 
-After you build Loop on your phone, keep following along in the docs as you [Set up](../loop-3/loop-3-overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
+After you build Loop on your phone, keep following along in the docs as you [Set up](../setup/overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
 
 ## What if I get stuck?
 

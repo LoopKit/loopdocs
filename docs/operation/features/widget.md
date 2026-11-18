@@ -33,5 +33,5 @@ With older versions of iOS, the widget is available in the Today view of your iP
 ![img/widget_bar.png](img/widget_bar.png){width="600"}
 {align="center"}
 
-![widget on lock screen, dex above, loop below](../../loop-3/img/dex-loop-3-widget.svg){width="300"}
+![widget on lock screen, dex above, loop below](../../setup/img/dex-loop-3-widget.svg){width="300"}
 {align="center"}
