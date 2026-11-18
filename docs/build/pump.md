@@ -256,7 +256,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 
 !!! warning "You must build a feature branch to use Tandem Mobi"
-    Tandem Mobi is in open beta. Please use the [`feat/tandem-next-dev` feature branch](../version/development.md#feature-branch-featall-managers){: target="_blank" }.
+    Tandem Mobi is in open beta. Please use the [`feat/tandem-next-dev` feature branch](../version/development.md#tandem-mobi-open-beta){: target="_blank" }.
     
     * You must follow [zulipchat Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)
 
