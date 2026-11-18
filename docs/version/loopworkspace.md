@@ -107,9 +107,6 @@ cd LoopWorkspace
 xed .
 ```
 
-Remember the warning - if you move to the `dev` branch on your phone from `Loop main`, it should work fine. Going backward, you may need to delete the app from your phone and enter all your settings again to return to `main`.
-
-
 ### Start Xcode using Finder
 
 The cloned version of the `LoopWorkspace` will go into the current directory in the *Terminal* app when you execute the command. *Terminal* app opens in your User account home directory by default when you first open it. Unless you changed to a different directory, check your home directory for the `LoopWorkspace` folder.
