@@ -555,8 +555,12 @@ After pairing, the *Loop* app shows the insulin delivery information reported by
 
 You are asked if you want to load this information into the *Loop* app so it is included in your IOB.
 
-* Tap `Load Pump History into Loop` (recommended) to import recent bolus and basal records
-* Tap `Do Not Load` to skip; insulin delivered before pairing will not be included in your IOB
+Which one to choose depends on what you used before adding the Mobi to the *Loop* app:
+
+* **You were using this Mobi before adding it to the *Loop* app:** tap `Load Pump History into Loop`
+    * Recent bolus and basal records from the pump are imported, so insulin the Mobi delivered before pairing is included in your IOB
+* **You were running the *Loop* app with a different pump before adding the Mobi:** tap `Do Not Load`
+    * The *Loop* app already has your recent insulin delivery from the other pump, so do not import history from the Mobi
 
 ### Mobi Setup Complete
 
