@@ -5,6 +5,7 @@
     - Medtrum Nano users: both 200 U and 300 U patches are supported
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
     - Dana users: you must be willing to build a feature branch and understand the known issues
+    - Tandem Mobi users: you must be willing to build a feature branch based on *Loop* 4 development code and follow the open beta on zulipchat
 
 !!! abstract "Summary"
     - If you use [Omnipod](#omnipod-pumps) - your pump is supported
@@ -260,7 +261,28 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
     
     * You must follow [zulipchat Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)
 
+    Read these pages in LoopDocs:
 
+    * [Add a Tandem Mobi Pump](../setup/add-pump.md#tandem-mobi-setup){: target="_blank" }
+    * [Status for `next-dev` Branch](../version/development.md#status-for-next-dev-branch){: target="_blank" }: the `feat/tandem-next-dev` branch is *Loop* 4 development code
+
+!!! warning "Reminder and Disclaimer"
+    The use of the Tandem Mobi with the *Loop* app is not supported by Tandem Diabetes Care. Do not call Tandem asking for help with your *Loop* app build, setup, or operation. The Tandem Mobi pump manager, TandemKit, is open-source code that is not affiliated with Tandem.
+
+**The Tandem Mobi has built-in Bluetooth communications. Therefore, no RileyLink-compatible device is needed to use the Tandem Mobi with the *Loop* app.**
+
+![Tandem Mobi pump](img/tandem-mobi.png){width="300"}
+{align="center"}
+
+The Tandem Mobi is a small, 200 U tubed pump from Tandem Diabetes Care.
+
+Before you add the Tandem Mobi to the *Loop* app, know that:
+
+* The Tandem Mobi can be controlled by the Tandem Mobi app or by the *Loop* app, but not by both
+* When you add the Tandem Mobi to the *Loop* app, Control-IQ on the pump is turned off so the *Loop* app can control insulin delivery
+* You need the pump's charging pad and the 6-digit pairing code (PIN) found inside the cartridge area of the pump to pair the pump with the *Loop* app
+
+For step-by-step instructions, see [Tandem Mobi Setup](../setup/add-pump.md#tandem-mobi-setup){: target="_blank" }.
 
 - - -
 
