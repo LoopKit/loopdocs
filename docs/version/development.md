@@ -85,7 +85,6 @@ The table below lists active branches.
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 | `feat/all-managers` | 3.14.13 | 13 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ b494109` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
 | `feat/tandem-next-dev` | 3.15.2 | subject to rapid change | Tandem Mobi open beta<br>Must have a Tandem Mobi<br>Follow the [Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)<br>**Please read** [Tandem Mobi Open Beta](#tandem-mobi-open-beta) |
-| `feat/tandem-closed-beta` | 3.14.11 | 01 Nov 2026<br>**no longer updated** | Replaced by `feat/tandem-next-dev`<br>**Please read** [Tandem Mobi Open Beta](#tandem-mobi-open-beta) |
 
 #### Tandem Mobi Open Beta
 
@@ -103,8 +102,7 @@ Tandem Mobi support is in open beta in the `feat/tandem-next-dev` branch.
 
     | | Old branch | New branch |
     |:--|:--|:--|
-    | Branch name | `feat/tandem-closed-beta` or<br>`feat/tandem-closed-beta-next-dev` | `feat/tandem-next-dev` |
-    | Based on | `dev` or `next-dev` | `next-dev` |
+    | Branch name | `feat/tandem-closed-beta-next-dev` | `feat/tandem-next-dev` |
     | Status | **no longer updated** | subject to frequent updates |
 
     What to do:
