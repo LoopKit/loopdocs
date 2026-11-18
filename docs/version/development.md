@@ -84,9 +84,8 @@ The table below lists active branches.
 | `dev` | 3.14.13 | expect `next-dev` to be merged here soon | [Status for `dev` Branch](#status-for-dev-branch) |
 | `next-dev` | 3.15.2 | subject to rapid change | [Status for `next-dev` Branch](#status-for-next-dev-branch)|
 | `feat/all-managers` | 3.14.13 | 13 Nov 2026| This branch matches latest updates for dev<br>It also provides `DanaKit @ b494109` support<br>**Please read** [Status for Dana Support](#status-for-dana-support)<br>**Please read** [Feature Branch: feat/all-managers](#feature-branch-featall-managers) |
-| `feat/tandem-next-dev` | 3.15.2 | subject to rapid change | Tandem Mobi open beta<br>Must have a Tandem Mobi<br>**Please read** [Tandem Mobi Open Beta](#tandem-mobi-open-beta) |
-| `feat/tandem-closed-beta-next-dev` | 3.15.2 | subject to rapid change<br>must be invited<br>to build this branch | Expert testers may [join the closed beta](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497)<br>Must have a Tandem Mobi to apply<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
-| `feat/tandem-closed-beta` | 3.14.11 | 01 Nov 2026<br>**no longer updated** | Replaced by `feat/tandem-closed-beta-next-dev`<br>**Please read** [Tandem Closed Beta Moved to `next-dev`](#tandem-closed-beta-moved-to-next-dev) |
+| `feat/tandem-next-dev` | 3.15.2 | subject to rapid change | Tandem Mobi open beta<br>Must have a Tandem Mobi<br>Follow the [Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)<br>**Please read** [Tandem Mobi Open Beta](#tandem-mobi-open-beta) |
+| `feat/tandem-closed-beta` | 3.14.11 | 01 Nov 2026<br>**no longer updated** | Replaced by `feat/tandem-next-dev`<br>**Please read** [Tandem Mobi Open Beta](#tandem-mobi-open-beta) |
 
 #### Tandem Mobi Open Beta
 
@@ -100,20 +99,19 @@ Tandem Mobi support is in open beta in the `feat/tandem-next-dev` branch.
 #### Tandem Closed Beta Moved to `next-dev`
 
 !!! warning "Tandem Closed Beta Testers: Switch Branches"
-    Closed Beta testing for the Tandem Mobi has moved to a `next-dev` version of *Loop*.
+    The Tandem Mobi closed beta is now an open beta in the `feat/tandem-next-dev` branch of *Loop*.
 
     | | Old branch | New branch |
     |:--|:--|:--|
-    | Branch name | `feat/tandem-closed-beta` | `feat/tandem-closed-beta-next-dev` |
-    | Based on | `dev` | `next-dev` |
-    | Version | 3.14.11 | 3.15.2 |
-    | Status | **no longer updated**<br>last update 01 Nov 2026 | subject to frequent updates |
+    | Branch name | `feat/tandem-closed-beta` or<br>`feat/tandem-closed-beta-next-dev` | `feat/tandem-next-dev` |
+    | Based on | `dev` or `next-dev` | `next-dev` |
+    | Status | **no longer updated** | subject to frequent updates |
 
     What to do:
 
-    * Add the `feat/tandem-closed-beta-next-dev` branch to your fork and build it; see [How to Build Feature Branches](#how-to-build-feature-branches)
-    * Read [Status for `next-dev` Branch](#status-for-next-dev-branch) before you build: `next-dev` is *Loop* 4 development code with changes beyond Tandem support
-    * Follow the [Tandem closed beta channel](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20-.20Closed.20Beta.20Testing/with/629511497) on zulipchat for updates
+    * Add the `feat/tandem-next-dev` branch to your fork and build it; see [How to Build Feature Branches](#how-to-build-feature-branches)
+    * Read [Tandem Mobi Open Beta](#tandem-mobi-open-beta) for details
+    * Follow the [Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737) on zulipchat for updates
 
 ??? question "What is SHA? (Click to Open/Close)"
     SHA-1 means Secure Hash Algorithm 1. This is used to generate an alphanumeric code to identify which version of a repository is used. 
