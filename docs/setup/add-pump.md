@@ -22,6 +22,7 @@ Loopers can choose from multiple pumps and a simulator:
     * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
 * [Dana-i / DanaRS-v3](#dana-i-danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
     * Note: DanaRS-v1 or any Dana Korean versions are not supported
+* [Tandem Mobi](#tandem-mobi-setup) (**open beta; new pump manager, requires a feature branch, use with care**)
 * Insulin Pump Simulator
 
 !!! info "Omnipod Terms"
@@ -48,6 +49,10 @@ Then continue with the appropriate section for your pump:
 * [Medtrum Nano Setup](#medtrum-nano-setup)
 * [Medtronic Minimed Setup](#medtronic-setup)
 * [Dana Setup](#dana-i-danars-v3-setup)
+* [Tandem Mobi Setup](#tandem-mobi-setup)
+
+!!! note "Feature Branch Pumps"
+    Dana and Tandem Mobi only appear in the list of pumps if you built a feature branch that includes that pump manager.
 
 
 ## Omnipod Setup
@@ -457,6 +462,116 @@ DanaKit doesn't provide a heartbeat by default.
 
 Therefore, it is important to check if your CGM provides a heartbeat. If it does not, there are battery-intensive work-around methods for Dana pump. See [Dana Heartbeat Modes](../troubleshooting/dana-faq.md#heartbeat-modes){: target="_blank" }.
 
+## Tandem Mobi Setup
+
+### Tandem Mobi is a New Pump Manager
+
+**WARNING: Tandem Mobi support in Loop is in open beta and is a work-in-progress.**
+
+The Tandem Mobi pump manager is called TandemKit. It is not affiliated with or supported by Tandem Diabetes Care.
+
+### Before Testing Tandem Mobi
+
+You must build a feature branch to get Tandem Mobi support in Loop:
+
+* `feat/tandem-next-dev`
+* Please refer to [How to Build Feature Branches](../version/development.md#how-to-build-feature-branches){: target="_blank" }
+
+!!! warning "This Branch is Based on `next-dev`"
+    The `feat/tandem-next-dev` branch is built on `next-dev`, which is development code for *Loop* 4. It includes changes beyond Tandem support.
+
+    * Read [Status for `next-dev` Branch](../version/development.md#status-for-next-dev-branch){: target="_blank" } before you build
+    * Returning to released code after using `next-dev` may require deleting the app and starting over
+
+### When Testing Tandem Mobi
+
+* Please do not use Tandem Mobi with Loop unless you are willing to test and communicate with developers on zulipchat in the [Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)
+
+### Before Adding Tandem Mobi
+
+!!! important "The Mobi Can Only Be Paired With One App"
+    The Tandem Mobi can be controlled by the Tandem Mobi app or by the *Loop* app, but not by both.
+
+    * Unpair the pump from any other app before you begin
+    * If the pump is listed in your phone's Bluetooth settings (iOS Settings, Bluetooth), tap on the pump name and choose `Forget This Device`
+
+Have these items ready:
+
+* Your Tandem Mobi and its charging pad
+* The 6-digit pairing code (PIN)
+    * The PIN is located on the inside of the cartridge area of the pump, labeled `PIN`
+
+### Add Tandem Mobi Pump
+
+You can only add the Tandem Mobi when no pump is selected. If you already have a pump selected, you must first delete the pump as detailed in [Change Pump Type](#change-pump-type).
+
+1. Read the welcome screen: `Ready to connect your Tandem Mobi?`
+1. Select [Insulin Type](#insulin-type)
+1. Choose [Sound Settings](#mobi-sound-settings)
+1. [Pair Tandem Mobi](#pair-tandem-mobi)
+1. [Load Pump History](#load-pump-history)
+1. [Finish Setup](#mobi-setup-complete)
+
+### Mobi Sound Settings
+
+Choose whether the pump beeps or vibrates for each category:
+
+* General (Temp Basal and Bolus)
+* Quick Bolus
+* Reminders
+* Alarms
+* Alerts
+
+!!! info "No Silent Option for Temp Basal and Bolus"
+    The current version of TandemKit does not support silent operation for Temp Basal and Bolus commands.
+
+    With [Automatic Bolus](settings.md#dosing-strategy), the pump may beep or vibrate for every automatic bolus.
+
+### Pair Tandem Mobi
+
+1. Place your Mobi on the center of the charging pad
+1. Pick up your pump, wait a second, then double-press the T button
+    * You should hear two beeps
+1. When the *Loop* app finds your pump, it displays the pump name, for example `Tandem Mobi 123`
+1. Enter the 6-digit PIN from the cartridge area of your pump
+1. Wait while the *Loop* app authenticates with the pump; this can take up to 60 seconds
+
+If your pump is not detected, tap on `Pump not detected?` for tips. Make sure you have:
+
+* Unpaired the pump from any other apps
+* Removed the pump from your phone's saved Bluetooth device list
+* Placed the pump on the center of the charging pad
+    * If the charging pad and pump don't light up, try a different USB cord or charger
+    * Don't use a USB-C to USB-C cable or a high-wattage charger
+* If the pump is off or out of battery, hold down the T button for 30 seconds while it is on the charging pad to wake it up
+
+### Load Pump History
+
+After pairing, the *Loop* app shows the insulin delivery information reported by the pump:
+
+* Insulin on Board
+* Last bolus delivery
+* Current basal rate (or that delivery is suspended)
+
+You are asked if you want to load this information into the *Loop* app so it is included in your IOB.
+
+* Tap `Load Pump History into Loop` (recommended) to import recent bolus and basal records
+* Tap `Do Not Load` to skip; insulin delivered before pairing will not be included in your IOB
+
+### Mobi Setup Complete
+
+Keep the pump near your phone while the *Loop* app finishes setup. During this step the *Loop* app:
+
+* Checks the pump's settings
+    * If Control-IQ is on, you are told that continuing turns Control-IQ off so the *Loop* app can control insulin delivery
+* Saves your settings to the pump
+    * Your basal rates, delivery limits and time are written to the pump
+    * If this fails, you see a `Pump Settings Not Saved` message; tap `Try Again` with the pump close to the phone
+    * The *Loop* app will not set temporary basal rates until your basal rates are saved to the pump
+* Reads the pump's current status
+
+When you see `Your Tandem pump is connected!`, tap `Finish`.
+
 ## Change Pump Type
 
 Before changing from one pump type to another pump type, you must delete the old pump type.
@@ -465,7 +580,7 @@ After you delete a pump, the [Heads-Up-Display](#pump-choices) at the top of the
 
 
 
-* If you are using Medtronic Minimed or Dana (RS/-i), scroll to the bottom of the pump screen and select `Delete Pump`
+* If you are using Medtronic Minimed, Dana (RS/-i) or Tandem Mobi, scroll to the bottom of the pump screen and select `Delete Pump`
 
 * If you are using Pump Simulator on the phone, you must tap on Simulator Settings and then scroll to the bottom of the pump screen and select `Delete Pump`
 
