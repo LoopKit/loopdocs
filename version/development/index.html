@@ -5347,7 +5347,7 @@
 </ul>
 </li>
 <li>We are bringing in updates for Tidepool in a special <abbr title="version of code within a single repository or workspace repository">branch</abbr> <code>next-dev</code><ul>
-<li>Note that you can probably go backward to <code>main</code> or <code>dev</code> from <code>next-dev</code> but it is not guaranteed</li>
+<li>You can go back to <code>main</code> or <code>dev</code> from <code>next-dev</code> without deleting the app, see <a href="#status-for-next-dev-branch">Status for <code>next-dev</code> Branch</a></li>
 </ul>
 </li>
 </ul>
@@ -5497,17 +5497,20 @@
 <li><a href="https://github.com/LoopKit/LoopWorkspace/blob/next-dev/docs/loop-diy-whats-new.md"><em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> <abbr title="Do it yourself, a common acronym for the open-source software community (and the maker community)">DIY</abbr>: What's new</a></li>
 </ul>
 <p>The document linked above does not include more recent updates which you find discussed in zulipchat and highlighted below. But the document does provides a solid basis for understanding the new features.</p>
-<div class="admonition warning">
-<p class="admonition-title">Backward Compatibility is Limited</p>
-<p>Once you build <code>next-dev</code> on your personal phone, you may run into issues trying to return to released code at this time.</p>
+<div class="admonition tip">
+<p class="admonition-title">Returning to Released Code</p>
+<p>You can go back from <code>next-dev</code> to <code>main</code> or <code>dev</code> by building over your existing app. You do not need to delete the app.</p>
 <ul>
-<li>If you return after a short time on <code>next-dev</code>, your database will probably be maintained (but this is a compatibility feature that has not been tested)</li>
-<li>Many people who return are annoyed by spurious warning messages where the alerts from <code>next-dev</code> are different and might not be cleared<ul>
-<li>It is recommended that if you do decide to return to <code>main</code> or <code>dev</code> after testing <code>next-dev</code> on your personal phone, that you be prepared to delete the app and rebuild, which means you lose connection to your existing <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pod or Medtrum Patch</li>
-<li>You will also need to enter all your settings and your <abbr title="continuous glucose monitor, wearable medical device that measures and reports glucose in interstitial fluid">CGM</abbr> / Pump information</li>
-<li>Some, but not all, of your configuration can be downloaded from <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr> if you use <abbr title="a personal website used to view your glucose and diabetes management data, `Loop` can upload to `Nightscout`">Nightscout</abbr></li>
+<li>Your pump connection is kept, including your current <abbr title="Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.">Omnipod</abbr> Pod or Medtrum Patch<ul>
+<li>Exception: Tandem Mobi is only supported in the <code>feat/tandem-next-dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr>; if you build any other <abbr title="version of code within a single repository or workspace repository">branch</abbr>, <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> cannot control your Mobi pump</li>
 </ul>
 </li>
+<li>Your glucose, carbs, insulin and dosing history are kept<ul>
+<li>Only details added by <code>next-dev</code>, such as when each reading was received, are dropped</li>
+</ul>
+</li>
+<li>Build v3.14.12 or newer so the settings saved by <code>next-dev</code>, including presets, are read correctly</li>
+<li>For details, see <a href="https://github.com/LoopKit/LoopWorkspace/pull/565">LoopWorkspace <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 565</a></li>
 </ul>
 </div>
 <p>This is the open <abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> for <code>next-dev</code>: <a href="https://github.com/LoopKit/LoopWorkspace/pull/454"><abbr title="Pull Request - a formal method to request changes to a repository">PR</abbr> 454</a></p>
