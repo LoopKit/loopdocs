@@ -481,7 +481,8 @@ You must build a feature branch to get Tandem Mobi support in Loop:
     The `feat/tandem-next-dev` branch is built on `next-dev`, which is development code for *Loop* 4. It includes changes beyond Tandem support.
 
     * Read [Status for `next-dev` Branch](../version/development.md#status-for-next-dev-branch){: target="_blank" } before you build
-    * Returning to released code after using `next-dev` may require deleting the app and starting over
+    * You can return to released code (v3.14.12 or newer) after using `next-dev` without deleting the app
+    * However, TandemKit is only in the `feat/tandem-next-dev` branch: if you build any other branch, *Loop* cannot control your Mobi pump
 
 ### When Testing Tandem Mobi
 

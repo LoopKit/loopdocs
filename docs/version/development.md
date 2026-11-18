@@ -30,7 +30,7 @@ The next version of the *Loop* app is developed using branches.
     * Sometimes there are breaking changes
         * A breaking change is when you can build the new branch over your existing app, but cannot go backwards without deleting your app from your phone
     * We are bringing in updates for Tidepool in a special branch `next-dev`
-        * Note that you can probably go backward to `main` or `dev` from `next-dev` but it is not guaranteed
+        * You can go back to `main` or `dev` from `next-dev` without deleting the app, see [Status for `next-dev` Branch](#status-for-next-dev-branch)
 * In addition there are specific feature branches that enable users to test new pump and cgm managers or features for existing managers before they are added to the `dev` branch
 * You should only test a development or feature branch if you are willing to be an active participant with the developers:
     * [Monitor announcements in zulipchat](https://loop.zulipchat.com/#narrow/channel/144182-development) 
@@ -154,14 +154,15 @@ The document linked below provides an overview of updates brought from Tidepool 
 
 The document linked above does not include more recent updates which you find discussed in zulipchat and highlighted below. But the document does provides a solid basis for understanding the new features.
 
-!!! warning "Backward Compatibility is Limited"
-    Once you build `next-dev` on your personal phone, you may run into issues trying to return to released code at this time.
+!!! tip "Returning to Released Code"
+    You can go back from `next-dev` to `main` or `dev` by building over your existing app. You do not need to delete the app.
 
-    * If you return after a short time on `next-dev`, your database will probably be maintained (but this is a compatibility feature that has not been tested)
-    * Many people who return are annoyed by spurious warning messages where the alerts from `next-dev` are different and might not be cleared
-        * It is recommended that if you do decide to return to `main` or `dev` after testing `next-dev` on your personal phone, that you be prepared to delete the app and rebuild, which means you lose connection to your existing Omnipod Pod or Medtrum Patch
-        * You will also need to enter all your settings and your CGM / Pump information
-        * Some, but not all, of your configuration can be downloaded from Nightscout if you use Nightscout
+    * Your pump connection is kept, including your current Omnipod Pod or Medtrum Patch
+        * Exception: Tandem Mobi is only supported in the `feat/tandem-next-dev` branch; if you build any other branch, *Loop* cannot control your Mobi pump
+    * Your glucose, carbs, insulin and dosing history are kept
+        * Only details added by `next-dev`, such as when each reading was received, are dropped
+    * Build v3.14.12 or newer so the settings saved by `next-dev`, including presets, are read correctly
+    * For details, see [LoopWorkspace PR 565](https://github.com/LoopKit/LoopWorkspace/pull/565)
 
 This is the open PR for `next-dev`: [PR 454](https://github.com/LoopKit/LoopWorkspace/pull/454)
 
