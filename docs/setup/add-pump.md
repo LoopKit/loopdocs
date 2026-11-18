@@ -233,7 +233,7 @@ If your device does not appear:
 * Make sure it is charged and turned on
 * Make sure it is not connected to a different phone or app
 
-If you are adding a Medtronic pump, skip ahead to [Medtronic](#medtronic).
+If you are adding a Medtronic pump, skip ahead to [Prepare Medtronic Pump](#prepare-medtronic-pump).
 
 
 ### Prepare Medtronic Pump
@@ -476,7 +476,7 @@ After you delete a pump, the [Heads-Up-Display](#pump-choices) at the top of the
 * With Omnipod, you can switch between Pod types or choose a different pump (v3.14.2 or newer) but only after deactivating your current Pod
     * This is not needed when you are changing a pod, so long as the pods are of the same type
     * Tap on *Switch to another pod or pump type* when between pods
-    * If you select *Switch pod type*, you are taken to the [Switch Pod Type](#switch-pod-type) Selection screen
+    * If you select *Switch pod type*, you are taken to the [Switch Pod Type](../pumps/omnipod.md#switch-pod-type) Selection screen
         * All of your configuration settings are maintained when switching Pod Types
     * If you select Switch pump type, you can add a pump and go through the [Add Pump](#add-pump) screen
 

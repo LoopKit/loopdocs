@@ -182,7 +182,7 @@ This error occurs inside *Xcode* with a modal alert that says:
 
 > The file "contents.xcworkspacedata" could not be unlocked
 
-The solution is the same as in the previous section, [Unable to read included file](#unable-to-read-included-file-loopconfigoverridexcconfig).
+The solution is the same as in the previous section, [Unable to read included file](#in-xcode-unable-to-read-included-file-loopconfigoverridexcconfig-or-in-terminal-loopconfigoverridexcconfig-operation-not-permitted).
 
 ### No devices from which to generate a provisioning profile
 
