@@ -523,7 +523,7 @@ Choose whether the pump beeps or vibrates for each category:
 * Alerts
 
 !!! info "No Silent Option for Temp Basal and Bolus"
-    The current version of TandemKit does not support silent operation for Temp Basal and Bolus commands.
+    The current Tandem Mobi firmware does not allow silent operation for commands sent over Bluetooth, which is how an OS-AID app controls the pump.
 
     The pump beeps or vibrates each time the *Loop* app sends it a bolus or temp basal command. This happens whether the command came from an automatic dosing decision or from a bolus you entered yourself on the phone.
 
