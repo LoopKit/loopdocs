@@ -100,11 +100,6 @@ Tandem Mobi support is in open beta in the `feat/tandem-next-dev` branch.
 !!! warning "Tandem Closed Beta Testers: Switch Branches"
     The Tandem Mobi closed beta is now an open beta in the `feat/tandem-next-dev` branch of *Loop*.
 
-    | | Old branch | New branch |
-    |:--|:--|:--|
-    | Branch name | `feat/tandem-closed-beta-next-dev` | `feat/tandem-next-dev` |
-    | Status | **no longer updated** | subject to frequent updates |
-
     What to do:
 
     * Add the `feat/tandem-next-dev` branch to your fork and build it; see [How to Build Feature Branches](#how-to-build-feature-branches)
