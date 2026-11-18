@@ -125,7 +125,7 @@ Update your old phone to the latest iOS the hardware supports - this simplifies 
 !!! important "Different Developer ID"
     If you need to build the *Loop* app with a different developer ID on the new phone, the settings and pump information will **not** transfer.
 
-    * The new app that you build with the new Developer ID will open and you can [Onboard](../loop-3/onboarding.md)
+    * The new app that you build with the new Developer ID will open and you can [Onboard](../setup/onboarding.md)
     * The old app will still be on the phone: find it and delete it to avoid confusion
 
 ## Procure a New Phone
@@ -151,7 +151,7 @@ If you cannot keep the old phone, or it is not available, then skip ahead to the
 
 ### Install the *Loop* App
 
-It is easier if you transfer information from the old phone to the new phone before you install and open&nbsp;_<span translate="no">Loop</span>_&nbsp;on the new phone. If this is not possible, then you will do the normal [Onboarding](../loop-3/onboarding.md) for a new&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
+It is easier if you transfer information from the old phone to the new phone before you install and open&nbsp;_<span translate="no">Loop</span>_&nbsp;on the new phone. If this is not possible, then you will do the normal [Onboarding](../setup/onboarding.md) for a new&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
 
 1. When you transfer information from your old phone to your new phone, all the&nbsp;_<span translate="no">Loop</span>_&nbsp;settings files get copied to the new device including information about the pod
     * If the timing works, you can keep the pod when you switch to using the new phone for&nbsp;_<span translate="no">Loop</span>_&nbsp;after the information transfer and before changing pods with the old phone

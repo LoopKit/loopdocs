@@ -111,7 +111,7 @@ This is a hotfix release. It is identical to v3.14.12 except for the version num
 
 **Loop Features**
 
-The Settings Support section was revised with a new [Report a Problem](../loop-3/settings.md#report-a-problem){: target="_blank"} row that takes you to a unified screen. This includes a new feature to report your problem directly to the developers, in addition to providing access to the Diagnostic (Loop) Report, link to Open a GitHub Issue or Export Critical Event Log.
+The Settings Support section was revised with a new [Report a Problem](../setup/settings.md#report-a-problem){: target="_blank"} row that takes you to a unified screen. This includes a new feature to report your problem directly to the developers, in addition to providing access to the Diagnostic (Loop) Report, link to Open a GitHub Issue or Export Critical Event Log.
 
 **Omnipod Users**
 
@@ -209,7 +209,7 @@ Additional details for the update from v3.14.8 to v3.14.9 can be seen in [PR 504
 * Omnipod Users:
     * improved connection speed using *eager-connect* method for all Omnipod BLE pods
         * this provides a significant improvement in connection speed for the iPhone 16/17e with Atlas DASH pod combination
-    * added information in-app for those who get the new firmware [(Black-dot) Omnipod 5](../loop-3/omnipod.md#silence-pod){: target="_blank" } pods that cannot be completely silenced
+    * added information in-app for those who get the new firmware [(Black-dot) Omnipod 5](../pumps/omnipod.md#silence-pod){: target="_blank" } pods that cannot be completely silenced
     * set Pod Keep Alive to When Open as the default for all BLE pods
         * users of iPhone 16/17e with Atlas DASH pod combination should not need the other Pod Keep Alive settings
 * Various submodules, updated translations 
@@ -231,7 +231,7 @@ Addition details for the update from v3.14.7 to v3.14.8 can be seen in [PR 497](
 * Provide support for Omnipod 5 Pods
 * Bring in the first connect-on-demand Omnipod Bluetooth modification
     * This version reduces the frequency of the 203 faults observed with Atlas DASH pods
-    * Warning, the [Pod Keep Alive](../loop-3/omnipod.md#pod-keep-alive-feature){: target="_blank" } feature was modified, read the updated documentaion at that link if you use an iPhone 16 (all models) or iPhone 17e
+    * Warning, the [Pod Keep Alive](../pumps/omnipod.md#pod-keep-alive-feature){: target="_blank" } feature was modified, read the updated documentaion at that link if you use an iPhone 16 (all models) or iPhone 17e
     * Your PKA settings are not maintained across Pod Type changes or building v3.14.7 over an older version
 * Dexcom G7 
     * Trade off reduced drop-outs of G7 data for a 15-minute delay in picking up new sensor 
@@ -379,7 +379,7 @@ Additional translations were imported from lokalise.
 **Miscellaneous Features**
 
 * Brings in pretty print for pump event details: [Loop PR 2403](https://github.com/LoopKit/Loop/pull/2403) and [LoopKit PR 586](https://github.com/LoopKit/LoopKit/pull/586)
-    * makes the details much easier to interpret, see [Event History and Details](../loop-3/displays-v3.md#event-history-and-details){: target="_blank" }
+    * makes the details much easier to interpret, see [Event History and Details](../setup/displays-v3.md#event-history-and-details){: target="_blank" }
     * adds a localized date to the pump event display
 * Updates support files for Browser Build
 * Updates translations
@@ -407,7 +407,7 @@ Additional translations were imported from lokalise.
 
 **Loop Features**
 
-* Add [Live Activity](../loop-3/features.md#live-activity){: target="_blank" } Feature
+* Add [Live Activity](../setup/features.md#live-activity){: target="_blank" } Feature
     * Loop [PR 2191](https://github.com/LoopKit/Loop/pull/2191)
 * Reduce the size of *Loop* Documents & Data storage on the phone
     * LibreTransmitter [PR 33](https://github.com/LoopKit/LibreTransmitter/pull/33); log only once per 5 minute instead of every minute
@@ -750,11 +750,11 @@ This was a patch that fixed errors with the Browser Build. No other changes were
 
 These features are added:
 
-* [*Libre*](../loop-3/add-cgm.md#libre){: target="_blank" }  support in the *Loop* app
-* [Favorite Foods](../loop-3/settings.md#favorite-foods){: target="_blank" } for easy entry of common meals
-* [Algorithm Experiments](../loop-3/features.md#algorithm-experiments){: target="_blank" }:
-    * [Glucose Based Partial Application](../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" } for Automatic Bolus corrections
-    * [Integral Retrospective Correction](../loop-3/features.md#integral-retrospective-correction-irc){: target="_blank" }
+* [*Libre*](../setup/add-cgm.md#libre){: target="_blank" }  support in the *Loop* app
+* [Favorite Foods](../setup/settings.md#favorite-foods){: target="_blank" } for easy entry of common meals
+* [Algorithm Experiments](../setup/features.md#algorithm-experiments){: target="_blank" }:
+    * [Glucose Based Partial Application](../setup/features.md#glucose-based-partial-application-gbpa){: target="_blank" } for Automatic Bolus corrections
+    * [Integral Retrospective Correction](../setup/features.md#integral-retrospective-correction-irc){: target="_blank" }
 * In app warning when a *TestFlight* install build is about to expire
 * Omnipod and Nightscout Users: automatic update of CAGE to Nightscout when pod is changed
 * Dexcom and Nightscout Users: automatic update of SAGE to Nightscout when Dexcom sensor is changed
@@ -873,7 +873,7 @@ Loop v3.0.0 was released on January 14, 2023.
 
 #### Details on this Update
 
-This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/){: target="_blank" }.
+This is one of the bigger updates to Loop. Since the last release [`Loop v2.2.9`](releases-version2.md#loop-v229){: target="_blank" }, there have been updates for safety, new features, support for new devices, and the UI has been significantly updated. With [more contributors](https://github.com/LoopKit/Loop/graphs/contributors) than ever! This is just a high level summary; There are more details in the [LoopDocs page for Loop 3](https://loopkit.github.io/loopdocs/setup/loop-3-overview/){: target="_blank" }.
 
 #### New Hardware Support 🔥
 

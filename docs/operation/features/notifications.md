@@ -53,7 +53,7 @@ The expiration notification pattern is the same as for the Paid Loop App. You ma
 
 ## Omnipod Beeps
 
-Most pod beep alarms are disabled for a more discrete use of pods than is available with the PDM. Only the following audible acknowledgments or alarms are used. Some can be configured in [Omnipod: Notification Settings](../../loop-3/omnipod.md#notification-settings):
+Most pod beep alarms are disabled for a more discrete use of pods than is available with the PDM. Only the following audible acknowledgments or alarms are used. Some can be configured in [Omnipod: Notification Settings](../../pumps/omnipod.md#notification-settings):
 
 - Pod activated acknowledgment when filling the pod with enough insulin when pairing a new Pod.
 - Pod expiration advisory alarm, which you can configure between 48 and 72 hours (3 days)
@@ -63,7 +63,7 @@ Most pod beep alarms are disabled for a more discrete use of pods than is availa
     * Loop will update the actual delivery amounts based on pod reported information
 - Pod deactivation acknowledgment
 - Pod fault alarm (also called a screamer) when reaching the max life of the Pod: 80 hours (3 days + 8 hours), running out of insulin or a fault/occlusion happens
-    * Screamers are silenced using the [Deactivate Pod](../../loop-3/omnipod.md#deactivate-pod) row on the pod settings page
+    * Screamers are silenced using the [Deactivate Pod](../../pumps/omnipod.md#deactivate-pod) row on the pod settings page
     * The one exception is if communications with the pod is lost and cannot be restored - in that case, you will be offered the chance to discard the pod from Loop but will still want to [Silence the Pod](../../faqs/omnipod-faqs.md#what-do-you-do-to-stop-a-screaming-pod)
 
 ## Notification settings for Loop
@@ -129,7 +129,7 @@ At 20% and 10% remaining reservoir volume, there is a Low Reservoir notification
 
 <font color ="orange">**Omnipod**</font>  
 Select your desired notification level for low reservoir
-[Omnipod: Notification Settings](../../loop-3/omnipod.md#notification-settings) 
+[Omnipod: Notification Settings](../../pumps/omnipod.md#notification-settings) 
 
 ![img/pod-reservoir-10U.png](img/pod-reservoir-10U.png){width="250"}
 {align="center"}
@@ -141,9 +141,9 @@ Select your desired notification level for low reservoir
 ![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
 {align="center"}
 
-* Loop 3 reports No Insulin on the [Heads-Up-Display](../../loop-3/displays-v3.md#pump-status-icon).
+* Loop 3 reports No Insulin on the [Heads-Up-Display](../../setup/displays-v3.md#pump-status-icon).
 
-![pump alert - red exclamation point with phrase no insulin](../../loop-3/img/pump-alert-no-insulin.svg){width="125"}
+![pump alert - red exclamation point with phrase no insulin](../../setup/img/pump-alert-no-insulin.svg){width="125"}
 {align="center"}
 
 <font color ="orange">**Omnipod**</font>

@@ -2,7 +2,7 @@
 
 The *Loop* algorithm takes one of [four actions](#four-possible-actions) depending upon the glucose prediction, target range and glucose safety threshold when Closed Loop operation is enabled.
 
-The recommended insulin dose (positive or negative) is calculated first, including all safety checks, and then the insulin delivery adjustments are applied based on the dosing strategy, while respecting the maximum Temp Basal and maximum Bolus values in the user's [Therapy Settings](../../loop-3/therapy-settings.md){: target="_blank" }. The automated dosing (increase or decrease) is updated with every CGM value - typically every 5 minutes.
+The recommended insulin dose (positive or negative) is calculated first, including all safety checks, and then the insulin delivery adjustments are applied based on the dosing strategy, while respecting the maximum Temp Basal and maximum Bolus values in the user's [Therapy Settings](../../setup/therapy-settings.md){: target="_blank" }. The automated dosing (increase or decrease) is updated with every CGM value - typically every 5 minutes.
 
 If a decrease in insulin dose is recommended, this is always applied using a temporary basal rate that is less than the scheduled basal rate.
 
@@ -33,7 +33,7 @@ With each new glucose reading, *Loop* implements one of four possible actions: [
 
     If you are using an Automatic-Bolus Dosing Strategy in closed Loop mode and *Loop* predicts you need an **increase** in insulin; this **increase** is provided as a percentage of the recommended bolus instead of an increased temporary basal. The default percentage is 40%.
 
-    If you add the Algorithm Experiments option of [Glucose Based Partial Application](../../loop-3/features.md#glucose-based-partial-application-gbpa){: target="_blank" }, the percentage varies from 20% when glucose is lower to 80% when glucose is higher.
+    If you add the Algorithm Experiments option of [Glucose Based Partial Application](../../setup/features.md#glucose-based-partial-application-gbpa){: target="_blank" }, the percentage varies from 20% when glucose is lower to 80% when glucose is higher.
 
 ### Decrease Basal Rate
 
@@ -47,7 +47,7 @@ or
 
 ### Deliver Automatic Bolus with Scheduled Basal
 
-If the eventual glucose is greater than the correction range and all of the predicted glucose values are both above the suspend threshold and equal to or above the correction range, then the *Loop* app takes action to safely bring the eventual glucose down to the correction target. Refer to [Dosing Strategy](../../loop-3/settings.md#dosing-strategy){: target="_blank" }.
+If the eventual glucose is greater than the correction range and all of the predicted glucose values are both above the suspend threshold and equal to or above the correction range, then the *Loop* app takes action to safely bring the eventual glucose down to the correction target. Refer to [Dosing Strategy](../../setup/settings.md#dosing-strategy){: target="_blank" }.
 
 * Temp Basal Only Dosing Stategy: *Loop* will issue a temporary basal rate that is higher than the current basal rate
 * Automatic Bolus Dosing Stategy: *Loop* will restore the pump to scheduled basal rate if a current temp basal is running and issue an automatic bolus
@@ -88,7 +88,7 @@ $$ \mathit{dose} = \frac{\mathit{BG_{eventual}} - \mathit{BG_{target}}}{\mathit{
 
 
 * Temp Basal Only Dosing Stategy: see [Determine the Temporary Basal Rate](#determine-the-temporary-basal-rate)
-* Automatic Bolus Dosing Stategy: the amount of the automatic bolus is reduced from the recommended dose as explained in [Automatic Bolus](../../loop-3/settings.md#automatic-bolus){: target="_blank" }
+* Automatic Bolus Dosing Stategy: the amount of the automatic bolus is reduced from the recommended dose as explained in [Automatic Bolus](../../setup/settings.md#automatic-bolus){: target="_blank" }
 
 ### Determine the Temporary Basal Rate
 

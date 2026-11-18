@@ -13,7 +13,7 @@ This repository contains the source files for [Loop's](https://github.com/LoopKi
 - [Overview](https://loopkit.github.io/loopdocs/intro/overview-intro/)
 - [**Requirements**](https://loopkit.github.io/loopdocs/intro/requirements/)
 - [Build Loop](https://loopkit.github.io/loopdocs/intro/requirements/#two-loop-build-methods)
-- [Configuration](https://loopkit.github.io/loopdocs/loop-3/loop-3-overview/)
+- [Configuration](https://loopkit.github.io/loopdocs/setup/loop-3-overview/)
 - [Usage](https://loopkit.github.io/loopdocs/operation/loop/close-loop/)
 - [Troubleshooting](https://loopkit.github.io/loopdocs/troubleshooting/overview/)
 - Remote monitoring and commands with [*Nightscout*](https://loopkit.github.io/loopdocs/nightscout/overview/)
@@ -457,7 +457,7 @@ This will get rendered to this:
 #### Images in Tables
 
 Use HTML on the first line that indicates the table.  
-For example, in [displays-v3.md](https://loopkit.github.io/loopdocs/loop-3/displays-v3/#loop-cycle) there are many icons with descriptions to the right.
+For example, in [displays-v3.md](https://loopkit.github.io/loopdocs/setup/displays-v3/#loop-cycle) there are many icons with descriptions to the right.
 This format provides appropriate views on both desktop and mobile.
 
 For **no header row**, replace `|||` with:

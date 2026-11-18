@@ -20,7 +20,7 @@ No automatic (closed loop) adjustment of insulin will occur and the slider will 
 
 * No Pump added
 * No CGM added
-* User set a [Manual Temp Basal](omnipod.md#manual-temp-basal)
+* User set a [Manual Temp Basal](../pumps/omnipod.md#manual-temp-basal)
 
 ### Recommended Insulin
 
@@ -155,10 +155,10 @@ The Algorithm Experiments are new with Loop 3.4 and we recommend you review the 
 The information about the pump section is detailed on several different pages. Follow the links below:
 
 * [Add or Modify Pump](add-pump.md)
-* [Omnipod or Omnipod DASH](omnipod.md) Status and Commands
-* [Medtronic](medtronic.md) Status and Commands
-* [Medtrum Pumps](medtrum.md) requires `dev` branch
-* [Dana Pumps](dana.md) requires a feature branch: [Status for Dana Support](../version/development.md#status-for-dana-support){: target="_blank" }:
+* [Omnipod or Omnipod DASH](../pumps/omnipod.md) Status and Commands
+* [Medtronic](../pumps/medtronic.md) Status and Commands
+* [Medtrum Pumps](../pumps/medtrum.md) requires `dev` branch
+* [Dana Pumps](../pumps/dana.md) requires a feature branch: [Status for Dana Support](../version/development.md#status-for-dana-support){: target="_blank" }:
 
 ### [CGM Settings](add-cgm.md)
 

@@ -25,5 +25,5 @@
 
 Most of the information needed for the Dana pump can be found here:
 
-* [How to add a Dana Pump](add-pump.md#dana-i-danars-v3){: target="_blank" }
+* [How to add a Dana Pump](../setup/add-pump.md#dana-i-danars-v3){: target="_blank" }
 * [Dana Troubleshooting](../troubleshooting/dana-faq.md){: target="_blank" }

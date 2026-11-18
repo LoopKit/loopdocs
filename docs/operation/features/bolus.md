@@ -25,7 +25,7 @@ The graphic below shows the Meal Bolus screen after the user entered carbs and t
         * **Recommended Bolus** displays what Loop recommends for that proposed **Carb Entry**
         * **Bolus** default display is what Loop recommends, but user can edit that value
 
-![meal bolus when bolus is recommended on left and not recommended on right](../../loop-3/img/meal-bolus-rec.svg){width="900"}
+![meal bolus when bolus is recommended on left and not recommended on right](../../setup/img/meal-bolus-rec.svg){width="900"}
 {align="center"}
 
 If a CGM entry arrives while in this screen, a **Bolus Recommendation Updated** modal message will be displayed and must be acknowledged.
@@ -46,7 +46,7 @@ This section is a continuation of the information presented in the [Accept Recom
         * This is a common "super-bolus" scenario; in other words, "borrow" basal for the meal bolus to limit post meal spikes
 * Remember - the **Glucose** prediction is what happens if you **Save Carbs & Deliver** and then no further adjustments are made to insulin delivery by Loop
 
-![meal bolus when bolus recommended is decreased on left and increased on right](../../loop-3/img/meal-bolus-mod-rec.svg){width="900"}
+![meal bolus when bolus recommended is decreased on left and increased on right](../../setup/img/meal-bolus-mod-rec.svg){width="900"}
 {align="center"}
 
 ## Manual (or Correction) Bolus
@@ -69,7 +69,7 @@ The two graphics below are examples of manual bolus screens.
     * Alternatively, you can tap the **0** amount in the **Bolus** row and perform the same action as the **Enter Bolus** button
     * If you do not want to override the recommendation, hit the **Cancel** button at upper left.
 
-![manual bolus when no bolus recommended](../../loop-3/img/manual-bolus-no-rec.svg){width="350"}
+![manual bolus when no bolus recommended](../../setup/img/manual-bolus-no-rec.svg){width="350"}
 {align="center"}
 
 * In the second graphic, a recommended amount is shown
@@ -77,7 +77,7 @@ The two graphics below are examples of manual bolus screens.
     * If you tap on the value on the **Bolus** row, you can override the amount
     * The amount displayed on the **Bolus** row is modified to 0 U with the first tap - at that point, you may enter a new value or tap **Cancel** using the button at upper left of the screen
 
-![manual bolus when bolus is recommended](../../loop-3/img/manual-bolus-rec.svg){width="350"}
+![manual bolus when bolus is recommended](../../setup/img/manual-bolus-rec.svg){width="350"}
 {align="center"}
 
 ### Recommended Bolus
@@ -123,4 +123,4 @@ If an "uncertain" delivery is not resolved:
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
 
-There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../loop-3/displays-v3.md) page.
+There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../setup/displays-v3.md) page.

@@ -1,6 +1,6 @@
 ## Pump Settings
 
-To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](displays-v3.md#heads-up-display)) or your connected pump in the Loop [Settings](settings.md) screen.
+To bring up the Pump Settings display, tap on the pump icon in the Heads Up Display ([HUD](../setup/displays-v3.md#heads-up-display)) or your connected pump in the Loop [Settings](../setup/settings.md) screen.
 
 ## Medtronic Status and Commands
 
@@ -17,14 +17,14 @@ As long as the spinning icon is spinning, Loop is trying to execute the Suspend 
 
 When the phone is in portrait mode, so the HUD is visible:
 
-* The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays-v3.md#pump-status-icon).
+* The user is alerted that pump is suspended by the HUD [Pump Status Icon](../setup/displays-v3.md#pump-status-icon).
 
-![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
+![pump status icon when suspended](../setup/img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
-* The [HUD Status Row](displays-v3.md#hud-status-row) message can be tapped to resume delivery.
+* The [HUD Status Row](../setup/displays-v3.md#hud-status-row) message can be tapped to resume delivery.
 
-![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
+![status row message when pump is suspended](../setup/img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
 
 You can still suspend and resume insulin on the pump itself.  It may take until the next Loop cycle (typically less than 5 minutes), but Loop will detect that the pump is suspended or basal is resumed and the HUD Status Row will update.
@@ -33,7 +33,7 @@ If you request a manual bolus with Loop while the pump is suspended, Loop resume
 
 ### Insulin Type
 
-You select [insulin type](add-pump.md#insulin-type) when connecting to a new Medtronic pump.
+You select [insulin type](../setup/add-pump.md#insulin-type) when connecting to a new Medtronic pump.
 
 If you install Loop 3 over Loop 2 with the pump already configured, be sure to set the Insulin Type on the pump settings screen. If no insulin type is set, you will get red loops.
 
@@ -61,7 +61,7 @@ Using the MySentry feature on some Medtronic pumps when using an OrangeLink caus
 
 ### Devices
 
-This allows access to the [RileyLink](../loop-3/rileylink.md) screen for each connected RileyLink compatible device.
+This allows access to the [RileyLink](rileylink.md) screen for each connected RileyLink compatible device.
 
 ### Pump Battery Remaining
 
@@ -73,11 +73,11 @@ Loop keeps the pump time up to date with the phone time automatically. As shown 
 
 ### Change Time Zone
 
-During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](displays-v3.md#time-zone) for more details.
+During normal operation, Loop automatically keeps phone time and pump time aligned. In the case of time zone or daylight savings time changes, Loop allows the differences to persist until the user chooses to `Change Time Zone`. Please review [Time Zone](../setup/displays-v3.md#time-zone) for more details.
 
 When the time zone for the pump and phone are not the same, you will notice a small clock symbol in the upper right of the pump status icon.
 
-![high temp basal indicator with reservoir level below alert and clock icon](img/pump-alert-reservoir-tz.svg){width="150"}
+![high temp basal indicator with reservoir level below alert and clock icon](../setup/img/pump-alert-reservoir-tz.svg){width="150"}
 
 Navigate to the Pump Settings screen. Right below the Pump Battery Remaining and Pump Time rows, there is a new row `Sync to Current Time`. When you tap that row, the time for the Medtronic pump is updated to the current Loop phone time.
 
@@ -94,5 +94,5 @@ If you want to switch to a different pump you must first delete this one:
 * Acknowledge you really mean it when asked by tapping `Delete Pump` again
 * Add a new pump
 
-For more information, follow this link: [Change Pump Type](add-pump.md#change-pump-type).
+For more information, follow this link: [Change Pump Type](../setup/add-pump.md#change-pump-type).
 

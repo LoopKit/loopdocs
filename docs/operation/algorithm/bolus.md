@@ -2,7 +2,7 @@
 
 The *Loop* app will recommend bolus insulin corrections when the eventual glucose is greater than the correction target and the active insulin plus any active 30-minute temporary basal will not be sufficient to cover the predicted excursion above correction target.
 
-These recommendations are not proactively sent to the *Loop* user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that *Loop* never issues a bolus command automatically while using the default Temp Basal Only [Dosing Strategy](../../loop-3/settings.md#dosing-strategy); all boluses are initiated by the user unless the [Automatic Bolus](../../loop-3/settings.md#automatic-bolus) dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.
+These recommendations are not proactively sent to the *Loop* user through any notification or banner alert; the recommendation is only viewable when the user clicks on the bolus tool. Note that *Loop* never issues a bolus command automatically while using the default Temp Basal Only [Dosing Strategy](../../setup/settings.md#dosing-strategy); all boluses are initiated by the user unless the [Automatic Bolus](../../setup/settings.md#automatic-bolus) dosing strategy is enabled. With automatic bolus enabled, each automatic bolus is limited to 40% of the recommended amount or the maximum bolus setting, whichever is smaller.
 
 The recommended bolus calculation is described in [Determine the Recommended Dose](auto-adjust.md#determine-the-recommended-bolus){: target="_blank" }, with these exceptions:
 
@@ -17,7 +17,7 @@ The *Loop* algorithm computes the recommended bolus such that predicted glucose 
 
 * As time progresses after the meal, when appropriate, *Loop* modifies insulin delivery
 * A decrease in recommended insulin amount is always provided as a decreased Temporary Basal rate
-* An increase in recommended insulin amount is delivered based on the user-selected [Dosing Strategy](../../loop-3/settings.md#dosing-strategy){: target="_blank" }:
+* An increase in recommended insulin amount is delivered based on the user-selected [Dosing Strategy](../../setup/settings.md#dosing-strategy){: target="_blank" }:
     * Temp Basal Only: [Increase Basal Rate](auto-adjust.md#increase-basal-rate){: target="_blank" }
     * Automatic Bolus: 40% of the recommended amount
 * In effect, this algorithm behavior mimics traditional pump therapy of “extended” or “dual wave” bolusing, but with the benefit of added information about actual carbohydrate absorption effects as time goes by

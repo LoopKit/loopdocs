@@ -102,7 +102,7 @@ Now you are ready to build or continue with setting up the *Loop* app.
 
 ### Return to Set Up
 
-If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../loop-3/loop-3-overview.md#brand-new-loopers) section of the Set Up Overview page.
+If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../setup/loop-3-overview.md#brand-new-loopers) section of the Set Up Overview page.
 
 ### Build with Browser
 

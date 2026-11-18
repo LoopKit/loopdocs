@@ -91,6 +91,21 @@ plugins:
         raise_error_after_finish: true
     - redirects:
         redirect_maps:
+            'loop-3/add-cgm.md': 'setup/add-cgm.md'
+            'loop-3/add-pump.md': 'setup/add-pump.md'
+            'loop-3/dana.md': 'pumps/dana.md'
+            'loop-3/displays-v3.md': 'setup/displays-v3.md'
+            'loop-3/eversense.md': 'cgms/eversense.md'
+            'loop-3/features.md': 'setup/features.md'
+            'loop-3/loop-3-overview.md': 'setup/loop-3-overview.md'
+            'loop-3/medtronic.md': 'pumps/medtronic.md'
+            'loop-3/medtrum.md': 'pumps/medtrum.md'
+            'loop-3/omnipod.md': 'pumps/omnipod.md'
+            'loop-3/onboarding.md': 'setup/onboarding.md'
+            'loop-3/rileylink.md': 'pumps/rileylink.md'
+            'loop-3/services.md': 'setup/services.md'
+            'loop-3/settings.md': 'setup/settings.md'
+            'loop-3/therapy-settings.md': 'setup/therapy-settings.md'
             'gh-actions/automatic.md': 'browser/automatic.md'
             'gh-actions/build-dev-browser.md': 'browser/build-dev-browser.md'
             'gh-actions/custom-browser.md': 'browser/custom-browser.md'
@@ -101,7 +116,7 @@ plugins:
             'gh-actions/gh-other-apps.md': 'browser/other-apps.md'
             'gh-actions/gh-overview.md': 'browser/bb-overview.md'
             'gh-actions/gh-update.md': 'browser/bb-update.md'
-            'loop-3/displays_v3.md': 'loop-3/displays-v3.md'
+            'loop-3/displays_v3.md': 'setup/displays-v3.md'
             'nightscout/new_user.md': 'nightscout/new-user.md'
             'nightscout/ns_crossref.md': 'nightscout/ns-crossref.md'
             'nightscout/remote-overrides.md': 'nightscout/remote-overview.md'
@@ -110,15 +125,15 @@ plugins:
             'operation/features/workout.md': 'operation/features/overrides.md'
             'troubleshooting/time-change.md': 'faqs/time-faqs.md'
             'troubleshooting/yellow-red-loop.md': 'troubleshooting/red-loop.md'
-            'operation/overview.md': 'loop-3/loop-3-overview.md'
+            'operation/overview.md': 'setup/loop-3-overview.md'
             'build/health.md': 'faqs/apple-health-faqs.md'
-            'operation/loop-settings/mdt-pump.md': 'loop-3/medtronic.md'
-            'operation/loop-settings/omnipod-pump.md': 'loop-3/omnipod.md'
-            'operation/loop-settings/cgm.md': 'loop-3/add-cgm.md'
-            'operation/loop-settings/configurations.md': 'loop-3/settings.md'
-            'operation/loop-settings/services-v2.md': 'loop-3/services.md'
-            'operation/loop-settings/displays.md': 'loop-3/displays-v3.md'
-            'operation/loop-settings/rileylink.md': 'loop-3/rileylink.md'
+            'operation/loop-settings/mdt-pump.md': 'pumps/medtronic.md'
+            'operation/loop-settings/omnipod-pump.md': 'pumps/omnipod.md'
+            'operation/loop-settings/cgm.md': 'setup/add-cgm.md'
+            'operation/loop-settings/configurations.md': 'setup/settings.md'
+            'operation/loop-settings/services-v2.md': 'setup/services.md'
+            'operation/loop-settings/displays.md': 'setup/displays-v3.md'
+            'operation/loop-settings/rileylink.md': 'pumps/rileylink.md'
             'operation/algorithm/temp-basal.md': 'operation/algorithm/auto-adjust.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
@@ -180,21 +195,21 @@ nav:
     - 'Build Free Loop': 'build/build-free-loop.md'
     - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - Set Up:
-    - 'Overview': 'loop-3/loop-3-overview.md'
-    - 'Onboarding': 'loop-3/onboarding.md'
-    - 'Add CGM': 'loop-3/add-cgm.md'
-    - 'Add Pump': 'loop-3/add-pump.md'
-    - 'Settings': loop-3/settings.md
-    - 'Therapy Settings': 'loop-3/therapy-settings.md'
-    - 'Optional: Services': 'loop-3/services.md'
-    - 'Displays': 'loop-3/displays-v3.md'
-    - 'RileyLink Display': 'loop-3/rileylink.md'
-    - 'Eversense CGM': loop-3/eversense.md
-    - 'Dana Pump': loop-3/dana.md
-    - 'Omnipod Pump': loop-3/omnipod.md
-    - 'Medtronic Pump': loop-3/medtronic.md
-    - 'Medtrum Pump': loop-3/medtrum.md
-    - 'Features': 'loop-3/features.md'
+    - 'Overview': 'setup/loop-3-overview.md'
+    - 'Onboarding': 'setup/onboarding.md'
+    - 'Add CGM': 'setup/add-cgm.md'
+    - 'Add Pump': 'setup/add-pump.md'
+    - 'Settings': setup/settings.md
+    - 'Therapy Settings': 'setup/therapy-settings.md'
+    - 'Optional: Services': 'setup/services.md'
+    - 'Displays': 'setup/displays-v3.md'
+    - 'RileyLink Display': 'pumps/rileylink.md'
+    - 'Eversense CGM': cgms/eversense.md
+    - 'Dana Pump': pumps/dana.md
+    - 'Omnipod Pump': pumps/omnipod.md
+    - 'Medtronic Pump': pumps/medtronic.md
+    - 'Medtrum Pump': pumps/medtrum.md
+    - 'Features': 'setup/features.md'
 - Operate:
     - 'Open Loop': 'operation/loop/open-loop.md'
     - 'Closed Loop': 'operation/loop/close-loop.md'

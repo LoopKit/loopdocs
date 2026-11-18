@@ -43,7 +43,7 @@ There is a summary of the patch status at the top of the screen.
         * It is blue for at least the first 48 hours
         * The line turns orange to warn the patch is within 24 hours of expiration
         * When the patch expires, the line turns red and the text indicates how much time until No Delivery
-        * The warning orange and red lifecycle lines also appear in the [HUD Pump Status](displays-v3.md#pump-status-icon){: target="_blank" } icon at the top of the *Loop* main screen
+        * The warning orange and red lifecycle lines also appear in the [HUD Pump Status](../setup/displays-v3.md#pump-status-icon){: target="_blank" } icon at the top of the *Loop* main screen
 * The left side of the next row reports the current (absolute) basal rate
 * The right side of the next row reports the reservoir level
 
@@ -60,12 +60,12 @@ Tapping on `Suspend Delivery` halts all insulin delivery from the patch for a du
 * The user is alerted that pump is suspended by an icon on the OS-AID main screen header.
 * The patch itself might vibrate or beep every 15 minutes
 
-![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
+![pump status icon when suspended](../setup/img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
-* For the *Loop* app, the [HUD Status Row](displays-v3.md#hud-status-row){: target="_blank" } message can be tapped to resume delivery.
+* For the *Loop* app, the [HUD Status Row](../setup/displays-v3.md#hud-status-row){: target="_blank" } message can be tapped to resume delivery.
 
-![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
+![status row message when pump is suspended](../setup/img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
 
 #### No Manual Bolus While Patch is Suspended
@@ -151,7 +151,7 @@ The configuration section displays:
 
 ### Insulin Type
 
-You selected [Insulin Type](add-pump.md#insulin-type){: target="_blank"} when connecting to this pump.
+You selected [Insulin Type](../setup/add-pump.md#insulin-type){: target="_blank"} when connecting to this pump.
 
 Tap on this row if you switch to a different type of insulin.
 
@@ -204,7 +204,7 @@ When you tap on the `Previous Patch Details` row, summary information is display
 
 ## Patch Time
 
-Click on [Time Zone](displays-v3.md#time-zone){: target="_blank" } to understand how *Loop* treats "pump" time for pods.
+Click on [Time Zone](../setup/displays-v3.md#time-zone){: target="_blank" } to understand how *Loop* treats "pump" time for pods.
 
 When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. 
 
@@ -229,7 +229,7 @@ What about other time changes?  Suppose the iOS -> General -> Time & Date is mod
 
 The *Loop* app will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
-![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
+![graphic warning user of a problem with the time on the phone](../setup/img/omnipod-time-change.svg){width="300"}
 {align="center"}
 
 - - -
@@ -243,7 +243,7 @@ The *Loop* app will display this warning modal screen if it detects a problem wi
     * The first 3 digits should always match, the patch always ends with 0, while the pump base always ends with 1
     * Do not use the patch with that base if they do not match
 
-        ![Medtrum REF](img/medtrum-ref.JPG){width="450"}
+        ![Medtrum REF](../setup/img/medtrum-ref.JPG){width="450"}
         {align="center"}
 
 

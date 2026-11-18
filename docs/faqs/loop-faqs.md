@@ -136,7 +136,7 @@ In general, there are updates to the *Loop* app released a few times a year - th
 
 ## Will I need to build a new *Loop* app if I switch between different pumps?
 
-No. The *Loop* app lets you move between different pump types from within the same *Loop* app. See [Change Pump Type](../loop-3/add-pump.md#change-pump-type){: target="_blank" }.
+No. The *Loop* app lets you move between different pump types from within the same *Loop* app. See [Change Pump Type](../setup/add-pump.md#change-pump-type){: target="_blank" }.
 
 - - -
 

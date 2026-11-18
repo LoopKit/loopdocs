@@ -231,7 +231,7 @@ Medtronic will not typically sell pump supplies directly to customers who have n
 
     Read these pages in LoopDocs:
 
-    * [Add a Dana Pump](../loop-3/add-pump.md#dana-i-danars-v3){: target="_blank" }
+    * [Add a Dana Pump](../setup/add-pump.md#dana-i-danars-v3){: target="_blank" }
     * [Dana Troubleshooting](../troubleshooting/dana-faq.md){: target="_blank" }
 
 **Every Dana pump has built-in BLE communications. Therefore, no RileyLink-compatible device is needed to use Dana-i / DanaRS-v3 with the *Loop* app.**
@@ -246,7 +246,7 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 ### DanaRS
 
 The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
-[Check here](../loop-3/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
+[Check here](../setup/add-pump.md#dana-i-danars-v3) to see how to check your firmware version.
 
 ![DanaRS-v3](img/danars.png){width="250"}
 {align="center"}

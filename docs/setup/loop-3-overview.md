@@ -56,9 +56,9 @@ These pages have a lot of detailed Loop information.
 
 And a lot of detailed information about Status and Commands for:
 
-* [RileyLink](../loop-3/rileylink.md)
-* [Omnipod Common](omnipod.md)
-* [Medtronic](medtronic.md)
+* [RileyLink](../pumps/rileylink.md)
+* [Omnipod Common](../pumps/omnipod.md)
+* [Medtronic](../pumps/medtronic.md)
 
 !!! warning "Medtronic Users"
     You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.

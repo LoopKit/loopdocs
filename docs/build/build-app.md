@@ -488,7 +488,7 @@ But wait - there's more.
 
 ### New to Loop 3
 
-If this is your first build with Loop 3, head to the Set Up tab starting here: [Loop 3 Overview](../loop-3/loop-3-overview.md).
+If this is your first build with Loop 3, head to the Set Up tab starting here: [Loop 3 Overview](../setup/loop-3-overview.md).
 
 !!! tip "Pro Tip: Read Along in LoopDocs as you Onboard"
     One of the goals for Loop 3 is to make the app robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.
@@ -497,8 +497,8 @@ If this is your first build with Loop 3, head to the Set Up tab starting here: [
 
 Even if you don't read all the pages under the Set Up tab now, these links are important.
 
-* New Looper: [Onboarding](../loop-3/onboarding.md)
-* Building Loop 3 over Loop 2.2.x: [Experienced Looper Onboarding](../loop-3/onboarding.md#experienced-loopers)
+* New Looper: [Onboarding](../setup/onboarding.md)
+* Building Loop 3 over Loop 2.2.x: [Experienced Looper Onboarding](../setup/onboarding.md#experienced-loopers)
 
 !!! info "Add a Calendar Reminder"
 

@@ -15,7 +15,7 @@ Many new Loopers interpret Loop Overrides as a one-for-one replacement for manua
 
 Sometimes you need to set a manual temp basal and you need it to keep working whether you are near your gear. There's a function for that with Loop 3.
 
-* Pods: use the [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) setting
+* Pods: use the [Manual Temp Basal](../../pumps/omnipod.md#manual-temp-basal) setting
 * Medtronic: select Open Loop and use your Medtronic pump temp basal feature
 
 ## How Overrides Work
@@ -85,7 +85,7 @@ Overrides will work while you are Looping. Sounds obvious, right? But, the thing
 
 !!! warning "If you walk away from iPhone and/or RileyLink..."
 
-    If you stop Looping (i.e., walk away from your gear or your glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) setting.
+    If you stop Looping (i.e., walk away from your gear or your glucose reading is stale), your existing temp basal will complete the remainder of whatever is left of its original 30 minutes and you will return to scheduled basal rates in your Therapy Settings. Your adjusted needs as set-up in any override will not continue if your Loop is not running properly. So you cannot set a 50% override and then hop in the ocean for a 2-mile swim without your iPhone and RileyLink and expect decreased basals of 50%. Just be aware that in situations where you need prolonged lower basals while away from Looping gear, you will need to edit your scheduled basals or use a [Manual Temp Basal](../../pumps/omnipod.md#manual-temp-basal) setting.
 
 ### Avoid Extreme Insulin Needs Setting
 
@@ -111,7 +111,7 @@ Instead of selecting 10%, raise your correction range with a moderate needs adju
 
 With Loop 3, there is now a warning message in the meal entry screen when an override is active with an overall insulin needs value other than 100%. The user can decide whether to proceed with the meal entry with the override active.
 
-If you feel the need to immediately halt insulin delivery, consider a [Manual Temp Basal](../../loop-3/omnipod.md#manual-temp-basal) or suspend command to the pump. If you choose to suspend, be sure to pay attention to the reminder to resume insulin delivery later.
+If you feel the need to immediately halt insulin delivery, consider a [Manual Temp Basal](../../pumps/omnipod.md#manual-temp-basal) or suspend command to the pump. If you choose to suspend, be sure to pay attention to the reminder to resume insulin delivery later.
 
 !!! tip "Extreme Athletes"
     There are athletes who do need those extreme overall insulin need changes and know how to use them appropriately. This typically involves extreme or prolonged exercise.
@@ -153,7 +153,7 @@ To enact your override preset, tap on the workout icon toolbar and select an ove
 ![img/override-selection.PNG](img/override-selection.PNG){width="300"}
 {align="center"}
 
-The heart will be highlighted in a blue square while active and the [HUD Status Row](../../loop-3/displays-v3.md#hud-status-row) will indicate the active override name. The Glucose Chart will show a darker blue bar indicating the active target range and duration.
+The heart will be highlighted in a blue square while active and the [HUD Status Row](../../setup/displays-v3.md#hud-status-row) will indicate the active override name. The Glucose Chart will show a darker blue bar indicating the active target range and duration.
 
 ![img/override-enacted.PNG](img/override-enacted.PNG){width="300"}
 {align="center"}
@@ -176,7 +176,7 @@ Saved overrides can be turned on and off by tapping on the blue heart icon on yo
 
 ## Editing an Active Override
 
-Tap on the active override in the [HUD Status Row](../../loop-3/displays-v3.md#hud-status-row) with the phone in portrait orientation. This brings up a screen to edit the override currently running. This only affects this override during the current period. It is not saved to that named override. You can extend the duration or modify the needs value or target value based on a temporary situation.
+Tap on the active override in the [HUD Status Row](../../setup/displays-v3.md#hud-status-row) with the phone in portrait orientation. This brings up a screen to edit the override currently running. This only affects this override during the current period. It is not saved to that named override. You can extend the duration or modify the needs value or target value based on a temporary situation.
 
 When you **edit Overall Insulin Needs**, then the *Loop* app **recalculates** some effects, such as IOB, over the duration of the override and if you also **quit and restart the app**, it **recalculates** all effects. See [Recalculate When Needs Change](#recalculate-when-needs-change) for more information.
 

@@ -87,7 +87,7 @@ If you want to make sure Loop can talk to your Pod, click on the sound icon (hig
     * Once you are on the final day, the time remaining until expiration starts to report in Hours and Minutes
     * The solid bar is proportional to Pod hours since activation
         * It is blue for the first 48 hours
-        * It is orange for the last 24 hours and also appears in the [HUD Pump Status](displays-v3.md#pump-status-icon) icon
+        * It is orange for the last 24 hours and also appears in the [HUD Pump Status](../setup/displays-v3.md#pump-status-icon) icon
         * After expiration, a full-width red bar is shown here and in the HUD Pump Status icon
 * Once the Pod officially expires, at 72 hours, there is an 8 hour grace period
     * Insulet does not guarantee the Pod will keep working that long, but it often does
@@ -130,20 +130,20 @@ Tapping on `Suspend Delivery` brings up a timed reminder screen. You can choose 
 * 1 hour 30 minutes
 * 2 hours
 
-After you select the reminder time, Loop issues a command to the Pod to halt all insulin delivery: basals, temp basals, and boluses in progress. The label on the `Suspend Delivery` row changes to `Suspending` while Loop is communicating with the pump. When the label changes to `Resume Delivery`, all insulin delivery is stopped until the user resumes using the [HUD Status Row](displays-v3.md#hud-status-row) or the [Pod Status](#pod-status) screen.
+After you select the reminder time, Loop issues a command to the Pod to halt all insulin delivery: basals, temp basals, and boluses in progress. The label on the `Suspend Delivery` row changes to `Suspending` while Loop is communicating with the pump. When the label changes to `Resume Delivery`, all insulin delivery is stopped until the user resumes using the [HUD Status Row](../setup/displays-v3.md#hud-status-row) or the [Pod Status](#pod-status) screen.
 
 As long as the spinning icon is spinning, Loop is trying to execute the Suspend or Resume command. If it fails to complete, a modal alert will appear that says "Error Suspending" or "Failed to Resume Insulin Delivery" which you must acknowledge. You must then repeat the command to try again. For Omnipod, make sure your RileyLink device is powered on and close to the phone and Pod.
 
 When the phone is in portrait mode, so the HUD is visible:
 
-* The user is alerted that pump is suspended by the HUD [Pump Status Icon](displays-v3.md#pump-status-icon).
+* The user is alerted that pump is suspended by the HUD [Pump Status Icon](../setup/displays-v3.md#pump-status-icon).
 
-![pump status icon when suspended](img/pump-alert-suspended.svg){width="150"}
+![pump status icon when suspended](../setup/img/pump-alert-suspended.svg){width="150"}
 {align="center"}
 
-* The [HUD Status Row](displays-v3.md#hud-status-row) message can be tapped to resume delivery.
+* The [HUD Status Row](../setup/displays-v3.md#hud-status-row) message can be tapped to resume delivery.
 
-![status row message when pump is suspended](img/status-row-pump-suspended.svg){width="300"}
+![status row message when pump is suspended](../setup/img/status-row-pump-suspended.svg){width="300"}
 {align="center"}
 
 #### No Manual Bolus While Pod is Suspended
@@ -176,7 +176,7 @@ Tap on the `Set Temporary Basal Rate` to select a Manual Temp Basal.
 
 This brings up the `Temporary Basal` screen shown on the left of the graphic below. 
 
-* You can select any basal rate from 0 U/hr to your maximum basal rate set in [Delivery Limits](therapy-settings.md#maximum-basal-rate)
+* You can select any basal rate from 0 U/hr to your maximum basal rate set in [Delivery Limits](../setup/therapy-settings.md#maximum-basal-rate)
 * You can choose any duration up to 12 hours in half-hour increments
 * Once you select rate and duration and tap `Set Temporary Basal`, Loop goes into Open Loop mode and the Pod is commanded to that rate and duration. 
 
@@ -204,9 +204,9 @@ Once the manual temp basal command is sent to the Pod, Loop changes to Open Loop
     * The [Basal Report](#basal-report) updates with the new rate and label indicates `Insulin Delivery`
     * The row label changes to `Cancel Manual Basal` and reports the time remaining until the temp basal expires
 * Main screen (refer to red rectangle highlights):
-    * The HUD [Loop Status Icon](displays-v3.md#loop-status-icon) changes to an `Open Loop` icon and the HUD [Pump Status Icon](displays-v3.md#pump-status-icon) indicates `Manual Basal`
-    * The [Insulin Delivery](displays-v3.md#insulin-delivery-chart) plot indicates the planned duration of the manual temp basal
-    * The [Glucose Prediction](displays-v3.md#glucose-chart) updates using that assumed change in insulin delivery
+    * The HUD [Loop Status Icon](../setup/displays-v3.md#loop-status-icon) changes to an `Open Loop` icon and the HUD [Pump Status Icon](../setup/displays-v3.md#pump-status-icon) indicates `Manual Basal`
+    * The [Insulin Delivery](../setup/displays-v3.md#insulin-delivery-chart) plot indicates the planned duration of the manual temp basal
+    * The [Glucose Prediction](../setup/displays-v3.md#glucose-chart) updates using that assumed change in insulin delivery
 
 So long as you were in Closed Loop before requesting the Temp Basal, Loop returns to Closed Loop automatically when the duration ends or you cancel the temporary basal.
 
@@ -217,7 +217,7 @@ For situations where you need a modification of your insulin needs that is not d
 
 ### Devices
 
-For Omnipod, there is a Devices section used to access the [RileyLink](../loop-3/rileylink.md) status and commands screen.
+For Omnipod, there is a Devices section used to access the [RileyLink](rileylink.md) status and commands screen.
 
 
 ### Pod Display
@@ -285,7 +285,7 @@ After the Pod is deactivated, you can choose to switch to a different Pod Type. 
 
 At that point, you can scroll to the bottom of the Omnipod screen and select the row that says *Switch to another pod or pump type*. Tapping on that row displays the screen, shown below, where you can choose *Switch pod type* or *Switch pump type*.
 
-![how to switch from any omnipod pod type to a different pod or pump type](img//omnipodkit-switch-pod-pump.png){width="350"}
+![how to switch from any omnipod pod type to a different pod or pump type](../setup/img/omnipodkit-switch-pod-pump.png){width="350"}
 {align="center"}
 
 If you select Switch pod type, you are taken to the [Switch Pod Type](#switch-pod-type) Selection screen
@@ -382,7 +382,7 @@ The graphic below shows the Silence Pod control. This is only available for v3.4
 
 ### Insulin Type
 
-You selected [insulin type](add-pump.md#insulin-type) when connecting to this pump.
+You selected [insulin type](../setup/add-pump.md#insulin-type) when connecting to this pump.
 
 Tap on this row if you switch to a different type of insulin.
 
@@ -393,7 +393,7 @@ Tap on this row if you switch to a different type of insulin.
 
 ## Pump Time
 
-Click on [Time Zone](displays-v3.md#time-zone) to understand how Loop treats "pump" time for Pods.
+Click on [Time Zone](../setup/displays-v3.md#time-zone) to understand how Loop treats "pump" time for Pods.
 
 When the Pump time zone matches the phone time zone, the Pump Time is displayed with black font. 
 
@@ -414,7 +414,7 @@ What about other time changes?  Suppose the iOS -> General -> Time & Date is mod
 
 Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
-![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
+![graphic warning user of a problem with the time on the phone](../setup/img/omnipod-time-change.svg){width="300"}
 {align="center"}
 
 

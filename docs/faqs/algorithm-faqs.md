@@ -14,7 +14,7 @@ Yes in that:
 No in that:
 
 * Loop assumes the settings you've provided are correct.
-    * Loop does not adjust or "learn" the [Therapy Settings](../loop-3/therapy-settings.md) portion of Loop parameters directly
+    * Loop does not adjust or "learn" the [Therapy Settings](../setup/therapy-settings.md) portion of Loop parameters directly
         * It keeps those fixed and user controlled, separate from the dynamic part of the Loop algorithm, which does learn based on short-term patterns
         * If outside factors (such as hormones, illness, exercise, medications, etc) affect your underlying Therapy Settings you may need to manually adjust those settings.
 * This LoopTips 3-page section on [Settings](https://loopkit.github.io/looptips/settings/overview/) is recommended.
@@ -42,7 +42,7 @@ When Loop reports negative IOB, it is a sign that Loop has been actively helping
 
 Insulin on board (IOB) is calculated from the amount of insulin delivered above or below the scheduled basal rate. For each dose of insulin, the insulin model is used to determine how much of that [insulin is active](../operation/algorithm/prediction.md#insulin-effect) over time. Loop is adding up all the amounts over the full Duration of Insulin Action (DIA). The DIA is 6 hours for most rapid insulin in the models used by Loop.
 
-IOB is plotted on the [Active Insulin Chart](../loop-3/displays-v3.md#active-insulin-chart) in the main Loop display.
+IOB is plotted on the [Active Insulin Chart](../setup/displays-v3.md#active-insulin-chart) in the main Loop display.
 
 ## How do Delivery Limits Affect Automatic Dosing?
 

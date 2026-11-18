@@ -12,20 +12,20 @@ Purchase information for these devices is found in [RileyLink Compatible Devices
 
 You can add or change the RileyLink compatible device in use without affecting the pump that is connected to the Loop app.  You can even have [more than one connected](#using-more-than-one-device), although only one will be used at a time.
 
-If you are connecting to a new Medtronic pump or switching between Medtronic and Omnipod, please follow the [Change Pump Type](../loop-3/add-pump.md#change-pump-type) instructions under Set up App.
+If you are connecting to a new Medtronic pump or switching between Medtronic and Omnipod, please follow the [Change Pump Type](../setup/add-pump.md#change-pump-type) instructions under Set up App.
 
 
 Change Connected Devices:
 
   * Open the Pump Menu for your connected pump
-    * [OmniPod Eros](../loop-3/omnipod.md#devices){: target="_blank" }
-    * [Medtronic](../loop-3/medtronic.md#devices){: target="_blank" }
+    * [OmniPod Eros](../pumps/omnipod.md#devices){: target="_blank" }
+    * [Medtronic](../pumps/medtronic.md#devices){: target="_blank" }
   * Scroll down to the DEVICES section
   * There should already be at least one device listed
   * Power on your new device and look for a new device to appear in the list
   * If this device has never been connected before, it might appear as a blank line with a slider beside it - if so, slide the slider to turn it green and then the device name should appear
   * You can now turn sliders on or off to select which device you want to use with your connected pump
-  * Refer to the [RileyLink Menu](../loop-3/rileylink.md) for instructions on personalizing your device name
+  * Refer to the [RileyLink Menu](../pumps/rileylink.md) for instructions on personalizing your device name
 
 ![Select an existing or new link under DEVICES in pump menu](img/add-change-rl.svg){width="300"}
   {align="center"}
@@ -81,7 +81,7 @@ The electronics are not waterproof but there are waterproof cases available and 
 
 ## Firmware version
 
-In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different. (Note - the displays for Ema, Orange and Riley have been updated to include device-specific features as shown in the [RileyLink Display](../loop-3/rileylink.md) page.  The graphic below shows the original RileyLink display.)
+In Loop settings, tap on your pump, find your device (RileyLink or other) and tap on that menu. The figure below shows firmware specific to the RileyLink. If you have another type of device, the firmware value reported will be different. (Note - the displays for Ema, Orange and Riley have been updated to include device-specific features as shown in the [RileyLink Display](../pumps/rileylink.md) page.  The graphic below shows the original RileyLink display.)
 
 ![Expected firmware display under device menu for post-Aug 2018 RileyLink](img/rl-firmware.jpg){width="350"}
 {align="center"}
