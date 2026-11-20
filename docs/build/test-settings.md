@@ -2,15 +2,6 @@
 
 !!! info "Time Estimate"
     - 2 hours to review the rest of *LoopDocs* (particularly the [Set Up](../setup/overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" }, and [FAQs](../faqs/overview-faqs.md){: target="_blank" } sections) and [LoopTips](https://loopkit.github.io/looptips/)
-    * If you like quizzes, this older quiz has not been updated for version 3 of the *Loop* app and not all the links work (when your answers are scored), but the questions are still really good and the scoring report provides extra insight into why your answer was right or wrong
-        - 15 minutes to take [this quiz](https://docs.google.com/forms/d/e/1FAIpQLSfTkL0pWC-x3a5l_I3aJYBSx3xAS7dtkBbQiiLd348H70TTWg/viewform) to confirm you understand the *Loop* app expected behavior
-        * New with version 3 of the *Loop* app: 
-            * you can remote bolus
-            * you can set a manual temp basal rate
-            * DASH pods can be used without a RileyLink
-                * restarting your app or turning Bluetooth on and off replaces the Rileylink power cycle trouble-shooting tip
-            * Nightscout with Heroku is no longer free, but there are other options
-            * you do NOT need a Mac computer if you use [Build with Browser](../browser/bb-overview.md)
     - 1-3 days to test settings for safety and to get the most out of the *Loop* app
         * This step can be done after you build the *Loop* app, just stay in [`Open Loop`](../operation/loop/open-loop.md) while you test
 

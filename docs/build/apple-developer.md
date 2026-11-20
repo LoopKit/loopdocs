@@ -41,20 +41,20 @@ You have two options for an individual account: free or paid.
 If you decide to use a **FREE** developer account, here's what you need to know:
 
 1. You must use the [Build with *Mac*](../build/overview.md) method to build Loop.
-1. Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.
-2. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](apple-developer.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
-3. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overview.md){: target="_blank" } through Nightscout.
+2. Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.
+3. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](apple-developer.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
+4. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overview.md){: target="_blank" } through Nightscout.
 
 ### Paid Developer Account
 
 If you decide to use a **PAID** developer account, here's what you need to know:
 
-2. The paid developer account is $99 per year. The default setting is to auto-renew annually. You can change that selection in your developer account settings at any time.
-3. If your household has multiple Loop users, only one developer account is needed.  That one developer account can be used to build Loop on multiple phones.
-1. If you use the Browser Build method
+1. The paid developer account is $99 per year. The default setting is to auto-renew annually. You can change that selection in your developer account settings at any time.
+2. If your household has multiple Loop users, only one developer account is needed.  That one developer account can be used to build Loop on multiple phones.
+3. If you use the Browser Build method
     * You must [Update with Browser](../browser/bb-update.md) the build once every 90 days
     * You must have a Paid Developer account
-1. If you use the Build with *Mac* method
+4. If you use the Build with *Mac* method
     * If you have a paid developer account, you must build at least once a year
     * If you have a free account, you must build every 7 days
 

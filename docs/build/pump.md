@@ -1,6 +1,6 @@
 ## Compatible Pump
 
-!!! info "Time Estimate"
+!!! info "Before You Start"
     - Omnipod users: Omnipod Pod Types of Omnipod 5, DASH and Eros (Classic) are compatible
     - Medtrum Nano users: both 200 U and 300 U patches are supported
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
@@ -181,17 +181,18 @@ Finding a compatible Medtronic pump is probably the most difficult part for most
 
 * Ask your endocrinologist.  
 
-* Ask at a local JDRF chapter meeting if someone has an old backup pump they'd be willing to donate to you.  
+* Ask at a local Breakthrough T1D (formerly JDRF) chapter meeting if someone has an old backup pump they'd be willing to donate to you.  
 
 * Join diabetes supply groups on Facebook; both for-trade and for-sale groups.  
 
 * Check Craigslist often and be willing to expand your search area to include larger cities.
 
-* Check out the **HelpAround, NextDoor, OfferUp, and/or LetGo** apps for pumps.
-  
-* [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
+* Check out local marketplace apps such as **NextDoor** and **OfferUp** for pumps.
 
-The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
+* Check this Facebook Group for Looping equipment: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
+
+
+The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, OfferUp).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
 
 ![Craigslist](img/craigslist.png)
 
@@ -207,7 +208,7 @@ If you choose to purchase from a remote or unknown seller, here are some tips fo
 
 * Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
 
-* Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in the US and includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
+* Ask for shipping that includes a tracking number. In the US, a small USPS Priority Mail box is an inexpensive option that includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
 
 Red flags that may indicate a scam:
 
@@ -246,7 +247,7 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 
 ### DanaRS
 
-The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
+DanaRS pumps with firmware version v1 are not supported. Only firmware version v3 and newer are supported with the *Loop* app.
 [Check here](../setup/add-pump.md#dana-i-danars-v3-setup) to see how to check your firmware version.
 
 ![DanaRS-v3](img/danars.png){width="250"}

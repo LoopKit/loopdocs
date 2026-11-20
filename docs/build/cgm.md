@@ -9,7 +9,7 @@
     The *Loop* app is compatible (on the same phone) with:
 
     - *Dexcom* G5, G6 or ONE CGM systems
-        * *Dexcom* ONE (based off G6 sensor) is available in some countries, but will be discontinued soon
+        * *Dexcom* ONE (based off G6 sensor) is available in some countries
         * The *Anubis* Transmitters for the *Dexcom* G6 family are supported
     - *Dexcom* G7 or ONE+ CGM systems
         * *Dexcom* ONE+ (based off G7 sensor) is available in some countries
@@ -41,9 +41,9 @@ The *Dexcom* ONE, available in some countries, acts just like the G6 as far as t
 If the *Dexcom* app is on the same device as the *Loop* app, your system can function without an internet connection. See Offline Use below.
 
 !!! tip "Anubis Support"
-    *Anubis* support is available in the dev branch (v3.14.6) and will be in the next release.
+    *Anubis* support was added in v3.14.7.
     
-    * *Abubis* is a retrofitted Dexcom G6 transmitter that has different characteristics for warmup time and sensor life
+    * *Anubis* is a retrofitted Dexcom G6 transmitter that has different characteristics for warmup time and sensor life
     * The support allows you to enter your expected sensor life and provides access to transmitter battery levels
 
 !!! warning "*Dexcom* G5 Support"
@@ -62,10 +62,8 @@ With Loop 3.4 and newer versions, some *Libre* CGM are supported.
  
 * *Libre* 1 are supported but must use a third-party transmitters (miaomiao and bubble transmitters are supported)
 * European *Libre* 2 and 2 Plus can be used directly or with optional transmitter
-* These *Libre* CGM are not supported within the *Loop* app
-    * American (Canada, US, South American) *Libre* 2
-    * *Libre* 3
-* Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
+* American (Canada, US, South American) *Libre* 2 is not supported within the *Loop* app
+* *Libre* 3/3 Plus is not supported by the released *Loop* app; support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 * See also [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
 
 ## *Eversense* E3 and 365 CGM
@@ -98,14 +96,15 @@ The *Loop* app allows you to use Nightscout as a remote source for CGM data. Thi
 ## CGMs Not Supported in the *Loop* App 
 
 
-Currently, there are no solutions for *Guardian* or *Libre 3* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
+Currently, there are no solutions for *Guardian* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
 
 ## Next Step
 
-If your compatible pump is *Medtronic* or *Omnipod* (not DASH)
+If your compatible pump is *Medtronic* or *Omnipod Eros* (Classic)
 
 * Next step is to [Order a RileyLink Compatible Device](rileylink.md)
 
-If your compatible pump is *Omnipod* DASH
+If your compatible pump is Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi
 
-* Next step is to enroll in the [Apple Developer Program](apple-developer.md).
+* You do not need a RileyLink compatible device
+* Next step is to enroll in the [Apple Developer Program](apple-developer.md)

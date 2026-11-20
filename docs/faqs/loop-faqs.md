@@ -177,7 +177,7 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 This [link](../build/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS Open-Source community. You need to consider which ones are available in your country.
 
-You can use Omnipod DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM) to use Omnipod with Loop, however, Insulet may ask for the PDM serial number when requesting pod replacements. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
+You can use Omnipod 5, DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM) to use Omnipod with Loop, however, Insulet may ask for the PDM serial number when requesting pod replacements. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
 
 There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
 

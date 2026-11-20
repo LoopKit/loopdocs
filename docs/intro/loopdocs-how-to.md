@@ -8,7 +8,7 @@ Volunteers generously provide support for Loop via online platforms. You have se
 * The [LoopTips](https://loopkit.github.io/looptips/) website provides non-build information that is helpful once you are looping, e.g., how to print endo reports, find Loop data, deal with therapy settings changes, etc.
 * Many Loopers use a companion app called Nightscout. Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group.
 * For those interested in what is coming next for Loop and/or those who prefer not to use Facebook:
-    * Join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the streams or you'll miss some interesting conversations.
+    * Join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels or you'll miss some interesting conversations.
     * [Sign up](https://www.loopandlearn.org/newsletter-signup/) for the `LoopandLearn` newsletter published once or twice a month
     * Visit the [LoopandLearn Website](https://www.loopandlearn.org)
     * Check out the [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn)
@@ -103,5 +103,5 @@ If you decide to do a GitHub Pull Request (PR) or create an Issue, first look to
 Helpful tips for providing LoopDocs feedback through Facebook and/or Zulipchat:
 
 * In [`LoopandLearn` Facebook Group](https://www.facebook.com/groups/LOOPandLEARN) - make sure your post is clear that you have a comment about LoopDocs in particular.
-* In Loop Zulipchat, please use the [documentation stream, Loopdocs Issue](https://loop.zulipchat.com/#narrow/stream/270362-documentation/topic/Loopdocs.20Issue) channel.
+* In Loop Zulipchat, please use the [documentation channel, Loopdocs Issue](https://loop.zulipchat.com/#narrow/channel/270362-documentation/topic/Loopdocs.20Issue) topic.
 

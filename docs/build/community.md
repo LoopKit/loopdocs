@@ -53,7 +53,7 @@ Include full window capture when asking for help. The *Nightscout* and *Xcode* a
 
 #### How to Obtain a Screenshot on a Mac
 
-On an Apple computer, press ++shift+command+4++ keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to include in the screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name `Screen Shot`. To capture an entire window, press ++shift+command+4++ keys at the same time followed by pressing ++space++ (the  space bar) and then click on the window of interest.
+On an Apple computer, press ++shift+command+4++ keys at the same time and a little crosshairs tool will appear. Click-and-drag across the area you'd like to include in the screenshot. When you let go of the button, the screenshot will be saved to your desktop with a file name starting with the name `Screenshot`. To capture an entire window, press ++shift+command+4++ keys at the same time followed by pressing ++space++ (the  space bar) and then click on the window of interest.
 
 ## Descriptive Language
 

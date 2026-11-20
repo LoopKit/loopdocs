@@ -1,6 +1,6 @@
 ## Order a RileyLink Compatible Device
 
-**Not needed for any pump that supports direct Bluetooth BLE commands such as Dana, DASH and Medtrum**
+**Not needed for any pump that supports direct Bluetooth BLE commands: Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi**
 
 **Required when using an older Medtronic pump or Omnipod Eros pods**
 
@@ -15,8 +15,7 @@
 
 !!! question "FAQs"
     - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
-    - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. There are many used devices available in the community now that many users have switched to DASH. **Not needed for DASH or Dana pumps**
-        * Facebook Group where you may find used items: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
+    - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. Used devices are often available on this Facebook Group: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/). **Not needed for Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi**
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to the normal scheduled basal rate
     - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between compatible devices.
     - **"How close does the RileyLink compatible device need to be to me? Do I have to carry it with me?"** See [RileyLink Compatible Device Range](../faqs/rileylink-faqs.md#range){: target="_blank" }.
@@ -24,12 +23,10 @@
 
 ## What is a RileyLink Compatible Device
 
-The RileyLink compatible device is required to allow your phone to talk to compatible *Medtronic* and *Omnipod Eros* pumps. **It is not needed for *Omnipod DASH* or Sooil Dana pumps.**
+The RileyLink compatible device is required to allow your phone to talk to compatible *Medtronic* and *Omnipod Eros* pumps. **It is not needed for Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi.**
 
 !!! abstract "Details for RileyLink"
     The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by compatible *Medtronic* and *Omnipod Eros* pumps.
-
-Loop 3 has *Omnipod DASH* support, among other new features. When using *Omnipod DASH*, the RileyLink compatible device is not necessary.  If you are using *Medtronic* or *Omnipod Eros* (not DASH), you still need the device regardless of which version of Loop you are running.
 
 *Medtronic* and *Omnipod Eros* pumps require a RileyLink compatible device.
 
@@ -40,16 +37,15 @@ Loop 3 has *Omnipod DASH* support, among other new features. When using *Omnipod
 
 The RileyLink protocol defines a specific Bluetooth interface and way of opening a Sub-GHz radio channel to pumps. All RileyLink compatible devices follow the RileyLink protocol.
 
-> Many Omnipod users have switched to DASH and no longer need a RileyLink device, so the demand is significantly less than it used to be. You can still buy the devices, but there are fewer options.
+> Many Omnipod users have switched to DASH or Omnipod 5 and no longer need a RileyLink device, so the demand is significantly less than it used to be. You can still buy the devices, but there are fewer options.
 
 There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
-- A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart?fbclid=IwAR2vHbOzla-zmM-cSp4NkOB_23k3spgnaYvCIGRcACcIQ25FJAU_7HRkH2A) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
+- A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
 - RileyLink
     - Designed by Pete Schwamb
     - Rechargeable battery (max 36 hours per charge)
-    - No longer available new, check this Facebook Group for used ones:
-        * [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
+    - No longer available new; check this Facebook Group for used ones: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
 - OrangeLink
     - Designed by Vic Wu, available from [GetRileyLink](https://getrileylink.org)
     - Uses 2 AAA batteries, batteries typically last weeks or more, depending on the batteries/pump type

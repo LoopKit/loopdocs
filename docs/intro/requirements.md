@@ -1,6 +1,6 @@
 ## Two Ways to Build the App
 
-With the release of&nbsp;_<span translate="no">Loop 3</span>_&nbsp;, there are two ways to build the app.
+There are two ways to build the app.
 
 * If you have never built&nbsp;_<span translate="no">Loop</span>_&nbsp;before:
     * If you already own a Mac then you may prefer the Build with Mac method
@@ -25,7 +25,7 @@ These requirements are independent of how you build the Loop app:
 1. [Compatible Pump](../build/pump.md)
 1. [Compatible CGM](../build/cgm.md)
 1. [RileyLink Compatible Device](../build/rileylink.md)
-    * Not needed with Omnipod DASH or SOOIL Dana pumps (i or RS)
+    * Not needed with Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi
     * Required for Medtronic and Omnipod Eros
 1. [Apple Developer Membership](../build/apple-developer.md)
     * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
