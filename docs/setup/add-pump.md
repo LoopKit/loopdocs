@@ -12,18 +12,35 @@ The HUD looks like the graphic below if no CGM or Pump is chosen:
 
 Loopers can choose from multiple pumps and a simulator:
 
-* [Omnipod](#omnipod-setup) (v3.14.11 or newer, v3.14.2 through .7 displayed "All Omnipod Types")
-    * Omnipod Classic (Eros)
-    * Omnipod DASH
-    * Omnipod 5 (v3.14.7 or newer)
-* [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
-* [Minimed](#medtronic-setup)
-    * Note: only some Medtronic Minimed pumps are compatible
-    * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
-* [Dana-i / DanaRS-v3](#dana-i-danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
-    * Note: DanaRS-v1 or any Dana Korean versions are not supported
-* [Tandem Mobi](#tandem-mobi-setup) (**open beta; new pump manager, requires a feature branch, use with care**)
-* Insulin Pump Simulator
+=== "Loop 3"
+
+    * [Omnipod](#omnipod-setup) (v3.14.11 or newer, v3.14.2 through .7 displayed "All Omnipod Types")
+        * Omnipod Classic (Eros)
+        * Omnipod DASH
+        * Omnipod 5 (v3.14.7 or newer)
+    * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
+    * [Minimed](#medtronic-setup)
+        * Note: only some Medtronic Minimed pumps are compatible
+        * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
+    * [Dana-i / DanaRS-v3](#dana-i-danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
+        * Note: DanaRS-v1 or any Dana Korean versions are not supported
+    * Insulin Pump Simulator
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    * [Omnipod](#omnipod-setup)
+        * Omnipod Classic (Eros)
+        * Omnipod DASH
+        * Omnipod 5
+    * [Medtrum Nano patch pump](#medtrum-nano-setup)
+    * [Minimed](#medtronic-setup)
+        * Note: only some Medtronic Minimed pumps are compatible
+        * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
+    * [Tandem Mobi](#tandem-mobi-setup) (**open beta; new pump manager, requires the `feat/tandem-next-dev` branch, use with care**)
+    * Insulin Pump Simulator
+    * Dana is not available for *Loop* 4 at this time
 
 !!! info "Omnipod Terms"
     The Loop app and LoopDocs use these terms. For any supported Pod Type, select `Omnipod` when choosing your pump.
@@ -36,23 +53,45 @@ Loopers can choose from multiple pumps and a simulator:
 
 ## Add Pump
 
-Tap on Add Pump in the Settings screen to see pump options (shown in the graphic below).
+=== "Loop 3"
 
-Tap on your Pump.
+    Tap on Add Pump in the Settings screen to see pump options (shown in the graphic below).
 
-![graphic showing the pumps available with Loop 3](img/setting-add-pump.svg){width="500"}
-{align="center"}
+    Tap on your Pump.
 
-Then continue with the appropriate section for your pump:
+    ![graphic showing the pumps available with Loop 3](img/setting-add-pump.svg){width="500"}
+    {align="center"}
 
-* [Omnipod Setup](#omnipod-setup)
-* [Medtrum Nano Setup](#medtrum-nano-setup)
-* [Medtronic Minimed Setup](#medtronic-setup)
-* [Dana Setup](#dana-i-danars-v3-setup)
-* [Tandem Mobi Setup](#tandem-mobi-setup)
+    Then continue with the appropriate section for your pump:
 
-!!! note "Feature Branch Pumps"
-    Dana and Tandem Mobi only appear in the list of pumps if you built a feature branch that includes that pump manager.
+    * [Omnipod Setup](#omnipod-setup)
+    * [Medtrum Nano Setup](#medtrum-nano-setup)
+    * [Medtronic Minimed Setup](#medtronic-setup)
+    * [Dana Setup](#dana-i-danars-v3-setup)
+
+    !!! note "Feature Branch Pumps"
+        Dana only appears in the list of pumps if you built a feature branch that includes that pump manager.
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    Tap on Add Pump in the Settings screen. A full-screen chooser opens with the pumps grouped by manufacturer. Each one shows an icon and a list of the supported models.
+
+    Tap on your Pump.
+
+    !!! abstract "Graphic needed"
+        A graphic of the *Loop* 4 pump chooser will be added here.
+
+    Then continue with the appropriate section for your pump:
+
+    * [Omnipod Setup](#omnipod-setup)
+    * [Medtrum Nano Setup](#medtrum-nano-setup)
+    * [Medtronic Minimed Setup](#medtronic-setup)
+    * [Tandem Mobi Setup](#tandem-mobi-setup)
+
+    !!! note "Feature Branch Pumps"
+        Tandem Mobi only appears in the list of pumps if you built the `feat/tandem-next-dev` branch.
 
 
 ## Omnipod Setup
@@ -325,6 +364,9 @@ Now that your pump is paired with Loop, you should select the type of battery yo
 The Medtronic status and commands available are shown in the [Pump Settings](../pumps/medtronic.md) page.
 
 ## Dana-i / DanaRS-v3 Setup
+
+!!! note "*Loop* 4"
+    Dana is not available in the `next-dev` branch (*Loop* 4) at this time. This section applies to *Loop* 3 feature branches only.
 
 ### Check Dana Pump Version
 

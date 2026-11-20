@@ -4,7 +4,7 @@ The following CGM are supported by some or all versions of Loop:
 
 * All *Dexcom* CGM (*Loop* v3 and later)
     * This includes 15-day G7 CGM
-* *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#updates-in-dev))
+* *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#status-for-next-dev-branch))
 * Eversense E3 and 365 (included with *Loop* v3.14.2 and newer)
 * Remote CGM (requires internet access)
     * *Dexcom* Share
@@ -124,7 +124,7 @@ Loop 3.4.x and later enables the use of *Libre* sensors supported by [LibreTrans
 
 *Libre 3/3+* is currently available for testing in a special branch, next-dev; it is not yet part of the released version of Loop.
 
-* See [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+* See [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 
 There are a number of *Libre* sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [*LibreLinkUp*](https://librelinkup.com/). This enables you to upload your data to the *LibreLinkUp* servers and then access the data from there.
 
@@ -147,7 +147,7 @@ Yes.
 
 ## CGM Customization
 
-> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 
 If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the *xDrip4iOS* DIY CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
 

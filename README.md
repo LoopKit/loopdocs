@@ -542,6 +542,40 @@ To remove the title, either remove the title completely or use an empty string w
     If a blank or empty title is provided, no title is applied.
 ```
 
+### *Loop* 3 and *Loop* 4 Content
+
+The `next-dev` branch of LoopWorkspace will be released as *Loop* 4. Until then, both versions are documented on the same pages. Pick the tool by the size of the difference:
+
+* **Small difference** (a sentence or two): use an admonition or an inline note, the same way as "(v3.14.2 or newer)"
+* **Same task, different steps or screens**: use content tabs labeled exactly `Loop 3` and `Loop 4`
+* **Whole new feature**: give it its own page in the folder where it belongs (never a version-named folder) and start the page with the shared `next-dev` note
+
+Content tabs with the same label are linked across the whole site. When a reader picks `Loop 4` on one page, every `Loop 4` tab opens, and the choice is remembered on other pages. Keep `Loop 3` as the first (default) tab until *Loop* 4 is released.
+
+```markdown
+## Add Pump
+
+Text that is the same for both versions.
+
+=== "Loop 3"
+
+    Steps for *Loop* 3.
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    Steps for *Loop* 4.
+
+More text that is the same for both versions.
+```
+
+* Keep `##` and `###` headings outside the tabs; headings inside a tab still show in the page table of contents and can link to a hidden tab
+* Indent everything in a tab by 4 spaces
+* Start each `Loop 4` tab, or a new `next-dev` page, with the shared note: `--8<-- "includes/next-dev-note.md"`
+* The shared note links to `../version/development.md`, so use it only on pages one folder deep (for example `setup/` or `pumps/`)
+
+When *Loop* 4 is released, `Loop 4` becomes the first tab. Later, each `Loop 3` tab becomes a collapsed admonition such as `??? abstract "Loop 3 (click to open)"`.
 
 ### Copy Button
 
