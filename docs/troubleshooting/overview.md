@@ -42,3 +42,5 @@ If you can't find any information in LoopDocs, GitHub Issues, Zulipchat, or Face
 When you post, provide a description along with any screenshots of the issue you are having and include the version of Loop you are running and the iOS on your device.  (Tap on Loop-Settings and look at the top of the screen to get the Loop version number).  You don't necessarily have to tag any particular person, the community is fairly active in replying to messages.
 
 **Post in only one place - the same volunteers monitor various sites.**
+
+See [How to Ask for Help](ask-for-help.md) for what to include in your post.

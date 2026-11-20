@@ -141,9 +141,22 @@ If you prefer not to customize Loop, then you can configure [Nightscout](https:/
 
 For Loop versions 3.14.2 and newer, Eversense is included.
 
+## Can I use the *Loop* app offline?
+
+"Offline Use" means using the *Loop* app when there is no cell data or internet available. The *Loop* app does not require any special setup to operate offline.
+
+For offline use, the iPhone's Bluetooth still needs to be active; and for *Dexcom* users, the G5, G6 or G7 app also needs to be running on the same phone as the *Loop* app (*Loop* 4 can pair a G7 directly; then the *Dexcom* app is not needed). If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep both the CGM and the *Loop* app running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in the *Loop* app settings when you changed transmitters.
+
+## Can the *Loop* app use *Dexcom Share* as a CGM?
+
+The *Loop* app can download *Dexcom* Share data for use in modeling glucose. However, this is not a typical configuration and requires internet connection for both the phone with the *Dexcom* app and the phone with the *Loop* app.  The steps for adding a CGM explain that you usually enter the *Dexcom* transmitter ID and leave the *Dexcom* Share setting blank.
+
+!!! warning "*Dexcom* ONE"
+    The *Dexcom* ONE app does not support Share.
+
 ## Can the *Loop* app read CGM data from Nightscout?
 
-Yes.
+Yes. The *Loop* app allows you to use Nightscout as a remote source for CGM data. This requires cell or WiFi connection.
 
 ## CGM Customization
 

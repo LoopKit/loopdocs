@@ -484,7 +484,7 @@ But wait - there's more.
 * Do NOT skip the Set Up and Operate material; at least skim it.
 * Keep reviewing LoopDocs - some material will be more impactful once you have the app in your hands.
 * Ask [questions](../intro/loopdocs-how-to.md#how-to-find-help) if you are confused.
-* Learn to use the [LoopDocs search feature](../intro/loopdocs-how-to.md#website-search)
+* Learn to use the [LoopDocs search feature](../intro/overview-intro.md#website-search)
 
 ### New to Loop 3
 

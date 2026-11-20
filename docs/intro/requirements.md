@@ -15,6 +15,16 @@ The Build Steps have been split into two tabs:
     * App is built on a *Mac* with *Xcode* connected to the iPhone
     * The operating system on the *Mac* and the version of *Xcode* must be kept up-to-date
 
+!!! warning "Best Practice: Learn to Build"
+    You are strongly encouraged to build&nbsp;<span translate="no">Loop</span>&nbsp;for yourself.
+
+    * No links to providers who build&nbsp;<span translate="no">Loop</span>&nbsp;as a service  are found in&nbsp;<span translate="no">LoopDocs</span>
+    * If you choose to use such a service, before you begin, you should:
+        * Read&nbsp;<span translate="no">LoopDocs</span>
+        * Know how to Set up and Operate&nbsp;<span translate="no">Loop</span>
+        * Ask what features, if any, available with DIY loop are not available with their service
+        * **These steps are important for your safety**
+
 There are some requirements common to both methods. Some requirements are specific to only one method.
 
 ## Common Requirements
@@ -56,6 +66,8 @@ Go through the Common Requirements to see what you need to actually Loop.
     If you want to test the Loop app without attaching CGM or pump hardware, you can run a simulated CGM or simulated pump. You can use actual CGM data using Dexcom Share or Nightscout as a Remote CGM.
 
     These simulators are part of the Loop app and are available with either build method you choose.
+
+    Do not expect a simulator to keep working when the phone is locked or the app is in the background. A real pump or CGM is needed to wake the app.
     
     Check out the [Simulator](../version/simulator.md){: target="_blank" } page.
 

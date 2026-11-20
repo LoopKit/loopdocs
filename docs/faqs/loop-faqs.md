@@ -10,7 +10,7 @@ No. The *Loop* app is not available for download. You must build your own *Loop*
 
 Each step needed to successfully build your *Loop* app is found in these docs. The harder part will be having the patience to read all the documents before you start. New *Loop* users are so excited to get started that they often skip reading all the great info that these docs contain. As you begin the build...please include time to read the documents that follow what happens **after** you successfully build your *Loop* app.
 
-If you have any questions, use the [Search](../intro/loopdocs-how-to.md#website-search) feature to find topics in LoopDocs.
+If you have any questions, use the [Search](../intro/overview-intro.md#website-search) feature to find topics in LoopDocs.
 
 - - -
 
@@ -179,11 +179,61 @@ This [link](../build/pump.md#pumps-compatible-with-the-loop-app){: target="_blan
 
 You can use Omnipod 5, DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM) to use Omnipod with Loop, however, Insulet may ask for the PDM serial number when requesting pod replacements. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
 
-There is a [whole page with detailed information about Medtronic pumps](../build/pump.md#check-medtronic-pump-version); how to find them, how to find supplies, and assessing whether your Medtronic pump is compatible. Please check out that page for more info.
+To check whether a Medtronic pump is compatible, see [Check Medtronic Pump Version](../build/pump.md#check-medtronic-pump-version). Tips for finding and buying one are below.
 
 Medtrum pumps are compatible with the released version of Loop v3.14.2 or newer.
 
 Some Looping equipment can be found on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945). This is a private FB group where you must agree to the rules.
+
+### Finding a Medtronic Pump
+
+Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestions:
+
+* Talk to friends in the diabetes community.
+
+* Ask your endocrinologist.  
+
+* Ask at a local Breakthrough T1D (formerly JDRF) chapter meeting if someone has an old backup pump they'd be willing to donate to you.  
+
+* Join diabetes supply groups on Facebook; both for-trade and for-sale groups.  
+
+* Check Craigslist often and be willing to expand your search area to include larger cities.
+
+* Check out local marketplace apps such as **NextDoor** and **OfferUp** for pumps.
+
+
+
+The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, OfferUp).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
+
+![Craigslist](img/craigslist.png)
+
+### Safe Purchasing
+
+If you choose to purchase from a remote or unknown seller, here are some tips for safe purchasing:
+
+* Use PayPal and purchase using the "Goods and Services" payment option. This costs nothing for the buyer, but the seller will lose 2.95% of the sale to PayPal fees. PayPal offers some protection for both buyer and seller in the event of fraud.  
+
+* Ask for photos of the pump. Check to make sure the serial number of the pump on the back matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
+
+* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently), however, some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
+
+* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
+
+* Ask for shipping that includes a tracking number. In the US, a small USPS Priority Mail box is an inexpensive option that includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
+
+Red flags that may indicate a scam:
+
+* Asking for payment through "friends and family" on PayPal, especially if you don't know the person or have any solid references for them. Paying in that way offers you no buyer protection. It's just like giving the seller cash, so you had better trust the seller.  
+
+* Offering an "almost new" pump is a big red flag in the US. Do you really think a more than 10-year old pump would be unused and sitting in shrink wrap at this point? This seems highly suspicious. There are some out there, but they are very rare.
+
+* Inability to provide new pictures of the pump when requested. Sure they posted some pictures with the ad, but what if they just downloaded them from other people's ads? The seller should be able to furnish a couple of "new" photos at your request. A good one to ask for is the battery and reservoir tops so you can see their condition.
+
+### Pump Supplies
+
+Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.
+
+- - -
 
 - - -
 

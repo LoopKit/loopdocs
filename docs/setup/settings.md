@@ -187,7 +187,7 @@ The Support section provides access to several methods to Report a Problem. This
 
 * If you are an expert tester, you will find [Send to Loop Developers](#send-to-loop-developers) an incredibly helpful feature
 * If you are a novice to reporting problems, check with a mentor to see if your problem is something that is understood
-    * See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
+    * See [How to Ask for Help](../troubleshooting/ask-for-help.md){: target="_blank"}
     * You can use [Share a Diagnostic Report](#share-a-diagnostic-report) or [Export Critical Event Logs](#export-critical-event-logs) and save them for yourself for later submission if a mentor suggests you need to do this
 
 
@@ -197,7 +197,7 @@ When you tap on the Send to Loop Developers row, you see a screen like that belo
 
 **PLEASE - do not use this form if you are having trouble building the app or configuring your settings.**
 
-* See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
+* See [How to Ask for Help](../troubleshooting/ask-for-help.md){: target="_blank"}
 
 
 ![settings support screen](img/setting-send-to-developers.svg){width="500"}

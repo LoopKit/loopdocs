@@ -138,6 +138,7 @@ plugins:
             'operation/loop-settings/displays.md': 'setup/displays.md'
             'operation/loop-settings/rileylink.md': 'pumps/rileylink.md'
             'operation/algorithm/temp-basal.md': 'operation/algorithm/auto-adjust.md'
+            'build/community.md': 'intro/loopdocs-how-to.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -155,7 +156,7 @@ nav:
 - Home: 'index.md'
 - Intro:
     - 'LoopDocs Overview': 'intro/overview-intro.md'
-    - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
+    - 'Get Help': 'intro/loopdocs-how-to.md'
     - 'Requirements Overview': 'intro/requirements.md'
     - 'Compatible iPhone': 'build/phone.md'
     - 'Compatible Pump': 'build/pump.md'
@@ -164,7 +165,6 @@ nav:
     - 'Apple Developer Program': 'build/apple-developer.md'
     - 'Test Settings': 'build/test-settings.md'
     - 'Loop Data': 'build/loop-data.md'
-    - 'Meet the Community': 'build/community.md'
 - Build with Browser:
     - 'Browser Overview': browser/bb-overview.md
     - 'Configure to use Browser':
@@ -232,6 +232,7 @@ nav:
         - 'Automated Adjustments': 'operation/algorithm/auto-adjust.md'
 - Troubleshoot:
     - 'Troubleshooting Overview': 'troubleshooting/overview.md'
+    - 'How to Ask for Help': 'troubleshooting/ask-for-help.md'
     - 'Loop App Crashes': 'troubleshooting/loop-crashing.md'
     - 'Red Loop': 'troubleshooting/red-loop.md'
     - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
@@ -276,4 +277,5 @@ nav:
     - 'Apple Health FAQs': 'faqs/apple-health-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
     - 'Glossary': 'faqs/glossary.md'
+    - 'Improve LoopDocs': 'faqs/improve-loopdocs.md'
 - Translation: 'translate.md'

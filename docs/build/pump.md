@@ -16,7 +16,7 @@
         - If you use [Dana](#sooil-dana-pumps) - check which kind
 
 !!! question "FAQs"
-    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
+    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](../faqs/loop-faqs.md#finding-a-medtronic-pump).
     - **"What are the differences between Medtronic pump models?"** This question is answered in the [Extra Details](#extra-details-on-medtronic) section.
     - **"But what about the other types of pumps?"** Only the pumps listed in Summary work with the *Loop* app at this time.
         - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps
@@ -172,57 +172,6 @@ If you are in the position of being able to choose from different pump models, t
 * Additionally, because of the way the *Loop* app fetches information from the pump, the x23/x54 series of pumps are slightly better at conserving battery life through the use of the MySentry packets to collect information from the pump.  x22 pumps do not use MySentry.
 
 * The x23/x54 series pumps are also faster at delivering boluses greater than 10 units.  On an x23 pump, a 13-unit bolus takes 5:00 minutes to complete.  On an x22 pump, a 13-unit bolus takes 8:40 minutes to complete.
-
-### Finding a Medtronic Pump
-
-Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestions:
-
-* Talk to friends in the diabetes community.
-
-* Ask your endocrinologist.  
-
-* Ask at a local Breakthrough T1D (formerly JDRF) chapter meeting if someone has an old backup pump they'd be willing to donate to you.  
-
-* Join diabetes supply groups on Facebook; both for-trade and for-sale groups.  
-
-* Check Craigslist often and be willing to expand your search area to include larger cities.
-
-* Check out local marketplace apps such as **NextDoor** and **OfferUp** for pumps.
-
-* Check this Facebook Group for Looping equipment: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
-
-
-The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, OfferUp).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
-
-![Craigslist](img/craigslist.png)
-
-### Safe Purchasing
-
-If you choose to purchase from a remote or unknown seller, here are some tips for safe purchasing:
-
-* Use PayPal and purchase using the "Goods and Services" payment option. This costs nothing for the buyer, but the seller will lose 2.95% of the sale to PayPal fees. PayPal offers some protection for both buyer and seller in the event of fraud.  
-
-* Ask for photos of the pump. Check to make sure the serial number of the pump on the back matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
-
-* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently), however, some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
-
-* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
-
-* Ask for shipping that includes a tracking number. In the US, a small USPS Priority Mail box is an inexpensive option that includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
-
-Red flags that may indicate a scam:
-
-* Asking for payment through "friends and family" on PayPal, especially if you don't know the person or have any solid references for them. Paying in that way offers you no buyer protection. It's just like giving the seller cash, so you had better trust the seller.  
-
-* Offering an "almost new" pump is a big red flag in the US. Do you really think a more than 10-year old pump would be unused and sitting in shrink wrap at this point? This seems highly suspicious. There are some out there, but they are very rare.
-
-* Inability to provide new pictures of the pump when requested. Sure they posted some pictures with the ad, but what if they just downloaded them from other people's ads? The seller should be able to furnish a couple of "new" photos at your request. A good one to ask for is the battery and reservoir tops so you can see their condition.
-
-### Pump Supplies
-
-Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.
-
-- - -
 
 ## Sooil Dana pumps
 

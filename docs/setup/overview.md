@@ -18,7 +18,7 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 * Review these pages from the Intro tab of LoopDocs
     * [Test Settings](../build/test-settings.md)
     * [Loop Data](../build/loop-data.md)
-    * [Meet the Community](../build/community.md)
+    * [Get Help](../intro/loopdocs-how-to.md)
 
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below. 
 
@@ -26,7 +26,7 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 * Complete the Onboarding steps to set up Loop
 * Learn to use Loop starting with the [Open Loop](../operation/loop/open-loop.md) page
 * Once you are comfortable with manually controlling Loop and have settings that work with the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
-* Make [suggestions](../intro/loopdocs-how-to.md#how-to-improve-loopdocs) if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
+* Make [suggestions](../faqs/improve-loopdocs.md) if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
 ### Experienced Loopers
 
@@ -39,7 +39,7 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below
     - Some of the screens and user interface changed with Loop 3
     - Many of the new Loop 3 features are described
-    - Reach out if information is missing or needs to be clarified, [suggestions](../intro/loopdocs-how-to.md#how-to-improve-loopdocs) are always welcome
+    - Reach out if information is missing or needs to be clarified, [suggestions](../faqs/improve-loopdocs.md) are always welcome
 * LoopDocs design
     * Sections specific to experienced Loopers are after the sections for new Loopers
     * The goal is to make LoopDocs easier for new Loopers to navigate

@@ -152,3 +152,17 @@ Now that you have signed your app, you will be able to build following these dir
     * Tap on "Allow"
 
     Return to Xcode and build again.
+
+## Switching from Free to Paid Memberships
+
+You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). 
+
+The two apps will look identical on your phone and they will both have the name Loop with the same icon, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
+
+Before deleting the FreeLoop, either record all the settings or take screenshots of all the relevant settings screens.
+
+PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, ISF, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.
+
+With Loop 3, if you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. 
+
+Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to [Protect that App](build-app.md#protect-that-app), reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.

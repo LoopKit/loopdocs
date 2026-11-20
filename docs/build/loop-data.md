@@ -52,6 +52,20 @@ If you plan to use remote commanding with *Nightscout*, please read these links 
 * [Set Up Remote for *Nightscout*](../nightscout/remote-config.md#set-up-remote-for-nightscout)
     * [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
 
-## Next Step: Meet the Community
+## Next Step
 
-Now you are ready to [Meet the Community](community.md).
+Now you are ready to build or continue with setting up the *Loop* app.
+
+If you have questions along the way, see [Get Help](../intro/loopdocs-how-to.md).
+
+### Return to Set Up
+
+If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../setup/overview.md#brand-new-loopers) section of the Set Up Overview page.
+
+### Build with Browser
+
+Click here if you want to [Build with Browser](../browser/bb-overview.md).
+
+### Build with *Mac*:
+
+Click here if you want to [Build with *Mac*](../build/overview.md).

@@ -79,20 +79,7 @@ Do not use any of the beta *iOS* versions. (If you are uncertain what that means
 
 ### Developer Mode - *Mac* Build Only
 
-> When you build the *Loop* app using [Build with Browser](../browser/bb-overview.md), you are not required to enable Developer Mode on the phone or watch.
-
-With *iOS* 16 or newer and *watchOS* 9 or newer, *Apple* added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
-
-When you build the *Loop* app on your phone from *Xcode* directly and then transition to or start with *iOS* 16 or newer, you need to have Developer Mode enabled. This is also a requirement to use the *Loop* app on a watch paired to your phone running *watchOS* 9 or newer. You will be told to enable it in the [Build the *Loop* App: Prepare your Phone and Watch](build-app.md#prepare-your-phone-and-watch) instructions.
-
-!!! info "Developer Mode with *iOS* 16 or newer, *watchOS* 9 or newer"
-    If you already have the *Loop* app built with *Xcode* on your phone/watch when you update to *iOS* 16 or newer/*watchOS 9* or newer or newer, you will be told that the *Loop* app requires Developer Mode to run.
-    
-    You will not be able to run the *Loop* app on your phone (or watch) until you have enabled Developer Mode on the device(s).
-
-    ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
-    {align="center"}
-
+If you build with *Xcode* on a *Mac*, the phone (and watch) must have Developer Mode turned on. The steps are in [Build the *Loop* App: Developer Mode](build-app.md#developer-mode). You do not need Developer Mode if you use [Build with Browser](../browser/bb-overview.md).
 
 ## Battery Health
 

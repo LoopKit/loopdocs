@@ -25,6 +25,7 @@
         2. There are more methods for Android
         3. See also [CGM Customization](../faqs/cgm-faqs.md#cgm-customization){: target="_blank" }
     - **"What about Eversense?"** Refer to [*Eversense* E3 and 365 CGM](#eversense-e3-and-365-cgm)
+    - **"Can I use the *Loop* app offline, with *Dexcom Share* or with *Nightscout* as a CGM?"** See [CGM FAQs](../faqs/cgm-faqs.md#can-i-use-the-loop-app-offline){: target="_blank" }
 
 
 ## Continuous Glucose Monitor (CGM)
@@ -73,24 +74,6 @@ Both the Eversense E3 (90 days & 180 days) and the Eversense 365 (full year) tra
 
 Eversense E3 and 365 are implantable continuous glucose monitoring (CGM) systems with a sensor inserted under the skin and a removable on-body transmitter that sends real-time glucose data and alerts to the *Loop* app.
 Unlike traditional CGMs that require frequent sensor changes, Eversense reduces insertion frequency but requires weekly fingerstick calibrations.
-
-
-## Offline Use
-
-"Offline Use" means using the *Loop* app when there is no cell data or internet available. The *Loop* app does not require any special setup to operate offline.
-
-For offline use, the iPhone's Bluetooth still needs to be active; and for *Dexcom* users, the G5, G6 or G7 app also needs to be running on the same phone as the *Loop* app. If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep both the CGM and the *Loop* app running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in the *Loop* app settings when you changed transmitters.
-
-## *Dexcom* Share
-
-The *Loop* app can download *Dexcom* Share data for use in modeling glucose. However, this is not a typical configuration and requires internet connection for both the phone with the *Dexcom* app and the phone with the *Loop* app.  The steps for adding a CGM explain that you usually enter the *Dexcom* transmitter ID and leave the *Dexcom* Share setting blank.
-
-!!! warning "*Dexcom* ONE"
-    The *Dexcom* ONE app does not support Share.
-
-## Nightscout as a Remote CGM
-
-The *Loop* app allows you to use Nightscout as a remote source for CGM data. This requires cell or WiFi connection.
 
 
 ## CGMs Not Supported in the *Loop* App 

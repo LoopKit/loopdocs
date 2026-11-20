@@ -42,7 +42,7 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 
 1. You must use the [Build with *Mac*](../build/overview.md) method to build Loop.
 2. Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.
-3. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](apple-developer.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
+3. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](build-free-loop.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
 4. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overview.md){: target="_blank" } through Nightscout.
 
 ### Paid Developer Account
@@ -58,20 +58,6 @@ If you decide to use a **PAID** developer account, here's what you need to know:
     * If you have a paid developer account, you must build at least once a year
     * If you have a free account, you must build every 7 days
 
-## Switching from Free to Paid Memberships
-
-You can try a free account first before buying a paid developer account. If you start with a free account, you'll build a Loop app (let's call it FreeLoop). When you switch to a paid account, you'll be building a totally new and separate Loop app onto your phone (let's call it PaidLoop). 
-
-The two apps will look identical on your phone and they will both have the name Loop with the same icon, but they will be functionally separate from each other. Make sure you are successful building the PaidLoop app before deleting the FreeLoop app from your phone. Use the search feature on your phone to find both apps.  One will have your configuration settings (FreeLoop), the other will not (PaidLoop).
-
-Before deleting the FreeLoop, either record all the settings or take screenshots of all the relevant settings screens.
-
-PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, ISF, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.
-
-With Loop 3, if you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. 
-
-Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to [Protect that App](build-app.md#protect-that-app), reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.
-
 ## Enrolling
 
 To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
@@ -82,8 +68,7 @@ If you choose to use the free account, you don't have to do anything on that web
 
 ## Next Steps: 
 
-Take the time to read the next three articles. You will be reminded again when you begin to set up your app.
+Take the time to read the next two articles. You will be reminded again when you begin to set up your app.
 
 * [Test Settings](../build/test-settings.md)
 * [Loop Data](../build/loop-data.md)
-* [Meet the Community](../build/community.md)

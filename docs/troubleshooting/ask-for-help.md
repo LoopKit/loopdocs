@@ -1,29 +1,20 @@
-## Meet the Community
+Volunteers answer questions about the *Loop* app. They are not paid. Doing your homework and giving them the details they need gets you a faster answer.
 
-!!! info "Time Estimate"
-    - Read about your [Social Media Options](../intro/loopdocs-how-to.md#how-to-find-help): 5 minutes
-    - Join one or more groups: 10 minutes
+## How to Ask for Help
 
-!!! abstract "Summary"
-    - Learn how to use the search tools explained in [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help)
-    - Learn the motto "Help us help you".
-    - Learn what information helps in solving a problem in building or in using Loop
+If you are having trouble building or using your Loop app, there are some important steps to get responses to your question, while also being considerate of our volunteers' time.
 
-!!! question "FAQs"
-    - **"I'm worried I'll ask a stupid question"** Don't worry. All the mentors started out as novices. Focus instead on asking a **thorough** question. A thorough question explains what you've already tried or read, has screenshots of what you are confused by, and any other details you can provide.
+> If you are in a panic about something, it's ok to post in [`LoopandLearn` Facebook Group](https://www.facebook.com/groups/LOOPandLEARN) without searching all the places listed below. 
+Just explain the situation and someone will give you an answer pretty quickly. For non-panic situations, try searching - you may learn a lot.
 
-## Online Groups
-
-There's a wonderful community of Loopers who are willing to help you through the process. This link on [Social Media Options](../intro/loopdocs-how-to.md#how-to-find-help) walks you through those groups and how to join.
-
-Volunteers provide assistance on building and using the *Loop* app at these sites. None of the people are paid to answer questions or spend time troubleshooting. They simply want to help others. Please decrease their support burden by doing your homework and providing the information they need when requesting help. Please click the image below to watch this video full of tips to make the most of your online resources.
-
-!!! info ""
-    Please watch this video (just under 7 minutes) to learn about using announcements and searches in Facebook groups and the *LoopDocs* pages.
-
-    Note, the *LoopDocs* menus were reorganized after this video was prepared to make it easier to progress through the pages.   
-
-[![img/looped-group.png](img/looped-group.png)](https://youtu.be/_vSN6C-Uo04)
+1. Always search in **both** [LoopDocs](../intro/overview-intro.md#website-search) and your favorite [support group](../intro/loopdocs-how-to.md#how-to-find-help). 
+    * Confused about how to search in a Facebook group? [Here is a video](https://www.youtube.com/watch?v=_vSN6C-Uo04) to help.
+2.  If you use Facebook, click on the Featured posts (at the top of the page); many posts asking for help are already answered there.
+3.  Don't post a duplicate question in multiple groups (mentors monitor many groups). Only post to a different group if you have had no responses for several hours.
+4.  If a LoopDocs search, FB or Zulipchat search, and a check of Looped Group featured posts pinned to the top of the page haven't answered your question, then post for help. Review the [tips for how to post for help](#descriptive-language) so that our volunteers get all the information they'll need to help you, without needing to ask 40 questions first.    
+5.  Leave your question posted even after you've gotten an answer, but edit the original post to add the word **RESOLVED** at the beginning of the original post. 
+    * This helps other Loopers who have the same question
+    * This helps mentors know they don't need to respond to help you
 
 ## Screenshots
 
@@ -95,20 +86,3 @@ Often, the best answer to your question is sending a link to the answer in *Loop
 If you've searched the docs and read relevant info already, please include that in your post or your reply. That way you don't get linked back to the part you are confused about. And if you have already read the specific section a mentor just linked, be specific about why your problem is not addressed by that link.  Or just say "I'm confused when the doc says this". Letting us know when these docs can be improved is very useful.
 
 - - -
-
-## Next Step
-
-Now you are ready to build or continue with setting up the *Loop* app.
-
-### Return to Set Up
-
-If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../setup/overview.md#brand-new-loopers) section of the Set Up Overview page.
-
-### Build with Browser
-
-Click here if you want to [Build with Browser](../browser/bb-overview.md).
-
-### Build with *Mac*:
-
-Click here if you want to [Build with *Mac*](../build/overview.md).
-

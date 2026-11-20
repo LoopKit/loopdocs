@@ -17,3 +17,4 @@ Map to this section:
 * [Apple Health FAQs](../faqs/apple-health-faqs.md)
 * [RileyLink FAQs](../faqs/rileylink-faqs.md)
 * [Glossary](../faqs/glossary.md)
+* [Improve LoopDocs](../faqs/improve-loopdocs.md)
