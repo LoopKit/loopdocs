@@ -50,7 +50,7 @@ Have you turned off automatic updates on your iOS device?
 
 !!! info "Loop and iOS Updates"
 
-    **Please Read**: [Turn Off Automatic Updates](phone.md#turn-off-automatic-updates){: target="_blank" }
+    **Please Read**: [Turn Off Automatic Updates](../intro/phone.md#turn-off-automatic-updates){: target="_blank" }
 
 Before manually accepting an iOS update, be sure you have compatible versions of Xcode and MacOS.  
 

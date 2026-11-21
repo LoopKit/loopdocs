@@ -1,6 +1,6 @@
 ## Overview
 
-The early history of the *Loop* app was touched on in the introductory [*LoopDocs* Overview: Development History](../intro/overview-intro.md#development-history){: target="_blank"} section.
+The early history of the *Loop* app is in [Development History](overview-version.md#development-history){: target="_blank"}.
 
 The [*Loop* Releases](releases.md){: target="_blank"}  page lists releases since version 3.0 in reverse chronological order. For older release history, check out [*Loop* 2 and older](releases-version2.md){: target="_blank"} .
 
@@ -9,10 +9,17 @@ The current released version of the *Loop* app is always in the `main` branch of
 
 ### Relationship with *Tidepool Loop*
 
-*Tidepool Loop* is an independent version of *Loop*. *Tidepool Loop* started with *Loop* code, added safety features, and additional FDA approved device integrations. Much of the *Tidepool Loop* improvements are also published as open source, which volunteers in the community are free to incorporate back into *Loop*. The device integrations for *Tidepool Loop* are generally closed source when required by device manufacturers.
+*Tidepool Loop* is an independent version of *Loop*. *Tidepool Loop* started with *Loop* code, added safety features, and additional FDA-cleared device integrations. Much of the *Tidepool Loop* improvements are also published as open source, which volunteers in the community are free to incorporate back into *Loop*. The device integrations for *Tidepool Loop* are generally closed source when required by device manufacturers.
+
+*Tidepool Loop* and the *Loop* app use different version numbers:
+
+| *Tidepool Loop* | *Loop* app |
+|---|---|
+| 1.0, cleared by the FDA | Similar to *Loop* 3, plus community features |
+| 2.0, submitted to the FDA | Its open-source parts are being brought into `next-dev`, which will become *Loop* 4 |
 
 * In 2019, the non-profit *Tidepool* organization partnered with the JAEB Foundation to review outcomes from volunteers using *Loop*
-    * *Tidepool* successfully submitted *Tidepool Loop* to the Federal Drug Administration as an approved automated insulin delivery system
+    * *Tidepool Loop* was cleared by the U.S. Food and Drug Administration (FDA) as an automated insulin delivery system
     * *Tidepool Loop* is available now, please see their website for more information: [*Tidepool Loop*](https://www.tidepool.org/tidepool-loop)
 * In 2022, some of the *Tidepool* open-source code was brought into the *Loop* project by dedicated volunteers and eventually released as *Loop* 3
     * The traditional OS-AID process of community volunteers providing updates continued throughout
@@ -148,7 +155,7 @@ This section provides an overview of changes since the last release, if any, but
 
 ### Status for `next-dev` Branch
 
-The document linked below provides an overview of updates brought from Tidepool *Loop* to "DIY *Loop*", as found in next-dev.
+The `next-dev` branch brings in updates from the open-source part of *Tidepool Loop* 2.0, along with features added by the *Loop* community. The document linked below gives an overview of what is new.
 
 * [*Loop* DIY: What's new](https://github.com/LoopKit/LoopWorkspace/blob/next-dev/docs/loop-diy-whats-new.md)
 

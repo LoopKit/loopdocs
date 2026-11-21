@@ -35,8 +35,6 @@ If you request a manual bolus with Loop while the pump is suspended, Loop resume
 
 You select [insulin type](../setup/add-pump.md#insulin-type) when connecting to a new Medtronic pump.
 
-If you install Loop 3 over Loop 2 with the pump already configured, be sure to set the Insulin Type on the pump settings screen. If no insulin type is set, you will get red loops.
-
 Use this row if you switch to a different type of insulin.
 
 * The model used by Loop for all the rapid insulin brands are the same, but it's a good idea to record if you change brands - some people notice differences

@@ -29,17 +29,17 @@
 
 To use the *Loop* app, you need:
 
-* [Compatible Phone](../build/phone.md){: target="_blank" }
-* [Compatible CGM](../build/cgm.md){: target="_blank" }
-* [Compatible Pump](../build/pump.md){: target="_blank" }
-    * For pumps that do not support Bluetooth communications (older Medronic and Omnipod Eros), you also need a [RileyLink Compatible Device](../build/rileylink.md){: target="_blank" }
+* [Compatible Phone](../intro/phone.md){: target="_blank" }
+* [Compatible CGM](../intro/cgm.md){: target="_blank" }
+* [Compatible Pump](../intro/pump.md){: target="_blank" }
+    * For pumps that do not support Bluetooth communications (older Medronic and Omnipod Eros), you also need a [RileyLink Compatible Device](../intro/rileylink.md){: target="_blank" }
 
 ### Accounts
 
 To build the&nbsp;_<span translate="no">Loop</span>_&nbsp;app using a browser, you need:
 
 1. Free *GitHub* account: (instructions found at [New *GitHub* Account](secrets.md#new-github-account){: target="_blank" })
-1. Paid *Apple* Developer account: ($99/year; instructions found at [*Apple* Developer Account](../build/apple-developer.md){: target="_blank" })
+1. Paid *Apple* Developer account: ($99/year; instructions found at [*Apple* Developer Account](../intro/apple-developer.md){: target="_blank" })
 
 ## Getting Started: Two Paths
 

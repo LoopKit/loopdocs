@@ -72,14 +72,14 @@ None of the ways listed here are guaranteed to prevent a screaming pod, but they
 
 * Keep the Loop app up to date; newer versions might include improvements to reduce pod battery load
 * Maintain a wider correction range (10 to 20 mg/dL; 0.5 to 1.1 mmol/L) instead of a single number
-* Loop Version 3, for Eros pods when used with a RileyLink Device that has a lot of communication errors, will send many repeated messages trying to resolve uncertain communications
+* The *Loop* app, for Eros pods when used with a RileyLink Device that has a lot of communication errors, will send many repeated messages trying to resolve uncertain communications
     * Make sure your RileyLink Device is working well
     * Use a 433 Mhz RileyLink for Eros Pods and ensure the antenna is not loose or pinched
 
 ## Replacement Pod Situations
 
 !!! abstract "Help Insulet Improve their Quality Control"
-    Insulet is aware that pods are used by the DIY community. You can be honest about your use and might receive replacement pods. If your pod fails early, it is worth informing Insulet for their troubleshooting records even if you do not get a replacement.
+    Insulet is aware that pods are used by the open-source community. You can be honest about your use and might receive replacement pods. If your pod fails early, it is worth informing Insulet for their troubleshooting records even if you do not get a replacement.
 
 You can always call Insulet tech support if a pod has a clear failure on the pod, such as:
 
@@ -89,4 +89,4 @@ You can always call Insulet tech support if a pod has a clear failure on the pod
 * The adhesive was not working properly when trying to place it on your body.
 * The pod begins to scream during filling, pairing, priming or insertion
 
-If the pod fails during use with Loop, a replacement might still be possible. The software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, asking for replacement for failed pods on the third day of pod life is a bit of a reach for the DIY community. We acknowledge that Looping may be a contributor in certain faults, especially by the third day.
+If the pod fails during use with Loop, a replacement might still be possible. The software which communicates with the pod isn't developed or supported by Insulet. Generally speaking, asking for replacement for failed pods on the third day of pod life is a bit of a reach for the open-source community. We acknowledge that Looping may be a contributor in certain faults, especially by the third day.

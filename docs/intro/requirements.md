@@ -1,80 +1,83 @@
 ## Two Ways to Build the App
 
-With the release of&nbsp;_<span translate="no">Loop 3</span>_&nbsp;, there are two ways to build the app.
-
-* If you have never built&nbsp;_<span translate="no">Loop</span>_&nbsp;before:
-    * If you already own a Mac then you may prefer the Build with Mac method
-    * For all others, you will probably prefer the Build with Browser method
-
-The Build Steps have been split into two tabs:
+You get the same app either way:
 
 * [Build with Browser](../browser/bb-overview.md)
     * Build with a browser on any computer or tablet
-    * App is installed on the iPhone using *TestFlight*
+    * The app installs on your iPhone with *TestFlight*
+    * Most new builders choose this method
 * [Build with *Mac*](../build/overview.md)
-    * App is built on a *Mac* with *Xcode* connected to the iPhone
-    * The operating system on the *Mac* and the version of *Xcode* must be kept up-to-date
+    * Build on a *Mac* with *Xcode*, with your iPhone connected
+    * You must keep *macOS* and *Xcode* up to date
+    * Consider this method if you already own a *Mac*
 
-There are some requirements common to both methods. Some requirements are specific to only one method.
+!!! warning "Best Practice: Learn to Build"
+    Build the&nbsp;<span translate="no">Loop</span>&nbsp;app yourself.
+
+    * _<span translate="no">LoopDocs</span>_&nbsp;does not link to services that build the app for you
+    * If you use one anyway, first read&nbsp;_<span translate="no">LoopDocs</span>_, learn how to set up and operate the app, and ask which features of the open-source app their version leaves out
+    * **These steps are important for your safety**
 
 ## Common Requirements
 
-These requirements are independent of how you build the Loop app:
+You need these whichever way you build:
 
-1. [Compatible iPhone](../build/phone.md)
-1. [Compatible Pump](../build/pump.md)
-1. [Compatible CGM](../build/cgm.md)
-1. [RileyLink Compatible Device](../build/rileylink.md)
-    * Not needed with Omnipod DASH or SOOIL Dana pumps (i or RS)
+1. [Compatible iPhone](phone.md)
+1. [Compatible Pump](pump.md)
+1. [Compatible CGM](cgm.md)
+1. [RileyLink Compatible Device](rileylink.md)
+    * Not needed with Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi
     * Required for Medtronic and Omnipod Eros
-1. [Apple Developer Membership](../build/apple-developer.md)
-    * If building for a child, be sure to read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
-    * Build with Browser - requires a paid developer account
-    * Build with *Mac* - can build a free version with some limitations and must rebuild weekly
+1. [Apple Developer Membership](apple-developer.md)
+    * Building for a child? Read [Loopers Need Their Own Apple ID](apple-developer.md#loopers-need-their-own-apple-id)
+    * Build with Browser needs a paid account
+    * Build with *Mac* can use a free account, but you must rebuild every 7 days
 
 ### Added Requirements to [Build with Browser](../browser/bb-overview.md){: target="_blank" }
 
-If you plan to build using the Build with Browser instructions, you also need:
-
-1.  A free *GitHub* account
-
-Detailed instructions are included in the link above.
+* A free *GitHub* account
 
 ### Added Requirements to [Build with *Mac*](../build/overview.md){: target="_blank" }
 
-If you plan to build using the Build with *Mac* instructions, you also need:
+* A [Compatible Computer](../build/computer.md#check-your-macos-version)
+* [Xcode](../build/xcode-version.md) (free from *Apple*)
 
-1. [Compatible Computer](../build/computer.md#check-your-macos-version)
-1. [Xcode](../build/xcode-version.md) (a free Apple application)
+## Cost and Time
 
+#### Cost
+
+Beyond your pump, CGM, supplies and insulin, plan for these costs:
+
+| Item | Cost | Notes |
+|---|---|---|
+| *Apple* Developer Program | $99 per year | Required for Build with Browser; Build with *Mac* can use a free account if you rebuild every 7 days |
+| *GitHub* account and *Xcode* | Free | |
+| *Nightscout* (optional) | Free or a small cost if you build it yourself, or a monthly fee from a provider | See [Loop Data](loop-data.md) |
+| RileyLink compatible device | About $150 each, one time | Only for Medtronic and Omnipod Eros; a spare is recommended |
+
+#### Time
+
+| Step | Time |
+|---|---|
+| Check your phone, pump and CGM | Less than an hour |
+| Enroll in the *Apple* Developer Program | 15-20 minutes, then up to 2 days for *Apple* to confirm |
+| Build the app | A few hours, which you can spread over several days |
+| Test your settings | 1-3 days, in Open Loop |
+| Order a RileyLink compatible device, if needed | 15 minutes, plus shipping |
 
 ## Getting Ready to Build
 
-Go through the Common Requirements to see what you need to actually Loop.
-
 !!! tip "Simulator Option"
-    If you want to test the Loop app without attaching CGM or pump hardware, you can run a simulated CGM or simulated pump. You can use actual CGM data using Dexcom Share or Nightscout as a Remote CGM.
+    You can try the *Loop* app with a simulated CGM and pump, without any hardware. You can also give it real CGM data from *Dexcom Share* or *Nightscout*.
 
-    These simulators are part of the Loop app and are available with either build method you choose.
+    Simulators work with either build method. They stop working when the phone is locked or the app is in the background, because only a real pump or CGM can wake the app.
     
-    Check out the [Simulator](../version/simulator.md){: target="_blank" } page.
+    See [Simulator](../version/simulator.md){: target="_blank" }.
 
-Once you have chosen your Build Method, go through the pages for that build method several times before beginning, especially if this is new to you.
+Read the pages for your build method more than once before you start. Then work through them at your own pace. If you get confused, [ask for help](../intro/loopdocs-how-to.md#how-to-find-help).
 
-When you are ready to proceed, work through the tasks on each page. Take your time. You can do one a day, take a week per page or blaze through them quickly.  Just be sure to read carefully and if you are confused - reach out for help: [How to Find Help](../intro/loopdocs-how-to.md#how-to-find-help).
+After you build, continue with [Set Up](../setup/overview.md) and [Operate](../operation/loop/open-loop.md).
 
-After you build Loop on your phone, keep following along in the docs as you [Set up](../setup/overview.md) and [Operate](../operation/loop/open-loop.md) your Loop app.
+## Next Step
 
-## Next Steps:
-
-### Review the Common Requirements
-
-Before you start either build method, review the Common Requirements. First one is [Compatible iPhone](../build/phone.md). On each page, keep clicking Next (or n) until you've finished with the Intro pages and are ready to Build.
-
-### Build with Browser
-
-Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with Browser](../browser/bb-overview.md).
-
-### Build with *Mac*
-
-Click on the link if you are done reviewing the common requirements and you want to skip ahead to [Build with *Mac*](../build/overview.md).
+Start with [Compatible iPhone](phone.md), then use Next (or the `n` key) to go through the rest of the Intro pages. If you have already reviewed them, go to [Build with Browser](../browser/bb-overview.md) or [Build with *Mac*](../build/overview.md).

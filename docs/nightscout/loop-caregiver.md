@@ -40,7 +40,7 @@ The Build with Browser method is documented on the [Build Other Apps with Browse
 
 ### Build with *Mac*
 
-A build script is available to assist in building *LoopCaregiver*. This should be straightforward for anyone who has previously built &nbsp;<span translate="no">Loop 3</span>&nbsp; using the script.
+A build script is available to assist in building *LoopCaregiver*. This should be straightforward for anyone who has previously built the&nbsp;<span translate="no">Loop</span>&nbsp;app using the script.
 
 - Open a terminal window. 
 - Spot the line below that starts with `/bin/bash`

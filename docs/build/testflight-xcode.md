@@ -63,7 +63,7 @@ It's a mix of the two: built on your Mac like [Mac-Xcode Build](build-app.md#bui
 * **TestFlight builds expire after 90 days.** An expired app won't open, so automation stops. Set a calendar reminder to build again well before then, and keep a backup plan for diabetes care.
 * **Xcode is still there.** Option 1 opens Xcode exactly as before.
 * **If the upload fails,** the script lists the usual causes and opens Xcode so you can retry and see a clearer error.
-* **Need help?** You can [get help from your favorite site for build help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank" }
+* **Need help?** You can [get help from your favorite site for build help](../troubleshooting/ask-for-help.md){: target="_blank" }
 
 
 ## Manual Method to Upload to TestFlight

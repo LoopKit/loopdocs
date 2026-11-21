@@ -6,7 +6,7 @@ Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go thr
 
 ### Remote Commanding Requirements:
 
-* &nbsp;_<span translate="no">Loop</span>_&nbsp;version 3..0 or newer
+* &nbsp;_<span translate="no">Loop</span>_&nbsp;version 3.0 or newer
     * version 3.0 works but is not recommended for other reasons
 * <span translate="no">Apple Push Notifications</span>&nbsp; (</span>&nbsp;APN</span>&nbsp;) created with the &nbsp;<span translate="no">Apple Developer ID</span>&nbsp; that built the&nbsp;_<span translate="no">Loop</span>_&nbsp;app
 * *Nightscout* version 14.2.6 or newer, but the released version 15.0.2 is recommended
@@ -16,7 +16,7 @@ Remote commands to the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone go thr
 !!! question "What about Older Versions?"
     Caregivers for those using older versions of Loop can modify `Overrides` remotely but cannot send remote bolus or carb commands.
 
-    If your *Nightscout* site is an older version, you should limit your remote commands to `Overrides`, even with &nbsp;<span translate="no">Loop 3</span>.
+    If your *Nightscout* site is an older version, you should limit your remote commands to `Overrides`, even with a current&nbsp;<span translate="no">Loop</span>&nbsp;app.
 
 !!! tip "&nbsp;*LoopCaregiver*"
     There is a new companion app, &nbsp;[*LoopCaregiver*](loop-caregiver.md) that makes remote commands and reviewing the status of your looper much easier.

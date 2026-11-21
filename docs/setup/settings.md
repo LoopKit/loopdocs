@@ -138,7 +138,7 @@ If you choose to share usage data, it is collected anonymously. The choices are:
 
 ### Algorithm Experiments
 
-The Algorithm Experiments are new with Loop 3.4 and we recommend you review the details on the [Features](features.md) new with Loop 3 page. Many people have tested these and like them, but you need to decide whether to enable them.
+The Algorithm Experiments are new with Loop 3.4 and we recommend you review the details on the [Features](features.md) page. Many people have tested these and like them, but you need to decide whether to enable them.
 
 * [Glucose Based Partial Application (GBPA)](features.md#glucose-based-partial-application-gbpa)
     * Affects speed of Automatic Bolus delivery when enabled
@@ -182,12 +182,12 @@ Please refer to the [Optional: Service](services.md) page.
 
 The Support section provides access to several methods to Report a Problem. This provides access for viewing or sharing a Loop Report or Critical Event Log or opening a GitHub Issue (Submit Bug Report). If your build is v3.14.9 or older, see [Report Problems for v3.14.9 or older](#report-problems-for-v3149-or-older)
 
-![settings support screen](../loop-4/img/setting-report-problem.svg){width="500"}
+![settings support screen](img/setting-report-problem.svg){width="500"}
 {align="center"}
 
 * If you are an expert tester, you will find [Send to Loop Developers](#send-to-loop-developers) an incredibly helpful feature
 * If you are a novice to reporting problems, check with a mentor to see if your problem is something that is understood
-    * See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
+    * See [How to Ask for Help](../troubleshooting/ask-for-help.md){: target="_blank"}
     * You can use [Share a Diagnostic Report](#share-a-diagnostic-report) or [Export Critical Event Logs](#export-critical-event-logs) and save them for yourself for later submission if a mentor suggests you need to do this
 
 
@@ -197,10 +197,10 @@ When you tap on the Send to Loop Developers row, you see a screen like that belo
 
 **PLEASE - do not use this form if you are having trouble building the app or configuring your settings.**
 
-* See [How to Ask for Help](../intro/loopdocs-how-to.md#how-to-ask-for-help){: target="_blank"}
+* See [How to Ask for Help](../troubleshooting/ask-for-help.md){: target="_blank"}
 
 
-![settings support screen](../loop-4/img/setting-send-to-developers.svg){width="500"}
+![settings support screen](img/setting-send-to-developers.svg){width="500"}
 {align="center"}
 
 ### Share a Diagnostic Report
@@ -209,7 +209,7 @@ The Diagnostic Report referred to here is the Loop Report that used to be offere
 
 When you tap on the Share a Diagnostic Report row, you see the important build details as shown in the screenshot below. Just viewing the report can answer questions about what version you are running, what customizations you use if any. Tap on the up-arrow on the upper right of the screen to share this report.
 
-![diagnostics report screen](../loop-4/img/view-diagnostic-report.png){width="400"}
+![diagnostics report screen](img/view-diagnostic-report.png){width="400"}
 {align="center"}
 
 It's a good idea to use the `Share a Diagnostic Report` button and save it along with a screenshot if you think you will ask for help.  You can always discard these if you resolve the problem on your own.

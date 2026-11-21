@@ -1,6 +1,6 @@
 ## Compatible Pump
 
-!!! info "Time Estimate"
+!!! info "Before You Start"
     - Omnipod users: Omnipod Pod Types of Omnipod 5, DASH and Eros (Classic) are compatible
     - Medtrum Nano users: both 200 U and 300 U patches are supported
     - Medtronic users: 10 minutes to put a battery in and look at model and firmware
@@ -16,7 +16,7 @@
         - If you use [Dana](#sooil-dana-pumps) - check which kind
 
 !!! question "FAQs"
-    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](#finding-a-medtronic-pump).
+    - **"How can I find a compatible Medtronic pump?"** Refer to [Finding a Medtronic Pump](../faqs/loop-faqs.md#finding-a-medtronic-pump).
     - **"What are the differences between Medtronic pump models?"** This question is answered in the [Extra Details](#extra-details-on-medtronic) section.
     - **"But what about the other types of pumps?"** Only the pumps listed in Summary work with the *Loop* app at this time.
         - There are other open-source closed loop options such as [AAPS: Android Artificial Pancreas System](https://androidaps.readthedocs.io/en/latest/index.html) and [OpenAPS](https://openaps.readthedocs.io/en/latest/) that support other pumps
@@ -36,7 +36,7 @@ These types of pumps are compatible with the *Loop* app.
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 
-You must build a special branch to test some pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
+Some pumps need a special branch. Only test them if you are willing to update often, pay close attention and go back to open loop when needed.
 
 * [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress, included in `feat/all-managers` branch)
 * [Tandem Mobi](#tandem-mobi) (in open beta, work in progress)
@@ -130,7 +130,7 @@ Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a 
 
 ### Medtronic Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compatible.
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with open-source automated insulin delivery (OS-AID) systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compatible.
 
 !!! note ""
 
@@ -173,56 +173,6 @@ If you are in the position of being able to choose from different pump models, t
 
 * The x23/x54 series pumps are also faster at delivering boluses greater than 10 units.  On an x23 pump, a 13-unit bolus takes 5:00 minutes to complete.  On an x22 pump, a 13-unit bolus takes 8:40 minutes to complete.
 
-### Finding a Medtronic Pump
-
-Finding a compatible Medtronic pump is probably the most difficult part for most new Loopers.  Our suggestions:
-
-* Talk to friends in the diabetes community.
-
-* Ask your endocrinologist.  
-
-* Ask at a local JDRF chapter meeting if someone has an old backup pump they'd be willing to donate to you.  
-
-* Join diabetes supply groups on Facebook; both for-trade and for-sale groups.  
-
-* Check Craigslist often and be willing to expand your search area to include larger cities.
-
-* Check out the **HelpAround, NextDoor, OfferUp, and/or LetGo** apps for pumps.
-  
-* [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/)
-
-The most success appears to come from either one-on-one discussions with people with diabetes, your doctors or using apps (Craigslist, NextDoor, LetGo, HelpAround).  If you are using Craigslist, you may wish to use an app on your iPhone to make the searching easier.  There are apps to search multiple cities at once for your keywords and set up alerts.
-
-![Craigslist](img/craigslist.png)
-
-### Safe Purchasing
-
-If you choose to purchase from a remote or unknown seller, here are some tips for safe purchasing:
-
-* Use PayPal and purchase using the "Goods and Services" payment option. This costs nothing for the buyer, but the seller will lose 2.95% of the sale to PayPal fees. PayPal offers some protection for both buyer and seller in the event of fraud.  
-
-* Ask for photos of the pump. Check to make sure the serial number of the pump on the back matches the serial number of the pump showing in the display menu. Ask for a short video of the pump, or at least a photo of the pump turned on, so that you can see the pump's firmware and model number. Cracks and some wear on these pumps are expected. These pumps are not usually free of marks. Many people are successfully looping on pumps that have cracks and rub marks, but you may want to ask if you are concerned about any you see in photos.
-
-* Beware if the bottom of the reservoir/motor sleeve has the drive support cap pushed out, as shown [here](../troubleshooting/pump-errors.md#motor-error). Those pumps will generally not work (or only work intermittently), however, some people have successfully repaired those pumps as shown in that link. Just be aware that it should be checked in advance.
-
-* Repairs to cracks or missing bits of plastic on battery cap area and reservoir caps are possible and not very difficult in most situations. You can read more about how to repair those [here](../troubleshooting/pump-errors.md#crackmissing-piece-repairs).
-
-* Ask for shipping that includes a tracking number. USPS Priority Mail's smallest box is a great option.  It's only $7.20 domestically in the US and includes tracking. Ask the seller to add a small bit of packing protection such as bubble wrap around the pump to keep it safe during shipping. Make sure you get a tracking number within a reasonable period of time after you have paid.  
-
-Red flags that may indicate a scam:
-
-* Asking for payment through "friends and family" on PayPal, especially if you don't know the person or have any solid references for them. Paying in that way offers you no buyer protection. It's just like giving the seller cash, so you had better trust the seller.  
-
-* Offering an "almost new" pump is a big red flag in the US. Do you really think a more than 10-year old pump would be unused and sitting in shrink wrap at this point? This seems highly suspicious. There are some out there, but they are very rare.
-
-* Inability to provide new pictures of the pump when requested. Sure they posted some pictures with the ad, but what if they just downloaded them from other people's ads? The seller should be able to furnish a couple of "new" photos at your request. A good one to ask for is the battery and reservoir tops so you can see their condition.
-
-### Pump Supplies
-
-Medtronic will not typically sell pump supplies directly to customers who have not previously purchased a registered Medtronic pump. Ask your insurance about purchasing pump supplies through a durable medical equipment (DME) provider. Typically, the DME provider will coordinate with your insurance and doctor's office to get the necessary insurance approval and prescriptions for the supplies. If you are brand new to Medtronic infusion sites, you may want to ask for help from friends to try a variety of infusion sets before purchasing a full 90-day supply of any type in particular.
-
-- - -
-
 ## Sooil Dana pumps
 
 !!! warning "You must build a feature branch to use Dana pumps"
@@ -246,7 +196,7 @@ The Dana-i is the latest and greatest from the Korean pump manufacturer Sooil, r
 
 ### DanaRS
 
-The DanaRS was first released in 2002, with firmware version v1 which is not supported at this time. Only firmware version v3 and onwards are supported with the *Loop* app.
+DanaRS pumps with firmware version v1 are not supported. Only firmware version v3 and newer are supported with the *Loop* app.
 [Check here](../setup/add-pump.md#dana-i-danars-v3-setup) to see how to check your firmware version.
 
 ![DanaRS-v3](img/danars.png){width="250"}
@@ -257,7 +207,7 @@ The DanaRS was first released in 2002, with firmware version v1 which is not sup
 
 
 !!! warning "You must build a feature branch to use Tandem Mobi"
-    Tandem Mobi is in open beta. Please use the [`feat/tandem-next-dev` feature branch](../version/development.md#tandem-mobi-open-beta){: target="_blank" }.
+    Tandem Mobi is in open beta. Use the [`feat/tandem-next-dev` feature branch](../version/development.md#tandem-mobi-open-beta){: target="_blank" }.
     
     * You must follow [zulipchat Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)
 
@@ -289,4 +239,4 @@ For step-by-step instructions, see [Tandem Mobi Setup](../setup/add-pump.md#tand
 
 ## Next Step: Compatible CGM
 
-Now you are ready to check if you have a [Compatible CGM](cgm.md).
+Next, check that you have a [Compatible CGM](cgm.md).

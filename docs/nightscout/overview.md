@@ -20,7 +20,7 @@ For caregivers, *Nightscout* enables remote monitoring and even the ability to i
         * [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
 
 
-*Nightscout* is useful for many who use *Loop*. Adults who take care of themselves find the reports and analysis methods from *Nightscout* provide effective tools to monitor their settings and provide reports for their health care provider. It also stores *Loop* configurations so they can be reviewed. With *Loop 3*, the saved *Nightscout* profiles can be downloaded to a new *Loop* installation or a new phone for quick onboarding, should you ever need to start fresh.
+*Nightscout* is useful for many who use *Loop*. Adults who take care of themselves find the reports and analysis methods from *Nightscout* provide effective tools to monitor their settings and provide reports for their health care provider. It also stores *Loop* configurations so they can be reviewed. The saved *Nightscout* profiles can be downloaded to a new *Loop* installation or a new phone for quick onboarding, should you ever need to start fresh.
 
 Setting up a *Nightscout* site is described in a separate web site: [*Nightscout*: Documentation](https://nightscout.github.io).
 
@@ -44,7 +44,7 @@ There used to be a lot of *Nightscout* information found only in *LoopDocs*, but
 
 ## *Nightscout* with *Loop*
 
-This page provides a general discussion about the *Nightscout* display, as well as some *Loop*-specific display information. Over time, interactions between *Loop* and *Nightscout* were improved. The information on this page has been updated for *Loop 3* and *Nightscout* version 14.2.6 (or later). Older versions may exhibit some differences in the display of *Loop* information on the *Nightscout* site.
+This page provides a general discussion about the *Nightscout* display, as well as some *Loop*-specific display information. Over time, interactions between *Loop* and *Nightscout* were improved. The information on this page has been updated for *Loop* v3.0 or newer and *Nightscout* version 14.2.6 (or later). Older versions may exhibit some differences in the display of *Loop* information on the *Nightscout* site.
 
 ### *Loop* Uploads to *Nightscout*
 
@@ -52,7 +52,7 @@ The *Nightscout* display updates when the *Loop* phone is connected to the inter
 
 *Pills* are the little information boxes. They are [*Nightscout*: Plugins](https://nightscout.github.io/nightscout/setup_variables/#plugins) that must be enabled with configuration variables and then the display for each *pill* can be turned on or off within your *Nightscout* site.
 
-If upload to *Nightscout* is interrupted, *Loop 3* stores up to 7 days of *Nightscout* information in a local buffer on the phone, and will attempt to upload later when access is restored. Once access is restored, a stale *Loop* Pill may require 15 minutes before it will open to display additional *Loop* information.
+If upload to *Nightscout* is interrupted, The *Loop* app stores up to 7 days of *Nightscout* information in a local buffer on the phone, and will attempt to upload later when access is restored. Once access is restored, a stale *Loop* Pill may require 15 minutes before it will open to display additional *Loop* information.
 
 The Carb *pill* on the *Nightscout* site is populated by *Loop* when *Loop* is actively uploading to *Nightscout* - but it may lag the value displayed in the *Loop* *pill* by one loop cycle and it will display 0 COB within 5 to 10 minutes if the upload is interrupted. In other words, if the COB *pill* shows 0 unexpectedly and *Loop* *pill* is active, you can believe the value shown in the *Loop* *pill*.
 

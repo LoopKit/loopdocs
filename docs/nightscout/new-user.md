@@ -17,8 +17,8 @@
 
 Please visit [Nightscout: Documentation](https://nightscout.github.io) to read about Nightscout. There are several options, mentioned in that documentation, for setting up your Nightscout site.
 
-* You can choose one of many free (except for your time) DIY methods
-* You can choose one of many DIY methods where you pay a monthly fee for data storage
+* You can choose one of many free methods you set up yourself (they cost only your time)
+* You can choose one of many methods you set up yourself and pay a monthly fee for data storage
 * You can choose a managed site (for a monthly fee) that creates your site, keeps the software up to date and provides data storage
 * Social Media sites for announcements, help and discussion:
     * [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group
@@ -28,7 +28,7 @@ Please visit [Nightscout: Documentation](https://nightscout.github.io) to read a
 Once your Nightscout site is operational and you've read the information about using your site, return to LoopDocs to follow the directions on the [LoopDocs: Nightscout with Loop](update-user.md) page.
 
 !!! tip "Comments"
-    Most of the free DIY methods provide sufficient storage for a single Loop user, but will require you to delete older data after a year or two of use. The one exception is the Google Cloud method which includes multiple GB of storage.
+    Most of the free self-hosted methods provide sufficient storage for a single Loop user, but will require you to delete older data after a year or two of use. The one exception is the Google Cloud method which includes multiple GB of storage.
 
     If there are multiple Loopers in your family and you want to stay in the "free" tier, each will need their own site to stay under the monthly usage limitations. That means an account for each user under different email addresses for each user.
 

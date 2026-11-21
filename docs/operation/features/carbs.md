@@ -41,8 +41,6 @@ To start a new meal entry, tap on the green plate icon (circled below) in the to
 
 ### Meal Entry
 
-The steps and graphics in this section are for users of Loop 3.
-
 Tap the meal entry icon on the toolbar to open the **Add Carb Entry** screen:
 
 1. Enter number of grams of carbs in the Amount Consumed row (keyboard appears automatically)
@@ -130,13 +128,11 @@ The information about the next row: [Absorption Time](#absorption-time) is also 
         * Verify food absorption time when you are done
         * If you know you want to keep the 3 hour absorption time, tap the taco icon on the main screen before entering food emojis
 
-!!! warning "Loop 3 Absorption Times"
-    If you switched to Loop 3 from Loop 2.2.x, please be aware that absorption times for the Lollipop, Taco, Pizza icons have been updated.
-
-    * Loop 3 uses 30 minute, 3 hours and 5 hours
+!!! info "Absorption Times"
+    The Lollipop, Taco and Pizza icons use absorption times of 30 minutes, 3 hours and 5 hours.
 
 !!! warning "Beware using Lollipop for Complex meals"
-    If you select the Lollipop icon for a large complex meal with Loop 3, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.
+    If you select the Lollipop icon for a large complex meal, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.
 
     If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.
 
@@ -262,7 +258,7 @@ The information available on the Carbohydrates screen disappears for any meals o
 
 ## Nightscout Entries
 
-With Loop 3, a caregiver can add remote carbs and perform remote bolus through Nightscout, but that requires set-up between the caregiver and Loopers phone and use of the [Remote Carb and Remote Bolus](../../setup/features.md#remote-carb-bolus) entries in the Careportal.
+A caregiver can add remote carbs and perform remote bolus through Nightscout, but that requires set-up between the caregiver and Loopers phone and use of the [Remote Carb and Remote Bolus](../../setup/features.md#remote-carb-bolus) entries in the Careportal.
 
 If you enter carbs (not remote carbs) into the Careportal, they are not read by Loop and will not be reflected in COB.
 

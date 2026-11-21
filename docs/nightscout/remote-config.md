@@ -78,7 +78,7 @@ LOOP_PUSH_SERVER_ENVIRONMENT = production
 
 You can use the *Nightscout* site to remotely set and cancel override presets remotely in the *Loop* app.
 
-With &nbsp;<span translate="no">Loop 3</span>, you can also send remote commands to add carbs and command a bolus. **Remote bolus/carb commands** have a minimum requirement of &nbsp;<span translate="no">**Nightscout 14.2.6**</span>. If your Looper's *Nightscout* version does not meet that minimum requirement, remote commands **might** be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone.
+You can also send remote commands to add carbs and command a bolus. **Remote bolus/carb commands** have a minimum requirement of &nbsp;<span translate="no">**Nightscout 14.2.6**</span>. If your Looper's *Nightscout* version does not meet that minimum requirement, remote commands **might** be accepted, but the time for the commands is always the current time. In other words, Carbs in the Past or Future might be accepted, but would be entered at the current time on the&nbsp;_<span translate="no">Loop</span>_&nbsp;phone.
 
 After you complete the configuration, read the entire [Remote Commands](remote-commands.md) page - pay attention to the warnings and caveats. Test this while your Looper is sitting next to you so you can watch their phone.
 
