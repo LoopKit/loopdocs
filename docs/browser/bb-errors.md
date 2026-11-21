@@ -56,7 +56,7 @@ Mentors can go to your public&nbsp;_<span translate="no">GitHub repository</span
 * Do not take a screenshot of what you think is an error
 
 !!! tip "GitHub URL, Not Pictures"
-    If you've been around the DIY community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**.
+    If you've been around the open-source community for a while, you know the mantra about screenshots. Well, when using a browser to build, **screenshots are close to useless**.
 
     All that is needed to assist is your link to the *GitHub* repository where you are building.
 

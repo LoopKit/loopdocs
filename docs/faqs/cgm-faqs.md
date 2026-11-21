@@ -162,7 +162,7 @@ Yes. The *Loop* app allows you to use Nightscout as a remote source for CGM data
 
 > Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 
-If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the *xDrip4iOS* DIY CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
+If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the open-source *xDrip4iOS* CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
 
 If possible, it is recommended that *Libre* users take advantage of [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/blob/main/readme.md) which is incorporated into the *Loop* app for version 3.4 and later. However, some *Libre* sensors have encryption that limits ability to get data through open-source code and instead requires using the *LibreLinkUp* server.
 

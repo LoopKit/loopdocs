@@ -15,7 +15,7 @@ You get the same app either way:
     Build the&nbsp;<span translate="no">Loop</span>&nbsp;app yourself.
 
     * _<span translate="no">LoopDocs</span>_&nbsp;does not link to services that build the app for you
-    * If you use one anyway, first read&nbsp;_<span translate="no">LoopDocs</span>_, learn how to set up and operate the app, and ask which DIY features their version leaves out
+    * If you use one anyway, first read&nbsp;_<span translate="no">LoopDocs</span>_, learn how to set up and operate the app, and ask which features of the open-source app their version leaves out
     * **These steps are important for your safety**
 
 ## Common Requirements

@@ -8,7 +8,7 @@ This repository contains the source files for [Loop's](https://github.com/LoopKi
 
 *LoopDocs* focuses on documenting the latest release and the `dev` branch:
 - [What is Loop?](https://loopkit.github.io/loopdocs/#what-is-loop)
-    > The *Loop* iOS app is a Do-It-Yourself closed-loop algorithm.  
+    > The *Loop* iOS app is an open-source automated insulin delivery (OS-AID) app.  
     > It works together with your CGM, Pump, (and Radio-link device) to manage your insulin delivery by predicting Blood Glucose outcomes.
 - [Overview](https://loopkit.github.io/loopdocs/intro/overview-intro/)
 - [**Requirements**](https://loopkit.github.io/loopdocs/intro/requirements/)

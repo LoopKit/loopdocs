@@ -3,7 +3,7 @@
 Volunteers answer questions about the *Loop* app in these places:
 
 * [`LoopandLearn` Facebook Group](https://www.facebook.com/groups/LOOPandLEARN): many active mentors help with iOS open-source apps like the *Loop* app
-* [The Looped Group](https://www.facebook.com/groups/TheLoopedGroup): the original Facebook group for DIY looping
+* [The Looped Group](https://www.facebook.com/groups/TheLoopedGroup): the original Facebook group for open-source looping
 * [Loop Zulipchat](https://loop.zulipchat.com): for people who prefer not to use Facebook, and for following what is coming next; subscribe to all the channels so you don't miss conversations
 * [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud): Facebook group for *Nightscout* help
 * Users in Italy, Australia and several other countries have their own Facebook groups

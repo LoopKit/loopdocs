@@ -130,7 +130,7 @@ Some pumps may have an “L” or “S” or "R" before the pump region, e.g. a 
 
 ### Medtronic Pump Firmware
 
-A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with these DIY closed-loop systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compatible.
+A pump’s firmware is the internal software that runs your pump.  Older Medtronic firmware allows the *Loop* app to act as a “remote control” to set temporary basal rates and report back pump data.  Newer firmware disabled that “remote control” access and therefore cannot be used with open-source automated insulin delivery (OS-AID) systems.  There is currently no ability to downgrade a pump’s firmware or replace it with older firmware.  Before you buy a used pump, make sure the pump firmware is compatible.
 
 !!! note ""
 

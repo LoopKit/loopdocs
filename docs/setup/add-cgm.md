@@ -16,7 +16,7 @@ Loop can be connected to the following CGMs:
         * [Dexcom G6 or ONE](#dexcom-g5-g6-one)
         * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
         * [Libre](#libre) **(v3.4 or newer)**
-            * Only some Libre sensors are supported; some have encryption that limits DIY use
+            * Only some Libre sensors are supported; some have encryption that blocks use with open-source apps
             * Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
         * [Eversense E3/365](#eversense-e3365) **v3.14.2 or newer**
     * CGMs that require active internet (WiFi or Cell)
@@ -34,7 +34,7 @@ Loop can be connected to the following CGMs:
         * [Dexcom G7, ONE+ or Stelo](#dexcom-g7-or-one), with or without the *Dexcom* app
         * [Libre](#libre)
             * *Libre* 3 and 3 Plus are supported
-            * Older *Libre* sensors work the same as in *Loop* 3; some have encryption that limits DIY use
+            * Older *Libre* sensors work the same as in *Loop* 3; some have encryption that blocks use with open-source apps
         * [Eversense E3/365](#eversense-e3365)
     * CGMs that require active internet (WiFi or Cell)
         * [*Dexcom Share*](#dexcom-share-as-a-cgm)

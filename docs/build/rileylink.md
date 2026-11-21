@@ -14,7 +14,7 @@
     - Order your compatible device
 
 !!! question "FAQs"
-    - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Other DIY Loopers have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
+    - **What is a RileyLink Compatible Device?** RileyLink refers to both the communication protocol and the name of the original device. Community members have created [RileyLink Compatible Devices](rileylink.md#rileylink-compatible-devices) that use the RileyLink protocol. All these devices can be used interchangeably with the *Loop* app to support Eros and Medtronic use.
     - **Do I have to buy one?** These are open-source hardware devices, but it takes special skills to build them yourself. It is recommended you buy one (or two) if you require it. At the current time, new OrangeLink and EmaLink devices are available for purchase. Used devices are often available on this Facebook Group: [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945/). **Not needed for Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi**
     - **"What happens if I lose my RileyLink compatible device or walk away from it?"** Within a half hour, your pump returns to the normal scheduled basal rate
     - **"Can I swap out RileyLink compatible devices at any time?"** Yes, you can. You do not need to start a new pod or rebuild the *Loop* app. Tap on the pump menu in settings to search for new devices. You can swap between compatible devices.
@@ -72,7 +72,7 @@ Sections of interest include:
 
 While you are waiting for the RileyLink compatible device to arrive, you can proceed with these build directions and can try one of the [Simulated Loop](../version/simulator.md){: target="_blank" } options. After that, unless you are using pump that communicates directly with Bluetooth, you'll have to wait for your device.
 
-The population of DIY loopers (Loop and Android APS) has grown enough that you might be able to find someone local to loan you their spare.
+Enough people use open-source systems (Loop, Trio and AAPS) that you might be able to find someone local to loan you their spare.
 
 ## Next Step: Enroll in Apple Developer Program
 

@@ -53,7 +53,7 @@ You can build the app two ways:
 
 Read this site before you start, and come back to it often. Expect to test and adjust your settings. If you get stuck, ask the volunteer community, and tell us which page confused you.
 
-> Do It Yourself (DIY) does not mean Do It Alone!
+> Building your own app does not mean doing it alone!
 
 Once you use the app, follow at least one support group for important updates.
 

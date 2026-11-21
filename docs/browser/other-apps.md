@@ -7,7 +7,7 @@ With the exception of the ***LoopCaregiver*** app, each app has their own set of
 * _<span translate="no">LoopFollow</span>_ Browser Build instructions were moved to *LoopFollowDocs*
     * [*LoopFollowDocs* Browser Build Instructions](https://loopfollowdocs.org/build/lf-browser-build/)
 
-If you want to build another DIY app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instructions for that app should be located in that file.
+If you want to build another open-source app that is not included here, look for the file `fastlane/testflight.md` in the *GitHub* repository associated with that app and open it in a browser. The instructions for that app should be located in that file.
 
 The same technique is used and the same six <code>Secrets</code> are used for many Open-Source apps. Over time, it is expected that more apps will use the `variable` ENABLE_NUKE_CERTS to allow automatic creation and update of the required certificates.
 
@@ -447,7 +447,7 @@ If you previously built with your personal account, all the Identifiers and the 
 * If this is switching from personal account for building to organization account for building, then you are using your already configured Identifiers and App
 * New certificates must be created because those tie a particular *GitHub* username to the particular *Apple* developer ID and your organization username differs from your personal username
 
-> WARNING - If you have `forks` of DIY apps in your original `my-name` account that are configured to build automatically, you want to disable building and have only the `my-name-org` account be configured for automatic building. Refer to [Disable Building for Personal *GitHub* account](#disable-building-for-personal-github-account).
+> WARNING - If you have `forks` of open-source apps in your original `my-name` account that are configured to build automatically, you want to disable building and have only the `my-name-org` account be configured for automatic building. Refer to [Disable Building for Personal *GitHub* account](#disable-building-for-personal-github-account).
 
 ### Disable Building for Personal *GitHub* account
 
@@ -469,7 +469,7 @@ You can disable the build actions from the repositories in your personal account
 
 #### Option 2: Delete `repository`
 
-You can delete the DIY repositories from your personal account
+You can delete the copies (`forks`) of those apps from your personal account
 
 * Pro: You can't get confused about where you should be building
 * Cons:

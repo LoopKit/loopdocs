@@ -194,7 +194,7 @@ The toolbar is always found at the bottom of the main Loop screen in both portra
 From left to right, the icons are:
 
 * **Meal Entry**- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page.
-    * _For those used to entering carbs on a Medtronic pump or coming from non-Loop DIY systems, Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the meal entry tool._
+    * _For those used to entering carbs on a Medtronic pump or coming from other open-source systems, such as Trio or AAPS, Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the meal entry tool._
 
 * **Pre-Meal Range** - click on this icon to start the [Pre-Meal Range](../operation/features/premeal.md){: target="_blank" } for one hour or until carbs are entered. (plate symbol turns dark green when active)
 
