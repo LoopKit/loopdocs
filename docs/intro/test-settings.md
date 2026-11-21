@@ -1,7 +1,7 @@
 ## Test Settings
 
 !!! info "Time Estimate"
-    - 2 hours to read the [Set Up](../setup/overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" } and [FAQs](../faqs/overview-faqs.md){: target="_blank" } tabs and [LoopTips](https://loopkit.github.io/looptips/)
+    - 2 hours to read the [Set Up](../setup/overview.md){: target="_blank" }, [Operate](../operation/loop/open-loop.md){: target="_blank" } and [FAQs](../faqs/safety-faqs.md){: target="_blank" } tabs and [LoopTips](https://loopkit.github.io/looptips/)
     - 1-3 days to test your settings
         * You can test after you build the *Loop* app, as long as you stay in [`Open Loop`](../operation/loop/open-loop.md)
 

@@ -17,7 +17,7 @@ This repository contains the source files for [Loop's](https://github.com/LoopKi
 - [Usage](https://loopkit.github.io/loopdocs/operation/loop/close-loop/)
 - [Troubleshooting](https://loopkit.github.io/loopdocs/troubleshooting/overview/)
 - Remote monitoring and commands with [*Nightscout*](https://loopkit.github.io/loopdocs/nightscout/overview/)
-- [FAQs](https://loopkit.github.io/loopdocs/faqs/overview-faqs/)
+- [FAQs](https://loopkit.github.io/loopdocs/faqs/safety-faqs/)
 
 
 ## Contributing
