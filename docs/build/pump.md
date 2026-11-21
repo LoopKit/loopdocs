@@ -36,7 +36,7 @@ These types of pumps are compatible with the *Loop* app.
 * [Medtrum Touchcare Nano](#medtrum-nano) (v3.14.2 or newer)
 * [Older Medtronic pumps](pump.md#check-medtronic-pump-version)
 
-You must build a special branch to test some pumps. Please only test if you are willing to update frequently, pay close attention and return to open loop as needed.
+Some pumps need a special branch. Only test them if you are willing to update often, pay close attention and go back to open loop when needed.
 
 * [Dana-i / DanaRS-v3](#sooil-dana-pumps) (new pump manager, work in progress, included in `feat/all-managers` branch)
 * [Tandem Mobi](#tandem-mobi) (in open beta, work in progress)
@@ -207,7 +207,7 @@ DanaRS pumps with firmware version v1 are not supported. Only firmware version v
 
 
 !!! warning "You must build a feature branch to use Tandem Mobi"
-    Tandem Mobi is in open beta. Please use the [`feat/tandem-next-dev` feature branch](../version/development.md#tandem-mobi-open-beta){: target="_blank" }.
+    Tandem Mobi is in open beta. Use the [`feat/tandem-next-dev` feature branch](../version/development.md#tandem-mobi-open-beta){: target="_blank" }.
     
     * You must follow [zulipchat Tandem Mobi Open Beta topic](https://loop.zulipchat.com/#narrow/channel/144182-development/topic/Tandem.20Mobi.20Open.20Beta/with/640908737)
 
@@ -239,4 +239,4 @@ For step-by-step instructions, see [Tandem Mobi Setup](../setup/add-pump.md#tand
 
 ## Next Step: Compatible CGM
 
-Now you are ready to check if you have a [Compatible CGM](cgm.md).
+Next, check that you have a [Compatible CGM](cgm.md).

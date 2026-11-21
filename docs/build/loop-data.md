@@ -1,71 +1,50 @@
 ## Make Plans for your `Loop Data`
 
 !!! info "Time Estimate"
-    - Apple Health: 0 minutes, already a part of your system
-    - *Tidepool*: 30 minutes to set up an account and then choose how to upload from the *Loop* app to *Tidepool*
-        * option: add *Tidepool* Mobile to your phone and upload via Apple Health data
-        * option: add upload to [*Tidepool* as a Service](../setup/services.md#tidepool){: target="_blank" } in the *Loop* app
-            * You can still use the Mobile app to take notes; but you must disable the Mobile app permission to read Health data - otherwise you get data uploaded twice
-    - *Nightscout*:
-        * 1-2 hours to build it yourself if you've never done it before
-        * 1 hour to choose and sign up for a service if you want to pay someone
+    - *Apple Health*: no setup; it is already on your phone
+    - *Tidepool*: 30 minutes to create an account and add [*Tidepool* as a Service](../setup/services.md#tidepool){: target="_blank" } in the *Loop* app
+    - *Nightscout*: 1-2 hours to build your own site the first time, or about 1 hour to sign up with a paid provider
 
 !!! abstract "Summary"
-    - Review the three major systems that can store and show your Loop data.
-    - Set up either *Tidepool* or *Nightscout* prior to your next endo appointment to provide Looping data to review.
+    - There are three main places to store and view your *Loop* data
+    - Set up *Tidepool* or *Nightscout* before your next endo visit
 
 !!! question "FAQs"
-    - **Do I have to set one of these up?** Apple Health is already built into your iPhone and used by Loop, so there's no setup involved.
-    - **Do I need all three?** No, you can choose what suits you best. You can add a data system later.
-    - **Why do I need any of these?** With the *Loop* app, your PDM (Omnipod) is not used or your pump (Medtronic) does not have sufficient memory for all the commands. Your endo will have nothing to download at your next visit. You need to provide them with the information.
-    - **Is it worth the time to setup *Nightscout*? I feel like I'm already doing so much outside my comfort zone.** Yes. Loopers find it is definitely worth the time investment.  *Nightscout* provides essential data for evaluating settings and useful alarms and alerts.  Some Facebook help sites require *Nightscout* data to diagnose and suggest steps to address problems. There are fee-based services that will set up *Nightscout* for you, if you don't want to build it yourself.
+    - **Do I have to set one up?** *Apple Health* needs no setup; the *Loop* app already uses it.
+    - **Do I need all three?** No. Choose what suits you; you can add another later.
+    - **Why do I need any of these?** With the *Loop* app, your Omnipod PDM is not used, and Medtronic pumps cannot store all the commands. Your endo has nothing to download, so you need to share your data another way.
+    - **Is *Nightscout* worth the time when I'm already outside my comfort zone?** Yes. It shows the data you need to check your settings and has useful alarms. Some help groups ask for *Nightscout* data to diagnose problems. Paid services can set it up for you.
 
 ## Data Options
 
-Take some time to familiarize yourself with these data options and choose your preferred system(s). Many Loopers use all three for various aspects.
+Many Loopers use all three:
 
 * [*Apple Health* app](../faqs/apple-health-faqs.md#healthkit-plots)
-    * Great resource to view on the Loop phone
-    * Not so great for showing your endo
+    * Good for viewing data on the *Loop* phone
+    * Not ideal for sharing with your endo
 * [*Tidepool*](https://loopkit.github.io/looptips/data/tidepool/)
-    * Some endo offices will use your *Tidepool* website when you provide them with an invitation
-    * Many users of the mobile app like the note-taking ability
-        * The mobile app also uploads *Apple HealthKit* data to *Tidepool* when the "Read from *Apple Health*" option is selected
-        * If you are using the *Loop* app to upload to Tidepool, be sure to disable the "Read from *Apple Health*" option in the Mobile app
-    * With Version 3.2 and newer of the *Loop* app, you can upload directly as a Service within the *Loop* app
-        * If you use the mobile *Tidepool* app on your phone for note-taking, be sure to disable the read from Apple Health option in the mobile *Tidepool* app settings to avoid duplicate uploads
-        * If you use the mobile *Tidepool* app on your phone for uploading only, then it is no longer needed when you upload directly to *Tidepool* as a Service within the *Loop* app
-* *Nightscout*:
-    * [LoopDocs: *Nightscout*](../nightscout/overview.md){: target="_blank" } section of LoopDocs, has Loop-centric information about *Nightscout*
-    * [LoopTips: *Nightscout*](https://loopkit.github.io/looptips/data/nightscout/) link to LoopTips page on *Nightscout*
-    * [*Nightscout*: Documentation](https://nightscout.github.io/) official *Nightscout* site with lots of information about building and using *Nightscout*
-    * *Nightscout* has a lot of useful alarms and alerts, provides a care portal and detailed reports
-    * For those who assist someone who is Looping, *Nightscout* enables the caregiver to send remote commands for carbs, bolus, or overrides to the Looper's phone
-        * The [*LoopCaregiver*](../nightscout/loop-caregiver.md) app helps caregivers monitor and send remote commands to their Looper's phone
-
-*Nightscout* options include free or nominal cost sites you build yourself or there are several *Nightscout* as a Service vendors who provide turn-key sites for a monthly fee. Links to the options are found in the [*Nightscout*: Documentation](https://nightscout.github.io/).
-
-*Nightscout* provides a secure, real-time Dashboard with status of the *Loop* app visible to anyone with access codes and the internet. It is required for remote commanding.
-
-If you plan to use remote commanding with *Nightscout*, please read these links with additional information:
-
-* [Set Up Remote for *Nightscout*](../nightscout/remote-config.md#set-up-remote-for-nightscout)
-    * [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
+    * Some endo offices view your *Tidepool* data when you invite them
+    * The *Loop* app (v3.2 or newer) uploads directly when you add *Tidepool* as a Service
+    * If you also use the *Tidepool* mobile app, for example to take notes, turn off its "Read from *Apple Health*" option so your data is not uploaded twice
+* *Nightscout*
+    * A secure, real-time view of the *Loop* app for anyone with your access codes, plus alarms, a care portal and detailed reports
+    * Required to send remote commands (carbs, bolus, overrides) to the *Loop* phone; the [*LoopCaregiver*](../nightscout/loop-caregiver.md) app makes this easier
+    * Build your own site for free or a small cost, or pay a provider for a ready-made site; the options are in the [*Nightscout*: Documentation](https://nightscout.github.io/)
+    * More about *Nightscout*: [LoopDocs: *Nightscout*](../nightscout/overview.md){: target="_blank" } and [LoopTips: *Nightscout*](https://loopkit.github.io/looptips/data/nightscout/)
+    * For remote commands, read [Set Up Remote for *Nightscout*](../nightscout/remote-config.md#set-up-remote-for-nightscout) and [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
 
 ## Next Step
 
-Now you are ready to build or continue with setting up the *Loop* app.
-
-If you have questions along the way, see [Get Help](../intro/loopdocs-how-to.md).
+You are ready to build, or to continue setting up the *Loop* app. If you have questions, see [Get Help](../intro/loopdocs-how-to.md).
 
 ### Return to Set Up
 
-If you are a new looper who got to these pages from the Set Up app page - congratulations. Now that you've reviewed these introductory pages, please continue with the [Brand New Loopers](../setup/overview.md#brand-new-loopers) section of the Set Up Overview page.
+If you came here from the Set Up tab, continue with [Brand New Loopers](../setup/overview.md#brand-new-loopers) on the Set Up Overview page.
 
 ### Build with Browser
 
-Click here if you want to [Build with Browser](../browser/bb-overview.md).
+Go to [Build with Browser](../browser/bb-overview.md).
 
 ### Build with *Mac*:
 
-Click here if you want to [Build with *Mac*](../build/overview.md).
+Go to [Build with *Mac*](../build/overview.md).

@@ -93,15 +93,15 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 
 ## Use Automatic Time
 
-Be sure to set the phone to automatic time. Do not try to defeat a game by modifying time on the same phone used to control your insulin.
+Set the phone to automatic time. Do not change the time on the phone that controls your insulin, for example to get ahead in a game.
 
-Please read: [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
+Read [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
 
 ## Turn Off Automatic Updates
 
 *Apple* provides updates regularly to the *iOS*.  Often, these updates include critical security patches in addition to improved new features.
 
-**Please be proactive - install updates as soon as the all-clear is given for using the *Loop* app with that *iOS* update.**
+**Install each *iOS* update soon after the all-clear is given for using it with the *Loop* app.**
 
 If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, switch to using [Build with Browser](../browser/bb-overview.md).
 
@@ -128,4 +128,4 @@ Within a few days, the "All-Clear" or (very rare) the "WAIT there is a problem" 
 
 ## Next Step: Compatible Pump
 
-Now you are ready to check if you have a [Compatible Insulin Pump](pump.md).
+Next, check that you have a [Compatible Insulin Pump](pump.md).

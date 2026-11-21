@@ -1,27 +1,23 @@
 ## How to Find Help
 
-Volunteers generously provide support for Loop via online platforms. You have several options for joining conversations on Loop and asking for help.  Links to the main platforms are listed below.  Non-US Loop users in Italy, Australia, and several other countries have also formed Facebook (FB) groups.
+Volunteers answer questions about the *Loop* app in these places:
 
-* Loop and Learn is a community that provides help for iOS based Open-Source applications like the *Loop* app. Their Facebook group has a number of active mentors to assist you.
-    * [`LoopandLearn` Facebook Group](https://www.facebook.com/groups/LOOPandLEARN)
-* The [Looped Group](https://www.facebook.com/groups/TheLoopedGroup) is the original FB group for DIY looping systems. There are many active members there with a lot of overlap with the `LoopandLearn` Facebook Group.
-* The [LoopTips](https://loopkit.github.io/looptips/) website provides non-build information that is helpful once you are looping, e.g., how to print endo reports, find Loop data, deal with therapy settings changes, etc.
-* Many Loopers use a companion app called Nightscout. Nightscout help can be found in the [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud) Facebook group.
-* For those interested in what is coming next for Loop and/or those who prefer not to use Facebook:
-    * Join [Loop Zulipchat](https://loop.zulipchat.com) and be sure to subscribe to all the channels or you'll miss some interesting conversations.
-    * [Sign up](https://www.loopandlearn.org/newsletter-signup/) for the `LoopandLearn` newsletter published once or twice a month
-    * Visit the [LoopandLearn Website](https://www.loopandlearn.org)
-    * Check out the [LoopandLearn YouTube Channel](https://youtube.com/loopandlearn)
-        * T1D Speaker Series covering many topics of general diabetes interest
-        * Open-Source Automated Insulin Dosing (OS-AID) specific topics
+* [`LoopandLearn` Facebook Group](https://www.facebook.com/groups/LOOPandLEARN): many active mentors help with iOS open-source apps like the *Loop* app
+* [The Looped Group](https://www.facebook.com/groups/TheLoopedGroup): the original Facebook group for DIY looping
+* [Loop Zulipchat](https://loop.zulipchat.com): for people who prefer not to use Facebook, and for following what is coming next; subscribe to all the channels so you don't miss conversations
+* [CGM in the Cloud](https://www.facebook.com/groups/CGMinthecloud): Facebook group for *Nightscout* help
+* Users in Italy, Australia and several other countries have their own Facebook groups
+
+Other resources:
+
+* [LoopTips](https://loopkit.github.io/looptips/): help for daily life with the *Loop* app, such as printing reports for your endo and adjusting settings
+* `LoopandLearn`: [website](https://www.loopandlearn.org), [newsletter](https://www.loopandlearn.org/newsletter-signup/) (once or twice a month) and [YouTube channel](https://youtube.com/loopandlearn) (T1D Speaker Series and Open-Source Automated Insulin Dosing topics)
 
 !!! question "I'm worried I'll ask a stupid question"
-    Don't worry. All the mentors started out as novices. Focus instead on asking a **thorough** question. A thorough question explains what you've already tried or read, has screenshots of what you are confused by, and any other details you can provide.
+    Don't worry. Every mentor started as a beginner. Ask a **thorough** question: say what you have tried or read, and include screenshots of what confuses you.
 
 !!! info ""
-    Please watch this video (just under 7 minutes) to learn about using announcements and searches in Facebook groups and the *LoopDocs* pages.
-
-    Note, the *LoopDocs* menus were reorganized after this video was prepared to make it easier to progress through the pages.   
+    This 7-minute video shows how to use featured posts and searches in Facebook groups and how to search *LoopDocs*. The *LoopDocs* menus have changed since it was made.
 
 [![img/looped-group.png](img/looped-group.png)](https://youtu.be/_vSN6C-Uo04)
 

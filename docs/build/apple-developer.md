@@ -13,7 +13,7 @@
         * Free requires the [Build with *Mac*](overview.md){: target="_blank" } method
 
 !!! question "FAQs"
-    - **"Can I use someone else's Apple Developer account?"** Please refer to this [Answer](../faqs/loop-faqs.md#can-i-use-someone-elses-apple-developer-account){: target="_blank" }.
+    - **"Can I use someone else's Apple Developer account?"** See this [Answer](../faqs/loop-faqs.md#can-i-use-someone-elses-apple-developer-account){: target="_blank" }.
     - **"Do I use my Apple ID or my child's Apple ID to enroll in the Apple Developer program?"** The Apple ID you use to enroll in the developer program must be associated with an adult. It does not need to be the same Apple ID as the Looper uses on their iPhone. For example, a parent installing the *Loop* app on their child's iPhone should configure a separate Apple ID for their child, but should use their own Apple ID to build the Loop app for that child.
     - **"How long does it take to have my Apple Development account active after I enroll?"** After you enroll, make sure you look for a confirmation email. Apple says it can take up to 24-48 hours to confirm and setup a new Apple developer account. However, some people have had the process take minutes. One SURE way to make it take longer is to use a different credit card to pay for the Apple Developer account enrollment than is already associated with that Apple ID. When you do that, finishing the enrollment process may be a hassle.
 
@@ -62,13 +62,13 @@ If you decide to use a **PAID** developer account, here's what you need to know:
 
 To enroll in an individual paid Paid account, go to the Apple's Developer Program website [Apple Developer website](https://developer.apple.com/programs/enroll/).
 
-Be sure to use the credit card already associated with the email you are using for the developer account. If you switch credit cards, it can cause delays.
+Use the credit card already linked to the Apple ID you use for the developer account. A different card can cause delays.
 
 If you choose to use the free account, you don't have to do anything on that website. You'll just wait for the instructions on the Xcode Settings page and get your free account then.
 
 ## Next Steps: 
 
-Take the time to read the next two articles. You will be reminded again when you begin to set up your app.
+Read the next two pages. You will be reminded again when you set up your app.
 
 * [Test Settings](../build/test-settings.md)
 * [Loop Data](../build/loop-data.md)

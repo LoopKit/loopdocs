@@ -3,64 +3,50 @@ hide:
     - navigation
 ---
 
-Welcome to the *LoopDocs* website where you can learn about the *Loop* app.
+*LoopDocs* explains how to build, set up and use the *Loop* app.
 
 ## What is the *Loop* App?
 
-The *Loop* app is an automated insulin delivery application that you build and operate on an iPhone.
+The *Loop* app is an automated insulin delivery app that you build and run on an iPhone.
 
 ![Loop main display on phone](img/phone-loop-3.svg){width="300"}
 ![Loop watch screen on watch](img/watch-loop-3.svg){width="200"}
 
-* The *Loop* app uses your settings, meal entries and glucose data to calculate insulin dosing needed to bring your blood glucose within the correction range you set
-    * You enter your personal therapy settings (e.g., basal rate schedule, carbohydrate ratio, insulin sensitivity)
-    * You indicate your CGM and pump
-* You choose how to operate the *Loop* app:
-    * <code>Closed Loop</code>: Predict, recommend and control insulin dosing
-    * <code>Open Loop</code>: Explore interface, test settings, learn to enter meals and dose
+* It uses your settings, meal entries and CGM readings to adjust insulin and keep your glucose in the correction range you choose
+    * You enter your therapy settings, such as basal rates, carb ratio and insulin sensitivity
+    * You choose your CGM and pump
+* You choose how the app runs:
+    * <code>Closed Loop</code>: the app predicts your glucose and adjusts insulin for you
+    * <code>Open Loop</code>: the app only makes recommendations; use it to learn the app, test settings and practice meal entries
 
 ### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
 !!! success "&nbsp;_<span translate="no">Loop</span>_&nbsp;Video"
-    * This [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE) video with associated [pdf deck](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) was created by the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team
-    * It is a great introduction, created when Reese was using an earlier version of Loop
-    * Special thanks to 
-        * Tina and Reese Hammer for the terrific video
-        * Matthew Fouse for his beautiful graphics
+    * The [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE) video and its [slides (pdf)](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) are from the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team. They show an earlier version of the app, but are still a good introduction.
+    * Thanks to Tina and Reese Hammer for the video and Matthew Fouse for the graphics
 
 ## What are my next steps?
 
-This site shows you step-by-step how to [**build**](intro/requirements.md){: target="_blank" }, [**set up**](setup/overview.md){: target="_blank" } and [**operate**](operation/loop/open-loop.md){: target="_blank" } the *Loop* app.
+This site shows you, step by step, how to [**build**](intro/requirements.md){: target="_blank" }, [**set up**](setup/overview.md){: target="_blank" } and [**operate**](operation/loop/open-loop.md){: target="_blank" } the *Loop* app. You do not need a technical background.
 
-* **You do not need a technical or computer background to do this**
-* **You can choose to build the *Loop* app several ways:**
-    * Use a [browser](browser/bb-overview.md){: target="_blank" } on any computer or tablet and install it on your *iPhone* via *TestFlight*
-    * Use an **up-to-date** [*Mac* Computer](build/overview.md){: target="_blank" } and install it directly on your *iPhone*
+You can build the app two ways:
 
-In order to become proficient with the app, you should learn the information on this site. Consider doing this over a period of time and reviewing the materials more than once.
+* With a [browser](browser/bb-overview.md){: target="_blank" } on any computer or tablet; the app installs on your iPhone with *TestFlight*
+* With an **up-to-date** [*Mac*](build/overview.md){: target="_blank" }; the app installs directly on your iPhone
 
-* You should test and perhaps adjust your settings to be successful with the *Loop* app (or any hybrid closed-loop system)
-* As you read the documentation, you will find links to a robust volunteer support community
-    * You're invited - come introduce yourself
-    * Don't be afraid to ask questions, just let us know where in the documentation you got confused so we can make improvements
-
-There is a common saying in our community:
+Read this site before you start, and come back to it often. Expect to test and adjust your settings. If you get stuck, ask the volunteer community, and tell us which page confused you.
 
 > Do It Yourself (DIY) does not mean Do It Alone!
 
-Once you are using the app, you should regularly follow one or more support forums for important updates on the *Loop* app. Spending this time is important for success in building and operating the *Loop* app safely.
-
-This website is updated regularly to keep pace with development of the *Loop* app and *Apple* releases.
+Once you use the app, follow at least one support group for important updates.
 
 ## Important Disclaimer
 
-Please consult with your health care professional regarding your diabetes management.
+Talk with your health care professional about your diabetes management.
 
-* The *Loop* app is an open source project used by many, but it is not approved for therapy by any government organization.
+* The *Loop* app is open-source software used by many people. No government agency has approved it for therapy.
 * **You take full responsibility for building and running this system and do so at your own risk.**
 
 ## Volunteer Community
 
-The *Loop* app has been, and continues to be, developed and supported by volunteers. From the code to this website, you are able to use this app because many volunteers continue to give their personal and family time.
-
-Please add *your* time by reading this website before embarking on your *Loop* journey.
+Volunteers write the code, answer questions and keep this website up to date, in their personal and family time. Please give some of your time too: read this website before you start using the *Loop* app.

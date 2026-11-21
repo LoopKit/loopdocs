@@ -28,8 +28,6 @@ The RileyLink compatible device is required to allow your phone to talk to compa
 !!! abstract "Details for RileyLink"
     The RileyLink compatible device is an open-source hardware device that can bridge Bluetooth Low Energy (BLE) to the radio-frequency wireless communication used by compatible *Medtronic* and *Omnipod Eros* pumps.
 
-*Medtronic* and *Omnipod Eros* pumps require a RileyLink compatible device.
-
 ![Omnipod Eros or Medtronic pump communicating through RileyLink to phone running Loop app](img/rileylink-comm-pod-mmt.svg){width="600"}
 
 
@@ -39,7 +37,7 @@ The RileyLink protocol defines a specific Bluetooth interface and way of opening
 
 > Many Omnipod users have switched to DASH or Omnipod 5 and no longer need a RileyLink device, so the demand is significantly less than it used to be. You can still buy the devices, but there are fewer options.
 
-There used to be just one option, the original RileyLink. Now there are more options, so you have to make a decision. Depending on your choice, be sure to have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
+There are several options. Whichever you choose, have the correct charger and cables or batteries handy and add spare compatible supplies to your diabetes go-bag.
 
 - A [Comparison Chart](https://getrileylink.org/rileylink-compatible-hardware-comparison-chart) is provided by the GetRileyLink organization for all the RileyLink compatible devices listed below
 - RileyLink
@@ -78,4 +76,4 @@ The population of DIY loopers (Loop and Android APS) has grown enough that you m
 
 ## Next Step: Enroll in Apple Developer Program
 
-Now you are ready to enroll in the [Apple Developer Program](apple-developer.md).
+Next, enroll in the [Apple Developer Program](apple-developer.md).
