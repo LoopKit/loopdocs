@@ -242,14 +242,6 @@ For older code, v3.14.7 and earlier:
 
 - - -
 
-## What about *Tidepool Loop*?
-
-*Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
-
-There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH Pods.
-
-- - -
-
 ## Do I still need a PDM with Omnipod Loop?
 
 You don't need a PDM to use Pods with your OS-AID system but you are likely to need a PDM serial number registered to your Insulet account to get replacements for failed Pods.
@@ -277,7 +269,7 @@ As soon as a bolus is initiated, look at your phone in portrait orientation.  Yo
 
 ### Cancel Temp Basal with the *Loop* app
 
-With *Loop* 3, disabling the setting for Closed-Loop immediately restores the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.
+Disabling the setting for Closed-Loop immediately restores the basal rate on the pump to the scheduled basal rate, which effectively cancels the temp basal.
 
 You can tap on disable Closed-Loop and then immediately tap on enable Closed-Loop if all you want to do is cancel the current temp basal. If you do restore Closed-Loop, then *Loop* will resume automatic insulin delivery adjustments within 5 minutes.
 
@@ -288,7 +280,7 @@ You can tap on disable Closed-Loop and then immediately tap on enable Closed-Loo
 
 ## Can I set my own temp basal on Loop?
 
-With version 3, the *Loop* app provides a [Manual Temp Basal](../pumps/omnipod.md#manual-temp-basal) feature.
+The *Loop* app provides a [Manual Temp Basal](../pumps/omnipod.md#manual-temp-basal) feature.
 
 - - -
 

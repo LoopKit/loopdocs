@@ -15,6 +15,7 @@ theme:
         - search.highlight
         - content.code.annotate
         - content.tooltips
+        - content.tabs.link
     logo: loop-logo.png
     favicon: loop-logo.png
     palette:
@@ -61,6 +62,8 @@ markdown_extensions:
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
     - pymdownx.highlight
     - pymdownx.mark
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.tasklist:
         custom_checkbox: true    
     - pymdownx.tilde
@@ -135,6 +138,15 @@ plugins:
             'operation/loop-settings/displays.md': 'setup/displays.md'
             'operation/loop-settings/rileylink.md': 'pumps/rileylink.md'
             'operation/algorithm/temp-basal.md': 'operation/algorithm/auto-adjust.md'
+            'build/community.md': 'intro/loopdocs-how-to.md'
+            'build/phone.md': 'intro/phone.md'
+            'build/pump.md': 'intro/pump.md'
+            'build/cgm.md': 'intro/cgm.md'
+            'build/rileylink.md': 'intro/rileylink.md'
+            'build/apple-developer.md': 'intro/apple-developer.md'
+            'build/test-settings.md': 'intro/test-settings.md'
+            'build/loop-data.md': 'intro/loop-data.md'
+            'faqs/overview-faqs.md': 'faqs/safety-faqs.md'
     - unused_files:
         enabled: !ENV [CHECK_UNUSED_FILES, False]
         excluded_files:
@@ -152,48 +164,15 @@ nav:
 - Home: 'index.md'
 - Intro:
     - 'LoopDocs Overview': 'intro/overview-intro.md'
-    - 'LoopDocs How-to': 'intro/loopdocs-how-to.md'
+    - 'Get Help': 'intro/loopdocs-how-to.md'
     - 'Requirements Overview': 'intro/requirements.md'
-    - 'Compatible iPhone': 'build/phone.md'
-    - 'Compatible Pump': 'build/pump.md'
-    - 'Compatible CGM': 'build/cgm.md'
-    - 'RileyLink': 'build/rileylink.md'
-    - 'Apple Developer Program': 'build/apple-developer.md'
-    - 'Test Settings': 'build/test-settings.md'
-    - 'Loop Data': 'build/loop-data.md'
-    - 'Meet the Community': 'build/community.md'
-- Build with Browser:
-    - 'Browser Overview': browser/bb-overview.md
-    - 'Configure to use Browser':
-      - 'Introduction and Summary': browser/intro-summary.md
-      - 'Collect Secrets': browser/secrets.md
-      - 'Prepare Fork': browser/prepare-fork.md
-      - 'Prepare Identifiers': browser/identifiers.md
-      - 'Prepare App': browser/prepare-app.md
-      - 'Prepare TestFlight Group': browser/tf-users.md
-      - 'Create Certificates': browser/certs.md
-      - 'Build the App': browser/build-yml.md
-    - 'Install on Phone': browser/phone-install.md
-    - 'Errors with Browser': browser/bb-errors.md
-    - 'Update/Rebuild with Browser': browser/bb-update.md
-    - 'Automatic Update & Build': browser/automatic.md
-    - 'Customize using Browser': 'browser/custom-browser.md'
-    - 'Custom Edits with Browser': 'browser/edit-browser.md'
-    - 'Build Loop dev with Browser': browser/build-dev-browser.md
-    - 'Build Other Apps with Browser': browser/other-apps.md
-- Build with Mac:
-    - 'Mac Overview': 'build/overview.md'
-    - 'Compatible Computer': 'build/computer.md'
-    - 'Xcode Version': 'build/xcode-version.md'
-    - 'Xcode Settings': 'build/xcode-settings.md'
-    - 'Build Loop': 'build/build-app.md'
-    - 'Oh dear! Build errors?': 'build/build-errors.md'
-    - 'Update/Rebuild with Mac': 'build/updating.md'
-    - 'Customize using Mac': 'build/custom-mac.md'
-    - 'Custom Edits with Mac': 'build/edit-mac.md'
-    - 'Build Loop dev with Mac': 'build/build-dev-mac.md'
-    - 'Build Free Loop': 'build/build-free-loop.md'
-    - 'TestFlight from Xcode': 'build/testflight-xcode.md'
+    - 'Compatible iPhone': 'intro/phone.md'
+    - 'Compatible Pump': 'intro/pump.md'
+    - 'Compatible CGM': 'intro/cgm.md'
+    - 'RileyLink': 'intro/rileylink.md'
+    - 'Apple Developer Program': 'intro/apple-developer.md'
+    - 'Test Settings': 'intro/test-settings.md'
+    - 'Loop Data': 'intro/loop-data.md'
 - Set Up:
     - 'Overview': 'setup/overview.md'
     - 'Onboarding': 'setup/onboarding.md'
@@ -229,6 +208,7 @@ nav:
         - 'Automated Adjustments': 'operation/algorithm/auto-adjust.md'
 - Troubleshoot:
     - 'Troubleshooting Overview': 'troubleshooting/overview.md'
+    - 'How to Ask for Help': 'troubleshooting/ask-for-help.md'
     - 'Loop App Crashes': 'troubleshooting/loop-crashing.md'
     - 'Red Loop': 'troubleshooting/red-loop.md'
     - 'Pod Pairing Failures': 'troubleshooting/pod-pairing.md'
@@ -236,6 +216,38 @@ nav:
     - 'MDT Pump Errors': 'troubleshooting/pump-errors.md'
     - 'MDT Pump Battery': 'operation/features/battery.md'
     - 'Dana (RS/-i) FAQ': 'troubleshooting/dana-faq.md'
+- Build with Browser:
+    - 'Browser Overview': browser/bb-overview.md
+    - 'Configure to use Browser':
+      - 'Introduction and Summary': browser/intro-summary.md
+      - 'Collect Secrets': browser/secrets.md
+      - 'Prepare Fork': browser/prepare-fork.md
+      - 'Prepare Identifiers': browser/identifiers.md
+      - 'Prepare App': browser/prepare-app.md
+      - 'Prepare TestFlight Group': browser/tf-users.md
+      - 'Create Certificates': browser/certs.md
+      - 'Build the App': browser/build-yml.md
+    - 'Install on Phone': browser/phone-install.md
+    - 'Errors with Browser': browser/bb-errors.md
+    - 'Update/Rebuild with Browser': browser/bb-update.md
+    - 'Automatic Update & Build': browser/automatic.md
+    - 'Customize using Browser': 'browser/custom-browser.md'
+    - 'Custom Edits with Browser': 'browser/edit-browser.md'
+    - 'Build Loop dev with Browser': browser/build-dev-browser.md
+    - 'Build Other Apps with Browser': browser/other-apps.md
+- Build with Mac:
+    - 'Mac Overview': 'build/overview.md'
+    - 'Compatible Computer': 'build/computer.md'
+    - 'Xcode Version': 'build/xcode-version.md'
+    - 'Xcode Settings': 'build/xcode-settings.md'
+    - 'Build Loop': 'build/build-app.md'
+    - 'Oh dear! Build errors?': 'build/build-errors.md'
+    - 'Update/Rebuild with Mac': 'build/updating.md'
+    - 'Customize using Mac': 'build/custom-mac.md'
+    - 'Custom Edits with Mac': 'build/edit-mac.md'
+    - 'Build Loop dev with Mac': 'build/build-dev-mac.md'
+    - 'Build Free Loop': 'build/build-free-loop.md'
+    - 'TestFlight from Xcode': 'build/testflight-xcode.md'
 - 'Version':
     - 'Version Overview': 'version/overview-version.md'
     - 'Releases': 'version/releases.md'
@@ -259,18 +271,18 @@ nav:
     - 'Remote Errors': 'nightscout/remote-errors.md'
     - '<span translate="no">LoopCaregiver<span>': 'nightscout/loop-caregiver.md'
 - FAQs:
-    - 'FAQs Overview': 'faqs/overview-faqs.md'
-    - 'Safety Tips': 'faqs/safety-faqs.md'
+    - 'Safety FAQs': 'faqs/safety-faqs.md'
     - 'Loop FAQs': 'faqs/loop-faqs.md'
+    - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
     - 'Time FAQs': 'faqs/time-faqs.md'
-    - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
-    - 'CGM FAQs': 'faqs/cgm-faqs.md'
     - 'Update/Rebuild Loop FAQs': 'faqs/update-faqs.md'
     - 'New Phone Tips': 'faqs/new-phone.md'
-    - 'Remote Control FAQs': 'faqs/remote-control.md'
-    - 'Translation FAQS': 'faqs/app-translation.md'
-    - 'Algorithm FAQs': 'faqs/algorithm-faqs.md'
-    - 'Apple Health FAQs': 'faqs/apple-health-faqs.md'
+    - 'Omnipod FAQs': 'faqs/omnipod-faqs.md'
     - 'RileyLink FAQs': 'faqs/rileylink-faqs.md'
+    - 'CGM FAQs': 'faqs/cgm-faqs.md'
+    - 'Apple Health FAQs': 'faqs/apple-health-faqs.md'
+    - 'Remote Control FAQs': 'faqs/remote-control.md'
+    - 'Translation FAQs': 'faqs/app-translation.md'
+    - 'Improve LoopDocs': 'faqs/improve-loopdocs.md'
     - 'Glossary': 'faqs/glossary.md'
 - Translation: 'translate.md'

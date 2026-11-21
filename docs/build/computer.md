@@ -10,12 +10,12 @@
 
 !!! tip "Build with Browser"
 
-    If you do not have a Mac, you can build&nbsp;<span translate="no">Loop 3</span>&nbsp;with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
+    If you do not have a Mac, you can build the&nbsp;<span translate="no">Loop</span>&nbsp;app with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
 
-    - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md){: target="_blank" }
+    - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](../intro/apple-developer.md){: target="_blank" }
     - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com)
-    - You need a [compatible phone](phone.md) to install the app from *TestFlight*
-    - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
+    - You need a [compatible phone](../intro/phone.md) to install the app from *TestFlight*
+    - You need a [compatible Pump](../intro/pump.md) and [CGM](../intro/cgm.md) if you want to actually use the app (and not just explore the app)
 
 !!! abstract "Summary"
     Your computer, iPhone and Xcode must have compatible versions to build the *Loop* app using a *Mac*.
@@ -26,7 +26,7 @@
 
 
 !!! question "FAQs"
-    - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build [Loop 3](../browser/bb-overview.md){: target="_blank" } with any browser on any computer.
+    - **"Do I need a Mac or Virtual Machine?."** Not any more! You can build the [*Loop* app](../browser/bb-overview.md){: target="_blank" } with any browser on any computer.
     - **"I want to use the build with *Mac* method. Can I use a PC or Windows computer? I don't own an Apple computer."** You used to be able to but with macOS 27, Intel chips are no longer supported. You can read the FAQ about virtual machines but you are better off learning how to use GitHub Actions and Build with the Browser Build method. FAQ about using a [Virtual Machine](../faqs/loop-faqs.md#can-i-use-a-pc-or-windows-computer-to-build){: target="_blank" }.
     - **"How often do I need to use the computer if I choose the build with *Mac* method?"** Computer access is required when
         * Initially installing the Loop app
@@ -104,7 +104,7 @@ Look into building with [GitHub Actions](../browser/bb-overview.md){: target="_b
 
 ## Next Step:
 
-If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
+If you already have an [Apple Developer ID](../intro/apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
 
 !!! warning "Free ID"
     The free ID method only works when using the build with *Mac* method. The [Build with Browser](../browser/bb-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.

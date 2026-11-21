@@ -2,15 +2,15 @@
 
 The following CGM are supported by some or all versions of Loop:
 
-* All *Dexcom* CGM (*Loop* v3 and later)
+* All *Dexcom* CGM
     * This includes 15-day G7 CGM
-* *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#updates-in-dev))
+* *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#status-for-next-dev-branch))
 * Eversense E3 and 365 (included with *Loop* v3.14.2 and newer)
 * Remote CGM (requires internet access)
     * *Dexcom* Share
     * Nightscout as CGM
 
-See also: [Compatible CGM](../build/cgm.md){: target="_blank" } and [CGM Customization](#cgm-customization)
+See also: [Compatible CGM](../intro/cgm.md){: target="_blank" } and [CGM Customization](#cgm-customization)
 
 ## *Dexcom* FAQ
 
@@ -124,7 +124,7 @@ Loop 3.4.x and later enables the use of *Libre* sensors supported by [LibreTrans
 
 *Libre 3/3+* is currently available for testing in a special branch, next-dev; it is not yet part of the released version of Loop.
 
-* See [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+* See [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 
 There are a number of *Libre* sensors in which the only option for digital access to the CGM readings is to use the app provided by the vendor: [*LibreLinkUp*](https://librelinkup.com/). This enables you to upload your data to the *LibreLinkUp* servers and then access the data from there.
 
@@ -141,15 +141,28 @@ If you prefer not to customize Loop, then you can configure [Nightscout](https:/
 
 For Loop versions 3.14.2 and newer, Eversense is included.
 
+## Can I use the *Loop* app offline?
+
+"Offline Use" means using the *Loop* app when there is no cell data or internet available. The *Loop* app does not require any special setup to operate offline.
+
+For offline use, the iPhone's Bluetooth still needs to be active; and for *Dexcom* users, the G5, G6 or G7 app also needs to be running on the same phone as the *Loop* app (*Loop* 4 can pair a G7 directly; then the *Dexcom* app is not needed). If you put your iPhone into Airplane mode, remember to turn Bluetooth back on to keep both the CGM and the *Loop* app running. If your offline use is failing, chances are you have forgotten to update your transmitter ID in the *Loop* app settings when you changed transmitters.
+
+## Can the *Loop* app use *Dexcom Share* as a CGM?
+
+The *Loop* app can download *Dexcom* Share data for use in modeling glucose. However, this is not a typical configuration and requires internet connection for both the phone with the *Dexcom* app and the phone with the *Loop* app.  The steps for adding a CGM explain that you usually enter the *Dexcom* transmitter ID and leave the *Dexcom* Share setting blank.
+
+!!! warning "*Dexcom* ONE"
+    The *Dexcom* ONE app does not support Share.
+
 ## Can the *Loop* app read CGM data from Nightscout?
 
-Yes.
+Yes. The *Loop* app allows you to use Nightscout as a remote source for CGM data. This requires cell or WiFi connection.
 
 ## CGM Customization
 
-> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 
-If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the *xDrip4iOS* DIY CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
+If you can connect your CGM directly to *Loop* that is preferred. You can customize the *Loop* app to interface with the open-source *xDrip4iOS* CGM app if you prefer.  You can use *xDrip4iOS* as a follower instead of a client to get some features from *xDrip4iOS* without any need to customize the *Loop* app.
 
 If possible, it is recommended that *Libre* users take advantage of [LibreTransmitter](https://github.com/LoopKit/LibreTransmitter/blob/main/readme.md) which is incorporated into the *Loop* app for version 3.4 and later. However, some *Libre* sensors have encryption that limits ability to get data through open-source code and instead requires using the *LibreLinkUp* server.
 

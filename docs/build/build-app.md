@@ -16,12 +16,6 @@
     * **Why does Xcode show a colorful spinning icon and not respond to me?** Unfortunately, sometimes Xcode gets confused and you need to force quit the application. See [Xcode Not Responding](../build/build-errors.md#xcode-not-responding) for instructions.
     * Many more FAQs for building Loop are in-line with the steps that trigger the questions.
 
-## Build Video
-
-The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
-
-If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.
-
 ## Build with Browser
 
 If you previously used [Build with Browser](../browser/bb-overview.md) to install Loop on this phone, you should [Disable Automatic Install from *TestFlight*](../browser/phone-install.md#disable-automatic-install-from-testflight) to be sure the version of the app on the phone is the one you build with Xcode.
@@ -123,8 +117,6 @@ Every attempt was made to put messages directly in the script for each step. The
 Go to the Finder app, click on Applications, then open the Utilities folder.  Locate the Terminal app and double-click Terminal to open a terminal window. The terminal window is very plain looking when you open it. That is normal.
 
 ### Build Select Script
-
-With the release of Loop 3, the build process is different and simpler
 
 * Please read each step as if you are a new builder
 * Don't assume you know what you are doing
@@ -484,21 +476,21 @@ But wait - there's more.
 * Do NOT skip the Set Up and Operate material; at least skim it.
 * Keep reviewing LoopDocs - some material will be more impactful once you have the app in your hands.
 * Ask [questions](../intro/loopdocs-how-to.md#how-to-find-help) if you are confused.
-* Learn to use the [LoopDocs search feature](../intro/loopdocs-how-to.md#website-search)
+* Learn to use the [LoopDocs search feature](../intro/overview-intro.md#website-search)
 
-### New to Loop 3
+### New to *Loop*
 
-If this is your first build with Loop 3, head to the Set Up tab starting here: [Loop 3 Overview](../setup/overview.md).
+If this is your first build of the *Loop* app, head to the Set Up tab starting here: [Set Up Overview](../setup/overview.md).
 
 !!! tip "Pro Tip: Read Along in LoopDocs as you Onboard"
-    One of the goals for Loop 3 is to make the app robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.
+    One of the goals for the *Loop* app is to make it robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.
 
     All those mentors who answer questions are volunteers.
 
 Even if you don't read all the pages under the Set Up tab now, these links are important.
 
 * New Looper: [Onboarding](../setup/onboarding.md)
-* Building Loop 3 over Loop 2.2.x: [Experienced Looper Onboarding](../setup/onboarding.md#experienced-loopers)
+* Building over an existing *Loop* app: [Experienced Loopers](../setup/onboarding.md#experienced-loopers)
 
 !!! info "Add a Calendar Reminder"
 

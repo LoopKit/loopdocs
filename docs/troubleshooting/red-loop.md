@@ -13,9 +13,6 @@ Clicking on the Loop icon on the main screen tells you the last time Loop comple
 
     There are a few times when it is the pod - but try all the steps on this page **first**.
 
-!!! warning "Medtronic Users"
-    You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.
-
 A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below.
 
 ## Typical Causes for Red Loop
@@ -28,20 +25,6 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
 1. [Phone Storage is Full](#phone-storage-is-full)
-1. [Lost Pod Information](#lost-pod-information)
-
-### Lost Pod Information
-
-We have not seen this issue since the update of the *Loop* app from version 2 to version 3 when the method for saving data was updated. Some other applications in the open-source sets of codes might still have this issue. (It was reported in iAPS, for example. It has been fixed in Trio.) The warning below is left in LoopDocs but if you are running *Loop* version 3.x.x, you do not need to worry about reboots.
-
-* Before attempting to resolve a red-loop with a phone reboot when you are running a `Loop` version older than version 3.0 (or iAPS); please review this section. It can affect the stored CGM information as well as the stored pump information.
-
-!!! warning "Be Careful with Phone Reboots with Loop 2 or iAPS"
-
-    If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.
-    
-    This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for Omnipod users.
-
 
 ### Reset Loop-to-Pump Communications
 
@@ -69,10 +52,6 @@ This should restore a green Loop within 5 minutes. If you're impatient and are u
 Last thing to try is:
 
 #### Power cycle your phone.
-
-* This suggestion is last because of a rare, intermittent issue with an older version of the *Loop* app in which power cycling the phone does not load the latest version of saved information
-* This was fixed with Loop 3
-* Click on the [Lost Pod Information](#lost-pod-information) link for more information
 
 If this was not successful, check out the [Pump is Not Responding](#pump-is-not-responding) section.
 
@@ -122,7 +101,7 @@ If you added your Nightscout URL to Loop and are uploading information to Nights
 1. Check that Nightscout database size isn't full (more details below)
 1. If Red Loops are resolved by removing the Nightscout URL from Loop; you need to figure out if it's the connection or the database or some other issue
 
-If you opted for the free DIY Nightscout, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars){: target="_blank" } and cleaning it.
+If you opted for a free *Nightscout* site you set up yourself, you will need to clean your database once or twice a year. Follow the [Nightscout Database cleanup steps](https://nightscout.github.io/troubleshoot/troubleshoot/#database-full). Make sure you are periodically checking your database size (and that the **dbsize** keyword is in your [ENABLE list](../nightscout/update-user.md#editadd-config-vars){: target="_blank" } and cleaning it.
 
 ### Phone Storage is Full
 
@@ -176,7 +155,7 @@ Here are some things to check if you have frequent red loops:
 
 ## Posting for Help
 
-Before you post on Looped group for help with a red loop, please make sure you've [reset the RileyLink / Phone](../build/rileylink.md#rileylink-compatible-devices).
+Before you post on Looped group for help with a red loop, please make sure you've [reset the RileyLink / Phone](../intro/rileylink.md#rileylink-compatible-devices).
 
 Before you post for help, please also check your Nightscout status including database size. This step is often overlooked and yet solves a lot of problems.
 
@@ -200,7 +179,7 @@ If you have a different RileyLink compatible device, please check the appropriat
 
 **Green light**: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.
 
-**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) for replacement options.
+**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../intro/rileylink.md#rileylink-compatible-devices) for replacement options.
 
 ### Battery has Failed
 

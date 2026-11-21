@@ -9,7 +9,7 @@ The RileyLink (or compatible device) screen is accessed by clicking on the image
 
 If there is a problem communicating with that RileyLink compatible device, tapping on the line will show out-of-date or missing information. Go to [Troubleshoot: Red Loop: Reset Loop-to-Pump Communications](../troubleshooting/red-loop.md#reset-loop-to-pump-communications) for suggestions.
 
-With Loop 3
+With the *Loop* app:
 
 * The Pump Devices display will show the signal loss icon instead of reporting dB as shown in the graphic below. 
 * If the problem persists, the [Pump Status Icon](../setup/displays.md#pump-status-icon) on the main *Loop* screen will also show Signal Loss.
@@ -23,7 +23,7 @@ Tapping on a name with a green slider takes you to the RileyLink Status and Comm
 
 The name at the top center is whatever you [named your RileyLink compatible device](#personalize-device). The RileyLink screen is the same regardless of the pump you are using.
 
-* The three graphics below match the display for Loop 3.
+* The three graphics below are from the *Loop* app.
 * The [firmware](../faqs/rileylink-faqs.md#firmware-version) displayed is specific to each device. 
 
 ![example rileylink screens for riley, ema, orange for loop 3](img/rl-comp-loop-3.svg){width="600"}

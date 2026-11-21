@@ -82,13 +82,35 @@ When you add the *Tidepool* Service to *Loop*, be sure to disable *Tidepool* Mob
 !!! warning "Double entries"
     If you have *Tidepool* Mobile installed on your phone, with the Connect to Health feature enabled, while also using the *Tidepool* Service in *Loop*, all of your carb and insulin records will be doubled on the *Tidepool* Web browser display.
 
-    Even when you turn off the access to Health on the *Tidepool* Mobile app when you turn on *Loop* *Tidepool* service, you will still get 7 days of overlap because *Loop* stores 7 days of data.
+    Even when you turn off the access to Health on the *Tidepool* Mobile app when you turn on *Loop* *Tidepool* service, you will still get an overlap, because *Loop* uploads [all the data it has stored](#data-uploaded-to-tidepool).
 
     There is a filter button on the *Tidepool* Website you can use to separate the two data sources.
 
 You can still use the note taking feature with *Tidepool* Mobile when Health is not connected, although you must have internet connectivity for this to work.
 
 *Tidepool* Support is available to help troubleshoot issues or answer questions about using *Tidepool*. Contact them via email at support@tidepool.org.
+
+### Data Uploaded to *Tidepool*
+
+When you add the *Tidepool* Service, the *Loop* app uploads everything still stored on your phone: glucose, insulin doses, carbs, pump events, dosing decisions, settings and alerts.
+
+=== "Loop 3"
+
+    The *Loop* app stores 7 days of data, so your first upload covers up to 7 days.
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    The *Loop* app stores 90 days of data, so your first upload covers up to 90 days.
+
+    If you update from *Loop* 3, you start with about 7 days, because *Loop* 3 already deleted anything older. Your stored history then builds up to 90 days over your first 90 days on *Loop* 4.
+
+*Tidepool* does not store the same *Loop* record twice:
+
+* The *Loop* app does not check what *Tidepool* already has. It sends everything, and *Tidepool* skips records it already has, because each record keeps the same ID every time it is sent.
+* If you remove the *Tidepool* Service and add it back, the *Loop* app sends everything on the phone again, and *Tidepool* skips the duplicates.
+* This only applies to records sent by the *Loop* app. It does not prevent the [double entries](#tidepool) from *Tidepool* Mobile described above.
 
 ## Loggly
 

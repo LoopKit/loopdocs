@@ -9,25 +9,55 @@ The HUD will look like the graphic below if no CGM or Pump is connected with Loo
 
 Loop can be connected to the following CGMs:
 
-* CGMs that reside on the same phone (internet not required)
-    * [Dexcom G5](#dexcom-g5-g6-one)
-    * [Dexcom G6 or ONE](#dexcom-g5-g6-one)
-    * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
-    * [Libre](#libre) **(v3.4 or newer)**
-        * Only some Libre sensors are supported; some have encryption that limits DIY use
-        * Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
-    * [Eversense E3/365](#eversense-e3365) **v3.14.2 or newer**
-* CGMs that require active internet (WiFi or Cell)
-    * [*Dexcom Share*](#dexcom-share-as-a-cgm)
-    * [Nightscout Remote CGM](#nightscout-remote-cgm)
-* CGM Simulator - useful to learn the app interface
+=== "Loop 3"
+
+    * CGMs that reside on the same phone (internet not required)
+        * [Dexcom G5](#dexcom-g5-g6-one)
+        * [Dexcom G6 or ONE](#dexcom-g5-g6-one)
+        * [Dexcom G7 or ONE+](#dexcom-g7-or-one)
+        * [Libre](#libre) **(v3.4 or newer)**
+            * Only some Libre sensors are supported; some have encryption that blocks use with open-source apps
+            * Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
+        * [Eversense E3/365](#eversense-e3365) **v3.14.2 or newer**
+    * CGMs that require active internet (WiFi or Cell)
+        * [*Dexcom Share*](#dexcom-share-as-a-cgm)
+        * [Nightscout Remote CGM](#nightscout-remote-cgm)
+    * CGM Simulator - useful to learn the app interface
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    * CGMs that reside on the same phone (internet not required)
+        * [Dexcom G5](#dexcom-g5-g6-one)
+        * [Dexcom G6 or ONE](#dexcom-g5-g6-one)
+        * [Dexcom G7, ONE+ or Stelo](#dexcom-g7-or-one), with or without the *Dexcom* app
+        * [Libre](#libre)
+            * *Libre* 3 and 3 Plus are supported
+            * Older *Libre* sensors work the same as in *Loop* 3; some have encryption that blocks use with open-source apps
+        * [Eversense E3/365](#eversense-e3365)
+    * CGMs that require active internet (WiFi or Cell)
+        * [*Dexcom Share*](#dexcom-share-as-a-cgm)
+        * [Nightscout Remote CGM](#nightscout-remote-cgm)
+    * CGM Simulator - useful to learn the app interface
 
 ## Add CGM
 
-To add a CGM, go to the Settings screen ⚙️, tap on `Add CGM`, and tap on your CGM.
+=== "Loop 3"
 
-![graphic showing some of the CGMs available with Loop 3](img/setting-add-cgm.svg){width="500"}
-{align="center"}
+    To add a CGM, go to the Settings screen ⚙️, tap on `Add CGM`, and tap on your CGM.
+
+    ![graphic showing some of the CGMs available with Loop 3](img/setting-add-cgm.svg){width="500"}
+    {align="center"}
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    To add a CGM, go to the Settings screen ⚙️ and tap on `Add CGM`. A full-screen chooser opens with the CGMs grouped by manufacturer. Each one shows an icon and a list of the supported models. Tap on your CGM.
+
+    !!! abstract "Graphic needed"
+        A graphic of the *Loop* 4 CGM chooser will be added here.
 
 If you later decide to use a different CGM type, you must first delete the CGM and then add CGM to choose the new one.
 
@@ -44,7 +74,7 @@ If you later decide to use a different CGM type, you must first delete the CGM a
 
 Loop provides an option to upload CGM values to a remote service like Nightscout or Tidepool. In many cases this can be a preferred solution.
 
-With Loop 3, the data-store on the Loop phone keeps a full week of data. If there is an interruption in the upload, when it is restored, Loop will fill in up to 1-week of CGM data that was not previously uploaded.
+The data-store on the Loop phone keeps a full week of data. If there is an interruption in the upload, when it is restored, Loop will fill in up to 1-week of CGM data that was not previously uploaded.
 
 Some people use Dexcom Share to feed their remote services. There have been outages with Share. When those occur, the data is not back-filled like it is with Loop.
 
@@ -122,14 +152,29 @@ You do **NOT** need your Share account info listed in Loop settings if you are u
 
 ### Dexcom G7 or ONE+
 
-This is only available on Loop 3.
+=== "Loop 3"
 
-You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.
+    You must have the G7 app on the same phone as Loop. When the G7 app switches to the next sensor/transmitter assembly, Loop automatically switches too.
 
-It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-loop).
+    It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-loop).
 
-![graphic showing Loop searching for G7](img/g7.svg){width="500"}
-{align="center"}
+    ![graphic showing Loop searching for G7](img/g7.svg){width="500"}
+    {align="center"}
+
+=== "Loop 4"
+
+    --8<-- "includes/next-dev-note.md"
+
+    *Loop* 4 supports the *Dexcom* G7, ONE+ and *Stelo* sensors. You can use them in either of two ways:
+
+    * **With the *Dexcom* app** on the same phone, the same as *Loop* 3
+    * **Paired directly**, without the *Dexcom* app: pair the sensor using its 4-digit code
+        * *Loop* handles sensor warm-up, backfill of missed readings, calibration and sensor alerts
+        * *Loop* can upload readings to *Dexcom Share* for your followers; manage followers in the *Dexcom Follow* app
+        * With **Read on Apple Watch** turned on in the G7 settings, the watch reads the sensor itself, so readings continue when your phone is out of range
+
+    !!! abstract "Graphics needed"
+        Graphics of the *Loop* 4 G7 pairing screens will be added here.
 
 !!! tip "Don't forget Health Permissions"
     For those switching from *Dexcom G6* to *Dexcom G7*, you might forget to add permission for the *G7* app to write to *Apple Health*. If you want the long-term history of those CGM readings to persist in *Apple Health*, turn on the permission for the *Dexcom* app to write glucose to *Health*.
@@ -143,7 +188,7 @@ It is suggested that you enable [Remote Upload from Loop](#remote-upload-from-lo
 * American Libre 2 is not supported
 * Libre 3/3 Plus is not supported by the released version of *Loop*, but is being tested in a special branch (next-dev)
 
-> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#updates-in-dev){: target="_blank"} for experienced users
+> Coming soon *Libre* 3/3 Plus support is available in [next-dev branch](../version/development.md#status-for-next-dev-branch){: target="_blank"} for experienced users
 
 !!! tip "Connecting to Libre"
     The first reading for a new sensor will often take 2-4 minutes. This is due to some technicalities on how the Libre sensor announces its presence via Bluetooth.

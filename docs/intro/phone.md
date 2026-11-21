@@ -79,20 +79,7 @@ Do not use any of the beta *iOS* versions. (If you are uncertain what that means
 
 ### Developer Mode - *Mac* Build Only
 
-> When you build the *Loop* app using [Build with Browser](../browser/bb-overview.md), you are not required to enable Developer Mode on the phone or watch.
-
-With *iOS* 16 or newer and *watchOS* 9 or newer, *Apple* added a feature. If you want to know more, click on this [Apple Link about Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
-
-When you build the *Loop* app on your phone from *Xcode* directly and then transition to or start with *iOS* 16 or newer, you need to have Developer Mode enabled. This is also a requirement to use the *Loop* app on a watch paired to your phone running *watchOS* 9 or newer. You will be told to enable it in the [Build the *Loop* App: Prepare your Phone and Watch](build-app.md#prepare-your-phone-and-watch) instructions.
-
-!!! info "Developer Mode with *iOS* 16 or newer, *watchOS* 9 or newer"
-    If you already have the *Loop* app built with *Xcode* on your phone/watch when you update to *iOS* 16 or newer/*watchOS 9* or newer or newer, you will be told that the *Loop* app requires Developer Mode to run.
-    
-    You will not be able to run the *Loop* app on your phone (or watch) until you have enabled Developer Mode on the device(s).
-
-    ![phone message if trying to run xcode app without developer mode enabled](img/phone-developer-mode-required.jpeg){width="300"}
-    {align="center"}
-
+If you build with *Xcode* on a *Mac*, the phone (and watch) must have Developer Mode turned on. The steps are in [Build the *Loop* App: Developer Mode](../build/build-app.md#developer-mode). You do not need Developer Mode if you use [Build with Browser](../browser/bb-overview.md).
 
 ## Battery Health
 
@@ -106,15 +93,15 @@ Make sure the battery on your phone is solid. Your phone will become a critical 
 
 ## Use Automatic Time
 
-Be sure to set the phone to automatic time. Do not try to defeat a game by modifying time on the same phone used to control your insulin.
+Set the phone to automatic time. Do not change the time on the phone that controls your insulin, for example to get ahead in a game.
 
-Please read: [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
+Read [The *Loop* Phone Must be on Automatic Time](../faqs/time-faqs.md#the-loop-phone-must-be-on-automatic-time).
 
 ## Turn Off Automatic Updates
 
 *Apple* provides updates regularly to the *iOS*.  Often, these updates include critical security patches in addition to improved new features.
 
-**Please be proactive - install updates as soon as the all-clear is given for using the *Loop* app with that *iOS* update.**
+**Install each *iOS* update soon after the all-clear is given for using it with the *Loop* app.**
 
 If a limitation on your *Mac* prevents you from updating your phone to the latest *iOS*, switch to using [Build with Browser](../browser/bb-overview.md).
 
@@ -141,4 +128,4 @@ Within a few days, the "All-Clear" or (very rare) the "WAIT there is a problem" 
 
 ## Next Step: Compatible Pump
 
-Now you are ready to check if you have a [Compatible Insulin Pump](pump.md).
+Next, check that you have a [Compatible Insulin Pump](pump.md).

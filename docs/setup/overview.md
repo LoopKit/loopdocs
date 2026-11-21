@@ -1,8 +1,8 @@
-## Loop 3 Set Up Overview
+## Set Up Overview
 
-!!! success "Congratulations on Building Loop!"
+!!! success "Congratulations on Installing Loop!"
 
-The first time you build Loop 3, the app takes you through the Onboarding process. Review this page before using your app.
+The first time you open the *Loop* app on your phone, it takes you through the Onboarding process. Review this page before using your app.
 
 !!! tip "Suggestion"
     * Read this page all the way through without clicking on any links
@@ -16,9 +16,9 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
     * [Add CGM](add-cgm.md)
     * [Add Pump](add-pump.md)
 * Review these pages from the Intro tab of LoopDocs
-    * [Test Settings](../build/test-settings.md)
-    * [Loop Data](../build/loop-data.md)
-    * [Meet the Community](../build/community.md)
+    * [Test Settings](../intro/test-settings.md)
+    * [Loop Data](../intro/loop-data.md)
+    * [Get Help](../intro/loopdocs-how-to.md)
 
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below. 
 
@@ -26,7 +26,7 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 * Complete the Onboarding steps to set up Loop
 * Learn to use Loop starting with the [Open Loop](../operation/loop/open-loop.md) page
 * Once you are comfortable with manually controlling Loop and have settings that work with the algorithm, move on to the [Closed Loop](../operation/loop/close-loop.md) page
-* Make [suggestions](../intro/loopdocs-how-to.md#how-to-improve-loopdocs) if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
+* Make [suggestions](../faqs/improve-loopdocs.md) if you think parts of LoopDocs could be clarified, especially from the viewpoint of a brand-new Looper
 
 ### Experienced Loopers
 
@@ -39,7 +39,7 @@ The first time you build Loop 3, the app takes you through the Onboarding proces
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below
     - Some of the screens and user interface changed with Loop 3
     - Many of the new Loop 3 features are described
-    - Reach out if information is missing or needs to be clarified, [suggestions](../intro/loopdocs-how-to.md#how-to-improve-loopdocs) are always welcome
+    - Reach out if information is missing or needs to be clarified, [suggestions](../faqs/improve-loopdocs.md) are always welcome
 * LoopDocs design
     * Sections specific to experienced Loopers are after the sections for new Loopers
     * The goal is to make LoopDocs easier for new Loopers to navigate
@@ -59,9 +59,6 @@ And a lot of detailed information about Status and Commands for:
 * [RileyLink](../pumps/rileylink.md)
 * [Omnipod Common](../pumps/omnipod.md)
 * [Medtronic](../pumps/medtronic.md)
-
-!!! warning "Medtronic Users"
-    You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.
 
 ## Safety
 

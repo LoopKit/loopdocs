@@ -4,10 +4,10 @@ As soon as your app builds on your phone, you are guided through the onboarding 
 
 ### Entering and Editing Values
 
-This section explains how to enter and edit values with Loop 3.
+This section explains how to enter and edit values in the *Loop* app.
 
 !!! info "Screens"
-    With version 3 of the *Loop* app, the primary button, with an associated information message, is visible at the bottom of even small screens for many actions. You may need to scroll to see intermediate rows.
+    In the *Loop* app, the primary button, with an associated information message, is visible at the bottom of even small screens for many actions. You may need to scroll to see intermediate rows.
 
     There are other screens, like the Onboarding and Therapy Settings screens, where you are expected read all the provided information. Those screens require you to scroll to the bottom before being able to hit Continue or Save.
 
@@ -106,9 +106,6 @@ The next screen, shown on the left of the graphic below, enables the user to bot
 !!! question "Nightscout"
     * [Nightscout](../nightscout/overview.md) is not required for Loop
     * It can be added later
-
-!!! warning "Loop 3 with Nightscout Requires API_SECRET"
-    * Even if you used Nightscout with Loop 2, you will neeed to add it again and you must include your API_SECRET
 
 
 * If you have do not have a Nightscout site, or choose not to use it, select `Setup Loop without Nightscout` and skip ahead to [Therapy Settings (Onboarding)](#therapy-settings-onboarding)
@@ -221,8 +218,8 @@ Once a pump is added, the basal increments will match those on your pump. The on
 If you will be connecting a Medtronic pump after onboarding:
 
 * The values entered here will overwrite whatever is in your Medtronic pump when you first connect it
-* For those who build Loop 3 over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
-* If you have values in a [Loopable Medtronic pump](../build/pump.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
+* For those who build over an existing Loop app with a Medtronic pump attached - you will just be confirming values you used previously
+* If you have values in a [Loopable Medtronic pump](../intro/pump.md#check-medtronic-pump-version) that you plan to attach after onboarding - please record those values if they are important to you
 
 
 ### Delivery Limits
@@ -245,7 +242,7 @@ If you will be connecting a Medtronic pump after onboarding:
 
 For safety, new loopers should start with a max basal set 2-3 times their highest scheduled basal rate. If you choose 2 times your highest scheduled basal, you may get a message informing you this is "lower than typical." Ignore this to put safety first as a new looper.
 
-Experienced loopers typically set their maximum basal rate around 3-4 times their highest scheduled basal rate. Loop 3 app will not allow you to exceed 6.4 times your highest scheduled rate.
+Experienced loopers typically set their maximum basal rate around 3-4 times their highest scheduled basal rate. The *Loop* app will not allow you to exceed 6.4 times your highest scheduled rate.
 
 #### **Maximum Bolus**
 
@@ -304,11 +301,11 @@ If you built a new version of Loop over an existing app, your CGM and pump selec
 
     After you finish onboarding, you must select Insulin Type on your pump settings screen. Without an insulin type, closed loop might not work or a different insulin type might be selected.
 
-The first time you build Loop 3 on a device, you will need to go through the onboarding process too.
+The first time you build the *Loop* app on a device, you will need to go through the onboarding process too.
 
-* If you build Loop 3 over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)
+* If you build over an existing *Loop* app, onboarding keeps your settings, saved overrides and current pod or pump.
 
-* If you build Loop 3 onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API_SECRET and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
+* If you build the *Loop* app onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API_SECRET and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
 
 * If you are building on a device that does not have an existing Loop app and you choose not to use Nightscout, then follow the new Looper [Onboarding Steps](#onboarding-steps).
 
@@ -338,15 +335,12 @@ You will be presented with an information screen describing the setting (with a 
 
     * [Insulin Type](add-pump.md#insulin-type): ensure the correct insulin type is selected
 
-### Carb Absorption Time Update
+### Carb Absorption Times
 
-If you used earlier versions of Loop, please be aware that absorption times have changed.
-
-!!! warning "Loop 3 Carb Absorption Times"
+!!! warning "Carb Absorption Times"
     Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../operation/algorithm/prediction.md) for more details.
 
-    * Loop 3 uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
-        * Loop 2.2.x used 2 hours, 3 hours and 4 hours
+    * The *Loop* app uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
     * The 30 minute (candy) time is for rapid acting carbs only
 
     If you selected the candy icon for a complex meal, you told Loop to expect your glucose to rise rapidly. When that rapid rise does not materialize, you may find Loop predicts an unexpectedly low glucose because the algorithm assumes something must be affecting your glucose downward in a strong way.
@@ -355,6 +349,4 @@ If you used earlier versions of Loop, please be aware that absorption times have
 
 ### Carb Data Source
 
-Loop 3 does not read non-Loop carbohydrate entries from Apple Health, as previous versions did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../version/build-time-flag.md) section.
-
-Users who build Loop 3 over Loop 2.2.x, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.
+The *Loop* app does not read non-Loop carbohydrate entries from Apple Health. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../version/build-time-flag.md) section.

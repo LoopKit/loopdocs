@@ -10,11 +10,11 @@ The complete requirements for building the *Loop* app with a *Mac* and *Xcode* a
 
 ### Common Requirements
 
-* [Compatible Phone](../build/phone.md){: target="_blank" }
-* [Compatible CGM](../build/cgm.md){: target="_blank" }
-* [Compatible Pump](../build/pump.md){: target="_blank" }
-    * For pumps that do not support Bluetooth communications (older Medronic and Omnipod Eros), you also need a [RileyLink Compatible Device](../build/rileylink.md){: target="_blank" }
-* [Apple Developer Membership](../build/apple-developer.md) (not needed if you rebuild weekly using the *Mac* method)
+* [Compatible Phone](../intro/phone.md){: target="_blank" }
+* [Compatible CGM](../intro/cgm.md){: target="_blank" }
+* [Compatible Pump](../intro/pump.md){: target="_blank" }
+    * For pumps that do not support Bluetooth communications (older Medronic and Omnipod Eros), you also need a [RileyLink Compatible Device](../intro/rileylink.md){: target="_blank" }
+* [Apple Developer Membership](../intro/apple-developer.md) (not needed if you rebuild weekly using the *Mac* method)
 
 ### Additional Requirements to Build with *Mac*
 

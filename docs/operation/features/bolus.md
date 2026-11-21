@@ -2,7 +2,7 @@
 
 The **Meal Bolus** screen is entered following a carb entry or edit action, the active button might be **Save Carbs & Deliver** or, if no bolus was recommended, **Save without Bolusing**. 
 
-The **Save** refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen (Loop 3 only).
+The **Save** refers to saving the Carb entry or Carb edit that led to this screen in addition to saving the amount that might be bolused. It can also refer to saving a fingerstick value entered in the Meal Bolus screen.
 
 You can review the carb information at the [Meal Entry](carbs.md) link.
 
@@ -123,4 +123,4 @@ If an "uncertain" delivery is not resolved:
 
 If that does not resolve the issue, please tap on Loop Settings, Issue Report and email it to yourself. Then [post](../../intro/loopdocs-how-to.md#how-to-find-help) on Facebook or Zulipchat, explain what happened and say you have an Issue Report. Someone should reach out to you.
 
-There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Loop 3 Displays](../../setup/displays.md) page.
+There are other alert messages that might be displayed if the pump or CGM is not active.  Those are found on the [Displays](../../setup/displays.md) page.

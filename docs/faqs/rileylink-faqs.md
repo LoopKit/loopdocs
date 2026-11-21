@@ -6,7 +6,7 @@ A RileyLink compatible device is required to use the *Loop* app with Medtronic p
 
 The device uses the RileyLink protocol to communicate information to/from your pump by radio communications and to/from your iPhone using Bluetooth. You will need the device within range of your phone and pump so that these communications can happen. Put it in a purse, pocket, SPIbelt. Clip it to a backpack, belt, or bra...but please do bring it with you..
 
-Purchase information for these devices is found in [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices)
+Purchase information for these devices is found in [RileyLink Compatible Devices](../intro/rileylink.md#rileylink-compatible-devices)
 
 ## Adding or Changing RileyLink
 
@@ -76,7 +76,7 @@ While you are out of the communication range for your RileyLink compatible devic
 
 The electronics are not waterproof but there are waterproof cases available and some have wireless charging available. Check with the manufacturer.
 
-[RileyLink Compatible Device Information](../build/rileylink.md#rileylink-compatible-devices)
+[RileyLink Compatible Device Information](../intro/rileylink.md#rileylink-compatible-devices)
 
 
 ## Firmware version
@@ -113,7 +113,7 @@ A number of OrangeLink Pro devices were shipped with FW2.6 and for people who al
 !!! warning "Firmware/Hardware Labeling"
     Earlier versions of the OrangeLink firmware did not put the hardware (HW) version and the firmware version (FW) in the "correct" location to hand off to Loop for interpretation. Do not worry if you are running on any FW version 1.x or 2.x and your HW version number doesn't say 1.0 or 1.1. This has been fixed for FW versions 3.x.
 
-    Loop 3 is compatible with the OrangeLink.
+    The *Loop* app is compatible with the OrangeLink.
 
 ## RileyLink Information
 
@@ -164,7 +164,7 @@ Since the best practice is to charge your RileyLink overnight while you sleep, a
 
 ### What are the differences between the RileyLink Medtronic and Omnipod Antennas?
 
-There are two types of antennas for RileyLinks; each antenna is optimized for the pump you are using. Otherwise they are identical. See [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) for other devices.  The OrangeLink has both antennas included in its design and can talk to either Medtronic or Omnipod.  The EmaLink requires selection for type of pump.
+There are two types of antennas for RileyLinks; each antenna is optimized for the pump you are using. Otherwise they are identical. See [RileyLink Compatible Devices](../intro/rileylink.md#rileylink-compatible-devices) for other devices.  The OrangeLink has both antennas included in its design and can talk to either Medtronic or Omnipod.  The EmaLink requires selection for type of pump.
 
 !!! note ""
     The color of the RileyLink circuit board in the photos below is irrelevant.

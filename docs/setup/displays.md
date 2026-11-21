@@ -1,4 +1,4 @@
-This page has detailed information about Loop 3 Displays.
+This page has detailed information about *Loop* displays.
 
 ## Main Loop Screen
 
@@ -194,7 +194,7 @@ The toolbar is always found at the bottom of the main Loop screen in both portra
 From left to right, the icons are:
 
 * **Meal Entry**- click on this icon to enter meals. Detailed info regarding how to enter, save, and edit meal entries can be found in the [Meal Entry](../operation/features/carbs.md){: target="_blank" } page.
-    * _For those used to entering carbs on a Medtronic pump or coming from non-Loop DIY systems, Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the meal entry tool._
+    * _For those used to entering carbs on a Medtronic pump or coming from other open-source systems, such as Trio or AAPS, Loop will not read carb entries from a Medtronic pump or Nightscout, so you must use the meal entry tool._
 
 * **Pre-Meal Range** - click on this icon to start the [Pre-Meal Range](../operation/features/premeal.md){: target="_blank" } for one hour or until carbs are entered. (plate symbol turns dark green when active)
 
@@ -207,7 +207,7 @@ From left to right, the icons are:
 ## HUD Details
 
 !!! abstract "Very Detailed Section"
-    This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to Loop 3 icons and messages.
+    This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to *Loop* icons and messages.
 
     If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in Open Loop mode (before you enable Closed Loop mode). And then come back again after a day or so of closed loop testing.
 
@@ -243,7 +243,7 @@ This table shows examples of Loop Status Icons and what each icon means.
 |![A green circle indicating nominal status for closed loop](img/icon-closed-green.svg){width="175"}|A green circle indicates the app is in Closed Loop mode and it completed a [cycle](#loop-cycle) within the last 5 minutes.|
 |![A yellow circle indicating warning status for closed loop](img/icon-closed-yellow.svg){width="175"}|A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or RileyLink “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.|
 |![A red circle indicating failure status for closed loop](img/icon-closed-red.svg){width="175"}|A red circle indicates the Loop has not completed in over 15 minutes.<br><br>This is not a typical state, and you should [troubleshoot](../troubleshooting/red-loop.md) the problem.<br><br>In this case, either the [Glucose Icon](#glucose-status-icon) or the [Pump Icon](#pump-status-icon) or both will display an `alert` graphic.|
-|![A green open circle with a gap at the top denoting open loop](img/icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “Open Loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented in Loop 3 for Omnipod and Omnipod DASH, at the current time._|
+|![A green open circle with a gap at the top denoting open loop](img/icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “Open Loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Manual Temp Basal is implemented on some pumps and not others._|
 
 !!! info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
@@ -323,7 +323,7 @@ The table below shows examples for a few nominal Pump Status Icons and Alert mes
 |![pump alert - red exclamation point with phrase no insulin](img/pump-alert-no-insulin.svg){width="175"}|This No Insulin alert message indicates the reservoir reports 0 U. Although  pumps will continue to deliver some insulin after this point (max of 4 U for pods, or until all insulin is gone for any pump), the user should be aware that insulin delivery could stop at any moment.<br><br>Note that if you see a display of 0 U in yellow, that means there is 0.5 U or less reported by the pump.|
 |![pump alert - yellow exclamation point with phrase no pod](img/pump-alert-no-pod.svg){width="175"}|The No Pod alert message indicates no pod is currently paired so no insulin is being delivered.<br><br>Tap on the icon to reach the pod setting screen and pair a new pod, or switch to a different source for providing insulin.|
 |![pump alert - yellow pause indicator that pump is suspended](img/pump-alert-suspended.svg){width="175"}|The Insulin Suspended alert message indicates all insulin delivery has been suspended. <br><br>A [Status Row](#hud-status-row) message appears to enable the user to resume delivery with one tap. <br><br>Alternatively, insulin can be resumed by tapping on the Pump Icon to enter the Pump Setting display and resume from that screen.|
-|![pump alert - yellow exclamation point with phrase manual basal](img/pump-alert-mtb.svg){width="175"}|The Manual Bolus alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.|
+|![pump alert - yellow exclamation point with phrase manual basal](img/pump-alert-mtb.svg){width="175"}|The Manual Basal alert message indicates the user has initiated a manual temp basal (MTB). While the MTB is active, the Loop Icon Status will also display an Open Loop symbol to indicate no automatic adjustments are made until MTB expires or is canceled. <br><br>The lifecycle indicator across the bottom of the pod status indicates a pod within the final 24 hours of nominal life.<br><br>Tapping on the icon takes the user to the pump settings display where the rate and duration of the MTB are displayed.|
 |![pump alert - red exclamation point with phrase no data](img/pump-alert-no-data.svg){width="175"}|The No Data alert message indicates it has been more than 15 minutes since the app was able to communicate with the pump.<br><br>Follow these [troubleshooting](../troubleshooting/red-loop.md) steps.|
 |![pump alert - red plus sign with phrase add pump](img/pump-alert-add-pump.svg){width="175"}|The Add Pump alert message indicates no pump has been added. <br><br>Follow the instruction for [adding a pump](add-pump.md#add-pump).|
 |![pump alert - exclamation point with phrase finish setup](img/pump-alert-finish-setup.svg){width="175"}|The Finish Setup alert indicates the pod setup procedure was not completed. <br><br>Tap on the icon to be taken to the Omnipod menu to complete the setup.<br><br>(If your icon says Finish Pairing, you are running older code and will be taken to the Insert Cannula screen even if pod is still priming. Make sure priming completes before trying to insert the cannula).|
@@ -357,13 +357,13 @@ The display to modify time zone is found on your Pump screen:
 * [Omnipod](../pumps/omnipod.md#pump-time)
 * [Medtronic](../pumps/medtronic.md#change-time-zone)
 
-You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.
+You can choose to leave the pump and phone time zones different; the pump icon on the HUD will show the clock icon to remind you. Many people do this for short trips.
 
 ### Other Time Changes
 
 What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the HUD or Omnipod screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
 
-Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
+The *Loop* app will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
 ![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
 {align="center"}
@@ -394,4 +394,4 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/overrides.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>**New with Loop 3:** The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the Pre-Meal and Override icons in the toolbar highlighted.|
+|If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the Pre-Meal and Override icons in the toolbar highlighted.|

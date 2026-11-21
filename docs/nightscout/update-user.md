@@ -2,7 +2,7 @@
 
 Many people may already have an existing Nightscout site setup from before adding Loop to their management strategies. In order to make the most of your Looping setup, you will need to modify your existing Nightscout site a bit specifically for Loop. The process is pretty easy and should not take long.
 
-The graphics on this page are from a Heroku implementation for DIY Nightscout. When you read the Nightscout documents, you'll notice there are a lot more options than just Heroku. When Heroku announced that the "free" tier for Heroku would be disabled in November 2022, the #WeAreNotWaiting community developed a lot of options - both free DIY, nominal cost DIY and there were already several companies that provide Nightscout as a service. If your site is not with Heroku, you need to translate how to adjust the configuration variables.
+The graphics on this page are from a self-hosted *Nightscout* site on Heroku. When you read the Nightscout documents, you'll notice there are a lot more options than just Heroku. When Heroku announced that the "free" tier for Heroku would be disabled in November 2022, the #WeAreNotWaiting community developed a lot of options - both free and low-cost sites you set up yourself, and there were already several companies that provide Nightscout as a service. If your site is not with Heroku, you need to translate how to adjust the configuration variables.
 
 
 ## Variables for Loopers
