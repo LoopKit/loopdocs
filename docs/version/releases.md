@@ -445,11 +445,11 @@ One change moving to v3.10.0 from 3.8.2 (or newer) is the Build Order selected i
 
 ## Loop v3.8.x
 
-!!! important "[iOS 15 is no longer supported](../build/phone.md#not-supported){: target="_blank" }"
+!!! important "[iOS 15 is no longer supported](../intro/phone.md#not-supported){: target="_blank" }"
     * It is a known issue that some screens show up as a different language for iOS 15 devices with v3.8.x.
     * It is expected *Loop* will soon require a minimum of iOS 17
 
-    See [Compatible Device](../build/phone.md#compatible-device){: target="_blank" }.
+    See [Compatible Device](../intro/phone.md#compatible-device){: target="_blank" }.
 
 ### Loop v3.8.2
 

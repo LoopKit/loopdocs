@@ -176,7 +176,7 @@ Here are some things to check if you have frequent red loops:
 
 ## Posting for Help
 
-Before you post on Looped group for help with a red loop, please make sure you've [reset the RileyLink / Phone](../build/rileylink.md#rileylink-compatible-devices).
+Before you post on Looped group for help with a red loop, please make sure you've [reset the RileyLink / Phone](../intro/rileylink.md#rileylink-compatible-devices).
 
 Before you post for help, please also check your Nightscout status including database size. This step is often overlooked and yet solves a lot of problems.
 
@@ -200,7 +200,7 @@ If you have a different RileyLink compatible device, please check the appropriat
 
 **Green light**: Indicates an active BT connection with the phone. You want the green light to stay on all the time on the RileyLink. If the green light is not on, then make sure your iPhone's bluetooth is still switched on.
 
-**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) for replacement options.
+**Blue light**: The blue light will flash off/on periodically when the RileyLink and pump are actively communicating...it should NOT be always on. If your blue light is stuck on, that is an indication of a problem on the board. Try looking for signs of damage or debris that may be causing a short on the board. Clean the board with rubbing alcohol [(unplug the battery first](https://youtu.be/s2qNPLpfwww)). If you still can't get the blue light off, then contact GetRileyLink for help or check out [RileyLink Compatible Devices](../intro/rileylink.md#rileylink-compatible-devices) for replacement options.
 
 ### Battery has Failed
 

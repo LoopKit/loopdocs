@@ -79,7 +79,7 @@ Do not use any of the beta *iOS* versions. (If you are uncertain what that means
 
 ### Developer Mode - *Mac* Build Only
 
-If you build with *Xcode* on a *Mac*, the phone (and watch) must have Developer Mode turned on. The steps are in [Build the *Loop* App: Developer Mode](build-app.md#developer-mode). You do not need Developer Mode if you use [Build with Browser](../browser/bb-overview.md).
+If you build with *Xcode* on a *Mac*, the phone (and watch) must have Developer Mode turned on. The steps are in [Build the *Loop* App: Developer Mode](../build/build-app.md#developer-mode). You do not need Developer Mode if you use [Build with Browser](../browser/bb-overview.md).
 
 ## Battery Health
 

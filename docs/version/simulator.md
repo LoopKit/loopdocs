@@ -25,7 +25,7 @@ Follow the normal instructions to build with browser, install the app on a compa
 This simulator requires access to a Mac or virtual computer, see [Compatible Computer](../build/computer.md){: target="_blank" }
 
 * Build pages to review, but complete later
-    * [Apple Developer Program](../build/apple-developer.md){: target="_blank" } (can use a free account)
+    * [Apple Developer Program](../intro/apple-developer.md){: target="_blank" } (can use a free account)
 * Follow [Xcode Version](../build/xcode-version.md){: target="_blank" }
 * Follow [Xcode Settings](../build/xcode-settings.md){: target="_blank" } but can skip the `Add Apple ID` section
 * Follow [Build the Loop App](../build/build-app.md){: target="_blank" } but with the following variation:
@@ -46,7 +46,7 @@ You don't need to do anything special when you build the app using the [Build wi
 
 ### Build to a Compatible Phone using *Mac* Build
 
-When building to a real phone using a *Mac*, you must have access to a [Compatible Computer](../build/computer.md){: target="_blank" } and a [Compatible Phone](../build/phone.md){: target="_blank" }.
+When building to a real phone using a *Mac*, you must have access to a [Compatible Computer](../build/computer.md){: target="_blank" } and a [Compatible Phone](../intro/phone.md){: target="_blank" }.
 
 * You can use a Free Apple Developer account
 * Follow [Xcode Version](../build/xcode-version.md){: target="_blank" }

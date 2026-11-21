@@ -64,7 +64,7 @@ Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
 * If you build on a *Mac* using *Xcode* [Build with *Mac*](../build/overview.md), you need a *Mac* or a PC with Intel chips on which you include a virtual Mac
     * The *Mac* must be kept up to date with recent operating system
     * The *Xcode* app (from from Apple) must also be updated regular
-* If you have a pump that requires a [RileyLink Compatible Device](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
+* If you have a pump that requires a [RileyLink Compatible Device](../intro/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
     * The RileyLink is only required for loopable Medtronic pumps and the older Eros Omnipod patch pumps
     * No RileyLink is needed for the BLE pumps: Omnipod 5, DASH, Medtrum, Dana and Tandem Mobi
 
@@ -78,7 +78,7 @@ There are no other costs, ongoing or initial, to use the *Loop* app beyond what 
 
 > The RileyLink is only required for loopable Medtronic pumps and the older Eros Omnipod patch pumps.
 
-There are several options for [RileyLink Compatible Devices](../build/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup.
+There are several options for [RileyLink Compatible Devices](../intro/rileylink.md#rileylink-compatible-devices) at this time.  They typically cost around $150. This is a one-time cost and the devices should last for years (unless it goes swimming, goes through the wash, gets run over by a car, etc.). It's fine to buy one device and make sure you want to Loop, but if you can afford it, go on and get two or get two different kinds. Once you Loop, you'll want a backup.
 
 Many used devices are available in the community. You may find posts for resale on this Facebook Group [Looping in a time of covid](https://www.facebook.com/groups/1087611668259945). This is a private FB group where you must agree to the rules.
 
@@ -150,7 +150,7 @@ If there is more than one Looper in the family, you only need to have one *Apple
 
 It's a good idea to let someone else in the family know how to build and have access to your *Apple* password (and for Browser Build, your GitHub password) in case you're out of town. It's also a good idea to build the *Loop* app on a backup phone especially for travel. 
 
-The *Apple* Developer ID and the *Apple* ID are two different things. PLEASE read this: [Loopers Need Their Own *Apple* ID](../build/apple-developer.md#loopers-need-their-own-apple-id).
+The *Apple* Developer ID and the *Apple* ID are two different things. PLEASE read this: [Loopers Need Their Own *Apple* ID](../intro/apple-developer.md#loopers-need-their-own-apple-id).
 
 
 - - -
@@ -175,11 +175,11 @@ Moral of the story, out of all the ways to save money...borrowing someone's deve
 
 ## How can I find a compatible pump? supplies?
 
-This [link](../build/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS Open-Source community. You need to consider which ones are available in your country.
+This [link](../intro/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS Open-Source community. You need to consider which ones are available in your country.
 
 You can use Omnipod 5, DASH and Eros pumps with the *Loop* app. You do not need the Omnipod Personal Diabetes Manager (PDM) to use Omnipod with Loop, however, Insulet may ask for the PDM serial number when requesting pod replacements. Your insurance or pharmacy coverage may cover some of the cost. See [Which pods work with the *Loop* app?](omnipod-faqs.md#which-pods-work-with-the-loop-app) for more details.
 
-To check whether a Medtronic pump is compatible, see [Check Medtronic Pump Version](../build/pump.md#check-medtronic-pump-version). Tips for finding and buying one are below.
+To check whether a Medtronic pump is compatible, see [Check Medtronic Pump Version](../intro/pump.md#check-medtronic-pump-version). Tips for finding and buying one are below.
 
 Medtrum pumps are compatible with the released version of Loop v3.14.2 or newer.
 
@@ -284,7 +284,7 @@ Hey now...let's be grateful for what we have first. The ability to use the *Loop
 
 In fact there are several OS-AID systems for iOS which use a common set of pump and CGM repositories. And new ones are being developed.
 
-This [link](../build/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS OS-AID community. You need to consider which ones are available in your country.
+This [link](../intro/pump.md#pumps-compatible-with-the-loop-app){: target="_blank" } lists all the compatible pumps. Please refer to it for updates. There are several additional BLE pumps available to the iOS OS-AID community. You need to consider which ones are available in your country.
 
 - - -
 

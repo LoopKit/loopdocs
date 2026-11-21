@@ -12,10 +12,10 @@
 
     If you do not have a Mac, you can build the&nbsp;<span translate="no">Loop</span>&nbsp;app with any computer using a browser. If you want to use that method, review this list and head over to [Build with Browser](../browser/bb-overview.md){: target="_blank" }.
 
-    - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](apple-developer.md){: target="_blank" }
+    - You need a paid ($99/year)&nbsp;[<span translate="no">Apple Developer Account</span>](../intro/apple-developer.md){: target="_blank" }
     - You need an account (free) with&nbsp;[<span translate="no">GitHub</span>](https://github.com)
-    - You need a [compatible phone](phone.md) to install the app from *TestFlight*
-    - You need a [compatible Pump](pump.md) and [CGM](cgm.md) if you want to actually use the app (and not just explore the app)
+    - You need a [compatible phone](../intro/phone.md) to install the app from *TestFlight*
+    - You need a [compatible Pump](../intro/pump.md) and [CGM](../intro/cgm.md) if you want to actually use the app (and not just explore the app)
 
 !!! abstract "Summary"
     Your computer, iPhone and Xcode must have compatible versions to build the *Loop* app using a *Mac*.
@@ -104,7 +104,7 @@ Look into building with [GitHub Actions](../browser/bb-overview.md){: target="_b
 
 ## Next Step:
 
-If you already have an [Apple Developer ID](apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
+If you already have an [Apple Developer ID](../intro/apple-developer.md) or you are using a free ID, next step is [Xcode Version](xcode-version.md).
 
 !!! warning "Free ID"
     The free ID method only works when using the build with *Mac* method. The [Build with Browser](../browser/bb-overview.md) method requires a paid developer ID ($99/year) but does not require a Mac computer.

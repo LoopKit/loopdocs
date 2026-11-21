@@ -10,7 +10,7 @@ The following CGM are supported by some or all versions of Loop:
     * *Dexcom* Share
     * Nightscout as CGM
 
-See also: [Compatible CGM](../build/cgm.md){: target="_blank" } and [CGM Customization](#cgm-customization)
+See also: [Compatible CGM](../intro/cgm.md){: target="_blank" } and [CGM Customization](#cgm-customization)
 
 ## *Dexcom* FAQ
 

@@ -10,7 +10,7 @@
     
     - Paid Developer Account: Go to the [Apple Developer website](https://developer.apple.com/programs/enroll/) to enroll in an individual account.
     - Free: No action required at this time.
-        * Free requires the [Build with *Mac*](overview.md){: target="_blank" } method
+        * Free requires the [Build with *Mac*](../build/overview.md){: target="_blank" } method
 
 !!! question "FAQs"
     - **"Can I use someone else's Apple Developer account?"** See this [Answer](../faqs/loop-faqs.md#can-i-use-someone-elses-apple-developer-account){: target="_blank" }.
@@ -42,7 +42,7 @@ If you decide to use a **FREE** developer account, here's what you need to know:
 
 1. You must use the [Build with *Mac*](../build/overview.md) method to build Loop.
 2. Loop apps signed with a free developer account will expire after 7 days.  On the 7th day, your Loop app will simply turn white when you open it and then immediately close. To rebuild the Loop app, you will have to find a computer and rebuild the app onto your iPhone again. You cannot rebuild the app on day 5 (when it is convenient, for example), hoping to reset the 7-day clock.  The app will still expire on the 7th day from when it was first signed and created.
-3. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](build-free-loop.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
+3. If you decide to switch to a paid account after trying out the free account, you will need to rebuild your Loop app to sign it with the new paid account. Furthermore, switching from a [Free to a Paid](../build/build-free-loop.md#switching-from-free-to-paid-memberships) account requires entering all the settings again (and starting a fresh pod).
 4. You will have to do an extra step during the build process to remove Siri and Apple Push capabilities to build with free accounts. Because free accounts do not have access to Apple Push notifications, you will also not be able to use [Remote Commands](../nightscout/remote-overview.md){: target="_blank" } through Nightscout.
 
 ### Paid Developer Account
@@ -70,5 +70,5 @@ If you choose to use the free account, you don't have to do anything on that web
 
 Read the next two pages. You will be reminded again when you set up your app.
 
-* [Test Settings](../build/test-settings.md)
-* [Loop Data](../build/loop-data.md)
+* [Test Settings](test-settings.md)
+* [Loop Data](loop-data.md)

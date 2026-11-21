@@ -29,7 +29,7 @@ The *Loop* app is an automated insulin delivery app that you build and run on an
 
 The *Loop* app may suit you if you:
 
-* Use or have access to a [compatible pump](build/pump.md) and [compatible CGM](build/cgm.md)
+* Use or have access to a [compatible pump](intro/pump.md) and [compatible CGM](intro/cgm.md)
 * Are willing to learn the app, test your settings and rebuild the app when needed
 * Like to make a note of your meals
     * *Loop* only needs an estimate of meal size

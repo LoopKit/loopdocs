@@ -16,8 +16,8 @@ The first time you build the *Loop* app, it takes you through the Onboarding pro
     * [Add CGM](add-cgm.md)
     * [Add Pump](add-pump.md)
 * Review these pages from the Intro tab of LoopDocs
-    * [Test Settings](../build/test-settings.md)
-    * [Loop Data](../build/loop-data.md)
+    * [Test Settings](../intro/test-settings.md)
+    * [Loop Data](../intro/loop-data.md)
     * [Get Help](../intro/loopdocs-how-to.md)
 
 * Read the rest of the pages listed under [All Loopers](#all-loopers), below. 

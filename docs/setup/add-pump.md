@@ -21,7 +21,7 @@ Loopers can choose from multiple pumps and a simulator:
     * [Medtrum Nano patch pump](#medtrum-nano-setup) (available with v3.14.2 and newer)
     * [Minimed](#medtronic-setup)
         * Note: only some Medtronic Minimed pumps are compatible
-        * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
+        * Please refer to [Compatible Pump](../intro/pump.md#check-medtronic-pump-version) for additional details
     * [Dana-i / DanaRS-v3](#dana-i-danars-v3-setup) (**work-in-progress; new pump manager, use with care**)
         * Note: DanaRS-v1 or any Dana Korean versions are not supported
     * Insulin Pump Simulator
@@ -37,7 +37,7 @@ Loopers can choose from multiple pumps and a simulator:
     * [Medtrum Nano patch pump](#medtrum-nano-setup)
     * [Minimed](#medtronic-setup)
         * Note: only some Medtronic Minimed pumps are compatible
-        * Please refer to [Compatible Pump](../build/pump.md#check-medtronic-pump-version) for additional details
+        * Please refer to [Compatible Pump](../intro/pump.md#check-medtronic-pump-version) for additional details
     * [Tandem Mobi](#tandem-mobi-setup) (**open beta; new pump manager, requires the `feat/tandem-next-dev` branch, use with care**)
     * Insulin Pump Simulator
     * Dana is not available for *Loop* 4 at this time
@@ -47,7 +47,7 @@ Loopers can choose from multiple pumps and a simulator:
 
     * **Omnipod 5**
     * **Omnipod DASH**
-    * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../build/rileylink.md){: target="_blank" } compatible device to Loop)
+    * **Omnipod Classic** is the older (Eros) pods (requires [RileyLink](../intro/rileylink.md){: target="_blank" } compatible device to Loop)
 
 - - -
 

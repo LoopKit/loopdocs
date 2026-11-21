@@ -22,14 +22,14 @@ You get the same app either way:
 
 You need these whichever way you build:
 
-1. [Compatible iPhone](../build/phone.md)
-1. [Compatible Pump](../build/pump.md)
-1. [Compatible CGM](../build/cgm.md)
-1. [RileyLink Compatible Device](../build/rileylink.md)
+1. [Compatible iPhone](phone.md)
+1. [Compatible Pump](pump.md)
+1. [Compatible CGM](cgm.md)
+1. [RileyLink Compatible Device](rileylink.md)
     * Not needed with Omnipod 5, Omnipod DASH, Medtrum, Dana or Tandem Mobi
     * Required for Medtronic and Omnipod Eros
-1. [Apple Developer Membership](../build/apple-developer.md)
-    * Building for a child? Read [Loopers Need Their Own Apple ID](../build/apple-developer.md#loopers-need-their-own-apple-id)
+1. [Apple Developer Membership](apple-developer.md)
+    * Building for a child? Read [Loopers Need Their Own Apple ID](apple-developer.md#loopers-need-their-own-apple-id)
     * Build with Browser needs a paid account
     * Build with *Mac* can use a free account, but you must rebuild every 7 days
 
@@ -51,7 +51,7 @@ Beyond your pump, CGM, supplies and insulin, plan for these costs:
 | *Apple* Developer Program | $99 per year | Required for Build with Browser; Build with *Mac* can use a free account if you rebuild every 7 days |
 | RileyLink compatible device | About $150 each, one time | Only for Medtronic and Omnipod Eros; a spare is recommended |
 | *GitHub* account and *Xcode* | Free | |
-| *Nightscout* (optional) | Free or a small cost if you build it yourself, or a monthly fee from a provider | See [Loop Data](../build/loop-data.md) |
+| *Nightscout* (optional) | Free or a small cost if you build it yourself, or a monthly fee from a provider | See [Loop Data](loop-data.md) |
 
 And for this time:
 
@@ -78,4 +78,4 @@ After you build, continue with [Set Up](../setup/overview.md) and [Operate](../o
 
 ## Next Step
 
-Start with [Compatible iPhone](../build/phone.md), then use Next (or the `n` key) to go through the rest of the Intro pages. If you have already reviewed them, go to [Build with Browser](../browser/bb-overview.md) or [Build with *Mac*](../build/overview.md).
+Start with [Compatible iPhone](phone.md), then use Next (or the `n` key) to go through the rest of the Intro pages. If you have already reviewed them, go to [Build with Browser](../browser/bb-overview.md) or [Build with *Mac*](../build/overview.md).
