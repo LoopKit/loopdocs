@@ -72,7 +72,7 @@ None of the ways listed here are guaranteed to prevent a screaming pod, but they
 
 * Keep the Loop app up to date; newer versions might include improvements to reduce pod battery load
 * Maintain a wider correction range (10 to 20 mg/dL; 0.5 to 1.1 mmol/L) instead of a single number
-* Loop Version 3, for Eros pods when used with a RileyLink Device that has a lot of communication errors, will send many repeated messages trying to resolve uncertain communications
+* The *Loop* app, for Eros pods when used with a RileyLink Device that has a lot of communication errors, will send many repeated messages trying to resolve uncertain communications
     * Make sure your RileyLink Device is working well
     * Use a 433 Mhz RileyLink for Eros Pods and ensure the antenna is not loose or pinched
 

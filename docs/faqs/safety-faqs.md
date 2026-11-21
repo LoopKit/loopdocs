@@ -58,11 +58,11 @@ For more information, please read [How do Delivery Limits Affect Automatic Dosin
 
 ## Health app permissions
 
-For older versions of&nbsp;_<span translate="no">Loop</span>_, or if you customized&nbsp;<span translate="no">Loop 3</span>&nbsp;to read carbohydrates from third-party apps, be aware that you cannot edit those entries inside the&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
+For older versions of&nbsp;_<span translate="no">Loop</span>_, or if you customized the&nbsp;<span translate="no">Loop</span>&nbsp;app to read carbohydrates from third-party apps, be aware that you cannot edit those entries inside the&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
 
 If you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, _<span translate="no">Loop</span>_&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
 
-* <span translate="no">Loop 3</span>: review [Customization: Build Time Features](../version/build-time-flag.md)
+* Review [Customization: Build Time Features](../version/build-time-flag.md)
 
 ## Glucose Prediction is Scary
 
@@ -78,7 +78,7 @@ Read this section on the override page for information: [Avoid Extreme Insulin N
 
 ### Scenario 2: Entry Error into Apple Health
 
-With version 3 of the *Loop* app, it is no longer necessary to enter glucose or insulin manually into the *Apple Health* app for the *Loop* app to read. There are methods within the *Loop* app for entering a fingerstick value or non-pump insulin.
+With the *Loop* app, it is not necessary to enter glucose or insulin manually into the *Apple Health* app for the *Loop* app to read. There are methods within the *Loop* app for entering a fingerstick value or non-pump insulin.
 
 However, some people are used to entering information into *Apple Health* directly - and it still works. The *Loop* app will read entries from *Apple Health*. But if you do this:
 

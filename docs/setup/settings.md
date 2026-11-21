@@ -138,7 +138,7 @@ If you choose to share usage data, it is collected anonymously. The choices are:
 
 ### Algorithm Experiments
 
-The Algorithm Experiments are new with Loop 3.4 and we recommend you review the details on the [Features](features.md) new with Loop 3 page. Many people have tested these and like them, but you need to decide whether to enable them.
+The Algorithm Experiments are new with Loop 3.4 and we recommend you review the details on the [Features](features.md) page. Many people have tested these and like them, but you need to decide whether to enable them.
 
 * [Glucose Based Partial Application (GBPA)](features.md#glucose-based-partial-application-gbpa)
     * Affects speed of Automatic Bolus delivery when enabled

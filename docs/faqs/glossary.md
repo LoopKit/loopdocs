@@ -142,7 +142,9 @@ When Google Translate is selected:
 
 **<span translate="no">Loop</span>**&nbsp; (Loop): With a capital L, Loop is one of several open-source automated insulin delivery (OS-AID) systems
 
-**<span translate="no">Loop 3</span>**&nbsp; (Loop 3): Latest release with major updates
+**<span translate="no">Loop 3</span>**&nbsp; (Loop 3): Loop version 3.x, the released version of the Loop app
+
+**<span translate="no">Loop 4</span>**&nbsp; (Loop 4): the next major version of the Loop app, being tested in the next-dev branch
 
 **<span translate="no">Loop Cycle</span>**&nbsp; (Loop Cycle): typically 5 minutes: new CGM reading, prediction update, pump update and, if in Closed Loop, dosing update if needed
 
@@ -170,9 +172,9 @@ When Google Translate is selected:
 
 **<span translate="no">nuke</span>**&nbsp; (nuke): clear signing credentials from your Match-Secrets repository
 
-**<span translate="no">Onboarding</span>**&nbsp; (Onboarding): familiarize new, and existing, Loop users with settings in Loop 3 and ensure the Therapy Settings are all entered and are within safety guardrails
+**<span translate="no">Onboarding</span>**&nbsp; (Onboarding): familiarize new, and existing, Loop users with settings in Loop and ensure the Therapy Settings are all entered and are within safety guardrails
 
-**<span translate="no">Omnipod</span>**&nbsp; (Omnipod): Insulet tubeless insulin pump; Loop supports Eros (with RileyLink) and DASH.  Eros is also known as Classic, UST400, and System.
+**<span translate="no">Omnipod</span>**&nbsp; (Omnipod): Insulet tubeless insulin pump; Loop supports Omnipod 5, DASH and Eros (with RileyLink).  Eros is also known as Classic, UST400, and System.
 
 **<span translate="no">OrangeLink</span>**&nbsp; (OrangeLink): radio-frequency device Loop uses to control Eros pods (aka. Gen 3) and older Medtronic pumps
 

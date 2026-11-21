@@ -79,7 +79,7 @@ Unlike traditional CGMs that require frequent sensor changes, Eversense reduces 
 ## CGMs Not Supported in the *Loop* App 
 
 
-Currently, there are no solutions for *Guardian* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. Version 3 or later of the *Loop* app allows the use of Nightscout as a CGM source.
+Currently, there are no solutions for *Guardian* CGM to be used directly with the *Loop* app, but some [Uploaders](https://nightscout.github.io/uploader/uploaders/) to Nightscout are available using an Android phone. The *Loop* app can use Nightscout as a CGM source.
 
 ## Next Step
 

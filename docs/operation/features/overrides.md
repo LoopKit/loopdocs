@@ -13,7 +13,7 @@ Many new Loopers interpret Loop Overrides as a one-for-one replacement for manua
 
 ## Manual Temp Basal
 
-Sometimes you need to set a manual temp basal and you need it to keep working whether you are near your gear. There's a function for that with Loop 3.
+Sometimes you need to set a manual temp basal and you need it to keep working whether you are near your gear. There's a function for that.
 
 * Pods: use the [Manual Temp Basal](../../pumps/omnipod.md#manual-temp-basal) setting
 * Medtronic: select Open Loop and use your Medtronic pump temp basal feature
@@ -109,7 +109,7 @@ There have been users who select a 10% overall insulin need. This is NOT the sam
 
 Instead of selecting 10%, raise your correction range with a moderate needs adjustment. Loop tends to suspend insulin delivery via temp basals with the next CGM reading.
 
-With Loop 3, there is now a warning message in the meal entry screen when an override is active with an overall insulin needs value other than 100%. The user can decide whether to proceed with the meal entry with the override active.
+There is a warning message in the meal entry screen when an override is active with an overall insulin needs value other than 100%. The user can decide whether to proceed with the meal entry with the override active.
 
 If you feel the need to immediately halt insulin delivery, consider a [Manual Temp Basal](../../pumps/omnipod.md#manual-temp-basal) or suspend command to the pump. If you choose to suspend, be sure to pay attention to the reminder to resume insulin delivery later.
 
@@ -134,8 +134,6 @@ You must select an emoji, name the preset and modify either the overall insulin 
 When you've made your selections, save the preset using the "Save" button in the upper right corner.
 
 ### Select 1% Insulin Needs
-
-Available with Loop 3.
 
 The selectable Overall Insulin Needs values are not limited by the default picker values of 10%.
 

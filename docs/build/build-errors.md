@@ -226,7 +226,7 @@ _Package.resolved file is corrupted or malformed; fix or delete the file to cont
 ![package corrupted or malformed error](img/xcode-needs-to-be-updated.jpeg){width="600"}
 
 
-This error is new with Loop 3, which uses Package Dependencies.
+This error can happen because the *Loop* app uses Package Dependencies.
 
 There are 2 problems shown here
 
@@ -241,7 +241,7 @@ Update Xcode, which may require you to update macOS.
 
 ### Many Search 1.4.3 for this Error
 
-This error is new with Loop 3, which uses Package Dependencies.
+This error can happen because the *Loop* app uses Package Dependencies.
 
 * If you notice a red x in Xcode (as circled in the graphic below)
     - Click on the red x to show the error in the left pane
@@ -270,7 +270,7 @@ Refer to the graphic below
 
 ### Unable To Read Included File
 
-This error has been seen with Loop 3. The permanent xcconfig file, created by the build script and used to sign targets, is written to a folder where the user does not have read permission.
+The permanent xcconfig file, created by the build script and used to sign targets, is written to a folder where the user does not have read permission.
 
 **Error Message:**
 

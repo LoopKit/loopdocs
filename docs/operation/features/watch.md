@@ -5,7 +5,7 @@ The Loop user can directly enter carbs and boluses and turn on or off premeal or
 ![img/watch.png](../../img/watch-loop-3.svg){width="300"}
 {align="center"}
 
-There are two screens in the Loop watch app, shown in the bottom half of the graphic above. By swiping left or right, the other screen is displayed. The eventual (predicted) glucose feature, shown on both screens in the graphic can be turned off as a feature in Loop 3, but requires the user to rebuild. It is on by default.
+There are two screens in the Loop watch app, shown in the bottom half of the graphic above. By swiping left or right, the other screen is displayed. The eventual (predicted) glucose feature, shown on both screens in the graphic can be turned off with a build-time feature, but requires the user to rebuild. It is on by default.
 
 The screen on the left side of the graphic shows Loop status, current glucose, trend arrow and eventual glucose with icons to enable carb entry, bolus entry, pre-meal and override selection. If necessary, use the crown (or swipe up and down) to see the full display.
 
@@ -117,7 +117,7 @@ If you enter carbs on your watch while not connected to the phone, they will app
 
 ### Eventual Glucose on Watch
 
-One feature on the Watch app that can be turned on and off with Loop 3 is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
+One feature on the Watch app that can be turned on and off is the eventual glucose display on the watch. That display is shown on the graphic above with current glucose on left, trend arrow beside it and eventual (from prediction) glucose on the right.
 
 If this is a feature you want turned off, please follow the directions on the Code Customization page (found under the Version tab): [Build Time Features](../../version/build-time-flag.md).
 
@@ -125,7 +125,7 @@ If this is a feature you want turned off, please follow the directions on the Co
 
 If you add an Apple Watch after building Loop using Xcode on a computer, you will need to pair your watch to your iPhone and then rebuild Loop to enable the Loop watch app to show up as an available watch app.
 
-If you use the new, Loop 3 only, [Build Loop using GitHub Actions](../../browser/bb-overview.md) process that enables building without needing a Mac, the watch app should work so long as you have the watch paired to your phone when you install from TestFlight.
+If you use [Build with Browser](../../browser/bb-overview.md), which builds without a Mac, the watch app should work so long as you have the watch paired to your phone when you install from TestFlight.
 
 ## Watch Hardware and OS Requirements
 

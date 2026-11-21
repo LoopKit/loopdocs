@@ -124,8 +124,6 @@ Go to the Finder app, click on Applications, then open the Utilities folder.  Lo
 
 ### Build Select Script
 
-With the release of Loop 3, the build process is different and simpler
-
 * Please read each step as if you are a new builder
 * Don't assume you know what you are doing
 
@@ -486,19 +484,19 @@ But wait - there's more.
 * Ask [questions](../intro/loopdocs-how-to.md#how-to-find-help) if you are confused.
 * Learn to use the [LoopDocs search feature](../intro/overview-intro.md#website-search)
 
-### New to Loop 3
+### New to *Loop*
 
-If this is your first build with Loop 3, head to the Set Up tab starting here: [Loop 3 Overview](../setup/overview.md).
+If this is your first build of the *Loop* app, head to the Set Up tab starting here: [Set Up Overview](../setup/overview.md).
 
 !!! tip "Pro Tip: Read Along in LoopDocs as you Onboard"
-    One of the goals for Loop 3 is to make the app robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.
+    One of the goals for the *Loop* app is to make it robust even if you don't read the documentation, but a lot of questions may be resolved if you read along in LoopDocs as you onboard.
 
     All those mentors who answer questions are volunteers.
 
 Even if you don't read all the pages under the Set Up tab now, these links are important.
 
 * New Looper: [Onboarding](../setup/onboarding.md)
-* Building Loop 3 over Loop 2.2.x: [Experienced Looper Onboarding](../setup/onboarding.md#experienced-loopers)
+* Building over Loop 2.2.x: [Experienced Looper Onboarding](../setup/onboarding.md#experienced-loopers)
 
 !!! info "Add a Calendar Reminder"
 

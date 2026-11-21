@@ -113,7 +113,7 @@ A number of OrangeLink Pro devices were shipped with FW2.6 and for people who al
 !!! warning "Firmware/Hardware Labeling"
     Earlier versions of the OrangeLink firmware did not put the hardware (HW) version and the firmware version (FW) in the "correct" location to hand off to Loop for interpretation. Do not worry if you are running on any FW version 1.x or 2.x and your HW version number doesn't say 1.0 or 1.1. This has been fixed for FW versions 3.x.
 
-    Loop 3 is compatible with the OrangeLink.
+    The *Loop* app is compatible with the OrangeLink.
 
 ## RileyLink Information
 

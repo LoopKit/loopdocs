@@ -1,4 +1,4 @@
-This page has detailed information about Loop 3 Displays.
+This page has detailed information about *Loop* displays.
 
 ## Main Loop Screen
 
@@ -207,7 +207,7 @@ From left to right, the icons are:
 ## HUD Details
 
 !!! abstract "Very Detailed Section"
-    This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to Loop 3 icons and messages.
+    This section is packed with an incredible amount of detail. Remember it exists and come back when you need a reference to *Loop* icons and messages.
 
     If you are a new looper your eyes may glaze over the first time through. Don't worry. But do come back and read this section again after you've used the system in Open Loop mode (before you enable Closed Loop mode). And then come back again after a day or so of closed loop testing.
 
@@ -243,7 +243,7 @@ This table shows examples of Loop Status Icons and what each icon means.
 |![A green circle indicating nominal status for closed loop](img/icon-closed-green.svg){width="175"}|A green circle indicates the app is in Closed Loop mode and it completed a [cycle](#loop-cycle) within the last 5 minutes.|
 |![A yellow circle indicating warning status for closed loop](img/icon-closed-yellow.svg){width="175"}|A yellow circle indicates the app is in Closed Loop mode and it has completed a cycle in the last 5-15 minutes.<br><br>It is not unusual to have a few instances of yellow loops per day.  They can be caused by being out of range (physically), Bluetooth or RileyLink “noise” interference, or even that the pump was giving a bolus.<br><br>Most yellow loops will self-resolve without needing any special troubleshooting.|
 |![A red circle indicating failure status for closed loop](img/icon-closed-red.svg){width="175"}|A red circle indicates the Loop has not completed in over 15 minutes.<br><br>This is not a typical state, and you should [troubleshoot](../troubleshooting/red-loop.md) the problem.<br><br>In this case, either the [Glucose Icon](#glucose-status-icon) or the [Pump Icon](#pump-status-icon) or both will display an `alert` graphic.|
-|![A green open circle with a gap at the top denoting open loop](img/icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “Open Loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented in Loop 3 for Omnipod and Omnipod DASH, at the current time._|
+|![A green open circle with a gap at the top denoting open loop](img/icon-open-green.svg){width="175"}|When the circle is open at the top, Loop is operating in “Open Loop” mode. The color code is the same as for closed loop except the cycle involves updating predictions from available blood glucose values and obtaining pump status; but the app will not make any automated changes in insulin delivery.<br><br>While Manual Temp Basal (MTB) is active, the Open Loop icon will be displayed until MTB expires or is cancelled. _Note that MTB is only implemented for Omnipod and Omnipod DASH, at the current time._|
 
 !!! info "Fun Fact"
     The loop status icon will pulse slightly when Loop is communicating with the pump.  The pulsing will stop when the communication has completed (green loop) or given up (yellow or red loop).
@@ -357,13 +357,13 @@ The display to modify time zone is found on your Pump screen:
 * [Omnipod](../pumps/omnipod.md#pump-time)
 * [Medtronic](../pumps/medtronic.md#change-time-zone)
 
-You can choose to leave the pump and phone time zones different; the pump icon on the HUD (Loop 3 only) will show the clock icon to remind you. Many people do this for short trips.
+You can choose to leave the pump and phone time zones different; the pump icon on the HUD will show the clock icon to remind you. Many people do this for short trips.
 
 ### Other Time Changes
 
 What about other time changes?  Suppose the iOS -> General -> Time & Date is modified to manually change the time, but the time zone is not adjusted. (Sometimes this is done to defeat limits on games. **Do Not** do this on a Looping phone.  If you have an "old" glucose reading in the "future" - Loop will not predict correctly which may have dangerous consequences.) There will not be an obvious display in the HUD or Omnipod screen (which keys off time zone) but you will get regular warnings that phone does not have automatic time set.
 
-Loop 3 will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
+The *Loop* app will display this warning modal screen if it detects a problem with the Phone time. It leaves it up the user to decide what action should be taken. To make this warning stop, go to iOS -> General -> Time & Date and enable Set Automatically. 
 
 ![graphic warning user of a problem with the time on the phone](img/omnipod-time-change.svg){width="300"}
 {align="center"}
@@ -394,4 +394,4 @@ The Status Row is located immediately below the CGM, Loop and Pump Icons and is 
 |<br><br>![override symbol and name with until time stamp message](img/status-row-override.svg){width="350"}|
 |If a higher priority message is not displayed in the `Status Row` and an override is active, the override symbol and name, along with the time at which the override expires, is displayed. <br><br>Tapping on the `Status Row` opens the screen for that particular override to enable the user to edit the override. Note that any changes made to that override are applied just to the current session. If you want the override permanently modified, refer to the [Overrides](../operation/features/overrides.md) instructions.|
 |<br><br>![Pre-meal Preset message with until time stamp message](img/status-row-pre-meal.svg){width="350"}|
-|If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>**New with Loop 3:** The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the Pre-Meal and Override icons in the toolbar highlighted.|
+|If a higher priority message is not displayed in the `Status Row` and the Pre-Meal Range is active in the toolbar, the `Pre-meal Preset, until time stamp` is displayed. Tapping on the status row has no effect for this message.<br><br>The Pre-Meal Preset can be engaged with an Override. When both are active, the Pre-Meal Range supersedes the range of the active Override, but the other settings for that Override still apply. When both are active, the `Status Row` message reflects the Override with both the Pre-Meal and Override icons in the toolbar highlighted.|

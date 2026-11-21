@@ -28,7 +28,7 @@ The Apple ID is DIFFERENT than the Apple Developer ID.
 
     Sharing an Apple ID among two or more loopers can cause safety issues. You don't want Sally to be dosed for Joe's lunch in addition to her own and vice versa.
 
-    * Loop 3 does not read Carbohydrates from Apple Health by default, but if you need that feature, you can [modify your feature flags](../version/build-time-flag.md){: target="_blank" }.
+    * The *Loop* app does not read Carbohydrates from Apple Health by default, but if you need that feature, you can [modify your feature flags](../version/build-time-flag.md){: target="_blank" }.
 
 ## Developer Account
 

@@ -27,7 +27,7 @@ To view the list of data stored in Health
 ### Apple Health Storage
 
 !!! question "Is Apple Health access Required?"
-    There is internal *Loop* storage of all data required for the app to operate with a 7-day history. (This is new with version 3.) So using Apple Health for data storage is not 100% required for the app to operate, but it is very useful and recommended.
+    There is internal *Loop* storage of all data required for the app to operate with a 7-day history. So using Apple Health for data storage is not 100% required for the app to operate, but it is very useful and recommended.
 
     If you do not give Loop permission to use Apple Health, you will see no records in the Health app from Loop for carbohydrates, insulin or glucose. LoopDocs assumes permission was enabled to Apple Health.
 
@@ -53,7 +53,7 @@ All other CGM readings are reported with the *Loop* icon and there is no transit
 
 In `Loop 2.2.x`, if you set *Apple* Health app permissions to allow it, *Loop* will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that *Loop* reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow *Loop* to write to carbohydrate storage but not read.
 
-In `Loop 3`, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up a `Build Time Flag`  when you build the app.
+In the *Loop* app, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up a `Build Time Flag`  when you build the app.
 
 * The `Build Time Flag`, `OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED`, is used to enable ability for the *Loop* app to read from the *Health* app
 * The instructions for this code customization are found in [Modify the `Build Time Flags`](../version/build-time-flag.md#modify-the-build-time-flags){: target="_blank" }.
@@ -84,7 +84,7 @@ The relationship between *Loop* and *Apple* HealthKit is very important to under
     * It may take a loop cycle or two to show up in Health, but it will appear
 * When you add insulin, such as from an injection, to the Health app, *Loop* reads it and adds it to IOB
     * It will not be added to the Event History because this is not a pump event
-    * *Loop* 3 adds a new feature that allows you to add non-pump insulin from within the app instead of requiring you to add it inside the Health app
+    * The *Loop* app lets you add non-pump insulin from within the app instead of requiring you to add it inside the Health app
 * If you delete an entry from the `Event History` list, but leave that same entry in Health, *Loop* reads it back from Health
     * It will not show up in the Event History, but it will still contribute to IOB
     * You must delete a pump event from both `Event History` and Health data; it is best if you do this within one loop cycle

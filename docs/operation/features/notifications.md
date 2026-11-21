@@ -4,7 +4,7 @@ Loop provides discrete notifications on the iPhone and Watch which will appear o
 
 ## Loop Alert - Unable to Reach Pump
 
-With Loop 3, there is a new modal alert that halts all Loop activity until pump communication can be restored.
+The *Loop* app has a modal alert that halts all Loop activity until pump communication can be restored.
 
 ![alert that pump communication was lost at a critical time](img/alert-unable-to-reach-pump.svg){width="350"}
 {align="center"}
@@ -73,12 +73,12 @@ You can customize the way notifications of Loop are behaving in the Settings App
 ![img/iphone-settings-notifications.png](img/iphone-settings-notifications.png){width="250"}
 {align="center"}
 
-Loop 3 Notifications Settings:
+*Loop* Notifications Settings:
 
 ![Loop 3 iPhone Notifications Settings](img/iphone-notifications-loop3.jpeg){width="250"}
 {align="center"}
 
-Mark **Loop 3** notifications as **time-sensitive** and ask for **immediate delivery**:
+Mark **Loop** notifications as **time-sensitive** and ask for **immediate delivery**:
 
 - tick the **`Immediate Delivery`** so that notifications are delivered right away
 - enable the **`TimeSensistive Notifications`** checkbox 
@@ -141,7 +141,7 @@ Select your desired notification level for low reservoir
 ![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
 {align="center"}
 
-* Loop 3 reports No Insulin on the [Heads-Up-Display](../../setup/displays.md#pump-status-icon).
+* The *Loop* app reports No Insulin on the [Heads-Up-Display](../../setup/displays.md#pump-status-icon).
 
 ![pump alert - red exclamation point with phrase no insulin](../../setup/img/pump-alert-no-insulin.svg){width="125"}
 {align="center"}

@@ -1,6 +1,6 @@
 ## Overview
 
-With Loop 3, some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.
+Some features are enabled or disabled by default but can be modified by adding a "flag" in the LoopConfigOverride.xcconfig file.
 
 ## Modify the `Build Time Flags`
 
@@ -101,8 +101,8 @@ You can customize chart display settings if you want. The original lines of code
 
 ### Enable Child Model
 
-Loop 3, by default, does not include the concept of child versus adult for rapid-acting insulin, i.e., Humalog, Novalog and Apidra.
+The *Loop* app, by default, does not include the concept of child versus adult for rapid-acting insulin, i.e., Humalog, Novalog and Apidra.
 
 * The child model can be enabled following the directions above, adding ADULT_CHILD_INSULIN_MODEL_SELECTION_ENABLED to the LoopConfigOverride.xcconfig file and rebuilding
-* Insulin Model is then found in the Therapy Setting section of Loop 3 with Adult selected by default
+* Insulin Model is then found in the Therapy Setting section of the *Loop* app with Adult selected by default
 * Insulin Type continues to be associated with the pump and can be modified in the Pump Settings screen

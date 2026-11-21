@@ -6,7 +6,7 @@ This page is not stand-alone. You typically get here after choosing to Sign Manu
 
 Normally this option is chosen by people building the app with the Free option or if you want to build to a simulator on your computer.
 
-If you have a paid developer account and are building Loop 3, you are far better off choosing to configure the permanent override file with your Apple Developer ID. Refer to [Sign Targets](build-app.md#sign-targets).
+If you have a paid developer account and are building the *Loop* app, you are far better off choosing to configure the permanent override file with your Apple Developer ID. Refer to [Sign Targets](build-app.md#sign-targets).
 
 The instructions found on this page are for the first build.  With the Free version, you need to build every week. Refer to [Build Again with this Download](build-app.md#build-again-with-this-download).
 
@@ -163,6 +163,6 @@ Before deleting the FreeLoop, either record all the settings or take screenshots
 
 PaidLoop will know nothing about the settings and information you had stored in FreeLoop, so you will need to re-enter all your settings (basal rates, ISF, carb ratios, etc.) and configurations into the new PaidLoop. It will also not connect or control any pods you are currently using with the old FreeLoop app. The one exception is Nightscout credentials, which are stored in your keychain. If you entered your Nightscout credentials into FreeLoop, they will persist across app removal and be used by PaidLoop.
 
-With Loop 3, if you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. 
+If you use Nightscout, you can import settings that were uploaded to Nightscout by FreeLoop into PaidLoop, so that simplifies the transition. 
 
 Once PaidLoop is working, delete the FreeLoop instance from your phone to avoid confusion. If you followed the directions when building, you may have configured your phone to prevent deletion of Loop.  Head over to [Protect that App](build-app.md#protect-that-app), reverse the steps, delete FreeLoop, then do the steps again to protect PaidLoop.

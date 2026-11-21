@@ -2,7 +2,7 @@
 
 The following CGM are supported by some or all versions of Loop:
 
-* All *Dexcom* CGM (*Loop* v3 and later)
+* All *Dexcom* CGM
     * This includes 15-day G7 CGM
 * *EU Libre 2/2+* CGM (Loop 3.4 and later), *Libre 3/3+* CGM (via an experimental testing branch, [next-dev branch](../version/development.md#status-for-next-dev-branch))
 * Eversense E3 and 365 (included with *Loop* v3.14.2 and newer)

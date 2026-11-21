@@ -1,8 +1,8 @@
-## Loop 3 Set Up Overview
+## Set Up Overview
 
 !!! success "Congratulations on Building Loop!"
 
-The first time you build Loop 3, the app takes you through the Onboarding process. Review this page before using your app.
+The first time you build the *Loop* app, it takes you through the Onboarding process. Review this page before using your app.
 
 !!! tip "Suggestion"
     * Read this page all the way through without clicking on any links

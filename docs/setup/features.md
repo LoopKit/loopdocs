@@ -1,6 +1,6 @@
-## **New with Loop 3**
+## **Features**
 
-This page discusses some features new with Loop 3.
+This page describes some features of the *Loop* app.
 
 - - -
 
@@ -39,7 +39,7 @@ Please refer to:
 
 ### Remote Control with *LoopCaregiver* or *Nightscout*
 
-Loop 3 supports Remote Carb and Remote Bolus feature to enable remote caregivers to better assist the person who needs support managing with Loop. This requires the Loop user have a Nightscout site. Please review these pages housed in *LoopDocs*:
+The *Loop* app supports Remote Carb and Remote Bolus features to enable remote caregivers to better assist the person who needs support managing with Loop. This requires the Loop user have a Nightscout site. Please review these pages housed in *LoopDocs*:
 
 * [Remote Overview](../nightscout/remote-overview.md){: target="_blank" }
 * [Remote Configuration](../nightscout/remote-config.md){: target="_blank" }
@@ -60,11 +60,11 @@ You can use the same *Apple* push notification credentials to support more than 
 
 ## Non-Pump Insulin
 
-If insulin is taken from a different source and the user wants to let Loop know, there is a new method in Loop 3.
+If insulin is taken from a different source and the user wants to let Loop know, there is a method in the *Loop* app.
 
 With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
 
-With Loop 3, the "old" method still works, but there is a new method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
+The "old" method still works, but there is another method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
 
 ### Enter non-pump insulin before carbs
 
