@@ -27,17 +27,20 @@ The *Loop* app is an automated insulin delivery app that you build and run on an
 
 ## Is the *Loop* App Right for Me?
 
+The *Loop* app may suit you if you:
+
+* Use or have access to a [compatible pump](build/pump.md) and [compatible CGM](build/cgm.md)
+* Are willing to learn the app, test your settings and rebuild the app when needed
+* Like to make a note of your meals
+    * *Loop* only needs an estimate of meal size
+    * It recommends a bolus which you can accept or modify
+    * With every glucose reading from your CGM, *Loop* updates that recommendation to increase or decrease the insulin it delivers
+
 The *Loop* app is one of several automated insulin delivery (AID) systems. Compare it with the others before you start:
 
 * **Commercial systems**, such as Omnipod 5 or Tandem Control-IQ, are approved by regulators and supported by the manufacturer. You do not build anything, but you have fewer choices of settings and devices.
 * **Trio** is another open-source app that you build for iPhone. It uses a different algorithm, based on OpenAPS, with more settings to adjust. See the [Trio documentation](https://triodocs.org){: target="_blank" }.
 * **AAPS** is an open-source system for Android phones. See the [AAPS documentation](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
-
-The *Loop* app may suit you if you:
-
-* Want an iPhone app that you control and can customize
-* Use a [compatible pump](build/pump.md) and [compatible CGM](build/cgm.md)
-* Are willing to learn the app, test your settings and rebuild the app when needed
 
 ## What are my next steps?
 
