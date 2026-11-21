@@ -19,6 +19,10 @@ Words with a dashed underline have a definition. Hover over the word, or tap it 
 
 Every definition is also in the [Glossary](../faqs/glossary.md).
 
+### *Loop* 3 and *Loop* 4 Tabs
+
+Where the steps differ, some pages show tabs labeled `Loop 3` and `Loop 4`. *Loop* 3 is the released app. *Loop* 4 is being tested in the `next-dev` branch. When you pick a tab, *LoopDocs* shows that version on every page until you pick the other one.
+
 ### Website Short Cuts
 
 Type `loopdocs.org` or `looptips.org` in your browser to go to *LoopDocs* or *LoopTips*.

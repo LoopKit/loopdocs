@@ -25,6 +25,20 @@ The *Loop* app is an automated insulin delivery app that you build and run on an
     * The [What is&nbsp;_<span translate="no">Loop</span>_](https://youtu.be/64qhgnmkyAE) video and its [slides (pdf)](http://www.loopandlearn.org/wp-content/uploads/2021/05/What-is-Loop.pdf) are from the&nbsp;<span translate="no">Loop and Learn</span>&nbsp;team. They show an earlier version of the app, but are still a good introduction.
     * Thanks to Tina and Reese Hammer for the video and Matthew Fouse for the graphics
 
+## Is the *Loop* App Right for Me?
+
+The *Loop* app is one of several automated insulin delivery (AID) systems. Compare it with the others before you start:
+
+* **Commercial systems**, such as Omnipod 5 or Tandem Control-IQ, are approved by regulators and supported by the manufacturer. You do not build anything, but you have fewer choices of settings and devices.
+* **Trio** is another open-source app that you build for iPhone. It uses a different algorithm, based on OpenAPS, with more settings to adjust. See the [Trio documentation](https://triodocs.org){: target="_blank" }.
+* **AAPS** is an open-source system for Android phones. See the [AAPS documentation](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
+
+The *Loop* app may suit you if you:
+
+* Want an iPhone app that you control and can customize
+* Use a [compatible pump](build/pump.md) and [compatible CGM](build/cgm.md)
+* Are willing to learn the app, test your settings and rebuild the app when needed
+
 ## What are my next steps?
 
 This site shows you, step by step, how to [**build**](intro/requirements.md){: target="_blank" }, [**set up**](setup/overview.md){: target="_blank" } and [**operate**](operation/loop/open-loop.md){: target="_blank" } the *Loop* app. You do not need a technical background.
@@ -39,6 +53,9 @@ Read this site before you start, and come back to it often. Expect to test and a
 > Do It Yourself (DIY) does not mean Do It Alone!
 
 Once you use the app, follow at least one support group for important updates.
+
+!!! info "Coming Next: *Loop* 4"
+    The next major version of the *Loop* app is being tested in the `next-dev` branch. Where the steps differ, some pages show *Loop* 3 and *Loop* 4 tabs. See [Status for `next-dev` Branch](version/development.md#status-for-next-dev-branch).
 
 ## Important Disclaimer
 

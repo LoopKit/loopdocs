@@ -33,6 +33,15 @@ Many Loopers use all three:
     * More about *Nightscout*: [LoopDocs: *Nightscout*](../nightscout/overview.md){: target="_blank" } and [LoopTips: *Nightscout*](https://loopkit.github.io/looptips/data/nightscout/)
     * For remote commands, read [Set Up Remote for *Nightscout*](../nightscout/remote-config.md#set-up-remote-for-nightscout) and [Paid Providers and Remote Configuration](../nightscout/remote-config.md#paid-providers-and-remote-configuration)
 
+## Follow and Caregiver Apps
+
+Family members and caregivers can follow the *Loop* app from their own devices:
+
+* [*LoopFollow*](https://loopfollowdocs.org){: target="_blank" }: shows data from *Nightscout* or *Dexcom Share* with flexible, loud alarms, and can send remote commands to the *Loop* app (requires *Nightscout*). Many Loopers also use it for themselves because of the alarms.
+* [*LoopCaregiver*](../nightscout/loop-caregiver.md): monitor the *Loop* app and send remote commands (requires *Nightscout*)
+* *Dexcom Follow*: glucose readings shared through *Dexcom Share*
+* *Nightscout*: view your site in any web browser
+
 ## Next Step
 
 You are ready to build, or to continue setting up the *Loop* app. If you have questions, see [Get Help](../intro/loopdocs-how-to.md).

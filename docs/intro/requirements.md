@@ -42,6 +42,27 @@ You need these whichever way you build:
 * A [Compatible Computer](../build/computer.md#check-your-macos-version)
 * [Xcode](../build/xcode-version.md) (free from *Apple*)
 
+## Cost and Time
+
+Beyond your pump, CGM, supplies and insulin, plan for these costs:
+
+| Item | Cost | Notes |
+|---|---|---|
+| *Apple* Developer Program | $99 per year | Required for Build with Browser; Build with *Mac* can use a free account if you rebuild every 7 days |
+| RileyLink compatible device | About $150 each, one time | Only for Medtronic and Omnipod Eros; a spare is recommended |
+| *GitHub* account and *Xcode* | Free | |
+| *Nightscout* (optional) | Free or a small cost if you build it yourself, or a monthly fee from a provider | See [Loop Data](../build/loop-data.md) |
+
+And for this time:
+
+| Step | Time |
+|---|---|
+| Check your phone, pump and CGM | Less than an hour |
+| Order a RileyLink compatible device, if needed | 15 minutes, plus shipping |
+| Enroll in the *Apple* Developer Program | 15-20 minutes, then up to 2 days for *Apple* to confirm |
+| Build the app | A few hours, which you can spread over several days |
+| Test your settings | 1-3 days, in Open Loop |
+
 ## Getting Ready to Build
 
 !!! tip "Simulator Option"

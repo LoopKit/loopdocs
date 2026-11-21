@@ -66,7 +66,7 @@ Yes, there are some costs, beyond the obvious costs of owning a pump and CGM.
     * The *Xcode* app (from from Apple) must also be updated regular
 * If you have a pump that requires a [RileyLink Compatible Device](../build/rileylink.md#rileylink-compatible-devices), expect to spend $150 each (or find a used one). You should have two, one as a spare.
     * The RileyLink is only required for loopable Medtronic pumps and the older Eros Omnipod patch pumps
-    * No RileyLink is needed for the BLE pumps such as DASH, DanaKit and Medtrum patch pump
+    * No RileyLink is needed for the BLE pumps: Omnipod 5, DASH, Medtrum, Dana and Tandem Mobi
 
 There are no other costs, ongoing or initial, to use the *Loop* app beyond what you already pay for your CGM, pump supplies and insulin.
 
