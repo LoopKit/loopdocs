@@ -157,19 +157,6 @@ There are still some **issues**, where text is translated whereas it should not,
 
 To improve the automatic translation quality, please follow these rules when writing or updating the documentation. This will provide *Google Translate* with more context and enhance translation accuracy.
 
-#### *Loop* Is Never Translated
-
-The build hook `hooks/notranslate.py` (listed under `hooks:` in `mkdocs.yml`) marks every capitalized **Loop**, **Looper** and **Loopers** with `translate="no"` when the site is built, so *Google Translate* leaves them in English. This covers page text, navigation labels and the table of contents. You can type Loop without italics or a `span`; "the *Loop* app" still reads well and is fine to keep.
-
-The hook leaves these alone:
-
-* lowercase loop, as in closed loop
-* the mode names Open Loop and Closed Loop, which translate correctly as a phrase
-* longer names such as LoopKit, LoopDocs and Loop-to-Pump (add a `span` where needed)
-* code, and text already marked `translate="no"`
-
-To protect another name, add it to `NAMES` in the hook. The hook changes nothing else in the page.
-
 #### Suggestions
 
 Updates to Eric's suggestions (from Marion)
