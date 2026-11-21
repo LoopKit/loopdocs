@@ -27,7 +27,7 @@ To view the list of data stored in Health
 ### Apple Health Storage
 
 !!! question "Is Apple Health access Required?"
-    There is internal *Loop* storage of all data required for the app to operate with a 7-day history. So using Apple Health for data storage is not 100% required for the app to operate, but it is very useful and recommended.
+    There is internal *Loop* storage of all data required for the app to operate: 7 days of history for *Loop* 3 and 90 days for *Loop* 4. So using Apple Health for data storage is not 100% required for the app to operate, but it is very useful and recommended.
 
     If you do not give Loop permission to use Apple Health, you will see no records in the Health app from Loop for carbohydrates, insulin or glucose. LoopDocs assumes permission was enabled to Apple Health.
 
@@ -84,7 +84,7 @@ The relationship between *Loop* and *Apple* HealthKit is very important to under
     * It may take a loop cycle or two to show up in Health, but it will appear
 * When you add insulin, such as from an injection, to the Health app, *Loop* reads it and adds it to IOB
     * It will not be added to the Event History because this is not a pump event
-    * The *Loop* app lets you add non-pump insulin from within the app instead of requiring you to add it inside the Health app
+    * The *Loop* app lets you add non-pump insulin from within the app. If Health permissions allow it, the *Loop* app also reads insulin added to the Health app and includes it in IOB, but it is better to enter non-pump insulin directly in the *Loop* app
 * If you delete an entry from the `Event History` list, but leave that same entry in Health, *Loop* reads it back from Health
     * It will not show up in the Event History, but it will still contribute to IOB
     * You must delete a pump event from both `Event History` and Health data; it is best if you do this within one loop cycle

@@ -242,14 +242,6 @@ For older code, v3.14.7 and earlier:
 
 - - -
 
-## What about *Tidepool Loop*?
-
-*Tidepool Loop* was cleared by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
-
-There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH Pods.
-
-- - -
-
 ## Do I still need a PDM with Omnipod Loop?
 
 You don't need a PDM to use Pods with your OS-AID system but you are likely to need a PDM serial number registered to your Insulet account to get replacements for failed Pods.
