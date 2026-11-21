@@ -1,6 +1,6 @@
 Volunteers answer questions about the *Loop* app. They are not paid. Doing your homework and giving them the details they need gets you a faster answer.
 
-## How to Ask for Help
+## Before You Post
 
 If you are having trouble building or using your Loop app, there are some important steps to get responses to your question, while also being considerate of our volunteers' time.
 
