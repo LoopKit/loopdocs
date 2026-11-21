@@ -42,11 +42,6 @@ The graphic below show an example expiration alert for a *Mac* build:
 ![Notification display when near the Loop App expiration date](img/loop-app-expiration-warning.png){width="350"}
 {align="center"}
 
-> Notification when app expires is available in these versions or newer:
->
-> * Build with *Mac*: version 2.2.5 or newer
-> * Build with Browser: version 3.3 or newer
-
 ### Free (7-day) Loop App Expiration Alert
 
 The expiration notification pattern is the same as for the Paid Loop App. You may want to add an [Expiration Notification Customization](../../version/code-custom-edits.md#expiration-notification-customization) to modify the first appearance and frequency of the notification.
@@ -135,11 +130,6 @@ Select your desired notification level for low reservoir
 {align="center"}
 
 ## Empty Reservoir
-
-* Loop 2 will notify when the reservoir is empty.
-
-![img/loop-reservoir-empty.png](img/loop-reservoir-empty.png){width="250"}
-{align="center"}
 
 * The *Loop* app reports No Insulin on the [Heads-Up-Display](../../setup/displays.md#pump-status-icon).
 

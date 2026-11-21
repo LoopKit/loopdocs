@@ -107,9 +107,6 @@ The next screen, shown on the left of the graphic below, enables the user to bot
     * [Nightscout](../nightscout/overview.md) is not required for Loop
     * It can be added later
 
-!!! warning "Loop with Nightscout Requires API_SECRET"
-    * Even if you used Nightscout with Loop 2, you will neeed to add it again and you must include your API_SECRET
-
 
 * If you have do not have a Nightscout site, or choose not to use it, select `Setup Loop without Nightscout` and skip ahead to [Therapy Settings (Onboarding)](#therapy-settings-onboarding)
 
@@ -306,7 +303,7 @@ If you built a new version of Loop over an existing app, your CGM and pump selec
 
 The first time you build the *Loop* app on a device, you will need to go through the onboarding process too.
 
-* If you build over Loop 2.2.x, the onboarding remembers the settings, previously saved overrides and your current pod or pump information is maintained. (Yes, you can build Loop 3 and keep using the same pod.)
+* If you build over an existing *Loop* app, onboarding keeps your settings, saved overrides and current pod or pump.
 
 * If you build the *Loop* app onto a device without an existing Loop app and you have a Nightscout site, you can enter your Nightscout URL (remember to use https: with the "s") and API_SECRET and it will ask if you want to import your settings from your Nightscout profile. This includes all the overrides you have previously saved.
 
@@ -338,15 +335,12 @@ You will be presented with an information screen describing the setting (with a 
 
     * [Insulin Type](add-pump.md#insulin-type): ensure the correct insulin type is selected
 
-### Carb Absorption Time Update
-
-If you used earlier versions of Loop, please be aware that absorption times have changed.
+### Carb Absorption Times
 
 !!! warning "Carb Absorption Times"
     Loop uses the absorption time for the carbs, along with your glucose readings, ISF and CR to recommend insulin dosing and estimate over time the carbs absorbed and carbs expected. See [Algorithm: Prediction](../operation/algorithm/prediction.md) for more details.
 
     * The *Loop* app uses absorption times of 30 minute, 3 hours and 5 hours for the Candy, Taco, Pizza icons
-        * Loop 2.2.x used 2 hours, 3 hours and 4 hours
     * The 30 minute (candy) time is for rapid acting carbs only
 
     If you selected the candy icon for a complex meal, you told Loop to expect your glucose to rise rapidly. When that rapid rise does not materialize, you may find Loop predicts an unexpectedly low glucose because the algorithm assumes something must be affecting your glucose downward in a strong way.
@@ -355,6 +349,4 @@ If you used earlier versions of Loop, please be aware that absorption times have
 
 ### Carb Data Source
 
-The *Loop* app does not read non-Loop carbohydrate entries from Apple Health, as Loop 2.2.x did. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../version/build-time-flag.md) section.
-
-Users who build over Loop 2.2.x, may find a permission switch to give Loop permission to read carb data from health, but without making the customization mentioned above, changing permission does not change the behavior of Loop.
+The *Loop* app does not read non-Loop carbohydrate entries from Apple Health. It still writes to Apple Health. Some experienced loopers want to modify the code to enable Loop to read carbohydrate records from Apple Health with the full understanding of how that works. The instructions for this code customization option, using a flag set in the LoopConfigOverride.xcconfig file, see the [Customize: Build-Time Features](../version/build-time-flag.md) section.

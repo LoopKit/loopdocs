@@ -13,9 +13,6 @@ Clicking on the Loop icon on the main screen tells you the last time Loop comple
 
     There are a few times when it is the pod - but try all the steps on this page **first**.
 
-!!! warning "Medtronic Users"
-    You must select Insulin Type on your pump settings screen after updating from Loop 2 to Loop 3 and completing the onboarding. Without an insulin type, closed loop will not work.
-
 A Red Loop icon means that Loop has not completed a cycle for 15-minutes or more and this is normally because of a communication break-down with one of the systems listed below.
 
 ## Typical Causes for Red Loop
@@ -28,20 +25,6 @@ Some of the reasons listed below cause Loop to go Red and stay Red until you fix
 1. [Background App Refresh](#background-app-refresh) is not enabled for Phone, Loop and/or CGM
 1. [Nightscout](#nightscout) (optional service)
 1. [Phone Storage is Full](#phone-storage-is-full)
-1. [Lost Pod Information](#lost-pod-information)
-
-### Lost Pod Information
-
-We have not seen this issue since the update of the *Loop* app from version 2 to version 3 when the method for saving data was updated. Some other applications in the open-source sets of codes might still have this issue. (It was reported in iAPS, for example. It has been fixed in Trio.) The warning below is left in LoopDocs but if you are running *Loop* version 3.x.x, you do not need to worry about reboots.
-
-* Before attempting to resolve a red-loop with a phone reboot when you are running a `Loop` version older than version 3.0 (or iAPS); please review this section. It can affect the stored CGM information as well as the stored pump information.
-
-!!! warning "Be Careful with Phone Reboots with Loop 2 or iAPS"
-
-    If you are using an Omnipod, then before rebooting the phone, make sure it is absolutely necessary - try all other methods first. Be prepared to check that the pod is still communicating with Loop following the reboot. If this rare event happens to you, please report it, save and post a Loop Report and be prepared to put on a new pod and possibly re-enter your CGM information.
-    
-    This could happen to someone using a Medtronic pump, but the consequence is less of a concern because the pump information is not modified as frequently as for Omnipod users.
-
 
 ### Reset Loop-to-Pump Communications
 
@@ -69,10 +52,6 @@ This should restore a green Loop within 5 minutes. If you're impatient and are u
 Last thing to try is:
 
 #### Power cycle your phone.
-
-* This suggestion is last because of a rare, intermittent issue with an older version of the *Loop* app in which power cycling the phone does not load the latest version of saved information
-* This was fixed with Loop 3
-* Click on the [Lost Pod Information](#lost-pod-information) link for more information
 
 If this was not successful, check out the [Pump is Not Responding](#pump-is-not-responding) section.
 

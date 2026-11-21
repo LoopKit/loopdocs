@@ -51,9 +51,9 @@ All other CGM readings are reported with the *Loop* icon and there is no transit
 
 ### Carbohydrates and *Apple* HealthKit
 
-In `Loop 2.2.x`, if you set *Apple* Health app permissions to allow it, *Loop* will read carbohydrates from the Health app. If you give a third-party app permission to store carbohydrate data in Health, and do not realize that *Loop* reads that information, you might get unexpected insulin delivery based off those carbs. To avoid that unanticipated behavior, the directions tell you to set permissions to allow *Loop* to write to carbohydrate storage but not read.
+The *Loop* app writes carbohydrates to the Health app but does not read them. Reading them can only be turned on with a `Build Time Flag` when you build the app.
 
-In the *Loop* app, the option to read from Health carbohydrates is explicitly disabled and can only be enabled by setting up a `Build Time Flag`  when you build the app.
+This protects you from unexpected insulin: if another app stores carbs in Health and *Loop* read them, *Loop* would dose for those carbs.
 
 * The `Build Time Flag`, `OBSERVE_HEALTH_KIT_CARB_SAMPLES_FROM_OTHER_APPS_ENABLED`, is used to enable ability for the *Loop* app to read from the *Health* app
 * The instructions for this code customization are found in [Modify the `Build Time Flags`](../version/build-time-flag.md#modify-the-build-time-flags){: target="_blank" }.

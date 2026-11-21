@@ -4,8 +4,6 @@ During [Onboarding](onboarding.md#therapy-settings-onboarding), all of your ther
 
 After onboarding, the Therapy Settings screen is reached by going through the Loop Settings screen **after** a [pump](settings.md#add-pump-for-therapy-settings) has been added.
 
-When building over Loop 2.2.x, the existing values from Loop 2.2.x are kept where possible and presented to the user as the "default" value when moving through each screen.
-
 This page provides more details about each of your Therapy Settings.
 
 ## Authorization Required

@@ -128,13 +128,11 @@ The information about the next row: [Absorption Time](#absorption-time) is also 
         * Verify food absorption time when you are done
         * If you know you want to keep the 3 hour absorption time, tap the taco icon on the main screen before entering food emojis
 
-!!! warning "Loop 3 Absorption Times"
-    If you switched to Loop 3 from Loop 2.2.x, please be aware that absorption times for the Lollipop, Taco, Pizza icons have been updated.
-
-    * Loop 3 uses 30 minute, 3 hours and 5 hours
+!!! info "Absorption Times"
+    The Lollipop, Taco and Pizza icons use absorption times of 30 minutes, 3 hours and 5 hours.
 
 !!! warning "Beware using Lollipop for Complex meals"
-    If you select the Lollipop icon for a large complex meal with Loop 3, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.
+    If you select the Lollipop icon for a large complex meal, you tell Loop to expect glucose to rise rapidly (30 min absorption). When that rapid rise does not materialize, Loop may predict an unexpectedly low glucose because the algorithm assumes something must be affecting glucose downward in a strong way.
 
     If this happens to you, edit the carb entry to have a longer absorption time and Loop will recalculate the prediction.
 

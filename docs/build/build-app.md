@@ -16,12 +16,6 @@
     * **Why does Xcode show a colorful spinning icon and not respond to me?** Unfortunately, sometimes Xcode gets confused and you need to force quit the application. See [Xcode Not Responding](../build/build-errors.md#xcode-not-responding) for instructions.
     * Many more FAQs for building Loop are in-line with the steps that trigger the questions.
 
-## Build Video
-
-The Loop and Learn team prepared this [YouTube video](https://youtu.be/gddhljzsNkM) showing how to build Loop 2.2.x including the steps required to update if you previously built. The steps are different now. The video may be worth watching, but once you've reviewed it, work through the new build process described on this page.
-
-If you do watch this video, please note that you no longer are required to delete provisioning profiles as a separate step and the overall building process is streamlined.
-
 ## Build with Browser
 
 If you previously used [Build with Browser](../browser/bb-overview.md) to install Loop on this phone, you should [Disable Automatic Install from *TestFlight*](../browser/phone-install.md#disable-automatic-install-from-testflight) to be sure the version of the app on the phone is the one you build with Xcode.
@@ -496,7 +490,7 @@ If this is your first build of the *Loop* app, head to the Set Up tab starting h
 Even if you don't read all the pages under the Set Up tab now, these links are important.
 
 * New Looper: [Onboarding](../setup/onboarding.md)
-* Building over Loop 2.2.x: [Experienced Looper Onboarding](../setup/onboarding.md#experienced-loopers)
+* Building over an existing *Loop* app: [Experienced Loopers](../setup/onboarding.md#experienced-loopers)
 
 !!! info "Add a Calendar Reminder"
 

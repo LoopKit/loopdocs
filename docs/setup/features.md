@@ -62,9 +62,7 @@ You can use the same *Apple* push notification credentials to support more than 
 
 If insulin is taken from a different source and the user wants to let Loop know, there is a method in the *Loop* app.
 
-With Loop 2.2.x, the user manually entered the Insulin dose into the Apple Health app. Loop then imported that value.
-
-The "old" method still works, but there is another method for entering this information. This method enables the user to indicate the type of insulin so that the appropriate model is used by Loop. An updated `Glucose` prediction chart is displayed prior to saving the dose.
+You can enter the dose in the Apple Health app and Loop imports it, or you can enter it in the *Loop* app. Entering it in the *Loop* app lets you choose the type of insulin, so the right insulin model is used, and shows an updated `Glucose` prediction chart before you save the dose.
 
 ### Enter non-pump insulin before carbs
 
