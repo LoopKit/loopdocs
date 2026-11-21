@@ -60,7 +60,7 @@ For more information, please read [How do Delivery Limits Affect Automatic Dosin
 
 If you customized the&nbsp;<span translate="no">Loop</span>&nbsp;app to read carbohydrates from third-party apps, be aware that you cannot edit those entries inside the&nbsp;_<span translate="no">Loop</span>_&nbsp;app.
 
-If you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, _<span translate="no">Loop</span>_&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
+With that customization, if you let other apps, such as MyFitnessPal, write carbohydrates to the Health app, _<span translate="no">Loop</span>_&nbsp;could read those carbohydrates and you could be dosed for those carbohydrates.
 
 * Review [Customization: Build Time Features](../version/build-time-flag.md)
 
