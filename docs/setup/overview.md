@@ -1,8 +1,8 @@
 ## Set Up Overview
 
-!!! success "Congratulations on Building Loop!"
+!!! success "Congratulations on Installing Loop!"
 
-The first time you build the *Loop* app, it takes you through the Onboarding process. Review this page before using your app.
+The first time you open the *Loop* app on your phone, it takes you through the Onboarding process. Review this page before using your app.
 
 !!! tip "Suggestion"
     * Read this page all the way through without clicking on any links
