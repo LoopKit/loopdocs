@@ -12,7 +12,7 @@
 !!! question "FAQs"
     - **Do I have to set one up?** *Apple Health* needs no setup; the *Loop* app already uses it.
     - **Do I need all three?** No. Choose what suits you; you can add another later.
-    - **Why do I need any of these?** With the *Loop* app, your Omnipod PDM is not used, and Medtronic pumps cannot store all the commands. Your endo has nothing to download, so you need to share your data another way.
+    - **Why do I need any of these?** Only the *Loop* app has your glucose, insulin delivery and meal entries together. You need that combined record to review your settings and to share with your endo.
     - **Is *Nightscout* worth the time when I'm already outside my comfort zone?** Yes. It shows the data you need to check your settings and has useful alarms. Some help groups ask for *Nightscout* data to diagnose problems. Paid services can set it up for you.
 
 ## Data Options
