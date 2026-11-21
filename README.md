@@ -159,7 +159,7 @@ To improve the automatic translation quality, please follow these rules when wri
 
 #### *Loop* Is Never Translated
 
-The build hook `hooks/notranslate.py` (listed under `hooks:` in `mkdocs.yml`) marks every capitalized **Loop**, **Looper** and **Loopers** with `translate="no"` when the site is built, so *Google Translate* leaves them in English. This covers page text, navigation labels and the table of contents. You can type Loop without italics or a `span`; "the *Loop* app" still reads well and is fine to keep.
+The build hook `hooks/notranslate.py` (listed under `hooks:` in `mkdocs.yml`) marks every capitalized **Loop**, **Looper**, **Loopers** and **Loop and Learn** with `translate="no"` when the site is built, so *Google Translate* leaves them in English. This covers page text, navigation labels and the table of contents. You can type Loop without italics or a `span`; "the *Loop* app" still reads well and is fine to keep.
 
 The hook leaves these alone:
 
@@ -167,6 +167,8 @@ The hook leaves these alone:
 * the mode names Open Loop and Closed Loop, which translate correctly as a phrase
 * longer names such as LoopKit, LoopDocs and Loop-to-Pump (add a `span` where needed)
 * code, and text already marked `translate="no"`
+
+Don't add your own `<span translate="no">` around these names. *Google Translate* drops the spaces and punctuation next to a `span` ("LoopFai da te"), so the hook puts them inside it. A hand-made `span` doesn't get that fix.
 
 To protect another name, add it to `NAMES` in the hook. The hook changes nothing else in the page.
 
