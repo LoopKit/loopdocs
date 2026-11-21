@@ -16,7 +16,7 @@ If you have any questions, use the [Search](../intro/overview-intro.md#website-s
 
 ## What about *Tidepool Loop*?
 
-See (https://loopkit.github.io/loopdocs/version/development/#relationship-with-tidepool-loop)
+See [Relationship with *Tidepool Loop*](../version/development.md#relationship-with-tidepool-loop).
 - - -
 
 ## Can I use an android phone or iPad for Loop?

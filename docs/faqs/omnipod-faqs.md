@@ -244,7 +244,7 @@ For older code, v3.14.7 and earlier:
 
 ## What about *Tidepool Loop*?
 
-*Tidepool Loop* was approved by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
+*Tidepool Loop* was cleared by the FDA in Jan 2023. In 2025, the [Sequel twiist pump](https://www.twiist.com/) became available with *Tidepool Loop*. Check their site to see if it available in your area.
 
 There is no arrangement for using an FDA cleared version of the Loop app with Omnipod. You must still build it yourself to use Omnipod Eros or DASH Pods.
 
