@@ -17,7 +17,7 @@ The *Loop* app is an automated insulin delivery app that you build and run on an
     * You choose your CGM and pump
 * You choose how the app runs:
     * <code>Closed Loop</code>: the app predicts your glucose and adjusts insulin for you
-    * <code>Open Loop</code>: the app only makes recommendations; use it to learn the app, test settings and practice meal entries
+    * <code>Open Loop</code>: the app makes recommendations that you manually decide whether to accept; use it to learn the app, and test settings.
 
 ### What is&nbsp;_<span translate="no">Loop</span>_&nbsp;Video
 
@@ -34,13 +34,13 @@ The *Loop* app may suit you if you:
 * Like to make a note of your meals
     * *Loop* only needs an estimate of meal size
     * It recommends a bolus which you can accept or modify
-    * With every glucose reading from your CGM, *Loop* updates that recommendation to increase or decrease the insulin it delivers
+    * With every glucose reading from your CGM, *Loop* updates that recommendation to increase or decrease the insulin it automatically delivers
 
 The *Loop* app is one of several automated insulin delivery (AID) systems. Compare it with the others before you start:
 
 * **Commercial systems**, such as Omnipod 5 or Tandem Control-IQ, are approved by regulators and supported by the manufacturer. You do not build anything, but you have fewer choices of settings and devices.
 * **Trio** is another open-source app that you build for iPhone. It uses a different algorithm, based on OpenAPS, with more settings to adjust. See the [Trio documentation](https://triodocs.org){: target="_blank" }.
-* **AAPS** is an open-source system for Android phones. See the [AAPS documentation](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
+* **AAPS** is an open-source system for Android phones. It also uses a different algorithm, based on OpenAPS. See the [AAPS documentation](https://androidaps.readthedocs.io/en/latest/){: target="_blank" }.
 
 ## What are my next steps?
 
